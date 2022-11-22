@@ -138,18 +138,18 @@ struct MyRoomInfo: View {
                  
                     
                     VStack {
-                        
-                        Text("Time alone")
-                            .font(.system(size: 20))
-                            .foregroundColor(.white)
-                            .fontWeight(.light)
-                            .foregroundColor(Color.white)
-                        
-                        Text("in")
-                            .font(.system(size: 20))
-                            .foregroundColor(.white)
-                            .fontWeight(.light)
-                            .foregroundColor(Color.white)
+//                        
+//                        Text("Time alone")
+//                            .font(.system(size: 20))
+//                            .foregroundColor(.white)
+//                            .fontWeight(.light)
+//                            .foregroundColor(Color.white)
+//                        
+//                        Text("in")
+//                            .font(.system(size: 20))
+//                            .foregroundColor(.white)
+//                            .fontWeight(.light)
+//                            .foregroundColor(Color.white)
                         
                         Text("my room")
                             .font(.system(size: 37))

@@ -124,6 +124,7 @@
 		CF381A5428283FA000B3719E /* Step1FG_AcceptedSolutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A5328283FA000B3719E /* Step1FG_AcceptedSolutions.swift */; };
 		CF381A56282842EA00B3719E /* Step2FG_NewSolutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A55282842EA00B3719E /* Step2FG_NewSolutions.swift */; };
 		CF381A592829205800B3719E /* OurMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A582829205800B3719E /* OurMission.swift */; };
+		CF39F17C292C5F8000927A3C /* StartHere1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF39F17B292C5F8000927A3C /* StartHere1.swift */; };
 		CF3AE3B528F9F5F8002584A6 /* TeenVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3AE3B428F9F5F8002584A6 /* TeenVideo.swift */; };
 		CF3B65AB2800718E0003A714 /* ReportAbuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AA2800718E0003A714 /* ReportAbuse.swift */; };
 		CF3B65AD280075620003A714 /* MyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AC280075620003A714 /* MyAccountView.swift */; };
@@ -371,6 +372,7 @@
 		CF381A5328283FA000B3719E /* Step1FG_AcceptedSolutions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1FG_AcceptedSolutions.swift; sourceTree = "<group>"; };
 		CF381A55282842EA00B3719E /* Step2FG_NewSolutions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2FG_NewSolutions.swift; sourceTree = "<group>"; };
 		CF381A582829205800B3719E /* OurMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurMission.swift; sourceTree = "<group>"; };
+		CF39F17B292C5F8000927A3C /* StartHere1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartHere1.swift; sourceTree = "<group>"; };
 		CF3AE3B428F9F5F8002584A6 /* TeenVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeenVideo.swift; sourceTree = "<group>"; };
 		CF3B65AA2800718E0003A714 /* ReportAbuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportAbuse.swift; sourceTree = "<group>"; };
 		CF3B65AC280075620003A714 /* MyAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountView.swift; sourceTree = "<group>"; };
@@ -736,6 +738,7 @@
 				7AC4C01D27FF49F9000C4140 /* Chat */,
 				CF3B65A9280071580003A714 /* Settings */,
 				CF41280C2927542B003BCBFA /* SurveyStickers */,
+				CF39F17A292C5F5000927A3C /* STARTHERE */,
 				CFC0EE7829080585006B3FAA /* INFO Pages */,
 				CF47CF0A28E2CAC7008B6F11 /* WORLD */,
 				CFD8BD0C2915562D00F86EFB /* My ROOM */,
@@ -854,6 +857,14 @@
 				CF381A55282842EA00B3719E /* Step2FG_NewSolutions.swift */,
 			);
 			path = "Friend Group Fighting";
+			sourceTree = "<group>";
+		};
+		CF39F17A292C5F5000927A3C /* STARTHERE */ = {
+			isa = PBXGroup;
+			children = (
+				CF39F17B292C5F8000927A3C /* StartHere1.swift */,
+			);
+			path = STARTHERE;
 			sourceTree = "<group>";
 		};
 		CF3AE3B328F9F5BE002584A6 /* BuiltByTeens */ = {
@@ -1577,6 +1588,7 @@
 				CFAB542A282123EA00BBF502 /* WhoFighting.swift in Sources */,
 				CFD8BD082912B0EB00F86EFB /* AtmosphereInfo2.swift in Sources */,
 				CF37535128BB3398003817E3 /* SendSongPush.swift in Sources */,
+				CF39F17C292C5F8000927A3C /* StartHere1.swift in Sources */,
 				CFDB15102859415D00155CEE /* MasterFriendVault.swift in Sources */,
 				62319AAD284A788000CA0359 /* FG_Video.swift in Sources */,
 				7A0856A827F3DA4E00E8282B /* Defaults.swift in Sources */,

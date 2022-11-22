@@ -11,6 +11,7 @@ struct Planet: View {
     
     let user: User
     let atmosphere: Atmosphere
+//    let groups: [Group]
     
     var body: some View {
         VStack {
@@ -81,131 +82,138 @@ struct PlanetActionsView: View {
     var body: some View {
         
         VStack {
-           
-       
+            
+            //            HStack {
+            //                Image(systemName: ". . .")
+            //                    .resizable()
+            //                    .frame(width: 27, height: 27)
+            //                    .scaledToFill()
+            //                    .foregroundColor(.white)
+            //                    .onTapGesture(perform: {
+            //                        sessionManager.infoView(user: user, groups: groups)
+            //                    })
             
             HStack {
                 
-
+                
                 HStack {
-                  
                     
-                VStack {
-                    NavigationLink(destination: ShaylaPage(),
-                                   label: {
-                        ZStack {
-                            Circle()
-                                .frame(width: 110, height: 110)
-                                .foregroundColor(ColorManager.purple3)
-                                .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                .opacity(0.40)
-                            
-                            VStack {
-                                
-                                Text("Envisioned")
-                                    .foregroundColor(ColorManager .pmbc_blue)
-                                    .font(.system(size: 17, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.50)
-      
-                                Text("by")
-                                    .foregroundColor(ColorManager .pmbc_blue)
-                                    .font(.system(size: 14, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.50)
-                                
-                                
-                                
-                                Text("Teens")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 23, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.70)
-
-                            }
-                        }
-                        
-                    })
                     
-                    Spacer()
-                        .frame(height: 15)
-                    
-
-                    NavigationLink(destination: InviteView(user: user), label: {
-                        ZStack {
-                            Circle()
-                                .frame(width: 110, height: 110)
-                                .foregroundColor(ColorManager.purple3)
-                                .shadow(color: .black, radius: 2, x: 0, y: 2)
-                               .opacity(0.40)
-                            
-                            VStack {
-                                Text("Add")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 23, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.70)
+                    VStack {
+                        NavigationLink(destination: PhotoPopView(user: user, friends: friends),
+                                       label: {
+                            ZStack {
+                                Circle()
+                                    .frame(width: 110, height: 110)
+                                    .foregroundColor(ColorManager.purple3)
+                                    .shadow(color: .black, radius: 2, x: 0, y: 2)
+                                    .opacity(0.40)
                                 
-//                                Text("Accept")
-//                                    .foregroundColor(.green)
-//                                    .font(.system(size: 23, weight: .bold))
-//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                    .opacity(0.70)
-                                
-                                Text("5 Friends")
-                                    .foregroundColor(ColorManager .pmbc_blue)
-                                    .font(.system(size: 17, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.50)
-                           
+                                VStack {
                                     
+                                    Text("PhotoPOP")
+                                        .foregroundColor(ColorManager .pmbc_blue)
+                                        .font(.system(size: 17, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                    
+                                    Text("'shake'")
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 20, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                    
+                                    
+                                    
+                                    Text("iPhone")
+                                        .foregroundColor(ColorManager .pmbc_blue)
+                                        .font(.system(size: 17, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.70)
+                                    
+                                }
                             }
-                        }
+                            
+                        })
                         
-                     
-                    }
-                    )}
-                   
+                        Spacer()
+                            .frame(height: 15)
+                        
+                        
+                        NavigationLink(destination: HugPreload(user: user, friends: friends, groups: groups), label: {
+                            ZStack {
+                                Circle()
+                                    .frame(width: 110, height: 110)
+                                    .foregroundColor(ColorManager.purple3)
+                                    .shadow(color: .black, radius: 2, x: 0, y: 2)
+                                    .opacity(0.40)
+                                
+                                VStack {
+                                    Text("Send")
+                                        .foregroundColor(ColorManager .pmbc_blue)
+                                        .font(.system(size: 17, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                    
+                                    Text("Conforting")
+                                        .foregroundColor(ColorManager .pmbc_blue)
+                                        .font(.system(size: 17, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                  
+                                    Text("HUG")
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 20, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                    
+                                }
+                            }
+                            
+                            
+                        }
+                        )}
+                    
                     VStack {
                         
-                       
-                        NavigationLink(destination: INFOPreload(user: user),
+                        
+                        NavigationLink(destination: StartHere1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
                             
                             ZStack {
                                 Circle()
-//                                    .frame(width: 110, height: 110)
-//                                    .foregroundColor(ColorManager.purple2)
-//                                    .shadow(color: .white, radius: 12, x: 0, y: 0)
-////                                    .glow(color: ColorManager.pmbc_green, radius: 3)
-//                                    .opacity(0.6)
+                                //                                    .frame(width: 110, height: 110)
+                                //                                    .foregroundColor(ColorManager.purple2)
+                                //                                    .shadow(color: .white, radius: 12, x: 0, y: 0)
+                                ////                                    .glow(color: ColorManager.pmbc_green, radius: 3)
+                                //                                    .opacity(0.6)
                                 
                                     .frame(width: 110, height: 110)
                                     .foregroundColor(ColorManager.purple3)
                                     .shadow(color: .black, radius: 2, x: 0, y: 2)
                                     .opacity(0.40)
                                 VStack {
-                                 
                                     
-                                    Text("new user")
+                                    
+                                    Text("My")
                                         .foregroundColor(ColorManager .pmbc_blue)
                                         .font(.system(size: 17, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
-                                    Text("START")
-                                        .foregroundColor(.green)
-                                        .font(.system(size: 26, weight: .bold))
+                                    Text("GEAR")
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.70)
+                                        .opacity(0.50)
+//
+//                                    Text("HERE!")
+//                                        .foregroundColor(.green)
+//                                        .font(.system(size: 24, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.70)
+//
                                     
-                                    Text("HERE!")
-                                        .foregroundColor(.green)
-                                        .font(.system(size: 24, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.70)
-                                    
-                                   
                                     
                                 }
                             }
@@ -222,7 +230,7 @@ struct PlanetActionsView: View {
                         //
                         //                    MARK: First setup
                         
-                        NavigationLink(destination: WorldPreload2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        NavigationLink(destination: INFOPreload(user: user),
                                        label: {
                             ZStack {
                                 Circle()
@@ -230,17 +238,17 @@ struct PlanetActionsView: View {
                                     .foregroundColor(ColorManager.purple2)
                                     .shadow(color: .white, radius: 17, x: 0, y: 0)
                                     .shadow(color: .white, radius: 20, x: 0, y: 0)
-                                  
+                                
                                     .glow(color: ColorManager.purple4, radius: 3)
                                     .opacity(0.5)
                                 
                                 VStack {
                                     
-//                                    Text("Sunday's 8pm")
-//                                        .foregroundColor(.purple)
-//                                        .font(.system(size: 15, weight: .bold))
-//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                        .opacity(0.50)
+                                    //                                    Text("Sunday's 8pm")
+                                    //                                        .foregroundColor(.purple)
+                                    //                                        .font(.system(size: 15, weight: .bold))
+                                    //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                    //                                        .opacity(0.50)
                                     
                                     Text("World")
                                         .foregroundColor(.white)
@@ -274,17 +282,17 @@ struct PlanetActionsView: View {
                         //                                   label: {
                         //
                         
-                        NavigationLink(destination: SurveyStickersPreload(),
+                        NavigationLink(destination: SendSongPush(user: user, friends: friends),
                                        label: {
                             
                             ZStack {
                                 Circle()
-//                                    .frame(width: 110, height: 110)
-//                                    .foregroundColor(ColorManager.purple3)
-//                                    .foregroundColor(.pink)
-//                                    .shadow(color: .white, radius: 10, x: 0, y: 0)
-//                                    .glow(color: ColorManager.purple4, radius: 3)
-//                                    .opacity(0.50)
+                                //                                    .frame(width: 110, height: 110)
+                                //                                    .foregroundColor(ColorManager.purple3)
+                                //                                    .foregroundColor(.pink)
+                                //                                    .shadow(color: .white, radius: 10, x: 0, y: 0)
+                                //                                    .glow(color: ColorManager.purple4, radius: 3)
+                                //                                    .opacity(0.50)
                                 
                                     .frame(width: 110, height: 110)
                                     .foregroundColor(ColorManager.purple3)
@@ -293,125 +301,137 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
                                     
-                                    Text("Get Free")
+                                    Text("Found")
                                         .foregroundColor(ColorManager .pmbc_blue)
-                                        .font(.system(size: 15, weight: .bold))
+                                        .font(.system(size: 17, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
-                                    Text("Stickers")
-                                        .foregroundColor(ColorManager .pmbc_blue)
-                                        .font(.system(size: 15, weight: .bold))
+                                    Text("NEW")
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
                                     
-//                                    Text("Making")
-//                                        .foregroundColor(.white)
-//                                        .font(.system(size: 25, weight: .bold))
-//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                        .opacity(0.50)
-//
-//                                    Text("Amends")
-//                                        .foregroundColor(.white)
-//                                        .font(.system(size: 25, weight: .bold))
-//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                        .opacity(0.50)
-
+                                    Text("Music")
+                                        .foregroundColor(ColorManager .pmbc_blue)
+                                        .font(.system(size: 17, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                    
+                                    //                                    Text("Making")
+                                    //                                        .foregroundColor(.white)
+                                    //                                        .font(.system(size: 25, weight: .bold))
+                                    //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                    //                                        .opacity(0.50)
+                                    //
+                                    //                                    Text("Amends")
+                                    //                                        .foregroundColor(.white)
+                                    //                                        .font(.system(size: 25, weight: .bold))
+                                    //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                    //                                        .opacity(0.50)
+                                    
                                 }
                             }
                         })
                     }
                     
-      
-                VStack {
-                    NavigationLink(destination: SettingsView(user: user, friends: friends, atmosphere: atmosphere),
-                                   label: {
-                        ZStack {
-                            Circle()
-                                .frame(width: 110, height: 110)
-                                .foregroundColor(ColorManager.purple3)
-                                .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                .opacity(0.40)
-                            
-                            VStack {
-   
-                                Text("Settings")
-                                    .foregroundColor(ColorManager .pmbc_blue)
-                                    .font(.system(size: 15, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.50)
+                    
+                    VStack {
+                        NavigationLink(destination: SaySomethingNice3(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                                       label: {
+                            ZStack {
+                                Circle()
+                                    .frame(width: 110, height: 110)
+                                    .foregroundColor(ColorManager.purple3)
+                                    .shadow(color: .black, radius: 2, x: 0, y: 2)
+                                    .opacity(0.40)
                                 
-                            
+                                VStack {
+                                    
+                                    Text("Say")
+                                        .foregroundColor(ColorManager .pmbc_blue)
+                                        .font(.system(size: 17, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                   
+                                    Text("Something")
+                                        .foregroundColor(ColorManager .pmbc_blue)
+                                        .font(.system(size: 17, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                   
+                                    Text("NICE")
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 20, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                    
+                                }
                             }
-                        }
-                    })
-                    
-                    
-                    
-                    
-                    Spacer()
-                        .frame(height: 15)
-                    
-                    
-//                    NavigationLink(destination: EmptyView(),
-               
-                    NavigationLink(destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups),
-                                                  
-                                                  
-//                                                  NavigationLink(destination: HorizonsPreload1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres),
-                label: {
+                        })
                         
-                        ZStack {
-                            Circle()
-//
+                        
+                        
+                        
+                        Spacer()
+                            .frame(height: 15)
+                        
+                        
+                        //                    NavigationLink(destination: EmptyView(),
+                        
+                        NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups),
+                                       
+                                       
+                                       //                                                  NavigationLink(destination: HorizonsPreload1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres),
+                                       label: {
                             
-                                .frame(width: 110, height: 110)
-                                .foregroundColor(ColorManager.purple3)
-                                .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                .opacity(0.40)
-                            
-                            VStack {
+                            ZStack {
+                                Circle()
+                                //
                                 
-//
-//                                Text("time alone")
-//                                    .foregroundColor(ColorManager .pmbc_blue)
-//                                    .font(.system(size: 17, weight: .bold))
-//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                    .opacity(0.50)
-
-//
-//                                Text("Room")
-//                                    .foregroundColor(ColorManager .pmbc_blue)
-//                                    .font(.system(size: 17, weight: .bold))
-//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                    .opacity(0.50)
-
-                                Text("My")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 19, weight: .regular))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.70)
+                                    .frame(width: 110, height: 110)
+                                    .foregroundColor(ColorManager.purple3)
+                                    .shadow(color: .black, radius: 2, x: 0, y: 2)
+                                    .opacity(0.40)
                                 
-                                Text("Room")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 19, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.70)
-                                
+                                VStack {
+                                    
+                                    
+                                    Text("Somethings")
+                                        .foregroundColor(ColorManager .pmbc_blue)
+                                        .font(.system(size: 17, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                   
+                                    Text("Bugging")
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 20, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                   
+                                    Text("Me")
+                                       
+                                        .foregroundColor(ColorManager .pmbc_blue)
+                                        .font(.system(size: 17, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                }
                             }
-                        }
-                    })
-             
+                        })
+                        
+                    }
+                    
+                    
                 }
                 
-                    
             }
-              
+            
         }
-
-        }
-
+        
     }
-      
+    
 }
+
+
