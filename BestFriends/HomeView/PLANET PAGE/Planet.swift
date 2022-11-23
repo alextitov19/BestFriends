@@ -189,7 +189,7 @@ struct PlanetActionsView: View {
                                 //                                    .opacity(0.6)
                                 
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple3)
+                                    .foregroundColor(ColorManager.purple5)
                                     .shadow(color: .black, radius: 2, x: 0, y: 2)
                                     .opacity(0.40)
                                 VStack {
