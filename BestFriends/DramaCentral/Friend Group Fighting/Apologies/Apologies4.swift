@@ -32,7 +32,7 @@ struct Apologies4: View {
     var body: some View {
         
                 ZStack {
-                    ColorManager.purple4
+                    ColorManager.grey4
                         .ignoresSafeArea()
                         .onAppear()
         

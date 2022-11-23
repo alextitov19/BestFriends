@@ -42,38 +42,10 @@ struct BuggingPreload1: View {
              Image("book")
                  .frame(width: 320, height: 20)
             
-            //            Image("purpleBackground")
-            //                .resizable()
-            //                .ignoresSafeArea()
-            //                .scaledToFill()
-            //
-            //
-            //            AdPlayerView(name: "storm2")
-            //                .ignoresSafeArea()
-            //                .blendMode(.screen)
-            
-            
-            
-            
+       
             
             ZStack{
-                //                  Text("Say something")
-                //                      .font(.system(size: 50))
-                //                      .foregroundColor(ColorManager.purple2)
-                //                      .fontWeight(.thin)
-                //                      .multilineTextAlignment(.center)
-                //
-                //                  Text("'Nice' to a Friend")
-                //                      .font(.system(size: 50))
-                //                      .foregroundColor(ColorManager.purple2)
-                //                      .fontWeight(.thin)
-                //                      .multilineTextAlignment(.center)
-                //                  Spacer()
-                //                      .frame(height: 80)
-                
-                
-                
-                
+          
                 
                 
                 NavigationLink(destination: HurtFeelings4(user: user, friends: friends, groups: groups), label: {
