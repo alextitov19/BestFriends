@@ -38,71 +38,49 @@ struct HurtFeelings4: View {
             
             VStack {
            
-//
-//
-//                Text("Some EXAMPLES of what to \nsay in a Chat message")
-//                    .font(.system(size: 20))
-//                    .fontWeight(.regular)
-//                    .foregroundColor(.white)
-//
-//                Spacer()
-//                    .frame(height: 15)
-//
-//                VStack {
-//                    Text("Hey, I would like to talk to you \nabout something you said (or did).")
-//                        .foregroundColor(.white)
-//                        .font(.system(size: 17))
-//                        .padding(.top)
-//                        .padding(.horizontal)
-//
-//                    CustomDivider(color: .white)
-//                        .frame(width: 240)
-//
-//                    Text("Hi, I wanted to let you know that \nwhat you said (or did) hurt my feelings")
-//                        .foregroundColor(.white)
-//                        .font(.system(size: 17))
-//                        .padding(.bottom)
-//                        .padding(.horizontal)
-//                }
-//                .overlay(
-//                        RoundedRectangle(cornerRadius: 16)
-//                            .stroke(.white, lineWidth: 1)
-//                    )
-//
-//
-//                Text("Alert Friends")
-//                    .font(.system(size: 15))
-//                   
-//                    .fontWeight(.thin)
-//                    .foregroundColor(Color.white)
-//       
-//       Text("That you're sending")
-//           .font(.system(size: 15))
-//           .italic()
-//           .fontWeight(.thin)
-//           .foregroundColor(Color.black)
-//       
-//       Text("them a message in Chat")
-//           .font(.system(size: 15))
-//           .italic()
-//           .fontWeight(.thin)
-//           .foregroundColor(Color.black)
-                
-                
+             
                 Text("Ok, your friend")
-                    .font(.system(size: 35))
+                    .font(.system(size: 25))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
                 Text("hurt your feelings.")
-                    .font(.system(size: 35))
+                    .font(.system(size: 25))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
+               
+                
+                Text("It's been Bugging \nyou all week")
+                    .font(.system(size: 25))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                
+        
+             
+                Text("It's time to say something")
+                    .font(.system(size: 25))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+              
+                Spacer()
+                    .frame(height: 25)
+                
+//
+//                Text("")
+//                    .font(.system(size: 50))
+//                    .foregroundColor(.white)
+//                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
+              
                 Spacer()
                     .frame(height: 5)
+             
+
                 
                 
                 HStack {
@@ -202,6 +180,7 @@ struct HurtFeelings4: View {
                 
 
                 VStack {
+                    
                     Spacer()
                         .frame(height: 20)
 
@@ -227,7 +206,7 @@ struct HurtFeelings4: View {
                         .frame(height: 45)
                     
                     
-                    Text("You got this. Nice Job!")
+                    Text("You got this")
                         .font(.system(size: 30))
                         .fontWeight(.regular)
                         .foregroundColor(Color .white)
@@ -239,11 +218,11 @@ struct HurtFeelings4: View {
                         sessionManager.showLogin()
                     },
                         label: {
-                            Text("Home / Chat")
+                            Text("Chat")
                                 .fontWeight(.thin)
-                                .frame(width: 200, height: 40)
+                                .frame(width: 100, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
+                                .font(.system(size: 25))
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
