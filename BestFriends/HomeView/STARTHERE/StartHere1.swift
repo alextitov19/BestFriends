@@ -125,13 +125,12 @@ struct StartHere1: View {
                 
                 
                 
-                Image(systemName: "star.fill")
+                Image(systemName: "circle.fill")
                     .resizable()
                     .foregroundColor(ColorManager .purple2)
-                    .frame(width: 300, height: 300)
-                //                    .blur(radius: 2)
-                
-//                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                    .frame(width: 95, height: 95)
+                    .blur(radius: 2)
+                   .shadow(color: .purple, radius: 65, x: 30, y: 50)
                     .opacity(0.90)
 
 
@@ -140,12 +139,12 @@ struct StartHere1: View {
             Spacer ()
                    .frame(height: 120)
               
-//               Text("Teen-designed")
-//                             .font(.system(size: 20))
-//                             .italic()
-//                            .foregroundColor(.white)
-//                             .fontWeight(.thin)
-//                             .multilineTextAlignment(.center)
+               Text("Tap")
+                             .font(.system(size: 15))
+                             .italic()
+                             .foregroundColor(ColorManager .grey4)
+                             .fontWeight(.thin)
+                             .multilineTextAlignment(.center)
 ////                             .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
 //               Text("My")

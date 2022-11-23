@@ -120,6 +120,13 @@ struct INFOPreload: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.purple2)
                         
+                        Text("with your closest friends")
+                            .font(.system(size: 15))
+                            .italic()
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager.purple2)
+                        
                         Spacer ()
                             .frame(height: 15)
                         
@@ -177,8 +184,8 @@ struct INFOPreload: View {
                                 
                             })
                         
-                        Spacer()
-                            .frame(height: 130)
+//                        Spacer()
+//                            .frame(height: 130)
                         
                         
                         
