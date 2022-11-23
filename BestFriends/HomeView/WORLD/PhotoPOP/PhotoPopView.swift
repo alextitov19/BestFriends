@@ -44,23 +44,22 @@ struct PhotoPopView: View {
                 }
             
             VStack {
-                Text("PhotoPOP")
-                    .font(.system(size: 30, weight: .light))
-                    .foregroundColor(.white)
+//                Text("PhotoPOP")
+//                    .font(.system(size: 30, weight: .light))
+//                    .foregroundColor(.white)
                 
                 Text("Select Friend, add image from gallery")
                     .font(.system(size: 15, weight: .light))
-                    
+                    .italic()
                     .foregroundColor(.white)
                 
                 Text("Tap uploaded images to replace")
                     .font(.system(size: 15, weight: .light))
-                    
+                    .italic()
                     .foregroundColor(.white)
                 
-                Text("('shake iPhone' to POP photos)")
-                    .font(.system(size: 15, weight: .light))
-                    .italic()
+                Text("SHAKE iPhone to see images")
+                    .font(.system(size: 20, weight: .light))
                     .foregroundColor(.green)
                     
                 NavigationLink(
