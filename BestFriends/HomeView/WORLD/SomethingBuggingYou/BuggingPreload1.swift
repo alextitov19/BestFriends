@@ -72,12 +72,12 @@ struct BuggingPreload1: View {
                 //                    .blur(radius: 2)
                 
                     .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                    .opacity(0.99)
+                    .opacity(0.70)
                 
                 VStack {
                     
                     Spacer ()
-                        .frame(height: 30)
+                        .frame(height: 60)
                     
                     Text("Nervious")
                         .font(.system(size: 15))
@@ -127,23 +127,23 @@ struct BuggingPreload1: View {
                     
                     VStack {
                        
-                        Spacer ()
-                            .frame(height: 15)
-                        
-                        Text("you can do this")
-                            .font(.system(size: 17))
-                            .italic()
-                            .foregroundColor(.blue)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("there's strength in numbers")
-                            .font(.system(size: 17))
-                            .italic()
-                            .foregroundColor(.blue)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                       
+//                        Spacer ()
+//                            .frame(height: 15)
+//
+//                        Text("you can do this")
+//                            .font(.system(size: 17))
+//                            .italic()
+//                            .foregroundColor(.blue)
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//
+//                        Text("there's strength in numbers")
+//                            .font(.system(size: 17))
+//                            .italic()
+//                            .foregroundColor(.blue)
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//
                         
                     }
                 }
@@ -189,24 +189,3 @@ struct BuggingPreload1: View {
     
 }
 
-
-
-//VStack {
-//
-//
-//    Spacer()
-//        .frame(height: 20)
-//
-//    Button(action: {
-//        sessionManager.showLogin()
-//    },
-//        label: {
-//            Text("Type it in Chat")
-//                .fontWeight(.thin)
-//                .frame(width: 310, height: 40)
-//                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                .font(.system(size: 27))
-//                .background(ColorManager.purple3)
-//                .cornerRadius(15)
-//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//        })

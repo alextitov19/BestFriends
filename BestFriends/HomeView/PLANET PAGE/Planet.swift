@@ -124,7 +124,7 @@ struct PlanetActionsView: View {
                                         .opacity(0.50)
                                     
                                     
-//                                    
+//
 //                                    Text("iPhone")
 //                                        .foregroundColor(ColorManager .pmbc_blue)
 //                                        .font(.system(size: 17, weight: .bold))
@@ -196,30 +196,36 @@ struct PlanetActionsView: View {
                                     
                                     
                                     Text("Add Friends")
-                                        .foregroundColor(ColorManager .pmbc_blue)
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 15, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                    
+                                    Text("&")
+                                        .foregroundColor(.white)
                                         .font(.system(size: 15, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
                                     Text("Settings")
-                                        .foregroundColor(ColorManager .pmbc_blue)
+                                        .foregroundColor(.white)
                                         .font(.system(size: 15, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
 
-                                  
-                                    
-                                    Text("Free Stickers")
-                                        .foregroundColor(ColorManager .pmbc_blue)
-                                        .font(.system(size: 15, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.50)
-                                    
-                                    Text("About Us")
-                                        .foregroundColor(ColorManager .pmbc_blue)
-                                        .font(.system(size: 15, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.50)
+//
+//
+//                                    Text("Free Stickers")
+//                                        .foregroundColor(ColorManager .pmbc_blue)
+//                                        .font(.system(size: 15, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.50)
+//
+//                                    Text("About Us")
+//                                        .foregroundColor(ColorManager .pmbc_blue)
+//                                        .font(.system(size: 15, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.50)
                                     
                                 }
                             }

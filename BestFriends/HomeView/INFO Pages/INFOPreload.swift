@@ -64,7 +64,7 @@ struct INFOPreload: View {
                         Image(systemName: "heart.fill")
                             .resizable()
                             .foregroundColor(ColorManager .purple4)
-                            .frame(width: 250, height: 200)
+                            .frame(width: 200, height: 200)
                            .shadow(color: .white, radius: 65, x: 30, y: 50)
                             .opacity(0.65)
                         
