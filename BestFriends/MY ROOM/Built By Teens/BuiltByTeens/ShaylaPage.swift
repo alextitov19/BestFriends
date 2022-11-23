@@ -15,7 +15,7 @@ struct ShaylaPage: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
-//    let user: User
+   let user: User
 //    let atmosphere: Atmosphere
 //    let friends: [User]
 //    let groups: [Group]
@@ -106,75 +106,61 @@ struct ShaylaPage: View {
                         Spacer()
                             .frame(height: 130)
                         
-                        Text("we'd love t0")
-        //                    .font(.system(size: 25, weight: .bold))
-                            .font(.system(size: 35, weight: .bold))
-                            .foregroundColor(ColorManager .grey1)
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            .opacity(0.50)
-        //                    .foregroundColor(ColorManager.purple5)
-        //                    .fontWeight(.ultraLight)
-                            .multilineTextAlignment(.center)
-
-           
+                        NavigationLink(
+                            destination: InfoViewPlanet(user: user),
+                            label: {
+                                Text("Walk-through")
+                                    .fontWeight(.thin)
+                                    .frame(width: 175, height: 30)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 25))
+                                    .background(ColorManager.pmbc_green)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                            })
                         
-                        
-                        Text("hear from you ")
-        //                    .font(.system(size: 25, weight: .bold))
-                            .font(.system(size: 35, weight: .bold))
-                            .foregroundColor(ColorManager .grey1)
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            .opacity(0.50)
-        //                    .foregroundColor(ColorManager.purple5)
-        //                    .fontWeight(.ultraLight)
-                            .multilineTextAlignment(.center)
-                        Link(destination: URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSdpTah0IIOpTjgGgC6x8hxxA5zs5MA6JZWohmd0bKwXDzK0bQ/viewform?usp=sf_link")!) {
-                            
-                            Text("Survey - 90 Seconds")
-                                .fontWeight(.thin)
-                                .frame(width: 310, height: 40)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager.pmbc_green)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        }
+//
+//
+//
+//                        Text("we'd love t0")
+//        //                    .font(.system(size: 25, weight: .bold))
+//                            .font(.system(size: 35, weight: .bold))
+//                            .foregroundColor(ColorManager .grey1)
+//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                            .opacity(0.50)
+//        //                    .foregroundColor(ColorManager.purple5)
+//        //                    .fontWeight(.ultraLight)
+//                            .multilineTextAlignment(.center)
+//
+//
+//
+//
+//                        Text("hear from you ")
+//        //                    .font(.system(size: 25, weight: .bold))
+//                            .font(.system(size: 35, weight: .bold))
+//                            .foregroundColor(ColorManager .grey1)
+//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                            .opacity(0.50)
+//        //                    .foregroundColor(ColorManager.purple5)
+//        //                    .fontWeight(.ultraLight)
+//                            .multilineTextAlignment(.center)
+//                        Link(destination: URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSdpTah0IIOpTjgGgC6x8hxxA5zs5MA6JZWohmd0bKwXDzK0bQ/viewform?usp=sf_link")!) {
+//
+//                            Text("Survey - 90 Seconds")
+//                                .fontWeight(.thin)
+//                                .frame(width: 310, height: 40)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 25))
+//                                .background(ColorManager.pmbc_green)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        }
                         
                         Spacer()
                             .frame(height: 15)
                         
-//                        NavigationLink(
-//                            destination: BuiltForTeens(),
-//                            label: {
-//                                Text("Zen-masters of social media")
-//                                    .fontWeight(.thin)
-//                                    .frame(width: 310, height: 40)
-//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                    .font(.system(size: 25))
-//                                    .background(ColorManager.purple3)
-//                                    .cornerRadius(15)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                            })//NavLink
-//
-//                        Spacer()
-//                            .frame(height: 15)
-//
-////                    
-//
-//                        NavigationLink(
-//                            destination: BuiltForTeens(),
-//                            label: {
-//                                Text("Next")
-//                                    .fontWeight(.thin)
-//                                    .frame(width: 100, height: 40)
-//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                    .font(.system(size: 30))
-//                                    .background(ColorManager.purple3)
-//                                    .cornerRadius(15)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//                            })
-                        
+     
                  
                     }
                 }

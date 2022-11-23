@@ -29,31 +29,42 @@ struct StartHere1: View {
     var body: some View {
 
         ZStack {
-
-//            ColorManager.purple1
+            
+            
+            
+            
+             Image("purpleBackground")
+                 .resizable()
+                 .scaledToFill()
+                 .ignoresSafeArea()
+          
+             Image("ballons")
+                 .frame(width: 320, height: 20)
+//
+////            ColorManager.purple1
+////                .ignoresSafeArea()
+////                .onAppear()
+//
+//            Image("purpleBackground")
+//                .resizable()
 //                .ignoresSafeArea()
-//                .onAppear()
-
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-
-            //            AdPlayerView(name: "Planet6")
-            //                .ignoresSafeArea()
-            //                .blendMode(.screen)
-
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-            
-            
-            
+//                .scaledToFill()
+//
+//            //            AdPlayerView(name: "Planet6")
+//            //                .ignoresSafeArea()
+//            //                .blendMode(.screen)
+//
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//
+//
+//
             ZStack{
 
 
 
-                NavigationLink(destination: ShaylaPage(), label: {
+                NavigationLink(destination: ShaylaPage(user: user), label: {
                   StartHereCircle (color: ColorManager.purple2, friendName: "Envisioned \nby \nTeens")
             })
               .offset(x: showItems ? -120 : 0, y: showItems ? -200: 0)
@@ -108,10 +119,10 @@ struct StartHere1: View {
                 
                 
                 
-                Image(systemName: "triangle.fill")
+                Image(systemName: "heart.fill")
                     .resizable()
                     .foregroundColor(ColorManager .purple4)
-                    .frame(width: 150, height: 80)
+                    .frame(width: 250, height: 200)
                 //                    .blur(radius: 2)
                 
 //                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
