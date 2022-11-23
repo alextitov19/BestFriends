@@ -27,9 +27,20 @@ struct BuggingPreload1: View {
         
         ZStack {
             
-            ColorManager.purple1
-                .ignoresSafeArea()
-                .onAppear()
+//            ColorManager.purple1
+//                .ignoresSafeArea()
+//                .onAppear()
+            
+            
+            
+            
+             Image("purpleBackground")
+                 .resizable()
+                 .scaledToFill()
+                 .ignoresSafeArea()
+          
+             Image("book")
+                 .frame(width: 320, height: 20)
             
             //            Image("purpleBackground")
             //                .resizable()
@@ -70,7 +81,7 @@ struct BuggingPreload1: View {
                 })
                 .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
                 
-                NavigationLink(destination: Apologies(user: user, friends: friends, groups: groups), label: {
+                NavigationLink(destination: Apologies4(user: user, friends: friends, groups: groups), label: {
                     BuggingCircle (color: ColorManager.purple4, friendName: "I hurt \nmy friend's \nFeelings")
                 })
                 .offset(x: showItems ? 100 : 0, y: showItems ? -175: 0)
