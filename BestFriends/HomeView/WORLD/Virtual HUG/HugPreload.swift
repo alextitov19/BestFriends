@@ -50,7 +50,7 @@ struct HugPreload: View {
                 NavigationLink(destination: AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends), label: {
                 HugCircle (color: ColorManager.red, friendName: "ALERT \nfriends! \nMY day just \nCHANGED")
             })
-                .offset(x: showItems ? 80 : 0, y: showItems ? -180: 0)
+                .offset(x: showItems ? -30 : 0, y: showItems ? -170: 0)
            
                 
 
