@@ -110,14 +110,14 @@ struct PlanetActionsView: View {
                                     .opacity(0.40)
                                 
                                 VStack {
+//
+//                                    Text("PhotoPOP")
+//                                        .foregroundColor(ColorManager .pmbc_blue)
+//                                        .font(.system(size: 17, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.50)
                                     
-                                    Text("PhotoPOP")
-                                        .foregroundColor(ColorManager .pmbc_blue)
-                                        .font(.system(size: 17, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.50)
-                                    
-                                    Text("'shake'")
+                                    Text("SHAKE")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -327,12 +327,12 @@ struct PlanetActionsView: View {
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
-                                    
-                                    Text("Music")
-                                        .foregroundColor(ColorManager .pmbc_blue)
-                                        .font(.system(size: 17, weight: .bold))
+                                    Text("MUSIC")
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
+                                  
                                     
                                     //                                    Text("Making")
                                     //                                        .foregroundColor(.white)
