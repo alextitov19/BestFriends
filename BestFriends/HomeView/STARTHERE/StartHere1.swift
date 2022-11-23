@@ -90,7 +90,7 @@ struct StartHere1: View {
                 NavigationLink(destination:  SurveyStickersPreload(), label: {
                     StartHereCircle (color: ColorManager.grey2, friendName: "Take \n Survey, \nget \nSTICKERS")
                 })
-                .offset(x: showItems ? -100 : 0, y: showItems ? 150: 0)
+                .offset(x: showItems ? 100 : 0, y: showItems ? -110: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
             
                 
@@ -108,7 +108,7 @@ struct StartHere1: View {
                 NavigationLink(destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
                     StartHereCircle (color: ColorManager.grey1, friendName: "Coming \nSoon!")
                     })
-                .offset(x: showItems ? 80 : 0, y: showItems ? 90: 0)
+                .offset(x: showItems ? 80 : 0, y: showItems ? 190: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
 
             
@@ -125,10 +125,10 @@ struct StartHere1: View {
                 
                 
                 
-                Image(systemName: "heart.fill")
+                Image(systemName: "star.fill")
                     .resizable()
-                    .foregroundColor(ColorManager .purple4)
-                    .frame(width: 200, height: 150)
+                    .foregroundColor(ColorManager .purple2)
+                    .frame(width: 300, height: 300)
                 //                    .blur(radius: 2)
                 
 //                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
