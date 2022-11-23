@@ -82,7 +82,7 @@ struct StartHere1: View {
                 NavigationLink(destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere), label: {
                     StartHereCircle (color: ColorManager.orange3, friendName: "SETTINGS")
                 })
-                .offset(x: showItems ? 80 : 0, y: showItems ? 90: 0)
+                .offset(x: showItems ? 70 : 0, y: showItems ? -235: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
               
                 
@@ -91,7 +91,7 @@ struct StartHere1: View {
                 NavigationLink(destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
                     StartHereCircle (color: ColorManager.grey1, friendName: "Coming \nSoon!")
                     })
-                .offset(x: showItems ? 70 : 0, y: showItems ? -235: 0)
+                .offset(x: showItems ? 80 : 0, y: showItems ? 90: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
 
             
