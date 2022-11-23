@@ -49,7 +49,7 @@ struct BuggingPreload1: View {
                 
                 
                 NavigationLink(destination: HurtFeelings4(user: user, friends: friends, groups: groups), label: {
-                    BuggingCircle (color: ColorManager.purple2, friendName: "My \nFeeling \ngot hurt")
+                    BuggingCircle (color: ColorManager.purple2, friendName: "Friend \nhurt my \nFeelings")
                 })
                 .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
                 
