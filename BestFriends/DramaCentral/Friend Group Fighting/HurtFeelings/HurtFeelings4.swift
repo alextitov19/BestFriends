@@ -31,60 +31,75 @@ struct HurtFeelings4: View {
     
     var body: some View {
         ZStack {
-                        ColorManager.purple4
+                        ColorManager.grey4
                             .ignoresSafeArea()
                             .onAppear()
             
             
             VStack {
            
-                Text("Some EXAMPLES of what to \nsay in a Chat message")
-                    .font(.system(size: 20))
-                    .fontWeight(.regular)
+//
+//
+//                Text("Some EXAMPLES of what to \nsay in a Chat message")
+//                    .font(.system(size: 20))
+//                    .fontWeight(.regular)
+//                    .foregroundColor(.white)
+//
+//                Spacer()
+//                    .frame(height: 15)
+//
+//                VStack {
+//                    Text("Hey, I would like to talk to you \nabout something you said (or did).")
+//                        .foregroundColor(.white)
+//                        .font(.system(size: 17))
+//                        .padding(.top)
+//                        .padding(.horizontal)
+//
+//                    CustomDivider(color: .white)
+//                        .frame(width: 240)
+//
+//                    Text("Hi, I wanted to let you know that \nwhat you said (or did) hurt my feelings")
+//                        .foregroundColor(.white)
+//                        .font(.system(size: 17))
+//                        .padding(.bottom)
+//                        .padding(.horizontal)
+//                }
+//                .overlay(
+//                        RoundedRectangle(cornerRadius: 16)
+//                            .stroke(.white, lineWidth: 1)
+//                    )
+//
+//
+//                Text("Alert Friends")
+//                    .font(.system(size: 15))
+//                   
+//                    .fontWeight(.thin)
+//                    .foregroundColor(Color.white)
+//       
+//       Text("That you're sending")
+//           .font(.system(size: 15))
+//           .italic()
+//           .fontWeight(.thin)
+//           .foregroundColor(Color.black)
+//       
+//       Text("them a message in Chat")
+//           .font(.system(size: 15))
+//           .italic()
+//           .fontWeight(.thin)
+//           .foregroundColor(Color.black)
+                
+                
+                Text("Ok, your friend")
+                    .font(.system(size: 35))
                     .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
                 
-                Spacer()
-                    .frame(height: 15)
-                
-                VStack {
-                    Text("Hey, I would like to talk to you \nabout something you said (or did).")
-                        .foregroundColor(.white)
-                        .font(.system(size: 17))
-                        .padding(.top)
-                        .padding(.horizontal)
-                    
-                    CustomDivider(color: .white)
-                        .frame(width: 240)
-                    
-                    Text("Hi, I wanted to let you know that \nwhat you said (or did) hurt my feelings")
-                        .foregroundColor(.white)
-                        .font(.system(size: 17))
-                        .padding(.bottom)
-                        .padding(.horizontal)
-                }
-                .overlay(
-                        RoundedRectangle(cornerRadius: 16)
-                            .stroke(.white, lineWidth: 1)
-                    )
-                   
-             
-                Text("Alert Friends")
-                    .font(.system(size: 15))
-                   
-                    .fontWeight(.thin)
-                    .foregroundColor(Color.white)
-       
-       Text("That you're sending")
-           .font(.system(size: 15))
-           .italic()
-           .fontWeight(.thin)
-           .foregroundColor(Color.black)
-       
-       Text("them a message in Chat")
-           .font(.system(size: 15))
-           .italic()
-           .fontWeight(.thin)
-           .foregroundColor(Color.black)
+                Text("hurt your feelings.")
+                    .font(.system(size: 35))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height: 5)
