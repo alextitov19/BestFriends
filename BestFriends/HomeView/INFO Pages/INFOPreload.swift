@@ -105,7 +105,7 @@ struct INFOPreload: View {
                         
                         Image(systemName: "triangle.fill")
                             .resizable()
-                            .foregroundColor(ColorManager .purple4)
+                            .foregroundColor(.cyan)
                             .frame(width: 350, height: 300)
                            .shadow(color: .white, radius: 65, x: 30, y: 50)
                             .opacity(0.65)
@@ -115,8 +115,8 @@ struct INFOPreload: View {
                             Spacer ()
                                 .frame(height: 130)
                             
-                            Text("have fun")
-                                .font(.system(size: 20))
+                            Text("putting smiles \non faces")
+                                .font(.system(size: 17))
                                 .italic()
                                 .foregroundColor(.white)
                                 .fontWeight(.thin)
@@ -124,10 +124,10 @@ struct INFOPreload: View {
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                            
                             Spacer ()
-                                .frame(height: 50)
+                                .frame(height: 35)
                             
                             Text("Building Special Friendships")
-                                .font(.system(size: 18))
+                                .font(.system(size: 23))
                                 .foregroundColor(.white)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
@@ -135,7 +135,7 @@ struct INFOPreload: View {
                             
                             
                             Text("while")
-                                .font(.system(size: 15))
+                                .font(.system(size: 18))
                                 .italic()
                                 .foregroundColor(.white)
                                 .fontWeight(.thin)
