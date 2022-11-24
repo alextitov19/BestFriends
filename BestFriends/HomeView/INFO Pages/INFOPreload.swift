@@ -72,14 +72,14 @@ struct INFOPreload: View {
                     Spacer ()
                         .frame(height: 20)
                     
-                    Text("Everyone wants")
+                    Text("Friendships are paramount")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                     
-                    Text("their friends to like them")
+                    Text("to us all")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.thin)
@@ -134,7 +134,7 @@ struct INFOPreload: View {
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                             
                             
-                            Text("and")
+                            Text("while")
                                 .font(.system(size: 15))
                                 .italic()
                                 .foregroundColor(.white)
