@@ -163,6 +163,7 @@
 		CF4A08EE2879577E00ADA9DD /* sky2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08ED2879577E00ADA9DD /* sky2.mp4 */; };
 		CF4A08FB2883A56200ADA9DD /* Sweetheart1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08FA2883A56200ADA9DD /* Sweetheart1.swift */; };
 		CF4CFAC228E8DC3B00D6AEA9 /* SaySomethingNice3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4CFAC128E8DC3B00D6AEA9 /* SaySomethingNice3.swift */; };
+		CF565EEA292FED1E00B66A18 /* WhyFiveFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF565EE9292FED1E00B66A18 /* WhyFiveFriends.swift */; };
 		CF65040028864AF00092EEB9 /* background_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503FF28864AF00092EEB9 /* background_1.mp4 */; };
 		CF650406288E76B50092EEB9 /* GotPushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650405288E76B50092EEB9 /* GotPushNotification.swift */; };
 		CF65040A28915A080092EEB9 /* FD_Step1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65040928915A080092EEB9 /* FD_Step1.swift */; };
@@ -412,6 +413,7 @@
 		CF4A08FA2883A56200ADA9DD /* Sweetheart1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sweetheart1.swift; sourceTree = "<group>"; };
 		CF4CFAC128E8DC3B00D6AEA9 /* SaySomethingNice3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingNice3.swift; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* background_4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_4.mp4; sourceTree = "<group>"; };
+		CF565EE9292FED1E00B66A18 /* WhyFiveFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyFiveFriends.swift; sourceTree = "<group>"; };
 		CF6503FF28864AF00092EEB9 /* background_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_1.mp4; sourceTree = "<group>"; };
 		CF650405288E76B50092EEB9 /* GotPushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotPushNotification.swift; sourceTree = "<group>"; };
 		CF65040928915A080092EEB9 /* FD_Step1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FD_Step1.swift; sourceTree = "<group>"; };
@@ -1164,6 +1166,7 @@
 		CFC0EE7829080585006B3FAA /* INFO Pages */ = {
 			isa = PBXGroup;
 			children = (
+				CF565EE9292FED1E00B66A18 /* WhyFiveFriends.swift */,
 				CF3295F6290BAA7C0014F658 /* INFOPreload.swift */,
 				CFD8BD15291B3D6600F86EFB /* INFOPreload2.swift */,
 				CF3295FC290BBD210014F658 /* InfoCoolVideo.swift */,
@@ -1532,6 +1535,7 @@
 				CF09118C28488A5700CB0AF0 /* BetaTestVideo.swift in Sources */,
 				CF24815728F5060100D47AE3 /* PhotoPop3.swift in Sources */,
 				7A22A57C274416C200FB6B4F /* CustomButtonInterior.swift in Sources */,
+				CF565EEA292FED1E00B66A18 /* WhyFiveFriends.swift in Sources */,
 				7A7AEF2826C4CF6D00DE8344 /* SequenceExtension.swift in Sources */,
 				CFD0ABD8285C492F0032CA3D /* BuiltByTeens2.swift in Sources */,
 				CF4A08E228793CC900ADA9DD /* HurtFeelings4.swift in Sources */,
