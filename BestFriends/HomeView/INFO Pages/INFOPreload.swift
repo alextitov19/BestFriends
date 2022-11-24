@@ -71,25 +71,25 @@ struct INFOPreload: View {
                     
                     Spacer ()
                         .frame(height: 20)
-                    
-                    Text("Friendships are paramount")
-                        .font(.system(size: 20))
-                        .foregroundColor(.white)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
-                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    
-                    Text("to us all")
-                        .font(.system(size: 20))
-                        .foregroundColor(.white)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
-                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+//                    Text("Friendships are paramount")
+//                        .font(.system(size: 20))
+//                        .foregroundColor(.white)
+//                        .fontWeight(.thin)
+//                        .multilineTextAlignment(.center)
+//                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+//                    Text("to us all")
+//                        .font(.system(size: 20))
+//                        .foregroundColor(.white)
+//                        .fontWeight(.thin)
+//                        .multilineTextAlignment(.center)
+//                        .shadow(color: .black, radius: 1, x: 0, y: 1)
                     
                     Spacer ()
                         .frame(height: 20)
                     
-                                        Text("NOW, in a safe & positive space")
+                                        Text("In a safe & positive space")
                                             .font(.system(size: 20))
                                             .foregroundColor(.white)
                                             .fontWeight(.thin)
