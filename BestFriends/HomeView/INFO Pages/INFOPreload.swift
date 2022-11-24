@@ -87,33 +87,9 @@ struct INFOPreload: View {
                         VStack {
                         
                             Spacer ()
-                                .frame(height: 80)
+                                .frame(height: 180)
                             
-                        
-                         
-                           
-                            Spacer ()
-                                .frame(height: 10)
-                        
-//                            Text("introducing")
-//                                .font(.system(size: 20))
-//                                .italic()
-//                                .foregroundColor(ColorManager .orange5)
-//                                .fontWeight(.thin)
-//                                .multilineTextAlignment(.center)
-//                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                            
-//                            Text("World FriendGroups")
-//                                .font(.system(size: 20))
-//                                .italic()
-//                                .foregroundColor(ColorManager .orange5)
-//                                .fontWeight(.thin)
-//                                .multilineTextAlignment(.center)
-//                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            
-                            
-                            Spacer ()
-                                .frame(height: 35)
+
                             
                             
                             Text("Building Impressive Friendships")
