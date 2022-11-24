@@ -60,22 +60,22 @@ struct INFOPreload2: View {
            
              
                 Text("Making")
-                    .font(.system(size: 35))
-                
+                    .font(.system(size: 27))
+                    .italic()
                     .foregroundColor(ColorManager.purple3)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
                 Text("F R I E N D S H I P S")
-                    .font(.system(size: 47))
+                    .font(.system(size: 45))
                     .foregroundColor(ColorManager.purple3)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                
                 Text("feel like ...")
-                        .font(.system(size: 35))
-                      
-                        .fontWeight(.light)
+                        .font(.system(size: 27))
+                        .italic()
+                        .fontWeight(.thin)
                         .foregroundColor(ColorManager .purple3)
              
                 Spacer()

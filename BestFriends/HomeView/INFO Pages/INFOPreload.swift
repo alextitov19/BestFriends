@@ -40,15 +40,15 @@ struct INFOPreload: View {
                 
                 VStack {
                     
-                    Spacer()
-                        .frame(height: 125)
-                    
-                    Text("Nightly 8:00pm EST")
-                        .font(.system(size: 25))
-                        .italic()
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.orange5)
+//                    Spacer()
+//                        .frame(height: 125)
+//
+//                    Text("Nightly 8:00pm EST")
+//                        .font(.system(size: 25))
+//                        .italic()
+//                        .fontWeight(.thin)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager.orange5)
                     
                     
                     
@@ -148,7 +148,7 @@ struct INFOPreload: View {
                         
                         
                         Spacer ()
-                            .frame(height: 30)
+                            .frame(height: 20)
                        
                         Text("in a safe, positive space")
                             .font(.system(size: 23))
@@ -159,7 +159,7 @@ struct INFOPreload: View {
                         
                     
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 40)
                      
                         NavigationLink(
                             destination: INFOPreload2(user: user),
@@ -193,7 +193,7 @@ struct INFOPreload: View {
                             })
                         
                         Spacer()
-                            .frame(height: 130)
+                            .frame(height: 75)
                         
                         
                         
