@@ -95,21 +95,21 @@ struct INFOPreload: View {
                             Spacer ()
                                 .frame(height: 10)
                         
-                            Text("introducing")
-                                .font(.system(size: 20))
-                                .italic()
-                                .foregroundColor(ColorManager .orange5)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            
-                            Text("World FriendGroups")
-                                .font(.system(size: 20))
-                                .italic()
-                                .foregroundColor(ColorManager .orange5)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                            Text("introducing")
+//                                .font(.system(size: 20))
+//                                .italic()
+//                                .foregroundColor(ColorManager .orange5)
+//                                .fontWeight(.thin)
+//                                .multilineTextAlignment(.center)
+//                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                            
+//                            Text("World FriendGroups")
+//                                .font(.system(size: 20))
+//                                .italic()
+//                                .foregroundColor(ColorManager .orange5)
+//                                .fontWeight(.thin)
+//                                .multilineTextAlignment(.center)
+//                                .shadow(color: .black, radius: 1, x: 0, y: 1)
                             
                             
                             Spacer ()
@@ -156,7 +156,14 @@ struct INFOPreload: View {
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.purple2)
+                 
                         
+                        Text("in 5 minutes a day")
+                            .font(.system(size: 23))
+                           
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager.purple2)
                     
                         Spacer()
                             .frame(height: 40)
