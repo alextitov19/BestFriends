@@ -59,21 +59,20 @@ struct INFOPreload2: View {
             VStack {
            
              
-                Text("Creating")
-                    .font(.system(size: 63))
+                Text("Making")
+                    .font(.system(size: 35))
                 
                     .foregroundColor(ColorManager.purple3)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
-                Text("F I E L I N G S")
-                    .font(.system(size: 63))
-                
+                Text("F R I E N D S H I P S")
+                    .font(.system(size: 47))
                     .foregroundColor(ColorManager.purple3)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                
-                Text("like ...")
+                Text("feel like ...")
                         .font(.system(size: 35))
                       
                         .fontWeight(.light)
@@ -125,10 +124,27 @@ struct INFOPreload2: View {
                             .font(.system(size: 25))
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
+                   
+                    
+                    
+                  
                     
             VStack {
               
-                    
+                   
+                Spacer()
+                    .frame(height: 15)
+                
+                Text("scoring a goal")
+                        .font(.system(size: 25))
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.white)
+                
+                Text("even if in the silence")
+                        .font(.system(size: 25))
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.white)
+                
                 Spacer()
                     .frame(height: 60)
             

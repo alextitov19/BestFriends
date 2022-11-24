@@ -128,7 +128,7 @@ struct StartHere1: View {
                 Image(systemName: "circle.fill")
                     .resizable()
                     .foregroundColor(ColorManager .purple2)
-                    .frame(width: 95, height: 95)
+                    .frame(width: 150, height: 150)
                     .blur(radius: 2)
                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
                     .opacity(0.90)
@@ -139,7 +139,7 @@ struct StartHere1: View {
             Spacer ()
                    .frame(height: 120)
               
-               Text("Tap")
+               Text("Building Resilient friendships \nreducing friendgroup drams \nsmiles on faces")
                              .font(.system(size: 15))
                              .italic()
                              .foregroundColor(ColorManager .grey4)

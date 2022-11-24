@@ -44,16 +44,32 @@ struct INFOPreload: View {
                         .frame(height: 125)
                     
                     Text("Nightly 8:00pm EST")
-                        .font(.system(size: 15))
+                        .font(.system(size: 25))
                         .italic()
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.purple2)
+                        .foregroundColor(ColorManager.orange5)
                     
                     
                     
                     Spacer ()
                         .frame(height: 30)
+                    
+                    
+                    
+                    Text("Yep, everyone wants")
+                        .font(.system(size: 20))
+                        .foregroundColor(.white)
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    
+                    Text("their friends to like them")
+                        .font(.system(size: 20))
+                        .foregroundColor(.white)
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                        .shadow(color: .black, radius: 1, x: 0, y: 1)
                     
                     ZStack{
                         
@@ -61,43 +77,64 @@ struct INFOPreload: View {
                             SomethingNiceCircle (color: ColorManager.pmbc_blue, friendName: "")
                         })
                         
-                        Image(systemName: "heart.fill")
+                        Image(systemName: "triangle.fill")
                             .resizable()
                             .foregroundColor(ColorManager .purple4)
-                            .frame(width: 200, height: 200)
+                            .frame(width: 350, height: 300)
                            .shadow(color: .white, radius: 65, x: 30, y: 50)
                             .opacity(0.65)
                         
                         VStack {
                         
                             Spacer ()
-                                .frame(height: 40)
+                                .frame(height: 80)
                             
                         
-                            
-                            
-                            Text("share")
+                         
+                           
+                            Spacer ()
+                                .frame(height: 10)
+                        
+                            Text("introducing")
                                 .font(.system(size: 20))
-                            //                            .italic()
-                                .foregroundColor(.white)
+                                .italic()
+                                .foregroundColor(ColorManager .orange5)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                             
-                            Text("smiles with")
+                            Text("World FriendGroups")
                                 .font(.system(size: 20))
-                            //                             .italic()
-                                .foregroundColor(.white)
+                                .italic()
+                                .foregroundColor(ColorManager .orange5)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            
                             
                             Spacer ()
-                                .frame(height: 7)
+                                .frame(height: 35)
                             
                             
-                            Text("F R I E N D S")
-                                .font(.system(size: 26))
+                            Text("Building Impressive Friendships")
+                                .font(.system(size: 22))
+                                .foregroundColor(.white)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            
+                            
+                            Text("and")
+                                .font(.system(size: 15))
+                                .italic()
+                                .foregroundColor(.white)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            
+                            Text("Reducing FriendGroup Drama")
+                                .font(.system(size: 27))
+                            //                             .italic()
                                 .foregroundColor(.white)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
@@ -114,45 +151,16 @@ struct INFOPreload: View {
                             .frame(height: 30)
                        
                         Text("in a safe, positive space")
-                            .font(.system(size: 15))
+                            .font(.system(size: 23))
                             .italic()
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.purple2)
                         
-                        Text("with your closest friends")
-                            .font(.system(size: 15))
-                            .italic()
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple2)
-                        
-                        Spacer ()
-                            .frame(height: 15)
-                        
-                        
-                        Text("making hearts")
-                            .font(.system(size: 25))
-                        
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple2)
-                        
-                        Text("H A P P Y")
-                            .font(.system(size: 25))
-                            
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple2)
-                        
-                      
-                        Spacer()
-                            .frame(height: 50)
                     
-                        
-                        
-                        
-                        
+                        Spacer()
+                            .frame(height: 20)
+                     
                         NavigationLink(
                             destination: INFOPreload2(user: user),
                             label: {
@@ -184,8 +192,8 @@ struct INFOPreload: View {
                                 
                             })
                         
-//                        Spacer()
-//                            .frame(height: 130)
+                        Spacer()
+                            .frame(height: 130)
                         
                         
                         
