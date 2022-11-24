@@ -52,12 +52,27 @@ struct INFOPreload: View {
                     
                     
                     
+//                    Spacer ()
+//                        .frame(height: 30)
+                   
+                    Text("We all have enough")
+                        .font(.system(size: 20))
+                        .foregroundColor(.white)
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    
+                    Text("to deal with")
+                        .font(.system(size: 20))
+                        .foregroundColor(.white)
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    
                     Spacer ()
-                        .frame(height: 30)
+                        .frame(height: 20)
                     
-                    
-                    
-                    Text("Yep, everyone wants")
+                    Text("and, everyone wants")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.thin)
@@ -92,7 +107,7 @@ struct INFOPreload: View {
 
                             
                             
-                            Text("Building Impressive Friendships")
+                            Text("Build Impressive Friendships")
                                 .font(.system(size: 22))
                                 .foregroundColor(.white)
                                 .fontWeight(.thin)
@@ -108,7 +123,7 @@ struct INFOPreload: View {
                                 .multilineTextAlignment(.center)
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                             
-                            Text("Reducing FriendGroup Drama")
+                            Text("Reduce FriendGroup Drama")
                                 .font(.system(size: 27))
                             //                             .italic()
                                 .foregroundColor(.white)
