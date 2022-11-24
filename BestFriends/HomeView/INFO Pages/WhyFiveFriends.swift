@@ -131,7 +131,7 @@ struct WhyFiveFriends: View {
                     .opacity(0.50)
                     .multilineTextAlignment(.center)
                 
-                Text("high school and college students")
+                Text("high school and college students,")
 //                    .font(.system(size: 25, weight: .bold))
                     .font(.system(size: 17, weight: .bold))
                     .foregroundColor(ColorManager .grey1)
