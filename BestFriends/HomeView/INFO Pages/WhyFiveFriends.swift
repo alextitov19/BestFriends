@@ -47,21 +47,19 @@ struct WhyFiveFriends: View {
             
             
             VStack {
+                
+                
                        
                         
-                        Text("we surveyed over 500 teens worldwide")
-        //                    .font(.system(size: 25, weight: .bold))
+                        Text("Over 70% of the 500 teens worldwide")
                             .font(.system(size: 17, weight: .bold))
                             .foregroundColor(ColorManager .grey1)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                             .opacity(0.50)
                             .multilineTextAlignment(.center)
 
-           
-                        
-                        
-                        Text("Over 70% said they wanted 5 or less")
-        //                    .font(.system(size: 25, weight: .bold))
+            
+                        Text("we surveyed wanted 5 or less")
                             .font(.system(size: 17, weight: .bold))
                             .foregroundColor(ColorManager .grey1)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -96,7 +94,7 @@ struct WhyFiveFriends: View {
                     .multilineTextAlignment(.center)
                 
                 
-                Text("connections over more, oftern toxic, ones")
+                Text("connections over more, often toxic, ones")
 //                    .font(.system(size: 25, weight: .bold))
                     .font(.system(size: 35, weight: .bold))
                     .foregroundColor(ColorManager .grey1)
@@ -106,21 +104,44 @@ struct WhyFiveFriends: View {
 //                    .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
+               
                 
                 
-                Text("So for now, we set it at five.")
+                
+                
+                
+
+
+                
+                Spacer()
+                    .frame(height: 50)
+   
+                Text("Our intern staff of over 120")
 //                    .font(.system(size: 25, weight: .bold))
                     .font(.system(size: 17, weight: .bold))
                     .foregroundColor(ColorManager .grey1)
                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                     .opacity(0.50)
                     .multilineTextAlignment(.center)
-
                 
-                Spacer()
-                    .frame(height: 50)
-   
-
+                Text("high school and college students")
+//                    .font(.system(size: 25, weight: .bold))
+                    .font(.system(size: 17, weight: .bold))
+                    .foregroundColor(ColorManager .grey1)
+                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.50)
+                    .multilineTextAlignment(.center)
+                
+                Text("for now at least - set it at five.")
+//                    .font(.system(size: 25, weight: .bold))
+                    .font(.system(size: 17, weight: .bold))
+                    .foregroundColor(ColorManager .grey1)
+                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.50)
+                    .multilineTextAlignment(.center)
+                
+                
+                
                     }
                 }
                 
