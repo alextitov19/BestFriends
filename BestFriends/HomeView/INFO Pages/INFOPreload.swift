@@ -55,24 +55,24 @@ struct INFOPreload: View {
 //                    Spacer ()
 //                        .frame(height: 30)
                    
-                    Text("We all have enough")
-                        .font(.system(size: 20))
-                        .foregroundColor(.white)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
-                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    
-                    Text("to deal with")
-                        .font(.system(size: 20))
-                        .foregroundColor(.white)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
-                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                    Text("We all have enough")
+//                        .font(.system(size: 20))
+//                        .foregroundColor(.white)
+//                        .fontWeight(.thin)
+//                        .multilineTextAlignment(.center)
+//                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+//                    Text("to deal with")
+//                        .font(.system(size: 20))
+//                        .foregroundColor(.white)
+//                        .fontWeight(.thin)
+//                        .multilineTextAlignment(.center)
+//                        .shadow(color: .black, radius: 1, x: 0, y: 1)
                     
                     Spacer ()
                         .frame(height: 20)
                     
-                    Text("and, everyone wants")
+                    Text("Everyone wants")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.thin)
@@ -85,6 +85,17 @@ struct INFOPreload: View {
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    
+                    Spacer ()
+                        .frame(height: 20)
+                    
+                                        Text("NOW, in a safe & positive space")
+                                            .font(.system(size: 20))
+                                            .foregroundColor(.white)
+                                            .fontWeight(.thin)
+                                            .multilineTextAlignment(.center)
+                                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    
                     
                     ZStack{
                         
@@ -148,14 +159,14 @@ struct INFOPreload: View {
                         
                         Spacer ()
                             .frame(height: 20)
-                       
-                        Text("together in a safe, positive space")
-                            .font(.system(size: 23))
-                            .italic()
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple2)
-                 
+//
+//                        Text("together in a safe, positive space")
+//                            .font(.system(size: 23))
+//                            .italic()
+//                            .fontWeight(.thin)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(ColorManager.purple2)
+//
                         
                         Text("in 5 minutes a day")
                             .font(.system(size: 23))
