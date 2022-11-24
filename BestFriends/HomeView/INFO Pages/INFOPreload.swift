@@ -150,7 +150,7 @@ struct INFOPreload: View {
                         Spacer ()
                             .frame(height: 20)
                        
-                        Text("in a safe, positive space")
+                        Text("together in a safe, positive space")
                             .font(.system(size: 23))
                             .italic()
                             .fontWeight(.thin)

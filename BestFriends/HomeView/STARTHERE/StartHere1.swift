@@ -139,8 +139,8 @@ struct StartHere1: View {
             Spacer ()
                    .frame(height: 120)
               
-               Text("Building Resilient friendships \nreducing friendgroup drams \nsmiles on faces")
-                             .font(.system(size: 15))
+               Text("tap")
+                             .font(.system(size: 18))
                              .italic()
                              .foregroundColor(ColorManager .grey4)
                              .fontWeight(.thin)
