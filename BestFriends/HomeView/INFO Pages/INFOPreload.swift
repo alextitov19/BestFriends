@@ -126,8 +126,8 @@ struct INFOPreload: View {
                             Spacer ()
                                 .frame(height: 50)
                             
-                            Text("Building Impressive Friendships")
-                                .font(.system(size: 20))
+                            Text("Building Special Friendships")
+                                .font(.system(size: 18))
                                 .foregroundColor(.white)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
