@@ -66,6 +66,13 @@ struct WhyFiveFriends: View {
                             .opacity(0.50)
                             .multilineTextAlignment(.center)
                 
+                Text("of their closest, most trusted friends")
+                    .font(.system(size: 17, weight: .bold))
+                    .foregroundColor(ColorManager .grey1)
+                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.50)
+                    .multilineTextAlignment(.center)
+                
                 Spacer()
                     .frame(height: 50)
                 
