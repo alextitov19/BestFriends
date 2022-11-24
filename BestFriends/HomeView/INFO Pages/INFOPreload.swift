@@ -102,13 +102,21 @@ struct INFOPreload: View {
                         VStack {
                         
                             Spacer ()
-                                .frame(height: 180)
+                                .frame(height: 130)
                             
-
+                            Text("have fun")
+                                .font(.system(size: 20))
+                                .italic()
+                                .foregroundColor(.white)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                           
+                            Spacer ()
+                                .frame(height: 50)
                             
-                            
-                            Text("Build Impressive Friendships")
-                                .font(.system(size: 22))
+                            Text("Building Impressive Friendships")
+                                .font(.system(size: 20))
                                 .foregroundColor(.white)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
@@ -123,8 +131,8 @@ struct INFOPreload: View {
                                 .multilineTextAlignment(.center)
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                             
-                            Text("Reduce FriendGroup Drama")
-                                .font(.system(size: 27))
+                            Text("Reducing FriendGroup Drama")
+                                .font(.system(size: 25))
                             //                             .italic()
                                 .foregroundColor(.white)
                                 .fontWeight(.thin)
