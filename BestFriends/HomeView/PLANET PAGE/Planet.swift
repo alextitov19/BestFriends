@@ -419,24 +419,24 @@ struct PlanetActionsView: View {
                                 VStack {
                                     
                                     
-                                    Text("Somethings")
+                                    Text("Hurt")
                                         .foregroundColor(ColorManager .pmbc_blue)
                                         .font(.system(size: 17, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                    
-                                    Text("Bugging")
+                                    Text("Feelings")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
-                                   
-                                    Text("Me")
-                                       
-                                        .foregroundColor(ColorManager .pmbc_blue)
-                                        .font(.system(size: 17, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.50)
+//                                   
+//                                    Text("Me")
+//                                       
+//                                        .foregroundColor(ColorManager .pmbc_blue)
+//                                        .font(.system(size: 17, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.50)
                                 }
                             }
                         })

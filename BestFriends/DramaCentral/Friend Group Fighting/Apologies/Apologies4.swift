@@ -205,6 +205,23 @@ struct Apologies4: View {
                                 }
                         })
                         
+                        
+                        Spacer()
+                            .frame(height: 15)
+                        
+                        Text("tap 'share' \nwe send notification saying")
+                            .font(.system(size: 20))
+                            .foregroundColor(.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("'I'm sorry. I apologize'")
+                            .font(.system(size: 27))
+                            .foregroundColor(.green)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                        
+                        
                         Spacer ()
                             .frame(height: 80)
                         
@@ -273,7 +290,7 @@ struct Apologies4: View {
             for id in selectedFriends {
                 for f in friends {
                     if f.id == id {
-                        RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent you an apology in chat!", APNToken: f.APNToken)
+                        RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) I'm sorry. I appologize", APNToken: f.APNToken)
                     }
                 }
             }

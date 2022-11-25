@@ -198,13 +198,13 @@ struct HurtFeelings4: View {
                         Spacer()
                             .frame(height: 15)
                         
-                        Text("tap 'share' \nwe send notification that ")
+                        Text("tap 'share' \nwe send notification saying")
                             .font(.system(size: 20))
                             .foregroundColor(.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Text("your feelings were hurt")
+                        Text("'you hurt my feelings'")
                             .font(.system(size: 27))
                             .foregroundColor(.green)
                             .fontWeight(.light)
