@@ -68,27 +68,27 @@ struct Apologies4: View {
 //
                 VStack {
                     
-                    
-                    Spacer()
-                        .frame(height: 15)
-                    
-                    Text("Alert Friends")
-                        .font(.system(size: 15))
-                    
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.white)
-                    
-                    Text("That you're sending")
-                        .font(.system(size: 15))
-                        .italic()
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.black)
-                    
-                    Text("them a message in Chat")
-                        .font(.system(size: 15))
-                        .italic()
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.black)
+//
+//                    Spacer()
+//                        .frame(height: 15)
+//
+//                    Text("Alert Friends")
+//                        .font(.system(size: 15))
+//
+//                        .fontWeight(.thin)
+//                        .foregroundColor(Color.white)
+//
+//                    Text("That you're sending")
+//                        .font(.system(size: 15))
+//                        .italic()
+//                        .fontWeight(.thin)
+//                        .foregroundColor(Color.black)
+//
+//                    Text("them a message in Chat")
+//                        .font(.system(size: 15))
+//                        .italic()
+//                        .fontWeight(.thin)
+//                        .foregroundColor(Color.black)
                     
                     
                     HStack {
@@ -206,7 +206,7 @@ struct Apologies4: View {
                         })
                         
                         Spacer ()
-                            .frame(height: 40)
+                            .frame(height: 80)
                         
                         
                         
@@ -230,7 +230,7 @@ struct Apologies4: View {
                         
                         
                         Spacer ()
-                            .frame(height: 15)
+                            .frame(height: 25)
                         
                         Button(action: {
                             sessionManager.showLogin()
@@ -245,11 +245,11 @@ struct Apologies4: View {
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
-                        
-                        Text("Ok, now enjoy your week.")
-                            .font(.system(size: 25))
-                            .fontWeight(.regular)
-                            .foregroundColor(Color .white)
+//                        
+//                        Text("Ok, now enjoy your week.")
+//                            .font(.system(size: 25))
+//                            .fontWeight(.regular)
+//                            .foregroundColor(Color .white)
                         
                         Spacer()
                             .frame(height: 70)
