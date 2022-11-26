@@ -72,7 +72,7 @@ struct INFOPreload2: View {
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                
-                Text("feel like ...")
+                Text("that feel like ...")
                         .font(.system(size: 27))
                         .italic()
                         .fontWeight(.thin)
