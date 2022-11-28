@@ -135,12 +135,12 @@ struct INFOPreload2: View {
                 Spacer()
                     .frame(height: 15)
                 
-                Text("scoring a goal")
+                Text("reaching a goal")
                         .font(.system(size: 25))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
                 
-                Text("even if in the silence")
+                Text("long worked for")
                         .font(.system(size: 25))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
