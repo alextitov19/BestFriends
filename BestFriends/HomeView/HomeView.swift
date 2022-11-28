@@ -282,7 +282,7 @@ struct HomeView: View {
                         Button(action: {
                             chatButtonTapped()
                         }, label: {
-                            Text("Create 'New' Chat Room")
+                            Text("Create 'New' Chat Rooms")
                                 .fontWeight(.regular)
                                 .frame(width: 240, height: 30)
                                 .foregroundColor(.white)
@@ -302,9 +302,9 @@ struct HomeView: View {
                         if homeData!.groups.count > 0 {
                             NavigationLink(destination: UrgentChatInvite(user: homeData!.user, owner: homeData!.user, group: homeData!.groups[0]),
                                            label: {
-                                Text("Urgent Chat Invite")
+                                Text("Song 4 Playlist - coming soon")
                                     .fontWeight(.light)
-                                    .frame(width: 240, height: 30)
+                                    .frame(width: 0, height: 0)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
@@ -312,7 +312,7 @@ struct HomeView: View {
                             })
                         }
                         
-           
+                   
                         
                         Spacer().frame(height: 10)
                         
@@ -403,6 +403,8 @@ struct HomeView: View {
                                     .opacity(0.4)
                             })
                         }
+                       
+                        
                         Spacer().frame(height:10)
 
 
@@ -412,10 +414,10 @@ struct HomeView: View {
                                 .fontWeight(.light)
                                 .frame(width: 240, height: 29)
                                 .foregroundColor(.white)
-                                .background(ColorManager.orange5)
+                                .background(ColorManager.purple3)
 //                                .background(ColorManager.purple3)
                                 .cornerRadius(15)
-                                .opacity(0.6)
+                                .opacity(0.4)
                         })
                     
                         
