@@ -352,9 +352,9 @@ struct HomeView: View {
                         HStack {
                             NavigationLink(destination: VirtualHug(),
                                            label: {
-                                Text("Received Hug")
+                                Text("Friend Sent Hug")
                                     .fontWeight(.light)
-                                    .frame(width: 115, height: 30)
+                                    .frame(width: 240, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
@@ -362,11 +362,11 @@ struct HomeView: View {
                             })
                             
                             
-                            NavigationLink(destination: ReceivedPlaylist(),
+                            NavigationLink(destination: EmptyView(),
                                            label: {
-                                Text("Song 4 Mood")
+                                Text("Song 4 Mood - deactivated for now")
                                     .fontWeight(.light)
-                                    .frame(width: 115, height: 30)
+                                    .frame(width: 0, height: 0)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
@@ -396,7 +396,7 @@ struct HomeView: View {
                                            label: {
                                 Text("Dream Story")
                                     .fontWeight(.light)
-                                    .frame(width: 0, height: 30)
+                                    .frame(width: 0, height: 0)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
