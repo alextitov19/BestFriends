@@ -320,9 +320,9 @@ struct HomeView: View {
                         HStack {
                             NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
                                            label: {
-                                Text("Fix Fight")
+                                Text("Huge Fight - Not Talking")
                                     .fontWeight(.light)
-                                    .frame(width: 115, height: 30)
+                                    .frame(width: 240, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
@@ -330,14 +330,14 @@ struct HomeView: View {
                             })
                             
                             
-//                            NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
+
                         
                             NavigationLink(destination: FG_VideoCall(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
                                            
                                            label: {
                                 Text("Hurt")
                                     .fontWeight(.light)
-                                    .frame(width: 115, height: 30)
+                                    .frame(width: 0, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
@@ -345,25 +345,14 @@ struct HomeView: View {
                             })
                         }
                         
-                        
-                        
-                        //                        NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
-                        //                                       label: {
-                        //                            Text("Drama ALERT")
-                        //                                .fontWeight(.light)
-                        //                                .frame(width: 210, height: 30)
-                        //                                .foregroundColor(.white)
-                        //                                .background(ColorManager.purple1)
-                        //                                .cornerRadius(15)
-                        //                                .opacity(0.4)
-                        //                        })
+                   
                         Spacer()
                             .frame(height: 10)
                         
                         HStack {
                             NavigationLink(destination: VirtualHug(),
                                            label: {
-                                Text("Got Hug")
+                                Text("Received Hug")
                                     .fontWeight(.light)
                                     .frame(width: 115, height: 30)
                                     .foregroundColor(.white)
@@ -375,7 +364,7 @@ struct HomeView: View {
                             
                             NavigationLink(destination: ReceivedPlaylist(),
                                            label: {
-                                Text("Got Song")
+                                Text("Song 4 Mood")
                                     .fontWeight(.light)
                                     .frame(width: 115, height: 30)
                                     .foregroundColor(.white)
@@ -389,9 +378,9 @@ struct HomeView: View {
                         
                         HStack {
                             NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
-                                Text("Friend's Aura")
+                                Text("My Friend's Day Just Changed")
                                     .fontWeight(.light)
-                                    .frame(width: 115, height: 30)
+                                    .frame(width: 240, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
@@ -407,7 +396,7 @@ struct HomeView: View {
                                            label: {
                                 Text("Dream Story")
                                     .fontWeight(.light)
-                                    .frame(width: 115, height: 30)
+                                    .frame(width: 0, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
@@ -415,11 +404,11 @@ struct HomeView: View {
                             })
                         }
                         Spacer().frame(height:10)
-                        
-                        
-                        NavigationLink(destination: WorldPreload2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+
+
+                        NavigationLink(destination: DreamVaultView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                        label: {
-                            Text("BestFriends World")
+                            Text("New Dream Poem posted")
                                 .fontWeight(.light)
                                 .frame(width: 240, height: 29)
                                 .foregroundColor(.white)
