@@ -275,7 +275,7 @@ struct Step2_FightLandingView: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) is asking if you want to fix this fight.", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) is asking if you want to fix this fight", APNToken: f.APNToken)
                 }
             }
         }

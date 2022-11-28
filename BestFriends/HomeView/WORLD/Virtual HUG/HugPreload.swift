@@ -39,12 +39,12 @@ struct HugPreload: View {
             
                 
                 
-                
-                NavigationLink(destination: VirtualHug(), label: {
-                HugCircle (color: ColorManager.purple4, friendName: "received \nHUG")
-            })
-                .offset(x: showItems ? 130 : 0, y: showItems ? -175: 0)
-           
+//                
+//                NavigationLink(destination: VirtualHug(), label: {
+//                HugCircle (color: ColorManager.purple4, friendName: "received \nHUG")
+//            })
+//                .offset(x: showItems ? 130 : 0, y: showItems ? -175: 0)
+//           
 
 
                 NavigationLink(destination: AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends), label: {

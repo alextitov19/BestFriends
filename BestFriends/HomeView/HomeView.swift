@@ -320,7 +320,7 @@ struct HomeView: View {
                         HStack {
                             NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
                                            label: {
-                                Text("Huge Fight - Not Talking")
+                                Text("Friend asking to fix your Fight")
                                     .fontWeight(.light)
                                     .frame(width: 240, height: 30)
                                     .foregroundColor(.white)
@@ -352,7 +352,7 @@ struct HomeView: View {
                         HStack {
                             NavigationLink(destination: VirtualHug(),
                                            label: {
-                                Text("Friend Sent Hug")
+                                Text("Friend sent you a Hug")
                                     .fontWeight(.light)
                                     .frame(width: 240, height: 30)
                                     .foregroundColor(.white)
@@ -378,7 +378,7 @@ struct HomeView: View {
                         
                         HStack {
                             NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
-                                Text("My Friend's Day Just Changed")
+                                Text("My friend's Day Just Changed")
                                     .fontWeight(.light)
                                     .frame(width: 240, height: 30)
                                     .foregroundColor(.white)
@@ -407,18 +407,18 @@ struct HomeView: View {
                         
                         Spacer().frame(height:10)
 
-
-                        NavigationLink(destination: DreamVaultView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                                       label: {
-                            Text("New Dream Poem posted")
-                                .fontWeight(.light)
-                                .frame(width: 240, height: 29)
-                                .foregroundColor(.white)
-                                .background(ColorManager.purple3)
+//
+//                        NavigationLink(destination: DreamVaultView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+//                                       label: {
+//                            Text("New Dream Poem posted")
+//                                .fontWeight(.light)
+//                                .frame(width: 240, height: 29)
+//                                .foregroundColor(.white)
 //                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .opacity(0.4)
-                        })
+////                                .background(ColorManager.purple3)
+//                                .cornerRadius(15)
+//                                .opacity(0.4)
+//                        })
                     
                         
                         Spacer()
