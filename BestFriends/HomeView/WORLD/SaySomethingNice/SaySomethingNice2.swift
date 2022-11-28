@@ -66,7 +66,7 @@ struct SaySomethingNice2: View {
                             
                             HStack {
                                 
-                                Text("who sending to>")
+                                Text("who sending to >")
                                     .fontWeight(.thin)
                                     .frame(width: 120, height: 30)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
