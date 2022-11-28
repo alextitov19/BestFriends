@@ -146,7 +146,7 @@ struct StartHere1: View {
             Spacer ()
                    .frame(height: 120)
               
-               Text("tap")
+               Text("click \nhere")
                              .font(.system(size: 18))
                              .italic()
                              .foregroundColor(ColorManager .grey4)

@@ -113,18 +113,28 @@ struct INFOPreload2: View {
                             .foregroundColor(Color.white)
                     
                     Spacer()
+                        .frame(height: 35)
+                    
+                    Text("(Check for eew emotional phrases)")
+                            .font(.system(size: 17))
+                            .italic()
+                            .fontWeight(.thin)
+                            .foregroundColor(ColorManager .purple3)
+                    
+                    
+                    Spacer()
                         .frame(height: 15)
                     
-                    Text("making snow angles in the")
-                            .font(.system(size: 25))
-                            .fontWeight(.thin)
-                            .foregroundColor(Color.white)
-                    
-                    Text("warm sunshine")
-                            .font(.system(size: 25))
-                            .fontWeight(.thin)
-                            .foregroundColor(Color.white)
-                   
+//                    Text("making snow angles in the")
+//                            .font(.system(size: 25))
+//                            .fontWeight(.thin)
+//                            .foregroundColor(Color.white)
+//
+//                    Text("warm sunshine")
+//                            .font(.system(size: 25))
+//                            .fontWeight(.thin)
+//                            .foregroundColor(Color.white)
+//
                     
                     
                   
@@ -135,15 +145,15 @@ struct INFOPreload2: View {
                 Spacer()
                     .frame(height: 15)
                 
-                Text("reaching a goal")
-                        .font(.system(size: 25))
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.white)
-                
-                Text("long worked for")
-                        .font(.system(size: 25))
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.white)
+//                Text("reaching a goal")
+//                        .font(.system(size: 25))
+//                        .fontWeight(.thin)
+//                        .foregroundColor(Color.white)
+//
+//                Text("long worked for")
+//                        .font(.system(size: 25))
+//                        .fontWeight(.thin)
+//                        .foregroundColor(Color.white)
                 
                 Spacer()
                     .frame(height: 60)

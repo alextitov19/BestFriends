@@ -74,12 +74,31 @@ struct BuiltForTeens: View {
                             .fontWeight(.light)
                             .foregroundColor(ColorManager.purple3)
                
-                     Text("- standing together in the storm \n- always having each other's backs \n- never giving up on each other \n- yet, each of us uniquely special")
+                     Text("standing together in our drama")
                          .font(.system(size: 23))
                          .fontWeight(.thin)
                          .foregroundColor(Color.white)
                          .padding()
                 
+                
+                Text("protecting each other's backs")
+                    .font(.system(size: 23))
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.white)
+                    .padding()
+                
+               
+                Text("never giving up on friends in need, \n            yielding true friends")
+                    .font(.system(size: 23))
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.white)
+                    .padding()
+                                                                    
+                Text("yet, each of us remaining \n       uniquely different")
+                    .font(.system(size: 23))
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.white)
+                    .padding()
                 
  //
                 Spacer()

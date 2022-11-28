@@ -430,9 +430,9 @@ struct PlanetActionsView: View {
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
-//                                   
+//
 //                                    Text("Me")
-//                                       
+//
 //                                        .foregroundColor(ColorManager .pmbc_blue)
 //                                        .font(.system(size: 17, weight: .bold))
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -454,4 +454,31 @@ struct PlanetActionsView: View {
     
 }
 
-
+//
+//Image(systemName: "triangle.fill")
+//    .resizable()
+//    .foregroundColor(.cyan)
+//    .frame(width: 300, height: 260)
+////                    .blur(radius: 2)
+//
+//    .shadow(color: .purple, radius: 65, x: 30, y: 50)
+//    .opacity(0.70)
+//
+//VStack {
+//
+//    Spacer ()
+//        .frame(height: 60)
+//
+//    Text("Nervious")
+//        .font(.system(size: 15))
+//
+//        .foregroundColor(.white)
+//        .fontWeight(.light)
+//        .multilineTextAlignment(.center)
+//
+//    Text("to say anything?")
+//        .font(.system(size: 15))
+//
+//        .foregroundColor(.white)
+//        .fontWeight(.light)
+//        .multilineTextAlignment(.center)

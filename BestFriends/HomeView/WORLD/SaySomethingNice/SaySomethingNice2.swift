@@ -32,40 +32,45 @@ struct SaySomethingNice2: View {
         
         ZStack {
             
-            ColorManager.grey4
-                .ignoresSafeArea()
+//            ColorManager.grey4
+//                .ignoresSafeArea()
+            
+             Image("purpleBackground")
+                 .resizable()
+                 .scaledToFill()
+                 .ignoresSafeArea()
+          
+             Image("girlwalking")
+                 .frame(width: 320, height: 20)
             
             
             VStack{
                 
                 VStack {
                     
-                
-                        Spacer()
-                            .frame(height: 20)
-                        
-                        
-                        Text("Who are you")
-                            .font(.system(size: 20, weight: .ultraLight))
-                            .foregroundColor(Color.white)
-                        Text("sending message to?")
-                            .font(.system(size: 20, weight: .ultraLight))
-                            .foregroundColor(Color.white)
+             
+//
+//                        Text("Who are you")
+//                            .font(.system(size: 20, weight: .ultraLight))
+//                            .foregroundColor(Color.white)
+//                        Text("sending message to?")
+//                            .font(.system(size: 20, weight: .ultraLight))
+//                            .foregroundColor(Color.white)
                         
                         
                         VStack {
                             
                             Spacer()
-                                .frame(height: 20)
+                                .frame(height: 130)
                             
                             
                             HStack {
                                 
-                                Text("select >")
+                                Text("who sending to>")
                                     .fontWeight(.thin)
-                                    .frame(width: 100, height: 30)
+                                    .frame(width: 120, height: 30)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 20))
+                                    .font(.system(size: 13))
                                     .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                                     .cornerRadius(25)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -200,7 +205,7 @@ struct SaySomethingNice2: View {
                                                         .font(.system(size: 27))
                                 
                                                         .foregroundColor(.white)
-                                                        .fontWeight(.thin)
+                                                        .fontWeight(.light)
                                                         .multilineTextAlignment(.center)
                                 
                                                     Text("'Nice'")
