@@ -115,11 +115,11 @@ struct SendSongChat2: View {
                 
 
                 NavigationLink(
-                    destination: SendSongPush(user: user, friends: friends),
+                    destination: SendSongPushNote(user: user, friends: friends),
                     label: {
                         Text("Send Push Notification")
                             .fontWeight(.thin)
-                            .frame(width: 300, height: 40)
+                            .frame(width: 300, height: 30)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
                             .background(ColorManager.purple3)

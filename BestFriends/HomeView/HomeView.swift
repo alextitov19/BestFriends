@@ -282,20 +282,20 @@ struct HomeView: View {
                         Button(action: {
                             chatButtonTapped()
                         }, label: {
-                            Text("Create 'New' Chat Rooms")
+                            Text("Create Chat Rooms")
                                 .fontWeight(.regular)
-                                .frame(width: 240, height: 30)
+                                .frame(width: 180, height: 30)
                                 .foregroundColor(.white)
-                                .background(ColorManager.purple3)
+                                .background(ColorManager.purple1)
                                 .cornerRadius(15)
-                                .opacity(0.4)
+                                .opacity(0.8)
                         })
                         
                     }
              
                     
                     Spacer()
-                        .frame(height: 10)
+                        .frame(height: 20)
                
                     
                     if selectedPlanet != nil {
@@ -320,7 +320,7 @@ struct HomeView: View {
                         HStack {
                             NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
                                            label: {
-                                Text("Friend asking to fix your Fight")
+                                Text("Friend asking to 'Fix-a-Fight'")
                                     .fontWeight(.light)
                                     .frame(width: 240, height: 30)
                                     .foregroundColor(.white)
@@ -352,7 +352,7 @@ struct HomeView: View {
                         HStack {
                             NavigationLink(destination: VirtualHug(),
                                            label: {
-                                Text("Friend sent you a Hug")
+                                Text("Friend sent a Hug")
                                     .fontWeight(.light)
                                     .frame(width: 240, height: 30)
                                     .foregroundColor(.white)
@@ -378,7 +378,7 @@ struct HomeView: View {
                         
                         HStack {
                             NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
-                                Text("My friend's Day Just Changed")
+                                Text("Friend's 'Day-just-Changed'")
                                     .fontWeight(.light)
                                     .frame(width: 240, height: 30)
                                     .foregroundColor(.white)
