@@ -126,6 +126,8 @@
 		CF381A592829205800B3719E /* OurMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A582829205800B3719E /* OurMission.swift */; };
 		CF39F17C292C5F8000927A3C /* StartHere1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF39F17B292C5F8000927A3C /* StartHere1.swift */; };
 		CF3AE3B528F9F5F8002584A6 /* TeenVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3AE3B428F9F5F8002584A6 /* TeenVideo.swift */; };
+		CF3B42F2293715A800EE1D84 /* SaySomethingNice4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B42F1293715A800EE1D84 /* SaySomethingNice4.swift */; };
+		CF3B42F429371A6D00EE1D84 /* SaySomethingNice5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B42F329371A6D00EE1D84 /* SaySomethingNice5.swift */; };
 		CF3B65AB2800718E0003A714 /* ReportAbuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AA2800718E0003A714 /* ReportAbuse.swift */; };
 		CF3B65AD280075620003A714 /* MyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AC280075620003A714 /* MyAccountView.swift */; };
 		CF3B65AF2800783F0003A714 /* TermsOfServicePrivacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AE2800783F0003A714 /* TermsOfServicePrivacy.swift */; };
@@ -376,6 +378,8 @@
 		CF381A582829205800B3719E /* OurMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurMission.swift; sourceTree = "<group>"; };
 		CF39F17B292C5F8000927A3C /* StartHere1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartHere1.swift; sourceTree = "<group>"; };
 		CF3AE3B428F9F5F8002584A6 /* TeenVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeenVideo.swift; sourceTree = "<group>"; };
+		CF3B42F1293715A800EE1D84 /* SaySomethingNice4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingNice4.swift; sourceTree = "<group>"; };
+		CF3B42F329371A6D00EE1D84 /* SaySomethingNice5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingNice5.swift; sourceTree = "<group>"; };
 		CF3B65AA2800718E0003A714 /* ReportAbuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportAbuse.swift; sourceTree = "<group>"; };
 		CF3B65AC280075620003A714 /* MyAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountView.swift; sourceTree = "<group>"; };
 		CF3B65AE2800783F0003A714 /* TermsOfServicePrivacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServicePrivacy.swift; sourceTree = "<group>"; };
@@ -1289,9 +1293,11 @@
 		CFD8BD052912A98A00F86EFB /* SaySomethingNice */ = {
 			isa = PBXGroup;
 			children = (
+				CF3B42F329371A6D00EE1D84 /* SaySomethingNice5.swift */,
 				CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */,
 				CF37535228BD5544003817E3 /* SaySomethingNice2.swift */,
 				CF4CFAC128E8DC3B00D6AEA9 /* SaySomethingNice3.swift */,
+				CF3B42F1293715A800EE1D84 /* SaySomethingNice4.swift */,
 				CFD12CC82819E83900AB2539 /* ThoughtfulMessages */,
 			);
 			path = SaySomethingNice;
@@ -1534,6 +1540,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF3B42F2293715A800EE1D84 /* SaySomethingNice4.swift in Sources */,
 				CFD12CC1281770B600AB2539 /* MyStreaks.swift in Sources */,
 				CF09118C28488A5700CB0AF0 /* BetaTestVideo.swift in Sources */,
 				CF24815728F5060100D47AE3 /* PhotoPop3.swift in Sources */,
@@ -1678,6 +1685,7 @@
 				CF381A5428283FA000B3719E /* Step1FG_AcceptedSolutions.swift in Sources */,
 				CF37535328BD5544003817E3 /* SaySomethingNice2.swift in Sources */,
 				CF650427289F11980092EEB9 /* WorldPreload.swift in Sources */,
+				CF3B42F429371A6D00EE1D84 /* SaySomethingNice5.swift in Sources */,
 				CFAB54262821007B00BBF502 /* FightTextUserIdeas.swift in Sources */,
 				CFAB5413281D145100BBF502 /* Step2_FightLandingView.swift in Sources */,
 				7A0856AA27F3DCC300E8282B /* SessionManager.swift in Sources */,
