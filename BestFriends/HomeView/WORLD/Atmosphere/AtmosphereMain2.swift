@@ -558,7 +558,7 @@ struct AtmosphereMain2: View {
 //                    .padding()
                     
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 35)
                     
                     NavigationLink(
                         destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends),
