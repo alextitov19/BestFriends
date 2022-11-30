@@ -407,18 +407,18 @@ struct HomeView: View {
                         
                         Spacer().frame(height:10)
 
-//
-//                        NavigationLink(destination: DreamVaultView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-//                                       label: {
-//                            Text("New Dream Poem posted")
-//                                .fontWeight(.light)
-//                                .frame(width: 240, height: 29)
-//                                .foregroundColor(.white)
+
+                        NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
+                                       label: {
+                            Text("Friend said something 'NICE'")
+                                .fontWeight(.light)
+                                .frame(width: 240, height: 29)
+                                .foregroundColor(.white)
+                                .background(ColorManager.purple3)
 //                                .background(ColorManager.purple3)
-////                                .background(ColorManager.purple3)
-//                                .cornerRadius(15)
-//                                .opacity(0.4)
-//                        })
+                                .cornerRadius(15)
+                                .opacity(0.4)
+                        })
                     
                         
                         Spacer()
