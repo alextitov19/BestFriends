@@ -77,7 +77,14 @@ struct SaySomethingNice5: View {
                     .font(.system(size: 25))
                     .fontWeight(.medium)
                     .foregroundColor(Color.white)
-                    
+                
+                Spacer()
+                    .frame(height: 15)
+              
+                
+                
+                
+                
                     Text("Say Something")
                         .font(.system(size: 20))
                         .foregroundColor(ColorManager.grey1)
@@ -120,14 +127,7 @@ struct SaySomethingNice5: View {
                 
                 
                 VStack {
-                    // MARK: End of feeling buttons
-//
-//                    Text("tap [return] to hide keyboard")
-//                        .font(.system(size: 15))
-//                        .italic()
-//                        .fontWeight(.light)
-//                        .foregroundColor(ColorManager.red)
-//
+  
                     
                     HStack {
                         
