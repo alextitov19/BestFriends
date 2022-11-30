@@ -51,21 +51,21 @@ struct SaySomethingNice5: View {
 
                 }
                     
-//
-//                NavigationLink(
-//                    destination: AtmosphereInfo2(user: user, atmosphere: atmosphere, friends: friends),
-//                    label: {
-//                        Text("How feature works")
-//                            .fontWeight(.thin)
-//                            .foregroundColor(Color.white)
-//                            .font(.system(size: 12))
-//                            .italic()
-//                            .frame(width: 50, height: 50)
-//                            .background(ColorManager .purple3)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                    })
-//
+
+                NavigationLink(
+                    destination: AtmosphereInfo2(user: user, atmosphere: atmosphere, friends: friends),
+                    label: {
+                        Text("How feature works")
+                            .fontWeight(.thin)
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 12))
+                            .italic()
+                            .frame(width: 50, height: 50)
+                            .background(ColorManager .purple3)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
+
                 
                 
                     Text("Be part of making")
@@ -73,7 +73,7 @@ struct SaySomethingNice5: View {
                         .fontWeight(.medium)
                         .foregroundColor(Color.white)
                     
-                Text("social media less toxic")
+                Text("the world less toxic")
                     .font(.system(size: 25))
                     .fontWeight(.medium)
                     .foregroundColor(Color.white)
@@ -86,11 +86,14 @@ struct SaySomethingNice5: View {
                     .font(.system(size: 20))
                     .foregroundColor(ColorManager.grey1)
                 
+                Spacer()
+                    .frame(height: 35)
                 
-                HStack {
-
-                }
-                .padding(.horizontal)
+//                
+//                HStack {
+//
+//                }
+//                .padding(.horizontal)
                 
              
                 HStack {
@@ -111,166 +114,7 @@ struct SaySomethingNice5: View {
 //                        .cornerRadius(7)
 //                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 //
-//                        
-//                        Spacer()
-//                            .frame(height: 20)
-//                        
-//                        Button(action: {
-//                            mood = 1
-//                        }) {
-//                            
-//                            Text("Stressed")
-//                                .font(.system(size: 17))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 1 ? Color(.systemCyan) : Color.gray)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        
-//                        
-//                        Spacer()
-//                            .frame(height: 20)
-//                        
-//                        Button(action: {
-//                            mood = 2
-//                        }) {
-//                            
-//                            Text("Sad")
-//                                .font(.system(size: 17))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 2 ? Color(.systemCyan) : Color.gray)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        
-//                        
-//                        Spacer()
-//                            .frame(height: 20)
-//                        
-//                        Button(action: {
-//                            mood = 3
-//                        }) {
-//                            
-//                            Text("Lonely")
-//                                .font(.system(size: 17))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 3 ? Color(.systemCyan) : Color.gray)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        
-//                    }
-//                    
-//                    Spacer()
-//                        .frame(width: 20)
-//                    
-//                    VStack {
-//                        Button(action: {
-//                            mood = 4
-//                        }) {
-//                            
-//                            Text("Okay")
-//                                .font(.system(size: 17))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 4 ? Color(.systemGreen) : Color.gray)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        
-//                        
-//                        Spacer()
-//                            .frame(height: 20)
-//                        
-//                        Button(action: {
-//                            mood = 5
-//                        }) {
-//                            
-//                            Text("Bored")
-//                                .font(.system(size: 17))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 5 ? Color(.orange) : Color.gray)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        
-//                        
-//                        
-//                    }
-//                    
-//                    Spacer()
-//                        .frame(width: 20)
-//                    
-//                    VStack {
-//                        
-//                        Button(action: {
-//                            mood = 6
-//                        }) {
-//                            
-//                            Text("Happy")
-//                                .font(.system(size: 17))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 6 ? Color(.systemYellow) : Color.gray)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        
-//                        
-//                        Spacer()
-//                            .frame(height: 20)
-//                        
-//                        Button(action: {
-//                            mood = 7
-//                        }) {
-//                            
-//                            Text("Excited")
-//                                .font(.system(size: 17))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 7 ? Color(.systemYellow) : Color.gray)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        
-//                        
-//                        Spacer()
-//                            .frame(height: 20)
-//                        
-//                        Button(action: {
-//                            mood = 8
-//                        }) {
-//                            
-//                            Text("Powerful")
-//                                .font(.system(size: 17))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 8 ? Color(.systemYellow) : Color.gray)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        
-//                        
-//                        Spacer()
-//                            .frame(height: 20)
-//                        
-//                        Button(action: {
-//                            mood = 9
-//                        }) {
-//                            
-//                            Text("Carefree")
-//                                .font(.system(size: 17))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 9 ? Color(.systemYellow) : Color.gray)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        
+//
                     }
                 }
                 
@@ -286,13 +130,6 @@ struct SaySomethingNice5: View {
 //
                     
                     HStack {
-                        Text("Tell friends what's going on")
-                            .font(.system(size: 26))
-                            .fontWeight(.regular)
-                            .foregroundColor(ColorManager.grey1)
-                            .padding(.horizontal)
-                        
-                        
                         
                     }
                     
@@ -302,14 +139,14 @@ struct SaySomethingNice5: View {
                         Rectangle()
                             .frame(width:310, height: 50)
                             .cornerRadius(15)
-                            .foregroundColor(Color.gray)
+                            .foregroundColor(ColorManager .orange5)
                             .opacity(0.9)
                         
-                        TextField("You can type what's up here...", text: $summary)
+                        TextField("Say Something 'NICE' here...", text: $summary)
                             .font(.system(size: 20))
-                            .foregroundColor(ColorManager.purple2)
+                            .foregroundColor(.white)
                             .padding(.horizontal, 80)
-                            .onReceive(Just(summary)) { _ in limitText(40) }
+                            .onReceive(Just(summary)) { _ in limitText(100) }
                         
                         
                     }
@@ -319,22 +156,16 @@ struct SaySomethingNice5: View {
                  
                     
                     Spacer()
-                        .frame(height: 5)
+                        .frame(height: 25)
                     
-                    HStack {
-                        Text("send Push Notification")
-                            .font(.system(size: 30))
-                        
-                            .fontWeight(.light)
-                            .foregroundColor(ColorManager.grey1)
-                            .padding(.horizontal)
-                        
-                      
-                        
-                        
-//                        Spacer()
-                    }
-//                    .padding(.horizontal)
+                    Text("Who saying it to?")
+                        .font(.system(size: 20))
+                        .italic()
+                        .fontWeight(.light)
+                        .foregroundColor(ColorManager.grey1)
+                        .padding(.horizontal)
+                    
+
                     
                     HStack {
                         if friends.count > 1 {
@@ -446,18 +277,14 @@ struct SaySomethingNice5: View {
                         Spacer()
                             .frame(height: 15)
 //
-//                    NavigationLink(
-//                        destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends),
-//                        label: {
-//                            Text("Vibe Tracker")
-//                                .fontWeight(.thin)
-//                                .frame(width: 150, height: 30)
-//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                .font(.system(size: 25))
-//                                .background(ColorManager.pmbc_green)
-//                                .cornerRadius(15)
-//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        })
+                        Text("Push Notifiction was sent")
+                            .font(.system(size: 20))
+                            .italic()
+                            .fontWeight(.light)
+                            .foregroundColor(ColorManager.grey1)
+                            .padding(.horizontal)
+                        
+
                    }
                  
                     VStack {
@@ -495,7 +322,7 @@ struct SaySomethingNice5: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) World: Friend Said Something Nice", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) World: Said something Nice", APNToken: f.APNToken)
                 }
             }
         }
@@ -511,11 +338,11 @@ struct SaySomethingNice5: View {
             let atm = Atmosphere(id: atmosphere.id, planet: atmosphere.planet, mood: mood, moodLogs: m)
             RestApi.instance.updateAtmosphere(atmosphere: atm).then({ response in
                 if response == 200 {
-                    print("Successfully updated atmosphere")
+                    print("Successfully updated nice message")
                     for i in sharedWith {
                         for f in friends {
                             if i == f.id {
-                                RestApi.instance.sendPushNotification(title: "BestFriends - World", body: "\(user.firstName) Friend said something 'Nice'", APNToken: f.APNToken )
+                                RestApi.instance.sendPushNotification(title: "BestFriends - World", body: "\(user.firstName) Said something 'Nice'", APNToken: f.APNToken )
                             }
                         }
                         mood = -1
@@ -523,7 +350,7 @@ struct SaySomethingNice5: View {
                         sharedWith = []
                     }
                 } else {
-                    print("Failed to update atmosphere")
+                    print("Failed to update nice message")
                 }
             })
         })

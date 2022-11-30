@@ -128,6 +128,7 @@
 		CF3AE3B528F9F5F8002584A6 /* TeenVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3AE3B428F9F5F8002584A6 /* TeenVideo.swift */; };
 		CF3B42F2293715A800EE1D84 /* SaySomethingNice4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B42F1293715A800EE1D84 /* SaySomethingNice4.swift */; };
 		CF3B42F429371A6D00EE1D84 /* SaySomethingNice5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B42F329371A6D00EE1D84 /* SaySomethingNice5.swift */; };
+		CF3B42F6293721A500EE1D84 /* SaySomethingNice6.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B42F5293721A500EE1D84 /* SaySomethingNice6.swift */; };
 		CF3B65AB2800718E0003A714 /* ReportAbuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AA2800718E0003A714 /* ReportAbuse.swift */; };
 		CF3B65AD280075620003A714 /* MyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AC280075620003A714 /* MyAccountView.swift */; };
 		CF3B65AF2800783F0003A714 /* TermsOfServicePrivacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AE2800783F0003A714 /* TermsOfServicePrivacy.swift */; };
@@ -380,6 +381,7 @@
 		CF3AE3B428F9F5F8002584A6 /* TeenVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeenVideo.swift; sourceTree = "<group>"; };
 		CF3B42F1293715A800EE1D84 /* SaySomethingNice4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingNice4.swift; sourceTree = "<group>"; };
 		CF3B42F329371A6D00EE1D84 /* SaySomethingNice5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingNice5.swift; sourceTree = "<group>"; };
+		CF3B42F5293721A500EE1D84 /* SaySomethingNice6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingNice6.swift; sourceTree = "<group>"; };
 		CF3B65AA2800718E0003A714 /* ReportAbuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportAbuse.swift; sourceTree = "<group>"; };
 		CF3B65AC280075620003A714 /* MyAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountView.swift; sourceTree = "<group>"; };
 		CF3B65AE2800783F0003A714 /* TermsOfServicePrivacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServicePrivacy.swift; sourceTree = "<group>"; };
@@ -1294,6 +1296,7 @@
 			isa = PBXGroup;
 			children = (
 				CF3B42F329371A6D00EE1D84 /* SaySomethingNice5.swift */,
+				CF3B42F5293721A500EE1D84 /* SaySomethingNice6.swift */,
 				CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */,
 				CF37535228BD5544003817E3 /* SaySomethingNice2.swift */,
 				CF4CFAC128E8DC3B00D6AEA9 /* SaySomethingNice3.swift */,
@@ -1555,6 +1558,7 @@
 				7AD8DEFD27F66C9800D9F0E1 /* ChatModels.swift in Sources */,
 				7AFCF27A27FDFFA800D2DB5C /* BlurView.swift in Sources */,
 				7A0856A227F3D9A900E8282B /* RestAPI.swift in Sources */,
+				CF3B42F6293721A500EE1D84 /* SaySomethingNice6.swift in Sources */,
 				CFDB1509285816AF00155CEE /* FaceTimeCall.swift in Sources */,
 				7A7A23B42803D62700B87613 /* WebSocket.swift in Sources */,
 				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
