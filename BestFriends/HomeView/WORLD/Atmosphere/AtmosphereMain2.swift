@@ -27,7 +27,7 @@ struct AtmosphereMain2: View {
     @State private var shareColor = ColorManager.purple5
     @State private var showingAlert = false
     
-    
+    @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
    
     
     var body: some View {
@@ -74,14 +74,17 @@ struct AtmosphereMain2: View {
                     
                 
                     
-                    Text("Our distinctive 'Atmosphere'")
-                        .font(.system(size: 20))
+                    Text("your 'Vibe' show around your planet")
+                        .font(.system(size: 15))
+                        .italic()
                         .foregroundColor(ColorManager.grey1)
                
-                Text("surrounding each of us")
-                    .font(.system(size: 20))
+           
+                Text(".")
+                    .font(.system(size: 2))
+                    .fontWeight(.regular)
                     .foregroundColor(ColorManager.grey1)
-                
+                    .padding(.horizontal)
                 
                 HStack {
 
@@ -282,8 +285,8 @@ struct AtmosphereMain2: View {
 //
                     
                     HStack {
-                        Text("Tell friends what's going on")
-                            .font(.system(size: 26))
+                        Text(".")
+                            .font(.system(size: 2))
                             .fontWeight(.regular)
                             .foregroundColor(ColorManager.grey1)
                             .padding(.horizontal)
@@ -301,11 +304,11 @@ struct AtmosphereMain2: View {
                             .foregroundColor(Color.gray)
                             .opacity(0.9)
                         
-                        TextField("You can type what's up here...", text: $summary)
+                        TextField("Type what's going on here ...", text: $summary)
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager.purple2)
                             .padding(.horizontal, 80)
-                            .onReceive(Just(summary)) { _ in limitText(40) }
+                            .onReceive(Just(summary)) { _ in limitText(60) }
                         
                         
                     }
@@ -314,129 +317,244 @@ struct AtmosphereMain2: View {
                         
                  
                     
-                    Spacer()
-                        .frame(height: 5)
+//                    Spacer()
+//                        .frame(height: 5)
                     
                     HStack {
-                        Text("send Push Notification")
-                            .font(.system(size: 30))
+//                        Text("send Push Notification")
+//                            .font(.system(size: 30))
+//
+//                            .fontWeight(.light)
+//                            .foregroundColor(ColorManager.grey1)
+//                            .padding(.horizontal)
                         
-                            .fontWeight(.light)
-                            .foregroundColor(ColorManager.grey1)
-                            .padding(.horizontal)
-                        
-                      
-                        
-                        
-//                        Spacer()
+                     
                     }
-//                    .padding(.horizontal)
-                    
-                    HStack {
-                        if friends.count > 1 {
-                            Button(action: {
-                                defaultMessageButtonTapped(defaultMessage: "SHARE")
-                                shareMood()
-                            },
-                                   label: {
-                                Text("ALL")
-                                    .fontWeight(.bold)
-                                    .frame(width: 100, height: 30)
-                                
-                                    .background(colorChangeTap == "SHARE" ? ColorManager.grey3 : ColorManager.purple3)
-                                
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 15))
-//                                    .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-                                    .cornerRadius(25)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            })
-                        }
-                        if friends.count > 0 {
-                            RectView(user: user, friend: friends[0], color: sharedWith.contains(friends[0].id) ? ColorManager.purple3 : ColorManager.purple5)
-                                .onTapGesture(perform: {
-                                    if sharedWith.contains(friends[0].id) {
-                                        sharedWith = sharedWith.filter { $0 != friends[0].id }
-                                    } else {
-                                        sharedWith.append(friends[0].id)
-                                    }
-                                    print(sharedWith)
-                                })
-                        }
-                        
-                        if friends.count > 1 {
-                            RectView(user: user, friend: friends[1], color: sharedWith.contains(friends[1].id) ? ColorManager.purple3 : ColorManager.purple5)
-                                .onTapGesture(perform: {
-                                    if sharedWith.contains(friends[1].id) {
-                                        sharedWith = sharedWith.filter { $0 != friends[1].id }
-                                    } else {
-                                        sharedWith.append(friends[1].id)
-                                    }
-                                    print(sharedWith)
-                                })
-                        }
-                    }
-                    
-                    HStack {
-                        if friends.count > 2 {
-                            RectView(user: user, friend: friends[2], color: sharedWith.contains(friends[2].id) ? ColorManager.purple3 : ColorManager.purple5)
-                                .onTapGesture(perform: {
-                                    if sharedWith.contains(friends[2].id) {
-                                        sharedWith = sharedWith.filter { $0 != friends[2].id }
-                                    } else {
-                                        sharedWith.append(friends[2].id)
-                                    }
-                                    print(sharedWith)
-                                })
-                        }
-                        
-                        if friends.count > 3 {
-                            RectView(user: user, friend: friends[3], color: sharedWith.contains(friends[3].id) ? ColorManager.purple3 : ColorManager.purple5)
-                                .onTapGesture(perform: {
-                                    if sharedWith.contains(friends[3].id) {
-                                        sharedWith = sharedWith.filter { $0 != friends[3].id }
-                                    } else {
-                                        sharedWith.append(friends[3].id)
-                                    }
-                                    print(sharedWith)
-                                })
-                        }
-                        
-                        if friends.count > 4 {
-                            RectView(user: user, friend: friends[4], color: sharedWith.contains(friends[4].id) ? ColorManager.purple3 : ColorManager.purple5)
-                                .onTapGesture(perform: {
-                                    if sharedWith.contains(friends[4].id) {
-                                        sharedWith = sharedWith.filter { $0 != friends[4].id }
-                                    } else {
-                                        sharedWith.append(friends[4].id)
-                                    }
-                                    print(sharedWith)
-                                })
-                        }
-                    }
-                 
-                    Spacer()
-                        .frame(height: 17)
-                    
+
+                  
                     VStack {
+                        
+                        Spacer()
+                            .frame(height: 30)
+                        
+                        
+                        HStack {
+                      
+                            Text("select >")
+                                .fontWeight(.thin)
+                                .frame(width: 100, height: 30)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 20))
+                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+                                .cornerRadius(25)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            //                                })
+                            
+                            if friends.count > 0 {
+                                RectView(user: user, friend: friends[0], color: colors[0])
+                                    .onTapGesture(perform: {
+                                        if selectedFriends.contains(friends[0].id) {
+                                            selectedFriends = selectedFriends.filter { $0 != friends[0].id }
+                                            colors[0] = ColorManager.purple3
+                                        } else {
+                                            selectedFriends.append(friends[0].id)
+                                            colors[0] = ColorManager.purple5
+                                        }
+                                        print(selectedFriends)
+                                    })
+                                
+                            }
+                            
+                            if friends.count > 1 {
+                                RectView(user: user, friend: friends[1], color: colors[1])
+                                    .onTapGesture(perform: {
+                                        if selectedFriends.contains(friends[1].id) {
+                                            selectedFriends = selectedFriends.filter { $0 != friends[1].id }
+                                            colors[1] = ColorManager.purple3
+                                        } else {
+                                            selectedFriends.append(friends[1].id)
+                                            colors[1] = ColorManager.purple5
+                                        }
+                                        print(selectedFriends)
+                                    })
+                                
+                            }
+                        }
+                        
+                        Spacer()
+                            .frame(height: 15)
+                        HStack {
+                            if friends.count > 2 {
+                                RectView(user: user, friend: friends[2], color: colors[2])
+                                    .onTapGesture(perform: {
+                                        if selectedFriends.contains(friends[2].id) {
+                                            selectedFriends = selectedFriends.filter { $0 != friends[2].id }
+                                            colors[2] = ColorManager.purple3
+                                        } else {
+                                            selectedFriends.append(friends[2].id)
+                                            colors[2] = ColorManager.purple5
+                                        }
+                                        print(selectedFriends)
+                                    })
+                            }
+                            
+                            if friends.count > 3 {
+                                RectView(user: user, friend: friends[3], color: colors[3])
+                                    .onTapGesture(perform: {
+                                        if selectedFriends.contains(friends[3].id) {
+                                            selectedFriends = selectedFriends.filter { $0 != friends[3].id }
+                                            colors[3] = ColorManager.purple3
+                                        } else {
+                                            selectedFriends.append(friends[3].id)
+                                            colors[3] = ColorManager.purple5
+                                        }
+                                        print(selectedFriends)
+                                    })
+                                
+                            }
+                            
+                            if friends.count > 4 {
+                                RectView(user: user, friend: friends[4], color: colors[4])
+                                    .onTapGesture(perform: {
+                                        if selectedFriends.contains(friends[4].id) {
+                                            selectedFriends = selectedFriends.filter { $0 != friends[4].id }
+                                            colors[4] = ColorManager.purple3
+                                        } else {
+                                            selectedFriends.append(friends[4].id)
+                                            colors[4] = ColorManager.purple5
+                                        }
+                                        print(selectedFriends)
+                                    })
+                                
+                            }
+                        }
+                        
+                        Button(action: {
+                            shareButtonTapped()
+                        },
+                               label: {
+                            Text("SHARE")
+                                .fontWeight(.thin)
+                                .frame(width: 100, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 30))
+                                .background(shareColor)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                .alert("Push Notifications sent successfully", isPresented: $showingAlert) {
+                                    Button("OK", role: .cancel) { }
+                                }
+                        })
+                        
                     
-                    Button(action: {
-                        defaultMessageButtonTapped(defaultMessage: "SHARE")
-                        shareMood()
-                    },
-                           label: {
-                        Text("Share")
-                            .fontWeight(.thin)
-                            .frame(width: 100, height: 30)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 25))
-                            
-                            .background(colorChangeTap == "SHARE" ? ColorManager.grey3 : ColorManager.purple3)
-                            
-//                            .background(ColorManager.purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
+                    
+//
+//
+//                    HStack {
+//                        if friends.count > 1 {
+//                            Button(action: {
+//                                defaultMessageButtonTapped(defaultMessage: "SHARE")
+//                                shareMood()
+//                            },
+//                                   label: {
+//                                Text("ALL")
+//                                    .fontWeight(.bold)
+//                                    .frame(width: 100, height: 30)
+//
+//                                    .background(colorChangeTap == "SHARE" ? ColorManager.grey3 : ColorManager.purple3)
+//
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 15))
+////                                    .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+//                                    .cornerRadius(25)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            })
+//                        }
+//                        if friends.count > 0 {
+//                            RectView(user: user, friend: friends[0], color: sharedWith.contains(friends[0].id) ? ColorManager.purple3 : ColorManager.purple5)
+//                                .onTapGesture(perform: {
+//                                    if sharedWith.contains(friends[0].id) {
+//                                        sharedWith = sharedWith.filter { $0 != friends[0].id }
+//                                    } else {
+//                                        sharedWith.append(friends[0].id)
+//                                    }
+//                                    print(sharedWith)
+//                                })
+//                        }
+//
+//                        if friends.count > 1 {
+//                            RectView(user: user, friend: friends[1], color: sharedWith.contains(friends[1].id) ? ColorManager.purple3 : ColorManager.purple5)
+//                                .onTapGesture(perform: {
+//                                    if sharedWith.contains(friends[1].id) {
+//                                        sharedWith = sharedWith.filter { $0 != friends[1].id }
+//                                    } else {
+//                                        sharedWith.append(friends[1].id)
+//                                    }
+//                                    print(sharedWith)
+//                                })
+//                        }
+//                    }
+//
+//                    HStack {
+//                        if friends.count > 2 {
+//                            RectView(user: user, friend: friends[2], color: sharedWith.contains(friends[2].id) ? ColorManager.purple3 : ColorManager.purple5)
+//                                .onTapGesture(perform: {
+//                                    if sharedWith.contains(friends[2].id) {
+//                                        sharedWith = sharedWith.filter { $0 != friends[2].id }
+//                                    } else {
+//                                        sharedWith.append(friends[2].id)
+//                                    }
+//                                    print(sharedWith)
+//                                })
+//                        }
+//
+//                        if friends.count > 3 {
+//                            RectView(user: user, friend: friends[3], color: sharedWith.contains(friends[3].id) ? ColorManager.purple3 : ColorManager.purple5)
+//                                .onTapGesture(perform: {
+//                                    if sharedWith.contains(friends[3].id) {
+//                                        sharedWith = sharedWith.filter { $0 != friends[3].id }
+//                                    } else {
+//                                        sharedWith.append(friends[3].id)
+//                                    }
+//                                    print(sharedWith)
+//                                })
+//                        }
+//
+//                        if friends.count > 4 {
+//                            RectView(user: user, friend: friends[4], color: sharedWith.contains(friends[4].id) ? ColorManager.purple3 : ColorManager.purple5)
+//                                .onTapGesture(perform: {
+//                                    if sharedWith.contains(friends[4].id) {
+//                                        sharedWith = sharedWith.filter { $0 != friends[4].id }
+//                                    } else {
+//                                        sharedWith.append(friends[4].id)
+//                                    }
+//                                    print(sharedWith)
+//                                })
+//                        }
+//                    }
+//
+//                    Spacer()
+//                        .frame(height: 17)
+//
+//                    VStack {
+//
+//                    Button(action: {
+//                        defaultMessageButtonTapped(defaultMessage: "SHARE")
+//                        shareMood()
+//                    },
+//                           label: {
+//                        Text("Share")
+//                            .fontWeight(.thin)
+//                            .frame(width: 100, height: 30)
+//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                            .font(.system(size: 25))
+//
+//                            .background(colorChangeTap == "SHARE" ? ColorManager.grey3 : ColorManager.purple3)
+//
+////                            .background(ColorManager.purple3)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                    })
 //                    .padding()
                     
                         Spacer()
