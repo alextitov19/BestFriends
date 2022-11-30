@@ -62,7 +62,7 @@ struct AtmosphereInfo2: View {
                     
                  
                     
-                    Text("Step 1: Select your new Aura")
+                    Text("Step 1: Select your new Vibe")
                         .font(.system(size: 18))
                         .italic()
                         .fontWeight(.light)
@@ -126,7 +126,7 @@ struct AtmosphereInfo2: View {
                         .foregroundColor(ColorManager .purple3)
                     
                     
-                    Text("-taps [Friends Aura] from the dropdown")
+                    Text("-taps [Friend's Vibe Changed] from the dropdown")
                         .font(.system(size: 18))
                         .italic()
                         .fontWeight(.light)

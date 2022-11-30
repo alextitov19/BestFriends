@@ -47,23 +47,27 @@ struct AtmosphereMain2: View {
                 
                 HStack {
                    
-//                    NavigationLink(
-//                        destination: AtmosphereInfo2(user: user, atmosphere: atmosphere, friends: friends),
-//                        label: {
-//                            Text("How this works")
-//                                .fontWeight(.thin)
-//                                .foregroundColor(Color.white)
-//                                .font(.system(size: 13))
-//                                .italic()
-//                                .frame(width: 50, height: 50)
-//                                .background(.blue)
-//                                .cornerRadius(15)
-//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        })
 
                 }
                     
-                    Text("Update your 'Aura'?")
+                
+                NavigationLink(
+                    destination: AtmosphereInfo2(user: user, atmosphere: atmosphere, friends: friends),
+                    label: {
+                        Text("How feature works")
+                            .fontWeight(.thin)
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 13))
+                            .italic()
+                            .frame(width: 50, height: 50)
+                            .background(ColorManager .purple3)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
+                
+                
+                
+                    Text("Update your 'Vibe'")
                         .font(.system(size: 35))
                         .fontWeight(.medium)
                         .foregroundColor(Color.white)
@@ -440,7 +444,7 @@ struct AtmosphereMain2: View {
                     NavigationLink(
                         destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends),
                         label: {
-                            Text("Aura Tracker")
+                            Text("Vibe Tracker")
                                 .fontWeight(.thin)
                                 .frame(width: 180, height: 35)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -471,7 +475,7 @@ struct AtmosphereMain2: View {
                         
                      
                     }
-//                    Spacer()
+
                 }
                 
                 Spacer()
@@ -486,7 +490,7 @@ struct AtmosphereMain2: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent a song to match your Aura", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent a song to match your Vibe", APNToken: f.APNToken)
                 }
             }
         }
@@ -506,7 +510,7 @@ struct AtmosphereMain2: View {
                     for i in sharedWith {
                         for f in friends {
                             if i == f.id {
-                                RestApi.instance.sendPushNotification(title: "BestFriends - Atmosphere", body: "\(user.firstName) said something just happened to change their day!", APNToken: f.APNToken )
+                                RestApi.instance.sendPushNotification(title: "BestFriends - Atmosphere", body: "\(user.firstName) said something just happened to change their Vibe!", APNToken: f.APNToken )
                             }
                         }
                         mood = -1
