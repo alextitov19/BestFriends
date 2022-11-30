@@ -57,7 +57,7 @@ struct AtmosphereMain2: View {
                         Text("How feature works")
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
-                            .font(.system(size: 13))
+                            .font(.system(size: 12))
                             .italic()
                             .frame(width: 50, height: 50)
                             .background(ColorManager .purple3)
@@ -427,9 +427,9 @@ struct AtmosphereMain2: View {
                            label: {
                         Text("Share")
                             .fontWeight(.thin)
-                            .frame(width: 100, height: 35)
+                            .frame(width: 100, height: 30)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 30))
+                            .font(.system(size: 25))
                             
                             .background(colorChangeTap == "SHARE" ? ColorManager.grey3 : ColorManager.purple3)
                             
@@ -439,17 +439,18 @@ struct AtmosphereMain2: View {
                     })
 //                    .padding()
                     
-                    
+                        Spacer()
+                            .frame(height: 15)
                     
                     NavigationLink(
                         destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends),
                         label: {
                             Text("Vibe Tracker")
                                 .fontWeight(.thin)
-                                .frame(width: 180, height: 35)
+                                .frame(width: 150, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
-                                .background(ColorManager.purple3)
+                                .font(.system(size: 25))
+                                .background(ColorManager.pmbc_green)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
@@ -457,21 +458,21 @@ struct AtmosphereMain2: View {
                  
                     VStack {
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 15)
                         
-//                        Button(action: {
-//                            sessionManager.showLogin()
-//                        },
-//                            label: {
-//                                Text("Home / Chat")
-//                                    .fontWeight(.thin)
-//                                    .frame(width: 175, height: 40)
-//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                    .font(.system(size: 30))
-//                                    .background(ColorManager.purple3)
-//                                    .cornerRadius(15)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                            })
+                        Button(action: {
+                            sessionManager.showLogin()
+                        },
+                            label: {
+                                Text("Home")
+                                    .fontWeight(.thin)
+                                    .frame(width: 100, height: 30)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 25))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
                         
                      
                     }
@@ -510,7 +511,7 @@ struct AtmosphereMain2: View {
                     for i in sharedWith {
                         for f in friends {
                             if i == f.id {
-                                RestApi.instance.sendPushNotification(title: "BestFriends - Atmosphere", body: "\(user.firstName) said something just happened to change their Vibe!", APNToken: f.APNToken )
+                                RestApi.instance.sendPushNotification(title: "BestFriends - Vibe", body: "\(user.firstName) Something just happened to change their Vibe!", APNToken: f.APNToken )
                             }
                         }
                         mood = -1

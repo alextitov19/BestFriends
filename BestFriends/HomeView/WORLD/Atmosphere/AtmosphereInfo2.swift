@@ -50,7 +50,19 @@ struct AtmosphereInfo2: View {
                 
                 VStack {
           
-                  
+                    Text("Cheer you in good times")
+                        .font(.system(size: 25))
+                        .foregroundColor(Color.white)
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager .purple3)
+                    
+                    Text("and lend Support in bad")
+                        .font(.system(size: 25))
+                        .foregroundColor(Color.white)
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager .purple3)
                  
                     
                     Text("YOU")
