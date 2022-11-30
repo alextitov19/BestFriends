@@ -29,20 +29,22 @@ struct SaySomethingNice7: View {
     
     var body: some View {
         ZStack {
-//            Image("blueBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
-//                .onAppear(perform: loadData)
-//
-//
-//                        AdPlayerView(name: "sky2")
-//                            .ignoresSafeArea()
-//                            .blendMode(.screen)
-
-            ColorManager.grey4
+            
+            
+            Image("blueBackground")
+                .resizable()
                 .ignoresSafeArea()
-                .onAppear()
+                .scaledToFill()
+                .onAppear(perform: loadData)
+
+
+                        AdPlayerView(name: "Dreams1")
+                            .ignoresSafeArea()
+                            .blendMode(.screen)
+
+//            ColorManager.grey4
+//                .ignoresSafeArea()
+//                .onAppear()
 
             
             
@@ -89,7 +91,7 @@ struct SaySomethingNice7: View {
                                 .padding()
                         }
                     }
-                    .frame(width: 300, height: 100)
+                    .frame(width: 280, height: 100)
                     .opacity(0.63)
                     .cornerRadius(25)
                     .padding()
@@ -121,7 +123,7 @@ struct SaySomethingNice7: View {
                     .overlay(RoundedRectangle(cornerRadius: 20)
                         .stroke(Color.purple)
                         .frame(height: 40)
-                        .padding(.horizontal, 10)
+                        .padding(.horizontal, 35)
                     )
 //                    .padding(.horizontal, 0)
                 
@@ -135,12 +137,15 @@ struct SaySomethingNice7: View {
                             .foregroundColor(.white)
                             .font(.system(size: 25))
                         //                                .opacity(0.5)
-                            .background(ColorManager.purple3)
+                            .background(ColorManager.pmbc_green)
                             .opacity(0.7)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
 //                    .padding()
+                    Spacer ()
+                        .frame(height: 60)
+                    
                     
                     Text("Respond instantly via Push Notification")
                         .font(.system(size: 15))
@@ -272,11 +277,11 @@ struct SaySomethingNice7: View {
                                 
                                 noteTapped.toggle()
                             }
-//                        
+//
 //                        NavigationLink(
 //                            destination: SendSongChat2(user: user, friend: friend, friends: friends, groups: groups, friendAtmosphere: friendAtmosphere),
-//                            
-//                            
+//
+//
 ////                            destination: BuildFriendPlaylist(user: user, groups: groups, friend: friend, friendAtmosphere: friendAtmosphere),
 //                            label: {
 //                                Text("")
