@@ -38,7 +38,7 @@ struct AtmosphereMain2: View {
                 .ignoresSafeArea()
                 .scaledToFill()
             
-            AdPlayerView(name: "Atmosphere2")
+            AdPlayerView(name: "dramaLights")
                 .ignoresSafeArea()
                 .blendMode(.screen)
 

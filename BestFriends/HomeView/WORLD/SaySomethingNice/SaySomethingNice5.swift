@@ -64,29 +64,32 @@ struct SaySomethingNice5: View {
 
                 
                 
-                Text("power of a")
+                Text("around the world")
                     .font(.system(size: 20))
                     .foregroundColor(ColorManager.grey1)
            
-            Text("kind word")
+            Text("people are saying something")
                 .font(.system(size: 20))
                 .foregroundColor(ColorManager.grey1)
                 
                 Spacer()
                     .frame(height: 15)
 
-                
-                Text("Say Something")
-                    .font(.system(size: 25))
-                    .fontWeight(.medium)
-                    .foregroundColor(Color.white)
+//
+//                Text("Say Something")
+//                    .font(.system(size: 25))
+//                    .fontWeight(.medium)
+//                    .foregroundColor(Color.white)
                 
             Text("'NICE'")
                 .font(.system(size: 25))
                 .fontWeight(.medium)
                 .foregroundColor(Color.white)
             
-                
+                Text("Right NOW!")
+                    .font(.system(size: 25))
+                    .fontWeight(.medium)
+                    .foregroundColor(Color.white)
                 
                 
                 
