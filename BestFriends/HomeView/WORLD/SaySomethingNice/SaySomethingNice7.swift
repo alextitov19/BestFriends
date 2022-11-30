@@ -29,21 +29,21 @@ struct SaySomethingNice7: View {
     
     var body: some View {
         ZStack {
-            Image("blueBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-                .onAppear(perform: loadData)
-            
-            
-                        AdPlayerView(name: "sky2")
-                            .ignoresSafeArea()
-                            .blendMode(.screen)
-//
-//            ColorManager.purple4
+//            Image("blueBackground")
+//                .resizable()
 //                .ignoresSafeArea()
-//                .onAppear()
+//                .scaledToFill()
+//                .onAppear(perform: loadData)
 //
+//
+//                        AdPlayerView(name: "sky2")
+//                            .ignoresSafeArea()
+//                            .blendMode(.screen)
+
+            ColorManager.grey4
+                .ignoresSafeArea()
+                .onAppear()
+
             
             
             VStack {
@@ -59,16 +59,16 @@ struct SaySomethingNice7: View {
                         .padding()
                       
                 }
-               
-                Text("wants you to know")
-                    .font(.system(size: 20))
-                    .fontWeight(.thin)
-                    .foregroundColor(.white)
-                
-                Text("their mood just changed")
-                    .font(.system(size: 20))
-                    .fontWeight(.thin)
-                    .foregroundColor(.white)
+//
+//                Text("wants you to know")
+//                    .font(.system(size: 20))
+//                    .fontWeight(.thin)
+//                    .foregroundColor(.white)
+//
+//                Text("their mood just changed")
+//                    .font(.system(size: 20))
+//                    .fontWeight(.thin)
+//                    .foregroundColor(.white)
                 
                 if (mostRecentMoodLog != nil) {
                     ZStack {
@@ -106,7 +106,7 @@ struct SaySomethingNice7: View {
                 TextField("", text: $customMessage)
                     .placeholder(when: customMessage.isEmpty) {
                         HStack {
-                            Text("Send supportive message in Chat")
+                            Text("Respond in Chat")
                                 .foregroundColor(ColorManager.purple5)
 //                            .foregroundColor(.white)
 //                            .frame(width: 300, height: 100)
@@ -116,7 +116,7 @@ struct SaySomethingNice7: View {
                     .font(.system(size: 15))
                     .foregroundColor(ColorManager.purple1)
                     .submitLabel(.done)
-                    .onReceive(Just(customMessage)) { _ in limitText(65) }
+                    .onReceive(Just(customMessage)) { _ in limitText(100) }
                     .padding()
                     .overlay(RoundedRectangle(cornerRadius: 20)
                         .stroke(Color.purple)
@@ -151,9 +151,9 @@ struct SaySomethingNice7: View {
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "Are you okay?")
                         
-                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Are you okay?", APNToken: friend.APNToken)
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Thanks for the 'Nice' message", APNToken: friend.APNToken)
                     }, label: {
-                        Text("Are you okay?")
+                        Text("Thank you so much!")
                             .fontWeight(.thin)
                             .frame(width: 260, height: 30)
                             .foregroundColor(.purple)
@@ -167,9 +167,9 @@ struct SaySomethingNice7: View {
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "Do we need to talk?")
                         
-                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Do we need to talk?", APNToken: friend.APNToken )
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "You're the BEST!", APNToken: friend.APNToken )
                     }, label: {
-                        Text("Do we need to talk?")
+                        Text("You're the BEST!")
                             .fontWeight(.thin)
                             .frame(width: 260, height: 30)
                             .foregroundColor(.purple)
@@ -179,22 +179,22 @@ struct SaySomethingNice7: View {
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
                     
-                    
-                    Button(action: {
-                        defaultMessageButtonTapped(defaultMessage: "C")
-                        
-                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Congratulations, you did it!", APNToken: friend.APNToken )
-                    }, label: {
-                        Text("Congratulations, you did it!")
-                            .fontWeight(.thin)
-                            .frame(width: 260, height: 30)
-                            .foregroundColor(.purple)
-                            .font(.system(size: 20))
-                            .background(colorChangeTap == "C" ? ColorManager.grey2 : ColorManager.grey1)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
-                    
+//
+//                    Button(action: {
+//                        defaultMessageButtonTapped(defaultMessage: "C")
+//
+//                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Congratulations, you did it!", APNToken: friend.APNToken )
+//                    }, label: {
+//                        Text("Congratulations, you did it!")
+//                            .fontWeight(.thin)
+//                            .frame(width: 260, height: 30)
+//                            .foregroundColor(.purple)
+//                            .font(.system(size: 20))
+//                            .background(colorChangeTap == "C" ? ColorManager.grey2 : ColorManager.grey1)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                    })
+//
                     
                     VStack {
                         Spacer()
@@ -203,9 +203,9 @@ struct SaySomethingNice7: View {
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "D")
                         
-                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Good Luck - you got this!", APNToken: friend.APNToken )
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Meet me in Chat", APNToken: friend.APNToken )
                     }, label: {
-                        Text("Good luck, you got this!")
+                        Text("Meet me in Chat")
                             .fontWeight(.thin)
                             .frame(width: 260, height: 30)
                             .foregroundColor(.purple)
@@ -272,22 +272,22 @@ struct SaySomethingNice7: View {
                                 
                                 noteTapped.toggle()
                             }
-                        
-                        NavigationLink(
-                            destination: SendSongChat2(user: user, friend: friend, friends: friends, groups: groups, friendAtmosphere: friendAtmosphere),
-                            
-                            
-//                            destination: BuildFriendPlaylist(user: user, groups: groups, friend: friend, friendAtmosphere: friendAtmosphere),
-                            label: {
-                                Text("Send Song")
-                                    .fontWeight(.thin)
-                                    .frame(width: 135, height: 32)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            })
+//                        
+//                        NavigationLink(
+//                            destination: SendSongChat2(user: user, friend: friend, friends: friends, groups: groups, friendAtmosphere: friendAtmosphere),
+//                            
+//                            
+////                            destination: BuildFriendPlaylist(user: user, groups: groups, friend: friend, friendAtmosphere: friendAtmosphere),
+//                            label: {
+//                                Text("")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 135, height: 32)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 25))
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            })
                         
                         
                         //                        Spacer ()
