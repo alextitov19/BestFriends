@@ -67,28 +67,20 @@ struct Apologies4: View {
 //
 //
                 VStack {
+
+                    Text("There's no weakness in")
+                        .font(.system(size: 20))
+                        .fontWeight(.light)
+                        .foregroundColor(Color.white)
+                  
                     
-//
-//                    Spacer()
-//                        .frame(height: 15)
-//
-//                    Text("Alert Friends")
-//                        .font(.system(size: 15))
-//
-//                        .fontWeight(.thin)
-//                        .foregroundColor(Color.white)
-//
-//                    Text("That you're sending")
-//                        .font(.system(size: 15))
-//                        .italic()
-//                        .fontWeight(.thin)
-//                        .foregroundColor(Color.black)
-//
-//                    Text("them a message in Chat")
-//                        .font(.system(size: 15))
-//                        .italic()
-//                        .fontWeight(.thin)
-//                        .foregroundColor(Color.black)
+                    Text("saying your sorry!")
+                        .font(.system(size: 20))
+                        .fontWeight(.light)
+                        .foregroundColor(Color.white)
+                    
+                    Spacer()
+                        .frame(height: 30)
                     
                     
                     HStack {
@@ -99,12 +91,12 @@ struct Apologies4: View {
                                 
                             },
                                    label: {
-                                Text("who apologize to >")
+                                Text("Select >")
                                 //                                .fontWeight(.bold)
                                     .fontWeight(.thin)
                                     .frame(width: 120, height: 30)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 13))
+                                    .font(.system(size: 20))
                                     .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                                     .cornerRadius(25)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -209,10 +201,11 @@ struct Apologies4: View {
                         Spacer()
                             .frame(height: 25)
                         
-                        Text("tap 'share' \nwe send notification saying")
+                        Text("tap 'friend' and 'share' \nwe send notification saying")
                             .font(.system(size: 20))
+                            .italic()
                             .foregroundColor(.white)
-                            .fontWeight(.light)
+                            .fontWeight(.ultraLight)
                             .multilineTextAlignment(.center)
                         
                         Text("'I'm sorry. I apologize'")
@@ -223,7 +216,7 @@ struct Apologies4: View {
                         
                         
                         Spacer ()
-                            .frame(height: 80)
+                            .frame(height: 100)
                         
                         
                         
@@ -242,7 +235,13 @@ struct Apologies4: View {
                             
                         }
                         
-                        
+                      Text("Should I apologize if it \nwasn't really my fault?")
+                        .font(.system(size: 20))
+                        .italic()
+                        .fontWeight(.light)
+                        .foregroundColor(Color.white)
+                      
+                     
                         
                         
                         
@@ -253,7 +252,7 @@ struct Apologies4: View {
                             sessionManager.showLogin()
                         },
                                label: {
-                            Text("Chat")
+                            Text("Home")
                                 .fontWeight(.thin)
                                 .frame(width: 100, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -262,14 +261,13 @@ struct Apologies4: View {
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
-//                        
-//                        Text("Ok, now enjoy your week.")
-//                            .font(.system(size: 25))
-//                            .fontWeight(.regular)
-//                            .foregroundColor(Color .white)
+
                         
-                        Spacer()
-                            .frame(height: 70)
+                        
+//
+//
+//                        Spacer()
+//                            .frame(height: 70)
                     }
                     
                     
