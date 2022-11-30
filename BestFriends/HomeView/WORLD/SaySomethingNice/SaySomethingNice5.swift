@@ -45,12 +45,6 @@ struct SaySomethingNice5: View {
 
             
             VStack {
-                
-                HStack {
-                   
-
-                }
-                    
 
                 NavigationLink(
                     destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends),
@@ -68,71 +62,39 @@ struct SaySomethingNice5: View {
 
                 
                 
-                    Text("Power of a")
-                        .font(.system(size: 25))
-                        .fontWeight(.medium)
-                        .foregroundColor(Color.white)
-                    
-                Text("kind word")
+                Text("power of a")
+                    .font(.system(size: 20))
+                    .foregroundColor(ColorManager.grey1)
+           
+            Text("kind word")
+                .font(.system(size: 20))
+                .foregroundColor(ColorManager.grey1)
+                
+                Spacer()
+                    .frame(height: 15)
+
+                
+                Text("Say Something")
                     .font(.system(size: 25))
                     .fontWeight(.medium)
                     .foregroundColor(Color.white)
                 
-//                Spacer()
-//                    .frame(height: 15)
-//              
+            Text("'NICE'")
+                .font(.system(size: 25))
+                .fontWeight(.medium)
+                .foregroundColor(Color.white)
+            
                 
                 
                 
-                
-                    Text("Say Something")
-                        .font(.system(size: 20))
-                        .foregroundColor(ColorManager.grey1)
-               
-                Text("'NICE'")
-                    .font(.system(size: 20))
-                    .foregroundColor(ColorManager.grey1)
                 
                 Spacer()
                     .frame(height: 35)
                 
-//                
-//                HStack {
-//
-//                }
-//                .padding(.horizontal)
-                
-             
-                HStack {
-                    VStack {
-                        
-                   
-//
-//                        Button(action: {
-//                            mood = 0
-//                        }) {
-//
-//                            Text("Upset")
-//                                .font(.system(size: 17))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 0 ? Color(.systemCyan) : Color.gray)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//
-                    }
-                }
-                
+      
                 
                 VStack {
-  
-                    
-                    HStack {
-                        
-                    }
-                    
+                  
                     
                     
                     ZStack {
@@ -157,14 +119,14 @@ struct SaySomethingNice5: View {
                     
                     Spacer()
                         .frame(height: 25)
-                    
-                    Text("Who saying it to?")
-                        .font(.system(size: 20))
-                        .italic()
-                        .fontWeight(.light)
-                        .foregroundColor(ColorManager.grey1)
-                        .padding(.horizontal)
-                    
+//                    
+//                    Text("Who saying it to?")
+//                        .font(.system(size: 20))
+//                        .italic()
+//                        .fontWeight(.light)
+//                        .foregroundColor(ColorManager.grey1)
+//                        .padding(.horizontal)
+//                    
 
                     
                     HStack {
@@ -276,14 +238,14 @@ struct SaySomethingNice5: View {
                     
                         Spacer()
                             .frame(height: 15)
+////
+//                        Text("Push Notifiction was sent")
+//                            .font(.system(size: 20))
+//                            .italic()
+//                            .fontWeight(.light)
+//                            .foregroundColor(ColorManager.grey1)
+//                            .padding(.horizontal)
 //
-                        Text("Push Notifiction was sent")
-                            .font(.system(size: 20))
-                            .italic()
-                            .fontWeight(.light)
-                            .foregroundColor(ColorManager.grey1)
-                            .padding(.horizontal)
-                        
 
                    }
                  
