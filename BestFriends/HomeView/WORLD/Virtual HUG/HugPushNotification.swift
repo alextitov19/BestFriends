@@ -205,7 +205,7 @@ struct HugPushNotification: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends World", body: "\(user.firstName) sent you a 'HUG' in World", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends World", body: "\(user.firstName) sent you a HUG", APNToken: f.APNToken)
                 }
             }
         }
