@@ -53,7 +53,7 @@ struct SaySomethingNice5: View {
                     
 
                 NavigationLink(
-                    destination: AtmosphereInfo2(user: user, atmosphere: atmosphere, friends: friends),
+                    destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends),
                     label: {
                         Text("How feature works")
                             .fontWeight(.thin)

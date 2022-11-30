@@ -52,139 +52,62 @@ struct SaySomethingNice6: View {
                 
                 VStack {
           
-                    Text("Cheer you in good times")
-                        .font(.system(size: 25))
-                        .foregroundColor(Color.white)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-                    
-                    Text("and lend Support in bad")
-                        .font(.system(size: 25))
-                        .foregroundColor(Color.white)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-                 
-                    
-                    Text("YOU")
+                    Text("When you send 'Nice' message")
                         .font(.system(size: 30))
                         
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager .purple3)
-                    
                  
-                    
-                    Text("Step 1: Select your new Vibe")
-                        .font(.system(size: 18))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-                    
-                    Text("Step 2: Type brief explaination")
-                        .font(.system(size: 18))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-                    
-                VStack {
-          
-                  
-                    
-                    
-                    Text("Step 3: Select who you want to notify")
-                        .font(.system(size: 18))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-              
-                    
-                    Text("-tap [Share] sending push notification")
-                        .font(.system(size: 18))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-                  
                     Spacer()
-                         .frame(height: 25)
-                VStack {
-                    Text("YOUR FRIEND")
-                        .font(.system(size: 30))
-                        
-                        .fontWeight(.regular)
+                        .frame(height: 30)
+                    
+                    Text("Your friend will get a")
+                        .font(.system(size: 25))
+                        .foregroundColor(Color.white)
+                        .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager .purple3)
-                
                     
-                    Text("-friend taps your Push Notification")
+                    Text("Push Notification")
+                        .font(.system(size: 25))
+                        .foregroundColor(Color.white)
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager .purple3)
+                 
+                    Spacer()
+                        .frame(height: 30)
+                    
+//                    Text("They Tap it")
+//                        .font(.system(size: 30))
+//
+//                        .fontWeight(.regular)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager .purple3)
+//
+                    Spacer()
+                        .frame(height: 60)
+                    
+                    Text("Step 1: On homepage they tap \nyour planet")
                         .font(.system(size: 18))
                         .italic()
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager .purple3)
                    
-                    
-                    
-                  
-                    
-                    Text("-taps your planet on homepage")
-                        .font(.system(size: 18))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-                    
-                    
-                    Text("-taps [Friend's Vibe Changed] from the dropdown")
-                        .font(.system(size: 18))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-      
-            VStack {
-                    
                     Spacer()
-                         .frame(height: 25)
+                        .frame(height: 20)
                     
-                    Text("FRIEND RESPONDS")
-                        .font(.system(size: 30))
-                        
-                        .fontWeight(.regular)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-      
-                    Text("-with supportive message")
+                    
+                    Text("Step 2: Select [Friend sent 'Nice' \nmessage} from dropdown")
                         .font(.system(size: 18))
                         .italic()
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager .purple3)
                     
-                    
-                    Text("-a virtual Hug")
-                        .font(.system(size: 18))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-                    
-                    
-                    Text("-or a song that matches your Aura")
-                        .font(.system(size: 18))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-                    
-                    
-       
-  
+                VStack {
 
                 Spacer()
                     .frame(height: 140)
@@ -198,7 +121,6 @@ struct SaySomethingNice6: View {
 }
 }
 }
-}
-}
+
 
 
