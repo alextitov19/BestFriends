@@ -68,12 +68,12 @@ struct SaySomethingNice5: View {
 
                 
                 
-                    Text("Be part of making")
+                    Text("Power of a")
                         .font(.system(size: 25))
                         .fontWeight(.medium)
                         .foregroundColor(Color.white)
                     
-                Text("the world less toxic")
+                Text("kind word")
                     .font(.system(size: 25))
                     .fontWeight(.medium)
                     .foregroundColor(Color.white)
