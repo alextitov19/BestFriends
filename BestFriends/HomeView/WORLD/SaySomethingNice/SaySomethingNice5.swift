@@ -78,9 +78,9 @@ struct SaySomethingNice5: View {
                     .fontWeight(.medium)
                     .foregroundColor(Color.white)
                 
-                Spacer()
-                    .frame(height: 15)
-              
+//                Spacer()
+//                    .frame(height: 15)
+//              
                 
                 
                 
