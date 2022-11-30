@@ -38,18 +38,18 @@ struct HurtFeelings4: View {
             
             VStack {
                 
-                
-                Text("Ok, your friend")
-                    .font(.system(size: 20))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                
-                Text("hurt your feelings.")
-                    .font(.system(size: 20))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
+//
+//                Text("Ok, your friend")
+//                    .font(.system(size: 20))
+//                    .foregroundColor(.white)
+//                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
+//
+//                Text("hurt your feelings.")
+//                    .font(.system(size: 20))
+//                    .foregroundColor(.white)
+//                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height: 25)
@@ -57,7 +57,7 @@ struct HurtFeelings4: View {
                 Text("Yep, it's been Bugging \nyou all week")
                     .font(.system(size: 20))
                     .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
            
@@ -69,11 +69,11 @@ struct HurtFeelings4: View {
                 Text("Just a little nervious \nto say something")
                     .font(.system(size: 20))
                     .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 15)
+                    .frame(height: 25)
                    
                 HStack {
                         
@@ -198,10 +198,11 @@ struct HurtFeelings4: View {
                         Spacer()
                             .frame(height: 15)
                         
-                        Text("tap 'share' \nwe send notification saying")
+                        Text("tap 'friend' and 'share' \nwe send notification saying")
                             .font(.system(size: 20))
+                            .italic()
                             .foregroundColor(.white)
-                            .fontWeight(.light)
+                            .fontWeight(.ultraLight)
                             .multilineTextAlignment(.center)
                         
                         Text("'you hurt my feelings'")
@@ -225,7 +226,7 @@ struct HurtFeelings4: View {
                             sessionManager.showLogin()
                         },
                                label: {
-                            Text("Chat")
+                            Text("Home")
                                 .fontWeight(.thin)
                                 .frame(width: 100, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -238,7 +239,7 @@ struct HurtFeelings4: View {
                         
                         
                         
-                        Text("You got this")
+                        Text("now, take a breath")
                             .font(.system(size: 30))
                             .fontWeight(.regular)
                             .foregroundColor(Color .white)
