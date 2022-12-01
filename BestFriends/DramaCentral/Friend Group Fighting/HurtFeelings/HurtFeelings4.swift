@@ -47,10 +47,9 @@ struct HurtFeelings4: View {
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
-           
-                    
                     Spacer()
                         .frame(height: 25)
+                
                 Text("We can do it for you")
                     .font(.system(size: 20))
                     .fontWeight(.light)
@@ -212,17 +211,14 @@ struct HurtFeelings4: View {
                             .foregroundColor(.green)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
+                
+                        
+                        
                         
                         
                         Spacer ()
                             .frame(height: 100)
                         
-//
-//                        Text("")
-//                            .font(.system(size: 27))
-//                            .foregroundColor(.green)
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
                         
                         Button(action: {
                             sessionManager.showLogin()
@@ -241,12 +237,13 @@ struct HurtFeelings4: View {
                         
                         
                         
-                        Text("ok, take a breath")
-                            .font(.system(size: 30))
-                            .fontWeight(.regular)
+                        Text("Now, talk it out in Chat")
+                            .font(.system(size: 20))
+                            .italic()
+                            .fontWeight(.light)
                             .foregroundColor(Color .white)
                         
-                        
+
                         
                         
                         Spacer()
