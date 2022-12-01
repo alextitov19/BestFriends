@@ -44,16 +44,22 @@ struct AskQuestion: View {
          
                 VStack {
                  
-                    VStack {
+                    HStack {
 
+                        Spacer()
+                            .frame(height: 0)
   
                         NavigationLink(destination:  HomeView(), label: {
-                            SomethingNiceCircle (color: ColorManager.purple4, friendName: "ask \nthem \nin Chat")
+                            SomethingNiceCircle (color: ColorManager.purple4, friendName: "Maybe \na question \nbeen wanting \nto Ask?")
                         })
+                       
                         
+                        NavigationLink(destination:  HomeView(), label: {
+                            SomethingNiceCircle (color: ColorManager.purple4, friendName: "Confide \nin them \nabout \nsomething?")
+                        })
                     }
-                    
-                        .frame(height: 150)
+                    .padding()
+                 
            
                     
                     VStack {
@@ -106,6 +112,7 @@ struct AskQuestion: View {
                         
                         Spacer()
                             .frame(height: 15)
+                        
                         HStack {
                             if friends.count > 2 {
                                 RectView(user: user, friend: friends[2], color: colors[2])
@@ -171,81 +178,34 @@ struct AskQuestion: View {
                         
                         
                         Spacer ()
-                            .frame(height: 100)
+                            .frame(height: 200)
                         
 
-                        ZStack{
-                            
-                            NavigationLink(destination:  InfoCoolVideo(user: user), label: {
-                                SomethingNiceCircle (color: ColorManager.pmbc_blue, friendName: "")
-                            })
-                            
-                            Image(systemName: "triangle.fill")
-                                .resizable()
-                                .foregroundColor(.cyan)
-                                .frame(width: 250, height: 200)
-                               .shadow(color: .white, radius: 65, x: 30, y: 50)
-                                .opacity(0.65)
-                            
-                            VStack {
-                            
-                                Spacer ()
-                                    .frame(height: 75)
-                                
-                                Text("beyond the \n regular banter")
-                                    .font(.system(size: 17))
-                                    .italic()
-                                    .foregroundColor(.white)
-                                    .fontWeight(.thin)
-                                    .multilineTextAlignment(.center)
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                               
-                                Spacer ()
-                                    .frame(height: 30)
-                                
-                                Text("Building Real Friendships")
-                                    .font(.system(size: 20))
-                                    .foregroundColor(.white)
-                                    .fontWeight(.thin)
-                                    .multilineTextAlignment(.center)
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                
-                         
-                            }
-                        }
-                       
-                      
+
                         
-                    VStack {
-                        
+                        VStack {
+                          
+                    }
+                   
+
                         Button(action: {
                             sessionManager.showLogin()
                         },
                                label: {
-                            Text("Chat")
+                            Text("Mention it in Chat")
                                 .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
+                                .frame(width: 210, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 25))
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
-//                        Text("Wind by Shayla Bush, Producer Bryan Tyson")
-//                            .font(.system(size: 12, weight: .light))
-//                            .foregroundColor(Color.blue)
-//
-//                        Text("HRW Music Group")
-//                            .font(.system(size: 12, weight: .light))
-//                            .foregroundColor(Color.blue)
-                        
-                    }
-                   
 
-                    
+                        
                 
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 0)
                     
                 }
                 
