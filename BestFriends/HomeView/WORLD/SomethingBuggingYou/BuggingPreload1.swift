@@ -86,12 +86,12 @@ struct BuggingPreload1: View {
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
-                    Text("uncomfortable,")
-                        .font(.system(size: 15))
-                    
-                        .foregroundColor(.white)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
+//                    Text("uncomfortable,")
+//                        .font(.system(size: 15))
+//                    
+//                        .foregroundColor(.white)
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
                     
                     Text("not exactly sure \nwhat to say?")
                         .font(.system(size: 15))

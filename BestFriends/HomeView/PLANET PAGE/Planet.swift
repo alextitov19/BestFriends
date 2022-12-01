@@ -275,17 +275,18 @@ struct PlanetActionsView: View {
                                         .opacity(0.50)
                                     
                                     Text("LIVE")
-                                        .foregroundColor(ColorManager .purple2)
+//                                        .foregroundColor(.green)
+                                        .foregroundColor(ColorManager .pmbc_green)
                                         .font(.system(size: 35, weight: .light))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.50)
+                                        .opacity(0.90)
                                    
                                     Text("8pm EST")
-                                        .foregroundColor(ColorManager .red)
+                                        .foregroundColor(.black)
                                         .italic()
                                         .font(.system(size: 13, weight: .light))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.60)
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.90)
                                     
                                     
                                 }
