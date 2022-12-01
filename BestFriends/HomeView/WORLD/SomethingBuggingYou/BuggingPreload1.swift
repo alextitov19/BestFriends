@@ -77,73 +77,75 @@ struct BuggingPreload1: View {
                 VStack {
                     
                     Spacer ()
-                        .frame(height: 60)
+                        .frame(height: 40)
                     
-                    Text("Nervious")
+                    Text("Nervious,")
                         .font(.system(size: 15))
                     
                         .foregroundColor(.white)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
-                    Text("to say anything?")
+                    Text("uncomfortable,")
                         .font(.system(size: 15))
                     
                         .foregroundColor(.white)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                    //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    
+                    Text("not exactly sure \nwhat to say?")
+                        .font(.system(size: 15))
+                    
+                        .foregroundColor(.white)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                    
                     
                     Spacer ()
-                        .frame(height: 8)
+                        .frame(height: 10)
+                    
+                    Text("You're NOT ALONE!")
+                        .font(.system(size: 15))
+                    
+                        .foregroundColor(.white)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                 
+                    
+                    
+                    
+                    
+                    Spacer ()
+                        .frame(height: 25)
                     
                     
                     Text("Join users around the ")
-                        .font(.system(size: 17))
+                        .font(.system(size: 20))
                     
                         .foregroundColor(.white)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
-                    Text("world saying something")
-                        .font(.system(size: 17))
+                    Text("world fixing it")
+                        .font(.system(size: 23))
                     
                         .foregroundColor(.white)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
-                    Spacer ()
-                        .frame(height: 8)
+                  
                     
                     
                     Text("R I G H T  N O W!")
-                        .font(.system(size: 25))
-                    
-                        .foregroundColor(.white)
-                        .fontWeight(.light)
+                        .font(.system(size: 27))
+                        .foregroundColor(.green)
+                        .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                
                
                     
-                    VStack {
-                       
-//                        Spacer ()
-//                            .frame(height: 15)
-//
-//                        Text("you can do this")
-//                            .font(.system(size: 17))
-//                            .italic()
-//                            .foregroundColor(.blue)
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//
-//                        Text("there's strength in numbers")
-//                            .font(.system(size: 17))
-//                            .italic()
-//                            .foregroundColor(.blue)
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//
+//                    VStack {
+
                         
                     }
                 }
@@ -187,5 +189,5 @@ struct BuggingPreload1: View {
         }
     }
     
-}
+
 

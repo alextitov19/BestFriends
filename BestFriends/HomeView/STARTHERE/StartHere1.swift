@@ -112,8 +112,8 @@ struct StartHere1: View {
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
 
             
-//               
-//                
+//
+//
 //                NavigationLink(destination: WhyFiveFriends(), label: {
 //                    StartHereCircle (color: ColorManager.pmbc_blue, friendName: "Why \nonly 5 \nfriends?")
 //                    })
@@ -146,7 +146,7 @@ struct StartHere1: View {
             Spacer ()
                    .frame(height: 120)
               
-               Text("click \nhere")
+               Text("tap \nhere")
                              .font(.system(size: 18))
                              .italic()
                              .foregroundColor(ColorManager .grey4)
