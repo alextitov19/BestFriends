@@ -29,7 +29,7 @@ struct AskQuestion: View {
         ZStack {
             
 
-            Image("purpleBackground")
+            Image("GuyQuestions")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -43,47 +43,9 @@ struct AskQuestion: View {
             VStack{
          
                 VStack {
-                      
-                
-                    Text("This is your chance")
-                        .font(.system(size: 30, weight: .thin))
-                        .foregroundColor(Color.black)
-//                        .foregroundColor(ColorManager.purple3)
-                    
-                    Text("to Ask That Question")
-                        .font(.system(size: 40, weight: .light))
-                        .foregroundColor(Color.black)
-//                        .foregroundColor(ColorManager.purple3)
-                    
-//                    Text("on YouTube")
-//                        .font(.system(size: 20, weight: .ultraLight))
-//                        .foregroundColor(Color.white)
-////                        .foregroundColor(ColorManager.purple3)
-//
-//                    Text("you want to share?")
-//                        .font(.system(size: 20, weight: .ultraLight))
-//                        .foregroundColor(Color.white)
-////                        .foregroundColor(ColorManager.purple3)
-                    
-                    Spacer()
-                        .frame(height: 20)
-     
-                    
+                 
                     VStack {
-//
-//       Image(systemName: "heart.fill")
-//                        .resizable()
-//                        .foregroundColor(.red)
-//                        .frame(width: 100, height: 90)
-//    //                    .blur(radius: 2)
-//
-//                        .shadow(color: .blue, radius: 65, x: 30, y: 50)
-//                        .opacity(0.85)
-//
-//                        Text("send \nin \nChat")
-//                            .font(.system(size: 35, weight: .ultraLight))
-//                            .foregroundColor(Color.black)
-//
+
   
                         NavigationLink(destination:  HomeView(), label: {
                             SomethingNiceCircle (color: ColorManager.purple4, friendName: "ask \nthem \nin Chat")
@@ -91,14 +53,8 @@ struct AskQuestion: View {
                         
                     }
                     
-                    Spacer()
-                        .frame(height: 50)
-                    
-                    Text("Alert Friend via push notification")
-                        .font(.system(size: 20, weight: .thin))
-                        .italic()
-                        .foregroundColor(Color.black)
-                    
+                        .frame(height: 10)
+           
                     
                     VStack {
                         
@@ -213,29 +169,68 @@ struct AskQuestion: View {
                                 }
                         })
                         
-//                        VStack {
-//
-//
-//
-//                            Text("In next version of BestFriends")
-//                                .font(.system(size: 15, weight: .light))
-//                                .foregroundColor(Color.black)
-//
-//                            Text("you'll be able to display the YouTube")
-//                                .font(.system(size: 15, weight: .light))
-//                                .foregroundColor(Color.black)
-//                            Text("video right in Chat")
-//                                .font(.system(size: 15, weight: .light))
-//                                .foregroundColor(Color.black)
-//                        }
-//
-                        Spacer()
-                                                     .frame(height: 100)
                         
+                        Spacer ()
+                            .frame(height: 100)
+                        
+
+                        ZStack{
+                            
+                            NavigationLink(destination:  InfoCoolVideo(user: user), label: {
+                                SomethingNiceCircle (color: ColorManager.pmbc_blue, friendName: "")
+                            })
+                            
+                            Image(systemName: "triangle.fill")
+                                .resizable()
+                                .foregroundColor(.cyan)
+                                .frame(width: 250, height: 200)
+                               .shadow(color: .white, radius: 65, x: 30, y: 50)
+                                .opacity(0.65)
+                            
+                            VStack {
+                            
+                                Spacer ()
+                                    .frame(height: 75)
+                                
+                                Text("beyond the \n regular banter")
+                                    .font(.system(size: 17))
+                                    .italic()
+                                    .foregroundColor(.white)
+                                    .fontWeight(.thin)
+                                    .multilineTextAlignment(.center)
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                               
+                                Spacer ()
+                                    .frame(height: 30)
+                                
+                                Text("Building Real Friendships")
+                                    .font(.system(size: 20))
+                                    .foregroundColor(.white)
+                                    .fontWeight(.thin)
+                                    .multilineTextAlignment(.center)
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                
+                         
+                            }
+                        }
+                       
                       
                         
                     VStack {
                         
+                        Button(action: {
+                            sessionManager.showLogin()
+                        },
+                               label: {
+                            Text("Chat")
+                                .fontWeight(.thin)
+                                .frame(width: 100, height: 30)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 25))
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        })
 //                        Text("Wind by Shayla Bush, Producer Bryan Tyson")
 //                            .font(.system(size: 12, weight: .light))
 //                            .foregroundColor(Color.blue)
@@ -266,7 +261,7 @@ struct AskQuestion: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends World", body: "\(user.firstName) asked a question", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends World", body: "\(user.firstName) asked a question in Chat", APNToken: f.APNToken)
                 }
             }
         }
