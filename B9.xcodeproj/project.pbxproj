@@ -185,6 +185,7 @@
 		CF72D6FB2921AFE900EDDDA6 /* SmileVaultPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72D6FA2921AFE900EDDDA6 /* SmileVaultPreload.swift */; };
 		CF763F7C285AFBAB0010D1A9 /* HorizonsPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F7B285AFBAB0010D1A9 /* HorizonsPrototype.swift */; };
 		CF76FA08285EED3E000750A4 /* ReceivedPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76FA07285EED3E000750A4 /* ReceivedPlaylist.swift */; };
+		CF8F76C6293866BB00B109D3 /* AskQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F76C5293866BB00B109D3 /* AskQuestion.swift */; };
 		CF9957F128A72E77000BBAFF /* DeleteUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9957F028A72E77000BBAFF /* DeleteUserData.swift */; };
 		CF9957F328A73EFA000BBAFF /* CancellingPURPLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9957F228A73EFA000BBAFF /* CancellingPURPLE.swift */; };
 		CF9E33C22843040B00107433 /* Step3FG_Acountability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C12843040B00107433 /* Step3FG_Acountability.swift */; };
@@ -440,6 +441,7 @@
 		CF72D6FA2921AFE900EDDDA6 /* SmileVaultPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileVaultPreload.swift; sourceTree = "<group>"; };
 		CF763F7B285AFBAB0010D1A9 /* HorizonsPrototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonsPrototype.swift; sourceTree = "<group>"; };
 		CF76FA07285EED3E000750A4 /* ReceivedPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedPlaylist.swift; sourceTree = "<group>"; };
+		CF8F76C5293866BB00B109D3 /* AskQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskQuestion.swift; sourceTree = "<group>"; };
 		CF9957F028A72E77000BBAFF /* DeleteUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserData.swift; sourceTree = "<group>"; };
 		CF9957F228A73EFA000BBAFF /* CancellingPURPLE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellingPURPLE.swift; sourceTree = "<group>"; };
 		CF9E33C12843040B00107433 /* Step3FG_Acountability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3FG_Acountability.swift; sourceTree = "<group>"; };
@@ -992,6 +994,7 @@
 				CFD8BD032912A8F300F86EFB /* PhotoPOP */,
 				CFD8BD042912A95900F86EFB /* SomethingBuggingYou */,
 				CFD8BD062912A9C500F86EFB /* SendSong */,
+				CF8F76C42938669D00B109D3 /* ASK QUESTION */,
 				CFD04689282D6FDD00BF0B02 /* Atmosphere */,
 				CFDB150A2858F4D200155CEE /* Virtual HUG */,
 			);
@@ -1085,6 +1088,14 @@
 				CF76FA07285EED3E000750A4 /* ReceivedPlaylist.swift */,
 			);
 			path = PlayLists;
+			sourceTree = "<group>";
+		};
+		CF8F76C42938669D00B109D3 /* ASK QUESTION */ = {
+			isa = PBXGroup;
+			children = (
+				CF8F76C5293866BB00B109D3 /* AskQuestion.swift */,
+			);
+			path = "ASK QUESTION";
 			sourceTree = "<group>";
 		};
 		CFA1225B285975E100E22E84 /* Apologies */ = {
@@ -1663,6 +1674,7 @@
 				CFDA4BD828D1999900118D90 /* Heart.swift in Sources */,
 				CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */,
 				7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */,
+				CF8F76C6293866BB00B109D3 /* AskQuestion.swift in Sources */,
 				7A04C13F2855390B003AB24A /* PhotoPopImageView.swift in Sources */,
 				CFA1225D285975FF00E22E84 /* Apologies.swift in Sources */,
 				7ADFDB31289B1EFE0004FB1C /* ShakeExtensions.swift in Sources */,

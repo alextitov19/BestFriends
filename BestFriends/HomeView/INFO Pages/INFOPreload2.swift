@@ -35,7 +35,7 @@ struct INFOPreload2: View {
 //                .ignoresSafeArea()
 //                .scaledToFill()
 
-            AdPlayerView(name: "sky2")
+            AdPlayerView(name: "PaperAirplanes")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.75)
@@ -115,11 +115,11 @@ struct INFOPreload2: View {
                     Spacer()
                         .frame(height: 35)
                     
-                    Text("(Check for eew emotional phrases)")
+                    Text("(Check for new emotional phrases)")
                             .font(.system(size: 17))
                             .italic()
                             .fontWeight(.thin)
-                            .foregroundColor(ColorManager .purple3)
+                            .foregroundColor(ColorManager .purple2)
                     
                     
                     Spacer()
