@@ -74,7 +74,7 @@ struct Apologies4: View {
                         .foregroundColor(Color.white)
                   
                     
-                    Text("saying your sorry!")
+                    Text("saying you're sorry!")
                         .font(.system(size: 20))
                         .fontWeight(.light)
                         .foregroundColor(Color.white)

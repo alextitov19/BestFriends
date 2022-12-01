@@ -37,24 +37,11 @@ struct HurtFeelings4: View {
             
             
             VStack {
-                
-//
-//                Text("Ok, your friend")
-//                    .font(.system(size: 20))
-//                    .foregroundColor(.white)
-//                    .fontWeight(.ultraLight)
-//                    .multilineTextAlignment(.center)
-//
-//                Text("hurt your feelings.")
-//                    .font(.system(size: 20))
-//                    .foregroundColor(.white)
-//                    .fontWeight(.ultraLight)
-//                    .multilineTextAlignment(.center)
-                
+
                 Spacer()
                     .frame(height: 25)
                 
-                Text("Yep, it's been Bugging \nyou all week")
+                Text("Yep, it's been bugging \nyou all week!")
                     .font(.system(size: 20))
                     .foregroundColor(.white)
                     .fontWeight(.light)
@@ -64,13 +51,20 @@ struct HurtFeelings4: View {
                     
                     Spacer()
                         .frame(height: 25)
-               
-                         
-                Text("Just a little nervious \nto say something")
+                Text("We can do it for you")
                     .font(.system(size: 20))
-                    .foregroundColor(.white)
                     .fontWeight(.light)
-                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+                   
+                    Spacer()
+                        .frame(height: 10)
+                
+                    Text("Right NOW!")
+                        .font(.system(size: 22))
+                        .italic()
+                        .fontWeight(.medium)
+                        .foregroundColor(Color.green)
+                
                 
                 Spacer()
                     .frame(height: 25)
@@ -196,9 +190,17 @@ struct HurtFeelings4: View {
                        
                         
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 25)
                         
-                        Text("tap 'friend' and 'share' \nwe send notification saying")
+                        Text("select 'friend' and we")
+                            .font(.system(size: 20))
+                            .italic()
+                            .foregroundColor(.white)
+                            .fontWeight(.ultraLight)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        Text("send push notification saying")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(.white)
@@ -239,7 +241,7 @@ struct HurtFeelings4: View {
                         
                         
                         
-                        Text("now, take a breath")
+                        Text("ok, take a breath")
                             .font(.system(size: 30))
                             .fontWeight(.regular)
                             .foregroundColor(Color .white)
