@@ -89,13 +89,19 @@ struct INFOPreload: View {
                     Spacer ()
                         .frame(height: 20)
                     
-                                        Text("in a safe, genuine & positive space")
+                                        Text("In a safe, genuine & positive space")
                                             .font(.system(size: 20))
                                             .foregroundColor(.white)
                                             .fontWeight(.thin)
                                             .multilineTextAlignment(.center)
                                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                     
+                    Text("users worldwide doing this together!")
+                        .font(.system(size: 20))
+                        .foregroundColor(.white)
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                        .shadow(color: .black, radius: 1, x: 0, y: 1)
                     
                     ZStack{
                         
