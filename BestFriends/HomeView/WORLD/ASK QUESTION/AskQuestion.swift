@@ -53,7 +53,7 @@ struct AskQuestion: View {
                         
                     }
                     
-                        .frame(height: 10)
+                        .frame(height: 150)
            
                     
                     VStack {
