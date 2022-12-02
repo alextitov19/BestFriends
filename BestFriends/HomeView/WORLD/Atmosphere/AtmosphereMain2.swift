@@ -33,7 +33,7 @@ struct AtmosphereMain2: View {
     var body: some View {
         ZStack {
 
-            Image("purpleBackground")
+            Image("blueBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -55,22 +55,25 @@ struct AtmosphereMain2: View {
 
                 }
                     
+//
+//                NavigationLink(
+//                    destination: AtmosphereInfo2(user: user, atmosphere: atmosphere, friends: friends),
+//                    label: {
+//                        Text("How feature works")
+//                            .fontWeight(.thin)
+//                            .foregroundColor(Color.white)
+//                            .font(.system(size: 12))
+//                            .italic()
+//                            .frame(width: 50, height: 50)
+//                            .background(ColorManager .purple3)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                    })
                 
-                NavigationLink(
-                    destination: AtmosphereInfo2(user: user, atmosphere: atmosphere, friends: friends),
-                    label: {
-                        Text("How feature works")
-                            .fontWeight(.thin)
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 12))
-                            .italic()
-                            .frame(width: 50, height: 50)
-                            .background(ColorManager .purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
-                
-                
+                Text("       'Vibe' will show around your planet")
+                    .font(.system(size: 15))
+                    .italic()
+                    .foregroundColor(ColorManager.grey1)
                 
                     Text("Update your 'Vibe'")
                         .font(.system(size: 35))
@@ -79,22 +82,19 @@ struct AtmosphereMain2: View {
                     
                 
                     
-                    Text("your 'Vibe' will show around your planet")
-                        .font(.system(size: 15))
-                        .italic()
-                        .foregroundColor(ColorManager.grey1)
+                    
                
-           
-                Text(".")
-                    .font(.system(size: 2))
-                    .fontWeight(.regular)
-                    .foregroundColor(ColorManager.grey1)
-                    .padding(.horizontal)
+//
+//                Text(".")
+//                    .font(.system(size: 2))
+//                    .fontWeight(.regular)
+//                    .foregroundColor(ColorManager.grey1)
+//                    .padding(.horizontal)
                 
                 HStack {
 
                 }
-                .padding(.horizontal)
+//                .padding(.horizontal)
                 
              
                 HStack {
@@ -281,13 +281,7 @@ struct AtmosphereMain2: View {
                 
                 VStack {
                     // MARK: End of feeling buttons
-//
-//                    Text("tap [return] to hide keyboard")
-//                        .font(.system(size: 15))
-//                        .italic()
-//                        .fontWeight(.light)
-//                        .foregroundColor(ColorManager.red)
-//
+
                     
                     HStack {
                         Text(".")
@@ -307,33 +301,20 @@ struct AtmosphereMain2: View {
                             .frame(width:310, height: 50)
                             .cornerRadius(15)
                             .foregroundColor(Color.gray)
-                            .opacity(0.9)
+                            .opacity(0.95)
                         
-                        TextField("Type what's going on here ...", text: $summary)
+                        TextField("What's going on?", text: $summary)
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager.purple2)
-                            .padding(.horizontal, 80)
-                            .onReceive(Just(summary)) { _ in limitText(60) }
+                            .padding(.horizontal, 210)
+                            .onReceive(Just(summary)) { _ in limitText(80) }
                         
                         
                     }
                     
-                
-                        
-                 
-                    
-//                    Spacer()
-//                        .frame(height: 5)
-                    
+         
                     HStack {
-//                        Text("send Push Notification")
-//                            .font(.system(size: 30))
-//
-//                            .fontWeight(.light)
-//                            .foregroundColor(ColorManager.grey1)
-//                            .padding(.horizontal)
-                        
-                     
+ 
                     }
 
                   
@@ -386,8 +367,9 @@ struct AtmosphereMain2: View {
                             }
                         }
                         
-                        Spacer()
-                            .frame(height: 15)
+//                        Spacer()
+//                            .frame(height: 15)
+                   
                         HStack {
                             if friends.count > 2 {
                                 RectView(user: user, friend: friends[2], color: colors[2])
@@ -567,47 +549,67 @@ struct AtmosphereMain2: View {
 //                    .padding()
                     
                         Spacer()
-                            .frame(height: 35)
-                    
-                    NavigationLink(
-                        destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends),
-                        label: {
-                            Text("Vibe Tracker")
-                                .fontWeight(.thin)
-                                .frame(width: 150, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager.pmbc_green)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
-                    }
-                 
-                    VStack {
-                        Spacer()
                             .frame(height: 15)
-                        
-                        Button(action: {
-                            sessionManager.showLogin()
-                        },
+                    
+                        NavigationLink(
+                            destination: AtmosphereInfo2(user: user, atmosphere: atmosphere, friends: friends),
                             label: {
-                                Text("Home")
+                                Text("How feature works")
                                     .fontWeight(.thin)
-                                    .frame(width: 100, height: 30)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
+                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 15))
+                                    .italic()
+                                    .frame(width: 200, height: 20)
+                                    .background(ColorManager .purple3)
+                                    .cornerRadius(20)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
                         
-                     
+                        
+//
+//                    NavigationLink(
+//                        destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends),
+//                        label: {
+//                            Text("Vibe Tracker")
+//                                .fontWeight(.thin)
+//                                .frame(width: 150, height: 30)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 25))
+//                                .background(ColorManager.pmbc_green)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        })
+//                    }
+//
+//                    VStack {
+//                        Spacer()
+//                            .frame(height: 15)
+//
+//                        Button(action: {
+//                            sessionManager.showLogin()
+//                        },
+//                            label: {
+//                                Text("Home")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 100, height: 30)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 25))
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            })
+//
+//
+                   
+                        
+                        
+                        
                     }
 
                 }
                 
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 235)
                 
             }
         }
