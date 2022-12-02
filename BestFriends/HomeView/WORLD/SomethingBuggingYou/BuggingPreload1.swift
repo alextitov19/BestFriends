@@ -71,6 +71,12 @@ struct BuggingPreload1: View {
                 .offset(x: showItems ? 30 : 0, y: showItems ? -300: 0)
                 
                 
+                NavigationLink(destination: TeenBoysUsing(), label: {
+                    BuggingCircle (color: ColorManager.orange3, friendName: "Are \nteen boys \nusing app?")
+                })
+                .offset(x: showItems ? -30 : 0, y: showItems ? 175: 0)
+                
+                
                 
                 NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups), label: {
                     BuggingCircle (color: .cyan, friendName: "")
