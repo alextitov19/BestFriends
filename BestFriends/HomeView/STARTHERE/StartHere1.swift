@@ -130,6 +130,14 @@ struct StartHere1: View {
                 
                 
                 
+                  NavigationLink(destination: ShaylaPage(user: user), label: {
+                      BuggingCircle (color: ColorManager.purple3, friendName: "Envisioned \nby \nTeens")
+                  })
+                  .offset(x: showItems ? -100 : 0, y: showItems ? 75: 0)
+                
+                
+                
+                
                 NavigationLink(destination: EmptyView(), label: {
                     StartHereCircle (color: ColorManager.purple4, friendName: "")
                     })
