@@ -65,7 +65,7 @@ struct BuggingPreload1: View {
                 .offset(x: showItems ? -100 : 0, y: showItems ? -155: 0)
                 
                 
-                NavigationLink(destination: AskQuestion(user: user, friends: friends), label: {
+                NavigationLink(destination: AskQuestion(user: user, friends: friends, groups: groups), label: {
                     BuggingCircle (color: ColorManager.orange3, friendName: "Something \nelse on \nyour Mind?")
                 })
                 .offset(x: showItems ? 30 : 0, y: showItems ? -300: 0)
