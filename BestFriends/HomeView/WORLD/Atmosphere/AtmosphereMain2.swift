@@ -38,9 +38,14 @@ struct AtmosphereMain2: View {
                 .ignoresSafeArea()
                 .scaledToFill()
             
-            AdPlayerView(name: "dramaLights")
+            Image("FatGuy")
+                .resizable()
                 .ignoresSafeArea()
-                .blendMode(.screen)
+                .scaledToFill()
+//
+//            AdPlayerView(name: "")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
 
             
             VStack {
@@ -74,7 +79,7 @@ struct AtmosphereMain2: View {
                     
                 
                     
-                    Text("your 'Vibe' show around your planet")
+                    Text("your 'Vibe' will show around your planet")
                         .font(.system(size: 15))
                         .italic()
                         .foregroundColor(ColorManager.grey1)
@@ -429,6 +434,10 @@ struct AtmosphereMain2: View {
                             }
                         }
                         
+                        Spacer()
+                            .frame(height: 20)
+                        
+                        
                         Button(action: {
                             shareButtonTapped()
                         },
@@ -598,7 +607,7 @@ struct AtmosphereMain2: View {
                 }
                 
                 Spacer()
-                    .frame(height: 65)
+                    .frame(height: 100)
                 
             }
         }
