@@ -39,71 +39,21 @@ struct INFOPreload: View {
                 
                 
                 VStack {
-                    
-//                    Spacer()
-//                        .frame(height: 125)
-//
-//                    Text("Nightly 8:00pm EST")
-//                        .font(.system(size: 25))
-//                        .italic()
-//                        .fontWeight(.thin)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.orange5)
-                    
-                    
-                    
-//                    Spacer ()
-//                        .frame(height: 30)
-                   
-//                    Text("We all have enough")
-//                        .font(.system(size: 20))
-//                        .foregroundColor(.white)
-//                        .fontWeight(.thin)
-//                        .multilineTextAlignment(.center)
-//                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-//
-//                    Text("to deal with")
-//                        .font(.system(size: 20))
-//                        .foregroundColor(.white)
-//                        .fontWeight(.thin)
-//                        .multilineTextAlignment(.center)
-//                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+
                     
                     Spacer ()
-                        .frame(height: 20)
-//
-//                    Text("Friendships are paramount")
-//                        .font(.system(size: 20))
-//                        .foregroundColor(.white)
-//                        .fontWeight(.thin)
-//                        .multilineTextAlignment(.center)
-//                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-//
-//                    Text("to us all")
-//                        .font(.system(size: 20))
-//                        .foregroundColor(.white)
-//                        .fontWeight(.thin)
-//                        .multilineTextAlignment(.center)
-//                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        .frame(height: 40)
+
+  
                     
-                    Spacer ()
-                        .frame(height: 20)
-//
-//                                        Text("In a protedted, positive space")
-//                                            .font(.system(size: 20))
-//                                            .foregroundColor(.white)
-//                                            .fontWeight(.thin)
-//                                            .multilineTextAlignment(.center)
-//                                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    
-                    Text("Helping users worldwide feel")
+                    Text("In a safe, positive space")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                     
-                    Text("better about their friendships!")
+                    Text("helping users worldwide")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.thin)
@@ -137,9 +87,9 @@ struct INFOPreload: View {
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                            
                             Spacer ()
-                                .frame(height: 35)
+                                .frame(height: 30)
                             
-                            Text("Building kick-ass Friendships")
+                            Text("Build kick-ass Friendships")
                                 .font(.system(size: 23))
                                 .foregroundColor(.white)
                                 .fontWeight(.thin)
@@ -148,7 +98,7 @@ struct INFOPreload: View {
                             
                             
                             Text("while")
-                                .font(.system(size: 18))
+                                .font(.system(size: 20))
                                 .italic()
                                 .foregroundColor(.white)
                                 .fontWeight(.thin)
@@ -181,7 +131,7 @@ struct INFOPreload: View {
 //                            .foregroundColor(ColorManager.purple2)
 //
                         
-                        Text("everyone all at the same time \ntogether")
+                        Text("all of us at the same time, \ntogether")
                             .font(.system(size: 23))
                            
                             .fontWeight(.light)
