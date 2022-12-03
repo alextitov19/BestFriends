@@ -89,14 +89,21 @@ struct INFOPreload: View {
                     Spacer ()
                         .frame(height: 20)
                     
-                                        Text("In a safe, genuine & positive space")
+                                        Text("In a safe, positive space")
                                             .font(.system(size: 20))
                                             .foregroundColor(.white)
                                             .fontWeight(.thin)
                                             .multilineTextAlignment(.center)
                                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                     
-                    Text("users worldwide doing this together!")
+                    Text("users worldwide feeling")
+                        .font(.system(size: 20))
+                        .foregroundColor(.white)
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    
+                    Text("better about their friendships!")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.thin)
@@ -121,7 +128,7 @@ struct INFOPreload: View {
                             Spacer ()
                                 .frame(height: 130)
                             
-                            Text("putting smiles \non faces")
+                            Text("putting smiles \non hearts")
                                 .font(.system(size: 17))
                                 .italic()
                                 .foregroundColor(.white)
