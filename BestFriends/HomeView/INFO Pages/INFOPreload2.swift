@@ -113,17 +113,18 @@ struct INFOPreload2: View {
                             .foregroundColor(Color.white)
                     
                     Spacer()
-                        .frame(height: 35)
+                        .frame(height: 15)
                     
-                    Text("(Check for new emotional phrases)")
-                            .font(.system(size: 17))
-                            .italic()
+                    Text("feeling safe in the silence")
+                            .font(.system(size: 25))
                             .fontWeight(.thin)
-                            .foregroundColor(ColorManager .purple2)
-                    
+                            .foregroundColor(Color.white)
                     
                     Spacer()
-                        .frame(height: 15)
+                        .frame(height: 50)
+                    
+                 
+   
                     
 //                    Text("making snow angles in the")
 //                            .font(.system(size: 25))
@@ -136,7 +137,16 @@ struct INFOPreload2: View {
 //                            .foregroundColor(Color.white)
 //
                     
-                    
+                    //                    Text("ligthtness in a child's")
+                    //                            .font(.system(size: 25))
+                    //                            .fontWeight(.thin)
+                    //                            .foregroundColor(Color.white)
+                    //
+                    //                    Text("heart while skippoing")
+                    //                            .font(.system(size: 25))
+                    //                            .fontWeight(.thin)
+                    //                            .foregroundColor(Color.white)
+                    //
                   
                     
             VStack {
