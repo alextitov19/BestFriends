@@ -60,20 +60,7 @@ struct BuiltForTeens: View {
             }
                 
             VStack {
-                
-                
-//                Text("Add up to five ...")
-//                            .font(.system(size: 27))
-//                            .italic()
-//                            .fontWeight(.light)
-//                            .foregroundColor(ColorManager.purple3)
-                
-//                Text("FriendGroups")
-//                            .font(.system(size: 45))
-//                            .italic()
-//                            .fontWeight(.light)
-//                            .foregroundColor(ColorManager.purple3)
-               
+  
                      Text("standing together in our drama")
                          .font(.system(size: 23))
                          .fontWeight(.thin)
