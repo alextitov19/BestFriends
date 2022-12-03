@@ -124,49 +124,15 @@ struct INFOPreload2: View {
                         .frame(height: 50)
                     
                  
-   
-                    
-//                    Text("making snow angles in the")
-//                            .font(.system(size: 25))
-//                            .fontWeight(.thin)
-//                            .foregroundColor(Color.white)
-//
-//                    Text("warm sunshine")
-//                            .font(.system(size: 25))
-//                            .fontWeight(.thin)
-//                            .foregroundColor(Color.white)
-//
-                    
-                    //                    Text("ligthtness in a child's")
-                    //                            .font(.system(size: 25))
-                    //                            .fontWeight(.thin)
-                    //                            .foregroundColor(Color.white)
-                    //
-                    //                    Text("heart while skippoing")
-                    //                            .font(.system(size: 25))
-                    //                            .fontWeight(.thin)
-                    //                            .foregroundColor(Color.white)
-                    //
-                  
+
                     
             VStack {
               
-                   
-                Spacer()
-                    .frame(height: 15)
+            
                 
-//                Text("reaching a goal")
-//                        .font(.system(size: 25))
-//                        .fontWeight(.thin)
-//                        .foregroundColor(Color.white)
-//
-//                Text("long worked for")
-//                        .font(.system(size: 25))
-//                        .fontWeight(.thin)
-//                        .foregroundColor(Color.white)
-                
+
                 Spacer()
-                    .frame(height: 60)
+                    .frame(height: 75)
             
                 VStack {
                     
