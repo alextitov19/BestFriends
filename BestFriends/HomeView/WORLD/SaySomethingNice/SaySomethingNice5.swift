@@ -110,7 +110,7 @@ struct SaySomethingNice5: View {
                         Rectangle()
                             .frame(width:310, height: 50)
                             .cornerRadius(15)
-                            .foregroundColor(ColorManager .orange5)
+                            .foregroundColor(ColorManager .grey3)
                             .opacity(0.9)
                         
                         TextField("Say Something 'NICE' here...", text: $summary)
@@ -261,26 +261,26 @@ struct SaySomethingNice5: View {
                     VStack {
                         Spacer()
                             .frame(height: 65)
-                        
-                        Button(action: {
-                            sessionManager.showLogin()
-                        },
-                            label: {
-                                Text("Home")
-                                    .fontWeight(.thin)
-                                    .frame(width: 100, height: 30)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            })
+//
+//                        Button(action: {
+//                            sessionManager.showLogin()
+//                        },
+//                            label: {
+//                                Text("Home")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 100, height: 30)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 25))
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            })
                         
                         Spacer()
                             .frame(height: 15)
                         
                         
-                        Text("thx, for making friends feel liked by thier friends")
+                        Text("Yep! A 'simple' way to know your friends care about you")
                             .font(.system(size: 15))
                             .italic()
                             .foregroundColor(ColorManager.grey1)
