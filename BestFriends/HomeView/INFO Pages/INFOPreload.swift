@@ -88,15 +88,15 @@ struct INFOPreload: View {
                     
                     Spacer ()
                         .frame(height: 20)
+//
+//                                        Text("In a protedted, positive space")
+//                                            .font(.system(size: 20))
+//                                            .foregroundColor(.white)
+//                                            .fontWeight(.thin)
+//                                            .multilineTextAlignment(.center)
+//                                            .shadow(color: .black, radius: 1, x: 0, y: 1)
                     
-                                        Text("In a safe, positive space")
-                                            .font(.system(size: 20))
-                                            .foregroundColor(.white)
-                                            .fontWeight(.thin)
-                                            .multilineTextAlignment(.center)
-                                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    
-                    Text("users worldwide feeling")
+                    Text("Helping users worldwide feel")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.thin)
@@ -128,7 +128,7 @@ struct INFOPreload: View {
                             Spacer ()
                                 .frame(height: 130)
                             
-                            Text("putting smiles \non hearts")
+                            Text("feeling safe \nin the \nsilence")
                                 .font(.system(size: 17))
                                 .italic()
                                 .foregroundColor(.white)
@@ -137,7 +137,7 @@ struct INFOPreload: View {
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                            
                             Spacer ()
-                                .frame(height: 35)
+                                .frame(height: 25)
                             
                             Text("Building Special Friendships")
                                 .font(.system(size: 23))
