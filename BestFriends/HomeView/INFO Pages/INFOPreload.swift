@@ -126,9 +126,9 @@ struct INFOPreload: View {
                         VStack {
                         
                             Spacer ()
-                                .frame(height: 130)
+                                .frame(height: 120)
                             
-                            Text("feeling safe \nin the \nsilence")
+                            Text("everyone \nall at the \nsame time")
                                 .font(.system(size: 17))
                                 .italic()
                                 .foregroundColor(.white)
@@ -137,7 +137,7 @@ struct INFOPreload: View {
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                            
                             Spacer ()
-                                .frame(height: 25)
+                                .frame(height: 35)
                             
                             Text("Building Special Friendships")
                                 .font(.system(size: 23))
