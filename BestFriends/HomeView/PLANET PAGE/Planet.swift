@@ -275,8 +275,8 @@ struct PlanetActionsView: View {
                                         .opacity(0.50)
                                     
                                     Text("LIVE")
-//                                        .foregroundColor(.green)
-                                        .foregroundColor(ColorManager .pmbc_green)
+                                        .foregroundColor(.green)
+//                                        .foregroundColor(ColorManager .pmbc_green)
                                         .font(.system(size: 35, weight: .light))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.90)

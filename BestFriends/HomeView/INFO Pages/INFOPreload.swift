@@ -82,14 +82,14 @@ struct INFOPreload: View {
                                 .font(.system(size: 17))
                                 .italic()
                                 .foregroundColor(.white)
-                                .fontWeight(.thin)
+                                .fontWeight(.regular)
                                 .multilineTextAlignment(.center)
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                            
                             Spacer ()
                                 .frame(height: 30)
                             
-                            Text("Build kick-ass Friendships")
+                            Text("Build Resilient Friendships")
                                 .font(.system(size: 23))
                                 .foregroundColor(.white)
                                 .fontWeight(.thin)
