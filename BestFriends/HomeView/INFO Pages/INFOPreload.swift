@@ -128,7 +128,7 @@ struct INFOPreload: View {
                             Spacer ()
                                 .frame(height: 120)
                             
-                            Text("everyone \nall at the \nsame time")
+                            Text("in 5 \nminutes \na day")
                                 .font(.system(size: 17))
                                 .italic()
                                 .foregroundColor(.white)
@@ -139,7 +139,7 @@ struct INFOPreload: View {
                             Spacer ()
                                 .frame(height: 35)
                             
-                            Text("Building Special Friendships")
+                            Text("Building kick-ass Friendships")
                                 .font(.system(size: 23))
                                 .foregroundColor(.white)
                                 .fontWeight(.thin)
@@ -181,7 +181,7 @@ struct INFOPreload: View {
 //                            .foregroundColor(ColorManager.purple2)
 //
                         
-                        Text("in 5 minutes a day")
+                        Text("everyone all at the same time \ntogether")
                             .font(.system(size: 23))
                            
                             .fontWeight(.light)
