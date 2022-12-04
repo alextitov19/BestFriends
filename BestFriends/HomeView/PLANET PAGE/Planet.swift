@@ -179,7 +179,7 @@ struct PlanetActionsView: View {
                                 //                                    .opacity(0.6)
                                 
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple5)
+                                    .foregroundColor(ColorManager.grey2)
                                     .shadow(color: .black, radius: 2, x: 0, y: 2)
                                     .opacity(0.40)
                                 VStack {
@@ -302,12 +302,12 @@ struct PlanetActionsView: View {
                                     .frame(width: 110, height: 110)
                                     .foregroundColor(ColorManager.purple3)
                                     .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                    .opacity(0.40)
+                                    .opacity(0.70)
                                 
                                 VStack {
                                     
                                     Text("My")
-                                        .foregroundColor(ColorManager .pmbc_blue)
+                                        .foregroundColor(.white)
                                         .font(.system(size: 17, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
@@ -317,7 +317,7 @@ struct PlanetActionsView: View {
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
-//                                    
+//
 //                                    Text("MUSIC")
 //                                        .foregroundColor(.white)
 //                                        .font(.system(size: 20, weight: .bold))

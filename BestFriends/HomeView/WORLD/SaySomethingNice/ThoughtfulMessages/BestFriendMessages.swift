@@ -39,19 +39,22 @@ struct BestFriendMessages: View {
                 .blendMode(.screen)
                 .onAppear(perform: createPlanets)
 
-            
+//            ColorManager.purple2
+//                .ignoresSafeArea()
+//                .onAppear()
+          
             ZStack {
                 
                
-                   
-                
-                Image(systemName: "circle.fill")
-                    .resizable()
-                    .foregroundColor(ColorManager.purple3)
-                    .frame(width: 300, height: 300)
-                    .blur(radius: 2)
-                    .shadow(color: .gray, radius: 65, x: 40, y: 50)
-                    .opacity(0.1)
+//
+//
+//                Image(systemName: "circle.fill")
+//                    .resizable()
+//                    .foregroundColor(ColorManager.purple3)
+//                    .frame(width: 300, height: 300)
+//                    .blur(radius: 2)
+//                    .shadow(color: .gray, radius: 65, x: 40, y: 50)
+//                    .opacity(0.1)
                 
                 VStack {
                     
@@ -94,19 +97,19 @@ struct BestFriendMessages: View {
                 }
                 
                 ZStack {
-                    Image(systemName: "circle.fill")
+                    Image(systemName: "heart.fill")
                         .resizable()
                         .foregroundColor(ColorManager.grey1)
-                        .frame(width: 200, height: 200)
+                        .frame(width: 220, height: 220)
                         .blur(radius: 2)
-                        .shadow(color: .white, radius: 65, x: 40, y: 50)
-                        .opacity(0.3)
+                        .shadow(color: .white, radius: 30, x: 20, y: 25)
+                        .opacity(0.6)
                     
                     VStack {
                         
                         Text("SmileVault")
                             .font(.system(size: 35))
-                            .foregroundColor(ColorManager .purple7)
+                            .foregroundColor(ColorManager .purple5)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                   

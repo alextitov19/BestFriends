@@ -58,10 +58,10 @@ struct MyRoomInfo: View {
             
             ZStack{
 
-                NavigationLink(destination:  AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends), label: {
-                    SomethingNiceCircle (color: ColorManager.pmbc_green, friendName: "My day \n just \nCHANGED!")
+                NavigationLink(destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends), label: {
+                    SomethingNiceCircle (color: .cyan, friendName: "My 'Vibe' \nChanged!")
                 })
-                .offset(x: showItems ? -35 : 0, y: showItems ? -160: 0)
+                .offset(x: showItems ? -35 : 0, y: showItems ? -260: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
                 
 
@@ -73,24 +73,24 @@ struct MyRoomInfo: View {
                 
                 
                 
-                
-                
+
+
                 NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
-                    AtmosphereCircle (color: ColorManager.grey2, friendName: "Dream \nGalaxy")
+                    AtmosphereCircle (color: ColorManager.grey3, friendName: "Dreams \ncomming soon")
                 })
                 .offset(x: showItems ? 75 : 0, y: showItems ? 250: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-                
 
 
-
-                NavigationLink(destination: StoriesPreLoad(user: user, friends: friends), label: {
-                    AtmosphereCircle (color: ColorManager.grey2, friendName: "FriendGroup POP")
-                })
-                .offset(x: showItems ? 110 : 0, y: showItems ? 170: 0)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-
- 
+//
+//
+//                NavigationLink(destination: StoriesPreLoad(user: user, friends: friends), label: {
+//                    AtmosphereCircle (color: ColorManager.grey2, friendName: "FriendGroup POP")
+//                })
+//                .offset(x: showItems ? 110 : 0, y: showItems ? 170: 0)
+//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+//
+//
             
                 
                 
