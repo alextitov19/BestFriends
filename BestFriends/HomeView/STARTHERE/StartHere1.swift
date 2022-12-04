@@ -104,14 +104,14 @@ struct StartHere1: View {
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
                 
                 
-                
-
-                NavigationLink(destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                    StartHereCircle (color: ColorManager.grey1, friendName: "My \nRoom")
-                })
-                .offset(x: showItems ? 80 : 0, y: showItems ? 250: 0)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-
+//                
+//
+//                NavigationLink(destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
+//                    StartHereCircle (color: ColorManager.grey1, friendName: "My \nRoom")
+//                })
+//                .offset(x: showItems ? 80 : 0, y: showItems ? 250: 0)
+//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+//
 
                 
                 //
