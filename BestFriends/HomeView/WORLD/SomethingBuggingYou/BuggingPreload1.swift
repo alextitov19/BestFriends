@@ -26,13 +26,7 @@ struct BuggingPreload1: View {
     var body: some View {
         
         ZStack {
-            
-            //            ColorManager.purple1
-            //                .ignoresSafeArea()
-            //                .onAppear()
-            
-            
-            
+           
             
             Image("purpleBackground")
                 .resizable()
@@ -52,6 +46,8 @@ struct BuggingPreload1: View {
                     BuggingCircle (color: ColorManager.purple2, friendName: "Friend \nhurt my \nFeelings")
                 })
                 .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
+              
+                
                 
                 NavigationLink(destination: Apologies4(user: user, friends: friends, groups: groups), label: {
                     BuggingCircle (color: ColorManager.purple4, friendName: "I hurt \nmy friend's \nFeelings")
@@ -59,10 +55,7 @@ struct BuggingPreload1: View {
                 .offset(x: showItems ? 120 : 0, y: showItems ? -190: 0)
                 
                 
-                NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups), label: {
-                    BuggingCircle (color: ColorManager.red, friendName: "Just had \nHUGE \nFIGHT")
-                })
-                .offset(x: showItems ? -100 : 0, y: showItems ? -155: 0)
+                
                 
                 ZStack {
                     
@@ -71,6 +64,13 @@ struct BuggingPreload1: View {
                         BuggingCircle (color: ColorManager.orange3, friendName: "Something \nelse on \nyour Mind?")
                     })
                     .offset(x: showItems ? 30 : 0, y: showItems ? -300: 0)
+                    
+                    
+                 
+                    NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups), label: {
+                        BuggingCircle (color: ColorManager.red, friendName: "Just had \nHUGE \nFIGHT")
+                    })
+                    .offset(x: showItems ? -100 : 0, y: showItems ? -155: 0)
                     
                     
                     
@@ -88,79 +88,72 @@ struct BuggingPreload1: View {
                     //                    .blur(radius: 2)
                     
                         .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                        .opacity(0.70)
+                        .opacity(0.85)
                     
-                    VStack {
-                        
-                        Spacer ()
-                            .frame(height: 40)
-                        
-                        Text("Nervious,")
-                            .font(.system(size: 15))
-                        
-                            .foregroundColor(.white)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
-                        //                    Text("uncomfortable,")
-                        //                        .font(.system(size: 15))
-                        //                    
-                        //                        .foregroundColor(.white)
-                        //                        .fontWeight(.light)
-                        //                        .multilineTextAlignment(.center)
-                        
-                        Text("not exactly sure \nwhat to say?")
-                            .font(.system(size: 15))
-                        
-                            .foregroundColor(.white)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
-                        
-                        Spacer ()
-                            .frame(height: 10)
-                        
-                        Text("You're NOT ALONE!")
-                            .font(.system(size: 15))
-                        
-                            .foregroundColor(.white)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
-                        
-                        
-                        
-                        
-                        Spacer ()
-                            .frame(height: 25)
-                        
-                        
-                        Text("Join users around the ")
-                            .font(.system(size: 20))
-                        
-                            .foregroundColor(.white)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("world fixing it")
-                            .font(.system(size: 23))
-                        
-                            .foregroundColor(.white)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
-                        
-                        
-                        
-                        Text("R I G H T  N O W!")
-                            .font(.system(size: 27))
-                            .foregroundColor(.green)
-                            .fontWeight(.regular)
-                            .multilineTextAlignment(.center)
-                        
-                        
-                        
-                        //                    VStack {
+                        VStack {
+                            
+                            Spacer ()
+                                .frame(height: 40)
+                            
+                            Text("Nervious,")
+                                .font(.system(size: 15))
+                            
+                                .foregroundColor(.white)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+                            
+                            
+                            Text("not exactly sure \nwhat to say?")
+                                .font(.system(size: 15))
+                            
+                                .foregroundColor(.white)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+                            
+                            Spacer ()
+                                .frame(height: 10)
+                            
+                            Text("You're NOT ALONE!")
+                                .font(.system(size: 15))
+                            
+                                .foregroundColor(.white)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+                            
+                            
+                            
+                            
+                            Spacer ()
+                                .frame(height: 25)
+                            
+                            
+                            Text("Join users around the ")
+                                .font(.system(size: 20))
+                            
+                                .foregroundColor(.white)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("world fixing it")
+                                .font(.system(size: 23))
+                            
+                                .foregroundColor(.white)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+                            
+                            
+                            
+                            Text("R I G H T  N O W!")
+                                .font(.system(size: 30))
+                                .foregroundColor(.green)
+                                .fontWeight(.bold)
+                                .multilineTextAlignment(.center)
+                            
+                            
                         
                         
                     }
@@ -174,7 +167,7 @@ struct BuggingPreload1: View {
                     print("tap function is working")
                 }
                 
-                .animation(Animation.easeInOut(duration: 1.5), value: showItems)
+                .animation(Animation.easeInOut(duration: 4.0), value: showItems)
                 
             }
         }
@@ -204,6 +197,5 @@ struct BuggingPreload1: View {
             }
         }
     }
-    
 }
-
+    

@@ -57,134 +57,85 @@ struct MyRoomInfo: View {
             
             
             ZStack{
-
+                
                 NavigationLink(destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends), label: {
-                    SomethingNiceCircle (color: .cyan, friendName: "Set my 'Vibe'")
+                    MyRoomCircle (color: .cyan, friendName: "Set my \n'Vibe'")
                 })
                 .offset(x: showItems ? -35 : 0, y: showItems ? -260: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
                 
-
+                
+                
+                
                 NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                    AtmosphereCircle (color: ColorManager.purple3, friendName: "Saved \n'Nice' \nmessages")
+                    MyRoomCircle (color: ColorManager.purple3, friendName: "Saved \n'Nice' \nmessages")
                 })
                 .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
                 
                 
                 
-
-
-                NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
-                    AtmosphereCircle (color: ColorManager.grey3, friendName: "Dreams \ncomming soon")
-                })
-                .offset(x: showItems ? 75 : 0, y: showItems ? 250: 0)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-
-
-//
-//
-//                NavigationLink(destination: StoriesPreLoad(user: user, friends: friends), label: {
-//                    AtmosphereCircle (color: ColorManager.grey2, friendName: "FriendGroup POP")
-//                })
-//                .offset(x: showItems ? 110 : 0, y: showItems ? 170: 0)
-//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-//
-//
-            
-                
-                
-                
-                
-                Image(systemName: "triangle.fill")
-                    .resizable()
-                    .foregroundColor(ColorManager .orange3)
-                    .frame(width: 220, height: 180)
-                //                    .blur(radius: 2)
-                
-                    .shadow(color: .orange, radius: 65, x: 30, y: 50)
-                    .opacity(0.95)
-                
-                VStack {
+                ZStack {
                     
-                    Spacer ()
-                        .frame(height: 30)
+                    NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
+                        MyRoomCircle (color: ColorManager.grey2, friendName: "DreamVault \ncomming \n2023")
+                    })
+                    .offset(x: showItems ? 75 : 0, y: showItems ? 140: 0)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
                     
-                   
-                 
                     
-                    VStack {
-//                        
-//                        Text("Time alone")
-//                            .font(.system(size: 20))
-//                            .foregroundColor(.white)
-//                            .fontWeight(.light)
-//                            .foregroundColor(Color.white)
-//                        
-//                        Text("in")
-//                            .font(.system(size: 20))
-//                            .foregroundColor(.white)
-//                            .fontWeight(.light)
-//                            .foregroundColor(Color.white)
+                    
+                    
+                    
+                    
+                    
+                    Image(systemName: "triangle.fill")
+                        .resizable()
+                        .foregroundColor(ColorManager .orange3)
+                        .frame(width: 220, height: 180)
+                    //                    .blur(radius: 2)
+                    
+                        .shadow(color: .orange, radius: 65, x: 30, y: 50)
+                        .opacity(0.95)
+                    
+                    
                         
-                        Text("my room")
-                            .font(.system(size: 37))
-                            .foregroundColor(.white)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-          
+                        Spacer ()
+                            .frame(height: 30)
                         
                         
+                        
+                        
+                        VStack {
+                            
+                            
+                            Text("my room")
+                                .font(.system(size: 37))
+                                .foregroundColor(.white)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+                            
+                            
+                        }
                     }
+                    
+                    
+                    
+                    
+                    .onTapGesture {
+                        withAnimation {
+                            self.showItems.toggle()
+                        }
+                        print("tap function is working")
+                    }
+                    
+                    .animation(Animation.easeInOut(duration: 3.5), value: showItems)
+                    
                 }
-//
-//                VStack {
-//
-//                    Spacer ()
-//                        .frame(height: 400)
-//
-//                    Text("Yep, its one of those")
-//                        .font(.system(size: 37))
-//                        .foregroundColor(.blue)
-//                        .fontWeight(.ultraLight)
-//                        .multilineTextAlignment(.center)
-//
-//
-//
-//                    Text("D A Y S")
-//                        .font(.system(size: 65))
-//                        .foregroundColor(.blue)
-//                        .fontWeight(.ultraLight)
-//                        .multilineTextAlignment(.center)
-//
-//
-//
-//                }
-                
-                
-               .onTapGesture {
-                   withAnimation {
-                   self.showItems.toggle()
-                   }
-                   print("tap function is working")
-               }
-
-               .animation(Animation.easeInOut(duration: 2.5), value: showItems)
-                
-//                
-//                .onTapGesture {
-//                    withAnimation {
-//                        self.showItems.toggle()
-//                    }
-//                    print("tap function is working")
-//                }
-//                
-//                .animation(Animation.easeInOut(duration: 1.5), value: showItems)
-                
             }
         }
-    }
-    
+        
     
     struct MyRoomCircle: View {
         var color: Color
@@ -199,8 +150,8 @@ struct MyRoomInfo: View {
                     .clipShape(Circle())
                     .foregroundColor(color)
                     .opacity(0.7)
-                //        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
-                //
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
+                
                 Text(friendName)
                     .fontWeight(.light)
                     .italic()
@@ -209,7 +160,4 @@ struct MyRoomInfo: View {
             }
         }
     }
-    
 }
-
-

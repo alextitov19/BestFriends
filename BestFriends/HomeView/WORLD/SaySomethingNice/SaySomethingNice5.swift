@@ -260,7 +260,7 @@ struct SaySomethingNice5: View {
                  
                     VStack {
                         Spacer()
-                            .frame(height: 65)
+                            .frame(height: 35)
 //
 //                        Button(action: {
 //                            sessionManager.showLogin()
@@ -276,14 +276,33 @@ struct SaySomethingNice5: View {
 //                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 //                            })
                         
+                    
+                        
+                        Text("Yep! ")
+                            .font(.system(size: 27))
+                            
+                            .foregroundColor(.green)
+                        
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 10)
                         
-                        
-                        Text("Yep! A 'simple' way to know \nyour friends care about you")
-                            .font(.system(size: 15))
+                        Text("A 'simple' way to know")
+                            .font(.system(size: 20))
                             .italic()
-                            .foregroundColor(ColorManager.grey1)
+                            .foregroundColor(ColorManager.purple2)
+                        
+                        Text("your friends care about you")
+                            .font(.system(size: 20))
+                            .italic()
+                            .foregroundColor(ColorManager.purple2)
+                       
+                        Text("& vise-versa!")
+                            .font(.system(size: 23))
+                            .italic()
+                            .foregroundColor(ColorManager.purple2)
+                        
+                        
+                        
                     }
 
                 }
