@@ -44,21 +44,21 @@ struct INFOPreload: View {
                     Spacer ()
                         .frame(height: 40)
 
-  
-                    
-                    Text("In a safe, positive space")
+                    Text("Reassurance your friends care about you")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                     
-                    Text("helping users worldwide")
+                    Text("in a safe, positive space")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    
+                 
                     
                     ZStack{
                         
@@ -78,7 +78,7 @@ struct INFOPreload: View {
                             Spacer ()
                                 .frame(height: 120)
                             
-                            Text("in 5 \nminutes \na day")
+                            Text("5 \nminutes \ndaily")
                                 .font(.system(size: 17))
                                 .italic()
                                 .foregroundColor(.white)
@@ -106,7 +106,7 @@ struct INFOPreload: View {
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                             
                             Text("Reducing FriendGroup Drama")
-                                .font(.system(size: 25))
+                                .font(.system(size: 23))
                             //                             .italic()
                                 .foregroundColor(.white)
                                 .fontWeight(.thin)
