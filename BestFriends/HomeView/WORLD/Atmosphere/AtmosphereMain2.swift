@@ -312,7 +312,7 @@ struct AtmosphereMain2: View {
                     
                     ZStack {
                         Rectangle()
-                            .frame(width:310, height: 50)
+                            .frame(width:335, height: 50)
                             .cornerRadius(15)
                             .foregroundColor(Color.gray)
                             .opacity(0.95)
@@ -320,7 +320,7 @@ struct AtmosphereMain2: View {
                         TextField("What's going on?", text: $summary)
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager.purple2)
-                            .padding(.horizontal, 210)
+                            .padding(.horizontal, 175)
                             .onReceive(Just(summary)) { _ in limitText(80) }
                         
                         
@@ -452,44 +452,44 @@ struct AtmosphereMain2: View {
                         })
                         
                     
-            
-                        Spacer()
-                            .frame(height: 15)
-                    
-                        
-
-                    NavigationLink(
-                        destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends),
-                        label: {
-                            Text("Vibe Tracker")
-                                .fontWeight(.thin)
-                                .frame(width: 150, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager.pmbc_green)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
-                    }
-
-                    VStack {
-                        Spacer()
-                            .frame(height: 15)
-
-                        Button(action: {
-                            sessionManager.showLogin()
-                        },
-                            label: {
-                                Text("Home")
-                                    .fontWeight(.thin)
-                                    .frame(width: 100, height: 30)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            })
-
+//
+//                        Spacer()
+//                            .frame(height: 15)
+//
+//
+//
+//                    NavigationLink(
+//                        destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends),
+//                        label: {
+//                            Text("Vibe Tracker")
+//                                .fontWeight(.thin)
+//                                .frame(width: 150, height: 30)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 25))
+//                                .background(ColorManager.pmbc_green)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        })
+//                    }
+//
+//                    VStack {
+//                        Spacer()
+//                            .frame(height: 15)
+//
+//                        Button(action: {
+//                            sessionManager.showLogin()
+//                        },
+//                            label: {
+//                                Text("Home")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 100, height: 30)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 25))
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            })
+//
 
                    
                         
@@ -498,9 +498,9 @@ struct AtmosphereMain2: View {
                     }
 
                 }
-                
-                Spacer()
-                    .frame(height: 10)
+//
+//                Spacer()
+//                    .frame(height: 10)
                 
             }
         }

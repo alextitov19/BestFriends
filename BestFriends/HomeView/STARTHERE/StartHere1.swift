@@ -89,9 +89,9 @@ struct StartHere1: View {
                 
                 
                 NavigationLink(destination:  SurveyStickersPreload(), label: {
-                    StartHereCircle (color: ColorManager.grey2, friendName: "Take \n Survey, \nget \nSTICKERS")
+                    StartHereCircle (color: ColorManager.purple1, friendName: "Take \n Survey, \nget \nSTICKERS")
                 })
-                .offset(x: showItems ? 100 : 0, y: showItems ? 140: 0)
+                .offset(x: showItems ? -10 : 0, y: showItems ? 180: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
                 
                 
@@ -132,16 +132,16 @@ struct StartHere1: View {
                     //
                     
                     NavigationLink(destination: ShaylaPage(user: user), label: {
-                        BuggingCircle (color: ColorManager.purple3, friendName: "Envisioned \nby \nTeens")
+                        BuggingCircle (color: ColorManager.grey2, friendName: "Envisioned \nby \nTeens")
                     })
-                    .offset(x: showItems ? -140 : 0, y: showItems ? 115: 0)
+                    .offset(x: showItems ? -90 : 0, y: showItems ? -100: 0)
                     
                     
                     
                     NavigationLink(destination: InfoViewPlanet(user: user), label: {
-                        BuggingCircle (color: ColorManager.purple3, friendName: "Walk-through")
+                        BuggingCircle (color: ColorManager.purple4, friendName: "Walk-through")
                     })
-                    .offset(x: showItems ? 90 : 0, y: showItems ? -75: 0)
+                    .offset(x: showItems ? 100 : 0, y: showItems ? -85: 0)
                     
                     
                     //
@@ -155,7 +155,7 @@ struct StartHere1: View {
                     Image(systemName: "triangle.fill")
                         .resizable()
                         .foregroundColor(.cyan)
-                        .frame(width: 200, height: 200)
+                        .frame(width: 250, height: 250)
                     //                    .blur(radius: 2)
                     
                         .shadow(color: .purple, radius: 65, x: 30, y: 50)
