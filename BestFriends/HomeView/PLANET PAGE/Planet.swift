@@ -206,10 +206,10 @@ struct PlanetActionsView: View {
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
-                                    Text("comming 2023")
+                                    Text("(comming 2023)")
                                         .foregroundColor(.white)
                                         .italic()
-                                        .font(.system(size: 13, weight: .light))
+                                        .font(.system(size: 11, weight: .light))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
 
