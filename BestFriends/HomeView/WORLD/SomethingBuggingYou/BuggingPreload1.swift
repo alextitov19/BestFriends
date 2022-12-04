@@ -27,25 +27,25 @@ struct BuggingPreload1: View {
         
         ZStack {
             
-//            ColorManager.purple1
-//                .ignoresSafeArea()
-//                .onAppear()
+            //            ColorManager.purple1
+            //                .ignoresSafeArea()
+            //                .onAppear()
             
             
             
             
-             Image("purpleBackground")
-                 .resizable()
-                 .scaledToFill()
-                 .ignoresSafeArea()
-          
-             Image("book")
-                 .frame(width: 320, height: 20)
+            Image("purpleBackground")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
             
-       
+            Image("book")
+                .frame(width: 320, height: 20)
+            
+            
             
             ZStack{
-          
+                
                 
                 
                 NavigationLink(destination: HurtFeelings4(user: user, friends: friends, groups: groups), label: {
@@ -64,102 +64,104 @@ struct BuggingPreload1: View {
                 })
                 .offset(x: showItems ? -100 : 0, y: showItems ? -155: 0)
                 
-                
-                NavigationLink(destination: AskQuestion(user: user, friends: friends, groups: groups), label: {
-                    BuggingCircle (color: ColorManager.orange3, friendName: "Something \nelse on \nyour Mind?")
-                })
-                .offset(x: showItems ? 30 : 0, y: showItems ? -300: 0)
-                
-                
-                
-                NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups), label: {
-                    BuggingCircle (color: .cyan, friendName: "")
-                })
-                .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
-                
-                
-                
-                Image(systemName: "triangle.fill")
-                    .resizable()
-                    .foregroundColor(.cyan)
-                    .frame(width: 300, height: 260)
-                //                    .blur(radius: 2)
-                
-                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                    .opacity(0.70)
-                
-                VStack {
-                    
-                    Spacer ()
-                        .frame(height: 40)
-                    
-                    Text("Nervious,")
-                        .font(.system(size: 15))
-                    
-                        .foregroundColor(.white)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                    
-//                    Text("uncomfortable,")
-//                        .font(.system(size: 15))
-//                    
-//                        .foregroundColor(.white)
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-                    
-                    Text("not exactly sure \nwhat to say?")
-                        .font(.system(size: 15))
-                    
-                        .foregroundColor(.white)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
+                ZStack {
                     
                     
-                    Spacer ()
-                        .frame(height: 10)
-                    
-                    Text("You're NOT ALONE!")
-                        .font(.system(size: 15))
-                    
-                        .foregroundColor(.white)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                 
+                    NavigationLink(destination: AskQuestion(user: user, friends: friends, groups: groups), label: {
+                        BuggingCircle (color: ColorManager.orange3, friendName: "Something \nelse on \nyour Mind?")
+                    })
+                    .offset(x: showItems ? 30 : 0, y: showItems ? -300: 0)
                     
                     
                     
-                    
-                    Spacer ()
-                        .frame(height: 25)
-                    
-                    
-                    Text("Join users around the ")
-                        .font(.system(size: 20))
-                    
-                        .foregroundColor(.white)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                    
-                    Text("world fixing it")
-                        .font(.system(size: 23))
-                    
-                        .foregroundColor(.white)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                    
-                  
+                    NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups), label: {
+                        BuggingCircle (color: .cyan, friendName: "")
+                    })
+                    .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
                     
                     
-                    Text("R I G H T  N O W!")
-                        .font(.system(size: 27))
-                        .foregroundColor(.green)
-                        .fontWeight(.regular)
-                        .multilineTextAlignment(.center)
-               
-               
                     
-//                    VStack {
-
+                    Image(systemName: "triangle.fill")
+                        .resizable()
+                        .foregroundColor(.cyan)
+                        .frame(width: 300, height: 260)
+                    //                    .blur(radius: 2)
+                    
+                        .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                        .opacity(0.70)
+                    
+                    VStack {
+                        
+                        Spacer ()
+                            .frame(height: 40)
+                        
+                        Text("Nervious,")
+                            .font(.system(size: 15))
+                        
+                            .foregroundColor(.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                        
+                        //                    Text("uncomfortable,")
+                        //                        .font(.system(size: 15))
+                        //                    
+                        //                        .foregroundColor(.white)
+                        //                        .fontWeight(.light)
+                        //                        .multilineTextAlignment(.center)
+                        
+                        Text("not exactly sure \nwhat to say?")
+                            .font(.system(size: 15))
+                        
+                            .foregroundColor(.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        Spacer ()
+                            .frame(height: 10)
+                        
+                        Text("You're NOT ALONE!")
+                            .font(.system(size: 15))
+                        
+                            .foregroundColor(.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        
+                        
+                        
+                        Spacer ()
+                            .frame(height: 25)
+                        
+                        
+                        Text("Join users around the ")
+                            .font(.system(size: 20))
+                        
+                            .foregroundColor(.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("world fixing it")
+                            .font(.system(size: 23))
+                        
+                            .foregroundColor(.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        
+                        
+                        Text("R I G H T  N O W!")
+                            .font(.system(size: 27))
+                            .foregroundColor(.green)
+                            .fontWeight(.regular)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        
+                        //                    VStack {
+                        
                         
                     }
                 }
@@ -203,5 +205,5 @@ struct BuggingPreload1: View {
         }
     }
     
-
+}
 
