@@ -280,7 +280,7 @@ struct SaySomethingNice5: View {
                             .frame(height: 15)
                         
                         
-                        Text("Yep! A 'simple' way to know your friends care about you")
+                        Text("Yep! A 'simple' way to know \nyour friends care about you")
                             .font(.system(size: 15))
                             .italic()
                             .foregroundColor(ColorManager.grey1)
