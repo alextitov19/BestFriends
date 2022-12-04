@@ -105,31 +105,31 @@ struct StartHere1: View {
                 
                 
                 
+//                
+//                NavigationLink(destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
+//                    StartHereCircle (color: ColorManager.grey1, friendName: "Coming \nSoon!")
+//                })
+//                .offset(x: showItems ? 80 : 0, y: showItems ? 250: 0)
+//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+//                
+//                
                 
-                NavigationLink(destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                    StartHereCircle (color: ColorManager.grey1, friendName: "Coming \nSoon!")
-                })
-                .offset(x: showItems ? 80 : 0, y: showItems ? 250: 0)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+                //
+                //                NavigationLink(destination: WhyFiveFriends(), label: {
+                //                    StartHereCircle (color: ColorManager.pmbc_blue, friendName: "Why \nonly 5 \nfriends?")
+                //                })
+                //                .offset(x: showItems ? -80 : 0, y: showItems ? -130: 0)
+                //                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+                //
                 
-                
-                
-                
-                NavigationLink(destination: WhyFiveFriends(), label: {
-                    StartHereCircle (color: ColorManager.pmbc_blue, friendName: "Why \nonly 5 \nfriends?")
-                })
-                .offset(x: showItems ? -80 : 0, y: showItems ? -130: 0)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-                
-                
-                
-                NavigationLink(destination: TeenBoysUsing(), label: {
-                    BuggingCircle (color: ColorManager.orange3, friendName: "Are \nteen boys \nusing app?")
-                })
-                .offset(x: showItems ? -70 : 0, y: showItems ? 210: 0)
-                
+                //
+                //                NavigationLink(destination: TeenBoysUsing(), label: {
+                //                    BuggingCircle (color: ColorManager.orange3, friendName: "Are \nteen boys \nusing app?")
+                //                })
+                //                .offset(x: showItems ? -70 : 0, y: showItems ? 210: 0)
+                //
                 ZStack {
-                    
+                    //
                     
                     NavigationLink(destination: ShaylaPage(user: user), label: {
                         BuggingCircle (color: ColorManager.purple3, friendName: "Envisioned \nby \nTeens")
@@ -144,12 +144,12 @@ struct StartHere1: View {
                     .offset(x: showItems ? 90 : 0, y: showItems ? -75: 0)
                     
                     
-//
-//                    NavigationLink(destination: EmptyView(), label: {
-//                        StartHereCircle (color: ColorManager.purple4, friendName: "")
-//                    })
-//                    .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
-//
+                    //
+                    //                    NavigationLink(destination: EmptyView(), label: {
+                    //                        StartHereCircle (color: ColorManager.purple4, friendName: "")
+                    //                    })
+                    //                    .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
+                    //
                     
                     
                     Image(systemName: "triangle.fill")
@@ -161,71 +161,70 @@ struct StartHere1: View {
                         .shadow(color: .purple, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
                     
+                    
+                    
+                    VStack {
                         
                         
-                        VStack {
-                         
-
-                            Spacer ()
-                                .frame(height: 130)
-
-                            Text("tap \nhere")
-                                .font(.system(size: 25))
-                                .italic()
-                                .foregroundColor(ColorManager .grey4)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-
-                            Spacer ()
-                                .frame(height: 130)
-                            
-                        }
+                        Spacer ()
+                            .frame(height: 130)
+                        
+                        Text("tap \nhere")
+                            .font(.system(size: 25))
+                            .italic()
+                            .foregroundColor(ColorManager .grey4)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                        Spacer ()
+                            .frame(height: 130)
+                        
                     }
-                    
-                    
-                    
-                    
-                    
-                    
-                    .onTapGesture {
-                        withAnimation {
-                            self.showItems.toggle()
-                        }
-                        print("tap function is working")
-                    }
-                    
-                    .animation(Animation.easeInOut(duration: 1.5), value: showItems)
-                    
                 }
-            }
-        }
-        
-        
-        struct StartHereCircle: View {
-            var color: Color
-            var friendName: String
-            
-            var body: some View {
                 
-                ZStack {
-                    
-                    Rectangle()
-                        .frame(width: 110, height: 110)
-                        .clipShape(Circle())
-                        .foregroundColor(color)
-                    
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-                        .opacity(0.7)
-                    
-                    
-                    Text(friendName)
-                        .fontWeight(.light)
-                        .italic()
-                        .foregroundColor(.black)
-                    
+                
+                
+                
+                
+                
+                .onTapGesture {
+                    withAnimation {
+                        self.showItems.toggle()
+                    }
+                    print("tap function is working")
                 }
+                
+                .animation(Animation.easeInOut(duration: 1.5), value: showItems)
+                
             }
         }
     }
     
-
+    
+    struct StartHereCircle: View {
+        var color: Color
+        var friendName: String
+        
+        var body: some View {
+            
+            ZStack {
+                
+                Rectangle()
+                    .frame(width: 110, height: 110)
+                    .clipShape(Circle())
+                    .foregroundColor(color)
+                
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+                    .opacity(0.7)
+                
+                
+                Text(friendName)
+                    .fontWeight(.light)
+                    .italic()
+                    .foregroundColor(.black)
+                
+            }
+        }
+    }
+    
+}

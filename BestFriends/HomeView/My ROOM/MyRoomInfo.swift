@@ -81,11 +81,11 @@ struct MyRoomInfo: View {
                 
 //                Mark: Below are commented out - send to empty view
 
-                NavigationLink(destination: ReceivedPlaylist(), label: {
-                    AtmosphereCircle (color: ColorManager.grey2, friendName: "Playlists \n(coming \nsoon)")
-                })
-                .offset(x: showItems ? -95 : 0, y: showItems ? 150: 0)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+//                NavigationLink(destination: ReceivedPlaylist(), label: {
+//                    AtmosphereCircle (color: ColorManager.grey2, friendName: "Playlists \n(coming \nsoon)")
+//                })
+//                .offset(x: showItems ? -95 : 0, y: showItems ? 150: 0)
+//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
 
                 
                 
@@ -96,14 +96,14 @@ struct MyRoomInfo: View {
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
                 
 
-                
-                
+
+
                 NavigationLink(destination: StoriesPreLoad(user: user, friends: friends), label: {
                     AtmosphereCircle (color: ColorManager.grey2, friendName: "MomentPOP \n(coming \nsoon)")
                 })
                 .offset(x: showItems ? 110 : 0, y: showItems ? 170: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-                
+
                 
 //
 //                NavigationLink(destination: PhotoPop1(user: user, friends: friends), label: {

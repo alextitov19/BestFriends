@@ -13,10 +13,8 @@ struct HomeView: View {
     
 //        let user: User
 //        let friends: [User]
-    //
-//        let user: User
 //        let atmosphere: Atmosphere
-    
+//
     @State private var homeData: HomeData?
     @State private var groups: [Group] = []
     @State private var planets: [Planet] = []
@@ -108,46 +106,7 @@ struct HomeView: View {
                 
                 
                 VStack {
-                    
-//                    NavigationLink(
-//                       destination: YouGotThis(user: user, friends: friends),
-//                       label: {
-//                           Text(". . .")
-//                               .fontWeight(.thin)
-//                               .frame(width: 250, height: 40)
-//                               .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                               .font(.system(size: 30))
-//                               .background(ColorManager.purple3)
-//                               .onTapGesture(perform: {
-//                               .cornerRadius(15)
-//                               .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                       })
-//
-//
-//
-//                    Image(systemName: "info.circle")
-//                        .resizable()
-//                        .frame(width: 27, height: 27)
-//                        .scaledToFill()
-//                        .foregroundColor(.white)
-//                        .onTapGesture(perform: {
-//                            sessionManager.infoView(user: user, group: group)
-//                        })
-                    
-//                    Image(systemName: "info.circle")
-//                        .resizable()
-//                        .frame(width: 30, height: 30)
-//                        .scaledToFill()
-//                        .foregroundColor(.white)
-//                        .multilineTextAlignment(.center)
-//                        .onTapGesture(perform: {
-//
-//                        })
-                   
-                    
-                    
-                    
-                    
+                      
                     Spacer()
                         .frame(height: 100)
                     
@@ -389,9 +348,9 @@ struct HomeView: View {
                             
                          
                             
-                            
-                            
-                            
+
+
+
                             NavigationLink(destination: DreamVaultView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                            label: {
                                 Text("Dream Story")
@@ -403,7 +362,7 @@ struct HomeView: View {
                                     .opacity(0.4)
                             })
                         }
-                       
+
                         
                         Spacer().frame(height:10)
 
