@@ -149,17 +149,7 @@ struct PlanetActionsView: View {
                                     .opacity(0.40)
                                 
                                 VStack {
-//                                    Text("Send")
-//                                        .foregroundColor(ColorManager .pmbc_blue)
-//                                        .font(.system(size: 17, weight: .bold))
-//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                        .opacity(0.50)
-//
-//                                    Text("Conforting")
-//                                        .foregroundColor(ColorManager .pmbc_blue)
-//                                        .font(.system(size: 17, weight: .bold))
-//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                        .opacity(0.50)
+
                                   
                                     Text("HUGS")
                                         .foregroundColor(.white)
@@ -303,18 +293,12 @@ struct PlanetActionsView: View {
                         //                                   label: {
                         //
                         
-                        NavigationLink(destination: SendSongPush(user: user, friends: friends),
+                        NavigationLink(destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
                             
                             ZStack {
                                 Circle()
-                                //                                    .frame(width: 110, height: 110)
-                                //                                    .foregroundColor(ColorManager.purple3)
-                                //                                    .foregroundColor(.pink)
-                                //                                    .shadow(color: .white, radius: 10, x: 0, y: 0)
-                                //                                    .glow(color: ColorManager.purple4, radius: 3)
-                                //                                    .opacity(0.50)
-                                
+                             
                                     .frame(width: 110, height: 110)
                                     .foregroundColor(ColorManager.purple3)
                                     .shadow(color: .black, radius: 2, x: 0, y: 2)
@@ -322,36 +306,25 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
                                     
-                                    Text("Found")
+                                    Text("My")
                                         .foregroundColor(ColorManager .pmbc_blue)
                                         .font(.system(size: 17, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
-                                    Text("NEW")
+                                    Text("Room")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
-                                    
-                                    Text("MUSIC")
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 20, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.50)
+//                                    
+//                                    Text("MUSIC")
+//                                        .foregroundColor(.white)
+//                                        .font(.system(size: 20, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.50)
                                   
-                                    
-                                    //                                    Text("Making")
-                                    //                                        .foregroundColor(.white)
-                                    //                                        .font(.system(size: 25, weight: .bold))
-                                    //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    //                                        .opacity(0.50)
-                                    //
-                                    //                                    Text("Amends")
-                                    //                                        .foregroundColor(.white)
-                                    //                                        .font(.system(size: 25, weight: .bold))
-                                    //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    //                                        .opacity(0.50)
+                           
                                     
                                 }
                             }

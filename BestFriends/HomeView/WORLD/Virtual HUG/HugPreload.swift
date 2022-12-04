@@ -48,7 +48,7 @@ struct HugPreload: View {
 
 
                 NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends), label: {
-                HugCircle (color: ColorManager.red, friendName: "UPDATE \nmy Vibe")
+                HugCircle (color: ColorManager.red, friendName: "UPDATE \nmy 'Vibe'")
             })
                 .offset(x: showItems ? -30 : 0, y: showItems ? -170: 0)
            
