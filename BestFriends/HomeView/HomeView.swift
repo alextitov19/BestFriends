@@ -106,14 +106,18 @@ struct HomeView: View {
                 
                 
                 VStack {
-                      
-                    Spacer()
-                        .frame(height: 100)
-                    
+            
+//                    
+//                    Spacer()
+//                        .frame(height: 50)
+//                    
                     // Top 2 planets
+                   
+                       
                     
                     
                     HStack {
+                        
                         if planets.count > 0 && !focusPlanet {
                             planets[0]
                                 .onTapGesture(perform: { friendPlanetTapped(id: planets[0].user.id)

@@ -104,7 +104,7 @@ struct StartHere1: View {
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
                 
                 
-//                
+//
 //
 //                NavigationLink(destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
 //                    StartHereCircle (color: ColorManager.grey1, friendName: "My \nRoom")
@@ -169,8 +169,36 @@ struct StartHere1: View {
                         Spacer ()
                             .frame(height: 130)
                         
-                        Text("tap \nhere")
-                            .font(.system(size: 25))
+                        Text("'settings'")
+                            .font(.system(size: 20))
+                            .italic()
+                            .foregroundColor(ColorManager .grey4)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("'about us'")
+                            .font(.system(size: 20))
+                            .italic()
+                            .foregroundColor(ColorManager .grey4)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("'add friends'")
+                            .font(.system(size: 20))
+                            .italic()
+                            .foregroundColor(ColorManager .grey4)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("'walk-through'")
+                            .font(.system(size: 20))
+                            .italic()
+                            .foregroundColor(ColorManager .grey4)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("'get cool stickers'")
+                            .font(.system(size: 20))
                             .italic()
                             .foregroundColor(ColorManager .grey4)
                             .fontWeight(.thin)

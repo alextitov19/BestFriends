@@ -83,16 +83,24 @@ struct PlanetActionsView: View {
         
         VStack {
             
-            //            HStack {
-            //                Image(systemName: ". . .")
-            //                    .resizable()
-            //                    .frame(width: 27, height: 27)
-            //                    .scaledToFill()
-            //                    .foregroundColor(.white)
-            //                    .onTapGesture(perform: {
-            //                        sessionManager.infoView(user: user, groups: groups)
-            //                    })
+            NavigationLink(
+                destination: StartHere1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                label: {
+                    Text(":)")
+                        .fontWeight(.light)
+                        .frame(width: 50, height: 20)
+//                        .foregroundColor(ColorManager.grey1)
+                        .foregroundColor(.white)
+                        .font(.system(size: 20))
+                        .background(ColorManager.grey4)
+                      .cornerRadius(15)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                })
             
+
+                
+                
+                
             HStack {
                 
                 
@@ -165,10 +173,11 @@ struct PlanetActionsView: View {
                         )}
                     
                     VStack {
-                        
-                        
-                        NavigationLink(destination: StartHere1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        NavigationLink(destination: EmptyView(),
                                        label: {
+                        
+//                        NavigationLink(destination: StartHere1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                                       label: {
                             
                             ZStack {
                                 Circle()
@@ -185,21 +194,22 @@ struct PlanetActionsView: View {
                                 VStack {
                                     
                                     
-                                    Text("Add Friends")
+                                    Text("FriendGroup")
                                         .foregroundColor(.white)
                                         .font(.system(size: 15, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
-                                    Text("Settings")
+                                    Text("GalleryPOP")
                                         .foregroundColor(.white)
                                         .font(.system(size: 15, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
-                                    Text("& more")
+                                    Text("comming 2023")
                                         .foregroundColor(.white)
-                                        .font(.system(size: 15, weight: .bold))
+                                        .italic()
+                                        .font(.system(size: 13, weight: .light))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
 
