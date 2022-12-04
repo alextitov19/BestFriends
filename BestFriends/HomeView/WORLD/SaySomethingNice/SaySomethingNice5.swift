@@ -72,14 +72,9 @@ struct SaySomethingNice5: View {
                 .font(.system(size: 20))
                 .foregroundColor(ColorManager.grey1)
                 
-                Spacer()
-                    .frame(height: 15)
+//                Spacer()
+//                    .frame(height: 7)
 
-//
-//                Text("Say Something")
-//                    .font(.system(size: 25))
-//                    .fontWeight(.medium)
-//                    .foregroundColor(Color.white)
                 
             Text("'NICE'")
                 .font(.system(size: 25))
@@ -87,7 +82,7 @@ struct SaySomethingNice5: View {
                 .foregroundColor(Color.white)
                
                 Spacer()
-                    .frame(height: 10)
+                    .frame(height: 20)
             
                 Text("Right NOW!")
                     .font(.system(size: 22))
@@ -98,7 +93,7 @@ struct SaySomethingNice5: View {
                 
                 
                 Spacer()
-                    .frame(height: 35)
+                    .frame(height: 5)
                 
       
                 
@@ -286,18 +281,18 @@ struct SaySomethingNice5: View {
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("A 'simple' way to know")
+                        Text("A 'simple' way to let your")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(ColorManager.purple2)
                         
-                        Text("your friends care about you")
+                        Text("friends know you care about them")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(ColorManager.purple2)
                        
                         Text("& vise-versa!")
-                            .font(.system(size: 23))
+                            .font(.system(size: 25))
                             .italic()
                             .foregroundColor(ColorManager.purple2)
                         
