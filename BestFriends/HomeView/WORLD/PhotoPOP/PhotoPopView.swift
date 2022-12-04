@@ -76,6 +76,19 @@ struct PhotoPopView: View {
                    })
              
                 
+                Button(action: {
+                    showingRecipients = true
+                }, label: {
+                    Text("+")
+                        .fontWeight(.regular)
+                        .frame(width: 40, height: 30)
+                        .foregroundColor(.white)
+                        .font(.system(size: 30))
+                        .background(ColorManager.purple3)
+                        .cornerRadius(15)
+                })
+                
+                
                 if isLoading {
                     ProgressView()
                         .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
@@ -93,19 +106,19 @@ struct PhotoPopView: View {
                 
                 Spacer()
                 
-                
-                Button(action: {
-                    showingRecipients = true
-                }, label: {
-                    Text("+")
-                        .fontWeight(.regular)
-                        .frame(width: 40, height: 30)
-                        .foregroundColor(.white)
-                        .font(.system(size: 30))
-                        .background(ColorManager.purple3)
-                        .cornerRadius(15)
-                })
-//           
+//                
+//                Button(action: {
+//                    showingRecipients = true
+//                }, label: {
+//                    Text("+")
+//                        .fontWeight(.regular)
+//                        .frame(width: 40, height: 30)
+//                        .foregroundColor(.white)
+//                        .font(.system(size: 30))
+//                        .background(ColorManager.purple3)
+//                        .cornerRadius(15)
+//                })
+////
 //                Button(action: {
 //                    sessionManager.reloadHome()
 //                }, label: {
