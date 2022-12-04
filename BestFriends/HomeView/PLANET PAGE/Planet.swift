@@ -86,7 +86,7 @@ struct PlanetActionsView: View {
             NavigationLink(
                 destination: StartHere1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                 label: {
-                    Text(":)")
+                    Text(":::")
                         .fontWeight(.light)
                         .frame(width: 50, height: 20)
 //                        .foregroundColor(ColorManager.grey1)
