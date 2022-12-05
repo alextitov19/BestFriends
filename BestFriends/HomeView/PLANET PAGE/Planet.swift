@@ -175,12 +175,12 @@ struct PlanetActionsView: View {
                                     .opacity(0.40)
                                 VStack {
                                     
-                                    
-                                    Text("Found")
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 17, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.50)
+//
+//                                    Text("Found")
+//                                        .foregroundColor(.white)
+//                                        .font(.system(size: 17, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.50)
                                     
                                     Text("New")
                                         .foregroundColor(.white)
@@ -248,7 +248,7 @@ struct PlanetActionsView: View {
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.90)
                                    
-                                    Text("8:00-8:05pm EST")
+                                    Text("8:00-8:10pm EST")
                                         .foregroundColor(.black)
                                         .italic()
                                         .font(.system(size: 13, weight: .light))
@@ -321,17 +321,17 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
                                     
-                                    Text("Say")
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 17, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.50)
-                                   
-                                    Text("Something")
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 17, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.50)
+//                                    Text("Say")
+//                                        .foregroundColor(.white)
+//                                        .font(.system(size: 17, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.50)
+//
+//                                    Text("Something")
+//                                        .foregroundColor(.white)
+//                                        .font(.system(size: 17, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.50)
                                    
                                     Text("NICE")
                                         .foregroundColor(.white)
@@ -369,12 +369,12 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
                                     
-                                    
-                                    Text("Friend")
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 17, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.50)
+//
+//                                    Text("Friend")
+//                                        .foregroundColor(.white)
+//                                        .font(.system(size: 17, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.50)
                                    
                                     Text("Drama?")
                                         .foregroundColor(.white)
