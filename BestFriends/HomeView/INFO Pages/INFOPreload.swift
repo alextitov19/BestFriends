@@ -44,7 +44,7 @@ struct INFOPreload: View {
                     Spacer ()
                         .frame(height: 40)
 
-                    Text("Taking comfort knowing your ")
+                    Text("Taking comfort, knowing your ")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.thin)
@@ -131,7 +131,7 @@ struct INFOPreload: View {
 //                            .foregroundColor(ColorManager.purple2)
 //
                         
-                        Text("all of us at the same time, \ntogether")
+                        Text("All of us at the same time, \ntogether")
                             .font(.system(size: 23))
                            
                             .fontWeight(.light)
@@ -172,7 +172,7 @@ struct INFOPreload: View {
                                 
                             })
                         
-                        Text("in a safe, positive space")
+                        Text("All in a safe, positive space")
                             .font(.system(size: 20))
                             .foregroundColor(.white)
                             .fontWeight(.thin)
