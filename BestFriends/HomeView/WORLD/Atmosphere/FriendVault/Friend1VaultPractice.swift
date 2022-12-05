@@ -63,7 +63,7 @@ struct Friend1VaultPractice: View {
                     .fontWeight(.thin)
                     .foregroundColor(.white)
                 
-                Text("their 'Vige' just changed")
+                Text("their 'Vibe' just changed")
                     .font(.system(size: 20))
                     .fontWeight(.thin)
                     .foregroundColor(.white)

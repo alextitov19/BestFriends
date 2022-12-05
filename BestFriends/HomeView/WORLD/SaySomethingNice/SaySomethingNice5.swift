@@ -28,6 +28,13 @@ struct SaySomethingNice5: View {
     @State private var shareColor = ColorManager.purple5
     @State private var showingAlert = false
     
+    
+    @State private var customMessage = ""
+//    @State private var colorChangeTap: String = ""
+    @State private var hugTapped = false
+    @State private var mostRecentMoodLog: MoodLog?
+    @State private var noteTapped = false
+    
 
     @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
 
@@ -116,9 +123,22 @@ struct SaySomethingNice5: View {
                         
                         
                     }
-                    
-                
-                        
+//                    
+//                
+//                    Button(action: {
+//                        sendMessage()
+//                    }, label: {
+//                        Text("Send to Chat")
+//                            .fontWeight(.thin)
+//                            .frame(width: 150, height: 30)
+//                            .foregroundColor(.white)
+//                            .font(.system(size: 25))
+//                        //                                .opacity(0.5)
+//                            .background(ColorManager.purple3)
+//                            .opacity(0.7)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                    })
                  
                     
                     Spacer()
