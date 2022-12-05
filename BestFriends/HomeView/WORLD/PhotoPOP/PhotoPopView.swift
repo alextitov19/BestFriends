@@ -58,10 +58,10 @@ struct PhotoPopView: View {
 //                    .italic()
 //                    .foregroundColor(.white)
                 
-                Text("SHAKE iPhone to see images")
-                    .font(.system(size: 24, weight: .light))
+                Text("'Shake' iPhone to see posted images")
+                    .font(.system(size: 18, weight: .light))
                     .foregroundColor(.green)
-//                    
+//
 //                NavigationLink(
 //                   destination: PhotoPop3(user: user, friends: friends),
 //                   label: {
@@ -74,7 +74,7 @@ struct PhotoPopView: View {
 //                           .cornerRadius(15)
 //                           .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 //                   })
-//             
+//
                 
                 Button(action: {
                     showingRecipients = true
@@ -296,10 +296,7 @@ struct PhotoPopView: View {
             }
         })
         
-        
-        
-//        Spacer ()
-//               .frame(height: 100)
+ 
         
         
     }
