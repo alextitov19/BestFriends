@@ -240,6 +240,7 @@
 		CFD12CD1281A754200AB2539 /* Step1_NotReadyTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CD0281A754200AB2539 /* Step1_NotReadyTalk.swift */; };
 		CFD12CD3281A821C00AB2539 /* FightWithFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CD2281A821C00AB2539 /* FightWithFriend.swift */; };
 		CFD6C051293E802500D57E0B /* SomethingNice1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6C050293E802500D57E0B /* SomethingNice1.swift */; };
+		CFD6C053293EA66500D57E0B /* NewMusic.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFD6C052293EA66500D57E0B /* NewMusic.mp4 */; };
 		CFD8BD082912B0EB00F86EFB /* AtmosphereInfo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD072912B0EB00F86EFB /* AtmosphereInfo2.swift */; };
 		CFD8BD0A29132AE700F86EFB /* AtmosphereInfo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */; };
 		CFD8BD0E2915565B00F86EFB /* MyRoomInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD0D2915565B00F86EFB /* MyRoomInfo.swift */; };
@@ -498,6 +499,7 @@
 		CFD12CD0281A754200AB2539 /* Step1_NotReadyTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1_NotReadyTalk.swift; sourceTree = "<group>"; };
 		CFD12CD2281A821C00AB2539 /* FightWithFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightWithFriend.swift; sourceTree = "<group>"; };
 		CFD6C050293E802500D57E0B /* SomethingNice1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingNice1.swift; sourceTree = "<group>"; };
+		CFD6C052293EA66500D57E0B /* NewMusic.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = NewMusic.mp4; sourceTree = "<group>"; };
 		CFD8BD072912B0EB00F86EFB /* AtmosphereInfo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereInfo2.swift; sourceTree = "<group>"; };
 		CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereInfo1.swift; sourceTree = "<group>"; };
 		CFD8BD0D2915565B00F86EFB /* MyRoomInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomInfo.swift; sourceTree = "<group>"; };
@@ -1047,6 +1049,7 @@
 				CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */,
 				CF47CF1328E81BBE008B6F11 /* Wind2.mp4 */,
 				CFD8BD0F2915581500F86EFB /* myRoom1.mp4 */,
+				CFD6C052293EA66500D57E0B /* NewMusic.mp4 */,
 				CF3DB38A28DADD3E00BF9CCD /* New Group */,
 				CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */,
 				CF3DB37128DA6D7D00BF9CCD /* Nadiah2.m4a */,
@@ -1482,6 +1485,7 @@
 				CF4A08EE2879577E00ADA9DD /* sky2.mp4 in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,
 				CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */,
+				CFD6C053293EA66500D57E0B /* NewMusic.mp4 in Resources */,
 				7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */,
 				7A78232E26B2419600CA76FC /* background_5.mp4 in Resources */,
 				CF2DBCF128552527008616A3 /* storm2.mp4 in Resources */,

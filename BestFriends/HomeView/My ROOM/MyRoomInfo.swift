@@ -84,7 +84,11 @@ struct MyRoomInfo: View {
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
                     
                     
-                    
+                    NavigationLink(destination: EmptyView(), label: {
+                        MyRoomCircle (color: ColorManager.grey2, friendName: "FriendGroup \nGallery \ncomming \n2023")
+                    })
+                    .offset(x: showItems ? -75 : 0, y: showItems ? 160: 0)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
                     
                     
                     
@@ -146,7 +150,7 @@ struct MyRoomInfo: View {
             ZStack {
                 
                 Rectangle()
-                    .frame(width: 110, height: 110)
+                    .frame(width: 120, height: 120)
                     .clipShape(Circle())
                     .foregroundColor(color)
                     .opacity(0.7)
