@@ -102,52 +102,52 @@ struct SaySomethingNice5: View {
                 Spacer()
                     .frame(height: 5)
                 
-      
+                
+                                        Button(action: {
+                                            sessionManager.showLogin()
+                                        },
+                                            label: {
+                                                Text("In Chat")
+                                                    .fontWeight(.thin)
+                                                    .frame(width: 150, height: 30)
+                                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                    .font(.system(size: 25))
+                                                    .background(ColorManager.purple3)
+                                                    .cornerRadius(15)
+                                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                            })
+                     
                 
                 VStack {
                   
                     
-                    
-                    ZStack {
-                        Rectangle()
-                            .frame(width:310, height: 50)
-                            .cornerRadius(15)
-                            .foregroundColor(ColorManager .grey3)
-                            .opacity(0.9)
-                        
-                        TextField("Say Something 'NICE' here...", text: $summary)
-                            .font(.system(size: 20))
-                            .foregroundColor(.white)
-                            .padding(.horizontal, 80)
-                            .onReceive(Just(summary)) { _ in limitText(100) }
-                        
-                        
-                    }
-//                    
-//                
-//                    Button(action: {
-//                        sendMessage()
-//                    }, label: {
-//                        Text("Send to Chat")
-//                            .fontWeight(.thin)
-//                            .frame(width: 150, height: 30)
-//                            .foregroundColor(.white)
-//                            .font(.system(size: 25))
-//                        //                                .opacity(0.5)
-//                            .background(ColorManager.purple3)
-//                            .opacity(0.7)
+//
+//                    ZStack {
+//                        Rectangle()
+//                            .frame(width:310, height: 50)
 //                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                    })
-                 
-                    
+//                            .foregroundColor(ColorManager .grey3)
+//                            .opacity(0.9)
+//
+//                        TextField("Say Something 'NICE' here...", text: $summary)
+//                            .font(.system(size: 20))
+//                            .foregroundColor(.white)
+//                            .padding(.horizontal, 80)
+//                            .onReceive(Just(summary)) { _ in limitText(100) }
+//
                     Spacer()
-                        .frame(height: 25)
+                        .frame(height: 60)
+                    
+                    
+                    Text("Alert friend via Push Notification")
+                        .font(.system(size: 20))
+                        .foregroundColor(ColorManager.grey1)
+                
 
                     VStack {
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 10)
                         
                         
                         HStack {
@@ -275,22 +275,8 @@ struct SaySomethingNice5: View {
                  
                     VStack {
                         Spacer()
-                            .frame(height: 35)
-//
-//                        Button(action: {
-//                            sessionManager.showLogin()
-//                        },
-//                            label: {
-//                                Text("Home")
-//                                    .fontWeight(.thin)
-//                                    .frame(width: 100, height: 30)
-//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                    .font(.system(size: 25))
-//                                    .background(ColorManager.purple3)
-//                                    .cornerRadius(15)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                            })
-                        
+                            .frame(height: 55)
+                   
                     
                         
                         Text("Yep! ")
@@ -334,7 +320,7 @@ struct SaySomethingNice5: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends - World FriendGroups", body: "\(user.firstName) said something Nice", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends - World FriendGroups", body: "\(user.firstName) said something 'Nice' in Chat", APNToken: f.APNToken)
                 }
             }
         }
