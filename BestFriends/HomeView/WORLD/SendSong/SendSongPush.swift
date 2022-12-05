@@ -34,7 +34,7 @@ struct SendSongPush: View {
                 .scaledToFill()
           
            
-            AdPlayerView(name: "NewMusic")
+            AdPlayerView(name: "Wind2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
