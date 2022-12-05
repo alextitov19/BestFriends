@@ -44,14 +44,14 @@ struct INFOPreload: View {
                     Spacer ()
                         .frame(height: 40)
 
-                    Text("Reassurance your friends care about you")
+                    Text("Taking comfort knowing your ")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                     
-                    Text("in a safe, positive space")
+                    Text("friends care about you")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.thin)
@@ -171,6 +171,14 @@ struct INFOPreload: View {
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 
                             })
+                        
+                        Text("in a safe, positive space")
+                            .font(.system(size: 20))
+                            .foregroundColor(.white)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        
                         
                         Spacer()
                             .frame(height: 75)
