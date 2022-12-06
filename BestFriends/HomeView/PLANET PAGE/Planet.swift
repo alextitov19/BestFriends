@@ -160,13 +160,19 @@ struct PlanetActionsView: View {
                         }
                         )}
                     
+                    
+                    
+//                    ************************************************
+                    
+//                    SendSongPush(user: user, friends: friends),
+                    
+//                   AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends),
+                    
                     VStack {
-                        NavigationLink(destination: SendSongPush(user: user, friends: friends),
-                                       label: {
                         
-//                        NavigationLink(destination: StartHere1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-//                                       label: {
-                            
+                        
+                        NavigationLink(destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends),
+                                       label: {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
@@ -174,21 +180,21 @@ struct PlanetActionsView: View {
                                     .shadow(color: .black, radius: 2, x: 0, y: 2)
                                     .opacity(0.40)
                                 VStack {
-                                    
+
 //
-//                                    Text("Found")
+//                                    Text("set")
 //                                        .foregroundColor(.white)
-//                                        .font(.system(size: 17, weight: .bold))
+//                                        .font(.system(size: 20, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.50)
+//
+//                                    Text("my")
+//                                        .foregroundColor(.white)
+//                                        .font(.system(size: 20, weight: .bold))
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //                                        .opacity(0.50)
                                     
-                                    Text("new")
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 20, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.50)
-                                    
-                                    Text("Music")
+                                    Text("VIBE")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -199,7 +205,9 @@ struct PlanetActionsView: View {
                             
                         })
                         
-                        //                }
+                    
+                        
+                        
                         
                         
                         Spacer()
@@ -222,12 +230,7 @@ struct PlanetActionsView: View {
                                     .opacity(0.5)
                                 
                                 VStack {
-                                    
-                                    //                                    Text("Sunday's 8pm")
-                                    //                                        .foregroundColor(.purple)
-                                    //                                        .font(.system(size: 15, weight: .bold))
-                                    //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    //                                        .opacity(0.50)
+                                
                                     
                                     Text("World")
                                         .foregroundColor(.white)
@@ -264,11 +267,7 @@ struct PlanetActionsView: View {
                         Spacer()
                             .frame(height: 15)
                         
-                        
-                        
-                        //                      NavigationLink(destination: Subscriptions(),
-                        //                                   label: {
-                        //
+                   
                         
                         NavigationLink(destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
@@ -283,11 +282,11 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
                                     
-                                    Text("my")
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 20, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.50)
+//                                    Text("my")
+//                                        .foregroundColor(.white)
+//                                        .font(.system(size: 20, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.50)
                                     
                                     Text("Room")
                                         .foregroundColor(.white)

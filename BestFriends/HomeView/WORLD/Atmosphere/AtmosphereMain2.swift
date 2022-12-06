@@ -93,7 +93,7 @@ struct AtmosphereMain2: View {
 //                    .italic()
 //                    .foregroundColor(ColorManager.grey4)
                 
-                    Text("Update your 'Vibe'")
+                    Text("Set my 'Vibe'")
                         .font(.system(size: 35))
                         .fontWeight(.medium)
                         .foregroundColor(ColorManager .grey1)
