@@ -120,7 +120,7 @@ struct PlanetActionsView: View {
                                 VStack {
 
                                     
-                                    Text("PhotoPOP")
+                                    Text("photoPOP")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -147,7 +147,7 @@ struct PlanetActionsView: View {
                                 VStack {
 
                                   
-                                    Text("HUGS")
+                                    Text("hugs")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -194,7 +194,7 @@ struct PlanetActionsView: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //                                        .opacity(0.50)
                                     
-                                    Text("VIBE")
+                                    Text("vibe")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -288,7 +288,7 @@ struct PlanetActionsView: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //                                        .opacity(0.50)
                                     
-                                    Text("Room")
+                                    Text("room")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -332,7 +332,7 @@ struct PlanetActionsView: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //                                        .opacity(0.50)
                                    
-                                    Text("NICE")
+                                    Text("nice")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -375,7 +375,7 @@ struct PlanetActionsView: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //                                        .opacity(0.50)
                                    
-                                    Text("Drama?")
+                                    Text("drama?")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
