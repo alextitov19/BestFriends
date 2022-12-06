@@ -81,7 +81,7 @@ struct PhotoPopView: View {
                 }, label: {
                     Text("+")
                         .fontWeight(.regular)
-                        .frame(width: 40, height: 30)
+                        .frame(width: 30, height: 30)
                         .foregroundColor(.white)
                         .font(.system(size: 30))
                         .background(ColorManager.purple3)
