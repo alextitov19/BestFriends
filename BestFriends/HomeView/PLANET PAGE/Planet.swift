@@ -231,6 +231,13 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
                                 
+                                    Text("join")
+                                        .foregroundColor(.black)
+                                        .italic()
+                                        .font(.system(size: 15, weight: .light))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.90)
+                                    
                                     
                                     Text("World")
                                         .foregroundColor(.white)
