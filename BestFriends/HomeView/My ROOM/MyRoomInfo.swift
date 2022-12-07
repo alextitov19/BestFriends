@@ -48,7 +48,7 @@ struct MyRoomInfo: View {
             
             
             
-            AdPlayerView(name: "myRoom1")
+            AdPlayerView(name: "MyRoom5")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
@@ -64,7 +64,7 @@ struct MyRoomInfo: View {
                 
                 NavigationLink(destination:   SendSongPush(user: user, friends: friends),
                                label: {
-                    MyRoomCircle (color: .cyan, friendName: "found \nnew \nMusic")
+                    MyRoomCircle (color: ColorManager .purple1, friendName: "found \nnew \nMusic")
                 })
                 .offset(x: showItems ? -35 : 0, y: showItems ? -260: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
@@ -73,7 +73,7 @@ struct MyRoomInfo: View {
                 
                 
                 NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                    MyRoomCircle (color: ColorManager.purple3, friendName: "saved \n'Nice' \nmessages")
+                    MyRoomCircle (color: ColorManager.purple2, friendName: "saved \n'Nice' \nmessages")
                 })
                 .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
@@ -83,14 +83,14 @@ struct MyRoomInfo: View {
                 ZStack {
                     
                     NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
-                        MyRoomCircle (color: ColorManager.grey2, friendName: "DreamVault \ncomming \n2023")
+                        MyRoomCircle (color: ColorManager.grey1, friendName: "DreamVault \ncomming \n2023")
                     })
                     .offset(x: showItems ? 75 : 0, y: showItems ? 140: 0)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
                     
                     
                     NavigationLink(destination: EmptyView(), label: {
-                        MyRoomCircle (color: ColorManager.grey2, friendName: "FriendGroup \nGallery \ncomming \n2023")
+                        MyRoomCircle (color: ColorManager.grey1, friendName: "Group \nGallery \ncomming \n2023")
                     })
                     .offset(x: showItems ? -75 : 0, y: showItems ? 160: 0)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
@@ -100,11 +100,11 @@ struct MyRoomInfo: View {
                     
                     Image(systemName: "triangle.fill")
                         .resizable()
-                        .foregroundColor(ColorManager .orange3)
+                        .foregroundColor(ColorManager .grey2)
                         .frame(width: 220, height: 180)
                     //                    .blur(radius: 2)
                     
-                        .shadow(color: .orange, radius: 65, x: 30, y: 50)
+                        .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
                     
                     
@@ -155,7 +155,7 @@ struct MyRoomInfo: View {
             ZStack {
                 
                 Rectangle()
-                    .frame(width: 120, height: 120)
+                    .frame(width: 110, height: 110)
                     .clipShape(Circle())
                     .foregroundColor(color)
                     .opacity(0.7)

@@ -242,6 +242,7 @@
 		CFD6C051293E802500D57E0B /* SomethingNice1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6C050293E802500D57E0B /* SomethingNice1.swift */; };
 		CFD6C055293EA9E600D57E0B /* HugPushNotification2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6C054293EA9E600D57E0B /* HugPushNotification2.swift */; };
 		CFD6C0572940532F00D57E0B /* SaySomethingNice8.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6C0562940532F00D57E0B /* SaySomethingNice8.swift */; };
+		CFD6C05929405EB100D57E0B /* MyRoom5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFD6C05829405EB100D57E0B /* MyRoom5.mp4 */; };
 		CFD8BD082912B0EB00F86EFB /* AtmosphereInfo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD072912B0EB00F86EFB /* AtmosphereInfo2.swift */; };
 		CFD8BD0A29132AE700F86EFB /* AtmosphereInfo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */; };
 		CFD8BD0E2915565B00F86EFB /* MyRoomInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD0D2915565B00F86EFB /* MyRoomInfo.swift */; };
@@ -502,6 +503,7 @@
 		CFD6C050293E802500D57E0B /* SomethingNice1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingNice1.swift; sourceTree = "<group>"; };
 		CFD6C054293EA9E600D57E0B /* HugPushNotification2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugPushNotification2.swift; sourceTree = "<group>"; };
 		CFD6C0562940532F00D57E0B /* SaySomethingNice8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingNice8.swift; sourceTree = "<group>"; };
+		CFD6C05829405EB100D57E0B /* MyRoom5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyRoom5.mp4; sourceTree = "<group>"; };
 		CFD8BD072912B0EB00F86EFB /* AtmosphereInfo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereInfo2.swift; sourceTree = "<group>"; };
 		CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereInfo1.swift; sourceTree = "<group>"; };
 		CFD8BD0D2915565B00F86EFB /* MyRoomInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomInfo.swift; sourceTree = "<group>"; };
@@ -1051,6 +1053,7 @@
 				CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */,
 				CF47CF1328E81BBE008B6F11 /* Wind2.mp4 */,
 				CFD8BD0F2915581500F86EFB /* myRoom1.mp4 */,
+				CFD6C05829405EB100D57E0B /* MyRoom5.mp4 */,
 				CF3DB38A28DADD3E00BF9CCD /* New Group */,
 				CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */,
 				CF3DB37128DA6D7D00BF9CCD /* Nadiah2.m4a */,
@@ -1502,6 +1505,7 @@
 				7A383FFD267AC306002F354A /* background_4.mp4 in Resources */,
 				CF3DB37228DA6D7D00BF9CCD /* Nadiah2.m4a in Resources */,
 				CF65042B28A185750092EEB9 /* PaperAirplanes.mp4 in Resources */,
+				CFD6C05929405EB100D57E0B /* MyRoom5.mp4 in Resources */,
 				CF3DB37628DA85BA00BF9CCD /* Meena1.m4a in Resources */,
 				CFD0ABDC285C4E040032CA3D /* BuiltByTeens3.mp4 in Resources */,
 				7ACDB183282825C1009E1CFD /* GoogleService-Info.plist in Resources */,
