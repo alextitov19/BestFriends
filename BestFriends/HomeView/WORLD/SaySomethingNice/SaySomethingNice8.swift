@@ -119,7 +119,7 @@ struct SaySomethingNice8: View {
                                     .foregroundColor(ColorManager .grey3)
                                     .opacity(0.95)
                                 
-                                TextField("Say it here ...", text: $summary)
+                                TextField("Say something 'Nice' here ...", text: $summary)
                                     .font(.system(size: 20))
                                     .foregroundColor(ColorManager.orange3)
                                     .padding(.horizontal, 37)
