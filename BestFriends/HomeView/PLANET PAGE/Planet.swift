@@ -119,12 +119,17 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
 
-                                    
-                                    Text("photoPOP")
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 20, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.50)
+                                    Image("phoneicon100")
+//                                        .frame(width: 10, height: 10)
+//                                       .resizable()
+//                                       .ignoresSafeArea()
+//                                        .scaledToFill()
+//
+//                                    Text("photoPOP")
+//                                        .foregroundColor(.white)
+//                                        .font(.system(size: 20, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.50)
                         
                                     
                                 }
@@ -145,13 +150,13 @@ struct PlanetActionsView: View {
                                     .opacity(0.40)
                                 
                                 VStack {
-
+                                    Image("iconHug80")
                                   
-                                    Text("hugs")
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 20, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.50)
+//                                    Text("hugs")
+//                                        .foregroundColor(.white)
+//                                        .font(.system(size: 20, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.50)
                                     
                                 }
                             }
@@ -181,7 +186,7 @@ struct PlanetActionsView: View {
                                     .opacity(0.40)
                                 VStack {
 
-//
+                                    Image("iconVibes80")
 //                                    Text("set")
 //                                        .foregroundColor(.white)
 //                                        .font(.system(size: 20, weight: .bold))
@@ -194,11 +199,11 @@ struct PlanetActionsView: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //                                        .opacity(0.50)
                                     
-                                    Text("my vibe")
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 20, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.50)
+//                                    Text("my vibe")
+//                                        .foregroundColor(.white)
+//                                        .font(.system(size: 20, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.50)
 
                                 }
                             }
@@ -289,17 +294,20 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
                                     
+                                    
+                                    Image("iconLock80")
+                                    
 //                                    Text("my")
 //                                        .foregroundColor(.white)
 //                                        .font(.system(size: 20, weight: .bold))
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //                                        .opacity(0.50)
                                     
-                                    Text("my room")
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 20, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.50)
+//                                    Text("my room")
+//                                        .foregroundColor(.white)
+//                                        .font(.system(size: 20, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.50)
 //
 //                                    Text("MUSIC")
 //                                        .foregroundColor(.white)
@@ -326,6 +334,8 @@ struct PlanetActionsView: View {
                                     .opacity(0.40)
                                 
                                 VStack {
+                                    Image("iconNice75")
+//
                                     
 //                                    Text("Say")
 //                                        .foregroundColor(.white)
@@ -338,12 +348,12 @@ struct PlanetActionsView: View {
 //                                        .font(.system(size: 17, weight: .bold))
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //                                        .opacity(0.50)
-                                   
-                                    Text("nice")
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 20, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.50)
+                                  
+//                                    Text("nice")
+//                                        .foregroundColor(.white)
+//                                        .font(.system(size: 20, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.50)
                                     
                                 }
                             }
@@ -375,19 +385,21 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
                                     
-//
+                                        Image("iconFight80")
+                                    
+                                    
 //                                    Text("Friend")
 //                                        .foregroundColor(.white)
 //                                        .font(.system(size: 17, weight: .bold))
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //                                        .opacity(0.50)
                                    
-                                    Text("drama")
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 20, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.50)
-//
+//                                    Text("drama")
+//                                        .foregroundColor(.white)
+//                                        .font(.system(size: 20, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.50)
+////
 //                                    Text("Me")
 //
 //                                        .foregroundColor(ColorManager .pmbc_blue)
