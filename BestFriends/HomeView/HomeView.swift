@@ -109,18 +109,10 @@ struct HomeView: View {
             
                     VStack {
                         
-                   
-                                Text(":::")
-                                    .fontWeight(.light)
-                                    .frame(width: 50, height: 20)
-            //                        .foregroundColor(ColorManager.grey1)
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 20))
-                                    .background(ColorManager.grey4)
-                                  .cornerRadius(15)
-                    
-                        Spacer()
-                            .frame(height: 20)
+                 
+//                    
+//                        Spacer()
+//                            .frame(height: 20)
                     HStack {
                         
                         if planets.count > 0 && !focusPlanet {
