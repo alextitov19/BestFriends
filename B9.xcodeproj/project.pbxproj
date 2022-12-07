@@ -246,7 +246,6 @@
 		CFD8BD082912B0EB00F86EFB /* AtmosphereInfo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD072912B0EB00F86EFB /* AtmosphereInfo2.swift */; };
 		CFD8BD0A29132AE700F86EFB /* AtmosphereInfo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */; };
 		CFD8BD0E2915565B00F86EFB /* MyRoomInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD0D2915565B00F86EFB /* MyRoomInfo.swift */; };
-		CFD8BD102915581500F86EFB /* myRoom1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFD8BD0F2915581500F86EFB /* myRoom1.mp4 */; };
 		CFD8BD142916BDD700F86EFB /* HurtFeelingsPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD132916BDD700F86EFB /* HurtFeelingsPreload.swift */; };
 		CFD8BD16291B3D6600F86EFB /* INFOPreload2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD15291B3D6600F86EFB /* INFOPreload2.swift */; };
 		CFDA4BCE28D1037100118D90 /* DreamVaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BCD28D1037100118D90 /* DreamVaultView.swift */; };
@@ -507,7 +506,6 @@
 		CFD8BD072912B0EB00F86EFB /* AtmosphereInfo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereInfo2.swift; sourceTree = "<group>"; };
 		CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereInfo1.swift; sourceTree = "<group>"; };
 		CFD8BD0D2915565B00F86EFB /* MyRoomInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomInfo.swift; sourceTree = "<group>"; };
-		CFD8BD0F2915581500F86EFB /* myRoom1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = myRoom1.mp4; sourceTree = "<group>"; };
 		CFD8BD132916BDD700F86EFB /* HurtFeelingsPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurtFeelingsPreload.swift; sourceTree = "<group>"; };
 		CFD8BD15291B3D6600F86EFB /* INFOPreload2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOPreload2.swift; sourceTree = "<group>"; };
 		CFDA4BCD28D1037100118D90 /* DreamVaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamVaultView.swift; sourceTree = "<group>"; };
@@ -1052,7 +1050,6 @@
 				CFD0ABDB285C4E040032CA3D /* BuiltByTeens3.mp4 */,
 				CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */,
 				CF47CF1328E81BBE008B6F11 /* Wind2.mp4 */,
-				CFD8BD0F2915581500F86EFB /* myRoom1.mp4 */,
 				CFD6C05829405EB100D57E0B /* MyRoom5.mp4 */,
 				CF3DB38A28DADD3E00BF9CCD /* New Group */,
 				CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */,
@@ -1498,7 +1495,6 @@
 				CF47CF1428E81BBE008B6F11 /* Wind2.mp4 in Resources */,
 				CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */,
 				CF4A08DE2878497800ADA9DD /* Atmosphere2.mp4 in Resources */,
-				CFD8BD102915581500F86EFB /* myRoom1.mp4 in Resources */,
 				7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */,
 				CF65040028864AF00092EEB9 /* background_1.mp4 in Resources */,
 				7A63AF8B26A339C70072E21E /* Launch Screen.storyboard in Resources */,
