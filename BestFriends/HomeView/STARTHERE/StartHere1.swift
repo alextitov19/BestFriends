@@ -213,7 +213,7 @@ struct StartHere1: View {
                                 .frame(height: 40)
                            
                             
-                                Text("Note: after receiving a push notification from a friend, tap that friends planet on homepage, then select from the appropriate button from the dropdown menu.")
+                                Text("Note: after receiving a push notification from a friend, tap that friend's planet on homepage, then select from the appropriate button from the dropdown menu.")
                                     .foregroundColor(.white)
                                     .font(.system(size: 15, weight: .light))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
