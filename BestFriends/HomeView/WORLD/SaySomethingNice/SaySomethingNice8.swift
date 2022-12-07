@@ -79,53 +79,34 @@ struct SaySomethingNice8: View {
                     .frame(height: 20)
                 
                 
-                Text("Your 'Vibe' will show as")
+                Text("Join people around the world")
                     .font(.system(size: 15))
                     .italic()
                     .foregroundColor(ColorManager.grey1)
                 
-                Text("atmospher around your planet")
+                Text("saying something 'Nice to friends")
                     .font(.system(size: 15))
                     .italic()
                     .foregroundColor(ColorManager.grey1)
-                //
-                //                Text("Your 'Vibe' will show \naround your planet")
-                //                    .font(.system(size: 15))
-                //                    .italic()
-                //                    .foregroundColor(ColorManager.grey4)
-                
-                Text("Set my 'Vibe'")
+           
+                Text("RIGHT NOW")
                     .font(.system(size: 35))
                     .fontWeight(.medium)
-                    .foregroundColor(ColorManager .grey1)
+                    .foregroundColor(.green)
                 
-                
-                
-                
-                
-                //
-                //                Text(".")
-                //                    .font(.system(size: 2))
-                //                    .fontWeight(.regular)
-                //                    .foregroundColor(ColorManager.grey1)
-                //                    .padding(.horizontal)
+              
                 
                 HStack {
                     
                 }
-                //                .padding(.horizontal)
-                
- 
-                        
-                        
+              
+               
                         VStack {
                             // MARK: End of feeling buttons
                             
                             
                             HStack {
-                                
-                                
-                                
+                               
                             }
                             
                             Spacer()
@@ -135,13 +116,13 @@ struct SaySomethingNice8: View {
                                 Rectangle()
                                     .frame(width:335, height: 50)
                                     .cornerRadius(15)
-                                    .foregroundColor(Color.gray)
+                                    .foregroundColor(ColorManager .grey3)
                                     .opacity(0.95)
                                 
                                 TextField("What's going on?", text: $summary)
                                     .font(.system(size: 20))
-                                    .foregroundColor(ColorManager.purple2)
-                                    .padding(.horizontal, 20)
+                                    .foregroundColor(ColorManager.purple5)
+                                    .padding(.horizontal, 30)
                                     .onReceive(Just(summary)) { _ in limitText(80) }
                                 
                                 
@@ -282,7 +263,7 @@ struct SaySomethingNice8: View {
                                             .font(.system(size: 12))
                                             .italic()
                                             .frame(width: 50, height: 50)
-                                            .background(ColorManager .purple3)
+                                            .background(ColorManager .pmbc_green)
                                             .cornerRadius(15)
                                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     })
