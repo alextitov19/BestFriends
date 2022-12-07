@@ -25,7 +25,7 @@ struct SaySomethingNice7: View {
     @State private var hugTapped = false
     @State private var mostRecentMoodLog: MoodLog?
     @State private var noteTapped = false
-    
+    @State private var showingAlert = false
     
     var body: some View {
         ZStack {
@@ -57,7 +57,7 @@ struct SaySomethingNice7: View {
                     
                     Text(friend.firstName + " " + friend.lastName)
                         .font(.system(size: 17))
-                        .foregroundColor(.white)
+                        .foregroundColor(ColorManager .grey4)
                         .padding()
                       
                 }
@@ -101,7 +101,7 @@ struct SaySomethingNice7: View {
                 
                 //                ReceivedPlaylist
                 Spacer()
-                    .frame(height: 7)
+                    .frame(height: 20)
                
                 
                 //MARK: Send CUSTOM Support Message to user got push notificaiton from OR chose one from below
@@ -110,16 +110,17 @@ struct SaySomethingNice7: View {
                         HStack {
                             Text("Respond in Chat")
                                 .foregroundColor(ColorManager.purple5)
-//                            .foregroundColor(.white)
+//                                .foregroundColor(ColorManager .grey4)
 //                            .frame(width: 300, height: 100)
 //                          Spacer()
                         }
                     }
-                    .font(.system(size: 15))
-                    .foregroundColor(ColorManager.purple1)
+                    .font(.system(size: 17))
+                    .foregroundColor(ColorManager.purple5)
                     .submitLabel(.done)
-                    .onReceive(Just(customMessage)) { _ in limitText(100) }
-                    .padding()
+                    .onReceive(Just(customMessage)) { _ in limitText(70) }
+                    .padding(.horizontal, 37)
+//                    .padding()
                     .overlay(RoundedRectangle(cornerRadius: 20)
                         .stroke(Color.purple)
                         .frame(height: 40)
@@ -166,8 +167,17 @@ struct SaySomethingNice7: View {
                             .background(colorChangeTap == "Are you okay?" ? ColorManager.grey2 : ColorManager.grey1)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
+                        
+//                            .alert("Push Notifications sent successfully", isPresented: $showingAlert) {
+//                                Button("OK", role: .cancel) { }
+//                    })
                     
+                            .alert("Push Notifications sent successfully", isPresented: $showingAlert) {
+                                Button("OK", role: .cancel) { }
+                            }
+                    })
+
+                        
                     
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "Do we need to talk?")
