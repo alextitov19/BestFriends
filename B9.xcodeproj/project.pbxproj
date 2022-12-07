@@ -241,6 +241,7 @@
 		CFD12CD3281A821C00AB2539 /* FightWithFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CD2281A821C00AB2539 /* FightWithFriend.swift */; };
 		CFD6C051293E802500D57E0B /* SomethingNice1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6C050293E802500D57E0B /* SomethingNice1.swift */; };
 		CFD6C055293EA9E600D57E0B /* HugPushNotification2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6C054293EA9E600D57E0B /* HugPushNotification2.swift */; };
+		CFD6C0572940532F00D57E0B /* SaySomethingNice8.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6C0562940532F00D57E0B /* SaySomethingNice8.swift */; };
 		CFD8BD082912B0EB00F86EFB /* AtmosphereInfo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD072912B0EB00F86EFB /* AtmosphereInfo2.swift */; };
 		CFD8BD0A29132AE700F86EFB /* AtmosphereInfo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */; };
 		CFD8BD0E2915565B00F86EFB /* MyRoomInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD0D2915565B00F86EFB /* MyRoomInfo.swift */; };
@@ -500,6 +501,7 @@
 		CFD12CD2281A821C00AB2539 /* FightWithFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightWithFriend.swift; sourceTree = "<group>"; };
 		CFD6C050293E802500D57E0B /* SomethingNice1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingNice1.swift; sourceTree = "<group>"; };
 		CFD6C054293EA9E600D57E0B /* HugPushNotification2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugPushNotification2.swift; sourceTree = "<group>"; };
+		CFD6C0562940532F00D57E0B /* SaySomethingNice8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingNice8.swift; sourceTree = "<group>"; };
 		CFD8BD072912B0EB00F86EFB /* AtmosphereInfo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereInfo2.swift; sourceTree = "<group>"; };
 		CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereInfo1.swift; sourceTree = "<group>"; };
 		CFD8BD0D2915565B00F86EFB /* MyRoomInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomInfo.swift; sourceTree = "<group>"; };
@@ -1327,6 +1329,7 @@
 				CF3B42F329371A6D00EE1D84 /* SaySomethingNice5.swift */,
 				CF3B42F5293721A500EE1D84 /* SaySomethingNice6.swift */,
 				CF3B42F7293723B500EE1D84 /* SaySomethingNice7.swift */,
+				CFD6C0562940532F00D57E0B /* SaySomethingNice8.swift */,
 				CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */,
 				CF37535228BD5544003817E3 /* SaySomethingNice2.swift */,
 				CF4CFAC128E8DC3B00D6AEA9 /* SaySomethingNice3.swift */,
@@ -1763,6 +1766,7 @@
 				CF725E2828516E4F0096342F /* Tokens.swift in Sources */,
 				7A8A17C128414A390088DC04 /* SmileNoteModels.swift in Sources */,
 				CF2FD944280CA20F0036F4BB /* ChatBackgroundView.swift in Sources */,
+				CFD6C0572940532F00D57E0B /* SaySomethingNice8.swift in Sources */,
 				CF3DB36B28D8DAC000BF9CCD /* DreamSteps.swift in Sources */,
 				7AE3E9032838409B00567E2D /* ArrayExt.swift in Sources */,
 				7AB5216D289D97F7005A49FA /* IntuitiveView.swift in Sources */,

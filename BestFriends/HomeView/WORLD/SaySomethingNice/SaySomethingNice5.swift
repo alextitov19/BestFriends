@@ -62,20 +62,7 @@ struct SaySomethingNice5: View {
             
             VStack {
 
-                NavigationLink(
-                    destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends),
-                    label: {
-                        Text("How feature works")
-                            .fontWeight(.thin)
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 12))
-                            .italic()
-                            .frame(width: 50, height: 50)
-                            .background(ColorManager .purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
-
+              
                 
                 
                 Text("Join people around the world")
@@ -309,7 +296,20 @@ struct SaySomethingNice5: View {
                             .italic()
                             .foregroundColor(ColorManager.purple2)
                         
-                        
+                        NavigationLink(
+                            destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends),
+                            label: {
+                                Text("How feature works")
+                                    .fontWeight(.thin)
+                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 12))
+                                    .italic()
+                                    .frame(width: 50, height: 50)
+                                    .background(ColorManager .purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+
                         
                     }
 
