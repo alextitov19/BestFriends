@@ -80,12 +80,12 @@ struct SaySomethingNice8: View {
                 
                 
                 Text("Join people around the world")
-                    .font(.system(size: 15))
+                    .font(.system(size: 18))
                     .italic()
                     .foregroundColor(ColorManager.grey1)
                 
-                Text("saying something 'Nice to friends")
-                    .font(.system(size: 15))
+                Text("saying something 'Nice to Friends'")
+                    .font(.system(size: 18))
                     .italic()
                     .foregroundColor(ColorManager.grey1)
            
@@ -119,10 +119,10 @@ struct SaySomethingNice8: View {
                                     .foregroundColor(ColorManager .grey3)
                                     .opacity(0.95)
                                 
-                                TextField("What's going on?", text: $summary)
+                                TextField("Say it here ...", text: $summary)
                                     .font(.system(size: 20))
-                                    .foregroundColor(ColorManager.purple5)
-                                    .padding(.horizontal, 30)
+                                    .foregroundColor(ColorManager.orange3)
+                                    .padding(.horizontal, 37)
                                     .onReceive(Just(summary)) { _ in limitText(80) }
                                 
                                 
