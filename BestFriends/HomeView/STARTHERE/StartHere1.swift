@@ -172,7 +172,7 @@ struct StartHere1: View {
                             
                             
                             Spacer ()
-                                .frame(height: 130)
+                                .frame(height: 200)
                             
                             Text("'settings'")
                                 .font(.system(size: 20))
@@ -210,7 +210,16 @@ struct StartHere1: View {
                                 .multilineTextAlignment(.center)
                             
                             Spacer ()
-                                .frame(height: 130)
+                                .frame(height: 40)
+                           
+                            
+                                Text("Note: after receiving a push notification from a friend, tap that friends planet on homepage, then select from the appropriate button from the dropdown menu.")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 15, weight: .light))
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                    .opacity(0.50)
+                                    .padding(20)
+                            
                             
                         }
                     }
