@@ -86,8 +86,11 @@ struct PlanetActionsView: View {
             NavigationLink(
                 destination: StartHere1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                 label: {
-                    Text("?")
-                        .fontWeight(.light)
+                   
+                    Image("iconSettings15")
+                    
+//                    Text("?")
+//                        .fontWeight(.light)
                         .frame(width: 50, height: 20)
 //                        .foregroundColor(ColorManager.grey1)
                         .foregroundColor(.white)
@@ -295,7 +298,7 @@ struct PlanetActionsView: View {
                                 VStack {
                                     
                                     
-                                    Image("iconLock80")
+                                    Image("iconMyRoom81")
                                     
 //                                    Text("my")
 //                                        .foregroundColor(.white)
