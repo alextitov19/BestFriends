@@ -86,7 +86,7 @@ struct PlanetActionsView: View {
             NavigationLink(
                 destination: StartHere1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                 label: {
-                    Text(":::")
+                    Text("?")
                         .fontWeight(.light)
                         .frame(width: 50, height: 20)
 //                        .foregroundColor(ColorManager.grey1)
@@ -194,7 +194,7 @@ struct PlanetActionsView: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //                                        .opacity(0.50)
                                     
-                                    Text("vibe")
+                                    Text("my vibe")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -295,7 +295,7 @@ struct PlanetActionsView: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //                                        .opacity(0.50)
                                     
-                                    Text("room")
+                                    Text("my room")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -382,7 +382,7 @@ struct PlanetActionsView: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //                                        .opacity(0.50)
                                    
-                                    Text("drama?")
+                                    Text("drama")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)

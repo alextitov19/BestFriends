@@ -48,9 +48,16 @@ struct SaySomethingNice5: View {
                 .ignoresSafeArea()
                 .scaledToFill()
             
-            AdPlayerView(name: "Atmosphere2")
+            
+            
+            Image("holding iphone")
+                .resizable()
                 .ignoresSafeArea()
-                .blendMode(.screen)
+                .scaledToFill()
+            
+//            AdPlayerView(name: "")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
 
             
             VStack {

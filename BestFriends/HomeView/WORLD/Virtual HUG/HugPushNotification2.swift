@@ -27,12 +27,9 @@ struct HugPushNotification2: View {
         
         ZStack {
             
-//            ColorManager.grey4
-//                .ignoresSafeArea()
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
+            ColorManager.purple1
+                .ignoresSafeArea()
+                .onAppear()
             
             Image("in bushes")
                 .resizable()

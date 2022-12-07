@@ -27,13 +27,16 @@ struct HugPushNotification: View {
         
         ZStack {
             
-//            ColorManager.grey4
-//                .ignoresSafeArea()
-            Image("purpleBackground")
-                .resizable()
+            ColorManager.purple1
                 .ignoresSafeArea()
-                .scaledToFill()
+                .onAppear()
             
+            
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+//
             Image("ballons")
                 .resizable()
                 .ignoresSafeArea()
@@ -47,16 +50,16 @@ struct HugPushNotification: View {
                     
                     Text("Who are you")
                         .font(.system(size: 35, weight: .ultraLight))
-                        .foregroundColor(Color.white)
+                        .foregroundColor(ColorManager .purple7)
                     Text("sending HUG to?")
                         .font(.system(size: 35, weight: .ultraLight))
-                        .foregroundColor(Color.white)
+                        .foregroundColor(ColorManager .purple7)
                     
                     
                     VStack {
                         
                         Spacer()
-                            .frame(height: 80)
+                            .frame(height: 250)
                         
                         
                         HStack {
@@ -199,7 +202,7 @@ struct HugPushNotification: View {
                     
                 
                     Spacer()
-                        .frame(height: 150)
+                        .frame(height: 160)
                     
                 }
                 

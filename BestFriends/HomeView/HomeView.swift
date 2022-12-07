@@ -105,17 +105,22 @@ struct HomeView: View {
       
                 
                 
-                VStack {
+                
             
-//                    
-//                    Spacer()
-//                        .frame(height: 50)
-//                    
-                    // Top 2 planets
+                    VStack {
+                        
                    
-                       
+                                Text(":::")
+                                    .fontWeight(.light)
+                                    .frame(width: 50, height: 20)
+            //                        .foregroundColor(ColorManager.grey1)
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 20))
+                                    .background(ColorManager.grey4)
+                                  .cornerRadius(15)
                     
-                    
+                        Spacer()
+                            .frame(height: 20)
                     HStack {
                         
                         if planets.count > 0 && !focusPlanet {
@@ -385,7 +390,7 @@ struct HomeView: View {
                     
                         
                         Spacer()
-                            .frame(height: 60)
+                            .frame(height: 260)
                         
                     }
                     
