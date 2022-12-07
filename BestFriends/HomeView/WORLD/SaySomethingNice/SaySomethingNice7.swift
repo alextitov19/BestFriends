@@ -37,10 +37,10 @@ struct SaySomethingNice7: View {
                 .scaledToFill()
                 .onAppear(perform: loadData)
 
-
-                        AdPlayerView(name: "Dreams1")
-                            .ignoresSafeArea()
-                            .blendMode(.screen)
+//
+//                        AdPlayerView(name: "Dreams1")
+//                            .ignoresSafeArea()
+//                            .blendMode(.screen)
 
 //            ColorManager.grey4
 //                .ignoresSafeArea()
