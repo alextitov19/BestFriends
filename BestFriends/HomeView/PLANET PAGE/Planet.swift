@@ -122,7 +122,7 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
 
-                                    Image("phoneicon100")
+                                    Image("iconPhone80")
 //                                        .frame(width: 10, height: 10)
 //                                       .resizable()
 //                                       .ignoresSafeArea()
@@ -153,7 +153,7 @@ struct PlanetActionsView: View {
                                     .opacity(0.60)
                                 
                                 VStack {
-                                    Image("iconHug80")
+                                    Image("iconHug80 1")
                                   
 //                                    Text("hugs")
 //                                        .foregroundColor(.white)
@@ -189,7 +189,7 @@ struct PlanetActionsView: View {
                                     .opacity(0.60)
                                 VStack {
 
-                                    Image("iconVibes80")
+                                    Image("iconVibes75")
 //                                    Text("set")
 //                                        .foregroundColor(.white)
 //                                        .font(.system(size: 20, weight: .bold))
@@ -298,7 +298,7 @@ struct PlanetActionsView: View {
                                 VStack {
                                     
                                     
-                                    Image("iconLock2")
+                                    Image("iconLock70")
                                     
 //                                    Text("my")
 //                                        .foregroundColor(.white)
@@ -337,7 +337,7 @@ struct PlanetActionsView: View {
                                     .opacity(0.60)
                                 
                                 VStack {
-                                    Image("iconNice75")
+                                    Image("iconNice70")
 //
                                     
 //                                    Text("Say")
@@ -388,7 +388,7 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
                                     
-                                        Image("iconFight80")
+                                        Image("iconFight70")
                                     
                                     
 //                                    Text("Friend")
