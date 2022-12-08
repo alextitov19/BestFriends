@@ -298,7 +298,7 @@ struct PlanetActionsView: View {
                                 VStack {
                                     
                                     
-                                    Image("iconMyRoom81")
+                                    Image("iconLock2")
                                     
 //                                    Text("my")
 //                                        .foregroundColor(.white)
