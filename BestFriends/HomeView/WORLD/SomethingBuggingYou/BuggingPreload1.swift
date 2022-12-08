@@ -45,7 +45,7 @@ struct BuggingPreload1: View {
                 NavigationLink(destination: HurtFeelings4(user: user, friends: friends, groups: groups), label: {
                     BuggingCircle (color: ColorManager.purple2, friendName: "Friend \nhurt my \nFeelings")
                 })
-                .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
+                .offset(x: showItems ? -80 : 0, y: showItems ? -270: 0)
               
                 
                 
@@ -70,7 +70,7 @@ struct BuggingPreload1: View {
                     NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups), label: {
                         BuggingCircle (color: ColorManager.red, friendName: "Just had \nHUGE \nFIGHT")
                     })
-                    .offset(x: showItems ? -100 : 0, y: showItems ? -155: 0)
+                    .offset(x: showItems ? -130 : 0, y: showItems ? -175: 0)
                     
                     
                     
