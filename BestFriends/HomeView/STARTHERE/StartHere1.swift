@@ -38,35 +38,8 @@ struct StartHere1: View {
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
             
-            //
-            //             Image("purpleBackground")
-            //                 .resizable()
-            //                 .scaledToFill()
-            //                 .ignoresSafeArea()
-            //
-            //             Image("ballons")
-            //                 .frame(width: 320, height: 20)
-            //
-            ////            ColorManager.purple1
-            ////                .ignoresSafeArea()
-            ////                .onAppear()
-            //
-            //            Image("purpleBackground")
-            //                .resizable()
-            //                .ignoresSafeArea()
-            //                .scaledToFill()
-            //
-            //            //            AdPlayerView(name: "Planet6")
-            //            //                .ignoresSafeArea()
-            //            //                .blendMode(.screen)
-            //
-            //            AdPlayerView(name: "sky2")
-            //                .ignoresSafeArea()
-            //                .blendMode(.screen)
-            //
-            //
-            //
-            ZStack{
+            
+            ZStack {
                 
                 
                 
@@ -125,8 +98,8 @@ struct StartHere1: View {
                 
                 
                 
-            
-                    
+                
+//                ZStack {
                     
                     
                     NavigationLink(destination: ShaylaPage(user: user), label: {
@@ -142,7 +115,7 @@ struct StartHere1: View {
                     .offset(x: showItems ? 140 : 0, y: showItems ? -140: 0)
                     
                     
-            
+                    
                     
                     NavigationLink(destination:  SurveyStickersPreload(), label: {
                         StartHereCircle (color: ColorManager.purple1, friendName: "Take \n Survey, \nget \nSTICKERS")
@@ -154,20 +127,10 @@ struct StartHere1: View {
                     
                     
                     
-                    //
-                    //                    NavigationLink(destination: EmptyView(), label: {
-                    //                        StartHereCircle (color: ColorManager.purple4, friendName: "")
-                    //                    })
-                    //                    .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
-                    //
-                    
-                    
                     Image(systemName: "triangle.fill")
                         .resizable()
                         .foregroundColor(.cyan)
                         .frame(width: 250, height: 250)
-                    //                    .blur(radius: 2)
-                    
                         .shadow(color: .purple, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
                     
@@ -214,11 +177,6 @@ struct StartHere1: View {
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        //
-                        //                            Spacer ()
-                        //                                .frame(height: 15)
-                        
-                        
                         
                         
                         
@@ -238,7 +196,6 @@ struct StartHere1: View {
                                 .multilineTextAlignment(.center)
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                             //                                    .opacity(0.50)
-//                                .padding(10)
                             
                             
                         }
@@ -289,5 +246,6 @@ struct StartHere1: View {
             }
         }
     }
-
-
+    
+    
+//}

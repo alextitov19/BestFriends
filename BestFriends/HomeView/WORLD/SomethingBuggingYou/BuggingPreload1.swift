@@ -41,6 +41,15 @@ struct BuggingPreload1: View {
             ZStack{
                 
                 
+                Image(systemName: "circle.fill")
+                    .resizable()
+                    .foregroundColor(ColorManager .purple2)
+                    .frame(width: 150, height: 150)
+                    .blur(radius: 2)
+                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                    .opacity(0.90)
+                
+                
                 
                 NavigationLink(destination: HurtFeelings4(user: user, friends: friends, groups: groups), label: {
                     BuggingCircle (color: ColorManager.purple2, friendName: "Friend \nhurt my \nFeelings")
