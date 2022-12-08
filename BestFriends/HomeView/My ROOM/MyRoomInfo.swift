@@ -110,7 +110,7 @@ struct MyRoomInfo: View {
                     
                     
                     Spacer ()
-                        .frame(height: 50)
+                        .frame(height: 100)
                     
                     
                     
@@ -123,19 +123,19 @@ struct MyRoomInfo: View {
                                 
                                 //                            Image("iconSettings15")
                                 
-                                Text("Hide")
+                                Text("Lock Room")
                                     .fontWeight(.light)
-                                    .frame(width: 50, height: 20)
+                                    .frame(width: 85, height: 21)
                                 //                        .foregroundColor(ColorManager.grey1)
                                     .foregroundColor(.white)
-                                    .font(.system(size: 20))
-                                    .background(ColorManager.grey4)
+                                    .font(.system(size: 15))
+                                    .background(ColorManager.grey3)
                                     .cornerRadius(15)
                                 //                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
                         
                         Spacer ()
-                            .frame(height: 45)
+                            .frame(height: 25)
                         
                         
                         
