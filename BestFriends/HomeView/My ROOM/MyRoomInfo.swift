@@ -110,12 +110,33 @@ struct MyRoomInfo: View {
                     
                     
                     Spacer ()
-                        .frame(height: 30)
+                        .frame(height: 50)
                     
                     
                     
                     
                     VStack {
+                        
+                        NavigationLink(
+                            destination: EmptyView(),
+                            label: {
+                                
+                                //                            Image("iconSettings15")
+                                
+                                Text("Hide")
+                                    .fontWeight(.light)
+                                    .frame(width: 50, height: 20)
+                                //                        .foregroundColor(ColorManager.grey1)
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 20))
+                                    .background(ColorManager.grey4)
+                                    .cornerRadius(15)
+                                //                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                        
+                        Spacer ()
+                            .frame(height: 45)
+                        
                         
                         
                         Text("my room")
@@ -170,22 +191,7 @@ struct MyRoomInfo: View {
                 
                 VStack {
                     
-                    NavigationLink(
-                        destination: EmptyView(),
-                        label: {
-                            
-                            //                            Image("iconSettings15")
-                            
-                            Text("Hide")
-                                .fontWeight(.light)
-                                .frame(width: 50, height: 20)
-                            //                        .foregroundColor(ColorManager.grey1)
-                                .foregroundColor(.white)
-                                .font(.system(size: 20))
-                                .background(ColorManager.grey4)
-                                .cornerRadius(15)
-                            //                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
+                
                 
             }
         }
