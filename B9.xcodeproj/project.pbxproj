@@ -243,6 +243,8 @@
 		CFD6C055293EA9E600D57E0B /* HugPushNotification2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6C054293EA9E600D57E0B /* HugPushNotification2.swift */; };
 		CFD6C0572940532F00D57E0B /* SaySomethingNice8.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6C0562940532F00D57E0B /* SaySomethingNice8.swift */; };
 		CFD6C05929405EB100D57E0B /* MyRoom5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFD6C05829405EB100D57E0B /* MyRoom5.mp4 */; };
+		CFD6C05D294169CC00D57E0B /* HideMyRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6C05C294169CC00D57E0B /* HideMyRoom.swift */; };
+		CFD6C05F29416A3B00D57E0B /* HideMyRoomLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6C05E29416A3B00D57E0B /* HideMyRoomLink.swift */; };
 		CFD8BD082912B0EB00F86EFB /* AtmosphereInfo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD072912B0EB00F86EFB /* AtmosphereInfo2.swift */; };
 		CFD8BD0A29132AE700F86EFB /* AtmosphereInfo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */; };
 		CFD8BD0E2915565B00F86EFB /* MyRoomInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD0D2915565B00F86EFB /* MyRoomInfo.swift */; };
@@ -503,6 +505,8 @@
 		CFD6C054293EA9E600D57E0B /* HugPushNotification2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugPushNotification2.swift; sourceTree = "<group>"; };
 		CFD6C0562940532F00D57E0B /* SaySomethingNice8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingNice8.swift; sourceTree = "<group>"; };
 		CFD6C05829405EB100D57E0B /* MyRoom5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyRoom5.mp4; sourceTree = "<group>"; };
+		CFD6C05C294169CC00D57E0B /* HideMyRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideMyRoom.swift; sourceTree = "<group>"; };
+		CFD6C05E29416A3B00D57E0B /* HideMyRoomLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideMyRoomLink.swift; sourceTree = "<group>"; };
 		CFD8BD072912B0EB00F86EFB /* AtmosphereInfo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereInfo2.swift; sourceTree = "<group>"; };
 		CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereInfo1.swift; sourceTree = "<group>"; };
 		CFD8BD0D2915565B00F86EFB /* MyRoomInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomInfo.swift; sourceTree = "<group>"; };
@@ -1352,6 +1356,8 @@
 			isa = PBXGroup;
 			children = (
 				CFD8BD0D2915565B00F86EFB /* MyRoomInfo.swift */,
+				CFD6C05C294169CC00D57E0B /* HideMyRoom.swift */,
+				CFD6C05E29416A3B00D57E0B /* HideMyRoomLink.swift */,
 			);
 			path = "My ROOM";
 			sourceTree = "<group>";
@@ -1783,8 +1789,10 @@
 				7A0856A027F3D94500E8282B /* AuthController.swift in Sources */,
 				CFC0EE7E290805F8006B3FAA /* InfoInsideChat.swift in Sources */,
 				7AD8DEFB27F66C8900D9F0E1 /* HomeModels.swift in Sources */,
+				CFD6C05D294169CC00D57E0B /* HideMyRoom.swift in Sources */,
 				CFDA4BE228D66B2600118D90 /* AudioCode.swift in Sources */,
 				7A22A57B274416C200FB6B4F /* ColorExt+Mgr.swift in Sources */,
+				CFD6C05F29416A3B00D57E0B /* HideMyRoomLink.swift in Sources */,
 				D0F5AB1B2840519700053F17 /* HorizonRocketColorPicker.swift in Sources */,
 				CF650422289EF8820092EEB9 /* PurpleNoAdInfoView.swift in Sources */,
 				7A380F1628271E3E007151AB /* AppDelegate.swift in Sources */,
