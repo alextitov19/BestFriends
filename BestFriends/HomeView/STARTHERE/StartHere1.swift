@@ -190,7 +190,7 @@ struct StartHere1: View {
                         
                         VStack {
                             
-                            Text("Note; after receiving a push notification from \na friend, tap that friend's planet on homepage, \nthen select from the appropriate button \nfrom the dropdown menu.")
+                            Text("Note; after receiving a push notification from \na friend, tap that friend's planet on homepage, \nthen tap the appropriate button \nfrom the dropdown menu.")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .light))
                                 .multilineTextAlignment(.center)
