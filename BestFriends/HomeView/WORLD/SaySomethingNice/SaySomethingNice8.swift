@@ -284,7 +284,7 @@ struct SaySomethingNice8: View {
                 for id in selectedFriends {
                     for f in friends {
                         if f.id == id {
-                            RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent a song to match your Vibe", APNToken: f.APNToken)
+                            RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent 'Nice' message", APNToken: f.APNToken)
                         }
                     }
                 }
@@ -304,7 +304,7 @@ struct SaySomethingNice8: View {
                             for i in sharedWith {
                                 for f in friends {
                                     if i == f.id {
-                                        RestApi.instance.sendPushNotification(title: "BestFriends - Vibe", body: "\(user.firstName) Something just happened to change their Vibe!", APNToken: f.APNToken )
+                                        RestApi.instance.sendPushNotification(title: "BestFriends - World FriendGroup", body: "\(user.firstName) just said something 'Nice'!", APNToken: f.APNToken )
                                     }
                                 }
                                 mood = -1
