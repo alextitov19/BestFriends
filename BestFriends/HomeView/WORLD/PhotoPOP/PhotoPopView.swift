@@ -58,7 +58,7 @@ struct PhotoPopView: View {
 //                    .italic()
 //                    .foregroundColor(.white)
                 
-                Text("'Shake' iPhone to see posted images")
+                Text("'Shake' iPhone to see \nfriend's posted images")
                     .font(.system(size: 18, weight: .light))
                     .foregroundColor(.green)
 //
