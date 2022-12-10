@@ -33,7 +33,7 @@ struct HugPreload: View {
             ZStack{
 
               NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
-                  HugCircle (color: ColorManager.purple2, friendName: "send \nHUG")
+                  HugCircle (color: ColorManager.purple2, friendName: "Send \nfriend \na HUG")
             })
               .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
             
@@ -48,7 +48,7 @@ struct HugPreload: View {
 
 
                 NavigationLink(destination: HugPushNotification2(user: user, friends: friends), label: {
-                HugCircle (color: ColorManager.orange3, friendName: "Wow! \nI could \nreally use \na HUG!")
+                    HugCircle (color: ColorManager .purple1, friendName: "Wow! \nI could \nreally use \na HUG")
             })
                 .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
            
@@ -91,7 +91,7 @@ struct HugPreload: View {
                              .multilineTextAlignment(.center)
  //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
                
-               Text("HUG")
+               Text("HUG?")
                              .font(.system(size: 45))
                          
                              .foregroundColor(.white)
