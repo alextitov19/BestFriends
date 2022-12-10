@@ -39,13 +39,10 @@ struct AtmosphereMain2: View {
 //                .scaledToFill()
             
             
-            ColorManager .pmbc_blue
+            ColorManager .grey1
                 .ignoresSafeArea()
             
-            Image("FatGuy")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+
 
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
@@ -55,66 +52,38 @@ struct AtmosphereMain2: View {
             VStack {
                 
                 HStack {
-                   
-
-                }
+                 
                     
-
-                NavigationLink(
-                    destination: AtmosphereInfo2(user: user, atmosphere: atmosphere, friends: friends),
-                    label: {
-                        Text("How feature works")
-                            .fontWeight(.thin)
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 12))
-                            .italic()
-                            .frame(width: 50, height: 50)
-                            .background(ColorManager .purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
-                
-                Spacer()
-                    .frame(height: 20)
-                
-                
-                Text("Your 'Vibe' will show as")
-                    .font(.system(size: 15))
-                    .italic()
-                    .foregroundColor(ColorManager.grey1)
-                
-                Text("atmospher around your planet")
-                    .font(.system(size: 15))
-                    .italic()
-                    .foregroundColor(ColorManager.grey1)
-//
-//                Text("Your 'Vibe' will show \naround your planet")
-//                    .font(.system(size: 15))
-//                    .italic()
-//                    .foregroundColor(ColorManager.grey4)
-                
-                    Text("Set my 'Vibe'")
-                        .font(.system(size: 35))
+                    Text("Wow, \nmy day just \nCHANGED!")
+                        .font(.system(size: 20))
+                        .italic()
                         .fontWeight(.medium)
-                        .foregroundColor(ColorManager .grey1)
+                        .foregroundColor(ColorManager .grey3)
+                        .multilineTextAlignment(.center)
+                   
+                    Image("FatGuy200")
+                        .resizable()
+                        .frame(width: 150, height: 150)
                     
-                
-                    
-                    
-               
-//
-//                Text(".")
-//                    .font(.system(size: 2))
-//                    .fontWeight(.regular)
-//                    .foregroundColor(ColorManager.grey1)
-//                    .padding(.horizontal)
-                
-                HStack {
-
                 }
-//                .padding(.horizontal)
+//                    Spacer()
+//                        .frame(height: 20)
+                    
+                    Text("Set my 'Vibe'")
+                        .font(.system(size: 30))
+                        .fontWeight(.medium)
+                        .foregroundColor(ColorManager .grey3)
+                    
+                    Text("Your 'Vibe' shows around your planet")
+                        .font(.system(size: 15))
+                        .italic()
+                        .foregroundColor(ColorManager.grey3)
+                    
                 
-             
+              
+                    
+                
+    
                 HStack {
                     VStack {
                         
@@ -317,10 +286,10 @@ struct AtmosphereMain2: View {
                             .foregroundColor(Color.gray)
                             .opacity(0.95)
                         
-                        TextField("What's going on?", text: $summary)
+                        TextField("Type what's going on here ...", text: $summary)
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager.purple2)
-                            .padding(.horizontal, 175)
+                            .padding(.horizontal, 35)
                             .onReceive(Just(summary)) { _ in limitText(80) }
                         
                         
@@ -446,7 +415,7 @@ struct AtmosphereMain2: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your friends have been Alerted", isPresented: $showingAlert) {
+                                .alert("Letting your friends lend support on difficult days - cheer you in good times. \n\nFriend taps the received notification, then taps your planet on homepage and selects [Friend said something 'Nice'] from the dropdown menu to read your message.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -582,6 +551,19 @@ struct AtmosphereMain2: View {
 
 
 
-
+//
+//                NavigationLink(
+//                    destination: AtmosphereInfo2(user: user, atmosphere: atmosphere, friends: friends),
+//                    label: {
+//                        Text("How feature works")
+//                            .fontWeight(.thin)
+//                            .foregroundColor(Color.white)
+//                            .font(.system(size: 12))
+//                            .italic()
+//                            .frame(width: 50, height: 50)
+//                            .background(ColorManager .purple3)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                    })
 
 
