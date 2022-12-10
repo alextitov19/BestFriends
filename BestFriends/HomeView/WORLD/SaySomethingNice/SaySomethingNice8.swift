@@ -39,63 +39,95 @@ struct SaySomethingNice8: View {
             //                .ignoresSafeArea()
             //                .scaledToFill()
             
-            
-            ColorManager .pmbc_blue
-                .ignoresSafeArea()
-            
-//            Image("FatGuy")
+//
+//            ColorManager .pmbc_blue
+//                .ignoresSafeArea()
+//
+//
+//            Image("holding iphone")
 //                .resizable()
 //                .ignoresSafeArea()
 //                .scaledToFill()
 //
-//            AdPlayerView(name: "sky2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
+//            VStack {
+//
+//                HStack {
+//
+//
+//                }
+//
+//                Spacer()
+//                    .frame(height: 20)
+//
+//
+//                Text("Join people around the world")
+//                    .font(.system(size: 18))
+//                    .italic()
+//                    .foregroundColor(ColorManager.grey1)
+//
+//                Text("saying something 'Nice to Friends'")
+//                    .font(.system(size: 18))
+//                    .italic()
+//                    .foregroundColor(ColorManager.grey1)
+//
+//                Text("RIGHT NOW")
+//                    .font(.system(size: 35))
+//                    .fontWeight(.medium)
+//                    .foregroundColor(.green)
+//
+//
+                
             
             
-            
-            Image("holding iphone")
-                .resizable()
+            ColorManager .purple1
                 .ignoresSafeArea()
-                .scaledToFill()
+            
+
+
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+
             
             VStack {
                 
-                
-                
+                Text("Join people around the world")
+                    .font(.system(size: 20))
+                    .italic()
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(ColorManager .grey3)
+                    .multilineTextAlignment(.center)
                 
                 HStack {
+                 
                     
+                    Text("Saying \nsomething \n'Nice'")
+                        .font(.system(size: 30))
+                        
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(ColorManager .grey3)
+                        .multilineTextAlignment(.center)
+                   
+                    Image("girlwalking250")
+                        .resizable()
+                        .frame(width: 150, height: 150)
                     
                 }
-                
+//                    Spacer()
+//                        .frame(height: 20)
+                    
+                    Text("RIGHT NOW!")
+                        .font(.system(size: 30))
+                        .fontWeight(.regular)
+                        .foregroundColor(ColorManager .grey4)
+//
+//                    Text("Your 'Vibe' shows around your planet")
+//                        .font(.system(size: 15))
+//                        .italic()
+//                        .foregroundColor(ColorManager.grey3)
+                    
             
-                
-                Spacer()
-                    .frame(height: 20)
-                
-                
-                Text("Join people around the world")
-                    .font(.system(size: 18))
-                    .italic()
-                    .foregroundColor(ColorManager.grey1)
-                
-                Text("saying something 'Nice to Friends'")
-                    .font(.system(size: 18))
-                    .italic()
-                    .foregroundColor(ColorManager.grey1)
-           
-                Text("RIGHT NOW")
-                    .font(.system(size: 35))
-                    .fontWeight(.medium)
-                    .foregroundColor(.green)
-                
-              
-                
+            
                 HStack {
                     
                 }
@@ -116,7 +148,7 @@ struct SaySomethingNice8: View {
                                 Rectangle()
                                     .frame(width:335, height: 50)
                                     .cornerRadius(15)
-                                    .foregroundColor(ColorManager .grey3)
+                                    .foregroundColor(ColorManager .grey1)
                                     .opacity(0.95)
                                 
                                 TextField("Say something 'Nice' here ...", text: $summary)
