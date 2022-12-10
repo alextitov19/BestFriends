@@ -116,10 +116,10 @@ struct SaySomethingNice8: View {
 //                    Spacer()
 //                        .frame(height: 20)
                     
-                    Text("RIGHT NOW!")
-                        .font(.system(size: 30))
-                        .fontWeight(.regular)
-                        .foregroundColor(ColorManager .grey4)
+//                    Text("RIGHT NOW!")
+//                        .font(.system(size: 30))
+//                        .fontWeight(.regular)
+//                        .foregroundColor(ColorManager .grey4)
 //
 //                    Text("Your 'Vibe' shows around your planet")
 //                        .font(.system(size: 15))
