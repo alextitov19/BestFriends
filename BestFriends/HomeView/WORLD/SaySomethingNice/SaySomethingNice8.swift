@@ -248,25 +248,25 @@ struct SaySomethingNice8: View {
                                         .background(shareColor)
                                         .cornerRadius(15)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                        .alert("Your friends have been Alerted", isPresented: $showingAlert) {
+                                        .alert("You just put a smile on your friend's face. \n\nFriend taps the received notification, then taps your planet on homepage and selects [Friend said something 'Nice'] from the dropdown menu to read your message.", isPresented: $showingAlert) {
                                             Button("OK", role: .cancel) { }
                                         }
                                 })
                                 
-                                
-                                NavigationLink(
-                                    destination: AtmosphereInfo2(user: user, atmosphere: atmosphere, friends: friends),
-                                    label: {
-                                        Text("How feature works")
-                                            .fontWeight(.thin)
-                                            .foregroundColor(Color.white)
-                                            .font(.system(size: 12))
-                                            .italic()
-                                            .frame(width: 50, height: 50)
-                                            .background(ColorManager .pmbc_green)
-                                            .cornerRadius(15)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    })
+//
+//                                NavigationLink(
+//                                    destination: AtmosphereInfo2(user: user, atmosphere: atmosphere, friends: friends),
+//                                    label: {
+//                                        Text("How feature works")
+//                                            .fontWeight(.thin)
+//                                            .foregroundColor(Color.white)
+//                                            .font(.system(size: 12))
+//                                            .italic()
+//                                            .frame(width: 50, height: 50)
+//                                            .background(ColorManager .pmbc_green)
+//                                            .cornerRadius(15)
+//                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                    })
                                 
                             }
                             
