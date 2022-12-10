@@ -83,14 +83,14 @@ struct MyRoomInfo: View {
                 ZStack {
                     
                     NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
-                        MyRoomCircle (color: ColorManager.grey1, friendName: "DreamVault \ncoming \n2023")
+                        MyRoomCircle (color: ColorManager.grey1, friendName: "DreamVault \n(coming \n2023)")
                     })
                     .offset(x: showItems ? 75 : 0, y: showItems ? 140: 0)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
                     
                     
                     NavigationLink(destination: EmptyView(), label: {
-                        MyRoomCircle (color: ColorManager.grey1, friendName: "Group \nGallery \ncoming \n2023")
+                        MyRoomCircle (color: ColorManager.grey1, friendName: "Group \nGallery \n(coming \n2023)")
                     })
                     .offset(x: showItems ? -75 : 0, y: showItems ? 160: 0)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
