@@ -41,28 +41,34 @@ struct HurtFeelings4: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text("Yep, it's been bugging \nyou all week!")
+                Text("Yep, it's been bugging \nyou all day!")
                     .font(.system(size: 20))
                     .foregroundColor(.white)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
-                    Spacer()
-                        .frame(height: 25)
+                   
                 
-                Text("We can do it for you")
+                Text("Maybe just a little nervious \nto say something.")
                     .font(.system(size: 20))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
-                   
-                    Spacer()
-                        .frame(height: 10)
+                    .multilineTextAlignment(.center)
                 
-                    Text("Right NOW!")
-                        .font(.system(size: 22))
-                        .italic()
-                        .fontWeight(.medium)
-                        .foregroundColor(Color.green)
+                Spacer()
+                    .frame(height: 60)
+                
+                Text("Join others saying something \nright now. Say ...")
+                    .font(.system(size: 20))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                    .multilineTextAlignment(.center)
+                
+                Text("'You hurt my feelings'")
+                    .font(.system(size: 27))
+                    .foregroundColor(.green)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
                 
                 
                 Spacer()
@@ -181,43 +187,15 @@ struct HurtFeelings4: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Push Notifications sent successfully", isPresented: $showingAlert) {
+                                .alert("We just sent the message via push notification. Now just talk it out in Chat or in-person. Weight lifted!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
                         })
                        
-                        
-                        Spacer()
-                            .frame(height: 25)
-                        
-                        Text("select 'friend' and we")
-                            .font(.system(size: 20))
-                            .italic()
-                            .foregroundColor(.white)
-                            .fontWeight(.ultraLight)
-                            .multilineTextAlignment(.center)
-                        
-                        
-                        Text("send push notification saying")
-                            .font(.system(size: 20))
-                            .italic()
-                            .foregroundColor(.white)
-                            .fontWeight(.ultraLight)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("'you hurt my feelings'")
-                            .font(.system(size: 27))
-                            .foregroundColor(.green)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                
-                        
-                        
-                        
-                        
+                    
                         Spacer ()
-                            .frame(height: 100)
+                            .frame(height: 125)
                         
                         
                         Button(action: {
@@ -234,18 +212,7 @@ struct HurtFeelings4: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
                         
-                        
-                        
-                        
-                        Text("Now, talk it out in Chat")
-                            .font(.system(size: 20))
-                            .italic()
-                            .fontWeight(.light)
-                            .foregroundColor(Color .white)
-                        
-
-                        
-                        
+                    
                         Spacer()
                             .frame(height: 100)
                     }
@@ -269,7 +236,7 @@ struct HurtFeelings4: View {
             for id in selectedFriends {
                 for f in friends {
                     if f.id == id {
-                        RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) You hurt my feelings", APNToken: f.APNToken)
+                        RestApi.instance.sendPushNotification(title: "BestFriends - World FriendGroup", body: "\(user.firstName) You hurt my feelings", APNToken: f.APNToken)
                     }
                 }
             }
