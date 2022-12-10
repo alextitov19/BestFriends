@@ -104,7 +104,8 @@ struct MyRoomInfo: View {
                         .frame(width: 220, height: 180)
                     //                    .blur(radius: 2)
                     
-                        .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                        .shadow(color: ColorManager .purple4, radius: 65, x: 30, y: 50)
+//                        .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
                     
                     

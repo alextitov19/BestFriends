@@ -74,9 +74,7 @@ struct HugPreload: View {
                     .foregroundColor(ColorManager .grey2)
                     .frame(width: 250, height: 200)
 //                    .blur(radius: 2)
-
-                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                    .opacity(0.99)
+                    .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
             
            VStack {
                
