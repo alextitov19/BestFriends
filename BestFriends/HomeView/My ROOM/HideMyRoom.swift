@@ -13,7 +13,7 @@ struct HideMyRoom: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     let user: User
-    let group: Group
+//    let group: Group
     
     @State private var pin = ""
     @State private var errorString = ""
@@ -258,9 +258,9 @@ struct HideMyRoom: View {
             // Check in pins are equal, unhide room
             if user.chatPin == pin {
                 var hiddenGroups: [String] = user.hiddenGroups ?? []
-                if let index = hiddenGroups.firstIndex(of: group.id) {
-                    hiddenGroups.remove(at: index)
-                }
+//                if let index = hiddenGroups.firstIndex(of: group.id) {
+//                    hiddenGroups.remove(at: index)
+//                }
                 let updatedUser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, chatBackground: user.chatBackground, smileNotes: user.smileNotes)
                 RestApi.instance.updateUser(user: updatedUser).then({ response in
                     print("Got update response: ", response)

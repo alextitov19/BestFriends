@@ -118,7 +118,7 @@ struct MyRoomInfo: View {
                     VStack {
                         
                         NavigationLink(
-                            destination: EmptyView(),
+                            destination: HideMyRoom(user: user),
                             label: {
                                 
                                 //                            Image("iconSettings15")
