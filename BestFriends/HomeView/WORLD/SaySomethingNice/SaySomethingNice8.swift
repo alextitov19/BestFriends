@@ -153,7 +153,7 @@ struct SaySomethingNice8: View {
                                 
                                 TextField("Say something 'Nice' here ...", text: $summary)
                                     .font(.system(size: 20))
-                                    .foregroundColor(ColorManager.orange3)
+                                    .foregroundColor(ColorManager.purple4)
                                     .padding(.horizontal, 37)
                                     .onReceive(Just(summary)) { _ in limitText(80) }
                                 

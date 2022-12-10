@@ -283,7 +283,7 @@ struct AtmosphereMain2: View {
                         Rectangle()
                             .frame(width:335, height: 50)
                             .cornerRadius(15)
-                            .foregroundColor(ColorManager .purple2)
+                            .foregroundColor(ColorManager .grey3)
                             .opacity(0.5)
                         
                         TextField("Type what's going on here ...", text: $summary)
