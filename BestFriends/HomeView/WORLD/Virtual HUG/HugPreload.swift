@@ -66,7 +66,7 @@ struct HugPreload: View {
                     HugCircle (color: ColorManager .purple2, friendName: "Wow! \nI could \nreally use \na HUG")
             })
                 .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
-                .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
+                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
                 
 
         Image(systemName: "heart.fill")

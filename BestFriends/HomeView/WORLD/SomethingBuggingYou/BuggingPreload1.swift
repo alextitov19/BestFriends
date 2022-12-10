@@ -52,35 +52,37 @@ struct BuggingPreload1: View {
                 
                 
                 NavigationLink(destination: HurtFeelings4(user: user, friends: friends, groups: groups), label: {
-                    BuggingCircle (color: ColorManager.purple2, friendName: "Friend \nhurt my \nFeelings")
+                    BuggingCircle (color: ColorManager.purple3, friendName: "Friend \nhurt my \nFeelings")
                 })
                 .offset(x: showItems ? -80 : 0, y: showItems ? -270: 0)
-              
+                .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
                 
                 
                 NavigationLink(destination: Apologies4(user: user, friends: friends, groups: groups), label: {
-                    BuggingCircle (color: ColorManager.purple4, friendName: "I hurt \nmy friend's \nFeelings")
+                    BuggingCircle (color: ColorManager.purple3, friendName: "I hurt \nmy friend's \nFeelings")
                 })
                 .offset(x: showItems ? 120 : 0, y: showItems ? -190: 0)
+                .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
+                
+                
+                
+                NavigationLink(destination: AskQuestion(user: user, friends: friends, groups: groups), label: {
+                    BuggingCircle (color: ColorManager.purple3, friendName: "Something \nelse on \nyour Mind?")
+                })
+                .offset(x: showItems ? 30 : 0, y: showItems ? -300: 0)
+                .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
                 
                 
                 
                 
                 ZStack {
                     
-                    
-                    NavigationLink(destination: AskQuestion(user: user, friends: friends, groups: groups), label: {
-                        BuggingCircle (color: ColorManager.orange3, friendName: "Something \nelse on \nyour Mind?")
-                    })
-                    .offset(x: showItems ? 30 : 0, y: showItems ? -300: 0)
-                    
-                    
-                 
+                
                     NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups), label: {
-                        BuggingCircle (color: ColorManager.red, friendName: "Just had \nHUGE \nFIGHT")
+                        BuggingCircle (color: ColorManager.orange3, friendName: "Just had \nHUGE \nFIGHT")
                     })
-                    .offset(x: showItems ? -130 : 0, y: showItems ? -175: 0)
-                    
+                    .offset(x: showItems ? -120 : 0, y: showItems ? -150: 0)
+                    .shadow(color: ColorManager .orange2, radius: 10, x: 10, y: 10)
                     
                     
                     NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups), label: {
