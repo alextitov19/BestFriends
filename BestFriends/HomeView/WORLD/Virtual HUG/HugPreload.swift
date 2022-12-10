@@ -25,10 +25,25 @@ struct HugPreload: View {
     var body: some View {
         
         ZStack {
+//            
+//            ColorManager.purple1
+//                .ignoresSafeArea()
+//                .onAppear()
             
-            ColorManager.purple1
+       
+            
+            Image("purpleBackground")
+                .resizable()
                 .ignoresSafeArea()
-                .onAppear()
+                .scaledToFill()
+                .opacity(0.5)
+            
+            
+            
+            AdPlayerView(name: "MyRoom5")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+            
         
             ZStack{
 
@@ -36,7 +51,7 @@ struct HugPreload: View {
                   HugCircle (color: ColorManager.purple2, friendName: "Send \nfriend \na HUG")
             })
               .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
-            
+              .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
                 
                 
 //                
@@ -48,10 +63,10 @@ struct HugPreload: View {
 
 
                 NavigationLink(destination: HugPushNotification2(user: user, friends: friends), label: {
-                    HugCircle (color: ColorManager .purple1, friendName: "Wow! \nI could \nreally use \na HUG")
+                    HugCircle (color: ColorManager .purple2, friendName: "Wow! \nI could \nreally use \na HUG")
             })
                 .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
-           
+                .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
                 
 
         Image(systemName: "heart.fill")
