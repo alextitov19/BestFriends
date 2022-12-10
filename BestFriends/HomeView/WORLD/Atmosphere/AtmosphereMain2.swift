@@ -39,7 +39,7 @@ struct AtmosphereMain2: View {
 //                .scaledToFill()
             
             
-            ColorManager .grey1
+            ColorManager .purple1
                 .ignoresSafeArea()
             
 
@@ -98,7 +98,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 0 ? Color(.systemCyan) : ColorManager .grey2)
+                        .background(mood == 0 ? Color(.systemCyan) : ColorManager .grey1)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -115,7 +115,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 1 ? Color(.systemCyan) : ColorManager .grey2)
+                        .background(mood == 1 ? Color(.systemCyan) : ColorManager .grey1)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -132,7 +132,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 2 ? Color(.systemCyan) : ColorManager .grey2)
+                        .background(mood == 2 ? Color(.systemCyan) : ColorManager .grey1)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -149,7 +149,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 3 ? Color(.systemCyan) : ColorManager .grey2)
+                        .background(mood == 3 ? Color(.systemCyan) : ColorManager .grey1)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -168,7 +168,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 4 ? Color(.systemGreen) : ColorManager .grey2)
+                        .background(mood == 4 ? Color(.systemGreen) : ColorManager .grey1)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -185,7 +185,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 5 ? Color(.orange) : ColorManager .grey2)
+                        .background(mood == 5 ? Color(.orange) : ColorManager .grey1)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -207,7 +207,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 6 ? Color(.systemYellow) : ColorManager .grey2)
+                        .background(mood == 6 ? Color(.systemYellow) : ColorManager .grey1)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -224,7 +224,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 7 ? Color(.systemYellow) : ColorManager .grey2)
+                        .background(mood == 7 ? Color(.systemYellow) : ColorManager .grey1)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -241,7 +241,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 8 ? Color(.systemYellow) : ColorManager .grey2)
+                        .background(mood == 8 ? Color(.systemYellow) : ColorManager .grey1)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -258,7 +258,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 9 ? Color(.systemYellow) : ColorManager .grey2)
+                        .background(mood == 9 ? Color(.systemYellow) : ColorManager .grey1)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -283,8 +283,8 @@ struct AtmosphereMain2: View {
                         Rectangle()
                             .frame(width:335, height: 50)
                             .cornerRadius(15)
-                            .foregroundColor(ColorManager .grey2)
-                            .opacity(0.95)
+                            .foregroundColor(ColorManager .purple2)
+                            .opacity(0.5)
                         
                         TextField("Type what's going on here ...", text: $summary)
                             .font(.system(size: 20))
