@@ -61,15 +61,15 @@ struct BuggingPreload1: View {
                 NavigationLink(destination: Apologies4(user: user, friends: friends, groups: groups), label: {
                     BuggingCircle (color: ColorManager.purple3, friendName: "I hurt \nmy friend's \nFeelings")
                 })
-                .offset(x: showItems ? 120 : 0, y: showItems ? -190: 0)
+                .offset(x: showItems ? 30 : 0, y: showItems ? -300: 0)
                 .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
                 
                 
                 
                 NavigationLink(destination: AskQuestion(user: user, friends: friends, groups: groups), label: {
-                    BuggingCircle (color: ColorManager.purple3, friendName: "Something \nelse on \nyour Mind?")
+                    BuggingCircle (color: .cyan, friendName: "Something \nelse on \nyour Mind?")
                 })
-                .offset(x: showItems ? 30 : 0, y: showItems ? -300: 0)
+                .offset(x: showItems ? 120 : 0, y: showItems ? -190: 0)
                 .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
                 
                 
@@ -79,7 +79,7 @@ struct BuggingPreload1: View {
                     
                 
                     NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups), label: {
-                        BuggingCircle (color: ColorManager.orange3, friendName: "Just had \nHUGE \nFIGHT")
+                        BuggingCircle (color: ColorManager.orange3, friendName: "OMG! \nHUGE \nFIGHT")
                     })
                     .offset(x: showItems ? -120 : 0, y: showItems ? -150: 0)
                     .shadow(color: ColorManager .orange2, radius: 10, x: 10, y: 10)
@@ -106,7 +106,7 @@ struct BuggingPreload1: View {
                             Spacer ()
                                 .frame(height: 40)
                             
-                            Text("Nervious,")
+                            Text("Something \nbugging you")
                                 .font(.system(size: 15))
                             
                                 .foregroundColor(.white)
@@ -115,7 +115,7 @@ struct BuggingPreload1: View {
                             
                             
                             
-                            Text("not exactly sure \nwhat to say?")
+                            Text("not sure what to \nsay or do?")
                                 .font(.system(size: 15))
                             
                                 .foregroundColor(.white)
@@ -141,7 +141,7 @@ struct BuggingPreload1: View {
                                 .frame(height: 25)
                             
                             
-                            Text("Join users around the ")
+                            Text("Join everyone around the ")
                                 .font(.system(size: 20))
                             
                                 .foregroundColor(.white)
