@@ -48,7 +48,7 @@ struct HugPreload: View {
 
 
                 NavigationLink(destination: HugPushNotification2(user: user, friends: friends), label: {
-                HugCircle (color: ColorManager.orange3, friendName: "Wow! \nI could \nreally use \na HUG?")
+                HugCircle (color: ColorManager.orange3, friendName: "Wow! \nI could \nreally use \na HUG!")
             })
                 .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
            
@@ -99,14 +99,14 @@ struct HugPreload: View {
                              .multilineTextAlignment(.center)
  //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
                
-               
-               
+        
                
                
                 }
             }
-            
           
+            
+            
            .onTapGesture {
                withAnimation {
                self.showItems.toggle()

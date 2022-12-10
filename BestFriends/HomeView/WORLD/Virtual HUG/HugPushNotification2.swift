@@ -178,7 +178,7 @@ struct HugPushNotification2: View {
                         VStack {
                             
                             Spacer()
-                                .frame(height: 30)
+                                .frame(height: 175)
                    
                         }
                         
@@ -219,7 +219,7 @@ struct HugPushNotification2: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends World FriendGroups", body: "\(user.firstName) Can you please send me a virtual HUG", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends - World FriendGroups", body: "\(user.firstName) I could really use a HUG rigth about now!", APNToken: f.APNToken)
                 }
             }
         }

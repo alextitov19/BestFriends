@@ -60,7 +60,7 @@ struct PhotoPopView: View {
                 
                 Text("'Shake' iPhone to see \nfriend's posted images")
                     .font(.system(size: 18, weight: .light))
-                    .foregroundColor(.green)
+                    .foregroundColor(ColorManager .grey2)
 //
 //                NavigationLink(
 //                   destination: PhotoPop3(user: user, friends: friends),
