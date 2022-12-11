@@ -303,7 +303,7 @@ struct PlanetActionsView: View {
                                     .shadow(color: .white, radius: 5, x: 0, y: 0)
                                     .shadow(color: .white, radius: 5, x: 0, y: 0)
                                     .glow(color: ColorManager.purple4, radius: 1)
-                                    .opacity(0.5)
+                                    .opacity(0.2)
                                 
                                 VStack {
                                     
