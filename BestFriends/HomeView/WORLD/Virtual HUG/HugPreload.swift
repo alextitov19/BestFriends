@@ -96,7 +96,7 @@ struct HugPreload: View {
                             .foregroundColor(.white)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
-                        //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
                         Text("HUG?")
                             .font(.system(size: 45))
@@ -104,7 +104,7 @@ struct HugPreload: View {
                             .foregroundColor(.white)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
-                        //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
                         
                         
@@ -138,8 +138,9 @@ struct HugPreload: View {
                 
                 Image(systemName: "heart.fill")
                             .resizable()
-                            .foregroundColor(.red)
-                            .frame(width: 220, height: 180)
+                            .foregroundColor(ColorManager .purple2)
+                            .frame(width: 145, height: 120)
+                            .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
                 
                 Text(friendName)
                     .fontWeight(.light)
