@@ -20,6 +20,7 @@ struct User: Codable {
     var chatBackground: String
     var smileNotes: [String]?
     var photoPop: [String]?
+    var roomHidden: Bool?
 
     enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -34,5 +35,6 @@ struct User: Codable {
         case chatBackground = "chat_background"
         case smileNotes = "smile_notes"
         case photoPop = "photo_pop"
+        case roomHidden = "room_hidden"
     }
 }

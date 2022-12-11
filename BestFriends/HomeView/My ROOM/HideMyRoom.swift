@@ -209,7 +209,7 @@ struct HideMyRoom: View {
                     }//1,2,3
                 }
                 
-                          Text("Hide Chat - restore with secret PIN")
+                          Text("Hide Room - restore with secret PIN")
                                 .font(.system(size: 20))
                                 .foregroundColor(.white)
                                 .fontWeight(.ultraLight)
@@ -249,7 +249,7 @@ struct HideMyRoom: View {
     private func submitPin() {
         if user.chatPin.count == 0 {
             // Create new chat pin
-            let updatedUser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: user.hiddenGroups, atmosphere: user.atmosphere, chatPin: pin, chatBackground: user.chatBackground, smileNotes: user.smileNotes)
+            let updatedUser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: user.hiddenGroups, atmosphere: user.atmosphere, chatPin: pin, chatBackground: user.chatBackground, smileNotes: user.smileNotes, roomHidden: true)
             RestApi.instance.updateUser(user: updatedUser).then({ response in
                 print("Got update response: ", response)
                 sessionManager.showHome()
@@ -257,11 +257,7 @@ struct HideMyRoom: View {
         } else {
             // Check in pins are equal, unhide room
             if user.chatPin == pin {
-                var hiddenGroups: [String] = user.hiddenGroups ?? []
-//                if let index = hiddenGroups.firstIndex(of: group.id) {
-//                    hiddenGroups.remove(at: index)
-//                }
-                let updatedUser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, chatBackground: user.chatBackground, smileNotes: user.smileNotes)
+                let updatedUser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: user.hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, chatBackground: user.chatBackground, smileNotes: user.smileNotes, roomHidden: false)
                 RestApi.instance.updateUser(user: updatedUser).then({ response in
                     print("Got update response: ", response)
                     sessionManager.showHome()

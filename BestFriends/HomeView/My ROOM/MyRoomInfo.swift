@@ -23,7 +23,8 @@ struct MyRoomInfo: View {
     
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
-    
+    @State private var isLockTapped = false
+
     
     var body: some View {
         
@@ -143,9 +144,7 @@ struct MyRoomInfo: View {
                         
                         
                         
-                        NavigationLink(
-                            destination: HideMyRoom(user: user),
-                            label: {
+                     
                          
                                 Text("Lock Room")
                                     .fontWeight(.light)
@@ -154,7 +153,23 @@ struct MyRoomInfo: View {
                                     .font(.system(size: 15))
                                     .background(ColorManager.grey3)
                                     .cornerRadius(15)
-                            })
+                                    .onTapGesture(perform: {
+                                        let updatedUser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: user.hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, chatBackground: user.chatBackground, smileNotes: user.smileNotes, roomHidden: true)
+                                        RestApi.instance.updateUser(user: updatedUser).then({ response in
+                                            print("Got update response: ", response)
+                                            isLockTapped.toggle()
+                                        })
+                                    })
+                                    .onAppear(perform: {
+                                        if user.roomHidden != nil {
+                                            if user.roomHidden == true {
+                                                isLockTapped.toggle()
+                                            }
+                                        }
+                                    })
+                                    .fullScreenCover(isPresented: $isLockTapped) {
+                                        HideMyRoom(user: user)
+                                    }
                     }
                 }
                 
