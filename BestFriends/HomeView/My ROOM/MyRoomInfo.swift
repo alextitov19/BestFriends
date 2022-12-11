@@ -137,15 +137,7 @@ struct MyRoomInfo: View {
                             .foregroundColor(.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                        
-                        
-                        Spacer ()
-                            .frame(height: 35)
-                        
-                        
-                        
-                     
-                         
+                   
                                 Text("Lock Room")
                                     .fontWeight(.light)
                                     .frame(width: 85, height: 21)
