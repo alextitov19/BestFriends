@@ -103,7 +103,7 @@ struct MyRoomInfo: View {
                     
                     
                     NavigationLink(destination: EmptyView(), label: {
-                        MyRoomCircle (color: ColorManager .purple3, friendName: "")
+                        MyRoomCircle (color: ColorManager .grey2, friendName: "")
                     })
                     .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
@@ -116,52 +116,45 @@ struct MyRoomInfo: View {
                         .resizable()
                         .foregroundColor(ColorManager .grey2)
                         .frame(width: 220, height: 180)
-                    //                    .blur(radius: 2)
-                    
                         .shadow(color: ColorManager .purple4, radius: 65, x: 30, y: 50)
-//                        .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                         .opacity(0.7)
-                    
-                    
-                    
-                    Spacer ()
-                        .frame(height: 150)
-                    
-                    
                     
                     
                     VStack {
                         
-                        NavigationLink(
-                            destination: HideMyRoom(user: user),
-                            label: {
-                                
-                                //                            Image("iconSettings15")
-                                
-                                Text("Lock Room")
-                                    .fontWeight(.light)
-                                    .frame(width: 85, height: 21)
-                                //                        .foregroundColor(ColorManager.grey1)
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 15))
-                                    .background(ColorManager.grey3)
-                                    .cornerRadius(15)
-                                //                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            })
-                        
+                       
                         Spacer ()
-                            .frame(height: 25)
+                            .frame(height: 60)
                         
-                        
-                        
-                        Text("my room")
-                            .font(.system(size: 37))
+                        Text("my \nprivate")
+                            .font(.system(size: 20))
+                            .foregroundColor(.white)
+                            .fontWeight(.ultraLight)
+                            .multilineTextAlignment(.center)
+                        Text("room")
+                            .font(.system(size: 40))
                             .foregroundColor(.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
                         
+                        Spacer ()
+                            .frame(height: 35)
                         
+                        
+                        
+                        NavigationLink(
+                            destination: HideMyRoom(user: user),
+                            label: {
+                         
+                                Text("Lock Room")
+                                    .fontWeight(.light)
+                                    .frame(width: 85, height: 21)
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 15))
+                                    .background(ColorManager.grey3)
+                                    .cornerRadius(15)
+                            })
                     }
                 }
                 

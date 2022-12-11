@@ -160,7 +160,6 @@
 		CF47CF1428E81BBE008B6F11 /* Wind2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF1328E81BBE008B6F11 /* Wind2.mp4 */; };
 		CF47D5D32862531C004B47A1 /* RemoveFriend2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47D5D22862531C004B47A1 /* RemoveFriend2.swift */; };
 		CF4A08D82877E2B600ADA9DD /* NostalgiaPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08D72877E2B600ADA9DD /* NostalgiaPreload.swift */; };
-		CF4A08DE2878497800ADA9DD /* Atmosphere2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08DD2878497800ADA9DD /* Atmosphere2.mp4 */; };
 		CF4A08E228793CC900ADA9DD /* HurtFeelings4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08E128793CC900ADA9DD /* HurtFeelings4.swift */; };
 		CF4A08E42879443E00ADA9DD /* Apologies4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08E32879443E00ADA9DD /* Apologies4.swift */; };
 		CF4A08E62879481200ADA9DD /* NostalgiaPreload2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08E52879481200ADA9DD /* NostalgiaPreload2.swift */; };
@@ -231,7 +230,6 @@
 		CFD0469F2838394C00BF0B02 /* UrgentChatInvite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0469E2838394C00BF0B02 /* UrgentChatInvite.swift */; };
 		CFD0ABD1285C00FF0032CA3D /* ReportIssues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0ABD0285C00FF0032CA3D /* ReportIssues.swift */; };
 		CFD0ABD8285C492F0032CA3D /* BuiltByTeens2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0ABD7285C492F0032CA3D /* BuiltByTeens2.swift */; };
-		CFD0ABDC285C4E040032CA3D /* BuiltByTeens3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFD0ABDB285C4E040032CA3D /* BuiltByTeens3.mp4 */; };
 		CFD12CBE281499D700AB2539 /* IndividualFriendMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */; };
 		CFD12CC1281770B600AB2539 /* MyStreaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CC0281770B600AB2539 /* MyStreaks.swift */; };
 		CFD12CC428179CD600AB2539 /* StreakCongratulations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CC328179CD600AB2539 /* StreakCongratulations.swift */; };
@@ -421,7 +419,6 @@
 		CF47CF1328E81BBE008B6F11 /* Wind2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wind2.mp4; sourceTree = "<group>"; };
 		CF47D5D22862531C004B47A1 /* RemoveFriend2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFriend2.swift; sourceTree = "<group>"; };
 		CF4A08D72877E2B600ADA9DD /* NostalgiaPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NostalgiaPreload.swift; sourceTree = "<group>"; };
-		CF4A08DD2878497800ADA9DD /* Atmosphere2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Atmosphere2.mp4; sourceTree = "<group>"; };
 		CF4A08E128793CC900ADA9DD /* HurtFeelings4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurtFeelings4.swift; sourceTree = "<group>"; };
 		CF4A08E32879443E00ADA9DD /* Apologies4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apologies4.swift; sourceTree = "<group>"; };
 		CF4A08E52879481200ADA9DD /* NostalgiaPreload2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NostalgiaPreload2.swift; sourceTree = "<group>"; };
@@ -493,7 +490,6 @@
 		CFD0469E2838394C00BF0B02 /* UrgentChatInvite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgentChatInvite.swift; sourceTree = "<group>"; };
 		CFD0ABD0285C00FF0032CA3D /* ReportIssues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportIssues.swift; sourceTree = "<group>"; };
 		CFD0ABD7285C492F0032CA3D /* BuiltByTeens2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltByTeens2.swift; sourceTree = "<group>"; };
-		CFD0ABDB285C4E040032CA3D /* BuiltByTeens3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BuiltByTeens3.mp4; sourceTree = "<group>"; };
 		CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualFriendMessages.swift; sourceTree = "<group>"; };
 		CFD12CC0281770B600AB2539 /* MyStreaks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStreaks.swift; sourceTree = "<group>"; };
 		CFD12CC328179CD600AB2539 /* StreakCongratulations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakCongratulations.swift; sourceTree = "<group>"; };
@@ -1045,13 +1041,11 @@
 				CF5263D6266477C600243DD7 /* background_4.mp4 */,
 				7A78232926B2419600CA76FC /* background_5.mp4 */,
 				CF37534E28B5E925003817E3 /* Dreams1.mp4 */,
-				CF4A08DD2878497800ADA9DD /* Atmosphere2.mp4 */,
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
 				CF65042A28A185750092EEB9 /* PaperAirplanes.mp4 */,
 				CFDB14FB2855A1E600155CEE /* dramaLights.mp4 */,
 				CF2DBCF028552527008616A3 /* storm2.mp4 */,
 				CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */,
-				CFD0ABDB285C4E040032CA3D /* BuiltByTeens3.mp4 */,
 				CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */,
 				CF47CF1328E81BBE008B6F11 /* Wind2.mp4 */,
 				CFD6C05829405EB100D57E0B /* MyRoom5.mp4 */,
@@ -1500,7 +1494,6 @@
 				CF47CF0328DB67A8008B6F11 /* PlanetSound.mp4 in Resources */,
 				CF47CF1428E81BBE008B6F11 /* Wind2.mp4 in Resources */,
 				CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */,
-				CF4A08DE2878497800ADA9DD /* Atmosphere2.mp4 in Resources */,
 				7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */,
 				CF65040028864AF00092EEB9 /* background_1.mp4 in Resources */,
 				7A63AF8B26A339C70072E21E /* Launch Screen.storyboard in Resources */,
@@ -1509,7 +1502,6 @@
 				CF65042B28A185750092EEB9 /* PaperAirplanes.mp4 in Resources */,
 				CFD6C05929405EB100D57E0B /* MyRoom5.mp4 in Resources */,
 				CF3DB37628DA85BA00BF9CCD /* Meena1.m4a in Resources */,
-				CFD0ABDC285C4E040032CA3D /* BuiltByTeens3.mp4 in Resources */,
 				7ACDB183282825C1009E1CFD /* GoogleService-Info.plist in Resources */,
 				CF37534F28B5E925003817E3 /* Dreams1.mp4 in Resources */,
 			);

@@ -83,21 +83,30 @@ struct PlanetActionsView: View {
         
         VStack {
             
+//            Image("arrowLeft")
+//                .frame(width: 5, height: 5)
+//                .foregroundColor(.white)
+            
+            Text("< tap")
+                .foregroundColor(.white)
+                .font(.system(size: 20, weight: .ultraLight))
+                .multilineTextAlignment(.leading)
+                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                .opacity(0.50)
+            
+            
             NavigationLink(
                 destination: StartHere1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                 label: {
                    
                     Image("iconSettings15")
-                    
-//                    Text("?")
-//                        .fontWeight(.light)
                         .frame(width: 50, height: 20)
-//                        .foregroundColor(ColorManager.grey1)
                         .foregroundColor(.white)
                         .font(.system(size: 20))
                         .background(ColorManager.grey4)
                       .cornerRadius(15)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                      .shadow(color: Color(.gray), radius: 1, x: 1, y: 1)
+                      .opacity(0.50)
                 })
             
 
@@ -117,7 +126,8 @@ struct PlanetActionsView: View {
                                 Circle()
                                     .frame(width: 110, height: 110)
                                     .foregroundColor(ColorManager.purple3)
-                                    .shadow(color: .black, radius: 2, x: 0, y: 2)
+//                                    .shadow(color: .black, radius: 2, x: 0, y: 2)
+//                                    .shadow(color: ColorManager .purple4, radius: 5, x: 5, y: 5)
                                     .opacity(0.60)
                                 
                                 VStack {
@@ -232,9 +242,7 @@ struct PlanetActionsView: View {
                                     .frame(width: 140, height: 140)
                                     .foregroundColor(ColorManager.purple2)
                                     .shadow(color: .white, radius: 17, x: 0, y: 0)
-                                    .shadow(color: .white, radius: 20, x: 0, y: 0)
-                                
-                                    .glow(color: ColorManager.purple4, radius: 3)
+                                    .shadow(color: .white, radius: 20, x: 0, y: 0)      .glow(color: ColorManager.purple4, radius: 3)
                                     .opacity(0.5)
                                 
                                 VStack {
@@ -273,14 +281,14 @@ struct PlanetActionsView: View {
                                         .italic()
                                         .font(.system(size: 15, weight: .light))
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.90)
+                                        .opacity(0.50)
                                 }
                             }
                         })
                         
                         
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 35)
                         
                    
                         
@@ -292,8 +300,10 @@ struct PlanetActionsView: View {
                              
                                     .frame(width: 110, height: 110)
                                     .foregroundColor(ColorManager.purple3)
-                                    .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                    .opacity(0.80)
+                                    .shadow(color: .white, radius: 5, x: 0, y: 0)
+                                    .shadow(color: .white, radius: 5, x: 0, y: 0)
+                                    .glow(color: ColorManager.purple4, radius: 1)
+                                    .opacity(0.5)
                                 
                                 VStack {
                                     
