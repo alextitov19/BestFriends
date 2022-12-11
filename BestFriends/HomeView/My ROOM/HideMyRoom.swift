@@ -209,10 +209,11 @@ struct HideMyRoom: View {
                     }//1,2,3
                 }
                 
-                          Text("Hide Room - restore with secret PIN")
+                          Text("Your Room is Locked, \nrestore with secret PIN")
                                 .font(.system(size: 20))
                                 .foregroundColor(.white)
                                 .fontWeight(.ultraLight)
+                                .multilineTextAlignment (.center)
                                 .padding()
                 
                 
