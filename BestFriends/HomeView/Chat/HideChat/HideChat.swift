@@ -207,7 +207,7 @@ struct HideChatView: View {
                     }//1,2,3
                 }
                 
-                          Text("Hide Chat - restore with secret PIN")
+                          Text("Your Chat room is locked \nrestore with secret PIN")
                                 .font(.system(size: 20))
                                 .foregroundColor(.white)
                                 .fontWeight(.ultraLight)
