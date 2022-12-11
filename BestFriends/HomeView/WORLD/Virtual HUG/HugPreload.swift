@@ -136,14 +136,10 @@ struct HugPreload: View {
             
             ZStack {
                 
-                Rectangle()
-                    .frame(width: 110, height: 110)
-                //        .clipShape(Capsule())
-                //        .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
-                    .clipShape(Circle())
-                    .foregroundColor(color)
-                    .opacity(0.7)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
+                Image(systemName: "heart.fill")
+                            .resizable()
+                            .foregroundColor(.red)
+                            .frame(width: 220, height: 180)
                 
                 Text(friendName)
                     .fontWeight(.light)
