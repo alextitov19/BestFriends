@@ -322,7 +322,7 @@ struct SaySomethingNice8: View {
                 for id in selectedFriends {
                     for f in friends {
                         if f.id == id {
-                            RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent 'Nice' message. You may want to send one back.", APNToken: f.APNToken)
+                            RestApi.instance.sendPushNotification(title: "BestFriends - World FriendGroups", body: "\(user.firstName) sent you'Nice' message. You may want to send one back.", APNToken: f.APNToken)
                         }
                     }
                 }
