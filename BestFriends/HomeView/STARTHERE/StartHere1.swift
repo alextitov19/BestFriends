@@ -30,14 +30,14 @@ struct StartHere1: View {
         
         ZStack {
             
-            Color .black
+            ColorManager .grey4
                 .ignoresSafeArea()
                 .onAppear()
             
             
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
-            
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//
             
             ZStack {
                 
@@ -116,20 +116,20 @@ struct StartHere1: View {
                     
                     
                     
-//                    
+//
 //                    NavigationLink(destination:  SurveyStickersPreload(), label: {
 //                        StartHereCircle (color: ColorManager.purple1, friendName: "Take \n Survey, \nget \nSTICKERS")
 //                    })
 //                    .offset(x: showItems ? -10 : 0, y: showItems ? 280: 0)
 //                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-//                    
+//
                     
                     
                     
                     
                     Image(systemName: "triangle.fill")
                         .resizable()
-                        .foregroundColor(.cyan)
+                        .foregroundColor(ColorManager .grey2)
                         .frame(width: 250, height: 250)
                         .shadow(color: .purple, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
