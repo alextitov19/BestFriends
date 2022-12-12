@@ -23,15 +23,20 @@ struct BuiltForTeens: View {
 //    
     var body: some View {
         ZStack {
-//     
+     
+            ColorManager .purple2
+              .ignoresSafeArea()
+              .onAppear()
+            
+            
 //            Color .black
 //              .ignoresSafeArea()
 //              .onAppear()
             
-            Image("blueBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+//            Image("blueBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
 
             AdPlayerView(name: "dramaLights")
                 .ignoresSafeArea()
