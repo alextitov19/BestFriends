@@ -26,19 +26,25 @@ struct INFOPreload2: View {
     var body: some View {
         ZStack {
             
-            Color .black
-              .ignoresSafeArea()
-              .onAppear()
+//            Color .black
+//              .ignoresSafeArea()
+//              .onAppear()
             
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
+            
+                            Image("purpleBackground")
+                                .resizable()
+                                .ignoresSafeArea()
+                                .scaledToFill()
 
-            AdPlayerView(name: "PaperAirplanes")
+            AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.75)
+
+//            AdPlayerView(name: "PaperAirplanes")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.75)
           
             ZStack {
                 Circle()
@@ -96,29 +102,31 @@ struct INFOPreload2: View {
                             .font(.system(size: 25))
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
-                           
+                   
+                    Spacer()
+                        .frame(height: 10)
                     
+                    Text(".  .  .")
+                        .font(.system(size: 25, weight: .bold))
+                        .foregroundColor(ColorManager .grey2)
+                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                        .opacity(0.50)
+                        .multilineTextAlignment(.center)
                     
                     Spacer()
-                        .frame(height: 15)
+                        .frame(height: 10)
                     
                     Text("kicking through")
-                            .font(.system(size: 25))
+                            .font(.system(size: 27))
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
                     
                     Text("autumn's leaves")
-                            .font(.system(size: 25))
+                            .font(.system(size: 28))
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
                     
-                    Spacer()
-                        .frame(height: 15)
-                    
-                    Text("feeling safe in the silence")
-                            .font(.system(size: 25))
-                            .fontWeight(.thin)
-                            .foregroundColor(Color.white)
+          
                     
                     Spacer()
                         .frame(height: 50)
@@ -153,23 +161,14 @@ struct INFOPreload2: View {
       
                     Spacer()
                         .frame(height: 20)
+              
                     
-                    NavigationLink(
-                        destination: InfoViewPlanet(user: user),
-                        label: {
-                            Text("Walk-through")
-                                .fontWeight(.thin)
-                                .frame(width: 175, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager.pmbc_green)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                        })
-                        
-                    
-                    
+                    Text("feeling safe in the silence")
+                            .font(.system(size: 20))
+                            .italic()
+                            .fontWeight(.thin)
+                            .foregroundColor(Color.white)
+              
                     Spacer()
                         .frame(height: 65)
                     

@@ -23,24 +23,15 @@ struct BuiltForTeens: View {
 //    
     var body: some View {
         ZStack {
-//            ColorManager.grey3
-//                .ignoresSafeArea()
-//                .onAppear()
+//     
+//            Color .black
+//              .ignoresSafeArea()
+//              .onAppear()
             
-//            Image("lampblue")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
-
-            
-            Color .black
-              .ignoresSafeArea()
-              .onAppear()
-            
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
 
             AdPlayerView(name: "dramaLights")
                 .ignoresSafeArea()
@@ -60,37 +51,37 @@ struct BuiltForTeens: View {
             }
                 
             VStack {
-  
-                     Text("standing together in our drama")
-                         .font(.system(size: 23))
-                         .fontWeight(.thin)
-                         .foregroundColor(Color.white)
-                         .padding()
-                
-                
-                Text("protecting each other's backs")
-                    .font(.system(size: 23))
-                    .fontWeight(.thin)
-                    .foregroundColor(Color.white)
-                    .padding()
-                
-               
-                Text("never giving up on friends in need, \n            yielding true friends")
-                    .font(.system(size: 23))
-                    .fontWeight(.thin)
-                    .foregroundColor(Color.white)
-                    .padding()
-                                                                    
-                Text("yet, each of us remaining \n       uniquely different")
-                    .font(.system(size: 23))
-                    .fontWeight(.thin)
-                    .foregroundColor(Color.white)
-                    .padding()
-                
- //
-                Spacer()
-                    .frame(height: 100)
-            
+//
+//                     Text("standing together in our drama")
+//                         .font(.system(size: 23))
+//                         .fontWeight(.thin)
+//                         .foregroundColor(Color.white)
+//                         .padding()
+//
+//
+//                Text("protecting each other's backs")
+//                    .font(.system(size: 23))
+//                    .fontWeight(.thin)
+//                    .foregroundColor(Color.white)
+//                    .padding()
+//
+//
+//                Text("never giving up on friends in need, \n            yielding true friends")
+//                    .font(.system(size: 23))
+//                    .fontWeight(.thin)
+//                    .foregroundColor(Color.white)
+//                    .padding()
+//
+//                Text("yet, each of us remaining \n       uniquely different")
+//                    .font(.system(size: 23))
+//                    .fontWeight(.thin)
+//                    .foregroundColor(Color.white)
+//                    .padding()
+//
+// //
+//                Spacer()
+//                    .frame(height: 50)
+//
                     VStack {
 
                         NavigationLink(
@@ -123,11 +114,11 @@ struct BuiltForTeens: View {
                                 
                             })
                         
-                        
-                        Spacer()
-                            .frame(height: 80)
 
-   
+                        Spacer()
+                            .frame(height: 50)
+
+
                       
                  
                         

@@ -39,44 +39,43 @@ struct INFOPreload: View {
                 
                 
                 VStack {
-
-                    
-                    Spacer ()
-                        .frame(height: 40)
-
-                    Text("Taking comfort, knowing your ")
-                        .font(.system(size: 20))
-                        .foregroundColor(.white)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
+   
+                    Text("Building Resilient Friendships")
+                        .font(.system(size: 35, weight: .bold))
+                        .foregroundColor(ColorManager .grey1)
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    
-                    Text("friends care about you")
-                        .font(.system(size: 20))
-                        .foregroundColor(.white)
-                        .fontWeight(.thin)
+                        .opacity(0.50)
                         .multilineTextAlignment(.center)
-                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    
                  
+                    Spacer ()
+                        .frame(height: 10)
+                    
+                    Text(".  .  .")
+                        .font(.system(size: 25, weight: .bold))
+                        .foregroundColor(ColorManager .grey1)
+                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        .opacity(0.50)
+                        .multilineTextAlignment(.center)
+                   
+                    Spacer ()
+                        .frame(height: 10)
+                    
+                    Text("Reducing \nFriendGroup Drama")
+                        .font(.system(size: 35, weight: .bold))
+                        .foregroundColor(ColorManager .grey1)
+                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        .opacity(0.50)
+                        .multilineTextAlignment(.center)
+                    
+                    
+                    
                     
                     ZStack{
-                        
-                        NavigationLink(destination:  InfoCoolVideo(user: user), label: {
-                            SomethingNiceCircle (color: ColorManager.pmbc_blue, friendName: "")
-                        })
-                        
-                        Image(systemName: "triangle.fill")
-                            .resizable()
-                            .foregroundColor(.cyan)
-                            .frame(width: 350, height: 300)
-                           .shadow(color: .white, radius: 65, x: 30, y: 50)
-                            .opacity(0.65)
-                        
-                        VStack {
+               
+ 
                         
                             Spacer ()
-                                .frame(height: 120)
+                                .frame(height: 100)
                             
                             Text("5 \nminutes \ndaily")
                                 .font(.system(size: 17))
@@ -88,32 +87,13 @@ struct INFOPreload: View {
                            
                             Spacer ()
                                 .frame(height: 30)
-                            
-                            Text("Build Resilient Friendships")
-                                .font(.system(size: 23))
-                                .foregroundColor(.white)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            
-                            
-                            Text("while")
-                                .font(.system(size: 20))
-                                .italic()
-                                .foregroundColor(.white)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            
-                            Text("Reducing FriendGroup Drama")
-                                .font(.system(size: 23))
-                            //                             .italic()
-                                .foregroundColor(.white)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            
-                            
+                          
+                        VStack {
+
+                            NavigationLink(destination:  EmptyView(), label: {
+                                SomethingNiceCircle (color: ColorManager .purple2, friendName: "")
+                            })
+
                         }
                     }
                    
@@ -121,25 +101,8 @@ struct INFOPreload: View {
                         
                         
                         Spacer ()
-                            .frame(height: 20)
-//
-//                        Text("together in a safe, positive space")
-//                            .font(.system(size: 23))
-//                            .italic()
-//                            .fontWeight(.thin)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(ColorManager.purple2)
-//
-                        
-                        Text("All of us at the same time, \ntogether")
-                            .font(.system(size: 23))
-                           
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple2)
-                    
-                        Spacer()
-                            .frame(height: 40)
+                            .frame(height: 120)
+
                      
                         NavigationLink(
                             destination: INFOPreload2(user: user),
@@ -157,33 +120,29 @@ struct INFOPreload: View {
           
                         Spacer()
                             .frame(height: 20)
+                      
                         
-                        NavigationLink(
-                            destination: InfoViewPlanet(user: user),
-                            label: {
-                                Text("Walk-through")
-                                    .fontWeight(.thin)
-                                    .frame(width: 175, height: 30)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(ColorManager.pmbc_green)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            })
-                        
-                        Text("All in a safe, positive space")
+                        Text("All of us at the same time,")
                             .font(.system(size: 20))
+                            .italic()
                             .foregroundColor(.white)
-                            .fontWeight(.thin)
+                            .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
+                        Text("together in a safe, positive space")
+                            .font(.system(size: 20))
+                            .italic()
+                            .foregroundColor(.white)
+                            .fontWeight(.regular)
+                            .multilineTextAlignment(.center)
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
                         Spacer()
                             .frame(height: 75)
                         
-                        
+
+                     
                         
                     }
                 }
