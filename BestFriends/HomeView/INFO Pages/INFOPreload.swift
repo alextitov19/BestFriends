@@ -42,7 +42,7 @@ struct INFOPreload: View {
    
                     Text("Building Resilient Friendships")
                         .font(.system(size: 35, weight: .bold))
-                        .foregroundColor(ColorManager .grey1)
+                        .foregroundColor(ColorManager .purple3)
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                         .opacity(0.50)
                         .multilineTextAlignment(.center)
@@ -62,7 +62,7 @@ struct INFOPreload: View {
                     
                     Text("Reducing \nFriendGroup Drama")
                         .font(.system(size: 35, weight: .bold))
-                        .foregroundColor(ColorManager .grey1)
+                        .foregroundColor(ColorManager .purple3)
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                         .opacity(0.50)
                         .multilineTextAlignment(.center)
@@ -122,17 +122,28 @@ struct INFOPreload: View {
                             .frame(height: 20)
                       
                         
-                        Text("All of us at the same time,")
+                        Text("All of us,")
                             .font(.system(size: 20))
-                            .italic()
+                        
                             .foregroundColor(.white)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
+                        Text("(at the same time)")
+                            .font(.system(size: 27))
+                            .italic()
+                            .foregroundColor(ColorManager .purple3)
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        
+                        Spacer()
+                            .frame(height: 10)
+                        
                         Text("together in a safe, positive space")
                             .font(.system(size: 20))
-                            .italic()
+                    
                             .foregroundColor(.white)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
