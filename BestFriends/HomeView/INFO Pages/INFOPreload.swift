@@ -131,16 +131,16 @@ struct INFOPreload: View {
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
                         Text("(at the same time)")
-                            .font(.system(size: 27))
+                            .font(.system(size: 22))
                             .italic()
                             .foregroundColor(ColorManager .purple3)
-                            .fontWeight(.bold)
+                            .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
-                        Spacer()
-                            .frame(height: 10)
-                        
+//                        Spacer()
+//                            .frame(height: 10)
+//
                         Text("together in a safe, positive space")
                             .font(.system(size: 20))
                     

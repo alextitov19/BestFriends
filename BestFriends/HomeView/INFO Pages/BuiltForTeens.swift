@@ -28,7 +28,7 @@ struct BuiltForTeens: View {
 //              .ignoresSafeArea()
 //              .onAppear()
             
-            Image("purpleBackground")
+            Image("blueBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -38,6 +38,13 @@ struct BuiltForTeens: View {
                 .blendMode(.screen)
                 .opacity(0.75)
           
+            
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.75)
+            
+            
             ZStack {
                 Circle()
                     .frame(width: 300, height: 300)

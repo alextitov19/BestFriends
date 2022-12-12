@@ -140,7 +140,7 @@ struct INFOPreload2: View {
                 
 
                 Spacer()
-                    .frame(height: 75)
+                    .frame(height: 20)
             
                 VStack {
                     
