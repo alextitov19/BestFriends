@@ -136,6 +136,12 @@ struct SaySomethingNice8: View {
                         VStack {
                             // MARK: End of feeling buttons
                             
+                            Text("to a friend right NOW!")
+                                .font(.system(size: 20))
+                                .italic()
+                                .fontWeight(.ultraLight)
+                                .foregroundColor(ColorManager .grey3)
+                                .multilineTextAlignment(.center)
                             
                             HStack {
                                
