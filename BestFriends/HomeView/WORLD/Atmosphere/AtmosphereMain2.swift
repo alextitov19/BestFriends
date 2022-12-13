@@ -415,7 +415,7 @@ struct AtmosphereMain2: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("We just sent a push notification to your friend letting your friends know your day just changed so they can lend support on difficult days - cheer you on good news. Good decission to let your closest friends help.", isPresented: $showingAlert) {
+                                .alert("Ok, we just sent a push notification to your friend(s) letting them know your day just changed. \n\n Now they can lend support on difficult days - or cheer with you on good news. \n\nNon-judgemental, supportive friends are hard to find - hold on to them!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
