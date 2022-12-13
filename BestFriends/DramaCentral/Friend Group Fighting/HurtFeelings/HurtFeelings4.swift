@@ -63,32 +63,39 @@ struct HurtFeelings4: View {
                     .frame(height: 20)
                 HStack {
                  
-                    
-                    Text("Let's tell your friend ...")
-                        .font(.system(size: 30))
+                    VStack {
+                        Text("Let's tell")
+                            .font(.system(size: 30))
                         
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(ColorManager .grey3)
-                        .multilineTextAlignment(.center)
-                   
-                    Image("Girl240")
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager .grey3)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        Text("your")
+                            .font(.system(size: 30))
+                        
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager .grey3)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        Text("friend ...")
+                            .font(.system(size: 30))
+                        
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager .grey3)
+                            .multilineTextAlignment(.center)
+                    }
+                    
+                    
+                    Image("Girl400")
                         .resizable()
-                        .frame(width: 150, height: 150)
+                        .frame(width: 180, height: 180)
                     
                 }
-//
-//                Text("Let's tell your friend ...")
-//                    .font(.system(size: 20))
-//
-//                    .fontWeight(.ultraLight)
-//                    .foregroundColor(ColorManager .grey3)
-//                    .multilineTextAlignment(.center)
-//
-                
-                
-                
-                
-                
+           
+               
                 
                 Text("'You hurt my feelings'")
                     .font(.system(size: 27))
