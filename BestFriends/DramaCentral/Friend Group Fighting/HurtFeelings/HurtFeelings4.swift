@@ -52,26 +52,43 @@ struct HurtFeelings4: View {
                 
                 Text("Yep, it's been bugging \nyou all day!")
                     .font(.system(size: 20))
-                    .foregroundColor(.white)
-                    .fontWeight(.light)
+                    
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(ColorManager .grey3)
                     .multilineTextAlignment(.center)
                 
-//
-//
-//                Text("Maybe just a little nervious \nto say something.")
-//                    .font(.system(size: 20))
-//                    .fontWeight(.light)
-//                    .foregroundColor(Color.white)
-//                    .multilineTextAlignment(.center)
+
                 
                 Spacer()
-                    .frame(height: 60)
+                    .frame(height: 20)
+                HStack {
+                 
+                    
+                    Text("Let's tell your friend ...")
+                        .font(.system(size: 30))
+                        
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(ColorManager .grey3)
+                        .multilineTextAlignment(.center)
+                   
+                    Image("girlwalking250")
+                        .resizable()
+                        .frame(width: 150, height: 150)
+                    
+                }
+//                
+//                Text("Let's tell your friend ...")
+//                    .font(.system(size: 20))
+//                    
+//                    .fontWeight(.ultraLight)
+//                    .foregroundColor(ColorManager .grey3)
+//                    .multilineTextAlignment(.center)
+//                
                 
-                Text("Let's tell your friend ...")
-                    .font(.system(size: 20))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-                    .multilineTextAlignment(.center)
+                
+                
+                
+                
                 
                 Text("'You hurt my feelings'")
                     .font(.system(size: 27))
