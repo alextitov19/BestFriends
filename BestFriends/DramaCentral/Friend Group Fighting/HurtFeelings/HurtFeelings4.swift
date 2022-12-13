@@ -187,7 +187,7 @@ struct HurtFeelings4: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Everyone's a little uncomfortable with doing this. \n\nBut in World FriendGroups you draw courage in the fact that users around the world are doing this together at the same time. You got this!", isPresented: $showingAlert) {
+                                .alert("Everyone's a little uncomfortable doing this. \n\nBut in World FriendGroups you draw courage in the fact that users around the world are doing this together at the same time. \n\nYou got this!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
