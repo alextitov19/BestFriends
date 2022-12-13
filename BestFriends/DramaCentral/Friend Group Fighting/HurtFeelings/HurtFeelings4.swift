@@ -50,9 +50,8 @@ struct HurtFeelings4: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text("Yep, it's been bugging \nyou all day!")
+                Text("Yep, it's been bugging you all day!")
                     .font(.system(size: 20))
-                    
                     .fontWeight(.ultraLight)
                     .foregroundColor(ColorManager .grey3)
                     .multilineTextAlignment(.center)
@@ -66,7 +65,6 @@ struct HurtFeelings4: View {
                     VStack {
                         Text("Let's tell")
                             .font(.system(size: 30))
-                        
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
@@ -74,7 +72,6 @@ struct HurtFeelings4: View {
                         
                         Text("your")
                             .font(.system(size: 30))
-                        
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
