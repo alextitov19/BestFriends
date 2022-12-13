@@ -30,14 +30,19 @@ struct StartHere1: View {
         
         ZStack {
             
-            ColorManager .grey4
-                .ignoresSafeArea()
-                .onAppear()
-            
-            
-//            AdPlayerView(name: "sky2")
+//            ColorManager .grey4
 //                .ignoresSafeArea()
-//
+//                .onAppear()
+            
+            Image("purpleBackground")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+            
+            Image("Meet750")
+               .frame(width: 200, height: 120)
+                .ignoresSafeArea()
+            
             
             ZStack {
                 
