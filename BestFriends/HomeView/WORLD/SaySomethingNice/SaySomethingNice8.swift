@@ -113,25 +113,8 @@ struct SaySomethingNice8: View {
                         .frame(width: 150, height: 150)
                     
                 }
-//                    Spacer()
-//                        .frame(height: 20)
-                    
-//                    Text("RIGHT NOW!")
-//                        .font(.system(size: 30))
-//                        .fontWeight(.regular)
-//                        .foregroundColor(ColorManager .grey4)
-//
-//                    Text("Your 'Vibe' shows around your planet")
-//                        .font(.system(size: 15))
-//                        .italic()
-//                        .foregroundColor(ColorManager.grey3)
-                    
+
             
-            
-                HStack {
-                    
-                }
-              
                
                         VStack {
                             // MARK: End of feeling buttons

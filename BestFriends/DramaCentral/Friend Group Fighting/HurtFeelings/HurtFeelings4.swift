@@ -31,9 +31,18 @@ struct HurtFeelings4: View {
     
     var body: some View {
         ZStack {
-            ColorManager.grey4
+//            ColorManager.grey4
+//                .ignoresSafeArea()
+//                .onAppear()
+            
+            ColorManager .purple1
                 .ignoresSafeArea()
-                .onAppear()
+            
+
+
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
             
             
             VStack {
