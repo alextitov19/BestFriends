@@ -106,34 +106,35 @@ struct BuggingPreload1: View {
                             Spacer ()
                                 .frame(height: 40)
                             
-                            Text("Something \nbugging you,")
+                            Text("Something \nhappen \nthat's bugging you,")
                                 .font(.system(size: 15))
                             
                                 .foregroundColor(.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
-                            
-                            
-                            
-                            Text("not sure what to \nsay or do?")
-                                .font(.system(size: 15))
-                            
-                                .foregroundColor(.white)
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                            
                             
                             Spacer ()
-                                .frame(height: 10)
+                                .frame(height: 20)
                             
-                            Text("You're NOT ALONE!")
+                            Text("Not sure what to say?")
                                 .font(.system(size: 15))
                             
                                 .foregroundColor(.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                             
-                            
+//
+//                            Spacer ()
+//                                .frame(height: 10)
+//
+//                            Text("You're NOT ALONE!")
+//                                .font(.system(size: 15))
+//
+//                                .foregroundColor(.white)
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+//
+//
                             
                             
                             
@@ -148,7 +149,7 @@ struct BuggingPreload1: View {
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                             
-                            Text("world fixing it")
+                            Text("world saying something")
                                 .font(.system(size: 23))
                             
                                 .foregroundColor(.white)
