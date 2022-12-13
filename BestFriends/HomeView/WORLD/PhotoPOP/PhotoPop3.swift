@@ -155,7 +155,7 @@ struct PhotoPop3: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Push Notifications sent successfully", isPresented: $showingAlert) {
+                                .alert("Push Notifications sent successfully asking your friend to shake their iPhone. Nice job!!!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -191,7 +191,7 @@ struct PhotoPop3: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends World", body: "\(user.firstName) Friend sent pic - 'Shake' your phone", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends PhotoPOP", body: "\(user.firstName) just posted a new pic to PhotoPOP - 'Shake' your iPhone. Then post one for them to see!", APNToken: f.APNToken)
                 }
             }
         }
