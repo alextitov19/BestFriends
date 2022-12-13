@@ -288,7 +288,7 @@ struct AtmosphereMain2: View {
                         
                         TextField("Type what's going on here ...", text: $summary)
                             .font(.system(size: 20))
-                            .foregroundColor(ColorManager.purple3)
+                            .foregroundColor(ColorManager.purple5)
                             .padding(.horizontal, 35)
                             .onReceive(Just(summary)) { _ in limitText(80) }
                         
@@ -415,7 +415,7 @@ struct AtmosphereMain2: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Letting your friends lend support on difficult days - cheer you in good times. \n\nFriend taps the received notification, then taps your planet on homepage and selects [Friend said something 'Nice'] from the dropdown menu to read your message.", isPresented: $showingAlert) {
+                                .alert("We just sent a push notification to your friend letting your friends know your day just changed so they can lend support on difficult days - cheer you on good news. Good decission to let your closest friends help.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -500,7 +500,7 @@ struct AtmosphereMain2: View {
                     for i in sharedWith {
                         for f in friends {
                             if i == f.id {
-                                RestApi.instance.sendPushNotification(title: "BestFriends - 'Vibe' Changed", body: "\(user.firstName) Something just happened to change friend's Vibe! Tap friend's planet on Home pg, then tap [Friend's 'Vibe' Changed] from dropdown). Take a moment to check on them!", APNToken: f.APNToken )
+                                RestApi.instance.sendPushNotification(title: "BestFriends - 'Vibe' Changed", body: "\(user.firstName) Something just happened to change your friend's Vibe! Tap friend's planet on Home pg, then tap [Friend's 'Vibe' Changed] from dropdown. Please take a moment to check on them!", APNToken: f.APNToken )
                             }
                         }
                         mood = -1
