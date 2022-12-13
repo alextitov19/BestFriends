@@ -71,19 +71,19 @@ struct HurtFeelings4: View {
                         .foregroundColor(ColorManager .grey3)
                         .multilineTextAlignment(.center)
                    
-                    Image("girlwalking250")
+                    Image("Girl240")
                         .resizable()
                         .frame(width: 150, height: 150)
                     
                 }
-//                
+//
 //                Text("Let's tell your friend ...")
 //                    .font(.system(size: 20))
-//                    
+//
 //                    .fontWeight(.ultraLight)
 //                    .foregroundColor(ColorManager .grey3)
 //                    .multilineTextAlignment(.center)
-//                
+//
                 
                 
                 
