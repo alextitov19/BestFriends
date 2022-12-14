@@ -288,7 +288,7 @@ struct Apologies4: View {
             for id in selectedFriends {
                 for f in friends {
                     if f.id == id {
-                        RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) I'm sorry. I appologize", APNToken: f.APNToken)
+                        RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName): I'm sorry. Do you want to talk?", APNToken: f.APNToken)
                     }
                 }
             }

@@ -269,7 +269,7 @@ struct SaySomethingNice8: View {
                                         .background(shareColor)
                                         .cornerRadius(15)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                        .alert("Yep, you just put a smile on your friend's face. \nYou're a special friend bringing positivity to life.", isPresented: $showingAlert) {
+                                        .alert("You just put a smile on your friend's face. \nYou're a special friend bringing positivity to life.", isPresented: $showingAlert) {
                                             Button("OK", role: .cancel) { }
                                         }
                                 })
@@ -305,7 +305,7 @@ struct SaySomethingNice8: View {
                 for id in selectedFriends {
                     for f in friends {
                         if f.id == id {
-                            RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent you 'Nice' message in World FriendGroups. (Tap friend's planet on Home pg, then tap [Friend said something 'Nice'] from dropdown). Take a moment and send one back!", APNToken: f.APNToken)
+                            RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent you 'Nice' message in World FriendGroups. Take a moment and send one back! Tap friend's planet on Home pg, then tap [Friend said something 'Nice'] from dropdown.", APNToken: f.APNToken)
                         }
                     }
                 }

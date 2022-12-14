@@ -54,7 +54,7 @@ struct AtmosphereMain2: View {
                 HStack {
                  
                     
-                    Text("Wow, \nmy day just \nCHANGED!")
+                    Text("My day just \nCHANGED!")
                         .font(.system(size: 20))
                         .italic()
                         .fontWeight(.medium)
@@ -415,7 +415,7 @@ struct AtmosphereMain2: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Ok, we just sent a push notification to your friend(s) letting them know your day just changed. \n\n Now they can lend support on difficult days - or cheer with you on good news. \n\nNon-judgemental, supportive friends are hard to find - hold on to them!", isPresented: $showingAlert) {
+                                .alert("We let your friend(s) know your day just changed. \n\n Now they can lend support on difficult days - or cheer with you on good news. \n\nSupportive friends are hard to find. Hold onto them!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -500,7 +500,7 @@ struct AtmosphereMain2: View {
                     for i in sharedWith {
                         for f in friends {
                             if i == f.id {
-                                RestApi.instance.sendPushNotification(title: "BestFriends - 'Vibe' Changed", body: "\(user.firstName) Something just happened to change your friend's Vibe! Tap friend's planet on Home pg, then tap [Friend's 'Vibe' Changed] from dropdown. Please take a moment to check on them!", APNToken: f.APNToken )
+                                RestApi.instance.sendPushNotification(title: "BestFriends - 'Vibe'", body: "\(user.firstName): Your friend's day just changed! Tap friend's planet on Home pg, then tap [Friend's 'Vibe' Changed] from dropdown. Please take a moment to check on them!", APNToken: f.APNToken )
                             }
                         }
                         mood = -1

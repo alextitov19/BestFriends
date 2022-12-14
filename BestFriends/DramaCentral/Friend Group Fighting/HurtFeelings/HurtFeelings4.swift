@@ -266,7 +266,7 @@ struct HurtFeelings4: View {
             for id in selectedFriends {
                 for f in friends {
                     if f.id == id {
-                        RestApi.instance.sendPushNotification(title: "BestFriends - World FriendGroup", body: "\(user.firstName) You hurt my feelings", APNToken: f.APNToken)
+                        RestApi.instance.sendPushNotification(title: "BestFriends - World FriendGroup", body: "\(user.firstName): You hurt my feelings. Can we talk?", APNToken: f.APNToken)
                     }
                 }
             }

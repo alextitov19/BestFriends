@@ -40,7 +40,7 @@ struct HugPushNotification2: View {
          
                 VStack {
                
-                    Text("Were on it ...")
+                    Text("We're on it ...")
                         .font(.system(size: 35, weight: .light))
                         .foregroundColor(ColorManager .purple3)
                   
@@ -170,7 +170,7 @@ struct HugPushNotification2: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your HUG request was instantly send via push notification", isPresented: $showingAlert) {
+                                .alert("Your HUG was sent.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -219,7 +219,7 @@ struct HugPushNotification2: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends - Need a HUG", body: "\(user.firstName) I could really use a HUG right about now!", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends - Need a HUG", body: "\(user.firstName) could use a HUG!", APNToken: f.APNToken)
                 }
             }
         }

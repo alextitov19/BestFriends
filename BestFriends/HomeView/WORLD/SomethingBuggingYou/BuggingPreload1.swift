@@ -79,7 +79,7 @@ struct BuggingPreload1: View {
                     
                 
                     NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups), label: {
-                        BuggingCircle (color: ColorManager.orange3, friendName: "OMG! \nHUGE \nFIGHT")
+                        BuggingCircle (color: ColorManager.orange3, friendName: "Had \na \nFIGHT?")
                     })
                     .offset(x: showItems ? -120 : 0, y: showItems ? -150: 0)
                     .shadow(color: ColorManager .orange2, radius: 10, x: 10, y: 10)

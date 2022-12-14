@@ -245,7 +245,7 @@ struct AskQuestion: View {
             for id in selectedFriends {
                 for f in friends {
                     if f.id == id {
-                        RestApi.instance.sendPushNotification(title: "BestFriends - World FriendGroups", body: "\(user.firstName) Would like to talk to you about something", APNToken: f.APNToken)
+                        RestApi.instance.sendPushNotification(title: "BestFriends - World FriendGroups", body: "\(user.firstName) would like to talk to you about something", APNToken: f.APNToken)
                     }
                 }
             }

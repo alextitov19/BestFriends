@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PhotoPopView: View {
+struct : View {
     @EnvironmentObject var sessionManager: SessionManager
 
     let user: User
@@ -46,7 +46,7 @@ struct PhotoPopView: View {
             VStack {
 
                 
-                Text("'Shake' iPhone to see \nfriend's posted images")
+                Text("Shake iPhone to see \nfriend's posted images")
                     .font(.system(size: 18, weight: .light))
                     .foregroundColor(ColorManager .grey2)
 
