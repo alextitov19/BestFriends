@@ -256,7 +256,7 @@ struct AskQuestion: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Friend alerted. \n\nYou just did what users worldwide just did - not waiting until this turns into a fight.", isPresented: $showingAlert) {
+                                .alert("Friend alerted. \n\nYou're smart to not waite until this turns into a huge fight.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
