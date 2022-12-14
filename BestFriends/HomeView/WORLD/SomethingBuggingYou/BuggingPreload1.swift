@@ -67,7 +67,7 @@ struct BuggingPreload1: View {
                 
                 
                 NavigationLink(destination: AskQuestion(user: user, friends: friends, groups: groups), label: {
-                    BuggingCircle (color: .cyan, friendName: "Something \nelse on \nyour Mind?")
+                    BuggingCircle (color: .cyan, friendName: "Something \nelse \nbugging \nyou?")
                 })
                 .offset(x: showItems ? 120 : 0, y: showItems ? -190: 0)
                 .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
@@ -195,7 +195,7 @@ struct BuggingPreload1: View {
             ZStack {
                 
                 Rectangle()
-                    .frame(width: 110, height: 110)
+                    .frame(width: 120, height: 120)
                     .clipShape(Circle())
                     .foregroundColor(color)
                     .opacity(0.7)

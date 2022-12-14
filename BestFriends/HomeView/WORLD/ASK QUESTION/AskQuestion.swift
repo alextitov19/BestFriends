@@ -33,13 +33,98 @@ struct AskQuestion: View {
     
     var body: some View {
         ZStack {
-            ColorManager.grey4
+            
+            ColorManager .purple1
                 .ignoresSafeArea()
-                .onAppear()
+            
+
+
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+            
+            
+            
             
             
             VStack {
+                
+                
+                Spacer()
+                    .frame(height: 25)
+                
+                Text("It's been on your mind for days.")
+                    .font(.system(size: 20))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(ColorManager .grey3)
+                    .multilineTextAlignment(.center)
+                
+                Text("Just couldn't bring yourself to say something.")
+                    .font(.system(size: 20))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(ColorManager .grey3)
+                    .multilineTextAlignment(.center)
+                
+            
+                
+                
+                
 
+                HStack {
+                 
+                    VStack {
+                        Text("It's Ok.")
+                            .font(.system(size: 30))
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager .grey3)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        Text("Let's tell your")
+                            .font(.system(size: 30))
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager .grey3)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        Text("friend ...")
+                            .font(.system(size: 30))
+                        
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager .grey3)
+                            .multilineTextAlignment(.center)
+                    }
+                    
+                    
+                    Image("Guy275")
+                        .resizable()
+                        .frame(width: 180, height: 180)
+                    
+                }
+           
+                VStack {
+                    
+                    
+                    Text("I'd like to talk \nabout something that's \nbeen on my mind.")
+                        .font(.system(size: 27))
+                        .foregroundColor(.green)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                    
+                    
+                    Text("been on my mind.")
+                        .font(.system(size: 27))
+                        .foregroundColor(.green)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                    
+                    
+                }
+                
+                
+                
+                
+                
                 
                 Spacer()
                     .frame(height: 25)
@@ -157,7 +242,7 @@ struct AskQuestion: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Push Notifications sent successfully", isPresented: $showingAlert) {
+                                .alert("Friend alerted. You just did what users worldwide just did.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
@@ -166,27 +251,8 @@ struct AskQuestion: View {
                         
                         Spacer()
                             .frame(height: 25)
-                        
-                        Text("select 'friend' and we")
-                            .font(.system(size: 20))
-                            .italic()
-                            .foregroundColor(.white)
-                            .fontWeight(.ultraLight)
-                            .multilineTextAlignment(.center)
-                        
-                        
-                        Text("send push notification saying")
-                            .font(.system(size: 20))
-                            .italic()
-                            .foregroundColor(.white)
-                            .fontWeight(.ultraLight)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("'would like to talk about something'")
-                            .font(.system(size: 27))
-                            .foregroundColor(.green)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
+                   
+                      
                 
                         
                         
@@ -245,7 +311,7 @@ struct AskQuestion: View {
             for id in selectedFriends {
                 for f in friends {
                     if f.id == id {
-                        RestApi.instance.sendPushNotification(title: "BestFriends - World FriendGroups", body: "\(user.firstName) would like to talk to you about something", APNToken: f.APNToken)
+                        RestApi.instance.sendPushNotification(title: "BestFriends - World FriendGroups", body: "\(user.firstName) would like to talk to you about something important. Can we talk?", APNToken: f.APNToken)
                     }
                 }
             }
