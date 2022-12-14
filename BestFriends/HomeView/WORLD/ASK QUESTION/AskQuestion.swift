@@ -125,13 +125,7 @@ struct AskQuestion: View {
                         .foregroundColor(.green)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-//                  
-//                    Text("that's been on my mind.")
-//                        .font(.system(size: 27))
-//                        .foregroundColor(.green)
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-                    
+
                     
                 }
                 

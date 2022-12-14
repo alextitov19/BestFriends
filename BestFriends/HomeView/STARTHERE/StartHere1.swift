@@ -39,9 +39,9 @@ struct StartHere1: View {
                 .scaledToFill()
                 .ignoresSafeArea()
             
-            Image("Meet750")
-               .frame(width: 100, height: 50)
-                .ignoresSafeArea()
+//            Image("Meet750")
+//               .frame(width: 100, height: 50)
+//                .ignoresSafeArea()
             
             
             ZStack {
