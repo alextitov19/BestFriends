@@ -89,14 +89,14 @@ struct AskQuestion: View {
                             .multilineTextAlignment(.center)
                         
                         
-                        Text("Let's tell your")
+                        Text("Let's say")
                             .font(.system(size: 30))
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
                         
                         
-                        Text("friend ...")
+                        Text("it now")
                             .font(.system(size: 30))
                         
                             .fontWeight(.ultraLight)
@@ -125,12 +125,12 @@ struct AskQuestion: View {
                         .foregroundColor(.green)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                  
-                    Text("that's been on my mind.")
-                        .font(.system(size: 27))
-                        .foregroundColor(.green)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
+//                  
+//                    Text("that's been on my mind.")
+//                        .font(.system(size: 27))
+//                        .foregroundColor(.green)
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
                     
                     
                 }
@@ -260,9 +260,22 @@ struct AskQuestion: View {
                                     Button("OK", role: .cancel) { }
                                 }
                             
+                            
+                            
+                       
+                            
                         })
                        
-                        
+                        VStack {
+                            
+                            
+                            Text("Tap [Share] then duck. Just kidding!")
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
+                                .foregroundColor(ColorManager .purple3)
+                                .multilineTextAlignment(.center)
+                            
+                        }
                         Spacer()
                             .frame(height: 40)
                    
