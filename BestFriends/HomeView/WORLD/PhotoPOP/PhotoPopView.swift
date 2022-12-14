@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct : View {
+struct PhotoPopView: View {
     @EnvironmentObject var sessionManager: SessionManager
 
     let user: User

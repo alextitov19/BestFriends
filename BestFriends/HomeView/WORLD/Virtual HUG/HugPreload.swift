@@ -57,7 +57,7 @@ struct HugPreload: View {
           
                     
                     NavigationLink(destination: HugPushNotification2(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .purple2, friendName: "Wow! \nI could \nreally use \na HUG")
+                        HugCircle (color: ColorManager .purple2, friendName: "I could \nuse \na HUG")
                     })
                     .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
                     .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
