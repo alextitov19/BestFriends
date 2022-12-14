@@ -51,24 +51,33 @@ struct AskQuestion: View {
                 
                 
                 Spacer()
-                    .frame(height: 25)
+                    .frame(height: 40)
                 
-                Text("It's been on your mind for days.")
+                Text("It's been on your mind all week.")
                     .font(.system(size: 20))
                     .fontWeight(.ultraLight)
                     .foregroundColor(ColorManager .grey3)
                     .multilineTextAlignment(.center)
                 
-                Text("Just couldn't bring yourself to say something.")
-                    .font(.system(size: 20))
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(ColorManager .grey3)
-                    .multilineTextAlignment(.center)
                 
-            
-                
-                
-                
+                Spacer()
+                    .frame(height: 15)
+               
+                VStack {
+                    Text("Just couldn't bring yourself")
+                        .font(.system(size: 20))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(ColorManager .grey3)
+                        .multilineTextAlignment(.center)
+                    
+                    
+                    Text("to say something.")
+                        .font(.system(size: 20))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(ColorManager .grey3)
+                        .multilineTextAlignment(.center)
+                    
+                }
 
                 HStack {
                  
@@ -105,14 +114,19 @@ struct AskQuestion: View {
                 VStack {
                     
                     
-                    Text("I'd like to talk \nabout something that's \nbeen on my mind.")
+                    Text("I'd like to talk")
                         .font(.system(size: 27))
                         .foregroundColor(.green)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
-                    
-                    Text("been on my mind.")
+                    Text("about something important")
+                        .font(.system(size: 27))
+                        .foregroundColor(.green)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                  
+                    Text("that's been on my mind.")
                         .font(.system(size: 27))
                         .foregroundColor(.green)
                         .fontWeight(.light)
@@ -242,7 +256,7 @@ struct AskQuestion: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Friend alerted. You just did what users worldwide just did.", isPresented: $showingAlert) {
+                                .alert("Friend alerted. \n\nYou just did what users worldwide just did - not waiting until this turns into a fight.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
@@ -250,18 +264,8 @@ struct AskQuestion: View {
                        
                         
                         Spacer()
-                            .frame(height: 25)
+                            .frame(height: 40)
                    
-                      
-                
-                        
-                        
-                        
-                        
-                        Spacer ()
-                            .frame(height: 100)
-                        
-                        
                         Button(action: {
                             sessionManager.showLogin()
                         },

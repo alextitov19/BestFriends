@@ -106,7 +106,7 @@ struct BuggingPreload1: View {
                             Spacer ()
                                 .frame(height: 40)
                             
-                            Text("Something \nhappen \nthat's bugging you,")
+                            Text("Something \nhappen?")
                                 .font(.system(size: 15))
                             
                                 .foregroundColor(.white)
@@ -116,7 +116,7 @@ struct BuggingPreload1: View {
                             Spacer ()
                                 .frame(height: 20)
                             
-                            Text("Not sure what to say?")
+                            Text("Nervious to say anything?")
                                 .font(.system(size: 15))
                             
                                 .foregroundColor(.white)
@@ -142,14 +142,14 @@ struct BuggingPreload1: View {
                                 .frame(height: 25)
                             
                             
-                            Text("Join others around the ")
+                            Text("Join others")
                                 .font(.system(size: 20))
                             
                                 .foregroundColor(.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                             
-                            Text("world saying something")
+                            Text("saying something")
                                 .font(.system(size: 23))
                             
                                 .foregroundColor(.white)
