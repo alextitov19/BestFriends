@@ -120,7 +120,6 @@ struct SaySomethingNice8: View {
                             
                             Text("to a friend right NOW!")
                                 .font(.system(size: 20))
-                                .italic()
                                 .fontWeight(.ultraLight)
                                 .foregroundColor(ColorManager .grey3)
                                 .multilineTextAlignment(.center)
