@@ -74,7 +74,7 @@ struct HugPushNotification2: View {
                                 .foregroundColor(ColorManager .purple7)
                         }
                         
-                        Image("BalloonGuy300")
+                        Image("DogOne")
                             .resizable()
                             .frame(width: 200, height: 200)
                         
@@ -82,24 +82,8 @@ struct HugPushNotification2: View {
                 
              
                 VStack {
-//
-//                    Text("We're on it ...")
-//                        .font(.system(size: 35, weight: .light))
-//                        .foregroundColor(ColorManager .purple3)
-//
-//                    Spacer()
-//                        .frame(height: 20)
-//
-//                    Text("Who would you like")
-//                        .font(.system(size: 35, weight: .ultraLight))
-//                        .foregroundColor(ColorManager .purple3)
-//
-//
-//                    Text("a HUG from?")
-//                        .font(.system(size: 35, weight: .ultraLight))
-//                        .foregroundColor(ColorManager .purple3)
-//
-//
+
+
                     VStack {
                         
                         Spacer()
