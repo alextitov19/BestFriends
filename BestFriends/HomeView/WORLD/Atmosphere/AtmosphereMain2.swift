@@ -289,7 +289,7 @@ struct AtmosphereMain2: View {
                         TextField("Type what's going on here ...", text: $summary)
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager.purple5)
-                            .padding(.horizontal, 45)
+                            .padding(.horizontal, 55)
                             .onReceive(Just(summary)) { _ in limitText(80) }
                         
                         
