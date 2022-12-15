@@ -27,39 +27,74 @@ struct HugPushNotification: View {
         
         ZStack {
             
-            ColorManager.purple1
-                .ignoresSafeArea()
-                .onAppear()
-            
-            
-//            Image("purpleBackground")
+//            ColorManager.purple1
+//                .ignoresSafeArea()
+//                .onAppear()
+//
+//
+////            Image("purpleBackground")
+////                .resizable()
+////                .ignoresSafeArea()
+////                .scaledToFill()
+////
+//            Image("ballons")
 //                .resizable()
 //                .ignoresSafeArea()
 //                .scaledToFill()
-//
-            Image("ballons")
-                .resizable()
+            
+            
+            
+            
+            ColorManager .purple1
                 .ignoresSafeArea()
-                .scaledToFill()
+            
+
+
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+
             
             VStack{
-         
-                VStack {
-               
-                    
-                    
-                    Text("Who are you")
-                        .font(.system(size: 35, weight: .ultraLight))
-                        .foregroundColor(ColorManager .purple7)
-                    Text("sending HUG to?")
-                        .font(.system(size: 35, weight: .ultraLight))
-                        .foregroundColor(ColorManager .purple7)
-                    
-                    
+//
+//                Text("Who are you sending ")
+//                    .font(.system(size: 20))
+//
+//                    .fontWeight(.ultraLight)
+//                    .foregroundColor(ColorManager .grey3)
+//                    .multilineTextAlignment(.center)
+                
+                HStack {
                     VStack {
                         
+                        Text("Send")
+                            .font(.system(size: 35, weight: .ultraLight))
+                            .foregroundColor(ColorManager .purple7)
+                        
+                        
+                        Text("HUG to ...")
+                            .font(.system(size: 35, weight: .ultraLight))
+                            .foregroundColor(ColorManager .purple7)
+                        
+                    }
+                    
+                    Image("girlwalking250")
+                        .resizable()
+                        .frame(width: 150, height: 150)
+                }
+             
+         
+                VStack {
+
+
+
+                  
+
+
+                    VStack {
+
                         Spacer()
-                            .frame(height: 250)
+                            .frame(height: 25)
                         
                         
                         HStack {
@@ -202,7 +237,7 @@ struct HugPushNotification: View {
                     
                 
                     Spacer()
-                        .frame(height: 160)
+                        .frame(height: 100)
                     
                 }
                 
