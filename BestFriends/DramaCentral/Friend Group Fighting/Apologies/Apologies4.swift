@@ -48,7 +48,7 @@ struct Apologies4: View {
                     
                     VStack {
                         
-                        Text("Join people around the world")
+                        Text("There is no weakness in saying your sorry")
                             .font(.system(size: 20))
                             .italic()
                             .fontWeight(.ultraLight)
@@ -58,7 +58,7 @@ struct Apologies4: View {
                         HStack {
                          
                             
-                            Text("Saying \nsomething \n'Nice'")
+                            Text("Let's \napologize \nnow")
                                 .font(.system(size: 30))
                                 .fontWeight(.ultraLight)
                                 .foregroundColor(ColorManager .grey3)
@@ -70,7 +70,14 @@ struct Apologies4: View {
                             
                         }
 
-                    
+                        VStack {
+                            
+                            Text("'I'm sorry. I apologize'")
+                                .font(.system(size: 27))
+                                .foregroundColor(.green)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                        }
         
                 
                 
@@ -184,43 +191,24 @@ struct Apologies4: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Push Notifications sent successfully", isPresented: $showingAlert) {
+                                .alert("Apology sent. It feels good being the bigger person - doesn't it.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
                         
-                        
+                      
                         Spacer()
-                            .frame(height: 25)
-                        
-                        Text("tap 'friend' and 'share' \nwe send notification saying")
-                            .font(.system(size: 20))
-                            .italic()
-                            .foregroundColor(.white)
-                            .fontWeight(.ultraLight)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("'I'm sorry. I apologize'")
-                            .font(.system(size: 27))
-                            .foregroundColor(.green)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
-                        
-                        Spacer ()
-                            .frame(height: 100)
-                        
-                        
+                            .frame(height: 30)
                         
                         
                         Link(destination: URL(string: "https://socialtechlabs.com/apoloigize/")!) {
                             
                             Text("Is it time to Apologize?")
                                 .fontWeight(.thin)
-                                .frame(width: 260, height: 40)
+                                .frame(width: 260, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .background(ColorManager.pmbc_blue)
-                                .font(.system(size: 27))
+                                .font(.system(size: 25))
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -236,9 +224,9 @@ struct Apologies4: View {
                      
                         
                         
-                        
-                        Spacer ()
-                            .frame(height: 25)
+//
+//                        Spacer ()
+//                            .frame(height: 25)
                         
 //                        Button(action: {
 //                            sessionManager.showLogin()
@@ -258,8 +246,7 @@ struct Apologies4: View {
                         
 //
 //
-//                        Spacer()
-//                            .frame(height: 70)
+
                     }
                     
                     
@@ -280,7 +267,7 @@ struct Apologies4: View {
             for id in selectedFriends {
                 for f in friends {
                     if f.id == id {
-                        RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName): I'm sorry. Do you want to talk?", APNToken: f.APNToken)
+                        RestApi.instance.sendPushNotification(title: "BestFriends - World FriendGroups", body: "\(user.firstName): I'm sorry. Do you want to talk?", APNToken: f.APNToken)
                     }
                 }
             }
