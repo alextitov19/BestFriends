@@ -93,7 +93,7 @@ struct SaySomethingNice8: View {
                 
                 Text("Join people around the world")
                     .font(.system(size: 20))
-                    .italic()
+                
                     .fontWeight(.ultraLight)
                     .foregroundColor(ColorManager .grey3)
                     .multilineTextAlignment(.center)

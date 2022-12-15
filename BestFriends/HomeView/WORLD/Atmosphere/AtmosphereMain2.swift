@@ -51,12 +51,12 @@ struct AtmosphereMain2: View {
             
             VStack {
                 
-                Text("My day just CHANGED!")
-                    .font(.system(size: 20))
-                    .italic()
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(ColorManager .grey3)
-                    .multilineTextAlignment(.center)
+//                Text("My day just CHANGED!")
+//                    .font(.system(size: 20))
+//
+//                    .fontWeight(.ultraLight)
+//                    .foregroundColor(ColorManager .grey3)
+//                    .multilineTextAlignment(.center)
                 
                 HStack {
                  
@@ -77,10 +77,7 @@ struct AtmosphereMain2: View {
                     
                   
                     
-                    Text("Your 'Vibe' color shows around your planet")
-                        .font(.system(size: 15))
-                        .italic()
-                        .foregroundColor(ColorManager.grey3)
+                  
                     
                 
               
@@ -107,7 +104,7 @@ struct AtmosphereMain2: View {
                         
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 12)
                         
                         Button(action: {
                             mood = 1
@@ -124,7 +121,7 @@ struct AtmosphereMain2: View {
                         
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 12)
                         
                         Button(action: {
                             mood = 2
@@ -141,7 +138,7 @@ struct AtmosphereMain2: View {
                         
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 12)
                         
                         Button(action: {
                             mood = 3
@@ -159,7 +156,7 @@ struct AtmosphereMain2: View {
                     }
                     
                     Spacer()
-                        .frame(width: 20)
+                        .frame(width: 30)
                     
                     VStack {
                         Button(action: {
@@ -177,7 +174,7 @@ struct AtmosphereMain2: View {
                         
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 12)
                         
                         Button(action: {
                             mood = 5
@@ -197,7 +194,7 @@ struct AtmosphereMain2: View {
                     }
                     
                     Spacer()
-                        .frame(width: 20)
+                        .frame(width: 30)
                     
                     VStack {
                         
@@ -216,7 +213,7 @@ struct AtmosphereMain2: View {
                         
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 12)
                         
                         Button(action: {
                             mood = 7
@@ -233,7 +230,7 @@ struct AtmosphereMain2: View {
                         
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 12)
                         
                         Button(action: {
                             mood = 8
@@ -250,7 +247,7 @@ struct AtmosphereMain2: View {
                         
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 12)
                         
                         Button(action: {
                             mood = 9
@@ -421,8 +418,23 @@ struct AtmosphereMain2: View {
                                 .alert("We let your friend(s) know your day just changed. \n\n Now they can lend support on difficult days - or cheer with you on good news. \n\nSupportive friends are hard to find. Hold onto them!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
+                            
+                         
+                            
                         })
                         
+                        
+                VStack {
+                    
+                    Spacer()
+                        .frame(height: 10)
+                    
+                            Text("(your 'Vibe' color shows around your planet)")
+                                .font(.system(size: 15))
+                                .italic()
+                                .foregroundColor(ColorManager.grey4)
+                            
+                        }
                     
 //
 //                        Spacer()
