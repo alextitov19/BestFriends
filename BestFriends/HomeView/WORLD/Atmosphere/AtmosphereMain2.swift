@@ -292,7 +292,7 @@ struct AtmosphereMain2: View {
                         TextField("Type what's going on here ...", text: $summary)
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager.purple5)
-                            .padding(.horizontal, 35)
+                            .padding(.horizontal, 45)
                             .onReceive(Just(summary)) { _ in limitText(80) }
                         
                         
@@ -412,9 +412,9 @@ struct AtmosphereMain2: View {
                                label: {
                             Text("SHARE")
                                 .fontWeight(.thin)
-                                .frame(width: 100, height: 40)
+                                .frame(width: 100, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
+                                .font(.system(size: 25))
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -470,9 +470,9 @@ struct AtmosphereMain2: View {
                     }
 
                 }
-//
-//                Spacer()
-//                    .frame(height: 10)
+
+                Spacer()
+                    .frame(height: 50)
                 
             }
         }
@@ -533,11 +533,11 @@ struct AtmosphereMain2: View {
         var body: some View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
-                .frame(width: 100, height: 30)
+                .frame(width: 85, height: 85)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                .font(.system(size: 10))
+                .font(.system(size: 8))
                 .background(color)
-                .cornerRadius(25)
+                .cornerRadius(75)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
         }
        
