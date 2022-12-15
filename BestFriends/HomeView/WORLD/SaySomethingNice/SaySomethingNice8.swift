@@ -141,7 +141,7 @@ struct SaySomethingNice8: View {
                                 TextField("Say something 'Nice' here ...", text: $summary)
                                     .font(.system(size: 20))
                                     .foregroundColor(ColorManager.purple4)
-                                    .padding(.horizontal, 37)
+                                    .padding(.horizontal, 50)
                                     .onReceive(Just(summary)) { _ in limitText(80) }
                                 
                                 
@@ -157,19 +157,24 @@ struct SaySomethingNice8: View {
                                 
                                 Spacer()
                                     .frame(height: 10)
-                                
+                                Text("Select friend(s) to Alert")
+                                    .font(.system(size: 20))
+                                    .italic()
+                                    .fontWeight(.ultraLight)
+                                    .foregroundColor(ColorManager .purple4)
+                                    .multilineTextAlignment(.center)
                                 
                                 HStack {
                                     
-                                    Text("select >")
-                                        .fontWeight(.thin)
-                                        .frame(width: 100, height: 30)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 20))
-                                        .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-                                        .cornerRadius(25)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    //                                })
+//                                    Text("select >")
+//                                        .fontWeight(.thin)
+//                                        .frame(width: 100, height: 30)
+//                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                        .font(.system(size: 20))
+//                                        .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+//                                        .cornerRadius(25)
+//                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                    //                                })
                                     
                                     if friends.count > 0 {
                                         RectView(user: user, friend: friends[0], color: colors[0])
@@ -252,7 +257,7 @@ struct SaySomethingNice8: View {
                                 }
                                 
                                 Spacer()
-                                    .frame(height: 20)
+                                    .frame(height: 30)
                                 
                                 
                                 Button(action: {
@@ -261,9 +266,9 @@ struct SaySomethingNice8: View {
                                        label: {
                                     Text("SHARE")
                                         .fontWeight(.thin)
-                                        .frame(width: 100, height: 40)
+                                        .frame(width: 100, height: 30)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 30))
+                                        .font(.system(size: 25))
                                         .background(shareColor)
                                         .cornerRadius(15)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -290,9 +295,9 @@ struct SaySomethingNice8: View {
                             }
                             
                         }
-                        //
-                        //                Spacer()
-                        //                    .frame(height: 10)
+                        
+                                        Spacer()
+                                            .frame(height: 70)
                         
                     }
                 }
@@ -303,7 +308,7 @@ struct SaySomethingNice8: View {
                 for id in selectedFriends {
                     for f in friends {
                         if f.id == id {
-                            RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent you 'Nice' message in World FriendGroups. Take a moment and send one back! Tap friend's planet on Home pg, then tap [Friend said something 'Nice'] from dropdown.", APNToken: f.APNToken)
+                            RestApi.instance.sendPushNotification(title: "BestFriends World FriendGroups", body: "\(user.firstName) sent you 'Nice' message. Take a moment and send one back! Tap friend's planet on Home pg, then tap [Friend said something 'Nice'] from dropdown.", APNToken: f.APNToken)
                         }
                     }
                 }
@@ -353,11 +358,11 @@ struct SaySomethingNice8: View {
                 var body: some View {
                     Text(friend.firstName + " " + String(friend.lastName.first!))
                         .fontWeight(.bold)
-                        .frame(width: 100, height: 30)
+                        .frame(width: 90, height: 90)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .font(.system(size: 10))
+                        .font(.system(size: 8))
                         .background(color)
-                        .cornerRadius(25)
+                        .cornerRadius(75)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 }
                 
