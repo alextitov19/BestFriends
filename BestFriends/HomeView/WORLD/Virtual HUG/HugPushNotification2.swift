@@ -27,36 +27,79 @@ struct HugPushNotification2: View {
         
         ZStack {
             
-            ColorManager.purple1
+//            ColorManager.purple1
+//                .ignoresSafeArea()
+//                .onAppear()
+//
+//            Image("in bushes")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+            ColorManager .purple1
                 .ignoresSafeArea()
-                .onAppear()
             
-            Image("in bushes")
-                .resizable()
+
+
+            AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
-                .scaledToFill()
+                .blendMode(.screen)
+            
             
             VStack{
          
+                
+//                HStack {
+                    VStack {
+                        
+                        
+                        Text("Who would you like a HUG from?")
+                            .font(.system(size: 20))
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager .grey3)
+                            .multilineTextAlignment(.center)
+                        
+                    
+                    }
+                        
+                    HStack {
+                        
+                        VStack {
+                        Text("We're")
+                            .font(.system(size: 35, weight: .ultraLight))
+                            .foregroundColor(ColorManager .purple7)
+                        
+                        
+                            Text("on it")
+                                .font(.system(size: 35, weight: .ultraLight))
+                                .foregroundColor(ColorManager .purple7)
+                        }
+                        
+                        Image("BalloonGuy300")
+                            .resizable()
+                            .frame(width: 200, height: 200)
+                        
+                    }
+                
+             
                 VStack {
-               
-                    Text("We're on it ...")
-                        .font(.system(size: 35, weight: .light))
-                        .foregroundColor(ColorManager .purple3)
-                  
-                    Spacer()
-                        .frame(height: 20)
-                    
-                    Text("Who would you like")
-                        .font(.system(size: 35, weight: .ultraLight))
-                        .foregroundColor(ColorManager .purple3)
-                  
-                    
-                    Text("a HUG from?")
-                        .font(.system(size: 35, weight: .ultraLight))
-                        .foregroundColor(ColorManager .purple3)
-                    
-                    
+//
+//                    Text("We're on it ...")
+//                        .font(.system(size: 35, weight: .light))
+//                        .foregroundColor(ColorManager .purple3)
+//
+//                    Spacer()
+//                        .frame(height: 20)
+//
+//                    Text("Who would you like")
+//                        .font(.system(size: 35, weight: .ultraLight))
+//                        .foregroundColor(ColorManager .purple3)
+//
+//
+//                    Text("a HUG from?")
+//                        .font(.system(size: 35, weight: .ultraLight))
+//                        .foregroundColor(ColorManager .purple3)
+//
+//
                     VStack {
                         
                         Spacer()
@@ -65,14 +108,14 @@ struct HugPushNotification2: View {
                         
                         HStack {
                       
-                            Text("select >")
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 20))
-                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            Text("select >")
+//                                .fontWeight(.thin)
+//                                .frame(width: 100, height: 30)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 20))
+//                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+//                                .cornerRadius(25)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             //                                })
                             
                             if friends.count > 0 {
@@ -155,7 +198,7 @@ struct HugPushNotification2: View {
                         }
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 30)
                         
                         
                         Button(action: {
@@ -164,13 +207,13 @@ struct HugPushNotification2: View {
                                label: {
                             Text("SHARE")
                                 .fontWeight(.thin)
-                                .frame(width: 100, height: 40)
+                                .frame(width: 100, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
+                                .font(.system(size: 25))
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your HUG was sent.", isPresented: $showingAlert) {
+                                .alert("Your HUG request was sent at the speed of light. \n\nHopefully, they send it just as fast.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -178,33 +221,29 @@ struct HugPushNotification2: View {
                         VStack {
                             
                             Spacer()
-                                .frame(height: 175)
+                                .frame(height: 100)
                    
                         }
                         
 
-                        Button(action: {
-                            sessionManager.showLogin()
-                        },
-                            label: {
-                                Text("Home")
-                                    .fontWeight(.thin)
-                                    .frame(width: 100, height: 30)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            })
+//                        Button(action: {
+//                            sessionManager.showLogin()
+//                        },
+//                            label: {
+//                                Text("Home")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 100, height: 30)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 25))
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            })
 
                         }
                     
                     
-                    
-                
-                    Spacer()
-                        .frame(height: 150)
-                    
+            
                 }
                 
             }
@@ -235,11 +274,11 @@ struct HugPushNotification2: View {
         var body: some View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
-                .frame(width: 100, height: 30)
+                .frame(width: 90, height: 90)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                .font(.system(size: 10))
+                .font(.system(size: 8))
                 .background(color)
-                .cornerRadius(25)
+                .cornerRadius(75)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
         }
     }
