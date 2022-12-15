@@ -64,14 +64,14 @@ struct HugPushNotification: View {
                         
                         HStack {
                       
-                            Text("select >")
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 20))
-                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            Text("select >")
+//                                .fontWeight(.thin)
+//                                .frame(width: 100, height: 30)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 20))
+//                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+//                                .cornerRadius(25)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             //                                })
                             
                             if friends.count > 0 {
@@ -154,7 +154,7 @@ struct HugPushNotification: View {
                         }
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 30)
                         
                         
                         Button(action: {
@@ -163,11 +163,11 @@ struct HugPushNotification: View {
                                label: {
                             Text("SHARE")
                                 .fontWeight(.thin)
-                                .frame(width: 100, height: 40)
+                                .frame(width: 100, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
+                                .font(.system(size: 25))
                                 .background(shareColor)
-                                .cornerRadius(15)
+                                .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 .alert("Your HUG was sent - thanks for paying attention to your friends!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
@@ -234,11 +234,11 @@ struct HugPushNotification: View {
         var body: some View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
-                .frame(width: 100, height: 30)
+                .frame(width: 90, height: 90)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                .font(.system(size: 10))
+                .font(.system(size: 8))
                 .background(color)
-                .cornerRadius(25)
+                .cornerRadius(75)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
         }
     }
