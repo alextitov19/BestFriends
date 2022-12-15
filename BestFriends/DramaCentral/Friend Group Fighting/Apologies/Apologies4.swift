@@ -50,7 +50,7 @@ struct Apologies4: View {
                         
                         Text("There is no weakness in saying your sorry")
                             .font(.system(size: 20))
-                            .italic()
+                        
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
@@ -72,7 +72,7 @@ struct Apologies4: View {
 
                         VStack {
                             
-                            Text("'I'm sorry. I apologize'")
+                            Text("[I'm sorry. I apologize]")
                                 .font(.system(size: 27))
                                 .foregroundColor(.green)
                                 .fontWeight(.light)

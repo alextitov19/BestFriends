@@ -114,13 +114,13 @@ struct AskQuestion: View {
                 VStack {
                     
                     
-                    Text("I'd like to talk")
+                    Text("[I'd like to talk")
                         .font(.system(size: 27))
                         .foregroundColor(.green)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
-                    Text("about something important")
+                    Text("about something important]")
                         .font(.system(size: 27))
                         .foregroundColor(.green)
                         .fontWeight(.light)
