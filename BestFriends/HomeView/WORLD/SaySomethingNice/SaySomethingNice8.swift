@@ -103,7 +103,6 @@ struct SaySomethingNice8: View {
                     
                     Text("Saying \nsomething \n'Nice'")
                         .font(.system(size: 30))
-                        
                         .fontWeight(.ultraLight)
                         .foregroundColor(ColorManager .grey3)
                         .multilineTextAlignment(.center)

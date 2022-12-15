@@ -51,13 +51,19 @@ struct AtmosphereMain2: View {
             
             VStack {
                 
+                Text("My day just CHANGED!")
+                    .font(.system(size: 20))
+                    .italic()
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(ColorManager .grey3)
+                    .multilineTextAlignment(.center)
+                
                 HStack {
                  
                     
-                    Text("My day just \nCHANGED!")
-                        .font(.system(size: 20))
-                        .italic()
-                        .fontWeight(.medium)
+                    Text("Set my \n'Vibe'")
+                        .font(.system(size: 30))
+                        .fontWeight(.ultraLight)
                         .foregroundColor(ColorManager .grey3)
                         .multilineTextAlignment(.center)
                    
@@ -69,10 +75,7 @@ struct AtmosphereMain2: View {
 //                    Spacer()
 //                        .frame(height: 20)
                     
-                    Text("Set my 'Vibe'")
-                        .font(.system(size: 30))
-                        .fontWeight(.medium)
-                        .foregroundColor(ColorManager .grey3)
+                  
                     
                     Text("Your 'Vibe' color shows around your planet")
                         .font(.system(size: 15))
