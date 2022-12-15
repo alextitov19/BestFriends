@@ -42,7 +42,7 @@ struct StartHere1: View {
 //            Image("Meet750")
 //               .frame(width: 100, height: 50)
 //                .ignoresSafeArea()
-            
+//                .scaledToFill()
             
             ZStack {
                 

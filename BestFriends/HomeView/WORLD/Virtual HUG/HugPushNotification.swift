@@ -78,7 +78,7 @@ struct HugPushNotification: View {
                         
                     }
                     
-                    Image("BalloonGuy300 1")
+                    Image("BalloonGuy300")
                         .resizable()
                         .frame(width: 200, height: 200)
                 }
