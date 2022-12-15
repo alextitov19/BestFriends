@@ -32,57 +32,48 @@ struct Apologies4: View {
     var body: some View {
         
                 ZStack {
-                    ColorManager.grey4
+                    
+//                    ColorManager.grey4
+//                        .ignoresSafeArea()
+//                        .onAppear()
+                    
+                    ColorManager .purple1
                         .ignoresSafeArea()
-                        .onAppear()
-        
-//
-//
-//        VStack {
-//
-//
-//
-//
-//            Text("A P O L O G I E S")
-//                .font(.system(size: 40))
-//                .foregroundColor(.blue)
-//                .fontWeight(.ultraLight)
-//                .multilineTextAlignment(.center)
-//
-//            ZStack {
-//
-//                Image("purpleBackground")
-//                    .resizable()
-//                    .scaledToFill()
-//                    .ignoresSafeArea()
-//
-//                Image("book")
-//                    .frame(width: 320, height: 20)
-//                //                .resizable()
-//                //                .scaledToFill()
-//                //                .ignoresSafeArea()
-//                //
-//
-//
-//
-//
-                VStack {
-
-                    Text("There's no weakness in")
-                        .font(.system(size: 20))
-                        .fontWeight(.light)
-                        .foregroundColor(Color.white)
                   
+
+                    AdPlayerView(name: "sky2")
+                        .ignoresSafeArea()
+                        .blendMode(.screen)
+        
                     
-                    Text("saying you're sorry!")
-                        .font(.system(size: 20))
-                        .fontWeight(.light)
-                        .foregroundColor(Color.white)
+                    VStack {
+                        
+                        Text("Join people around the world")
+                            .font(.system(size: 20))
+                            .italic()
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager .grey3)
+                            .multilineTextAlignment(.center)
+                        
+                        HStack {
+                         
+                            
+                            Text("Saying \nsomething \n'Nice'")
+                                .font(.system(size: 30))
+                                .fontWeight(.ultraLight)
+                                .foregroundColor(ColorManager .grey3)
+                                .multilineTextAlignment(.center)
+                           
+                            Image("girlwalking250")
+                                .resizable()
+                                .frame(width: 150, height: 150)
+                            
+                        }
+
                     
-                    Spacer()
-                        .frame(height: 30)
-                    
-                    
+        
+                
+                
                     HStack {
                         
                         //                MARK: The [All] button is not activated. When tap nothing comes up in the bottom output screen
@@ -91,17 +82,18 @@ struct Apologies4: View {
                                 
                             },
                                    label: {
-                                Text("Select >")
-                                //                                .fontWeight(.bold)
-                                    .fontWeight(.thin)
-                                    .frame(width: 120, height: 30)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 20))
-                                    .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-                                    .cornerRadius(25)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                Text("Select >")
+//                                //                                .fontWeight(.bold)
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 120, height: 30)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 20))
+//                                    .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+//                                    .cornerRadius(25)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
                         }
+                        
                         if friends.count > 0 {
                             RectView(user: user, friend: friends[0], color: colors[0])
                                 .onTapGesture(perform: {
@@ -178,7 +170,7 @@ struct Apologies4: View {
                     
                     VStack {
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 30)
                         
                         Button(action: {
                             shareButtonTapped()
@@ -186,11 +178,11 @@ struct Apologies4: View {
                                label: {
                             Text("SHARE")
                                 .fontWeight(.thin)
-                                .frame(width: 100, height: 40)
+                                .frame(width: 100, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
+                                .font(.system(size: 25))
                                 .background(shareColor)
-                                .cornerRadius(15)
+                                .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 .alert("Push Notifications sent successfully", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
@@ -248,19 +240,19 @@ struct Apologies4: View {
                         Spacer ()
                             .frame(height: 25)
                         
-                        Button(action: {
-                            sessionManager.showLogin()
-                        },
-                               label: {
-                            Text("Home")
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
+//                        Button(action: {
+//                            sessionManager.showLogin()
+//                        },
+//                               label: {
+//                            Text("Home")
+//                                .fontWeight(.thin)
+//                                .frame(width: 100, height: 30)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 25))
+//                                .background(ColorManager.purple3)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        })
 
                         
                         
@@ -304,11 +296,11 @@ struct Apologies4: View {
             var body: some View {
                 Text(friend.firstName + " " + String(friend.lastName.first!))
                     .fontWeight(.bold)
-                    .frame(width: 100, height: 30)
+                    .frame(width: 90, height: 90)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 10))
+                    .font(.system(size: 8))
                     .background(color)
-                    .cornerRadius(25)
+                    .cornerRadius(75)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
             }
         }
