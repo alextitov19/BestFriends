@@ -63,21 +63,21 @@ struct AskQuestion: View {
                 Spacer()
                     .frame(height: 15)
                
-                VStack {
-                    Text("Just couldn't bring yourself")
-                        .font(.system(size: 20))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(ColorManager .grey3)
-                        .multilineTextAlignment(.center)
-                    
-                    
-                    Text("to say something.")
-                        .font(.system(size: 20))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(ColorManager .grey3)
-                        .multilineTextAlignment(.center)
-                    
-                }
+//                VStack {
+//                    Text("Just couldn't bring yourself")
+//                        .font(.system(size: 20))
+//                        .fontWeight(.ultraLight)
+//                        .foregroundColor(ColorManager .grey3)
+//                        .multilineTextAlignment(.center)
+//
+//
+//                    Text("to say something.")
+//                        .font(.system(size: 20))
+//                        .fontWeight(.ultraLight)
+//                        .foregroundColor(ColorManager .grey3)
+//                        .multilineTextAlignment(.center)
+//
+//                }
 
                 HStack {
                  
@@ -105,7 +105,7 @@ struct AskQuestion: View {
                     }
                     
                     
-                    Image("Guy275")
+                    Image("BusyGuy")
                         .resizable()
                         .frame(width: 180, height: 180)
                     
@@ -236,7 +236,7 @@ struct AskQuestion: View {
                     VStack {
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 30)
                         
                         Button(action: {
                             shareButtonTapped()
@@ -244,9 +244,9 @@ struct AskQuestion: View {
                                label: {
                             Text("SHARE")
                                 .fontWeight(.thin)
-                                .frame(width: 100, height: 40)
+                                .frame(width: 100, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
+                                .font(.system(size: 25))
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -272,21 +272,21 @@ struct AskQuestion: View {
                         }
                         Spacer()
                             .frame(height: 40)
-                   
-                        Button(action: {
-                            sessionManager.showLogin()
-                        },
-                               label: {
-                            Text("Home")
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
-                        
+//
+//                        Button(action: {
+//                            sessionManager.showLogin()
+//                        },
+//                               label: {
+//                            Text("Home")
+//                                .fontWeight(.thin)
+//                                .frame(width: 100, height: 30)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 25))
+//                                .background(ColorManager.purple3)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        })
+//
                         
                         
                         
@@ -294,7 +294,7 @@ struct AskQuestion: View {
                             .font(.system(size: 20))
                             .italic()
                             .fontWeight(.light)
-                            .foregroundColor(Color .white)
+                            .foregroundColor(ColorManager .purple3)
                         
 
                         
@@ -322,7 +322,7 @@ struct AskQuestion: View {
             for id in selectedFriends {
                 for f in friends {
                     if f.id == id {
-                        RestApi.instance.sendPushNotification(title: "BestFriends - World FriendGroups", body: "\(user.firstName) would like to talk to you about something important. Can we talk?", APNToken: f.APNToken)
+                        RestApi.instance.sendPushNotification(title: "BestFriends - World FriendGroups", body: "\(user.firstName) I would like to talk to you about something important. Can we talk?", APNToken: f.APNToken)
                     }
                 }
             }
@@ -338,11 +338,11 @@ struct AskQuestion: View {
             var body: some View {
                 Text(friend.firstName + " " + String(friend.lastName.first!))
                     .fontWeight(.bold)
-                    .frame(width: 100, height: 30)
+                    .frame(width: 90, height: 90)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 10))
+                    .font(.system(size: 8))
                     .background(color)
-                    .cornerRadius(25)
+                    .cornerRadius(75)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
             }
         }
