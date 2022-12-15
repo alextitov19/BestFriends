@@ -50,16 +50,16 @@ struct HurtFeelings4: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text("Yep, it's been bugging you all day!")
+                Text("It's been bugging you all day!")
                     .font(.system(size: 20))
                     .fontWeight(.ultraLight)
                     .foregroundColor(ColorManager .grey3)
                     .multilineTextAlignment(.center)
                 
 
-                
-                Spacer()
-                    .frame(height: 20)
+//
+//                Spacer()
+//                    .frame(height: 20)
                 HStack {
                  
                     VStack {
@@ -203,7 +203,7 @@ struct HurtFeelings4: View {
                     VStack {
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 30)
                         
                         Button(action: {
                             shareButtonTapped()
@@ -211,9 +211,9 @@ struct HurtFeelings4: View {
                                label: {
                             Text("SHARE")
                                 .fontWeight(.thin)
-                                .frame(width: 100, height: 40)
+                                .frame(width: 100, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
+                                .font(.system(size: 25))
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -225,7 +225,7 @@ struct HurtFeelings4: View {
                        
                     
                         Spacer ()
-                            .frame(height: 125)
+                            .frame(height: 80)
                         
                         
                         Button(action: {
@@ -282,11 +282,11 @@ struct HurtFeelings4: View {
             var body: some View {
                 Text(friend.firstName + " " + String(friend.lastName.first!))
                     .fontWeight(.bold)
-                    .frame(width: 100, height: 30)
+                    .frame(width: 90, height: 90)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 10))
+                    .font(.system(size: 8))
                     .background(color)
-                    .cornerRadius(25)
+                    .cornerRadius(75)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
             }
         }

@@ -104,17 +104,9 @@ struct BuggingPreload1: View {
                         VStack {
                             
                             Spacer ()
-                                .frame(height: 40)
+                                .frame(height: 100)
                             
-                            Text("Something \nhappen?")
-                                .font(.system(size: 15))
-                            
-                                .foregroundColor(.white)
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                            
-                            Spacer ()
-                                .frame(height: 20)
+
                             
                             Text("Nervious to say anything?")
                                 .font(.system(size: 15))
