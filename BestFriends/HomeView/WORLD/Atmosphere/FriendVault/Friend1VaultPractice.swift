@@ -27,7 +27,7 @@ struct Friend1VaultPractice: View {
     
     var body: some View {
         ZStack {
-            Image("BandaidGuy")
+            Image("BandaidGuy 1")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -143,7 +143,7 @@ struct Friend1VaultPractice: View {
                     Spacer()
                         .frame(height: 60)
                     
-                    Text("Respond instantly via Push Notification")
+                    Text("Respond instantly by \nPush Notification")
                         .font(.system(size: 15))
                         .fontWeight(.medium)
 //                        .frame(width:325, height: 25)
