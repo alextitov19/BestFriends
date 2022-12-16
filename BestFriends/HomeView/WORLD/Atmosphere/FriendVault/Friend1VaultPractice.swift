@@ -27,7 +27,7 @@ struct Friend1VaultPractice: View {
     
     var body: some View {
         ZStack {
-            Image("BandaidGuy 1")
+            Image("BandaidGuy 2")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -68,6 +68,10 @@ struct Friend1VaultPractice: View {
                     .fontWeight(.thin)
                     .foregroundColor(ColorManager .purple5)
                 
+                
+                Spacer()
+                    .frame(height: 20)
+                
                 if (mostRecentMoodLog != nil) {
                     ZStack {
                         if mostRecentMoodLog!.mood < 4 {
@@ -88,16 +92,19 @@ struct Friend1VaultPractice: View {
                         }
                     }
                     .frame(width: 300, height: 100)
-                    .opacity(0.63)
-                    .cornerRadius(25)
+                    .opacity(0.93)
+                    .cornerRadius(35)
                     .padding()
+                    
+                    Spacer()
+                        .frame(height: 20)
                 }
                 
                 
                 
                 //                ReceivedPlaylist
                 Spacer()
-                    .frame(height: 7)
+                    .frame(height: 20)
                
                 
                 //MARK: Send CUSTOM Support Message to user got push notificaiton from OR chose one from below
@@ -105,23 +112,24 @@ struct Friend1VaultPractice: View {
                     .placeholder(when: customMessage.isEmpty) {
                         HStack {
                             Text("Send supportive message in Chat")
-                                .foregroundColor(ColorManager.purple5)
+                                .foregroundColor(ColorManager.grey4)
 //                            .foregroundColor(.white)
 //                            .frame(width: 300, height: 100)
 //                          Spacer()
                         }
                     }
                     .font(.system(size: 15))
-                    .foregroundColor(ColorManager.purple1)
+                    .foregroundColor(ColorManager .grey4)
+                    .opacity(0.60)
                     .submitLabel(.done)
                     .onReceive(Just(customMessage)) { _ in limitText(65) }
-                    .padding()
+                    .padding(30)
                     .overlay(RoundedRectangle(cornerRadius: 20)
                         .stroke(Color.purple)
-                        .frame(width: 320, height: 40)
+                        .frame(width: 345, height: 40)
                         .padding(.horizontal, 10)
                     )
-//                    .padding(.horizontal, 0)
+//                    .padding(.horizontal, 50)
                 
                 VStack {
                     Button(action: {
@@ -141,7 +149,7 @@ struct Friend1VaultPractice: View {
 //                    .padding()
                     
                     Spacer()
-                        .frame(height: 60)
+                        .frame(height: 40)
                     
                     Text("Respond instantly by \nPush Notification")
                         .font(.system(size: 15))
