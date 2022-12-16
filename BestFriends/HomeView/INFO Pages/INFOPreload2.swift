@@ -64,28 +64,16 @@ struct INFOPreload2: View {
              
             VStack {
            
-//
-//                Text("BestFriends")
-//                    .font(.system(size: 27))
-//
-//                    .foregroundColor(ColorManager.purple3)
-//                    .fontWeight(.thin)
-//                    .multilineTextAlignment(.center)
 
-                Text("World FriendGroups")
-                    .font(.system(size: 30))
-                    .foregroundColor(ColorManager.purple3)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-               
-                Text("feels like ...")
-                        .font(.system(size: 27))
+                
+                Text("leaving you feeling like ...")
+                        .font(.system(size: 19))
                         .italic()
                         .fontWeight(.thin)
                         .foregroundColor(ColorManager .purple3)
              
                 Spacer()
-                    .frame(height: 150)
+                    .frame(height: 12)
                 
               
                 
@@ -93,20 +81,19 @@ struct INFOPreload2: View {
                 
                     
                     Text("the look on a girl's face holding")
-                            .font(.system(size: 25))
-                            .italic()
+                            .font(.system(size: 28))
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
-                           
-                    
+
+
                     Text("unexpected flowers")
-                            .font(.system(size: 25))
+                            .font(.system(size: 28))
                             .italic()
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
                    
                     Spacer()
-                        .frame(height: 10)
+                        .frame(height: 50)
                     
                     Text(".  .  .")
                         .font(.system(size: 25, weight: .bold))
@@ -116,16 +103,25 @@ struct INFOPreload2: View {
                         .multilineTextAlignment(.center)
                     
                     Spacer()
+                        .frame(height: 50)
+                    
+                    Text("with the joy of ...")
+                            .font(.system(size: 21))
+                            .italic()
+                            .fontWeight(.thin)
+                            .foregroundColor(ColorManager .purple3)
+                    
+                    Spacer()
                         .frame(height: 10)
                     
+                    
                     Text("kicking through")
-                            .font(.system(size: 27))
-                            .italic()
+                            .font(.system(size: 30))
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
                     
                     Text("autumn's leaves")
-                            .font(.system(size: 28))
+                            .font(.system(size: 30))
                             .italic()
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
@@ -133,23 +129,11 @@ struct INFOPreload2: View {
           
                     
                     Spacer()
-                        .frame(height: 70)
+                        .frame(height: 100)
                     
                  
 
-                    
-            VStack {
-              
       
-   
-//                    Text("feeling safe in the silence")
-//                            .font(.system(size: 20))
-//                            .italic()
-//                            .fontWeight(.thin)
-//                            .foregroundColor(Color.white)
-              
-                    Spacer()
-                        .frame(height: 85)
                     
                 }
                 
@@ -159,7 +143,7 @@ struct INFOPreload2: View {
     }
                 
 }
-}
+
     
 
         

@@ -41,14 +41,14 @@ struct INFOPreload: View {
                 VStack {
    
                     Text("Building Resilient Friendships")
-                        .font(.system(size: 35, weight: .bold))
+                        .font(.system(size: 33, weight: .bold))
                         .foregroundColor(ColorManager .purple1)
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                         .opacity(0.50)
                         .multilineTextAlignment(.center)
                  
                     Spacer ()
-                        .frame(height: 10)
+                        .frame(height: 15)
                     
                     Text(".  .  .")
                         .font(.system(size: 25, weight: .bold))
@@ -61,7 +61,7 @@ struct INFOPreload: View {
                         .frame(height: 10)
                     
                     Text("Reducing \nFriendGroup Drama")
-                        .font(.system(size: 35, weight: .bold))
+                        .font(.system(size: 36, weight: .bold))
                         .foregroundColor(ColorManager .purple1)
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                         .opacity(0.50)
