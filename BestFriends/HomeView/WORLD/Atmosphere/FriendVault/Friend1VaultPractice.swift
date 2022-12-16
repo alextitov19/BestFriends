@@ -27,7 +27,7 @@ struct Friend1VaultPractice: View {
     
     var body: some View {
         ZStack {
-            Image("blueBackground")
+            Image("BandaidGuy")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -53,7 +53,7 @@ struct Friend1VaultPractice: View {
                     
                     Text(friend.firstName + " " + friend.lastName)
                         .font(.system(size: 17))
-                        .foregroundColor(.white)
+                        .foregroundColor(ColorManager .purple7)
                         .padding()
                       
                 }
@@ -61,12 +61,12 @@ struct Friend1VaultPractice: View {
                 Text("wants you to know")
                     .font(.system(size: 20))
                     .fontWeight(.thin)
-                    .foregroundColor(.white)
+                    .foregroundColor(ColorManager .purple5)
                 
                 Text("their 'Vibe' just changed")
                     .font(.system(size: 20))
                     .fontWeight(.thin)
-                    .foregroundColor(.white)
+                    .foregroundColor(ColorManager .purple5)
                 
                 if (mostRecentMoodLog != nil) {
                     ZStack {
@@ -118,7 +118,7 @@ struct Friend1VaultPractice: View {
                     .padding()
                     .overlay(RoundedRectangle(cornerRadius: 20)
                         .stroke(Color.purple)
-                        .frame(height: 40)
+                        .frame(width: 320, height: 40)
                         .padding(.horizontal, 10)
                     )
 //                    .padding(.horizontal, 0)
@@ -140,11 +140,14 @@ struct Friend1VaultPractice: View {
                     })
 //                    .padding()
                     
+                    Spacer()
+                        .frame(height: 60)
+                    
                     Text("Respond instantly via Push Notification")
                         .font(.system(size: 15))
                         .fontWeight(.medium)
 //                        .frame(width:325, height: 25)
-                        .foregroundColor(.white)
+                        .foregroundColor(ColorManager .purple7)
                     
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "Are you okay?")
