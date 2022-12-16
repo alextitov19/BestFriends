@@ -47,15 +47,15 @@ struct INFOPreload2: View {
 //                .opacity(0.75)
           
             ZStack {
-                Circle()
-                    .frame(width: 300, height: 300)
-                    .foregroundColor(ColorManager.purple3)
-                    .offset(x: 200, y: -450)
-                
-                Circle()
-                    .frame(width: 300, height: 300)
-                    .foregroundColor(ColorManager.purple3)
-                    .offset(x: -200, y: 400)
+//                Circle()
+//                    .frame(width: 300, height: 300)
+//                    .foregroundColor(ColorManager.purple3)
+//                    .offset(x: 200, y: -450)
+//
+//                Circle()
+//                    .frame(width: 300, height: 300)
+//                    .foregroundColor(ColorManager.purple3)
+//                    .offset(x: -200, y: 400)
                 
                 
             }
@@ -64,28 +64,28 @@ struct INFOPreload2: View {
              
             VStack {
            
-             
-                Text("Making")
-                    .font(.system(size: 27))
-                    .italic()
-                    .foregroundColor(ColorManager.purple3)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                
-                Text("F R I E N D S H I P S")
-                    .font(.system(size: 45))
+//
+//                Text("BestFriends")
+//                    .font(.system(size: 27))
+//
+//                    .foregroundColor(ColorManager.purple3)
+//                    .fontWeight(.thin)
+//                    .multilineTextAlignment(.center)
+
+                Text("World FriendGroups")
+                    .font(.system(size: 30))
                     .foregroundColor(ColorManager.purple3)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                
-                Text("feel like ...")
+                Text("feels like ...")
                         .font(.system(size: 27))
                         .italic()
                         .fontWeight(.thin)
                         .foregroundColor(ColorManager .purple3)
              
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 150)
                 
               
                 
@@ -94,12 +94,14 @@ struct INFOPreload2: View {
                     
                     Text("the look on a girl's face holding")
                             .font(.system(size: 25))
+                            .italic()
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
                            
                     
                     Text("unexpected flowers")
                             .font(.system(size: 25))
+                            .italic()
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
                    
@@ -118,70 +120,47 @@ struct INFOPreload2: View {
                     
                     Text("kicking through")
                             .font(.system(size: 27))
+                            .italic()
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
                     
                     Text("autumn's leaves")
                             .font(.system(size: 28))
+                            .italic()
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
                     
           
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 70)
                     
                  
 
                     
             VStack {
               
-            
-                
-
-                Spacer()
-                    .frame(height: 20)
-            
-                VStack {
-                    
-                    
-                    NavigationLink(
-                        destination: BuiltForTeens(user: user),
-                        label: {
-                            Text("Next")
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                        })
       
-                    Spacer()
-                        .frame(height: 20)
-              
-                    
-                    Text("feeling safe in the silence")
-                            .font(.system(size: 20))
-                            .italic()
-                            .fontWeight(.thin)
-                            .foregroundColor(Color.white)
+   
+//                    Text("feeling safe in the silence")
+//                            .font(.system(size: 20))
+//                            .italic()
+//                            .fontWeight(.thin)
+//                            .foregroundColor(Color.white)
               
                     Spacer()
-                        .frame(height: 65)
+                        .frame(height: 85)
                     
-                }
-                
-                    }
-                        
-                    }
                 }
                 
             }
-}
+                        
+        }
     }
+                
+}
+}
+    
 
         
   
