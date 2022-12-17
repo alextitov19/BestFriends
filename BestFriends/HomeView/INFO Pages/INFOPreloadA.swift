@@ -15,9 +15,9 @@ struct INFOPreloadA: View {
     
     let user: User
     let friends: [User]
-//    let groups: [Group]
-//    let atmosphere: Atmosphere
-//
+    //    let groups: [Group]
+    //    let atmosphere: Atmosphere
+    //
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
     
@@ -40,7 +40,7 @@ struct INFOPreloadA: View {
             
             
             
-            AdPlayerView(name: "MyRoom5")
+            AdPlayerView(name: "PaperAirplanes")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
@@ -50,38 +50,74 @@ struct INFOPreloadA: View {
                 NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
                     InfoCircle (color: ColorManager.purple2, friendName: "Reducing \n FriendGroup \nDrama")
                 })
-                .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
-                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                .offset(x: showItems ? -80 : 0, y: showItems ? -300: 0)
+                .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                 
                 
-          
+                
+                
+                NavigationLink(destination: HugPushNotification2(user: user, friends: friends), label: {
+                    InfoCircle (color: ColorManager .purple2, friendName: "Building \nResilient \nFriendships")
+                })
+                .offset(x: showItems ? 120 : 0, y: showItems ? -170: 0)
+                .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
+                
+                
+                
+                ZStack {
                     
-                    NavigationLink(destination: HugPushNotification2(user: user, friends: friends), label: {
-                        InfoCircle (color: ColorManager .purple2, friendName: "Building \nResilient \nFriendships")
+                    
+                    NavigationLink(destination: INFOPreload2(user: user), label: {
+                        InfoCircle (color: ColorManager.orange3, friendName: "All of us, \nat same time, \ntogether \n\n")
                     })
-                    .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
-                    .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                    .offset(x: showItems ? -80 : 0, y: showItems ? -120: 0)
+                    .shadow(color: ColorManager .orange2, radius: 4, x: 4, y: 4)
                     
                     
-                    Image(systemName: "heart.fill")
+                    
+                    
+                    
+                    Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(ColorManager .grey2)
-                        .frame(width: 250, height: 200)
+                        .frame(width: 200, height: 200)
                     //                    .blur(radius: 2)
-                        .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
+                        .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50) .opacity(0.99)
                     
                     VStack {
                         
                         Spacer ()
-                            .frame(height: 10)
+                            .frame(height: 190)
                         
                         Text("5 minutes \ndaily")
-                            .font(.system(size: 17))
+                            .font(.system(size: 25))
                         
                             .foregroundColor(.white)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        
+//                        Text("in a Safe,")
+//                            .font(.system(size: 25))
+//
+//                            .foregroundColor(.white)
+//                            .fontWeight(.regular)
+//                            .multilineTextAlignment(.center)
+//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+//
+//                        Text("Positive space")
+//                            .font(.system(size: 25))
+//
+//                            .foregroundColor(.white)
+//                            .fontWeight(.regular)
+//                            .multilineTextAlignment(.center)
+//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+//
+                        
+                        Spacer ()
+                            .frame(height: 15)
                         
                         Text("TAP Here")
                             .font(.system(size: 20))
@@ -91,7 +127,16 @@ struct INFOPreloadA: View {
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
+                        Spacer ()
+                            .frame(height: 100)
+                      
                         
+                        VStack {
+                            
+                        }
+                        
+                        Spacer()
+                            .frame(height: 75)
                     }
                 }
                 
@@ -104,7 +149,7 @@ struct INFOPreloadA: View {
                     print("tap function is working")
                 }
                 
-                .animation(Animation.easeInOut(duration: 1.7), value: showItems)
+                .animation(Animation.easeInOut(duration: 2.5), value: showItems)
                 
             }
         }
@@ -120,10 +165,10 @@ struct INFOPreloadA: View {
             ZStack {
                 
                 Image(systemName: "heart.fill")
-                            .resizable()
-                            .foregroundColor(ColorManager .purple2)
-                            .frame(width: 200, height: 175)
-                            .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                    .resizable()
+                    .foregroundColor(ColorManager .purple2)
+                    .frame(width: 175, height: 150)
+                    .shadow(color: ColorManager .grey3, radius: 5, x: 5, y: 5)
                 
                 Text(friendName)
                     .fontWeight(.light)
@@ -133,5 +178,6 @@ struct INFOPreloadA: View {
             }
         }
     }
-
-
+    
+    
+}
