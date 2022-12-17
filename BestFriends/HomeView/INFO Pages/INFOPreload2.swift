@@ -36,7 +36,7 @@ struct INFOPreload2: View {
                                 .ignoresSafeArea()
                                 .scaledToFill()
 
-            AdPlayerView(name: "sky2")
+            AdPlayerView(name: "dramaLights")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.75)
