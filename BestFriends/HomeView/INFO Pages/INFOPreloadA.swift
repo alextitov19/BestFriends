@@ -47,7 +47,7 @@ struct INFOPreloadA: View {
             
             ZStack{
                 
-                NavigationLink(destination: EmptyView(), label: {
+                NavigationLink(destination: INFOPreload2(user: user), label: {
                     InfoCircle (color: ColorManager.purple2, friendName: "Building more\nresilient, \nstronger, \nFriendships")
                 })
                 .offset(x: showItems ? -80 : 0, y: showItems ? -200: 0)
@@ -56,7 +56,7 @@ struct INFOPreloadA: View {
                 
                 
                 
-                NavigationLink(destination: EmptyView(), label: {
+                NavigationLink(destination: INFOPreload2(user: user), label: {
                     InfoCircle (color: ColorManager .purple2, friendName: "Reducing \n FriendGroup \nDrama")
                 })
                 .offset(x: showItems ? 120 : 0, y: showItems ? -150: 0)
@@ -102,7 +102,7 @@ struct INFOPreloadA: View {
                         Spacer ()
                             .frame(height: 15)
                         
-                        Text("TAP Here 1st")
+                        Text("TAP here")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(.green)
@@ -113,14 +113,7 @@ struct INFOPreloadA: View {
                         Spacer ()
                             .frame(height: 57)
                         
-                        
-                        Text("TAP Here")
-                            .font(.system(size: 20))
-                            .italic()
-                            .foregroundColor(.green)
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.center)
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                      
                         
                         
                         
