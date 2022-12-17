@@ -80,13 +80,13 @@ struct INFOPreload2: View {
                 VStack {
                 
                     
-                    Text("the look on a girl's face holding")
+                    Text("the look on a girl's face,")
                             .font(.system(size: 28))
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
 
 
-                    Text("unexpected flowers")
+                    Text("holding unexpected flowers")
                             .font(.system(size: 28))
                             .italic()
                             .fontWeight(.thin)
@@ -115,7 +115,7 @@ struct INFOPreload2: View {
                         .frame(height: 10)
                     
                     
-                    Text("kicking through")
+                    Text("kicking through,")
                             .font(.system(size: 30))
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)

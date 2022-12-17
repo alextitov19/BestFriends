@@ -48,7 +48,7 @@ struct INFOPreloadA: View {
             ZStack{
                 
                 NavigationLink(destination: INFOPreload2(user: user), label: {
-                    InfoCircle (color: ColorManager.purple2, friendName: "Building more\nresilient, \nstronger, \nFriendships")
+                    InfoCircle (color: ColorManager.purple1, friendName: "Building more\nresilient, \nstronger, \nFriendships")
                 })
                 .offset(x: showItems ? -80 : 0, y: showItems ? -200: 0)
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
@@ -57,7 +57,7 @@ struct INFOPreloadA: View {
                 
                 
                 NavigationLink(destination: INFOPreload2(user: user), label: {
-                    InfoCircle (color: ColorManager .purple2, friendName: "Reducing \n FriendGroup \nDrama")
+                    InfoCircle (color: ColorManager .purple1, friendName: "Reducing \n FriendGroup \nDrama")
                 })
                 .offset(x: showItems ? 120 : 0, y: showItems ? -150: 0)
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
@@ -68,13 +68,17 @@ struct INFOPreloadA: View {
                     
                     
                     NavigationLink(destination: INFOPreload2(user: user), label: {
-                        InfoCircle (color: ColorManager.purple2, friendName: "All of us, \nat same time, \ntogether")
+                        InfoCircle (color: ColorManager.purple3, friendName: "All of us, \nat same time, \ntogether")
                     })
-                    .offset(x: showItems ? 0 : 0, y: showItems ? 180: 0)
+                    .offset(x: showItems ? -75 : 0, y: showItems ? 180: 0)
                     .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                     
                     
-                    
+                    NavigationLink(destination: INFOPreload3(user: user), label: {
+                        InfoCircle (color: ColorManager.purple3, friendName: "Who's, \nusing \nBestFrinds?")
+                    })
+                    .offset(x: showItems ? 120 : 0, y: showItems ? 120: 0)
+                    .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                     
                     
                     Image(systemName: "circle.fill")
