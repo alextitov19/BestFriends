@@ -102,7 +102,7 @@ struct INFOPreloadA: View {
                         Spacer ()
                             .frame(height: 15)
                         
-                        Text("TAP here")
+                        Text("TAP")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(.green)
