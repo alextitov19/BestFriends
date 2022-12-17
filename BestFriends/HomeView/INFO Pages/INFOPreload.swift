@@ -15,6 +15,10 @@ struct INFOPreload: View {
     
         let user: User
    
+    @State private var showItems: Bool = false
+    @State private var offset: CGFloat = 200.0
+    @State private var isLockTapped = false
+    
     
     var body: some View {
         
@@ -23,20 +27,31 @@ struct INFOPreload: View {
             
             ZStack {
                 
-                Color .black
-                  .ignoresSafeArea()
-                  .onAppear()
+//                Color .black
+//                  .ignoresSafeArea()
+//                  .onAppear()
 //                
-//                Image("purpleBackground")
-//                    .resizable()
-//                    .ignoresSafeArea()
-//                    .scaledToFill()
+                Image("purpleBackground")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFill()
 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.75)
                 
+                
+//                ZStack{
+                    
+                    
+                    
+                    //                AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends),
+                    
+                  
+
+                    
+                      
                 
                 VStack {
    

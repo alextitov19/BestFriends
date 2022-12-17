@@ -168,6 +168,7 @@
 		CF4CFAC228E8DC3B00D6AEA9 /* SaySomethingNice3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4CFAC128E8DC3B00D6AEA9 /* SaySomethingNice3.swift */; };
 		CF565EEA292FED1E00B66A18 /* WhyFiveFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF565EE9292FED1E00B66A18 /* WhyFiveFriends.swift */; };
 		CF565EEC2935A61200B66A18 /* MoodSongPushNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF565EEB2935A61200B66A18 /* MoodSongPushNote.swift */; };
+		CF6499DF294D4148003BBF83 /* INFOPreloadA.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6499DE294D4148003BBF83 /* INFOPreloadA.swift */; };
 		CF65040028864AF00092EEB9 /* background_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503FF28864AF00092EEB9 /* background_1.mp4 */; };
 		CF650406288E76B50092EEB9 /* GotPushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650405288E76B50092EEB9 /* GotPushNotification.swift */; };
 		CF65040A28915A080092EEB9 /* FD_Step1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65040928915A080092EEB9 /* FD_Step1.swift */; };
@@ -428,6 +429,7 @@
 		CF5263D6266477C600243DD7 /* background_4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_4.mp4; sourceTree = "<group>"; };
 		CF565EE9292FED1E00B66A18 /* WhyFiveFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyFiveFriends.swift; sourceTree = "<group>"; };
 		CF565EEB2935A61200B66A18 /* MoodSongPushNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodSongPushNote.swift; sourceTree = "<group>"; };
+		CF6499DE294D4148003BBF83 /* INFOPreloadA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOPreloadA.swift; sourceTree = "<group>"; };
 		CF6503FF28864AF00092EEB9 /* background_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_1.mp4; sourceTree = "<group>"; };
 		CF650405288E76B50092EEB9 /* GotPushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotPushNotification.swift; sourceTree = "<group>"; };
 		CF65040928915A080092EEB9 /* FD_Step1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FD_Step1.swift; sourceTree = "<group>"; };
@@ -1204,6 +1206,7 @@
 			isa = PBXGroup;
 			children = (
 				CF565EE9292FED1E00B66A18 /* WhyFiveFriends.swift */,
+				CF6499DE294D4148003BBF83 /* INFOPreloadA.swift */,
 				CF3295F6290BAA7C0014F658 /* INFOPreload.swift */,
 				CFD8BD15291B3D6600F86EFB /* INFOPreload2.swift */,
 				CF3295FC290BBD210014F658 /* InfoCoolVideo.swift */,
@@ -1600,6 +1603,7 @@
 				CF4128042922A451003BCBFA /* PhotoPOPFGPreload.swift in Sources */,
 				CFD0469F2838394C00BF0B02 /* UrgentChatInvite.swift in Sources */,
 				CFD8BD16291B3D6600F86EFB /* INFOPreload2.swift in Sources */,
+				CF6499DF294D4148003BBF83 /* INFOPreloadA.swift in Sources */,
 				CF1ECAC92875500100D999F8 /* InfoViewPlanet.swift in Sources */,
 				CF3802D728456C83005181E4 /* FG_Team.swift in Sources */,
 				CFD12CD3281A821C00AB2539 /* FightWithFriend.swift in Sources */,

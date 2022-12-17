@@ -26,15 +26,15 @@ struct INFOPreload2: View {
     var body: some View {
         ZStack {
             
-            Color .black
-              .ignoresSafeArea()
-              .onAppear()
+//            Color .black
+//              .ignoresSafeArea()
+//              .onAppear()
             
             
-//                            Image("purpleBackground")
-//                                .resizable()
-//                                .ignoresSafeArea()
-//                                .scaledToFill()
+                            Image("purpleBackground")
+                                .resizable()
+                                .ignoresSafeArea()
+                                .scaledToFill()
 
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()

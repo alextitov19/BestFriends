@@ -126,7 +126,7 @@ struct PlanetActionsView: View {
                                 Circle()
                                     .frame(width: 110, height: 110)
                                     .foregroundColor(ColorManager.purple3)
-//                                    .shadow(color: .white, radius: 2, x: 0, y: 2)
+                                    .shadow(color: .white, radius: 2, x: 0, y: 2)
                                     .opacity(0.60)
                                 
                                 VStack {
@@ -198,7 +198,7 @@ struct PlanetActionsView: View {
                         //
                         //                    MARK: First setup
                         
-                        NavigationLink(destination: INFOPreload(user: user),
+                        NavigationLink(destination: INFOPreloadA(user: user, friends: friends),
                                        label: {
                             ZStack {
                                 Circle()

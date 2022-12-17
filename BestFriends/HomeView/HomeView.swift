@@ -35,17 +35,20 @@ struct HomeView: View {
             
             ZStack {
                 
-                Color .black
-                  .ignoresSafeArea()
-                  .onAppear()
+//                Color .black
+//                  .ignoresSafeArea()
+//                  .onAppear()
                 
                 
-//                            Image("purpleBackground")
-//                                .resizable()
-//                                .ignoresSafeArea()
-//                                .scaledToFill()
+                            Image("purpleBackground")
+                                .resizable()
+                                .ignoresSafeArea()
+                                .scaledToFill()
 //                                .onAppear(perform: loadData)
-//                //
+
+                
+                
+                //
 //                //            AdPlayerView(name: "background_1")
 //                //                .ignoresSafeArea()
 //                //                .blendMode(.screen)
