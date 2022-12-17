@@ -81,7 +81,7 @@ struct INFOPreload3: View {
                     Spacer()
                         .frame(height: 15)
                     
-                    Text("- populars at school wanting \ncloser connections with \na few trusted friends")
+                    Text("- populars at school wanting \ncloser connections with \nfewer trusted friends")
                         .font(.system(size: 20))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
