@@ -48,7 +48,7 @@ struct INFOPreloadA: View {
             ZStack{
                 
                 NavigationLink(destination: INFOPreload2(user: user), label: {
-                    InfoCircle (color: ColorManager.purple1, friendName: "Building more\nresilient, \nstronger, \nFriendships")
+                    InfoCircle (color: ColorManager.purple1, friendName: "Building \nstronger \nFriendships")
                 })
                 .offset(x: showItems ? -80 : 0, y: showItems ? -200: 0)
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
@@ -68,7 +68,7 @@ struct INFOPreloadA: View {
                     
                     
                     NavigationLink(destination: INFOPreload2(user: user), label: {
-                        InfoCircle (color: ColorManager.purple3, friendName: "All of us, \nat same time, \ntogether")
+                        InfoCircle (color: ColorManager.purple3, friendName: "World FriendGroups... \nAll of us, \nat same time, \ntogether")
                     })
                     .offset(x: showItems ? -75 : 0, y: showItems ? 180: 0)
                     .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)

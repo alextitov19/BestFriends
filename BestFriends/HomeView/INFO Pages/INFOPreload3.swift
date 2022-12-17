@@ -113,7 +113,6 @@ struct INFOPreload3: View {
                         
                         Text("- anyone worldwide that knows \nmoments of kindness, \nget noticed the most")
                             .font(.system(size: 20))
-                            .italic()
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
                             .multilineTextAlignment(.center)
@@ -124,7 +123,7 @@ struct INFOPreload3: View {
                         
                   
                   
-                        Text("leaving life OK, \neven in the slience ...")
+                        Text("leaving life better, \neven in the slience ...")
                             .font(.system(size: 25))
                             .italic()
                             .fontWeight(.thin)
