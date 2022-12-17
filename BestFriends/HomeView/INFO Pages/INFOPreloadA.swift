@@ -47,19 +47,19 @@ struct INFOPreloadA: View {
             
             ZStack{
                 
-                NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
-                    InfoCircle (color: ColorManager.purple2, friendName: "Reducing \n FriendGroup \nDrama")
+                NavigationLink(destination: EmptyView(), label: {
+                    InfoCircle (color: ColorManager.purple2, friendName: "Building more\nresilient, \nstronger, \nFriendships")
                 })
-                .offset(x: showItems ? -80 : 0, y: showItems ? -300: 0)
+                .offset(x: showItems ? -80 : 0, y: showItems ? -200: 0)
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                 
                 
                 
                 
-                NavigationLink(destination: HugPushNotification2(user: user, friends: friends), label: {
-                    InfoCircle (color: ColorManager .purple2, friendName: "Building \nResilient \nFriendships")
+                NavigationLink(destination: EmptyView(), label: {
+                    InfoCircle (color: ColorManager .purple2, friendName: "Reducing \n FriendGroup \nDrama")
                 })
-                .offset(x: showItems ? 120 : 0, y: showItems ? -170: 0)
+                .offset(x: showItems ? 120 : 0, y: showItems ? -150: 0)
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                 
                 
@@ -68,10 +68,10 @@ struct INFOPreloadA: View {
                     
                     
                     NavigationLink(destination: INFOPreload2(user: user), label: {
-                        InfoCircle (color: ColorManager.orange3, friendName: "All of us, \nat same time, \ntogether \n\n")
+                        InfoCircle (color: ColorManager.purple2, friendName: "All of us, \nat same time, \ntogether")
                     })
-                    .offset(x: showItems ? -80 : 0, y: showItems ? -120: 0)
-                    .shadow(color: ColorManager .orange2, radius: 4, x: 4, y: 4)
+                    .offset(x: showItems ? 0 : 0, y: showItems ? 180: 0)
+                    .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                     
                     
                     
@@ -87,7 +87,7 @@ struct INFOPreloadA: View {
                     VStack {
                         
                         Spacer ()
-                            .frame(height: 190)
+                            .frame(height: 280)
                         
                         Text("5 minutes \ndaily")
                             .font(.system(size: 25))
@@ -97,24 +97,7 @@ struct INFOPreloadA: View {
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
-//                        Text("in a Safe,")
-//                            .font(.system(size: 25))
-//
-//                            .foregroundColor(.white)
-//                            .fontWeight(.regular)
-//                            .multilineTextAlignment(.center)
-//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-//
-//
-//                        Text("Positive space")
-//                            .font(.system(size: 25))
-//
-//                            .foregroundColor(.white)
-//                            .fontWeight(.regular)
-//                            .multilineTextAlignment(.center)
-//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-//
-//
+
                         
                         Spacer ()
                             .frame(height: 15)
@@ -126,6 +109,21 @@ struct INFOPreloadA: View {
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+                       
+                        Spacer ()
+                            .frame(height: 57)
+                        
+                        
+                        Text("TAP Here")
+                            .font(.system(size: 20))
+                            .italic()
+                            .foregroundColor(.green)
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        
+                        
+                        
                         
                         Spacer ()
                             .frame(height: 100)
