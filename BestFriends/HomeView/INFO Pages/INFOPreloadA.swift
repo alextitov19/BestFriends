@@ -48,7 +48,7 @@ struct INFOPreloadA: View {
             ZStack{
                 
                 NavigationLink(destination: INFOPreload2(user: user), label: {
-                    InfoCircle (color: ColorManager.purple1, friendName: "Enjoying \nhappier \nFriendships")
+                    InfoCircle (color: ColorManager.purple1, friendName: "Enjoying \nhappier \nFriendships \nmore...")
                 })
                 .offset(x: showItems ? -80 : 0, y: showItems ? -200: 0)
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
@@ -77,21 +77,21 @@ struct INFOPreloadA: View {
                     NavigationLink(destination: INFOPreload3(user: user), label: {
                         InfoCircle (color: ColorManager.purple3, friendName: "Who's, \nusing \nBestFrinds?")
                     })
-                    .offset(x: showItems ? 120 : 0, y: showItems ? 120: 0)
+                    .offset(x: showItems ? -20 : 0, y: showItems ? 220: 0)
                     .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                     
                     
-                    Image(systemName: "circle.fill")
+                    Image(systemName: "triangle.fill")
                         .resizable()
                         .foregroundColor(ColorManager .grey2)
-                        .frame(width: 250, height: 250)
+                        .frame(width: 270, height: 270)
                     //                    .blur(radius: 2)
                         .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50) .opacity(0.99)
                     
                     VStack {
                         
                         Spacer ()
-                            .frame(height: 250)
+                            .frame(height: 280)
                         
                         Text("5 minutes \ndaily")
                             .font(.system(size: 25))
@@ -104,7 +104,7 @@ struct INFOPreloadA: View {
                         Spacer ()
                             .frame(height: 15)
                         
-                        Text("All of us together, \nsimotaniously")
+                        Text("All of us together, \nsimultaneously")
                             .font(.system(size: 25))
                         
                             .foregroundColor(.white)
@@ -115,7 +115,7 @@ struct INFOPreloadA: View {
                         Spacer ()
                             .frame(height: 15)
                         
-                        Text("TAP circles")
+                        Text("TAP")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(.green)
