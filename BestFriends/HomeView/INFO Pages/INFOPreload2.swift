@@ -29,23 +29,14 @@ struct INFOPreload2: View {
             ColorManager .purple2
               .ignoresSafeArea()
               .onAppear()
-            
-            
-//                            Image("purpleBackground")
-//                                .resizable()
-//                                .ignoresSafeArea()
-//                                .scaledToFill()
+   
 
             AdPlayerView(name: "dramaLights")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.75)
 
-//            AdPlayerView(name: "PaperAirplanes")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//                .opacity(0.75)
-          
+
             ZStack {
 //                Circle()
 //                    .frame(width: 300, height: 300)

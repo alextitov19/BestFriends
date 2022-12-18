@@ -24,50 +24,33 @@ struct INFOPreload3: View {
     var body: some View {
         ZStack {
             
-            //            Color .black
-            //              .ignoresSafeArea()
-            //              .onAppear()
+            ColorManager .purple2
+              .ignoresSafeArea()
+              .onAppear()
+   
+//
+//            AdPlayerView(name: "dramaLights")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.75)
+
             
-            
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-            
-            AdPlayerView(name: "")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-                .opacity(0.75)
-            
-            //            AdPlayerView(name: "PaperAirplanes")
-            //                .ignoresSafeArea()
-            //                .blendMode(.screen)
-            //                .opacity(0.75)
-            
-            ZStack {
-                //                Circle()
-                //                    .frame(width: 300, height: 300)
-                //                    .foregroundColor(ColorManager.purple3)
-                //                    .offset(x: 200, y: -450)
-                //
-                //                Circle()
-                //                    .frame(width: 300, height: 300)
-                //                    .foregroundColor(ColorManager.purple3)
-                //                    .offset(x: -200, y: 400)
-                
-                
-            }
+            Circle()
+                .frame(width: 300, height: 300)
+                .foregroundColor(ColorManager.purple1)
+                .offset(x: 200, y: -450)
+
+            Circle()
+                .frame(width: 300, height: 300)
+                .foregroundColor(ColorManager.purple1)
+                .offset(x: -200, y: 400)
+
+      
             
             
             
             VStack {
-                
-                
-
-//                Spacer()
-//                    .frame(height: 12)
-//
-                
+ 
                 
                 VStack {
                     
@@ -127,7 +110,7 @@ struct INFOPreload3: View {
                             .font(.system(size: 25))
                             .italic()
                             .fontWeight(.thin)
-                            .foregroundColor(ColorManager .purple3)
+                            .foregroundColor(ColorManager .purple4)
                             .multilineTextAlignment(.center)
                         
                         
