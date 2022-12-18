@@ -170,6 +170,7 @@
 		CF565EEC2935A61200B66A18 /* MoodSongPushNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF565EEB2935A61200B66A18 /* MoodSongPushNote.swift */; };
 		CF6499DF294D4148003BBF83 /* INFOPreloadA.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6499DE294D4148003BBF83 /* INFOPreloadA.swift */; };
 		CF6499E1294E1F6C003BBF83 /* INFOPreload3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6499E0294E1F6C003BBF83 /* INFOPreload3.swift */; };
+		CF6499E5294EBAC1003BBF83 /* AloneBeach.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6499E4294EBAC1003BBF83 /* AloneBeach.mp4 */; };
 		CF65040028864AF00092EEB9 /* background_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503FF28864AF00092EEB9 /* background_1.mp4 */; };
 		CF650406288E76B50092EEB9 /* GotPushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650405288E76B50092EEB9 /* GotPushNotification.swift */; };
 		CF65040A28915A080092EEB9 /* FD_Step1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65040928915A080092EEB9 /* FD_Step1.swift */; };
@@ -432,6 +433,7 @@
 		CF565EEB2935A61200B66A18 /* MoodSongPushNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodSongPushNote.swift; sourceTree = "<group>"; };
 		CF6499DE294D4148003BBF83 /* INFOPreloadA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOPreloadA.swift; sourceTree = "<group>"; };
 		CF6499E0294E1F6C003BBF83 /* INFOPreload3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOPreload3.swift; sourceTree = "<group>"; };
+		CF6499E4294EBAC1003BBF83 /* AloneBeach.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AloneBeach.mp4; sourceTree = "<group>"; };
 		CF6503FF28864AF00092EEB9 /* background_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_1.mp4; sourceTree = "<group>"; };
 		CF650405288E76B50092EEB9 /* GotPushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotPushNotification.swift; sourceTree = "<group>"; };
 		CF65040928915A080092EEB9 /* FD_Step1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FD_Step1.swift; sourceTree = "<group>"; };
@@ -1053,6 +1055,7 @@
 				CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */,
 				CF47CF1328E81BBE008B6F11 /* Wind2.mp4 */,
 				CFD6C05829405EB100D57E0B /* MyRoom5.mp4 */,
+				CF6499E4294EBAC1003BBF83 /* AloneBeach.mp4 */,
 				CF3DB38A28DADD3E00BF9CCD /* New Group */,
 				CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */,
 				CF3DB37128DA6D7D00BF9CCD /* Nadiah2.m4a */,
@@ -1503,6 +1506,7 @@
 				7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */,
 				CF65040028864AF00092EEB9 /* background_1.mp4 in Resources */,
 				7A63AF8B26A339C70072E21E /* Launch Screen.storyboard in Resources */,
+				CF6499E5294EBAC1003BBF83 /* AloneBeach.mp4 in Resources */,
 				7A383FFD267AC306002F354A /* background_4.mp4 in Resources */,
 				CF3DB37228DA6D7D00BF9CCD /* Nadiah2.m4a in Resources */,
 				CF65042B28A185750092EEB9 /* PaperAirplanes.mp4 in Resources */,

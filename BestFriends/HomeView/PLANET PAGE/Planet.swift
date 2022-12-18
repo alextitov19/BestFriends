@@ -263,11 +263,11 @@ struct PlanetActionsView: View {
                                 Circle()
                              
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple5)
+                                    .foregroundColor(ColorManager.purple4)
                                     .shadow(color: .white, radius: 3, x: 0, y: 0)
                                   
                                     .glow(color: ColorManager.purple4, radius: 0)
-                                    .opacity(0.6)
+                                    .opacity(0.2)
                                 
                                 VStack {
                                     
