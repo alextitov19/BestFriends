@@ -125,9 +125,9 @@ struct PlanetActionsView: View {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple3)
-                                    .shadow(color: .white, radius: 2, x: 0, y: 2)
-                                    .opacity(0.60)
+                                    .foregroundColor(ColorManager.purple2)
+                                    .shadow(color: .white, radius: 2, x: 4, y: 4)
+                                    .opacity(0.8)
                                 
                                 VStack {
 
@@ -148,9 +148,10 @@ struct PlanetActionsView: View {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple3)
-                                    .shadow(color: .white, radius: 2, x: 0, y: 2)
-                                    .opacity(0.60)
+                                    .foregroundColor(ColorManager.purple2)
+                                    .shadow(color: .white, radius: 2, x: 4, y: -4)
+//                                    .glow(color: ColorManager.purple4, radius: -1.0)
+                                    .opacity(0.80)
                                 
                                 VStack {
                                     Image("iconHug80 1")
@@ -177,9 +178,9 @@ struct PlanetActionsView: View {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple3)
-                                    .shadow(color: .white, radius: 2, x: 0, y: 2)
-                                    .opacity(0.60)
+                                    .foregroundColor(ColorManager.purple2)
+                                    .shadow(color: .white, radius: 2, x: 0, y: 4)
+                                    .opacity(0.80)
 
                                 VStack {
                                     Image("iconNice70")
@@ -262,11 +263,11 @@ struct PlanetActionsView: View {
                                 Circle()
                              
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple4)
-                                    .shadow(color: .white, radius: 5, x: 0, y: 0)
-                                    .shadow(color: .white, radius: 5, x: 0, y: 0)
-                                    .glow(color: ColorManager.purple4, radius: 1)
-                                    .opacity(0.3)
+                                    .foregroundColor(ColorManager.purple5)
+                                    .shadow(color: .white, radius: 3, x: 0, y: 0)
+                                  
+                                    .glow(color: ColorManager.purple4, radius: 0)
+                                    .opacity(0.6)
                                 
                                 VStack {
                                     
@@ -289,9 +290,9 @@ struct PlanetActionsView: View {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple3)
-                                    .shadow(color: .white, radius: 2, x: 0, y: 2)
-                                    .opacity(0.60)
+                                    .foregroundColor(ColorManager.purple2)
+                                    .shadow(color: .white, radius: 2, x: -4, y: 4)
+                                    .opacity(0.80)
                                 VStack {
 
                                     Image("iconVibes75")
@@ -320,9 +321,9 @@ struct PlanetActionsView: View {
                                 //
                                 
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple3)
-                                    .shadow(color: .white, radius: 2, x: 0, y: 2)
-                                    .opacity(0.60)
+                                    .foregroundColor(ColorManager.purple2)
+                                    .shadow(color: .white, radius: 2, x: -4, y: -4)
+                                    .opacity(0.80)
                                 
                                 VStack {
                                     
