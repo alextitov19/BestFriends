@@ -15,7 +15,7 @@ struct INFOPreloadA: View {
     
     let user: User
     let friends: [User]
-    //    let groups: [Group]
+    let groups: [Group]
     //    let atmosphere: Atmosphere
     //
     @State private var showItems: Bool = false
@@ -48,7 +48,7 @@ struct INFOPreloadA: View {
             ZStack{
                 
                 NavigationLink(destination: INFOPreload2(user: user), label: {
-                    InfoCircle (color: ColorManager.purple1, friendName: "Building \nstronger \nFriendships")
+                    InfoCircle (color: ColorManager.purple1, friendName: "Enjoying \nhappier \nFriendships \n'TAP'")
                 })
                 .offset(x: showItems ? -80 : 0, y: showItems ? -200: 0)
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
@@ -56,7 +56,7 @@ struct INFOPreloadA: View {
                 
                 
                 
-                NavigationLink(destination: INFOPreload2(user: user), label: {
+                NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
                     InfoCircle (color: ColorManager .purple1, friendName: "Reducing \n FriendGroup \nDrama")
                 })
                 .offset(x: showItems ? 120 : 0, y: showItems ? -150: 0)
@@ -75,7 +75,7 @@ struct INFOPreloadA: View {
                     
                     
                     NavigationLink(destination: INFOPreload3(user: user), label: {
-                        InfoCircle (color: ColorManager.purple3, friendName: "Who's, \nusing \nBestFrinds?")
+                        InfoCircle (color: ColorManager.purple3, friendName: "Who's, \nusing \nBestFrinds? \n'TAP'")
                     })
                     .offset(x: showItems ? 120 : 0, y: showItems ? 120: 0)
                     .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
@@ -106,7 +106,7 @@ struct INFOPreloadA: View {
                         Spacer ()
                             .frame(height: 15)
                         
-                        Text("TAP")
+                        Text("'TAP'")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(.green)
