@@ -25,53 +25,49 @@ struct INFOPreload3: View {
         ZStack {
             
             ColorManager .purple2
-              .ignoresSafeArea()
-              .onAppear()
-   
-//
-//            AdPlayerView(name: "dramaLights")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//                .opacity(0.75)
-
+                .ignoresSafeArea()
+                .onAppear()
+            
+            //
+            //            AdPlayerView(name: "dramaLights")
+            //                .ignoresSafeArea()
+            //                .blendMode(.screen)
+            //                .opacity(0.75)
+            
             
             Circle()
                 .frame(width: 300, height: 300)
                 .foregroundColor(ColorManager.purple1)
                 .offset(x: 200, y: -450)
-
+            
             Circle()
                 .frame(width: 300, height: 300)
                 .foregroundColor(ColorManager.purple1)
                 .offset(x: -200, y: 400)
-
-      
+            
+            
             
             
             
             VStack {
- 
+                
                 
                 VStack {
                     
                     
-                    Text("- social influencers screamiong for \na protected, non-toxic - safe hideout")
+                    Text("- social influencers screaming for \na protected, non-toxic")
                         .font(.system(size: 20))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
-                    
-                    Spacer()
-                        .frame(height: 15)
-                    
-                    Text("- populars at school wanting \ncloser connections with \nfewer trusted friends")
-                        .font(.system(size: 20))
+                    Text("decompression hideout")
+                        .font(.system(size: 27))
                         .fontWeight(.thin)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(ColorManager .purple4)
                         .multilineTextAlignment(.center)
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 10)
                     
                     Text(".  .  .")
                         .font(.system(size: 25, weight: .bold))
@@ -81,52 +77,120 @@ struct INFOPreload3: View {
                         .multilineTextAlignment(.center)
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 10)
+                    
                     
                     VStack {
                         
-                        Text("- teens uncomfortable with \nhow to fix a huge fight")
+                        Text("- populars at school wanting \ncloser connections")
                             .font(.system(size: 20))
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
                             .multilineTextAlignment(.center)
                         
-                        Spacer()
-                            .frame(height: 15)
-                        
-                        Text("- anyone worldwide that knows \nmoments of kindness, \nget noticed the most")
-                            .font(.system(size: 20))
-                            .fontWeight(.thin)
-                            .foregroundColor(Color.white)
-                            .multilineTextAlignment(.center)
-                        
-                        
-                        Spacer()
-                            .frame(height: 50)
-                        
-                  
-                  
-                        Text("leaving our lifes better, \neven in the slience ...")
-                            .font(.system(size: 25))
-                            .italic()
+                        Text("with fewer trusted friends")
+                            .font(.system(size: 27))
                             .fontWeight(.thin)
                             .foregroundColor(ColorManager .purple4)
                             .multilineTextAlignment(.center)
                         
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        Text(".  .  .")
+                            .font(.system(size: 25, weight: .bold))
+                            .foregroundColor(ColorManager .grey2)
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        //                        .opacity(0.50)
+                            .multilineTextAlignment(.center)
                         
                         Spacer()
-                            .frame(height: 100)
+                            .frame(height: 10)
                         
+                        VStack {
+                            
+                            Text("- teens uncertain about how to")
+                                .font(.system(size: 23))
+                                .fontWeight(.thin)
+                                .foregroundColor(Color.white)
+                                .multilineTextAlignment(.center)
+                            Text("fix a huge fight")
+                                .font(.system(size: 27))
+                                .fontWeight(.thin)
+                                .foregroundColor(ColorManager .purple4)
+                                .multilineTextAlignment(.center)
+                            
+                            Spacer()
+                                .frame(height: 10)
+                            
+                            Text(".  .  .")
+                                .font(.system(size: 25, weight: .bold))
+                                .foregroundColor(ColorManager .grey2)
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            //                        .opacity(0.50)
+                                .multilineTextAlignment(.center)
+                            
+                            Spacer()
+                                .frame(height: 10)
+                            
+                            Text("- guys wanting friends to")
+                                .font(.system(size: 23))
+                                .fontWeight(.thin)
+                                .foregroundColor(Color.white)
+                                .multilineTextAlignment(.center)
+                            
+                            
+                            Text("have their backs!")
+                                .font(.system(size: 27))
+                                .fontWeight(.thin)
+                                .foregroundColor(ColorManager .purple4)
+                                .multilineTextAlignment(.center)
+                            
+                            VStack {
+                            
+                            Spacer()
+                                .frame(height: 10)
+                            
+                            Text(".  .  .")
+                                .font(.system(size: 25, weight: .bold))
+                                .foregroundColor(ColorManager .grey2)
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            //                        .opacity(0.50)
+                                .multilineTextAlignment(.center)
+                            
+                            Spacer()
+                                .frame(height: 10)
+                            
                         
-                        
-                        
+                                
+                                Text("And, all of us wanting to feel")
+                                    .font(.system(size: 23))
+                                
+                                    .fontWeight(.thin)
+                                    .foregroundColor(Color .white)
+                                    .multilineTextAlignment(.center)
+                                
+                                Text("safe in the slience ...")
+                                    .font(.system(size: 27))
+                                
+                                    .fontWeight(.thin)
+                                    .foregroundColor(ColorManager .purple4)
+                                    .multilineTextAlignment(.center)
+                                Spacer()
+                                    .frame(height: 100)
+                                
+                                
+                                
+                                
+                                
+                            }
+                            
+                        }
                         
                     }
-                    
                 }
                 
             }
         }
-        
     }
 }
