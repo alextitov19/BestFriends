@@ -66,12 +66,12 @@ struct INFOPreloadA: View {
                 
                 ZStack {
                     
-                    
-                    NavigationLink(destination: INFOPreload2(user: user), label: {
-                        InfoCircle (color: ColorManager.purple3, friendName: "World FriendGroups... \nAll of us, \nat same time, \ntogether")
-                    })
-                    .offset(x: showItems ? -75 : 0, y: showItems ? 180: 0)
-                    .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
+//
+//                    NavigationLink(destination: INFOPreload2(user: user), label: {
+//                        InfoCircle (color: ColorManager.purple3, friendName: "World FriendGroups... \nAll of us, \nat same time, \ntogether")
+//                    })
+//                    .offset(x: showItems ? -75 : 0, y: showItems ? 180: 0)
+//                    .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                     
                     
                     NavigationLink(destination: INFOPreload3(user: user), label: {
@@ -84,14 +84,14 @@ struct INFOPreloadA: View {
                     Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(ColorManager .grey2)
-                        .frame(width: 200, height: 200)
+                        .frame(width: 250, height: 250)
                     //                    .blur(radius: 2)
                         .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50) .opacity(0.99)
                     
                     VStack {
                         
                         Spacer ()
-                            .frame(height: 280)
+                            .frame(height: 250)
                         
                         Text("5 minutes \ndaily")
                             .font(.system(size: 25))
@@ -101,12 +101,21 @@ struct INFOPreloadA: View {
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
-
+                        Spacer ()
+                            .frame(height: 15)
+                        
+                        Text("All of us together, \nsimotaniously")
+                            .font(.system(size: 25))
+                        
+                            .foregroundColor(.white)
+                            .fontWeight(.regular)
+                            .multilineTextAlignment(.center)
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
                         Spacer ()
                             .frame(height: 15)
                         
-                        Text("'TAP'")
+                        Text("TAP circles")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(.green)
@@ -159,10 +168,10 @@ struct INFOPreloadA: View {
             
             ZStack {
                 
-                Image(systemName: "heart.fill")
+                Image(systemName: "circle.fill")
                     .resizable()
                     .foregroundColor(ColorManager .purple2)
-                    .frame(width: 175, height: 150)
+                    .frame(width: 150, height: 150)
                     .shadow(color: ColorManager .grey3, radius: 5, x: 5, y: 5)
                 
                 Text(friendName)
