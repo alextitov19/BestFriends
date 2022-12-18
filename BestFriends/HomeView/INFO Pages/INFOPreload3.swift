@@ -123,7 +123,7 @@ struct INFOPreload3: View {
                         
                   
                   
-                        Text("leaving life better, \neven in the slience ...")
+                        Text("leaving our lifes better, \neven in the slience ...")
                             .font(.system(size: 25))
                             .italic()
                             .fontWeight(.thin)
