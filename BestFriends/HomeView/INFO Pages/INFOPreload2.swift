@@ -26,15 +26,15 @@ struct INFOPreload2: View {
     var body: some View {
         ZStack {
             
-//            Color .black
-//              .ignoresSafeArea()
-//              .onAppear()
+            ColorManager .purple2
+              .ignoresSafeArea()
+              .onAppear()
             
             
-                            Image("purpleBackground")
-                                .resizable()
-                                .ignoresSafeArea()
-                                .scaledToFill()
+//                            Image("purpleBackground")
+//                                .resizable()
+//                                .ignoresSafeArea()
+//                                .scaledToFill()
 
             AdPlayerView(name: "dramaLights")
                 .ignoresSafeArea()
@@ -70,7 +70,7 @@ struct INFOPreload2: View {
                         .font(.system(size: 19))
                         .italic()
                         .fontWeight(.thin)
-                        .foregroundColor(ColorManager .purple3)
+                        .foregroundColor(ColorManager .purple4)
              
                 Spacer()
                     .frame(height: 12)
@@ -93,23 +93,23 @@ struct INFOPreload2: View {
                             .foregroundColor(Color.white)
                    
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 30)
                     
                     Text(".  .  .")
                         .font(.system(size: 25, weight: .bold))
-                        .foregroundColor(ColorManager .grey2)
+                        .foregroundColor(ColorManager .purple4)
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
 //                        .opacity(0.50)
                         .multilineTextAlignment(.center)
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 30)
                     
                     Text("with the joy of ...")
                             .font(.system(size: 21))
                             .italic()
                             .fontWeight(.thin)
-                            .foregroundColor(ColorManager .purple3)
+                            .foregroundColor(ColorManager .purple4)
                     
                     Spacer()
                         .frame(height: 10)
@@ -129,7 +129,7 @@ struct INFOPreload2: View {
           
                     
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 230)
                     
                  
 
