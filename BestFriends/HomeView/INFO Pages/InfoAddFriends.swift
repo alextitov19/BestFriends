@@ -43,7 +43,7 @@ struct InfoAddFriends: View {
             
 
                 
-                Text("-First, ask you friend to download the app \n-Then,tap the [Add & Invite Friends] circle \nEnter your friends email and send 'Invite' \n-You may add up to 5 friends \n-Friend show up as planets on homepage \n-Their 'mood' shows up at the atmosphere around their planet")
+                Text("-First, ask your friend to download the app \n-Then,tap the [Add & Invite Friends] circle \nEnter your friends email and send 'Invite' \n-You may add up to 5 friends \n-Friend show up as planets on homepage \n-Their 'mood' shows up at the atmosphere around their planet")
                     .font(.system(size: 17))
                     .fontWeight(.thin)
                     .foregroundColor(Color.white)
