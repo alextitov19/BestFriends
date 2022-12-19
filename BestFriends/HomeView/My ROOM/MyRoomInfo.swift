@@ -70,15 +70,15 @@ struct MyRoomInfo: View {
                 
                 
                 NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                    MyRoomCircle (color: ColorManager.purple1, friendName: "SmileVault \nsaved \n'Nice' \nmessages")
+                    MyRoomCircle (color: ColorManager.purple1, friendName: "SmileVault \n(saved \n'Nice' \nmessages)")
                 })
                 .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
                 .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
               
                 
                 
-                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                    MyRoomCircle (color: ColorManager.purple1, friendName: "Who's got \nmy back? \n(girls invite \nboys)")
+                NavigationLink(destination: EmptyView(), label: {
+                    MyRoomCircle (color: ColorManager.purple1, friendName: "Build \nmixed \nFriendGroup")
                 })
                 .offset(x: showItems ? -100 : 0, y: showItems ? -150: 0)
                 .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)

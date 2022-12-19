@@ -93,7 +93,7 @@ struct INFOPreload4: View {
                 
 //                MARK: link to MyRoom
                 NavigationLink(destination: EmptyView(), label: {
-                    InfoCircle (color: ColorManager.purple3, friendName: "Some days \nfeeling safe in \nyour silence")
+                    InfoCircle (color: ColorManager.purple3, friendName: "Somedays \njust wanting \nsafety \nin silence")
                 })
                 .offset(x: showItems ? 120 : 0, y: showItems ? 250: 0)
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
