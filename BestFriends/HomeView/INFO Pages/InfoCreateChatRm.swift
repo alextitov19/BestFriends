@@ -52,7 +52,7 @@ struct InfoCreateChatRm: View {
                     
               
                 
-                Text("-Tap Friend's Planet \n-Name Chat Room \n-Exit app and re-enter \n-to Activate NEW Room")
+                Text("-Tap Friend's Planet \n-Name Chat Room in popup \n-Exit app and re-enter \nto Activate NEW Room")
                     .font(.system(size: 17))
                     .fontWeight(.light)
                     .foregroundColor(ColorManager.darkGrey)
