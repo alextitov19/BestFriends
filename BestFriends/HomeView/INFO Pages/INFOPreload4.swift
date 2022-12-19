@@ -52,16 +52,16 @@ struct INFOPreload4: View {
                 
                 
                 NavigationLink(destination: INFOPreload2(user: user), label: {
-                    InfoCircle (color: ColorManager.purple1, friendName: "social influencers \nwanting \na non-toxic \ndecompression \nhideout")
+                    InfoCircle  (color: ColorManager.purple3, friendName: "social influencers \nwanting \na non-toxic \ndecompression \nhideout")
                 })
-                .offset(x: showItems ? 80 : 0, y: showItems ? 200: 0)
+                .offset(x: showItems ? 100 : 0, y: showItems ? 250: 0)
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                 
                 
                 
                 
                 NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
-                    InfoCircle (color: ColorManager .purple1, friendName: "Reducing \n FriendGroup \nDrama \n\nmore...")
+                    InfoCircle (color: ColorManager.purple3, friendName: "Reducing \n FriendGroup \nDrama \n\nmore...")
                 })
                 .offset(x: showItems ? 120 : 0, y: showItems ? -150: 0)
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
@@ -70,7 +70,7 @@ struct INFOPreload4: View {
                 NavigationLink(destination: INFOPreload3(user: user), label: {
                     InfoCircle (color: ColorManager.purple3, friendName: "Who's, \nusing \nBestFriends? \n\nmore...")
                 })
-                .offset(x: showItems ? -40 : 0, y: showItems ? 200: 0)
+                .offset(x: showItems ? -80 : 0, y: showItems ? 180: 0)
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                 
                 
@@ -91,7 +91,7 @@ struct INFOPreload4: View {
                     NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
                         InfoCircle (color: ColorManager .pmbc_green, friendName: "and \nYOU!")
                     })
-                    .offset(x: showItems ? 50 : 0, y: showItems ? -250: 0)
+                    .offset(x: showItems ? -40 : 0, y: showItems ? -250: 0)
                     .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                     
 //
