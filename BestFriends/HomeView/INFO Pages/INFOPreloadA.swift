@@ -25,11 +25,7 @@ struct INFOPreloadA: View {
     var body: some View {
         
         ZStack {
-            //
-            //            ColorManager.purple1
-            //                .ignoresSafeArea()
-            //                .onAppear()
-            
+          
             
             
             Image("purpleBackground")
@@ -93,7 +89,7 @@ struct INFOPreloadA: View {
                         Spacer ()
                             .frame(height: 280)
                         
-                        Text("5 minutes \ndaily")
+                        Text("just \n5 minutes")
                             .font(.system(size: 25))
                         
                             .foregroundColor(.white)
