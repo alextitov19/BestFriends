@@ -264,8 +264,8 @@ struct PlanetActionsView: View {
                              
                                     .frame(width: 110, height: 110)
                                     .foregroundColor(ColorManager.purple4)
-                                    .shadow(color: .white, radius: 3, x: 0, y: 0)
-                                  
+                                   
+                                    .shadow(color: .white, radius: 2, x: 4, y: 0)
                                     .glow(color: ColorManager.purple4, radius: 0)
                                     .opacity(0.2)
                                 
