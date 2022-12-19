@@ -75,7 +75,15 @@ struct INFOPreload4: View {
                 
 //      Mark end of this **************************************
                 
-                NavigationLink(destination: INFOPreload2(user: user), label: {
+                
+                
+                
+                
+                
+                
+//                MARK: change from EmptyView to linking to website page with Influencers
+                
+                NavigationLink(destination: EmptyView(), label: {
                     InfoCircle  (color: ColorManager.purple3, friendName: "social influencers \nwanting \na non-toxic \ndecompression \nhideout")
                 })
                 .offset(x: showItems ? 120 : 0, y: showItems ? 250: 0)
