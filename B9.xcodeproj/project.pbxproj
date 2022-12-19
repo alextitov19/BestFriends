@@ -170,6 +170,7 @@
 		CF6499DF294D4148003BBF83 /* INFOPreloadA.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6499DE294D4148003BBF83 /* INFOPreloadA.swift */; };
 		CF6499E1294E1F6C003BBF83 /* INFOPreload3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6499E0294E1F6C003BBF83 /* INFOPreload3.swift */; };
 		CF6499E5294EBAC1003BBF83 /* AloneBeach.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6499E4294EBAC1003BBF83 /* AloneBeach.mp4 */; };
+		CF6499ED29501EF7003BBF83 /* INFOPreload4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6499EC29501EF7003BBF83 /* INFOPreload4.swift */; };
 		CF65040028864AF00092EEB9 /* background_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503FF28864AF00092EEB9 /* background_1.mp4 */; };
 		CF650406288E76B50092EEB9 /* GotPushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650405288E76B50092EEB9 /* GotPushNotification.swift */; };
 		CF65040A28915A080092EEB9 /* FD_Step1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65040928915A080092EEB9 /* FD_Step1.swift */; };
@@ -432,6 +433,7 @@
 		CF6499DE294D4148003BBF83 /* INFOPreloadA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOPreloadA.swift; sourceTree = "<group>"; };
 		CF6499E0294E1F6C003BBF83 /* INFOPreload3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOPreload3.swift; sourceTree = "<group>"; };
 		CF6499E4294EBAC1003BBF83 /* AloneBeach.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AloneBeach.mp4; sourceTree = "<group>"; };
+		CF6499EC29501EF7003BBF83 /* INFOPreload4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOPreload4.swift; sourceTree = "<group>"; };
 		CF6503FF28864AF00092EEB9 /* background_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_1.mp4; sourceTree = "<group>"; };
 		CF650405288E76B50092EEB9 /* GotPushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotPushNotification.swift; sourceTree = "<group>"; };
 		CF65040928915A080092EEB9 /* FD_Step1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FD_Step1.swift; sourceTree = "<group>"; };
@@ -1212,6 +1214,7 @@
 				CF3295F6290BAA7C0014F658 /* INFOPreload.swift */,
 				CFD8BD15291B3D6600F86EFB /* INFOPreload2.swift */,
 				CF6499E0294E1F6C003BBF83 /* INFOPreload3.swift */,
+				CF6499EC29501EF7003BBF83 /* INFOPreload4.swift */,
 				CF3295FC290BBD210014F658 /* InfoCoolVideo.swift */,
 				CF37535928BED060003817E3 /* BuiltForTeens.swift */,
 				CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */,
@@ -1707,6 +1710,7 @@
 				7A04C13F2855390B003AB24A /* PhotoPopImageView.swift in Sources */,
 				CFA1225D285975FF00E22E84 /* Apologies.swift in Sources */,
 				7ADFDB31289B1EFE0004FB1C /* ShakeExtensions.swift in Sources */,
+				CF6499ED29501EF7003BBF83 /* INFOPreload4.swift in Sources */,
 				CF41280A292715A5003BCBFA /* StoriesPreLoad2.swift in Sources */,
 				7AA07F5F285D0DD400E9C5A4 /* UserModel.swift in Sources */,
 				CFD0468D282D7F8400BF0B02 /* AtmosphereMain2.swift in Sources */,
