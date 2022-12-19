@@ -32,18 +32,18 @@ struct INFOPreload4: View {
             
             
             
-            Image("purpleBackground")
+            Image("surferboysimg")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
                 .opacity(0.5)
             
             
-            
-            AdPlayerView(name: "PaperAirplanes")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-            
+//
+//            AdPlayerView(name: "PaperAirplanes")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//
             
             ZStack{
                 
@@ -54,7 +54,7 @@ struct INFOPreload4: View {
                 NavigationLink(destination: INFOPreload2(user: user), label: {
                     InfoCircle  (color: ColorManager.purple3, friendName: "social influencers \nwanting \na non-toxic \ndecompression \nhideout")
                 })
-                .offset(x: showItems ? 100 : 0, y: showItems ? 250: 0)
+                .offset(x: showItems ? 130 : 0, y: showItems ? 250: 0)
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                 
                 
@@ -70,7 +70,7 @@ struct INFOPreload4: View {
                 NavigationLink(destination: INFOPreload3(user: user), label: {
                     InfoCircle (color: ColorManager.purple3, friendName: "Who's, \nusing \nBestFriends? \n\nmore...")
                 })
-                .offset(x: showItems ? -80 : 0, y: showItems ? 180: 0)
+                .offset(x: showItems ? -40 : 0, y: showItems ? 180: 0)
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                 
                 
@@ -195,9 +195,10 @@ struct INFOPreload4: View {
                 
                 Image(systemName: "circle.fill")
                     .resizable()
-                    .foregroundColor(ColorManager .purple2)
+                    .foregroundColor(ColorManager .grey1)
                     .frame(width: 180, height: 180)
-                    .shadow(color: ColorManager .grey3, radius: 5, x: 10, y: 10)
+                    .shadow(color: Color .cyan, radius: 5, x: 10, y: 10)
+                    .opacity(0.5)
                 
                 Text(friendName)
                     .fontWeight(.light)
