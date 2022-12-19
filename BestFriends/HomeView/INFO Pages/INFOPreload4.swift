@@ -148,9 +148,9 @@ struct INFOPreload4: View {
                     VStack {
                         
                         Spacer ()
-                            .frame(height: 255)
+                            .frame(height: 230)
 
-                        Text("guys wanting friends")
+                        Text("all of us \nwanting friends")
                             .font(.system(size: 18))
                             .italic()
                             .foregroundColor(.black)
@@ -158,10 +158,10 @@ struct INFOPreload4: View {
                             .multilineTextAlignment(.center)
 //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
 
-                        Spacer ()
-                            .frame(height: 10)
+//                        Spacer ()
+//                            .frame(height: 10)
 
-                        Text("to have their backs!")
+                        Text("to have our backs!")
                             .font(.system(size: 18))
                             .italic()
                             .foregroundColor(.black)

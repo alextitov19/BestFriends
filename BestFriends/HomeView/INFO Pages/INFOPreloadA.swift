@@ -75,7 +75,7 @@ struct INFOPreloadA: View {
                     
                     
                     NavigationLink(destination: INFOPreload4(user: user, friends: friends, groups: groups), label: {
-                        InfoCircle (color: ColorManager.purple3, friendName: "See who's\nusing \nBestFriends")
+                        InfoCircle (color: ColorManager.purple3, friendName: "See who's\nusing \nBestFriends \n\nmore...")
                     })
                     .offset(x: showItems ? -20 : 0, y: showItems ? 220: 0)
                     .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
@@ -104,7 +104,7 @@ struct INFOPreloadA: View {
                         Spacer ()
                             .frame(height: 15)
                         
-                        Text("All of us together, \nsimultaneously")
+                        Text("All of us together, \nat the same time")
                             .font(.system(size: 25))
                         
                             .foregroundColor(.white)
