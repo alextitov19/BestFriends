@@ -18,71 +18,71 @@ struct INFOPreload2: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     let user: User
-//    let atmosphere: Atmosphere
-//    let friends: [User]
-//    let groups: [Group]
-//    let friendAtmospheres: [Atmosphere]
-//
+    //    let atmosphere: Atmosphere
+    //    let friends: [User]
+    //    let groups: [Group]
+    //    let friendAtmospheres: [Atmosphere]
+    //
     var body: some View {
         ZStack {
             
             ColorManager .purple2
-              .ignoresSafeArea()
-              .onAppear()
-   
-
+                .ignoresSafeArea()
+                .onAppear()
+            
+            
             AdPlayerView(name: "dramaLights")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.75)
-
-
+            
+            
             ZStack {
-//                Circle()
-//                    .frame(width: 300, height: 300)
-//                    .foregroundColor(ColorManager.purple3)
-//                    .offset(x: 200, y: -450)
-//
-//                Circle()
-//                    .frame(width: 300, height: 300)
-//                    .foregroundColor(ColorManager.purple3)
-//                    .offset(x: -200, y: 400)
+                //                Circle()
+                //                    .frame(width: 300, height: 300)
+                //                    .foregroundColor(ColorManager.purple3)
+                //                    .offset(x: 200, y: -450)
+                //
+                //                Circle()
+                //                    .frame(width: 300, height: 300)
+                //                    .foregroundColor(ColorManager.purple3)
+                //                    .offset(x: -200, y: 400)
                 
                 
             }
             
-         
-             
+            
+            
             VStack {
-           
-
+                
+                
                 
                 Text("leaving you feeling like ...")
-                        .font(.system(size: 19))
-                        .italic()
-                        .fontWeight(.thin)
-                        .foregroundColor(ColorManager .purple4)
-             
+                    .font(.system(size: 19))
+                    .italic()
+                    .fontWeight(.thin)
+                    .foregroundColor(ColorManager .purple4)
+                
                 Spacer()
                     .frame(height: 12)
                 
-              
+                
                 
                 VStack {
-                
+                    
                     
                     Text("the look on a girl's face,")
-                            .font(.system(size: 28))
-                            .fontWeight(.thin)
-                            .foregroundColor(Color.white)
-
-
+                        .font(.system(size: 28))
+                        .fontWeight(.thin)
+                        .foregroundColor(ColorManager .grey3)
+                    
+                    
                     Text("holding unexpected flowers")
-                            .font(.system(size: 28))
-                            .italic()
-                            .fontWeight(.thin)
-                            .foregroundColor(Color.white)
-                   
+                        .font(.system(size: 28))
+                        .italic()
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.white)
+                    
                     Spacer()
                         .frame(height: 30)
                     
@@ -90,52 +90,91 @@ struct INFOPreload2: View {
                         .font(.system(size: 25, weight: .bold))
                         .foregroundColor(ColorManager .purple4)
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                        .opacity(0.50)
+                    //                        .opacity(0.50)
                         .multilineTextAlignment(.center)
                     
                     Spacer()
                         .frame(height: 30)
                     
                     Text("with the joy of ...")
-                            .font(.system(size: 21))
-                            .italic()
-                            .fontWeight(.thin)
-                            .foregroundColor(ColorManager .purple4)
+                        .font(.system(size: 21))
+                        .italic()
+                        .fontWeight(.thin)
+                        .foregroundColor(ColorManager .purple4)
                     
                     Spacer()
                         .frame(height: 10)
                     
                     
                     Text("kicking through,")
-                            .font(.system(size: 30))
-                            .fontWeight(.thin)
-                            .foregroundColor(Color.white)
+                        .font(.system(size: 30))
+                        .fontWeight(.thin)
+                        .foregroundColor(ColorManager .grey3)
                     
                     Text("autumn's leaves")
-                            .font(.system(size: 30))
-                            .italic()
-                            .fontWeight(.thin)
-                            .foregroundColor(Color.white)
+                        .font(.system(size: 30))
+                        .italic()
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.white)
                     
-          
                     
-                    Spacer()
-                        .frame(height: 230)
-                    
-                 
-
-      
+//                    VStack {
+//                        Spacer()
+//                            .frame(height: 30)
+//
+//                        Text(".  .  .")
+//                            .font(.system(size: 25, weight: .bold))
+//                            .foregroundColor(ColorManager .purple4)
+//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                        //                        .opacity(0.50)
+//                            .multilineTextAlignment(.center)
+//
+//                        Spacer()
+//                            .frame(height: 30)
+//
+//                        Text("surrounded in the comfort of ...")
+//                            .font(.system(size: 21))
+//                            .italic()
+//                            .fontWeight(.thin)
+//                            .foregroundColor(ColorManager .purple4)
+//
+//                        Spacer()
+//                            .frame(height: 10)
+//
+//
+//                        Text("feeling safe in your own")
+//                            .font(.system(size: 30))
+//                            .fontWeight(.thin)
+//                            .foregroundColor(ColorManager .grey3)
+//
+//                        Text("silence")
+//                            .font(.system(size: 30))
+//                            .italic()
+//                            .fontWeight(.thin)
+//                            .foregroundColor(Color.white)
+//
+//
+                        
+                        
+                        
+                        
+                        
+                        Spacer()
+                            .frame(height: 230)
+                        
+                        
+                        
+                        
+                        
+                    }
                     
                 }
                 
             }
-                        
         }
+        
     }
-                
-}
 
-    
 
         
   

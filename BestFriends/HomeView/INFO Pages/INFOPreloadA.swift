@@ -48,7 +48,7 @@ struct INFOPreloadA: View {
             ZStack{
                 
                 NavigationLink(destination: INFOPreload2(user: user), label: {
-                    InfoCircle (color: ColorManager.purple1, friendName: "Enjoying \nhappier \nFriendships \nmore...")
+                    InfoCircle (color: ColorManager.purple1, friendName: "Enjoying \nhappier \nFriendships \n\nmore...")
                 })
                 .offset(x: showItems ? -80 : 0, y: showItems ? -200: 0)
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
@@ -57,7 +57,7 @@ struct INFOPreloadA: View {
                 
                 
                 NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
-                    InfoCircle (color: ColorManager .purple1, friendName: "Reducing \n FriendGroup \nDrama")
+                    InfoCircle (color: ColorManager .purple1, friendName: "Reducing \n FriendGroup \nDrama \n\nmore...")
                 })
                 .offset(x: showItems ? 120 : 0, y: showItems ? -150: 0)
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
@@ -75,7 +75,7 @@ struct INFOPreloadA: View {
                     
                     
                     NavigationLink(destination: INFOPreload3(user: user), label: {
-                        InfoCircle (color: ColorManager.purple3, friendName: "Who's, \nusing \nBestFrinds?")
+                        InfoCircle (color: ColorManager.purple3, friendName: "Who's, \nusing \nBestFriends? \n\nmore...")
                     })
                     .offset(x: showItems ? -20 : 0, y: showItems ? 220: 0)
                     .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
