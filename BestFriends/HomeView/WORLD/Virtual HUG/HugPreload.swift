@@ -136,10 +136,10 @@ struct HugPreload: View {
             
             ZStack {
                 
-                Image(systemName: "heart.fill")
+                Image(systemName: "circle.fill")
                             .resizable()
                             .foregroundColor(ColorManager .purple2)
-                            .frame(width: 145, height: 120)
+                            .frame(width: 120, height: 120)
                             .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
                 
                 Text(friendName)
