@@ -98,12 +98,12 @@ struct MyRoomInfo: View {
 //                    
 //                    
 //                    
-//                    NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
-//                        MyRoomCircle (color: ColorManager.grey2, friendName: "My \nDreamVault \n(coming \n2023)")
-//                    })
-//                    .offset(x: showItems ? 75 : 0, y: showItems ? 140: 0)
-//                    .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
-//                    
+                    NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
+                        MyRoomCircle (color: ColorManager.grey2, friendName: "My \nDreamVault \n(coming \n2023)")
+                    })
+                    .offset(x: showItems ? 75 : 0, y: showItems ? 140: 0)
+                    .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
+                    
 //                    
 //                    
 //                    
