@@ -48,29 +48,53 @@ struct INFOPreload4: View {
             ZStack{
                 
                 
-                            
                 
+//                Mark: trying to link the circle to the website page with the influencers on it
+//
+//                Link(destination: URL(string: "https://socialtechlabs.com/apoloigize/")!) {
+//
+//                    Text("Is it time to Apologize?")
+//                        .fontWeight(.thin)
+//                        .frame(width: 260, height: 30)
+//                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                        .background(ColorManager.pmbc_blue)
+//                        .font(.system(size: 25))
+//                        .background(ColorManager.purple3)
+//                        .cornerRadius(15)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                }
+//
+//
+//
+//                NavigationLink(destination: URL(string: "https://socialtechlabs.com/apoloigize/"), label: {
+//                    InfoCircle  (color: ColorManager.purple3, friendName: "social influencers \nwanting \na non-toxic \ndecompression \nhideout")
+//                })
+//                .offset(x: showItems ? 120 : 0, y: showItems ? 250: 0)
+//                .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
+                
+//      Mark end of this **************************************
                 
                 NavigationLink(destination: INFOPreload2(user: user), label: {
                     InfoCircle  (color: ColorManager.purple3, friendName: "social influencers \nwanting \na non-toxic \ndecompression \nhideout")
                 })
-                .offset(x: showItems ? 130 : 0, y: showItems ? 250: 0)
+                .offset(x: showItems ? 120 : 0, y: showItems ? 250: 0)
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                 
                 
                 
                 
                 NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
-                    InfoCircle (color: ColorManager.purple3, friendName: "Reducing \n FriendGroup \nDrama \n\nmore...")
+                    InfoCircle (color: ColorManager.purple3, friendName: "Teens uncertain \nhow to fix \nhuge Fight!")
                 })
-                .offset(x: showItems ? 120 : 0, y: showItems ? -150: 0)
+                .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                 
                 
-                NavigationLink(destination: INFOPreload3(user: user), label: {
-                    InfoCircle (color: ColorManager.purple3, friendName: "Who's, \nusing \nBestFriends? \n\nmore...")
+                NavigationLink(destination: EmptyView(), label: {
+                    InfoCircle (color: ColorManager.purple3, friendName: "populars \nat school \nwanting \nfewer closer \nconnections")
                 })
-                .offset(x: showItems ? -40 : 0, y: showItems ? 180: 0)
+                .offset(x: showItems ? -95 : 0, y: showItems ? 200: 0)
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                 
                 
@@ -88,10 +112,10 @@ struct INFOPreload4: View {
                     
                     
                  
-                    NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
+                    NavigationLink(destination: InviteView(user: user), label: {
                         InfoCircle (color: ColorManager .pmbc_green, friendName: "and \nYOU!")
                     })
-                    .offset(x: showItems ? -40 : 0, y: showItems ? -250: 0)
+                    .offset(x: showItems ? -80 : 0, y: showItems ? -300: 0)
                     .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                     
 //
