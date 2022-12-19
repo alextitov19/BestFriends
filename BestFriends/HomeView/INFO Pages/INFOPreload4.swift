@@ -96,7 +96,7 @@ struct INFOPreload4: View {
                     
 //
 //                    NavigationLink(destination: EmptyView(), label: {
-//                        InfoCircle (color: ColorManager.purple3, friendName: "World FriendGroups... \nAll of us, \nat same time, \ntogether")
+//                        InfoCircle (color: Color .cyan, friendName: "")
 //                    })
 //                    .offset(x: showItems ? 0 : 0, y: showItems ? 0 : 0)
 //                    .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
@@ -108,10 +108,10 @@ struct INFOPreload4: View {
 
                     Image(systemName: "circle.fill")
                         .resizable()
-                        .foregroundColor(ColorManager .purple3)
+                        .foregroundColor(Color .cyan)
                         .frame(width: 180, height: 180)
                     //                    .blur(radius: 2)
-                        .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50) .opacity(0.99)
+                        .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50) .opacity(0.9)
 
                     VStack {
                         
@@ -178,7 +178,7 @@ struct INFOPreload4: View {
                     print("tap function is working")
                 }
                 
-                .animation(Animation.easeInOut(duration: 2.5), value: showItems)
+                .animation(Animation.easeInOut(duration: 3.25), value: showItems)
                 
             }
         }

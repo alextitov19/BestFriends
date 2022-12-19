@@ -87,7 +87,7 @@ struct INFOPreloadA: View {
                         .frame(width: 270, height: 270)
                     //                    .blur(radius: 2)
                         .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50) .opacity(0.99)
-                    
+                        .opacity(0.95)
                     VStack {
                         
                         Spacer ()
@@ -173,6 +173,7 @@ struct INFOPreloadA: View {
                     .foregroundColor(ColorManager .purple2)
                     .frame(width: 150, height: 150)
                     .shadow(color: ColorManager .grey3, radius: 5, x: 5, y: 5)
+                    .opacity(0.50)
                 
                 Text(friendName)
                     .fontWeight(.light)
