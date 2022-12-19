@@ -73,11 +73,15 @@ struct MyRoomInfo: View {
                     MyRoomCircle (color: ColorManager.purple1, friendName: "SmileVault \nsaved \n'Nice' \nmessages")
                 })
                 .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
-//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
                 .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
               
                 
                 
+                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
+                    MyRoomCircle (color: ColorManager.purple1, friendName: "Who's got \nmy back? \n(girls invite \nboys)")
+                })
+                .offset(x: showItems ? -100 : 0, y: showItems ? -150: 0)
+                .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
               
                 
                 ZStack {
@@ -88,7 +92,7 @@ struct MyRoomInfo: View {
                                    label: {
                         MyRoomCircle (color: ColorManager .grey2, friendName: "Found new \nMusic \n(coming \n2023)")
                     })
-                    .offset(x: showItems ? -35 : 0, y: showItems ? -260: 0)
+                    .offset(x: showItems ? 59 : 0, y: showItems ? 260: 0)
                     .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
                     
                     
@@ -97,8 +101,7 @@ struct MyRoomInfo: View {
                     NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
                         MyRoomCircle (color: ColorManager.grey2, friendName: "My \nDreamVault \n(coming \n2023)")
                     })
-                    .offset(x: showItems ? -75 : 0, y: showItems ? -140: 0)
-    //                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+                    .offset(x: showItems ? 75 : 0, y: showItems ? 140: 0)
                     .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
                     
                     
