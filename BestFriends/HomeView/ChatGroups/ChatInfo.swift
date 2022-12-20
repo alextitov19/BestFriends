@@ -93,7 +93,7 @@ struct ChatInfo: View {
                         
                         
                         NavigationLink(
-                            destination: InfoViewPlanet(user: user),
+                            destination: CustomizeChatBackgrounds(user: user),
                             label: {
                                 Text("Customize Chat Backgrounds")
                                     .fontWeight(.thin)
