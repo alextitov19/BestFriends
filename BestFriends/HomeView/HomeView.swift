@@ -281,31 +281,41 @@ struct HomeView: View {
                         
                         
                         HStack {
-                            NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
+//                            NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
+//                                           label: {
+//                                Text("Friend wants to 'resolve fight'")
+//                                    .fontWeight(.light)
+//                                    .frame(width: 240, height: 30)
+//                                    .foregroundColor(.white)
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(15)
+//                                    .opacity(0.4)
+//                            })
+                            NavigationLink(destination: SaySomethingNice7(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
                                            label: {
-                                Text("Friend asking to 'Fix-a-Fight'")
+                                Text("Friend sent 'NICE' message")
                                     .fontWeight(.light)
-                                    .frame(width: 240, height: 30)
+                                    .frame(width: 240, height: 29)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
+    //                                .background(ColorManager.purple3)
                                     .cornerRadius(15)
                                     .opacity(0.4)
                             })
                             
-                            
-
-                        
-                            NavigationLink(destination: FG_VideoCall(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
-                                           
-                                           label: {
-                                Text("Hurt")
-                                    .fontWeight(.light)
-                                    .frame(width: 0, height: 30)
-                                    .foregroundColor(.white)
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .opacity(0.4)
-                            })
+//
+//
+//                            NavigationLink(destination: FG_VideoCall(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
+//
+//                                           label: {
+//                                Text("Hurt")
+//                                    .fontWeight(.light)
+//                                    .frame(width: 0, height: 30)
+//                                    .foregroundColor(.white)
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(15)
+//                                    .opacity(0.4)
+//                            })
                         }
                         
                    
@@ -315,7 +325,7 @@ struct HomeView: View {
                         HStack {
                             NavigationLink(destination: VirtualHug(),
                                            label: {
-                                Text("Friend sent a Hug")
+                                Text("Friend sent virtual HUG")
                                     .fontWeight(.light)
                                     .frame(width: 240, height: 30)
                                     .foregroundColor(.white)
@@ -324,26 +334,26 @@ struct HomeView: View {
                                     .opacity(0.4)
                             })
                             
-                            
-                            NavigationLink(destination: EmptyView(),
-                                           label: {
-                                Text("Song 4 Mood - deactivated for now")
-                                    .fontWeight(.light)
-                                    .frame(width: 0, height: 0)
-                                    .foregroundColor(.white)
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .opacity(0.4)
-                            })
+//
+//                            NavigationLink(destination: EmptyView(),
+//                                           label: {
+//                                Text("Song to match 'Vibe'")
+//                                    .fontWeight(.light)
+//                                    .frame(width: 240, height: 30)
+//                                    .foregroundColor(.white)
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(15)
+//                                    .opacity(0.4)
+//                            })
                         }
                         Spacer().frame(height:10)
                         
                         
                         HStack {
                             NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
-                                Text("Friend's Vibe Changed")
+                                Text("Vibe Update")
                                     .fontWeight(.light)
-                                    .frame(width: 240, height: 30)
+                                    .frame(width: 110, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
@@ -352,9 +362,18 @@ struct HomeView: View {
                             
                          
                             
+                            NavigationLink(destination: EmptyView(),
+                                           label: {
+                                Text("Song for Vibe")
+                                    .fontWeight(.light)
+                                    .frame(width: 120, height: 30)
+                                    .foregroundColor(.white)
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .opacity(0.4)
+                            })
 
-
-
+//
                             NavigationLink(destination: DreamVaultView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                            label: {
                                 Text("Dream Story")
@@ -370,19 +389,34 @@ struct HomeView: View {
                         
                         Spacer().frame(height:10)
 
-
-                        NavigationLink(destination: SaySomethingNice7(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
+                        NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
                                        label: {
-                            Text("Friend said something 'NICE'")
+                            Text("Friend wants to 'resolve fight'")
                                 .fontWeight(.light)
-                                .frame(width: 240, height: 29)
+                                .frame(width: 240, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
-//                                .background(ColorManager.purple3)
                                 .cornerRadius(15)
                                 .opacity(0.4)
                         })
+                        
+                   
                     
+//                        Spacer().frame(height:10)
+
+
+//                        NavigationLink(destination: SaySomethingNice7(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
+//                                       label: {
+//                            Text("Friend sent 'NICE' message")
+//                                .fontWeight(.light)
+//                                .frame(width: 240, height: 29)
+//                                .foregroundColor(.white)
+//                                .background(ColorManager.purple3)
+////                                .background(ColorManager.purple3)
+//                                .cornerRadius(15)
+//                                .opacity(0.4)
+//                        })
+                        
                         
                         Spacer()
                             .frame(height: 260)
