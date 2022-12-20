@@ -52,7 +52,7 @@ struct InfoCreateChatRm: View {
                     
               
                 
-                Text("-Tap Friend's Planet \n-Name Chat Room in popup \n-Exit app and re-enter \nto Activate NEW Room")
+                Text("-Tap Friend's Planet \n-Name Chat Room in popup \n-Exit app and re-enter \n      to Activate NEW Room")
                     .font(.system(size: 17))
                     .fontWeight(.light)
                     .foregroundColor(ColorManager.darkGrey)
@@ -62,7 +62,13 @@ struct InfoCreateChatRm: View {
                                 .frame(height: 35)
                 
          
-                Text("Try 'motion' background in Settings")
+                Text("Try 'motion' background")
+                    .font(.system(size: 30))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.darkGrey)
+                
+                Text("in Settings")
                     .font(.system(size: 30))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)

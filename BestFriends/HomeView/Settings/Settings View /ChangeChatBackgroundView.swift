@@ -47,7 +47,7 @@ struct ChangeChatBackgroundView: View {
                 Spacer()
                     .frame(height: 15)
                 
-                Text("Change chat background")
+                Text("(exit app and re-enter to activate)")
                     .onAppear(perform: loadData)
                 
                 HStack {

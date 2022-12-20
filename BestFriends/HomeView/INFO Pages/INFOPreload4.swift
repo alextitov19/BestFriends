@@ -124,7 +124,7 @@ struct INFOPreload4: View {
                         InfoCircle (color: ColorManager .pmbc_green, friendName: "...and \nYOU! \n(add \nfriends)")
                     })
                     .offset(x: showItems ? -80 : 0, y: showItems ? -300: 0)
-                    .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
+                    .shadow(color: ColorManager .pmbc_green, radius: 4, x: 4, y: 4)
                     
 //
 //                    NavigationLink(destination: EmptyView(), label: {
@@ -225,18 +225,31 @@ struct INFOPreload4: View {
             
             ZStack {
                 
-                Image(systemName: "circle.fill")
-                    .resizable()
-                    .foregroundColor(ColorManager .grey1)
+//                Image(systemName: "circle.fill")
+//                    .resizable()
+//                    .foregroundColor(Color)
+//                    .frame(width: 180, height: 180)
+//                    .shadow(color: Color .cyan, radius: 5, x: 10, y: 10)
+//                    .opacity(0.5)
+                
+                Rectangle()
                     .frame(width: 180, height: 180)
+                    .clipShape(Circle())
+                    .foregroundColor(color)
                     .shadow(color: Color .cyan, radius: 5, x: 10, y: 10)
                     .opacity(0.5)
+                
                 
                 Text(friendName)
                     .fontWeight(.light)
                     .italic()
                     .foregroundColor(.black)
                 
+
+
+                         
+
+
             }
         }
     }

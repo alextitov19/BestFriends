@@ -108,7 +108,7 @@ struct BuggingPreload1: View {
                             
 
                             
-                            Text("Nervious to say anything?")
+                            Text("Nervous to say anything?")
                                 .font(.system(size: 15))
                             
                                 .foregroundColor(.white)

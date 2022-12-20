@@ -89,7 +89,7 @@ struct INFOPreloadA: View {
                         Spacer ()
                             .frame(height: 280)
                         
-                        Text("Just \n5 minutes")
+                        Text("Just \n5 minutes,")
                             .font(.system(size: 25))
                         
                             .foregroundColor(.white)
@@ -100,8 +100,8 @@ struct INFOPreloadA: View {
                         Spacer ()
                             .frame(height: 15)
                         
-                        Text("All of us together, \nat the same time")
-                            .font(.system(size: 25))
+                        Text("all of us together, \nat the same time")
+                            .font(.system(size: 20))
                         
                             .foregroundColor(.white)
                             .fontWeight(.regular)

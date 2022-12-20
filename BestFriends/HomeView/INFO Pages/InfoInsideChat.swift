@@ -35,7 +35,7 @@ struct InfoInsideChat: View {
             
             
               
-              Text("-Long-tap messages saving messages \n      to World FriendGroups \n      'Say Something Nice' feature \n-Long-tap messages to 'Report Abuse' \n\n\n-Tap [Remove Me] to be removed from room \n\n\n-Tap 'Lock' icon to Hide Chat \n-To 'Un-Hide' Chat, enter 4 digit PIN \n\n\n-Tap 'home' icon to return to homepage")
+              Text("-Long-tap messages to save to \n      'Say Something Nice' feature \n\n-Long-tap messages to 'Report Abuse' \n\n\n-Tap [Remove Me] to be removed from room \n\n\n-Tap 'Lock' icon to Hide Chat \n      To 'Un-Hide' Chat, enter 4 digit PIN")
                   .font(.system(size: 17))
                   .fontWeight(.light)
                   .foregroundColor(Color .white)

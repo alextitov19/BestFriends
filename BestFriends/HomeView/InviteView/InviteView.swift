@@ -132,14 +132,14 @@ struct InviteView: View {
                             Spacer()
                                 .frame(height: 10)
                             
-                            Text("-After friend sends Friend Request")
+                            Text("After friend sends Friend Request,")
                                 .fontWeight(.thin)
                                 .foregroundColor(.white)
                                 .italic()
                                 .font(.system(size: 17))
                             
                             
-                            Text("-Come to this page and tap [Accept]")
+                            Text("come to this page and tap [Accept]")
                                 .fontWeight(.thin)
                                 .foregroundColor(.white)
                                 .italic()
