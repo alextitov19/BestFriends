@@ -27,20 +27,11 @@ struct Friend1VaultPractice: View {
     
     var body: some View {
         ZStack {
-            Image("BandaidGuy 2")
-                .resizable()
+          
+
+            ColorManager.purple1
                 .ignoresSafeArea()
-                .scaledToFill()
-                .onAppear(perform: loadData)
-            
-            
-                        AdPlayerView(name: "sky2")
-                            .ignoresSafeArea()
-                            .blendMode(.screen)
-//
-//            ColorManager.purple4
-//                .ignoresSafeArea()
-//                .onAppear()
+                .onAppear()
 //
             
             
@@ -124,7 +115,7 @@ struct Friend1VaultPractice: View {
                     .submitLabel(.done)
                     .onReceive(Just(customMessage)) { _ in limitText(65) }
                     .padding(30)
-                    .overlay(RoundedRectangle(cornerRadius: 20)
+                    .overlay(RoundedRectangle(cornerRadius: 10)
                         .stroke(Color.purple)
                         .frame(width: 345, height: 40)
                         .padding(.horizontal, 10)
