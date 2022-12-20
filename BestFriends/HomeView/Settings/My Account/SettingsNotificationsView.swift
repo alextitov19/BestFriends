@@ -112,7 +112,7 @@ struct SettingsNotificationsView: View {
                     .font(.system(size: 15))
                     .italic()
                     .offset(x: -3)
-                    .foregroundColor(.red)
+                    .foregroundColor(.green)
                     .padding()
 //                    .frame(width: 5)
                 
