@@ -48,17 +48,12 @@ struct CreateChatRooms: View {
             VStack {
                 
                 
-                Text("Create")
+                Text("Create Chat Rooms")
                     .font(.system(size: 35))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.purple3)
-                
-                Text("Individual Chat Rooms")
-                    .font(.system(size: 35))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.purple3)
+             
                 
                 ZStack {
                     
@@ -76,9 +71,16 @@ struct CreateChatRooms: View {
                         
                         
                         Spacer ()
-                            .frame(height: 10)
+                            .frame(height: 55)
                         
-            
+                        Text("Individual Rooms")
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager.purple3)
+                        
+                        Spacer ()
+                            .frame(height: 10)
                         
                         Text("Homepage: tap Friend's Planet")
                             .font(.system(size: 15))
@@ -87,7 +89,7 @@ struct CreateChatRooms: View {
                             .foregroundColor(ColorManager.purple5)
                     
                         
-                        Text("Tap [Create NEW Chat Rooms]")
+                        Text("Tap [Create Chat Rooms]")
                             .font(.system(size: 15))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -106,10 +108,7 @@ struct CreateChatRooms: View {
                             .foregroundColor(ColorManager.purple5)
                         
                         VStack {
-                            
-                            
-                            Spacer()
-                                .frame(height: 0)
+                        
                             
                             Text(".  .  .")
                                 .font(.system(size: 25, weight: .bold))
@@ -118,8 +117,49 @@ struct CreateChatRooms: View {
                                 .opacity(0.50)
                                 .multilineTextAlignment(.center)
                             
-                            Spacer()
-                                .frame(height: 0)
+                            Spacer ()
+                                .frame(height: 10)
+                            Text("Group Rooms")
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager.purple3)
+                            
+                            Spacer ()
+                                .frame(height: 10)
+                            
+                            Text("Tap ALL planets you want in room")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager.purple5)
+                        
+                            
+                            
+                            Text("Then follow above instructions")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager.purple5)
+                            
+//                            Text("Exit app and re-enter to activate")
+//                                .font(.system(size: 15))
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(ColorManager.purple5)
+                            
+                            Spacer ()
+                                .frame(height: 100)
+                            
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+}
                             
                             //
                             //
@@ -209,18 +249,7 @@ struct CreateChatRooms: View {
                             //
                             //
                             
-                            Spacer ()
-                                .frame(height: 100)
-                            
-                        }
-                        
-                    }
-                }
-            }
-        }
-    }
-    
-}
+        
                     
                     
                     //
