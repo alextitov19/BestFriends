@@ -121,7 +121,7 @@ struct INFOPreload4: View {
                     
                  
                     NavigationLink(destination: InviteView(user: user), label: {
-                        InfoCircle (color: ColorManager .pmbc_green, friendName: "...and \nYOU! \n(add \nfriends)")
+                        InfoCircle (color: ColorManager .pmbc_green, friendName: "...and \nYOU! \n(add friends)")
                     })
                     .offset(x: showItems ? -80 : 0, y: showItems ? -300: 0)
                     .shadow(color: ColorManager .pmbc_green, radius: 4, x: 4, y: 4)
