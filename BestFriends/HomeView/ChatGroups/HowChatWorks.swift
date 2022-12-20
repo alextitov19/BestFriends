@@ -105,7 +105,14 @@ struct HowChatWorks: View {
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color .blue)
                         
+                            Spacer ()
+                                .frame(height: 15)
                             
+                            Text("*** Chat has MANUAL scroll ***")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color .blue)
                             Spacer ()
                                 .frame(height: 100)
                             
