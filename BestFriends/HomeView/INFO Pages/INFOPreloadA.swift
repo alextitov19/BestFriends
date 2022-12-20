@@ -89,7 +89,7 @@ struct INFOPreloadA: View {
                         Spacer ()
                             .frame(height: 280)
                         
-                        Text("just \n5 minutes")
+                        Text("Just \n5 minutes")
                             .font(.system(size: 25))
                         
                             .foregroundColor(.white)
