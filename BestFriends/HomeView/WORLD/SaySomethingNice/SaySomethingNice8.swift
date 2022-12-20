@@ -34,50 +34,7 @@ struct SaySomethingNice8: View {
     var body: some View {
         ZStack {
             
-            //            Image("blueBackground")
-            //                .resizable()
-            //                .ignoresSafeArea()
-            //                .scaledToFill()
-            
-//
-//            ColorManager .pmbc_blue
-//                .ignoresSafeArea()
-//
-//
-//            Image("holding iphone")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
-//
-//            VStack {
-//
-//                HStack {
-//
-//
-//                }
-//
-//                Spacer()
-//                    .frame(height: 20)
-//
-//
-//                Text("Join people around the world")
-//                    .font(.system(size: 18))
-//                    .italic()
-//                    .foregroundColor(ColorManager.grey1)
-//
-//                Text("saying something 'Nice to Friends'")
-//                    .font(.system(size: 18))
-//                    .italic()
-//                    .foregroundColor(ColorManager.grey1)
-//
-//                Text("RIGHT NOW")
-//                    .font(.system(size: 35))
-//                    .fontWeight(.medium)
-//                    .foregroundColor(.green)
-//
-//
-                
-            
+        
             
             ColorManager .purple1
                 .ignoresSafeArea()
@@ -135,15 +92,26 @@ struct SaySomethingNice8: View {
                                 Rectangle()
                                     .frame(width:335, height: 50)
                                     .cornerRadius(15)
-                                    .foregroundColor(ColorManager .grey1)
-                                    .opacity(0.95)
-                                
+                                    .foregroundColor(ColorManager .grey3)
+                                    .opacity(0.5)
+
                                 TextField("Say something 'Nice' here ...", text: $summary)
                                     .font(.system(size: 20))
                                     .foregroundColor(ColorManager.purple4)
                                     .padding(.horizontal, 50)
                                     .onReceive(Just(summary)) { _ in limitText(80) }
-                                
+//                                ZStack {
+//                                    Rectangle()
+//                                        .frame(width:335, height: 50)
+//                                        .cornerRadius(15)
+//                                        .foregroundColor(ColorManager .grey3)
+//                                        .opacity(0.5)
+//
+//                                    TextField("Type what's going on here ...", text: $summary)
+//                                        .font(.system(size: 20))
+//                                        .foregroundColor(ColorManager.purple4)
+//                                        .padding(.horizontal, 50)
+//                                        .onReceive(Just(summary)) { _ in limitText(80) }
                                 
                             }
                             
