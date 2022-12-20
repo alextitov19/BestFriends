@@ -1,125 +1,90 @@
 //
-//  ChatInfo.swift
+//  CustomizeChatBackgrounds.swift
 //  BestFriends
 //
-//  Created by Social Tech on 10/6/22.
+//  Created by Social Tech on 12/19/22.
 //
+
+
 
 import Foundation
 import SwiftUI
 
 
-struct ChatInfo: View {
+struct CustomizeChatBackgrounds: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
-   let user: User
+    let user: User
 
-//
+    
+    //
     var body: some View {
         ZStack {
-//            ColorManager.grey3
-//                .ignoresSafeArea()
-//                .onAppear()
+            //            ColorManager.grey3
+            //                .ignoresSafeArea()
+            //                .onAppear()
             
             Image("purpleBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
-
-               .blendMode(.screen)
-
+            
+                .blendMode(.screen)
+            
             
             VStack {
-         
-                Text("Creating Chat Rooms")
+                
+                Text("Customize Chat Backgrounds")
                     .font(.system(size: 35, weight: .bold))
                     .foregroundColor(ColorManager .grey1)
                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                     .opacity(0.50)
                     .multilineTextAlignment(.center)
-
                 
-
-            
                 
-            VStack {
+                
+                
+                
+                VStack {
                     
-            
-                Spacer()
-                    .frame(height: 30)
-            
+                    
+                    Spacer()
+                        .frame(height: 30)
+                    
                     VStack {
                         
-                        Spacer()
-                            .frame(height: 10)
                         
-                        NavigationLink(
-                            destination: CreateGroupChatRooms(user: user),
-                            label: {
-                                Text("Create Group Chat Rooms")
-                                    .fontWeight(.thin)
-                                    .frame(width: 310, height: 30)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(ColorManager.pmbc_green)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            })
+                        Text("Check-out 'MOTION'")
+                            .font(.system(size: 35))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager.purple3)
+                        
+                        Text("Chat Backgrounds")
+                            .font(.system(size: 30))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager.purple3)
                         
                         
-                        Spacer()
-                            .frame(height: 10)
+                       
                         
-                        
-                        NavigationLink(
-                            destination: HowChatWorks(user: user),
-                            label: {
-                                Text("How Chat Room Works")
-                                    .fontWeight(.thin)
-                                    .frame(width: 310, height: 30)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(ColorManager.pmbc_green)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            })
-                        
-                        
-                        Spacer()
-                            .frame(height: 10)
-                        
-                        
-                        NavigationLink(
-                            destination: InfoViewPlanet(user: user),
-                            label: {
-                                Text("Customize Chat Backgrounds")
-                                    .fontWeight(.thin)
-                                    .frame(width: 310, height: 30)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            })
-                        
-                        
-                        Spacer()
-                            .frame(height: 15)
-                        
-     
-                 
+
+                            
+                            Spacer()
+                                .frame(height: 15)
+                            
+                            
+                            
+                        }
                     }
+                    
                 }
-                
             }
-}
+        }
     }
-}
-        
+
     
     
 
@@ -267,31 +232,6 @@ struct ChatInfo: View {
 //                }
 //
 //
-//                    Text("Check-out 'MOTION'")
-//                        .font(.system(size: 35))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.purple3)
-//
-//                    Text("Chat Backgrounds")
-//                        .font(.system(size: 30))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.purple3)
-//
-//           VStack {
-//               NavigationLink(
-//
-//                destination: ChangeChatBackgroundView(user: user),
-//                   label: {
-//                       Text("Settings")
-//                           .fontWeight(.thin)
-//                           .foregroundColor(Color.white)
-//                           .frame(width: 200, height: 40)
-//                           .font(.system(size: 30))
-//                           .background(ColorManager.purple3)
-//                           .cornerRadius(15)
-//                           .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 //
 //                   }
 //               )}

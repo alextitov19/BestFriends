@@ -1,15 +1,17 @@
 //
-//  ChatInfo.swift
+//  CreateGroupChatRooms.swift
 //  BestFriends
 //
-//  Created by Social Tech on 10/6/22.
+//  Created by Social Tech on 12/19/22.
 //
+
+
 
 import Foundation
 import SwiftUI
 
 
-struct ChatInfo: View {
+struct CreateGroupChatRooms: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -32,81 +34,67 @@ struct ChatInfo: View {
             
             VStack {
          
-                Text("Creating Chat Rooms")
-                    .font(.system(size: 35, weight: .bold))
-                    .foregroundColor(ColorManager .grey1)
-                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    .opacity(0.50)
-                    .multilineTextAlignment(.center)
-
                 
-
+                VStack {
+                                 Spacer()
+                                 .frame(height: 15)
+             
+                                 Text("Create")
+                                     .font(.system(size: 35))
+                                     .fontWeight(.light)
+                                     .multilineTextAlignment(.center)
+                                     .foregroundColor(ColorManager.purple3)
+             
+                                 Text("NEW Chat Rooms")
+                                     .font(.system(size: 35))
+                                     .fontWeight(.light)
+                                     .multilineTextAlignment(.center)
+                                     .foregroundColor(ColorManager.purple3)
+             
+                             Text("-Tap Friend's Planet")
+                                 .font(.system(size: 15))
+                                 .fontWeight(.light)
+                                 .multilineTextAlignment(.center)
+                                 .foregroundColor(ColorManager.red)
+             
+                                 Text("-Tap [Create NEW Chat Rooms]")
+                                     .font(.system(size: 15))
+                                     .fontWeight(.light)
+                                     .multilineTextAlignment(.center)
+                                     .foregroundColor(ColorManager.red)
+             
+                                 Text("-Name Chat Room")
+                                     .font(.system(size: 15))
+                                     .fontWeight(.light)
+                                     .multilineTextAlignment(.center)
+                                     .foregroundColor(ColorManager.red)
+             
+                                 Text("-Exit app and re-enter")
+                                     .font(.system(size: 23))
+                                     .fontWeight(.light)
+                                     .multilineTextAlignment(.center)
+                                     .foregroundColor(ColorManager.red)
+             
+                                 Text("  to Activate NEW Room")
+                                     .font(.system(size: 23))
+                                     .fontWeight(.light)
+                                     .multilineTextAlignment(.center)
+                                     .foregroundColor(ColorManager.red)
+             
+                                 Text("-Try 'motion' background in Settings")
+                                     .font(.system(size: 15))
+                                     .fontWeight(.light)
+                                     .multilineTextAlignment(.center)
+                                     .foregroundColor(.white)
+             
+             
+                             }
             
                 
             VStack {
                     
             
-                Spacer()
-                    .frame(height: 30)
-            
-                    VStack {
-                        
-                        Spacer()
-                            .frame(height: 10)
-                        
-                        NavigationLink(
-                            destination: CreateGroupChatRooms(user: user),
-                            label: {
-                                Text("Create Group Chat Rooms")
-                                    .fontWeight(.thin)
-                                    .frame(width: 310, height: 30)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(ColorManager.pmbc_green)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            })
-                        
-                        
-                        Spacer()
-                            .frame(height: 10)
-                        
-                        
-                        NavigationLink(
-                            destination: HowChatWorks(user: user),
-                            label: {
-                                Text("How Chat Room Works")
-                                    .fontWeight(.thin)
-                                    .frame(width: 310, height: 30)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(ColorManager.pmbc_green)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            })
-                        
-                        
-                        Spacer()
-                            .frame(height: 10)
-                        
-                        
-                        NavigationLink(
-                            destination: InfoViewPlanet(user: user),
-                            label: {
-                                Text("Customize Chat Backgrounds")
-                                    .fontWeight(.thin)
-                                    .frame(width: 310, height: 30)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            })
-                        
-                        
+                
                         Spacer()
                             .frame(height: 15)
                         
@@ -118,7 +106,7 @@ struct ChatInfo: View {
             }
 }
     }
-}
+
         
     
     
@@ -163,60 +151,7 @@ struct ChatInfo: View {
 //                VStack {
 //
 //
-//                VStack {
-//                    Spacer()
-//                    .frame(height: 15)
 //
-//                    Text("Create")
-//                        .font(.system(size: 35))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.purple3)
-//
-//                    Text("NEW Chat Rooms")
-//                        .font(.system(size: 35))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.purple3)
-//
-//                Text("-Tap Friend's Planet")
-//                    .font(.system(size: 15))
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//                    .foregroundColor(ColorManager.red)
-//
-//                    Text("-Tap [Create NEW Chat Rooms]")
-//                        .font(.system(size: 15))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.red)
-//
-//                    Text("-Name Chat Room")
-//                        .font(.system(size: 15))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.red)
-//
-//                    Text("-Exit app and re-enter")
-//                        .font(.system(size: 23))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.red)
-//
-//                    Text("  to Activate NEW Room")
-//                        .font(.system(size: 23))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.red)
-//
-//                    Text("-Try 'motion' background in Settings")
-//                        .font(.system(size: 15))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(.white)
-//
-//
-//                }
 //
 //            VStack {
 //
