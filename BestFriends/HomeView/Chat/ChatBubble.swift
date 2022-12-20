@@ -133,7 +133,7 @@ private struct MyChatMessage: View {
                     .padding(10)
                     .multilineTextAlignment(.leading)
                 //                    .font(.system(size: 15).weight(.light))
-                    .background(ColorManager.grey3)
+                    .background(ColorManager.orange3)
                     .opacity(0.7)
                     .font(.system(size: 15).weight(.thin))
                     .foregroundColor(.black)
