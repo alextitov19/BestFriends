@@ -203,6 +203,14 @@ struct HugPushNotification2: View {
                         })
                         
                         VStack {
+                            Spacer()
+                                .frame(height: 20)
+                            
+                            Text("Turn ON haptics on iPhone")
+                                .font(.system(size: 15))
+                                .fontWeight(.ultraLight)
+                                .foregroundColor(ColorManager .grey3)
+                                .multilineTextAlignment(.center)
                             
                             Spacer()
                                 .frame(height: 100)
