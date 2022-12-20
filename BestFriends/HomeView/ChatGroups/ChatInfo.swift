@@ -74,7 +74,7 @@ struct ChatInfo: View {
                         NavigationLink(
                             destination: HowChatWorks(user: user),
                             label: {
-                                Text("How Chat Room Works")
+                                Text("How Chat Works")
                                     .fontWeight(.thin)
                                     .frame(width: 310, height: 30)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -93,7 +93,7 @@ struct ChatInfo: View {
                         NavigationLink(
                             destination: ChangeChatBackgroundView(user: user),
                             label: {
-                                Text("Customize Chat Backgrounds")
+                                Text("Customize Background")
                                     .fontWeight(.thin)
                                     .frame(width: 310, height: 30)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -106,7 +106,7 @@ struct ChatInfo: View {
                         
                      
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 70)
                         
                         
                         Text("Hello, we're working to make Chat \nmore streamlined")
