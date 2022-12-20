@@ -18,22 +18,21 @@ struct ChatInfo: View {
 //
     var body: some View {
         ZStack {
-//            ColorManager.grey3
-//                .ignoresSafeArea()
-//                .onAppear()
-            
-            Image("purpleBackground")
-                .resizable()
+            ColorManager.purple1
                 .ignoresSafeArea()
-                .scaledToFill()
-
-               .blendMode(.screen)
+                .onAppear()
+            
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+//               .blendMode(.screen)
 
             
             VStack {
          
                 Text("Creating Chat Rooms")
-                    .font(.system(size: 35, weight: .bold))
+                    .font(.system(size: 30, weight: .bold))
                     .foregroundColor(ColorManager .grey1)
                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                     .opacity(0.50)
@@ -51,13 +50,12 @@ struct ChatInfo: View {
             
                     VStack {
                         
-                        Spacer()
-                            .frame(height: 10)
+                       
                         
                         NavigationLink(
-                            destination: CreateGroupChatRooms(user: user),
+                            destination: CreateChatRooms(user: user),
                             label: {
-                                Text("Create Group Chat Rooms")
+                                Text("How to create Chat rooms")
                                     .fontWeight(.thin)
                                     .frame(width: 310, height: 30)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -70,7 +68,7 @@ struct ChatInfo: View {
                         
                         
                         Spacer()
-                            .frame(height: 10)
+                            .frame(height: 15)
                         
                         
                         NavigationLink(
@@ -89,11 +87,11 @@ struct ChatInfo: View {
                         
                         
                         Spacer()
-                            .frame(height: 10)
+                            .frame(height: 15)
                         
                         
                         NavigationLink(
-                            destination: CustomizeChatBackgrounds(user: user),
+                            destination: ChangeChatBackgroundView(user: user),
                             label: {
                                 Text("Customize Chat Backgrounds")
                                     .fontWeight(.thin)
@@ -106,11 +104,7 @@ struct ChatInfo: View {
                                 
                             })
                         
-                        
-                        Spacer()
-                            .frame(height: 15)
-                        
-     
+                     
                  
                     }
                 }

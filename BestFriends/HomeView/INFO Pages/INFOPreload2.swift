@@ -90,7 +90,7 @@ struct INFOPreload2: View {
                         .font(.system(size: 25, weight: .bold))
                         .foregroundColor(ColorManager .purple4)
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    //                        .opacity(0.50)
+                        .opacity(0.50)
                         .multilineTextAlignment(.center)
                     
                     Spacer()
