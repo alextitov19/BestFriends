@@ -73,10 +73,8 @@ struct PlanetActionsView: View {
     
     let user: User
     let atmosphere: Atmosphere
-    
     let friends: [User]
     let friendAtmospheres: [Atmosphere]
-    
     let groups: [Group]
     
     var body: some View {
