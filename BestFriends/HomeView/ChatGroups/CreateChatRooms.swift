@@ -50,6 +50,7 @@ struct CreateChatRooms: View {
                 
                 Text("Create Chat Rooms")
                     .font(.system(size: 35))
+                    .italic()
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.purple3)
