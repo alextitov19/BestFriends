@@ -197,7 +197,7 @@ struct HugPushNotification2: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your HUG request was sent at the speed of light. \n\nHopefully, they send it just as fast.", isPresented: $showingAlert) {
+                                .alert("Your HUG request was sent at the speed of light. \n\nYour friend should send you a HUG as soon as they can.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })

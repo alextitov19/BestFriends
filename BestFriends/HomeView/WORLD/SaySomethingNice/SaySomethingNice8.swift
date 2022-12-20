@@ -100,19 +100,7 @@ struct SaySomethingNice8: View {
                                     .foregroundColor(ColorManager.purple4)
                                     .padding(.horizontal, 50)
                                     .onReceive(Just(summary)) { _ in limitText(80) }
-//                                ZStack {
-//                                    Rectangle()
-//                                        .frame(width:335, height: 50)
-//                                        .cornerRadius(15)
-//                                        .foregroundColor(ColorManager .grey3)
-//                                        .opacity(0.5)
-//
-//                                    TextField("Type what's going on here ...", text: $summary)
-//                                        .font(.system(size: 20))
-//                                        .foregroundColor(ColorManager.purple4)
-//                                        .padding(.horizontal, 50)
-//                                        .onReceive(Just(summary)) { _ in limitText(80) }
-                                
+                           
                             }
                             
                             
@@ -125,13 +113,8 @@ struct SaySomethingNice8: View {
                                 
                                 Spacer()
                                     .frame(height: 10)
-                                Text("Select friend(s) to Alert")
-                                    .font(.system(size: 20))
-                                    .italic()
-                                    .fontWeight(.ultraLight)
-                                    .foregroundColor(ColorManager .purple4)
-                                    .multilineTextAlignment(.center)
-                                
+
+//
                                 HStack {
                                     
 //                                    Text("select >")
@@ -224,6 +207,10 @@ struct SaySomethingNice8: View {
                                     }
                                 }
                                 
+                                
+                             
+                           
+                                
                                 Spacer()
                                     .frame(height: 30)
                                 
@@ -245,21 +232,19 @@ struct SaySomethingNice8: View {
                                         }
                                 })
                                 
-//
-//                                NavigationLink(
-//                                    destination: AtmosphereInfo2(user: user, atmosphere: atmosphere, friends: friends),
-//                                    label: {
-//                                        Text("How feature works")
-//                                            .fontWeight(.thin)
-//                                            .foregroundColor(Color.white)
-//                                            .font(.system(size: 12))
-//                                            .italic()
-//                                            .frame(width: 50, height: 50)
-//                                            .background(ColorManager .pmbc_green)
-//                                            .cornerRadius(15)
-//                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                                    })
+                                Text("a special message is like the look on a girl's face ")
+                                    .font(.system(size: 15))
                                 
+                                    .fontWeight(.ultraLight)
+                                    .foregroundColor(ColorManager .grey3)
+                                    .multilineTextAlignment(.center)
+                                
+                                Text("holding unexpected flowers")
+                                    .font(.system(size: 17))
+                                
+                                    .fontWeight(.ultraLight)
+                                    .foregroundColor(ColorManager .grey3)
+                                    .multilineTextAlignment(.center)
                             }
                             
                         }
