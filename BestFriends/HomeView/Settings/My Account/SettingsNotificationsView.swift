@@ -107,7 +107,14 @@ struct SettingsNotificationsView: View {
 
 //                      Divider()
                       
-                
+                Text("For best performance set your notifications \nto 'banner' view on your iPhone")
+
+                    .font(.system(size: 15))
+                    .italic()
+                    .offset(x: -3)
+                    .foregroundColor(.red)
+                    .padding()
+//                    .frame(width: 5)
                 
             }
             .padding()
