@@ -120,11 +120,11 @@ struct StartHere1: View {
                     
                     
 //
-//                    NavigationLink(destination:  SurveyStickersPreload(), label: {
-//                        StartHereCircle (color: ColorManager.purple1, friendName: "Take \n Survey, \nget \nSTICKERS")
-//                    })
-//                    .offset(x: showItems ? -10 : 0, y: showItems ? 280: 0)
-//                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+                    NavigationLink(destination:  SurveyStickersPreload(), label: {
+                        StartHereCircle (color: ColorManager.purple2, friendName: "Take \n Survey, \nget \nSTICKERS")
+                    })
+                    .offset(x: showItems ? 140 : 0, y: showItems ? -120: 0)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
 //
                     
                     
@@ -143,7 +143,7 @@ struct StartHere1: View {
                         
                         
                         Spacer ()
-                            .frame(height: 200)
+                            .frame(height: 250)
                         
                         Text("'settings'")
                             .font(.system(size: 20))
@@ -151,34 +151,39 @@ struct StartHere1: View {
                             .foregroundColor(ColorManager .grey4)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                        
-                        Text("'about us'")
-                            .font(.system(size: 20))
-                            .italic()
-                            .foregroundColor(ColorManager .grey4)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
                         Text("'add friends'")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(ColorManager .grey4)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                        
-                        Text("'walk-through'")
+                        Text("'envisioned by'")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(ColorManager .grey4)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                        
-                        Text("'get cool stickers'")
+                        Text("'survey - get stickers'")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(ColorManager .grey4)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
+                       
+                        
+//                        Text("'walk-through'")
+//                            .font(.system(size: 20))
+//                            .italic()
+//                            .foregroundColor(ColorManager .grey4)
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//
+//                        Text("'get cool stickers'")
+//                            .font(.system(size: 20))
+//                            .italic()
+//                            .foregroundColor(ColorManager .grey4)
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
                         
                         
                         
