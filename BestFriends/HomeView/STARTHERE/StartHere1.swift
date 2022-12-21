@@ -112,10 +112,10 @@ struct StartHere1: View {
                     
                     
                     
-                    NavigationLink(destination: InfoViewPlanet(user: user), label: {
-                        StartHereCircle (color: ColorManager.purple4, friendName: "Walk-through")
-                    })
-                    .offset(x: showItems ? 140 : 0, y: showItems ? -140: 0)
+//                    NavigationLink(destination: InfoViewPlanet(user: user), label: {
+//                        StartHereCircle (color: ColorManager.purple4, friendName: "Walk-through")
+//                    })
+//                    .offset(x: showItems ? 140 : 0, y: showItems ? -140: 0)
                     
                     
                     
