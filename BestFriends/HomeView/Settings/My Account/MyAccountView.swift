@@ -102,7 +102,7 @@ struct MyAccountView: View {
                     destination: ChangePin(user: user),
                     label: {
                         HStack {
-                            Text("Change PIN for Hide Chat")
+                            Text("Change PIN - Hide Chat & Private Room")
                                 .font(.system(size: 20))
                                 .foregroundColor(.purple)
                                 .offset(x: 25)

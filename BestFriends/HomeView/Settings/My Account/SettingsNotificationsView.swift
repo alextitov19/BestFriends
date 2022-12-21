@@ -101,7 +101,7 @@ struct SettingsNotificationsView: View {
                 
                     Divider()
 
-                      Toggle("     Broadcast Notifications", isOn: $broadcastNotifications)
+                      Toggle("     Push Notifications", isOn: $broadcastNotifications)
                           .foregroundColor(.white)
                           .accentColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
 

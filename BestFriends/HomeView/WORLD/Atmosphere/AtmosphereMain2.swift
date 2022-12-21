@@ -450,7 +450,7 @@ struct AtmosphereMain2: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent a song to match your Vibe", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) 'Vibe' just changed. Tap friend's planet on Home pg, then tap [Friend's 'Vibe' Changed] from dropdown. Please take a moment to check on them!", APNToken: f.APNToken)
                 }
             }
         }

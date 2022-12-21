@@ -52,8 +52,8 @@ struct INFOPreloadA: View {
                 
                 
                 
-                NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
-                    InfoCircle (color: ColorManager .purple1, friendName: "Reducing \n FriendGroup \nDrama \n\nmore...")
+                NavigationLink(destination: EmptyView(), label: {
+                    InfoCircle (color: ColorManager .purple1, friendName: "Friendship \nFeed \n\nmore...")
                 })
                 .offset(x: showItems ? 120 : 0, y: showItems ? -150: 0)
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
@@ -62,7 +62,7 @@ struct INFOPreloadA: View {
                 NavigationLink(destination: INFOMainHowWorks(user: user), label: {
                     InfoCircle (color: ColorManager .purple1, friendName: "How this \nworks \n\nmore...")
                 })
-                .offset(x: showItems ? 20 : 0, y: showItems ? -350: 0)
+                .offset(x: showItems ? 30 : 0, y: showItems ? -310: 0)
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                 
                 

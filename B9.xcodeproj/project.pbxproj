@@ -111,6 +111,7 @@
 		CF2EE6FA29516C9E00B1B16D /* CustomizeChatBackgrounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6F929516C9E00B1B16D /* CustomizeChatBackgrounds.swift */; };
 		CF2EE6FC29517A4B00B1B16D /* CreateChatRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6FB29517A4B00B1B16D /* CreateChatRooms.swift */; };
 		CF2EE6FE295294E600B1B16D /* INFOMainHowWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6FD295294E600B1B16D /* INFOMainHowWorks.swift */; };
+		CF2EE70129529C0300B1B16D /* NEWSFeedPergion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE70029529C0300B1B16D /* NEWSFeedPergion.swift */; };
 		CF2FD942280BBA1B0036F4BB /* Step3_BreathInviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD941280BBA1B0036F4BB /* Step3_BreathInviteView.swift */; };
 		CF2FD944280CA20F0036F4BB /* ChatBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD943280CA20F0036F4BB /* ChatBackgroundView.swift */; };
 		CF3295F7290BAA7C0014F658 /* INFOPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3295F6290BAA7C0014F658 /* INFOPreload.swift */; };
@@ -379,6 +380,7 @@
 		CF2EE6F929516C9E00B1B16D /* CustomizeChatBackgrounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeChatBackgrounds.swift; sourceTree = "<group>"; };
 		CF2EE6FB29517A4B00B1B16D /* CreateChatRooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChatRooms.swift; sourceTree = "<group>"; };
 		CF2EE6FD295294E600B1B16D /* INFOMainHowWorks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOMainHowWorks.swift; sourceTree = "<group>"; };
+		CF2EE70029529C0300B1B16D /* NEWSFeedPergion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEWSFeedPergion.swift; sourceTree = "<group>"; };
 		CF2FD941280BBA1B0036F4BB /* Step3_BreathInviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3_BreathInviteView.swift; sourceTree = "<group>"; };
 		CF2FD943280CA20F0036F4BB /* ChatBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBackgroundView.swift; sourceTree = "<group>"; };
 		CF3295F6290BAA7C0014F658 /* INFOPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOPreload.swift; sourceTree = "<group>"; };
@@ -776,6 +778,7 @@
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
 				7AC4C01D27FF49F9000C4140 /* Chat */,
+				CF2EE6FF29529BC200B1B16D /* NewsFeeds */,
 				CF3B65A9280071580003A714 /* Settings */,
 				CF41280C2927542B003BCBFA /* SurveyStickers */,
 				CF39F17A292C5F5000927A3C /* STARTHERE */,
@@ -855,6 +858,14 @@
 				CFE1946A2812A9E300ED5718 /* Streaks */,
 			);
 			path = "My Planet";
+			sourceTree = "<group>";
+		};
+		CF2EE6FF29529BC200B1B16D /* NewsFeeds */ = {
+			isa = PBXGroup;
+			children = (
+				CF2EE70029529C0300B1B16D /* NEWSFeedPergion.swift */,
+			);
+			path = NewsFeeds;
 			sourceTree = "<group>";
 		};
 		CF37535628BECF34003817E3 /* Built By Teens */ = {
@@ -1672,6 +1683,7 @@
 				CFAB542A282123EA00BBF502 /* WhoFighting.swift in Sources */,
 				CFD8BD082912B0EB00F86EFB /* AtmosphereInfo2.swift in Sources */,
 				CF37535128BB3398003817E3 /* SendSongPush.swift in Sources */,
+				CF2EE70129529C0300B1B16D /* NEWSFeedPergion.swift in Sources */,
 				CF39F17C292C5F8000927A3C /* StartHere1.swift in Sources */,
 				CFDB15102859415D00155CEE /* MasterFriendVault.swift in Sources */,
 				62319AAD284A788000CA0359 /* FG_Video.swift in Sources */,
