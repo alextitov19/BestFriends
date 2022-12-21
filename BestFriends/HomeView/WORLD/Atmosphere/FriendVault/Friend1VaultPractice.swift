@@ -147,6 +147,11 @@ struct Friend1VaultPractice: View {
                         .fontWeight(.medium)
 //                        .frame(width:325, height: 25)
                         .foregroundColor(ColorManager .purple7)
+                        .multilineTextAlignment(.center)
+                    
+                    
+                    
+                    
                     
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "Are you okay?")
