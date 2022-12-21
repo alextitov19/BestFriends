@@ -110,6 +110,7 @@
 		CF2EE6F829516C8A00B1B16D /* HowChatWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6F729516C8A00B1B16D /* HowChatWorks.swift */; };
 		CF2EE6FA29516C9E00B1B16D /* CustomizeChatBackgrounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6F929516C9E00B1B16D /* CustomizeChatBackgrounds.swift */; };
 		CF2EE6FC29517A4B00B1B16D /* CreateChatRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6FB29517A4B00B1B16D /* CreateChatRooms.swift */; };
+		CF2EE6FE295294E600B1B16D /* INFOMainHowWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6FD295294E600B1B16D /* INFOMainHowWorks.swift */; };
 		CF2FD942280BBA1B0036F4BB /* Step3_BreathInviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD941280BBA1B0036F4BB /* Step3_BreathInviteView.swift */; };
 		CF2FD944280CA20F0036F4BB /* ChatBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD943280CA20F0036F4BB /* ChatBackgroundView.swift */; };
 		CF3295F7290BAA7C0014F658 /* INFOPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3295F6290BAA7C0014F658 /* INFOPreload.swift */; };
@@ -377,6 +378,7 @@
 		CF2EE6F729516C8A00B1B16D /* HowChatWorks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowChatWorks.swift; sourceTree = "<group>"; };
 		CF2EE6F929516C9E00B1B16D /* CustomizeChatBackgrounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeChatBackgrounds.swift; sourceTree = "<group>"; };
 		CF2EE6FB29517A4B00B1B16D /* CreateChatRooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChatRooms.swift; sourceTree = "<group>"; };
+		CF2EE6FD295294E600B1B16D /* INFOMainHowWorks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOMainHowWorks.swift; sourceTree = "<group>"; };
 		CF2FD941280BBA1B0036F4BB /* Step3_BreathInviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3_BreathInviteView.swift; sourceTree = "<group>"; };
 		CF2FD943280CA20F0036F4BB /* ChatBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBackgroundView.swift; sourceTree = "<group>"; };
 		CF3295F6290BAA7C0014F658 /* INFOPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOPreload.swift; sourceTree = "<group>"; };
@@ -1230,6 +1232,7 @@
 				CFD8BD15291B3D6600F86EFB /* INFOPreload2.swift */,
 				CF6499E0294E1F6C003BBF83 /* INFOPreload3.swift */,
 				CF6499EC29501EF7003BBF83 /* INFOPreload4.swift */,
+				CF2EE6FD295294E600B1B16D /* INFOMainHowWorks.swift */,
 				CF3295FC290BBD210014F658 /* InfoCoolVideo.swift */,
 				CF37535928BED060003817E3 /* BuiltForTeens.swift */,
 				CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */,
@@ -1765,6 +1768,7 @@
 				CF72D6FB2921AFE900EDDDA6 /* SmileVaultPreload.swift in Sources */,
 				CFC0EE6929022560006B3FAA /* ShaylaPage.swift in Sources */,
 				CF2EE6F629516C7000B1B16D /* CreateGroupChatRooms.swift in Sources */,
+				CF2EE6FE295294E600B1B16D /* INFOMainHowWorks.swift in Sources */,
 				7AB52169289D959D005A49FA /* PurpleSubscriptionView.swift in Sources */,
 				62372A1B2884ECD500CAB75C /* HorizonInviteFriends.swift in Sources */,
 				CF65040A28915A080092EEB9 /* FD_Step1.swift in Sources */,
