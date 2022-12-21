@@ -145,7 +145,6 @@ struct Friend1VaultPractice: View {
                     Text("Respond instantly by \nPush Notification")
                         .font(.system(size: 15))
                         .fontWeight(.medium)
-//                        .frame(width:325, height: 25)
                         .foregroundColor(ColorManager .purple7)
                         .multilineTextAlignment(.center)
                     

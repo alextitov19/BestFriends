@@ -149,14 +149,20 @@ struct SaySomethingNice7: View {
                     })
 
                     Spacer ()
-                        .frame(height: 60)
+                        .frame(height: 40)
                     
-                    
-                    Text("Respond instantly via Push Notification")
+                    Text("Respond instantly by \nPush Notification")
                         .font(.system(size: 15))
                         .fontWeight(.medium)
-//                        .frame(width:325, height: 25)
-                        .foregroundColor(.white)
+                        .foregroundColor(ColorManager .purple7)
+                        .multilineTextAlignment(.center)
+                    
+                    
+//                    Text("Respond instantly via Push Notification")
+//                        .font(.system(size: 15))
+//                        .fontWeight(.medium)
+////                        .frame(width:325, height: 25)
+//                        .foregroundColor(.white)
                     
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "Are you okay?")
