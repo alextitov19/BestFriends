@@ -31,20 +31,20 @@ struct SaySomethingNice7: View {
         ZStack {
             
             
-            Image("blueBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-                .onAppear(perform: loadData)
-
-
-                        AdPlayerView(name: "background_4")
-                            .ignoresSafeArea()
-                            .blendMode(.screen)
-
-//            ColorManager.grey4
+//            Image("blueBackground")
+//                .resizable()
 //                .ignoresSafeArea()
-//                .onAppear()
+//                .scaledToFill()
+//                .onAppear(perform: loadData)
+//
+//
+//                        AdPlayerView(name: "background_4")
+//                            .ignoresSafeArea()
+//                            .blendMode(.screen)
+
+            ColorManager.purple1
+                .ignoresSafeArea()
+                .onAppear()
 
             
             
@@ -121,7 +121,7 @@ struct SaySomethingNice7: View {
                     .onReceive(Just(customMessage)) { _ in limitText(70) }
                     .padding(.horizontal, 37)
 //                    .padding()
-                    .overlay(RoundedRectangle(cornerRadius: 20)
+                    .overlay(RoundedRectangle(cornerRadius: 10)
                         .stroke(Color.purple)
                         .frame(height: 40)
                         .padding(.horizontal, 35)
@@ -129,6 +129,10 @@ struct SaySomethingNice7: View {
 //                    .padding(.horizontal, 0)
                 
                 VStack {
+                    
+                    Spacer()
+                        .frame(height: 30)
+                    
                     Button(action: {
                         sendMessage()
                     }, label: {
@@ -138,12 +142,12 @@ struct SaySomethingNice7: View {
                             .foregroundColor(.white)
                             .font(.system(size: 25))
                         //                                .opacity(0.5)
-                            .background(ColorManager.pmbc_green)
+                            .background(ColorManager.purple3)
                             .opacity(0.7)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
-//                    .padding()
+
                     Spacer ()
                         .frame(height: 60)
                     
