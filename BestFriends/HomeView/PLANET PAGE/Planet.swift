@@ -118,21 +118,19 @@ struct PlanetActionsView: View {
                     
                     
                     VStack {
-                        NavigationLink(destination: PhotoPopView(user: user, friends: friends),
+                        
+                        NavigationLink(destination: SaySomethingNice8(user: user, atmosphere: atmosphere, friends: friends),
                                        label: {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
                                     .foregroundColor(ColorManager.purple2)
                                     .shadow(color: .white, radius: 2, x: 4, y: 4)
-                                    .opacity(0.8)
-                                
-                                VStack {
+                                    .opacity(0.80)
 
-                                    Image("iconPhone80")
-//
-                        
-                                    
+                                VStack {
+                                    Image("iconNice70")
+                  
                                 }
                             }
                             
@@ -170,18 +168,20 @@ struct PlanetActionsView: View {
 //                   AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends),
                     
                     VStack {
-                        
-                        NavigationLink(destination: SaySomethingNice8(user: user, atmosphere: atmosphere, friends: friends),
+                        NavigationLink(destination: PhotoPopView(user: user, friends: friends),
                                        label: {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
                                     .foregroundColor(ColorManager.purple2)
-                                    .shadow(color: .white, radius: 2, x: 0, y: 4)
-                                    .opacity(0.80)
-
+                                    .shadow(color: .white, radius: 2, x: 4, y: 4)
+                                    .opacity(0.8)
+                                
                                 VStack {
-                                    Image("iconNice70")
+
+                                    Image("iconPhone80")
+//
+                      
 
 
                                 }
@@ -250,7 +250,7 @@ struct PlanetActionsView: View {
                         
                         
                         Spacer()
-                            .frame(height: 45)
+                            .frame(height: 15)
                         
                    
                         
