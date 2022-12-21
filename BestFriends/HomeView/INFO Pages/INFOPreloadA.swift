@@ -50,14 +50,14 @@ struct INFOPreloadA: View {
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                 
                 
-                
-                
-                NavigationLink(destination: EmptyView(), label: {
-                    InfoCircle (color: ColorManager .purple1, friendName: "Friendship \nFeed \n\nmore...")
-                })
-                .offset(x: showItems ? 120 : 0, y: showItems ? -150: 0)
-                .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
-                
+//                
+//                
+//                NavigationLink(destination: EmptyView(), label: {
+//                    InfoCircle (color: ColorManager .purple1, friendName: "Friendship \nFeed \n\nmore...")
+//                })
+//                .offset(x: showItems ? 120 : 0, y: showItems ? -150: 0)
+//                .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
+//                
                 
                 NavigationLink(destination: INFOMainHowWorks(user: user), label: {
                     InfoCircle (color: ColorManager .purple1, friendName: "How this \nworks \n\nmore...")

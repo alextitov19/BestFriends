@@ -96,8 +96,16 @@ struct MyRoomInfo: View {
 //                    .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
 //                    
 //                    
-//                    
-//                    
+//
+                    NavigationLink(destination: EmptyView(), label: {
+                        MyRoomCircle (color: ColorManager .grey2, friendName: "Friendship \nFeed \n(coming \n2023)")
+                    })
+                    .offset(x: showItems ? -120 : 0, y: showItems ? 150: 0)
+                    .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
+//                 \
+                    
+                    
+                    
                     NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
                         MyRoomCircle (color: ColorManager.grey2, friendName: "My \nDreamVault \n(coming \n2023)")
                     })
