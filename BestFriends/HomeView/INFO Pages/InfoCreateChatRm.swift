@@ -6,103 +6,124 @@
 //
 
 
-
 import Foundation
 import SwiftUI
-
+import AVKit
 
 struct InfoCreateChatRm: View {
-    
-    @EnvironmentObject var sessionManager: SessionManager
-    
+   
     let user: User
-    
+   
     var body: some View {
+        
         ZStack {
-
-//            ColorManager.grey4
-//                .ignoresSafeArea()
-//                .onAppear()
-    
-            Image("purpleBackground")
-                .resizable()
+            
+            ColorManager .purple1
                 .ignoresSafeArea()
-                .scaledToFill()
-
-            AdPlayerView(name: "background_4")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-//                .opacity(0.75)
-                
+                .onAppear()
+            
+        
+            
+            
             VStack {
-                Spacer()
-                    .frame(height: 15)
-
-                    Text("Create")
-                        .font(.system(size: 35))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.darkGrey)
-                    
-                    Text("NEW Chat Rooms")
-                        .font(.system(size: 35))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.darkGrey)
-                    
-              
                 
-                Text("-Tap Friend's Planet \n-Name Chat Room in popup \n-Exit app and re-enter \n      to Activate NEW Room")
-                    .font(.system(size: 17))
-                    .fontWeight(.light)
-                    .foregroundColor(ColorManager.darkGrey)
-                    .padding()
                 
-                                Spacer()
-                                .frame(height: 35)
-                
-         
-                Text("Try 'motion' background")
-                    .font(.system(size: 30))
+                Text("How Chat Works")
+                    .font(.system(size: 35))
+                    .italic()
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.darkGrey)
+                    .foregroundColor(ColorManager.pmbc_blue)
+             
                 
-                Text("in Settings")
-                    .font(.system(size: 30))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.darkGrey)
-                
-                NavigationLink(
-                    destination: ChangeChatBackgroundView(user: user),
-                    label: {
-                        Text("Settings")
-                            .fontWeight(.thin)
-                            .frame(width: 200, height: 30)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 25))
-                            .background(ColorManager.purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
-                
+                ZStack {
+                    
+                    
+                    Image(systemName: "circle.fill")
+                        .resizable()
+                        .foregroundColor(ColorManager .purple1)
+                        .frame(width: 300, height: 300)
+                        .shadow(color: .cyan, radius: 65, x: 30, y: 50)
+                        .opacity(0.95)
+                    
+                    
+                    
+                    VStack {
+                        
+                        
+                        Spacer ()
+                            .frame(height: 55)
+                        
+                        Text("Long-tap messages to:")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .blue)
+                        
+                        Text("-save 'Nice' message to SmileVault")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .blue)
+                    
+                        
+                        Text("-Report Abuse")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .blue)
+                        
+                        Spacer ()
+                            .frame(height: 15)
+                        
+                        Text("Tap [Remove Me] to be removed")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .blue)
+                        
+                        Spacer ()
+                            .frame(height: 15)
+                        
+                        Text("Tap [Lock] icon to:")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .blue)
+                        
+                        VStack {
+                        
+                            Text("-hide Chat")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color .blue)
+                            
+                            Text("-enter 4 digit PIN un-hide")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color .blue)
+                        
+                            Spacer ()
+                                .frame(height: 15)
+                            
+                            Text("*** Chat has MANUAL scroll ***")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color .blue)
+                            Spacer ()
+                                .frame(height: 100)
+                            
+                        }
+                        
+                    }
                 }
-                
-         
-                Spacer()
-                .frame(height: 100)
-                
-
-           
-               
             }
         }
-        
     }
-
-
-
-
-
+    
+}
+ 
 

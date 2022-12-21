@@ -8,51 +8,121 @@
 
 import Foundation
 import SwiftUI
-
+import AVKit
 
 struct InfoPushNotifications: View {
-    
-    @EnvironmentObject var sessionManager: SessionManager
-    
+   
+    let user: User
+   
     var body: some View {
         
         ZStack {
             
-            ColorManager.grey4
+            ColorManager .purple1
                 .ignoresSafeArea()
                 .onAppear()
+            
+        
             
             
             VStack {
                 
-                Text("Push Notification")
+                
+                Text("How Chat Works")
                     .font(.system(size: 35))
+                    .italic()
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.purple3)
-                
-                
-                
-                
-                  
-                  Text("-Tap friend's planet on homepage that sent \n      Push Notification \n\n-Tap appropriate notification from \n      dropdown menu \n\n-Then, tap friend's planet to \n      'hide' dropdown")
-                      .font(.system(size: 17))
-                      .fontWeight(.light)
-                      .foregroundColor(Color .white)
-                      .padding(30)
-                
+                    .foregroundColor(ColorManager.pmbc_blue)
              
-                Spacer()
-                    .frame(height: 100)
                 
-                
-                
-                
+                ZStack {
+                    
+                    
+                    Image(systemName: "circle.fill")
+                        .resizable()
+                        .foregroundColor(ColorManager .purple1)
+                        .frame(width: 300, height: 300)
+                        .shadow(color: .cyan, radius: 65, x: 30, y: 50)
+                        .opacity(0.95)
+                    
+                    
+                    
+                    VStack {
+                        
+                        
+                        Spacer ()
+                            .frame(height: 55)
+                        
+                        Text("Long-tap messages to:")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .blue)
+                        
+                        Text("-save 'Nice' message to SmileVault")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .blue)
+                    
+                        
+                        Text("-Report Abuse")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .blue)
+                        
+                        Spacer ()
+                            .frame(height: 15)
+                        
+                        Text("Tap [Remove Me] to be removed")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .blue)
+                        
+                        Spacer ()
+                            .frame(height: 15)
+                        
+                        Text("Tap [Lock] icon to:")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .blue)
+                        
+                        VStack {
+                        
+                            Text("-hide Chat")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color .blue)
+                            
+                            Text("-enter 4 digit PIN un-hide")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color .blue)
+                        
+                            Spacer ()
+                                .frame(height: 15)
+                            
+                            Text("*** Chat has MANUAL scroll ***")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color .blue)
+                            Spacer ()
+                                .frame(height: 100)
+                            
+                        }
+                        
+                    }
+                }
             }
         }
-        
     }
+    
 }
-
-
-
+ 

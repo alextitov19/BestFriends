@@ -50,7 +50,7 @@ struct InfoViewPlanet: View {
                 
                 VStack {
                     NavigationLink(
-                        destination: InfoAddFriends(),
+                        destination: InfoAddFriends(user: user),
                         label: {
                             Text("Add Friends")
                                 .fontWeight(.thin)
@@ -88,7 +88,7 @@ struct InfoViewPlanet: View {
                     
                     
                     NavigationLink(
-                        destination: InfoInsideChat(),
+                        destination: InfoInsideChat(user: user),
                         label: {
                             Text("Inside Chat")
                                 .fontWeight(.thin)
@@ -106,7 +106,7 @@ struct InfoViewPlanet: View {
                         .frame(height: 20)
                     
                     NavigationLink(
-                        destination: InfoPushNotifications(),
+                        destination: InfoPushNotifications(user: user),
                         label: {
                             Text("How Push Notifications Work")
                                 .fontWeight(.thin)
@@ -126,7 +126,7 @@ struct InfoViewPlanet: View {
                     
                     NavigationLink(
                         
-                        destination: SettingsNotificationsView(),
+                        destination: SettingsNotificationsView(user: user),
                         label: {
                             Text("Why keep Notifications 'ON'?")
                                 .fontWeight(.thin)

@@ -143,7 +143,7 @@ struct MyAccountView: View {
                     Divider()
                     
                     NavigationLink(
-                        destination: SettingsNotificationsView(),
+                        destination: SettingsNotificationsView(user: user),
                         label: {
                             HStack {
                                 Text("Change Notifications Status")

@@ -9,49 +9,121 @@
 
 import Foundation
 import SwiftUI
-
+import AVKit
 
 struct InfoInsideChat: View {
-    
-    @EnvironmentObject var sessionManager: SessionManager
-    
+   
+    let user: User
+   
     var body: some View {
         
-    ZStack {
-
+        ZStack {
             
-            ColorManager.grey4
+            ColorManager .purple1
                 .ignoresSafeArea()
                 .onAppear()
-               
-        VStack {
-          
-           Text("Inside Chat Rooms")
-               .font(.system(size: 35))
-               .fontWeight(.light)
-               .multilineTextAlignment(.center)
-               .foregroundColor(ColorManager.purple3)
+            
+        
             
             
-            
-              
-              Text("-Long-tap messages to save to \n      'Say Something Nice' feature \n\n-Long-tap messages to 'Report Abuse' \n\n\n-Tap [Remove Me] to be removed from room \n\n\n-Tap 'Lock' icon to Hide Chat \n      To 'Un-Hide' Chat, enter 4 digit PIN")
-                  .font(.system(size: 17))
-                  .fontWeight(.light)
-                  .foregroundColor(Color .white)
-                  .padding()
-            
-                Spacer()
-                .frame(height: 100)
+            VStack {
                 
-
-           
-               
+                
+                Text("How Chat Works")
+                    .font(.system(size: 35))
+                    .italic()
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.pmbc_blue)
+             
+                
+                ZStack {
+                    
+                    
+                    Image(systemName: "circle.fill")
+                        .resizable()
+                        .foregroundColor(ColorManager .purple1)
+                        .frame(width: 300, height: 300)
+                        .shadow(color: .cyan, radius: 65, x: 30, y: 50)
+                        .opacity(0.95)
+                    
+                    
+                    
+                    VStack {
+                        
+                        
+                        Spacer ()
+                            .frame(height: 55)
+                        
+                        Text("Long-tap messages to:")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .blue)
+                        
+                        Text("-save 'Nice' message to SmileVault")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .blue)
+                    
+                        
+                        Text("-Report Abuse")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .blue)
+                        
+                        Spacer ()
+                            .frame(height: 15)
+                        
+                        Text("Tap [Remove Me] to be removed")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .blue)
+                        
+                        Spacer ()
+                            .frame(height: 15)
+                        
+                        Text("Tap [Lock] icon to:")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .blue)
+                        
+                        VStack {
+                        
+                            Text("-hide Chat")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color .blue)
+                            
+                            Text("-enter 4 digit PIN un-hide")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color .blue)
+                        
+                            Spacer ()
+                                .frame(height: 15)
+                            
+                            Text("*** Chat has MANUAL scroll ***")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color .blue)
+                            Spacer ()
+                                .frame(height: 100)
+                            
+                        }
+                        
+                    }
+                }
             }
         }
-        
     }
+    
 }
-
-
-
+ 
