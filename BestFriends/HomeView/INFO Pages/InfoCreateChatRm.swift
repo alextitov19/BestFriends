@@ -34,7 +34,7 @@ struct InfoCreateChatRm: View {
                     .italic()
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.pmbc_blue)
+                    .foregroundColor(ColorManager.grey2)
              
                 
                 ZStack {
@@ -44,7 +44,7 @@ struct InfoCreateChatRm: View {
                         .resizable()
                         .foregroundColor(ColorManager .purple1)
                         .frame(width: 400, height: 400)
-                        .shadow(color: .cyan, radius: 65, x: 30, y: 50)
+                        .shadow(color: .purple, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
                     
                     
@@ -60,13 +60,13 @@ struct InfoCreateChatRm: View {
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple4)
+                            .foregroundColor(ColorManager.grey3)
                         Text("something happen changing your day.")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple4)
+                            .foregroundColor(ColorManager.grey3)
                         
                         Spacer ()
                             .frame(height: 15)
@@ -76,7 +76,7 @@ struct InfoCreateChatRm: View {
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple4)
+                            .foregroundColor(ColorManager.grey3)
                         
 //                        Text("and send brief reason.")
 //                            .italic()
@@ -93,7 +93,7 @@ struct InfoCreateChatRm: View {
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple4)
+                            .foregroundColor(ColorManager.grey3)
 //
 //
 //                        Spacer ()

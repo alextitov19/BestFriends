@@ -35,7 +35,7 @@ struct InfoInsideChat: View {
                     .italic()
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.pmbc_blue)
+                    .foregroundColor(ColorManager.grey2)
              
                 
                 ZStack {
@@ -45,8 +45,8 @@ struct InfoInsideChat: View {
                         .resizable()
                         .foregroundColor(Color .pink)
                         .frame(width: 400, height: 400)
-                        .shadow(color: .cyan, radius: 65, x: 30, y: 50)
-                        .opacity(0.5)
+                        .shadow(color: .red, radius: 65, x: 30, y: 50)
+                        .opacity(0.8)
                     
                     
                     
@@ -56,59 +56,39 @@ struct InfoInsideChat: View {
                         Spacer ()
                             .frame(height: 60)
                         
-                        Text("If friend having a bad day")
+                        Text("If your friend is having a bad day")
+                            .italic()
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .white)
+                        
+                        Text("ask them to hold their iPnone,")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color .white)
                      
-                        Text("holds thier phone to their heart,")
+                        Text("to their heart,")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple4)
+                            .foregroundColor(Color .white)
                         
                         Spacer ()
                             .frame(height: 15)
-                        
-                        Text("it vibrates for a few seconds.")
+
+                        Text("it will vibrate for a few seconds.")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple4)
+                            .foregroundColor(Color .white)
                         
-//                        Text("and send brief reason.")
-//                            .italic()
-//                            .font(.system(size: 20))
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(ColorManager.purple4)
-                        
-                        Spacer ()
-                            .frame(height: 15)
-                        
-                        Text("Send HUG via push notification.")
-                            .italic()
-                            .font(.system(size: 20))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple4)
-//
-//
-//                        Spacer ()
-//                            .frame(height: 20)
-//                        Text("Tap image to see next friend's image.")
-//                            .italic()
-//                            .font(.system(size: 20))
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(ColorManager.purple4)
-//
-//
-                        
+
+                  
                         
                            Spacer ()
                                 .frame(height: 100)
