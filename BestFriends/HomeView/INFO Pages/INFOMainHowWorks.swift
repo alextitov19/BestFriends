@@ -135,7 +135,7 @@ struct INFOMainHowWorks: View {
                         
                         destination: SettingsNotificationsView(user: user),
                         label: {
-                            Text("Friend Drama")
+                            Text("Friendship Drama")
                                 .fontWeight(.thin)
                                 .foregroundColor(Color.white)
                                 .frame(width: 310, height: 40)

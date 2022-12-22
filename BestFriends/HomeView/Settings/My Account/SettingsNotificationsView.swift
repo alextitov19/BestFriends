@@ -29,12 +29,12 @@ struct SettingsNotificationsView: View {
             VStack {
                 
                 
-                Text("How Chat Works")
+                Text("Friendship Drama")
                     .font(.system(size: 35))
                     .italic()
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.pmbc_blue)
+                    .foregroundColor(ColorManager.grey2)
              
                 
                 ZStack {
@@ -43,7 +43,7 @@ struct SettingsNotificationsView: View {
                     Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(ColorManager .purple1)
-                        .frame(width: 300, height: 300)
+                        .frame(width: 400, height: 400)
                         .shadow(color: .cyan, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
                     
@@ -53,72 +53,57 @@ struct SettingsNotificationsView: View {
                         
                         
                         Spacer ()
-                            .frame(height: 55)
+                            .frame(height: 100)
                         
-                        Text("Long-tap messages to:")
-                            .font(.system(size: 15))
+                        Text("Did a friend do or say something")
+                            .italic()
+                            .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .blue)
+                            .foregroundColor(ColorManager.grey3)
                         
-                        Text("-save 'Nice' message to SmileVault")
-                            .font(.system(size: 15))
+                        Text("that's been bugging you?")
+                            .italic()
+                            .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .blue)
+                            .foregroundColor(ColorManager.grey3)
+                        
+                        Spacer ()
+                            .frame(height: 15)
+                        
+                        Text("Join users worldwide confronting this")
+                            .italic()
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager.grey3)
+                        
                     
                         
-                        Text("-Report Abuse")
-                            .font(.system(size: 15))
+                        Text("Right NOW!")
+                            .italic()
+                            .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .blue)
+                            .foregroundColor(ColorManager.grey3)
+                        
+                        
                         
                         Spacer ()
-                            .frame(height: 15)
-                        
-                        Text("Tap [Remove Me] to be removed")
-                            .font(.system(size: 15))
+                             .frame(height: 70)
+                        Text("There's strength in numbers")
+                            .italic()
+                            .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .blue)
+                            .foregroundColor(ColorManager.grey3)
                         
-                        Spacer ()
-                            .frame(height: 15)
+                   
                         
-                        Text("Tap [Lock] icon to:")
-                            .font(.system(size: 15))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color .blue)
-                        
-                        VStack {
-                        
-                            Text("-hide Chat")
-                                .font(.system(size: 15))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color .blue)
-                            
-                            Text("-enter 4 digit PIN un-hide")
-                                .font(.system(size: 15))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color .blue)
-                        
-                            Spacer ()
-                                .frame(height: 15)
-                            
-                            Text("*** Chat has MANUAL scroll ***")
-                                .font(.system(size: 15))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color .blue)
-                            Spacer ()
+                           Spacer ()
                                 .frame(height: 100)
-                            
-                        }
-                        
+                   
                     }
                 }
             }
@@ -127,3 +112,6 @@ struct SettingsNotificationsView: View {
     
 }
  
+
+
+

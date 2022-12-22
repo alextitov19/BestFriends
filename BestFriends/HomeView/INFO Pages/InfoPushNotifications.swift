@@ -52,9 +52,9 @@ struct InfoPushNotifications: View {
                         
                         
                         Spacer ()
-                            .frame(height: 60)
+                            .frame(height: 100)
                         
-                        Text("Little tired of toxic comments on social media")
+                        Text("Little tired of toxic comments")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
@@ -68,7 +68,8 @@ struct InfoPushNotifications: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.grey3)
                         
-                        
+                        Spacer ()
+                            .frame(height: 15)
                         
                         Text("Say something 'Nice' to a friend")
                             .italic()
@@ -78,37 +79,23 @@ struct InfoPushNotifications: View {
                             .foregroundColor(ColorManager.grey3)
                         
                         Spacer ()
-                            .frame(height: 15)
+                            .frame(height: 70)
                         
-                        Text("They may say something 'Nice' back")
+                        Text("They may say")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.grey3)
                         
-//                        Text("and send brief reason.")
-//                            .italic()
-//                            .font(.system(size: 20))
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(ColorManager.purple4)
+                        Text("something 'Nice' back")
+                            .italic()
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager.grey3)
                         
-                     
-                  
-//
-//
-//                        Spacer ()
-//                            .frame(height: 20)
-//                        Text("Tap image to see next friend's image.")
-//                            .italic()
-//                            .font(.system(size: 20))
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(ColorManager.purple4)
-//
-//
-                        
+                   
                         
                            Spacer ()
                                 .frame(height: 100)
