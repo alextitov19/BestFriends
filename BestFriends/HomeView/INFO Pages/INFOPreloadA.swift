@@ -60,7 +60,7 @@ struct INFOPreloadA: View {
 //                
                 
                 NavigationLink(destination: INFOMainHowWorks(user: user), label: {
-                    InfoCircle (color: ColorManager .purple1, friendName: "How this \nworks \n\nmore...")
+                    InfoCircle (color: ColorManager .pmbc_green, friendName: "How World \nFriendGroups \nworks \n\nmore...")
                 })
                 .offset(x: showItems ? 30 : 0, y: showItems ? -310: 0)
                 .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
@@ -178,7 +178,7 @@ struct INFOPreloadA: View {
                 
                 Image(systemName: "circle.fill")
                     .resizable()
-                    .foregroundColor(ColorManager .purple2)
+                    .foregroundColor(color)
                     .frame(width: 150, height: 150)
                     .shadow(color: ColorManager .grey3, radius: 5, x: 5, y: 5)
                     .opacity(0.50)

@@ -28,6 +28,22 @@ struct INFOMainHowWorks: View {
             
             VStack {
                 
+                
+                
+                Text("Nightly at 8pm EST, users everywhere are taking advantage of the features below to build stronger, happier, lasting friendships at the same time - together.")
+                    .italic()
+                    .font(.system(size: 20))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.purple4)
+                    .padding(20)
+                
+                
+                
+                
+                
+                
+                
                 Text("Features Walk-though")
                     .font(.system(size: 30, weight: .bold))
                     .foregroundColor(ColorManager .grey1)
@@ -174,12 +190,7 @@ struct INFOMainHowWorks: View {
 
 
 //
-//                    Text("We ask for your patience.")
-//                        .italic()
-//                        .font(.system(size: 20))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.red)
+
 //
 //
                     
