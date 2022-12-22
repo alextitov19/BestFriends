@@ -26,9 +26,10 @@ struct InfoCreateChatRm: View {
             
             
             VStack {
+          
                 
                 
-                Text("How Chat Works")
+                Text("Set my 'Vibe'")
                     .font(.system(size: 35))
                     .italic()
                     .fontWeight(.light)
@@ -42,7 +43,7 @@ struct InfoCreateChatRm: View {
                     Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(ColorManager .purple1)
-                        .frame(width: 300, height: 300)
+                        .frame(width: 400, height: 400)
                         .shadow(color: .cyan, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
                     
@@ -52,72 +53,64 @@ struct InfoCreateChatRm: View {
                         
                         
                         Spacer ()
-                            .frame(height: 55)
+                            .frame(height: 60)
                         
-                        Text("Long-tap messages to:")
-                            .font(.system(size: 15))
+                        Text("Let your friends know")
+                            .italic()
+                            .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .blue)
-                        
-                        Text("-save 'Nice' message to SmileVault")
-                            .font(.system(size: 15))
+                            .foregroundColor(ColorManager.purple4)
+                        Text("something happen changing your day.")
+                            .italic()
+                            .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .blue)
-                    
-                        
-                        Text("-Report Abuse")
-                            .font(.system(size: 15))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color .blue)
+                            .foregroundColor(ColorManager.purple4)
                         
                         Spacer ()
                             .frame(height: 15)
                         
-                        Text("Tap [Remove Me] to be removed")
-                            .font(.system(size: 15))
+                        Text("Select your new 'Vibe'")
+                            .italic()
+                            .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .blue)
+                            .foregroundColor(ColorManager.purple4)
+                        
+//                        Text("and send brief reason.")
+//                            .italic()
+//                            .font(.system(size: 20))
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(ColorManager.purple4)
                         
                         Spacer ()
                             .frame(height: 15)
                         
-                        Text("Tap [Lock] icon to:")
-                            .font(.system(size: 15))
+                        Text("Alert friend(s) via push notification.")
+                            .italic()
+                            .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .blue)
+                            .foregroundColor(ColorManager.purple4)
+//
+//
+//                        Spacer ()
+//                            .frame(height: 20)
+//                        Text("Tap image to see next friend's image.")
+//                            .italic()
+//                            .font(.system(size: 20))
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(ColorManager.purple4)
+//
+//
                         
-                        VStack {
                         
-                            Text("-hide Chat")
-                                .font(.system(size: 15))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color .blue)
-                            
-                            Text("-enter 4 digit PIN un-hide")
-                                .font(.system(size: 15))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color .blue)
-                        
-                            Spacer ()
-                                .frame(height: 15)
-                            
-                            Text("*** Chat has MANUAL scroll ***")
-                                .font(.system(size: 15))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color .blue)
-                            Spacer ()
+                           Spacer ()
                                 .frame(height: 100)
-                            
-                        }
-                        
+                   
                     }
                 }
             }

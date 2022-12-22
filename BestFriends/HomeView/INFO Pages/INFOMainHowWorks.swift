@@ -59,7 +59,7 @@ struct INFOMainHowWorks: View {
                     NavigationLink(
                         destination: InfoAddFriends(user: user),
                         label: {
-                            Text("FriendGroup PhotoPOP")
+                            Text("PhotoPOP")
                                 .fontWeight(.thin)
                                 .frame(width: 310, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -115,7 +115,7 @@ struct INFOMainHowWorks: View {
                     NavigationLink(
                         destination: InfoPushNotifications(user: user),
                         label: {
-                            Text("Say Something 'Nice'")
+                            Text("Something 'Nice'")
                                 .fontWeight(.thin)
                                 .frame(width: 310, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -135,7 +135,7 @@ struct INFOMainHowWorks: View {
                         
                         destination: SettingsNotificationsView(user: user),
                         label: {
-                            Text("FriendGroup Drama")
+                            Text("Friend Drama")
                                 .fontWeight(.thin)
                                 .foregroundColor(Color.white)
                                 .frame(width: 310, height: 40)

@@ -28,7 +28,7 @@ struct InfoAddFriends: View {
             VStack {
                 
                 
-                Text("How Chat Works")
+                Text("PhotoPOP")
                     .font(.system(size: 35))
                     .italic()
                     .fontWeight(.light)
@@ -42,7 +42,7 @@ struct InfoAddFriends: View {
                     Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(ColorManager .purple1)
-                        .frame(width: 300, height: 300)
+                        .frame(width: 400, height: 400)
                         .shadow(color: .cyan, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
                     
@@ -52,68 +52,52 @@ struct InfoAddFriends: View {
                         
                         
                         Spacer ()
-                            .frame(height: 55)
+                            .frame(height: 30)
                         
-                        Text("Long-tap messages to:")
-                            .font(.system(size: 15))
+                        Text("It's cool.")
+                            .italic()
+                            .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .blue)
-                        
-                        Text("-save 'Nice' message to SmileVault")
-                            .font(.system(size: 15))
+                            .foregroundColor(ColorManager.purple4)
+                        Text("Just shake your iPhone (while in app).")
+                            .italic()
+                            .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .blue)
-                    
-                        
-                        Text("-Report Abuse")
-                            .font(.system(size: 15))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color .blue)
+                            .foregroundColor(ColorManager.purple4)
                         
                         Spacer ()
-                            .frame(height: 15)
-                        
-                        Text("Tap [Remove Me] to be removed")
-                            .font(.system(size: 15))
+                            .frame(height: 10)
+                        Text("Your friend's image")
+                            .italic()
+                            .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .blue)
+                            .foregroundColor(ColorManager.purple4)
                         
+                     
+                        Text("POPs up full-screen.")
+                            .italic()
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager.purple4)
+
+
                         Spacer ()
-                            .frame(height: 15)
-                        
-                        Text("Tap [Lock] icon to:")
-                            .font(.system(size: 15))
+                            .frame(height: 20)
+                        Text("Tap image to see next friend's image.")
+                            .italic()
+                            .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .blue)
+                            .foregroundColor(ColorManager.purple4)
+                           
                         
-                        VStack {
                         
-                            Text("-hide Chat")
-                                .font(.system(size: 15))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color .blue)
-                            
-                            Text("-enter 4 digit PIN un-hide")
-                                .font(.system(size: 15))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color .blue)
                         
-                            Spacer ()
-                                .frame(height: 15)
-                            
-                            Text("*** Chat has MANUAL scroll ***")
-                                .font(.system(size: 15))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color .blue)
-                            Spacer ()
+                           Spacer ()
                                 .frame(height: 100)
                             
                         }
@@ -124,5 +108,5 @@ struct InfoAddFriends: View {
         }
     }
     
-}
+
  
