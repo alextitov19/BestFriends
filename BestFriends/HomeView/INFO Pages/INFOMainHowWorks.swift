@@ -30,18 +30,42 @@ struct INFOMainHowWorks: View {
                 
                 
                 
-                Text("For just 5 minutes, nightly at 8pm EST, users everywhere are taking advantage of the features below to build stronger, happier, lasting friendships.")
+                Text("For just 5 minutes, nightly at 8pm EST,")
                     .italic()
                     .font(.system(size: 20))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.purple4)
-                    .padding(20)
                 
                 
+                Text("users everywhere are benefiting from")
+                    .italic()
+                    .font(.system(size: 20))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.purple4)
+                 
                 
                 
+                Text("building ...")
+                    .italic()
+                    .font(.system(size: 20))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.purple4)
+           
                 
+                
+                Text("stronger, happier, lasting friendships :)")
+                
+                    .font(.system(size: 20))
+                    .fontWeight(.regular)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.purple5)
+             
+                
+                Spacer()
+                    .frame(height: 40)
                 
                 
                 Text("Features Walk-though")
@@ -233,7 +257,7 @@ struct INFOMainHowWorks: View {
 
                         Text("Report Issues")
                             .fontWeight(.thin)
-                            .frame(width: 250, height: 40)
+                            .frame(width: 200, height: 30)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 25))
                             .background(ColorManager.pmbc_green)
