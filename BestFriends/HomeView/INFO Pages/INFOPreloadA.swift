@@ -35,10 +35,10 @@ struct INFOPreloadA: View {
                 .opacity(0.5)
             
             
-            
-            AdPlayerView(name: "PaperAirplanes")
-                .ignoresSafeArea()
-                .blendMode(.screen)
+//            
+//            AdPlayerView(name: "PaperAirplanes")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
             
             
             ZStack{

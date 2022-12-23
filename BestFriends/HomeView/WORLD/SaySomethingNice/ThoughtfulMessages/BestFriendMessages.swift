@@ -34,7 +34,7 @@ struct BestFriendMessages: View {
                 .ignoresSafeArea()
                 .scaledToFill()
 
-            AdPlayerView(name: "PaperAirplanes")
+            AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .onAppear(perform: createPlanets)
