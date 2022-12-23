@@ -139,16 +139,21 @@ struct StartHere1: View {
                             .foregroundColor(ColorManager .grey4)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                        Text("'survey - get stickers'")
+                      
+//                       
+//                        Text("'happier friendships'")
+//                            .font(.system(size: 20))
+//                            .italic()
+//                            .foregroundColor(ColorManager .grey4)
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+                        
+                        Text("'who's using BestFriends'")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(ColorManager .grey4)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                       
-                   
-                        
-                        
                         Spacer ()
                             .frame(height: 60)
                         
