@@ -34,6 +34,18 @@ struct Friend1VaultPractice: View {
                 .onAppear()
 //
             
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+                .opacity(0.5)
+            
+            
+            
+            AdPlayerView(name: "MyRoom5")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+            
             
             VStack {
                 
