@@ -73,32 +73,7 @@ struct StartHere1: View {
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
                 
                 
-                //
-                //
-                //                NavigationLink(destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                //                    StartHereCircle (color: ColorManager.grey1, friendName: "My \nRoom")
-                //                })
-                //                .offset(x: showItems ? 80 : 0, y: showItems ? 250: 0)
-                //                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-                //
-                
-                
-                //
-                //                NavigationLink(destination: WhyFiveFriends(), label: {
-                //                    StartHereCircle (color: ColorManager.pmbc_blue, friendName: "Why \nonly 5 \nfriends?")
-                //                })
-                //                .offset(x: showItems ? -80 : 0, y: showItems ? -130: 0)
-                //                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-                //
-                
-                //
-                //                NavigationLink(destination: TeenBoysUsing(), label: {
-                //                    BuggingCircle (color: ColorManager.orange3, friendName: "Are \nteen boys \nusing app?")
-                //                })
-                //                .offset(x: showItems ? -70 : 0, y: showItems ? 210: 0)
-                //
-                
-                
+             
                 
                 
                 
@@ -108,25 +83,26 @@ struct StartHere1: View {
                     NavigationLink(destination: ShaylaPage(user: user), label: {
                         StartHereCircle (color: ColorManager.grey2, friendName: "Envisioned \nby \nTeens")
                     })
-                    .offset(x: showItems ? -120 : 0, y: showItems ? -140: 0)
+                    .offset(x: showItems ? 80 : 0, y: showItems ? 280: 0)
+                   
                     
+              
+                
+                NavigationLink(destination: INFOPreload2(user: user), label: {
+                    StartHereCircle (color: ColorManager.purple1, friendName: "Enjoying \nhappier \nFriendships")
+                })
+                .offset(x: showItems ? -120 : 0, y: showItems ? -140: 0)
+
+                
+                
                     
-                    
-//                    NavigationLink(destination: InfoViewPlanet(user: user), label: {
-//                        StartHereCircle (color: ColorManager.purple4, friendName: "Walk-through")
-//                    })
-//                    .offset(x: showItems ? 140 : 0, y: showItems ? -140: 0)
-                    
-                    
-                    
-//
-                    NavigationLink(destination:  SurveyStickersPreload(), label: {
-                        StartHereCircle (color: ColorManager.purple2, friendName: "Take \n Survey, \nget \nSTICKERS")
-                    })
-                    .offset(x: showItems ? 140 : 0, y: showItems ? -120: 0)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-//
-                    
+
+                
+                NavigationLink(destination: INFOPreload4(user: user, friends: friends, groups: groups), label: {
+                    StartHereCircle (color: ColorManager.purple3, friendName: "See who's\nusing \nBestFriends")
+                })
+                .offset(x: showItems ? 140 : 0, y: showItems ? -120: 0)
+              
                     
                     
                     
@@ -143,7 +119,7 @@ struct StartHere1: View {
                         
                         
                         Spacer ()
-                            .frame(height: 250)
+                            .frame(height: 200)
                         
                         Text("'settings'")
                             .font(.system(size: 20))
@@ -170,22 +146,7 @@ struct StartHere1: View {
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                        
-                        
-//                        Text("'walk-through'")
-//                            .font(.system(size: 20))
-//                            .italic()
-//                            .foregroundColor(ColorManager .grey4)
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//
-//                        Text("'get cool stickers'")
-//                            .font(.system(size: 20))
-//                            .italic()
-//                            .foregroundColor(ColorManager .grey4)
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-                        
-                        
+                   
                         
                         
                         Spacer ()

@@ -30,7 +30,7 @@ struct INFOMainHowWorks: View {
                 
                 
                 
-                Text("Nightly at 8pm EST, users everywhere are taking advantage of the features below to build stronger, happier, lasting friendships at the same time - together.")
+                Text("For just 5 minutes, nightly at 8pm EST, users everywhere are taking advantage of the features below to build stronger, happier, lasting friendships.")
                     .italic()
                     .font(.system(size: 20))
                     .fontWeight(.light)
