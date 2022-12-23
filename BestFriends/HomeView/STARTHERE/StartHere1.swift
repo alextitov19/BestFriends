@@ -83,7 +83,7 @@ struct StartHere1: View {
                     NavigationLink(destination: ShaylaPage(user: user), label: {
                         StartHereCircle (color: ColorManager.grey2, friendName: "Envisioned \nby \nTeens")
                     })
-                    .offset(x: showItems ? 80 : 0, y: showItems ? 280: 0)
+                    .offset(x: showItems ? -80 : 0, y: showItems ? -150: 0)
                    
                     
               
@@ -119,7 +119,7 @@ struct StartHere1: View {
                         
                         
                         Spacer ()
-                            .frame(height: 200)
+                            .frame(height: 260)
                         
                         Text("'settings'")
                             .font(.system(size: 20))
