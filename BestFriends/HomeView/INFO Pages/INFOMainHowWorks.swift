@@ -63,10 +63,11 @@ struct INFOMainHowWorks: View {
                                 .resizable()
                                 .foregroundColor(ColorManager .purple2)
                                 .frame(width: 45, height: 45)
-                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
                                 .opacity(0.95)
                             
-                            Image("iconNice35")
+                            Image("iconPhone40")
                         }
                         NavigationLink(
                             destination: InfoAddFriends(user: user),
@@ -94,10 +95,11 @@ struct INFOMainHowWorks: View {
                                 .resizable()
                                 .foregroundColor(ColorManager .purple2)
                                 .frame(width: 45, height: 45)
-                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
                                 .opacity(0.95)
                             
-                            Image("iconNice35")
+                            Image("iconVibes37")
                         }
                         
                         NavigationLink(
@@ -125,10 +127,11 @@ struct INFOMainHowWorks: View {
                                 .resizable()
                                 .foregroundColor(ColorManager .purple2)
                                 .frame(width: 45, height: 45)
-                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
                                 .opacity(0.95)
                             
-                            Image("iconNice35")
+                            Image("iconHug40")
                         }
                         
                         
@@ -156,7 +159,8 @@ struct INFOMainHowWorks: View {
                                 .resizable()
                                 .foregroundColor(ColorManager .purple2)
                                 .frame(width: 45, height: 45)
-                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
                                 .opacity(0.95)
                             
                             Image("iconNice35")
@@ -188,10 +192,12 @@ struct INFOMainHowWorks: View {
                                 .resizable()
                                 .foregroundColor(ColorManager .purple2)
                                 .frame(width: 45, height: 45)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                               
                                 .shadow(color: .purple, radius: 65, x: 30, y: 50)
                                 .opacity(0.95)
                             
-                            Image("iconNice35")
+                            Image("iconFight35")
                         }
                         
                         
