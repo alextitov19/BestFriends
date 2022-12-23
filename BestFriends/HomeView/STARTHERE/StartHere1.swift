@@ -87,13 +87,13 @@ struct StartHere1: View {
                    
                     
               
-                
-                NavigationLink(destination: INFOPreload2(user: user), label: {
-                    StartHereCircle (color: ColorManager.purple1, friendName: "Enjoying \nhappier \nFriendships")
-                })
-                .offset(x: showItems ? -120 : 0, y: showItems ? -140: 0)
-
-                
+//
+//                NavigationLink(destination: INFOPreload2(user: user), label: {
+//                    StartHereCircle (color: ColorManager.purple1, friendName: "Enjoying \nhappier \nFriendships")
+//                })
+//                .offset(x: showItems ? -120 : 0, y: showItems ? -140: 0)
+//
+//
                 
                     
 
@@ -140,7 +140,7 @@ struct StartHere1: View {
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                       
-//                       
+//
 //                        Text("'happier friendships'")
 //                            .font(.system(size: 20))
 //                            .italic()
