@@ -1062,6 +1062,7 @@
 		CF5263FB266F1FF600243DD7 /* Ad Videos */ = {
 			isa = PBXGroup;
 			children = (
+				CF6503FF28864AF00092EEB9 /* background_1.mp4 */,
 			);
 			path = "Ad Videos";
 			sourceTree = "<group>";
@@ -1069,7 +1070,6 @@
 		CF5263FC266F201000243DD7 /* Background Videos */ = {
 			isa = PBXGroup;
 			children = (
-				CF6503FF28864AF00092EEB9 /* background_1.mp4 */,
 				CF5263D6266477C600243DD7 /* background_4.mp4 */,
 				7A78232926B2419600CA76FC /* background_5.mp4 */,
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
