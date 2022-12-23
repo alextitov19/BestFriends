@@ -30,29 +30,29 @@ struct INFOMainHowWorks: View {
                 
                 
                 
-                Text("For just 5 minutes, nightly at 8pm EST,")
+                Text("For just 5 minutes - nightly at 8pm EST,")
                     .italic()
                     .font(.system(size: 20))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.purple4)
+                    .foregroundColor(ColorManager.grey3)
                 
                 
-                Text("users everywhere are benefiting from")
+                Text("users everywhere are excited from")
                     .italic()
                     .font(.system(size: 20))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.purple4)
+                    .foregroundColor(ColorManager.grey3)
                  
                 
                 
                 Text("building ...")
-                    .italic()
+                    
                     .font(.system(size: 20))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.purple4)
+                    .foregroundColor(ColorManager.grey3)
            
                 
                 
@@ -61,7 +61,7 @@ struct INFOMainHowWorks: View {
                     .font(.system(size: 20))
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.purple5)
+                    .foregroundColor(ColorManager.purple4)
              
                 
                 Spacer()
