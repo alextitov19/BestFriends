@@ -21,57 +21,63 @@ struct SendSongChat2: View {
     @State private var customMessage = ""
     @State private var colorChangeTap: String = ""
 
-
- 
-
-
-
-
     var body: some View {
         ZStack {
-            ColorManager.purple4
+            
+            ColorManager.purple1
                 .ignoresSafeArea()
                 .onAppear()
-
-
+            
             VStack {
-                
 
-               
-
-                  Text("Be a BestFriend")
-                      .font(.system(size: 40))
-                      .foregroundColor(.white)
-                      .fontWeight(.ultraLight)
+                Spacer()
+                    .frame(height: 25)
                 
-                Text("Send a song ")
-                    .font(.system(size: 25))
-                    .foregroundColor(.white)
+                Text("You know that song \nyou always listen to when")
+                    .font(.system(size: 20))
                     .fontWeight(.ultraLight)
-                
-                  Text("you listen to")
-                      .font(.system(size: 25))
-                      .foregroundColor(.white)
-                      .fontWeight(.ultraLight)
-                
-                  Text("when your mood")
-                      .font(.system(size: 25))
-                      .foregroundColor(.white)
-                      .fontWeight(.ultraLight)
-                
-                Text("matches theirs")
-                    .font(.system(size: 25))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                  
-              
+                    .foregroundColor(ColorManager .grey3)
+                    .multilineTextAlignment(.center)
+          
+                HStack {
+                 
+                    VStack {
+                        Text("your 'Vibe'")
+                            .font(.system(size: 30))
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager .grey3)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        Text("matches")
+                            .font(.system(size: 30))
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager .grey3)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        Text("your friend's")
+                            .font(.system(size: 30))
+                        
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager .grey3)
+                            .multilineTextAlignment(.center)
+                    }
+                    
+                    
+                    Image("book200")
+                        .resizable()
+                        .frame(width: 180, height: 180)
+                    
+                }
+             
         VStack {
 
             TextField("", text: $customMessage)
                 .placeholder(when: customMessage.isEmpty) {
                     HStack {
-                        Text("Type name of song")
-                        .foregroundColor(.white)
+                        Text("Type name of song here ...")
+                            .foregroundColor(ColorManager.grey4)
                         .fontWeight(.thin)
 
                         Spacer()
@@ -82,11 +88,11 @@ struct SendSongChat2: View {
                .onReceive(Just(customMessage)) { _ in limitText(65) }
 
 
-                .padding()
-                .overlay(RoundedRectangle(cornerRadius: 20)
+                .padding(40)
+                .overlay(RoundedRectangle(cornerRadius: 10)
                     .stroke(Color.purple)
                     .frame(height: 40)
-                    .padding(.horizontal, 10)
+                    .padding(.horizontal, 20)
                 )
 
 
