@@ -377,7 +377,7 @@ struct HomeView: View {
                             
                             NavigationLink(destination: SendSongPush(user: homeData!.user, friends: homeData!.friends),
                                            label: {
-                                Text("Found new song / artist")
+                                Text("Friend found new song")
                                     .fontWeight(.light)
                                     .frame(width: 240, height: 30)
                                     .foregroundColor(.white)

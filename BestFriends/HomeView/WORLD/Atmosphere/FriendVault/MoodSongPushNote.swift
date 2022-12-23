@@ -28,17 +28,9 @@ struct SendSongPushNote: View {
         
         ZStack {
             
-            
-            Image("holding iphone")
-                .resizable()
+            ColorManager.purple1
                 .ignoresSafeArea()
-                .scaledToFill()
-            
-            //
-            //            AdPlayerView(name: "Wind2")
-            //                .ignoresSafeArea()
-            //                .blendMode(.screen)
-            
+                .onAppear()
             
             VStack{
                 
@@ -49,8 +41,7 @@ struct SendSongPushNote: View {
                     VStack {
                         
                         
-                        Spacer()
-                            .frame(height: 390)
+                   
                         
                                                 NavigationLink(destination:  HomeView(), label: {
                                                     SomethingNiceCircle (color: ColorManager.purple4, friendName: "Hope this \nsong helps!")
@@ -65,7 +56,9 @@ struct SendSongPushNote: View {
 //                            .italic()
 //                            .foregroundColor(Color.black)
                         
-                        
+                    Spacer()
+                        .frame(height: 40)
+                    
                         VStack {
                             
                             
@@ -73,14 +66,14 @@ struct SendSongPushNote: View {
                             
                             HStack {
                                 
-                                Text("select >")
-                                    .fontWeight(.thin)
-                                    .frame(width: 100, height: 30)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 20))
-                                    .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-                                    .cornerRadius(25)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                Text("select >")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 100, height: 30)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 20))
+//                                    .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+//                                    .cornerRadius(25)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 //                                })
                                 
                                 if friends.count > 0 {
@@ -168,20 +161,20 @@ struct SendSongPushNote: View {
                                    label: {
                                 Text("SHARE")
                                     .fontWeight(.thin)
-                                    .frame(width: 100, height: 40)
+                                    .frame(width: 100, height: 30)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 30))
                                     .background(shareColor)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    .alert("Push Notifications sent successfully", isPresented: $showingAlert) {
+                                    .alert("Your song is on it's way", isPresented: $showingAlert) {
                                         Button("OK", role: .cancel) { }
                                     }
                             })
                             
                             
                             Spacer()
-                                .frame(height: 100)
+                                .frame(height: 0)
                             
                             
                             
@@ -199,7 +192,7 @@ struct SendSongPushNote: View {
             for id in selectedFriends {
                 for f in friends {
                     if f.id == id {
-                        RestApi.instance.sendPushNotification(title: "BestFriends World", body: "\(user.firstName) sent a song I listen to when I am in your mood.", APNToken: f.APNToken)
+                        RestApi.instance.sendPushNotification(title: "BestFriends World", body: "\(user.firstName) here's a song I listen to when my 'Vibe' matches yours - I sent it to Chat. Hope it helps :)", APNToken: f.APNToken)
                     }
                 }
             }
@@ -207,20 +200,38 @@ struct SendSongPushNote: View {
             showingAlert = true
         }
         
-        struct RectView: View {
-            let user: User
-            let friend: User
-            let color: Color
+   
             
-            var body: some View {
-                Text(friend.firstName + " " + String(friend.lastName.first!))
-                    .fontWeight(.bold)
-                    .frame(width: 100, height: 30)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 10))
-                    .background(color)
-                    .cornerRadius(25)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+            private struct RectView: View {
+                let user: User
+                let friend: User
+                let color: Color
+                
+                var body: some View {
+                    Text(friend.firstName + " " + String(friend.lastName.first!))
+                        .fontWeight(.bold)
+                        .frame(width: 85, height: 85)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.system(size: 8))
+                        .background(color)
+                        .cornerRadius(75)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+            
+//
+//                    struct RectView: View {
+//                        let user: User
+//                        let friend: User
+//                        let color: Color
+                        
+//            var body: some View {
+//                Text(friend.firstName + " " + String(friend.lastName.first!))
+//                    .fontWeight(.bold)
+//                    .frame(width: 100, height: 30)
+//                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                    .font(.system(size: 10))
+//                    .background(color)
+//                    .cornerRadius(25)
+//                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
             }
         }
         
