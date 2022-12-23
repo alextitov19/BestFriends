@@ -56,97 +56,163 @@ struct INFOMainHowWorks: View {
                 
                 
                 VStack {
-                    NavigationLink(
-                        destination: InfoAddFriends(user: user),
-                        label: {
-                            Text("PhotoPOP")
-                                .fontWeight(.thin)
-                                .frame(width: 310, height: 40)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    
+                    HStack {
+                        ZStack {
+                            Image(systemName: "rectangle.fill")
+                                .resizable()
+                                .foregroundColor(ColorManager .purple2)
+                                .frame(width: 45, height: 45)
+                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                                .opacity(0.95)
                             
-                            
-                        })
-                    
-                    Spacer()
-                        .frame(height: 20)
-                    
-                    
-                    NavigationLink(
-                        destination: InfoCreateChatRm(user: user),
-                        label: {
-                            Text("Set my 'Vibe'")
-                                .fontWeight(.thin)
-                                .frame(width: 310, height: 40)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                            
-                        })
-                    
-                    Spacer()
-                        .frame(height: 20)
-                    
-                    
-                    NavigationLink(
-                        destination: InfoInsideChat(user: user),
-                        label: {
-                            Text("Send a HUG")
-                                .fontWeight(.thin)
-                                .frame(width: 310, height: 40)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                            
-                        })
-                    
-                    Spacer()
-                        .frame(height: 20)
-                    
-                    NavigationLink(
-                        destination: InfoPushNotifications(user: user),
-                        label: {
-                            Text("Something 'Nice'")
-                                .fontWeight(.thin)
-                                .frame(width: 310, height: 40)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                            
-                        })
-                    
-                    
-                    Spacer()
-                        .frame(height: 20)
-                    
-                    NavigationLink(
-                        
-                        destination: SettingsNotificationsView(user: user),
-                        label: {
-                            Text("Friendship Drama")
-                                .fontWeight(.thin)
-                                .foregroundColor(Color.white)
-                                .frame(width: 310, height: 40)
-                                .font(.system(size: 25))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
+                            Image("iconNice35")
                         }
-                    )}
-                
+                        NavigationLink(
+                            destination: InfoAddFriends(user: user),
+                            label: {
+                                Text("PhotoPOP")
+                                    .fontWeight(.thin)
+                                    .frame(width: 250, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 25))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(10)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                            })
+                    }
+                    
+                    
+                    Spacer()
+                        .frame(height: 20)
+                    
+                    
+                    HStack {
+                        ZStack {
+                            Image(systemName: "rectangle.fill")
+                                .resizable()
+                                .foregroundColor(ColorManager .purple2)
+                                .frame(width: 45, height: 45)
+                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                                .opacity(0.95)
+                            
+                            Image("iconNice35")
+                        }
+                        
+                        NavigationLink(
+                            destination: InfoCreateChatRm(user: user),
+                            label: {
+                                Text("Set my 'Vibe'")
+                                    .fontWeight(.thin)
+                                    .frame(width: 250, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 25))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(10)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                            })
+                    }
+                    
+                    
+                    Spacer()
+                        .frame(height: 20)
+                    
+                    HStack {
+                        ZStack {
+                            Image(systemName: "rectangle.fill")
+                                .resizable()
+                                .foregroundColor(ColorManager .purple2)
+                                .frame(width: 45, height: 45)
+                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                                .opacity(0.95)
+                            
+                            Image("iconNice35")
+                        }
+                        
+                        
+                        NavigationLink(
+                            destination: InfoInsideChat(user: user),
+                            label: {
+                                Text("Send a HUG")
+                                    .fontWeight(.thin)
+                                    .frame(width: 250, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 25))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(10)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                            })
+                    }
+                    
+                    
+                    Spacer()
+                        .frame(height: 20)
+                    HStack {
+                        ZStack {
+                            Image(systemName: "rectangle.fill")
+                                .resizable()
+                                .foregroundColor(ColorManager .purple2)
+                                .frame(width: 45, height: 45)
+                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                                .opacity(0.95)
+                            
+                            Image("iconNice35")
+                        }
+                        
+                        NavigationLink(
+                            destination: InfoPushNotifications(user: user),
+                            label: {
+                                Text("Something 'Nice'")
+                                    .fontWeight(.thin)
+                                    .frame(width: 250, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 25))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(10)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                                
+                            })
+                    }
+                    
+                    Spacer()
+                        .frame(height: 20)
+                    
+                    
+                    HStack {
+                        ZStack {
+                            Image(systemName: "rectangle.fill")
+                                .resizable()
+                                .foregroundColor(ColorManager .purple2)
+                                .frame(width: 45, height: 45)
+                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                                .opacity(0.95)
+                            
+                            Image("iconNice35")
+                        }
+                        
+                        
+                        NavigationLink(
+                            
+                            destination: SettingsNotificationsView(user: user),
+                            label: {
+                                Text("Friendship Drama")
+                                    .fontWeight(.thin)
+                                    .foregroundColor(Color.white)
+                                    .frame(width: 250, height: 40)
+                                    .font(.system(size: 25))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(10)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                            }
+                        )}
+                    
+                }
+                    
                 VStack {
                     
                     
