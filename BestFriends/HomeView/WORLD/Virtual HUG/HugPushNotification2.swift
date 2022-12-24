@@ -206,14 +206,16 @@ struct HugPushNotification2: View {
                             Spacer()
                                 .frame(height: 20)
                             
-                            Text("Turn ON 'vibration haptics' on iPhone")
+                            Text("feeling safety in the silence")
                                 .font(.system(size: 15))
                                 .fontWeight(.ultraLight)
                                 .foregroundColor(ColorManager .grey3)
                                 .multilineTextAlignment(.center)
                             
+                      
+
                             Spacer()
-                                .frame(height: 100)
+                                .frame(height: 80)
                    
                         }
                         

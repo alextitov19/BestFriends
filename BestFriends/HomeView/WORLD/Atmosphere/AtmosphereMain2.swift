@@ -51,7 +51,7 @@ struct AtmosphereMain2: View {
             
             VStack {
                 
-                Text("True friends seek the real you")
+                Text("Sharing LIFE with your Friends")
                     .font(.system(size: 20))
 
                     .fontWeight(.ultraLight)
@@ -434,7 +434,7 @@ struct AtmosphereMain2: View {
                         .foregroundColor(ColorManager .grey3)
                         .multilineTextAlignment(.center)
                     
-                    Text("Cheering you on bright days")
+                    Text("Cheering on bright days")
                         .font(.system(size: 20))
 
                         .fontWeight(.ultraLight)
