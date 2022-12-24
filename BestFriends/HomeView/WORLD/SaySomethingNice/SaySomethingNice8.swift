@@ -242,7 +242,7 @@ struct SaySomethingNice8: View {
                                     .foregroundColor(ColorManager .grey3)
                                     .multilineTextAlignment(.center)
                                 
-                                Text("look on a girl's face,")
+                                Text("look on someone's face,")
                                     .font(.system(size: 17))
                                 
                                     .fontWeight(.ultraLight)
