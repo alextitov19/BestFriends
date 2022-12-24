@@ -12,9 +12,9 @@ import SwiftUI
 import AVKit
 
 struct SettingsNotificationsView: View {
-   
+    
     let user: User
-   
+    
     var body: some View {
         
         ZStack {
@@ -23,7 +23,7 @@ struct SettingsNotificationsView: View {
                 .ignoresSafeArea()
                 .onAppear()
             
-        
+            
             
             
             VStack {
@@ -35,7 +35,7 @@ struct SettingsNotificationsView: View {
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey2)
-             
+                
                 
                 ZStack {
                     
@@ -55,7 +55,7 @@ struct SettingsNotificationsView: View {
                         Spacer ()
                             .frame(height: 100)
                         
-                        Text("Did a friend do or say something")
+                        Text("Did a friend do something")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
@@ -70,48 +70,67 @@ struct SettingsNotificationsView: View {
                             .foregroundColor(ColorManager.grey3)
                         
                         Spacer ()
-                            .frame(height: 15)
+                            .frame(height: 25)
                         
-                        Text("Join users worldwide confronting this")
+                        Text("Maybe you're little nervious")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.grey3)
                         
-                    
-                        
-                        Text("Right NOW!")
+                        Text("to say something")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.grey3)
                         
-                        
-                        
-                        Spacer ()
-                             .frame(height: 70)
-                        Text("There's strength in numbers")
-                            .italic()
-                            .font(.system(size: 20))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.grey3)
-                        
-                   
-                        
-                           Spacer ()
+                        VStack {
+                            Spacer ()
+                                .frame(height: 25)
+                            
+                            Text("Join users worldwide")
+                                .italic()
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager.grey3)
+                            
+                            
+                            
+                            Text("saying something Right NOW!")
+                                .italic()
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager.grey3)
+                            
+                            
+                            
+                            Spacer ()
+                                .frame(height: 20)
+                            
+                            Text("We'll do this together!")
+                                .italic()
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager.grey3)
+                            
+                            
+                            
+                            Spacer ()
                                 .frame(height: 100)
-                   
+                            
+                        }
                     }
                 }
             }
         }
+        
     }
-    
 }
- 
 
 
 
