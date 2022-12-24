@@ -61,7 +61,7 @@ struct InfoPushNotifications: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.grey3)
                         
-                        Text("on social media.")
+                        Text("on social media")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
@@ -69,7 +69,7 @@ struct InfoPushNotifications: View {
                             .foregroundColor(ColorManager.grey3)
                         
                         Spacer ()
-                            .frame(height: 15)
+                            .frame(height: 40)
                         
                         Text("Say something 'Nice' to a friend")
                             .italic()
@@ -79,9 +79,9 @@ struct InfoPushNotifications: View {
                             .foregroundColor(ColorManager.grey3)
                         
                         Spacer ()
-                            .frame(height: 70)
+                            .frame(height: 40)
                         
-                        Text("They may say")
+                        Text("Then watch for")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
