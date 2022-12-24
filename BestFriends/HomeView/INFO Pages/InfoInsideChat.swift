@@ -63,14 +63,14 @@ struct InfoInsideChat: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color .white)
                         
-                        Text("ask them to hold their iPnone,")
+                        Text("ask them to hold their iPnone")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color .white)
                      
-                        Text("to their heart,")
+                        Text("to their heart")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
@@ -78,9 +78,9 @@ struct InfoInsideChat: View {
                             .foregroundColor(Color .white)
                         
                         Spacer ()
-                            .frame(height: 15)
+                            .frame(height: 20)
 
-                        Text("It will vibrate for a few seconds.")
+                        Text("It will vibrate for a few seconds")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
