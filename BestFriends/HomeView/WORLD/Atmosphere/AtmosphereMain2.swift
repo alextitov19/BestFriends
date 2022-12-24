@@ -427,10 +427,19 @@ struct AtmosphereMain2: View {
                     Spacer()
                         .frame(height: 10)
                     
-                            Text("(your 'Vibe' color shows around your planet)")
-                                .font(.system(size: 15))
-                                .italic()
-                                .foregroundColor(ColorManager.grey4)
+                    Text("Friends lending support on difficult days")
+                        .font(.system(size: 20))
+
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(ColorManager .grey3)
+                        .multilineTextAlignment(.center)
+                    
+                    Text("Cheering you on bright days")
+                        .font(.system(size: 20))
+
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(ColorManager .grey3)
+                        .multilineTextAlignment(.center)
                             
                         }
                         
