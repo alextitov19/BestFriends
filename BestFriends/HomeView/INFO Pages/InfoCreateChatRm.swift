@@ -53,15 +53,16 @@ struct InfoCreateChatRm: View {
                         
                         
                         Spacer ()
-                            .frame(height: 60)
+                            .frame(height: 80)
                         
-                        Text("Let your friends know")
+                        Text("Something just happened")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.grey3)
-                        Text("something happen changing your day.")
+                        
+                        Text("changing your day.")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
@@ -69,9 +70,9 @@ struct InfoCreateChatRm: View {
                             .foregroundColor(ColorManager.grey3)
                         
                         Spacer ()
-                            .frame(height: 15)
+                            .frame(height: 25)
                         
-                        Text("Select your new 'Vibe'")
+                        Text("Set your NEW 'Vibe'")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
@@ -86,26 +87,21 @@ struct InfoCreateChatRm: View {
 //                            .foregroundColor(ColorManager.purple4)
                         
                         Spacer ()
-                            .frame(height: 15)
+                            .frame(height: 25)
                         
-                        Text("Alert friend(s) via push notification.")
+                        Text("Alert friend(s) via")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.grey3)
-//
-//
-//                        Spacer ()
-//                            .frame(height: 20)
-//                        Text("Tap image to see next friend's image.")
-//                            .italic()
-//                            .font(.system(size: 20))
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(ColorManager.purple4)
-//
-//
+                 
+                        Text("special push notification.")
+                            .italic()
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager.grey3)
                         
                         
                            Spacer ()
