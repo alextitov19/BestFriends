@@ -52,15 +52,9 @@ struct InfoAddFriends: View {
                         
                         
                         Spacer ()
-                            .frame(height: 30)
+                            .frame(height: 20)
                         
-                        Text("It's cool.")
-                            .italic()
-                            .font(.system(size: 20))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.grey2)
-                        Text("Just shake your iPhone (while in app).")
+                        Text("It's NEW, it's different!")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
@@ -68,8 +62,27 @@ struct InfoAddFriends: View {
                             .foregroundColor(ColorManager.grey2)
                         
                         Spacer ()
-                            .frame(height: 10)
-                        Text("Your friend's image")
+                            .frame(height: 60)
+                           
+                        Text("Just shake your iPhone")
+                            .italic()
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager.grey2)
+                        
+                        Text("(while in app).")
+                            .italic()
+                            .font(.system(size: 10))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager.grey2)
+                        
+                        
+                        Spacer ()
+                            .frame(height: 15)
+                        
+                        Text("Your friend's favorite image")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
@@ -77,7 +90,7 @@ struct InfoAddFriends: View {
                             .foregroundColor(ColorManager.grey2)
                         
                      
-                        Text("POPs up full-screen.")
+                        Text("POPs-UP full-screen")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
@@ -87,15 +100,15 @@ struct InfoAddFriends: View {
 
                         Spacer ()
                             .frame(height: 20)
-                        Text("Tap image to see next friend's image.")
-                            .italic()
-                            .font(.system(size: 20))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.grey2)
-                           
-                        
-                        
+//                        Text("Tap image to see next friend's image.")
+//                            .italic()
+//                            .font(.system(size: 20))
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(ColorManager.grey2)
+//
+//
+//
                         
                            Spacer ()
                                 .frame(height: 100)
