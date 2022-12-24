@@ -72,7 +72,7 @@ struct CreateChatRooms: View {
                         
                         
                         Spacer ()
-                            .frame(height: 55)
+                            .frame(height: 60)
                         
                         Text("Individual Rooms")
                             .font(.system(size: 20))
@@ -102,7 +102,7 @@ struct CreateChatRooms: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.purple5)
                         
-                        Text("Exit app and re-enter to activate")
+                        Text("Must sign-out of app & login to activate \n(sign-out in Settings)")
                             .font(.system(size: 15))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
