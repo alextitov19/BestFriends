@@ -51,12 +51,12 @@ struct AtmosphereMain2: View {
             
             VStack {
                 
-//                Text("My day just CHANGED!")
-//                    .font(.system(size: 20))
-//
-//                    .fontWeight(.ultraLight)
-//                    .foregroundColor(ColorManager .grey3)
-//                    .multilineTextAlignment(.center)
+                Text("True friends seek the real you")
+                    .font(.system(size: 20))
+
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(ColorManager .grey3)
+                    .multilineTextAlignment(.center)
                 
                 HStack {
                  
