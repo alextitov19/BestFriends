@@ -33,7 +33,7 @@ struct IndividualFriendMessages: View {
             
              ColorManager.grey4
                  .ignoresSafeArea()
-                 .onAppear()
+                 .onAppear{ loadData() }
              
  //            Image("blueBackground")
  //                .resizable()
@@ -75,7 +75,7 @@ struct IndividualFriendMessages: View {
                     ForEach(smileNotes.indices, id: \.self) { i in
                         FriendMessageView(smileNote: smileNotes[i])
                             .cornerRadius(15)
-                            .padding(.horizontal, 20)
+                            .padding(.horizontal, 80)
                             .onTapGesture(perform: { toggleFavorite(index: i) })
                         
                         
@@ -109,6 +109,7 @@ struct IndividualFriendMessages: View {
     
     private func loadData() {
         RestApi.instance.getSmileNotes().then({ sn in
+            print("Got smile notes")
             smileNotes = sn
             smileNotes.sort { $0.favorite && !$1.favorite }
         })
@@ -143,20 +144,22 @@ private struct FriendMessageView: View {
                 Spacer()
                 
                 if smileNote.favorite {
-                    Image(systemName: "star.fill")
+                    Image("starGreen")
                         .resizable()
                         .frame(width: 30, height: 30)
                         .scaledToFill()
-                        .foregroundColor(.yellow)
+                        .blendMode(.screen)
                 } else {
-                    Image(systemName: "star")
+                    Image("starPurple")
                         .resizable()
                         .frame(width: 30, height: 30)
                         .scaledToFill()
+                        .blendMode(.screen)
                 }
             }
-            .padding()
         }
+        .padding(.horizontal, 100)
+
     }
 }
 
