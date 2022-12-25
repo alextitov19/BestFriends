@@ -513,7 +513,7 @@ struct AtmosphereMain2: View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
                 .frame(width: 85, height: 85)
-                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+               .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .font(.system(size: 8))
                 .background(color)
                 .cornerRadius(75)
@@ -531,64 +531,3 @@ struct AtmosphereMain2: View {
 
 
 
-
-
-//
-//                NavigationLink(
-//                    destination: AtmosphereInfo2(user: user, atmosphere: atmosphere, friends: friends),
-//                    label: {
-//                        Text("How feature works")
-//                            .fontWeight(.thin)
-//                            .foregroundColor(Color.white)
-//                            .font(.system(size: 12))
-//                            .italic()
-//                            .frame(width: 50, height: 50)
-//                            .background(ColorManager .purple3)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                    })
-
-
-//
-//                        Spacer()
-//                            .frame(height: 15)
-//
-//
-//
-//                    NavigationLink(
-//                        destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends),
-//                        label: {
-//                            Text("Vibe Tracker")
-//                                .fontWeight(.thin)
-//                                .frame(width: 150, height: 30)
-//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                .font(.system(size: 25))
-//                                .background(ColorManager.pmbc_green)
-//                                .cornerRadius(15)
-//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        })
-//                    }
-
-
-
-//
-//                    VStack {
-//                        Spacer()
-//                            .frame(height: 15)
-//
-//                        Button(action: {
-//                            sessionManager.showLogin()
-//                        },
-//                            label: {
-//                                Text("Home")
-//                                    .fontWeight(.thin)
-//                                    .frame(width: 100, height: 30)
-//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                    .font(.system(size: 25))
-//                                    .background(ColorManager.purple3)
-//                                    .cornerRadius(15)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                            })
-//
-
-    

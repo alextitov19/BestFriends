@@ -32,36 +32,28 @@ struct INFOMainHowWorks: View {
                 
                 Text("For just 5 minutes - nightly at 8pm EST,")
                     .italic()
-                    .font(.system(size: 20))
+                    .font(.system(size: 17))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey3)
                 
                 
-                Text("users everywhere are excited from")
+                Text("users everywhere are excited to build,")
                     .italic()
-                    .font(.system(size: 20))
+                    .font(.system(size: 17))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey3)
-                 
+               
+                Spacer()
+                    .frame(height: 6)
                 
+                Text("stronger, happier, lasting friendships")
                 
-                Text("building ...")
-                    
-                    .font(.system(size: 20))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey3)
-           
-                
-                
-                Text("stronger, happier, lasting friendships :)")
-                
-                    .font(.system(size: 20))
+                    .font(.system(size: 22))
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.purple4)
+                    .foregroundColor(ColorManager.grey4)
              
                 
                 Spacer()

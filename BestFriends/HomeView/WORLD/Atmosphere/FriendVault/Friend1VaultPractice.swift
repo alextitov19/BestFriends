@@ -91,8 +91,10 @@ struct Friend1VaultPractice: View {
                         
                         VStack {
                             Text(mostRecentMoodLog!.summary)
+                                .foregroundColor(Color .black)
                                 .padding()
                             Text(getDateString(n: mostRecentMoodLog!.createdOn))
+                               .foregroundColor(Color .black)
                                 .padding()
                         }
                     }
