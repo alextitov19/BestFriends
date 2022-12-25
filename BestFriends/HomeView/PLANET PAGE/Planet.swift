@@ -236,7 +236,7 @@ struct PlanetActionsView: View {
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.90)
                                    
-                                    Text("3:30pm EST")
+                                    Text("8pm EST")
                                         .foregroundColor(.black)
                                         .italic()
                                         .font(.system(size: 13, weight: .light))

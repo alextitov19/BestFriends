@@ -87,8 +87,20 @@ struct SettingsNotificationsView: View {
                             .foregroundColor(ColorManager.grey3)
                         
                         VStack {
+                          
+//                            Spacer ()
+//                                .frame(height: 10)
+                            
+                            Text(". . .")
+                                .italic()
+                                .font(.system(size: 40))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager.grey3)
+                            
                             Spacer ()
-                                .frame(height: 25)
+                                .frame(height: 20)
+                            
                             
                             Text("Join users worldwide")
                                 .italic()
@@ -97,40 +109,38 @@ struct SettingsNotificationsView: View {
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(ColorManager.grey3)
                             
-                            
-                            
-                            Text("saying something Right NOW!")
-                                .italic()
-                                .font(.system(size: 20))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager.grey3)
-                            
-                            
-                            
-                            Spacer ()
-                                .frame(height: 20)
-                            
-                            Text("We'll do this together!")
-                                .italic()
-                                .font(.system(size: 20))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager.grey3)
-                            
-                            
-                            
-                            Spacer ()
-                                .frame(height: 100)
-                            
+                                Text("saying something - Right NOW!")
+                                    .italic()
+                                    .font(.system(size: 20))
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(ColorManager.grey3)
+                                
+                                
+                                
+                                Spacer ()
+                                    .frame(height: 20)
+                                
+                                Text("We'll all do this together!")
+                                    .italic()
+                                    .font(.system(size: 20))
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(ColorManager.grey3)
+                                
+                                
+                                
+                                Spacer ()
+                                    .frame(height: 100)
+                                
+                            }
                         }
                     }
                 }
             }
+            
         }
-        
     }
-}
 
 
 
