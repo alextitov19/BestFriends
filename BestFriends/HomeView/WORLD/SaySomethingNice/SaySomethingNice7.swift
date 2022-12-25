@@ -23,7 +23,7 @@ struct SaySomethingNice7: View {
     @State private var customMessage = ""
     @State private var colorChangeTap: String = ""
     @State private var hugTapped = false
-    @State private var mostRecentMoodLog: MoodLog?
+    @State private var mostRecentMessage: NiceMessage?
     @State private var noteTapped = false
     @State private var showingAlert = false
     
@@ -44,7 +44,7 @@ struct SaySomethingNice7: View {
 
             ColorManager.purple1
                 .ignoresSafeArea()
-                .onAppear()
+                .onAppear{loadData()}
 
             
             
@@ -72,22 +72,14 @@ struct SaySomethingNice7: View {
 //                    .fontWeight(.thin)
 //                    .foregroundColor(.white)
                 
-                if (mostRecentMoodLog != nil) {
+                if (mostRecentMessage != nil) {
                     ZStack {
-                        if mostRecentMoodLog!.mood < 4 {
-                            Color(.cyan)
-                        } else if mostRecentMoodLog!.mood == 4 {
-                            Color(.green)
-                        } else if mostRecentMoodLog!.mood == 5 {
-                            Color(.orange)
-                        } else {
-                            Color(.yellow)
-                        }
+                        ColorManager.purple3
                         
                         VStack {
-                            Text(mostRecentMoodLog!.summary)
+                            Text(mostRecentMessage!.message)
                                 .padding()
-                            Text(getDateString(n: mostRecentMoodLog!.createdOn))
+                            Text(getDateString(n: mostRecentMessage!.createdOn))
                                 .padding()
                         }
                     }
@@ -332,14 +324,14 @@ struct SaySomethingNice7: View {
     }
     
     private func loadData() {
-        for id in friendAtmosphere.moodLogs ?? [] {
-            RestApi.instance.getMoodLog(id: id).then({ moodLog in
-                if moodLog.sharedWith.contains(user.id) {
-                    if mostRecentMoodLog == nil {
-                        mostRecentMoodLog = moodLog
+        for id in user.niceMessages ?? [] {
+            RestApi.instance.getNiceMessage(id: id).then({ nm in
+                if nm.sender == friend.id {
+                    if mostRecentMessage == nil {
+                        mostRecentMessage = nm
                     } else {
-                        if mostRecentMoodLog!.createdOn < moodLog.createdOn {
-                            mostRecentMoodLog = moodLog
+                        if mostRecentMessage!.createdOn < nm.createdOn {
+                            mostRecentMessage = nm
                         }
                     }
                 }
