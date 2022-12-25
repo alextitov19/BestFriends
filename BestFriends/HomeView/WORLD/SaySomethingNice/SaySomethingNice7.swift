@@ -236,7 +236,7 @@ struct SaySomethingNice7: View {
                     
                     
                     Spacer ()
-                        .frame(height: 10)
+                        .frame(height: 23)
                 }
                 //
                 //                Text("Send Hug")
