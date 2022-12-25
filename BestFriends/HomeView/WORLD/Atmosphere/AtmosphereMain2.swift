@@ -455,6 +455,8 @@ struct AtmosphereMain2: View {
     }
     
     func shareButtonTapped() {
+        shareMood()
+
         if selectedFriends.count == 0 { return }
         for id in selectedFriends {
             for f in friends {
@@ -465,6 +467,7 @@ struct AtmosphereMain2: View {
         }
         shareColor = ColorManager.darkGrey
         showingAlert = true
+        
     }
     
     private func shareMood() {

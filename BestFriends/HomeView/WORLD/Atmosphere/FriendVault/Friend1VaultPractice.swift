@@ -31,7 +31,9 @@ struct Friend1VaultPractice: View {
 
             ColorManager.purple1
                 .ignoresSafeArea()
-                .onAppear()
+                .onAppear{
+                    print("Loading data")
+                    loadData()}
 //
             
             Image("purpleBackground")
@@ -323,17 +325,18 @@ struct Friend1VaultPractice: View {
     }
     
     private func loadData() {
+        print("Friend = ", friendAtmosphere)
         for id in friendAtmosphere.moodLogs ?? [] {
+            print("Getting mood log")
             RestApi.instance.getMoodLog(id: id).then({ moodLog in
-                if moodLog.sharedWith.contains(user.id) {
                     if mostRecentMoodLog == nil {
                         mostRecentMoodLog = moodLog
+                        print("Updated mood log")
                     } else {
                         if mostRecentMoodLog!.createdOn < moodLog.createdOn {
                             mostRecentMoodLog = moodLog
                         }
                     }
-                }
             })
         }
     }
