@@ -66,16 +66,16 @@ struct Friend1VaultPractice: View {
                 Text("wants you to know")
                     .font(.system(size: 20))
                     .fontWeight(.thin)
-                    .foregroundColor(ColorManager .purple5)
+                    .foregroundColor(ColorManager .grey4)
                 
                 Text("their 'Vibe' just changed")
                     .font(.system(size: 20))
                     .fontWeight(.thin)
-                    .foregroundColor(ColorManager .purple5)
+                    .foregroundColor(ColorManager .grey4)
                 
                 
-                Spacer()
-                    .frame(height: 20)
+//                Spacer()
+//                    .frame(height: 20)
                 
                 if (mostRecentMoodLog != nil) {
                     ZStack {
@@ -116,7 +116,7 @@ struct Friend1VaultPractice: View {
                 TextField("", text: $customMessage)
                     .placeholder(when: customMessage.isEmpty) {
                         HStack {
-                            Text("Send supportive message in Chat")
+                            Text("Send supportive message in Chat ...")
                                 .foregroundColor(ColorManager.grey4)
 //                            .foregroundColor(.white)
 //                            .frame(width: 300, height: 100)
@@ -128,7 +128,7 @@ struct Friend1VaultPractice: View {
                     .opacity(0.60)
                     .submitLabel(.done)
                     .onReceive(Just(customMessage)) { _ in limitText(65) }
-                    .padding(30)
+                    .padding(50)
                     .overlay(RoundedRectangle(cornerRadius: 10)
                         .stroke(Color.purple)
                         .frame(width: 345, height: 40)
@@ -154,9 +154,9 @@ struct Friend1VaultPractice: View {
 //                    .padding()
                     
                     Spacer()
-                        .frame(height: 40)
+                        .frame(height: 10)
                     
-                    Text("Respond instantly by \nPush Notification")
+                    Text("Respond instantly via Push Notification")
                         .font(.system(size: 15))
                         .fontWeight(.medium)
                         .foregroundColor(ColorManager .purple7)
