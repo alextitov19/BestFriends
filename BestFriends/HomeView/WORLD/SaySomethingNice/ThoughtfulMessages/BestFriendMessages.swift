@@ -146,7 +146,7 @@ struct BestFriendMessages: View {
                     }
                     print("Planets count: ", planets.count)
                 }
-                .animation(Animation.easeInOut(duration: 1.0), value: showItems)
+                .animation(Animation.easeInOut(duration: 2.0), value: showItems)
             }
         }
     }
@@ -193,17 +193,3 @@ struct FriendVaultCircle: View {
     }
 }
 
-
-
-
-
-
-//
-//
-//
-//struct BestFriendMessages_Previews : PreviewProvider {
-//    static var previews: some View {
-//        BestFriendMessages()
-//    }
-//
-//}
