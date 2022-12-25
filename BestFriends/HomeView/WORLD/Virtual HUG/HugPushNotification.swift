@@ -9,7 +9,7 @@
 
 import Foundation
 import SwiftUI
-
+import ConfettiSwiftUI
 
 struct HugPushNotification: View {
     
@@ -22,6 +22,9 @@ struct HugPushNotification: View {
     @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
     @State private var shareColor = ColorManager.purple5
     @State private var showingAlert = false
+    
+    @State private var counter = 0
+
     
     var body: some View {
         
@@ -193,6 +196,7 @@ struct HugPushNotification: View {
                         
                         
                         Button(action: {
+                            counter += 1
                             shareButtonTapped()
                         },
                                label: {
@@ -208,6 +212,8 @@ struct HugPushNotification: View {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
+                        .confettiCannon(counter: $counter)
+
                         
                         VStack {
                             
