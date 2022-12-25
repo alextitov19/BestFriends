@@ -25,10 +25,20 @@ struct SaySomethingNice8: View {
     @State private var colorChangeTap: String = ""
     
     @State private var selectedFriends: [String] = []
+    @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
     @State private var shareColor = ColorManager.purple5
     @State private var showingAlert = false
     
-    @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
+ 
+   
+//    @State private var customMessage = "Custom Message"
+//
+//    @State private var noteTapped = false
+//
+    
+    
+    
+    
     
     
     var body: some View {
@@ -231,6 +241,10 @@ struct SaySomethingNice8: View {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
+                        
+                        
+                        
+                        
                         
                         Spacer()
                             .frame(height: 30)

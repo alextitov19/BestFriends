@@ -81,13 +81,11 @@ struct PlanetActionsView: View {
         
         VStack {
             
-//            Image("arrowLeft")
-//                .frame(width: 5, height: 5)
-//                .foregroundColor(.white)
+
             
             Text("< tap")
                 .foregroundColor(.white)
-                .font(.system(size: 20, weight: .ultraLight))
+                .font(.system(size: 17, weight: .light))
                 .multilineTextAlignment(.leading)
                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                 .opacity(0.50)
@@ -98,16 +96,17 @@ struct PlanetActionsView: View {
                 label: {
                    
                     Image("iconSettings15")
-                        .frame(width: 50, height: 20)
+                        .frame(width: 40, height: 25)
                         .foregroundColor(.white)
                         .font(.system(size: 20))
                         .background(ColorManager.grey4)
                       .cornerRadius(15)
                       .shadow(color: Color(.gray), radius: 1, x: 1, y: 1)
-                      .opacity(0.50)
+                      .opacity(0.70)
                 })
             
-
+            Spacer()
+                .frame(height: 20)
                 
                 
                 
