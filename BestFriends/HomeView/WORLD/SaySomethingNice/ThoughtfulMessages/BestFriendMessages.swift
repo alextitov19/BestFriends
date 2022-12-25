@@ -39,22 +39,9 @@ struct BestFriendMessages: View {
                 .blendMode(.screen)
                 .onAppear(perform: createPlanets)
 
-//            ColorManager.purple2
-//                .ignoresSafeArea()
-//                .onAppear()
-          
             ZStack {
                 
-               
-//
-//
-//                Image(systemName: "circle.fill")
-//                    .resizable()
-//                    .foregroundColor(ColorManager.purple3)
-//                    .frame(width: 300, height: 300)
-//                    .blur(radius: 2)
-//                    .shadow(color: .gray, radius: 65, x: 40, y: 50)
-//                    .opacity(0.1)
+
                 
                 VStack {
                     
@@ -107,19 +94,18 @@ struct BestFriendMessages: View {
                     
                     VStack {
                         
-                        Text("SmileVault")
+                        Text("Favorite Chat")
                             .font(.system(size: 35))
                             .foregroundColor(ColorManager .purple5)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                   
-                        Text("'Nice' Messages")
-                            .font(.system(size: 17))
-                            
-                            .foregroundColor(ColorManager.grey1)
+                     
+                        Text("Messages")
+                            .font(.system(size: 35))
+                            .foregroundColor(ColorManager .purple5)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
-                        
                     
                         Text("you \nlong-tapped")
                             .font(.system(size: 17))
@@ -128,12 +114,12 @@ struct BestFriendMessages: View {
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                         
-                        Text("in Chat")
-                            .font(.system(size: 17))
-                            .italic()
-                            .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.medium)
-                            .multilineTextAlignment(.center)
+//                        Text("in Chat")
+//                            .font(.system(size: 17))
+//                            .italic()
+//                            .foregroundColor(ColorManager.grey1)
+//                            .fontWeight(.medium)
+//                            .multilineTextAlignment(.center)
 
                     }
                      

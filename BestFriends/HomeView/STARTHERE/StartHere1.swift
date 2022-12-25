@@ -86,15 +86,7 @@ struct StartHere1: View {
                     .offset(x: showItems ? -80 : 0, y: showItems ? -150: 0)
                    
                     
-              
-//
-//                NavigationLink(destination: INFOPreload2(user: user), label: {
-//                    StartHereCircle (color: ColorManager.purple1, friendName: "Enjoying \nhappier \nFriendships")
-//                })
-//                .offset(x: showItems ? -120 : 0, y: showItems ? -140: 0)
-//
-//
-                
+
                     
 
                 

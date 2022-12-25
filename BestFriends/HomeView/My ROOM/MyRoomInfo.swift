@@ -59,44 +59,29 @@ struct MyRoomInfo: View {
             
             ZStack{
                 
-                
-                
-                //                AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends),
-                
-              
-
-                
-                
-                
+          
                 
                 NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                    MyRoomCircle (color: ColorManager.purple1, friendName: "SmileVault \n(saved \n'Nice' \nmessages)")
+                    MyRoomCircle (color: ColorManager.purple1, friendName: "SmileVault")
                 })
                 .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
                 .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
               
-                
-                
-                NavigationLink(destination: EmptyView(), label: {
-                    MyRoomCircle (color: ColorManager.purple1, friendName: "Build \nmixed \nFriendGroup")
-                })
-                .offset(x: showItems ? -100 : 0, y: showItems ? -150: 0)
-                .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
-              
+
                 
                 ZStack {
                     
                     
-//                    
-//                    NavigationLink(destination:   SendSongPush(user: user, friends: friends),
-//                                   label: {
-//                        MyRoomCircle (color: ColorManager .grey2, friendName: "Found new \nMusic \n(coming \n2023)")
-//                    })
-//                    .offset(x: showItems ? 59 : 0, y: showItems ? 260: 0)
-//                    .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
-//                    
-//                    
-//
+                    
+                    NavigationLink(destination:   SendSongPush(user: user, friends: friends),
+                                   label: {
+                        MyRoomCircle (color: ColorManager .grey2, friendName: "Found new \nMusic \n(coming \n2023)")
+                    })
+                    .offset(x: showItems ? 59 : 0, y: showItems ? 260: 0)
+                    .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
+                    
+                    
+
                     NavigationLink(destination: EmptyView(), label: {
                         MyRoomCircle (color: ColorManager .grey2, friendName: "Friendship \nFeed \n(coming \n2023)")
                     })
@@ -107,7 +92,7 @@ struct MyRoomInfo: View {
                     
                     
                     NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
-                        MyRoomCircle (color: ColorManager.grey2, friendName: "My \nDreamVault \n(coming \n2023)")
+                        MyRoomCircle (color: ColorManager.grey2, friendName: "DreamVault \n(coming \n2023)")
                     })
                     .offset(x: showItems ? 75 : 0, y: showItems ? 140: 0)
                     .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
@@ -154,7 +139,7 @@ struct MyRoomInfo: View {
                             .foregroundColor(.white)
                             .fontWeight(.ultraLight)
                             .multilineTextAlignment(.center)
-                        Text("Silence")
+                        Text("ROOM")
                             .font(.system(size: 30))
                             .foregroundColor(.white)
                             .fontWeight(.light)
