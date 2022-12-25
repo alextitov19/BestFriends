@@ -131,6 +131,15 @@ class RestApi {
         return helper.callRestApi(url: API_URL + "/atmosphere/mood/" + id, method: .get, MoodLog.self)
     }
     
+    public func createNiceMessage(message: String, receiver: String) -> Promise<Int> {
+        let cnm = CreateNiceMessage(message: message, receiver: receiver)
+        return helper.createNiceMessage(url: API_URL + "/nice-message", createNiceMessage: cnm)
+    }
+    
+    public func getNiceMessage(id: String) -> Promise<NiceMessage> {
+        return helper.callRestApi(url: API_URL + "/nice-message/" + id, method: .get, NiceMessage.self)
+    }
+    
     public func createSmileNote(messageId: String, messageBody: String, sendername: String) -> Promise<SmileNote> {
         let csn = CreateSmileNote(messageId: messageId, messageBody: messageBody, senderName: sendername)
         return helper.createSmileNote(url: API_URL + "/smile-notes", createSmileNote: csn)

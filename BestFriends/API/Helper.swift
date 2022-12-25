@@ -190,6 +190,16 @@ class Helper {
         }
     }
     
+    func createNiceMessage(url: String, createNiceMessage: CreateNiceMessage) -> Promise<Int> {
+        let payload = try? JSONEncoder().encode(createNiceMessage)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, RestResponse.self).then { restResponse in
+            return Promise<Int>(restResponse.status)
+        }
+    }
+    
     func createSmileNote(url: String, createSmileNote: CreateSmileNote) -> Promise<SmileNote> {
         let payload = try? JSONEncoder().encode(createSmileNote)
         if let p = payload {
