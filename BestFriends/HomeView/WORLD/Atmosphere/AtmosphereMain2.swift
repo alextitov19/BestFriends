@@ -253,7 +253,7 @@ struct AtmosphereMain2: View {
                             mood = 9
                         }) {
                             
-                            Text("Think I'm \nin LOVE")
+                            Text("other ...")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
