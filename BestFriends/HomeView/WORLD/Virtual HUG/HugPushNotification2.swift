@@ -206,7 +206,7 @@ struct HugPushNotification2: View {
                             Spacer()
                                 .frame(height: 20)
                             
-                            Text("feeling safety in the silence")
+                            Text("Feeling safety in the silence")
                                 .font(.system(size: 15))
                                 .fontWeight(.ultraLight)
                                 .foregroundColor(ColorManager .grey3)
