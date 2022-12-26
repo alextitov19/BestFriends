@@ -93,8 +93,8 @@ struct AtmosphereMain2: View {
                             mood = 0
                         }) {
                             
-                            Text("Upset")
-                                .font(.system(size: 17))
+                            Text("School Stress")
+                                .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
@@ -110,8 +110,8 @@ struct AtmosphereMain2: View {
                             mood = 1
                         }) {
                             
-                            Text("Stressed")
-                                .font(.system(size: 17))
+                            Text("My Image")
+                                .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
@@ -127,8 +127,8 @@ struct AtmosphereMain2: View {
                             mood = 2
                         }) {
                             
-                            Text("Sad")
-                                .font(.system(size: 17))
+                            Text("Friend \nDrama")
+                                .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
@@ -144,8 +144,8 @@ struct AtmosphereMain2: View {
                             mood = 3
                         }) {
                             
-                            Text("Lonely")
-                                .font(.system(size: 17))
+                            Text("Relationship \nIssues")
+                                .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
@@ -163,8 +163,8 @@ struct AtmosphereMain2: View {
                             mood = 4
                         }) {
                             
-                            Text("Okay")
-                                .font(.system(size: 17))
+                            Text("A \nSecret")
+                                .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
@@ -180,8 +180,8 @@ struct AtmosphereMain2: View {
                             mood = 5
                         }) {
                             
-                            Text("Bored")
-                                .font(.system(size: 17))
+                            Text("Sad, Lonely / \nBored")
+                                .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
@@ -202,8 +202,8 @@ struct AtmosphereMain2: View {
                             mood = 6
                         }) {
                             
-                            Text("Happy")
-                                .font(.system(size: 17))
+                            Text("Good Day!")
+                                .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
@@ -219,12 +219,12 @@ struct AtmosphereMain2: View {
                             mood = 7
                         }) {
                             
-                            Text("Excited")
-                                .font(.system(size: 17))
+                            Text("Ton of IG \n'Likes'")
+                                .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 7 ? Color(.systemYellow) : ColorManager .grey1)
+                        .background(mood == 7 ? Color(.systemOrange) : ColorManager .grey1)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -236,12 +236,12 @@ struct AtmosphereMain2: View {
                             mood = 8
                         }) {
                             
-                            Text("Powerful")
-                                .font(.system(size: 17))
+                            Text("Aced AP \nExam")
+                                .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 8 ? Color(.systemYellow) : ColorManager .grey1)
+                        .background(mood == 8 ? Color(.systemOrange) : ColorManager .grey1)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -253,12 +253,12 @@ struct AtmosphereMain2: View {
                             mood = 9
                         }) {
                             
-                            Text("Carefree")
-                                .font(.system(size: 17))
+                            Text("Think I'm \nin LOVE")
+                                .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 9 ? Color(.systemYellow) : ColorManager .grey1)
+                        .background(mood == 9 ? Color(.systemPurple) : ColorManager .grey1)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -286,7 +286,7 @@ struct AtmosphereMain2: View {
                             .foregroundColor(ColorManager .grey3)
                             .opacity(0.5)
                         
-                        TextField("Type what's going on here ...", text: $summary)
+                        TextField("Please give us some details ...", text: $summary)
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager.purple5)
                             .padding(.horizontal, 55)
