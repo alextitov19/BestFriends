@@ -250,14 +250,14 @@ struct SaySomethingNice8: View {
                         Spacer()
                             .frame(height: 30)
                         
-                        Text("a special message is like the")
+                        Text("Receiving a special message is like")
                             .font(.system(size: 17))
                         
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
                         
-                        Text("look on someone's face,")
+                        Text("the look on a girl's face,")
                             .font(.system(size: 17))
                         
                             .fontWeight(.ultraLight)
