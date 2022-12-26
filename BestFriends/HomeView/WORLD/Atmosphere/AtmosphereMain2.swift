@@ -236,7 +236,7 @@ struct AtmosphereMain2: View {
                             mood = 8
                         }) {
                             
-                            Text("I WISH \nthat ...")
+                            Text("I really \nWISH that ...")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
