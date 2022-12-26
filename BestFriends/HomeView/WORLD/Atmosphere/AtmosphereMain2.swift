@@ -55,7 +55,7 @@ struct AtmosphereMain2: View {
                     .font(.system(size: 20))
 
                     .fontWeight(.ultraLight)
-                    .foregroundColor(ColorManager .grey3)
+                    .foregroundColor(ColorManager .grey4)
                     .multilineTextAlignment(.center)
                 
                 HStack {
@@ -98,7 +98,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 0 ? Color(.systemCyan) : ColorManager .grey1)
+                        .background(mood == 0 ? Color(.systemPink) : ColorManager .grey1)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -115,7 +115,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 1 ? Color(.systemCyan) : ColorManager .grey1)
+                        .background(mood == 1 ? Color(.systemPink) : ColorManager .grey1)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -132,7 +132,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 2 ? Color(.systemCyan) : ColorManager .grey1)
+                        .background(mood == 2 ? Color(.systemPink) : ColorManager .grey1)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -149,7 +149,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 3 ? Color(.systemCyan) : ColorManager .grey1)
+                        .background(mood == 3 ? Color(.systemPink) : ColorManager .grey1)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -185,7 +185,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 5 ? Color(.orange) : ColorManager .grey1)
+                        .background(mood == 5 ? Color(.cyan) : ColorManager .grey1)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -427,7 +427,7 @@ struct AtmosphereMain2: View {
                     Spacer()
                         .frame(height: 10)
                     
-                    Text("Friends lending support on difficult days")
+                    Text("Friends supporting on difficult days")
                         .font(.system(size: 20))
 
                         .fontWeight(.ultraLight)
