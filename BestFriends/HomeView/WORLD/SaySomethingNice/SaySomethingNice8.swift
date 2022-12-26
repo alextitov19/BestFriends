@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import ConfettiSwiftUI
 import Combine
 import SwiftUI
 
@@ -29,7 +29,7 @@ struct SaySomethingNice8: View {
     @State private var shareColor = ColorManager.purple5
     @State private var showingAlert = false
     
- 
+    @State private var counter = 0
    
 //    @State private var customMessage = "Custom Message"
 //
@@ -226,6 +226,8 @@ struct SaySomethingNice8: View {
                         
                         
                         Button(action: {
+                            
+                            counter += 1
                             shareButtonTapped()
                         },
                                label: {
@@ -243,7 +245,7 @@ struct SaySomethingNice8: View {
                                 }
                         })
                         
-                        
+                        .confettiCannon(counter: $counter)
                         
                         
                         

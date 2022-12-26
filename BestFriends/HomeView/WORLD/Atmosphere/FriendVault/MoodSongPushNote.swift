@@ -10,7 +10,7 @@
 import Foundation
 import SwiftUI
 import AVKit
-
+import ConfettiSwiftUI
 
 struct SendSongPushNote: View {
     
@@ -23,6 +23,9 @@ struct SendSongPushNote: View {
     @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
     @State private var shareColor = ColorManager.purple5
     @State private var showingAlert = false
+    @State private var counter = 0
+    
+    
     
     var body: some View {
         
@@ -131,6 +134,7 @@ struct SendSongPushNote: View {
                             }
                             
                             Button(action: {
+                                counter += 1
                                 shareButtonTapped()
                             },
                                    label: {
@@ -146,7 +150,7 @@ struct SendSongPushNote: View {
                                         Button("OK", role: .cancel) { }
                                     }
                             })
-                            
+                            .confettiCannon(counter: $counter)
                             
                             Spacer()
                                 .frame(height: 0)
