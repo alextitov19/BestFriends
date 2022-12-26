@@ -110,7 +110,7 @@ struct AtmosphereMain2: View {
                             mood = 1
                         }) {
                             
-                            Text("My Image")
+                            Text("Schedule \nOverwelming")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -127,7 +127,7 @@ struct AtmosphereMain2: View {
                             mood = 2
                         }) {
                             
-                            Text("Friend \nDrama")
+                            Text("Image \nPressure")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -144,7 +144,7 @@ struct AtmosphereMain2: View {
                             mood = 3
                         }) {
                             
-                            Text("Relationship \nIssues")
+                            Text("Family \nMatters")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -163,7 +163,7 @@ struct AtmosphereMain2: View {
                             mood = 4
                         }) {
                             
-                            Text("A \nSecret")
+                            Text("Relationship \nDrama")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -202,7 +202,7 @@ struct AtmosphereMain2: View {
                             mood = 6
                         }) {
                             
-                            Text("Great Day! \nNEWS")
+                            Text("Great Day \nNEWS!")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -236,7 +236,7 @@ struct AtmosphereMain2: View {
                             mood = 8
                         }) {
                             
-                            Text("I HOPE \nthat ...")
+                            Text("I WISH \nthat ...")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
