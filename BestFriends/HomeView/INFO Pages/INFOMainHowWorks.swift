@@ -38,7 +38,7 @@ struct INFOMainHowWorks: View {
                     .foregroundColor(ColorManager.grey3)
                 
                 
-                Text("users everywhere are excited to build,")
+                Text("users everywhere are excited to build more ...")
                     .italic()
                     .font(.system(size: 17))
                     .fontWeight(.light)
@@ -48,14 +48,19 @@ struct INFOMainHowWorks: View {
                 Spacer()
                     .frame(height: 6)
                 
-                Text("stronger, happier, lasting friendships")
+                Text("resilient, happier, emotionally closer")
                 
                     .font(.system(size: 22))
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey4)
              
+                Text("Positive Friendships")
                 
+                    .font(.system(size: 22))
+                    .fontWeight(.regular)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.grey4)
                 Spacer()
                     .frame(height: 40)
                 
