@@ -127,7 +127,7 @@ struct AtmosphereMain2: View {
                             mood = 2
                         }) {
                             
-                            Text("Image \nPressure")
+                            Text("Relationship \nDrama")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -144,7 +144,7 @@ struct AtmosphereMain2: View {
                             mood = 3
                         }) {
                             
-                            Text("Family \nMatters")
+                            Text("Family \nIssues")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -163,7 +163,7 @@ struct AtmosphereMain2: View {
                             mood = 4
                         }) {
                             
-                            Text("Relationship \nDrama")
+                            Text("Image \nIssues")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -202,7 +202,7 @@ struct AtmosphereMain2: View {
                             mood = 6
                         }) {
                             
-                            Text("Great \nNEWS!")
+                            Text("Exciting \nNEWS!")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -253,7 +253,7 @@ struct AtmosphereMain2: View {
                             mood = 9
                         }) {
                             
-                            Text("other ...")
+                            Text("Happy")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
