@@ -51,20 +51,22 @@ struct LoginView: View {
                 
                 VStack {
                   
-                    Text("building harmonious")
-                        .font(.system(size: 20, weight: .bold))
+                    Text("For your protection:")
+                        .font(.system(size: 20, weight: .light))
                         .foregroundColor(ColorManager .grey1)
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                         .opacity(0.50)
                         .multilineTextAlignment(.center)
                        
-                    
-                    Text("FriendGroups")
-                        .font(.system(size: 35, weight: .bold))
+                    Text("We do't sell user data or use 3rd party cookies")
+                        .font(.system(size: 15, weight: .light))
                         .foregroundColor(ColorManager .grey1)
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                         .opacity(0.50)
                         .multilineTextAlignment(.center)
+                    
+               
+                    
                     
                     MainTextField(text: $email, placeholder: "Email")
                         .padding(.horizontal, 40)

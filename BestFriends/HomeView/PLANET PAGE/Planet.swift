@@ -96,7 +96,7 @@ struct PlanetActionsView: View {
                 label: {
                    
                     Image("iconSettings15")
-                        .frame(width: 40, height: 25)
+                        .frame(width: 60, height: 30)
                         .foregroundColor(.white)
                         .font(.system(size: 20))
                         .background(ColorManager.grey4)
