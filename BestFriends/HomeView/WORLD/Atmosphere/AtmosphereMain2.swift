@@ -51,12 +51,20 @@ struct AtmosphereMain2: View {
             
             VStack {
                 
-                Text("Sharing LIFE with your Friends")
+                Text("Sharing LIFE")
                     .font(.system(size: 20))
 
                     .fontWeight(.ultraLight)
                     .foregroundColor(ColorManager .grey4)
                     .multilineTextAlignment(.center)
+                
+                Text("with your trusted Friends")
+                    .font(.system(size: 20))
+
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(ColorManager .grey4)
+                    .multilineTextAlignment(.center)
+                
                 
                 HStack {
                  
