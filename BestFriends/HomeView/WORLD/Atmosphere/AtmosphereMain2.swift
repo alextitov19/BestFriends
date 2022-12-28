@@ -8,6 +8,7 @@
 
 import Combine
 import SwiftUI
+import ConfettiSwiftUI
 
 
 struct AtmosphereMain2: View {
@@ -28,7 +29,7 @@ struct AtmosphereMain2: View {
     @State private var showingAlert = false
     
     @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
-   
+    @State private var counter = 0
     
     var body: some View {
         ZStack {
@@ -69,7 +70,7 @@ struct AtmosphereMain2: View {
                 HStack {
                  
                     
-                    Text("Set my \n'Vibe'")
+                    Text("Share \nmy 'Vibes'")
                         .font(.system(size: 30))
                         .fontWeight(.ultraLight)
                         .foregroundColor(ColorManager .grey3)
@@ -106,7 +107,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 0 ? Color(.cyan) : ColorManager .grey1)
+                        .background(mood == 0 ? Color(.cyan) : ColorManager .pmbc_pink)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -118,12 +119,12 @@ struct AtmosphereMain2: View {
                             mood = 1
                         }) {
                             
-                            Text("Schedule \nOverwelming")
+                            Text("Sad, Lonely \nBored")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 1 ? Color(.cyan) : ColorManager .grey1)
+                        .background(mood == 1 ? Color(.cyan) : ColorManager .pmbc_pink)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -140,7 +141,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 2 ? Color(.cyan) : ColorManager .grey1)
+                        .background(mood == 2 ? Color(.cyan) : ColorManager .pmbc_pink)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -157,7 +158,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 3 ? Color(.cyan) : ColorManager .grey1)
+                        .background(mood == 3 ? Color(.cyan) : ColorManager .pmbc_pink)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -171,12 +172,12 @@ struct AtmosphereMain2: View {
                             mood = 4
                         }) {
                             
-                            Text("Exciting NEWS!")
+                            Text("My Exciting \nNEWS!")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 4 ? Color(.systemGreen) : ColorManager .grey1)
+                        .background(mood == 4 ? Color(.systemGreen) : Color .yellow)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -188,12 +189,12 @@ struct AtmosphereMain2: View {
                             mood = 5
                         }) {
                             
-                            Text("Sad, Lonely / \nBored")
+                            Text("I really \n'wish' that...")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 5 ? Color(.cyan) : ColorManager .grey1)
+                        .background(mood == 5 ? Color(.cyan) : ColorManager .orange1)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -210,12 +211,12 @@ struct AtmosphereMain2: View {
                             mood = 6
                         }) {
                             
-                            Text("My Crush")
+                            Text("My Crush \nUpdate")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 6 ? Color(.systemYellow) : ColorManager .grey1)
+                        .background(mood == 6 ? Color(.systemYellow) : ColorManager .pmbc_green)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -227,12 +228,12 @@ struct AtmosphereMain2: View {
                             mood = 7
                         }) {
                             
-                            Text("Ton of IG\n'Likes' on Post")
+                            Text("Ton of 'Likes' \non IG Post")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 7 ? Color(.systemYellow) : ColorManager .grey1)
+                        .background(mood == 7 ? Color(.systemYellow) : ColorManager .pmbc_green)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -244,12 +245,12 @@ struct AtmosphereMain2: View {
                             mood = 8
                         }) {
                             
-                            Text("I really \nWISH that ...")
+                            Text("Found \nNEW Music")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 8 ? Color(.systemYellow) : ColorManager .grey1)
+                        .background(mood == 8 ? Color(.systemPurple) : ColorManager .purple3)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -266,7 +267,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 9 ? Color(.systemPurple) : ColorManager .grey1)
+                        .background(mood == 9 ? Color(.systemPurple) : ColorManager .purple3)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -294,11 +295,11 @@ struct AtmosphereMain2: View {
                             .foregroundColor(ColorManager .grey3)
                             .opacity(0.5)
                         
-                        TextField("Give friend(s) some details ...", text: $summary)
+                        TextField("Type some quick details here ...", text: $summary)
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager.purple5)
                             .padding(.horizontal, 55)
-                            .onReceive(Just(summary)) { _ in limitText(80) }
+                            .onReceive(Just(summary)) { _ in limitText(100) }
                         
                         
                     }
@@ -412,6 +413,7 @@ struct AtmosphereMain2: View {
                         
                         
                         Button(action: {
+                            counter += 1
                             shareButtonTapped()
                         },
                                label: {
@@ -423,31 +425,31 @@ struct AtmosphereMain2: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("We let your friend(s) know your day just changed. \n\n Now they can lend support on difficult days - or cheer with you on good news. \n\nSupportive friends are hard to find. Hold onto them!", isPresented: $showingAlert) {
+                                .alert("Non-judgemental, jealous and supportive friends are hard to find. \n\nNow they can lend support on difficult days - or cheer with you on good news. \n\nHold onto them!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                            
                         })
-                        
+                        .confettiCannon(counter: $counter)
                         
                 VStack {
                     
                     Spacer()
-                        .frame(height: 10)
-                    
-                    Text("Friends supporting on difficult days")
-                        .font(.system(size: 20))
-
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(ColorManager .grey3)
-                        .multilineTextAlignment(.center)
-                    
-                    Text("Cheering on bright days")
-                        .font(.system(size: 20))
-
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(ColorManager .grey3)
-                        .multilineTextAlignment(.center)
+                        .frame(height: 20)
+//
+//                    Text("Friends supporting on difficult days")
+//                        .font(.system(size: 20))
+//
+//                        .fontWeight(.ultraLight)
+//                        .foregroundColor(ColorManager .grey3)
+//                        .multilineTextAlignment(.center)
+//
+//                    Text("Cheering on bright days")
+//                        .font(.system(size: 20))
+//
+//                        .fontWeight(.ultraLight)
+//                        .foregroundColor(ColorManager .grey3)
+//                        .multilineTextAlignment(.center)
                             
                         }
                         
