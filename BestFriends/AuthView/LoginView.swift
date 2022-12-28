@@ -111,7 +111,7 @@ struct LoginView: View {
                             .font(.system(size: 25))
                             .underline()
                             .frame(width: 150, height: 30)
-                            .foregroundColor(ColorManager.purple5)
+                            .foregroundColor(ColorManager.purple3)
                     }
                 }
             }

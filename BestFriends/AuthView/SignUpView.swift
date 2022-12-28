@@ -178,7 +178,7 @@ struct SignUpView: View {
                     .underline()
                     .font(.system(size: 25))
                     .frame(width: 150, height: 50)
-                    .foregroundColor(ColorManager.purple5)
+                    .foregroundColor(ColorManager.purple3)
                     .onTapGesture {
                         sessionManager.showLogin()
                     }

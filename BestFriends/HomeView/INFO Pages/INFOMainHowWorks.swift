@@ -38,7 +38,7 @@ struct INFOMainHowWorks: View {
                     .foregroundColor(ColorManager.grey3)
                 
                 
-                Text("users everywhere are excited to build more ...")
+                Text("where users share life's emotional experiences.")
                     .italic()
                     .font(.system(size: 17))
                     .fontWeight(.light)
@@ -48,7 +48,7 @@ struct INFOMainHowWorks: View {
                 Spacer()
                     .frame(height: 6)
                 
-                Text("resilient, happier, emotionally closer")
+                Text("building resilient, emotionally closer")
                 
                     .font(.system(size: 22))
                     .fontWeight(.regular)
