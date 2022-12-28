@@ -80,7 +80,7 @@ struct InfoInsideChat: View {
                         Spacer ()
                             .frame(height: 20)
 
-                        Text("It will vibrate for a few seconds")
+                        Text("It will vibrate for a second")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)

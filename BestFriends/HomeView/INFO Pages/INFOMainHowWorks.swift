@@ -42,6 +42,7 @@ struct INFOMainHowWorks: View {
                 
                 
                 Text("users share their live's")
+
                     .font(.system(size: 22))
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
@@ -252,11 +253,11 @@ struct INFOMainHowWorks: View {
                             .foregroundColor(ColorManager.grey4)
                         
                         Text("Positive Friendships")
-                            .font(.system(size: 25))
+                        
+                            .font(.system(size: 22))
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple3)
-                           
+                            .foregroundColor(ColorManager.grey4)
                         
                         Spacer()
                             .frame(height: 60)

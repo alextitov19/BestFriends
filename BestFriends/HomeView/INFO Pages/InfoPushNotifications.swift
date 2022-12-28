@@ -11,9 +11,9 @@ import SwiftUI
 import AVKit
 
 struct InfoPushNotifications: View {
-   
+    
     let user: User
-   
+    
     var body: some View {
         
         ZStack {
@@ -22,7 +22,7 @@ struct InfoPushNotifications: View {
                 .ignoresSafeArea()
                 .onAppear()
             
-        
+            
             
             
             VStack {
@@ -34,7 +34,7 @@ struct InfoPushNotifications: View {
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey2)
-             
+                
                 
                 ZStack {
                     
@@ -54,7 +54,7 @@ struct InfoPushNotifications: View {
                         Spacer ()
                             .frame(height: 100)
                         
-                        Text("Little tired of toxic comments")
+                        Text("Little tired of toxic 'comments'")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
@@ -79,7 +79,7 @@ struct InfoPushNotifications: View {
                             .foregroundColor(ColorManager.grey3)
                         
                         Spacer ()
-                            .frame(height: 40)
+                            .frame(height: 15)
                         
                         Text("Then watch for")
                             .italic()
@@ -95,18 +95,20 @@ struct InfoPushNotifications: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.grey3)
                         
-                   
-                        
-                           Spacer ()
+                        VStack {
+                       
+                            
+                            
+                            Spacer ()
                                 .frame(height: 100)
-                   
+                            
+                        }
                     }
                 }
             }
         }
+        
     }
-    
 }
- 
 
 

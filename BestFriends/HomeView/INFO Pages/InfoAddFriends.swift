@@ -97,18 +97,23 @@ struct InfoAddFriends: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.grey2)
 
-
+                        
                         Spacer ()
-                            .frame(height: 20)
-//                        Text("Tap image to see next friend's image.")
-//                            .italic()
-//                            .font(.system(size: 20))
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(ColorManager.grey2)
-//
-//
-//
+                            .frame(height: 30)
+                        
+                        Text("* We don't allow 'comments' on these images")
+                            .italic()
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .black)
+                       
+                        Text("reducing social media's \ntoxic 'comparison' issues")
+                            .italic()
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .black)
                         
                            Spacer ()
                                 .frame(height: 100)
