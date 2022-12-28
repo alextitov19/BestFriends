@@ -79,7 +79,7 @@ struct InfoPushNotifications: View {
                             .foregroundColor(ColorManager.grey3)
                         
                         Spacer ()
-                            .frame(height: 15)
+                            .frame(height: 40)
                         
                         Text("Then watch for")
                             .italic()
