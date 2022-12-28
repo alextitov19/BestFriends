@@ -38,7 +38,7 @@ struct INFOMainHowWorks: View {
                     .foregroundColor(ColorManager.grey3)
                 
                 
-                Text("where users share life's emotional experiences.")
+                Text("where users share life's emotional experiences,")
                     .italic()
                     .font(.system(size: 17))
                     .fontWeight(.light)

@@ -171,7 +171,7 @@ struct AtmosphereMain2: View {
                             mood = 4
                         }) {
                             
-                            Text("Image \nIssues")
+                            Text("Exciting NEWS!")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -210,7 +210,7 @@ struct AtmosphereMain2: View {
                             mood = 6
                         }) {
                             
-                            Text("Exciting \nNEWS!")
+                            Text("My Crush")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -227,7 +227,7 @@ struct AtmosphereMain2: View {
                             mood = 7
                         }) {
                             
-                            Text("Ton of \n'Likes' on Post")
+                            Text("Ton of IG\n'Likes' on Post")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -261,7 +261,7 @@ struct AtmosphereMain2: View {
                             mood = 9
                         }) {
                             
-                            Text("Happy")
+                            Text("Found new \nLove")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
