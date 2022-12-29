@@ -41,9 +41,9 @@ struct INFOMainHowWorks: View {
                     .frame(height: 12)
                 
                 
-                Text("Everyone shares their 'in-the-moment'")
+                Text("Everyone shareing their 'in-the-moment'")
 
-                    .font(.system(size: 19))
+                    .font(.system(size: 17))
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.purple3)
@@ -245,9 +245,9 @@ struct INFOMainHowWorks: View {
                         Spacer()
                             .frame(height: 30)
                         
-                        Text("Building resilient, emotionally closer")
+                        Text("Building more resilient, emotionally closer")
                         
-                            .font(.system(size: 19))
+                            .font(.system(size: 17))
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.purple4)
