@@ -38,18 +38,18 @@ struct INFOMainHowWorks: View {
                     .foregroundColor(ColorManager.grey3)
                 
                 Spacer()
-                    .frame(height: 6)
+                    .frame(height: 12)
                 
                 
-                Text("Everyone shares their 'in-this-moment'")
+                Text("Everyone shares their 'in-the-moment'")
 
-                    .font(.system(size: 22))
+                    .font(.system(size: 19))
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.purple3)
                 
                 
-                Text("Emotional Experiences")
+                Text("Emotional Awareness")
                     .font(.system(size: 25))
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
@@ -245,19 +245,19 @@ struct INFOMainHowWorks: View {
                         Spacer()
                             .frame(height: 30)
                         
-                        Text("building resilient, emotionally closer")
+                        Text("Building resilient, emotionally closer")
                         
-                            .font(.system(size: 22))
+                            .font(.system(size: 19))
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.grey4)
+                            .foregroundColor(ColorManager.purple4)
                         
                         Text("Positive Friendships")
                         
                             .font(.system(size: 22))
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.grey4)
+                            .foregroundColor(ColorManager.purple5)
                         
                         Spacer()
                             .frame(height: 60)
