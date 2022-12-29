@@ -49,7 +49,7 @@ struct INFOMainHowWorks: View {
                     .foregroundColor(ColorManager.purple3)
                 
                 
-                Text("Emotional Awareness")
+                Text("Emotional Adventures")
                     .font(.system(size: 25))
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
