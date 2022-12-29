@@ -41,7 +41,7 @@ struct INFOMainHowWorks: View {
                     .frame(height: 6)
                 
                 
-                Text("users share their live's")
+                Text("Everyone shares their 'in-this-moment'")
 
                     .font(.system(size: 22))
                     .fontWeight(.regular)

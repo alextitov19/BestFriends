@@ -119,7 +119,7 @@ struct AtmosphereMain2: View {
                             mood = 1
                         }) {
                             
-                            Text("Sad, Lonely \nBored")
+                            Text("Relationship \nDrama")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -136,7 +136,7 @@ struct AtmosphereMain2: View {
                             mood = 2
                         }) {
                             
-                            Text("Relationship \nDrama")
+                            Text("Family \nIssues")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -153,7 +153,7 @@ struct AtmosphereMain2: View {
                             mood = 3
                         }) {
                             
-                            Text("Family \nIssues")
+                            Text("Sad, Lonely \nBored")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -189,7 +189,7 @@ struct AtmosphereMain2: View {
                             mood = 5
                         }) {
                             
-                            Text("I really \n'wish' that...")
+                            Text("I really \n'HOPE' that...")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -211,7 +211,7 @@ struct AtmosphereMain2: View {
                             mood = 6
                         }) {
                             
-                            Text("My Crush \nUpdate")
+                            Text("My Crush \nUpdates")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }

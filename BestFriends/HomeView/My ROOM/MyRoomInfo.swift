@@ -132,18 +132,21 @@ struct MyRoomInfo: View {
                         
                        
                         Spacer ()
-                            .frame(height: 60)
+                            .frame(height: 65)
                         
                         Text("safe in my")
                             .font(.system(size: 20))
                             .foregroundColor(.white)
                             .fontWeight(.ultraLight)
                             .multilineTextAlignment(.center)
-                        Text("ROOM")
-                            .font(.system(size: 30))
+                        Text("SILENCE")
+                            .font(.system(size: 22))
                             .foregroundColor(.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
+                        
+                        Spacer ()
+                            .frame(height: 35)
                    
                                 Text("Lock Room")
                                     .fontWeight(.light)
