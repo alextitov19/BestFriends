@@ -158,7 +158,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 3 ? Color(.cyan) : ColorManager .pmbc_pink)
+                        .background(mood == 3 ? Color(.cyan) : ColorManager .pmbc_blue)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
