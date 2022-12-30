@@ -51,20 +51,20 @@ struct AtmosphereMain2: View {
 
             
             VStack {
-                
-                Text("Sharing LIFE")
-                    .font(.system(size: 20))
-
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(ColorManager .grey4)
-                    .multilineTextAlignment(.center)
-                
-                Text("with your trusted Friends")
-                    .font(.system(size: 20))
-
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(ColorManager .grey4)
-                    .multilineTextAlignment(.center)
+//
+//                Text("Sharing LIFE")
+//                    .font(.system(size: 20))
+//
+//                    .fontWeight(.ultraLight)
+//                    .foregroundColor(ColorManager .grey4)
+//                    .multilineTextAlignment(.center)
+//
+//                Text("with your trusted Friends")
+//                    .font(.system(size: 20))
+//
+//                    .fontWeight(.ultraLight)
+//                    .foregroundColor(ColorManager .grey4)
+//                    .multilineTextAlignment(.center)
                 
                 
                 HStack {
@@ -295,7 +295,7 @@ struct AtmosphereMain2: View {
                             .foregroundColor(ColorManager .grey3)
                             .opacity(0.5)
                         
-                        TextField("Type some quick details here ...", text: $summary)
+                        TextField("(*Required) Type details here...", text: $summary)
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager.purple5)
                             .padding(.horizontal, 55)
@@ -433,7 +433,8 @@ struct AtmosphereMain2: View {
                         .confettiCannon(counter: $counter)
                         
                 VStack {
-                    
+                    Spacer()
+                        .frame(height: 15)
                     NavigationLink(
                         destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends),
                         label: {
@@ -450,8 +451,7 @@ struct AtmosphereMain2: View {
                     
                     
                     
-                    Spacer()
-                        .frame(height: 20)
+              
 //
 //                    Text("Friends supporting on difficult days")
 //                        .font(.system(size: 20))
@@ -474,7 +474,7 @@ struct AtmosphereMain2: View {
                 }
 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 80)
                 
             }
         }
