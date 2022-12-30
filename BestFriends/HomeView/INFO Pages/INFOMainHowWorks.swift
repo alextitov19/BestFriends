@@ -83,12 +83,12 @@ struct INFOMainHowWorks: View {
                                 Image(systemName: "rectangle.fill")
                                     .resizable()
                                     .foregroundColor(ColorManager .purple2)
-                                    .frame(width: 45, height: 45)
+                                    .frame(width: 40, height: 40)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
                                     .opacity(0.95)
                                 
-                                Image("iconPhone40")
+                                Image("IconPhotoNew40")
                             }
                             NavigationLink(
                                 destination: InfoAddFriends(user: user),
@@ -115,12 +115,12 @@ struct INFOMainHowWorks: View {
                                 Image(systemName: "rectangle.fill")
                                     .resizable()
                                     .foregroundColor(ColorManager .purple2)
-                                    .frame(width: 45, height: 45)
+                                    .frame(width: 40, height: 40)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
                                     .opacity(0.95)
                                 
-                                Image("iconVibes37")
+                                Image("IconVibeNew40")
                             }
                             
                             NavigationLink(
@@ -147,12 +147,12 @@ struct INFOMainHowWorks: View {
                                 Image(systemName: "rectangle.fill")
                                     .resizable()
                                     .foregroundColor(ColorManager .purple2)
-                                    .frame(width: 45, height: 45)
+                                    .frame(width: 40, height: 40)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
                                     .opacity(0.95)
                                 
-                                Image("iconHug40")
+                                Image("IconHugNew40")
                             }
                             
                             
@@ -179,12 +179,12 @@ struct INFOMainHowWorks: View {
                                 Image(systemName: "rectangle.fill")
                                     .resizable()
                                     .foregroundColor(ColorManager .purple2)
-                                    .frame(width: 45, height: 45)
+                                    .frame(width: 40, height: 40)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
                                     .opacity(0.95)
                                 
-                                Image("iconNice35")
+                                Image("IconNiceNew40")
                             }
                             
                             NavigationLink(
@@ -212,13 +212,13 @@ struct INFOMainHowWorks: View {
                                 Image(systemName: "rectangle.fill")
                                     .resizable()
                                     .foregroundColor(ColorManager .purple2)
-                                    .frame(width: 45, height: 45)
+                                    .frame(width: 40, height: 40)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 
                                     .shadow(color: .purple, radius: 65, x: 30, y: 50)
                                     .opacity(0.95)
                                 
-                                Image("iconFight35")
+                                Image("IconFightNew40")
                             }
                             
                             
