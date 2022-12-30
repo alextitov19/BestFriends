@@ -20,14 +20,14 @@ struct FriendVaultTrackMoods: View {
     
     var body: some View {
         ZStack {
-            ColorManager.purple2
+            ColorManager.purple1
                 .ignoresSafeArea()
                 .onAppear(perform: loadData)
             
             VStack {
-                Text("Tracking My Moods")
-                    .font(.system(size: 40, weight: .light))
-                    .foregroundColor(.white)
+                Text("My daily 'Vibes'")
+                    .font(.system(size: 30, weight: .light))
+                    .foregroundColor(ColorManager .purple4)
                 
                 Spacer()
                     .frame(height: 30)
@@ -56,7 +56,7 @@ struct FriendVaultTrackMoods: View {
                                     
                                     Spacer()
                                 }
-                                .padding()
+                               .padding()
                                 
                                 //MARK: Mood Log sumary
                                 HStack {
@@ -90,7 +90,7 @@ struct FriendVaultTrackMoods: View {
                                 .padding()
                             }
                         }
-                        .frame(width: 300, height: 200)
+                        .frame(width: 320, height: 80)
                         .padding(.vertical)
                     }
                 }
