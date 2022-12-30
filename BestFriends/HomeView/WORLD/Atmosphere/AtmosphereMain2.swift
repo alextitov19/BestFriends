@@ -299,7 +299,7 @@ struct AtmosphereMain2: View {
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager.purple5)
                             .padding(.horizontal, 55)
-                            .onReceive(Just(summary)) { _ in limitText(100) }
+                            .onReceive(Just(summary)) { _ in limitText(45) }
                         
                         
                     }
