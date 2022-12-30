@@ -128,7 +128,7 @@ struct PlanetActionsView: View {
                                     .opacity(0.80)
 
                                 VStack {
-                                    Image("iconNice70")
+                                    Image("NiceIconNew2")
                   
                                 }
                             }
@@ -149,7 +149,7 @@ struct PlanetActionsView: View {
                                     .opacity(0.80)
                                 
                                 VStack {
-                                    Image("iconHug80 1")
+                                    Image("IconHugNew")
                               
                                 }
                             }
@@ -179,7 +179,7 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
 
-                                    Image("iconPhone80")
+                                    Image("IconPhotoNew")
 //
                       
 
@@ -279,7 +279,7 @@ struct PlanetActionsView: View {
                                 VStack {
                                     
                                     
-                                    Image("iconLock70")
+                                    Image("IconRoomNew")
                                     
 
                                     
@@ -302,7 +302,7 @@ struct PlanetActionsView: View {
                                     .opacity(0.80)
                                 VStack {
 
-                                    Image("iconVibes75")
+                                    Image("IconVibeNew")
 
                                 }
                             }
@@ -334,7 +334,7 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
                                     
-                                        Image("iconFight70")
+                                        Image("IconFightNew")
                                     
 
                                 }
