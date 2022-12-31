@@ -27,22 +27,22 @@ struct INFOMainHowWorks: View {
             
             
             VStack {
-                
-                
-                
-                Text("*For just 5 minutes - nightly at 8pm EST")
-                    .italic()
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey3)
-                
-                Spacer()
-                    .frame(height: 12)
-                
+//
+//
+//
+//                Text("*For just 5 minutes - nightly at 8pm EST")
+//                    .italic()
+//                    .font(.system(size: 15))
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(ColorManager.grey3)
+//
+//                Spacer()
+//                    .frame(height: 12)
+//
                 
                 Text("Everyone sharing their 'in-the-moment'")
-
+                
                     .font(.system(size: 17))
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
@@ -53,19 +53,19 @@ struct INFOMainHowWorks: View {
                     .font(.system(size: 25))
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.purple3)
+                    .foregroundColor(ColorManager.purple5)
                 
-           
+                
                 
                 VStack {
                     
-              
+                    
                     Spacer()
-                        .frame(height: 40)
+                        .frame(height: 20)
                     
                     
-                    Text("Features Walk-though")
-                        .font(.system(size: 30, weight: .bold))
+                    Text("Walk-though")
+                        .font(.system(size: 27, weight: .bold))
                         .foregroundColor(ColorManager .grey1)
                         .shadow(color: .purple, radius: 1, x: 0, y: 1)
                         .opacity(0.50)
@@ -74,7 +74,7 @@ struct INFOMainHowWorks: View {
                     
                     
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 10)
                     
                     VStack {
                         
@@ -252,7 +252,7 @@ struct INFOMainHowWorks: View {
                             .font(.system(size: 17))
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple4)
+                            .foregroundColor(ColorManager.purple3)
                         
                         Text("Positive Friendships")
                         
@@ -262,8 +262,25 @@ struct INFOMainHowWorks: View {
                             .foregroundColor(ColorManager.purple5)
                         
                         Spacer()
-                            .frame(height: 60)
+                            .frame(height: 65)
                         
+                        Button(action: {
+                            sessionManager.showLogin()
+                        },
+                               label: {
+                            Text("Got Notification - tap friend's planet. \nRe-tap planet to hide dropdown")
+                                .fontWeight(.thin)
+                                .frame(width: 300, height: 50)
+                                .foregroundColor(ColorManager.purple5)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 17))
+                                .background(ColorManager.orange3)
+                                .cornerRadius(10)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        })
+                        
+                        Spacer()
+                            .frame(height: 15)
                         
                         NavigationLink(
                             
@@ -280,21 +297,21 @@ struct INFOMainHowWorks: View {
                                 
                             }
                         )}
-                   
-
-                        
-                        Spacer()
-                            .frame(height: 80)
-                        
-                        
-                        
-                        
-                    }
+                    
+                    
+                    
+                    Spacer()
+                        .frame(height: 80)
+                    
+                    
+                    
+                    
                 }
-                
             }
+            
         }
     }
+}
     
 
 
