@@ -87,16 +87,20 @@ struct StartHere1: View {
                    
                     
 
-                    
-
                 
                 NavigationLink(destination: INFOPreload4(user: user, friends: friends, groups: groups), label: {
                     StartHereCircle (color: ColorManager.purple3, friendName: "See who's\nusing \nBestFriends")
                 })
                 .offset(x: showItems ? 140 : 0, y: showItems ? -120: 0)
               
-                    
-                    
+                 
+                
+         
+                
+                
+ 
+                
+                
                     
                     Image(systemName: "triangle.fill")
                         .resizable()
@@ -111,63 +115,81 @@ struct StartHere1: View {
                         
                         
                         Spacer ()
-                            .frame(height: 260)
+                            .frame(height: 320)
                         
                         Text("'settings'")
                             .font(.system(size: 20))
-                            .italic()
+                    
                             .foregroundColor(ColorManager .grey4)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         Text("'add friends'")
                             .font(.system(size: 20))
-                            .italic()
+                        
                             .foregroundColor(ColorManager .grey4)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         Text("'envisioned by'")
                             .font(.system(size: 20))
-                            .italic()
+                        
                             .foregroundColor(ColorManager .grey4)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                       
-//
-//                        Text("'happier friendships'")
-//                            .font(.system(size: 20))
-//                            .italic()
-//                            .foregroundColor(ColorManager .grey4)
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-                        
+
                         Text("'who's using BestFriends'")
                             .font(.system(size: 20))
-                            .italic()
+                            
                             .foregroundColor(ColorManager .grey4)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                        Spacer ()
-                            .frame(height: 60)
-                        
-                        Text("Please read Note:")
-                            .foregroundColor(.green)
-                            .font(.system(size: 30, weight: .light))
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                       
+                    
+                     
                         
                         VStack {
                             
-                            Text("Note; after receiving a push notification from \na friend, tap that friend's planet on homepage, \nthen tap the appropriate button \nfrom the dropdown menu.")
+                            
+                                                Spacer()
+                                                    .frame(height: 20)
+                            
+                            
+                                                    Link(destination: URL(string: "https://socialtechlabs.com/reporting-issues-in-bestfriends/")!) {
+                            
+                                                        Text("Report Issues")
+                                                            .fontWeight(.thin)
+                                                            .frame(width: 200, height: 30)
+                                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                            .font(.system(size: 25))
+                                                            .background(ColorManager.pmbc_green)
+                                                            .cornerRadius(10)
+                                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                                    }
+                            
+                                 
+                            Spacer ()
+                                .frame(height: 20)
+                            
+                            
+                            Text("Note")
+                                .foregroundColor(.green)
+                                .font(.system(size: 30, weight: .regular))
+                                .multilineTextAlignment(.center)
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            
+                            Text("After receiving a push notification from \na friend, tap that friend's planet on homepage, \nthen tap the appropriate button \nfrom the dropdown menu.")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .light))
                                 .multilineTextAlignment(.center)
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                             //                                    .opacity(0.50)
                             
-                            
+                            Spacer ()
+                                .frame(height: 100)
                         }
                     }
                     
-                    
+            
                     
                     
                     
