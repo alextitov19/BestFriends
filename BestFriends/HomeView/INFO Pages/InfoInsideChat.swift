@@ -43,9 +43,9 @@ struct InfoInsideChat: View {
                     
                     Image(systemName: "heart.fill")
                         .resizable()
-                        .foregroundColor(Color .pink)
-                        .frame(width: 400, height: 400)
-                        .shadow(color: .red, radius: 65, x: 30, y: 50)
+                        .foregroundColor(ColorManager .grey2)
+                        .frame(width: 330, height: 330)
+                        .shadow(color: .purple, radius: 65, x: 30, y: 50)
                         .opacity(0.8)
                     
                     
