@@ -84,7 +84,7 @@ struct PlanetBell: View {
                                             .foregroundColor(.white)
                                             .font(.system(size: 20))
                                             .background(ColorManager.grey4)
-                                            .cornerRadius(15)
+                                            .cornerRadius(10)
                                             .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                                             .opacity(0.70)
                                         
