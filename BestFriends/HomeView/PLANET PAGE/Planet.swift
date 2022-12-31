@@ -81,42 +81,23 @@ struct PlanetActionsView: View {
         
         VStack {
             
-//
-//            HStack {
-//                Text("<")
-//                    .foregroundColor(.white)
-//                    .font(.system(size: 20, weight: .light))
-//                    .multilineTextAlignment(.leading)
-//                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                    .opacity(0.50)
-//                
-//                
-//                Image("bell")
-//                    .frame(width: 10, height: 10)
-////                    .foregroundColor(.white)
-////                    .font(.system(size: 20))
-////                    .background(Color .black)
-////                    .cornerRadius(15)
-////                    .shadow(color: Color(.gray), radius: 1, x: 1, y: 1)
-////                    .opacity(0.70)
-//                
-//            }
-//            
-            
-            
-            NavigationLink(
-                destination: EmptyView(),
+
+            Button(action: {
+                sessionManager.showLogin()
+            },
                 label: {
-                   
-                    Image("bell")
-                        .frame(width: 60, height: 30)
-                        .foregroundColor(.white)
-                        .font(.system(size: 20))
-                        .background(ColorManager.grey3)
-                      .cornerRadius(15)
-                      .shadow(color: Color(.gray), radius: 1, x: 1, y: 1)
-                      .opacity(0.70)
+                Image("bell")
+                    .frame(width: 60, height: 30)
+                    .foregroundColor(.white)
+                    .font(.system(size: 20))
+                    .background(ColorManager.grey3)
+                  .cornerRadius(15)
+                  .shadow(color: Color(.gray), radius: 1, x: 1, y: 1)
+                  .opacity(0.70)
+                
                 })
+            
+
             
             NavigationLink(
                 destination: StartHere1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
