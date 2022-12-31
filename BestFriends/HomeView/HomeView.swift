@@ -111,11 +111,16 @@ struct HomeView: View {
                 
             
                     VStack {
-                        
+                        Text("got notification - tap friend's planet")
+                            .font(.system(size: 15))
+                            .italic()
+                            .foregroundColor(ColorManager .grey2)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
                  
-//                    
-//                        Spacer()
-//                            .frame(height: 20)
+                    
+                        Spacer()
+                            .frame(height: 20)
                     HStack {
                         
                         if planets.count > 0 && !focusPlanet {
