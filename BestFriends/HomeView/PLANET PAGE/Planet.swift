@@ -81,25 +81,52 @@ struct PlanetActionsView: View {
         
         VStack {
             
-
+//
+//            HStack {
+//                Text("<")
+//                    .foregroundColor(.white)
+//                    .font(.system(size: 20, weight: .light))
+//                    .multilineTextAlignment(.leading)
+//                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                    .opacity(0.50)
+//                
+//                
+//                Image("bell")
+//                    .frame(width: 10, height: 10)
+////                    .foregroundColor(.white)
+////                    .font(.system(size: 20))
+////                    .background(Color .black)
+////                    .cornerRadius(15)
+////                    .shadow(color: Color(.gray), radius: 1, x: 1, y: 1)
+////                    .opacity(0.70)
+//                
+//            }
+//            
             
-            Text("< tap")
-                .foregroundColor(.white)
-                .font(.system(size: 17, weight: .light))
-                .multilineTextAlignment(.leading)
-                .shadow(color: .black, radius: 1, x: 0, y: 1)
-                .opacity(0.50)
             
+            NavigationLink(
+                destination: EmptyView(),
+                label: {
+                   
+                    Image("bell")
+                        .frame(width: 60, height: 30)
+                        .foregroundColor(.white)
+                        .font(.system(size: 20))
+                        .background(ColorManager.grey3)
+                      .cornerRadius(15)
+                      .shadow(color: Color(.gray), radius: 1, x: 1, y: 1)
+                      .opacity(0.70)
+                })
             
             NavigationLink(
                 destination: StartHere1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                 label: {
                    
-                    Image("iconSettings15")
+                    Image("settings icon")
                         .frame(width: 60, height: 30)
                         .foregroundColor(.white)
                         .font(.system(size: 20))
-                        .background(ColorManager.grey4)
+                        .background(ColorManager.grey3)
                       .cornerRadius(15)
                       .shadow(color: Color(.gray), radius: 1, x: 1, y: 1)
                       .opacity(0.70)
