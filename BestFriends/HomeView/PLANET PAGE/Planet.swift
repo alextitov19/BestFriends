@@ -13,6 +13,8 @@ struct Planet: View {
     let atmosphere: Atmosphere
 //    let groups: [Group]
     
+//    @State private var showingAlert = false
+    
     var body: some View {
         VStack {
             PlanetView(planet: atmosphere.planet, mood: atmosphere.mood)
@@ -71,6 +73,8 @@ struct PlanetActionsView: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
+    @State private var showingAlert = false
+    
     let user: User
     let atmosphere: Atmosphere
     let friends: [User]
@@ -90,12 +94,14 @@ struct PlanetActionsView: View {
                     .frame(width: 60, height: 30)
                     .foregroundColor(.white)
                     .font(.system(size: 20))
-                    .background(ColorManager.grey3)
+                    .background(Color .black)
                   .cornerRadius(15)
-                  .shadow(color: Color(.gray), radius: 1, x: 1, y: 1)
+                  .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                   .opacity(0.70)
-                
-                })
+//                  .alert("Your HUG was sent - thanks for paying attention to your friends 'Vibe'!", isPresented: $showingAlert) {
+//                      Button("OK", role: .cancel) { }
+              
+            })
             
 
             
@@ -107,9 +113,9 @@ struct PlanetActionsView: View {
                         .frame(width: 60, height: 30)
                         .foregroundColor(.white)
                         .font(.system(size: 20))
-                        .background(ColorManager.grey3)
+                        .background(Color .black)
                       .cornerRadius(15)
-                      .shadow(color: Color(.gray), radius: 1, x: 1, y: 1)
+                      .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                       .opacity(0.70)
                 })
             
