@@ -85,25 +85,46 @@ struct PlanetActionsView: View {
         
         VStack {
             
-
-            Button(action: {
-                sessionManager.showLogin()
-            },
-                label: {
-                Image("bell")
-                    .frame(width: 60, height: 30)
-                    .foregroundColor(.white)
-                    .font(.system(size: 20))
-                    .background(Color .black)
-                  .cornerRadius(15)
-                  .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                  .opacity(0.70)
-//                  .alert("Your HUG was sent - thanks for paying attention to your friends 'Vibe'!", isPresented: $showingAlert) {
-//                      Button("OK", role: .cancel) { }
-              
-            })
+//
+//            Button(action: {
+//                print("button pressed")
+//
+//
+//
+//            }) {
+//                Image("bell")
+//            }
             
-
+//            Button(action: {
+//                sessionManager.showLogin()
+//            },
+//                label: {
+//                Image("bell")
+//                    .frame(width: 60, height: 30)
+//                    .foregroundColor(.white)
+//                    .font(.system(size: 20))
+//                    .background(Color .black)
+//                  .cornerRadius(15)
+//                  .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                  .opacity(0.70)
+////                  .alert("Your HUG was sent - thanks for paying attention to your friends 'Vibe'!", isPresented: $showingAlert) {
+////                      Button("OK", role: .cancel) { }
+//
+//            })
+            
+            NavigationLink(
+                destination: PlanetBell(user: user),
+                label: {
+                   
+                    Image("bell")
+                        .frame(width: 60, height: 30)
+                        .foregroundColor(.white)
+                        .font(.system(size: 20))
+                        .background(Color .black)
+                      .cornerRadius(15)
+                      .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                      .opacity(0.70)
+                })
             
             NavigationLink(
                 destination: StartHere1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),

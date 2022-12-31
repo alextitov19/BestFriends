@@ -132,6 +132,7 @@
 		CF381A5428283FA000B3719E /* Step1FG_AcceptedSolutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A5328283FA000B3719E /* Step1FG_AcceptedSolutions.swift */; };
 		CF381A56282842EA00B3719E /* Step2FG_NewSolutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A55282842EA00B3719E /* Step2FG_NewSolutions.swift */; };
 		CF381A592829205800B3719E /* OurMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A582829205800B3719E /* OurMission.swift */; };
+		CF387E2A2960D5B6003A85D8 /* PlanetBell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF387E292960D5B6003A85D8 /* PlanetBell.swift */; };
 		CF39F17C292C5F8000927A3C /* StartHere1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF39F17B292C5F8000927A3C /* StartHere1.swift */; };
 		CF3AE3B528F9F5F8002584A6 /* TeenVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3AE3B428F9F5F8002584A6 /* TeenVideo.swift */; };
 		CF3B42F2293715A800EE1D84 /* SaySomethingNice4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B42F1293715A800EE1D84 /* SaySomethingNice4.swift */; };
@@ -401,6 +402,7 @@
 		CF381A5328283FA000B3719E /* Step1FG_AcceptedSolutions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1FG_AcceptedSolutions.swift; sourceTree = "<group>"; };
 		CF381A55282842EA00B3719E /* Step2FG_NewSolutions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2FG_NewSolutions.swift; sourceTree = "<group>"; };
 		CF381A582829205800B3719E /* OurMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurMission.swift; sourceTree = "<group>"; };
+		CF387E292960D5B6003A85D8 /* PlanetBell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetBell.swift; sourceTree = "<group>"; };
 		CF39F17B292C5F8000927A3C /* StartHere1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartHere1.swift; sourceTree = "<group>"; };
 		CF3AE3B428F9F5F8002584A6 /* TeenVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeenVideo.swift; sourceTree = "<group>"; };
 		CF3B42F1293715A800EE1D84 /* SaySomethingNice4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingNice4.swift; sourceTree = "<group>"; };
@@ -1400,6 +1402,7 @@
 			isa = PBXGroup;
 			children = (
 				7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */,
+				CF387E292960D5B6003A85D8 /* PlanetBell.swift */,
 			);
 			path = "PLANET PAGE";
 			sourceTree = "<group>";
@@ -1852,6 +1855,7 @@
 				CFC0EE7C290805E7006B3FAA /* InfoCreateChatRm.swift in Sources */,
 				7A33409429582725005C4CE1 /* NiceMessageModel.swift in Sources */,
 				7ACF912C2767C29A00088ACA /* CustomDivider.swift in Sources */,
+				CF387E2A2960D5B6003A85D8 /* PlanetBell.swift in Sources */,
 				7AA2514D2874AB7B0018C97E /* PhotoPopModels.swift in Sources */,
 				CFAB542828211BAC00BBF502 /* ParentsFighting.swift in Sources */,
 				CF3B65D52801ED660003A714 /* GetInvolvedView.swift in Sources */,
