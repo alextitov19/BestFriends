@@ -263,21 +263,21 @@ struct INFOMainHowWorks: View {
                         
                         Spacer()
                             .frame(height: 65)
-                        
-                        Button(action: {
-                            sessionManager.showLogin()
-                        },
-                               label: {
-                            Text("Got Notification - tap friend's planet. \nRe-tap planet to hide dropdown")
-                                .fontWeight(.thin)
-                                .frame(width: 300, height: 50)
-                                .foregroundColor(ColorManager.purple5)
-//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 17))
-                                .background(ColorManager.orange3)
-                                .cornerRadius(10)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
+//
+//                        Button(action: {
+//                            sessionManager.showLogin()
+//                        },
+//                               label: {
+//                            Text("Got Notification - tap friend's planet. \nRe-tap planet to hide dropdown")
+//                                .fontWeight(.thin)
+//                                .frame(width: 300, height: 50)
+//                                .foregroundColor(ColorManager.purple5)
+////                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 17))
+//                                .background(ColorManager.orange3)
+//                                .cornerRadius(10)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        })
                         
                         Spacer()
                             .frame(height: 15)
@@ -292,7 +292,7 @@ struct INFOMainHowWorks: View {
                                     .frame(width: 200, height: 30)
                                     .font(.system(size: 25))
                                     .background(ColorManager.pmbc_green)
-                                    .cornerRadius(10)
+                                    .cornerRadius(7)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 
                             }
@@ -300,6 +300,24 @@ struct INFOMainHowWorks: View {
                     
                     
                     
+                    Spacer()
+                        .frame(height: 20)
+                    
+                    NavigationLink(
+                        
+                        destination: PlanetBell(user: user),
+                        label: {
+                            Text("How Push Notifications Work")
+                                .fontWeight(.thin)
+                                .foregroundColor(Color.white)
+                                .frame(width: 310, height: 30)
+                                .font(.system(size: 25))
+                                .background(ColorManager.pmbc_green)
+                                .cornerRadius(7)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            
+                        }
+                    )}
                     Spacer()
                         .frame(height: 80)
                     
@@ -311,7 +329,7 @@ struct INFOMainHowWorks: View {
             
         }
     }
-}
+
     
 
 
