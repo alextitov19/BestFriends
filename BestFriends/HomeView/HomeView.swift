@@ -35,56 +35,10 @@ struct HomeView: View {
             
             ZStack {
                 
-//                Color .black
-//                  .ignoresSafeArea()
-//                  .onAppear()
-                
-                
-                            Image("purpleBackground")
+                           Image("purpleBackground")
                                 .resizable()
                                 .ignoresSafeArea()
                                 .scaledToFill()
-//                                .onAppear(perform: loadData)
-
-                
-                
-                //
-//                //            AdPlayerView(name: "background_1")
-//                //                .ignoresSafeArea()
-//                //                .blendMode(.screen)
-//
-//
-//                             ColorManager.grey4
-//                                 .ignoresSafeArea()
-//                                 .onAppear()
-//
-//                 //            Image("blueBackground")
-//                 //                .resizable()
-//                 //                .ignoresSafeArea()
-//                                 .scaledToFill()
-//                //                 .onAppear(perform: loadData)
-//                //                 .sheet(isPresented: $isShowPhotoLibrary) {
-//                //                     ImagePicker(image: $attachmentImage, sourceType: .photoLibrary)
-//                //                         .onDisappear { createPhotoPop() }
-//
-//                            AdPlayerView(name: "background_1")
-//                                          .ignoresSafeArea()
-//                                           .blendMode(.screen)
-//
-             
-                
-//                ColorManager .grey4
-//                  .ignoresSafeArea()
-//                  .onAppear()
-//                
-//                ColorManager .orange5
-//                  .ignoresSafeArea()
-//                  .onAppear()
-                
-                // Background Image...
-//                Image("purpleBackground")
-//                    .resizable()
-//                    .scaledToFill()
                     .ignoresSafeArea()
                     .onAppear {
                         if RestApi.instance.needLogin {
