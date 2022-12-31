@@ -267,14 +267,14 @@ struct INFOMainHowWorks: View {
                         
                         NavigationLink(
                             
-                            destination: SettingsNotificationsView(user: user),
+                            destination: InviteView(user: user),
                             label: {
-                                Text("Invite Friends / Settings")
+                                Text("Invite Friends")
                                     .fontWeight(.thin)
                                     .foregroundColor(Color.white)
-                                    .frame(width: 280, height: 30)
+                                    .frame(width: 200, height: 30)
                                     .font(.system(size: 25))
-                                    .background(ColorManager.purple3)
+                                    .background(ColorManager.pmbc_green)
                                     .cornerRadius(10)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 
