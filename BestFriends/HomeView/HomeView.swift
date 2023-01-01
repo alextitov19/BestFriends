@@ -293,7 +293,7 @@ struct HomeView: View {
                         
                         HStack {
                             NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
-                                Text("Friend 'Vibe' Alert")
+                                Text("Friend's 'Vibe' Alert")
                                     .fontWeight(.regular)
                                     .frame(width: 255, height: 30)
                                     .foregroundColor(.white)
