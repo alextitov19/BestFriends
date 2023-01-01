@@ -318,6 +318,8 @@ struct INFOMainHowWorks: View {
                             
                         }
                     )}
+                
+                
                     Spacer()
                         .frame(height: 80)
                     

@@ -115,7 +115,7 @@ struct StartHere1: View {
                         
                         
                         Spacer ()
-                            .frame(height: 320)
+                            .frame(height: 240)
                         
                         Text("'settings'")
                             .font(.system(size: 20))
@@ -166,24 +166,42 @@ struct StartHere1: View {
                                                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                                     }
                             
-                                 
-                            Spacer ()
+                            Spacer()
                                 .frame(height: 20)
                             
-                            
-                            Text("Note")
-                                .foregroundColor(.green)
-                                .font(.system(size: 30, weight: .regular))
-                                .multilineTextAlignment(.center)
-                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            
-                            Text("After receiving a push notification from \na friend, tap that friend's planet on homepage, \nthen tap the appropriate button \nfrom the dropdown menu.")
-                                .foregroundColor(.white)
-                                .font(.system(size: 15, weight: .light))
-                                .multilineTextAlignment(.center)
-                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            //                                    .opacity(0.50)
-                            
+                            NavigationLink(
+                                
+                                destination: PlanetBell(user: user),
+                                label: {
+                                    Text("How Push Notifications Work")
+                                        .fontWeight(.thin)
+                                        .foregroundColor(Color.white)
+                                        .frame(width: 310, height: 30)
+                                        .font(.system(size: 25))
+                                        .background(ColorManager.pmbc_green)
+                                        .cornerRadius(7)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                    
+                                }
+                            )}
+                        
+//                            Spacer ()
+//                                .frame(height: 20)
+//
+//
+//                            Text("Note")
+//                                .foregroundColor(.green)
+//                                .font(.system(size: 30, weight: .regular))
+//                                .multilineTextAlignment(.center)
+//                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+//                            Text("After receiving a push notification from \na friend, tap that friend's planet on homepage, \nthen tap the appropriate button \nfrom the dropdown menu.")
+//                                .foregroundColor(.white)
+//                                .font(.system(size: 15, weight: .light))
+//                                .multilineTextAlignment(.center)
+//                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                            //                                    .opacity(0.50)
+//
                             Spacer ()
                                 .frame(height: 100)
                         }
@@ -233,7 +251,7 @@ struct StartHere1: View {
                 }
             }
         }
-    }
     
     
-//}
+    
+

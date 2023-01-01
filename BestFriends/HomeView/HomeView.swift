@@ -260,9 +260,9 @@ struct HomeView: View {
 //                            })
                             NavigationLink(destination: SaySomethingNice7(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
                                            label: {
-                                Text("Friend sent 'NICE' message")
-                                    .fontWeight(.light)
-                                    .frame(width: 240, height: 29)
+                                Text("Friend said something 'Nice'")
+                                    .fontWeight(.regular)
+                                    .frame(width: 255, height: 29)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
@@ -278,9 +278,9 @@ struct HomeView: View {
                         HStack {
                             NavigationLink(destination: VirtualHug(),
                                            label: {
-                                Text("Friend sent virtual HUG")
-                                    .fontWeight(.light)
-                                    .frame(width: 240, height: 30)
+                                Text("yes, yes, yes - You got a HUG")
+                                    .fontWeight(.regular)
+                                    .frame(width: 255, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
@@ -293,9 +293,9 @@ struct HomeView: View {
                         
                         HStack {
                             NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
-                                Text("Friend set NEW 'Vibe'")
-                                    .fontWeight(.light)
-                                    .frame(width: 240, height: 30)
+                                Text("Friend 'Vibe' Alert")
+                                    .fontWeight(.regular)
+                                    .frame(width: 255, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
@@ -333,9 +333,9 @@ struct HomeView: View {
                             
                             NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
                                            label: {
-                                Text("Friend wants to resolve fight")
-                                    .fontWeight(.light)
-                                    .frame(width: 240, height: 30)
+                                Text("It's 'Fix-a-Fight' Time")
+                                    .fontWeight(.regular)
+                                    .frame(width: 255, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
@@ -344,9 +344,9 @@ struct HomeView: View {
                             
                             NavigationLink(destination: SendSongPush(user: homeData!.user, friends: homeData!.friends),
                                            label: {
-                                Text("Friend found new song")
-                                    .fontWeight(.light)
-                                    .frame(width: 240, height: 30)
+                                Text("Oh Look! New Music")
+                                    .fontWeight(.regular)
+                                    .frame(width: 255, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
