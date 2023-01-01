@@ -106,8 +106,22 @@ struct BuggingPreload1: View {
                             Spacer ()
                                 .frame(height: 80)
                             
-                            Text("Handling \nuncomfortable moments")
+                            Text("Pro-active 'HELP'")
                                 .font(.system(size: 15))
+                            
+                                .foregroundColor(.white)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("with handling")
+                                .font(.system(size: 12))
+                                .italic()
+                                .foregroundColor(.white)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("Uncomfortable Moments")
+                                .font(.system(size: 17))
                             
                                 .foregroundColor(.white)
                                 .fontWeight(.light)
@@ -149,7 +163,7 @@ struct BuggingPreload1: View {
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                             
-                            Text("saying something")
+                            Text("doing something")
                                 .font(.system(size: 23))
                             
                                 .foregroundColor(.white)
