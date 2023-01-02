@@ -91,7 +91,7 @@ struct HugPushNotification: View {
 
 
 
-                    Text("Bringing your friend all the joy of")
+                    Text("Bringing your friends all the joy of")
                         .font(.system(size: 17))
                         .fontWeight(.ultraLight)
                         .foregroundColor(ColorManager .grey3)
@@ -100,7 +100,7 @@ struct HugPushNotification: View {
 
                     Text("kicking through Autumn's leaves")
                         .font(.system(size: 17))
-                        .fontWeight(.ultraLight)
+                    #imageLiteral(resourceName: "simulator_screenshot_51753CAE-D3E5-448A-A653-72DCE437223B.png")                        .fontWeight(.ultraLight)
                         .foregroundColor(ColorManager .grey3)
                         .multilineTextAlignment(.center)
 
@@ -219,7 +219,7 @@ struct HugPushNotification: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Jump over to PhotoPOP & send a fun image to go with your Hug \n\n Nice! You're friend will feel better - if only for a moment - nice job!", isPresented: $showingAlert) {
+                                .alert("Jump over to PhotoPOP & send a fun image to go with your Hug \n\n Nice! You're friend will feel better - if only for a moment - Nice job!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
