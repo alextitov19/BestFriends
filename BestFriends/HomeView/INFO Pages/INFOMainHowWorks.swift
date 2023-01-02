@@ -254,7 +254,7 @@ struct INFOMainHowWorks: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.purple3)
                         
-                        Text("Positive Friendships")
+                        Text("Happier Friendships")
                         
                             .font(.system(size: 22))
                             .fontWeight(.regular)
