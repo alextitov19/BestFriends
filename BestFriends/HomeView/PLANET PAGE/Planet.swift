@@ -87,7 +87,7 @@ struct PlanetActionsView: View {
             
 
             Image("home-alt2")
-                .frame(width: 60, height: 30)
+                .frame(width: 50, height: 25)
                 .foregroundColor(.white)
                 .font(.system(size: 20))
                 .background(Color .black)
@@ -101,7 +101,7 @@ struct PlanetActionsView: View {
                 label: {
                    
                     Image("bell")
-                        .frame(width: 60, height: 30)
+                        .frame(width: 50, height: 25)
                         .foregroundColor(.white)
                         .font(.system(size: 20))
                         .background(Color .black)
@@ -115,7 +115,7 @@ struct PlanetActionsView: View {
                 label: {
                    
                     Image("settings icon")
-                        .frame(width: 60, height: 30)
+                        .frame(width: 50, height: 25)
                         .foregroundColor(.white)
                         .font(.system(size: 20))
                         .background(Color .black)
