@@ -83,9 +83,9 @@ struct SaySomethingNice7: View {
                                 .padding()
                         }
                     }
-                    .frame(width: 280, height: 100)
+                    .frame(width: 325, height: 100)
                     .opacity(0.63)
-                    .cornerRadius(25)
+                    .cornerRadius(15)
                     .padding()
                 }
                 
@@ -93,7 +93,7 @@ struct SaySomethingNice7: View {
                 
                 //                ReceivedPlaylist
                 Spacer()
-                    .frame(height: 20)
+                    .frame(height: 15)
                
                 
                 //MARK: Send CUSTOM Support Message to user got push notificaiton from OR chose one from below
@@ -123,7 +123,7 @@ struct SaySomethingNice7: View {
                 VStack {
                     
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 15)
                     
                     Button(action: {
                         sendMessage()
@@ -141,7 +141,7 @@ struct SaySomethingNice7: View {
                     })
 
                     Spacer ()
-                        .frame(height: 40)
+                        .frame(height: 60)
                     
                     Text("Respond instantly by \nPush Notification")
                         .font(.system(size: 15))

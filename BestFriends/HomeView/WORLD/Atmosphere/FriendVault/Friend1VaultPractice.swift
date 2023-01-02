@@ -98,21 +98,16 @@ struct Friend1VaultPractice: View {
                                 .padding()
                         }
                     }
-                    .frame(width: 300, height: 100)
+                    .frame(width: 325, height: 100)
                     .opacity(0.93)
-                    .cornerRadius(35)
-                    .padding()
+                    .cornerRadius(15)
+//                    .padding()
                     
-                    Spacer()
-                        .frame(height: 20)
+//                    Spacer()
+//                        .frame(height: 15)
                 }
                 
-                
-                
-                //                ReceivedPlaylist
-                Spacer()
-                    .frame(height: 20)
-               
+            
                 
                 //MARK: Send CUSTOM Support Message to user got push notificaiton from OR chose one from below
                 TextField("", text: $customMessage)
@@ -130,13 +125,13 @@ struct Friend1VaultPractice: View {
                     .opacity(0.60)
                     .submitLabel(.done)
                     .onReceive(Just(customMessage)) { _ in limitText(65) }
-                    .padding(50)
+                    .padding(20)
                     .overlay(RoundedRectangle(cornerRadius: 10)
                         .stroke(Color.purple)
-                        .frame(width: 345, height: 40)
+                        .frame(width: 325, height: 40)
                         .padding(.horizontal, 10)
                     )
-//                    .padding(.horizontal, 50)
+
                 
                 VStack {
                     Button(action: {
@@ -156,7 +151,7 @@ struct Friend1VaultPractice: View {
 //                    .padding()
                     
                     Spacer()
-                        .frame(height: 10)
+                        .frame(height: 60)
                     
                     Text("Respond instantly via Push Notification")
                         .font(.system(size: 15))

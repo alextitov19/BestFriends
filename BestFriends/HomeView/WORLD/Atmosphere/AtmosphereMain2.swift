@@ -295,7 +295,7 @@ struct AtmosphereMain2: View {
                             .foregroundColor(ColorManager .grey3)
                             .opacity(0.5)
                         
-                        TextField("(*Required) Type what's up ...", text: $summary)
+                        TextField("(max 35 characters) What's up?", text: $summary)
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager.purple5)
                             .padding(.horizontal, 55)
