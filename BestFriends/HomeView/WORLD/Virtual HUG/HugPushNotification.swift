@@ -219,7 +219,7 @@ struct HugPushNotification: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Jump over to PhotoPOP & send a fun image to go with your Hug \n\n Wow! You're friend will feel better - if only for a moment - nice job!", isPresented: $showingAlert) {
+                                .alert("Jump over to PhotoPOP & send a fun image to go with your Hug \n\n Nice! You're friend will feel better - if only for a moment - nice job!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -255,9 +255,9 @@ struct HugPushNotification: View {
 //                            .background(ColorManager.orange2)
 //                            .cornerRadius(15)
 //                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        
-//                        
-//                        
+//
+//
+//
                         
                         
                         }
