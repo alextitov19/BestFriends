@@ -75,7 +75,7 @@ struct HugPushNotification: View {
                             .foregroundColor(ColorManager .purple7)
                         
                         
-                        Text("HUG to")
+                        Text("HUG")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple7)
                         

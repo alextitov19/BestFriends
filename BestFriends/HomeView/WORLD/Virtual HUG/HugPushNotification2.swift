@@ -52,33 +52,45 @@ struct HugPushNotification2: View {
                     VStack {
                         
                         
-                        Text("Who would you like a HUG from?")
+                        Text("I really need a HUG")
                             .font(.system(size: 20))
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
                         
-                    
+                        Text("from my friends today!")
+                            .font(.system(size: 20))
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager .grey3)
+                            .multilineTextAlignment(.center)
                     }
                         
-                    HStack {
+//                    HStack {
+                        
+                        Spacer()
+                            .frame(height: 30)
                         
                         VStack {
-                        Text("We're")
+                            
+                            Text("Hang in there")
+                                .font(.system(size: 35, weight: .ultraLight))
+                                .foregroundColor(ColorManager .purple7)
+                            
+                        Text("we're on it!")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple7)
                         
                         
-                            Text("on it")
-                                .font(.system(size: 35, weight: .ultraLight))
-                                .foregroundColor(ColorManager .purple7)
+//                            Text("on it")
+//                                .font(.system(size: 35, weight: .ultraLight))
+//                                .foregroundColor(ColorManager .purple7)
                         }
                         
-                        Image("DogOne")
-                            .resizable()
-                            .frame(width: 200, height: 200)
+//                        Image("DogOne")
+//                            .resizable()
+//                            .frame(width: 200, height: 200)
                         
-                    }
+//                    }
                 
              
                 VStack {
@@ -206,13 +218,17 @@ struct HugPushNotification2: View {
                             Spacer()
                                 .frame(height: 20)
                             
-                            Text("Feeling safety in the silence")
+                            Text("Feel safety")
                                 .font(.system(size: 15))
                                 .fontWeight(.ultraLight)
                                 .foregroundColor(ColorManager .grey3)
                                 .multilineTextAlignment(.center)
                             
-                      
+                            Text("in this deafening silence")
+                                .font(.system(size: 15))
+                                .fontWeight(.ultraLight)
+                                .foregroundColor(ColorManager .grey3)
+                                .multilineTextAlignment(.center)
 
                             Spacer()
                                 .frame(height: 80)
@@ -252,7 +268,7 @@ struct HugPushNotification2: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends - Need a HUG", body: "\(user.firstName) could use a HUG!", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends - Need a HUG", body: "\(user.firstName) could really use a HUG!", APNToken: f.APNToken)
                 }
             }
         }

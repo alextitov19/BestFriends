@@ -238,7 +238,6 @@ struct StartHere1: View {
                         .frame(width: 110, height: 110)
                         .clipShape(Circle())
                         .foregroundColor(color)
-                    
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
                         .opacity(0.7)
                     

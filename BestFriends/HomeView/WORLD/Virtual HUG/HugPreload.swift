@@ -48,28 +48,43 @@ struct HugPreload: View {
             ZStack{
                 
                 NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
-                    HugCircle (color: ColorManager.purple2, friendName: "Send \nfriend \na HUG")
+                    HugCircle (color: ColorManager.purple1, friendName: "SEND  \n\n                a HUG")
                 })
-                .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
+                .offset(x: showItems ? 120 : 0, y: showItems ? -270: 0)
                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
                 
                 
           
                     
                     NavigationLink(destination: HugPushNotification2(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .purple2, friendName: "I could \nuse \na HUG")
+                        HugCircle (color: ColorManager .grey1, friendName: "NEED  \n\n                a HUG")
                     })
                     .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
-                    .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                    .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
                     
                     
-                    Image(systemName: "heart.fill")
+                
+                
+                NavigationLink(destination: EmptyView(), label: {
+                    HugCircle (color: ColorManager .grey1, friendName: "")
+                })
+                .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
+                .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
+                
+                
+                
+                
+                
+                
+                    Image(systemName: "circle.fill")
                         .resizable()
-                        .foregroundColor(ColorManager .grey2)
+                        .foregroundColor(ColorManager .purple1)
                         .frame(width: 250, height: 200)
                     //                    .blur(radius: 2)
                         .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
-                    
+                        .opacity(0.70)
+                
+                
                     VStack {
                         
                         Spacer ()
@@ -78,7 +93,7 @@ struct HugPreload: View {
                         Text("Do you")
                             .font(.system(size: 25))
                         
-                            .foregroundColor(.white)
+                            .foregroundColor(ColorManager .grey2)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -86,14 +101,14 @@ struct HugPreload: View {
                         Text("or a Friend")
                             .font(.system(size: 25))
                         
-                            .foregroundColor(.white)
+                            .foregroundColor(ColorManager .grey2)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
                         Text("need a")
                             .font(.system(size: 25))
                         
-                            .foregroundColor(.white)
+                            .foregroundColor(ColorManager .grey2)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
 //                                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -101,7 +116,7 @@ struct HugPreload: View {
                         Text("HUG?")
                             .font(.system(size: 45))
                         
-                            .foregroundColor(.white)
+                            .foregroundColor(ColorManager .grey3)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
 //                                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -136,9 +151,10 @@ struct HugPreload: View {
             
             ZStack {
                 
-                Image(systemName: "circle.fill")
+                Image(systemName: "cube.fill")
                             .resizable()
-                            .foregroundColor(ColorManager .purple2)
+                            .foregroundColor(color)
+//                            .foregroundColor(ColorManager .purple2)
                             .frame(width: 120, height: 120)
                             .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
                 
