@@ -86,6 +86,16 @@ struct PlanetActionsView: View {
         VStack {
             
 
+            Image("home-alt2")
+                .frame(width: 60, height: 30)
+                .foregroundColor(.white)
+                .font(.system(size: 20))
+                .background(Color .black)
+              .cornerRadius(15)
+              .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+              .opacity(0.70)
+            
+            
             NavigationLink(
                 destination: PlanetBell(user: user),
                 label: {
