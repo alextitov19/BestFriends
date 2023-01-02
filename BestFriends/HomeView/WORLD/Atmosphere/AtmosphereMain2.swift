@@ -189,7 +189,7 @@ struct AtmosphereMain2: View {
                             mood = 5
                         }) {
                             
-                            Text("I really \n'HOPE' that...")
+                            Text("I was really \nhoping that...")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
