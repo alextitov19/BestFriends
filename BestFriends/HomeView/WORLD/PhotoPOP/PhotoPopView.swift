@@ -69,7 +69,7 @@ struct PhotoPopView: View {
                 NavigationLink(
                    destination: PhotoPop3(user: user, friends: friends),
                    label: {
-                       Text("Send 'Push Notification' when done!")
+                       Text("Send 'Push Notification' after up-load")
                            .fontWeight(.thin)
                            .frame(width: 310, height: 30)
                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
