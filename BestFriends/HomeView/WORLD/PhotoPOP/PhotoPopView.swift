@@ -45,7 +45,7 @@ struct PhotoPopView: View {
             
             VStack {
 
-                Text("Friend  PhotoPOP")
+                Text("PhotoPOP")
                     .font(.system(size: 27, weight: .bold))
                     .foregroundColor(ColorManager .grey1)
                     .shadow(color: .purple, radius: 1, x: 0, y: 1)
@@ -193,7 +193,7 @@ struct PhotoPopView: View {
                         .font(.system(size: 16, weight: .light))
                         .foregroundColor(.green)
                     
-                    Text("-Select frined, tap image from photo gallery")
+                    Text("-Select friend, tap image from photo gallery")
                         .font(.system(size: 13, weight: .light))
                         .italic()
                         .foregroundColor(.white)
