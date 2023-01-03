@@ -55,22 +55,22 @@ struct BuggingPreload1: View {
                     BuggingCircle (color: ColorManager.purple3, friendName: "Friend \nhurt my \nFeelings")
                 })
                 .offset(x: showItems ? -80 : 0, y: showItems ? -270: 0)
-                .shadow(color: .white, radius: 10, x: 10, y: 10)
+                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
                 
                 
                 NavigationLink(destination: Apologies4(user: user, friends: friends, groups: groups), label: {
                     BuggingCircle (color: ColorManager.purple3, friendName: "I hurt \nmy friend's \nFeelings")
                 })
                 .offset(x: showItems ? 30 : 0, y: showItems ? -300: 0)
-                .shadow(color: .white, radius: 10, x: 10, y: 10)
+                .shadow(color:  ColorManager .purple1, radius: 10, x: 10, y: 10)
                 
                 
                 
                 NavigationLink(destination: AskQuestion(user: user, friends: friends, groups: groups), label: {
-                    BuggingCircle (color: ColorManager.purple3, friendName: "Something \nelse \nbugging \nyou?")
+                    BuggingCircle (color: .cyan, friendName: "Something \nelse \nbugging \nyou?")
                 })
                 .offset(x: showItems ? 120 : 0, y: showItems ? -190: 0)
-                .shadow(color: .white, radius: 10, x: 10, y: 10)
+                .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
                 
                 
                 
