@@ -93,7 +93,7 @@ struct INFOMainHowWorks: View {
                             NavigationLink(
                                 destination: InfoAddFriends(user: user),
                                 label: {
-                                    Text("PhotoPOP")
+                                    Text("'PhotoPOP'")
                                         .fontWeight(.thin)
                                         .frame(width: 250, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -126,7 +126,7 @@ struct INFOMainHowWorks: View {
                             NavigationLink(
                                 destination: InfoCreateChatRm(user: user),
                                 label: {
-                                    Text("Set my 'Vibe'")
+                                    Text("my 'Vibe'")
                                         .fontWeight(.thin)
                                         .frame(width: 250, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -159,7 +159,7 @@ struct INFOMainHowWorks: View {
                             NavigationLink(
                                 destination: InfoInsideChat(user: user),
                                 label: {
-                                    Text("Send a HUG")
+                                    Text("virtual 'HUG'")
                                         .fontWeight(.thin)
                                         .frame(width: 250, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -190,7 +190,7 @@ struct INFOMainHowWorks: View {
                             NavigationLink(
                                 destination: InfoPushNotifications(user: user),
                                 label: {
-                                    Text("Something 'Nice'")
+                                    Text("something 'Nice'")
                                         .fontWeight(.thin)
                                         .frame(width: 250, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -226,7 +226,7 @@ struct INFOMainHowWorks: View {
                                 
                                 destination: SettingsNotificationsView(user: user),
                                 label: {
-                                    Text("Friendship Drama")
+                                    Text("'Drama Central'")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
                                         .frame(width: 250, height: 40)
