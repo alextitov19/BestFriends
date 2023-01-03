@@ -93,9 +93,9 @@ struct INFOMainHowWorks: View {
                             NavigationLink(
                                 destination: InfoAddFriends(user: user),
                                 label: {
-                                    Text("'PhotoPOP'")
+                                    Text("PhotoPOP")
                                         .fontWeight(.thin)
-                                        .frame(width: 250, height: 40)
+                                        .frame(width: 200, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 25))
                                         .background(ColorManager.purple3)
@@ -126,9 +126,9 @@ struct INFOMainHowWorks: View {
                             NavigationLink(
                                 destination: InfoCreateChatRm(user: user),
                                 label: {
-                                    Text("my 'Vibe'")
+                                    Text("Vibe")
                                         .fontWeight(.thin)
-                                        .frame(width: 250, height: 40)
+                                        .frame(width: 200, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 25))
                                         .background(ColorManager.purple3)
@@ -159,9 +159,9 @@ struct INFOMainHowWorks: View {
                             NavigationLink(
                                 destination: InfoInsideChat(user: user),
                                 label: {
-                                    Text("virtual 'HUG'")
+                                    Text("HUG")
                                         .fontWeight(.thin)
-                                        .frame(width: 250, height: 40)
+                                        .frame(width: 200, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 25))
                                         .background(ColorManager.purple3)
@@ -190,9 +190,9 @@ struct INFOMainHowWorks: View {
                             NavigationLink(
                                 destination: InfoPushNotifications(user: user),
                                 label: {
-                                    Text("something 'Nice'")
+                                    Text("Nice")
                                         .fontWeight(.thin)
-                                        .frame(width: 250, height: 40)
+                                        .frame(width: 200, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 25))
                                         .background(ColorManager.purple3)
@@ -226,10 +226,10 @@ struct INFOMainHowWorks: View {
                                 
                                 destination: SettingsNotificationsView(user: user),
                                 label: {
-                                    Text("'Drama Central'")
+                                    Text("Drama Central")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
-                                        .frame(width: 250, height: 40)
+                                        .frame(width: 200, height: 40)
                                         .font(.system(size: 25))
                                         .background(ColorManager.purple3)
                                         .cornerRadius(10)
