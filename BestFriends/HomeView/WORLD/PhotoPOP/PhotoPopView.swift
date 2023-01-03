@@ -46,10 +46,14 @@ struct PhotoPopView: View {
             VStack {
 
                 
-                Text("Shake iPhone to see \nfriend's posted images")
-                    .font(.system(size: 18, weight: .light))
+                Text("Shake iPhone to see friend's uploaded image")
+                    .font(.system(size: 15, weight: .light))
                     .foregroundColor(ColorManager .grey2)
-
+               
+                Text("Can only have ONE image up at a time")
+                    .italic()
+                    .font(.system(size: 13, weight: .light))
+                    .foregroundColor(Color .green)
                 
                 Button(action: {
                     showingRecipients = true
