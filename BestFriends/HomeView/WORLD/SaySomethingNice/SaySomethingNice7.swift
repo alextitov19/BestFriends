@@ -220,9 +220,9 @@ struct SaySomethingNice7: View {
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "D")
                         
-                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Thx Bro", APNToken: friend.APNToken )
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Thx bro", APNToken: friend.APNToken )
                     }, label: {
-                        Text("Thx Bro")
+                        Text("Thx bro")
                             .fontWeight(.thin)
                             .frame(width: 260, height: 30)
                             .foregroundColor(.purple)
