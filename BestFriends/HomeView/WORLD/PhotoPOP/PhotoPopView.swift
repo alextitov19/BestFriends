@@ -46,13 +46,20 @@ struct PhotoPopView: View {
             VStack {
 
                 
-                Text("Shake iPhone to see friend's uploaded image")
+                Text("Shake iPhone to see friend's")
                     .font(.system(size: 15, weight: .light))
                     .foregroundColor(ColorManager .grey2)
+                
+                Text("up-loaded image full-screen")
+                    .font(.system(size: 15, weight: .light))
+                    .foregroundColor(ColorManager .grey2)
+                
+                Spacer()
+                    .frame(height: 7)
                
-                Text("Can only have ONE image up at a time")
+                Text("* (can only have ONE 'active' image per friend at a time)")
                     .italic()
-                    .font(.system(size: 13, weight: .light))
+                    .font(.system(size: 12, weight: .light))
                     .foregroundColor(Color .green)
                 
                 Button(action: {
