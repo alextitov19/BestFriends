@@ -12,9 +12,9 @@ import SwiftUI
 import AVKit
 
 struct PlanetBell: View {
-   
+    
     let user: User
-   
+    
     @EnvironmentObject var sessionManager: SessionManager
     
     
@@ -26,35 +26,27 @@ struct PlanetBell: View {
                 .ignoresSafeArea()
                 .onAppear()
             
-        
+            
             
             
             VStack {
-          
                 
+                Text("BF is designed for real-time interactions")
+                    .foregroundColor(Color .green)
+                    .font(.system(size: 20, weight: .light))
+                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.90)
                 
-                Text("Received")
-                    .font(.system(size: 35))
-                    .italic()
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey2)
-             
-                
-                Text("Push Notification")
-                    .font(.system(size: 35))
-                    .italic()
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey2)
-             
-                Text("from a Friend?")
-                    .font(.system(size: 35))
-                    .italic()
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey2)
-                
+                Text("Turning OFF notifications significantly")
+                    .foregroundColor(Color .green)
+                    .font(.system(size: 20, weight: .light))
+                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.90)
+                Text("reduces it's effectiveness")
+                    .foregroundColor(Color .green)
+                    .font(.system(size: 20, weight: .light))
+                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.90)
                 
                 ZStack {
                     
@@ -74,24 +66,31 @@ struct PlanetBell: View {
                         Spacer ()
                             .frame(height: 80)
                         
-                     
-                                    Button(action: {
-                                        sessionManager.showLogin()
-                                    },
-                                           label: {
-                                        Text("On Home Page")
-                                            .frame(width: 150, height: 30)
-                                            .foregroundColor(.white)
-                                            .font(.system(size: 20))
-                                            .background(ColorManager.grey4)
-                                            .cornerRadius(10)
-                                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                            .opacity(0.70)
-                                        
-                                    })
-                                        
+                        Text("Received \nPush Notifiction")
+                            .font(.system(size: 30))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager.grey2)
                         
-                        Text("Tap friend's planet that sent notificaion")
+         
+                        Button(action: {
+                            sessionManager.showLogin()
+                        },
+                               label: {
+                            Text("On Home Page")
+                                .frame(width: 150, height: 30)
+                                .foregroundColor(.white)
+                                .font(.system(size: 20))
+                                .background(ColorManager.grey4)
+                                .cornerRadius(10)
+                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                .opacity(0.70)
+                            
+                        })
+                        
+                        
+                        Text("Tap friend's planet that sent notification")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
@@ -108,12 +107,12 @@ struct PlanetBell: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.grey3)
                         
-//                        Text("and send brief reason.")
-//                            .italic()
-//                            .font(.system(size: 20))
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(ColorManager.purple4)
+                        //                        Text("and send brief reason.")
+                        //                            .italic()
+                        //                            .font(.system(size: 20))
+                        //                            .fontWeight(.light)
+                        //                            .multilineTextAlignment(.center)
+                        //                            .foregroundColor(ColorManager.purple4)
                         
                         Spacer ()
                             .frame(height: 25)
@@ -124,7 +123,7 @@ struct PlanetBell: View {
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.grey3)
-                 
+                        
                         Text("to hide dropdown menu")
                             .italic()
                             .font(.system(size: 20))
@@ -133,15 +132,17 @@ struct PlanetBell: View {
                             .foregroundColor(ColorManager.grey3)
                         
                         
-                           Spacer ()
+                            Spacer ()
                                 .frame(height: 100)
-                   
+                            
+                            
+                            
+                        }
                     }
                 }
             }
         }
+        
     }
     
-}
-                                           
 
