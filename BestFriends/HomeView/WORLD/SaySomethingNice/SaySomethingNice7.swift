@@ -157,11 +157,11 @@ struct SaySomethingNice7: View {
 //                        .foregroundColor(.white)
                     
                     Button(action: {
-                        defaultMessageButtonTapped(defaultMessage: "Are you okay?")
+                        defaultMessageButtonTapped(defaultMessage: "A")
                         
-                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Thanks for the 'Nice' message", APNToken: friend.APNToken)
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Thanks for the 'Nice' message! xoxoxo", APNToken: friend.APNToken)
                     }, label: {
-                        Text("Thank you so much!")
+                        Text("Thank you so much! xoxoxo")
                             .fontWeight(.thin)
                             .frame(width: 260, height: 30)
                             .foregroundColor(.purple)
@@ -182,7 +182,7 @@ struct SaySomethingNice7: View {
                         
                     
                     Button(action: {
-                        defaultMessageButtonTapped(defaultMessage: "Do we need to talk?")
+                        defaultMessageButtonTapped(defaultMessage: "B")
                         
                         RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "You're the BEST!", APNToken: friend.APNToken )
                     }, label: {
@@ -220,9 +220,9 @@ struct SaySomethingNice7: View {
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "D")
                         
-                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Meet me in Chat", APNToken: friend.APNToken )
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Thx Bro", APNToken: friend.APNToken )
                     }, label: {
-                        Text("Meet me in Chat")
+                        Text("Thx Bro")
                             .fontWeight(.thin)
                             .frame(width: 260, height: 30)
                             .foregroundColor(.purple)
