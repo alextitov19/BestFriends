@@ -333,7 +333,7 @@ struct HomeView: View {
                             
                             NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
                                            label: {
-                                Text("It's 'Fix-a-Fight' Time")
+                                Text("Let's try to 'Fix-this-Fight'")
                                     .fontWeight(.regular)
                                     .frame(width: 255, height: 30)
                                     .foregroundColor(.white)
