@@ -115,7 +115,13 @@ struct StartHere1: View {
                         
                         
                         Spacer ()
-                            .frame(height: 240)
+                            .frame(height: 260)
+                        
+                        Text("TAP")
+                            .foregroundColor(Color .green)
+                            .font(.system(size: 42, weight: .light))
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            .opacity(0.90)
                         
                         Text("'settings'")
                             .font(.system(size: 20))
@@ -151,7 +157,7 @@ struct StartHere1: View {
                             
                             
                                                 Spacer()
-                                                    .frame(height: 20)
+                                                    .frame(height: 60)
                             
                             
                                                     Link(destination: URL(string: "https://socialtechlabs.com/reporting-issues-in-bestfriends/")!) {
@@ -179,7 +185,7 @@ struct StartHere1: View {
                                         .frame(width: 310, height: 30)
                                         .font(.system(size: 25))
                                         .background(ColorManager.pmbc_green)
-                                        .cornerRadius(7)
+                                        .cornerRadius(10)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     
                                 }

@@ -45,22 +45,47 @@ struct PhotoPopView: View {
             
             VStack {
 
+                Text("Friend  PhotoPOP")
+                    .font(.system(size: 27, weight: .bold))
+                    .foregroundColor(ColorManager .grey1)
+                    .shadow(color: .purple, radius: 1, x: 0, y: 1)
+                    .opacity(0.50)
+                    .multilineTextAlignment(.center)
                 
-                Text("Shake iPhone to see friend's")
-                    .font(.system(size: 15, weight: .light))
+                
+                Text("Shake iPhone to see")
+                    .font(.system(size: 17, weight: .light))
                     .foregroundColor(ColorManager .grey2)
                 
-                Text("up-loaded image full-screen")
-                    .font(.system(size: 15, weight: .light))
+                Text("friend's image")
+                    .font(.system(size: 17, weight: .light))
                     .foregroundColor(ColorManager .grey2)
                 
-                Spacer()
-                    .frame(height: 7)
-               
-                Text("* (can only have ONE 'active' image per friend at a time)")
+//                Spacer()
+//                    .frame(height: 12)
+//               
+        
+                
+                NavigationLink(
+                   destination: PhotoPop3(user: user, friends: friends),
+                   label: {
+                       Text("Send 'Push Notification' when done!")
+                           .fontWeight(.thin)
+                           .frame(width: 310, height: 30)
+                           .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                           .font(.system(size: 17))
+                           .background(ColorManager.purple3)
+                           .cornerRadius(10)
+                           .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                   })
+                
+                Text("* (can only have ONE 'active' image at a time)")
                     .italic()
                     .font(.system(size: 12, weight: .light))
                     .foregroundColor(Color .green)
+                
+                Spacer()
+                    .frame(height: 25)
                 
                 Button(action: {
                     showingRecipients = true
@@ -175,18 +200,18 @@ struct PhotoPopView: View {
                         .foregroundColor(.white)
                     
                     
-                NavigationLink(
-                   destination: PhotoPop3(user: user, friends: friends),
-                   label: {
-                       Text("Send Push Notification")
-                           .fontWeight(.thin)
-                           .frame(width: 250, height: 30)
-                           .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                           .font(.system(size: 25))
-                           .background(ColorManager.purple3)
-                           .cornerRadius(15)
-                           .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                   })
+//                NavigationLink(
+//                   destination: PhotoPop3(user: user, friends: friends),
+//                   label: {
+//                       Text("Send Push Notification")
+//                           .fontWeight(.thin)
+//                           .frame(width: 250, height: 30)
+//                           .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                           .font(.system(size: 25))
+//                           .background(ColorManager.purple3)
+//                           .cornerRadius(15)
+//                           .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                   })
                     
 //                    .padding()
                 }
