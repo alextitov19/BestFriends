@@ -30,10 +30,10 @@ struct HowChatWorks: View {
                 
                 Text("How Chat Works")
                     .font(.system(size: 35))
-                    .italic()
+                    
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.pmbc_blue)
+                    .foregroundColor(ColorManager.grey2)
              
                 
                 ZStack {
@@ -55,64 +55,55 @@ struct HowChatWorks: View {
                             .frame(height: 55)
                         
                         Text("Long-tap messages to:")
-                            .font(.system(size: 15))
-                            .fontWeight(.light)
+                            .font(.system(size: 20))
+                            .fontWeight(.regular)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .blue)
+                            .foregroundColor(ColorManager .grey2)
                         
-                        Text("-save 'Nice' message to SmileVault")
+                        Text("-save message to SmileVault")
                             .font(.system(size: 15))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .blue)
+                            .foregroundColor(ColorManager .grey4)
                     
                         
                         Text("-Report Abuse")
                             .font(.system(size: 15))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .blue)
+                            .foregroundColor(ColorManager .grey4)
                         
                         Spacer ()
                             .frame(height: 15)
                         
-                        Text("Tap [Remove Me] to be removed")
+                        Text("Tap [Remove Me]")
+                            .font(.system(size: 20))
+                            .fontWeight(.regular)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager .grey2)
+                        
+                        
+                        Text("to be removed from room")
                             .font(.system(size: 15))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .blue)
+                            .foregroundColor(ColorManager .grey4)
+                        
                         
                         Spacer ()
                             .frame(height: 15)
-                        
-                        Text("Tap [Lock] icon to:")
-                            .font(.system(size: 15))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color .blue)
-                        
+
                         VStack {
                         
-                            Text("-hide Chat")
-                                .font(.system(size: 15))
-                                .fontWeight(.light)
+
+
+                            Text("*** Chat has MANUAL scroll")
+                                .font(.system(size: 20))
+                                .fontWeight(.regular)
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(Color .blue)
+                                .foregroundColor(ColorManager .grey2)
                             
-                            Text("-enter 4 digit PIN un-hide")
-                                .font(.system(size: 15))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color .blue)
-                        
-                            Spacer ()
-                                .frame(height: 15)
                             
-                            Text("*** Chat has MANUAL scroll ***")
-                                .font(.system(size: 15))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color .blue)
                             Spacer ()
                                 .frame(height: 100)
                             
