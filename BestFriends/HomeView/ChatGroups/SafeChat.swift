@@ -43,7 +43,7 @@ struct SafeChat: View {
                     Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(ColorManager .purple1)
-                        .frame(width: 300, height: 300)
+                        .frame(width: 325, height: 325)
                         .shadow(color: .orange, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
                     

@@ -17,7 +17,7 @@ struct ChangeChatBackgroundView: View {
     
     var body: some View {
         ZStack {
-            ColorManager.purple2
+            ColorManager.purple1
                 .ignoresSafeArea()
             
             VStack {
@@ -38,11 +38,11 @@ struct ChangeChatBackgroundView: View {
 //                    })
 //
                 
-                Text("Go ahead. Try a 'motion' background")
-                    .font(.system(size: 17))
+                Text("Try a 'motion' background")
+                    .font(.system(size: 30))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.purple5)
+                    .foregroundColor(ColorManager.grey2)
                 
                 Spacer()
                     .frame(height: 15)

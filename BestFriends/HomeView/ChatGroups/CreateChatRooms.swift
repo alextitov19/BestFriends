@@ -50,10 +50,10 @@ struct CreateChatRooms: View {
                 
                 Text("Create Chat Rooms")
                     .font(.system(size: 35))
-                    .italic()
+                
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.purple3)
+                    .foregroundColor(ColorManager.grey2)
              
                 
                 ZStack {
@@ -62,7 +62,7 @@ struct CreateChatRooms: View {
                     Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(ColorManager .purple1)
-                        .frame(width: 300, height: 300)
+                        .frame(width: 325, height: 325)
                         .shadow(color: .purple, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
                     
@@ -78,35 +78,43 @@ struct CreateChatRooms: View {
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple3)
+                            .foregroundColor(ColorManager.grey2)
                         
-                        Spacer ()
-                            .frame(height: 10)
+               
                         
-                        Text("Homepage: tap Friend's Planet")
+                        Text("On Homepage:")
                             .font(.system(size: 15))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple5)
+                            .foregroundColor(ColorManager.grey4)
                     
                         
-                        Text("Tap [Create Chat Rooms]")
+                        Text("-tap Friend's Planet")
                             .font(.system(size: 15))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple5)
+                            .foregroundColor(ColorManager.grey4)
+                    
                         
-                        Text("Name Chat Room")
+                        Text("-tap [Create Chat Rooms]")
                             .font(.system(size: 15))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple5)
+                            .foregroundColor(ColorManager.grey4)
                         
-                        Text("Must sign-out of app & login to activate \n(sign-out in Settings)")
+                        Text("-name Chat Room")
                             .font(.system(size: 15))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple5)
+                            .foregroundColor(ColorManager.grey4)
+                        
+                   
+                        
+                        Text("* (must sign-out from 'Settings' \n& login to activate)")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager.grey4)
                         
                         VStack {
                         
@@ -124,24 +132,22 @@ struct CreateChatRooms: View {
                                 .font(.system(size: 20))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager.purple3)
+                                .foregroundColor(ColorManager.grey2)
+                      
                             
-                            Spacer ()
-                                .frame(height: 10)
-                            
-                            Text("Tap ALL planets you want in room")
+                            Text("-tap ALL friends planets want in room")
                                 .font(.system(size: 15))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager.purple5)
+                                .foregroundColor(ColorManager.grey4)
                         
                             
                             
-                            Text("Then follow above instructions")
+                            Text("(* then follow above instructions)")
                                 .font(.system(size: 15))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager.purple5)
+                                .foregroundColor(ColorManager.grey4)
                             
 
                             
