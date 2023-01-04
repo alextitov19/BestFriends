@@ -9,6 +9,7 @@
 import Combine
 import SwiftUI
 import ConfettiSwiftUI
+import AVKit
 
 
 struct AtmosphereMain2: View {
@@ -45,9 +46,14 @@ struct AtmosphereMain2: View {
             
 
 
-            AdPlayerView(name: "sky2")
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+            
+            AdPlayerView(name: "Wind2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
+            
 
             
             VStack {
