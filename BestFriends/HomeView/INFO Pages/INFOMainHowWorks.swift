@@ -55,7 +55,12 @@ struct INFOMainHowWorks: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.purple5)
                 
+                Text("with 5 BFFs")
                 
+                    .font(.system(size: 17))
+                    .fontWeight(.regular)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.purple3)
                 
                 VStack {
                     
@@ -294,7 +299,7 @@ struct INFOMainHowWorks: View {
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
                         Spacer()
-                            .frame(height: 65)
+                            .frame(height: 40)
                         
                         NavigationLink(
                             
