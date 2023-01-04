@@ -57,10 +57,10 @@ struct INFOMainHowWorks: View {
                 
                 Text("with 5 BFFs")
                 
-                    .font(.system(size: 17))
+                    .font(.system(size: 20))
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.purple3)
+                    .foregroundColor(ColorManager.purple5)
                 
                 VStack {
                     
@@ -275,10 +275,10 @@ struct INFOMainHowWorks: View {
                             
                             destination: InviteView(user: user),
                             label: {
-                                Text("Invite Friends")
+                                Text("Invite (up to) 5 Friends")
                                     .fontWeight(.light)
                                     .foregroundColor(Color.white)
-                                    .frame(width: 200, height: 30)
+                                    .frame(width: 300, height: 30)
                                     .font(.system(size: 25))
                                     .background(ColorManager.pmbc_green)
                                     .cornerRadius(7)
