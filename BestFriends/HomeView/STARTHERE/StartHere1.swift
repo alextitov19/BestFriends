@@ -113,25 +113,9 @@ struct StartHere1: View {
                 
                 VStack {
                     
-                    Text("BF is designed for real-time interactions")
-                        .foregroundColor(Color .green)
-                        .font(.system(size: 20, weight: .light))
-                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                        .opacity(0.90)
-                    
-                    Text("Turning OFF notifications significantly")
-                        .foregroundColor(Color .green)
-                        .font(.system(size: 20, weight: .light))
-                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                        .opacity(0.90)
-                    Text("reduces it's effectiveness")
-                        .foregroundColor(Color .green)
-                        .font(.system(size: 20, weight: .light))
-                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                        .opacity(0.90)
-                    
+
                     Spacer ()
-                        .frame(height: 180)
+                        .frame(height: 340)
                     
                     
                     VStack {
@@ -210,30 +194,29 @@ struct StartHere1: View {
                                 }
                             )}
                         
-                        //                            Spacer ()
-                        //                                .frame(height: 20)
-                        //
-                        //
-                        //                            Text("Note")
-                        //                                .foregroundColor(.green)
-                        //                                .font(.system(size: 30, weight: .regular))
-                        //                                .multilineTextAlignment(.center)
-                        //                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-                        //
-                        //                            Text("After receiving a push notification from \na friend, tap that friend's planet on homepage, \nthen tap the appropriate button \nfrom the dropdown menu.")
-                        //                                .foregroundColor(.white)
-                        //                                .font(.system(size: 15, weight: .light))
-                        //                                .multilineTextAlignment(.center)
-                        //                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-                        //                            //                                    .opacity(0.50)
-                        //
+                        Text("BF is designed for real-time interactions")
+                            .foregroundColor(Color .green)
+                            .font(.system(size: 20, weight: .light))
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            .opacity(0.90)
+                        
+                        Text("Turning OFF notifications significantly")
+                            .foregroundColor(Color .green)
+                            .font(.system(size: 20, weight: .light))
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            .opacity(0.90)
+                        Text("reduces it's effectiveness")
+                            .foregroundColor(Color .green)
+                            .font(.system(size: 20, weight: .light))
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            .opacity(0.90)
+                        
                         Spacer ()
-                            .frame(height: 100)
+                            .frame(height: 30)
                     }
                 }
                 
-                
-                
+              
                 
                 
                 
