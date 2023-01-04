@@ -155,7 +155,7 @@ struct PhotoPop3: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Image up-loaded to friend's iPhone. Only your friend can see this image. Make sure to up-load an image for yourself that brightens your day!", isPresented: $showingAlert) {
+                                .alert("Image up-loaded to friend's iPhone. Only your friend can see this image. \n\nMake sure to up-load an image for yourself that brightens your day!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
