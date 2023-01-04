@@ -71,7 +71,7 @@ struct ChatInfo: View {
                         NavigationLink(
                             destination: CreateChatRooms(user: user),
                             label: {
-                                Text("How to create Chat rooms")
+                                Text("Creating NEW Chat rooms")
                                     .fontWeight(.thin)
                                     .frame(width: 310, height: 30)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -90,7 +90,7 @@ struct ChatInfo: View {
                         NavigationLink(
                             destination: HowChatWorks(user: user),
                             label: {
-                                Text("How Chat Works")
+                                Text("Inside Chat")
                                     .fontWeight(.thin)
                                     .frame(width: 310, height: 30)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

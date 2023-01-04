@@ -42,7 +42,7 @@ struct HowChatWorks: View {
                     Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(ColorManager .purple1)
-                        .frame(width: 325, height: 325)
+                        .frame(width: 335, height: 335)
                         .shadow(color: .cyan, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
                     
@@ -52,7 +52,7 @@ struct HowChatWorks: View {
                         
                         
                         Spacer ()
-                            .frame(height: 55)
+                            .frame(height: 75)
                         
                         Text("Long-tap messages to:")
                             .font(.system(size: 20))
@@ -76,7 +76,7 @@ struct HowChatWorks: View {
                         Spacer ()
                             .frame(height: 15)
                         
-                        Text("Tap [Remove Me]")
+                        Text("Tap [Remove Me] at top of Chat")
                             .font(.system(size: 20))
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
@@ -94,10 +94,30 @@ struct HowChatWorks: View {
                             .frame(height: 15)
 
                         VStack {
+                            Text("Sending Images")
+                                .font(.system(size: 20))
+                                .fontWeight(.regular)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager .grey2)
+                            
+                            Text("-image shows as camera icon")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager .grey4)
                         
+                            
+                            Text("-tap icon to see image \ntap image to reduce size")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager .grey4)
+                            
+                            Spacer ()
+                                .frame(height: 15)
 
 
-                            Text("*** Chat has MANUAL scroll")
+                            Text("*** MANUAL scroll")
                                 .font(.system(size: 20))
                                 .fontWeight(.regular)
                                 .multilineTextAlignment(.center)
