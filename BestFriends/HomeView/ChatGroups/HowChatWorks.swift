@@ -43,7 +43,7 @@ struct HowChatWorks: View {
                         .resizable()
                         .foregroundColor(ColorManager .purple1)
                         .frame(width: 335, height: 335)
-                        .shadow(color: .cyan, radius: 65, x: 30, y: 50)
+                        .shadow(color: ColorManager .pmbc_blue, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
                     
                     

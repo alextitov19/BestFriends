@@ -62,8 +62,8 @@ struct CreateChatRooms: View {
                     Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(ColorManager .purple1)
-                        .frame(width: 325, height: 325)
-                        .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                        .frame(width: 335, height: 335)
+                        .shadow(color: ColorManager .purple4, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
                     
                     
@@ -96,7 +96,7 @@ struct CreateChatRooms: View {
                             .foregroundColor(ColorManager.grey4)
                     
                         
-                        Text("-tap [Create Chat Rooms]")
+                        Text("-tap [Create Chat Rooms] from dropdown")
                             .font(.system(size: 15))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -110,7 +110,7 @@ struct CreateChatRooms: View {
                         
                    
                         
-                        Text("* (must sign-out from 'Settings' \n& login to activate)")
+                        Text("* (must sign-out from 'Settings' \n& log back in to activate)")
                             .font(.system(size: 15))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)

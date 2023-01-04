@@ -68,7 +68,7 @@ struct ChatGroupsView: View {
                                label: {
                                    Text("SetUp")
                                        .fontWeight(.thin)
-                                       .frame(width: 70, height: 20)
+                                       .frame(width: 85, height: 25)
                                        .foregroundColor(ColorManager.purple1)
                                        .font(.system(size: 20))
                                        .background(ColorManager.purple3)

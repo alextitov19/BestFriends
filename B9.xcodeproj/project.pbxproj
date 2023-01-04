@@ -237,6 +237,7 @@
 		CFC0EE802908060C006B3FAA /* InfoPushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE7F2908060C006B3FAA /* InfoPushNotifications.swift */; };
 		CFCB79A1284D2F9000B8D868 /* HugVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */; };
 		CFCD4BAD2965C27F00BBE43A /* SafeChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD4BAC2965C27F00BBE43A /* SafeChat.swift */; };
+		CFCD4BAF2965CE5C00BBE43A /* ComingChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD4BAE2965CE5C00BBE43A /* ComingChat.swift */; };
 		CFD0468D282D7F8400BF0B02 /* AtmosphereMain2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */; };
 		CFD046932832F9D000BF0B02 /* Friend1VaultPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */; };
 		CFD046952835925F00BF0B02 /* FriendValutTrackMoods.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */; };
@@ -509,6 +510,7 @@
 		CFC0EE7F2908060C006B3FAA /* InfoPushNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPushNotifications.swift; sourceTree = "<group>"; };
 		CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HugVideo.mp4; sourceTree = "<group>"; };
 		CFCD4BAC2965C27F00BBE43A /* SafeChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeChat.swift; sourceTree = "<group>"; };
+		CFCD4BAE2965CE5C00BBE43A /* ComingChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingChat.swift; sourceTree = "<group>"; };
 		CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereMain2.swift; sourceTree = "<group>"; };
 		CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend1VaultPractice.swift; sourceTree = "<group>"; };
 		CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendValutTrackMoods.swift; sourceTree = "<group>"; };
@@ -814,10 +816,11 @@
 				7AFCF27927FDFFA800D2DB5C /* BlurView.swift */,
 				7AFCF27B27FDFFB000D2DB5C /* CustomCorner.swift */,
 				CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */,
+				CFCD4BAC2965C27F00BBE43A /* SafeChat.swift */,
 				CF2EE6FB29517A4B00B1B16D /* CreateChatRooms.swift */,
 				CF2EE6F729516C8A00B1B16D /* HowChatWorks.swift */,
 				CF2EE6F929516C9E00B1B16D /* CustomizeChatBackgrounds.swift */,
-				CFCD4BAC2965C27F00BBE43A /* SafeChat.swift */,
+				CFCD4BAE2965CE5C00BBE43A /* ComingChat.swift */,
 				CF2EE6F529516C7000B1B16D /* CreateGroupChatRooms.swift */,
 			);
 			path = ChatGroups;
@@ -1640,6 +1643,7 @@
 				7AFCF27A27FDFFA800D2DB5C /* BlurView.swift in Sources */,
 				7A0856A227F3D9A900E8282B /* RestAPI.swift in Sources */,
 				CF3B42F6293721A500EE1D84 /* SaySomethingNice6.swift in Sources */,
+				CFCD4BAF2965CE5C00BBE43A /* ComingChat.swift in Sources */,
 				CFDB1509285816AF00155CEE /* FaceTimeCall.swift in Sources */,
 				CF6499E1294E1F6C003BBF83 /* INFOPreload3.swift in Sources */,
 				7A7A23B42803D62700B87613 /* WebSocket.swift in Sources */,
