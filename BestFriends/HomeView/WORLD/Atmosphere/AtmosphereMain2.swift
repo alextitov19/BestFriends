@@ -24,7 +24,7 @@ struct AtmosphereMain2: View {
     @State private var summary = ""
     @State private var sharedWith: [String] = []
     @State private var colorChangeTap: String = ""
-    
+    @State private var shareTapped: Bool = false
     @State private var selectedFriends: [String] = []
     @State private var shareColor = ColorManager.purple5
     @State private var showingAlert = false
@@ -34,75 +34,93 @@ struct AtmosphereMain2: View {
     
     var body: some View {
         ZStack {
-
-//            Image("blueBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
+            
+            //            Image("blueBackground")
+            //                .resizable()
+            //                .ignoresSafeArea()
+            //                .scaledToFill()
             
             
-            ColorManager .purple1
-                .ignoresSafeArea()
             
-
-
-//            AdPlayerView(name: "sky2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
             
-            AdPlayerView(name: "Wind2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
             
-
+            
+            //            AdPlayerView(name: "sky2")
+            //                .ignoresSafeArea()
+            //                .blendMode(.screen)
+            
+            
+            
+            if shareTapped {
+                Image("purpleBackground")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFill()
+                    .ignoresSafeArea()
+                
+                AdPlayerView(name: "sky2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+            } else {
+                AdPlayerView(name: "Wind2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                
+                ColorManager.purple1
+                    .ignoresSafeArea()
+            }
+            
+            
+            
+            
             
             VStack {
-//
-//                Text("Sharing LIFE")
-//                    .font(.system(size: 20))
-//
-//                    .fontWeight(.ultraLight)
-//                    .foregroundColor(ColorManager .grey4)
-//                    .multilineTextAlignment(.center)
-//
-//                Text("with your trusted Friends")
-//                    .font(.system(size: 20))
-//
-//                    .fontWeight(.ultraLight)
-//                    .foregroundColor(ColorManager .grey4)
-//                    .multilineTextAlignment(.center)
+                //
+                //                Text("Sharing LIFE")
+                //                    .font(.system(size: 20))
+                //
+                //                    .fontWeight(.ultraLight)
+                //                    .foregroundColor(ColorManager .grey4)
+                //                    .multilineTextAlignment(.center)
+                //
+                //                Text("with your trusted Friends")
+                //                    .font(.system(size: 20))
+                //
+                //                    .fontWeight(.ultraLight)
+                //                    .foregroundColor(ColorManager .grey4)
+                //                    .multilineTextAlignment(.center)
                 
                 
                 HStack {
-                 
+                    
                     
                     Text("Share \nmy 'Vibes'")
                         .font(.system(size: 30))
                         .fontWeight(.ultraLight)
                         .foregroundColor(ColorManager .grey3)
                         .multilineTextAlignment(.center)
-                   
+                    
                     Image("FatGuy200")
                         .resizable()
                         .frame(width: 150, height: 150)
                     
                 }
-//                    Spacer()
-//                        .frame(height: 20)
-                    
-                  
-                    
-                  
-                    
+                //                    Spacer()
+                //                        .frame(height: 20)
                 
-              
-                    
                 
-    
+                
+                
+                
+                
+                
+                
+                
+                
                 HStack {
                     VStack {
                         
-                   
+                        
                         
                         Button(action: {
                             mood = 0
@@ -283,10 +301,10 @@ struct AtmosphereMain2: View {
                 
                 VStack {
                     // MARK: End of feeling buttons
-
+                    
                     
                     HStack {
-                       
+                        
                         
                         
                     }
@@ -310,12 +328,12 @@ struct AtmosphereMain2: View {
                         
                     }
                     
-         
+                    
                     HStack {
- 
+                        
                     }
-
-                  
+                    
+                    
                     VStack {
                         
                         Spacer()
@@ -323,16 +341,16 @@ struct AtmosphereMain2: View {
                         
                         
                         HStack {
-                      
-//                            Text("select >")
-//                                .fontWeight(.thin)
-//                                .frame(width: 100, height: 30)
-//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                .font(.system(size: 20))
-//                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-//                                .cornerRadius(25)
-//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                                           
+                            
+                            //                            Text("select >")
+                            //                                .fontWeight(.thin)
+                            //                                .frame(width: 100, height: 30)
+                            //                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            //                                .font(.system(size: 20))
+                            //                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+                            //                                .cornerRadius(25)
+                            //                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            
                             
                             if friends.count > 0 {
                                 RectView(user: user, friend: friends[0], color: colors[0])
@@ -365,9 +383,9 @@ struct AtmosphereMain2: View {
                             }
                         }
                         
-//                        Spacer()
-//                            .frame(height: 15)
-                   
+                        //                        Spacer()
+                        //                            .frame(height: 15)
+                        
                         HStack {
                             if friends.count > 2 {
                                 RectView(user: user, friend: friends[2], color: colors[2])
@@ -420,6 +438,7 @@ struct AtmosphereMain2: View {
                         
                         Button(action: {
                             counter += 1
+                            shareTapped = true
                             shareButtonTapped()
                         },
                                label: {
@@ -434,51 +453,51 @@ struct AtmosphereMain2: View {
                                 .alert("Non-judgemental, jealous and supportive friends are hard to find. \n\nNow they can lend support on difficult days - or cheer with you on good news. \n\nHold onto them!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
-                           
+                            
                         })
                         .confettiCannon(counter: $counter)
                         
-                VStack {
-                    Spacer()
-                        .frame(height: 15)
-                    NavigationLink(
-                        destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends),
-                        label: {
-                            Text("'Vibe' Tracker")
-                                .fontWeight(.thin)
-                                .frame(width: 200, height: 25)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 23))
-                                .background(ColorManager.pmbc_green)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        VStack {
+                            Spacer()
+                                .frame(height: 15)
+                            NavigationLink(
+                                destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends),
+                                label: {
+                                    Text("'Vibe' Tracker")
+                                        .fontWeight(.thin)
+                                        .frame(width: 200, height: 25)
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .font(.system(size: 23))
+                                        .background(ColorManager.pmbc_green)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                    
+                                })
                             
-                        })
-                    
-                    
-                    
-              
-//
-//                    Text("Friends supporting on difficult days")
-//                        .font(.system(size: 20))
-//
-//                        .fontWeight(.ultraLight)
-//                        .foregroundColor(ColorManager .grey3)
-//                        .multilineTextAlignment(.center)
-//
-//                    Text("Cheering on bright days")
-//                        .font(.system(size: 20))
-//
-//                        .fontWeight(.ultraLight)
-//                        .foregroundColor(ColorManager .grey3)
-//                        .multilineTextAlignment(.center)
+                            
+                            
+                            
+                            //
+                            //                    Text("Friends supporting on difficult days")
+                            //                        .font(.system(size: 20))
+                            //
+                            //                        .fontWeight(.ultraLight)
+                            //                        .foregroundColor(ColorManager .grey3)
+                            //                        .multilineTextAlignment(.center)
+                            //
+                            //                    Text("Cheering on bright days")
+                            //                        .font(.system(size: 20))
+                            //
+                            //                        .fontWeight(.ultraLight)
+                            //                        .foregroundColor(ColorManager .grey3)
+                            //                        .multilineTextAlignment(.center)
                             
                         }
                         
                     }
-
+                    
                 }
-
+                
                 Spacer()
                     .frame(height: 80)
                 
@@ -488,7 +507,7 @@ struct AtmosphereMain2: View {
     
     func shareButtonTapped() {
         shareMood()
-
+        
         if selectedFriends.count == 0 { return }
         for id in selectedFriends {
             for f in friends {
@@ -545,20 +564,20 @@ struct AtmosphereMain2: View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
                 .frame(width: 85, height: 85)
-               .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .font(.system(size: 8))
                 .background(color)
                 .cornerRadius(75)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
         }
-       
-    
+        
+        
         
     }
     
     private func defaultMessageButtonTapped(defaultMessage: String) {
         self.colorChangeTap = defaultMessage
-}
+    }
 }
 
 
