@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Promises
+import Promises     
 import FirebaseMessaging
 
 class RestApi {
