@@ -13,8 +13,6 @@ struct VirtualHug: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
-    private let timer = Timer.publish(every: 1.0, on: .main, in: .common).autoconnect()
-
     var body: some View {
         
         
@@ -70,8 +68,17 @@ struct VirtualHug: View {
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
                         .padding()
-                        .onReceive(timer) { _ in
-                           vibrate()
+                        .onTapGesture {
+                            let generator = UINotificationFeedbackGenerator()
+                            generator.notificationOccurred(.success)
+                            generator.notificationOccurred(.success)
+                            generator.notificationOccurred(.success)
+                            generator.notificationOccurred(.success)
+                            generator.notificationOccurred(.success)
+                            generator.notificationOccurred(.success)
+                            generator.notificationOccurred(.success)
+                            generator.notificationOccurred(.success)
+
                         }
                 }
                 
@@ -95,12 +102,6 @@ struct VirtualHug: View {
             }
         }
     }
-    
-    private func vibrate() {
-        let generator = UINotificationFeedbackGenerator()
-        generator.notificationOccurred(.success)
-    }
-    
 }
 
 
