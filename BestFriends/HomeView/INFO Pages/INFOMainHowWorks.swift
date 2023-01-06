@@ -27,19 +27,7 @@ struct INFOMainHowWorks: View {
             
             
             VStack {
-                //
-                //
-                //
-                //                Text("*For just 5 minutes - nightly at 8pm EST")
-                //                    .italic()
-                //                    .font(.system(size: 15))
-                //                    .fontWeight(.light)
-                //                    .multilineTextAlignment(.center)
-                //                    .foregroundColor(ColorManager.grey3)
-                //
-                //                Spacer()
-                //                    .frame(height: 12)
-                //
+  
                 
 //                Text("Everyone sharing their 'in-the-moment'")
 //
@@ -62,7 +50,7 @@ struct INFOMainHowWorks: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.purple5)
                 
-                VStack {
+        VStack {
                     
                     
                     Spacer()
@@ -82,34 +70,36 @@ struct INFOMainHowWorks: View {
                         .frame(height: 10)
                     
             VStack {
+                
+                HStack {
+                    ZStack {
+                        Image(systemName: "rectangle.fill")
+                            .resizable()
+                            .foregroundColor(ColorManager .purple2)
+                            .frame(width: 40, height: 40)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                            .opacity(0.95)
                         
-                        HStack {
-                            ZStack {
-                                Image(systemName: "rectangle.fill")
-                                    .resizable()
-                                    .foregroundColor(ColorManager .purple2)
-                                    .frame(width: 40, height: 40)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                                    .opacity(0.95)
-                                
-                                Image("IconPhotoNew40")
-                            }
-                            NavigationLink(
-                                destination: InfoAddFriends(user: user),
-                                label: {
-                                    Text("PhotoPOP")
-                                        .fontWeight(.thin)
-                                        .frame(width: 200, height: 40)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 25))
-                                        .background(ColorManager.purple3)
-                                        .cornerRadius(10)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    
-                                })
-                        }
-                        
+                        Image("IconPhotoNew40")
+                    }
+                    NavigationLink(
+                        destination: InfoAddFriends(user: user),
+                        label: {
+                            Text("PhotoPOP")
+                                .fontWeight(.thin)
+                                .frame(width: 200, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 25))
+                                .background(ColorManager.purple3)
+                                .cornerRadius(10)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            
+                        })
+                }
+            }
+            
+            VStack {
                         
                         Spacer()
                             .frame(height: 15)
@@ -243,9 +233,9 @@ struct INFOMainHowWorks: View {
                                 }
                             )}
                         //
-//                        Spacer()
-//                            .frame(height: 20)
-//
+                        Spacer()
+                            .frame(height: 15)
+
                         
                         HStack {
                             ZStack {
