@@ -30,7 +30,7 @@ struct InfoPushNotifications: View {
                 
                 Text("Say Something 'Nice'")
                     .font(.system(size: 35))
-                    .italic()
+            
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey2)
@@ -43,7 +43,7 @@ struct InfoPushNotifications: View {
                         .resizable()
                         .foregroundColor(ColorManager .purple1)
                         .frame(width: 400, height: 400)
-                        .shadow(color: .orange, radius: 65, x: 30, y: 50)
+                        .shadow(color: ColorManager .orange3, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
                     
                     

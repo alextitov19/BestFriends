@@ -30,9 +30,9 @@ struct InfoInsideChat: View {
 
 
 
-                Text("Friend Need a HUG?")
+                Text("Virtual HUGS")
                     .font(.system(size: 35))
-                    .italic()
+                    
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey2)
@@ -45,7 +45,7 @@ struct InfoInsideChat: View {
                         .resizable()
                         .foregroundColor(ColorManager .grey2)
                         .frame(width: 330, height: 330)
-                        .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                        .shadow(color: ColorManager .red, radius: 65, x: 30, y: 50)
                         .opacity(0.8)
 
 

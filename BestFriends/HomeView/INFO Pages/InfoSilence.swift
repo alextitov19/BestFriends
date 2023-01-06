@@ -32,7 +32,7 @@ struct InfoSilence: View {
                 
                 Text("My Silence")
                     .font(.system(size: 35))
-                    .italic()
+                    
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey2)
@@ -45,7 +45,7 @@ struct InfoSilence: View {
                         .resizable()
                         .foregroundColor(ColorManager .purple1)
                         .frame(width: 400, height: 400)
-                        .shadow(color: .gray, radius: 65, x: 30, y: 50)
+                        .shadow(color: ColorManager .grey2, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
                     
                     
