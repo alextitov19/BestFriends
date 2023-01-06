@@ -10,6 +10,7 @@
 import Foundation
 import SwiftUI
 import ConfettiSwiftUI
+import AVKit
 
 struct HugPushNotification: View {
     
@@ -24,48 +25,48 @@ struct HugPushNotification: View {
     @State private var showingAlert = false
     
     @State private var counter = 0
+    
+    @State private var mood: Int = -1
+    @State private var summary = ""
+    @State private var sharedWith: [String] = []
+    @State private var colorChangeTap: String = ""
+    @State private var shareTapped: Bool = false
+
 
     
     var body: some View {
         
         ZStack {
+          
             
-//            ColorManager.purple1
+            if shareTapped {
+                Image("purpleBackground")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFill()
+                    .ignoresSafeArea()
+                
+                AdPlayerView(name: "sky2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+            } else {
+                AdPlayerView(name: "Wind2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                
+                ColorManager.purple1
+                    .ignoresSafeArea()
+            }
+            
+//            ColorManager .purple1
 //                .ignoresSafeArea()
-//                .onAppear()
 //
-//
-////            Image("purpleBackground")
-////                .resizable()
-////                .ignoresSafeArea()
-////                .scaledToFill()
-////
-//            Image("ballons")
-//                .resizable()
+//            AdPlayerView(name: "sky2")
 //                .ignoresSafeArea()
-//                .scaledToFill()
-            
-            
-            
-            
-            ColorManager .purple1
-                .ignoresSafeArea()
-            
-
-
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
+//                .blendMode(.screen)
 
             
             VStack{
-//
-//                Text("Who are you sending ")
-//                    .font(.system(size: 20))
-//
-//                    .fontWeight(.ultraLight)
-//                    .foregroundColor(ColorManager .grey3)
-//                    .multilineTextAlignment(.center)
                 
                 HStack {
                     VStack {
@@ -201,17 +202,29 @@ struct HugPushNotification: View {
                                 
                             }
                         }
+                  
+                        
+                        
+//                        Button(action: {
+//                            counter += 1
+//                            shareButtonTapped()
+//                        },
+//                               label: {
+//                            Text("SHARE")
+                        
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 20)
                         
                         
                         Button(action: {
                             counter += 1
+                            shareTapped = true
                             shareButtonTapped()
                         },
                                label: {
                             Text("SHARE")
+                        
                                 .fontWeight(.thin)
                                 .frame(width: 100, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

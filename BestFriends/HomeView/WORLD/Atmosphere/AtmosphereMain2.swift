@@ -28,27 +28,12 @@ struct AtmosphereMain2: View {
     @State private var selectedFriends: [String] = []
     @State private var shareColor = ColorManager.purple5
     @State private var showingAlert = false
-    
     @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
+  
     @State private var counter = 0
     
     var body: some View {
         ZStack {
-            
-            //            Image("blueBackground")
-            //                .resizable()
-            //                .ignoresSafeArea()
-            //                .scaledToFill()
-            
-            
-            
-            
-            
-            
-            //            AdPlayerView(name: "sky2")
-            //                .ignoresSafeArea()
-            //                .blendMode(.screen)
-            
             
             
             if shareTapped {
@@ -75,21 +60,7 @@ struct AtmosphereMain2: View {
             
             
             VStack {
-                //
-                //                Text("Sharing LIFE")
-                //                    .font(.system(size: 20))
-                //
-                //                    .fontWeight(.ultraLight)
-                //                    .foregroundColor(ColorManager .grey4)
-                //                    .multilineTextAlignment(.center)
-                //
-                //                Text("with your trusted Friends")
-                //                    .font(.system(size: 20))
-                //
-                //                    .fontWeight(.ultraLight)
-                //                    .foregroundColor(ColorManager .grey4)
-                //                    .multilineTextAlignment(.center)
-                
+       
                 
                 HStack {
                     
@@ -105,18 +76,7 @@ struct AtmosphereMain2: View {
                         .frame(width: 150, height: 150)
                     
                 }
-                //                    Spacer()
-                //                        .frame(height: 20)
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+           
                 HStack {
                     VStack {
                         
@@ -474,24 +434,7 @@ struct AtmosphereMain2: View {
                                     
                                 })
                             
-                            
-                            
-                            
-                            //
-                            //                    Text("Friends supporting on difficult days")
-                            //                        .font(.system(size: 20))
-                            //
-                            //                        .fontWeight(.ultraLight)
-                            //                        .foregroundColor(ColorManager .grey3)
-                            //                        .multilineTextAlignment(.center)
-                            //
-                            //                    Text("Cheering on bright days")
-                            //                        .font(.system(size: 20))
-                            //
-                            //                        .fontWeight(.ultraLight)
-                            //                        .foregroundColor(ColorManager .grey3)
-                            //                        .multilineTextAlignment(.center)
-                            
+                       
                         }
                         
                     }

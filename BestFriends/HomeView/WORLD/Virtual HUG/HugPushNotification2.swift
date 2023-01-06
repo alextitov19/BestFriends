@@ -194,7 +194,7 @@ struct HugPushNotification2: View {
                         }
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 20)
                         
                         
                         Button(action: {
