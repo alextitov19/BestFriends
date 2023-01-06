@@ -30,30 +30,48 @@ struct SaySomethingNice8: View {
     @State private var showingAlert = false
     
     @State private var counter = 0
-   
+ 
+    @State private var shareTapped: Bool = false
+    
+    
+    
+    
 //    @State private var customMessage = "Custom Message"
 //
 //    @State private var noteTapped = false
 //
-    
-    
-    
-    
-    
-    
+  
     var body: some View {
         ZStack {
             
             
+            if shareTapped {
+                Image("purpleBackground")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFill()
+                    .ignoresSafeArea()
+                
+                AdPlayerView(name: "sky2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+            } else {
+                AdPlayerView(name: "Wind2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                
+                ColorManager.purple1
+                    .ignoresSafeArea()
+            }
             
-            ColorManager .purple1
-                .ignoresSafeArea()
+//            ColorManager .purple1
+//                .ignoresSafeArea()
+//         
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
             
             
-            
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
             
             
             VStack {
@@ -221,13 +239,25 @@ struct SaySomethingNice8: View {
                         
                         
                         
+//                        Spacer()
+//                            .frame(height: 20)
+//
+//
+//                        Button(action: {
+//
+//                            counter += 1
+//                            shareButtonTapped()
+//                        },
+//                               label: {
+//                            Text("SHARE")
+                        
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 20)
                         
                         
                         Button(action: {
-                            
                             counter += 1
+                            shareTapped = true
                             shareButtonTapped()
                         },
                                label: {
