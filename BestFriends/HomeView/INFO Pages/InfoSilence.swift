@@ -1,16 +1,17 @@
 //
-//  InfoCreateChatRm.swift
+//  InfoSilence.swift
 //  BestFriends
 //
-//  Created by Social Tech on 10/25/22.
+//  Created by Social Tech on 1/6/23.
 //
+
 
 
 import Foundation
 import SwiftUI
 import AVKit
 
-struct InfoCreateChatRm: View {
+struct InfoSilence: View {
    
     let user: User
    
@@ -29,9 +30,9 @@ struct InfoCreateChatRm: View {
           
                 
                 
-                Text("Set my 'Vibe'")
+                Text("My Silence")
                     .font(.system(size: 35))
-                    
+                    .italic()
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey2)
@@ -44,7 +45,7 @@ struct InfoCreateChatRm: View {
                         .resizable()
                         .foregroundColor(ColorManager .purple1)
                         .frame(width: 400, height: 400)
-                        .shadow(color: ColorManager .pmbc_green, radius: 65, x: 30, y: 50)
+                        .shadow(color: .gray, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
                     
                     
@@ -55,14 +56,14 @@ struct InfoCreateChatRm: View {
                         Spacer ()
                             .frame(height: 80)
                         
-                        Text("Something just happened")
+                        Text("Difficult day?")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.grey3)
                         
-                        Text("changing your day.")
+                        Text("Just want to be by yourself")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
@@ -72,31 +73,31 @@ struct InfoCreateChatRm: View {
                         Spacer ()
                             .frame(height: 25)
                         
-                        Text("Set your NEW 'Vibe'")
+                        Text("Safe in your room")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.grey3)
                         
-//                        Text("and send brief reason.")
-//                            .italic()
-//                            .font(.system(size: 20))
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(ColorManager.purple4)
+                        Text("sitting on your bed")
+                            .italic()
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager.grey3)
                         
                         Spacer ()
                             .frame(height: 25)
                         
-                        Text("Alert friend(s) via")
+                        Text("Listening to your special songs")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.grey3)
                  
-                        Text("special push notification.")
+                        Text("Reading saved nice messages")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)

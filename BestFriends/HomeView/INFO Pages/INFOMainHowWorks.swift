@@ -264,7 +264,7 @@ struct INFOMainHowWorks: View {
                             
                             NavigationLink(
                                 
-                                destination: SettingsNotificationsView(user: user),
+                                destination: InfoSilence(user: user),
                                 label: {
                                     Text("My Silence")
                                         .fontWeight(.thin)
