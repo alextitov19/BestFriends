@@ -34,18 +34,18 @@ struct PlanetBell: View {
                 Text("BF is designed for real-time interactions")
                     .foregroundColor(Color .green)
                     .font(.system(size: 20, weight: .light))
-                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                     .opacity(0.90)
                 
                 Text("Turning OFF notifications significantly")
                     .foregroundColor(Color .green)
                     .font(.system(size: 20, weight: .light))
-                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                     .opacity(0.90)
                 Text("reduces it's effectiveness")
                     .foregroundColor(Color .green)
                     .font(.system(size: 20, weight: .light))
-                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                     .opacity(0.90)
                 
                 ZStack {
@@ -55,7 +55,7 @@ struct PlanetBell: View {
                         .resizable()
                         .foregroundColor(ColorManager .purple1)
                         .frame(width: 400, height: 400)
-                        .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                        .shadow(color: ColorManager .grey2, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
                     
                     
