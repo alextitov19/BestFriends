@@ -56,7 +56,7 @@ struct SaySomethingNice8: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
             } else {
-                AdPlayerView(name: "Wind2")
+                AdPlayerView(name: "")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
