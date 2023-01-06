@@ -37,15 +37,15 @@ struct INFOMainHowWorks: View {
 //                    .foregroundColor(ColorManager.purple3)
                 
                 
-                Text("Emotional Adventures")
-                    .font(.system(size: 25))
+                Text("Sharing Emotional Adventures")
+                    .font(.system(size: 22))
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.purple5)
                 
                 Text("with 5 BFFs")
-                
                     .font(.system(size: 20))
+                    .italic()
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.purple5)
