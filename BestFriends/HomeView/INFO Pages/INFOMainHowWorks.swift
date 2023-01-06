@@ -41,12 +41,12 @@ struct INFOMainHowWorks: View {
                 //                    .frame(height: 12)
                 //
                 
-                Text("Everyone sharing their 'in-the-moment'")
-                
-                    .font(.system(size: 17))
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.purple3)
+//                Text("Everyone sharing their 'in-the-moment'")
+//
+//                    .font(.system(size: 17))
+//                    .fontWeight(.regular)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(ColorManager.purple3)
                 
                 
                 Text("Emotional Adventures")
@@ -81,7 +81,7 @@ struct INFOMainHowWorks: View {
                     Spacer()
                         .frame(height: 10)
                     
-                    VStack {
+            VStack {
                         
                         HStack {
                             ZStack {
@@ -112,7 +112,7 @@ struct INFOMainHowWorks: View {
                         
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 15)
                         
                         
                         HStack {
@@ -145,7 +145,7 @@ struct INFOMainHowWorks: View {
                         
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 15)
                         
                         HStack {
                             ZStack {
@@ -176,9 +176,9 @@ struct INFOMainHowWorks: View {
                                 })
                         }
                         
-                        
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 15)
+                
                         HStack {
                             ZStack {
                                 Image(systemName: "rectangle.fill")
@@ -209,7 +209,7 @@ struct INFOMainHowWorks: View {
                         }
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 15)
                         
                         
                         HStack {
@@ -243,21 +243,40 @@ struct INFOMainHowWorks: View {
                                 }
                             )}
                         //
-                        //                        NavigationLink(
-                        //
-                        //                            destination: SettingsNotificationsView(user: user),
-                        //                            label: {
-                        //                                Text("Drama Central")
-                        //                                    .fontWeight(.thin)
-                        //                                    .foregroundColor(Color.white)
-                        //                                    .frame(width: 200, height: 40)
-                        //                                    .font(.system(size: 25))
-                        //                                    .background(ColorManager.purple3)
-                        //                                    .cornerRadius(10)
-                        //                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        //
-                        //                            }
-                        //                        )}
+//                        Spacer()
+//                            .frame(height: 20)
+//
+                        
+                        HStack {
+                            ZStack {
+                                Image(systemName: "rectangle.fill")
+                                    .resizable()
+                                    .foregroundColor(ColorManager .purple2)
+                                    .frame(width: 40, height: 40)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                                    .opacity(0.95)
+                                
+                                Image("IconRoomNew")
+                            }
+                            
+                            
+                            NavigationLink(
+                                
+                                destination: SettingsNotificationsView(user: user),
+                                label: {
+                                    Text("My Silence")
+                                        .fontWeight(.thin)
+                                        .foregroundColor(Color.white)
+                                        .frame(width: 200, height: 40)
+                                        .font(.system(size: 25))
+                                        .background(ColorManager.purple3)
+                                        .cornerRadius(10)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                    
+                                }
+                            )}
                         //
                     }
                     
@@ -266,14 +285,7 @@ struct INFOMainHowWorks: View {
                         Spacer()
                             .frame(height: 30)
                         
-                        //                        Text("Yielding more")
-                        //
-                        //                            .font(.system(size: 17))
-                        //                            .fontWeight(.regular)
-                        //                            .multilineTextAlignment(.center)
-                        //                            .foregroundColor(ColorManager.purple3)
-                        
-                        Text("motionally closer, happier, resilient")
+                        Text("Emotionally closer, happier, resilient")
                             .font(.system(size: 19))
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
@@ -336,10 +348,7 @@ struct INFOMainHowWorks: View {
                     
                     Spacer()
                         .frame(height: 80)
-                    
-                    
-                    
-                    
+                  
                 }
             }
             
