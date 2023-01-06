@@ -164,6 +164,7 @@
 		CF41280A292715A5003BCBFA /* StoriesPreLoad2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF412809292715A5003BCBFA /* StoriesPreLoad2.swift */; };
 		CF41280E29275467003BCBFA /* SurveyStickersPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF41280D29275467003BCBFA /* SurveyStickersPreload.swift */; };
 		CF41753E2968847900898E2D /* InfoSilence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF41753D2968847900898E2D /* InfoSilence.swift */; };
+		CF4175422968A64800898E2D /* NisieJ2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4175412968A64800898E2D /* NisieJ2.mp4 */; };
 		CF47CF0328DB67A8008B6F11 /* PlanetSound.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */; };
 		CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */; };
 		CF47CF0928E2C93E008B6F11 /* BeSinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47CF0828E2C93E008B6F11 /* BeSinger.swift */; };
@@ -437,6 +438,7 @@
 		CF412809292715A5003BCBFA /* StoriesPreLoad2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesPreLoad2.swift; sourceTree = "<group>"; };
 		CF41280D29275467003BCBFA /* SurveyStickersPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyStickersPreload.swift; sourceTree = "<group>"; };
 		CF41753D2968847900898E2D /* InfoSilence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSilence.swift; sourceTree = "<group>"; };
+		CF4175412968A64800898E2D /* NisieJ2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = NisieJ2.mp4; sourceTree = "<group>"; };
 		CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlanetSound.mp4; sourceTree = "<group>"; };
 		CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Emilia2.m4a; sourceTree = "<group>"; };
 		CF47CF0828E2C93E008B6F11 /* BeSinger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeSinger.swift; sourceTree = "<group>"; };
@@ -1095,6 +1097,7 @@
 				CF47CF1328E81BBE008B6F11 /* Wind2.mp4 */,
 				CFD6C05829405EB100D57E0B /* MyRoom5.mp4 */,
 				CF6499E4294EBAC1003BBF83 /* AloneBeach.mp4 */,
+				CF4175412968A64800898E2D /* NisieJ2.mp4 */,
 				CF3DB38A28DADD3E00BF9CCD /* New Group */,
 				CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */,
 				CF3DB37128DA6D7D00BF9CCD /* Nadiah2.m4a */,
@@ -1548,6 +1551,7 @@
 				CF47CF0328DB67A8008B6F11 /* PlanetSound.mp4 in Resources */,
 				CF47CF1428E81BBE008B6F11 /* Wind2.mp4 in Resources */,
 				CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */,
+				CF4175422968A64800898E2D /* NisieJ2.mp4 in Resources */,
 				7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */,
 				CF65040028864AF00092EEB9 /* background_1.mp4 in Resources */,
 				7A63AF8B26A339C70072E21E /* Launch Screen.storyboard in Resources */,
