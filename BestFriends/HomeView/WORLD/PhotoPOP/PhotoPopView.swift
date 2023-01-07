@@ -57,11 +57,27 @@ struct PhotoPopView: View {
                     .font(.system(size: 17, weight: .light))
                     .foregroundColor(ColorManager .grey2)
                 
-                Text("friend's image")
+                Text("image friend sent!")
                     .font(.system(size: 17, weight: .light))
                     .foregroundColor(ColorManager .grey2)
 
 
+                
+                 NavigationLink(
+                    destination: PhotoPop3(user: user, friends: friends),
+                    label: {
+                        Text("How PhotoPOP Works")
+                            .fontWeight(.thin)
+                            .frame(width: 250, height: 30)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 18.5))
+                            .background(ColorManager.purple3)
+                            .cornerRadius(10)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
+                 
+                
+                
                 
                 Spacer()
                     .frame(height: 25)
@@ -77,6 +93,12 @@ struct PhotoPopView: View {
                         .background(ColorManager.purple3)
                         .cornerRadius(15)
                 })
+                
+                
+                
+                
+                
+                
                 
                 
                 if isLoading {
@@ -168,49 +190,49 @@ struct PhotoPopView: View {
                     
 //                    .padding()
                     
-                    
-                    Spacer()
-                        .frame(height: 20)
-                    
-                    Text("Up-loading to PhotoPOP:")
-                        .font(.system(size: 20, weight: .light))
-                        .foregroundColor(.green)
-                    
-                    Text("-Select friend, tap image from photo gallery")
-                        .font(.system(size: 13, weight: .light))
-                        .italic()
-                        .foregroundColor(.white)
-                   
-                    NavigationLink(
-                       destination: PhotoPop3(user: user, friends: friends),
-                       label: {
-                           Text("Send 'Push Notification' after up-load")
-                               .fontWeight(.thin)
-                               .frame(width: 310, height: 30)
-                               .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                               .font(.system(size: 17))
-                               .background(ColorManager.purple3)
-                               .cornerRadius(10)
-                               .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                       })
-                    
-                    
-                    Spacer()
-                        .frame(height: 20)
-                    
-                    Text("Replacing image:")
-                        .font(.system(size: 20, weight: .light))
-                        .foregroundColor(.green)
-                    
-                    
-                    Text("-Tap image, then exit & re-enter page")
-                        .font(.system(size: 13, weight: .light))
-                        .italic()
-                        .foregroundColor(.white)
-                    Text("* (can only have ONE 'active' image at a time)")
-                        .italic()
-                        .font(.system(size: 13, weight: .light))
-                        .foregroundColor(Color .green)
+//
+//                    Spacer()
+//                        .frame(height: 20)
+//
+//                    Text("Up-loading to PhotoPOP:")
+//                        .font(.system(size: 20, weight: .light))
+//                        .foregroundColor(.green)
+//
+//                    Text("-Select friend, tap image from photo gallery")
+//                        .font(.system(size: 13, weight: .light))
+//                        .italic()
+//                        .foregroundColor(.white)
+//
+//                    NavigationLink(
+//                       destination: PhotoPop3(user: user, friends: friends),
+//                       label: {
+//                           Text("How PhotoPOP Works")
+//                               .fontWeight(.thin)
+//                               .frame(width: 310, height: 30)
+//                               .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                               .font(.system(size: 17))
+//                               .background(ColorManager.purple3)
+//                               .cornerRadius(10)
+//                               .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                       })
+//
+//
+//                    Spacer()
+//                        .frame(height: 20)
+//
+//                    Text("Replacing image:")
+//                        .font(.system(size: 20, weight: .light))
+//                        .foregroundColor(.green)
+//
+//
+//                    Text("-Tap image, then exit & re-enter page")
+//                        .font(.system(size: 13, weight: .light))
+//                        .italic()
+//                        .foregroundColor(.white)
+//                    Text("* (can only have ONE 'active' image at a time)")
+//                        .italic()
+//                        .font(.system(size: 13, weight: .light))
+//                        .foregroundColor(Color .green)
 
                 }
             }

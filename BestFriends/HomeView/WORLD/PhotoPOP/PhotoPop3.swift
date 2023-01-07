@@ -34,9 +34,36 @@ struct PhotoPop3: View {
          
                 VStack {
                       
+                 
+                    Text("Up-loading to PhotoPOP:")
+                        .font(.system(size: 20, weight: .light))
+                        .foregroundColor(.green)
+                    
+                    Text("-Select friend, tap image from photo gallery")
+                        .font(.system(size: 13, weight: .light))
+                        .italic()
+                        .foregroundColor(.white)
                     Spacer()
                         .frame(height: 20)
                     
+              
+                    
+                    Text("Replacing image:")
+                        .font(.system(size: 20, weight: .light))
+                        .foregroundColor(.green)
+                    
+                    
+                    Text("-Tap image, then exit & re-enter page")
+                        .font(.system(size: 13, weight: .light))
+                        .italic()
+                        .foregroundColor(.white)
+                    Text("* (can only have ONE 'active' image at a time)")
+                        .italic()
+                        .font(.system(size: 13, weight: .light))
+                        .foregroundColor(Color .green)
+                  
+                    Spacer()
+                        .frame(height: 60)
                     
                     Text("Who are you")
                         .font(.system(size: 35, weight: .ultraLight))
@@ -45,13 +72,11 @@ struct PhotoPop3: View {
                         .font(.system(size: 35, weight: .ultraLight))
                         .foregroundColor(Color.white)
                     
-                    
+                  
+                   
                     VStack {
                         
-                        Spacer()
-                            .frame(height: 20)
-                        
-                        
+                      
                         HStack {
                       
                             Text("select >")
@@ -172,10 +197,10 @@ struct PhotoPop3: View {
                         }
                     
                     
-                    
-                
-                    Spacer()
-                        .frame(height: 150)
+//
+//
+//                    Spacer()
+//                        .frame(height: 150)
                     
                 }
                 
