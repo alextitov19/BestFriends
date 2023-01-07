@@ -76,18 +76,19 @@ struct PhotoPop3: View {
                    
                     VStack {
                         
-                      
+
+           
                         HStack {
-                      
-                            Text("select >")
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 20))
-                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            //                                })
+//
+//                            Text("select >")
+//                                .fontWeight(.thin)
+//                                .frame(width: 100, height: 30)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 20))
+//                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+//                                .cornerRadius(25)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            //                                })
                             
                             if friends.count > 0 {
                                 RectView(user: user, friend: friends[0], color: colors[0])
@@ -168,29 +169,36 @@ struct PhotoPop3: View {
                             }
                         }
                         
+                        Spacer()
+                            .frame(height: 20)
+               
+                        
+                        
                         Button(action: {
                             shareButtonTapped()
                         },
                                label: {
                             Text("SHARE")
                                 .fontWeight(.thin)
-                                .frame(width: 100, height: 40)
+                                .frame(width: 100, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
+                                .font(.system(size: 25))
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Image up-loaded to friend's iPhone. Only your friend can see this image. \n\nMake sure to up-load an image for yourself that brightens your day!", isPresented: $showingAlert) {
+                                .alert("Your HUG request was sent at the speed of light. \n\nYour friend should send you a HUG as soon as they can.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
                         
-                        VStack {
-                            
-                            Spacer()
-                                .frame(height: 30)
-                   
-                        }
+//                        
+//                        
+//                        VStack {
+//                            
+//                            Spacer()
+//                                .frame(height: 30)
+//                   
+//                        }
                         
 
 
@@ -222,25 +230,23 @@ struct PhotoPop3: View {
         }
         shareColor = ColorManager.darkGrey
         showingAlert = true
+
+}
+
+struct RectView: View {
+    let user: User
+    let friend: User
+    let color: Color
+    
+    var body: some View {
+        Text(friend.firstName + " " + String(friend.lastName.first!))
+            .fontWeight(.bold)
+            .frame(width: 90, height: 90)
+            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+            .font(.system(size: 8))
+            .background(color)
+            .cornerRadius(75)
+            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
     }
-    
-    struct RectView: View {
-        let user: User
-        let friend: User
-        let color: Color
-        
-        var body: some View {
-            Text(friend.firstName + " " + String(friend.lastName.first!))
-                .fontWeight(.bold)
-                .frame(width: 100, height: 30)
-                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                .font(.system(size: 10))
-                .background(color)
-                .cornerRadius(25)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-        }
-    }
-    
-    
-    
+}
 }
