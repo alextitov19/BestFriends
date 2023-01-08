@@ -50,7 +50,7 @@ struct HugPushNotification: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
             } else {
-                AdPlayerView(name: "NisieJ3")
+                AdPlayerView(name: "NisieJ9")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 

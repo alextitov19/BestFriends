@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct PhotoPopView: View {
     @EnvironmentObject var sessionManager: SessionManager
 
@@ -22,6 +23,10 @@ struct PhotoPopView: View {
     @State private var attachmentImage: UIImage?
     
     @State private var isLoading = false
+    
+    
+   
+    
     
     var body: some View {
         ZStack {

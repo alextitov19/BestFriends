@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftUI
+import ConfettiSwiftUI
 
 
 struct PhotoPop3: View {
@@ -21,6 +22,19 @@ struct PhotoPop3: View {
     @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
     @State private var shareColor = ColorManager.purple5
     @State private var showingAlert = false
+    
+ 
+    @State private var counter = 0
+    @State private var shareTapped: Bool = false
+    
+//    @State private var mood: Int = -1
+//    @State private var summary = ""
+//    @State private var sharedWith: [String] = []
+//    @State private var colorChangeTap: String = ""
+  
+
+    
+    
     
     var body: some View {
         
@@ -172,9 +186,9 @@ struct PhotoPop3: View {
                         Spacer()
                             .frame(height: 20)
                
-                        
-                        
                         Button(action: {
+                            counter += 1
+                            shareTapped = true
                             shareButtonTapped()
                         },
                                label: {
@@ -190,23 +204,11 @@ struct PhotoPop3: View {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
+ 
+                        .confettiCannon(counter: $counter)
                         
-//                        
-//                        
-//                        VStack {
-//                            
-//                            Spacer()
-//                                .frame(height: 30)
-//                   
-//                        }
-                        
-
-
                         }
-                    
-                    
-//
-//
+
 //                    Spacer()
 //                        .frame(height: 150)
                     
