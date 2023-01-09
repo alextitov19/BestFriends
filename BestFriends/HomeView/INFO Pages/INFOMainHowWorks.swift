@@ -115,7 +115,7 @@ struct INFOMainHowWorks: View {
                                 //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
                                     .opacity(0.95)
                                 
-                                Image("IconVibeNew40")
+                                Image("iconVibeMoon")
                             }
                             
                             NavigationLink(
@@ -238,18 +238,18 @@ struct INFOMainHowWorks: View {
 
                         
                         HStack {
-                            ZStack {
-                                Image(systemName: "rectangle.fill")
-                                    .resizable()
-                                    .foregroundColor(ColorManager .purple2)
-                                    .frame(width: 40, height: 40)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                                    .opacity(0.95)
-                                
-                                Image("IconRoomNew")
-                            }
+                           ZStack {
+                            Image(systemName: "rectangle.fill")
+                                .resizable()
+                                .foregroundColor(ColorManager .purple2)
+                                .frame(width: 40, height: 40)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            
+                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                                .opacity(0.95)
+                            
+                            Image("iconSilence")
+                        }
                             
                             
                             NavigationLink(
@@ -273,21 +273,21 @@ struct INFOMainHowWorks: View {
                     VStack {
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 70)
                         
-                        Text("Emotionally closer, happier, resilient")
-                            .font(.system(size: 19))
-                            .fontWeight(.regular)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple5)
-                        
-                        
-                        Text("Friendships")
-                        
-                            .font(.system(size: 22))
-                            .fontWeight(.regular)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple5)
+//                        Text("Emotionally closer, happier, resilient")
+//                            .font(.system(size: 19))
+//                            .fontWeight(.regular)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(ColorManager.purple5)
+//
+//
+//                        Text("Friendships")
+//
+//                            .font(.system(size: 22))
+//                            .fontWeight(.regular)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(ColorManager.purple5)
                         
                         NavigationLink(
                             
@@ -307,17 +307,9 @@ struct INFOMainHowWorks: View {
                     
                     VStack {
                         
-                        Text("^")
-                            .fontWeight(.regular)
-                            .foregroundColor(Color.white)
-                            .frame(width: 50, height: 23)
-                            .font(.system(size: 30))
-                            .background(ColorManager .red)
-                            .cornerRadius(7)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
+
                         Spacer()
-                            .frame(height: 40)
+                            .frame(height: 25)
                         
                         NavigationLink(
                             
@@ -328,7 +320,7 @@ struct INFOMainHowWorks: View {
                                     .foregroundColor(Color.white)
                                     .frame(width: 310, height: 30)
                                     .font(.system(size: 25))
-                                    .background(ColorManager .purple3)
+                                    .background(ColorManager.pmbc_green)
                                     .cornerRadius(7)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 
