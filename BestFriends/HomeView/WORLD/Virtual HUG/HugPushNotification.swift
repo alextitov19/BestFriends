@@ -40,13 +40,19 @@ struct HugPushNotification: View {
           
             
             if shareTapped {
-                Image("purpleBackground")
-                    .resizable()
-                    .ignoresSafeArea()
-                    .scaledToFill()
-                    .ignoresSafeArea()
                 
-                AdPlayerView(name: "sky2")
+                
+                
+                            ColorManager.purple2
+                                .ignoresSafeArea()
+                                .onAppear()
+//                Image("purpleBackground")
+//                    .resizable()
+//                    .ignoresSafeArea()
+//                    .scaledToFill()
+//                    .ignoresSafeArea()
+                
+                AdPlayerView(name: "dramaLights")
                     .ignoresSafeArea()
                     .blendMode(.screen)
             } else {

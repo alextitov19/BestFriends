@@ -37,11 +37,15 @@ struct AtmosphereMain2: View {
             
             
             if shareTapped {
-                Image("purpleBackground")
-                    .resizable()
+                
+                ColorManager.purple2
                     .ignoresSafeArea()
-                    .scaledToFill()
-                    .ignoresSafeArea()
+                    .onAppear()
+//                Image("purpleBackground")
+//                    .resizable()
+//                    .ignoresSafeArea()
+//                    .scaledToFill()
+//                    .ignoresSafeArea()
                 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
