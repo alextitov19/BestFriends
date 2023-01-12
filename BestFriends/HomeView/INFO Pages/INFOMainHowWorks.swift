@@ -17,6 +17,24 @@ struct INFOMainHowWorks: View {
     
     let user: User
     
+//     MARK:
+    @State private var selectedFriends: [String] = []
+    @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
+    @State private var shareColor = ColorManager.purple5
+    @State private var showingAlert = false
+    
+    @State private var counter = 0
+    
+    @State private var mood: Int = -1
+    @State private var summary = ""
+    @State private var sharedWith: [String] = []
+    @State private var colorChangeTap: String = ""
+    @State private var shareTapped: Bool = false
+  
+    
+    
+// MARK:
+    
     var body: some View {
         ZStack {
             
@@ -52,24 +70,42 @@ struct INFOMainHowWorks: View {
                 
         VStack {
                     
-                    
-                    Spacer()
-                        .frame(height: 20)
-                    
-                    
-                    Text("Walk-though")
-                        .font(.system(size: 27, weight: .bold))
-                        .foregroundColor(ColorManager .grey1)
-                        .shadow(color: .purple, radius: 1, x: 0, y: 1)
-                        .opacity(0.50)
-                        .multilineTextAlignment(.center)
+            
                     
                     
                     
             
+            Button(action: {
+                counter += 1
+                shareTapped = true
+//                shareButtonTapped()
+            },
+                   label: {
+                Text("Why I love BF")
+            
+                    .fontWeight(.thin)
+                    .frame(width: 60, height:40)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .font(.system(size: 15))
+                    .background(shareColor)
+                    .cornerRadius(7)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    .alert("Hey guys \n\nIt's like they really understand \nme and my friends", isPresented: $showingAlert) {
+                        Button("OK", role: .cancel) { }
+                    }
+            })
             
             
+            Spacer()
+                .frame(height: 20)
             
+            
+            Text("Walk-though")
+                .font(.system(size: 27, weight: .bold))
+                .foregroundColor(ColorManager .grey1)
+                .shadow(color: .purple, radius: 1, x: 0, y: 1)
+                .opacity(0.50)
+                .multilineTextAlignment(.center)
             
             
             
@@ -337,7 +373,17 @@ struct INFOMainHowWorks: View {
                             }
                         )}
                     
-                    
+//            func shareButtonTapped() {
+////                sendMessage()
+////
+////                if selectedFriends.count == 0 { return }
+////                for id in selectedFriends {
+////                    for f in friends {
+////                        if f.id == id {
+////                            RestApi.instance.sendPushNotification(title: "BestFriends World FriendGroups", body: "\(user.firstName) sent you 'Nice' message. Take a moment and send one back! Tap friend's planet on Home pg, then tap [Friend said something 'Nice'] from dropdown.", APNToken: f.APNToken)
+////                        }
+////                    }
+//                }
                     Spacer()
                         .frame(height: 80)
                   
