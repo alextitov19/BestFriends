@@ -55,8 +55,35 @@ struct InfoWhyLoveFB: View {
 
                         Spacer ()
                             .frame(height: 60)
+                        
+                        Text("BestFriends")
+                            .italic()
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .white)
 
-                        Text("It's like they really understand ")
+                      
+
+                        Text("was designed by teen girls")
+                            .italic()
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .white)
+
+                        Spacer ()
+                            .frame(height: 35)
+                        
+
+                        Text("It's like they")
+                            .italic()
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .white)
+                        
+                        Text("really understand")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
@@ -71,16 +98,6 @@ struct InfoWhyLoveFB: View {
                             .foregroundColor(Color .white)
 
 
-//                        Spacer ()
-//                            .frame(height: 20)
-//
-//                        Text("It will vibrate for a second")
-//                            .italic()
-//                            .font(.system(size: 20))
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(Color .white)
-//
 
 
 
