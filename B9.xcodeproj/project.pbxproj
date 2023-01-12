@@ -165,6 +165,7 @@
 		CF41280E29275467003BCBFA /* SurveyStickersPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF41280D29275467003BCBFA /* SurveyStickersPreload.swift */; };
 		CF41753E2968847900898E2D /* InfoSilence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF41753D2968847900898E2D /* InfoSilence.swift */; };
 		CF417546296A60F700898E2D /* NisieJ9.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF417545296A60F700898E2D /* NisieJ9.mp4 */; };
+		CF417548296FA55100898E2D /* INFOMainHowWorks2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF417547296FA55100898E2D /* INFOMainHowWorks2.swift */; };
 		CF47CF0328DB67A8008B6F11 /* PlanetSound.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */; };
 		CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */; };
 		CF47CF0928E2C93E008B6F11 /* BeSinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47CF0828E2C93E008B6F11 /* BeSinger.swift */; };
@@ -439,6 +440,7 @@
 		CF41280D29275467003BCBFA /* SurveyStickersPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyStickersPreload.swift; sourceTree = "<group>"; };
 		CF41753D2968847900898E2D /* InfoSilence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSilence.swift; sourceTree = "<group>"; };
 		CF417545296A60F700898E2D /* NisieJ9.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = NisieJ9.mp4; sourceTree = "<group>"; };
+		CF417547296FA55100898E2D /* INFOMainHowWorks2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOMainHowWorks2.swift; sourceTree = "<group>"; };
 		CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlanetSound.mp4; sourceTree = "<group>"; };
 		CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Emilia2.m4a; sourceTree = "<group>"; };
 		CF47CF0828E2C93E008B6F11 /* BeSinger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeSinger.swift; sourceTree = "<group>"; };
@@ -1259,6 +1261,7 @@
 				CF6499E0294E1F6C003BBF83 /* INFOPreload3.swift */,
 				CF6499EC29501EF7003BBF83 /* INFOPreload4.swift */,
 				CF2EE6FD295294E600B1B16D /* INFOMainHowWorks.swift */,
+				CF417547296FA55100898E2D /* INFOMainHowWorks2.swift */,
 				CF3295FC290BBD210014F658 /* InfoCoolVideo.swift */,
 				CF37535928BED060003817E3 /* BuiltForTeens.swift */,
 				CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */,
@@ -1654,6 +1657,7 @@
 				CFDB1509285816AF00155CEE /* FaceTimeCall.swift in Sources */,
 				CF6499E1294E1F6C003BBF83 /* INFOPreload3.swift in Sources */,
 				7A7A23B42803D62700B87613 /* WebSocket.swift in Sources */,
+				CF417548296FA55100898E2D /* INFOMainHowWorks2.swift in Sources */,
 				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
 				7AB5216C289D97F7005A49FA /* Subscriptions.swift in Sources */,
 				CF4128042922A451003BCBFA /* PhotoPOPFGPreload.swift in Sources */,
