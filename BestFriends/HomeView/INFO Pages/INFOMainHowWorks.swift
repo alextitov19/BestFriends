@@ -311,21 +311,9 @@ struct INFOMainHowWorks: View {
                     VStack {
                         
                         Spacer()
-                            .frame(height: 70)
+                            .frame(height: 50)
                         
-//                        Text("Emotionally closer, happier, resilient")
-//                            .font(.system(size: 19))
-//                            .fontWeight(.regular)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(ColorManager.purple5)
-//
-//
-//                        Text("Friendships")
-//
-//                            .font(.system(size: 22))
-//                            .fontWeight(.regular)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(ColorManager.purple5)
+
                         
                         NavigationLink(
                             
