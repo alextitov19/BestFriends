@@ -15,9 +15,9 @@ import AVKit
 struct INFOMainHowWorks2: View {
 
     let user: User
-    let friends: [User]
-    let groups: [Group]
-    let atmosphere: Atmosphere
+//    let friends: [User]
+//    let groups: [Group]
+//    let atmosphere: Atmosphere
 
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
@@ -49,7 +49,7 @@ struct INFOMainHowWorks2: View {
             ZStack{
 
                 NavigationLink(destination: EmptyView(), label: {
-                    HugCircle (color: ColorManager.purple1, friendName: "send \nHUG")
+                    BrandingCircle (color: ColorManager.purple1, friendName: "They \nreally \nunderstand \nme")
                 })
                 .offset(x: showItems ? 120 : 0, y: showItems ? -270: 0)
                 .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
@@ -57,21 +57,21 @@ struct INFOMainHowWorks2: View {
 
 
 
-                    NavigationLink(destination: HugPushNotification2(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .grey1, friendName: "get a \n HUG")
+                    NavigationLink(destination: EmptyView(), label: {
+                        BrandingCircle (color: ColorManager .grey1, friendName: "Like \nthey built \nit \njust")
                     })
                     .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
                     .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
 
 
 
-
-                NavigationLink(destination: EmptyView(), label: {
-                    HugCircle (color: ColorManager .grey1, friendName: "")
-                })
-                .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
-                .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
-
+//
+//                NavigationLink(destination: EmptyView(), label: {
+//                    BrandingCircle (color: ColorManager .grey1, friendName: "for me \n& my \nfriends")
+//                })
+//                .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
+//                .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
+//
 
 
 
@@ -80,7 +80,7 @@ struct INFOMainHowWorks2: View {
                     Image(systemName: "heart.fill")
                         .resizable()
                         .foregroundColor(ColorManager .purple1)
-                        .frame(width: 250, height: 200)
+                        .frame(width: 30, height: 30)
                     //                    .blur(radius: 2)
                         .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
                         .opacity(0.70)
@@ -91,10 +91,10 @@ struct INFOMainHowWorks2: View {
                         Spacer ()
                             .frame(height: 10)
 
-                        Text("I love BF")
+                        Text("?")
                             .font(.system(size: 25))
 
-                            .foregroundColor(ColorManager .grey2)
+                            .foregroundColor(ColorManager .red)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         //                            .shadow(color: .black, radius: 1, x: 0, y: 1)

@@ -90,8 +90,11 @@ struct INFOMainHowWorks: View {
                         
                         Image("IconPhotoNew40")
                     }
+                    
+//                    InfoAddFriends(user: user),
+                    
                     NavigationLink(
-                        destination: InfoAddFriends(user: user),
+                        destination: INFOMainHowWorks2(user: user),
                         label: {
                             Text("PhotoPOP")
                                 .fontWeight(.thin)
