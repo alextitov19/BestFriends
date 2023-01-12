@@ -43,9 +43,9 @@ struct InfoWhyLoveFB: View {
 
                     Image(systemName: "heart.fill")
                         .resizable()
-                        .foregroundColor(ColorManager .grey2)
+                        .foregroundColor(ColorManager .purple2)
                         .frame(width: 330, height: 330)
-                        .shadow(color: ColorManager .red, radius: 65, x: 30, y: 50)
+                        .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
                         .opacity(0.8)
 
 
