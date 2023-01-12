@@ -17,23 +17,7 @@ struct INFOMainHowWorks: View {
     
     let user: User
     
-//     MARK:
-//    @State private var selectedFriends: [String] = []
-//    @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
-//    @State private var shareColor = ColorManager.purple5
-//    @State private var showingAlert = false
-//
-//    @State private var counter = 0
-//
-//    @State private var mood: Int = -1
-//    @State private var summary = ""
-//    @State private var sharedWith: [String] = []
-//    @State private var colorChangeTap: String = ""
-//    @State private var shareTapped: Bool = false
-//
-    
-    
-// MARK:
+
     
     var body: some View {
         ZStack {
@@ -73,7 +57,7 @@ struct INFOMainHowWorks: View {
                 ZStack {
                     Image(systemName: "heart.fill")
                         .resizable()
-                        .foregroundColor(ColorManager .purple2)
+                        .foregroundColor(ColorManager .red)
                         .frame(width: 40, height: 40)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
@@ -92,7 +76,7 @@ struct INFOMainHowWorks: View {
                             .frame(width: 150, height: 30)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 25))
-                            .background(ColorManager .red)
+                            .background(ColorManager .purple2)
                             .cornerRadius(10)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
