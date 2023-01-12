@@ -18,19 +18,19 @@ struct INFOMainHowWorks: View {
     let user: User
     
 //     MARK:
-    @State private var selectedFriends: [String] = []
-    @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
-    @State private var shareColor = ColorManager.purple5
-    @State private var showingAlert = false
-    
-    @State private var counter = 0
-    
-    @State private var mood: Int = -1
-    @State private var summary = ""
-    @State private var sharedWith: [String] = []
-    @State private var colorChangeTap: String = ""
-    @State private var shareTapped: Bool = false
-  
+//    @State private var selectedFriends: [String] = []
+//    @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
+//    @State private var shareColor = ColorManager.purple5
+//    @State private var showingAlert = false
+//
+//    @State private var counter = 0
+//
+//    @State private var mood: Int = -1
+//    @State private var summary = ""
+//    @State private var sharedWith: [String] = []
+//    @State private var colorChangeTap: String = ""
+//    @State private var shareTapped: Bool = false
+//
     
     
 // MARK:
@@ -69,32 +69,40 @@ struct INFOMainHowWorks: View {
                     .foregroundColor(ColorManager.purple5)
                 
         VStack {
+            HStack {
+                ZStack {
+                    Image(systemName: "heart.fill")
+                        .resizable()
+                        .foregroundColor(ColorManager .purple2)
+                        .frame(width: 40, height: 40)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                        .opacity(0.95)
+                    
+                    //                Image("IconPhotoNew40")
+                }
+                
+                //                    InfoAddFriends(user: user),
+                
+                NavigationLink(
+                    destination: InfoAddFriends(user: user),
+                    label: {
+                        Text("Why I love BF")
+                            .fontWeight(.thin)
+                            .frame(width: 150, height: 30)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 25))
+                            .background(ColorManager .red)
+                            .cornerRadius(10)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        
+                    })
+                
+            }
+                    
                     
             
-                    
-                    
-                    
-            
-            Button(action: {
-                counter += 1
-                shareTapped = true
-//                shareButtonTapped()
-            },
-                   label: {
-                Text("Why I love BF")
-            
-                    .fontWeight(.thin)
-                    .frame(width: 60, height:40)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 15))
-                    .background(shareColor)
-                    .cornerRadius(7)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    .alert("Hey guys \n\nIt's like they really understand \nme and my friends", isPresented: $showingAlert) {
-                        Button("OK", role: .cancel) { }
-                    }
-            })
-            
+  
             
             Spacer()
                 .frame(height: 20)
@@ -130,7 +138,7 @@ struct INFOMainHowWorks: View {
 //                    InfoAddFriends(user: user),
                     
                     NavigationLink(
-                        destination: INFOMainHowWorks2(user: user),
+                        destination: InfoAddFriends(user: user),
                         label: {
                             Text("PhotoPOP")
                                 .fontWeight(.thin)
