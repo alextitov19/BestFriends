@@ -166,6 +166,7 @@
 		CF41753E2968847900898E2D /* InfoSilence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF41753D2968847900898E2D /* InfoSilence.swift */; };
 		CF417546296A60F700898E2D /* NisieJ9.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF417545296A60F700898E2D /* NisieJ9.mp4 */; };
 		CF417548296FA55100898E2D /* INFOMainHowWorks2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF417547296FA55100898E2D /* INFOMainHowWorks2.swift */; };
+		CF41754C296FBB8D00898E2D /* InfoWhyLoveBF.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF41754B296FBB8D00898E2D /* InfoWhyLoveBF.swift */; };
 		CF47CF0328DB67A8008B6F11 /* PlanetSound.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */; };
 		CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */; };
 		CF47CF0928E2C93E008B6F11 /* BeSinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47CF0828E2C93E008B6F11 /* BeSinger.swift */; };
@@ -441,6 +442,7 @@
 		CF41753D2968847900898E2D /* InfoSilence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSilence.swift; sourceTree = "<group>"; };
 		CF417545296A60F700898E2D /* NisieJ9.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = NisieJ9.mp4; sourceTree = "<group>"; };
 		CF417547296FA55100898E2D /* INFOMainHowWorks2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOMainHowWorks2.swift; sourceTree = "<group>"; };
+		CF41754B296FBB8D00898E2D /* InfoWhyLoveBF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoWhyLoveBF.swift; sourceTree = "<group>"; };
 		CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlanetSound.mp4; sourceTree = "<group>"; };
 		CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Emilia2.m4a; sourceTree = "<group>"; };
 		CF47CF0828E2C93E008B6F11 /* BeSinger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeSinger.swift; sourceTree = "<group>"; };
@@ -1270,6 +1272,7 @@
 				CFC0EE7D290805F8006B3FAA /* InfoInsideChat.swift */,
 				CFC0EE7F2908060C006B3FAA /* InfoPushNotifications.swift */,
 				CF41753D2968847900898E2D /* InfoSilence.swift */,
+				CF41754B296FBB8D00898E2D /* InfoWhyLoveBF.swift */,
 			);
 			path = "INFO Pages";
 			sourceTree = "<group>";
@@ -1739,6 +1742,7 @@
 				CF4A08D82877E2B600ADA9DD /* NostalgiaPreload.swift in Sources */,
 				CF3B65AF2800783F0003A714 /* TermsOfServicePrivacy.swift in Sources */,
 				7A2C215D28050BCD009362CF /* ChatBubble.swift in Sources */,
+				CF41754C296FBB8D00898E2D /* InfoWhyLoveBF.swift in Sources */,
 				7AD8DF0D27F6974C00D9F0E1 /* Planet.swift in Sources */,
 				CF3B65BD280091280003A714 /* DemoVideoView.swift in Sources */,
 				CFA1226628598DAA00E22E84 /* Apologies2.swift in Sources */,

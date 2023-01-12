@@ -69,7 +69,7 @@ struct INFOMainHowWorks: View {
                 //                    InfoAddFriends(user: user),
                 
                 NavigationLink(
-                    destination: InfoAddFriends(user: user),
+                    destination: InfoWhyLoveFB(user: user),
                     label: {
                         Text("Why I love BF")
                             .fontWeight(.thin)
