@@ -219,7 +219,7 @@ struct PlanetActionsView: View {
 //                        INFOPreloadA(user: user, friends: friends, groups: groups)
                         
                         
-                        NavigationLink(destination: INFOMainHowWorks(user: user),
+                        NavigationLink(destination: InfoWhyLoveFB(user: user),
                                        label: {
                             ZStack {
                                 Circle()
@@ -249,16 +249,16 @@ struct PlanetActionsView: View {
                                     
                                     Text("TAP")
                                         .foregroundColor(Color .green)
-                                        .font(.system(size: 42, weight: .light))
+                                        .font(.system(size: 30, weight: .light))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.90)
                                    
-                                    Text("'LIVE' 8pm EST")
-                                        .foregroundColor(.black)
-                                        .italic()
-                                        .font(.system(size: 13, weight: .light))
-//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.90)
+//                                    Text("'LIVE' 8pm EST")
+//                                        .foregroundColor(.black)
+//                                        .italic()
+//                                        .font(.system(size: 13, weight: .light))
+////                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.90)
                                     
 //                                    Text("nightly")
 //                                        .foregroundColor(.black)
