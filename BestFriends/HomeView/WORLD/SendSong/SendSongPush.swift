@@ -203,7 +203,7 @@ struct SendSongPush: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Push Notifications sent successfully", isPresented: $showingAlert) {
+                                .alert("Your new music is on it way", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -277,7 +277,7 @@ struct SendSongPush: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends World", body: "\(user.firstName) just found NEW song wanted you to hear", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends World", body: "\(user.firstName) just found NEW Music they wanted you to hear", APNToken: f.APNToken)
                 }
             }
         }

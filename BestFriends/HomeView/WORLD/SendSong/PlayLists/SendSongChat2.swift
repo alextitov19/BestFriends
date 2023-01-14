@@ -29,8 +29,21 @@ struct SendSongChat2: View {
                 .onAppear()
             
             VStack {
+                
+                
+                Text("Ok, we get it. You have some privat and personal favorite songs you listen to when your in a sad mood sitting on your bed in the dark and don't feel comfortable sharing whole whole playlist.")
+                    .font(.system(size: 20))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(ColorManager .grey3)
+                    .multilineTextAlignment(.center)
+                
+                
+                
+                
+                
+                
   
-                Text("You know that song \nyou always listen to when")
+                Text("Cool - just share one that you think will help")
                     .font(.system(size: 20))
                     .fontWeight(.ultraLight)
                     .foregroundColor(ColorManager .grey3)
@@ -39,26 +52,20 @@ struct SendSongChat2: View {
                 HStack {
                  
                     VStack {
-                        Text("your 'Vibe'")
+                        Text("when your 'Vibe'")
                             .font(.system(size: 30))
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
                         
                         
-                        Text("matches")
+                        Text("matches theirs")
                             .font(.system(size: 30))
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
                         
-                        
-                        Text("your friend's")
-                            .font(.system(size: 30))
-                        
-                            .fontWeight(.ultraLight)
-                            .foregroundColor(ColorManager .grey3)
-                            .multilineTextAlignment(.center)
+                       
                     }
                     
                     
@@ -202,7 +209,7 @@ struct SendSongChat2: View {
 
         var body: some View {
             Button(action: {
-                RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent song in Chat to match your Aura", APNToken: friend.APNToken )
+                RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent you a song in Chat they listen to when their 'Vibe' matchs yours", APNToken: friend.APNToken )
             },
                    label: {
                 Text(friend.firstName + " " + String(friend.lastName.first!))

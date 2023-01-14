@@ -77,21 +77,21 @@ struct InfoWhyLoveFB: View {
                         
 
                         Text("It's like they")
-                            .italic()
+                            
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color .white)
                         
                         Text("really understand")
-                            .italic()
+                        
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color .white)
 
                         Text("me and my friends")
-                            .italic()
+                        
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
