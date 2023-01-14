@@ -31,36 +31,26 @@ struct SendSongChat2: View {
             VStack {
                 
                 
-                Text("Ok, we get it. You have some privat and personal favorite songs you listen to when your in a sad mood sitting on your bed in the dark and don't feel comfortable sharing whole whole playlist.")
+                Text("Ok, we get it. You have some very personal songs on your sad playlist. You want to help but feel comfortable sharing your whole playlist.")
                     .font(.system(size: 20))
                     .fontWeight(.ultraLight)
                     .foregroundColor(ColorManager .grey3)
                     .multilineTextAlignment(.center)
-                
-                
-                
-                
-                
-                
-  
-                Text("Cool - just share one that you think will help")
-                    .font(.system(size: 20))
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(ColorManager .grey3)
-                    .multilineTextAlignment(.center)
-          
+                    .padding(15)
+                   
+              
                 HStack {
                  
                     VStack {
-                        Text("when your 'Vibe'")
-                            .font(.system(size: 30))
+                        Text("Cool. Just send")
+                            .font(.system(size: 25))
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
                         
                         
-                        Text("matches theirs")
-                            .font(.system(size: 30))
+                        Text("one for comfort")
+                            .font(.system(size: 25))
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
