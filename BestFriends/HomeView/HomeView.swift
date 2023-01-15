@@ -260,13 +260,13 @@ struct HomeView: View {
 //                            })
                             NavigationLink(destination: SaySomethingNice7(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
                                            label: {
-                                Text("Friend said something 'Nice'")
+                                Text("Oh Look. Something 'Nice'")
                                     .fontWeight(.regular)
                                     .frame(width: 255, height: 29)
                                     .foregroundColor(.white)
-                                    .background(ColorManager.purple3)
+                                    .background(Color .yellow)
                                     .cornerRadius(15)
-                                    .opacity(0.4)
+                                    .opacity(0.7)
                             })
 
                         }
@@ -278,13 +278,13 @@ struct HomeView: View {
                         HStack {
                             NavigationLink(destination: VirtualHug(),
                                            label: {
-                                Text("yes, yes, yes - You got a HUG")
+                                Text("Awe, you've got a HUG")
                                     .fontWeight(.regular)
                                     .frame(width: 255, height: 30)
                                     .foregroundColor(.white)
-                                    .background(ColorManager.purple3)
+                                    .background(Color .pink)
                                     .cornerRadius(15)
-                                    .opacity(0.4)
+                                    .opacity(0.7)
                             })
   
                         }
@@ -293,11 +293,11 @@ struct HomeView: View {
                         
                         HStack {
                             NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
-                                Text("Friend's 'Vibe' Alert")
+                                Text("Friend's 'Vibe' Changed - Alert")
                                     .fontWeight(.regular)
                                     .frame(width: 255, height: 30)
                                     .foregroundColor(.white)
-                                    .background(ColorManager.purple3)
+                                    .background(ColorManager.pmbc_blue)
                                     .cornerRadius(15)
                                     .opacity(0.4)
                             })
@@ -333,24 +333,24 @@ struct HomeView: View {
                             
                             NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
                                            label: {
-                                Text("Let's try to 'Fix-this-Fight'")
+                                Text("Let's try to 'Fix-this-mess'")
                                     .fontWeight(.regular)
                                     .frame(width: 255, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
-                                    .opacity(0.4)
+                                    .opacity(0.7)
                             })
                             
                             NavigationLink(destination: SendSongPush(user: homeData!.user, friends: homeData!.friends),
                                            label: {
-                                Text("Oh Look! New Music")
+                                Text("yes, yes, yes! New music")
                                     .fontWeight(.regular)
                                     .frame(width: 255, height: 30)
                                     .foregroundColor(.white)
-                                    .background(ColorManager.purple3)
+                                    .background(ColorManager.pmbc_green)
                                     .cornerRadius(15)
-                                    .opacity(0.4)
+                                    .opacity(0.7)
                             })
                             
                             
