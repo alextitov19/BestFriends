@@ -31,16 +31,16 @@ struct INFOMainHowWorks: View {
             VStack {
   
                 
-//                Text("Everyone sharing their 'in-the-moment'")
-//
-//                    .font(.system(size: 17))
-//                    .fontWeight(.regular)
-//                    .multilineTextAlignment(.center)
-//                    .foregroundColor(ColorManager.purple3)
+                Text("sharing")
+                    .italic()
+                    .font(.system(size: 20))
+                    .fontWeight(.regular)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.purple3)
                 
                 
-                Text("Sharing Emotional Adventures")
-                    .font(.system(size: 22))
+                Text("Emotional Adventures")
+                    .font(.system(size: 25))
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.purple5)
@@ -50,7 +50,7 @@ struct INFOMainHowWorks: View {
                     .italic()
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.purple5)
+                    .foregroundColor(ColorManager.purple3)
                 
         VStack {
             HStack {
