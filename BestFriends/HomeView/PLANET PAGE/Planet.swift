@@ -235,7 +235,7 @@ struct PlanetActionsView: View {
                                    
 
                                     
-                                    Text("World")
+                                    Text("Private")
                                         .foregroundColor(.white)
                                         .font(.system(size: 30, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -247,18 +247,21 @@ struct PlanetActionsView: View {
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
+                        Spacer()
+                            .frame(height: 7)
+                        
                                     Text("TAP")
                                         .foregroundColor(Color .green)
                                         .font(.system(size: 30, weight: .light))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.90)
                                    
-//                                    Text("'LIVE' 8pm EST")
-//                                        .foregroundColor(.black)
-//                                        .italic()
-//                                        .font(.system(size: 13, weight: .light))
-////                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                        .opacity(0.90)
+                                    Text("'LIVE' 8pm EST")
+                                        .foregroundColor(.black)
+                                        .italic()
+                                        .font(.system(size: 13, weight: .light))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.90)
                                     
 //                                    Text("nightly")
 //                                        .foregroundColor(.black)

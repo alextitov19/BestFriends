@@ -274,7 +274,7 @@ struct SaySomethingNice8: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("You just put a smile on your friend's face. \n\nEveryone enjoys knowing their friends care about them.", isPresented: $showingAlert) {
+                                .alert("You just put a smile on your friend's face. \n\nEveryone enjoys knowing their friends care about them. \n\nLike that feeling of seeing two famous artists singing a duet. \n\nIt so much more than just the words.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
 //                                        .opacity(0.1)
                                 }
