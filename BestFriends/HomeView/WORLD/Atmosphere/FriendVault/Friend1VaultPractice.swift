@@ -29,7 +29,7 @@ struct Friend1VaultPractice: View {
         ZStack {
           
 
-            ColorManager.purple1
+            ColorManager.grey2
                 .ignoresSafeArea()
                 .onAppear{
                     print("Loading data")
@@ -242,7 +242,7 @@ struct Friend1VaultPractice: View {
                 //                    .frame(width:325, height: 30)
                 //                    .foregroundColor(Color.white)
                 //
-                HStack {
+               HStack {
                     
                     ZStack {
                         
@@ -253,8 +253,8 @@ struct Friend1VaultPractice: View {
                             //                        .resizable()
                             
                                 .fontWeight(.thin)
-                                .frame(width: 135, height: 32)
-                                .font(.system(size: 25))
+                                .frame(width: 80, height: 32)
+                                .font(.system(size: 15))
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             //                        .scaledToFit()
                             //                        .colorInvert()
@@ -294,12 +294,12 @@ struct Friend1VaultPractice: View {
                             
 //                            destination: BuildFriendPlaylist(user: user, groups: groups, friend: friend, friendAtmosphere: friendAtmosphere),
                             label: {
-                                Text("Send Song")
+                                Text("Send your special Song")
                                     .fontWeight(.thin)
-                                    .frame(width: 135, height: 32)
+                                    .frame(width: 170, height: 32)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(ColorManager.purple3)
+                                    .font(.system(size: 15))
+                                    .background(ColorManager.pmbc_green)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
