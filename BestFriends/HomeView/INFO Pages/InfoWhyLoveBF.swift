@@ -37,7 +37,12 @@ struct InfoWhyLoveFB: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey2)
 
-
+//                Text("BestFriends")
+//                    .font(.system(size: 35))
+//
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(ColorManager.grey2)
                 ZStack {
 
 
@@ -56,7 +61,7 @@ struct InfoWhyLoveFB: View {
                         Spacer ()
                             .frame(height: 60)
                         
-                        Text("BestFriends")
+                        Text("BestFriends was designed")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
@@ -65,7 +70,7 @@ struct InfoWhyLoveFB: View {
 
                       
 
-                        Text("was designed by teen girls")
+                        Text("by teen girls")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
