@@ -30,13 +30,17 @@ struct SendSongChat2: View {
             
             VStack {
                 
-                
-                Text("Ok, we get it. You have some very personal songs on your sad playlist. You want to help but feel comfortable sharing your whole playlist.")
+                Text("Ok, we get it.")
                     .font(.system(size: 20))
                     .fontWeight(.ultraLight)
                     .foregroundColor(ColorManager .grey3)
                     .multilineTextAlignment(.center)
-                    .padding(15)
+                Text("You have some very personal songs on your 'sad' playlist. You want to help but feel uncomfortable sharing your whole playlist.")
+                    .font(.system(size: 20))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(ColorManager .grey3)
+                    .multilineTextAlignment(.center)
+                    .padding(17)
                    
               
                 HStack {

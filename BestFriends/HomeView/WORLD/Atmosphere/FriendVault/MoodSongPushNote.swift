@@ -146,7 +146,7 @@ struct SendSongPushNote: View {
                                     .background(shareColor)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    .alert("Wow, you're a great friend. \n\nThis will help as they sit in the dark on thier bed in the safety of their room questioning.", isPresented: $showingAlert) {
+                                    .alert("Wow, you're a great friend. \n\nThis will help as they sit in the dark on thier bed in the safety of their room - questioning.", isPresented: $showingAlert) {
                                         Button("OK", role: .cancel) { }
                                     }
                             })
