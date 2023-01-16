@@ -96,20 +96,20 @@ struct SendKisses: View {
          
                 VStack {
 
-
-
-                    Text("Bringing your friends all the joy of")
-                        .font(.system(size: 17))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(ColorManager .grey3)
-                        .multilineTextAlignment(.center)
-
-
-                    Text("kicking through Autumn's leaves")
-                        .font(.system(size: 17))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(ColorManager .grey3)
-                        .multilineTextAlignment(.center)
+//
+//
+//                    Text("Bringing your friends all the joy of")
+//                        .font(.system(size: 17))
+//                        .fontWeight(.ultraLight)
+//                        .foregroundColor(ColorManager .grey3)
+//                        .multilineTextAlignment(.center)
+//
+//
+//                    Text("kicking through Autumn's leaves")
+//                        .font(.system(size: 17))
+//                        .fontWeight(.ultraLight)
+//                        .foregroundColor(ColorManager .grey3)
+//                        .multilineTextAlignment(.center)
 
 
                     VStack {
@@ -301,7 +301,7 @@ struct SendKisses: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) Sending kisses towards you. Jump up high and catch it!", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) is sending you Kisses. Jump up high and catch them.", APNToken: f.APNToken)
                 }
             }
         }
