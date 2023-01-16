@@ -56,7 +56,7 @@ struct SendKisses: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
             } else {
-                AdPlayerView(name: "NisieJ9")
+                AdPlayerView(name: "")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
@@ -88,7 +88,7 @@ struct SendKisses: View {
                         
                     }
                     
-                    Image("BalloonGuy300")
+                    Image("Penguin Sticker 38")
                         .resizable()
                         .frame(width: 200, height: 200)
                 }

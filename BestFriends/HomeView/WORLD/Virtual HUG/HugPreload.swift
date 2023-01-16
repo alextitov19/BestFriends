@@ -48,21 +48,30 @@ struct HugPreload: View {
             ZStack{
                 
                 NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
-                    HugCircle (color: ColorManager.purple1, friendName: "send \nHUG")
+                    HugCircle (color: ColorManager.purple1, friendName: "send HUGS")
                 })
                 .offset(x: showItems ? 120 : 0, y: showItems ? -270: 0)
                 .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
+                .opacity(0.8)
                 
                 
-          
-                    
-                    NavigationLink(destination: HugPushNotification2(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .grey1, friendName: "get a \n HUG")
-                    })
-                    .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
-                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-                    
-                    
+                
+                NavigationLink(destination: HugPushNotification2(user: user, friends: friends), label: {
+                    HugCircle (color: ColorManager .grey1, friendName: "need a \n HUG")
+                })
+                .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
+                .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                .opacity(0.8)
+                
+               
+                
+                NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
+                    HugCircle (color: ColorManager .red, friendName: "send Kisses")
+                })
+                .offset(x: showItems ? -30 : 0, y: showItems ? 170: 0)
+                .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                .opacity(0.25)
+                
                 
                 
                 NavigationLink(destination: EmptyView(), label: {
@@ -73,9 +82,11 @@ struct HugPreload: View {
                 
                 
                 
-                
-                
-                
+                    
+               
+                    
+                    
+                    
                     Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(ColorManager .purple1)
@@ -83,8 +94,8 @@ struct HugPreload: View {
                     //                    .blur(radius: 2)
                         .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
                         .opacity(0.70)
-                
-                
+                    
+                    
                     VStack {
                         
                         Spacer ()
@@ -111,7 +122,7 @@ struct HugPreload: View {
                             .foregroundColor(ColorManager .grey2)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
-//                                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        //                                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
                         Text("HUG?")
                             .font(.system(size: 45))
@@ -119,7 +130,7 @@ struct HugPreload: View {
                             .foregroundColor(ColorManager .grey3)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
-//                                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        //                                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
                         
                         
@@ -152,11 +163,11 @@ struct HugPreload: View {
             ZStack {
                 
                 Image(systemName: "heart.fill")
-                            .resizable()
-                            .foregroundColor(color)
-//                            .foregroundColor(ColorManager .purple2)
-                            .frame(width: 130, height: 100)
-                            .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                    .resizable()
+                    .foregroundColor(color)
+                //                            .foregroundColor(ColorManager .purple2)
+                    .frame(width: 130, height: 100)
+                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
                 
                 Text(friendName)
                     .fontWeight(.light)
