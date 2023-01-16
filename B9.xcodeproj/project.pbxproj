@@ -196,6 +196,7 @@
 		CF650427289F11980092EEB9 /* WorldPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650426289F11980092EEB9 /* WorldPreload.swift */; };
 		CF65043028A438970092EEB9 /* ChatReactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65042F28A438970092EEB9 /* ChatReactions.swift */; };
 		CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */; };
+		CF7157512975D29900094F22 /* SendKisses.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7157502975D29900094F22 /* SendKisses.swift */; };
 		CF725E2828516E4F0096342F /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2728516E4F0096342F /* Tokens.swift */; };
 		CF72D6FB2921AFE900EDDDA6 /* SmileVaultPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72D6FA2921AFE900EDDDA6 /* SmileVaultPreload.swift */; };
 		CF763F7C285AFBAB0010D1A9 /* HorizonsPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F7B285AFBAB0010D1A9 /* HorizonsPrototype.swift */; };
@@ -473,6 +474,7 @@
 		CF650426289F11980092EEB9 /* WorldPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPreload.swift; sourceTree = "<group>"; };
 		CF65042F28A438970092EEB9 /* ChatReactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatReactions.swift; sourceTree = "<group>"; };
 		CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualHug.swift; sourceTree = "<group>"; };
+		CF7157502975D29900094F22 /* SendKisses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendKisses.swift; sourceTree = "<group>"; };
 		CF725E2728516E4F0096342F /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
 		CF72D6FA2921AFE900EDDDA6 /* SmileVaultPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileVaultPreload.swift; sourceTree = "<group>"; };
 		CF763F7B285AFBAB0010D1A9 /* HorizonsPrototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonsPrototype.swift; sourceTree = "<group>"; };
@@ -801,6 +803,7 @@
 				CF39F17A292C5F5000927A3C /* STARTHERE */,
 				CFC0EE7829080585006B3FAA /* INFO Pages */,
 				CF47CF0A28E2CAC7008B6F11 /* WORLD */,
+				CF71574F2975D27000094F22 /* SendKisses */,
 				CFD8BD0C2915562D00F86EFB /* My ROOM */,
 			);
 			path = HomeView;
@@ -1116,6 +1119,14 @@
 				CF65042F28A438970092EEB9 /* ChatReactions.swift */,
 			);
 			path = "Chat Reactions";
+			sourceTree = "<group>";
+		};
+		CF71574F2975D27000094F22 /* SendKisses */ = {
+			isa = PBXGroup;
+			children = (
+				CF7157502975D29900094F22 /* SendKisses.swift */,
+			);
+			path = SendKisses;
 			sourceTree = "<group>";
 		};
 		CF725E2628516E180096342F /* Tokens */ = {
@@ -1850,6 +1861,7 @@
 				CFC0ACBE28EF4E7B00B49831 /* SaySomethingPreload.swift in Sources */,
 				7AFCF27827FDFF2C00D2DB5C /* ChatGroupsView.swift in Sources */,
 				CFAB5402281A9A1D00BBF502 /* Step7_TimeToTalk.swift in Sources */,
+				CF7157512975D29900094F22 /* SendKisses.swift in Sources */,
 				CFD12CCF281A67FC00AB2539 /* DramaMainView.swift in Sources */,
 				7ACDB1812828186D009E1CFD /* NotificationModels.swift in Sources */,
 				CFAB540D281BBA4C00BBF502 /* ReceivedFixFightNotification.swift in Sources */,

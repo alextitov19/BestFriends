@@ -235,7 +235,7 @@ struct PlanetActionsView: View {
                                    
 
                                     
-                                    Text("Private")
+                                    Text("World's")
                                         .foregroundColor(.white)
                                         .font(.system(size: 30, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
