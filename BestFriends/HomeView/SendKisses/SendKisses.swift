@@ -301,7 +301,7 @@ struct SendKisses: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) Kisses", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) Sending kisses towards you. Jump up high and catch it!", APNToken: f.APNToken)
                 }
             }
         }
