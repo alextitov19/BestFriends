@@ -237,13 +237,13 @@ struct PlanetActionsView: View {
                                     
                                     Text("World's")
                                         .foregroundColor(.white)
-                                        .font(.system(size: 30, weight: .bold))
+                                        .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
                                     Text("FriendGroups")
                                         .foregroundColor(.white)
-                                        .font(.system(size: 20, weight: .bold))
+                                        .font(.system(size: 22, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
