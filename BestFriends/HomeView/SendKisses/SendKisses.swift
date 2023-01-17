@@ -77,9 +77,9 @@ struct SendKisses: View {
                 HStack {
                     VStack {
                         
-                        Text("Blowing")
-                            .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .purple7)
+//                        Text("Blowing")
+//                            .font(.system(size: 35, weight: .ultraLight))
+//                            .foregroundColor(ColorManager .purple7)
                         
                         
                         Text("Kisses")
@@ -96,7 +96,12 @@ struct SendKisses: View {
          
                 VStack {
 
-
+                    Text("Jump up on a chair, then ...")
+                                            .font(.system(size: 25))
+                
+                                            .foregroundColor(ColorManager .grey2)
+                                            .fontWeight(.thin)
+                                            .multilineTextAlignment(.center)
 
                     VStack {
 
@@ -216,7 +221,7 @@ struct SendKisses: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Now, blow your kisses high up in the air. \n\nPerfect", isPresented: $showingAlert) {
+                                .alert("blow your kisses high up in the air floating towards your friend. \n\nThat's perfect", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })

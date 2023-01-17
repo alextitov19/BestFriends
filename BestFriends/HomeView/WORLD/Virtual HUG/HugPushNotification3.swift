@@ -81,13 +81,13 @@ struct HugPushNotification3: View {
                             .foregroundColor(ColorManager .purple7)
                         
                         
-                        Text("I could")
-                            .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .purple7)
+//                        Text("I could")
+//                            .font(.system(size: 35, weight: .ultraLight))
+//                            .foregroundColor(ColorManager .purple7)
                         
                     }
                     
-                    Image("Penguin Sticker 38")
+                    Image("Penguin Sticker 18")
                         .resizable()
                         .frame(width: 200, height: 200)
                 }
@@ -95,8 +95,8 @@ struct HugPushNotification3: View {
          
                 VStack {
 
-                    Text("really use a Hug from my friends today!")
-                        .font(.system(size: 20))
+                    Text("I could really use a Hug \nfrom my friends today!")
+                        .font(.system(size: 18))
                         .fontWeight(.ultraLight)
                         .foregroundColor(ColorManager .grey3)
                         .multilineTextAlignment(.center)
@@ -241,7 +241,7 @@ struct HugPushNotification3: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your HUG request was sent at the speed of light. \n\nHang in there - we're on it.", isPresented: $showingAlert) {
+                                .alert("Your HUG request is zooming to your friend right now. \n\nHang in there - help is on the way.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })

@@ -77,18 +77,18 @@ struct HugPushNotification: View {
                 HStack {
                     VStack {
                         
-                        Text("Sending")
+                        Text("Send")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple7)
                         
                         
-                        Text("your Hugs")
+                        Text("a Hug")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple7)
                         
                     }
                     
-                    Image("BalloonGuy300")
+                    Image("Penguin Sticker 24")
                         .resizable()
                         .frame(width: 200, height: 200)
                 }
@@ -96,22 +96,28 @@ struct HugPushNotification: View {
          
                 VStack {
 
-
-
-                    Text("Bringing your friends all the joy of")
+                    Text("Send the joy of")
                         .font(.system(size: 17))
                         .fontWeight(.ultraLight)
                         .foregroundColor(ColorManager .grey3)
                         .multilineTextAlignment(.center)
-
-
+                    
+                    
                     Text("kicking through Autumn's leaves")
                         .font(.system(size: 17))
                         .fontWeight(.ultraLight)
                         .foregroundColor(ColorManager .grey3)
                         .multilineTextAlignment(.center)
 
-
+                    Spacer()
+                        .frame(height: 25)
+                    
+                    Text("and comfort of \nhot chocolate on a blistery winter's day")
+                        .font(.system(size: 17))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(ColorManager .grey3)
+                        .multilineTextAlignment(.center)
+                    
                     VStack {
 
                         Spacer()
@@ -238,7 +244,7 @@ struct HugPushNotification: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your friend will feel better - if only for a moment - Nice job! \n\nJump over to PhotoPOP & send a fun image to go with your Hug", isPresented: $showingAlert) {
+                                .alert("Sometimes there's more power in a simple hug than a thousand words.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -301,7 +307,7 @@ struct HugPushNotification: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends World FriendGroup", body: "\(user.firstName) sent you a HUG. To get your hug, tap friend's planet on Home pg, then tap [Friend sent HUG] from dropdown.", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent you a HUG. To get your hug, tap friend's planet on Home pg, then tap [Friend sent HUG] from dropdown.", APNToken: f.APNToken)
                 }
             }
         }

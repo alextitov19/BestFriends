@@ -57,7 +57,7 @@ struct HugPreload: View {
                 
                 
                 NavigationLink(destination: HugPushNotification3(user: user, friends: friends), label: {
-                    HugCircle (color: ColorManager .grey1, friendName: "help \nI need a \n Hug")
+                    HugCircle (color: ColorManager .grey1, friendName: "I need a \n Hug")
                 })
                 .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
                 .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
@@ -66,7 +66,7 @@ struct HugPreload: View {
                
                 
                 NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
-                    HugCircle (color: ColorManager .red, friendName: "blowing \nKisses")
+                    HugCircle (color: ColorManager .red, friendName: "sending \nKisses")
                 })
                 .offset(x: showItems ? -100 : 0, y: showItems ? -210: 0)
                 .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
