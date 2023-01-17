@@ -56,7 +56,7 @@ struct HugPushNotification: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
             } else {
-                AdPlayerView(name: "NisieJ9")
+                AdPlayerView(name: "")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
@@ -77,12 +77,12 @@ struct HugPushNotification: View {
                 HStack {
                     VStack {
                         
-                        Text("Send")
+                        Text("Sending")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple7)
                         
                         
-                        Text("HUG")
+                        Text("your Hugs")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple7)
                         

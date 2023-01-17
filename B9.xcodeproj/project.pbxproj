@@ -179,6 +179,7 @@
 		CF4A08EE2879577E00ADA9DD /* sky2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08ED2879577E00ADA9DD /* sky2.mp4 */; };
 		CF4A08FB2883A56200ADA9DD /* Sweetheart1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08FA2883A56200ADA9DD /* Sweetheart1.swift */; };
 		CF4CFAC228E8DC3B00D6AEA9 /* SaySomethingNice3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4CFAC128E8DC3B00D6AEA9 /* SaySomethingNice3.swift */; };
+		CF4D86B82976280A004B551D /* HugPushNotification3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4D86B72976280A004B551D /* HugPushNotification3.swift */; };
 		CF565EEA292FED1E00B66A18 /* WhyFiveFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF565EE9292FED1E00B66A18 /* WhyFiveFriends.swift */; };
 		CF565EEC2935A61200B66A18 /* MoodSongPushNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF565EEB2935A61200B66A18 /* MoodSongPushNote.swift */; };
 		CF6499DF294D4148003BBF83 /* INFOPreloadA.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6499DE294D4148003BBF83 /* INFOPreloadA.swift */; };
@@ -456,6 +457,7 @@
 		CF4A08ED2879577E00ADA9DD /* sky2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sky2.mp4; sourceTree = "<group>"; };
 		CF4A08FA2883A56200ADA9DD /* Sweetheart1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sweetheart1.swift; sourceTree = "<group>"; };
 		CF4CFAC128E8DC3B00D6AEA9 /* SaySomethingNice3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingNice3.swift; sourceTree = "<group>"; };
+		CF4D86B72976280A004B551D /* HugPushNotification3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugPushNotification3.swift; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* background_4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_4.mp4; sourceTree = "<group>"; };
 		CF565EE9292FED1E00B66A18 /* WhyFiveFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyFiveFriends.swift; sourceTree = "<group>"; };
 		CF565EEB2935A61200B66A18 /* MoodSongPushNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodSongPushNote.swift; sourceTree = "<group>"; };
@@ -1460,6 +1462,7 @@
 				CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */,
 				CFC0EE752907AB7D006B3FAA /* HugPushNotification.swift */,
 				CFD6C054293EA9E600D57E0B /* HugPushNotification2.swift */,
+				CF4D86B72976280A004B551D /* HugPushNotification3.swift */,
 			);
 			path = "Virtual HUG";
 			sourceTree = "<group>";
@@ -1858,6 +1861,7 @@
 				7AB5216D289D97F7005A49FA /* IntuitiveView.swift in Sources */,
 				CFD12CC428179CD600AB2539 /* StreakCongratulations.swift in Sources */,
 				7AFCF27C27FDFFB000D2DB5C /* CustomCorner.swift in Sources */,
+				CF4D86B82976280A004B551D /* HugPushNotification3.swift in Sources */,
 				CFC0ACBE28EF4E7B00B49831 /* SaySomethingPreload.swift in Sources */,
 				7AFCF27827FDFF2C00D2DB5C /* ChatGroupsView.swift in Sources */,
 				CFAB5402281A9A1D00BBF502 /* Step7_TimeToTalk.swift in Sources */,
@@ -2030,7 +2034,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 53;
+				CURRENT_PROJECT_VERSION = 55;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -2060,7 +2064,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 53;
+				CURRENT_PROJECT_VERSION = 55;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;

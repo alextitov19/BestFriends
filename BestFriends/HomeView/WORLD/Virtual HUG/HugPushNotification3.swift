@@ -1,18 +1,17 @@
 //
-//  SendKisses.swift
+//  HugPushNotification3.swift
 //  BestFriends
 //
 //  Created by Social Tech on 1/16/23.
 //
 
-import Foundation
 
 import Foundation
 import SwiftUI
 import ConfettiSwiftUI
 import AVKit
 
-struct SendKisses: View {
+struct HugPushNotification3: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -56,7 +55,7 @@ struct SendKisses: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
             } else {
-                AdPlayerView(name: "")
+                AdPlayerView(name: "NisieJ9")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
@@ -77,12 +76,12 @@ struct SendKisses: View {
                 HStack {
                     VStack {
                         
-                        Text("Sending")
+                        Text("Wow,")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple7)
                         
                         
-                        Text("Kisses")
+                        Text("I could")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple7)
                         
@@ -96,6 +95,24 @@ struct SendKisses: View {
          
                 VStack {
 
+                    Text("really use a Hug from my friends today!")
+                        .font(.system(size: 20))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(ColorManager .grey3)
+                        .multilineTextAlignment(.center)
+
+//                    Text("Bringing your friends all the joy of")
+//                        .font(.system(size: 17))
+//                        .fontWeight(.ultraLight)
+//                        .foregroundColor(ColorManager .grey3)
+//                        .multilineTextAlignment(.center)
+//
+//
+//                    Text("kicking through Autumn's leaves")
+//                        .font(.system(size: 17))
+//                        .fontWeight(.ultraLight)
+//                        .foregroundColor(ColorManager .grey3)
+//                        .multilineTextAlignment(.center)
 
 
                     VStack {
@@ -196,7 +213,15 @@ struct SendKisses: View {
                         }
                   
                         
-             
+                        
+//                        Button(action: {
+//                            counter += 1
+//                            shareButtonTapped()
+//                        },
+//                               label: {
+//                            Text("SHARE")
+                        
+                        
                         Spacer()
                             .frame(height: 20)
                         
@@ -216,7 +241,7 @@ struct SendKisses: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Now, blow your kisses high up in the air. \n\nPerfect", isPresented: $showingAlert) {
+                                .alert("Your HUG request was sent at the speed of light. \n\nHang in there - we're on it.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -230,7 +255,32 @@ struct SendKisses: View {
                    
                         }
                         
-                     
+//                        Text("Bringing your friend all the joy of")
+//                            .font(.system(size: 15))
+//                            .fontWeight(.ultraLight)
+//                            .foregroundColor(ColorManager .grey3)
+//                            .multilineTextAlignment(.center)
+//
+//
+//                        Text("kicking through Autumn's leaves")
+//                            .font(.system(size: 15))
+//                            .fontWeight(.ultraLight)
+//                            .foregroundColor(ColorManager .grey3)
+//                            .multilineTextAlignment(.center)
+                        
+//                        Text("Jump over to PhotoPOP & send \na fun image to go with your Hug")
+//                            .fontWeight(.thin)
+//                            .foregroundColor(ColorManager .grey3)
+//                            .frame(width: 310, height: 60)
+//                            .font(.system(size: 17))
+//                            .multilineTextAlignment(.center)
+//                            .background(ColorManager.orange2)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//
+//
+                        
                         
                         }
                     
@@ -254,7 +304,7 @@ struct SendKisses: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) is bloweing you Kisses. Jump up high and catch them.", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) could really use a Hug.", APNToken: f.APNToken)
                 }
             }
         }

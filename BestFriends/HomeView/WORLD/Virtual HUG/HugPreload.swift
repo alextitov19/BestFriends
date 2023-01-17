@@ -48,7 +48,7 @@ struct HugPreload: View {
             ZStack{
                 
                 NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
-                    HugCircle (color: ColorManager.purple1, friendName: "send HUGS")
+                    HugCircle (color: ColorManager.purple1, friendName: "sending \nHugs")
                 })
                 .offset(x: showItems ? 120 : 0, y: showItems ? -270: 0)
                 .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
@@ -56,8 +56,8 @@ struct HugPreload: View {
                 
                 
                 
-                NavigationLink(destination: HugPushNotification2(user: user, friends: friends), label: {
-                    HugCircle (color: ColorManager .grey1, friendName: "need a \n HUG")
+                NavigationLink(destination: HugPushNotification3(user: user, friends: friends), label: {
+                    HugCircle (color: ColorManager .grey1, friendName: "help \nI need a \n Hug")
                 })
                 .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
                 .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
@@ -66,7 +66,7 @@ struct HugPreload: View {
                
                 
                 NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
-                    HugCircle (color: ColorManager .red, friendName: "send Kisses")
+                    HugCircle (color: ColorManager .red, friendName: "blowing \nKisses")
                 })
                 .offset(x: showItems ? -100 : 0, y: showItems ? -210: 0)
                 .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
@@ -101,30 +101,44 @@ struct HugPreload: View {
                         Spacer ()
                             .frame(height: 10)
                         
-                        Text("Do you")
-                            .font(.system(size: 25))
-                        
-                            .foregroundColor(ColorManager .grey2)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                        //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                        
-                        Text("or a Friend")
-                            .font(.system(size: 25))
-                        
-                            .foregroundColor(ColorManager .grey2)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("need a")
-                            .font(.system(size: 25))
-                        
-                            .foregroundColor(ColorManager .grey2)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
+//                        Text("Do you")
+//                            .font(.system(size: 25))
+//
+//                            .foregroundColor(ColorManager .grey2)
+//                            .fontWeight(.thin)
+//                            .multilineTextAlignment(.center)
+//                        //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+//                        Text("or a Friend")
+//                            .font(.system(size: 25))
+//
+//                            .foregroundColor(ColorManager .grey2)
+//                            .fontWeight(.thin)
+//                            .multilineTextAlignment(.center)
+//
+//                        Text("need a")
+//                            .font(.system(size: 25))
+//
+//                            .foregroundColor(ColorManager .grey2)
+//                            .fontWeight(.thin)
+//                            .multilineTextAlignment(.center)
                         //                                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
-                        Text("HUG?")
+                        Text("Hugs")
+                            .font(.system(size: 45))
+                        
+                            .foregroundColor(ColorManager .grey3)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("and")
+                            .font(.system(size: 20))
+                            .italic()
+                            .foregroundColor(ColorManager .grey2)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("Kisses")
                             .font(.system(size: 45))
                         
                             .foregroundColor(ColorManager .grey3)
