@@ -77,9 +77,9 @@ struct SendKisses: View {
                 HStack {
                     VStack {
                         
-//                        Text("Blowing")
-//                            .font(.system(size: 35, weight: .ultraLight))
-//                            .foregroundColor(ColorManager .purple7)
+                        Text("Blowing")
+                            .font(.system(size: 35, weight: .ultraLight))
+                            .foregroundColor(ColorManager .purple7)
                         
                         
                         Text("Kisses")

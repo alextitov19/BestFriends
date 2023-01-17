@@ -88,7 +88,7 @@ struct HugPushNotification: View {
                         
                     }
                     
-                    Image("Penguin Sticker 24")
+                    Image("Penguin Sticker 6")
                         .resizable()
                         .frame(width: 200, height: 200)
                 }
