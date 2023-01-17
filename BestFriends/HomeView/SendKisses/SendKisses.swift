@@ -77,7 +77,7 @@ struct SendKisses: View {
                 HStack {
                     VStack {
                         
-                        Text("Floating")
+                        Text("Blowing")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple7)
                         
@@ -254,7 +254,7 @@ struct SendKisses: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) is bloweing you Kisses. Jump up high and catch them.", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) is blowing you Kisses. Jump up high and catch them.", APNToken: f.APNToken)
                 }
             }
         }
