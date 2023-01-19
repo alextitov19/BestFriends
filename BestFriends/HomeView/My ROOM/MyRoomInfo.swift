@@ -81,14 +81,14 @@ struct MyRoomInfo: View {
                 
               
                     
-                    
-                    
-                    NavigationLink(destination:   SendSongPush(user: user, friends: friends),
-                                   label: {
-                        MyRoomCircle (color: ColorManager .grey1, friendName: "Found new \nMusic \n(preview)")
-                    })
-                    .offset(x: showItems ? 59 : 0, y: showItems ? 260: 0)
-                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
+//                 MARK;  new music ******
+//
+//                    NavigationLink(destination:   SendSongPush(user: user, friends: friends),
+//                                   label: {
+//                        MyRoomCircle (color: ColorManager .grey1, friendName: "Found new \nMusic \n(preview)")
+//                    })
+//                    .offset(x: showItems ? 59 : 0, y: showItems ? 260: 0)
+//                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
                     
                     
 
