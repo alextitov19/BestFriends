@@ -100,7 +100,7 @@ struct MyFears: View {
                     .frame(height: 230)
                 VStack {
 
-                    Text("can you calm me ...")
+                    Text("can you help calm me ...")
                                             .font(.system(size: 25))
                 
                                             .foregroundColor(ColorManager .grey4)
