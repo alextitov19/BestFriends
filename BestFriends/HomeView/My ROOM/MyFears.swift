@@ -80,12 +80,12 @@ struct MyFears: View {
                 HStack {
                     VStack {
                         
-                        Text("I'm so tired of being")
+                        Text("I feel my anxiety welling")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple7)
                         
                         
-                        Text("Scared")
+                        Text("up inside")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple7)
                         
@@ -100,13 +100,20 @@ struct MyFears: View {
                     .frame(height: 230)
                 VStack {
 
-                    Text("can you help calm me ...")
+                    Text("Can you help me believe")
                                             .font(.system(size: 25))
                 
                                             .foregroundColor(ColorManager .grey4)
                                             .fontWeight(.thin)
                                             .multilineTextAlignment(.center)
 
+                    
+                    Text("it will be, OK?")
+                                            .font(.system(size: 25))
+                
+                                            .foregroundColor(ColorManager .grey4)
+                                            .fontWeight(.thin)
+                                            .multilineTextAlignment(.center)
                     VStack {
 
                     
