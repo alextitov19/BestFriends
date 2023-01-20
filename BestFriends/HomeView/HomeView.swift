@@ -386,6 +386,7 @@ struct HomeView: View {
         RestApi.instance.getHomeData().then{ data in
             print("Got HomeData: ", data)
             homeData = data
+            RestApi.instance.setStatusToOnline(id: data.user.id)
             RestApi.instance.registerAPNToken()
             groups = homeData!.groups.sorted(by: { $0.createdOn > $1.createdOn })
             
