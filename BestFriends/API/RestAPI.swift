@@ -208,7 +208,23 @@ class RestApi {
         }
     }
     
-    public func removeFriend(email:String, removeFriend:RemoveFriend) {
-        
+    public func setStatusToOnline(id: String) {
+        helper.callRestApi(url: API_URL + "/online-status/" + id, method: .post, RestResponse.self).then({ response in
+            if response.status == 200 {
+                print("Status changed to online")
+            }
+        })
+    }
+    
+    public func setStatusToOffline(id: String) {
+        helper.callRestApi(url: API_URL + "/online-status/" + id, method: .delete, RestResponse.self).then({ response in
+            if response.status == 200 {
+                print("Status changed to offline")
+            }
+        })
+    }
+    
+    public func getUserOnlineStatus(id: String) -> Promise<Bool> {
+        return helper.getUserStatus(url: API_URL + "/online-status/" + id)
     }
 }

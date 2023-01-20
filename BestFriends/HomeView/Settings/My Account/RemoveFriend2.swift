@@ -69,7 +69,6 @@ struct RemoveFriend2: View {
                     .frame(height: 50)
                 
                 Button(action: {
-                    submit()
                 }, label: {
                     Text("Submit")
                         .fontWeight(.thin)
@@ -104,12 +103,5 @@ struct RemoveFriend2: View {
 //                            string = "Success"
 //
                             
-                            private func submit() {
-                                if friendEmail.count > 0 {
-                                    RestApi.instance.removeFriend(email: user.id, removeFriend: removeFriend)
-                            
-                            
-//            })//then
-        }//if
-    }//submit
+                        
 }

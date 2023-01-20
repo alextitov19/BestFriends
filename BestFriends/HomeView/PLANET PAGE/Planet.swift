@@ -11,24 +11,37 @@ struct Planet: View {
     
     let user: User
     let atmosphere: Atmosphere
-//    let groups: [Group]
     
-//    @State private var showingAlert = false
+    @State private var online = false
     
     var body: some View {
         VStack {
-            PlanetView(planet: atmosphere.planet, mood: atmosphere.mood)
-                .scaledToFit()
-                .frame(width: 50, height: 50)
-                .glow(color: glowColor())
-                .onAppear(perform: {print("Mood: ", atmosphere.mood)})
-            
-            
-            Text(user.firstName + " " + String(user.lastName.first!))
-                .font(.system(size: 14))
-                .foregroundColor(.white)
-                .fontWeight(.ultraLight)
+            if online {
+                PlanetView(planet: atmosphere.planet, mood: atmosphere.mood)
+                    .scaledToFit()
+                    .frame(width: 50, height: 50)
+                    .glow(color: glowColor())
+                    .onAppear(perform: {print("Mood: ", atmosphere.mood)})
+                
+                
+                Text(user.firstName + " " + String(user.lastName.first!))
+                    .font(.system(size: 14))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+            } else {
+                PlanetView(planet: atmosphere.planet, mood: atmosphere.mood)
+                    .scaledToFit()
+                    .frame(width: 50, height: 50)
+                    .onAppear(perform: {print("Mood: ", atmosphere.mood)})
+                
+                
+                Text(user.firstName + " " + String(user.lastName.first!))
+                    .font(.system(size: 14))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+            }
         }
+        .onAppear(perform: loadData)
     }
     
     private func glowColor() -> Color {
@@ -56,6 +69,12 @@ struct Planet: View {
         default:
             return ColorManager.pmbc_blue
         }
+    }
+    
+    private func loadData() {
+        RestApi.instance.getUserOnlineStatus(id: user.id).then({ response in
+            online = response
+        })
     }
 }
 

@@ -232,6 +232,16 @@ class Helper {
         }
     }
     
+    public func getUserStatus(url: String) -> Promise<Bool> {
+        return callRestApi(url: url, method: .get, RestResponse.self).then({ response in
+            if response.status == 200 {
+                return Promise<Bool>(true)
+            } else {
+                return Promise<Bool>(false)
+            }
+        })
+    }
+    
     func sendPushNotification(url: String, createNotification: CreateNotification) -> Promise<Int> {
         let payload = try? JSONEncoder().encode(createNotification)
         if let p = payload {
