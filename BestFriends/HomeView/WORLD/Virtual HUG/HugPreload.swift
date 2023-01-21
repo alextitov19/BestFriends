@@ -100,7 +100,7 @@ struct HugPreload: View {
                 })
                 .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
                 .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
-                
+                .opacity(0.85)
                 
                 VStack {
                     
@@ -111,7 +111,7 @@ struct HugPreload: View {
                     })
                     .offset(x: showItems ? 0 : 0, y: showItems ? 290: 0)
                     .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-                    .opacity(0.4)
+                    .opacity(0.3)
                     
                     
                     
