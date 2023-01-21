@@ -254,12 +254,18 @@ struct PlanetActionsView: View {
                                    
 
                                     
-                                    Text("World's")
+                                    Text("Private")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
+                        Text("world")
+                            .foregroundColor(.white)
+                            .font(.system(size: 20, weight: .bold))
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            .opacity(0.50)
+                        
                                     Text("FriendGroups")
                                         .foregroundColor(.white)
                                         .font(.system(size: 22, weight: .bold))
@@ -267,7 +273,7 @@ struct PlanetActionsView: View {
                                         .opacity(0.50)
                                     
                         Spacer()
-                            .frame(height: 7)
+                            .frame(height: 5)
                         
                                     Text("TAP")
                                         .foregroundColor(Color .green)
@@ -278,7 +284,7 @@ struct PlanetActionsView: View {
                                     Text("'LIVE' 8pm EST")
                                         .foregroundColor(.black)
                                         .italic()
-                                        .font(.system(size: 13, weight: .light))
+                                        .font(.system(size: 7, weight: .light))
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.90)
                                     
