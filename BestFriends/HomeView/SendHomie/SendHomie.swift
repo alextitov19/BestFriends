@@ -1,17 +1,16 @@
 //
-//  MyFears.swift
+//  SendHomie.swift
 //  BestFriends
 //
-//  Created by Social Tech on 1/18/23.
+//  Created by Social Tech on 1/20/23.
 //
-
 
 import Foundation
 import SwiftUI
 import ConfettiSwiftUI
 import AVKit
 
-struct MyFears: View {
+struct SendHomie: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -41,14 +40,15 @@ struct MyFears: View {
             if shareTapped {
                 
                 
-//                Image("starPurple")
+                
+                            ColorManager.grey4
+                                .ignoresSafeArea()
+                                .onAppear()
+//                Image("purpleBackground")
 //                    .resizable()
 //                    .ignoresSafeArea()
 //                    .scaledToFill()
-                            ColorManager.purple2
-                                .ignoresSafeArea()
-                                .onAppear()
-
+//                    .ignoresSafeArea()
                 
                 AdPlayerView(name: "dramaLights")
                     .ignoresSafeArea()
@@ -62,17 +62,12 @@ struct MyFears: View {
                     .ignoresSafeArea()
             }
             
-            Image("starPurple")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-          
-           
-            AdPlayerView(name: "Wind2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-            
-            
+//            ColorManager .purple1
+//                .ignoresSafeArea()
+//
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
 
             
             VStack{
@@ -80,43 +75,36 @@ struct MyFears: View {
                 HStack {
                     VStack {
                         
-                        Text("I feel my anxiety welling")
+                        Text("hey")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple7)
                         
                         
-                        Text("up inside")
+                        Text("homie")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple7)
                         
                     }
-//
-//                    Image("Penguin Sticker 38")
-//                        .resizable()
-//                        .frame(width: 200, height: 200)
+                    
+                    Image("CoolGuy")
+                        .resizable()
+                        .frame(width: 200, height: 200)
                 }
              
-                Spacer()
-                    .frame(height: 230)
+         
                 VStack {
 
-                    Text("Can you help me believe")
-                                            .font(.system(size: 25))
-                
-                                            .foregroundColor(ColorManager .grey4)
-                                            .fontWeight(.thin)
-                                            .multilineTextAlignment(.center)
+//                    Text("Jump up on a chair, then ...")
+//                                            .font(.system(size: 25))
+//                
+//                                            .foregroundColor(ColorManager .grey2)
+//                                            .fontWeight(.thin)
+//                                            .multilineTextAlignment(.center)
 
-                    
-                    Text("it will be, ok?")
-                                            .font(.system(size: 25))
-                
-                                            .foregroundColor(ColorManager .grey4)
-                                            .fontWeight(.thin)
-                                            .multilineTextAlignment(.center)
                     VStack {
 
-                    
+                        Spacer()
+                            .frame(height: 25)
                         
                         
                         HStack {
@@ -231,17 +219,27 @@ struct MyFears: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Good for you for reaching a trusted friend - nice! ", isPresented: $showingAlert) {
+                                .alert("my brother", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
-//                        .confettiCannon(counter: $counter)
+                        .confettiCannon(counter: $counter)
 
+                        
+                        VStack {
+                            
+                            Spacer()
+                                .frame(height: 30)
+                   
+                        }
+                        
                      
                         
                         }
                     
                     
+                    
+                
                     Spacer()
                         .frame(height: 100)
                     
@@ -259,7 +257,7 @@ struct MyFears: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) can you calm me down, help me work through this.", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) hey homie - what's up.", APNToken: f.APNToken)
                 }
             }
         }
@@ -287,10 +285,3 @@ struct MyFears: View {
     
     
 }
-
-
-//                Image("purpleBackground")
-//                    .resizable()
-//                    .ignoresSafeArea()
-//                    .scaledToFill()
-//                    .ignoresSafeArea()

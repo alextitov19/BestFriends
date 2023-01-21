@@ -48,42 +48,80 @@ struct HugPreload: View {
             ZStack{
                 
                 NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
-                    HugCircle (color: ColorManager.purple1, friendName: "sending \nHugs")
+                    HugCircle (color: ColorManager.purple1, friendName: "send a \nHug")
                 })
                 .offset(x: showItems ? 120 : 0, y: showItems ? -270: 0)
                 .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
-                .opacity(0.8)
+                .opacity(0.6)
+                
+                
+                
+                
+                NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
+                    HugCircle (color: ColorManager .grey3, friendName: "send a \nHomie")
+                })
+//                NavigationLink(destination: HugPushNotification3(user: user, friends: friends), label: {
+//                    HugCircle (color: ColorManager .grey1, friendName: "I need a \n Hug")
+//                })
+                .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
+                .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                .opacity(0.65)
                 
                 
                 
                 NavigationLink(destination: HugPushNotification3(user: user, friends: friends), label: {
                     HugCircle (color: ColorManager .grey1, friendName: "I need a \n Hug")
                 })
-                .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
-                .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-                .opacity(0.8)
-                
-               
-                
-                NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
-                    HugCircle (color: ColorManager .red, friendName: "sending \nKisses")
-                })
-                .offset(x: showItems ? -100 : 0, y: showItems ? -210: 0)
-                .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-                .opacity(0.275)
+//                NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
+//                    HugCircle (color: ColorManager .grey4, friendName: "send a \nHomie")
+//                })
+                .offset(x: showItems ? -75 : 0, y: showItems ? -210: 0)
+                .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
+                .opacity(0.6)
                 
                 
                 
+                
+                
+                
+                
+                
+                
+//                NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
+//                    HugCircle (color: ColorManager .red, friendName: "sending \nKisses")
+//                })
+//                .offset(x: showItems ? -100 : 0, y: showItems ? -210: 0)
+//                .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+//                .opacity(0.275)
+                
+              
                 NavigationLink(destination: EmptyView(), label: {
-                    HugCircle (color: ColorManager .grey1, friendName: "")
+                    HugCircle (color: ColorManager .grey1, friendName: "friends")
                 })
                 .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
                 .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
                 
                 
-                
+                VStack {
                     
-               
+                  
+                    
+                    NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
+                        HugCircle (color: ColorManager .red, friendName: "sending \nKisses")
+                    })
+                    .offset(x: showItems ? 0 : 0, y: showItems ? 290: 0)
+                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                    .opacity(0.4)
+                    
+                    
+                    
+                    
+                  
+                    
+                    
+                    
+                    
+                    
                     
                     
                     
@@ -99,51 +137,51 @@ struct HugPreload: View {
                     VStack {
                         
                         Spacer ()
-                            .frame(height: 10)
+                            .frame(height: 120)
                         
-//                        Text("Do you")
-//                            .font(.system(size: 25))
-//
-//                            .foregroundColor(ColorManager .grey2)
-//                            .fontWeight(.thin)
-//                            .multilineTextAlignment(.center)
-//                        //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-//
-//                        Text("or a Friend")
-//                            .font(.system(size: 25))
-//
-//                            .foregroundColor(ColorManager .grey2)
-//                            .fontWeight(.thin)
-//                            .multilineTextAlignment(.center)
-//
-//                        Text("need a")
-//                            .font(.system(size: 25))
-//
-//                            .foregroundColor(ColorManager .grey2)
-//                            .fontWeight(.thin)
-//                            .multilineTextAlignment(.center)
+                        //                        Text("Do you")
+                        //                            .font(.system(size: 25))
+                        //
+                        //                            .foregroundColor(ColorManager .grey2)
+                        //                            .fontWeight(.thin)
+                        //                            .multilineTextAlignment(.center)
+                        //                        //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        //
+                        //                        Text("or a Friend")
+                        //                            .font(.system(size: 25))
+                        //
+                        //                            .foregroundColor(ColorManager .grey2)
+                        //                            .fontWeight(.thin)
+                        //                            .multilineTextAlignment(.center)
+                        //
+                        //                        Text("need a")
+                        //                            .font(.system(size: 25))
+                        //
+                        //                            .foregroundColor(ColorManager .grey2)
+                        //                            .fontWeight(.thin)
+                        //                            .multilineTextAlignment(.center)
                         //                                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
-                        Text("Hugs")
-                            .font(.system(size: 45))
-                        
-                            .foregroundColor(ColorManager .grey3)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("and")
-                            .font(.system(size: 20))
-                            .italic()
-                            .foregroundColor(ColorManager .grey2)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("Kisses")
-                            .font(.system(size: 45))
-                        
-                            .foregroundColor(ColorManager .grey3)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
+//                        Text("Hugs")
+//                            .font(.system(size: 45))
+//
+//                            .foregroundColor(ColorManager .grey3)
+//                            .fontWeight(.thin)
+//                            .multilineTextAlignment(.center)
+//
+//                        Text("and")
+//                            .font(.system(size: 20))
+//                            .italic()
+//                            .foregroundColor(ColorManager .grey2)
+//                            .fontWeight(.thin)
+//                            .multilineTextAlignment(.center)
+//
+//                        Text("Kisses")
+//                            .font(.system(size: 45))
+//
+//                            .foregroundColor(ColorManager .grey3)
+//                            .fontWeight(.thin)
+//                            .multilineTextAlignment(.center)
                         //                                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
                         
@@ -191,5 +229,6 @@ struct HugPreload: View {
             }
         }
     }
-
-
+    
+    
+}
