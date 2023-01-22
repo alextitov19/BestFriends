@@ -77,20 +77,20 @@ struct BuggingPreload1: View {
                 
                 ZStack {
                     
-                
-                    NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups), label: {
-                        BuggingCircle (color: ColorManager.red, friendName: "Huge \nFIGHT? \ncoming soon")
-                    })
-                    .offset(x: showItems ? -120 : 0, y: showItems ? -150: 0)
-                    .shadow(color: ColorManager .red, radius: 10, x: 10, y: 10)
-                    
-                    
-                    NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups), label: {
-                        BuggingCircle (color: .cyan, friendName: "")
-                    })
-                    .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
-                    
-                    
+//                
+//                    NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups), label: {
+//                        BuggingCircle (color: ColorManager.red, friendName: "Huge \nFIGHT? \ncoming soon")
+//                    })
+//                    .offset(x: showItems ? -120 : 0, y: showItems ? -150: 0)
+//                    .shadow(color: ColorManager .red, radius: 10, x: 10, y: 10)
+//                    
+//                    
+//                    NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups), label: {
+//                        BuggingCircle (color: .cyan, friendName: "")
+//                    })
+//                    .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
+//                    
+//                    
                     
                     Image(systemName: "triangle.fill")
                         .resizable()
