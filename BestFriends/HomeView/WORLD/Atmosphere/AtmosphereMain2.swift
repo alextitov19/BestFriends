@@ -95,7 +95,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 0 ? Color(.cyan) : ColorManager .pmbc_pink)
+                        .background(mood == 0 ? Color(.cyan) : ColorManager .pmbc_blue)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -107,35 +107,35 @@ struct AtmosphereMain2: View {
                             mood = 1
                         }) {
                             
-                            Text("Relationship \nDrama")
+                            Text("Relationship \nIssues")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 1 ? Color(.cyan) : ColorManager .orange2)
+                        .background(mood == 1 ? Color(.cyan) : ColorManager .pmbc_blue)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
                         
                         Spacer()
                             .frame(height: 12)
-                        
-                        Button(action: {
-                            mood = 2
-                        }) {
-                            
-                            Text("Family \nIssues")
-                                .font(.system(size: 10))
-                                .foregroundColor(Color.black)
-                        }
-                        .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 2 ? Color(.cyan) : ColorManager .orange2)
-                        .cornerRadius(7)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
-                        
-                        Spacer()
-                            .frame(height: 12)
+//
+//                        Button(action: {
+//                            mood = 2
+//                        }) {
+//
+//                            Text("Family \nIssues")
+//                                .font(.system(size: 10))
+//                                .foregroundColor(Color.black)
+//                        }
+//                        .frame(width: 80, height: 30, alignment: .center)
+//                        .background(mood == 2 ? Color(.cyan) : ColorManager .pmbc_blue)
+//                        .cornerRadius(7)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//
+//                        Spacer()
+//                            .frame(height: 12)
                         
                         Button(action: {
                             mood = 3
@@ -153,43 +153,43 @@ struct AtmosphereMain2: View {
                     }
                     
                     Spacer()
-                        .frame(width: 30)
+                        .frame(width: 80)
                     
-                    VStack {
-                        Button(action: {
-                            mood = 4
-                        }) {
-                            
-                            Text("My Exciting \nNEWS!")
-                                .font(.system(size: 10))
-                                .foregroundColor(Color.black)
-                        }
-                        .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 4 ? Color(.systemGreen) : Color .yellow)
-                        .cornerRadius(7)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
-                        
-                        Spacer()
-                            .frame(height: 12)
-                        
-                        Button(action: {
-                            mood = 5
-                        }) {
-                            
-                            Text("I was really \nhoping that...")
-                                .font(.system(size: 10))
-                                .foregroundColor(Color.black)
-                        }
-                        .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 5 ? Color(.systemOrange) : ColorManager .orange1)
-                        .cornerRadius(7)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
-                        
-                        
-                    }
-                    
+//                    VStack {
+//                        Button(action: {
+//                            mood = 4
+//                        }) {
+//
+//                            Text("My Exciting \nNEWS!")
+//                                .font(.system(size: 10))
+//                                .foregroundColor(Color.black)
+//                        }
+//                        .frame(width: 80, height: 30, alignment: .center)
+//                        .background(mood == 4 ? Color(.systemGreen) : Color .yellow)
+//                        .cornerRadius(7)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//
+//                        Spacer()
+//                            .frame(height: 12)
+//
+//                        Button(action: {
+//                            mood = 5
+//                        }) {
+//
+//                            Text("I was really \nhoping that...")
+//                                .font(.system(size: 10))
+//                                .foregroundColor(Color.black)
+//                        }
+//                        .frame(width: 80, height: 30, alignment: .center)
+//                        .background(mood == 5 ? Color(.systemOrange) : ColorManager .orange1)
+//                        .cornerRadius(7)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//
+//
+//                    }
+//
                     Spacer()
                         .frame(width: 30)
                     
@@ -229,22 +229,22 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 12)
                         
-                        Button(action: {
-                            mood = 8
-                        }) {
-                            
-                            Text("Found \nNEW Music")
-                                .font(.system(size: 10))
-                                .foregroundColor(Color.black)
-                        }
-                        .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 8 ? Color(.systemYellow) : ColorManager .pmbc_green)
-                        .cornerRadius(7)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
-                        
-                        Spacer()
-                            .frame(height: 12)
+//                        Button(action: {
+//                            mood = 8
+//                        }) {
+//                            
+//                            Text("Found \nNEW Music")
+//                                .font(.system(size: 10))
+//                                .foregroundColor(Color.black)
+//                        }
+//                        .frame(width: 80, height: 30, alignment: .center)
+//                        .background(mood == 8 ? Color(.systemYellow) : ColorManager .pmbc_green)
+//                        .cornerRadius(7)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        
+//                        
+//                        Spacer()
+//                            .frame(height: 12)
                         
                         Button(action: {
                             mood = 9
