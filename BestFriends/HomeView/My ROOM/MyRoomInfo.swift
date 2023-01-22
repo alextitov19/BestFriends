@@ -66,19 +66,30 @@ struct MyRoomInfo: View {
                 })
                 .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
                 .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
+                .opacity(0.6)
+                
+                NavigationLink(destination: HugPushNotification3(user: user, friends: friends), label: {
+                    MyRoomCircle (color: ColorManager .grey1, friendName: "I need a \n Hug")
+                })
+//                NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
+//                    HugCircle (color: ColorManager .grey4, friendName: "send a \nHomie")
+//                })
+                .offset(x: showItems ? -75 : 0, y: showItems ? -150: 0)
+                .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
+                .opacity(0.6)
+                
               
-                
-                
-                
-            ZStack {
-                
                 NavigationLink(destination: MyFears(user: user, friends: friends), label: {
                     MyRoomCircle (color: ColorManager.purple1, friendName: "All \nmy Fears")
                 })
                 .offset(x: showItems ? -100 : 0, y: showItems ? -250: 0)
                 .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
+                .opacity(0.6)
                 
                 
+            ZStack {
+                
+            
               
                     
 //                 MARK;  new music ******
@@ -104,7 +115,7 @@ struct MyRoomInfo: View {
                     NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
                         MyRoomCircle (color: ColorManager.grey1, friendName: "DreamVault \n(preview)")
                     })
-                    .offset(x: showItems ? 75 : 0, y: showItems ? 140: 0)
+                    .offset(x: showItems ? 75 : 0, y: showItems ? 240: 0)
                     .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
                     
 //                    
