@@ -58,7 +58,7 @@ struct HugPreload: View {
                 
                 
                 NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
-                    HugCircle (color: ColorManager .grey3, friendName: "send a \nHomie")
+                    HugCircle (color: ColorManager .grey3, friendName: "send a \n'Homie'")
                 })
 //                NavigationLink(destination: HugPushNotification3(user: user, friends: friends), label: {
 //                    HugCircle (color: ColorManager .grey1, friendName: "I need a \n Hug")
