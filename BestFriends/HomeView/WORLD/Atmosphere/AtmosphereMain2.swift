@@ -216,7 +216,7 @@ struct AtmosphereMain2: View {
                             mood = 7
                         }) {
                             
-                            Text("Ton of 'Likes' \non IG Post")
+                            Text("Ton of 'Likes' \non my Post")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -238,7 +238,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 8 ? Color(.systemYellow) : ColorManager .purple3)
+                        .background(mood == 8 ? Color(.systemYellow) : ColorManager .pmbc_green)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -250,12 +250,12 @@ struct AtmosphereMain2: View {
                             mood = 9
                         }) {
                             
-                            Text("Found new \nLove")
+                            Text("Exciting News")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 9 ? Color(.systemYellow) : ColorManager .purple3)
+                        .background(mood == 9 ? Color(.systemYellow) : ColorManager .pmbc_green)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
