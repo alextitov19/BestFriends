@@ -160,7 +160,7 @@ struct MyRoomInfo: View {
                             .foregroundColor(.white)
                             .fontWeight(.ultraLight)
                             .multilineTextAlignment(.center)
-                        Text("SILENCE")
+                        Text("ROOM")
                             .font(.system(size: 22))
                             .foregroundColor(.white)
                             .fontWeight(.light)
