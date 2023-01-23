@@ -100,21 +100,31 @@ struct BestFriendMessages: View {
                     
                     VStack {
                         
-                        Text("Favorite Chat")
+                        Text("Messages that")
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager .purple3)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                   
                      
-                        Text("Messages")
+                        Text("made you ")
+                            .font(.system(size: 20))
+                            .foregroundColor(ColorManager .purple3)
+                            .fontWeight(.regular)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("Smile ")
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager .purple3)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                     
-                        Text("you \nlong-tapped")
-                            .font(.system(size: 17))
+                        
+                        Spacer ()
+                            .frame(height: 7)
+                    
+                        Text("(you long-tapped \nin Chat)")
+                            .font(.system(size: 12))
                             .italic()
                             .foregroundColor(ColorManager.grey3)
                             .fontWeight(.regular)
