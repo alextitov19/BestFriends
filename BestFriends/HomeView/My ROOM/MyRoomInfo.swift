@@ -86,6 +86,14 @@ struct MyRoomInfo: View {
                 .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
                 .opacity(0.6)
                 
+              
+                NavigationLink(destination: MyFears(user: user, friends: friends), label: {
+                    MyRoomCircle (color: ColorManager.purple1, friendName: "Found NEW \nmusic")
+                })
+                .offset(x: showItems ? -200 : 0, y: showItems ? -300: 0)
+                .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
+                .opacity(0.6)
+                
                 
             ZStack {
                 
