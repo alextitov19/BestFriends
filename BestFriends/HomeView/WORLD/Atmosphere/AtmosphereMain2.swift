@@ -24,8 +24,8 @@ struct AtmosphereMain2: View {
 //    let user: User
 //    let atmosphere: Atmosphere
 //    let friends: [User]
-//    let friendAtmospheres: [Atmosphere]
-//    let groups: [Group]
+    let friendAtmospheres: [Atmosphere]
+    let groups: [Group]
     
     @State private var mood: Int = -1
     @State private var summary = ""
@@ -456,9 +456,11 @@ struct AtmosphereMain2: View {
 //
 //                                    })
 //MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
+//                                FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends
+                             
                                 
                                 NavigationLink(
-                                    destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends),
+                                    destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                     label: {
                                         Text("Difficult day? Tap here")
                                             .fontWeight(.thin)
