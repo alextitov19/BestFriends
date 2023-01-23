@@ -29,25 +29,19 @@ struct MyRoomInfo: View {
     var body: some View {
         
         ZStack {
+    
+            ColorManager.purple7
+                .ignoresSafeArea()
+                .onAppear()
             
-            //            ColorManager.purple1
-            //                .ignoresSafeArea()
-            //                .onAppear()
-            
-            
-            //            Image("ShaylaBest3")
-            //                .resizable()
-            //                .ignoresSafeArea()
-            //                .scaledToFill()
-            //                .opacity(0.5)
-            
-            Image("purpleBackground")
+            Image("blueBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
                 .opacity(0.5)
             
-            
+           
+
             
             AdPlayerView(name: "MyRoom5")
                 .ignoresSafeArea()
@@ -60,70 +54,73 @@ struct MyRoomInfo: View {
             ZStack{
                 
           
+            
                 
-                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                    MyRoomCircle (color: ColorManager.purple1, friendName: "SmileVault")
+                NavigationLink(destination: MyFears(user: user, friends: friends), label: {
+                    MyRoomCircle (color: Color .white, friendName: "All \nmy Fears")
                 })
-                .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
-                .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
-                .opacity(0.6)
+                .offset(x: showItems ? 100 : 0, y: showItems ? -250: 0)
+                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                .opacity(0.25)
                 
+                
+        
+                
+            ZStack {
+                
+       
                 NavigationLink(destination: HugPushNotification3(user: user, friends: friends), label: {
                     MyRoomCircle (color: ColorManager .grey1, friendName: "I need a \n Hug")
                 })
 //                NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
 //                    HugCircle (color: ColorManager .grey4, friendName: "send a \nHomie")
 //                })
-                .offset(x: showItems ? -75 : 0, y: showItems ? -150: 0)
-                .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
-                .opacity(0.6)
+                .offset(x: showItems ? 0 : 0, y: showItems ? -170: 0)
+                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                .opacity(0.25)
                 
               
-                NavigationLink(destination: MyFears(user: user, friends: friends), label: {
-                    MyRoomCircle (color: ColorManager.purple1, friendName: "All \nmy Fears")
+           
+                
+                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
+                    MyRoomCircle (color: Color .white, friendName: "SmileVault")
                 })
-                .offset(x: showItems ? -100 : 0, y: showItems ? -250: 0)
-                .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
-                .opacity(0.6)
-                
-              
-                NavigationLink(destination: SendSongPush(user: user, friends: friends), label: {
-                    MyRoomCircle (color: ColorManager.purple1, friendName: "Found NEW \nmusic")
-                })
-                .offset(x: showItems ? 0 : 0, y: showItems ? -300: 0)
-                .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
-                .opacity(0.6)
+                .offset(x: showItems ? 120 : 0, y: showItems ? -120: 0)
+                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                .opacity(0.25)
                 
                 
-            ZStack {
                 
-            
-              
-                    
-//                 MARK;  new music ******
+                
+                
+                
+                
+                
+                
+
 //
 //                    NavigationLink(destination:   SendSongPush(user: user, friends: friends),
 //                                   label: {
-//                        MyRoomCircle (color: ColorManager .grey1, friendName: "Found new \nMusic \n(preview)")
+//                        MyRoomCircle (color: ColorManager .grey1, friendName: "New \nMusic \n(preview)")
 //                    })
-//                    .offset(x: showItems ? 59 : 0, y: showItems ? 260: 0)
+//                    .offset(x: showItems ? -125 : 0, y: showItems ? 260: 0)
 //                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
-                    
-                    
-
-                    NavigationLink(destination: EmptyView(), label: {
-                        MyRoomCircle (color: ColorManager .grey1, friendName: "Friendship \nFeed \n(coming \n2023)")
-                    })
-                    .offset(x: showItems ? -120 : 0, y: showItems ? 150: 0)
-                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
-//                 \
+//
+//
+//
+//                    NavigationLink(destination: EmptyView(), label: {
+//                        MyRoomCircle (color: ColorManager .grey1, friendName: "Friendship \nFeed \n2023)")
+//                    })
+//                    .offset(x: showItems ? -120 : 0, y: showItems ? 150: 0)
+//                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
+////                 \
                     
                     
                     
                     NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
                         MyRoomCircle (color: ColorManager.grey1, friendName: "DreamVault \n(preview)")
                     })
-                    .offset(x: showItems ? 75 : 0, y: showItems ? 240: 0)
+                    .offset(x: showItems ? 0 : 0, y: showItems ? 240: 0)
                     .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
                     
 //                    
@@ -143,8 +140,8 @@ struct MyRoomInfo: View {
                         MyRoomCircle (color: ColorManager .grey1, friendName: "")
                     })
                     .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-                    
+                   .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+//
                     
                     
                     
@@ -214,7 +211,7 @@ struct MyRoomInfo: View {
                         print("tap function is working")
                     }
                     
-                    .animation(Animation.easeInOut(duration: 3.5), value: showItems)
+                    .animation(Animation.easeInOut(duration: 2.5), value: showItems)
                     
                 }
             }
@@ -229,10 +226,10 @@ struct MyRoomInfo: View {
                 
                 ZStack {
                     
-                    Rectangle()
+                    Circle()
                         .frame(width: 120, height: 120)
                         .clipShape(Circle())
-                        .foregroundColor(color)
+                        .foregroundColor(Color .white)
                         .opacity(0.7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
                     
