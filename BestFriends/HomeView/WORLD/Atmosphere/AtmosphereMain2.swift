@@ -442,29 +442,14 @@ struct AtmosphereMain2: View {
                             VStack {
                                 Spacer()
                                     .frame(height: 25)
-//                                NavigationLink(
-//                                    destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends),
-//                                    label: {
-//                                        Text("'Vibe' Tracker")
-//                                            .fontWeight(.thin)
-//                                            .frame(width: 200, height: 25)
-//                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                            .font(.system(size: 23))
-//                                            .background(ColorManager.pmbc_green)
-//                                            .cornerRadius(15)
-//                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//                                    })
-//MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
-//                                FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends
-                             
+             
                                 
                                 NavigationLink(
                                     destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                     label: {
-                                        Text("Difficult day? Tap here")
+                                        Text("Difficult day? \nTap here")
                                             .fontWeight(.thin)
-                                            .frame(width: 250, height: 30)
+                                            .frame(width: 50, height: 50)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                             .font(.system(size: 23))
                                             .background(ColorManager.red)
