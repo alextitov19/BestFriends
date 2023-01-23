@@ -264,7 +264,7 @@ struct MyFears: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) I feel an attack coming. I'm scared, can you calm me down", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) I feel an axniety attack coming. I'm scared, can you please help calm me down", APNToken: f.APNToken)
                 }
             }
         }
