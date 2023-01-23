@@ -39,7 +39,7 @@ struct INFOMainHowWorks: View {
                     .foregroundColor(ColorManager.purple3)
                 
                 
-                Text("Emotional Adventures")
+                Text("'Emotional' Adventures")
                     .font(.system(size: 25))
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
@@ -294,7 +294,7 @@ struct INFOMainHowWorks: View {
                                 
                                 destination: InfoSilence(user: user),
                                 label: {
-                                    Text("My Silence")
+                                    Text("My Room")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
                                         .frame(width: 200, height: 40)
