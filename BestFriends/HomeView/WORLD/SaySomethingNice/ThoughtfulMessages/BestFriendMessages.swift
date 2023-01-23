@@ -34,7 +34,7 @@ struct BestFriendMessages: View {
 //                .ignoresSafeArea()
 //                .scaledToFill()
 
-            ColorManager .purple2
+            ColorManager .grey2
                 .ignoresSafeArea()
                 .onAppear()
             
@@ -93,31 +93,31 @@ struct BestFriendMessages: View {
                     Image(systemName: "heart.fill")
                         .resizable()
                         .foregroundColor(ColorManager.grey1)
-                        .frame(width: 260, height: 220)
+                        .frame(width: 200, height: 180)
                         .blur(radius: 2)
-                        .shadow(color: .white, radius: 30, x: 20, y: 25)
+                        .shadow(color: .purple, radius: 30, x: 20, y: 25)
                         .opacity(0.6)
                     
                     VStack {
                         
                         Text("Favorite Chat")
-                            .font(.system(size: 35))
-                            .foregroundColor(ColorManager .purple5)
-                            .fontWeight(.medium)
+                            .font(.system(size: 20))
+                            .foregroundColor(ColorManager .purple3)
+                            .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                   
                      
                         Text("Messages")
-                            .font(.system(size: 35))
-                            .foregroundColor(ColorManager .purple5)
-                            .fontWeight(.medium)
+                            .font(.system(size: 20))
+                            .foregroundColor(ColorManager .purple3)
+                            .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                     
                         Text("you \nlong-tapped")
                             .font(.system(size: 17))
                             .italic()
-                            .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.medium)
+                            .foregroundColor(ColorManager.grey3)
+                            .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                         
 //                        Text("in Chat")
