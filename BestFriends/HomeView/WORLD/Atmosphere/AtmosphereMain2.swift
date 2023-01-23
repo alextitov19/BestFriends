@@ -290,12 +290,12 @@ struct AtmosphereMain2: View {
                     }
                     
                     Spacer()
-                        .frame(height: 25)
+                        .frame(height: 40)
                     
                     ZStack {
                         Rectangle()
-                            .frame(width:335, height: 50)
-                            .cornerRadius(15)
+                            .frame(width:335, height: 35)
+                            .cornerRadius(10)
                             .foregroundColor(ColorManager .grey3)
                             .opacity(0.5)
                         
@@ -413,7 +413,7 @@ struct AtmosphereMain2: View {
                         }
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 15)
                         
                         
                         Button(action: {
