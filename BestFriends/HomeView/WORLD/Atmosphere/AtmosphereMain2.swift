@@ -102,7 +102,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 0 ? Color(.cyan) : ColorManager .red)
+                        .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -119,7 +119,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 1 ? Color(.cyan) : ColorManager .red)
+                        .background(mood == 1 ? Color(.cyan) : ColorManager .pmbc_pink)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -443,23 +443,43 @@ struct AtmosphereMain2: View {
                                 Spacer()
                                     .frame(height: 25)
              
-                                
-                                NavigationLink(
-                                    destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                    label: {
-                                        Text("Difficult day? \nTap here")
-                                            .fontWeight(.thin)
-                                            .frame(width: 50, height: 50)
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .font(.system(size: 23))
-                                            .background(ColorManager.red)
-                                            .cornerRadius(10)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
-                                    })
+                                Text("Difficult day?")
+                                    .font(.system(size: 17))
+                                    .fontWeight(.ultraLight)
+                                    .foregroundColor(ColorManager .grey4)
+                                    .multilineTextAlignment(.center)
                                 
                                 
-                                
+                                ZStack {
+                                    Image(systemName: "heart.fill")
+                                        .resizable()
+                                        .foregroundColor(ColorManager .purple2)
+                                        .frame(width: 100, height: 80)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                    
+                                        .opacity(0.95)
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    NavigationLink(
+                                        destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                        label: {
+                                            Text("tap here")
+                                                .fontWeight(.thin)
+                                               .frame(width: 80, height: 30)
+                                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                .font(.system(size: 18))
+                                                .background(ColorManager .purple2)
+                                                .cornerRadius(10)
+//                                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                            
+                                        })
+                                    
+                                }
                         }
                         
                     }
