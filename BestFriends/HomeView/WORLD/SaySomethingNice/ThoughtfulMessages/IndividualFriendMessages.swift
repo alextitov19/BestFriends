@@ -19,44 +19,29 @@ struct IndividualFriendMessages: View {
     
     var body: some View {
         ZStack {
-//
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
-//                .onAppear(perform: loadData)
-//
-//            AdPlayerView(name: "background_1")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-         
+
             
-             ColorManager.grey4
+            ColorManager .purple7
                  .ignoresSafeArea()
                  .onAppear{ loadData() }
-             
- //            Image("blueBackground")
- //                .resizable()
- //                .ignoresSafeArea()
                  .scaledToFill()
-//                 .onAppear(perform: loadData)
-//                 .sheet(isPresented: $isShowPhotoLibrary) {
-//                     ImagePicker(image: $attachmentImage, sourceType: .photoLibrary)
-//                         .onDisappear { createPhotoPop() }
+
                      
-            AdPlayerView(name: "background_1")
+            AdPlayerView(name: "MyRoom5")
                           .ignoresSafeArea()
                            .blendMode(.screen)
+
             
-            
-            
+            AdPlayerView(name: "MyRoom5")
+                .ignoresSafeArea()
+                .blendMode(.screen)
             
             
             VStack {
-                Text("Special messages from")
-                    .font(.system(size: 30))
-                    .fontWeight(.light)
-                    .foregroundColor(ColorManager .purple4)
+                Text("saved Chat messages")
+                    .font(.system(size: 25))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(ColorManager .grey3)
                     .multilineTextAlignment(.center)
                 
                 Text(friend.firstName + " " + friend.lastName)
@@ -65,7 +50,7 @@ struct IndividualFriendMessages: View {
                     .foregroundColor(ColorManager .grey4)
                 
                 Text("(tap 'star' to favorite)")
-                    .font(.system(size: 20))
+                    .font(.system(size: 12))
                     .italic()
                     .fontWeight(.light)
                     .foregroundColor(ColorManager .grey4)
@@ -88,19 +73,21 @@ struct IndividualFriendMessages: View {
                 
                 Spacer ()
                     .frame(height: 20)
+//
+//                Button(action: {
+//                    sessionManager.reloadHome()
+//                }, label: {
+//                    Text("Home / Chat")
+//                        .fontWeight(.thin)
+//                        .frame(width: 200, height: 40)
+//                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                        .font(.system(size: 30))
+//                        .background(ColorManager.purple3)
+//                        .cornerRadius(15)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                })
                 
-                Button(action: {
-                    sessionManager.reloadHome()
-                }, label: {
-                    Text("Home / Chat")
-                        .fontWeight(.thin)
-                        .frame(width: 200, height: 40)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .font(.system(size: 30))
-                        .background(ColorManager.purple3)
-                        .cornerRadius(15)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                })
+                
                 Spacer ()
                     .frame(height: 100)
             }
@@ -130,14 +117,15 @@ private struct FriendMessageView: View {
     
     var body: some View {
         ZStack {
-            ColorManager.purple3
+            ColorManager .grey1
                 .cornerRadius(15)
             
             Text(smileNote.messageBody)
                 .font(.system(size: 20))
-                .foregroundColor(.white)
+                .foregroundColor(ColorManager .grey3)
                 .fontWeight(.light)
                 .multilineTextAlignment(.center)
+                .opacity(0.40)
                 .padding()
             
             HStack {
