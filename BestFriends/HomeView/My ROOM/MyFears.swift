@@ -68,7 +68,7 @@ struct MyFears: View {
                 .scaledToFill()
           
            
-            AdPlayerView(name: "Wind2")
+            AdPlayerView(name: "")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
@@ -80,14 +80,14 @@ struct MyFears: View {
                 HStack {
                     VStack {
                         
-                        Text("I feel my anxiety welling")
-                            .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .purple7)
+                        Text("I feel my anxiety level")
+                            .font(.system(size: 30, weight: .ultraLight))
+                            .foregroundColor(ColorManager .grey2)
                         
                         
-                        Text("up inside")
-                            .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .purple7)
+                        Text("welling up inside")
+                            .font(.system(size: 30, weight: .ultraLight))
+                            .foregroundColor(ColorManager .grey1)
                         
                     }
 //
@@ -97,10 +97,28 @@ struct MyFears: View {
                 }
              
                 Spacer()
-                    .frame(height: 230)
+                    .frame(height: 180)
                 VStack {
-
-                    Text("Can you help me believe")
+                    
+                    
+//                    Text("scared of")
+//                                            .font(.system(size: 25))
+//
+//                                            .foregroundColor(ColorManager .grey4)
+//                                            .fontWeight(.thin)
+//                                            .multilineTextAlignment(.center)
+//
+//                    Text("an attack")
+//                                            .font(.system(size: 25))
+//
+//                                            .foregroundColor(ColorManager .grey4)
+//                                            .fontWeight(.thin)
+//                                            .multilineTextAlignment(.center)
+                    
+                    Spacer()
+                        .frame(height: 15)
+                    
+                    Text("Your voice")
                                             .font(.system(size: 25))
                 
                                             .foregroundColor(ColorManager .grey4)
@@ -108,7 +126,7 @@ struct MyFears: View {
                                             .multilineTextAlignment(.center)
 
                     
-                    Text("it will be, ok?")
+                    Text("calms me")
                                             .font(.system(size: 25))
                 
                                             .foregroundColor(ColorManager .grey4)
@@ -231,7 +249,7 @@ struct MyFears: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Good for you for reaching a trusted friend - nice! ", isPresented: $showingAlert) {
+                                .alert("A calming voice is on the way - stay cool! ", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -243,7 +261,7 @@ struct MyFears: View {
                     
                     
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 60)
                     
                 }
                 

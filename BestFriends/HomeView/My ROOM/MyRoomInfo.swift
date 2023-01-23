@@ -53,16 +53,16 @@ struct MyRoomInfo: View {
             
             ZStack{
                 
-          
-            
-                
-                NavigationLink(destination: MyFears(user: user, friends: friends), label: {
-                    MyRoomCircle (color: Color .white, friendName: "All \nmy Fears")
-                })
-                .offset(x: showItems ? 100 : 0, y: showItems ? -250: 0)
-                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                .opacity(0.25)
-                
+//          
+//            
+//                
+//                NavigationLink(destination: MyFears(user: user, friends: friends), label: {
+//                    MyRoomCircle (color: Color .white, friendName: "All \nmy Fears")
+//                })
+//                .offset(x: showItems ? 100 : 0, y: showItems ? -250: 0)
+//                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+//                .opacity(0.4)
+//                
                 
         
                 
@@ -92,6 +92,15 @@ struct MyRoomInfo: View {
                 
                 
                 
+                    
+                    NavigationLink(destination: MyFears(user: user, friends: friends), label: {
+                        MyRoomCircle (color: Color .white, friendName: "All \nmy Fears")
+                    })
+                    .offset(x: showItems ? 100 : 0, y: showItems ? -250: 0)
+                    .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                    .opacity(0.4)
+                    
+                    
                 
                 
                 
@@ -116,15 +125,15 @@ struct MyRoomInfo: View {
 ////                 \
                     
                     
-//                    
+//
 //                    NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
 //                        MyRoomCircle (color: ColorManager.grey1, friendName: "DreamVault \n(preview)")
 //                    })
 //                    .offset(x: showItems ? 0 : 0, y: showItems ? 240: 0)
 //                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
-//                    
-////                    
-////                    
+//
+////
+////
 //                    
 //                    
 //                    
