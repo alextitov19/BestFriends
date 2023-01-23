@@ -100,20 +100,7 @@ struct MyFears: View {
                     .frame(height: 180)
                 VStack {
                     
-                    
-//                    Text("scared of")
-//                                            .font(.system(size: 25))
-//
-//                                            .foregroundColor(ColorManager .grey4)
-//                                            .fontWeight(.thin)
-//                                            .multilineTextAlignment(.center)
-//
-//                    Text("an attack")
-//                                            .font(.system(size: 25))
-//
-//                                            .foregroundColor(ColorManager .grey4)
-//                                            .fontWeight(.thin)
-//                                            .multilineTextAlignment(.center)
+
                     
                     Spacer()
                         .frame(height: 15)
@@ -249,7 +236,7 @@ struct MyFears: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("A calming voice is on the way - stay cool! ", isPresented: $showingAlert) {
+                                .alert("a calming voice is on the way, we love you \n\nwe're all here for you ", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -277,7 +264,7 @@ struct MyFears: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) can you calm me down, help me work through this.", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) I feel an attack coming. I'm scared, can you calm me down", APNToken: f.APNToken)
                 }
             }
         }
