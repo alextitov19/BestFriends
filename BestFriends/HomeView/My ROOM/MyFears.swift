@@ -80,14 +80,57 @@ struct MyFears: View {
                 HStack {
                     VStack {
                         
-                        Text("I feel my anxiety level")
-                            .font(.system(size: 30, weight: .ultraLight))
-                            .foregroundColor(ColorManager .grey2)
-                        
-                        
-                        Text("welling up inside")
-                            .font(.system(size: 30, weight: .ultraLight))
+//                        Text("I feel my anxiety level")
+//                            .font(.system(size: 30, weight: .ultraLight))
+//                            .foregroundColor(ColorManager .grey2)
+//
+//
+//                        Text("welling up inside")
+//                            .font(.system(size: 30, weight: .ultraLight))
+//                            .foregroundColor(ColorManager .grey1)
+                    
+                        Text("Some of us here at BF have been and")
+                            .font(.system(size: 19, weight: .ultraLight))
                             .foregroundColor(ColorManager .grey1)
+                            .multilineTextAlignment(.center)
+                        Text("still deal with this. Our hearts go out")
+                            .font(.system(size: 19, weight: .ultraLight))
+                            .foregroundColor(ColorManager .grey1)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("to you that know what we are talking about,")
+                            .font(.system(size: 19, weight: .ultraLight))
+                            .foregroundColor(ColorManager .grey1)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("'anxiety panic attacks'")
+                            .font(.system(size: 19, weight: .ultraLight))
+                            .foregroundColor(ColorManager .grey1)
+                            .multilineTextAlignment(.center)
+                        
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        Text("So fragile - just taking about can")
+                            .font(.system(size: 19, weight: .ultraLight))
+                            .foregroundColor(ColorManager .grey1)
+                            .multilineTextAlignment(.center)
+                        Text("trigger an episode. We wish so much that")
+                            .font(.system(size: 19, weight: .ultraLight))
+                            .foregroundColor(ColorManager .grey1)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                       
+                        Text("we could chase away all your")
+                            .font(.system(size: 19, weight: .ultraLight))
+                            .foregroundColor(ColorManager .grey1)
+                            .multilineTextAlignment(.center)
+                        
+                         Text("fears and hold you safe.")
+                             .font(.system(size: 19, weight: .ultraLight))
+                             .foregroundColor(ColorManager .grey1)
+                             .multilineTextAlignment(.center)
                         
                     }
 //
@@ -97,15 +140,12 @@ struct MyFears: View {
                 }
              
                 Spacer()
-                    .frame(height: 180)
+                    .frame(height: 130)
                 VStack {
                     
 
                     
-                    Spacer()
-                        .frame(height: 15)
-                    
-                    Text("Your voice")
+                    Text("we love")
                                             .font(.system(size: 25))
                 
                                             .foregroundColor(ColorManager .grey4)
@@ -113,7 +153,7 @@ struct MyFears: View {
                                             .multilineTextAlignment(.center)
 
                     
-                    Text("calms me")
+                    Text("you guys")
                                             .font(.system(size: 25))
                 
                                             .foregroundColor(ColorManager .grey4)
@@ -236,7 +276,7 @@ struct MyFears: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("a calming voice is on the way, we love you \n\nwe're all here for you ", isPresented: $showingAlert) {
+                                .alert("We love you \n\nWe're all here in heart for you.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -248,7 +288,7 @@ struct MyFears: View {
                     
                     
                     Spacer()
-                        .frame(height: 60)
+                        .frame(height: 90)
                     
                 }
                 
