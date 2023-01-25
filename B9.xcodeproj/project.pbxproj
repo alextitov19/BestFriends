@@ -282,6 +282,7 @@
 		CFDB15102859415D00155CEE /* MasterFriendVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB150F2859415D00155CEE /* MasterFriendVault.swift */; };
 		CFE1946E28133CF700ED5718 /* BestFriendMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1946D28133CF700ED5718 /* BestFriendMessages.swift */; };
 		CFE6F024297B82A8004397A3 /* SendHomie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6F023297B82A8004397A3 /* SendHomie.swift */; };
+		CFF952332981BC700054D963 /* DreamsWeDare2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF952322981BC700054D963 /* DreamsWeDare2.swift */; };
 		D0CC1A04283EE33500E7461F /* HorizonHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */; };
 		D0F5AB1B2840519700053F17 /* HorizonRocketColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */; };
 /* End PBXBuildFile section */
@@ -563,6 +564,7 @@
 		CFDB150F2859415D00155CEE /* MasterFriendVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterFriendVault.swift; sourceTree = "<group>"; };
 		CFE1946D28133CF700ED5718 /* BestFriendMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestFriendMessages.swift; sourceTree = "<group>"; };
 		CFE6F023297B82A8004397A3 /* SendHomie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendHomie.swift; sourceTree = "<group>"; };
+		CFF952322981BC700054D963 /* DreamsWeDare2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamsWeDare2.swift; sourceTree = "<group>"; };
 		D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonHomeView.swift; sourceTree = "<group>"; };
 		D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonRocketColorPicker.swift; sourceTree = "<group>"; };
 		D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -920,6 +922,7 @@
 				CFDA4BDD28D3CEA300118D90 /* DreamMap.swift */,
 				CFDA4BDF28D57A2300118D90 /* TwinkieDream.swift */,
 				CFDA4BE128D66B2600118D90 /* AudioCode.swift */,
+				CFF952322981BC700054D963 /* DreamsWeDare2.swift */,
 				CF3DB36628D78BF300BF9CCD /* DreamsWeDare.swift */,
 				CF3DB36828D7DD8B00BF9CCD /* DreamRisk.swift */,
 				CF3DB36A28D8DAC000BF9CCD /* DreamSteps.swift */,
@@ -1821,6 +1824,7 @@
 				7A22A579274416C200FB6B4F /* ViewExt.swift in Sources */,
 				CFDB150328574D8B00155CEE /* FightWithParents.swift in Sources */,
 				CF3DB36728D78BF300BF9CCD /* DreamsWeDare.swift in Sources */,
+				CFF952332981BC700054D963 /* DreamsWeDare2.swift in Sources */,
 				CF3B65AB2800718E0003A714 /* ReportAbuse.swift in Sources */,
 				CF09118E284894F400CB0AF0 /* InfoView.swift in Sources */,
 				CF381A4B2826584F00B3719E /* IntroBluemodeFriend.swift in Sources */,

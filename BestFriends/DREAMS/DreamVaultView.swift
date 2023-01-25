@@ -74,7 +74,7 @@ struct DreamVaultView: View {
                     .offset(x: showItems ? -140 : 0, y: showItems ? -275: 0)
                     
                     
-                    NavigationLink(destination: DreamsWeDare(), label: {
+                    NavigationLink(destination: DreamsWeDare2(user: user, friends: friends), label: {
                         WhoFightingCircle (color: ColorManager.purple3, friendName: "dreams \nwe \ndare")
                     })
                     .offset(x: showItems ? 50 : 0, y: showItems ? -190: 0)
