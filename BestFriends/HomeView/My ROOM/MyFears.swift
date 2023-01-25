@@ -140,12 +140,12 @@ struct MyFears: View {
                 }
              
                 Spacer()
-                    .frame(height: 130)
+                    .frame(height: 100)
                 VStack {
                     
 
                     
-                    Text("we love")
+                    Text("let's get")
                                             .font(.system(size: 25))
                 
                                             .foregroundColor(ColorManager .grey4)
@@ -153,7 +153,7 @@ struct MyFears: View {
                                             .multilineTextAlignment(.center)
 
                     
-                    Text("you guys")
+                    Text("everyone home")
                                             .font(.system(size: 25))
                 
                                             .foregroundColor(ColorManager .grey4)
@@ -276,7 +276,7 @@ struct MyFears: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("We're all here in thought and heart for you.", isPresented: $showingAlert) {
+                                .alert("we love you guys \n\nWe're all here in thought and heart for you.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
