@@ -237,8 +237,8 @@ struct HomeView: View {
                                     .frame(width: 0, height: 0)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .opacity(0.4)
+                                    .cornerRadius(10)
+                                    .opacity(0.7)
                             })
                         }
                         
@@ -260,12 +260,12 @@ struct HomeView: View {
 //                            })
                             NavigationLink(destination: SaySomethingNice7(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
                                            label: {
-                                Text("Oh Look. Something 'Nice'")
+                                Text("Friend sent 'Nice' message")
                                     .fontWeight(.regular)
-                                    .frame(width: 255, height: 29)
+                                    .frame(width: 255, height: 30)
                                     .foregroundColor(.white)
-                                    .background(Color .yellow)
-                                    .cornerRadius(15)
+                                    .background(ColorManager .purple3)
+                                    .cornerRadius(10)
                                     .opacity(0.7)
                             })
 
@@ -282,8 +282,8 @@ struct HomeView: View {
                                     .fontWeight(.regular)
                                     .frame(width: 255, height: 30)
                                     .foregroundColor(.white)
-                                    .background(Color .pink)
-                                    .cornerRadius(15)
+                                    .background(ColorManager .purple3)
+                                    .cornerRadius(10)
                                     .opacity(0.7)
                             })
   
@@ -293,13 +293,13 @@ struct HomeView: View {
                         
                         HStack {
                             NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
-                                Text("Friend's 'Vibe' Changed - Alert")
+                                Text("Alert - Friend's 'Vibe' changed")
                                     .fontWeight(.regular)
                                     .frame(width: 255, height: 30)
                                     .foregroundColor(.white)
-                                    .background(ColorManager.orange4)
-                                    .cornerRadius(15)
-                                    .opacity(0.4)
+                                    .background(ColorManager.red)
+                                    .cornerRadius(10)
+                                    .opacity(0.7)
                             })
                             
                          
@@ -330,26 +330,26 @@ struct HomeView: View {
 
                         VStack {
                             Spacer().frame(height:10)
+//
+//                            NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
+//                                           label: {
+//                                Text("Let's try to 'Fix-this-mess'")
+//                                    .fontWeight(.regular)
+//                                    .frame(width: 255, height: 30)
+//                                    .foregroundColor(.white)
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(10)
+//                                    .opacity(0.7)
+//                            })
                             
-                            NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
+                            NavigationLink(destination: SendSongPush(user: homeData!.user, friends: homeData!.friends),
                                            label: {
-                                Text("Let's try to 'Fix-this-mess'")
+                                Text("Oh, Look! I found new music")
                                     .fontWeight(.regular)
                                     .frame(width: 255, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .opacity(0.7)
-                            })
-                            
-                            NavigationLink(destination: SendSongPush(user: homeData!.user, friends: homeData!.friends),
-                                           label: {
-                                Text("yes, yes, yes! New music")
-                                    .fontWeight(.regular)
-                                    .frame(width: 255, height: 30)
-                                    .foregroundColor(.white)
-                                    .background(ColorManager.pmbc_green)
-                                    .cornerRadius(15)
+                                    .cornerRadius(10)
                                     .opacity(0.7)
                             })
                             
