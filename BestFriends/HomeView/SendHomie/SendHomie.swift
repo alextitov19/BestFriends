@@ -80,7 +80,7 @@ struct SendHomie: View {
                             .foregroundColor(ColorManager .purple7)
                         
                         
-                        Text("homie")
+                        Text("bro")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple7)
                         
