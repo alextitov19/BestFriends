@@ -42,20 +42,20 @@ struct DreamsWeDare2: View {
                 
                 
                 VStack {
-                    
-                    Text("chasing down")
-                        .font(.system(size: 35))
-                        
-                        .foregroundColor(ColorManager.purple4)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
-                        
-                        Text("Our Dreams")
-                            .font(.system(size: 35))
-                            .foregroundColor(ColorManager.purple4)
-                            .fontWeight(.thin)
-                           .multilineTextAlignment(.center)
-                        
+//
+//                    Text("chasing down")
+//                        .font(.system(size: 35))
+//
+//                        .foregroundColor(ColorManager.purple4)
+//                        .fontWeight(.thin)
+//                        .multilineTextAlignment(.center)
+//
+//                        Text("our dreams")
+//                            .font(.system(size: 35))
+//                            .foregroundColor(ColorManager.purple4)
+//                            .fontWeight(.thin)
+//                           .multilineTextAlignment(.center)
+//
                        
                     VStack {
                         
@@ -84,10 +84,6 @@ struct DreamsWeDare2: View {
                             //                        }
                             //
                             
-                            
-                            
-                                                Spacer()
-                                                    .frame(height: 100)
                             
                             
                             
