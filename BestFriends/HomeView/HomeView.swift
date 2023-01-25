@@ -350,9 +350,14 @@ struct HomeView: View {
 //                                    .opacity(0.7)
 //                            })
                             
-                            NavigationLink(destination: SendSongPush(user: homeData!.user, friends: homeData!.friends),
+                            
+                            
+//                            DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups
+                            
+                            
+                            NavigationLink(destination: DreamVaultView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                            label: {
-                                Text("Oh, Look!  I found new music")
+                                Text("Dreams we dare but whisper")
                                     .fontWeight(.light)
                                     .frame(width: 255, height: 30)
                                     .foregroundColor(.white)
