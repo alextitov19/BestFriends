@@ -18,22 +18,17 @@ struct DreamsWeDare2: View {
     
     let user: User
     let friends: [User]
-    
-    
-    
-    //    let user: User
-    //    let friends: [User]
-    
+  
     var body: some View {
         ZStack {
-            //            ColorManager.grey4
-            //                .ignoresSafeArea()
-            //                .onAppear()
-            //
-            Image("Twinkie")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+                        ColorManager.grey4
+                            .ignoresSafeArea()
+                            .onAppear()
+            
+//            Image("Twinkie")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
             
             //            AdPlayerView(name: "Planet6")
             //                .ignoresSafeArea()
@@ -48,39 +43,20 @@ struct DreamsWeDare2: View {
                 
                 VStack {
                     
-                    
-                    //                    Text("Oops,")
-                    //                        .font(.system(size: 40))
-                    //                        .foregroundColor(ColorManager.purple2)
-                    //                        .fontWeight(.thin)
-                    //                        .multilineTextAlignment(.center)
-                    //
-                    //
-                    //
-                    //                        Spacer()
-                    //                            .frame(height: 30)
-                    //
-                    //                Text("we thought our")
-                    //                    .font(.system(size: 27))
-                    //                    .foregroundColor(ColorManager.purple2)
-                    //                    .fontWeight(.thin)
-                    //                    .multilineTextAlignment(.center)
-                    //
-                    //                    Text("dreams lasted")
-                    //                        .font(.system(size: 27))
-                    //                        .foregroundColor(ColorManager.purple2)
-                    //                        .fontWeight(.thin)
-                    //                        .multilineTextAlignment(.center)
-                    //
-                    //
-                    //                    Text("forever")
-                    //                        .font(.system(size: 80))
-                    //                        .italic()
-                    //                        .foregroundColor(ColorManager.purple2)
-                    //                        .fontWeight(.thin)
-                    //                       .multilineTextAlignment(.center)
-                    //
-                    
+                    Text("chasing down")
+                        .font(.system(size: 35))
+                        
+                        .foregroundColor(ColorManager.purple4)
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                        
+                        Text("Our Dreams")
+                            .font(.system(size: 35))
+                            .foregroundColor(ColorManager.purple4)
+                            .fontWeight(.thin)
+                           .multilineTextAlignment(.center)
+                        
+                       
                     VStack {
                         
                         VStack {
@@ -109,9 +85,9 @@ struct DreamsWeDare2: View {
                             //
                             
                             
-                            //
-                            //                    Spacer()
-                            //                        .frame(height: 200)
+                            
+                                                Spacer()
+                                                    .frame(height: 100)
                             
                             
                             
