@@ -75,13 +75,13 @@ struct SendSongChat2: View {
                     NavigationLink(
                         destination: SendSongPushNote(user: user, friends: friends),
                         label: {
-                            Text("Send Push Notification")
+                            Text("1st_Send Push Notification")
                                 .fontWeight(.thin)
-                                .frame(width: 300, height: 30)
+                                .frame(width: 330, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)
-                                .cornerRadius(15)
+                                .cornerRadius(10)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                       
                         })
@@ -98,7 +98,7 @@ struct SendSongChat2: View {
             TextField("", text: $customMessage)
                 .placeholder(when: customMessage.isEmpty) {
                     HStack {
-                        Text("Type name of song here ...")
+                        Text("2nd_Type name of song here ...")
                             .foregroundColor(ColorManager.grey4)
                         .fontWeight(.thin)
 

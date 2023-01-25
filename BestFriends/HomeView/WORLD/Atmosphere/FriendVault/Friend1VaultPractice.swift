@@ -236,12 +236,27 @@ struct Friend1VaultPractice: View {
                     Spacer ()
                         .frame(height: 10)
                 }
-                //
-                //                Text("Send Hug")
-                //                    .font(.system(size: 35))
-                //                    .frame(width:325, height: 30)
-                //                    .foregroundColor(Color.white)
-                //
+                
+//                                Text("Send Hug")
+//                                    .font(.system(size: 35))
+//                                    .frame(width:325, height: 30)
+//                                    .foregroundColor(Color.white)
+//
+                
+                NavigationLink(
+                    destination: SendSongChat2(user: user, friend: friend, friends: friends, groups: groups, friendAtmosphere: friendAtmosphere),
+                    label: {
+                        Text("Send Song - matching their 'Vibe'")
+                            .fontWeight(.thin)
+                            .frame(width: 300, height: 32)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 15))
+                            .background(ColorManager.pmbc_green)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
+
+                
                HStack {
                     
                     ZStack {
@@ -290,11 +305,8 @@ struct Friend1VaultPractice: View {
                         
                         NavigationLink(
                             destination: SendSongChat2(user: user, friend: friend, friends: friends, groups: groups, friendAtmosphere: friendAtmosphere),
-                            
-                            
-//                            destination: BuildFriendPlaylist(user: user, groups: groups, friend: friend, friendAtmosphere: friendAtmosphere),
                             label: {
-                                Text("Send your special Song")
+                                Text("Send Song - match their 'Vibe'")
                                     .fontWeight(.thin)
                                     .frame(width: 170, height: 32)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
