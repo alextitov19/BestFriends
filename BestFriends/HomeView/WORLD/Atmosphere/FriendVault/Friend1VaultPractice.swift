@@ -64,12 +64,12 @@ struct Friend1VaultPractice: View {
                 }
                
                 Text("wants you to know")
-                    .font(.system(size: 20))
+                    .font(.system(size: 17))
                     .fontWeight(.thin)
                     .foregroundColor(ColorManager .grey4)
                 
                 Text("their 'Vibe' just changed")
-                    .font(.system(size: 20))
+                    .font(.system(size: 17))
                     .fontWeight(.thin)
                     .foregroundColor(ColorManager .grey4)
                 
@@ -124,8 +124,8 @@ struct Friend1VaultPractice: View {
                     .foregroundColor(ColorManager .grey4)
                     .opacity(0.60)
                     .submitLabel(.done)
-                    .onReceive(Just(customMessage)) { _ in limitText(65) }
-                    .padding(20)
+                    .onReceive(Just(customMessage)) { _ in limitText(37) }
+                    .padding(57)
                     .overlay(RoundedRectangle(cornerRadius: 10)
                         .stroke(Color.purple)
                         .frame(width: 325, height: 40)
@@ -145,7 +145,7 @@ struct Friend1VaultPractice: View {
                         //                                .opacity(0.5)
                             .background(ColorManager.purple3)
                             .opacity(0.7)
-                            .cornerRadius(15)
+                            .cornerRadius(10)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
 //                    .padding()
