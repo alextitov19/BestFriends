@@ -244,36 +244,44 @@ struct HomeView: View {
                         
                    
                         
-                        Spacer().frame(height: 10)
+                        Spacer()
+                            .frame(height: 33)
                         
                         
                         HStack {
-//                            NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
-//                                           label: {
-//                                Text("Friend wants to 'resolve fight'")
-//                                    .fontWeight(.light)
-//                                    .frame(width: 240, height: 30)
-//                                    .foregroundColor(.white)
-//                                    .background(ColorManager.purple3)
-//                                    .cornerRadius(15)
-//                                    .opacity(0.4)
-//                            })
-                            NavigationLink(destination: SaySomethingNice7(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
-                                           label: {
-                                Text("Friend sent 'Nice' message")
-                                    .fontWeight(.regular)
-                                    .frame(width: 255, height: 30)
-                                    .foregroundColor(.white)
-                                    .background(ColorManager .purple3)
-                                    .cornerRadius(10)
-                                    .opacity(0.7)
-                            })
-
+                            
+                            VStack {
+                                
+                                NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
+                                    Text("Alert - Friend's 'Vibe' changed")
+                                        .fontWeight(.regular)
+                                        .frame(width: 255, height: 30)
+                                        .foregroundColor(.white)
+                                        .background(ColorManager.red)
+                                        .cornerRadius(10)
+                                        .opacity(0.7)
+                                })
+                                
+                                Spacer()
+                                    .frame(height: 15)
+                                
+                                
+                                NavigationLink(destination: SaySomethingNice7(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
+                                               label: {
+                                    Text("Friend sent 'Nice' message")
+                                        .fontWeight(.regular)
+                                        .frame(width: 255, height: 30)
+                                        .foregroundColor(.white)
+                                        .background(ColorManager .purple3)
+                                        .cornerRadius(10)
+                                        .opacity(0.7)
+                                })
+                            }
                         }
                         
                    
                         Spacer()
-                            .frame(height: 10)
+                            .frame(height: 15)
                         
                         HStack {
                             NavigationLink(destination: VirtualHug(),
@@ -288,20 +296,20 @@ struct HomeView: View {
                             })
   
                         }
-                        Spacer().frame(height:10)
+                        Spacer().frame(height:15)
                         
                         
                         HStack {
-                            NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
-                                Text("Alert - Friend's 'Vibe' changed")
-                                    .fontWeight(.regular)
-                                    .frame(width: 255, height: 30)
-                                    .foregroundColor(.white)
-                                    .background(ColorManager.red)
-                                    .cornerRadius(10)
-                                    .opacity(0.7)
-                            })
-                            
+//                            NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
+//                                Text("Alert - Friend's 'Vibe' changed")
+//                                    .fontWeight(.regular)
+//                                    .frame(width: 255, height: 30)
+//                                    .foregroundColor(.white)
+//                                    .background(ColorManager.red)
+//                                    .cornerRadius(10)
+//                                    .opacity(0.7)
+//                            })
+//
                          
                             
 //                            NavigationLink(destination: SendSongPush(user: homeData!.user, friends: homeData!.friends),
@@ -329,7 +337,7 @@ struct HomeView: View {
                         }
 
                         VStack {
-                            Spacer().frame(height:10)
+                          
 //
 //                            NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
 //                                           label: {
