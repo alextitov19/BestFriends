@@ -63,38 +63,39 @@ struct DreamsWeDare: View {
               }
                 
             VStack {
-            
-                    Text("Listen").font(.system(size: 20))
-                    .foregroundColor(Color.blue)
-                    .fontWeight(.light)
-//                    .font(.largeTitle)
-                
-                HStack {
-                    Spacer()
-                    Button(action: {
-                        self.audioPlayer.play()
-                    }) {
-                        Image(systemName: "play.circle.fill").resizable()
-                            .frame(width: 40, height: 40)
-                            .aspectRatio(contentMode: .fit)
-                    }
-                    Spacer()
-                    Button(action: {
-                        self.audioPlayer.pause()
-                    }) {
-                        Image(systemName: "pause.circle.fill").resizable()
-                            .frame(width: 40, height: 40)
-                            .aspectRatio(contentMode: .fit)
-                    }
-                    Spacer()
-                    
-                }
+//
+//                    Text("Listen").font(.system(size: 20))
+//                    .foregroundColor(Color.blue)
+//                    .fontWeight(.light)
+////                    .font(.largeTitle)
+//
+//                HStack {
+//                    Spacer()
+//                    Button(action: {
+//                        self.audioPlayer.play()
+//                    }) {
+//                        Image(systemName: "play.circle.fill").resizable()
+//                            .frame(width: 40, height: 40)
+//                            .aspectRatio(contentMode: .fit)
+//                    }
+//                    Spacer()
+//                    Button(action: {
+//                        self.audioPlayer.pause()
+//                    }) {
+//                        Image(systemName: "pause.circle.fill").resizable()
+//                            .frame(width: 40, height: 40)
+//                            .aspectRatio(contentMode: .fit)
+//                    }
+//                    Spacer()
+//
+//                }
+//            }
+//        .onAppear {
+//            let sound = Bundle.main.path(forResource: "Meena1", ofType: "m4a")
+//            self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+      
             }
-        .onAppear {
-            let sound = Bundle.main.path(forResource: "Meena1", ofType: "m4a")
-            self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
-        }
-                        
+
                         Spacer()
                         .frame(height: 105)
                         
