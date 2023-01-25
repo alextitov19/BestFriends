@@ -297,7 +297,7 @@ struct HomeView: View {
                                     .fontWeight(.regular)
                                     .frame(width: 255, height: 30)
                                     .foregroundColor(.white)
-                                    .background(ColorManager.pmbc_blue)
+                                    .background(ColorManager.orange4)
                                     .cornerRadius(15)
                                     .opacity(0.4)
                             })

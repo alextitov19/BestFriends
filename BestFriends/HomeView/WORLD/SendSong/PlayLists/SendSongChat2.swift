@@ -40,20 +40,20 @@ struct SendSongChat2: View {
                     .fontWeight(.ultraLight)
                     .foregroundColor(ColorManager .grey3)
                     .multilineTextAlignment(.center)
-                    .padding(17)
+                    .padding(30)
                    
               
                 HStack {
                  
                     VStack {
-                        Text("Cool. Just send")
+                        Text("Cool")
                             .font(.system(size: 25))
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
                         
                         
-                        Text("one for comfort")
+                        Text("just send one")
                             .font(.system(size: 25))
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
@@ -118,9 +118,6 @@ struct SendSongChat2: View {
                 )
 
 
-            
-            Spacer()
-                .frame(height: 10)
             
             VStack {
                 Button(action: {
