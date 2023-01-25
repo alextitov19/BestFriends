@@ -213,11 +213,11 @@ struct HomeView: View {
                             chatButtonTapped()
                         }, label: {
                             Text("Create Chat Rooms")
-                                .fontWeight(.regular)
+                                .fontWeight(.light)
                                 .frame(width: 180, height: 30)
                                 .foregroundColor(.white)
-                                .background(ColorManager.purple1)
-                                .cornerRadius(15)
+                                .background(ColorManager.purple3)
+                                .cornerRadius(10)
                                 .opacity(0.8)
                         })
                         
@@ -254,9 +254,9 @@ struct HomeView: View {
                                 
                                 NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
                                     Text("Alert - Friend's 'Vibe' changed")
-                                        .fontWeight(.regular)
+                                        .fontWeight(.light)
                                         .frame(width: 255, height: 30)
-                                        .foregroundColor(.white)
+                                        .foregroundColor(ColorManager .grey1)
                                         .background(ColorManager.red)
                                         .cornerRadius(10)
                                         .opacity(0.7)
@@ -269,7 +269,7 @@ struct HomeView: View {
                                 NavigationLink(destination: SaySomethingNice7(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
                                                label: {
                                     Text("Friend sent 'Nice' message")
-                                        .fontWeight(.regular)
+                                        .fontWeight(.light)
                                         .frame(width: 255, height: 30)
                                         .foregroundColor(.white)
                                         .background(ColorManager .purple3)
@@ -287,7 +287,7 @@ struct HomeView: View {
                             NavigationLink(destination: VirtualHug(),
                                            label: {
                                 Text("Awe, you've got a HUG")
-                                    .fontWeight(.regular)
+                                    .fontWeight(.light)
                                     .frame(width: 255, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager .purple3)
@@ -352,8 +352,8 @@ struct HomeView: View {
                             
                             NavigationLink(destination: SendSongPush(user: homeData!.user, friends: homeData!.friends),
                                            label: {
-                                Text("Oh, Look! I found new music")
-                                    .fontWeight(.regular)
+                                Text("Oh, Look!  I found new music")
+                                    .fontWeight(.light)
                                     .frame(width: 255, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
