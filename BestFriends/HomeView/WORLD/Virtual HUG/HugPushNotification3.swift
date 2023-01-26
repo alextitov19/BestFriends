@@ -75,10 +75,10 @@ struct HugPushNotification3: View {
                 
                 HStack {
                     VStack {
-                        
-                        Text("Wow,")
-                            .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .purple7)
+//                        
+//                        Text("Wow,")
+//                            .font(.system(size: 35, weight: .ultraLight))
+//                            .foregroundColor(ColorManager .purple7)
                         
                         
 //                        Text("I could")
@@ -87,9 +87,9 @@ struct HugPushNotification3: View {
                         
                     }
                     
-                    Image("BushGirl")
+                    Image("BushGirl2 1")
                         .resizable()
-                        .frame(width: 200, height: 200)
+                        .frame(width: 300, height: 200)
                 }
              
          

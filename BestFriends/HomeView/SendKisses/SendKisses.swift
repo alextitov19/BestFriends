@@ -88,7 +88,7 @@ struct SendKisses: View {
                         
                     }
                     
-                    Image("girlwalking250")
+                    Image("BalloonGuy")
                         .resizable()
                         .frame(width: 200, height: 200)
                 }
@@ -229,9 +229,9 @@ struct SendKisses: View {
 
                         
                         VStack {
-                            
-                            Spacer()
-                                .frame(height: 30)
+                            Image("Heart2")
+                                .resizable()
+                                .frame(width: 300, height: 200)
                    
                         }
                         
@@ -239,11 +239,11 @@ struct SendKisses: View {
                         
                         }
                     
-                    
-                    
-                
-                    Spacer()
-                        .frame(height: 100)
+//                    
+//                    
+//                
+//                    Spacer()
+//                        .frame(height: 130)
                     
                 }
                 

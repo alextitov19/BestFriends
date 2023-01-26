@@ -64,7 +64,7 @@ struct Apologies4: View {
                                 .foregroundColor(ColorManager .grey3)
                                 .multilineTextAlignment(.center)
                            
-                            Image("CoolGuy")
+                            Image("BluePants")
                                 .resizable()
                                 .frame(width: 150, height: 150)
                             
