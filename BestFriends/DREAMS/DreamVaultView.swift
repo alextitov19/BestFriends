@@ -132,7 +132,7 @@ struct DreamVaultView: View {
                         print("tap function is working")
                     }
                     
-                    .animation(Animation.easeInOut(duration: 3.0), value: showItems)
+                    .animation(Animation.easeInOut(duration: 3.5), value: showItems)
                     
                 }
             }
