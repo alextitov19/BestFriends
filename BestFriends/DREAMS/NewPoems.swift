@@ -79,22 +79,22 @@ struct NewPoems: View {
                 HStack {
                     
 //                MARK: The [All] button is not activated. When tap nothing comes up in the bottom output screen
-                    if friends.count > 1 {
-                        Button(action: {
-                            
-                        },
-                               label: {
-                            Text("select >")
-                                .fontWeight(.thin)
-//                                .fontWeight(.bold)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 20))
-                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
-                    }
+//                    if friends.count > 1 {
+//                        Button(action: {
+//
+//                        },
+//                               label: {
+//                            Text("select >")
+//                                .fontWeight(.thin)
+////                                .fontWeight(.bold)
+//                                .frame(width: 100, height: 30)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 20))
+//                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+//                                .cornerRadius(25)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        })
+//                    }
                     if friends.count > 0 {
                         RectView(user: user, friend: friends[0], color: colors[0])
                             .onTapGesture(perform: {
@@ -188,7 +188,7 @@ struct NewPoems: View {
                         .background(shareColor)
                         .cornerRadius(15)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        .alert("Push Notifications sent successfully", isPresented: $showingAlert) {
+                        .alert("Just shared the poem with friends", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
 
@@ -196,21 +196,21 @@ struct NewPoems: View {
                     
                     Spacer ()
                         .frame(height: 45)
-                    
-                    
-                    Button(action: {
-                        sessionManager.showLogin()
-                    },
-                        label: {
-                            Text("Home / Chat")
-                                .fontWeight(.thin)
-                                .frame(width: 200, height: 40)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
+//
+//
+//                    Button(action: {
+//                        sessionManager.showLogin()
+//                    },
+//                        label: {
+//                            Text("Home / Chat")
+//                                .fontWeight(.thin)
+//                                .frame(width: 200, height: 40)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 30))
+//                                .background(ColorManager.purple3)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        })
                     
                     Spacer()
                         .frame(height: 70)
@@ -237,7 +237,7 @@ struct NewPoems: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent you a message in chat!", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) shared a new Dream Poem with you - go to Dreams feature and check it out!", APNToken: f.APNToken)
                 }
             }
         }
@@ -245,20 +245,36 @@ struct NewPoems: View {
         showingAlert = true
     }
     
+    
     struct RectView: View {
         let user: User
         let friend: User
         let color: Color
         
         var body: some View {
-                Text(friend.firstName + " " + String(friend.lastName.first!))
-                    .fontWeight(.bold)
-                    .frame(width: 100, height: 30)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 10))
-                    .background(color)
-                    .cornerRadius(25)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+            Text(friend.firstName + " " + String(friend.lastName.first!))
+                .fontWeight(.bold)
+                .frame(width: 90, height: 90)
+                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                .font(.system(size: 8))
+                .background(color)
+                .cornerRadius(75)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+    
+//    struct RectView: View {
+//        let user: User
+//        let friend: User
+//        let color: Color
+//
+//        var body: some View {
+//                Text(friend.firstName + " " + String(friend.lastName.first!))
+//                    .fontWeight(.bold)
+//                    .frame(width: 100, height: 30)
+//                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                    .font(.system(size: 10))
+//                    .background(color)
+//                    .cornerRadius(25)
+//                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
         }
     }
     
