@@ -225,7 +225,7 @@ struct HomeView: View {
              
                     
                     Spacer()
-                        .frame(height: 20)
+                        .frame(height: 0)
                
                     
                     if selectedPlanet != nil {
@@ -245,7 +245,7 @@ struct HomeView: View {
                    
                         
                         Spacer()
-                            .frame(height: 33)
+                            .frame(height: 20)
                         
                         
                         HStack {
@@ -366,6 +366,18 @@ struct HomeView: View {
                                     .opacity(0.7)
                             })
                             
+                            Spacer()
+                                .frame(height: 15)
+
+                                Text("Hide Dropdown, tap friend's planet")
+                                    .fontWeight(.light)
+                                    .frame(width: 310, height: 30)
+                                    .foregroundColor(.white)
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(10)
+                                    .opacity(0.7)
+                            
+                            
                             
                         }
                         
@@ -373,7 +385,7 @@ struct HomeView: View {
                         
                         
                         Spacer()
-                            .frame(height: 260)
+                            .frame(height: 150)
                         
                     }
                     
