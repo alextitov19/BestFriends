@@ -249,11 +249,7 @@ struct MyRoomInfo: View {
                     
                 }
                 
-                VStack {
-                    
-                
-                
-            }
+            
         }
     }
 }

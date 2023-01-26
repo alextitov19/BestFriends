@@ -88,7 +88,7 @@ struct SendKisses: View {
                         
                     }
                     
-                    Image("Penguin Sticker 38")
+                    Image("girlwalking250")
                         .resizable()
                         .frame(width: 200, height: 200)
                 }

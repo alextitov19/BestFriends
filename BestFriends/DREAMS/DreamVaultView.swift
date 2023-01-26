@@ -40,22 +40,23 @@ struct DreamVaultView: View {
                 .blendMode(.screen)
             
             
-            ZStack {
+            
                 
                 //            NavigationLink(destination: BeSinger(user: user), label: { WhoFightingCircle (color: .orange, friendName: "'I' wanna \nbe a \nsinger")
                 //            })
                 //                .offset(x: showItems ? 150 : 0, y: showItems ? -140: 0)
                 
-                NavigationLink(destination: DreamSteps(), label: { WhoFightingCircle (color: .orange, friendName: "dream \nsteps")
-                })
-                .offset(x: showItems ? 0 : 0, y: showItems ? 250: 0)
+                //                NavigationLink(destination: DreamSteps(), label: { WhoFightingCircle (color: .orange, friendName: "dream \nsteps")
+                //                })
+                //                .offset(x: showItems ? 0 : 0, y: showItems ? 250: 0)
                 
-             
-                    //            NavigationLink(destination: HorizonHomeView(user: user, friends: friends, atmosphere: atmosphere), label: {
-                    //                WhoFightingCircle (color: Color .green, friendName: "Let's \nDo This")
-                    //            })
-                    //                .offset(x: showItems ? 0 : 0, y: showItems ? 290: 0)
-                    
+                
+                //            NavigationLink(destination: HorizonHomeView(user: user, friends: friends, atmosphere: atmosphere), label: {
+                //                WhoFightingCircle (color: Color .green, friendName: "Let's \nDo This")
+                //            })
+                //                .offset(x: showItems ? 0 : 0, y: showItems ? 290: 0)
+                
+                ZStack {
                     
                     NavigationLink(destination: DreamMap(), label: { WhoFightingCircle (color: ColorManager.purple1, friendName: "passing \nthe next \nstar")
                     })
@@ -80,7 +81,7 @@ struct DreamVaultView: View {
                     .offset(x: showItems ? 50 : 0, y: showItems ? -190: 0)
                     
                     NavigationLink(destination: NewPoems(user: user, friends: friends, groups: groups), label: {
-                        WhoFightingCircle (color: ColorManager.orange2, friendName: "new poems")
+                        WhoFightingCircle (color: ColorManager.orange2, friendName: "new poems \ncoming \nsoon")
                     })
                     .offset(x: showItems ? -120 : 0, y: showItems ? -190: 0)
                     
@@ -90,8 +91,8 @@ struct DreamVaultView: View {
                     .offset(x: showItems ? 150 : 0, y: showItems ? -270: 0)
                     
                     
-            
-                    ZStack {
+                    
+//                    ZStack {
                         
                         Image(systemName: "rectangle.fill")
                             .resizable()
@@ -164,9 +165,10 @@ struct DreamVaultView: View {
                 
             }
         }
-    }
     
     
     
     
-
+    
+    
+//}
