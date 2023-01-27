@@ -296,7 +296,7 @@ struct HomeView: View {
                             })
   
                         }
-                        Spacer().frame(height:15)
+                       
                         
                         
                         HStack {
@@ -354,22 +354,22 @@ struct HomeView: View {
                             
 //                            DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups
                             
-                            
-                            NavigationLink(destination: DreamVaultView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                                           label: {
-                                Text("Dreams we dare but whisper")
-                                    .fontWeight(.light)
-                                    .frame(width: 255, height: 30)
-                                    .foregroundColor(.white)
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(10)
-                                    .opacity(0.7)
-                            })
+//
+//                            NavigationLink(destination: DreamVaultView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+//                                           label: {
+//                                Text("Dreams we dare but whisper")
+//                                    .fontWeight(.light)
+//                                    .frame(width: 255, height: 30)
+//                                    .foregroundColor(.white)
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(10)
+//                                    .opacity(0.7)
+//                            })
                             
                             Spacer()
-                                .frame(height: 15)
+                                .frame(height: 20)
 
-                                Text("Hide the dropdown_tap friend's planet")
+                                Text("Hide dropdown_tap friend's planet")
                                     .fontWeight(.light)
                                     .frame(width: 310, height: 30)
                                     .foregroundColor(.white)
