@@ -210,9 +210,9 @@ struct HomeView: View {
                         Button(action: {
                             chatButtonTapped()
                         }, label: {
-                            Text("Create new Chat rooms")
+                            Text("create Chat rooms - see SetUp")
                                 .fontWeight(.light)
-                                .frame(width: 200, height: 30)
+                                .frame(width: 255, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager .purple7)
                                 .cornerRadius(10)
@@ -252,7 +252,7 @@ struct HomeView: View {
                             VStack {
                                 
                                 NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
-                                    Text("Alert - friend's 'Vibe' changed")
+                                    Text("ALERT - friend's 'Vibe' changed")
                                         .fontWeight(.light)
                                         .frame(width: 255, height: 30)
                                         .foregroundColor(.white)
@@ -268,7 +268,7 @@ struct HomeView: View {
                                 
                                 NavigationLink(destination: SaySomethingNice7(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
                                                label: {
-                                    Text("Friend sent 'Nice' message")
+                                    Text("friend sent 'Nice' message")
                                         .fontWeight(.light)
                                         .frame(width: 255, height: 30)
                                         .foregroundColor(.white)
@@ -287,7 +287,7 @@ struct HomeView: View {
                         HStack {
                             NavigationLink(destination: VirtualHug(),
                                            label: {
-                                Text("Awe, you've got a HUG")
+                                Text("awe, you've got a HUG")
                                     .fontWeight(.light)
                                     .frame(width: 255, height: 30)
                                     .foregroundColor(.white)
@@ -379,7 +379,7 @@ struct HomeView: View {
 //                                    .cornerRadius(10)
 //                                    .opacity(0.7)
 //
-                            Text("Hide dropdown - tap friend's planet")
+                            Text("hide dropdown - tap friend's planet")
                                 .font(.system(size: 15))
                                 .italic()
     //                            .foregroundColor(ColorManager .grey2)
