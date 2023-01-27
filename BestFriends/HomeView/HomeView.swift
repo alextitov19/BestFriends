@@ -77,7 +77,7 @@ struct HomeView: View {
                             .background(Color .black)
                           .cornerRadius(10)
                           .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                          .opacity(0.40)
+                          .opacity(0.30)
                     
                         Spacer()
                             .frame(height: 100)
@@ -210,13 +210,14 @@ struct HomeView: View {
                         Button(action: {
                             chatButtonTapped()
                         }, label: {
-                            Text("Create Chat Rooms")
+                            Text("Create new Chat rooms")
                                 .fontWeight(.light)
-                                .frame(width: 180, height: 30)
+                                .frame(width: 255, height: 30)
                                 .foregroundColor(.white)
-                                .background(ColorManager.purple3)
+                                .background(ColorManager .purple7)
                                 .cornerRadius(10)
-                                .opacity(0.8)
+                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                .opacity(0.5)
                         })
                         
                     }
@@ -251,13 +252,14 @@ struct HomeView: View {
                             VStack {
                                 
                                 NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
-                                    Text("Alert - Friend's 'Vibe' changed")
+                                    Text("Alert - friend's 'Vibe' changed")
                                         .fontWeight(.light)
                                         .frame(width: 255, height: 30)
-                                        .foregroundColor(ColorManager .grey1)
-                                        .background(ColorManager.red)
+                                        .foregroundColor(.white)
+                                        .background(ColorManager .pmbc_pink)
                                         .cornerRadius(10)
-                                        .opacity(0.7)
+                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                        .opacity(0.5)
                                 })
                                 
                                 Spacer()
@@ -270,9 +272,10 @@ struct HomeView: View {
                                         .fontWeight(.light)
                                         .frame(width: 255, height: 30)
                                         .foregroundColor(.white)
-                                        .background(ColorManager .purple3)
+                                        .background(ColorManager .purple7)
                                         .cornerRadius(10)
-                                        .opacity(0.7)
+                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                        .opacity(0.5)
                                 })
                             }
                         }
@@ -288,9 +291,10 @@ struct HomeView: View {
                                     .fontWeight(.light)
                                     .frame(width: 255, height: 30)
                                     .foregroundColor(.white)
-                                    .background(ColorManager .purple3)
+                                    .background(ColorManager .purple7)
                                     .cornerRadius(10)
-                                    .opacity(0.7)
+                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                    .opacity(0.5)
                             })
   
                         }
@@ -365,17 +369,29 @@ struct HomeView: View {
 //                            })
                             
                             Spacer()
-                                .frame(height: 20)
+                                .frame(height: 15)
 
-                                Text("Hide dropdown_tap friend's planet")
-                                    .fontWeight(.light)
-                                    .frame(width: 310, height: 30)
-                                    .foregroundColor(.white)
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(10)
-                                    .opacity(0.7)
-                            
-                            
+//                                Text("Hide dropdown_tap friend's planet")
+//                                    .fontWeight(.light)
+//                                    .frame(width: 310, height: 30)
+//                                    .foregroundColor(.white)
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(10)
+//                                    .opacity(0.7)
+//
+                            Text("Hide dropdown_tap friend's planet")
+                                .font(.system(size: 15))
+                                .italic()
+    //                            .foregroundColor(ColorManager .grey2)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                                .frame(width: 255, height: 30)
+                                .foregroundColor(.white)
+                                .font(.system(size: 20))
+                                .background(ColorManager .purple7)
+                              .cornerRadius(10)
+                              .shadow(color: Color(.white), radius: 1, x: 0, y: 2.5)
+                              .opacity(0.30)
                             
                         }
                         
