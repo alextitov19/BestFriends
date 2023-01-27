@@ -65,24 +65,22 @@ struct HomeView: View {
                 
             
                     VStack {
-//                        Text("got notification - tap friend's planet")
-//                            .font(.system(size: 15))
-//                            .italic()
-////                            .foregroundColor(ColorManager .grey2)
-//                            .fontWeight(.thin)
-//                            .multilineTextAlignment(.center)
-//                 
-//                        
-//                            .frame(width: 290, height: 30)
-//                            .foregroundColor(.white)
-//                            .font(.system(size: 20))
-//                            .background(Color .black)
-//                          .cornerRadius(15)
-//                          .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                          .opacity(0.70)
-//                    
-//                        Spacer()
-//                            .frame(height: 50)
+                        Text("got notification - tap friend's planet")
+                            .font(.system(size: 15))
+                            .italic()
+//                            .foregroundColor(ColorManager .grey2)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                            .frame(width: 270, height: 30)
+                            .foregroundColor(.white)
+                            .font(.system(size: 20))
+                            .background(Color .black)
+                          .cornerRadius(10)
+                          .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                          .opacity(0.40)
+                    
+                        Spacer()
+                            .frame(height: 100)
                     HStack {
                         
                         if planets.count > 0 && !focusPlanet {
@@ -536,9 +534,7 @@ struct HomeView: View {
                 sessionManager.showChat(user: homeData!.user, group: group)
             }
             
-            
-//            Spacer()
-//                .frame(height: 100)
+       
             
         }
     }
