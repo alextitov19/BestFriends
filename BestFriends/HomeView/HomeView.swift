@@ -212,7 +212,7 @@ struct HomeView: View {
                         }, label: {
                             Text("Create new Chat rooms")
                                 .fontWeight(.light)
-                                .frame(width: 255, height: 30)
+                                .frame(width: 200, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager .purple7)
                                 .cornerRadius(10)
@@ -379,7 +379,7 @@ struct HomeView: View {
 //                                    .cornerRadius(10)
 //                                    .opacity(0.7)
 //
-                            Text("Hide dropdown_tap friend's planet")
+                            Text("Hide dropdown - tap friend's planet")
                                 .font(.system(size: 15))
                                 .italic()
     //                            .foregroundColor(ColorManager .grey2)
