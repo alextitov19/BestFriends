@@ -369,7 +369,7 @@ struct HomeView: View {
                             Spacer()
                                 .frame(height: 15)
 
-                                Text("Hide Dropdown, tap friend's planet")
+                                Text("Hide the dropdown_tap friend's planet")
                                     .fontWeight(.light)
                                     .frame(width: 310, height: 30)
                                     .foregroundColor(.white)
