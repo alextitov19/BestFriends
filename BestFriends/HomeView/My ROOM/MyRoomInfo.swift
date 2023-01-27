@@ -33,14 +33,14 @@ struct MyRoomInfo: View {
             ColorManager.purple7
                 .ignoresSafeArea()
                 .onAppear()
-            
-            Image("blueBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-                .opacity(0.5)
-            
-           
+//            
+//            Image("blueBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+//                .opacity(0.5)
+//            
+//           
 
             
             AdPlayerView(name: "MyRoom5")
@@ -72,9 +72,6 @@ struct MyRoomInfo: View {
                 NavigationLink(destination: HugPushNotification3(user: user, friends: friends), label: {
                     MyRoomCircle (color: ColorManager .grey1, friendName: "I need a \n Hug")
                 })
-//                NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
-//                    HugCircle (color: ColorManager .grey4, friendName: "send a \nHomie")
-//                })
                 .offset(x: showItems ? 0 : 0, y: showItems ? -170: 0)
                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
                 .opacity(0.25)
@@ -99,13 +96,7 @@ struct MyRoomInfo: View {
                     .offset(x: showItems ? 100 : 0, y: showItems ? -250: 0)
                     .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
                     .opacity(0.4)
-                    
-                    
-                
-                
-                
-                
-                
+               
 
 //
 //                    NavigationLink(destination:   SendSongPush(user: user, friends: friends),
@@ -115,34 +106,16 @@ struct MyRoomInfo: View {
 //                    .offset(x: showItems ? -125 : 0, y: showItems ? 260: 0)
 //                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
 //
-//
-//
-//                    NavigationLink(destination: EmptyView(), label: {
-//                        MyRoomCircle (color: ColorManager .grey1, friendName: "Friendship \nFeed \n2023)")
-//                    })
-//                    .offset(x: showItems ? -120 : 0, y: showItems ? 150: 0)
-//                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
-////                 \
+            
                     
-                    
-//
-//                    NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
-//                        MyRoomCircle (color: ColorManager.grey1, friendName: "DreamVault \n(preview)")
-//                    })
-//                    .offset(x: showItems ? 0 : 0, y: showItems ? 240: 0)
-//                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
-//
-////
-////
-//                    
-//                    
-//                    
-//                    NavigationLink(destination: EmptyView(), label: {
-//                        MyRoomCircle (color: ColorManager .grey2, friendName: "FriendGroup \nGallery \n(coming \n2023)")
-//                    })
-//                    .offset(x: showItems ? -75 : 0, y: showItems ? 160: 0)
-//                    .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
-                    
+
+                    NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
+                        MyRoomCircle (color: Color .white, friendName: "my \nDreamVault")
+                    })
+                    .offset(x: showItems ? 0 : 0, y: showItems ? 170: 0)
+                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
+                    .opacity(0.4)
+                
                     
                     
                     NavigationLink(destination: EmptyView(), label: {
