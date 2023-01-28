@@ -364,7 +364,7 @@ struct PlanetActionsView: View {
                                     .opacity(0.80)
                                 VStack {
 
-                                    Image("iconVibe75")
+                                    Image("iconVibe8")
 
                                 }
                             }

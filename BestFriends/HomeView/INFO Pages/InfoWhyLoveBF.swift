@@ -39,7 +39,7 @@ struct InfoWhyLoveFB: View {
                 
            
 
-                Text("With 5 closest friends you get & offer help \non difficult days while building stronger \nfriendships sharing ‘Emotions Adventures’ \nall on a safer platform")
+                Text("With 5 closest friends you get & offer help \non difficult days while building stronger \nfriendships & sharing ‘Emotions Adventures’ \nall on a safer platform")
                     .font(.system(size: 17))
 
                     .fontWeight(.light)
