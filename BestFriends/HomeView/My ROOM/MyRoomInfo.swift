@@ -87,7 +87,14 @@ struct MyRoomInfo: View {
                 .opacity(0.25)
                 
                 
-                
+                NavigationLink(destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends), label: {
+                    MyRoomCircle (color: Color .white, friendName: "'Vibe' \nTracker")
+                })
+                .offset(x: showItems ? -100 : 0, y: showItems ? -300: 0)
+                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                .opacity(0.4)
+           
+
                 
                     
                     NavigationLink(destination: MyFears(user: user, friends: friends), label: {

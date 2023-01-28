@@ -20,7 +20,7 @@ struct FriendVaultTrackMoods: View {
     
     var body: some View {
         ZStack {
-            ColorManager.purple1
+            ColorManager.grey2
                 .ignoresSafeArea()
                 .onAppear(perform: loadData)
             
