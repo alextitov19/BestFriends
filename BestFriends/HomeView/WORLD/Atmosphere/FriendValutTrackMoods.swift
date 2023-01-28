@@ -20,9 +20,27 @@ struct FriendVaultTrackMoods: View {
     
     var body: some View {
         ZStack {
-            ColorManager.grey2
-                .ignoresSafeArea()
-                .onAppear(perform: loadData)
+//            ColorManager.grey2
+//                .ignoresSafeArea()
+//                .onAppear(perform: loadData)
+            
+//            ColorManager.purple7
+//                .ignoresSafeArea()
+//                .onAppear()
+//
+//            AdPlayerView(name: "MyRoom5")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+            
+            ColorManager .purple7
+                 .ignoresSafeArea()
+                 .onAppear{ loadData() }
+                 .scaledToFill()
+
+                     
+            AdPlayerView(name: "MyRoom5")
+                          .ignoresSafeArea()
+                           .blendMode(.screen)
             
             VStack {
                 Text("My daily 'Vibes'")
@@ -36,9 +54,10 @@ struct FriendVaultTrackMoods: View {
                     ForEach(moodLogs, id: \.id) { moodLog in
                         ZStack {
                             if moodLog.mood < 4 {
-//                                Color(.systemCyan)
-                                ColorManager .pmbc_blue
+                                Color(.systemCyan)
+//                                ColorManager .
                                     .cornerRadius(25)
+                                    .opacity(0.50)
                             } else if moodLog.mood == 4 {
 //                                Color(.systemGreen)
                                 ColorManager .pmbc_green
@@ -48,9 +67,10 @@ struct FriendVaultTrackMoods: View {
                                 ColorManager .orange5
                                     .cornerRadius(25)
                             } else {
-//                                Color(.systemYellow)
-                                ColorManager .orange3
+                               Color(.systemYellow)
+//                                ColorManager .orange3
                                     .cornerRadius(25)
+                                    .opacity(0.50)
                             }
                             
                             VStack{
