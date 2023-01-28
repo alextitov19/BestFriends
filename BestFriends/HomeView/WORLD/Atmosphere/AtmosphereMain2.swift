@@ -232,7 +232,7 @@ struct AtmosphereMain2: View {
                             mood = 7
                         }) {
                             
-                            Text("Found new \nmusic")
+                            Text("Happy \nToday")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }

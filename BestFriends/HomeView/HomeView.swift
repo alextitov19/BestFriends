@@ -80,7 +80,7 @@ struct HomeView: View {
                           .opacity(0.30)
                     
                         Spacer()
-                            .frame(height: 100)
+                            .frame(height: 50)
                     HStack {
                         
                         if planets.count > 0 && !focusPlanet {
