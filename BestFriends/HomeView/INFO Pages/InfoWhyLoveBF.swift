@@ -36,13 +36,22 @@ struct InfoWhyLoveFB: View {
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey2)
+                
+           
 
-//                Text("BestFriends")
-//                    .font(.system(size: 35))
-//
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//                    .foregroundColor(ColorManager.grey2)
+                Text("With 5 closest friends you get & offer help \non difficult days while building stronger \nfriendships sharing ‘Emotions Adventures’ \nall on a safer platform")
+                    .font(.system(size: 17))
+
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.grey2)
+              
+//                    .padding(25)
+                
+                
+                
+                
+                
                 ZStack {
 
 
@@ -57,9 +66,9 @@ struct InfoWhyLoveFB: View {
 
                     VStack {
 
-
-                        Spacer ()
-                            .frame(height: 60)
+//
+//                        Spacer ()
+//                            .frame(height: 30)
                         
                         Text("BestFriends was designed")
                             .italic()
@@ -120,7 +129,7 @@ struct InfoWhyLoveFB: View {
 
 
                            Spacer ()
-                                .frame(height: 100)
+                                .frame(height: 30)
 
                     }
                 }
