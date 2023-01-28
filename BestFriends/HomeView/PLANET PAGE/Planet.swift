@@ -294,11 +294,11 @@ struct PlanetActionsView: View {
 //                        Spacer()
 //                            .frame(height: 5)
 //                        
-//                                    Text("TAP")
-//                                        .foregroundColor(Color .green)
-//                                        .font(.system(size: 20, weight: .light))
-//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                        .opacity(0.90)
+                                    Text("tap")
+                                        .foregroundColor(Color .green)
+                                        .font(.system(size: 15, weight: .light))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.90)
 
                         
                         
