@@ -256,14 +256,11 @@ struct PlanetActionsView: View {
                                     
                                     Text("where the")
                                         .foregroundColor(.white)
-                                        .italic()
+                                    
                                         .font(.system(size: 17, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
-                        
-                        Spacer()
-                            .frame(height: 5)
-                                    
+                   
 //                        Text("WORLD")
 //                            .foregroundColor(.white)
 //                            .font(.system(size: 20, weight: .bold))
@@ -294,14 +291,14 @@ struct PlanetActionsView: View {
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                             .opacity(0.50)
                         
-                        Spacer()
-                            .frame(height: 5)
-                        
-                                    Text("TAP")
-                                        .foregroundColor(Color .green)
-                                        .font(.system(size: 30, weight: .light))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.90)
+//                        Spacer()
+//                            .frame(height: 5)
+//                        
+//                                    Text("TAP")
+//                                        .foregroundColor(Color .green)
+//                                        .font(.system(size: 20, weight: .light))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.90)
 
                         
                         
