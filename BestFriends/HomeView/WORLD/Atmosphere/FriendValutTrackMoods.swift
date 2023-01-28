@@ -43,7 +43,7 @@ struct FriendVaultTrackMoods: View {
                            .blendMode(.screen)
             
             VStack {
-                Text("My daily 'Vibes'")
+                Text("my daily 'Vibes'")
                     .font(.system(size: 30, weight: .light))
                     .foregroundColor(ColorManager .purple4)
                 
