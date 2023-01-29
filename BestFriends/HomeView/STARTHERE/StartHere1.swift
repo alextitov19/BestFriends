@@ -57,7 +57,7 @@ struct StartHere1: View {
                 
                 
                 NavigationLink(destination: InviteView(user: user), label: {
-                    StartHereCircle (color: ColorManager.pmbc_green, friendName: "ADD \nfive \nFriends")
+                    StartHereCircle (color: ColorManager.pmbc_green, friendName: "ADD \nup to 5 \nFriends")
                 })
                 .offset(x: showItems ? -90 : 0, y: showItems ? -270: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
@@ -115,16 +115,12 @@ struct StartHere1: View {
                     
 
                     Spacer ()
-                        .frame(height: 340)
+                        .frame(height: 290)
                     
                     
                     VStack {
                         
-                        Text("TAP")
-                            .foregroundColor(Color .green)
-                            .font(.system(size: 42, weight: .light))
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            .opacity(0.90)
+                   
                         
                         Text("'settings'")
                             .font(.system(size: 20))
@@ -144,6 +140,12 @@ struct StartHere1: View {
                             .foregroundColor(ColorManager .grey4)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
+                        
+                        Text("TAP")
+                            .foregroundColor(Color .green)
+                            .font(.system(size: 42, weight: .light))
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            .opacity(0.90)
                         
                         
 //                        Text("'who's using BestFriends'")
