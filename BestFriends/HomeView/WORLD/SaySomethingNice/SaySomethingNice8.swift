@@ -88,22 +88,43 @@ struct SaySomethingNice8: View {
                     .foregroundColor(ColorManager .grey3)
                     .multilineTextAlignment(.center)
                 
+                Text("saying something")
+                    .font(.system(size: 20))
+                
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(ColorManager .grey3)
+                    .multilineTextAlignment(.center)
+                
                 HStack {
                     
-                    
-                    Text("Saying \nsomething \n'Nice'")
-                        .font(.system(size: 30))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(ColorManager .grey3)
-                        .multilineTextAlignment(.center)
-                    
+                    VStack {
+//                    Text("Saying something")
+//                        .font(.system(size: 30))
+//                        .fontWeight(.ultraLight)
+//                        .foregroundColor(ColorManager .grey3)
+//                        .multilineTextAlignment(.center)
+                        
+                        Text("'Nice'")
+                            .font(.system(size: 30))
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager .grey3)
+                            .multilineTextAlignment(.center)
+                
+                        Text("something 'Positive'")
+                            .font(.system(size: 30))
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager .grey3)
+                            .multilineTextAlignment(.center)
+                        
+                    }
                     Image("girlwalking250")
                         .resizable()
                         .frame(width: 150, height: 150)
                     
                 }
                 
-                
+                Spacer()
+                    .frame(height: 25)
                 
                 VStack {
                     // MARK: End of feeling buttons
