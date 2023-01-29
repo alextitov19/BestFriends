@@ -65,13 +65,13 @@ struct HomeView: View {
                 
             
                     VStack {
-                        Text("got notification - tap friend's planet")
+                        Text("received notification - tap friend's planet")
                             .font(.system(size: 15))
                             .italic()
 //                            .foregroundColor(ColorManager .grey2)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
-                            .frame(width: 270, height: 30)
+                            .frame(width: 280, height: 30)
                             .foregroundColor(.white)
                             .font(.system(size: 20))
                             .background(Color .black)

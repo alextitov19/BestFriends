@@ -45,7 +45,7 @@ struct INFOMainHowWorks: View {
                     .foregroundColor(ColorManager.purple3)
                 
                 
-                Text("'Emotional' Adventures")
+                Text("Emotional Adventures")
                     .font(.system(size: 25))
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
