@@ -76,12 +76,12 @@ struct HugPushNotification3: View {
                 HStack {
                     VStack {
                         
-                        Text("ouch")
+                        Text("hey")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple7)
                         
                         
-                        Text("")
+                        Text("guys")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple7)
                         
