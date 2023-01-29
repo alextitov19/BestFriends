@@ -13,7 +13,13 @@ import AVKit
 
 struct InfoWhyLoveFB: View {
 
+
+    
     let user: User
+    let atmosphere: Atmosphere
+    let friends: [User]
+    let friendAtmospheres: [Atmosphere]
+    let groups: [Group]
 
     var body: some View {
 
@@ -115,7 +121,7 @@ struct InfoWhyLoveFB: View {
                         
                         
                          NavigationLink(
-                            destination: INFOMainHowWorks(user: user),
+                            destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
                                 Text("a peak Inside")
                                     .fontWeight(.thin)

@@ -15,7 +15,13 @@ struct INFOMainHowWorks: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
+//    let user: User
     let user: User
+    let atmosphere: Atmosphere
+    let friends: [User]
+    let friendAtmospheres: [Atmosphere]
+    let groups: [Group]
+ 
     
 
     
@@ -313,11 +319,11 @@ struct INFOMainHowWorks: View {
                         Spacer()
                             .frame(height: 50)
                         
-
-                        
+//                        StartHere1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
+//                        InviteView(user: user
                         NavigationLink(
                             
-                            destination: InviteView(user: user),
+                            destination: StartHere1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
                                 Text("Invite (up to) 5 Friends")
                                     .fontWeight(.light)

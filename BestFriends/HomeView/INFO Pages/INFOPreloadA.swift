@@ -13,11 +13,18 @@ import AVKit
 
 struct INFOPreloadA: View {
     
+//    let user: User
+//    let friends: [User]
+//    let groups: [Group]
+
     let user: User
+    let atmosphere: Atmosphere
     let friends: [User]
+    let friendAtmospheres: [Atmosphere]
     let groups: [Group]
-    //    let atmosphere: Atmosphere
-    //
+    
+    
+    
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
     
@@ -59,7 +66,7 @@ struct INFOPreloadA: View {
 //                .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
 //                
                 
-                NavigationLink(destination: INFOMainHowWorks(user: user), label: {
+                NavigationLink(destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
                     InfoCircle (color: ColorManager .pmbc_green, friendName: "How World \nFriendGroups \nworks \n\nmore...")
                 })
                 .offset(x: showItems ? 30 : 0, y: showItems ? -310: 0)

@@ -238,7 +238,7 @@ struct PlanetActionsView: View {
 //                        INFOPreloadA(user: user, friends: friends, groups: groups)
                         
                         
-                        NavigationLink(destination: InfoWhyLoveFB(user: user),
+                        NavigationLink(destination: InfoWhyLoveFB(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
                             ZStack {
                                 Circle()
