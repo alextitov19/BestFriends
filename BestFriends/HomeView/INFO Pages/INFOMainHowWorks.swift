@@ -229,7 +229,7 @@ struct INFOMainHowWorks: View {
                             NavigationLink(
                                 destination: InfoPushNotifications(user: user),
                                 label: {
-                                    Text("Nice")
+                                    Text("Something Nice")
                                         .fontWeight(.thin)
                                         .frame(width: 200, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

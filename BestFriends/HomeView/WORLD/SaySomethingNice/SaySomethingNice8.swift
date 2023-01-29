@@ -81,7 +81,7 @@ struct SaySomethingNice8: View {
             
             VStack {
                 
-                Text("Join people around the world")
+                Text("Join friends around the world")
                     .font(.system(size: 20))
                 
                     .fontWeight(.ultraLight)
@@ -124,7 +124,7 @@ struct SaySomethingNice8: View {
                 }
                 
                 Spacer()
-                    .frame(height: 25)
+                    .frame(height: 15)
                 
                 VStack {
                     // MARK: End of feeling buttons
