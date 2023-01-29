@@ -30,28 +30,37 @@ struct VirtualHug: View {
                 .blendMode(.screen)
             
             VStack {
-                Text("tap,")
+                Text("tap heart,")
                     .font(.system(size: 30))
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.black)
                 
-                Text("then hold iPhone to heart")
+                Text("for a love tap")
                     .font(.system(size: 30))
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.black)
                 
                 
-                Text("* (it will vibrate for a couple of seconds)")
-                    .font(.system(size: 15))
+                Text("*coming soon: hold phone to heart,")
+                    .font(.system(size: 19))
                     .italic()
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey3)
+                    .foregroundColor(ColorManager .grey4)
+                
+                
+                Text("it will vibrate for 3 seconds")
+                    .font(.system(size: 19))
+                    .italic()
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager .grey4)
+                
                 
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 170)
                 
                 ZStack {
                     Image(systemName: "heart.fill")
