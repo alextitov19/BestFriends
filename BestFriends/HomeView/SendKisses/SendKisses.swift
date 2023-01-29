@@ -229,7 +229,7 @@ struct SendKisses: View {
 
                         
                         VStack {
-                            Image("Heart2")
+                            Image("KissesHeart")
                                 .resizable()
                                 .frame(width: 300, height: 200)
                    

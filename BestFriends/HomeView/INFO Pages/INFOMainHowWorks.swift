@@ -153,7 +153,7 @@ struct INFOMainHowWorks: View {
                                 //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
                                     .opacity(0.95)
                                 
-                                Image("iconVibeMoon")
+                                Image("iconStar40")
                             }
                             
                             NavigationLink(
