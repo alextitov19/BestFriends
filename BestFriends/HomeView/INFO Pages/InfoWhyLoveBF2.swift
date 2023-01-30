@@ -35,7 +35,7 @@ struct InfoWhyLoveFB2: View {
 
 
 
-                Text("Finally,")
+                Text("BestFriends")
                     .font(.system(size: 35))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
@@ -60,7 +60,7 @@ struct InfoWhyLoveFB2: View {
                  
                       
 
-                        Text("Someplace where,")
+                        Text("where it's ok to let the")
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -70,23 +70,23 @@ struct InfoWhyLoveFB2: View {
                         Spacer ()
                             .frame(height: 17)
 
-                        Text("the inside of you")
-                            
+                        Text("outside of you")
+                            .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color .white)
                         
                     
-                        Text("can match the")
-                        
+                        Text("match the")
+                            .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color .white)
 
                         Text("outside of you")
-                        
+                            .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)

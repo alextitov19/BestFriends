@@ -110,7 +110,14 @@ struct SaySomethingNice8: View {
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
                 
-                        Text("something 'Positive'")
+                        Text("something")
+                            .font(.system(size: 30))
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager .grey3)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        Text("'Positive'")
                             .font(.system(size: 30))
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
