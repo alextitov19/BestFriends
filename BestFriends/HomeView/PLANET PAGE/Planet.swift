@@ -270,7 +270,7 @@ struct PlanetActionsView: View {
 //                        
                                     Text("start")
                                         .foregroundColor(Color .green)
-                                        .font(.system(size: 25, weight: .regular))
+                                        .font(.system(size: 30, weight: .light))
                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.90)
 
