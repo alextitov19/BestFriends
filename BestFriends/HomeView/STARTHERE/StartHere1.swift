@@ -195,23 +195,30 @@ struct StartHere1: View {
                                     
                                 }
                             )}
+//                        
+//                        Text("BF is designed for real-time interactions")
+//                            .foregroundColor(Color .green)
+//                            .font(.system(size: 20, weight: .light))
+//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                            .opacity(0.90)
+//                        
+//                        Text("Turning OFF notifications significantly")
+//                            .foregroundColor(Color .green)
+//                            .font(.system(size: 20, weight: .light))
+//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                            .opacity(0.90)
+//                        Text("reduces it's effectiveness")
+//                            .foregroundColor(Color .green)
+//                            .font(.system(size: 20, weight: .light))
+//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                            .opacity(0.90)
                         
-                        Text("BF is designed for real-time interactions")
-                            .foregroundColor(Color .green)
-                            .font(.system(size: 20, weight: .light))
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            .opacity(0.90)
-                        
-                        Text("Turning OFF notifications significantly")
-                            .foregroundColor(Color .green)
-                            .font(.system(size: 20, weight: .light))
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            .opacity(0.90)
-                        Text("reduces it's effectiveness")
-                            .foregroundColor(Color .green)
-                            .font(.system(size: 20, weight: .light))
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            .opacity(0.90)
+                        Text("With 5 closest friends you get & offer help \non difficult days while building stronger \nfriendships & sharing ‘Emotions Adventures’ \nall on a safer platform")
+                            .font(.system(size: 17))
+
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager.grey2)
                         
                         Spacer ()
                             .frame(height: 30)

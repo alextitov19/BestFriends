@@ -164,14 +164,15 @@ struct AtmosphereMain2: View {
                     
                     VStack {
                         
-                        Text("Sad Vibe shows as blue \natmospere around your \nplanet, happy vibe \nas yellow")
-                            .font(.system(size: 13))
-                            .fontWeight(.ultraLight)
-                            .foregroundColor(ColorManager .grey4)
-                            .multilineTextAlignment(.center)
+//                        Text("Sad Vibe shows as blue \natmospere around your \nplanet, happy vibe \nas yellow")
+//                            .font(.system(size: 13))
+//                            .fontWeight(.ultraLight)
+//                            .foregroundColor(ColorManager .grey4)
+//                            .multilineTextAlignment(.center)
                     }
                     
-//                    VStack {
+                    VStack {
+                    }
 //                        Button(action: {
 //                            mood = 4
 //                        }) {
@@ -430,7 +431,7 @@ struct AtmosphereMain2: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Non-judgemental, jealous and supportive friends are hard to find. \n\nNow they can lend support on difficult days - or cheer with you on good news. \n\nHold onto them!", isPresented: $showingAlert) {
+                                .alert("Sad 'Vibe' shows as blue \natmospere around your \nplanet, happy 'Vibe' \nas yellow", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
@@ -454,23 +455,17 @@ struct AtmosphereMain2: View {
                                         .opacity(0.95)
                                     
                                     
-                                    
-                                    
-                                    
-                                    
                                     NavigationLink(
                                         destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                         label: {
                                             Text("difficult day? tap here")
                                                 .fontWeight(.thin)
                                                .frame(width: 70, height: 37)
-//                                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                 .foregroundColor(ColorManager .grey4)
                                                 .font(.system(size: 12))
                                                 .background(ColorManager .purple3)
                                                 .cornerRadius(10)
-//                                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                            
+
                                         })
                                     
                                 }
