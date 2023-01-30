@@ -104,6 +104,7 @@
 		CF24815728F5060100D47AE3 /* PhotoPop3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24815628F5060100D47AE3 /* PhotoPop3.swift */; };
 		CF24815928F5075600D47AE3 /* PhotoPopInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */; };
 		CF2738AA2813C5740070E9D3 /* NewSmileNoteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */; };
+		CF27923D2987942B0000F79E /* MyRoomTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF27923C2987942B0000F79E /* MyRoomTalk.swift */; };
 		CF2DBCEC2853DAF7008616A3 /* PickMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */; };
 		CF2DBCF128552527008616A3 /* storm2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2DBCF028552527008616A3 /* storm2.mp4 */; };
 		CF2DBCF928554E5B008616A3 /* BuildFriendPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */; };
@@ -386,6 +387,7 @@
 		CF24815628F5060100D47AE3 /* PhotoPop3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPop3.swift; sourceTree = "<group>"; };
 		CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopInfo.swift; sourceTree = "<group>"; };
 		CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSmileNoteCard.swift; sourceTree = "<group>"; };
+		CF27923C2987942B0000F79E /* MyRoomTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomTalk.swift; sourceTree = "<group>"; };
 		CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMediator.swift; sourceTree = "<group>"; };
 		CF2DBCF028552527008616A3 /* storm2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = storm2.mp4; sourceTree = "<group>"; };
 		CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildFriendPlaylist.swift; sourceTree = "<group>"; };
@@ -1437,6 +1439,7 @@
 				CFD6C05C294169CC00D57E0B /* HideMyRoom.swift */,
 				CFD6C05E29416A3B00D57E0B /* HideMyRoomLink.swift */,
 				CF4D86B92978FDBA004B551D /* MyFears.swift */,
+				CF27923C2987942B0000F79E /* MyRoomTalk.swift */,
 			);
 			path = "My ROOM";
 			sourceTree = "<group>";
@@ -1925,6 +1928,7 @@
 				CF3B65D52801ED660003A714 /* GetInvolvedView.swift in Sources */,
 				62372A192884E27F00CAB75C /* HorizonCustom.swift in Sources */,
 				7A0856A427F3D9C400E8282B /* Model.swift in Sources */,
+				CF27923D2987942B0000F79E /* MyRoomTalk.swift in Sources */,
 				CF65041E28964B410092EEB9 /* EverybodyOk.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

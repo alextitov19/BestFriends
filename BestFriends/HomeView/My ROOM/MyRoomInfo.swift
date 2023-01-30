@@ -55,20 +55,30 @@ struct MyRoomInfo: View {
                 
           
             
-                
-                NavigationLink(destination: EmptyView(), label: {
-                    MyRoomCircle (color: Color .white, friendName: "Can \nwe \ntalk")
-                })
-                .offset(x: showItems ? -100 : 0, y: showItems ? -300: 0)
-                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                .opacity(0.4)
-                
+//                
+//                NavigationLink(destination: MyRoomTalk(user: user, friends: friends), label: {
+//                    MyRoomCircle (color: Color .white, friendName: "Someone \nto \ntalk too")
+//                })
+//                .offset(x: showItems ? -100 : 0, y: showItems ? -300: 0)
+//                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+//                .opacity(0.4)
+//                
                 
         
                 
             ZStack {
                 
        
+                NavigationLink(destination: MyRoomTalk(user: user, friends: friends), label: {
+                    MyRoomCircle (color: Color .white, friendName: "Someone \nto \ntalk too")
+                })
+                .offset(x: showItems ? -100 : 0, y: showItems ? -300: 0)
+                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                .opacity(0.4)
+                
+                
+                
+                
                 NavigationLink(destination: HugPushNotification3(user: user, friends: friends), label: {
                     MyRoomCircle (color: ColorManager .grey1, friendName: "I need a \n Hug")
                 })
