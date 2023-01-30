@@ -85,7 +85,7 @@ struct InfoWhyLoveFB2: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager .grey3)
 
-                        Text("outside of you")
+                        Text("inside of you")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
