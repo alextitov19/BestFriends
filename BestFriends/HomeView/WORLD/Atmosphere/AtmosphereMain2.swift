@@ -173,7 +173,7 @@ struct AtmosphereMain2: View {
                     
                     VStack {
                         
-                        
+                        ZStack {
                         Image(systemName: "heart.fill")
                             .resizable()
                             .foregroundColor(ColorManager .purple3)
@@ -188,13 +188,14 @@ struct AtmosphereMain2: View {
                             label: {
                                 Text("difficult day? tap here")
                                     .fontWeight(.thin)
-                                   .frame(width: 70, height: 37)
+                                    .frame(width: 70, height: 37)
                                     .foregroundColor(ColorManager .grey4)
                                     .font(.system(size: 12))
                                     .background(ColorManager .purple3)
                                     .cornerRadius(10)
-
+                                
                             })
+                    }
                         
                     }
                     
@@ -470,36 +471,12 @@ struct AtmosphereMain2: View {
                         .confettiCannon(counter: $counter)
                         
 
-                            
+
                             VStack {
-                                
+
                                 Spacer()
                                     .frame(height: 25)
-             
-                                ZStack {
-                                    Image(systemName: "heart.fill")
-                                        .resizable()
-                                        .foregroundColor(ColorManager .purple3)
-                                        .frame(width: 100, height: 80)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    
-                                        .opacity(0.95)
-                                    
-                                    
-                                    NavigationLink(
-                                        destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                        label: {
-                                            Text("difficult day? tap here")
-                                                .fontWeight(.thin)
-                                               .frame(width: 70, height: 37)
-                                                .foregroundColor(ColorManager .grey4)
-                                                .font(.system(size: 12))
-                                                .background(ColorManager .purple3)
-                                                .cornerRadius(10)
 
-                                        })
-                                    
-                                }
                         }
                         
                     }
