@@ -160,7 +160,7 @@ struct AtmosphereMain2: View {
                     }
                     
                     Spacer()
-                        .frame(width: 15)
+                        .frame(width: 20)
                     
                     VStack {
                         
@@ -183,6 +183,18 @@ struct AtmosphereMain2: View {
                             .opacity(0.95)
                         
                         
+                        NavigationLink(
+                            destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                            label: {
+                                Text("difficult day? tap here")
+                                    .fontWeight(.thin)
+                                   .frame(width: 70, height: 37)
+                                    .foregroundColor(ColorManager .grey4)
+                                    .font(.system(size: 12))
+                                    .background(ColorManager .purple3)
+                                    .cornerRadius(10)
+
+                            })
                         
                     }
                     
@@ -227,7 +239,7 @@ struct AtmosphereMain2: View {
 //                    }
 //
                     Spacer()
-                        .frame(width: 15)
+                        .frame(width: 20)
                     
                     VStack {
                         
