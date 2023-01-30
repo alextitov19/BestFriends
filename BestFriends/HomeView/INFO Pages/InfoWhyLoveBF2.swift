@@ -98,7 +98,7 @@ struct InfoWhyLoveFB2: View {
                         
                         
 
-                        Text("on social media")
+                        Text("on difficult days")
                         
                             .font(.system(size: 20))
                             .fontWeight(.light)
