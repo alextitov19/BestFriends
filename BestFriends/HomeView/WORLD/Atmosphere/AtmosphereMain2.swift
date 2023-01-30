@@ -176,7 +176,7 @@ struct AtmosphereMain2: View {
                         ZStack {
                         Image(systemName: "heart.fill")
                             .resizable()
-                            .foregroundColor(ColorManager .purple3)
+                            .foregroundColor(ColorManager .purple1)
                             .frame(width: 100, height: 80)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -189,9 +189,9 @@ struct AtmosphereMain2: View {
                                 Text("difficult day? tap here")
                                     .fontWeight(.thin)
                                     .frame(width: 70, height: 37)
-                                    .foregroundColor(ColorManager .grey4)
+                                    .foregroundColor(ColorManager .purple4)
                                     .font(.system(size: 12))
-                                    .background(ColorManager .purple3)
+                                    .background(ColorManager .purple1)
                                     .cornerRadius(10)
                                 
                             })
@@ -350,7 +350,7 @@ struct AtmosphereMain2: View {
                     VStack {
                         
                         Spacer()
-                            .frame(height: 10)
+                            .frame(height: 20)
                         
                         
                         HStack {
