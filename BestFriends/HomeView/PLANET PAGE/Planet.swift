@@ -251,53 +251,27 @@ struct PlanetActionsView: View {
                                 
                     VStack {
                                 
-                                   
-
-                                    
-                                    Text("where the")
-                                        .foregroundColor(.white)
-                                    
-                                        .font(.system(size: 17, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.50)
+                              
                    
-//                        Text("WORLD")
-//                            .foregroundColor(.white)
-//                            .font(.system(size: 20, weight: .bold))
-//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                            .opacity(0.50)
-//
-//                                    Text("FriendGroups")
-//                                        .foregroundColor(.white)
-//                                        .font(.system(size: 22, weight: .bold))
-//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                        .opacity(0.50)
-                       
-                        Text("inside of you")
+                        Text("BestFriends")
                             .foregroundColor(.white)
-                            .font(.system(size: 17, weight: .bold))
+                            .font(.system(size: 20, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                             .opacity(0.50)
-                        
-                                    Text("can match the")
+
+                                    Text("World")
                                         .foregroundColor(.white)
-                                        .font(.system(size: 17, weight: .bold))
+                                        .font(.system(size: 22, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
-                        
-                        Text("outside of you")
-                            .foregroundColor(.white)
-                            .font(.system(size: 17, weight: .bold))
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            .opacity(0.50)
-                        
-//                        Spacer()
-//                            .frame(height: 5)
+                       
+                        Spacer()
+                            .frame(height: 7)
 //                        
-                                    Text("tap")
+                                    Text("start")
                                         .foregroundColor(Color .green)
-                                        .font(.system(size: 23, weight: .bold))
-//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .font(.system(size: 25, weight: .regular))
+                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.90)
 
                         

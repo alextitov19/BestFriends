@@ -51,7 +51,7 @@ struct InfoWhyLoveFB2: View {
                         .resizable()
                         .foregroundColor(ColorManager .purple2)
                         .frame(width: 330, height: 330)
-                        .shadow(color: ColorManager .purple7, radius: 65, x: 30, y: 50)
+                        .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
                         .opacity(0.8)
 
 
@@ -60,27 +60,24 @@ struct InfoWhyLoveFB2: View {
                  
                       
 
-                        Text("Someplace where the")
+                        Text("Someplace where,")
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color .white)
 
                   
-                        
+                        Spacer ()
+                            .frame(height: 17)
 
-                        Text("inside of you")
+                        Text("the inside of you")
                             
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color .white)
                         
-                        
-                        Spacer ()
-                            .frame(height: 35)
-                        
-                        
+                    
                         Text("can match the")
                         
                             .font(.system(size: 20))
@@ -94,8 +91,14 @@ struct InfoWhyLoveFB2: View {
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color .white)
+                        
+                        
+                        Spacer ()
+                            .frame(height: 17)
+                        
+                        
 
-                        Text("on social media!")
+                        Text("on social media")
                         
                             .font(.system(size: 20))
                             .fontWeight(.light)
