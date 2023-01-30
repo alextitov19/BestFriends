@@ -160,7 +160,7 @@ struct AtmosphereMain2: View {
                     }
                     
                     Spacer()
-                        .frame(width: 10)
+                        .frame(width: 15)
                     
                     VStack {
                         
@@ -172,7 +172,26 @@ struct AtmosphereMain2: View {
                     }
                     
                     VStack {
+                        
+                        
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .foregroundColor(ColorManager .purple3)
+                            .frame(width: 100, height: 80)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        
+                            .opacity(0.95)
+                        
+                        
+                        
                     }
+                    
+                    
+                    
+                    
+                    
+                    
+                    
 //                        Button(action: {
 //                            mood = 4
 //                        }) {
@@ -208,7 +227,7 @@ struct AtmosphereMain2: View {
 //                    }
 //
                     Spacer()
-                        .frame(width: 10)
+                        .frame(width: 15)
                     
                     VStack {
                         
