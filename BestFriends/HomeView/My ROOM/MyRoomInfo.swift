@@ -53,16 +53,16 @@ struct MyRoomInfo: View {
             
             ZStack{
                 
-//          
-//            
-//                
-//                NavigationLink(destination: MyFears(user: user, friends: friends), label: {
-//                    MyRoomCircle (color: Color .white, friendName: "All \nmy Fears")
-//                })
-//                .offset(x: showItems ? 100 : 0, y: showItems ? -250: 0)
-//                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-//                .opacity(0.4)
-//                
+          
+            
+                
+                NavigationLink(destination: EmptyView(), label: {
+                    MyRoomCircle (color: Color .white, friendName: "Can \nwe \ntalk")
+                })
+                .offset(x: showItems ? -100 : 0, y: showItems ? -300: 0)
+                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                .opacity(0.4)
+                
                 
         
                 
@@ -82,7 +82,7 @@ struct MyRoomInfo: View {
                 NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
                     MyRoomCircle (color: Color .white, friendName: "SmileVault")
                 })
-                .offset(x: showItems ? 120 : 0, y: showItems ? -120: 0)
+                .offset(x: showItems ? 120 : 0, y: showItems ? 120: 0)
                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
                 .opacity(0.25)
                 
@@ -90,7 +90,7 @@ struct MyRoomInfo: View {
                 NavigationLink(destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends), label: {
                     MyRoomCircle (color: Color .white, friendName: "'Vibe' \nTracker")
                 })
-                .offset(x: showItems ? -100 : 0, y: showItems ? -300: 0)
+                .offset(x: showItems ? 100 : 0, y: showItems ? 270: 0)
                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
                 .opacity(0.4)
            
@@ -119,7 +119,7 @@ struct MyRoomInfo: View {
                     NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
                         MyRoomCircle (color: Color .white, friendName: "my \nDreamVault")
                     })
-                    .offset(x: showItems ? 0 : 0, y: showItems ? 170: 0)
+                    .offset(x: showItems ? -120 : 0, y: showItems ? 170: 0)
                     .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
                     .opacity(0.4)
                 
