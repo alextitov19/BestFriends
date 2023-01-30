@@ -205,6 +205,7 @@
 		CF76FA08285EED3E000750A4 /* ReceivedPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76FA07285EED3E000750A4 /* ReceivedPlaylist.swift */; };
 		CF8F76C6293866BB00B109D3 /* AskQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F76C5293866BB00B109D3 /* AskQuestion.swift */; };
 		CF8F76C92939B5DF00B109D3 /* TeenBoysUsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F76C82939B5DF00B109D3 /* TeenBoysUsing.swift */; };
+		CF94CAFF298756BD00A75D01 /* InfoWhyLoveBF2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF94CAFE298756BD00A75D01 /* InfoWhyLoveBF2.swift */; };
 		CF9957F128A72E77000BBAFF /* DeleteUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9957F028A72E77000BBAFF /* DeleteUserData.swift */; };
 		CF9957F328A73EFA000BBAFF /* CancellingPURPLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9957F228A73EFA000BBAFF /* CancellingPURPLE.swift */; };
 		CF9E33C22843040B00107433 /* Step3FG_Acountability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C12843040B00107433 /* Step3FG_Acountability.swift */; };
@@ -487,6 +488,7 @@
 		CF76FA07285EED3E000750A4 /* ReceivedPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedPlaylist.swift; sourceTree = "<group>"; };
 		CF8F76C5293866BB00B109D3 /* AskQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskQuestion.swift; sourceTree = "<group>"; };
 		CF8F76C82939B5DF00B109D3 /* TeenBoysUsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeenBoysUsing.swift; sourceTree = "<group>"; };
+		CF94CAFE298756BD00A75D01 /* InfoWhyLoveBF2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoWhyLoveBF2.swift; sourceTree = "<group>"; };
 		CF9957F028A72E77000BBAFF /* DeleteUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserData.swift; sourceTree = "<group>"; };
 		CF9957F228A73EFA000BBAFF /* CancellingPURPLE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellingPURPLE.swift; sourceTree = "<group>"; };
 		CF9E33C12843040B00107433 /* Step3FG_Acountability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3FG_Acountability.swift; sourceTree = "<group>"; };
@@ -1294,6 +1296,7 @@
 				CFC0EE7F2908060C006B3FAA /* InfoPushNotifications.swift */,
 				CF41753D2968847900898E2D /* InfoSilence.swift */,
 				CF41754B296FBB8D00898E2D /* InfoWhyLoveBF.swift */,
+				CF94CAFE298756BD00A75D01 /* InfoWhyLoveBF2.swift */,
 			);
 			path = "INFO Pages";
 			sourceTree = "<group>";
@@ -1766,6 +1769,7 @@
 				CF381A4D2826790F00B3719E /* Step1_ParentsFighting.swift in Sources */,
 				7ACACDAA2853EACF00D8AB75 /* AlertWrapper.swift in Sources */,
 				CF3B65E4280219B70003A714 /* RemoveFriend.swift in Sources */,
+				CF94CAFF298756BD00A75D01 /* InfoWhyLoveBF2.swift in Sources */,
 				CF3295FD290BBD210014F658 /* InfoCoolVideo.swift in Sources */,
 				7ACD20BE27FCBC18002F7800 /* PendingInviteView.swift in Sources */,
 				CFD8BD0A29132AE700F86EFB /* AtmosphereInfo1.swift in Sources */,

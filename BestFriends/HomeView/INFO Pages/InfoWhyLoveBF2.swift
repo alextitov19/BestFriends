@@ -1,17 +1,16 @@
 //
-//  InfoWhyLoveBF.swift
+//  InfoWhyLoveBF2.swift
 //  BestFriends
 //
-//  Created by Social Tech on 1/11/23.
+//  Created by Social Tech on 1/29/23.
 //
-
 
 
 import Foundation
 import SwiftUI
 import AVKit
 
-struct InfoWhyLoveFB: View {
+struct InfoWhyLoveFB2: View {
 
 
     
@@ -36,89 +35,81 @@ struct InfoWhyLoveFB: View {
 
 
 
-                Text("Hey Guys")
+                Text("Finally,")
                     .font(.system(size: 35))
-                    
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey2)
                 
-           
+//                Spacer ()
+//                     .frame(height: 70)
 
-              
-              
-//                    .padding(25)
-                
-                
-                
-                
-                
                 ZStack {
-
+               
 
                     Image(systemName: "heart.fill")
                         .resizable()
                         .foregroundColor(ColorManager .purple2)
                         .frame(width: 330, height: 330)
-                        .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
+                        .shadow(color: ColorManager .purple7, radius: 65, x: 30, y: 50)
                         .opacity(0.8)
 
 
 
                     VStack {
-
-//
-//                        Spacer ()
-//                            .frame(height: 30)
-                        
-                        Text("BestFriends was designed")
-                            .italic()
-                            .font(.system(size: 20))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color .white)
-
+                 
                       
 
-                        Text("by teen girls")
-                            .italic()
+                        Text("Someplace where the")
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color .white)
 
-                        Spacer ()
-                            .frame(height: 35)
+                  
                         
 
-                        Text("It's like they")
+                        Text("inside of you")
                             
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color .white)
                         
-                        Text("really understand")
+                        
+                        Spacer ()
+                            .frame(height: 35)
+                        
+                        
+                        Text("can match the")
                         
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color .white)
 
-                        Text("me and my friends")
+                        Text("outside of you")
                         
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color .white)
 
-
+                        Text("on social media!")
+                        
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .white)
+                        
+                        Spacer ()
+                             .frame(height: 20)
                         
                         
                          NavigationLink(
-                            destination: InfoWhyLoveFB2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                            destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
-                                Text("a peak Inside")
+                                Text("walk-through")
                                     .fontWeight(.thin)
                                     .frame(width: 200, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
