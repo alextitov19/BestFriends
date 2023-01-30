@@ -75,7 +75,7 @@ struct InfoWhyLoveFB2: View {
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .white)
+                            .foregroundColor(ColorManager .grey3)
                         
                     
                         Text("match the")
@@ -83,14 +83,14 @@ struct InfoWhyLoveFB2: View {
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .white)
+                            .foregroundColor(ColorManager .grey3)
 
                         Text("outside of you")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .white)
+                            .foregroundColor(ColorManager .grey3)
                         
                         
                         Spacer ()

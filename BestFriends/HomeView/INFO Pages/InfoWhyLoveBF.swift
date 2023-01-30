@@ -96,21 +96,21 @@ struct InfoWhyLoveFB: View {
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .white)
+                            .foregroundColor(ColorManager .grey3)
                         
                         Text("really understand")
                         
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .white)
+                            .foregroundColor(ColorManager .grey3)
 
                         Text("me and my friends")
                         
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .white)
+                            .foregroundColor(ColorManager .grey3)
 
 
                         
