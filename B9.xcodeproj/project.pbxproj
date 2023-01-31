@@ -104,7 +104,6 @@
 		CF24815728F5060100D47AE3 /* PhotoPop3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24815628F5060100D47AE3 /* PhotoPop3.swift */; };
 		CF24815928F5075600D47AE3 /* PhotoPopInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */; };
 		CF2738AA2813C5740070E9D3 /* NewSmileNoteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */; };
-		CF27923D2987942B0000F79E /* MyRoomTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF27923C2987942B0000F79E /* MyRoomTalk.swift */; };
 		CF2DBCEC2853DAF7008616A3 /* PickMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */; };
 		CF2DBCF128552527008616A3 /* storm2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2DBCF028552527008616A3 /* storm2.mp4 */; };
 		CF2DBCF928554E5B008616A3 /* BuildFriendPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */; };
@@ -204,6 +203,7 @@
 		CF72D6FB2921AFE900EDDDA6 /* SmileVaultPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72D6FA2921AFE900EDDDA6 /* SmileVaultPreload.swift */; };
 		CF763F7C285AFBAB0010D1A9 /* HorizonsPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F7B285AFBAB0010D1A9 /* HorizonsPrototype.swift */; };
 		CF76FA08285EED3E000750A4 /* ReceivedPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76FA07285EED3E000750A4 /* ReceivedPlaylist.swift */; };
+		CF84A3E22988A84700387A43 /* MyRoomNeedTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */; };
 		CF8F76C6293866BB00B109D3 /* AskQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F76C5293866BB00B109D3 /* AskQuestion.swift */; };
 		CF8F76C92939B5DF00B109D3 /* TeenBoysUsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F76C82939B5DF00B109D3 /* TeenBoysUsing.swift */; };
 		CF94CAFF298756BD00A75D01 /* InfoWhyLoveBF2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF94CAFE298756BD00A75D01 /* InfoWhyLoveBF2.swift */; };
@@ -387,7 +387,6 @@
 		CF24815628F5060100D47AE3 /* PhotoPop3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPop3.swift; sourceTree = "<group>"; };
 		CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopInfo.swift; sourceTree = "<group>"; };
 		CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSmileNoteCard.swift; sourceTree = "<group>"; };
-		CF27923C2987942B0000F79E /* MyRoomTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomTalk.swift; sourceTree = "<group>"; };
 		CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMediator.swift; sourceTree = "<group>"; };
 		CF2DBCF028552527008616A3 /* storm2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = storm2.mp4; sourceTree = "<group>"; };
 		CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildFriendPlaylist.swift; sourceTree = "<group>"; };
@@ -488,6 +487,7 @@
 		CF72D6FA2921AFE900EDDDA6 /* SmileVaultPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileVaultPreload.swift; sourceTree = "<group>"; };
 		CF763F7B285AFBAB0010D1A9 /* HorizonsPrototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonsPrototype.swift; sourceTree = "<group>"; };
 		CF76FA07285EED3E000750A4 /* ReceivedPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedPlaylist.swift; sourceTree = "<group>"; };
+		CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomNeedTalk.swift; sourceTree = "<group>"; };
 		CF8F76C5293866BB00B109D3 /* AskQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskQuestion.swift; sourceTree = "<group>"; };
 		CF8F76C82939B5DF00B109D3 /* TeenBoysUsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeenBoysUsing.swift; sourceTree = "<group>"; };
 		CF94CAFE298756BD00A75D01 /* InfoWhyLoveBF2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoWhyLoveBF2.swift; sourceTree = "<group>"; };
@@ -1439,7 +1439,7 @@
 				CFD6C05C294169CC00D57E0B /* HideMyRoom.swift */,
 				CFD6C05E29416A3B00D57E0B /* HideMyRoomLink.swift */,
 				CF4D86B92978FDBA004B551D /* MyFears.swift */,
-				CF27923C2987942B0000F79E /* MyRoomTalk.swift */,
+				CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */,
 			);
 			path = "My ROOM";
 			sourceTree = "<group>";
@@ -1893,6 +1893,7 @@
 				CFAB5402281A9A1D00BBF502 /* Step7_TimeToTalk.swift in Sources */,
 				CF7157512975D29900094F22 /* SendKisses.swift in Sources */,
 				CFD12CCF281A67FC00AB2539 /* DramaMainView.swift in Sources */,
+				CF84A3E22988A84700387A43 /* MyRoomNeedTalk.swift in Sources */,
 				7ACDB1812828186D009E1CFD /* NotificationModels.swift in Sources */,
 				CFAB540D281BBA4C00BBF502 /* ReceivedFixFightNotification.swift in Sources */,
 				CF763F7C285AFBAB0010D1A9 /* HorizonsPrototype.swift in Sources */,
@@ -1928,7 +1929,6 @@
 				CF3B65D52801ED660003A714 /* GetInvolvedView.swift in Sources */,
 				62372A192884E27F00CAB75C /* HorizonCustom.swift in Sources */,
 				7A0856A427F3D9C400E8282B /* Model.swift in Sources */,
-				CF27923D2987942B0000F79E /* MyRoomTalk.swift in Sources */,
 				CF65041E28964B410092EEB9 /* EverybodyOk.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

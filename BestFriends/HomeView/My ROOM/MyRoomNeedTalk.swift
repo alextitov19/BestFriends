@@ -1,10 +1,9 @@
 //
-//  MyRoomTalk.swift
+//  MyRoomNeedTalk.swift
 //  BestFriends
 //
 //  Created by Social Tech on 1/30/23.
 //
-
 
 
 import Foundation
@@ -12,7 +11,7 @@ import SwiftUI
 import ConfettiSwiftUI
 import AVKit
 
-struct MyRoomTalk: View {
+struct MyRoomNeedTalk: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -42,14 +41,15 @@ struct MyRoomTalk: View {
             if shareTapped {
                 
                 
-//                Image("starPurple")
-//                    .resizable()
-//                    .ignoresSafeArea()
-//                    .scaledToFill()
+                
                             ColorManager.purple2
                                 .ignoresSafeArea()
                                 .onAppear()
-
+//                Image("purpleBackground")
+//                    .resizable()
+//                    .ignoresSafeArea()
+//                    .scaledToFill()
+//                    .ignoresSafeArea()
                 
                 AdPlayerView(name: "dramaLights")
                     .ignoresSafeArea()
@@ -63,17 +63,12 @@ struct MyRoomTalk: View {
                     .ignoresSafeArea()
             }
             
-            Image("starPurple")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-          
-           
-            AdPlayerView(name: "")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-            
-            
+//            ColorManager .purple1
+//                .ignoresSafeArea()
+//
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
 
             
             VStack{
@@ -81,45 +76,51 @@ struct MyRoomTalk: View {
                 HStack {
                     VStack {
                         
-//                        Text("I feel my anxiety level")
-//                            .font(.system(size: 30, weight: .ultraLight))
-//                            .foregroundColor(ColorManager .grey2)
-//
-//
-//                        Text("welling up inside")
-//                            .font(.system(size: 30, weight: .ultraLight))
-//                            .foregroundColor(ColorManager .grey1)
-                   
+                        Text("Can you")
+                            .font(.system(size: 35, weight: .ultraLight))
+                            .foregroundColor(ColorManager .purple7)
+                        
+                        
+                        Text("talk")
+                            .font(.system(size: 35, weight: .ultraLight))
+                            .foregroundColor(ColorManager .purple7)
+                        
                     }
-//
-//                    Image("Penguin Sticker 38")
-//                        .resizable()
-//                        .frame(width: 200, height: 200)
+                    
+                    Image("BluePants")
+                        .resizable()
+                        .frame(width: 200, height: 200)
                 }
              
-                Spacer()
-                    .frame(height: 100)
+         
                 VStack {
-                    
 
+                    Text("Having a really bad day")
+                        .font(.system(size: 17))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(ColorManager .grey3)
+                        .multilineTextAlignment(.center)
                     
-                    Text("let's get")
-                                            .font(.system(size: 25))
-                
-                                            .foregroundColor(ColorManager .grey4)
-                                            .fontWeight(.thin)
-                                            .multilineTextAlignment(.center)
+                    
+                    Text("and really need to talk to you")
+                        .font(.system(size: 17))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(ColorManager .grey3)
+                        .multilineTextAlignment(.center)
 
+                    Spacer()
+                        .frame(height: 25)
                     
-                    Text("everyone home")
-                                            .font(.system(size: 25))
-                
-                                            .foregroundColor(ColorManager .grey4)
-                                            .fontWeight(.thin)
-                                            .multilineTextAlignment(.center)
+                    Text("can you find some time for me")
+                        .font(.system(size: 17))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(ColorManager .grey3)
+                        .multilineTextAlignment(.center)
+                    
                     VStack {
 
-                    
+                        Spacer()
+                            .frame(height: 25)
                         
                         
                         HStack {
@@ -214,7 +215,15 @@ struct MyRoomTalk: View {
                         }
                   
                         
-             
+                        
+//                        Button(action: {
+//                            counter += 1
+//                            shareButtonTapped()
+//                        },
+//                               label: {
+//                            Text("SHARE")
+                        
+                        
                         Spacer()
                             .frame(height: 20)
                         
@@ -234,19 +243,54 @@ struct MyRoomTalk: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("we love you guys \n\nwe're all here in thought and heart for you.", isPresented: $showingAlert) {
+                                .alert("If it gets really bad - you may call this number.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
-//                        .confettiCannon(counter: $counter)
+                        .confettiCannon(counter: $counter)
 
-                     
+                        
+                        VStack {
+                            
+                            Spacer()
+                                .frame(height: 30)
+                   
+                        }
+                        
+//                        Text("Bringing your friend all the joy of")
+//                            .font(.system(size: 15))
+//                            .fontWeight(.ultraLight)
+//                            .foregroundColor(ColorManager .grey3)
+//                            .multilineTextAlignment(.center)
+//
+//
+//                        Text("kicking through Autumn's leaves")
+//                            .font(.system(size: 15))
+//                            .fontWeight(.ultraLight)
+//                            .foregroundColor(ColorManager .grey3)
+//                            .multilineTextAlignment(.center)
+                        
+//                        Text("Jump over to PhotoPOP & send \na fun image to go with your Hug")
+//                            .fontWeight(.thin)
+//                            .foregroundColor(ColorManager .grey3)
+//                            .frame(width: 310, height: 60)
+//                            .font(.system(size: 17))
+//                            .multilineTextAlignment(.center)
+//                            .background(ColorManager.orange2)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//
+//
+                        
                         
                         }
                     
                     
+                    
+                
                     Spacer()
-                        .frame(height: 90)
+                        .frame(height: 100)
                     
                 }
                 
@@ -262,7 +306,7 @@ struct MyRoomTalk: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) I feel an axniety attack coming. I'm scared, can you please help calm me down", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) I'm having a really bad day. Can you please try to find some time to talk to me - please!", APNToken: f.APNToken)
                 }
             }
         }
@@ -290,10 +334,3 @@ struct MyRoomTalk: View {
     
     
 }
-
-
-//                Image("purpleBackground")
-//                    .resizable()
-//                    .ignoresSafeArea()
-//                    .scaledToFill()
-//                    .ignoresSafeArea()
