@@ -70,7 +70,7 @@ struct MyRoomInfo: View {
                 
        
                 NavigationLink(destination: MyRoomNeedTalk(user: user, friends: friends), label: {
-                    MyRoomCircle (color: Color .white, friendName: "I'm \nStruggling")
+                    MyRoomCircle (color: Color .white, friendName: "I'm \nreally \nStruggling")
                 })
                 .offset(x: showItems ? -100 : 0, y: showItems ? -300: 0)
                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)

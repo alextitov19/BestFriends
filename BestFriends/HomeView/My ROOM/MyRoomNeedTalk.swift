@@ -111,6 +111,12 @@ struct MyRoomNeedTalk: View {
                     Spacer()
                         .frame(height: 25)
                     
+                    Text("I'm scared,")
+                        .font(.system(size: 17))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(ColorManager .grey3)
+                        .multilineTextAlignment(.center)
+                    
                     Text("can you find some time for me")
                         .font(.system(size: 17))
                         .fontWeight(.ultraLight)
@@ -243,7 +249,7 @@ struct MyRoomNeedTalk: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("If it gets really bad - you may call this number.", isPresented: $showingAlert) {
+                                .alert("If thinking of harming yourself - you may call this number ------------.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
