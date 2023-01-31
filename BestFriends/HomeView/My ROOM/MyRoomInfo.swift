@@ -69,13 +69,13 @@ struct MyRoomInfo: View {
             ZStack {
                 
        
-                NavigationLink(destination: MyRoomNeedTalk(user: user, friends: friends), label: {
-                    MyRoomCircle (color: Color .white, friendName: "I'm \nreally \nStruggling")
-                })
-                .offset(x: showItems ? -100 : 0, y: showItems ? -300: 0)
-                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                .opacity(0.4)
-                
+//                NavigationLink(destination: MyRoomNeedTalk(user: user, friends: friends), label: {
+//                    MyRoomCircle (color: Color .white, friendName: "Need to \ntalk to \nmy friend")
+//                })
+//                .offset(x: showItems ? -100 : 0, y: showItems ? -300: 0)
+//                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+//                .opacity(0.4)
+//
                 
                 
                 

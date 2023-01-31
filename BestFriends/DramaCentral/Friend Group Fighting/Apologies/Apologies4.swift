@@ -129,7 +129,8 @@ struct Apologies4: View {
                                 })
                         }
                     }
-                    
+                        Spacer()
+                            .frame(height: 15)
                     HStack {
                         if friends.count > 2 {
                             RectView(user: user, friend: friends[2], color: colors[2])

@@ -87,7 +87,7 @@ struct MyRoomNeedTalk: View {
                         
                     }
                     
-                    Image("BluePants")
+                    Image("pinkboots")
                         .resizable()
                         .frame(width: 200, height: 200)
                 }
