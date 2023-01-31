@@ -82,21 +82,15 @@ struct MyFears: View {
 //                            .font(.system(size: 30, weight: .ultraLight))
 //                            .foregroundColor(ColorManager .grey1)
                     
-                        Text("Some of us here at BF have and")
+                        Text("Some of us here at BF deal with")
                             .font(.system(size: 19, weight: .ultraLight))
                             .foregroundColor(ColorManager .grey4)
                             .multilineTextAlignment(.center)
-                        Text("still deal with anxiety panic attacks/")
+                        Text("anxiety panic attacks.")
                             .font(.system(size: 19, weight: .ultraLight))
                             .foregroundColor(ColorManager .grey4)
                             .multilineTextAlignment(.center)
-                        
-                        Text("Our hearts go out to all of you.")
-                            .font(.system(size: 19, weight: .ultraLight))
-                            .foregroundColor(ColorManager .grey4)
-                            .multilineTextAlignment(.center)
-                        
-                      
+                  
                         
                         Spacer()
                             .frame(height: 10)
