@@ -40,14 +40,10 @@ struct MyFears: View {
             
             if shareTapped {
                 
+                ColorManager.purple2
+                    .ignoresSafeArea()
+                    .onAppear()
                 
-//                Image("starPurple")
-//                    .resizable()
-//                    .ignoresSafeArea()
-//                    .scaledToFill()
-                            ColorManager.purple2
-                                .ignoresSafeArea()
-                                .onAppear()
 
                 
                 AdPlayerView(name: "dramaLights")
@@ -62,10 +58,7 @@ struct MyFears: View {
                     .ignoresSafeArea()
             }
             
-//            Image("starPurple")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
+          
           
            
             AdPlayerView(name: "")
@@ -122,17 +115,47 @@ struct MyFears: View {
                  
                         
                     }
-//
-//                    Image("Penguin Sticker 38")
-//                        .resizable()
-//                        .frame(width: 200, height: 200)
+                
+               
+                    
+                    
                 }
              
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 10)
+                
                 VStack {
                     
-
+                    ZStack {
+                        
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .foregroundColor(ColorManager .purple1)
+                            .frame(width: 120, height: 100)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        
+                            .opacity(0.95)
+                        
+                        
+                        NavigationLink(
+                            destination: EmptyView(),
+                            label: {
+                                Text("need \nprofessonal \nhelp?")
+                                    .fontWeight(.thin)
+                                    .frame(width: 80, height: 50)
+                                    .foregroundColor(ColorManager .purple4)
+                                    .font(.system(size: 13))
+                                    .background(ColorManager .purple1)
+                                    .cornerRadius(10)
+                                
+                            })
+                    }
+                    
+                    
+                    
+                    Spacer()
+                        .frame(height: 15)
+                    
                     
                     Text("let's get")
                                             .font(.system(size: 25))
