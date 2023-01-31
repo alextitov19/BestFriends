@@ -62,10 +62,10 @@ struct MyFears: View {
                     .ignoresSafeArea()
             }
             
-            Image("starPurple")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+//            Image("starPurple")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
           
            
             AdPlayerView(name: "")
@@ -89,48 +89,37 @@ struct MyFears: View {
 //                            .font(.system(size: 30, weight: .ultraLight))
 //                            .foregroundColor(ColorManager .grey1)
                     
-                        Text("Some of us here at BF have been and")
+                        Text("Some of us here at BF have and")
                             .font(.system(size: 19, weight: .ultraLight))
-                            .foregroundColor(ColorManager .grey1)
+                            .foregroundColor(ColorManager .grey4)
                             .multilineTextAlignment(.center)
-                        Text("still deal with this. Our hearts go out")
+                        Text("still deal with anxiety panic attacks/")
                             .font(.system(size: 19, weight: .ultraLight))
-                            .foregroundColor(ColorManager .grey1)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("to you that know what we are talking about,")
-                            .font(.system(size: 19, weight: .ultraLight))
-                            .foregroundColor(ColorManager .grey1)
+                            .foregroundColor(ColorManager .grey4)
                             .multilineTextAlignment(.center)
                         
-                        Text("'anxiety panic attacks'")
+                        Text("Our hearts go out to all of you.")
                             .font(.system(size: 19, weight: .ultraLight))
-                            .foregroundColor(ColorManager .grey1)
+                            .foregroundColor(ColorManager .grey4)
                             .multilineTextAlignment(.center)
+                        
+                      
                         
                         Spacer()
                             .frame(height: 10)
                         
                         Text("So fragile - just taking about can")
                             .font(.system(size: 19, weight: .ultraLight))
-                            .foregroundColor(ColorManager .grey1)
+                            .foregroundColor(ColorManager .grey4)
                             .multilineTextAlignment(.center)
-                        Text("trigger an episode. We wish so much that")
+                        Text("trigger an episode.")
                             .font(.system(size: 19, weight: .ultraLight))
-                            .foregroundColor(ColorManager .grey1)
+                            .foregroundColor(ColorManager .grey4)
                             .multilineTextAlignment(.center)
                         
+                
                         
-                       
-                        Text("we could chase away all your")
-                            .font(.system(size: 19, weight: .ultraLight))
-                            .foregroundColor(ColorManager .grey1)
-                            .multilineTextAlignment(.center)
-                        
-                         Text("fears and hold you safe.")
-                             .font(.system(size: 19, weight: .ultraLight))
-                             .foregroundColor(ColorManager .grey1)
-                             .multilineTextAlignment(.center)
+                 
                         
                     }
 //
@@ -159,6 +148,14 @@ struct MyFears: View {
                                             .foregroundColor(ColorManager .grey4)
                                             .fontWeight(.thin)
                                             .multilineTextAlignment(.center)
+                    Text("safe")
+                                            .font(.system(size: 25))
+                
+                                            .foregroundColor(ColorManager .grey4)
+                                            .fontWeight(.thin)
+                                            .multilineTextAlignment(.center)
+                    
+                    
                     VStack {
 
                     
