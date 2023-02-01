@@ -132,7 +132,7 @@ struct MyFears: View {
                         
                         
                         NavigationLink(
-                            destination: EmptyView(),
+                            destination: ProfessionalHelp(user: user),
                             label: {
                                 Text("need \nprofessonal \nhelp?")
                                     .fontWeight(.thin)
