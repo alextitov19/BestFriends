@@ -114,35 +114,36 @@ struct PlanetActionsView: View {
                     .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                     .opacity(0.70)
                 
-                
                 NavigationLink(
-                    destination: InfoWhyLoveFB(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                    destination: StartHere1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                     label: {
-                        Text("Start Here")
-                        //                    Image("Start Here")
-                            .frame(width: 100, height: 25)
-                            .foregroundColor(.green)
+                       
+                        Image("settings icon")
+                            .frame(width: 50, height: 25)
+                            .foregroundColor(.white)
                             .font(.system(size: 20))
                             .background(Color .black)
-                            .cornerRadius(15)
-                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                            .opacity(0.70)
+                          .cornerRadius(15)
+                          .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                          .opacity(0.70)
                     })
+                
                 
             }
             
             NavigationLink(
-                destination: StartHere1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                destination: InfoWhyLoveFB(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                 label: {
-                   
-                    Image("settings icon")
-                        .frame(width: 50, height: 25)
-                        .foregroundColor(.white)
-                        .font(.system(size: 20))
+                    Text("Start Here")
+                    //                    Image("Start Here")
+                        .frame(width: 120, height: 25)
+                    
+                        .foregroundColor(.green)
+                        .font(.system(size: 23))
                         .background(Color .black)
-                      .cornerRadius(15)
-                      .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                      .opacity(0.70)
+                        .cornerRadius(15)
+                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                        .opacity(0.70)
                 })
             
                 
