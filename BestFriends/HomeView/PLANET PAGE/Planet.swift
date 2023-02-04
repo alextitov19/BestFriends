@@ -301,29 +301,23 @@ struct PlanetActionsView: View {
                               
                    
                         Text("sharing")
-                            .foregroundColor(Color .white)
-                            .italic()
-                            .font(.system(size: 17, weight: .light))
-                           .shadow(color: .purple, radius: 1, x: 0, y: 1)
-                            .opacity(0.90)
-//                            .foregroundColor(.white)
-//                            .italic()
-//                            .font(.system(size: 20, weight: .bold))
-//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                            .opacity(0.50)
+                            .foregroundColor(.white)
+                            .font(.system(size: 19, weight: .bold))
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            .opacity(0.50)
 
                         Spacer()
-                            .frame(height: 10)
+                            .frame(height: 5)
 
                         
                                     Text("Emotional Vibes")
                                         .foregroundColor(.white)
-                                        .font(.system(size: 20, weight: .bold))
+                                        .font(.system(size: 19, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                        
                         Spacer()
-                            .frame(height: 10)
+                            .frame(height: 13)
 //                        
                                     Text("with BFFs")
                                         .foregroundColor(Color .white)
