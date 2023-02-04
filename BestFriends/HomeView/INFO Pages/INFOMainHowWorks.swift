@@ -135,7 +135,7 @@ struct INFOMainHowWorks: View {
                     NavigationLink(
                         destination: InfoCreateChatRm(user: user),
                         label: {
-                            Text("my Vibe")
+                            Text("Emotional Vibes")
                                 .fontWeight(.thin)
                                 .frame(width: 200, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
