@@ -104,30 +104,32 @@ struct PlanetActionsView: View {
         
         VStack {
             
-
-            Image("home-alt2")
-                .frame(width: 50, height: 25)
-                .foregroundColor(.white)
-                .font(.system(size: 20))
-                .background(Color .black)
-              .cornerRadius(15)
-              .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-              .opacity(0.70)
-            
-            
-            NavigationLink(
-                destination: PlanetBell(user: user),
-                label: {
-                   
-                    Image("bell")
-                        .frame(width: 50, height: 25)
-                        .foregroundColor(.white)
-                        .font(.system(size: 20))
-                        .background(Color .black)
-                      .cornerRadius(15)
-                      .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                      .opacity(0.70)
-                })
+            HStack {
+                Image("home-alt2")
+                    .frame(width: 50, height: 25)
+                    .foregroundColor(.white)
+                    .font(.system(size: 20))
+                    .background(Color .black)
+                    .cornerRadius(15)
+                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                    .opacity(0.70)
+                
+                
+                NavigationLink(
+                    destination: InfoWhyLoveFB(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                    label: {
+                        Text("Start Here")
+                        //                    Image("Start Here")
+                            .frame(width: 100, height: 25)
+                            .foregroundColor(.green)
+                            .font(.system(size: 20))
+                            .background(Color .black)
+                            .cornerRadius(15)
+                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                            .opacity(0.70)
+                    })
+                
+            }
             
             NavigationLink(
                 destination: StartHere1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
@@ -143,6 +145,9 @@ struct PlanetActionsView: View {
                       .opacity(0.70)
                 })
             
+                
+                
+                
             Spacer()
                 .frame(height: 20)
                 
