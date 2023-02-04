@@ -215,24 +215,7 @@ struct PlanetActionsView: View {
                                 VStack {
 
                                     Image("iconStar 1")
-                                    
-//                                    
-//                        NavigationLink(destination: PhotoPopView(user: user, friends: friends),
-//                                       label: {
-//                            ZStack {
-//                                Circle()
-//                                    .frame(width: 110, height: 110)
-//                                    .foregroundColor(ColorManager.purple3)
-//                                    .shadow(color: .white, radius: 2, x: 0, y: 4)
-//                                    .glow(color: ColorManager.purple4, radius: 7)
-//                                    .opacity(0.8)
-//                                
-//                                VStack {
-//
-//                                    Image("IconPhotoNew")
-
-                      
-
+                               
 
                                 }
                             }
@@ -286,14 +269,6 @@ struct PlanetActionsView: View {
                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.90)
 
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
                         
                         
                                 }
@@ -354,20 +329,7 @@ struct PlanetActionsView: View {
 
                                     Image("IconPhotoNew")
                         
-                        
-                        
-//                        NavigationLink(destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-//                                       label: {
-//                            ZStack {
-//                                Circle()
-//                                    .frame(width: 110, height: 110)
-//                                    .foregroundColor(ColorManager.purple2)
-//                                    .shadow(color: .white, radius: 2, x: -4, y: 4)
-//                                    .opacity(0.80)
-//                                VStack {
-//
-//                                    Image("iconStar 1")
-
+ 
                                 }
                             }
 
