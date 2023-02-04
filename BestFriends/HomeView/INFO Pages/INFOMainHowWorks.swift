@@ -135,7 +135,7 @@ struct INFOMainHowWorks: View {
                     NavigationLink(
                         destination: InfoCreateChatRm(user: user),
                         label: {
-                            Text("Vibe")
+                            Text("my Vibe")
                                 .fontWeight(.thin)
                                 .frame(width: 200, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -169,7 +169,7 @@ struct INFOMainHowWorks: View {
                             NavigationLink(
                                 destination: InfoInsideChat(user: user),
                                 label: {
-                                    Text("HUG")
+                                    Text("Hugs & Kisses")
                                         .fontWeight(.thin)
                                         .frame(width: 200, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -200,7 +200,7 @@ struct INFOMainHowWorks: View {
                             NavigationLink(
                                 destination: InfoPushNotifications(user: user),
                                 label: {
-                                    Text("Something Nice")
+                                    Text("sending Nice")
                                         .fontWeight(.thin)
                                         .frame(width: 200, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -271,7 +271,7 @@ struct INFOMainHowWorks: View {
                                 
                                 destination: InfoSilence(user: user),
                                 label: {
-                                    Text("My Room")
+                                    Text("my Room")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
                                         .frame(width: 200, height: 40)
