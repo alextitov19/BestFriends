@@ -131,21 +131,21 @@ struct PlanetActionsView: View {
                 
             }
             
-            NavigationLink(
-                destination: InfoWhyLoveFB(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                label: {
-                    Text("Start Here")
-                    //                    Image("Start Here")
-                        .frame(width: 120, height: 25)
-                    
-                        .foregroundColor(.green)
-                        .font(.system(size: 23))
-                        .background(Color .black)
-                        .cornerRadius(15)
-                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                        .opacity(0.70)
-                })
-            
+//            NavigationLink(
+//                destination: InfoWhyLoveFB(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                label: {
+//                    Text("Start Here")
+//                    //                    Image("Start Here")
+//                        .frame(width: 120, height: 25)
+//
+//                        .foregroundColor(.green)
+//                        .font(.system(size: 23))
+//                        .background(Color .black)
+//                        .cornerRadius(15)
+//                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                        .opacity(0.70)
+//                })
+//
                 
                 
                 
@@ -210,6 +210,13 @@ struct PlanetActionsView: View {
                     
                     VStack {
                         
+                        
+                      
+                        
+                        
+                        
+                        
+                        
                         NavigationLink(destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
                             ZStack {
@@ -218,10 +225,50 @@ struct PlanetActionsView: View {
                                     .foregroundColor(ColorManager.purple2)
                                     .shadow(color: .white, radius: 2, x: -4, y: 4)
                                     .opacity(0.80)
-                                VStack {
-
-                                    Image("iconStar 1")
                                
+                                VStack {
+                                    ZStack {
+                                        Image(systemName: "heart.fill")
+                                            .resizable()
+                                            .foregroundColor(ColorManager .purple1)
+                                            .frame(width: 85, height: 65)
+                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                        
+                                            .opacity(0.95)
+                                        
+                                        
+                                        NavigationLink(
+                                            destination: InfoWhyLoveFB(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                            label: {
+                                                Text("Start \nHere")
+                                                    .fontWeight(.bold)
+                                                    .frame(width: 60, height: 37)
+                                                    .foregroundColor(Color .green)
+                                                    .font(.system(size: 15))
+                                                    .background(ColorManager .purple1)
+//                                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                                    .cornerRadius(10)
+                                                
+                                            })
+                                    }
+                                    
+//
+////                                    Image("iconStar 1")
+//                                    NavigationLink(
+//                                        destination: InfoWhyLoveFB(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                                        label: {
+//
+//                                            Text("Start \nHere")
+//                                            //                    Image("Start Here")
+//                                                .frame(width: 60, height: 60)
+//
+//                                                .foregroundColor(Color .green)
+//                                                .font(.system(size: 23))
+//                                                .background(ColorManager .purple5)
+//                                                .cornerRadius(15)
+//                                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                                                .opacity(0.70)
+//                                        })
 
                                 }
                             }
@@ -236,10 +283,9 @@ struct PlanetActionsView: View {
                         //
                         //                    MARK: First setup
                         
-//                        INFOPreloadA(user: user, friends: friends, groups: groups)
-                        
-                        
-                        NavigationLink(destination: InfoWhyLoveFB(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                        NavigationLink(destination: InfoWhyLoveFB(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                       
+                        NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
                             ZStack {
                                 Circle()
@@ -254,24 +300,35 @@ struct PlanetActionsView: View {
                                 
                               
                    
-                        Text("BestFriends")
-                            .foregroundColor(.white)
-                            .font(.system(size: 20, weight: .bold))
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            .opacity(0.50)
+                        Text("sharing")
+                            .foregroundColor(Color .white)
+                            .italic()
+                            .font(.system(size: 17, weight: .light))
+                           .shadow(color: .purple, radius: 1, x: 0, y: 1)
+                            .opacity(0.90)
+//                            .foregroundColor(.white)
+//                            .italic()
+//                            .font(.system(size: 20, weight: .bold))
+//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                            .opacity(0.50)
 
-                                    Text("World")
+                        Spacer()
+                            .frame(height: 10)
+
+                        
+                                    Text("Emotional Vibes")
                                         .foregroundColor(.white)
-                                        .font(.system(size: 22, weight: .bold))
+                                        .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                        
                         Spacer()
-                            .frame(height: 7)
+                            .frame(height: 10)
 //                        
-                                    Text("start")
-                                        .foregroundColor(Color .green)
-                                        .font(.system(size: 30, weight: .light))
+                                    Text("with BFFs")
+                                        .foregroundColor(Color .white)
+                                        .italic()
+                                        .font(.system(size: 15, weight: .light))
                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.90)
 
