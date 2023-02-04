@@ -60,15 +60,15 @@ struct InfoWhyLoveFB2: View {
                  
                       
 
-                        Text("where it's ok to let the")
+                        Text("Letting the")
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color .white)
+                            .foregroundColor(ColorManager .grey3)
 
                   
                         Spacer ()
-                            .frame(height: 17)
+                            .frame(height: 7)
 
                         Text("outside of you")
                             .italic()
