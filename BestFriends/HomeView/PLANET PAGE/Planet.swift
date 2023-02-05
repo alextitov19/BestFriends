@@ -167,8 +167,9 @@ struct PlanetActionsView: View {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple2)
-                                    .shadow(color: .white, radius: 2, x: 4, y: 4)
+                                    .foregroundColor(ColorManager.purple3)
+                                    .shadow(color: .white, radius: 3, x: 4, y: 4)
+                                    .glow(color: ColorManager.purple4, radius: 7)
                                     .opacity(0.80)
 
                                 VStack {
@@ -187,9 +188,9 @@ struct PlanetActionsView: View {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple2)
-                                    .shadow(color: .white, radius: 2, x: 4, y: -4)
-//                                    .glow(color: ColorManager.purple4, radius: -1.0)
+                                    .foregroundColor(ColorManager.purple3)
+                                    .shadow(color: .white, radius: 3, x: 4, y: -4)
+                                    .glow(color: ColorManager.purple4, radius: 7)
                                     .opacity(0.80)
                                 
                                 VStack {
@@ -222,8 +223,9 @@ struct PlanetActionsView: View {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple2)
-                                    .shadow(color: .white, radius: 2, x: -4, y: 4)
+                                    .foregroundColor(ColorManager.purple3)
+                                    .shadow(color: .white, radius: 3, x: 0, y: 4)
+                                    .glow(color: ColorManager.purple4, radius: 7)
                                     .opacity(0.80)
                                
                                 VStack {
@@ -247,6 +249,7 @@ struct PlanetActionsView: View {
                                                     .font(.system(size: 15))
                                                     .background(ColorManager .purple1)
 //                                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                                
                                                     .cornerRadius(10)
                                                 
                                             })
@@ -344,9 +347,9 @@ struct PlanetActionsView: View {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple2)
-                                    .shadow(color: .white, radius: 2, x: 0, y: -4)
-//                                    .glow(color: ColorManager.purple4, radius: -1.0)
+                                    .foregroundColor(ColorManager.purple3)
+                                    .shadow(color: .white, radius: 3, x: 0, y: -4)
+                                    .glow(color: ColorManager.purple4, radius: 7)
                                     .opacity(0.80)
                              
 //                                    .frame(width: 110, height: 110)
@@ -378,7 +381,7 @@ struct PlanetActionsView: View {
                                 Circle()
                                     .frame(width: 110, height: 110)
                                     .foregroundColor(ColorManager.purple3)
-                                    .shadow(color: .white, radius: 2, x: 0, y: 4)
+                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
                                     .glow(color: ColorManager.purple4, radius: 7)
                                     .opacity(0.8)
                                 
@@ -411,8 +414,9 @@ struct PlanetActionsView: View {
                                 //
                                 
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple2)
-                                    .shadow(color: .white, radius: 2, x: -4, y: -4)
+                                    .foregroundColor(ColorManager.purple3)
+                                    .shadow(color: .white, radius: 3, x: -4, y: -4)
+                                    .glow(color: ColorManager.purple4, radius: 7)
                                     .opacity(0.80)
                                 
                                 VStack {
