@@ -151,7 +151,7 @@ struct MyFears: View {
                         .frame(height: 15)
                     
                     
-                    Text("let's get")
+                    Text("Let's try")
                                             .font(.system(size: 25))
                 
                                             .foregroundColor(ColorManager .grey4)
@@ -159,13 +159,13 @@ struct MyFears: View {
                                             .multilineTextAlignment(.center)
 
                     
-                    Text("everyone home")
+                    Text("to find you some")
                                             .font(.system(size: 25))
                 
                                             .foregroundColor(ColorManager .grey4)
                                             .fontWeight(.thin)
                                             .multilineTextAlignment(.center)
-                    Text("safe")
+                    Text("help")
                                             .font(.system(size: 25))
                 
                                             .foregroundColor(ColorManager .grey4)

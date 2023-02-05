@@ -80,7 +80,7 @@ struct InfoWhyLoveFB: View {
 
                       
 
-                        Text("by teen girls")
+                        Text("by H.S. seniors & College girls")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
