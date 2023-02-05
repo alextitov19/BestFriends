@@ -114,7 +114,7 @@ struct AtmosphereMain2: View {
                             mood = 1
                         }) {
                             
-                            Text("Relationship \nIssues")
+                            Text("Dented Heart")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -148,7 +148,7 @@ struct AtmosphereMain2: View {
                             mood = 3
                         }) {
                             
-                            Text("Sad, Lonely \nBored")
+                            Text("Sad \nLonely")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
