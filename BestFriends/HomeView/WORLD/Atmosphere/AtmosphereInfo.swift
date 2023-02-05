@@ -29,14 +29,40 @@
 
 
                 VStack {
-
-
-
-                    Text("BestFriends")
-                        .font(.system(size: 35))
+                    
+                    
+                    Text("Find Safety on")
+                        .font(.system(size: 20))
+                        .italic()
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.grey2)
+                        .foregroundColor(ColorManager .grey3)
+
+              
+                
+
+                    Text("BestFriends")
+                        .italic()
+                        .font(.system(size: 20))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager .grey3)
+                    
+//
+//                    Text("your Vibe")
+//                        .italic()
+//                        .font(.system(size: 20))
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager .grey3)
+
+//
+//
+//                    Text("BestFriends")
+//                        .font(.system(size: 35))
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager.grey2)
                     
     //                Spacer ()
     //                     .frame(height: 70)
@@ -57,30 +83,6 @@
                      
                           
 
-                            Text("BestFriend's features")
-                                .font(.system(size: 20))
-                                .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager .grey3)
-
-                      
-                        
-
-                            Text("all flow from")
-                                .italic()
-                                .font(.system(size: 20))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager .grey3)
-                            
-                        
-                            Text("your Vibe")
-                                .italic()
-                                .font(.system(size: 20))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager .grey3)
 //
 //                            Text("inside of you")
 //                                .italic()
@@ -90,17 +92,52 @@
 //                                .foregroundColor(ColorManager .grey3)
                             
                             
-                            Spacer ()
-                                .frame(height: 17)
-                            
-                            
+                            Text("while letting the")
+                                .font(.system(size: 20))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager .grey3)
 
-                            Text("interacting with your BFF's")
-                            
+                      
+                        
+
+                            Text("outside of you")
+                                .italic()
                                 .font(.system(size: 20))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(Color .white)
+                                .foregroundColor(ColorManager .grey3)
+                            
+                        
+                            Text("match the")
+                                .italic()
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager .grey3)
+
+                            Text("inside of you")
+                                .italic()
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager .grey3)
+                            
+                            
+//                            
+//                            
+//                            Spacer ()
+//                                .frame(height: 17)
+                            
+//
+//
+//                            Text("interacting with your BFF's")
+//
+//                                .font(.system(size: 20))
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(Color .white)
                             
                             Spacer ()
                                  .frame(height: 20)
