@@ -31,7 +31,7 @@
                 VStack {
                     
                     
-                    Text("Find Safety on")
+                    Text("finding Safety on")
                         .font(.system(size: 20))
                         .italic()
                         .fontWeight(.light)
@@ -125,8 +125,8 @@
                                 .foregroundColor(ColorManager .grey3)
                             
                             
-//                            
-//                            
+//
+//
 //                            Spacer ()
 //                                .frame(height: 17)
                             

@@ -58,53 +58,53 @@ struct InfoWhyLoveFB2: View {
 
                     VStack {
                  
-                      
-
-                        Text("Letting the")
-                            .font(.system(size: 20))
-                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey3)
-
-                  
-                    
-
-                        Text("outside of you")
-                            .italic()
-                            .font(.system(size: 20))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey3)
-                        
-                    
-                        Text("match the")
-                            .italic()
-                            .font(.system(size: 20))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey3)
-
-                        Text("inside of you")
-                            .italic()
-                            .font(.system(size: 20))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey3)
-                        
-                        
-                        Spacer ()
-                            .frame(height: 17)
-                        
-                        
-
-                        Text("on difficult days")
-                        
-                            .font(.system(size: 20))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color .white)
-                        
+//                      
+//
+//                        Text("Letting the")
+//                            .font(.system(size: 20))
+//                            .italic()
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(ColorManager .grey3)
+//
+//                  
+//                    
+//
+//                        Text("outside of you")
+//                            .italic()
+//                            .font(.system(size: 20))
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(ColorManager .grey3)
+//                        
+//                    
+//                        Text("match the")
+//                            .italic()
+//                            .font(.system(size: 20))
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(ColorManager .grey3)
+//
+//                        Text("inside of you")
+//                            .italic()
+//                            .font(.system(size: 20))
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(ColorManager .grey3)
+//                        
+//                        
+//                        Spacer ()
+//                            .frame(height: 17)
+//                        
+//                        
+//
+//                        Text("on difficult days")
+//                        
+//                            .font(.system(size: 20))
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(Color .white)
+//                        
                         Spacer ()
                              .frame(height: 20)
                         
