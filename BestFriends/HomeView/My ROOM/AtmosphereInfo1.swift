@@ -82,12 +82,12 @@ struct AtmosphereInfo1: View {
             
             VStack {
 //
-//                Text("Join friends around the world")
-//                    .font(.system(size: 20))
-//
-//                    .fontWeight(.ultraLight)
-//                    .foregroundColor(ColorManager .grey3)
-//                    .multilineTextAlignment(.center)
+                Text("yes, yes, yes!!!")
+                    .font(.system(size: 20))
+
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(ColorManager .grey3)
+                    .multilineTextAlignment(.center)
 //
 //                Text("saying something")
 //                    .font(.system(size: 20))
@@ -105,13 +105,13 @@ struct AtmosphereInfo1: View {
 //                        .foregroundColor(ColorManager .grey3)
 //                        .multilineTextAlignment(.center)
                         
-                        Text("I")
+                        Text("i")
                             .font(.system(size: 30))
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
                 
-                        Text("Wish ...")
+                        Text("Wish")
                             .font(.system(size: 30))
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
@@ -316,26 +316,26 @@ struct AtmosphereInfo1: View {
                         Spacer()
                             .frame(height: 30)
                         
-                        Text("Receiving a special message is like")
+                        Text("Charlotte, a H.S. senior")
                             .font(.system(size: 17))
                         
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
                         
-                        Text("the look on a girl's face,")
+                        Text("invented this feature")
                             .font(.system(size: 17))
                         
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
-                        
-                        Text("holding unexpected flowers")
-                            .font(.system(size: 17))
-                        
-                            .fontWeight(.ultraLight)
-                            .foregroundColor(ColorManager .grey3)
-                            .multilineTextAlignment(.center)
+//
+//                        Text("holding unexpected flowers")
+//                            .font(.system(size: 17))
+//
+//                            .fontWeight(.ultraLight)
+//                            .foregroundColor(ColorManager .grey3)
+//                            .multilineTextAlignment(.center)
                     }
                     
                 }
