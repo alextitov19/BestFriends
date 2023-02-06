@@ -1309,7 +1309,6 @@
 			isa = PBXGroup;
 			children = (
 				CF1ECABE286E876900D999F8 /* AtmosphereInfo.swift */,
-				CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */,
 				CFD8BD072912B0EB00F86EFB /* AtmosphereInfo2.swift */,
 				CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */,
 				CF6504152893192C0092EEB9 /* AtmosphereDVid.swift */,
@@ -1441,6 +1440,7 @@
 				CFD6C05C294169CC00D57E0B /* HideMyRoom.swift */,
 				CFD6C05E29416A3B00D57E0B /* HideMyRoomLink.swift */,
 				CF4D86B92978FDBA004B551D /* MyFears.swift */,
+				CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */,
 				CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */,
 				CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */,
 			);
