@@ -111,7 +111,7 @@ struct AtmosphereInfo1: View {
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
                 
-                        Text("Wish")
+                        Text("wish")
                             .font(.system(size: 30))
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
@@ -303,7 +303,7 @@ struct AtmosphereInfo1: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("You just put a smile on your friend's face. \n\nEveryone enjoys knowing their friends care about them. \n\nLike that feeling of seeing two famous artists singing a duet. \n\nIt so much more than just the words.", isPresented: $showingAlert) {
+                                .alert("Nice. Your friend will think of you while searching for a bright star tonight.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
 //                                        .opacity(0.1)
                                 }
@@ -354,7 +354,7 @@ struct AtmosphereInfo1: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends World FriendGroups", body: "\(user.firstName) sent you 'Nice' message. Take a moment and send one back! Tap friend's planet on Home pg, then tap [Friend said something 'Nice'] from dropdown.", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent you a 'Wish' (posted in Chat). Find a bright star tonight and think of them.", APNToken: f.APNToken)
                 }
             }
         }
