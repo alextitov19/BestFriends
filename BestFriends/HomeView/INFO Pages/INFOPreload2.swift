@@ -44,6 +44,7 @@ struct INFOPreload2: View {
             Circle()
                 .frame(width: 300, height: 300)
                 .foregroundColor(ColorManager.purple3)
+                .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                 .offset(x: -200, y: 400)
             
             
@@ -70,7 +71,11 @@ struct INFOPreload2: View {
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
                     
-                    
+                    Text("Feb. 17-19th")
+                        .font(.system(size: 25))
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.white)
+                        .multilineTextAlignment(.center)
                     
                     Spacer()
                         .frame(height: 10)
@@ -113,22 +118,29 @@ struct INFOPreload2: View {
                                 .resizable()
                                 .foregroundColor(ColorManager .purple1)
                                 .frame(width: 180, height: 150)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             
-//                                .opacity(0.95)
-                            
+//
                             
                             NavigationLink(
                                 destination: InfoWhyLoveFB(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
-                                    Text("Welcome \nTap")
-                                        .fontWeight(.thin)
-                                        .frame(width: 100, height: 50)
-                                        .foregroundColor(ColorManager .purple3)
-                                        .font(.system(size: 25))
-                                        .background(ColorManager .purple1)
-                                  
+                                    VStack {
+                                        Text("Welcome")
+                                            .fontWeight(.thin)
+                                            .frame(width: 135, height: 30)
+                                            .foregroundColor(ColorManager .purple3)
+                                            .font(.system(size: 35))
+                                            .background(ColorManager .purple1)
+                                        
+                                        Text("Tap here")
+                                            .fontWeight(.thin)
+                                            .frame(width: 90, height: 30)
                                     
+                                            .foregroundColor(Color .green)
+                                            .font(.system(size: 20))
+                                            .background(ColorManager .purple1)
+                                    }
                                 }
                             )}
                         
