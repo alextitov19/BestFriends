@@ -240,7 +240,7 @@ struct PlanetActionsView: View {
                                         
                                         
                                         NavigationLink(
-                                            destination: InfoWhyLoveFB(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                            destination: INFOPreload2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                             label: {
                                                 Text("Start \nHere")
                                                     .fontWeight(.bold)
