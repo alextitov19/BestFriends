@@ -116,10 +116,10 @@ struct INFOPreload: View {
                                 .frame(height: 30)
                           
                         VStack {
-
-                            NavigationLink(destination:  INFOPreload2(user: user), label: {
-                                SomethingNiceCircle (color: ColorManager .purple2, friendName: "")
-                            })
+//
+//                            NavigationLink(destination:  INFOPreload2(user: user), label: {
+//                                SomethingNiceCircle (color: ColorManager .purple2, friendName: "")
+//                            })
 
                         }
                     }

@@ -49,12 +49,12 @@ struct INFOPreloadA: View {
             
             
             ZStack{
-                
-                NavigationLink(destination: INFOPreload2(user: user), label: {
-                    InfoCircle (color: ColorManager.purple1, friendName: "Enjoying \nhappier \nFriendships \n\nmore...")
-                })
-                .offset(x: showItems ? -80 : 0, y: showItems ? -200: 0)
-                .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
+//                
+//                NavigationLink(destination: INFOPreload2(user: user), label: {
+//                    InfoCircle (color: ColorManager.purple1, friendName: "Enjoying \nhappier \nFriendships \n\nmore...")
+//                })
+//                .offset(x: showItems ? -80 : 0, y: showItems ? -200: 0)
+//                .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                 
                 
 //                
