@@ -92,17 +92,17 @@ struct INFOPreload3: View {
 
                     
                     Spacer()
-                        .frame(height: 10)
+                        .frame(height: 70)
                     
-                    Text("(we pay shipping)")
-                        .font(.system(size: 15))
+                    Text("(while supplies last, \nwe pay shipping)")
+                        .font(.system(size: 12))
                         .italic()
                         .fontWeight(.thin)
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     
                        Spacer()
-                                    .frame(height: 100)
+                                    .frame(height: 50)
 
 
 
