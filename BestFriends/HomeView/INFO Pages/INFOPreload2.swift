@@ -25,7 +25,7 @@ struct INFOPreload2: View {
     var body: some View {
         ZStack {
             
-            ColorManager .grey4
+            ColorManager .grey3
                 .ignoresSafeArea()
                 .onAppear()
             
@@ -123,7 +123,7 @@ struct INFOPreload2: View {
 //
                             
                             NavigationLink(
-                                destination: InfoWhyLoveFB(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                destination: InfoWhyLoveFB2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                                     VStack {
                                         Text("Welcome")
