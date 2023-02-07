@@ -54,7 +54,11 @@ struct INFOPreload3: View {
 
                 VStack {
 
-
+                    Image("sticker")
+                        .resizable()
+                        
+                        .frame(width: 300, height: 300)
+                    
                     Text("Free stickers for you & your friends")
                         .font(.system(size: 25))
                         .fontWeight(.thin)
