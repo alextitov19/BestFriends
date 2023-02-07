@@ -248,7 +248,7 @@ struct PlanetActionsView: View {
                                                         .fontWeight(.light)
                                                         .frame(width: 60, height: 40)
                                                         .foregroundColor(ColorManager .grey1)
-                                                        .font(.system(size: 18))
+                                                        .font(.system(size: 20))
                                                         .background(Color .purple)
                                                         .cornerRadius(10)
                                                     

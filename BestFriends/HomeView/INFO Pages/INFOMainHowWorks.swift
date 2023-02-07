@@ -296,11 +296,11 @@ struct INFOMainHowWorks: View {
                             
                             destination: InviteView(user: user),
                             label: {
-                                Text("Invite (up to) 5 Friends")
+                                Text("Get Started \nInvite your friends")
                                     .fontWeight(.light)
                                     .foregroundColor(Color.white)
-                                    .frame(width: 300, height: 30)
-                                    .font(.system(size: 25))
+                                    .frame(width: 200, height: 60)
+                                    .font(.system(size: 22))
                                     .background(ColorManager.pmbc_green)
                                     .cornerRadius(7)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -321,7 +321,7 @@ struct INFOMainHowWorks: View {
                                 Text("How our real-time \nPush Notifications Work")
                                     .fontWeight(.thin)
                                     .foregroundColor(Color.white)
-                                    .frame(width: 310, height: 50)
+                                    .frame(width: 250, height: 50)
                                     .font(.system(size: 19))
                                     .background(ColorManager.pmbc_green)
                                     .cornerRadius(7)
