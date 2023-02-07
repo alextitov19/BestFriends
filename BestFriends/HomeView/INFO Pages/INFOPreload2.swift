@@ -123,7 +123,7 @@ struct INFOPreload2: View {
 //
                             
                             NavigationLink(
-                                destination: InfoWhyLoveFB2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                                     VStack {
                                         Text("Welcome")

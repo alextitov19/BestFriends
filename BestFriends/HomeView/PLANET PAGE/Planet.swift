@@ -214,7 +214,8 @@ struct PlanetActionsView: View {
                         
                       
                         
-                        
+                        Spacer()
+                            .frame(height: 15)
                         
                         
                         
@@ -232,9 +233,9 @@ struct PlanetActionsView: View {
                                     ZStack {
                                         Image(systemName: "heart.fill")
                                             .resizable()
-                                            .foregroundColor(ColorManager .purple1)
-                                            .frame(width: 85, height: 65)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                            .foregroundColor(Color .purple)
+                                            .frame(width: 90, height: 70)
+                                           
                                         
                                             .opacity(0.95)
                                         
@@ -242,16 +243,25 @@ struct PlanetActionsView: View {
                                         NavigationLink(
                                             destination: INFOPreload2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                             label: {
-                                                Text("Start \nHere")
-                                                    .fontWeight(.bold)
-                                                    .frame(width: 60, height: 37)
-                                                    .foregroundColor(Color .green)
-                                                    .font(.system(size: 15))
-                                                    .background(ColorManager .purple1)
-//                                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                                
-                                                    .cornerRadius(10)
-                                                
+                                                VStack {
+                                                    Text("START")
+                                                        .fontWeight(.light)
+                                                        .frame(width: 60, height: 40)
+                                                        .foregroundColor(ColorManager .grey1)
+                                                        .font(.system(size: 18))
+                                                        .background(Color .purple)
+                                                        .cornerRadius(10)
+                                                    
+//                                                    Text("Here")
+//                                                        .fontWeight(.light)
+//                                                        .frame(width: 60, height: 37)
+//                                                        .foregroundColor(Color .green)
+//                                                        .font(.system(size: 18))
+//                                                        .background(ColorManager .purple1)
+//                                                        .cornerRadius(10)
+//
+                                                    
+                                                }
                                             })
                                     }
                                     
