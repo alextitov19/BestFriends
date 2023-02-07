@@ -317,25 +317,39 @@ struct AtmosphereInfo1: View {
                             .frame(height: 30)
                         
                         Text("Charlotte, a H.S. senior")
-                            .font(.system(size: 17))
+                            .font(.system(size: 20))
                         
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
                         
-                        Text("invented this feature")
-                            .font(.system(size: 17))
+//                        Spacer()
+//                            .frame(height: 5)
                         
+                        
+                        Text("During a beta test she coined;")
+                            .font(.system(size: 12))
+                            .italic()
                             .fontWeight(.ultraLight)
-                            .foregroundColor(ColorManager .grey3)
+                            .foregroundColor(ColorManager .grey4)
                             .multilineTextAlignment(.center)
-//
-//                        Text("holding unexpected flowers")
-//                            .font(.system(size: 17))
-//
-//                            .fontWeight(.ultraLight)
-//                            .foregroundColor(ColorManager .grey3)
-//                            .multilineTextAlignment(.center)
+                        
+                        Text("'Cupcakes instead of grades'")
+                            .font(.system(size: 12))
+                            .italic()
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager .grey4)
+                            .multilineTextAlignment(.center)
+                        
+                        
+
+                        Text("it was just too cute to pass by.")
+                            .font(.system(size: 12))
+                            .italic()
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager .grey4)
+                            .multilineTextAlignment(.center)
+                        
                     }
                     
                 }

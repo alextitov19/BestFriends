@@ -94,7 +94,7 @@ struct INFOPreload3: View {
                     Spacer()
                         .frame(height: 70)
                     
-                    Text("(while supplies last, \nwe pay shipping)")
+                    Text("(available while supplies last, \nwe pay shipping)")
                         .font(.system(size: 12))
                         .italic()
                         .fontWeight(.thin)
