@@ -105,13 +105,13 @@ struct AtmosphereInfo1: View {
 //                        .foregroundColor(ColorManager .grey3)
 //                        .multilineTextAlignment(.center)
                         
-                        Text("i")
+                        Text("i wish")
                             .font(.system(size: 30))
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
                 
-                        Text("wish")
+                        Text("that...")
                             .font(.system(size: 30))
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
