@@ -85,10 +85,10 @@ struct BuggingPreload1: View {
 //                    .shadow(color: ColorManager .red, radius: 10, x: 10, y: 10)
 //                    
 //                    
-//                    NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups), label: {
-//                        BuggingCircle (color: .cyan, friendName: "")
-//                    })
-//                    .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
+                    NavigationLink(destination: EmptyView(), label: {
+                        BuggingCircle (color: .cyan, friendName: "")
+                    })
+                    .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
 //                    
 //                    
                     
@@ -106,21 +106,21 @@ struct BuggingPreload1: View {
                             Spacer ()
                                 .frame(height: 80)
                             
-                            Text("Pro-active 'HELP'")
-                                .font(.system(size: 15))
+//                            Text("Pro-active 'HELP'")
+//                                .font(.system(size: 15))
+//
+//                                .foregroundColor(.white)
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+//
+//                            Text("with handling")
+//                                .font(.system(size: 12))
+//                                .italic()
+//                                .foregroundColor(.white)
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
                             
-                                .foregroundColor(.white)
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                            
-                            Text("with handling")
-                                .font(.system(size: 12))
-                                .italic()
-                                .foregroundColor(.white)
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                            
-                            Text("Uncomfortable Moments")
+                            Text("Uncomfortable \nMoments")
                                 .font(.system(size: 17))
                             
                                 .foregroundColor(.white)
@@ -156,31 +156,31 @@ struct BuggingPreload1: View {
                                 .frame(height: 25)
                             
                             
-                            Text("Join others")
+                            Text("maybe we can help")
                                 .font(.system(size: 20))
                             
                                 .foregroundColor(.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
-                            
-                            Text("doing something")
-                                .font(.system(size: 23))
-                            
-                                .foregroundColor(.white)
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                            
-                            
-                            
-                            
-                            Text("R I G H T  N O W!")
-                                .font(.system(size: 30))
-                                .foregroundColor(.green)
-                                .fontWeight(.bold)
-                                .multilineTextAlignment(.center)
-                            
-                            
-                        
+//
+//                            Text("doing something")
+//                                .font(.system(size: 23))
+//
+//                                .foregroundColor(.white)
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+//
+//                            
+//                            
+//                            
+//                            Text("R I G H T  N O W!")
+//                                .font(.system(size: 30))
+//                                .foregroundColor(.green)
+//                                .fontWeight(.bold)
+//                                .multilineTextAlignment(.center)
+//                            
+//                            
+//                        
                         
                     }
                 }
