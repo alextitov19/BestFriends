@@ -31,17 +31,17 @@ struct AtmosphereInfo1: View {
     @State private var showingAlert = false
     
     @State private var counter = 0
- 
+    
     @State private var shareTapped: Bool = false
     
     
     
     
-//    @State private var customMessage = "Custom Message"
-//
-//    @State private var noteTapped = false
-//
-  
+    //    @State private var customMessage = "Custom Message"
+    //
+    //    @State private var noteTapped = false
+    //
+    
     var body: some View {
         ZStack {
             
@@ -52,11 +52,11 @@ struct AtmosphereInfo1: View {
                     .ignoresSafeArea()
                     .onAppear()
                 
-//                Image("purpleBackground")
-//                    .resizable()
-//                    .ignoresSafeArea()
-//                    .scaledToFill()
-//                    .ignoresSafeArea()
+                //                Image("purpleBackground")
+                //                    .resizable()
+                //                    .ignoresSafeArea()
+                //                    .scaledToFill()
+                //                    .ignoresSafeArea()
                 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
@@ -70,60 +70,60 @@ struct AtmosphereInfo1: View {
                     .ignoresSafeArea()
             }
             
-//            ColorManager .purple1
-//                .ignoresSafeArea()
-//
-//            AdPlayerView(name: "sky2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
+            //            ColorManager .purple1
+            //                .ignoresSafeArea()
+            //
+            //            AdPlayerView(name: "sky2")
+            //                .ignoresSafeArea()
+            //                .blendMode(.screen)
             
             
             
             
             VStack {
-//
+                //
                 Text("yes, yes, yes!!!")
                     .font(.system(size: 20))
-
+                
                     .fontWeight(.ultraLight)
                     .foregroundColor(ColorManager .grey3)
                     .multilineTextAlignment(.center)
-//
-//                Text("saying something")
-//                    .font(.system(size: 20))
-//
-//                    .fontWeight(.ultraLight)
-//                    .foregroundColor(ColorManager .grey3)
-//                    .multilineTextAlignment(.center)
+                //
+                //                Text("saying something")
+                //                    .font(.system(size: 20))
+                //
+                //                    .fontWeight(.ultraLight)
+                //                    .foregroundColor(ColorManager .grey3)
+                //                    .multilineTextAlignment(.center)
                 
                 HStack {
                     
                     VStack {
-//                    Text("Saying something")
-//                        .font(.system(size: 30))
-//                        .fontWeight(.ultraLight)
-//                        .foregroundColor(ColorManager .grey3)
-//                        .multilineTextAlignment(.center)
+                        //                    Text("Saying something")
+                        //                        .font(.system(size: 30))
+                        //                        .fontWeight(.ultraLight)
+                        //                        .foregroundColor(ColorManager .grey3)
+                        //                        .multilineTextAlignment(.center)
                         
                         Text("i wish")
                             .font(.system(size: 30))
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
-                
+                        
                         Text("that...")
                             .font(.system(size: 30))
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
                         
-//
-//                        Text("'Positive'")
-//                            .font(.system(size: 30))
-//                            .fontWeight(.ultraLight)
-//                            .foregroundColor(ColorManager .grey3)
-//                            .multilineTextAlignment(.center)
-//
+                        //
+                        //                        Text("'Positive'")
+                        //                            .font(.system(size: 30))
+                        //                            .fontWeight(.ultraLight)
+                        //                            .foregroundColor(ColorManager .grey3)
+                        //                            .multilineTextAlignment(.center)
+                        //
                     }
                     Image("girlwalking250")
                         .resizable()
@@ -273,17 +273,17 @@ struct AtmosphereInfo1: View {
                         
                         
                         
-//                        Spacer()
-//                            .frame(height: 20)
-//
-//
-//                        Button(action: {
-//
-//                            counter += 1
-//                            shareButtonTapped()
-//                        },
-//                               label: {
-//                            Text("SHARE")
+                        //                        Spacer()
+                        //                            .frame(height: 20)
+                        //
+                        //
+                        //                        Button(action: {
+                        //
+                        //                            counter += 1
+                        //                            shareButtonTapped()
+                        //                        },
+                        //                               label: {
+                        //                            Text("SHARE")
                         
                         Spacer()
                             .frame(height: 20)
@@ -305,7 +305,7 @@ struct AtmosphereInfo1: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 .alert("Nice. Your friend will think of you while searching for a bright star tonight.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
-//                                        .opacity(0.1)
+                                    //                                        .opacity(0.1)
                                 }
                         })
                         
@@ -317,114 +317,136 @@ struct AtmosphereInfo1: View {
                             .frame(height: 30)
                         
                         Text("Charlotte, a H.S. senior")
-                            .font(.system(size: 20))
+                            .font(.system(size: 17))
                         
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
                         
-//                        Spacer()
-//                            .frame(height: 5)
-                        
-                        
-                        Text("During a beta test she coined;")
-                            .font(.system(size: 12))
-                            .italic()
-                            .fontWeight(.ultraLight)
-                            .foregroundColor(ColorManager .grey4)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("'Cupcakes instead of grades'")
-                            .font(.system(size: 12))
-                            .italic()
-                            .fontWeight(.ultraLight)
-                            .foregroundColor(ColorManager .grey4)
-                            .multilineTextAlignment(.center)
-                        
-                        
-
-                        Text("it was just too cute to pass by.")
-                            .font(.system(size: 12))
-                            .italic()
-                            .fontWeight(.ultraLight)
-                            .foregroundColor(ColorManager .grey4)
-                            .multilineTextAlignment(.center)
+                        //                        Spacer()
+                        //                            .frame(height: 5)
+                        VStack {
+                            
+                            Text("during a beta test when asked what")
+                                .font(.system(size: 12))
+                                .italic()
+                                .fontWeight(.ultraLight)
+                                .foregroundColor(ColorManager .grey4)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("her big 'wish' was, answered;")
+                                .font(.system(size: 12))
+                                .italic()
+                                .fontWeight(.ultraLight)
+                                .foregroundColor(ColorManager .grey4)
+                                .multilineTextAlignment(.center)
+                            
+                            
+                            Spacer()
+                                .frame(height: 10)
+                            
+                            Text("'Cupcakes instead of Grades'")
+                                .font(.system(size: 17))
+                            
+                                .fontWeight(.ultraLight)
+                                .foregroundColor(ColorManager .grey4)
+                                .multilineTextAlignment(.center)
+                            
+                            
+                            
+                            
+                            Spacer()
+                                .frame(height: 10)
+                            
+                            
+                            
+                            Text("(it was just too cute to pass by - we made it a feature)")
+                                .font(.system(size: 12))
+                                .italic()
+                                .fontWeight(.ultraLight)
+                                .foregroundColor(ColorManager .grey4)
+                                .multilineTextAlignment(.center)
+                            
+                            
+                            
+                        }
+                            
+                        }
                         
                     }
                     
-                }
-                
-                Spacer()
-                    .frame(height: 70)
-                
-            }
-        }
-    }
-    
-    func shareButtonTapped() {
-        sendMessage()
-        
-        if selectedFriends.count == 0 { return }
-        for id in selectedFriends {
-            for f in friends {
-                if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent you a 'Wish' (posted in Chat). Find a bright star tonight and think of them.", APNToken: f.APNToken)
+                    Spacer()
+                        .frame(height: 70)
+                    
                 }
             }
         }
-        shareColor = ColorManager.darkGrey
-        showingAlert = true
-    }
-    
-    private func sendMessage() {
-        for id in selectedFriends {
-            for f in friends {
-                if f.id == id {
-                    RestApi.instance.createNiceMessage(message: summary, receiver: id).then({ code in
-                        print("Send nice message status: ", code)
-                    })
+        
+        func shareButtonTapped() {
+            sendMessage()
+            
+            if selectedFriends.count == 0 { return }
+            for id in selectedFriends {
+                for f in friends {
+                    if f.id == id {
+                        RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent you a 'Wish' (posted in Chat). Find a bright star tonight and think of them.", APNToken: f.APNToken)
+                    }
+                }
+            }
+            shareColor = ColorManager.darkGrey
+            showingAlert = true
+        }
+        
+        private func sendMessage() {
+            for id in selectedFriends {
+                for f in friends {
+                    if f.id == id {
+                        RestApi.instance.createNiceMessage(message: summary, receiver: id).then({ code in
+                            print("Send nice message status: ", code)
+                        })
+                    }
                 }
             }
         }
-    }
-    
-    private func limitText(_ upper: Int) {
-        if summary.count > upper {
-            summary = String(summary.prefix(upper))
+        
+        private func limitText(_ upper: Int) {
+            if summary.count > upper {
+                summary = String(summary.prefix(upper))
+            }
+        }
+        
+        
+        
+        private struct RectView: View {
+            let user: User
+            let friend: User
+            let color: Color
+            
+            var body: some View {
+                Text(friend.firstName + " " + String(friend.lastName.first!))
+                    .fontWeight(.bold)
+                    .frame(width: 90, height: 90)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .font(.system(size: 8))
+                    .background(color)
+                    .cornerRadius(75)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+            }
+            
+            
+            
+        }
+        
+        private func defaultMessageButtonTapped(defaultMessage: String) {
+            self.colorChangeTap = defaultMessage
         }
     }
     
     
     
-    private struct RectView: View {
-        let user: User
-        let friend: User
-        let color: Color
-        
-        var body: some View {
-            Text(friend.firstName + " " + String(friend.lastName.first!))
-                .fontWeight(.bold)
-                .frame(width: 90, height: 90)
-                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                .font(.system(size: 8))
-                .background(color)
-                .cornerRadius(75)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-        }
-        
-        
-        
-    }
     
-    private func defaultMessageButtonTapped(defaultMessage: String) {
-        self.colorChangeTap = defaultMessage
-    }
-}
-
-
-
-
-
-
-
+    
+    
+    
+    
 
