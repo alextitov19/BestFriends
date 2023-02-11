@@ -25,7 +25,7 @@ struct INFOPreload2: View {
     var body: some View {
         ZStack {
             
-            ColorManager .grey3
+            ColorManager .purple1
                 .ignoresSafeArea()
                 .onAppear()
             
@@ -62,20 +62,20 @@ struct INFOPreload2: View {
                     Text("Welcome everyone from the")
                         .font(.system(size: 25))
                         .fontWeight(.thin)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(ColorManager .purple5)
                         .multilineTextAlignment(.center)
                     
-                    Text("Harvard STEM event")
+                    Text("Harvard WECode 2023")
                         .font(.system(size: 25))
                         .fontWeight(.thin)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(ColorManager .purple5)
                         .multilineTextAlignment(.center)
                     
-                    Text("Feb. 17-19th")
-                        .font(.system(size: 25))
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.white)
-                        .multilineTextAlignment(.center)
+//                    Text("Feb. 18-19th")
+//                        .font(.system(size: 25))
+//                        .fontWeight(.thin)
+//                        .foregroundColor(Color.white)
+//                        .multilineTextAlignment(.center)
                     
                     Spacer()
                         .frame(height: 10)
@@ -92,20 +92,20 @@ struct INFOPreload2: View {
                     Text("For stickers or questions")
                         .font(.system(size: 17))
                         .fontWeight(.thin)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(ColorManager .purple5)
                         .multilineTextAlignment(.center)
                     
-                    Text("find our co-founder, Lizza")
+                    Text("find our co-founder, Leeza")
                         .font(.system(size: 17))
                         .fontWeight(.thin)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(ColorManager .purple5)
                         .multilineTextAlignment(.center)
                     VStack {
                         
-                        Text("in the _____ Dorm, Rm. _____")
+                        Text("in the Leverett G Tower")
                             .font(.system(size: 17))
                             .fontWeight(.thin)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(ColorManager .purple5)
                             .multilineTextAlignment(.center)
                         
                         Spacer()
@@ -117,7 +117,7 @@ struct INFOPreload2: View {
                             .foregroundColor(Color .blue)
                           
                             .font(.system(size: 20))
-                            .background(ColorManager .grey2)
+                            .background(ColorManager .grey1)
                             .cornerRadius(4)
                     
                         
@@ -158,7 +158,7 @@ struct INFOPreload2: View {
                                 )}
                             
                             Spacer()
-                                .frame(height: 200)
+                                .frame(height: 100)
                             
                             Text("(We are not affiliated with Harvard)")
                                 .font(.system(size: 13))
@@ -168,8 +168,8 @@ struct INFOPreload2: View {
                                 .multilineTextAlignment(.center)
                             
                             
-                            Spacer()
-                                .frame(height: 50)
+//                            Spacer()
+//                                .frame(height: 50)
                             
                             
                         }
