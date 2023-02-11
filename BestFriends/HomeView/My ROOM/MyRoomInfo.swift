@@ -136,15 +136,15 @@ struct MyRoomInfo: View {
                     
           
                 
-                
-                                    NavigationLink(destination: AtmosphereInfo1(user: user, atmosphere: atmosphere, friends: friends), label: {
-                                        MyRoomCircle (color: ColorManager .purple3, friendName: "Cupcakes \ninsted of \nGrades")
-                                    })
-                                    .offset(x: showItems ? 120 : 0, y: showItems ? -100: 0)
-                                    .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
-                                    .opacity(0.4)
-                
-                
+//
+//                                    NavigationLink(destination: AtmosphereInfo1(user: user, atmosphere: atmosphere, friends: friends), label: {
+//                                        MyRoomCircle (color: ColorManager .purple3, friendName: "Cupcakes \ninsted of \nGrades")
+//                                    })
+//                                    .offset(x: showItems ? 120 : 0, y: showItems ? -100: 0)
+//                                    .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
+//                                    .opacity(0.4)
+//
+//
                 
                 
                     NavigationLink(destination: EmptyView(), label: {
