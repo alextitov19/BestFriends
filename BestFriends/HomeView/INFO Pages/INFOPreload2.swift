@@ -89,7 +89,7 @@ struct INFOPreload2: View {
                     Spacer()
                         .frame(height: 50)
                     
-                    Text("For stickers or questions")
+                    Text("For stickers & cupcakes")
                         .font(.system(size: 17))
                         .fontWeight(.thin)
                         .foregroundColor(ColorManager .purple5)
@@ -102,7 +102,7 @@ struct INFOPreload2: View {
                         .multilineTextAlignment(.center)
                     VStack {
                         
-                        Text("in the Leverett G Tower")
+                        Text("in the Leverett G Tower lounge")
                             .font(.system(size: 17))
                             .fontWeight(.thin)
                             .foregroundColor(ColorManager .purple5)
