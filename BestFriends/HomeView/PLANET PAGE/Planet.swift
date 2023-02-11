@@ -233,7 +233,7 @@ struct PlanetActionsView: View {
                                     ZStack {
                                         Image(systemName: "heart.fill")
                                             .resizable()
-                                            .foregroundColor(Color .purple)
+                                            .foregroundColor(ColorManager .grey3)
                                             .frame(width: 90, height: 70)
                                            
                                         
@@ -249,7 +249,7 @@ struct PlanetActionsView: View {
                                                         .frame(width: 60, height: 40)
                                                         .foregroundColor(ColorManager .grey1)
                                                         .font(.system(size: 20))
-                                                        .background(Color .purple)
+                                                        .background(ColorManager .grey3)
                                                         .cornerRadius(10)
                                                     
 //                                                    Text("Here")
