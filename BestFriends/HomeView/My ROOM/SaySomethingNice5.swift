@@ -1,18 +1,17 @@
 //
-//  SendKisses.swift
+//  SaySomethingNice5.swift
 //  BestFriends
 //
-//  Created by Social Tech on 1/16/23.
+//  Created by Social Tech on 11/29/22.
 //
-
-
+//
 
 import Foundation
 import SwiftUI
 import ConfettiSwiftUI
 import AVKit
 
-struct SendKisses: View {
+struct SaySomethingNice5: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -43,7 +42,7 @@ struct SendKisses: View {
                 
                 
                 
-                            ColorManager.purple2
+                Color .orange
                                 .ignoresSafeArea()
                                 .onAppear()
 //                Image("purpleBackground")
@@ -60,7 +59,7 @@ struct SendKisses: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
-                ColorManager.purple1
+                ColorManager.orange1
                     .ignoresSafeArea()
             }
             
@@ -77,18 +76,18 @@ struct SendKisses: View {
                 HStack {
                     VStack {
                         
-                        Text("Blowing")
+                        Text("Thinking")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple7)
                         
                         
-                        Text("Kisses")
+                        Text("of You")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple7)
                         
                     }
                     
-                    Image("BalloonGuy")
+                    Image("orangeRocket")
                         .resizable()
                         .frame(width: 200, height: 200)
                 }
@@ -96,12 +95,12 @@ struct SendKisses: View {
          
                 VStack {
 
-                    Text("Jump up on a chair, then ...")
-                                            .font(.system(size: 25))
-                
-                                            .foregroundColor(ColorManager .grey2)
-                                            .fontWeight(.thin)
-                                            .multilineTextAlignment(.center)
+//                    Text("Jump up on a chair, then ...")
+//                                            .font(.system(size: 25))
+//
+//                                            .foregroundColor(ColorManager .grey2)
+//                                            .fontWeight(.thin)
+//                                            .multilineTextAlignment(.center)
 
                     VStack {
 
@@ -221,7 +220,7 @@ struct SendKisses: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("blow your kisses high up in the air floating towards your friend. \n\nThat's perfect", isPresented: $showingAlert) {
+                                .alert("It's ok to let them know \nyou miss them", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -229,21 +228,21 @@ struct SendKisses: View {
 
                         
                         VStack {
-                            Image("KissesHeart")
-                                .resizable()
-                                .frame(width: 300, height: 200)
-                   
+//                            Image("KissesHeart")
+//                                .resizable()
+//                                .frame(width: 300, height: 200)
+//
                         }
                         
                      
                         
                         }
                     
-//                    
-//                    
-//                
-//                    Spacer()
-//                        .frame(height: 130)
+//
+
+
+                    Spacer()
+                        .frame(height: 130)
                     
                 }
                 
@@ -259,7 +258,7 @@ struct SendKisses: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) is blowing you Kisses. Jump up high and catch them.", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) is thinking of you.", APNToken: f.APNToken)
                 }
             }
         }

@@ -1411,7 +1411,6 @@
 			isa = PBXGroup;
 			children = (
 				CFD6C050293E802500D57E0B /* SomethingNice1.swift */,
-				CF3B42F329371A6D00EE1D84 /* SaySomethingNice5.swift */,
 				CF3B42F5293721A500EE1D84 /* SaySomethingNice6.swift */,
 				CF3B42F7293723B500EE1D84 /* SaySomethingNice7.swift */,
 				CFD6C0562940532F00D57E0B /* SaySomethingNice8.swift */,
@@ -1443,6 +1442,7 @@
 				CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */,
 				CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */,
 				CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */,
+				CF3B42F329371A6D00EE1D84 /* SaySomethingNice5.swift */,
 			);
 			path = "My ROOM";
 			sourceTree = "<group>";
