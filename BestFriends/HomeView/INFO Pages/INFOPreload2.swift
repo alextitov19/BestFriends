@@ -58,36 +58,18 @@ struct INFOPreload2: View {
                     
                     
                     
+                 
                     
-                    Text("Welcome everyone from the")
+                    Spacer()
+                        .frame(height: 30)
+                    
+                    Text("BestFriends Launch Party")
                         .font(.system(size: 25))
                         .fontWeight(.thin)
                         .foregroundColor(ColorManager .purple5)
                         .multilineTextAlignment(.center)
-                    
-                    Text("Harvard WECode 2023")
-                        .font(.system(size: 25))
-                        .fontWeight(.thin)
-                        .foregroundColor(ColorManager .purple5)
-                        .multilineTextAlignment(.center)
-                    
-//                    Text("Feb. 18-19th")
-//                        .font(.system(size: 25))
-//                        .fontWeight(.thin)
-//                        .foregroundColor(Color.white)
-//                        .multilineTextAlignment(.center)
-                    
                     Spacer()
-                        .frame(height: 10)
-                    
-                    //                    Image("Harvard")
-                    //                        .resizable()
-                    //                        .frame(width: 50, height: 50)
-                    //                        .cornerRadius(10)
-                    //                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    //
-                    Spacer()
-                        .frame(height: 50)
+                        .frame(height: 5)
                     
                     Text("For stickers & cupcakes")
                         .font(.system(size: 17))
@@ -109,21 +91,21 @@ struct INFOPreload2: View {
                             .multilineTextAlignment(.center)
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 7)
                         
-                        Text("Email: Admin@SocialTechLabs.com")
+                        
+                        Text("Friday Feb. 17th 5-8pm")
+                            .font(.system(size: 17))
+                            .italic()
                             .fontWeight(.thin)
-                            .frame(width: 310, height: 25)
-                            .foregroundColor(Color .blue)
-                          
-                            .font(.system(size: 20))
-                            .background(ColorManager .grey1)
-                            .cornerRadius(4)
-                    
+                            .foregroundColor(ColorManager .grey4)
+                            .multilineTextAlignment(.center)
+                        
+                        
                         
                         Spacer()
-                            .frame(height: 50)
-                        
+                            .frame(height: 40)
+                      
                         VStack {
                             ZStack {
                                 
@@ -155,10 +137,39 @@ struct INFOPreload2: View {
                                                 .background(ColorManager .purple1)
                                         }
                                     }
+                                    
+                                    
                                 )}
                             
                             Spacer()
                                 .frame(height: 100)
+                            
+                            Text("Welcome everyone from the")
+                                .font(.system(size: 25))
+                                .fontWeight(.thin)
+                                .foregroundColor(ColorManager .purple5)
+                                .multilineTextAlignment(.center)
+                           
+                          
+                            
+                            Text("Harvard WECode 2023")
+                                .font(.system(size: 25))
+                                .fontWeight(.thin)
+                                .foregroundColor(ColorManager .purple5)
+                                .multilineTextAlignment(.center)
+         
+                            
+                            Text("Email: Admin@SocialTechLabs.com")
+                                .fontWeight(.thin)
+                                .frame(width: 310, height: 25)
+                                .foregroundColor(Color .blue)
+                              
+                                .font(.system(size: 20))
+                                .background(ColorManager .grey1)
+                                .cornerRadius(4)
+                            
+                            
+                         
                             
                             Text("(We are not affiliated with Harvard)")
                                 .font(.system(size: 13))
