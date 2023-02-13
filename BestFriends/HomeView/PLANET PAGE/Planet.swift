@@ -332,7 +332,7 @@ struct PlanetActionsView: View {
                         Spacer()
                             .frame(height: 13)
 //                        
-                                    Text("with BFFs")
+                                    Text("with BFF")
                                         .foregroundColor(Color .white)
                                         .italic()
                                         .font(.system(size: 15, weight: .light))

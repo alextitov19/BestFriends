@@ -59,7 +59,7 @@ struct HugPreload: View {
                  
                     
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .pmbc_blue, friendName: "missing \nyou")
+                        HugCircle (color: ColorManager .orange2, friendName: "missing \nyou")
                     })
                     .offset(x: showItems ? -130 : 0, y: showItems ? 170: 0)
                     .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)

@@ -59,7 +59,7 @@ struct SaySomethingNice5: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
-                ColorManager.orange1
+                ColorManager.orange3
                     .ignoresSafeArea()
             }
             
