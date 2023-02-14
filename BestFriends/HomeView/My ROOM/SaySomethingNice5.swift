@@ -125,10 +125,10 @@ struct SaySomethingNice5: View {
                                     .onTapGesture(perform: {
                                         if selectedFriends.contains(friends[0].id) {
                                             selectedFriends = selectedFriends.filter { $0 != friends[0].id }
-                                            colors[0] = ColorManager.purple3
+                                            colors[0] = ColorManager.orange2
                                         } else {
                                             selectedFriends.append(friends[0].id)
-                                            colors[0] = ColorManager.purple5
+                                            colors[0] = ColorManager.orange5
                                         }
                                         print(selectedFriends)
                                     })
@@ -143,7 +143,7 @@ struct SaySomethingNice5: View {
                                             colors[1] = ColorManager.purple3
                                         } else {
                                             selectedFriends.append(friends[1].id)
-                                            colors[1] = ColorManager.purple5
+                                            colors[1] = ColorManager.orange5
                                         }
                                         print(selectedFriends)
                                     })
@@ -162,7 +162,7 @@ struct SaySomethingNice5: View {
                                             colors[2] = ColorManager.purple3
                                         } else {
                                             selectedFriends.append(friends[2].id)
-                                            colors[2] = ColorManager.purple5
+                                            colors[2] = ColorManager.orange5
                                         }
                                         print(selectedFriends)
                                     })
@@ -176,7 +176,7 @@ struct SaySomethingNice5: View {
                                             colors[3] = ColorManager.purple3
                                         } else {
                                             selectedFriends.append(friends[3].id)
-                                            colors[3] = ColorManager.purple5
+                                            colors[3] = ColorManager.orange5
                                         }
                                         print(selectedFriends)
                                     })
@@ -191,7 +191,7 @@ struct SaySomethingNice5: View {
                                             colors[4] = ColorManager.purple3
                                         } else {
                                             selectedFriends.append(friends[4].id)
-                                            colors[4] = ColorManager.purple5
+                                            colors[4] = ColorManager.orange5
                                         }
                                         print(selectedFriends)
                                     })
@@ -220,7 +220,7 @@ struct SaySomethingNice5: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Everyone likes to know they are remembered.", isPresented: $showingAlert) {
+                                .alert("Everyone likes to know they are remembered", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
