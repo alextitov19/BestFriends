@@ -1313,6 +1313,7 @@
 				CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */,
 				CF6504152893192C0092EEB9 /* AtmosphereDVid.swift */,
 				CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */,
+				CFD12CC6281943CA00AB2539 /* Impetus.swift */,
 				CF3B65F128075F3B0003A714 /* FriendVault */,
 			);
 			path = Atmosphere;
@@ -1345,7 +1346,6 @@
 		CFD12CC52819436F00AB2539 /* OurStory */ = {
 			isa = PBXGroup;
 			children = (
-				CFD12CC6281943CA00AB2539 /* Impetus.swift */,
 			);
 			path = OurStory;
 			sourceTree = "<group>";

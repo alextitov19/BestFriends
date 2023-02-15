@@ -475,11 +475,11 @@ struct AtmosphereMain2: View {
                         
                         
                         NavigationLink(
-                            destination: ComingChat(user: user),
+                            destination: Impetus(user: user),
                             label: {
-                                Text("'story like' feature' (Q:3 2023)")
+                                Text("'story like' feature (Q:3 2023)")
                                     .fontWeight(.thin)
-                                    .frame(width: 310, height: 30)
+                                    .frame(width: 245, height: 30)
 //                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .foregroundColor(Color .black)
                                     .font(.system(size: 17))
