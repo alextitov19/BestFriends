@@ -181,7 +181,7 @@ struct PlanetActionsView: View {
                         })
                         
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 35)
                         
 //                        HugPushNotification(user: user, friends: friends
                         NavigationLink(destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere), label: {
@@ -290,7 +290,7 @@ struct PlanetActionsView: View {
                         
                         
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 25)
                         
                         
                         //
@@ -347,7 +347,7 @@ struct PlanetActionsView: View {
                         
                         
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 25)
                         
                    
                         
@@ -408,7 +408,7 @@ struct PlanetActionsView: View {
                     
                         
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 35)
                         
                         
                         //                    NavigationLink(destination: EmptyView(),
