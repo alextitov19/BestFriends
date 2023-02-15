@@ -66,7 +66,7 @@ struct ComingChat: View {
                         Spacer ()
                             .frame(height: 15)
                         
-                        Text("Video calling")
+                        Text("FaceTime")
                             .font(.system(size: 20))
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
