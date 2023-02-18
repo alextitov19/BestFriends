@@ -146,7 +146,7 @@
                              NavigationLink(
                                 destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
-                                    Text("Update My Vibe")
+                                    Text("Share Emotional Vibes")
                                         .fontWeight(.thin)
                                         .frame(width: 200, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
