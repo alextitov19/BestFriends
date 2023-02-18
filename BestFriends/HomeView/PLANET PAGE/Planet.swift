@@ -313,31 +313,31 @@ struct PlanetActionsView: View {
                                 
                               
                    
-                        Text("sharing")
+                        Text("my")
                             .foregroundColor(.white)
                             .font(.system(size: 19, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                             .opacity(0.50)
 
-                        Spacer()
-                            .frame(height: 5)
+//                        Spacer()
+//                            .frame(height: 5)
 
                         
-                                    Text("Emotional Vibes")
+                                    Text("Friends")
                                         .foregroundColor(.white)
-                                        .font(.system(size: 19, weight: .bold))
+                                        .font(.system(size: 30, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                        
                         Spacer()
                             .frame(height: 13)
 //                        
-                                    Text("with BFF")
-                                        .foregroundColor(Color .white)
-                                        .italic()
-                                        .font(.system(size: 15, weight: .light))
-                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.90)
+//                                    Text("with BFF")
+//                                        .foregroundColor(Color .white)
+//                                        .italic()
+//                                        .font(.system(size: 15, weight: .light))
+//                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.90)
 
                         
                         

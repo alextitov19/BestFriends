@@ -31,9 +31,9 @@
                 VStack {
                     
                     
-                    Text("finding Safety on")
-                        .font(.system(size: 20))
-                        .italic()
+                    Text("friends Helping friends")
+                        .font(.system(size: 27))
+                        
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager .grey3)
@@ -41,31 +41,6 @@
               
                 
 
-                    Text("BestFriends")
-                        .italic()
-                        .font(.system(size: 20))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .grey3)
-                    
-//
-//                    Text("your Vibe")
-//                        .italic()
-//                        .font(.system(size: 20))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager .grey3)
-
-//
-//
-//                    Text("BestFriends")
-//                        .font(.system(size: 35))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.grey2)
-                    
-    //                Spacer ()
-    //                     .frame(height: 70)
 
                     ZStack {
                    

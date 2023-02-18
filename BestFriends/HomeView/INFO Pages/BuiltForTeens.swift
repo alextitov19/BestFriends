@@ -35,9 +35,9 @@
                VStack {
                    
                    
-                   Text("friends being friends")
-                       .font(.system(size: 20))
-                       .italic()
+                   Text("friends Being friends")
+                       .font(.system(size: 27))
+                
                        .fontWeight(.light)
                        .multilineTextAlignment(.center)
                        .foregroundColor(ColorManager .grey3)
