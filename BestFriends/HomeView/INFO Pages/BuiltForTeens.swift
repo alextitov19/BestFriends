@@ -18,7 +18,7 @@
        let user: User
        let atmosphere: Atmosphere
        let friends: [User]
-       let friendAtmospheres: [Atmosphere]
+//       let friendAtmospheres: [Atmosphere]
        let groups: [Group]
 
        var body: some View {
@@ -35,41 +35,12 @@
                VStack {
                    
                    
-                   Text("finding Safety on")
+                   Text("friends being friends")
                        .font(.system(size: 20))
                        .italic()
                        .fontWeight(.light)
                        .multilineTextAlignment(.center)
                        .foregroundColor(ColorManager .grey3)
-
-             
-               
-
-                   Text("BestFriends")
-                       .italic()
-                       .font(.system(size: 20))
-                       .fontWeight(.light)
-                       .multilineTextAlignment(.center)
-                       .foregroundColor(ColorManager .grey3)
-                   
-//
-//                    Text("your Vibe")
-//                        .italic()
-//                        .font(.system(size: 20))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager .grey3)
-
-//
-//
-//                    Text("BestFriends")
-//                        .font(.system(size: 35))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.grey2)
-                   
-   //                Spacer ()
-   //                     .frame(height: 70)
 
                    ZStack {
                   
@@ -77,7 +48,7 @@
                        Image(systemName: "heart.fill")
                            .resizable()
                            .foregroundColor(ColorManager .purple2)
-                           .frame(width: 330, height: 330)
+                           .frame(width: 340, height: 330)
                            .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
                            .opacity(0.8)
 
@@ -96,7 +67,7 @@
 //                                .foregroundColor(ColorManager .grey3)
                            
                            
-                           Text("while letting the")
+                           Text("Everyone wants")
                                .font(.system(size: 20))
                                .italic()
                                .fontWeight(.light)
@@ -106,7 +77,7 @@
                      
                        
 
-                           Text("outside of you")
+                           Text("to know")
                                .italic()
                                .font(.system(size: 20))
                                .fontWeight(.light)
@@ -114,14 +85,14 @@
                                .foregroundColor(ColorManager .grey3)
                            
                        
-                           Text("match the")
+                           Text("their friends")
                                .italic()
                                .font(.system(size: 20))
                                .fontWeight(.light)
                                .multilineTextAlignment(.center)
                                .foregroundColor(ColorManager .grey3)
 
-                           Text("inside of you")
+                           Text("like them")
                                .italic()
                                .font(.system(size: 20))
                                .fontWeight(.light)
@@ -150,7 +121,7 @@
                            NavigationLink( destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
 //                               destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                label: {
-                                   Text("Sharing Emotions")
+                                   Text("Giving Comfort")
                                        .fontWeight(.thin)
                                        .frame(width: 220, height: 40)
                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

@@ -184,7 +184,7 @@ struct PlanetActionsView: View {
                             .frame(height: 35)
                         
 //                        HugPushNotification(user: user, friends: friends
-                        NavigationLink(destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere), label: {
+                        NavigationLink(destination: BuiltForTeens(user: user, atmosphere: atmosphere, friends: friends, groups: groups), label: {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
