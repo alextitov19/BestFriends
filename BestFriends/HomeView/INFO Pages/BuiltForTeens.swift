@@ -7,139 +7,173 @@
 
 
 
-import Foundation
-import SwiftUI
+   import Foundation
+   import SwiftUI
+   import AVKit
+
+   struct BuiltForTeens: View {
 
 
-struct BuiltForTeens: View {
-    
-    @EnvironmentObject var sessionManager: SessionManager
-    
-    let user: User
-//    let atmosphere: Atmosphere
-//    let friends: [User]
-//    let groups: [Group]
-//    let friendAtmospheres: [Atmosphere]
-//    
-    var body: some View {
-        ZStack {
-     
-            ColorManager .purple2
-              .ignoresSafeArea()
-              .onAppear()
-            
-            
-//            Color .black
-//              .ignoresSafeArea()
-//              .onAppear()
-            
-//            Image("blueBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
+       
+       let user: User
+       let atmosphere: Atmosphere
+       let friends: [User]
+       let friendAtmospheres: [Atmosphere]
+       let groups: [Group]
 
-            AdPlayerView(name: "dramaLights")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-                .opacity(0.75)
-          
-            
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-                .opacity(0.75)
-            
-            
-            ZStack {
-                Circle()
-                    .frame(width: 300, height: 300)
-                    .foregroundColor(ColorManager.purple3)
-                    .offset(x: 200, y: -450)
-                
-                Circle()
-                    .frame(width: 300, height: 300)
-                    .foregroundColor(ColorManager.purple3)
-                    .offset(x: -200, y: 400)
-            }
-                
-            VStack {
-//
-//                     Text("standing together in our drama")
-//                         .font(.system(size: 23))
-//                         .fontWeight(.thin)
-//                         .foregroundColor(Color.white)
-//                         .padding()
-//
-//
-//                Text("protecting each other's backs")
-//                    .font(.system(size: 23))
-//                    .fontWeight(.thin)
-//                    .foregroundColor(Color.white)
-//                    .padding()
-//
-//
-//                Text("never giving up on friends in need, \n            yielding true friends")
-//                    .font(.system(size: 23))
-//                    .fontWeight(.thin)
-//                    .foregroundColor(Color.white)
-//                    .padding()
-//
-//                Text("yet, each of us remaining \n       uniquely different")
-//                    .font(.system(size: 23))
-//                    .fontWeight(.thin)
-//                    .foregroundColor(Color.white)
-//                    .padding()
-//
-// //
-//                Spacer()
-//                    .frame(height: 50)
-//
-                    VStack {
+       var body: some View {
 
-                        NavigationLink(
-                           destination: ShaylaPage(user: user),
-                           label: {
-                               Text("Envisioned by Teens")
-                                   .fontWeight(.thin)
-                                   .frame(width: 270, height: 30)
-                                   .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                   .font(.system(size: 25))
-                                   .background(ColorManager.purple3)
-                                   .cornerRadius(15)
-                                   .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                           })
+           ZStack {
+
+               ColorManager .purple1
+                   .ignoresSafeArea()
+                   .onAppear()
+
+
+
+
+               VStack {
+                   
+                   
+                   Text("finding Safety on")
+                       .font(.system(size: 20))
+                       .italic()
+                       .fontWeight(.light)
+                       .multilineTextAlignment(.center)
+                       .foregroundColor(ColorManager .grey3)
+
+             
+               
+
+                   Text("BestFriends")
+                       .italic()
+                       .font(.system(size: 20))
+                       .fontWeight(.light)
+                       .multilineTextAlignment(.center)
+                       .foregroundColor(ColorManager .grey3)
+                   
+//
+//                    Text("your Vibe")
+//                        .italic()
+//                        .font(.system(size: 20))
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager .grey3)
+
+//
+//
+//                    Text("BestFriends")
+//                        .font(.system(size: 35))
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager.grey2)
+                   
+   //                Spacer ()
+   //                     .frame(height: 70)
+
+                   ZStack {
+                  
+
+                       Image(systemName: "heart.fill")
+                           .resizable()
+                           .foregroundColor(ColorManager .purple2)
+                           .frame(width: 330, height: 330)
+                           .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
+                           .opacity(0.8)
+
+
+
+                       VStack {
+                    
+                         
+
+//
+//                            Text("inside of you")
+//                                .italic()
+//                                .font(.system(size: 20))
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(ColorManager .grey3)
+                           
+                           
+                           Text("while letting the")
+                               .font(.system(size: 20))
+                               .italic()
+                               .fontWeight(.light)
+                               .multilineTextAlignment(.center)
+                               .foregroundColor(ColorManager .grey3)
+
+                     
+                       
+
+                           Text("outside of you")
+                               .italic()
+                               .font(.system(size: 20))
+                               .fontWeight(.light)
+                               .multilineTextAlignment(.center)
+                               .foregroundColor(ColorManager .grey3)
+                           
+                       
+                           Text("match the")
+                               .italic()
+                               .font(.system(size: 20))
+                               .fontWeight(.light)
+                               .multilineTextAlignment(.center)
+                               .foregroundColor(ColorManager .grey3)
+
+                           Text("inside of you")
+                               .italic()
+                               .font(.system(size: 20))
+                               .fontWeight(.light)
+                               .multilineTextAlignment(.center)
+                               .foregroundColor(ColorManager .grey3)
+                           
+                           
+//
+//
+//                            Spacer ()
+//                                .frame(height: 17)
+                           
+//
+//
+//                            Text("interacting with your BFF's")
+//
+//                                .font(.system(size: 20))
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(Color .white)
+                           
+                           Spacer ()
+                                .frame(height: 20)
+                           
+                           
+                           NavigationLink( destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
+//                               destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                               label: {
+                                   Text("Sharing Emotions")
+                                       .fontWeight(.thin)
+                                       .frame(width: 220, height: 40)
+                                       .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                       .font(.system(size: 30))
+                                       .background(ColorManager.purple3)
+                                       .cornerRadius(15)
+                                       .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                               })
+
+
                         
-                        Spacer()
-                            .frame(height: 30)
-                        
-                        NavigationLink(
-                            destination: InfoViewPlanet(user: user),
-                            label: {
-                                Text("Walk-through")
-                                    .fontWeight(.thin)
-                                    .frame(width: 175, height: 30)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(ColorManager.pmbc_green)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            })
-                        
+                           
+                           
+                           
+                              Spacer ()
+                                   .frame(height: 30)
 
-                        Spacer()
-                            .frame(height: 50)
+                       }
+                   }
+               }
+           }
+       }
+
+   }
 
 
-                      
-                 
-                        
-                    }
-                }
-                
-            }
-}
-    }
-
-        
-  

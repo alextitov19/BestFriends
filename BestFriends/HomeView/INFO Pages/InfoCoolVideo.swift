@@ -108,7 +108,7 @@ struct InfoCoolVideo: View {
 
 
                     NavigationLink(
-                        destination: BuiltForTeens(user: user),
+                        destination: EmptyView(),
                         label: {
                             Text("Next")
                                 .fontWeight(.thin)
