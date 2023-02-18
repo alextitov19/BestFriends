@@ -473,22 +473,22 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 25)
                         
-                        
-                        NavigationLink(
-                            destination: Impetus(user: user),
-                            label: {
-                                Text("'story like' feature (Q:3 2023)")
-                                    .fontWeight(.thin)
-                                    .frame(width: 245, height: 30)
-//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .foregroundColor(Color .black)
-                                    .font(.system(size: 17))
-                                    .background(ColorManager.pmbc_green)
-                                    .cornerRadius(10)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    .opacity(0.8)
-                            })
-                        
+//                        
+//                        NavigationLink(
+//                            destination: Impetus(user: user),
+//                            label: {
+//                                Text("'story like' feature (Q:3 2023)")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 245, height: 30)
+////                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .foregroundColor(Color .black)
+//                                    .font(.system(size: 17))
+//                                    .background(ColorManager.pmbc_green)
+//                                    .cornerRadius(10)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                    .opacity(0.8)
+//                            })
+//                        
 
                             VStack {
 

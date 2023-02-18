@@ -38,9 +38,17 @@
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager .grey3)
 
-              
+                    Text("in a super safe environment")
+                        .font(.system(size: 17))
+                        .italic()
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager .grey3)
                 
-
+                    
+                    
+                                                Spacer ()
+                                                    .frame(height: 17)
 
                     ZStack {
                    
@@ -58,16 +66,8 @@
                      
                           
 
-//
-//                            Text("inside of you")
-//                                .italic()
-//                                .font(.system(size: 20))
-//                                .fontWeight(.light)
-//                                .multilineTextAlignment(.center)
-//                                .foregroundColor(ColorManager .grey3)
                             
-                            
-                            Text("while letting the")
+                            Text("Letting the")
                                 .font(.system(size: 20))
                                 .italic()
                                 .fontWeight(.light)
@@ -77,7 +77,7 @@
                       
                         
 
-                            Text("outside of you")
+                            Text("inside of you")
                                 .italic()
                                 .font(.system(size: 20))
                                 .fontWeight(.light)
@@ -92,7 +92,7 @@
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(ColorManager .grey3)
 
-                            Text("inside of you")
+                            Text("outside of you")
                                 .italic()
                                 .font(.system(size: 20))
                                 .fontWeight(.light)
@@ -100,10 +100,7 @@
                                 .foregroundColor(ColorManager .grey3)
                             
                             
-//
-//
-//                            Spacer ()
-//                                .frame(height: 17)
+
                             
 //
 //
