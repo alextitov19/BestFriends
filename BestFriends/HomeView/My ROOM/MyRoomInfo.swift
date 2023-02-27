@@ -89,12 +89,12 @@ struct MyRoomInfo: View {
               
            
                 
-//                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-//                    MyRoomCircle (color: Color .white, friendName: "SmileVault")
-//                })
-//                .offset(x: showItems ? 120 : 0, y: showItems ? 120: 0)
-//                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-//                .opacity(0.25)
+                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
+                    MyRoomCircle (color: Color .white, friendName: "SmileVault")
+                })
+                .offset(x: showItems ? 120 : 0, y: showItems ? 120: 0)
+                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                .opacity(0.25)
                 
                 
 //                NavigationLink(destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends), label: {
