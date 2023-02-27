@@ -146,7 +146,7 @@ struct PickMediator: View {
                     Spacer()
                         .frame(height: 75)
                     
-                    Text("(we'll allow you to jump to 8 friend invites)")
+                    Text("(we'll allow you to jump to 7 friend invites)")
                         .font(.system(size: 17))
                         .italic()
                         .fontWeight(.thin)
