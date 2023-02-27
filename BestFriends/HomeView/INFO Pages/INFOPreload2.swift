@@ -56,139 +56,278 @@ struct INFOPreload2: View {
                 
                 VStack {
                     
+                    //                    HStack {
+                    //
+                    //                        Text("Launch Party")
+                    //                            .font(.system(size: 35))
+                    //                            .fontWeight(.thin)
+                    //                            .foregroundColor(ColorManager .purple5)
+                    //                            .multilineTextAlignment(.center)
+                    //
+                    //                    }
+                    //
+                    HStack {
+                        VStack {
+                            
+                            Text("Launch")
+                                .font(.system(size: 35, weight: .ultraLight))
+                                .foregroundColor(ColorManager .purple7)
+                            
+                            
+                            Text("Party")
+                                .font(.system(size: 35, weight: .ultraLight))
+                                .foregroundColor(ColorManager .purple7)
+                            
+                        }
+                        
+                        Image("pizzaStickers")
+                            .resizable()
+                            .frame(width: 75, height: 75)
+                            .cornerRadius(10)
+                        
+                    }
                     
                     
-                 
                     
-                    Spacer()
-                        .frame(height: 30)
                     
-                    Text("BestFriends Launch Party")
-                        .font(.system(size: 25))
+                    
+                    
+                    Text("stickers & pizza")
+                        .font(.system(size: 17))
+                        .italic()
+                    
                         .fontWeight(.thin)
                         .foregroundColor(ColorManager .purple5)
                         .multilineTextAlignment(.center)
+                    
+                    Spacer()
+                        .frame(height: 25)
+                    
+                    Text("Harvard _ 02.17.23")
+                        .font(.system(size: 17))
+                        .fontWeight(.thin)
+                        .foregroundColor(Color .black)
+                        .multilineTextAlignment(.leading)
+                    
+                    Text("(our initial public launch)")
+                        .font(.system(size: 17))
+                        .italic()
+                        .fontWeight(.thin)
+                        .foregroundColor(Color .black)
+                        .multilineTextAlignment(.leading)
+                    
+                    
+                    Spacer()
+                        .frame(height: 15)
+                    
+                    //                    Text("MIT _ TBD")
+                    //                        .font(.system(size: 17))
+                    //                        .fontWeight(.thin)
+                    //                        .foregroundColor(Color .black)
+                    //                        .multilineTextAlignment(.leading)
+                    
                     Spacer()
                         .frame(height: 5)
                     
-                    Text("For stickers & cupcakes")
-                        .font(.system(size: 17))
-                        .fontWeight(.thin)
-                        .foregroundColor(ColorManager .purple5)
-                        .multilineTextAlignment(.center)
-                    
-                    Text("find our co-founder, Leeza")
-                        .font(.system(size: 17))
-                        .fontWeight(.thin)
-                        .foregroundColor(ColorManager .purple5)
-                        .multilineTextAlignment(.center)
                     VStack {
                         
-                        Text("in the Leverett G Tower lounge")
+                        Text("Stanford _ this summer")
                             .font(.system(size: 17))
                             .fontWeight(.thin)
-                            .foregroundColor(ColorManager .purple5)
-                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .black)
+                            .multilineTextAlignment(.leading)
                         
                         Spacer()
-                            .frame(height: 7)
+                            .frame(height: 5)
                         
                         
-                        Text("Friday Feb. 17th 5-8pm")
+                        Text("Northwestern _ TBD")
                             .font(.system(size: 17))
-                            .italic()
                             .fontWeight(.thin)
-                            .foregroundColor(ColorManager .grey4)
-                            .multilineTextAlignment(.center)
-                        
-                        
+                            .foregroundColor(Color .black)
+                            .multilineTextAlignment(.leading)
                         
                         Spacer()
-                            .frame(height: 40)
-                      
+                            .frame(height: 5)
+                        
+                        
                         VStack {
-                            ZStack {
+                            
+                            Text("Univ. of Washington _ TBD")
+                                .font(.system(size: 17))
+                                .fontWeight(.thin)
+                                .foregroundColor(Color .black)
+                                .multilineTextAlignment(.leading)
+                            
+                            
+                            
+                            Spacer()
+                                .frame(height: 5)
+                            
+                            Text("George Washington _ TBD")
+                                .font(.system(size: 17))
+                                .fontWeight(.thin)
+                                .foregroundColor(Color .black)
+                                .multilineTextAlignment(.leading)
+                            VStack {
                                 
-                                Image(systemName: "heart.fill")
-                                    .resizable()
-                                    .foregroundColor(ColorManager .purple1)
-                                    .frame(width: 180, height: 150)
-                                    .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                                Spacer()
+                                    .frame(height: 5)
                                 
-                                //
+                                Text("Univ. of Rochester _ after Spring break")
+                                    .font(.system(size: 17))
+                                    .fontWeight(.thin)
+                                    .foregroundColor(Color .black)
+                                    .multilineTextAlignment(.leading)
                                 
-                                NavigationLink(
-                                    destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                    label: {
+                                Spacer()
+                                    .frame(height: 5)
+                                
+                                Text("George Mason _ TBD")
+                                    .font(.system(size: 17))
+                                    .fontWeight(.thin)
+                                    .foregroundColor(Color .black)
+                                    .multilineTextAlignment(.leading)
+                                
+                                Spacer()
+                                    .frame(height: 5)
+                                
+                                Text("RIT _ May 23")
+                                    .font(.system(size: 17))
+                                    .fontWeight(.thin)
+                                    .foregroundColor(Color .black)
+                                    .multilineTextAlignment(.leading)
+                                
+                                
+//                                
+//                                Text("(We are not affiliated with")
+//                                    .font(.system(size: 13))
+//                                    .italic()
+//                                    .fontWeight(.thin)
+//                                    .foregroundColor(Color.black)
+//                                    .multilineTextAlignment(.center)
+//                                
+//                                Text("above listed universities)")
+//                                    .font(.system(size: 13))
+//                                    .italic()
+//                                    .fontWeight(.thin)
+//                                    .foregroundColor(Color.black)
+//                                    .multilineTextAlignment(.center)
+//                                
+//                                
+//                                
+                                
+                                Spacer()
+                                    .frame(height: 10)
+                                
+                                VStack {
+                                    ZStack {
+                                        
+                                        Image(systemName: "heart.fill")
+                                            .resizable()
+                                            .foregroundColor(ColorManager .purple2)
+                                            .frame(width: 240, height: 200)
+                                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                                        
+                                        //
+                                        
                                         VStack {
-                                            Text("Welcome")
-                                                .fontWeight(.thin)
-                                                .frame(width: 135, height: 30)
-                                                .foregroundColor(ColorManager .purple3)
-                                                .font(.system(size: 35))
-                                                .background(ColorManager .purple1)
                                             
-                                            Text("Tap here")
+                                            Text("spnosored by")
                                                 .fontWeight(.thin)
-                                                .frame(width: 90, height: 30)
+                                                .italic()
+                                                .frame(width: 120, height: 30)
+                                                .foregroundColor(Color .black)
+                                                .font(.system(size: 15))
+                                                .background(ColorManager .purple2)
                                             
-                                                .foregroundColor(Color .green)
-                                                .font(.system(size: 20))
-                                                .background(ColorManager .purple1)
+                                            
+                                            Link(destination: URL(string: "https://rewritingthecode.org")!) {
+                                                
+                                                Text("Rewriting the Code")
+                                                    .fontWeight(.thin)
+                                                    .frame(width: 170, height: 30)
+                                                    .foregroundColor(Color .white)
+//                                                                                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                    .font(.system(size: 20))
+                                                    .background(ColorManager .purple5)
+                                                    .cornerRadius(10)
+                                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                            }
+                                            
+                                            
+                                            
+                                            //
+                                            //                                            NavigationLink(
+                                            //                                                destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
+                                            //                                                label: {
+                                            //                                                    VStack {
+                                            //
+                                            
+                                            
+                                            
+                                            Spacer()
+                                                .frame(height: 7)
+                                            //                                                        Text("Re-writing the Code")
+                                            //                                                            .fontWeight(.light)
+                                            //                                                            .frame(width: 170, height: 30)
+                                            //                                                            .foregroundColor(Color .green)
+                                            //                                                            .font(.system(size: 20))
+                                            //
+                                            //                                                            .background(ColorManager .purple5)
+                                            
+                                            
                                         }
                                     }
                                     
                                     
-                                )}
-                            
-                            Spacer()
-                                .frame(height: 100)
-                            
-                            Text("Welcome everyone from the")
-                                .font(.system(size: 25))
-                                .fontWeight(.thin)
-                                .foregroundColor(ColorManager .purple5)
-                                .multilineTextAlignment(.center)
-                           
-                          
-                            
-                            Text("Harvard WECode 2023")
-                                .font(.system(size: 25))
-                                .fontWeight(.thin)
-                                .foregroundColor(ColorManager .purple5)
-                                .multilineTextAlignment(.center)
-         
-                            
-                            Text("Email: Admin@SocialTechLabs.com")
-                                .fontWeight(.thin)
-                                .frame(width: 310, height: 25)
-                                .foregroundColor(Color .blue)
-                              
-                                .font(.system(size: 20))
-                                .background(ColorManager .grey1)
-                                .cornerRadius(4)
-                            
-                            
-                         
-                            
-                            Text("(We are not affiliated with Harvard)")
-                                .font(.system(size: 13))
-                                .italic()
-                                .fontWeight(.thin)
-                                .foregroundColor(Color.white)
-                                .multilineTextAlignment(.center)
-                            
-                            
-//                            Spacer()
-//                                .frame(height: 50)
-                            
-                            
+                                    //                                            )}
+                                    
+                                    Spacer()
+                                        .frame(height: 15)
+                                    //
+                                    //                                    Text("Welcome everyone from the")
+                                    //                                        .font(.system(size: 25))
+                                    //                                        .fontWeight(.thin)
+                                    //                                        .foregroundColor(ColorManager .purple5)
+                                    //                                        .multilineTextAlignment(.center)
+                                    //
+                                    //
+                                    //
+                                    //                                    Text("Harvard WECode 2023")
+                                    //                                        .font(.system(size: 25))
+                                    //                                        .fontWeight(.thin)
+                                    //                                        .foregroundColor(ColorManager .purple5)
+                                    //                                        .multilineTextAlignment(.center)
+                                    
+                                    //
+                                    //                                        Text("Email: Admin@SocialTechLabs.com")
+                                    //                                            .fontWeight(.thin)
+                                    //                                            .frame(width: 250, height: 25)
+                                    //                                            .foregroundColor(Color .blue)
+                                    //                                            .font(.system(size: 15))
+                                    //                                            .background(ColorManager .grey1)
+                                    //                                            .cornerRadius(4)
+                                    //
+                                    //
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    Spacer()
+                                        .frame(height: 50)
+                                    
+                                    
+                                }
+                                
+                            }
                         }
                         
                     }
                 }
-                
             }
         }
     }
+    
 }

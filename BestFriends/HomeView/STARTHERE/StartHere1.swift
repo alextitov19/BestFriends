@@ -87,7 +87,7 @@ struct StartHere1: View {
                 
                 
                 
-//
+
 //                NavigationLink(destination: INFOPreload4(user: user, friends: friends, groups: groups), label: {
 //                    StartHereCircle (color: ColorManager.purple3, friendName: "See who's\nusing \nBestFriends")
 //                })

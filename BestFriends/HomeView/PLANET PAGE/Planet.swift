@@ -162,7 +162,11 @@ struct PlanetActionsView: View {
                     
                     VStack {
                         
-                        NavigationLink(destination: SaySomethingNice8(user: user, atmosphere: atmosphere, friends: friends),
+                       
+                        
+//                        SaySomethingNice8(user: user, atmosphere: atmosphere, friends: friends
+                        
+                        NavigationLink(destination: PickMediator(user: user, friends: friends, groups: groups),
                                        label: {
                             ZStack {
                                 Circle()
@@ -239,9 +243,11 @@ struct PlanetActionsView: View {
                                         
                                             .opacity(0.95)
                                         
+//                                        INFOPreload2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
                                         
-                                        NavigationLink(
-                                            destination: INFOPreload2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                       
+                                        
+                                        NavigationLink(destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
                                             label: {
                                                 VStack {
                                                     Text("START")

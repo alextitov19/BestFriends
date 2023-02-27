@@ -125,7 +125,7 @@ struct SaySomethingNice5: View {
                                     .onTapGesture(perform: {
                                         if selectedFriends.contains(friends[0].id) {
                                             selectedFriends = selectedFriends.filter { $0 != friends[0].id }
-                                            colors[0] = ColorManager.orange2
+                                            colors[0] = ColorManager.purple3
                                         } else {
                                             selectedFriends.append(friends[0].id)
                                             colors[0] = ColorManager.orange5
@@ -159,7 +159,7 @@ struct SaySomethingNice5: View {
                                     .onTapGesture(perform: {
                                         if selectedFriends.contains(friends[2].id) {
                                             selectedFriends = selectedFriends.filter { $0 != friends[2].id }
-                                            colors[2] = ColorManager.purple3
+                                            colors[2] = ColorManager.orange3
                                         } else {
                                             selectedFriends.append(friends[2].id)
                                             colors[2] = ColorManager.orange5
@@ -275,11 +275,10 @@ struct SaySomethingNice5: View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
                 .frame(width: 90, height: 90)
-               .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//               .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
 //                .foregroundColor(ColorManager .orange1)
                 .font(.system(size: 8))
-                .background(ColorManager.pmbc_green)
-//                .background(color)
+                .background(color)
                 .cornerRadius(75)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
         }
