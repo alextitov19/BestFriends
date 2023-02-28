@@ -166,7 +166,7 @@ struct PlanetActionsView: View {
                         
 //                        SaySomethingNice8(user: user, atmosphere: atmosphere, friends: friends
                         
-                        NavigationLink(destination: PickMediator(user: user, friends: friends, groups: groups),
+                        NavigationLink(destination: PickMediator(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
                             ZStack {
                                 Circle()

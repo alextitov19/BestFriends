@@ -13,10 +13,16 @@ import AVKit
 
 struct INFOPreload4: View {
     
-    let user: User
-    let friends: [User]
-    let groups: [Group]
+//    let user: User
+//    let friends: [User]
+//    let groups: [Group]
     //    let atmosphere: Atmosphere
+    
+    let user: User
+   let atmosphere: Atmosphere
+    let friends: [User]
+   let friendAtmospheres: [Atmosphere]
+    let groups: [Group]
     //
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
@@ -120,7 +126,7 @@ struct INFOPreload4: View {
                     
                     
                  
-                    NavigationLink(destination: InviteView(user: user), label: {
+                    NavigationLink(destination: InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups), label: {
                         InfoCircle (color: ColorManager .pmbc_green, friendName: "...and \nYOU! \n(add friends)")
                     })
                     .offset(x: showItems ? -80 : 0, y: showItems ? -300: 0)

@@ -83,7 +83,7 @@ struct INFOPreloadA: View {
 //                    .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                     
                     
-                    NavigationLink(destination: INFOPreload4(user: user, friends: friends, groups: groups), label: {
+                    NavigationLink(destination: INFOPreload4(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups), label: {
                         InfoCircle (color: ColorManager.purple3, friendName: "See who's\nusing \nBestFriends \n\nmore...")
                     })
                     .offset(x: showItems ? -20 : 0, y: showItems ? 220: 0)

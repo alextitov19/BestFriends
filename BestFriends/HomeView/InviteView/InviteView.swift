@@ -17,7 +17,15 @@ struct InviteView: View {
 //    @State private var showingAlert = false
 //    @State private var shareColor = ColorManager.purple5
     
+//    let user: User
+    
     let user: User
+   let atmosphere: Atmosphere
+    let friends: [User]
+   let friendAtmospheres: [Atmosphere]
+    let groups: [Group]
+    
+    
     
     var body: some View {
         ZStack {
@@ -44,7 +52,7 @@ struct InviteView: View {
 //                    .font(.system(size: 27, weight: .light))
                 
                 NavigationLink(
-                   destination: WhyFiveFriends(),
+                    destination: WhyFiveFriends(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
                    label: {
                        Text("Why only 5 Friends")
                            .fontWeight(.thin)

@@ -18,7 +18,7 @@ struct StartHere1: View {
     let friends: [User]
     let friendAtmospheres: [Atmosphere]
     let groups: [Group]
-    //    let friendAtmospheres: [Atmosphere]
+   
     
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
@@ -56,7 +56,7 @@ struct StartHere1: View {
                 
                 
                 
-                NavigationLink(destination: InviteView(user: user), label: {
+                NavigationLink(destination: InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups), label: {
                     StartHereCircle (color: ColorManager.pmbc_green, friendName: "ADD \nup to 5 \nFriends")
                 })
                 .offset(x: showItems ? -90 : 0, y: showItems ? -270: 0)

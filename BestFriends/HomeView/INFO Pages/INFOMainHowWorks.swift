@@ -294,7 +294,7 @@ struct INFOMainHowWorks: View {
 //                        InviteView(user: user
                         NavigationLink(
                             
-                            destination: InviteView(user: user),
+                            destination: InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
                                 Text("Get Started \nInvite your friends")
                                     .fontWeight(.light)

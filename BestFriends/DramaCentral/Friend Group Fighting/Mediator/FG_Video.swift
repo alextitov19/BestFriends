@@ -13,10 +13,16 @@ import AVKit
 struct FG_Video: View {
     
     
-    let user: User
-    let friends: [User]
-    let groups: [Group]
+//    let user: User
+//    let friends: [User]
+//    let groups: [Group]
 
+    
+    let user: User
+      let atmosphere: Atmosphere
+      let friends: [User]
+      let friendAtmospheres: [Atmosphere]
+      let groups: [Group]
     
     var body: some View {
         
@@ -50,7 +56,7 @@ struct FG_Video: View {
 //                    .frame(height: 0)
                 
                 NavigationLink(
-                    destination: PickMediator(user: user, friends: friends, groups: groups),
+                    destination: PickMediator(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
                     label: {
                         Text("SKIP")
                             .fontWeight(.thin)

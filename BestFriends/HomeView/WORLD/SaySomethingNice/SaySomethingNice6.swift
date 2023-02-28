@@ -65,7 +65,7 @@ struct SaySomethingNice6: View {
                       
                 NavigationLink(
                     
-                    destination: InviteView(user: user),
+                    destination: InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
                     label: {
                         Text("Invite your friends")
                             .fontWeight(.light)

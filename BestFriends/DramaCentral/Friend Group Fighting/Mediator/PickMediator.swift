@@ -12,9 +12,18 @@ struct PickMediator: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
+//    let user: User
+//    let friends: [User]
+//    let groups: [Group]
+//
+
     let user: User
+    let atmosphere: Atmosphere
     let friends: [User]
+    let friendAtmospheres: [Atmosphere]
     let groups: [Group]
+    
+    
     
     @State private var selectedFriends: [String] = []
     @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
@@ -119,7 +128,7 @@ struct PickMediator: View {
                     
                     
                     NavigationLink(
-                        destination: InviteView(user: user),
+                        destination: InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
                         label: {
                             Text("invite a Guy or 2")
                                 .fontWeight(.thin)
