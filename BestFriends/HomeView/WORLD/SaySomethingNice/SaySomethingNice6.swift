@@ -68,7 +68,7 @@ struct SaySomethingNice6: View {
                     .font(.system(size: 35))
                 
                     .foregroundColor(ColorManager.grey1)
-                    .fontWeight(.thin)
+                    .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                 
 
@@ -79,28 +79,72 @@ struct SaySomethingNice6: View {
             VStack {
            
               
-                      
+             
+                
+                
                 NavigationLink(
-                    
-                    destination: InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
+                    destination: PickMediator(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
                     label: {
-                        Text("Invite your friends")
-                            .fontWeight(.light)
-                            .foregroundColor(Color.white)
+                        Text("Why build a \nmixed friend group")
+                            .fontWeight(.thin)
                             .frame(width: 220, height: 60)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 25))
-                            .background(ColorManager.pmbc_green)
+                            .background(ColorManager.purple3)
                             .cornerRadius(7)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
+                            .opacity(0.50)
                     })
                 
+                Text("If you build a mixed")
+                //                    .font(.system(size: 25, weight: .bold))
+                    .font(.system(size: 17, weight: .bold))
+                    .foregroundColor(Color .white)
+                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.50)
+                    .multilineTextAlignment(.center)
+                
+                Text("group of friends, you may")
+                //                    .font(.system(size: 25, weight: .bold))
+                    .font(.system(size: 17, weight: .bold))
+                    .foregroundColor(ColorManager .grey1)
+                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.50)
+                    .multilineTextAlignment(.center)
+                
+                Text("invite up to 7 (instead of 5) friends.")
+                //                    .font(.system(size: 25, weight: .bold))
+                    .font(.system(size: 17, weight: .bold))
+                    .foregroundColor(ColorManager .grey1)
+                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.50)
+                    .multilineTextAlignment(.center)
+                
+                
+                
+                
+                
+          NavigationLink(
+              
+              destination: InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
+              label: {
+                  Text("Invite your friends")
+                      .fontWeight(.light)
+                      .foregroundColor(Color.white)
+                      .frame(width: 220, height: 60)
+                      .font(.system(size: 25))
+                      .background(ColorManager.pmbc_green)
+                      .cornerRadius(7)
+                      .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                      
+              })
+          
                 
                 
                 
                 
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 50)
                 
                 
                         NavigationLink(

@@ -142,6 +142,37 @@ struct PickMediator: View {
                         })
                     
                     
+                    Button(action: {
+                        counter += 1
+                        shareTapped = true
+                        shareButtonTapped()
+                    },
+                           label: {
+                        Text("Invite a guy or two.")
+                        
+                            .fontWeight(.thin)
+                            .frame(width: 310, height: 70)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 15))
+                            .background(ColorManager.purple3)
+                            .cornerRadius(15)
+                            .opacity(0.50)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            
+                            .alert("Nope, it's not embarrasment or being teased.\nThey ponder solutions wanting to \nsolve it - not talk about it.", isPresented: $showingAlert) {
+                                Button("OK", role: .cancel) { }
+                                    .opacity(0.50)
+                            }
+                    })
+                    .confettiCannon(counter: $counter)
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     Spacer()
                         .frame(height: 30)
                     
