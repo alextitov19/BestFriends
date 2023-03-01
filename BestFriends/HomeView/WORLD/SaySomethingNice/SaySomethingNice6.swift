@@ -96,31 +96,7 @@ struct SaySomethingNice6: View {
                             .opacity(0.50)
                     })
                 
-                Text("If you build a mixed")
-                //                    .font(.system(size: 25, weight: .bold))
-                    .font(.system(size: 17, weight: .bold))
-                    .foregroundColor(Color .white)
-                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    .opacity(0.50)
-                    .multilineTextAlignment(.center)
-                
-                Text("group of friends, you may")
-                //                    .font(.system(size: 25, weight: .bold))
-                    .font(.system(size: 17, weight: .bold))
-                    .foregroundColor(ColorManager .grey1)
-                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    .opacity(0.50)
-                    .multilineTextAlignment(.center)
-                
-                Text("invite up to 7 (instead of 5) friends.")
-                //                    .font(.system(size: 25, weight: .bold))
-                    .font(.system(size: 17, weight: .bold))
-                    .foregroundColor(ColorManager .grey1)
-                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    .opacity(0.50)
-                    .multilineTextAlignment(.center)
-                
-                
+        
                 
                 
                 

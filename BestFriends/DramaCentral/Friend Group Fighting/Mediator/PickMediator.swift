@@ -69,50 +69,49 @@ struct PickMediator: View {
                 Spacer()
                     .frame(height: 15)
                 
-                Button(action: {
-                    counter += 1
-                    shareTapped = true
-                    shareButtonTapped()
-                },
-                       label: {
-                    Text("Nope, it's not embarrasment or being teased.\nThey ponder solutions to \nsolve it - not talk about it.")
-                    
-                        .fontWeight(.thin)
-                        .frame(width: 310, height: 70)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .font(.system(size: 15))
-                        .background(ColorManager.purple3)
-                        .cornerRadius(15)
-                        .opacity(0.50)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                
+                
+                NavigationLink(
+                    destination: InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
+                    label: {
+                        Text("Nope, it's not embarrasment or being teased.\nThey ponder solutions to \nsolve it - not talk about it.")
                         
-                        .alert("Nope, it's not embarrasment or being teased.\nThey ponder solutions wanting to \nsolve it - not talk about it.", isPresented: $showingAlert) {
-                            Button("OK", role: .cancel) { }
-                                .opacity(0.50)
-                        }
-                })
-                .confettiCannon(counter: $counter)
-                
-                
-                
-        
-                //                MARK:
-//
-//                NavigationLink(
-//                    destination: InviteView(user: user),
-//                    label: {
-//                        Text("Nope, it's not embarrisment or being teased.\nThey ponder solutions wanting to \nsolve it - not talk about it.")
-//                            .fontWeight(.thin)
-//                            .frame(width: 310, height: 70)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                            .font(.system(size: 15))
-//                            .background(ColorManager.purple3)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                            .opacity(0.50)
-//
-//                    })
-                
+                            .fontWeight(.thin)
+                            .frame(width: 310, height: 70)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 17))
+                            .background(ColorManager.purple3)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
+                    })
+//                
+//                Button(action: {
+//                    counter += 1
+//                    shareTapped = true
+//                    shareButtonTapped()
+//                },
+//                       label: {
+//                    Text("Nope, it's not embarrasment or being teased.\nThey ponder solutions to \nsolve it - not talk about it.")
+//                    
+//                        .fontWeight(.thin)
+//                        .frame(width: 310, height: 70)
+//                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                        .font(.system(size: 15))
+//                        .background(ColorManager.purple3)
+//                        .cornerRadius(15)
+//                        .opacity(0.50)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        
+//                        .alert("Nope, it's not embarrasment or being teased.\nThey ponder solutions wanting to \nsolve it - not talk about it.", isPresented: $showingAlert) {
+//                            Button("OK", role: .cancel) { }
+////                                .opacity(0.50)
+//                        }
+//                })
+//                .confettiCannon(counter: $counter)
+//                
+//                
+
                 Spacer()
                     .frame(height: 200)
                 
@@ -125,58 +124,91 @@ struct PickMediator: View {
                         .foregroundColor(.white)
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
+                   
+                    
+                    
+                    
+                    
                     
                     
                     NavigationLink(
                         destination: InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
                         label: {
-                            Text("invite a Guy or 2")
+                            Text("If you build a mixed group of friends, you may invite up to 7 (instead of 5) friends")
+                            
                                 .fontWeight(.thin)
-                                .frame(width: 250, height: 40)
+                                .frame(width: 310, height: 70)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 27))
+                                .font(.system(size: 17))
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
+
                         })
-                    
-                    
-                    Button(action: {
-                        counter += 1
-                        shareTapped = true
-                        shareButtonTapped()
-                    },
-                           label: {
-                        Text("Invite a guy or two.")
-                        
-                            .fontWeight(.thin)
-                            .frame(width: 310, height: 70)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 15))
-                            .background(ColorManager.purple3)
-                            .cornerRadius(15)
-                            .opacity(0.50)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                            .alert("Nope, it's not embarrasment or being teased.\nThey ponder solutions wanting to \nsolve it - not talk about it.", isPresented: $showingAlert) {
-                                Button("OK", role: .cancel) { }
-                                    .opacity(0.50)
-                            }
-                    })
+
                     .confettiCannon(counter: $counter)
                     
-                    
-                    
-                    
-                    
-                    
+//
+//
+//                    Button(action: {
+//                        counter += 1
+//                        shareTapped = true
+//                        shareButtonTapped()
+//                    },
+//                           label: {
+//                        Text("If you build a mixed group of friends, you may invite up to 7 (instead of 5) friends")
+//
+//                            .fontWeight(.thin)
+//                            .frame(width: 310, height: 70)
+//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                            .font(.system(size: 15))
+//                            .background(ColorManager.purple3)
+//                            .cornerRadius(15)
+//                            .opacity(0.50)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                            .alert("Nope, it's not embarrasment or being teased.\nThey ponder solutions wanting to \nsolve it - not talk about it.", isPresented: $showingAlert) {
+//                                Button("OK", role: .cancel) { }
+////                                    .opacity(0.80)
+//                            }
+//                    })
+//                    .confettiCannon(counter: $counter)
+//
+//
+//                    Text("")
+//                    //                    .font(.system(size: 25, weight: .bold))
+//                        .font(.system(size: 17, weight: .bold))
+//                        .foregroundColor(Color .white)
+//                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                        .opacity(0.50)
+//                        .multilineTextAlignment(.center)
+//
+//                    Text("")
+//                    //                    .font(.system(size: 25, weight: .bold))
+//                        .font(.system(size: 17, weight: .bold))
+//                        .foregroundColor(ColorManager .grey1)
+//                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                        .opacity(0.50)
+//                        .multilineTextAlignment(.center)
+//
+//                    Text(".")
+//                    //                    .font(.system(size: 25, weight: .bold))
+//                        .font(.system(size: 17, weight: .bold))
+//                        .foregroundColor(ColorManager .grey1)
+//                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                        .opacity(0.50)
+//                        .multilineTextAlignment(.center)
+//
+//
+//
+//
+//
                     
                     
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("and, sometimes they just want \nsomeone to talk to")
+                    Text("and, sometimes they're \nnice to talk to")
                         .font(.system(size: 25))
                         .italic()
                         .foregroundColor(.white)
@@ -185,14 +217,7 @@ struct PickMediator: View {
                     
                     Spacer()
                         .frame(height: 75)
-                    
-                    Text("(we'll allow you to jump to 7 friend invites)")
-                        .font(.system(size: 17))
-                        .italic()
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.white)
-                        .multilineTextAlignment(.center)
-                    
+           
                  
                                 }
                 

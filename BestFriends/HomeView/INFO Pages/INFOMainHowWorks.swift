@@ -285,28 +285,26 @@ struct INFOMainHowWorks: View {
                         //
                     }
                     
-                    VStack {
-                        
-                        Spacer()
-                            .frame(height: 50)
-                        
-//                        StartHere1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
-//                        InviteView(user: user
-                        NavigationLink(
-                            
-                            destination: InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
-                            label: {
-                                Text("Get Started \nInvite your friends")
-                                    .fontWeight(.light)
-                                    .foregroundColor(Color.white)
-                                    .frame(width: 200, height: 60)
-                                    .font(.system(size: 22))
-                                    .background(ColorManager.pmbc_green)
-                                    .cornerRadius(7)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            }
-                        )}
+//                    VStack {
+//
+//                        Spacer()
+//                            .frame(height: 50)
+//
+//                        NavigationLink(
+//
+//                            destination: InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
+//                            label: {
+//                                Text("Get Started \nInvite your friends")
+//                                    .fontWeight(.light)
+//                                    .foregroundColor(Color.white)
+//                                    .frame(width: 200, height: 60)
+//                                    .font(.system(size: 22))
+//                                    .background(ColorManager.pmbc_green)
+//                                    .cornerRadius(7)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                            }
+//                        )}
                     
                     VStack {
                         
