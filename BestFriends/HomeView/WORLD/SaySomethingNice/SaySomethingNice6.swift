@@ -39,25 +39,42 @@ struct SaySomethingNice6: View {
             
             VStack {
          
-             
-                
-                Text("Getting")
-                    .font(.system(size: 45))
+                Text("BestFriends")
+                    .font(.system(size: 27))
                 
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
-            
                 
-                Text("S T A R T E D")
-                    .font(.system(size: 60))
+                
+                Text("is about friendships")
+                    .font(.system(size: 25))
+                    .italic()
+                    .foregroundColor(ColorManager.grey1)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                
+                Spacer()
+                    .frame(height: 50)
+                
+                Text("If you don't add friends")
+                    .font(.system(size: 25))
                 
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
+                
+                Text("this app doesn't work")
+                    .font(.system(size: 35))
+                
+                    .foregroundColor(ColorManager.grey1)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                
+
             
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 70)
                 
             VStack {
            
@@ -72,10 +89,10 @@ struct SaySomethingNice6: View {
                             .foregroundColor(Color.white)
                             .frame(width: 220, height: 60)
                             .font(.system(size: 25))
-                            .background(ColorManager.purple3)
+                            .background(ColorManager.pmbc_green)
                             .cornerRadius(7)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
+                            
                     })
                 
                 
@@ -97,7 +114,7 @@ struct SaySomethingNice6: View {
                                     .background(ColorManager.purple3)
                                     .cornerRadius(7)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
+                                    .opacity(0.50)
                             })
                  
                 
@@ -118,7 +135,7 @@ struct SaySomethingNice6: View {
                             .background(ColorManager.purple3)
                             .cornerRadius(7)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
+                            .opacity(0.50)
                     })
          
                 
