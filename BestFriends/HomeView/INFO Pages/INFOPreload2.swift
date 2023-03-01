@@ -174,7 +174,7 @@ struct INFOPreload2: View {
                                 Spacer()
                                     .frame(height: 5)
                                 
-                                Text("Univ. of Rochester _ after Spring break")
+                                Text("Exavior Boarding School _ May")
                                     .font(.system(size: 17))
                                     .fontWeight(.thin)
                                     .foregroundColor(Color .black)
@@ -191,13 +191,13 @@ struct INFOPreload2: View {
                                 
                                 Spacer()
                                     .frame(height: 5)
-                                
-                                Text("RIT _ May 23")
-                                    .font(.system(size: 17))
-                                    .fontWeight(.thin)
-                                    .foregroundColor(Color .black)
-                                    .multilineTextAlignment(.leading)
-                                
+//                                
+//                                Text("RIT _ May 23")
+//                                    .font(.system(size: 17))
+//                                    .fontWeight(.thin)
+//                                    .foregroundColor(Color .black)
+//                                    .multilineTextAlignment(.leading)
+//                                
                                 
 //                                
 //                                Text("(We are not affiliated with")
