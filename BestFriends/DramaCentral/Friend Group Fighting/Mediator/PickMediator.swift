@@ -58,13 +58,26 @@ struct PickMediator: View {
             VStack {
                 
                 
-                Text("The myth of why guys don't talk ...")
+                Text("The myth of why guys")
                     .font(.system(size: 25))
-                    .italic()
                     .foregroundColor(.white)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
+                
+                Text("don't talk about problems")
+                    .font(.system(size: 25))
+                    .foregroundColor(.white)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                
+                
+                Text("(for that matter even want to use this app)")
+                    .font(.system(size: 17))
+                    .italic()
+                    .foregroundColor(.black)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height: 15)
@@ -74,10 +87,10 @@ struct PickMediator: View {
                 NavigationLink(
                     destination: InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
                     label: {
-                        Text("Nope, it's not embarrasment or being teased.\nThey ponder solutions to \nsolve it - not talk about it.")
+                        Text("It's not embarrasment or being teased. \nInstead they ponder solutions")
                         
                             .fontWeight(.thin)
-                            .frame(width: 310, height: 70)
+                            .frame(width: 320, height: 70)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 17))
                             .background(ColorManager.purple3)
@@ -118,7 +131,7 @@ struct PickMediator: View {
                 VStack {
                     
                     
-                    Text("Girls _ consider adding a guy \nto help find solutions")
+                    Text("Girls _ consider adding a guy \nto your Friendgroup")
                         .font(.system(size: 25))
                         .italic()
                         .foregroundColor(.white)
@@ -134,7 +147,7 @@ struct PickMediator: View {
                     NavigationLink(
                         destination: InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
                         label: {
-                            Text("If you build a mixed group of friends, you may invite up to 7 (instead of 5) friends")
+                            Text("If you build a gender mixed group of friends, you may invite up to 7 (instead of 5) friends")
                             
                                 .fontWeight(.thin)
                                 .frame(width: 310, height: 70)
@@ -148,67 +161,11 @@ struct PickMediator: View {
 
                     .confettiCannon(counter: $counter)
                     
-//
-//
-//                    Button(action: {
-//                        counter += 1
-//                        shareTapped = true
-//                        shareButtonTapped()
-//                    },
-//                           label: {
-//                        Text("If you build a mixed group of friends, you may invite up to 7 (instead of 5) friends")
-//
-//                            .fontWeight(.thin)
-//                            .frame(width: 310, height: 70)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                            .font(.system(size: 15))
-//                            .background(ColorManager.purple3)
-//                            .cornerRadius(15)
-//                            .opacity(0.50)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//                            .alert("Nope, it's not embarrasment or being teased.\nThey ponder solutions wanting to \nsolve it - not talk about it.", isPresented: $showingAlert) {
-//                                Button("OK", role: .cancel) { }
-////                                    .opacity(0.80)
-//                            }
-//                    })
-//                    .confettiCannon(counter: $counter)
-//
-//
-//                    Text("")
-//                    //                    .font(.system(size: 25, weight: .bold))
-//                        .font(.system(size: 17, weight: .bold))
-//                        .foregroundColor(Color .white)
-//                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                        .opacity(0.50)
-//                        .multilineTextAlignment(.center)
-//
-//                    Text("")
-//                    //                    .font(.system(size: 25, weight: .bold))
-//                        .font(.system(size: 17, weight: .bold))
-//                        .foregroundColor(ColorManager .grey1)
-//                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                        .opacity(0.50)
-//                        .multilineTextAlignment(.center)
-//
-//                    Text(".")
-//                    //                    .font(.system(size: 25, weight: .bold))
-//                        .font(.system(size: 17, weight: .bold))
-//                        .foregroundColor(ColorManager .grey1)
-//                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                        .opacity(0.50)
-//                        .multilineTextAlignment(.center)
-//
-//
-//
-//
-//
-                    
-                    
+                  
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("and, sometimes they're \nnice to talk to")
+                    Text("Besides, everyone welcomes a hug")
                         .font(.system(size: 25))
                         .italic()
                         .foregroundColor(.white)
