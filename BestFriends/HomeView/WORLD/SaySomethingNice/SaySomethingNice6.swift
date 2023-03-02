@@ -23,14 +23,16 @@ struct SaySomethingNice6: View {
 
     var body: some View {
         ZStack {
-//            ColorManager.grey4
-//                .ignoresSafeArea()
-//                .onAppear()
             
-            Image("purpleBackground")
-                 .resizable()
-                 .ignoresSafeArea()
-                 .scaledToFill()
+            
+            Color .black
+                .ignoresSafeArea()
+                .onAppear()
+            
+//            Image("purpleBackground")
+//                 .resizable()
+//                 .ignoresSafeArea()
+//                 .scaledToFill()
             
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()

@@ -23,15 +23,16 @@ struct INFOPreloadA: View {
 
     var body: some View {
         ZStack {
-//            ColorManager.grey4
-//                .ignoresSafeArea()
-//                .onAppear()
             
-            Image("purpleBackground")
-                 .resizable()
-                 .ignoresSafeArea()
-                 .scaledToFill()
+            Color .black
+                .ignoresSafeArea()
+                .onAppear()
             
+//            Image("purpleBackground")
+//                 .resizable()
+//                 .ignoresSafeArea()
+//                 .scaledToFill()
+//
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
@@ -39,17 +40,17 @@ struct INFOPreloadA: View {
             
             VStack {
          
-                Text("BestFriends")
-                    .font(.system(size: 30))
-                
+                Text("BestFriends is about")
+                    .font(.system(size: 20))
+                    .italic()
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
                 
-                Text("is about friendships")
-                    .font(.system(size: 43))
-                    .italic()
+                Text("friendships")
+                    .font(.system(size: 65))
+                    
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
@@ -80,7 +81,7 @@ struct INFOPreloadA: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text("If you want \ncloser, more meaningful friendships")
+                Text("If you want closer, \nmore meaningful friendships")
                     .font(.system(size: 22))
                 
                     .foregroundColor(ColorManager.grey1)
