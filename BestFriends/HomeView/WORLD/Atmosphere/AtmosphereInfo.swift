@@ -38,7 +38,7 @@
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager .grey3)
 
-                    Text("in a super safe environment")
+                    Text("in a super safe environment \nwhere you can")
                         .font(.system(size: 17))
                         .italic()
                         .fontWeight(.light)
@@ -67,7 +67,7 @@
                           
 
                             
-                            Text("Letting the")
+                            Text("Let the the inside of you")
                                 .font(.system(size: 20))
                                 .italic()
                                 .fontWeight(.light)
@@ -77,39 +77,35 @@
                       
                         
 
-                            Text("inside of you")
-                                .italic()
-                                .font(.system(size: 20))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager .grey3)
-                            
-                        
-                            Text("match the")
-                                .italic()
-                                .font(.system(size: 20))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager .grey3)
-
-                            Text("outside of you")
-                                .italic()
-                                .font(.system(size: 20))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager .grey3)
-                            
-                            
-
-                            
-//
-//
-//                            Text("interacting with your BFF's")
-//
+//                            Text("inside of you")
+//                                .italic()
 //                                .font(.system(size: 20))
 //                                .fontWeight(.light)
 //                                .multilineTextAlignment(.center)
-//                                .foregroundColor(Color .white)
+//                                .foregroundColor(ColorManager .grey3)
+                           
+                            Spacer ()
+                                 .frame(height: 7)
+                        
+                            Text("match")
+                                .italic()
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager .grey3)
+                            
+                            Spacer ()
+                                 .frame(height: 7)
+
+                            Text("the outside of you")
+                                .italic()
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager .grey3)
+                            
+                            
+
                             
                             Spacer ()
                                  .frame(height: 20)
