@@ -57,17 +57,9 @@ struct INFOPreloadA: View {
                 Spacer()
                     .frame(height: 100)
                 
-                Text("If you want happier friendships")
-                    .font(.system(size: 22))
+             
                 
-                    .foregroundColor(ColorManager.grey1)
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
-                
-                Spacer()
-                    .frame(height: 20)
-                
-                Text("If you want quick & easy \nreassurance your friends like you")
+                Text("If you want simple reassurances \nyour friends truely like you")
                     .font(.system(size: 22))
                 
                     .foregroundColor(ColorManager.grey1)
@@ -76,9 +68,19 @@ struct INFOPreloadA: View {
                 
                 
                 Spacer()
-                    .frame(height: 22)
+                    .frame(height: 25)
                 
                 Text("If you want your friends \nto be there for you on bad days")
+                    .font(.system(size: 22))
+                
+                    .foregroundColor(ColorManager.grey1)
+                    .fontWeight(.regular)
+                    .multilineTextAlignment(.center)
+                
+                Spacer()
+                    .frame(height: 25)
+                
+                Text("If you want \ncloser, more meaningful friendships")
                     .font(.system(size: 22))
                 
                     .foregroundColor(ColorManager.grey1)
@@ -96,10 +98,10 @@ struct INFOPreloadA: View {
               
               destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
               label: {
-                  Text("Tap Here if you care")
+                  Text("then TAP here")
                       .fontWeight(.light)
                       .foregroundColor(Color.white)
-                      .frame(width: 220, height: 60)
+                      .frame(width: 230, height: 60)
                       .font(.system(size: 25))
                       .background(ColorManager.pmbc_green)
                       .cornerRadius(7)

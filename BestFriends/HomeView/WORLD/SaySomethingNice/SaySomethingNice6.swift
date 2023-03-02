@@ -39,26 +39,20 @@ struct SaySomethingNice6: View {
             
             VStack {
          
-                Text("BestFriends")
-                    .font(.system(size: 27))
-                
-                    .foregroundColor(ColorManager.grey1)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                
-                
-                Text("is about friendships")
-                    .font(.system(size: 25))
-                    .italic()
-                    .foregroundColor(ColorManager.grey1)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
+//                Text("BestFriends")
+//                    .font(.system(size: 27))
+//
+//                    .foregroundColor(ColorManager.grey1)
+//                    .fontWeight(.thin)
+//                    .multilineTextAlignment(.center)
+//
+          
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 25)
                 
                 Text("If you don't add friends")
-                    .font(.system(size: 25))
+                    .font(.system(size: 30))
                 
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
