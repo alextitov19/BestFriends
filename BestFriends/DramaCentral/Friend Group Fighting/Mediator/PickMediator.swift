@@ -165,7 +165,7 @@ struct PickMediator: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("Besides, everyone welcomes a hug")
+                    Text("Besides, \neveryone welcomes a hug")
                         .font(.system(size: 25))
                         .italic()
                         .foregroundColor(.white)
@@ -206,11 +206,3 @@ struct PickMediator: View {
     }
     
 }
-//
-//
-//struct PickMediator_Previews : PreviewProvider {
-//    static var previews: some View {
-//        PickMediator()
-//    }
-//}
-//

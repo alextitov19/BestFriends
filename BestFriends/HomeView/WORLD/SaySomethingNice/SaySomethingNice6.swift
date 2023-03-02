@@ -85,9 +85,9 @@ struct SaySomethingNice6: View {
                 NavigationLink(
                     destination: PickMediator(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
                     label: {
-                        Text("Why build a \nmixed friend group")
+                        Text("Why build a 'gender' \nmixed friend group")
                             .fontWeight(.thin)
-                            .frame(width: 220, height: 60)
+                            .frame(width: 240, height: 60)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 25))
                             .background(ColorManager.purple3)
