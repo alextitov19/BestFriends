@@ -162,10 +162,7 @@ struct PlanetActionsView: View {
                     
                     VStack {
                         
-//                        PickMediator(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups
-                       
-                      
-                        
+
                         NavigationLink(destination: AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
                             ZStack {
@@ -245,9 +242,7 @@ struct PlanetActionsView: View {
                                         
                                             .opacity(0.95)
                                         
-//                                        INFOPreload2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
-                                        
-                                       
+
                                         
                                         NavigationLink(destination: INFOPreloadA(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
                                             label: {
@@ -273,23 +268,6 @@ struct PlanetActionsView: View {
                                             })
                                     }
                                     
-//
-////                                    Image("iconStar 1")
-//                                    NavigationLink(
-//                                        destination: InfoWhyLoveFB(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-//                                        label: {
-//
-//                                            Text("Start \nHere")
-//                                            //                    Image("Start Here")
-//                                                .frame(width: 60, height: 60)
-//
-//                                                .foregroundColor(Color .green)
-//                                                .font(.system(size: 23))
-//                                                .background(ColorManager .purple5)
-//                                                .cornerRadius(15)
-//                                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                                                .opacity(0.70)
-//                                        })
 
                                 }
                             }
@@ -300,11 +278,7 @@ struct PlanetActionsView: View {
                         Spacer()
                             .frame(height: 25)
                         
-                        
-                        //
-                        //                    MARK: First setup
-                        
-//                        NavigationLink(destination: InfoWhyLoveFB(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                 
                                        
                         NavigationLink(destination: BuiltForTeens(user: user, atmosphere: atmosphere, friends: friends, groups: groups),
                                        label: {
@@ -339,16 +313,7 @@ struct PlanetActionsView: View {
                        
                         Spacer()
                             .frame(height: 13)
-//                        
-//                                    Text("with BFF")
-//                                        .foregroundColor(Color .white)
-//                                        .italic()
-//                                        .font(.system(size: 15, weight: .light))
-//                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                        .opacity(0.90)
-
-                        
-                        
+         
                                 }
                             }
                         })
