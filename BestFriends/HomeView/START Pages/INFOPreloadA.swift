@@ -40,7 +40,7 @@ struct INFOPreloadA: View {
             VStack {
          
                 Text("BestFriends")
-                    .font(.system(size: 35))
+                    .font(.system(size: 30))
                 
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
@@ -48,17 +48,17 @@ struct INFOPreloadA: View {
                 
                 
                 Text("is about friendships")
-                    .font(.system(size: 40))
+                    .font(.system(size: 43))
                     .italic()
                     .foregroundColor(ColorManager.grey1)
-                    .fontWeight(.thin)
+                    .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 100)
                 
                 Text("If you want happier friendships")
-                    .font(.system(size: 17))
+                    .font(.system(size: 22))
                 
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.regular)
@@ -67,8 +67,8 @@ struct INFOPreloadA: View {
                 Spacer()
                     .frame(height: 20)
                 
-                Text("If you want quick & easy reassurance \nyour friends like you")
-                    .font(.system(size: 17))
+                Text("If you want quick & easy \nreassurance your friends like you")
+                    .font(.system(size: 22))
                 
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.regular)
@@ -76,10 +76,10 @@ struct INFOPreloadA: View {
                 
                 
                 Spacer()
-                    .frame(height: 20)
+                    .frame(height: 22)
                 
-                Text("If you want your friends \nto be there on bad days")
-                    .font(.system(size: 17))
+                Text("If you want your friends \nto be there for you on bad days")
+                    .font(.system(size: 22))
                 
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.regular)
