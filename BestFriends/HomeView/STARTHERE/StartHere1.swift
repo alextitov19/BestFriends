@@ -61,7 +61,8 @@ struct StartHere1: View {
                 })
                 .offset(x: showItems ? -90 : 0, y: showItems ? -270: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-                
+                .shadow(color: ColorManager .purple3, radius: 1, x: 2, y: 2)
+                .opacity(0.7)
                 
                 
                 
@@ -71,9 +72,17 @@ struct StartHere1: View {
                 })
                 .offset(x: showItems ? 70 : 0, y: showItems ? -250: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+                .shadow(color: ColorManager .purple1, radius: 2, x: 2, y: 2)
+                .opacity(0.7)
                 
                 
-                
+                NavigationLink(destination: INFOPreload3(user: user), label: {
+                    StartHereCircle (color: Color .white, friendName: "Free \nStickers")
+                })
+                .offset(x: showItems ? 100 : 0, y: showItems ? -150: 0)
+                .shadow(color: ColorManager .purple1, radius: 2, x: 2, y: 2)
+                .opacity(0.7)
+
                 
                 
                 
@@ -84,7 +93,8 @@ struct StartHere1: View {
                     StartHereCircle (color: ColorManager.grey2, friendName: "Envisioned \nby \nTeens")
                 })
                 .offset(x: showItems ? -80 : 0, y: showItems ? -150: 0)
-                
+                .shadow(color: ColorManager .purple1, radius: 2, x: 2, y: 2)
+                .opacity(0.7)
                 
                 
 
@@ -140,6 +150,15 @@ struct StartHere1: View {
                             .foregroundColor(ColorManager .grey4)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
+                        
+                        Text("'free stickers'")
+                            .font(.system(size: 20))
+                        
+                            .foregroundColor(ColorManager .grey4)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                        
+                        
                         
                         Text("TAP")
                             .foregroundColor(Color .green)
