@@ -249,7 +249,7 @@ struct PlanetActionsView: View {
                                         
                                        
                                         
-                                        NavigationLink(destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
+                                        NavigationLink(destination: INFOPreloadA(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
                                             label: {
                                                 VStack {
                                                     Text("START")
