@@ -121,7 +121,7 @@
                            NavigationLink( destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
 //                               destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                label: {
-                                   Text("Send Reassurances")
+                                   Text("Sending Reassurances")
                                        .fontWeight(.thin)
                                        .frame(width: 235, height: 40)
                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
