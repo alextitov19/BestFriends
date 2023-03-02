@@ -67,7 +67,7 @@
                           
 
                             
-                            Text("Let the the outside of you")
+                            Text("let the outside of you")
                                 .font(.system(size: 20))
                                 .italic()
                                 .fontWeight(.light)
