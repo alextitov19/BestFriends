@@ -31,7 +31,7 @@
                 VStack {
                     
                     
-                    Text("friends Trusting friends")
+                    Text("friends Helping friends")
                         .font(.system(size: 27))
                         
                         .fontWeight(.light)
