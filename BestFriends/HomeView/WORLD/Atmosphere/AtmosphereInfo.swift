@@ -67,7 +67,7 @@
                           
 
                             
-                            Text("Let the the inside of you")
+                            Text("Let the the outside of you")
                                 .font(.system(size: 20))
                                 .italic()
                                 .fontWeight(.light)
@@ -97,7 +97,7 @@
                             Spacer ()
                                  .frame(height: 7)
 
-                            Text("the outside of you")
+                            Text("the true inside of you")
                                 .italic()
                                 .font(.system(size: 20))
                                 .fontWeight(.light)
@@ -114,11 +114,11 @@
                              NavigationLink(
                                 destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
-                                    Text("Sharing Emotions")
+                                    Text("Sharing ourm Emotions")
                                         .fontWeight(.thin)
                                         .frame(width: 220, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 30))
+                                        .font(.system(size: 25))
                                         .background(ColorManager.purple3)
                                         .cornerRadius(15)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
