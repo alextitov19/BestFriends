@@ -34,13 +34,13 @@
 
                VStack {
                    
-                   
-                   Text("friends Supporting friends")
-                       .font(.system(size: 27))
-                
-                       .fontWeight(.light)
-                       .multilineTextAlignment(.center)
-                       .foregroundColor(ColorManager .grey3)
+//
+//                   Text("friends Supporting friends")
+//                       .font(.system(size: 27))
+//
+//                       .fontWeight(.light)
+//                       .multilineTextAlignment(.center)
+//                       .foregroundColor(ColorManager .grey3)
 
                    ZStack {
                   
@@ -67,7 +67,7 @@
 //                                .foregroundColor(ColorManager .grey3)
                            
                            
-                           Text("Everyone wants")
+                           Text("everyone wants")
                                .font(.system(size: 20))
                                .italic()
                                .fontWeight(.light)
