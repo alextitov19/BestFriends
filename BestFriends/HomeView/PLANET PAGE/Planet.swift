@@ -162,11 +162,11 @@ struct PlanetActionsView: View {
                     
                     VStack {
                         
+//                        PickMediator(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups
                        
+                      
                         
-//                        SaySomethingNice8(user: user, atmosphere: atmosphere, friends: friends
-                        
-                        NavigationLink(destination: PickMediator(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
+                        NavigationLink(destination: AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
                             ZStack {
                                 Circle()
@@ -187,8 +187,10 @@ struct PlanetActionsView: View {
                         Spacer()
                             .frame(height: 35)
                         
-//                        HugPushNotification(user: user, friends: friends
-                        NavigationLink(destination: BuiltForTeens(user: user, atmosphere: atmosphere, friends: friends, groups: groups), label: {
+
+                       
+                        
+                        NavigationLink(destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
@@ -198,8 +200,8 @@ struct PlanetActionsView: View {
                                     .opacity(0.80)
                                 
                                 VStack {
-                                    Image("IconHugNew")
-                              
+                                
+                                    Image("IconRoomNew")
                                 }
                             }
                             
@@ -304,7 +306,7 @@ struct PlanetActionsView: View {
                         
 //                        NavigationLink(destination: InfoWhyLoveFB(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        
-                        NavigationLink(destination: AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        NavigationLink(destination: BuiltForTeens(user: user, atmosphere: atmosphere, friends: friends, groups: groups),
                                        label: {
                             ZStack {
                                 Circle()
@@ -357,7 +359,7 @@ struct PlanetActionsView: View {
                         
                    
                         
-                        NavigationLink(destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups),
                                        label: {
                             
                             ZStack {
@@ -378,7 +380,8 @@ struct PlanetActionsView: View {
                                 VStack {
                                     
                                     
-                                    Image("IconRoomNew")
+                                        Image("IconHugNew")
+                                   
                                     
 
                                     

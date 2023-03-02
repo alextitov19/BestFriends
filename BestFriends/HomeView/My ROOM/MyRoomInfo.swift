@@ -133,8 +133,8 @@ struct MyRoomInfo: View {
 //                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
 //                    .opacity(0.4)
 //
-                    
-          
+//                    
+//          
                 
 //
 //                                    NavigationLink(destination: AtmosphereInfo1(user: user, atmosphere: atmosphere, friends: friends), label: {
