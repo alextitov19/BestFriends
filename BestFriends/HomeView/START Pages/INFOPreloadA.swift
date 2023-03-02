@@ -40,7 +40,7 @@ struct INFOPreloadA: View {
             VStack {
          
                 Text("BestFriends")
-                    .font(.system(size: 27))
+                    .font(.system(size: 35))
                 
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
@@ -48,7 +48,7 @@ struct INFOPreloadA: View {
                 
                 
                 Text("is about friendships")
-                    .font(.system(size: 25))
+                    .font(.system(size: 40))
                     .italic()
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
@@ -58,21 +58,28 @@ struct INFOPreloadA: View {
                     .frame(height: 50)
                 
                 Text("If you want happier friendships")
-                    .font(.system(size: 25))
-                
-                    .foregroundColor(ColorManager.grey1)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                
-                Text("If you want quick & easy reassurance your friends like you")
-                    .font(.system(size: 35))
+                    .font(.system(size: 17))
                 
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                 
-                Text("If you want your friends to be there on bad days")
-                    .font(.system(size: 35))
+                Spacer()
+                    .frame(height: 20)
+                
+                Text("If you want quick & easy reassurance \nyour friends like you")
+                    .font(.system(size: 17))
+                
+                    .foregroundColor(ColorManager.grey1)
+                    .fontWeight(.regular)
+                    .multilineTextAlignment(.center)
+                
+                
+                Spacer()
+                    .frame(height: 20)
+                
+                Text("If you want your friends \nto be there on bad days")
+                    .font(.system(size: 17))
                 
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.regular)
@@ -84,27 +91,7 @@ struct INFOPreloadA: View {
             VStack {
            
               
-             
-//                
-//                
-//                NavigationLink(
-//                    destination: PickMediator(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
-//                    label: {
-//                        Text("Why build a 'gender' \nmixed friend group")
-//                            .fontWeight(.thin)
-//                            .frame(width: 240, height: 60)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                            .font(.system(size: 25))
-//                            .background(ColorManager.purple3)
-//                            .cornerRadius(7)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                            .opacity(0.50)
-//                    })
-//                
-//        
-//                
-//                
-                
+            
           NavigationLink(
               
               destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
@@ -121,49 +108,49 @@ struct INFOPreloadA: View {
               })
           
                 
-                
-                
-                
-                Spacer()
-                    .frame(height: 50)
-                
-                
-                        NavigationLink(
-                            destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                            label: {
-                                Text("Walk-through")
-                                    .fontWeight(.light)
-                                    .frame(width: 220, height: 60)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(7)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    .opacity(0.50)
-                            })
-                 
-                
-                
-                Spacer()
-                    .frame(height: 30)
-                
-                
-                        
-                NavigationLink(
-                    destination: INFOPreload2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                    label: {
-                        Text("University 'Launch Party' schedule")
-                            .fontWeight(.light)
-                            .frame(width: 220, height: 90)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 25))
-                            .background(ColorManager.purple3)
-                            .cornerRadius(7)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            .opacity(0.50)
-                    })
-         
-                
+//
+//
+//
+//                Spacer()
+//                    .frame(height: 50)
+//
+//
+//                        NavigationLink(
+//                            destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                            label: {
+//                                Text("Walk-through")
+//                                    .fontWeight(.light)
+//                                    .frame(width: 220, height: 60)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 25))
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(7)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                    .opacity(0.50)
+//                            })
+//
+//
+//
+//                Spacer()
+//                    .frame(height: 30)
+//
+//
+//
+//                NavigationLink(
+//                    destination: INFOPreload2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                    label: {
+//                        Text("University 'Launch Party' schedule")
+//                            .fontWeight(.light)
+//                            .frame(width: 220, height: 90)
+//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                            .font(.system(size: 25))
+//                            .background(ColorManager.purple3)
+//                            .cornerRadius(7)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            .opacity(0.50)
+//                    })
+//
+//
                         
                         
                         Spacer()
