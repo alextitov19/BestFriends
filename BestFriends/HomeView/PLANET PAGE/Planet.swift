@@ -359,7 +359,7 @@ struct PlanetActionsView: View {
                     VStack {
                         
                         
-                        NavigationLink(destination: PhotoPopView(user: user, friends: friends),
+                        NavigationLink(destination: HurtFeelings(user: user, friends: friends),
                                        label: {
                             ZStack {
                                 Circle()
