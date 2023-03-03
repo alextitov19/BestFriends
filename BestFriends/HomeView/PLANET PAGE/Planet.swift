@@ -322,9 +322,9 @@ struct PlanetActionsView: View {
                         Spacer()
                             .frame(height: 25)
                         
-                   
+                       
                         
-                        NavigationLink(destination: Apologies(user: user, friends: friends),
+                        NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups) ,
                                        label: {
                             
                             ZStack {
@@ -384,9 +384,9 @@ struct PlanetActionsView: View {
                         Spacer()
                             .frame(height: 35)
                         
-                 
+                       
                         
-                        NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups),
+                        NavigationLink(destination: Apologies(user: user, friends: friends),
                                 label: {
                             
                             ZStack {
