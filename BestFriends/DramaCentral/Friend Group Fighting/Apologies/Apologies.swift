@@ -6,103 +6,128 @@
 //
 
 
+
 import Foundation
 import SwiftUI
+
 
 struct Apologies: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
     let user: User
+    //    let atmosphere: Atmosphere
     let friends: [User]
-    let groups: [Group]
+    //    let groups: [Group]
+    //    let friendAtmospheres: [Atmosphere]
     
-
     var body: some View {
-       
-        
-        VStack {
-            
-      
-         
-            
-            Text("A P O L O G I E S")
-                .font(.system(size: 40))
-                .foregroundColor(.blue)
-                .fontWeight(.ultraLight)
-                .multilineTextAlignment(.center)
-        
         ZStack {
-           
-            Image("purpleBackground")
-                .resizable()
-                .scaledToFill()
+            
+            Color .black
                 .ignoresSafeArea()
-         
-            Image("book")
-                .frame(width: 320, height: 20)
-//                .resizable()
-//                .scaledToFill()
-//                .ignoresSafeArea()
-//
-              VStack {
-              
+                .onAppear()
+            
+            //            Image("purpleBackground")
+            //                 .resizable()
+            //                 .ignoresSafeArea()
+            //                 .scaledToFill()
+            //
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+            
+            
+            VStack {
+                
              
-                  
-                  VStack {
-//
-//
-            VStack {
-                Text("Did you hurt \nyour friend's feelings?")
-                    .font(.system(size: 28))
+                
+                Text("comming this summer")
+                    .font(.system(size: 17))
                     .italic()
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-                 
+                    .foregroundColor(ColorManager.grey1)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                
+                
                 Spacer()
-                    .frame(height: 350)
+                    .frame(height: 30)
+               
+//                Text("Shake your iPhone")
+//                    .font(.system(size: 40))
+//                    .foregroundColor(ColorManager.grey1)
+//                    .fontWeight(.thin)
+//                    .multilineTextAlignment(.center)
+//
+//                Text("(image friend just sent you)")
+//                    .font(.system(size: 30))
+//                    .italic()
+//                    .foregroundColor(ColorManager.grey1)
+//                    .fontWeight(.thin)
+//                    .multilineTextAlignment(.center)
                 
-            VStack {
-                    NavigationLink(
-                        destination: Apologies2(user: user, friends: friends, groups: groups),
-                        label: {
-                            Text("Need to Apologise?")
-                                .fontWeight(.thin)
-                                .frame(width: 300, height: 40)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                      
-                        })
-
+//
                 
+                Text("FriendGroup")
+                    .font(.system(size: 50))
+                    .foregroundColor(ColorManager.grey1)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
                 
-                Link(destination: URL(string: "https://socialtechlabs.com/apoloigize/")!) {
-                    
-                    Text("Is it time to Apologize?")
-                        .fontWeight(.thin)
-                        .frame(width: 260, height: 40)
-                       .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .background(ColorManager.pmbc_blue)
-                        .font(.system(size: 27))
-                        .background(ColorManager.purple3)
-                        .cornerRadius(15)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    
+                Text("Galleries")
+                    .font(.system(size: 60))
+                    .foregroundColor(ColorManager.grey1)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                
+                VStack {
+//                    Spacer()
+//                        .frame(height: 100)
+//
+//                    Text("(you're alerted via push notification)")
+//                        .font(.system(size: 17))
+//                        .italic()
+//                        .foregroundColor(ColorManager.grey1)
+//                        .fontWeight(.thin)
+//                        .multilineTextAlignment(.center)
+//
+//
+//                    Spacer()
+//                        .frame(height: 20)
+//
+//                    VStack {
+//
+//
+//
+//                        NavigationLink(
+//
+//                            destination: PhotoPopView(user: user, friends: friends),
+//                            label: {
+//                                Text("Try it out")
+//                                    .fontWeight(.light)
+//                                    .foregroundColor(Color.white)
+//                                    .frame(width: 230, height: 60)
+//                                    .font(.system(size: 25))
+//                                    .background(ColorManager.pmbc_green)
+//                                    .cornerRadius(7)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                            })
+//
+                        
+                        
+                        Spacer()
+                            .frame(height: 75)
+                        
+                        
+                        
+                    }
                 }
                 
-                
             }
-              
         }
     }
-}
-}
-    }
-}
+    
 
-}
-
-
+    
+ 

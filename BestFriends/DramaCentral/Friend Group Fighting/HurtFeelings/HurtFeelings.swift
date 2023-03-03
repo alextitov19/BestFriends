@@ -42,14 +42,9 @@ struct HurtFeelings: View {
             
             VStack {
                 
-                Text("PhotoPOP")
-                    .font(.system(size: 65))
+             
                 
-                    .foregroundColor(ColorManager.grey1)
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
-                
-                Text("(while in BestFriends)")
+                Text("Image Sharing")
                     .font(.system(size: 17))
                     .italic()
                     .foregroundColor(ColorManager.grey1)
@@ -58,7 +53,7 @@ struct HurtFeelings: View {
                 
                 
                 Spacer()
-                    .frame(height: 20)
+                    .frame(height: 10)
                
                 Text("Shake your iPhone")
                     .font(.system(size: 40))
@@ -66,24 +61,24 @@ struct HurtFeelings: View {
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
-                Text("(and the image your friends just sent you)")
-                    .font(.system(size: 17))
+                Text("(image friend just sent you)")
+                    .font(.system(size: 30))
                     .italic()
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 15)
+                    .frame(height: 40)
                 
                 Text("Pops Up")
-                    .font(.system(size: 40))
+                    .font(.system(size: 50))
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
                 Text("Full screen")
-                    .font(.system(size: 50))
+                    .font(.system(size: 60))
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
@@ -125,7 +120,7 @@ struct HurtFeelings: View {
                         
                         
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 75)
                         
                         
                         

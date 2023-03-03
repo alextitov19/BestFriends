@@ -324,7 +324,7 @@ struct PlanetActionsView: View {
                         
                    
                         
-                        NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups),
+                        NavigationLink(destination: Apologies(user: user, friends: friends),
                                        label: {
                             
                             ZStack {
@@ -344,8 +344,8 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
                                     
-                                    
-                                        Image("IconHugNew")
+                                    Image("IconFightNew")
+                                       
                                    
                                     
 
@@ -384,14 +384,10 @@ struct PlanetActionsView: View {
                         Spacer()
                             .frame(height: 35)
                         
-                        
-                        //                    NavigationLink(destination: EmptyView(),
+                 
                         
                         NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups),
-                                       
-                                       
-                                       //                                                  NavigationLink(destination: HorizonsPreload1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres),
-                                       label: {
+                                label: {
                             
                             ZStack {
                                 Circle()
@@ -405,8 +401,8 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
                                     
-                                        Image("IconFightNew")
-                                    
+                                      
+                                    Image("IconHugNew")
 
                                 }
                             }
