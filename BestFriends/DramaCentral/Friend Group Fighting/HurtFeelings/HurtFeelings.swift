@@ -72,6 +72,7 @@ struct HurtFeelings: View {
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
+                
                 Spacer()
                     .frame(height: 15)
                 
@@ -91,16 +92,16 @@ struct HurtFeelings: View {
                     Spacer()
                         .frame(height: 100)
                    
-                    
-                    Text("you're alerted via \npush notification")
+                    Text("(you're alerted via push notification)")
                         .font(.system(size: 17))
                         .italic()
                         .foregroundColor(ColorManager.grey1)
-                        .fontWeight(.regular)
+                        .fontWeight(.thin)
                         .multilineTextAlignment(.center)
+             
                     
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 20)
                     
                     VStack {
                         
@@ -110,7 +111,7 @@ struct HurtFeelings: View {
                             
                             destination: PhotoPopView(user: user, friends: friends),
                             label: {
-                                Text("TAP")
+                                Text("Try it out")
                                     .fontWeight(.light)
                                     .foregroundColor(Color.white)
                                     .frame(width: 230, height: 60)

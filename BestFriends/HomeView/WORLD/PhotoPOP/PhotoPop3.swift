@@ -23,16 +23,16 @@ struct PhotoPop3: View {
     @State private var shareColor = ColorManager.purple5
     @State private var showingAlert = false
     
- 
+    
     @State private var counter = 0
     @State private var shareTapped: Bool = false
     
-//    @State private var mood: Int = -1
-//    @State private var summary = ""
-//    @State private var sharedWith: [String] = []
-//    @State private var colorChangeTap: String = ""
-  
-
+    //    @State private var mood: Int = -1
+    //    @State private var summary = ""
+    //    @State private var sharedWith: [String] = []
+    //    @State private var colorChangeTap: String = ""
+    
+    
     
     
     
@@ -42,67 +42,83 @@ struct PhotoPop3: View {
             
             ColorManager.grey4
                 .ignoresSafeArea()
-           
+            
             
             VStack{
-         
+                
                 VStack {
-                      
-                 
-                    Text("Up-loading to PhotoPOP:")
-                        .font(.system(size: 20, weight: .light))
+                    
+                    
+                    
+                    
+                    
+                    Text("Up-loading to PhotoPOP")
+                        .font(.system(size: 30, weight: .light))
                         .foregroundColor(.green)
                     
-                    Text("-Select friend, tap image from photo gallery")
-                        .font(.system(size: 13, weight: .light))
+                    Text("-Tap (+) \n-Select friend sending image to \n-tap image from your photo gallery")
+                        .font(.system(size: 20, weight: .light))
                         .italic()
                         .foregroundColor(.white)
+                    
                     Spacer()
-                        .frame(height: 20)
+                        .frame(height: 30)
                     
-              
+            
                     
-                    Text("Replacing image:")
-                        .font(.system(size: 20, weight: .light))
+                    Text("Replacing images")
+                        .font(.system(size: 30, weight: .light))
                         .foregroundColor(.green)
                     
                     
-                    Text("-Tap image, then exit & re-enter page")
-                        .font(.system(size: 13, weight: .light))
+                    Text("-Tap image \n-then, exit & re-enter page")
+                        .font(.system(size: 20, weight: .light))
                         .italic()
                         .foregroundColor(.white)
-                    Text("* (can only have ONE 'active' image at a time)")
+                    
+                    Spacer()
+                        .frame(height: 15)
+                    
+            VStack {
+                    
+                    Text("* (can only have ONE")
                         .italic()
                         .font(.system(size: 13, weight: .light))
                         .foregroundColor(Color .green)
-                  
+                    
+                Text("'active' image at a time)")
+                    .italic()
+                    .font(.system(size: 13, weight: .light))
+                    .foregroundColor(Color .green)
+                
                     Spacer()
                         .frame(height: 60)
                     
                     Text("Who are you")
-                        .font(.system(size: 35, weight: .ultraLight))
-                        .foregroundColor(Color.white)
-                    Text("sending picture to?")
-                        .font(.system(size: 35, weight: .ultraLight))
+                        .font(.system(size: 25, weight: .ultraLight))
                         .foregroundColor(Color.white)
                     
-                  
-                   
+                    Text("sending image to?")
+                        .font(.system(size: 25, weight: .ultraLight))
+                        .foregroundColor(Color.white)
+                    
+                    
+                    
                     VStack {
                         
-
-           
+                        
+                        
                         HStack {
-//
-//                            Text("select >")
-//                                .fontWeight(.thin)
-//                                .frame(width: 100, height: 30)
-//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                .font(.system(size: 20))
-//                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-//                                .cornerRadius(25)
-//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                            //                                })
+                            //
+                            //                            Text("select >")
+                            //                                .fontWeight(.thin)
+                            //                                .frame(width: 100, height: 30)
+                            //                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            //                                .font(.system(size: 20))
+                            //                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+                            //                                .cornerRadius(25)
+                            //                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            //                            //                                })
                             
                             if friends.count > 0 {
                                 RectView(user: user, friend: friends[0], color: colors[0])
@@ -185,7 +201,7 @@ struct PhotoPop3: View {
                         
                         Spacer()
                             .frame(height: 20)
-               
+                        
                         Button(action: {
                             counter += 1
                             shareTapped = true
@@ -204,13 +220,13 @@ struct PhotoPop3: View {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
- 
+                        
                         .confettiCannon(counter: $counter)
                         
-                        }
-
-//                    Spacer()
-//                        .frame(height: 150)
+                    }
+                    
+                    //                    Spacer()
+                    //                        .frame(height: 150)
                     
                 }
                 
@@ -219,7 +235,7 @@ struct PhotoPop3: View {
         }
         
     }
-    
+}
     
     func shareButtonTapped() {
         if selectedFriends.count == 0 { return }
