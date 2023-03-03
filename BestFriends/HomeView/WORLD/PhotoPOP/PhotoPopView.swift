@@ -58,20 +58,20 @@ struct PhotoPopView: View {
                     .multilineTextAlignment(.center)
                 
                 
-                Text("Shake iPhone to see")
-                    .font(.system(size: 17, weight: .light))
-                    .foregroundColor(ColorManager .grey2)
-                
-                Text("image friend sent!")
-                    .font(.system(size: 17, weight: .light))
-                    .foregroundColor(ColorManager .grey2)
+//                Text("Shake iPhone to see")
+//                    .font(.system(size: 17, weight: .light))
+//                    .foregroundColor(ColorManager .grey2)
+//                
+//                Text("image friend sent!")
+//                    .font(.system(size: 17, weight: .light))
+//                    .foregroundColor(ColorManager .grey2)
 
 
                 
                  NavigationLink(
                     destination: PhotoPop3(user: user, friends: friends),
                     label: {
-                        Text("How PhotoPOP Works")
+                        Text("How to Upload images")
                             .fontWeight(.thin)
                             .frame(width: 250, height: 30)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

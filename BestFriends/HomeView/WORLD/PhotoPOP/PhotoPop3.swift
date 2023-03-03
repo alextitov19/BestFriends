@@ -200,7 +200,7 @@ struct PhotoPop3: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your HUG request was sent at the speed of light. \n\nYour friend should send you a HUG as soon as they can.", isPresented: $showingAlert) {
+                                .alert("Image sent. \n\nWhen your friend shakes their phone they will see it full screen.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
