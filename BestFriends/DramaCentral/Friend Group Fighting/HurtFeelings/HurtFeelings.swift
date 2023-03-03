@@ -49,31 +49,40 @@ struct HurtFeelings: View {
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                 
-                Text("Just shake your phone \nwhile in BestFriends")
-                    .font(.system(size: 20))
+                Text("(while in BestFriends)")
+                    .font(.system(size: 17))
                     .italic()
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
-                Text("And the image your friends just sent you ")
-                    .font(.system(size: 20))
-                    .italic()
+                
+                Spacer()
+                    .frame(height: 20)
+               
+                Text("Shake your iPhone")
+                    .font(.system(size: 40))
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
+                Text("(and the image your friends just sent you)")
+                    .font(.system(size: 17))
+                    .italic()
+                    .foregroundColor(ColorManager.grey1)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                Spacer()
+                    .frame(height: 15)
                 
                 Text("Pops Up")
                     .font(.system(size: 40))
-                    .italic()
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
                 Text("Full screen")
                     .font(.system(size: 50))
-                    .italic()
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
@@ -84,14 +93,14 @@ struct HurtFeelings: View {
                    
                     
                     Text("you're alerted via \npush notification")
-                        .font(.system(size: 22))
-                    
+                        .font(.system(size: 17))
+                        .italic()
                         .foregroundColor(ColorManager.grey1)
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                     
                     Spacer()
-                        .frame(height: 70)
+                        .frame(height: 30)
                     
                     VStack {
                         
