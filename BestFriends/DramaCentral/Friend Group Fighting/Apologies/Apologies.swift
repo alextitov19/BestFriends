@@ -58,23 +58,14 @@ struct Apologies: View {
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 70)
+                    .frame(height: 130)
                 
-                //                Text("Shake your iPhone")
-                //                    .font(.system(size: 40))
-                //                    .foregroundColor(ColorManager.grey1)
-                //                    .fontWeight(.thin)
-                //                    .multilineTextAlignment(.center)
-                //
-                //                Text("(image friend just sent you)")
-                //                    .font(.system(size: 30))
-                //                    .italic()
-                //                    .foregroundColor(ColorManager.grey1)
-                //                    .fontWeight(.thin)
-                //                    .multilineTextAlignment(.center)
-                
-                //
-                
+                Text("from the heart of us,")
+                    .font(.system(size: 20))
+                    .foregroundColor(ColorManager.grey1)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+     
                 Text("we hope you're enjoying")
                     .font(.system(size: 20))
                     .foregroundColor(ColorManager.grey1)
@@ -88,16 +79,32 @@ struct Apologies: View {
                     .multilineTextAlignment(.center)
                 
                 VStack {
-//
-//
-//                    INFOPreload3(user: user)
-//
-//
-//
-                    
+               
                     VStack {
                         
+                      
                         
+                        Spacer()
+                            .frame(height: 20)
+                        
+                        NavigationLink(
+                            
+                            destination: ShaylaPage(user: user),
+                            label: {
+                                Text("Envisioned by Teens")
+                                    .fontWeight(.light)
+                                    .foregroundColor(Color.white)
+                                    .frame(width: 230, height: 60)
+                                    .font(.system(size: 25))
+                                    .background(ColorManager.pmbc_green)
+                                    .cornerRadius(7)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                            })
+                        
+                        
+                        Spacer()
+                            .frame(height: 20)
                         
                         NavigationLink(
                             
@@ -113,6 +120,7 @@ struct Apologies: View {
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 
                             })
+                        
                         
                         
                         
