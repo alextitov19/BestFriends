@@ -42,8 +42,8 @@ struct Apologies: View {
                 
              
                 
-                Text("comming this summer")
-                    .font(.system(size: 17))
+                Text("Thank You,")
+                    .font(.system(size: 35))
                     .italic()
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
@@ -68,13 +68,13 @@ struct Apologies: View {
                 
 //
                 
-                Text("FriendGroup")
-                    .font(.system(size: 50))
+                Text("hope you're enjoying")
+                    .font(.system(size: 20))
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
-                Text("Galleries")
+                Text("BestFriends")
                     .font(.system(size: 60))
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
