@@ -40,35 +40,42 @@ struct Apologies: View {
             
             VStack {
                 
-             
                 
-                Text("Thank You,")
-                    .font(.system(size: 35))
+                
+                Text("Thank you,")
+                    .font(.system(size: 50))
                     .italic()
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
                 
+                Text("for joining us")
+                    .font(.system(size: 35))
+                    .italic()
+                    .foregroundColor(ColorManager.grey1)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                
                 Spacer()
-                    .frame(height: 30)
-               
-//                Text("Shake your iPhone")
-//                    .font(.system(size: 40))
-//                    .foregroundColor(ColorManager.grey1)
-//                    .fontWeight(.thin)
-//                    .multilineTextAlignment(.center)
-//
-//                Text("(image friend just sent you)")
-//                    .font(.system(size: 30))
-//                    .italic()
-//                    .foregroundColor(ColorManager.grey1)
-//                    .fontWeight(.thin)
-//                    .multilineTextAlignment(.center)
+                    .frame(height: 70)
                 
-//
+                //                Text("Shake your iPhone")
+                //                    .font(.system(size: 40))
+                //                    .foregroundColor(ColorManager.grey1)
+                //                    .fontWeight(.thin)
+                //                    .multilineTextAlignment(.center)
+                //
+                //                Text("(image friend just sent you)")
+                //                    .font(.system(size: 30))
+                //                    .italic()
+                //                    .foregroundColor(ColorManager.grey1)
+                //                    .fontWeight(.thin)
+                //                    .multilineTextAlignment(.center)
                 
-                Text("hope you're enjoying")
+                //
+                
+                Text("we hope you're enjoying")
                     .font(.system(size: 20))
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
@@ -81,43 +88,36 @@ struct Apologies: View {
                     .multilineTextAlignment(.center)
                 
                 VStack {
-//                    Spacer()
-//                        .frame(height: 100)
-//
-//                    Text("(you're alerted via push notification)")
-//                        .font(.system(size: 17))
-//                        .italic()
-//                        .foregroundColor(ColorManager.grey1)
-//                        .fontWeight(.thin)
-//                        .multilineTextAlignment(.center)
 //
 //
-//                    Spacer()
-//                        .frame(height: 20)
-//
-//                    VStack {
+//                    INFOPreload3(user: user)
 //
 //
 //
-//                        NavigationLink(
-//
-//                            destination: PhotoPopView(user: user, friends: friends),
-//                            label: {
-//                                Text("Try it out")
-//                                    .fontWeight(.light)
-//                                    .foregroundColor(Color.white)
-//                                    .frame(width: 230, height: 60)
-//                                    .font(.system(size: 25))
-//                                    .background(ColorManager.pmbc_green)
-//                                    .cornerRadius(7)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//                            })
-//
+                    
+                    VStack {
+                        
+                        
+                        
+                        NavigationLink(
+                            
+                            destination: INFOPreload3(user: user),
+                            label: {
+                                Text("Free Stickers")
+                                    .fontWeight(.light)
+                                    .foregroundColor(Color.white)
+                                    .frame(width: 230, height: 60)
+                                    .font(.system(size: 25))
+                                    .background(ColorManager.pmbc_green)
+                                    .cornerRadius(7)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                            })
+                        
                         
                         
                         Spacer()
-                            .frame(height: 75)
+                            .frame(height: 100)
                         
                         
                         
@@ -127,7 +127,7 @@ struct Apologies: View {
             }
         }
     }
-    
+}
 
     
  
