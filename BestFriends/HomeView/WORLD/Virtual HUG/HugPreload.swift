@@ -50,7 +50,7 @@ struct HugPreload: View {
                 
                     
                     NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager.purple1, friendName: "send a \nHug")
+                        HugCircle (color: ColorManager.purple1, friendName: "send a \nhug")
                     })
                     .offset(x: showItems ? 120 : 0, y: showItems ? -270: 0)
                     .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
@@ -85,7 +85,7 @@ struct HugPreload: View {
                 
                     
                     NavigationLink(destination: EmptyView(), label: {
-                        HugCircle (color: ColorManager .grey1, friendName: "i care ... \ntap")
+                        HugCircle (color: ColorManager .grey1, friendName: "care hearts \ntap")
                     })
                     .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
                     .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
