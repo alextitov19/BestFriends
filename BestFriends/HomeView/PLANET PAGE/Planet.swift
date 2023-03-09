@@ -295,9 +295,10 @@ struct PlanetActionsView: View {
                                 
                               
                    
-                        Text("my")
+                        Text("Building")
                             .foregroundColor(.white)
-                            .font(.system(size: 19, weight: .bold))
+                            .italic()
+                            .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                             .opacity(0.50)
 
@@ -305,12 +306,25 @@ struct PlanetActionsView: View {
 //                            .frame(height: 5)
 
                         
-                                    Text("Friends")
+                                    Text("Best")
                                         .foregroundColor(.white)
-                                        .font(.system(size: 30, weight: .bold))
+                                        .font(.system(size: 28, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                        
+                        Text("Friendships")
+                            .foregroundColor(.white)
+                            .font(.system(size: 28, weight: .bold))
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            .opacity(0.50)
+                        
+                        Text("tap")
+                            .foregroundColor(.black)
+                            .font(.system(size: 20, weight: .regular))
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            .opacity(0.50)
+                        
+                        
                         Spacer()
                             .frame(height: 13)
          

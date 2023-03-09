@@ -70,14 +70,7 @@ struct PickMediator: View {
                     .foregroundColor(.white)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
-                
-                
-                Text("(for that matter even want to use this app)")
-                    .font(.system(size: 17))
-                    .italic()
-                    .foregroundColor(.black)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
+         
                 
                 Spacer()
                     .frame(height: 15)
@@ -162,18 +155,10 @@ struct PickMediator: View {
                     .confettiCannon(counter: $counter)
                     
                   
-                    Spacer()
-                        .frame(height: 30)
-                    
-                    Text("Besides, \neveryone welcomes a hug")
-                        .font(.system(size: 25))
-                        .italic()
-                        .foregroundColor(.white)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
+            
                     
                     Spacer()
-                        .frame(height: 75)
+                        .frame(height: 130)
            
                  
                                 }
