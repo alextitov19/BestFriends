@@ -58,7 +58,7 @@ struct LoginView: View {
                         .opacity(0.50)
                         .multilineTextAlignment(.center)
                        
-                    Text("We do't sell user data or use 3rd party cookies")
+                    Text("We don't sell user data or use 3rd party cookies")
                         .font(.system(size: 15, weight: .light))
                         .foregroundColor(ColorManager .grey1)
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
