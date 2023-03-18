@@ -254,23 +254,34 @@ struct AskQuestion: View {
                                 .alert("Friend alerted. \n\nYou're smart not waiting until this turns into a huge fight.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
-                            
-                            
-                            
-                       
-                            
+                           
                         })
                        
-                        VStack {
-                            
-                            
-                            Text("Tap [Share] then duck. Just kidding!")
+                        Button(action: {
+                            sessionManager.showLogin()
+                        },
+                               label: {
+                            Image("home-alt2")
+                                .frame(width: 50, height: 25)
+                                .foregroundColor(.white)
                                 .font(.system(size: 20))
-                                .fontWeight(.light)
-                                .foregroundColor(ColorManager .purple3)
-                                .multilineTextAlignment(.center)
+                                .background(Color .black)
+                                .cornerRadius(15)
+                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                .opacity(0.70)
                             
-                        }
+                        })
+                        
+//                        VStack {
+//                            
+//                            
+//                            Text("Tap [Share] then duck. Just kidding!")
+//                                .font(.system(size: 20))
+//                                .fontWeight(.light)
+//                                .foregroundColor(ColorManager .purple3)
+//                                .multilineTextAlignment(.center)
+//                            
+//                        }
                         Spacer()
                             .frame(height: 40)
 //

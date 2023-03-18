@@ -197,6 +197,20 @@ struct Apologies4: View {
                                 }
                         })
                         
+                        Button(action: {
+                            sessionManager.showLogin()
+                        },
+                               label: {
+                            Image("home-alt2")
+                                .frame(width: 50, height: 25)
+                                .foregroundColor(.white)
+                                .font(.system(size: 20))
+                                .background(Color .black)
+                                .cornerRadius(15)
+                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                .opacity(0.70)
+                            
+                        })
                       
                         Spacer()
                             .frame(height: 30)
@@ -215,13 +229,13 @@ struct Apologies4: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             
                         }
-                        
-                      Text("Should I apologize if it \nwasn't really my fault?")
-                        .font(.system(size: 20))
-                        .italic()
-                        .fontWeight(.light)
-                        .foregroundColor(Color.white)
-                      
+//                        
+//                      Text("Should I apologize if it \nwasn't really my fault?")
+//                        .font(.system(size: 20))
+//                        .italic()
+//                        .fontWeight(.light)
+//                        .foregroundColor(Color.white)
+//                      
                      
                         
                         

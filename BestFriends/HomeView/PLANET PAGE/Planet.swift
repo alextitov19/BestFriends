@@ -319,7 +319,7 @@ struct PlanetActionsView: View {
                             .opacity(0.50)
                         
                         Text("tap")
-                            .foregroundColor(.black)
+                            .foregroundColor(.green)
                             .font(.system(size: 20, weight: .regular))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                             .opacity(0.50)
