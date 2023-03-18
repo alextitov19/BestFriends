@@ -229,15 +229,7 @@ struct SaySomethingNice5: View {
                         
                         VStack {
 
-                            Image("home-alt2")
-                                .frame(width: 50, height: 25)
-                                .foregroundColor(.white)
-                                .font(.system(size: 20))
-                                .background(Color .black)
-                                .cornerRadius(15)
-                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                .opacity(0.70)
-                            
+                       
                             Button(action: {
                                 sessionManager.showLogin()
                             },
@@ -251,6 +243,8 @@ struct SaySomethingNice5: View {
                                     .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                                     .opacity(0.70)
                                 
+                            })
+                                
 //                                    Text("Home / Chat")
 //                                        .fontWeight(.thin)
 //                                        .frame(width: 200, height: 40)
@@ -259,7 +253,7 @@ struct SaySomethingNice5: View {
 //                                        .background(ColorManager.purple3)
 //                                        .cornerRadius(15)
 //                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                })
+                               
                             
 
                             

@@ -229,9 +229,28 @@ struct SendKisses: View {
 
                         
                         VStack {
+                            
+                            
+                                 Button(action: {
+                                     sessionManager.showLogin()
+                                 },
+                                     label: {
+                                     Image("home-alt2")
+                                         .frame(width: 50, height: 25)
+                                         .foregroundColor(.white)
+                                         .font(.system(size: 20))
+                                         .background(Color .black)
+                                         .cornerRadius(15)
+                                         .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                         .opacity(0.70)
+                                     
+                                 })
+                            
+                            Spacer()
+                                .frame(height: 30)
                             Image("KissesHeart")
                                 .resizable()
-                                .frame(width: 300, height: 200)
+                                .frame(width: 200, height: 150)
                    
                         }
                         
@@ -242,8 +261,7 @@ struct SendKisses: View {
 //                    
 //                    
 //                
-//                    Spacer()
-//                        .frame(height: 130)
+
                     
                 }
                 
