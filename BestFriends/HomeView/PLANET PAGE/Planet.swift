@@ -385,7 +385,7 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
 
-                                    Image("IconPhotoNew")
+//                                    Image("IconPhotoNew")
                         
  
                                 }

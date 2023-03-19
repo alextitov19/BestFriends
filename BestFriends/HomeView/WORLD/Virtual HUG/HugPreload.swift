@@ -54,8 +54,8 @@ struct HugPreload: View {
                     })
                     .offset(x: showItems ? 120 : 0, y: showItems ? -270: 0)
                     .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
-                    .opacity(0.6)
-                    
+//                    .opacity(0.6)
+                    .opacity(0.65)
                  
                     
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), label: {
@@ -63,7 +63,8 @@ struct HugPreload: View {
                     })
                     .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                     .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-                    .opacity(0.65)
+//
+                    .opacity(065)
                     
                     
                     
@@ -72,15 +73,17 @@ struct HugPreload: View {
                     })
                     .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
                     .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+//                    .opacity(0.65)
                     .opacity(0.65)
                     
               
                 NavigationLink(destination: HurtFeelings(user: user, friends: friends), label: {
-                    HugCircle (color: ColorManager .grey1, friendName: "PhotoPOP")
+                    HugCircle (color: ColorManager .grey1, friendName: "shake iPhone \nPhotoPOP")
                 })
                 .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
                 .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
-                .opacity(0.85)
+//                .opacity(0.85)
+                .opacity(0.65)
                 
                 
                 
@@ -89,15 +92,15 @@ struct HugPreload: View {
                 })
                 .offset(x: showItems ? -00 : 0, y: showItems ? -300: 0)
                 .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
-                .opacity(0.85)
+                .opacity(0.65)
                 
                     
                     NavigationLink(destination: EmptyView(), label: {
-                        HugCircle (color: ColorManager .grey1, friendName: "care hearts \ntap here")
+                        HugCircle (color: ColorManager .purple4, friendName: "care hearts \ntap here")
                     })
                     .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
                     .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
-                    .opacity(0.85)
+                    .opacity(0.65)
                     
              
                 

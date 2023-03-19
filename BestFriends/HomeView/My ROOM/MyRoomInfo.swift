@@ -97,13 +97,13 @@ struct MyRoomInfo: View {
                 .opacity(0.25)
                 
                 
-//                NavigationLink(destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends), label: {
-//                    MyRoomCircle (color: Color .white, friendName: "'Vibe' \nTracker")
-//                })
-//                .offset(x: showItems ? -100 : 0, y: showItems ? -270: 0)
-//                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-//                .opacity(0.4)
-//           
+                NavigationLink(destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends), label: {
+                    MyRoomCircle (color: Color .white, friendName: "'Vibe' \nTracker")
+                })
+                .offset(x: showItems ? -100 : 0, y: showItems ? -270: 0)
+                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                .opacity(0.4)
+           
 
                 
                     
@@ -115,14 +115,14 @@ struct MyRoomInfo: View {
                     .opacity(0.4)
                
 
-//
-//                    NavigationLink(destination:   SendSongPush(user: user, friends: friends),
-//                                   label: {
-//                        MyRoomCircle (color: ColorManager .grey1, friendName: "New \nMusic \n(preview)")
-//                    })
-//                    .offset(x: showItems ? -125 : 0, y: showItems ? 260: 0)
-//                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
-//
+
+                    NavigationLink(destination:   SendSongPush(user: user, friends: friends),
+                                   label: {
+                        MyRoomCircle (color: ColorManager .grey1, friendName: "New \nMusic \n(preview)")
+                    })
+                    .offset(x: showItems ? -125 : 0, y: showItems ? 260: 0)
+                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
+
             
                     
 
@@ -134,17 +134,17 @@ struct MyRoomInfo: View {
                     .opacity(0.4)
 
                     
-//          
+          
                 
-//
-//                                    NavigationLink(destination: AtmosphereInfo1(user: user, atmosphere: atmosphere, friends: friends), label: {
-//                                        MyRoomCircle (color: ColorManager .purple3, friendName: "Cupcakes \ninsted of \nGrades")
-//                                    })
-//                                    .offset(x: showItems ? 120 : 0, y: showItems ? -100: 0)
-//                                    .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
-//                                    .opacity(0.4)
-//
-//
+
+                                    NavigationLink(destination: AtmosphereInfo1(user: user, atmosphere: atmosphere, friends: friends), label: {
+                                        MyRoomCircle (color: ColorManager .purple3, friendName: "Cupcakes \ninsted of \nGrades")
+                                    })
+                                    .offset(x: showItems ? 120 : 0, y: showItems ? -100: 0)
+                                    .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
+                                    .opacity(0.4)
+
+
                 
                 
                     NavigationLink(destination: EmptyView(), label: {
