@@ -74,6 +74,14 @@ struct HugPreload: View {
                     .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
                     .opacity(0.65)
                     
+              
+                NavigationLink(destination: HurtFeelings(user: user, friends: friends), label: {
+                    HugCircle (color: ColorManager .grey1, friendName: "PhotoPOP")
+                })
+                .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
+                .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
+                .opacity(0.85)
+                
                 
                 
                 NavigationLink(destination: SaySomethingNice8(user: user, atmosphere: atmosphere, friends: friends), label: {
