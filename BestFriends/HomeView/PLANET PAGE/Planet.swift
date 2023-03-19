@@ -238,8 +238,6 @@ struct PlanetActionsView: View {
                                             .resizable()
                                             .foregroundColor(ColorManager .grey3)
                                             .frame(width: 90, height: 70)
-                                           
-                                        
                                             .opacity(0.95)
                                         
 
@@ -337,8 +335,8 @@ struct PlanetActionsView: View {
                             .frame(height: 25)
                         
                        
-                        
-                        NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups) ,
+//
+                        NavigationLink(destination: Apologies(user: user, friends: friends ) ,
                                        label: {
                             
                             ZStack {
@@ -349,16 +347,26 @@ struct PlanetActionsView: View {
                                     .glow(color: ColorManager.purple4, radius: 7)
                                     .opacity(0.80)
                              
-//                                    .frame(width: 110, height: 110)
-//                                    .foregroundColor(ColorManager.purple4)
-//
-//                                    .shadow(color: .white, radius: 2, x: 4, y: 0)
-//                                    .glow(color: ColorManager.purple4, radius: 0)
-//                                    .opacity(0.2)
                                 
+                                ZStack {
+                                    Image(systemName: "heart.fill")
+                                        .resizable()
+                                        .foregroundColor(ColorManager .grey3)
+                                        .frame(width: 110, height: 85)
+                                        .opacity(0.95)
+                                    
+                                    Text("Thank you!")
+                                        .fontWeight(.light)
+//                                        .frame(width: 100, height: 40)
+                                        .foregroundColor(ColorManager .grey1)
+                                        .font(.system(size: 17))
+                                        .background(ColorManager .grey3)
+                                        .cornerRadius(10)
+                                    
+                                }
                                 VStack {
                                     
-                                    Image("IconFightNew")
+                                    Image("")
                                        
                                    
                                     
@@ -398,9 +406,9 @@ struct PlanetActionsView: View {
                         Spacer()
                             .frame(height: 35)
                         
-                       
+//
                         
-                        NavigationLink(destination: Apologies(user: user, friends: friends),
+                        NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups),
                                 label: {
                             
                             ZStack {
@@ -416,7 +424,7 @@ struct PlanetActionsView: View {
                                 VStack {
                                     
                                       
-                                    Image("IconHugNew")
+                                    Image("IconFightNew")
 
                                 }
                             }
