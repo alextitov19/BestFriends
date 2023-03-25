@@ -135,7 +135,7 @@ struct PickMediator: View {
                     
 
                     NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
-                        MyRoomCircle (color: Color .white, friendName: "Dreams \nvia \nPassion")
+                        MyRoomCircle (color: Color .white, friendName: "Live your \nmost precious \nDreams")
                     })
                     .offset(x: showItems ? -120 : 0, y: showItems ? 170: 0)
                     .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
