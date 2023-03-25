@@ -883,7 +883,6 @@
 			isa = PBXGroup;
 			children = (
 				62319AAC284A788000CA0359 /* FG_Video.swift */,
-				CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */,
 				CFA12269285994AE00E22E84 /* PickMediator2.swift */,
 			);
 			path = Mediator;
@@ -919,6 +918,7 @@
 		CF37535B28C6953B003817E3 /* DREAMS */ = {
 			isa = PBXGroup;
 			children = (
+				CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */,
 				CF37535C28C6956D003817E3 /* HeartToContinue.swift */,
 				CF37534A28B5D84B003817E3 /* HorizonsPreload1.swift */,
 				CFDA4BCD28D1037100118D90 /* DreamVaultView.swift */,

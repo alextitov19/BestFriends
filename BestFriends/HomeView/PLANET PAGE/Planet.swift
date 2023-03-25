@@ -381,7 +381,7 @@ struct PlanetActionsView: View {
                     VStack {
                         
                         
-                        NavigationLink(destination: HurtFeelings(user: user, friends: friends),
+                        NavigationLink(destination: EmptyView(),
                                        label: {
                             ZStack {
                                 Circle()
@@ -408,7 +408,7 @@ struct PlanetActionsView: View {
                         
 //
                         
-                        NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups),
+                        NavigationLink(destination: PickMediator(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                             
                             ZStack {
@@ -424,7 +424,7 @@ struct PlanetActionsView: View {
                                 VStack {
                                     
                                       
-                                    Image("IconFightNew")
+                                    Image("iconStar 1")
 
                                 }
                             }
