@@ -75,27 +75,27 @@ struct StartHere1: View {
                 .shadow(color: ColorManager .purple1, radius: 2, x: 2, y: 2)
                 .opacity(0.7)
                 
-                
-                NavigationLink(destination: INFOPreload3(user: user), label: {
-                    StartHereCircle (color: Color .white, friendName: "Free \nStickers")
-                })
-                .offset(x: showItems ? 100 : 0, y: showItems ? -150: 0)
-                .shadow(color: ColorManager .purple1, radius: 2, x: 2, y: 2)
-                .opacity(0.7)
+//
+//                NavigationLink(destination: INFOPreload3(user: user), label: {
+//                    StartHereCircle (color: Color .white, friendName: "Free \nStickers")
+//                })
+//                .offset(x: showItems ? 100 : 0, y: showItems ? -150: 0)
+//                .shadow(color: ColorManager .purple1, radius: 2, x: 2, y: 2)
+//                .opacity(0.7)
 
                 
                 
                 
                 //                ZStack {
                 
-                
-                NavigationLink(destination: ShaylaPage(user: user), label: {
-                    StartHereCircle (color: ColorManager.grey2, friendName: "Envisioned \nby \nTeens")
-                })
-                .offset(x: showItems ? -80 : 0, y: showItems ? -150: 0)
-                .shadow(color: ColorManager .purple1, radius: 2, x: 2, y: 2)
-                .opacity(0.7)
-                
+//
+//                NavigationLink(destination: ShaylaPage(user: user), label: {
+//                    StartHereCircle (color: ColorManager.grey2, friendName: "Envisioned \nby \nTeens")
+//                })
+//                .offset(x: showItems ? -80 : 0, y: showItems ? -150: 0)
+//                .shadow(color: ColorManager .purple1, radius: 2, x: 2, y: 2)
+//                .opacity(0.7)
+//
                 
 
 //                NavigationLink(destination: INFOPreload4(user: user, friends: friends, groups: groups), label: {
@@ -144,19 +144,19 @@ struct StartHere1: View {
                             .foregroundColor(ColorManager .grey4)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                        Text("'envisioned by'")
-                            .font(.system(size: 20))
-                        
-                            .foregroundColor(ColorManager .grey4)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("'free stickers'")
-                            .font(.system(size: 20))
-                        
-                            .foregroundColor(ColorManager .grey4)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
+//                        Text("'envisioned by'")
+//                            .font(.system(size: 20))
+//                        
+//                            .foregroundColor(ColorManager .grey4)
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                        
+//                        Text("'free stickers'")
+//                            .font(.system(size: 20))
+//
+//                            .foregroundColor(ColorManager .grey4)
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
                         
                         
                         

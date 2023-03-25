@@ -55,15 +55,15 @@ struct MyRoomInfo: View {
                 
           
             
-//                
+                
 //                NavigationLink(destination: MyRoomTalk(user: user, friends: friends), label: {
 //                    MyRoomCircle (color: Color .white, friendName: "Someone \nto \ntalk too")
 //                })
 //                .offset(x: showItems ? -100 : 0, y: showItems ? -300: 0)
 //                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
 //                .opacity(0.4)
-//                
-                
+//
+//
         
                 
             ZStack {
@@ -91,7 +91,7 @@ struct MyRoomInfo: View {
                 NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
                     MyRoomCircle (color: ColorManager .grey1, friendName: "Something \n Bugging \nYou?")
                 })
-                .offset(x: showItems ? 0 : 0, y: showItems ? 170: 0)
+                .offset(x: showItems ? -100 : 0, y: showItems ? -270: 0)
                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
                 .opacity(0.25)
                 
@@ -101,20 +101,20 @@ struct MyRoomInfo: View {
                 NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
                     MyRoomCircle (color: Color .white, friendName: "SmileVault")
                 })
-                .offset(x: showItems ? 120 : 0, y: showItems ? 120: 0)
+                .offset(x: showItems ? -120 : 0, y: showItems ? -120: 0)
                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
                 .opacity(0.25)
                 
-//                
+//
 //                NavigationLink(destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends), label: {
 //                    MyRoomCircle (color: Color .white, friendName: "'Vibe' \nTracker")
 //                })
 //                .offset(x: showItems ? -100 : 0, y: showItems ? -270: 0)
 //                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
 //                .opacity(0.4)
-//           
 //
-//                
+//
+//
                     
                     NavigationLink(destination: MyFears(user: user, friends: friends), label: {
                         MyRoomCircle (color: Color .white, friendName: "I can't \nBreathe")
@@ -144,14 +144,14 @@ struct MyRoomInfo: View {
 //
 //                    
           
-                
-
-                                    NavigationLink(destination: AtmosphereInfo1(user: user, atmosphere: atmosphere, friends: friends), label: {
-                                        MyRoomCircle (color: ColorManager .purple3, friendName: "Cupcakes \ninsted of \nGrades")
-                                    })
-                                    .offset(x: showItems ? 120 : 0, y: showItems ? -100: 0)
-                                    .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
-                                    .opacity(0.4)
+//
+//
+//                                    NavigationLink(destination: AtmosphereInfo1(user: user, atmosphere: atmosphere, friends: friends), label: {
+//                                        MyRoomCircle (color: ColorManager .purple3, friendName: "Cupcakes \ninsted of \nGrades")
+//                                    })
+//                                    .offset(x: showItems ? 120 : 0, y: showItems ? -100: 0)
+//                                    .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
+//                                    .opacity(0.4)
 
 
                 
