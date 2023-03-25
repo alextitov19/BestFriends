@@ -81,7 +81,7 @@ struct INFOPreloadA: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text("If you want closer, \nmore meaningful friendships")
+                Text("If you want to realize \nyour most precious dreams")
                     .font(.system(size: 22))
                 
                     .foregroundColor(ColorManager.grey1)
