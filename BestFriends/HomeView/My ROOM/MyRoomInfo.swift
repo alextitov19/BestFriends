@@ -88,6 +88,15 @@ struct MyRoomInfo: View {
                 
               
            
+                NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
+                    MyRoomCircle (color: ColorManager .grey1, friendName: "Something \n Bugging \nYou?")
+                })
+                .offset(x: showItems ? 0 : 0, y: showItems ? 170: 0)
+                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                .opacity(0.25)
+                
+              
+                
                 
                 NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
                     MyRoomCircle (color: Color .white, friendName: "SmileVault")
@@ -125,15 +134,15 @@ struct MyRoomInfo: View {
 
             
                     
-
-                    NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
-                        MyRoomCircle (color: Color .white, friendName: "my \nDreamVault")
-                    })
-                    .offset(x: showItems ? -120 : 0, y: showItems ? 170: 0)
-                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
-                    .opacity(0.4)
-
-                    
+//
+//                    NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
+//                        MyRoomCircle (color: Color .white, friendName: "my \nDreamVault")
+//                    })
+//                    .offset(x: showItems ? -120 : 0, y: showItems ? 170: 0)
+//                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
+//                    .opacity(0.4)
+//
+//                    
           
                 
 
