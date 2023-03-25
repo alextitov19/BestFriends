@@ -41,20 +41,20 @@ struct DreamVaultView: View {
             
             
             
-                
-                            NavigationLink(destination: BeSinger(user: user), label: { WhoFightingCircle (color: .orange, friendName: "'I' wanna \nbe a \nsinger")
-                            })
-                                .offset(x: showItems ? 150 : 0, y: showItems ? -140: 0)
-                
+//
+//                            NavigationLink(destination: BeSinger(user: user), label: { WhoFightingCircle (color: .orange, friendName: "'I' wanna \nbe a \nsinger")
+//                            })
+//                                .offset(x: showItems ? 150 : 0, y: showItems ? -140: 0)
+//
                                 NavigationLink(destination: DreamSteps(), label: { WhoFightingCircle (color: .orange, friendName: "dream \nsteps")
                                 })
-                                .offset(x: showItems ? 0 : 0, y: showItems ? 250: 0)
-                
-                
-                            NavigationLink(destination: HorizonHomeView(user: user, friends: friends, atmosphere: atmosphere), label: {
-                                WhoFightingCircle (color: Color .green, friendName: "Let's \nDo This")
-                            })
                                 .offset(x: showItems ? 0 : 0, y: showItems ? 290: 0)
+                
+//
+//                            NavigationLink(destination: HorizonHomeView(user: user, friends: friends, atmosphere: atmosphere), label: {
+//                                WhoFightingCircle (color: Color .green, friendName: "Let's \nDo This")
+//                            })
+//                                .offset(x: showItems ? 0 : 0, y: showItems ? 290: 0)
                 
                 ZStack {
                     
@@ -106,35 +106,42 @@ struct DreamVaultView: View {
                         
                         VStack {
                             
-                            Text("Secrets of Neuroscience")
+                            Text("Neuroscience's Secret")
+                                .font(.system(size: 12))
+                                .foregroundColor(ColorManager.grey2)
+                                .fontWeight(.medium)
+                                .multilineTextAlignment(.center)
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                           
+                            Spacer()
+                                .frame(height:30)
+                            
+                            Text("Living your")
                                 .font(.system(size: 12))
                                 .foregroundColor(ColorManager.grey2)
                                 .fontWeight(.medium)
                                 .multilineTextAlignment(.center)
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                             
-                            Text("& Your Success")
+                            
+                            Text("DREAMS via PASSION")
                                 .font(.system(size: 12))
                                 .foregroundColor(ColorManager.grey2)
                                 .fontWeight(.medium)
                                 .multilineTextAlignment(.center)
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                             
-                            
-                            Text("Success via Passion")
-                                .font(.system(size: 12))
-                                .foregroundColor(ColorManager.grey2)
-                                .fontWeight(.medium)
-                                .multilineTextAlignment(.center)
-                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            
+                            Spacer()
+                                .frame(height:30)
                             
                             Text("-vs.-")
-                                .font(.system(size: 12))
+                                .font(.system(size: 17))
                                 .foregroundColor(ColorManager.grey2)
                                 .fontWeight(.medium)
                                 .multilineTextAlignment(.center)
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            Spacer()
+                                .frame(height:30)
                             
                             Text("raw \nDiscipline")
                                 .font(.system(size: 12))
@@ -143,6 +150,13 @@ struct DreamVaultView: View {
                                 .multilineTextAlignment(.center)
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                             
+                            
+                            Text("strength")
+                                .font(.system(size: 12))
+                                .foregroundColor(ColorManager.grey2)
+                                .fontWeight(.medium)
+                                .multilineTextAlignment(.center)
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
                             
                         }
                     }
