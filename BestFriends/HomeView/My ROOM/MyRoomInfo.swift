@@ -134,15 +134,15 @@ struct MyRoomInfo: View {
 
             
                     
-//
-//                    NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
-//                        MyRoomCircle (color: Color .white, friendName: "my \nDreamVault")
-//                    })
-//                    .offset(x: showItems ? -120 : 0, y: showItems ? 170: 0)
-//                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
-//                    .opacity(0.4)
-//
-//                    
+
+                    NavigationLink(destination: EmptyView(), label: {
+                        MyRoomCircle (color: Color .white, friendName: "Mind \nPeers \nStuff")
+                    })
+                    .offset(x: showItems ? -120 : 0, y: showItems ? 170: 0)
+                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
+                    .opacity(0.4)
+
+                    
           
 //
 //
