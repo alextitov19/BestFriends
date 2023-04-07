@@ -37,12 +37,15 @@ struct HomeView: View {
             
             
             ZStack {
+                Color .black
+                    .ignoresSafeArea()
+//                    .onAppear()
                 
-                Image("purpleBackground")
-                    .resizable()
-                    .ignoresSafeArea()
-                    .scaledToFill()
-                    .ignoresSafeArea()
+//                Image("purpleBackground")
+//                    .resizable()
+//                    .ignoresSafeArea()
+//                    .scaledToFill()
+//                    .ignoresSafeArea()
                     .onAppear {
                         if RestApi.instance.needLogin {
                             sessionManager.showLogin()

@@ -246,6 +246,8 @@
 		CFC0EE7E290805F8006B3FAA /* InfoInsideChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE7D290805F8006B3FAA /* InfoInsideChat.swift */; };
 		CFC0EE802908060C006B3FAA /* InfoPushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE7F2908060C006B3FAA /* InfoPushNotifications.swift */; };
 		CFCB79A1284D2F9000B8D868 /* HugVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */; };
+		CFCD3BC229DF845000D19A0F /* TestPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD3BC129DF845000D19A0F /* TestPage.swift */; };
+		CFCD3BC429DF849A00D19A0F /* TestPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD3BC329DF849A00D19A0F /* TestPage2.swift */; };
 		CFCD4BAD2965C27F00BBE43A /* SafeChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD4BAC2965C27F00BBE43A /* SafeChat.swift */; };
 		CFCD4BAF2965CE5C00BBE43A /* ComingChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD4BAE2965CE5C00BBE43A /* ComingChat.swift */; };
 		CFD0468D282D7F8400BF0B02 /* AtmosphereMain2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */; };
@@ -531,6 +533,8 @@
 		CFC0EE7D290805F8006B3FAA /* InfoInsideChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoInsideChat.swift; sourceTree = "<group>"; };
 		CFC0EE7F2908060C006B3FAA /* InfoPushNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPushNotifications.swift; sourceTree = "<group>"; };
 		CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HugVideo.mp4; sourceTree = "<group>"; };
+		CFCD3BC129DF845000D19A0F /* TestPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestPage.swift; path = "BestFriends/MY ROOM/TestPage.swift"; sourceTree = SOURCE_ROOT; };
+		CFCD3BC329DF849A00D19A0F /* TestPage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestPage2.swift; path = "BestFriends/MY ROOM/TestPage2.swift"; sourceTree = SOURCE_ROOT; };
 		CFCD4BAC2965C27F00BBE43A /* SafeChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeChat.swift; sourceTree = "<group>"; };
 		CFCD4BAE2965CE5C00BBE43A /* ComingChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingChat.swift; sourceTree = "<group>"; };
 		CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereMain2.swift; sourceTree = "<group>"; };
@@ -1443,6 +1447,8 @@
 				CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */,
 				CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */,
 				CF3B42F329371A6D00EE1D84 /* SaySomethingNice5.swift */,
+				CFCD3BC129DF845000D19A0F /* TestPage.swift */,
+				CFCD3BC329DF849A00D19A0F /* TestPage2.swift */,
 			);
 			path = "My ROOM";
 			sourceTree = "<group>";
@@ -1843,6 +1849,7 @@
 				CFDB150328574D8B00155CEE /* FightWithParents.swift in Sources */,
 				CF3DB36728D78BF300BF9CCD /* DreamsWeDare.swift in Sources */,
 				CFF952332981BC700054D963 /* DreamsWeDare2.swift in Sources */,
+				CFCD3BC429DF849A00D19A0F /* TestPage2.swift in Sources */,
 				CF3B65AB2800718E0003A714 /* ReportAbuse.swift in Sources */,
 				CF09118E284894F400CB0AF0 /* InfoView.swift in Sources */,
 				CF381A4B2826584F00B3719E /* IntroBluemodeFriend.swift in Sources */,
@@ -1928,6 +1935,7 @@
 				CF85CDE4298B0B1C0040EAE4 /* ProfessionalHelp.swift in Sources */,
 				7A4E336926A0D72600202BB7 /* UIColorExtension.swift in Sources */,
 				7A0856A627F3D9E800E8282B /* KeychainPasswordItem.swift in Sources */,
+				CFCD3BC229DF845000D19A0F /* TestPage.swift in Sources */,
 				CF4A08FB2883A56200ADA9DD /* Sweetheart1.swift in Sources */,
 				CFC0EE762907AB7D006B3FAA /* HugPushNotification.swift in Sources */,
 				7AC71DA827F3D803008D191B /* Helper.swift in Sources */,
