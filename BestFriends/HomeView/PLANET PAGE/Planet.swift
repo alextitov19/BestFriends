@@ -162,24 +162,54 @@ struct PlanetActionsView: View {
                     
                     VStack {
                         
-
-                        NavigationLink(destination: AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                        AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
+                        
+//
+                        NavigationLink(destination: Apologies(user: user, friends: friends),
                                        label: {
-                            ZStack {
-                                Circle()
-                                    .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple3)
-                                    .shadow(color: .white, radius: 3, x: 4, y: 4)
-                                    .glow(color: ColorManager.purple4, radius: 7)
-                                    .opacity(0.80)
-
-                                VStack {
-                                    Image("NiceIconNew2")
+                                                    ZStack {
+                                                        Circle()
+                                                            .frame(width: 110, height: 110)
+                                                            .foregroundColor(ColorManager.purple3)
+                                                            .shadow(color: .white, radius: 3, x: 0, y: -4)
+                                                            .glow(color: ColorManager.purple4, radius: 7)
+                                                            .opacity(0.80)
+                            
+                            
+                                                        ZStack {
+                                                            Image(systemName: "heart.fill")
+                                                                .resizable()
+                                                                .foregroundColor(ColorManager .grey3)
+                                                                .frame(width: 110, height: 85)
+                                                                .opacity(0.95)
+                            
+                                                            Text("Thank you!")
+                                                                .fontWeight(.light)
+                            //                                        .frame(width: 100, height: 40)
+                                                                .foregroundColor(ColorManager .grey1)
+                                                                .font(.system(size: 17))
+                                                                .background(ColorManager .grey3)
+                                                                .cornerRadius(10)
+                            
+                                                        }
+                            
+                                                        VStack {
+                            
+                                                            Image("")
+                            
+                      
                   
                                 }
                             }
                             
                         })
+                        
+
+//
+                        
+                        
+                        
+                        
                         
                         Spacer()
                             .frame(height: 35)
@@ -336,42 +366,56 @@ struct PlanetActionsView: View {
                             .frame(height: 25)
                         
                        
-//
-                        NavigationLink(destination: Apologies(user: user, friends: friends ) ,
+//AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
+                        NavigationLink(destination: Apologies(user: user, friends: friends),
                                        label: {
+                            
                             
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
                                     .foregroundColor(ColorManager.purple3)
-                                    .shadow(color: .white, radius: 3, x: 0, y: -4)
+                                    .shadow(color: .white, radius: 3, x: 4, y: 4)
                                     .glow(color: ColorManager.purple4, radius: 7)
                                     .opacity(0.80)
-                             
-                                
-                                ZStack {
-                                    Image(systemName: "heart.fill")
-                                        .resizable()
-                                        .foregroundColor(ColorManager .grey3)
-                                        .frame(width: 110, height: 85)
-                                        .opacity(0.95)
-                                    
-                                    Text("Thank you!")
-                                        .fontWeight(.light)
-//                                        .frame(width: 100, height: 40)
-                                        .foregroundColor(ColorManager .grey1)
-                                        .font(.system(size: 17))
-                                        .background(ColorManager .grey3)
-                                        .cornerRadius(10)
-                                    
-                                }
-                                VStack {
-                                    
-                                    Image("")
-                                       
-                                   
-                                    
 
+                                VStack {
+                                    Image("NiceIconNew2")
+                            
+                            
+                            
+                            
+//
+//                            ZStack {
+//                                Circle()
+//                                    .frame(width: 110, height: 110)
+//                                    .foregroundColor(ColorManager.purple3)
+//                                    .shadow(color: .white, radius: 3, x: 0, y: -4)
+//                                    .glow(color: ColorManager.purple4, radius: 7)
+//                                    .opacity(0.80)
+//
+//
+//                                ZStack {
+//                                    Image(systemName: "heart.fill")
+//                                        .resizable()
+//                                        .foregroundColor(ColorManager .grey3)
+//                                        .frame(width: 110, height: 85)
+//                                        .opacity(0.95)
+//
+//                                    Text("Thank you!")
+//                                        .fontWeight(.light)
+////                                        .frame(width: 100, height: 40)
+//                                        .foregroundColor(ColorManager .grey1)
+//                                        .font(.system(size: 17))
+//                                        .background(ColorManager .grey3)
+//                                        .cornerRadius(10)
+//
+//                                }
+//
+//                                VStack {
+//
+//                                    Image("")
+//                            NiceIconNew2
                                     
                                 }
                             }
