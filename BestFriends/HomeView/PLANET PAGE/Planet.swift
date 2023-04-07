@@ -356,10 +356,10 @@ struct PlanetActionsView: View {
                         
                         Spacer()
                             .frame(height: 25)
+//                        Apologies(user: user, friends: friends
                         
-                       
 
-                        NavigationLink(destination: Apologies(user: user, friends: friends),
+                        NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
                             
                             
