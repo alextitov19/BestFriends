@@ -293,24 +293,25 @@ struct PlanetActionsView: View {
                                 
                               
                    
-                        Text("Building")
-                            .foregroundColor(.white)
-                            .italic()
-                            .font(.system(size: 17, weight: .bold))
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            .opacity(0.50)
+//                        Text("Building")
+//                            .foregroundColor(.white)
+//                            .italic()
+//                            .font(.system(size: 17, weight: .bold))
+//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                            .opacity(0.50)
 
 //                        Spacer()
 //                            .frame(height: 5)
 
                         
-                                    Text("Best")
+                                    Text("be a")
                                         .foregroundColor(.white)
-                                        .font(.system(size: 28, weight: .bold))
+                                        .italic()
+                                        .font(.system(size: 23, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                        
-                        Text("Friendships")
+                        Text("BestFriend")
                             .foregroundColor(.white)
                             .font(.system(size: 28, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -318,7 +319,7 @@ struct PlanetActionsView: View {
                         
                         Text("tap")
                             .foregroundColor(.green)
-                            .font(.system(size: 30, weight: .regular))
+                            .font(.system(size: 28, weight: .regular))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                             .opacity(0.50)
                         
