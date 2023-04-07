@@ -78,7 +78,7 @@ struct HugPreload: View {
                     
               
                 NavigationLink(destination: HurtFeelings(user: user, friends: friends), label: {
-                    HugCircle (color: ColorManager .grey1, friendName: "shake iPhone \nPhotoPOP")
+                    HugCircle (color: ColorManager .grey1, friendName: "PhotoPOP")
                 })
                 .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
                 .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
@@ -96,7 +96,7 @@ struct HugPreload: View {
                 
                     
                     NavigationLink(destination: EmptyView(), label: {
-                        HugCircle (color: ColorManager .purple4, friendName: "care hearts \ntap here")
+                        HugCircle (color: ColorManager .purple4, friendName: "TAP")
                     })
                     .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
                     .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
