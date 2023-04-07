@@ -387,14 +387,39 @@ struct PlanetActionsView: View {
                                 Circle()
                                     .frame(width: 110, height: 110)
                                     .foregroundColor(ColorManager.purple3)
-                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                    .shadow(color: .white, radius: 3, x: 0, y: -4)
                                     .glow(color: ColorManager.purple4, radius: 7)
-                                    .opacity(0.8)
+                                    .opacity(0.80)
+                             
                                 
+                                ZStack {
+                                    Image(systemName: "heart.fill")
+                                        .resizable()
+                                        .foregroundColor(ColorManager .grey3)
+                                        .frame(width: 90, height: 70)
+                                        .opacity(0.95)
+                                    
+                                    Text("")
+                                        .fontWeight(.light)
+//                                        .frame(width: 100, height: 40)
+                                        .foregroundColor(ColorManager .grey1)
+                                        .font(.system(size: 25))
+                                        .background(ColorManager .grey3)
+//                                        .cornerRadius(10)
+                                   
+                                    Text("+ \nBFFs")
+                                        .fontWeight(.light)
+//                                        .frame(width: 100, height: 40)
+                                        .foregroundColor(ColorManager .grey1)
+                                        .font(.system(size: 17))
+                                        .background(ColorManager .grey3)
+                                        .cornerRadius(10)
+                                }
                                 VStack {
-
-//                                    Image("IconPhotoNew")
-                        
+                                    
+                                    Image("")
+                                       
+                                   
  
                                 }
                             }
