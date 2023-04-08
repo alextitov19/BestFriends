@@ -168,7 +168,7 @@ struct PlanetActionsView: View {
                                                         Circle()
                                                             .frame(width: 110, height: 110)
                                                             .foregroundColor(ColorManager.purple3)
-                                                            .shadow(color: .white, radius: 3, x: 0, y: -4)
+                                                            .shadow(color: .white, radius: 3, x: 4, y: 4)
                                                             .glow(color: ColorManager.purple4, radius: 7)
                                                             .opacity(0.80)
                             
@@ -213,7 +213,7 @@ struct PlanetActionsView: View {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple3)
+                                    .foregroundColor(ColorManager.purple4)
                                     .shadow(color: .white, radius: 3, x: 4, y: -4)
                                     .glow(color: ColorManager.purple4, radius: 7)
                                     .opacity(0.80)
@@ -341,7 +341,7 @@ struct PlanetActionsView: View {
                         
                         Text("START HERE")
                             .foregroundColor(.green)
-                            .font(.system(size: 25, weight: .regular))
+                            .font(.system(size: 20, weight: .regular))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                             .opacity(0.50)
                         
@@ -366,7 +366,7 @@ struct PlanetActionsView: View {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple5)
+                                    .foregroundColor(ColorManager.purple4)
                                     .shadow(color: .white, radius: 3, x: 0, y: -4)
                                     .glow(color: ColorManager.purple4, radius: 7)
                                     .opacity(0.80)
