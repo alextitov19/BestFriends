@@ -45,7 +45,7 @@ struct INFOPreloadA: View {
                 
                 
                 
-                Text("No one wants lose their ...")
+                Text("No one wants to lose their ...")
                     .font(.system(size: 17))
                     .italic()
                     .foregroundColor(ColorManager.grey1)
@@ -88,10 +88,11 @@ struct INFOPreloadA: View {
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                     
-                 
+                    Spacer()
+                        .frame(height: 5)
                     
-                    Text("there for them on bad days")
-                        .font(.system(size: 17))
+                    Text("there for them on difficult days")
+                        .font(.system(size: 19))
                         .italic()
                         .foregroundColor(ColorManager.grey1)
                         .fontWeight(.regular)

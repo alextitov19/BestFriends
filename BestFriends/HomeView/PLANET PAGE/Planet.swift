@@ -400,7 +400,7 @@ struct PlanetActionsView: View {
                                     Image(systemName: "heart.fill")
                                         .resizable()
                                         .foregroundColor(ColorManager .orange4)
-                                        .frame(width: 95, height: 90)
+                                        .frame(width: 90, height: 70)
                                         .opacity(0.95)
                                  
                                     VStack {
@@ -409,7 +409,7 @@ struct PlanetActionsView: View {
                                             .fontWeight(.light)
                                         //                                        .frame(width: 100, height: 40)
                                             .foregroundColor(ColorManager .grey3)
-                                            .font(.system(size: 23))
+                                            .font(.system(size: 15))
                                             .background(ColorManager .orange4)
                                         //                                        .cornerRadius(10)
                                         
@@ -417,7 +417,7 @@ struct PlanetActionsView: View {
                                             .fontWeight(.light)
                                         //                                        .frame(width: 100, height: 40)
                                             .foregroundColor(ColorManager .grey3)
-                                            .font(.system(size: 23))
+                                            .font(.system(size: 15))
                                             .background(ColorManager .orange4)
                                             .cornerRadius(10)
                                     }
