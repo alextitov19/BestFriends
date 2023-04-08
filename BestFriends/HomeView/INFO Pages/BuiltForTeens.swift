@@ -56,63 +56,7 @@
 
                        VStack {
                     
-                         
-
-//
-//                            Text("inside of you")
-//                                .italic()
-//                                .font(.system(size: 20))
-//                                .fontWeight(.light)
-//                                .multilineTextAlignment(.center)
-//                                .foregroundColor(ColorManager .grey3)
-                           
-//
-//                           Text("everyone wants")
-//                               .font(.system(size: 20))
-//                               .italic()
-//                               .fontWeight(.light)
-//                               .multilineTextAlignment(.center)
-//                               .foregroundColor(ColorManager .grey3)
-//
-//
-//
-//
-//                           Text("to know")
-//                               .italic()
-//                               .font(.system(size: 20))
-//                               .fontWeight(.light)
-//                               .multilineTextAlignment(.center)
-//                               .foregroundColor(ColorManager .grey3)
-//
-//
-//                           Text("their friends")
-//                               .italic()
-//                               .font(.system(size: 20))
-//                               .fontWeight(.light)
-//                               .multilineTextAlignment(.center)
-//                               .foregroundColor(ColorManager .grey3)
-//
-//                           Text("like them")
-//                               .italic()
-//                               .font(.system(size: 20))
-//                               .fontWeight(.light)
-//                               .multilineTextAlignment(.center)
-//                               .foregroundColor(ColorManager .grey3)
-//
-//
-////
-//
-//                            Spacer ()
-//                                .frame(height: 17)
-                           
-//
-//
-//                            Text("interacting with your BFF's")
-//
-//                                .font(.system(size: 20))
-//                                .fontWeight(.light)
-//                                .multilineTextAlignment(.center)
-//                                .foregroundColor(Color .white)
+                       
                            
                            Spacer ()
                                 .frame(height: 20)
@@ -133,7 +77,7 @@
 
 
                         
-                           Text("to you BFFs")
+                                                    Text("to your BFFs")
                                                        .italic()
                                                        .font(.system(size: 20))
                                                        .fontWeight(.light)
