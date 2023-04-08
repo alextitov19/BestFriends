@@ -389,7 +389,7 @@ struct PlanetActionsView: View {
                                 Circle()
                                     .frame(width: 110, height: 110)
                                     .foregroundColor(ColorManager .purple3)
-                                    .shadow(color: .white, radius: 3, x: 0, y: -4)
+                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
                                     .glow(color: ColorManager.purple4, radius: 7)
                                     .opacity(0.80)
                              
@@ -397,7 +397,7 @@ struct PlanetActionsView: View {
                                 ZStack {
                                     Image(systemName: "heart.fill")
                                         .resizable()
-                                        .foregroundColor(Color .red)
+                                        .foregroundColor(ColorManager .orange4)
                                         .frame(width: 100, height: 90)
                                         .opacity(0.95)
                                  
@@ -407,16 +407,16 @@ struct PlanetActionsView: View {
                                             .fontWeight(.light)
                                         //                                        .frame(width: 100, height: 40)
                                             .foregroundColor(ColorManager .grey1)
-                                            .font(.system(size: 25))
-                                            .background(Color .red)
+                                            .font(.system(size: 23))
+                                            .background(ColorManager .orange4)
                                         //                                        .cornerRadius(10)
                                         
                                         Text("BFFs")
-                                            .fontWeight(.regular)
+                                            .fontWeight(.light)
                                         //                                        .frame(width: 100, height: 40)
                                             .foregroundColor(ColorManager .grey1)
-                                            .font(.system(size: 25))
-                                            .background(Color .red)
+                                            .font(.system(size: 23))
+                                            .background(ColorManager .orange4)
                                             .cornerRadius(10)
                                     }
                                 }
