@@ -53,12 +53,12 @@ struct SaySomethingNice6: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text("If you don't add your friends")
-                    .font(.system(size: 27))
-                    .italic()
-                    .foregroundColor(ColorManager.grey1)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
+//                Text("If you don't add your friends")
+//                    .font(.system(size: 27))
+//                    .italic()
+//                    .foregroundColor(ColorManager.grey1)
+//                    .fontWeight(.thin)
+//                    .multilineTextAlignment(.center)
                 
                 Text("this app doesn't work")
                     .font(.system(size: 38))
@@ -67,7 +67,12 @@ struct SaySomethingNice6: View {
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                 
-
+                Text("If you don't add your friends")
+                    .font(.system(size: 27))
+                    .italic()
+                    .foregroundColor(ColorManager.grey1)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
             
                 Spacer()
                     .frame(height: 70)

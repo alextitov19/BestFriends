@@ -97,7 +97,7 @@ struct INFOPreloadA: View {
               
               destination:  SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
               label: {
-                  Text("then TAP here")
+                  Text("Walk-through")
                       .fontWeight(.light)
                       .foregroundColor(Color.white)
                       .frame(width: 230, height: 60)
@@ -125,7 +125,7 @@ struct INFOPreloadA: View {
 //    Spacer()
           .frame(height: 55)
       
-      Text("We got you!")
+      Text("Then Add Your Friends")
           .font(.system(size: 19))
           .italic()
           .foregroundColor(ColorManager.grey1)

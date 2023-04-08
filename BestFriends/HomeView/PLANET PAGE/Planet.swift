@@ -388,7 +388,7 @@ struct PlanetActionsView: View {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple3)
+                                    .foregroundColor(ColorManager .purple3)
                                     .shadow(color: .white, radius: 3, x: 0, y: -4)
                                     .glow(color: ColorManager.purple4, radius: 7)
                                     .opacity(0.80)
@@ -397,7 +397,7 @@ struct PlanetActionsView: View {
                                 ZStack {
                                     Image(systemName: "heart.fill")
                                         .resizable()
-                                        .foregroundColor(ColorManager .grey3)
+                                        .foregroundColor(Color .green)
                                         .frame(width: 90, height: 70)
                                         .opacity(0.95)
                                     
@@ -414,7 +414,7 @@ struct PlanetActionsView: View {
 //                                        .frame(width: 100, height: 40)
                                         .foregroundColor(ColorManager .grey1)
                                         .font(.system(size: 17))
-                                        .background(ColorManager .grey3)
+                                        .background(Color .green)
                                         .cornerRadius(10)
                                 }
                                 VStack {
