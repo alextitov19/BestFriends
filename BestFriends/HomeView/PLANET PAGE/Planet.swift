@@ -177,10 +177,10 @@ struct PlanetActionsView: View {
                                                             Image(systemName: "heart.fill")
                                                                 .resizable()
                                                                 .foregroundColor(ColorManager .grey3)
-                                                                .frame(width: 110, height: 85)
+                                                                .frame(width: 90, height: 70)
                                                                 .opacity(0.95)
                             
-                                                            Text("Thank you!")
+                                                            Text("Thank \nyou!")
                                                                 .fontWeight(.light)
                             //                                        .frame(width: 100, height: 40)
                                                                 .foregroundColor(ColorManager .grey1)
@@ -267,11 +267,11 @@ struct PlanetActionsView: View {
                                         NavigationLink(destination: INFOPreloadA(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
                                             label: {
                                                 VStack {
-                                                    Text("START")
+                                                    Text("Walk- \nthrough")
                                                         .fontWeight(.light)
                                                         .frame(width: 60, height: 40)
                                                         .foregroundColor(ColorManager .grey1)
-                                                        .font(.system(size: 20))
+                                                        .font(.system(size: 15))
                                                         .background(ColorManager .grey3)
                                                         .cornerRadius(10)
                                                     
@@ -339,9 +339,9 @@ struct PlanetActionsView: View {
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                             .opacity(0.50)
                         
-                        Text("tap")
+                        Text("START HERE")
                             .foregroundColor(.green)
-                            .font(.system(size: 28, weight: .regular))
+                            .font(.system(size: 25, weight: .regular))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                             .opacity(0.50)
                         
@@ -366,8 +366,8 @@ struct PlanetActionsView: View {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple3)
-                                    .shadow(color: .white, radius: 3, x: 4, y: 4)
+                                    .foregroundColor(ColorManager.purple5)
+                                    .shadow(color: .white, radius: 3, x: 0, y: -4)
                                     .glow(color: ColorManager.purple4, radius: 7)
                                     .opacity(0.80)
 
@@ -397,25 +397,28 @@ struct PlanetActionsView: View {
                                 ZStack {
                                     Image(systemName: "heart.fill")
                                         .resizable()
-                                        .foregroundColor(Color .green)
-                                        .frame(width: 90, height: 70)
+                                        .foregroundColor(Color .red)
+                                        .frame(width: 100, height: 90)
                                         .opacity(0.95)
-                                    
-                                    Text("")
-                                        .fontWeight(.light)
-//                                        .frame(width: 100, height: 40)
-                                        .foregroundColor(ColorManager .grey1)
-                                        .font(.system(size: 25))
-                                        .background(ColorManager .grey3)
-//                                        .cornerRadius(10)
-                                   
-                                    Text("+ \nBFFs")
-                                        .fontWeight(.light)
-//                                        .frame(width: 100, height: 40)
-                                        .foregroundColor(ColorManager .grey1)
-                                        .font(.system(size: 17))
-                                        .background(Color .green)
-                                        .cornerRadius(10)
+                                 
+                                    VStack {
+                                        
+                                        Text("Add")
+                                            .fontWeight(.light)
+                                        //                                        .frame(width: 100, height: 40)
+                                            .foregroundColor(ColorManager .grey1)
+                                            .font(.system(size: 25))
+                                            .background(Color .red)
+                                        //                                        .cornerRadius(10)
+                                        
+                                        Text("BFFs")
+                                            .fontWeight(.regular)
+                                        //                                        .frame(width: 100, height: 40)
+                                            .foregroundColor(ColorManager .grey1)
+                                            .font(.system(size: 25))
+                                            .background(Color .red)
+                                            .cornerRadius(10)
+                                    }
                                 }
                                 VStack {
                                     
@@ -443,7 +446,7 @@ struct PlanetActionsView: View {
                                 //
                                 
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple3)
+                                    .foregroundColor(ColorManager.purple4)
                                     .shadow(color: .white, radius: 3, x: -4, y: -4)
                                     .glow(color: ColorManager.purple4, radius: 7)
                                     .opacity(0.80)

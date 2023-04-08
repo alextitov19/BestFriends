@@ -90,12 +90,12 @@ struct INFOPreloadA: View {
                 
             VStack {
            
+//SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres
 //
-//                INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
                 
           NavigationLink(
               
-              destination:  SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
+              destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
               label: {
                   Text("Walk-through")
                       .fontWeight(.light)

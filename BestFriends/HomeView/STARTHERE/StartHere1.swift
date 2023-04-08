@@ -232,12 +232,12 @@ struct StartHere1: View {
 //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
 //                            .opacity(0.90)
                         
-                        Text("With 5 closest friends you get & offer help \non difficult days while building stronger \nfriendships & sharing ‘Emotions Adventures’ \nall on a safer platform")
-                            .font(.system(size: 17))
-
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.grey2)
+//                        Text("With 5 closest friends you get & offer help \non difficult days while building stronger \nfriendships & sharing ‘Emotions Adventures’ \nall on a safer platform")
+//                            .font(.system(size: 17))
+//
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(ColorManager.grey2)
                         
                         Spacer ()
                             .frame(height: 30)
