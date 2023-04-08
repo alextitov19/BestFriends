@@ -77,7 +77,7 @@
 
 
                         
-                                                    Text("to your BFFs")
+                                                    Text("to BFFs having \n difficult days")
                                                        .italic()
                                                        .font(.system(size: 20))
                                                        .fontWeight(.light)
