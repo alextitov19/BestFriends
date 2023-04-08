@@ -326,10 +326,10 @@ struct PlanetActionsView: View {
 //                            .frame(height: 5)
 
                         
-                                    Text("be a")
+                                    Text("being a")
                                         .foregroundColor(.white)
                                         .italic()
-                                        .font(.system(size: 23, weight: .bold))
+                                        .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                        
@@ -338,10 +338,12 @@ struct PlanetActionsView: View {
                             .font(.system(size: 28, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                             .opacity(0.50)
+                        Spacer()
+                            .frame(height: 7)
                         
                         Text("START HERE")
                             .foregroundColor(.green)
-                            .font(.system(size: 20, weight: .regular))
+                            .font(.system(size: 17, weight: .regular))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                             .opacity(0.50)
                         
@@ -398,7 +400,7 @@ struct PlanetActionsView: View {
                                     Image(systemName: "heart.fill")
                                         .resizable()
                                         .foregroundColor(ColorManager .orange4)
-                                        .frame(width: 100, height: 90)
+                                        .frame(width: 95, height: 90)
                                         .opacity(0.95)
                                  
                                     VStack {
@@ -406,7 +408,7 @@ struct PlanetActionsView: View {
                                         Text("Invite")
                                             .fontWeight(.light)
                                         //                                        .frame(width: 100, height: 40)
-                                            .foregroundColor(ColorManager .grey1)
+                                            .foregroundColor(ColorManager .grey3)
                                             .font(.system(size: 23))
                                             .background(ColorManager .orange4)
                                         //                                        .cornerRadius(10)
@@ -414,7 +416,7 @@ struct PlanetActionsView: View {
                                         Text("BFFs")
                                             .fontWeight(.light)
                                         //                                        .frame(width: 100, height: 40)
-                                            .foregroundColor(ColorManager .grey1)
+                                            .foregroundColor(ColorManager .grey3)
                                             .font(.system(size: 23))
                                             .background(ColorManager .orange4)
                                             .cornerRadius(10)
