@@ -68,15 +68,15 @@ struct MyRoomInfo: View {
                 
             ZStack {
                 
-//       
-//                NavigationLink(destination: INFOPreload3(user: user), label: {
-//                    MyRoomCircle (color: Color .white, friendName: "Free \nStickers")
-//                })
-//                .offset(x: showItems ? -100 : 0, y: showItems ? 150: 0)
-//                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-//                .opacity(0.4)
-//
-//                
+       
+                NavigationLink(destination: AtmosphereInfo1(user: user, atmosphere: atmosphere, friends: friends), label: {
+                    MyRoomCircle (color: Color .white, friendName: "Cupcakes \ninstead of \ngrades")
+                })
+                .offset(x: showItems ? 100 : 0, y: showItems ? 150: 0)
+                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                .opacity(0.4)
+
+                
                 
                 
                 NavigationLink(destination: HugPushNotification3(user: user, friends: friends), label: {

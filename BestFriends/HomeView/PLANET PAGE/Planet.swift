@@ -209,7 +209,7 @@ struct PlanetActionsView: View {
 
                        
                         
-                        NavigationLink(destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
+                        NavigationLink(destination: TestPage2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
@@ -456,7 +456,7 @@ struct PlanetActionsView: View {
                         
 //
                         
-                        NavigationLink(destination: PickMediator(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        NavigationLink(destination: TestPage3(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                             
                             ZStack {

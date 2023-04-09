@@ -1,18 +1,16 @@
 //
-//  TestPage2.swift
+//  TestPage3.swift
 //  BestFriends
 //
-//  Created by Social Tech on 4/6/23.
+//  Created by Social Tech on 4/9/23.
 //
-
-
 
 
 import Foundation
 import SwiftUI
 import AVKit
 
-struct TestPage2: View {
+struct TestPage3: View {
 
 
     
@@ -57,25 +55,21 @@ struct TestPage2: View {
 
                     VStack {
                  
-//                        Text("let the inside of you match \nthe outside of you on social media")
-//                           .italic()
-//                           .font(.system(size: 20))
-//                           .fontWeight(.light)
-//                           .multilineTextAlignment(.center)
-//                           .foregroundColor(ColorManager .grey3)
+                        Text("New Summer 2023 Feature")
+                           .italic()
+                           .font(.system(size: 20))
+                           .fontWeight(.light)
+                           .multilineTextAlignment(.center)
+                           .foregroundColor(ColorManager .grey3)
                         
                         Spacer ()
                              .frame(height: 20)
                         
                         
-                        
-//                                   AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
-//
-                        
-                        NavigationLink( destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        NavigationLink( destination: EmptyView(),
 //                               destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
-                                Text("My Room")
+                                Text("comming soon")
                                     .fontWeight(.thin)
                                     .frame(width: 235, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -86,14 +80,14 @@ struct TestPage2: View {
                             })
 
 
-                     
-                                                 Text("need some time alone")
-                                                    .italic()
-                                                    .font(.system(size: 20))
-                                                    .fontWeight(.light)
-                                                    .multilineTextAlignment(.center)
-                                                    .foregroundColor(ColorManager .grey3)
-                        
+//
+//                                                 Text("to trusted BFFs")
+//                                                    .italic()
+//                                                    .font(.system(size: 20))
+//                                                    .fontWeight(.light)
+//                                                    .multilineTextAlignment(.center)
+//                                                    .foregroundColor(ColorManager .grey3)
+//
                         
                            Spacer ()
                                 .frame(height: 30)

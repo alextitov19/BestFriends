@@ -137,11 +137,15 @@ struct INFOPreloadA: View {
                         //                            })
                         //    Spacer()
                         .frame(height: 55)
+                     
+                        Spacer()
+                            .frame(height: 15)
                         
-                        Text("Then Add Your Friends")
+                        
+                        Text("-> Then Add Your Friends <-")
                             .font(.system(size: 19))
                             .italic()
-                            .foregroundColor(ColorManager.grey1)
+                            .foregroundColor(ColorManager.orange4)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                         

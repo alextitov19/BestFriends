@@ -93,6 +93,7 @@
 		CF09118C28488A5700CB0AF0 /* BetaTestVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09118B28488A5700CB0AF0 /* BetaTestVideo.swift */; };
 		CF09118E284894F400CB0AF0 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09118D284894F400CB0AF0 /* InfoView.swift */; };
 		CF091195284A6DC900CB0AF0 /* FG_VideoCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF091194284A6DC900CB0AF0 /* FG_VideoCall.swift */; };
+		CF1CD75229E2905F00D1F801 /* TestPage3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1CD75129E2905F00D1F801 /* TestPage3.swift */; };
 		CF1ECABB286AAD6F00D999F8 /* SendSongChat2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECABA286AAD6E00D999F8 /* SendSongChat2.swift */; };
 		CF1ECABF286E876900D999F8 /* AtmosphereInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECABE286E876900D999F8 /* AtmosphereInfo.swift */; };
 		CF1ECAC12870039500D999F8 /* HorizonPromoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECAC02870039500D999F8 /* HorizonPromoPage.swift */; };
@@ -379,6 +380,8 @@
 		CF09118B28488A5700CB0AF0 /* BetaTestVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaTestVideo.swift; sourceTree = "<group>"; };
 		CF09118D284894F400CB0AF0 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		CF091194284A6DC900CB0AF0 /* FG_VideoCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FG_VideoCall.swift; sourceTree = "<group>"; };
+		CF1CD75129E2905F00D1F801 /* TestPage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestPage3.swift; path = ../../../../../../Applications/TestPage3.swift; sourceTree = "<group>"; };
+		CF1CD75529E291BE00D1F801 /* TestPage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPage3.swift; sourceTree = "<group>"; };
 		CF1ECABA286AAD6E00D999F8 /* SendSongChat2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendSongChat2.swift; sourceTree = "<group>"; };
 		CF1ECABE286E876900D999F8 /* AtmosphereInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereInfo.swift; sourceTree = "<group>"; };
 		CF1ECAC02870039500D999F8 /* HorizonPromoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonPromoPage.swift; sourceTree = "<group>"; };
@@ -820,6 +823,7 @@
 				CF41280C2927542B003BCBFA /* SurveyStickers */,
 				CF39F17A292C5F5000927A3C /* STARTHERE */,
 				CFFA7F0529B0DCDC0086F88A /* START Pages */,
+				CF1CD75329E2908B00D1F801 /* New Summer Feature */,
 				CFC0EE7829080585006B3FAA /* INFO Pages */,
 				CF47CF0A28E2CAC7008B6F11 /* WORLD */,
 				CF71574F2975D27000094F22 /* SendKisses */,
@@ -873,6 +877,14 @@
 				F54A61C5A22AA6A9255C7B05 /* Pods-BestFriends.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF1CD75329E2908B00D1F801 /* New Summer Feature */ = {
+			isa = PBXGroup;
+			children = (
+				CF1CD75529E291BE00D1F801 /* TestPage3.swift */,
+			);
+			path = "New Summer Feature";
 			sourceTree = "<group>";
 		};
 		CF2DBCE62853D7E6008616A3 /* Being Accountable */ = {
@@ -1306,6 +1318,7 @@
 				CF41753D2968847900898E2D /* InfoSilence.swift */,
 				CF41754B296FBB8D00898E2D /* InfoWhyLoveBF.swift */,
 				CF94CAFE298756BD00A75D01 /* InfoWhyLoveBF2.swift */,
+				CF1CD75129E2905F00D1F801 /* TestPage3.swift */,
 			);
 			path = "INFO Pages";
 			sourceTree = "<group>";
@@ -1440,6 +1453,7 @@
 		CFD8BD0C2915562D00F86EFB /* My ROOM */ = {
 			isa = PBXGroup;
 			children = (
+				CFCD3BC329DF849A00D19A0F /* TestPage2.swift */,
 				CFD8BD0D2915565B00F86EFB /* MyRoomInfo.swift */,
 				CFD6C05C294169CC00D57E0B /* HideMyRoom.swift */,
 				CFD6C05E29416A3B00D57E0B /* HideMyRoomLink.swift */,
@@ -1448,7 +1462,6 @@
 				CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */,
 				CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */,
 				CF3B42F329371A6D00EE1D84 /* SaySomethingNice5.swift */,
-				CFCD3BC329DF849A00D19A0F /* TestPage2.swift */,
 			);
 			path = "My ROOM";
 			sourceTree = "<group>";
@@ -1822,6 +1835,7 @@
 				CFDA4BD828D1999900118D90 /* Heart.swift in Sources */,
 				CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */,
 				7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */,
+				CF1CD75229E2905F00D1F801 /* TestPage3.swift in Sources */,
 				CF8F76C6293866BB00B109D3 /* AskQuestion.swift in Sources */,
 				7A04C13F2855390B003AB24A /* PhotoPopImageView.swift in Sources */,
 				CFA1225D285975FF00E22E84 /* Apologies.swift in Sources */,
