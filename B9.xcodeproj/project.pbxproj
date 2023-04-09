@@ -533,7 +533,7 @@
 		CFC0EE7D290805F8006B3FAA /* InfoInsideChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoInsideChat.swift; sourceTree = "<group>"; };
 		CFC0EE7F2908060C006B3FAA /* InfoPushNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPushNotifications.swift; sourceTree = "<group>"; };
 		CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HugVideo.mp4; sourceTree = "<group>"; };
-		CFCD3BC129DF845000D19A0F /* TestPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestPage.swift; path = "BestFriends/MY ROOM/TestPage.swift"; sourceTree = SOURCE_ROOT; };
+		CFCD3BC129DF845000D19A0F /* TestPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestPage.swift; path = "BestFriends/HomeView/INFO Pages/TestPage.swift"; sourceTree = SOURCE_ROOT; };
 		CFCD3BC329DF849A00D19A0F /* TestPage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestPage2.swift; path = "BestFriends/MY ROOM/TestPage2.swift"; sourceTree = SOURCE_ROOT; };
 		CFCD4BAC2965C27F00BBE43A /* SafeChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeChat.swift; sourceTree = "<group>"; };
 		CFCD4BAE2965CE5C00BBE43A /* ComingChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingChat.swift; sourceTree = "<group>"; };
@@ -1288,6 +1288,7 @@
 		CFC0EE7829080585006B3FAA /* INFO Pages */ = {
 			isa = PBXGroup;
 			children = (
+				CFCD3BC129DF845000D19A0F /* TestPage.swift */,
 				CF565EE9292FED1E00B66A18 /* WhyFiveFriends.swift */,
 				CF3295F6290BAA7C0014F658 /* INFOPreload.swift */,
 				CFD8BD15291B3D6600F86EFB /* INFOPreload2.swift */,
@@ -1447,7 +1448,6 @@
 				CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */,
 				CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */,
 				CF3B42F329371A6D00EE1D84 /* SaySomethingNice5.swift */,
-				CFCD3BC129DF845000D19A0F /* TestPage.swift */,
 				CFCD3BC329DF849A00D19A0F /* TestPage2.swift */,
 			);
 			path = "My ROOM";

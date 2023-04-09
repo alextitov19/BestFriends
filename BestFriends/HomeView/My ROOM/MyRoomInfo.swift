@@ -135,8 +135,8 @@ struct MyRoomInfo: View {
             
                     
 
-                    NavigationLink(destination: EmptyView(), label: {
-                        MyRoomCircle (color: Color .white, friendName: "Mind \nPeers \nStuff")
+                    NavigationLink(destination: PickMediator(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
+                        MyRoomCircle (color: Color .white, friendName: "my precious \ndreams")
                     })
                     .offset(x: showItems ? -120 : 0, y: showItems ? 170: 0)
                     .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)

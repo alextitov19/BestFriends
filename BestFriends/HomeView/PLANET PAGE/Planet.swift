@@ -220,7 +220,14 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
                                 
-                                    Image("IconRoomNew")
+                                    Text("2")
+                                        .foregroundColor(ColorManager .purple3)
+                                        .font(.system(size: 80, weight: .regular))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                    
+                                    
+//                                    Image("IconRoomNew")
                                 }
                             }
                             
@@ -341,12 +348,12 @@ struct PlanetActionsView: View {
                         Spacer()
                             .frame(height: 7)
                         
-                        Text("START HERE")
-                            .foregroundColor(.green)
-                            .font(.system(size: 17, weight: .regular))
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            .opacity(0.50)
-                        
+//                        Text("START HERE")
+//                            .foregroundColor(.green)
+//                            .font(.system(size: 17, weight: .regular))
+//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                            .opacity(0.50)
+//
                         
                         Spacer()
                             .frame(height: 13)
@@ -361,7 +368,7 @@ struct PlanetActionsView: View {
 //                        Apologies(user: user, friends: friends
                         
 
-                        NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        NavigationLink(destination: TestPage(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
                             
                             
@@ -374,8 +381,17 @@ struct PlanetActionsView: View {
                                     .opacity(0.80)
 
                                 VStack {
-                                    Image("NiceIconNew2")
+//                                    Image("NiceIconNew2")
                          
+                                                            Text("1")
+                                                                .foregroundColor(.green)
+                                                                .font(.system(size: 80, weight: .regular))
+                                                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                                                .opacity(0.50)
+                                    
+                                    
+                                    
+                                    
                                 }
                             }
                         })
@@ -454,9 +470,13 @@ struct PlanetActionsView: View {
                                     .opacity(0.80)
                                 
                                 VStack {
-                                    
+                                    Text("3")
+                                        .foregroundColor(ColorManager .purple3)
+                                        .font(.system(size: 80, weight: .regular))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
                                       
-                                    Image("iconStar 1")
+//                                    Image("iconStar 1")
 
                                 }
                             }
