@@ -35,14 +35,33 @@ struct TestPage2: View {
 
             VStack {
                 
-//
-//                   Text("friends Supporting friends")
-//                       .font(.system(size: 27))
-//
-//                       .fontWeight(.light)
-//                       .multilineTextAlignment(.center)
-//                       .foregroundColor(ColorManager .grey3)
+                Text("Ouch!")
+                   .font(.system(size: 40))
+                   .fontWeight(.light)
+                   .multilineTextAlignment(.center)
+                   .foregroundColor(ColorManager .grey3)
 
+                Text("Something just happend")
+                   .font(.system(size: 20))
+                   .italic()
+                   .fontWeight(.light)
+                   .multilineTextAlignment(.center)
+                   .foregroundColor(ColorManager .grey3)
+                Spacer ()
+                     .frame(height: 10)
+                
+                
+                
+                Text("I'm having a bad day!")
+                   .font(.system(size: 30))
+                   .fontWeight(.light)
+                   .multilineTextAlignment(.center)
+                   .foregroundColor(ColorManager .grey3)
+                
+                Spacer ()
+                     .frame(height: 40)
+                
+                
                 ZStack {
                
 
@@ -56,21 +75,18 @@ struct TestPage2: View {
 
 
                     VStack {
-                 
-//                        Text("let the inside of you match \nthe outside of you on social media")
-//                           .italic()
-//                           .font(.system(size: 20))
-//                           .fontWeight(.light)
-//                           .multilineTextAlignment(.center)
-//                           .foregroundColor(ColorManager .grey3)
-                        
-                        Spacer ()
-                             .frame(height: 20)
-                        
-                        
+                   
+                        Text("Before talking to my BFFs \n I really need some time alone")
+                           .italic()
+                           .font(.system(size: 20))
+                           .fontWeight(.light)
+                           .multilineTextAlignment(.center)
+                           .foregroundColor(ColorManager .grey3)
                         
 //                                   AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
 //
+                        Spacer ()
+                             .frame(height: 20)
                         
                         NavigationLink( destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
 //                               destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
@@ -86,14 +102,14 @@ struct TestPage2: View {
                             })
 
 
-                     
-                                                 Text("need some time alone")
-                                                    .italic()
-                                                    .font(.system(size: 20))
-                                                    .fontWeight(.light)
-                                                    .multilineTextAlignment(.center)
-                                                    .foregroundColor(ColorManager .grey3)
-                        
+//
+//                                                 Text("need some time alone")
+//                                                    .italic()
+//                                                    .font(.system(size: 20))
+//                                                    .fontWeight(.light)
+//                                                    .multilineTextAlignment(.center)
+//                                                    .foregroundColor(ColorManager .grey3)
+//
                         
                            Spacer ()
                                 .frame(height: 30)

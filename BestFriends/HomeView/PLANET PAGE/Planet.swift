@@ -220,12 +220,12 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
                                 
-                                    Text("2")
-                                        .foregroundColor(ColorManager .purple3)
+                                 
+                                    Text("1")
+                                        .foregroundColor(.green)
                                         .font(.system(size: 80, weight: .regular))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
-                                    
                                     
 //                                    Image("IconRoomNew")
                                 }
@@ -383,13 +383,13 @@ struct PlanetActionsView: View {
                                 VStack {
 //                                    Image("NiceIconNew2")
                          
-                                                            Text("1")
-                                                                .foregroundColor(.green)
-                                                                .font(.system(size: 80, weight: .regular))
-                                                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                                                .opacity(0.50)
+                                                     
                                     
-                                    
+                                    Text("2")
+                                        .foregroundColor(ColorManager .purple3)
+                                        .font(.system(size: 80, weight: .regular))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
                                     
                                     
                                 }
