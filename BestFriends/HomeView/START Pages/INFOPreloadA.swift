@@ -45,21 +45,21 @@ struct INFOPreloadA: View {
                 
                 
                 
-                Text("No one wants to lose their ...")
-                    .font(.system(size: 17))
-                    .italic()
-                    .foregroundColor(ColorManager.grey1)
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
-                
-                Spacer()
-                    .frame(height: 10)
-                
-                Text("BestFriends")
-                    .font(.system(size: 35))
-                    .foregroundColor(ColorManager.grey1)
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
+//                Text("No one wants to lose their ...")
+//                    .font(.system(size: 17))
+//                    .italic()
+//                    .foregroundColor(ColorManager.grey1)
+//                    .fontWeight(.regular)
+//                    .multilineTextAlignment(.center)
+//                
+//                Spacer()
+//                    .frame(height: 10)
+//                
+//                Text("BestFriends")
+//                    .font(.system(size: 35))
+//                    .foregroundColor(ColorManager.grey1)
+//                    .fontWeight(.regular)
+//                    .multilineTextAlignment(.center)
 //
 //                Text("truely like them")
 //                    .font(.system(size: 23))
