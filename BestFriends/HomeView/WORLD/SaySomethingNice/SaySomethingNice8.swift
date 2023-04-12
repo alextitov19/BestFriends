@@ -81,19 +81,7 @@ struct SaySomethingNice8: View {
             
             VStack {
                 
-                Text("Join friends around the world")
-                    .font(.system(size: 20))
-                
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(ColorManager .grey3)
-                    .multilineTextAlignment(.center)
-                
-                Text("saying something, NICE")
-                    .font(.system(size: 20))
-                
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(ColorManager .grey3)
-                    .multilineTextAlignment(.center)
+              
                 
                 HStack {
                     
@@ -136,12 +124,20 @@ struct SaySomethingNice8: View {
                 
                 VStack {
                     // MARK: End of feeling buttons
-                    
-                    Text("to a friend right NOW!")
+                    Text("Join friends around the world")
                         .font(.system(size: 20))
+                    
                         .fontWeight(.ultraLight)
                         .foregroundColor(ColorManager .grey3)
                         .multilineTextAlignment(.center)
+                    
+                    Text("saying something, NICE")
+                        .font(.system(size: 20))
+                    
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(ColorManager .grey3)
+                        .multilineTextAlignment(.center)
+                   
                     
                     HStack {
                         
@@ -154,17 +150,23 @@ struct SaySomethingNice8: View {
                         Rectangle()
                             .frame(width:335, height: 50)
                             .cornerRadius(15)
-                            .foregroundColor(ColorManager .grey3)
+                            .foregroundColor(ColorManager .grey4)
                             .opacity(0.5)
                         
-                        TextField("Say it here (max 35 characters)", text: $summary)
+                        TextField("to a friend right NOW!", text: $summary)
                             .font(.system(size: 20))
-                            .foregroundColor(ColorManager.purple4)
+                            .foregroundColor(ColorManager.grey4)
                             .padding(.horizontal, 50)
                             .onReceive(Just(summary)) { _ in limitText(80) }
                         
                     }
                     
+//                    Text("to a friend right NOW!")
+//                        .font(.system(size: 20))
+//                        .fontWeight(.ultraLight)
+//                        .foregroundColor(ColorManager .grey3)
+//                        .multilineTextAlignment(.center)
+//
                     
                     HStack {
                         
@@ -172,7 +174,7 @@ struct SaySomethingNice8: View {
                     
                     
                     VStack {
-                        
+                      
                         Spacer()
                             .frame(height: 10)
                         
