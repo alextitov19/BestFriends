@@ -131,7 +131,7 @@ struct SaySomethingNice8: View {
                         .foregroundColor(ColorManager .grey3)
                         .multilineTextAlignment(.center)
                     
-                    Text("saying something, NICE")
+                    Text("saying something NICE, \non social media")
                         .font(.system(size: 20))
                     
                         .fontWeight(.ultraLight)
