@@ -305,9 +305,11 @@ struct PlanetActionsView: View {
                         Spacer()
                             .frame(height: 25)
                         
-                 
+                        
+                        
+//                                   BuiltForTeens(user: user, atmosphere: atmosphere, friends: friends, groups: groups
                                        
-                        NavigationLink(destination: BuiltForTeens(user: user, atmosphere: atmosphere, friends: friends, groups: groups),
+                        NavigationLink(destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                                        label: {
                             ZStack {
                                 Circle()
@@ -323,23 +325,23 @@ struct PlanetActionsView: View {
  
 
                         Spacer()
-                            .frame(height: 5)
+                            .frame(height: 0)
 
                         
-                                    Text("helping my")
-                                        .foregroundColor(.white)
-                                        .italic()
-                                        .font(.system(size: 17, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.50)
+                                    Text("sending")
+                            .foregroundColor(ColorManager .pmbc_green)
+//                                        .italic()
+                                        .font(.system(size: 17, weight: .light))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.90)
                         
                         Spacer()
                             .frame(height: 5)
                         
                        
-                        Text("BestFriends")
+                        Text("Care Hearts")
                             .foregroundColor(.white)
-                            .font(.system(size: 26, weight: .bold))
+                            .font(.system(size: 25, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                             .opacity(0.50)
                   
