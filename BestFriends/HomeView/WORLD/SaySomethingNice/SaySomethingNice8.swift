@@ -88,7 +88,7 @@ struct SaySomethingNice8: View {
                     .foregroundColor(ColorManager .grey3)
                     .multilineTextAlignment(.center)
                 
-                Text("saying something")
+                Text("saying something, NICE")
                     .font(.system(size: 20))
                 
                     .fontWeight(.ultraLight)
@@ -104,21 +104,22 @@ struct SaySomethingNice8: View {
 //                        .foregroundColor(ColorManager .grey3)
 //                        .multilineTextAlignment(.center)
                         
-                        Text("'Nice'")
+                        Text("''Be gentle")
                             .font(.system(size: 30))
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
                 
-                        Text("something")
+                        Text("with each other''")
                             .font(.system(size: 30))
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
                         
                         
-                        Text("'Positive'")
-                            .font(.system(size: 30))
+                        Text("Ariana Grande")
+                            .font(.system(size: 23))
+                            .italic()
                             .fontWeight(.ultraLight)
                             .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
