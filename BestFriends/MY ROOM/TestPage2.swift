@@ -89,7 +89,6 @@ struct TestPage2: View {
                              .frame(height: 20)
                         
                         NavigationLink( destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-//                               destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
                                 Text("My Room")
                                     .fontWeight(.thin)

@@ -120,12 +120,7 @@ struct MyRoomInfo: View {
                         
                     
                     
-//                                    NavigationLink(destination: SendSongChat2(user: user, friend: friend, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres), label: {
-//                                        MyRoomCircle (color: Color .white, friendName: "Im Sad \n Send a Song")
-//                                    })
-//                                    .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
-//                                    .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-//                                    .opacity(0.4)
+
                     
                     
                                     NavigationLink(destination: EmptyView(), label: {
@@ -138,17 +133,34 @@ struct MyRoomInfo: View {
                         
 //
 //
-//                        NavigationLink(destination: PickMediator(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-//                            MyRoomCircle (color: Color .white, friendName: "my precious \ndreams")
+//                        NavigationLink(destination: PickMediator(user: user, atmosphere: atmosphere,                           friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                          label: {
+//                        MyRoomCircle (color: Color .white, friendName: "my precious \ndreams")
 //                        })
 //                        .offset(x: showItems ? -120 : 0, y: showItems ? 170: 0)
 //                        .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
 //                        .opacity(0.4)
 //
                         
-                        
+                    //  NavigationLink(destination: SendSongChat2(user: user, friend: friend, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres), label: {
+                    //  MyRoomCircle (color: Color .white, friendName: "Im Sad \n Send a Song")
+                    //  })
+                    //  .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
+                    //  .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                    //  .opacity(0.4)
                  
-                        
+                      
+                    //  NavigationLink(destination: SendSongChat2(user: user, friend: friend, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres), label: {
+                    //  MyRoomCircle (color: Color .white, friendName: "Fun Day \n Coupon")
+                    //  })
+                    //  .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
+                    //  .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                    //  .opacity(0.4)
+                    
+                    
+                    
+                    
+                    
                         
                         NavigationLink(destination: EmptyView(), label: {
                             MyRoomCircle (color: ColorManager .grey1, friendName: "")

@@ -222,7 +222,7 @@ struct PlanetActionsView: View {
                                 
                                  
                                     Text("1")
-                                        .foregroundColor(.green)
+                                        .foregroundColor(ColorManager .purple3)
                                         .font(.system(size: 80, weight: .regular))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
@@ -320,43 +320,32 @@ struct PlanetActionsView: View {
                                 
                     VStack {
                                 
-                              
-                   
-//                        Text("Building")
-//                            .foregroundColor(.white)
-//                            .italic()
-//                            .font(.system(size: 17, weight: .bold))
-//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                            .opacity(0.50)
+ 
 
-//                        Spacer()
-//                            .frame(height: 5)
+                        Spacer()
+                            .frame(height: 5)
 
                         
-                                    Text("being a")
+                                    Text("helping my")
                                         .foregroundColor(.white)
                                         .italic()
-                                        .font(.system(size: 20, weight: .bold))
+                                        .font(.system(size: 17, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
+                        
+                        Spacer()
+                            .frame(height: 5)
+                        
                        
-                        Text("BestFriend")
+                        Text("BestFriends")
                             .foregroundColor(.white)
-                            .font(.system(size: 28, weight: .bold))
+                            .font(.system(size: 26, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                             .opacity(0.50)
-                        Spacer()
-                            .frame(height: 7)
-                        
-//                        Text("START HERE")
-//                            .foregroundColor(.green)
-//                            .font(.system(size: 17, weight: .regular))
-//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                            .opacity(0.50)
-//
+                  
                         
                         Spacer()
-                            .frame(height: 13)
+                            .frame(height: 20)
          
                                 }
                             }
