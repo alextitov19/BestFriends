@@ -124,16 +124,21 @@ struct SaySomethingNice8: View {
                 
                 VStack {
                     // MARK: End of feeling buttons
-                    Text("Join friends around the world")
-                        .font(.system(size: 20))
-                    
+                    Text("''I make music for ears, \nnot eyes''")
+                        .font(.system(size: 29))
                         .fontWeight(.ultraLight)
                         .foregroundColor(ColorManager .grey3)
                         .multilineTextAlignment(.center)
                     
-                    Text("saying something NICE, \non social media")
-                        .font(.system(size: 20))
+                    Text("''not eyes''")
+                        .font(.system(size: 29))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(ColorManager .grey3)
+                        .multilineTextAlignment(.center)
                     
+                    Text("Adele")
+                        .font(.system(size: 23))
+                        .italic()
                         .fontWeight(.ultraLight)
                         .foregroundColor(ColorManager .grey3)
                         .multilineTextAlignment(.center)
@@ -153,7 +158,7 @@ struct SaySomethingNice8: View {
                             .foregroundColor(ColorManager .grey4)
                             .opacity(0.5)
                         
-                        TextField("to a friend right NOW!", text: $summary)
+                        TextField("Say something nice to a friend right NOW!", text: $summary)
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager.grey4)
                             .padding(.horizontal, 50)
