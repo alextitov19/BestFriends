@@ -307,7 +307,7 @@ struct PlanetActionsView: View {
                         
                         
                         
-//                                   BuiltForTeens(user: user, atmosphere: atmosphere, friends: friends, groups: groups
+
                                        
                         NavigationLink(destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                                        label: {
@@ -445,9 +445,11 @@ struct PlanetActionsView: View {
                         Spacer()
                             .frame(height: 35)
                         
-//
+//                        TestPage3(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
                         
-                        NavigationLink(destination: TestPage3(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                  
+                        
+                        NavigationLink(destination: BuiltForTeens(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                             
                             ZStack {

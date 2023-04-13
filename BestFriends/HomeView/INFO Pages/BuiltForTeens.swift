@@ -18,7 +18,7 @@
        let user: User
        let atmosphere: Atmosphere
        let friends: [User]
-//       let friendAtmospheres: [Atmosphere]
+       let friendAtmospheres: [Atmosphere]
        let groups: [Group]
 
        var body: some View {
@@ -34,14 +34,20 @@
 
                VStack {
                    
-//
-//                   Text("friends Supporting friends")
-//                       .font(.system(size: 27))
-//
-//                       .fontWeight(.light)
-//                       .multilineTextAlignment(.center)
-//                       .foregroundColor(ColorManager .grey3)
 
+                   Text("What's Your Dream?")
+                       .font(.system(size: 35))
+
+                       .fontWeight(.light)
+                       .multilineTextAlignment(.center)
+                       .foregroundColor(ColorManager .grey3)
+
+                   
+                   Spacer ()
+                        .frame(height: 80)
+                   
+                 
+                   
                    ZStack {
                   
 
@@ -61,11 +67,19 @@
                            Spacer ()
                                 .frame(height: 20)
                            
+                           Text("maybe, just maybe ...")
+                               .font(.system(size: 27))
+                               .italic()
+                               .fontWeight(.light)
+                               .multilineTextAlignment(.center)
+                               .foregroundColor(ColorManager .grey3)
                            
-                           NavigationLink( destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
-//                               destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                           //                               destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                           
+                           NavigationLink( destination: TestPage3(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+
                                label: {
-                                   Text("Send 'Care' Hearts")
+                                   Text("We can help")
                                        .fontWeight(.thin)
                                        .frame(width: 235, height: 40)
                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
