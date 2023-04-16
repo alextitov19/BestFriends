@@ -221,7 +221,7 @@ struct PlanetActionsView: View {
                                 VStack {
                                 
                                  
-                                    Text("1")
+                                    Text("-")
                                         .foregroundColor(ColorManager .purple3)
                                         .font(.system(size: 80, weight: .regular))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -376,9 +376,9 @@ struct PlanetActionsView: View {
                          
                                                      
                                     
-                                    Text("2")
+                                    Text("Alert")
                                         .foregroundColor(ColorManager .purple3)
-                                        .font(.system(size: 80, weight: .regular))
+                                        .font(.system(size: 40, weight: .regular))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
@@ -463,7 +463,7 @@ struct PlanetActionsView: View {
                                     .opacity(0.80)
                                 
                                 VStack {
-                                    Text("3")
+                                    Text("+")
                                         .foregroundColor(ColorManager .purple3)
                                         .font(.system(size: 80, weight: .regular))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
