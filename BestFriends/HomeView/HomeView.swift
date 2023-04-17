@@ -29,7 +29,8 @@ struct HomeView: View {
     @State private var chatGroupsView = ChatGroupsView(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: "", chatBackground: ""), groups: [])
     
     @State private var presentingPhotoPop = false
-    
+    @State private var presentingIANs = false
+
     let reloadingTimer = Timer.publish(every: 30, on: .main, in: .common).autoconnect()
     
     var body: some View {
@@ -57,6 +58,7 @@ struct HomeView: View {
                         presentingPhotoPop = true
                     }
                     .fullScreenCover(isPresented: $presentingPhotoPop, content: ShakePhotoPopView.init)
+                    .fullScreenCover(isPresented: $presentingIANs, content: NotificationsView.init)
                     .onReceive(reloadingTimer) { time in
                         getHomeData()
                     }
@@ -67,6 +69,24 @@ struct HomeView: View {
                 //                    .scaledToFill()
                     .blendMode(.screen)
                     .onTapGesture(perform: backgroundTapped)
+                
+                VStack {
+                    HStack {
+                        Spacer()
+                        
+                        Image(systemName: "bell.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 25, height: 25)
+                            .foregroundColor(.white)
+                            .onTapGesture {
+                                print("Clicked notification bell")
+                                presentingIANs.toggle()
+                            }
+                    }
+                    
+                    Spacer()
+                }
                 
                 
                 
