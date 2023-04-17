@@ -73,6 +73,18 @@ struct HomeView: View {
                 VStack {
                     if ((homeData) != nil) {
                         HStack {
+                            Image(systemName: "bell")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 25, height: 25)
+                                .foregroundColor(.white)
+                                .onTapGesture {
+                                    print("Clicked notification bell")
+                                    presentingIANs.toggle()
+                                }
+                            
+                            Spacer()
+                            
                             NavigationLink(
                                 destination: StartHere1(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                 label: {
@@ -83,28 +95,11 @@ struct HomeView: View {
                                         .frame(width: 25, height: 25)
                                         .foregroundColor(.white)
                                 })
-                            
-                            Spacer()
-                            
-                            Image(systemName: "bell")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 25, height: 25)
-                                .foregroundColor(.white)
-                                .onTapGesture {
-                                    print("Clicked notification bell")
-                                    presentingIANs.toggle()
-                                }
                         }
                     }
                     
                     Spacer()
                 }
-                
-                
-                
-                
-                
                 
                 VStack {
 //                    Text("received notification - tap friend's planet")
