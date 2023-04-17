@@ -96,6 +96,7 @@ struct HomeView: View {
                                         .foregroundColor(.white)
                                 })
                         }
+                        .padding(10)
                     }
                     
                     Spacer()
