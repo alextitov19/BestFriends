@@ -415,17 +415,17 @@ struct PlanetActionsView: View {
                                         Text("Invite (5)")
                                             .fontWeight(.light)
                                         //                                        .frame(width: 100, height: 40)
-                                            .foregroundColor(ColorManager .grey3)
+                                            .foregroundColor(ColorManager .grey1)
                                             .font(.system(size: 15))
-                                            .background(ColorManager .orange4)
+                                            .background(ColorManager .grey3)
                                         //                                        .cornerRadius(10)
                                         
                                         Text("BFFs")
                                             .fontWeight(.light)
                                         //                                        .frame(width: 100, height: 40)
-                                            .foregroundColor(ColorManager .grey3)
+                                            .foregroundColor(ColorManager .grey1)
                                             .font(.system(size: 15))
-                                            .background(ColorManager .orange4)
+                                            .background(ColorManager .grey3)
                                             .cornerRadius(10)
                                     }
                                 }
