@@ -71,18 +71,31 @@ struct HomeView: View {
                     .onTapGesture(perform: backgroundTapped)
                 
                 VStack {
-                    HStack {
-                        Spacer()
-                        
-                        Image(systemName: "bell.fill")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 25, height: 25)
-                            .foregroundColor(.white)
-                            .onTapGesture {
-                                print("Clicked notification bell")
-                                presentingIANs.toggle()
-                            }
+                    if ((homeData) != nil) {
+                        HStack {
+                            NavigationLink(
+                                destination: StartHere1(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                                label: {
+                                    
+                                    Image(systemName: "gear")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 25, height: 25)
+                                        .foregroundColor(.white)
+                                })
+                            
+                            Spacer()
+                            
+                            Image(systemName: "bell")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 25, height: 25)
+                                .foregroundColor(.white)
+                                .onTapGesture {
+                                    print("Clicked notification bell")
+                                    presentingIANs.toggle()
+                                }
+                        }
                     }
                     
                     Spacer()
@@ -94,22 +107,22 @@ struct HomeView: View {
                 
                 
                 VStack {
-                    Text("received notification - tap friend's planet")
-                        .font(.system(size: 15))
-                        .italic()
-                    //                            .foregroundColor(ColorManager .grey2)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 280, height: 30)
-                        .foregroundColor(.white)
-                        .font(.system(size: 20))
-                        .background(Color .black)
-                        .cornerRadius(10)
-                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                        .opacity(0.30)
-                    
-                    Spacer()
-                        .frame(height: 50)
+//                    Text("received notification - tap friend's planet")
+//                        .font(.system(size: 15))
+//                        .italic()
+//                    //                            .foregroundColor(ColorManager .grey2)
+//                        .fontWeight(.thin)
+//                        .multilineTextAlignment(.center)
+//                        .frame(width: 280, height: 30)
+//                        .foregroundColor(.white)
+//                        .font(.system(size: 20))
+//                        .background(Color .black)
+//                        .cornerRadius(10)
+//                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                        .opacity(0.30)
+//                    
+//                    Spacer()
+//                        .frame(height: 50)
                     HStack {
                         
                         if planets.count > 0 && !focusPlanet {

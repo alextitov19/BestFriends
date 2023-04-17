@@ -104,32 +104,20 @@ struct PlanetActionsView: View {
         
         VStack {
             
-            HStack {
-                Image("home-alt2")
-                    .frame(width: 50, height: 25)
-                    .foregroundColor(.white)
-                    .font(.system(size: 20))
-                    .background(Color .black)
-                    .cornerRadius(15)
-                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                    .opacity(0.70)
-                
-                NavigationLink(
-                    destination: StartHere1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                    label: {
-                       
-                        Image("settings icon")
-                            .frame(width: 50, height: 25)
-                            .foregroundColor(.white)
-                            .font(.system(size: 20))
-                            .background(Color .black)
-                          .cornerRadius(15)
-                          .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                          .opacity(0.70)
-                    })
-                
-                
-            }
+//            HStack {
+//                Image("home-alt2")
+//                    .frame(width: 50, height: 25)
+//                    .foregroundColor(.white)
+//                    .font(.system(size: 20))
+//                    .background(Color .black)
+//                    .cornerRadius(15)
+//                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                    .opacity(0.70)
+//                
+//                
+//                
+//                
+//            }
             
 //            NavigationLink(
 //                destination: InfoWhyLoveFB(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
