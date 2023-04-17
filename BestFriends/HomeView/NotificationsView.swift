@@ -27,10 +27,13 @@ struct NotificationsView: View {
             VStack {
                 Text("Recent Notifications")
                     .font(.system(size: 30, weight: .light))
+                    .foregroundColor(.white)
+                    .padding()
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(ians, id: \.createdOn) { ian in
                         NotificationBubble(ian: ian)
+                            .opacity(0.7)
                             .padding()
                     }
                 }
