@@ -94,19 +94,19 @@ struct HomeView: View {
                 
                 
                 VStack {
-                    Text("received notification - tap friend's planet")
-                        .font(.system(size: 15))
-                        .italic()
-                    //                            .foregroundColor(ColorManager .grey2)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 280, height: 30)
-                        .foregroundColor(.white)
-                        .font(.system(size: 20))
-                        .background(Color .black)
-                        .cornerRadius(10)
-                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                        .opacity(0.30)
+//                    Text("received notification - tap friend's planet")
+//                        .font(.system(size: 15))
+//                        .italic()
+//                    //                            .foregroundColor(ColorManager .grey2)
+//                        .fontWeight(.thin)
+//                        .multilineTextAlignment(.center)
+//                        .frame(width: 280, height: 30)
+//                        .foregroundColor(.white)
+//                        .font(.system(size: 20))
+//                        .background(Color .black)
+//                        .cornerRadius(10)
+//                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                        .opacity(0.30)
                     
                     Spacer()
                         .frame(height: 50)
@@ -314,17 +314,17 @@ struct HomeView: View {
                             .frame(height: 15)
                         
                         HStack {
-                            NavigationLink(destination: VirtualHug(),
-                                           label: {
-                                Text("awe, you've got a HUG")
-                                    .fontWeight(.light)
-                                    .frame(width: 255, height: 30)
-                                    .foregroundColor(.white)
-                                    .background(ColorManager .purple7)
-                                    .cornerRadius(10)
-                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                    .opacity(0.5)
-                            })
+//                            NavigationLink(destination: VirtualHug(),
+//                                           label: {
+//                                Text("awe, you've got a HUG")
+//                                    .fontWeight(.light)
+//                                    .frame(width: 255, height: 30)
+//                                    .foregroundColor(.white)
+//                                    .background(ColorManager .purple7)
+//                                    .cornerRadius(10)
+//                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                                    .opacity(0.5)
+//                            })
                             
                         }
                         
@@ -408,19 +408,19 @@ struct HomeView: View {
                             //                                    .cornerRadius(10)
                             //                                    .opacity(0.7)
                             //
-                            Text("hide dropdown - tap friend's planet")
-                                .font(.system(size: 15))
-                                .italic()
-                            //                            .foregroundColor(ColorManager .grey2)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                                .frame(width: 255, height: 30)
-                                .foregroundColor(.white)
-                                .font(.system(size: 20))
-                                .background(ColorManager .purple7)
-                                .cornerRadius(10)
-                                .shadow(color: Color(.white), radius: 1, x: 0, y: 2.5)
-                                .opacity(0.30)
+//                            Text("hide dropdown - tap friend's planet")
+//                                .font(.system(size: 15))
+//                                .italic()
+//                            //                            .foregroundColor(ColorManager .grey2)
+//                                .fontWeight(.thin)
+//                                .multilineTextAlignment(.center)
+//                                .frame(width: 255, height: 30)
+//                                .foregroundColor(.white)
+//                                .font(.system(size: 20))
+//                                .background(ColorManager .purple7)
+//                                .cornerRadius(10)
+//                                .shadow(color: Color(.white), radius: 1, x: 0, y: 2.5)
+//                                .opacity(0.30)
                             
                         }
                         
