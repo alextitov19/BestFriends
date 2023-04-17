@@ -242,7 +242,7 @@ struct PhotoPop3: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends PhotoPOP", body: "\(user.firstName)Shake your iPhone", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends PhotoPOP", body: "\(user.firstName)  says 'shake' your iPhone", APNToken: f.APNToken)
                 }
             }
         }
