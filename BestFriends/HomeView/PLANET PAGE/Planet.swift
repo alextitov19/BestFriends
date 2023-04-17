@@ -251,25 +251,25 @@ struct PlanetActionsView: View {
                                
                                 VStack {
                                     ZStack {
-                                        Image(systemName: "heart.fill")
-                                            .resizable()
-                                            .foregroundColor(ColorManager .grey3)
-                                            .frame(width: 90, height: 70)
-                                            .opacity(0.95)
-                                        
+//                                        Image(systemName: "heart.fill")
+//                                            .resizable()
+//                                            .foregroundColor(ColorManager .grey3)
+//                                            .frame(width: 90, height: 70)
+//                                            .opacity(0.95)
+//
 
                                         
                                         NavigationLink(destination: INFOPreloadA(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
                                             label: {
                                                 VStack {
-                                                    Text("Walk- \nthrough")
-                                                        .fontWeight(.light)
-                                                        .frame(width: 60, height: 40)
-                                                        .foregroundColor(ColorManager .grey1)
-                                                        .font(.system(size: 15))
-                                                        .background(ColorManager .grey3)
-                                                        .cornerRadius(10)
-                                                    
+//                                                    Text("Walk- \nthrough")
+//                                                        .fontWeight(.light)
+//                                                        .frame(width: 60, height: 40)
+//                                                        .foregroundColor(ColorManager .grey1)
+//                                                        .font(.system(size: 15))
+//                                                        .background(ColorManager .grey3)
+//                                                        .cornerRadius(10)
+//                                                    
 //                                                    Text("Here")
 //                                                        .fontWeight(.light)
 //                                                        .frame(width: 60, height: 37)
@@ -277,7 +277,11 @@ struct PlanetActionsView: View {
 //                                                        .font(.system(size: 18))
 //                                                        .background(ColorManager .purple1)
 //                                                        .cornerRadius(10)
-//
+                                                    Text("Walk - \nthrough")
+                                                        .foregroundColor(ColorManager .purple1)
+                                                        .font(.system(size: 25, weight: .regular))
+                                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                                        .opacity(0.50)
                                                     
                                                 }
                                             })
@@ -392,29 +396,35 @@ struct PlanetActionsView: View {
                              
                                 
                                 ZStack {
-                                    Image(systemName: "heart.fill")
-                                        .resizable()
-                                        .foregroundColor(ColorManager .orange4)
-                                        .frame(width: 90, height: 70)
-                                        .opacity(0.95)
+//                                    Image(systemName: "heart.fill")
+//                                        .resizable()
+//                                        .foregroundColor(ColorManager .orange4)
+//                                        .frame(width: 90, height: 70)
+//                                        .opacity(0.95)
                                  
                                     VStack {
                                         
-                                        Text("Invite (5)")
-                                            .fontWeight(.light)
-                                        //                                        .frame(width: 100, height: 40)
-                                            .foregroundColor(ColorManager .grey1)
-                                            .font(.system(size: 15))
-                                            .background(ColorManager .grey3)
-                                        //                                        .cornerRadius(10)
+                                        Text("Invite 5 \nBFFs")
+                                            .foregroundColor(ColorManager .purple1)
+                                            .font(.system(size: 25, weight: .regular))
+                                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                            .opacity(0.50)
                                         
-                                        Text("BFFs")
-                                            .fontWeight(.light)
-                                        //                                        .frame(width: 100, height: 40)
-                                            .foregroundColor(ColorManager .grey1)
-                                            .font(.system(size: 15))
-                                            .background(ColorManager .grey3)
-                                            .cornerRadius(10)
+//                                        Text("Invite (5)")
+//                                            .fontWeight(.light)
+//                                        //                                        .frame(width: 100, height: 40)
+//                                            .foregroundColor(ColorManager .grey1)
+//                                            .font(.system(size: 15))
+//                                            .background(ColorManager .grey3)
+//                                        //                                        .cornerRadius(10)
+//
+//                                        Text("BFFs")
+//                                            .fontWeight(.light)
+//                                        //                                        .frame(width: 100, height: 40)
+//                                            .foregroundColor(ColorManager .grey1)
+//                                            .font(.system(size: 15))
+//                                            .background(ColorManager .grey3)
+//                                            .cornerRadius(10)
                                     }
                                 }
                                 VStack {
