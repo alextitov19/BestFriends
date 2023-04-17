@@ -44,6 +44,7 @@ struct NotificationsView: View {
     private func getNotifications() {
         RestApi.instance.getInAppNotifications().then({ data in
             ians = data
+            ians.sort { $0.createdOn > $1.createdOn }
             print("Increased IANs to ", data.count)
         })
     }
@@ -58,9 +59,26 @@ struct NotificationsView: View {
             let ti = date.timeIntervalSince1970
             var dif = Int64(ti)
             dif -= ian.createdOn
-            dif = dif / 60
-            let s = String(dif)
-            self.t = String(s + " minutes ago")
+            var s = String(dif)
+            self.t = String(s + " seconds ago")
+            
+            if (dif > 60) {
+                dif = dif / 60
+                s = String(dif)
+                self.t = String(s + " minutes ago")
+            }
+            
+            if (dif > 60) {
+                dif = dif / 60
+                s = String(dif)
+                self.t = String(s + " hours ago")
+            }
+            
+            if (dif > 24) {
+                dif = dif / 24
+                s = String(dif)
+                self.t = String(s + " days ago")
+            }
         }
         
         var body: some View {
