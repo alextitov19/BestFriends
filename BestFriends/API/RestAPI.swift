@@ -227,4 +227,13 @@ class RestApi {
     public func getUserOnlineStatus(id: String) -> Promise<Bool> {
         return helper.getUserStatus(url: API_URL + "/online-status/" + id)
     }
+    
+    public func getInAppNotifications() -> Promise<[InAppNotification]> {
+        return helper.callRestApi(url: API_URL + "/notification/in_app", method: .get, [InAppNotification].self)
+    }
+    
+    public func createInAppNotification(ian: InAppNotification) -> Promise<Int> {
+        return helper.createInAppNotification(url: API_URL + "/notification/in_app", ian: ian)
+    }
+    
 }

@@ -74,6 +74,7 @@
 		7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AD02B582744829D00500DD7 /* MainFont.ttf */; };
 		7AD10450265AB93F007627FD /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD1044F265AB93F007627FD /* UIWindowExtension.swift */; };
 		7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD10451265AB948007627FD /* UIDeviceExtension.swift */; };
+		7AD2642729EDCA740007ACD5 /* TestPage3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1CD75529E291BE00D1F801 /* TestPage3.swift */; };
 		7AD8DEF927F615F000D9F0E1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD8DEF827F615F000D9F0E1 /* HomeView.swift */; };
 		7AD8DEFB27F66C8900D9F0E1 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD8DEFA27F66C8900D9F0E1 /* HomeModels.swift */; };
 		7AD8DEFD27F66C9800D9F0E1 /* ChatModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD8DEFC27F66C9800D9F0E1 /* ChatModels.swift */; };
@@ -93,7 +94,6 @@
 		CF09118C28488A5700CB0AF0 /* BetaTestVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09118B28488A5700CB0AF0 /* BetaTestVideo.swift */; };
 		CF09118E284894F400CB0AF0 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09118D284894F400CB0AF0 /* InfoView.swift */; };
 		CF091195284A6DC900CB0AF0 /* FG_VideoCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF091194284A6DC900CB0AF0 /* FG_VideoCall.swift */; };
-		CF1CD75229E2905F00D1F801 /* TestPage3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1CD75129E2905F00D1F801 /* TestPage3.swift */; };
 		CF1ECABB286AAD6F00D999F8 /* SendSongChat2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECABA286AAD6E00D999F8 /* SendSongChat2.swift */; };
 		CF1ECABF286E876900D999F8 /* AtmosphereInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECABE286E876900D999F8 /* AtmosphereInfo.swift */; };
 		CF1ECAC12870039500D999F8 /* HorizonPromoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECAC02870039500D999F8 /* HorizonPromoPage.swift */; };
@@ -704,7 +704,6 @@
 				D0CC1A02283EE31900E7461F /* Horizons */,
 				CF2DBCF2285527C9008616A3 /* My Planet */,
 				CF725E2628516E180096342F /* Tokens */,
-				CFD12CC52819436F00AB2539 /* OurStory */,
 				7A1C048627F4C3A90002B173 /* Models */,
 				7AC71DA627F3D7D4008D191B /* API */,
 				7A1DBD602659B1A400EB4B42 /* Ext+Custom */,
@@ -1361,13 +1360,6 @@
 			path = HideChat;
 			sourceTree = "<group>";
 		};
-		CFD12CC52819436F00AB2539 /* OurStory */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = OurStory;
-			sourceTree = "<group>";
-		};
 		CFD12CC82819E83900AB2539 /* ThoughtfulMessages */ = {
 			isa = PBXGroup;
 			children = (
@@ -1835,7 +1827,6 @@
 				CFDA4BD828D1999900118D90 /* Heart.swift in Sources */,
 				CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */,
 				7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */,
-				CF1CD75229E2905F00D1F801 /* TestPage3.swift in Sources */,
 				CF8F76C6293866BB00B109D3 /* AskQuestion.swift in Sources */,
 				7A04C13F2855390B003AB24A /* PhotoPopImageView.swift in Sources */,
 				CFA1225D285975FF00E22E84 /* Apologies.swift in Sources */,
@@ -1955,6 +1946,7 @@
 				7AC71DA827F3D803008D191B /* Helper.swift in Sources */,
 				CFC0EE7C290805E7006B3FAA /* InfoCreateChatRm.swift in Sources */,
 				7A33409429582725005C4CE1 /* NiceMessageModel.swift in Sources */,
+				7AD2642729EDCA740007ACD5 /* TestPage3.swift in Sources */,
 				7ACF912C2767C29A00088ACA /* CustomDivider.swift in Sources */,
 				CF387E2A2960D5B6003A85D8 /* PlanetBell.swift in Sources */,
 				7AA2514D2874AB7B0018C97E /* PhotoPopModels.swift in Sources */,
