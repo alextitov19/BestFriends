@@ -48,7 +48,7 @@ struct HugPreload: View {
             ZStack{
                 
                 NavigationLink(destination: EmptyView(), label: {
-                    HugCircle (color: ColorManager .pmbc_green, friendName: "Wanna \nTalk")
+                    HugCircle (color: ColorManager .pmbc_green, friendName: "????")
                 })
                 .offset(x: showItems ? -150 : 0, y: showItems ? -290: 0)
                 .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
@@ -56,7 +56,7 @@ struct HugPreload: View {
 
                     
                     NavigationLink(destination: EmptyView(), label: {
-                        HugCircle (color: ColorManager.purple1, friendName: "One \nFun Day \nVoucher")
+                        HugCircle (color: ColorManager.purple1, friendName: "Coupon")
                     })
                     .offset(x: showItems ? 120 : 0, y: showItems ? -270: 0)
                     .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
