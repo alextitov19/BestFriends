@@ -243,6 +243,14 @@ struct PhotoPop3: View {
             for f in friends {
                 if f.id == id {
                     RestApi.instance.sendPushNotification(title: "BestFriends PhotoPOP", body: "\(user.firstName)  says 'shake' your iPhone", APNToken: f.APNToken)
+                    
+                    //MARK: The code below creates an in-app notification for your friend (f.id)
+                    //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Shake you phone!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        print("Create a photopop notification response code: ", response)
+                    })
+                    
+                    
                 }
             }
         }
