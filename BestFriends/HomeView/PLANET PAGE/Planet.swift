@@ -155,7 +155,7 @@ struct PlanetActionsView: View {
                                                     ZStack {
                                                         Circle()
                                                             .frame(width: 110, height: 110)
-                                                            .foregroundColor(ColorManager.purple3)
+                                                            .foregroundColor(ColorManager.purple4)
                                                             .shadow(color: .white, radius: 3, x: 4, y: 4)
                                                             .glow(color: ColorManager.purple4, radius: 7)
                                                             .opacity(0.80)
@@ -243,7 +243,7 @@ struct PlanetActionsView: View {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple3)
+                                    .foregroundColor(ColorManager.purple4)
                                     .shadow(color: .white, radius: 3, x: 0, y: 4)
                                     .glow(color: ColorManager.purple4, radius: 7)
                                     .opacity(0.80)
@@ -388,7 +388,7 @@ struct PlanetActionsView: View {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager .purple3)
+                                    .foregroundColor(ColorManager .purple4)
                                     .shadow(color: .white, radius: 3, x: -4, y: 4)
                                     .glow(color: ColorManager.purple4, radius: 7)
                                     .opacity(0.80)
