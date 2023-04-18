@@ -15,27 +15,39 @@ struct NotificationsView: View {
 
     
     var body: some View {
-        ZStack {
-            Color.black
-                .ignoresSafeArea()
-                .onAppear(perform: getNotifications)
-            
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-            
-            VStack {
-                Text("Recent Notifications")
-                    .font(.system(size: 30, weight: .light))
-                    .foregroundColor(.white)
-                    .padding()
+        NavigationView {
+            ZStack {
+                Color.black
+                    .ignoresSafeArea()
+                    .onAppear(perform: getNotifications)
                 
-                ScrollView(.vertical, showsIndicators: false) {
-                    ForEach(ians, id: \.createdOn) { ian in
-                        NotificationBubble(ian: ian)
-                            .opacity(0.7)
-                            .padding()
+                AdPlayerView(name: "sky2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                
+                VStack {
+                    Text("Recent Notifications")
+                        .font(.system(size: 30, weight: .light))
+                        .foregroundColor(.white)
+                        .padding()
+                    
+                    ScrollView(.vertical, showsIndicators: false) {
+                        ForEach(ians, id: \.createdOn) { ian in
+                            NotificationBubble(ian: ian)
+                                .opacity(0.7)
+                                .padding()
+                        }
                     }
+                    
+                    Spacer()
+                    
+                    Text("Return")
+                        .font(.system(size: 20, weight: .light))
+                        .foregroundColor(.white)
+                        .padding()
+                        .onTapGesture {
+                            presentationMode.wrappedValue.dismiss()
+                        }
                 }
             }
         }
@@ -52,6 +64,8 @@ struct NotificationsView: View {
     private struct NotificationBubble: View {
         let ian: InAppNotification
         var t: String
+
+        @State private var hugActive = false
         
         init(ian: InAppNotification) {
             self.ian = ian
@@ -83,7 +97,16 @@ struct NotificationsView: View {
         
         var body: some View {
             ZStack {
+                NavigationLink(destination: VirtualHug(), label: {
+                    EmptyView()
+                })
+                
+                NavigationLink(destination: VirtualHug(), isActive: $hugActive, label: {
+                    EmptyView()
+                })
+                
                 Color.teal
+                
                 
                 VStack {
                     Text(ian.text)
@@ -104,7 +127,17 @@ struct NotificationsView: View {
             }
             .frame(height: 60)
             .cornerRadius(15)
+            .onTapGesture(perform: tapped)
             
+        }
+        
+        private func tapped() {
+            switch ian.text {
+            case "You got a new Hug!":
+                hugActive = true
+            default:
+                return
+            }
         }
     }
 }
