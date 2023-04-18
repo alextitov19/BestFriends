@@ -208,10 +208,9 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
                                 
-                                 
-                                    Text("-")
+                                    Text("My \nRoom")
                                         .foregroundColor(ColorManager .purple3)
-                                        .font(.system(size: 80, weight: .regular))
+                                        .font(.system(size: 25, weight: .regular))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
@@ -368,9 +367,9 @@ struct PlanetActionsView: View {
                          
                                                      
                                     
-                                    Text("Alert")
+                                    Text("Friend \nAlert")
                                         .foregroundColor(ColorManager .purple3)
-                                        .font(.system(size: 40, weight: .regular))
+                                        .font(.system(size: 30, weight: .regular))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
@@ -461,9 +460,9 @@ struct PlanetActionsView: View {
                                     .opacity(0.80)
                                 
                                 VStack {
-                                    Text("+")
+                                    Text("Hopes & \nDreams")
                                         .foregroundColor(ColorManager .purple3)
-                                        .font(.system(size: 80, weight: .regular))
+                                        .font(.system(size: 25, weight: .regular))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                       
