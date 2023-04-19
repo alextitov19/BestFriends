@@ -349,10 +349,12 @@ struct PlanetActionsView: View {
                         
                         Spacer()
                             .frame(height: 25)
-//                        Apologies(user: user, friends: friends
+//                        Apologies(user: user, friends: friends\
+                        
+//                        TestPage(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups)
                         
 
-                        NavigationLink(destination: TestPage(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        NavigationLink(destination: EmptyView(),
                                        label: {
                             
                             
@@ -369,7 +371,7 @@ struct PlanetActionsView: View {
                          
                                                      
                                     
-                                    Text("Friend \nAlert")
+                                    Text("OPEN \ncircle")
                                         .foregroundColor(ColorManager .purple3)
                                         .font(.system(size: 30, weight: .regular))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)

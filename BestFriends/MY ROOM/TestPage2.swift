@@ -125,7 +125,7 @@ struct TestPage2: View {
                         
                         NavigationLink( destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
-                                Text("my room")
+                                Text("safe in my room")
                                     .fontWeight(.thin)
                                     .frame(width: 235, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

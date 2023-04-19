@@ -52,16 +52,16 @@ struct MyRoomInfo: View {
 //                .ignoresSafeArea()
 //                .blendMode(.screen)
 //
-            
-            ColorManager .purple5
-                    .ignoresSafeArea()
-                    .onAppear()
+//
+//            ColorManager .purple5
+//                    .ignoresSafeArea()
+//                    .onAppear()
     
                 Color .black
                     .ignoresSafeArea()
     
     
-                AdPlayerView(name: "sky2")
+                AdPlayerView(name: "MyRoom5")
                     .ignoresSafeArea()
     
             
@@ -258,10 +258,10 @@ struct MyRoomInfo: View {
                         Image(systemName: "circle.fill")
                             .resizable()
                             .foregroundColor(ColorManager .purple1)
-                            .frame(width: 250, height: 200)
+                            .frame(width: 140, height: 110)
                         //                    .blur(radius: 2)
-                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
-                            .opacity(0.70)
+                            .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50) .opacity(0.99)
+                            .opacity(0.9)
                         
                         
                         VStack {
@@ -297,7 +297,7 @@ struct MyRoomInfo: View {
                 
                 ZStack {
                     
-                    Image(systemName: "star.fill")
+                    Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(color)
                     //                            .foregroundColor(ColorManager .purple2)
