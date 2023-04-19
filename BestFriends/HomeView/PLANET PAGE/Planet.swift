@@ -212,7 +212,7 @@ struct PlanetActionsView: View {
                                 
                                     Text("Ouch!")
                                         .foregroundColor(ColorManager .purple3)
-                                        .font(.system(size: 25, weight: .regular))
+                                        .font(.system(size: 20, weight: .regular))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
@@ -371,9 +371,9 @@ struct PlanetActionsView: View {
                          
                                                      
                                     
-                                    Text("OPEN \ncircle")
+                                    Text("coming \nsoon")
                                         .foregroundColor(ColorManager .purple3)
-                                        .font(.system(size: 30, weight: .regular))
+                                        .font(.system(size: 20, weight: .regular))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
@@ -466,7 +466,7 @@ struct PlanetActionsView: View {
                                 VStack {
                                     Text("Hopes n' \nDreams")
                                         .foregroundColor(ColorManager .purple3)
-                                        .font(.system(size: 25, weight: .regular))
+                                        .font(.system(size: 20, weight: .regular))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                       
