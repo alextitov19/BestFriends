@@ -61,7 +61,7 @@ struct MyRoomInfo: View {
                     .ignoresSafeArea()
     
     
-                AdPlayerView(name: "sky2")
+                AdPlayerView(name: "dramaLights")
                     .ignoresSafeArea()
     
             
@@ -140,7 +140,120 @@ struct MyRoomInfo: View {
                 
                 
                 
-              
+                
+//
+//
+//                NavigationLink(destination: EmptyView(), label: {
+//                    HugCircle (color: ColorManager .pmbc_green, friendName: "????")
+//                })
+//                .offset(x: showItems ? -150 : 0, y: showItems ? -290: 0)
+//                .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+//                .opacity(0.3)
+//
+//
+//                    NavigationLink(destination: EmptyView(), label: {
+//                        HugCircle (color: ColorManager.purple1, friendName: "Coupon")
+//                    })
+//                    .offset(x: showItems ? 120 : 0, y: showItems ? -270: 0)
+//                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
+////                    .opacity(0.6)
+//                    .opacity(0.65)
+//
+//
+//                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), label: {
+//                        HugCircle (color: ColorManager .orange2, friendName: "missing \nyou")
+//                    })
+//                    .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+//                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+////
+//                    .opacity(065)
+//
+//
+//
+//                    NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
+//                        HugCircle (color: ColorManager .grey3, friendName: "send a \nfist pump")
+//                    })
+//                    .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
+//                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+////                    .opacity(0.65)
+//                    .opacity(0.65)
+//
+//
+//                NavigationLink(destination: HurtFeelings(user: user, friends: friends), label: {
+//                    HugCircle (color: ColorManager .grey1, friendName: "PhotoPOP")
+//                })
+//                .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
+//                .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
+////                .opacity(0.85)
+//                .opacity(0.65)
+//
+//
+//
+//                NavigationLink(destination: SaySomethingNice8(user: user, atmosphere: atmosphere, friends: friends), label: {
+//                    HugCircle (color: ColorManager .grey1, friendName: "say \nsomething \nnice")
+//                })
+//                .offset(x: showItems ? -00 : 0, y: showItems ? -370: 0)
+//                .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
+//                .opacity(0.65)
+//
+//
+//
+//                NavigationLink(destination: EmptyView(), label: {
+//                    HugCircle (color: ColorManager .pmbc_blue, friendName: "????")
+//                })
+//                .offset(x: showItems ? 130 : 0, y: showItems ? 350: 0)
+//                .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+//                .opacity(0.3)
+//
+//
+//
+//
+//
+//                    NavigationLink(destination: EmptyView(), label: {
+//                        HugCircle (color: ColorManager .purple4, friendName: "TAP Here")
+//                    })
+//                    .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
+//                    .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
+//                    .opacity(0.65)
+//
+//
+//
+//
+//
+//
+//                VStack {
+//
+//                    NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
+//                        HugCircle (color: ColorManager.purple1, friendName: "hugs")
+//                    })
+//                    .offset(x: showItems ? 0 : 0, y: showItems ? 570: 0)
+//                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
+////                    .opacity(0.6)
+//                    .opacity(0.65)
+//
+//                        NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
+//                            HugCircle (color: ColorManager .red, friendName: "kisses")
+//                        })
+//                        .offset(x: showItems ? 100 : 0, y: showItems ? 290: 0)
+//                        .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+//                        .opacity(0.3)
+//
+//
+//                    NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
+//                        HugCircle (color: ColorManager .red, friendName: "kisses")
+//                    })
+//                    .offset(x: showItems ? 100 : 0, y: showItems ? 290: 0)
+//                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+//                    .opacity(0.3)
+//
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         
                         Image(systemName: "circle.fill")
                             .resizable()
