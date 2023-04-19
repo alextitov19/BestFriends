@@ -71,7 +71,7 @@ struct MyRoomInfo: View {
                 
                 
                                 NavigationLink(destination: AtmosphereInfo1(user: user, atmosphere: atmosphere, friends: friends), label: {
-                                    MyRoomCircle (color: Color .white, friendName: "Cupcakes")
+                                    MyRoomCircle (color: Color .white, friendName: "you are \nnot alone")
                                 })
                                 .offset(x: showItems ? 100 : 0, y: showItems ? 150: 0)
                                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
@@ -81,7 +81,7 @@ struct MyRoomInfo: View {
                 
                 
                                 NavigationLink(destination: HugPushNotification3(user: user, friends: friends), label: {
-                                    MyRoomCircle (color: ColorManager .grey1, friendName: "Need a Hug")
+                                    MyRoomCircle (color: ColorManager .grey1, friendName: "need a hug")
                                 })
                                 .offset(x: showItems ? 0 : 0, y: showItems ? -170: 0)
                                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
@@ -90,7 +90,7 @@ struct MyRoomInfo: View {
                 
                 
                                 NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
-                                    MyRoomCircle (color: ColorManager .grey1, friendName: "Something \n Bugging \nMe")
+                                    MyRoomCircle (color: ColorManager .grey1, friendName: "somethings \n bugging \nme")
                                 })
                                 .offset(x: showItems ? -100 : 0, y: showItems ? -270: 0)
                                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
@@ -110,7 +110,7 @@ struct MyRoomInfo: View {
                 
                 
                                 NavigationLink(destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends), label: {
-                                    MyRoomCircle (color: Color .white, friendName: "'Vibe' \nTracker")
+                                    MyRoomCircle (color: Color .white, friendName: "'Vibe' \ntracker")
                                 })
                                 .offset(x: showItems ? 130 : 0, y: showItems ? 30: 0)
                                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
@@ -120,7 +120,7 @@ struct MyRoomInfo: View {
                 
                 
                                 NavigationLink(destination: MyFears(user: user, friends: friends), label: {
-                                    MyRoomCircle (color: Color .white, friendName: "I can't \nBreathe")
+                                    MyRoomCircle (color: Color .white, friendName: "I can't \nbreathe")
                                 })
                                 .offset(x: showItems ? 100 : 0, y: showItems ? -250: 0)
                                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
@@ -132,13 +132,14 @@ struct MyRoomInfo: View {
                 
                 
                                 NavigationLink(destination: EmptyView(), label: {
-                                    MyRoomCircle (color: Color .white, friendName: "Send a Song")
+                                    MyRoomCircle (color: Color .white, friendName: "send a song")
                                 })
                                 .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
                                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
                                 .opacity(0.4)
                 
-                
+               
+            
                 
                 
 //
