@@ -21,7 +21,9 @@ struct TestPage2: View {
     let friends: [User]
     let friendAtmospheres: [Atmosphere]
     let groups: [Group]
-
+ 
+    
+    
     var body: some View {
 
         ZStack {
@@ -30,7 +32,15 @@ struct TestPage2: View {
                 .ignoresSafeArea()
                 .onAppear()
 
+            Color .black
+                .ignoresSafeArea()
 
+        
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+          
+              
+          
 
 
             VStack {
@@ -87,6 +97,11 @@ struct TestPage2: View {
 //
                         Spacer ()
                              .frame(height: 20)
+                        
+                        
+                        
+//                        MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups)
+//
                         
                         NavigationLink( destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
