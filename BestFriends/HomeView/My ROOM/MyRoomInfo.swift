@@ -6,17 +6,19 @@
 //
 
 
+
+
 import Foundation
 import SwiftUI
 import AVKit
 
 struct MyRoomInfo: View {
     
-    //    let user: User
-    //    let friends: [User]
-    //    let groups: [Group]
-    //    let atmosphere: Atmosphere
-    //
+//    let user: User
+//    let friends: [User]
+//    let groups: [Group]
+//    let atmosphere: Atmosphere
+//
     
     let user: User
     let atmosphere: Atmosphere
@@ -31,200 +33,514 @@ struct MyRoomInfo: View {
     var body: some View {
         
         ZStack {
+            //
+            //            ColorManager.purple1
+            //                .ignoresSafeArea()
+            //                .onAppear()
+            
+            
+            
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+//                .opacity(0.5)
+//
+//
+//
+//            AdPlayerView(name: "AloneBeach")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//
+            
             ColorManager .purple5
-                .ignoresSafeArea()
-                .onAppear()
-            
-            Color .black
-                .ignoresSafeArea()
-            
-            
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
+                    .ignoresSafeArea()
+                    .onAppear()
+    
+                Color .black
+                    .ignoresSafeArea()
+    
+    
+                AdPlayerView(name: "sky2")
+                    .ignoresSafeArea()
+    
             
             
             ZStack{
                 
                 
                 
-                
-                NavigationLink(destination: AtmosphereInfo1(user: user, atmosphere: atmosphere, friends: friends), label: {
-                    MyRoomCircle (color: Color .white, friendName: "Cupcakes")
-                })
-                .offset(x: showItems ? 100 : 0, y: showItems ? 150: 0)
-                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                .opacity(0.4)
-                
-                
-                
-                
-                NavigationLink(destination: HugPushNotification3(user: user, friends: friends), label: {
-                    MyRoomCircle (color: ColorManager .grey1, friendName: "Need a Hug")
-                })
-                .offset(x: showItems ? 0 : 0, y: showItems ? -170: 0)
-                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                .opacity(0.25)
-                
-                
-                
-                NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
-                    MyRoomCircle (color: ColorManager .grey1, friendName: "Something \n Bugging \nMe")
-                })
-                .offset(x: showItems ? -100 : 0, y: showItems ? -270: 0)
-                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                .opacity(0.25)
+                                NavigationLink(destination: AtmosphereInfo1(user: user, atmosphere: atmosphere, friends: friends), label: {
+                                    MyRoomCircle (color: Color .white, friendName: "Cupcakes")
+                                })
+                                .offset(x: showItems ? 100 : 0, y: showItems ? 150: 0)
+                                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                                .opacity(0.4)
                 
                 
                 
                 
-                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                    MyRoomCircle (color: Color .white, friendName: "SmileVault")
-                })
-                .offset(x: showItems ? -120 : 0, y: showItems ? -120: 0)
-                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                .opacity(0.25)
+                                NavigationLink(destination: HugPushNotification3(user: user, friends: friends), label: {
+                                    MyRoomCircle (color: ColorManager .grey1, friendName: "Need a Hug")
+                                })
+                                .offset(x: showItems ? 0 : 0, y: showItems ? -170: 0)
+                                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                                .opacity(0.25)
+                
+                
+                
+                                NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
+                                    MyRoomCircle (color: ColorManager .grey1, friendName: "Something \n Bugging \nMe")
+                                })
+                                .offset(x: showItems ? -100 : 0, y: showItems ? -270: 0)
+                                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                                .opacity(0.25)
                 
                 
                 
                 
-                NavigationLink(destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends), label: {
-                    MyRoomCircle (color: Color .white, friendName: "'Vibe' \nTracker")
-                })
-                .offset(x: showItems ? 130 : 0, y: showItems ? 30: 0)
-                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                .opacity(0.4)
+                                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
+                                    MyRoomCircle (color: Color .white, friendName: "SmileVault")
+                                })
+                                .offset(x: showItems ? -120 : 0, y: showItems ? -120: 0)
+                                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                                .opacity(0.25)
                 
                 
                 
                 
-                NavigationLink(destination: MyFears(user: user, friends: friends), label: {
-                    MyRoomCircle (color: Color .white, friendName: "I can't \nBreathe")
-                })
-                .offset(x: showItems ? 100 : 0, y: showItems ? -250: 0)
-                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                .opacity(0.4)
+                                NavigationLink(destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends), label: {
+                                    MyRoomCircle (color: Color .white, friendName: "'Vibe' \nTracker")
+                                })
+                                .offset(x: showItems ? 130 : 0, y: showItems ? 30: 0)
+                                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                                .opacity(0.4)
                 
+                
+                
+                
+                                NavigationLink(destination: MyFears(user: user, friends: friends), label: {
+                                    MyRoomCircle (color: Color .white, friendName: "I can't \nBreathe")
+                                })
+                                .offset(x: showItems ? 100 : 0, y: showItems ? -250: 0)
+                                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                                .opacity(0.4)
                 
                 
                 
                 
                 
-                NavigationLink(destination: EmptyView(), label: {
-                    MyRoomCircle (color: Color .white, friendName: "Send a Song")
-                })
-                .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
-                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                .opacity(0.4)
+                
+                                NavigationLink(destination: EmptyView(), label: {
+                                    MyRoomCircle (color: Color .white, friendName: "Send a Song")
+                                })
+                                .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
+                                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                                .opacity(0.4)
                 
                 
                 
-                //
-                //
-                //                                    NavigationLink(destination: EmptyView(), label: {
-                //                                        MyRoomCircle (color: ColorManager .purple4, friendName: "TAP Here")
-                //                                    })
-                //                                    .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
-                //                                    .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
-                //                                    .opacity(0.65)
-                //
-                //
                 
-                VStack {
-                    //
-                    //                    NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
-                    //                        HugCircle (color: ColorManager.purple1, friendName: "hugs")
-                    //                    })
-                    //                    .offset(x: showItems ? 0 : 0, y: showItems ? 570: 0)
-                    //                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
-                    ////                    .opacity(0.6)
-                    //                    .opacity(0.65)
-                    //
-                    //                        NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
-                    //                            HugCircle (color: ColorManager .red, friendName: "kisses")
-                    //                        })
-                    //                        .offset(x: showItems ? 100 : 0, y: showItems ? 290: 0)
-                    //                        .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-                    //                        .opacity(0.3)
-                    
-                    //
-                    //                    NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
-                    //                        HugCircle (color: ColorManager .red, friendName: "kisses")
-                    //                    })
-                    //                    .offset(x: showItems ? 100 : 0, y: showItems ? 290: 0)
-                    //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-                    //                    .opacity(0.3)
-                    //
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    Image(systemName: "circle.fill")
-                        .resizable()
-                        .foregroundColor(ColorManager .orange1)
-                        .frame(width: 155, height: 120)
-                    //                    .blur(radius: 2)
-                        .shadow(color: ColorManager .orange5, radius: 65, x: 30, y: 50) .opacity(0.99)
-                        .opacity(0.93)
-                  
-                 
-                    
-                    VStack {
 //
-                       
+//
+//                NavigationLink(destination: EmptyView(), label: {
+//                    HugCircle (color: ColorManager .pmbc_green, friendName: "????")
+//                })
+//                .offset(x: showItems ? -150 : 0, y: showItems ? -290: 0)
+//                .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+//                .opacity(0.3)
+//
+//
+//                    NavigationLink(destination: EmptyView(), label: {
+//                        HugCircle (color: ColorManager.purple1, friendName: "Coupon")
+//                    })
+//                    .offset(x: showItems ? 120 : 0, y: showItems ? -270: 0)
+//                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
+////                    .opacity(0.6)
+//                    .opacity(0.65)
+//
+//
+//                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), label: {
+//                        HugCircle (color: ColorManager .orange2, friendName: "missing \nyou")
+//                    })
+//                    .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+//                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+////
+//                    .opacity(065)
+//
+//
+//
+//                    NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
+//                        HugCircle (color: ColorManager .grey3, friendName: "send a \nfist pump")
+//                    })
+//                    .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
+//                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+////                    .opacity(0.65)
+//                    .opacity(0.65)
+//
+//
+//                NavigationLink(destination: HurtFeelings(user: user, friends: friends), label: {
+//                    HugCircle (color: ColorManager .grey1, friendName: "PhotoPOP")
+//                })
+//                .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
+//                .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
+////                .opacity(0.85)
+//                .opacity(0.65)
+//
+//
+//
+//                NavigationLink(destination: SaySomethingNice8(user: user, atmosphere: atmosphere, friends: friends), label: {
+//                    HugCircle (color: ColorManager .grey1, friendName: "say \nsomething \nnice")
+//                })
+//                .offset(x: showItems ? -00 : 0, y: showItems ? -370: 0)
+//                .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
+//                .opacity(0.65)
+//
+//
+//
+//                NavigationLink(destination: EmptyView(), label: {
+//                    HugCircle (color: ColorManager .pmbc_blue, friendName: "????")
+//                })
+//                .offset(x: showItems ? 130 : 0, y: showItems ? 350: 0)
+//                .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+//                .opacity(0.3)
+//
+//
+//
+//
+//
+//                    NavigationLink(destination: EmptyView(), label: {
+//                        HugCircle (color: ColorManager .purple4, friendName: "TAP Here")
+//                    })
+//                    .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
+//                    .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
+//                    .opacity(0.65)
+//
+//
+//
+//
+//
+//
+//                VStack {
+//
+//                    NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
+//                        HugCircle (color: ColorManager.purple1, friendName: "hugs")
+//                    })
+//                    .offset(x: showItems ? 0 : 0, y: showItems ? 570: 0)
+//                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
+////                    .opacity(0.6)
+//                    .opacity(0.65)
+//
+//                        NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
+//                            HugCircle (color: ColorManager .red, friendName: "kisses")
+//                        })
+//                        .offset(x: showItems ? 100 : 0, y: showItems ? 290: 0)
+//                        .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+//                        .opacity(0.3)
+//
+//
+//                    NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
+//                        HugCircle (color: ColorManager .red, friendName: "kisses")
+//                    })
+//                    .offset(x: showItems ? 100 : 0, y: showItems ? 290: 0)
+//                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+//                    .opacity(0.3)
+//
                         
-//                        Spacer ()
-//                            .frame(height: 20)
-//
-//
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        Image(systemName: "circle.fill")
+                            .resizable()
+                            .foregroundColor(ColorManager .purple1)
+                            .frame(width: 250, height: 200)
+                        //                    .blur(radius: 2)
+                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
+                            .opacity(0.70)
+                        
+                        
+                        VStack {
+                            
+                            Spacer ()
+                                .frame(height: 255)
+                            
+                            
+                        }
                     }
-                }
-        
+                    
                 
-                .onTapGesture {
-                    withAnimation {
-                        self.showItems.toggle()
+                    
+                    .onTapGesture {
+                        withAnimation {
+                            self.showItems.toggle()
+                        }
+                        print("tap function is working")
                     }
-                    print("tap function is working")
+                    
+                    .animation(Animation.easeInOut(duration: 1.7), value: showItems)
+                    
                 }
-                
-                .animation(Animation.easeInOut(duration: 1.7), value: showItems)
-                
             }
         }
-    }
-    
-    
-    struct MyRoomCircle: View {
-        var color: Color
-        var friendName: String
         
-        var body: some View {
+        
+        struct MyRoomCircle: View {
+            var color: Color
+            var friendName: String
             
-            ZStack {
+            var body: some View {
                 
-                Image(systemName: "star.fill")
-                    .resizable()
-                    .foregroundColor(color)
-                //                            .foregroundColor(ColorManager .purple2)
-                    .frame(width: 140, height: 110)
-                    .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
-                
-                Text(friendName)
-                    .fontWeight(.light)
-                    .italic()
-                    .foregroundColor(.black)
-                
+                ZStack {
+                    
+                    Image(systemName: "star.fill")
+                        .resizable()
+                        .foregroundColor(color)
+                    //                            .foregroundColor(ColorManager .purple2)
+                        .frame(width: 140, height: 110)
+                        .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                    
+                    Text(friendName)
+                        .fontWeight(.light)
+                        .italic()
+                        .foregroundColor(.black)
+                    
+                }
             }
         }
-    }
-}
+        
         
     
+
+
+
+
+
+//**************************************************************
+//**************************************************************************
+//import Foundation
+//import SwiftUI
+//import AVKit
+//
+//struct MyRoomInfo: View {
+//
+//    //    let user: User
+//    //    let friends: [User]
+//    //    let groups: [Group]
+//    //    let atmosphere: Atmosphere
+//    //
+//
+//    let user: User
+//    let atmosphere: Atmosphere
+//    let friends: [User]
+//    let friendAtmospheres: [Atmosphere]
+//    let groups: [Group]
+//
+//    @State private var showItems: Bool = false
+//    @State private var offset: CGFloat = 200.0
+//
+//
+//    var body: some View {
+//
+//        ZStack {
+//            ColorManager .purple5
+//                .ignoresSafeArea()
+//                .onAppear()
+//
+//            Color .black
+//                .ignoresSafeArea()
+//
+//
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//
+//
+//            ZStack{
+//
+//
+//
+//
+//                NavigationLink(destination: AtmosphereInfo1(user: user, atmosphere: atmosphere, friends: friends), label: {
+//                    MyRoomCircle (color: Color .white, friendName: "Cupcakes")
+//                })
+//                .offset(x: showItems ? 100 : 0, y: showItems ? 150: 0)
+//                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+//                .opacity(0.4)
+//
+//
+//
+//
+//                NavigationLink(destination: HugPushNotification3(user: user, friends: friends), label: {
+//                    MyRoomCircle (color: ColorManager .grey1, friendName: "Need a Hug")
+//                })
+//                .offset(x: showItems ? 0 : 0, y: showItems ? -170: 0)
+//                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+//                .opacity(0.25)
+//
+//
+//
+//                NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
+//                    MyRoomCircle (color: ColorManager .grey1, friendName: "Something \n Bugging \nMe")
+//                })
+//                .offset(x: showItems ? -100 : 0, y: showItems ? -270: 0)
+//                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+//                .opacity(0.25)
+//
+//
+//
+//
+//                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
+//                    MyRoomCircle (color: Color .white, friendName: "SmileVault")
+//                })
+//                .offset(x: showItems ? -120 : 0, y: showItems ? -120: 0)
+//                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+//                .opacity(0.25)
+//
+//
+//
+//
+//                NavigationLink(destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends), label: {
+//                    MyRoomCircle (color: Color .white, friendName: "'Vibe' \nTracker")
+//                })
+//                .offset(x: showItems ? 130 : 0, y: showItems ? 30: 0)
+//                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+//                .opacity(0.4)
+//
+//
+//
+//
+//                NavigationLink(destination: MyFears(user: user, friends: friends), label: {
+//                    MyRoomCircle (color: Color .white, friendName: "I can't \nBreathe")
+//                })
+//                .offset(x: showItems ? 100 : 0, y: showItems ? -250: 0)
+//                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+//                .opacity(0.4)
+//
+//
+//
+//
+//
+//
+//                NavigationLink(destination: EmptyView(), label: {
+//                    MyRoomCircle (color: Color .white, friendName: "Send a Song")
+//                })
+//                .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
+//                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+//                .opacity(0.4)
+//
+//
+//
+//                //
+//                //
+//                //                                    NavigationLink(destination: EmptyView(), label: {
+//                //                                        MyRoomCircle (color: ColorManager .purple4, friendName: "TAP Here")
+//                //                                    })
+//                //                                    .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
+//                //                                    .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
+//                //                                    .opacity(0.65)
+//                //
+//                //
+//
+//                VStack {
+//                    //
+//                    //                    NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
+//                    //                        HugCircle (color: ColorManager.purple1, friendName: "hugs")
+//                    //                    })
+//                    //                    .offset(x: showItems ? 0 : 0, y: showItems ? 570: 0)
+//                    //                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
+//                    ////                    .opacity(0.6)
+//                    //                    .opacity(0.65)
+//                    //
+//                    //                        NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
+//                    //                            HugCircle (color: ColorManager .red, friendName: "kisses")
+//                    //                        })
+//                    //                        .offset(x: showItems ? 100 : 0, y: showItems ? 290: 0)
+//                    //                        .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+//                    //                        .opacity(0.3)
+//
+//                    //
+//                    //                    NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
+//                    //                        HugCircle (color: ColorManager .red, friendName: "kisses")
+//                    //                    })
+//                    //                    .offset(x: showItems ? 100 : 0, y: showItems ? 290: 0)
+//                    //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+//                    //                    .opacity(0.3)
+//                    //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//                    Image(systemName: "circle.fill")
+//                        .resizable()
+//                        .foregroundColor(ColorManager .orange1)
+//                        .frame(width: 155, height: 120)
+//                    //                    .blur(radius: 2)
+//                        .shadow(color: ColorManager .orange5, radius: 65, x: 30, y: 50) .opacity(0.99)
+//                        .opacity(0.93)
+//
+//
+//
+//                    VStack {
+////
+//
+//
+////                        Spacer ()
+////                            .frame(height: 20)
+////
+////
+//                    }
+//                }
+//
+//
+//                .onTapGesture {
+//                    withAnimation {
+//                        self.showItems.toggle()
+//                    }
+//                    print("tap function is working")
+//                }
+//
+//                .animation(Animation.easeInOut(duration: 1.7), value: showItems)
+//
+//            }
+//        }
+//    }
+//
+//
+//    struct MyRoomCircle: View {
+//        var color: Color
+//        var friendName: String
+//
+//        var body: some View {
+//
+//            ZStack {
+//
+//                Image(systemName: "star.fill")
+//                    .resizable()
+//                    .foregroundColor(color)
+//                //                            .foregroundColor(ColorManager .purple2)
+//                    .frame(width: 140, height: 110)
+//                    .shadow(color: ColorManager .purple3, radius: 10, x: 10, y: 10)
+//
+//                Text(friendName)
+//                    .fontWeight(.light)
+//                    .italic()
+//                    .foregroundColor(.black)
+//
+//            }
+//        }
+//    }
+//}
+//
+//
 
 
 
