@@ -49,33 +49,27 @@ struct TestPage2: View {
 
             VStack {
                 
-                Text("Ouch!")
-                   .font(.system(size: 40))
-                   .fontWeight(.light)
-                   .multilineTextAlignment(.center)
-                   .foregroundColor(ColorManager .grey3)
-
-                Text("Something just happend")
+                Text("something just happend")
                    .font(.system(size: 20))
                    .italic()
                    .fontWeight(.light)
                    .multilineTextAlignment(.center)
                    .foregroundColor(ColorManager .grey3)
-                Spacer ()
-                     .frame(height: 10)
                 
                 
-                
-                Text("I'm having a bad day!")
-                   .font(.system(size: 30))
+                Text("Wow, this hurts!")
+                   .font(.system(size: 40))
                    .fontWeight(.light)
                    .multilineTextAlignment(.center)
                    .foregroundColor(ColorManager .grey3)
+
+         
+                
+                
                 
                 Spacer ()
-                     .frame(height: 40)
-                
-                
+                     .frame(height: 50)
+        
                 ZStack {
 //
 //
@@ -89,14 +83,8 @@ struct TestPage2: View {
 
 
                     VStack {
-                   
-                        Text("Before talking to my BFFs \n I really need some time alone")
-                           .italic()
-                           .font(.system(size: 20))
-                           .fontWeight(.light)
-                           .multilineTextAlignment(.center)
-                           .foregroundColor(ColorManager .grey3)
-                        
+
+//
 //                                   AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
 //
                         Spacer ()
@@ -107,9 +95,37 @@ struct TestPage2: View {
 //                        MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups)
 //
                         
+                      
+//
+//
+//
+                        NavigationLink( destination: TestPage(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                            label: {
+                                Text("Alert Friends")
+                                    .fontWeight(.thin)
+                                    .frame(width: 235, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 23))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+
+                        Spacer ()
+                             .frame(height: 50)
+                        
+                        
+                        Text("need some time alone first")
+                            .italic()
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager .grey3)
+                        
+                        
                         NavigationLink( destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
-                                Text("Safe n' Sound")
+                                Text("my room")
                                     .fontWeight(.thin)
                                     .frame(width: 235, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -120,14 +136,7 @@ struct TestPage2: View {
                             })
 
 
-//
-//                                                 Text("need some time alone")
-//                                                    .italic()
-//                                                    .font(.system(size: 20))
-//                                                    .fontWeight(.light)
-//                                                    .multilineTextAlignment(.center)
-//                                                    .foregroundColor(ColorManager .grey3)
-//
+                        
                         
                            Spacer ()
                                 .frame(height: 30)
