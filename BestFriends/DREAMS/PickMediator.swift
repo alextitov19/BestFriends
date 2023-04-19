@@ -46,18 +46,19 @@ struct PickMediator: View {
 //                .ignoresSafeArea()
 //                .blendMode(.screen)
 //
-            ColorManager .purple5
-                    .ignoresSafeArea()
-                    .onAppear()
+//            ColorManager .purple1
+//                    .ignoresSafeArea()
+//                    .onAppear()
     
-                Color .black
-                    .ignoresSafeArea()
-    
+//                Color .black
+//                    .ignoresSafeArea()
+//
     
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
             
-            
+            AdPlayerView(name: "dramaLights")
+                .ignoresSafeArea()
             
             ZStack{
                 

@@ -288,33 +288,33 @@ struct HomeView: View {
                         HStack {
                             
                             VStack {
-//                                
-//                                NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
-//                                    Text("ALERT - friend's 'Vibe' changed")
-//                                        .fontWeight(.light)
-//                                        .frame(width: 255, height: 30)
-//                                        .foregroundColor(.white)
-//                                        .background(ColorManager .pmbc_pink)
-//                                        .cornerRadius(10)
-//                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                                        .opacity(0.5)
-//                                })
-//                                
-                                Spacer()
-                                    .frame(height: 15)
-                                
-                                
-                                NavigationLink(destination: SaySomethingNice7(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
-                                               label: {
-                                    Text("friend sent 'Nice' message")
+
+                                NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
+                                    Text("ALERT - friend's 'Vibe' changed")
                                         .fontWeight(.light)
                                         .frame(width: 255, height: 30)
                                         .foregroundColor(.white)
-                                        .background(ColorManager .purple7)
+                                        .background(ColorManager .pmbc_pink)
                                         .cornerRadius(10)
                                         .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                                         .opacity(0.5)
                                 })
+//
+                                Spacer()
+                                    .frame(height: 15)
+                                
+//
+//                                NavigationLink(destination: SaySomethingNice7(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
+//                                               label: {
+//                                    Text("friend sent 'Nice' message")
+//                                        .fontWeight(.light)
+//                                        .frame(width: 255, height: 30)
+//                                        .foregroundColor(.white)
+//                                        .background(ColorManager .purple7)
+//                                        .cornerRadius(10)
+//                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                                        .opacity(0.5)
+//                                })
                             }
                         }
                         
