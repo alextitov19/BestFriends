@@ -448,7 +448,7 @@ struct PlanetActionsView: View {
                         
                                   
                         
-                        NavigationLink(destination: BuiltForTeens(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        NavigationLink(destination: PickMediator(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                             
                             ZStack {

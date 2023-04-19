@@ -29,9 +29,9 @@ struct PickMediator: View {
         
         ZStack {
     
-            ColorManager.purple7
-                .ignoresSafeArea()
-                .onAppear()
+//            ColorManager.purple7
+//                .ignoresSafeArea()
+//                .onAppear()
 //
 //            Image("blueBackground")
 //                .resizable()
@@ -42,11 +42,20 @@ struct PickMediator: View {
 //
 
             
-            AdPlayerView(name: "MyRoom5")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-            
-            
+//            AdPlayerView(name: "MyRoom5")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//
+            ColorManager .purple5
+                    .ignoresSafeArea()
+                    .onAppear()
+    
+                Color .black
+                    .ignoresSafeArea()
+    
+    
+                AdPlayerView(name: "sky2")
+                    .ignoresSafeArea()
             
             
             

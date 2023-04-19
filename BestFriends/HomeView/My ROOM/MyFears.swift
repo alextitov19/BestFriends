@@ -37,35 +37,38 @@ struct MyFears: View {
         
         ZStack {
           
+//
+//            if shareTapped {
+//
+//                ColorManager.purple2
+//                    .ignoresSafeArea()
+//                    .onAppear()
+//
+//
+//
+//                AdPlayerView(name: "dramaLights")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//            } else {
+//                AdPlayerView(name: "")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//
+//                ColorManager.purple1
+//                    .ignoresSafeArea()
+//            }
+//
+//
+//
             
-            if shareTapped {
-                
-                ColorManager.purple2
-                    .ignoresSafeArea()
-                    .onAppear()
-                
-
-                
-                AdPlayerView(name: "dramaLights")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-            } else {
-                AdPlayerView(name: "")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                
-                ColorManager.purple1
-                    .ignoresSafeArea()
-            }
-            
-          
-          
+            ColorManager.purple5
+                               .ignoresSafeArea()
+                               .onAppear()
            
-            AdPlayerView(name: "")
+            AdPlayerView(name: "MyRoom5")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-            
-            
+           
 
             
             VStack{
