@@ -180,11 +180,11 @@ struct Friend1VaultPractice: View {
                     
                     
                     Button(action: {
-                        defaultMessageButtonTapped(defaultMessage: "Do we need to talk?")
+                        defaultMessageButtonTapped(defaultMessage: "Do we need to talk, now?")
                         
-                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Do we need to talk?", APNToken: friend.APNToken )
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Do we need to talk, now?", APNToken: friend.APNToken )
                     }, label: {
-                        Text("Do we need to talk?")
+                        Text("Do we need to talk, now?")
                             .fontWeight(.thin)
                             .frame(width: 260, height: 30)
                             .foregroundColor(.purple)
@@ -198,13 +198,13 @@ struct Friend1VaultPractice: View {
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "C")
                         
-                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Congratulations, you did it!", APNToken: friend.APNToken )
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Let's talk tomorrow when I see you", APNToken: friend.APNToken )
                     }, label: {
-                        Text("Congratulations, you did it!")
+                        Text("Let's talk tomorrow when I see you")
                             .fontWeight(.thin)
                             .frame(width: 260, height: 30)
                             .foregroundColor(.purple)
-                            .font(.system(size: 20))
+                            .font(.system(size: 16))
                             .background(colorChangeTap == "C" ? ColorManager.grey2 : ColorManager.grey1)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -218,9 +218,9 @@ struct Friend1VaultPractice: View {
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "D")
                         
-                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Good Luck - you got this!", APNToken: friend.APNToken )
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "FaceTime me!", APNToken: friend.APNToken )
                     }, label: {
-                        Text("Good luck, you got this!")
+                        Text("FaceTime me!")
                             .fontWeight(.thin)
                             .frame(width: 260, height: 30)
                             .foregroundColor(.purple)
@@ -277,7 +277,7 @@ struct Friend1VaultPractice: View {
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 .onTapGesture {
-                                    RestApi.instance.sendPushNotification(title: "Hug", body: "", APNToken: friend.APNToken )
+                                    RestApi.instance.sendPushNotification(title: "you got a hug", body: "", APNToken: friend.APNToken )
                                     hugTapped.toggle()
                                 }
                             
