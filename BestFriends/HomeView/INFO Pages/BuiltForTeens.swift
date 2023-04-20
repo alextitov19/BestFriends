@@ -35,8 +35,8 @@
                VStack {
                    
 
-                   Text("Empty page")
-                       .font(.system(size: 35))
+                   Text("New feature after 200 (1-ion-1) teen girl interviews with full analytics to determine the true problem that currently lacks a good solution")
+                       .font(.system(size: 12))
 
                        .fontWeight(.light)
                        .multilineTextAlignment(.center)
