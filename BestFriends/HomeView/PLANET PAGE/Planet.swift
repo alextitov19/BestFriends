@@ -354,7 +354,7 @@ struct PlanetActionsView: View {
 //                        TestPage(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups)
                         
 
-                        NavigationLink(destination: EmptyView(),
+                        NavigationLink(destination: BuiltForTeens(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
                             
                             

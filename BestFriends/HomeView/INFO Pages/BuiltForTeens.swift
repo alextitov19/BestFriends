@@ -35,7 +35,7 @@
                VStack {
                    
 
-                   Text("What's Your Dream?")
+                   Text("Empty page")
                        .font(.system(size: 35))
 
                        .fontWeight(.light)
@@ -67,7 +67,7 @@
                            Spacer ()
                                 .frame(height: 20)
                            
-                           Text("maybe, just maybe ...")
+                           Text("...")
                                .font(.system(size: 27))
                                .italic()
                                .fontWeight(.light)
@@ -76,10 +76,10 @@
                            
                            //                               destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                            
-                           NavigationLink( destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                           NavigationLink( destination: EmptyView(),
 
                                label: {
-                                   Text("We can help")
+                                   Text("...")
                                        .fontWeight(.thin)
                                        .frame(width: 235, height: 40)
                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
