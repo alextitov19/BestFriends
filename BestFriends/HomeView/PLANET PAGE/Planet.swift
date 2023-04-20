@@ -196,10 +196,12 @@ struct PlanetActionsView: View {
                         
 //                        TestPage2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups)
 //
+//
+//                        MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
                         
 //                        HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere)
                         
-                        NavigationLink(destination: TestPage2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
+                        NavigationLink(destination:  TestPage2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
