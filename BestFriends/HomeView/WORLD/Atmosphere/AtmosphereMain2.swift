@@ -76,7 +76,7 @@ struct AtmosphereMain2: View {
                 HStack {
                     
                     
-                    Text("Share \nmy 'Vibes'")
+                    Text("Alert \nSeverity")
                         .font(.system(size: 30))
                         .fontWeight(.ultraLight)
                         .foregroundColor(ColorManager .grey3)
@@ -97,66 +97,66 @@ struct AtmosphereMain2: View {
                             mood = 0
                         }) {
                             
-                            Text("School Stress")
+                            Text("Just letting \nyou know \nsomething \nhappened \n\nWill contact \nyou later")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
-                        .frame(width: 80, height: 30, alignment: .center)
+                        .frame(width: 80, height: 100, alignment: .center)
                         .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
                         
-                        Spacer()
-                            .frame(height: 12)
-                        
-                        Button(action: {
-                            mood = 1
-                        }) {
-                            
-                            Text("Dented Heart")
-                                .font(.system(size: 10))
-                                .foregroundColor(Color.black)
-                        }
-                        .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 1 ? Color(.cyan) : ColorManager .purple3)
-                        .cornerRadius(7)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
-                        
-                        Spacer()
-                            .frame(height: 12)
+//                        Spacer()
+//                            .frame(height: 12)
 //
 //                        Button(action: {
-//                            mood = 2
+//                            mood = 1
 //                        }) {
 //
-//                            Text("Family \nIssues")
+//                            Text("Dented Heart")
 //                                .font(.system(size: 10))
 //                                .foregroundColor(Color.black)
 //                        }
 //                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 2 ? Color(.cyan) : ColorManager .pmbc_blue)
+//                        .background(mood == 1 ? Color(.cyan) : ColorManager .purple3)
 //                        .cornerRadius(7)
 //                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 //
 //
 //                        Spacer()
 //                            .frame(height: 12)
-                        
-                        Button(action: {
-                            mood = 3
-                        }) {
-                            
-                            Text("Sad \nLonely")
-                                .font(.system(size: 10))
-                                .foregroundColor(Color.black)
-                        }
-                        .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 3 ? Color(.cyan) : ColorManager .purple3)
-                        .cornerRadius(7)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
+////
+////                        Button(action: {
+////                            mood = 2
+////                        }) {
+////
+////                            Text("Family \nIssues")
+////                                .font(.system(size: 10))
+////                                .foregroundColor(Color.black)
+////                        }
+////                        .frame(width: 80, height: 30, alignment: .center)
+////                        .background(mood == 2 ? Color(.cyan) : ColorManager .pmbc_blue)
+////                        .cornerRadius(7)
+////                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+////
+////
+////                        Spacer()
+////                            .frame(height: 12)
+//
+//                        Button(action: {
+//                            mood = 3
+//                        }) {
+//
+//                            Text("Sad \nLonely")
+//                                .font(.system(size: 10))
+//                                .foregroundColor(Color.black)
+//                        }
+//                        .frame(width: 80, height: 30, alignment: .center)
+//                        .background(mood == 3 ? Color(.cyan) : ColorManager .purple3)
+//                        .cornerRadius(7)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
                     }
                     
                     Spacer()
@@ -186,7 +186,7 @@ struct AtmosphereMain2: View {
                         NavigationLink(
                             destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
-                                Text("difficult day? tap here")
+                                Text("need alone \ntime now")
                                     .fontWeight(.thin)
                                     .frame(width: 70, height: 37)
                                     .foregroundColor(ColorManager .purple4)
@@ -248,11 +248,11 @@ struct AtmosphereMain2: View {
                             mood = 6
                         }) {
                             
-                            Text("My Crush \nUpdates")
+                            Text("Major drama \n\nNeed to talk")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
-                        .frame(width: 80, height: 30, alignment: .center)
+                        .frame(width: 80, height: 100, alignment: .center)
                         .background(mood == 6 ? Color(.systemYellow) : ColorManager .orange2)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -260,23 +260,23 @@ struct AtmosphereMain2: View {
                         
                         Spacer()
                             .frame(height: 12)
-                        
-                        Button(action: {
-                            mood = 7
-                        }) {
-                            
-                            Text("Happy \nToday")
-                                .font(.system(size: 10))
-                                .foregroundColor(Color.black)
-                        }
-                        .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 7 ? Color(.systemYellow) : ColorManager .orange2)
-                        .cornerRadius(7)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
-                        
-                        Spacer()
-                            .frame(height: 12)
+//
+//                        Button(action: {
+//                            mood = 7
+//                        }) {
+//
+//                            Text("Happy \nToday")
+//                                .font(.system(size: 10))
+//                                .foregroundColor(Color.black)
+//                        }
+//                        .frame(width: 80, height: 30, alignment: .center)
+//                        .background(mood == 7 ? Color(.systemYellow) : ColorManager .orange2)
+//                        .cornerRadius(7)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//
+//                        Spacer()
+//                            .frame(height: 12)
                         
 //                        Button(action: {
 //                            mood = 8
@@ -294,20 +294,20 @@ struct AtmosphereMain2: View {
 //
 //                        Spacer()
 //                            .frame(height: 12)
-                        
-                        Button(action: {
-                            mood = 9
-                        }) {
-                            
-                            Text("Exciting News")
-                                .font(.system(size: 10))
-                                .foregroundColor(Color.black)
-                        }
-                        .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 9 ? Color(.systemYellow) : ColorManager .orange2)
-                        .cornerRadius(7)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
+//
+//                        Button(action: {
+//                            mood = 9
+//                        }) {
+//
+//                            Text("Exciting News")
+//                                .font(.system(size: 10))
+//                                .foregroundColor(Color.black)
+//                        }
+//                        .frame(width: 80, height: 30, alignment: .center)
+//                        .background(mood == 9 ? Color(.systemYellow) : ColorManager .orange2)
+//                        .cornerRadius(7)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
                     }
                 }
                 
@@ -332,7 +332,7 @@ struct AtmosphereMain2: View {
                             .foregroundColor(ColorManager .grey3)
                             .opacity(0.5)
                         
-                        TextField("(max 35 characters) What's up?", text: $summary)
+                        TextField("(What's up? Start your chat thread ...", text: $summary)
                             .font(.system(size: 17))
                             .foregroundColor(ColorManager.purple5)
                             .padding(.horizontal, 55)
