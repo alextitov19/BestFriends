@@ -12,7 +12,7 @@ import Foundation
 import SwiftUI
 import AVKit
 
-struct MyRoomInfo: View {
+struct g: View {
     
 //    let user: User
 //    let friends: [User]
@@ -90,7 +90,7 @@ struct MyRoomInfo: View {
                 
                 
                                 NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
-                                    MyRoomCircle (color: ColorManager .grey1, friendName: "somethings \n bugging \nme")
+                                    MyRoomCircle (color: ColorManager .red, friendName: "somethings \n bugging \nme \n(not here)")
                                 })
                                 .offset(x: showItems ? -100 : 0, y: showItems ? -270: 0)
                                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)

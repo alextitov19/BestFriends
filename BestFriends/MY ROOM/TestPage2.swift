@@ -63,8 +63,12 @@ struct TestPage2: View {
                    .multilineTextAlignment(.center)
                    .foregroundColor(ColorManager .grey3)
 
-         
-                
+//
+//                Text("Not good!")
+//                   .font(.system(size: 40))
+//                   .fontWeight(.light)
+//                   .multilineTextAlignment(.center)
+//                   .foregroundColor(ColorManager .grey3)
                 
                 
                 Spacer ()
