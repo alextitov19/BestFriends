@@ -12,7 +12,7 @@ import Foundation
 import SwiftUI
 import AVKit
 
-struct g: View {
+struct MyRoomInfo: View {
     
 //    let user: User
 //    let friends: [User]
