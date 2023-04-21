@@ -57,7 +57,7 @@ struct TestPage2: View {
                    .foregroundColor(ColorManager .grey3)
                 
                 
-                Text("Wow, this hurts!")
+                Text("Wow, this is not good!")
                    .font(.system(size: 40))
                    .fontWeight(.light)
                    .multilineTextAlignment(.center)
