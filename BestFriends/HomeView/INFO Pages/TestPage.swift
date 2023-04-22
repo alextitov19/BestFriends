@@ -65,7 +65,7 @@ struct TestPage: View {
 
                     VStack {
                  
-                        Text("let the inside of you match \nthe outside of you on social media")
+                        Text("it's OK letting the outside of you \nmatch the inside of you on BF")
                            .italic()
                            .font(.system(size: 20))
                            .fontWeight(.light)

@@ -57,7 +57,7 @@ struct TestPage2: View {
                    .foregroundColor(ColorManager .grey3)
                 
                 
-                Text("Wow, this is not good!")
+                Text("This is not good!")
                    .font(.system(size: 40))
                    .fontWeight(.light)
                    .multilineTextAlignment(.center)
@@ -83,7 +83,7 @@ struct TestPage2: View {
                         Spacer ()
                              .frame(height: 20)
                        
-                        Text("friends can't help - if they don't know!")
+                        Text("your friends care and want to help")
                              .font(.system(size: 20))
                              .italic()
                              .fontWeight(.light)
@@ -97,9 +97,9 @@ struct TestPage2: View {
 //
                         NavigationLink( destination: TestPage(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
-                                Text("Alert Friends")
+                                Text("Alert friends to Severity")
                                     .fontWeight(.thin)
-                                    .frame(width: 235, height: 40)
+                                    .frame(width: 290, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 23))
                                     .background(ColorManager.purple3)
@@ -107,7 +107,7 @@ struct TestPage2: View {
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
 
-                        Text("if you tell them - they will come")
+                        Text("but they can't help - if they don't know!")
                            .font(.system(size: 20))
                            .italic()
                            .fontWeight(.light)

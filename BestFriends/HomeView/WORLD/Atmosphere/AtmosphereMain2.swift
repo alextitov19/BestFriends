@@ -45,7 +45,7 @@ struct AtmosphereMain2: View {
 //
 //            if shareTapped {
 //
-//                ColorManager.purple2
+//                ColorManager.purple3
 //                    .ignoresSafeArea()
 //                    .onAppear()
 ////                Image("purpleBackground")
@@ -70,7 +70,7 @@ struct AtmosphereMain2: View {
             
             ColorManager .purple3
                 .ignoresSafeArea()
-//                .onAppear()
+              .onAppear()
 
 //            Color .black
 //                .ignoresSafeArea()
@@ -89,7 +89,7 @@ struct AtmosphereMain2: View {
                     Text("Alert \nSeverity")
                         .font(.system(size: 30))
                         .fontWeight(.ultraLight)
-                        .foregroundColor(ColorManager .grey3)
+                        .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     
                     Image("FatGuy200")
@@ -107,7 +107,7 @@ struct AtmosphereMain2: View {
                             mood = 0
                         }) {
                             
-                            Text("Just letting \nyou know \nsomething \nhappened \n\nNeed little \ntime alone")
+                            Text("Just letting \nyou know \nsomething \nhappened \n\nNeed little \ntime alone first")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -340,11 +340,12 @@ struct AtmosphereMain2: View {
                             .frame(width:335, height: 35)
                             .cornerRadius(10)
                             .foregroundColor(ColorManager .grey3)
+//                            .backgroundColor(ColorManager .grey3)
                             .opacity(0.5)
                         
                         TextField("(What's up? Start your chat thread ...", text: $summary)
                             .font(.system(size: 17))
-                            .foregroundColor(ColorManager.purple5)
+                            .foregroundColor(ColorManager.grey1)
                             .padding(.horizontal, 55)
                             .onReceive(Just(summary)) { _ in limitText(45) }
                         
