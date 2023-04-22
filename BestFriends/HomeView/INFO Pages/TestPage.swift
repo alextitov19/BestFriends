@@ -53,13 +53,13 @@ struct TestPage: View {
 
                 ZStack {
                
-
-                    Image(systemName: "heart.fill")
-                        .resizable()
-                        .foregroundColor(ColorManager .purple2)
-                        .frame(width: 360, height: 330)
-                        .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
-                        .opacity(0.8)
+//
+//                    Image(systemName: "heart.fill")
+//                        .resizable()
+//                        .foregroundColor(ColorManager .purple2)
+//                        .frame(width: 360, height: 330)
+//                        .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
+//                        .opacity(0.8)
 
 
 
