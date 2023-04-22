@@ -196,14 +196,14 @@ struct AtmosphereMain2: View {
                         NavigationLink(
                             destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
-                                Text("Can I get a \nCare Heart?")
+                                Text("Please send \nCare Heart")
                                     .fontWeight(.thin)
                                     .frame(width: 70, height: 37)
-                                    .foregroundColor(ColorManager .purple4)
+                                    .foregroundColor(ColorManager .purple7)
                                     .font(.system(size: 12))
                                     .background(ColorManager .purple1)
                                     .cornerRadius(10)
-                                
+                                    .opacity(0.95)
                             })
                     }
                         
@@ -263,7 +263,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 100, alignment: .center)
-                        .background(mood == 6 ? Color(.systemYellow) : ColorManager .orange2)
+                        .background(mood == 6 ? Color(.systemYellow) : ColorManager .orange4)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -484,7 +484,21 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 25)
                         
-//                        
+//
+                        Button(action: {
+                            sessionManager.showLogin()
+                        },
+                            label: {
+                            Image("home-alt2")
+                                .frame(width: 50, height: 25)
+                                .foregroundColor(.white)
+                                .font(.system(size: 20))
+                                .background(Color .black)
+                                .cornerRadius(15)
+                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                .opacity(0.70)
+                            
+                        })
 //                        NavigationLink(
 //                            destination: Impetus(user: user),
 //                            label: {

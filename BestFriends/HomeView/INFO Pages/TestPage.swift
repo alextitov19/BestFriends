@@ -79,9 +79,9 @@ struct TestPage: View {
                         NavigationLink( destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
 //                               destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
-                                Text("Share my Vibe")
+                                Text("confide in trusted friends")
                                     .fontWeight(.thin)
-                                    .frame(width: 235, height: 40)
+                                    .frame(width: 290, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 23))
                                     .background(ColorManager.purple3)
@@ -90,15 +90,15 @@ struct TestPage: View {
                             })
 
 
-                     
-                                                 Text("to trusted BFFs")
-                                                    .italic()
-                                                    .font(.system(size: 20))
-                                                    .fontWeight(.light)
-                                                    .multilineTextAlignment(.center)
-                                                    .foregroundColor(ColorManager .grey3)
-                        
-                        
+//
+//                                                 Text("to trusted BFFs")
+//                                                    .italic()
+//                                                    .font(.system(size: 20))
+//                                                    .fontWeight(.light)
+//                                                    .multilineTextAlignment(.center)
+//                                                    .foregroundColor(ColorManager .grey3)
+//
+//
                            Spacer ()
                                 .frame(height: 30)
 
