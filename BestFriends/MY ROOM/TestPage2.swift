@@ -63,16 +63,8 @@ struct TestPage2: View {
                    .multilineTextAlignment(.center)
                    .foregroundColor(ColorManager .grey3)
 
-//
-//                Text("Not good!")
-//                   .font(.system(size: 40))
-//                   .fontWeight(.light)
-//                   .multilineTextAlignment(.center)
-//                   .foregroundColor(ColorManager .grey3)
-                
-                
                 Spacer ()
-                     .frame(height: 50)
+                     .frame(height: 90)
         
                 ZStack {
 //
@@ -88,20 +80,20 @@ struct TestPage2: View {
 
                     VStack {
 
-//
-//                                   AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
-//
                         Spacer ()
                              .frame(height: 20)
+                       
+                        Text("friends can't help - if they don't know!")
+                             .font(.system(size: 20))
+                             .italic()
+                             .fontWeight(.light)
+                             .multilineTextAlignment(.center)
+                             .foregroundColor(ColorManager .grey3)
                         
+                        //                        MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups)
                         
-                        
-//                        MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups)
-//
-                        
-                      
-//
-//
+                        //
+                        //                                   AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
 //
                         NavigationLink( destination: TestPage(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
@@ -115,17 +107,16 @@ struct TestPage2: View {
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
 
+                        Text("if you tell them - they will come")
+                           .font(.system(size: 20))
+                           .italic()
+                           .fontWeight(.light)
+                           .multilineTextAlignment(.center)
+                           .foregroundColor(ColorManager .grey3)
+                        
                         Spacer ()
-                             .frame(height: 50)
-                        
-                        
-                        Text("need some time alone first")
-                            .italic()
-                            .font(.system(size: 20))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey3)
-                        
+                             .frame(height: 100)
+                  
                         
                         NavigationLink( destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
@@ -140,7 +131,12 @@ struct TestPage2: View {
                             })
 
 
-                        
+                        Text("hold up - I need some time alone first")
+                            .italic()
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager .grey3)
                         
                            Spacer ()
                                 .frame(height: 30)

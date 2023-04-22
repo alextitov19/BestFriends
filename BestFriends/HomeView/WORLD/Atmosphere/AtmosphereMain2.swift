@@ -42,32 +42,42 @@ struct AtmosphereMain2: View {
     var body: some View {
         ZStack {
             
-            
-            if shareTapped {
-                
-                ColorManager.purple2
-                    .ignoresSafeArea()
-                    .onAppear()
-//                Image("purpleBackground")
-//                    .resizable()
+//
+//            if shareTapped {
+//
+//                ColorManager.purple2
 //                    .ignoresSafeArea()
-//                    .scaledToFill()
+//                    .onAppear()
+////                Image("purpleBackground")
+////                    .resizable()
+////                    .ignoresSafeArea()
+////                    .scaledToFill()
+////                    .ignoresSafeArea()
+//
+//                AdPlayerView(name: "sky2")
 //                    .ignoresSafeArea()
-                
-                AdPlayerView(name: "sky2")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-            } else {
-                AdPlayerView(name: "")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                
-                ColorManager.purple1
-                    .ignoresSafeArea()
-            }
+//                    .blendMode(.screen)
+//            } else {
+//                AdPlayerView(name: "")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//
+//                ColorManager.purple1
+//                    .ignoresSafeArea()
+//            }
             
             
             
+            ColorManager .purple3
+                .ignoresSafeArea()
+//                .onAppear()
+
+//            Color .black
+//                .ignoresSafeArea()
+
+        
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
             
             
             VStack {
@@ -97,7 +107,7 @@ struct AtmosphereMain2: View {
                             mood = 0
                         }) {
                             
-                            Text("Just letting \nyou know \nsomething \nhappened \n\nWill contact \nyou later")
+                            Text("Just letting \nyou know \nsomething \nhappened \n\nNeed little \ntime alone")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -186,7 +196,7 @@ struct AtmosphereMain2: View {
                         NavigationLink(
                             destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
-                                Text("need alone \ntime now")
+                                Text("Can I get a \nCare Heart?")
                                     .fontWeight(.thin)
                                     .frame(width: 70, height: 37)
                                     .foregroundColor(ColorManager .purple4)
@@ -248,7 +258,7 @@ struct AtmosphereMain2: View {
                             mood = 6
                         }) {
                             
-                            Text("Major drama \n\nNeed to talk")
+                            Text("Need to talk \nNOW!")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -463,7 +473,7 @@ struct AtmosphereMain2: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Sad 'Vibe' shows as blue \natmospere around your \nplanet, happy 'Vibe' \nas yellow", isPresented: $showingAlert) {
+                                .alert("(just letting them know something happened) - shows as Blue \natmospere around planet \nYellow means Urgent", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             

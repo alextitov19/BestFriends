@@ -25,11 +25,20 @@ struct TestPage: View {
 
         ZStack {
 
+//            ColorManager .purple1
+//                .ignoresSafeArea()
+//                .onAppear()
+
             ColorManager .purple1
                 .ignoresSafeArea()
                 .onAppear()
 
+            Color .black
+                .ignoresSafeArea()
 
+        
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
 
 
             VStack {
