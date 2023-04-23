@@ -107,11 +107,11 @@ struct AtmosphereMain2: View {
                             mood = 0
                         }) {
                             
-                            Text("Just letting \nyou know \nsomething \nhappened \n\nNeed little \ntime alone first \nbefore talking")
+                            Text("Letting you know \nsomething happened \n\nNeed time alone \nbefore talking. \n\nSend me a \nCare Heart")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
-                        .frame(width: 80, height: 120, alignment: .center)
+                        .frame(width: 80, height: 130, alignment: .center)
                         .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -196,7 +196,7 @@ struct AtmosphereMain2: View {
                         NavigationLink(
                             destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
-                                Text("Please send \nCare Heart")
+                                Text("My \nRoom")
                                     .fontWeight(.thin)
                                     .frame(width: 70, height: 37)
                                     .foregroundColor(ColorManager .purple7)
@@ -257,12 +257,13 @@ struct AtmosphereMain2: View {
                         Button(action: {
                             mood = 6
                         }) {
-                            
-                            Text("Need to talk \nNOW!")
+                            Spacer()
+                                .frame(width: 10)
+                            Text("Need to talk, NOW! \n\nMeet in Chat \nor \nFactTime me.")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
-                        .frame(width: 80, height: 120, alignment: .center)
+                        .frame(width: 80, height: 130, alignment: .center)
                         .background(mood == 6 ? Color(.systemYellow) : ColorManager .orange4)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -484,21 +485,62 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 25)
                         
-//
-                        Button(action: {
-                            sessionManager.showLogin()
-                        },
-                            label: {
-                            Image("home-alt2")
-                                .frame(width: 50, height: 25)
-                                .foregroundColor(.white)
-                                .font(.system(size: 20))
-                                .background(Color .black)
-                                .cornerRadius(15)
-                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                .opacity(0.70)
+                        
+                       
+                        
+                        HStack {
                             
-                        })
+                            Button(action: {
+                                sessionManager.showLogin()
+                            },
+                                   label: {
+                                Image("FaceTime")
+                                    .frame(width: 5, height: 5)
+                            })
+                                Spacer()
+                                    .frame(width: 20)
+                            
+                            //
+                            Button(action: {
+                                sessionManager.showLogin()
+                            },
+                                   label: {
+                                Image("home-alt2")
+                                    .frame(width: 50, height: 25)
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 20))
+                                    .background(Color .black)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                    .opacity(0.70)
+                                
+                            })
+                            
+                            Spacer()
+                                .frame(width: 20)
+                            
+                            
+                            Button(action: {
+                                sessionManager.showLogin()
+                            },
+                                   label: {
+                                Image("download")
+                                    .frame(width: 5, height: 5)
+//                                    .foregroundColor(.white)
+//                                    .font(.system(size: 20))
+//                                    .background(Color .black)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                                    .opacity(0.70)
+                                
+                            })
+                            
+                            
+                            
+                            
+                            
+                            
+                        }
 //                        NavigationLink(
 //                            destination: Impetus(user: user),
 //                            label: {
