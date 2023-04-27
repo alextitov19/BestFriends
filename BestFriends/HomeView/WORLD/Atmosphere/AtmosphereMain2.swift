@@ -108,7 +108,7 @@ struct AtmosphereMain2: View {
                             mood = 0
                         }) {
                             
-                            Text("Letting you know \nsomething happened \n\nNeed time alone \nbefore talking. \n\nSend me a \nCare Heart")
+                            Text("Letting you know \nsomething happened. \n\nSend me a \nCare Heart")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -180,9 +180,28 @@ struct AtmosphereMain2: View {
 //                            .fontWeight(.ultraLight)
 //                            .foregroundColor(ColorManager .grey4)
 //                            .multilineTextAlignment(.center)
+                        
+                                               
                     }
                     
                     VStack {
+                        
+          
+                        
+                        Text("I need some")
+                          .italic()
+                          .font(.system(size: 20))
+                          .fontWeight(.light)
+                          .multilineTextAlignment(.center)
+                          .foregroundColor(ColorManager .grey3)
+                        
+                        Text("time alone first")
+                          .italic()
+                          .font(.system(size: 20))
+                          .fontWeight(.light)
+                          .multilineTextAlignment(.center)
+                          .foregroundColor(ColorManager .grey3)
+                        
                         
                         ZStack {
                         Image(systemName: "heart.fill")
@@ -260,7 +279,7 @@ struct AtmosphereMain2: View {
                         }) {
                             Spacer()
                                 .frame(width: 10)
-                            Text("Need to talk, NOW! \n\nMeet in Chat")
+                            Text("Ready to talk, NOW! \n\nMeet in Chat")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
