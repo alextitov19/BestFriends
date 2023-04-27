@@ -87,7 +87,7 @@ struct AtmosphereMain2: View {
                 HStack {
                     
                     
-                    Text("Alert \nSeverity")
+                    Text("")
                         .font(.system(size: 30))
                         .fontWeight(.ultraLight)
                         .foregroundColor(ColorManager .grey1)
@@ -108,7 +108,7 @@ struct AtmosphereMain2: View {
                             mood = 0
                         }) {
                             
-                            Text("Letting you know \nsomething happened. \n\nSend me a \nCare Heart")
+                            Text("Just letting you know \nsomething happened. \n\n Need some time. \n\nSend me a \nCare Heart")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -279,9 +279,16 @@ struct AtmosphereMain2: View {
                         }) {
                             Spacer()
                                 .frame(width: 10)
+                            
                             Text("Ready to talk, NOW! \n\nMeet in Chat")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
+                            
+                         
+                            
+                            
+                            
+                            
                         }
                         .frame(width: 100, height: 80, alignment: .center)
                         .background(mood == 6 ? Color(.systemYellow) : Color .yellow)
@@ -294,6 +301,24 @@ struct AtmosphereMain2: View {
                         
                         HStack {
                             
+//                            VStack {
+//
+//                                Button(action: {
+//                                    sessionManager.showLogin()
+//                                },
+//                                       label: {
+//                                    Image("home-alt2")
+//                                        .frame(width: 50, height: 25)
+//                                        .foregroundColor(.white)
+//                                        .font(.system(size: 20))
+//                                        .background(Color .black)
+//                                        .cornerRadius(15)
+//                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                                        .opacity(0.70)
+//
+//                                })
+//
+//                            }
                             Button(action: {
                                 sessionManager.showLogin()
                             },
@@ -555,56 +580,56 @@ struct AtmosphereMain2: View {
                             .frame(height: 120)
                         
                         
-                       
-                        
-                        HStack {
-                            
-                            Button(action: {
-                                sessionManager.showLogin()
-                            },
-                                   label: {
-                                Image("FaceTime")
-                                    .frame(width: 5, height: 5)
-                            })
-                                Spacer()
-                                    .frame(width: 35)
-                            
-                            //
-                            Button(action: {
-                                sessionManager.showLogin()
-                            },
-                                   label: {
-                                Image("home-alt2")
-                                    .frame(width: 50, height: 25)
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 20))
-                                    .background(Color .black)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                    .opacity(0.70)
-                                
-                            })
-                            
-                            Spacer()
-                                .frame(width: 35)
-                            
-                            
-                            Button(action: {
-                                sessionManager.showLogin()
-                            },
-                                   label: {
-                                Image("download")
-                                    .frame(width: 5, height: 5)
+//
+//
+//                        HStack {
+//
+//                            Button(action: {
+//                                sessionManager.showLogin()
+//                            },
+//                                   label: {
+//                                Image("FaceTime")
+//                                    .frame(width: 5, height: 5)
+//                            })
+//                                Spacer()
+//                                    .frame(width: 35)
+//
+//                            //
+//                            Button(action: {
+//                                sessionManager.showLogin()
+//                            },
+//                                   label: {
+//                                Image("home-alt2")
+//                                    .frame(width: 50, height: 25)
 //                                    .foregroundColor(.white)
 //                                    .font(.system(size: 20))
 //                                    .background(Color .black)
 //                                    .cornerRadius(15)
 //                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
 //                                    .opacity(0.70)
-                                
-                            })
-                           
-                        }
+//
+//                            })
+//
+//                            Spacer()
+//                                .frame(width: 35)
+//
+//
+//                            Button(action: {
+//                                sessionManager.showLogin()
+//                            },
+//                                   label: {
+//                                Image("download")
+//                                    .frame(width: 5, height: 5)
+////                                    .foregroundColor(.white)
+////                                    .font(.system(size: 20))
+////                                    .background(Color .black)
+////                                    .cornerRadius(15)
+////                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+////                                    .opacity(0.70)
+//
+//                            })
+//
+//                        }
 //                        NavigationLink(
 //                            destination: Impetus(user: user),
 //                            label: {
