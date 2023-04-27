@@ -111,7 +111,7 @@ struct TestPage: View {
                             NavigationLink( destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                             //                               destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                             label: {
-                                Text("Getting you Emotional Support")
+                                Text("Getting your Emotional Support")
                                     .fontWeight(.thin)
                                     .frame(width: 320, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
