@@ -108,7 +108,7 @@ struct AtmosphereMain2: View {
                             mood = 0
                         }) {
                             
-                            Text("Just letting you know \nsomething happened. \n\n Need some time. \n\nSend me a \nCare Heart")
+                            Text("Just letting you know \nsomething happened. \n\n Need some time first. \n\nSend me a \nCare Heart")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -188,16 +188,30 @@ struct AtmosphereMain2: View {
                         
           
                         
-                        Text("I need some")
+                        Text("Just you & friends in")
                           .italic()
-                          .font(.system(size: 20))
+                          .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
                           .foregroundColor(ColorManager .grey3)
                         
-                        Text("time alone first in:")
+                        Text("the quiet of your room")
                           .italic()
-                          .font(.system(size: 20))
+                          .font(.system(size: 14))
+                          .fontWeight(.light)
+                          .multilineTextAlignment(.center)
+                          .foregroundColor(ColorManager .grey3)
+                        
+                        Text("helping shelter you")
+                          .italic()
+                          .font(.system(size: 13))
+                          .fontWeight(.light)
+                          .multilineTextAlignment(.center)
+                          .foregroundColor(ColorManager .grey3)
+                        
+                        Text("from the wreckage")
+                          .italic()
+                          .font(.system(size: 13))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
                           .foregroundColor(ColorManager .grey3)
@@ -280,7 +294,7 @@ struct AtmosphereMain2: View {
                             Spacer()
                                 .frame(width: 10)
                             
-                            Text("Ready to talk, NOW! \n\nMeet in Chat")
+                            Text("Ready to talk")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                             
