@@ -195,7 +195,7 @@ struct AtmosphereMain2: View {
                           .multilineTextAlignment(.center)
                           .foregroundColor(ColorManager .grey3)
                         
-                        Text("time alone first")
+                        Text("time alone first in:")
                           .italic()
                           .font(.system(size: 20))
                           .fontWeight(.light)
