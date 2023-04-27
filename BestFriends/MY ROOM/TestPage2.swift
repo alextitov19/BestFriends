@@ -97,22 +97,35 @@ struct TestPage2: View {
 //
                         NavigationLink( destination: TestPage(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
-                                Text("Alert friends to Severity")
+                                Text("Let's let them know when \nwe'll be ready to talk")
                                     .fontWeight(.thin)
-                                    .frame(width: 290, height: 40)
+                                    .frame(width: 290, height: 80)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 23))
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
-
-                        Text("they can't help - if they don't know!")
-                           .font(.system(size: 20))
+//
+//                        Text("they can't help - if they don't know!")
+//                           .font(.system(size: 20))
+//                           .italic()
+//                           .fontWeight(.light)
+//                           .multilineTextAlignment(.center)
+//                           .foregroundColor(ColorManager .grey3)
+                        
+                        
+                        Spacer ()
+                             .frame(height: 20)
+                        
+                        Text("Remember; \nit's OK letting the outside of you \nmatch the inside of you on BF")
                            .italic()
+                           .font(.system(size: 20))
                            .fontWeight(.light)
                            .multilineTextAlignment(.center)
                            .foregroundColor(ColorManager .grey3)
+                        
+                        
                         
                         Spacer ()
                              .frame(height: 100)

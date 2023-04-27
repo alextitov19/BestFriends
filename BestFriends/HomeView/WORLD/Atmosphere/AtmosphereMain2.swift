@@ -81,7 +81,8 @@ struct AtmosphereMain2: View {
             
             
             VStack {
-       
+                Spacer()
+                    .frame(height: 100)
                 
                 HStack {
                     
@@ -112,7 +113,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 130, alignment: .center)
-                        .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
+                        .background(mood == 0 ? Color(.cyan) : Color .blue)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -259,18 +260,67 @@ struct AtmosphereMain2: View {
                         }) {
                             Spacer()
                                 .frame(width: 10)
-                            Text("Need to talk, NOW! \n\nMeet in Chat \nor \nFactTime me.")
+                            Text("Need to talk, NOW! \n\nMeet in Chat")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
-                        .frame(width: 80, height: 130, alignment: .center)
-                        .background(mood == 6 ? Color(.systemYellow) : ColorManager .orange4)
+                        .frame(width: 100, height: 80, alignment: .center)
+                        .background(mood == 6 ? Color(.systemYellow) : Color .yellow)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
                         
                         Spacer()
-                            .frame(height: 12)
+                            .frame(height: 25)
+                        
+                        HStack {
+                            
+                            Button(action: {
+                                sessionManager.showLogin()
+                            },
+                                   label: {
+                                Image("FaceTime")
+                                    .frame(width: 5, height: 5)
+                            })
+                                Spacer()
+                                    .frame(width: 15)
+                            
+                            //
+                            Button(action: {
+                                sessionManager.showLogin()
+                            },
+                                   label: {
+                                Image("home-alt2")
+                                    .frame(width: 50, height: 25)
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 20))
+                                    .background(Color .black)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                    .opacity(0.70)
+                                
+                            })
+                            
+                            Spacer()
+                                .frame(width: 15)
+                            
+                            
+                            Button(action: {
+                                sessionManager.showLogin()
+                            },
+                                   label: {
+                                Image("download")
+                                    .frame(width: 5, height: 5)
+//                                    .foregroundColor(.white)
+//                                    .font(.system(size: 20))
+//                                    .background(Color .black)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                                    .opacity(0.70)
+                                
+                            })
+                           
+                        }
 //
 //                        Button(action: {
 //                            mood = 7
@@ -483,7 +533,7 @@ struct AtmosphereMain2: View {
                         .confettiCannon(counter: $counter)
                         
                         Spacer()
-                            .frame(height: 25)
+                            .frame(height: 120)
                         
                         
                        
@@ -498,7 +548,7 @@ struct AtmosphereMain2: View {
                                     .frame(width: 5, height: 5)
                             })
                                 Spacer()
-                                    .frame(width: 20)
+                                    .frame(width: 35)
                             
                             //
                             Button(action: {
@@ -517,7 +567,7 @@ struct AtmosphereMain2: View {
                             })
                             
                             Spacer()
-                                .frame(width: 20)
+                                .frame(width: 35)
                             
                             
                             Button(action: {
@@ -534,12 +584,7 @@ struct AtmosphereMain2: View {
 //                                    .opacity(0.70)
                                 
                             })
-                            
-                            
-                            
-                            
-                            
-                            
+                           
                         }
 //                        NavigationLink(
 //                            destination: Impetus(user: user),

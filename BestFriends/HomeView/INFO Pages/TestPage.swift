@@ -100,7 +100,7 @@ struct TestPage: View {
 //
 //
                            Spacer ()
-                                .frame(height: 75)
+                                .frame(height: 85)
 
                     }
                 }
