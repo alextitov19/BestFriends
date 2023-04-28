@@ -108,7 +108,7 @@ struct TestPage2: View {
                         //
                         NavigationLink( destination: TestPage(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                         label: {
-                            Text("Let's let them know when \nyou'll be ready to talk")
+                            Text("Let them know when \nyou'll be ready to talk")
                                 .fontWeight(.thin)
                                 .frame(width: 290, height: 80)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
