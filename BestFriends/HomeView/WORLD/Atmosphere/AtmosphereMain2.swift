@@ -193,14 +193,14 @@ struct AtmosphereMain2: View {
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
-                          .foregroundColor(ColorManager .grey3)
+                          .foregroundColor(ColorManager .grey2)
                         
                         Text("quiet safety of ...")
                           .italic()
-                          .font(.system(size: 14))
+                          .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
-                          .foregroundColor(ColorManager .grey3)
+                          .foregroundColor(ColorManager .grey2)
                         
 //                        Text("My Room")
 //                          .italic()
