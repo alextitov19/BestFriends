@@ -108,7 +108,7 @@ struct AtmosphereMain2: View {
                             mood = 0
                         }) {
                             
-                            Text("Just letting you know \nsomething happened. \n\n Need some time first. \n\nSend me a \nCare Heart")
+                            Text("Just letting you know \nsomething happened. \n\n Need some time alone first. \n\nSend me a \nCare Heart")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -171,7 +171,7 @@ struct AtmosphereMain2: View {
                     }
                     
                     Spacer()
-                        .frame(width: 20)
+                        .frame(width: 50)
                     
                     VStack {
                         
@@ -188,33 +188,33 @@ struct AtmosphereMain2: View {
                         
           
                         
-                        Text("Just you & friends in")
+                        Text("Hiding out in the")
                           .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
                           .foregroundColor(ColorManager .grey3)
                         
-                        Text("the quiet of your room")
+                        Text("quiet safety of ...")
                           .italic()
                           .font(.system(size: 14))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
                           .foregroundColor(ColorManager .grey3)
                         
-                        Text("helping shelter you")
-                          .italic()
-                          .font(.system(size: 13))
-                          .fontWeight(.light)
-                          .multilineTextAlignment(.center)
-                          .foregroundColor(ColorManager .grey3)
-                        
-                        Text("from the wreckage")
-                          .italic()
-                          .font(.system(size: 13))
-                          .fontWeight(.light)
-                          .multilineTextAlignment(.center)
-                          .foregroundColor(ColorManager .grey3)
+//                        Text("My Room")
+//                          .italic()
+//                          .font(.system(size: 13))
+//                          .fontWeight(.light)
+//                          .multilineTextAlignment(.center)
+//                          .foregroundColor(ColorManager .grey3)
+//
+//                        Text("from the wreckage")
+//                          .italic()
+//                          .font(.system(size: 13))
+//                          .fontWeight(.light)
+//                          .multilineTextAlignment(.center)
+//                          .foregroundColor(ColorManager .grey3)
                         
                         
                         ZStack {
@@ -287,29 +287,29 @@ struct AtmosphereMain2: View {
                         .frame(width: 20)
                     
                     VStack {
-                        
-                        Button(action: {
-                            mood = 6
-                        }) {
-                            Spacer()
-                                .frame(width: 10)
-                            
-                            Text("Ready to talk")
-                                .font(.system(size: 10))
-                                .foregroundColor(Color.black)
-                            
-                         
-                            
-                            
-                            
-                            
-                        }
-                        .frame(width: 100, height: 80, alignment: .center)
-                        .background(mood == 6 ? Color(.systemYellow) : Color .yellow)
-                        .cornerRadius(7)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
-                        
+//
+//                        Button(action: {
+//                            mood = 6
+//                        }) {
+//                            Spacer()
+//                                .frame(width: 10)
+//
+//                            Text("Ready to talk")
+//                                .font(.system(size: 10))
+//                                .foregroundColor(Color.black)
+//
+//
+//
+//
+//
+//
+//                        }
+//                        .frame(width: 100, height: 80, alignment: .center)
+//                        .background(mood == 6 ? Color(.systemYellow) : Color .yellow)
+//                        .cornerRadius(7)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//
                         Spacer()
                             .frame(height: 25)
                         
@@ -333,50 +333,50 @@ struct AtmosphereMain2: View {
 //                                })
 //
 //                            }
-                            Button(action: {
-                                sessionManager.showLogin()
-                            },
-                                   label: {
-                                Image("FaceTime")
-                                    .frame(width: 5, height: 5)
-                            })
-                                Spacer()
-                                    .frame(width: 15)
-                            
-                            //
-                            Button(action: {
-                                sessionManager.showLogin()
-                            },
-                                   label: {
-                                Image("home-alt2")
-                                    .frame(width: 50, height: 25)
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 20))
-                                    .background(Color .black)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                    .opacity(0.70)
-                                
-                            })
-                            
-                            Spacer()
-                                .frame(width: 15)
-                            
-                            
-                            Button(action: {
-                                sessionManager.showLogin()
-                            },
-                                   label: {
-                                Image("download")
-                                    .frame(width: 5, height: 5)
+//                            Button(action: {
+//                                sessionManager.showLogin()
+//                            },
+//                                   label: {
+//                                Image("FaceTime")
+//                                    .frame(width: 5, height: 5)
+//                            })
+//                                Spacer()
+//                                    .frame(width: 15)
+//
+//                            //
+//                            Button(action: {
+//                                sessionManager.showLogin()
+//                            },
+//                                   label: {
+//                                Image("home-alt2")
+//                                    .frame(width: 50, height: 25)
 //                                    .foregroundColor(.white)
 //                                    .font(.system(size: 20))
 //                                    .background(Color .black)
 //                                    .cornerRadius(15)
 //                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
 //                                    .opacity(0.70)
-                                
-                            })
+//
+//                            })
+//
+//                            Spacer()
+//                                .frame(width: 15)
+//
+//
+//                            Button(action: {
+//                                sessionManager.showLogin()
+//                            },
+//                                   label: {
+//                                Image("download")
+//                                    .frame(width: 5, height: 5)
+////                                    .foregroundColor(.white)
+////                                    .font(.system(size: 20))
+////                                    .background(Color .black)
+////                                    .cornerRadius(15)
+////                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+////                                    .opacity(0.70)
+//
+//                            })
                            
                         }
 //

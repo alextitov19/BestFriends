@@ -355,8 +355,9 @@ struct PlanetActionsView: View {
                         
 //                        TestPage(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups)
                         
+//                        BuiltForTeens(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
 
-                        NavigationLink(destination: BuiltForTeens(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        NavigationLink(destination: TestPage(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
                             
                             
@@ -373,9 +374,9 @@ struct PlanetActionsView: View {
                          
                                                      
                                     
-                                    Text("coming \nsoon")
+                                    Text("FriendGroup \nRoom")
                                         .foregroundColor(ColorManager .purple3)
-                                        .font(.system(size: 20, weight: .regular))
+                                        .font(.system(size: 19, weight: .regular))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     

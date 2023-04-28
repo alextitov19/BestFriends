@@ -75,7 +75,7 @@ struct TestPage2: View {
                     .foregroundColor(ColorManager .grey3)
                 
                 Spacer ()
-                    .frame(height: 90)
+                    .frame(height: 145)
                 
                 ZStack {
                     //
@@ -106,7 +106,11 @@ struct TestPage2: View {
                         //
                         //                                   AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
                         //
-                        NavigationLink( destination: TestPage(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        
+//                        TestPage(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
+                        
+                        
+                        NavigationLink( destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                         label: {
                             Text("Let them know when \nyou'll be ready to talk")
                                 .fontWeight(.thin)
