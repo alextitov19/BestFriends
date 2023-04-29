@@ -99,7 +99,11 @@ struct TestPage: View {
                             .foregroundColor(ColorManager .purple1)
                         
                         
-                        
+                        Text("with your friends")
+                            .font(.system(size: 35))
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager .purple1)
                         
                         Spacer ()
                             .frame(height: 100)
@@ -121,7 +125,7 @@ struct TestPage: View {
                             NavigationLink( destination: BuiltForTeens(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                             //                               destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                             label: {
-                                Text("Emotional support from friends")
+                                Text("Connect with friends")
                                     .fontWeight(.thin)
                                     .frame(width: 320, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -135,21 +139,21 @@ struct TestPage: View {
                             Spacer ()
                                 .frame(height: 20)
                             
-                            Text("pulled from the wreckage")
+                            Text("'Pulled from the wreckage")
                                 .font(.system(size: 17))
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(ColorManager .purple1)
                             
                             
-                            Text("of your silent reverie --")
+                            Text("of your silent reverie.'")
                                 .font(.system(size: 17))
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(ColorManager .purple1)
                             
                             
-                            Text("Sarah McLachlan")
+                            Text("-- Sarah McLachlan")
                                 .font(.system(size: 12))
                                 .italic()
                                 .fontWeight(.thin)

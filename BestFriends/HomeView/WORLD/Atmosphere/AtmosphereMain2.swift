@@ -188,14 +188,14 @@ struct AtmosphereMain2: View {
                         
           
                         
-                        Text("Hiding out in the")
+                        Text("Sit quietly in the")
                           .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
                           .foregroundColor(ColorManager .grey2)
                         
-                        Text("quiet safety of ...")
+                        Text("safety of your room")
                           .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)

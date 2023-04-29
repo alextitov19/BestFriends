@@ -94,7 +94,14 @@ struct TestPage2: View {
                         Spacer ()
                             .frame(height: 20)
                         
-                        Text("your friends care and want to help")
+                        Text("your friends care and want to give you")
+                            .font(.system(size: 20))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager .grey3)
+                        
+                        Text("emotional support")
                             .font(.system(size: 20))
                             .italic()
                             .fontWeight(.light)
