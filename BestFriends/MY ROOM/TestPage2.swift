@@ -131,16 +131,15 @@ struct TestPage2: View {
                         
                         VStack {
                             
-                            
                             Spacer ()
                                 .frame(height: 20)
                             
-//                            Text("Remember; \n\nin BF's your safe to ... ")
-//                                .italic()
-//                                .font(.system(size: 20))
-//                                .fontWeight(.light)
-//                                .multilineTextAlignment(.center)
-//                                .foregroundColor(ColorManager .grey3)
+                            Text("friendships leading the way")
+                                .font(.system(size: 20))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager .grey3)
                             
                     
                             
