@@ -140,7 +140,7 @@ struct MyRoomInfo: View {
                 
                 
                                 NavigationLink(destination: EmptyView(), label: {
-                                    MyRoomCircle (color: Color .white, friendName: "a quiet \nfix")
+                                    MyRoomCircle (color: Color .white, friendName: "my \njournal")
                                 })
                                 .offset(x: showItems ? -50 : 0, y: showItems ? 270: 0)
                                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
