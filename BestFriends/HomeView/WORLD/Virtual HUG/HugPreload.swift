@@ -25,22 +25,22 @@ struct HugPreload: View {
     var body: some View {
         
         ZStack {
-            //
-            //            ColorManager.purple1
-            //                .ignoresSafeArea()
-            //                .onAppear()
+            
+                        Color .black
+                            .ignoresSafeArea()
+                            .onAppear()
+                            .scaledToFill()
+            
+//
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+//                .opacity(0.5)
+//
             
             
-            
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-                .opacity(0.5)
-            
-            
-            
-            AdPlayerView(name: "AloneBeach")
+            AdPlayerView(name: "CareHeart")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
@@ -159,7 +159,7 @@ struct HugPreload: View {
                         
                         
                         
-                        Image(systemName: "circle.fill")
+                        Image(systemName: "heart.fill")
                             .resizable()
                             .foregroundColor(ColorManager .purple1)
                             .frame(width: 250, height: 200)
