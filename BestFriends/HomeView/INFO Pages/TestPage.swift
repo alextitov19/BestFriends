@@ -37,7 +37,7 @@ struct TestPage: View {
                 .ignoresSafeArea()
             
             
-            AdPlayerView(name: "sky2")
+            AdPlayerView(name: "SlowBlue")
                 .ignoresSafeArea()
             
             
