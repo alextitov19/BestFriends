@@ -154,7 +154,7 @@ struct TestPage2: View {
                             
                             
                             Spacer ()
-                                .frame(height: 100)
+                                .frame(height: 200)
                             
                             
 //                            NavigationLink( destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
