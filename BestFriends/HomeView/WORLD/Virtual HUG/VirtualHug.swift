@@ -12,7 +12,7 @@ import SwiftUI
 import AudioToolbox
 
 struct VirtualHug: View {
-    @State private var engine: CHHapticEngine?
+//    @State private var engine: CHHapticEngine?
 
     @EnvironmentObject var sessionManager: SessionManager
     
