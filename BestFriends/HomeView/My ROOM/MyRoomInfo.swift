@@ -71,21 +71,21 @@ struct MyRoomInfo: View {
                 
                 
                                 NavigationLink(destination: AtmosphereInfo1(user: user, atmosphere: atmosphere, friends: friends), label: {
-                                    MyRoomCircle (color: Color .white, friendName: "you are \nnot alone")
+                                    MyRoomCircle (color: Color .green, friendName: "ready to \nCHAT")
                                 })
                                 .offset(x: showItems ? 100 : 0, y: showItems ? 150: 0)
                                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                                .opacity(0.4)
+                                .opacity(0.8)
                 
                 
                 
                 
                                 NavigationLink(destination: HugPushNotification3(user: user, friends: friends), label: {
-                                    MyRoomCircle (color: ColorManager .grey1, friendName: "need a hug")
+                                    MyRoomCircle (color: ColorManager .grey1, friendName: "request \na hug")
                                 })
                                 .offset(x: showItems ? 0 : 0, y: showItems ? -170: 0)
                                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                                .opacity(0.25)
+                                .opacity(0.4)
                 
                 
                 
@@ -104,7 +104,7 @@ struct MyRoomInfo: View {
                                 })
                                 .offset(x: showItems ? -120 : 0, y: showItems ? -120: 0)
                                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                                .opacity(0.25)
+                                .opacity(0.4)
                 
                 
                 
@@ -132,7 +132,7 @@ struct MyRoomInfo: View {
                 
                 
                                 NavigationLink(destination: EmptyView(), label: {
-                                    MyRoomCircle (color: Color .white, friendName: "send a song")
+                                    MyRoomCircle (color: Color .white, friendName: "send me \na song")
                                 })
                                 .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
                                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
@@ -140,11 +140,11 @@ struct MyRoomInfo: View {
                 
                 
                                 NavigationLink(destination: EmptyView(), label: {
-                                    MyRoomCircle (color: Color .white, friendName: "my \njournal")
+                                    MyRoomCircle (color: ColorManager .purple4, friendName: "my \njournal")
                                 })
                                 .offset(x: showItems ? -50 : 0, y: showItems ? 270: 0)
                                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                                .opacity(0.4)
+                                .opacity(0.8)
             
                 
                 
