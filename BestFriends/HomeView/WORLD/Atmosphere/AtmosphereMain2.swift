@@ -445,19 +445,26 @@ struct AtmosphereMain2: View {
                         .frame(height: 40)
                     
                     ZStack {
-                        Rectangle()
-                            .frame(width:335, height: 35)
-                            .cornerRadius(10)
-                            .foregroundColor(ColorManager .grey3)
-//                            .backgroundColor(ColorManager .grey3)
-                            .opacity(0.5)
+//                        Rectangle()
+//                            .frame(width:335, height: 35)
+//                            .cornerRadius(10)
+//                            .foregroundColor(ColorManager .grey3)
+////                            .backgroundColor(ColorManager .grey3)
+//                            .opacity(0.5)
+//
+//                        TextField("(What's up? Start your chat thread ...", text: $summary)
+//                            .font(.system(size: 17))
+//                            .foregroundColor(ColorManager.grey1)
+//                            .padding(.horizontal, 55)
+//                            .onReceive(Just(summary)) { _ in limitText(45) }
                         
-                        TextField("(What's up? Start your chat thread ...", text: $summary)
-                            .font(.system(size: 17))
-                            .foregroundColor(ColorManager.grey1)
-                            .padding(.horizontal, 55)
-                            .onReceive(Just(summary)) { _ in limitText(45) }
                         
+                                                Text("Tap Circle of friends you want to let know")
+                                                  .italic()
+                                                  .font(.system(size: 17))
+                                                  .fontWeight(.light)
+                                                  .multilineTextAlignment(.center)
+                                                  .foregroundColor(ColorManager .grey3)
                         
                     }
                     
