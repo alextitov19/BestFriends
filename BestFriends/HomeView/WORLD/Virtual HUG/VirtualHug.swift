@@ -42,27 +42,27 @@ struct VirtualHug: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.black)
                 
-                Text("for a love tap")
+                Text("hold iPhone to your heart")
                     .font(.system(size: 30))
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.black)
                 
                 
-                Text("*coming soon: hold phone to heart,")
-                    .font(.system(size: 19))
-                    .italic()
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey4)
-                
-                
-                Text("it will vibrate for 3 seconds")
-                    .font(.system(size: 19))
-                    .italic()
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey4)
+//                Text("*coming soon: hold phone to heart,")
+//                    .font(.system(size: 19))
+//                    .italic()
+//                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(ColorManager .grey4)
+//
+//
+//                Text("it will vibrate for 3 seconds")
+//                    .font(.system(size: 19))
+//                    .italic()
+//                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(ColorManager .grey4)
                 
                 
                 Spacer()
