@@ -108,11 +108,11 @@ struct AtmosphereMain2: View {
                             mood = 0
                         }) {
                             
-                            Text("Just letting you know \nsomething happened. \n\n Need some time alone first. \n\nSend me a \nCare Heart")
+                            Text("Send me a \nCare Heart")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
-                        .frame(width: 80, height: 130, alignment: .center)
+                        .frame(width: 80, height: 80, alignment: .center)
                         .background(mood == 0 ? Color(.cyan) : Color .blue)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -466,6 +466,13 @@ struct AtmosphereMain2: View {
                                                   .multilineTextAlignment(.center)
                                                   .foregroundColor(ColorManager .grey3)
                         
+                        Text("but that you are not ready to talk yet!")
+                          .italic()
+                          .font(.system(size: 17))
+                          .fontWeight(.light)
+                          .multilineTextAlignment(.center)
+                          .foregroundColor(ColorManager .grey3)
+                        
                     }
                     
                     
@@ -590,7 +597,7 @@ struct AtmosphereMain2: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("friends will get push notification - \n\n'Blue' atmospher around your planet tells them \nyou need some time first \n\n'Yellow' means you want to talk now", isPresented: $showingAlert) {
+                                .alert("friends will get push notification - \n\n'Blue' atmospher around your planet tells them \nsomething happenedm but \nyou need some time first", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
@@ -692,7 +699,7 @@ struct AtmosphereMain2: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "Something happened to \(user.firstName) changing their 'Vibe'. Please check on them. ", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "Something happened to \(user.firstName) changing their 'Vibe'. Send them a Care Heart. ", APNToken: f.APNToken)
                 }
             }
         }

@@ -141,7 +141,7 @@ struct TestPage2: View {
                             Spacer ()
                                 .frame(height: 20)
                             
-                            Text("friendships leading the way")
+                            Text("friends to the rescue")
                                 .font(.system(size: 20))
                                 .italic()
                                 .fontWeight(.light)
