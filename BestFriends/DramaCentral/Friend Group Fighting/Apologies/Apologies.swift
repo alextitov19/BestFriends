@@ -91,7 +91,7 @@ struct Apologies: View {
                             
                             destination: ShaylaPage(user: user),
                             label: {
-                                Text("Envisioned by Teens")
+                                Text("Built by Teens")
                                     .fontWeight(.light)
                                     .foregroundColor(Color.white)
                                     .frame(width: 230, height: 60)
