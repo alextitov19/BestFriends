@@ -101,22 +101,55 @@ struct AtmosphereMain2: View {
            
                 HStack {
                     VStack {
+             
                         
                         
+                        Text("Send me a")
+                          .italic()
+                          .font(.system(size: 15))
+                          .fontWeight(.light)
+                          .multilineTextAlignment(.center)
+                          .foregroundColor(ColorManager .grey2)
+                        
+                        Text("Care Heart")
+                          .italic()
+                          .font(.system(size: 15))
+                          .fontWeight(.light)
+                          .multilineTextAlignment(.center)
+                          .foregroundColor(ColorManager .grey2)
                         
                         Button(action: {
                             mood = 0
                         }) {
                             
-                            Text("Send me a \nCare Heart")
-                                .font(.system(size: 10))
-                                .foregroundColor(Color.black)
+                            ZStack {
+                                Image(systemName: "heart.fill")
+                                    .resizable()
+                                    .foregroundColor(ColorManager .purple1)
+                                    .frame(width: 100, height: 80)
+                                    .cornerRadius(30)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                                
+                                Text("tap")
+                                    .fontWeight(.thin)
+                                    .frame(width: 70, height: 37)
+                                    .foregroundColor(ColorManager .purple7)
+                                    .font(.system(size: 20))
+                                    .background(ColorManager .purple1)
+                                    .cornerRadius(10)
+                                    .opacity(0.95)
+                                
+                                //                            Text("Send me a \nCare Heart")
+                                //                                .font(.system(size: 10))
+                                //                                .foregroundColor(Color.black)
+                            }
+                            .frame(width: 120, height: 90, alignment: .center)
+                           
+                            .background(mood == 0 ? Color(.cyan) : ColorManager .purple5)
+                            .cornerRadius(37)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         }
-                        .frame(width: 80, height: 80, alignment: .center)
-                        .background(mood == 0 ? Color(.cyan) : Color .blue)
-                        .cornerRadius(7)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
                         
 //                        Spacer()
 //                            .frame(height: 12)
@@ -220,7 +253,7 @@ struct AtmosphereMain2: View {
                         ZStack {
                         Image(systemName: "heart.fill")
                             .resizable()
-                            .foregroundColor(ColorManager .purple1)
+                            .foregroundColor(Color .white)
                             .frame(width: 100, height: 80)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -230,11 +263,11 @@ struct AtmosphereMain2: View {
                         NavigationLink(
                             destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
-                                Text("My \nRoom")
+                                Text("tap")
                                     .fontWeight(.thin)
                                     .frame(width: 70, height: 37)
                                     .foregroundColor(ColorManager .purple7)
-                                    .font(.system(size: 12))
+                                    .font(.system(size: 20))
                                     .background(ColorManager .purple1)
                                     .cornerRadius(10)
                                     .opacity(0.95)
@@ -445,36 +478,36 @@ struct AtmosphereMain2: View {
                         .frame(height: 40)
                     
                     ZStack {
-//                        Rectangle()
-//                            .frame(width:335, height: 35)
-//                            .cornerRadius(10)
-//                            .foregroundColor(ColorManager .grey3)
-////                            .backgroundColor(ColorManager .grey3)
-//                            .opacity(0.5)
-//
-//                        TextField("(What's up? Start your chat thread ...", text: $summary)
-//                            .font(.system(size: 17))
-//                            .foregroundColor(ColorManager.grey1)
-//                            .padding(.horizontal, 55)
-//                            .onReceive(Just(summary)) { _ in limitText(45) }
-                        
-                        
-                                                Text("Tap Circle of friends you want to let know")
-                                                  .italic()
-                                                  .font(.system(size: 17))
-                                                  .fontWeight(.light)
-                                                  .multilineTextAlignment(.center)
-                                                  .foregroundColor(ColorManager .grey3)
-                        
-                        Text("but that you are not ready to talk yet!")
-                          .italic()
-                          .font(.system(size: 17))
-                          .fontWeight(.light)
-                          .multilineTextAlignment(.center)
-                          .foregroundColor(ColorManager .grey3)
-                        
+                        //                        Rectangle()
+                        //                            .frame(width:335, height: 35)
+                        //                            .cornerRadius(10)
+                        //                            .foregroundColor(ColorManager .grey3)
+                        ////                            .backgroundColor(ColorManager .grey3)
+                        //                            .opacity(0.5)
+                        //
+                        //                        TextField("(What's up? Start your chat thread ...", text: $summary)
+                        //                            .font(.system(size: 17))
+                        //                            .foregroundColor(ColorManager.grey1)
+                        //                            .padding(.horizontal, 55)
+                        //                            .onReceive(Just(summary)) { _ in limitText(45) }
+                        VStack {
+                            
+                            Text("Tap Circle of friends you want to let know")
+                                .italic()
+                                .font(.system(size: 17))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager .grey3)
+                            
+                            Text("but that you are not ready to talk yet!")
+                                .italic()
+                                .font(.system(size: 17))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager .grey3)
+                            
+                        }
                     }
-                    
                     
                     HStack {
                         
