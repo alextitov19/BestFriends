@@ -86,7 +86,7 @@ struct MyRoomInfo: View {
                 
                 
                 NavigationLink(destination: AtmosphereInfo1(user: user, atmosphere: atmosphere, friends: friends), label: {
-                    MyRoomCircle (color: Color .white, friendName: "requestna song")
+                    MyRoomCircle (color: Color .white, friendName: "request \na song")
                 })
                 .offset(x: showItems ? 100 : 0, y: showItems ? 150: 0)
                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
@@ -147,7 +147,7 @@ struct MyRoomInfo: View {
                 
                 
                 NavigationLink(destination: EmptyView(), label: {
-                    MyRoomCircle (color: Color .green, friendName: "ready to \nCHAT")
+                    MyRoomCircle (color: Color .purple, friendName: "MyRoom \nTAP")
                 })
                 .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
@@ -179,6 +179,15 @@ struct MyRoomInfo: View {
                     .offset(x: showItems ? -50 : 0, y: showItems ? 270: 0)
                     .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
                     .opacity(0.8)
+                    
+                    
+                    
+                                            Text("Ready to Chat")
+                                              
+                                              .font(.system(size: 15))
+                                              .fontWeight(.light)
+                                              .multilineTextAlignment(.center)
+                                              .foregroundColor(ColorManager .grey3)
                     
                     
                     Button(action: {
