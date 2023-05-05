@@ -212,7 +212,7 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
                                 
-                                    Text("that \nHurt!")
+                                    Text("Alert!")
                                         .foregroundColor(ColorManager .purple3)
                                         .font(.system(size: 20, weight: .regular))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
