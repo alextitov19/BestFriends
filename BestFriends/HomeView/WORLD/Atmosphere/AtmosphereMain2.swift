@@ -636,7 +636,7 @@ struct AtmosphereMain2: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("friends will get push notification - \n\n'Blue' atmospher around your planet tells them \nsomething happenedm but \nyou need some time first", isPresented: $showingAlert) {
+                                .alert("Your friend(s) were notified. \n\nThey will send you Care Hearts for Emotional Support. \n\n'Blue' atmosphere around your planet indicates you need some time first.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
