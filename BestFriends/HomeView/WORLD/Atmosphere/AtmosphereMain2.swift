@@ -271,6 +271,12 @@ struct AtmosphereMain2: View {
                                     .background(ColorManager .purple1)
                                     .cornerRadius(10)
                                     .opacity(0.95)
+                                
+                                    .frame(width: 120, height: 90, alignment: .center)
+                                   
+                                    .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
+                                    .cornerRadius(37)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
                     }
                         
