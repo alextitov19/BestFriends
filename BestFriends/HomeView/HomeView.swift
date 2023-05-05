@@ -323,17 +323,17 @@ struct HomeView: View {
                             .frame(height: 15)
                         
                         HStack {
-//                            NavigationLink(destination: VirtualHug(),
-//                                           label: {
-//                                Text("awe, you've got a HUG")
-//                                    .fontWeight(.light)
-//                                    .frame(width: 255, height: 30)
-//                                    .foregroundColor(.white)
-//                                    .background(ColorManager .purple7)
-//                                    .cornerRadius(10)
-//                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                                    .opacity(0.5)
-//                            })
+                            NavigationLink(destination: VirtualHug(),
+                                           label: {
+                                Text("awe, you've got a HUG")
+                                    .fontWeight(.light)
+                                    .frame(width: 255, height: 30)
+                                    .foregroundColor(.white)
+                                    .background(ColorManager .purple7)
+                                    .cornerRadius(10)
+                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                    .opacity(0.5)
+                            })
 //
                         }
                         
