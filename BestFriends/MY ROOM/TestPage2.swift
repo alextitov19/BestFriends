@@ -68,14 +68,14 @@ struct TestPage2: View {
                 Spacer ()
                     .frame(height: 80)
                 
-                Text("But I'm not ready to talk")
+                Text("But your not ready to talk")
                     .font(.system(size: 25))
 //                    .italic()
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager .grey3)
                 
-                Text("to my friends yet")
+                Text("to your friends yet")
                     .font(.system(size: 25))
 //                    .italic()
                     .fontWeight(.thin)
@@ -86,7 +86,7 @@ struct TestPage2: View {
                     .frame(height: 10)
                 
                 
-                Text("I need some time to myself in")
+                Text("Just need some time to yourself in")
                     .font(.system(size: 25))
 //                    .italic()
                     .fontWeight(.thin)
@@ -137,7 +137,7 @@ struct TestPage2: View {
                    
                      
                         
-                        Text("your friends care and want to give you")
+                        Text("your friends want to give you")
                             .font(.system(size: 20))
                             .italic()
                             .fontWeight(.light)
@@ -146,6 +146,13 @@ struct TestPage2: View {
                         
                         Text("Emotional Support")
                             .font(.system(size: 30))
+//                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager .grey3)
+                        
+                        Text("while you're alone - because they care about you")
+                            .font(.system(size: 20))
 //                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
