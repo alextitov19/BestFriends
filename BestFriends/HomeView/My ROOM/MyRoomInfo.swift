@@ -147,7 +147,7 @@ struct MyRoomInfo: View {
                 
                 
                 NavigationLink(destination: EmptyView(), label: {
-                    MyRoomCircle (color: Color .purple, friendName: "TAP")
+                    MyRoomCircle (color: Color .purple, friendName: "We got you! \nTAP")
                 })
                 .offset(x: showItems ? 0 : 0, y: showItems ? 500: 0)
                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
