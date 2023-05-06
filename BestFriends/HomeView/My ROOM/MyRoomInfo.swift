@@ -90,7 +90,7 @@ struct MyRoomInfo: View {
                 })
                 .offset(x: showItems ? 100 : 0, y: showItems ? 150: 0)
                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                .opacity(0.8)
+                .opacity(0.6)
                 
                 
                 
@@ -100,7 +100,7 @@ struct MyRoomInfo: View {
                 })
                 .offset(x: showItems ? -120 : 0, y: showItems ? 10: 0)
                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                .opacity(0.4)
+                .opacity(0.6)
                 
                 
                 
@@ -119,7 +119,7 @@ struct MyRoomInfo: View {
                 })
                 .offset(x: showItems ? -120 : 0, y: showItems ? -120: 0)
                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                .opacity(0.4)
+                .opacity(0.6)
                 
                 
                 
@@ -129,7 +129,7 @@ struct MyRoomInfo: View {
                 })
                 .offset(x: showItems ? 130 : 0, y: showItems ? 30: 0)
                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                .opacity(0.4)
+                .opacity(0.6)
                 
                 
                 
@@ -139,12 +139,17 @@ struct MyRoomInfo: View {
                 })
                 .offset(x: showItems ? 100 : 0, y: showItems ? -250: 0)
                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                .opacity(0.4)
+                .opacity(0.6)
                 
                 
                 
                 
-                
+                NavigationLink(destination: BuiltByTeens2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
+                    MyRoomCircle (color: Color .green, friendName: "ready to talk; \nalert friends")
+                })
+                .offset(x: showItems ? -50 : 0, y: showItems ? 270: 0)
+                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                .opacity(0.8)
                 
                 NavigationLink(destination: EmptyView(), label: {
                     MyRoomCircle (color: Color .purple, friendName: "We got you! \nTAP")
@@ -154,12 +159,7 @@ struct MyRoomInfo: View {
                 .opacity(0.8)
                 
                 
-//                NavigationLink(destination: EmptyView(), label: {
-//                    MyRoomCircle (color: ColorManager .purple4, friendName: "my \njournal")
-//                })
-//                .offset(x: showItems ? -50 : 0, y: showItems ? 270: 0)
-//                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-//                .opacity(0.8)
+              
                 
               
 //                NavigationLink(destination: EmptyView(), label: {
@@ -181,13 +181,13 @@ struct MyRoomInfo: View {
                     .opacity(0.8)
                     
                     
-                    
-                                            Text("Ready to Chat")
-                                              
-                                              .font(.system(size: 15))
-                                              .fontWeight(.light)
-                                              .multilineTextAlignment(.center)
-                                              .foregroundColor(ColorManager .grey3)
+//
+//                                            Text("Ready to Chat")
+//
+//                                              .font(.system(size: 15))
+//                                              .fontWeight(.light)
+//                                              .multilineTextAlignment(.center)
+//                                              .foregroundColor(ColorManager .grey3)
                     
                     
                     Button(action: {
