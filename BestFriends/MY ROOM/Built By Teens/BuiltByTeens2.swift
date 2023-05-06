@@ -221,70 +221,59 @@ struct BuiltByTeens2: View {
                         
           
                         
-                        Text("Let's")
+                        Text("Let's talk")
                           .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
                           .foregroundColor(ColorManager .grey2)
                         
-                        Text("FaceTime")
-                          .italic()
-                          .font(.system(size: 15))
-                          .fontWeight(.light)
-                          .multilineTextAlignment(.center)
-                          .foregroundColor(ColorManager .grey2)
-                        
-//                        Text("My Room")
+//                        Text("")
 //                          .italic()
-//                          .font(.system(size: 13))
+//                          .font(.system(size: 15))
 //                          .fontWeight(.light)
 //                          .multilineTextAlignment(.center)
-//                          .foregroundColor(ColorManager .grey3)
-//
-//                        Text("from the wreckage")
-//                          .italic()
-//                          .font(.system(size: 13))
-//                          .fontWeight(.light)
-//                          .multilineTextAlignment(.center)
-//                          .foregroundColor(ColorManager .grey3)
-                        
+//                          .foregroundColor(ColorManager .grey2)
+
                         
                         ZStack {
                             
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                        Image(systemName: "heart.fill")
-                            .resizable()
-                            .foregroundColor(Color .white)
-                            .frame(width: 100, height: 80)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
-                            .opacity(0.95)
-                        
+//
+//                            (user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups)
+                       
                         
                         NavigationLink(
-                            destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                            destination: EmptyView(),
                             label: {
-                                Text("tap")
-                                    .fontWeight(.thin)
-                                    .frame(width: 70, height: 37)
-                                    .foregroundColor(ColorManager .purple7)
-                                    .font(.system(size: 20))
-                                    .background(ColorManager .purple1)
-                                    .cornerRadius(10)
+                         Image("FaceTimeT2")
+                                    .resizable()
+                                    .foregroundColor(Color .white)
+                                    .frame(width: 100, height: 80)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     .opacity(0.95)
                                 
-                                    .frame(width: 120, height: 90, alignment: .center)
-                                   
-                                    .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
-                                    .cornerRadius(37)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                                
+                                
+                                
+                            
+                                
+                                
+//                              Text("")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 1, height: 1)
+//                                    .foregroundColor(ColorManager .purple7)
+//                                    .font(.system(size: 20))
+//                                    .background(ColorManager .purple1)
+//                                    .cornerRadius(10)
+//                                    .opacity(0.95)
+//
+                                
+//                                .frame(width: 120, height: 90, alignment: .center)
+//
+//                                    .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
+//                                    .cornerRadius(37)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
                     }
                         
@@ -518,7 +507,7 @@ struct BuiltByTeens2: View {
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(ColorManager .grey3)
                             
-                            Text("you want to Chat!")
+                            Text("you want to Chat in BFs")
                                 .italic()
                                 .font(.system(size: 17))
                                 .fontWeight(.light)
@@ -667,7 +656,7 @@ struct BuiltByTeens2: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your friend(s) were notified. \n\nThey will send you Care Hearts for Emotional Support. \n\n'Blue' atmosphere around your planet indicates you need some time first.", isPresented: $showingAlert) {
+                                .alert("Your friend(s) were notified \nyou want to Chat with them \nin BestFriends", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
@@ -774,7 +763,7 @@ struct BuiltByTeens2: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "Something happened to \(user.firstName) changing their 'Vibe'. Send them a Care Heart. ", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) ... Can you talk to me in Chat?", APNToken: f.APNToken)
                 }
             }
         }
