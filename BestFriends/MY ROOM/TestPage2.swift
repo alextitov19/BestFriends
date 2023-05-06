@@ -68,14 +68,7 @@ struct TestPage2: View {
                 Spacer ()
                     .frame(height: 80)
                 
-                Text("But your not ready to talk")
-                    .font(.system(size: 25))
-//                    .italic()
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey3)
-                
-                Text("to your friends yet")
+                Text("Need time alone in")
                     .font(.system(size: 25))
 //                    .italic()
                     .fontWeight(.thin)
@@ -84,23 +77,28 @@ struct TestPage2: View {
                 
                 Spacer ()
                     .frame(height: 10)
-                
-                
-                Text("Just need some time to yourself in")
-                    .font(.system(size: 25))
-//                    .italic()
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey3)
-                
-                
-                Text("My Room")
-                    .font(.system(size: 35))
-//                    .italic()
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey3)
-                
+               
+                VStack {
+                    
+                    Text("My Room")
+                        .font(.system(size: 35))
+                    //                    .italic()
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager .grey3)
+                    Spacer ()
+                        .frame(height: 10)
+                    
+                    Text("before talking to friends")
+                        .font(.system(size: 25))
+                    //                    .italic()
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager .grey3)
+                    
+          
+                    
+                }
                 
                 
                 
@@ -122,7 +120,7 @@ struct TestPage2: View {
                     VStack {
                         
                         Spacer ()
-                            .frame(height: 100)
+                            .frame(height: 80)
                         
                     
                         
@@ -151,7 +149,7 @@ struct TestPage2: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager .grey3)
                         
-                        Text("while you're alone - because they care about you")
+                        Text("while you're alone - they care about you")
                             .font(.system(size: 20))
 //                            .italic()
                             .fontWeight(.light)

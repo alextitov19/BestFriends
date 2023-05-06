@@ -221,7 +221,7 @@ struct AtmosphereMain2: View {
                         
           
                         
-                        Text("Hideout in the")
+                        Text("Work things out in")
                           .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
@@ -498,14 +498,14 @@ struct AtmosphereMain2: View {
                         //                            .onReceive(Just(summary)) { _ in limitText(45) }
                         VStack {
                             
-                            Text("Tap Circle of friends you want to let know")
+                            Text("Alert frinds that something happened")
                                 .italic()
                                 .font(.system(size: 17))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(ColorManager .grey3)
                             
-                            Text("but that you are not ready to talk yet!")
+                            Text("but you're not ready to talk yet!")
                                 .italic()
                                 .font(.system(size: 17))
                                 .fontWeight(.light)
