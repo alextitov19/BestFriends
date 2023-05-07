@@ -301,10 +301,13 @@ struct PlanetActionsView: View {
                             .frame(height: 25)
                         
                         
-                        
 
-                                       
-                        NavigationLink(destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
+
+//                        HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere
+                       
+//                        HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere
+                                   
+                        NavigationLink(destination: HugPushNotification2(user: user, atmosphere: atmosphere, friends: friends, groups: groups),
                                        label: {
                             ZStack {
                                 Circle()
