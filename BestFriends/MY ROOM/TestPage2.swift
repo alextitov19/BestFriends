@@ -149,7 +149,7 @@ struct TestPage2: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager .grey3)
                         
-                        Text("while you're alone - they care about you")
+                        Text("while you're alone")
                             .font(.system(size: 20))
 //                            .italic()
                             .fontWeight(.light)

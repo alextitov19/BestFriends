@@ -155,7 +155,7 @@ struct HugPushNotification2: View {
                             
                             NavigationLink( destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                                             label: {
-                                Text("sending Care Hearts")
+                                Text("send Care Hearts")
                                     .fontWeight(.thin)
                                     .frame(width: 250, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
