@@ -326,7 +326,7 @@ struct PlanetActionsView: View {
                             .frame(height: 0)
 
                         
-                                    Text("sending")
+                                    Text("send")
                             .foregroundColor(ColorManager .pmbc_green)
 //                                        .italic()
                                         .font(.system(size: 17, weight: .light))

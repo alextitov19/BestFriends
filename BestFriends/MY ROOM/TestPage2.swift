@@ -68,7 +68,7 @@ struct TestPage2: View {
                 Spacer ()
                     .frame(height: 80)
                 
-                Text("Need time alone in")
+                Text("I need time alone in")
                     .font(.system(size: 25))
 //                    .italic()
                     .fontWeight(.thin)
@@ -89,7 +89,7 @@ struct TestPage2: View {
                     Spacer ()
                         .frame(height: 10)
                     
-                    Text("before talking to friends")
+                    Text("before talking to my friends")
                         .font(.system(size: 25))
                     //                    .italic()
                         .fontWeight(.thin)
@@ -135,7 +135,7 @@ struct TestPage2: View {
                    
                      
                         
-                        Text("your friends want to give you")
+                        Text("But your friends want to give you")
                             .font(.system(size: 20))
                             .italic()
                             .fontWeight(.light)
@@ -161,9 +161,9 @@ struct TestPage2: View {
                             
                             NavigationLink( destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                             label: {
-                                Text("request Care Hearts")
+                                Text("So Alert them & request Care Hearts")
                                     .fontWeight(.thin)
-                                    .frame(width: 250, height: 40)
+                                    .frame(width: 250, height: 70)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 23))
                                     .background(ColorManager.purple3)

@@ -169,7 +169,7 @@ struct HugPushNotification2: View {
                             Spacer ()
                                 .frame(height: 10)
                             
-                            Text("Thx for being a special friend")
+                            Text("Thx for being a true friend")
                                 .font(.system(size: 20))
     //                            .italic()
                                 .fontWeight(.light)
