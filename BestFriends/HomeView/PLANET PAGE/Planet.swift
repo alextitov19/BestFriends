@@ -360,7 +360,7 @@ struct PlanetActionsView: View {
                         
 //                        BuiltForTeens(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
 
-                        NavigationLink(destination: TestPage(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        NavigationLink(destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
                             
                             
@@ -377,7 +377,7 @@ struct PlanetActionsView: View {
                          
                                                      
                                     
-                                    Text("FriendGroup \nRoom")
+                                    Text("My Room")
                                         .foregroundColor(ColorManager .purple3)
                                         .font(.system(size: 19, weight: .regular))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)

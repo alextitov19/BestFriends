@@ -71,8 +71,29 @@ struct INFOPreloadA: View {
                     .frame(height: 80)
                 
                 VStack {
+                   
                     
-                    Text("Everyone wants their ...")
+                    Spacer()
+                        .frame(height: 5)
+                    
+                    Text("Now, you can let the outside of you")
+                        .font(.system(size: 19))
+                        .italic()
+                        .foregroundColor(ColorManager.grey1)
+                        .fontWeight(.regular)
+                        .multilineTextAlignment(.center)
+                  
+                    Text("match the inside of you with your friends")
+                        .font(.system(size: 19))
+                        .italic()
+                        .foregroundColor(ColorManager.grey1)
+                        .fontWeight(.regular)
+                        .multilineTextAlignment(.center)
+                    
+                    Spacer()
+                        .frame(height: 30)
+                    
+                    Text("super safe & protective")
                         .font(.system(size: 17))
                         .italic()
                         .foregroundColor(ColorManager.grey1)
@@ -88,15 +109,6 @@ struct INFOPreloadA: View {
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                     
-                    Spacer()
-                        .frame(height: 5)
-                    
-                    Text("there for them on difficult days")
-                        .font(.system(size: 19))
-                        .italic()
-                        .foregroundColor(ColorManager.grey1)
-                        .fontWeight(.regular)
-                        .multilineTextAlignment(.center)
                     
                     Spacer()
                         .frame(height: 150)
@@ -150,7 +162,7 @@ struct INFOPreloadA: View {
                             .multilineTextAlignment(.center)
                         
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 150)
                         
                         
                         

@@ -161,7 +161,7 @@ struct TestPage2: View {
                             
                             NavigationLink( destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                             label: {
-                                Text("so, Alert them & request Care Hearts")
+                                Text("Alert them & request Care Hearts")
                                     .fontWeight(.thin)
                                     .frame(width: 250, height: 70)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
