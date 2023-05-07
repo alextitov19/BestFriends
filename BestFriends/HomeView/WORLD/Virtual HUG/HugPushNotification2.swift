@@ -43,27 +43,27 @@ struct HugPushNotification2: View {
             
             
             VStack {
-                
-                Text("something bad")
-                    .font(.system(size: 40))
+//
+//                Text("something bad")
+//                    .font(.system(size: 40))
+////                    .italic()
+//                    .fontWeight(.regular)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(ColorManager .grey3)
+//
+//
+//
+//                Text("just happend")
+//                    .font(.system(size: 35))
 //                    .italic()
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey3)
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(ColorManager .grey3)
+//
+//                Spacer ()
+//                    .frame(height: 80)
                 
-             
-                
-                Text("just happend")
-                    .font(.system(size: 35))
-                    .italic()
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey3)
-                
-                Spacer ()
-                    .frame(height: 80)
-                
-                Text("Need time alone in")
+                Text("Everyone whats to know their friends ")
                     .font(.system(size: 25))
 //                    .italic()
                     .fontWeight(.thin)
@@ -75,7 +75,7 @@ struct HugPushNotification2: View {
                
                 VStack {
                     
-                    Text("My Room")
+                    Text("care about them")
                         .font(.system(size: 35))
                     //                    .italic()
                         .fontWeight(.light)
@@ -84,7 +84,7 @@ struct HugPushNotification2: View {
                     Spacer ()
                         .frame(height: 10)
                     
-                    Text("before talking to friends")
+                    Text("especially on difficult days")
                         .font(.system(size: 25))
                     //                    .italic()
                         .fontWeight(.thin)
@@ -130,7 +130,7 @@ struct HugPushNotification2: View {
                    
                      
                         
-                        Text("your friends want to give you")
+                        Text("your friend need your")
                             .font(.system(size: 20))
                             .italic()
                             .fontWeight(.light)
@@ -144,7 +144,7 @@ struct HugPushNotification2: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager .grey3)
                         
-                        Text("while you're alone - they care about you")
+                        Text("")
                             .font(.system(size: 20))
 //                            .italic()
                             .fontWeight(.light)
