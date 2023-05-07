@@ -784,7 +784,7 @@ struct BuiltByTeens2: View {
                     for i in sharedWith {
                         for f in friends {
                             if i == f.id {
-                                RestApi.instance.sendPushNotification(title: "BestFriends - 'Vibe'", body: "\(user.firstName): Your friend's day just changed! Please take a moment to check on them.", APNToken: f.APNToken )
+                                RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName): wants to talk in Chat.", APNToken: f.APNToken )
                             }
                         }
                         mood = -1
