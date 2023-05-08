@@ -247,26 +247,20 @@ struct PlanetActionsView: View {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple4)
+                                    .foregroundColor(ColorManager.purple3)
                                     .shadow(color: .white, radius: 3, x: 0, y: 4)
                                     .glow(color: ColorManager.purple4, radius: 7)
                                     .opacity(0.80)
                                
                                 VStack {
                                     ZStack {
-//                                        Image(systemName: "heart.fill")
-//                                            .resizable()
-//                                            .foregroundColor(ColorManager .grey3)
-//                                            .frame(width: 90, height: 70)
-//                                            .opacity(0.95)
-//
-
+//                                      
                                         
-                            NavigationLink(destination: INFOPreloadA(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
+                                        NavigationLink(destination: HorizonHomeView(user: user, friends: friends, atmosphere: atmosphere),
                                             label: {
                                                 VStack {
 //                                                  
-                                                    Text("Walk - \nthrough")
+                                                    Text("My Journal")
                                                         .foregroundColor(ColorManager .purple1)
                                                         .font(.system(size: 25, weight: .regular))
                                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
