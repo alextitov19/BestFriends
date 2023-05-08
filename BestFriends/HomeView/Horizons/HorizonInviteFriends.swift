@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HorizonInviteFriends: View {
+   
     let friends: [User]
     let user: User
     let atmosphere: Atmosphere

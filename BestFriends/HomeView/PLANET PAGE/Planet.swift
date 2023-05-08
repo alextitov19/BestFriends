@@ -262,24 +262,10 @@ struct PlanetActionsView: View {
 //
 
                                         
-                                        NavigationLink(destination: INFOPreloadA(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
+                            NavigationLink(destination: INFOPreloadA(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
                                             label: {
                                                 VStack {
-//                                                    Text("Walk- \nthrough")
-//                                                        .fontWeight(.light)
-//                                                        .frame(width: 60, height: 40)
-//                                                        .foregroundColor(ColorManager .grey1)
-//                                                        .font(.system(size: 15))
-//                                                        .background(ColorManager .grey3)
-//                                                        .cornerRadius(10)
-//                                                    
-//                                                    Text("Here")
-//                                                        .fontWeight(.light)
-//                                                        .frame(width: 60, height: 37)
-//                                                        .foregroundColor(Color .green)
-//                                                        .font(.system(size: 18))
-//                                                        .background(ColorManager .purple1)
-//                                                        .cornerRadius(10)
+//                                                  
                                                     Text("Walk - \nthrough")
                                                         .foregroundColor(ColorManager .purple1)
                                                         .font(.system(size: 25, weight: .regular))
@@ -398,7 +384,7 @@ struct PlanetActionsView: View {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager .purple4)
+                                    .foregroundColor(ColorManager .pmbc_green)
                                     .shadow(color: .white, radius: 3, x: -4, y: 4)
                                     .glow(color: ColorManager.purple4, radius: 7)
                                     .opacity(0.80)
@@ -413,11 +399,25 @@ struct PlanetActionsView: View {
                                  
                                     VStack {
                                         
-                                        Text("Invite 5 \nBFFs")
+                                        Text("new user")
+                                            .foregroundColor(ColorManager .purple1)
+                                            .font(.system(size: 22, weight: .regular))
+                                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                            .opacity(0.50)
+                                        
+                                        Text("START")
                                             .foregroundColor(ColorManager .purple1)
                                             .font(.system(size: 25, weight: .regular))
                                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                                             .opacity(0.50)
+                                        
+                                        Text("here")
+                                            .foregroundColor(ColorManager .purple1)
+                                            .font(.system(size: 22, weight: .regular))
+                                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                            .opacity(0.50)
+                                        
+                                        
                                         
 //                                        Text("Invite (5)")
 //                                            .fontWeight(.light)
