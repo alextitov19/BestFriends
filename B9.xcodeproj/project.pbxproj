@@ -1545,9 +1545,9 @@
 		D0CC1A02283EE31900E7461F /* Horizons */ = {
 			isa = PBXGroup;
 			children = (
+				CF1ECAC02870039500D999F8 /* HorizonPromoPage.swift */,
 				D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */,
 				62372A142884D57500CAB75C /* HorizonGoalChoices.swift */,
-				CF1ECAC02870039500D999F8 /* HorizonPromoPage.swift */,
 				D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */,
 				62372A162884D7F400CAB75C /* HorizonSetGoal.swift */,
 				62372A182884E27F00CAB75C /* HorizonCustom.swift */,

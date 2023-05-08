@@ -256,7 +256,7 @@ struct PlanetActionsView: View {
                                     ZStack {
 //
                                         
-                                        NavigationLink(destination: HorizonHomeView(user: user, friends: friends, atmosphere: atmosphere),
+                                        NavigationLink(destination: HorizonPromoPage(user: user, friends: friends, atmosphere: atmosphere),
                                             label: {
                                                 VStack {
 //                                                  

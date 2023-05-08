@@ -5,119 +5,250 @@
 //  Created by Social Tech on 7/2/22.
 //
 
+
+
 import Foundation
 import SwiftUI
-//import AVKit
+import AVKit
 
-
-struct HorizonsPromoPage: View {
+struct HorizonPromoPage: View {
+    
+    
+    let user: User
+    let friends: [User]
+    let atmosphere: Atmosphere
     
     var body: some View {
         
         ZStack {
             
-            ColorManager.grey4
-                  .ignoresSafeArea()
-           
+            ColorManager .purple1
+                .ignoresSafeArea()
+                .onAppear()
             
-//            Image("BuiltByTeens")
-//                .frame(width: 100, height: 40)
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
+            Color .black
+                .ignoresSafeArea()
             
-         
-
+            
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+            
+            
+            
+            
+            
             VStack {
-                
-                
-                Text("Building Dreams")
-                    .font(.system(size: 70))
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(Color.blue)
-                
-                Text("with best friends")
-                    .font(.system(size: 40))
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(Color.blue)
-                
 //
-//                Link(destination: URL(string: "https://socialtechlabs.com/team/")!) {
-//                        Text("Built by Teens")
-//                            .fontWeight(.thin)
-//                            .frame(width: 330, height: 40)
-//                            .font(.system(size: 30))
-//                            .foregroundColor(.white)
-//                            .background(ColorManager.purple3)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                Text("something bad")
+//                    .font(.system(size: 40))
+////                    .italic()
+//                    .fontWeight(.regular)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(ColorManager .grey3)
 //
 //
-//                }
-                Text("(comming this fall)")
+//
+//                Text("just happend")
+//                    .font(.system(size: 35))
+//                    .italic()
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(ColorManager .grey3)
+//
+//                Spacer ()
+//                    .frame(height: 80)
+                
+                Text("Welcome to the coolest Journal on")
+                    .font(.system(size: 25))
+//                    .italic()
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager .grey3)
+                
+                Spacer ()
+                    .frame(height: 10)
                
-                    .font(.system(size: 15))
-                    .italic()
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(Color.white)
+                VStack {
+                    
+                    Text("the Planet")
+                        .font(.system(size: 35))
+                    //                    .italic()
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager .grey3)
+                    Spacer ()
+                        .frame(height: 10)
+                    
+                    Text("with your friends")
+                        .font(.system(size: 25))
+                    //                    .italic()
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager .grey3)
+                    
+          
+                    
+                }
                 
-//                Spacer()
-//                    .frame(height: 75)
-//                
-//               
-//                Link(destination: URL(string: "https://socialtechlabs.com/about-bestfriends/")!) {
-//                        Text("BestFriend's Features Explained")
-//                            .fontWeight(.thin)
-//                            .frame(width: 330, height: 40)
-//                            .font(.system(size: 23))
-//                            .foregroundColor(.white)
-//                            .background(ColorManager.purple3)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                }
-//                
-//                NavigationLink(
-//                    destination: BetaTestVideo(),
-//                    label: {
-//                        Text("Be 1st to see 'Future Prototypes'")
-//                            .fontWeight(.thin)
-//                            .frame(width: 310, height: 40)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                            .font(.system(size: 30))
-//                            .background(ColorManager.grey2)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                    })
-//                
-//                
-//            
                 
-//                VStack {
-//
-//                let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "BuiltByTeensVid", withExtension: "mp4")!)
-//
-//                VideoPlayer(player: avPlayer)
-//                    .onAppear() {
-//                        avPlayer.isMuted = false
-//                    }
-//                    .onDisappear() {
-//                        avPlayer.isMuted = true
-//                    }
-////                    .frame(height: 300)
-//                    .frame(width: 200, height: 400)
-//                    .cornerRadius(15)
-//            }
-            
-            Spacer()
-                .frame(height: 75)
-            
-              
+                
+                Spacer ()
+                    .frame(height: 20)
+                
+                ZStack {
+                    
+                    
+                                        Image(systemName: "heart.fill")
+                                            .resizable()
+                                            .foregroundColor(ColorManager .purple2)
+                                            .frame(width: 360, height: 330)
+                                            .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
+                                            .opacity(0.8)
+                    
+                    
+                    
+                    VStack {
                         
+                        Spacer ()
+                            .frame(height: 80)
+                        
+              
+                     
 
-            }//VStack
-        }//ZStack
-    }//body
-}//struct
+                        Text("Yep, a unique Journal designed to")
+                            .font(.system(size: 20))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager .grey3)
 
+                        Text("Fix Problems")
+                            .font(.system(size: 30))
+//                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager .grey3)
+
+                    
+                        
+                        VStack {
+                            
+                            
+                            
+                            NavigationLink( destination:   HorizonHomeView(user: user, friends: friends, atmosphere: atmosphere),
+                                            label: {
+                                Text("My Journal")
+                                    .fontWeight(.thin)
+                                    .frame(width: 250, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 23))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                            
+                           
+                            Spacer ()
+                                .frame(height: 10)
+                            
+                            Text("with your friends help")
+                                .font(.system(size: 20))
+    //                            .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager .grey3)
+
+                            
+                            Spacer ()
+                                .frame(height: 100)
+              
+                            
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
     
+    
+}
 
+
+
+
+
+//**********************************************
+//***********************************************************
+
+
+//
+//import Foundation
+//import SwiftUI
+////import AVKit
+//
+//
+//struct HorizonsPromoPage: View {
+//
+//
+//    let user: User
+//    let friends: [User]
+//    let atmosphere: Atmosphere
+//
+//
+//    var body: some View {
+//
+//        ZStack {
+//
+//            ColorManager.grey4
+//                  .ignoresSafeArea()
+//
+//
+//            VStack {
+//
+//
+//                Text("Building Dreams")
+//                    .font(.system(size: 70))
+//                    .fontWeight(.ultraLight)
+//                    .foregroundColor(Color.blue)
+//
+//                Text("with best friends")
+//                    .font(.system(size: 40))
+//                    .fontWeight(.ultraLight)
+//                    .foregroundColor(Color.blue)
+//
+////
+////                Link(destination: URL(string: "https://socialtechlabs.com/team/")!) {
+////                        Text("Built by Teens")
+////                            .fontWeight(.thin)
+////                            .frame(width: 330, height: 40)
+////                            .font(.system(size: 30))
+////                            .foregroundColor(.white)
+////                            .background(ColorManager.purple3)
+////                            .cornerRadius(15)
+////                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+////
+////
+////                }
+//                Text("(comming this fall)")
+//
+//                    .font(.system(size: 15))
+//                    .italic()
+//                    .fontWeight(.ultraLight)
+//                    .foregroundColor(Color.white)
+//
+///
+//
+//            Spacer()
+//                .frame(height: 75)
+//
+//
+//
+//
+//            }//VStack
+//        }//ZStack
+//    }//body
+//}//struct
+//
+//
+//
