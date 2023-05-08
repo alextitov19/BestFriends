@@ -247,22 +247,22 @@ struct PlanetActionsView: View {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple3)
+                                    .foregroundColor(ColorManager.purple2)
                                     .shadow(color: .white, radius: 3, x: 0, y: 4)
                                     .glow(color: ColorManager.purple4, radius: 7)
                                     .opacity(0.80)
                                
                                 VStack {
                                     ZStack {
-//                                      
+//
                                         
                                         NavigationLink(destination: HorizonHomeView(user: user, friends: friends, atmosphere: atmosphere),
                                             label: {
                                                 VStack {
 //                                                  
-                                                    Text("My Journal")
-                                                        .foregroundColor(ColorManager .purple1)
-                                                        .font(.system(size: 25, weight: .regular))
+                                                    Text("My \nJournal")
+                                                        .foregroundColor(ColorManager .purple3)
+                                                        .font(.system(size: 20, weight: .regular))
                                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                                         .opacity(0.50)
                                                     
@@ -357,7 +357,7 @@ struct PlanetActionsView: View {
                          
                                                      
                                     
-                                    Text("My Room")
+                                    Text("My \nRoom")
                                         .foregroundColor(ColorManager .purple3)
                                         .font(.system(size: 19, weight: .regular))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
