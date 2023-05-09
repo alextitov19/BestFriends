@@ -121,6 +121,34 @@ struct Apologies: View {
                                 
                             })
                         
+                        
+                        
+                        Spacer()
+                            .frame(height: 20)
+                        
+                        
+//                        Link(destination: URL(string: "https://socialtechlabs.com/surveys/")!)
+                        NavigationLink(
+                            
+                            destination: SurveyStickersPreload(),
+                            label: {
+                                Text("Give us Feedback")
+                                    .fontWeight(.light)
+                                    .foregroundColor(Color.white)
+                                    .frame(width: 230, height: 60)
+                                    .font(.system(size: 25))
+                                    .background(ColorManager.pmbc_green)
+                                    .cornerRadius(7)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                            })
+                    
+                        
+                        
+                        
+                        
+                        
+                        
                         Spacer()
                             .frame(height: 20)
                         
