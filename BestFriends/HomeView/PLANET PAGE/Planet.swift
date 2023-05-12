@@ -242,7 +242,7 @@ struct PlanetActionsView: View {
                         
                         
                         
-                        NavigationLink(destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        NavigationLink(destination:  EmptyView(),
                                        label: {
                             ZStack {
                                 Circle()
@@ -255,12 +255,14 @@ struct PlanetActionsView: View {
                                 VStack {
                                     ZStack {
 //
+//                          NavigationLink(destination: HorizonPromoPage(user: user, friends: friends, atmosphere: atmosphere),
+//                                        LINK ^^^ TO THE JOURNAL INTRO PAGE **************
                                         
-                                        NavigationLink(destination: HorizonPromoPage(user: user, friends: friends, atmosphere: atmosphere),
+                                        NavigationLink(destination: NEWSFeedPergion(user: user, friends: friends, atmosphere: atmosphere),
                                             label: {
                                                 VStack {
 //                                                  
-                                                    Text("My \nJournal")
+                                                    Text("Friendships")
                                                         .foregroundColor(ColorManager .purple3)
                                                         .font(.system(size: 20, weight: .regular))
                                                         .shadow(color: .black, radius: 1, x: 0, y: 1)

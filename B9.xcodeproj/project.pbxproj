@@ -831,6 +831,7 @@
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
 				7AC4C01D27FF49F9000C4140 /* Chat */,
+				CF01267C2A0E307000516B8E /* FriendShips */,
 				CF2EE6FF29529BC200B1B16D /* NewsFeeds */,
 				CF3B65A9280071580003A714 /* Settings */,
 				CF41280C2927542B003BCBFA /* SurveyStickers */,
@@ -893,6 +894,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CF01267C2A0E307000516B8E /* FriendShips */ = {
+			isa = PBXGroup;
+			children = (
+				CF2EE70029529C0300B1B16D /* NEWSFeedPergion.swift */,
+			);
+			path = FriendShips;
+			sourceTree = "<group>";
+		};
 		CF1CD75329E2908B00D1F801 /* New Summer Feature */ = {
 			isa = PBXGroup;
 			children = (
@@ -930,7 +939,6 @@
 		CF2EE6FF29529BC200B1B16D /* NewsFeeds */ = {
 			isa = PBXGroup;
 			children = (
-				CF2EE70029529C0300B1B16D /* NEWSFeedPergion.swift */,
 			);
 			path = NewsFeeds;
 			sourceTree = "<group>";

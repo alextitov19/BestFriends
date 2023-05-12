@@ -173,7 +173,7 @@ struct MyRoomInfo: View {
                 
                 VStack {
                     
-                    NavigationLink(destination: EmptyView(), label: {
+                    NavigationLink(destination: HorizonPromoPage(user: user, friends: friends, atmosphere: atmosphere), label: {
                         MyRoomCircle (color: ColorManager .purple4, friendName: "my \njournal")
                     })
                     .offset(x: showItems ? 0 : 0, y: showItems ? 300: 0)
