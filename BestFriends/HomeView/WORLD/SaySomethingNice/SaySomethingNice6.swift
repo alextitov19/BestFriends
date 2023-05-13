@@ -122,7 +122,7 @@ struct SaySomethingNice6: View {
                     .frame(height: 30)
                 
                 NavigationLink(
-                    destination: PickMediator(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
+                    destination: INFOPreload4(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
                     label: {
                         Text("Why build a 'gender' \nmixed friend group")
                             .fontWeight(.thin)
