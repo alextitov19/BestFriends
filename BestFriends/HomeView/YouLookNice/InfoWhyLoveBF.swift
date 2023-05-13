@@ -81,31 +81,51 @@ struct InfoWhyLoveBF: View {
                 HStack {
                     VStack {
                         
-                        Text("hey")
+                        Text("wow")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple7)
                         
                         
-                        Text("bro")
-                            .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .purple7)
-                        
+                        //                        Text("bro")
+                        //                            .font(.system(size: 35, weight: .ultraLight))
+                        //                            .foregroundColor(ColorManager .purple7)
+                        //
                     }
                     
-                    Image("CoolGuy")
+//                    Image("CoolGuy")
+//                        .resizable()
+//                        .frame(width: 200, height: 200)
+                    
+                    Image("KissesHeart")
                         .resizable()
-                        .frame(width: 200, height: 200)
+                        .frame(width: 200, height: 150)
+           
+                    
+                    
                 }
              
          
                 VStack {
+                    
+                    
+                    Spacer()
+                        .frame(height: 30)
+                 
+                }
+                
+                
+                
+                
+                
+                
+                VStack {
 
-//                    Text("Jump up on a chair, then ...")
-//                                            .font(.system(size: 25))
-//
-//                                            .foregroundColor(ColorManager .grey2)
-//                                            .fontWeight(.thin)
-//                                            .multilineTextAlignment(.center)
+                    Text("you look nice today!")
+                                            .font(.system(size: 25))
+
+                                            .foregroundColor(ColorManager .grey2)
+                                            .fontWeight(.thin)
+                                            .multilineTextAlignment(.center)
 
                     VStack {
 
@@ -280,12 +300,12 @@ struct InfoWhyLoveBF: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) Sends a Fist-Pump, Hey What's up?", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) Says you look really nice today!", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "You got a fist-pump", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                        print("Create a fist-pump notification response code: ", response)
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "You Look Nice Today", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        print("Create a Look Nice notification response code: ", response)
                     })
                     
                 }
@@ -315,137 +335,3 @@ struct InfoWhyLoveBF: View {
     
     
 }
-
-//import Foundation
-//import SwiftUI
-//import AVKit
-//
-//struct InfoWhyLoveFB: View {
-//
-//
-//
-//    let user: User
-//    let atmosphere: Atmosphere
-//    let friends: [User]
-//    let friendAtmospheres: [Atmosphere]
-//    let groups: [Group]
-//
-//    var body: some View {
-//
-//        ZStack {
-//
-//            ColorManager .purple1
-//                .ignoresSafeArea()
-//                .onAppear()
-//
-//
-//
-//
-//            VStack {
-//
-//
-//
-//                Text("Hey Guys")
-//                    .font(.system(size: 35))
-//
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//                    .foregroundColor(ColorManager.grey2)
-//
-//
-//
-//
-//
-////                    .padding(25)
-//
-//
-//
-//
-//
-//                ZStack {
-//
-//
-//                    Image(systemName: "heart.fill")
-//                        .resizable()
-//                        .foregroundColor(ColorManager .purple2)
-//                        .frame(width: 330, height: 330)
-//                        .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
-//                        .opacity(0.8)
-//
-//
-//
-//                    VStack {
-//
-////
-////                        Spacer ()
-////                            .frame(height: 30)
-//
-//                        Text("BestFriends was designed")
-//                            .italic()
-//                            .font(.system(size: 20))
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(Color .white)
-//
-//
-//
-//                        Text("by H.S. seniors & College girls")
-//                            .italic()
-//                            .font(.system(size: 20))
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(Color .white)
-//
-//                        Spacer ()
-//                            .frame(height: 35)
-//
-//
-//                        Text("It's like they")
-//
-//                            .font(.system(size: 20))
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(ColorManager .grey3)
-//
-//                        Text("really understand")
-//
-//                            .font(.system(size: 20))
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(ColorManager .grey3)
-//
-//                        Text("me and my friends")
-//
-//                            .font(.system(size: 20))
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(ColorManager .grey3)
-//
-//
-//
-//
-//                         NavigationLink(
-//                            destination: InfoWhyLoveFB2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-//                            label: {
-//                                Text("a peak Inside")
-//                                    .fontWeight(.thin)
-//                                    .frame(width: 200, height: 40)
-//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                    .font(.system(size: 30))
-//                                    .background(ColorManager.purple3)
-//                                    .cornerRadius(15)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                            })
-//
-//
-//                           Spacer ()
-//                                .frame(height: 30)
-//
-//                    }
-//                }
-//            }
-//        }
-//    }
-//
-//}
-//
