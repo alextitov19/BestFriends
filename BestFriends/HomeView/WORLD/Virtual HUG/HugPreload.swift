@@ -64,8 +64,8 @@ struct HugPreload: View {
 //                .opacity(0.3)
 
 
-                    NavigationLink(destination: EmptyView(), label: {
-                        HugCircle (color: ColorManager.purple1, friendName: "coupon")
+                    NavigationLink(destination: InfoWhyLoveBF(user: user, friends: friends), label: {
+                        HugCircle (color: ColorManager.purple1, friendName: "You look \nnice \ntoday")
                     })
                     .offset(x: showItems ? 120 : 0, y: showItems ? -270: 0)
                     .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
