@@ -244,18 +244,21 @@ struct HomeView: View {
                         //                                                   .padding(50)
                     }
                     
+//                    Text("create Chat rooms - see SetUp")
+                    
+                    
                     if newGroupMembers.count > 0 && !focusPlanet {
                         Button(action: {
                             chatButtonTapped()
                         }, label: {
-                            Text("create Chat rooms - see SetUp")
-                                .fontWeight(.light)
-                                .frame(width: 255, height: 30)
-                                .foregroundColor(.white)
-                                .background(ColorManager .purple7)
-                                .cornerRadius(10)
-                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                .opacity(0.5)
+//                            Text("create Chat rooms - see SetUp")
+//                                .fontWeight(.light)
+//                                .frame(width: 255, height: 30)
+//                                .foregroundColor(.white)
+//                                .background(ColorManager .purple7)
+//                                .cornerRadius(10)
+//                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                                .opacity(0.5)
                         })
                         
                     }
@@ -290,19 +293,19 @@ struct HomeView: View {
                             VStack {
 
                                 NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
-                                    Text("ALERT - friend's 'Vibe' changed")
+                                    Text("vibe")
                                         .fontWeight(.light)
-                                        .frame(width: 255, height: 30)
+                                        .frame(width: 50, height: 50)
                                         .foregroundColor(.white)
-                                        .background(ColorManager .pmbc_pink)
-                                        .cornerRadius(10)
+                                        .background(ColorManager .grey1)
+                                        .cornerRadius(50)
                                         .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                                         .opacity(0.5)
                                 })
 //
-                                Spacer()
-                                    .frame(height: 15)
-                                
+//                                Spacer()
+//                                    .frame(height: 15)
+//
 //
 //                                NavigationLink(destination: SaySomethingNice7(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
 //                                               label: {
@@ -325,12 +328,12 @@ struct HomeView: View {
                         HStack {
                             NavigationLink(destination: VirtualHug(),
                                            label: {
-                                Text("awe, you've got a HUG")
+                                Text("hug")
                                     .fontWeight(.light)
-                                    .frame(width: 255, height: 30)
+                                    .frame(width: 50, height: 50)
                                     .foregroundColor(.white)
-                                    .background(ColorManager .purple7)
-                                    .cornerRadius(10)
+                                    .background(ColorManager .grey2)
+                                    .cornerRadius(50)
                                     .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                                     .opacity(0.5)
                             })
