@@ -295,12 +295,14 @@ struct InfoWhyLoveBF: View {
     }
     
     
+//body: "\(user.firstName)
+    
     func shareButtonTapped() {
         if selectedFriends.count == 0 { return }
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) Says you look really nice today!", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: " A freind said you look really nice today!", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
