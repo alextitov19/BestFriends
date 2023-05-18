@@ -292,6 +292,8 @@ struct SaySomethingNice5: View {
                         print("Create a missing you notification response code: ", response)
                     })
                     
+                    RestApi.instance.createStreakLog(friendID: f.id)
+                    
                 }
             }
         }

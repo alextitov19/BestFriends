@@ -284,6 +284,7 @@ struct SendKisses: View {
                     RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "You got new Kisses!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                         print("Create a kiss notification response code: ", response)
                     })
+                    RestApi.instance.createStreakLog(friendID: f.id)
                 }
             }
         }

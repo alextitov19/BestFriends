@@ -310,6 +310,8 @@ struct InfoWhyLoveBF: View {
                         print("Create a Look Nice notification response code: ", response)
                     })
                     
+                    RestApi.instance.createStreakLog(friendID: f.id)
+                    
                 }
             }
         }
