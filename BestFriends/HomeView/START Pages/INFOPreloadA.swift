@@ -83,7 +83,7 @@ struct INFOPreloadA: View {
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                   
-                    Text("match the inside of you with your friends")
+                    Text("match the inside of you on social media")
                         .font(.system(size: 19))
                         .italic()
                         .foregroundColor(ColorManager.grey1)
@@ -93,7 +93,7 @@ struct INFOPreloadA: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("super safe & protective")
+                    Text("super safe & protective with five")
                         .font(.system(size: 17))
                         .italic()
                         .foregroundColor(ColorManager.grey1)
