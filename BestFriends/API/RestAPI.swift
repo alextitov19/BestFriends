@@ -236,4 +236,20 @@ class RestApi {
         return helper.createInAppNotification(url: API_URL + "/notification/in_app", ian: ian)
     }
     
+    public func createStreakLog(friendID: String) {
+        helper.callRestApi(url: API_URL + "/streak/" + friendID, method: .post, RestResponse.self).then({ response in
+            if response.status == 200 {
+                print("Created streak log successfully for friend: ", friendID)
+            } else {
+                print("Error creating streak log successfully for friend: ", friendID)
+            }
+        })
+    }
+    
+    public func getStreakLog(friendID: String) -> Promise<Int> {
+        return helper.callRestApi(url: API_URL + "/streak/" + friendID, method: .get, Int.self).then({ response in
+            return response
+        })
+    }
+    
 }

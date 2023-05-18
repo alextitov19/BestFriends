@@ -332,6 +332,7 @@ struct HugPushNotification: View {
                     RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "You got a new Hug!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                         print("Create a hug notification response code: ", response)
                     })
+                    RestApi.instance.createStreakLog(friendID: f.id)
                 }
             }
         }

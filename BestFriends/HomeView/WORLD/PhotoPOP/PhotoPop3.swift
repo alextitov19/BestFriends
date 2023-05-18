@@ -250,7 +250,7 @@ struct PhotoPop3: View {
                         print("Create a photopop notification response code: ", response)
                     })
                     
-                    
+                    RestApi.instance.createStreakLog(friendID: f.id)
                 }
             }
         }
