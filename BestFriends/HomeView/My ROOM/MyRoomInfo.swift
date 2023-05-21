@@ -151,23 +151,23 @@ struct MyRoomInfo: View {
                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
                 .opacity(0.8)
                 
-                NavigationLink(destination: EmptyView(), label: {
-                    MyRoomCircle (color: Color .purple, friendName: "We got you! \nTAP")
-                })
-                .offset(x: showItems ? 0 : 0, y: showItems ? 500: 0)
-                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                .opacity(0.8)
-                
-                
-              
-                
-              
 //                NavigationLink(destination: EmptyView(), label: {
-//                    MyRoomCircle (color: ColorManager .purple4, friendName: "my room \nTAP")
+//                    MyRoomCircle (color: Color .purple, friendName: "We got you! \nTAP")
 //                })
-//                .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
+//                .offset(x: showItems ? 0 : 0, y: showItems ? 500: 0)
 //                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
 //                .opacity(0.8)
+                
+                
+              
+                
+              
+                NavigationLink(destination: EmptyView(), label: {
+                    MyRoomCircle (color: ColorManager .purple4, friendName: "TAP")
+                })
+                .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
+                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                .opacity(0.8)
                 
                 
                 
