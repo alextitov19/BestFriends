@@ -233,7 +233,7 @@ struct AtmosphereInfo: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 4 ? Color(.purple) : Color .blue)
+                        .background(mood == 4 ? Color(.purple) : Color .gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
@@ -301,7 +301,7 @@ struct AtmosphereInfo: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 7 ? Color(.systemGreen) : Color .yellow)
+                        .background(mood == 7 ? Color(.green) : Color .yellow)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
@@ -318,7 +318,7 @@ struct AtmosphereInfo: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 8 ? Color(.systemGreen) : Color .yellow)
+                        .background(mood == 8 ? Color(.green) : Color .yellow)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
@@ -335,7 +335,7 @@ struct AtmosphereInfo: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 9 ? Color(.systemGreen) : Color .yellow)
+                        .background(mood == 9 ? Color(.green) : Color .yellow)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
