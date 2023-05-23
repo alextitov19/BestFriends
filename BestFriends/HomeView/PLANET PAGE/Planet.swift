@@ -58,21 +58,21 @@ struct Planet: View {
     private func glowColor() -> Color {
         switch atmosphere.mood {
         case 0:
-            return ColorManager.pmbc_blue
+            return Color .cyan
         case 1:
-            return ColorManager.pmbc_blue
+            return Color .cyan
         case 2:
-            return ColorManager.pmbc_blue
+            return Color .cyan
         case 3:
-            return ColorManager.pmbc_blue
+            return Color .cyan
         case 4:
-            return ColorManager.pmbc_green
+            return Color .purple
         case 5:
-            return ColorManager.orange3
+            return Color .green
         case 6:
-            return Color.yellow
+            return Color .green
         case 7:
-            return Color.yellow
+            return Color .green
         case 8:
             return Color.yellow
         case 9:
@@ -471,7 +471,7 @@ struct PlanetActionsView: View {
                                     .opacity(0.80)
                                 
                                 VStack {
-                                    Text("Journal \nVibe")
+                                    Text("Journal \nVibe \nTracker")
                                         .foregroundColor(ColorManager .purple3)
                                         .font(.system(size: 20, weight: .regular))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
