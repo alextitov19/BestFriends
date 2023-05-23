@@ -81,23 +81,57 @@ struct AtmosphereInfo: View {
                 
                 HStack {
                     
-                    
-                    Text("My Vibe \nChanged")
-                        .font(.system(size: 30))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(ColorManager .grey1)
-                        .multilineTextAlignment(.center)
-                    
-                    Image("FatGuy200")
-                        .resizable()
-                        .frame(width: 150, height: 150)
-                    
+                    VStack {
+                       
+                        HStack{
+                            Text("My Vibe \nChanged")
+                                .font(.system(size: 30))
+                                .fontWeight(.ultraLight)
+                                .foregroundColor(ColorManager .grey1)
+                                .multilineTextAlignment(.center)
+                            
+                            Spacer()
+                                .frame(width: 50)
+                            
+                            
+                            Image("FatGuy200")
+                                .resizable()
+                                .frame(width: 150, height: 150)
+                        }
+                        
+                        Text("Sad Vibe shows as blue")
+                            .font(.system(size: 18))
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager .grey1)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("atmospere around your planet")
+                            .font(.system(size: 18))
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager .grey1)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("happy vibe as yellow")
+                            .font(.system(size: 18))
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager .grey1)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        
+                    }
                 }
            
+          
+                
+                
+                
                 HStack {
                     VStack {
              
 //
+                      
+                        
 //
 //                        Text("Send me a")
 //                          .italic()
@@ -216,17 +250,13 @@ struct AtmosphereInfo: View {
 
                     }
                     
+                   
                     Spacer()
                         .frame(width: 50)
-                    
-                   VStack {
+                 
+                    VStack {
                         
-//                        Text("Sad Vibe shows as blue \natmospere around your \nplanet, happy vibe \nas yellow")
-//                            .font(.system(size: 13))
-//                            .fontWeight(.ultraLight)
-//                            .foregroundColor(ColorManager .grey4)
-//                            .multilineTextAlignment(.center)
-                        
+ 
                                                
                     }
                     
@@ -309,38 +339,38 @@ struct AtmosphereInfo: View {
                     
                     
                     
-//                        Button(action: {
-//                            mood = 4
-//                        }) {
-//
-//                            Text("My Exciting \nNEWS!")
-//                                .font(.system(size: 10))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 4 ? Color(.systemGreen) : Color .yellow)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//
-//                        Spacer()
-//                            .frame(height: 12)
-//
-//                        Button(action: {
-//                            mood = 5
-//                        }) {
-//
-//                            Text("I was really \nhoping that...")
-//                                .font(.system(size: 10))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 5 ? Color(.systemOrange) : ColorManager .orange1)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//
-//
+                        Button(action: {
+                            mood = 4
+                        }) {
+
+                            Text("My Exciting \nNEWS!")
+                                .font(.system(size: 10))
+                                .foregroundColor(Color.black)
+                        }
+                        .frame(width: 80, height: 30, alignment: .center)
+                        .background(mood == 4 ? Color(.systemGreen) : Color .yellow)
+                        .cornerRadius(7)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
+
+                        Spacer()
+                            .frame(height: 12)
+
+                        Button(action: {
+                            mood = 5
+                        }) {
+
+                            Text("I was really \nhoping that...")
+                                .font(.system(size: 10))
+                                .foregroundColor(Color.black)
+                        }
+                        .frame(width: 80, height: 30, alignment: .center)
+                        .background(mood == 5 ? Color(.systemOrange) : ColorManager .orange1)
+                        .cornerRadius(7)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
+
+
 //                    }
 //
                     Spacer()
@@ -519,19 +549,19 @@ struct AtmosphereInfo: View {
                         //                            .onReceive(Just(summary)) { _ in limitText(45) }
                         VStack {
                             
-                            Text("Alert frinds that something happened")
-                                .italic()
-                                .font(.system(size: 17))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager .grey3)
-                            
-                            Text("but you're not ready to talk yet!")
-                                .italic()
-                                .font(.system(size: 17))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager .grey3)
+//                            Text("Alert frinds that something happened")
+//                                .italic()
+//                                .font(.system(size: 17))
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(ColorManager .grey3)
+//                            
+//                            Text("but you're not ready to talk yet!")
+//                                .italic()
+//                                .font(.system(size: 17))
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(ColorManager .grey3)
                             
                         }
                     }
