@@ -138,59 +138,7 @@ struct AtmosphereInfo: View {
                 HStack {
                     VStack {
              
-//
-                      
-                        
-//
-//                        Text("Send me a")
-//                          .italic()
-//                          .font(.system(size: 15))
-//                          .fontWeight(.light)
-//                          .multilineTextAlignment(.center)
-//                          .foregroundColor(ColorManager .grey2)
-//
-//                        Text("Care Heart")
-//                          .italic()
-//                          .font(.system(size: 15))
-//                          .fontWeight(.light)
-//                          .multilineTextAlignment(.center)
-//                          .foregroundColor(ColorManager .grey2)
-//
-//                        Button(action: {
-//                            mood = 0
-//                        }) {
-//
-//                            ZStack {
-//                                Image(systemName: "heart.fill")
-//                                    .resizable()
-//                                    .foregroundColor(ColorManager .purple1)
-//                                    .frame(width: 100, height: 80)
-//                                    .cornerRadius(30)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//
-//                                Text("tap")
-//                                    .fontWeight(.thin)
-//                                    .frame(width: 70, height: 37)
-//                                    .foregroundColor(ColorManager .purple7)
-//                                    .font(.system(size: 20))
-//                                    .background(ColorManager .purple1)
-//                                    .cornerRadius(10)
-//                                    .opacity(0.95)
-//
-//                                //                            Text("Send me a \nCare Heart")
-//                                //                                .font(.system(size: 10))
-//                                //                                .foregroundColor(Color.black)
-//                            }
-//                            .frame(width: 120, height: 90, alignment: .center)
-//
-//                            .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
-//                            .cornerRadius(37)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        }
-               
-                        
-                                                Spacer()
+                                       Spacer()
                                                     .frame(height: 12)
                         
                                                 Button(action: {
@@ -263,13 +211,7 @@ struct AtmosphereInfo: View {
                     Spacer()
                         .frame(width: 50)
                  
-                    VStack {
-                        
- 
-                                               
-                    }
-                    
-                    
+            
                     
                     
                     
@@ -277,73 +219,7 @@ struct AtmosphereInfo: View {
                     
                     //                    ***********************************************************
                     
-                    VStack {
-                        
-//
-//
-//                        Text("Work things out in")
-//                          .italic()
-//                          .font(.system(size: 15))
-//                          .fontWeight(.light)
-//                          .multilineTextAlignment(.center)
-//                          .foregroundColor(ColorManager .grey2)
-//
-//                        Text("safety of My Room")
-//                          .italic()
-//                          .font(.system(size: 15))
-//                          .fontWeight(.light)
-//                          .multilineTextAlignment(.center)
-//                          .foregroundColor(ColorManager .grey2)
-                        
-//                        Text("My Room")
-//                          .italic()
-//                          .font(.system(size: 13))
-//                          .fontWeight(.light)
-//                          .multilineTextAlignment(.center)
-//                          .foregroundColor(ColorManager .grey3)
-//
-//                        Text("from the wreckage")
-//                          .italic()
-//                          .font(.system(size: 13))
-//                          .fontWeight(.light)
-//                          .multilineTextAlignment(.center)
-//                          .foregroundColor(ColorManager .grey3)
-                        
-                        
-                        ZStack {
-//                        Image(systemName: "heart.fill")
-//                            .resizable()
-//                            .foregroundColor(Color .white)
-//                            .frame(width: 100, height: 80)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//                            .opacity(0.95)
-//
-//
-//                        NavigationLink(
-//                            destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-//                            label: {
-//                                Text("tap")
-//                                    .fontWeight(.thin)
-//                                    .frame(width: 70, height: 37)
-//                                    .foregroundColor(ColorManager .purple7)
-//                                    .font(.system(size: 20))
-//                                    .background(ColorManager .purple1)
-//                                    .cornerRadius(10)
-//                                    .opacity(0.95)
-//
-//                                    .frame(width: 120, height: 90, alignment: .center)
-//
-//                                    .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
-//                                    .cornerRadius(37)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                            })
-                    }
-                        
-                    }
-                    
-                    
-                    
+   
                     
                     
                     
@@ -1032,3 +908,70 @@ struct AtmosphereInfo: View {
 //    }
 //
 //
+//                    VStack {
+                        
+//
+//
+//                        Text("Work things out in")
+//                          .italic()
+//                          .font(.system(size: 15))
+//                          .fontWeight(.light)
+//                          .multilineTextAlignment(.center)
+//                          .foregroundColor(ColorManager .grey2)
+//
+//                        Text("safety of My Room")
+//                          .italic()
+//                          .font(.system(size: 15))
+//                          .fontWeight(.light)
+//                          .multilineTextAlignment(.center)
+//                          .foregroundColor(ColorManager .grey2)
+                        
+//                        Text("My Room")
+//                          .italic()
+//                          .font(.system(size: 13))
+//                          .fontWeight(.light)
+//                          .multilineTextAlignment(.center)
+//                          .foregroundColor(ColorManager .grey3)
+//
+//                        Text("from the wreckage")
+//                          .italic()
+//                          .font(.system(size: 13))
+//                          .fontWeight(.light)
+//                          .multilineTextAlignment(.center)
+//                          .foregroundColor(ColorManager .grey3)
+                        
+                        
+//                        ZStack {
+//                        Image(systemName: "heart.fill")
+//                            .resizable()
+//                            .foregroundColor(Color .white)
+//                            .frame(width: 100, height: 80)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                            .opacity(0.95)
+//
+//
+//                        NavigationLink(
+//                            destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                            label: {
+//                                Text("tap")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 70, height: 37)
+//                                    .foregroundColor(ColorManager .purple7)
+//                                    .font(.system(size: 20))
+//                                    .background(ColorManager .purple1)
+//                                    .cornerRadius(10)
+//                                    .opacity(0.95)
+//
+//                                    .frame(width: 120, height: 90, alignment: .center)
+//
+//                                    .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
+//                                    .cornerRadius(37)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            })
+//                    }
+                        
+//                    }
+                    
+                    
+                 
