@@ -272,6 +272,9 @@ struct PlanetActionsView: View {
                                         //                          NavigationLink(destination: HorizonPromoPage(user: user, friends: friends, atmosphere: atmosphere),
                                         //                                        LINK ^^^ TO THE JOURNAL INTRO PAGE **************
                                         
+//                                        NEWSFeedPergion(user: user, friends: friends, atmosphere: atmosphere
+                                        
+                                        
                                         NavigationLink(destination: NEWSFeedPergion(user: user, friends: friends, atmosphere: atmosphere),
                                                        label: {
                                             VStack {
@@ -448,7 +451,13 @@ struct PlanetActionsView: View {
                         
                         
                         
-                        NavigationLink(destination: PickMediator(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                        PickMediator is for Dream section
+                        
+//                        PickMediator(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
+//
+                        
+                        
+                        NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
                             
                             ZStack {

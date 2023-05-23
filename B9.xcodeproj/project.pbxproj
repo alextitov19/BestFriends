@@ -828,6 +828,7 @@
 				CF39F17A292C5F5000927A3C /* STARTHERE */,
 				CFFA7F0529B0DCDC0086F88A /* START Pages */,
 				CF1CD75329E2908B00D1F801 /* New Summer Feature */,
+				CFB2A8F22A1AE85A0074497C /* JOURNAL */,
 				D0CC1A02283EE31900E7461F /* Horizons */,
 				CFC0EE7829080585006B3FAA /* INFO Pages */,
 				CF47CF0A28E2CAC7008B6F11 /* WORLD */,
@@ -1312,6 +1313,13 @@
 			path = "Help Beta Test";
 			sourceTree = "<group>";
 		};
+		CFB2A8F22A1AE85A0074497C /* JOURNAL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JOURNAL;
+			sourceTree = "<group>";
+		};
 		CFC0EE702906F9D9006B3FAA /* New Group */ = {
 			isa = PBXGroup;
 			children = (
@@ -1347,9 +1355,9 @@
 		CFD04689282D6FDD00BF0B02 /* Atmosphere */ = {
 			isa = PBXGroup;
 			children = (
+				CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */,
 				CF1ECABE286E876900D999F8 /* AtmosphereInfo.swift */,
 				CFD8BD072912B0EB00F86EFB /* AtmosphereInfo2.swift */,
-				CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */,
 				CF6504152893192C0092EEB9 /* AtmosphereDVid.swift */,
 				CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */,
 				CFD12CC6281943CA00AB2539 /* Impetus.swift */,
