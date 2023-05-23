@@ -301,7 +301,7 @@ struct AtmosphereInfo: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 7 ? Color(.systemYellow) : ColorManager .orange2)
+                        .background(mood == 7 ? Color(.systemGreen) : ColorManager .orange2)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
@@ -318,7 +318,7 @@ struct AtmosphereInfo: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 8 ? Color(.systemYellow) : ColorManager .pmbc_green)
+                        .background(mood == 8 ? Color(.systemGreen) : Color .yellow)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
@@ -330,12 +330,12 @@ struct AtmosphereInfo: View {
                             mood = 9
                         }) {
 
-                            Text("Exciting News")
+                            Text("My Exciting \nNews")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 9 ? Color(.systemYellow) : ColorManager .orange2)
+                        .background(mood == 9 ? Color(.systemGreen) : Color .yellow)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
