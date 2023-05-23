@@ -228,7 +228,7 @@ struct AtmosphereInfo: View {
                             mood = 4
                         }) {
 
-                            Text("Non-specific \nIssue")
+                            Text("Not \nSaying")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
