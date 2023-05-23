@@ -84,14 +84,23 @@ struct AtmosphereInfo: View {
                     VStack {
                        
                         HStack{
-                            Text("My Vibe \nChanged")
-                                .font(.system(size: 30))
-                                .fontWeight(.ultraLight)
-                                .foregroundColor(ColorManager .grey1)
-                                .multilineTextAlignment(.center)
                             
+                            VStack {
+                                Text("My Vibe")
+                                    .font(.system(size: 30))
+                                    .fontWeight(.ultraLight)
+                                    .foregroundColor(ColorManager .grey1)
+                                    .multilineTextAlignment(.center)
+                                Text("Changed")
+                                    .font(.system(size: 30))
+                                    .fontWeight(.ultraLight)
+                                    .foregroundColor(ColorManager .grey1)
+                                    .multilineTextAlignment(.center)
+                                
+                            }
+                                
                             Spacer()
-                                .frame(width: 50)
+                                .frame(width: 30)
                             
                             
                             Image("FatGuy200")
@@ -531,8 +540,8 @@ struct AtmosphereInfo: View {
                         
                     }
                     
-                    Spacer()
-                        .frame(height: 40)
+//                    Spacer()
+//                        .frame(height: 40)
                     
                     ZStack {
                         //                        Rectangle()
@@ -555,7 +564,7 @@ struct AtmosphereInfo: View {
 //                                .fontWeight(.light)
 //                                .multilineTextAlignment(.center)
 //                                .foregroundColor(ColorManager .grey3)
-//                            
+//
 //                            Text("but you're not ready to talk yet!")
 //                                .italic()
 //                                .font(.system(size: 17))
