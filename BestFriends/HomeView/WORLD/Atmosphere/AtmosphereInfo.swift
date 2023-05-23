@@ -82,7 +82,7 @@ struct AtmosphereInfo: View {
                 HStack {
                     
                     
-                    Text("")
+                    Text("My Vibe \nChanged")
                         .font(.system(size: 30))
                         .fontWeight(.ultraLight)
                         .foregroundColor(ColorManager .grey1)
@@ -97,105 +97,123 @@ struct AtmosphereInfo: View {
                 HStack {
                     VStack {
              
+//                        
+//                        
+//                        Text("Send me a")
+//                          .italic()
+//                          .font(.system(size: 15))
+//                          .fontWeight(.light)
+//                          .multilineTextAlignment(.center)
+//                          .foregroundColor(ColorManager .grey2)
+//
+//                        Text("Care Heart")
+//                          .italic()
+//                          .font(.system(size: 15))
+//                          .fontWeight(.light)
+//                          .multilineTextAlignment(.center)
+//                          .foregroundColor(ColorManager .grey2)
+//                        
+//                        Button(action: {
+//                            mood = 0
+//                        }) {
+//
+//                            ZStack {
+//                                Image(systemName: "heart.fill")
+//                                    .resizable()
+//                                    .foregroundColor(ColorManager .purple1)
+//                                    .frame(width: 100, height: 80)
+//                                    .cornerRadius(30)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//
+//                                Text("tap")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 70, height: 37)
+//                                    .foregroundColor(ColorManager .purple7)
+//                                    .font(.system(size: 20))
+//                                    .background(ColorManager .purple1)
+//                                    .cornerRadius(10)
+//                                    .opacity(0.95)
+//
+//                                //                            Text("Send me a \nCare Heart")
+//                                //                                .font(.system(size: 10))
+//                                //                                .foregroundColor(Color.black)
+//                            }
+//                            .frame(width: 120, height: 90, alignment: .center)
+//
+//                            .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
+//                            .cornerRadius(37)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        }
+               
+                        
+                                                Spacer()
+                                                    .frame(height: 12)
+                        
+                                                Button(action: {
+                                                    mood = 0
+                                                }) {
+                        
+                                                    Text("School Issues")
+                                                        .font(.system(size: 10))
+                                                        .foregroundColor(Color.black)
+                                                }
+                                                .frame(width: 80, height: 30, alignment: .center)
+                                                .background(mood == 1 ? Color(.cyan) : ColorManager .purple3)
+                                                .cornerRadius(7)
+                                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
                         
-                        Text("Send me a")
-                          .italic()
-                          .font(.system(size: 15))
-                          .fontWeight(.light)
-                          .multilineTextAlignment(.center)
-                          .foregroundColor(ColorManager .grey2)
-                        
-                        Text("Care Heart")
-                          .italic()
-                          .font(.system(size: 15))
-                          .fontWeight(.light)
-                          .multilineTextAlignment(.center)
-                          .foregroundColor(ColorManager .grey2)
-                        
+                        Spacer()
+                            .frame(height: 12)
+
                         Button(action: {
-                            mood = 0
+                            mood = 1
                         }) {
-                            
-                            ZStack {
-                                Image(systemName: "heart.fill")
-                                    .resizable()
-                                    .foregroundColor(ColorManager .purple1)
-                                    .frame(width: 100, height: 80)
-                                    .cornerRadius(30)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                                
-                                Text("tap")
-                                    .fontWeight(.thin)
-                                    .frame(width: 70, height: 37)
-                                    .foregroundColor(ColorManager .purple7)
-                                    .font(.system(size: 20))
-                                    .background(ColorManager .purple1)
-                                    .cornerRadius(10)
-                                    .opacity(0.95)
-                                
-                                //                            Text("Send me a \nCare Heart")
-                                //                                .font(.system(size: 10))
-                                //                                .foregroundColor(Color.black)
-                            }
-                            .frame(width: 120, height: 90, alignment: .center)
-                           
-                            .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
-                            .cornerRadius(37)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
+                            Text("Dented Heart")
+                                .font(.system(size: 10))
+                                .foregroundColor(Color.black)
                         }
-                        
-//                        Spacer()
-//                            .frame(height: 12)
+                        .frame(width: 80, height: 30, alignment: .center)
+                        .background(mood == 1 ? Color(.cyan) : ColorManager .purple3)
+                        .cornerRadius(7)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
+
+                        Spacer()
+                            .frame(height: 12)
 //
 //                        Button(action: {
-//                            mood = 1
+//                            mood = 2
 //                        }) {
 //
-//                            Text("Dented Heart")
+//                            Text("Family \nIssues")
 //                                .font(.system(size: 10))
 //                                .foregroundColor(Color.black)
 //                        }
 //                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 1 ? Color(.cyan) : ColorManager .purple3)
+//                        .background(mood == 2 ? Color(.cyan) : ColorManager .pmbc_blue)
 //                        .cornerRadius(7)
 //                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 //
 //
 //                        Spacer()
 //                            .frame(height: 12)
-////
-////                        Button(action: {
-////                            mood = 2
-////                        }) {
-////
-////                            Text("Family \nIssues")
-////                                .font(.system(size: 10))
-////                                .foregroundColor(Color.black)
-////                        }
-////                        .frame(width: 80, height: 30, alignment: .center)
-////                        .background(mood == 2 ? Color(.cyan) : ColorManager .pmbc_blue)
-////                        .cornerRadius(7)
-////                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-////
-////
-////                        Spacer()
-////                            .frame(height: 12)
-//
-//                        Button(action: {
-//                            mood = 3
-//                        }) {
-//
-//                            Text("Sad \nLonely")
-//                                .font(.system(size: 10))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 3 ? Color(.cyan) : ColorManager .purple3)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
+
+                        Button(action: {
+                            mood = 3
+                        }) {
+
+                            Text("Sad \nLonely")
+                                .font(.system(size: 10))
+                                .foregroundColor(Color.black)
+                        }
+                        .frame(width: 80, height: 30, alignment: .center)
+                        .background(mood == 3 ? Color(.cyan) : ColorManager .purple3)
+                        .cornerRadius(7)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
                     }
                     
                     Spacer()

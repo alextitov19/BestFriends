@@ -457,7 +457,7 @@ struct PlanetActionsView: View {
 //
                         
                         
-                        NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        NavigationLink(destination: AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
                             
                             ZStack {
@@ -471,7 +471,7 @@ struct PlanetActionsView: View {
                                     .opacity(0.80)
                                 
                                 VStack {
-                                    Text("")
+                                    Text("Vibe \nMothers")
                                         .foregroundColor(ColorManager .purple3)
                                         .font(.system(size: 20, weight: .regular))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
