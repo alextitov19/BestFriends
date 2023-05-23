@@ -209,7 +209,7 @@ struct AtmosphereInfo: View {
                     
                    
                     Spacer()
-                        .frame(width: 50)
+                        .frame(width: 30)
                  
             
                     
@@ -228,7 +228,7 @@ struct AtmosphereInfo: View {
                             mood = 4
                         }) {
 
-                            Text("My Exciting \nNEWS!")
+                            Text("Non-specific \nIssue")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -259,7 +259,7 @@ struct AtmosphereInfo: View {
 //                    }
 //
                     Spacer()
-                        .frame(width: 20)
+                        .frame(width: 30)
                     
                     VStack {
 //
@@ -296,12 +296,12 @@ struct AtmosphereInfo: View {
                             mood = 7
                         }) {
 
-                            Text("Happy \nToday")
+                            Text("Smiling \nToday")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 7 ? Color(.systemGreen) : ColorManager .orange2)
+                        .background(mood == 7 ? Color(.systemGreen) : Color .yellow)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
