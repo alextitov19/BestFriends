@@ -238,21 +238,21 @@ struct AtmosphereInfo: View {
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
 
-                        Spacer()
-                            .frame(height: 12)
-
-                        Button(action: {
-                            mood = 5
-                        }) {
-
-                            Text("I was really \nhoping that...")
-                                .font(.system(size: 10))
-                                .foregroundColor(Color.black)
-                        }
-                        .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 5 ? Color(.systemOrange) : ColorManager .orange1)
-                        .cornerRadius(7)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        Spacer()
+//                            .frame(height: 12)
+////
+//                        Button(action: {
+//                            mood = 5
+//                        }) {
+//
+//                            Text("I was really \nhoping that...")
+//                                .font(.system(size: 10))
+//                                .foregroundColor(Color.black)
+//                        }
+//                        .frame(width: 80, height: 30, alignment: .center)
+//                        .background(mood == 5 ? Color(.systemOrange) : ColorManager .orange1)
+//                        .cornerRadius(7)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
 
 
@@ -289,119 +289,56 @@ struct AtmosphereInfo: View {
                             .frame(height: 25)
                         
                         HStack {
-                            
-//                            VStack {
-//
-//                                Button(action: {
-//                                    sessionManager.showLogin()
-//                                },
-//                                       label: {
-//                                    Image("home-alt2")
-//                                        .frame(width: 50, height: 25)
-//                                        .foregroundColor(.white)
-//                                        .font(.system(size: 20))
-//                                        .background(Color .black)
-//                                        .cornerRadius(15)
-//                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                                        .opacity(0.70)
-//
-//                                })
-//
-//                            }
-//                            Button(action: {
-//                                sessionManager.showLogin()
-//                            },
-//                                   label: {
-//                                Image("FaceTime")
-//                                    .frame(width: 5, height: 5)
-//                            })
-//                                Spacer()
-//                                    .frame(width: 15)
-//
-//                            //
-//                            Button(action: {
-//                                sessionManager.showLogin()
-//                            },
-//                                   label: {
-//                                Image("home-alt2")
-//                                    .frame(width: 50, height: 25)
-//                                    .foregroundColor(.white)
-//                                    .font(.system(size: 20))
-//                                    .background(Color .black)
-//                                    .cornerRadius(15)
-//                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                                    .opacity(0.70)
-//
-//                            })
-//
-//                            Spacer()
-//                                .frame(width: 15)
-//
-//
-//                            Button(action: {
-//                                sessionManager.showLogin()
-//                            },
-//                                   label: {
-//                                Image("download")
-//                                    .frame(width: 5, height: 5)
-////                                    .foregroundColor(.white)
-////                                    .font(.system(size: 20))
-////                                    .background(Color .black)
-////                                    .cornerRadius(15)
-////                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-////                                    .opacity(0.70)
-//
-//                            })
-                           
+                             
                         }
-//
-//                        Button(action: {
-//                            mood = 7
-//                        }) {
-//
-//                            Text("Happy \nToday")
-//                                .font(.system(size: 10))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 7 ? Color(.systemYellow) : ColorManager .orange2)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//
-//                        Spacer()
-//                            .frame(height: 12)
+
+                        Button(action: {
+                            mood = 7
+                        }) {
+
+                            Text("Happy \nToday")
+                                .font(.system(size: 10))
+                                .foregroundColor(Color.black)
+                        }
+                        .frame(width: 80, height: 30, alignment: .center)
+                        .background(mood == 7 ? Color(.systemYellow) : ColorManager .orange2)
+                        .cornerRadius(7)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
+
+                        Spacer()
+                            .frame(height: 12)
                         
-//                        Button(action: {
-//                            mood = 8
-//                        }) {
-//
-//                            Text("Found \nNEW Music")
-//                                .font(.system(size: 10))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 8 ? Color(.systemYellow) : ColorManager .pmbc_green)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//
-//                        Spacer()
-//                            .frame(height: 12)
-//
-//                        Button(action: {
-//                            mood = 9
-//                        }) {
-//
-//                            Text("Exciting News")
-//                                .font(.system(size: 10))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 9 ? Color(.systemYellow) : ColorManager .orange2)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
+                        Button(action: {
+                            mood = 8
+                        }) {
+
+                            Text("Found \nNEW Music")
+                                .font(.system(size: 10))
+                                .foregroundColor(Color.black)
+                        }
+                        .frame(width: 80, height: 30, alignment: .center)
+                        .background(mood == 8 ? Color(.systemYellow) : ColorManager .pmbc_green)
+                        .cornerRadius(7)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
+
+                        Spacer()
+                            .frame(height: 12)
+
+                        Button(action: {
+                            mood = 9
+                        }) {
+
+                            Text("Exciting News")
+                                .font(.system(size: 10))
+                                .foregroundColor(Color.black)
+                        }
+                        .frame(width: 80, height: 30, alignment: .center)
+                        .background(mood == 9 ? Color(.systemYellow) : ColorManager .orange2)
+                        .cornerRadius(7)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
                     }
                 }
                 
