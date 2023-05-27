@@ -88,7 +88,7 @@ struct MyRoomInfo: View {
                 NavigationLink(destination: AtmosphereInfo1(user: user, atmosphere: atmosphere, friends: friends), label: {
                     MyRoomCircle (color: Color .white, friendName: "request \na song")
                 })
-                .offset(x: showItems ? 100 : 0, y: showItems ? 150: 0)
+                .offset(x: showItems ? 100 : 0, y: showItems ? 200: 0)
                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
                 .opacity(0.6)
                 
@@ -111,6 +111,13 @@ struct MyRoomInfo: View {
                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
                 .opacity(0.25)
                 
+                
+//                NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
+//                    MyRoomCircle (color: ColorManager .red, friendName: "worldwide \nteen advice \nGPT (AI)")
+//                })
+//                .offset(x: showItems ? 100 : 0, y: showItems ? -100: 0)
+//                .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+//                .opacity(0.25)
                 
                 
                 
@@ -149,7 +156,7 @@ struct MyRoomInfo: View {
                 })
                 .offset(x: showItems ? -50 : 0, y: showItems ? 270: 0)
                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                .opacity(0.8)
+                .opacity(0.5)
                 
 //                NavigationLink(destination: EmptyView(), label: {
 //                    MyRoomCircle (color: Color .purple, friendName: "We got you! \nTAP")
@@ -163,7 +170,7 @@ struct MyRoomInfo: View {
                 
               
                 NavigationLink(destination: EmptyView(), label: {
-                    MyRoomCircle (color: ColorManager .purple4, friendName: "TAP")
+                    MyRoomCircle (color: Color .green, friendName: "TAP")
                 })
                 .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
                 .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
@@ -176,9 +183,18 @@ struct MyRoomInfo: View {
                     NavigationLink(destination: HorizonPromoPage(user: user, friends: friends, atmosphere: atmosphere), label: {
                         MyRoomCircle (color: ColorManager .purple4, friendName: "my \njournal")
                     })
-                    .offset(x: showItems ? 0 : 0, y: showItems ? 300: 0)
+                    .offset(x: showItems ? 0 : 0, y: showItems ? 400: 0)
                     .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
-                    .opacity(0.8)
+                    .opacity(0.5)
+                    
+                    
+                    NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
+                        MyRoomCircle (color: ColorManager .purple5, friendName: "worldwide \nteen advice \nGPT (AI)")
+                    })
+                    .offset(x: showItems ? 100 : 0, y: showItems ? 100: 0)
+                    .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
+                    .opacity(0.5)
+                    
                     
                     
 //
