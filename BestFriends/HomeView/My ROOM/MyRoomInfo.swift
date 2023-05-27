@@ -189,7 +189,7 @@ struct MyRoomInfo: View {
                     
                     
                     NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
-                        MyRoomCircle (color: ColorManager .purple5, friendName: "worldwide \nteen advice \nGPT (AI)")
+                        MyRoomCircle (color: Color .green, friendName: "worldwide \nteen advice \nGPT (AI)")
                     })
                     .offset(x: showItems ? 100 : 0, y: showItems ? 100: 0)
                     .shadow(color: ColorManager .purple1, radius: 10, x: 10, y: 10)
