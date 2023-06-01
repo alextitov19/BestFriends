@@ -49,6 +49,15 @@ struct TestPage2: View {
             
             VStack {
                 
+                Text("Ouch!")
+                    .font(.system(size: 40))
+//                    .italic()
+                    .fontWeight(.regular)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager .grey3)
+                
+                
+                
                 Text("something bad")
                     .font(.system(size: 40))
 //                    .italic()
@@ -59,51 +68,93 @@ struct TestPage2: View {
              
                 
                 Text("just happend")
-                    .font(.system(size: 35))
-                    .italic()
-                    .fontWeight(.light)
+                    .font(.system(size: 40))
+                    
+                    .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager .grey3)
                 
-                Spacer ()
-                    .frame(height: 80)
+               
                 
-                Text("I need time alone in")
-                    .font(.system(size: 25))
+                Text("We understand you may need time alone")
+                    .font(.system(size: 20))
 //                    .italic()
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager .grey3)
+          
+                Text("before talking to your friends")
+                    .font(.system(size: 20))
+                //                    .italic()
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager .grey3)
                 
                 Spacer ()
-                    .frame(height: 10)
-               
+                    .frame(height: 20)
+                
+                Text("Maybe you feel that")
+                    .font(.system(size: 22))
+                    .italic()
+                    .fontWeight(.regular)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager .grey3)
+         
                 VStack {
                     
-                    Text("My Room")
-                        .font(.system(size: 35))
+                    
+                
+                    
+               
+                    
+                    Text("- you don't want to bother them")
+                        .font(.system(size: 15))
                     //                    .italic()
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager .grey3)
-                    Spacer ()
-                        .frame(height: 10)
                     
-                    Text("before talking to my friends")
-                        .font(.system(size: 25))
+                    Spacer ()
+                        .frame(height: 5)
+                    
+                    Text("- they really can't help fix this")
+                        .font(.system(size: 15))
                     //                    .italic()
-                        .fontWeight(.thin)
+                        .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager .grey3)
                     
-          
+                    Spacer ()
+                        .frame(height: 5)
                     
+                    Text("- don't want to worry them ")
+                        .font(.system(size: 15))
+                    //                    .italic()
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager .grey3)
+                    
+             
+                    
+                    Spacer ()
+                        .frame(height: 20)
+                    
+                    Text("Guess What")
+                        .font(.system(size: 30))
+                    
+                        .fontWeight(.regular)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager .grey3)
+                    
+                    Text("Your freinds care about you")
+                        .font(.system(size: 30))
+                    
+                        .fontWeight(.regular)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager .grey3)
                 }
                 
-                
-                
-                Spacer ()
-                    .frame(height: 20)
+      
                 
                 ZStack {
                     
@@ -135,7 +186,7 @@ struct TestPage2: View {
                    
                      
                         
-                        Text("But your friends want to give you")
+                        Text("and want to give you")
                             .font(.system(size: 20))
                             .italic()
                             .fontWeight(.light)
