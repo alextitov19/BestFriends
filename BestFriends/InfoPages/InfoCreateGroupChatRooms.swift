@@ -11,7 +11,7 @@ import Foundation
 import SwiftUI
 
 
-struct CreateGroupChatRooms: View {
+struct InfoCreateGroupChatRooms: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     

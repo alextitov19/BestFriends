@@ -110,10 +110,10 @@
 		CF2DBCF128552527008616A3 /* storm2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2DBCF028552527008616A3 /* storm2.mp4 */; };
 		CF2DBCF928554E5B008616A3 /* BuildFriendPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */; };
 		CF2EE6F429515B8400B1B16D /* INFOChatCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6F329515B8400B1B16D /* INFOChatCircles.swift */; };
-		CF2EE6F629516C7000B1B16D /* CreateGroupChatRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6F529516C7000B1B16D /* CreateGroupChatRooms.swift */; };
-		CF2EE6F829516C8A00B1B16D /* HowChatWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6F729516C8A00B1B16D /* HowChatWorks.swift */; };
-		CF2EE6FA29516C9E00B1B16D /* CustomizeChatBackgrounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6F929516C9E00B1B16D /* CustomizeChatBackgrounds.swift */; };
-		CF2EE6FC29517A4B00B1B16D /* CreateChatRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6FB29517A4B00B1B16D /* CreateChatRooms.swift */; };
+		CF2EE6F629516C7000B1B16D /* InfoCreateGroupChatRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6F529516C7000B1B16D /* InfoCreateGroupChatRooms.swift */; };
+		CF2EE6F829516C8A00B1B16D /* InfoHowChatWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6F729516C8A00B1B16D /* InfoHowChatWorks.swift */; };
+		CF2EE6FA29516C9E00B1B16D /* InfoCustomizeChatBackgrounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6F929516C9E00B1B16D /* InfoCustomizeChatBackgrounds.swift */; };
+		CF2EE6FC29517A4B00B1B16D /* InfoCreateChatRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6FB29517A4B00B1B16D /* InfoCreateChatRooms.swift */; };
 		CF2EE6FE295294E600B1B16D /* INFOMainHowWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6FD295294E600B1B16D /* INFOMainHowWorks.swift */; };
 		CF2EE70129529C0300B1B16D /* NEWSFeedPergion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE70029529C0300B1B16D /* NEWSFeedPergion.swift */; };
 		CF2FD942280BBA1B0036F4BB /* Step3_BreathInviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD941280BBA1B0036F4BB /* Step3_BreathInviteView.swift */; };
@@ -251,8 +251,8 @@
 		CFCB79A1284D2F9000B8D868 /* HugVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */; };
 		CFCD3BC229DF845000D19A0F /* TestPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD3BC129DF845000D19A0F /* TestPage.swift */; };
 		CFCD3BC429DF849A00D19A0F /* TestPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD3BC329DF849A00D19A0F /* TestPage2.swift */; };
-		CFCD4BAD2965C27F00BBE43A /* SafeChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD4BAC2965C27F00BBE43A /* SafeChat.swift */; };
-		CFCD4BAF2965CE5C00BBE43A /* ComingChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD4BAE2965CE5C00BBE43A /* ComingChat.swift */; };
+		CFCD4BAD2965C27F00BBE43A /* InfoSafeChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD4BAC2965C27F00BBE43A /* InfoSafeChat.swift */; };
+		CFCD4BAF2965CE5C00BBE43A /* InfoComingChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD4BAE2965CE5C00BBE43A /* InfoComingChat.swift */; };
 		CFD0468D282D7F8400BF0B02 /* AtmosphereMain2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */; };
 		CFD046932832F9D000BF0B02 /* Friend1VaultPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */; };
 		CFD046952835925F00BF0B02 /* FriendValutTrackMoods.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */; };
@@ -400,10 +400,10 @@
 		CF2DBCF028552527008616A3 /* storm2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = storm2.mp4; sourceTree = "<group>"; };
 		CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildFriendPlaylist.swift; sourceTree = "<group>"; };
 		CF2EE6F329515B8400B1B16D /* INFOChatCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOChatCircles.swift; sourceTree = "<group>"; };
-		CF2EE6F529516C7000B1B16D /* CreateGroupChatRooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupChatRooms.swift; sourceTree = "<group>"; };
-		CF2EE6F729516C8A00B1B16D /* HowChatWorks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowChatWorks.swift; sourceTree = "<group>"; };
-		CF2EE6F929516C9E00B1B16D /* CustomizeChatBackgrounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeChatBackgrounds.swift; sourceTree = "<group>"; };
-		CF2EE6FB29517A4B00B1B16D /* CreateChatRooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChatRooms.swift; sourceTree = "<group>"; };
+		CF2EE6F529516C7000B1B16D /* InfoCreateGroupChatRooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCreateGroupChatRooms.swift; sourceTree = "<group>"; };
+		CF2EE6F729516C8A00B1B16D /* InfoHowChatWorks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoHowChatWorks.swift; sourceTree = "<group>"; };
+		CF2EE6F929516C9E00B1B16D /* InfoCustomizeChatBackgrounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCustomizeChatBackgrounds.swift; sourceTree = "<group>"; };
+		CF2EE6FB29517A4B00B1B16D /* InfoCreateChatRooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCreateChatRooms.swift; sourceTree = "<group>"; };
 		CF2EE6FD295294E600B1B16D /* INFOMainHowWorks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOMainHowWorks.swift; sourceTree = "<group>"; };
 		CF2EE70029529C0300B1B16D /* NEWSFeedPergion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEWSFeedPergion.swift; sourceTree = "<group>"; };
 		CF2FD941280BBA1B0036F4BB /* Step3_BreathInviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3_BreathInviteView.swift; sourceTree = "<group>"; };
@@ -542,8 +542,8 @@
 		CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HugVideo.mp4; sourceTree = "<group>"; };
 		CFCD3BC129DF845000D19A0F /* TestPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestPage.swift; path = "BestFriends/HomeView/INFO Pages/TestPage.swift"; sourceTree = SOURCE_ROOT; };
 		CFCD3BC329DF849A00D19A0F /* TestPage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestPage2.swift; path = "BestFriends/MY ROOM/TestPage2.swift"; sourceTree = SOURCE_ROOT; };
-		CFCD4BAC2965C27F00BBE43A /* SafeChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeChat.swift; sourceTree = "<group>"; };
-		CFCD4BAE2965CE5C00BBE43A /* ComingChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingChat.swift; sourceTree = "<group>"; };
+		CFCD4BAC2965C27F00BBE43A /* InfoSafeChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSafeChat.swift; sourceTree = "<group>"; };
+		CFCD4BAE2965CE5C00BBE43A /* InfoComingChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoComingChat.swift; sourceTree = "<group>"; };
 		CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereMain2.swift; sourceTree = "<group>"; };
 		CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend1VaultPractice.swift; sourceTree = "<group>"; };
 		CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendValutTrackMoods.swift; sourceTree = "<group>"; };
@@ -693,20 +693,14 @@
 				7A63AF8A26A339C70072E21E /* Launch Screen.storyboard */,
 				7A71BD072625292B00E6FA9E /* Info.plist */,
 				7ACDB182282825C1009E1CFD /* GoogleService-Info.plist */,
+				7A9D1C4C2A316CC80033DA59 /* OtherPages */,
+				7A9D1C4B2A314B580033DA59 /* InfoPages */,
 				7A380F1528271E3E007151AB /* AppDelegate.swift */,
 				7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */,
 				7A0856A927F3DCC300E8282B /* SessionManager.swift */,
 				7AD8DF0B27F6970A00D9F0E1 /* AuthView */,
 				7AB52167289D9418005A49FA /* Purple Subscription */,
 				7AD8DF0A27F696F000D9F0E1 /* HomeView */,
-				CF37535B28C6953B003817E3 /* DREAMS */,
-				CF412806292712FD003BCBFA /* STORIES _ STORIES _ STORIES */,
-				CFD12CC92819E98800AB2539 /* DramaCentral */,
-				CF37535628BECF34003817E3 /* Built By Teens */,
-				CFAE7347283C745800015FD2 /* Help Beta Test */,
-				CFD0469D2838392200BF0B02 /* URGENT Chat Invite */,
-				CF2DBCF2285527C9008616A3 /* My Planet */,
-				CF725E2628516E180096342F /* Tokens */,
 				7A1C048627F4C3A90002B173 /* Models */,
 				7AC71DA627F3D7D4008D191B /* API */,
 				7A1DBD602659B1A400EB4B42 /* Ext+Custom */,
@@ -722,6 +716,37 @@
 				7A71BD052625292B00E6FA9E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7A9D1C4B2A314B580033DA59 /* InfoPages */ = {
+			isa = PBXGroup;
+			children = (
+				CFC0EE7829080585006B3FAA /* INFO Pages */,
+				CF2EE6F329515B8400B1B16D /* INFOChatCircles.swift */,
+				CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */,
+				CFCD4BAC2965C27F00BBE43A /* InfoSafeChat.swift */,
+				CF2EE6F929516C9E00B1B16D /* InfoCustomizeChatBackgrounds.swift */,
+				CF2EE6FB29517A4B00B1B16D /* InfoCreateChatRooms.swift */,
+				CF2EE6F729516C8A00B1B16D /* InfoHowChatWorks.swift */,
+				CFCD4BAE2965CE5C00BBE43A /* InfoComingChat.swift */,
+				CF2EE6F529516C7000B1B16D /* InfoCreateGroupChatRooms.swift */,
+				CF09118D284894F400CB0AF0 /* InfoView.swift */,
+				CFC0ACC128EFE26400B49831 /* ChatInfo2.swift */,
+			);
+			path = InfoPages;
+			sourceTree = "<group>";
+		};
+		7A9D1C4C2A316CC80033DA59 /* OtherPages */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC1A02283EE31900E7461F /* Horizons */,
+				CF1CD75329E2908B00D1F801 /* New Summer Feature */,
+				CF6499DE294D4148003BBF83 /* INFOPreloadA.swift */,
+				CF41280C2927542B003BCBFA /* SurveyStickers */,
+				CF650405288E76B50092EEB9 /* GotPushNotification.swift */,
+				CF01267C2A0E307000516B8E /* FriendShips */,
+			);
+			path = OtherPages;
 			sourceTree = "<group>";
 		};
 		7AB52167289D9418005A49FA /* Purple Subscription */ = {
@@ -740,11 +765,9 @@
 			isa = PBXGroup;
 			children = (
 				7AC4C01E27FF4A08000C4140 /* ChatView.swift */,
+				CF0911842848328F00CB0AF0 /* HideChat.swift */,
 				7A2C215C28050BCD009362CF /* ChatBubble.swift */,
-				CF09118D284894F400CB0AF0 /* InfoView.swift */,
-				CFC0ACC128EFE26400B49831 /* ChatInfo2.swift */,
-				CFD0ABCF285BC58D0032CA3D /* HideChat */,
-				CF65042E28A4386E0092EEB9 /* Chat Reactions */,
+				CF65042F28A438970092EEB9 /* ChatReactions.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -815,26 +838,21 @@
 			children = (
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
 				7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */,
-				CF650405288E76B50092EEB9 /* GotPushNotification.swift */,
 				7AD2642929EDCE020007ACD5 /* NotificationsView.swift */,
-				CFD8BD1229156D2A00F86EFB /* PLANET PAGE */,
+				CF2DBCF2285527C9008616A3 /* My Planet */,
+				CF725E2628516E180096342F /* Tokens */,
+				CFD8BD1229156D2A00F86EFB /* PlanetView */,
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
 				7AC4C01D27FF49F9000C4140 /* Chat */,
-				CF01267C2A0E307000516B8E /* FriendShips */,
-				CF2EE6FF29529BC200B1B16D /* NewsFeeds */,
 				CF3B65A9280071580003A714 /* Settings */,
-				CF41280C2927542B003BCBFA /* SurveyStickers */,
-				CF39F17A292C5F5000927A3C /* STARTHERE */,
-				CFFA7F0529B0DCDC0086F88A /* START Pages */,
-				CF1CD75329E2908B00D1F801 /* New Summer Feature */,
-				CFB2A8F22A1AE85A0074497C /* JOURNAL */,
-				D0CC1A02283EE31900E7461F /* Horizons */,
-				CFC0EE7829080585006B3FAA /* INFO Pages */,
-				CF47CF0A28E2CAC7008B6F11 /* WORLD */,
-				CF01267F2A0F7F4C00516B8E /* YouLookNice */,
-				CF71574F2975D27000094F22 /* SendKisses */,
-				CFE6F025297B8302004397A3 /* SendHomie */,
+				CFFA7F0529B0DCDC0086F88A /* Start */,
+				CF37535B28C6953B003817E3 /* DREAMS */,
+				CF412806292712FD003BCBFA /* STORIES _ STORIES _ STORIES */,
+				CFD12CC92819E98800AB2539 /* DramaCentral */,
+				CFAE7347283C745800015FD2 /* Help Beta Test */,
+				CFD0469D2838392200BF0B02 /* URGENT Chat Invite */,
+				CF47CF0A28E2CAC7008B6F11 /* CareHearts */,
 				CFD8BD0C2915562D00F86EFB /* My ROOM */,
 			);
 			path = HomeView;
@@ -853,17 +871,9 @@
 			isa = PBXGroup;
 			children = (
 				7AFCF27727FDFF2C00D2DB5C /* ChatGroupsView.swift */,
-				CF2EE6F329515B8400B1B16D /* INFOChatCircles.swift */,
 				7AFCF27E27FE005F00D2DB5C /* GroupRow.swift */,
 				7AFCF27927FDFFA800D2DB5C /* BlurView.swift */,
 				7AFCF27B27FDFFB000D2DB5C /* CustomCorner.swift */,
-				CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */,
-				CFCD4BAC2965C27F00BBE43A /* SafeChat.swift */,
-				CF2EE6FB29517A4B00B1B16D /* CreateChatRooms.swift */,
-				CF2EE6F729516C8A00B1B16D /* HowChatWorks.swift */,
-				CF2EE6F929516C9E00B1B16D /* CustomizeChatBackgrounds.swift */,
-				CFCD4BAE2965CE5C00BBE43A /* ComingChat.swift */,
-				CF2EE6F529516C7000B1B16D /* CreateGroupChatRooms.swift */,
 			);
 			path = ChatGroups;
 			sourceTree = "<group>";
@@ -936,21 +946,13 @@
 			path = "My Planet";
 			sourceTree = "<group>";
 		};
-		CF2EE6FF29529BC200B1B16D /* NewsFeeds */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NewsFeeds;
-			sourceTree = "<group>";
-		};
 		CF37535628BECF34003817E3 /* Built By Teens */ = {
 			isa = PBXGroup;
 			children = (
 				CFD0ABD7285C492F0032CA3D /* BuiltByTeens2.swift */,
 				CF3AE3B328F9F5BE002584A6 /* BuiltByTeens */,
 			);
-			name = "Built By Teens";
-			path = "MY ROOM/Built By Teens";
+			path = "Built By Teens";
 			sourceTree = "<group>";
 		};
 		CF37535B28C6953B003817E3 /* DREAMS */ = {
@@ -990,14 +992,6 @@
 				CF381A55282842EA00B3719E /* Step2FG_NewSolutions.swift */,
 			);
 			path = "Friend Group Fighting";
-			sourceTree = "<group>";
-		};
-		CF39F17A292C5F5000927A3C /* STARTHERE */ = {
-			isa = PBXGroup;
-			children = (
-				CF39F17B292C5F8000927A3C /* StartHere1.swift */,
-			);
-			path = STARTHERE;
 			sourceTree = "<group>";
 		};
 		CF3AE3B328F9F5BE002584A6 /* BuiltByTeens */ = {
@@ -1103,14 +1097,17 @@
 			path = SurveyStickers;
 			sourceTree = "<group>";
 		};
-		CF47CF0A28E2CAC7008B6F11 /* WORLD */ = {
+		CF47CF0A28E2CAC7008B6F11 /* CareHearts */ = {
 			isa = PBXGroup;
 			children = (
+				CFE6F025297B8302004397A3 /* SendHomie */,
+				CF71574F2975D27000094F22 /* SendKisses */,
+				CF01267F2A0F7F4C00516B8E /* YouLookNice */,
 				CFC0EE702906F9D9006B3FAA /* New Group */,
 				CF650426289F11980092EEB9 /* WorldPreload.swift */,
 				CFC0EE6E2906772A006B3FAA /* WorldPreload2.swift */,
 				CFD8BD052912A98A00F86EFB /* SaySomethingNice */,
-				CFD8BD032912A8F300F86EFB /* PhotoPOP */,
+				CFD8BD032912A8F300F86EFB /* PhotoPop */,
 				CFD8BD042912A95900F86EFB /* SomethingBuggingYou */,
 				CFD8BD062912A9C500F86EFB /* SendSong */,
 				CF8F76C72939B5BA00B109D3 /* TEENBoysUsing? */,
@@ -1118,7 +1115,7 @@
 				CFD04689282D6FDD00BF0B02 /* Atmosphere */,
 				CFDB150A2858F4D200155CEE /* Virtual HUG */,
 			);
-			path = WORLD;
+			path = CareHearts;
 			sourceTree = "<group>";
 		};
 		CF4A08D42877E23C00ADA9DD /* Nostalgia */ = {
@@ -1167,14 +1164,6 @@
 				CF3DB37528DA85BA00BF9CCD /* Meena1.m4a */,
 			);
 			path = "Background Videos";
-			sourceTree = "<group>";
-		};
-		CF65042E28A4386E0092EEB9 /* Chat Reactions */ = {
-			isa = PBXGroup;
-			children = (
-				CF65042F28A438970092EEB9 /* ChatReactions.swift */,
-			);
-			path = "Chat Reactions";
 			sourceTree = "<group>";
 		};
 		CF71574F2975D27000094F22 /* SendKisses */ = {
@@ -1313,13 +1302,6 @@
 			path = "Help Beta Test";
 			sourceTree = "<group>";
 		};
-		CFB2A8F22A1AE85A0074497C /* JOURNAL */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = JOURNAL;
-			sourceTree = "<group>";
-		};
 		CFC0EE702906F9D9006B3FAA /* New Group */ = {
 			isa = PBXGroup;
 			children = (
@@ -1366,28 +1348,12 @@
 			path = Atmosphere;
 			sourceTree = "<group>";
 		};
-		CFD0469A2837D9BC00BF0B02 /* PhotoPoP */ = {
-			isa = PBXGroup;
-			children = (
-				CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */,
-			);
-			path = PhotoPoP;
-			sourceTree = "<group>";
-		};
 		CFD0469D2838392200BF0B02 /* URGENT Chat Invite */ = {
 			isa = PBXGroup;
 			children = (
 				CFD0469E2838394C00BF0B02 /* UrgentChatInvite.swift */,
 			);
 			path = "URGENT Chat Invite";
-			sourceTree = "<group>";
-		};
-		CFD0ABCF285BC58D0032CA3D /* HideChat */ = {
-			isa = PBXGroup;
-			children = (
-				CF0911842848328F00CB0AF0 /* HideChat.swift */,
-			);
-			path = HideChat;
 			sourceTree = "<group>";
 		};
 		CFD12CC82819E83900AB2539 /* ThoughtfulMessages */ = {
@@ -1424,17 +1390,17 @@
 			path = DramaCentral;
 			sourceTree = "<group>";
 		};
-		CFD8BD032912A8F300F86EFB /* PhotoPOP */ = {
+		CFD8BD032912A8F300F86EFB /* PhotoPop */ = {
 			isa = PBXGroup;
 			children = (
-				CF24815428F5018B00D47AE3 /* PhotoPop1.swift */,
-				CF4128032922A451003BCBFA /* PhotoPOPFGPreload.swift */,
 				7A04C13C28553818003AB24A /* PhotoPopView.swift */,
+				CF4128032922A451003BCBFA /* PhotoPOPFGPreload.swift */,
+				CF24815428F5018B00D47AE3 /* PhotoPop1.swift */,
 				CF24815628F5060100D47AE3 /* PhotoPop3.swift */,
+				CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */,
 				7A04C13E2855390B003AB24A /* PhotoPopImageView.swift */,
-				CFD0469A2837D9BC00BF0B02 /* PhotoPoP */,
 			);
-			path = PhotoPOP;
+			path = PhotoPop;
 			sourceTree = "<group>";
 		};
 		CFD8BD042912A95900F86EFB /* SomethingBuggingYou */ = {
@@ -1488,13 +1454,13 @@
 			path = "My ROOM";
 			sourceTree = "<group>";
 		};
-		CFD8BD1229156D2A00F86EFB /* PLANET PAGE */ = {
+		CFD8BD1229156D2A00F86EFB /* PlanetView */ = {
 			isa = PBXGroup;
 			children = (
 				7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */,
 				CF387E292960D5B6003A85D8 /* PlanetBell.swift */,
 			);
-			path = "PLANET PAGE";
+			path = PlanetView;
 			sourceTree = "<group>";
 		};
 		CFDB150128574D6100155CEE /* FightWithParents */ = {
@@ -1543,12 +1509,13 @@
 			path = SendHomie;
 			sourceTree = "<group>";
 		};
-		CFFA7F0529B0DCDC0086F88A /* START Pages */ = {
+		CFFA7F0529B0DCDC0086F88A /* Start */ = {
 			isa = PBXGroup;
 			children = (
-				CF6499DE294D4148003BBF83 /* INFOPreloadA.swift */,
+				CF37535628BECF34003817E3 /* Built By Teens */,
+				CF39F17B292C5F8000927A3C /* StartHere1.swift */,
 			);
-			path = "START Pages";
+			path = Start;
 			sourceTree = "<group>";
 		};
 		D0CC1A02283EE31900E7461F /* Horizons */ = {
@@ -1746,7 +1713,7 @@
 				7AFCF27A27FDFFA800D2DB5C /* BlurView.swift in Sources */,
 				7A0856A227F3D9A900E8282B /* RestAPI.swift in Sources */,
 				CF3B42F6293721A500EE1D84 /* SaySomethingNice6.swift in Sources */,
-				CFCD4BAF2965CE5C00BBE43A /* ComingChat.swift in Sources */,
+				CFCD4BAF2965CE5C00BBE43A /* InfoComingChat.swift in Sources */,
 				CFDB1509285816AF00155CEE /* FaceTimeCall.swift in Sources */,
 				CF6499E1294E1F6C003BBF83 /* INFOPreload3.swift in Sources */,
 				7A7A23B42803D62700B87613 /* WebSocket.swift in Sources */,
@@ -1760,7 +1727,7 @@
 				CF1ECAC92875500100D999F8 /* InfoViewPlanet.swift in Sources */,
 				CF2EE6F429515B8400B1B16D /* INFOChatCircles.swift in Sources */,
 				CF3802D728456C83005181E4 /* FG_Team.swift in Sources */,
-				CF2EE6FC29517A4B00B1B16D /* CreateChatRooms.swift in Sources */,
+				CF2EE6FC29517A4B00B1B16D /* InfoCreateChatRooms.swift in Sources */,
 				CFD12CD3281A821C00AB2539 /* FightWithFriend.swift in Sources */,
 				62372A172884D7F500CAB75C /* HorizonSetGoal.swift in Sources */,
 				CF3DB36928D7DD8B00BF9CCD /* DreamRisk.swift in Sources */,
@@ -1837,7 +1804,7 @@
 				7AD8DF0D27F6974C00D9F0E1 /* Planet.swift in Sources */,
 				CF3B65BD280091280003A714 /* DemoVideoView.swift in Sources */,
 				CFA1226628598DAA00E22E84 /* Apologies2.swift in Sources */,
-				CF2EE6FA29516C9E00B1B16D /* CustomizeChatBackgrounds.swift in Sources */,
+				CF2EE6FA29516C9E00B1B16D /* InfoCustomizeChatBackgrounds.swift in Sources */,
 				D0CC1A04283EE33500E7461F /* HorizonHomeView.swift in Sources */,
 				CF47D5D32862531C004B47A1 /* RemoveFriend2.swift in Sources */,
 				CF1ECAC12870039500D999F8 /* HorizonPromoPage.swift in Sources */,
@@ -1880,7 +1847,7 @@
 				CF381A5228283D5C00B3719E /* IntroFriendGpFight.swift in Sources */,
 				CF2738AA2813C5740070E9D3 /* NewSmileNoteCard.swift in Sources */,
 				CF565EEC2935A61200B66A18 /* MoodSongPushNote.swift in Sources */,
-				CF2EE6F829516C8A00B1B16D /* HowChatWorks.swift in Sources */,
+				CF2EE6F829516C8A00B1B16D /* InfoHowChatWorks.swift in Sources */,
 				7A22A579274416C200FB6B4F /* ViewExt.swift in Sources */,
 				CFDB150328574D8B00155CEE /* FightWithParents.swift in Sources */,
 				CF3DB36728D78BF300BF9CCD /* DreamsWeDare.swift in Sources */,
@@ -1900,7 +1867,7 @@
 				CF2DBCEC2853DAF7008616A3 /* PickMediator.swift in Sources */,
 				CF72D6FB2921AFE900EDDDA6 /* SmileVaultPreload.swift in Sources */,
 				CFC0EE6929022560006B3FAA /* ShaylaPage.swift in Sources */,
-				CF2EE6F629516C7000B1B16D /* CreateGroupChatRooms.swift in Sources */,
+				CF2EE6F629516C7000B1B16D /* InfoCreateGroupChatRooms.swift in Sources */,
 				CFE6F024297B82A8004397A3 /* SendHomie.swift in Sources */,
 				CF2EE6FE295294E600B1B16D /* INFOMainHowWorks.swift in Sources */,
 				7AB52169289D959D005A49FA /* PurpleSubscriptionView.swift in Sources */,
@@ -1911,7 +1878,7 @@
 				CF4CFAC228E8DC3B00D6AEA9 /* SaySomethingNice3.swift in Sources */,
 				7AB5217328A1E079005A49FA /* LocationManager.swift in Sources */,
 				CFA1226A285994AE00E22E84 /* PickMediator2.swift in Sources */,
-				CFCD4BAD2965C27F00BBE43A /* SafeChat.swift in Sources */,
+				CFCD4BAD2965C27F00BBE43A /* InfoSafeChat.swift in Sources */,
 				7A720CC328A583E900992FD2 /* CustomizeMyPlanetView.swift in Sources */,
 				7ACD20BC27FC99CA002F7800 /* InviteView.swift in Sources */,
 				7ADFDB33289B1FA60004FB1C /* ShakePhotoPopView.swift in Sources */,

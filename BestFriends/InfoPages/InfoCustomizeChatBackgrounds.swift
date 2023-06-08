@@ -11,7 +11,7 @@ import Foundation
 import SwiftUI
 
 
-struct CustomizeChatBackgrounds: View {
+struct InfoCustomizeChatBackgrounds: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     

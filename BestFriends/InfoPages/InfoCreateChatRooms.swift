@@ -11,7 +11,7 @@ import Foundation
 import SwiftUI
 import AVKit
 
-struct CreateChatRooms: View {
+struct InfoCreateChatRooms: View {
     
     //    @EnvironmentObject var sessionManager: SessionManager
     

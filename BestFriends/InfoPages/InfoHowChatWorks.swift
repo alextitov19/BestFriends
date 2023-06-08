@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 import AVKit
 
-struct HowChatWorks: View {
+struct InfoHowChatWorks: View {
    
     let user: User
    
