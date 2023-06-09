@@ -48,17 +48,17 @@ struct BadDayQuietAlertView: View {
             
             
             VStack {
+//
+//                Text("Ouch!")
+//                    .font(.system(size: 40))
+////                    .italic()
+//                    .fontWeight(.regular)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(ColorManager .grey3)
+//
                 
-                Text("Ouch!")
-                    .font(.system(size: 40))
-//                    .italic()
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey3)
                 
-                
-                
-                Text("something bad")
+                Text("Something")
                     .font(.system(size: 40))
 //                    .italic()
                     .fontWeight(.regular)
@@ -67,7 +67,7 @@ struct BadDayQuietAlertView: View {
                 
              
                 
-                Text("just happend")
+                Text("Just Happend")
                     .font(.system(size: 40))
                     
                     .fontWeight(.regular)
@@ -83,7 +83,7 @@ struct BadDayQuietAlertView: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager .grey3)
           
-                Text("before talking to your friends")
+                Text("before talking to your friends about it")
                     .font(.system(size: 20))
                 //                    .italic()
                     .fontWeight(.thin)
@@ -93,12 +93,7 @@ struct BadDayQuietAlertView: View {
                 Spacer ()
                     .frame(height: 20)
                 
-                Text("Maybe you feel that")
-                    .font(.system(size: 22))
-                    .italic()
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey3)
+
          
                 VStack {
                     
@@ -106,40 +101,40 @@ struct BadDayQuietAlertView: View {
                 
                     
                
-                    
-                    Text("- you don't want to bother them")
-                        .font(.system(size: 15))
-                    //                    .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .grey3)
+//
+//                    Text("- you don't want to bother them")
+//                        .font(.system(size: 15))
+//                    //                    .italic()
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager .grey3)
+//
+//                    Spacer ()
+//                        .frame(height: 5)
+//
+//                    Text("- they really can't help fix this")
+//                        .font(.system(size: 15))
+//                    //                    .italic()
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager .grey3)
+//
+//                    Spacer ()
+//                        .frame(height: 5)
+//
+//                    Text("- don't want to worry them ")
+//                        .font(.system(size: 15))
+//                    //                    .italic()
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager .grey3)
+//
+//
                     
                     Spacer ()
-                        .frame(height: 5)
+                        .frame(height: 50)
                     
-                    Text("- they really can't help fix this")
-                        .font(.system(size: 15))
-                    //                    .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .grey3)
-                    
-                    Spacer ()
-                        .frame(height: 5)
-                    
-                    Text("- don't want to worry them ")
-                        .font(.system(size: 15))
-                    //                    .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .grey3)
-                    
-             
-                    
-                    Spacer ()
-                        .frame(height: 20)
-                    
-                    Text("Guess What")
+                    Text("But")
                         .font(.system(size: 30))
                     
                         .fontWeight(.regular)
@@ -171,7 +166,7 @@ struct BadDayQuietAlertView: View {
                     VStack {
                         
                         Spacer ()
-                            .frame(height: 80)
+                            .frame(height: 70)
                         
                     
                         
@@ -194,7 +189,7 @@ struct BadDayQuietAlertView: View {
                             .foregroundColor(ColorManager .grey3)
                         
                         Text("Emotional Support")
-                            .font(.system(size: 30))
+                            .font(.system(size: 40))
 //                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -212,7 +207,7 @@ struct BadDayQuietAlertView: View {
                             
                             NavigationLink( destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                             label: {
-                                Text("Alert them & request Care Hearts")
+                                Text("Request \nCare Hearts")
                                     .fontWeight(.thin)
                                     .frame(width: 250, height: 70)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
