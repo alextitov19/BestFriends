@@ -695,19 +695,19 @@
 				7A63AF8A26A339C70072E21E /* Launch Screen.storyboard */,
 				7A71BD072625292B00E6FA9E /* Info.plist */,
 				7ACDB182282825C1009E1CFD /* GoogleService-Info.plist */,
-				7A9D1C4C2A316CC80033DA59 /* OtherPages */,
-				7A9D1C4B2A314B580033DA59 /* InfoPages */,
 				7A380F1528271E3E007151AB /* AppDelegate.swift */,
 				7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */,
 				7A0856A927F3DCC300E8282B /* SessionManager.swift */,
 				7AD8DF0B27F6970A00D9F0E1 /* AuthView */,
-				7AB52167289D9418005A49FA /* Purple Subscription */,
 				7AD8DF0A27F696F000D9F0E1 /* HomeView */,
+				7A8F3D7C2A32BC5D00BC2CF4 /* MyRoomView */,
 				7A1C048627F4C3A90002B173 /* Models */,
 				7AC71DA627F3D7D4008D191B /* API */,
 				7A1DBD602659B1A400EB4B42 /* Ext+Custom */,
 				7A6A4D00262B865D00561D87 /* Assets */,
 				7A71BD042625292B00E6FA9E /* Preview Content */,
+				7A9D1C4C2A316CC80033DA59 /* OtherPages */,
+				7A9D1C4B2A314B580033DA59 /* InfoPages */,
 			);
 			path = BestFriends;
 			sourceTree = "<group>";
@@ -718,6 +718,13 @@
 				7A71BD052625292B00E6FA9E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7A8F3D7C2A32BC5D00BC2CF4 /* MyRoomView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyRoomView;
 			sourceTree = "<group>";
 		};
 		7A9D1C4B2A314B580033DA59 /* InfoPages */ = {
@@ -741,6 +748,7 @@
 		7A9D1C4C2A316CC80033DA59 /* OtherPages */ = {
 			isa = PBXGroup;
 			children = (
+				7AB52167289D9418005A49FA /* Purple Subscription */,
 				D0CC1A02283EE31900E7461F /* Horizons */,
 				CF1CD75329E2908B00D1F801 /* New Summer Feature */,
 				CF6499DE294D4148003BBF83 /* INFOPreloadA.swift */,
@@ -855,7 +863,7 @@
 				CFAE7347283C745800015FD2 /* Help Beta Test */,
 				CFD0469D2838392200BF0B02 /* URGENT Chat Invite */,
 				CF47CF0A28E2CAC7008B6F11 /* CareHearts */,
-				CFD8BD0C2915562D00F86EFB /* My ROOM */,
+				CFD8BD0C2915562D00F86EFB /* OLD My ROOM */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -1440,7 +1448,7 @@
 			path = SendSong;
 			sourceTree = "<group>";
 		};
-		CFD8BD0C2915562D00F86EFB /* My ROOM */ = {
+		CFD8BD0C2915562D00F86EFB /* OLD My ROOM */ = {
 			isa = PBXGroup;
 			children = (
 				CFCD3BC329DF849A00D19A0F /* TestPage2.swift */,
@@ -1453,7 +1461,7 @@
 				CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */,
 				CF3B42F329371A6D00EE1D84 /* SaySomethingNice5.swift */,
 			);
-			path = "My ROOM";
+			path = "OLD My ROOM";
 			sourceTree = "<group>";
 		};
 		CFD8BD1229156D2A00F86EFB /* PlanetView */ = {
