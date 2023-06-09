@@ -193,7 +193,7 @@ struct PlanetActionsView: View {
                             .opacity(0.80)
                         
                         VStack {
-                            Text("Create\nYour Universe")
+                            Text("Create\nYour \nUniverse")
                                 .foregroundColor(ColorManager .purple3)
                                 .font(.system(size: 20, weight: .regular))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -216,7 +216,7 @@ struct PlanetActionsView: View {
                             .opacity(0.80)
                         
                         VStack {
-                            Text("Support\nMy Friends")
+                            Text("Send \nCareHearts")
                                 .foregroundColor(ColorManager .purple3)
                                 .font(.system(size: 20, weight: .regular))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
