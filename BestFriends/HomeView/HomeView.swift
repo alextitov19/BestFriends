@@ -85,8 +85,13 @@ struct HomeView: View {
                             
                             Spacer()
                             
+//                            StartHere1(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups
+                            
+                                        
+                                         
+                            
                             NavigationLink(
-                                destination: StartHere1(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                                destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
                                 label: {
                                     
                                     Image(systemName: "gear")
