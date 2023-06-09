@@ -104,14 +104,14 @@ struct AtmosphereMain2: View {
              
                         
                         
-                        Text("Send me a")
+                        Text("Please send")
                           .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
                           .foregroundColor(ColorManager .grey2)
                         
-                        Text("Care Heart")
+                        Text("CareHearts")
                           .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
@@ -260,8 +260,12 @@ struct AtmosphereMain2: View {
                             .opacity(0.95)
                         
                         
-                        NavigationLink(
-                            destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                            NavigationLink(
+//                                destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//
+                            
+                            
+                            NavigationLink(destination: MyRoomView(),
                             label: {
                                 Text("tap")
                                     .fontWeight(.thin)

@@ -34,7 +34,7 @@ struct SaySomethingNice6: View {
 //                 .ignoresSafeArea()
 //                 .scaledToFill()
             
-            AdPlayerView(name: "SlowBlue")
+            AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
 

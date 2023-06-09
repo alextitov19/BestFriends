@@ -28,15 +28,27 @@ struct SendSongPush: View {
         ZStack {
             
 
-            Image("starPurple")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-          
+//            Image("")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+//
            
-            AdPlayerView(name: "Wind2")
+//            AdPlayerView(name: "Wind2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+            
+            ColorManager .purple1
                 .ignoresSafeArea()
-                .blendMode(.screen)
+                .onAppear()
+            
+            Color .black
+                .ignoresSafeArea()
+            
+            
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+            
             
             
             VStack{
@@ -46,12 +58,12 @@ struct SendSongPush: View {
                 
                     Text("You know that song")
                         .font(.system(size: 30, weight: .thin))
-                        .foregroundColor(Color.black)
+                        .foregroundColor(ColorManager .grey1)
 //                        .foregroundColor(ColorManager.purple3)
                     
                     Text("you always listen to on difficult days")
                         .font(.system(size: 20, weight: .light))
-                        .foregroundColor(Color.black)
+                        .foregroundColor(ColorManager .grey1)
 //                        .foregroundColor(ColorManager.purple3)
 
                     Spacer()
@@ -60,7 +72,7 @@ struct SendSongPush: View {
                     
                     Text("share it with a friend")
                         .font(.system(size: 30, weight: .ultraLight))
-                        .foregroundColor(Color.black)
+                        .foregroundColor(ColorManager .grey1)
 //                                                  .foregroundColor(ColorManager.purple3)
                     
                     Spacer()

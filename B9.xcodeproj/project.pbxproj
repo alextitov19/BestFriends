@@ -172,11 +172,9 @@
 		CF417546296A60F700898E2D /* NisieJ9.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF417545296A60F700898E2D /* NisieJ9.mp4 */; };
 		CF417548296FA55100898E2D /* INFOMainHowWorks2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF417547296FA55100898E2D /* INFOMainHowWorks2.swift */; };
 		CF41754C296FBB8D00898E2D /* InfoWhyLoveBF.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF41754B296FBB8D00898E2D /* InfoWhyLoveBF.swift */; };
-		CF45303D29FFB627009DEA15 /* SlowBlue.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF45303C29FFB627009DEA15 /* SlowBlue.mp4 */; };
 		CF47CF0328DB67A8008B6F11 /* PlanetSound.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */; };
 		CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */; };
 		CF47CF0928E2C93E008B6F11 /* BeSinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47CF0828E2C93E008B6F11 /* BeSinger.swift */; };
-		CF47CF1428E81BBE008B6F11 /* Wind2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF1328E81BBE008B6F11 /* Wind2.mp4 */; };
 		CF47D5D32862531C004B47A1 /* RemoveFriend2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47D5D22862531C004B47A1 /* RemoveFriend2.swift */; };
 		CF4A08D82877E2B600ADA9DD /* NostalgiaPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08D72877E2B600ADA9DD /* NostalgiaPreload.swift */; };
 		CF4A08E228793CC900ADA9DD /* HurtFeelings4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08E128793CC900ADA9DD /* HurtFeelings4.swift */; };
@@ -464,11 +462,9 @@
 		CF417545296A60F700898E2D /* NisieJ9.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = NisieJ9.mp4; sourceTree = "<group>"; };
 		CF417547296FA55100898E2D /* INFOMainHowWorks2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOMainHowWorks2.swift; sourceTree = "<group>"; };
 		CF41754B296FBB8D00898E2D /* InfoWhyLoveBF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoWhyLoveBF.swift; sourceTree = "<group>"; };
-		CF45303C29FFB627009DEA15 /* SlowBlue.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SlowBlue.mp4; sourceTree = "<group>"; };
 		CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlanetSound.mp4; sourceTree = "<group>"; };
 		CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Emilia2.m4a; sourceTree = "<group>"; };
 		CF47CF0828E2C93E008B6F11 /* BeSinger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeSinger.swift; sourceTree = "<group>"; };
-		CF47CF1328E81BBE008B6F11 /* Wind2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wind2.mp4; sourceTree = "<group>"; };
 		CF47D5D22862531C004B47A1 /* RemoveFriend2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFriend2.swift; sourceTree = "<group>"; };
 		CF4A08D72877E2B600ADA9DD /* NostalgiaPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NostalgiaPreload.swift; sourceTree = "<group>"; };
 		CF4A08E128793CC900ADA9DD /* HurtFeelings4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurtFeelings4.swift; sourceTree = "<group>"; };
@@ -1162,7 +1158,6 @@
 		CF5263FC266F201000243DD7 /* Background Videos */ = {
 			isa = PBXGroup;
 			children = (
-				CF45303C29FFB627009DEA15 /* SlowBlue.mp4 */,
 				CF5263D6266477C600243DD7 /* background_4.mp4 */,
 				7A78232926B2419600CA76FC /* background_5.mp4 */,
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
@@ -1170,7 +1165,6 @@
 				CF2DBCF028552527008616A3 /* storm2.mp4 */,
 				CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */,
 				CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */,
-				CF47CF1328E81BBE008B6F11 /* Wind2.mp4 */,
 				CFD6C05829405EB100D57E0B /* MyRoom5.mp4 */,
 				CF6499E4294EBAC1003BBF83 /* AloneBeach.mp4 */,
 				CF417545296A60F700898E2D /* NisieJ9.mp4 */,
@@ -1623,12 +1617,10 @@
 				CF4A08EE2879577E00ADA9DD /* sky2.mp4 in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,
 				CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */,
-				CF45303D29FFB627009DEA15 /* SlowBlue.mp4 in Resources */,
 				7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */,
 				7A78232E26B2419600CA76FC /* background_5.mp4 in Resources */,
 				CF2DBCF128552527008616A3 /* storm2.mp4 in Resources */,
 				CF47CF0328DB67A8008B6F11 /* PlanetSound.mp4 in Resources */,
-				CF47CF1428E81BBE008B6F11 /* Wind2.mp4 in Resources */,
 				CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */,
 				7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */,
 				CF65040028864AF00092EEB9 /* background_1.mp4 in Resources */,
