@@ -32,7 +32,16 @@ struct MyRoomView: View {
                 
                 MyRoomRowView(title: "Affirm", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 
-              
+                MyRoomRowView(title: "Affirm", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                
+                MyRoomRowView(title: "Affirm", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                
+                
+                
+                
+                
+//                here is the page to link below to reauest a hug from friend ...    NavigationLink(destination: HugPushNotification3(user: user, friends: friends),
+                MyRoomRowView(title: "Request Hug", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                
                 
                 Spacer()

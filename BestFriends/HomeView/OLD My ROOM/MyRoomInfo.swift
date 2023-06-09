@@ -62,7 +62,7 @@ struct MyRoomInfo: View {
                 .ignoresSafeArea()
             
             
-            AdPlayerView(name: "MyRoom5")
+            AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
             
 //
