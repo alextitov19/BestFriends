@@ -63,7 +63,7 @@ struct HugPushNotification2: View {
 //                Spacer ()
 //                    .frame(height: 80)
                 
-                Text("Everyone whats to know their friends ")
+                Text("Your friend is having a")
                     .font(.system(size: 25))
 //                    .italic()
                     .fontWeight(.thin)
@@ -75,7 +75,7 @@ struct HugPushNotification2: View {
                
                 VStack {
                     
-                    Text("care about them")
+                    Text("difficult day")
                         .font(.system(size: 35))
                     //                    .italic()
                         .fontWeight(.light)
@@ -84,13 +84,13 @@ struct HugPushNotification2: View {
                     Spacer ()
                         .frame(height: 10)
                     
-                    Text("especially on difficult days")
-                        .font(.system(size: 25))
-                    //                    .italic()
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .grey3)
-                    
+//                    Text("especially on difficult days")
+//                        .font(.system(size: 25))
+//                    //                    .italic()
+//                        .fontWeight(.thin)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager .grey3)
+//                    
           
                     
                 }
