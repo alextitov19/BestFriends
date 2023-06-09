@@ -65,7 +65,7 @@ struct MyFears: View {
                                .ignoresSafeArea()
                                .onAppear()
            
-            AdPlayerView(name: "MyRoom5")
+            AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
            
