@@ -16,7 +16,7 @@ import Foundation
 import SwiftUI
 import AVKit
 
-struct TestPage2: View {
+struct BadDayQuietAlertView: View {
     
     
     

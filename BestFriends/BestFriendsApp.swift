@@ -14,7 +14,6 @@ struct BestFriendsApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     @ObservedObject var sessionManager = SessionManager()
-    @StateObject var storeManager = StoreManager()
     
     let productIDs = [
         "com.socialtechlabs.bestfriends.iap.monthly",

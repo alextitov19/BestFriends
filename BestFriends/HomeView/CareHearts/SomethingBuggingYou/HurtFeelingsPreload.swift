@@ -45,7 +45,7 @@ struct HurtFeelingsPreload: View {
                  
             VStack {
                     NavigationLink(
-                        destination: Apologies(user: user, friends: friends),
+                        destination: BuiltByTeensView(user: user, friends: friends),
                         label: {
                             Text("I hurt friend's feeling")
                                 .fontWeight(.thin)

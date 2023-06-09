@@ -11,7 +11,7 @@ import Foundation
 import SwiftUI
 
 
-struct Apologies: View {
+struct BuiltByTeensView: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
