@@ -76,7 +76,7 @@ struct HomeView: View {
                             Image(systemName: "bell")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 25, height: 25)
+                                .frame(width: 30, height: 30)
                                 .foregroundColor(.white)
                                 .onTapGesture {
                                     print("Clicked notification bell")
@@ -97,11 +97,11 @@ struct HomeView: View {
                                     Image(systemName: "gear")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 25, height: 25)
+                                        .frame(width: 30, height: 30)
                                         .foregroundColor(.white)
                                 })
                         }
-                        .padding(10)
+                        .padding(20)
                     }
                     
                     Spacer()
