@@ -56,16 +56,16 @@ struct HugPreload: View {
 
                 
                 
-//                NavigationLink(destination: EmptyView(), label: {
-//                    HugCircle (color: ColorManager .pmbc_green, friendName: "")
+//                NavigationLink(destination: SendSongPush(user: user, friends: friends), label: {
+//                    HugCircle (color: ColorManager .grey1, friendName: "send a \nsong")
 //                })
-//                .offset(x: showItems ? -150 : 0, y: showItems ? -290: 0)
-//                .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-//                .opacity(0.3)
+//                .offset(x: showItems ? -120 : 0, y: showItems ? 120: 0)
+//                .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+//                .opacity(0.65)
 
 
                     NavigationLink(destination: InfoWhyLoveBF(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager.purple1, friendName: "You look \nnice \ntoday")
+                        HugCircle (color: ColorManager.purple1, friendName: "you looked \nnice \ntoday")
                     })
                     .offset(x: showItems ? 120 : 0, y: showItems ? -270: 0)
                     .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
@@ -93,10 +93,10 @@ struct HugPreload: View {
 
 
                 NavigationLink(destination: HurtFeelings(user: user, friends: friends), label: {
-                    HugCircle (color: ColorManager .grey1, friendName: "PhotoPOP")
+                    HugCircle (color: ColorManager .purple3, friendName: "PhotoPOP")
                 })
-                .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
-                .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
+                .offset(x: showItems ? -60 : 0, y: showItems ? 300: 0)
+                .shadow(color: ColorManager .pmbc_green, radius: 10, x: 10, y: 10)
 //                .opacity(0.85)
                 .opacity(0.65)
 
@@ -132,26 +132,24 @@ struct HugPreload: View {
                     NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
                         HugCircle (color: ColorManager.purple1, friendName: "send a \nhug")
                     })
-                    .offset(x: showItems ? 0 : 0, y: showItems ? 570: 0)
-                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
+                    .offset(x: showItems ? 80 : 0, y: showItems ? 650: 0)
+                    .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
 //                    .opacity(0.6)
                     .opacity(0.65)
 
                         NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
                             HugCircle (color: ColorManager .red, friendName: "blowing \nkisses")
                         })
-                        .offset(x: showItems ? 100 : 0, y: showItems ? 290: 0)
-                        .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-                        .opacity(0.3)
+                        .offset(x: showItems ? 100 : 0, y: showItems ? 390: 0)
+                        .shadow(color: Color .white, radius: 10, x: 10, y: 10)
+                        .opacity(0.50)
 
-//
-//                    NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
-//                        HugCircle (color: ColorManager .red, friendName: "kisses")
-//                    })
-//                    .offset(x: showItems ? 100 : 0, y: showItems ? 290: 0)
-//                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-//                    .opacity(0.3)
-//
+                    NavigationLink(destination: SendSongPush(user: user, friends: friends), label: {
+                        HugCircle (color: ColorManager .grey1, friendName: "send a \nsong")
+                    })
+                    .offset(x: showItems ? -120 : 0, y: showItems ? 300: 0)
+                    .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+                    .opacity(0.65)
 
 
 
