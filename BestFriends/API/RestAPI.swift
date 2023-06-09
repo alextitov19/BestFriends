@@ -14,9 +14,9 @@ class RestApi {
     var userId: String?
     let API_URL = "http://af1da3679459b4f559b1dbb17a97f432-44066674.us-east-2.elb.amazonaws.com:80/api/v1/services"
     let WS_URL = "ws://af1da3679459b4f559b1dbb17a97f432-44066674.us-east-2.elb.amazonaws.com:80/api/v1/services"
-
-//    let API_URL = "http://localhost:8080/api/v1/services"
-//    let WS_URL = "ws://localhost:8080/api/v1/services"
+    
+    //    let API_URL = "http://localhost:8080/api/v1/services"
+    //    let WS_URL = "ws://localhost:8080/api/v1/services"
     
     public static var instance = RestApi()
     
@@ -172,18 +172,18 @@ class RestApi {
     
     public func registerAPNToken() {
         Messaging.messaging().token { token, error in
-          if let error = error {
-            print("Error fetching FCM registration token: \(error)")
-          } else if let token = token {
-            print("FCM registration token: \(token)")
-              self.updateUserToken(token: token).then {result in
-                  if result == 200 {
-                  print("Successfully register token")
-                  } else {
-                      print("Failed to register token")
-                  }
-              }
-          }
+            if let error = error {
+                print("Error fetching FCM registration token: \(error)")
+            } else if let token = token {
+                print("FCM registration token: \(token)")
+                self.updateUserToken(token: token).then {result in
+                    if result == 200 {
+                        print("Successfully register token")
+                    } else {
+                        print("Failed to register token")
+                    }
+                }
+            }
         }
     }
     
@@ -247,8 +247,26 @@ class RestApi {
     }
     
     public func getStreakLog(friendID: String) -> Promise<Int> {
-        return helper.callRestApi(url: API_URL + "/streak/" + friendID, method: .get, Int.self).then({ response in
+        helper.callRestApi(url: API_URL + "/streak/" + friendID, method: .get, Int.self).then({ response in
             return response
+        })
+    }
+    
+    public func createJournal(cj: CreateJournal) -> Promise<Bool> {
+        helper.callRestApi(url: API_URL + "/journal", method: .post, RestResponse.self).then({ response in
+            if response.status == 200 {
+                print("Created journal successfully")
+                return true
+            } else {
+                print("Error creating journal: ", response.status)
+                return false
+            }
+        })
+    }
+    
+    public func getJournal(id: String) -> Promise<Journal> {
+        return helper.callRestApi(url: API_URL + "/journal/" + id, method: .get, Journal.self).then({ j in
+            return j
         })
     }
     
