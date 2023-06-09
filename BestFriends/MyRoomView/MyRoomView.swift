@@ -11,7 +11,13 @@ struct MyRoomView: View {
     
     var body: some View {
         ZStack {
-            ColorManager.purple1
+            ColorManager.purple7
+                .opacity(0.3)
+                .ignoresSafeArea()
+                
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
             
             VStack {
                 Text("My Room")

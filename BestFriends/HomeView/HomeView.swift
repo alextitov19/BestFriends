@@ -30,7 +30,7 @@ struct HomeView: View {
     
     @State private var presentingPhotoPop = false
     @State private var presentingIANs = false
-
+    
     let reloadingTimer = Timer.publish(every: 30, on: .main, in: .common).autoconnect()
     
     var body: some View {
@@ -40,13 +40,13 @@ struct HomeView: View {
             ZStack {
                 Color .black
                     .ignoresSafeArea()
-//                    .onAppear()
+                //                    .onAppear()
                 
-//                Image("purpleBackground")
-//                    .resizable()
-//                    .ignoresSafeArea()
-//                    .scaledToFill()
-//                    .ignoresSafeArea()
+                //                Image("purpleBackground")
+                //                    .resizable()
+                //                    .ignoresSafeArea()
+                //                    .scaledToFill()
+                //                    .ignoresSafeArea()
                     .onAppear {
                         if RestApi.instance.needLogin {
                             sessionManager.showLogin()
@@ -103,22 +103,22 @@ struct HomeView: View {
                 }
                 
                 VStack {
-//                    Text("received notification - tap friend's planet")
-//                        .font(.system(size: 15))
-//                        .italic()
-//                    //                            .foregroundColor(ColorManager .grey2)
-//                        .fontWeight(.thin)
-//                        .multilineTextAlignment(.center)
-//                        .frame(width: 280, height: 30)
-//                        .foregroundColor(.white)
-//                        .font(.system(size: 20))
-//                        .background(Color .black)
-//                        .cornerRadius(10)
-//                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                        .opacity(0.30)
-//                    
-//                    Spacer()
-//                        .frame(height: 50)
+                    //                    Text("received notification - tap friend's planet")
+                    //                        .font(.system(size: 15))
+                    //                        .italic()
+                    //                    //                            .foregroundColor(ColorManager .grey2)
+                    //                        .fontWeight(.thin)
+                    //                        .multilineTextAlignment(.center)
+                    //                        .frame(width: 280, height: 30)
+                    //                        .foregroundColor(.white)
+                    //                        .font(.system(size: 20))
+                    //                        .background(Color .black)
+                    //                        .cornerRadius(10)
+                    //                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                    //                        .opacity(0.30)
+                    //                    
+                    //                    Spacer()
+                    //                        .frame(height: 50)
                     HStack {
                         
                         if planets.count > 0 && !focusPlanet {
@@ -244,21 +244,21 @@ struct HomeView: View {
                         //                                                   .padding(50)
                     }
                     
-//                    Text("create Chat rooms - see SetUp")
+                    //                    Text("create Chat rooms - see SetUp")
                     
                     
                     if newGroupMembers.count > 0 && !focusPlanet {
                         Button(action: {
                             chatButtonTapped()
                         }, label: {
-//                            Text("create Chat rooms - see SetUp")
-//                                .fontWeight(.light)
-//                                .frame(width: 255, height: 30)
-//                                .foregroundColor(.white)
-//                                .background(ColorManager .purple7)
-//                                .cornerRadius(10)
-//                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                                .opacity(0.5)
+                            //                            Text("create Chat rooms - see SetUp")
+                            //                                .fontWeight(.light)
+                            //                                .frame(width: 255, height: 30)
+                            //                                .foregroundColor(.white)
+                            //                                .background(ColorManager .purple7)
+                            //                                .cornerRadius(10)
+                            //                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                            //                                .opacity(0.5)
                         })
                         
                     }
@@ -291,7 +291,7 @@ struct HomeView: View {
                         HStack {
                             
                             VStack {
-
+                                
                                 NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
                                     Text("vibe")
                                         .fontWeight(.light)
@@ -302,22 +302,22 @@ struct HomeView: View {
                                         .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                                         .opacity(0.5)
                                 })
-//
-//                                Spacer()
-//                                    .frame(height: 15)
-//
-//
-//                                NavigationLink(destination: SaySomethingNice7(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
-//                                               label: {
-//                                    Text("friend sent 'Nice' message")
-//                                        .fontWeight(.light)
-//                                        .frame(width: 255, height: 30)
-//                                        .foregroundColor(.white)
-//                                        .background(ColorManager .purple7)
-//                                        .cornerRadius(10)
-//                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                                        .opacity(0.5)
-//                                })
+                                //
+                                //                                Spacer()
+                                //                                    .frame(height: 15)
+                                //
+                                //
+                                //                                NavigationLink(destination: SaySomethingNice7(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
+                                //                                               label: {
+                                //                                    Text("friend sent 'Nice' message")
+                                //                                        .fontWeight(.light)
+                                //                                        .frame(width: 255, height: 30)
+                                //                                        .foregroundColor(.white)
+                                //                                        .background(ColorManager .purple7)
+                                //                                        .cornerRadius(10)
+                                //                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                //                                        .opacity(0.5)
+                                //                                })
                             }
                         }
                         
@@ -337,7 +337,7 @@ struct HomeView: View {
                                     .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                                     .opacity(0.5)
                             })
-//
+                            //
                         }
                         
                         
@@ -420,20 +420,20 @@ struct HomeView: View {
                             //                                    .cornerRadius(10)
                             //                                    .opacity(0.7)
                             //
-//                            Text("hide dropdown - tap friend's planet")
-//                                .font(.system(size: 15))
-//                                .italic()
-//                            //                            .foregroundColor(ColorManager .grey2)
-//                                .fontWeight(.thin)
-//                                .multilineTextAlignment(.center)
-//                                .frame(width: 255, height: 30)
-//                                .foregroundColor(.white)
-//                                .font(.system(size: 20))
-//                                .background(ColorManager .purple7)
-//                                .cornerRadius(10)
-//                                .shadow(color: Color(.white), radius: 1, x: 0, y: 2.5)
-//                                .opacity(0.30)
-//
+                            //                            Text("hide dropdown - tap friend's planet")
+                            //                                .font(.system(size: 15))
+                            //                                .italic()
+                            //                            //                            .foregroundColor(ColorManager .grey2)
+                            //                                .fontWeight(.thin)
+                            //                                .multilineTextAlignment(.center)
+                            //                                .frame(width: 255, height: 30)
+                            //                                .foregroundColor(.white)
+                            //                                .font(.system(size: 20))
+                            //                                .background(ColorManager .purple7)
+                            //                                .cornerRadius(10)
+                            //                                .shadow(color: Color(.white), radius: 1, x: 0, y: 2.5)
+                            //                                .opacity(0.30)
+                            //
                         }
                         
                         
@@ -459,7 +459,8 @@ struct HomeView: View {
                 }
                 
             }
-        }.navigationViewStyle(StackNavigationViewStyle())
+        }.navigationViewStyle(StackNavigationViewStyle())                .accentColor(ColorManager.purple5)
+        
     }
     
     private func getHomeData() {

@@ -52,6 +52,7 @@
 		7A8A17C128414A390088DC04 /* SmileNoteModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A17C028414A390088DC04 /* SmileNoteModels.swift */; };
 		7A8F3D7B2A32B75800BC2CF4 /* JournalModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8F3D7A2A32B75800BC2CF4 /* JournalModels.swift */; };
 		7A8F3D7E2A32C63000BC2CF4 /* MyRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8F3D7D2A32C63000BC2CF4 /* MyRoomView.swift */; };
+		7A8F3D802A32D2B400BC2CF4 /* NavigationBarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8F3D7F2A32D2B400BC2CF4 /* NavigationBarCustom.swift */; };
 		7AA07F5F285D0DD400E9C5A4 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA07F5E285D0DD400E9C5A4 /* UserModel.swift */; };
 		7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA201122635D5F500C9F00C /* Room+Extensions.swift */; };
 		7AA2514D2874AB7B0018C97E /* PhotoPopModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2514C2874AB7B0018C97E /* PhotoPopModels.swift */; };
@@ -342,6 +343,7 @@
 		7A8A17C028414A390088DC04 /* SmileNoteModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNoteModels.swift; sourceTree = "<group>"; };
 		7A8F3D7A2A32B75800BC2CF4 /* JournalModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalModels.swift; sourceTree = "<group>"; };
 		7A8F3D7D2A32C63000BC2CF4 /* MyRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomView.swift; sourceTree = "<group>"; };
+		7A8F3D7F2A32D2B400BC2CF4 /* NavigationBarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarCustom.swift; sourceTree = "<group>"; };
 		7AA07F5E285D0DD400E9C5A4 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		7AA201122635D5F500C9F00C /* Room+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+Extensions.swift"; sourceTree = "<group>"; };
 		7AA2514C2874AB7B0018C97E /* PhotoPopModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopModels.swift; sourceTree = "<group>"; };
@@ -648,6 +650,7 @@
 				7A7AEF2726C4CF6D00DE8344 /* SequenceExtension.swift */,
 				7ACF912B2767C29A00088ACA /* CustomDivider.swift */,
 				7A4D50062783B9D3006F7404 /* UIScreenExtension.swift */,
+				7A8F3D7F2A32D2B400BC2CF4 /* NavigationBarCustom.swift */,
 			);
 			path = "Ext+Custom";
 			sourceTree = "<group>";
@@ -1902,6 +1905,7 @@
 				CF2FD942280BBA1B0036F4BB /* Step3_BreathInviteView.swift in Sources */,
 				CFD12CBE281499D700AB2539 /* IndividualFriendMessages.swift in Sources */,
 				CFC0EE7A290805C8006B3FAA /* InfoAddFriends.swift in Sources */,
+				7A8F3D802A32D2B400BC2CF4 /* NavigationBarCustom.swift in Sources */,
 				CF650406288E76B50092EEB9 /* GotPushNotification.swift in Sources */,
 				7AD8DEF927F615F000D9F0E1 /* HomeView.swift in Sources */,
 				CF0911852848328F00CB0AF0 /* HideChat.swift in Sources */,
@@ -2026,7 +2030,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2082,7 +2086,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
