@@ -58,14 +58,14 @@ struct BuiltByTeensView: View {
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 130)
+                    .frame(height: 80)
                 
                 Text("from the heart of us,")
                     .font(.system(size: 20))
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
-     
+                
                 Text("we hope you're enjoying")
                     .font(.system(size: 20))
                     .foregroundColor(ColorManager.grey1)
@@ -79,10 +79,10 @@ struct BuiltByTeensView: View {
                     .multilineTextAlignment(.center)
                 
                 VStack {
-               
+                    
                     VStack {
                         
-                      
+                        
                         
                         Spacer()
                             .frame(height: 20)
@@ -122,62 +122,75 @@ struct BuiltByTeensView: View {
                             })
                         
                         
-                        
-                        Spacer()
-                            .frame(height: 20)
-                        
-                        
-//                        Link(destination: URL(string: "https://socialtechlabs.com/surveys/")!)
-                        NavigationLink(
+                        VStack {
+                            Spacer()
+                                .frame(height: 40)
                             
-                            destination: SurveyStickersPreload(),
-                            label: {
-                                Text("Give us Feedback")
-                                    .fontWeight(.light)
-                                    .foregroundColor(Color.white)
-                                    .frame(width: 230, height: 60)
-                                    .font(.system(size: 25))
-                                    .background(ColorManager.pmbc_green)
-                                    .cornerRadius(7)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            Text("help us make BFs better,")
+                                .font(.system(size: 20))
+                                .foregroundColor(ColorManager.grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("to help you smile faster")
+                                .font(.system(size: 20))
+                                .foregroundColor(ColorManager.grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
+                            Spacer()
+                                .frame(height: 20)
+                            //                        Link(destination: URL(string: "https://socialtechlabs.com/surveys/")!)
+                            NavigationLink(
                                 
-                            })
-                    
-                        
-                        
-                        
-                        
-                        
-                        
-                        Spacer()
-                            .frame(height: 20)
-                        
-//                        Link(destination: URL(string: "https://socialtechlabs.com/reporting-issues-in-bestfriends/")!) {
-//
-//                            Text("Report Issues")
-//                                .fontWeight(.light)
-//                                .foregroundColor(Color.white)
-//                                .frame(width: 230, height: 60)
-//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                .font(.system(size: 25))
-//                                .background(ColorManager.pmbc_green)
-//                                .cornerRadius(10)
-//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        }
-                        
-                        
-                        Spacer()
-                            .frame(height: 100)
-                        
-                        
-                        
+                                destination: SurveyStickersPreload(),
+                                label: {
+                                    Text("Give us Feedback")
+                                        .fontWeight(.light)
+                                        .foregroundColor(Color.white)
+                                        .frame(width: 230, height: 60)
+                                        .font(.system(size: 25))
+                                        .background(ColorManager.pmbc_green)
+                                        .cornerRadius(7)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                    
+                                })
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            Spacer()
+                                .frame(height: 20)
+                            
+                            //                        Link(destination: URL(string: "https://socialtechlabs.com/reporting-issues-in-bestfriends/")!) {
+                            //
+                            //                            Text("Report Issues")
+                            //                                .fontWeight(.light)
+                            //                                .foregroundColor(Color.white)
+                            //                                .frame(width: 230, height: 60)
+                            //                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            //                                .font(.system(size: 25))
+                            //                                .background(ColorManager.pmbc_green)
+                            //                                .cornerRadius(10)
+                            //                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            //                        }
+                            
+                            
+                            Spacer()
+                                .frame(height: 100)
+                            
+                            
+                            
+                        }
                     }
+                    
                 }
-                
             }
         }
     }
-}
-
     
+}
  
