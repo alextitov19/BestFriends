@@ -44,20 +44,23 @@ struct SendSongPush: View {
                 VStack {
                       
                 
-                    Text("Did you just find new")
+                    Text("You know that song")
                         .font(.system(size: 30, weight: .thin))
                         .foregroundColor(Color.black)
 //                        .foregroundColor(ColorManager.purple3)
                     
-                    Text("music or artist somewhere")
+                    Text("you always listen to on difficult days")
                         .font(.system(size: 20, weight: .light))
                         .foregroundColor(Color.black)
 //                        .foregroundColor(ColorManager.purple3)
 
-
-                    Text("you wanna share?")
-                        .font(.system(size: 20, weight: .ultraLight))
-                        .foregroundColor(Color.white)
+                    Spacer()
+                        .frame(height: 20)
+                    
+                    
+                    Text("share it with a friend")
+                        .font(.system(size: 30, weight: .ultraLight))
+                        .foregroundColor(Color.black)
 //                                                  .foregroundColor(ColorManager.purple3)
                     
                     Spacer()
@@ -229,32 +232,32 @@ struct SendSongPush: View {
                         
                         VStack {
                             
-                             NavigationLink(
-                                destination: BeSinger(user: user),
-                                label: {
-                                    Text("i wanna be a singer")
-                                        .fontWeight(.thin)
-                                        .frame(width: 300, height: 40)
-                                        .foregroundColor(Color.white)
-                                        .font(.system(size: 30))
-                                        .background(Color.white)
-//                                        .background(ColorManager.purple2)
-                                        .cornerRadius(15)
-                                        .opacity(0.30)
-                                })
-
-                        }
-                        
-                    VStack {
-                        
-                        Text("Wind by Shayla Bush, Producer Bryan Tyson")
-                            .font(.system(size: 12, weight: .light))
-                            .foregroundColor(Color.blue)
-
-                        Text("HRW Music Group")
-                            .font(.system(size: 12, weight: .light))
-                            .foregroundColor(Color.blue)
-                        
+//                             NavigationLink(
+//                                destination: BeSinger(user: user),
+//                                label: {
+//                                    Text("i wanna be a singer")
+//                                        .fontWeight(.thin)
+//                                        .frame(width: 300, height: 40)
+//                                        .foregroundColor(Color.white)
+//                                        .font(.system(size: 30))
+//                                        .background(Color.white)
+////                                        .background(ColorManager.purple2)
+//                                        .cornerRadius(15)
+//                                        .opacity(0.30)
+//                                })
+//
+//                        }
+//
+//                    VStack {
+//
+//                        Text("Wind by Shayla Bush, Producer Bryan Tyson")
+//                            .font(.system(size: 12, weight: .light))
+//                            .foregroundColor(Color.blue)
+//
+//                        Text("HRW Music Group")
+//                            .font(.system(size: 12, weight: .light))
+//                            .foregroundColor(Color.blue)
+//
                     }
                    
 
