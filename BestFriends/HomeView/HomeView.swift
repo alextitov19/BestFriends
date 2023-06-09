@@ -76,7 +76,7 @@ struct HomeView: View {
                             Image(systemName: "bell")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 30, height: 30)
+                                .frame(width: 35, height: 35)
                                 .foregroundColor(.white)
                                 .onTapGesture {
                                     print("Clicked notification bell")
@@ -97,7 +97,7 @@ struct HomeView: View {
                                     Image(systemName: "gear")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 30, height: 30)
+                                        .frame(width: 35, height: 35)
                                         .foregroundColor(.white)
                                 })
                         }
