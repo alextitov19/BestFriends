@@ -522,19 +522,19 @@ struct AtmosphereMain2: View {
                         //                            .onReceive(Just(summary)) { _ in limitText(45) }
                         VStack {
                             
-                            Text("Alert frinds that something happened")
+                            Text("Who do you want CareHearts from?")
                                 .italic()
                                 .font(.system(size: 17))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(ColorManager .grey3)
                             
-                            Text("but you're not ready to talk yet!")
-                                .italic()
-                                .font(.system(size: 17))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager .grey3)
+//                            Text("but you're not ready to talk yet!")
+//                                .italic()
+//                                .font(.system(size: 17))
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(ColorManager .grey3)
                             
                         }
                     }
