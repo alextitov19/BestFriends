@@ -96,20 +96,32 @@ struct AtmosphereMain2: View {
                     Image("FatGuy200")
                         .resizable()
                         .frame(width: 150, height: 150)
+                  
+                
                     
                 }
            
                 HStack {
                     VStack {
              
+                        Spacer()
+                            .frame(height: 15)
                         
-                        
-                        Text("Please send")
+                        Text("Please")
                           .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
                           .foregroundColor(ColorManager .grey2)
+                       
+                        
+                        Text("send")
+                          .italic()
+                          .font(.system(size: 15))
+                          .fontWeight(.light)
+                          .multilineTextAlignment(.center)
+                          .foregroundColor(ColorManager .grey2)
+                        
                         
                         Text("CareHearts")
                           .italic()
@@ -219,16 +231,24 @@ struct AtmosphereMain2: View {
                     
                     VStack {
                         
-          
+                        Spacer()
+                            .frame(height: 15)
                         
-                        Text("Work things out in")
+                        Text("Jump to")
                           .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
                           .foregroundColor(ColorManager .grey2)
                         
-                        Text("safety of My Room")
+                        Text("safety of")
+                          .italic()
+                          .font(.system(size: 15))
+                          .fontWeight(.light)
+                          .multilineTextAlignment(.center)
+                          .foregroundColor(ColorManager .grey2)
+                        
+                        Text("My Room")
                           .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
