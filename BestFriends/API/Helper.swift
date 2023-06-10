@@ -262,6 +262,16 @@ class Helper {
         }
     }
     
+    func createJournal(url: String, cj: CreateJournal) -> Promise<Int> {
+        let payload = try? JSONEncoder().encode(cj)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, RestResponse.self).then { response in
+            return Promise<Int>(response.status)
+        }
+    }
+    
     func updateUser(url: String, user: User) -> Promise<Int> {
         let payload = try? JSONEncoder().encode(user)
         if let p = payload {

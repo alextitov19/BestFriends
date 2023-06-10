@@ -252,16 +252,8 @@ class RestApi {
         })
     }
     
-    public func createJournal(cj: CreateJournal) -> Promise<Bool> {
-        helper.callRestApi(url: API_URL + "/journal", method: .post, RestResponse.self).then({ response in
-            if response.status == 200 {
-                print("Created journal successfully")
-                return true
-            } else {
-                print("Error creating journal: ", response.status)
-                return false
-            }
-        })
+    public func createJournal(cj: CreateJournal) -> Promise<Int> {
+        return helper.createJournal(url: API_URL + "/journal", cj: cj)
     }
     
     public func getJournal(id: String) -> Promise<Journal> {

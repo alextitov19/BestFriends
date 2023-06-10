@@ -15,6 +15,10 @@ struct JournalView: View {
     @State private var selectCategoryIsPresented = false
     @State private var categories: [String] = []
     @State private var journals: [Journal] = []
+    @State private var createNewJournalIsPresented = false
+    @State private var newJournalText = "Today I feel..."
+    @State private var newJournalMood = 0.0
+
     
     var body: some View {
         ZStack {
@@ -36,7 +40,7 @@ struct JournalView: View {
                     }
                 
                 Button(action: {
-                    
+                    createNewJournalIsPresented = true
                 }, label: {
                     addButtonBody()
                 })
@@ -53,7 +57,7 @@ struct JournalView: View {
                 Spacer()
             }
             
-            if (selectCategoryIsPresented) {
+            if selectCategoryIsPresented {
                 CategorySelectorView(categories: categories, isPresented: $selectCategoryIsPresented, newCategory: $newCategory, selectedCategory: $selectedCategory)
                     .onDisappear{
                         print("New Category: ", newCategory)
@@ -61,10 +65,20 @@ struct JournalView: View {
                         newCategotySelected()
                     }
             }
+            
+            if createNewJournalIsPresented {
+                CreateNewJournalView(isPresented: $createNewJournalIsPresented, text: $newJournalText, mood: $newJournalMood)
+                    .onDisappear{
+                        print("New Text: ", newJournalText)
+                        print("Selected Mood: ", newJournalMood)
+                        createJournal()
+                    }
+            }
         }
     }
     
     private func loadData() {
+        journals = []
         RestApi.instance.getHomeData().then({ result in
             user = result.user
             print("Got user: ", result)
@@ -74,6 +88,17 @@ struct JournalView: View {
             }
             if selectedCategory.isEmpty {
                 selectedCategory = "Tap Me"
+            }
+            
+            for id in user.journals ?? [] {
+                RestApi.instance.getJournal(id: id).then({ j in
+                    if j.category == selectedCategory {
+                        journals.append(j)
+                        journals.sort { (i: Journal, j: Journal) -> Bool in
+                            return i.createdOn > j.createdOn
+                        }
+                    }
+                })
             }
         })
     }
@@ -100,6 +125,19 @@ struct JournalView: View {
         } else {
             loadData()
         }
+    }
+    
+    private func createJournal() {
+        if newJournalText.isEmpty || selectedCategory == "" || selectedCategory == "Tap Me" {
+            return
+        }
+        let cj = CreateJournal(category: selectedCategory, text: newJournalText, messages: [], images: [], mood: newJournalMood, weather: "Sunny")
+        RestApi.instance.createJournal(cj: cj).then({ response in
+            if response == 200 {
+                print("Successfully added a journal")
+                loadData()
+            }
+        })
     }
     
     private struct addButtonBody: View {
@@ -152,7 +190,6 @@ struct JournalView: View {
                         
                         Spacer()
                     }
-                    .padding()
                     
                     Text(journal.text)
                         .font(.system(size: 16, weight: .light))
@@ -160,9 +197,9 @@ struct JournalView: View {
                 }
                 .padding()
             }
-            .frame(width: 200, height: 60)
+            .frame(height: 60)
             .cornerRadius(15)
-            .padding()
+            .padding(.horizontal)
         }
     }
     
