@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MyRoomView: View {
+    let user: User
     
     var body: some View {
         ZStack {
@@ -24,7 +25,9 @@ struct MyRoomView: View {
                     .font(.system(size: 40, weight: .bold))
                     .foregroundColor(ColorManager.purple5)
                 
-                MyRoomRowView(title: "Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                NavigationLink(destination: JournalView(user: user), label: {
+                    MyRoomRowView(title: "Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                })
                 
                 MyRoomRowView(title: "Breathe", imageName: "wind", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 

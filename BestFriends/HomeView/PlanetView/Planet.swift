@@ -161,7 +161,7 @@ struct PlanetActionsView: View {
                 })
             }
             
-            NavigationLink(destination: MyRoomView(),
+            NavigationLink(destination: MyRoomView(user: user),
                            label: {
                 ZStack {
                     Circle()
