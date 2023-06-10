@@ -132,7 +132,7 @@ struct HugPushNotification2: View {
                         
                         Text("and needs your")
                             .font(.system(size: 20))
-                            .italic()
+//                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager .grey3)
