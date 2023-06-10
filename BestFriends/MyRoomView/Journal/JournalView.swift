@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct JournalView: View {
-    let user: User
     
-    @State private var category = "Tap Me"
-    @State private var categorySelectionTapped = false
+    let user: User
+    @State private var newCategory = ""
+    @State private var selectedCategory = "Tap Me"
+    @State private var selectCategoryIsPresented = false
     @State private var categories: [String] = []
     @State private var journals: [Journal] = []
     
@@ -26,7 +27,7 @@ struct JournalView: View {
                 .blendMode(.screen)
             
             VStack {
-                Text(category)
+                Text(selectedCategory)
                     .font(.system(size: 30, weight: .light))
                     .foregroundColor(ColorManager.purple5)
                     .onTapGesture {
@@ -49,14 +50,21 @@ struct JournalView: View {
                 Spacer()
             }
             
-            if (categorySelectionTapped) {
-                CategorySelectorView()
+            if (selectCategoryIsPresented) {
+                CategorySelectorView(categories: categories, isPresented: $selectCategoryIsPresented, newCategory: $newCategory, selectedCategory: $selectedCategory)
+                    .onDisappear{
+                        print("New Category: ", newCategory)
+                        print("Selected Category: ", selectedCategory)
+
+                    }
             }
         }
     }
     
     private func categoryTapped() {
-        categorySelectionTapped = true
+        newCategory = ""
+        selectedCategory = ""
+        selectCategoryIsPresented = true
     }
     
     private struct addButtonBody: View {
@@ -78,7 +86,10 @@ struct JournalView: View {
     }
     
     private struct CategorySelectorView: View {
-        @State private var newCategory = ""
+        let categories: [String]
+        @Binding var isPresented: Bool
+        @Binding var newCategory: String
+        @Binding var selectedCategory: String
         
         var body: some View {
             ZStack {
@@ -124,7 +135,8 @@ struct JournalView: View {
             if(newCategory.isEmpty) {
                 return
             }
-            
+            selectedCategory = newCategory
+            isPresented = false
         }
     }
     
