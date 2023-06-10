@@ -35,7 +35,8 @@ struct MyRoomView: View {
                 
                 MyRoomRowView(title: "Affirm", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 
-               
+//                Link to:  SmileVaultPreload
+                MyRoomRowView(title: "SmileVault", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 
                 
 
