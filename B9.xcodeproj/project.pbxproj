@@ -239,7 +239,6 @@
 		CFAB54262821007B00BBF502 /* FightTextUserIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB54252821007B00BBF502 /* FightTextUserIdeas.swift */; };
 		CFAB542828211BAC00BBF502 /* ParentsFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB542728211BAC00BBF502 /* ParentsFighting.swift */; };
 		CFAB542A282123EA00BBF502 /* WhoFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5429282123EA00BBF502 /* WhoFighting.swift */; };
-		CFB65BC32A35272A00E98A8B /* RoseThorn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB65BC22A35272A00E98A8B /* RoseThorn.swift */; };
 		CFC0ACBE28EF4E7B00B49831 /* SaySomethingPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */; };
 		CFC0ACC028EFD6DB00B49831 /* ChatInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */; };
 		CFC0ACC228EFE26400B49831 /* ChatInfo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0ACC128EFE26400B49831 /* ChatInfo2.swift */; };
@@ -533,7 +532,6 @@
 		CFAB54252821007B00BBF502 /* FightTextUserIdeas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightTextUserIdeas.swift; sourceTree = "<group>"; };
 		CFAB542728211BAC00BBF502 /* ParentsFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentsFighting.swift; sourceTree = "<group>"; };
 		CFAB5429282123EA00BBF502 /* WhoFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoFighting.swift; sourceTree = "<group>"; };
-		CFB65BC22A35272A00E98A8B /* RoseThorn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoseThorn.swift; path = ../../../../../../Applications/RoseThorn.swift; sourceTree = "<group>"; };
 		CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingPreload.swift; sourceTree = "<group>"; };
 		CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInfo.swift; sourceTree = "<group>"; };
 		CFC0ACC128EFE26400B49831 /* ChatInfo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInfo2.swift; sourceTree = "<group>"; };
@@ -742,7 +740,6 @@
 			children = (
 				7A8F3D7D2A32C63000BC2CF4 /* MyRoomView.swift */,
 				7A8A72982A33F690005FA3B1 /* Journal */,
-				CFB65BBF2A35265E00E98A8B /* Friendships */,
 				CFD12CC82819E83900AB2539 /* ThoughtfulMessages */,
 			);
 			path = MyRoomView;
@@ -1330,14 +1327,6 @@
 			path = "Help Beta Test";
 			sourceTree = "<group>";
 		};
-		CFB65BBF2A35265E00E98A8B /* Friendships */ = {
-			isa = PBXGroup;
-			children = (
-				CFB65BC22A35272A00E98A8B /* RoseThorn.swift */,
-			);
-			path = Friendships;
-			sourceTree = "<group>";
-		};
 		CFC0EE702906F9D9006B3FAA /* New Group */ = {
 			isa = PBXGroup;
 			children = (
@@ -1741,7 +1730,6 @@
 				7A2B1F5B26A630A200EDBEAF /* ColorExtension.swift in Sources */,
 				CF47CF0928E2C93E008B6F11 /* BeSinger.swift in Sources */,
 				CFD0ABD1285C00FF0032CA3D /* ReportIssues.swift in Sources */,
-				CFB65BC32A35272A00E98A8B /* RoseThorn.swift in Sources */,
 				7AD8DEFD27F66C9800D9F0E1 /* ChatModels.swift in Sources */,
 				7AFCF27A27FDFFA800D2DB5C /* BlurView.swift in Sources */,
 				7A0856A227F3D9A900E8282B /* RestAPI.swift in Sources */,
