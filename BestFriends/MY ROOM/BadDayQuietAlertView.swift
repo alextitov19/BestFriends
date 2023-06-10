@@ -76,20 +76,20 @@ struct BadDayQuietAlertView: View {
                 
                
                 
-                Text("We understand you may need time alone")
+                Text("but, you're just not ready to talk yet")
                     .font(.system(size: 20))
 //                    .italic()
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey3)
+                    .foregroundColor(ColorManager .grey1)
           
-                Text("before talking to your friends about it")
-                    .font(.system(size: 20))
-                //                    .italic()
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey3)
-                
+//                Text("before talking to your friends about it")
+//                    .font(.system(size: 20))
+//                //                    .italic()
+//                    .fontWeight(.thin)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(ColorManager .grey3)
+//
                 Spacer ()
                     .frame(height: 20)
                 
@@ -134,19 +134,19 @@ struct BadDayQuietAlertView: View {
                     Spacer ()
                         .frame(height: 50)
                     
-                    Text("But")
+                    Text("Your Friends")
                         .font(.system(size: 30))
                     
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager .grey3)
                     
-                    Text("Your freinds care about you")
-                        .font(.system(size: 30))
-                    
-                        .fontWeight(.regular)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .grey3)
+//                    Text("")
+//                        .font(.system(size: 30))
+//
+//                        .fontWeight(.regular)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager .grey3)
                 }
                 
       
@@ -181,7 +181,7 @@ struct BadDayQuietAlertView: View {
                    
                      
                         
-                        Text("and want to give you")
+                        Text("want to give you")
                             .font(.system(size: 20))
                             .italic()
                             .fontWeight(.light)
