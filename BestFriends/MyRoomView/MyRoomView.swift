@@ -43,33 +43,34 @@ struct MyRoomView: View {
             }
         }
     }
-}
-
-struct MyRoomRowView: View {
     
-    let title, imageName: String
-    let backgroundColor, foregroundColor: CGColor
-    
-    var body: some View {
-        ZStack {
-            Color(cgColor: backgroundColor)
-            
-            HStack{
-                Image(systemName: imageName)
-                    .resizable()
-                    .frame(width: 30, height: 30)
-                    .scaledToFit()
-                    .foregroundColor(Color(cgColor: foregroundColor))
+    private struct MyRoomRowView: View {
+        let title, imageName: String
+        let backgroundColor, foregroundColor: CGColor
+        
+        var body: some View {
+            ZStack {
+                Color(cgColor: backgroundColor)
                 
-                Spacer().frame(width: 20)
+                HStack{
+                    Image(systemName: imageName)
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .scaledToFit()
+                        .foregroundColor(Color(cgColor: foregroundColor))
+                    
+                    Spacer().frame(width: 20)
 
-                Text(title)
-                    .font(.system(size: 24, weight: .light))
-                    .foregroundColor(Color(cgColor: foregroundColor))
+                    Text(title)
+                        .font(.system(size: 24, weight: .light))
+                        .foregroundColor(Color(cgColor: foregroundColor))
+                }
             }
+            .frame(width: 200, height: 60)
+            .cornerRadius(15)
+            .padding()
         }
-        .frame(width: 200, height: 60)
-        .cornerRadius(15)
-        .padding()
     }
 }
+
+
