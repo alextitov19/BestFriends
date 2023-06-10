@@ -25,7 +25,7 @@ struct MyRoomView: View {
                     .font(.system(size: 40, weight: .light))
                     .foregroundColor(ColorManager.purple5)
                 
-                NavigationLink(destination: JournalView(user: user), label: {
+                NavigationLink(destination: JournalView(), label: {
                     MyRoomRowView(title: "Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 })
                 

@@ -9,9 +9,9 @@ import SwiftUI
 
 struct JournalView: View {
     
-    let user: User
+    @State private var user = User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: "", chatBackground: "")
     @State private var newCategory = ""
-    @State private var selectedCategory = "Tap Me"
+    @State private var selectedCategory = ""
     @State private var selectCategoryIsPresented = false
     @State private var categories: [String] = []
     @State private var journals: [Journal] = []
@@ -21,6 +21,7 @@ struct JournalView: View {
             ColorManager.purple7
                 .opacity(0.3)
                 .ignoresSafeArea()
+                .onAppear { loadData() }
             
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
@@ -55,16 +56,48 @@ struct JournalView: View {
                     .onDisappear{
                         print("New Category: ", newCategory)
                         print("Selected Category: ", selectedCategory)
-
+                        newCategotySelected()
                     }
             }
         }
+    }
+    
+    private func loadData() {
+        RestApi.instance.getHomeData().then({ result in
+            user = result.user
+            print("Got user: ", result)
+            categories = user.journalCategories ?? []
+            if categories.count > 0 && selectedCategory.isEmpty {
+                selectedCategory = categories[0]
+            }
+            if selectedCategory.isEmpty {
+                selectedCategory = "Tap Me"
+            }
+        })
     }
     
     private func categoryTapped() {
         newCategory = ""
         selectedCategory = ""
         selectCategoryIsPresented = true
+    }
+    
+    private func newCategotySelected() {
+        if (!newCategory.isEmpty) {
+            var u = user
+            if u.journalCategories == nil {
+                u.journalCategories = []
+            }
+            u.journalCategories!.append(newCategory)
+            RestApi.instance.updateUser(user: u).then({ response in
+                if response == 200 {
+                    print("Successully added a new category")
+                    loadData()
+                }
+            })
+        } else {
+            loadData()
+        }
     }
     
     private struct addButtonBody: View {
@@ -107,21 +140,40 @@ struct JournalView: View {
                         ColorManager.purple3
                             .opacity(0.7)
                         
-                        HStack {
-                            MainTextField(text: $newCategory, placeholder: "Create new category")
-                            
-                            Button(action: {
-                                createTapped()
-                            }, label: {
-                                Text("Create")
-                                    .font(.system(size: 16, weight: .bold))
-                                    .foregroundColor(ColorManager.purple5)
-                            })
-                        }
-                        .padding()
+                            HStack {
+                                MainTextField(text: $newCategory, placeholder: "Create new category")
+                                
+                                Button(action: {
+                                    createTapped()
+                                }, label: {
+                                    Text("Create")
+                                        .font(.system(size: 16, weight: .bold))
+                                        .foregroundColor(ColorManager.purple5)
+                                })
+                            }
+                            .padding()
                     }
                     .frame(height: 65)
                     .cornerRadius(15)
+                    
+                    ForEach(categories.indices) { i in
+                        Button(action: {
+                            newCategory = ""
+                            selectedCategory = categories[i]
+                            isPresented = false
+                        }, label: {
+                            ZStack {
+                                ColorManager.purple3
+                                    .opacity(0.7)
+                                
+                                    Text(categories[i])
+                                    .font(.system(size: 18, weight: .light))
+                                    .foregroundColor(ColorManager.purple5)
+                            }
+                            .frame(height: 65)
+                            .cornerRadius(15)
+                        })
+                    }
                     
                     Spacer()
                 }
