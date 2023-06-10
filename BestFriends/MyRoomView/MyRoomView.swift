@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct MyRoomView: View {
+    
+   
     let user: User
+//    let atmosphere: Atmosphere
+//    let friends: [User]
+//    let friendAtmospheres: [Atmosphere]
+
     
     var body: some View {
         ZStack {
@@ -35,9 +41,10 @@ struct MyRoomView: View {
                 
                 MyRoomRowView(title: "Affirm", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 
-//                Link to:  SmileVaultPreload
+
+//                NavigationLink(destination: SmileVaultPreload(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
                 MyRoomRowView(title: "SmileVault", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
-                
+//                })
                 
 
                 Spacer()
