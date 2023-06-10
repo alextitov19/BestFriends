@@ -44,7 +44,9 @@ struct JournalView: View {
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(journals, id: \.id) { journal in
-                        
+                        if journal.category == selectedCategory {
+                            JournalRowView(j: journal)
+                        }
                     }
                 }
                 
@@ -117,102 +119,46 @@ struct JournalView: View {
             .opacity(0.7)
         }
     }
-    
-    private struct CategorySelectorView: View {
-        let categories: [String]
-        @Binding var isPresented: Bool
-        @Binding var newCategory: String
-        @Binding var selectedCategory: String
+        
+    private struct JournalRowView: View {
+        let journal: Journal
+        let dateString: String
+
+        init(j: Journal) {
+            journal = j
+            var x = Int64(Date().timeIntervalSince1970) - j.createdOn
+            x = x / 60
+            var s = "\(x) min"
+            if x > 60 {
+                x = x / 60
+                s = "\(x) hr"
+                if x > 24 {
+                    x = x / 24
+                    s = "\(x) days"
+                }
+            }
+            dateString = s
+        }
         
         var body: some View {
             ZStack {
                 ColorManager.purple2
                 
-                VStack{
-                    Text("Select and existing category\nor create a new one")
-                        .font(.system(size: 18, weight: .light))
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.purple5)
-                        .padding(.bottom)
-                    
-                    
-                    ZStack {
-                        ColorManager.purple3
-                            .opacity(0.7)
+                VStack {
+                    HStack {
+                        Text(dateString)
+                            .font(.system(size: 16, weight: .regular))
+                            .foregroundColor(ColorManager.purple5)
                         
-                            HStack {
-                                MainTextField(text: $newCategory, placeholder: "Create new category")
-                                
-                                Button(action: {
-                                    createTapped()
-                                }, label: {
-                                    Text("Create")
-                                        .font(.system(size: 16, weight: .bold))
-                                        .foregroundColor(ColorManager.purple5)
-                                })
-                            }
-                            .padding()
+                        Spacer()
                     }
-                    .frame(height: 65)
-                    .cornerRadius(15)
+                    .padding()
                     
-                    ForEach(categories.indices) { i in
-                        Button(action: {
-                            newCategory = ""
-                            selectedCategory = categories[i]
-                            isPresented = false
-                        }, label: {
-                            ZStack {
-                                ColorManager.purple3
-                                    .opacity(0.7)
-                                
-                                    Text(categories[i])
-                                    .font(.system(size: 18, weight: .light))
-                                    .foregroundColor(ColorManager.purple5)
-                            }
-                            .frame(height: 65)
-                            .cornerRadius(15)
-                        })
-                    }
-                    
-                    Spacer()
+                    Text(journal.text)
+                        .font(.system(size: 16, weight: .light))
+                        .foregroundColor(ColorManager.purple5)
                 }
                 .padding()
-            }
-            .cornerRadius(15)
-            .padding()
-        }
-        
-        func createTapped() {
-            if(newCategory.isEmpty) {
-                return
-            }
-            selectedCategory = newCategory
-            isPresented = false
-        }
-    }
-    
-    private struct JournalRowView: View {
-        let title, imageName: String
-        let backgroundColor, foregroundColor: CGColor
-        
-        var body: some View {
-            ZStack {
-                Color(cgColor: backgroundColor)
-                
-                HStack{
-                    Image(systemName: imageName)
-                        .resizable()
-                        .frame(width: 30, height: 30)
-                        .scaledToFit()
-                        .foregroundColor(Color(cgColor: foregroundColor))
-                    
-                    Spacer().frame(width: 20)
-                    
-                    Text(title)
-                        .font(.system(size: 24, weight: .light))
-                        .foregroundColor(Color(cgColor: foregroundColor))
-                }
             }
             .frame(width: 200, height: 60)
             .cornerRadius(15)
