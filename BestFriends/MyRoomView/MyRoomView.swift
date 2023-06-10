@@ -22,7 +22,7 @@ struct MyRoomView: View {
             
             VStack {
                 Text("My Room")
-                    .font(.system(size: 40, weight: .bold))
+                    .font(.system(size: 40, weight: .light))
                     .foregroundColor(ColorManager.purple5)
                 
                 NavigationLink(destination: JournalView(user: user), label: {
@@ -74,7 +74,7 @@ struct MyRoomRowView: View {
                 Spacer().frame(width: 20)
 
                 Text(title)
-                    .font(.system(size: 24, weight: .bold))
+                    .font(.system(size: 24, weight: .light))
                     .foregroundColor(Color(cgColor: foregroundColor))
             }
         }
