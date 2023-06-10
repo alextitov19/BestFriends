@@ -108,7 +108,7 @@ struct AtmosphereMain2: View {
                             .frame(height: 15)
                         
                         Text("Please")
-                          .italic()
+//                          .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
@@ -116,7 +116,7 @@ struct AtmosphereMain2: View {
                        
                         
                         Text("send")
-                          .italic()
+//                          .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
@@ -124,7 +124,7 @@ struct AtmosphereMain2: View {
                         
                         
                         Text("CareHearts")
-                          .italic()
+//                          .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
@@ -234,22 +234,22 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 15)
                         
-                        Text("Jump to")
-                          .italic()
+                        Text("Jump into")
+//                          .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
                           .foregroundColor(ColorManager .grey2)
                         
                         Text("safety of")
-                          .italic()
+//                          .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
                           .foregroundColor(ColorManager .grey2)
                         
                         Text("My Room")
-                          .italic()
+//                          .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
@@ -523,7 +523,7 @@ struct AtmosphereMain2: View {
                         VStack {
                             
                             Text("Who do you want CareHearts from?")
-                                .italic()
+//                                .italic()
                                 .font(.system(size: 17))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)

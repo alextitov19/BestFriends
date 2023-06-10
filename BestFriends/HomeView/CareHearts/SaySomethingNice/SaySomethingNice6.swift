@@ -60,14 +60,14 @@ struct SaySomethingNice6: View {
 //                    .fontWeight(.thin)
 //                    .multilineTextAlignment(.center)
                 
-                Text("this app doesn't work")
+                Text("This app doesn't work")
                     .font(.system(size: 38))
                 
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                 
-                Text("If you don't add your friends")
+                Text("without your friends")
                     .font(.system(size: 27))
                     .italic()
                     .foregroundColor(ColorManager.grey1)

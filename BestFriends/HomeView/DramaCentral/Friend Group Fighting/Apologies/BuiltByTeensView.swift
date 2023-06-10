@@ -41,39 +41,39 @@ struct BuiltByTeensView: View {
             VStack {
                 
                 
-                
-                Text("Thank you,")
-                    .font(.system(size: 50))
+                Text("from the heart of us,")
+                    .font(.system(size: 20))
                     .italic()
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
+                Text("Thank you")
+//                    .italic()
+                    .font(.system(size: 50))
+                    .foregroundColor(ColorManager.grey1)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
                 
-                Text("for joining us")
+                
+                Text("for being a best friend")
                     .font(.system(size: 35))
-                    .italic()
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 80)
+                    .frame(height: 100)
+             
+//
+//                Text("we hope you're enjoying")
+//                    .font(.system(size: 20))
+//                    .foregroundColor(ColorManager.grey1)
+//                    .fontWeight(.thin)
+//                    .multilineTextAlignment(.center)
                 
-                Text("from the heart of us,")
-                    .font(.system(size: 20))
-                    .foregroundColor(ColorManager.grey1)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                
-                Text("we hope you're enjoying")
-                    .font(.system(size: 20))
-                    .foregroundColor(ColorManager.grey1)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                
-                Text("BestFriends")
-                    .font(.system(size: 60))
+                Text("yep, we're")
+                    .font(.system(size: 25))
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
@@ -82,10 +82,10 @@ struct BuiltByTeensView: View {
                     
                     VStack {
                         
-                        
-                        
-                        Spacer()
-                            .frame(height: 20)
+//
+//
+//                        Spacer()
+//                            .frame(height: 20)
                         
                         NavigationLink(
                             
@@ -94,8 +94,8 @@ struct BuiltByTeensView: View {
                                 Text("Built by Teens")
                                     .fontWeight(.light)
                                     .foregroundColor(Color.white)
-                                    .frame(width: 230, height: 60)
-                                    .font(.system(size: 25))
+                                    .frame(width: 250, height: 60)
+                                    .font(.system(size: 30))
                                     .background(ColorManager.pmbc_green)
                                     .cornerRadius(7)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -103,62 +103,67 @@ struct BuiltByTeensView: View {
                             })
                         
                         
-                        Spacer()
-                            .frame(height: 20)
-                        
-                        NavigationLink(
-                            
-                            destination: INFOPreload3(user: user),
-                            label: {
-                                Text("Free Stickers")
-                                    .fontWeight(.light)
-                                    .foregroundColor(Color.white)
-                                    .frame(width: 230, height: 60)
-                                    .font(.system(size: 25))
-                                    .background(ColorManager.pmbc_green)
-                                    .cornerRadius(7)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            })
-                        
+                    
                         
                         VStack {
+//                            Spacer()
+//                                .frame(height: 40)
+//
+//                            Text("help us make BFs better,")
+//                                .font(.system(size: 20))
+//                                .foregroundColor(ColorManager.grey1)
+//                                .fontWeight(.thin)
+//                                .multilineTextAlignment(.center)
+//
+//                            Text("to help you smile faster")
+//                                .font(.system(size: 20))
+//                                .foregroundColor(ColorManager.grey1)
+//                                .fontWeight(.thin)
+//                                .multilineTextAlignment(.center)
+//
+//                            Spacer()
+//                                .frame(height: 20)
+//                            //                        Link(destination: URL(string: "https://socialtechlabs.com/surveys/")!)
+//                            NavigationLink(
+//
+//                                destination: SurveyStickersPreload(),
+//                                label: {
+//                                    Text("Give us Feedback")
+//                                        .fontWeight(.light)
+//                                        .foregroundColor(Color.white)
+//                                        .frame(width: 250, height: 60)
+//                                        .font(.system(size: 25))
+//                                        .background(ColorManager.pmbc_green)
+//                                        .cornerRadius(7)
+//                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                                })
+//
                             Spacer()
-                                .frame(height: 40)
+                                .frame(height: 80)
                             
-                            Text("help us make BFs better,")
-                                .font(.system(size: 20))
+                            Text("for your laptop")
+                                .font(.system(size: 25))
                                 .foregroundColor(ColorManager.grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
-                            Text("to help you smile faster")
-                                .font(.system(size: 20))
-                                .foregroundColor(ColorManager.grey1)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                            
-                            Spacer()
-                                .frame(height: 20)
-                            //                        Link(destination: URL(string: "https://socialtechlabs.com/surveys/")!)
                             NavigationLink(
                                 
-                                destination: SurveyStickersPreload(),
+                                destination: INFOPreload3(user: user),
                                 label: {
-                                    Text("Give us Feedback")
+                                    Text("Free Stickers")
                                         .fontWeight(.light)
                                         .foregroundColor(Color.white)
-                                        .frame(width: 230, height: 60)
-                                        .font(.system(size: 25))
+                                        .frame(width: 250, height: 60)
+                                        .font(.system(size: 35))
                                         .background(ColorManager.pmbc_green)
                                         .cornerRadius(7)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     
                                 })
                             
-                            
-                            
-                            
+                        
                             
                             
                             
