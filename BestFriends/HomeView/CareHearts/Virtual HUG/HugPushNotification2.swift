@@ -105,12 +105,12 @@ struct HugPushNotification2: View {
                             
                             NavigationLink( destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                                             label: {
-                                Text("send CareHearts")
+                                Text("SEND CareHearts")
                                     .fontWeight(.thin)
                                     .frame(width: 200, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 23))
-                                    .background(ColorManager.purple3)
+                                    .background(ColorManager.pmbc_green)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
@@ -146,12 +146,12 @@ struct HugPushNotification2: View {
                             
                             NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
                                             label: {
-                                Text("request a PhotoPOP")
+                                Text("REQUEST a PhotoPOP")
                                     .fontWeight(.thin)
                                     .frame(width: 250, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 23))
-                                    .background(ColorManager.purple3)
+                                    .background(ColorManager.pmbc_blue)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
