@@ -18,7 +18,7 @@ struct HugPushNotification2: View {
     let user: User
     let atmosphere: Atmosphere
     let friends: [User]
-//    let friendAtmospheres: [Atmosphere]
+    let friendAtmospheres: [Atmosphere]
     let groups: [Group]
     
     
@@ -26,89 +26,129 @@ struct HugPushNotification2: View {
     var body: some View {
         
         ZStack {
-//
-//            ColorManager .purple1
-//                .ignoresSafeArea()
-//                .onAppear()
-////
-////            Color .purple
-////                .ignoresSafeArea()
-////
-//
-//            AdPlayerView(name: "sky2")
-//                .ignoresSafeArea()
-//
-//
+            //
+            //            ColorManager .purple1
+            //                .ignoresSafeArea()
+            //                .onAppear()
+            ////
+            ////            Color .purple
+            ////                .ignoresSafeArea()
+            ////
+            //
+            //            AdPlayerView(name: "sky2")
+            //                .ignoresSafeArea()
+            //
+            //
             
             ColorManager.purple7
                 .opacity(0.6)
                 .ignoresSafeArea()
-                
+            
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-
+            
             
             VStack {
-
-                Text("Friend having a bad day?")
-                    .font(.system(size: 25))
-//                    .italic()
+                Text("Ouch!")
+                    .font(.system(size: 45))
+                //                    .italic()
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager .grey2)
                 
-            
-               
+                Text("Something bad just happened")
+                    .font(.system(size: 28))
+                //                    .italic()
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager .grey2)
+                
+      
+                
+                Spacer ()
+                    .frame(height: 5)
+                
+                Text("But, you're just not ready")
+                    .font(.system(size: 17))
+                    .italic()
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager .grey1)
+                
+                
+                Text("to talk to your friends about it yet")
+                    .font(.system(size: 17))
+                    .italic()
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager .grey1)
+                
+                
                 VStack {
                     
-               
-                    Text("send")
-                        .font(.system(size: 25))
-//                            .italic()
-                        .fontWeight(.light)
+                    
+                    NavigationLink( destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                    label: {
+                        Text("REQUEST Care Hearts")
+                            .fontWeight(.thin)
+                            .frame(width: 300, height: 50)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 30))
+                            .background(Color .purple)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
+                    
+                    Spacer ()
+                        .frame(height: 100)
+//
+//                    Image(systemName: "heart.fill")
+//                        .resizable()
+//                        .foregroundColor(ColorManager .purple1)
+//                        .frame(width: 100, height: 75)
+//                        .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
+//                        .opacity(0.3)
+                    
+                    Text("Friend having a bad day?")
+                        .font(.system(size: 30))
+                    //                    .italic()
+                        .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager .grey2)
                     
                     
-                      Text("Emotional Support")
-                          .font(.system(size: 35))
-//                            .italic()
-                          .fontWeight(.light)
-                          .multilineTextAlignment(.center)
-                          .foregroundColor(ColorManager .grey2)
-                      
-          
                     
-                }
-                
-                
-                
-                Spacer ()
-                    .frame(height: 20)
-                
-                ZStack {
+                    VStack {
+                        
+                        
+                    }
                     
                     
-                                        Image(systemName: "heart.fill")
-                                            .resizable()
-                                            .foregroundColor(ColorManager .purple3)
-                                            .frame(width: 230, height: 200)
-                                            .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
-                                            .opacity(0.8)
+               
                     
-                    
-                    
-//                    VStack {
-//
-//                        Spacer ()
-//                            .frame(height: 30)
-//
-//
+                    ZStack {
+                        
+                        
+//                        Image(systemName: "heart.fill")
+//                            .resizable()
+//                            .foregroundColor(ColorManager .purple3)
+//                            .frame(width: 150, height: 100)
+//                            .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
+//                            .opacity(0.8)
 //
                         
+                        
+                        //                    VStack {
+                        //
+                        //                        Spacer ()
+                        //                            .frame(height: 30)
+                        //
+                        //
+                        //
+                        
                         VStack {
-        
+                            
                             
                             NavigationLink( destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                                             label: {
@@ -123,8 +163,8 @@ struct HugPushNotification2: View {
                             })
                             
                             Text("Thx for being a true friend")
-                                .font(.system(size: 15))
-                               .italic()
+                                .font(.system(size: 17))
+                                .italic()
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(ColorManager .grey1)
@@ -132,59 +172,69 @@ struct HugPushNotification2: View {
                             
                             Spacer ()
                                 .frame(height: 100)
-                     
                             
-                                                Image(systemName: "heart.fill")
-                                                    .resizable()
-                                                    .foregroundColor(ColorManager .purple2)
-                                                    .frame(width: 200, height: 160)
-                                                    .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
-                                                    .opacity(0.8)
+//
+//                            Image(systemName: "heart.fill")
+//                                .resizable()
+//                                .foregroundColor(ColorManager .purple2)
+//                                .frame(width: 125, height: 90)
+//                                .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
+//                                .opacity(0.8)
+//
+                            Spacer ()
+                                .frame(height: 5)
                             
-                
+                            Text("Wondering what")
+                                .font(.system(size: 26))
+                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager .grey2)
                             
-                            Text("Want to know what your frined is up too?")
-                                .font(.system(size: 20))
+                            Text("your friends are up too?")
+                                .font(.system(size: 26))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(ColorManager .grey2)
                             
                             
                             
+                            
                             NavigationLink(destination: PhotoPopView(user: user, friends: friends),
-                                            label: {
+                                           label: {
                                 Text("REQUEST a PhotoPOP")
                                     .fontWeight(.thin)
                                     .frame(width: 300, height: 50)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 30))
-                                    .background(Color .purple)
+                                    .background(Color .green)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
                             
-                            Text("STOP texting - just shake your phone")
+                            Text("Just shake your phone")
                                 .font(.system(size: 15))
-                               .italic()
+                                .italic()
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(ColorManager .grey1)
-                       
                             
-                     
-                            
-
-                            
+                            VStack {
+                                
+                                
+                                Spacer ()
+                                    .frame(height: 40)
+                                
+                                
+                            }
                         }
                     }
                 }
             }
+            
         }
-        
     }
     
-    
-
+}
 
 
 // **********************************************
