@@ -880,6 +880,7 @@
 				CFAE7347283C745800015FD2 /* Help Beta Test */,
 				CFD0469D2838392200BF0B02 /* URGENT Chat Invite */,
 				CF47CF0A28E2CAC7008B6F11 /* CareHearts */,
+				CFB65BC52A35656300E98A8B /* CareHearts2 */,
 				CFD8BD0C2915562D00F86EFB /* OLD My ROOM */,
 			);
 			path = HomeView;
@@ -898,9 +899,9 @@
 			isa = PBXGroup;
 			children = (
 				7AFCF27727FDFF2C00D2DB5C /* ChatGroupsView.swift */,
-				7AFCF27E27FE005F00D2DB5C /* GroupRow.swift */,
 				7AFCF27927FDFFA800D2DB5C /* BlurView.swift */,
 				7AFCF27B27FDFFB000D2DB5C /* CustomCorner.swift */,
+				7AFCF27E27FE005F00D2DB5C /* GroupRow.swift */,
 			);
 			path = ChatGroups;
 			sourceTree = "<group>";
@@ -1262,7 +1263,6 @@
 		CFA1225E2859764600E22E84 /* HurtFeelings */ = {
 			isa = PBXGroup;
 			children = (
-				CFA1225F2859771600E22E84 /* HurtFeelings.swift */,
 				CFA1226128597AFC00E22E84 /* HurtFeelings2.swift */,
 				CF4A08E128793CC900ADA9DD /* HurtFeelings4.swift */,
 			);
@@ -1331,7 +1331,6 @@
 		CFB65BC42A35598700E98A8B /* PhotoPOPRequest */ = {
 			isa = PBXGroup;
 			children = (
-				CFB65BC52A35656300E98A8B /* CareHearts2 */,
 			);
 			path = PhotoPOPRequest;
 			sourceTree = "<group>";
@@ -1340,6 +1339,7 @@
 			isa = PBXGroup;
 			children = (
 				CFD12CC6281943CA00AB2539 /* Impetus.swift */,
+				CFA1225F2859771600E22E84 /* HurtFeelings.swift */,
 			);
 			path = CareHearts2;
 			sourceTree = "<group>";
