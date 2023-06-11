@@ -83,7 +83,7 @@ struct HugPreload: View {
 
 
                 NavigationLink(destination: HurtFeelings(user: user, friends: friends, groups: groups, atmosphere: atmosphere), label: {
-                    HugCircle (color: ColorManager .pmbc_green, friendName: "more \nCareHearts")
+                    HugCircle (color: ColorManager .pmbc_green, friendName: "MORE \nCareHearts")
                 })
                 .offset(x: showItems ? -50 : 0, y: showItems ? -300: 0)
                 .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)

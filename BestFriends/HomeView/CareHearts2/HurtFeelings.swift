@@ -49,12 +49,7 @@ struct HurtFeelings: View {
 
             ZStack{
 
-                NavigationLink(destination: SendSongPush(user: user, friends: friends), label: {
-                    HugCircle (color: ColorManager .grey1, friendName: "send a \nsong")
-                })
-                .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
-                .opacity(0.65)
+              
 
                     NavigationLink(destination: InfoWhyLoveBF(user: user, friends: friends), label: {
                         HugCircle (color: ColorManager.purple1, friendName: "you looked \nnice \ntoday")
@@ -65,14 +60,13 @@ struct HurtFeelings: View {
                     .opacity(0.65)
 
 
-                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .orange2, friendName: "thinking \nof you")
-                    })
-                    .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
-                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+//                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), label: {
+//                        HugCircle (color: ColorManager .orange2, friendName: "thinking \nof you")
+//                    })
+//                    .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+//                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+//                    .opacity(065)
 //
-                    .opacity(065)
-
 
 
                     NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
@@ -83,7 +77,7 @@ struct HurtFeelings: View {
 //                    .opacity(0.65)
                     .opacity(0.65)
 
-
+//
 //                NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
 //                    HugCircle (color: ColorManager .purple3, friendName: "PhotoPOP")
 //                })
@@ -91,7 +85,7 @@ struct HurtFeelings: View {
 //                .shadow(color: ColorManager .pmbc_green, radius: 10, x: 10, y: 10)
 ////                .opacity(0.85)
 //                .opacity(0.65)
-
+//
 
 
                 NavigationLink(destination: SaySomethingNice8(user: user, atmosphere: atmosphere, friends: friends), label: {
@@ -120,7 +114,7 @@ struct HurtFeelings: View {
 
 
                 VStack {
-//
+
 //                    NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
 //                        HugCircle (color: ColorManager.purple1, friendName: "send a \nhug")
 //                    })
@@ -128,7 +122,14 @@ struct HurtFeelings: View {
 //                    .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
 ////                    .opacity(0.6)
 //                    .opacity(0.65)
-//
+                    
+                    NavigationLink(destination: SendSongPush(user: user, friends: friends), label: {
+                        HugCircle (color: ColorManager .grey1, friendName: "send a \nsong")
+                    })
+                    .offset(x: showItems ? 80 : 0, y: showItems ? 400: 0)
+                    .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+                    .opacity(0.65)
+
 //                        NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
 //                            HugCircle (color: ColorManager .red, friendName: "blowing \nkisses")
 //                        })
@@ -137,6 +138,13 @@ struct HurtFeelings: View {
 //                        .opacity(0.50)
 
                   
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), label: {
+                        HugCircle (color: ColorManager .orange2, friendName: "thinking \nof you")
+                    })
+                    .offset(x: showItems ? 100 : 0, y: showItems ? 425: 0)
+                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                    .opacity(065)
+
 
 
 
