@@ -85,7 +85,7 @@ struct HugPushNotification2: View {
                     
                                         Image(systemName: "heart.fill")
                                             .resizable()
-                                            .foregroundColor(ColorManager .purple2)
+                                            .foregroundColor(ColorManager .purple3)
                                             .frame(width: 260, height: 230)
                                             .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
                                             .opacity(0.8)
@@ -125,13 +125,7 @@ struct HugPushNotification2: View {
                             
                             Spacer ()
                                 .frame(height: 100)
-                            
-                            
-                       
-                            
-                            Spacer ()
-                                .frame(height: 100)
-                            
+                     
                             
                                                 Image(systemName: "heart.fill")
                                                     .resizable()
@@ -139,6 +133,15 @@ struct HugPushNotification2: View {
                                                     .frame(width: 260, height: 230)
                                                     .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
                                                     .opacity(0.8)
+                            
+                
+                            
+                            Text("Want to know what your frined is up too?")
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager .grey2)
+                            
                             
                             
                             NavigationLink( destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
@@ -153,15 +156,15 @@ struct HugPushNotification2: View {
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
                             
-                           
-                       
-                            
-                            Text("Now you can stop asking them what they are doing via Chat")
-                                .font(.system(size: 20))
-    //                            .italic()
+                            Text("Forget texting")
+                                .font(.system(size: 15))
+                               .italic()
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager .grey3)
+                                .foregroundColor(ColorManager .grey1)
+                       
+                            
+                     
                             
 
                             
