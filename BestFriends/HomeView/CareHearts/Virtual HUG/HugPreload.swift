@@ -26,7 +26,7 @@ struct HugPreload: View {
 
         ZStack {
 
-                        Color .black
+            ColorManager .grey2
                             .ignoresSafeArea()
                             .onAppear()
                             .scaledToFill()
@@ -81,13 +81,13 @@ struct HugPreload: View {
 ////                    .opacity(0.65)
 //                    .opacity(0.65)
 
-
-                NavigationLink(destination: HurtFeelings(user: user, friends: friends, groups: groups, atmosphere: atmosphere), label: {
-                    HugCircle (color: Color .green, friendName: "MORE \nCareHearts")
-                })
-                .offset(x: showItems ? 0 : 0, y: showItems ? -100: 0)
-                .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
-                .opacity(0.65)
+//
+//                NavigationLink(destination: HurtFeelings(user: user, friends: friends, groups: groups, atmosphere: atmosphere), label: {
+//                    HugCircle (color: Color .green, friendName: "MORE \nCareHearts")
+//                })
+//                .offset(x: showItems ? 0 : 0, y: showItems ? -100: 0)
+//                .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
+//                .opacity(0.8)
 
 //
 //                NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
@@ -100,14 +100,14 @@ struct HugPreload: View {
 
 
 
-
-                    NavigationLink(destination: EmptyView(), label: {
-                        HugCircle (color: ColorManager .purple5, friendName: "MORE \nCareHearts")
-                    })
-                    .offset(x: showItems ? 50 : 0, y: showItems ? 50: 0)
-                    .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
-                    .opacity(0.65)
-
+//
+//                    NavigationLink(destination: EmptyView(), label: {
+//                        HugCircle (color: ColorManager .purple5, friendName: "MORE \nCareHearts")
+//                    })
+//                    .offset(x: showItems ? 50 : 0, y: showItems ? 50: 0)
+//                    .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
+//                    .opacity(0.65)
+//
 
 
 
@@ -120,7 +120,7 @@ struct HugPreload: View {
                         NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
                             HugCircle (color: ColorManager .red, friendName: "blowing \nkisses")
                         })
-                        .offset(x: showItems ? 85 : 0, y: showItems ? 450: 0)
+                        .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
                         .shadow(color: Color .white, radius: 10, x: 10, y: 10)
                         .opacity(0.50)
 
@@ -147,23 +147,31 @@ struct HugPreload: View {
 
 
 
+                    NavigationLink(destination: HurtFeelings(user: user, friends: friends, groups: groups, atmosphere: atmosphere), label: {
+                        HugCircle (color: ColorManager .pmbc_green, friendName: "MORE \nCareHearts")
+                    })
+                    .offset(x: showItems ? 50 : 0, y: showItems ? 50: 0)
+                    .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
+                    .opacity(0.65)
 
 
 
 
-                        Image(systemName: "heart.fill")
-                            .resizable()
-                            .foregroundColor(ColorManager .purple1)
-                            .frame(width: 250, height: 200)
-                        //                    .blur(radius: 2)
-                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
-                            .opacity(0.70)
+
+//
+//                        Image(systemName: "heart.fill")
+//                            .resizable()
+//                            .foregroundColor(ColorManager .purple1)
+//                            .frame(width: 250, height: 200)
+//                        //                    .blur(radius: 2)
+//                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
+//                            .opacity(0.70)
 
 
                         VStack {
 
                             Spacer ()
-                                .frame(height: 255)
+                                .frame(height: 155)
 
 
                         }

@@ -31,7 +31,7 @@ struct PhotoPopView: View {
     var body: some View {
         ZStack {
 
-            ColorManager.grey4
+            Color .blue
                 .ignoresSafeArea()
                 .onAppear()
                 .scaledToFill()
@@ -59,8 +59,8 @@ struct PhotoPopView: View {
                 
                 
                 Text("Shake iPhone to display image")
-                    .font(.system(size: 17, weight: .light))
-                    .foregroundColor(ColorManager .grey2)
+                    .font(.system(size: 17, weight: .regular))
+                    .foregroundColor(ColorManager .grey1)
 //                
 //                Text("image friend sent!")
 //                    .font(.system(size: 17, weight: .light))
@@ -76,7 +76,7 @@ struct PhotoPopView: View {
                             .frame(width: 250, height: 30)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 18.5))
-                            .background(ColorManager.purple3)
+                            .background(ColorManager.purple4)
                             .cornerRadius(10)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
@@ -91,12 +91,12 @@ struct PhotoPopView: View {
                     showingRecipients = true
                 }, label: {
                     Text("+")
-                        .fontWeight(.regular)
-                        .frame(width: 30, height: 30)
+                        .fontWeight(.thin)
+                        .frame(width: 40, height: 40)
                         .foregroundColor(.white)
-                        .font(.system(size: 30))
-                        .background(ColorManager.purple3)
-                        .cornerRadius(15)
+                        .font(.system(size: 40))
+                        .background(Color .green)
+                        .cornerRadius(20)
                 })
                 
                 
