@@ -58,9 +58,9 @@ struct PhotoPopView: View {
                     .multilineTextAlignment(.center)
                 
                 
-//                Text("Shake iPhone to see")
-//                    .font(.system(size: 17, weight: .light))
-//                    .foregroundColor(ColorManager .grey2)
+                Text("Shake iPhone to display image")
+                    .font(.system(size: 17, weight: .light))
+                    .foregroundColor(ColorManager .grey2)
 //                
 //                Text("image friend sent!")
 //                    .font(.system(size: 17, weight: .light))

@@ -86,7 +86,7 @@ struct HugPushNotification2: View {
                                         Image(systemName: "heart.fill")
                                             .resizable()
                                             .foregroundColor(ColorManager .purple3)
-                                            .frame(width: 260, height: 230)
+                                            .frame(width: 230, height: 200)
                                             .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
                                             .opacity(0.8)
                     
@@ -130,7 +130,7 @@ struct HugPushNotification2: View {
                                                 Image(systemName: "heart.fill")
                                                     .resizable()
                                                     .foregroundColor(ColorManager .purple2)
-                                                    .frame(width: 260, height: 230)
+                                                    .frame(width: 200, height: 160)
                                                     .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
                                                     .opacity(0.8)
                             
@@ -144,7 +144,7 @@ struct HugPushNotification2: View {
                             
                             
                             
-                            NavigationLink( destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
+                            NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
                                             label: {
                                 Text("request a PhotoPOP")
                                     .fontWeight(.thin)
@@ -156,7 +156,7 @@ struct HugPushNotification2: View {
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
                             
-                            Text("Forget texting")
+                            Text("STOP texting")
                                 .font(.system(size: 15))
                                .italic()
                                 .fontWeight(.light)
