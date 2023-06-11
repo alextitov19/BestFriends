@@ -31,7 +31,7 @@ struct PhotoPopView: View {
     var body: some View {
         ZStack {
 
-            Color .blue
+            Color .purple
                 .ignoresSafeArea()
                 .onAppear()
                 .scaledToFill()

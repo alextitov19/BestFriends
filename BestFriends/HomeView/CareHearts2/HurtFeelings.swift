@@ -27,24 +27,24 @@ struct HurtFeelings: View {
     var body: some View {
 
         ZStack {
-
-                        Color .black
-                            .ignoresSafeArea()
-                            .onAppear()
-                            .scaledToFill()
-
-//
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
-//                .opacity(0.5)
-//
-
-
+            
+            ColorManager.purple7
+                .opacity(0.6)
+                .ignoresSafeArea()
+                
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
+
+//
+//                        Color .black
+//                            .ignoresSafeArea()
+//                            .onAppear()
+//                            .scaledToFill()
+
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
 
 
             ZStack{

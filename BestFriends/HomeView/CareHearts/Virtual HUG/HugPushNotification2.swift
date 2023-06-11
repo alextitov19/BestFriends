@@ -26,21 +26,28 @@ struct HugPushNotification2: View {
     var body: some View {
         
         ZStack {
+//
+//            ColorManager .purple1
+//                .ignoresSafeArea()
+//                .onAppear()
+////
+////            Color .purple
+////                .ignoresSafeArea()
+////
+//
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//
+//
             
-            ColorManager .purple1
+            ColorManager.purple7
+                .opacity(0.6)
                 .ignoresSafeArea()
-                .onAppear()
-            
-            Color .black
-                .ignoresSafeArea()
-            
-            
+                
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
-            
-            
-            
-            
+                .blendMode(.screen)
+
             
             VStack {
 

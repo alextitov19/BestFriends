@@ -26,23 +26,32 @@ struct HugPreload: View {
 
         ZStack {
 
-            ColorManager .grey2
-                            .ignoresSafeArea()
-                            .onAppear()
-                            .scaledToFill()
-
-//
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
-//                .opacity(0.5)
-//
-
-
+            
+            ColorManager.purple7
+                .opacity(0.6)
+                .ignoresSafeArea()
+                
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
+
+//            ColorManager .grey2
+//                            .ignoresSafeArea()
+//                            .onAppear()
+//                            .scaledToFill()
+//
+////
+////            Image("purpleBackground")
+////                .resizable()
+////                .ignoresSafeArea()
+////                .scaledToFill()
+////                .opacity(0.5)
+////
+//
+//
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
 
 
             ZStack{

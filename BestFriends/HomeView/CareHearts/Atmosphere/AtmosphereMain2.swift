@@ -41,43 +41,22 @@ struct AtmosphereMain2: View {
     
     var body: some View {
         ZStack {
-            
-//
-//            if shareTapped {
-//
-//                ColorManager.purple3
-//                    .ignoresSafeArea()
-//                    .onAppear()
-////                Image("purpleBackground")
-////                    .resizable()
-////                    .ignoresSafeArea()
-////                    .scaledToFill()
-////                    .ignoresSafeArea()
-//
-//                AdPlayerView(name: "sky2")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//            } else {
-//                AdPlayerView(name: "")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//
-//                ColorManager.purple1
-//                    .ignoresSafeArea()
-//            }
-            
-            
-            
-            ColorManager .purple3
+            ColorManager.purple7
+                .opacity(0.6)
                 .ignoresSafeArea()
-              .onAppear()
-
-//            Color .black
-//                .ignoresSafeArea()
-
-        
+                
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
+                .blendMode(.screen)
+
+            
+            
+//            ColorManager .purple3
+//                .ignoresSafeArea()
+//              .onAppear()
+//
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
             
             
             VStack {
@@ -112,7 +91,7 @@ struct AtmosphereMain2: View {
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
-                          .foregroundColor(ColorManager .grey2)
+                          .foregroundColor(ColorManager .grey1)
                        
                         
                         Text("send")
@@ -120,7 +99,7 @@ struct AtmosphereMain2: View {
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
-                          .foregroundColor(ColorManager .grey2)
+                          .foregroundColor(ColorManager .grey1)
                         
                         
                         Text("CareHearts")
@@ -128,7 +107,7 @@ struct AtmosphereMain2: View {
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
-                          .foregroundColor(ColorManager .grey2)
+                          .foregroundColor(ColorManager .grey1)
                         
                         Button(action: {
                             mood = 0
@@ -239,21 +218,21 @@ struct AtmosphereMain2: View {
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
-                          .foregroundColor(ColorManager .grey2)
+                          .foregroundColor(ColorManager .grey1)
                         
                         Text("safety of")
 //                          .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
-                          .foregroundColor(ColorManager .grey2)
+                          .foregroundColor(ColorManager .grey1)
                         
                         Text("My Room")
 //                          .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
-                          .foregroundColor(ColorManager .grey2)
+                          .foregroundColor(ColorManager .grey1)
                         
 //                        Text("My Room")
 //                          .italic()
@@ -527,7 +506,7 @@ struct AtmosphereMain2: View {
                                 .font(.system(size: 17))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager .grey3)
+                                .foregroundColor(ColorManager .grey1)
                             
 //                            Text("but you're not ready to talk yet!")
 //                                .italic()

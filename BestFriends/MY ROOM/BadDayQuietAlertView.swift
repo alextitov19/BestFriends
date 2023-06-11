@@ -32,20 +32,26 @@ struct BadDayQuietAlertView: View {
         
         ZStack {
             
-            ColorManager .purple1
+//            ColorManager .purple7
+//                .ignoresSafeArea()
+//                .onAppear()
+//
+//            ColorManager .purple1
+//                .ignoresSafeArea()
+//
+//
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//
+//
+            
+            ColorManager.purple7
+                .opacity(0.3)
                 .ignoresSafeArea()
-                .onAppear()
-            
-            Color .black
-                .ignoresSafeArea()
-            
-            
+                
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
-            
-            
-            
-            
+                .blendMode(.screen)
             
             VStack {
 //
@@ -63,7 +69,7 @@ struct BadDayQuietAlertView: View {
 //                    .italic()
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey3)
+                    .foregroundColor(ColorManager .grey2)
                 
              
                 
@@ -72,24 +78,24 @@ struct BadDayQuietAlertView: View {
                     
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey3)
+                    .foregroundColor(ColorManager .grey2)
                 
                
                 
-                Text("but, you're just not ready to talk yet")
-                    .font(.system(size: 20))
-//                    .italic()
-                    .fontWeight(.thin)
+                Text("But, you're just not ready")
+                    .font(.system(size: 25))
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey1)
+                    .foregroundColor(Color.black)
           
-//                Text("before talking to your friends about it")
-//                    .font(.system(size: 20))
-//                //                    .italic()
-//                    .fontWeight(.thin)
-//                    .multilineTextAlignment(.center)
-//                    .foregroundColor(ColorManager .grey3)
-//
+                
+                Text("to talk yet")
+                    .font(.system(size: 28))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.black)
+          
+
                 Spacer ()
                     .frame(height: 20)
                 
@@ -97,42 +103,10 @@ struct BadDayQuietAlertView: View {
          
                 VStack {
                     
-                    
-                
-                    
-               
-//
-//                    Text("- you don't want to bother them")
-//                        .font(.system(size: 15))
-//                    //                    .italic()
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager .grey3)
-//
-//                    Spacer ()
-//                        .frame(height: 5)
-//
-//                    Text("- they really can't help fix this")
-//                        .font(.system(size: 15))
-//                    //                    .italic()
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager .grey3)
-//
-//                    Spacer ()
-//                        .frame(height: 5)
-//
-//                    Text("- don't want to worry them ")
-//                        .font(.system(size: 15))
-//                    //                    .italic()
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager .grey3)
-//
-//
+     
                     
                     Spacer ()
-                        .frame(height: 50)
+                        .frame(height: 80)
                     
                     Text("Your Friends")
                         .font(.system(size: 30))
@@ -140,13 +114,7 @@ struct BadDayQuietAlertView: View {
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager .grey3)
-                    
-//                    Text("")
-//                        .font(.system(size: 30))
-//
-//                        .fontWeight(.regular)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager .grey3)
+
                 }
                 
       
@@ -167,20 +135,7 @@ struct BadDayQuietAlertView: View {
                         
                         Spacer ()
                             .frame(height: 70)
-                        
-                    
-                        
-                        //                        MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups)
-                        
-                        //
-                        //                                   AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
-                        //
-                        
-//                        TestPage(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
-                        
-                   
-                     
-                        
+                       
                         Text("want to give you")
                             .font(.system(size: 20))
                             .italic()
