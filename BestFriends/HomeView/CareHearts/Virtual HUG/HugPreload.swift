@@ -83,28 +83,28 @@ struct HugPreload: View {
 
 
                 NavigationLink(destination: HurtFeelings(user: user, friends: friends, groups: groups, atmosphere: atmosphere), label: {
-                    HugCircle (color: ColorManager .pmbc_green, friendName: "MORE \nCareHearts")
+                    HugCircle (color: Color .green, friendName: "MORE \nCareHearts")
                 })
-                .offset(x: showItems ? -50 : 0, y: showItems ? -300: 0)
+                .offset(x: showItems ? 0 : 0, y: showItems ? -100: 0)
                 .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
                 .opacity(0.65)
 
-
-                NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
-                    HugCircle (color: ColorManager.purple1, friendName: "send a \nhug")
-                })
-                .offset(x: showItems ? 80 : 0, y: showItems ? -200: 0)
-                .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
-//                    .opacity(0.6)
-                .opacity(0.65)
+//
+//                NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
+//                    HugCircle (color: ColorManager.purple1, friendName: "send a \nhug")
+//                })
+//                .offset(x: showItems ? 80 : 0, y: showItems ? -200: 0)
+//                .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
+////                    .opacity(0.6)
+//                .opacity(0.65)
 
 
 
 
                     NavigationLink(destination: EmptyView(), label: {
-                        HugCircle (color: ColorManager .purple5, friendName: "MORE...")
+                        HugCircle (color: ColorManager .purple5, friendName: "MORE \nCareHearts")
                     })
-                    .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
+                    .offset(x: showItems ? 50 : 0, y: showItems ? 50: 0)
                     .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
                     .opacity(0.65)
 
@@ -120,7 +120,7 @@ struct HugPreload: View {
                         NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
                             HugCircle (color: ColorManager .red, friendName: "blowing \nkisses")
                         })
-                        .offset(x: showItems ? 75 : 0, y: showItems ? 425: 0)
+                        .offset(x: showItems ? 85 : 0, y: showItems ? 450: 0)
                         .shadow(color: Color .white, radius: 10, x: 10, y: 10)
                         .opacity(0.50)
 
@@ -137,6 +137,13 @@ struct HugPreload: View {
 
 
 
+                    NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
+                        HugCircle (color: ColorManager.purple1, friendName: "send a \nhug")
+                    })
+                    .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
+                    .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
+    //                    .opacity(0.6)
+                    .opacity(0.65)
 
 
 
