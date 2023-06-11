@@ -30,8 +30,19 @@ struct PhotoPopView: View {
     
     var body: some View {
         ZStack {
-
-            Color .purple
+            
+         
+                
+          
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+            
+            
+            ColorManager.purple7
+                .opacity(0.6)
+                .ignoresSafeArea()
+//            Color .purple
                 .ignoresSafeArea()
                 .onAppear()
                 .scaledToFill()
@@ -40,11 +51,9 @@ struct PhotoPopView: View {
                     ImagePicker(image: $attachmentImage, sourceType: .photoLibrary)
                         .onDisappear { createPhotoPop() }
 
-
                   
-                    AdPlayerView(name: "MyRoom5")
-                        .ignoresSafeArea()
-                        .blendMode(.screen)
+                  
+
                     
                 }
             

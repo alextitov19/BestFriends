@@ -80,24 +80,24 @@ struct BadDayQuietAlertView: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager .grey2)
                 
-               
-                
-                Text("But, you're just not ready")
-                    .font(.system(size: 25))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.black)
-          
-                
-                Text("to talk yet")
-                    .font(.system(size: 28))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.black)
-          
-
                 Spacer ()
                     .frame(height: 20)
+                
+                Text("But, you're just not ready")
+                    .font(.system(size: 23))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager .grey1)
+          
+                
+                Text("to talk to your friends about it yet")
+                    .font(.system(size: 23))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager .grey1)
+          
+
+               
                 
 
          
@@ -107,13 +107,13 @@ struct BadDayQuietAlertView: View {
                     
                     Spacer ()
                         .frame(height: 80)
-                    
-                    Text("Your Friends")
-                        .font(.system(size: 30))
-                    
-                        .fontWeight(.regular)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .grey3)
+//
+//                    Text("We can help...")
+//                        .font(.system(size: 30))
+//
+//                        .fontWeight(.regular)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager .grey3)
 
                 }
                 
@@ -134,25 +134,25 @@ struct BadDayQuietAlertView: View {
                     VStack {
                         
                         Spacer ()
-                            .frame(height: 70)
+                            .frame(height: 30)
                        
-                        Text("want to give you")
-                            .font(.system(size: 20))
-                            .italic()
+                        Text("Get")
+                            .font(.system(size: 35))
+                            
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey3)
+                            .foregroundColor(ColorManager .purple7)
                         
                         Text("Emotional Support")
                             .font(.system(size: 40))
 //                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey3)
+                            .foregroundColor(ColorManager .purple7)
                         
                         Text("while you're alone")
-                            .font(.system(size: 20))
-//                            .italic()
+                            .font(.system(size: 27))
+                          .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager .grey3)
@@ -162,12 +162,12 @@ struct BadDayQuietAlertView: View {
                             
                             NavigationLink( destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                             label: {
-                                Text("Request \nCare Hearts")
+                                Text("REQUEST Care Hearts")
                                     .fontWeight(.thin)
-                                    .frame(width: 250, height: 70)
+                                    .frame(width: 300, height: 50)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 23))
-                                    .background(ColorManager.purple3)
+                                    .font(.system(size: 30))
+                                    .background(Color .purple)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
@@ -175,9 +175,9 @@ struct BadDayQuietAlertView: View {
                             
                             
                             
-                            
-                            Spacer ()
-                                .frame(height: 100)
+//
+//                            Spacer ()
+//                                .frame(height: 100)
                             
                             
 //                            NavigationLink( destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
