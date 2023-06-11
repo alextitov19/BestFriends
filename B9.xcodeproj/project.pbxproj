@@ -1128,6 +1128,7 @@
 			isa = PBXGroup;
 			children = (
 				CF2DBCF2285527C9008616A3 /* My Planet */,
+				CFB65BC42A35598700E98A8B /* PhotoPOPRequest */,
 				CFE6F025297B8302004397A3 /* SendHomie */,
 				CF71574F2975D27000094F22 /* SendKisses */,
 				CF01267F2A0F7F4C00516B8E /* YouLookNice */,
@@ -1327,6 +1328,14 @@
 			path = "Help Beta Test";
 			sourceTree = "<group>";
 		};
+		CFB65BC42A35598700E98A8B /* PhotoPOPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				CFD12CC6281943CA00AB2539 /* Impetus.swift */,
+			);
+			path = PhotoPOPRequest;
+			sourceTree = "<group>";
+		};
 		CFC0EE702906F9D9006B3FAA /* New Group */ = {
 			isa = PBXGroup;
 			children = (
@@ -1367,7 +1376,6 @@
 				CFD8BD072912B0EB00F86EFB /* AtmosphereInfo2.swift */,
 				CF6504152893192C0092EEB9 /* AtmosphereDVid.swift */,
 				CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */,
-				CFD12CC6281943CA00AB2539 /* Impetus.swift */,
 				CF3B65F128075F3B0003A714 /* FriendVault */,
 			);
 			path = Atmosphere;
