@@ -84,13 +84,13 @@ struct HurtFeelings: View {
                     .opacity(0.65)
 
 
-                NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
-                    HugCircle (color: ColorManager .purple3, friendName: "PhotoPOP")
-                })
-                .offset(x: showItems ? -60 : 0, y: showItems ? 200: 0)
-                .shadow(color: ColorManager .pmbc_green, radius: 10, x: 10, y: 10)
-//                .opacity(0.85)
-                .opacity(0.65)
+//                NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
+//                    HugCircle (color: ColorManager .purple3, friendName: "PhotoPOP")
+//                })
+//                .offset(x: showItems ? -60 : 0, y: showItems ? 200: 0)
+//                .shadow(color: ColorManager .pmbc_green, radius: 10, x: 10, y: 10)
+////                .opacity(0.85)
+//                .opacity(0.65)
 
 
 
@@ -120,21 +120,21 @@ struct HurtFeelings: View {
 
 
                 VStack {
-
-                    NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager.purple1, friendName: "send a \nhug")
-                    })
-                    .offset(x: showItems ? 80 : 0, y: showItems ? 400: 0)
-                    .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
-//                    .opacity(0.6)
-                    .opacity(0.65)
-
-                        NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
-                            HugCircle (color: ColorManager .red, friendName: "blowing \nkisses")
-                        })
-                        .offset(x: showItems ? 100 : 0, y: showItems ? 425: 0)
-                        .shadow(color: Color .white, radius: 10, x: 10, y: 10)
-                        .opacity(0.50)
+//
+//                    NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
+//                        HugCircle (color: ColorManager.purple1, friendName: "send a \nhug")
+//                    })
+//                    .offset(x: showItems ? 80 : 0, y: showItems ? 400: 0)
+//                    .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
+////                    .opacity(0.6)
+//                    .opacity(0.65)
+//
+//                        NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
+//                            HugCircle (color: ColorManager .red, friendName: "blowing \nkisses")
+//                        })
+//                        .offset(x: showItems ? 100 : 0, y: showItems ? 425: 0)
+//                        .shadow(color: Color .white, radius: 10, x: 10, y: 10)
+//                        .opacity(0.50)
 
                   
 
