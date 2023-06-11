@@ -83,7 +83,7 @@ struct HugPreload: View {
 
 
                 NavigationLink(destination: SaySomethingNice8(user: user, atmosphere: atmosphere, friends: friends), label: {
-                    HugCircle (color: ColorManager .pmbc_green, friendName: "more \nCareHearts ...")
+                    HugCircle (color: ColorManager .pmbc_green, friendName: "more \nCareHearts")
                 })
                 .offset(x: showItems ? -50 : 0, y: showItems ? -300: 0)
                 .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
@@ -102,7 +102,7 @@ struct HugPreload: View {
 
 
                     NavigationLink(destination: EmptyView(), label: {
-                        HugCircle (color: ColorManager .purple4, friendName: "Send \nmore \nCareHearts")
+                        HugCircle (color: ColorManager .purple5, friendName: "MORE...")
                     })
                     .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
                     .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
@@ -120,7 +120,7 @@ struct HugPreload: View {
                         NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
                             HugCircle (color: ColorManager .red, friendName: "blowing \nkisses")
                         })
-                        .offset(x: showItems ? 75 : 0, y: showItems ? 375: 0)
+                        .offset(x: showItems ? 75 : 0, y: showItems ? 425: 0)
                         .shadow(color: Color .white, radius: 10, x: 10, y: 10)
                         .opacity(0.50)
 
@@ -130,7 +130,7 @@ struct HugPreload: View {
                     NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
                         HugCircle (color: ColorManager .purple4, friendName: "PhotoPOP")
                     })
-                    .offset(x: showItems ? -60 : 0, y: showItems ? 400: 0)
+                    .offset(x: showItems ? -60 : 0, y: showItems ? 350: 0)
                     .shadow(color: ColorManager .pmbc_green, radius: 10, x: 10, y: 10)
     //                .opacity(0.85)
                     .opacity(0.65)
