@@ -96,7 +96,7 @@ struct BuiltByTeensView: View {
                                     .foregroundColor(Color.white)
                                     .frame(width: 250, height: 60)
                                     .font(.system(size: 30))
-                                    .background(Color.green)
+                                    .background(Color.orange)
                                     .cornerRadius(7)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 
@@ -157,7 +157,7 @@ struct BuiltByTeensView: View {
                                         .foregroundColor(Color.white)
                                         .frame(width: 250, height: 60)
                                         .font(.system(size: 35))
-                                        .background(Color.blue)
+                                        .background(Color.purple)
                                         .cornerRadius(7)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     
