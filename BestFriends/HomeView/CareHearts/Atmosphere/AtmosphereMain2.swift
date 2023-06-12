@@ -264,7 +264,7 @@ struct AtmosphereMain2: View {
 //
                             
                             
-                            NavigationLink(destination: MyRoomView(user: user),
+                            NavigationLink(destination: MyRoomView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
                                 Text("tap")
                                     .fontWeight(.thin)

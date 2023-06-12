@@ -140,7 +140,7 @@ struct PlanetActionsView: View {
                 
                 Spacer()
                     .frame(height: 95)
-                
+
                 NavigationLink(destination:  BadDayQuietAlertView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
                     ZStack {
                         Circle()
@@ -149,7 +149,7 @@ struct PlanetActionsView: View {
                             .shadow(color: .white, radius: 3, x: 4, y: -4)
                             .glow(color: ColorManager.purple4, radius: 7)
                             .opacity(0.80)
-                        
+
                         VStack {
                             Text("open \ncircle")
                                 .foregroundColor(ColorManager .purple3)
@@ -161,7 +161,7 @@ struct PlanetActionsView: View {
                 })
             }
             
-            NavigationLink(destination: MyRoomView(user: user),
+            NavigationLink(destination: MyRoomView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                            label: {
                 ZStack {
                     Circle()
