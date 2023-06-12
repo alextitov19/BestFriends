@@ -222,32 +222,16 @@ struct HomeView: View {
                                 })
                                 .frame(width: 0, height: 0)
                             
-                            ZStack {
-                                // Main planet
-                                if !focusPlanet {
-                                    PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
-                                        .scaledToFit()
-                                        .frame(width: 80, height: 80)
-                                        .onTapGesture(perform: mainPlanetTapped)
-                                        .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 20)
-                                        .padding()
-                                        .onAppear(perform: {print("Atm mood: ", homeData!.atmosphere.mood)})
+                            NavigationLink(destination: MyRoomView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups), label: {
+                                PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
+                                    .scaledToFit()
+                                    .frame(width: 80, height: 80)
+                                    .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 20)
+                                    .padding()
+                            })
                                     
-                                }
-                                
-                                // Tapped on the main planet
-                                if focusPlanet {
-                                    
-                                    
-//                                    PlanetActionsView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups)
-                                    
-                                    MyRoomView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups)
-                                    
-                                        .environmentObject(sessionManager)
-                                }
                                 
                                 
-                            }
                         }
                         
                         //                        if planets.count > 4 && !focusPlanet {
