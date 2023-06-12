@@ -203,7 +203,7 @@ struct HugPushNotification2: View {
                                            label: {
                                 Text("REQUEST a PhotoPOP")
                                     .fontWeight(.thin)
-                                    .frame(width: 300, height: 50)
+                                .frame(width: 300, height: 50)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 30))
                                     .background(Color .green)
@@ -211,7 +211,14 @@ struct HugPushNotification2: View {
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
                             
-                            Text("Just shake your phone")
+                            Text("When you get a push notification")
+                                .font(.system(size: 15))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager .grey1)
+                            
+                            Text("just shake your phone to view pic")
                                 .font(.system(size: 15))
                                 .italic()
                                 .fontWeight(.light)

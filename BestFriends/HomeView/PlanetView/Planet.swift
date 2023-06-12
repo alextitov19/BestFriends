@@ -208,25 +208,25 @@ struct PlanetActionsView: View {
                 
 //                NavigationLink(destination: HugPushNotification2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                 
-//                NavigationLink(destination: HugPushNotification2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-//                               label: {
-//                    ZStack {
-//                        Circle()
-//                            .frame(width: 110, height: 110)
-//                            .foregroundColor(ColorManager.purple2)
-//                            .shadow(color: .white, radius: 3, x: -4, y: -4)
-//                            .glow(color: ColorManager.purple4, radius: 7)
-//                            .opacity(0.80)
-//
-//                        VStack {
-//                            Text("CareHearts")
-//                                .foregroundColor(ColorManager .purple3)
-//                                .font(.system(size: 20, weight: .regular))
-//                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                .opacity(0.70)
-//                        }
-//                    }
-//                })
+                NavigationLink(destination: HugPushNotification2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                               label: {
+                    ZStack {
+                        Circle()
+                            .frame(width: 110, height: 110)
+                            .foregroundColor(ColorManager.purple2)
+                            .shadow(color: .white, radius: 3, x: -4, y: -4)
+                            .glow(color: ColorManager.purple4, radius: 7)
+                            .opacity(0.80)
+
+                        VStack {
+                            Text("CareHearts")
+                                .foregroundColor(ColorManager .purple3)
+                                .font(.system(size: 20, weight: .regular))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                .opacity(0.70)
+                        }
+                    }
+                })
             }
         }
     }

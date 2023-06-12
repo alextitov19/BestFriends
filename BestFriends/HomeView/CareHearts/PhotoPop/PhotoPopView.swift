@@ -80,9 +80,9 @@ struct PhotoPopView: View {
                  NavigationLink(
                     destination: PhotoPop3(user: user, friends: friends),
                     label: {
-                        Text("How to Upload images")
+                        Text("How to Upload & Share images")
                             .fontWeight(.thin)
-                            .frame(width: 250, height: 30)
+                            .frame(width: 280, height: 30)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 18.5))
                             .background(ColorManager.purple4)
