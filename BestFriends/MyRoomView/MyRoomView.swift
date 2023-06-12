@@ -9,11 +9,8 @@ import SwiftUI
 
 struct MyRoomView: View {
     
-   
-//    let user: User
-//    let atmosphere: Atmosphere
-//    let friends: [User]
-//    let friendAtmospheres: [Atmosphere]
+    @EnvironmentObject var sessionManager: SessionManager
+
 
     let user: User
     let atmosphere: Atmosphere
@@ -33,6 +30,11 @@ struct MyRoomView: View {
                 .blendMode(.screen)
             
             VStack {
+                
+                Spacer()
+                    .frame(height: 60)
+                
+                
                 Text("My Room")
                     .font(.system(size: 40, weight: .light))
                     .foregroundColor(ColorManager.purple5)
@@ -59,10 +61,33 @@ struct MyRoomView: View {
                 MyRoomRowView(title: "CareHearts", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 })
                 
+                
+                Button(action: {
+                    sessionManager.showLogin()
+                },
+                    label: {
+                    Image("home-alt2")
+                        .frame(width: 50, height: 25)
+                        .foregroundColor(.white)
+                        .font(.system(size: 20))
+                        .background(ColorManager .grey2)
+                        .cornerRadius(15)
+                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                        .opacity(0.70)
+                    
+                })
+                
+                
+                
                 Spacer()
             }
         }
     }
+    
+    
+    
+    
+    
     
     private struct MyRoomRowView: View {
         let title, imageName: String

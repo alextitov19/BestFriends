@@ -85,7 +85,7 @@ struct HomeView: View {
                             
                             Spacer()
                             
-//                            StartHere1(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups
+
                             
                             NavigationLink(
                                 destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres),
@@ -141,22 +141,8 @@ struct HomeView: View {
                 }
                 
                 VStack {
-                    //                    Text("received notification - tap friend's planet")
-                    //                        .font(.system(size: 15))
-                    //                        .italic()
-                    //                    //                            .foregroundColor(ColorManager .grey2)
-                    //                        .fontWeight(.thin)
-                    //                        .multilineTextAlignment(.center)
-                    //                        .frame(width: 280, height: 30)
-                    //                        .foregroundColor(.white)
-                    //                        .font(.system(size: 20))
-                    //                        .background(Color .black)
-                    //                        .cornerRadius(10)
-                    //                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                    //                        .opacity(0.30)
-                    //                    
-                    //                    Spacer()
-                    //                        .frame(height: 50)
+                 
+               
                     HStack {
                         
                         if planets.count > 0 && !focusPlanet {
@@ -251,7 +237,12 @@ struct HomeView: View {
                                 
                                 // Tapped on the main planet
                                 if focusPlanet {
-                                    PlanetActionsView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups)
+                                    
+                                    
+//                                    PlanetActionsView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups)
+                                    
+                                    MyRoomView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups)
+                                    
                                         .environmentObject(sessionManager)
                                 }
                                 
@@ -297,6 +288,12 @@ struct HomeView: View {
                             //                                .cornerRadius(10)
                             //                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                             //                                .opacity(0.5)
+                            
+                            
+                            
+                            
+                            
+                            
                         })
                         
                     }
@@ -308,16 +305,16 @@ struct HomeView: View {
                     
                     if selectedPlanet != nil {
                         if homeData!.groups.count > 0 {
-                            NavigationLink(destination: UrgentChatInvite(user: homeData!.user, owner: homeData!.user, group: homeData!.groups[0]),
-                                           label: {
-                                Text("Song 4 Playlist - coming soon")
-                                    .fontWeight(.light)
-                                    .frame(width: 0, height: 0)
-                                    .foregroundColor(.white)
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(10)
-                                    .opacity(0.7)
-                            })
+//                            NavigationLink(destination: UrgentChatInvite(user: homeData!.user, owner: homeData!.user, group: homeData!.groups[0]),
+//                                           label: {
+//                                Text("Song 4 Playlist - coming soon")
+//                                    .fontWeight(.light)
+//                                    .frame(width: 0, height: 0)
+//                                    .foregroundColor(.white)
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(10)
+//                                    .opacity(0.7)
+//                            })
                         }
                         
                         
