@@ -87,8 +87,41 @@ struct HomeView: View {
                             
 //                            StartHere1(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups
                             
-                                        
-                                         
+                            NavigationLink(
+                                destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres),
+                               label: {
+                                   Text("+")
+                                       .fontWeight(.thin)
+                                       .frame(width: 35, height: 35)
+                                       .foregroundColor(Color.white)
+                                       
+                                       .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                       .font(.system(size: 30))
+                                       .background(Color .green)
+                                       .cornerRadius(20)
+                                       .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                               })
+                          
+                            Spacer()
+                            
+                            
+                            NavigationLink(
+                                destination: BuiltByTeensView(user: homeData!.user, friends: homeData!.friends),
+                               label: {
+                                   Text("?")
+                                       .fontWeight(.thin)
+                                       .frame(width: 35, height: 35)
+                                       .foregroundColor(Color.white)
+                                       
+                                       .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                       .font(.system(size: 30))
+                                       .background(Color .purple)
+                                       .cornerRadius(20)
+                                       .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                               })
+                          
+                            Spacer()
+                            
                             
                             NavigationLink(
                                 destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
