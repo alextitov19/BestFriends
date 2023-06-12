@@ -329,17 +329,17 @@ struct HomeView: View {
                         HStack {
                             
                             VStack {
-                                
-                                NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
-                                    Text("vibe")
-                                        .fontWeight(.light)
-                                        .frame(width: 50, height: 50)
-                                        .foregroundColor(.white)
-                                        .background(ColorManager .grey1)
-                                        .cornerRadius(50)
-                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                        .opacity(0.5)
-                                })
+//
+//                                NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
+//                                    Text("vibe")
+//                                        .fontWeight(.light)
+//                                        .frame(width: 50, height: 50)
+//                                        .foregroundColor(.white)
+//                                        .background(ColorManager .grey1)
+//                                        .cornerRadius(50)
+//                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                                        .opacity(0.5)
+//                                })
                                 //
                                 //                                Spacer()
                                 //                                    .frame(height: 15)
@@ -364,17 +364,17 @@ struct HomeView: View {
                             .frame(height: 15)
                         
                         HStack {
-                            NavigationLink(destination: VirtualHug(),
-                                           label: {
-                                Text("hug")
-                                    .fontWeight(.light)
-                                    .frame(width: 50, height: 50)
-                                    .foregroundColor(.white)
-                                    .background(ColorManager .grey2)
-                                    .cornerRadius(50)
-                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                    .opacity(0.5)
-                            })
+//                            NavigationLink(destination: VirtualHug(),
+//                                           label: {
+//                                Text("hug")
+//                                    .fontWeight(.light)
+//                                    .frame(width: 50, height: 50)
+//                                    .foregroundColor(.white)
+//                                    .background(ColorManager .grey2)
+//                                    .cornerRadius(50)
+//                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                                    .opacity(0.5)
+//                            })
                             //
                         }
                         
