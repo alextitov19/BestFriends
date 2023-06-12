@@ -9,12 +9,65 @@ import SwiftUI
 
 struct JournalView: View {
     
+    let journal: Journal
+    let dateString: String
+    
+    init(j: Journal) {
+        journal = j
+        let d = Date(timeIntervalSince1970: TimeInterval(j.createdOn))
+        let formatter3 = DateFormatter()
+        formatter3.dateFormat = "E, d MMM"
+        dateString = formatter3.string(from: d)
+    }
+    
     var body: some View {
         ZStack {
             ColorManager.purple2
+                .ignoresSafeArea()
             
             VStack {
+                Text(dateString)
+                    .font(.system(size: 24, weight: .light))
+                    .foregroundColor(ColorManager.purple5)
                 
+                Text(journal.text)
+                    .font(.system(size: 16))
+                    .foregroundColor(ColorManager.purple4)
+                    .multilineTextAlignment(.leading)
+                    .padding()
+                
+                HStack {
+                    VStack {
+                        if journal.mood < 0 {
+                            Image("sadMood")
+                                .renderingMode(.template)
+                                .resizable()
+                                .foregroundColor(.blue)
+                                .frame(width: 30, height: 30)
+                            
+                        } else {
+                            
+                            Image("happyMood")
+                                .renderingMode(.template)
+                                .resizable()
+                                .foregroundColor(.yellow)
+                                .frame(width: 30, height: 30)
+                        }
+                        
+                        Text(String(abs(journal.mood * 100).rounded(.up)) + "%")
+                            .font(.system(size: 12))
+                    }
+                    .padding()
+                    
+                    Image(systemName: journal.weather)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 42, height: 42)
+                        .foregroundColor(ColorManager.purple5)
+                        .padding()
+                }
+                
+                Spacer()
             }
         }
     }

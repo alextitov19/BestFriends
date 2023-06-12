@@ -19,6 +19,7 @@ struct JournalsView: View {
     @State private var newJournalText = "Today I feel..."
     @State private var newJournalMood = 0.0
     @State private var newJournalWeather = "cloud.sun"
+    @State private var newJournalImagesData: [Data] = []
 
     
     var body: some View {
@@ -50,7 +51,9 @@ struct JournalsView: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(journals, id: \.id) { journal in
                         if journal.category == selectedCategory {
-                            JournalRowView(j: journal)
+                            NavigationLink(destination: JournalView(j: journal), label: {
+                                JournalRowView(j: journal)
+                            })
                         }
                     }
                 }
@@ -68,7 +71,7 @@ struct JournalsView: View {
             }
             
             if createNewJournalIsPresented {
-                CreateNewJournalView(isPresented: $createNewJournalIsPresented, text: $newJournalText, mood: $newJournalMood, weather: $newJournalWeather)
+                CreateNewJournalView(isPresented: $createNewJournalIsPresented, text: $newJournalText, mood: $newJournalMood, weather: $newJournalWeather, imagesData: $newJournalImagesData)
                     .onDisappear{
                         print("New Text: ", newJournalText)
                         print("Selected Mood: ", newJournalMood)
