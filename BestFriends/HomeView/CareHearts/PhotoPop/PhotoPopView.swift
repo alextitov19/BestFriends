@@ -60,14 +60,19 @@ struct PhotoPopView: View {
             VStack {
 
                 Text("PhotoPOP")
-                    .font(.system(size: 27, weight: .bold))
+                    .font(.system(size: 35, weight: .bold))
                     .foregroundColor(ColorManager .grey1)
                     .shadow(color: .purple, radius: 1, x: 0, y: 1)
                     .opacity(0.50)
                     .multilineTextAlignment(.center)
                 
+                Text("When get push notification just")
+                    .italic()
+                    .font(.system(size: 17, weight: .regular))
+                    .foregroundColor(ColorManager .grey1)
                 
-                Text("Shake iPhone to display image")
+                Text("shake iPhone to see image")
+                    .italic()
                     .font(.system(size: 17, weight: .regular))
                     .foregroundColor(ColorManager .grey1)
 //                
