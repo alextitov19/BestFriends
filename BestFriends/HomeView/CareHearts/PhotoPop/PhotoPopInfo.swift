@@ -108,17 +108,17 @@ struct PhotoPopInfo: View {
                     .frame(height: 40)
                 
            
-//
-//
-//                Text("- Send push notifictiion to alert them")
-//                    .font(.system(size: 20))
-//                    .italic()
-//                    .foregroundColor(.pink)
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//
-//
-//
+                NavigationLink(destination: PhotoPopView(user: user, friends: friends),
+                               label: {
+                    Text("SEND a PhotoPOP")
+                        .fontWeight(.thin)
+                        .frame(width: 300, height: 50)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.system(size: 30))
+                        .background(Color .green)
+                        .cornerRadius(15)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                })
                
                 Spacer()
                     .frame(height: 50)

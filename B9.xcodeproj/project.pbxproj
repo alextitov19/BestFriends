@@ -1340,6 +1340,7 @@
 			children = (
 				CFA1225F2859771600E22E84 /* HurtFeelings.swift */,
 				CFD12CC6281943CA00AB2539 /* Impetus.swift */,
+				CF4128032922A451003BCBFA /* PhotoPOPFGPreload.swift */,
 			);
 			path = CareHearts2;
 			sourceTree = "<group>";
@@ -1435,7 +1436,6 @@
 			isa = PBXGroup;
 			children = (
 				7A04C13C28553818003AB24A /* PhotoPopView.swift */,
-				CF4128032922A451003BCBFA /* PhotoPOPFGPreload.swift */,
 				CF24815428F5018B00D47AE3 /* PhotoPop1.swift */,
 				CF24815628F5060100D47AE3 /* PhotoPop3.swift */,
 				CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */,
