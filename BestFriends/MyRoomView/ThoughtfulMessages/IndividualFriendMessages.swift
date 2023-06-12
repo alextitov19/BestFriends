@@ -38,10 +38,25 @@ struct IndividualFriendMessages: View {
             
             
             VStack {
+                
+                Button(action: {
+                    sessionManager.showLogin()
+                },
+                    label: {
+                    Image("home-alt2")
+                        .frame(width: 50, height: 25)
+                        .foregroundColor(.white)
+                        .font(.system(size: 20))
+                        .background(Color .black)
+                        .cornerRadius(15)
+                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                        .opacity(0.70)
+                    
+                })
                 Text("saved Chat messages")
-                    .font(.system(size: 25))
+                    .font(.system(size: 35))
                     .fontWeight(.ultraLight)
-                    .foregroundColor(ColorManager .grey3)
+                    .foregroundColor(ColorManager .grey2)
                     .multilineTextAlignment(.center)
                 
                 Text(friend.firstName + " " + friend.lastName)
