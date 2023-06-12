@@ -32,7 +32,7 @@ struct MyRoomView: View {
             VStack {
                 
                 Spacer()
-                    .frame(height: 60)
+                    .frame(height: 75)
                 
                 
                 Text("My Room")
@@ -45,7 +45,7 @@ struct MyRoomView: View {
                 
                 MyRoomRowView(title: "Breathe", imageName: "wind", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 
-                MyRoomRowView(title: "Ground", imageName: "list.number", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+//                MyRoomRowView(title: "Ground", imageName: "list.number", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 
                 MyRoomRowView(title: "Affirm", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 
