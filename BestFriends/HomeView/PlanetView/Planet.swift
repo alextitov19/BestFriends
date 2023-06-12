@@ -141,7 +141,7 @@ struct PlanetActionsView: View {
                 Spacer()
                     .frame(height: 95)
 
-                NavigationLink(destination:  BadDayQuietAlertView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
+                NavigationLink(destination:  EmptyView(), label: {
                     ZStack {
                         Circle()
                             .frame(width: 110, height: 110)
