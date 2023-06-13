@@ -143,9 +143,9 @@ struct INFOMainHowWorks: View {
                             NavigationLink(
                                 destination: InviteView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
-                                    Text("Invite Friends -> tap + planet")
+                                    Text("Invite Friends ->tap + planet")
                                         .fontWeight(.thin)
-                                        .frame(width: 320, height: 40)
+                                        .frame(width: 310, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 25))
                                         .background(ColorManager.purple3)
@@ -178,7 +178,7 @@ struct INFOMainHowWorks: View {
                                 label: {
                                     Text("Create New chat rooms")
                                         .fontWeight(.thin)
-                                        .frame(width: 270, height: 40)
+                                        .frame(width: 310, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 25))
                                         .background(ColorManager.purple3)
@@ -208,13 +208,13 @@ struct INFOMainHowWorks: View {
                             
                             
                             NavigationLink(
-                                
-                                destination: InfoSilence(user: user),
+//                                destination: InfoSilence(user: user),
+                                destination: MyRoomView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
-                                    Text("MyRoom")
+                                    Text("MyRoom ->Tap your planet")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
-                                        .frame(width: 300, height: 40)
+                                        .frame(width: 310, height: 40)
                                         .font(.system(size: 25))
                                         .background(ColorManager.purple3)
                                         .cornerRadius(10)
@@ -279,7 +279,7 @@ struct INFOMainHowWorks: View {
                             NavigationLink(
                                 destination: InfoPushNotifications(user: user),
                                 label: {
-                                    Text("Streaks -> Sending CareHearts")
+                                    Text("Streaks ->Sending CareHearts")
                                         .fontWeight(.thin)
                                         .frame(width: 300, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

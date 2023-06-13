@@ -96,7 +96,7 @@ struct WhyFiveFriends: View {
                 //                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 //                        }
                 
-                Text("They prefered fewer more personal")
+                Text("Teens prefer fewer more personal")
                 //                    .font(.system(size: 25, weight: .bold))
                     .font(.system(size: 35, weight: .bold))
                     .foregroundColor(ColorManager .grey1)
@@ -131,7 +131,7 @@ struct WhyFiveFriends: View {
                     
                     
                     NavigationLink(
-                        destination: PickMediator(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
+                        destination: INFOPreload4(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
                         label: {
                             Text("Building a mixed friend group")
                                 .fontWeight(.thin)

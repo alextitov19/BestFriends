@@ -30,7 +30,7 @@ struct InfoInsideChat: View {
 
 
 
-                Text("Virtual HUGS")
+                Text("Create New Chat Rooms")
                     .font(.system(size: 35))
                     
                     .fontWeight(.light)
@@ -56,31 +56,33 @@ struct InfoInsideChat: View {
                         Spacer ()
                             .frame(height: 60)
 
-                        Text("If your friend is having a bad day")
+                        Text("On homepage, tap friend's planets")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color .white)
 
-                        Text("ask them to hold their iPnone")
+                        Text("you want in the chat room")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color .white)
 
-                        Text("to their heart")
-                            .italic()
-                            .font(.system(size: 20))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color .white)
+
 
                         Spacer ()
                             .frame(height: 20)
 
-                        Text("It will vibrate for a second")
+                        Text("Then, tap the popup")
+                            .italic()
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .white)
+
+                        Text("[Create New Chat Room]")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
@@ -88,8 +90,23 @@ struct InfoInsideChat: View {
                             .foregroundColor(Color .white)
 
 
-
-
+                        
+                        NavigationLink(
+                            destination: ChangeChatBackgroundView(user: user),
+                            label: {
+                                Text("Customize Background")
+                                    .fontWeight(.thin)
+                                    .frame(width: 310, height: 30)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 25))
+                                    .background(ColorManager .grey3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                    .opacity(0.5)
+                            })
+                        
+                        
+                        
                            Spacer ()
                                 .frame(height: 100)
 
