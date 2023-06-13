@@ -20,6 +20,7 @@ struct JournalsView: View {
     @State private var newJournalMood = 0.0
     @State private var newJournalWeather = "cloud.sun"
     @State private var newJournalImagesData: [Data] = []
+    @State private var createClicked = false
 
     
     var body: some View {
@@ -71,11 +72,11 @@ struct JournalsView: View {
             }
             
             if createNewJournalIsPresented {
-                CreateNewJournalView(isPresented: $createNewJournalIsPresented, text: $newJournalText, mood: $newJournalMood, weather: $newJournalWeather, imagesData: $newJournalImagesData)
+                CreateNewJournalView(isPresented: $createNewJournalIsPresented, createClicked: $createClicked, text: $newJournalText, mood: $newJournalMood, weather: $newJournalWeather, imagesData: $newJournalImagesData)
                     .onDisappear{
-                        print("New Text: ", newJournalText)
-                        print("Selected Mood: ", newJournalMood)
-                        createJournal()
+                        if createClicked {
+                            createJournal()
+                        }
                     }
             }
         }
