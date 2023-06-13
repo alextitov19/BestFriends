@@ -11,6 +11,7 @@ struct CreateNewJournalView: View {
     @Binding var isPresented: Bool
     @State private var isWeatherPresented = false
 
+    @Binding var createClicked: Bool
     @Binding var text: String
     @Binding var mood: Double
     @Binding var weather: String
@@ -150,6 +151,7 @@ struct CreateNewJournalView: View {
         if(text.isEmpty) {
             return
         }
+        createClicked = true
         isPresented = false
     }
     

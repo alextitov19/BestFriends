@@ -20,6 +20,7 @@ struct PhotoPopView: View {
     
     @State private var currentReceiver: User?
     @State private var isShowPhotoLibrary = false
+    @State var pickerSourceType: UIImagePickerController.SourceType = .photoLibrary
     @State private var attachmentImage: UIImage?
     
     @State private var isLoading = false
@@ -48,7 +49,7 @@ struct PhotoPopView: View {
                 .scaledToFill()
                 .onAppear(perform: loadData)
                 .sheet(isPresented: $isShowPhotoLibrary) {
-                    ImagePicker(image: $attachmentImage, sourceType: .photoLibrary)
+                    ImagePicker(image: $attachmentImage, sourceType: pickerSourceType)
                         .onDisappear { createPhotoPop() }
 
                   
@@ -101,17 +102,29 @@ struct PhotoPopView: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Button(action: {
-                    showingRecipients = true
-                }, label: {
-                    Text("+")
-                        .fontWeight(.thin)
-                        .frame(width: 40, height: 40)
-                        .foregroundColor(.white)
-                        .font(.system(size: 40))
-                        .background(Color .green)
-                        .cornerRadius(20)
-                })
+                HStack {
+                    Image(systemName: "camera")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(ColorManager.purple5)
+                        .onTapGesture {
+                            pickerSourceType = .camera
+                            showingRecipients = true
+                        }
+                        .padding()
+                    
+                    Image(systemName: "photo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(ColorManager.purple5)
+                        .onTapGesture {
+                            pickerSourceType = .photoLibrary
+                            showingRecipients = true
+                        }
+                        .padding()
+                }
                 
                 
                 
