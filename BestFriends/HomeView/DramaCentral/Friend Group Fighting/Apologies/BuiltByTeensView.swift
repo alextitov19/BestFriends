@@ -72,7 +72,7 @@ struct BuiltByTeensView: View {
 //                    .fontWeight(.thin)
 //                    .multilineTextAlignment(.center)
                 
-                Text("yep, we're")
+                Text("see our story")
                     .font(.system(size: 25))
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
@@ -142,11 +142,7 @@ struct BuiltByTeensView: View {
                             Spacer()
                                 .frame(height: 80)
                             
-                            Text("for your laptop")
-                                .font(.system(size: 25))
-                                .foregroundColor(ColorManager.grey1)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
+                         
                             
                             NavigationLink(
                                 
@@ -163,7 +159,11 @@ struct BuiltByTeensView: View {
                                     
                                 })
                             
-                        
+                            Text("for your laptop")
+                                .font(.system(size: 25))
+                                .foregroundColor(ColorManager.grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
                             
                             
                             
