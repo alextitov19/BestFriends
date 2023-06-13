@@ -24,49 +24,36 @@ struct SettingsView: View {
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-                .ignoresSafeArea()
+          
             
-            //            Image("settingsBackground")
-            //                .resizable()
-            //                .ignoresSafeArea()
-            //                .scaledToFill()
-            //
             ColorManager.grey4
                 .ignoresSafeArea()
             
             VStack {
+               
                 HStack {
                     Button(action: {
                         self.presentationMode.wrappedValue.dismiss()
                     }) {
                         Image("arrowRight")
                             .resizable()
-                            .foregroundColor(.gray)
                             .frame(width: 25, height: 25)
                             .foregroundColor(.gray)
                             .scaledToFit()
                         //                            .colorInvert()
                             .rotationEffect(Angle(degrees: 180))
                     }
-                    //                    .padding(.trailing, 50)
                     
-                    Text("back")
+                    Spacer()
+                        .frame(width: 30)
+                    
+                    Text("Settings & Walk-through")
+                        .font(.system(size: 30))
                         .foregroundColor(.gray)
-                        .font(.system(size: 20, weight: .regular))
-                        .padding(.trailing, 50)
                     
-                        .padding(.trailing, 30)
-                    
-                    
-                    Text("Settings")
-                        .foregroundColor(.gray)
-                        .font(.system(size: 30, weight: .bold))
-                        .padding(.trailing, 50)
-                    
-                    
+                    Spacer()
                 }
-                
+   
                 Spacer()
                     .frame(height: 20)
                 
@@ -346,7 +333,20 @@ struct SettingsView: View {
 //                            })
 //                        
      
-                     
+//                        NavigationLink(
+//                            
+//                            destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                            label: {
+//                                Text("Walk-through")
+//                                    .fontWeight(.light)
+//                                    .foregroundColor(Color.white)
+//                                    .frame(width: 220, height: 60)
+//                                    .font(.system(size: 25))
+//                                    .background(Color.green)
+//                                    .cornerRadius(7)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                    
+//                            })
                      
                         
                         Text("3D - Illustrations by Alzel Arafat")
