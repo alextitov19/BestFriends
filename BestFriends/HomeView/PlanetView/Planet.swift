@@ -14,6 +14,7 @@ struct Planet: View {
     
     @State private var online = false
     @State private var streak = 0
+    @State private var rotatingStreak = false
     
     var body: some View {
         ZStack {
@@ -47,8 +48,18 @@ struct Planet: View {
             
             if (streak > 0) {
                 ZStack {
+                    Image(systemName: "star.fill")
+                        .resizable()
+                        .foregroundColor(ColorManager.purple4)
+                        .frame(width: 25, height: 25)
+                        .scaledToFit()
+                        .rotationEffect(.degrees(rotatingStreak ? 0 : -360))
+                        .animation(Animation.linear(duration: 7.5).repeatForever(autoreverses: false), value: rotatingStreak)
+                        .onAppear { rotatingStreak = true}
+                    
                     Text(String(streak))
                         .foregroundColor(.white)
+                        .font(.system(size: 12, weight: .light))
                 }
                 .offset(x: 30, y: -30)
             }
