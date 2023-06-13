@@ -19,7 +19,8 @@ struct HomeView: View {
     @State private var groups: [Group] = []
     @State private var planets: [Planet] = []
     
-//    @State private var focusPlanet = false
+    @State private var inviteClicked = false
+    //    @State private var focusPlanet = false
     @State private var showNewRoomNameDialog = false
     
     @State private var newGroupMembers: [String] = []
@@ -76,36 +77,16 @@ struct HomeView: View {
                             
                             Spacer()
                             
-                            
-                            NavigationLink(
-                                destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres),
-                                label: {
-                                    Text("+")
-                                        .fontWeight(.thin)
-                                        .frame(width: 35, height: 35)
-                                        .foregroundColor(Color.white)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 30))
-                                        .background(Color .green)
-                                        .cornerRadius(20)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                })
-                            
-                            Spacer()
+                            NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
+                            ) { EmptyView() }
                             
                             
                             NavigationLink(
                                 destination: BuiltByTeensView(user: homeData!.user, friends: homeData!.friends),
                                 label: {
-                                    Text("built by teens")
-                                        .fontWeight(.thin)
-                                        .frame(width: 110, height: 20)
+                                    Text("Built by Teens")
                                         .foregroundColor(Color.white)
-                                        .background(ColorManager .grey4)
-                                        .font(.system(size: 17))
-                                    //                                       .background(Color .purple)
-                                        .cornerRadius(10)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                        .font(.system(size: 16, weight: .light))
                                 })
                             
                             Spacer()
@@ -128,34 +109,36 @@ struct HomeView: View {
                     Spacer()
                 }
                 
-                FriendPlanetsView(planets: $planets, selectedPlanets: $newGroupMembers)
+                FriendPlanetsView(planets: $planets, selectedPlanets: $newGroupMembers, inviteClicked: $inviteClicked)
                 
-                VStack {
-                    if homeData != nil {
-                        EmptyView()
-                            .alert(isPresented: $showNewRoomNameDialog,
-                                   TextAlert(title: "Create New Room",
-                                             message: "Input the desired name for the new chat room") { name in
-                                if let text = name {
-                                    // Text was accepted
-                                    print("Got name: ", text)
-                                    createGroup(name: text)
-                                } else {
-                                    // The dialog was cancelled
-                                }
-                            })
-                            .frame(width: 0, height: 0)
-                        
-                        NavigationLink(destination: MyRoomView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups), label: {
-                            PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
-                                .scaledToFit()
-                                .frame(width: 80, height: 80)
-                                .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 20)
-                                .padding()
+                if homeData != nil {
+                    EmptyView()
+                        .alert(isPresented: $showNewRoomNameDialog,
+                               TextAlert(title: "Create New Room",
+                                         message: "Input the desired name for the new chat room") { name in
+                            if let text = name {
+                                // Text was accepted
+                                print("Got name: ", text)
+                                createGroup(name: text)
+                            } else {
+                                // The dialog was cancelled
+                            }
                         })
-                    }
+                        .frame(width: 0, height: 0)
                     
-                    if newGroupMembers.count > 0 {
+                    NavigationLink(destination: MyRoomView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups), label: {
+                        PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
+                            .scaledToFit()
+                            .frame(width: 80, height: 80)
+                            .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 20)
+                            .padding()
+                    })
+                }
+                
+                if newGroupMembers.count > 0 {
+                    VStack {
+                        Spacer()
+                        
                         Button(action: {
                             chatButtonTapped()
                         }, label: {
@@ -168,9 +151,12 @@ struct HomeView: View {
                                 .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                                 .opacity(0.5)
                         })
+                        
+                        Spacer()
+                            .frame(height: 100)
                     }
                 }
-                                
+                
                 if homeData?.groups != nil && homeData?.user != nil {
                     ChatGroupsView(user: homeData!.user, groups: groups)
                         .environmentObject(sessionManager)
@@ -214,6 +200,7 @@ struct HomeView: View {
                     // Found the friend - atmosphere pair
                     let planet = Planet(user: friend, atmosphere: atmosphere)
                     planets.append(planet)
+                    
                 }
             }
         }
