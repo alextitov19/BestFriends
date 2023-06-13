@@ -28,7 +28,20 @@ struct FriendPlanetsView: View {
                 .offset(y: 125)
                 .rotationEffect(.degrees(movingPlanets ? 0 : -360))
                 .animation(Animation.linear(duration: 15).repeatForever(autoreverses: false), value: movingPlanets)
-                .onAppear { movingPlanets.toggle()}
+                .onAppear { movingPlanets = true}
+                
+                ZStack {
+                    InvitePlanet()
+                        .rotationEffect(.degrees(movingPlanets ? 0 : 360))
+                        .animation(Animation.linear(duration: 15).repeatForever(autoreverses: false), value: movingPlanets)
+                        .onTapGesture {
+                            friendPlanetTapped(id: planets[0].user.id)
+                        }
+                }
+                .offset(y: -125)
+                .rotationEffect(.degrees(movingPlanets ? 0 : -360))
+                .animation(Animation.linear(duration: 15).repeatForever(autoreverses: false), value: movingPlanets)
+                .onAppear { movingPlanets = true}
                 
             }
         }
@@ -40,6 +53,31 @@ struct FriendPlanetsView: View {
             selectedPlanets.remove(at: selectedPlanets.firstIndex(of: id) ?? 0)
         } else {
             selectedPlanets.append(id)
+        }
+    }
+    
+    private struct InvitePlanet: View {
+        
+        var body: some View {
+            VStack {
+                ZStack {
+                    Image("planet_0")
+                        .resizable()
+                        .scaledToFit()
+                        .opacity(0.5)
+                        .frame(width: 50, height: 50)
+                    
+                    Image(systemName: "plus")
+                        .foregroundColor(.white)
+                        .frame(width: 25, height: 25)
+                        .scaledToFit()
+                }
+                
+                Text("Add Friend")
+                    .font(.system(size: 12, weight: .ultraLight))
+                    .foregroundColor(.white)
+            }
+            
         }
     }
 }
