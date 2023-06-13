@@ -109,6 +109,18 @@ struct HomeView: View {
                     Spacer()
                 }
                 
+                VStack {
+                    Text("Reload")
+                        .foregroundColor(ColorManager.purple2)
+                        .font(.system(size: 16, weight: .light))
+                        .padding(.top, 60)
+                        .onTapGesture {
+                            getHomeData()
+                        }
+                    
+                    Spacer()
+                }
+                
                 FriendPlanetsView(planets: $planets, selectedPlanets: $newGroupMembers, inviteClicked: $inviteClicked)
                 
                 if homeData != nil {
@@ -170,6 +182,7 @@ struct HomeView: View {
     }
     
     private func getHomeData() {
+        homeData = nil
         RestApi.instance.getHomeData().then{ data in
             print("Got HomeData: ", data)
             homeData = data
