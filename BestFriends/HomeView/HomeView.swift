@@ -110,13 +110,12 @@ struct HomeView: View {
                                label: {
                                    Text("built by teens")
                                        .fontWeight(.thin)
-                                       .frame(width: 100, height: 35)
+                                       .frame(width: 110, height: 20)
                                        .foregroundColor(Color.white)
-                                       
-                                       .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                       .background(ColorManager .grey4)
                                        .font(.system(size: 17))
 //                                       .background(Color .purple)
-                                       .cornerRadius(20)
+                                       .cornerRadius(10)
                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                })
                           
