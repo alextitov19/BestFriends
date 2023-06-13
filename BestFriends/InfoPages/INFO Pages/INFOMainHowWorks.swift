@@ -141,11 +141,11 @@ struct INFOMainHowWorks: View {
                             }
                             
                             NavigationLink(
-                                destination: InfoCreateChatRm(user: user),
+                                destination: InviteView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
-                                    Text("Invite your BFFs")
+                                    Text("Invite Friends -> tap + planet")
                                         .fontWeight(.thin)
-                                        .frame(width: 270, height: 40)
+                                        .frame(width: 320, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 25))
                                         .background(ColorManager.purple3)
