@@ -39,6 +39,22 @@ struct InviteView: View {
                 Spacer()
                     .frame(height: 40)
                 
+                Button(action: {
+                                             sessionManager.showLogin()
+                                         },
+                                             label: {
+                                             Image("home-alt2")
+                                                 .frame(width: 50, height: 25)
+                                                 .foregroundColor(.white)
+                                                 .font(.system(size: 20))
+                                                 .background(ColorManager .grey2)
+                                                 .cornerRadius(15)
+                                                 .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                                 .opacity(0.70)
+                                             
+                                         })
+                
+                
                 Text("Add 5 Friends")
                     .foregroundColor(ColorManager .purple3)
                     .font(.system(size: 25, weight: .bold))
