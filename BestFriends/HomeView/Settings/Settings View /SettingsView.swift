@@ -332,9 +332,9 @@ struct SettingsView: View {
 //                                
 //                            })
 //                        
-     
+//     
 //                        NavigationLink(
-//                            
+//
 //                            destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
 //                            label: {
 //                                Text("Walk-through")
@@ -345,9 +345,9 @@ struct SettingsView: View {
 //                                    .background(Color.green)
 //                                    .cornerRadius(7)
 //                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                                    
+//
 //                            })
-                     
+//                     
                         
                         Text("3D - Illustrations by Alzel Arafat")
                             .font(.system(size: 20))
