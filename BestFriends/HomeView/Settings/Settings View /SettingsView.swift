@@ -329,44 +329,24 @@ struct SettingsView: View {
 //                        
 //                        Spacer()
 //                            .frame(height: 20)
-                        
-                        
-                        NavigationLink(
-                            destination: PurpleNoAdInfoView(),
-                            label: {
-                                Text("Purple Premium (avail. 2023)")
-                                    .fontWeight(.thin)
-                                    .frame(width: 320, height: 40)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 22))
-                                    .background(ColorManager.pmbc_green)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            })
-                        
+//                        
+//                        
+//                        NavigationLink(
+//                            destination: PurpleNoAdInfoView(),
+//                            label: {
+//                                Text("Purple Premium (avail. 2023)")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 320, height: 40)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 22))
+//                                    .background(ColorManager.pmbc_green)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                
+//                            })
+//                        
+     
                      
-                        
-//                        Button(action: {
-//                            sessionManager.showLogin()
-//                        },
-//                               label: {
-//                            Text("HOME / CHAT")
-//                                .fontWeight(.thin)
-//                                .frame(width: 200, height: 40)
-//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                .font(.system(size: 30))
-//                                .background(ColorManager.purple3)
-//                                .cornerRadius(15)
-//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        })
-                        
-                      
-                        Text("Disclaimer: The BestFriends app does not claim to offer clinical or professional psychological advice to the users. BestFriends strives to make friends better friends and help users during difficult times connect with friends and celebrate good times. If users are experiencing depression we recommend you consult a professional.")
-                            .font(.system(size: 10))
-                            .foregroundColor(.white)
-                        
-                            .padding()
                      
                         
                         Text("3D - Illustrations by Alzel Arafat")
@@ -376,35 +356,13 @@ struct SettingsView: View {
                         Image("3-D")
                             .resizable()
                             .frame(width: 150, height: 70)
+      
+                      
+                        Text("Disclaimer: The BestFriends app does not claim to offer clinical or professional psychological advice to the users. BestFriends strives to make friends better friends and help users during difficult times connect with friends and celebrate good times. If users are experiencing depression we recommend you consult a professional.")
+                            .font(.system(size: 10))
+                            .foregroundColor(.white)
                         
-                        Spacer()
-                            .frame(height: 30)
-                        
-                        Button(action: {
-                            sessionManager.showLogin()
-                        },
-                            label: {
-                                Text("Home / Chat")
-                                    .fontWeight(.thin)
-                                    .frame(width: 200, height: 30)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 30))
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            })
-                        
-                   
-                 
-
-                        Image("3-Dimages")
-                            .resizable()
-                            .foregroundColor(.gray)
-                            .frame(width: 25, height: 25)
-//                            .foregroundColor(.gray)
-                        
-                        Spacer()
-                            .frame(height: 70)
+                            .padding()
                         
                     }
                 }
