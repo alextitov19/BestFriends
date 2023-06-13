@@ -27,7 +27,7 @@ struct MyAccountView: View {
             VStack {
                 
                 Spacer()
-                    .frame(height: 5)
+                    .frame(height: 70)
                 
                 HStack {
                     Button(action: {
