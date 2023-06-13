@@ -75,30 +75,14 @@ struct InviteView: View {
                 Spacer()
                     .frame(height: 10)
               
-                Text("1) First, ask friend to download \n             BestFriendsNetwork \n2) Only one of you send invite \n3) Invite only ONCE or multi planets appear")
+                Text("Enter friends email (case sensitive")
                     .fontWeight(.thin)
                     .foregroundColor(.white)
                     .italic()
                     .font(.system(size: 17))
                     .padding()
                 
-                Spacer()
-                    .frame(height: 10)
-                
-//                Text("Email is CASE SENSITIVE - \nmust enter email exactly how \nfirend typed email in Registration.")
-//                    .fontWeight(.thin)
-//                    .foregroundColor(.red)
-//                    .italic()
-//                    .font(.system(size: 22))
-//
-
-                
-                
-                
-                
-                
-                
-                
+             
                 if user.friends?.count ?? 0 < 5 {
                     VStack {
                         // Top part for inviting a friend

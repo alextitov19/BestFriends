@@ -51,23 +51,23 @@ struct INFOMainHowWorks: View {
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 30)
-//
-//                Text("super safe & protective with five")
-//                    .font(.system(size: 17))
-//                    .italic()
-//                    .foregroundColor(ColorManager.grey1)
+                    .frame(height: 10)
+                //
+                //                Text("super safe & protective with five")
+                //                    .font(.system(size: 17))
+                //                    .italic()
+                //                    .foregroundColor(ColorManager.grey1)
+                //                    .fontWeight(.regular)
+                //                    .multilineTextAlignment(.center)
+                
+                //                Spacer()
+                //                    .frame(height: 10)
+                //
+//                Text("BestFriends")
+//                    .font(.system(size: 35))
+//                    .foregroundColor(ColorManager.purple4)
 //                    .fontWeight(.regular)
 //                    .multilineTextAlignment(.center)
-                
-//                Spacer()
-//                    .frame(height: 10)
-//
-                Text("BestFriends")
-                    .font(.system(size: 35))
-                    .foregroundColor(ColorManager.purple4)
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
                 VStack {
                     
                     
@@ -94,18 +94,18 @@ struct INFOMainHowWorks: View {
                     
                     VStack {
                         HStack {
-
-                                Image(systemName: "heart.fill")
-                                    .resizable()
-                                    .foregroundColor(ColorManager .purple2)
-                                    .frame(width: 40, height: 40)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                                    .opacity(0.95)
-                                
-                              
-                           
-                         
+                            
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .foregroundColor(ColorManager .purple2)
+                                .frame(width: 40, height: 40)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                                .opacity(0.95)
+                            
+                            
+                            
+                            
                             
                         }
                         
@@ -116,51 +116,36 @@ struct INFOMainHowWorks: View {
                         Spacer()
                             .frame(height: 20)
                         
+//
+//                        Text("Difficult Days")
+//                            .font(.system(size: 27, weight: .bold))
+//                            .foregroundColor(ColorManager .grey3)
+//                            .shadow(color: .purple, radius: 1, x: 0, y: 1)
+//                            .opacity(0.50)
+//                            .multilineTextAlignment(.center)
                         
-                        Text("Walk-though")
-                            .font(.system(size: 27, weight: .bold))
-                            .foregroundColor(ColorManager .grey3)
-                            .shadow(color: .purple, radius: 1, x: 0, y: 1)
-                            .opacity(0.50)
-                            .multilineTextAlignment(.center)
                         
                         
-                        
-                        Spacer()
-                            .frame(height: 10)
+                    
                         
                         VStack {
                         }
                     }
                     
                     VStack {
-                        
-                        Spacer()
-                            .frame(height: 15)
+                 
                         
                         HStack {
                             ZStack {
-                                
-                                
-                                
-                                
-                                Image(systemName: "rectangle.fill")
-                                    .resizable()
-                                    .foregroundColor(ColorManager .purple2)
-                                    .frame(width: 40, height: 40)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                                    .opacity(0.95)
-                                
-                                Image("iconStar40")
+                    
                             }
                             
                             NavigationLink(
                                 destination: InfoCreateChatRm(user: user),
                                 label: {
-                                    Text("'Bad Day' Request CareHearts")
+                                    Text("Invite your BFFs")
                                         .fontWeight(.thin)
-                                        .frame(width: 300, height: 40)
+                                        .frame(width: 270, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 25))
                                         .background(ColorManager.purple3)
@@ -174,27 +159,26 @@ struct INFOMainHowWorks: View {
                         
                         Spacer()
                             .frame(height: 15)
+//                        Text("Helping Friends")
+//                            .font(.system(size: 27, weight: .bold))
+//                            .foregroundColor(ColorManager .grey3)
+//                            .shadow(color: .purple, radius: 1, x: 0, y: 1)
+//                            .opacity(0.50)
+//                            .multilineTextAlignment(.center)
                         
                         HStack {
                             ZStack {
-                                Image(systemName: "rectangle.fill")
-                                    .resizable()
-                                    .foregroundColor(ColorManager .purple2)
-                                    .frame(width: 40, height: 40)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                                    .opacity(0.95)
-                                
-                                Image("IconHugNew40")
+                               
                             }
                             
+                         
                             
                             NavigationLink(
                                 destination: InfoInsideChat(user: user),
                                 label: {
-                                    Text("Sending CareHearts")
+                                    Text("Create New chat rooms")
                                         .fontWeight(.thin)
-                                        .frame(width: 300, height: 40)
+                                        .frame(width: 270, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 25))
                                         .background(ColorManager.purple3)
@@ -209,15 +193,15 @@ struct INFOMainHowWorks: View {
                         
                         HStack {
                             ZStack {
-                                Image(systemName: "rectangle.fill")
-                                    .resizable()
-                                    .foregroundColor(ColorManager .purple2)
-                                    .frame(width: 40, height: 40)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                                    .opacity(0.95)
-                                
-                                Image("IconNiceNew40")
+                                //                                Image(systemName: "rectangle.fill")
+                                //                                    .resizable()
+                                //                                    .foregroundColor(ColorManager .purple2)
+                                //                                    .frame(width: 40, height: 40)
+                                //                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                //                                //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                                //                                    .opacity(0.95)
+                                //
+                                //                                Image("IconNiceNew40")
                             }
                             
                             
@@ -245,16 +229,16 @@ struct INFOMainHowWorks: View {
                         
                         HStack {
                             ZStack {
-                                Image(systemName: "rectangle.fill")
-                                    .resizable()
-                                    .foregroundColor(ColorManager .purple2)
-                                    .frame(width: 40, height: 40)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                                    .opacity(0.95)
-                                
-                                Image("IconFightNew40")
+                                //                                Image(systemName: "rectangle.fill")
+                                //                                    .resizable()
+                                //                                    .foregroundColor(ColorManager .purple2)
+                                //                                    .frame(width: 40, height: 40)
+                                //                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                //
+                                //                                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                                //                                    .opacity(0.95)
+                                //
+                                //                                Image("IconFightNew40")
                             }
                             
                             
@@ -280,16 +264,16 @@ struct INFOMainHowWorks: View {
                         
                         HStack {
                             ZStack {
-                                Image(systemName: "rectangle.fill")
-                                    .resizable()
-                                    .foregroundColor(ColorManager .purple2)
-                                    .frame(width: 40, height: 40)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                                    .opacity(0.95)
-                                
-                                Image("iconSilence")
+                                //                                Image(systemName: "rectangle.fill")
+                                //                                    .resizable()
+                                //                                    .foregroundColor(ColorManager .purple2)
+                                //                                    .frame(width: 40, height: 40)
+                                //                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                //
+                                //                                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                                //                                    .opacity(0.95)
+                                //
+                                //                                Image("iconSilence")
                             }
                             
                             NavigationLink(
@@ -348,57 +332,58 @@ struct INFOMainHowWorks: View {
                         Spacer()
                             .frame(height: 25)
                         
-                        NavigationLink(
-                            
-                            destination: PlanetBell(user: user),
-                            label: {
-                                Text("How our real-time \nPush Notifications Work")
-                                    .fontWeight(.thin)
-                                    .foregroundColor(Color.white)
-                                    .frame(width: 250, height: 50)
-                                    .font(.system(size: 19))
-                                    .background(ColorManager.pmbc_green)
-                                    .cornerRadius(7)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            }
-                        )}
-                    
-                    
-                    Button(action: {
-                        sessionManager.showLogin()
-                    },
-                           label: {
-                        Image("home-alt2")
-                            .frame(width: 50, height: 25)
-                            .foregroundColor(.white)
-                            .font(.system(size: 20))
-                            .background(Color .black)
-                            .cornerRadius(15)
-                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                            .opacity(0.70)
+                        //                        NavigationLink(
+                        //
+                        //                            destination: PlanetBell(user: user),
+                        //                            label: {
+                        //                                Text("How our real-time \nPush Notifications Work")
+                        //                                    .fontWeight(.thin)
+                        //                                    .foregroundColor(Color.white)
+                        //                                    .frame(width: 250, height: 50)
+                        //                                    .font(.system(size: 19))
+                        //                                    .background(ColorManager.pmbc_green)
+                        //                                    .cornerRadius(7)
+                        //                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        //
+                        //                            }
+                        //                        )}
                         
-                    })
-                    
-                    //            func shareButtonTapped() {
-                    ////                sendMessage()
-                    ////
-                    ////                if selectedFriends.count == 0 { return }
-                    ////                for id in selectedFriends {
-                    ////                    for f in friends {
-                    ////                        if f.id == id {
-                    ////                            RestApi.instance.sendPushNotification(title: "BestFriends World FriendGroups", body: "\(user.firstName) sent you 'Nice' message. Take a moment and send one back! Tap friend's planet on Home pg, then tap [Friend said something 'Nice'] from dropdown.", APNToken: f.APNToken)
-                    ////                        }
-                    ////                    }
-                    //                }
-                    Spacer()
-                        .frame(height: 80)
-                    
+                        
+                        Button(action: {
+                            sessionManager.showLogin()
+                        },
+                               label: {
+                            Image("home-alt2")
+                                .frame(width: 50, height: 25)
+                                .foregroundColor(.white)
+                                .font(.system(size: 20))
+                                .background(Color .black)
+                                .cornerRadius(15)
+                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                .opacity(0.70)
+                            
+                        })
+                        
+                        //            func shareButtonTapped() {
+                        ////                sendMessage()
+                        ////
+                        ////                if selectedFriends.count == 0 { return }
+                        ////                for id in selectedFriends {
+                        ////                    for f in friends {
+                        ////                        if f.id == id {
+                        ////                            RestApi.instance.sendPushNotification(title: "BestFriends World FriendGroups", body: "\(user.firstName) sent you 'Nice' message. Take a moment and send one back! Tap friend's planet on Home pg, then tap [Friend said something 'Nice'] from dropdown.", APNToken: f.APNToken)
+                        ////                        }
+                        ////                    }
+                        //                }
+                        Spacer()
+                            .frame(height: 80)
+                        
+                    }
                 }
+                
             }
-            
         }
+        
     }
     
 }
-
