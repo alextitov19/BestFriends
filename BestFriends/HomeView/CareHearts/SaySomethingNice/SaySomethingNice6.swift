@@ -40,39 +40,34 @@ struct SaySomethingNice6: View {
 
             
             VStack {
-         
-//                Text("BestFriends")
-//                    .font(.system(size: 27))
-//
-//                    .foregroundColor(ColorManager.grey1)
-//                    .fontWeight(.thin)
-//                    .multilineTextAlignment(.center)
-//
-          
                 
-                Spacer()
-                    .frame(height: 25)
-                
-//                Text("If you don't add your friends")
-//                    .font(.system(size: 27))
-//                    .italic()
-//                    .foregroundColor(ColorManager.grey1)
-//                    .fontWeight(.thin)
-//                    .multilineTextAlignment(.center)
-                
-                Text("This app doesn't work")
-                    .font(.system(size: 38))
-                
-                    .foregroundColor(ColorManager.grey1)
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
-                
-                Text("without your friends")
+                Text("How to setup BestFriends")
                     .font(.system(size: 27))
                     .italic()
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
+         
+                NavigationLink(
+                    
+                    destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                    label: {
+                        Text("Walk-through")
+                            .fontWeight(.light)
+                            .foregroundColor(Color.white)
+                            .frame(width: 220, height: 60)
+                            .font(.system(size: 25))
+                            .background(Color.green)
+                            .cornerRadius(7)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            
+                    })
+                
+                Spacer()
+                    .frame(height: 25)
+                
+
+             
             
                 Spacer()
                     .frame(height: 70)
@@ -117,6 +112,20 @@ struct SaySomethingNice6: View {
               })
           
                 
+                Text("This app doesn't work")
+                    .font(.system(size: 27))
+                    .italic()
+                    .foregroundColor(ColorManager.grey1)
+//                    .fontWeight(.regular)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                
+                Text("without your friends")
+                    .font(.system(size: 38))
+                    
+                    .foregroundColor(ColorManager.grey1)
+                   
+                    .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height: 30)
@@ -139,20 +148,7 @@ struct SaySomethingNice6: View {
                 Spacer()
                     .frame(height: 30)
                 
-                NavigationLink(
-                    
-                    destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                    label: {
-                        Text("Walk-through")
-                            .fontWeight(.light)
-                            .foregroundColor(Color.white)
-                            .frame(width: 220, height: 60)
-                            .font(.system(size: 25))
-                            .background(Color.green)
-                            .cornerRadius(7)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                    })
+          
                 
                       
                       

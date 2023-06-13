@@ -50,7 +50,17 @@ struct MyRoomView: View {
                 MyRoomRowView(title: "SmileVault", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 })
 
+
+
+                NavigationLink(destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends), label: {
+                MyRoomRowView(title: "Vibe Tracker", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                })
+
      
+                
+                
+                
+                
                 
                 Spacer()
             }
