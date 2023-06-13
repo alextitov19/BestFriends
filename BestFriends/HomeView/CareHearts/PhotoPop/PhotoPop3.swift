@@ -189,39 +189,55 @@ struct PhotoPop3: View {
                         .font(.system(size: 30, weight: .light))
                         .foregroundColor(.green)
                     
-                    Text("-Tap (+) \n-Select friend sending image to \n-tap image from your photo gallery")
+             
+                    
+                    
+                    Text("Tap 'camera' icon to upload NEW image")
                         .font(.system(size: 20, weight: .light))
-                        .italic()
+//                        .italic()
                         .foregroundColor(.white)
                     
+                    Spacer()
+                        .frame(height: 10)
+                    
+                    Text("Select friend whom sending image too")
+                        .font(.system(size: 20, weight: .light))
+//                        .italic()
+                        .foregroundColor(.white)
+                    
+                    Spacer()
+                        .frame(height: 10)
+                    
+                    
+              
+                    
+                    Text("Return to this page to send image to friend")
+                        .font(.system(size: 20, weight: .light))
+//                        .italic()
+                        .foregroundColor(.white)
                     Spacer()
                         .frame(height: 30)
                     
-            
-                    
-                    Text("Replacing images")
-                        .font(.system(size: 30, weight: .light))
-                        .foregroundColor(.green)
-                    
-                    
-                    Text("-Tap image \n-then, exit & re-enter page")
+                    Text("If get loading icon - exit page and return")
                         .font(.system(size: 20, weight: .light))
-                        .italic()
-                        .foregroundColor(.white)
+//                        .italic()
+                        .foregroundColor(.red)
                     
                     Spacer()
-                        .frame(height: 15)
+                        .frame(height: 5)
+                    
+            
                     
             VStack {
                     
-                    Text("* (can only have ONE")
+                    Text("Can only have ONE")
                         .italic()
-                        .font(.system(size: 13, weight: .light))
+                        .font(.system(size: 20, weight: .light))
                         .foregroundColor(Color .green)
                     
-                Text("'active' image at a time)")
+                Text("'active' image at a time")
                     .italic()
-                    .font(.system(size: 13, weight: .light))
+                    .font(.system(size: 17, weight: .light))
                     .foregroundColor(Color .green)
                 
            
