@@ -35,197 +35,188 @@ struct INFOMainHowWorks: View {
             
             
             VStack {
-                    VStack {
-                        HStack {
-                            ZStack  {
-                                Image(systemName: "heart.fill")
-                                    .resizable()
-                                    .foregroundColor(ColorManager .purple3)
-                                    .frame(width: 175, height: 125)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                                    .opacity(0.95)
-                                Spacer()
-                                    .frame(height: 20)
-                                
-                                Image(systemName: "heart.fill")
-                                    .resizable()
-                                    .foregroundColor(ColorManager .purple2)
-                                    .frame(width: 125, height: 100)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                                    .opacity(0.95)
-                                
-                            }
+                VStack {
+                    HStack {
+                        ZStack  {
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .foregroundColor(ColorManager .purple3)
+                                .frame(width: 175, height: 125)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                                .opacity(0.95)
+                            Spacer()
+                                .frame(height: 20)
                             
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .foregroundColor(ColorManager .purple2)
+                                .frame(width: 125, height: 100)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                                .opacity(0.95)
                             
                         }
                         
                         
-                        
-                        
-                        
-                        Spacer()
-                            .frame(height: 20)
-                        
-//
-//                        Text("Difficult Days")
-//                            .font(.system(size: 27, weight: .bold))
-//                            .foregroundColor(ColorManager .grey3)
-//                            .shadow(color: .purple, radius: 1, x: 0, y: 1)
-//                            .opacity(0.50)
-//                            .multilineTextAlignment(.center)
-                        
-                        
-                        
-                    
-                        
-                        VStack {
-                        }
                     }
                     
-                    VStack {
-                 
-                        
-                        HStack {
-                            ZStack {
                     
-                            }
-                            
-                            NavigationLink(
-                                destination: InviteView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                label: {
-                                    Text("Invite Friends ->tap + planet")
-                                        .fontWeight(.thin)
-                                        .frame(width: 310, height: 40)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 25))
-                                        .background(ColorManager.purple3)
-                                        .cornerRadius(10)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    
-                                })
+                    
+                    
+                    
+                    Spacer()
+                        .frame(height: 20)
+                    
+                    //
+                    //                        Text("Difficult Days")
+                    //                            .font(.system(size: 27, weight: .bold))
+                    //                            .foregroundColor(ColorManager .grey3)
+                    //                            .shadow(color: .purple, radius: 1, x: 0, y: 1)
+                    //                            .opacity(0.50)
+                    //                            .multilineTextAlignment(.center)
+                    
+                    
+                    
+                    
+                    
+                    VStack {
+                    }
+                }
+                
+                VStack {
+                    
+                    
+                    HStack {
+                        ZStack {
                             
                         }
                         
-                        
-                        Spacer()
-                            .frame(height: 15)
-//                        Text("Helping Friends")
-//                            .font(.system(size: 27, weight: .bold))
-//                            .foregroundColor(ColorManager .grey3)
-//                            .shadow(color: .purple, radius: 1, x: 0, y: 1)
-//                            .opacity(0.50)
-//                            .multilineTextAlignment(.center)
-                        
-                        HStack {
-                            ZStack {
-                               
-                            }
-                            
-                         
-                            
-                            NavigationLink(
-                                destination: InfoInsideChat(user: user),
-                                label: {
-                                    Text("Create New chat rooms")
-                                        .fontWeight(.thin)
-                                        .frame(width: 310, height: 40)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 25))
-                                        .background(ColorManager.purple3)
-                                        .cornerRadius(10)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    
-                                })
-                        }
-                        
-                        Spacer()
-                            .frame(height: 15)
-                        
-                        HStack {
-                            ZStack {
-                                //                                Image(systemName: "rectangle.fill")
-                                //                                    .resizable()
-                                //                                    .foregroundColor(ColorManager .purple2)
-                                //                                    .frame(width: 40, height: 40)
-                                //                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                //                                //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                                //                                    .opacity(0.95)
-                                //
-                                //                                Image("IconNiceNew40")
-                            }
-                            
-                            
-                            
-                            
-                            NavigationLink(
-//                                destination: InfoSilence(user: user),
-                                destination: MyRoomView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                label: {
-                                    Text("MyRoom ->Tap your planet")
-                                        .fontWeight(.thin)
-                                        .foregroundColor(Color.white)
-                                        .frame(width: 310, height: 40)
-                                        .font(.system(size: 25))
-                                        .background(ColorManager.purple3)
-                                        .cornerRadius(10)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    
-                                })
-                        }
-                        
-                        Spacer()
-                            .frame(height: 15)
-                        
-                        
-                        HStack {
-                            ZStack {
-                                //                                Image(systemName: "rectangle.fill")
-                                //                                    .resizable()
-                                //                                    .foregroundColor(ColorManager .purple2)
-                                //                                    .frame(width: 40, height: 40)
-                                //                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                //
-                                //                                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                                //                                    .opacity(0.95)
-                                //
-                                //                                Image("IconFightNew40")
-                            }
-                            
-                            
-                            NavigationLink(
+                        NavigationLink(
+                            destination: InviteView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                            label: {
+                                Text("Invite Friends ->tap + planet")
+                                    .fontWeight(.thin)
+                                    .frame(width: 310, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 25))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(10)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 
-                                destination: SettingsNotificationsView(user: user),
-                                label: {
-                                    Text("")
-                                        .fontWeight(.thin)
-                                        .foregroundColor(Color.white)
-                                        .frame(width: 300, height: 40)
-                                        .font(.system(size: 25))
-                                        .background(ColorManager.purple3)
-                                        .cornerRadius(10)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    
-                                }
-                            )}
-                        //
-                        Spacer()
-                            .frame(height: 15)
+                            })
+                        
+                    }
+                    
+                    
+                    Spacer()
+                        .frame(height: 15)
+                    //                        Text("Helping Friends")
+                    //                            .font(.system(size: 27, weight: .bold))
+                    //                            .foregroundColor(ColorManager .grey3)
+                    //                            .shadow(color: .purple, radius: 1, x: 0, y: 1)
+                    //                            .opacity(0.50)
+                    //                            .multilineTextAlignment(.center)
+                    
+                    HStack {
+                        ZStack {
+                            
+                        }
                         
                         
+                        
+                        NavigationLink(
+                            destination: InfoInsideChat(user: user),
+                            label: {
+                                Text("Create New chat rooms")
+                                    .fontWeight(.thin)
+                                    .frame(width: 310, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 25))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(10)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                            })
+                    }
+                    
+                    Spacer()
+                        .frame(height: 15)
+                    
+                    HStack {
+                        ZStack {
+                            //                                Image(systemName: "rectangle.fill")
+                            //                                    .resizable()
+                            //                                    .foregroundColor(ColorManager .purple2)
+                            //                                    .frame(width: 40, height: 40)
+                            //                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            //                                //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                            //                                    .opacity(0.95)
+                            //
+                            //                                Image("IconNiceNew40")
+                        }
+                        
+                        
+                        
+                        
+                        NavigationLink(
+                            //                                destination: InfoSilence(user: user),
+                            destination: MyRoomView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                            label: {
+                                Text("MyRoom ->Tap your planet")
+                                    .fontWeight(.thin)
+                                    .foregroundColor(Color.white)
+                                    .frame(width: 310, height: 40)
+                                    .font(.system(size: 25))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(10)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                            })
+                    }
+                    
+                    Spacer()
+                        .frame(height: 15)
+                    
+                    
+                    HStack {
+                        ZStack {
+                            //                                Image(systemName: "rectangle.fill")
+                            //                                    .resizable()
+                            //                                    .foregroundColor(ColorManager .purple2)
+                            //                                    .frame(width: 40, height: 40)
+                            //                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            //
+                            //                                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                            //                                    .opacity(0.95)
+                            //
+                            //                                Image("IconFightNew40")
+                        }
+                        
+                        
+                        NavigationLink(
+                            
+                            destination: SettingsNotificationsView(user: user),
+                            label: {
+                                Text("")
+                                    .fontWeight(.thin)
+                                    .foregroundColor(Color.white)
+                                    .frame(width: 300, height: 40)
+                                    .font(.system(size: 25))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(10)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                            }
+                        )}
+                    //
+                    Spacer()
+                        .frame(height: 15)
+                    
+                    VStack {
                         HStack {
                             ZStack {
-                                //                                Image(systemName: "rectangle.fill")
-                                //                                    .resizable()
-                                //                                    .foregroundColor(ColorManager .purple2)
-                                //                                    .frame(width: 40, height: 40)
-                                //                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                //
-                                //                                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                                //                                    .opacity(0.95)
-                                //
-                                //                                Image("iconSilence")
+                                
                             }
                             
                             NavigationLink(
@@ -254,7 +245,24 @@ struct INFOMainHowWorks: View {
                                     
                                 }
                             )}
-                        //
+                        
+                        Spacer()
+                            .frame(height: 25)
+                        
+                        Button(action: {
+                            sessionManager.showLogin()
+                        },
+                               label: {
+                            Image("home-alt2")
+                                .frame(width: 50, height: 25)
+                                .foregroundColor(.white)
+                                .font(.system(size: 20))
+                                .background(ColorManager .grey2)
+                                .cornerRadius(15)
+                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                .opacity(0.70)
+                            
+                        })
                     }
                     
                     //                    VStack {
@@ -281,8 +289,6 @@ struct INFOMainHowWorks: View {
                     VStack {
                         
                         
-                        Spacer()
-                            .frame(height: 25)
                         
                         //                        NavigationLink(
                         //
@@ -300,21 +306,21 @@ struct INFOMainHowWorks: View {
                         //                            }
                         //                        )}
                         
-//
-//                        Button(action: {
-//                            sessionManager.showLogin()
-//                        },
-//                               label: {
-//                            Image("home-alt2")
-//                                .frame(width: 50, height: 25)
-//                                .foregroundColor(.white)
-//                                .font(.system(size: 20))
-//                                .background(Color .black)
-//                                .cornerRadius(15)
-//                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                                .opacity(0.70)
-//
-//                        })
+                        //
+                        //                        Button(action: {
+                        //                            sessionManager.showLogin()
+                        //                        },
+                        //                               label: {
+                        //                            Image("home-alt2")
+                        //                                .frame(width: 50, height: 25)
+                        //                                .foregroundColor(.white)
+                        //                                .font(.system(size: 20))
+                        //                                .background(Color .black)
+                        //                                .cornerRadius(15)
+                        //                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                        //                                .opacity(0.70)
+                        //
+                        //                        })
                         
                         //            func shareButtonTapped() {
                         ////                sendMessage()
@@ -338,4 +344,5 @@ struct INFOMainHowWorks: View {
         
     }
     
-
+    
+}
