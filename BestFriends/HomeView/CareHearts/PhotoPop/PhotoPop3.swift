@@ -46,67 +46,20 @@ struct PhotoPop3: View {
             
             VStack{
                 
-                VStack {
-                    
-                    
-                    
-                    
-                    
-                    Text("Up-loading to PhotoPOP")
-                        .font(.system(size: 30, weight: .light))
-                        .foregroundColor(.green)
-                    
-                    Text("-Tap (+) \n-Select friend sending image to \n-tap image from your photo gallery")
-                        .font(.system(size: 20, weight: .light))
-                        .italic()
-                        .foregroundColor(.white)
-                    
-                    Spacer()
-                        .frame(height: 30)
-                    
-            
-                    
-                    Text("Replacing images")
-                        .font(.system(size: 30, weight: .light))
-                        .foregroundColor(.green)
-                    
-                    
-                    Text("-Tap image \n-then, exit & re-enter page")
-                        .font(.system(size: 20, weight: .light))
-                        .italic()
-                        .foregroundColor(.white)
-                    
-                    Spacer()
-                        .frame(height: 15)
-                    
-            VStack {
-                    
-                    Text("* (can only have ONE")
-                        .italic()
-                        .font(.system(size: 13, weight: .light))
-                        .foregroundColor(Color .green)
-                    
-                Text("'active' image at a time)")
-                    .italic()
-                    .font(.system(size: 13, weight: .light))
-                    .foregroundColor(Color .green)
-                
-                    Spacer()
-                        .frame(height: 60)
-                    
-                    Text("Who are you")
-                        .font(.system(size: 25, weight: .ultraLight))
-                        .foregroundColor(Color.white)
-                    
-                    Text("sending image to?")
-                        .font(.system(size: 25, weight: .ultraLight))
-                        .foregroundColor(Color.white)
-                    
-                    
+               
                     
                     VStack {
                         
+//                        Spacer()
+//                            .frame(height: 60)
                         
+                        Text("Who are you")
+                            .font(.system(size: 25, weight: .ultraLight))
+                            .foregroundColor(Color.white)
+                        
+                        Text("sending image to?")
+                            .font(.system(size: 25, weight: .ultraLight))
+                            .foregroundColor(Color.white)
                         
                         HStack {
                             //
@@ -199,8 +152,7 @@ struct PhotoPop3: View {
                             }
                         }
                         
-                        Spacer()
-                            .frame(height: 20)
+                   
                         
                         Button(action: {
                             counter += 1
@@ -225,9 +177,59 @@ struct PhotoPop3: View {
                         
                     }
                     
-                    //                    Spacer()
-                    //                        .frame(height: 150)
+                                        Spacer()
+                                            .frame(height: 50)
+                VStack {
                     
+                    
+                    
+                    
+                    
+                    Text("Up-loading to PhotoPOP")
+                        .font(.system(size: 30, weight: .light))
+                        .foregroundColor(.green)
+                    
+                    Text("-Tap (+) \n-Select friend sending image to \n-tap image from your photo gallery")
+                        .font(.system(size: 20, weight: .light))
+                        .italic()
+                        .foregroundColor(.white)
+                    
+                    Spacer()
+                        .frame(height: 30)
+                    
+            
+                    
+                    Text("Replacing images")
+                        .font(.system(size: 30, weight: .light))
+                        .foregroundColor(.green)
+                    
+                    
+                    Text("-Tap image \n-then, exit & re-enter page")
+                        .font(.system(size: 20, weight: .light))
+                        .italic()
+                        .foregroundColor(.white)
+                    
+                    Spacer()
+                        .frame(height: 15)
+                    
+            VStack {
+                    
+                    Text("* (can only have ONE")
+                        .italic()
+                        .font(.system(size: 13, weight: .light))
+                        .foregroundColor(Color .green)
+                    
+                Text("'active' image at a time)")
+                    .italic()
+                    .font(.system(size: 13, weight: .light))
+                    .foregroundColor(Color .green)
+                
+           
+                    
+                    
+                
+                
+                
                 }
                 
             }

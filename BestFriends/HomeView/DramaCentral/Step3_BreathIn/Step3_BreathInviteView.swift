@@ -21,24 +21,23 @@ struct Step3_BreathInviteView: View {
             ColorManager.grey2
                   .ignoresSafeArea()
           
-            // Stars animation...
-            AdPlayerView(name: "backgroundAnimation")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-            
+//            // Stars animation...
+//            AdPlayerView(name: "backgroundAnimation")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//            
             VStack{
                 
-                Text("Step 1 (Take a Breath)")
-                    .font(.system(size: 17, weight: .ultraLight))
-                    .foregroundColor(Color.blue)
+                Text("Ok, something stupid just happened")
+                    .font(.system(size: 30, weight: .bold))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(ColorManager .grey4)
+                    .multilineTextAlignment(.center)
                     
-                Spacer()
-                    .frame(height: 20)
-                
                 HStack {
                     
                     Text("Calming")
-                        .font(.system(size: 47, weight: .ultraLight))
+                        .font(.system(size: 30, weight: .ultraLight))
                         .foregroundColor(Color.purple)
                         .kerning(25)
                 }
@@ -46,7 +45,7 @@ struct Step3_BreathInviteView: View {
                 VStack {
                     
                     Text("breaths")
-                        .font(.system(size: 60, weight: .bold))
+                        .font(.system(size: 30, weight: .bold))
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.purple)
                         .kerning(10)
@@ -73,78 +72,7 @@ struct Step3_BreathInviteView: View {
                         
                         Spacer()
                             .frame(height: 10)
-//
-//                        Text("Try with a Friend")
-//                            .font(.system(size: 40, weight: .thin))
-//                            .foregroundColor(Color.blue)
-//
-//                        Spacer()
-//                            .frame(height: 20)
-//                    }
-//
-//
-//                    VStack {
-//                        HStack {
-//                            NavigationLink(
-//                                destination: BreathInView(),
-//                                label: {
-//                                    Text("ALL")
-//                                        .fontWeight(.bold)
-//                                        .frame(width: 100, height: 30)
-//                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                        .font(.system(size: 15))
-//                                        .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-//                                        .cornerRadius(25)
-//                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                                })
-//
-//                            if friends.count > 0 {
-//                                RectView(user: user, friend: friends[0])
-//                            }
-//
-//                            if friends.count > 1 {
-//                                RectView(user: user, friend: friends[1])
-//                            }
-//                        }
-//
-//                        Spacer()
-//                            .frame(height: 35)
-//                        HStack {
-//                            if friends.count > 2 {
-//                                RectView(user: user, friend: friends[2])
-//                            }
-//
-//                            if friends.count > 3 {
-//                                RectView(user: user, friend: friends[3])
-//                            }
-//
-//                            if friends.count > 4 {
-//                                RectView(user: user, friend: friends[4])
-//                            }
-//                        }
-//
-//                        VStack {
-//
-//                            NavigationLink(
-//                                destination: EmptyView(),
-//                                label: {
-//                                    Text("Invite")
-//                                        .fontWeight(.thin)
-//                                        .font(.system(size: 30))
-//                                        .foregroundColor(Color.white)
-//                                        .frame(width: 160, height: 40)
-//                                        .font(.system(size: 30))
-//
-//                                        .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-//
-//                                        .cornerRadius(15)
-//                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//
-//                                }
-//
-//                            )}
-//
+
                         Spacer ()
                             .frame(height: 30)
                         
@@ -170,6 +98,83 @@ struct Step3_BreathInviteView: View {
             
         }
     }
+   
+    
+    
+    
+    //
+    //                        Text("Try with a Friend")
+    //                            .font(.system(size: 40, weight: .thin))
+    //                            .foregroundColor(Color.blue)
+    //
+    //                        Spacer()
+    //                            .frame(height: 20)
+    //                    }
+    //
+    //
+    //                    VStack {
+    //                        HStack {
+    //                            NavigationLink(
+    //                                destination: BreathInView(),
+    //                                label: {
+    //                                    Text("ALL")
+    //                                        .fontWeight(.bold)
+    //                                        .frame(width: 100, height: 30)
+    //                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+    //                                        .font(.system(size: 15))
+    //                                        .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+    //                                        .cornerRadius(25)
+    //                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+    //                                })
+    //
+    //                            if friends.count > 0 {
+    //                                RectView(user: user, friend: friends[0])
+    //                            }
+    //
+    //                            if friends.count > 1 {
+    //                                RectView(user: user, friend: friends[1])
+    //                            }
+    //                        }
+    //
+    //                        Spacer()
+    //                            .frame(height: 35)
+    //                        HStack {
+    //                            if friends.count > 2 {
+    //                                RectView(user: user, friend: friends[2])
+    //                            }
+    //
+    //                            if friends.count > 3 {
+    //                                RectView(user: user, friend: friends[3])
+    //                            }
+    //
+    //                            if friends.count > 4 {
+    //                                RectView(user: user, friend: friends[4])
+    //                            }
+    //                        }
+    //
+    //                        VStack {
+    //
+    //                            NavigationLink(
+    //                                destination: EmptyView(),
+    //                                label: {
+    //                                    Text("Invite")
+    //                                        .fontWeight(.thin)
+    //                                        .font(.system(size: 30))
+    //                                        .foregroundColor(Color.white)
+    //                                        .frame(width: 160, height: 40)
+    //                                        .font(.system(size: 30))
+    //
+    //                                        .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+    //
+    //                                        .cornerRadius(15)
+    //                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+    //
+    //
+    //                                }
+    //
+    //                            )}
+    //
+    
     
 //    private struct RectView: View {
 //        let user: User

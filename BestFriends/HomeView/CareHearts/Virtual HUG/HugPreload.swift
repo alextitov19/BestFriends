@@ -136,7 +136,7 @@ struct HugPreload: View {
                   
 
                     
-                    NavigationLink(destination: PhotoPopInfo(user: user, friends: friends), label: {
+                    NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
                         HugCircle (color: ColorManager .purple4, friendName: "send a \nPhotoPOP")
                     })
                     .offset(x: showItems ? -60 : 0, y: showItems ? 350: 0)

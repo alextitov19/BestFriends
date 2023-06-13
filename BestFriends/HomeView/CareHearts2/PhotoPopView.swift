@@ -66,15 +66,15 @@ struct PhotoPopView: View {
                     .opacity(0.50)
                     .multilineTextAlignment(.center)
                 
-                Text("When get push notification just")
+                Text("shake iPhone to view image")
                     .italic()
                     .font(.system(size: 17, weight: .regular))
                     .foregroundColor(ColorManager .grey1)
                 
-                Text("shake iPhone to see image")
-                    .italic()
-                    .font(.system(size: 17, weight: .regular))
-                    .foregroundColor(ColorManager .grey1)
+//                Text("shake iPhone to see image")
+//                    .italic()
+//                    .font(.system(size: 17, weight: .regular))
+//                    .foregroundColor(ColorManager .grey1)
 //                
 //                Text("image friend sent!")
 //                    .font(.system(size: 17, weight: .light))
@@ -85,7 +85,7 @@ struct PhotoPopView: View {
                  NavigationLink(
                     destination: PhotoPop3(user: user, friends: friends),
                     label: {
-                        Text("How to Upload & Share images")
+                        Text("TAP to send Image")
                             .fontWeight(.thin)
                             .frame(width: 280, height: 30)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

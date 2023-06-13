@@ -224,6 +224,37 @@ struct PlanetActionsView: View {
                                 .font(.system(size: 20, weight: .regular))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 .opacity(0.70)
+                            
+                            
+                            
+                        }
+                    }
+                })
+                            
+                            
+                            
+                           
+                            
+                NavigationLink(destination:  Step1_NotReadyTalk(),
+                                           label: {
+                                ZStack {
+                                    Circle()
+                                        .frame(width: 110, height: 110)
+                                        .foregroundColor(ColorManager.purple2)
+                                        .shadow(color: .white, radius: 3, x: -4, y: -4)
+                                        .glow(color: ColorManager.purple4, radius: 7)
+                                        .opacity(0.80)
+
+                                    VStack {
+                                        Text("Breathe Drama")
+                                            .foregroundColor(ColorManager .purple3)
+                                            .font(.system(size: 20, weight: .regular))
+                                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                            .opacity(0.70)
+                            
+                            
+                            
+                            
                         }
                     }
                 })

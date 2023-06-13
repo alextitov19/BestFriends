@@ -36,8 +36,13 @@ struct MyRoomView: View {
                     MyRoomRowView(title: "Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 })
                 
-                MyRoomRowView(title: "Breathe", imageName: "wind", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                NavigationLink(destination: HugPushNotification2(user: user, atmosphere: atmosphere, friends: friends,friendAtmospheres: friendAtmospheres, groups: groups), label: {
+                MyRoomRowView(title: "CareHearts", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                })
                 
+                NavigationLink(destination: Step3_BreathInviteView(user: user, friends: friends), label: {
+                    MyRoomRowView(title: "Breathe", imageName: "wind", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                })
                 
                 MyRoomRowView(title: "Affirm", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
 
@@ -45,10 +50,7 @@ struct MyRoomView: View {
                 MyRoomRowView(title: "SmileVault", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 })
 
-                
-                NavigationLink(destination: HugPushNotification2(user: user, atmosphere: atmosphere, friends: friends,friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                MyRoomRowView(title: "CareHearts", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
-                })
+     
                 
                 Spacer()
             }

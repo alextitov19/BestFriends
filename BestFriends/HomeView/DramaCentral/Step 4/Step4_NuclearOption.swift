@@ -26,9 +26,9 @@ struct Step4_NuclearOption: View {
                   .ignoresSafeArea()
           
             // Stars animation...
-            AdPlayerView(name: "backgroundAnimation")
-                .ignoresSafeArea()
-                .blendMode(.screen)
+//            AdPlayerView(name: "backgroundAnimation")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
         
             VStack {
                 

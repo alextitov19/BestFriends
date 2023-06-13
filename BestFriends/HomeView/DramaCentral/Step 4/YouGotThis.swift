@@ -24,10 +24,10 @@ struct YouGotThis: View {
             ColorManager.grey2
                   .ignoresSafeArea()
           
-            // Stars animation...
-            AdPlayerView(name: "backgroundAnimation")
-                .ignoresSafeArea()
-                .blendMode(.screen)
+//            // Stars animation...
+//            AdPlayerView(name: "backgroundAnimation")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
             
             VStack {
                 Text("We get it - you're upset!")

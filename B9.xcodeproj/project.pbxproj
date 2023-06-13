@@ -880,6 +880,7 @@
 				CFAE7347283C745800015FD2 /* Help Beta Test */,
 				CFD0469D2838392200BF0B02 /* URGENT Chat Invite */,
 				CF47CF0A28E2CAC7008B6F11 /* CareHearts */,
+				CFB65BC72A37EA8F00E98A8B /* Affirmations */,
 				CFB65BC52A35656300E98A8B /* CareHearts2 */,
 				CFD8BD0C2915562D00F86EFB /* OLD My ROOM */,
 			);
@@ -1341,8 +1342,16 @@
 				CFA1225F2859771600E22E84 /* HurtFeelings.swift */,
 				CFD12CC6281943CA00AB2539 /* Impetus.swift */,
 				CF4128032922A451003BCBFA /* PhotoPOPFGPreload.swift */,
+				7A04C13C28553818003AB24A /* PhotoPopView.swift */,
 			);
 			path = CareHearts2;
+			sourceTree = "<group>";
+		};
+		CFB65BC72A37EA8F00E98A8B /* Affirmations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Affirmations;
 			sourceTree = "<group>";
 		};
 		CFC0EE702906F9D9006B3FAA /* New Group */ = {
@@ -1435,7 +1444,6 @@
 		CFD8BD032912A8F300F86EFB /* PhotoPop */ = {
 			isa = PBXGroup;
 			children = (
-				7A04C13C28553818003AB24A /* PhotoPopView.swift */,
 				CF24815428F5018B00D47AE3 /* PhotoPop1.swift */,
 				CF24815628F5060100D47AE3 /* PhotoPop3.swift */,
 				CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */,

@@ -40,7 +40,7 @@ struct BreathInView: View {
                   .ignoresSafeArea()
 
            
-            AdPlayerView(name: "Beach")
+            AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             

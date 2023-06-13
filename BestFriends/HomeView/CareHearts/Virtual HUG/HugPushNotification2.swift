@@ -109,15 +109,18 @@ struct HugPushNotification2: View {
                     //                        .frame(width: 100, height: 75)
                     //                        .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
                     //                        .opacity(0.3)
+//                    
+//                    Text("")
+//                        .font(.system(size: 30))
+//                    //                    .italic()
+//                        .fontWeight(.thin)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager .grey2)
                     
                     Text("Friend having a bad day?")
-                        .font(.system(size: 30))
-                    //                    .italic()
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
+                        .font(.system(size: 30, weight: .thin))
+                        .fontWeight(.ultraLight)
                         .foregroundColor(ColorManager .grey2)
-                    
-                    
                     
                     VStack {
                         
@@ -225,17 +228,17 @@ struct HugPushNotification2: View {
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.red)
                                 
-//                            
+//
 //                                Spacer ()
 //                                    .frame(height: 10)
-//                                
+//
 //                                Text("When you get a push notification")
 //                                    .font(.system(size: 15))
 //                                    .italic()
 //                                    .fontWeight(.light)
 //                                    .multilineTextAlignment(.center)
 //                                    .foregroundColor(ColorManager .grey1)
-//                                
+//
 //                                Text("just shake your phone to view pic")
 //                                    .font(.system(size: 15))
 //                                    .italic()
