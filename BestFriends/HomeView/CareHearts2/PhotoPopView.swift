@@ -59,6 +59,22 @@ struct PhotoPopView: View {
                 }
             
             VStack {
+                
+                
+                Button(action: {
+                    sessionManager.showLogin()
+                },
+                    label: {
+                    Image("home-alt2")
+                        .frame(width: 50, height: 25)
+                        .foregroundColor(.white)
+                        .font(.system(size: 20))
+                        .background(ColorManager .grey2)
+                        .cornerRadius(15)
+                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                        .opacity(0.70)
+                    
+                })
 
                 Text("PhotoPOP")
                     .font(.system(size: 35, weight: .bold))
@@ -86,7 +102,7 @@ struct PhotoPopView: View {
                  NavigationLink(
                     destination: PhotoPop3(user: user, friends: friends),
                     label: {
-                        Text("Who sending image too?  \nTAP")
+                        Text("Who sending image to?  \nTAP")
                             .fontWeight(.thin)
                             .frame(width: 220, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
