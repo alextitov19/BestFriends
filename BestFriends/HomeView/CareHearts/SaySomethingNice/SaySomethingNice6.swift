@@ -141,7 +141,7 @@ struct SaySomethingNice6: View {
                 
                 NavigationLink(
                     
-                    destination: INFOPreloadA(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
+                    destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                     label: {
                         Text("Walk-through")
                             .fontWeight(.light)
