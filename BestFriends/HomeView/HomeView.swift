@@ -110,10 +110,11 @@ struct HomeView: View {
                 }
                 
                 VStack {
+                    Spacer().frame(height: 60)
+                    
                     Text("Reload")
                         .foregroundColor(ColorManager.purple2)
                         .font(.system(size: 16, weight: .light))
-                        .padding(.top, 60)
                         .onTapGesture {
                             getHomeData()
                         }
