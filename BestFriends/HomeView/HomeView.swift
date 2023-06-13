@@ -263,14 +263,14 @@ struct HomeView: View {
                         Button(action: {
                             chatButtonTapped()
                         }, label: {
-                            //                            Text("create Chat rooms - see SetUp")
-                            //                                .fontWeight(.light)
-                            //                                .frame(width: 255, height: 30)
-                            //                                .foregroundColor(.white)
-                            //                                .background(ColorManager .purple7)
-                            //                                .cornerRadius(10)
-                            //                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                            //                                .opacity(0.5)
+                                                        Text("create new chat room")
+                                                            .fontWeight(.light)
+                                                            .frame(width: 200, height: 30)
+                                                            .foregroundColor(.white)
+                                                            .background(ColorManager .purple7)
+                                                            .cornerRadius(10)
+                                                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                                            .opacity(0.5)
                             
                             
                             
