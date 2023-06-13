@@ -109,18 +109,18 @@ struct HomeView: View {
                     Spacer()
                 }
                 
-                VStack {
-                    Spacer().frame(height: 60)
-                    
-                    Text("Reload")
-                        .foregroundColor(ColorManager.purple2)
-                        .font(.system(size: 16, weight: .light))
-                        .onTapGesture {
-                            getHomeData()
-                        }
-                    
-                    Spacer()
-                }
+//                VStack {
+//                    Spacer().frame(height: 60)
+//                    
+//                    Text("Reload")
+//                        .foregroundColor(ColorManager.purple2)
+//                        .font(.system(size: 16, weight: .light))
+//                        .onTapGesture {
+//                            getHomeData()
+//                        }
+//                    
+//                    Spacer()
+//                }
                 
                 if homeData != nil {
                     FriendPlanetsView(planets: $planets, selectedPlanets: $newGroupMembers, inviteClicked: $inviteClicked)
