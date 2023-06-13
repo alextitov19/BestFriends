@@ -135,7 +135,7 @@ struct JournalsView: View {
         if newJournalText.isEmpty || selectedCategory == "" || selectedCategory == "Tap Me" {
             return
         }
-        let cj = CreateJournal(category: selectedCategory, text: newJournalText, messages: [], images: [], mood: newJournalMood, weather: newJournalWeather)
+        let cj = CreateJournal(category: selectedCategory, text: newJournalText, messages: [], images: newJournalImagesData, mood: newJournalMood, weather: newJournalWeather)
         RestApi.instance.createJournal(cj: cj).then({ response in
             if response == 200 {
                 print("Successfully added a journal")
