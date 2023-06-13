@@ -267,7 +267,6 @@ struct FriendPlanetsView: View {
                 .onAppear { movingInvitePlanet = true }
             }
         }
-        
     }
     
     private func friendPlanetTapped(id: String) {
