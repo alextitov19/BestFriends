@@ -2,205 +2,99 @@
 //  JournalView.swift
 //  BestFriends
 //
-//  Created by Alex Titov on 6/9/23.
+//  Created by Alex Titov on 6/12/23.
 //
 
 import SwiftUI
 
 struct JournalView: View {
     
-    @State private var user = User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: "", chatBackground: "")
-    @State private var newCategory = ""
-    @State private var selectedCategory = ""
-    @State private var selectCategoryIsPresented = false
-    @State private var categories: [String] = []
-    @State private var journals: [Journal] = []
-    @State private var createNewJournalIsPresented = false
-    @State private var newJournalText = "Today I feel..."
-    @State private var newJournalMood = 0.0
-
+    let journal: Journal
+    let dateString: String
+    @State private var images: [UIImage] = []
+    
+    init(j: Journal) {
+        journal = j
+        
+        let d = Date(timeIntervalSince1970: TimeInterval(j.createdOn))
+        let formatter3 = DateFormatter()
+        formatter3.dateFormat = "E, d MMM"
+        dateString = formatter3.string(from: d)
+    }
     
     var body: some View {
         ZStack {
-            ColorManager.purple7
-                .opacity(0.3)
+            ColorManager.purple2
                 .ignoresSafeArea()
-                .onAppear { loadData() }
-            
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-            
-            VStack {
-                Text(selectedCategory)
-                    .font(.system(size: 30, weight: .light))
-                    .foregroundColor(ColorManager.purple5)
-                    .onTapGesture {
-                        categoryTapped()
-                    }
-                
-                Button(action: {
-                    createNewJournalIsPresented = true
-                }, label: {
-                    addButtonBody()
-                })
-                .padding()
-                
-                ScrollView(.vertical, showsIndicators: false) {
-                    ForEach(journals, id: \.id) { journal in
-                        if journal.category == selectedCategory {
-                            JournalRowView(j: journal)
-                        }
-                    }
+                .onAppear {
+                    loadImages()
                 }
-                
-                Spacer()
-            }
             
-            if selectCategoryIsPresented {
-                CategorySelectorView(categories: categories, isPresented: $selectCategoryIsPresented, newCategory: $newCategory, selectedCategory: $selectedCategory)
-                    .onDisappear{
-                        print("New Category: ", newCategory)
-                        print("Selected Category: ", selectedCategory)
-                        newCategotySelected()
-                    }
-            }
-            
-            if createNewJournalIsPresented {
-                CreateNewJournalView(isPresented: $createNewJournalIsPresented, text: $newJournalText, mood: $newJournalMood)
-                    .onDisappear{
-                        print("New Text: ", newJournalText)
-                        print("Selected Mood: ", newJournalMood)
-                        createJournal()
-                    }
-            }
-        }
-    }
-    
-    private func loadData() {
-        journals = []
-        RestApi.instance.getHomeData().then({ result in
-            user = result.user
-            print("Got user: ", result)
-            categories = user.journalCategories ?? []
-            if categories.count > 0 && selectedCategory.isEmpty {
-                selectedCategory = categories[0]
-            }
-            if selectedCategory.isEmpty {
-                selectedCategory = "Tap Me"
-            }
-            
-            for id in user.journals ?? [] {
-                RestApi.instance.getJournal(id: id).then({ j in
-                    if j.category == selectedCategory {
-                        journals.append(j)
-                        journals.sort { (i: Journal, j: Journal) -> Bool in
-                            return i.createdOn > j.createdOn
-                        }
-                    }
-                })
-            }
-        })
-    }
-    
-    private func categoryTapped() {
-        newCategory = ""
-        selectedCategory = ""
-        selectCategoryIsPresented = true
-    }
-    
-    private func newCategotySelected() {
-        if (!newCategory.isEmpty) {
-            var u = user
-            if u.journalCategories == nil {
-                u.journalCategories = []
-            }
-            u.journalCategories!.append(newCategory)
-            RestApi.instance.updateUser(user: u).then({ response in
-                if response == 200 {
-                    print("Successully added a new category")
-                    loadData()
-                }
-            })
-        } else {
-            loadData()
-        }
-    }
-    
-    private func createJournal() {
-        if newJournalText.isEmpty || selectedCategory == "" || selectedCategory == "Tap Me" {
-            return
-        }
-        let cj = CreateJournal(category: selectedCategory, text: newJournalText, messages: [], images: [], mood: newJournalMood, weather: "Sunny")
-        RestApi.instance.createJournal(cj: cj).then({ response in
-            if response == 200 {
-                print("Successfully added a journal")
-                loadData()
-            }
-        })
-    }
-    
-    private struct addButtonBody: View {
-        var body: some View {
-            ZStack {
-                ColorManager.purple3
-                
-                Image(systemName: "plus")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 30, height: 30)
-                    .foregroundColor(ColorManager.purple5)
-                    .opacity(0.3)
-            }
-            .frame(width: 200, height: 50)
-            .cornerRadius(15)
-            .opacity(0.7)
-        }
-    }
-        
-    private struct JournalRowView: View {
-        let journal: Journal
-        let dateString: String
-
-        init(j: Journal) {
-            journal = j
-            var x = Int64(Date().timeIntervalSince1970) - j.createdOn
-            x = x / 60
-            var s = "\(x) min"
-            if x > 60 {
-                x = x / 60
-                s = "\(x) hr"
-                if x > 24 {
-                    x = x / 24
-                    s = "\(x) days"
-                }
-            }
-            dateString = s
-        }
-        
-        var body: some View {
-            ZStack {
-                ColorManager.purple2
-                
+            ScrollView(.vertical, showsIndicators: false) {
                 VStack {
-                    HStack {
-                        Text(dateString)
-                            .font(.system(size: 16, weight: .regular))
-                            .foregroundColor(ColorManager.purple5)
-                        
-                        Spacer()
-                    }
+                    Text(dateString)
+                        .font(.system(size: 24, weight: .light))
+                        .foregroundColor(ColorManager.purple5)
                     
                     Text(journal.text)
-                        .font(.system(size: 16, weight: .light))
-                        .foregroundColor(ColorManager.purple5)
+                        .font(.system(size: 16))
+                        .foregroundColor(ColorManager.purple4)
+                        .multilineTextAlignment(.leading)
+                        .padding()
+                    
+                    HStack {
+                        VStack {
+                            if journal.mood < 0 {
+                                Image("sadMood")
+                                    .renderingMode(.template)
+                                    .resizable()
+                                    .foregroundColor(.blue)
+                                    .frame(width: 30, height: 30)
+                                
+                            } else {
+                                
+                                Image("happyMood")
+                                    .renderingMode(.template)
+                                    .resizable()
+                                    .foregroundColor(.yellow)
+                                    .frame(width: 30, height: 30)
+                            }
+                            
+                            Text(String(abs(journal.mood * 100).rounded(.up)) + "%")
+                                .font(.system(size: 12))
+                        }
+                        .padding()
+                        
+                        Image(systemName: journal.weather)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 42, height: 42)
+                            .foregroundColor(ColorManager.purple5)
+                            .padding()
+                    }
+                    
+                    ForEach(images, id: \.self) {image in
+                        Image(uiImage: image)
+                            .resizable()
+                            .scaledToFit()
+                            .padding()
+                    }
+                    
+                    Spacer()
                 }
-                .padding()
             }
-            .frame(height: 60)
-            .cornerRadius(15)
-            .padding(.horizontal)
         }
     }
     
+    private func loadImages() {
+        for link in journal.images {
+            print("Link: ", link)
+            RestApi.instance.getImage(link: link).then({ response in
+                let i = UIImage(data: response)
+                if i != nil {
+                    images.append(i!)
+                }
+            })
+        }
+    }
 }

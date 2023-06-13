@@ -34,7 +34,7 @@ struct CreateJournal: Codable {
     let category: String
     let text: String
     let messages: [String]
-    let images: [String]
+    let images: [Data]
     let mood: Double
     let weather: String
     enum CodingKeys: String, CodingKey {
