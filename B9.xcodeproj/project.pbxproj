@@ -94,6 +94,7 @@
 		7ADFDB33289B1FA60004FB1C /* ShakePhotoPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */; };
 		7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CBE262A9A94001EC5A3 /* LoginView.swift */; };
 		7AE3E9032838409B00567E2D /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3E9022838409A00567E2D /* ArrayExt.swift */; };
+		7AFB534F2A383975008FF2B8 /* FriendPlanetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFB534E2A383975008FF2B8 /* FriendPlanetsView.swift */; };
 		7AFCF27827FDFF2C00D2DB5C /* ChatGroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCF27727FDFF2C00D2DB5C /* ChatGroupsView.swift */; };
 		7AFCF27A27FDFFA800D2DB5C /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCF27927FDFFA800D2DB5C /* BlurView.swift */; };
 		7AFCF27C27FDFFB000D2DB5C /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCF27B27FDFFB000D2DB5C /* CustomCorner.swift */; };
@@ -385,6 +386,7 @@
 		7AE31CBE262A9A94001EC5A3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7AE3E9022838409A00567E2D /* ArrayExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExt.swift; sourceTree = "<group>"; };
 		7AED44FA2647310700944708 /* BestFriends.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BestFriends.entitlements; sourceTree = "<group>"; };
+		7AFB534E2A383975008FF2B8 /* FriendPlanetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPlanetsView.swift; sourceTree = "<group>"; };
 		7AFCF27727FDFF2C00D2DB5C /* ChatGroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGroupsView.swift; sourceTree = "<group>"; };
 		7AFCF27927FDFFA800D2DB5C /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		7AFCF27B27FDFFB000D2DB5C /* CustomCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
@@ -1509,6 +1511,7 @@
 			isa = PBXGroup;
 			children = (
 				7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */,
+				7AFB534E2A383975008FF2B8 /* FriendPlanetsView.swift */,
 				CF387E292960D5B6003A85D8 /* PlanetBell.swift */,
 			);
 			path = PlanetView;
@@ -1975,6 +1978,7 @@
 				CF763F7C285AFBAB0010D1A9 /* HorizonsPrototype.swift in Sources */,
 				CFAB5400281A99B600BBF502 /* Step6_TextingFirst.swift in Sources */,
 				7A0856A027F3D94500E8282B /* AuthController.swift in Sources */,
+				7AFB534F2A383975008FF2B8 /* FriendPlanetsView.swift in Sources */,
 				CFC0EE7E290805F8006B3FAA /* InfoInsideChat.swift in Sources */,
 				7AD8DEFB27F66C8900D9F0E1 /* HomeModels.swift in Sources */,
 				CFD6C05D294169CC00D57E0B /* HideMyRoom.swift in Sources */,

@@ -19,9 +19,7 @@ struct HomeView: View {
     @State private var groups: [Group] = []
     @State private var planets: [Planet] = []
     
-    @State private var selectedPlanet: Planet?
-    
-    @State private var focusPlanet = false
+//    @State private var focusPlanet = false
     @State private var showNewRoomNameDialog = false
     
     @State private var newGroupMembers: [String] = []
@@ -62,7 +60,6 @@ struct HomeView: View {
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .onTapGesture(perform: backgroundTapped)
                 
                 VStack {
                     if ((homeData) != nil) {
@@ -131,93 +128,34 @@ struct HomeView: View {
                     Spacer()
                 }
                 
+                FriendPlanetsView(planets: $planets, selectedPlanets: $newGroupMembers)
+                
                 VStack {
-                    HStack {
-                        
-                        if planets.count > 0 && !focusPlanet {
-                            planets[0]
-                                .onTapGesture(perform: {
-                                    friendPlanetTapped(id: planets[0].user.id)
-                                    if (selectedPlanet != nil) && selectedPlanet!.user.id == planets[0].user.id {
-                                        selectedPlanet = nil
-                                    } else {
-                                        selectedPlanet = planets[0]
-                                    }
-                                })
-                        }
-                        
-                        if planets.count > 1 && !focusPlanet {
-                            Spacer()
-                                .frame(width: 35)
-                            planets[1]
-                                .onTapGesture(perform: { friendPlanetTapped(id: planets[1].user.id)
-                                    if (selectedPlanet != nil) && selectedPlanet!.user.id == planets[1].user.id {
-                                        selectedPlanet = nil
-                                    } else {
-                                        selectedPlanet = planets[1]
-                                    }
-                                })
-                        }
-                        if planets.count > 2 && !focusPlanet {
-                            Spacer()
-                                .frame(width: 35)
-                            planets[2]
-                                .onTapGesture(perform: { friendPlanetTapped(id: planets[2].user.id)
-                                    if (selectedPlanet != nil) && selectedPlanet!.user.id == planets[2].user.id {
-                                        selectedPlanet = nil
-                                    } else {
-                                        selectedPlanet = planets[2]
-                                    }
-                                })
-                        }
-                    }
-                    HStack {
-                        if planets.count > 3 && !focusPlanet {
-                            planets[3]
-                                .onTapGesture(perform: { friendPlanetTapped(id: planets[3].user.id)
-                                    if (selectedPlanet != nil) && selectedPlanet!.user.id == planets[3].user.id {
-                                        selectedPlanet = nil
-                                    } else {
-                                        selectedPlanet = planets[3]
-                                    }
-                                })
-                        }
-                        if homeData != nil {
-                            EmptyView()
-                                .alert(isPresented: $showNewRoomNameDialog,
-                                       TextAlert(title: "Create New Room",
-                                                 message: "Input the desired name for the new chat room") { name in
-                                    if let text = name {
-                                        // Text was accepted
-                                        print("Got name: ", text)
-                                        createGroup(name: text)
-                                    } else {
-                                        // The dialog was cancelled
-                                    }
-                                })
-                                .frame(width: 0, height: 0)
-                            
-                            NavigationLink(destination: MyRoomView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups), label: {
-                                PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
-                                    .scaledToFit()
-                                    .frame(width: 80, height: 80)
-                                    .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 20)
-                                    .padding()
+                    if homeData != nil {
+                        EmptyView()
+                            .alert(isPresented: $showNewRoomNameDialog,
+                                   TextAlert(title: "Create New Room",
+                                             message: "Input the desired name for the new chat room") { name in
+                                if let text = name {
+                                    // Text was accepted
+                                    print("Got name: ", text)
+                                    createGroup(name: text)
+                                } else {
+                                    // The dialog was cancelled
+                                }
                             })
-                        }
+                            .frame(width: 0, height: 0)
                         
-                        if planets.count > 4 && !focusPlanet {
-                            planets[4]
-                                .onTapGesture(perform: { friendPlanetTapped(id: planets[4].user.id)
-                                    if (selectedPlanet != nil) && selectedPlanet!.user.id == planets[4].user.id {
-                                        selectedPlanet = nil
-                                    } else {
-                                        selectedPlanet = planets[4]
-                                    }
-                                })
-                        }
+                        NavigationLink(destination: MyRoomView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups), label: {
+                            PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
+                                .scaledToFit()
+                                .frame(width: 80, height: 80)
+                                .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 20)
+                                .padding()
+                        })
                     }
-                    if newGroupMembers.count > 0 && !focusPlanet {
+                    
+                    if newGroupMembers.count > 0 {
                         Button(action: {
                             chatButtonTapped()
                         }, label: {
@@ -232,8 +170,7 @@ struct HomeView: View {
                         })
                     }
                 }
-                Spacer()
-                
+                                
                 if homeData?.groups != nil && homeData?.user != nil {
                     ChatGroupsView(user: homeData!.user, groups: groups)
                         .environmentObject(sessionManager)
@@ -282,24 +219,6 @@ struct HomeView: View {
         }
     }
     
-    // Preform when main planet is tapped
-    private func mainPlanetTapped() {
-        if !focusPlanet {
-            withAnimation {
-                focusPlanet = true
-            }
-        }
-    }
-    
-    // Preform when background (stars) is tapped
-    private func backgroundTapped() {
-        if focusPlanet {
-            withAnimation {
-                focusPlanet = false
-            }
-        }
-    }
-    
     // Get glow color for main planet
     private func glowColor(mood: Int) -> Color {
         switch mood {
@@ -329,15 +248,7 @@ struct HomeView: View {
         }
     }
     
-    private func friendPlanetTapped(id: String) {
-        // Add/remove friend to group memebrs
-        if newGroupMembers.contains(id) {
-            newGroupMembers.remove(at: newGroupMembers.firstIndex(of: id) ?? 0)
-        } else {
-            newGroupMembers.append(id)
-        }
-        print(newGroupMembers.count)
-    }
+    
     
     private func chatButtonTapped() {
         if newGroupMembers.count > 0 {
