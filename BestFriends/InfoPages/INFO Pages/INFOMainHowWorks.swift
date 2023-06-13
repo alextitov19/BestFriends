@@ -35,76 +35,28 @@ struct INFOMainHowWorks: View {
             
             
             VStack {
-                
-                Text("Now, you can let the outside of you")
-                    .font(.system(size: 19))
-                    .italic()
-                    .foregroundColor(ColorManager.grey4)
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
-                
-                Text("match the inside of you on social media")
-                    .font(.system(size: 19))
-                    .italic()
-                    .foregroundColor(ColorManager.grey4)
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
-                
-                Spacer()
-                    .frame(height: 10)
-                //
-                //                Text("super safe & protective with five")
-                //                    .font(.system(size: 17))
-                //                    .italic()
-                //                    .foregroundColor(ColorManager.grey1)
-                //                    .fontWeight(.regular)
-                //                    .multilineTextAlignment(.center)
-                
-                //                Spacer()
-                //                    .frame(height: 10)
-                //
-//                Text("BestFriends")
-//                    .font(.system(size: 35))
-//                    .foregroundColor(ColorManager.purple4)
-//                    .fontWeight(.regular)
-//                    .multilineTextAlignment(.center)
-                VStack {
-                    
-                    
-                    Text("sharing")
-                        .italic()
-                        .font(.system(size: 20))
-                        .fontWeight(.regular)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.purple3)
-                    
-                    
-                    Text("Emotional Moments")
-                        .font(.system(size: 25))
-                        .fontWeight(.regular)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.purple5)
-                    
-                    Text("with my 5 BFFs")
-                        .font(.system(size: 20))
-                        .italic()
-                        .fontWeight(.regular)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.purple3)
-                    
                     VStack {
                         HStack {
-                            
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .foregroundColor(ColorManager .purple2)
-                                .frame(width: 40, height: 40)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                                .opacity(0.95)
-                            
-                            
-                            
+                            ZStack  {
+                                Image(systemName: "heart.fill")
+                                    .resizable()
+                                    .foregroundColor(ColorManager .purple3)
+                                    .frame(width: 175, height: 125)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                                    .opacity(0.95)
+                                Spacer()
+                                    .frame(height: 20)
+                                
+                                Image(systemName: "heart.fill")
+                                    .resizable()
+                                    .foregroundColor(ColorManager .purple2)
+                                    .frame(width: 125, height: 100)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                                    .opacity(0.95)
+                                
+                            }
                             
                             
                         }
@@ -348,21 +300,21 @@ struct INFOMainHowWorks: View {
                         //                            }
                         //                        )}
                         
-                        
-                        Button(action: {
-                            sessionManager.showLogin()
-                        },
-                               label: {
-                            Image("home-alt2")
-                                .frame(width: 50, height: 25)
-                                .foregroundColor(.white)
-                                .font(.system(size: 20))
-                                .background(Color .black)
-                                .cornerRadius(15)
-                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                .opacity(0.70)
-                            
-                        })
+//
+//                        Button(action: {
+//                            sessionManager.showLogin()
+//                        },
+//                               label: {
+//                            Image("home-alt2")
+//                                .frame(width: 50, height: 25)
+//                                .foregroundColor(.white)
+//                                .font(.system(size: 20))
+//                                .background(Color .black)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                                .opacity(0.70)
+//
+//                        })
                         
                         //            func shareButtonTapped() {
                         ////                sendMessage()
@@ -386,4 +338,4 @@ struct INFOMainHowWorks: View {
         
     }
     
-}
+
