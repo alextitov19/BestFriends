@@ -118,47 +118,47 @@ struct PlanetActionsView: View {
         
         HStack {
             VStack {
-//                NavigationLink(destination: BuiltByTeensView(user: user, friends: friends),
-//                               label: {
-//                    ZStack {
-//                        Circle()
-//                            .frame(width: 110, height: 110)
-//                            .foregroundColor(ColorManager.purple2)
-//                            .shadow(color: .white, radius: 3, x: 4, y: 4)
-//                            .glow(color: ColorManager.purple4, radius: 7)
-//                            .opacity(0.80)
-//
-//                        VStack {
-//                            Text("Cool\nStuff")
-//                                .foregroundColor(ColorManager .purple3)
-//                                .font(.system(size: 20, weight: .regular))
-//                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                .opacity(0.70)
-//                        }
-//                    }
-//                })
+                NavigationLink(destination: BuiltByTeensView(user: user, friends: friends),
+                               label: {
+                    ZStack {
+                        Circle()
+                            .frame(width: 110, height: 110)
+                            .foregroundColor(ColorManager.purple2)
+                            .shadow(color: .white, radius: 3, x: 4, y: 4)
+                            .glow(color: ColorManager.purple4, radius: 7)
+                            .opacity(0.80)
+
+                        VStack {
+                            Text("Cool\nStuff")
+                                .foregroundColor(ColorManager .purple3)
+                                .font(.system(size: 20, weight: .regular))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                .opacity(0.70)
+                        }
+                    }
+                })
                 
                 Spacer()
                     .frame(height: 95)
 
-//                NavigationLink(destination:  EmptyView(), label: {
-//                    ZStack {
-//                        Circle()
-//                            .frame(width: 110, height: 110)
-//                            .foregroundColor(ColorManager.purple2)
-//                            .shadow(color: .white, radius: 3, x: 4, y: -4)
-//                            .glow(color: ColorManager.purple4, radius: 7)
-//                            .opacity(0.80)
-//
-//                        VStack {
-//                            Text("open \ncircle")
-//                                .foregroundColor(ColorManager .purple3)
-//                                .font(.system(size: 20, weight: .regular))
-//                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                .opacity(0.70)
-//                        }
-//                    }
-//                })
+                NavigationLink(destination:  EmptyView(), label: {
+                    ZStack {
+                        Circle()
+                            .frame(width: 110, height: 110)
+                            .foregroundColor(ColorManager.purple2)
+                            .shadow(color: .white, radius: 3, x: 4, y: -4)
+                            .glow(color: ColorManager.purple4, radius: 7)
+                            .opacity(0.80)
+
+                        VStack {
+                            Text("open \ncircle")
+                                .foregroundColor(ColorManager .purple3)
+                                .font(.system(size: 20, weight: .regular))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                .opacity(0.70)
+                        }
+                    }
+                })
            }
 //
             NavigationLink(destination: MyRoomView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
@@ -181,26 +181,26 @@ struct PlanetActionsView: View {
             })
             
             VStack {
-//
-//                NavigationLink(destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
-//                               label: {
-//                    ZStack {
-//                        Circle()
-//                            .frame(width: 110, height: 110)
-//                            .foregroundColor(ColorManager.purple2)
-//                            .shadow(color: .white, radius: 3, x: -4, y: 4)
-//                            .glow(color: Color.green, radius: 8)
-//                            .opacity(0.80)
-//
-//                        VStack {
-//                            Text("+ \nFriends")
-//                                .foregroundColor(ColorManager .purple3)
-//                                .font(.system(size: 20, weight: .regular))
-//                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                .opacity(0.70)
-//                        }
-//                    }
-//                })
+
+                NavigationLink(destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
+                               label: {
+                    ZStack {
+                        Circle()
+                            .frame(width: 110, height: 110)
+                            .foregroundColor(ColorManager.purple2)
+                            .shadow(color: .white, radius: 3, x: -4, y: 4)
+                            .glow(color: Color.green, radius: 8)
+                            .opacity(0.80)
+
+                        VStack {
+                            Text("+ \nFriends")
+                                .foregroundColor(ColorManager .purple3)
+                                .font(.system(size: 20, weight: .regular))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                .opacity(0.70)
+                        }
+                    }
+                })
 
                 Spacer()
                     .frame(height: 95)
@@ -224,13 +224,13 @@ struct PlanetActionsView: View {
 //                                .font(.system(size: 20, weight: .regular))
 //                                .shadow(color: .black, radius: 1, x: 0, y: 1)
 //                                .opacity(0.70)
-//                            
-//                            
-//                            
+//
+//
+//
 //                        }
 //                    }
 //                })
-//                            
+//
                             
                             
                            

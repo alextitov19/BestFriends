@@ -155,6 +155,10 @@ struct INFOMainHowWorks: View {
                         
                         HStack {
                             ZStack {
+                                
+                                
+                                
+                                
                                 Image(systemName: "rectangle.fill")
                                     .resizable()
                                     .foregroundColor(ColorManager .purple2)
@@ -169,7 +173,7 @@ struct INFOMainHowWorks: View {
                             NavigationLink(
                                 destination: InfoCreateChatRm(user: user),
                                 label: {
-                                    Text("'Bad Day' -> quiet alerts")
+                                    Text("'Bad Day' Request CareHearts")
                                         .fontWeight(.thin)
                                         .frame(width: 300, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -203,7 +207,7 @@ struct INFOMainHowWorks: View {
                             NavigationLink(
                                 destination: InfoInsideChat(user: user),
                                 label: {
-                                    Text("sending -> 'Care Hearts'")
+                                    Text("Sending CareHearts")
                                         .fontWeight(.thin)
                                         .frame(width: 300, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -238,7 +242,7 @@ struct INFOMainHowWorks: View {
                                 
                                 destination: InfoSilence(user: user),
                                 label: {
-                                    Text("safe & sound -> 'My Room'")
+                                    Text("MyRoom")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
                                         .frame(width: 300, height: 40)
@@ -273,10 +277,10 @@ struct INFOMainHowWorks: View {
                                 
                                 destination: SettingsNotificationsView(user: user),
                                 label: {
-                                    Text("Drama Central")
+                                    Text("")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
-                                        .frame(width: 200, height: 40)
+                                        .frame(width: 300, height: 40)
                                         .font(.system(size: 25))
                                         .background(ColorManager.purple3)
                                         .cornerRadius(10)
@@ -306,9 +310,9 @@ struct INFOMainHowWorks: View {
                             NavigationLink(
                                 destination: InfoPushNotifications(user: user),
                                 label: {
-                                    Text("say something Nice")
+                                    Text("Streaks -> Sending CareHearts")
                                         .fontWeight(.thin)
-                                        .frame(width: 200, height: 40)
+                                        .frame(width: 300, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 23))
                                         .background(ColorManager.purple3)
