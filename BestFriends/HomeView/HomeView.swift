@@ -122,7 +122,9 @@ struct HomeView: View {
                     Spacer()
                 }
                 
-                FriendPlanetsView(planets: $planets, selectedPlanets: $newGroupMembers, inviteClicked: $inviteClicked)
+                if homeData != nil {
+                    FriendPlanetsView(planets: $planets, selectedPlanets: $newGroupMembers, inviteClicked: $inviteClicked)
+                }
                 
                 if homeData != nil {
                     EmptyView()
