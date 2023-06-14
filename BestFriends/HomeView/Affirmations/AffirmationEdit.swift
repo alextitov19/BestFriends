@@ -11,6 +11,7 @@ struct AffirmationEdit: View {
     
     @State var affirmationDictionary: [String: String]
     @State private var selectedItems: Set<String> = []
+    @State private var showAlert = false
     
     var body: some View {
         ZStack{
@@ -51,6 +52,8 @@ struct AffirmationEdit: View {
                     
                     // Print the modified dictionary for demonstration
                     print(affirmationDictionary)
+                    
+                    showAlert = true
                 }) {
                     Text("Save")
                         .foregroundColor(.white)
@@ -60,6 +63,9 @@ struct AffirmationEdit: View {
                 }
                 .padding(.bottom, 20)
             }
+        }
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text("Editing and letting your friends write your affirmations \n will coming soon!"), message: nil, dismissButton: .default(Text("OK")))
         }
     }
 }
