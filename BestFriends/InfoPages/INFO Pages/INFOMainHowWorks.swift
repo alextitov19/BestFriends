@@ -36,23 +36,29 @@ struct INFOMainHowWorks: View {
             
             VStack {
                 VStack {
+                    
+                    Button(action: {
+                        sessionManager.showLogin()
+                    },
+                           label: {
+                        Image("home-alt2")
+                            .frame(width: 50, height: 25)
+                            .foregroundColor(.white)
+                            .font(.system(size: 20))
+                            .background(ColorManager .grey2)
+                            .cornerRadius(15)
+                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                            .opacity(0.70)
+                        
+                    })
+                    
+                    Spacer()
+                        .frame(height: 20)
+                    
                     HStack {
                         ZStack  {
                             
-                            Button(action: {
-                                sessionManager.showLogin()
-                            },
-                                   label: {
-                                Image("home-alt2")
-                                    .frame(width: 50, height: 25)
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 20))
-                                    .background(ColorManager .grey2)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                    .opacity(0.70)
-                                
-                            })
+                           
                             
                             Image(systemName: "heart.fill")
                                 .resizable()
@@ -61,6 +67,7 @@ struct INFOMainHowWorks: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
                                 .opacity(0.95)
+                            
                             Spacer()
                                 .frame(height: 20)
                             
@@ -84,13 +91,7 @@ struct INFOMainHowWorks: View {
                     Spacer()
                         .frame(height: 20)
                     
-                    //
-                    //                        Text("Difficult Days")
-                    //                            .font(.system(size: 27, weight: .bold))
-                    //                            .foregroundColor(ColorManager .grey3)
-                    //                            .shadow(color: .purple, radius: 1, x: 0, y: 1)
-                    //                            .opacity(0.50)
-                    //                            .multilineTextAlignment(.center)
+                 
                     
                     
                     
@@ -213,8 +214,12 @@ struct INFOMainHowWorks: View {
                         .frame(height: 15)
                     
                     VStack {
+                        
+                        
                         HStack {
                             ZStack {
+                                
+                            }
                                 
                             }
                             
@@ -260,4 +265,4 @@ struct INFOMainHowWorks: View {
         
         
     }
-}
+
