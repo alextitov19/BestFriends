@@ -10,6 +10,7 @@ import SwiftUI
 struct JournalsView: View {
     
     @State private var user = User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: "", chatBackground: "")
+    @State private var atmosphere = Atmosphere(id: "", planet: 0, mood: 0, moodLogs: [])
     @State private var newCategory = ""
     @State private var selectedCategory = ""
     @State private var selectCategoryIsPresented = false
@@ -86,6 +87,7 @@ struct JournalsView: View {
         journals = []
         RestApi.instance.getHomeData().then({ result in
             user = result.user
+            atmosphere = result.atmosphere
             print("Got user: ", result)
             categories = user.journalCategories ?? []
             if categories.count > 0 && selectedCategory.isEmpty {
@@ -140,8 +142,28 @@ struct JournalsView: View {
         RestApi.instance.createJournal(cj: cj).then({ response in
             if response == 200 {
                 print("Successfully added a journal")
+                if newJournalMood < 0 {
+                    updateMood(mood: 3)
+                } else {
+                    updateMood(mood: 7)
+                }
                 loadData()
             }
+        })
+    }
+    
+    private func updateMood(mood: Int) {
+        RestApi.instance.createMoodLog(mood: mood, summary: "", friends: user.friends!).then({ moodLog in
+            var m = atmosphere.moodLogs ?? []
+            m.append(moodLog.id)
+            let atm = Atmosphere(id: atmosphere.id, planet: atmosphere.planet, mood: mood, moodLogs: m)
+            RestApi.instance.updateAtmosphere(atmosphere: atm).then({ response in
+                if response == 200 {
+                    print("Successfully updated atmosphere")
+                } else {
+                    print("Failed to update atmosphere")
+                }
+            })
         })
     }
     
