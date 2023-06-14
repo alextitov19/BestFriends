@@ -30,20 +30,15 @@ struct BreathInView: View {
         ZStack {
               
  
-//
-//            Image("settingsBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
-            
-            ColorManager.grey4
-                  .ignoresSafeArea()
-
-           
+            ColorManager.purple7
+                .opacity(0.3)
+                .ignoresSafeArea()
+                
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-            
+           
+       
             
             VStack {
                 ZStack {
