@@ -13,9 +13,8 @@ struct AffirmationMain: View {
         "Heart": "I'm pretty",
         "Square": "Exam - I got this",
         "Star": "I'm always there for BFFs",
-        "Hexagon": "I support w/out judgement"
-//        "Circle": "I look cute today",
-//        "Circle": "I look cute today",
+        "Hexagon": "I support BFFs w/out judgement"
+       
         // This should be read from backEnd
     ]
     
