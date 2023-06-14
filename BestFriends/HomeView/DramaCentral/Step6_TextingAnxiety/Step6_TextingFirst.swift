@@ -73,11 +73,7 @@ struct Step6_TextingFirst: View {
                     Spacer()
                         .frame(height: 20)
                     
-                    Text("Send Push Notification in Step 5")
-                    .font(.system(size: 20, weight: .thin))
-                    .italic()
-                    .foregroundColor(Color.purple)
-                    .multilineTextAlignment(.center)
+                   
                     
                     VStack {
                         Spacer()
@@ -90,10 +86,10 @@ struct Step6_TextingFirst: View {
                                 
                                 destination: Step2_FightLandingView(user: user, friends: friends),
                                 label: {
-                                    Text("Next_Step 5")
+                                    Text("Send push notification")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
-                                        .frame(width: 200, height: 40)
+                                        .frame(width: 310, height: 40)
                                         .font(.system(size: 25))
                                         .background(ColorManager.purple3)
                                         .cornerRadius(15)
