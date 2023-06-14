@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DA887312A3A18C000759A1F /* AffirmationMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA8872F2A3A18C000759A1F /* AffirmationMain.swift */; };
+		2DA887322A3A18C000759A1F /* AffirmationEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA887302A3A18C000759A1F /* AffirmationEdit.swift */; };
 		39D0524EB9F9947C28B9D613 /* Pods_BestFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */; };
 		622F68F9289C6B76001D1997 /* HorizonThoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622F68F8289C6B75001D1997 /* HorizonThoughts.swift */; };
 		62319AAD284A788000CA0359 /* FG_Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62319AAC284A788000CA0359 /* FG_Video.swift */; };
@@ -301,6 +303,8 @@
 
 /* Begin PBXFileReference section */
 		16E04433DE68818589291B02 /* Pods-BestFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.debug.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.debug.xcconfig"; sourceTree = "<group>"; };
+		2DA8872F2A3A18C000759A1F /* AffirmationMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AffirmationMain.swift; sourceTree = "<group>"; };
+		2DA887302A3A18C000759A1F /* AffirmationEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AffirmationEdit.swift; sourceTree = "<group>"; };
 		622F68F8289C6B75001D1997 /* HorizonThoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonThoughts.swift; sourceTree = "<group>"; };
 		62319AAC284A788000CA0359 /* FG_Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FG_Video.swift; sourceTree = "<group>"; };
 		62372A142884D57500CAB75C /* HorizonGoalChoices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizonGoalChoices.swift; sourceTree = "<group>"; };
@@ -1355,6 +1359,8 @@
 		CFB65BC72A37EA8F00E98A8B /* Affirmations */ = {
 			isa = PBXGroup;
 			children = (
+				2DA887302A3A18C000759A1F /* AffirmationEdit.swift */,
+				2DA8872F2A3A18C000759A1F /* AffirmationMain.swift */,
 			);
 			path = Affirmations;
 			sourceTree = "<group>";
@@ -1767,6 +1773,7 @@
 				CFCD4BAF2965CE5C00BBE43A /* InfoComingChat.swift in Sources */,
 				CFDB1509285816AF00155CEE /* FaceTimeCall.swift in Sources */,
 				CF6499E1294E1F6C003BBF83 /* INFOPreload3.swift in Sources */,
+				2DA887322A3A18C000759A1F /* AffirmationEdit.swift in Sources */,
 				7A7A23B42803D62700B87613 /* WebSocket.swift in Sources */,
 				CF417548296FA55100898E2D /* INFOMainHowWorks2.swift in Sources */,
 				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
@@ -1923,6 +1930,7 @@
 				7A8F3D7B2A32B75800BC2CF4 /* JournalModels.swift in Sources */,
 				CF2DBCEC2853DAF7008616A3 /* PickMediator.swift in Sources */,
 				CF72D6FB2921AFE900EDDDA6 /* SmileVaultPreload.swift in Sources */,
+				2DA887312A3A18C000759A1F /* AffirmationMain.swift in Sources */,
 				CFC0EE6929022560006B3FAA /* ShaylaPage.swift in Sources */,
 				CF2EE6F629516C7000B1B16D /* InfoCreateGroupChatRooms.swift in Sources */,
 				CFE6F024297B82A8004397A3 /* SendHomie.swift in Sources */,
