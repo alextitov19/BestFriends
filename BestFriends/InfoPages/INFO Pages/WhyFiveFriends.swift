@@ -55,32 +55,28 @@ struct WhyFiveFriends: View {
             VStack {
                 
                 
-                
-                
-                Text("Over 70% of the 500 teens worldwide")
+                Text("We worked under the National Science Foundation's iCAP program throught George Washington and George Mason Universities where we conducted over 120 (one-on-one) interviews and over 500 surveys of teens worldwide. ")
                     .font(.system(size: 17, weight: .bold))
                     .foregroundColor(ColorManager .grey1)
                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                     .opacity(0.50)
                     .multilineTextAlignment(.center)
                 
-                
-                Text("we surveyed wanted 5 or less")
-                    .font(.system(size: 17, weight: .bold))
-                    .foregroundColor(ColorManager .grey1)
-                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    .opacity(0.50)
-                    .multilineTextAlignment(.center)
-                
-                Text("of their closest, most trusted friends")
-                    .font(.system(size: 17, weight: .bold))
-                    .foregroundColor(ColorManager .grey1)
-                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    .opacity(0.50)
-                    .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 20)
+                
+                Text("Over 80% said they preferred 5 or less of their closes, most trusted friends to speak with on difficult days.")
+                    .font(.system(size: 17, weight: .bold))
+                    .foregroundColor(ColorManager .grey1)
+                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.50)
+                    .multilineTextAlignment(.center)
+                
+                
+               
+                
+             
                 
                 //
                 //
@@ -96,77 +92,77 @@ struct WhyFiveFriends: View {
                 //                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 //                        }
                 
-                Text("Teens prefer fewer more personal")
-                //                    .font(.system(size: 25, weight: .bold))
-                    .font(.system(size: 35, weight: .bold))
-                    .foregroundColor(ColorManager .grey1)
-                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    .opacity(0.50)
-                //                    .foregroundColor(ColorManager.purple5)
-                //                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                
-                
-                Text("connections over more, often toxic, ones")
-                //                    .font(.system(size: 25, weight: .bold))
-                    .font(.system(size: 35, weight: .bold))
-                    .foregroundColor(ColorManager .grey1)
-                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    .opacity(0.50)
-                //                    .foregroundColor(ColorManager.purple5)
-                //                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                
-                
-                
-                
-                
-                
-                
-                VStack {
-                    
-                    
-                    Spacer()
-                        .frame(height: 50)
-                    
-                    
-                    NavigationLink(
-                        destination: INFOPreload4(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
-                        label: {
-                            Text("Building a mixed friend group")
-                                .fontWeight(.thin)
-                                .frame(width: 310, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager.pmbc_green)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
-                    
-                    Text("However, if you build a mixed")
-                    //                    .font(.system(size: 25, weight: .bold))
-                        .font(.system(size: 17, weight: .bold))
-                        .foregroundColor(Color .white)
-                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                        .opacity(0.50)
-                        .multilineTextAlignment(.center)
-                    
-                    Text("group of friends, you may")
-                    //                    .font(.system(size: 25, weight: .bold))
-                        .font(.system(size: 17, weight: .bold))
-                        .foregroundColor(ColorManager .grey1)
-                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                        .opacity(0.50)
-                        .multilineTextAlignment(.center)
-                    
-                    Text("invite up to 7 total friends.")
-                    //                    .font(.system(size: 25, weight: .bold))
-                        .font(.system(size: 17, weight: .bold))
-                        .foregroundColor(ColorManager .grey1)
-                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                        .opacity(0.50)
-                        .multilineTextAlignment(.center)
-                    
+//                Text("Teens prefer fewer more personal")
+//                //                    .font(.system(size: 25, weight: .bold))
+//                    .font(.system(size: 35, weight: .bold))
+//                    .foregroundColor(ColorManager .grey1)
+//                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                    .opacity(0.50)
+//                //                    .foregroundColor(ColorManager.purple5)
+//                //                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
+//
+//
+//                Text("connections over more, often toxic, ones")
+//                //                    .font(.system(size: 25, weight: .bold))
+//                    .font(.system(size: 35, weight: .bold))
+//                    .foregroundColor(ColorManager .grey1)
+//                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                    .opacity(0.50)
+//                //                    .foregroundColor(ColorManager.purple5)
+//                //                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
+//
+//
+//
+//
+//
+//
+//
+//                VStack {
+//
+//
+//                    Spacer()
+//                        .frame(height: 50)
+//
+//
+//                    NavigationLink(
+//                        destination: INFOPreload4(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
+//                        label: {
+//                            Text("Building a mixed friend group")
+//                                .fontWeight(.thin)
+//                                .frame(width: 310, height: 30)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 25))
+//                                .background(ColorManager.pmbc_green)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        })
+//
+//                    Text("However, if you build a mixed")
+//                    //                    .font(.system(size: 25, weight: .bold))
+//                        .font(.system(size: 17, weight: .bold))
+//                        .foregroundColor(Color .white)
+//                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                        .opacity(0.50)
+//                        .multilineTextAlignment(.center)
+//
+//                    Text("group of friends, you may")
+//                    //                    .font(.system(size: 25, weight: .bold))
+//                        .font(.system(size: 17, weight: .bold))
+//                        .foregroundColor(ColorManager .grey1)
+//                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                        .opacity(0.50)
+//                        .multilineTextAlignment(.center)
+//
+//                    Text("invite up to 7 total friends.")
+//                    //                    .font(.system(size: 25, weight: .bold))
+//                        .font(.system(size: 17, weight: .bold))
+//                        .foregroundColor(ColorManager .grey1)
+//                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                        .opacity(0.50)
+//                        .multilineTextAlignment(.center)
+//
                     
                     
                 }
@@ -175,7 +171,7 @@ struct WhyFiveFriends: View {
         }
     }
     
-}
+
     
 
 
