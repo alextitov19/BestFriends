@@ -17,18 +17,12 @@ struct Step6_TextingFirst: View {
     var body: some View {
         ZStack {
             
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
+
  
             ColorManager.grey2
                   .ignoresSafeArea()
           
-            // Stars animation...
-            AdPlayerView(name: "backgroundAnimation")
-                .ignoresSafeArea()
-                .blendMode(.screen)
+      
             
             VStack {
            
