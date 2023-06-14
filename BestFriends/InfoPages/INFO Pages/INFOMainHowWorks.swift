@@ -38,6 +38,22 @@ struct INFOMainHowWorks: View {
                 VStack {
                     HStack {
                         ZStack  {
+                            
+                            Button(action: {
+                                sessionManager.showLogin()
+                            },
+                                   label: {
+                                Image("home-alt2")
+                                    .frame(width: 50, height: 25)
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 20))
+                                    .background(ColorManager .grey2)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                    .opacity(0.70)
+                                
+                            })
+                            
                             Image(systemName: "heart.fill")
                                 .resizable()
                                 .foregroundColor(ColorManager .purple3)
@@ -95,9 +111,9 @@ struct INFOMainHowWorks: View {
                         NavigationLink(
                             destination: InviteView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
-                                Text("Invite Friends ->tap + planet")
+                                Text("Invite Friends \nTap (+) planet on homepage")
                                     .fontWeight(.thin)
-                                    .frame(width: 310, height: 40)
+                                    .frame(width: 310, height: 60)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 25))
                                     .background(ColorManager.purple3)
@@ -111,12 +127,7 @@ struct INFOMainHowWorks: View {
                     
                     Spacer()
                         .frame(height: 15)
-                    //                        Text("Helping Friends")
-                    //                            .font(.system(size: 27, weight: .bold))
-                    //                            .foregroundColor(ColorManager .grey3)
-                    //                            .shadow(color: .purple, radius: 1, x: 0, y: 1)
-                    //                            .opacity(0.50)
-                    //                            .multilineTextAlignment(.center)
+                  
                     
                     HStack {
                         ZStack {
@@ -145,15 +156,7 @@ struct INFOMainHowWorks: View {
                     
                     HStack {
                         ZStack {
-                            //                                Image(systemName: "rectangle.fill")
-                            //                                    .resizable()
-                            //                                    .foregroundColor(ColorManager .purple2)
-                            //                                    .frame(width: 40, height: 40)
-                            //                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            //                                //                                .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                            //                                    .opacity(0.95)
-                            //
-                            //                                Image("IconNiceNew40")
+                     
                         }
                         
                         
@@ -163,10 +166,10 @@ struct INFOMainHowWorks: View {
                             //                                destination: InfoSilence(user: user),
                             destination: MyRoomView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
-                                Text("MyRoom ->Tap your planet")
+                                Text("My Room \nTap center planet on hmpage")
                                     .fontWeight(.thin)
                                     .foregroundColor(Color.white)
-                                    .frame(width: 310, height: 40)
+                                    .frame(width: 310, height: 60)
                                     .font(.system(size: 25))
                                     .background(ColorManager.purple3)
                                     .cornerRadius(10)
@@ -181,16 +184,7 @@ struct INFOMainHowWorks: View {
                     
                     HStack {
                         ZStack {
-                            //                                Image(systemName: "rectangle.fill")
-                            //                                    .resizable()
-                            //                                    .foregroundColor(ColorManager .purple2)
-                            //                                    .frame(width: 40, height: 40)
-                            //                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            //
-                            //                                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                            //                                    .opacity(0.95)
-                            //
-                            //                                Image("IconFightNew40")
+                         
                         }
                         
                         
@@ -210,6 +204,11 @@ struct INFOMainHowWorks: View {
                             }
                         )}
                     //
+                    
+                    
+                    
+                    
+                    
                     Spacer()
                         .frame(height: 15)
                     
@@ -219,10 +218,10 @@ struct INFOMainHowWorks: View {
                                 
                             }
                             
-                            NavigationLink(
-                                destination: InfoPushNotifications(user: user),
-                                label: {
-                                    Text("")
+                            Link(destination: URL(string: "https://socialtechlabs.com/beta-tester-_-bestfriends-app/")!) {
+                                
+                                HStack {
+                                    Text("Help beta test BestFriends")
                                         .fontWeight(.thin)
                                         .frame(width: 300, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -230,119 +229,35 @@ struct INFOMainHowWorks: View {
                                         .background(ColorManager.purple3)
                                         .cornerRadius(10)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    //                            NavigationLink(
-                                    //
-                                    //                                destination: InfoSilence(user: user),
-                                    //                                label: {
-                                    //                                    Text("my Room")
-                                    //                                        .fontWeight(.thin)
-                                    //                                        .foregroundColor(Color.white)
-                                    //                                        .frame(width: 200, height: 40)
-                                    //                                        .font(.system(size: 25))
-                                    //                                        .background(ColorManager.purple3)
-                                    //                                        .cornerRadius(10)
-                                    //                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                    
+                                    
+                                    
+                                    
                                     
                                 }
-                            )}
-                        
-                        Spacer()
-                            .frame(height: 25)
-                        
-                        Button(action: {
-                            sessionManager.showLogin()
-                        },
-                               label: {
-                            Image("home-alt2")
-                                .frame(width: 50, height: 25)
-                                .foregroundColor(.white)
-                                .font(.system(size: 20))
-                                .background(ColorManager .grey2)
-                                .cornerRadius(15)
-                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                .opacity(0.70)
+                            }
                             
-                        })
+                            Spacer()
+                                .frame(height: 25)
+                            
+                        
+                        }
+                  
+                        
+                        VStack {
+                            
+                       
+                            Spacer()
+                                .frame(height: 80)
+                            
+                        }
                     }
                     
-                    //                    VStack {
-                    //
-                    //                        Spacer()
-                    //                            .frame(height: 50)
-                    //
-                    //                        NavigationLink(
-                    //
-                    //                            destination: InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
-                    //                            label: {
-                    //                                Text("Get Started \nInvite your friends")
-                    //                                    .fontWeight(.light)
-                    //                                    .foregroundColor(Color.white)
-                    //                                    .frame(width: 200, height: 60)
-                    //                                    .font(.system(size: 22))
-                    //                                    .background(ColorManager.pmbc_green)
-                    //                                    .cornerRadius(7)
-                    //                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    //
-                    //                            }
-                    //                        )}
-                    
-                    VStack {
-                        
-                        
-                        
-                        //                        NavigationLink(
-                        //
-                        //                            destination: PlanetBell(user: user),
-                        //                            label: {
-                        //                                Text("How our real-time \nPush Notifications Work")
-                        //                                    .fontWeight(.thin)
-                        //                                    .foregroundColor(Color.white)
-                        //                                    .frame(width: 250, height: 50)
-                        //                                    .font(.system(size: 19))
-                        //                                    .background(ColorManager.pmbc_green)
-                        //                                    .cornerRadius(7)
-                        //                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        //
-                        //                            }
-                        //                        )}
-                        
-                        //
-                        //                        Button(action: {
-                        //                            sessionManager.showLogin()
-                        //                        },
-                        //                               label: {
-                        //                            Image("home-alt2")
-                        //                                .frame(width: 50, height: 25)
-                        //                                .foregroundColor(.white)
-                        //                                .font(.system(size: 20))
-                        //                                .background(Color .black)
-                        //                                .cornerRadius(15)
-                        //                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                        //                                .opacity(0.70)
-                        //
-                        //                        })
-                        
-                        //            func shareButtonTapped() {
-                        ////                sendMessage()
-                        ////
-                        ////                if selectedFriends.count == 0 { return }
-                        ////                for id in selectedFriends {
-                        ////                    for f in friends {
-                        ////                        if f.id == id {
-                        ////                            RestApi.instance.sendPushNotification(title: "BestFriends World FriendGroups", body: "\(user.firstName) sent you 'Nice' message. Take a moment and send one back! Tap friend's planet on Home pg, then tap [Friend said something 'Nice'] from dropdown.", APNToken: f.APNToken)
-                        ////                        }
-                        ////                    }
-                        //                }
-                        Spacer()
-                            .frame(height: 80)
-                        
-                    }
                 }
-                
             }
+            
         }
         
+        
     }
-    
-    
 }
