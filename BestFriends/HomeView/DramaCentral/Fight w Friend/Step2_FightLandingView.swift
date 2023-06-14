@@ -188,6 +188,9 @@ struct Step2_FightLandingView: View {
                                 .fontWeight(.regular)
                                 .foregroundColor(ColorManager .grey4)
                             
+                            Spacer()
+                                .frame(height: 35)
+                            
                             NavigationLink(
                                 destination: TryThis(),
                                 label: {
