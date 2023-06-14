@@ -74,7 +74,15 @@ struct WhyFiveFriends: View {
                     .multilineTextAlignment(.center)
                 
                 
-               
+                Spacer()
+                    .frame(height: 20)
+                
+                Text("In the future depending on user feedback, we may increase the number of friends you are able to invite.")
+                    .font(.system(size: 17, weight: .bold))
+                    .foregroundColor(ColorManager .grey1)
+                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.50)
+                    .multilineTextAlignment(.center)
                 
              
                 
