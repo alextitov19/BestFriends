@@ -20,21 +20,11 @@ struct Step5_Why: View {
             ColorManager.grey2
                   .ignoresSafeArea()
           
-            // Stars animation...
-            AdPlayerView(name: "backgroundAnimation")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
+       
   
             
             VStack {
-                Text("Step 3 (Looking Inside)")
-                    .font(.system(size: 17, weight: .ultraLight))
-                    .foregroundColor(Color.purple)
-                    
+               
                 Spacer()
                     .frame(height: 20)
                 
@@ -93,10 +83,10 @@ struct Step5_Why: View {
                     NavigationLink(
                         destination: Step6_TextingFirst(user: user, friends: friends),
                         label: {
-                            Text("Next_Step 4")
+                            Text("Ready to reach out?")
                                 .fontWeight(.thin)
                                 .foregroundColor(Color.white)
-                                .frame(width: 200, height: 40)
+                                .frame(width: 310, height: 40)
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
