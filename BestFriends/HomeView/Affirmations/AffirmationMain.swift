@@ -10,10 +10,11 @@ import SwiftUI
 struct AffirmationMain: View {
     
     let affirmationDictionary: [String: String] = [
-        "Star": "I am a star",
-        "Circle": "I am a circle",
-        "Square": "I am a square",
-        "Heart": "I am a heart"
+        "Heart": "I am pretty",
+        "Circle": "I look cute today",
+        "Square": "I am smart in school",
+        "Star": "I am always around when my friends are having a difficult day",
+        "Hexagon": "It is important to me to be a supportive friend without judgement"
         // This should be read from backEnd
     ]
 
@@ -62,11 +63,15 @@ struct AffirmationMain: View {
                     case "Square":
                         Rectangle()
                             .frame(width: 100, height: 100)
-                            .foregroundColor(.white)
+                            .foregroundColor(.green)
                     case "Heart":
                         Image(systemName: "heart.fill")
                             .font(.system(size: 100))
                             .foregroundColor(.red)
+                    case "Hexagon":
+                        HexagonShape()
+                                    .frame(width: 100, height: 100)
+                                    .foregroundColor(.blue)
                     default:
                         Text(currentShape)
                             .font(.largeTitle)
@@ -94,5 +99,30 @@ struct AffirmationMain: View {
 struct AffirmationMain_Previews: PreviewProvider {
     static var previews: some View {
         AffirmationMain()
+    }
+}
+
+struct HexagonShape: Shape {
+    func path(in rect: CGRect) -> Path {
+        let width = rect.width
+        let height = rect.height
+        
+        let sideLength = min(width, height)
+        let centerX = rect.midX
+        let centerY = rect.midY
+        
+        var path = Path()
+        
+        path.move(to: CGPoint(x: centerX + sideLength * cos(0), y: centerY + sideLength * sin(0)))
+        
+        for angle in stride(from: 0, to: CGFloat.pi * 2, by: CGFloat.pi / 3) {
+            let x = centerX + sideLength * cos(angle)
+            let y = centerY + sideLength * sin(angle)
+            path.addLine(to: CGPoint(x: x, y: y))
+        }
+        
+        path.closeSubpath()
+        
+        return path
     }
 }
