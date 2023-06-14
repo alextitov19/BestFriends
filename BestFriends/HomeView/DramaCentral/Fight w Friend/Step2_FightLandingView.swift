@@ -186,7 +186,7 @@ struct Step2_FightLandingView: View {
                                 .font(.system(size: 15, weight: .bold))
                                 .italic()
                                 .fontWeight(.regular)
-                                .foregroundColor(Color.black)
+                                .foregroundColor(ColorManager .grey4)
                             
                             NavigationLink(
                                 destination: TryThis(),
@@ -205,12 +205,12 @@ struct Step2_FightLandingView: View {
                         
                         Spacer()
                             .frame(height: 35)
-                        
-                        Text("(When you're ready try to set a time to talk)")
-                            .font(.system(size: 15))
-                            .italic()
-                            .fontWeight(.regular)
-                            .foregroundColor(Color.black)
+//
+//                        Text("(When you're ready try to set a time to talk)")
+//                            .font(.system(size: 15))
+//                            .italic()
+//                            .fontWeight(.regular)
+//                            .foregroundColor(Color.black)
                         
                         //                            MARK: New [Next] button going go HugitOut
                         
