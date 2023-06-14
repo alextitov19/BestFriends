@@ -36,23 +36,16 @@ struct Step3_BreathInviteView: View {
                     
                 HStack {
                     
-                    Text("Calming")
-                        .font(.system(size: 30, weight: .ultraLight))
-                        .foregroundColor(Color.purple)
-                        .kerning(25)
+                  
                 }
                 
                 VStack {
                     
-                    Text("breaths")
-                        .font(.system(size: 30, weight: .bold))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(Color.purple)
-                        .kerning(10)
+                   
                     
                     
                     Spacer()
-                        .frame(height: 1)
+                        .frame(height: 10)
                     
                     VStack {
                         NavigationLink(
@@ -79,9 +72,9 @@ struct Step3_BreathInviteView: View {
                         NavigationLink(
                             destination: Step4_NuclearOption(user: user, friends: friends),
                             label: {
-                                Text("Next_Step 2")
+                                Text("Argument with Friend")
                                     .fontWeight(.thin)
-                                    .frame(width: 200, height: 40)
+                                    .frame(width: 310, height: 60)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 30))
                                     .background(ColorManager.purple3)
