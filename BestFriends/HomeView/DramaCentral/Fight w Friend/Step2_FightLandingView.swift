@@ -205,12 +205,7 @@ struct Step2_FightLandingView: View {
                         
                         Spacer()
                             .frame(height: 35)
-//
-//                        Text("(When you're ready try to set a time to talk)")
-//                            .font(.system(size: 15))
-//                            .italic()
-//                            .fontWeight(.regular)
-//                            .foregroundColor(Color.black)
+
                         
                         //                            MARK: New [Next] button going go HugitOut
                         
@@ -220,15 +215,12 @@ struct Step2_FightLandingView: View {
                         NavigationLink(
                             destination: Step7_TimeToTalk(),
                             label: {
-                                Text("Final Step")
+                                Text("")
                                     .fontWeight(.thin)
                                     .foregroundColor(Color.white)
-                                    .frame(width: 200, height: 40)
+                                    .frame(width: 0, height: 0)
                                     .font(.system(size: 30))
                                     .background(ColorManager.purple3)
-                                
-                                //                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-                                //
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             }
