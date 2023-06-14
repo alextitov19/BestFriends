@@ -196,9 +196,9 @@ struct INFOMainHowWorks: View {
                         
                         NavigationLink(
                             
-                            destination: SettingsNotificationsView(user: user),
+                            destination: InfoPushNotifications(user: user),
                             label: {
-                                Text("")
+                                Text("Streaks with Purpose")
                                     .fontWeight(.thin)
                                     .foregroundColor(Color.white)
                                     .frame(width: 300, height: 40)
@@ -222,7 +222,7 @@ struct INFOMainHowWorks: View {
                             NavigationLink(
                                 destination: InfoPushNotifications(user: user),
                                 label: {
-                                    Text("Streaks ->Sending CareHearts")
+                                    Text("")
                                         .fontWeight(.thin)
                                         .frame(width: 300, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

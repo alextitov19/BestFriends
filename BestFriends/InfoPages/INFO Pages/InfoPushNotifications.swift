@@ -28,13 +28,19 @@ struct InfoPushNotifications: View {
             VStack {
                 
                 
-                Text("Say Something 'Nice'")
+                Text("CareHeart Streaks")
                     .font(.system(size: 35))
             
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey2)
                 
+                Text("show as 'star' next to you planet")
+                    .italic()
+                    .font(.system(size: 15))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.purple4)
                 
                 ZStack {
                     
@@ -43,7 +49,7 @@ struct InfoPushNotifications: View {
                         .resizable()
                         .foregroundColor(ColorManager .purple1)
                         .frame(width: 400, height: 400)
-                        .shadow(color: ColorManager .orange3, radius: 65, x: 30, y: 50)
+                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
                     
                     
@@ -54,25 +60,15 @@ struct InfoPushNotifications: View {
                         Spacer ()
                             .frame(height: 100)
                         
-                        Text("Little tired of toxic 'comments'")
-                            .italic()
+                        Text("BestFriends rewards you for ")
+//                            .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.grey3)
                         
-                        Text("on social media")
-                            .italic()
-                            .font(.system(size: 20))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.grey3)
-                        
-                        Spacer ()
-                            .frame(height: 40)
-                        
-                        Text("Say something 'Nice' to a friend")
-                            .italic()
+                        Text("helping friends on bad days")
+//                            .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -81,19 +77,40 @@ struct InfoPushNotifications: View {
                         Spacer ()
                             .frame(height: 40)
                         
-                        Text("Then watch for")
-                            .italic()
-                            .font(.system(size: 20))
+                        Text("Streaks apply to sending CareHearts")
+//                            .italic()
+                            .font(.system(size: 23))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.grey3)
+                       
+                        Spacer ()
+                            .frame(height: 10)
                         
-                        Text("something 'Nice' back")
+                        Text("(Hugs _ Blowing Kisses _ PhotoPOP)")
                             .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.grey3)
+                            .foregroundColor(ColorManager.purple4)
+                        
+                        
+                        Spacer ()
+                            .frame(height: 40)
+                        
+//                        Text("Then watch for")
+//                            .italic()
+//                            .font(.system(size: 20))
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(ColorManager.grey3)
+//
+//                        Text("something 'Nice' back")
+//                            .italic()
+//                            .font(.system(size: 20))
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(ColorManager.grey3)
                         
                         VStack {
                        
