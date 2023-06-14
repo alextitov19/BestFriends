@@ -105,6 +105,9 @@ struct YouGotThis: View {
                     })
                 
                 
+                Spacer()
+                    .frame(height: 25)
+                
                 Button(action: {
                                                                      sessionManager.showLogin()
                                                                  },

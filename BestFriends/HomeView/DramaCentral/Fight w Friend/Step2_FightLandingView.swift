@@ -209,7 +209,7 @@ struct Step2_FightLandingView: View {
                             )}
                         
                         Spacer()
-                            .frame(height: 35)
+                            .frame(height: 25)
 
                         
                         //                            MARK: New [Next] button going go HugitOut

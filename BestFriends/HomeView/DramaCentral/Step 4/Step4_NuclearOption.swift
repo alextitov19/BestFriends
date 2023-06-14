@@ -120,7 +120,7 @@ struct Step4_NuclearOption: View {
                         })
                     
                     Spacer()
-                        .frame(height: 15)
+                        .frame(height: 25)
                     
                     Button(action: {
                                                  sessionManager.showLogin()

@@ -100,7 +100,7 @@ struct Step5_Why: View {
                     )}
                     
                     Spacer()
-                        .frame(height: 15)
+                        .frame(height: 25)
                     
                     Button(action: {
                                                  sessionManager.showLogin()

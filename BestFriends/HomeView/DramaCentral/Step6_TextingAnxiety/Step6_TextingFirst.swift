@@ -101,7 +101,7 @@ struct Step6_TextingFirst: View {
                             )}
                       
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 25)
                         
                         Button(action: {
                                                      sessionManager.showLogin()
