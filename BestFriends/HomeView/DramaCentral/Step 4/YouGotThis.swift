@@ -16,18 +16,12 @@ struct YouGotThis: View {
     var body: some View {
         ZStack {
             
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
+
             
             ColorManager.grey2
                   .ignoresSafeArea()
           
-//            // Stars animation...
-//            AdPlayerView(name: "backgroundAnimation")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
+
             
             VStack {
                 Text("We get it - you're upset!")
@@ -98,7 +92,7 @@ struct YouGotThis: View {
                 NavigationLink(
                     destination: Step5_Why(user: user, friends: friends),
                     label: {
-                        Text("Next_Step 3")
+                        Text("A look inside")
                             .fontWeight(.thin)
                             .frame(width: 200, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

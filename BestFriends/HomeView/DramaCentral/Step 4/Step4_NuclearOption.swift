@@ -17,24 +17,14 @@ struct Step4_NuclearOption: View {
     var body: some View {
         
         ZStack {
-         
-//        Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
+
             ColorManager.grey2
                   .ignoresSafeArea()
           
-            // Stars animation...
-//            AdPlayerView(name: "backgroundAnimation")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-        
+ 
             VStack {
                 
-                Text("Step 2 (Not Going Nuclear)")
-                    .font(.system(size: 17, weight: .ultraLight))
-                    .foregroundColor(Color.blue)
+            
                     
                 Spacer()
                     .frame(height: 20)
