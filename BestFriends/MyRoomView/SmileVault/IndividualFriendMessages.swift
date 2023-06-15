@@ -111,8 +111,12 @@ struct IndividualFriendMessages: View {
     
     private func loadData() {
         RestApi.instance.getSmileNotes().then({ sn in
-            print("Got smile notes")
-            smileNotes = sn
+            print("Got smile notes: ", sn)
+            for s in sn {
+                if s.senderName == friend.firstName + " " + friend.lastName {
+                    smileNotes.append(s)
+                }
+            }
             smileNotes.sort { $0.favorite && !$1.favorite }
         })
     }
