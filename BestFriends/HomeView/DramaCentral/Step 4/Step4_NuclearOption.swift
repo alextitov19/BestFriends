@@ -33,49 +33,49 @@ struct Step4_NuclearOption: View {
                 
                 ZStack {
                     
-                    Image(systemName: "heart.fill")
-                    
-                        .resizable()
-                        .frame(width: 150, height: 130, alignment: .leading)
-                    
-                        .foregroundColor(Color(hue: 0.714, saturation: 0.411, brightness: 0.626))
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
-                    
-                    
-                    Text("Ok, all that breathing \ndidn't help much. ")
-                        .font(.system(size: 15))
-                        .foregroundColor(.white)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
+//                    Image(systemName: "heart.fill")
+//                    
+//                        .resizable()
+//                        .frame(width: 150, height: 130, alignment: .leading)
+//                    
+//                        .foregroundColor(Color(hue: 0.714, saturation: 0.411, brightness: 0.626))
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
+//                    
+//                    
+//                    Text("Ok, all that breathing \ndidn't help much. ")
+//                        .font(.system(size: 15))
+//                        .foregroundColor(.white)
+//                        .fontWeight(.thin)
+//                        .multilineTextAlignment(.center)
                 }
                 
-                
-                Spacer()
-                    .frame(height: 20)
-                
-                Text("Please, before unfriending")
-                    .font(.system(size: 20))
-                   
-                    .foregroundColor(.white)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-//                    .padding(.horizontal, 0)
-             
-                
-                Text("and making hurtful")
-                    .font(.system(size: 20))
-                  
-                    .foregroundColor(.white)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-//                    .padding(.horizontal, 0)
-                
-                Text("comments on social media")
-                    .font(.system(size: 20))
-                  
-                    .foregroundColor(.white)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
+//
+//                Spacer()
+//                    .frame(height: 20)
+//
+//                Text("Please, before unfriending")
+//                    .font(.system(size: 20))
+//
+//                    .foregroundColor(.white)
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+////                    .padding(.horizontal, 0)
+//
+//
+//                Text("and making hurtful")
+//                    .font(.system(size: 20))
+//
+//                    .foregroundColor(.white)
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+////                    .padding(.horizontal, 0)
+//
+//                Text("comments on social media")
+//                    .font(.system(size: 20))
+//
+//                    .foregroundColor(.white)
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
 //                    .padding(.horizontal, 0)
                
                 VStack {
@@ -89,7 +89,7 @@ struct Step4_NuclearOption: View {
                     Spacer()
                         .frame(height: 20)
                     
-            Text("you were BFF and will be again!")
+            Text("you were friends and will be again!")
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.white)
                         .italic()

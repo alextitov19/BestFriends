@@ -83,11 +83,18 @@ struct Step3_BreathInviteView: View {
                             .foregroundColor(ColorManager .purple5)
                             .multilineTextAlignment(.center)
                        
-                        Text("with your BFF or romantic partner?")
+                        Text("with your friend")
                             .font(.system(size: 25, weight: .bold))
                             .fontWeight(.light)
                             .foregroundColor(ColorManager .purple5)
                             .multilineTextAlignment(.center)
+                        
+                        
+                         Text("or romantic partner?")
+                             .font(.system(size: 25, weight: .bold))
+                             .fontWeight(.light)
+                             .foregroundColor(ColorManager .purple5)
+                             .multilineTextAlignment(.center)
                         
                         Spacer()
                             .frame(height: 10)
