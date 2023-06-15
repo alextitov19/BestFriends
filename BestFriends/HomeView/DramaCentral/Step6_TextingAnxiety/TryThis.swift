@@ -72,7 +72,7 @@ struct TryThis: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("*listen to your favorite songs \n*take a walk \n*watch a funny video \n*watch a movie \n*hangout with friends in Chat")
+                    Text("*listen to your favorite songs \n*take a walk in the park with your dog \n*watch a funny video \n*watch a movie \n*hangout with friends in Chat")
                         .font(.system(size: 17))
                         .italic()
                         .fontWeight(.light)
@@ -81,12 +81,36 @@ struct TryThis: View {
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal, 10)
 
+              
+                    
+                    
                     Spacer()
                         .frame(height: 30)
                     
+                    
+                    Text("Head to My Room")
+                        .font(.system(size: 25))
+                        .foregroundColor(.white)
+                        .fontWeight(.ultraLight)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 0)
+                    
                     VStack {
                         
-
+                                                Button(action: {
+                                                                             sessionManager.showLogin()
+                                                                         },
+                                                                             label: {
+                                                                             Image("home-alt2")
+                                                                                 .frame(width: 50, height: 25)
+                                                                                 .foregroundColor(.white)
+                                                                                 .font(.system(size: 20))
+                                                                                 .background(ColorManager .grey3)
+                                                                                 .cornerRadius(15)
+                                                                                 .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                                                                 .opacity(0.70)
+                        
+                                                                         })
                         Spacer()
                             .frame(height:20)
 

@@ -196,10 +196,10 @@ struct Step2_FightLandingView: View {
                             NavigationLink(
                                 destination: TryThis(),
                                 label: {
-                                    Text("Calm your 'Waiting Anxiety'")
+                                    Text("Calm my \n'Waiting Anxiety'")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
-                                        .frame(width: 310, height: 40)
+                                        .frame(width: 310, height: 80)
                                         .font(.system(size: 27))
                                         .background(ColorManager.pmbc_blue)
                                         .cornerRadius(15)
@@ -219,20 +219,7 @@ struct Step2_FightLandingView: View {
                         
                         
                         
-//                        Button(action: {
-//                                                     sessionManager.showLogin()
-//                                                 },
-//                                                     label: {
-//                                                     Image("home-alt2")
-//                                                         .frame(width: 50, height: 25)
-//                                                         .foregroundColor(.white)
-//                                                         .font(.system(size: 20))
-//                                                         .background(ColorManager .grey3)
-//                                                         .cornerRadius(15)
-//                                                         .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                                                         .opacity(0.70)
-//
-//                                                 })
+
                         
                         NavigationLink(
                             destination: Step7_TimeToTalk(),

@@ -66,7 +66,7 @@ struct Step6_TextingFirst: View {
                     
                    
                     
-                    Text("Now that you typed your \nmessage in Chat let's make \nsure they get it.")
+                    Text("Let's make sure they see your message.")
                     .font(.system(size: 20, weight: .thin))
                     .italic()
                     .foregroundColor(Color.white)
