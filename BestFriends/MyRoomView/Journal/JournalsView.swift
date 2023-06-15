@@ -43,7 +43,7 @@ struct JournalsView: View {
                         categoryTapped()
                     }
                 
-                if !selectedCategory == "" && !selectedCategory == "Tap Me" {
+                if selectedCategory != "" && selectedCategory != "Tap Me" {
                     Button(action: {
                         createNewJournalIsPresented = true
                     }, label: {
