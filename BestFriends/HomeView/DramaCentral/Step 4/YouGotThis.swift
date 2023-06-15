@@ -25,50 +25,41 @@ struct YouGotThis: View {
           
 
             
-            VStack {
-                Text("We get it - you're upset!")
-                    .font(.system(size: 25))
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-                Spacer()
-                    .frame(height: 15)
-                
-                Text("but,")
-                    .font(.system(size: 30))
-                    .fontWeight(.thin)
-                    .foregroundColor(Color.white)
-                Text("Sharp Words")
-                    .font(.system(size: 60))
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(Color.purple)
+            
+     
         
-                Spacer()
-                    .frame(height: 15)
+               
                
             VStack {
-                Text("you can't take them back")
-                    .font(.system(size: 23))
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-                Spacer()
-                    .frame(height: 10)
                 
-                Text("and they will never forget")
-                    .font(.system(size: 23))
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-                Spacer()
-                    .frame(height: 40)
+                Text("REMEMBER")
+                 .font(.system(size: 50))
+                 .foregroundColor(.purple)
+                 .fontWeight(.ultraLight)
                 
-                Text("Erasing all the nice words you've ever said")
+                 Spacer()
+                     .frame(height: 20)
+//                Text("you can't take them back")
+//                    .font(.system(size: 23))
+//                    .fontWeight(.thin)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(Color.white)
+//                Spacer()
+//                    .frame(height: 10)
+//
+//                Text("and they will never forget")
+//                    .font(.system(size: 23))
+//                    .fontWeight(.thin)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(Color.white)
+               
+                
+                Text("Sharp words erase all the nice words you've ever said")
                             .fontWeight(.ultraLight)
                             .foregroundColor(Color.white)
                             .italic()
                             .multilineTextAlignment(.center)
-                            .frame(width: 310, height: 100, alignment: .leading)
+                            .frame(width: 310, height: 130, alignment: .leading)
                             .font(.system(size: 32))
                            .padding(10)
                             .background(Color.gray)
@@ -131,7 +122,7 @@ struct YouGotThis: View {
         
     }
 }
-}
+
 
 
 
