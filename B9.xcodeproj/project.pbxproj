@@ -749,7 +749,7 @@
 			children = (
 				7A8F3D7D2A32C63000BC2CF4 /* MyRoomView.swift */,
 				7A8A72982A33F690005FA3B1 /* Journal */,
-				CFD12CC82819E83900AB2539 /* ThoughtfulMessages */,
+				CFD12CC82819E83900AB2539 /* SmileVault */,
 			);
 			path = MyRoomView;
 			sourceTree = "<group>";
@@ -1418,14 +1418,14 @@
 			path = "URGENT Chat Invite";
 			sourceTree = "<group>";
 		};
-		CFD12CC82819E83900AB2539 /* ThoughtfulMessages */ = {
+		CFD12CC82819E83900AB2539 /* SmileVault */ = {
 			isa = PBXGroup;
 			children = (
 				CF72D6FA2921AFE900EDDDA6 /* SmileVaultPreload.swift */,
 				CFE1946D28133CF700ED5718 /* BestFriendMessages.swift */,
 				CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */,
 			);
-			path = ThoughtfulMessages;
+			path = SmileVault;
 			sourceTree = "<group>";
 		};
 		CFD12CC92819E98800AB2539 /* DramaCentral */ = {

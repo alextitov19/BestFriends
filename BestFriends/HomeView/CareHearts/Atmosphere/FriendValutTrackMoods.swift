@@ -20,17 +20,7 @@ struct FriendVaultTrackMoods: View {
     
     var body: some View {
         ZStack {
-//            ColorManager.grey2
-//                .ignoresSafeArea()
-//                .onAppear(perform: loadData)
-            
-//            ColorManager.purple7
-//                .ignoresSafeArea()
-//                .onAppear()
-//
-//            AdPlayerView(name: "MyRoom5")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
+
             
             ColorManager .purple7
                  .ignoresSafeArea()
