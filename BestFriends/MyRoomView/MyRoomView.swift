@@ -37,7 +37,7 @@ struct MyRoomView: View {
                 })
                 
                 NavigationLink(destination: HugPushNotification2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                MyRoomRowView(title: "CareHearts", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                MyRoomRowView(title: "CareHearts", imageName: "square.and.arrow.down", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 })
                 
                 NavigationLink(destination: Step3_BreathInviteView(user: user, friends: friends), label: {
