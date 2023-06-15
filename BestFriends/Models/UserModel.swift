@@ -23,7 +23,8 @@ struct User: Codable {
     var roomHidden: Bool?
     var niceMessages: [String]?
     var journals: [String]?
-    var journalCategories : [String]?
+    var journalCategories: [String]?
+    var affirmations: [String]?
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -42,5 +43,6 @@ struct User: Codable {
         case niceMessages = "nice_messages"
         case journals = "journals"
         case journalCategories = "journal_categories"
+        case affirmations = "affirmations"
     }
 }

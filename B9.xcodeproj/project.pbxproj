@@ -96,6 +96,7 @@
 		7ADFDB33289B1FA60004FB1C /* ShakePhotoPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */; };
 		7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CBE262A9A94001EC5A3 /* LoginView.swift */; };
 		7AE3E9032838409B00567E2D /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3E9022838409A00567E2D /* ArrayExt.swift */; };
+		7AE4C5642A3A9A3500A90DBF /* AffirmationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE4C5632A3A9A3500A90DBF /* AffirmationsView.swift */; };
 		7AFB534F2A383975008FF2B8 /* FriendPlanetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFB534E2A383975008FF2B8 /* FriendPlanetsView.swift */; };
 		7AFCF27827FDFF2C00D2DB5C /* ChatGroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCF27727FDFF2C00D2DB5C /* ChatGroupsView.swift */; };
 		7AFCF27A27FDFFA800D2DB5C /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCF27927FDFFA800D2DB5C /* BlurView.swift */; };
@@ -389,6 +390,7 @@
 		7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakePhotoPopView.swift; sourceTree = "<group>"; };
 		7AE31CBE262A9A94001EC5A3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7AE3E9022838409A00567E2D /* ArrayExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExt.swift; sourceTree = "<group>"; };
+		7AE4C5632A3A9A3500A90DBF /* AffirmationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationsView.swift; sourceTree = "<group>"; };
 		7AED44FA2647310700944708 /* BestFriends.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BestFriends.entitlements; sourceTree = "<group>"; };
 		7AFB534E2A383975008FF2B8 /* FriendPlanetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPlanetsView.swift; sourceTree = "<group>"; };
 		7AFCF27727FDFF2C00D2DB5C /* ChatGroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGroupsView.swift; sourceTree = "<group>"; };
@@ -748,6 +750,7 @@
 			isa = PBXGroup;
 			children = (
 				7A8F3D7D2A32C63000BC2CF4 /* MyRoomView.swift */,
+				7AE4C5622A3A9A1900A90DBF /* Affirmations */,
 				7A8A72982A33F690005FA3B1 /* Journal */,
 				CFD12CC82819E83900AB2539 /* SmileVault */,
 			);
@@ -903,6 +906,14 @@
 				7A1C048427F4BEB30002B173 /* SignUpView.swift */,
 			);
 			path = AuthView;
+			sourceTree = "<group>";
+		};
+		7AE4C5622A3A9A1900A90DBF /* Affirmations */ = {
+			isa = PBXGroup;
+			children = (
+				7AE4C5632A3A9A3500A90DBF /* AffirmationsView.swift */,
+			);
+			path = Affirmations;
 			sourceTree = "<group>";
 		};
 		7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */ = {
@@ -1905,6 +1916,7 @@
 				7ACACDA82853EAB700D8AB75 /* UIAlertControllerExtension.swift in Sources */,
 				CF9E33C6284522AE00107433 /* Step_OurAdvantage.swift in Sources */,
 				7AD10450265AB93F007627FD /* UIWindowExtension.swift in Sources */,
+				7AE4C5642A3A9A3500A90DBF /* AffirmationsView.swift in Sources */,
 				CFD046952835925F00BF0B02 /* FriendValutTrackMoods.swift in Sources */,
 				7AD8DF0927F6948A00D9F0E1 /* AdPlayerView.swift in Sources */,
 				CF381A5228283D5C00B3719E /* IntroFriendGpFight.swift in Sources */,
