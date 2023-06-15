@@ -87,6 +87,8 @@ struct MyRoomView: View {
                         .frame(width: 30, height: 30)
                         .scaledToFit()
                         .foregroundColor(Color(cgColor: foregroundColor))
+                      
+                    
                     
                     Spacer().frame(width: 20)
 
