@@ -28,19 +28,19 @@ struct Step6_TextingFirst: View {
             
             VStack {
                 
-                Text("Ok, I am ready to try to")
-                    .font(.system(size: 35, weight: .ultraLight))
-                    .foregroundColor(Color.purple)
+//                Text("Ok, I am ready to try to")
+//                    .font(.system(size: 35, weight: .ultraLight))
+//                    .foregroundColor(Color.purple)
+//
+//                Text("fix this mess")
+//                    .font(.system(size: 40, weight: .ultraLight))
+//                    .foregroundColor(Color.purple)
+//
+//                Spacer()
+//                    .frame(height: 20)
                 
-                Text("fix this mess")
-                    .font(.system(size: 40, weight: .ultraLight))
-                    .foregroundColor(Color.purple)
                 
-                Spacer()
-                    .frame(height: 20)
-                
-                
-                Text("But, I'm not exactly sure what to say")
+                Text("Not exactly sure what to say")
                     .font(.system(size: 20, weight: .thin))
                     .italic()
                     .foregroundColor(Color.white)
