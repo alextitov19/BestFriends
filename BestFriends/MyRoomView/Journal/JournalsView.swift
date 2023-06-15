@@ -43,12 +43,15 @@ struct JournalsView: View {
                         categoryTapped()
                     }
                 
-                Button(action: {
-                    createNewJournalIsPresented = true
-                }, label: {
-                    addButtonBody()
-                })
-                .padding()
+                if !selectedCategory == "" && !selectedCategory == "Tap Me" {
+                    Button(action: {
+                        createNewJournalIsPresented = true
+                    }, label: {
+                        addButtonBody()
+                    })
+                    .padding()
+                }
+                
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(journals, id: \.id) { journal in
