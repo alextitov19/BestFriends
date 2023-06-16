@@ -44,7 +44,24 @@ struct Step3_BreathInviteView: View {
                 
                 VStack {
                     
+                    Text("Did you just have a huge fight")
+                        .font(.system(size: 25, weight: .bold))
+                        .fontWeight(.light)
+                        .foregroundColor(ColorManager .purple5)
+                        .multilineTextAlignment(.center)
                     
+                    Text("with your friend")
+                        .font(.system(size: 25, weight: .bold))
+                        .fontWeight(.light)
+                        .foregroundColor(ColorManager .purple5)
+                        .multilineTextAlignment(.center)
+                    
+                    
+                    Text("or romantic partner?")
+                        .font(.system(size: 25, weight: .bold))
+                        .fontWeight(.light)
+                        .foregroundColor(ColorManager .purple5)
+                        .multilineTextAlignment(.center)
                     
                     
                     
@@ -67,20 +84,7 @@ struct Step3_BreathInviteView: View {
                         VStack {
                             
                             
-                            Text("Did you just have a huge fight")
-                                .font(.system(size: 25, weight: .bold))
-                                .fontWeight(.light)
-                                .foregroundColor(ColorManager .purple5)
-                                .multilineTextAlignment(.center)
-                            
-                            Text("with your friend")
-                                .font(.system(size: 25, weight: .bold))
-                                .fontWeight(.light)
-                                .foregroundColor(ColorManager .purple5)
-                                .multilineTextAlignment(.center)
-                            
-                            
-                            Text("or romantic partner?")
+                            Text("Maybe we can help")
                                 .font(.system(size: 25, weight: .bold))
                                 .fontWeight(.light)
                                 .foregroundColor(ColorManager .purple5)
@@ -102,15 +106,7 @@ struct Step3_BreathInviteView: View {
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 })
                             
-                            Spacer()
-                                .frame(height: 15)
-                            
-                            Text("maybe we can help")
-                                .font(.system(size: 20, weight: .bold))
-                                .italic()
-                                .fontWeight(.light)
-                                .foregroundColor(ColorManager .grey4)
-                                .multilineTextAlignment(.center)
+                       
                             
                             
                         }
