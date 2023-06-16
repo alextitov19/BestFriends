@@ -33,7 +33,7 @@ struct MyRoomView: View {
                     .foregroundColor(ColorManager.purple5)
                 
                 NavigationLink(destination: JournalsView(), label: {
-                    MyRoomRowView(title: "Real-time \nJournal", imageName: "text.book.closed", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                    MyRoomRowView(title: "Real-time Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 })
                 
                 
@@ -102,7 +102,7 @@ struct MyRoomView: View {
                         .foregroundColor(Color(cgColor: foregroundColor))
                 }
             }
-            .frame(width: 200, height: 60)
+            .frame(width: 300, height: 60)
             .cornerRadius(15)
             .padding()
         }
