@@ -50,8 +50,24 @@ struct PhotoPop3: View {
                     
                     VStack {
                         
-//                        Spacer()
-//                            .frame(height: 60)
+
+                        
+                        Text("* Safety Tip: Delete old image")
+                            .font(.system(size: 15))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.red)
+                        
+                        Text("before uploading new image")
+                            .font(.system(size: 15))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.red)
+                        
+                        Spacer()
+                            .frame(height: 10)
                         
                         Text("Who are you")
                             .font(.system(size: 25, weight: .ultraLight))
