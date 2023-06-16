@@ -60,7 +60,7 @@ struct Step3_BreathInviteView: View {
                         NavigationLink(
                             destination: BreathInView(),
                             label: {
-                                Text("Take a Breath - Exhale")
+                                Text("Breathe")
                                     .fontWeight(.thin)
                                     .frame(width: 300, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -76,7 +76,6 @@ struct Step3_BreathInviteView: View {
                         
                         Text("Maybe, you're not ready")
                             .font(.system(size: 25))
-                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager .grey4)
@@ -84,13 +83,12 @@ struct Step3_BreathInviteView: View {
                         
                         Text("to talk to your friends")
                             .font(.system(size: 25))
-                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager .grey4)
                         
                         
-                        Text("BUT, want 'Emotionsl Support'")
+                        Text("BUT, want 'Emotional Support")
                             .font(.system(size: 25))
                             .italic()
                             .fontWeight(.light)
