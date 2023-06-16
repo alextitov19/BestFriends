@@ -27,7 +27,7 @@ struct Step3_BreathInviteView: View {
             //            AdPlayerView(name: "backgroundAnimation")
             //                .ignoresSafeArea()
             //                .blendMode(.screen)
-            //            
+            //
             VStack{
                 
                 Text("Something bad")
@@ -62,7 +62,7 @@ struct Step3_BreathInviteView: View {
                             label: {
                                 Text("Take a Breath - Exhale")
                                     .fontWeight(.thin)
-                                    .frame(width: 300, height: 60)
+                                    .frame(width: 300, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 30))
                                     .background(ColorManager.pmbc_blue)
@@ -71,25 +71,27 @@ struct Step3_BreathInviteView: View {
                             })
                         
                         
+                        Spacer()
+                            .frame(height: 40)
                         
-                        Text("Maybe, you're just not ready")
-                            .font(.system(size: 17))
+                        Text("Maybe, you're not ready")
+                            .font(.system(size: 25))
                             .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey1)
+                            .foregroundColor(ColorManager .grey4)
                         
                         
-                        Text("to talk to your friends about it yet")
-                            .font(.system(size: 17))
+                        Text("to talk to your friends")
+                            .font(.system(size: 25))
                             .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey1)
+                            .foregroundColor(ColorManager .grey4)
                         
                         
-                        Text("Let's get you some emotional support while you are alone")
-                            .font(.system(size: 17))
+                        Text("BUT, want 'Emotionsl Support'")
+                            .font(.system(size: 25))
                             .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -118,7 +120,7 @@ struct Step3_BreathInviteView: View {
                             
                             
                             Spacer ()
-                                .frame(height: 150)
+                                .frame(height: 200)
                             
                             Text("Did you just have a huge fight")
                                 .font(.system(size: 25, weight: .bold))
@@ -181,9 +183,9 @@ struct Step3_BreathInviteView: View {
                             //
                             //                                                 })
                             
-                            
-                            Spacer ()
-                                .frame(height: 150)
+//
+//                            Spacer ()
+//                                .frame(height: 150)
                         }
                         
                     }
