@@ -43,28 +43,12 @@ struct Step5_Why: View {
                     .fontWeight(.ultraLight)
                 
                 Spacer()
-                    .frame(height: 30)
-                
-                Text("because we have to be")
-                    .font(.system(size: 20))
-                    .italic()
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 0)
-                Text("real with yourself")
-                    .font(.system(size: 20))
-                    .italic()
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 0)
+                    .frame(height: 10)
+//
+//
                 
                 VStack {
-                    
-                Spacer()
-                    .frame(height:50)
-                
+             
                 Link(destination: URL(string: "https://socialtechlabs.com/understanding-the-why/")!) {
                     
                     Text("Dare to take a look inside")
@@ -80,7 +64,7 @@ struct Step5_Why: View {
                 
                 VStack {
                     Spacer()
-                        .frame(height:30)
+                        .frame(height:100)
                   
                     NavigationLink(
                         destination: Step6_TextingFirst(user: user, friends: friends),

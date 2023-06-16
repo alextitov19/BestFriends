@@ -129,6 +129,15 @@ struct Step6_TextingFirst: View {
                                     }
                                 )}
                             
+                        Text("And you get a read-receipt")
+                            .font(.system(size: 20, weight: .thin))
+                            .italic()
+                            .foregroundColor(Color.white)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        
+                        
                             Spacer()
                                 .frame(height: 25)
                             
