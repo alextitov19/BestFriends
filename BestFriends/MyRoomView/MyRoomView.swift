@@ -28,7 +28,7 @@ struct MyRoomView: View {
             
             VStack {
                 
-                Text("My Room")
+                Text("My Galexy")
                     .font(.system(size: 40, weight: .light))
                     .foregroundColor(ColorManager.purple5)
                 
@@ -59,7 +59,7 @@ struct MyRoomView: View {
 
 
                 NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
-                MyRoomRowView(title: "What are you doing? Send PhotoPOP", imageName: "camera", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                MyRoomRowView(title: "Where are you? Send PhotoPOP", imageName: "camera", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 })
           
      
