@@ -58,42 +58,42 @@ struct HugPushNotification2: View {
                     .foregroundColor(ColorManager .grey1)
                 
                 Text("Something bad just happened")
-                    .font(.system(size: 28))
+                    .font(.system(size: 26))
                 //                    .italic()
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager .grey1)
+                
                 Spacer ()
                     .frame(height: 5)
-                Text("and I need Emotional Support")
-                    .font(.system(size: 25))
+                Text("But, I'm not ready to talk about it")
+                    .font(.system(size: 21))
+                    .italic()
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager .grey2)
+               
+                Spacer ()
+                    .frame(height: 15)
+                
+
+                
+                Text("But, I still need")
+                    .font(.system(size: 23))
 //                    .italic()
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager .grey1)
                 
-                Spacer ()
-                    .frame(height: 15)
-                
-                Text("But, I'm just not ready")
-                    .font(.system(size: 17))
-                    .italic()
+                Text("Emotional Support")
+                    .font(.system(size: 35))
+//                    .italic()
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey2)
-                
-                
-                Text("to talk to my friends about it yet")
-                    .font(.system(size: 17))
-                    .italic()
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey2)
-                
-                
+                    .foregroundColor(ColorManager .grey1)
               
                 
-                VStack {
+           
                     
                     
                     NavigationLink( destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
@@ -108,22 +108,13 @@ struct HugPushNotification2: View {
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
                     
+                 
+         
+                VStack {
+                    
                     Spacer ()
                         .frame(height: 140)
-                    //
-                    //                    Image(systemName: "heart.fill")
-                    //                        .resizable()
-                    //                        .foregroundColor(ColorManager .purple1)
-                    //                        .frame(width: 100, height: 75)
-                    //                        .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
-                    //                        .opacity(0.3)
-//                    
-//                    Text("")
-//                        .font(.system(size: 30))
-//                    //                    .italic()
-//                        .fontWeight(.thin)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager .grey2)
+                    
                     
                     Text("Friend having a bad day?")
                         .font(.system(size: 30, weight: .thin))
@@ -140,26 +131,11 @@ struct HugPushNotification2: View {
                     
                     ZStack {
                         
-                        
-                        //                        Image(systemName: "heart.fill")
-                        //                            .resizable()
-                        //                            .foregroundColor(ColorManager .purple3)
-                        //                            .frame(width: 150, height: 100)
-                        //                            .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
-                        //                            .opacity(0.8)
-                        //
-                        
-                        
-                        //                    VStack {
-                        //
-                        //                        Spacer ()
-                        //                            .frame(height: 30)
-                        //
-                        //
-                        //
-                        
+                  
                         VStack {
                             
+                            Spacer ()
+                                .frame(height: 17)
                             
                             NavigationLink( destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                                             label: {
@@ -181,8 +157,8 @@ struct HugPushNotification2: View {
                                 .foregroundColor(ColorManager .grey1)
                             
                             
-                            Spacer ()
-                                .frame(height: 100)
+//                            Spacer ()
+//                                .frame(height: 100)
                             
                             //
                             //                            Image(systemName: "heart.fill")
@@ -256,9 +232,7 @@ struct HugPushNotification2: View {
                                 
                                 VStack {
                                     
-                                    
-                                    Spacer ()
-                                        .frame(height: 40)
+                          
                                     
                                     
                                 }
