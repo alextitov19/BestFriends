@@ -51,30 +51,36 @@ struct HugPushNotification2: View {
             
             VStack {
                 Text("Ouch!")
-                    .font(.system(size: 45))
+                    .font(.system(size: 60))
                 //                    .italic()
-                    .fontWeight(.thin)
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey2)
+                    .foregroundColor(ColorManager .grey1)
                 
                 Text("Something bad just happened")
                     .font(.system(size: 28))
                 //                    .italic()
-                    .fontWeight(.thin)
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey2)
-                
-                
-                
+                    .foregroundColor(ColorManager .grey1)
                 Spacer ()
                     .frame(height: 5)
+                Text("and I need Emotional Support")
+                    .font(.system(size: 25))
+//                    .italic()
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager .grey1)
+                
+                Spacer ()
+                    .frame(height: 15)
                 
                 Text("But, you're just not ready")
                     .font(.system(size: 17))
                     .italic()
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey1)
+                    .foregroundColor(ColorManager .grey2)
                 
                 
                 Text("to talk to your friends about it yet")
@@ -82,8 +88,10 @@ struct HugPushNotification2: View {
                     .italic()
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey1)
+                    .foregroundColor(ColorManager .grey2)
                 
+                
+              
                 
                 VStack {
                     
@@ -101,7 +109,7 @@ struct HugPushNotification2: View {
                     })
                     
                     Spacer ()
-                        .frame(height: 100)
+                        .frame(height: 140)
                     //
                     //                    Image(systemName: "heart.fill")
                     //                        .resizable()
@@ -119,8 +127,8 @@ struct HugPushNotification2: View {
                     
                     Text("Friend having a bad day?")
                         .font(.system(size: 30, weight: .thin))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(ColorManager .grey2)
+                        .fontWeight(.light)
+                        .foregroundColor(ColorManager .grey1)
                     
                     VStack {
                         
