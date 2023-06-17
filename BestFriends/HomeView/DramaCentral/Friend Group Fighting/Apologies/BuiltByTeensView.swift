@@ -41,22 +41,25 @@ struct BuiltByTeensView: View {
             VStack {
                 
                 
-                Text("from the heart of us,")
+                Text("BestFriends app was desinged to put")
                     .font(.system(size: 20))
                     .italic()
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
-                Text("Thank you")
+                Spacer()
+                    .frame(height: 10)
+                
+                Text("Smiles on faces")
 //                    .italic()
-                    .font(.system(size: 50))
+                    .font(.system(size: 30))
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
                 
-                Text("for being a best friend")
+                Text("and build happier friendships")
                     .font(.system(size: 35))
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)

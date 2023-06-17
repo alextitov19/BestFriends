@@ -36,7 +36,7 @@ struct MyRoomView: View {
                 NavigationLink(
                     destination: BuiltByTeensView(user: user, friends: friends),
                     label: {
-                        Text("designed around teen girls \nby teen girls")
+                        Text("designed around teens \nby teen girls")
 //                            .foregroundColor(Color.white)
 //                            .font(.system(size: 16, weight: .light))
                         
@@ -69,10 +69,10 @@ struct MyRoomView: View {
                 NavigationLink(destination: Step3_BreathInviteView(user: user, friends: friends), label: {
                     MyRoomRowView(title: "Fight", imageName: "wind", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 })
-                
-                NavigationLink(destination: AffirmationMain(), label: {
-                    MyRoomRowView(title: "Affirmations", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
-                })
+//
+//                NavigationLink(destination: AffirmationMain(), label: {
+//                    MyRoomRowView(title: "Affirmations", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+//                })
                 NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
                 MyRoomRowView(title: "SmileVault", imageName: "sun.max.fill", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 })
