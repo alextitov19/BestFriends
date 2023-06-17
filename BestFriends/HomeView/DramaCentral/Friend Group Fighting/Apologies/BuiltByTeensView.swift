@@ -100,7 +100,7 @@ struct BuiltByTeensView: View {
                             
                             destination: ShaylaPage(user: user),
                             label: {
-                                Text("Team of over \n130 teens worldwide")
+                                Text("Built by over \n130 teens worldwide")
                                     .fontWeight(.thin)
                                     .foregroundColor(Color.white)
                                     .frame(width: 300, height: 60)
