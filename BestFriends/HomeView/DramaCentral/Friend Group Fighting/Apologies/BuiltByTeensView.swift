@@ -41,25 +41,31 @@ struct BuiltByTeensView: View {
             VStack {
                 
                 
-                Text("BestFriends app was desinged to put")
-                    .font(.system(size: 20))
-                    .italic()
-                    .foregroundColor(ColorManager.grey1)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
+//                Text("BestFriends app was desinged to put")
+//                    .font(.system(size: 20))
+//                    .italic()
+//                    .foregroundColor(ColorManager.grey1)
+//                    .fontWeight(.thin)
+//                    .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height: 10)
                 
-                Text("Smiles on faces")
+                Text("Putting Smiles on faces")
 //                    .italic()
                     .font(.system(size: 30))
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
+                Text("&")
+//                    .italic()
+                    .font(.system(size: 30))
+                    .foregroundColor(ColorManager.grey1)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
                 
-                Text("and build happier friendships")
+                Text("building happier friendships")
                     .font(.system(size: 35))
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
@@ -94,11 +100,11 @@ struct BuiltByTeensView: View {
                             
                             destination: ShaylaPage(user: user),
                             label: {
-                                Text("Built by Teens")
+                                Text("Team of over \n130 teens worldwide")
                                     .fontWeight(.thin)
                                     .foregroundColor(Color.white)
-                                    .frame(width: 250, height: 60)
-                                    .font(.system(size: 35))
+                                    .frame(width: 300, height: 60)
+                                    .font(.system(size: 20))
                                     .background(Color.orange)
                                     .cornerRadius(7)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
