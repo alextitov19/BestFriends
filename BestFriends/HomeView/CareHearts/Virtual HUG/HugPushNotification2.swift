@@ -75,7 +75,7 @@ struct HugPushNotification2: View {
                 Spacer ()
                     .frame(height: 15)
                 
-                Text("But, you're just not ready")
+                Text("But, I'm just not ready")
                     .font(.system(size: 17))
                     .italic()
                     .fontWeight(.light)
@@ -83,7 +83,7 @@ struct HugPushNotification2: View {
                     .foregroundColor(ColorManager .grey2)
                 
                 
-                Text("to talk to your friends about it yet")
+                Text("to talk to my friends about it yet")
                     .font(.system(size: 17))
                     .italic()
                     .fontWeight(.light)

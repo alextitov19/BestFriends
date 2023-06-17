@@ -28,9 +28,14 @@ struct MyRoomView: View {
             
             VStack {
                 
-                Text("My Galexy")
+                Text("My Room")
                     .font(.system(size: 40, weight: .light))
                     .foregroundColor(ColorManager.purple5)
+                
+                NavigationLink(destination: HugPushNotification2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
+                MyRoomRowView(title: "CareHearts", imageName: "heart", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                })
+                
                 
                 NavigationLink(destination: JournalsView(), label: {
                     MyRoomRowView(title: "Real-time Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
@@ -42,9 +47,7 @@ struct MyRoomView: View {
                 })
 
                
-                NavigationLink(destination: HugPushNotification2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                MyRoomRowView(title: "CareHearts", imageName: "heart", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
-                })
+            
                 
                 NavigationLink(destination: Step3_BreathInviteView(user: user, friends: friends), label: {
                     MyRoomRowView(title: "Huge Fight", imageName: "wind", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
@@ -59,7 +62,7 @@ struct MyRoomView: View {
 
 
                 NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
-                MyRoomRowView(title: "Where are you? Send PhotoPOP", imageName: "camera", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                MyRoomRowView(title: "Where are you?", imageName: "camera", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 })
           
      
