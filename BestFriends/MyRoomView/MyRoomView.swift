@@ -83,6 +83,11 @@ struct MyRoomView: View {
                 MyRoomRowView(title: "Where are you?", imageName: "camera", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 })
           
+                
+//                NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
+//                MyRoomRowView(title: "Where are you?", imageName: "camera", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+//                })
+          
      
                 NavigationLink(
                     destination: BuiltByTeensView(user: user, friends: friends),

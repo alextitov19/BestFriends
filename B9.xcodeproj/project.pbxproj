@@ -781,7 +781,6 @@
 				7AB52167289D9418005A49FA /* Purple Subscription */,
 				D0CC1A02283EE31900E7461F /* Horizons */,
 				CF1CD75329E2908B00D1F801 /* New Summer Feature */,
-				CF6499DE294D4148003BBF83 /* INFOPreloadA.swift */,
 				CF41280C2927542B003BCBFA /* SurveyStickers */,
 				CF650405288E76B50092EEB9 /* GotPushNotification.swift */,
 				CF01267C2A0E307000516B8E /* FriendShips */,
@@ -1433,6 +1432,7 @@
 			isa = PBXGroup;
 			children = (
 				CF72D6FA2921AFE900EDDDA6 /* SmileVaultPreload.swift */,
+				CF6499DE294D4148003BBF83 /* INFOPreloadA.swift */,
 				CFE1946D28133CF700ED5718 /* BestFriendMessages.swift */,
 				CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */,
 			);
