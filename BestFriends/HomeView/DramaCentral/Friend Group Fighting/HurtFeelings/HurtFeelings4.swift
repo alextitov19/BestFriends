@@ -198,7 +198,7 @@ struct HurtFeelings4: View {
                             .background(shareColor)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            .alert("You got this!", isPresented: $showingAlert) {
+                            .alert("Quick, Duck? \n\nJust kidding - you will be ok", isPresented: $showingAlert) {
                                 Button("OK", role: .cancel) { }
                             }
                         
