@@ -42,34 +42,26 @@ struct INFOPreloadA: View {
             if shareTapped {
                 
                 
+              
                 
-                            ColorManager.purple2
-                                .ignoresSafeArea()
-                                .onAppear()
-//                Image("purpleBackground")
-//                    .resizable()
-//                    .ignoresSafeArea()
-//                    .scaledToFill()
-//                    .ignoresSafeArea()
+
+            } else {
+              
+                ColorManager.purple5
+                    .opacity(0.8)
+                    .ignoresSafeArea()
+                    
+                AdPlayerView(name: "sky2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
                 
                 AdPlayerView(name: "dramaLights")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-            } else {
-                AdPlayerView(name: "")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                
-                ColorManager.purple1
-                    .ignoresSafeArea()
+
             }
             
-//            ColorManager .purple1
-//                .ignoresSafeArea()
-//
-//            AdPlayerView(name: "sky2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
+
 
             
             VStack{
@@ -77,32 +69,41 @@ struct INFOPreloadA: View {
                 HStack {
                     VStack {
                         
-                        Text("Blowing")
+                        Text("What's")
                             .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .purple7)
+                            .foregroundColor(ColorManager .grey1)
                         
                         
-                        Text("Kisses")
+                        Text("Up?")
                             .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .purple7)
+                            .foregroundColor(ColorManager .grey1)
                         
                     }
                     
                     Image("BalloonGuy")
                         .resizable()
                         .frame(width: 200, height: 200)
+                    
+//                    Image("KissesHeart")
+//                        .resizable()
+//                        .frame(width: 200, height: 150)
                 }
              
          
                 VStack {
 
-                    Text("Jump up on a chair, then ...")
+                    Text("STOP Texting - ask for a Pic!")
                                             .font(.system(size: 25))
                 
-                                            .foregroundColor(ColorManager .grey2)
+                                            .foregroundColor(ColorManager .grey1)
                                             .fontWeight(.thin)
                                             .multilineTextAlignment(.center)
 
+                  
+                    
+                    
+                    
+                    
                     VStack {
 
                         Spacer()
@@ -221,7 +222,7 @@ struct INFOPreloadA: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("blow your kisses high up in the air floating towards your friend. \n\nThat's perfect", isPresented: $showingAlert) {
+                                .alert("we sent them a \npush notification", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -246,11 +247,22 @@ struct INFOPreloadA: View {
                                      
                                  })
                             
+                            
+                            NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
+                                            label: {
+                                Text("Send them a PhotoPOP")
+                                    .fontWeight(.thin)
+                                    .frame(width: 310, height: 50)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 30))
+                                    .background(Color .orange)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                            
                             Spacer()
                                 .frame(height: 30)
-                            Image("KissesHeart")
-                                .resizable()
-                                .frame(width: 200, height: 150)
+                           
                    
                         }
                         
@@ -277,7 +289,7 @@ struct INFOPreloadA: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) is blowing you Kisses. Jump up high and catch them.", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) want to know - What you are doing. Send them a PhotoPOP.", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
