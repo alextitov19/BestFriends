@@ -247,6 +247,8 @@ struct INFOPreloadA: View {
                                      
                                  })
                             
+                            Spacer()
+                                .frame(height: 25)
                             
                             NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
                                             label: {
