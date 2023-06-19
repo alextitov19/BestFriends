@@ -112,7 +112,7 @@ struct FightsInfo: View {
                 .foregroundColor(Color.white)
             
             NavigationLink(
-                destination: IntroBluemodeFriend(user: user, friends: friends),
+                destination: IntroBluemodeFriend(user: user, friends: friends, groups: groups),
                 label: {
                     Text("Skip Fights Landing page")
                         .fontWeight(.thin)
