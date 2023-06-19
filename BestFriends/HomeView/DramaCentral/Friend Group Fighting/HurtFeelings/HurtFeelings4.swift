@@ -35,12 +35,12 @@ struct HurtFeelings4: View {
             //                .ignoresSafeArea()
             //                .onAppear()
             
-            ColorManager .purple1
+            ColorManager .purple5
                 .ignoresSafeArea()
             
             
             
-            AdPlayerView(name: "sky2")
+            AdPlayerView(name: "storm2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
@@ -51,9 +51,9 @@ struct HurtFeelings4: View {
                     .frame(height: 25)
                 
                 Text("It's been bugging you all day!")
-                    .font(.system(size: 20))
+                    .font(.system(size: 25))
                     .fontWeight(.ultraLight)
-                    .foregroundColor(ColorManager .grey3)
+                    .foregroundColor(ColorManager .grey1)
                     .multilineTextAlignment(.center)
                 
                 
@@ -81,22 +81,22 @@ struct HurtFeelings4: View {
                             .font(.system(size: 30))
                         
                             .fontWeight(.ultraLight)
-                            .foregroundColor(ColorManager .grey3)
+                            .foregroundColor(ColorManager .grey1)
                             .multilineTextAlignment(.center)
                     }
                     
                     
-                    Image("Girl400")
-                        .resizable()
-                        .frame(width: 180, height: 180)
+//                    Image("Girl400")
+//                        .resizable()
+//                        .frame(width: 180, height: 180)
                     
                 }
                 
                 
                 
-                Text("[You hurt my feelings]")
+                Text("You hurt my feelings")
                     .font(.system(size: 27))
-                    .foregroundColor(.green)
+                    .foregroundColor(.gray)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
