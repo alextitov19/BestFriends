@@ -113,7 +113,7 @@ struct Step3_BreathInviteView: View {
                             Spacer()
                                 .frame(height: 90)
                             
-                            Text("Something")
+                            Text("")
                                 .font(.system(size: 25, weight: .bold))
                                 .fontWeight(.light)
                                 .foregroundColor(ColorManager .purple5)
@@ -121,7 +121,7 @@ struct Step3_BreathInviteView: View {
                             
                             NavigationLink(destination: HurtFeelings4(user: user, friends: friends, groups: groups),
                                 label: {
-                                    Text("Bugging YOU?")
+                                    Text("Hurt Feelings?")
                                         .fontWeight(.thin)
                                         .frame(width: 250, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
