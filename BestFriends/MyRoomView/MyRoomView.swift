@@ -55,15 +55,15 @@ struct MyRoomView: View {
                 })
                 
                 
-                NavigationLink(destination: JournalsView(), label: {
+                NavigationLink(destination: JournalsView(friends: friends), label: {
                     MyRoomRowView(title: "Interactive Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 })
                 
 //            **************** Andy the link below is the one for the Vibe Tracker
-                NavigationLink(destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends), label: {
-                MyRoomRowView(title: "Vibe Tracker", imageName: "hand.thumbsup", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
-                })
-//
+//                NavigationLink(destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends), label: {
+//                MyRoomRowView(title: "Vibe Tracker", imageName: "hand.thumbsup", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+//                })
+////
 //
             
                 

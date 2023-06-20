@@ -22,6 +22,7 @@ struct JournalsView: View {
     @State private var newJournalWeather = "cloud.sun"
     @State private var newJournalImagesData: [Data] = []
     @State private var createClicked = false
+    let friends: [User]
 
     
     var body: some View {
@@ -49,6 +50,11 @@ struct JournalsView: View {
                     }, label: {
                         addButtonBody()
                     })
+                    .padding()
+                
+                    NavigationLink(destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends)) {
+                        vibeTrackerButtonBody()
+                    }
                     .padding()
                 }
                 
@@ -181,6 +187,21 @@ struct JournalsView: View {
                     .frame(width: 30, height: 30)
                     .foregroundColor(ColorManager.purple5)
                     .opacity(0.3)
+            }
+            .frame(width: 200, height: 50)
+            .cornerRadius(15)
+            .opacity(0.7)
+        }
+    }
+    
+    private struct vibeTrackerButtonBody: View {
+        var body: some View {
+            ZStack {
+                ColorManager.purple3
+                
+                Text("Vibe Tracker")
+                    .foregroundColor(ColorManager.purple5)
+                    .font(.headline)
             }
             .frame(width: 200, height: 50)
             .cornerRadius(15)
