@@ -43,15 +43,11 @@ struct HurtFeelings4: View {
             
             VStack {
                 
-                Text("Yep,")
-                    .font(.system(size: 20))
-                    .foregroundColor(ColorManager .grey1)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
+              
                 
                 Text("it's been bugging you all week")
-                    .font(.system(size: 20))
-                    .foregroundColor(ColorManager .grey1)
+                    .font(.system(size: 25))
+                    .foregroundColor(ColorManager .grey2)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
@@ -218,7 +214,7 @@ struct HurtFeelings4: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Now duck? \n\nJust kidding - you will be ok \n\nSometimes something simple is so hard!.", isPresented: $showingAlert) {
+                                .alert("Now duck? \n\nJust kidding - you will be ok \n\nSometimes something so simple is so hard!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
