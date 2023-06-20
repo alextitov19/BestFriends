@@ -124,6 +124,8 @@ struct Step3_BreathInviteView: View {
                                 .fontWeight(.light)
                                 .foregroundColor(ColorManager .grey4)
                                 .multilineTextAlignment(.center)
+                            
+                            
                             NavigationLink(destination: HurtFeelings4(user: user, friends: friends, groups: groups),
                                 label: {
                                     Text("Hurt Feelings?")

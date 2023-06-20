@@ -68,7 +68,7 @@ struct MyRoomView: View {
             
                 
                 NavigationLink(destination: Step3_BreathInviteView(user: user, friends: friends, groups: groups), label: {
-                    MyRoomRowView(title: "Drama Central", imageName: "wind", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                    MyRoomRowView(title: "Lowering Drama", imageName: "wind", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 })
 //
 //                NavigationLink(destination: AffirmationMain(), label: {
