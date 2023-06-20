@@ -140,7 +140,7 @@ struct INFOMainHowWorks: View {
                         NavigationLink(
                             destination: InfoInsideChat(user: user),
                             label: {
-                                Text("Create New chat rooms")
+                                Text("Create New Chat rooms")
                                     .fontWeight(.thin)
                                     .frame(width: 310, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -167,10 +167,10 @@ struct INFOMainHowWorks: View {
                             //                                destination: InfoSilence(user: user),
                             destination: MyRoomView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
-                                Text("My Room \nTap center planet on hmpage")
+                                Text("My Planet")
                                     .fontWeight(.thin)
                                     .foregroundColor(Color.white)
-                                    .frame(width: 310, height: 60)
+                                    .frame(width: 310, height: 40)
                                     .font(.system(size: 25))
                                     .background(ColorManager.purple3)
                                     .cornerRadius(10)

@@ -41,8 +41,8 @@ struct Step6_TextingFirst: View {
                 
                 
                 Text("Not exactly sure what to say")
-                    .font(.system(size: 20, weight: .thin))
-                    .italic()
+                    .font(.system(size: 25, weight: .thin))
+//                    .italic()
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
                 
@@ -67,10 +67,20 @@ struct Step6_TextingFirst: View {
                     
                     
                     
-                    Text("Shoot them a text in Chat")
-                        .font(.system(size: 35, weight: .ultraLight))
-                        .foregroundColor(Color.purple)
-                     
+                    Text("Let's")
+                        .font(.system(size: 37, weight: .light))
+                        .foregroundColor(ColorManager .grey1)
+                        .multilineTextAlignment(.center)
+                    
+                    Text("shoot them a text")
+                        .font(.system(size: 35, weight: .light))
+                        .foregroundColor(ColorManager .grey1)
+                        .multilineTextAlignment(.center)
+                    
+                    
+                    Text("in Chat")
+                        .font(.system(size: 35, weight: .light))
+                        .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     
                     Spacer()
@@ -96,18 +106,18 @@ struct Step6_TextingFirst: View {
                         Spacer()
                             .frame(height: 80)
                         
-                        Text("Let's make sure")
-                            .font(.system(size: 20, weight: .thin))
-                            .italic()
-                            .foregroundColor(Color.white)
-                            .multilineTextAlignment(.center)
-                        
-                        
-                        Text("they see your message.")
-                            .font(.system(size: 20, weight: .thin))
-                            .italic()
-                            .foregroundColor(Color.white)
-                            .multilineTextAlignment(.center)
+//                        Text("Let's make sure")
+//                            .font(.system(size: 20, weight: .thin))
+//                            .italic()
+//                            .foregroundColor(Color.white)
+//                            .multilineTextAlignment(.center)
+//
+//
+//                        Text("they see your message.")
+//                            .font(.system(size: 20, weight: .thin))
+//                            .italic()
+//                            .foregroundColor(Color.white)
+//                            .multilineTextAlignment(.center)
                         
                      
                             
@@ -129,10 +139,10 @@ struct Step6_TextingFirst: View {
                                     }
                                 )}
                             
-                        Text("And you get a read-receipt")
+                        Text("to make sure they see it")
                             .font(.system(size: 20, weight: .thin))
                             .italic()
-                            .foregroundColor(Color.white)
+                            .foregroundColor(Color.black)
                             .multilineTextAlignment(.center)
                         
                         

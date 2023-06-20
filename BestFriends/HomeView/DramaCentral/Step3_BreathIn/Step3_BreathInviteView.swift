@@ -128,7 +128,7 @@ struct Step3_BreathInviteView: View {
                             
                             NavigationLink(destination: HurtFeelings4(user: user, friends: friends, groups: groups),
                                 label: {
-                                    Text("Teen Hurt Feelings?")
+                                    Text("Hurt Feelings?")
                                         .fontWeight(.thin)
                                         .frame(width: 310, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

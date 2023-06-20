@@ -64,12 +64,12 @@ struct Step5_Why: View {
                 
                 VStack {
                     Spacer()
-                        .frame(height:100)
+                        .frame(height:30)
                   
                     NavigationLink(
                         destination: Step6_TextingFirst(user: user, friends: friends),
                         label: {
-                            Text("Ready to reach out?")
+                            Text("I'm ready to reach out")
                                 .fontWeight(.thin)
                                 .foregroundColor(Color.white)
                                 .frame(width: 310, height: 40)
@@ -84,22 +84,15 @@ struct Step5_Why: View {
                     )}
                     
                     Spacer()
-                        .frame(height: 25)
+                        .frame(height: 160)
                     
                    
+  
+                  
                     
-//
-//                    NavigationLink(
-//                        destination: Step6_TextingFirst(user: user, friends: friends),
-//                        label: {
-                            Text("Not ready to talk yet")
-                                .fontWeight(.thin)
-                                .foregroundColor(Color.white)
-                                .frame(width: 310, height: 40)
-                                .font(.system(size: 30))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                
+                    
+                    
                     
                     Button(action: {
                                                  sessionManager.showLogin()
@@ -115,6 +108,15 @@ struct Step5_Why: View {
                                                      .opacity(0.70)
                                                  
                                              })
+                    
+                    Text("I'm just not ready to talk yet")
+                        .font(.system(size: 23))
+                        .italic()
+                        .foregroundColor(.black)
+                        .fontWeight(.ultraLight)
+                        .multilineTextAlignment(.leading)
+                    
+                    
                     
                     
                     Spacer()

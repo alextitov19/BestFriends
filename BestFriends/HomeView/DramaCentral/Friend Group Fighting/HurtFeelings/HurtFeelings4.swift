@@ -36,7 +36,7 @@ struct HurtFeelings4: View {
             ColorManager .purple5
                 .ignoresSafeArea()
             
-            AdPlayerView(name: "storm2")
+            AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
@@ -61,50 +61,59 @@ struct HurtFeelings4: View {
                 
                 VStack {
                     
-                    Text("Sure, sometimes")
-                        .font(.system(size: 20))
-                        .foregroundColor(ColorManager .grey1)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                    
-                    Text("everyone's a little uncomfortable or")
-                        .font(.system(size: 20))
-                        .foregroundColor(ColorManager .grey2)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                    
-                    Text("scared to say anything")
-                        .font(.system(size: 20))
-                        .foregroundColor(ColorManager .grey2)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
+//                    Text("Sure, sometimes")
+//                        .font(.system(size: 20))
+//                        .foregroundColor(ColorManager .grey1)
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//
+//                    Text("everyone's a little uncomfortable or")
+//                        .font(.system(size: 20))
+//                        .foregroundColor(ColorManager .grey2)
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//
+//                    Text("scared to say anything")
+//                        .font(.system(size: 20))
+//                        .foregroundColor(ColorManager .grey2)
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
                     
                     Spacer()
                         .frame(height: 50)
                     
                     VStack {
                         
-                        Text("But, we're right here with you")
-                            .font(.system(size: 20))
+                        Text("You hurt my feelings")
+                            .font(.system(size: 25))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Text("join friends on BF saying,")
-                            .font(.system(size: 20))
-                            .foregroundColor(ColorManager .grey2)
+                        Text("Let's talk about it")
+                            .font(.system(size: 23))
+//                            .italic()
+                            .foregroundColor(ColorManager .grey1)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("[You hurt my feelings, meet me in BFs]")
+                        Text("BF's can help you say it")
                             .font(.system(size: 17))
                             .italic()
-                            .foregroundColor(ColorManager .grey1)
+                            .foregroundColor(ColorManager .grey2)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
+                      
+                        Text("in a push notification")
+                            .font(.system(size: 17))
+                            .italic()
+                            .foregroundColor(ColorManager .grey2)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                     
                         
                    
                         
@@ -215,21 +224,21 @@ struct HurtFeelings4: View {
                     
                     VStack {
                         
-                        Spacer()
-                            .frame(height: 10)
-                        Text("And the Best Part;")
-                            .font(.system(size: 15))
-                            .italic()
-                            .foregroundColor(Color .black)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("we'll say it for you in a push notification")
-                            .font(.system(size: 15))
-                            .italic()
-                            .foregroundColor(Color .black)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
+//                        Spacer()
+//                            .frame(height: 10)
+//                        Text("And the Best Part;")
+//                            .font(.system(size: 15))
+//                            .italic()
+//                            .foregroundColor(Color .black)
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//
+//                        Text("we'll say it for you in a push notification")
+//                            .font(.system(size: 15))
+//                            .italic()
+//                            .foregroundColor(Color .black)
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
                         
                         Spacer()
                             .frame(height: 30)
@@ -246,7 +255,7 @@ struct HurtFeelings4: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Now duck? \n\nJust kidding - you will be ok \n\nSometimes something so simple is so hard!", isPresented: $showingAlert) {
+                                .alert("You got this \n\nSometimes something so simple is so hard!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
