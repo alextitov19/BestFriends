@@ -81,13 +81,13 @@ struct HomeView: View {
                             ) { EmptyView() }
                             
                             
-//                            NavigationLink(
-//                                destination: BuiltByTeensView(user: homeData!.user, friends: homeData!.friends),
-//                                label: {
-//                                    Text("designed by teen girls")
-//                                        .foregroundColor(Color.white)
-//                                        .font(.system(size: 16, weight: .light))
-//                                })
+                            NavigationLink(
+                                destination: BuiltByTeensView(user: homeData!.user, friends: homeData!.friends),
+                                label: {
+                                    Text("building friendships")
+                                        .foregroundColor(Color.white)
+                                        .font(.system(size: 16, weight: .light))
+                                })
                             
                             Spacer()
                             
