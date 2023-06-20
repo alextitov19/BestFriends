@@ -108,7 +108,7 @@ struct Step3_BreathInviteView: View {
                                 label: {
                                     Text("Breathe")
                                         .fontWeight(.thin)
-                                        .frame(width: 250, height: 40)
+                                        .frame(width: 275, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 30))
                                         .background(ColorManager.pmbc_blue)

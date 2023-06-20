@@ -46,8 +46,8 @@ struct HurtFeelings4: View {
               
                 
                 Text("it's been bugging you all week")
-                    .font(.system(size: 25))
-                    .foregroundColor(ColorManager .grey2)
+                    .font(.system(size: 27))
+                    .foregroundColor(ColorManager .grey1)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
@@ -64,7 +64,7 @@ struct HurtFeelings4: View {
                     
                     Text("everyone's a little uncomfortable saying anything")
                         .font(.system(size: 20))
-                        .foregroundColor(ColorManager .grey1)
+                        .foregroundColor(ColorManager .grey2)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
@@ -81,12 +81,12 @@ struct HurtFeelings4: View {
                         
                         Text("let's try joining others on BF saying,")
                             .font(.system(size: 20))
-                            .foregroundColor(ColorManager .grey1)
+                            .foregroundColor(ColorManager .grey2)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
                         Text("[You hurt my feelings, let's talk]")
-                            .font(.system(size: 20))
+                            .font(.system(size: 17))
                             .italic()
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.light)
