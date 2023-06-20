@@ -66,7 +66,7 @@ struct HurtFeelings4: View {
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
-                    Text("everyone's a little uncomfortable saying something")
+                    Text("everyone's a little uncomfortable saying anything")
                         .font(.system(size: 20))
                         .foregroundColor(ColorManager .grey1)
                         .fontWeight(.light)
@@ -83,7 +83,7 @@ struct HurtFeelings4: View {
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Text("Let's try join others on BF saying,")
+                        Text("let's try joining others on BF saying,")
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.light)
@@ -218,7 +218,7 @@ struct HurtFeelings4: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Now duck? \n\nJust kidding - you will be ok \n\nNow it's their move.", isPresented: $showingAlert) {
+                                .alert("Now duck? \n\nJust kidding - you will be ok \n\nSometimes something simple is so hard!.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
