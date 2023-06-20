@@ -43,37 +43,37 @@ struct HurtFeelings4: View {
             
             VStack {
                 
-                Text("Maybe, it's been bugging you")
-                    .font(.system(size: 27))
-                    .foregroundColor(ColorManager .grey1)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                
-                
-                Text("all week")
-                    .font(.system(size: 27))
-                    .foregroundColor(ColorManager .grey1)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
+//                Text("Maybe, it's been bugging you")
+//                    .font(.system(size: 27))
+//                    .foregroundColor(ColorManager .grey1)
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+//
+//
+//                Text("all week")
+//                    .font(.system(size: 27))
+//                    .foregroundColor(ColorManager .grey1)
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height: 20)
                 
                 VStack {
                     
-                    Text("Sure,")
+                    Text("Sure, sometimes")
                         .font(.system(size: 20))
                         .foregroundColor(ColorManager .grey1)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
-                    Text("everyone's a little uncomfortable")
+                    Text("everyone's a little uncomfortable or")
                         .font(.system(size: 20))
                         .foregroundColor(ColorManager .grey2)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
-                    Text("saying anything")
+                    Text("scared to say anything")
                         .font(.system(size: 20))
                         .foregroundColor(ColorManager .grey2)
                         .fontWeight(.light)
@@ -84,24 +84,29 @@ struct HurtFeelings4: View {
                     
                     VStack {
                         
-                        Text("But,")
+                        Text("But, we're right here with you")
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Text("let's try joining others on BF saying,")
+                        Text("join friends on BF saying,")
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager .grey2)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Text("[You hurt my feelings, let's talk]")
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        Text("[You hurt my feelings, meet me in BFs]")
                             .font(.system(size: 17))
                             .italic()
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
+                        
+                   
                         
                         Spacer()
                             .frame(height: 25)
@@ -209,6 +214,22 @@ struct HurtFeelings4: View {
                     
                     
                     VStack {
+                        
+                        Spacer()
+                            .frame(height: 10)
+                        Text("And the Best Part;")
+                            .font(.system(size: 15))
+                            .italic()
+                            .foregroundColor(Color .black)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("we'll say it for you in a push notification")
+                            .font(.system(size: 15))
+                            .italic()
+                            .foregroundColor(Color .black)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
                         
                         Spacer()
                             .frame(height: 30)

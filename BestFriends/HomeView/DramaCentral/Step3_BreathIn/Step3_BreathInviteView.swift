@@ -118,12 +118,12 @@ struct Step3_BreathInviteView: View {
                             Spacer()
                                 .frame(height: 80)
                      
-                            Text("maybe some")
-                                .font(.system(size: 15, weight: .light))
-                                .italic()
-                                .fontWeight(.light)
-                                .foregroundColor(ColorManager .grey4)
-                                .multilineTextAlignment(.center)
+//                            Text("maybe some")
+//                                .font(.system(size: 15, weight: .light))
+//                                .italic()
+//                                .fontWeight(.light)
+//                                .foregroundColor(ColorManager .grey4)
+//                                .multilineTextAlignment(.center)
                             
                             
                             NavigationLink(destination: HurtFeelings4(user: user, friends: friends, groups: groups),
@@ -138,7 +138,7 @@ struct Step3_BreathInviteView: View {
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 })
                             
-                            Text("join others on BF fixing this")
+                            Text("join others on BF addressing this")
                                 .font(.system(size: 15, weight: .light))
                                 .italic()
                                 .fontWeight(.light)
