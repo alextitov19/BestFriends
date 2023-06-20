@@ -84,7 +84,7 @@ struct HomeView: View {
                             NavigationLink(
                                 destination: BuiltByTeensView(user: homeData!.user, friends: homeData!.friends),
                                 label: {
-                                    Text("Friendship Galaxy")
+                                    Text("Friend Galaxy")
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 16, weight: .light))
                                 })
