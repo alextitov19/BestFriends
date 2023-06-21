@@ -50,7 +50,7 @@ struct CreateNewJournalView: View {
                     Image("happyMood")
                         .renderingMode(.template)
                         .resizable()
-                        .foregroundColor(.yellow)
+                        .foregroundColor(.orange)
                         .frame(width: 30, height: 30)
                 }
                 .padding()

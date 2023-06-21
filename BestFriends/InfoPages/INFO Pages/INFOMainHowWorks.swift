@@ -29,7 +29,7 @@ struct INFOMainHowWorks: View {
         ZStack {
             
             
-            ColorManager.purple1
+            ColorManager.grey4
                 .ignoresSafeArea()
                 .onAppear()
             

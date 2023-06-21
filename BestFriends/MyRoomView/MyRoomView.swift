@@ -32,15 +32,16 @@ struct MyRoomView: View {
                 Text("my friendships")
                     .foregroundColor(ColorManager .grey2)
                     .font(.system(size: 16, weight: .light))
+                    .opacity(0.7)
                 
                 
                 NavigationLink(destination: HugPushNotification2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                MyRoomRowView(title: "CareHearts", imageName: "heart", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                MyRoomRowView(title: "CareHearts", imageName: "heart", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 })
                 
                 
                 NavigationLink(destination: JournalsView(friends: friends), label: {
-                    MyRoomRowView(title: "Interactive Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                    MyRoomRowView(title: "Interactive Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 })
                 
 //            **************** Andy the link below is the one for the Vibe Tracker
@@ -52,7 +53,7 @@ struct MyRoomView: View {
             
                 
                 NavigationLink(destination: Step3_BreathInviteView(user: user, friends: friends, groups: groups), label: {
-                    MyRoomRowView(title: "My Feelings", imageName: "wind", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                    MyRoomRowView(title: "My Feelings", imageName: "wind", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 })
 //
 //                NavigationLink(destination: AffirmationMain(), label: {
@@ -64,7 +65,7 @@ struct MyRoomView: View {
 
 
                 NavigationLink(destination: INFOPreloadA(user: user, friends: friends), label: {
-                MyRoomRowView(title: "What are your \nfriend doing?", imageName: "camera", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                MyRoomRowView(title: "What are your \nfriend doing?", imageName: "camera", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 })
           
                 
@@ -85,6 +86,7 @@ struct MyRoomView: View {
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 15))
                             .background(Color .purple)
+                                .opacity(0.6)
                             .cornerRadius(12)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
@@ -127,6 +129,7 @@ struct MyRoomView: View {
                 }
             }
             .frame(width: 300, height: 60)
+            .opacity(0.6)
             .cornerRadius(15)
             .padding()
         }

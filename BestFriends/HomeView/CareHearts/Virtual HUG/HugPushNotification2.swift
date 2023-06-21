@@ -50,15 +50,22 @@ struct HugPushNotification2: View {
             
             
             VStack {
-                Text("Ouch!")
-                    .font(.system(size: 60))
+//                Text("Ouch!")
+//                    .font(.system(size: 60))
+//                //                    .italic()
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(ColorManager .grey1)
+                
+                Text("Something bad")
+                    .font(.system(size: 32))
                 //                    .italic()
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager .grey1)
                 
-                Text("Something bad just happened")
-                    .font(.system(size: 26))
+                Text("just happened")
+                    .font(.system(size: 32))
                 //                    .italic()
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
@@ -74,7 +81,7 @@ struct HugPushNotification2: View {
                     .foregroundColor(ColorManager .grey2)
                
                 Spacer ()
-                    .frame(height: 15)
+                    .frame(height: 23)
                 
 
                 
@@ -104,6 +111,7 @@ struct HugPushNotification2: View {
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
                             .background(Color .purple)
+                            .opacity(0.5)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
@@ -145,6 +153,7 @@ struct HugPushNotification2: View {
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 30))
                                     .background(Color .orange)
+                                    .opacity(0.5)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })

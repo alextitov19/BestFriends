@@ -69,20 +69,20 @@ struct INFOPreloadA: View {
                 HStack {
                     VStack {
                         
-                        Text("What's")
-                            .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .grey1)
-                        
-                        
-                        Text("Up?")
-                            .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .grey1)
+//                        Text("What's")
+//                            .font(.system(size: 35, weight: .ultraLight))
+//                            .foregroundColor(ColorManager .grey1)
+//                        
+//                        
+//                        Text("Up?")
+//                            .font(.system(size: 35, weight: .ultraLight))
+//                            .foregroundColor(ColorManager .grey1)
                         
                     }
                     
-                    Image("orangeRocket")
-                        .resizable()
-                        .frame(width: 200, height: 200)
+//                    Image("orangeRocket")
+//                        .resizable()
+//                        .frame(width: 200, height: 200)
                     
 //                    Image("KissesHeart")
 //                        .resizable()
@@ -95,21 +95,21 @@ struct INFOPreloadA: View {
                     Spacer()
                         .frame(height: 25)
                     Text("Wondering what your")
-                                            .font(.system(size: 20))
+                                            .font(.system(size: 40))
                 
                                             .foregroundColor(ColorManager .grey2)
                                             .fontWeight(.thin)
                                             .multilineTextAlignment(.center)
 
                     Text("friends are doing?")
-                                            .font(.system(size: 20))
+                                            .font(.system(size: 40))
                 
                                             .foregroundColor(ColorManager .grey2)
                                             .fontWeight(.thin)
                                             .multilineTextAlignment(.center)
                     
                     Spacer()
-                        .frame(height: 25)
+                        .frame(height: 50)
                     
                     Text("STOP Texting")
                                             .font(.system(size: 25))

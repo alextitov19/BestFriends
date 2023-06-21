@@ -86,7 +86,7 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 15)
                         
-                        Text("Send me")
+                        Text("Please")
 //                          .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
@@ -94,7 +94,7 @@ struct AtmosphereMain2: View {
                           .foregroundColor(ColorManager .grey1)
                        
                         
-                        Text("interplanetary")
+                        Text("send me")
 //                          .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
@@ -213,21 +213,21 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 15)
                         
-                        Text("Hidout")
+                        Text("Need")
 //                          .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
                           .foregroundColor(ColorManager .grey1)
                         
-                        Text("on")
+                        Text("time")
 //                          .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
                           .foregroundColor(ColorManager .grey1)
                         
-                        Text("My Planet")
+                        Text("alone")
 //                          .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
