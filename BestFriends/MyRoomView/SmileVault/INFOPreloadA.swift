@@ -80,7 +80,7 @@ struct INFOPreloadA: View {
                         
                     }
                     
-                    Image("BalloonGuy")
+                    Image("orangeRocket")
                         .resizable()
                         .frame(width: 200, height: 200)
                     
@@ -91,15 +91,39 @@ struct INFOPreloadA: View {
              
          
                 VStack {
+                    
+                    Spacer()
+                        .frame(height: 25)
+                    Text("Wondering what your")
+                                            .font(.system(size: 20))
+                
+                                            .foregroundColor(ColorManager .grey2)
+                                            .fontWeight(.thin)
+                                            .multilineTextAlignment(.center)
 
-                    Text("STOP Texting - ask for a Pic!")
+                    Text("friends are doing?")
+                                            .font(.system(size: 20))
+                
+                                            .foregroundColor(ColorManager .grey2)
+                                            .fontWeight(.thin)
+                                            .multilineTextAlignment(.center)
+                    
+                    Spacer()
+                        .frame(height: 25)
+                    
+                    Text("STOP Texting")
                                             .font(.system(size: 25))
                 
                                             .foregroundColor(ColorManager .grey1)
                                             .fontWeight(.thin)
                                             .multilineTextAlignment(.center)
 
-                  
+                    Text("just ask for a PhotoPoP!")
+                                            .font(.system(size: 25))
+                
+                                            .foregroundColor(ColorManager .grey1)
+                                            .fontWeight(.thin)
+                                            .multilineTextAlignment(.center)
                     
                     
                     
@@ -246,21 +270,21 @@ struct INFOPreloadA: View {
                                          .opacity(0.70)
                                      
                                  })
-                            
-                            Spacer()
-                                .frame(height: 25)
-                            
-                            NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
-                                            label: {
-                                Text("Send them a PhotoPOP")
-                                    .fontWeight(.thin)
-                                    .frame(width: 310, height: 50)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 30))
-                                    .background(Color .orange)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            })
+//                            
+//                            Spacer()
+//                                .frame(height: 25)
+//                            
+//                            NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
+//                                            label: {
+//                                Text("Send them a PhotoPOP")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 310, height: 50)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 30))
+//                                    .background(Color .orange)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            })
                             
                             Spacer()
                                 .frame(height: 30)
@@ -295,7 +319,7 @@ struct INFOPreloadA: View {
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "You got new Kisses!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "What are you doing? Send PhotoPoP!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                         print("Create a kiss notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)
