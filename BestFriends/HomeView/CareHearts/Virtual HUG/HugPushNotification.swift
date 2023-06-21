@@ -43,7 +43,7 @@ struct HugPushNotification: View {
                 
                 
                 
-                            ColorManager.purple2
+                            ColorManager.purple5
                                 .ignoresSafeArea()
                                 .onAppear()
 //                Image("purpleBackground")
@@ -55,13 +55,24 @@ struct HugPushNotification: View {
                 AdPlayerView(name: "dramaLights")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-            } else {
-                AdPlayerView(name: "")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
                 
-                ColorManager.purple1
+            } else {
+//                AdPlayerView(name: "")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//
+//                ColorManager.purple1
+//                    .ignoresSafeArea()
+                ColorManager.purple7
+                    .opacity(0.8)
                     .ignoresSafeArea()
+                    .onAppear()
+
+    AdPlayerView(name: "sky2")
+        .ignoresSafeArea()
+        .blendMode(.screen)
+                
+                
             }
             
 //            ColorManager .purple1
@@ -72,6 +83,7 @@ struct HugPushNotification: View {
 //                .blendMode(.screen)
 
             
+            
             VStack{
                 
                 HStack {
@@ -79,12 +91,12 @@ struct HugPushNotification: View {
                         
                         Text("Send")
                             .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .purple7)
+                            .foregroundColor(ColorManager .grey2)
                         
                         
                         Text("a Hug")
                             .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .purple7)
+                            .foregroundColor(ColorManager .grey2)
                         
                     }
                     
@@ -99,23 +111,23 @@ struct HugPushNotification: View {
                     Text("Send the joy of")
                         .font(.system(size: 17))
                         .fontWeight(.ultraLight)
-                        .foregroundColor(ColorManager .grey3)
+                        .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     
                     
                     Text("kicking through Autumn's leaves")
                         .font(.system(size: 17))
                         .fontWeight(.ultraLight)
-                        .foregroundColor(ColorManager .grey3)
+                        .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
 
                     Spacer()
                         .frame(height: 25)
                     
-                    Text("and comfort of \nhot chocolate on a blistery winter's day")
+                    Text("or the comfort of \nhot chocolate on a blistery winter's day")
                         .font(.system(size: 17))
                         .fontWeight(.ultraLight)
-                        .foregroundColor(ColorManager .grey3)
+                        .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     
                     VStack {

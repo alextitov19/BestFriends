@@ -38,48 +38,52 @@ struct SendKisses: View {
         
         ZStack {
       
-            ColorManager.purple7
-                .opacity(0.8)
-                .ignoresSafeArea()
-                .onAppear()
+//            ColorManager.purple7
+//                .opacity(0.8)
+//                .ignoresSafeArea()
+//                .onAppear()
+//
+//AdPlayerView(name: "sky2")
+//    .ignoresSafeArea()
+//    .blendMode(.screen)
 
-AdPlayerView(name: "sky2")
-    .ignoresSafeArea()
-    .blendMode(.screen)
             
-//
-//            if shareTapped {
-//
-//
-//
-//                            ColorManager.purple7
-//                                .opacity(0.8)
-//                                .ignoresSafeArea()
-//                                .onAppear()
-//
-//                AdPlayerView(name: "sky2")
+            
+            if shareTapped {
+                
+                
+                
+                            ColorManager.purple5
+                                .ignoresSafeArea()
+                                .onAppear()
+//                Image("purpleBackground")
+//                    .resizable()
+//                    .ignoresSafeArea()
+//                    .scaledToFill()
+//                    .ignoresSafeArea()
+                
+                AdPlayerView(name: "dramaLights")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                
+            } else {
+//                AdPlayerView(name: "")
 //                    .ignoresSafeArea()
 //                    .blendMode(.screen)
-//
-//            } else {
 //
 //                ColorManager.purple1
 //                    .ignoresSafeArea()
-//
-//                AdPlayerView(name: "sky2")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//
-//
-//            }
-//
-//            ColorManager .purple1
-//                .ignoresSafeArea()
-//
-//            AdPlayerView(name: "sky2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
+                ColorManager.purple7
+                    .opacity(0.5)
+                    .ignoresSafeArea()
+                    .onAppear()
 
+    AdPlayerView(name: "sky2")
+        .ignoresSafeArea()
+        .blendMode(.screen)
+                
+                
+            }
             
             VStack{
                 
@@ -263,7 +267,7 @@ AdPlayerView(name: "sky2")
                                     Button("OK", role: .cancel) { }
                                 }
                         })
-                        .confettiCannon(counter: $counter)
+//                        .confettiCannon(counter: $counter)
 
                         
                         VStack {
@@ -285,7 +289,7 @@ AdPlayerView(name: "sky2")
                                  })
                             
                             Spacer()
-                                .frame(height: 30)
+                                .frame(height: 60)
                             
                             
 //                            Image("KissesHeart")
