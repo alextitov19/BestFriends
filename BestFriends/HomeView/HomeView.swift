@@ -61,6 +61,7 @@ struct HomeView: View {
                 AdPlayerView(name: "MyGalexy")
                     .ignoresSafeArea()
                     .blendMode(.screen)
+                    .opacity(0.6)
                 
                 VStack {
                     if ((homeData) != nil) {
@@ -70,6 +71,7 @@ struct HomeView: View {
                                 .scaledToFit()
                                 .frame(width: 35, height: 35)
                                 .foregroundColor(.white)
+                                .opacity(0.5)
                                 .onTapGesture {
                                     print("Clicked notification bell")
                                     presentingIANs.toggle()
@@ -87,6 +89,7 @@ struct HomeView: View {
                                     Text("Friendships Galaxy")
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 16, weight: .light))
+                                        .opacity(0.7)
                                 })
                             
                             Spacer()
@@ -100,6 +103,7 @@ struct HomeView: View {
                                         .resizable()
                                         .scaledToFit()
                                         .frame(width: 35, height: 35)
+                                        .opacity(0.5)
                                         .foregroundColor(.white)
                                 })
                         }

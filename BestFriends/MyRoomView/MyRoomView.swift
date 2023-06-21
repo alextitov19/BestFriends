@@ -29,7 +29,7 @@ struct MyRoomView: View {
             VStack {
 
                 
-                Text("My Planet")
+                Text("my friendships")
                     .foregroundColor(ColorManager .grey2)
                     .font(.system(size: 16, weight: .light))
                 
