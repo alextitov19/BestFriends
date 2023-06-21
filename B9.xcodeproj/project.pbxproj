@@ -273,6 +273,7 @@
 		CFD12CCF281A67FC00AB2539 /* DramaMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CCE281A67FC00AB2539 /* DramaMainView.swift */; };
 		CFD12CD1281A754200AB2539 /* Step1_NotReadyTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CD0281A754200AB2539 /* Step1_NotReadyTalk.swift */; };
 		CFD12CD3281A821C00AB2539 /* FightWithFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CD2281A821C00AB2539 /* FightWithFriend.swift */; };
+		CFD25F652A42B1E70043D613 /* MyGalexy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFD25F642A42B1E70043D613 /* MyGalexy.mp4 */; };
 		CFD6C051293E802500D57E0B /* SomethingNice1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6C050293E802500D57E0B /* SomethingNice1.swift */; };
 		CFD6C055293EA9E600D57E0B /* HugPushNotification2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6C054293EA9E600D57E0B /* HugPushNotification2.swift */; };
 		CFD6C0572940532F00D57E0B /* SaySomethingNice8.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6C0562940532F00D57E0B /* SaySomethingNice8.swift */; };
@@ -572,6 +573,7 @@
 		CFD12CCE281A67FC00AB2539 /* DramaMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramaMainView.swift; sourceTree = "<group>"; };
 		CFD12CD0281A754200AB2539 /* Step1_NotReadyTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1_NotReadyTalk.swift; sourceTree = "<group>"; };
 		CFD12CD2281A821C00AB2539 /* FightWithFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightWithFriend.swift; sourceTree = "<group>"; };
+		CFD25F642A42B1E70043D613 /* MyGalexy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyGalexy.mp4; sourceTree = "<group>"; };
 		CFD6C050293E802500D57E0B /* SomethingNice1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingNice1.swift; sourceTree = "<group>"; };
 		CFD6C054293EA9E600D57E0B /* HugPushNotification2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugPushNotification2.swift; sourceTree = "<group>"; };
 		CFD6C0562940532F00D57E0B /* SaySomethingNice8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingNice8.swift; sourceTree = "<group>"; };
@@ -1196,6 +1198,7 @@
 		CF5263FC266F201000243DD7 /* Background Videos */ = {
 			isa = PBXGroup;
 			children = (
+				CFD25F642A42B1E70043D613 /* MyGalexy.mp4 */,
 				CF5263D6266477C600243DD7 /* background_4.mp4 */,
 				7A78232926B2419600CA76FC /* background_5.mp4 */,
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
@@ -1677,6 +1680,7 @@
 				CFCB79A1284D2F9000B8D868 /* HugVideo.mp4 in Resources */,
 				CF4A08EE2879577E00ADA9DD /* sky2.mp4 in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,
+				CFD25F652A42B1E70043D613 /* MyGalexy.mp4 in Resources */,
 				CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */,
 				7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */,
 				7A78232E26B2419600CA76FC /* background_5.mp4 in Resources */,

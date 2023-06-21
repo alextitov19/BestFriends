@@ -75,27 +75,79 @@ struct HugPushNotification: View {
 
             
             
-            VStack{
-                
-                HStack {
-                    VStack {
-                        
-                        Text("Send")
-                            .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .grey2)
-                        
-                        
-                        Text("a Hug")
-                            .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .grey2)
-                        
-                    }
-                    
-                    Image("SendHug3")
-                        .resizable()
-                        .frame(width: 200, height: 200)
-                }
+//            VStack{
+//
+//                HStack {
+//                    VStack {
+//
+//                        Text("Send")
+//                            .font(.system(size: 35, weight: .ultraLight))
+//                            .foregroundColor(ColorManager .grey2)
+//
+//
+//                        Text("a Hug")
+//                            .font(.system(size: 35, weight: .ultraLight))
+//                            .foregroundColor(ColorManager .grey2)
+//
+//                    }
+//
+////                    Image("SendHug3")
+////                        .resizable()
+////                        .frame(width: 200, height: 200)
+//                }
              
+//           *************************************
+                
+                VStack{
+                    
+                    HStack {
+                        VStack {
+                       
+                            
+                            
+                            Spacer()
+                                .frame(height: 10)
+                            
+                            ZStack {
+                                
+                                    Image("KissesHeart")
+                                        .resizable()
+                                        .frame(width: 400, height: 325)
+                                        .opacity(0.15)
+                                    
+                                    
+                                VStack {
+                                    Text("sending lightspeed")
+                                        .font(.system(size: 30, weight: .light))
+                                        .foregroundColor(ColorManager .grey3)
+                                    
+                                    
+//                                    Text("at")
+//                                        .font(.system(size: 27, weight: .light))
+//                                        .foregroundColor(ColorManager .grey3)
+                                    
+                                    Text("Hugs")
+                                        .font(.system(size: 55, weight: .light))
+                                        .foregroundColor(ColorManager .grey2)
+                                }
+                            }
+                          
+                            
+                        }
+                        
+    //                    Image("BalloonGuy")
+    //                        .resizable()
+    //                        .frame(width: 200, height: 200)
+                    }
+                
+                
+                
+                
+                
+                
+                
+                
+//                *********************************************************
          
                 VStack {
 
@@ -115,11 +167,18 @@ struct HugPushNotification: View {
                     Spacer()
                         .frame(height: 25)
                     
-                    Text("or the comfort of \nhot chocolate on a blistery winter's day")
+                    Text("or the comfort of")
                         .font(.system(size: 17))
                         .fontWeight(.ultraLight)
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
+                    
+                    Text("hot chocolate on a blistery winter's day")
+                        .font(.system(size: 17))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(ColorManager .grey1)
+                        .multilineTextAlignment(.center)
+                    
                     
                     VStack {
 
