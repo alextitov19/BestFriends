@@ -27,28 +27,12 @@ struct MyRoomView: View {
                 .blendMode(.screen)
             
             VStack {
+
                 
-//                Text("My Room")
-//                    .font(.system(size: 40, weight: .light))
-//                    .foregroundColor(ColorManager.purple5)
-//                Spacer()
-//                    .frame(height: 70)
-                Spacer()
-//                NavigationLink(
-//                    destination: BuiltByTeensView(user: user, friends: friends),
-//                    label: {
-//                        Text("designed around teens \nby teen girls")
-////                            .foregroundColor(Color.white)
-////                            .font(.system(size: 16, weight: .light))
-//
-//                            .fontWeight(.thin)
-//                            .frame(width: 200, height: 40)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                            .font(.system(size: 15))
-//                            .background(Color .purple)
-//                            .cornerRadius(12)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                    })
+                Text("My Planet")
+                    .foregroundColor(ColorManager .grey2)
+                    .font(.system(size: 16, weight: .light))
+                
                 
                 NavigationLink(destination: HugPushNotification2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
                 MyRoomRowView(title: "CareHearts", imageName: "heart", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
