@@ -37,33 +37,42 @@ struct SendKisses: View {
     var body: some View {
         
         ZStack {
-          
+      
+            ColorManager.purple7
+                .opacity(0.8)
+                .ignoresSafeArea()
+                .onAppear()
+
+AdPlayerView(name: "sky2")
+    .ignoresSafeArea()
+    .blendMode(.screen)
             
-            if shareTapped {
-                
-                
-                
-                            ColorManager.purple2
-                                .ignoresSafeArea()
-                                .onAppear()
-//                Image("purpleBackground")
-//                    .resizable()
+//
+//            if shareTapped {
+//
+//
+//
+//                            ColorManager.purple7
+//                                .opacity(0.8)
+//                                .ignoresSafeArea()
+//                                .onAppear()
+//
+//                AdPlayerView(name: "sky2")
 //                    .ignoresSafeArea()
-//                    .scaledToFill()
+//                    .blendMode(.screen)
+//
+//            } else {
+//
+//                ColorManager.purple1
 //                    .ignoresSafeArea()
-                
-                AdPlayerView(name: "dramaLights")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-            } else {
-                AdPlayerView(name: "")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                
-                ColorManager.purple1
-                    .ignoresSafeArea()
-            }
-            
+//
+//                AdPlayerView(name: "sky2")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//
+//
+//            }
+//
 //            ColorManager .purple1
 //                .ignoresSafeArea()
 //
@@ -76,33 +85,62 @@ struct SendKisses: View {
                 
                 HStack {
                     VStack {
-                        
-                        Text("Blowing")
-                            .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .purple7)
+                   
                         
                         
-                        Text("Kisses")
-                            .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .purple7)
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        ZStack {
+                            
+                                Image("KissesHeart")
+                                    .resizable()
+                                    .frame(width: 400, height: 325)
+                                    .opacity(0.15)
+                                
+                                
+                            VStack {
+                                Text("blowing")
+                                    .font(.system(size: 30, weight: .light))
+                                    .foregroundColor(ColorManager .grey3)
+                                
+                                
+                                Text("kisses")
+                                    .font(.system(size: 55, weight: .light))
+                                    .foregroundColor(ColorManager .grey2)
+                            }
+                        }
+                      
                         
                     }
                     
-                    Image("BalloonGuy")
-                        .resizable()
-                        .frame(width: 200, height: 200)
+//                    Image("BalloonGuy")
+//                        .resizable()
+//                        .frame(width: 200, height: 200)
                 }
              
          
                 VStack {
 
-                    Text("Jump up on a chair, then ...")
-                                            .font(.system(size: 25))
+                    Text("Jump up on a chair,")
+                                            .font(.system(size: 23))
                 
                                             .foregroundColor(ColorManager .grey2)
                                             .fontWeight(.thin)
                                             .multilineTextAlignment(.center)
-
+                    Text("then blow your kiss high up into ")
+                                            .font(.system(size: 23))
+                
+                                            .foregroundColor(ColorManager .grey2)
+                                            .fontWeight(.thin)
+                                            .multilineTextAlignment(.center)
+                    
+                    Text("the atmosphere towards your friend")
+                                            .font(.system(size: 23))
+                
+                                            .foregroundColor(ColorManager .grey2)
+                                            .fontWeight(.thin)
+                                            .multilineTextAlignment(.center)
                     VStack {
 
                         Spacer()
@@ -221,7 +259,7 @@ struct SendKisses: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("blow your kisses high up in the air floating towards your friend. \n\nThat's perfect", isPresented: $showingAlert) {
+                                .alert("It's on it's way. \n\nYour friend just got a push notification asking them to jump up a catch it.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -248,9 +286,12 @@ struct SendKisses: View {
                             
                             Spacer()
                                 .frame(height: 30)
-                            Image("KissesHeart")
-                                .resizable()
-                                .frame(width: 200, height: 150)
+                            
+                            
+//                            Image("KissesHeart")
+//                                .resizable()
+//                                .frame(width: 200, height: 150)
+//                                .opacity(0.5)
                    
                         }
                         

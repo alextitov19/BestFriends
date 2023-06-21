@@ -35,23 +35,7 @@ struct HugPreload: View {
                 .ignoresSafeArea()
                 .blendMode(.screen)
 
-//            ColorManager .grey2
-//                            .ignoresSafeArea()
-//                            .onAppear()
-//                            .scaledToFill()
-//
-////
-////            Image("purpleBackground")
-////                .resizable()
-////                .ignoresSafeArea()
-////                .scaledToFill()
-////                .opacity(0.5)
-////
-//
-//
-//            AdPlayerView(name: "sky2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
+
 
 
             ZStack{

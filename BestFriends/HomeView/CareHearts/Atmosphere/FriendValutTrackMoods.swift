@@ -31,7 +31,7 @@ struct FriendVaultTrackMoods: View {
                  .scaledToFill()
 
                      
-            AdPlayerView(name: "MyRoom5")
+            AdPlayerView(name: "sky2")
                           .ignoresSafeArea()
                            .blendMode(.screen)
             
