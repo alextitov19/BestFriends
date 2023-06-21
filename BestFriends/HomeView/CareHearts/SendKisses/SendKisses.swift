@@ -38,16 +38,7 @@ struct SendKisses: View {
         
         ZStack {
       
-//            ColorManager.purple7
-//                .opacity(0.8)
-//                .ignoresSafeArea()
-//                .onAppear()
-//
-//AdPlayerView(name: "sky2")
-//    .ignoresSafeArea()
-//    .blendMode(.screen)
 
-            
             
             if shareTapped {
                 
@@ -56,23 +47,14 @@ struct SendKisses: View {
                             ColorManager.purple5
                                 .ignoresSafeArea()
                                 .onAppear()
-//                Image("purpleBackground")
-//                    .resizable()
-//                    .ignoresSafeArea()
-//                    .scaledToFill()
-//                    .ignoresSafeArea()
-                
+
                 AdPlayerView(name: "dramaLights")
+                    .opacity(0.5)
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
             } else {
-//                AdPlayerView(name: "")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//
-//                ColorManager.purple1
-//                    .ignoresSafeArea()
+
                 ColorManager.purple7
                     .opacity(0.5)
                     .ignoresSafeArea()
@@ -289,7 +271,7 @@ struct SendKisses: View {
                                  })
                             
                             Spacer()
-                                .frame(height: 60)
+                                .frame(height: 80)
                             
                             
 //                            Image("KissesHeart")

@@ -46,23 +46,14 @@ struct HugPushNotification: View {
                             ColorManager.purple5
                                 .ignoresSafeArea()
                                 .onAppear()
-//                Image("purpleBackground")
-//                    .resizable()
-//                    .ignoresSafeArea()
-//                    .scaledToFill()
-//                    .ignoresSafeArea()
+
                 
                 AdPlayerView(name: "dramaLights")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
             } else {
-//                AdPlayerView(name: "")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//
-//                ColorManager.purple1
-//                    .ignoresSafeArea()
+
                 ColorManager.purple7
                     .opacity(0.8)
                     .ignoresSafeArea()
