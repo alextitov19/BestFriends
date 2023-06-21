@@ -80,7 +80,7 @@ struct MyRoomView: View {
 
 
                 NavigationLink(destination: INFOPreloadA(user: user, friends: friends), label: {
-                MyRoomRowView(title: "What are you doing?", imageName: "camera", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                MyRoomRowView(title: "What's your friend doing?", imageName: "camera", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 })
           
                 
@@ -142,7 +142,7 @@ struct MyRoomView: View {
                         .foregroundColor(Color(cgColor: foregroundColor))
                 }
             }
-            .frame(width: 285, height: 60)
+            .frame(width: 300, height: 60)
             .cornerRadius(15)
             .padding()
         }
