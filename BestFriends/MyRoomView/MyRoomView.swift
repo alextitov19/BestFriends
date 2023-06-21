@@ -64,7 +64,7 @@ struct MyRoomView: View {
 
 
                 NavigationLink(destination: INFOPreloadA(user: user, friends: friends), label: {
-                MyRoomRowView(title: "What's your friend doing?", imageName: "camera", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                MyRoomRowView(title: "What are your \nfriend doing?", imageName: "camera", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 })
           
                 
