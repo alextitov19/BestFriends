@@ -73,7 +73,8 @@ struct ChatGroupsView: View {
                             Text("Chat Rooms")
                                 .font(.system(size: 25))
                                 .fontWeight(.thin)
-                                .foregroundColor(ColorManager.purple2)
+                                .foregroundColor(ColorManager.grey2)
+                                .opacity(0.6)
                         }
                         
                         //MARK: ScrollView content...
