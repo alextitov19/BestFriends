@@ -25,19 +25,20 @@ struct SaySomethingNice6: View {
         ZStack {
             
             
-            Color .black
+//            Color .black
+//                .ignoresSafeArea()
+//                .onAppear()
+//            
+//        
+//            
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+            
+            
+            ColorManager.grey4
                 .ignoresSafeArea()
                 .onAppear()
-            
-            //            Image("purpleBackground")
-            //                 .resizable()
-            //                 .ignoresSafeArea()
-            //                 .scaledToFill()
-            
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-            
             
             VStack {
                 
