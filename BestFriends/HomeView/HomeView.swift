@@ -61,7 +61,7 @@ struct HomeView: View {
                 AdPlayerView(name: "MyGalexy")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.65)
+                    .opacity(0.7)
                 
                 VStack {
                     if ((homeData) != nil) {

@@ -124,7 +124,7 @@ struct SaySomethingNice6: View {
                         
                         destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                         label: {
-                            Text("SetUp Walk-through")
+                            Text("SetUp / Walk-through")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.white)
                                 .frame(width: 310, height: 60)

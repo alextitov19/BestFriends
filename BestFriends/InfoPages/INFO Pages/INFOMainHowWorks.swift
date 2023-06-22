@@ -35,6 +35,14 @@ struct INFOMainHowWorks: View {
             
             
             VStack {
+                Text("app looks best in 'dark' mode")
+                    .font(.system(size: 17))
+                    .italic()
+                    .foregroundColor(ColorManager.grey2)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                
+                
                 VStack {
                     
                     Button(action: {
