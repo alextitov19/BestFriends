@@ -36,12 +36,12 @@ struct MyRoomView: View {
                 
                 
                 NavigationLink(destination: HugPushNotification2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                MyRoomRowView(title: "CareHearts", imageName: "heart", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                MyRoomRowView(title: "CareHearts", imageName: "heart", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
                 
                 
                 NavigationLink(destination: JournalsView(friends: friends), label: {
-                    MyRoomRowView(title: "Interactive Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                    MyRoomRowView(title: "Interactive Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
                 
 //            **************** Andy the link below is the one for the Vibe Tracker
@@ -53,7 +53,7 @@ struct MyRoomView: View {
             
                 
                 NavigationLink(destination: Step3_BreathInviteView(user: user, friends: friends, groups: groups), label: {
-                    MyRoomRowView(title: "My Feelings", imageName: "wind", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                    MyRoomRowView(title: "My Feelings", imageName: "wind", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
 //
 //                NavigationLink(destination: AffirmationMain(), label: {
@@ -65,7 +65,7 @@ struct MyRoomView: View {
 
 
                 NavigationLink(destination: INFOPreloadA(user: user, friends: friends), label: {
-                MyRoomRowView(title: "What are your \nfriend doing?", imageName: "camera", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                MyRoomRowView(title: "What are your \nfriend doing?", imageName: "camera", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
           
                 
