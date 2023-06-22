@@ -24,19 +24,19 @@ struct BuiltByTeensView: View {
     var body: some View {
         ZStack {
             
-            Color .black
+//            Color .black
+//                .ignoresSafeArea()
+//                .onAppear()
+//
+//
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+            
+            ColorManager.grey4
                 .ignoresSafeArea()
                 .onAppear()
-            
-            //            Image("purpleBackground")
-            //                 .resizable()
-            //                 .ignoresSafeArea()
-            //                 .scaledToFill()
-            //
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-            
+           
             
             VStack {
                 
@@ -106,7 +106,7 @@ struct BuiltByTeensView: View {
                                     .frame(width: 300, height: 60)
                                     .font(.system(size: 20))
                                     .background(Color.orange)
-                                    .cornerRadius(7)
+                                    .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 
                             })
@@ -163,7 +163,7 @@ struct BuiltByTeensView: View {
                                         .frame(width: 250, height: 60)
                                         .font(.system(size: 35))
                                         .background(Color.purple)
-                                        .cornerRadius(7)
+                                        .cornerRadius(15)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     
                                 })
