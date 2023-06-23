@@ -265,7 +265,7 @@
 //                        .multilineTextAlignment(.center)
 //
 //
-//
+
 //                        Spacer()
 //                            .frame(height: 20)
 //
@@ -291,7 +291,7 @@
 //                            .foregroundColor(ColorManager .grey2)
 //                            .fontWeight(.light)
 //                            .multilineTextAlignment(.center)
-//
+
 //
 //
 //                    }
@@ -499,20 +499,20 @@ struct HurtFeelings4: View {
 //
 //                    Text("Jump up on a chair,")
 //                                            .font(.system(size: 23))
-//                
+//
 //                                            .foregroundColor(ColorManager .grey2)
 //                                            .fontWeight(.thin)
 //                                            .multilineTextAlignment(.center)
 //                    Text("then blow your kiss high up into ")
 //                                            .font(.system(size: 23))
-//                
+//
 //                                            .foregroundColor(ColorManager .grey2)
 //                                            .fontWeight(.thin)
 //                                            .multilineTextAlignment(.center)
-//                    
+//
 //                    Text("the atmosphere towards your friend")
 //                                            .font(.system(size: 23))
-//                
+//
 //                                            .foregroundColor(ColorManager .grey2)
 //                                            .fontWeight(.thin)
 //                                            .multilineTextAlignment(.center)
@@ -658,6 +658,56 @@ struct HurtFeelings4: View {
                                          .opacity(0.70)
                                      
                                  })
+                            
+                            
+                            Spacer()
+                                .frame(height: 30)
+
+
+                            Text("We can help you")
+                                .font(.system(size: 30))
+                                .italic()
+                                .foregroundColor(ColorManager .grey2)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+
+                            Text("send a message")
+                                .font(.system(size: 30))
+                                .italic()
+                                .foregroundColor(ColorManager .grey2)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+
+                            Spacer()
+                                .frame(height: 20)
+
+                            Text("Every Sunday at 8pm EDT join teens everywhere ")
+                                .font(.system(size: 17))
+                                .italic()
+                                .foregroundColor(ColorManager .grey2)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+
+
+                            Text("asking their friends to talk about it, ")
+                                .font(.system(size: 17))
+                                .italic()
+                                .foregroundColor(ColorManager .grey2)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+
+
+                            Text("now you're no longer alone!")
+                                .font(.system(size: 17))
+                                .italic()
+                                .foregroundColor(ColorManager .grey2)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+
+
+                            
+                            
+                            
                             
                             Spacer()
                                 .frame(height: 80)
