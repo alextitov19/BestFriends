@@ -20,7 +20,7 @@ struct YouGotThis: View {
             
 
             
-            ColorManager.grey2
+            ColorManager.grey1
                   .ignoresSafeArea()
      
                

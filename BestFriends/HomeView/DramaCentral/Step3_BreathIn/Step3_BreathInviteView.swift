@@ -21,7 +21,7 @@ struct Step3_BreathInviteView: View {
         
         ZStack {
             
-            ColorManager.grey2
+            ColorManager.grey3
                 .ignoresSafeArea()
             
    
@@ -41,20 +41,20 @@ struct Step3_BreathInviteView: View {
                     Text("HUGE FIGHT")
                         .font(.system(size: 30, weight: .bold))
                         .fontWeight(.light)
-                        .foregroundColor(ColorManager .grey3)
+                        .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     
                     Text("with your friend")
                         .font(.system(size: 25, weight: .bold))
                         .fontWeight(.light)
-                        .foregroundColor(ColorManager .grey3)
+                        .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     
                     
                     Text("or romantic partner?")
                         .font(.system(size: 25, weight: .bold))
                         .fontWeight(.light)
-                        .foregroundColor(ColorManager .grey3)
+                        .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     
                     

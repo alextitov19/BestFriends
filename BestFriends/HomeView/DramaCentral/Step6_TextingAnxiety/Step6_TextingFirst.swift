@@ -21,7 +21,7 @@ struct Step6_TextingFirst: View {
             
             
             
-            ColorManager.grey2
+            ColorManager.purple1
                 .ignoresSafeArea()
             
             
@@ -31,14 +31,14 @@ struct Step6_TextingFirst: View {
                 Text("Wanting to reach out, but")
                     .font(.system(size: 25, weight: .thin))
 //                    .italic()
-                    .foregroundColor(Color.white)
+                    .foregroundColor(ColorManager .grey3)
                     .multilineTextAlignment(.center)
                 
                 
                 Text("not exactly sure what to say")
                     .font(.system(size: 25, weight: .thin))
 //                    .italic()
-                    .foregroundColor(Color.white)
+                    .foregroundColor(ColorManager .grey3)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
@@ -64,18 +64,18 @@ struct Step6_TextingFirst: View {
                     
                     Text("Ready?")
                         .font(.system(size: 37, weight: .light))
-                        .foregroundColor(ColorManager .grey1)
+                        .foregroundColor(ColorManager .grey2)
                         .multilineTextAlignment(.center)
                     
                     Text("send them a")
                         .font(.system(size: 30, weight: .light))
-                        .foregroundColor(ColorManager .grey1)
+                        .foregroundColor(ColorManager .grey2)
                         .multilineTextAlignment(.center)
                     
                     
                     Text("text message")
                         .font(.system(size: 30, weight: .light))
-                        .foregroundColor(ColorManager .grey1)
+                        .foregroundColor(ColorManager .grey2)
                         .multilineTextAlignment(.center)
                     
                     Spacer()
