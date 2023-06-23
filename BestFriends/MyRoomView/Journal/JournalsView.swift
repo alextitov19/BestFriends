@@ -154,7 +154,7 @@ struct JournalsView: View {
                 if newJournalMood < 0 {
                     updateMood(mood: 3)
                 } else {
-                    updateMood(mood: 7)
+                    updateMood(mood: 9)
                 }
                 loadData()
             }
