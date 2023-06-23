@@ -52,40 +52,34 @@ struct PhotoPop3: View {
                         
                         Text("Up-loading to PhotoPOP")
                             .font(.system(size: 30, weight: .light))
-                            .foregroundColor(.green)
-//                        
+                            .foregroundColor(ColorManager .grey1)
+//
 //                        Spacer()
 //                            .frame(height: 10)
                         
                         Text("1) Tap 'camera' or 'gallary' icon to upload NEW image")
                             .font(.system(size: 20, weight: .light))
-    //                        .italic()
-                            .foregroundColor(.white)
+                            .foregroundColor(ColorManager .grey2)
                         
                         Text("2) Delete OLD image")
-                            .font(.system(size: 15))
-                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.red)
+                            .font(.system(size: 20, weight: .light))
+                            .foregroundColor(ColorManager .grey2)
                         
                      
                         
                         Text("before uploading NEW image")
-                            .font(.system(size: 15))
-                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.red)
+                            .font(.system(size: 20, weight: .light))
+                            .foregroundColor(ColorManager .grey2)
                         
                         Spacer()
-                            .frame(height: 40)
+                            .frame(height: 60)
                         
                         Text("Alert Friend(s)")
-                            .font(.system(size: 25, weight: .ultraLight))
-                            .foregroundColor(Color.white)
+                            .font(.system(size: 30, weight: .light))
+                            .foregroundColor(ColorManager .grey1)
                         
                   
+                    
                         
                         HStack {
                             //
@@ -204,7 +198,7 @@ struct PhotoPop3: View {
                     }
                     
                                         Spacer()
-                                            .frame(height: 50)
+                                            .frame(height: 40)
                 VStack {
                     
      
