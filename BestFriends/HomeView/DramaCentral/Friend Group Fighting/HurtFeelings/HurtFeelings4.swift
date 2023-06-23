@@ -43,82 +43,61 @@ struct HurtFeelings4: View {
             
             VStack {
                 
-//                Text("Maybe, it's been bugging you")
-//                    .font(.system(size: 27))
-//                    .foregroundColor(ColorManager .grey1)
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//
-//
-//                Text("all week")
-//                    .font(.system(size: 27))
-//                    .foregroundColor(ColorManager .grey1)
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
+                //                Text("Maybe, it's been bugging you")
+                //                    .font(.system(size: 27))
+                //                    .foregroundColor(ColorManager .grey1)
+                //                    .fontWeight(.light)
+                //                    .multilineTextAlignment(.center)
+                //
+                //
+                //                Text("all week")
+                //                    .font(.system(size: 27))
+                //                    .foregroundColor(ColorManager .grey1)
+                //                    .fontWeight(.light)
+                //                    .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height: 20)
                 
                 VStack {
+                    Text("It's been")
+                        .font(.system(size: 30))
+                    //                        .italic()
+                        .foregroundColor(ColorManager .grey2)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
                     
-//                    Text("Sure, sometimes")
-//                        .font(.system(size: 20))
-//                        .foregroundColor(ColorManager .grey1)
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//
-//                    Text("everyone's a little uncomfortable or")
-//                        .font(.system(size: 20))
-//                        .foregroundColor(ColorManager .grey2)
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//
-//                    Text("scared to say anything")
-//                        .font(.system(size: 20))
-//                        .foregroundColor(ColorManager .grey2)
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
+                    Text("bugging you all week")
+                        .font(.system(size: 35))
+                    //                        .italic()
+                        .foregroundColor(ColorManager .grey2)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                    
+                    
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 20)
                     
                     VStack {
                         
-                        Text("You hurt my feelings")
-                            .font(.system(size: 25))
+                        Text("But, maybe you're just a")
+                            .font(.system(size: 17))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Text("Let's talk about it")
-                            .font(.system(size: 23))
-//                            .italic()
+                        Text("little nervious to say something")
+                            .font(.system(size: 17))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Spacer()
-                            .frame(height: 10)
-                        
-                        Text("BF's can help you say it")
-                            .font(.system(size: 17))
-                            .italic()
-                            .foregroundColor(ColorManager .grey2)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                      
-                        Text("in a push notification")
-                            .font(.system(size: 17))
-                            .italic()
-                            .foregroundColor(ColorManager .grey2)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                     
-                        
-                   
                         
                         Spacer()
-                            .frame(height: 25)
+                            .frame(height: 40)
+                        
+                        
                         
                     }
                     
@@ -170,117 +149,163 @@ struct HurtFeelings4: View {
                         }
                     }
                 }
-                    Spacer()
-                        .frame(height: 15)
+                Spacer()
+                    .frame(height: 15)
+                
+                
+                HStack {
+                    if friends.count > 2 {
+                        RectView(user: user, friend: friends[2], color: colors[2])
+                            .onTapGesture(perform: {
+                                if selectedFriends.contains(friends[2].id) {
+                                    selectedFriends = selectedFriends.filter { $0 != friends[2].id }
+                                    colors[2] = ColorManager.purple3
+                                } else {
+                                    selectedFriends.append(friends[2].id)
+                                    colors[2] = ColorManager.purple5
+                                }
+                                print(selectedFriends)
+                            })
+                    }
                     
+                    if friends.count > 3 {
+                        RectView(user: user, friend: friends[3], color: colors[3])
+                            .onTapGesture(perform: {
+                                if selectedFriends.contains(friends[3].id) {
+                                    selectedFriends = selectedFriends.filter { $0 != friends[3].id }
+                                    colors[3] = ColorManager.purple3
+                                } else {
+                                    selectedFriends.append(friends[3].id)
+                                    colors[3] = ColorManager.purple5
+                                }
+                                print(selectedFriends)
+                            })
+                    }
                     
-                    HStack {
-                        if friends.count > 2 {
-                            RectView(user: user, friend: friends[2], color: colors[2])
-                                .onTapGesture(perform: {
-                                    if selectedFriends.contains(friends[2].id) {
-                                        selectedFriends = selectedFriends.filter { $0 != friends[2].id }
-                                        colors[2] = ColorManager.purple3
-                                    } else {
-                                        selectedFriends.append(friends[2].id)
-                                        colors[2] = ColorManager.purple5
-                                    }
-                                    print(selectedFriends)
-                                })
-                        }
-                        
-                        if friends.count > 3 {
-                            RectView(user: user, friend: friends[3], color: colors[3])
-                                .onTapGesture(perform: {
-                                    if selectedFriends.contains(friends[3].id) {
-                                        selectedFriends = selectedFriends.filter { $0 != friends[3].id }
-                                        colors[3] = ColorManager.purple3
-                                    } else {
-                                        selectedFriends.append(friends[3].id)
-                                        colors[3] = ColorManager.purple5
-                                    }
-                                    print(selectedFriends)
-                                })
-                        }
-                        
-                        if friends.count > 4 {
-                            RectView(user: user, friend: friends[4], color: colors[4])
-                                .onTapGesture(perform: {
-                                    if selectedFriends.contains(friends[4].id) {
-                                        selectedFriends = selectedFriends.filter { $0 != friends[4].id }
-                                        colors[4] = ColorManager.purple3
-                                    } else {
-                                        selectedFriends.append(friends[4].id)
-                                        colors[4] = ColorManager.purple5
-                                    }
-                                    print(selectedFriends)
-                                })
-                        }
-                        
-                        
+                    if friends.count > 4 {
+                        RectView(user: user, friend: friends[4], color: colors[4])
+                            .onTapGesture(perform: {
+                                if selectedFriends.contains(friends[4].id) {
+                                    selectedFriends = selectedFriends.filter { $0 != friends[4].id }
+                                    colors[4] = ColorManager.purple3
+                                } else {
+                                    selectedFriends.append(friends[4].id)
+                                    colors[4] = ColorManager.purple5
+                                }
+                                print(selectedFriends)
+                            })
                     }
                     
                     
+                }
+                
+                
+                
+                VStack {
                     
-                    VStack {
+                    //                        Spacer()
+                    //                            .frame(height: 10)
+                    //                        Text("And the Best Part;")
+                    //                            .font(.system(size: 15))
+                    //                            .italic()
+                    //                            .foregroundColor(Color .black)
+                    //                            .fontWeight(.light)
+                    //                            .multilineTextAlignment(.center)
+                    //
+                    //                        Text("we'll say it for you in a push notification")
+                    //                            .font(.system(size: 15))
+                    //                            .italic()
+                    //                            .foregroundColor(Color .black)
+                    //                            .fontWeight(.light)
+                    //                            .multilineTextAlignment(.center)
+                    
+                    Spacer()
+                        .frame(height: 30)
+                    
+                    Button(action: {
+                        shareButtonTapped()
+                    },
+                           label: {
+                        Text("SHARE")
+                            .fontWeight(.thin)
+                            .frame(width: 100, height: 30)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 25))
+                            .background(shareColor)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            .alert("You got this! \n\nSometimes something so simple is so hard!", isPresented: $showingAlert) {
+                                Button("OK", role: .cancel) { }
+                            }
                         
-//                        Spacer()
-//                            .frame(height: 10)
-//                        Text("And the Best Part;")
-//                            .font(.system(size: 15))
-//                            .italic()
-//                            .foregroundColor(Color .black)
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//
-//                        Text("we'll say it for you in a push notification")
-//                            .font(.system(size: 15))
-//                            .italic()
-//                            .foregroundColor(Color .black)
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
+                    })
+                    
+                    
+                    
+                    
+                    Button(action: {
+                        sessionManager.showLogin()
+                    },
+                           label: {
+                        Image("home-alt2")
+                            .frame(width: 50, height: 25)
+                            .foregroundColor(.white)
+                            .font(.system(size: 20))
+                            .background(Color .black)
+                            .cornerRadius(15)
+                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                            .opacity(0.70)
+                        
+                    })
+                    
+                    Spacer()
+                        .frame(height: 30)
+                    
+                    
+                    Text("We can help you")
+                        .font(.system(size: 30))
+                        .italic()
+                        .foregroundColor(ColorManager .grey2)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                    
+                    Text("send a message")
+                        .font(.system(size: 30))
+                        .italic()
+                        .foregroundColor(ColorManager .grey2)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                    
+                    
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 20)
                         
-                        Button(action: {
-                            shareButtonTapped()
-                        },
-                               label: {
-                            Text("SHARE")
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(shareColor)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("You got this! \n\nSometimes something so simple is so hard!", isPresented: $showingAlert) {
-                                    Button("OK", role: .cancel) { }
-                                }
-                            
-                        })
+                        Text("Every Sunday at 8pm EDT join teens everywhere ")
+                            .font(.system(size: 17))
+                            .italic()
+                            .foregroundColor(ColorManager .grey2)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                         
+                        
+                        Text("asking their friends to talk about it, ")
+                            .font(.system(size: 17))
+                            .italic()
+                            .foregroundColor(ColorManager .grey2)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
                         
                         
+                        Text("now you're no longer alone!")
+                            .font(.system(size: 17))
+                            .italic()
+                            .foregroundColor(ColorManager .grey2)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                          
                         
-                        
-                        Button(action: {
-                            sessionManager.showLogin()
-                        },
-                               label: {
-                            Image("home-alt2")
-                                .frame(width: 50, height: 25)
-                                .foregroundColor(.white)
-                                .font(.system(size: 20))
-                                .background(Color .black)
-                                .cornerRadius(15)
-                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                .opacity(0.70)
-                            
-                        })
-                        
-                        Spacer()
-                            .frame(height: 190)
+                  
                     }
                     
                 }
@@ -338,5 +363,5 @@ struct HurtFeelings4: View {
         
     }
     
-    
+
 

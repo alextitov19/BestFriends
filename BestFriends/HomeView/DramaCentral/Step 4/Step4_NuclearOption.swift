@@ -81,7 +81,7 @@ struct Step4_NuclearOption: View {
                 VStack {
               
                  
-                   Text("REMEMBER")
+                   Text("BELIEVE")
                     .font(.system(size: 50))
                     .foregroundColor(.purple)
                     .fontWeight(.ultraLight)
@@ -89,13 +89,13 @@ struct Step4_NuclearOption: View {
                     Spacer()
                         .frame(height: 20)
                     
-            Text("you were friends and will be again!")
+            Text("you were best friends \nbefore and will be again!")
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.white)
                         .italic()
                         .multilineTextAlignment(.center)
                         .frame(width: 310, height: 100, alignment: .leading)
-                        .font(.system(size: 35))
+                        .font(.system(size: 30))
                        .padding(10)
                         .background(Color.gray)
                         .cornerRadius(25)
@@ -104,6 +104,29 @@ struct Step4_NuclearOption: View {
                
                     Spacer()
                         .frame(height: 20)
+                    
+                    
+                    
+                    Text("just")
+                        .font(.system(size: 15, weight: .light))
+                        .italic()
+                        .fontWeight(.light)
+                        .foregroundColor(ColorManager .grey4)
+                        .multilineTextAlignment(.center)
+                    
+                    
+                    NavigationLink(
+                        destination: BreathInView(),
+                        label: {
+                            Text("Breathe")
+                                .fontWeight(.thin)
+                                .frame(width: 275, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 30))
+                                .background(ColorManager.pmbc_blue)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        })
                     
                     
                      NavigationLink(

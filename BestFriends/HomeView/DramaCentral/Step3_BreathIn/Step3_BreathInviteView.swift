@@ -90,31 +90,9 @@ struct Step3_BreathInviteView: View {
                                 })
                             
                             
+                   
+                            
                        
-                            
-                            Spacer()
-                                .frame(height: 80)
-                            
-                            Text("just")
-                                .font(.system(size: 15, weight: .light))
-                                .italic()
-                                .fontWeight(.light)
-                                .foregroundColor(ColorManager .grey4)
-                                .multilineTextAlignment(.center)
-                            
-                            
-                            NavigationLink(
-                                destination: BreathInView(),
-                                label: {
-                                    Text("Breathe")
-                                        .fontWeight(.thin)
-                                        .frame(width: 275, height: 40)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 30))
-                                        .background(ColorManager.pmbc_blue)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                })
                             Spacer()
                                 .frame(height: 100)
                      
@@ -128,22 +106,22 @@ struct Step3_BreathInviteView: View {
                             
                             NavigationLink(destination: HurtFeelings4(user: user, friends: friends, groups: groups),
                                 label: {
-                                    Text("Hurt Feelings?")
+                                    Text("Friend hurt your feelings?")
                                         .fontWeight(.thin)
                                         .frame(width: 310, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 30))
+                                        .font(.system(size: 27))
                                         .background(ColorManager.purple3)
                                         .cornerRadius(15)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 })
                             
-                            Text("join others on BF addressing this")
-                                .font(.system(size: 15, weight: .light))
-                                .italic()
-                                .fontWeight(.light)
-                                .foregroundColor(ColorManager .grey4)
-                                .multilineTextAlignment(.center)
+//                            Text("join others on BF addressing this")
+//                                .font(.system(size: 15, weight: .light))
+//                                .italic()
+//                                .fontWeight(.light)
+//                                .foregroundColor(ColorManager .grey4)
+//                                .multilineTextAlignment(.center)
                             Spacer()
                                 .frame(height: 80)
                             
