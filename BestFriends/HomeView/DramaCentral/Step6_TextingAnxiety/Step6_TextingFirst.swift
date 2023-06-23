@@ -28,19 +28,14 @@ struct Step6_TextingFirst: View {
             
             VStack {
                 
-//                Text("Ok, I am ready to try to")
-//                    .font(.system(size: 35, weight: .ultraLight))
-//                    .foregroundColor(Color.purple)
-//
-//                Text("fix this mess")
-//                    .font(.system(size: 40, weight: .ultraLight))
-//                    .foregroundColor(Color.purple)
-//
-//                Spacer()
-//                    .frame(height: 20)
+                Text("Wanting to reach out, but")
+                    .font(.system(size: 25, weight: .thin))
+//                    .italic()
+                    .foregroundColor(Color.white)
+                    .multilineTextAlignment(.center)
                 
                 
-                Text("Not exactly sure what to say")
+                Text("not exactly sure what to say")
                     .font(.system(size: 25, weight: .thin))
 //                    .italic()
                     .foregroundColor(Color.white)
@@ -67,19 +62,19 @@ struct Step6_TextingFirst: View {
                     
                     
                     
-                    Text("Let's")
+                    Text("Ready?")
                         .font(.system(size: 37, weight: .light))
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     
-                    Text("shoot them a text")
-                        .font(.system(size: 35, weight: .light))
+                    Text("Let's shoot them a")
+                        .font(.system(size: 30, weight: .light))
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     
                     
-                    Text("in Chat")
-                        .font(.system(size: 35, weight: .light))
+                    Text("text message")
+                        .font(.system(size: 30, weight: .light))
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     
@@ -123,6 +118,14 @@ struct Step6_TextingFirst: View {
                             
                             VStack {
                                 
+                                
+                                Text("to make sure they see it")
+                                    .font(.system(size: 20, weight: .thin))
+                                    .italic()
+                                    .foregroundColor(Color.black)
+                                    .multilineTextAlignment(.center)
+                                
+                                
                                 NavigationLink(
                                     
                                     destination: Step2_FightLandingView(user: user, friends: friends),
@@ -139,13 +142,7 @@ struct Step6_TextingFirst: View {
                                     }
                                 )}
                             
-                        Text("to make sure they see it")
-                            .font(.system(size: 20, weight: .thin))
-                            .italic()
-                            .foregroundColor(Color.black)
-                            .multilineTextAlignment(.center)
-                        
-                        
+                    
                         
                         
                             Spacer()
