@@ -24,19 +24,10 @@ struct Step3_BreathInviteView: View {
             ColorManager.grey2
                 .ignoresSafeArea()
             
-            //            // Stars animation...
-            //            AdPlayerView(name: "backgroundAnimation")
-            //                .ignoresSafeArea()
-            //                .blendMode(.screen)
-            //
+   
             VStack{
                 
-                //                Text("Something bad")
-                //                    .font(.system(size: 35, weight: .bold))
-                //                    .fontWeight(.light)
-                //                    .foregroundColor(ColorManager .grey4)
-                //                    .multilineTextAlignment(.center)
-                
+            
                 
                 HStack {
                     
@@ -96,13 +87,7 @@ struct Step3_BreathInviteView: View {
                             Spacer()
                                 .frame(height: 100)
                      
-//                            Text("maybe some")
-//                                .font(.system(size: 15, weight: .light))
-//                                .italic()
-//                                .fontWeight(.light)
-//                                .foregroundColor(ColorManager .grey4)
-//                                .multilineTextAlignment(.center)
-                            
+
                             
                             NavigationLink(destination: HurtFeelings4(user: user, friends: friends, groups: groups),
                                 label: {
@@ -116,12 +101,7 @@ struct Step3_BreathInviteView: View {
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 })
                             
-//                            Text("join others on BF addressing this")
-//                                .font(.system(size: 15, weight: .light))
-//                                .italic()
-//                                .fontWeight(.light)
-//                                .foregroundColor(ColorManager .grey4)
-//                                .multilineTextAlignment(.center)
+
                             Spacer()
                                 .frame(height: 80)
                             

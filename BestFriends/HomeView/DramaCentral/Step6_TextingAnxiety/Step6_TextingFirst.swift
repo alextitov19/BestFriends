@@ -67,7 +67,7 @@ struct Step6_TextingFirst: View {
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     
-                    Text("Let's shoot them a")
+                    Text("send them a")
                         .font(.system(size: 30, weight: .light))
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
@@ -119,7 +119,13 @@ struct Step6_TextingFirst: View {
                             VStack {
                                 
                                 
-                                Text("to make sure they see it")
+                                Text("don't spend hours")
+                                    .font(.system(size: 20, weight: .thin))
+                                    .italic()
+                                    .foregroundColor(Color.black)
+                                    .multilineTextAlignment(.center)
+                                
+                                Text("wondering if they say it")
                                     .font(.system(size: 20, weight: .thin))
                                     .italic()
                                     .foregroundColor(Color.black)
