@@ -72,8 +72,8 @@ struct INFOPreloadA: View {
 //                        Text("What's")
 //                            .font(.system(size: 35, weight: .ultraLight))
 //                            .foregroundColor(ColorManager .grey1)
-//                        
-//                        
+//
+//
 //                        Text("Up?")
 //                            .font(.system(size: 35, weight: .ultraLight))
 //                            .foregroundColor(ColorManager .grey1)
@@ -111,14 +111,14 @@ struct INFOPreloadA: View {
                     Spacer()
                         .frame(height: 50)
                     
-                    Text("STOP Texting")
+                    Text("Thumbs tired from texting,")
                                             .font(.system(size: 25))
                 
                                             .foregroundColor(ColorManager .grey1)
                                             .fontWeight(.thin)
                                             .multilineTextAlignment(.center)
 
-                    Text("just ask for a PhotoPoP!")
+                    Text("ask for a PhotoPoP!")
                                             .font(.system(size: 25))
                 
                                             .foregroundColor(ColorManager .grey1)
