@@ -76,12 +76,12 @@ struct Step2_FightLandingView: View {
                 HStack {
                     VStack {
                         
-                        Text("hey")
+                        Text("you got")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple7)
                         
                         
-                        Text("bro")
+                        Text("this!")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple7)
                         
@@ -224,8 +224,41 @@ struct Step2_FightLandingView: View {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
-                        .confettiCannon(counter: $counter)
+//                        .confettiCannon(counter: $counter)
+                       
+                        VStack {
 
+                            Spacer()
+                                .frame(height: 15)
+
+
+
+                            Text("(Now you know they got your message)")
+                                .font(.system(size: 15, weight: .bold))
+                                .italic()
+                                .fontWeight(.regular)
+                                .foregroundColor(ColorManager .grey4)
+
+                            Spacer()
+                                .frame(height: 35)
+                            
+                            
+//                    It was... TryThis()
+
+                            NavigationLink(
+                                destination: BreathInView(),
+                                label: {
+                                    Text("Calm my \n'Waiting Anxiety'")
+                                        .fontWeight(.thin)
+                                        .foregroundColor(Color.white)
+                                        .frame(width: 310, height: 80)
+                                        .font(.system(size: 27))
+                                        .background(ColorManager.pmbc_blue)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                }
+
+                            )}
                         
                         VStack {
                             
@@ -247,6 +280,9 @@ struct Step2_FightLandingView: View {
                         }
                    
                         }
+                    
+                    
+                    
                   
                     Spacer()
                         .frame(height: 100)
@@ -504,7 +540,7 @@ struct Step2_FightLandingView: View {
 //                                }
 //
 //                            )}
-//
+
 //                        Spacer()
 //                            .frame(height: 25)
 //

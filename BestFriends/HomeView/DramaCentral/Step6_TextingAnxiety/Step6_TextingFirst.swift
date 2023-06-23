@@ -100,32 +100,18 @@ struct Step6_TextingFirst: View {
                     VStack {
                         Spacer()
                             .frame(height: 80)
-                        
-//                        Text("Let's make sure")
-//                            .font(.system(size: 20, weight: .thin))
-//                            .italic()
-//                            .foregroundColor(Color.white)
-//                            .multilineTextAlignment(.center)
-//
-//
-//                        Text("they see your message.")
-//                            .font(.system(size: 20, weight: .thin))
-//                            .italic()
-//                            .foregroundColor(Color.white)
-//                            .multilineTextAlignment(.center)
-                        
-                     
+
                             
                             VStack {
                                 
                                 
-                                Text("don't spend hours")
+                                Text("don't spend hours streeing")
                                     .font(.system(size: 20, weight: .thin))
                                     .italic()
                                     .foregroundColor(Color.black)
                                     .multilineTextAlignment(.center)
                                 
-                                Text("wondering if they say it")
+                                Text("over if they saw your message")
                                     .font(.system(size: 20, weight: .thin))
                                     .italic()
                                     .foregroundColor(Color.black)
