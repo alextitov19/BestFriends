@@ -102,7 +102,7 @@ struct PhotoPopView: View {
                  NavigationLink(
                     destination: PhotoPop3(user: user, friends: friends),
                     label: {
-                        Text("Who sending image to?  \nTAP")
+                        Text("Alert Friend(s)  \n& Instructions")
                             .fontWeight(.thin)
                             .frame(width: 220, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
