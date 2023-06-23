@@ -53,17 +53,19 @@ struct PhotoPop3: View {
                         Text("Up-loading to PhotoPOP")
                             .font(.system(size: 25, weight: .light))
                             .foregroundColor(ColorManager .grey1)
-//
-//                        Spacer()
-//                            .frame(height: 10)
+
+                        Spacer()
+                            .frame(height: 7)
                         
-                        Text("1) Tap camera/gallery icon to upload NEW image")
+                        Text("1) Delete OLD image before uploading NEW")
                             .font(.system(size: 17, weight: .light))
                             .foregroundColor(ColorManager .grey2)
                         
-                        Text("2) Delete OLD image before uploading NEW")
+                        Text("2) Tap camera/gallery icon to upload NEW image")
                             .font(.system(size: 17, weight: .light))
                             .foregroundColor(ColorManager .grey2)
+                        
+                      
                         
                      
 //
