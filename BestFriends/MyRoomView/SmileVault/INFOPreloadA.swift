@@ -111,15 +111,18 @@ struct INFOPreloadA: View {
                     Spacer()
                         .frame(height: 50)
                     
-                    Text("Thumbs tired from texting,")
+                    Text("thumbs tired from texting")
                                             .font(.system(size: 25))
                 
                                             .foregroundColor(ColorManager .grey1)
                                             .fontWeight(.thin)
                                             .multilineTextAlignment(.center)
+                    
+                    Spacer()
+                        .frame(height: 7)
 
-                    Text("ask for a PhotoPoP!")
-                                            .font(.system(size: 25))
+                    Text("Ask for a 'fresh' PhotoPoP!")
+                                            .font(.system(size: 30))
                 
                                             .foregroundColor(ColorManager .grey1)
                                             .fontWeight(.thin)

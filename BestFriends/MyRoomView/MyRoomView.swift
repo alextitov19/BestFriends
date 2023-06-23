@@ -65,7 +65,7 @@ struct MyRoomView: View {
 
 
                 NavigationLink(destination: INFOPreloadA(user: user, friends: friends), label: {
-                MyRoomRowView(title: "Thumbs Tired?", imageName: "camera", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                MyRoomRowView(title: "Thumbs numb!", imageName: "camera", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
           
                 
