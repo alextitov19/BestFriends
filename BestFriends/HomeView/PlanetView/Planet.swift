@@ -51,7 +51,7 @@ struct Planet: View {
                     Image(systemName: "star.fill")
                         .resizable()
                         .foregroundColor(ColorManager.purple4)
-                        .frame(width: 25, height: 25)
+                        .frame(width: 27, height: 27)
                         .scaledToFit()
                         .rotationEffect(.degrees(rotatingStreak ? 0 : -360))
                         .animation(Animation.linear(duration: 7.5).repeatForever(autoreverses: false), value: rotatingStreak)
