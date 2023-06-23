@@ -149,7 +149,7 @@ struct HomeView: View {
                         PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
                             .scaledToFit()
                             .frame(width: 80, height: 80)
-                            .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 20)
+                            .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 10)
                             .padding()
                     })
                 }
