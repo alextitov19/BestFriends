@@ -43,19 +43,7 @@ struct HurtFeelings4: View {
             
             VStack {
                 
-                //                Text("Maybe, it's been bugging you")
-                //                    .font(.system(size: 27))
-                //                    .foregroundColor(ColorManager .grey1)
-                //                    .fontWeight(.light)
-                //                    .multilineTextAlignment(.center)
-                //
-                //
-                //                Text("all week")
-                //                    .font(.system(size: 27))
-                //                    .foregroundColor(ColorManager .grey1)
-                //                    .fontWeight(.light)
-                //                    .multilineTextAlignment(.center)
-                
+          
                 Spacer()
                     .frame(height: 20)
                 

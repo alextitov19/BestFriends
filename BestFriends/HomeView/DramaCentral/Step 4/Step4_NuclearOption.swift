@@ -33,50 +33,10 @@ struct Step4_NuclearOption: View {
                 
                 ZStack {
                     
-//                    Image(systemName: "heart.fill")
-//                    
-//                        .resizable()
-//                        .frame(width: 150, height: 130, alignment: .leading)
-//                    
-//                        .foregroundColor(Color(hue: 0.714, saturation: 0.411, brightness: 0.626))
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
-//                    
-//                    
-//                    Text("Ok, all that breathing \ndidn't help much. ")
-//                        .font(.system(size: 15))
-//                        .foregroundColor(.white)
-//                        .fontWeight(.thin)
-//                        .multilineTextAlignment(.center)
+
                 }
                 
-//
-//                Spacer()
-//                    .frame(height: 20)
-//
-//                Text("Please, before unfriending")
-//                    .font(.system(size: 20))
-//
-//                    .foregroundColor(.white)
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-////                    .padding(.horizontal, 0)
-//
-//
-//                Text("and making hurtful")
-//                    .font(.system(size: 20))
-//
-//                    .foregroundColor(.white)
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-////                    .padding(.horizontal, 0)
-//
-//                Text("comments on social media")
-//                    .font(.system(size: 20))
-//
-//                    .foregroundColor(.white)
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//                    .padding(.horizontal, 0)
+
                
                 VStack {
               
@@ -103,7 +63,7 @@ struct Step4_NuclearOption: View {
               
                
                     Spacer()
-                        .frame(height: 20)
+                        .frame(height: 60)
                     
                     
                     
@@ -127,6 +87,10 @@ struct Step4_NuclearOption: View {
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
+                    
+                    
+                    Spacer()
+                        .frame(height: 60)
                     
                     
                      NavigationLink(
@@ -159,12 +123,7 @@ struct Step4_NuclearOption: View {
                                                      .opacity(0.70)
                                                  
                                              })
-                    
                   
-                    Spacer()
-                        .frame(height: 120)
-                    
-//                    .padding(.vertical, 40)
                 }
             }
             
@@ -173,14 +132,4 @@ struct Step4_NuclearOption: View {
     
 }
 
-
-
-//
-//
-//struct NuclearOption_Previews : PreviewProvider {
-//    static var previews: some View {
-//        Step4_NuclearOption()
-//    }
-//}
-//
 
