@@ -113,18 +113,7 @@ struct HomeView: View {
                     Spacer()
                 }
                 
-//                VStack {
-//                    Spacer().frame(height: 60)
-//
-//                    Text("Reload")
-//                        .foregroundColor(ColorManager.purple2)
-//                        .font(.system(size: 16, weight: .light))
-//                        .onTapGesture {
-//                            getHomeData()
-//                        }
-//
-//                    Spacer()
-//                }
+
                 
                 if homeData != nil {
                     FriendPlanetsView(planets: $planets, selectedPlanets: $newGroupMembers, inviteClicked: $inviteClicked)
@@ -148,8 +137,8 @@ struct HomeView: View {
                     NavigationLink(destination: MyRoomView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups), label: {
                         PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
                             .scaledToFit()
-                            .frame(width: 80, height: 80)
-                            .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 12)
+                            .frame(width: 70, height: 70)
+                            .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 11)
                             .opacity(0.75)
                             .padding()
                     })

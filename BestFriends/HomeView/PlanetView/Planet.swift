@@ -50,8 +50,8 @@ struct Planet: View {
                 ZStack {
                     Image(systemName: "star.fill")
                         .resizable()
-                        .foregroundColor(ColorManager.purple4)
-                        .frame(width: 27, height: 27)
+                        .foregroundColor(ColorManager.purple7)
+                        .frame(width: 22, height: 22)
                         .scaledToFit()
                         .rotationEffect(.degrees(rotatingStreak ? 0 : -360))
                         .animation(Animation.linear(duration: 7.5).repeatForever(autoreverses: false), value: rotatingStreak)
@@ -59,9 +59,9 @@ struct Planet: View {
                     
                     Text(String(streak))
                         .foregroundColor(.white)
-                        .font(.system(size: 12, weight: .light))
+                        .font(.system(size: 8, weight: .light))
                 }
-                .offset(x: 30, y: -30)
+                .offset(x: 30, y: -37)
             }
         }
     }
