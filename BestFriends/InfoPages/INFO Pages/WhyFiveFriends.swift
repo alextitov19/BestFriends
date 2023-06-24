@@ -37,7 +37,7 @@ struct WhyFiveFriends: View {
             
             
             
-            Color .black
+            ColorManager .purple2
                 .ignoresSafeArea()
                 .onAppear()
             
@@ -45,44 +45,64 @@ struct WhyFiveFriends: View {
             //                .resizable()
             //                .ignoresSafeArea()
             //                .scaledToFill()
+         
             
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-                .opacity(0.75)
+    
             
             
             VStack {
-                
-                
-                Text("We worked under the National Science Foundation's iCAP program throught George Washington and George Mason Universities where we conducted over 120 (one-on-one) interviews and over 500 surveys of teens worldwide. ")
+                Text("As we move through life we get new friends.")
                     .font(.system(size: 17, weight: .bold))
-                    .foregroundColor(ColorManager .grey1)
-                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .foregroundColor(Color .black)
+//                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                     .opacity(0.50)
                     .multilineTextAlignment(.center)
+              
+                Text("Each year you can add 5 new friends")
+                    .font(.system(size: 17, weight: .bold))
+                    .foregroundColor(Color .black)
+//                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.50)
+                    .multilineTextAlignment(.center)
+                
+                Text("without loosing your old ones.")
+                    .font(.system(size: 17, weight: .bold))
+                    .foregroundColor(Color .black)
+//                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.50)
+                    .multilineTextAlignment(.center)
+                
+                Spacer()
+                    .frame(height: 100)
+                Text("__________________________")
+                    .font(.system(size: 17, weight: .regular))
+                    .foregroundColor(Color .black)
+//                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.50)
+                    .multilineTextAlignment(.center)
+                
+                Text("We are working under the National Science Foundation's iCAP program with George Washington and George Mason Universities where we conducted over 150 (one-on-one) interviews and over 500 surveys of teens worldwide.")
+                    .font(.system(size: 15, weight: .thin))
+                    .foregroundColor(ColorManager .grey4)
+//                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.50)
+                    .multilineTextAlignment(.center)
+                    .padding(30)
+            
+                
+                Text("Over 80% said they preferred 5 or less of their closes, most trusted friends to interact with in BestFriends app.")
+                    .font(.system(size: 15, weight: .thin))
+                    .foregroundColor(ColorManager .grey4)
+//                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.50)
+                    .multilineTextAlignment(.center)
+                    .padding()
                 
                 
                 Spacer()
-                    .frame(height: 20)
+                    .frame(height: 120)
                 
-                Text("Over 80% said they preferred 5 or less of their closes, most trusted friends to speak with on difficult days.")
-                    .font(.system(size: 17, weight: .bold))
-                    .foregroundColor(ColorManager .grey1)
-                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    .opacity(0.50)
-                    .multilineTextAlignment(.center)
-                
-                
-                Spacer()
-                    .frame(height: 20)
-                
-                Text("In the future depending on user feedback, we may increase the number of friends you are able to invite.")
-                    .font(.system(size: 17, weight: .bold))
-                    .foregroundColor(ColorManager .grey1)
-                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    .opacity(0.50)
-                    .multilineTextAlignment(.center)
+             
                 
              
                 

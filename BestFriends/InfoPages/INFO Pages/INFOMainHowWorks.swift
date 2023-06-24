@@ -36,37 +36,50 @@ struct INFOMainHowWorks: View {
             
             VStack {
              
-                
-                
-                Text("let the outside of you")
-                    .font(.system(size: 22))
+                Text("Introducing")
+                    .font(.system(size: 13))
                     .italic()
-                    .foregroundColor(ColorManager.grey2)
+                    .foregroundColor(Color.white)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
-                Text("match the inside of you")
-                    .font(.system(size: 22))
-                    .italic()
-                    .foregroundColor(ColorManager.grey2)
+                Text("BestFriends")
+                    .font(.system(size: 35))
+//                    .italic()
+                    .foregroundColor(Color.white)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
+                
+                Spacer()
+                    .frame(height: 10)
+                
+                Text("now you can let the outside of you")
+                    .font(.system(size: 22))
+                    .italic()
+                    .foregroundColor(ColorManager.grey1)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                
+                Text("match the inside of you in")
+                    .font(.system(size: 22))
+                    .italic()
+                    .foregroundColor(ColorManager.grey1)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                
+                
+                Text("highly protected environment")
+                    .font(.system(size: 22))
+                    .italic()
+                    .foregroundColor(ColorManager.grey1)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                
+                
+                
                 VStack {
                     
-                    Button(action: {
-                        sessionManager.showLogin()
-                    },
-                           label: {
-                        Image("home-alt2")
-                            .frame(width: 50, height: 25)
-                            .foregroundColor(.white)
-                            .font(.system(size: 20))
-                            .background(ColorManager .grey2)
-                            .cornerRadius(15)
-                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                            .opacity(0.70)
-                        
-                    })
+               
                     
                     Spacer()
                         .frame(height: 20)
@@ -269,6 +282,23 @@ struct INFOMainHowWorks: View {
                             .foregroundColor(ColorManager.grey2)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
+                        
+                        Button(action: {
+                            sessionManager.showLogin()
+                        },
+                               label: {
+                            Image("home-alt2")
+                                .frame(width: 50, height: 25)
+                                .foregroundColor(.white)
+                                .font(.system(size: 20))
+                                .background(ColorManager .grey2)
+                                .cornerRadius(15)
+                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                .opacity(0.70)
+                            
+                        })
+                        
+                        
                         }
                   
                         

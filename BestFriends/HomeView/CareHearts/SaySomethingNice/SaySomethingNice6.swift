@@ -47,40 +47,38 @@ struct SaySomethingNice6: View {
                 VStack {
                     
                     
-                    Text("Start sharing")
+                    Text("Sharing")
                     //                        .italic()
-                        .font(.system(size: 25))
+                        .font(.system(size: 35))
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager.purple2)
-                    
-                    Spacer()
-                        .frame(height: 7)
+                   
                     
                     Text("Emotional Moments")
-                        .font(.system(size: 30))
+                        .font(.system(size: 35))
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager.purple2)
                     
                     Spacer()
-                        .frame(height: 7)
+                        .frame(height: 25)
                     
-                    Text("with your 5 BFFs")
-                        .font(.system(size: 25))
-                    //                        .italic()
-                        .fontWeight(.regular)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.purple2)
+                  
                     
                     Text("in a safe 'closed' social environment")
-                        .font(.system(size: 19))
+                        .font(.system(size: 20))
                     //                    .italic()
                         .foregroundColor(ColorManager.purple2)
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                     
-                 
+                    Text("with your 5 BFFs")
+                        .font(.system(size: 20))
+                    //                        .italic()
+                        .fontWeight(.regular)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager.purple2)
                     
                     VStack {
                         
@@ -90,29 +88,22 @@ struct SaySomethingNice6: View {
                             destination: InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
                                 Text("Invite your friends")
-                                    .fontWeight(.light)
+                                    .fontWeight(.thin)
                                     .foregroundColor(Color.white)
                                     .frame(width: 310, height: 60)
-                                    .font(.system(size: 25))
+                                    .font(.system(size: 30))
                                     .background(Color.orange)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 
                             })
-                        
-             
-                        
+                  
                         
                         VStack {
-                            
-                    
                 
                             
-                            
-                            
-                            
                             Spacer()
-                                .frame(height: 50)
+                                .frame(height: 80)
                             
                      
                             Text("How to ...")
@@ -126,17 +117,24 @@ struct SaySomethingNice6: View {
                                 destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                                     Text("SetUp Chat Rooms \nFeature Walk-through")
-                                        .fontWeight(.light)
+                                        .fontWeight(.thin)
                                         .foregroundColor(Color.white)
                                         .frame(width: 310, height: 60)
                                         .font(.system(size: 25))
-                                        .background(Color.green)
+                                        .background(Color.purple)
                                         .cornerRadius(15)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     
                                 })
                             
+                            Spacer()
+                                .frame(height: 80)
                             
+                            Text("Our fantastic supporters")
+                                .font(.system(size: 30))
+                                .fontWeight(.regular)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager.purple2)
                             
                             Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
                                 
@@ -144,22 +142,15 @@ struct SaySomethingNice6: View {
                                     .fontWeight(.thin)
                                     .frame(width: 310, height: 60)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(Color.purple)
+                                    .font(.system(size: 27))
+                                    .background(Color.green)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             }
-                            
-                            Text("Our fantastic supporters")
-                                .font(.system(size: 22))
-                                .italic()
-                                .foregroundColor(ColorManager.grey2)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                            
-                            
-                            
-                            
+                 
+//                            
+//                            Spacer()
+//                                .frame(height: 200)
                             
                             
                         }

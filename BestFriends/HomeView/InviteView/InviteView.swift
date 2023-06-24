@@ -57,7 +57,7 @@ struct InviteView: View {
                 
                 Text("Add 5 Friends")
                     .foregroundColor(ColorManager .purple3)
-                    .font(.system(size: 25, weight: .bold))
+                    .font(.system(size: 30, weight: .bold))
                 
                 Spacer()
                     .frame(height: 10)
@@ -70,13 +70,13 @@ struct InviteView: View {
                 NavigationLink(
                     destination: WhyFiveFriends(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
                    label: {
-                       Text("Why only 5 Friends")
+                       Text("Why only 5 BFFs to start?")
                            .fontWeight(.thin)
-                           .frame(width: 250, height: 30)
+                           .frame(width: 290, height: 40)
                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                            .font(.system(size: 25))
-                           .background(ColorManager.pmbc_green)
-                           .cornerRadius(15)
+                           .background(ColorManager.purple3)
+                           .cornerRadius(10)
                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                    })
                 
