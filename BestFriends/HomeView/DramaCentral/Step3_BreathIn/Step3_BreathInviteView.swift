@@ -21,10 +21,13 @@ struct Step3_BreathInviteView: View {
         
         ZStack {
             
-            ColorManager.grey3
-                .ignoresSafeArea()
+//            ColorManager.grey3
+//                .ignoresSafeArea()
             
-   
+            Image("changeBackground")
+                .resizable()
+            .ignoresSafeArea()
+            
             VStack{
                 
             

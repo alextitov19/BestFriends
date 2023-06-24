@@ -86,7 +86,8 @@ struct INFOPreloadA: View {
                     
 //                    Image("KissesHeart")
 //                        .resizable()
-//                        .frame(width: 200, height: 150)
+//                    .ignoresSafeArea()
+
                 }
              
          
