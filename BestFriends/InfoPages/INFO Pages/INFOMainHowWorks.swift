@@ -35,14 +35,22 @@ struct INFOMainHowWorks: View {
             
             
             VStack {
-                Text("app looks best in 'dark' mode")
-                    .font(.system(size: 17))
+             
+                
+                
+                Text("let the outside of you")
+                    .font(.system(size: 22))
                     .italic()
                     .foregroundColor(ColorManager.grey2)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
-                
+                Text("match the inside of you")
+                    .font(.system(size: 22))
+                    .italic()
+                    .foregroundColor(ColorManager.grey2)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
                 VStack {
                     
                     Button(action: {
@@ -250,10 +258,17 @@ struct INFOMainHowWorks: View {
                                 }
                             }
                             
+                        
+                        
                             Spacer()
                                 .frame(height: 25)
                             
-                        
+                        Text("app looks best in 'dark' mode")
+                            .font(.system(size: 17))
+                            .italic()
+                            .foregroundColor(ColorManager.grey2)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
                         }
                   
                         

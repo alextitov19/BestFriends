@@ -106,26 +106,35 @@ struct SaySomethingNice6: View {
                         VStack {
                             
                     
-                            
-                            Text("let the outside of you")
-                                .font(.system(size: 22))
-                                .italic()
-                                .foregroundColor(ColorManager.grey2)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                            
-                            Text("match the inside of you")
-                                .font(.system(size: 22))
-                                .italic()
-                                .foregroundColor(ColorManager.grey2)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
+                
                             
                             
                             
                             
                             Spacer()
-                                .frame(height: 120)
+                                .frame(height: 50)
+                            
+                     
+                            Text("How to ...")
+                                .font(.system(size: 30))
+                                .fontWeight(.regular)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager.purple2)
+                            
+                            NavigationLink(
+                                
+                                destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                label: {
+                                    Text("SetUp Chat Rooms \nFeature Walk-through")
+                                        .fontWeight(.light)
+                                        .foregroundColor(Color.white)
+                                        .frame(width: 310, height: 60)
+                                        .font(.system(size: 25))
+                                        .background(Color.green)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                    
+                                })
                             
                             
                             
@@ -147,32 +156,6 @@ struct SaySomethingNice6: View {
                                 .foregroundColor(ColorManager.grey2)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
-                            
-                            //
-                            //                        Spacer()
-                            //                            .frame(height: 50)
-                            
-                            Spacer()
-                                .frame(height: 50)
-                            
-                            
-                            NavigationLink(
-                                
-                                destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                label: {
-                                    Text("SetUp / Walk-through")
-                                        .fontWeight(.light)
-                                        .foregroundColor(Color.white)
-                                        .frame(width: 310, height: 60)
-                                        .font(.system(size: 25))
-                                        .background(Color.green)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    
-                                })
-                            
-                            
-                            
                             
                             
                             
