@@ -97,6 +97,8 @@ struct Step2_FightLandingView: View {
                         
                     }
 
+                    Spacer()
+                        .frame(height: 25)
                     VStack {
                         
             

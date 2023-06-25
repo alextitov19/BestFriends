@@ -40,13 +40,12 @@ struct Step4_NuclearOption: View {
                 
                 VStack {
                     
-                                        Text("REMEMBER")
-                                         .font(.system(size: 30))
-                                         .foregroundColor(.purple)
-                                         .fontWeight(.light)
-                    
-                
-                    Text("Sharp words erase all the nice words you've ever said")
+                    Text("BELIEVE")
+                     .font(.system(size: 30))
+                     .foregroundColor(.purple)
+                     .fontWeight(.light)
+          
+                    Text("You were best friends before and you will be again!")
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.white)
                         .italic()
@@ -58,25 +57,33 @@ struct Step4_NuclearOption: View {
                         .cornerRadius(25)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     
+                    
+                    
+                               
                 }
                 
-                Text("BELIEVE")
+                Spacer()
+                    .frame(height: 20)
+                
+                Text("REMEMBER")
                  .font(.system(size: 30))
                  .foregroundColor(.purple)
                  .fontWeight(.light)
-      
-                Text("You were best friends \nbefore & will be again!")
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(Color.white)
-                    .italic()
-                    .multilineTextAlignment(.center)
-                    .frame(width: 310, height: 130, alignment: .leading)
-                    .font(.system(size: 32))
-                    .padding(10)
-                    .background(Color.gray)
-                    .cornerRadius(25)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                //                       })
+
+
+Text("Sharp words erase all the nice words you've ever said")
+.fontWeight(.ultraLight)
+.foregroundColor(Color.white)
+.italic()
+.multilineTextAlignment(.center)
+.frame(width: 310, height: 130, alignment: .leading)
+.font(.system(size: 32))
+.padding(10)
+.background(Color.gray)
+.cornerRadius(25)
+.shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
+           
                 
                 Spacer()
                     .frame(height: 40)

@@ -213,7 +213,7 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 15)
                         
-                        Text("I want some")
+                        Text("I want")
 //                          .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
