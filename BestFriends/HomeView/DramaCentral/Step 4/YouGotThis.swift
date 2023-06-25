@@ -36,7 +36,7 @@ struct YouGotThis: View {
 
                 
                   NavigationLink(
-                      destination: Step6_TextingFirst(user: user, friends: friends),
+                      destination: Step2_FightLandingView(user: user, friends: friends),
                       label: {
                           Text("Sharp words erase all the nice words you've ever said >>>")
                                       .fontWeight(.ultraLight)

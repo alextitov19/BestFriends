@@ -82,7 +82,7 @@ struct Step2_FightLandingView: View {
                     
                     Link(destination: URL(string: "https://socialtechlabs.com/applink/")!) {
                         
-                        Text("Here are some ideas")
+                        Text("Here's some ideas")
                             .fontWeight(.thin)
                             .frame(width: 310, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -102,13 +102,13 @@ struct Step2_FightLandingView: View {
             
                         
                         
-                                                    Text("(Don't worry if they get your message,")
+                                                    Text("Let's make sure they got your text message,")
                                                         .font(.system(size: 15, weight: .bold))
                                                         .italic()
                                                         .fontWeight(.regular)
                                                         .foregroundColor(ColorManager .grey4)
                         
-                        Text("Send them a notification)")
+                        Text("so they can't say they never got it")
                             .font(.system(size: 15, weight: .bold))
                             .italic()
                             .fontWeight(.regular)
