@@ -77,6 +77,21 @@ struct TryThis: View {
                     Spacer()
                         .frame(height: 30)
                     
+                    
+                    Text("Waiting to hear from friend after fight, waiting to get you exam grade, by yourself on a bad day, ...")
+                        .font(.system(size: 17))
+                        .italic()
+                        .fontWeight(.light)
+                        .foregroundColor(.white)
+                        .fontWeight(.heavy)
+                        .multilineTextAlignment(.leading)
+                        .padding(.horizontal, 10)
+                    
+                    Spacer()
+                        .frame(height: 30)
+                   
+                    VStack {
+                        
                     Text("*listen to your favorite songs \n*take a walk in the park with your dog \n*watch a funny video \n*watch a movie \n*hangout with friends in Chat")
                         .font(.system(size: 17))
                         .italic()
@@ -100,20 +115,18 @@ struct TryThis: View {
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
-                    VStack {
+                   
                         
-                                                Button(action: {
-                                                                             sessionManager.showLogin()
-                                                                         },
-                                                                             label: {
-                                                                             Image("home-alt2")
-                                                                                 .frame(width: 50, height: 25)
-                                                                                 .foregroundColor(.white)
-                                                                                 .font(.system(size: 20))
-                                                                                 .background(ColorManager .grey3)
-                                                                                 .cornerRadius(15)
-                                                                                 .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                                                                 .opacity(0.70)
+                Button(action: {sessionManager.showLogin() },
+                    label: {
+                        Image("home-alt2")
+                        .frame(width: 50, height: 25)
+                        .foregroundColor(.white)
+                        .font(.system(size: 20))
+                        .background(ColorManager .grey2)
+                        .cornerRadius(15)
+                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                        .opacity(0.70)
                         
                                                                          })
                         Spacer()
