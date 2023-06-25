@@ -244,18 +244,9 @@ struct Step2_FightLandingView: View {
                         VStack {
 
                             Spacer()
-                                .frame(height: 15)
+                                .frame(height: 70)
 
 
-//
-//                            Text("(Now you know they got your message)")
-//                                .font(.system(size: 15, weight: .bold))
-//                                .italic()
-//                                .fontWeight(.regular)
-//                                .foregroundColor(ColorManager .grey4)
-
-                            Spacer()
-                                .frame(height: 35)
                             
                             
 //                    It was... TryThis()
@@ -276,7 +267,8 @@ struct Step2_FightLandingView: View {
                             )}
                         
                         VStack {
-                            
+                            Spacer()
+                                .frame(height: 20)
                             
                             Button(action: {
                                 sessionManager.showLogin()
@@ -286,7 +278,7 @@ struct Step2_FightLandingView: View {
                                     .frame(width: 50, height: 25)
                                     .foregroundColor(.white)
                                     .font(.system(size: 20))
-                                    .background(Color .black)
+                                    .background(ColorManager .grey2)
                                     .cornerRadius(15)
                                     .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                                     .opacity(0.70)
@@ -296,11 +288,7 @@ struct Step2_FightLandingView: View {
                    
                         }
                     
-                    
-                    
-                  
-                    Spacer()
-                        .frame(height: 100)
+                 
                     
                 }
                 
