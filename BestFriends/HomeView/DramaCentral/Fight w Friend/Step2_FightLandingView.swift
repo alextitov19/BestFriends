@@ -69,11 +69,53 @@ struct Step2_FightLandingView: View {
          
                 VStack {
 
-
+                    Text("Wanting to reach out, but")
+                        .font(.system(size: 25, weight: .thin))
+                        .foregroundColor(ColorManager .grey3)
+                        .multilineTextAlignment(.center)
                     
                     
+                    Text("not exactly sure what to say")
+                        .font(.system(size: 25, weight: .thin))
+                        .foregroundColor(ColorManager .grey3)
+                        .multilineTextAlignment(.center)
+                    
+                    Link(destination: URL(string: "https://socialtechlabs.com/applink/")!) {
+                        
+                        Text("Here are some ideas")
+                            .fontWeight(.thin)
+                            .frame(width: 310, height: 40)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 30))
+                            .background(ColorManager.pmbc_blue)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        
+                        
+                        
+                
+                        
+                    }
 
                     VStack {
+                        
+            
+                        
+                        
+                                                    Text("(Don't worry if they get your message,")
+                                                        .font(.system(size: 15, weight: .bold))
+                                                        .italic()
+                                                        .fontWeight(.regular)
+                                                        .foregroundColor(ColorManager .grey4)
+                        
+                        Text("Send them a notification)")
+                            .font(.system(size: 15, weight: .bold))
+                            .italic()
+                            .fontWeight(.regular)
+                            .foregroundColor(ColorManager .grey4)
+                        
+
+                        
 
                         Spacer()
                             .frame(height: 25)
@@ -203,12 +245,12 @@ struct Step2_FightLandingView: View {
                                 .frame(height: 15)
 
 
-
-                            Text("(Now you know they got your message)")
-                                .font(.system(size: 15, weight: .bold))
-                                .italic()
-                                .fontWeight(.regular)
-                                .foregroundColor(ColorManager .grey4)
+//
+//                            Text("(Now you know they got your message)")
+//                                .font(.system(size: 15, weight: .bold))
+//                                .italic()
+//                                .fontWeight(.regular)
+//                                .foregroundColor(ColorManager .grey4)
 
                             Spacer()
                                 .frame(height: 35)
@@ -217,7 +259,7 @@ struct Step2_FightLandingView: View {
 //                    It was... TryThis()
 
                             NavigationLink(
-                                destination: BreathInView(),
+                                destination: TryThis(),
                                 label: {
                                     Text("Calm my \n'Waiting Anxiety'")
                                         .fontWeight(.thin)
