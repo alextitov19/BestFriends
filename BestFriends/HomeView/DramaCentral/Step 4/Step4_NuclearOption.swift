@@ -86,7 +86,7 @@ struct Step4_NuclearOption: View {
            
                 
                 Spacer()
-                    .frame(height: 40)
+                    .frame(height: 30)
                 
                 
                 
@@ -115,7 +115,7 @@ struct Step4_NuclearOption: View {
                 VStack {
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 100)
                     
                     Text("when you're ready to reach out")
                         .font(.system(size: 15, weight: .light))
