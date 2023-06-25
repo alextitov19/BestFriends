@@ -74,6 +74,13 @@ struct MyRoomView: View {
                 })
           
      
+                NavigationLink(destination: TryThis(), label: {
+                MyRoomRowView(title: "Waiting to hear something", imageName: "camera", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                })
+                
+                
+                
+                
                 NavigationLink(
                     destination: BuiltByTeensView(user: user, friends: friends),
                     label: {
