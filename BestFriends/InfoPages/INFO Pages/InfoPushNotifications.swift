@@ -17,7 +17,7 @@ struct InfoPushNotifications: View {
     var body: some View {
         
         ZStack {
-            Color.blue
+            ColorManager .grey4
                 .ignoresSafeArea()
                 .onAppear()
             
@@ -43,7 +43,7 @@ struct InfoPushNotifications: View {
                     
                     Image(systemName: "circle.fill")
                         .resizable()
-                        .foregroundColor(Color.purple)
+                        .foregroundColor(Color.blue)
                         .frame(width: 400, height: 400)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                         .opacity(0.95)

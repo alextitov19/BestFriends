@@ -110,7 +110,7 @@ struct InfoInsideChat: View {
                                 .font(.system(size: 15))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(Color.green)
+                                .foregroundColor(Color.black)
                                 .padding()
                             
                             
