@@ -45,11 +45,7 @@ struct Step2_FightLandingView: View {
                             ColorManager.grey4
                                 .ignoresSafeArea()
                                 .onAppear()
-//                Image("purpleBackground")
-//                    .resizable()
-//                    .ignoresSafeArea()
-//                    .scaledToFill()
-//                    .ignoresSafeArea()
+
                 
                 AdPlayerView(name: "dramaLights")
                     .ignoresSafeArea()
@@ -63,44 +59,19 @@ struct Step2_FightLandingView: View {
                     .ignoresSafeArea()
             }
             
-//            ColorManager .purple1
-//                .ignoresSafeArea()
-//
-//            AdPlayerView(name: "sky2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
+
 
             
             VStack{
                 
-                HStack {
-                    VStack {
-                        
-                        Text("you got")
-                            .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .purple7)
-                        
-                        
-                        Text("this!")
-                            .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .purple7)
-                        
-                    }
-                    
-                    Image("CoolGuy")
-                        .resizable()
-                        .frame(width: 200, height: 200)
-                }
+
              
          
                 VStack {
 
-//                    Text("Jump up on a chair, then ...")
-//                                            .font(.system(size: 25))
-//
-//                                            .foregroundColor(ColorManager .grey2)
-//                                            .fontWeight(.thin)
-//                                            .multilineTextAlignment(.center)
+
+                    
+                    
 
                     VStack {
 
