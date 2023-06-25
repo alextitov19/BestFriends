@@ -144,26 +144,7 @@ struct INFOMainHowWorks: View {
                         
                         Spacer()
                             .frame(height: 15)
-                        
-                        
-//                        HStack {
-//                            ZStack {
-//
-//                            }
-//
-//
-//
-//                        }
-//
-//                        Spacer()
-//                            .frame(height: 15)
-//
-//                        HStack {
-//                            ZStack {
-//
-//                            }
-//
-//
+                       
                             
                             
                             NavigationLink(

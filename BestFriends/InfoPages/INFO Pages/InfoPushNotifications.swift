@@ -17,30 +17,26 @@ struct InfoPushNotifications: View {
     var body: some View {
         
         ZStack {
-            
-            ColorManager .purple1
+            ColorManager.grey4
                 .ignoresSafeArea()
                 .onAppear()
-            
-            
-            
             
             VStack {
                 
                 
                 Text("CareHeart Streaks")
-                    .font(.system(size: 35))
+                    .font(.system(size: 37))
             
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey2)
+                    .foregroundColor(ColorManager.grey1)
                 
                 Text("show as 'star' next to you planet")
                     .italic()
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.purple4)
+                    .foregroundColor(ColorManager .grey2)
                 
                 ZStack {
                     
@@ -92,7 +88,7 @@ struct InfoPushNotifications: View {
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple4)
+                            .foregroundColor(ColorManager.grey2)
                         
                         
                         Spacer ()

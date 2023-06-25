@@ -17,46 +17,13 @@ struct InfoInsideChat: View {
     
     var body: some View {
         
-        //        ZStack {
-        //
-        //            ColorManager .purple1
-        //                .ignoresSafeArea()
-        //                .onAppear()
-        //
-        //
-        //
-        //
-        //            VStack {
-        //
-        //
-        //
-        //                Text("Create New Chat Rooms")
-        //                    .font(.system(size: 35))
-        //
-        //                    .fontWeight(.light)
-        //                    .multilineTextAlignment(.center)
-        //                    .foregroundColor(ColorManager.grey2)
-        //
-        //
-        //                ZStack {
-        //
-        //
-        //                    Image(systemName: "heart.fill")
-        //                        .resizable()
-        //                        .foregroundColor(ColorManager .grey2)
-        //                        .frame(width: 330, height: 330)
-        //                        .shadow(color: ColorManager .red, radius: 65, x: 30, y: 50)
-        //                        .opacity(0.8)
-        
-        
         ZStack {
             
-            ColorManager .purple1
+            
+            ColorManager.grey4
                 .ignoresSafeArea()
                 .onAppear()
-            
-            
-            
+
             
             VStack {
                 
@@ -66,10 +33,10 @@ struct InfoInsideChat: View {
                 
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey3)
+                    .foregroundColor(ColorManager.grey2)
                 
                 Text("NEW Chat Rooms")
-                    .font(.system(size: 35))
+                    .font(.system(size: 38))
                 
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
@@ -90,11 +57,11 @@ struct InfoInsideChat: View {
                         
                         
                         Spacer ()
-                            .frame(height: 60)
+                            .frame(height: 90)
                         
                         Text("On homepage, tap friend's planet(s)")
                         //                            .italic()
-                            .font(.system(size: 20))
+                            .font(.system(size: 19))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager .grey2)
