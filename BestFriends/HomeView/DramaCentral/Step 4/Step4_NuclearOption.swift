@@ -113,9 +113,9 @@ struct Step4_NuclearOption: View {
                     NavigationLink(
                         destination: Step2_FightLandingView(user: user, friends: friends),
                         label: {
-                            Text("Let's fix this mess")
+                            Text("Let's calm this hurt >>>")
                                 .fontWeight(.thin)
-                                .frame(width: 275, height: 40)
+                                .frame(width: 310, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)

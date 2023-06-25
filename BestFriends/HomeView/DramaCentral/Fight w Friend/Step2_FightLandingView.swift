@@ -108,7 +108,7 @@ struct Step2_FightLandingView: View {
                                                         .fontWeight(.regular)
                                                         .foregroundColor(ColorManager .grey4)
                         
-                        Text("so they can't say they never got it")
+                        Text("so they can't act like they never got it")
                             .font(.system(size: 15, weight: .bold))
                             .italic()
                             .fontWeight(.regular)

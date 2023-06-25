@@ -14,6 +14,11 @@ import Promises
 struct TryThis: View {
     
     @EnvironmentObject var sessionManager: SessionManager
+    
+    
+//    let user: User
+//    let friends: [User]
+    
     @State private var homeData: HomeData?
     init() {
         print("is this working")
