@@ -47,7 +47,7 @@ struct InfoInsideChat: View {
                     
                     Image(systemName: "circle.fill")
                         .resizable()
-                        .foregroundColor(ColorManager .purple1)
+                        .foregroundColor(Color.purple)
                         .frame(width: 400, height: 400)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
@@ -64,14 +64,14 @@ struct InfoInsideChat: View {
                             .font(.system(size: 19))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey2)
+                            .foregroundColor(ColorManager .grey1)
                         
                         Text("you want in the chat room")
                         //                            .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey2)
+                            .foregroundColor(ColorManager .grey1)
                         
                         
                         
@@ -83,14 +83,14 @@ struct InfoInsideChat: View {
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey2)
+                            .foregroundColor(ColorManager .grey1)
                         
                         Text("[Create New Chat Room]")
                         //                            .italic()
                             .font(.system(size: 23))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey4)
+                            .foregroundColor(ColorManager .grey1)
                         
                         Spacer ()
                             .frame(height: 20)
@@ -100,7 +100,7 @@ struct InfoInsideChat: View {
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey2)
+                            .foregroundColor(ColorManager .grey1)
                         
                         VStack {
                             
@@ -110,7 +110,7 @@ struct InfoInsideChat: View {
                                 .font(.system(size: 15))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(Color.red)
+                                .foregroundColor(Color.green)
                                 .padding()
                             
                             

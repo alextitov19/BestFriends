@@ -17,7 +17,7 @@ struct InfoPushNotifications: View {
     var body: some View {
         
         ZStack {
-            ColorManager.grey4
+            Color.blue
                 .ignoresSafeArea()
                 .onAppear()
             
@@ -43,7 +43,7 @@ struct InfoPushNotifications: View {
                     
                     Image(systemName: "circle.fill")
                         .resizable()
-                        .foregroundColor(ColorManager .purple1)
+                        .foregroundColor(Color.purple)
                         .frame(width: 400, height: 400)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
@@ -61,14 +61,14 @@ struct InfoPushNotifications: View {
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.grey3)
+                            .foregroundColor(ColorManager.grey1)
                         
                         Text("helping friends on bad days")
 //                            .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.grey3)
+                            .foregroundColor(ColorManager.grey1)
                         
                         Spacer ()
                             .frame(height: 40)
@@ -78,7 +78,7 @@ struct InfoPushNotifications: View {
                             .font(.system(size: 23))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.grey3)
+                            .foregroundColor(ColorManager.grey1)
                        
                         Spacer ()
                             .frame(height: 10)
@@ -88,26 +88,12 @@ struct InfoPushNotifications: View {
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.grey2)
+                            .foregroundColor(ColorManager.grey1)
                         
                         
                         Spacer ()
                             .frame(height: 40)
-                        
-//                        Text("Then watch for")
-//                            .italic()
-//                            .font(.system(size: 20))
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(ColorManager.grey3)
-//
-//                        Text("something 'Nice' back")
-//                            .italic()
-//                            .font(.system(size: 20))
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(ColorManager.grey3)
-                        
+
                         VStack {
                        
                             
