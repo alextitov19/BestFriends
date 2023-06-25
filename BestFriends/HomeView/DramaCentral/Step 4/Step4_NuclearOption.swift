@@ -50,8 +50,8 @@ struct Step4_NuclearOption: View {
                         .foregroundColor(Color.white)
                         .italic()
                         .multilineTextAlignment(.center)
-                        .frame(width: 310, height: 130, alignment: .leading)
-                        .font(.system(size: 32))
+                        .frame(width: 290, height: 80, alignment: .leading)
+                        .font(.system(size: 25))
                         .padding(10)
                         .background(Color.gray)
                         .cornerRadius(25)
@@ -71,17 +71,17 @@ struct Step4_NuclearOption: View {
                  .fontWeight(.light)
 
 
-Text("Sharp words erase all the nice words you've ever said")
-.fontWeight(.ultraLight)
-.foregroundColor(Color.white)
-.italic()
-.multilineTextAlignment(.center)
-.frame(width: 310, height: 130, alignment: .leading)
-.font(.system(size: 32))
-.padding(10)
-.background(Color.gray)
-.cornerRadius(25)
-.shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                Text("Sharp words erase all the nice words you've ever said.")
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color.white)
+                    .italic()
+                    .multilineTextAlignment(.center)
+                    .frame(width: 290, height: 80, alignment: .leading)
+                    .font(.system(size: 25))
+                    .padding(10)
+                    .background(Color.gray)
+                    .cornerRadius(25)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
            
                 
@@ -115,7 +115,14 @@ Text("Sharp words erase all the nice words you've ever said")
                 VStack {
                     
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 50)
+                    
+                    Text("when you're ready to reach out")
+                        .font(.system(size: 15, weight: .light))
+                        .italic()
+                        .fontWeight(.light)
+                        .foregroundColor(ColorManager .grey4)
+                        .multilineTextAlignment(.center)
                     
                     NavigationLink(
                         destination: Step2_FightLandingView(user: user, friends: friends),
