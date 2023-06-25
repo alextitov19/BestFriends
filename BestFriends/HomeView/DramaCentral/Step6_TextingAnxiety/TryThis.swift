@@ -50,70 +50,37 @@ struct TryThis: View {
                     }
          
                 VStack {
-                    Text("While counting the hours")
-                        .font(.system(size: 25))
+                    Text("waiting to hear back after a fight")
+                        .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
                     
-                    Text("waiting on an")
-                        .font(.system(size: 25))
+                    Text("waiting on your exam grade")
+                        .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
+                    
+                    Text("waiting on CareHearts from friends on bad day")
+                        .font(.system(size: 20))
+                        .foregroundColor(.white)
+                        .fontWeight(.ultraLight)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 0)
+                    
                     Spacer()
                         .frame(height: 20)
-                    
-                    Text("ANSWER BACK")
-                        .font(.system(size: 45))
-                        .foregroundColor(.blue)
-                        .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 0)
-                    
-                    Spacer()
-                        .frame(height: 30)
-                    
-                    
-                    Text("Waiting to hear from friend after fight, waiting to get you exam grade, by yourself on a bad day, ...")
-                        .font(.system(size: 17))
-                        .italic()
-                        .fontWeight(.light)
-                        .foregroundColor(.white)
-                        .fontWeight(.heavy)
-                        .multilineTextAlignment(.leading)
-                        .padding(.horizontal, 10)
-                    
-                    Spacer()
-                        .frame(height: 30)
+              
                    
                     VStack {
-                        
-                    Text("*listen to your favorite songs \n*take a walk in the park with your dog \n*watch a funny video \n*watch a movie \n*hangout with friends in Chat")
-                        .font(.system(size: 17))
-                        .italic()
-                        .fontWeight(.light)
-                        .foregroundColor(.white)
-                        .fontWeight(.heavy)
-                        .multilineTextAlignment(.leading)
-                        .padding(.horizontal, 10)
-
-              
+//
+                 
                     
-                    
-                    Spacer()
-                        .frame(height: 30)
-                    
-                    
-                    Text("Head to My Room")
-                        .font(.system(size: 25))
-                        .foregroundColor(.white)
-                        .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 0)
+                
                     
                    
                         

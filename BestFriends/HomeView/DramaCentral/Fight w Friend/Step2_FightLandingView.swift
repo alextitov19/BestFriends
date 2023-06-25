@@ -254,7 +254,7 @@ struct Step2_FightLandingView: View {
                             NavigationLink(
                                 destination: TryThis(),
                                 label: {
-                                    Text("Calm my \n'Waiting Anxiety'")
+                                    Text("Calm my \n'waiting to hear anxiety'")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
                                         .frame(width: 310, height: 80)
