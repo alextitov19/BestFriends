@@ -30,47 +30,54 @@ struct TryThis: View {
             
             ZStack {
                 
-                ColorManager.grey2
-                      .ignoresSafeArea()
-//                Image("blueBackground")
-//                    .resizable()
-//                    .ignoresSafeArea()
-//                    .scaledToFill()
-                
-                    .onAppear{
-                        print("is this working")
-                        getHomeData()
-//
-//                AdPlayerView(name: "face")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//
-                    
+                        ColorManager.grey4
+                            .ignoresSafeArea()
+                            .onAppear()
+                       
+                        VStack {
+                            
+                            ZStack {
+                               
+                                Image(systemName: "circle.fill")
+                                    .resizable()
+                                    .foregroundColor(Color.orange)
+                                    .frame(width: 400, height: 400)
+                                    .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+                                    .opacity(0.95)
+                                VStack {
+                                    Text("waiting to hear back after a fight")
+                                        .font(.system(size: 25))
+                                        .foregroundColor(ColorManager .grey4)
+                                        .fontWeight(.thin)
+                                        .multilineTextAlignment(.center)
+                                        .padding(.horizontal, 0)
+                                    
+                                    Spacer()
+                                        .frame(height: 20)
+                                    
+                                    Text("waiting on your exam grade")
+                                        .font(.system(size: 25))
+                                        .foregroundColor(ColorManager .grey4)
+                                        .fontWeight(.thin)
+                                        .multilineTextAlignment(.center)
+                                        .padding(.horizontal, 0)
+                                    Spacer()
+                                        .frame(height: 20)
+                                    
+                                    Text("waiting on CareHearts \nfrom friends on bad day")
+                                        .font(.system(size: 25))
+                                        .foregroundColor(ColorManager .grey4)
+                                        .fontWeight(.thin)
+                                        .multilineTextAlignment(.center)
+                                        .padding(.horizontal, 0)
+                               
+                                }
+                            }
                     
                     }
          
                 VStack {
-                    Text("waiting to hear back after a fight")
-                        .font(.system(size: 20))
-                        .foregroundColor(.white)
-                        .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 0)
-                    
-                    
-                    Text("waiting on your exam grade")
-                        .font(.system(size: 20))
-                        .foregroundColor(.white)
-                        .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 0)
-                    
-                    Text("waiting on CareHearts from friends on bad day")
-                        .font(.system(size: 20))
-                        .foregroundColor(.white)
-                        .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 0)
+                   
                     
                     Spacer()
                         .frame(height: 20)
