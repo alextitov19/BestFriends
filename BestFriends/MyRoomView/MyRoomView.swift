@@ -69,12 +69,15 @@ struct MyRoomView: View {
                                 .opacity(0.3)
                                 .foregroundColor(.white)
                         }
-                        
+                        Text("send")
+                            .foregroundColor(ColorManager .grey2)
+                            .font(.system(size: 10, weight: .light))
+                            .opacity(0.7)
                         Text("PhotoPOP")
                             .foregroundColor(ColorManager .grey2)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
-//                            .padding(40)
+//
                     }
                     
                     
@@ -107,8 +110,11 @@ struct MyRoomView: View {
 //                                        .opacity(0.5)
 //                                        .foregroundColor(.white)
                                 
-                            
-                            Text("Where R U")
+                        Text("Where")
+                            .foregroundColor(ColorManager .grey2)
+                            .font(.system(size: 10, weight: .light))
+                            .opacity(0.7)
+                            Text("are you")
                                 .foregroundColor(ColorManager .grey2)
                                 .font(.system(size: 10, weight: .light))
                                 .opacity(0.7)
@@ -167,22 +173,22 @@ struct MyRoomView: View {
                 
                 
                 
-                NavigationLink(
-                    destination: BuiltByTeensView(user: user, friends: friends),
-                    label: {
-                        Text("designed around teens \nby teen girls")
-//                            .foregroundColor(Color.white)
-//                            .font(.system(size: 16, weight: .light))
-                        
-                            .fontWeight(.thin)
-                            .frame(width: 200, height: 40)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 15))
-                            .background(Color .purple)
-                                .opacity(0.6)
-                            .cornerRadius(12)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
+//                NavigationLink(
+//                    destination: BuiltByTeensView(user: user, friends: friends),
+//                    label: {
+//                        Text("designed around teens \nby teen girls")
+////                            .foregroundColor(Color.white)
+////                            .font(.system(size: 16, weight: .light))
+//                        
+//                            .fontWeight(.thin)
+//                            .frame(width: 200, height: 40)
+//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                            .font(.system(size: 15))
+//                            .background(Color .purple)
+//                                .opacity(0.6)
+//                            .cornerRadius(12)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                    })
                 
                 
                 
