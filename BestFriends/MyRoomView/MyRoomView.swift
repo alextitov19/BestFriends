@@ -51,21 +51,21 @@ struct MyRoomView: View {
                                 Image(systemName: "camera")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 30, height: 30)
+                                    .frame(width: 20, height: 20)
                                     .opacity(0.5)
                                     .foregroundColor(.white)
                             })
                         
                         Text("PhotoPOP")
                             .foregroundColor(ColorManager .grey2)
-                            .font(.system(size: 13, weight: .light))
+                            .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
 //                            .padding(40)
                     }
                     
                     
                     Spacer()
-                        .frame(width: 80)
+                        .frame(width: 200)
                     
                     VStack {
                         NavigationLink(
@@ -75,32 +75,24 @@ struct MyRoomView: View {
                                 Image(systemName: "camera")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 30, height: 30)
+                                    .frame(width: 20, height: 20)
                                     .opacity(0.5)
                                     .foregroundColor(.white)
                             })
                         
                         Text("Where R U")
                             .foregroundColor(ColorManager .grey2)
-                            .font(.system(size: 13, weight: .light))
+                            .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
 //                            .padding(20)
                     }
                     
-                    
+                  
                    
                 }
                 
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+                Spacer()
+                    .frame(height: 70)
                 
                 
                 NavigationLink(destination: HugPushNotification2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
@@ -121,15 +113,15 @@ struct MyRoomView: View {
                 MyRoomRowView(title: "Waiting to hear something", imageName: "camera", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
 
-                NavigationLink(destination: INFOPreloadA(user: user, friends: friends), label: {
-                MyRoomRowView(title: "Where are you?", imageName: "camera", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
-                })
-          
                 
-            
-          
-//     *************************** SmileVault & Affirmations / Motivations
                 
+                //     *************************** SmileVault & Affirmations / Motivations
+                
+                
+//                NavigationLink(destination: INFOPreloadA(user: user, friends: friends), label: {
+//                MyRoomRowView(title: "Where are you?", imageName: "camera", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+//                })
+        
 //
 //                NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
 //                MyRoomRowView(title: "Send PhotoPOPs", imageName: "camera", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
