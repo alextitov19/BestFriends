@@ -41,23 +41,25 @@ struct INFOPreloadA: View {
             
             if shareTapped {
                 
-                
-              
-                
-
-            } else {
-              
-                ColorManager.purple5
+                ColorManager.grey4
                     .opacity(0.8)
                     .ignoresSafeArea()
-                    
-                AdPlayerView(name: "sky2")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                
+              
                 AdPlayerView(name: "dramaLights")
                     .ignoresSafeArea()
                     .blendMode(.screen)
+
+            } else {
+              
+                ColorManager.grey4
+                    .opacity(0.8)
+                    .ignoresSafeArea()
+                    
+//                AdPlayerView(name: "sky2")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+                
+             
 
             }
             
@@ -66,70 +68,96 @@ struct INFOPreloadA: View {
             
             VStack{
                 
-                HStack {
-                    VStack {
-                        
-//                        Text("What's")
-//                            .font(.system(size: 35, weight: .ultraLight))
-//                            .foregroundColor(ColorManager .grey1)
-//
-//
-//                        Text("Up?")
-//                            .font(.system(size: 35, weight: .ultraLight))
-//                            .foregroundColor(ColorManager .grey1)
-                        
-                    }
-                    
-//                    Image("orangeRocket")
-//                        .resizable()
-//                        .frame(width: 200, height: 200)
-                    
-//                    Image("KissesHeart")
-//                        .resizable()
-//                    .ignoresSafeArea()
-
-                }
-             
-         
-                VStack {
-                    
-                    Spacer()
-                        .frame(height: 25)
-                    Text("Wondering what your")
-                                            .font(.system(size: 40))
-                
-                                            .foregroundColor(ColorManager .grey2)
-                                            .fontWeight(.thin)
-                                            .multilineTextAlignment(.center)
-
-                    Text("friends are doing?")
-                                            .font(.system(size: 40))
-                
-                                            .foregroundColor(ColorManager .grey2)
-                                            .fontWeight(.thin)
-                                            .multilineTextAlignment(.center)
+                ZStack {
                     
                     Spacer()
                         .frame(height: 50)
                     
-                    Text("thumbs tired from texting")
-                                            .font(.system(size: 25))
-                
-                                            .foregroundColor(ColorManager .grey1)
-                                            .fontWeight(.thin)
-                                            .multilineTextAlignment(.center)
+                    Image(systemName: "circle.fill")
+                        .resizable()
+                        .foregroundColor(Color.orange)
+                        .frame(width: 400, height: 400)
+                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+                        .opacity(0.95)
+                    VStack {
+                        Text("Wondering what your")
+                                                .font(.system(size: 37))
                     
-                    Spacer()
-                        .frame(height: 7)
+                                                .foregroundColor(ColorManager .grey3)
+                                                .fontWeight(.thin)
+                                                .multilineTextAlignment(.center)
 
-                    Text("Ask for a 'fresh' PhotoPoP!")
-                                            .font(.system(size: 30))
-                
-                                            .foregroundColor(ColorManager .grey1)
-                                            .fontWeight(.thin)
-                                            .multilineTextAlignment(.center)
+                        Text("friends are doing?")
+                                                .font(.system(size: 40))
                     
+                                                .foregroundColor(ColorManager .grey3)
+                                                .fontWeight(.thin)
+                                                .multilineTextAlignment(.center)
+                        
+                        Spacer()
+                            .frame(height: 50)
+                        Text("Ask for a 'fresh' PhotoPoP")
+                                                .font(.system(size: 30))
                     
+                                                .foregroundColor(ColorManager .grey1)
+                                                .fontWeight(.thin)
+                                                .multilineTextAlignment(.center)
+                     
+                        
+                        Spacer()
+                            .frame(height: 7)
+
+                        Text("instead of a text")
+                                                .font(.system(size: 23))
+                                                .italic()
+                                                .foregroundColor(ColorManager .grey3)
+                                                .fontWeight(.thin)
+                                                .multilineTextAlignment(.center)
+                        
+
+                    }
+                }
+             
+         
+                VStack {
+//
+//                    Spacer()
+//                        .frame(height: 25)
+//                    Text("Wondering what your")
+//                                            .font(.system(size: 40))
+//
+//                                            .foregroundColor(ColorManager .grey2)
+//                                            .fontWeight(.thin)
+//                                            .multilineTextAlignment(.center)
+//
+//                    Text("friends are doing?")
+//                                            .font(.system(size: 40))
+//
+//                                            .foregroundColor(ColorManager .grey2)
+//                                            .fontWeight(.thin)
+//                                            .multilineTextAlignment(.center)
+//
+//                    Spacer()
+//                        .frame(height: 50)
+//
+//                    Text("thumbs tired from texting")
+//                                            .font(.system(size: 25))
+//
+//                                            .foregroundColor(ColorManager .grey1)
+//                                            .fontWeight(.thin)
+//                                            .multilineTextAlignment(.center)
+//
+//                    Spacer()
+//                        .frame(height: 7)
+//
+//                    Text("Ask for a 'fresh' PhotoPoP!")
+//                                            .font(.system(size: 30))
+//
+//                                            .foregroundColor(ColorManager .grey1)
+//                                            .fontWeight(.thin)
+//                                            .multilineTextAlignment(.center)
+//
+//
                     
                     
                     VStack {
@@ -254,7 +282,7 @@ struct INFOPreloadA: View {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
-                        .confettiCannon(counter: $counter)
+//                        .confettiCannon(counter: $counter)
 
                         
                         VStack {
@@ -291,7 +319,7 @@ struct INFOPreloadA: View {
 //                            })
                             
                             Spacer()
-                                .frame(height: 30)
+                                .frame(height: 80)
                            
                    
                         }
