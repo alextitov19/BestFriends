@@ -61,6 +61,7 @@ struct TryThis: View {
                                         .fontWeight(.thin)
                                         .multilineTextAlignment(.center)
                                         .padding(.horizontal, 0)
+                                    
                                     Spacer()
                                         .frame(height: 20)
                                     
@@ -89,6 +90,8 @@ struct TryThis: View {
                                 })
                           
                             
+                            
+                            
                             NavigationLink(
                                 destination: BreathInView(),
                                 label: {
@@ -102,6 +105,23 @@ struct TryThis: View {
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 })
                          
+                            
+                            
+                            
+                            
+                            Text("________________________________")
+                                .font(.system(size: 25))
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                                .padding(.horizontal, 0)
+                            
+                            //                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
+                            //                MyRoomRowView(title: "SmileVault", imageName: "sun.max.fill", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                            //                })
+                            
+                            
+                            
                             NavigationLink(
                                 destination: BreathInView(),
                                 label: {

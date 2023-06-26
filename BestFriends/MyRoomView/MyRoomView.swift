@@ -26,13 +26,81 @@ struct MyRoomView: View {
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
+           
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             VStack {
-
+                HStack {
+                    VStack {
+                        NavigationLink(
+                            destination:  PhotoPopView(user: user, friends: friends),
+                            label: {
+                                
+                                Image(systemName: "camera")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 30, height: 30)
+                                    .opacity(0.5)
+                                    .foregroundColor(.white)
+                            })
+                        
+                        Text("PhotoPOP")
+                            .foregroundColor(ColorManager .grey2)
+                            .font(.system(size: 13, weight: .light))
+                            .opacity(0.7)
+//                            .padding(40)
+                    }
+                    
+                    
+                    Spacer()
+                        .frame(width: 80)
+                    
+                    VStack {
+                        NavigationLink(
+                            destination:  INFOPreloadA(user: user, friends: friends),
+                            label: {
+                                
+                                Image(systemName: "camera")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 30, height: 30)
+                                    .opacity(0.5)
+                                    .foregroundColor(.white)
+                            })
+                        
+                        Text("Where R U")
+                            .foregroundColor(ColorManager .grey2)
+                            .font(.system(size: 13, weight: .light))
+                            .opacity(0.7)
+//                            .padding(20)
+                    }
+                    
+                    
+                   
+                }
                 
-                Text("my friendships")
-                    .foregroundColor(ColorManager .grey2)
-                    .font(.system(size: 16, weight: .light))
-                    .opacity(0.7)
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 
                 
                 NavigationLink(destination: HugPushNotification2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
@@ -43,14 +111,7 @@ struct MyRoomView: View {
                 NavigationLink(destination: JournalsView(friends: friends), label: {
                     MyRoomRowView(title: "Chat-in-Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
-                
-//            **************** Andy the link below is the one for the Vibe Tracker
-//                NavigationLink(destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends), label: {
-//                MyRoomRowView(title: "Vibe Tracker", imageName: "hand.thumbsup", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
-//                })
-////
-//
-            
+                     
                 
                 NavigationLink(destination: Step3_BreathInviteView(user: user, friends: friends, groups: groups), label: {
                     MyRoomRowView(title: "My Feelings", imageName: "wind", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
@@ -65,11 +126,16 @@ struct MyRoomView: View {
                 })
           
                 
-                NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
-                MyRoomRowView(title: "Send PhotoPOPs", imageName: "camera", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
-                })
+            
           
 //     *************************** SmileVault & Affirmations / Motivations
+                
+//
+//                NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
+//                MyRoomRowView(title: "Send PhotoPOPs", imageName: "camera", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+//                })
+//
+//
                 //
                 //                NavigationLink(destination: AffirmationMain(), label: {
                 //                    MyRoomRowView(title: "Affirmations", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
