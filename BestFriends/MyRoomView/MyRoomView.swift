@@ -21,7 +21,7 @@ struct MyRoomView: View {
     var body: some View {
         ZStack {
             ColorManager.purple7
-                .opacity(0.7)
+                .opacity(0.6)
                 .ignoresSafeArea()
                 
             AdPlayerView(name: "sky2")
@@ -167,10 +167,10 @@ struct MyRoomView: View {
                 //                    MyRoomRowView(title: "Affirmations", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 //                })
                 
-                
-                                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                                MyRoomRowView(title: "SmileVault", imageName: "sun.max.fill", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
-                                })
+//                
+//                                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
+//                                MyRoomRowView(title: "SmileVault", imageName: "sun.max.fill", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+//                                })
                 
                 
                 
