@@ -66,7 +66,8 @@ struct NotificationsView: View {
         var t: String
 
         @State private var hugActive = false
-        
+        @State private var photoPopActive = false
+
         init(ian: InAppNotification) {
             self.ian = ian
             let date = Date()
@@ -97,7 +98,7 @@ struct NotificationsView: View {
         
         var body: some View {
             ZStack {
-                NavigationLink(destination: VirtualHug(), label: {
+                NavigationLink(destination: PhotoPop3(), isActive: $photoPopActive, label: {
                     EmptyView()
                 })
                 
@@ -135,6 +136,8 @@ struct NotificationsView: View {
             switch ian.text {
             case "You got a new Hug!":
                 hugActive = true
+            case "What are you doing? Send PhotoPoP!":
+                photoPopActive = true
             default:
                 return
             }
