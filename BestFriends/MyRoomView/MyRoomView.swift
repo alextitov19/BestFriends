@@ -52,7 +52,7 @@ struct MyRoomView: View {
                                            label: {
                                 Text("")
                                     .fontWeight(.thin)
-                                    .frame(width: 50, height: 50)
+                                    .frame(width: 50, height: 30)
                                     .foregroundColor(ColorManager .grey1)
                                     .font(.system(size: 30))
 //                                    .background(ColorManager.purple3)
@@ -65,14 +65,14 @@ struct MyRoomView: View {
                             Image(systemName: "camera")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 30, height: 30)
+                                .frame(width: 27, height: 27)
                                 .opacity(0.3)
                                 .foregroundColor(.white)
                         }
-                        Text("send")
-                            .foregroundColor(ColorManager .grey2)
-                            .font(.system(size: 10, weight: .light))
-                            .opacity(0.7)
+//                        Text("send")
+//                            .foregroundColor(ColorManager .grey2)
+//                            .font(.system(size: 10, weight: .light))
+//                            .opacity(0.7)
                         Text("PhotoPOP")
                             .foregroundColor(ColorManager .grey2)
                             .font(.system(size: 10, weight: .light))
@@ -94,9 +94,9 @@ struct MyRoomView: View {
                                            label: {
                                 Text("?")
                                     .fontWeight(.regular)
-                                    .frame(width: 50, height: 50)
+                                    .frame(width: 50, height: 30)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 30))
+                                    .font(.system(size: 27))
                                     .opacity(0.3)
                                 //                                    .background(ColorManager.purple3)
                                     .cornerRadius(15)
@@ -110,14 +110,14 @@ struct MyRoomView: View {
 //                                        .opacity(0.5)
 //                                        .foregroundColor(.white)
                                 
-                        Text("Where")
+                        Text("Where R U")
                             .foregroundColor(ColorManager .grey2)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
-                            Text("are you")
-                                .foregroundColor(ColorManager .grey2)
-                                .font(.system(size: 10, weight: .light))
-                                .opacity(0.7)
+//                            Text("are you")
+//                                .foregroundColor(ColorManager .grey2)
+//                                .font(.system(size: 10, weight: .light))
+//                                .opacity(0.7)
                           
 //                        }
                     }
@@ -179,7 +179,7 @@ struct MyRoomView: View {
 //                        Text("designed around teens \nby teen girls")
 ////                            .foregroundColor(Color.white)
 ////                            .font(.system(size: 16, weight: .light))
-//                        
+//
 //                            .fontWeight(.thin)
 //                            .frame(width: 200, height: 40)
 //                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
