@@ -12,6 +12,9 @@ struct NotificationsView: View {
     @Environment(\.presentationMode) var presentationMode
     
     @State private var ians: [InAppNotification] = []
+    
+    let user: User
+    let friends: [User]
 
     
     var body: some View {
@@ -33,7 +36,7 @@ struct NotificationsView: View {
                     
                     ScrollView(.vertical, showsIndicators: false) {
                         ForEach(ians, id: \.createdOn) { ian in
-                            NotificationBubble(ian: ian)
+                            NotificationBubble(ian: ian, user: user, friends: friends)
                                 .opacity(0.7)
                                 .padding()
                         }
@@ -62,13 +65,19 @@ struct NotificationsView: View {
     }
     
     private struct NotificationBubble: View {
+        let user: User
+        let friends: [User]
+        
         let ian: InAppNotification
         var t: String
 
         @State private var hugActive = false
-        
-        init(ian: InAppNotification) {
+        @State private var photoPopActive = false
+
+        init(ian: InAppNotification, user: User, friends: [User]) {
             self.ian = ian
+            self.user = user
+            self.friends = friends
             let date = Date()
             let ti = date.timeIntervalSince1970
             var dif = Int64(ti)
@@ -97,7 +106,7 @@ struct NotificationsView: View {
         
         var body: some View {
             ZStack {
-                NavigationLink(destination: VirtualHug(), label: {
+                NavigationLink(destination: PhotoPopView(user: user, friends: friends), isActive: $photoPopActive, label: {
                     EmptyView()
                 })
                 
@@ -133,8 +142,10 @@ struct NotificationsView: View {
         
         private func tapped() {
             switch ian.text {
-            case "Wants to talk about your fight":
+            case "You got a new Hug!":
                 hugActive = true
+            case "What are you doing? Send PhotoPoP!":
+                photoPopActive = true
             default:
                 return
             }
