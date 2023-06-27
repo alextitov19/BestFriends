@@ -52,10 +52,14 @@ struct HomeView: View {
                         presentingPhotoPop = true
                     }
                     .fullScreenCover(isPresented: $presentingPhotoPop, content: ShakePhotoPopView.init)
-                    .fullScreenCover(isPresented: $presentingIANs, content: NotificationsView.init)
                     .onReceive(reloadingTimer) { time in
                         getHomeData()
                     }
+                
+                if (homeData != nil) {
+                    NavigationLink(destination: NotificationsView(user: homeData!.user, friends: homeData!.friends), isActive: $presentingIANs) { EmptyView() }
+
+                }
                 
                 // Stars animation...
                 AdPlayerView(name: "MyGalexy")
