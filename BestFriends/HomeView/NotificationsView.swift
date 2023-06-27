@@ -133,7 +133,7 @@ struct NotificationsView: View {
         
         private func tapped() {
             switch ian.text {
-            case "Wants to talk about your fight":
+            case "You got a new Hug!":
                 hugActive = true
             default:
                 return
