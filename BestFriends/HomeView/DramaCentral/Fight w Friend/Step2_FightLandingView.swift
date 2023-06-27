@@ -248,13 +248,16 @@ struct Step2_FightLandingView: View {
 
 
                             
-                            
+                            Text("Calm my 'waiting to hear something' anxiety")
+                                .font(.system(size: 25, weight: .thin))
+                                .foregroundColor(ColorManager .grey3)
+                                .multilineTextAlignment(.center)
 //                    It was... TryThis()
 
                             NavigationLink(
                                 destination: TryThis(),
                                 label: {
-                                    Text("Calm my \n'waiting to hear anxiety'")
+                                    Text("My Friendships")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
                                         .frame(width: 310, height: 80)
