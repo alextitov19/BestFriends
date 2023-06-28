@@ -135,7 +135,7 @@ struct MyRoomView: View {
                 
                 
                 NavigationLink(destination: JournalsView(friends: friends), label: {
-                    MyRoomRowView(title: "Chat-in-Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                    MyRoomRowView(title: "My Vibe Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
                      
                 
