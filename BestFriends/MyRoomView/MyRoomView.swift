@@ -143,9 +143,9 @@ struct MyRoomView: View {
                     MyRoomRowView(title: "My Feelings", imageName: "wind", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
 
-                NavigationLink(destination: TryThis(), label: {
-                MyRoomRowView(title: "My Friendships", imageName: "camera", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
-                })
+//                NavigationLink(destination: TryThis(), label: {
+//                MyRoomRowView(title: "Friendship Highlights", imageName: "camera", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+//                })
 
                 
                 
@@ -167,7 +167,7 @@ struct MyRoomView: View {
                 //                    MyRoomRowView(title: "Affirmations", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
                 //                })
                 
-//                
+//
 //                                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
 //                                MyRoomRowView(title: "SmileVault", imageName: "sun.max.fill", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
 //                                })

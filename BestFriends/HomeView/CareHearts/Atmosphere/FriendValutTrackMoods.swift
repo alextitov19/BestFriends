@@ -43,12 +43,12 @@ struct FriendVaultTrackMoods: View {
                 Spacer()
                     .frame(height: 30)
                 
-                HStack {
+//                HStack {
                     timeRangeButton("Last Week", timeRange: .lastWeek)
-                    timeRangeButton("Last Month", timeRange: .lastMonth)
-                    timeRangeButton("Last 3 Months", timeRange: .lastThreeMonths)
-                }
-                .padding(.horizontal)
+//                    timeRangeButton("Last Month", timeRange: .lastMonth)
+//                    timeRangeButton("Last 3 Months", timeRange: .lastThreeMonths)
+//                }
+               .padding(.horizontal)
                 
                 
                 ScrollView(.vertical, showsIndicators: false) {
@@ -183,10 +183,5 @@ struct FriendVaultTrackMoods: View {
 
 
 
-//struct FriendVaultTrackMoods_Previews : PreviewProvider {
-//    static var previews: some View {
-//        FriendVaultTrackMoods()
-//    }
-//}
 
 
