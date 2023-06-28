@@ -246,21 +246,22 @@ struct Step2_FightLandingView: View {
                             Spacer()
                                 .frame(height: 70)
 
-
+//88888888888888888888888888888888888888888888888888
+//                            this the link to Friendship Highlights ***************
                             
-                            Text("Calm my 'waiting to hear something' anxiety")
-                                .font(.system(size: 25, weight: .thin))
-                                .foregroundColor(ColorManager .grey3)
-                                .multilineTextAlignment(.center)
-//                    It was... TryThis()
+//                            Text("Calm my 'waiting to hear something' anxiety")
+//                                .font(.system(size: 25, weight: .thin))
+//                                .foregroundColor(ColorManager .grey3)
+//                                .multilineTextAlignment(.center)
+
 
                             NavigationLink(
                                 destination: TryThis(),
                                 label: {
-                                    Text("My Friendships")
+                                    Text("")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
-                                        .frame(width: 310, height: 80)
+                                        .frame(width: 0, height: 0)
                                         .font(.system(size: 27))
                                         .background(ColorManager.purple3)
                                         .cornerRadius(15)
