@@ -28,7 +28,7 @@ struct HugPreload: View {
 
             
             ColorManager.purple7
-                .opacity(0.6)
+//                .opacity(0.6)
                 .ignoresSafeArea()
                 
             AdPlayerView(name: "sky2")

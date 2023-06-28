@@ -56,7 +56,7 @@ struct SendKisses: View {
             } else {
 
                 ColorManager.purple7
-                    .opacity(0.5)
+//                    .opacity(0.5)
                     .ignoresSafeArea()
                     .onAppear()
 

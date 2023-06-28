@@ -21,7 +21,7 @@ struct MyRoomView: View {
     var body: some View {
         ZStack {
             ColorManager.purple7
-                .opacity(0.6)
+//                .opacity(0.6)
                 .ignoresSafeArea()
                 
             AdPlayerView(name: "sky2")
@@ -74,7 +74,7 @@ struct MyRoomView: View {
 //                            .font(.system(size: 10, weight: .light))
 //                            .opacity(0.7)
                         Text("PhotoPOP")
-                            .foregroundColor(ColorManager .grey2)
+                            .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
 //
@@ -111,7 +111,7 @@ struct MyRoomView: View {
 //                                        .foregroundColor(.white)
                                 
                         Text("Where R U")
-                            .foregroundColor(ColorManager .grey2)
+                            .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
 //                            Text("are you")

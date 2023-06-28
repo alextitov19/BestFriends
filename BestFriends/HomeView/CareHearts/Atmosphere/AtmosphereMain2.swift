@@ -42,7 +42,7 @@ struct AtmosphereMain2: View {
     var body: some View {
         ZStack {
             ColorManager.purple7
-                .opacity(0.6)
+//                .opacity(0.6)
                 .ignoresSafeArea()
                 
             AdPlayerView(name: "sky2")
