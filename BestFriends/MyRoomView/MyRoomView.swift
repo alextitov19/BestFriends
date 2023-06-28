@@ -171,8 +171,8 @@ struct MyRoomView: View {
 //                                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
 //                                MyRoomRowView(title: "SmileVault", imageName: "sun.max.fill", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
 //                                })
-                
-                
+               
+            
                 
                 
 //                NavigationLink(
