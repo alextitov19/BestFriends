@@ -28,20 +28,7 @@ struct MyRoomView: View {
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
-           
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+       
             
             VStack {
                 HStack {
@@ -69,10 +56,7 @@ struct MyRoomView: View {
                                 .opacity(0.3)
                                 .foregroundColor(.white)
                         }
-//                        Text("send")
-//                            .foregroundColor(ColorManager .grey2)
-//                            .font(.system(size: 10, weight: .light))
-//                            .opacity(0.7)
+
                         Text("PhotoPOP")
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
@@ -89,18 +73,41 @@ struct MyRoomView: View {
                     
                     VStack {
                         
-                            NavigationLink(destination: INFOPreloadA(user: user, friends: friends),
+                        ZStack {
+                            
+                            NavigationLink(destination: PhotoPopView(user: user, friends: friends),
                                            label: {
-                                Text("?")
-                                    .fontWeight(.regular)
+                                Text("")
+                                    .fontWeight(.thin)
                                     .frame(width: 50, height: 30)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 27))
-                                    .opacity(0.3)
-                                //                                    .background(ColorManager.purple3)
+                                    .foregroundColor(ColorManager .grey1)
+                                    .font(.system(size: 30))
+//                                    .background(ColorManager.purple3)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
+                            
+                            
+                            
+                            Image(systemName: "camera")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 27, height: 27)
+                                .opacity(0.3)
+                                .foregroundColor(.white)
+                        }
+//                            NavigationLink(destination: INFOPreloadA(user: user, friends: friends),
+//                                           label: {
+//                                Text("?")
+//                                    .fontWeight(.regular)
+//                                    .frame(width: 50, height: 30)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 27))
+//                                    .opacity(0.3)
+//                                //                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            })
 
                                 
                         Text("What are")
