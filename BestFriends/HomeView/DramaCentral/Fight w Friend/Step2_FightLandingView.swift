@@ -42,7 +42,7 @@ struct Step2_FightLandingView: View {
                 
                 
                 
-                            ColorManager.grey4
+                            ColorManager.grey2
                                 .ignoresSafeArea()
                                 .onAppear()
 
@@ -55,7 +55,7 @@ struct Step2_FightLandingView: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
-                ColorManager.purple1
+                ColorManager.grey4
                     .ignoresSafeArea()
             }
             
@@ -71,13 +71,13 @@ struct Step2_FightLandingView: View {
 
                     Text("Wanting to reach out, but")
                         .font(.system(size: 25, weight: .thin))
-                        .foregroundColor(ColorManager .grey3)
+                        .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     
                     
                     Text("not exactly sure what to say")
                         .font(.system(size: 25, weight: .thin))
-                        .foregroundColor(ColorManager .grey3)
+                        .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     
                     Link(destination: URL(string: "https://socialtechlabs.com/applink/")!) {
@@ -108,16 +108,8 @@ struct Step2_FightLandingView: View {
                                                         .font(.system(size: 15, weight: .bold))
                                                         .italic()
                                                         .fontWeight(.regular)
-                                                        .foregroundColor(ColorManager .grey4)
-                        
-//                        Text("so they can't act like they never got it")
-//                            .font(.system(size: 15, weight: .bold))
-//                            .italic()
-//                            .fontWeight(.regular)
-//                            .foregroundColor(ColorManager .grey4)
-//
-
-                        
+                                                        .foregroundColor(ColorManager .grey1)
+              
 
                         Spacer()
                             .frame(height: 25)
@@ -248,20 +240,22 @@ struct Step2_FightLandingView: View {
 
 //88888888888888888888888888888888888888888888888888
 //                            this the link to Friendship Highlights ***************
+                     
+
+                            Text("Ugg, now I'm stressed waiting to hear back")
+                                .font(.system(size: 15, weight: .bold))
+                                .italic()
+                                .fontWeight(.regular)
+                                .foregroundColor(ColorManager .grey1)
                             
-//                            Text("Calm my 'waiting to hear something' anxiety")
-//                                .font(.system(size: 25, weight: .thin))
-//                                .foregroundColor(ColorManager .grey3)
-//                                .multilineTextAlignment(.center)
-
-
+                            
                             NavigationLink(
                                 destination: TryThis(),
                                 label: {
-                                    Text("")
+                                    Text("Maybe this will help")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
-                                        .frame(width: 0, height: 0)
+                                        .frame(width: 310, height: 60)
                                         .font(.system(size: 27))
                                         .background(ColorManager.purple3)
                                         .cornerRadius(15)
