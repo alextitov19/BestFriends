@@ -110,19 +110,19 @@ struct MyRoomView: View {
 //                                        .opacity(0.5)
 //                                        .foregroundColor(.white)
                                 
-                        Text("Where R U")
+                        Text("What are")
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
-//                            Text("are you")
-//                                .foregroundColor(ColorManager .grey2)
-//                                .font(.system(size: 10, weight: .light))
-//                                .opacity(0.7)
-                          
-//                        }
+                        
+                        Text("you doing")
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 10, weight: .light))
+                            .opacity(0.7)
+                        
+                        
+
                     }
-                  
-                   
                 }
                 
                 Spacer()
