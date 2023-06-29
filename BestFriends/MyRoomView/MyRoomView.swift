@@ -104,12 +104,12 @@ struct MyRoomView: View {
 
 
                                 
-                        Text("what are")
+                        Text("share the")
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
                         
-                        Text("you doing?")
+                        Text("moment")
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
@@ -143,7 +143,7 @@ struct MyRoomView: View {
                 })
 
                 NavigationLink(destination: EmptyView(), label: {
-                    MyRoomRowView(title: "My BEST FriendGroup", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                    MyRoomRowView(title: "Our BEST FriendGroup", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
 
                 
