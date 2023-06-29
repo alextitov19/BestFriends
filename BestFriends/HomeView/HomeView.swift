@@ -90,7 +90,7 @@ struct HomeView: View {
                             NavigationLink(
                                 destination: BuiltByTeensView(user: homeData!.user, friends: homeData!.friends),
                                 label: {
-                                    Text("Friendships Galaxy")
+                                    Text("Best-Ever FriendGroups")
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 16, weight: .light))
                                         .opacity(0.7)

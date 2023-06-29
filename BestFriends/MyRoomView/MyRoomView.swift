@@ -109,7 +109,7 @@ struct MyRoomView: View {
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
                         
-                        Text("you doing")
+                        Text("you doing?")
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
@@ -121,6 +121,11 @@ struct MyRoomView: View {
                 
                 Spacer()
                     .frame(height: 70)
+                
+                
+                NavigationLink(destination: TryThis(), label: {
+                MyRoomRowView(title: "Friendship Highlights", imageName: "person.3", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                })
                 
                 
                 NavigationLink(destination: HugPushNotification2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
@@ -137,8 +142,8 @@ struct MyRoomView: View {
                     MyRoomRowView(title: "My Feelings", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
 
-                NavigationLink(destination: TryThis(), label: {
-                MyRoomRowView(title: "Friendship Highlights", imageName: "person.3", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                NavigationLink(destination: EmptyView(), label: {
+                    MyRoomRowView(title: "My BEST FriendGroup", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
 
                 
