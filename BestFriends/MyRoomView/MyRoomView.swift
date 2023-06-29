@@ -135,7 +135,7 @@ struct MyRoomView: View {
                 
                 
                 NavigationLink(destination: JournalsView(friends: friends), label: {
-                    MyRoomRowView(title: "My Vibe Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                    MyRoomRowView(title: "Vibe Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
                      
                 
@@ -143,9 +143,9 @@ struct MyRoomView: View {
                     MyRoomRowView(title: "My Feelings", imageName: "wind", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
 
-//                NavigationLink(destination: TryThis(), label: {
-//                MyRoomRowView(title: "Friendship Highlights", imageName: "camera", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
-//                })
+                NavigationLink(destination: TryThis(), label: {
+                MyRoomRowView(title: "Friendship Highlights yes, yes, yes", imageName: "camera", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                })
 
                 
                 
