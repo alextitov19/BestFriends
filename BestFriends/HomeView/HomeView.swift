@@ -141,9 +141,9 @@ struct HomeView: View {
                     NavigationLink(destination: MyRoomView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups), label: {
                         PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
                             .scaledToFit()
-                            .frame(width: 70, height: 70)
+                            .frame(width: 120, height: 120)
                             .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 11)
-                            .opacity(0.75)
+                            .opacity(0.3)
                             .padding()
                     })
                 }

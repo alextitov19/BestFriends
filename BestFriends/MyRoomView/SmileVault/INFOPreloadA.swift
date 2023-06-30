@@ -104,15 +104,15 @@ struct INFOPreloadA: View {
                                                 .multilineTextAlignment(.center)
                      
                         
-                        Spacer()
-                            .frame(height: 7)
-
-                        Text("instead of a text")
-                                                .font(.system(size: 23))
-                                                .italic()
-                                                .foregroundColor(ColorManager .grey3)
-                                                .fontWeight(.thin)
-                                                .multilineTextAlignment(.center)
+//                        Spacer()
+//                            .frame(height: 7)
+//
+//                        Text("instead of a text")
+//                                                .font(.system(size: 23))
+//                                                .italic()
+//                                                .foregroundColor(ColorManager .grey3)
+//                                                .fontWeight(.thin)
+//                                                .multilineTextAlignment(.center)
                         
 
                     }
