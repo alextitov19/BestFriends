@@ -31,6 +31,7 @@ struct MyRoomView: View {
             AdPlayerView(name: "dramaLights")
                 .ignoresSafeArea()
                 .blendMode(.screen)
+                .opacity(0.3)
             
             VStack {
                 HStack {
@@ -54,7 +55,7 @@ struct MyRoomView: View {
                             Image(systemName: "camera")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 27, height: 27)
+                                .frame(width: 25, height: 25)
                                 .opacity(0.3)
                                 .foregroundColor(.white)
                         }
@@ -73,10 +74,51 @@ struct MyRoomView: View {
                     
                     
                     Spacer()
-                        .frame(width: 200)
+                        .frame(width: 70)
                     
-                    
-                    
+                    VStack {
+                        
+                        ZStack {
+                            
+                            NavigationLink(destination: INFOPreloadA(user: user, friends: friends),
+                                           label: {
+                                Text("")
+                                    .fontWeight(.thin)
+                                    .frame(width: 50, height: 30)
+                                    .foregroundColor(ColorManager .grey1)
+                                    .font(.system(size: 30))
+//                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                            
+                            
+                            
+                            Image(systemName: "person.3")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 30, height: 30)
+                                .opacity(0.3)
+                                .foregroundColor(.white)
+                        }
+
+
+                                
+                        Text("our")
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 10, weight: .light))
+                            .opacity(0.7)
+                        
+                        Text("FriendGroup")
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 10, weight: .light))
+                            .opacity(0.7)
+                        
+                        
+
+                    }
+                    Spacer()
+                        .frame(width: 70)
                     
                     VStack {
                         
@@ -99,7 +141,7 @@ struct MyRoomView: View {
                             Image(systemName: "camera")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 27, height: 27)
+                                .frame(width: 25, height: 25)
                                 .opacity(0.3)
                                 .foregroundColor(.white)
                         }
@@ -126,7 +168,7 @@ struct MyRoomView: View {
                 
                 
                 NavigationLink(destination: TryThis(), label: {
-                MyRoomRowView(title: "Friendship Spotlights", imageName: "person.3", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                MyRoomRowView(title: "Friendship Spotlights", imageName: "star", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
                 
                 
@@ -136,7 +178,7 @@ struct MyRoomView: View {
                 
                 
                 NavigationLink(destination: JournalsView(friends: friends), label: {
-                    MyRoomRowView(title: "Vibe Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                    MyRoomRowView(title: "FriendGroup Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
                      
                 
@@ -144,9 +186,9 @@ struct MyRoomView: View {
                     MyRoomRowView(title: "My Feelings", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
 
-                NavigationLink(destination: EmptyView(), label: {
-                    MyRoomRowView(title: "Our BEST FriendGroup (ratings)", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
-                })
+//                NavigationLink(destination: EmptyView(), label: {
+//                    MyRoomRowView(title: "Our BEST FriendGroup (ratings)", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+//                })
 
                 
                 
