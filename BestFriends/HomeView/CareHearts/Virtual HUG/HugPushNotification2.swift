@@ -79,13 +79,13 @@ struct HugPushNotification2: View {
                             Spacer ()
                                 .frame(height: 17)
                             
-                            Text("One of those days")
-                                .font(.system(size: 30))
-                            //                    .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager .grey2)
-                            
+//                            Text("One of those days")
+//                                .font(.system(size: 30))
+//                            //                    .italic()
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(ColorManager .grey2)
+//
 
                             
                             Spacer ()
@@ -106,12 +106,12 @@ struct HugPushNotification2: View {
                                              .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                      })
                      
-                            Text("But, not quite ready to talk about it yet")
-                                .font(.system(size: 17))
-                                .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager .grey2)
+//                            Text("But, not quite ready to talk about it yet")
+//                                .font(.system(size: 17))
+//                                .italic()
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(ColorManager .grey2)
                             
                             
                             Spacer ()

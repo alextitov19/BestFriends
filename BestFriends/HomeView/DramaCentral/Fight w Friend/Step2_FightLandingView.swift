@@ -98,7 +98,7 @@ struct Step2_FightLandingView: View {
                             .frame(width: 310, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
-                            .background(ColorManager.pmbc_blue)
+                            .background(ColorManager.grey2)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -124,7 +124,7 @@ struct Step2_FightLandingView: View {
                             .frame(width: 310, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
-                            .background(ColorManager.pmbc_blue)
+                            .background(ColorManager.grey2)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -297,9 +297,10 @@ struct Step2_FightLandingView: View {
                                     Text("Maybe this will help")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
-                                        .frame(width: 310, height: 60)
+                                        .frame(width: 310, height: 40)
                                         .font(.system(size: 27))
-                                        .background(ColorManager.purple3)
+                                        .background(Color.orange)
+                                        .opacity(0.7)
                                         .cornerRadius(15)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 }
