@@ -55,7 +55,7 @@ struct BuiltByTeensView: View {
  
                     
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 50)
                     
                     
                     
@@ -91,7 +91,7 @@ struct BuiltByTeensView: View {
                             VStack {
                                 
                                 Spacer()
-                                    .frame(height: 180)
+                                    .frame(height: 100)
                                 
                                 Text("smiles on faces")
                                 //                    .italic()
@@ -119,7 +119,7 @@ struct BuiltByTeensView: View {
                                     .fontWeight(.thin)
                                     .multilineTextAlignment(.center)
                                 Spacer()
-                                    .frame(height: 140)
+                                    .frame(height: 50)
                                 
                                 NavigationLink(
                                     
@@ -137,7 +137,7 @@ struct BuiltByTeensView: View {
                                     })
                                 
                                Spacer()
-                                    .frame(height: 140)
+                                    .frame(height: 250)
                                 
                                 
                                 
