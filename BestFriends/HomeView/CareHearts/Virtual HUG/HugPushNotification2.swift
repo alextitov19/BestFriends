@@ -26,19 +26,7 @@ struct HugPushNotification2: View {
     var body: some View {
         
         ZStack {
-            //
-            //            ColorManager .purple1
-            //                .ignoresSafeArea()
-            //                .onAppear()
-            ////
-            ////            Color .purple
-            ////                .ignoresSafeArea()
-            ////
-            //
-            //            AdPlayerView(name: "sky2")
-            //                .ignoresSafeArea()
-            //
-            //
+  
             
             ColorManager.purple7
 //                .opacity(0.6)
@@ -50,93 +38,39 @@ struct HugPushNotification2: View {
             
             
             VStack {
-//                Text("Ouch!")
-//                    .font(.system(size: 60))
-//                //                    .italic()
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//                    .foregroundColor(ColorManager .grey1)
-                
-                Text("Something bad")
-                    .font(.system(size: 32))
-                //                    .italic()
+                Text("Send")
+                    .font(.system(size: 30))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey1)
+                    .foregroundColor(ColorManager .grey2)
                 
-                Text("just happened")
-                    .font(.system(size: 32))
-                //                    .italic()
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey1)
+                NavigationLink( destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
+                                label: {
+                    Text("Friendship CareHearts")
+                        .fontWeight(.thin)
+                        .frame(width: 310, height: 50)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.system(size: 30))
+                        .background(Color .orange)
+//                                    .opacity(0.5)
+                        .cornerRadius(15)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                })
                 
-                Spacer ()
-                    .frame(height: 5)
-                Text("But, I'm not ready to talk about it")
-                    .font(.system(size: 21))
+                Text("putting smiles on friend's faces")
+                    .font(.system(size: 17))
                     .italic()
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager .grey2)
+                
+                
+                
+              
                
                 Spacer ()
-                    .frame(height: 23)
-                
+                    .frame(height: 150)
 
-                
-                Text("But, I still need")
-                    .font(.system(size: 23))
-//                    .italic()
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey1)
-                
-                Text("Emotional Support")
-                    .font(.system(size: 35))
-//                    .italic()
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey1)
-              
-                
-           
-                    
-                    
-                    NavigationLink( destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                    label: {
-                        Text("REQUEST Care Hearts")
-                            .fontWeight(.thin)
-                            .frame(width: 300, height: 50)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 30))
-                            .background(Color .purple)
-//                            .opacity(0.5)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
-                    
-                 
-         
-                VStack {
-                    
-                    Spacer ()
-                        .frame(height: 140)
-                    
-                    
-                    Text("Friend having a bad day?")
-                        .font(.system(size: 30, weight: .thin))
-                        .fontWeight(.light)
-                        .foregroundColor(ColorManager .grey1)
-                    
-                    VStack {
-                        
-                        
-                    }
-                    
-                    
-                    
-                    
                     ZStack {
                         
                   
@@ -145,29 +79,43 @@ struct HugPushNotification2: View {
                             Spacer ()
                                 .frame(height: 17)
                             
-                            NavigationLink( destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
-                                            label: {
-                                Text("SEND CareHearts")
-                                    .fontWeight(.thin)
-                                    .frame(width: 300, height: 50)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 30))
-                                    .background(Color .orange)
-//                                    .opacity(0.5)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            })
+                            Text("One of those days")
+                                .font(.system(size: 30))
+                            //                    .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager .grey2)
                             
-                            Text("Thx for being a true friend")
+
+                            
+                            Spacer ()
+                                .frame(height: 5)
+                           
+                     
+                                     
+                                     NavigationLink( destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                                     label: {
+                                         Text("REQUEST Care Hearts")
+                                             .fontWeight(.thin)
+                                             .frame(width: 300, height: 50)
+                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                             .font(.system(size: 30))
+                                             .background(Color .purple)
+                 //                            .opacity(0.5)
+                                             .cornerRadius(15)
+                                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                     })
+                     
+                            Text("But, not quite ready to talk about it yet")
                                 .font(.system(size: 17))
                                 .italic()
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager .grey1)
+                                .foregroundColor(ColorManager .grey2)
                             
                             
- 
-//                        
+                            Spacer ()
+                                .frame(height: 50)
                         }
                     }
                 }
@@ -176,7 +124,7 @@ struct HugPushNotification2: View {
         }
         
     }
-}
+
 
 // **********************************************
 

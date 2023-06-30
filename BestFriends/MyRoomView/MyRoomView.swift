@@ -28,7 +28,9 @@ struct MyRoomView: View {
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
-       
+            AdPlayerView(name: "dramaLights")
+                .ignoresSafeArea()
+                .blendMode(.screen)
             
             VStack {
                 HStack {
@@ -124,7 +126,7 @@ struct MyRoomView: View {
                 
                 
                 NavigationLink(destination: TryThis(), label: {
-                MyRoomRowView(title: "Friendship Highlights", imageName: "person.3", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                MyRoomRowView(title: "Friendship Spotlights", imageName: "person.3", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
                 
                 
@@ -143,7 +145,7 @@ struct MyRoomView: View {
                 })
 
                 NavigationLink(destination: EmptyView(), label: {
-                    MyRoomRowView(title: "Our BEST FriendGroup", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                    MyRoomRowView(title: "Our BEST FriendGroup (ratings)", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
 
                 
