@@ -80,7 +80,7 @@ struct MyRoomView: View {
                         
                         ZStack {
                             
-                            NavigationLink(destination: INFOPreloadA(user: user, friends: friends),
+                            NavigationLink(destination: HurtFeelings4(user: user, friends: friends, groups: groups),
                                            label: {
                                 Text("")
                                     .fontWeight(.thin)
@@ -94,7 +94,7 @@ struct MyRoomView: View {
                             
                             
                             
-                            Image(systemName: "person.3")
+                            Image(systemName: "shareplay.slash")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 30, height: 30)
@@ -104,12 +104,12 @@ struct MyRoomView: View {
 
 
                                 
-                        Text("our")
+                        Text("Hurt Feelings")
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
                         
-                        Text("FriendGroup")
+                        Text("(BF_notification)")
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
@@ -180,10 +180,10 @@ struct MyRoomView: View {
                 NavigationLink(destination: JournalsView(friends: friends), label: {
                     MyRoomRowView(title: "FriendGroup Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
-                     
-                
-                NavigationLink(destination: Step3_BreathInviteView(user: user, friends: friends, groups: groups), label: {
-                    MyRoomRowView(title: "My Feelings", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+               
+//                                    Step3_BreathInviteView(user: user, friends: friends, groups: groups
+                NavigationLink(destination:  Step4_NuclearOption(user: user, friends: friends), label: {
+                    MyRoomRowView(title: "Fighting", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
 
 //                NavigationLink(destination: EmptyView(), label: {

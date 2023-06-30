@@ -40,23 +40,36 @@ struct Step2_FightLandingView: View {
             
             if shareTapped {
                 
+                ColorManager.grey4
+                    .ignoresSafeArea()
+    
+//
+//            ColorManager.purple7
+//                .opacity(0.6)
+//                .ignoresSafeArea()
+        
+  
                 
-                
-                ColorManager.grey2
+                ColorManager.grey3
                     .ignoresSafeArea()
                     .onAppear()
                 
+              
                 
                 AdPlayerView(name: "dramaLights")
                     .ignoresSafeArea()
                     .blendMode(.screen)
             } else {
-                AdPlayerView(name: "")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
+//                AdPlayerView(name: "")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
                 
                 ColorManager.grey4
                     .ignoresSafeArea()
+                AdPlayerView(name: "sky2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                
             }
             
             
