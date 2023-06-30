@@ -95,11 +95,11 @@ struct HugPushNotification2: View {
                                      
                                      NavigationLink( destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                                      label: {
-                                         Text("REQUEST Care Hearts")
+                                         Text("Requesting Care Hearts")
                                              .fontWeight(.thin)
-                                             .frame(width: 300, height: 50)
+                                             .frame(width: 310, height: 50)
                                              .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                             .font(.system(size: 30))
+                                             .font(.system(size: 29))
                                              .background(Color .purple)
                  //                            .opacity(0.5)
                                              .cornerRadius(15)
