@@ -88,49 +88,60 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 35)
                 
+                        Text("But, you could use some")
+                            .font(.system(size: 17))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager .grey2)
                         
+                        Text("Emotional Support")
+                            .font(.system(size: 30))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager .grey2)
                      
-                        
-                        Text("Please send")
-//                          .italic()
-                          .font(.system(size: 15))
-                          .fontWeight(.light)
-                          .multilineTextAlignment(.center)
-                          .foregroundColor(ColorManager .grey1)
- 
-                        Text("CareHearts")
-                          .font(.system(size: 15))
-                          .fontWeight(.light)
-                          .multilineTextAlignment(.center)
-                          .foregroundColor(ColorManager .grey1)
+//
+//                        Text("Please send")
+////                          .italic()
+//                          .font(.system(size: 15))
+//                          .fontWeight(.light)
+//                          .multilineTextAlignment(.center)
+//                          .foregroundColor(ColorManager .grey1)
+//
+//                        Text("CareHearts")
+//                          .font(.system(size: 15))
+//                          .fontWeight(.light)
+//                          .multilineTextAlignment(.center)
+//                          .foregroundColor(ColorManager .grey1)
                         
                         Button(action: {
                             mood = 0
                         }) {
                             
-                            ZStack {
-                                Image(systemName: "heart.fill")
-                                    .resizable()
-                                    .foregroundColor(ColorManager .purple1)
-                                    .frame(width: 100, height: 80)
-                                    .cornerRadius(30)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                                
-                                Text("tap")
-                                    .fontWeight(.thin)
-                                    .frame(width: 70, height: 37)
-                                    .foregroundColor(ColorManager .purple7)
-                                    .font(.system(size: 20))
-                                    .background(ColorManager .purple1)
-                                    .cornerRadius(10)
-                                    .opacity(0.95)
-                            }
-                            .frame(width: 120, height: 90, alignment: .center)
-                           
-                            .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
-                            .cornerRadius(37)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            ZStack {
+//                                Image(systemName: "heart.fill")
+//                                    .resizable()
+//                                    .foregroundColor(ColorManager .purple1)
+//                                    .frame(width: 100, height: 80)
+//                                    .cornerRadius(30)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//
+//                                Text("tap")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 70, height: 37)
+//                                    .foregroundColor(ColorManager .purple7)
+//                                    .font(.system(size: 20))
+//                                    .background(ColorManager .purple1)
+//                                    .cornerRadius(10)
+//                                    .opacity(0.95)
+//                            }
+//                            .frame(width: 120, height: 90, alignment: .center)
+//
+//                            .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
+//                            .cornerRadius(37)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         }
                         
 //                        Spacer()
@@ -202,36 +213,36 @@ struct AtmosphereMain2: View {
                             
                             
                             VStack {
-                                Text("Because I")
-                                //                          .italic()
-                                    .font(.system(size: 15))
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(ColorManager .grey1)
+//                                Text("Because I")
+//                                //                          .italic()
+//                                    .font(.system(size: 15))
+//                                    .fontWeight(.light)
+//                                    .multilineTextAlignment(.center)
+//                                    .foregroundColor(ColorManager .grey1)
+//
+//                                Text("need some")
+//                                    .font(.system(size: 15))
+//                                    .fontWeight(.light)
+//                                    .multilineTextAlignment(.center)
+//                                    .foregroundColor(ColorManager .grey1)
                                 
-                                Text("need some")
-                                    .font(.system(size: 15))
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(ColorManager .grey1)
-                                
-                                NavigationLink(destination: MyRoomView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                               label: {
-                                    Text("Emotional Support")
-                                        .fontWeight(.thin)
-                                        .frame(width: 80, height: 40)
-                                        .foregroundColor(ColorManager .purple7)
-                                        .font(.system(size: 15))
-                                        .background(ColorManager .purple1)
-                                        .cornerRadius(10)
-                                        .opacity(0.95)
-                                    
-                                        .frame(width: 120, height: 90, alignment: .center)
-                                    
-                                        .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
-                                        .cornerRadius(37)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                })
+//                                NavigationLink(destination: MyRoomView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                                               label: {
+//                                    Text("Emotional Support")
+//                                        .fontWeight(.thin)
+//                                        .frame(width: 80, height: 40)
+//                                        .foregroundColor(ColorManager .purple7)
+//                                        .font(.system(size: 15))
+//                                        .background(ColorManager .purple1)
+//                                        .cornerRadius(10)
+//                                        .opacity(0.95)
+//
+//                                        .frame(width: 120, height: 90, alignment: .center)
+//
+//                                        .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
+//                                        .cornerRadius(37)
+//                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                })
                             }
                     }
                         
@@ -715,7 +726,7 @@ struct AtmosphereMain2: View {
                         print("Create a CareHeart notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)
-                }         
+                }
             }
         }
         shareColor = ColorManager.darkGrey

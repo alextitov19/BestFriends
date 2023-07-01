@@ -195,9 +195,9 @@ struct MyRoomView: View {
                     
                     Text("CareHearts")
                         .fontWeight(.thin)
-                        .frame(width: 155, height: 60)
+                        .frame(width: 145, height: 60)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .font(.system(size: 30))
+                        .font(.system(size: 29))
                         .background(ColorManager .purple5)
                         .opacity(0.6)
                         .cornerRadius(15)
@@ -207,7 +207,7 @@ struct MyRoomView: View {
                                 label: {
                     Text("Request")
                         .fontWeight(.thin)
-                        .frame(width: 70, height: 50)
+                        .frame(width: 75, height: 50)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .font(.system(size: 17))
                         .background(Color .purple)
