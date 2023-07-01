@@ -199,36 +199,40 @@ struct AtmosphereMain2: View {
 //                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 //
 //                            .opacity(0.95)
-                            Text("Friends will")
-    //                          .italic()
-                              .font(.system(size: 15))
-                              .fontWeight(.light)
-                              .multilineTextAlignment(.center)
-                              .foregroundColor(ColorManager .grey1)
-     
-                            Text("send")
-                              .font(.system(size: 15))
-                              .fontWeight(.light)
-                              .multilineTextAlignment(.center)
-                              .foregroundColor(ColorManager .grey1)
                             
-                            NavigationLink(destination: MyRoomView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                            label: {
-                                Text("Emotional Support")
-                                    .fontWeight(.thin)
-                                    .frame(width: 80, height: 40)
-                                    .foregroundColor(ColorManager .purple7)
+                            
+                            VStack {
+                                Text("I need")
+                                //                          .italic()
                                     .font(.system(size: 15))
-                                    .background(ColorManager .purple1)
-                                    .cornerRadius(10)
-                                    .opacity(0.95)
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(ColorManager .grey1)
                                 
-                                    .frame(width: 120, height: 90, alignment: .center)
-                                   
-                                    .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
-                                    .cornerRadius(37)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            })
+                                Text("some")
+                                    .font(.system(size: 15))
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(ColorManager .grey1)
+                                
+                                NavigationLink(destination: MyRoomView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                               label: {
+                                    Text("Emotional Support")
+                                        .fontWeight(.thin)
+                                        .frame(width: 80, height: 40)
+                                        .foregroundColor(ColorManager .purple7)
+                                        .font(.system(size: 15))
+                                        .background(ColorManager .purple1)
+                                        .cornerRadius(10)
+                                        .opacity(0.95)
+                                    
+                                        .frame(width: 120, height: 90, alignment: .center)
+                                    
+                                        .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
+                                        .cornerRadius(37)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                })
+                            }
                     }
                         
                     }
@@ -432,7 +436,7 @@ struct AtmosphereMain2: View {
                 
                         VStack {
                             
-                            Text("Who do you want CareHearts from?")
+                            Text("Who whould you like CareHearts from?")
 //                                .italic()
                                 .font(.system(size: 17))
                                 .fontWeight(.light)
