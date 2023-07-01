@@ -194,10 +194,10 @@ struct MyRoomView: View {
                     
                     
                     Text("CareHearts")
-                        .fontWeight(.thin)
+                        .fontWeight(.light)
                         .frame(width: 145, height: 60)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .font(.system(size: 29))
+                        .foregroundColor(Color.white)
+                        .font(.system(size: 24))
                         .background(ColorManager .purple5)
                         .opacity(0.6)
                         .cornerRadius(15)
