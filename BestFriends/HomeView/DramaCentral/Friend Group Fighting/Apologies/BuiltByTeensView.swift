@@ -93,31 +93,31 @@ struct BuiltByTeensView: View {
                                 Spacer()
                                     .frame(height: 100)
                                 
-                                Text("smiles on faces")
-                                //                    .italic()
-                                    .font(.system(size: 30))
-                                    .foregroundColor(ColorManager.grey1)
-                                    .fontWeight(.thin)
-                                    .multilineTextAlignment(.center)
+                                Text("now you can let the outside of you")
+                                                   .font(.system(size: 22))
+                                                   .italic()
+                                                   .foregroundColor(ColorManager.grey1)
+                                                   .fontWeight(.thin)
+                                                   .multilineTextAlignment(.center)
+                                               
+                                               Text("match the inside of you")
+                                                   .font(.system(size: 22))
+                                                   .italic()
+                                                   .foregroundColor(ColorManager.grey1)
+                                                   .fontWeight(.thin)
+                                                   .multilineTextAlignment(.center)
+                                               
+                                               
+                                               Text("on social media")
+                                                   .font(.system(size: 22))
+                                                   .italic()
+                                                   .foregroundColor(ColorManager.grey1)
+                                                   .fontWeight(.thin)
+                                                   .multilineTextAlignment(.center)
+                                               
+                               
                                 
-                                Spacer()
-                                    .frame(height: 7)
                                 
-                                Text("and")
-                                    .italic()
-                                    .font(.system(size: 18))
-                                    .foregroundColor(ColorManager.grey1)
-                                    .fontWeight(.thin)
-                                    .multilineTextAlignment(.center)
-                                
-                                Spacer()
-                                    .frame(height: 7)
-                                
-                                Text("premier FriendGroups")
-                                    .font(.system(size: 35))
-                                    .foregroundColor(ColorManager.grey1)
-                                    .fontWeight(.thin)
-                                    .multilineTextAlignment(.center)
                                 Spacer()
                                     .frame(height: 50)
                                 
