@@ -65,30 +65,45 @@ struct AtmosphereMain2: View {
                 
                 VStack {
                     
-                    Text("It's one of those days")
-                        .font(.system(size: 30))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .grey2)
-                    
-                    Spacer()
-                        .frame(height: 7)
-                
-                    Text("But, you're not quite ready to talk about it yet")
-                        .font(.system(size: 17))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .grey2)
+//                    Text("It's one of those days")
+//                        .font(.system(size: 30))
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager .grey2)
+//
+//                    Spacer()
+//                        .frame(height: 7)
+//
+//                    Text("But, you're not quite ready to talk about it yet")
+//                        .font(.system(size: 17))
+//                        .italic()
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager .grey2)
                 }
            
                 HStack {
                     VStack {
-             
+                        HStack {
+                            
+                            Text("")
+//                              .font(.system(size: 15))
+//                              .fontWeight(.light)
+//                              .multilineTextAlignment(.center)
+//                              .foregroundColor(ColorManager .grey1)
+                            
+                      
+                        Spacer ()
+                            
+                            Image("FatGuy200")
+                                .resizable()
+                                .frame(width: 100, height: 100)
+                            
+                        }
                         Spacer()
                             .frame(height: 35)
                 
-                        Text("But, you could use some")
+                        Text("I could use some")
                             .font(.system(size: 17))
                             .italic()
                             .fontWeight(.light)
@@ -441,7 +456,7 @@ struct AtmosphereMain2: View {
     
                     
                     Spacer()
-                        .frame(height: 140)
+                        .frame(height: 70)
                     
                     ZStack {
                 
@@ -606,23 +621,25 @@ struct AtmosphereMain2: View {
                             
                         })
                         
-                        HStack {
-                            
-                            Text("")
-//                              .font(.system(size: 15))
-//                              .fontWeight(.light)
-//                              .multilineTextAlignment(.center)
-//                              .foregroundColor(ColorManager .grey1)
-                            
-                            Spacer()
-                                .frame(width: 250)
-                            
-                            
-                            Image("FatGuy200")
-                                .resizable()
-                                .frame(width: 100, height: 100)
-                            
-                        }
+                        Spacer()
+                            .frame(width: 100)
+//                        
+//                        HStack {
+//                            
+//                            Text("")
+////                              .font(.system(size: 15))
+////                              .fontWeight(.light)
+////                              .multilineTextAlignment(.center)
+////                              .foregroundColor(ColorManager .grey1)
+//                            
+//                      
+//                        Spacer ()
+//                            
+//                            Image("FatGuy200")
+//                                .resizable()
+//                                .frame(width: 100, height: 100)
+//                            
+//                        }
                         
 
 //
