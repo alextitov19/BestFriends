@@ -86,7 +86,7 @@ struct AtmosphereMain2: View {
                     VStack {
              
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 35)
                 
                         
                      
@@ -202,14 +202,14 @@ struct AtmosphereMain2: View {
                             
                             
                             VStack {
-                                Text("I need")
+                                Text("Because I")
                                 //                          .italic()
                                     .font(.system(size: 15))
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(ColorManager .grey1)
                                 
-                                Text("some")
+                                Text("need some")
                                     .font(.system(size: 15))
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
@@ -303,9 +303,9 @@ struct AtmosphereMain2: View {
 //                        .cornerRadius(7)
 //                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 //
-//
-                        Spacer()
-                            .frame(height: 25)
+////
+//                        Spacer()
+//                            .frame(height: 25)
                         
                         HStack {
                             
@@ -430,7 +430,7 @@ struct AtmosphereMain2: View {
     
                     
                     Spacer()
-                        .frame(height: 40)
+                        .frame(height: 140)
                     
                     ZStack {
                 
@@ -455,7 +455,7 @@ struct AtmosphereMain2: View {
                     VStack {
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 10)
                         
                         
                         HStack {
@@ -708,7 +708,14 @@ struct AtmosphereMain2: View {
             for f in friends {
                 if f.id == id {
                     RestApi.instance.sendPushNotification(title: "BestFriends", body: "Something happened to \(user.firstName) changing their 'Vibe'. Send them a Care Heart. ", APNToken: f.APNToken)
-                }
+                    
+                    //MARK: The code below creates an in-app notification for your friend (f.id)
+                    //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Please send CareHearts", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        print("Create a CareHeart notification response code: ", response)
+                    })
+                    RestApi.instance.createStreakLog(friendID: f.id)
+                }         
             }
         }
         shareColor = ColorManager.darkGrey
