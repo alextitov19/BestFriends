@@ -53,28 +53,45 @@ struct INFOMainHowWorks: View {
                 Spacer()
                     .frame(height: 10)
                 
-                Text("now you can let the outside of you")
+//                Text("now you can let the outside of you")
+//                    .font(.system(size: 22))
+//                    .italic()
+//                    .foregroundColor(ColorManager.grey1)
+//                    .fontWeight(.thin)
+//                    .multilineTextAlignment(.center)
+//
+//                Text("match the inside of you in")
+//                    .font(.system(size: 22))
+//                    .italic()
+//                    .foregroundColor(ColorManager.grey1)
+//                    .fontWeight(.thin)
+//                    .multilineTextAlignment(.center)
+//
+//
+//                Text("highly protected environment")
+//                    .font(.system(size: 22))
+//                    .italic()
+//                    .foregroundColor(ColorManager.grey1)
+//                    .fontWeight(.thin)
+//                    .multilineTextAlignment(.center)
+//
+                
+                
+                Text("great friend groups are hard to acheive")
                     .font(.system(size: 22))
                     .italic()
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
-                Text("match the inside of you in")
+                Text("we can help")
                     .font(.system(size: 22))
                     .italic()
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
-                
-                Text("highly protected environment")
-                    .font(.system(size: 22))
-                    .italic()
-                    .foregroundColor(ColorManager.grey1)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                
+          
                 Spacer()
                     .frame(height: 20)
                 
