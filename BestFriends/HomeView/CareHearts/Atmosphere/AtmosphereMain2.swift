@@ -74,7 +74,7 @@ struct AtmosphereMain2: View {
                     Spacer()
                         .frame(height: 7)
                 
-                    Text("But, I'm not quite ready to talk about it yet")
+                    Text("But, you're not quite ready to talk about it yet")
                         .font(.system(size: 17))
                         .italic()
                         .fontWeight(.light)
@@ -97,18 +97,8 @@ struct AtmosphereMain2: View {
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
                           .foregroundColor(ColorManager .grey1)
-                       
-//
-//                        Text("send ")
-////                          .italic()
-//                          .font(.system(size: 15))
-//                          .fontWeight(.light)
-//                          .multilineTextAlignment(.center)
-//                          .foregroundColor(ColorManager .grey1)
-                        
-                        
+ 
                         Text("CareHearts")
-//                          .italic()
                           .font(.system(size: 15))
                           .fontWeight(.light)
                           .multilineTextAlignment(.center)
@@ -201,28 +191,34 @@ struct AtmosphereMain2: View {
                     VStack {
                         
 
-                        Image("FatGuy200")
-                            .resizable()
-                            .frame(width: 150, height: 150)
-                      
-                        
                         ZStack {
-                        Image(systemName: "heart.fill")
-                            .resizable()
-                            .foregroundColor(Color .white)
-                            .frame(width: 100, height: 80)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
-                            .opacity(0.95)
-                
+//                        Image(systemName: "heart.fill")
+//                            .resizable()
+//                            .foregroundColor(Color .white)
+//                            .frame(width: 100, height: 80)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                            .opacity(0.95)
+                            Text("Friends will")
+    //                          .italic()
+                              .font(.system(size: 15))
+                              .fontWeight(.light)
+                              .multilineTextAlignment(.center)
+                              .foregroundColor(ColorManager .grey1)
+     
+                            Text("send")
+                              .font(.system(size: 15))
+                              .fontWeight(.light)
+                              .multilineTextAlignment(.center)
+                              .foregroundColor(ColorManager .grey1)
                             
                             NavigationLink(destination: MyRoomView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
-                                Text("tap")
+                                Text("Emotional Support")
                                     .fontWeight(.thin)
-                                    .frame(width: 70, height: 37)
+                                    .frame(width: 80, height: 40)
                                     .foregroundColor(ColorManager .purple7)
-                                    .font(.system(size: 20))
+                                    .font(.system(size: 15))
                                     .background(ColorManager .purple1)
                                     .cornerRadius(10)
                                     .opacity(0.95)
@@ -277,8 +273,8 @@ struct AtmosphereMain2: View {
 //
 //                    }
 //
-                    Spacer()
-                        .frame(width: 20)
+//                    Spacer()
+//                        .frame(width: 20)
                     
                     VStack {
 //
@@ -427,13 +423,7 @@ struct AtmosphereMain2: View {
                 
                 VStack {
                     // MARK: End of feeling buttons
-                    
-                    
-                    HStack {
-                        
-                        
-                        
-                    }
+    
                     
                     Spacer()
                         .frame(height: 40)
@@ -601,10 +591,27 @@ struct AtmosphereMain2: View {
                             
                         })
                         
-//                        Spacer()
-//                            .frame(height: 120)
-//                        
-//                        
+                        HStack {
+                            
+                            Text("")
+//                              .font(.system(size: 15))
+//                              .fontWeight(.light)
+//                              .multilineTextAlignment(.center)
+//                              .foregroundColor(ColorManager .grey1)
+                            
+                            Spacer()
+                                .frame(width: 250)
+                            
+                            
+                            Image("FatGuy200")
+                                .resizable()
+                                .frame(width: 100, height: 100)
+                            
+                        }
+                        
+
+//
+//
 //
 //
 //                        HStack {

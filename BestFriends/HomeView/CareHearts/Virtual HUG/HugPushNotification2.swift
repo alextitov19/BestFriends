@@ -38,15 +38,11 @@ struct HugPushNotification2: View {
             
             
             VStack {
-                Text("Send")
-                    .font(.system(size: 30))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey2)
+        
                 
                 NavigationLink( destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                                 label: {
-                    Text("Friendship CareHearts")
+                    Text("Send CareHearts")
                         .fontWeight(.thin)
                         .frame(width: 310, height: 50)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -57,42 +53,17 @@ struct HugPushNotification2: View {
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 })
                 
-                Text("putting smiles on friend's faces")
-                    .font(.system(size: 17))
-                    .italic()
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey2)
                 
-                
-                
-              
+   
                
                 Spacer ()
-                    .frame(height: 150)
+                    .frame(height: 75)
 
                     ZStack {
                         
-                  
                         VStack {
                             
-                            Spacer ()
-                                .frame(height: 17)
-                            
-//                            Text("One of those days")
-//                                .font(.system(size: 30))
-//                            //                    .italic()
-//                                .fontWeight(.light)
-//                                .multilineTextAlignment(.center)
-//                                .foregroundColor(ColorManager .grey2)
-//
-
-                            
-                            Spacer ()
-                                .frame(height: 5)
-                           
-                     
-                                     
+                                         
                                      NavigationLink( destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                                      label: {
                                          Text("Request Care Hearts")
