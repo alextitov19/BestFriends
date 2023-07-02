@@ -95,7 +95,7 @@ struct BadDayQuietAlertView: View {
                                  
                                
                                     
-                                    Text("When you Register for BestFriends you grant each of your friends ONE 'TalkCoupon'. This coupon may be redeamed at any time after a huge fight giving you ONE last time to become friends again. In good faith, 'TalkCoupons' should be honored.")
+                                    Text("When you Register for BestFriends you grant each of your friends ONE 'TalkCoupon'. This coupon may be redeamed at any time after a huge fight giving everyone on BestFriends ONE last time to become friends again. In good faith, 'TalkCoupons' should be honored.")
                                         .font(.system(size: 17, weight: .light))
                                         .italic()
                                         .foregroundColor(Color.black)
