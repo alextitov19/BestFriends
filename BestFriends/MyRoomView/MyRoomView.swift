@@ -165,9 +165,9 @@ struct MyRoomView: View {
                 
                 Spacer()
                     .frame(height: 70)
+//                 TryThis
                 
-                
-                NavigationLink(destination: TryThis(), label: {
+                NavigationLink(destination: EmptyView(), label: {
                 MyRoomRowView(title: "Friendship Spotlights", imageName: "star", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
                 

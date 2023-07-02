@@ -292,9 +292,9 @@ struct Step2_FightLandingView: View {
                             
                             
                             NavigationLink(
-                                destination: TryThis(),
+                                destination: BadDayQuietAlertView(user: user, friends: friends),
                                 label: {
-                                    Text("Maybe this wi")
+                                    Text("Redeam 'TalkCoupon'")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
                                         .frame(width: 310, height: 40)
@@ -354,7 +354,7 @@ struct Step2_FightLandingView: View {
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
                     RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Wants to talk about your fight", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                        print("Create a fist-pump notification response code: ", response)
+                        print("Create a fix fight notification response code: ", response)
                     })
                     
                 }
