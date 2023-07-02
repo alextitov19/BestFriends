@@ -93,11 +93,11 @@ struct Step2_FightLandingView: View {
                     
                     Link(destination: URL(string: "https://socialtechlabs.com/understanding-the-why/")!) {
                         
-                        Text("Is this a true friend?")
+                        Text("My friend is important to me")
                             .fontWeight(.thin)
                             .frame(width: 310, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 30))
+                            .font(.system(size: 26))
                             .background(ColorManager.grey2)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -284,7 +284,13 @@ struct Step2_FightLandingView: View {
                             //                            this the link to Friendship Highlights ***************
                             
                             
-                            Text("Ugggg, now I'm stressed waiting to hear back")
+                            Text("Ugggg, now the stressful waiting to hear back begins.")
+                                .font(.system(size: 15, weight: .bold))
+                                .italic()
+                                .fontWeight(.regular)
+                                .foregroundColor(ColorManager .grey1)
+                            
+                            Text("-or-")
                                 .font(.system(size: 15, weight: .bold))
                                 .italic()
                                 .fontWeight(.regular)
