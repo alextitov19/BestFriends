@@ -260,7 +260,7 @@ struct Step2_FightLandingView: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("we will figure this out", isPresented: $showingAlert) {
+                                .alert("You got this. Maybe redeam your 'TalkCoupon'. We will figure this out, ok.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -284,7 +284,7 @@ struct Step2_FightLandingView: View {
                             //                            this the link to Friendship Highlights ***************
                             
                             
-                            Text("Ugg, now I'm stressed waiting to hear back")
+                            Text("Ugggg, now I'm stressed waiting to hear back")
                                 .font(.system(size: 15, weight: .bold))
                                 .italic()
                                 .fontWeight(.regular)
@@ -294,7 +294,7 @@ struct Step2_FightLandingView: View {
                             NavigationLink(
                                 destination: TryThis(),
                                 label: {
-                                    Text("Maybe this will help")
+                                    Text("Maybe this wi")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
                                         .frame(width: 310, height: 40)
