@@ -6,7 +6,7 @@
 //
 
 
-//BadDayQuietAlertView(user: user, friends: friends
+
 
                      import Foundation
                      import SwiftUI
@@ -90,13 +90,13 @@
                                                          .opacity(0.95)
                                                          
                                                      VStack {
-                                                         Text("TalkCoupon")
-                                                             .font(.system(size: 40, weight: .light))
+                                                         Text("Friendship Coupons")
+                                                             .font(.system(size: 26, weight: .light))
                                                              .foregroundColor(ColorManager .grey3)
                                                       
                                                     
                                                          
-                                                         Text("When you Register for BestFriends you grant each of your friends ONE 'TalkCoupon'. This coupon may be redeamed at any time after a huge fight giving everyone on BestFriends ONE last time to become friends again. In good faith, 'TalkCoupons' should be honored.")
+                                                         Text("Send coupons to your friends they can redeam for cool stuff next time you guys are together. Like ice cream, a cheesburger n' fries, a new car (just kidding).")
                                                              .font(.system(size: 17, weight: .light))
                                                              .italic()
                                                              .foregroundColor(Color.black)
@@ -104,6 +104,26 @@
                      //                                        .opacity(0.50)
                                                              .multilineTextAlignment(.center)
                                                              .padding(30)
+                                                         
+                                                         NavigationLink(destination: EmptyView(),
+                                                                        label: {
+                                                             ZStack {
+                                                                 Circle()
+                                                                     .frame(width: 140, height: 140)
+                                                                     .foregroundColor(ColorManager.orange2)
+                                                                     .shadow(color: .white, radius: 17, x: 0, y: 0)
+                                                                     .shadow(color: .white, radius: 20, x: 0, y: 0)
+                                                                     .glow(color: ColorManager.orange2, radius: 3)
+                                                                     .opacity(0.5)
+                                                                 
+                                                                 Text("Select \nItem")
+                                                                     .foregroundColor(.white)
+                                                                     .font(.system(size: 25, weight: .bold))
+                                                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                                                     .opacity(0.50)
+                                                             }
+                                                         })
+                                                         
                                                          
                                                      }
                                                  }
@@ -125,7 +145,7 @@
                               
                                      VStack {
 
-                                         Text("Send TalkCoupon to ...")
+                                         Text("Send Coupon to ...")
                                              .font(.system(size: 17))
                                              .fontWeight(.ultraLight)
                                              .foregroundColor(ColorManager .grey1)
@@ -257,7 +277,7 @@
                                                      .background(shareColor)
                                                      .cornerRadius(25)
                                                      .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                                     .alert("Your 'TalkCoupon' \n\nhas been sent.", isPresented: $showingAlert) {
+                                                     .alert("Your 'Friendship Coupon' \n\nhas been sent.", isPresented: $showingAlert) {
                                                          Button("OK", role: .cancel) { }
                                                      }
                                              })
@@ -315,12 +335,12 @@
                              for id in selectedFriends {
                                  for f in friends {
                                      if f.id == id {
-                                         RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) is redeaming ONE 'TalkCoupon'", APNToken: f.APNToken)
+                                         RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) just sent you a 'Friendship Coupon'", APNToken: f.APNToken)
                                          
                                          //MARK: The code below creates an in-app notification for your friend (f.id)
                                          //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                                         RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Redeaming ONE 'TalkCoupon'", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                                             print("Create a TalkCoupon notification response code: ", response)
+                                         RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Just got a 'Friendship Coupon'", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                                             print("Create a Friendship Coupon notification response code: ", response)
                                          })
                                          RestApi.instance.createStreakLog(friendID: f.id)
                                      }

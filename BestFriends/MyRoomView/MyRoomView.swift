@@ -74,7 +74,7 @@ struct MyRoomView: View {
                     
                     
                     Spacer()
-                        .frame(width: 70)
+                        .frame(width: 7)
                     
                     VStack {
                         
@@ -118,7 +118,52 @@ struct MyRoomView: View {
 
                     }
                     Spacer()
-                        .frame(width: 70)
+                        .frame(width: 65)
+                 
+                    
+                    VStack {
+                        
+                        ZStack {
+                            
+                            NavigationLink(destination: PhotoPopFGPreload(user: user, friends: friends),
+                                           label: {
+                                Text("")
+                                    .fontWeight(.thin)
+                                    .frame(width: 50, height: 30)
+                                    .foregroundColor(ColorManager .grey1)
+                                    .font(.system(size: 30))
+//                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                            
+                            
+                            
+                            Image(systemName: "heart")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 25, height: 25)
+                                .opacity(0.3)
+                                .foregroundColor(.white)
+                        }
+
+
+                                
+                        Text("Friendship")
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 10, weight: .light))
+                            .opacity(0.7)
+                        
+                        Text("Coupons")
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 10, weight: .light))
+                            .opacity(0.7)
+                        
+                        
+
+                    }
+                    
+            
                     
                     VStack {
                         
@@ -185,13 +230,7 @@ struct MyRoomView: View {
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
-//                    NavigationLink(destination: HugPushNotification2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-//                        MyRoomRowView(title: "CareHearts", imageName: "heart", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
-//                    })
-                 
-//
-//                    .background(Color(cgColor: backgroundColor))  .background(Color(cgColor: backgroundColor))
-                    
+
                     
                     Text("CareHearts")
                         .fontWeight(.light)
