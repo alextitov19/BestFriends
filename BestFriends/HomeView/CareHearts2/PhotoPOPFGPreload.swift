@@ -96,7 +96,7 @@ struct PhotoPopFGPreload: View {
                                     Spacer()
                                         .frame(height: 10)
                                     
-                                    Text("Send coupons friends can redeam for \ncool stuff. \n\nLike ice cream, a cheesburger n' fries, \na new car (just kidding).")
+                                    Text("Send coupons friends can \nredeam for cool stuff. \n\nLike ice cream, a cheesburger n' fries, \na new car (just kidding).")
                                         .font(.system(size: 17, weight: .light))
                                         .italic()
                                         .foregroundColor(Color.black)
@@ -107,14 +107,16 @@ struct PhotoPopFGPreload: View {
                                     
                                     VStack {
                                         
+                                        Spacer()
+                                            .frame(height: 40)
                                         
                                              Button(action: {
                                                  sessionManager.showLogin()
                                              },
                                                  label: {
                 //                                 Image("home-alt2")
-                                                 Text("Send Coupon in Chat")
-                                                     .frame(width: 200, height: 40)
+                                                 Text("Send Coupons in Chat")
+                                                     .frame(width: 230, height: 40)
                                                      .foregroundColor(.white)
                                                      .font(.system(size: 20))
                                                      .background(ColorManager .purple3)

@@ -62,7 +62,7 @@ struct HomeView: View {
                 }
                 
                 // Stars animation...
-                AdPlayerView(name: "MyGalexy")
+                AdPlayerView(name: "Galaxy2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.7)
