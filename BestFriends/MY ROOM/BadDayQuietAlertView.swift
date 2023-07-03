@@ -227,15 +227,7 @@ struct BadDayQuietAlertView: View {
                             }
                         }
                   
-                        
-                        
-//                        Button(action: {
-//                            counter += 1
-//                            shareButtonTapped()
-//                        },
-//                               label: {
-//                            Text("SHARE")
-                        
+
                         
                         Spacer()
                             .frame(height: 20)

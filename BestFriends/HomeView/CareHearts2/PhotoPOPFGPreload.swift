@@ -108,30 +108,24 @@ struct PhotoPopFGPreload: View {
                                     VStack {
                                         
                                         Spacer()
-                                            .frame(height: 40)
-                                        
-                                             Button(action: {
-                                                 sessionManager.showLogin()
-                                             },
-                                                 label: {
-                //                                 Image("home-alt2")
-                                                 Text("Build your \nFriendship Coupon")
-                                                     .frame(width: 230, height: 80)
-                                                     .foregroundColor(.white)
-                                                     .font(.system(size: 20))
-                                                     .background(ColorManager .purple3)
-                                                     .cornerRadius(15)
-                                                     .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                                     .opacity(0.70)
-                                                 
-                                             })
-                                        
-                                        
-                                        
-                                        Spacer()
-                                            .frame(height: 30)
-                               
-                                    }
+                                            .frame(height: 20)
+                                      
+                                        NavigationLink(
+                                            destination: TestPage3(user: user, friends: friends),
+                                            label: {
+                                                Text("Build your \nFriendship Coupon")
+                                                    .fontWeight(.thin)
+                                                    .foregroundColor(Color.white)
+                                                    .frame(width: 300, height: 70)
+                                                    .font(.system(size: 27))
+                                                    .background(ColorManager .orange2)
+                                                    .opacity(0.7)
+                                                    .cornerRadius(15)
+                                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                            }
+                                            
+                                        )}
+                 
           
                                 }
                                
@@ -246,15 +240,7 @@ struct PhotoPopFGPreload: View {
                             }
                         }
                   
-                        
-                        
-//                        Button(action: {
-//                            counter += 1
-//                            shareButtonTapped()
-//                        },
-//                               label: {
-//                            Text("SHARE")
-                        
+
                         
                         Spacer()
                             .frame(height: 20)
@@ -275,49 +261,43 @@ struct PhotoPopFGPreload: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your 'Friendship Coupon' \n\nhas been sent.", isPresented: $showingAlert) {
+                                .alert("Your 'TalkCoupon' \n\nhas been sent.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
-                        .confettiCannon(counter: $counter)
+//                        .confettiCannon(counter: $counter)
 
+                      
                         
                         VStack {
-                            
-                            
-                                 Button(action: {
-                                     sessionManager.showLogin()
-                                 },
-                                     label: {
-                                     Image("home-alt2")
-                                         .frame(width: 50, height: 25)
-                                         .foregroundColor(.white)
-                                         .font(.system(size: 20))
-                                         .background(Color .black)
-                                         .cornerRadius(15)
-                                         .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                         .opacity(0.70)
-                                     
-                                 })
-                            
-                            
-                            
                             Spacer()
-                                .frame(height: 30)
-                   
+                                .frame(height: 20)
+                            
+                            Button(action: {
+                                sessionManager.showLogin()
+                            },
+                                   label: {
+                                Image("home-alt2")
+                                    .frame(width: 50, height: 25)
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 20))
+                                    .background(ColorManager .grey1)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                    .opacity(0.70)
+                                
+                               
+                                
+                            })
+                            
+                            
+                                Spacer()
+                                    .frame(height: 120)
                         }
                         
-
-//
-                        
-                        
-                        }
+                    }
                     
                     
-                    
-                
-                    Spacer()
-                        .frame(height: 100)
                     
                 }
                 
@@ -327,7 +307,8 @@ struct PhotoPopFGPreload: View {
         
     }
     
-    
+                        
+                        
     func shareButtonTapped() {
         if selectedFriends.count == 0 { return }
         for id in selectedFriends {
@@ -356,7 +337,7 @@ struct PhotoPopFGPreload: View {
         var body: some View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
-                .frame(width: 90, height: 90)
+                .frame(width: 70, height: 70)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .font(.system(size: 8))
                 .background(color)
@@ -369,120 +350,3 @@ struct PhotoPopFGPreload: View {
     
 }
 
-
-//*************************************************************************
-//*****************************************************************************
-
-//
-//import Foundation
-//import SwiftUI
-//
-//
-//struct PhotoPOPFGPreload: View {
-//    
-//    @EnvironmentObject var sessionManager: SessionManager
-//    
-//    let user: User
-//    let friends: [User]
-//    
-//    @State private var showingAlert = false
-//    
-//    var body: some View {
-//        ZStack {
-//            ColorManager.grey4
-//                .ignoresSafeArea()
-//                .onAppear()
-//            
-//            VStack {
-//              
-//            
-//                
-//                Text("Connecting FriendGroups")
-//                    .font(.system(size: 30))
-//                    .foregroundColor(ColorManager .purple3)
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//                
-//                
-//                Spacer()
-//                    .frame(height: 20)
-//                
-//                Text("W O R L D W I D E")
-//                    .font(.system(size: 40))
-//                    .foregroundColor(ColorManager .purple4)
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//                
-//                Spacer()
-//                    .frame(height: 15)
-//                
-//                Text("with")
-//                    .font(.system(size: 20))
-//                    .foregroundColor(ColorManager .purple4)
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//          
-//                Text("Images")
-//                    .font(.system(size: 50))
-//                    .foregroundColor(ColorManager .purple4)
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//          
-//                
-//                Spacer()
-//                    .frame(height: 150)
-//             
-//                
-//                Text("Designed for users")
-//                    .font(.system(size: 25))
-//                 
-//                    .foregroundColor(.white)
-//                    .fontWeight(.thin)
-//                    .multilineTextAlignment(.center)
-//                
-//                Text("in mutiple FriendGroups")
-//                    .font(.system(size: 25))
-//                 
-//                    .foregroundColor(.white)
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//                
-//                VStack {
-//                        
-// 
-//                Spacer()
-//                    .frame(height: 50)
-//                
-// 
-//                    
-//                    
-//                    Text("-Public images \n-Comments allowed")
-//                        .font(.system(size: 25))
-//                     
-//                        .foregroundColor(.white)
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//
-//                    
-//                    Spacer()
-//                        .frame(height: 20)
-//                    
-//                Text("comming soon")
-//                    .font(.system(size: 20))
-//                    .italic()
-//                    .foregroundColor(.green)
-//                    .fontWeight(.light)
-//                    .padding()
-//              
-//                    Spacer()
-//                    .frame(height: 50)
-//                    }
-//                }
-//                
-//            }
-//            
-//        }
-//        
-//}
-//    
-//

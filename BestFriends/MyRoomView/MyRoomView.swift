@@ -125,6 +125,7 @@ struct MyRoomView: View {
                         
                         ZStack {
                             
+//                            NavigationLink(destination: PhotoPopFGPreload(user: user, friends: friends),
                             NavigationLink(destination: PhotoPopFGPreload(user: user, friends: friends),
                                            label: {
                                 Text("")
