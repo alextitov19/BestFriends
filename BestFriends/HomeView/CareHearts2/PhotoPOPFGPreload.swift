@@ -115,8 +115,8 @@ struct PhotoPopFGPreload: View {
                                              },
                                                  label: {
                 //                                 Image("home-alt2")
-                                                 Text("Send Coupons in Chat")
-                                                     .frame(width: 230, height: 40)
+                                                 Text("Build your \nFriendship Coupon")
+                                                     .frame(width: 230, height: 80)
                                                      .foregroundColor(.white)
                                                      .font(.system(size: 20))
                                                      .background(ColorManager .purple3)
