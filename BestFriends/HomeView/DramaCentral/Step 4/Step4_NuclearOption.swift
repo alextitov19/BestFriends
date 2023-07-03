@@ -67,16 +67,16 @@ struct Step4_NuclearOption: View {
 
 
                     
-                    NavigationLink(destination: SendSongPush(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .grey3, friendName: "We sincerely hope \nwe can help you \nfix this love fight \n\nTAP")
+                    NavigationLink(destination: EmptyView(), label: {
+                        HugCircle (color: ColorManager .grey3, friendName: "maybe we \ncan help calm \nyour dented heart")
                     })
                     .offset(x: showItems ? 300 : 0, y: showItems ? 600: 0)
 //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
                     .opacity(0.75)
 
 
-                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .grey4, friendName: "Remember; sharp words \nerase all the nice words \nyou've ever said")
+                    NavigationLink(destination: EmptyView(), label: {
+                        HugCircle (color: ColorManager .grey3, friendName: "sharp words \nerase all the nice words \nyou've ever said")
                     })
                     .offset(x: showItems ? -300 : 0, y: showItems ? 325: 0)
 //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
@@ -135,11 +135,11 @@ struct Step4_NuclearOption: View {
 
                 ZStack {
 
-                    Image(systemName: "circle.fill")
+                    Image(systemName: "heart.fill")
                         .resizable()
                         .foregroundColor(color)
                     //                            .foregroundColor(ColorManager .purple2)
-                        .frame(width: 200, height: 200)
+                        .frame(width: 225, height: 200)
 //                        .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
 
                     Text(friendName)

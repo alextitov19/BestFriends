@@ -89,13 +89,13 @@ struct BadDayQuietAlertView: View {
                                     .opacity(0.95)
                                     
                                 VStack {
-                                    Text("TalkCoupon")
+                                    Text("TalkCoupons")
                                         .font(.system(size: 40, weight: .light))
                                         .foregroundColor(ColorManager .grey3)
                                  
-                               
+//                                    Text("When you Register for BestFriends you grant each of your friends ONE 'TalkCoupon'. This coupon may be redeamed at any time after a huge fight giving everyone on BestFriends ONE last time to become friends again. In good faith, 'TalkCoupons' should be honored.")
                                     
-                                    Text("When you Register for BestFriends you grant each of your friends ONE 'TalkCoupon'. This coupon may be redeamed at any time after a huge fight giving everyone on BestFriends ONE last time to become friends again. In good faith, 'TalkCoupons' should be honored.")
+                                    Text("Gives everyone a last chance to try to work things out. \n\nIn good faith, 'TalkCoupons' should be honored by all.")
                                         .font(.system(size: 17, weight: .light))
                                         .italic()
                                         .foregroundColor(Color.black)
@@ -127,7 +127,7 @@ struct BadDayQuietAlertView: View {
                     Text("Send TalkCoupon to ...")
                         .font(.system(size: 17))
                         .fontWeight(.ultraLight)
-                        .foregroundColor(ColorManager .grey1)
+                        .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
             
                     VStack {
@@ -260,7 +260,7 @@ struct BadDayQuietAlertView: View {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
-                        .confettiCannon(counter: $counter)
+//                        .confettiCannon(counter: $counter)
 
                         
                         VStack {

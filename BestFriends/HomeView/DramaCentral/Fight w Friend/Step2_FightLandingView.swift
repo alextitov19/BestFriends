@@ -56,9 +56,9 @@ struct Step2_FightLandingView: View {
                 
               
                 
-                AdPlayerView(name: "dramaLights")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
+//                AdPlayerView(name: "dramaLights")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
             } else {
 //                AdPlayerView(name: "")
 //                    .ignoresSafeArea()
@@ -106,7 +106,7 @@ struct Step2_FightLandingView: View {
                     Spacer()
                         .frame(height: 40)
                     
-                    Text("Decided to reach out, but")
+                    Text("Decided to reach out first, but")
                         .font(.system(size: 20, weight: .thin))
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
@@ -137,7 +137,7 @@ struct Step2_FightLandingView: View {
                         
                         
                         
-                        Text("Let's make sure they got your text message")
+                        Text("Let's make sure they get your message")
                             .font(.system(size: 15, weight: .bold))
                             .italic()
                             .fontWeight(.regular)
@@ -282,25 +282,29 @@ struct Step2_FightLandingView: View {
                             
                             
                             //                            this the link to Friendship Highlights ***************
-                            
-                            
-                            Text("Ugggg, now the stressful waiting to hear back begins.")
-                                .font(.system(size: 15, weight: .bold))
-                                .italic()
+                            Text("Ugggg, now the hellish")
+                                .font(.system(size: 20, weight: .bold))
+                         
                                 .fontWeight(.regular)
-                                .foregroundColor(ColorManager .darkGrey)
+                                .foregroundColor(Color.white)
+                            
+                            Text("'waiting-to-hear-back' begins")
+                                .font(.system(size: 20, weight: .bold))
+                          
+                                .fontWeight(.regular)
+                                .foregroundColor(Color.white)
                             
                             Text("-or-")
-                                .font(.system(size: 15, weight: .bold))
+                                .font(.system(size: 25, weight: .bold))
                                 .italic()
                                 .fontWeight(.regular)
-                                .foregroundColor(ColorManager .darkGrey)
-                            
+                                .foregroundColor(Color.white)
+                     
                             
                             NavigationLink(
                                 destination: BadDayQuietAlertView(user: user, friends: friends),
                                 label: {
-                                    Text("Redeem 'TalkCoupon'")
+                                    Text("Redeem a 'TalkCoupon'")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
                                         .frame(width: 310, height: 40)
