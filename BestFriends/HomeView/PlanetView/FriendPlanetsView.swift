@@ -306,7 +306,7 @@ struct FriendPlanetsView: View {
                 }
                 
                 Text("add friend")
-                    .font(.system(size: 14, weight: .light))
+                    .font(.system(size: 11, weight: .light))
                     .foregroundColor(.white)
             }
             .onTapGesture {
