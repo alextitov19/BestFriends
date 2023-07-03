@@ -260,7 +260,7 @@ struct Step2_FightLandingView: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("You got this. Maybe redeam your 'TalkCoupon'. We will figure this out, ok.", isPresented: $showingAlert) {
+                                .alert("You got this. Maybe redeem your 'TalkCoupon'. We will figure this out.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -288,19 +288,19 @@ struct Step2_FightLandingView: View {
                                 .font(.system(size: 15, weight: .bold))
                                 .italic()
                                 .fontWeight(.regular)
-                                .foregroundColor(ColorManager .grey1)
+                                .foregroundColor(ColorManager .darkGrey)
                             
                             Text("-or-")
                                 .font(.system(size: 15, weight: .bold))
                                 .italic()
                                 .fontWeight(.regular)
-                                .foregroundColor(ColorManager .grey1)
+                                .foregroundColor(ColorManager .darkGrey)
                             
                             
                             NavigationLink(
                                 destination: BadDayQuietAlertView(user: user, friends: friends),
                                 label: {
-                                    Text("Redeam 'TalkCoupon'")
+                                    Text("Redeem 'TalkCoupon'")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
                                         .frame(width: 310, height: 40)
