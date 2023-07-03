@@ -44,7 +44,7 @@ struct Step4_NuclearOption: View {
               
 
                     NavigationLink(destination: Step2_FightLandingView(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager.purple4, friendName: "when you're ready to \nreach out \n\nTAP")
+                        HugCircle (color: ColorManager.purple4, friendName: "when you're ready to \nreach out to try to fix this \n\nTAP")
                     })
                     .offset(x: showItems ? 100 : 0, y: showItems ? -240: 0)
                     .shadow(color: ColorManager .purple1, radius: 30, x: 10, y: 10)
@@ -56,7 +56,7 @@ struct Step4_NuclearOption: View {
             
                         
                         NavigationLink(destination: BreathInView(), label: {
-                            HugCircle (color: ColorManager .grey3, friendName: "just Breathe \n\nTAP")
+                            HugCircle (color: ColorManager .purple3, friendName: "just Breathe \n\nTAP")
                         })
                         .offset(x: showItems ? -130 : 0, y: showItems ? -150: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
@@ -68,7 +68,7 @@ struct Step4_NuclearOption: View {
 
                     
                     NavigationLink(destination: SendSongPush(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .darkGrey, friendName: "We sincerely hope \nwe can help you \nfix this love fight")
+                        HugCircle (color: ColorManager .grey3, friendName: "We sincerely hope \nwe can help you \nfix this love fight \n\nTAP")
                     })
                     .offset(x: showItems ? 300 : 0, y: showItems ? 600: 0)
 //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
@@ -76,7 +76,7 @@ struct Step4_NuclearOption: View {
 
 
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), label: {
-                        HugCircle (color: Color.orange, friendName: "Remember; sharp words \nerase all the nice words \nyou've ever said")
+                        HugCircle (color: ColorManager .grey4, friendName: "Remember; sharp words \nerase all the nice words \nyou've ever said")
                     })
                     .offset(x: showItems ? -300 : 0, y: showItems ? 325: 0)
 //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
