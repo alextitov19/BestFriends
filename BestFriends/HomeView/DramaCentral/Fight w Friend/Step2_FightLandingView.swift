@@ -93,9 +93,9 @@ struct Step2_FightLandingView: View {
                     
                     Link(destination: URL(string: "https://socialtechlabs.com/understanding-the-why/")!) {
                         
-                        Text("My friend is important to me")
+                        Text("Taking a hard look \nat this relationship")
                             .fontWeight(.thin)
-                            .frame(width: 310, height: 40)
+                            .frame(width: 300, height: 80)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 26))
                             .background(ColorManager.grey2)

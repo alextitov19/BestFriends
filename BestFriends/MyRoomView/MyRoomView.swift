@@ -262,7 +262,7 @@ struct MyRoomView: View {
                
 //                                    Step3_BreathInviteView(user: user, friends: friends, groups: groups
                 NavigationLink(destination:  Step4_NuclearOption(user: user, friends: friends), label: {
-                    MyRoomRowView(title: "Friend Drama", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                    MyRoomRowView(title: "Dented Heart", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
 
 //                NavigationLink(destination: EmptyView(), label: {

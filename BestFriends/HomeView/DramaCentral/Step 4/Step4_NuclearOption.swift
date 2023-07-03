@@ -26,7 +26,7 @@ struct Step4_NuclearOption: View {
         ZStack {
             
             
-                        ColorManager.grey4
+                        ColorManager.purple7
                             .ignoresSafeArea()
             
 //
@@ -44,43 +44,41 @@ struct Step4_NuclearOption: View {
               
 
                     NavigationLink(destination: Step2_FightLandingView(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager.purple4, friendName: "when you're ready to \nreach out \n\nlet's try to fix this")
+                        HugCircle (color: ColorManager.purple4, friendName: "when you're ready to \nreach out \n\nTAP")
                     })
                     .offset(x: showItems ? 100 : 0, y: showItems ? -240: 0)
                     .shadow(color: ColorManager .purple1, radius: 30, x: 10, y: 10)
 //                    .opacity(0.6)
                     .opacity(0.65)
 
-
-
-                    NavigationLink(destination: BreathInView(), label: {
-                        HugCircle (color: ColorManager .grey2, friendName: "just Breathe")
-                    })
-                    .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
-                    .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
-                    .opacity(0.65)
-
-
-
-
-
-
+                
+                
+            
+                        
+                        NavigationLink(destination: BreathInView(), label: {
+                            HugCircle (color: ColorManager .grey3, friendName: "just Breathe \n\nTAP")
+                        })
+                        .offset(x: showItems ? -130 : 0, y: showItems ? -150: 0)
+                        .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
+                        .opacity(0.65)
+                        
+           
                 VStack {
 
 
                     
                     NavigationLink(destination: SendSongPush(user: user, friends: friends), label: {
-                        HugCircle (color: Color.orange, friendName: "You were best friends \nbefore & you will \nbe again")
+                        HugCircle (color: ColorManager .darkGrey, friendName: "We sincerely hope \nwe can help you \nfix this love fight")
                     })
-                    .offset(x: showItems ? 80 : 0, y: showItems ? 400: 0)
+                    .offset(x: showItems ? 300 : 0, y: showItems ? 600: 0)
 //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-                    .opacity(0.4)
+                    .opacity(0.75)
 
 
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), label: {
-                        HugCircle (color: Color.orange, friendName: "Remenber; sharp words \nerase all the nice words \nyou've ever said")
+                        HugCircle (color: Color.orange, friendName: "Remember; sharp words \nerase all the nice words \nyou've ever said")
                     })
-                    .offset(x: showItems ? -100 : 0, y: showItems ? 325: 0)
+                    .offset(x: showItems ? -300 : 0, y: showItems ? 325: 0)
 //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
                     .opacity(0.9)
 
