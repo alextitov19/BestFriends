@@ -109,11 +109,13 @@ struct PhotoPopFGPreload: View {
                                         
                                         Spacer()
                                             .frame(height: 20)
+                                        
+                                        
+                                        
                                       
-                                        NavigationLink(
-                                            destination: TestPage3(user: user, friends: friends),
-                                            label: {
-                                                Text("Build your \nFriendship Coupon")
+                            NavigationLink(destination: TestPage3(user: user, friends: friends),
+                                label: {
+                                    Text("Build your \nFriendship Coupon")
                                                     .fontWeight(.thin)
                                                     .foregroundColor(Color.white)
                                                     .frame(width: 300, height: 70)
@@ -134,6 +136,38 @@ struct PhotoPopFGPreload: View {
                         }
                       
                     }
+                    
+                    
+                    VStack {
+                     
+                        Text("For 'beta' just type your coupon in Chat")
+                            .font(.system(size: 17, weight: .light))
+                            .italic()
+                            .foregroundColor(Color.black)
+                            .multilineTextAlignment(.center)
+                        
+
+                        Button(action: {
+                            sessionManager.showLogin()
+                        },
+                               label: {
+                            Image("home-alt2")
+                                .frame(width: 50, height: 25)
+                                .foregroundColor(.white)
+                                .font(.system(size: 20))
+                                .background(ColorManager .grey1)
+                                .cornerRadius(15)
+                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                .opacity(0.70)
+                            
+                           
+                            
+                        })
+                        
+                        
+                            Spacer()
+                                .frame(height: 30)
+                    }
       
                 VStack {
 
@@ -146,7 +180,7 @@ struct PhotoPopFGPreload: View {
                     VStack {
 
                         Spacer()
-                            .frame(height: 25)
+                            .frame(height: 5)
                         
                         
                         HStack {
@@ -272,29 +306,29 @@ struct PhotoPopFGPreload: View {
                         VStack {
                             Spacer()
                                 .frame(height: 20)
-                            
-                            Button(action: {
-                                sessionManager.showLogin()
-                            },
-                                   label: {
-                                Image("home-alt2")
-                                    .frame(width: 50, height: 25)
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 20))
-                                    .background(ColorManager .grey1)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                    .opacity(0.70)
-                                
-                               
-                                
-                            })
-                            
-                            
+//
+//                            Button(action: {
+//                                sessionManager.showLogin()
+//                            },
+//                                   label: {
+//                                Image("home-alt2")
+//                                    .frame(width: 50, height: 25)
+//                                    .foregroundColor(.white)
+//                                    .font(.system(size: 20))
+//                                    .background(ColorManager .grey1)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                                    .opacity(0.70)
+//
+//
+//
+//                            })
+
+
                                 Spacer()
                                     .frame(height: 120)
                         }
-                        
+
                     }
                     
                     
