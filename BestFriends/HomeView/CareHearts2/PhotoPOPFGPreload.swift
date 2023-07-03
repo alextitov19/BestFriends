@@ -93,58 +93,55 @@ struct PhotoPopFGPreload: View {
                                         .font(.system(size: 26, weight: .light))
                                         .foregroundColor(ColorManager .grey3)
                                  
-                               
+                                    Spacer()
+                                        .frame(height: 10)
                                     
-                                    Text("Send coupons to your friends they can redeam for cool stuff next time you guys are together. Like ice cream, a cheesburger n' fries, a new car (just kidding).")
+                                    Text("Send coupons friends can redeam for \ncool stuff. \n\nLike ice cream, a cheesburger n' fries, \na new car (just kidding).")
                                         .font(.system(size: 17, weight: .light))
                                         .italic()
                                         .foregroundColor(Color.black)
                     //                    .shadow(color: .black, radius: 1, x: 0, y: 1)
 //                                        .opacity(0.50)
                                         .multilineTextAlignment(.center)
-                                        .padding(30)
+//                                        .padding(30)
                                     
-                                    NavigationLink(destination: EmptyView(),
-                                                   label: {
-                                        ZStack {
-                                            Circle()
-                                                .frame(width: 140, height: 140)
-                                                .foregroundColor(ColorManager.orange2)
-                                                .shadow(color: .white, radius: 17, x: 0, y: 0)
-                                                .shadow(color: .white, radius: 20, x: 0, y: 0)
-                                                .glow(color: ColorManager.orange2, radius: 3)
-                                                .opacity(0.5)
-                                            
-                                            Text("send coupon in Chat")
-                                                .foregroundColor(.white)
-                                                .font(.system(size: 17, weight: .bold))
-                                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                                .opacity(0.50)
-                                        }
-                                    })
-                                    
-                                    
+                                    VStack {
+                                        
+                                        
+                                             Button(action: {
+                                                 sessionManager.showLogin()
+                                             },
+                                                 label: {
+                //                                 Image("home-alt2")
+                                                 Text("Send Coupon in Chat")
+                                                     .frame(width: 200, height: 40)
+                                                     .foregroundColor(.white)
+                                                     .font(.system(size: 20))
+                                                     .background(ColorManager .purple3)
+                                                     .cornerRadius(15)
+                                                     .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                                     .opacity(0.70)
+                                                 
+                                             })
+                                        
+                                        
+                                        
+                                        Spacer()
+                                            .frame(height: 30)
+                               
+                                    }
+          
                                 }
+                               
                             }
-                          
-                            
+                           
                         }
-                        
- 
+                      
                     }
-                
-                
-                
-                
-                
-                
-                
-                
-//                *********************************************************
-         
+      
                 VStack {
 
-                    Text("Send Coupon to ...")
+                    Text("Alert friend to look for Coupon in Chat")
                         .font(.system(size: 17))
                         .fontWeight(.ultraLight)
                         .foregroundColor(ColorManager .grey1)
