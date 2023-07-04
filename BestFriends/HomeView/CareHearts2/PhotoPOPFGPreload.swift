@@ -418,6 +418,51 @@ struct PhotoPopFGPreload: View {
 }
 
 
+//
+//
+//VStack {
+//
+//    TextField("", text: $customMessage)
+//        .placeholder(when: customMessage.isEmpty) {
+//            HStack {
+//                Text("2nd_Type name of song here ...")
+//                    .foregroundColor(ColorManager.grey4)
+//                .fontWeight(.thin)
+//
+//                Spacer()
+//            }
+//        }
+//        .font(.system(size: 18))
+//        .submitLabel(.done)
+//       .onReceive(Just(customMessage)) { _ in limitText(65) }
+//
+//
+//        .padding(40)
+//        .overlay(RoundedRectangle(cornerRadius: 10)
+//            .stroke(Color.purple)
+//            .frame(height: 40)
+//            .padding(.horizontal, 20)
+//        )
+//
+//
+//
+//    VStack {
+//        Button(action: {
+//            sendMessage()
+//        }, label: {
+//            Text("3rd_Send the song to Chat")
+//                .fontWeight(.thin)
+//                .frame(width: 310, height: 30)
+////                       .foregroundColor(.white)
+//                .font(.system(size: 25))
+//                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                .background(ColorManager.purple3)
+//                .opacity(0.7)
+//                .cornerRadius(10)
+//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//        })
+////
+
 
 
 //********************************************************
