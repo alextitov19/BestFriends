@@ -75,7 +75,7 @@ struct Step4_NuclearOption: View {
                 NavigationLink(destination: EmptyView(), label: {
                     HugCircle (color: ColorManager .grey3, friendName: "Never allow someone \nto be your prioity while \nyou are their option")
                 })
-                .offset(x: showItems ? 150 : 0, y: showItems ? 150: 0)
+                .offset(x: showItems ? 90 : 0, y: showItems ? 170: 0)
                 //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
                 .opacity(0.75)
                 
