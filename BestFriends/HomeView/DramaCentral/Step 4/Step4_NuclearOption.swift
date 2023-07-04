@@ -41,10 +41,11 @@ struct Step4_NuclearOption: View {
 
             ZStack{
 
-              
+                Spacer ()
+                    .frame(height: 300)
 
                     NavigationLink(destination: Step2_FightLandingView(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager.purple4, friendName: "when you're ready to \nreach out to try to fix this \n\nTAP")
+                        HugCircle (color: ColorManager.purple4, friendName: "If and when \nyou're ready to \nreach out to try to fix this \n\nTAP Here...")
                     })
                     .offset(x: showItems ? 100 : 0, y: showItems ? -240: 0)
                     .shadow(color: ColorManager .purple1, radius: 30, x: 10, y: 10)
@@ -56,50 +57,108 @@ struct Step4_NuclearOption: View {
             
                         
                         NavigationLink(destination: BreathInView(), label: {
-                            HugCircle (color: ColorManager .purple3, friendName: "just Breathe \n\nTAP")
+                            HugCircle (color: ColorManager .purple3, friendName: "just Breathe \n\nTAP Here...")
                         })
                         .offset(x: showItems ? -130 : 0, y: showItems ? -150: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
                         .opacity(0.65)
                         
-           
+               
+                
+                NavigationLink(destination: EmptyView(), label: {
+                    HugCircle (color: ColorManager .grey3, friendName: "sharp words \nerase all the nice words \nyou've ever said")
+                })
+                .offset(x: showItems ? -100 : 0, y: showItems ? 100: 0)
+                //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                .opacity(0.9)
+                
+                NavigationLink(destination: EmptyView(), label: {
+                    HugCircle (color: ColorManager .grey3, friendName: "Never allow someone \nto be your prioity while \nyou are their option")
+                })
+                .offset(x: showItems ? 150 : 0, y: showItems ? 150: 0)
+                //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                .opacity(0.75)
+                
+                
                 VStack {
 
 
+                 
+                    
+                        
+                 
+                        
+                   
+                    
                     
                     NavigationLink(destination: EmptyView(), label: {
-                        HugCircle (color: ColorManager .grey3, friendName: "maybe we \ncan help calm \nyour dented heart")
-                    })
-                    .offset(x: showItems ? 300 : 0, y: showItems ? 600: 0)
-//                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-                    .opacity(0.75)
-
-
-                    NavigationLink(destination: EmptyView(), label: {
-                        HugCircle (color: ColorManager .grey3, friendName: "sharp words \nerase all the nice words \nyou've ever said")
+                        HugCircle (color: ColorManager .grey3, friendName: "Sometimes your heart \nneeds more time to accept what \nyou mind already knows")
                     })
                     .offset(x: showItems ? -300 : 0, y: showItems ? 325: 0)
-//                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                    //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
                     .opacity(0.9)
-
-
+                    
+                
+                    
+                NavigationLink(destination: EmptyView(), label: {
+                    HugCircle (color: ColorManager .grey3, friendName: "The hardest part \nof letting go is realizing \nthe other person already did")
+                })
+                .offset(x: showItems ? 300 : 0, y: showItems ? 600: 0)
+                //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                .opacity(0.75)
+                
+                
+                NavigationLink(destination: EmptyView(), label: {
+                    HugCircle (color: ColorManager .grey3, friendName: "The way they leave \ntells you everything")
+                })
+                .offset(x: showItems ? -300 : 0, y: showItems ? 325: 0)
+                //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                .opacity(0.9)
+                    
+                 
+                    NavigationLink(destination: EmptyView(), label: {
+                        HugCircle (color: ColorManager .grey3, friendName: "Tears dry on their own")
+                    })
+                    .offset(x: showItems ? -300 : 0, y: showItems ? 325: 0)
+                    //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                    .opacity(0.9)
+                    
+//                    NavigationLink(destination: EmptyView(), label: {
+//                        HugCircle (color: ColorManager .grey3, friendName: "maybe we \ncan help calm \nyour dented heart")
+//                    })
+//                    .offset(x: showItems ? 300 : 0, y: showItems ? 600: 0)
+//                    //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+//                    .opacity(0.75)
+                    
+                    
 
                     ZStack {
                         
                         Image(systemName: "circle.fill")
                             .resizable()
                             .foregroundColor(ColorManager .purple1)
-                            .frame(width: 70, height: 70)
+                            .frame(width: 90, height: 90)
                         //                    .blur(radius: 2)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
                             .opacity(0.70)
-                        
-                        Text("Tap")
-                            .font(.system(size: 20, weight: .light))
-//                            .italic()
-                            .fontWeight(.light)
-                            .foregroundColor(ColorManager .grey4)
-                            .multilineTextAlignment(.center)
+                       
+                        VStack {
+                            Text("Maybe we \ncan help")
+                                .font(.system(size: 13, weight: .light))
+                            //                            .italic()
+                                .fontWeight(.light)
+                                .foregroundColor(ColorManager .grey4)
+                                .multilineTextAlignment(.center)
+                            
+                            
+                            Text("TAP")
+                                .font(.system(size: 25, weight: .light))
+                            //                            .italic()
+                                .fontWeight(.light)
+                                .foregroundColor(ColorManager .grey4)
+                                .multilineTextAlignment(.center)
+                            
+                        }
                     }
                         
                         VStack {
@@ -139,11 +198,12 @@ struct Step4_NuclearOption: View {
                         .resizable()
                         .foregroundColor(color)
                     //                            .foregroundColor(ColorManager .purple2)
-                        .frame(width: 225, height: 200)
+                        .frame(width: 150, height: 110)
 //                        .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
 
                     Text(friendName)
-                        .fontWeight(.light)
+//                        .fontWeight(.light)
+                        .font(.system(size: 8, weight: .light))
                         .italic()
                         .foregroundColor(.white)
 

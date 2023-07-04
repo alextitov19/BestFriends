@@ -110,7 +110,7 @@ struct PhotoPopFGPreload: View {
                                     Spacer()
                                         .frame(height: 10)
                                     
-                                    Text("Send couponds for cool stuff")
+                                    Text("Send coupons for cool stuff")
                                         .font(.system(size: 17, weight: .light))
                                         .italic()
                                         .foregroundColor(Color.black)
@@ -119,7 +119,7 @@ struct PhotoPopFGPreload: View {
                                     Spacer()
                                         .frame(height: 7)
 
-                                    Text("Like ice cream, a cheesburger n' fries, \na new car (just kidding).")
+                                    Text("Like ice cream, Amazon gift card ...")
                                         .font(.system(size: 17, weight: .light))
                                         .italic()
                                         .foregroundColor(Color.black)
