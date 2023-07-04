@@ -45,7 +45,7 @@ struct Step4_NuclearOption: View {
                     .frame(height: 300)
 
                     NavigationLink(destination: Step2_FightLandingView(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager.purple4, friendName: "If and when \nyou're ready to \nreach out to try to fix this \n\nTAP Here...")
+                        HugCircle (color: ColorManager.purple5, friendName: "If and when \nyou're ready to \nreach out to try to fix this \n\nTAP Here...")
                     })
                     .offset(x: showItems ? 100 : 0, y: showItems ? -240: 0)
                     .shadow(color: ColorManager .purple1, radius: 30, x: 10, y: 10)
@@ -54,7 +54,7 @@ struct Step4_NuclearOption: View {
 
                 
                         NavigationLink(destination: BreathInView(), label: {
-                            HugCircle (color: ColorManager .purple3, friendName: "just Breathe \n\nTAP Here...")
+                            HugCircle (color: ColorManager .purple4, friendName: "just Breathe \n\nTAP Here...")
                         })
                         .offset(x: showItems ? -130 : 0, y: showItems ? -130: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
@@ -62,8 +62,8 @@ struct Step4_NuclearOption: View {
                         
                
                 
-                        NavigationLink(destination: BreathInView(), label: {
-                            HugCircle (color: ColorManager .purple4, friendName: "request \n CareHearts \n\nTAP Here...")
+                        NavigationLink(destination: EmptyView(), label: {
+                            HugCircle (color: ColorManager .purple3, friendName: "ask \nfriends for \n CareHearts")
                         })
                         .offset(x: showItems ? 130 : 0, y: showItems ? -100: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
