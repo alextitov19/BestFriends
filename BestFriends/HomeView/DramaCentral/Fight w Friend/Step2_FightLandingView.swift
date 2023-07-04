@@ -106,22 +106,48 @@ struct Step2_FightLandingView: View {
                     Spacer()
                         .frame(height: 40)
                     
-                    Text("Decided to reach out first, but")
+                    Text("Decided you want to")
                         .font(.system(size: 20, weight: .thin))
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     
                     
-                    Text("not exactly sure what to say")
+                    Text("try to fix this - send a message in Chat")
                         .font(.system(size: 20, weight: .thin))
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
+                    
+                    
+                    VStack {
+                    
+                        
+                        Button(action: {
+                            sessionManager.showLogin()
+                        },
+                               label: {
+                            Image("home-alt2")
+                                .frame(width: 50, height: 25)
+                                .foregroundColor(.white)
+                                .font(.system(size: 20))
+                                .background(ColorManager .grey1)
+                                .cornerRadius(15)
+                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                .opacity(0.70)
+                            
+                            
+                            
+                            
+                            
+                        })
+                    }
+                    
+                
                     
                     Link(destination: URL(string: "https://socialtechlabs.com/applink/")!) {
                         
-                        Text("Here's some ideas")
+                        Text("")
                             .fontWeight(.thin)
-                            .frame(width: 310, height: 40)
+                            .frame(width: 0, height: 0)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
                             .background(ColorManager.grey2)
@@ -141,7 +167,7 @@ struct Step2_FightLandingView: View {
                             .font(.system(size: 15, weight: .bold))
                             .italic()
                             .fontWeight(.regular)
-                            .foregroundColor(ColorManager .grey1)
+                            .foregroundColor(ColorManager .grey2)
                         
                         
                         Spacer()
@@ -283,15 +309,13 @@ struct Step2_FightLandingView: View {
                             
                             //                            this the link to Friendship Highlights ***************
                             Text("Ugggg, now the hellish")
-                                .font(.system(size: 20, weight: .bold))
-                         
-                                .fontWeight(.regular)
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
                                 .foregroundColor(Color.white)
                             
                             Text("'waiting-to-hear-back' begins")
-                                .font(.system(size: 20, weight: .bold))
-                          
-                                .fontWeight(.regular)
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
                                 .foregroundColor(Color.white)
                             
                             Text("-or-")
@@ -317,29 +341,29 @@ struct Step2_FightLandingView: View {
                                 
                             )}
                         
-                        VStack {
-                            Spacer()
-                                .frame(height: 20)
-                            
-                            Button(action: {
-                                sessionManager.showLogin()
-                            },
-                                   label: {
-                                Image("home-alt2")
-                                    .frame(width: 50, height: 25)
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 20))
-                                    .background(ColorManager .grey1)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                    .opacity(0.70)
-                                
-                                
-                                
-                                
-                                
-                            })
-                        }
+//                        VStack {
+//                            Spacer()
+//                                .frame(height: 20)
+//
+//                            Button(action: {
+//                                sessionManager.showLogin()
+//                            },
+//                                   label: {
+//                                Image("home-alt2")
+//                                    .frame(width: 50, height: 25)
+//                                    .foregroundColor(.white)
+//                                    .font(.system(size: 20))
+//                                    .background(ColorManager .grey1)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                                    .opacity(0.70)
+//
+//
+//
+//
+//
+//                            })
+//                        }
                         
                     }
                     
