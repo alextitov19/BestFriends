@@ -62,7 +62,7 @@ struct Step4_NuclearOption: View {
                         
                
                 
-                        NavigationLink(destination: EmptyView(), label: {
+                NavigationLink(destination: EmptyView(), label: {
                             HugCircle (color: ColorManager .purple3, friendName: "ask \nfriends for \n CareHearts")
                         })
                         .offset(x: showItems ? 130 : 0, y: showItems ? -100: 0)
