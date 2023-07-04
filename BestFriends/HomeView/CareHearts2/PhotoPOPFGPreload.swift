@@ -116,13 +116,13 @@ struct PhotoPopFGPreload: View {
 //                                .frame(height: 40)
                             
                             ZStack {
-                                
-                                Image(systemName: "circle.fill")
-                                    .resizable()
-                                    .foregroundColor(Color.orange)
-                                    .frame(width: 400, height: 400)
-                                    .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                                    .opacity(0.95)
+//
+//                                Image(systemName: "circle.fill")
+//                                    .resizable()
+//                                    .foregroundColor(Color.orange)
+//                                    .frame(width: 400, height: 400)
+//                                    .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+//                                    .opacity(0.95)
                             
                             
                                 VStack {
@@ -130,11 +130,11 @@ struct PhotoPopFGPreload: View {
                                         VStack {
                                             Text("Friendship")
                                                 .font(.system(size: 26, weight: .light))
-                                                .foregroundColor(ColorManager .grey3)
+                                                .foregroundColor(ColorManager .grey1)
                                             
                                             Text("Coupons")
                                                 .font(.system(size: 26, weight: .light))
-                                                .foregroundColor(ColorManager .grey3)
+                                                .foregroundColor(ColorManager .grey1)
                                             
                                         }
                                             
@@ -149,7 +149,7 @@ struct PhotoPopFGPreload: View {
                                     Text("Send coupons for cool stuff")
                                         .font(.system(size: 17, weight: .light))
                                         .italic()
-                                        .foregroundColor(Color.black)
+                                        .foregroundColor(ColorManager .grey1)
                                         .multilineTextAlignment(.center)
                                     
                                     Spacer()
@@ -158,7 +158,7 @@ struct PhotoPopFGPreload: View {
                                     Text("Like ice cream, Amazon gift card ...")
                                         .font(.system(size: 17, weight: .light))
                                         .italic()
-                                        .foregroundColor(Color.black)
+                                        .foregroundColor(ColorManager .grey1)
                                         .multilineTextAlignment(.center)
                                    
                                     
