@@ -167,7 +167,7 @@ struct Step2_FightLandingView: View {
                             .font(.system(size: 15, weight: .bold))
                             .italic()
                             .fontWeight(.regular)
-                            .foregroundColor(ColorManager .grey1)
+                            .foregroundColor(ColorManager .grey2)
                         
                         
                         Spacer()
@@ -309,15 +309,13 @@ struct Step2_FightLandingView: View {
                             
                             //                            this the link to Friendship Highlights ***************
                             Text("Ugggg, now the hellish")
-                                .font(.system(size: 20, weight: .bold))
-                         
-                                .fontWeight(.regular)
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
                                 .foregroundColor(Color.white)
                             
                             Text("'waiting-to-hear-back' begins")
-                                .font(.system(size: 20, weight: .bold))
-                          
-                                .fontWeight(.regular)
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
                                 .foregroundColor(Color.white)
                             
                             Text("-or-")
