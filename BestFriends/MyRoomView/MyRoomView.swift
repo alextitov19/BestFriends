@@ -213,9 +213,7 @@ struct MyRoomView: View {
                     .frame(height: 70)
 //                 TryThis
                 
-                NavigationLink(destination: EmptyView(), label: {
-                MyRoomRowView(title: "Friendship Spotlights", imageName: "star", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
-                })
+         
                 
                 HStack {
                     
@@ -265,6 +263,20 @@ struct MyRoomView: View {
                 NavigationLink(destination:  Step4_NuclearOption(user: user, friends: friends), label: {
                     MyRoomRowView(title: "Breakup Fight", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
+                
+                
+                
+                //     *************************** SmileVault & Affirmations / Motivations
+                
+                NavigationLink(destination: EmptyView(), label: {
+                MyRoomRowView(title: "Friendship Spotlights", imageName: "star", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                })
+                
+                
+                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
+                MyRoomRowView(title: "SmileVault", imageName: "sun.max.fill", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                })
+                
 
 //                NavigationLink(destination: EmptyView(), label: {
 //                    MyRoomRowView(title: "Our BEST FriendGroup (ratings)", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
@@ -291,9 +303,7 @@ struct MyRoomView: View {
                 //                })
                 
 //
-//                                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-//                                MyRoomRowView(title: "SmileVault", imageName: "sun.max.fill", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
-//                                })
+
                
             
                 
