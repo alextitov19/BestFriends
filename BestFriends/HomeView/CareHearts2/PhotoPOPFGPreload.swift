@@ -87,20 +87,30 @@ struct PhotoPopFGPreload: View {
                                     .frame(width: 400, height: 400)
                                     .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                                     .opacity(0.95)
-                                    
+                            
+                            
                                 VStack {
-                                    Text("Friendship Coupons")
-                                        .font(.system(size: 26, weight: .light))
-                                        .foregroundColor(ColorManager .grey3)
-                                    
+                                    HStack {
+                                        VStack {
+                                            Text("Friendship")
+                                                .font(.system(size: 26, weight: .light))
+                                                .foregroundColor(ColorManager .grey3)
+                                            
+                                            Text("Coupons")
+                                                .font(.system(size: 26, weight: .light))
+                                                .foregroundColor(ColorManager .grey3)
+                                            
+                                        }
+                                            
                                     Image("girlwalking250")
                                         .resizable()
                                         .frame(width: 80, height: 80)
+                                }
                                  
                                     Spacer()
                                         .frame(height: 10)
                                     
-                                    Text("Send coupons friends can \nredeam for cool stuff.")
+                                    Text("Send couponds for cool stuff")
                                         .font(.system(size: 17, weight: .light))
                                         .italic()
                                         .foregroundColor(Color.black)
