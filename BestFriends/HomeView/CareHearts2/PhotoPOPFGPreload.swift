@@ -11,13 +11,17 @@ import Foundation
 import SwiftUI
 import ConfettiSwiftUI
 import AVKit
+import Combine
+
 
 struct PhotoPopFGPreload: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
     let user: User
+    let friend: User
     let friends: [User]
+    let groups: [Group]
     
     @State private var selectedFriends: [String] = []
     @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
@@ -31,7 +35,39 @@ struct PhotoPopFGPreload: View {
     @State private var sharedWith: [String] = []
     @State private var colorChangeTap: String = ""
     @State private var shareTapped: Bool = false
+    
+    
+    @State private var customMessage = ""
 
+
+    private func limitText(_ upper: Int) {
+        if customMessage.count > upper {
+            customMessage = String(customMessage.prefix(upper))
+        }
+    }
+    private func sendMessage() {
+        if customMessage.count == 0 { return }
+
+        let arr = [user.id, friend.id]
+        for g in groups {
+            if g.members.containsSameElements(as: arr) {
+                // Send chat message to this existing group
+                RestApi.instance.createChatMessage(groupId: g.id, body: customMessage).then({ response in
+                    sessionManager.showChat(user: user, group: g)
+                })
+
+                return
+            }
+        }
+
+        // Create new group
+        RestApi.instance.createGroup(name: "\(user.firstName), \(friend.firstName)", members: arr).then { responseGroup in
+            // Send chat message to this group
+            RestApi.instance.createChatMessage(groupId: responseGroup.id, body: customMessage).then({ response in
+                sessionManager.showChat(user: user, group: responseGroup)
+            })
+        }
+    }
 
     
     var body: some View {
@@ -129,10 +165,44 @@ struct PhotoPopFGPreload: View {
                                     Spacer()
                                         .frame(height: 30)
                                     
-                                    Image("Coupon")
-                                        .resizable()
-                                        .frame(width: 350, height: 100)
-                                        .cornerRadius(15)
+                                    
+                                    ZStack(alignment: .bottom) {
+                                            Image("Coupon")
+                                                .resizable()
+                                                .frame(width: 350, height: 100)
+                                                .cornerRadius(15)
+
+                                            VStack {
+                                                Spacer()
+                                                // TextField for userInput
+                                                TextField("", text: $customMessage)
+                                                    .placeholder(when: customMessage.isEmpty) {
+                                                        HStack {
+                                                            Text("Write your coupon in here")
+                                                                .foregroundColor(ColorManager.grey4)
+                                                                .fontWeight(.thin)
+                                                            Spacer()
+                                                        }
+                                                    }
+                                                    .foregroundColor(.black)
+                                                    .font(.system(size: 18))
+                                                    .submitLabel(.done)
+                                                    .onReceive(Just(customMessage)) { _ in limitText(65) }
+                                                    .padding(.top, 20)
+                                                    .padding(.horizontal, 40)
+                                                    .overlay(
+                                                        RoundedRectangle(cornerRadius: 10)
+                                                            .stroke(Color.purple)
+                                                            .frame(height: 40)
+                                                            .padding(.horizontal, 20)
+                                                    )
+                                                    .padding(.bottom, 5)
+                                            }
+                                        }
+                                    
+                                    
+                                    
+                                    
                                     
                                     VStack {
                                         
@@ -331,6 +401,23 @@ struct PhotoPopFGPreload: View {
                                 .alert("Your 'TalkCoupon' \n\nhas been sent.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
+                        })
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            sendMessage()
+                        }, label: {
+                            Text("Send")
+                                .fontWeight(.thin)
+                                .frame(width: 310, height: 30)
+        //                       .foregroundColor(.white)
+                                .font(.system(size: 25))
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .background(ColorManager.purple3)
+                                .opacity(0.7)
+                                .cornerRadius(10)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
 //                        .confettiCannon(counter: $counter)
 

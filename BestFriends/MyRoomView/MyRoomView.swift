@@ -173,7 +173,7 @@ struct MyRoomView: View {
                         ZStack {
                             
 //                            NavigationLink(destination: PhotoPopFGPreload(user: user, friends: friends),
-                            NavigationLink(destination: PhotoPopFGPreload(user: user, friends: friends),
+                            NavigationLink(destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
                                            label: {
                                 Text("")
                                     .fontWeight(.thin)

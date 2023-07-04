@@ -52,7 +52,7 @@ struct JournalsView: View {
                     })
                     .padding()
                 
-                    NavigationLink(destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends)) {
+                    NavigationLink(destination: FriendVaultTrackMoods(calendar: .current)) {
                         vibeTrackerButtonBody()
                     }
                     .padding()

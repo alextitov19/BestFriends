@@ -131,7 +131,7 @@ struct MyRoomInfo: View {
                 
                 
                 
-                NavigationLink(destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends), label: {
+                NavigationLink(destination: FriendVaultTrackMoods(calendar: .current), label: {
                     MyRoomCircle (color: Color .white, friendName: "'Vibe' \ntracker")
                 })
                 .offset(x: showItems ? 130 : 0, y: showItems ? 30: 0)
