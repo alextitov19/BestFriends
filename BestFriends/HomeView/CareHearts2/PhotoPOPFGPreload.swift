@@ -77,7 +77,7 @@ struct PhotoPopFGPreload: View {
                             
                             
                             Spacer()
-                                .frame(height: 10)
+                                .frame(height: 40)
                             
                             ZStack {
                                 
@@ -95,19 +95,34 @@ struct PhotoPopFGPreload: View {
                                     
                                     Image("girlwalking250")
                                         .resizable()
-                                        .frame(width: 150, height: 150)
+                                        .frame(width: 80, height: 80)
                                  
                                     Spacer()
                                         .frame(height: 10)
                                     
-                                    Text("Send coupons friends can \nredeam for cool stuff. \n\nLike ice cream, a cheesburger n' fries, \na new car (just kidding).")
+                                    Text("Send coupons friends can \nredeam for cool stuff.")
                                         .font(.system(size: 17, weight: .light))
                                         .italic()
                                         .foregroundColor(Color.black)
-                    //                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                        .opacity(0.50)
                                         .multilineTextAlignment(.center)
-//                                        .padding(30)
+                                    
+                                    Spacer()
+                                        .frame(height: 7)
+
+                                    Text("Like ice cream, a cheesburger n' fries, \na new car (just kidding).")
+                                        .font(.system(size: 17, weight: .light))
+                                        .italic()
+                                        .foregroundColor(Color.black)
+                                        .multilineTextAlignment(.center)
+                                   
+                                    
+                                    Spacer()
+                                        .frame(height: 30)
+                                    
+                                    Image("Coupon")
+                                        .resizable()
+                                        .frame(width: 350, height: 100)
+                                        .cornerRadius(15)
                                     
                                     VStack {
                                         
@@ -117,12 +132,12 @@ struct PhotoPopFGPreload: View {
                                         
                                         
                                       
-                            NavigationLink(destination: TestPage3(user: user, friends: friends),
+                            NavigationLink(destination: EmptyView(),
                                 label: {
-                                    Text("Build your \nFriendship Coupon")
+                                    Text("")
                                                     .fontWeight(.thin)
                                                     .foregroundColor(Color.white)
-                                                    .frame(width: 300, height: 70)
+                                                    .frame(width: 0, height: 0)
                                                     .font(.system(size: 27))
                                                     .background(ColorManager .orange2)
                                                     .opacity(0.7)
@@ -144,13 +159,17 @@ struct PhotoPopFGPreload: View {
                     
                     VStack {
                      
-                        Text("For 'beta' just type your coupon in Chat")
+                        Text("For 'beta testing' please type")
                             .font(.system(size: 17, weight: .light))
                             .italic()
                             .foregroundColor(Color.black)
                             .multilineTextAlignment(.center)
                         
-
+                        Text("your coupon in Chat")
+                            .font(.system(size: 17, weight: .light))
+                            .italic()
+                            .foregroundColor(Color.black)
+                            .multilineTextAlignment(.center)
                         Button(action: {
                             sessionManager.showLogin()
                         },

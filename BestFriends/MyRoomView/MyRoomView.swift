@@ -60,7 +60,7 @@ struct MyRoomView: View {
                                 .foregroundColor(.white)
                         }
                         
-                        Text("send a")
+                        Text("Send a")
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
@@ -104,12 +104,12 @@ struct MyRoomView: View {
 
 
                                 
-                        Text("Hurt Feelings")
+                        Text("Hurt")
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
                         
-                        Text("(BF_notification)")
+                        Text("Feelings")
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
@@ -117,9 +117,56 @@ struct MyRoomView: View {
                         
 
                     }
-                    Spacer()
-                        .frame(width: 65)
+//                    Spacer()
+//                        .frame(width: 65)
                  
+//                    *******************************************
+                    VStack {
+                        
+                        ZStack {
+                            
+                            NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                                           label: {
+                                Text("")
+                                    .fontWeight(.thin)
+                                    .frame(width: 50, height: 30)
+                                    .foregroundColor(ColorManager .grey1)
+                                    .font(.system(size: 30))
+//                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                            
+                            
+                            
+                            Image(systemName: "sun.max.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 30, height: 30)
+                                .opacity(0.3)
+                                .foregroundColor(.white)
+                        }
+
+
+                                
+                        Text("Smile")
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 10, weight: .light))
+                            .opacity(0.7)
+                        
+                        Text("Vault")
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 10, weight: .light))
+                            .opacity(0.7)
+                        
+                        
+
+                    }
+//                    Spacer()
+//                        .frame(width: 65)
+                 
+                    
+//                   ******************************************
                     
                     VStack {
                         
@@ -194,7 +241,7 @@ struct MyRoomView: View {
 
 
                                 
-                        Text("share the")
+                        Text("Share the")
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
@@ -269,15 +316,21 @@ struct MyRoomView: View {
                 //     *************************** SmileVault & Affirmations / Motivations
                 
                 NavigationLink(destination: EmptyView(), label: {
-                MyRoomRowView(title: "Friendship Spotlights", imageName: "star", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                MyRoomRowView(title: "Friendship Spotlights", imageName: "star", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
                 
                 
-                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                MyRoomRowView(title: "SmileVault", imageName: "sun.max.fill", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
+                NavigationLink(destination: AffirmationMain(), label: {
+                    MyRoomRowView(title: "Affirmations", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
+                
+//                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
+//                MyRoomRowView(title: "SmileVault", imageName: "sun.max.fill", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+//                })
                 
 
+              
+                
 //                NavigationLink(destination: EmptyView(), label: {
 //                    MyRoomRowView(title: "Our BEST FriendGroup (ratings)", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
 //                })
@@ -297,10 +350,8 @@ struct MyRoomView: View {
 //                })
 //
 //
-                //
-                //                NavigationLink(destination: AffirmationMain(), label: {
-                //                    MyRoomRowView(title: "Affirmations", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
-                //                })
+                
+                           
                 
 //
 
