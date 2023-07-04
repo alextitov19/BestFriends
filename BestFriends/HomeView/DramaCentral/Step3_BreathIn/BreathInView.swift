@@ -34,7 +34,7 @@ struct BreathInView: View {
                 .opacity(0.3)
                 .ignoresSafeArea()
                 
-            AdPlayerView(name: "MyGalexy")
+            AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
            

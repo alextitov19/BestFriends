@@ -28,7 +28,7 @@ struct HugPreload: View {
 
             
             ColorManager.purple7
-                .opacity(0.6)
+//                .opacity(0.6)
                 .ignoresSafeArea()
                 
             AdPlayerView(name: "sky2")
@@ -139,6 +139,13 @@ struct HugPreload: View {
                     .opacity(0.65)
 
 
+//                    NavigationLink(destination: EmptyView(), label: {
+//                        HugCircle (color: ColorManager.grey3, friendName: "CareHeart \nCoupons")
+//                    })
+//                    .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
+//                    .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
+//    //                    .opacity(0.6)
+//                    .opacity(0.65)
 
                     NavigationLink(destination: HurtFeelings(user: user, friends: friends, groups: groups, atmosphere: atmosphere), label: {
                         HugCircle (color: ColorManager .grey1, friendName: "MORE \nCareHearts")

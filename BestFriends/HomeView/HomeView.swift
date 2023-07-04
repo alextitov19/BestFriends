@@ -52,13 +52,17 @@ struct HomeView: View {
                         presentingPhotoPop = true
                     }
                     .fullScreenCover(isPresented: $presentingPhotoPop, content: ShakePhotoPopView.init)
-                    .fullScreenCover(isPresented: $presentingIANs, content: NotificationsView.init)
                     .onReceive(reloadingTimer) { time in
                         getHomeData()
                     }
                 
+                if (homeData != nil) {
+                    NavigationLink(destination: NotificationsView(user: homeData!.user, friends: homeData!.friends), isActive: $presentingIANs) { EmptyView() }
+
+                }
+                
                 // Stars animation...
-                AdPlayerView(name: "MyGalexy")
+                AdPlayerView(name: "Galaxy2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.7)
@@ -86,7 +90,7 @@ struct HomeView: View {
                             NavigationLink(
                                 destination: BuiltByTeensView(user: homeData!.user, friends: homeData!.friends),
                                 label: {
-                                    Text("Friendships Galaxy")
+                                    Text("our story")
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 16, weight: .light))
                                         .opacity(0.7)
@@ -137,9 +141,9 @@ struct HomeView: View {
                     NavigationLink(destination: MyRoomView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups), label: {
                         PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
                             .scaledToFit()
-                            .frame(width: 70, height: 70)
+                            .frame(width: 120, height: 120)
                             .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 11)
-                            .opacity(0.75)
+                            .opacity(0.3)
                             .padding()
                     })
                 }

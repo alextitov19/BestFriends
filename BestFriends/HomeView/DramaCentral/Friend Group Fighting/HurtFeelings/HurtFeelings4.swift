@@ -398,26 +398,26 @@ struct HurtFeelings4: View {
                 
                 
                 
-                            ColorManager.purple5
+                            ColorManager.grey4
                                 .ignoresSafeArea()
                                 .onAppear()
 
-                AdPlayerView(name: "sky2")
-                    .opacity(0.5)
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
+//                AdPlayerView(name: "sky2")
+//                    .opacity(0.5)
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
                 
             } else {
 
-                ColorManager.purple7
+                ColorManager.grey4
                     .opacity(0.5)
                     .ignoresSafeArea()
                     .onAppear()
 
-    AdPlayerView(name: "sky2")
-        .ignoresSafeArea()
-        .blendMode(.screen)
-                
+//    AdPlayerView(name: "sky2")
+//        .ignoresSafeArea()
+//        .blendMode(.screen)
+//
                 
             }
             

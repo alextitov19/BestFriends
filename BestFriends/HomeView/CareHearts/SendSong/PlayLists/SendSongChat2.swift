@@ -16,7 +16,7 @@ struct SendSongChat2: View {
     let friend: User
     let friends: [User]
     let groups: [Group]
-    let friendAtmosphere: Atmosphere
+   let friendAtmosphere: Atmosphere
 
     @State private var customMessage = ""
     @State private var colorChangeTap: String = ""

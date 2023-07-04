@@ -104,15 +104,15 @@ struct INFOPreloadA: View {
                                                 .multilineTextAlignment(.center)
                      
                         
-                        Spacer()
-                            .frame(height: 7)
-
-                        Text("instead of a text")
-                                                .font(.system(size: 23))
-                                                .italic()
-                                                .foregroundColor(ColorManager .grey3)
-                                                .fontWeight(.thin)
-                                                .multilineTextAlignment(.center)
+//                        Spacer()
+//                            .frame(height: 7)
+//
+//                        Text("instead of a text")
+//                                                .font(.system(size: 23))
+//                                                .italic()
+//                                                .foregroundColor(ColorManager .grey3)
+//                                                .fontWeight(.thin)
+//                                                .multilineTextAlignment(.center)
                         
 
                     }
@@ -278,7 +278,7 @@ struct INFOPreloadA: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("we sent them a \npush notification", isPresented: $showingAlert) {
+                                .alert("we're asking your friend for a PhotoPOP", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -347,7 +347,7 @@ struct INFOPreloadA: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) wants to know - What you are doing. Send them a PhotoPOP.", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) is asking what you're doing. Send them a PhotoPOP.", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.

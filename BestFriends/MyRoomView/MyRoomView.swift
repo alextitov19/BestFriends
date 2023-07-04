@@ -21,27 +21,17 @@ struct MyRoomView: View {
     var body: some View {
         ZStack {
             ColorManager.purple7
-                .opacity(0.3)
+//                .opacity(0.6)
                 .ignoresSafeArea()
                 
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
-           
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+            AdPlayerView(name: "dramaLights")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.3)
             
             VStack {
                 HStack {
@@ -52,7 +42,7 @@ struct MyRoomView: View {
                                            label: {
                                 Text("")
                                     .fontWeight(.thin)
-                                    .frame(width: 50, height: 50)
+                                    .frame(width: 50, height: 30)
                                     .foregroundColor(ColorManager .grey1)
                                     .font(.system(size: 30))
 //                                    .background(ColorManager.purple3)
@@ -65,16 +55,18 @@ struct MyRoomView: View {
                             Image(systemName: "camera")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 30, height: 30)
+                                .frame(width: 25, height: 25)
                                 .opacity(0.3)
                                 .foregroundColor(.white)
                         }
-                        Text("send")
-                            .foregroundColor(ColorManager .grey2)
+                        
+                        Text("Send a")
+                            .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
+
                         Text("PhotoPOP")
-                            .foregroundColor(ColorManager .grey2)
+                            .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
 //
@@ -82,70 +74,266 @@ struct MyRoomView: View {
                     
                     
                     Spacer()
-                        .frame(width: 200)
-                    
-                    
-                    
+                        .frame(width: 7)
                     
                     VStack {
                         
-//                        ZStack {
-                            NavigationLink(destination: INFOPreloadA(user: user, friends: friends),
+                        ZStack {
+                            
+                            NavigationLink(destination: HurtFeelings4(user: user, friends: friends, groups: groups),
                                            label: {
-                                Text("?")
-                                    .fontWeight(.regular)
-                                    .frame(width: 50, height: 50)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                Text("")
+                                    .fontWeight(.thin)
+                                    .frame(width: 50, height: 30)
+                                    .foregroundColor(ColorManager .grey1)
                                     .font(.system(size: 30))
-                                    .opacity(0.3)
-                                //                                    .background(ColorManager.purple3)
+//                                    .background(ColorManager.purple3)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
+                            
+                            
+                            
+                            Image(systemName: "shareplay.slash")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 30, height: 30)
+                                .opacity(0.3)
+                                .foregroundColor(.white)
+                        }
 
-//                                    Image(systemName: "camera")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 20, height: 20)
-//                                        .opacity(0.5)
-//                                        .foregroundColor(.white)
+
                                 
-                        Text("Where")
-                            .foregroundColor(ColorManager .grey2)
+                        Text("Hurt")
+                            .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
-                            Text("are you")
-                                .foregroundColor(ColorManager .grey2)
-                                .font(.system(size: 10, weight: .light))
-                                .opacity(0.7)
-                          
-//                        }
+                        
+                        Text("Feelings")
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 10, weight: .light))
+                            .opacity(0.7)
+                        
+                        
+
                     }
-                  
-                   
+//                    Spacer()
+//                        .frame(width: 65)
+                 
+//                    *******************************************
+                    VStack {
+                        
+                        ZStack {
+                            
+                            NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                                           label: {
+                                Text("")
+                                    .fontWeight(.thin)
+                                    .frame(width: 50, height: 30)
+                                    .foregroundColor(ColorManager .grey1)
+                                    .font(.system(size: 30))
+//                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                            
+                            
+                            
+                            Image(systemName: "sun.max.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 30, height: 30)
+                                .opacity(0.3)
+                                .foregroundColor(.white)
+                        }
+
+
+                                
+                        Text("Smile")
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 10, weight: .light))
+                            .opacity(0.7)
+                        
+                        Text("Vault")
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 10, weight: .light))
+                            .opacity(0.7)
+                        
+                        
+
+                    }
+//                    Spacer()
+//                        .frame(width: 65)
+                 
+                    
+//                   ******************************************
+                    
+                    VStack {
+                        
+                        ZStack {
+                            
+//                            NavigationLink(destination: PhotoPopFGPreload(user: user, friends: friends),
+                            NavigationLink(destination: PhotoPopFGPreload(user: user, friends: friends),
+                                           label: {
+                                Text("")
+                                    .fontWeight(.thin)
+                                    .frame(width: 50, height: 30)
+                                    .foregroundColor(ColorManager .grey1)
+                                    .font(.system(size: 30))
+//                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                            
+                            
+                            
+                            Image(systemName: "heart")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 25, height: 25)
+                                .opacity(0.3)
+                                .foregroundColor(.white)
+                        }
+
+
+                                
+                        Text("Friendship")
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 10, weight: .light))
+                            .opacity(0.7)
+                        
+                        Text("Coupons")
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 10, weight: .light))
+                            .opacity(0.7)
+                        
+                        
+
+                    }
+                    
+            
+                    
+                    VStack {
+                        
+                        ZStack {
+                            
+                            NavigationLink(destination: INFOPreloadA(user: user, friends: friends),
+                                           label: {
+                                Text("")
+                                    .fontWeight(.thin)
+                                    .frame(width: 50, height: 30)
+                                    .foregroundColor(ColorManager .grey1)
+                                    .font(.system(size: 30))
+//                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                            
+                            
+                            
+                            Image(systemName: "camera")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 25, height: 25)
+                                .opacity(0.3)
+                                .foregroundColor(.white)
+                        }
+
+
+                                
+                        Text("Share the")
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 10, weight: .light))
+                            .opacity(0.7)
+                        
+                        Text("moment")
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 10, weight: .light))
+                            .opacity(0.7)
+                        
+                        
+
+                    }
                 }
                 
                 Spacer()
                     .frame(height: 70)
+//                 TryThis
                 
+         
                 
-                NavigationLink(destination: HugPushNotification2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                MyRoomRowView(title: "CareHearts", imageName: "heart", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                HStack {
+                    
+                    NavigationLink( destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
+                                    label: {
+                        Text("Send")
+                            .fontWeight(.thin)
+                            .frame(width: 75, height: 50)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 17))
+                            .background(Color .orange)
+                            .opacity(0.6)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
+
+                    
+                    Text("CareHearts")
+                        .fontWeight(.light)
+                        .frame(width: 145, height: 60)
+                        .foregroundColor(Color.white)
+                        .font(.system(size: 24))
+                        .background(ColorManager .purple5)
+                        .opacity(0.6)
+                        .cornerRadius(15)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    
+                NavigationLink( destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                label: {
+                    Text("Request")
+                        .fontWeight(.thin)
+                        .frame(width: 75, height: 50)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.system(size: 17))
+                        .background(Color .purple)
+                        .opacity(0.6)
+                        .cornerRadius(15)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 })
-                
+                }
                 
                 NavigationLink(destination: JournalsView(friends: friends), label: {
-                    MyRoomRowView(title: "Chat-in-Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                    MyRoomRowView(title: "FriendGroup Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
-                     
+               
+//                                    Step3_BreathInviteView(user: user, friends: friends, groups: groups
+                NavigationLink(destination:  Step4_NuclearOption(user: user, friends: friends), label: {
+                    MyRoomRowView(title: "Breakup Fight", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                })
                 
-                NavigationLink(destination: Step3_BreathInviteView(user: user, friends: friends, groups: groups), label: {
-                    MyRoomRowView(title: "My Feelings", imageName: "wind", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                
+                
+                //     *************************** SmileVault & Affirmations / Motivations
+                
+                NavigationLink(destination: EmptyView(), label: {
+                MyRoomRowView(title: "Friendship Spotlights", imageName: "star", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
+                
+                
+                NavigationLink(destination: AffirmationMain(), label: {
+                    MyRoomRowView(title: "Affirmations", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                })
+                
+//                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
+//                MyRoomRowView(title: "SmileVault", imageName: "sun.max.fill", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+//                })
+                
 
-                NavigationLink(destination: TryThis(), label: {
-                MyRoomRowView(title: "Waiting for Something 'Anxiety' ", imageName: "camera", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
-                })
+              
+                
+//                NavigationLink(destination: EmptyView(), label: {
+//                    MyRoomRowView(title: "Our BEST FriendGroup (ratings)", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+//                })
 
                 
                 
@@ -162,15 +350,13 @@ struct MyRoomView: View {
 //                })
 //
 //
-                //
-                //                NavigationLink(destination: AffirmationMain(), label: {
-                //                    MyRoomRowView(title: "Affirmations", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
-                //                })
-                //                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                //                MyRoomRowView(title: "SmileVault", imageName: "sun.max.fill", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.purple4.cgColor!)
-                //                })
                 
+                           
                 
+//
+
+               
+            
                 
                 
 //                NavigationLink(
@@ -179,7 +365,7 @@ struct MyRoomView: View {
 //                        Text("designed around teens \nby teen girls")
 ////                            .foregroundColor(Color.white)
 ////                            .font(.system(size: 16, weight: .light))
-//                        
+//
 //                            .fontWeight(.thin)
 //                            .frame(width: 200, height: 40)
 //                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -227,7 +413,7 @@ struct MyRoomView: View {
                         .foregroundColor(Color(cgColor: foregroundColor))
                 }
             }
-            .frame(width: 300, height: 60)
+            .frame(width: 310, height: 60)
             .opacity(0.6)
             .cornerRadius(15)
             .padding()

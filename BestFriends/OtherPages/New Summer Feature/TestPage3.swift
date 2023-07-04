@@ -5,7 +5,9 @@
 //  Created by Social Tech on 4/9/23.
 //
 
+//***************************************************************
 
+//********************************************
 import Foundation
 import SwiftUI
 import AVKit
@@ -15,10 +17,10 @@ struct TestPage3: View {
 
     
     let user: User
-    let atmosphere: Atmosphere
+//    let atmosphere: Atmosphere
     let friends: [User]
-    let friendAtmospheres: [Atmosphere]
-    let groups: [Group]
+//    let friendAtmospheres: [Atmosphere]
+//    let groups: [Group]
 
     var body: some View {
 

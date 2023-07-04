@@ -199,7 +199,7 @@ struct JournalsView: View {
             ZStack {
                 ColorManager.purple3
                 
-                Text("Vibe Tracker")
+                Text("Vibe Chronicle")
                     .foregroundColor(ColorManager.purple5)
                     .font(.headline)
             }
