@@ -50,20 +50,25 @@ struct Step4_NuclearOption: View {
                     .offset(x: showItems ? 100 : 0, y: showItems ? -240: 0)
                     .shadow(color: ColorManager .purple1, radius: 30, x: 10, y: 10)
 //                    .opacity(0.6)
-                    .opacity(0.65)
+                    .opacity(0.8)
 
                 
-                
-            
-                        
                         NavigationLink(destination: BreathInView(), label: {
                             HugCircle (color: ColorManager .purple3, friendName: "just Breathe \n\nTAP Here...")
                         })
-                        .offset(x: showItems ? -130 : 0, y: showItems ? -150: 0)
+                        .offset(x: showItems ? -130 : 0, y: showItems ? -130: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
-                        .opacity(0.65)
+                        .opacity(0.85)
                         
                
+                
+                        NavigationLink(destination: BreathInView(), label: {
+                            HugCircle (color: ColorManager .purple4, friendName: "request \n CareHearts \n\nTAP Here...")
+                        })
+                        .offset(x: showItems ? 130 : 0, y: showItems ? -100: 0)
+                        .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
+                        .opacity(0.9)
+                
                 
                 NavigationLink(destination: EmptyView(), label: {
                     HugCircle (color: ColorManager .grey3, friendName: "sharp words \nerase all the nice words \nyou've ever said")
