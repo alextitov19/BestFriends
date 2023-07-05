@@ -51,8 +51,30 @@ struct INFOPreload3: View {
 
             VStack {
 
-
+                Text("now you can let the outside of you")
+                                   .font(.system(size: 22))
+                                   .italic()
+                                   .foregroundColor(ColorManager.grey1)
+                                   .fontWeight(.thin)
+                                   .multilineTextAlignment(.center)
+                               
+                               Text("match the inside of you")
+                                   .font(.system(size: 22))
+                                   .italic()
+                                   .foregroundColor(ColorManager.grey1)
+                                   .fontWeight(.thin)
+                                   .multilineTextAlignment(.center)
+                               
+                               
+                               Text("on social media")
+                                   .font(.system(size: 22))
+                                   .italic()
+                                   .foregroundColor(ColorManager.grey1)
+                                   .fontWeight(.thin)
+                                   .multilineTextAlignment(.center)
                 VStack {
+                    
+                    
 
                     Image("sticker")
                         .resizable()

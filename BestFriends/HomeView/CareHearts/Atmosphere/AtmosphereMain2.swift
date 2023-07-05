@@ -104,14 +104,14 @@ struct AtmosphereMain2: View {
                             .frame(height: 35)
                 
                         Text("I could use some")
-                            .font(.system(size: 17))
-                            .italic()
+                            .font(.system(size: 25))
+//                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager .grey2)
                         
                         Text("Emotional Support")
-                            .font(.system(size: 30))
+                            .font(.system(size: 35))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager .grey2)
@@ -463,11 +463,11 @@ struct AtmosphereMain2: View {
                         VStack {
                             
                             Text("Who whould you like CareHearts from?")
-//                                .italic()
+                               .italic()
                                 .font(.system(size: 17))
-                                .fontWeight(.light)
+                                .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager .grey1)
+                                .foregroundColor(ColorManager .grey2)
 
                             
                         }
@@ -625,20 +625,20 @@ struct AtmosphereMain2: View {
                             .frame(width: 100)
 //                        
 //                        HStack {
-//                            
+//
 //                            Text("")
 ////                              .font(.system(size: 15))
 ////                              .fontWeight(.light)
 ////                              .multilineTextAlignment(.center)
 ////                              .foregroundColor(ColorManager .grey1)
-//                            
-//                      
+//
+//
 //                        Spacer ()
-//                            
+//
 //                            Image("FatGuy200")
 //                                .resizable()
 //                                .frame(width: 100, height: 100)
-//                            
+//
 //                        }
                         
 

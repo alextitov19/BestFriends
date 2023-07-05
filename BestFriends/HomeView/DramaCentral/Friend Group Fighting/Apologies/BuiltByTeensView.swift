@@ -33,9 +33,16 @@ struct BuiltByTeensView: View {
             //                .ignoresSafeArea()
             //                .blendMode(.screen)
             
-            ColorManager.grey4
+         
+            
+            Image("BuiltByTeens 1")
+                .resizable()
                 .ignoresSafeArea()
                 .onAppear()
+            
+//            ColorManager.grey4
+//                .ignoresSafeArea()
+//                .onAppear()
             
             ZStack {
                 
@@ -44,27 +51,22 @@ struct BuiltByTeensView: View {
                 
                 Image(systemName: "circle.fill")
                     .resizable()
-                    .foregroundColor(Color.orange)
-                    .frame(width: 400, height: 400)
-                    .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                    .opacity(0.95)
+                    .foregroundColor(ColorManager .purple3)
+                    .frame(width: 350, height: 100)
+                    .shadow(color: ColorManager .purple5, radius: 65, x: 30, y: 50)
+                    .opacity(0.9)
                 VStack {
                     
                     
-                    
- 
-                    
-                    Spacer()
-                        .frame(height: 50)
-                    
-                    
-                    
-                    Text("see our story")
-                        .font(.system(size: 18))
-                        .italic()
-                        .foregroundColor(ColorManager.grey1)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
+//
+//
+//
+//                    Spacer()
+//                        .frame(height: 50)
+//
+//
+//
+                 
                     
                     VStack {
                         
@@ -74,18 +76,24 @@ struct BuiltByTeensView: View {
                                 
                                 destination: ShaylaPage(user: user),
                                 label: {
-                                    Text("Built by over \n130 teens worldwide")
+                                    Text("Built by over \n140 teens worldwide \n\n(see our story)")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
-                                        .frame(width: 300, height: 60)
+                                        .frame(width: 300, height: 100)
                                         .font(.system(size: 20))
-                                        .background(ColorManager .grey2)
+                                        .background(ColorManager .grey4)
                                         .cornerRadius(15)
+                                        .opacity(0.9)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     
                                 })
                             
-                            
+                            Text("Special thanks to CollegeVine.com for ranking our summer internships #6 in nation")
+                                .font(.system(size: 18))
+                                .italic()
+                                .foregroundColor(ColorManager.grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
                             
                             
                             VStack {

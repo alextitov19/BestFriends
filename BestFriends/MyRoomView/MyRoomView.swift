@@ -257,7 +257,7 @@ struct MyRoomView: View {
                 }
                 
                 Spacer()
-                    .frame(height: 70)
+                    .frame(height: 120)
 //                 TryThis
                 
          
@@ -283,7 +283,7 @@ struct MyRoomView: View {
                         .frame(width: 145, height: 60)
                         .foregroundColor(Color.white)
                         .font(.system(size: 24))
-                        .background(ColorManager .purple5)
+                        .background(ColorManager .purple3)
                         .opacity(0.6)
                         .cornerRadius(15)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -300,29 +300,41 @@ struct MyRoomView: View {
                         .cornerRadius(15)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 })
+                
                 }
                 
+             
+                
                 NavigationLink(destination: JournalsView(friends: friends), label: {
-                    MyRoomRowView(title: "FriendGroup Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                    MyRoomRowView(title: "FriendGroup Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
                
 //                                    Step3_BreathInviteView(user: user, friends: friends, groups: groups
                 NavigationLink(destination:  Step4_NuclearOption(user: user, friends: friends), label: {
-                    MyRoomRowView(title: "Breakup / Fight", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                    MyRoomRowView(title: "Breakup / Fight", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
                 
                 
                 
                 //     *************************** SmileVault & Affirmations / Motivations
+//
+//                NavigationLink(destination: EmptyView(), label: {
+//                MyRoomRowView(title: "Friendship Spotlights", imageName: "star", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+//                })
+//
                 
-                NavigationLink(destination: EmptyView(), label: {
-                MyRoomRowView(title: "Friendship Spotlights", imageName: "star", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
-                })
+//                NavigationLink(destination: AffirmationMain(), label: {
+//                    MyRoomRowView(title: "Affirmations", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+//                })
                 
                 
-                NavigationLink(destination: AffirmationMain(), label: {
-                    MyRoomRowView(title: "Affirmations", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
-                })
+//              **********************************************************
+//                **************************************************
+                
+                
+                
+                
+                
                 
 //                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
 //                MyRoomRowView(title: "SmileVault", imageName: "sun.max.fill", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
@@ -377,7 +389,21 @@ struct MyRoomView: View {
 //                    })
                 
                 
-                
+                NavigationLink(
+                    
+                    destination: INFOPreload3(user: user),
+                    label: {
+                        Text("Free Stickers")
+                            .fontWeight(.light)
+                            .foregroundColor(Color.white)
+                            .frame(width: 250, height: 60)
+                            .font(.system(size: 35))
+                            .background(Color.purple)
+                            .cornerRadius(15)
+                            .opacity(0.7)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        
+                    })
                 
                 Spacer()
             }

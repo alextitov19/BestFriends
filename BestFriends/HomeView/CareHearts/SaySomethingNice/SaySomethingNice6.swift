@@ -24,6 +24,8 @@ struct SaySomethingNice6: View {
     var body: some View {
         ZStack {
    
+           
+         
             
             ColorManager.grey4
                 .ignoresSafeArea()
