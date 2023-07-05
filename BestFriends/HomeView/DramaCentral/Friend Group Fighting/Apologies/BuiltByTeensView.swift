@@ -44,6 +44,8 @@ struct BuiltByTeensView: View {
 //                .ignoresSafeArea()
 //                .onAppear()
             
+            
+            
             ZStack {
                 
                 Spacer()
@@ -88,12 +90,7 @@ struct BuiltByTeensView: View {
                                     
                                 })
                             
-                            Text("Special thanks to CollegeVine.com for ranking our summer internships #6 in nation")
-                                .font(.system(size: 18))
-                                .italic()
-                                .foregroundColor(ColorManager.grey1)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
+                  
                             
                             
                             VStack {
@@ -101,30 +98,7 @@ struct BuiltByTeensView: View {
                                 Spacer()
                                     .frame(height: 100)
                                 
-                                Text("now you can let the outside of you")
-                                                   .font(.system(size: 22))
-                                                   .italic()
-                                                   .foregroundColor(ColorManager.grey1)
-                                                   .fontWeight(.thin)
-                                                   .multilineTextAlignment(.center)
-                                               
-                                               Text("match the inside of you")
-                                                   .font(.system(size: 22))
-                                                   .italic()
-                                                   .foregroundColor(ColorManager.grey1)
-                                                   .fontWeight(.thin)
-                                                   .multilineTextAlignment(.center)
-                                               
-                                               
-                                               Text("on social media")
-                                                   .font(.system(size: 22))
-                                                   .italic()
-                                                   .foregroundColor(ColorManager.grey1)
-                                                   .fontWeight(.thin)
-                                                   .multilineTextAlignment(.center)
-                                               
-                               
-                                
+                      
                                 
                                 Spacer()
                                     .frame(height: 50)
