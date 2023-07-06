@@ -392,6 +392,20 @@ struct MyRoomView: View {
                 Spacer()
                     .frame(height: 200)
                 
+                NavigationLink(
+                    destination: InfoInsideChat(user: user),
+                    label: {
+                        Text("Create New Chat rooms")
+                            .fontWeight(.thin)
+                            .frame(width: 260, height: 27)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 25))
+                            .background(Color.purple)
+                            .cornerRadius(10)
+                            .opacity(0.4)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        
+                    })
                 
                 NavigationLink(
                     
@@ -409,8 +423,9 @@ struct MyRoomView: View {
                         
                     })
                 
-                Spacer()
-                    .frame(height: 10)
+         
+                
+   
                 
                 NavigationLink(
                     
@@ -444,7 +459,8 @@ struct MyRoomView: View {
                         
                     })
                 
-//                Spacer()
+            
+                     
             }
         }
     }

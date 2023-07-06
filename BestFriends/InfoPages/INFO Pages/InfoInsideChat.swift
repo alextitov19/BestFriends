@@ -23,7 +23,7 @@ struct InfoInsideChat: View {
             ColorManager.grey4
                 .ignoresSafeArea()
                 .onAppear()
-
+            
             
             VStack {
                 
@@ -59,84 +59,105 @@ struct InfoInsideChat: View {
                         Spacer ()
                             .frame(height: 90)
                         
-                        Text("On homepage, tap friend's planet(s)")
+                        Text("On Homepage")
                         //                            .italic()
                             .font(.system(size: 19))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager .grey1)
                         
-                        Text("you want in the chat room")
-                        //                            .italic()
-                            .font(.system(size: 20))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey1)
-                        
-                        
-                        
                         Spacer ()
                             .frame(height: 20)
                         
-                        Text("Then, tap the popup")
-                        //                            .italic()
-                            .font(.system(size: 20))
-                            .fontWeight(.light)
+                        Text("For 'One-on-One' Rooms:")
+                            .font(.system(size: 25))
+                            .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager .grey1)
+                        
+                        Text("1) Tap friend's planet")
+                            .font(.system(size: 19))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager .grey2)
+                        
+                
+                        
+                        Text("2) Then, tap the popup")
+                            .font(.system(size: 20))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager .grey2)
                         
                         Text("[Create New Chat Room]")
-                        //                            .italic()
-                            .font(.system(size: 23))
+                            .font(.system(size: 22))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey1)
-                        
-                        Spacer ()
-                            .frame(height: 20)
-                        
-                        Text("Then, name the Chat room in 2nd popup")
-                        //                            .italic()
-                            .font(.system(size: 20))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey1)
+                            .foregroundColor(ColorManager .grey2)
                         
                         VStack {
+                            Spacer ()
+                                .frame(height: 20)
+                            Text("For 'Group' Rooms:")
+                                .font(.system(size: 25))
+                                .fontWeight(.regular)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager .grey1)
                             
-                            
-                            Text("(We're working on a new system to create chat rooms that is less confusing - coming soon)")
+                            Text("1) Tap 'ALL' friend's planets you want in room")
+                                .font(.system(size: 19))
                                 .italic()
-                                .font(.system(size: 15))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(Color.black)
-                                .padding()
+                                .foregroundColor(ColorManager .grey2)
                             
+                    
                             
-                            Spacer ()
-                                .frame(height: 40)
+                            Text("2) Then, tap the popup")
+                                .font(.system(size: 20))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager .grey2)
                             
-                            NavigationLink(
-                                destination: ChangeChatBackgroundView(user: user),
-                                label: {
-                                    Text("Customize \nChat Backgrounds")
-                                        .fontWeight(.thin)
-                                        .frame(width: 280, height: 80)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 25))
-                                        .background(ColorManager .purple3)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                        .opacity(0.5)
-                                })
+                            Text("[Create New Chat Room]")
+                                .font(.system(size: 22))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager .grey2)
                             
+                    
+                            
+                            VStack {
+                                
+                                
+                                
+                                Spacer ()
+                                    .frame(height: 40)
+                                
+                                NavigationLink(
+                                    destination: ChangeChatBackgroundView(user: user),
+                                    label: {
+                                        Text("Customize \nChat Backgrounds")
+                                            .fontWeight(.thin)
+                                            .frame(width: 280, height: 80)
+                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                            .font(.system(size: 25))
+                                            .background(ColorManager .purple3)
+                                            .cornerRadius(15)
+                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                            .opacity(0.5)
+                                    })
+                                
+                            }
                         }
                     }
                 }
             }
+            
         }
         
     }
-    
 }
