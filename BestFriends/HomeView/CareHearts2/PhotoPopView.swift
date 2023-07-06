@@ -10,7 +10,7 @@ import SwiftUI
 
 struct PhotoPopView: View {
     @EnvironmentObject var sessionManager: SessionManager
-
+    
     let user: User
     let friends: [User]
     
@@ -26,15 +26,15 @@ struct PhotoPopView: View {
     @State private var isLoading = false
     
     
-   
+    
     
     
     var body: some View {
         ZStack {
             
-         
-                
-          
+            
+            
+            
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
@@ -43,7 +43,7 @@ struct PhotoPopView: View {
             ColorManager.purple7
                 .opacity(0.6)
                 .ignoresSafeArea()
-//            Color .purple
+            //            Color .purple
                 .ignoresSafeArea()
                 .onAppear()
                 .scaledToFill()
@@ -51,10 +51,10 @@ struct PhotoPopView: View {
                 .sheet(isPresented: $isShowPhotoLibrary) {
                     ImagePicker(image: $attachmentImage, sourceType: pickerSourceType)
                         .onDisappear { createPhotoPop() }
-
-                  
-                  
-
+                    
+                    
+                    
+                    
                     
                 }
             
@@ -64,7 +64,7 @@ struct PhotoPopView: View {
                 Button(action: {
                     sessionManager.showLogin()
                 },
-                    label: {
+                       label: {
                     Image("home-alt2")
                         .frame(width: 50, height: 25)
                         .foregroundColor(.white)
@@ -75,7 +75,7 @@ struct PhotoPopView: View {
                         .opacity(0.70)
                     
                 })
-
+                
                 Text("PhotoPOP")
                     .font(.system(size: 35, weight: .bold))
                     .foregroundColor(ColorManager .grey1)
@@ -87,296 +87,298 @@ struct PhotoPopView: View {
                     .italic()
                     .font(.system(size: 17, weight: .regular))
                     .foregroundColor(ColorManager .grey1)
-                
-//                Text("shake iPhone to see image")
-//                    .italic()
-//                    .font(.system(size: 17, weight: .regular))
-//                    .foregroundColor(ColorManager .grey1)
-//                
-//                Text("image friend sent!")
-//                    .font(.system(size: 17, weight: .light))
-//                    .foregroundColor(ColorManager .grey2)
-
-
-                
-                 NavigationLink(
-                    destination: PhotoPop3(user: user, friends: friends),
-                    label: {
-                        Text("Alert Friend(s)  \n& Instructions")
-                            .fontWeight(.thin)
-                            .frame(width: 220, height: 50)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 18.5))
-                            .background(ColorManager.purple4)
-                            .cornerRadius(10)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
-                 
-                
-                
-                
-                Spacer()
-                    .frame(height: 25)
-                
-                HStack {
-                    Image(systemName: "camera")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 30, height: 30)
-                        .foregroundColor(ColorManager.purple5)
-                        .onTapGesture {
-                            pickerSourceType = .camera
-                            showingRecipients = true
-                        }
-                        .padding()
+              
+                    NavigationLink(
+                        destination: PhotoPop3(user: user, friends: friends),
+                        label: {
+                            Text("Alert frinds you \nsent PhotoPop")
+                                .fontWeight(.thin)
+                                .frame(width: 220, height: 50)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 18.5))
+                                .background(ColorManager.purple4)
+                                .cornerRadius(10)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        })
                     
-                    Image(systemName: "photo")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 30, height: 30)
-                        .foregroundColor(ColorManager.purple5)
-                        .onTapGesture {
-                            pickerSourceType = .photoLibrary
-                            showingRecipients = true
-                        }
-                        .padding()
-                }
+                    
+                Text("Send ONE image at a time - deleting the preious image first. \nSend friend push notification asking them to shake their phone. \nImage pops up full-screen on their phone.")
+                    .font(.system(size: 12, weight: .light))
+                    .foregroundColor(Color.white)
+                    .opacity(0.50)
+                    .multilineTextAlignment(.center)
+//                    .padding(30)
+                   
+                
+                Text("If get loading icon - exit page and return")
+                    .font(.system(size: 14, weight: .light))
+//                        .italic()
+                    .foregroundColor(.red)
                 
                 
-                
-                
-                
-                
-                
-                
-                if isLoading {
-                    ProgressView()
-                        .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
-                        .scaleEffect(2)
-                        .padding(.top, 100)
-                }
-                
-                ScrollView(.vertical, showsIndicators: false) {
-                    ForEach(photoPopImages.indices, id: \.self) { i in
-                        photoPopImages[i]
+//                    Spacer()
+//                        .frame(height: 7)
+                    
+                    HStack {
+                        Image(systemName: "camera")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 30, height: 30)
+                            .foregroundColor(ColorManager.purple5)
+                            .onTapGesture {
+                                pickerSourceType = .camera
+                                showingRecipients = true
+                            }
                             .padding()
-                            .onTapGesture(perform: { deletePhotoPop(index: i) })
+                        
+                        Image(systemName: "photo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 30, height: 30)
+                            .foregroundColor(ColorManager.purple5)
+                            .onTapGesture {
+                                pickerSourceType = .photoLibrary
+                                showingRecipients = true
+                            }
+                            .padding()
+                    }
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    if isLoading {
+                        ProgressView()
+                            .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
+                            .scaleEffect(2)
+                            .padding(.top, 100)
+                    }
+                    
+                    ScrollView(.vertical, showsIndicators: false) {
+                        ForEach(photoPopImages.indices, id: \.self) { i in
+                            photoPopImages[i]
+                                .padding()
+                                .onTapGesture(perform: { deletePhotoPop(index: i) })
+                        }
+                    }
+                    
+                    Spacer()
+                    
+                    //
+                    //                Button(action: {
+                    //                    showingRecipients = true
+                    //                }, label: {
+                    //                    Text("+")
+                    //                        .fontWeight(.regular)
+                    //                        .frame(width: 40, height: 30)
+                    //                        .foregroundColor(.white)
+                    //                        .font(.system(size: 30))
+                    //                        .background(ColorManager.purple3)
+                    //                        .cornerRadius(15)
+                    //                })
+                    ////
+                    //                Button(action: {
+                    //                    sessionManager.reloadHome()
+                    //                }, label: {
+                    //                    Text("Home")
+                    //                        .fontWeight(.thin)
+                    //                        .frame(width: 150, height: 30)
+                    //                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    //                        .font(.system(size: 25))
+                    //                        .background(ColorManager.purple3)
+                    //                        .cornerRadius(15)
+                    //                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    //                })
+                }
+                
+                if showingRecipients {
+                    VStack {
+                        ForEach(availableRecipients, id: \.id) { recipient in
+                            if recipient.id == user.id {
+                                Button(action: {
+                                    currentReceiver = recipient
+                                    isShowPhotoLibrary = !isShowPhotoLibrary
+                                    showingRecipients = false
+                                }, label: {
+                                    Text("Myself")
+                                        .fontWeight(.regular)
+                                        .frame(width: 125, height: 40)
+                                        .foregroundColor(.white)
+                                        .background(ColorManager.purple3)
+                                        .cornerRadius(15)
+                                })
+                            } else {
+                                Button(action: {
+                                    currentReceiver = recipient
+                                    isShowPhotoLibrary = !isShowPhotoLibrary
+                                    showingRecipients = false
+                                }, label: {
+                                    Text(recipient.firstName + String(recipient.lastName.first!))
+                                        .fontWeight(.regular)
+                                        .frame(width: 125, height: 40)
+                                        .foregroundColor(.white)
+                                        .background(ColorManager.purple3)
+                                        .cornerRadius(15)
+                                })
+                            }
+                        }
+                        
+                        Button(action: {
+                            showingRecipients = false
+                        }, label: {
+                            Text("Cancel")
+                                .fontWeight(.regular)
+                                .frame(width: 125, height: 40)
+                                .foregroundColor(.white)
+                                .background(ColorManager.grey3)
+                                .cornerRadius(15)
+                        })
+                        
+                        //                    .padding()
+                        
+                        //
+                        //                    Spacer()
+                        //                        .frame(height: 20)
+                        //
+                        //                    Text("Up-loading to PhotoPOP:")
+                        //                        .font(.system(size: 20, weight: .light))
+                        //                        .foregroundColor(.green)
+                        //
+                        //                    Text("-Select friend, tap image from photo gallery")
+                        //                        .font(.system(size: 13, weight: .light))
+                        //                        .italic()
+                        //                        .foregroundColor(.white)
+                        //
+                        //                    NavigationLink(
+                        //                       destination: PhotoPop3(user: user, friends: friends),
+                        //                       label: {
+                        //                           Text("How PhotoPOP Works")
+                        //                               .fontWeight(.thin)
+                        //                               .frame(width: 310, height: 30)
+                        //                               .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        //                               .font(.system(size: 17))
+                        //                               .background(ColorManager.purple3)
+                        //                               .cornerRadius(10)
+                        //                               .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        //                       })
+                        //
+                        //
+                        //                    Spacer()
+                        //                        .frame(height: 20)
+                        //
+                        //                    Text("Replacing image:")
+                        //                        .font(.system(size: 20, weight: .light))
+                        //                        .foregroundColor(.green)
+                        //
+                        //
+                        //                    Text("-Tap image, then exit & re-enter page")
+                        //                        .font(.system(size: 13, weight: .light))
+                        //                        .italic()
+                        //                        .foregroundColor(.white)
+                        //                    Text("* (can only have ONE 'active' image at a time)")
+                        //                        .italic()
+                        //                        .font(.system(size: 13, weight: .light))
+                        //                        .foregroundColor(Color .green)
+                        
                     }
                 }
-                
-                Spacer()
-                
-//
-//                Button(action: {
-//                    showingRecipients = true
-//                }, label: {
-//                    Text("+")
-//                        .fontWeight(.regular)
-//                        .frame(width: 40, height: 30)
-//                        .foregroundColor(.white)
-//                        .font(.system(size: 30))
-//                        .background(ColorManager.purple3)
-//                        .cornerRadius(15)
-//                })
-////
-//                Button(action: {
-//                    sessionManager.reloadHome()
-//                }, label: {
-//                    Text("Home")
-//                        .fontWeight(.thin)
-//                        .frame(width: 150, height: 30)
-//                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                        .font(.system(size: 25))
-//                        .background(ColorManager.purple3)
-//                        .cornerRadius(15)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                })
+            }
+        }
+        
+        private func loadData() {
+            loadRecipients()
+            if user.photoPop?.count ?? 0 > 0 {
+                isLoading = true
+                loadPhotoPops()
+            }
+        }
+        
+        private func loadPhotoPops() {
+            print("Loading...")
+            RestApi.instance.getPhotoPops().then({ photoPops in
+                isLoading = false
+                print("Got " + String(photoPops.count) + " photo pops")
+                for p in photoPops {
+                    loadPhotoPopWithImage(photoPop: p)
+                }
+            })
+        }
+        
+        private func loadPhotoPopWithImage(photoPop: PhotoPop) {
+            // Determine the user for the photo pop
+            if photoPop.receiver == user.id {
+                let p = PhotoPopImageView(photoPop: photoPop, user: user)
+                photoPopImages.append(p)
+                print("Added photo pop for self")
+                loadRecipients()
+            } else {
+                for f in friends {
+                    if photoPop.receiver == f.id {
+                        let p = PhotoPopImageView(photoPop: photoPop, user: f)
+                        photoPopImages.append(p)
+                        print("Added photo pop for " + f.id)
+                        loadRecipients()
+                        break
+                    }
+                }
+            }
+        }
+        
+        private func loadRecipients() {
+            // Fill recipients array with all possible users
+            availableRecipients = friends
+            availableRecipients.append(user)
+            print("Recipient count initially: ", availableRecipients.count)
+            print("Friends: ", friends.count)
+            // Iterate through the array
+            // Remove all recipients who already have a photo pop
+            for recipient in availableRecipients {
+                for p in photoPopImages {
+                    if p.photoPop.receiver == recipient.id {
+                        let index = availableRecipients.firstIndex(where: {$0.id == recipient.id})
+                        if (index != nil) {
+                            availableRecipients.remove(at: index!)
+                            print("Removed " + p.photoPop.receiver + " from available recipients")
+                        }
+                    }
+                }
+            }
+            print("Available recipients: ", availableRecipients.count)
+        }
+        
+        private func createPhotoPop() {
+            if currentReceiver == nil { return }
+            guard let image: UIImage = attachmentImage else {
+                print("Attachment iamge is nil")
+                return
             }
             
-            if showingRecipients {
-                VStack {
-                    ForEach(availableRecipients, id: \.id) { recipient in
-                        if recipient.id == user.id {
-                            Button(action: {
-                                currentReceiver = recipient
-                                isShowPhotoLibrary = !isShowPhotoLibrary
-                                showingRecipients = false
-                            }, label: {
-                                Text("Myself")
-                                    .fontWeight(.regular)
-                                    .frame(width: 125, height: 40)
-                                    .foregroundColor(.white)
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                            })
-                        } else {
-                            Button(action: {
-                                currentReceiver = recipient
-                                isShowPhotoLibrary = !isShowPhotoLibrary
-                                showingRecipients = false
-                            }, label: {
-                                Text(recipient.firstName + String(recipient.lastName.first!))
-                                    .fontWeight(.regular)
-                                    .frame(width: 125, height: 40)
-                                    .foregroundColor(.white)
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                            })
-                        }
-                    }
-                    
-                    Button(action: {
-                        showingRecipients = false
-                    }, label: {
-                        Text("Cancel")
-                            .fontWeight(.regular)
-                            .frame(width: 125, height: 40)
-                            .foregroundColor(.white)
-                            .background(ColorManager.grey3)
-                            .cornerRadius(15)
-                    })
-                    
-//                    .padding()
-                    
-//
-//                    Spacer()
-//                        .frame(height: 20)
-//
-//                    Text("Up-loading to PhotoPOP:")
-//                        .font(.system(size: 20, weight: .light))
-//                        .foregroundColor(.green)
-//
-//                    Text("-Select friend, tap image from photo gallery")
-//                        .font(.system(size: 13, weight: .light))
-//                        .italic()
-//                        .foregroundColor(.white)
-//
-//                    NavigationLink(
-//                       destination: PhotoPop3(user: user, friends: friends),
-//                       label: {
-//                           Text("How PhotoPOP Works")
-//                               .fontWeight(.thin)
-//                               .frame(width: 310, height: 30)
-//                               .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                               .font(.system(size: 17))
-//                               .background(ColorManager.purple3)
-//                               .cornerRadius(10)
-//                               .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                       })
-//
-//
-//                    Spacer()
-//                        .frame(height: 20)
-//
-//                    Text("Replacing image:")
-//                        .font(.system(size: 20, weight: .light))
-//                        .foregroundColor(.green)
-//
-//
-//                    Text("-Tap image, then exit & re-enter page")
-//                        .font(.system(size: 13, weight: .light))
-//                        .italic()
-//                        .foregroundColor(.white)
-//                    Text("* (can only have ONE 'active' image at a time)")
-//                        .italic()
-//                        .font(.system(size: 13, weight: .light))
-//                        .foregroundColor(Color .green)
+            guard let data = image.jpeg(.lowest) else {
+                print("Failed to convert image")
+                return
+            }
+            print("Image as data successful")
+            RestApi.instance.createPhotoPop(receiver: currentReceiver!.id, image: data).then({ response in
+                print("Create photo pop successful")
+                photoPopImages.append(PhotoPopImageView(photoPop: response, user: currentReceiver!))
+                loadRecipients()
+            })
+        }
+        
+        private func deletePhotoPop(index: Int) {
+            RestApi.instance.deletePhotoPop(id: photoPopImages[index].photoPop.id).then({ response in
+                print("Got response from server for deleting photo pop: ", response)
+                if response.status == 200 {
+                    photoPopImages.remove(at: index)
+                }
+            })
+            
+            
+            
+            
+        }
+    }
 
-                }
-            }
-        }
-    }
-    
-    private func loadData() {
-        loadRecipients()
-        if user.photoPop?.count ?? 0 > 0 {
-            isLoading = true
-            loadPhotoPops()
-        }
-    }
-    
-    private func loadPhotoPops() {
-        print("Loading...")
-        RestApi.instance.getPhotoPops().then({ photoPops in
-            isLoading = false
-            print("Got " + String(photoPops.count) + " photo pops")
-            for p in photoPops {
-                loadPhotoPopWithImage(photoPop: p)
-            }
-        })
-    }
-    
-    private func loadPhotoPopWithImage(photoPop: PhotoPop) {
-        // Determine the user for the photo pop
-        if photoPop.receiver == user.id {
-            let p = PhotoPopImageView(photoPop: photoPop, user: user)
-            photoPopImages.append(p)
-            print("Added photo pop for self")
-            loadRecipients()
-        } else {
-            for f in friends {
-                if photoPop.receiver == f.id {
-                    let p = PhotoPopImageView(photoPop: photoPop, user: f)
-                    photoPopImages.append(p)
-                    print("Added photo pop for " + f.id)
-                    loadRecipients()
-                    break
-                }
-            }
-        }
-    }
-    
-    private func loadRecipients() {
-        // Fill recipients array with all possible users
-        availableRecipients = friends
-        availableRecipients.append(user)
-        print("Recipient count initially: ", availableRecipients.count)
-        print("Friends: ", friends.count)
-        // Iterate through the array
-        // Remove all recipients who already have a photo pop
-        for recipient in availableRecipients {
-            for p in photoPopImages {
-                if p.photoPop.receiver == recipient.id {
-                    let index = availableRecipients.firstIndex(where: {$0.id == recipient.id})
-                    if (index != nil) {
-                        availableRecipients.remove(at: index!)
-                        print("Removed " + p.photoPop.receiver + " from available recipients")
-                    }
-                }
-            }
-        }
-        print("Available recipients: ", availableRecipients.count)
-    }
-    
-    private func createPhotoPop() {
-        if currentReceiver == nil { return }
-        guard let image: UIImage = attachmentImage else {
-            print("Attachment iamge is nil")
-            return
-        }
-        
-        guard let data = image.jpeg(.lowest) else {
-            print("Failed to convert image")
-            return
-        }
-        print("Image as data successful")
-        RestApi.instance.createPhotoPop(receiver: currentReceiver!.id, image: data).then({ response in
-            print("Create photo pop successful")
-            photoPopImages.append(PhotoPopImageView(photoPop: response, user: currentReceiver!))
-            loadRecipients()
-        })
-    }
-    
-    private func deletePhotoPop(index: Int) {
-        RestApi.instance.deletePhotoPop(id: photoPopImages[index].photoPop.id).then({ response in
-            print("Got response from server for deleting photo pop: ", response)
-            if response.status == 200 {
-                photoPopImages.remove(at: index)
-            }
-        })
-        
- 
-        
-        
-    }
-}
