@@ -3,6 +3,22 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "closure #7 in closure #4 in closure #3 in closure #1 in closure #1 in AtmosphereInfo.body.getter:AtmosphereInfo.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "friends.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PhotoPopFGPreload.sendMessage():PhotoPOPFGPreload.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "customMessage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #2 in closure #1 in closure #1 in FriendVaultTrackMoods.body.getter:FriendValutTrackMoods.swift">
          <PersistentStrings>
             <PersistentString
@@ -24,14 +40,6 @@
             </PersistentString>
             <PersistentString
                value = "self.moodLogs">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #7 in closure #4 in closure #3 in closure #1 in closure #1 in AtmosphereInfo.body.getter:AtmosphereInfo.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "friends.count">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
