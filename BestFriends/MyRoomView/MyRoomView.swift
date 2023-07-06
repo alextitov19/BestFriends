@@ -318,7 +318,7 @@ struct MyRoomView: View {
                 
                 
                 NavigationLink(destination: EmptyView(), label: {
-                    MyRoomRowView(title: "Friendship Spotlights", imageName: "star", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                    MyRoomRowView(title: "Friendship Highlights", imageName: "star", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
                 //
                 
