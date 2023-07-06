@@ -15,6 +15,7 @@ struct IntroBluemodeFriend: View {
     let user: User
     let friends: [User]
     let groups: [Group]
+    let atmosphere: Atmosphere
     
     var body: some View {
         ZStack {
@@ -65,7 +66,7 @@ struct IntroBluemodeFriend: View {
                         .frame(height: 70)
                     
                     NavigationLink(
-                        destination: DramaMainView(user: user, friends: friends, groups: groups),
+                        destination: DramaMainView(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                         label: {
                             Text("Let us HELP you")
                                 .fontWeight(.thin)

@@ -15,6 +15,11 @@ struct Step2FG_NewSolutions: View {
     let user: User
     let friends: [User]
     
+    let groups: [Group]
+    
+    let atmosphere: Atmosphere
+    let friendAtmospheres: [Atmosphere]
+    
     @EnvironmentObject var sessionManager: SessionManager
     
     var body: some View {
@@ -188,7 +193,7 @@ struct Step2FG_NewSolutions: View {
                             Spacer()
                                 .frame(height: 20)
                             
-                    NavigationLink(destination: Step4_NuclearOption(user: user, friends: friends), label: {
+                    NavigationLink(destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres), label: {
                                 ZStack {
                                     Circle()
                                         .frame(width: 115, height: 115)

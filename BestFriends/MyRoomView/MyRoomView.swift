@@ -217,7 +217,7 @@ struct MyRoomView: View {
                         
                         ZStack {
                             
-                            NavigationLink(destination: Step4_NuclearOption(user: user, friends: friends),
+                            NavigationLink(destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
                                            label: {
                                 Text("")
                                     .fontWeight(.thin)

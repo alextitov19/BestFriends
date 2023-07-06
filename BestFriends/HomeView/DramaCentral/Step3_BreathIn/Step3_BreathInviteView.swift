@@ -17,6 +17,10 @@ struct Step3_BreathInviteView: View {
     let friends: [User]
     let groups: [Group]
     
+    let atmosphere: Atmosphere
+    let friendAtmospheres: [Atmosphere]
+    
+    
     var body: some View {
         
         ZStack {
@@ -72,7 +76,7 @@ struct Step3_BreathInviteView: View {
                                 .multilineTextAlignment(.center)
                             
                             NavigationLink(
-                                destination: Step4_NuclearOption(user: user, friends: friends),
+                                destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
                                 label: {
                                     Text("Maybe we can help")
                                         .fontWeight(.thin)

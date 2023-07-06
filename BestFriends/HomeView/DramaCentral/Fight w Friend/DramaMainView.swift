@@ -15,6 +15,7 @@ struct DramaMainView: View {
     let user: User
     let friends: [User]
     let groups: [Group]
+    let atmosphere: Atmosphere
     
     var body: some View {
         ZStack {
@@ -150,7 +151,7 @@ struct DramaMainView: View {
                     
                     VStack {
                         
-                        NavigationLink(destination: Step3_BreathInviteView(user: user, friends: friends, groups: groups), label: {
+                        NavigationLink(destination: Step3_BreathInviteView(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: [atmosphere]), label: {
                             ZStack {
                                 Circle()
                                     .frame(width: 100, height: 100)
@@ -168,7 +169,7 @@ struct DramaMainView: View {
                         Spacer()
                             .frame(height: 20)
                         
-                        NavigationLink(destination: Step4_NuclearOption(user: user, friends: friends), label: {
+                        NavigationLink(destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: [atmosphere]), label: {
                             ZStack {
                                 Circle()
                                     .frame(width: 100, height: 100)

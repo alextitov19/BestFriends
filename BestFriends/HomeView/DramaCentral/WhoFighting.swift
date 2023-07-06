@@ -16,6 +16,8 @@ struct WhoFighting: View {
     let friends: [User]
     let groups: [Group]
     
+    let atmosphere: Atmosphere
+    
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
 //    @EnvironmentObject var sessionManager: SessionManager
@@ -37,7 +39,7 @@ struct WhoFighting: View {
         
         ZStack {
 
-            NavigationLink(destination: IntroBluemodeFriend(user: user, friends: friends, groups: groups), label: {
+            NavigationLink(destination: IntroBluemodeFriend(user: user, friends: friends, groups: groups, atmosphere: atmosphere), label: {
                 WhoFightingCircle (color: .purple, friendName: "Fixing \nTEEN Fights")
                 })
             .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)

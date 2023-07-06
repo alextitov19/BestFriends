@@ -18,6 +18,8 @@ struct FightsDVid: View {
     let friends: [User]
     let groups: [Group]
     
+    let atmosphere: Atmosphere
+    
     
     var body: some View {
         
@@ -31,7 +33,7 @@ struct FightsDVid: View {
                 VStack {
     
                     
-                    NavigationLink(destination: WhoFighting(user: user, friends: friends, groups: groups), label: {
+                    NavigationLink(destination: WhoFighting(user: user, friends: friends, groups: groups, atmosphere: atmosphere), label: {
                         Text("Drama & Fights")
                             .fontWeight(.thin)
                             .frame(width: 200, height: 40)

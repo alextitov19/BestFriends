@@ -95,7 +95,7 @@ if selectedPlanet != nil {
    
     
     HStack {
-        NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
+        NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
                    label: {
         Text("FIGHT")
             .fontWeight(.light)
@@ -107,7 +107,7 @@ if selectedPlanet != nil {
     })
 
         
-    NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
+        NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
                    label: {
         Text("Mediator")
             .fontWeight(.light)

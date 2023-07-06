@@ -14,8 +14,9 @@ struct Step4_NuclearOption: View {
 
     let user: User
     let friends: [User]
-//    let groups: [Group]
-//    let atmosphere: Atmosphere
+    let groups: [Group]
+    let atmosphere: Atmosphere
+    let friendAtmospheres: [Atmosphere]
 
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
@@ -62,7 +63,7 @@ struct Step4_NuclearOption: View {
                         
                
                 
-                NavigationLink(destination: EmptyView(), label: {
+                NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
                             HugCircle (color: ColorManager .purple3, friendName: "ask \nfriends for \n CareHearts")
                         })
                         .offset(x: showItems ? 130 : 0, y: showItems ? -100: 0)

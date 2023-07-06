@@ -16,6 +16,7 @@ struct FightsInfo: View {
     let user: User
     let friends: [User]
     let groups: [Group]
+    let atmosphere: Atmosphere
 
     var body: some View {
        
@@ -87,7 +88,7 @@ struct FightsInfo: View {
 
             
             NavigationLink(
-                destination: WhoFighting(user: user, friends: friends, groups: groups),
+                destination: WhoFighting(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                 label: {
                     Text("NEXT")
                         .fontWeight(.thin)
@@ -112,7 +113,7 @@ struct FightsInfo: View {
                 .foregroundColor(Color.white)
             
             NavigationLink(
-                destination: IntroBluemodeFriend(user: user, friends: friends, groups: groups),
+                destination: IntroBluemodeFriend(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                 label: {
                     Text("Skip Fights Landing page")
                         .fontWeight(.thin)
