@@ -28,7 +28,7 @@ struct InfoHowChatWorks: View {
                 .onAppear()
             
             VStack {
-                Text("Building the best FriendGroups ever!")
+                Text("Building superior FriendGroups!")
                     .font(.system(size: 20, weight: .thin))
                     .foregroundColor(Color.white)
                     .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -38,7 +38,7 @@ struct InfoHowChatWorks: View {
                 ZStack {
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 70)
                     
                     VStack {
                         
@@ -122,8 +122,17 @@ struct InfoHowChatWorks: View {
                     //                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                         .opacity(0.8)
                         .multilineTextAlignment(.center)
+                
+                Spacer()
+                    .frame(height: 10)
                     
-                    
+                Text("(in-app notifications are always on)")
+                    .font(.system(size: 15, weight: .thin))
+                    .italic()
+                    .foregroundColor(Color.white)
+                //                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.8)
+                    .multilineTextAlignment(.center)
                     
                     
                 }
