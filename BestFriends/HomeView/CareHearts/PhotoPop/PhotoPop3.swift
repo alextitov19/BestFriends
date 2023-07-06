@@ -50,31 +50,31 @@ struct PhotoPop3: View {
                     
                     VStack {
                         
-                        Text("Up-loading to PhotoPOP")
-                            .font(.system(size: 25, weight: .light))
-                            .foregroundColor(ColorManager .grey1)
-
-                        Spacer()
-                            .frame(height: 7)
-                        
-                        Text("1) Delete OLD image before uploading NEW")
-                            .font(.system(size: 17, weight: .light))
-                            .foregroundColor(ColorManager .grey2)
-                        
-                        Text("2) Tap camera/gallery icon to upload NEW image")
-                            .font(.system(size: 17, weight: .light))
-                            .foregroundColor(ColorManager .grey2)
-                        
-                      
-                        
-                     
+//                        Text("Up-loading to PhotoPOP")
+//                            .font(.system(size: 25, weight: .light))
+//                            .foregroundColor(ColorManager .grey1)
 //
-//                        Text("before uploading NEW image")
-//                            .font(.system(size: 20, weight: .light))
+//                        Spacer()
+//                            .frame(height: 7)
+//
+//                        Text("1) Delete OLD image before uploading NEW")
+//                            .font(.system(size: 17, weight: .light))
 //                            .foregroundColor(ColorManager .grey2)
-                        
-                        Spacer()
-                            .frame(height: 60)
+//
+//                        Text("2) Tap camera/gallery icon to upload NEW image")
+//                            .font(.system(size: 17, weight: .light))
+//                            .foregroundColor(ColorManager .grey2)
+//
+//
+//
+//
+////
+////                        Text("before uploading NEW image")
+////                            .font(.system(size: 20, weight: .light))
+////                            .foregroundColor(ColorManager .grey2)
+//
+//                        Spacer()
+//                            .frame(height: 60)
                         
                         Text("Alert Friend(s)")
                             .font(.system(size: 30, weight: .light))
@@ -220,11 +220,7 @@ struct PhotoPop3: View {
                 VStack {
                     
      
-                    
-                    Text("If get loading icon - exit page and return")
-                        .font(.system(size: 17, weight: .light))
-//                        .italic()
-                        .foregroundColor(.red)
+              
                     
                     Spacer()
                         .frame(height: 5)
