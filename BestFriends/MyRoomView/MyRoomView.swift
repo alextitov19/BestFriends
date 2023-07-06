@@ -217,7 +217,7 @@ struct MyRoomView: View {
                         
                         ZStack {
                             
-                            NavigationLink(destination: INFOPreloadA(user: user, friends: friends),
+                            NavigationLink(destination: Step4_NuclearOption(user: user, friends: friends),
                                            label: {
                                 Text("")
                                     .fontWeight(.thin)
@@ -231,7 +231,7 @@ struct MyRoomView: View {
                             
                             
                             
-                            Image(systemName: "camera")
+                            Image(systemName: "figure.walk.motion")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 25, height: 25)
@@ -241,12 +241,12 @@ struct MyRoomView: View {
 
 
                                 
-                        Text("Where are")
+                        Text("Fixing a ")
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
                         
-                        Text("you?")
+                        Text("Breakup")
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
@@ -255,9 +255,11 @@ struct MyRoomView: View {
 
                     }
                 }
+         
+                
                 
                 Spacer()
-                    .frame(height: 120)
+                    .frame(height: 50)
 //                 TryThis
                 
          
@@ -310,8 +312,8 @@ struct MyRoomView: View {
                 })
                
 //                                    Step3_BreathInviteView(user: user, friends: friends, groups: groups
-                NavigationLink(destination:  Step4_NuclearOption(user: user, friends: friends), label: {
-                    MyRoomRowView(title: "Breakup / Fight", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                NavigationLink(destination:  INFOPreloadA(user: user, friends: friends), label: {
+                    MyRoomRowView(title: "Where are you?", imageName: "camera", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
                 
                 
@@ -387,7 +389,28 @@ struct MyRoomView: View {
 //                            .cornerRadius(12)
 //                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 //                    })
+                Spacer()
+                    .frame(height: 200)
                 
+                
+                NavigationLink(
+                    
+                    destination: InfoHowChatWorks(user: user),
+                    label: {
+                        Text("Why Activate Notifications")
+                            .fontWeight(.light)
+                            .foregroundColor(Color.white)
+                            .frame(width: 260, height: 27)
+                            .font(.system(size: 20))
+                            .background(Color.purple)
+                            .cornerRadius(10)
+                            .opacity(0.4)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        
+                    })
+                
+                Spacer()
+                    .frame(height: 10)
                 
                 NavigationLink(
                     
@@ -396,33 +419,32 @@ struct MyRoomView: View {
                         Text("Free Stickers")
                             .fontWeight(.light)
                             .foregroundColor(Color.white)
-                            .frame(width: 250, height: 60)
-                            .font(.system(size: 35))
+                            .frame(width: 150, height: 27)
+                            .font(.system(size: 22))
                             .background(Color.purple)
-                            .cornerRadius(15)
-                            .opacity(0.6)
+                            .cornerRadius(10)
+                            .opacity(0.4)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
                     })
-                
                 
                 NavigationLink(
                     
-                    destination: InfoHowChatWorks(user: user),
+                    destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                     label: {
-                        Text("Activate Push Notifications")
+                        Text("Walk-through")
                             .fontWeight(.light)
                             .foregroundColor(Color.white)
-                            .frame(width: 250, height: 60)
-                            .font(.system(size: 25))
+                            .frame(width: 150, height: 27)
+                            .font(.system(size: 20))
                             .background(Color.purple)
-                            .cornerRadius(15)
-                            .opacity(0.6)
+                            .cornerRadius(10)
+                            .opacity(0.4)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
                     })
                 
-                Spacer()
+//                Spacer()
             }
         }
     }
