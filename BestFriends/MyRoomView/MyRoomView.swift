@@ -21,9 +21,9 @@ struct MyRoomView: View {
     var body: some View {
         ZStack {
             ColorManager.purple7
-//                .opacity(0.6)
+            //                .opacity(0.6)
                 .ignoresSafeArea()
-                
+            
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
@@ -45,7 +45,7 @@ struct MyRoomView: View {
                                     .frame(width: 50, height: 30)
                                     .foregroundColor(ColorManager .grey1)
                                     .font(.system(size: 30))
-//                                    .background(ColorManager.purple3)
+                                //                                    .background(ColorManager.purple3)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
@@ -64,12 +64,12 @@ struct MyRoomView: View {
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
-
+                        
                         Text("PhotoPOP")
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
-//
+                        //
                     }
                     
                     
@@ -87,7 +87,7 @@ struct MyRoomView: View {
                                     .frame(width: 50, height: 30)
                                     .foregroundColor(ColorManager .grey1)
                                     .font(.system(size: 30))
-//                                    .background(ColorManager.purple3)
+                                //                                    .background(ColorManager.purple3)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
@@ -101,9 +101,9 @@ struct MyRoomView: View {
                                 .opacity(0.3)
                                 .foregroundColor(.white)
                         }
-
-
-                                
+                        
+                        
+                        
                         Text("Hurt")
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
@@ -115,12 +115,12 @@ struct MyRoomView: View {
                             .opacity(0.7)
                         
                         
-
+                        
                     }
-//                    Spacer()
-//                        .frame(width: 65)
-                 
-//                    *******************************************
+                    //                    Spacer()
+                    //                        .frame(width: 65)
+                    
+                    //                    *******************************************
                     VStack {
                         
                         ZStack {
@@ -132,7 +132,7 @@ struct MyRoomView: View {
                                     .frame(width: 50, height: 30)
                                     .foregroundColor(ColorManager .grey1)
                                     .font(.system(size: 30))
-//                                    .background(ColorManager.purple3)
+                                //                                    .background(ColorManager.purple3)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
@@ -146,9 +146,9 @@ struct MyRoomView: View {
                                 .opacity(0.3)
                                 .foregroundColor(.white)
                         }
-
-
-                                
+                        
+                        
+                        
                         Text("Smile")
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
@@ -160,19 +160,19 @@ struct MyRoomView: View {
                             .opacity(0.7)
                         
                         
-
+                        
                     }
-//                    Spacer()
-//                        .frame(width: 65)
-                 
+                    //                    Spacer()
+                    //                        .frame(width: 65)
                     
-//                   ******************************************
+                    
+                    //                   ******************************************
                     
                     VStack {
                         
                         ZStack {
                             
-//                            NavigationLink(destination: PhotoPopFGPreload(user: user, friends: friends),
+                            //                            NavigationLink(destination: PhotoPopFGPreload(user: user, friends: friends),
                             NavigationLink(destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
                                            label: {
                                 Text("")
@@ -180,7 +180,7 @@ struct MyRoomView: View {
                                     .frame(width: 50, height: 30)
                                     .foregroundColor(ColorManager .grey1)
                                     .font(.system(size: 30))
-//                                    .background(ColorManager.purple3)
+                                //                                    .background(ColorManager.purple3)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
@@ -194,9 +194,9 @@ struct MyRoomView: View {
                                 .opacity(0.3)
                                 .foregroundColor(.white)
                         }
-
-
-                                
+                        
+                        
+                        
                         Text("Friendship")
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
@@ -208,10 +208,10 @@ struct MyRoomView: View {
                             .opacity(0.7)
                         
                         
-
+                        
                     }
                     
-            
+                    
                     
                     VStack {
                         
@@ -224,7 +224,7 @@ struct MyRoomView: View {
                                     .frame(width: 50, height: 30)
                                     .foregroundColor(ColorManager .grey1)
                                     .font(.system(size: 30))
-//                                    .background(ColorManager.purple3)
+                                //                                    .background(ColorManager.purple3)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
@@ -238,9 +238,9 @@ struct MyRoomView: View {
                                 .opacity(0.3)
                                 .foregroundColor(.white)
                         }
-
-
-                                
+                        
+                        
+                        
                         Text("Fixing a ")
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
@@ -252,17 +252,17 @@ struct MyRoomView: View {
                             .opacity(0.7)
                         
                         
-
+                        
                     }
                 }
-         
+                
                 
                 
                 Spacer()
                     .frame(height: 50)
-//                 TryThis
+                //                 TryThis
                 
-         
+                
                 
                 HStack {
                     
@@ -278,7 +278,7 @@ struct MyRoomView: View {
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
-
+                    
                     
                     Text("CareHearts")
                         .fontWeight(.light)
@@ -290,182 +290,185 @@ struct MyRoomView: View {
                         .cornerRadius(15)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     
-                NavigationLink( destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                label: {
-                    Text("Request")
-                        .fontWeight(.thin)
-                        .frame(width: 75, height: 50)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .font(.system(size: 17))
-                        .background(Color .purple)
-                        .opacity(0.6)
-                        .cornerRadius(15)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                })
-                
+                    NavigationLink( destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                    label: {
+                        Text("Request")
+                            .fontWeight(.thin)
+                            .frame(width: 75, height: 50)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 17))
+                            .background(Color .purple)
+                            .opacity(0.6)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
+                    
                 }
                 
-             
+                
                 
                 NavigationLink(destination: JournalsView(friends: friends), label: {
                     MyRoomRowView(title: "FriendGroup Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
-               
-//                                    Step3_BreathInviteView(user: user, friends: friends, groups: groups
+                
+                //                                    Step3_BreathInviteView(user: user, friends: friends, groups: groups
                 NavigationLink(destination:  INFOPreloadA(user: user, friends: friends), label: {
                     MyRoomRowView(title: "Where are you?", imageName: "camera", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
                 
                 
-                
-                //     *************************** SmileVault & Affirmations / Motivations
-//
-//                NavigationLink(destination: EmptyView(), label: {
-//                MyRoomRowView(title: "Friendship Spotlights", imageName: "star", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
-//                })
-//
-                
-//                NavigationLink(destination: AffirmationMain(), label: {
-//                    MyRoomRowView(title: "Affirmations", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
-//                })
-                
-                
-//              **********************************************************
-//                **************************************************
-                
-                
-                
-                
-                
-                
-//                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-//                MyRoomRowView(title: "SmileVault", imageName: "sun.max.fill", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
-//                })
-                
-
-              
-                
-//                NavigationLink(destination: EmptyView(), label: {
-//                    MyRoomRowView(title: "Our BEST FriendGroup (ratings)", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
-//                })
-
+                NavigationLink(destination: EmptyView(), label: {
+                    MyRoomRowView(title: "Friendship Spotlights", imageName: "star", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                })
+                //
                 
                 
                 //     *************************** SmileVault & Affirmations / Motivations
+                //                NavigationLink(destination: AffirmationMain(), label: {
+                //                    MyRoomRowView(title: "Affirmations", imageName: "star.leadinghalf.filled", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                //                })
                 
                 
-//                NavigationLink(destination: INFOPreloadA(user: user, friends: friends), label: {
-//                MyRoomRowView(title: "Where are you?", imageName: "camera", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
-//                })
-        
-//
-//                NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
-//                MyRoomRowView(title: "Send PhotoPOPs", imageName: "camera", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
-//                })
-//
-//
-                
-                           
-                
-//
-
-               
-            
+                //              **********************************************************
+                //                **************************************************
                 
                 
-//                NavigationLink(
-//                    destination: BuiltByTeensView(user: user, friends: friends),
-//                    label: {
-//                        Text("designed around teens \nby teen girls")
-////                            .foregroundColor(Color.white)
-////                            .font(.system(size: 16, weight: .light))
-//
-//                            .fontWeight(.thin)
-//                            .frame(width: 200, height: 40)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                            .font(.system(size: 15))
-//                            .background(Color .purple)
-//                                .opacity(0.6)
-//                            .cornerRadius(12)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                    })
-                Spacer()
-                    .frame(height: 200)
                 
-                NavigationLink(
-                    destination: InfoInsideChat(user: user),
-                    label: {
-                        Text("Create New Chat rooms")
-                            .fontWeight(.thin)
-                            .frame(width: 260, height: 27)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 25))
-                            .background(Color.purple)
-                            .cornerRadius(10)
-                            .opacity(0.4)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
-                    })
                 
-                NavigationLink(
+                
+                
+                //                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
+                //                MyRoomRowView(title: "SmileVault", imageName: "sun.max.fill", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                //                })
+                
+                
+                
+                
+                //                NavigationLink(destination: EmptyView(), label: {
+                //                    MyRoomRowView(title: "Our BEST FriendGroup (ratings)", imageName: "figure.walk.motion", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                //                })
+                
+                
+                
+                //     *************************** SmileVault & Affirmations / Motivations
+                
+                
+                //                NavigationLink(destination: INFOPreloadA(user: user, friends: friends), label: {
+                //                MyRoomRowView(title: "Where are you?", imageName: "camera", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                //                })
+                
+                //
+                //                NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
+                //                MyRoomRowView(title: "Send PhotoPOPs", imageName: "camera", backgroundColor: ColorManager.purple5.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                //                })
+                //
+                //
+                
+                
+                
+                //
+                
+                
+                
+                
+                
+                //                NavigationLink(
+                //                    destination: BuiltByTeensView(user: user, friends: friends),
+                //                    label: {
+                //                        Text("designed around teens \nby teen girls")
+                ////                            .foregroundColor(Color.white)
+                ////                            .font(.system(size: 16, weight: .light))
+                //
+                //                            .fontWeight(.thin)
+                //                            .frame(width: 200, height: 40)
+                //                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                //                            .font(.system(size: 15))
+                //                            .background(Color .purple)
+                //                                .opacity(0.6)
+                //                            .cornerRadius(12)
+                //                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                //                    })
+                
+                VStack {
                     
-                    destination: InfoHowChatWorks(user: user),
-                    label: {
-                        Text("Why Activate Notifications")
-                            .fontWeight(.light)
-                            .foregroundColor(Color.white)
-                            .frame(width: 260, height: 27)
-                            .font(.system(size: 20))
-                            .background(Color.purple)
-                            .cornerRadius(10)
-                            .opacity(0.4)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
-                    })
-                
-         
-                
-   
-                
-                NavigationLink(
                     
-                    destination: INFOPreload3(user: user),
-                    label: {
-                        Text("Free Stickers")
-                            .fontWeight(.light)
-                            .foregroundColor(Color.white)
-                            .frame(width: 150, height: 27)
-                            .font(.system(size: 22))
-                            .background(Color.purple)
-                            .cornerRadius(10)
-                            .opacity(0.4)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
-                    })
-                
-                NavigationLink(
+                    Spacer()
+                        .frame(height: 70)
                     
-                    destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                    label: {
-                        Text("Walk-through")
-                            .fontWeight(.light)
-                            .foregroundColor(Color.white)
-                            .frame(width: 150, height: 27)
-                            .font(.system(size: 20))
-                            .background(Color.purple)
-                            .cornerRadius(10)
-                            .opacity(0.4)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    NavigationLink(
+                        destination: InfoInsideChat(user: user),
+                        label: {
+                            Text("Create New Chat rooms")
+                                .fontWeight(.thin)
+                                .frame(width: 260, height: 27)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 25))
+                                .background(Color.purple)
+                                .cornerRadius(10)
+                                .opacity(0.4)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            
+                        })
+                    
+                    NavigationLink(
                         
-                    })
-                
-            
-                     
+                        destination: InfoHowChatWorks(user: user),
+                        label: {
+                            Text("Why Activate Notifications")
+                                .fontWeight(.light)
+                                .foregroundColor(Color.white)
+                                .frame(width: 260, height: 27)
+                                .font(.system(size: 20))
+                                .background(Color.purple)
+                                .cornerRadius(10)
+                                .opacity(0.4)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            
+                        })
+                    
+                    
+                    
+                    
+                    
+                    NavigationLink(
+                        
+                        destination: INFOPreload3(user: user),
+                        label: {
+                            Text("Free Stickers")
+                                .fontWeight(.light)
+                                .foregroundColor(Color.white)
+                                .frame(width: 150, height: 27)
+                                .font(.system(size: 22))
+                                .background(Color.purple)
+                                .cornerRadius(10)
+                                .opacity(0.4)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            
+                        })
+                    
+                    NavigationLink(
+                        
+                        destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        label: {
+                            Text("Walk-through")
+                                .fontWeight(.light)
+                                .foregroundColor(Color.white)
+                                .frame(width: 150, height: 27)
+                                .font(.system(size: 20))
+                                .background(Color.purple)
+                                .cornerRadius(10)
+                                .opacity(0.4)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            
+                        })
+                    
+                    
+                    
+                }
             }
         }
+        
     }
-    
-    
     
     
     

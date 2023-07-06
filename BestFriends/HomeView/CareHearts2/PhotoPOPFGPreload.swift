@@ -207,7 +207,7 @@ struct PhotoPopFGPreload: View {
                         })
                         
                             Spacer()
-                                .frame(height: 30)
+                                .frame(height: 10)
                     }
       
                     
