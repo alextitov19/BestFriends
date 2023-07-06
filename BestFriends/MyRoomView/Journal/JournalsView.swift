@@ -181,14 +181,18 @@ struct JournalsView: View {
             ZStack {
                 ColorManager.purple3
                 
-                Image(systemName: "plus")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 30, height: 30)
+                
+                Text("Create new Journal post")
                     .foregroundColor(ColorManager.purple5)
-                    .opacity(0.3)
+                    .font(.headline)
+//                Image(systemName: "plus")
+//                    .resizable()
+//                    .scaledToFit()
+//                    .frame(width: 120, height: 30)
+//                    .foregroundColor(ColorManager.purple7)
+//                    .opacity(0.7)
             }
-            .frame(width: 200, height: 50)
+            .frame(width: 230, height: 50)
             .cornerRadius(15)
             .opacity(0.7)
         }
@@ -199,11 +203,11 @@ struct JournalsView: View {
             ZStack {
                 ColorManager.purple3
                 
-                Text("Vibe Chronicle")
+                Text("Monthlhy 'Vibe' Chronicle")
                     .foregroundColor(ColorManager.purple5)
                     .font(.headline)
             }
-            .frame(width: 200, height: 50)
+            .frame(width: 230, height: 50)
             .cornerRadius(15)
             .opacity(0.7)
         }

@@ -145,21 +145,6 @@ struct PhotoPopFGPreload: View {
                                  
                                     Spacer()
                                         .frame(height: 10)
-                                    
-                                    Text("Send coupons for cool stuff")
-                                        .font(.system(size: 17, weight: .light))
-                                        .italic()
-                                        .foregroundColor(ColorManager .grey1)
-                                        .multilineTextAlignment(.center)
-                                    
-                                    Spacer()
-                                        .frame(height: 7)
-
-                                    Text("Like ice cream, Amazon gift card ...")
-                                        .font(.system(size: 17, weight: .light))
-                                        .italic()
-                                        .foregroundColor(ColorManager .grey1)
-                                        .multilineTextAlignment(.center)
                                    
                                     
                                     Spacer()
@@ -258,6 +243,17 @@ struct PhotoPopFGPreload: View {
                                 .frame(height: 30)
                     }
       
+                    
+                    Text("Send your friend a Friendship Coupon that next time you are together they can redeem for your gift, like an ice cream, a cheeseburger - what ever you want to give them.")
+                        .font(.system(size: 18, weight: .light))
+                        .foregroundColor(Color.white)
+    //                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        .opacity(0.50)
+                        .multilineTextAlignment(.center)
+                        .padding(30)
+                    
+                    
+                    
                 VStack {
 
                     Text("Alert friend to look for Coupon in Chat")

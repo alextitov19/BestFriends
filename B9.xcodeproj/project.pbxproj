@@ -751,6 +751,7 @@
 		7A8F3D7C2A32BC5D00BC2CF4 /* MyRoomView */ = {
 			isa = PBXGroup;
 			children = (
+				CF2EE6F729516C8A00B1B16D /* InfoHowChatWorks.swift */,
 				7A8F3D7D2A32C63000BC2CF4 /* MyRoomView.swift */,
 				7AE4C5622A3A9A1900A90DBF /* Affirmations */,
 				7A8A72982A33F690005FA3B1 /* Journal */,
@@ -768,7 +769,6 @@
 				CFCD4BAC2965C27F00BBE43A /* InfoSafeChat.swift */,
 				CF2EE6F929516C9E00B1B16D /* InfoCustomizeChatBackgrounds.swift */,
 				CF2EE6FB29517A4B00B1B16D /* InfoCreateChatRooms.swift */,
-				CF2EE6F729516C8A00B1B16D /* InfoHowChatWorks.swift */,
 				CFCD4BAE2965CE5C00BBE43A /* InfoComingChat.swift */,
 				CF2EE6F529516C7000B1B16D /* InfoCreateGroupChatRooms.swift */,
 				CF09118D284894F400CB0AF0 /* InfoView.swift */,
@@ -2169,7 +2169,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -2199,7 +2199,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;
