@@ -131,7 +131,11 @@ struct PhotoPopFGPreload: View {
                                                 .foregroundColor(ColorManager .grey1)
                                             
                                         }
-                                            
+                                       
+                                                
+                                                Spacer()
+                                                    .frame(width: 45)
+                                        
                                     Image("girlwalking250")
                                         .resizable()
                                         .frame(width: 80, height: 80)
