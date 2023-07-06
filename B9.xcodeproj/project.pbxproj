@@ -751,6 +751,7 @@
 		7A8F3D7C2A32BC5D00BC2CF4 /* MyRoomView */ = {
 			isa = PBXGroup;
 			children = (
+				CF6DB73D2A5720D6001D8144 /* Friendship Highlights */,
 				CF2EE6F729516C8A00B1B16D /* InfoHowChatWorks.swift */,
 				7A8F3D7D2A32C63000BC2CF4 /* MyRoomView.swift */,
 				7AE4C5622A3A9A1900A90DBF /* Affirmations */,
@@ -1214,6 +1215,13 @@
 				CF3DB37528DA85BA00BF9CCD /* Meena1.m4a */,
 			);
 			path = "Background Videos";
+			sourceTree = "<group>";
+		};
+		CF6DB73D2A5720D6001D8144 /* Friendship Highlights */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Friendship Highlights";
 			sourceTree = "<group>";
 		};
 		CF71574F2975D27000094F22 /* SendKisses */ = {
