@@ -64,9 +64,18 @@ struct Step2_FightLandingView: View {
 //                    .ignoresSafeArea()
 //                    .blendMode(.screen)
                 
-                ColorManager.grey4
+//                ColorManager.grey4
+//                    .ignoresSafeArea()
+//                AdPlayerView(name: "sky2")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+                
+                Image("KellyBackground 1")
                     .ignoresSafeArea()
-                AdPlayerView(name: "sky2")
+                    .scaledToFit()
+
+                    
+                AdPlayerView(name: "Galaxy2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
@@ -333,8 +342,8 @@ struct Step2_FightLandingView: View {
                                         .foregroundColor(Color.white)
                                         .frame(width: 310, height: 40)
                                         .font(.system(size: 27))
-                                        .background(Color.orange)
-                                        .opacity(0.7)
+                                        .background(Color.purple)
+                                        .opacity(0.85)
                                         .cornerRadius(15)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 }

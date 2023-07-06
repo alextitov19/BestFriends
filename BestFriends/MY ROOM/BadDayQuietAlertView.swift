@@ -54,16 +54,23 @@ struct BadDayQuietAlertView: View {
                 
             } else {
 
-                ColorManager.grey4
-                    .opacity(0.8)
+//                ColorManager.grey4
+//                    .opacity(0.8)
+//                    .ignoresSafeArea()
+//                    .onAppear()
+//
+//    AdPlayerView(name: "sky2")
+//        .ignoresSafeArea()
+//        .blendMode(.screen)
+                
+                Image("KellyBackground 1")
                     .ignoresSafeArea()
-                    .onAppear()
+                    .scaledToFit()
 
-    AdPlayerView(name: "sky2")
-        .ignoresSafeArea()
-        .blendMode(.screen)
-                
-                
+                    
+                AdPlayerView(name: "Galaxy2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
             }
             
         
@@ -83,22 +90,22 @@ struct BadDayQuietAlertView: View {
                                 
                                 Image(systemName: "circle.fill")
                                     .resizable()
-                                    .foregroundColor(Color.orange)
+                                    .foregroundColor(Color.purple)
                                     .frame(width: 400, height: 400)
                                     .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                                     .opacity(0.95)
                                     
                                 VStack {
                                     Text("TalkCoupons")
-                                        .font(.system(size: 40, weight: .light))
-                                        .foregroundColor(ColorManager .grey3)
+                                        .font(.system(size: 45, weight: .light))
+                                        .foregroundColor(ColorManager .grey2)
                                  
 //                                    Text("When you Register for BestFriends you grant each of your friends ONE 'TalkCoupon'. This coupon may be redeamed at any time after a huge fight giving everyone on BestFriends ONE last time to become friends again. In good faith, 'TalkCoupons' should be honored.")
                                     
-                                    Text("Gives everyone a last chance to try to work things out. \n\nIn good faith, 'TalkCoupons' should be honored by all.")
+                                    Text("Gives everyone a last chance \nto try to work things out. \n\nIn good faith, \n'TalkCoupons' should be honored by all.")
                                         .font(.system(size: 17, weight: .light))
                                         .italic()
-                                        .foregroundColor(Color.black)
+                                        .foregroundColor(Color.white)
                     //                    .shadow(color: .black, radius: 1, x: 0, y: 1)
 //                                        .opacity(0.50)
                                         .multilineTextAlignment(.center)
