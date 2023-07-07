@@ -260,11 +260,16 @@ struct MyRoomView: View {
                 
                 Spacer()
                     .frame(height: 50)
+                
                 //                 TryThis
-                
-                
+                NavigationLink(destination: InfoHowChatWorks(user: user), label: {
+                MyRoomRowView(title: "What you get", imageName: "star", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+            })
                 
                 HStack {
+                    
+                   
+                  
                     
                     NavigationLink( destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                                     label: {
@@ -320,6 +325,13 @@ struct MyRoomView: View {
                 NavigationLink(destination: FH1(), label: {
                     MyRoomRowView(title: "Friendship Highlights", imageName: "star", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
+                
+            
+                
+                
+                
+                
+                
                 //
                 
                 
@@ -395,26 +407,26 @@ struct MyRoomView: View {
                     Spacer()
                         .frame(height: 70)
                     
-                    NavigationLink(
-                        destination: InfoInsideChat(user: user),
-                        label: {
-                            Text("Create New Chat rooms")
-                                .fontWeight(.thin)
-                                .frame(width: 260, height: 27)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(Color.purple)
-                                .cornerRadius(10)
-                                .opacity(0.4)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                        })
+//                    NavigationLink(
+//                        destination: InfoInsideChat(user: user),
+//                        label: {
+//                            Text("Create New Chat rooms")
+//                                .fontWeight(.thin)
+//                                .frame(width: 260, height: 27)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 25))
+//                                .background(Color.purple)
+//                                .cornerRadius(10)
+//                                .opacity(0.4)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                        })
                     
                     NavigationLink(
                         
                         destination: InfoHowChatWorks(user: user),
                         label: {
-                            Text("Why Activate Notifications")
+                            Text("Keeping Notifications 'ON'")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.white)
                                 .frame(width: 260, height: 27)

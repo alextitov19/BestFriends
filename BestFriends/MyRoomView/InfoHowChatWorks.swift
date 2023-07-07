@@ -28,12 +28,25 @@ struct InfoHowChatWorks: View {
                 .onAppear()
             
             VStack {
-                Text("Building superior FriendGroups!")
-                    .font(.system(size: 20, weight: .thin))
-                    .foregroundColor(Color.white)
-                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    .opacity(0.8)
+//                Text("Building superior FriendGroups!")
+//                    .font(.system(size: 20, weight: .thin))
+//                    .foregroundColor(Color.white)
+//                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                    .opacity(0.8)
+//                    .multilineTextAlignment(.center)
+                Text("Sharing your life with your BFFs in")
+                    .font(.system(size: 17, weight: .bold))
+                    .foregroundColor(ColorManager .grey1)
+                    .opacity(0.50)
                     .multilineTextAlignment(.center)
+                
+                Text("real-time")
+                    .font(.system(size: 23, weight: .bold))
+                    .foregroundColor(Color .white)
+                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.50)
+                    .multilineTextAlignment(.center)
+                
                 
                 ZStack {
                     
@@ -55,22 +68,12 @@ struct InfoHowChatWorks: View {
                         
                         
                         VStack {
+                        
                             
-                            Text("BestFriends is a new way to ")
-                                .font(.system(size: 17, weight: .bold))
-                                .foregroundColor(Color .white)
-                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                .opacity(0.50)
-                                .multilineTextAlignment(.center)
+                            Spacer()
+                                .frame(height: 10)
                             
-                            Text("share your life with your BFFs in")
-                                .font(.system(size: 17, weight: .bold))
-                                .foregroundColor(ColorManager .grey1)
-                            //                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                .opacity(0.50)
-                                .multilineTextAlignment(.center)
-                            
-                            Text("real-time")
+                            Text("Do you want to know?")
                                 .font(.system(size: 23, weight: .bold))
                                 .foregroundColor(Color .white)
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -78,28 +81,50 @@ struct InfoHowChatWorks: View {
                                 .multilineTextAlignment(.center)
                             
                             Spacer()
-                                .frame(height: 30)
+                                .frame(height: 10)
                             
-                            Text("In order to maximize this special connection")
+                            Text("- on a bad day that your friends are here for you")
                                 .font(.system(size: 17, weight: .bold))
                                 .foregroundColor(ColorManager .grey1)
-                            //                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 .opacity(0.50)
                                 .multilineTextAlignment(.center)
                             
-                            Text("it's necessary to")
+                            Spacer()
+                                .frame(height: 10)
+                            
+                            Text("- when a friend is ready to talk after a fight")
                                 .font(.system(size: 17, weight: .bold))
                                 .foregroundColor(ColorManager .grey1)
-                            //                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 .opacity(0.50)
                                 .multilineTextAlignment(.center)
                             
-                            Text("ALLOW NOTIFICATIONS")
-                                .font(.system(size: 19, weight: .bold))
-                                .foregroundColor(Color .white)
-                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            Spacer()
+                                .frame(height: 10)
+                            
+                            Text("- when a friend sends you a gift")
+                                .font(.system(size: 17, weight: .bold))
+                                .foregroundColor(ColorManager .grey1)
                                 .opacity(0.50)
                                 .multilineTextAlignment(.center)
+                            
+                            Spacer()
+                                .frame(height: 10)
+                            
+                            Text("- when a special image is just a 'phone shake' away")
+                                .font(.system(size: 17, weight: .bold))
+                                .foregroundColor(ColorManager .grey1)
+                                .opacity(0.50)
+                                .multilineTextAlignment(.center)
+                            
+                  
+                            
+                            
+//                            Text("ALLOW NOTIFICATIONS")
+//                                .font(.system(size: 19, weight: .bold))
+//                                .foregroundColor(Color .white)
+//                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                .opacity(0.50)
+//                                .multilineTextAlignment(.center)
                         }
                     }
                     
