@@ -46,34 +46,42 @@ struct Step4_NuclearOption: View {
 
             ZStack{
 
-                Spacer ()
-                    .frame(height: 300)
+//                Spacer ()
+//                    .frame(height: 500)
 
                     NavigationLink(destination: Step2_FightLandingView(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager.purple7, friendName: "If and when \nyou're ready to \nreach out to try to fix this \n\nTAP Here...")
+                        HugCircle (color: Color.purple, friendName: "When \nyou're ready to \nreach out to try to fix this \n\nTAP Here...")
                     })
-                    .offset(x: showItems ? 100 : 0, y: showItems ? -240: 0)
+                    .offset(x: showItems ? 20 : 0, y: showItems ? 120: 0)
                     .shadow(color: ColorManager .purple1, radius: 30, x: 10, y: 10)
 //                    .opacity(0.6)
                     .opacity(0.8)
 
                 
                         NavigationLink(destination: BreathInView(), label: {
-                            HugCircle (color: ColorManager .purple5, friendName: "just Breathe \n\nTAP Here...")
+                            HugCircle (color: ColorManager .purple3, friendName: "just Breathe \n\nTAP Here...")
                         })
-                        .offset(x: showItems ? -130 : 0, y: showItems ? -130: 0)
+                        .offset(x: showItems ? -90 : 0, y: showItems ? -200: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
                         .opacity(0.85)
                         
                
                 
                 NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                            HugCircle (color: ColorManager .purple5, friendName: "ask \nfriends for \n CareHearts")
+                            HugCircle (color: ColorManager .purple5, friendName: "ask \nfriends for \n CareHearts \n\nTAP Here...")
                         })
                         .offset(x: showItems ? 130 : 0, y: showItems ? -100: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
                         .opacity(0.9)
                 
+                
+                NavigationLink(destination: EmptyView(), label: {
+                            HugCircle (color: ColorManager .purple5, friendName: "")
+                        })
+                        .offset(x: showItems ? 300 : 0, y: showItems ? -400: 0)
+                        .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
+                        .opacity(0.9)
+           
                 
 //                NavigationLink(destination: EmptyView(), label: {
 //                    HugCircle (color: ColorManager .grey3, friendName: "sharp words \nerase all the nice words \nyou've ever said")
@@ -150,7 +158,7 @@ struct Step4_NuclearOption: View {
                     
 
                     Spacer ()
-                        .frame(height: 50)
+                        .frame(height: 0)
                     
                     ZStack {
                         
@@ -220,12 +228,12 @@ struct Step4_NuclearOption: View {
                         .resizable()
                         .foregroundColor(color)
                     //                            .foregroundColor(ColorManager .purple2)
-                        .frame(width: 150, height: 110)
+                        .frame(width: 220, height: 160)
 //                        .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
 
                     Text(friendName)
 //                        .fontWeight(.light)
-                        .font(.system(size: 8, weight: .light))
+                        .font(.system(size: 13, weight: .light))
                         .italic()
                         .foregroundColor(.white)
 
@@ -235,165 +243,4 @@ struct Step4_NuclearOption: View {
 
 
     }
-
-
-//*********************************************************
-
-//******************************************
-
-//import Foundation
-//import SwiftUI
-//
-//
-//struct Step4_NuclearOption: View {
-//
-//    @EnvironmentObject var sessionManager: SessionManager
-//
-//    let user: User
-//    let friends: [User]
-//
-//    var body: some View {
-//
-//        ZStack {
-//
-//            ColorManager.grey4
-//                .ignoresSafeArea()
-//
-//
-//            VStack {
-//
-//                VStack {
-//
-//
-//                    Text("first let's")
-//                        .font(.system(size: 15, weight: .light))
-//                        .italic()
-//                        .fontWeight(.light)
-//                        .foregroundColor(ColorManager .grey1)
-//                        .multilineTextAlignment(.center)
-//
-//
-//                    NavigationLink(
-//                        destination: BreathInView(),
-//                        label: {
-//                            Text("Breathe")
-//                                .fontWeight(.thin)
-//                                .frame(width: 275, height: 40)
-//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                .font(.system(size: 30))
-//                                .background(ColorManager.pmbc_blue)
-//                                .cornerRadius(15)
-//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        })
-//
-//                    Spacer()
-//                        .frame(height: 60)
-//
-////                    Image(systemName: "circle.fill")
-////                        .resizable()
-////                        .foregroundColor(Color.orange)
-////                        .frame(width: 400, height: 400)
-////                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-////                        .opacity(0.95)
-//
-//                    Text("remember")
-//                        .font(.system(size: 15, weight: .light))
-//                        .italic()
-//                        .fontWeight(.light)
-//                        .foregroundColor(ColorManager .grey1)
-//                        .multilineTextAlignment(.center)
-//
-//                    Text("Sharp words erase all the nice words you've ever said.")
-//                        .fontWeight(.light)
-//                        .foregroundColor(Color.white)
-//                        .italic()
-//                        .multilineTextAlignment(.center)
-//                        .frame(width: 300, height: 80, alignment: .leading)
-//                        .font(.system(size: 25))
-//                        .padding(10)
-//                        .background(Color.orange)
-//                        .cornerRadius(25)
-//                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-//
-//                }
-//
-//                Spacer()
-//                    .frame(height: 30)
-//
-//                Text("believe")
-//                    .font(.system(size: 15, weight: .light))
-//                    .italic()
-//                    .fontWeight(.light)
-//                    .foregroundColor(ColorManager .grey1)
-//                    .multilineTextAlignment(.center)
-//
-//                Text("You were best friends before and you will be again!")
-//                    .fontWeight(.light)
-//                    .foregroundColor(Color.white)
-//                    .italic()
-//                    .multilineTextAlignment(.center)
-//                    .frame(width: 300, height: 80, alignment: .leading)
-//                    .font(.system(size: 25))
-//                    .padding(10)
-//                    .background(Color.orange)
-//                    .cornerRadius(25)
-//                    .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-//
-//
-//                Spacer()
-//                    .frame(height: 80)
-//
-//
-//
-//                Text("when you're ready to reach out")
-//                    .font(.system(size: 15, weight: .light))
-//                    .italic()
-//                    .fontWeight(.light)
-//                    .foregroundColor(ColorManager .grey1)
-//                    .multilineTextAlignment(.center)
-//
-//                NavigationLink(
-//                    destination: Step2_FightLandingView(user: user, friends: friends),
-//                    label: {
-//                        Text("Let's try to fix this")
-//                            .fontWeight(.thin)
-//                            .frame(width: 310, height: 40)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                            .font(.system(size: 30))
-//                            .background(ColorManager.purple3)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                    })
-//
-//
-//
-//                VStack {
-//
-//
-//                    Spacer()
-//                        .frame(height: 15)
-//
-//                    Button(action: {
-//                        sessionManager.showLogin()
-//                    },
-//                           label: {
-//                        Image("home-alt2")
-//                            .frame(width: 50, height: 25)
-//                            .foregroundColor(.white)
-//                            .font(.system(size: 20))
-//                            .background(ColorManager .grey3)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                            .opacity(0.70)
-//
-//                    })
-//
-//                }
-//            }
-//
-//        }
-//    }
-//
-//}
-//
 

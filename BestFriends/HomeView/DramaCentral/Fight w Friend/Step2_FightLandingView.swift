@@ -18,6 +18,9 @@ struct Step2_FightLandingView: View {
     let user: User
     let friends: [User]
     
+    
+  
+    
     @State private var selectedFriends: [String] = []
     @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
     @State private var shareColor = ColorManager.purple5
