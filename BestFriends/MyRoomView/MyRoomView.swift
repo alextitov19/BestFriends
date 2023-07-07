@@ -454,6 +454,23 @@ struct MyRoomView: View {
                             
                         })
                     
+                   
+                    
+                    NavigationLink(
+                        
+                        destination: InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
+                        label: {
+                            Text("Invite Friends")
+                                .fontWeight(.light)
+                                .foregroundColor(Color.white)
+                                .frame(width: 150, height: 27)
+                                .font(.system(size: 22))
+                                .background(Color.purple)
+                                .cornerRadius(10)
+                                .opacity(0.4)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            
+                        })
                     
                     
                     NavigationLink(
@@ -471,6 +488,7 @@ struct MyRoomView: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             
                         })
+                    
                     
 //                    NavigationLink(
 //
