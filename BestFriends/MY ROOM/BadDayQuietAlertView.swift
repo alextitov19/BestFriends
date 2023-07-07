@@ -133,7 +133,7 @@ struct BadDayQuietAlertView: View {
 
                     Text("Send TalkCoupon to ...")
                         .font(.system(size: 17))
-                        .fontWeight(.ultraLight)
+                        .fontWeight(.light)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
             

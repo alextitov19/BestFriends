@@ -176,7 +176,7 @@ struct Step2_FightLandingView: View {
                             .font(.system(size: 15, weight: .bold))
                             .italic()
                             .fontWeight(.regular)
-                            .foregroundColor(ColorManager .grey2)
+                            .foregroundColor(Color.white)
                         
                         
                         Spacer()
@@ -338,7 +338,7 @@ struct Step2_FightLandingView: View {
                                 destination: BadDayQuietAlertView(user: user, friends: friends),
                                 label: {
                                     Text("Redeem a 'TalkCoupon'")
-                                        .fontWeight(.thin)
+                                        .fontWeight(.light)
                                         .foregroundColor(Color.white)
                                         .frame(width: 310, height: 40)
                                         .font(.system(size: 27))
