@@ -28,7 +28,7 @@ struct InfoHowChatWorks: View {
                 .onAppear()
             
             VStack {
-
+                
                 Text("Sharing your life with your BFFs in")
                     .font(.system(size: 23, weight: .bold))
                     .foregroundColor(ColorManager .grey1)
@@ -62,95 +62,102 @@ struct InfoHowChatWorks: View {
                     
                     VStack {
                         
-                     
+                        
                         
                     }
+                    
+                    Image(systemName: "circle.fill")
+                        .resizable()
+                        .foregroundColor(Color.purple)
+                        .frame(width: 450, height: 450)
+                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+                        .opacity(0.95)
+                    
+                    
+                    VStack {
                         
-                        Image(systemName: "circle.fill")
-                            .resizable()
-                            .foregroundColor(Color.purple)
-                            .frame(width: 400, height: 400)
-                            .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                            .opacity(0.95)
                         
+                        Spacer()
+                            .frame(height: 10)
                         
+                        Text("Smile")
+                            .font(.system(size: 30, weight: .bold))
+                            .foregroundColor(Color .white)
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            .opacity(0.50)
+                            .multilineTextAlignment(.center)
+                        
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        Text("- your friends are here waiting for you \neven on difficult days")
+                            .font(.system(size: 17, weight: .bold))
+                            .foregroundColor(Color.white)
+                            .opacity(0.50)
+                            .multilineTextAlignment(.center)
+                        
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        Text("- a friend blew you a kiss - jump up & catch it")
+                            .font(.system(size: 17, weight: .bold))
+                            .foregroundColor(Color.white)
+                            .opacity(0.50)
+                            .multilineTextAlignment(.center)
+                        
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        Text("- grab your HUG \n'litterely' touching your heart")
+                            .font(.system(size: 17, weight: .bold))
+                            .foregroundColor(Color.white)
+                            .opacity(0.50)
+                            .multilineTextAlignment(.center)
+                       
                         VStack {
                         
-                            
+                    
+                        
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        Text("- open a Friendship Gift")
+                            .font(.system(size: 17, weight: .bold))
+                            .foregroundColor(Color.white)
+                            .opacity(0.50)
+                            .multilineTextAlignment(.center)
+                      
                             Spacer()
                                 .frame(height: 10)
                             
-                            Text("Do you want to know?")
-                                .font(.system(size: 23, weight: .bold))
-                                .foregroundColor(Color .white)
-                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                .opacity(0.50)
-                                .multilineTextAlignment(.center)
-                            
-                            Spacer()
-                                .frame(height: 10)
-                            
-                            Text("- on a bad day that your friends are here for you")
+                            Text("- shake your phone - see a Friendship pic")
                                 .font(.system(size: 17, weight: .bold))
-                                .foregroundColor(ColorManager .grey1)
+                                .foregroundColor(Color.white)
                                 .opacity(0.50)
                                 .multilineTextAlignment(.center)
                             
                             Spacer()
                                 .frame(height: 10)
                             
-                            Text("- when a friend is ready to talk after a fight")
+                            Text("- we even let you know when a friend is \nready to talk after a fight")
                                 .font(.system(size: 17, weight: .bold))
-                                .foregroundColor(ColorManager .grey1)
+                                .foregroundColor(Color.white)
                                 .opacity(0.50)
                                 .multilineTextAlignment(.center)
                             
-                            Spacer()
-                                .frame(height: 10)
                             
-                            Text("- when a friend sends you a gift")
-                                .font(.system(size: 17, weight: .bold))
-                                .foregroundColor(ColorManager .grey1)
-                                .opacity(0.50)
-                                .multilineTextAlignment(.center)
-                            
-                            Spacer()
-                                .frame(height: 10)
-                            
-                            Text("- when a special image is just a 'phone shake' away")
-                                .font(.system(size: 17, weight: .bold))
-                                .foregroundColor(ColorManager .grey1)
-                                .opacity(0.50)
-                                .multilineTextAlignment(.center)
-                            
-                  
-                            
-                            
-//                            Text("ALLOW NOTIFICATIONS")
-//                                .font(.system(size: 19, weight: .bold))
-//                                .foregroundColor(Color .white)
-//                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                .opacity(0.50)
-//                                .multilineTextAlignment(.center)
+                            //                            Text("ALLOW NOTIFICATIONS")
+                            //                                .font(.system(size: 19, weight: .bold))
+                            //                                .foregroundColor(Color .white)
+                            //                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            //                                .opacity(0.50)
+                            //                                .multilineTextAlignment(.center)
                         }
                     }
                     
-                    Spacer()
-                        .frame(height: 10)
+                 
                     
-                    
-                   
-                
-                Spacer()
-                    .frame(height: 10)
-                    
-                Text("(in-app notifications are always on)")
-                    .font(.system(size: 15, weight: .thin))
-                    .italic()
-                    .foregroundColor(Color.white)
-                //                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    .opacity(0.8)
-                    .multilineTextAlignment(.center)
+           
                     
                     
                 }
@@ -159,8 +166,8 @@ struct InfoHowChatWorks: View {
         }
     }
     
-
     
+}
 
 
 
