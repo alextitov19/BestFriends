@@ -263,7 +263,7 @@ struct MyRoomView: View {
                 
                 //                 TryThis
                 NavigationLink(destination: InfoHowChatWorks(user: user), label: {
-                MyRoomRowView(title: "Real-time Friendships", imageName: "star", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                MyRoomRowView(title: "Real-time Friendships", imageName: "star", backgroundColor: ColorManager.purple1.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
             })
                 
                 HStack {
@@ -473,7 +473,7 @@ struct MyRoomView: View {
                         })
                     
 //                    NavigationLink(
-//                        
+//
 //                        destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
 //                        label: {
 //                            Text("Walk-through")
@@ -485,7 +485,7 @@ struct MyRoomView: View {
 //                                .cornerRadius(10)
 //                                .opacity(0.4)
 //                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                            
+//
 //                        })
                     
                     
