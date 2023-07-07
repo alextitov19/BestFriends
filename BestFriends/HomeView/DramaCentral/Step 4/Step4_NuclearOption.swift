@@ -145,7 +145,7 @@ struct Step4_NuclearOption: View {
                     NavigationLink(destination: EmptyView(), label: {
                         HugCircle (color: ColorManager .grey3, friendName: "sharp words \nerase all the nice words \nyou've ever said")
                     })
-                    .offset(x: showItems ? 100 : 0, y: showItems ? 100: 0)
+                    .offset(x: showItems ? 120 : 0, y: showItems ? 100: 0)
                     //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
                     .opacity(0.6)
                     
@@ -182,7 +182,7 @@ struct Step4_NuclearOption: View {
                             
                             
                             Text("TAP")
-                                .font(.system(size: 25, weight: .light))
+                                .font(.system(size: 30, weight: .light))
                             //                            .italic()
                                 .fontWeight(.light)
                                 .foregroundColor(ColorManager .grey4)
