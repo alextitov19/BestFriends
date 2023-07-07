@@ -102,59 +102,33 @@ struct Step2_FightLandingView: View {
 //                        .foregroundColor(ColorManager .grey1)
 //                        .multilineTextAlignment(.center)
 //
+    
                     
-                    Link(destination: URL(string: "https://socialtechlabs.com/understanding-the-why/")!) {
-                        
-                        Text("Taking a hard look \nat this relationship")
-                            .fontWeight(.thin)
-                            .frame(width: 300, height: 80)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 26))
-                            .background(ColorManager.grey3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
-                    }
-                    Spacer()
-                        .frame(height: 40)
-                    
-                    Text("Decided you want to")
-                        .font(.system(size: 20, weight: .thin))
+                    Text("Ready to reach out by")
+                        .font(.system(size: 20, weight: .light))
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     
                     
-                    Text("try to fix this - send a message in Chat")
-                        .font(.system(size: 20, weight: .thin))
+                    Text("sending a message in Chat")
+                        .font(.system(size: 20, weight: .light))
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     
-                    
-                    VStack {
-                    
-                        
-                        Button(action: {
-                            sessionManager.showLogin()
-                        },
-                               label: {
-                            Image("home-alt2")
-                                .frame(width: 50, height: 25)
-                                .foregroundColor(.white)
-                                .font(.system(size: 20))
-                                .background(ColorManager .grey1)
+                    Button(action: {
+                        sessionManager.showLogin()
+                    },
+                        label: {
+                            Text("Home / Chat")
+                                .fontWeight(.thin)
+                                .frame(width: 200, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 30))
+                                .background(ColorManager.purple3)
                                 .cornerRadius(15)
-                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                .opacity(0.70)
-                            
-                            
-                            
-                            
-                            
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
-                    }
-                    
-                
-                    
+
                     Link(destination: URL(string: "https://socialtechlabs.com/applink/")!) {
                         
                         Text("")
@@ -169,14 +143,14 @@ struct Step2_FightLandingView: View {
                     }
                     
                     Spacer()
-                        .frame(height: 25)
+                        .frame(height: 50)
                     VStack {
                         
                         
                         
                         
                         Text("Let's make sure they get your message")
-                            .font(.system(size: 15, weight: .bold))
+                            .font(.system(size: 15, weight: .light))
                             .italic()
                             .fontWeight(.regular)
                             .foregroundColor(Color.white)
@@ -312,7 +286,7 @@ struct Step2_FightLandingView: View {
                         VStack {
                             
                             Spacer()
-                                .frame(height: 20)
+                                .frame(height: 50)
                             
                             //88888888888888888888888888888888888888888888888888
                             
@@ -320,18 +294,18 @@ struct Step2_FightLandingView: View {
                             
                             
                             //                            this the link to Friendship Highlights ***************
-                            Text("Ugggg, now the hellish")
-                                .font(.system(size: 20))
-                                .fontWeight(.light)
-                                .foregroundColor(Color.white)
+                            Text("Now the hellish")
+                                .font(.system(size: 20, weight: .light))
+                                .foregroundColor(ColorManager .grey1)
+                                .multilineTextAlignment(.center)
                             
                             Text("'waiting-to-hear-back' begins")
-                                .font(.system(size: 20))
-                                .fontWeight(.light)
-                                .foregroundColor(Color.white)
+                                .font(.system(size: 20, weight: .light))
+                                .foregroundColor(ColorManager .grey1)
+                                .multilineTextAlignment(.center)
                             
-                            Text("-or-")
-                                .font(.system(size: 25, weight: .bold))
+                            Text("-Try sending a")
+                                .font(.system(size: 22, weight: .bold))
                                 .italic()
                                 .fontWeight(.regular)
                                 .foregroundColor(Color.white)
@@ -340,42 +314,42 @@ struct Step2_FightLandingView: View {
                             NavigationLink(
                                 destination: BadDayQuietAlertView(user: user, friends: friends),
                                 label: {
-                                    Text("Redeem a 'TalkCoupon'")
-                                        .fontWeight(.light)
+                                    Text("TalkCoupon")
+                                        .fontWeight(.thin)
                                         .foregroundColor(Color.white)
-                                        .frame(width: 310, height: 40)
-                                        .font(.system(size: 27))
+                                        .frame(width: 200, height: 60)
+                                        .font(.system(size: 30))
                                         .background(Color.purple)
-                                        .opacity(0.85)
+                                        .opacity(0.95)
                                         .cornerRadius(15)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 }
                                 
                             )}
                         
-//                        VStack {
-//                            Spacer()
-//                                .frame(height: 20)
-//
-//                            Button(action: {
-//                                sessionManager.showLogin()
-//                            },
-//                                   label: {
-//                                Image("home-alt2")
-//                                    .frame(width: 50, height: 25)
-//                                    .foregroundColor(.white)
-//                                    .font(.system(size: 20))
-//                                    .background(ColorManager .grey1)
-//                                    .cornerRadius(15)
-//                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                                    .opacity(0.70)
-//
-//
-//
-//
-//
-//                            })
-//                        }
+                        VStack {
+                            Spacer()
+                                .frame(height: 20)
+
+                            Button(action: {
+                                sessionManager.showLogin()
+                            },
+                                   label: {
+                                Image("home-alt2")
+                                    .frame(width: 50, height: 25)
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 20))
+                                    .background(ColorManager .grey1)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                    .opacity(0.70)
+
+
+
+
+
+                            })
+                        }
                         
                     }
                     

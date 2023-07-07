@@ -100,8 +100,7 @@ struct BadDayQuietAlertView: View {
                                         .font(.system(size: 45, weight: .light))
                                         .foregroundColor(ColorManager .grey2)
                                  
-//                                    Text("When you Register for BestFriends you grant each of your friends ONE 'TalkCoupon'. This coupon may be redeamed at any time after a huge fight giving everyone on BestFriends ONE last time to become friends again. In good faith, 'TalkCoupons' should be honored.")
-                                    
+            
                                     Text("Gives everyone a last chance \nto try to work things out. \n\nIn good faith, \n'TalkCoupons' should be honored by all.")
                                         .font(.system(size: 17, weight: .light))
                                         .italic()
@@ -263,7 +262,8 @@ struct BadDayQuietAlertView: View {
 
                         
                         VStack {
-                            
+                            Spacer()
+                                .frame(height: 20)
                             
                             Button(action: {
                                 sessionManager.showLogin()

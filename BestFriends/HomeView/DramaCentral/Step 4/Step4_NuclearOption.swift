@@ -52,7 +52,7 @@ struct Step4_NuclearOption: View {
                     NavigationLink(destination: Step2_FightLandingView(user: user, friends: friends), label: {
                         HugCircle (color: Color.purple, friendName: "When \nyou're ready to \nreach out to try to fix this \n\nTAP Here...")
                     })
-                    .offset(x: showItems ? 20 : 0, y: showItems ? 120: 0)
+                    .offset(x: showItems ? 20 : 0, y: showItems ? 50: 0)
                     .shadow(color: ColorManager .purple1, radius: 30, x: 10, y: 10)
 //                    .opacity(0.6)
                     .opacity(0.8)
@@ -119,7 +119,7 @@ struct Step4_NuclearOption: View {
                 
                     
                 NavigationLink(destination: EmptyView(), label: {
-                    HugCircle (color: ColorManager .grey3, friendName: "The hardest part \nof letting go is realizing \nthe other person already did")
+                    HugCircle (color: ColorManager .grey3, friendName: "The hardest part of letting go \nis realizing the other \nperson already did")
                 })
                 .offset(x: showItems ? 300 : 0, y: showItems ? 600: 0)
                 //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
@@ -166,7 +166,7 @@ struct Step4_NuclearOption: View {
                         
                         Image(systemName: "circle.fill")
                             .resizable()
-                            .foregroundColor(ColorManager .purple1)
+                            .foregroundColor(Color.purple)
                             .frame(width: 90, height: 90)
                         //                    .blur(radius: 2)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
@@ -193,6 +193,22 @@ struct Step4_NuclearOption: View {
                         
                         VStack {
 
+                            
+                            Link(destination: URL(string: "https://socialtechlabs.com/understanding-the-why/")!) {
+                                
+                                Text("Taking a hard look \nat this relationship")
+                                    .fontWeight(.thin)
+                                    .frame(width: 300, height: 80)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 26))
+                                    .background(ColorManager.grey3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                            }
+                            Spacer()
+                                .frame(height: 40)
+                            
                             Spacer ()
                                 .frame(height: 200)
 
@@ -233,7 +249,7 @@ struct Step4_NuclearOption: View {
 
                     Text(friendName)
 //                        .fontWeight(.light)
-                        .font(.system(size: 13, weight: .light))
+                        .font(.system(size: 15, weight: .light))
                         .italic()
                         .foregroundColor(.white)
 
