@@ -70,7 +70,7 @@ struct Step4_NuclearOption: View {
                 NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
                             HugCircle (color: ColorManager .purple5, friendName: "ask \nfriends for \n CareHearts \n\nTAP Here...")
                         })
-                        .offset(x: showItems ? 130 : 0, y: showItems ? -100: 0)
+                        .offset(x: showItems ? 130 : 0, y: showItems ? -300: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
                         .opacity(0.9)
                 
@@ -112,7 +112,7 @@ struct Step4_NuclearOption: View {
                     NavigationLink(destination: EmptyView(), label: {
                         HugCircle (color: ColorManager .grey3, friendName: "Sometimes your heart \nneeds more time to accept what \nyou mind already knows")
                     })
-                    .offset(x: showItems ? -300 : 0, y: showItems ? 325: 0)
+                    .offset(x: showItems ? -400 : 0, y: showItems ? 400: 0)
                     //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
                     .opacity(0.9)
                     
@@ -121,9 +121,9 @@ struct Step4_NuclearOption: View {
                 NavigationLink(destination: EmptyView(), label: {
                     HugCircle (color: ColorManager .grey3, friendName: "The hardest part of letting go \nis realizing the other \nperson already did")
                 })
-                .offset(x: showItems ? 300 : 0, y: showItems ? 600: 0)
+                .offset(x: showItems ? -400 : 0, y: showItems ? -600: 0)
                 //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-                .opacity(0.75)
+                .opacity(0.6)
                 
                 
 //                NavigationLink(destination: EmptyView(), label: {
@@ -145,20 +145,20 @@ struct Step4_NuclearOption: View {
                     NavigationLink(destination: EmptyView(), label: {
                         HugCircle (color: ColorManager .grey3, friendName: "sharp words \nerase all the nice words \nyou've ever said")
                     })
-                    .offset(x: showItems ? -400 : 0, y: showItems ? 100: 0)
+                    .offset(x: showItems ? 100 : 0, y: showItems ? 100: 0)
                     //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-                    .opacity(0.9)
+                    .opacity(0.6)
                     
                     NavigationLink(destination: EmptyView(), label: {
                         HugCircle (color: ColorManager .grey3, friendName: "Never allow someone \nto be your prioity while \nyou are their option")
                     })
-                    .offset(x: showItems ? 90 : 0, y: showItems ? 470: 0)
+                    .offset(x: showItems ? -130 : 0, y: showItems ? 310: 0)
                     //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-                    .opacity(0.9)
+                    .opacity(0.7)
                     
 
                     Spacer ()
-                        .frame(height: 0)
+                        .frame(height: 15)
                     
                     ZStack {
                         
