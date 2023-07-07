@@ -263,7 +263,7 @@ struct MyRoomView: View {
                 
                 //                 TryThis
                 NavigationLink(destination: InfoHowChatWorks(user: user), label: {
-                MyRoomRowView(title: "What you get", imageName: "star", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                MyRoomRowView(title: "What you get", imageName: "star", backgroundColor: ColorManager.purple7.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
             })
                 
                 HStack {
@@ -422,21 +422,21 @@ struct MyRoomView: View {
 //
 //                        })
                     
-                    NavigationLink(
-                        
-                        destination: InfoHowChatWorks(user: user),
-                        label: {
-                            Text("Keeping Notifications 'ON'")
-                                .fontWeight(.light)
-                                .foregroundColor(Color.white)
-                                .frame(width: 260, height: 27)
-                                .font(.system(size: 20))
-                                .background(Color.purple)
-                                .cornerRadius(10)
-                                .opacity(0.4)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                        })
+//                    NavigationLink(
+//
+//                        destination: InfoHowChatWorks(user: user),
+//                        label: {
+//                            Text("Keeping Notifications 'ON'")
+//                                .fontWeight(.light)
+//                                .foregroundColor(Color.white)
+//                                .frame(width: 260, height: 27)
+//                                .font(.system(size: 20))
+//                                .background(Color.purple)
+//                                .cornerRadius(10)
+//                                .opacity(0.4)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                        })
                     
                     
                     

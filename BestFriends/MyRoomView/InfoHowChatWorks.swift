@@ -28,30 +28,37 @@ struct InfoHowChatWorks: View {
                 .onAppear()
             
             VStack {
-//                Text("Building superior FriendGroups!")
-//                    .font(.system(size: 20, weight: .thin))
-//                    .foregroundColor(Color.white)
-//                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                    .opacity(0.8)
-//                    .multilineTextAlignment(.center)
+
                 Text("Sharing your life with your BFFs in")
-                    .font(.system(size: 17, weight: .bold))
+                    .font(.system(size: 23, weight: .bold))
                     .foregroundColor(ColorManager .grey1)
                     .opacity(0.50)
                     .multilineTextAlignment(.center)
                 
                 Text("real-time")
-                    .font(.system(size: 23, weight: .bold))
+                    .font(.system(size: 35, weight: .bold))
                     .foregroundColor(Color .white)
                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                     .opacity(0.50)
+                    .multilineTextAlignment(.center)
+                
+                Spacer()
+                    .frame(height: 10)
+                
+                
+                
+                Text("Please 'Allow Notifications' for BestFriends")
+                    .font(.system(size: 13, weight: .thin))
+                    .italic()
+                    .foregroundColor(Color.white)
+                    .opacity(0.8)
                     .multilineTextAlignment(.center)
                 
                 
                 ZStack {
                     
                     Spacer()
-                        .frame(height: 70)
+                        .frame(height: 90)
                     
                     VStack {
                         
@@ -132,21 +139,7 @@ struct InfoHowChatWorks: View {
                         .frame(height: 10)
                     
                     
-                    Text("Please go to 'Settings' on your iPhone ")
-                        .font(.system(size: 20, weight: .thin))
-                        .foregroundColor(Color.white)
-                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                        .opacity(0.8)
-                        .multilineTextAlignment(.center)
-                    
-                    
-                    
-                    Text("and 'Allow Notifications' for BestFriends")
-                        .font(.system(size: 20, weight: .thin))
-                        .foregroundColor(Color.white)
-                    //                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                        .opacity(0.8)
-                        .multilineTextAlignment(.center)
+                   
                 
                 Spacer()
                     .frame(height: 10)
