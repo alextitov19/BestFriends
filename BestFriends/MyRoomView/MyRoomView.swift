@@ -285,11 +285,11 @@ struct MyRoomView: View {
                     })
                     
                     
-                    Text("CareHearts")
+                    Text("< CareHearts >")
                         .fontWeight(.light)
-                        .frame(width: 145, height: 60)
+                        .frame(width: 147, height: 60)
                         .foregroundColor(Color.white)
-                        .font(.system(size: 24))
+                        .font(.system(size: 22))
                         .background(ColorManager .purple3)
                         .opacity(0.6)
                         .cornerRadius(15)
