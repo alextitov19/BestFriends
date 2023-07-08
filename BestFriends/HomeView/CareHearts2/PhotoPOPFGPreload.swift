@@ -51,7 +51,7 @@ struct PhotoPopFGPreload: View {
 //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
-        customMessage = "A coupon from " + user.firstName + " : " + customMessage;
+        customMessage = "Friendship Coupon from " + user.firstName + " : " + customMessage;
         
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
