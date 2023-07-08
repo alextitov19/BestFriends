@@ -73,7 +73,7 @@ struct InviteView: View {
                 NavigationLink(
                     destination: EmptyView(),
                    label: {
-                       Text("Friends show up as planets on homepage \n\nFriend's mood shows as atmosphere around their planet \n\nOnly send ONE friend invite")
+                       Text("Friends show up as planets on homepage \n\nFriend's current 'mood' shows as atmosphere around their planet \n\nPlease send only ONE friend invite")
                            .fontWeight(.thin)
                            .frame(width: 300, height: 100)
                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
