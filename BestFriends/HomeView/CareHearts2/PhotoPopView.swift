@@ -41,7 +41,7 @@ struct PhotoPopView: View {
             
             
             ColorManager.purple7
-                .opacity(0.6)
+//                .opacity(0.9)
                 .ignoresSafeArea()
             //            Color .purple
                 .ignoresSafeArea()
@@ -60,61 +60,66 @@ struct PhotoPopView: View {
             
             VStack {
                 
+//
+//                Button(action: {
+//                    sessionManager.showLogin()
+//                },
+//                       label: {
+//                    Image("home-alt2")
+//                        .frame(width: 50, height: 25)
+//                        .foregroundColor(.white)
+//                        .font(.system(size: 20))
+//                        .background(ColorManager .grey2)
+//                        .cornerRadius(15)
+//                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                        .opacity(0.70)
+//
+//                })
                 
-                Button(action: {
-                    sessionManager.showLogin()
-                },
-                       label: {
-                    Image("home-alt2")
-                        .frame(width: 50, height: 25)
-                        .foregroundColor(.white)
-                        .font(.system(size: 20))
-                        .background(ColorManager .grey2)
-                        .cornerRadius(15)
-                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                        .opacity(0.70)
-                    
-                })
-                
-                Text("PhotoPOP")
-                    .font(.system(size: 35, weight: .bold))
+                Text("Shaking PhotoPOP")
+                    .font(.system(size: 30, weight: .bold))
                     .foregroundColor(ColorManager .grey1)
                     .shadow(color: .purple, radius: 1, x: 0, y: 1)
                     .opacity(0.50)
                     .multilineTextAlignment(.center)
                 
-                Text("shake iPhone to view image")
-                    .italic()
-                    .font(.system(size: 17, weight: .regular))
-                    .foregroundColor(ColorManager .grey1)
+//                Text("shake iPhone to view image")
+//                    .italic()
+//                    .font(.system(size: 17, weight: .regular))
+//                    .foregroundColor(ColorManager .grey1)
               
-                    NavigationLink(
-                        destination: PhotoPop3(user: user, friends: friends),
-                        label: {
-                            Text("Alert frinds you \nsent PhotoPop")
-                                .fontWeight(.thin)
-                                .frame(width: 220, height: 50)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 18.5))
-                                .background(ColorManager.purple4)
-                                .cornerRadius(10)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
                     
-                    
-                Text("Send ONE image at a time - deleting the preious image first. \nSend friend push notification asking them to shake their phone. \nImage pops up full-screen on their phone.")
+                NavigationLink(
+                    destination: PhotoPop3(user: user, friends: friends),
+                    label: {
+                        Text("INSTRUCTIONS \n\n- DELETE the existing image first - then add new image \n\n- Can only have ONE active image at a time \n\n- Lastly, alert frind to 'shake' phone")
+                            .fontWeight(.thin)
+                            .frame(width: 300, height: 120)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 10))
+                            .background(ColorManager.grey4)
+                            .cornerRadius(10)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
+                
+                Text("(if get 'loading' icon - exit feature & return)")
+                    .foregroundColor(Color.red)
+                    .italic()
                     .font(.system(size: 12, weight: .light))
-                    .foregroundColor(Color.white)
-                    .opacity(0.50)
-                    .multilineTextAlignment(.center)
-//                    .padding(30)
-                   
+//                    .opacity(0.7)
                 
-                Text("If get loading icon - exit page and return")
-                    .font(.system(size: 14, weight: .light))
-//                        .italic()
-                    .foregroundColor(.red)
-                
+                NavigationLink(
+                    destination: PhotoPop3(user: user, friends: friends),
+                    label: {
+                        Text("Send Push Notificaion _ TAP")
+                            .fontWeight(.thin)
+                            .frame(width: 300, height: 50)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 18.5))
+                            .background(ColorManager.purple4)
+                            .cornerRadius(10)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
                 
 //                    Spacer()
 //                        .frame(height: 7)

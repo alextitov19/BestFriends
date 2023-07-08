@@ -454,11 +454,11 @@ struct MyRoomView: View {
                             
                         })
                     
-                   
+//                    InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups
                     
                     NavigationLink(
                         
-                        destination: InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
+                        destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
                         label: {
                             Text("Invite Friends")
                                 .fontWeight(.light)
