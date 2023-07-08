@@ -51,25 +51,34 @@ struct PhotoPopFGPreload: View {
 //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
+        customMessage = "A coupon from " + user.firstName + " : " + customMessage;
+        
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
+            var found = false;
             for g in groups {
                 if g.members.containsSameElements(as: arr) {
                     // Send chat message to this existing group
                     RestApi.instance.createChatMessage(groupId: g.id, body: customMessage).then({ response in
                         sessionManager.showChat(user: user, group: g)
                     })
-                    
-                    return
+                    found = true;
+                    break;
                 }
             }
             
             // Create new group
-            RestApi.instance.createGroup(name: "\(user.firstName), \(friend.firstName)", members: arr).then { responseGroup in
-                // Send chat message to this group
-                RestApi.instance.createChatMessage(groupId: responseGroup.id, body: customMessage).then({ response in
-                    sessionManager.showChat(user: user, group: responseGroup)
-                })
+            if found == false {
+                for f in friends {
+                    if f.id == friendID {
+                        RestApi.instance.createGroup(name: "\(user.firstName), \(f.firstName)", members: arr).then { responseGroup in
+                            // Send chat message to this group
+                            RestApi.instance.createChatMessage(groupId: responseGroup.id, body: customMessage).then({ response in
+                                                    sessionManager.showChat(user: user, group: responseGroup)
+                            })
+                        }
+                    }
+                }
             }
         }
     }
@@ -195,20 +204,20 @@ struct PhotoPopFGPreload: View {
                     VStack {
                      
                       
-                        Button(action: {
-                            sendMessage()
-                        }, label: {
-                            Text("Send")
-                                .fontWeight(.thin)
-                                .frame(width: 150, height: 40)
-        //                       .foregroundColor(.white)
-                                .font(.system(size: 25))
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .background(ColorManager.purple3)
-                                .opacity(0.7)
-                                .cornerRadius(10)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
+//                        Button(action: {
+//                            sendMessage()
+//                        }, label: {
+//                            Text("Send")
+//                                .fontWeight(.thin)
+//                                .frame(width: 150, height: 40)
+//        //                       .foregroundColor(.white)
+//                                .font(.system(size: 25))
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .background(ColorManager.purple3)
+//                                .opacity(0.7)
+//                                .cornerRadius(10)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        })
                         
                             Spacer()
                                 .frame(height: 10)
@@ -330,6 +339,7 @@ struct PhotoPopFGPreload: View {
                             counter += 1
                             shareTapped = true
                             shareButtonTapped()
+                            sendMessage()
                         },
                                label: {
                             Text("SHARE")
