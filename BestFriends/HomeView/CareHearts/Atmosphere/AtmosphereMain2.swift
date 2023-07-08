@@ -99,7 +99,7 @@ struct AtmosphereMain2: View {
                         
                         NavigationLink(destination: EmptyView(),
                                        label: {
-                            Text("Maybe your just a little down today. Or, maybe something bad happened, but your just not ready to talk about it yet. Meanwhile you sit alone without your friends emotional support. \n\nWe'll send them a notification asking for CareHearts while letting them know you need a little more time.")
+                            Text("Maybe you're just a little down today. Or, maybe something bad happened, but your just not ready to talk about it yet. Meanwhile you sit alone without your friends emotional support. \n\nWe'll send them a notification asking for CareHearts while letting them know you need a little more time.")
                                 .fontWeight(.thin)
                                 .frame(width: 330, height: 140)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
