@@ -75,7 +75,7 @@ struct INFOPreloadA: View {
                     
                     Image(systemName: "circle.fill")
                         .resizable()
-                        .foregroundColor(Color.orange)
+                        .foregroundColor(Color.purple)
                         .frame(width: 400, height: 400)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
@@ -83,14 +83,14 @@ struct INFOPreloadA: View {
                         Text("Wondering what your")
                                                 .font(.system(size: 37))
                     
-                                                .foregroundColor(ColorManager .grey3)
+                                                .foregroundColor(ColorManager .grey4)
                                                 .fontWeight(.thin)
                                                 .multilineTextAlignment(.center)
 
                         Text("friends are doing?")
                                                 .font(.system(size: 40))
                     
-                                                .foregroundColor(ColorManager .grey3)
+                                                .foregroundColor(ColorManager .grey4)
                                                 .fontWeight(.thin)
                                                 .multilineTextAlignment(.center)
                         
