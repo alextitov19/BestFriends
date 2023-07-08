@@ -37,22 +37,22 @@ struct InviteView: View {
             VStack {
                 
                 Spacer()
-                    .frame(height: 40)
+                    .frame(height: 10)
                 
-                Button(action: {
-                                             sessionManager.showLogin()
-                                         },
-                                             label: {
-                                             Image("home-alt2")
-                                                 .frame(width: 50, height: 25)
-                                                 .foregroundColor(.white)
-                                                 .font(.system(size: 20))
-                                                 .background(ColorManager .grey2)
-                                                 .cornerRadius(15)
-                                                 .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                                 .opacity(0.70)
-                                             
-                                         })
+//                Button(action: {
+//                                             sessionManager.showLogin()
+//                                         },
+//                                             label: {
+//                                             Image("home-alt2")
+//                                                 .frame(width: 50, height: 25)
+//                                                 .foregroundColor(.white)
+//                                                 .font(.system(size: 20))
+//                                                 .background(ColorManager .grey2)
+//                                                 .cornerRadius(15)
+//                                                 .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                                                 .opacity(0.70)
+//
+//                                         })
                 
                 
                 Text("Add 5 Friends")
@@ -67,12 +67,27 @@ struct InviteView: View {
 //                    .foregroundColor(.green)
 //                    .font(.system(size: 27, weight: .light))
                 
+           
+                
+                
+                NavigationLink(
+                    destination: EmptyView(),
+                   label: {
+                       Text("Friends show up as planets on homepage \n\nFriend's mood shows as atmosphere around their planet \n\nOnly send ONE friend invite")
+                           .fontWeight(.thin)
+                           .frame(width: 300, height: 100)
+                           .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                           .font(.system(size: 13))
+                           .background(ColorManager.grey3)
+                           .cornerRadius(10)
+                           .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                   })
                 NavigationLink(
                     destination: WhyFiveFriends(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
                    label: {
                        Text("Why only 5 BFFs to start?")
                            .fontWeight(.thin)
-                           .frame(width: 290, height: 40)
+                           .frame(width: 300, height: 40)
                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                            .font(.system(size: 25))
                            .background(Color.orange)
@@ -80,18 +95,15 @@ struct InviteView: View {
                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                    })
                 
-                
-                
-                
-                Text("(Friends show up as planets on homepage)")
-                    .italic()
-                    .foregroundColor(ColorManager .grey2)
-                    .font(.system(size: 15, weight: .light))
+//                Text("(Friends show up as planets on homepage)")
+//                    .italic()
+//                    .foregroundColor(ColorManager .grey2)
+//                    .font(.system(size: 15, weight: .light))
                 
                 Spacer()
                     .frame(height: 10)
               
-                Text("Enter friends email (case sensitive")
+                Text("Enter friends email (case sensitive)")
                     .fontWeight(.thin)
                     .foregroundColor(.white)
                     .italic()
@@ -130,7 +142,7 @@ struct InviteView: View {
 //                                .italic()
 //                                .font(.system(size: 17))
                             Spacer()
-                                .frame(height: 40)
+                                .frame(height: 20)
                             
                             Text("Accepting Friend Requests")
                                 .foregroundColor(ColorManager .purple3)

@@ -136,8 +136,8 @@ struct SaySomethingNice6: View {
                             }
                  
 //
-//                            Spacer()
-//                                .frame(height: 200)
+                            Spacer()
+                                .frame(height: 100)
                             
                             
                         }
