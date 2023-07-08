@@ -28,24 +28,22 @@ struct HurtFeelings: View {
 
         ZStack {
             
-            ColorManager.purple7
-                .opacity(0.6)
-                .ignoresSafeArea()
-                
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-
+//            ColorManager.purple7
+//                .opacity(0.6)
+//                .ignoresSafeArea()
 //
-//                        Color .black
-//                            .ignoresSafeArea()
-//                            .onAppear()
-//                            .scaledToFill()
-
 //            AdPlayerView(name: "sky2")
 //                .ignoresSafeArea()
 //                .blendMode(.screen)
 
+            Image("KellyBackground 1")
+                .ignoresSafeArea()
+                .scaledToFit()
+
+                
+            AdPlayerView(name: "Galaxy2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
 
             ZStack{
 
@@ -157,7 +155,7 @@ struct HurtFeelings: View {
                         Image(systemName: "heart.fill")
                             .resizable()
                             .foregroundColor(ColorManager .purple1)
-                            .frame(width: 250, height: 200)
+                            .frame(width: 130, height: 100)
                         //                    .blur(radius: 2)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
                             .opacity(0.70)
