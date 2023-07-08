@@ -92,7 +92,7 @@ struct PhotoPopView: View {
                 NavigationLink(
                     destination: PhotoPop3(user: user, friends: friends),
                     label: {
-                        Text("INSTRUCTIONS \n\n- DELETE the existing image first - then add new image \n\n- Can only have ONE active image at a time \n\n- Lastly, alert frind to 'shake' phone")
+                        Text("INSTRUCTIONS \n\n- 1st, DELETE existing image by tapping it - then ADD new image \n\n- Can only have ONE active image at a time \n\n- Lastly, alert frind to 'shake' iPhone")
                             .fontWeight(.thin)
                             .frame(width: 300, height: 120)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
