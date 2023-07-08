@@ -47,7 +47,7 @@ struct InfoHowChatWorks: View {
                 
                 
                 
-                Text("Please 'Allow Notifications' for BestFriends")
+                Text("Please turn Notifications 'ON' for BestFriends")
                     .font(.system(size: 13, weight: .thin))
                     .italic()
                     .foregroundColor(Color.white)
@@ -90,7 +90,7 @@ struct InfoHowChatWorks: View {
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("- your friends are here waiting for you \neven on difficult days")
+                        Text("- your friends are here waiting for you")
                             .font(.system(size: 17, weight: .bold))
                             .foregroundColor(Color.white)
                             .opacity(0.50)
