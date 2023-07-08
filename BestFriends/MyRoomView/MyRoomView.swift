@@ -290,7 +290,7 @@ struct MyRoomView: View {
                         .frame(width: 147, height: 60)
                         .foregroundColor(Color.white)
                         .font(.system(size: 22))
-                        .background(ColorManager .purple3)
+//                        .background(ColorManager .purple7)
                         .opacity(0.6)
                         .cornerRadius(15)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)

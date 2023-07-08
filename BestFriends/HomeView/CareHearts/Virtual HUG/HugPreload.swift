@@ -27,15 +27,22 @@ struct HugPreload: View {
         ZStack {
 
             
-            ColorManager.purple7
-//                .opacity(0.6)
+//            ColorManager.purple7
+////                .opacity(0.6)
+//                .ignoresSafeArea()
+//                
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+
+            Image("KellyBackground 1")
                 .ignoresSafeArea()
+                .scaledToFit()
+
                 
-            AdPlayerView(name: "sky2")
+            AdPlayerView(name: "Galaxy2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-
-
 
 
             ZStack{
