@@ -41,59 +41,53 @@ struct AtmosphereMain2: View {
     
     var body: some View {
         ZStack {
-            ColorManager.purple7
-//                .opacity(0.6)
-                .ignoresSafeArea()
-                
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-
-            
-            
-//            ColorManager .purple3
+//            ColorManager.purple7
+////                .opacity(0.6)
 //                .ignoresSafeArea()
-//              .onAppear()
 //
 //            AdPlayerView(name: "sky2")
 //                .ignoresSafeArea()
+//                .blendMode(.screen)
+
+            Image("KellyBackground 1")
+                .ignoresSafeArea()
+                .scaledToFit()
+
+                
+            AdPlayerView(name: "Galaxy2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+            
+
             
             
             VStack {
-                Spacer()
-                    .frame(height: 30)
+//                Spacer()
+//                    .frame(height: 20)
                 
                 VStack {
-                    
-//                    Text("It's one of those days")
-//                        .font(.system(size: 30))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager .grey2)
-//
-//                    Spacer()
-//                        .frame(height: 7)
-//
-//                    Text("But, you're not quite ready to talk about it yet")
-//                        .font(.system(size: 17))
-//                        .italic()
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager .grey2)
+
                 }
            
                 HStack {
                     VStack {
                         HStack {
-                            
-                            Text("")
-//                              .font(.system(size: 15))
-//                              .fontWeight(.light)
-//                              .multilineTextAlignment(.center)
-//                              .foregroundColor(ColorManager .grey1)
-                            
+                            VStack {
+                                Text("Emotional")
+                                    .font(.system(size: 35))
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(ColorManager .grey3)
+                                Text("Support")
+                                    .font(.system(size: 35))
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(ColorManager .grey3)
+                                
+                            }
                       
                         Spacer ()
+                                .frame(width: 20)
                             
                             Image("FatGuy200")
                                 .resizable()
@@ -102,33 +96,29 @@ struct AtmosphereMain2: View {
                         }
                         Spacer()
                             .frame(height: 35)
-                
-                        Text("I could use some")
-                            .font(.system(size: 25))
-//                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey2)
                         
-                        Text("Emotional Support")
-                            .font(.system(size: 35))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey2)
-                     
+                        NavigationLink(destination: EmptyView(),
+                                       label: {
+                            Text("Maybe your just a little down today. Or, maybe something bad happened, but your just not ready to talk about it yet. Meanwhile you sit alone without your friends emotional support. \n\nWe'll send them a notification asking for CareHearts while letting them know you need a little more time.")
+                                .fontWeight(.thin)
+                                .frame(width: 330, height: 140)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 14))
+                                .background(ColorManager.grey3)
+                                .cornerRadius(10)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            
+                        })
 //
-//                        Text("Please send")
-////                          .italic()
-//                          .font(.system(size: 15))
-//                          .fontWeight(.light)
-//                          .multilineTextAlignment(.center)
-//                          .foregroundColor(ColorManager .grey1)
+//                        Text("I could use some")
+//                            .font(.system(size: 25))
+////                            .italic()
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(ColorManager .grey2)
 //
-//                        Text("CareHearts")
-//                          .font(.system(size: 15))
-//                          .fontWeight(.light)
-//                          .multilineTextAlignment(.center)
-//                          .foregroundColor(ColorManager .grey1)
+
+
                         
                         Button(action: {
                             mood = 0
@@ -456,7 +446,7 @@ struct AtmosphereMain2: View {
     
                     
                     Spacer()
-                        .frame(height: 70)
+                        .frame(height: 30)
                     
                     ZStack {
                 
@@ -467,7 +457,7 @@ struct AtmosphereMain2: View {
                                 .font(.system(size: 17))
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager .grey2)
+                                .foregroundColor(Color.white)
 
                             
                         }
@@ -594,7 +584,7 @@ struct AtmosphereMain2: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your friend(s) were notified. \n\nWatch for Care Hearts from friends.", isPresented: $showingAlert) {
+                                .alert("We just sent your friend(s) a notificaion. \n\nYour emotional support is on it's way.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
@@ -620,110 +610,11 @@ struct AtmosphereMain2: View {
                                 .opacity(0.70)
                             
                         })
-                        
-                        Spacer()
-                            .frame(width: 100)
-//                        
-//                        HStack {
-//
-//                            Text("")
-////                              .font(.system(size: 15))
-////                              .fontWeight(.light)
-////                              .multilineTextAlignment(.center)
-////                              .foregroundColor(ColorManager .grey1)
-//
-//
-//                        Spacer ()
-//
-//                            Image("FatGuy200")
-//                                .resizable()
-//                                .frame(width: 100, height: 100)
-//
-//                        }
-                        
-
-//
-//
-//
-//
-//                        HStack {
-//
-//                            Button(action: {
-//                                sessionManager.showLogin()
-//                            },
-//                                   label: {
-//                                Image("FaceTime")
-//                                    .frame(width: 5, height: 5)
-//                            })
-//                                Spacer()
-//                                    .frame(width: 35)
-//
-//                            //
-//                            Button(action: {
-//                                sessionManager.showLogin()
-//                            },
-//                                   label: {
-//                                Image("home-alt2")
-//                                    .frame(width: 50, height: 25)
-//                                    .foregroundColor(.white)
-//                                    .font(.system(size: 20))
-//                                    .background(Color .black)
-//                                    .cornerRadius(15)
-//                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                                    .opacity(0.70)
-//
-//                            })
-//
-//                            Spacer()
-//                                .frame(width: 35)
-//
-//
-//                            Button(action: {
-//                                sessionManager.showLogin()
-//                            },
-//                                   label: {
-//                                Image("download")
-//                                    .frame(width: 5, height: 5)
-////                                    .foregroundColor(.white)
-////                                    .font(.system(size: 20))
-////                                    .background(Color .black)
-////                                    .cornerRadius(15)
-////                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-////                                    .opacity(0.70)
-//
-//                            })
-//
-//                        }
-//                        NavigationLink(
-//                            destination: Impetus(user: user),
-//                            label: {
-//                                Text("'story like' feature (Q:3 2023)")
-//                                    .fontWeight(.thin)
-//                                    .frame(width: 245, height: 30)
-////                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                    .foregroundColor(Color .black)
-//                                    .font(.system(size: 17))
-//                                    .background(ColorManager.pmbc_green)
-//                                    .cornerRadius(10)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                                    .opacity(0.8)
-//                            })
-//                        
-
-                            VStack {
-
-                                Spacer()
-                                    .frame(height: 25)
-
-                        }
-                        
+                 
                     }
                     
                 }
-                
-                Spacer()
-                    .frame(height: 0)
-                
+           
             }
         }
     }
@@ -735,7 +626,7 @@ struct AtmosphereMain2: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "Something happened to \(user.firstName) changing their 'Vibe'. Send them a Care Heart. ", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "Something happened to \(user.firstName) changing their 'Vibe'. Send them CareHearts. ", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
@@ -812,3 +703,4 @@ struct AtmosphereMain2: View {
 
 
 
+                        
