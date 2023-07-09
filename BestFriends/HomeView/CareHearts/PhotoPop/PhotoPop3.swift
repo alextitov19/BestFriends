@@ -76,9 +76,9 @@ struct PhotoPop3: View {
 //                        Spacer()
 //                            .frame(height: 60)
                         
-                        Text("Alert Friend(s)")
+                        Text("Notify 'specific' Friend")
                             .font(.system(size: 30, weight: .light))
-                            .foregroundColor(ColorManager .grey1)
+                            .foregroundColor(ColorManager .grey2)
                         
                   
                     
