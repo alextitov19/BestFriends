@@ -75,50 +75,7 @@ struct MyRoomView: View {
                     
                     Spacer()
                         .frame(width: 7)
-                    
-                    VStack {
-                        
-                        ZStack {
-                            
-                            NavigationLink(destination: HurtFeelings4(user: user, friends: friends, groups: groups),
-                                           label: {
-                                Text("")
-                                    .fontWeight(.thin)
-                                    .frame(width: 50, height: 30)
-                                    .foregroundColor(ColorManager .grey1)
-                                    .font(.system(size: 30))
-                                //                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            })
-                            
-                            
-                            
-                            Image(systemName: "shareplay.slash")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 30, height: 30)
-                                .opacity(0.3)
-                                .foregroundColor(.white)
-                        }
-                        
-                        
-                        
-                        Text("Hurt")
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 10, weight: .light))
-                            .opacity(0.7)
-                        
-                        Text("Feelings")
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 10, weight: .light))
-                            .opacity(0.7)
-                        
-                        
-                        
-                    }
-                    //                    Spacer()
-                    //                        .frame(width: 65)
+
                     
                     //                    *******************************************
                     VStack {
@@ -166,6 +123,50 @@ struct MyRoomView: View {
                     //                        .frame(width: 65)
                     
                     
+                    VStack {
+
+                        ZStack {
+
+                            NavigationLink(destination: EmptyView(),
+                                           label: {
+                                Text("")
+                                    .fontWeight(.thin)
+                                    .frame(width: 50, height: 30)
+                                    .foregroundColor(ColorManager .grey1)
+                                    .font(.system(size: 30))
+                                //                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+
+
+
+//                            figure.run.square.stack
+                            Image(systemName: "square.and.arrow.up.circle")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 30, height: 30)
+                                .opacity(0.3)
+                                .foregroundColor(.white)
+                        }
+
+
+
+                        Text("My")
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 10, weight: .light))
+                            .opacity(0.7)
+
+                        Text("Affirmations")
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 10, weight: .light))
+                            .opacity(0.7)
+
+
+
+                    }
+                    //                    Spacer()
+                    //                        .frame(width: 65)
                     //                   ******************************************
                     
                     VStack {
@@ -211,7 +212,47 @@ struct MyRoomView: View {
                         
                     }
                     
-                    
+                    VStack {
+                        
+                        ZStack {
+                            
+                            NavigationLink(destination: HurtFeelings4(user: user, friends: friends, groups: groups),
+                                           label: {
+                                Text("")
+                                    .fontWeight(.thin)
+                                    .frame(width: 50, height: 30)
+                                    .foregroundColor(ColorManager .grey1)
+                                    .font(.system(size: 30))
+                                //                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                            
+                            
+                            
+                            Image(systemName: "shareplay.slash")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 30, height: 30)
+                                .opacity(0.3)
+                                .foregroundColor(.white)
+                        }
+                        
+                        
+                        
+                        Text("Hurt")
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 10, weight: .light))
+                            .opacity(0.7)
+                        
+                        Text("Feelings")
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 10, weight: .light))
+                            .opacity(0.7)
+                        
+                        
+                        
+                    }
                     
                     VStack {
                         
