@@ -289,7 +289,7 @@ struct MyRoomView: View {
                     
                     ZStack {
                         
-                        NavigationLink(destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+                        NavigationLink(destination: InfoPushNotifications(user: user),
                                        label: {
                             Text("")
                                 .fontWeight(.thin)
@@ -318,7 +318,7 @@ struct MyRoomView: View {
                         .font(.system(size: 8, weight: .light))
                         .opacity(0.7)
                     
-                    Text("Streks")
+                    Text("Streaks")
                         .foregroundColor(Color.white)
                         .font(.system(size: 8, weight: .light))
                         .opacity(0.7)
