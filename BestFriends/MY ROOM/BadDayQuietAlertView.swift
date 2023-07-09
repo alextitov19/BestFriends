@@ -63,7 +63,7 @@ struct BadDayQuietAlertView: View {
 //        .ignoresSafeArea()
 //        .blendMode(.screen)
                 
-                Image("KellyBackground 1")
+                Image("FHBackground")
                     .ignoresSafeArea()
                     .scaledToFit()
 

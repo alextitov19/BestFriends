@@ -49,7 +49,9 @@ struct AtmosphereMain2: View {
 //                .ignoresSafeArea()
 //                .blendMode(.screen)
 
-            Image("KellyBackground 1")
+            Image("FHBackground")
+                .ignoresSafeArea()
+                .scaledToFit()
                 .ignoresSafeArea()
                 .scaledToFit()
 

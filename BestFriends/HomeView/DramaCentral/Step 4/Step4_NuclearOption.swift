@@ -34,7 +34,7 @@ struct Step4_NuclearOption: View {
             //                .opacity(0.6)
             //                .ignoresSafeArea()
             
-            Image("KellyBackground 1")
+            Image("FHBackground")
                 .ignoresSafeArea()
                 .scaledToFit()
 

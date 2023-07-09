@@ -30,12 +30,12 @@ struct HugPreload: View {
 //            ColorManager.purple7
 ////                .opacity(0.6)
 //                .ignoresSafeArea()
-//                
+//
 //            AdPlayerView(name: "sky2")
 //                .ignoresSafeArea()
 //                .blendMode(.screen)
 
-            Image("KellyBackground 1")
+            Image("FHBackground")
                 .ignoresSafeArea()
                 .scaledToFit()
 

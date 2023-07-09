@@ -73,7 +73,7 @@ struct Step2_FightLandingView: View {
 //                    .ignoresSafeArea()
 //                    .blendMode(.screen)
                 
-                Image("KellyBackground 1")
+                Image("FHBackground")
                     .ignoresSafeArea()
                     .scaledToFit()
 
