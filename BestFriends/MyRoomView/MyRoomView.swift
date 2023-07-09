@@ -477,107 +477,76 @@ struct MyRoomView: View {
                     
                     Spacer()
                         .frame(height: 70)
-                    
-//                    NavigationLink(
-//                        destination: InfoInsideChat(user: user),
-//                        label: {
-//                            Text("Create New Chat rooms")
-//                                .fontWeight(.thin)
-//                                .frame(width: 260, height: 27)
-//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                .font(.system(size: 25))
-//                                .background(Color.purple)
-//                                .cornerRadius(10)
-//                                .opacity(0.4)
-//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//                        })
-                    
-//                    NavigationLink(
-//
-//                        destination: InfoHowChatWorks(user: user),
-//                        label: {
-//                            Text("Keeping Notifications 'ON'")
-//                                .fontWeight(.light)
-//                                .foregroundColor(Color.white)
-//                                .frame(width: 260, height: 27)
-//                                .font(.system(size: 20))
-//                                .background(Color.purple)
-//                                .cornerRadius(10)
-//                                .opacity(0.4)
-//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//                        })
-                    
-                    NavigationLink(
-                        
-                        destination: InfoInsideChat(user: user),
-                        label: {
-                            Text("How-to Create Chat Rooms")
-                                .fontWeight(.light)
-                                .foregroundColor(Color.white)
-                                .frame(width: 300, height: 27)
-                                .font(.system(size: 20))
-                                .background(Color.purple)
-                                .cornerRadius(10)
-                                .opacity(0.4)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    Text("How to ")
+                        .foregroundColor(ColorManager .grey2)
+                        .font(.system(size: 20, weight: .light))
+                        .opacity(0.7)
+
+                    HStack {
+                        NavigationLink(
                             
-                        })
-                    
-//                    InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups
-                    
-                    NavigationLink(
+                            destination: InfoInsideChat(user: user),
+                            label: {
+                                Text("Create Chat \nRooms")
+                                    .fontWeight(.light)
+                                    .frame(width: 80, height: 50)
+                                    .foregroundColor(ColorManager .grey4)
+                                    .font(.system(size: 13))
+                                    .background(Color.green)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                            })
                         
-                        destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
-                        label: {
-                            Text("Invite / Accept Friends")
-                                .fontWeight(.light)
-                                .foregroundColor(Color.white)
-                                .frame(width: 220, height: 27)
-                                .font(.system(size: 22))
-                                .background(Color.purple)
-                                .cornerRadius(10)
-                                .opacity(0.4)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                        })
-                    
-                    
-                    NavigationLink(
+                        //                    InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups
                         
-                        destination: INFOPreload3(user: user),
-                        label: {
-                            Text("Free Stickers")
-                                .fontWeight(.light)
-                                .foregroundColor(Color.white)
-                                .frame(width: 150, height: 27)
-                                .font(.system(size: 22))
-                                .background(Color.purple)
-                                .cornerRadius(10)
-                                .opacity(0.4)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        NavigationLink(
                             
-                        })
+                            destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
+                            label: {
+                                Text("Invite \n& Accept \nFriends")
+                                    .fontWeight(.light)
+                                    .frame(width: 80, height: 50)
+                                    .foregroundColor(ColorManager .grey4)
+                                    .font(.system(size: 13))
+                                    .background(Color.green)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                            })
+                        
+//                    }
                     
-                    
-//                    NavigationLink(
-//
-//                        destination: INFOMainHowWorks(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-//                        label: {
-//                            Text("Walk-through")
-//                                .fontWeight(.light)
-//                                .foregroundColor(Color.white)
-//                                .frame(width: 150, height: 27)
-//                                .font(.system(size: 20))
-//                                .background(Color.purple)
-//                                .cornerRadius(10)
-//                                .opacity(0.4)
-//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//                        })
-                    
-                    
+//                    HStack {
+                        NavigationLink(
+                            
+                            destination: INFOPreload3(user: user),
+                            label: {
+                                Text("Free \nStickers")
+                                    .fontWeight(.light)
+                                    .frame(width: 80, height: 50)
+                                    .foregroundColor(ColorManager .grey4)
+                                    .font(.system(size: 13))
+                                    .background(Color.green)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                            })
+                        
+                        
+                        
+                        Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
+                            
+                            Text("Influencers")
+                                .fontWeight(.light)
+                                .frame(width: 80, height: 50)
+                                .foregroundColor(ColorManager .grey4)
+                                .font(.system(size: 13))
+                                .background(Color.green)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        }
+                    }
                     
                 }
             }
