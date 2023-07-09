@@ -62,22 +62,17 @@ struct MyRoomView: View {
                         
                         Text("Send")
                             .foregroundColor(Color.white)
-                            .font(.system(size: 10, weight: .light))
+                            .font(.system(size: 8, weight: .light))
                             .opacity(0.7)
                         
                         Text("PhotoPOP")
                             .foregroundColor(Color.white)
-                            .font(.system(size: 10, weight: .light))
+                            .font(.system(size: 8, weight: .light))
                             .opacity(0.7)
-                        //
+                        
                     }
-                    
-                    
-                    Spacer()
-                        .frame(width: 7)
+               
 
-                    
-                    //                    *******************************************
                     VStack {
                         
                         ZStack {
@@ -99,7 +94,7 @@ struct MyRoomView: View {
                             Image(systemName: "sun.max.fill")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 30, height: 30)
+                                .frame(width: 25, height: 25)
                                 .opacity(0.3)
                                 .foregroundColor(.white)
                         }
@@ -108,20 +103,18 @@ struct MyRoomView: View {
                         
                         Text("Smile")
                             .foregroundColor(Color.white)
-                            .font(.system(size: 10, weight: .light))
+                            .font(.system(size: 8, weight: .light))
                             .opacity(0.7)
                         
                         Text("Vault")
                             .foregroundColor(Color.white)
-                            .font(.system(size: 10, weight: .light))
+                            .font(.system(size: 8, weight: .light))
                             .opacity(0.7)
                         
                         
                         
                     }
-                    //                    Spacer()
-                    //                        .frame(width: 65)
-                    
+            
                     
                     VStack {
 
@@ -145,7 +138,7 @@ struct MyRoomView: View {
                             Image(systemName: "square.and.arrow.up.circle")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 30, height: 30)
+                                .frame(width: 25, height: 25)
                                 .opacity(0.3)
                                 .foregroundColor(.white)
                         }
@@ -154,20 +147,16 @@ struct MyRoomView: View {
 
                         Text("My")
                             .foregroundColor(Color.white)
-                            .font(.system(size: 10, weight: .light))
+                            .font(.system(size: 8, weight: .light))
                             .opacity(0.7)
 
-                        Text("Affirmations")
+                        Text("Self")
                             .foregroundColor(Color.white)
-                            .font(.system(size: 10, weight: .light))
+                            .font(.system(size: 8, weight: .light))
                             .opacity(0.7)
-
-
 
                     }
-                    //                    Spacer()
-                    //                        .frame(width: 65)
-                    //                   ******************************************
+                   
                     
                     VStack {
                         
@@ -198,14 +187,14 @@ struct MyRoomView: View {
                         
                         
                         
-                        Text("Friendship")
+                        Text("Friend")
                             .foregroundColor(Color.white)
-                            .font(.system(size: 10, weight: .light))
+                            .font(.system(size: 8, weight: .light))
                             .opacity(0.7)
                         
                         Text("Coupons")
                             .foregroundColor(Color.white)
-                            .font(.system(size: 10, weight: .light))
+                            .font(.system(size: 8, weight: .light))
                             .opacity(0.7)
                         
                         
@@ -233,7 +222,7 @@ struct MyRoomView: View {
                             Image(systemName: "shareplay.slash")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 30, height: 30)
+                                .frame(width: 25, height: 25)
                                 .opacity(0.3)
                                 .foregroundColor(.white)
                         }
@@ -242,16 +231,14 @@ struct MyRoomView: View {
                         
                         Text("Hurt")
                             .foregroundColor(Color.white)
-                            .font(.system(size: 10, weight: .light))
+                            .font(.system(size: 8, weight: .light))
                             .opacity(0.7)
                         
                         Text("Feelings")
                             .foregroundColor(Color.white)
-                            .font(.system(size: 10, weight: .light))
+                            .font(.system(size: 8, weight: .light))
                             .opacity(0.7)
-                        
-                        
-                        
+                       
                     }
                     
                     VStack {
@@ -282,29 +269,72 @@ struct MyRoomView: View {
                         
                         
                         
-                        Text("Fixing a ")
+                        Text("Fix a ")
                             .foregroundColor(Color.white)
-                            .font(.system(size: 10, weight: .light))
+                            .font(.system(size: 8, weight: .light))
                             .opacity(0.7)
                         
-                        Text("Breakup")
+                        Text("Fight")
                             .foregroundColor(Color.white)
-                            .font(.system(size: 10, weight: .light))
+                            .font(.system(size: 8, weight: .light))
                             .opacity(0.7)
                         
                         
                         
                     }
+                
+                
+                
+                VStack {
+                    
+                    ZStack {
+                        
+                        NavigationLink(destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+                                       label: {
+                            Text("")
+                                .fontWeight(.thin)
+                                .frame(width: 50, height: 30)
+                                .foregroundColor(ColorManager .grey1)
+                                .font(.system(size: 30))
+                            //                                    .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        })
+                        
+                        
+                        
+                        Image(systemName: "heart")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 25, height: 25)
+                            .opacity(0.3)
+                            .foregroundColor(.white)
+                    }
+                    
+                    
+                    
+                    Text("Care")
+                        .foregroundColor(Color.white)
+                        .font(.system(size: 8, weight: .light))
+                        .opacity(0.7)
+                    
+                    Text("Streks")
+                        .foregroundColor(Color.white)
+                        .font(.system(size: 8, weight: .light))
+                        .opacity(0.7)
+                    
+                    
+                    
                 }
-                
-                
+            }
+            
                 
                 Spacer()
                     .frame(height: 50)
                 
                 //                 TryThis
                 NavigationLink(destination: InfoHowChatWorks(user: user), label: {
-                MyRoomRowView(title: "Real-time Friendships", imageName: "star", backgroundColor: ColorManager.purple1.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                MyRoomRowView(title: "Real-time Friendships", imageName: "star", backgroundColor: ColorManager.purple1.cgColor!, foregroundColor: ColorManager.purple7.cgColor!)
             })
                 
                 HStack {
@@ -483,10 +513,10 @@ struct MyRoomView: View {
                         
                         destination: InfoInsideChat(user: user),
                         label: {
-                            Text("Create FriendGroup Chat")
+                            Text("How-to Create Chat Rooms")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.white)
-                                .frame(width: 250, height: 27)
+                                .frame(width: 300, height: 27)
                                 .font(.system(size: 20))
                                 .background(Color.purple)
                                 .cornerRadius(10)

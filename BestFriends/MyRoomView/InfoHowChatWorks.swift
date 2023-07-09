@@ -91,8 +91,8 @@ struct InfoHowChatWorks: View {
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("- Firends that are 'always' here for you")
-                            .font(.system(size: 17, weight: .light))
+                        Text("- Friends that are 'always' here for you")
+                            .font(.system(size: 16, weight: .light))
                             .foregroundColor(Color.white)
                             .opacity(0.50)
                             .multilineTextAlignment(.center)
@@ -101,7 +101,7 @@ struct InfoHowChatWorks: View {
                             .frame(height: 10)
                         
                         Text("- Your friend just blew a kiss - jump up & catch it")
-                            .font(.system(size: 17, weight: .light))
+                            .font(.system(size: 16, weight: .light))
                             .foregroundColor(Color.white)
                             .opacity(0.50)
                             .multilineTextAlignment(.center)
@@ -109,8 +109,8 @@ struct InfoHowChatWorks: View {
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("- Shake your iPhone - see a friend's new PhotoPOP")
-                            .font(.system(size: 17, weight: .light))
+                        Text("- Your friend just sent an image, \njust 'shake' you iPhone to see it")
+                            .font(.system(size: 15, weight: .light))
                             .foregroundColor(Color.white)
                             .opacity(0.50)
                             .multilineTextAlignment(.center)
@@ -123,8 +123,8 @@ struct InfoHowChatWorks: View {
                                 .frame(height: 10)
                          
                             
-                            Text("- Tough day - grab your HUG touching your heart")
-                                .font(.system(size: 17, weight: .light))
+                            Text("- Tough day - hold your phone to your heart \nyour friend's virtual HUG vibrates your phone")
+                                .font(.system(size: 15, weight: .light))
                                 .foregroundColor(Color.white)
                                 .opacity(0.50)
                                 .multilineTextAlignment(.center)
@@ -133,7 +133,7 @@ struct InfoHowChatWorks: View {
                             
                             
                             Text("- We even let you know when a friend is \nready to talk after a fight")
-                                .font(.system(size: 17, weight: .light))
+                                .font(.system(size: 15, weight: .light))
                                 .foregroundColor(Color.white)
                                 .opacity(0.50)
                                 .multilineTextAlignment(.center)
@@ -142,7 +142,7 @@ struct InfoHowChatWorks: View {
                                 .frame(height: 10)
                             
                             Text("- Redeem a Friendship Coupon")
-                                .font(.system(size: 17, weight: .light))
+                                .font(.system(size: 15, weight: .light))
                                 .foregroundColor(Color.white)
                                 .opacity(0.50)
                                 .multilineTextAlignment(.center)
