@@ -88,7 +88,7 @@ struct PhotoPopView: View {
                 NavigationLink(
                     destination: PhotoPop3(user: user, friends: friends),
                     label: {
-                        Text("SENDING FIRST IMAGE TO FIRST FRIEND: \n1) tap 'camera' or 'gallery' icon \n2) select friend from dropdown menu  \n3) add gallery or camera image \n4) tap [Send Push Notificaton] & select 'that specific' friend sending image to and tap [Share] \nNOTE: Can only send ONE image to ONE friend at a time \n\n\nSENDING SECOND IMAGE TO SAME FRIEND:  \n1) DELETE first image by tapping it \n2) upload new image \n3) tap [Send Push Notificaton] and share image \nNOTE: Can only have ONE active image at a time for each friend \n\nREPEAT SAME FOR EACH FRIEND \n\n\nWhen friend 'shakes' phone your image pops up full-screen \nFirend taps image to see next PhotoPOP from next friend")
+                        Text("SENDING FIRST IMAGE TO FIRST FRIEND: \n1) tap 'camera' or 'gallery' icon \n2) select friend from dropdown menu  \n3) add gallery or camera image \n4) tap [Send Push Notificaton] & select 'that specific' friend sending image to and tap [Share] \nNOTE: \nCan only send ONE image to ONE friend at a time \n\n\nSENDING NEW IMAGE TO SAME FRIEND:  \n1) DELETE first image by tapping it \n2) upload new image \n3) tap [Send Push Notificaton] and share image \nNOTE: \nCan only have ONE active image at a time for each friend \n\nREPEAT SAME FOR EACH FRIEND \n\n\nWhen friend 'shakes' phone your image pops up full-screen \nFirend taps image to see next PhotoPOP from next friend")
                             .fontWeight(.regular)
                             .frame(width: 330, height: 390)
                             .foregroundColor(ColorManager .grey4)

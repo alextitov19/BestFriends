@@ -60,7 +60,7 @@ struct MyRoomView: View {
                                 .foregroundColor(.white)
                         }
                         
-                        Text("Send a")
+                        Text("Send")
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .opacity(0.7)
