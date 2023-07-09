@@ -150,7 +150,7 @@ struct MyRoomView: View {
                             .font(.system(size: 8, weight: .light))
                             .opacity(0.7)
 
-                        Text("Self")
+                        Text("Strengths")
                             .foregroundColor(Color.white)
                             .font(.system(size: 8, weight: .light))
                             .opacity(0.7)
@@ -269,7 +269,7 @@ struct MyRoomView: View {
                         
                         
                         
-                        Text("Fix a ")
+                        Text("Break-up")
                             .foregroundColor(Color.white)
                             .font(.system(size: 8, weight: .light))
                             .opacity(0.7)
