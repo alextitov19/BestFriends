@@ -269,12 +269,12 @@ struct MyRoomView: View {
                         
                         
                         
-                        Text("Break-up")
+                        Text("Fix a")
                             .foregroundColor(Color.white)
                             .font(.system(size: 8, weight: .light))
                             .opacity(0.7)
                         
-                        Text("Fight")
+                        Text("Break-up")
                             .foregroundColor(Color.white)
                             .font(.system(size: 8, weight: .light))
                             .opacity(0.7)
@@ -477,10 +477,10 @@ struct MyRoomView: View {
                     
                     Spacer()
                         .frame(height: 70)
-                    Text("How to ")
-                        .foregroundColor(ColorManager .grey2)
-                        .font(.system(size: 20, weight: .light))
-                        .opacity(0.7)
+//                    Text("How to ")
+//                        .foregroundColor(ColorManager .grey2)
+//                        .font(.system(size: 20, weight: .light))
+//                        .opacity(0.7)
 
                     HStack {
                         NavigationLink(

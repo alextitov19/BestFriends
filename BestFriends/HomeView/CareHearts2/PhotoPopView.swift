@@ -98,7 +98,7 @@ struct PhotoPopView: View {
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
                 
-                Text("(if get 'loading' icon - exit feature & return)")
+                Text("(if get 'loading' icon - friend deleted image)")
                     .foregroundColor(Color.red)
                     .italic()
                     .font(.system(size: 12, weight: .light))
