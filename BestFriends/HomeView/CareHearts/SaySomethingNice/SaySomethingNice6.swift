@@ -113,28 +113,28 @@ struct SaySomethingNice6: View {
 //                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 //
 //                                })
-                            
-                            Spacer()
-                                .frame(height: 80)
-                            
-                            Text("Our fantastic supporters")
-                                .font(.system(size: 30))
-                                .fontWeight(.regular)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager.purple2)
-                            
-                            Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
-                                
-                                Text("Social Media Influencers")
-                                    .fontWeight(.thin)
-                                    .frame(width: 310, height: 60)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 27))
-                                    .background(Color.green)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            }
-                 
+//                            
+//                            Spacer()
+//                                .frame(height: 80)
+//                            
+//                            Text("Our fantastic supporters")
+//                                .font(.system(size: 30))
+//                                .fontWeight(.regular)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(ColorManager.purple2)
+//                            
+//                            Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
+//                                
+//                                Text("Social Media Influencers")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 310, height: 60)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 27))
+//                                    .background(Color.green)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            }
+//                 
 //
                             Spacer()
                                 .frame(height: 100)
