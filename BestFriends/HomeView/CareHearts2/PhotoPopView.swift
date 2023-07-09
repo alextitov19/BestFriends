@@ -76,28 +76,24 @@ struct PhotoPopView: View {
 //
 //                })
                 
-                Text("Shaking PhotoPOP")
-                    .font(.system(size: 30, weight: .bold))
-                    .foregroundColor(ColorManager .grey1)
-                    .shadow(color: .purple, radius: 1, x: 0, y: 1)
-                    .opacity(0.50)
-                    .multilineTextAlignment(.center)
-                
-//                Text("shake iPhone to view image")
-//                    .italic()
-//                    .font(.system(size: 17, weight: .regular))
+//                Text("Shaking PhotoPOP")
+//                    .font(.system(size: 30, weight: .bold))
 //                    .foregroundColor(ColorManager .grey1)
+//                    .shadow(color: .purple, radius: 1, x: 0, y: 1)
+//                    .opacity(0.50)
+//                    .multilineTextAlignment(.center)
+//
               
                     
                 NavigationLink(
                     destination: PhotoPop3(user: user, friends: friends),
                     label: {
-                        Text("INSTRUCTIONS \n\n- 1st, DELETE existing image by tapping it - then ADD new image \n\n- Can only have ONE active image at a time \n\n- Lastly, alert frind to 'shake' iPhone")
-                            .fontWeight(.thin)
-                            .frame(width: 300, height: 120)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 10))
-                            .background(ColorManager.grey4)
+                        Text("SENDING FIRST IMAGE TO FIRST FRIEND: \n1) tap 'camera' or 'gallery' icon \n2) select friend from dropdown menu  \n3) add gallery or camera image \n4) tap [Send Push Notificaton] & select 'that specific' friend sending image to and tap [Share] \nNOTE: Can only send ONE image to ONE friend at a time \n\n\nSENDING SECOND IMAGE TO SAME FRIEND:  \n1) DELETE first image by tapping it \n2) upload new image \n3) tap [Send Push Notificaton] and share image \nNOTE: Can only have ONE active image at a time for each friend \n\nREPEAT SAME FOR EACH FRIEND \n\n\nWhen friend 'shakes' phone your image pops up full-screen \nFirend taps image to see next PhotoPOP from next friend")
+                            .fontWeight(.regular)
+                            .frame(width: 330, height: 390)
+                            .foregroundColor(ColorManager .grey4)
+                            .font(.system(size: 13))
+                            .background(Color.orange)
                             .cornerRadius(10)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
@@ -111,7 +107,7 @@ struct PhotoPopView: View {
                 NavigationLink(
                     destination: PhotoPop3(user: user, friends: friends),
                     label: {
-                        Text("Send Push Notificaion _ TAP")
+                        Text("Send Notificaion to Friend")
                             .fontWeight(.thin)
                             .frame(width: 300, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
