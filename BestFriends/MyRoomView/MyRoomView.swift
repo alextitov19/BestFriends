@@ -460,10 +460,10 @@ struct MyRoomView: View {
                         
                         destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
                         label: {
-                            Text("Invite Friends")
+                            Text("Invite / Accept Friends")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.white)
-                                .frame(width: 150, height: 27)
+                                .frame(width: 220, height: 27)
                                 .font(.system(size: 22))
                                 .background(Color.purple)
                                 .cornerRadius(10)
