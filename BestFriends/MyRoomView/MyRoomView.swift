@@ -177,7 +177,7 @@ struct MyRoomView: View {
                             
                             
                             
-                            Image(systemName: "heart")
+                            Image(systemName: "person.2")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 25, height: 25)
