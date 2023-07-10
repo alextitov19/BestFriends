@@ -69,9 +69,9 @@ struct FH3: View {
                             Spacer()
                                 .frame(height: 150)
                             
-                            Text("Please turn on Notifications \nfor real-time friendships")
+                            Text("All these features are real-time \nusing Push Notifications to your iPhone")
                                 .font(.system(size: 27))
-                                .foregroundColor(Color.green)
+                                .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                             
@@ -105,6 +105,13 @@ struct FH3: View {
                                 .opacity(0.70)
                             
                         })
+                        
+                        Text("Please turn on Notifications \nfor BestFriends")
+                            .font(.system(size: 27))
+                            .foregroundColor(Color.green)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                        
                         
                         //                            NavigationLink(
                         //                                destination: EmptyView(),
