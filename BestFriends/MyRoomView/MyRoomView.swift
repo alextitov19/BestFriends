@@ -296,7 +296,7 @@ struct MyRoomView: View {
                     .frame(height: 50)
                 
                 //                 TryThis
-                NavigationLink(destination: InfoHowChatWorks(), label: {
+                NavigationLink(destination: FH9(), label: {
                 MyRoomRowView(title: "Real-time Friendships", imageName: "star", backgroundColor: ColorManager.purple1.cgColor!, foregroundColor: ColorManager.purple7.cgColor!)
             })
                 
