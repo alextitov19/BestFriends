@@ -48,7 +48,7 @@ struct FH10: View {
             
            
             VStack {
-                Text("TAP CENTER PLANET -> goes to main page")
+                Text("TAP CENTER PLANET -> takes you to Main page")
                     .fontWeight(.thin)
                     .frame(width: 300, height: 60)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

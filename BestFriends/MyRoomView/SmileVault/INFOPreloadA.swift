@@ -51,9 +51,14 @@ struct INFOPreloadA: View {
 
             } else {
               
-                ColorManager.grey4
-                    .opacity(0.8)
-                    .ignoresSafeArea()
+                Image("FHBackground")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+                
+//                ColorManager.grey4
+//                    .opacity(0.8)
+//                    .ignoresSafeArea()
                     
 //                AdPlayerView(name: "sky2")
 //                    .ignoresSafeArea()
@@ -78,7 +83,7 @@ struct INFOPreloadA: View {
                         .foregroundColor(Color.purple)
                         .frame(width: 400, height: 400)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.95)
+                        .opacity(0.4)
                     VStack {
                         Text("Wondering what your")
                                                 .font(.system(size: 37))
@@ -296,7 +301,7 @@ struct INFOPreloadA: View {
                                          .frame(width: 50, height: 25)
                                          .foregroundColor(.white)
                                          .font(.system(size: 20))
-                                         .background(Color .black)
+                                         .background(ColorManager .grey2)
                                          .cornerRadius(15)
                                          .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                                          .opacity(0.70)
