@@ -210,82 +210,82 @@ struct MyRoomView: View {
                         
                         ZStack {
                             
-                            NavigationLink(destination: HurtFeelings4(user: user, friends: friends, groups: groups),
-                                           label: {
-                                Text("")
-                                    .fontWeight(.thin)
-                                    .frame(width: 50, height: 30)
-                                    .foregroundColor(ColorManager .grey1)
-                                    .font(.system(size: 30))
-                                //                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            })
+//                            NavigationLink(destination: HurtFeelings4(user: user, friends: friends, groups: groups),
+//                                           label: {
+//                                Text("")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 50, height: 30)
+//                                    .foregroundColor(ColorManager .grey1)
+//                                    .font(.system(size: 30))
+//                                //                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            })
                             
-                            
-                            
-                            Image(systemName: "shareplay.slash")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 25, height: 25)
-                                .opacity(0.3)
-                                .foregroundColor(.white)
+//
+//
+//                            Image(systemName: "shareplay.slash")
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 25, height: 25)
+//                                .opacity(0.3)
+//                                .foregroundColor(.white)
                         }
                         
-                        
-                        
-                        Text("Hurt")
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 8, weight: .light))
-                            .opacity(0.7)
-                        
-                        Text("Feelings")
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 8, weight: .light))
-                            .opacity(0.7)
-                       
+//
+//
+//                        Text("Hurt")
+//                            .foregroundColor(Color.white)
+//                            .font(.system(size: 8, weight: .light))
+//                            .opacity(0.7)
+//
+//                        Text("Feelings")
+//                            .foregroundColor(Color.white)
+//                            .font(.system(size: 8, weight: .light))
+//                            .opacity(0.7)
+//
                     }
                     
                     VStack {
                         
                         ZStack {
                             
-                            NavigationLink(destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
-                                           label: {
-                                Text("")
-                                    .fontWeight(.thin)
-                                    .frame(width: 50, height: 30)
-                                    .foregroundColor(ColorManager .grey1)
-                                    .font(.system(size: 30))
-                                //                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            })
+//                            NavigationLink(destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+//                                           label: {
+//                                Text("")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 50, height: 30)
+//                                    .foregroundColor(ColorManager .grey1)
+//                                    .font(.system(size: 30))
+//                                //                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            })
+//
+//
                             
-                            
-                            
-                            Image(systemName: "figure.walk.motion")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 25, height: 25)
-                                .opacity(0.3)
-                                .foregroundColor(.white)
+//                            Image(systemName: "figure.walk.motion")
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 25, height: 25)
+//                                .opacity(0.3)
+//                                .foregroundColor(.white)
                         }
                         
-                        
-                        
-                        Text("Fix a")
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 8, weight: .light))
-                            .opacity(0.7)
-                        
-                        Text("Break-up")
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 8, weight: .light))
-                            .opacity(0.7)
-                        
-                        
-                        
+//
+//
+//                        Text("Fix a")
+//                            .foregroundColor(Color.white)
+//                            .font(.system(size: 8, weight: .light))
+//                            .opacity(0.7)
+//
+//                        Text("Break-up")
+//                            .foregroundColor(Color.white)
+//                            .font(.system(size: 8, weight: .light))
+//                            .opacity(0.7)
+//
+//
+//
                     }
                 
 
@@ -293,7 +293,7 @@ struct MyRoomView: View {
             
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 80)
                 
                 //                 TryThis
                 NavigationLink(destination: FH9(), label: {
@@ -427,6 +427,54 @@ struct MyRoomView: View {
                     
                 }
 
+                
+                HStack {
+                 
+                    NavigationLink( destination:  HurtFeelings4(user: user, friends: friends, groups: groups),
+                                    label: {
+                        Text("Hurt Feeling")
+                            .fontWeight(.thin)
+                            .frame(width: 75, height: 50)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 17))
+                            .background(ColorManager .purple4)
+                            .opacity(0.6)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
+                    
+                    
+                    Text("< Drama >")
+                        .fontWeight(.light)
+                        .frame(width: 147, height: 60)
+                        .foregroundColor(Color.white)
+                        .font(.system(size: 22))
+                        .background(ColorManager .purple2)
+                        .opacity(0.6)
+                        .cornerRadius(15)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    
+                    NavigationLink( destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+                                    label: {
+                        Text("Break-Up")
+                            .fontWeight(.thin)
+                            .frame(width: 75, height: 50)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 17))
+                            .background(ColorManager .purple4)
+                            .opacity(0.6)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
+                    
+                }
+
+                
+                
+                
+                
+                
+                
                 NavigationLink(destination: FH1(), label: {
                     MyRoomRowView(title: "Friendship Highlights", imageName: "star", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
@@ -448,7 +496,7 @@ struct MyRoomView: View {
 //                                })
                 
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 200)
           
    
        
