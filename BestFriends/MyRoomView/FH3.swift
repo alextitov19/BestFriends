@@ -69,7 +69,7 @@ struct FH3: View {
                             Spacer()
                                 .frame(height: 150)
                             
-                            Text("Your friends love you: \n\nRedeem a Friendship Coupon.")
+                            Text("?????")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
@@ -79,7 +79,7 @@ struct FH3: View {
                             Spacer()
                                 .frame(height: 20)
                             
-                            Image("FatGuy200")
+                            Image("Girl400")
                                 .resizable()
                                 .frame(width: 150, height: 150)
                             

@@ -67,7 +67,7 @@ struct FH4: View {
                             
                             
                             Spacer()
-                                .frame(height: 150)
+                                .frame(height: 100)
                             
                             Text("Your friends love you: \n\nRedeem a Friendship Coupon.")
                                 .font(.system(size: 27))
@@ -77,7 +77,7 @@ struct FH4: View {
                             
                             
                             Spacer()
-                                .frame(height: 20)
+                                .frame(height: 30)
                             
                             Image("book200")
                                 .resizable()
@@ -94,7 +94,7 @@ struct FH4: View {
                                
                           
                             NavigationLink(
-                                destination: EmptyView(),
+                                destination: FH3(),
                                 label: {
                                     Text("->")
                                         .fontWeight(.thin)
