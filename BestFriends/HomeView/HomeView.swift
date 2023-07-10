@@ -83,17 +83,31 @@ struct HomeView: View {
                             
                             Spacer()
                             
-                            NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
-                            ) { EmptyView() }
+//                            NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
+//                            ) { EmptyView() }
+//
                             
+//                            NavigationLink(
+//                                destination: BuiltByTeensView(user: homeData!.user, friends: homeData!.friends),
+//                                label: {
+//                                    Text("our story")
+//                                        .foregroundColor(Color.white)
+//                                        .font(.system(size: 16, weight: .light))
+//                                        .opacity(0.7)
+//                                })
+                            
+                          
                             
                             NavigationLink(
-                                destination: BuiltByTeensView(user: homeData!.user, friends: homeData!.friends),
+                                destination:  FH10(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                 label: {
-                                    Text("our story")
-                                        .foregroundColor(Color.white)
-                                        .font(.system(size: 16, weight: .light))
-                                        .opacity(0.7)
+                                    
+                                    Image(systemName: "info.circle")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 35, height: 35)
+                                        .opacity(0.5)
+                                        .foregroundColor(.white)
                                 })
                             
                             Spacer()
@@ -110,6 +124,9 @@ struct HomeView: View {
                                         .opacity(0.5)
                                         .foregroundColor(.white)
                                 })
+                            
+                            
+                         
                         }
                         .padding(20)
                     }
