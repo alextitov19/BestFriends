@@ -58,7 +58,7 @@ struct FH10: View {
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
             
                 
-                Text("Friends show up as planets on homepage")
+                Text("Friends show up as planets \naround your planet")
                     .fontWeight(.thin)
                     .frame(width: 300, height: 60)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -140,7 +140,7 @@ struct FH10: View {
                     
                     Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
                         
-                        Text("Influencers")
+                        Text("Supportive \nInfluencers")
                             .fontWeight(.light)
                             .frame(width: 80, height: 50)
                             .foregroundColor(ColorManager .grey4)
@@ -168,9 +168,9 @@ struct FH10: View {
                             
                             NavigationLink(
                                 
-                                destination: BuiltByTeensView(user: user, friends: friends),
+                                destination: InfoPushNotifications(user: user),
                                 label: {
-                                    Text("CareHeart \nStickers")
+                                    Text("CareHeart \nStreaks")
                                         .fontWeight(.light)
                                         .frame(width: 80, height: 50)
                                         .foregroundColor(ColorManager .grey4)

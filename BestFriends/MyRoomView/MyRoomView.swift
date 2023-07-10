@@ -20,18 +20,23 @@ struct MyRoomView: View {
     
     var body: some View {
         ZStack {
-            ColorManager.purple7
-            //                .opacity(0.6)
+            
+            
+            ColorManager.grey4
                 .ignoresSafeArea()
             
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
+//            ColorManager.purple7
+//            //                .opacity(0.6)
+//                .ignoresSafeArea()
+//            
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
             
-            AdPlayerView(name: "dramaLights")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-                .opacity(0.3)
+//            AdPlayerView(name: "dramaLights")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.3)
             
             VStack {
                 HStack {
@@ -284,48 +289,48 @@ struct MyRoomView: View {
                     }
                 
                 
-                
-                VStack {
-                    
-                    ZStack {
-                        
-                        NavigationLink(destination: InfoPushNotifications(user: user),
-                                       label: {
-                            Text("")
-                                .fontWeight(.thin)
-                                .frame(width: 50, height: 30)
-                                .foregroundColor(ColorManager .grey1)
-                                .font(.system(size: 30))
-                            //                                    .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
-                        
-                        
-                        
-                        Image(systemName: "heart")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 25, height: 25)
-                            .opacity(0.3)
-                            .foregroundColor(.white)
-                    }
-                    
-                    
-                    
-                    Text("Care")
-                        .foregroundColor(Color.white)
-                        .font(.system(size: 8, weight: .light))
-                        .opacity(0.7)
-                    
-                    Text("Streaks")
-                        .foregroundColor(Color.white)
-                        .font(.system(size: 8, weight: .light))
-                        .opacity(0.7)
-                    
-                    
-                    
-                }
+//
+//                VStack {
+//
+//                    ZStack {
+//
+//                        NavigationLink(destination: InfoPushNotifications(user: user),
+//                                       label: {
+//                            Text("")
+//                                .fontWeight(.thin)
+//                                .frame(width: 50, height: 30)
+//                                .foregroundColor(ColorManager .grey1)
+//                                .font(.system(size: 30))
+//                            //                                    .background(ColorManager.purple3)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        })
+//
+//
+//
+//                        Image(systemName: "heart")
+//                            .resizable()
+//                            .scaledToFit()
+//                            .frame(width: 25, height: 25)
+//                            .opacity(0.3)
+//                            .foregroundColor(.white)
+//                    }
+//
+//
+//
+//                    Text("Care")
+//                        .foregroundColor(Color.white)
+//                        .font(.system(size: 8, weight: .light))
+//                        .opacity(0.7)
+//
+//                    Text("Streaks")
+//                        .foregroundColor(Color.white)
+//                        .font(.system(size: 8, weight: .light))
+//                        .opacity(0.7)
+//
+//
+//
+//                }
             }
             
                 
@@ -472,87 +477,87 @@ struct MyRoomView: View {
                 //                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 //                    })
                 
-                VStack {
-                    
-                    
-                    Spacer()
-                        .frame(height: 70)
-//                    Text("How to ")
-//                        .foregroundColor(ColorManager .grey2)
-//                        .font(.system(size: 20, weight: .light))
-//                        .opacity(0.7)
-
-                    HStack {
-                        NavigationLink(
-                            
-                            destination: InfoInsideChat(user: user),
-                            label: {
-                                Text("Create Chat \nRooms")
-                                    .fontWeight(.light)
-                                    .frame(width: 80, height: 50)
-                                    .foregroundColor(ColorManager .grey4)
-                                    .font(.system(size: 13))
-                                    .background(Color.green)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            })
-                        
-                        //                    InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups
-                        
-                        NavigationLink(
-                            
-                            destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
-                            label: {
-                                Text("Invite \n& Accept \nFriends")
-                                    .fontWeight(.light)
-                                    .frame(width: 80, height: 50)
-                                    .foregroundColor(ColorManager .grey4)
-                                    .font(.system(size: 13))
-                                    .background(Color.green)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            })
-                        
-//                    }
-                    
+//                VStack {
+//
+//
+//                    Spacer()
+//                        .frame(height: 70)
+////                    Text("How to ")
+////                        .foregroundColor(ColorManager .grey2)
+////                        .font(.system(size: 20, weight: .light))
+////                        .opacity(0.7)
+//
 //                    HStack {
-                        NavigationLink(
-                            
-                            destination: INFOPreload3(user: user),
-                            label: {
-                                Text("Free \nStickers")
-                                    .fontWeight(.light)
-                                    .frame(width: 80, height: 50)
-                                    .foregroundColor(ColorManager .grey4)
-                                    .font(.system(size: 13))
-                                    .background(Color.green)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            })
-                        
-                        
-                        
-                        Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
-                            
-                            Text("Influencers")
-                                .fontWeight(.light)
-                                .frame(width: 80, height: 50)
-                                .foregroundColor(ColorManager .grey4)
-                                .font(.system(size: 13))
-                                .background(Color.green)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        }
+//                        NavigationLink(
+//
+//                            destination: InfoInsideChat(user: user),
+//                            label: {
+//                                Text("Create Chat \nRooms")
+//                                    .fontWeight(.light)
+//                                    .frame(width: 80, height: 50)
+//                                    .foregroundColor(ColorManager .grey4)
+//                                    .font(.system(size: 13))
+//                                    .background(Color.green)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                            })
+//
+//                        //                    InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups
+//
+//                        NavigationLink(
+//
+//                            destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
+//                            label: {
+//                                Text("Invite \n& Accept \nFriends")
+//                                    .fontWeight(.light)
+//                                    .frame(width: 80, height: 50)
+//                                    .foregroundColor(ColorManager .grey4)
+//                                    .font(.system(size: 13))
+//                                    .background(Color.green)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                            })
+//
+////                    }
+//
+////                    HStack {
+//                        NavigationLink(
+//
+//                            destination: INFOPreload3(user: user),
+//                            label: {
+//                                Text("Free \nStickers")
+//                                    .fontWeight(.light)
+//                                    .frame(width: 80, height: 50)
+//                                    .foregroundColor(ColorManager .grey4)
+//                                    .font(.system(size: 13))
+//                                    .background(Color.green)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                            })
+//
+//
+//
+//                        Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
+//
+//                            Text("Influencers")
+//                                .fontWeight(.light)
+//                                .frame(width: 80, height: 50)
+//                                .foregroundColor(ColorManager .grey4)
+//                                .font(.system(size: 13))
+//                                .background(Color.green)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        }
                     }
                     
                 }
             }
         }
         
-    }
+    
     
     
     
@@ -587,6 +592,6 @@ struct MyRoomView: View {
             .padding()
         }
     }
-}
+
 
 
