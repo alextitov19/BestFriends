@@ -55,7 +55,7 @@ struct FH5: View {
                     ZStack {
                         
                         Spacer()
-                            .frame(height: 70)
+                            .frame(height: 50)
                         
                         Image(systemName: "circle.fill")
                             .resizable()
@@ -67,7 +67,7 @@ struct FH5: View {
                             
                             
                             Spacer()
-                                .frame(height: 150)
+                                .frame(height: 90)
                             
                             Text("That's Right: \n\nWe even let you know when \na friend is ready to talk \nafter a fight.")
                                 .font(.system(size: 27))
@@ -81,7 +81,7 @@ struct FH5: View {
                             
                             Image("girlwalking250")
                                 .resizable()
-                                .frame(width: 100, height: 100)
+                                .frame(width: 125, height: 125)
                             
                         }
                         

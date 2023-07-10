@@ -66,7 +66,7 @@ struct FH6: View {
                             
                             
                             Spacer()
-                                .frame(height: 150)
+                                .frame(height: 100)
                             
                             Text("Tough day? \n\nYour friend sent a HUG, \nhold phone to your heart. \n\nYep, it vibrates.")
                                 .font(.system(size: 27))
@@ -76,7 +76,7 @@ struct FH6: View {
                             
                             
                             Spacer()
-                                .frame(height: 20)
+                                .frame(height: 10)
                             
                             Image("Guy275")
                                 .resizable()
