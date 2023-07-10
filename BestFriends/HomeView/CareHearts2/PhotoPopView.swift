@@ -83,12 +83,25 @@ struct PhotoPopView: View {
 //                    .opacity(0.50)
 //                    .multilineTextAlignment(.center)
 //
-              
+                Button(action: {
+                    sessionManager.showLogin()
+                },
+                    label: {
+                    Image("home-alt2")
+                        .frame(width: 50, height: 25)
+                        .foregroundColor(.white)
+                        .font(.system(size: 20))
+                        .background(ColorManager .grey2)
+                        .cornerRadius(15)
+                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                        .opacity(0.70)
+                    
+                })
                     
                 NavigationLink(
                     destination: PhotoPop3(user: user, friends: friends),
                     label: {
-                        Text("SENDING FIRST IMAGE TO FIRST FRIEND: \n1) tap 'camera' or 'gallery' icon \n2) select friend from dropdown menu  \n3) add gallery or camera image \n4) tap [Send Push Notificaton] & select 'that specific' friend sending image to and tap [Share] \nNOTE: \nCan only send ONE image to ONE friend at a time \n\n\nSENDING NEW IMAGE TO SAME FRIEND:  \n1) DELETE first image by tapping it \n2) upload new image \n3) tap [Send Push Notificaton] and share image \nNOTE: \nCan only have ONE active image at a time for each friend \n\nREPEAT FOR EACH FRIEND \n\nWhen friend 'shakes' phone your image pops up full-screen \nThey tap image to see next PhotoPOP from next friend")
+                        Text("INSTRUCTIONS: \n\n1) tap 'camera' or 'gallery' icon \n2) select friend from dropdown menu  \n3) add gallery or camera image \n4) tap [Send Notificaton to Friend], select friend sending image to - tap [Share] \n\nNOTE: \nYou can only send ONE image to ONE friend at a time \n\n\nSENDING NEW IMAGE:  \n1) First, 'MUST DELETE' current image (just tap it) \n2) MUST tap Home button above and return \n(clears old image) \n3) upload new image \n4) Send notification")
                             .fontWeight(.regular)
                             .frame(width: 330, height: 390)
                             .foregroundColor(ColorManager .grey4)
