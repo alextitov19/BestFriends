@@ -69,19 +69,19 @@ struct FH3: View {
                             Spacer()
                                 .frame(height: 150)
                             
-                            Text("?????")
+                            Text("Please turn on Notifications \nfor real-time friendships")
                                 .font(.system(size: 27))
-                                .foregroundColor(ColorManager .grey1)
-                                .fontWeight(.thin)
+                                .foregroundColor(Color.green)
+                                .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                             
                             
                             Spacer()
-                                .frame(height: 20)
+                                .frame(height: 10)
                             
                             Image("Girl400")
                                 .resizable()
-                                .frame(width: 150, height: 150)
+                                .frame(width: 170, height: 170)
                             
                         }
                         

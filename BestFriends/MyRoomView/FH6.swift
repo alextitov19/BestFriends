@@ -76,7 +76,7 @@ struct FH6: View {
                             
                             
                             Spacer()
-                                .frame(height: 10)
+                                .frame(height: 1)
                             
                             Image("Guy275")
                                 .resizable()
@@ -88,7 +88,7 @@ struct FH6: View {
                         VStack {
                             
                             Spacer()
-                                .frame(height: 30)
+                                .frame(height: 10)
                            
                                
                           
