@@ -43,37 +43,37 @@ struct MyRoomView: View {
                     VStack {
                         ZStack {
                             
-                            NavigationLink(destination: PhotoPopView(user: user, friends: friends),
-                                           label: {
-                                Text("")
-                                    .fontWeight(.thin)
-                                    .frame(width: 50, height: 30)
-                                    .foregroundColor(ColorManager .grey1)
-                                    .font(.system(size: 30))
-                                //                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            })
+//                            NavigationLink(destination: PhotoPopView(user: user, friends: friends),
+//                                           label: {
+//                                Text("")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 50, height: 30)
+//                                    .foregroundColor(ColorManager .grey1)
+//                                    .font(.system(size: 30))
+//                                //                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            })
                             
                             
                             
-                            Image(systemName: "camera")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 25, height: 25)
-                                .opacity(0.3)
-                                .foregroundColor(.white)
+//                            Image(systemName: "camera")
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 25, height: 25)
+//                                .opacity(0.3)
+//                                .foregroundColor(.white)
                         }
                         
-                        Text("Send")
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 8, weight: .light))
-                            .opacity(0.7)
-                        
-                        Text("PhotoPOP")
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 8, weight: .light))
-                            .opacity(0.7)
+//                        Text("Send")
+//                            .foregroundColor(Color.white)
+//                            .font(.system(size: 8, weight: .light))
+//                            .opacity(0.7)
+//
+//                        Text("PhotoPOP")
+//                            .foregroundColor(Color.white)
+//                            .font(.system(size: 8, weight: .light))
+//                            .opacity(0.7)
                         
                     }
                
@@ -345,14 +345,55 @@ struct MyRoomView: View {
                 }
                 
                 
+                HStack {
+                    
+                   
+                  
+                    
+                    NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
+                                    label: {
+                        Text("Send")
+                            .fontWeight(.thin)
+                            .frame(width: 75, height: 50)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 17))
+                            .background(Color .orange)
+                            .opacity(0.6)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
+                    
+                    
+                    Text("< PhotoPOP >")
+                        .fontWeight(.light)
+                        .frame(width: 147, height: 60)
+                        .foregroundColor(Color.white)
+                        .font(.system(size: 22))
+                        .background(ColorManager .purple3)
+                        .opacity(0.6)
+                        .cornerRadius(15)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    
+                    NavigationLink( destination: INFOPreloadA(user: user, friends: friends),
+                                    label: {
+                        Text("Request")
+                            .fontWeight(.thin)
+                            .frame(width: 75, height: 50)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 17))
+                            .background(Color .orange)
+                            .opacity(0.6)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
+                    
+                }
+                
+                
+
                 
                 NavigationLink(destination: JournalsView(friends: friends), label: {
                     MyRoomRowView(title: "FriendGroup Journal", imageName: "text.book.closed", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
-                })
-                
-                //                                    Step3_BreathInviteView(user: user, friends: friends, groups: groups
-                NavigationLink(destination:  INFOPreloadA(user: user, friends: friends), label: {
-                    MyRoomRowView(title: "Where are you?", imageName: "camera", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
                 
                 
@@ -360,7 +401,18 @@ struct MyRoomView: View {
                     MyRoomRowView(title: "Friendship Highlights", imageName: "star", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
                 })
                 
-            
+                //
+                //
+                //                NavigationLink(destination:  INFOPreloadA(user: user, friends: friends), label: {
+                //                    MyRoomRowView(title: "Where are you?", imageName: "camera", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                //                })
+                //
+                //                NavigationLink(destination:  PhotoPopView(user: user, friends: friends), label: {
+                //                    MyRoomRowView(title: "Send a PhotoPoP", imageName: "camera", backgroundColor: ColorManager.purple3.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
+                //                })
+                
+                Spacer()
+                    .frame(height: 100)
           
    
        

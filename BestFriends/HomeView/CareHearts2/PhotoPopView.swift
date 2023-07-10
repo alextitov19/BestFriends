@@ -101,7 +101,7 @@ struct PhotoPopView: View {
                 NavigationLink(
                     destination: PhotoPop3(user: user, friends: friends),
                     label: {
-                        Text("INSTRUCTIONS: \n\n1) tap 'camera' or 'gallery' icon \n2) select friend from dropdown menu  \n3) add gallery or camera image \n4) tap [Send Notificaton to Friend], select friend sending image to - tap [Share] \n\nNOTE: \nYou can only send ONE image to ONE friend at a time \n\n\nSENDING NEW IMAGE:  \n1) First, 'MUST DELETE' current image (just tap it) \n2) MUST tap Home button above and return \n(clears old image) \n3) upload new image \n4) Send notification")
+                        Text("INSTRUCTIONS: \n\n1) tap 'camera' or 'gallery' icon \n2) select friend from dropdown menu  \n3) add gallery or camera image \n4) tap [Send Notificaton to Friend], select friend - tap [Share] \n\nNOTE: \nYou can only send ONE \nimage to ONE friend at a time \n\n\nSENDING NEW IMAGE:  \n1) First, 'MUST DELETE' current image (just tap it) \n2) MUST tap Home button above and return \n(clears old image) \n3) upload new image")
                             .fontWeight(.regular)
                             .frame(width: 330, height: 390)
                             .foregroundColor(ColorManager .grey4)
