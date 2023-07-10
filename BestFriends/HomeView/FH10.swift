@@ -58,7 +58,7 @@ struct FH10: View {
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
             
                 
-                Text("Friends show up as planets \naround your planet")
+                Text("Friends show up as smaller planets circling around your planet")
                     .fontWeight(.thin)
                     .frame(width: 300, height: 60)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -68,9 +68,9 @@ struct FH10: View {
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 
              
-                NavigationLink(
-                    destination: EmptyView(),
-                   label: {
+//                NavigationLink(
+//                    destination: EmptyView(),
+//                   label: {
                        Text("Friend's current 'vibe' shows as atmosphere around their planet")
                            .fontWeight(.thin)
                            .frame(width: 300, height: 60)
@@ -79,7 +79,7 @@ struct FH10: View {
                            .background(ColorManager.grey3)
                            .cornerRadius(10)
                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                   })
+                   
                 
                 Spacer ()
                     .frame(height: 30)
