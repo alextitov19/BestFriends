@@ -1,5 +1,5 @@
 //
-//  FH7.swift
+//  FH4.swift
 //  BestFriends
 //
 //  Created by Zhengxu Wang on 7/7/23.
@@ -9,7 +9,7 @@
 import Foundation
 import SwiftUI
 
-struct FH7: View {
+struct FH4: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     @State private var selectedFriends: [String] = []
@@ -69,7 +69,7 @@ struct FH7: View {
                             Spacer()
                                 .frame(height: 150)
                             
-                            Text("Your friend sent a PhotoPOP. \n\nShake you iPhone and friend's \nimage pops up full-screen.")
+                            Text("Your friends love you: \n\nRedeem a Friendship Coupon.")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
@@ -79,9 +79,9 @@ struct FH7: View {
                             Spacer()
                                 .frame(height: 20)
                             
-                            Image("FatGuy200")
+                            Image("book200")
                                 .resizable()
-                                .frame(width: 150, height: 150)
+                                .frame(width: 100, height: 100)
                             
                         }
                         
@@ -94,7 +94,7 @@ struct FH7: View {
                                
                           
                             NavigationLink(
-                                destination: FH6(),
+                                destination: EmptyView(),
                                 label: {
                                     Text("->")
                                         .fontWeight(.thin)

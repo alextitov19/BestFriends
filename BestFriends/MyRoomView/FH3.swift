@@ -1,5 +1,5 @@
 //
-//  FH7.swift
+//  FH3.swift
 //  BestFriends
 //
 //  Created by Zhengxu Wang on 7/7/23.
@@ -9,7 +9,7 @@
 import Foundation
 import SwiftUI
 
-struct FH7: View {
+struct FH3: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     @State private var selectedFriends: [String] = []
@@ -51,7 +51,7 @@ struct FH7: View {
                 //                ScrollView {
                 
                 VStack {
-
+                    
                     ZStack {
                         
                         Spacer()
@@ -69,7 +69,7 @@ struct FH7: View {
                             Spacer()
                                 .frame(height: 150)
                             
-                            Text("Your friend sent a PhotoPOP. \n\nShake you iPhone and friend's \nimage pops up full-screen.")
+                            Text("Your friends love you: \n\nRedeem a Friendship Coupon.")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
@@ -86,40 +86,54 @@ struct FH7: View {
                         }
                         
                     }
-                        VStack {
+                    VStack {
+                        
+                        Spacer()
+                            .frame(height: 30)
+                        
+                        Button(action: {
+                            sessionManager.showLogin()
+                        },
+                               label: {
+                            Image("home-alt2")
+                                .frame(width: 50, height: 25)
+                                .foregroundColor(.white)
+                                .font(.system(size: 20))
+                                .background(ColorManager .grey2)
+                                .cornerRadius(15)
+                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                .opacity(0.70)
                             
-                            Spacer()
-                                .frame(height: 30)
-                           
-                               
-                          
-                            NavigationLink(
-                                destination: FH6(),
-                                label: {
-                                    Text("->")
-                                        .fontWeight(.thin)
-                                        .foregroundColor(Color.white)
-                                        .frame(width: 40, height: 40)
-                                        .font(.system(size: 30))
-                                        .background(ColorManager .grey2)
-                                        .opacity(0.95)
-                                        .cornerRadius(5)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                }
-                                
-                            )}
-                            
-                            
-                            
-                            
-                                Spacer()
-                                    .frame(height: 40)
-
-                        }
+                        })
+                        
+                        //                            NavigationLink(
+                        //                                destination: EmptyView(),
+                        //                                label: {
+                        //                                    Text("->")
+                        //                                        .fontWeight(.thin)
+                        //                                        .foregroundColor(Color.white)
+                        //                                        .frame(width: 40, height: 40)
+                        //                                        .font(.system(size: 30))
+                        //                                        .background(ColorManager .grey2)
+                        //                                        .opacity(0.95)
+                        //                                        .cornerRadius(5)
+                        //                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        //                                }
+                        
+                        //                            )}
+                        
+                        
+                        
+                        
+                        Spacer()
+                            .frame(height: 40)
                         
                     }
                     
                 }
                 
             }
+            
         }
+    }
+}
