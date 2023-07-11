@@ -138,13 +138,13 @@ struct HugPreload: View {
                     .opacity(0.3)
                     
                     
-                    NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .grey3, friendName: "send a \nfist pump")
-                    })
-                    .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
-                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-//                    .opacity(0.65)
-                    .opacity(0.3)
+//                    NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
+//                        HugCircle (color: ColorManager .grey3, friendName: "send a \nfist pump")
+//                    })
+//                    .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
+//                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+////                    .opacity(0.65)
+//                    .opacity(0.3)
                     
                     
                     
@@ -237,6 +237,7 @@ struct HugPreload: View {
 
                     Text(friendName)
                         .fontWeight(.light)
+                        .font(.system(size: 20))
                         .italic()
                         .foregroundColor(.black)
 

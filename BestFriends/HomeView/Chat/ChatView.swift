@@ -62,19 +62,19 @@ struct ChatView: View {
 //                           .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 //                   })
                 HStack {
-                    Image(systemName: "info.circle")
-                        .resizable()
-                        .frame(width: 27, height: 27)
-                        .scaledToFill()
-                        .foregroundColor(.white)
-                        .onTapGesture(perform: {
-//                            sessionManager.infoView(user: user, group: group)
-                        })
+//                    Image(systemName: "info.circle")
+//                        .resizable()
+//                        .frame(width: 27, height: 27)
+//                        .scaledToFill()
+//                        .foregroundColor(.white)
+//                        .onTapGesture(perform: {
+////                            sessionManager.infoView(user: user, group: group)
+//                        })
                     
                     
                     Image("home-alt2")
                         .resizable()
-                        .frame(width: 30, height: 30)
+                        .frame(width: 35, height: 35)
                         .scaledToFill()
                         .onTapGesture(perform: {
                             sessionManager.showHome()
@@ -86,9 +86,12 @@ struct ChatView: View {
                         }
                     
                     
+                    Spacer ()
+                        .frame(width: 20)
+                    
                     Image("lock-alt")
                         .resizable()
-                        .frame(width: 30, height: 30)
+                        .frame(width: 35, height: 35)
                         .scaledToFill()
                         .onTapGesture(perform: {
                             var hiddenGroups: [String] = user.hiddenGroups ?? []
@@ -112,11 +115,15 @@ struct ChatView: View {
                             HideChatView(sessionManager: _sessionManager, user: user, group: group)
                         }
                     //                    }//NavLink
+                  
                     
-                    Text("Remove ME \nfrom room")
+                    Spacer ()
+                        .frame(width: 20)
+                    
+                    Text("Remove me \nfrom room")
                         .foregroundColor(ColorManager.grey4)
                     //                        .foregroundColor(.gray)
-                        .font(.system(size: 10, weight: .thin))
+                        .font(.system(size: 12, weight: .thin))
                         .onTapGesture(perform: leaveChatGroup)
               
                 
