@@ -293,7 +293,7 @@ struct MyRoomView: View {
                 
                 
                 Spacer()
-                    .frame(height: 80)
+                    .frame(height: 40)
                 
                 //                 TryThis
                 NavigationLink(destination: FH9(), label: {
@@ -519,7 +519,7 @@ struct MyRoomView: View {
                     //                                })
                     
                     Spacer()
-                        .frame(height: 200)
+                        .frame(height: 100)
                     
                     
                     
