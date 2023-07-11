@@ -686,6 +686,22 @@
 			path = ReceivedCareHearts;
 			sourceTree = "<group>";
 		};
+		2DFB032E2A5D333F00669948 /* RealtimeFriendshipHighlights */ = {
+			isa = PBXGroup;
+			children = (
+				2DFB03172A57228D00669948 /* FH10.swift */,
+				2DFB03152A57228400669948 /* FH9.swift */,
+				2DFB03132A57227900669948 /* FH8.swift */,
+				2DFB03112A57226E00669948 /* FH7.swift */,
+				2DFB030F2A57226200669948 /* FH6.swift */,
+				2DFB030D2A57223E00669948 /* FH5.swift */,
+				2DFB030B2A57223100669948 /* FH4.swift */,
+				2DFB03092A57222300669948 /* FH3.swift */,
+				2DFB03072A57221600669948 /* FH2.swift */,
+			);
+			path = RealtimeFriendshipHighlights;
+			sourceTree = "<group>";
+		};
 		7A1C048627F4C3A90002B173 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -816,16 +832,8 @@
 		7A8F3D7C2A32BC5D00BC2CF4 /* MyRoomView */ = {
 			isa = PBXGroup;
 			children = (
+				2DFB032E2A5D333F00669948 /* RealtimeFriendshipHighlights */,
 				2DFB03192A5D2FD200669948 /* ReceivedCareHearts */,
-				2DFB03172A57228D00669948 /* FH10.swift */,
-				2DFB03152A57228400669948 /* FH9.swift */,
-				2DFB03132A57227900669948 /* FH8.swift */,
-				2DFB03112A57226E00669948 /* FH7.swift */,
-				2DFB030F2A57226200669948 /* FH6.swift */,
-				2DFB030D2A57223E00669948 /* FH5.swift */,
-				2DFB030B2A57223100669948 /* FH4.swift */,
-				2DFB03092A57222300669948 /* FH3.swift */,
-				2DFB03072A57221600669948 /* FH2.swift */,
 				2DFB02FE2A57217100669948 /* FriendshipHighlights */,
 				CF2EE6F729516C8A00B1B16D /* InfoHowChatWorks.swift */,
 				7A8F3D7D2A32C63000BC2CF4 /* MyRoomView.swift */,
