@@ -67,7 +67,7 @@ struct CH10: View {
 
               
 
-                        NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
+                        NavigationLink(destination: CH9(user: user, friends: friends), label: {
                             HugCircle (color: ColorManager .red, friendName: "jump up \nand catch \nmy kiss")
                         })
                         .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
