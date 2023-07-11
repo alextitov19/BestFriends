@@ -47,7 +47,7 @@ struct HugPreload: View {
 
             ZStack{
 
-//
+
 //                    NavigationLink(destination: InfoWhyLoveBF(user: user, friends: friends), label: {
 //                        HugCircle (color: ColorManager.purple1, friendName: "you looked \nnice \ntoday")
 //                    })
@@ -55,8 +55,8 @@ struct HugPreload: View {
 //                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
 ////                    .opacity(0.6)
 //                    .opacity(0.65)
-//
-//
+////
+////
 
 //
 //

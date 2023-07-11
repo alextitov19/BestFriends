@@ -102,14 +102,14 @@ struct CH9: View {
                             VStack {
                                
                                 Text("kisses")
-                                    .font(.system(size: 55, weight: .light))
+                                    .font(.system(size: 60, weight: .light))
                                     .foregroundColor(ColorManager .grey2)
                                 
                                 Text("kisses")
-                                    .font(.system(size: 55, weight: .light))
+                                    .font(.system(size: 50, weight: .light))
                                     .foregroundColor(ColorManager .grey2)
                                 Text("kisses")
-                                    .font(.system(size: 55, weight: .light))
+                                    .font(.system(size: 40, weight: .light))
                                     .foregroundColor(ColorManager .grey2)
                             }
                         }
@@ -125,13 +125,15 @@ struct CH9: View {
          
                 VStack {
 
-                    Text("the air is fresh and full of kisses")
+                    Text("the air is fresh with kisses")
                                             .font(.system(size: 23))
                 
                                             .foregroundColor(ColorManager .grey2)
                                             .fontWeight(.thin)
                                             .multilineTextAlignment(.center)
                     
+                    Spacer()
+                        .frame(height: 20)
                     
                     Text("send a thank you")
                                             .font(.system(size: 18))
