@@ -46,13 +46,7 @@ struct HugPreload: View {
 
 
             ZStack{
-//
-//                NavigationLink(destination: SendSongPush(user: user, friends: friends), label: {
-//                    HugCircle (color: ColorManager .grey1, friendName: "send a \nsong")
-//                })
-//                .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-//                .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
-//                .opacity(0.65)
+
 //
 //                    NavigationLink(destination: InfoWhyLoveBF(user: user, friends: friends), label: {
 //                        HugCircle (color: ColorManager.purple1, friendName: "you looked \nnice \ntoday")
@@ -63,13 +57,7 @@ struct HugPreload: View {
 //                    .opacity(0.65)
 //
 //
-//                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), label: {
-//                        HugCircle (color: ColorManager .orange2, friendName: "thinking \nof you")
-//                    })
-//                    .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
-//                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-////
-//                    .opacity(065)
+
 //
 //
 //
@@ -122,28 +110,65 @@ struct HugPreload: View {
                         })
                         .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
                         .shadow(color: Color .pink, radius: 10, x: 10, y: 10)
-                        .opacity(0.50)
-
-                  
-
-                    
-                    NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .purple4, friendName: "send a \nPhotoPOP")
-                    })
-                    .offset(x: showItems ? -60 : 0, y: showItems ? 350: 0)
-                    .shadow(color: ColorManager .purple5, radius: 10, x: 10, y: 10)
-    //                .opacity(0.85)
-                    .opacity(0.65)
-
-
+                        .opacity(0.3)
 
                     NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager.grey3, friendName: "send a \nhug")
+                        HugCircle (color: ColorManager.orange5, friendName: "send a \nhug")
                     })
                     .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
                     .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
     //                    .opacity(0.6)
-                    .opacity(0.65)
+                    .opacity(0.3)
+
+                    
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), label: {
+                        HugCircle (color: ColorManager .orange2, friendName: "thinking \nof you")
+                    })
+                    .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                    
+                    .opacity(0.3)
+                    
+                  
+                    NavigationLink(destination: SendSongPush(user: user, friends: friends), label: {
+                        HugCircle (color: ColorManager .grey1, friendName: "song to \nmatch your \nVibe")
+                    })
+                    .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+                    .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+                    .opacity(0.3)
+                    
+                    
+                    NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
+                        HugCircle (color: ColorManager .grey3, friendName: "send a \nfist pump")
+                    })
+                    .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
+                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+//                    .opacity(0.65)
+                    .opacity(0.3)
+                    
+                    
+                    
+              
+//  *************************************** 
+                    
+                    //                    NavigationLink(destination: HurtFeelings(user: user, friends: friends, groups: groups, atmosphere: atmosphere), label: {
+                    //                        HugCircle (color: ColorManager .grey1, friendName: "MORE \nCareHearts")
+                    //                    })
+                    //                    .offset(x: showItems ? 50 : 0, y: showItems ? 50: 0)
+                    //                    .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
+                    //                    .opacity(0.65)
+                    
+//                    NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
+//                        HugCircle (color: ColorManager .purple4, friendName: "send a \nPhotoPOP")
+//                    })
+//                    .offset(x: showItems ? -60 : 0, y: showItems ? 350: 0)
+//                    .shadow(color: ColorManager .purple5, radius: 10, x: 10, y: 10)
+//    //                .opacity(0.85)
+//                    .opacity(0.65)
+
+
+
+                    
 
 
 //                    NavigationLink(destination: EmptyView(), label: {
@@ -153,14 +178,9 @@ struct HugPreload: View {
 //                    .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
 //    //                    .opacity(0.6)
 //                    .opacity(0.65)
+//
 
-                    NavigationLink(destination: HurtFeelings(user: user, friends: friends, groups: groups, atmosphere: atmosphere), label: {
-                        HugCircle (color: ColorManager .grey1, friendName: "MORE \nCareHearts")
-                    })
-                    .offset(x: showItems ? 50 : 0, y: showItems ? 50: 0)
-                    .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
-                    .opacity(0.65)
-
+//
 
 
 
@@ -212,7 +232,7 @@ struct HugPreload: View {
                         .resizable()
                         .foregroundColor(color)
                     //                            .foregroundColor(ColorManager .purple2)
-                        .frame(width: 130, height: 100)
+                        .frame(width: 200, height: 150)
                         .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
 
                     Text(friendName)
