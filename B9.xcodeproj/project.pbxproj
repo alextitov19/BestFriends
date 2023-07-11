@@ -833,7 +833,6 @@
 			isa = PBXGroup;
 			children = (
 				2DFB032E2A5D333F00669948 /* RealtimeFriendshipHighlights */,
-				2DFB03192A5D2FD200669948 /* ReceivedCareHearts */,
 				2DFB02FE2A57217100669948 /* FriendshipHighlights */,
 				CF2EE6F729516C8A00B1B16D /* InfoHowChatWorks.swift */,
 				7A8F3D7D2A32C63000BC2CF4 /* MyRoomView.swift */,
@@ -965,6 +964,7 @@
 				7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */,
 				7AD2642929EDCE020007ACD5 /* NotificationsView.swift */,
 				CF725E2628516E180096342F /* Tokens */,
+				2DFB03192A5D2FD200669948 /* ReceivedCareHearts */,
 				CFD8BD1229156D2A00F86EFB /* PlanetView */,
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
