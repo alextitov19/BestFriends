@@ -19,6 +19,16 @@
 		2DFB03142A57227900669948 /* FH8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB03132A57227900669948 /* FH8.swift */; };
 		2DFB03162A57228400669948 /* FH9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB03152A57228400669948 /* FH9.swift */; };
 		2DFB03182A57228D00669948 /* FH10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB03172A57228D00669948 /* FH10.swift */; };
+		2DFB031B2A5D304B00669948 /* CH1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB031A2A5D304B00669948 /* CH1.swift */; };
+		2DFB031D2A5D305A00669948 /* CH2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB031C2A5D305A00669948 /* CH2.swift */; };
+		2DFB031F2A5D306400669948 /* CH3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB031E2A5D306400669948 /* CH3.swift */; };
+		2DFB03212A5D307A00669948 /* CH4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB03202A5D307A00669948 /* CH4.swift */; };
+		2DFB03232A5D308600669948 /* CH5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB03222A5D308600669948 /* CH5.swift */; };
+		2DFB03252A5D309200669948 /* CH6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB03242A5D309200669948 /* CH6.swift */; };
+		2DFB03272A5D30A200669948 /* CH7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB03262A5D30A200669948 /* CH7.swift */; };
+		2DFB03292A5D30AC00669948 /* CH8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB03282A5D30AC00669948 /* CH8.swift */; };
+		2DFB032B2A5D30B600669948 /* CH9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB032A2A5D30B600669948 /* CH9.swift */; };
+		2DFB032D2A5D30C200669948 /* CH10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB032C2A5D30C200669948 /* CH10.swift */; };
 		39D0524EB9F9947C28B9D613 /* Pods_BestFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */; };
 		622F68F9289C6B76001D1997 /* HorizonThoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622F68F8289C6B75001D1997 /* HorizonThoughts.swift */; };
 		62319AAD284A788000CA0359 /* FG_Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62319AAC284A788000CA0359 /* FG_Video.swift */; };
@@ -327,6 +337,16 @@
 		2DFB03132A57227900669948 /* FH8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FH8.swift; sourceTree = "<group>"; };
 		2DFB03152A57228400669948 /* FH9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FH9.swift; sourceTree = "<group>"; };
 		2DFB03172A57228D00669948 /* FH10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FH10.swift; sourceTree = "<group>"; };
+		2DFB031A2A5D304B00669948 /* CH1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH1.swift; sourceTree = "<group>"; };
+		2DFB031C2A5D305A00669948 /* CH2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH2.swift; sourceTree = "<group>"; };
+		2DFB031E2A5D306400669948 /* CH3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH3.swift; sourceTree = "<group>"; };
+		2DFB03202A5D307A00669948 /* CH4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH4.swift; sourceTree = "<group>"; };
+		2DFB03222A5D308600669948 /* CH5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH5.swift; sourceTree = "<group>"; };
+		2DFB03242A5D309200669948 /* CH6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH6.swift; sourceTree = "<group>"; };
+		2DFB03262A5D30A200669948 /* CH7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH7.swift; sourceTree = "<group>"; };
+		2DFB03282A5D30AC00669948 /* CH8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH8.swift; sourceTree = "<group>"; };
+		2DFB032A2A5D30B600669948 /* CH9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH9.swift; sourceTree = "<group>"; };
+		2DFB032C2A5D30C200669948 /* CH10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH10.swift; sourceTree = "<group>"; };
 		622F68F8289C6B75001D1997 /* HorizonThoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonThoughts.swift; sourceTree = "<group>"; };
 		62319AAC284A788000CA0359 /* FG_Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FG_Video.swift; sourceTree = "<group>"; };
 		62372A142884D57500CAB75C /* HorizonGoalChoices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizonGoalChoices.swift; sourceTree = "<group>"; };
@@ -649,6 +669,23 @@
 			path = FriendshipHighlights;
 			sourceTree = "<group>";
 		};
+		2DFB03192A5D2FD200669948 /* ReceivedCareHearts */ = {
+			isa = PBXGroup;
+			children = (
+				2DFB031A2A5D304B00669948 /* CH1.swift */,
+				2DFB031C2A5D305A00669948 /* CH2.swift */,
+				2DFB031E2A5D306400669948 /* CH3.swift */,
+				2DFB03202A5D307A00669948 /* CH4.swift */,
+				2DFB03222A5D308600669948 /* CH5.swift */,
+				2DFB03242A5D309200669948 /* CH6.swift */,
+				2DFB03262A5D30A200669948 /* CH7.swift */,
+				2DFB03282A5D30AC00669948 /* CH8.swift */,
+				2DFB032A2A5D30B600669948 /* CH9.swift */,
+				2DFB032C2A5D30C200669948 /* CH10.swift */,
+			);
+			path = ReceivedCareHearts;
+			sourceTree = "<group>";
+		};
 		7A1C048627F4C3A90002B173 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -779,6 +816,7 @@
 		7A8F3D7C2A32BC5D00BC2CF4 /* MyRoomView */ = {
 			isa = PBXGroup;
 			children = (
+				2DFB03192A5D2FD200669948 /* ReceivedCareHearts */,
 				2DFB03172A57228D00669948 /* FH10.swift */,
 				2DFB03152A57228400669948 /* FH9.swift */,
 				2DFB03132A57227900669948 /* FH8.swift */,
@@ -1822,7 +1860,9 @@
 				CFD0ABD1285C00FF0032CA3D /* ReportIssues.swift in Sources */,
 				7AD8DEFD27F66C9800D9F0E1 /* ChatModels.swift in Sources */,
 				7AFCF27A27FDFFA800D2DB5C /* BlurView.swift in Sources */,
+				2DFB031D2A5D305A00669948 /* CH2.swift in Sources */,
 				2DFB03162A57228400669948 /* FH9.swift in Sources */,
+				2DFB03252A5D309200669948 /* CH6.swift in Sources */,
 				7A0856A227F3D9A900E8282B /* RestAPI.swift in Sources */,
 				CF3B42F6293721A500EE1D84 /* SaySomethingNice6.swift in Sources */,
 				CFCD4BAF2965CE5C00BBE43A /* InfoComingChat.swift in Sources */,
@@ -1896,6 +1936,7 @@
 				7ACB385328208D38009559AF /* ImagePicker.swift in Sources */,
 				CF65041828931C0B0092EEB9 /* FightsDVid.swift in Sources */,
 				CFAB540F281CA79200BBF502 /* Step5_Why.swift in Sources */,
+				2DFB03232A5D308600669948 /* CH5.swift in Sources */,
 				CF3B65B9280081550003A714 /* SettingsNotificationsView.swift in Sources */,
 				CFAB5422281FC8B800BBF502 /* TextingNote.swift in Sources */,
 				CF9E33C8284530CF00107433 /* FG_GettingStarted.swift in Sources */,
@@ -1915,6 +1956,7 @@
 				CF3295FD290BBD210014F658 /* InfoCoolVideo.swift in Sources */,
 				7ACD20BE27FCBC18002F7800 /* PendingInviteView.swift in Sources */,
 				CFD8BD0A29132AE700F86EFB /* AtmosphereInfo1.swift in Sources */,
+				2DFB03212A5D307A00669948 /* CH4.swift in Sources */,
 				CF3B65EA2803F3050003A714 /* BreathInView.swift in Sources */,
 				CF4A08D82877E2B600ADA9DD /* NostalgiaPreload.swift in Sources */,
 				CF3B65AF2800783F0003A714 /* TermsOfServicePrivacy.swift in Sources */,
@@ -1944,6 +1986,7 @@
 				CF9957F328A73EFA000BBAFF /* CancellingPURPLE.swift in Sources */,
 				CF41280E29275467003BCBFA /* SurveyStickersPreload.swift in Sources */,
 				CFDA4BD828D1999900118D90 /* Heart.swift in Sources */,
+				2DFB031B2A5D304B00669948 /* CH1.swift in Sources */,
 				CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */,
 				7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */,
 				CF8F76C6293866BB00B109D3 /* AskQuestion.swift in Sources */,
@@ -1967,6 +2010,7 @@
 				CFD046952835925F00BF0B02 /* FriendValutTrackMoods.swift in Sources */,
 				7AD8DF0927F6948A00D9F0E1 /* AdPlayerView.swift in Sources */,
 				CF381A5228283D5C00B3719E /* IntroFriendGpFight.swift in Sources */,
+				2DFB03292A5D30AC00669948 /* CH8.swift in Sources */,
 				CF2738AA2813C5740070E9D3 /* NewSmileNoteCard.swift in Sources */,
 				CF565EEC2935A61200B66A18 /* MoodSongPushNote.swift in Sources */,
 				2DFB03182A57228D00669948 /* FH10.swift in Sources */,
@@ -1999,6 +2043,7 @@
 				62372A1B2884ECD500CAB75C /* HorizonInviteFriends.swift in Sources */,
 				CF65040A28915A080092EEB9 /* FD_Step1.swift in Sources */,
 				7A469E54284D6AC0004AF547 /* TextAlert.swift in Sources */,
+				2DFB032B2A5D30B600669948 /* CH9.swift in Sources */,
 				CF3B65E028020D9A0003A714 /* ChangePin.swift in Sources */,
 				CF4CFAC228E8DC3B00D6AEA9 /* SaySomethingNice3.swift in Sources */,
 				2DFB030C2A57223100669948 /* FH4.swift in Sources */,
@@ -2033,6 +2078,7 @@
 				2DFB030A2A57222300669948 /* FH3.swift in Sources */,
 				CFD6C0572940532F00D57E0B /* SaySomethingNice8.swift in Sources */,
 				CF3DB36B28D8DAC000BF9CCD /* DreamSteps.swift in Sources */,
+				2DFB032D2A5D30C200669948 /* CH10.swift in Sources */,
 				7AE3E9032838409B00567E2D /* ArrayExt.swift in Sources */,
 				7AB5216D289D97F7005A49FA /* IntuitiveView.swift in Sources */,
 				CFD12CC428179CD600AB2539 /* StreakCongratulations.swift in Sources */,
@@ -2047,6 +2093,7 @@
 				7ACDB1812828186D009E1CFD /* NotificationModels.swift in Sources */,
 				CFAB540D281BBA4C00BBF502 /* ReceivedFixFightNotification.swift in Sources */,
 				CF763F7C285AFBAB0010D1A9 /* HorizonsPrototype.swift in Sources */,
+				2DFB031F2A5D306400669948 /* CH3.swift in Sources */,
 				CFAB5400281A99B600BBF502 /* Step6_TextingFirst.swift in Sources */,
 				7A0856A027F3D94500E8282B /* AuthController.swift in Sources */,
 				7AFB534F2A383975008FF2B8 /* FriendPlanetsView.swift in Sources */,
@@ -2060,6 +2107,7 @@
 				CFD6C05F29416A3B00D57E0B /* HideMyRoomLink.swift in Sources */,
 				D0F5AB1B2840519700053F17 /* HorizonRocketColorPicker.swift in Sources */,
 				CF650422289EF8820092EEB9 /* PurpleNoAdInfoView.swift in Sources */,
+				2DFB03272A5D30A200669948 /* CH7.swift in Sources */,
 				7A380F1628271E3E007151AB /* AppDelegate.swift in Sources */,
 				7A4E336726A0D6FC00202BB7 /* CGFloatExtension.swift in Sources */,
 				CFDA4BDE28D3CEA300118D90 /* DreamMap.swift in Sources */,
