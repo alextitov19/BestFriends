@@ -27,14 +27,17 @@ struct JournalsView: View {
     
     var body: some View {
         ZStack {
-            ColorManager.purple7
+            Color.black
                 .opacity(0.3)
                 .ignoresSafeArea()
                 .onAppear { loadData() }
             
-            AdPlayerView(name: "sky2")
+            AdPlayerView(name: "Galaxy2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
+                .opacity(0.9)
+            
+
             
             VStack {
                 Text(selectedCategory)

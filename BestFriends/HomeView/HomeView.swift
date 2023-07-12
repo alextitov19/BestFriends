@@ -65,7 +65,7 @@ struct HomeView: View {
                 AdPlayerView(name: "Galaxy2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.7)
+                    .opacity(0.9)
                 
                 VStack {
                     if ((homeData) != nil) {
