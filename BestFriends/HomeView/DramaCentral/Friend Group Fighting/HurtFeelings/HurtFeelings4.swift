@@ -392,18 +392,12 @@ struct HurtFeelings4: View {
         
         ZStack {
       
-
-            
             if shareTapped {
-                
-                
-                
+          
                             ColorManager.grey4
                                 .ignoresSafeArea()
                                 .onAppear()
 
-
-                
             } else {
                 
                 Color.black
@@ -414,33 +408,10 @@ struct HurtFeelings4: View {
                     .blendMode(.screen)
                     .opacity(0.7)
 
-//                ColorManager.grey4
-//                    .opacity(0.5)
-//                    .ignoresSafeArea()
-//                    .onAppear()
-
                 
             }
             
-            VStack{
-                
-                HStack {
                     VStack {
-                   
-                        
-                        
-                        Spacer()
-                            .frame(height: 10)
-                        
-                        ZStack {
-                            
-//                                Image("KissesHeart")
-//                                    .resizable()
-//                                    .frame(width: 400, height: 325)
-//                                    .opacity(0.15)
-                                
-                                
-                            VStack {
                                 
                                 
                                     Text("It's been")
@@ -480,43 +451,11 @@ struct HurtFeelings4: View {
                                         Spacer()
                                             .frame(height: 40)
 
-
-
-                                    }
-
-                            }
                         }
-                      
-                        
-                    }
-                    
-//                    Image("BalloonGuy")
-//                        .resizable()
-//                        .frame(width: 200, height: 200)
-                }
              
          
                 VStack {
-//
-//                    Text("Jump up on a chair,")
-//                                            .font(.system(size: 23))
-//
-//                                            .foregroundColor(ColorManager .grey2)
-//                                            .fontWeight(.thin)
-//                                            .multilineTextAlignment(.center)
-//                    Text("then blow your kiss high up into ")
-//                                            .font(.system(size: 23))
-//
-//                                            .foregroundColor(ColorManager .grey2)
-//                                            .fontWeight(.thin)
-//                                            .multilineTextAlignment(.center)
-//
-//                    Text("the atmosphere towards your friend")
-//                                            .font(.system(size: 23))
-//
-//                                            .foregroundColor(ColorManager .grey2)
-//                                            .fontWeight(.thin)
-//                                            .multilineTextAlignment(.center)
+
                     VStack {
 
                         Spacer()
@@ -639,7 +578,7 @@ struct HurtFeelings4: View {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
-//                        .confettiCannon(counter: $counter)
+                       .confettiCannon(counter: $counter)
 
                         
                         VStack {
@@ -712,24 +651,12 @@ struct HurtFeelings4: View {
                             
                             Spacer()
                                 .frame(height: 80)
-                            
-                            
-//                            Image("KissesHeart")
-//                                .resizable()
-//                                .frame(width: 200, height: 150)
-//                                .opacity(0.5)
+
                    
                         }
-                        
-                     
-                        
+                           
                         }
-                    
-//
-//
-//
-
-                    
+    
                 }
                 
             }
@@ -775,7 +702,5 @@ struct HurtFeelings4: View {
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
         }
     }
-    
-    
     
 }
