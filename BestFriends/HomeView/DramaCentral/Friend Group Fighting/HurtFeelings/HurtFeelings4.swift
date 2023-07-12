@@ -402,22 +402,23 @@ struct HurtFeelings4: View {
                                 .ignoresSafeArea()
                                 .onAppear()
 
-//                AdPlayerView(name: "sky2")
-//                    .opacity(0.5)
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
+
                 
             } else {
-
-                ColorManager.grey4
-                    .opacity(0.5)
+                
+                Color.black
                     .ignoresSafeArea()
-                    .onAppear()
+                
+                AdPlayerView(name: "Galaxy2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.7)
 
-//    AdPlayerView(name: "sky2")
-//        .ignoresSafeArea()
-//        .blendMode(.screen)
-//
+//                ColorManager.grey4
+//                    .opacity(0.5)
+//                    .ignoresSafeArea()
+//                    .onAppear()
+
                 
             }
             
