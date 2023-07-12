@@ -35,11 +35,23 @@ struct MyRoomView: View {
                 HStack {
                     
                     
+//                    NavigationLink(
+//                        destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
+//                        label: {
+//
+//                            Image(systemName: "bell")
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 35, height: 35)
+//                                .opacity(0.5)
+//                                .foregroundColor(.white)
+//                        })
+                    
                     NavigationLink(
-                        destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
+                        destination:  FH10(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                         label: {
                             
-                            Image(systemName: "bell")
+                            Image(systemName: "info.circle")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 35, height: 35)
@@ -53,17 +65,7 @@ struct MyRoomView: View {
                     VStack {
                     
                       
-                        NavigationLink(
-                            destination:  FH10(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                            label: {
-                                
-                                Image(systemName: "info.circle")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 35, height: 35)
-                                    .opacity(0.5)
-                                    .foregroundColor(.white)
-                            })
+                     
                         
                         Spacer ()
                         .frame(height: 10)
