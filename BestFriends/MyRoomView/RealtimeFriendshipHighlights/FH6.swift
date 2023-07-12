@@ -51,7 +51,7 @@ struct FH6: View {
                 
                 VStack {
 
-                    Text("Friends Emotional Support")
+                    Text("Your Friend's \nEmotional Support")
                         .font(.system(size: 35))
                         .foregroundColor(ColorManager .grey1)
                         .fontWeight(.thin)

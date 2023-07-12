@@ -52,17 +52,17 @@ struct FH5: View {
                 
                 VStack {
 
-                    Text("all new")
+                    Text("Drama Days")
                         .font(.system(size: 35))
                         .foregroundColor(ColorManager .grey1)
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                     
-                    Text("PhotoPOP")
-                        .font(.system(size: 45))
-                        .foregroundColor(ColorManager .grey1)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
+//                    Text("PhotoPOP")
+//                        .font(.system(size: 45))
+//                        .foregroundColor(ColorManager .grey1)
+//                        .fontWeight(.thin)
+//                        .multilineTextAlignment(.center)
                     
                     ZStack {
                         

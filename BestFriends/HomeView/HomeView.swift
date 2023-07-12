@@ -73,15 +73,16 @@ struct HomeView: View {
                             Image(systemName: "star")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 35, height: 35)
-                                .foregroundColor(.white)
+                                .frame(width: 50, height: 50)
+                                .foregroundColor(ColorManager .purple1)
+                                .glow(color: ColorManager.purple4, radius: 5)
                                 .opacity(0.5)
                                 .onTapGesture {
                                     print("Clicked notification bell")
                                     presentingIANs.toggle()
                                 }
                             
-                            Spacer()
+//                            Spacer()
                             
 //                            NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
 //                            ) { EmptyView() }
@@ -97,26 +98,26 @@ struct HomeView: View {
 //                                })
                             
                           
+//
+//                            NavigationLink(
+//                                destination:  FH10(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+//                                label: {
+//
+//                                    Image(systemName: "info.circle")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 35, height: 35)
+//                                        .opacity(0.5)
+//                                        .foregroundColor(.white)
+//                                })
                             
-                            NavigationLink(
-                                destination:  FH10(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                                label: {
-                                    
-                                    Image(systemName: "info.circle")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 35, height: 35)
-                                        .opacity(0.5)
-                                        .foregroundColor(.white)
-                                })
-                            
-                            Spacer()
+//                            Spacer()
                             
                             
 //                            NavigationLink(
 //                                destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
 //                                label: {
-//                                    
+//
 //                                    Image(systemName: "gear")
 //                                        .resizable()
 //                                        .scaledToFit()
@@ -124,14 +125,15 @@ struct HomeView: View {
 //                                        .opacity(0.5)
 //                                        .foregroundColor(.white)
 //                                })
-//                            
+//
                             
                          
                         }
-                        .padding(20)
+//                      .padding(20)
                     }
                     
-                    Spacer()
+                   Spacer()
+
                 }
                 
 

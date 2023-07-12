@@ -29,7 +29,7 @@ struct NotificationsView: View {
                     .blendMode(.screen)
                 
                 VStack {
-                    Text("Recent Notifications")
+                    Text("Fresh CareHearts")
                         .font(.system(size: 30, weight: .light))
                         .foregroundColor(.white)
                         .padding()
