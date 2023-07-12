@@ -29,23 +29,31 @@ struct FH6: View {
         
         ZStack {
             
+         
             
-            if shareTapped {
-                
-                ColorManager.grey4
-                    .opacity(0.8)
-                    .ignoresSafeArea()
-                
-                AdPlayerView(name: "dramaLights")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                
-            } else {
-                
-                Image("FHBackground")
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
+            Color.black
+                .ignoresSafeArea()
+            
+            AdPlayerView(name: "Galaxy2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.7)
+//            if shareTapped {
+//
+//                ColorManager.grey4
+//                    .opacity(0.8)
+//                    .ignoresSafeArea()
+//
+//                AdPlayerView(name: "dramaLights")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//
+//            } else {
+//
+//                Image("FHBackground")
+//                    .resizable()
+//                    .scaledToFill()
+//                    .edgesIgnoringSafeArea(.all)
                 
                 //                ScrollView {
                 
@@ -134,4 +142,4 @@ struct FH6: View {
                 }
                 
             }
-        }
+        
