@@ -70,7 +70,7 @@ struct HomeView: View {
                 VStack {
                     if ((homeData) != nil) {
                         HStack {
-                            Image(systemName: "bell")
+                            Image(systemName: "star")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 35, height: 35)

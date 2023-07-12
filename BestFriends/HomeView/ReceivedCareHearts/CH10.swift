@@ -92,7 +92,7 @@ struct CH10: View {
                     .opacity(0.3)
                     
                   
-                    NavigationLink(destination: SendSongPush(user: user, friends: friends), label: {
+                    NavigationLink(destination: CH7(user: user, friends: friends), label: {
                         HugCircle (color: ColorManager .grey1, friendName: "a song to \nmatch my \nVibe")
                     })
                     .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)

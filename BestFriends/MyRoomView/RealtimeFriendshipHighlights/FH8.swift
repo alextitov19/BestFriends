@@ -53,6 +53,18 @@ struct FH8: View {
                 
                 VStack {
 
+                    Text("Your real-time")
+                        .font(.system(size: 35))
+                        .foregroundColor(ColorManager .grey1)
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                    
+                    Text("Friendships")
+                        .font(.system(size: 45))
+                        .foregroundColor(ColorManager .grey1)
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                    
                     ZStack {
                         
                         Spacer()

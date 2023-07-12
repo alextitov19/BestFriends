@@ -68,6 +68,19 @@ struct FH9: View {
                 
                 VStack {
 
+                    
+                    Text("Your real-time")
+                        .font(.system(size: 35))
+                        .foregroundColor(ColorManager .grey1)
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                    
+                    Text("Friendships")
+                        .font(.system(size: 45))
+                        .foregroundColor(ColorManager .grey1)
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                    
                     ZStack {
                         
                         Spacer()
@@ -85,7 +98,14 @@ struct FH9: View {
                             Spacer()
                                 .frame(height: 150)
                             
-                            Text("Your friends are 'always' \nhere when you need them.")
+                            Text("Your friends are 'always' here")
+                                .font(.system(size: 27))
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
+                            
+                            Text("when you need them.")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
