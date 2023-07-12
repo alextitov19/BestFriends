@@ -86,57 +86,48 @@ struct HurtFeelings4: View {
                             .frame(width: 375, height: 375)
                             .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                             .opacity(0.4)
+                       
                         VStack {
                             
-                            Text("It's been")
-                                .font(.system(size: 30))
+                            Text("A friend did or said")
+                                .font(.system(size: 25))
                             //                        .italic()
                                 .foregroundColor(ColorManager .grey2)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
+                            
+                            Text("something thats been bugging")
+                                .font(.system(size: 25))
+                            //                        .italic()
+                                .foregroundColor(ColorManager .grey2)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                     
 
-                            Text("bugging you all week")
-                                .font(.system(size: 35))
+                            Text("you all week")
+                                .font(.system(size: 25))
                             //                        .italic()
                                 .foregroundColor(ColorManager .grey2)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
 
                             Spacer()
-                                .frame(height: 10)
+                                .frame(height: 30)
                            
-                            Text("But, maybe you're just a")
+                            Text("Maybe you're just a")
                                 .font(.system(size: 17))
+                                .italic()
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
 
                             Text("little nervious to say something")
                                 .font(.system(size: 17))
+                                .italic()
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
-                            
-                            Text("We can help you")
-                                .font(.system(size: 30))
-                                .italic()
-                                .foregroundColor(ColorManager .grey2)
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-
-                            Text("send a message")
-                                .font(.system(size: 30))
-                                .italic()
-                                .foregroundColor(ColorManager .grey2)
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                          
-                            
-                            
-                            
-                            
-                            
-                            
+                      
                         }
                     }
                     
@@ -281,7 +272,7 @@ struct HurtFeelings4: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your friend just got a push notification asking them talk about how you hurt their feelings.", isPresented: $showingAlert) {
+                                .alert("Your friend just got a push notification asking them talk about how they hurt your feelings.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -299,7 +290,7 @@ struct HurtFeelings4: View {
                                          .frame(width: 50, height: 25)
                                          .foregroundColor(.white)
                                          .font(.system(size: 20))
-                                         .background(Color .black)
+                                         .background(ColorManager .grey2)
                                          .cornerRadius(15)
                                          .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                                          .opacity(0.70)
@@ -308,7 +299,7 @@ struct HurtFeelings4: View {
                             
                        
                             Spacer()
-                                .frame(height: 80)
+                                .frame(height: 120)
 
                    
                         }
