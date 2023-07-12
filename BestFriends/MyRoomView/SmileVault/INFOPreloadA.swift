@@ -50,11 +50,20 @@ struct INFOPreloadA: View {
                     .blendMode(.screen)
 
             } else {
+                
+                
+                Color.black
+                    .ignoresSafeArea()
+                
+                AdPlayerView(name: "Galaxy2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.7)
               
-                Image("FHBackground")
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
+//                Image("FHBackground")
+//                    .resizable()
+//                    .scaledToFill()
+//                    .edgesIgnoringSafeArea(.all)
                 
 //                ColorManager.grey4
 //                    .opacity(0.8)
@@ -88,14 +97,14 @@ struct INFOPreloadA: View {
                         Text("Wondering what your")
                                                 .font(.system(size: 37))
                     
-                                                .foregroundColor(ColorManager .grey4)
+                                                .foregroundColor(ColorManager .grey1)
                                                 .fontWeight(.thin)
                                                 .multilineTextAlignment(.center)
 
                         Text("friends are doing?")
                                                 .font(.system(size: 40))
                     
-                                                .foregroundColor(ColorManager .grey4)
+                                                .foregroundColor(ColorManager .grey1)
                                                 .fontWeight(.thin)
                                                 .multilineTextAlignment(.center)
                         
