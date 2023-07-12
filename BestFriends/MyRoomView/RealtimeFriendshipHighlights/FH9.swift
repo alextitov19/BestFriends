@@ -53,7 +53,7 @@ struct FH9: View {
             AdPlayerView(name: "Galaxy2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                .opacity(0.7)
+                .opacity(0.9)
             
             
 //            if shareTapped {

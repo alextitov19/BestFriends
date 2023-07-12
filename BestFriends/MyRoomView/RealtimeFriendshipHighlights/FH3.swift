@@ -36,7 +36,7 @@ struct FH3: View {
             AdPlayerView(name: "Galaxy2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                .opacity(0.7)
+                .opacity(0.9)
             
             
 //            if shareTapped {
@@ -99,6 +99,12 @@ struct FH3: View {
                         Spacer()
                             .frame(height: 30)
                         
+                        Text("Please turn on Notifications \nfor BestFriends")
+                            .font(.system(size: 27))
+                            .foregroundColor(Color.green)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                        
                         Button(action: {
                             sessionManager.showLogin()
                         },
@@ -114,11 +120,7 @@ struct FH3: View {
                             
                         })
                         
-                        Text("Please turn on Notifications \nfor BestFriends")
-                            .font(.system(size: 27))
-                            .foregroundColor(Color.green)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
+                    
                         
                         
                         //                            NavigationLink(
