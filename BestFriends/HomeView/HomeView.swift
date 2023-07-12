@@ -113,18 +113,18 @@ struct HomeView: View {
                             Spacer()
                             
                             
-                            NavigationLink(
-                                destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
-                                label: {
-                                    
-                                    Image(systemName: "gear")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 35, height: 35)
-                                        .opacity(0.5)
-                                        .foregroundColor(.white)
-                                })
-                            
+//                            NavigationLink(
+//                                destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
+//                                label: {
+//                                    
+//                                    Image(systemName: "gear")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 35, height: 35)
+//                                        .opacity(0.5)
+//                                        .foregroundColor(.white)
+//                                })
+//                            
                             
                          
                         }

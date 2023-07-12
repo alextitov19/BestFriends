@@ -28,8 +28,40 @@ struct MyRoomView: View {
      
             VStack {
                 HStack {
-                    VStack {
+                 
+                     
+                        NavigationLink(
+                            destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
+                            label: {
+                                
+                                Image(systemName: "bell")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 35, height: 35)
+                                    .opacity(0.5)
+                                    .foregroundColor(.white)
+                            })
                         
+                        Spacer ()
+                        .frame(width: 50)
+                    
+                    NavigationLink( destination:  FH9(),
+                                    label: {
+                        Text("Start Here")
+                            .fontWeight(.thin)
+                            .frame(width: 100, height: 30)
+                            .foregroundColor(ColorManager .grey1)
+                            .font(.system(size: 20))
+                            .background(ColorManager .pmbc_green)
+                            .opacity(0.6)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
+                    
+                    
+                    Spacer ()
+                    .frame(width: 50)
+                    
                         NavigationLink(
                             destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
                             label: {
@@ -42,137 +74,15 @@ struct MyRoomView: View {
                                     .foregroundColor(.white)
                             })
                         
-                        
-                        
-                        ZStack {
-                            
-                   
-                        }
-                        
-                     
-                        
                     }
                     
                     
-                    VStack {
-                        
-                        ZStack {
-                            
-                            NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
-                                           label: {
-                                Text("")
-                                    .fontWeight(.thin)
-                                    .frame(width: 50, height: 30)
-                                    .foregroundColor(ColorManager .grey1)
-                                    .font(.system(size: 30))
-                                //                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            })
-                            
-                            
-                            
-                            Image(systemName: "sun.max.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 25, height: 25)
-                                .opacity(0.3)
-                                .foregroundColor(.white)
-                        }
-                        
-                        
-                        
-                        Text("Smile")
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 8, weight: .light))
-                            .opacity(0.7)
-                        
-                        Text("Vault")
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 8, weight: .light))
-                            .opacity(0.7)
-                        
-                        
-                        
-                    }
-                    
-                    
-                    VStack {
-                        
-                        ZStack {
-                            
-                            NavigationLink(destination: EmptyView(),
-                                           label: {
-                                Text("")
-                                    .fontWeight(.thin)
-                                    .frame(width: 50, height: 30)
-                                    .foregroundColor(ColorManager .grey1)
-                                    .font(.system(size: 30))
-                                //                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            })
-                            
-                            
-                            
-                            //                            figure.run.square.stack
-                            Image(systemName: "square.and.arrow.up.circle")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 25, height: 25)
-                                .opacity(0.3)
-                                .foregroundColor(.white)
-                        }
-                        
-                        
-                        
-                        Text("My")
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 8, weight: .light))
-                            .opacity(0.7)
-                        
-                        Text("Strengths")
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 8, weight: .light))
-                            .opacity(0.7)
-                        
-                    }
-                    
-                    
-                    VStack {
-                        
-                        ZStack {
-                    
-                 
-                        }
-                        
-                    
-                    }
-                    
-                    VStack {
-                        
-                        ZStack {
-                          
-                        }
-                        
-                    
-                    }
-                    
-                    VStack {
-                        
-                        ZStack {
-                            
-                           
-                        }
-                        
                   
-                    }
-                    
-                    
-                }
+                   
+                
                 
                 Spacer()
-                    .frame(height: 40)
+                    .frame(height: 80)
 
                 HStack {
                
@@ -379,77 +289,56 @@ struct MyRoomView: View {
                     Spacer()
                         .frame(height: 15)
                     
-                    
-                    
-                    
-                    
-                    
-                    NavigationLink(destination: FH1(), label: {
-                        MyRoomRowView(title: "Friendship Highlights", imageName: "star", backgroundColor: ColorManager.purple2.cgColor!, foregroundColor: ColorManager.grey1.cgColor!)
-                    })
-                    
-                    
-                    NavigationLink( destination:  FH9(),
-                                    label: {
-                        Text("Start Here")
-                            .fontWeight(.thin)
-                            .frame(width: 180, height: 50)
-                            .foregroundColor(ColorManager .grey1)
-                            .font(.system(size: 20))
-                            .background(ColorManager .pmbc_green)
+                    HStack {
+                        
+                        NavigationLink( destination:  FH1(),
+                                        label: {
+                            Text("Real")
+                                .fontWeight(.thin)
+                                .frame(width: 75, height: 50)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 17))
+                                .background(ColorManager .purple4)
+                                .opacity(0.6)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        })
+                        
+                        
+                        Text("< Friendships >")
+                            .fontWeight(.light)
+                            .frame(width: 147, height: 60)
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 22))
+                            .background(ColorManager .purple2)
                             .opacity(0.6)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
-                    
-                    
-                    
-                    NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
-                                   label: {
-                        Text("")
-                            .fontWeight(.thin)
-                            .frame(width: 50, height: 30)
-                            .foregroundColor(ColorManager .grey1)
-                            .font(.system(size: 30))
-                        //                                    .background(ColorManager.purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
-                    
-                    
-                    
-                    Image(systemName: "sun.max.fill")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 25, height: 25)
-                        .opacity(0.3)
-                        .foregroundColor(.white)
+                        
+                        NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                                        label: {
+                            Text("Smile \nVault")
+                                .fontWeight(.thin)
+                                .frame(width: 75, height: 50)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 17))
+                                .background(ColorManager .purple4)
+                                .opacity(0.6)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        })
+                        
+                    }
                 }
-                
-                
-                
-                Text("Smile")
-                    .foregroundColor(Color.white)
-                    .font(.system(size: 8, weight: .light))
-                    .opacity(0.7)
-                
-                Text("Vault")
-                    .foregroundColor(Color.white)
-                    .font(.system(size: 8, weight: .light))
-                    .opacity(0.7)
-                
-                
-                
             }
            
             
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 230)
                
-                }
-                
             }
         }
+    }
     
     
     
