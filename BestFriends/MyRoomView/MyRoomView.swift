@@ -49,7 +49,7 @@ struct MyRoomView: View {
                                     label: {
                         Text("Start Here")
                             .fontWeight(.thin)
-                            .frame(width: 100, height: 30)
+                            .frame(width: 120, height: 30)
                             .foregroundColor(ColorManager .grey1)
                             .font(.system(size: 20))
                             .background(ColorManager .pmbc_green)
@@ -127,7 +127,7 @@ struct MyRoomView: View {
                         
                         NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
                                         label: {
-                            Text("Freind \nEvent")
+                            Text("Fun \nTimes")
                                 .fontWeight(.thin)
                                 .frame(width: 75, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -327,15 +327,14 @@ struct MyRoomView: View {
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
-                        
+                      
                     }
+                    
+                    Spacer()
+                        .frame(height: 170)
                 }
             }
-           
-            
-                    Spacer()
-                        .frame(height: 230)
-               
+         
             }
         }
     }

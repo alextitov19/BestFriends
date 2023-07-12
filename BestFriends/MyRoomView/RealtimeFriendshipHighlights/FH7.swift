@@ -52,13 +52,13 @@ struct FH7: View {
                 
                 VStack {
                     
-                    Text("Your real-time")
+                    Text("all new")
                         .font(.system(size: 35))
                         .foregroundColor(ColorManager .grey1)
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                     
-                    Text("Friendships")
+                    Text("PhotoPOP")
                         .font(.system(size: 45))
                         .foregroundColor(ColorManager .grey1)
                         .fontWeight(.thin)
@@ -81,7 +81,7 @@ struct FH7: View {
                             Spacer()
                                 .frame(height: 150)
                             
-                            Text("Your friend sent a PhotoPOP. \n\nShake you iPhone and friend's \nimage pops up full-screen.")
+                            Text("Your friend sent a pic. \n\nJust 'shake' you iPhone \nand it pops up full-screen.")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
