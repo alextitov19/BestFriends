@@ -14,7 +14,7 @@ struct GotPushNotification: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     let user: User
-//    let friends: [User]
+    let friends: [User]
 
    @State private var homeData: HomeData?
 //    @State private var groups: [Group] = []
@@ -135,7 +135,7 @@ if selectedPlanet != nil {
         .frame(height: 10)
    
     HStack {
-    NavigationLink(destination: VirtualHug(),
+    NavigationLink(destination: VirtualHug(user: user, friends: friends),
                    label: {
         Text("Got HUG")
             .fontWeight(.light)

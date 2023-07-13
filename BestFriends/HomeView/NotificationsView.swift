@@ -110,7 +110,7 @@ struct NotificationsView: View {
                     EmptyView()
                 })
                 
-                NavigationLink(destination: VirtualHug(), isActive: $hugActive, label: {
+                NavigationLink(destination: VirtualHug(user: user, friends: friends), isActive: $hugActive, label: {
                     EmptyView()
                 })
                 

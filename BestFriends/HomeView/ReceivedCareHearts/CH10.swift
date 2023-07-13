@@ -74,7 +74,7 @@ struct CH10: View {
                         .shadow(color: Color .pink, radius: 10, x: 10, y: 10)
                         .opacity(0.3)
 
-                    NavigationLink(destination: VirtualHug(), label: {
+                    NavigationLink(destination: VirtualHug(user: user, friends: friends), label: {
                         HugCircle (color: ColorManager.orange5, friendName: "grab my \nhug")
                     })
                     .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)

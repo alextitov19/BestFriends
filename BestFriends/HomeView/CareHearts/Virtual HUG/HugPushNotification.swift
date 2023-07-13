@@ -307,32 +307,7 @@ struct HugPushNotification: View {
                    
                         }
                         
-//                        Text("Bringing your friend all the joy of")
-//                            .font(.system(size: 15))
-//                            .fontWeight(.ultraLight)
-//                            .foregroundColor(ColorManager .grey3)
-//                            .multilineTextAlignment(.center)
-//
-//
-//                        Text("kicking through Autumn's leaves")
-//                            .font(.system(size: 15))
-//                            .fontWeight(.ultraLight)
-//                            .foregroundColor(ColorManager .grey3)
-//                            .multilineTextAlignment(.center)
-                        
-//                        Text("Jump over to PhotoPOP & send \na fun image to go with your Hug")
-//                            .fontWeight(.thin)
-//                            .foregroundColor(ColorManager .grey3)
-//                            .frame(width: 310, height: 60)
-//                            .font(.system(size: 17))
-//                            .multilineTextAlignment(.center)
-//                            .background(ColorManager.orange2)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//
-//
-                        
+            
                         
                         }
                     

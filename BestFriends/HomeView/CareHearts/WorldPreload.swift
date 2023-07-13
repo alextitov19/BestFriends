@@ -181,7 +181,7 @@ struct WorldPreload: View {
                                 Spacer()
                                     .frame(height: 20)
                                 
-                                NavigationLink(destination: VirtualHug(), label: {
+                                NavigationLink(destination: VirtualHug(user: user, friends: friends), label: {
                                     Text("Send a Virtual HUG")
                                         .fontWeight(.thin)
                                         .frame(width: 270, height: 40)
