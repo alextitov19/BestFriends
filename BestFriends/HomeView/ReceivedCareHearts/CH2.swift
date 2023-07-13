@@ -53,7 +53,7 @@ struct CH2: View {
                 
             } else {
 
-                ColorManager.purple7
+                ColorManager .purple3
                     .opacity(0.8)
                     .ignoresSafeArea()
                     .onAppear()
@@ -85,17 +85,17 @@ struct CH2: View {
                                     
                                     
                                 VStack {
-                                    Text("sending lightspeed")
+                                    Text("Say thank you")
                                         .font(.system(size: 30, weight: .light))
-                                        .foregroundColor(ColorManager .grey3)
+                                        .foregroundColor(ColorManager .grey2)
                                     
                                     
 //                                    Text("at")
 //                                        .font(.system(size: 27, weight: .light))
 //                                        .foregroundColor(ColorManager .grey3)
                                     
-                                    Text("Hugs")
-                                        .font(.system(size: 55, weight: .light))
+                                    Text("Send a Hug back")
+                                        .font(.system(size: 30, weight: .light))
                                         .foregroundColor(ColorManager .grey2)
                                 }
                             }
@@ -118,35 +118,7 @@ struct CH2: View {
 //                *********************************************************
          
                 VStack {
-
-                    Text("Send the joy of")
-                        .font(.system(size: 17))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(ColorManager .grey1)
-                        .multilineTextAlignment(.center)
-                    
-                    
-                    Text("kicking through Autumn's leaves")
-                        .font(.system(size: 17))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(ColorManager .grey1)
-                        .multilineTextAlignment(.center)
-
-                    Spacer()
-                        .frame(height: 25)
-                    
-                    Text("or the comfort of")
-                        .font(.system(size: 17))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(ColorManager .grey1)
-                        .multilineTextAlignment(.center)
-                    
-                    Text("hot chocolate on a blistery winter's day")
-                        .font(.system(size: 17))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(ColorManager .grey1)
-                        .multilineTextAlignment(.center)
-                    
+  
                     
                     VStack {
 

@@ -70,6 +70,14 @@ struct VirtualHug: View {
             
             
             VStack{
+                AdPlayerView(name: "HugVideo")
+                    .frame(width: 250, height: 250)
+                    .cornerRadius(15)
+                    .opacity(0.7)
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+        
+                
                 
                 Spacer ()
                 .frame(height: 10)
@@ -78,14 +86,17 @@ struct VirtualHug: View {
                             label: {
                 Text("Say Thank you and send one back")
                     .fontWeight(.thin)
-                    .frame(width: 310, height: 50)
+                    .frame(width: 310, height: 40)
                     .foregroundColor(ColorManager .grey1)
                     .font(.system(size: 20))
-                    .background(ColorManager .pmbc_green)
+                    .background(ColorManager .purple3)
                     .opacity(0.9)
                     .cornerRadius(15)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
             })
+                
+                Spacer ()
+                .frame(height: 50)
                 
                 Text("tap heart,")
                     .font(.system(size: 30))
@@ -106,7 +117,10 @@ struct VirtualHug: View {
                 
                 
                 if (showingHeart) {
+                    
+                    
                     ZStack {
+                    
                         Image(systemName: "heart.fill")
                             .resizable()
                             .foregroundColor(.purple)
@@ -134,8 +148,7 @@ struct VirtualHug: View {
                                                 }
                                             }
                                         }
-                                            
-                             
+                               
                                             
                                             
                                             
