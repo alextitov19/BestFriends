@@ -57,22 +57,22 @@ struct BestFriendMessages: View {
                 if showItems {
                 if planets.count > 0 {
                     NavigationLink(destination: IndividualFriendMessages(friend: planets[0].user, atmosphere: planets[0].atmosphere), label: { planets[0] })
-                    .offset(x: showItems ? 100 : 0, y: showItems ? -250: 0)
+                    .offset(x: showItems ? 150 : 0, y: showItems ? -200: 0)
                 }
                                 
                 if planets.count > 1 {
                     NavigationLink(destination: IndividualFriendMessages(friend: planets[1].user, atmosphere: planets[1].atmosphere), label: { planets[1] })
-                        .offset(x: showItems ? -100 : 0, y: showItems ? 205: 0)
+                        .offset(x: showItems ? -150 : 0, y: showItems ? 200: 0)
                 }
                 
                 if planets.count > 2 {
                     NavigationLink(destination: IndividualFriendMessages(friend: planets[2].user, atmosphere: planets[2].atmosphere), label: { planets[2] })
-                        .offset(x: showItems ? 100 : 0, y: showItems ? 150: 0)
+                        .offset(x: showItems ? 150 : 0, y: showItems ? 200: 0)
                 }
                  
                     if planets.count > 3 {
                         NavigationLink(destination: IndividualFriendMessages(friend: planets[3].user, atmosphere: planets[3].atmosphere), label: { planets[3] })
-                            .offset(x: showItems ? -60 : 0, y: showItems ? -200: 0)
+                            .offset(x: showItems ? -150 : 0, y: showItems ? -200: 0)
                     }
                     
                     
@@ -175,7 +175,7 @@ struct FriendVaultCircle: View {
         
         ZStack {
             Rectangle()
-                .frame(width: 120, height: 120)
+                .frame(width: 110, height: 110)
                 .clipShape(Circle())
                 .foregroundColor(color)
 //                .blur(radius: 10)
