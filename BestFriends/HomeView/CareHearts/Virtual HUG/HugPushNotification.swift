@@ -66,38 +66,7 @@ struct HugPushNotification: View {
                 
             }
             
-//            ColorManager .purple1
-//                .ignoresSafeArea()
-//
-//            AdPlayerView(name: "sky2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
 
-            
-            
-//            VStack{
-//
-//                HStack {
-//                    VStack {
-//
-//                        Text("Send")
-//                            .font(.system(size: 35, weight: .ultraLight))
-//                            .foregroundColor(ColorManager .grey2)
-//
-//
-//                        Text("a Hug")
-//                            .font(.system(size: 35, weight: .ultraLight))
-//                            .foregroundColor(ColorManager .grey2)
-//
-//                    }
-//
-////                    Image("SendHug3")
-////                        .resizable()
-////                        .frame(width: 200, height: 200)
-//                }
-             
-//           *************************************
-                
                 VStack{
                     
                     HStack {
