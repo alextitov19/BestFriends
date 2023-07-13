@@ -56,10 +56,14 @@ struct VirtualHug: View {
                 
             } else {
                 
-                ColorManager.purple7
-                    .opacity(0.8)
+//                ColorManager.purple7
+//                    .opacity(0.8)
+//                    .ignoresSafeArea()
+//                    .onAppear()
+               
+                Image("FHBackground")
                     .ignoresSafeArea()
-                    .onAppear()
+                    .scaledToFit()
                 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()

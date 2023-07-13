@@ -53,14 +53,13 @@ struct CH2: View {
                 
             } else {
 
-                ColorManager .purple3
-                    .opacity(0.8)
+                Image("FHBackground")
                     .ignoresSafeArea()
-                    .onAppear()
-
-    AdPlayerView(name: "sky2")
-        .ignoresSafeArea()
-        .blendMode(.screen)
+                    .scaledToFit()
+                
+                AdPlayerView(name: "sky2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
                 
                 
             }
@@ -85,17 +84,14 @@ struct CH2: View {
                                     
                                     
                                 VStack {
-                                    Text("Say thank you")
+                                    Text("Say thank you,")
                                         .font(.system(size: 30, weight: .light))
                                         .foregroundColor(ColorManager .grey2)
                                     
+
                                     
-//                                    Text("at")
-//                                        .font(.system(size: 27, weight: .light))
-//                                        .foregroundColor(ColorManager .grey3)
-                                    
-                                    Text("Send a Hug back")
-                                        .font(.system(size: 30, weight: .light))
+                                    Text("and send a Hug back")
+                                        .font(.system(size: 25, weight: .light))
                                         .foregroundColor(ColorManager .grey2)
                                 }
                             }
