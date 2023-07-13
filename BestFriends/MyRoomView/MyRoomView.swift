@@ -70,7 +70,7 @@ struct MyRoomView: View {
                         Spacer ()
                         .frame(height: 10)
                         
-                    NavigationLink( destination:  FH9(),
+                    NavigationLink( destination:  FH2(),
                                     label: {
                         Text("Start Here")
                             .fontWeight(.thin)
