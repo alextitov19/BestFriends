@@ -52,7 +52,6 @@ struct CH9: View {
         
         ZStack {
       
-
             
             if shareTapped {
                 
@@ -62,23 +61,25 @@ struct CH9: View {
                                 .ignoresSafeArea()
                                 .onAppear()
 
+                
                 AdPlayerView(name: "dramaLights")
-                    .opacity(0.5)
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
             } else {
 
-                ColorManager.purple7
-//                    .opacity(0.5)
+                ColorManager.purple5
                     .ignoresSafeArea()
                     .onAppear()
+                
+                Image("FHBackground")
+                    .ignoresSafeArea()
+                    .scaledToFit()
+                
+                AdPlayerView(name: "sky2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
 
-    AdPlayerView(name: "sky2")
-        .ignoresSafeArea()
-        .blendMode(.screen)
-                
-                
             }
             
             VStack{
@@ -106,10 +107,10 @@ struct CH9: View {
                                     .foregroundColor(ColorManager .grey2)
                                 
                                 Text("kisses")
-                                    .font(.system(size: 50, weight: .light))
+                                    .font(.system(size: 45, weight: .light))
                                     .foregroundColor(ColorManager .grey2)
                                 Text("kisses")
-                                    .font(.system(size: 40, weight: .light))
+                                    .font(.system(size: 30, weight: .light))
                                     .foregroundColor(ColorManager .grey2)
                             }
                         }
@@ -128,17 +129,24 @@ struct CH9: View {
                     Text("the air is fresh with kisses")
                                             .font(.system(size: 23))
                 
-                                            .foregroundColor(ColorManager .grey2)
+                                            .foregroundColor(ColorManager .grey1)
                                             .fontWeight(.thin)
                                             .multilineTextAlignment(.center)
                     
                     Spacer()
                         .frame(height: 20)
                     
-                    Text("send a thank you")
-                                            .font(.system(size: 18))
+                    Text("Say thank you")
+                                            .font(.system(size: 20))
                 
-                                            .foregroundColor(ColorManager .grey2)
+                                            .foregroundColor(ColorManager .grey1)
+                                            .fontWeight(.thin)
+                                            .multilineTextAlignment(.center)
+                    
+                    Text("and blow one back!")
+                                            .font(.system(size: 20))
+                
+                                            .foregroundColor(ColorManager .grey1)
                                             .fontWeight(.thin)
                                             .multilineTextAlignment(.center)
                 
@@ -260,7 +268,7 @@ struct CH9: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your thank you \nwas sent", isPresented: $showingAlert) {
+                                .alert("Your thank you & kiss \nwas sent", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -319,11 +327,11 @@ struct CH9: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) Got your kiss - thanks!", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) Ahhh! Thanks for the Kiss - sending one back!", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Thanks for the Kiss", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Thanks for the Kiss - sent one back!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                         print("Create a got kiss notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)

@@ -102,7 +102,15 @@ struct VirtualHug: View {
                 Spacer ()
                 .frame(height: 50)
                 
-                Text("tap heart,")
+                
+                Text("Grab your Hug")
+                    .font(.system(size: 40))
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager .grey1)
+                
+                
+                Text("hit Tap")
                     .font(.system(size: 30))
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)

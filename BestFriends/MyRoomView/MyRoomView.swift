@@ -72,13 +72,13 @@ struct MyRoomView: View {
                         
                     NavigationLink( destination:  FH2(),
                                     label: {
-                        Text("Start Here")
+                        Text("> Start Here <")
                             .fontWeight(.thin)
-                            .frame(width: 120, height: 30)
+                            .frame(width: 160, height: 32)
                             .foregroundColor(ColorManager .grey1)
-                            .font(.system(size: 20))
+                            .font(.system(size: 25))
                             .background(ColorManager .pmbc_green)
-                            .opacity(0.9)
+//                            .opacity(0.9)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
