@@ -147,7 +147,7 @@ struct SmileVaultCircle: View {
         ZStack {
           
         Rectangle()
-        .frame(width: 110, height: 110)
+        .frame(width: 120, height: 120)
         .clipShape(Circle())
         .foregroundColor(color)
         .opacity(0.7)
