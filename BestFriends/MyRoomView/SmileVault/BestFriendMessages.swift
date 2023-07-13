@@ -29,15 +29,17 @@ struct BestFriendMessages: View {
             Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                 .ignoresSafeArea()
 
-            ColorManager.purple7
-                .opacity(0.8)
+            
+            Color.black
                 .ignoresSafeArea()
-         
-            AdPlayerView(name: "sky2")
+            
+            AdPlayerView(name: "Galaxy2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .onAppear(perform: createPlanets)
+                .opacity(0.9)
 
+            
             ZStack {
                 
 
@@ -83,52 +85,51 @@ struct BestFriendMessages: View {
                 }
                 
                 ZStack {
-                    Image(systemName: "heart.fill")
+                   
+                    Image(systemName: "circle.fill")
                         .resizable()
-                        .foregroundColor(ColorManager.grey1)
-                        .frame(width: 200, height: 180)
+                        .foregroundColor(Color.purple)
+                        .frame(width: 375, height: 375)
+                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+                        .opacity(0.4)
+                    
+                    
+                    Image(systemName: "star.fill")
+                        .resizable()
+                        .foregroundColor(Color.white)
+                        .frame(width: 100, height: 100)
                         .blur(radius: 2)
                         .shadow(color: .purple, radius: 30, x: 20, y: 25)
-                        .opacity(0.6)
+//                        .opacity(0.9)
                     
                     VStack {
                         
-                        Text("Messages that")
-                            .font(.system(size: 20))
-                            .foregroundColor(ColorManager .grey4)
+                        Text("Long-tap 'messages' in Chat \nthat make you smile")
+                            .font(.system(size: 23))
+                            .foregroundColor(ColorManager .grey2)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                   
-                     
-                        Text("made you ")
-                            .font(.system(size: 20))
-                            .foregroundColor(ColorManager .grey4)
-                            .fontWeight(.regular)
-                            .multilineTextAlignment(.center)
+                        Spacer ()
+                            .frame(height: 44)
                         
-                        Text("Smile ")
-                            .font(.system(size: 20))
+                        Text("TAP")
+                            .font(.system(size: 27))
                             .foregroundColor(ColorManager .grey4)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                     
                         
                         Spacer ()
-                            .frame(height: 7)
+                            .frame(height: 57)
                     
-                        Text("(you long-tapped \nin Chat)")
-                            .font(.system(size: 12))
+                        Text("We saved your favorite messages \nfor easy access in SmileVault")
+                            .font(.system(size: 15))
                             .italic()
-                            .foregroundColor(ColorManager.grey3)
+                            .foregroundColor(ColorManager.grey2)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                         
-//                        Text("in Chat")
-//                            .font(.system(size: 17))
-//                            .italic()
-//                            .foregroundColor(ColorManager.grey1)
-//                            .fontWeight(.medium)
-//                            .multilineTextAlignment(.center)
 
                     }
                      
@@ -188,3 +189,46 @@ struct FriendVaultCircle: View {
     }
 }
 
+
+//
+//ZStack {
+//
+//    Spacer()
+//        .frame(height: 70)
+//
+//    Image(systemName: "circle.fill")
+//        .resizable()
+//        .foregroundColor(Color.purple)
+//        .frame(width: 375, height: 375)
+//        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+//        .opacity(0.4)
+//    VStack {
+//
+//
+//        Spacer()
+//            .frame(height: 150)
+//
+//        Text("Your friends are 'always' here")
+//            .font(.system(size: 27))
+//            .foregroundColor(ColorManager .grey1)
+//            .fontWeight(.thin)
+//            .multilineTextAlignment(.center)
+//
+//
+//        Text("when you need them.")
+//            .font(.system(size: 27))
+//            .foregroundColor(ColorManager .grey1)
+//            .fontWeight(.thin)
+//            .multilineTextAlignment(.center)
+//
+//
+//        Spacer()
+//            .frame(height: 20)
+//
+//        Image("CoolGuy")
+//            .resizable()
+//            .frame(width: 150, height: 150)
+//
+//    }
+//
+//}
