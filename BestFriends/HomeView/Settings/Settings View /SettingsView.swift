@@ -85,7 +85,7 @@ struct SettingsView: View {
                     destination: CustomizeMyPlanetView(user: user, atmosphere: atmosphere),
                     label: {
                         HStack {
-                            Text("Customize my Planet")
+                            Text("Select Planet type")
                                 .font(.system(size: 20))
                                 .foregroundColor(.purple)
                             
@@ -109,7 +109,7 @@ struct SettingsView: View {
                     destination: ChangeChatBackgroundView(user: user),
                     label: {
                         HStack {
-                            Text("Change Chat Background")
+                            Text("Customize my Chat Background")
                                 .font(.system(size: 20))
                                 .foregroundColor(.purple)
                             

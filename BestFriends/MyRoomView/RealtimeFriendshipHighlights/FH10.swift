@@ -89,9 +89,9 @@ struct FH10: View {
                         
                         destination: InfoInsideChat(user: user),
                         label: {
-                            Text("Create Chat \nRooms")
+                            Text("Create & Customize \nChat Rooms")
                                 .fontWeight(.light)
-                                .frame(width: 80, height: 50)
+                                .frame(width: 130, height: 50)
                                 .foregroundColor(ColorManager .grey4)
                                 .font(.system(size: 13))
                                 .background(Color.green)
