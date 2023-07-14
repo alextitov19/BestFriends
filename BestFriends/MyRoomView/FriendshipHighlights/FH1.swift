@@ -4,7 +4,6 @@
 //
 //  Created by Zhengxu Wang on 7/7/23.
 //
-
 import SwiftUI
 
 struct FH1: View {
@@ -30,26 +29,23 @@ struct FH1: View {
                 Spacer().frame(height: 250) // Add spacer with height to push content down
 
                 ZStack {
-                    // ScrollView
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        LazyHStack(spacing: 16) {
-                            ForEach(0..<sentences.count, id: \.self) { index in
-                                Text(sentences[index])
-                                    .foregroundColor(.white)
-                                    .font(.title)
-                                    .opacity(index == selectedIndex ? 1 : 0.5)
-                                    .frame(maxWidth: .infinity)
-                                    .id(index)
-                            }
+                    TabView(selection: $selectedIndex) {
+                        ForEach(0..<sentences.count, id: \.self) { index in
+                            Text(sentences[index])
+                                .foregroundColor(.white)
+                                .font(.title)
+                                .frame(maxWidth: .infinity)
+                                .id(index)
                         }
-                        .padding(16)
-                        .background(Color.purple)
-                        .opacity(0.8)
-                        .cornerRadius(10)
-                        .frame(height: 350) // Adjust the height as needed
-                        .onAppear {
-                            selectedIndex = 0 // Set initial selected index
-                        }
+                    }
+                    .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                    .padding(16)
+                    .background(Color.purple)
+                    .opacity(0.8)
+                    .cornerRadius(10)
+                    .frame(height: 350) // Adjust the height as needed
+                    .onAppear {
+                        selectedIndex = 0 // Set initial selected index
                     }
                     
                     // Name Tag
