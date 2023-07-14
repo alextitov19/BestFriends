@@ -65,10 +65,6 @@ struct MyRoomView: View {
                     VStack {
                     
                       
-                     
-                        
-                        Spacer ()
-                        .frame(height: 10)
                         
                     NavigationLink( destination:  FH2(),
                                     label: {
@@ -110,7 +106,7 @@ struct MyRoomView: View {
                 
                 
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 60)
 
                 HStack {
                
@@ -119,7 +115,7 @@ struct MyRoomView: View {
                                     label: {
                         Text("Send")
                             .fontWeight(.light)
-                            .frame(width: 75, height: 50)
+                            .frame(width: 80, height: 50)
                             .foregroundColor(Color.white)
                             .font(.system(size: 17))
                             .background(ColorManager .purple4)
@@ -164,7 +160,7 @@ struct MyRoomView: View {
                                     label: {
                         Text("Request")
                             .fontWeight(.light)
-                            .frame(width: 75, height: 50)
+                            .frame(width: 80, height: 50)
                             .foregroundColor(Color.white)
                             .font(.system(size: 17))
                             .background(ColorManager .purple4)
@@ -177,7 +173,7 @@ struct MyRoomView: View {
                     
                 }
                 Spacer()
-                    .frame(height: 25)
+                    .frame(height: 5)
                 
                 HStack {
                     
@@ -185,7 +181,7 @@ struct MyRoomView: View {
                                     label: {
                         Text("Send")
                             .fontWeight(.light)
-                            .frame(width: 75, height: 50)
+                            .frame(width: 80, height: 50)
                             .foregroundColor(Color.white)
                             .font(.system(size: 17))
                             .background(ColorManager .purple4)
@@ -212,7 +208,7 @@ struct MyRoomView: View {
                                     label: {
                         Text("How to \nSend")
                             .fontWeight(.light)
-                            .frame(width: 75, height: 50)
+                            .frame(width: 80, height: 50)
                             .foregroundColor(Color.white)
                             .font(.system(size: 17))
                             .background(ColorManager .purple4)
@@ -227,7 +223,7 @@ struct MyRoomView: View {
                
                 VStack {
                     Spacer()
-                        .frame(height: 25)
+                        .frame(height: 60)
                     
                     HStack {
                         
@@ -249,11 +245,12 @@ struct MyRoomView: View {
                         HStack {
                             
                             VStack {
+                                
                                 NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
                                                 label: {
                                     Text("Smile \nVault")
                                         .fontWeight(.light)
-                                        .frame(width: 75, height: 50)
+                                        .frame(width: 80, height: 50)
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 17))
                                         .background(ColorManager .purple4)
@@ -264,9 +261,9 @@ struct MyRoomView: View {
                                         .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                 })
                                 
-                                Text("My \nFriends")
+                                Text("my \nFriends")
                                     .fontWeight(.light)
-                                    .frame(width: 103, height: 60)
+                                    .frame(width: 115, height: 60)
                                     .foregroundColor(Color.white)
                                     .font(.system(size: 22))
                                     .background(Color.white)
@@ -274,9 +271,25 @@ struct MyRoomView: View {
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 
+                                NavigationLink( destination:  FH1(),
+                                                label: {
+                                    Text("Highlights")
+                                        .fontWeight(.light)
+                                        .frame(width: 80, height: 50)
+                                        .foregroundColor(Color.white)
+                                        .font(.system(size: 17))
+                                        .background(ColorManager .purple4)
+                                        .glow(color: ColorManager.purple3, radius: 1)
+                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                        .opacity(0.9)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                })
                             }
                             
                         }
+                        
+                        
                         NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
                                         label: {
                             Text("Friendship \nCoupons")
@@ -295,7 +308,7 @@ struct MyRoomView: View {
                     }
                     
                     Spacer()
-                        .frame(height: 25)
+                        .frame(height: 60)
                     
                     HStack {
                         
@@ -303,7 +316,7 @@ struct MyRoomView: View {
                                         label: {
                             Text("Self")
                                 .fontWeight(.light)
-                                .frame(width: 75, height: 50)
+                                .frame(width: 80, height: 50)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 17))
                                 .background(ColorManager .purple4)
@@ -329,7 +342,7 @@ struct MyRoomView: View {
                                         label: {
                             Text("Friends")
                                 .fontWeight(.light)
-                                .frame(width: 75, height: 50)
+                                .frame(width: 80, height: 50)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 17))
                                 .background(ColorManager .purple4)
@@ -343,14 +356,14 @@ struct MyRoomView: View {
                     }
                     
                     Spacer()
-                        .frame(height: 25)
+                        .frame(height: 5)
                     HStack {
                         
                         NavigationLink( destination:  HurtFeelings4(user: user, friends: friends, groups: groups),
                                         label: {
                             Text("Hurt Feeling")
                                 .fontWeight(.light)
-                                .frame(width: 75, height: 50)
+                                .frame(width: 80, height: 50)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 17))
                                 .background(ColorManager .purple4)
@@ -376,7 +389,7 @@ struct MyRoomView: View {
                                         label: {
                             Text("Break-Up")
                                 .fontWeight(.light)
-                                .frame(width: 75, height: 50)
+                                .frame(width: 80, height: 50)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 17))
                                 .background(ColorManager .purple4)
@@ -388,57 +401,10 @@ struct MyRoomView: View {
                         })
                         
                     }
-                    Spacer()
-                        .frame(height: 25)
-                    
-//                    HStack {
-//                        
-//                        NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
-//                                        label: {
-//                            Text("Smile \nVault")
-//                                .fontWeight(.light)
-//                                .frame(width: 75, height: 50)
-//                                .foregroundColor(Color.white)
-//                                .font(.system(size: 17))
-//                                .background(ColorManager .purple4)
-//                                .glow(color: ColorManager.purple3, radius: 1)
-//                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-//                                .opacity(0.9)
-//                                .cornerRadius(15)
-//                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//                        })
-//                        
-//                        
-//                        Text("Friendships")
-//                            .fontWeight(.light)
-//                            .frame(width: 155, height: 60)
-//                            .foregroundColor(Color.white)
-//                            .font(.system(size: 22))
-//                            .background(Color.white)
-//                            .opacity(0.6)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                      
-//                        NavigationLink( destination:  FH1(),
-//                                        label: {
-//                            Text("Highlight")
-//                                .fontWeight(.light)
-//                                .frame(width: 75, height: 50)
-//                                .foregroundColor(Color.white)
-//                                .font(.system(size: 17))
-//                                .background(ColorManager .purple4)
-//                                .glow(color: ColorManager.purple3, radius: 1)
-//                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-//                                .opacity(0.9)
-//                                .cornerRadius(15)
-//                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//                        })
-//                        
-//                      
-//                    }
+                   
                     
                     Spacer()
-                        .frame(height: 120)
+                        .frame(height: 50)
                 }
             }
          
