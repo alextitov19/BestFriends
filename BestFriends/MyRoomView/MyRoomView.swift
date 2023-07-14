@@ -60,7 +60,7 @@ struct MyRoomView: View {
                         })
                     
                     Spacer ()
-                        .frame(width: 60)
+                        .frame(width: 30)
                     
                     VStack {
                     
@@ -68,20 +68,20 @@ struct MyRoomView: View {
                         
                     NavigationLink( destination:  FH2(),
                                     label: {
-                        Text("> Start Here <")
+                        Text("Start Here")
                             .fontWeight(.thin)
-                            .frame(width: 160, height: 32)
+                            .frame(width: 120, height: 30)
                             .foregroundColor(ColorManager .grey1)
                             .font(.system(size: 25))
                             .background(ColorManager .pmbc_green)
 //                            .opacity(0.9)
-                            .cornerRadius(15)
+                            .cornerRadius(10)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                     })
                     
                 }
                     Spacer ()
-                    .frame(width: 60)
+                    .frame(width: 30)
                     
                     
                         NavigationLink(
@@ -115,7 +115,7 @@ struct MyRoomView: View {
                                     label: {
                         Text("Send")
                             .fontWeight(.light)
-                            .frame(width: 80, height: 50)
+                            .frame(width: 85, height: 40)
                             .foregroundColor(Color.white)
                             .font(.system(size: 17))
                             .background(ColorManager .purple4)
@@ -130,9 +130,9 @@ struct MyRoomView: View {
                         
                         NavigationLink( destination: CH10(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                                         label: {
-                            Text("Received \nCareHeart")
+                            Text("Received")
                                 .fontWeight(.light)
-                                .frame(width: 100, height: 50)
+                                .frame(width: 100, height: 40)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 17))
                                 .background(ColorManager .purple4)
@@ -145,7 +145,7 @@ struct MyRoomView: View {
                         
                         Text("CareHearts")
                             .fontWeight(.light)
-                            .frame(width: 155, height: 60)
+                            .frame(width: 155, height: 40)
                             .foregroundColor(Color.white)
                             .font(.system(size: 22))
                             .background(Color.white)
@@ -153,6 +153,21 @@ struct MyRoomView: View {
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
+                        
+                        NavigationLink( destination: CH3(),
+                                        label: {
+                            Text("Customize")
+                                .fontWeight(.light)
+                                .frame(width: 100, height: 40)
+                                .foregroundColor(Color.white)
+                                .font(.system(size: 17))
+                                .background(ColorManager .purple4)
+                                .glow(color: ColorManager.purple3, radius: 1)
+                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                .opacity(0.9)
+                                .cornerRadius(15)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                        })
     
                     }
                     
@@ -160,7 +175,7 @@ struct MyRoomView: View {
                                     label: {
                         Text("Request")
                             .fontWeight(.light)
-                            .frame(width: 80, height: 50)
+                            .frame(width: 85, height: 40)
                             .foregroundColor(Color.white)
                             .font(.system(size: 17))
                             .background(ColorManager .purple4)
@@ -173,7 +188,7 @@ struct MyRoomView: View {
                     
                 }
                 Spacer()
-                    .frame(height: 5)
+                    .frame(height: 17)
                 
                 HStack {
                     
@@ -181,7 +196,7 @@ struct MyRoomView: View {
                                     label: {
                         Text("Send")
                             .fontWeight(.light)
-                            .frame(width: 80, height: 50)
+                            .frame(width: 85, height: 40)
                             .foregroundColor(Color.white)
                             .font(.system(size: 17))
                             .background(ColorManager .purple4)
@@ -195,7 +210,7 @@ struct MyRoomView: View {
                     
                     Text("PhotoPOP")
                         .fontWeight(.light)
-                        .frame(width: 155, height: 60)
+                        .frame(width: 155, height: 40)
                         .foregroundColor(Color.white)
                         .font(.system(size: 22))
                         .background(Color.white)
@@ -206,9 +221,9 @@ struct MyRoomView: View {
                     
                     NavigationLink( destination:  CH5(user: user, friends: friends),
                                     label: {
-                        Text("How to \nSend")
+                        Text("How Send")
                             .fontWeight(.light)
-                            .frame(width: 80, height: 50)
+                            .frame(width: 85, height: 40)
                             .foregroundColor(Color.white)
                             .font(.system(size: 17))
                             .background(ColorManager .purple4)
@@ -223,7 +238,7 @@ struct MyRoomView: View {
                
                 VStack {
                     Spacer()
-                        .frame(height: 60)
+                        .frame(height: 75)
                     
                     HStack {
                         
@@ -248,9 +263,9 @@ struct MyRoomView: View {
                                 
                                 NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
                                                 label: {
-                                    Text("Smile \nVault")
+                                    Text("SmileVault")
                                         .fontWeight(.light)
-                                        .frame(width: 80, height: 50)
+                                        .frame(width: 100, height: 40)
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 17))
                                         .background(ColorManager .purple4)
@@ -261,9 +276,9 @@ struct MyRoomView: View {
                                         .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                 })
                                 
-                                Text("my \nFriends")
+                                Text("Friendships")
                                     .fontWeight(.light)
-                                    .frame(width: 115, height: 60)
+                                    .frame(width: 120, height: 40)
                                     .foregroundColor(Color.white)
                                     .font(.system(size: 22))
                                     .background(Color.white)
@@ -275,7 +290,7 @@ struct MyRoomView: View {
                                                 label: {
                                     Text("Highlights")
                                         .fontWeight(.light)
-                                        .frame(width: 80, height: 50)
+                                        .frame(width: 85, height: 40)
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 17))
                                         .background(ColorManager .purple4)
@@ -308,7 +323,7 @@ struct MyRoomView: View {
                     }
                     
                     Spacer()
-                        .frame(height: 60)
+                        .frame(height: 75)
                     
                     HStack {
                         
@@ -316,7 +331,7 @@ struct MyRoomView: View {
                                         label: {
                             Text("Self")
                                 .fontWeight(.light)
-                                .frame(width: 80, height: 50)
+                                .frame(width: 80, height: 40)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 17))
                                 .background(ColorManager .purple4)
@@ -330,7 +345,7 @@ struct MyRoomView: View {
                         
                         Text("Journal")
                             .fontWeight(.light)
-                            .frame(width: 155, height: 60)
+                            .frame(width: 155, height: 40)
                             .foregroundColor(Color.white)
                             .font(.system(size: 22))
                             .background(Color.white)
@@ -342,7 +357,7 @@ struct MyRoomView: View {
                                         label: {
                             Text("Friends")
                                 .fontWeight(.light)
-                                .frame(width: 80, height: 50)
+                                .frame(width: 80, height: 40)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 17))
                                 .background(ColorManager .purple4)
@@ -356,14 +371,14 @@ struct MyRoomView: View {
                     }
                     
                     Spacer()
-                        .frame(height: 5)
+                        .frame(height: 17)
                     HStack {
                         
                         NavigationLink( destination:  HurtFeelings4(user: user, friends: friends, groups: groups),
                                         label: {
                             Text("Hurt Feeling")
                                 .fontWeight(.light)
-                                .frame(width: 80, height: 50)
+                                .frame(width: 80, height: 40)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 17))
                                 .background(ColorManager .purple4)
@@ -377,7 +392,7 @@ struct MyRoomView: View {
                         
                         Text("Friend Drama")
                             .fontWeight(.light)
-                            .frame(width: 155, height: 60)
+                            .frame(width: 155, height: 40)
                             .foregroundColor(Color.white)
                             .font(.system(size: 22))
                             .background(Color.white)
@@ -389,7 +404,7 @@ struct MyRoomView: View {
                                         label: {
                             Text("Break-Up")
                                 .fontWeight(.light)
-                                .frame(width: 80, height: 50)
+                                .frame(width: 80, height: 40)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 17))
                                 .background(ColorManager .purple4)
@@ -403,8 +418,8 @@ struct MyRoomView: View {
                     }
                    
                     
-//                    Spacer()
-//                        .frame(height: 50)
+                    Spacer()
+                        .frame(height: 100)
                 }
             }
          

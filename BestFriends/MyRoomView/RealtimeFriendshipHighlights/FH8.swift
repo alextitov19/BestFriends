@@ -31,13 +31,19 @@ struct FH8: View {
         
         ZStack {
         
-            Color.black
-                .ignoresSafeArea()
             
-            AdPlayerView(name: "Galaxy2")
+            Image("CareHeartBalloon 1")
                 .ignoresSafeArea()
-                .blendMode(.screen)
-                .opacity(0.9)
+                .scaledToFit()
+                .opacity(0.4)
+            
+//            Color.black
+//                .ignoresSafeArea()
+//
+//            AdPlayerView(name: "Galaxy2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.9)
             
             
 //            if shareTapped {

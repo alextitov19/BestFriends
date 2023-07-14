@@ -45,15 +45,19 @@ struct FH9: View {
         //        ScrollView {
         
         ZStack {
-            
+         
+            Image("CareHeartBalloon 1")
+                .ignoresSafeArea()
+                .scaledToFit()
+                .opacity(0.4)
         
-            Color.black
-                .ignoresSafeArea()
-            
-            AdPlayerView(name: "Galaxy2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-                .opacity(0.9)
+//            Color.black
+//                .ignoresSafeArea()
+//
+//            AdPlayerView(name: "Galaxy2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.9)
             
             
 //            if shareTapped {

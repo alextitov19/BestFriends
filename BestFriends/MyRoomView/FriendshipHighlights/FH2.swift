@@ -33,14 +33,18 @@ struct FH2: View {
         
         ZStack {
             
-            
-            Color.black
+            Image("CareHeartBalloon 1")
                 .ignoresSafeArea()
+                .scaledToFit()
+                .opacity(0.4)
             
-            AdPlayerView(name: "Galaxy2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-                .opacity(0.9)
+//            Color.black
+//                .ignoresSafeArea()
+//
+//            AdPlayerView(name: "Galaxy2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.9)
             
             
             //            if shareTapped {
@@ -63,52 +67,7 @@ struct FH2: View {
             //                ScrollView {
             
             VStack {
-//                NavigationLink(
-//                    destination:  FH10(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-//                    label: {
-//
-//                        Image(systemName: "info.circle")
-//                            .resizable()
-//                            .scaledToFit()
-//                            .frame(width: 35, height: 35)
-//                            .opacity(0.5)
-//                            .foregroundColor(.white)
-//                    })
-                
-                Text("To setup BestFriends tap the")
-                    .font(.system(size: 30))
-                    .foregroundColor(ColorManager .grey1)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                Image(systemName: "info.circle")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 35, height: 35)
-                    .opacity(0.5)
-                    .foregroundColor(.white)
-                
-                Text("icon on homepage")
-                    .font(.system(size: 30))
-                    .foregroundColor(ColorManager .grey1)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                
-                
-                //                    NavigationLink(
-                //                        destination: FH8(),
-                //                        label: {
-                //                            Text("(i)")
-                //                                .fontWeight(.thin)
-                //                                .foregroundColor(Color.white)
-                //                                .frame(width: 40, height: 40)
-                //                                .font(.system(size: 30))
-                //                                .background(ColorManager .grey2)
-                //                                .opacity(0.95)
-                //                                .cornerRadius(5)
-                //                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                //                        }
-                //
-                //                    )}
+
                 
                 ZStack {
                     
@@ -128,14 +87,14 @@ struct FH2: View {
                             .frame(height: 30)
                         
                         
-                        Text("Shows you how to; add friends,")
+                        Text("BestFriends is about feeling")
                             .font(.system(size: 27))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
                         
-                        Text("set up Chat rooms, and more...")
+                        Text("loved by your friends")
                             .font(.system(size: 27))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.thin)

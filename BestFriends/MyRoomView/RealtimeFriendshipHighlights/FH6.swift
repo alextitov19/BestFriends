@@ -29,15 +29,18 @@ struct FH6: View {
         
         ZStack {
             
-         
-            
-            Color.black
+            Image("CareHeartBalloon 1")
                 .ignoresSafeArea()
+                .scaledToFit()
+                .opacity(0.4)
             
-            AdPlayerView(name: "Galaxy2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-                .opacity(0.9)
+//            Color.black
+//                .ignoresSafeArea()
+//
+//            AdPlayerView(name: "Galaxy2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.9)
 //            if shareTapped {
 //
 //                ColorManager.grey4

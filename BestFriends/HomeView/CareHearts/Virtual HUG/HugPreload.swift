@@ -132,7 +132,7 @@ struct HugPreload: View {
                     
                   
                     NavigationLink(destination: SendSongPush(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .grey1, friendName: "song to \nmatch your \nVibe")
+                        HugCircle (color: ColorManager .grey1, friendName: "send a \nsong")
                     })
                     .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                     .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
