@@ -35,15 +35,16 @@ struct HugPreload: View {
 //                .ignoresSafeArea()
 //                .blendMode(.screen)
 
-            Image("FHBackground")
+            Image("CareHeartBalloon 1")
                 .ignoresSafeArea()
                 .scaledToFit()
+                .opacity(0.4)
 
-                
-            AdPlayerView(name: "Galaxy2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-
+//
+//            AdPlayerView(name: "Galaxy2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//
 
             ZStack{
 
