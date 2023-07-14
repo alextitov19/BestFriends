@@ -37,52 +37,63 @@ struct FH10: View {
     
     var body: some View {
         ZStack {
-            ColorManager.grey4
-            //                .opacity(0.6)
+//            ColorManager.grey4
+//            //                .opacity(0.6)
+//                .ignoresSafeArea()
+//
+            Color.black
                 .ignoresSafeArea()
             
-//            AdPlayerView(name: "sky2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
+            AdPlayerView(name: "Galaxy2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.9)
        
-            
+            ZStack {
+                
+                
+                
+                
+            }
            
             VStack {
                 Text("TAP CENTER PLANET -> takes you to Main page")
-                    .fontWeight(.thin)
+                    .fontWeight(.light)
                     .frame(width: 300, height: 60)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 13))
-                    .background(ColorManager.grey3)
+                    .foregroundColor(Color.white)
+                    .font(.system(size: 17))
+                    .background(ColorManager.grey4)
                     .cornerRadius(10)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
             
+                Spacer ()
+                    .frame(height: 15)
                 
                 Text("Friends show up as smaller planets circling around your planet")
-                    .fontWeight(.thin)
+                    .fontWeight(.light)
                     .frame(width: 300, height: 60)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 15))
-                    .background(ColorManager.grey3)
+                    .foregroundColor(Color.white)
+                    .font(.system(size: 17))
+                    .background(ColorManager.grey4)
                     .cornerRadius(10)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                 
-             
-//                NavigationLink(
-//                    destination: EmptyView(),
-//                   label: {
+          
+                Spacer ()
+                    .frame(height: 15)
+                
                        Text("Friend's current 'vibe' shows as atmosphere around their planet")
-                           .fontWeight(.thin)
+                           .fontWeight(.light)
                            .frame(width: 300, height: 60)
-                           .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                           .font(.system(size: 13))
-                           .background(ColorManager.grey3)
+                           .foregroundColor(Color.white)
+                           .font(.system(size: 17))
+                           .background(ColorManager.grey4)
                            .cornerRadius(10)
-                           .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                           .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                    
                 
                 Spacer ()
-                    .frame(height: 30)
+                    .frame(height: 50)
                 
                 HStack {
                     NavigationLink(
@@ -96,7 +107,7 @@ struct FH10: View {
                                 .font(.system(size: 13))
                                 .background(Color.green)
                                 .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                             
                         })
                     
@@ -113,11 +124,14 @@ struct FH10: View {
                                 .font(.system(size: 13))
                                 .background(Color.green)
                                 .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                             
                         })
                 }
                     
+                Spacer ()
+                    .frame(height: 20)
+                
                     HStack {
                     
                     //                    HStack {
@@ -132,7 +146,7 @@ struct FH10: View {
                                 .font(.system(size: 13))
                                 .background(Color.green)
                                 .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                             
                         })
                     
@@ -147,7 +161,7 @@ struct FH10: View {
                             .font(.system(size: 13))
                             .background(Color.green)
                             .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         
                         HStack {
                             
@@ -162,7 +176,7 @@ struct FH10: View {
                                         .font(.system(size: 13))
                                         .background(Color.green)
                                         .cornerRadius(15)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                     
                                 })
                             
@@ -177,9 +191,10 @@ struct FH10: View {
                                         .font(.system(size: 13))
                                         .background(Color.green)
                                         .cornerRadius(15)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                     
                                 })
+                            
                         }
                     }
                 }
