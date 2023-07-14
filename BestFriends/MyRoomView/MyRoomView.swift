@@ -147,7 +147,7 @@ struct MyRoomView: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
                         
-                        Text("< CareHearts >")
+                        Text("CareHearts")
                             .fontWeight(.light)
                             .frame(width: 155, height: 60)
                             .foregroundColor(Color.white)
@@ -213,7 +213,7 @@ struct MyRoomView: View {
                     })
                     
                     
-                    Text("< PhotoPOP >")
+                    Text("PhotoPOP")
                         .fontWeight(.light)
                         .frame(width: 155, height: 60)
                         .foregroundColor(Color.white)
@@ -261,7 +261,7 @@ struct MyRoomView: View {
                         })
                         
                         
-                        Text("< Journal >")
+                        Text("Journal")
                             .fontWeight(.light)
                             .frame(width: 155, height: 60)
                             .foregroundColor(Color.white)
@@ -308,7 +308,7 @@ struct MyRoomView: View {
                         })
                         
                         
-                        Text("< Drama >")
+                        Text("Friend Drama")
                             .fontWeight(.light)
                             .frame(width: 155, height: 60)
                             .foregroundColor(Color.white)
@@ -339,6 +339,32 @@ struct MyRoomView: View {
                     
                     HStack {
                         
+                        NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                                        label: {
+                            Text("Smile \nVault")
+                                .fontWeight(.thin)
+                                .frame(width: 75, height: 50)
+                                .foregroundColor(Color.white)
+                                .font(.system(size: 17))
+                                .background(ColorManager .purple4)
+                                .glow(color: ColorManager.purple3, radius: 1)
+                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                .opacity(0.9)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        })
+                        
+                        
+                        Text("Friendships")
+                            .fontWeight(.light)
+                            .frame(width: 155, height: 60)
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 22))
+                            .background(Color.white)
+                            .opacity(0.6)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                      
                         NavigationLink( destination:  FH1(),
                                         label: {
                             Text("Highlight")
@@ -354,31 +380,6 @@ struct MyRoomView: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
                         
-                        
-                        Text("< Friendships >")
-                            .fontWeight(.light)
-                            .frame(width: 155, height: 60)
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 22))
-                            .background(Color.white)
-                            .opacity(0.6)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
-                        NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
-                                        label: {
-                            Text("Smile \nVault")
-                                .fontWeight(.thin)
-                                .frame(width: 75, height: 50)
-                                .foregroundColor(Color.white)
-                                .font(.system(size: 17))
-                                .background(ColorManager .purple4)
-                                .glow(color: ColorManager.purple3, radius: 1)
-                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                .opacity(0.9)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
                       
                     }
                     
