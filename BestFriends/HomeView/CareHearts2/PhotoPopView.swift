@@ -343,6 +343,7 @@ struct PhotoPopView: View {
                 print("Got response from server for deleting photo pop: ", response)
                 if response.status == 200 {
                     photoPopImages.remove(at: index)
+                    loadRecipients()
                 }
             })
             
