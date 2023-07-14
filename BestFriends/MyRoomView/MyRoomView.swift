@@ -246,17 +246,37 @@ struct MyRoomView: View {
                                 .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         })
                         
-                        
-                        Text("My \nFriends")
-                            .fontWeight(.light)
-                            .frame(width: 103, height: 60)
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 22))
-                            .background(Color.white)
-                            .opacity(0.6)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
+                        HStack {
+                            
+                            VStack {
+                                NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                                                label: {
+                                    Text("Smile \nVault")
+                                        .fontWeight(.light)
+                                        .frame(width: 75, height: 50)
+                                        .foregroundColor(Color.white)
+                                        .font(.system(size: 17))
+                                        .background(ColorManager .purple4)
+                                        .glow(color: ColorManager.purple3, radius: 1)
+                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                        .opacity(0.9)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                })
+                                
+                                Text("My \nFriends")
+                                    .fontWeight(.light)
+                                    .frame(width: 103, height: 60)
+                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 22))
+                                    .background(Color.white)
+                                    .opacity(0.6)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                            }
+                            
+                        }
                         NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
                                         label: {
                             Text("Friendship \nCoupons")
@@ -371,51 +391,51 @@ struct MyRoomView: View {
                     Spacer()
                         .frame(height: 25)
                     
-                    HStack {
-                        
-                        NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
-                                        label: {
-                            Text("Smile \nVault")
-                                .fontWeight(.light)
-                                .frame(width: 75, height: 50)
-                                .foregroundColor(Color.white)
-                                .font(.system(size: 17))
-                                .background(ColorManager .purple4)
-                                .glow(color: ColorManager.purple3, radius: 1)
-                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                .opacity(0.9)
-                                .cornerRadius(15)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                        })
-                        
-                        
-                        Text("Friendships")
-                            .fontWeight(.light)
-                            .frame(width: 155, height: 60)
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 22))
-                            .background(Color.white)
-                            .opacity(0.6)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                      
-                        NavigationLink( destination:  FH1(),
-                                        label: {
-                            Text("Highlight")
-                                .fontWeight(.light)
-                                .frame(width: 75, height: 50)
-                                .foregroundColor(Color.white)
-                                .font(.system(size: 17))
-                                .background(ColorManager .purple4)
-                                .glow(color: ColorManager.purple3, radius: 1)
-                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                .opacity(0.9)
-                                .cornerRadius(15)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                        })
-                        
-                      
-                    }
+//                    HStack {
+//                        
+//                        NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+//                                        label: {
+//                            Text("Smile \nVault")
+//                                .fontWeight(.light)
+//                                .frame(width: 75, height: 50)
+//                                .foregroundColor(Color.white)
+//                                .font(.system(size: 17))
+//                                .background(ColorManager .purple4)
+//                                .glow(color: ColorManager.purple3, radius: 1)
+//                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                .opacity(0.9)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                        })
+//                        
+//                        
+//                        Text("Friendships")
+//                            .fontWeight(.light)
+//                            .frame(width: 155, height: 60)
+//                            .foregroundColor(Color.white)
+//                            .font(.system(size: 22))
+//                            .background(Color.white)
+//                            .opacity(0.6)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                      
+//                        NavigationLink( destination:  FH1(),
+//                                        label: {
+//                            Text("Highlight")
+//                                .fontWeight(.light)
+//                                .frame(width: 75, height: 50)
+//                                .foregroundColor(Color.white)
+//                                .font(.system(size: 17))
+//                                .background(ColorManager .purple4)
+//                                .glow(color: ColorManager.purple3, radius: 1)
+//                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                .opacity(0.9)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                        })
+//                        
+//                      
+//                    }
                     
                     Spacer()
                         .frame(height: 120)
