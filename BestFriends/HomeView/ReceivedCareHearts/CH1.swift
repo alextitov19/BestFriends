@@ -76,35 +76,35 @@ struct CH1: View {
             //                ScrollView {
             
             VStack {
-//                NavigationLink(
-//                    destination:  FH10(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-//                    label: {
-//
-//                        Image(systemName: "info.circle")
-//                            .resizable()
-//                            .scaledToFit()
-//                            .frame(width: 35, height: 35)
-//                            .opacity(0.5)
-//                            .foregroundColor(.white)
-//                    })
+                //                NavigationLink(
+                //                    destination:  FH10(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                //                    label: {
+                //
+                //                        Image(systemName: "info.circle")
+                //                            .resizable()
+                //                            .scaledToFit()
+                //                            .frame(width: 35, height: 35)
+                //                            .opacity(0.5)
+                //                            .foregroundColor(.white)
+                //                    })
                 
-//                Text("To setup BestFriends tap the")
-//                    .font(.system(size: 30))
-//                    .foregroundColor(ColorManager .grey1)
-//                    .fontWeight(.thin)
-//                    .multilineTextAlignment(.center)
-//                Image(systemName: "info.circle")
-//                    .resizable()
-//                    .scaledToFit()
-//                    .frame(width: 35, height: 35)
-//                    .opacity(0.5)
-//                    .foregroundColor(.white)
-//
-//                Text("icon on homepage")
-//                    .font(.system(size: 30))
-//                    .foregroundColor(ColorManager .grey1)
-//                    .fontWeight(.thin)
-//                    .multilineTextAlignment(.center)
+                //                Text("To setup BestFriends tap the")
+                //                    .font(.system(size: 30))
+                //                    .foregroundColor(ColorManager .grey1)
+                //                    .fontWeight(.thin)
+                //                    .multilineTextAlignment(.center)
+                //                Image(systemName: "info.circle")
+                //                    .resizable()
+                //                    .scaledToFit()
+                //                    .frame(width: 35, height: 35)
+                //                    .opacity(0.5)
+                //                    .foregroundColor(.white)
+                //
+                //                Text("icon on homepage")
+                //                    .font(.system(size: 30))
+                //                    .foregroundColor(ColorManager .grey1)
+                //                    .fontWeight(.thin)
+                //                    .multilineTextAlignment(.center)
                 
                 
                 //                    NavigationLink(
@@ -148,20 +148,20 @@ struct CH1: View {
                             .multilineTextAlignment(.center)
                         
                         
-//                        Text("set up Chat rooms, and more...")
-//                            .font(.system(size: 27))
-//                            .foregroundColor(ColorManager .grey1)
-//                            .fontWeight(.thin)
-//                            .multilineTextAlignment(.center)
+                        //                        Text("set up Chat rooms, and more...")
+                        //                            .font(.system(size: 27))
+                        //                            .foregroundColor(ColorManager .grey1)
+                        //                            .fontWeight(.thin)
+                        //                            .multilineTextAlignment(.center)
                         
                         
                         Spacer()
                             .frame(height: 20)
                         
-//                        Image("holding iphone")
-//                            .resizable()
-//                            .frame(width: 150, height: 150)
-//
+                        //                        Image("holding iphone")
+                        //                            .resizable()
+                        //                            .frame(width: 150, height: 150)
+                        //
                     }
                     
                 }
@@ -172,35 +172,35 @@ struct CH1: View {
                     
                     
                     
-                    NavigationLink(
-                        destination: FH9(),
-                        label: {
-                            Text("->")
-                                .fontWeight(.thin)
-                                .foregroundColor(Color.white)
-                                .frame(width: 40, height: 40)
-                                .font(.system(size: 30))
-                                .background(ColorManager .grey2)
-                                .opacity(0.95)
-                                .cornerRadius(5)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        }
-                        
-                    )}
-                
-                
-                
-                
-                Spacer()
-                    .frame(height: 40)
+                    //                    NavigationLink(
+                    //                        destination: FH9(),
+                    //                        label: {
+                    //                            Text("->")
+                    //                                .fontWeight(.thin)
+                    //                                .foregroundColor(Color.white)
+                    //                                .frame(width: 40, height: 40)
+                    //                                .font(.system(size: 30))
+                    //                                .background(ColorManager .grey2)
+                    //                                .opacity(0.95)
+                    //                                .cornerRadius(5)
+                    //                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    //                        }
+                    //
+                    //                    )}
+                    
+                    
+                    
+                    
+                    Spacer()
+                        .frame(height: 40)
+                    
+                }
                 
             }
             
         }
         
     }
-    
-    
 }
         
     
