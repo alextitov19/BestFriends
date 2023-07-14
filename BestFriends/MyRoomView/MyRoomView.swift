@@ -419,7 +419,7 @@ struct MyRoomView: View {
                    
                     
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 50)
                 }
             }
          
