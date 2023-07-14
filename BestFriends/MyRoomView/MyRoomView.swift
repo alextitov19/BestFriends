@@ -80,7 +80,7 @@ struct MyRoomView: View {
                             .background(ColorManager .pmbc_green)
 //                            .opacity(0.9)
                             .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                     })
                     
                 }
@@ -127,16 +127,16 @@ struct MyRoomView: View {
                             .shadow(color: .white, radius: 3, x: -4, y: 4)
                             .opacity(0.9)
                             .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                     })
                     
                     VStack {
                         
                         NavigationLink( destination: CH10(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                                         label: {
-                            Text("Got one")
-                                .fontWeight(.thin)
-                                .frame(width: 75, height: 50)
+                            Text("Received \nCareHeart")
+                                .fontWeight(.light)
+                                .frame(width: 100, height: 50)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 17))
                                 .background(ColorManager .purple4)
@@ -144,7 +144,7 @@ struct MyRoomView: View {
                                 .shadow(color: .white, radius: 3, x: -4, y: 4)
                                 .opacity(0.9)
                                 .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         })
                         
                         Text("CareHearts")
@@ -159,9 +159,9 @@ struct MyRoomView: View {
                         
                         NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
                                         label: {
-                            Text("Fun \nTimes")
+                            Text("Friendship \nCoupons")
                                 .fontWeight(.light)
-                                .frame(width: 75, height: 50)
+                                .frame(width: 100, height: 50)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 17))
                                 .background(ColorManager .purple4)
@@ -169,7 +169,7 @@ struct MyRoomView: View {
                                 .shadow(color: .white, radius: 3, x: -4, y: 4)
                                 .opacity(0.9)
                                 .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         })
                         
                         
@@ -179,7 +179,7 @@ struct MyRoomView: View {
                     NavigationLink( destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                     label: {
                         Text("Request")
-                            .fontWeight(.thin)
+                            .fontWeight(.light)
                             .frame(width: 75, height: 50)
                             .foregroundColor(Color.white)
                             .font(.system(size: 17))
@@ -188,7 +188,7 @@ struct MyRoomView: View {
                             .shadow(color: .white, radius: 3, x: -4, y: 4)
                             .opacity(0.9)
                             .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                     })
                     
                 }
@@ -200,7 +200,7 @@ struct MyRoomView: View {
                     NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
                                     label: {
                         Text("Send")
-                            .fontWeight(.thin)
+                            .fontWeight(.light)
                             .frame(width: 75, height: 50)
                             .foregroundColor(Color.white)
                             .font(.system(size: 17))
@@ -209,7 +209,7 @@ struct MyRoomView: View {
                             .shadow(color: .white, radius: 3, x: -4, y: 4)
                             .opacity(0.9)
                             .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                     })
                     
                     
@@ -225,8 +225,8 @@ struct MyRoomView: View {
                     
                     NavigationLink( destination: INFOPreloadA(user: user, friends: friends),
                                     label: {
-                        Text("Request")
-                            .fontWeight(.thin)
+                        Text("Where are \nyou?")
+                            .fontWeight(.light)
                             .frame(width: 75, height: 50)
                             .foregroundColor(Color.white)
                             .font(.system(size: 17))
@@ -235,7 +235,7 @@ struct MyRoomView: View {
                             .shadow(color: .white, radius: 3, x: -4, y: 4)
                             .opacity(0.9)
                             .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                     })
                     
                 }
@@ -245,10 +245,36 @@ struct MyRoomView: View {
                     
                     HStack {
                         
-                        NavigationLink( destination:  JournalsView(friends: friends),
+                        NavigationLink( destination: INFOPreloadA(user: user, friends: friends),
                                         label: {
-                            Text("Self")
-                                .fontWeight(.thin)
+                            Text("Where \nare you?")
+                                .fontWeight(.light)
+                                .frame(width: 100, height: 50)
+                                .foregroundColor(Color.white)
+                                .font(.system(size: 17))
+                                .background(ColorManager .purple4)
+                                .glow(color: ColorManager.purple3, radius: 1)
+                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                .opacity(0.9)
+                                .cornerRadius(15)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                        })
+                        
+                        
+                        Text("My Friends")
+                            .fontWeight(.light)
+                            .frame(width: 120, height: 60)
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 22))
+                            .background(Color.white)
+                            .opacity(0.6)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        
+                        NavigationLink( destination: CH1(),
+                                        label: {
+                            Text("Friends")
+                                .fontWeight(.light)
                                 .frame(width: 75, height: 50)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 17))
@@ -257,7 +283,29 @@ struct MyRoomView: View {
                                 .shadow(color: .white, radius: 3, x: -4, y: 4)
                                 .opacity(0.9)
                                 .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                        })
+                        
+                    }
+                    
+                    Spacer()
+                        .frame(height: 15)
+                    
+                    HStack {
+                        
+                        NavigationLink( destination:  JournalsView(friends: friends),
+                                        label: {
+                            Text("Self")
+                                .fontWeight(.light)
+                                .frame(width: 75, height: 50)
+                                .foregroundColor(Color.white)
+                                .font(.system(size: 17))
+                                .background(ColorManager .purple4)
+                                .glow(color: ColorManager.purple3, radius: 1)
+                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                .opacity(0.9)
+                                .cornerRadius(15)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         })
                         
                         
@@ -274,7 +322,7 @@ struct MyRoomView: View {
                         NavigationLink( destination: CH1(),
                                         label: {
                             Text("Friends")
-                                .fontWeight(.thin)
+                                .fontWeight(.light)
                                 .frame(width: 75, height: 50)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 17))
@@ -283,7 +331,7 @@ struct MyRoomView: View {
                                 .shadow(color: .white, radius: 3, x: -4, y: 4)
                                 .opacity(0.9)
                                 .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         })
                         
                     }
@@ -295,7 +343,7 @@ struct MyRoomView: View {
                         NavigationLink( destination:  HurtFeelings4(user: user, friends: friends, groups: groups),
                                         label: {
                             Text("Hurt Feeling")
-                                .fontWeight(.thin)
+                                .fontWeight(.light)
                                 .frame(width: 75, height: 50)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 17))
@@ -304,7 +352,7 @@ struct MyRoomView: View {
                                 .shadow(color: .white, radius: 3, x: -4, y: 4)
                                 .opacity(0.9)
                                 .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         })
                         
                         
@@ -321,7 +369,7 @@ struct MyRoomView: View {
                         NavigationLink( destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
                                         label: {
                             Text("Break-Up")
-                                .fontWeight(.thin)
+                                .fontWeight(.light)
                                 .frame(width: 75, height: 50)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 17))
@@ -330,7 +378,7 @@ struct MyRoomView: View {
                                 .shadow(color: .white, radius: 3, x: -4, y: 4)
                                 .opacity(0.9)
                                 .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         })
                         
                     }
@@ -342,7 +390,7 @@ struct MyRoomView: View {
                         NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
                                         label: {
                             Text("Smile \nVault")
-                                .fontWeight(.thin)
+                                .fontWeight(.light)
                                 .frame(width: 75, height: 50)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 17))
@@ -351,7 +399,7 @@ struct MyRoomView: View {
                                 .shadow(color: .white, radius: 3, x: -4, y: 4)
                                 .opacity(0.9)
                                 .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         })
                         
                         
@@ -368,7 +416,7 @@ struct MyRoomView: View {
                         NavigationLink( destination:  FH1(),
                                         label: {
                             Text("Highlight")
-                                .fontWeight(.thin)
+                                .fontWeight(.light)
                                 .frame(width: 75, height: 50)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 17))
@@ -377,7 +425,7 @@ struct MyRoomView: View {
                                 .shadow(color: .white, radius: 3, x: -4, y: 4)
                                 .opacity(0.9)
                                 .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         })
                         
                       
