@@ -51,13 +51,13 @@ struct CH5: View {
         ZStack {
             
             
-            Color.black
+            ColorManager .grey4
                 .ignoresSafeArea()
             
-            AdPlayerView(name: "Galaxy2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-                .opacity(0.9)
+//            AdPlayerView(name: "Galaxy2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.9)
             
             
             

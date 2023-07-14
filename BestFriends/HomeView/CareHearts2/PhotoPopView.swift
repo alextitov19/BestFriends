@@ -34,13 +34,13 @@ struct PhotoPopView: View {
             
             
             
+//
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//
             
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-            
-            
-            ColorManager.purple7
+            ColorManager.grey4
 //                .opacity(0.9)
                 .ignoresSafeArea()
             //            Color .purple
