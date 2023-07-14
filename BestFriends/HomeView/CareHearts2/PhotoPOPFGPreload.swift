@@ -103,15 +103,23 @@ struct PhotoPopFGPreload: View {
                     .blendMode(.screen)
                 
             } else {
-
-                ColorManager.grey4
-                    .opacity(0.8)
+                
+                Color.black
                     .ignoresSafeArea()
-                    .onAppear()
-
-    AdPlayerView(name: "sky2")
-        .ignoresSafeArea()
-        .blendMode(.screen)
+                
+                AdPlayerView(name: "Galaxy2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.7)
+//
+//                ColorManager.grey4
+//                    .opacity(0.8)
+//                    .ignoresSafeArea()
+//                    .onAppear()
+//
+//    AdPlayerView(name: "sky2")
+//        .ignoresSafeArea()
+//        .blendMode(.screen)
                 
                 
             }
