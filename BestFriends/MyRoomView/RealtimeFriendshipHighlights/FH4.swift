@@ -65,13 +65,13 @@ struct FH4: View {
                 
                 VStack {
 
-                    Text("Friend")
+                    Text("Friendship")
                         .font(.system(size: 35))
                         .foregroundColor(ColorManager .grey1)
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                     
-                    Text("Fun Times")
+                    Text("Coupons")
                         .font(.system(size: 45))
                         .foregroundColor(ColorManager .grey1)
                         .fontWeight(.thin)
@@ -92,7 +92,7 @@ struct FH4: View {
                             
                             
                             Spacer()
-                                .frame(height: 100)
+                                .frame(height: 70)
                             
                             Text("Redeem a friend's \n'Fun Times' coupon.")
                                 .font(.system(size: 27))
@@ -114,7 +114,7 @@ struct FH4: View {
                         VStack {
                             
                             Spacer()
-                                .frame(height: 30)
+                                .frame(height: 20)
                            
                                
                           

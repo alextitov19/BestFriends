@@ -94,7 +94,7 @@ struct FH8: View {
                             
                             
                             Spacer()
-                                .frame(height: 150)
+                                .frame(height: 30)
                             
                             Text("Your friend just blew you a kiss, \njump up high and catch it.")
                                 .font(.system(size: 27))

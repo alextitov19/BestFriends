@@ -80,9 +80,9 @@ struct FH3: View {
                             
                             
                             Spacer()
-                                .frame(height: 150)
+                                .frame(height: 70)
                             
-                            Text("All these features are real-time \nusing Push Notifications to your iPhone")
+                            Text("All these features are \nreal-time using \nPush Notifications \nto your iPhone")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.light)
@@ -90,11 +90,11 @@ struct FH3: View {
                             
                             
                             Spacer()
-                                .frame(height: 10)
+                                .frame(height: 30)
                             
-                            Image("FatGuy")
-                                .resizable()
-                                .frame(width: 170, height: 170)
+//                            Image("FatGuy")
+//                                .resizable()
+//                                .frame(width: 170, height: 170)
                             
                         }
                         
@@ -102,7 +102,7 @@ struct FH3: View {
                     VStack {
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 20)
                         
                         Text("Please turn on Notifications \nfor BestFriends")
                             .font(.system(size: 27))

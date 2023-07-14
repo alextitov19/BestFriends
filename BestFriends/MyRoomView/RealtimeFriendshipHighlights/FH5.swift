@@ -92,7 +92,7 @@ struct FH5: View {
                             
                             
                             Spacer()
-                                .frame(height: 90)
+                                .frame(height: 70)
                             
                             Text("That's Right: \n\nWe even let you know when \na friend is ready to talk \nafter a fight.")
                                 .font(.system(size: 27))

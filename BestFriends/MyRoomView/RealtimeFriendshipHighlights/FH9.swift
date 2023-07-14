@@ -109,7 +109,7 @@ struct FH9: View {
                             
                             
                             Spacer()
-                                .frame(height: 150)
+                                .frame(height: 30)
                             
                             Text("Your friends are 'always' here")
                                 .font(.system(size: 27))

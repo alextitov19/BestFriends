@@ -92,7 +92,7 @@ struct FH7: View {
                             
                             
                             Spacer()
-                                .frame(height: 150)
+                                .frame(height: 30)
                             
                             Text("Your friend sent a pic. \n\nJust 'shake' you iPhone \nand it pops up full-screen.")
                                 .font(.system(size: 27))
@@ -102,7 +102,7 @@ struct FH7: View {
                             
                             
                             Spacer()
-                                .frame(height: 5)
+                                .frame(height: 20)
                             
 //                            Image("FatGuy200")
 //                                .resizable()
@@ -114,7 +114,7 @@ struct FH7: View {
                         VStack {
                             
                             Spacer()
-                                .frame(height: 5)
+                                .frame(height: 30)
                            
                                
                           
