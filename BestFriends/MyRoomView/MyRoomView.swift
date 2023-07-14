@@ -403,8 +403,8 @@ struct MyRoomView: View {
                     }
                    
                     
-                    Spacer()
-                        .frame(height: 50)
+//                    Spacer()
+//                        .frame(height: 50)
                 }
             }
          

@@ -665,6 +665,7 @@
 			isa = PBXGroup;
 			children = (
 				2DFB03052A57220C00669948 /* FH1.swift */,
+				2DFB03072A57221600669948 /* FH2.swift */,
 			);
 			path = FriendshipHighlights;
 			sourceTree = "<group>";
@@ -697,7 +698,6 @@
 				2DFB030D2A57223E00669948 /* FH5.swift */,
 				2DFB030B2A57223100669948 /* FH4.swift */,
 				2DFB03092A57222300669948 /* FH3.swift */,
-				2DFB03072A57221600669948 /* FH2.swift */,
 			);
 			path = RealtimeFriendshipHighlights;
 			sourceTree = "<group>";
