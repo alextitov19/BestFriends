@@ -73,6 +73,7 @@ struct NotificationsView: View {
 
         @State private var hugActive = false
         @State private var photoPopActive = false
+        @State private var kissesActive = false
 
         init(ian: InAppNotification, user: User, friends: [User]) {
             self.ian = ian
@@ -114,6 +115,10 @@ struct NotificationsView: View {
                     EmptyView()
                 })
                 
+                NavigationLink(destination: CH9(user: user, friends: friends), isActive: $kissesActive, label: {
+                    EmptyView()
+                })
+                
                 Color.teal
                 
                 
@@ -146,6 +151,12 @@ struct NotificationsView: View {
                 hugActive = true
             case "What are you doing? Send PhotoPoP!":
                 photoPopActive = true
+            case "just sent you a new Hug!":
+                hugActive = true
+            case "You got new Kisses!":
+                kissesActive = true
+            case "Thanks for the Kiss":
+                kissesActive = true
             default:
                 return
             }
