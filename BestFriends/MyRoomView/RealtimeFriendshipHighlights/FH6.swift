@@ -102,9 +102,9 @@ struct FH6: View {
                             Spacer()
                                 .frame(height: 1)
                             
-                            Image("Guy275")
-                                .resizable()
-                                .frame(width: 150, height: 150)
+//                            Image("Guy275")
+//                                .resizable()
+//                                .frame(width: 150, height: 150)
                             
                         }
                         

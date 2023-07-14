@@ -29,14 +29,19 @@ struct FH7: View {
         //        ScrollView {
         
         ZStack {
-        
-            Color.black
-                .ignoresSafeArea()
             
-            AdPlayerView(name: "Galaxy2")
+            Image("CareHeartBalloon 1")
                 .ignoresSafeArea()
-                .blendMode(.screen)
-                .opacity(0.9)
+                .scaledToFit()
+                .opacity(0.4)
+        
+//            Color.black
+//                .ignoresSafeArea()
+//
+//            AdPlayerView(name: "Galaxy2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.9)
             
             
 //            if shareTapped {
@@ -60,11 +65,11 @@ struct FH7: View {
                 
                 VStack {
                     
-                    Text("all new")
-                        .font(.system(size: 35))
-                        .foregroundColor(ColorManager .grey1)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
+//                    Text("all new")
+//                        .font(.system(size: 35))
+//                        .foregroundColor(ColorManager .grey1)
+//                        .fontWeight(.thin)
+//                        .multilineTextAlignment(.center)
                     
                     Text("PhotoPOP")
                         .font(.system(size: 45))
@@ -99,9 +104,9 @@ struct FH7: View {
                             Spacer()
                                 .frame(height: 5)
                             
-                            Image("FatGuy200")
-                                .resizable()
-                                .frame(width: 150, height: 150)
+//                            Image("FatGuy200")
+//                                .resizable()
+//                                .frame(width: 150, height: 150)
                             
                         }
                         

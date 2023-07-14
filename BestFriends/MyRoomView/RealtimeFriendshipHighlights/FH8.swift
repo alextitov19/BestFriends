@@ -106,9 +106,9 @@ struct FH8: View {
                             Spacer()
                                 .frame(height: 20)
                             
-                            Image("BalloonGuy300")
-                                .resizable()
-                                .frame(width: 150, height: 150)
+//                            Image("BalloonGuy300")
+//                                .resizable()
+//                                .frame(width: 150, height: 150)
                             
                         }
                         

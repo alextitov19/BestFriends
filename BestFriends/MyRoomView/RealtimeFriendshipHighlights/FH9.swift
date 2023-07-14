@@ -82,17 +82,17 @@ struct FH9: View {
                 VStack {
 
                     
-                    Text("Your real-time")
-                        .font(.system(size: 35))
-                        .foregroundColor(ColorManager .grey1)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
-                    
-                    Text("Friendships")
-                        .font(.system(size: 45))
-                        .foregroundColor(ColorManager .grey1)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
+//                    Text("Your real-time")
+//                        .font(.system(size: 35))
+//                        .foregroundColor(ColorManager .grey1)
+//                        .fontWeight(.thin)
+//                        .multilineTextAlignment(.center)
+//
+//                    Text("Friendships")
+//                        .font(.system(size: 45))
+//                        .foregroundColor(ColorManager .grey1)
+//                        .fontWeight(.thin)
+//                        .multilineTextAlignment(.center)
                     
                     ZStack {
                         
@@ -128,9 +128,9 @@ struct FH9: View {
                             Spacer()
                                 .frame(height: 20)
                             
-                            Image("CoolGuy")
-                                .resizable()
-                                .frame(width: 150, height: 150)
+//                            Image("CoolGuy")
+//                                .resizable()
+//                                .frame(width: 150, height: 150)
                             
                         }
                         

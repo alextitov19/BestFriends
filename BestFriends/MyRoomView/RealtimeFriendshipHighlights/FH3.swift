@@ -30,13 +30,18 @@ struct FH3: View {
         
         ZStack {
           
-            Color.black
+            Image("CareHeartBalloon 1")
                 .ignoresSafeArea()
+                .scaledToFit()
+                .opacity(0.4)
             
-            AdPlayerView(name: "Galaxy2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-                .opacity(0.9)
+//            Color.black
+//                .ignoresSafeArea()
+//
+//            AdPlayerView(name: "Galaxy2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.9)
             
             
 //            if shareTapped {
@@ -87,7 +92,7 @@ struct FH3: View {
                             Spacer()
                                 .frame(height: 10)
                             
-                            Image("Girl400")
+                            Image("FatGuy")
                                 .resizable()
                                 .frame(width: 170, height: 170)
                             

@@ -104,9 +104,9 @@ struct FH5: View {
                             Spacer()
                                 .frame(height: 20)
                             
-                            Image("girlwalking250")
-                                .resizable()
-                                .frame(width: 125, height: 125)
+//                            Image("girlwalking250")
+//                                .resizable()
+//                                .frame(width: 125, height: 125)
                             
                         }
                         
