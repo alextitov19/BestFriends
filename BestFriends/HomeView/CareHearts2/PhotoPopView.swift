@@ -60,29 +60,8 @@ struct PhotoPopView: View {
             
             VStack {
                 
-//
-//                Button(action: {
-//                    sessionManager.showLogin()
-//                },
-//                       label: {
-//                    Image("home-alt2")
-//                        .frame(width: 50, height: 25)
-//                        .foregroundColor(.white)
-//                        .font(.system(size: 20))
-//                        .background(ColorManager .grey2)
-//                        .cornerRadius(15)
-//                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                        .opacity(0.70)
-//
-//                })
-                
-//                Text("Shaking PhotoPOP")
-//                    .font(.system(size: 30, weight: .bold))
-//                    .foregroundColor(ColorManager .grey1)
-//                    .shadow(color: .purple, radius: 1, x: 0, y: 1)
-//                    .opacity(0.50)
-//                    .multilineTextAlignment(.center)
-//
+
+
                 Button(action: {
                     sessionManager.showLogin()
                 },
@@ -98,14 +77,16 @@ struct PhotoPopView: View {
                     
                 })
                     
+                Spacer ()
+                    .frame(height: 10)
                 
                 NavigationLink( destination:  CH5(user: user, friends: friends),
                                 label: {
                     Text("First time? Please see Instructions")
                         .fontWeight(.light)
-                        .frame(width: 300, height: 40)
+                        .frame(width: 310, height: 40)
                         .foregroundColor(Color.white)
-                        .font(.system(size: 17))
+                        .font(.system(size: 19))
                         .background(Color.orange)
                         .glow(color: ColorManager.purple3, radius: 1)
                         .shadow(color: .white, radius: 3, x: -4, y: 4)
@@ -114,40 +95,24 @@ struct PhotoPopView: View {
                         .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                     
                 })
-//                NavigationLink(
-//                    destination: PhotoPop3(user: user, friends: friends),
-//                    label: {
-//                        Text("INSTRUCTIONS: \n\n1) tap 'camera' or 'gallery' icon \n2) select friend from dropdown menu  \n3) add gallery or camera image \n4) tap [Send Notificaton to Friend], select friend - tap [Share] \n\nNOTE: \nYou can only send ONE \nimage to ONE friend at a time \n\n\nSENDING NEW IMAGE:  \n1) First, 'MUST DELETE' current image (just tap it) \n2) MUST tap Home button above and return \n(clears old image) \n3) upload new image")
-//                            .fontWeight(.regular)
-//                            .frame(width: 330, height: 390)
-//                            .foregroundColor(ColorManager .grey4)
-//                            .font(.system(size: 13))
-//                            .background(Color.orange)
-//                            .cornerRadius(10)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                    })
                 
-                Text("(if get 'loading' icon - friend deleted image)")
-                    .foregroundColor(Color.red)
-                    .italic()
-                    .font(.system(size: 12, weight: .light))
-//                    .opacity(0.7)
+                Spacer()
+                    .frame(height: 15)
                 
                 NavigationLink(
                     destination: PhotoPop3(user: user, friends: friends),
                     label: {
-                        Text("Send Notificaion to Friend")
-                            .fontWeight(.thin)
-                            .frame(width: 300, height: 50)
+                        Text("Alert Friend: Send Push Notificaion")
+                            .fontWeight(.light)
+                            .frame(width: 310, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 18.5))
                             .background(ColorManager.purple4)
                             .cornerRadius(10)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            .shadow(color: ColorManager .grey2, radius: 2, x: 0, y: 2)
                     })
                 
-//                    Spacer()
-//                        .frame(height: 7)
+
                     
                     HStack {
                         Image(systemName: "camera")
@@ -196,32 +161,7 @@ struct PhotoPopView: View {
                     }
                     
                     Spacer()
-                    
-                    //
-                    //                Button(action: {
-                    //                    showingRecipients = true
-                    //                }, label: {
-                    //                    Text("+")
-                    //                        .fontWeight(.regular)
-                    //                        .frame(width: 40, height: 30)
-                    //                        .foregroundColor(.white)
-                    //                        .font(.system(size: 30))
-                    //                        .background(ColorManager.purple3)
-                    //                        .cornerRadius(15)
-                    //                })
-                    ////
-                    //                Button(action: {
-                    //                    sessionManager.reloadHome()
-                    //                }, label: {
-                    //                    Text("Home")
-                    //                        .fontWeight(.thin)
-                    //                        .frame(width: 150, height: 30)
-                    //                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    //                        .font(.system(size: 25))
-                    //                        .background(ColorManager.purple3)
-                    //                        .cornerRadius(15)
-                    //                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    //                })
+                  
                 }
                 
                 if showingRecipients {

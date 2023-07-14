@@ -62,25 +62,26 @@ struct CH5: View {
             
             
             VStack {
-                //                NavigationLink(
-                //                    destination:  FH10(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                //                    label: {
-                //
-                //                        Image(systemName: "info.circle")
-                //                            .resizable()
-                //                            .scaledToFit()
-                //                            .frame(width: 35, height: 35)
-                //                            .opacity(0.5)
-                //                            .foregroundColor(.white)
-                //                    })
+    
                 
-                Text("How to send")
-                    .font(.system(size: 30))
+                Text("(When BestFriends app is OPEN)")
+                    .font(.system(size: 15))
+                    .italic()
                     .foregroundColor(ColorManager .grey1)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
-                Text("PhotoPOP images")
+                Spacer ()
+                    .frame(height: 10)
+                
+                
+                Text("View received images from your friends by,")
+                    .font(.system(size: 20))
+                    .foregroundColor(ColorManager .grey1)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                
+                Text("'skaking' your iPhone")
                     .font(.system(size: 30))
                     .foregroundColor(ColorManager .grey1)
                     .fontWeight(.light)
@@ -94,12 +95,12 @@ struct CH5: View {
                         
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 10)
                         
                         //                        NavigationLink(
                         //                            destination: PhotoPop3(user: user, friends: friends),
                         //                            label: {
-                        Text("INSTRUCTIONS: \n\n1) tap 'camera' or 'gallery' icon \n2) select friend from dropdown menu  \n3) add gallery or camera image \n4) tap [Send Notificaton to Friend], select friend - tap [Share] \n\nNOTE: \nYou can only send ONE \nimage to ONE friend at a time \n\n\nSENDING NEW IMAGE:  \n1) First, 'MUST DELETE' current image (just tap it) \n2) MUST tap Home button above and return \n(clears old image) \n3) upload new image")
+                        Text("INSTRUCTIONS: \n\n1) tap 'camera' or 'gallery' icon \n2) select friend from dropdown menu  \n3) add gallery or camera image \n4) tap [Alert Friend: Send Push Notification], select friend - tap [Share] \n\nNOTE: \nYou can only send ONE \nimage to ONE friend at a time \n\n\nSENDING NEW IMAGE:  \n1) First, 'MUST DELETE' current image (just tap it) \n2) MUST tap Home button above and return \n(clears old image) \n3) upload new image")
                             .fontWeight(.regular)
                             .frame(width: 360, height: 390)
                             .foregroundColor(ColorManager .grey4)
@@ -112,29 +113,11 @@ struct CH5: View {
                       
                         
                         Text("(if get 'loading' icon - friend has deleted image)")
-                            .foregroundColor(Color.red)
+                            .foregroundColor(Color.white)
                             .italic()
-                            .font(.system(size: 12, weight: .light))
+                            .font(.system(size: 14, weight: .light))
     
-                        
-                        Text("(when BestFriends app is OPEN)")
-                            .font(.system(size: 15))
-                            .italic()
-                            .foregroundColor(ColorManager .grey1)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("View received images from your frinds by,")
-                            .font(.system(size: 20))
-                            .foregroundColor(ColorManager .grey1)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("'skaking' your iPhone")
-                            .font(.system(size: 30))
-                            .foregroundColor(ColorManager .grey1)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
+                    
                         
                     }
                     
@@ -149,14 +132,14 @@ struct CH5: View {
                                     label: {
                         Text("Go to 'Send PhotoPOP'")
                             .fontWeight(.light)
-                            .frame(width: 300, height: 30)
+                            .frame(width: 220, height: 40)
                             .foregroundColor(Color.white)
                             .font(.system(size: 17))
                             .background(ColorManager .purple4)
                             .glow(color: ColorManager.purple3, radius: 1)
                             .shadow(color: .white, radius: 3, x: -4, y: 4)
                             .opacity(0.9)
-                            .cornerRadius(15)
+                            .cornerRadius(10)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                     })
               
