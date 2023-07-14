@@ -98,18 +98,34 @@ struct PhotoPopView: View {
                     
                 })
                     
-                NavigationLink(
-                    destination: PhotoPop3(user: user, friends: friends),
-                    label: {
-                        Text("INSTRUCTIONS: \n\n1) tap 'camera' or 'gallery' icon \n2) select friend from dropdown menu  \n3) add gallery or camera image \n4) tap [Send Notificaton to Friend], select friend - tap [Share] \n\nNOTE: \nYou can only send ONE \nimage to ONE friend at a time \n\n\nSENDING NEW IMAGE:  \n1) First, 'MUST DELETE' current image (just tap it) \n2) MUST tap Home button above and return \n(clears old image) \n3) upload new image")
-                            .fontWeight(.regular)
-                            .frame(width: 330, height: 390)
-                            .foregroundColor(ColorManager .grey4)
-                            .font(.system(size: 13))
-                            .background(Color.orange)
-                            .cornerRadius(10)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
+                
+                NavigationLink( destination:  CH5(user: user, friends: friends),
+                                label: {
+                    Text("First time? Please see Instructions")
+                        .fontWeight(.light)
+                        .frame(width: 300, height: 40)
+                        .foregroundColor(Color.white)
+                        .font(.system(size: 17))
+                        .background(Color.orange)
+                        .glow(color: ColorManager.purple3, radius: 1)
+                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                        .opacity(0.9)
+                        .cornerRadius(10)
+                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                    
+                })
+//                NavigationLink(
+//                    destination: PhotoPop3(user: user, friends: friends),
+//                    label: {
+//                        Text("INSTRUCTIONS: \n\n1) tap 'camera' or 'gallery' icon \n2) select friend from dropdown menu  \n3) add gallery or camera image \n4) tap [Send Notificaton to Friend], select friend - tap [Share] \n\nNOTE: \nYou can only send ONE \nimage to ONE friend at a time \n\n\nSENDING NEW IMAGE:  \n1) First, 'MUST DELETE' current image (just tap it) \n2) MUST tap Home button above and return \n(clears old image) \n3) upload new image")
+//                            .fontWeight(.regular)
+//                            .frame(width: 330, height: 390)
+//                            .foregroundColor(ColorManager .grey4)
+//                            .font(.system(size: 13))
+//                            .background(Color.orange)
+//                            .cornerRadius(10)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                    })
                 
                 Text("(if get 'loading' icon - friend deleted image)")
                     .foregroundColor(Color.red)

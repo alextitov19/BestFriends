@@ -110,7 +110,7 @@ struct MyRoomView: View {
                 
                 
                 Spacer()
-                    .frame(height: 80)
+                    .frame(height: 100)
 
                 HStack {
                
@@ -157,23 +157,7 @@ struct MyRoomView: View {
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
-                        NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
-                                        label: {
-                            Text("Friendship \nCoupons")
-                                .fontWeight(.light)
-                                .frame(width: 100, height: 50)
-                                .foregroundColor(Color.white)
-                                .font(.system(size: 17))
-                                .background(ColorManager .purple4)
-                                .glow(color: ColorManager.purple3, radius: 1)
-                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                .opacity(0.9)
-                                .cornerRadius(15)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                        })
-                        
-                        
-                        
+    
                     }
                     
                     NavigationLink( destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
@@ -193,7 +177,7 @@ struct MyRoomView: View {
                     
                 }
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 25)
                 
                 HStack {
                     
@@ -222,10 +206,11 @@ struct MyRoomView: View {
                         .opacity(0.6)
                         .cornerRadius(15)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                  
                     
-                    NavigationLink( destination: INFOPreloadA(user: user, friends: friends),
+                    NavigationLink( destination:  CH5(user: user, friends: friends),
                                     label: {
-                        Text("Where are \nyou?")
+                        Text("How to \nSend")
                             .fontWeight(.light)
                             .frame(width: 75, height: 50)
                             .foregroundColor(Color.white)
@@ -237,11 +222,12 @@ struct MyRoomView: View {
                             .cornerRadius(15)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                     })
-                    
+
                 }
+               
                 VStack {
                     Spacer()
-                        .frame(height: 15)
+                        .frame(height: 25)
                     
                     HStack {
                         
@@ -261,9 +247,9 @@ struct MyRoomView: View {
                         })
                         
                         
-                        Text("My Friends")
+                        Text("My \nFriends")
                             .fontWeight(.light)
-                            .frame(width: 120, height: 60)
+                            .frame(width: 103, height: 60)
                             .foregroundColor(Color.white)
                             .font(.system(size: 22))
                             .background(Color.white)
@@ -271,11 +257,11 @@ struct MyRoomView: View {
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
-                        NavigationLink( destination: CH1(),
+                        NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
                                         label: {
-                            Text("Friends")
+                            Text("Friendship \nCoupons")
                                 .fontWeight(.light)
-                                .frame(width: 75, height: 50)
+                                .frame(width: 100, height: 50)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 17))
                                 .background(ColorManager .purple4)
@@ -289,7 +275,7 @@ struct MyRoomView: View {
                     }
                     
                     Spacer()
-                        .frame(height: 15)
+                        .frame(height: 25)
                     
                     HStack {
                         
@@ -337,7 +323,7 @@ struct MyRoomView: View {
                     }
                     
                     Spacer()
-                        .frame(height: 15)
+                        .frame(height: 25)
                     HStack {
                         
                         NavigationLink( destination:  HurtFeelings4(user: user, friends: friends, groups: groups),
@@ -383,7 +369,7 @@ struct MyRoomView: View {
                         
                     }
                     Spacer()
-                        .frame(height: 15)
+                        .frame(height: 25)
                     
                     HStack {
                         
