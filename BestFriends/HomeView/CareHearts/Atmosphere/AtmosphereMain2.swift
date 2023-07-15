@@ -49,7 +49,7 @@ struct AtmosphereMain2: View {
 //                .ignoresSafeArea()
 //                .blendMode(.screen)
 
-            Image("FHBackground")
+            Image("CHRequest 1")
                 .ignoresSafeArea()
                 .scaledToFit()
                 .ignoresSafeArea()
@@ -64,8 +64,8 @@ struct AtmosphereMain2: View {
             
             
             VStack {
-//                Spacer()
-//                    .frame(height: 20)
+                Spacer()
+                    .frame(height: 20)
                 
                 VStack {
 
@@ -89,11 +89,9 @@ struct AtmosphereMain2: View {
                             }
                       
                         Spacer ()
-                                .frame(width: 20)
+                                .frame(width: 50)
                             
-                            Image("FatGuy200")
-                                .resizable()
-                                .frame(width: 100, height: 100)
+                      
                             
                         }
                         Spacer()
