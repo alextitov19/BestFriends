@@ -48,14 +48,14 @@ struct CH10: View {
 //                .ignoresSafeArea()
 //                .blendMode(.screen)
 
-            Image("FHBackground")
+            Image("CareHeart 2")
                 .ignoresSafeArea()
                 .scaledToFit()
 
                 
-            AdPlayerView(name: "Galaxy2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
+//            AdPlayerView(name: "Galaxy2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
 
 
             ZStack{
@@ -68,14 +68,14 @@ struct CH10: View {
               
 
                         NavigationLink(destination: CH9(user: user, friends: friends), label: {
-                            HugCircle (color: ColorManager .red, friendName: "jump up \nand catch \nmy kiss")
+                            HugCircle (color: ColorManager .red, friendName: "jump up \nand catch \nyour kiss")
                         })
                         .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
                         .shadow(color: Color .pink, radius: 10, x: 10, y: 10)
                         .opacity(0.3)
 
                     NavigationLink(destination: VirtualHug(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager.orange5, friendName: "grab my \nhug")
+                        HugCircle (color: ColorManager.orange5, friendName: "grab your \nhug")
                     })
                     .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
                     .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
@@ -84,7 +84,7 @@ struct CH10: View {
 
                     
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .orange2, friendName: "aah \nthey're thinking \nof me")
+                        HugCircle (color: ColorManager .orange2, friendName: "ahhh!... you \ngot a heart")
                     })
                     .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                     .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
@@ -93,7 +93,7 @@ struct CH10: View {
                     
                   
                     NavigationLink(destination: CH7(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .grey1, friendName: "a song to \nmatch my \nVibe")
+                        HugCircle (color: ColorManager .grey1, friendName: "you got \nnew music!")
                     })
                     .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                     .shadow(color: Color .blue, radius: 10, x: 10, y: 10)

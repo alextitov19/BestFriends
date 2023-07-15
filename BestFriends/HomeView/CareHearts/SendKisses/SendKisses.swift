@@ -100,9 +100,7 @@ struct SendKisses: View {
                         
                     }
                     
-//                    Image("BalloonGuy")
-//                        .resizable()
-//                        .frame(width: 200, height: 200)
+
                 }
              
          
