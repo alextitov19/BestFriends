@@ -72,7 +72,7 @@ struct CH9: View {
                     .ignoresSafeArea()
                     .onAppear()
                 
-                Image("CHKisses 1")
+                Image("CHAirKisses 1")
                     .ignoresSafeArea()
                     .scaledToFit()
                 
@@ -89,76 +89,55 @@ struct CH9: View {
                    
                         
                         
-                        Spacer()
-                            .frame(height: 10)
+                    
                         
                         ZStack {
-                            
-//                                Image("KissesHeart")
-//                                    .resizable()
-//                                    .frame(width: 400, height: 325)
-//                                    .opacity(0.15)
-                            
-                            AdPlayerView(name: "HugVideo")
-                                .frame(width: 250, height: 250)
-                                .cornerRadius(15)
-                                .opacity(0.7)
-                                
-                                
+
+                           
                             VStack {
                                
-//                                Text("kisses")
-//                                    .font(.system(size: 60, weight: .light))
-//                                    .foregroundColor(ColorManager .grey2)
-//
-//                                Text("kisses")
-//                                    .font(.system(size: 45, weight: .light))
-//                                    .foregroundColor(ColorManager .grey2)
-//                                Text("kisses")
-//                                    .font(.system(size: 30, weight: .light))
-//                                    .foregroundColor(ColorManager .grey2)
+//                                Spacer()
+//                                    .frame(height: 100)
+
                             }
                         }
                       
                         
                     }
-                    
-//                    Image("BalloonGuy")
-//                        .resizable()
-//                        .frame(width: 200, height: 200)
+               
                 }
              
          
                 VStack {
 
-                    Text("the air is fresh with kisses")
-                                            .font(.system(size: 23))
-                
-                                            .foregroundColor(ColorManager .grey4)
-                                            .fontWeight(.thin)
-                                            .multilineTextAlignment(.center)
-                    
-                    Spacer()
-                        .frame(height: 20)
-                    
-                    Text("Say thank you")
-                                            .font(.system(size: 20))
-                
-                                            .foregroundColor(ColorManager .grey4)
-                                            .fontWeight(.thin)
-                                            .multilineTextAlignment(.center)
-                    
-                    Text("and blow one back!")
-                                            .font(.system(size: 20))
-                
-                                            .foregroundColor(ColorManager .grey4)
-                                            .fontWeight(.thin)
-                                            .multilineTextAlignment(.center)
+//                    Text("the air is fresh with kisses")
+//                                            .font(.system(size: 23))
+//
+//                                            .foregroundColor(ColorManager .grey1)
+//                                            .fontWeight(.thin)
+//                                            .multilineTextAlignment(.center)
+//
+//                    Spacer()
+//                        .frame(height: 20)
+//
+//                    Text("Say thank you")
+//                                            .font(.system(size: 20))
+//
+//                                            .foregroundColor(ColorManager .grey1)
+//                                            .fontWeight(.thin)
+//                                            .multilineTextAlignment(.center)
+//
+//                    Text("and blow one back!")
+//                                            .font(.system(size: 20))
+//
+//                                            .foregroundColor(ColorManager .grey1)
+//                                            .fontWeight(.thin)
+//                                            .multilineTextAlignment(.center)
                 
                     VStack {
 
-                        Spacer()
-                            .frame(height: 25)
+//                        Spacer()
+//                            .frame(height: 25)
                         
                         
                         HStack {
@@ -257,6 +236,27 @@ struct CH9: View {
                         Spacer()
                             .frame(height: 20)
                         
+                        Text("the air is fresh with kisses")
+                                                .font(.system(size: 23))
+                                                .foregroundColor(ColorManager .grey1)
+                                                .fontWeight(.light)
+                                                .multilineTextAlignment(.center)
+                        
+                        Spacer()
+                            .frame(height: 20)
+                        
+                        Text("Say thank you")
+                                                .font(.system(size: 20))
+                                                .foregroundColor(ColorManager .grey1)
+                                                .fontWeight(.light)
+                                                .multilineTextAlignment(.center)
+                        
+                        Text("and blow one back!")
+                                                .font(.system(size: 20))
+                                                .foregroundColor(ColorManager .grey1)
+                                                .fontWeight(.light)
+                                                .multilineTextAlignment(.center)
+                        
                         
                         Button(action: {
                             counter += 1
@@ -264,6 +264,8 @@ struct CH9: View {
                             shareButtonTapped()
                         },
                                label: {
+                            
+                            
                             Text("SHARE")
                         
                                 .fontWeight(.thin)
@@ -282,7 +284,16 @@ struct CH9: View {
                         
                         VStack {
                             
+                                                    Spacer()
+                                                        .frame(height: 20)
                             
+                            AdPlayerView(name: "HugVideo")
+                                .frame(width: 250, height: 250)
+                                .cornerRadius(15)
+                                .opacity(0.7)
+                            
+                            Spacer()
+                                .frame(height: 20)
                                  Button(action: {
                                      sessionManager.showLogin()
                                  },
@@ -291,7 +302,7 @@ struct CH9: View {
                                          .frame(width: 50, height: 25)
                                          .foregroundColor(.white)
                                          .font(.system(size: 20))
-                                         .background(Color .black)
+                                         .background(ColorManager.grey2)
                                          .cornerRadius(15)
                                          .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                                          .opacity(0.70)
@@ -299,13 +310,9 @@ struct CH9: View {
                                  })
                             
                             Spacer()
-                                .frame(height: 80)
+                                .frame(height: 150)
                             
-                            
-//                            Image("KissesHeart")
-//                                .resizable()
-//                                .frame(width: 200, height: 150)
-//                                .opacity(0.5)
+   
                    
                         }
                         
