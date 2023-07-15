@@ -131,7 +131,9 @@ struct HugPreload: View {
                     .opacity(0.3)
                     
                   
-                    NavigationLink(destination: SendSongPush(user: user, friends: friends), label: {
+//                    SendSongPush(user: user, friends: friends
+                    
+                    NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
                         HugCircle (color: ColorManager .grey1, friendName: "send a \nsong")
                     })
                     .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)

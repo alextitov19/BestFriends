@@ -189,12 +189,12 @@ struct PhotoPopFGPreload: View {
                                                     .submitLabel(.done)
                                                     .onReceive(Just(customMessage)) { _ in limitText(65) }
                                                     .padding(.top, 20)
-                                                    .padding(.horizontal, 40)
+                                                    .padding(.horizontal, 65)
                                                     .overlay(
                                                         RoundedRectangle(cornerRadius: 10)
                                                             .stroke(Color.purple)
                                                             .frame(height: 40)
-                                                            .padding(.horizontal, 20)
+                                                            .padding(.horizontal, 60)
                                                     )
                                                     .padding(.bottom, 5)
                                             }
