@@ -47,22 +47,19 @@ struct CH7: View {
                             ColorManager.grey4
                                 .ignoresSafeArea()
                                 .onAppear()
-//                Image("purpleBackground")
-//                    .resizable()
-//                    .ignoresSafeArea()
-//                    .scaledToFill()
-//                    .ignoresSafeArea()
+
                 
                 AdPlayerView(name: "dramaLights")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-            } else {
-                AdPlayerView(name: "")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
                 
-                ColorManager.purple1
+            } else {
+                Image("NewSong 1")
                     .ignoresSafeArea()
+                    .scaledToFit()
+                
+//                ColorManager.purple1
+//                    .ignoresSafeArea()
             }
             
 //            ColorManager .purple1
@@ -78,7 +75,7 @@ struct CH7: View {
                 HStack {
                     VStack {
                         
-                        Text("wow")
+                        Text("")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .grey2)
                         
@@ -93,10 +90,14 @@ struct CH7: View {
 //                        .resizable()
 //                        .frame(width: 200, height: 200)
                     
-                    Image("KissesHeart")
-                        .resizable()
-                        .frame(width: 200, height: 150)
-           
+                    
+//                    Image("KissesHeart")
+//                        .resizable()
+//                        .frame(width: 200, height: 150)
+                    AdPlayerView(name: "HugVideo")
+                        .frame(width: 250, height: 250)
+                        .cornerRadius(15)
+                        .opacity(0.7)
                     
                     
                 }
@@ -117,7 +118,14 @@ struct CH7: View {
                 
                 VStack {
 
-                    Text("you look nice today!")
+                    Text("You were just sent a new song")
+                                            .font(.system(size: 25))
+
+                                            .foregroundColor(ColorManager .grey2)
+                                            .fontWeight(.thin)
+                                            .multilineTextAlignment(.center)
+                    
+                    Text("Check it out in Chat")
                                             .font(.system(size: 25))
 
                                             .foregroundColor(ColorManager .grey2)
@@ -242,7 +250,7 @@ struct CH7: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("That was a nice thing to say \n\nYou're a BestFriend", isPresented: $showingAlert) {
+                                .alert("Your thank you has been sent", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -299,12 +307,12 @@ struct CH7: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: " A freind said you look really nice today!", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: " A freind said thank you for the song", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "You Look Nice Today", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                        print("Create a Look Nice notification response code: ", response)
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Thanks for the song!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        print("Create a song notification response code: ", response)
                     })
                     
                     RestApi.instance.createStreakLog(friendID: f.id)

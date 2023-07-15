@@ -94,7 +94,11 @@ struct CH6: View {
                                                                  .shadow(color: .blue, radius: 65, x: 30, y: 50)
                                                                  .opacity(0.6)
                                 
-                                
+                            AdPlayerView(name: "HugVideo")
+                                .frame(width: 250, height: 250)
+                                .cornerRadius(15)
+                                .opacity(0.7)
+                            
                             VStack {
                                 
                                 Text("Thanks for the")

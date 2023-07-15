@@ -98,6 +98,11 @@ struct CH9: View {
                                     .resizable()
                                     .frame(width: 400, height: 325)
                                     .opacity(0.15)
+                            
+                            AdPlayerView(name: "HugVideo")
+                                .frame(width: 250, height: 250)
+                                .cornerRadius(15)
+                                .opacity(0.7)
                                 
                                 
                             VStack {
