@@ -221,7 +221,7 @@ struct MyRoomView: View {
                     
                     NavigationLink( destination:  CH5(user: user, friends: friends),
                                     label: {
-                        Text("How Send")
+                        Text("How to...")
                             .fontWeight(.light)
                             .frame(width: 85, height: 40)
                             .foregroundColor(Color.white)
