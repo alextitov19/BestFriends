@@ -51,7 +51,7 @@ struct PhotoPopFGPreload: View {
 //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
-        customMessage = "Friendship Coupon from " + user.firstName + " : " + customMessage;
+        customMessage = "Friendship COUPON from; " + user.firstName + " : " + customMessage;
         
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
@@ -359,7 +359,7 @@ struct PhotoPopFGPreload: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your 'TalkCoupon' \n\nhas been sent.", isPresented: $showingAlert) {
+                                .alert("Your Friendship COUPON \n\nhas been sent.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })

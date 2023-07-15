@@ -65,7 +65,7 @@ struct CH4: View {
 //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
-        customMessage = "Friendship Coupon from " + user.firstName + " : " + customMessage;
+        customMessage = "NEW SONG from; " + user.firstName + " : " + customMessage;
         
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
@@ -160,7 +160,7 @@ struct CH4: View {
                                         VStack {
                                             
                                             Spacer()
-                                                .frame(height: 50)
+                                                .frame(height: 70)
                                             
                                             Text("new ")
                                                 .font(.system(size: 40, weight: .light))
@@ -218,7 +218,7 @@ struct CH4: View {
                                     
                                     
                                     ZStack(alignment: .bottom) {
-                                            Image("Coupon")
+                                            Image("")
                                                 .resizable()
                                                 .frame(width: 350, height: 100)
                                                 .cornerRadius(15)
@@ -229,14 +229,14 @@ struct CH4: View {
                                                 TextField("", text: $customMessage)
                                                     .placeholder(when: customMessage.isEmpty) {
                                                         HStack {
-                                                            Text("text name of song here")
-                                                                .foregroundColor(ColorManager.grey4)
+                                                            Text("Type name of song here")
+                                                                .foregroundColor(Color.white)
                                                                 .fontWeight(.thin)
                                                             Spacer()
                                                         }
                                                     }
-                                                    .foregroundColor(.black)
-                                                    .font(.system(size: 18))
+                                                    .foregroundColor(.white)
+                                                    .font(.system(size: 20))
                                                     .submitLabel(.done)
                                                     .onReceive(Just(customMessage)) { _ in limitText(65) }
                                                     .padding(.top, 20)
@@ -244,8 +244,9 @@ struct CH4: View {
                                                     .overlay(
                                                         RoundedRectangle(cornerRadius: 10)
                                                             .stroke(Color.purple)
-                                                            .frame(height: 40)
-                                                            .padding(.horizontal, 150)
+//                                                            .background(ColorManager.purple3)
+                                                            .frame(height: 50)
+                                                            .padding(.horizontal, 125)
                                                     )
                                                     .padding(.bottom, 5)
                                             }
@@ -279,7 +280,7 @@ struct CH4: View {
 //                        })
                         
                             Spacer()
-                                .frame(height: 10)
+                                .frame(height: 30)
                     }
       
 
@@ -294,7 +295,7 @@ struct CH4: View {
                         .multilineTextAlignment(.center)
             
                     VStack {
-
+                        
                         Spacer()
                             .frame(height: 5)
                         
@@ -379,8 +380,8 @@ struct CH4: View {
                                 
                             }
                         }
-                  
-
+                        
+                        
                         
                         Spacer()
                             .frame(height: 20)
@@ -394,7 +395,7 @@ struct CH4: View {
                         },
                                label: {
                             Text("SHARE")
-                        
+                            
                                 .fontWeight(.thin)
                                 .frame(width: 100, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -405,38 +406,35 @@ struct CH4: View {
                                 .alert("Your Song \nhas been sent.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
+                            
+                            
                         })
                         
+                    
                         Spacer()
      
-                        
-                        VStack {
-                            Spacer()
-                                .frame(height: 10)
-//
-                            Button(action: {
-                                sessionManager.showLogin()
-                            },
-                                   label: {
-                                Image("home-alt2")
-                                    .frame(width: 50, height: 25)
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 20))
-                                    .background(ColorManager .grey1)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                    .opacity(0.70)
-
-
-
-                            })
-
                         }
+                        
+                        
+//                    VStack {
+                        Spacer()
+                            .frame(height: 10)
+//
+                        Button(action: {
+                            sessionManager.showLogin()
+                        },
+                               label: {
+                            Image("home-alt2")
+                                .frame(width: 50, height: 25)
+                                .foregroundColor(.white)
+                                .font(.system(size: 20))
+                                .background(ColorManager .grey1)
+                                .cornerRadius(15)
+                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                .opacity(0.70)
 
-                    }
-                    
-                    
-                    
+                        })
+                 
                 }
                 
             }
