@@ -83,7 +83,7 @@ struct CH10: View {
                     .opacity(0.3)
 
                     
-                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), label: {
+                    NavigationLink(destination: CH6(user: user, friends: friends), label: {
                         HugCircle (color: ColorManager .orange2, friendName: "ahhh!... you \ngot a heart")
                     })
                     .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)

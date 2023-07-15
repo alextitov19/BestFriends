@@ -290,7 +290,7 @@ struct MyRoomView: View {
                                                 label: {
                                     Text("Highlights")
                                         .fontWeight(.light)
-                                        .frame(width: 85, height: 40)
+                                        .frame(width: 100, height: 40)
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 17))
                                         .background(ColorManager .purple4)
@@ -376,7 +376,7 @@ struct MyRoomView: View {
                         
                         NavigationLink( destination:  HurtFeelings4(user: user, friends: friends, groups: groups),
                                         label: {
-                            Text("Hurt Feeling")
+                            Text("Feelings")
                                 .fontWeight(.light)
                                 .frame(width: 80, height: 40)
                                 .foregroundColor(Color.white)
