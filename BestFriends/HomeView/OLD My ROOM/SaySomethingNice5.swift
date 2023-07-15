@@ -56,15 +56,19 @@ struct SaySomethingNice5: View {
                 
             } else {
 
-                ColorManager.purple7
-//                    .opacity(0.5)
-                    .ignoresSafeArea()
-                    .onAppear()
-
-    AdPlayerView(name: "sky2")
-        .ignoresSafeArea()
-        .blendMode(.screen)
+//                ColorManager.purple7
+////                    .opacity(0.5)
+//                    .ignoresSafeArea()
+//                    .onAppear()
+//
+//    AdPlayerView(name: "sky2")
+//        .ignoresSafeArea()
+//        .blendMode(.screen)
                 
+                Image("CareHeartBalloon 1")
+                    .ignoresSafeArea()
+                    .scaledToFit()
+                    .opacity(0.4)
                 
             }
             
