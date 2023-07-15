@@ -49,11 +49,10 @@ struct AtmosphereMain2: View {
 //                .ignoresSafeArea()
 //                .blendMode(.screen)
 
-            Image("CHRequest 1")
+            Image("CHRequest 2")
                 .ignoresSafeArea()
                 .scaledToFit()
-                .ignoresSafeArea()
-                .scaledToFit()
+              
 
                 
             AdPlayerView(name: "Galaxy2")
