@@ -72,7 +72,7 @@ struct CH9: View {
                     .ignoresSafeArea()
                     .onAppear()
                 
-                Image("FHBackground")
+                Image("CHKisses 1")
                     .ignoresSafeArea()
                     .scaledToFit()
                 
