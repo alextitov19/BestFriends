@@ -80,19 +80,19 @@ struct SaySomethingNice5: View {
                         
                         ZStack {
                             
-//                                Image("KissesHeart")
-//                                    .resizable()
-//                                    .frame(width: 400, height: 325)
-//                                    .opacity(0.15)
+                                Image("KissesHeart")
+                                    .resizable()
+                                    .frame(width: 400, height: 325)
+                                    .opacity(0.15)
                             
-                                                Image(systemName: "heart.fill")
-                                                                 .resizable()
-                                                                 .foregroundColor(.red)
-                                                                 .frame(width: 400, height: 325)
-                                                                 .blur(radius: 2)
-                            
-                                                                 .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                                                                 .opacity(0.6)
+//                                                Image(systemName: "heart.fill")
+//                                                                 .resizable()
+//                                                                 .foregroundColor(.red)
+//                                                                 .frame(width: 400, height: 325)
+//                                                                 .blur(radius: 2)
+//                            
+//                                                                 .shadow(color: .blue, radius: 65, x: 30, y: 50)
+//                                                                 .opacity(0.6)
                                 
                                 
                             VStack {

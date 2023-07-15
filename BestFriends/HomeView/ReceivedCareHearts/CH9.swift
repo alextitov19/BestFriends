@@ -94,10 +94,10 @@ struct CH9: View {
                         
                         ZStack {
                             
-                                Image("KissesHeart")
-                                    .resizable()
-                                    .frame(width: 400, height: 325)
-                                    .opacity(0.15)
+//                                Image("KissesHeart")
+//                                    .resizable()
+//                                    .frame(width: 400, height: 325)
+//                                    .opacity(0.15)
                             
                             AdPlayerView(name: "HugVideo")
                                 .frame(width: 250, height: 250)
@@ -107,16 +107,16 @@ struct CH9: View {
                                 
                             VStack {
                                
-                                Text("kisses")
-                                    .font(.system(size: 60, weight: .light))
-                                    .foregroundColor(ColorManager .grey2)
-                                
-                                Text("kisses")
-                                    .font(.system(size: 45, weight: .light))
-                                    .foregroundColor(ColorManager .grey2)
-                                Text("kisses")
-                                    .font(.system(size: 30, weight: .light))
-                                    .foregroundColor(ColorManager .grey2)
+//                                Text("kisses")
+//                                    .font(.system(size: 60, weight: .light))
+//                                    .foregroundColor(ColorManager .grey2)
+//
+//                                Text("kisses")
+//                                    .font(.system(size: 45, weight: .light))
+//                                    .foregroundColor(ColorManager .grey2)
+//                                Text("kisses")
+//                                    .font(.system(size: 30, weight: .light))
+//                                    .foregroundColor(ColorManager .grey2)
                             }
                         }
                       
@@ -134,7 +134,7 @@ struct CH9: View {
                     Text("the air is fresh with kisses")
                                             .font(.system(size: 23))
                 
-                                            .foregroundColor(ColorManager .grey1)
+                                            .foregroundColor(ColorManager .grey4)
                                             .fontWeight(.thin)
                                             .multilineTextAlignment(.center)
                     
@@ -144,14 +144,14 @@ struct CH9: View {
                     Text("Say thank you")
                                             .font(.system(size: 20))
                 
-                                            .foregroundColor(ColorManager .grey1)
+                                            .foregroundColor(ColorManager .grey4)
                                             .fontWeight(.thin)
                                             .multilineTextAlignment(.center)
                     
                     Text("and blow one back!")
                                             .font(.system(size: 20))
                 
-                                            .foregroundColor(ColorManager .grey1)
+                                            .foregroundColor(ColorManager .grey4)
                                             .fontWeight(.thin)
                                             .multilineTextAlignment(.center)
                 

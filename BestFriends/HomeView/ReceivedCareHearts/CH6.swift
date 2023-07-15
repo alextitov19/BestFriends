@@ -56,15 +56,17 @@ struct CH6: View {
                 
             } else {
 
-                ColorManager.purple7
-//                    .opacity(0.5)
+//                ColorManager.purple7
+////                    .opacity(0.5)
+//                    .ignoresSafeArea()
+//                    .onAppear()
+//
+//    AdPlayerView(name: "sky2")
+//        .ignoresSafeArea()
+//        .blendMode(.screen)
+                Image("CHHearts 3")
                     .ignoresSafeArea()
-                    .onAppear()
-
-    AdPlayerView(name: "sky2")
-        .ignoresSafeArea()
-        .blendMode(.screen)
-                
+                    .scaledToFit()
                 
             }
             
@@ -80,19 +82,7 @@ struct CH6: View {
                         
                         ZStack {
                             
-//                                Image("KissesHeart")
-//                                    .resizable()
-//                                    .frame(width: 400, height: 325)
-//                                    .opacity(0.15)
-                            
-                                                Image(systemName: "heart.fill")
-                                                                 .resizable()
-                                                                 .foregroundColor(.red)
-                                                                 .frame(width: 400, height: 325)
-                                                                 .blur(radius: 2)
-                            
-                                                                 .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                                                                 .opacity(0.6)
+
                                 
                             AdPlayerView(name: "HugVideo")
                                 .frame(width: 250, height: 250)
@@ -101,15 +91,7 @@ struct CH6: View {
                             
                             VStack {
                                 
-                                Text("Thanks for the")
-                                    .font(.system(size: 30, weight: .light))
-                                    .foregroundColor(ColorManager .grey3)
-                               
-                                
-                                
-                                Text("Heart")
-                                    .font(.system(size: 55, weight: .light))
-                                    .foregroundColor(ColorManager .grey2)
+//
                             }
                         }
                       
@@ -118,29 +100,25 @@ struct CH6: View {
                     
 
                 }
-             
+                Spacer()
+                    .frame(height: 50)
          
                 VStack {
 
-                    Text("I am sending one back")
-                                            .font(.system(size: 23))
+                    Text("Say thanks and send one back")
+//                    NavigationLink( destination:  CH2(user: user, friends: friends),
+//                                label: {
+//                    Text("Say Thank you and send one back")
+                        .fontWeight(.thin)
+                        .frame(width: 310, height: 40)
+                        .foregroundColor(ColorManager .grey1)
+                        .font(.system(size: 20))
+                        .background(ColorManager .purple3)
+                        .opacity(0.9)
+                        .cornerRadius(15)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                })
                 
-                                            .foregroundColor(ColorManager .grey2)
-                                            .fontWeight(.thin)
-                                            .multilineTextAlignment(.center)
-//                    Text("then blow your kiss high up into ")
-//                                            .font(.system(size: 23))
-//
-//                                            .foregroundColor(ColorManager .grey2)
-//                                            .fontWeight(.thin)
-//                                            .multilineTextAlignment(.center)
-//
-//                    Text("the atmosphere towards your friend")
-//                                            .font(.system(size: 23))
-//
-//                                            .foregroundColor(ColorManager .grey2)
-//                                            .fontWeight(.thin)
-//                                            .multilineTextAlignment(.center)
                     VStack {
 
                         Spacer()
