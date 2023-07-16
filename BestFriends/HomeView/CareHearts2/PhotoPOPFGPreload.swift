@@ -107,7 +107,7 @@ struct PhotoPopFGPreload: View {
                 Color.black
                     .ignoresSafeArea()
                 
-                AdPlayerView(name: "Galaxy2")
+                AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.7)

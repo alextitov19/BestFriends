@@ -111,10 +111,26 @@ struct MyRoomView: View {
                 Spacer()
                     .frame(height: 50)
 
-     
+                VStack {
+                    
+                    NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
+                                    label: {
+                        Text("PhotoPOP")
+                            .fontWeight(.light)
+                            .frame(width: 155, height: 40)
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 17))
+                            .background(Color.orange)
+                            .glow(color: ColorManager.purple3, radius: 1)
+                            .shadow(color: .white, radius: 3, x: -4, y: 4)
+                            .opacity(0.99)
+                            .cornerRadius(15)
+//                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                    })
+                }
                 
                 Spacer()
-                    .frame(height: 20)
+                    .frame(height: 40)
                 
                 HStack {
                
@@ -144,7 +160,7 @@ struct MyRoomView: View {
                                 .frame(width: 100, height: 40)
                                 .foregroundColor(ColorManager .grey4)
                                 .font(.system(size: 17))
-                                .background(ColorManager .purple2)
+                                .background(ColorManager .grey2)
                                 .glow(color: ColorManager.purple3, radius: 1)
                                 .shadow(color: .white, radius: 3, x: -4, y: 4)
                                 .opacity(0.9)
@@ -170,7 +186,7 @@ struct MyRoomView: View {
                                 .frame(width: 100, height: 40)
                                 .foregroundColor(ColorManager .grey4)
                                 .font(.system(size: 17))
-                                .background(ColorManager .grey1)
+                                .background(ColorManager .grey2)
                                 .glow(color: ColorManager.purple3, radius: 1)
                                 .shadow(color: .white, radius: 3, x: -4, y: 4)
                                 .opacity(0.9)
@@ -187,7 +203,7 @@ struct MyRoomView: View {
                             .frame(width: 85, height: 40)
                             .foregroundColor(ColorManager .grey4)
                             .font(.system(size: 17))
-                            .background(ColorManager .grey1)
+                            .background(ColorManager .grey2)
                             .glow(color: ColorManager.purple3, radius: 1)
                             .shadow(color: .white, radius: 3, x: -4, y: 4)
                             .opacity(0.9)
@@ -196,8 +212,8 @@ struct MyRoomView: View {
                     })
                     
                 }
-                Spacer()
-                    .frame(height: 17)
+//                Spacer()
+//                    .frame(height: 17)
                 
 //                HStack {
 //
@@ -247,7 +263,7 @@ struct MyRoomView: View {
 //
                 VStack {
                     Spacer()
-                        .frame(height: 60)
+                        .frame(height: 15)
                     
                     HStack {
                         
@@ -256,9 +272,9 @@ struct MyRoomView: View {
                             Text("What's Up?")
                                 .fontWeight(.light)
                                 .frame(width: 100, height: 40)
-                                .foregroundColor(Color.white)
+                                .foregroundColor(ColorManager .grey4)
                                 .font(.system(size: 17))
-                                .background(ColorManager .purple4)
+                                .background(ColorManager .grey2)
                                 .glow(color: ColorManager.purple3, radius: 1)
                                 .shadow(color: .white, radius: 3, x: -4, y: 4)
                                 .opacity(0.9)
@@ -266,36 +282,22 @@ struct MyRoomView: View {
                                 .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         })
                         
-                        HStack {
+//                        HStack {
                             
                             VStack {
-                                
-                                NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
-                                                label: {
-                                    Text("PhotoPOP")
-                                        .fontWeight(.light)
-                                        .frame(width: 100, height: 40)
-                                        .foregroundColor(Color.white)
-                                        .font(.system(size: 17))
-                                        .background(Color.orange)
-                                        .glow(color: ColorManager.purple3, radius: 1)
-                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                        .opacity(0.99)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                })
+                       
                                 
                                 Spacer()
-                                    .frame(height: 20)
+                                    .frame(height: 50)
                                 
                                 NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
                                                 label: {
                                     Text("SmileVault")
                                         .fontWeight(.light)
                                         .frame(width: 100, height: 40)
-                                        .foregroundColor(Color.white)
+                                        .foregroundColor(ColorManager .grey4)
                                         .font(.system(size: 17))
-                                        .background(ColorManager .purple4)
+                                        .background(ColorManager .grey2)
                                         .glow(color: ColorManager.purple3, radius: 1)
                                         .shadow(color: .white, radius: 3, x: -4, y: 4)
                                         .opacity(0.9)
@@ -305,10 +307,10 @@ struct MyRoomView: View {
                                 
                                 Text("Friendships")
                                     .fontWeight(.light)
-                                    .frame(width: 120, height: 40)
+                                    .frame(width: 155, height: 40)
                                     .foregroundColor(Color.white)
                                     .font(.system(size: 22))
-                                    .background(Color.orange)
+                                    .background(Color.purple)
                                     .opacity(0.99)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -318,9 +320,9 @@ struct MyRoomView: View {
                                     Text("Highlights")
                                         .fontWeight(.light)
                                         .frame(width: 100, height: 40)
-                                        .foregroundColor(Color.white)
+                                        .foregroundColor(ColorManager .grey4)
                                         .font(.system(size: 17))
-                                        .background(ColorManager .purple4)
+                                        .background(ColorManager .grey2)
                                         .glow(color: ColorManager.purple3, radius: 1)
                                         .shadow(color: .white, radius: 3, x: -4, y: 4)
                                         .opacity(0.9)
@@ -329,7 +331,7 @@ struct MyRoomView: View {
                                 })
                             }
                             
-                        }
+                        
                         
                         
                         NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
@@ -337,9 +339,9 @@ struct MyRoomView: View {
                             Text("Coupons")
                                 .fontWeight(.light)
                                 .frame(width: 100, height: 40)
-                                .foregroundColor(Color.white)
+                                .foregroundColor(ColorManager .grey4)
                                 .font(.system(size: 17))
-                                .background(ColorManager .purple4)
+                                .background(ColorManager .grey2)
                                 .glow(color: ColorManager.purple3, radius: 1)
                                 .shadow(color: .white, radius: 3, x: -4, y: 4)
                                 .opacity(0.9)
@@ -350,7 +352,7 @@ struct MyRoomView: View {
                     }
                     
                     Spacer()
-                        .frame(height: 75)
+                        .frame(height: 60)
                     
                     HStack {
                         
