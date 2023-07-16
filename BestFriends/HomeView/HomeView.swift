@@ -69,7 +69,9 @@ struct HomeView: View {
                 
                 VStack {
                     if ((homeData) != nil) {
+                       
                         HStack {
+                            
                             Image(systemName: "star")
                                 .resizable()
                                 .scaledToFit()
@@ -81,35 +83,37 @@ struct HomeView: View {
                                     print("Clicked notification bell")
                                     presentingIANs.toggle()
                                 }
-                            
-//                            Spacer()
-                            
+
                             NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
                             ) { EmptyView() }
-//
+
                             
-//                            NavigationLink(
-//                                destination: BuiltByTeensView(user: homeData!.user, friends: homeData!.friends),
-//                                label: {
-//                                    Text("our story")
-//                                        .foregroundColor(Color.white)
-//                                        .font(.system(size: 16, weight: .light))
-//                                        .opacity(0.7)
-//                                })
-                            
+                            Spacer()
+                                .frame(width: 150)
+
                           
-//
-//                            NavigationLink(
-//                                destination:  FH10(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-//                                label: {
-//
-//                                    Image(systemName: "info.circle")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 35, height: 35)
-//                                        .opacity(0.5)
-//                                        .foregroundColor(.white)
-//                                })
+                                
+                                VStack {
+                                 
+                                    NavigationLink(
+                                        destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
+                                        label: {
+                                            
+                                            Image(systemName: "camera")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 42, height: 42)
+                                                .opacity(0.5)
+                                                .foregroundColor(.white)
+                                            
+                                            
+                                            Text("PhotoPOP")
+                                                .foregroundColor(Color.white)
+                                                .font(.system(size: 13, weight: .thin))
+                                                .opacity(0.7)
+                                            
+                                        })
+                                }
                             
 //                            Spacer()
                             
