@@ -27,24 +27,16 @@ struct HugPreload: View {
         ZStack {
 
             
-//            ColorManager.purple7
-////                .opacity(0.6)
-//                .ignoresSafeArea()
-//
-//            AdPlayerView(name: "sky2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
+            ColorManager.grey4
+                .opacity(0.99)
+                .ignoresSafeArea()
 
             Image("CareHeartBalloon 1")
                 .ignoresSafeArea()
                 .scaledToFit()
-                .opacity(0.4)
+                .opacity(0.5)
 
-//
-//            AdPlayerView(name: "Galaxy2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//
+
 
             ZStack{
 
@@ -111,7 +103,7 @@ struct HugPreload: View {
                         })
                         .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
                         .shadow(color: Color .pink, radius: 10, x: 10, y: 10)
-                        .opacity(0.3)
+                        .opacity(0.5)
 
                     NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
                         HugCircle (color: ColorManager.orange5, friendName: "sending \nhugs")
@@ -119,7 +111,7 @@ struct HugPreload: View {
                     .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
                     .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
     //                    .opacity(0.6)
-                    .opacity(0.3)
+                    .opacity(0.5)
 
                     
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), label: {
@@ -128,7 +120,7 @@ struct HugPreload: View {
                     .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                     .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
                     
-                    .opacity(0.3)
+                    .opacity(0.5)
                     
                   
 //                    SendSongPush(user: user, friends: friends
@@ -138,7 +130,7 @@ struct HugPreload: View {
                     })
                     .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                     .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
-                    .opacity(0.3)
+                    .opacity(0.5)
                     
                     
 //                    NavigationLink(destination: SendHomie(user: user, friends: friends), label: {

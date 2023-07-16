@@ -118,28 +118,14 @@ struct CH4: View {
                 
             } else {
                 
+                ColorManager.grey4
+                    .opacity(0.99)
+                    .ignoresSafeArea()
+
                 Image("CareHeartBalloon 1")
                     .ignoresSafeArea()
                     .scaledToFit()
-                    .opacity(0.4)
-                
-//                Color.black
-//                    .ignoresSafeArea()
-//
-//                AdPlayerView(name: "Galaxy2")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//                    .opacity(0.7)
-//
-//                ColorManager.grey4
-//                    .opacity(0.8)
-//                    .ignoresSafeArea()
-//                    .onAppear()
-//
-//    AdPlayerView(name: "sky2")
-//        .ignoresSafeArea()
-//        .blendMode(.screen)
-                
+                    .opacity(0.5)
                 
             }
             
@@ -180,15 +166,15 @@ struct CH4: View {
                                     Text("Did you just find a new song?")
                                                             .font(.system(size: 23))
                                 
-                                                            .foregroundColor(ColorManager .grey2)
-                                                            .fontWeight(.thin)
+                                                            .foregroundColor(ColorManager .grey1)
+                                                            .fontWeight(.light)
                                                             .multilineTextAlignment(.center)
                                     
                                     Text("Show it off to a friend")
                                                             .font(.system(size: 23))
 
-                                                            .foregroundColor(ColorManager .grey2)
-                                                            .fontWeight(.thin)
+                                                            .foregroundColor(ColorManager .grey1)
+                                                            .fontWeight(.light)
                                                             .multilineTextAlignment(.center)
                                     
                                     Spacer()
@@ -197,21 +183,21 @@ struct CH4: View {
                                     Text("Maybe a friend is having a difficult day,")
                                                             .font(.system(size: 23))
 
-                                                            .foregroundColor(ColorManager .grey2)
-                                                            .fontWeight(.thin)
+                                                            .foregroundColor(ColorManager .grey1)
+                                                            .fontWeight(.light)
                                                             .multilineTextAlignment(.center)
                                     Text("Send them that song that helps")
                                                             .font(.system(size: 23))
 
-                                                            .foregroundColor(ColorManager .grey2)
-                                                            .fontWeight(.thin)
+                                                            .foregroundColor(ColorManager .grey1)
+                                                            .fontWeight(.light)
                                                             .multilineTextAlignment(.center)
                                     
                                     Text("you on bad days")
                                                             .font(.system(size: 23))
 
-                                                            .foregroundColor(ColorManager .grey2)
-                                                            .fontWeight(.thin)
+                                                            .foregroundColor(ColorManager .grey1)
+                                                            .fontWeight(.light)
                                                             .multilineTextAlignment(.center)
                                     Spacer()
                                         .frame(height: 7)
@@ -288,9 +274,10 @@ struct CH4: View {
                     
                 VStack {
 
-                    Text("Alert friend to look for Song in Chat")
+                    Text("(alert friend to look for the Song in Chat)")
                         .font(.system(size: 17))
-                        .fontWeight(.ultraLight)
+                        .italic()
+                        .fontWeight(.light)
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
             
@@ -473,7 +460,7 @@ struct CH4: View {
         var body: some View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
-                .frame(width: 70, height: 70)
+                .frame(width: 90, height: 90)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .font(.system(size: 8))
                 .background(color)

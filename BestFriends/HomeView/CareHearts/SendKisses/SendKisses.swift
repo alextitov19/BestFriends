@@ -55,21 +55,14 @@ struct SendKisses: View {
                 
             } else {
 
-//                ColorManager.purple7
-////                    .opacity(0.5)
-//                    .ignoresSafeArea()
-//                    .onAppear()
-//
-//    AdPlayerView(name: "sky2")
-//        .ignoresSafeArea()
-//        .blendMode(.screen)
-                
+                ColorManager.grey4
+                    .opacity(0.99)
+                    .ignoresSafeArea()
+
                 Image("CareHeartBalloon 1")
                     .ignoresSafeArea()
                     .scaledToFit()
-                    .opacity(0.4)
-                
-                
+                    .opacity(0.5)
             }
             
             VStack{
@@ -93,7 +86,7 @@ struct SendKisses: View {
                             VStack {
                                 Text("blowing")
                                     .font(.system(size: 30, weight: .light))
-                                    .foregroundColor(ColorManager .grey3)
+                                    .foregroundColor(ColorManager .grey2)
                                 
                                 
                                 Text("kisses")
@@ -114,21 +107,21 @@ struct SendKisses: View {
                     Text("Jump up on a chair,")
                                             .font(.system(size: 23))
                 
-                                            .foregroundColor(ColorManager .grey2)
-                                            .fontWeight(.thin)
+                                            .foregroundColor(ColorManager .grey1)
+                                            .fontWeight(.light)
                                             .multilineTextAlignment(.center)
                     Text("then blow your kiss high up into ")
                                             .font(.system(size: 23))
                 
-                                            .foregroundColor(ColorManager .grey2)
-                                            .fontWeight(.thin)
+                                            .foregroundColor(ColorManager .grey1)
+                                            .fontWeight(.light)
                                             .multilineTextAlignment(.center)
                     
                     Text("the atmosphere towards your friend")
                                             .font(.system(size: 23))
                 
-                                            .foregroundColor(ColorManager .grey2)
-                                            .fontWeight(.thin)
+                                            .foregroundColor(ColorManager .grey1)
+                                            .fontWeight(.light)
                                             .multilineTextAlignment(.center)
                     VStack {
 

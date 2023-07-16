@@ -54,20 +54,14 @@ struct HugPushNotification: View {
                 
             } else {
 
-//                ColorManager.purple7
-//                    .opacity(0.8)
-//                    .ignoresSafeArea()
-//                    .onAppear()
-//
-//    AdPlayerView(name: "sky2")
-//        .ignoresSafeArea()
-//        .blendMode(.screen)
-                
+                ColorManager.grey4
+                    .opacity(0.99)
+                    .ignoresSafeArea()
+
                 Image("CareHeartBalloon 1")
                     .ignoresSafeArea()
                     .scaledToFit()
-                    .opacity(0.4)
-                
+                    .opacity(0.5)
                 
             }
             
@@ -93,7 +87,7 @@ struct HugPushNotification: View {
                                 VStack {
                                     Text("sending lightspeed")
                                         .font(.system(size: 30, weight: .light))
-                                        .foregroundColor(ColorManager .grey3)
+                                        .foregroundColor(ColorManager .grey2)
                                     
                                     
 //                                    Text("at")
@@ -126,15 +120,15 @@ struct HugPushNotification: View {
                 VStack {
 
                     Text("Send the joy of")
-                        .font(.system(size: 17))
-                        .fontWeight(.ultraLight)
+                        .font(.system(size: 23))
+                        .fontWeight(.light)
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     
                     
                     Text("kicking through Autumn's leaves")
-                        .font(.system(size: 17))
-                        .fontWeight(.ultraLight)
+                        .font(.system(size: 23))
+                        .fontWeight(.light)
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
 
@@ -142,14 +136,14 @@ struct HugPushNotification: View {
                         .frame(height: 25)
                     
                     Text("or the comfort of")
-                        .font(.system(size: 17))
-                        .fontWeight(.ultraLight)
+                        .font(.system(size: 23))
+                        .fontWeight(.light)
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     
                     Text("hot chocolate on a blistery winter's day")
-                        .font(.system(size: 17))
-                        .fontWeight(.ultraLight)
+                        .font(.system(size: 23))
+                        .fontWeight(.light)
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     

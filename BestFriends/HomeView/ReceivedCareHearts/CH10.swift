@@ -39,14 +39,7 @@ struct CH10: View {
 
         ZStack {
 
-            
-//            ColorManager.purple7
-////                .opacity(0.6)
-//                .ignoresSafeArea()
-//
-//            AdPlayerView(name: "sky2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
+        
 
             Image("CareHeart 2")
                 .ignoresSafeArea()
@@ -68,19 +61,19 @@ struct CH10: View {
               
 
                         NavigationLink(destination: CH9(user: user, friends: friends), label: {
-                            HugCircle (color: ColorManager .red, friendName: "jump up \nand catch \nyour kiss")
+                            HugCircle (color: Color.pink, friendName: "jump up \nand catch \nyour kiss")
                         })
                         .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
                         .shadow(color: Color .pink, radius: 10, x: 10, y: 10)
-                        .opacity(0.3)
+                        .opacity(0.4)
 
                     NavigationLink(destination: VirtualHug(user: user, friends: friends), label: {
                         HugCircle (color: ColorManager.orange5, friendName: "grab your \nhug")
                     })
                     .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
-                    .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
+                    .shadow(color: Color.yellow, radius: 10, x: 10, y: 10)
     //                    .opacity(0.6)
-                    .opacity(0.3)
+                    .opacity(0.4)
 
                     
                     NavigationLink(destination: CH6(user: user, friends: friends), label: {
