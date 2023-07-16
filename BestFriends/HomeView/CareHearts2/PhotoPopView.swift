@@ -76,6 +76,11 @@ struct PhotoPopView: View {
                         .opacity(0.70)
                     
                 })
+                
+                Text("PhotoPOP")
+                    .foregroundColor(ColorManager .grey2)
+                    .font(.system(size: 25, weight: .light))
+                    .opacity(0.7)
                     
                 Spacer ()
                     .frame(height: 10)

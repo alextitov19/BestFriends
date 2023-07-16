@@ -69,15 +69,18 @@ struct MyRoomView: View {
                     NavigationLink( destination:  FH2(),
                                     label: {
                         Text("Start Here")
-                            .fontWeight(.thin)
+                            .fontWeight(.light)
                             .frame(width: 120, height: 30)
                             .foregroundColor(ColorManager .grey1)
                             .font(.system(size: 25))
-                            .background(ColorManager .pmbc_green)
-//                            .opacity(0.9)
+                            .background(Color.green)
+//                            .opacity(0.7)
                             .cornerRadius(10)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                     })
+                     
+                        
+                 
                     
                 }
                     Spacer ()
@@ -106,10 +109,29 @@ struct MyRoomView: View {
                 
                 
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 50)
 
+                NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
+                                label: {
+                    Text("PhotoPOP")
+                        .fontWeight(.light)
+                        .frame(width: 100, height: 40)
+                        .foregroundColor(Color.white)
+                        .font(.system(size: 17))
+                        .background(ColorManager .purple4)
+                        .glow(color: ColorManager.purple3, radius: 1)
+                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+                        .opacity(0.9)
+                        .cornerRadius(15)
+                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                })
+                
+                Spacer()
+                    .frame(height: 20)
+                
                 HStack {
                
+                
                     
                     NavigationLink( destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                                     label: {
@@ -419,7 +441,7 @@ struct MyRoomView: View {
                    
                     
                     Spacer()
-                        .frame(height: 150)
+                        .frame(height: 50)
                 }
             }
          

@@ -72,10 +72,10 @@ struct HomeView: View {
                        
                         HStack {
                             
-                            Image(systemName: "star")
+                            Image(systemName: "heart")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 50, height: 50)
+                                .frame(width: 42, height: 42)
                                 .foregroundColor(ColorManager .purple1)
                                 .glow(color: ColorManager.purple4, radius: 5)
                                 .opacity(0.5)
@@ -89,7 +89,7 @@ struct HomeView: View {
 
                             
                             Spacer()
-                                .frame(width: 150)
+                                .frame(width: 50)
 
                           
                                 
@@ -107,10 +107,10 @@ struct HomeView: View {
                                                 .foregroundColor(.white)
                                             
                                             
-                                            Text("PhotoPOP")
-                                                .foregroundColor(Color.white)
-                                                .font(.system(size: 13, weight: .thin))
-                                                .opacity(0.7)
+//                                            Text("PhotoPOP")
+//                                                .foregroundColor(Color.white)
+//                                                .font(.system(size: 13, weight: .thin))
+//                                                .opacity(0.7)
                                             
                                         })
                                 }
