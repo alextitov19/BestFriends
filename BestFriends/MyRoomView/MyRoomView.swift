@@ -111,20 +111,7 @@ struct MyRoomView: View {
                 Spacer()
                     .frame(height: 50)
 
-                NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
-                                label: {
-                    Text("PhotoPOP")
-                        .fontWeight(.light)
-                        .frame(width: 100, height: 40)
-                        .foregroundColor(Color.white)
-                        .font(.system(size: 17))
-                        .background(Color.orange)
-                        .glow(color: ColorManager.purple3, radius: 1)
-                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-                        .opacity(0.99)
-                        .cornerRadius(15)
-                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                })
+     
                 
                 Spacer()
                     .frame(height: 20)
@@ -170,7 +157,7 @@ struct MyRoomView: View {
                             .frame(width: 155, height: 40)
                             .foregroundColor(Color.white)
                             .font(.system(size: 22))
-                            .background(Color.pink)
+                            .background(Color.purple)
                             .opacity(0.99)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -266,9 +253,9 @@ struct MyRoomView: View {
                         
                         NavigationLink( destination: INFOPreloadA(user: user, friends: friends),
                                         label: {
-                            Text("Where \nare you?")
+                            Text("What's Up?")
                                 .fontWeight(.light)
-                                .frame(width: 100, height: 50)
+                                .frame(width: 100, height: 40)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 17))
                                 .background(ColorManager .purple4)
@@ -282,6 +269,24 @@ struct MyRoomView: View {
                         HStack {
                             
                             VStack {
+                                
+                                NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
+                                                label: {
+                                    Text("PhotoPOP")
+                                        .fontWeight(.light)
+                                        .frame(width: 100, height: 40)
+                                        .foregroundColor(Color.white)
+                                        .font(.system(size: 17))
+                                        .background(Color.orange)
+                                        .glow(color: ColorManager.purple3, radius: 1)
+                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                        .opacity(0.99)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                })
+                                
+                                Spacer()
+                                    .frame(height: 20)
                                 
                                 NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
                                                 label: {
@@ -329,9 +334,9 @@ struct MyRoomView: View {
                         
                         NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
                                         label: {
-                            Text("Friendship \nCoupons")
+                            Text("Coupons")
                                 .fontWeight(.light)
-                                .frame(width: 100, height: 50)
+                                .frame(width: 100, height: 40)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 17))
                                 .background(ColorManager .purple4)
