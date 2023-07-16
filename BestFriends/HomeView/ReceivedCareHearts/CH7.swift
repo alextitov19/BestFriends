@@ -120,16 +120,24 @@ struct CH7: View {
 
                     Text("You were just sent a new song")
                                             .font(.system(size: 25))
-
                                             .foregroundColor(ColorManager .grey2)
-                                            .fontWeight(.thin)
+                                            .fontWeight(.light)
                                             .multilineTextAlignment(.center)
                     
                     Text("Check it out in Chat")
                                             .font(.system(size: 25))
-
                                             .foregroundColor(ColorManager .grey2)
-                                            .fontWeight(.thin)
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
+                    
+                    Spacer()
+                        .frame(height: 15)
+                    
+                    Text("(send a thank you)")
+                                            .font(.system(size: 20))
+                                            .italic()
+                                            .foregroundColor(ColorManager .grey2)
+                                            .fontWeight(.light)
                                             .multilineTextAlignment(.center)
 
                     VStack {
@@ -307,7 +315,10 @@ struct CH7: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: " A freind said thank you for the song", APNToken: f.APNToken)
+//                    RestApi.instance.sendPushNotification(title: "BestFriends", body: " A freind said thank you for the song", APNToken: f.APNToken)
+                    
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) said thank you for the song", APNToken: f.APNToken)
+                    
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
