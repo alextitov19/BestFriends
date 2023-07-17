@@ -118,24 +118,24 @@ struct VirtualHug: View {
                 
                 
                 
-                Spacer ()
-                    .frame(height: 10)
-                
-                NavigationLink( destination:  CH2(user: user, friends: friends),
-                                label: {
-                    Text("Say Thank you and send one back")
-                        .fontWeight(.thin)
-                        .frame(width: 310, height: 40)
-                        .foregroundColor(ColorManager .grey1)
-                        .font(.system(size: 20))
-                        .background(ColorManager .purple3)
-                        .opacity(0.9)
-                        .cornerRadius(15)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                })
-                
-                Spacer ()
-                    .frame(height: 50)
+//                Spacer ()
+//                    .frame(height: 10)
+//
+//                NavigationLink( destination:  CH2(user: user, friends: friends),
+//                                label: {
+//                    Text("Say Thank you and send one back")
+//                        .fontWeight(.thin)
+//                        .frame(width: 310, height: 40)
+//                        .foregroundColor(ColorManager .grey1)
+//                        .font(.system(size: 20))
+//                        .background(ColorManager .purple3)
+//                        .opacity(0.9)
+//                        .cornerRadius(15)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                })
+//
+//                Spacer ()
+//                    .frame(height: 50)
                 
                 
                 Text("Grab your Hug")
@@ -171,7 +171,7 @@ struct VirtualHug: View {
                         Image(systemName: "heart.fill")
                             .resizable()
                             .foregroundColor(.purple)
-                            .frame(width: 150, height: 150)
+                            .frame(width: 65, height: 75)
                             .shadow(color: .blue, radius: 65, x: 30, y: 50)
                             .opacity(0.7)
                         
@@ -195,17 +195,9 @@ struct VirtualHug: View {
                                                 }
                                             }
                                         }
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
                                     }
                                     
-                                }
-                                
-                                
+                                }                             
                             }
                         
                         VStack {
@@ -257,8 +249,8 @@ struct VirtualHug: View {
                                 }
                             }
                             
-                            Spacer()
-                                .frame(height: 15)
+//                            Spacer()
+//                                .frame(height: 15)
                             if friends.count > 2 {
                                 RectView(user: user, friend: friends[2], color: colors[2])
                                     .onTapGesture(perform: {
@@ -340,25 +332,25 @@ struct VirtualHug: View {
                             .confettiCannon(counter: $counter)
                             
                             
-                            VStack {
-                                
-                                
-                                Button(action: {
-                                    sessionManager.showLogin()
-                                },
-                                       label: {
-                                    Image("home-alt2")
-                                        .frame(width: 50, height: 25)
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 20))
-                                        .background(Color .black)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                        .opacity(0.70)
-                                    
-                                })
-                                
-                            }
+//                            VStack {
+//
+//
+//                                Button(action: {
+//                                    sessionManager.showLogin()
+//                                },
+//                                       label: {
+//                                    Image("home-alt2")
+//                                        .frame(width: 50, height: 25)
+//                                        .foregroundColor(.white)
+//                                        .font(.system(size: 20))
+//                                        .background(Color .black)
+//                                        .cornerRadius(15)
+//                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                                        .opacity(0.70)
+//
+//                                })
+//
+//                            }
                         }
                         
                         
