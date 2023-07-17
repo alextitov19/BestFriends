@@ -56,7 +56,7 @@ struct VirtualHug: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "Awww! ...  \(user.firstName) sent you a hug. Tap in-app notification (star on Homepg) to activate your hug.", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "Awww! ...  \(user.firstName) sent you a hug. Tap in-app notification ('heart' on Homepg) to activate your hug.", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
@@ -134,31 +134,25 @@ struct VirtualHug: View {
                 //                Spacer ()
                 //                    .frame(height: 50)
                 
+         
                 
-                Text("Grab your Hug")
-                    .font(.system(size: 40))
-                    .fontWeight(.ultraLight)
+                Text("touch 'Tap' & hold your")
+                    .font(.system(size: 25))
+                    .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager .grey1)
                 
-                
-                Text("hit Tap")
-                    .font(.system(size: 30))
-                    .fontWeight(.ultraLight)
+                Text("iPhone to your heart")
+                    .font(.system(size: 25))
+                    .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager .grey1)
                 
-                Text("hold iPhone to your heart")
-                    .font(.system(size: 30))
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey1)
-                
-                
-                
-                Spacer()
-                    .frame(height: 20)
-                
+//
+//
+//                Spacer()
+//                    .frame(height: 20)
+//
                 
                 if (showingHeart) {
                     
@@ -169,7 +163,7 @@ struct VirtualHug: View {
                             Image(systemName: "heart.fill")
                                 .resizable()
                                 .foregroundColor(.purple)
-                                .frame(width: 65, height: 75)
+                                .frame(width: 105, height: 85)
                                 .shadow(color: .blue, radius: 65, x: 30, y: 50)
                                 .opacity(0.7)
                             
@@ -201,8 +195,12 @@ struct VirtualHug: View {
                         
                         VStack {
                             
-                            //                            Spacer()
-                            //                                .frame(height: 25)
+                            Text("(say thanks for the Hug)")
+                                .font(.system(size: 20))
+                                .italic()
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager .grey1)                             .frame(height: 25)
                             
                             
                             HStack {
@@ -337,35 +335,31 @@ struct VirtualHug: View {
                             .confettiCannon(counter: $counter)
                             
                             
-                            //                            VStack {
-                            //
-                            //
-                            //                                Button(action: {
-                            //                                    sessionManager.showLogin()
-                            //                                },
-                            //                                       label: {
-                            //                                    Image("home-alt2")
-                            //                                        .frame(width: 50, height: 25)
-                            //                                        .foregroundColor(.white)
-                            //                                        .font(.system(size: 20))
-                            //                                        .background(Color .black)
-                            //                                        .cornerRadius(15)
-                            //                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                            //                                        .opacity(0.70)
-                            //
-                            //                                })
-                            //
-                            //                            }
-                        }
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                    }
-                }
+                                                        VStack {
+                            
+                            
+                                                            Button(action: {
+                                                                sessionManager.showLogin()
+                                                            },
+                                                                   label: {
+                                                                Image("home-alt2")
+                                                                    .frame(width: 50, height: 25)
+                                                                    .foregroundColor(.white)
+                                                                    .font(.system(size: 20))
+                                                                    .background(ColorManager .grey2)
+                                                                    .cornerRadius(15)
+                                                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                                                    .opacity(0.70)
+                            
+                                                            })
+                            
+                                                            
+//                                                            Spacer()
+//                                                                .frame(height: 70)
+            }
+        }
+    }
+}
                 
                 AdPlayerView(name: "HugVideo")
                     .frame(width: 250, height: 250)
