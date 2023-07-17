@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D7127BB2A658B9000E14744 /* CH11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7127BA2A658B9000E14744 /* CH11.swift */; };
+		2D7127BD2A658BA900E14744 /* CH12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7127BC2A658BA800E14744 /* CH12.swift */; };
+		2D7127BF2A658BBA00E14744 /* CH13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7127BE2A658BBA00E14744 /* CH13.swift */; };
+		2D7127C12A658BCF00E14744 /* CH14.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7127C02A658BCF00E14744 /* CH14.swift */; };
+		2D7127C32A658BDD00E14744 /* CH15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7127C22A658BDD00E14744 /* CH15.swift */; };
+		2D7127C52A658BE900E14744 /* CH16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7127C42A658BE900E14744 /* CH16.swift */; };
+		2D7127C72A658BF400E14744 /* CH17.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7127C62A658BF400E14744 /* CH17.swift */; };
+		2D7127C92A658C0100E14744 /* CH18.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7127C82A658C0100E14744 /* CH18.swift */; };
+		2D7127CB2A658C0E00E14744 /* CH19.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7127CA2A658C0E00E14744 /* CH19.swift */; };
+		2D7127CD2A658C1900E14744 /* CH20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7127CC2A658C1900E14744 /* CH20.swift */; };
 		2DA887312A3A18C000759A1F /* AffirmationMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA8872F2A3A18C000759A1F /* AffirmationMain.swift */; };
 		2DA887322A3A18C000759A1F /* AffirmationEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA887302A3A18C000759A1F /* AffirmationEdit.swift */; };
 		2DBF3EE12A61ACD400CB1CAD /* RR1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF3EE02A61ACD400CB1CAD /* RR1.swift */; };
@@ -335,6 +345,16 @@
 
 /* Begin PBXFileReference section */
 		16E04433DE68818589291B02 /* Pods-BestFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.debug.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.debug.xcconfig"; sourceTree = "<group>"; };
+		2D7127BA2A658B9000E14744 /* CH11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH11.swift; sourceTree = "<group>"; };
+		2D7127BC2A658BA800E14744 /* CH12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH12.swift; sourceTree = "<group>"; };
+		2D7127BE2A658BBA00E14744 /* CH13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH13.swift; sourceTree = "<group>"; };
+		2D7127C02A658BCF00E14744 /* CH14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH14.swift; sourceTree = "<group>"; };
+		2D7127C22A658BDD00E14744 /* CH15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH15.swift; sourceTree = "<group>"; };
+		2D7127C42A658BE900E14744 /* CH16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH16.swift; sourceTree = "<group>"; };
+		2D7127C62A658BF400E14744 /* CH17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH17.swift; sourceTree = "<group>"; };
+		2D7127C82A658C0100E14744 /* CH18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH18.swift; sourceTree = "<group>"; };
+		2D7127CA2A658C0E00E14744 /* CH19.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH19.swift; sourceTree = "<group>"; };
+		2D7127CC2A658C1900E14744 /* CH20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH20.swift; sourceTree = "<group>"; };
 		2DA8872F2A3A18C000759A1F /* AffirmationMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AffirmationMain.swift; sourceTree = "<group>"; };
 		2DA887302A3A18C000759A1F /* AffirmationEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AffirmationEdit.swift; sourceTree = "<group>"; };
 		2DBF3EE02A61ACD400CB1CAD /* RR1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR1.swift; sourceTree = "<group>"; };
@@ -720,6 +740,16 @@
 				2DFB03282A5D30AC00669948 /* CH8.swift */,
 				2DFB032A2A5D30B600669948 /* CH9.swift */,
 				2DFB032C2A5D30C200669948 /* CH10.swift */,
+				2D7127BA2A658B9000E14744 /* CH11.swift */,
+				2D7127BC2A658BA800E14744 /* CH12.swift */,
+				2D7127BE2A658BBA00E14744 /* CH13.swift */,
+				2D7127C02A658BCF00E14744 /* CH14.swift */,
+				2D7127C22A658BDD00E14744 /* CH15.swift */,
+				2D7127C42A658BE900E14744 /* CH16.swift */,
+				2D7127C62A658BF400E14744 /* CH17.swift */,
+				2D7127C82A658C0100E14744 /* CH18.swift */,
+				2D7127CA2A658C0E00E14744 /* CH19.swift */,
+				2D7127CC2A658C1900E14744 /* CH20.swift */,
 			);
 			path = ReceivedCareHearts;
 			sourceTree = "<group>";
@@ -1958,11 +1988,13 @@
 				CF37535D28C6956D003817E3 /* HeartToContinue.swift in Sources */,
 				7A84EEAD2A352A33001BE180 /* CategorySelectorView.swift in Sources */,
 				CF9E33C22843040B00107433 /* Step3FG_Acountability.swift in Sources */,
+				2D7127C12A658BCF00E14744 /* CH14.swift in Sources */,
 				7AC4C01F27FF4A08000C4140 /* ChatView.swift in Sources */,
 				2DBF3EF12A61AD2800CB1CAD /* RR9.swift in Sources */,
 				2DBF3EEB2A61AD0900CB1CAD /* RR6.swift in Sources */,
 				CFAB5407281AAFA100BBF502 /* TryThis.swift in Sources */,
 				7A84EEAF2A352A9D001BE180 /* CreateNewJournalView.swift in Sources */,
+				2D7127C32A658BDD00E14744 /* CH15.swift in Sources */,
 				CF9E33C42843E0D800107433 /* Step2FG_TeenBehavior.swift in Sources */,
 				CFAB5404281A9A9000BBF502 /* Step4_NuclearOption.swift in Sources */,
 				2DBF3EE72A61ACF500CB1CAD /* RR4.swift in Sources */,
@@ -1988,6 +2020,7 @@
 				2DFB03232A5D308600669948 /* CH5.swift in Sources */,
 				CF3B65B9280081550003A714 /* SettingsNotificationsView.swift in Sources */,
 				CFAB5422281FC8B800BBF502 /* TextingNote.swift in Sources */,
+				2D7127BF2A658BBA00E14744 /* CH13.swift in Sources */,
 				CF9E33C8284530CF00107433 /* FG_GettingStarted.swift in Sources */,
 				CF1ECAC3287143E900D999F8 /* FightInviteFriend.swift in Sources */,
 				2DFB03102A57226200669948 /* FH6.swift in Sources */,
@@ -2008,6 +2041,7 @@
 				2DFB03212A5D307A00669948 /* CH4.swift in Sources */,
 				CF3B65EA2803F3050003A714 /* BreathInView.swift in Sources */,
 				CF4A08D82877E2B600ADA9DD /* NostalgiaPreload.swift in Sources */,
+				2D7127BD2A658BA900E14744 /* CH12.swift in Sources */,
 				CF3B65AF2800783F0003A714 /* TermsOfServicePrivacy.swift in Sources */,
 				7A2C215D28050BCD009362CF /* ChatBubble.swift in Sources */,
 				CF41754C296FBB8D00898E2D /* InfoWhyLoveBF.swift in Sources */,
@@ -2047,6 +2081,7 @@
 				CF41280A292715A5003BCBFA /* StoriesPreLoad2.swift in Sources */,
 				7AA07F5F285D0DD400E9C5A4 /* UserModel.swift in Sources */,
 				CFD0468D282D7F8400BF0B02 /* AtmosphereMain2.swift in Sources */,
+				2D7127CB2A658C0E00E14744 /* CH19.swift in Sources */,
 				CF9957F128A72E77000BBAFF /* DeleteUserData.swift in Sources */,
 				7A22A57A274416C200FB6B4F /* TextFieldCustom.swift in Sources */,
 				CF1ECABB286AAD6F00D999F8 /* SendSongChat2.swift in Sources */,
@@ -2067,6 +2102,7 @@
 				CF2EE6F829516C8A00B1B16D /* InfoHowChatWorks.swift in Sources */,
 				7A22A579274416C200FB6B4F /* ViewExt.swift in Sources */,
 				CFDB150328574D8B00155CEE /* FightWithParents.swift in Sources */,
+				2D7127C72A658BF400E14744 /* CH17.swift in Sources */,
 				CF3DB36728D78BF300BF9CCD /* DreamsWeDare.swift in Sources */,
 				CFF952332981BC700054D963 /* DreamsWeDare2.swift in Sources */,
 				CFCD3BC429DF849A00D19A0F /* BadDayQuietAlertView.swift in Sources */,
@@ -2087,7 +2123,9 @@
 				2DA887312A3A18C000759A1F /* AffirmationMain.swift in Sources */,
 				CFC0EE6929022560006B3FAA /* ShaylaPage.swift in Sources */,
 				CF2EE6F629516C7000B1B16D /* InfoCreateGroupChatRooms.swift in Sources */,
+				2D7127BB2A658B9000E14744 /* CH11.swift in Sources */,
 				CFE6F024297B82A8004397A3 /* SendHomie.swift in Sources */,
+				2D7127C92A658C0100E14744 /* CH18.swift in Sources */,
 				CF2EE6FE295294E600B1B16D /* INFOMainHowWorks.swift in Sources */,
 				7AB52169289D959D005A49FA /* PurpleSubscriptionView.swift in Sources */,
 				62372A1B2884ECD500CAB75C /* HorizonInviteFriends.swift in Sources */,
@@ -2141,6 +2179,7 @@
 				2DBF3EE32A61ACE100CB1CAD /* RR2.swift in Sources */,
 				7AFCF27827FDFF2C00D2DB5C /* ChatGroupsView.swift in Sources */,
 				CFAB5402281A9A1D00BBF502 /* Step7_TimeToTalk.swift in Sources */,
+				2D7127CD2A658C1900E14744 /* CH20.swift in Sources */,
 				CF7157512975D29900094F22 /* SendKisses.swift in Sources */,
 				CFD12CCF281A67FC00AB2539 /* DramaMainView.swift in Sources */,
 				CF84A3E22988A84700387A43 /* MyRoomNeedTalk.swift in Sources */,
@@ -2157,6 +2196,7 @@
 				CFDA4BE228D66B2600118D90 /* AudioCode.swift in Sources */,
 				7A22A57B274416C200FB6B4F /* ColorExt+Mgr.swift in Sources */,
 				CF4D86BA2978FDBA004B551D /* MyFears.swift in Sources */,
+				2D7127C52A658BE900E14744 /* CH16.swift in Sources */,
 				7AD2642A29EDCE020007ACD5 /* NotificationsView.swift in Sources */,
 				CFD6C05F29416A3B00D57E0B /* HideMyRoomLink.swift in Sources */,
 				D0F5AB1B2840519700053F17 /* HorizonRocketColorPicker.swift in Sources */,
