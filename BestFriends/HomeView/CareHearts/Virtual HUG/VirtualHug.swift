@@ -197,7 +197,7 @@ struct VirtualHug: View {
                                         }
                                     }
                                     
-                                }                             
+                                }
                             }
                         
                         VStack {
@@ -245,55 +245,61 @@ struct VirtualHug: View {
                                             }
                                             print(selectedFriends)
                                         })
-                                    
                                 }
                             }
                             
+                            HStack {
+                                
+                                if friends.count > 2 {
+                                    RectView(user: user, friend: friends[2], color: colors[2])
+                                        .onTapGesture(perform: {
+                                            if selectedFriends.contains(friends[2].id) {
+                                                selectedFriends = selectedFriends.filter { $0 != friends[2].id }
+                                                colors[2] = ColorManager.purple3
+                                            } else {
+                                                selectedFriends.append(friends[2].id)
+                                                colors[2] = ColorManager.purple5
+                                            }
+                                            print(selectedFriends)
+                                        })
+                                }
+                                
+                                if friends.count > 3 {
+                                    RectView(user: user, friend: friends[3], color: colors[3])
+                                        .onTapGesture(perform: {
+                                            if selectedFriends.contains(friends[3].id) {
+                                                selectedFriends = selectedFriends.filter { $0 != friends[3].id }
+                                                colors[3] = ColorManager.purple3
+                                            } else {
+                                                selectedFriends.append(friends[3].id)
+                                                colors[3] = ColorManager.purple5
+                                            }
+                                            print(selectedFriends)
+                                        })
+                                    
+                                }
+                                
+                                if friends.count > 4 {
+                                    RectView(user: user, friend: friends[4], color: colors[4])
+                                        .onTapGesture(perform: {
+                                            if selectedFriends.contains(friends[4].id) {
+                                                selectedFriends = selectedFriends.filter { $0 != friends[4].id }
+                                                colors[4] = ColorManager.purple3
+                                            } else {
+                                                selectedFriends.append(friends[4].id)
+                                                colors[4] = ColorManager.purple5
+                                            }
+                                            print(selectedFriends)
+                                        })
+                                    
+                                }
+                                
+                            }
+                            
+                            
 //                            Spacer()
 //                                .frame(height: 15)
-                            if friends.count > 2 {
-                                RectView(user: user, friend: friends[2], color: colors[2])
-                                    .onTapGesture(perform: {
-                                        if selectedFriends.contains(friends[2].id) {
-                                            selectedFriends = selectedFriends.filter { $0 != friends[2].id }
-                                            colors[2] = ColorManager.purple3
-                                        } else {
-                                            selectedFriends.append(friends[2].id)
-                                            colors[2] = ColorManager.purple5
-                                        }
-                                        print(selectedFriends)
-                                    })
-                            }
-                            
-                            if friends.count > 3 {
-                                RectView(user: user, friend: friends[3], color: colors[3])
-                                    .onTapGesture(perform: {
-                                        if selectedFriends.contains(friends[3].id) {
-                                            selectedFriends = selectedFriends.filter { $0 != friends[3].id }
-                                            colors[3] = ColorManager.purple3
-                                        } else {
-                                            selectedFriends.append(friends[3].id)
-                                            colors[3] = ColorManager.purple5
-                                        }
-                                        print(selectedFriends)
-                                    })
-                                
-                            }
-                            
-                            if friends.count > 4 {
-                                RectView(user: user, friend: friends[4], color: colors[4])
-                                    .onTapGesture(perform: {
-                                        if selectedFriends.contains(friends[4].id) {
-                                            selectedFriends = selectedFriends.filter { $0 != friends[4].id }
-                                            colors[4] = ColorManager.purple3
-                                        } else {
-                                            selectedFriends.append(friends[4].id)
-                                            colors[4] = ColorManager.purple5
-                                        }
-                                        print(selectedFriends)
-                                    })
-                                
-                            }
+
                             
                             
                             
