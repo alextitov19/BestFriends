@@ -190,6 +190,16 @@ struct HugPreload: View {
 //                            .opacity(0.70)
 
 
+                    Spacer ()
+                        .frame(height: 15)
+                    
+                    Text("from the heart of you")
+                        .font(.system(size: 23))
+                        .foregroundColor(ColorManager .grey1)
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                    
+                    
                         VStack {
 
                             Spacer ()
