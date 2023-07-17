@@ -101,29 +101,20 @@ struct CH6: View {
 
                 }
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 30)
          
                 VStack {
 
-                    Text("Say thanks and send one back")
-//                    NavigationLink( destination:  CH2(user: user, friends: friends),
-//                                label: {
-//                    Text("Say Thank you and send one back")
-                        .fontWeight(.thin)
-                        .frame(width: 310, height: 40)
-                        .foregroundColor(ColorManager .grey1)
+                    Text("(say thanks and send one back)")
+                        .fontWeight(.regular)
+                        .italic()
+                        .foregroundColor(ColorManager .darkGrey)
                         .font(.system(size: 20))
-                        .background(ColorManager .purple3)
-                        .opacity(0.9)
-                        .cornerRadius(15)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                })
+                        .italic()
+
                 
                     VStack {
 
-                        Spacer()
-                            .frame(height: 25)
-                        
                         
                         HStack {
                       
@@ -255,7 +246,7 @@ struct CH6: View {
                                          .frame(width: 50, height: 25)
                                          .foregroundColor(.white)
                                          .font(.system(size: 20))
-                                         .background(Color .black)
+                                         .background(ColorManager .grey3)
                                          .cornerRadius(15)
                                          .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                                          .opacity(0.70)
@@ -296,7 +287,7 @@ struct CH6: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) just sent you a thank you Heart", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) said thank you for the Heart and sent one back", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
