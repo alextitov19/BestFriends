@@ -210,8 +210,8 @@ struct VirtualHug: View {
                         
                         VStack {
                             
-                            Spacer()
-                                .frame(height: 25)
+                            //                            Spacer()
+                            //                                .frame(height: 25)
                             
                             
                             HStack {
@@ -259,107 +259,105 @@ struct VirtualHug: View {
                             
                             Spacer()
                                 .frame(height: 15)
-                            HStack {
-                                if friends.count > 2 {
-                                    RectView(user: user, friend: friends[2], color: colors[2])
-                                        .onTapGesture(perform: {
-                                            if selectedFriends.contains(friends[2].id) {
-                                                selectedFriends = selectedFriends.filter { $0 != friends[2].id }
-                                                colors[2] = ColorManager.purple3
-                                            } else {
-                                                selectedFriends.append(friends[2].id)
-                                                colors[2] = ColorManager.purple5
-                                            }
-                                            print(selectedFriends)
-                                        })
-                                }
+                            if friends.count > 2 {
+                                RectView(user: user, friend: friends[2], color: colors[2])
+                                    .onTapGesture(perform: {
+                                        if selectedFriends.contains(friends[2].id) {
+                                            selectedFriends = selectedFriends.filter { $0 != friends[2].id }
+                                            colors[2] = ColorManager.purple3
+                                        } else {
+                                            selectedFriends.append(friends[2].id)
+                                            colors[2] = ColorManager.purple5
+                                        }
+                                        print(selectedFriends)
+                                    })
+                            }
+                            
+                            if friends.count > 3 {
+                                RectView(user: user, friend: friends[3], color: colors[3])
+                                    .onTapGesture(perform: {
+                                        if selectedFriends.contains(friends[3].id) {
+                                            selectedFriends = selectedFriends.filter { $0 != friends[3].id }
+                                            colors[3] = ColorManager.purple3
+                                        } else {
+                                            selectedFriends.append(friends[3].id)
+                                            colors[3] = ColorManager.purple5
+                                        }
+                                        print(selectedFriends)
+                                    })
                                 
-                                if friends.count > 3 {
-                                    RectView(user: user, friend: friends[3], color: colors[3])
-                                        .onTapGesture(perform: {
-                                            if selectedFriends.contains(friends[3].id) {
-                                                selectedFriends = selectedFriends.filter { $0 != friends[3].id }
-                                                colors[3] = ColorManager.purple3
-                                            } else {
-                                                selectedFriends.append(friends[3].id)
-                                                colors[3] = ColorManager.purple5
-                                            }
-                                            print(selectedFriends)
-                                        })
-                                    
-                                }
+                            }
+                            
+                            if friends.count > 4 {
+                                RectView(user: user, friend: friends[4], color: colors[4])
+                                    .onTapGesture(perform: {
+                                        if selectedFriends.contains(friends[4].id) {
+                                            selectedFriends = selectedFriends.filter { $0 != friends[4].id }
+                                            colors[4] = ColorManager.purple3
+                                        } else {
+                                            selectedFriends.append(friends[4].id)
+                                            colors[4] = ColorManager.purple5
+                                        }
+                                        print(selectedFriends)
+                                    })
                                 
-                                if friends.count > 4 {
-                                    RectView(user: user, friend: friends[4], color: colors[4])
-                                        .onTapGesture(perform: {
-                                            if selectedFriends.contains(friends[4].id) {
-                                                selectedFriends = selectedFriends.filter { $0 != friends[4].id }
-                                                colors[4] = ColorManager.purple3
-                                            } else {
-                                                selectedFriends.append(friends[4].id)
-                                                colors[4] = ColorManager.purple5
-                                            }
-                                            print(selectedFriends)
-                                        })
-                                    
-                                }
+                            }
+                            
+                            
+                            
+                            
+                            //                        Button(action: {
+                            //                            counter += 1
+                            //                            shareButtonTapped()
+                            //                        },
+                            //                               label: {
+                            //                            Text("SHARE")
+                            
+                            
+                            Spacer()
+                                .frame(height: 20)
+                            
+                            
+                            Button(action: {
+                                counter += 1
+                                shareTapped = true
+                                shareButtonTapped()
+                            },
+                                   label: {
+                                Text("SHARE")
                                 
-                                
-                                
-                                
-                                //                        Button(action: {
-                                //                            counter += 1
-                                //                            shareButtonTapped()
-                                //                        },
-                                //                               label: {
-                                //                            Text("SHARE")
-                                
-                                
-                                Spacer()
-                                    .frame(height: 20)
+                                    .fontWeight(.thin)
+                                    .frame(width: 100, height: 30)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 25))
+                                    .background(shareColor)
+                                    .cornerRadius(25)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                    .alert("Sometimes there's more power in a simple hug than a thousand words.", isPresented: $showingAlert) {
+                                        Button("OK", role: .cancel) { }
+                                    }
+                            })
+                            .confettiCannon(counter: $counter)
+                            
+                            
+                            VStack {
                                 
                                 
                                 Button(action: {
-                                    counter += 1
-                                    shareTapped = true
-                                    shareButtonTapped()
+                                    sessionManager.showLogin()
                                 },
                                        label: {
-                                    Text("SHARE")
+                                    Image("home-alt2")
+                                        .frame(width: 50, height: 25)
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 20))
+                                        .background(Color .black)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                        .opacity(0.70)
                                     
-                                        .fontWeight(.thin)
-                                        .frame(width: 100, height: 30)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 25))
-                                        .background(shareColor)
-                                        .cornerRadius(25)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                        .alert("Sometimes there's more power in a simple hug than a thousand words.", isPresented: $showingAlert) {
-                                            Button("OK", role: .cancel) { }
-                                        }
                                 })
-                                .confettiCannon(counter: $counter)
                                 
-                                
-                                VStack {
-                                    
-                                    
-                                    Button(action: {
-                                        sessionManager.showLogin()
-                                    },
-                                           label: {
-                                        Image("home-alt2")
-                                            .frame(width: 50, height: 25)
-                                            .foregroundColor(.white)
-                                            .font(.system(size: 20))
-                                            .background(Color .black)
-                                            .cornerRadius(15)
-                                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                            .opacity(0.70)
-                                        
-                                    })
-                                    
-                                }
                             }
                         }
                         
@@ -367,7 +365,7 @@ struct VirtualHug: View {
                         
                         
                         
-
+                        
                         
                     }
                 }
