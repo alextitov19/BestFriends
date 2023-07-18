@@ -110,7 +110,7 @@ struct INFOPreloadA: View {
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Text("(shoot them a pic that will make them smile \nwhen they shake their phone")
+                        Text("(shoot them a pic that will make them smile \nwhen they shake their iPhone")
                             .font(.system(size: 13))
                             .italic()
                             .foregroundColor(Color.white)
@@ -122,7 +122,7 @@ struct INFOPreloadA: View {
                         Spacer()
                             .frame(height: 50)
                         
-                        Text("Thinking of your boyfriend / \ngirlfriend for the k-zillionth time today")
+                        Text("New relationship - thinking about them \n for the k-zillionth time today!")
                             .font(.system(size: 20))
                         
                             .foregroundColor(ColorManager .grey1)
@@ -159,7 +159,7 @@ struct INFOPreloadA: View {
                             Spacer()
                                 .frame(height: 50)
                             
-                            Text("Maybe you are having a rough day")
+                            Text("Maybe you're having a rough day")
                                 .font(.system(size: 20))
                             
                                 .foregroundColor(ColorManager .grey1)

@@ -133,7 +133,7 @@ struct MyRoomView: View {
                     
                     NavigationLink( destination: INFOPreloadA(user: user, friends: friends),
                                     label: {
-                        Text("What's Up?")
+                        Text("?")
                             .fontWeight(.light)
                             .frame(width: 100, height: 40)
                             .foregroundColor(ColorManager .grey1)
