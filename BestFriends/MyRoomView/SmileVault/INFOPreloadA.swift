@@ -98,49 +98,85 @@ struct INFOPreloadA: View {
                     Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(Color.purple)
-                        .frame(width: 400, height: 400)
+                        .frame(width: 450, height: 450)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                         .opacity(0.4)
                     VStack {
-                        Text("Wondering what your")
-                                                .font(.system(size: 37))
+                        
+                        Text("Friend having a rough day")
+                            .font(.system(size: 20))
+                        
+                            .foregroundColor(ColorManager .grey1)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("(shoot them a pic that will make them smile \nwhen they shake their phone")
+                            .font(.system(size: 13))
+                            .italic()
+                            .foregroundColor(Color.white)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
                     
-                                                .foregroundColor(ColorManager .grey1)
-                                                .fontWeight(.thin)
-                                                .multilineTextAlignment(.center)
-
-                        Text("friends are doing?")
-                                                .font(.system(size: 40))
-                    
-                                                .foregroundColor(ColorManager .grey1)
-                                                .fontWeight(.thin)
-                                                .multilineTextAlignment(.center)
+                        
                         
                         Spacer()
                             .frame(height: 50)
-                        Text("Ask for a 'fresh' PhotoPoP")
-                                                .font(.system(size: 30))
-                    
-                                                .foregroundColor(ColorManager .grey1)
-                                                .fontWeight(.thin)
-                                                .multilineTextAlignment(.center)
-                     
                         
-//                        Spacer()
-//                            .frame(height: 7)
-//
-//                        Text("instead of a text")
-//                                                .font(.system(size: 23))
-//                                                .italic()
-//                                                .foregroundColor(ColorManager .grey3)
-//                                                .fontWeight(.thin)
-//                                                .multilineTextAlignment(.center)
+                        Text("Thinking of your boyfriend / \ngirlfriend for the k-zillionth time today")
+                            .font(.system(size: 20))
                         
-
+                            .foregroundColor(ColorManager .grey1)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("(select 'Myself' - upload favorite pic, \nnow they're just a phone shake away)")
+                            .font(.system(size: 13))
+                            .italic()
+                            .foregroundColor(Color.white)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                        VStack {
+                            Spacer()
+                                .frame(height: 50)
+                            
+                            Text("Wondering what your friends are doing?")
+                                .font(.system(size: 20))
+                            
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("(send requesting for a PhotoPOP)")
+                                .font(.system(size: 13))
+                                .italic()
+                                .foregroundColor(Color.white)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                          
+                            
+                            
+                            Spacer()
+                                .frame(height: 50)
+                            
+                            Text("Maybe you are having a rough day")
+                                .font(.system(size: 20))
+                            
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("(send requesting for a PhotoPOP)")
+                                .font(.system(size: 13))
+                                .italic()
+                                .foregroundColor(Color.white)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
+                        }
                     }
+                    
                 }
-             
-         
                 VStack {
 //
 //                    Spacer()
