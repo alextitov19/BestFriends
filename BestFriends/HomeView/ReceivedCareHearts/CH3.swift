@@ -126,6 +126,9 @@ struct CH3: View {
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
+                       
+                        Spacer()
+                            .frame(height: 10)
                         
                         Text("Emotional Support")
                             .font(.system(size: 28))
@@ -133,14 +136,17 @@ struct CH3: View {
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
+                        Spacer()
+                            .frame(height: 10)
                         
-                        Text("to friends struggling")
+                        
+                        Text("to friends struggling with a")
                             .font(.system(size: 25))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
-                        Text("with a difficult day")
+                        Text("difficult day")
                             .font(.system(size: 25))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.thin)
