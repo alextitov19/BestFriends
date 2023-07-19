@@ -97,16 +97,16 @@ struct INFOPreloadA: View {
                     
                     Image(systemName: "circle.fill")
                         .resizable()
-                        .foregroundColor(Color.purple)
+                        .foregroundColor(Color.orange)
                         .frame(width: 500, height: 500)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.4)
+                        .opacity(0.8)
                     VStack {
                         
                         Text("Friend having one of those days!")
                             .font(.system(size: 20))
                         
-                            .foregroundColor(ColorManager .grey1)
+                            .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
@@ -125,7 +125,7 @@ struct INFOPreloadA: View {
                         Text("New relationship - thinking about them \n for the k-zillionth time today!")
                             .font(.system(size: 20))
                         
-                            .foregroundColor(ColorManager .grey1)
+                            .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
@@ -156,7 +156,7 @@ struct INFOPreloadA: View {
                             Text("OMG, can you believe this!")
                                 .font(.system(size: 20))
                             
-                                .foregroundColor(ColorManager .grey1)
+                                .foregroundColor(Color.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                             
@@ -174,7 +174,7 @@ struct INFOPreloadA: View {
                             Text("Or, just tart a new conversation \nabout what's going on")
                                 .font(.system(size: 20))
                             
-                                .foregroundColor(ColorManager .grey1)
+                                .foregroundColor(Color.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                         
@@ -352,6 +352,25 @@ struct INFOPreloadA: View {
                         VStack {
                             
                             
+                            Spacer()
+                                .frame(height: 40)
+                            
+                            NavigationLink( destination:  CH5(user: user, friends: friends),
+                                            label: {
+                                Text("First time? Please see Instructions")
+                                    .fontWeight(.light)
+                                    .frame(width: 310, height: 40)
+                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 19))
+                                    .background(Color.orange)
+                                    .glow(color: ColorManager.purple3, radius: 1)
+                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
+            //                        .opacity(0.9)
+                                    .cornerRadius(10)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                
+                            })
+                            
                                  Button(action: {
                                      sessionManager.showLogin()
                                  },
@@ -366,9 +385,7 @@ struct INFOPreloadA: View {
                                          .opacity(0.70)
                                      
                                  })
-//                            
-//                            Spacer()
-//                                .frame(height: 25)
+
 //                            
 //                            NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
 //                                            label: {

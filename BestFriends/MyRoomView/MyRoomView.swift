@@ -115,6 +115,21 @@ struct MyRoomView: View {
                     
                     HStack {
                         
+                        NavigationLink( destination: INFOPreloadA(user: user, friends: friends),
+                                        label: {
+                            Text("?")
+                                .fontWeight(.light)
+                                .frame(width: 100, height: 40)
+                                .foregroundColor(ColorManager .grey1)
+                                .font(.system(size: 17))
+                                .background(ColorManager .grey4)
+                                .glow(color: ColorManager.purple3, radius: 1)
+                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                .opacity(0.9)
+                                .cornerRadius(15)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                        })
+                        
                         NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
                                         label: {
                             Text("PhotoPOP")
@@ -131,20 +146,7 @@ struct MyRoomView: View {
                         })
                     }
                     
-                    NavigationLink( destination: INFOPreloadA(user: user, friends: friends),
-                                    label: {
-                        Text("?")
-                            .fontWeight(.light)
-                            .frame(width: 100, height: 40)
-                            .foregroundColor(ColorManager .grey1)
-                            .font(.system(size: 17))
-                            .background(ColorManager .grey4)
-                            .glow(color: ColorManager.purple3, radius: 1)
-                            .shadow(color: .white, radius: 3, x: -4, y: 4)
-                            .opacity(0.9)
-                            .cornerRadius(15)
-                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                    })
+                 
                     
                 }
                 Spacer()
