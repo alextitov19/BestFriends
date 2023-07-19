@@ -84,7 +84,7 @@ struct PhotoPop3: View {
                             .frame(height: 10)
                         
                         Text("Alert frind with Push Notification")
-                            .font(.system(size: 30, weight: .light))
+                            .font(.system(size: 25, weight: .light))
                             .foregroundColor(ColorManager .grey2)
                     
                         
