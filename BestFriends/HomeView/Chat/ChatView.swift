@@ -89,60 +89,71 @@ struct ChatView: View {
                     Spacer ()
                         .frame(width: 20)
                     
-                    Image("lock-alt")
-                        .resizable()
-                        .frame(width: 35, height: 35)
-                        .scaledToFill()
-                        .onTapGesture(perform: {
-                            var hiddenGroups: [String] = user.hiddenGroups ?? []
-                            hiddenGroups.append(group.id)
-                            let updatedUser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, chatBackground: user.chatBackground, smileNotes: user.smileNotes)
-                            RestApi.instance.updateUser(user: updatedUser).then({ response in
-                                print("Got update response: ", response)
-                                isLockTapped.toggle()
-                            })
-                            
-                            //                            sessionManager.showChat(user: <#T##User#>, group: <#T##Group#>)
-                        })
-                        .onAppear(perform: {
-                            if user.hiddenGroups != nil {
-                                if user.hiddenGroups!.contains(group.id) {
-                                    isLockTapped.toggle()
-                                }
-                            }
-                        })
-                        .fullScreenCover(isPresented: $isLockTapped) {
-                            HideChatView(sessionManager: _sessionManager, user: user, group: group)
-                        }
-                    //                    }//NavLink
-                  
-                    
                     Spacer ()
-                        .frame(width: 20)
-                    
-                    Text("Remove me \nfrom room")
-                        .foregroundColor(ColorManager.grey4)
-                    //                        .foregroundColor(.gray)
-                        .font(.system(size: 12, weight: .thin))
-                        .onTapGesture(perform: leaveChatGroup)
-              
-                
-                }
-                
-//                Text("Safety Feature ...")
-//                             .font(.system(size: 19))
-//
-//                             .fontWeight(.regular)
-//                             .multilineTextAlignment(.center)
-//                             .foregroundColor(Color.green)
-//
-//                Text("Room closes after 30 seconds inactive / Exit & Re-enter!")
-//                             .font(.system(size: 14))
-//                             .italic()
-//                             .fontWeight(.light)
-//                             .multilineTextAlignment(.center)
-//                             .foregroundColor(Color.red)
-
+                                      .frame(width: 20)
+                                  
+                                  ZStack {
+                                      
+                                      Text("")
+                                          .fontWeight(.light)
+                                          .frame(width: 40, height: 40)
+                                          .foregroundColor(ColorManager .grey1)
+                                          .font(.system(size: 25))
+                                          .background(Color.green)
+                                          .cornerRadius(15)
+                                          .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                      
+                                      Image("lock-alt")
+                                          .resizable()
+                                          .frame(width: 35, height: 35)
+                                          .scaledToFill()
+                                          .onTapGesture(perform: {
+                                              var hiddenGroups: [String] = user.hiddenGroups ?? []
+                                              hiddenGroups.append(group.id)
+                                              let updatedUser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, chatBackground: user.chatBackground, smileNotes: user.smileNotes)
+                                              RestApi.instance.updateUser(user: updatedUser).then({ response in
+                                                  print("Got update response: ", response)
+                                                  isLockTapped.toggle()
+                                              })
+                                              
+                                              
+                                          })
+                                          .onAppear(perform: {
+                                              if user.hiddenGroups != nil {
+                                                  if user.hiddenGroups!.contains(group.id) {
+                                                      isLockTapped.toggle()
+                                                  }
+                                              }
+                                          })
+                                          .fullScreenCover(isPresented: $isLockTapped) {
+                                              HideChatView(sessionManager: _sessionManager, user: user, group: group)
+                                          }
+                                      //                    }//NavLink
+                                  }
+                                  
+                                  Spacer ()
+                                      .frame(width: 20)
+                                  
+                                  ZStack {
+                                      
+                                      Text("")
+                                          .fontWeight(.light)
+                                          .frame(width: 60, height: 40)
+                                          .foregroundColor(ColorManager .grey1)
+                                          .font(.system(size: 25))
+                                          .background(Color.purple)
+                                          .cornerRadius(15)
+                                          .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                      
+                                      Text("Remove \nMe")
+                                          .foregroundColor(Color.white)
+                                          .font(.system(size: 12, weight: .light))
+                                          .multilineTextAlignment(.center)
+                                          .onTapGesture(perform: leaveChatGroup)
+                                      
+                                  }
+                              }
+                              
              
                 
                 
