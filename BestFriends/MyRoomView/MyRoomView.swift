@@ -197,9 +197,11 @@ struct MyRoomView: View {
                             .foregroundColor(Color.white)
                             .font(.system(size: 22))
                             .background(Color.purple)
-                            .opacity(0.99)
+                            .glow(color: ColorManager.purple3, radius: 1)
+                            .shadow(color: .white, radius: 3, x: -4, y: 4)
+                            .opacity(0.9)
                             .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         
                         })
                         
