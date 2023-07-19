@@ -97,19 +97,34 @@ struct CH3: View {
                             Spacer()
                                 .frame(height: 30)
                             
-                            Text("Your friend just blew you a kiss, \njump up high and catch it.")
+                          
+                            
+                            Text("Care Hearts are perfect for any occasion")
+                                .font(.system(size: 27))
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
+                            Spacer()
+                                .frame(height: 10)
+                            
+                            Text("Especially powerful when sending Emotional Support")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
                             
+                            Text("to friends having a difficult day")
+                                .font(.system(size: 27))
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
                             Spacer()
                                 .frame(height: 20)
                             
-//                            Image("BalloonGuy300")
-//                                .resizable()
-//                                .frame(width: 150, height: 150)
+
                             
                         }
                         
@@ -120,22 +135,22 @@ struct CH3: View {
                                 .frame(height: 30)
                            
                                
-                          
-                            NavigationLink(
-                                destination: FH7(),
-                                label: {
-                                    Text("->")
-                                        .fontWeight(.thin)
-                                        .foregroundColor(Color.white)
-                                        .frame(width: 40, height: 40)
-                                        .font(.system(size: 30))
-                                        .background(ColorManager .grey2)
-                                        .opacity(0.95)
-                                        .cornerRadius(5)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                }
-                                
-                            )}
+//
+//                            NavigationLink(
+//                                destination: FH7(),
+//                                label: {
+//                                    Text("->")
+//                                        .fontWeight(.thin)
+//                                        .foregroundColor(Color.white)
+//                                        .frame(width: 40, height: 40)
+//                                        .font(.system(size: 30))
+//                                        .background(ColorManager .grey2)
+//                                        .opacity(0.95)
+//                                        .cornerRadius(5)
+//                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                }
+//
+//                            )}
                             
                             
                             
