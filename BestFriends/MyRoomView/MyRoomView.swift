@@ -119,7 +119,7 @@ struct MyRoomView: View {
                                             label: {
                                 Text("?")
                                     .fontWeight(.light)
-                                    .frame(width: 100, height: 40)
+                                    .frame(width: 80, height: 40)
                                     .foregroundColor(ColorManager .grey1)
                                     .font(.system(size: 17))
                                     .background(ColorManager .grey4)
@@ -209,7 +209,7 @@ struct MyRoomView: View {
                         
                         NavigationLink( destination: CH3(),
                                         label: {
-                            Text("Customize")
+                            Text("CareEmojies")
                                 .fontWeight(.light)
                                 .frame(width: 100, height: 40)
                                 .foregroundColor(ColorManager .grey4)
