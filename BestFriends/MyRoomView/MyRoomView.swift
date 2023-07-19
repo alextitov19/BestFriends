@@ -207,7 +207,7 @@ struct MyRoomView: View {
                         
                         
                         
-                        NavigationLink( destination: CH3(),
+                        NavigationLink( destination: CH1(),
                                         label: {
                             Text("CareEmojies")
                                 .fontWeight(.light)
