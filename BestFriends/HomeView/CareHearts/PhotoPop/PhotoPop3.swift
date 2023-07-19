@@ -76,11 +76,16 @@ struct PhotoPop3: View {
 //                        Spacer()
 //                            .frame(height: 60)
                         
-                        Text("Notify 'specific' Friend")
-                            .font(.system(size: 30, weight: .light))
+                        Text("an in-app notification was sent")
+                            .font(.system(size: 20, weight: .light))
                             .foregroundColor(ColorManager .grey2)
                         
-                  
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        Text("Alert frind with Push Notification")
+                            .font(.system(size: 30, weight: .light))
+                            .foregroundColor(ColorManager .grey2)
                     
                         
                         HStack {
