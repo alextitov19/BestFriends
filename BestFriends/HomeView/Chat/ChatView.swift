@@ -92,7 +92,7 @@ struct ChatView: View {
                         
                         Text("")
                             .fontWeight(.light)
-                            .frame(width: 150, height: 40)
+                            .frame(width: 200, height: 40)
                             .foregroundColor(ColorManager .grey1)
                             .font(.system(size: 25))
                             .background(ColorManager .grey3)
@@ -110,7 +110,7 @@ struct ChatView: View {
            
                     
                     Spacer ()
-                        .frame(width: 20)
+                        .frame(width: 10)
                                   
                                   ZStack {
                                       
@@ -152,7 +152,7 @@ struct ChatView: View {
                                   }
                                   
                                   Spacer ()
-                                      .frame(width: 20)
+                                      .frame(width: 10)
                                   
                                   ZStack {
                                       

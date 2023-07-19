@@ -103,7 +103,7 @@ struct INFOPreloadA: View {
                         .opacity(0.4)
                     VStack {
                         
-                        Text("Friend having a rough day")
+                        Text("Friend having one of those days!")
                             .font(.system(size: 20))
                         
                             .foregroundColor(ColorManager .grey1)
@@ -140,33 +140,48 @@ struct INFOPreloadA: View {
                             Spacer()
                                 .frame(height: 50)
                             
-                            Text("Wondering what your friends are doing?")
+                            Text("Start a new conversation about what's going on")
                                 .font(.system(size: 20))
                             
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                             
-                            Text("(send requesting for a PhotoPOP)")
-                                .font(.system(size: 13))
-                                .italic()
-                                .foregroundColor(Color.white)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
+//                            Text("(send requesting for a PhotoPOP)")
+//                                .font(.system(size: 13))
+//                                .italic()
+//                                .foregroundColor(Color.white)
+//                                .fontWeight(.thin)
+//                                .multilineTextAlignment(.center)
                           
                             
                             
                             Spacer()
                                 .frame(height: 50)
                             
-                            Text("Maybe you're having a rough day")
+                            Text("Something cool just happened")
                                 .font(.system(size: 20))
                             
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                             
-                            Text("(send requesting for a PhotoPOP)")
+                            Text("(shoot them a PhotoPOP)")
+                                .font(.system(size: 13))
+                                .italic()
+                                .foregroundColor(Color.white)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
+                            
+                            Text("WT____")
+                                .font(.system(size: 20))
+                            
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("(quick, shoot them a PhotoPOP)")
                                 .font(.system(size: 13))
                                 .italic()
                                 .foregroundColor(Color.white)
