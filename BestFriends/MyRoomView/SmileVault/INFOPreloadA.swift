@@ -90,6 +90,31 @@ struct INFOPreloadA: View {
             
             VStack{
                 
+                
+                Text("ONE IMAGE")
+                    .font(.system(size: 20))
+                    .foregroundColor(Color.white)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                
+                Text("ONE FRIEND")
+                    .font(.system(size: 20))
+                    .foregroundColor(Color.white)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                
+                
+                Text("Shake your iPhone - it instantly POPs UP")
+                    .font(.system(size: 20))
+                    .foregroundColor(Color.white)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                
+                
+                
+                
+                
+                
                 ZStack {
                     
                     Spacer()
@@ -100,7 +125,7 @@ struct INFOPreloadA: View {
                         .foregroundColor(Color.orange)
                         .frame(width: 500, height: 500)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.8)
+                        .opacity(0.95)
                     VStack {
                         
                         Text("Friend having one of those days!")
@@ -110,7 +135,7 @@ struct INFOPreloadA: View {
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Text("(shoot them a pic that will make them smile \nwhen they shake their iPhone")
+                        Text("(shoot them a pic that will make them smile")
                             .font(.system(size: 13))
                             .italic()
                             .foregroundColor(Color.white)
@@ -129,7 +154,7 @@ struct INFOPreloadA: View {
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Text("(select 'Myself' - upload favorite pic, \nnow they're just a phone shake away)")
+                        Text("(select 'Myself' - upload favorite pic)")
                             .font(.system(size: 13))
                             .italic()
                             .foregroundColor(Color.white)
@@ -171,7 +196,7 @@ struct INFOPreloadA: View {
                             Spacer()
                                 .frame(height: 30)
                             
-                            Text("Or, just tart a new conversation \nabout what's going on")
+                            Text("Or, just start a new conversation \nabout what's going on")
                                 .font(.system(size: 20))
                             
                                 .foregroundColor(Color.white)
