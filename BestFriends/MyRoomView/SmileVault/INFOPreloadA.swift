@@ -91,26 +91,30 @@ struct INFOPreloadA: View {
             VStack{
                 
                 
-                Text("ONE IMAGE")
+                Text("Your Image")
                     .font(.system(size: 20))
                     .foregroundColor(Color.white)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
-                Text("ONE FRIEND")
+//                Text("One Friend")
+//                    .font(.system(size: 20))
+//                    .foregroundColor(Color.white)
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+                
+                
+                Text("Instantly POPs UP")
                     .font(.system(size: 20))
                     .foregroundColor(Color.white)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
-                
-                Text("Shake your iPhone - it instantly POPs UP")
+                Text("they just 'shake' their iPhone")
                     .font(.system(size: 20))
                     .foregroundColor(Color.white)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                
-                
                 
                 
                 
@@ -382,7 +386,7 @@ struct INFOPreloadA: View {
                             
                             NavigationLink( destination:  CH5(user: user, friends: friends),
                                             label: {
-                                Text("First time? Please see Instructions")
+                                Text("Please see PhotoPOP instructions")
                                     .fontWeight(.light)
                                     .frame(width: 310, height: 40)
                                     .foregroundColor(Color.white)
