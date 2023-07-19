@@ -218,7 +218,7 @@ struct MyRoomView: View {
                     
                     NavigationLink( destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                     label: {
-                        Text("Request")
+                        Text("Bad Day")
                             .fontWeight(.light)
                             .frame(width: 85, height: 40)
                             .foregroundColor(ColorManager .grey4)

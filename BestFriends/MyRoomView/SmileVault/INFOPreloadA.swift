@@ -399,21 +399,21 @@ struct INFOPreloadA: View {
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                 
                             })
-                            
-                                 Button(action: {
-                                     sessionManager.showLogin()
-                                 },
-                                     label: {
-                                     Image("home-alt2")
-                                         .frame(width: 50, height: 25)
-                                         .foregroundColor(.white)
-                                         .font(.system(size: 20))
-                                         .background(ColorManager .grey2)
-                                         .cornerRadius(15)
-                                         .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                         .opacity(0.70)
-                                     
-                                 })
+//
+//                                 Button(action: {
+//                                     sessionManager.showLogin()
+//                                 },
+//                                     label: {
+//                                     Image("home-alt2")
+//                                         .frame(width: 50, height: 25)
+//                                         .foregroundColor(.white)
+//                                         .font(.system(size: 20))
+//                                         .background(ColorManager .grey2)
+//                                         .cornerRadius(15)
+//                                         .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                                         .opacity(0.70)
+//
+//                                 })
 
 //                            
 //                            NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
