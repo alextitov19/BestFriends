@@ -280,7 +280,7 @@ struct MyRoomView: View {
                             })
                             
                             
-                            NavigationLink( destination:  FH1(),
+                            NavigationLink( destination:  FH1(user: user, friends: friends, friendAtmospheres: friendAtmospheres),
                                             label: {
                                 Text("Highlights")
                                     .fontWeight(.light)

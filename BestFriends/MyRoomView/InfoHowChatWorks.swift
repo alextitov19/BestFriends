@@ -100,11 +100,11 @@ struct InfoHowChatWorks: View {
     }
     
 }
-struct InfoHowChatWorks_Previews: PreviewProvider {
-    static var previews: some View {
-        FH1()
-    }
-}
+//struct InfoHowChatWorks_Previews: PreviewProvider {
+//    static var previews: some View {
+//        FH1()
+//    }
+//}
 
 
 //**********************************************************************
