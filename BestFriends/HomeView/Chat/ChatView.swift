@@ -75,7 +75,7 @@ struct ChatView: View {
 //                    })
                     
                     
-                    Image("homeChat 1")
+                    Image("home-alt2")
                         .frame(width: 40, height: 40)
                         .foregroundColor(.white)
                         .font(.system(size: 20))
