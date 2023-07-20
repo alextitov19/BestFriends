@@ -51,9 +51,12 @@ struct INFOPreloadA: View {
 
             } else {
                 
-                
-                Color.black
-                    .ignoresSafeArea()
+                Image("FHBackground")
+                               .resizable()
+                               .scaledToFill()
+                               .edgesIgnoringSafeArea(.all)
+//                Color.black
+//                    .ignoresSafeArea()
                 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
@@ -92,7 +95,7 @@ struct INFOPreloadA: View {
                 
                 
                 Text("Your Image")
-                    .font(.system(size: 20))
+                    .font(.system(size: 30))
                     .foregroundColor(Color.white)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
@@ -105,14 +108,17 @@ struct INFOPreloadA: View {
                 
                 
                 Text("Instantly POPs UP")
-                    .font(.system(size: 20))
+                    .font(.system(size: 30))
                     .foregroundColor(Color.white)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
+                Spacer()
+                    .frame(height: 10)
                 
-                Text("they just 'shake' their iPhone")
+                Text("(when your friend 'shakes' their iPhone)")
                     .font(.system(size: 20))
-                    .foregroundColor(Color.white)
+                    .italic()
+                    .foregroundColor(ColorManager .grey4)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
@@ -429,7 +435,7 @@ struct INFOPreloadA: View {
 //                            })
                             
                             Spacer()
-                                .frame(height: 80)
+                                .frame(height: 190)
                            
                    
                         }
