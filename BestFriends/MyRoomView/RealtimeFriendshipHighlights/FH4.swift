@@ -94,7 +94,7 @@ struct FH4: View {
                             Spacer()
                                 .frame(height: 70)
                             
-                            Text("Redeem a friend's \n'Fun Times' coupon.")
+                            Text("Redeem a \n'Frendship Coupon.")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
