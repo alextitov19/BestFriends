@@ -65,9 +65,9 @@ struct CH7: View {
 //            ColorManager .purple1
 //                .ignoresSafeArea()
 //
-//            AdPlayerView(name: "sky2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
 
             
             VStack{

@@ -52,9 +52,15 @@ struct CH11: View {
 
                 
                 VStack {
+                    
+                    Text("BestFriends is about")
+                        .font(.system(size: 30))
+                        .foregroundColor(ColorManager .grey1)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
 
                     Text("Friendships")
-                        .font(.system(size: 35))
+                        .font(.system(size: 40))
                         .foregroundColor(ColorManager .grey1)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
@@ -82,18 +88,36 @@ struct CH11: View {
                             Spacer()
                                 .frame(height: 70)
                             
-                            Text("Redeem a \n'Frendship Coupon.")
-                                .font(.system(size: 27))
+                            Text("A friend may well be reckoned the masterpiece of nature.")
+                                .font(.system(size: 25))
+                                .italic()
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("- Emerson")
+                                .font(.system(size: 13))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
                             
                             Spacer()
-                                .frame(height: 90)
+                                .frame(height: 60)
                             
-
                             
+                    NavigationLink(destination: EmptyView(),
+                        label: {
+             Text("Tell us in 15 words what your friends mean to you? Shoot us an email with your quote. Each month we'll post the top 3 winners. \n\nsend to QuoteContest@SocialTechLabs.com")
+                 .fontWeight(.thin)
+                 .frame(width: 330, height: 140)
+                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                 .font(.system(size: 14))
+                 .background(ColorManager.grey3)
+                 .cornerRadius(10)
+                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+             
+         })
                         }
                         
                     }

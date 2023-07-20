@@ -46,9 +46,9 @@ struct CH10: View {
                 .scaledToFit()
 
                 
-//            AdPlayerView(name: "Galaxy2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
 
 
             ZStack{

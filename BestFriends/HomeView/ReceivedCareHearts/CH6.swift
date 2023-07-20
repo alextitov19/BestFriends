@@ -68,6 +68,10 @@ struct CH6: View {
                     .ignoresSafeArea()
                     .scaledToFit()
                 
+                AdPlayerView(name: "sky2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                
             }
             
             VStack{
