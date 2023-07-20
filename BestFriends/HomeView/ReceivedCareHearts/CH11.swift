@@ -53,8 +53,15 @@ struct CH11: View {
                 
                 VStack {
                     
-                    Text("BestFriends is about")
-                        .font(.system(size: 30))
+                    Text("BestFriends")
+                        .font(.system(size: 35))
+                        .foregroundColor(ColorManager .grey1)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                    
+                    Text("is about")
+                        .font(.system(size: 25))
+                        .italic()
                         .foregroundColor(ColorManager .grey1)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
