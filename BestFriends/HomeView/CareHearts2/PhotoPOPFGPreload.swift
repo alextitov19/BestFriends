@@ -197,6 +197,7 @@ struct PhotoPopFGPreload: View {
                         .resizable()
                         .foregroundColor(Color.purple)
                         .frame(width: 375, height: 150)
+                        .cornerRadius(15)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                         .opacity(0.4)
                     
@@ -211,7 +212,6 @@ struct PhotoPopFGPreload: View {
                     Text("Send your friend a Friendship Coupon that next time you are together they can redeem for your gift, like an ice cream, a cheeseburger - what ever you want to give them.")
                         .font(.system(size: 18, weight: .light))
                         .foregroundColor(Color.white)
-                    //                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                         .opacity(0.50)
                         .multilineTextAlignment(.center)
                         .padding(30)
