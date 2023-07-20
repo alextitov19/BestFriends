@@ -126,7 +126,7 @@ struct INFOPreloadA: View {
                     
                     Image(systemName: "circle.fill")
                         .resizable()
-                        .foregroundColor(Color.orange)
+                        .foregroundColor(Color.purple)
                         .frame(width: 500, height: 500)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                         .opacity(0.95)

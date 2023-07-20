@@ -137,7 +137,7 @@ struct MyRoomView: View {
                                     .frame(width: 155, height: 40)
                                     .foregroundColor(Color.white)
                                     .font(.system(size: 22))
-                                     .background(Color.orange)
+                                     .background(Color.purple)
                                     .glow(color: ColorManager.purple3, radius: 1)
                                     .shadow(color: .white, radius: 3, x: -4, y: 4)
                                     .opacity(0.9)
@@ -314,51 +314,51 @@ struct MyRoomView: View {
                     }
                     Spacer()
                         .frame(height: 60)
-                    HStack {
-                        
-                        NavigationLink( destination:  HurtFeelings4(user: user, friends: friends, groups: groups),
-                                        label: {
-                            Text("Hurt Feelings")
-                                .fontWeight(.light)
-                                .frame(width: 110, height: 40)
-                                .foregroundColor(ColorManager .grey1)
-                                .font(.system(size: 17))
-                                .background(ColorManager .grey4)
-                                .glow(color: ColorManager.purple3, radius: 1)
-                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                .opacity(0.9)
-                                .cornerRadius(15)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                        })
-                        
-                        
-                        Text("Friend Drama")
-                            .fontWeight(.light)
-                            .frame(width: 155, height: 40)
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 22))
-                            .background(Color.purple)
-                            .opacity(0.99)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
-                        
-                        NavigationLink( destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
-                                        label: {
-                            Text("Huge Fight")
-                                .fontWeight(.light)
-                                .frame(width: 110, height: 40)
-                                .foregroundColor(ColorManager .grey1)
-                                .font(.system(size: 17))
-                                .background(ColorManager .grey4)
-                                .glow(color: ColorManager.purple3, radius: 1)
-                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                .opacity(0.9)
-                                .cornerRadius(15)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                        })
-                        
-                    }
+//                    HStack {
+//
+//                        NavigationLink( destination:  HurtFeelings4(user: user, friends: friends, groups: groups),
+//                                        label: {
+//                            Text("Hurt Feelings")
+//                                .fontWeight(.light)
+//                                .frame(width: 110, height: 40)
+//                                .foregroundColor(ColorManager .grey1)
+//                                .font(.system(size: 17))
+//                                .background(ColorManager .grey4)
+//                                .glow(color: ColorManager.purple3, radius: 1)
+//                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                .opacity(0.9)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                        })
+//
+//
+//                        Text("Friend Drama")
+//                            .fontWeight(.light)
+//                            .frame(width: 155, height: 40)
+//                            .foregroundColor(Color.white)
+//                            .font(.system(size: 22))
+//                            .background(Color.purple)
+//                            .opacity(0.99)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//
+//                        NavigationLink( destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+//                                        label: {
+//                            Text("Huge Fight")
+//                                .fontWeight(.light)
+//                                .frame(width: 110, height: 40)
+//                                .foregroundColor(ColorManager .grey1)
+//                                .font(.system(size: 17))
+//                                .background(ColorManager .grey4)
+//                                .glow(color: ColorManager.purple3, radius: 1)
+//                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                .opacity(0.9)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                        })
+//
+//                    }
                     
                     Spacer()
                         .frame(height: 20)
