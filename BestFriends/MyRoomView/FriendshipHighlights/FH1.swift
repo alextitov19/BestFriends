@@ -4,34 +4,40 @@
 //
 //  Created by Zhengxu Wang on 7/7/23.
 //
+
 import SwiftUI
 
 struct FH1: View {
+    @EnvironmentObject var sessionManager: SessionManager
+    let user: User
+    let friends: [User]
+    let friendAtmospheres: [Atmosphere]
+
     @State private var selectedIndex = 0
-    
-    var sentences = [
-        "This is a sentence.",
-        "This is another sentence.",
-        "And one more sentence."
-    ]
-    
+//    var sentences = [
+//        "This is a sentence.",
+//        "This is another sentence.",
+//        "And one more sentence."
+//    ]
+
+    // Create a ViewModel to handle data
+    @StateObject private var viewModel = FHViewModel()
+
     var body: some View {
-        ZStack { // Use a ZStack to layer the views
-            // Background Image
+        ZStack {
             Image("FHBackground")
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
             Spacer()
-            
-            // Purple Rectangular Section
+
             VStack(spacing: 16) {
-                Spacer().frame(height: 250) // Add spacer with height to push content down
+                Spacer().frame(height: 250)
 
                 ZStack {
                     TabView(selection: $selectedIndex) {
-                        ForEach(0..<sentences.count, id: \.self) { index in
-                            Text(sentences[index])
+                        ForEach(0..<viewModel.sentences.count, id: \.self) { index in
+                            Text(viewModel.sentences[index])
                                 .foregroundColor(.white)
                                 .font(.title)
                                 .frame(maxWidth: .infinity)
@@ -43,33 +49,68 @@ struct FH1: View {
                     .background(Color.purple)
                     .opacity(0.8)
                     .cornerRadius(10)
-                    .frame(height: 350) // Adjust the height as needed
+                    .frame(height: 350)
                     .onAppear {
-                        selectedIndex = 0 // Set initial selected index
+                        selectedIndex = 0
                     }
                     
-                    // Name Tag
-                    Text("Name Tag")
-                        .foregroundColor(.white)
-                        .font(.headline)
-                        .padding(8)
-                        .background(Color.blue)
-                        .cornerRadius(8)
-                        .offset(x: -120, y: -200) // Adjust the offset as needed
-                        .shadow(color: .black, radius: 3, x: 0, y: 2) // Add a shadow
-                        .alignmentGuide(.leading) { $0[.leading] }
+                    
+                    if viewModel.nameTags.indices.contains(selectedIndex) {
+                        Text(viewModel.nameTags[selectedIndex])
+                            .foregroundColor(.white)
+                            .font(.headline)
+                            .padding(8)
+                            .background(Color.blue)
+                            .cornerRadius(8)
+                            .offset(x: -120, y: -200)
+                            .shadow(color: .black, radius: 3, x: 0, y: 2)
+                            .alignmentGuide(.leading) { $0[.leading] }
+                    }
                 }
-                
-                Spacer() // Push the content to the bottom
+
+                Spacer()
             }
             .padding()
-            .frame(maxHeight: .infinity) // Extend the height to the maximum
+            .frame(maxHeight: .infinity)
+        }
+        .onAppear {
+            viewModel.loadData(friends: friends, atmospheres: friendAtmospheres){
+//                print(viewModel.sentences)
+            }
         }
     }
 }
 
-struct FH1_Previews: PreviewProvider {
-    static var previews: some View {
-        FH1()
+class FHViewModel: ObservableObject {
+    @Published var nameTags: [String] = []
+    @Published var sentences: [String] = []
+
+    func loadData(friends: [User], atmospheres: [Atmosphere], completion: @escaping () -> Void) {
+        var processedFriends = 0 // Keep track of how many friends are processed
+        for friend in friends {
+            for atm in atmospheres {
+                if friend.atmosphere == atm.id {
+                    nameTags.append(friend.firstName)
+
+                    RestApi.instance.getSmileNotes().then({ sn in
+                        print("Got smile notes: ", sn)
+                        for s in sn {
+                            if s.senderName == friend.firstName + " " + friend.lastName {
+                                self.sentences.append(s.messageBody)
+                                break
+                            }
+                        }
+
+                        processedFriends += 1 // Increment the count of processed friends
+
+                        // Check if all friends are processed, and if so, call the completion handler
+                        if processedFriends == friends.count {
+                            completion()
+                        }
+                    })
+                }
+            }
+        }
     }
 }
+

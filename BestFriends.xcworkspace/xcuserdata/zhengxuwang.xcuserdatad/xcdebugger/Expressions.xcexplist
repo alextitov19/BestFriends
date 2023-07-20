@@ -11,6 +11,17 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "FHViewModel.loadData(friends:atmospheres:):FH1.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "friend.smileNotes">
+            </PersistentString>
+            <PersistentString
+               value = "sentences">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "PhotoPopFGPreload.sendMessage():PhotoPOPFGPreload.swift">
          <PersistentStrings>
             <PersistentString
@@ -25,10 +36,10 @@
                value = "moodData">
             </PersistentString>
             <PersistentString
-               value = "findMoodFormatter.string(from: date)">
+               value = "dateString">
             </PersistentString>
             <PersistentString
-               value = "dateString">
+               value = "findMoodFormatter.string(from: date)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -42,6 +53,9 @@
                value = "self.moodLogs">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FH1.loadData():FH1.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>
