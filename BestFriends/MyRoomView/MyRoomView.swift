@@ -370,7 +370,7 @@ struct MyRoomView: View {
                         
                         NavigationLink( destination:  JournalsView(friends: friends),
                                         label: {
-                            Text("Myself")
+                            Text("My Day")
                                 .fontWeight(.light)
                                 .frame(width: 80, height: 40)
                                 .foregroundColor(ColorManager .grey1)
