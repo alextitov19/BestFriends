@@ -136,13 +136,13 @@ struct MyRoomView: View {
                                     .fontWeight(.light)
                                     .frame(width: 155, height: 40)
                                     .foregroundColor(Color.white)
-                                    .font(.system(size: 17))
-                                    .background(Color.orange)
+                                    .font(.system(size: 22))
+                                     .background(Color.orange)
                                     .glow(color: ColorManager.purple3, radius: 1)
                                     .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                    .opacity(0.99)
+                                    .opacity(0.9)
                                     .cornerRadius(15)
-                                //                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                             })
                         }
                     }
