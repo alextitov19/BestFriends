@@ -88,13 +88,13 @@ struct MyRoomView: View {
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                     })
                      
-                        
+                     
                  
                     
                 }
+                   
                     Spacer ()
                         .frame(width: 30)
-                    
                     
                         NavigationLink(
                             destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
@@ -112,117 +112,153 @@ struct MyRoomView: View {
                     }
                     
                 
-                    ZStack{
-                        Image("CHMainKelly")
-                            .resizable()
-                            .frame(width: 300, height: 150)
-                            .cornerRadius(20)
-                        
-                        HStack {
-                            Button(action: {}, label: {
-                                Text("Send")
-                            })
-                            
-                            Button(action: {}, label: {
-                                Text("Request")
-                            })
-                        }
-                    }
+//                    ZStack{
+//                        Image("CHMainKelly")
+//                            .resizable()
+//                            .frame(width: 300, height: 150)
+//                            .cornerRadius(20)
+//
+//                        HStack {
+//                            Button(action: {}, label: {
+//                                Text("Send")
+//                            })
+//
+//                            Button(action: {}, label: {
+//                                Text("Request")
+//                            })
+//                        }
+//                    }
                     
 //           **********************************************
+                
+                
+                VStack {
+                    Spacer ()
+                        .frame(width: 30)
+                    
+                    ZStack {
+                          
+                        NavigationLink(
+                            destination:  CH11(),
+                            label: {
+                                
+                                Image("Group 50")
+                                    .resizable()
+                                    .frame(width: 330, height: 170)
+                                    .cornerRadius(20)
+                            })
+                        VStack {
+                            
+                            VStack {
+                                Spacer()
+                                    .frame(height: 90)
+                                
+                                HStack {
+                                   
+                                    VStack {
+                                        
+                                        NavigationLink( destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
+                                                        label: {
+                                            Text("Send")
+                                                .fontWeight(.regular)
+                                                .frame(width: 90, height: 35)
+                                                .foregroundColor(ColorManager .purple5)
+                                                .font(.system(size: 17))
+                                                .background(ColorManager .purple1)
+                                                .glow(color: ColorManager.purple3, radius: 1)
+                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                                .opacity(0.9)
+                                                .cornerRadius(7)
+                                                .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                        })
+                                        
+                                        Spacer()
+                                            .frame(height: 10)
+
+                                    }
+                                   
+                                    Spacer()
+                                        .frame(width: 10)
+                                    
+                                    VStack {
+                                        
+                                        NavigationLink( destination: CH3(),
+                                                        label: {
+                                            Text("?")
+                                                .fontWeight(.light)
+                                                .frame(width: 37, height: 37)
+                                                .foregroundColor(ColorManager .grey1)
+                                                .font(.system(size: 17))
+                                                .background(ColorManager .grey4)
+                                                .glow(color: ColorManager.purple3, radius: 1)
+                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                                .opacity(0.9)
+                                                .cornerRadius(15)
+                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                            
+                                        })
+                                        
+                                        NavigationLink( destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                                        label: {
+                                            Text("Request")
+                                                .fontWeight(.regular)
+                                                .frame(width: 90, height: 35)
+                                                .foregroundColor(ColorManager .purple5)
+                                                .font(.system(size: 17))
+                                                .background(ColorManager .purple1)
+                                                .glow(color: ColorManager.purple3, radius: 1)
+                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                                .opacity(0.9)
+                                                .cornerRadius(7)
+                                                .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                        })
+                                    }
+                                        
+                                        Spacer()
+                                            .frame(width: 10)
+                                        
+                                        VStack {
+                                            
+                                            NavigationLink( destination:  CH10(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
+                                                            label: {
+                                                Text("Received")
+                                                    .fontWeight(.regular)
+                                                    .frame(width: 90, height: 35)
+                                                    .foregroundColor(ColorManager .purple5)
+                                                    .font(.system(size: 17))
+                                                    .background(ColorManager .purple1)
+                                                    .glow(color: ColorManager.purple3, radius: 1)
+                                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                                    .opacity(0.9)
+                                                    .cornerRadius(7)
+                                                    .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                            })
+//                                        }
+                                        
+                                        
+                                        Spacer()
+                                            .frame(height: 10)
+                                      
+                                    }
+                                        
+                                }
+
+                                    }
+                                }
+                            }
+                             
+                }
+            
+                Spacer()
+                    .frame(height: 50)
+                
+                
            
 //                ****************************************************
                 
-                
-                
-                
-                
-                
-                Spacer()
-                    .frame(height: 40)
-                
-                HStack {
-               
-                
-                    
-                    NavigationLink( destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
-                                    label: {
-                        Text("Send")
-                            .fontWeight(.light)
-                            .frame(width: 80, height: 40)
-                            .foregroundColor(ColorManager .grey1)
-                            .font(.system(size: 17))
-                            .background(ColorManager .grey4)
-                            .glow(color: ColorManager.purple3, radius: 1)
-                            .shadow(color: .white, radius: 3, x: -4, y: 4)
-                            .opacity(0.9)
-                            .cornerRadius(15)
-                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                    })
-                    
-                    VStack {
-                        
-                        NavigationLink( destination: CH10(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
-                                        label: {
-                            Text("Received")
-                                .fontWeight(.light)
-                                .frame(width: 80, height: 40)
-                                .foregroundColor(ColorManager .grey1)
-                                .font(.system(size: 17))
-                                .background(ColorManager .grey4)
-                                .glow(color: ColorManager.purple3, radius: 1)
-                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                .opacity(0.9)
-                                .cornerRadius(15)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                        })
-                        
-                        
-                        NavigationLink( destination: CH3(),
-                                        label: {
-                        Text("CareHearts")
-                            .fontWeight(.light)
-                            .frame(width: 155, height: 40)
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 22))
-                            .background(Color.purple)
-                            .glow(color: ColorManager.purple3, radius: 1)
-                            .shadow(color: .white, radius: 3, x: -4, y: 4)
-                            .opacity(0.9)
-                            .cornerRadius(15)
-                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                        
-                        })
-                        
-                 
-                    }
-                    
-                    NavigationLink( destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                    label: {
-                        Text("Bad Day")
-                            .fontWeight(.light)
-                            .frame(width: 80, height: 40)
-                            .foregroundColor(ColorManager .grey1)
-                            .font(.system(size: 17))
-                            .background(ColorManager .grey4)
-                            .glow(color: ColorManager.purple3, radius: 1)
-                            .shadow(color: .white, radius: 3, x: -4, y: 4)
-                            .opacity(0.9)
-                            .cornerRadius(15)
-                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                    })
-                    
-                }
-
+      
                 VStack {
-                
-                    
-//                    ******************************************
-                    
-                    
-                    
-                    Spacer()
-                        .frame(height: 20)
+              
 
                                   VStack {
                            
@@ -238,7 +274,7 @@ struct MyRoomView: View {
                                                               .fontWeight(.bold)
                                                               .frame(width: 290, height: 50)
                                                               .foregroundColor(Color.black)
-                                                              .font(.system(size: 25))
+                                                              .font(.system(size: 22))
                                                               .background(Color.purple)
                                                               .glow(color: ColorManager.purple1, radius: 1)
                                                               .shadow(color: .white, radius: 3, x: -4, y: 4)
@@ -256,11 +292,11 @@ struct MyRoomView: View {
                                                               .foregroundColor(.black)
                                                           
                                                           Spacer ()
-                                                              .frame(width: 200)
+                                                              .frame(width: 150)
                                                         
                             NavigationLink( destination: INFOPreloadA(user: user, friends: friends),
-                                label: {
-                                    Text("?")
+                                            label: {
+                                Text("?")
                                     .fontWeight(.light)
                                     .frame(width: 37, height: 37)
                                     .foregroundColor(ColorManager .grey1)
@@ -271,7 +307,8 @@ struct MyRoomView: View {
                                     .opacity(0.9)
                                     .cornerRadius(15)
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                                                                      })
+                                
+                            })
                                                           
 
                                                   }
@@ -290,6 +327,9 @@ struct MyRoomView: View {
                     
                     VStack {
                         
+                        Spacer()
+                            .frame(height: 35)
+                        
                         ZStack {
                               
                             NavigationLink(
@@ -298,14 +338,14 @@ struct MyRoomView: View {
                                     
                                     Image("Group 51")
                                         .resizable()
-                                        .frame(width: 330, height: 170)
+                                        .frame(width: 330, height: 180)
                                         .cornerRadius(20)
                                 })
                             VStack {
                                 
                                 VStack {
                                     Spacer()
-                                        .frame(height: 10)
+                                        .frame(height: 60)
                                     
                                     HStack {
                                        
@@ -315,62 +355,72 @@ struct MyRoomView: View {
                                                             label: {
                                                 Text("Check-In")
                                                     .fontWeight(.regular)
-                                                    .frame(width: 110, height: 40)
+                                                    .frame(width: 120, height: 35)
                                                     .foregroundColor(ColorManager .purple5)
                                                     .font(.system(size: 17))
                                                     .background(ColorManager .purple1)
                                                     .glow(color: ColorManager.purple3, radius: 1)
                                                     .shadow(color: .white, radius: 3, x: -4, y: 4)
                                                     .opacity(0.9)
-                                                    .cornerRadius(15)
+                                                    .cornerRadius(7)
                                                     .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
                                             })
+                                            
+                                            Spacer()
+                                                .frame(height: 10)
+                                            
                                             NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
                                                             label: {
                                                 Text("Coupons")
                                                     .fontWeight(.regular)
-                                                    .frame(width: 110, height: 40)
+                                                    .frame(width: 120, height: 35)
                                                     .foregroundColor(ColorManager .purple5)
                                                     .font(.system(size: 17))
                                                     .background(ColorManager .purple1)
                                                     .glow(color: ColorManager.purple3, radius: 1)
                                                     .shadow(color: .white, radius: 3, x: -4, y: 4)
                                                     .opacity(0.9)
-                                                    .cornerRadius(15)
+                                                    .cornerRadius(7)
                                                     .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
                                             })
                                             
                                         }
                                        
+                                        Spacer()
+                                            .frame(width: 25)
+                                        
                                         VStack {
                                             
                                             NavigationLink( destination:  FH1(user: user, friends: friends, friendAtmospheres: friendAtmospheres),
                                                             label: {
                                                 Text("Highlights")
                                                     .fontWeight(.regular)
-                                                    .frame(width: 110, height: 40)
+                                                    .frame(width: 120, height: 35)
                                                     .foregroundColor(ColorManager .purple5)
                                                     .font(.system(size: 17))
                                                     .background(ColorManager .purple1)
                                                     .glow(color: ColorManager.purple3, radius: 1)
                                                     .shadow(color: .white, radius: 3, x: -4, y: 4)
                                                     .opacity(0.9)
-                                                    .cornerRadius(15)
+                                                    .cornerRadius(7)
                                                     .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
                                             })
+                                            
+                                            Spacer()
+                                                .frame(height: 10)
                                             
                                             NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
                                                             label: {
                                                 Text("SmileVault")
                                                     .fontWeight(.regular)
-                                                    .frame(width: 110, height: 40)
+                                                    .frame(width: 120, height: 35)
                                                     .foregroundColor(ColorManager .purple5)
                                                     .font(.system(size: 17))
                                                     .background(ColorManager .purple1)
                                                     .glow(color: ColorManager.purple3, radius: 1)
                                                     .shadow(color: .white, radius: 3, x: -4, y: 4)
                                                     .opacity(0.9)
-                                                    .cornerRadius(15)
+                                                    .cornerRadius(7)
                                                     .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
                                             })
                                             
@@ -378,97 +428,94 @@ struct MyRoomView: View {
                                         }
                                             
                                     }
-//                                        VStack {
-                                            
-                            HStack {
-                                            
-                                       
-                                        }
-                                        
-                                            VStack {
-                                                
-                                            
-                                            }
+ 
                                         }
                                     }
                                 }
-                            
-                        
-                            
-                            
-                        Spacer()
-                            .frame(height: 60)
-                      
-                        //
+                                 
                     }
                 }
                     
-                    HStack {
-                        
-                        NavigationLink( destination:  JournalsView(friends: friends),
-                                        label: {
-                            Text("My Day")
-                                .fontWeight(.light)
-                                .frame(width: 80, height: 40)
-                                .foregroundColor(ColorManager .grey1)
-                                .font(.system(size: 17))
-                                .background(ColorManager .grey4)
-                                .glow(color: ColorManager.purple3, radius: 1)
-                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                .opacity(0.9)
-                                .cornerRadius(15)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                        })
-                        
-                        VStack {
-                            Text("Journal")
-                                .fontWeight(.light)
-                                .frame(width: 155, height: 40)
-                                .foregroundColor(Color.white)
-                                .font(.system(size: 22))
-                                .background(Color.purple)
-                                .opacity(0.99)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                            
-                            NavigationLink( destination: CH1(),
-                                            label: {
-                                Text("My Dreams")
-                                    .fontWeight(.light)
-                                    .frame(width: 100, height: 40)
-                                    .foregroundColor(ColorManager .grey4)
-                                    .font(.system(size: 17))
-                                    .background(ColorManager .grey2)
-                                    .glow(color: ColorManager.purple3, radius: 1)
-                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                    .opacity(0.9)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                            })
-                        }
-                        
-                        NavigationLink( destination: CH1(),
-                                        label: {
-                            Text("My Crush")
-                                .fontWeight(.light)
-                                .frame(width: 80, height: 40)
-                                .foregroundColor(ColorManager .grey4)
-                                .font(.system(size: 17))
-                                .background(ColorManager .grey2)
-                                .glow(color: ColorManager.purple3, radius: 1)
-                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                .opacity(0.9)
-                                .cornerRadius(15)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                        })
-                        
-                    }
+                Spacer()
+                    .frame(height: 50)
+                
+//                ************************************************
+                
+                VStack {
                     
-                    Spacer()
-                        .frame(height: 17)
-      
-                   
+                    ZStack {
+                          
+                        NavigationLink(
+                            destination:  CH11(),
+                            label: {
+                                
+                                Image("Group 52")
+                                    .resizable()
+                                    .frame(width: 330, height: 170)
+                                    .cornerRadius(20)
+                            })
+                        VStack {
+                            
+                            VStack {
+                                Spacer()
+                                    .frame(height: 60)
+                                
+                                HStack {
+                                   
+                                    VStack {
+                                        
+                                        NavigationLink( destination: JournalsView(friends: friends),
+                                                        label: {
+                                            Text("Personal")
+                                                .fontWeight(.regular)
+                                                .frame(width: 120, height: 35)
+                                                .foregroundColor(ColorManager .purple5)
+                                                .font(.system(size: 17))
+//                                                .background(ColorManager .purple1)
+//                                                .glow(color: ColorManager.purple3, radius: 1)
+//                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                                .opacity(0.9)
+//                                                .cornerRadius(7)
+//                                                .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                        })
+                                        
+                                        Spacer()
+                                            .frame(height: 10)
+
+                                    }
+                                   
+                                    Spacer()
+                                        .frame(width: 37)
+                                    
+                                    VStack {
+                                        
+                                        NavigationLink( destination:  CH1(),
+                                                        label: {
+                                            Text("My Crush")
+                                                .fontWeight(.regular)
+                                                .frame(width: 120, height: 35)
+                                                .foregroundColor(ColorManager .grey4)
+                                                .font(.system(size: 17))
+//                                                .background(ColorManager .purple1)
+//                                                .glow(color: ColorManager.purple3, radius: 1)
+//                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                                .opacity(0.9)
+//                                                .cornerRadius(7)
+//                                                .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                        })
+                                        
+                                   
+                                      
+                                    }
+                                        
+                                }
+
+                                    }
+                                }
+                            }
+                             
+                }
+               
                 }
             }
         }
