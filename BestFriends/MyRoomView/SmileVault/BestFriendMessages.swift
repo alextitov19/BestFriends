@@ -67,30 +67,29 @@ struct BestFriendMessages: View {
                 if showItems {
                 if planets.count > 0 {
                     NavigationLink(destination: IndividualFriendMessages(friend: planets[0].user, atmosphere: planets[0].atmosphere), label: { planets[0] })
-                    .offset(x: showItems ? 150 : 0, y: showItems ? -200: 0)
+                    .offset(x: showItems ? 150 : 0, y: showItems ? -250: 0)
                 }
                                 
                 if planets.count > 1 {
                     NavigationLink(destination: IndividualFriendMessages(friend: planets[1].user, atmosphere: planets[1].atmosphere), label: { planets[1] })
-                        .offset(x: showItems ? -150 : 0, y: showItems ? 200: 0)
+                        .offset(x: showItems ? 75 : 0, y: showItems ? -250: 0)
                 }
                 
                 if planets.count > 2 {
                     NavigationLink(destination: IndividualFriendMessages(friend: planets[2].user, atmosphere: planets[2].atmosphere), label: { planets[2] })
-                        .offset(x: showItems ? 150 : 0, y: showItems ? 200: 0)
+                        .offset(x: showItems ? 0 : 0, y: showItems ? -250: 0)
                 }
                  
                     if planets.count > 3 {
                         NavigationLink(destination: IndividualFriendMessages(friend: planets[3].user, atmosphere: planets[3].atmosphere), label: { planets[3] })
-                            .offset(x: showItems ? -150 : 0, y: showItems ? -200: 0)
+                            .offset(x: showItems ? -75 : 0, y: showItems ? -250: 0)
                     }
                     
-                    
-                    
+               
                     
                 if planets.count > 4 {
                     NavigationLink(destination: IndividualFriendMessages(friend: planets[4].user, atmosphere: planets[4].atmosphere), label: { planets[4] })
-                        .offset(x: showItems ? 30 : 0, y: showItems ? -200: 0)
+                        .offset(x: showItems ? -150 : 0, y: showItems ? -250: 0)
                 }
                 }
                 
