@@ -272,7 +272,7 @@ struct MyRoomView: View {
                                                                       label: {
                                                           Text("PhotoPOP")
                                                               .fontWeight(.bold)
-                                                              .frame(width: 290, height: 50)
+                                                              .frame(width: 300, height: 50)
                                                               .foregroundColor(Color.black)
                                                               .font(.system(size: 17))
                                                               .background(Color.purple)
@@ -338,7 +338,7 @@ struct MyRoomView: View {
                                     
                                     Image("Group 56")
                                         .resizable()
-                                        .frame(width: 330, height: 180)
+                                        .frame(width: 335, height: 180)
                                         .cornerRadius(20)
                                 })
                             VStack {
@@ -451,7 +451,7 @@ struct MyRoomView: View {
                                 
                                 Image("Group 57")
                                     .resizable()
-                                    .frame(width: 330, height: 170)
+                                    .frame(width: 320, height: 170)
                                     .cornerRadius(20)
                             })
                         VStack {
