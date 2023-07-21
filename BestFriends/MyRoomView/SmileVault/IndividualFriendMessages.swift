@@ -30,12 +30,13 @@ struct IndividualFriendMessages: View {
             AdPlayerView(name: "sky2")
                           .ignoresSafeArea()
                            .blendMode(.screen)
-
-//
-//            AdPlayerView(name: "MyRoom5")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
             
+            Image("FHBackground")
+                .resizable()
+                .scaledToFill()
+//                .edgesIgnoringSafeArea(.all)
+                .blendMode(.screen)
+
             
             VStack {
                 
@@ -47,7 +48,7 @@ struct IndividualFriendMessages: View {
                         .frame(width: 50, height: 25)
                         .foregroundColor(.white)
                         .font(.system(size: 20))
-                        .background(Color .black)
+                        .background(ColorManager .grey2)
                         .cornerRadius(15)
                         .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                         .opacity(0.70)
