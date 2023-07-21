@@ -112,23 +112,23 @@ struct MyRoomView: View {
                     }
                     
                 
-                ZStack{
-                    Image("CHMainKelly")
-                        .resizable()
-                        .frame(width: 300, height: 200)
-                        .cornerRadius(20)
-                    
-                    HStack {
-                        Button(action: {}, label: {
-                            Text("Send")
-                        })
+                    ZStack{
+                        Image("CHMainKelly")
+                            .resizable()
+                            .frame(width: 300, height: 150)
+                            .cornerRadius(20)
                         
-                        Button(action: {}, label: {
-                            Text("Request")
-                        })
+                        HStack {
+                            Button(action: {}, label: {
+                                Text("Send")
+                            })
+                            
+                            Button(action: {}, label: {
+                                Text("Request")
+                            })
+                        }
                     }
-                }
-                
+                    
                 
                 
                 Spacer()
@@ -146,13 +146,13 @@ struct MyRoomView: View {
                                                                   label: {
                                                       Text("PhotoPOP")
                                                           .fontWeight(.bold)
-                                                          .frame(width: 340, height: 50)
+                                                          .frame(width: 350, height: 50)
                                                           .foregroundColor(Color.black)
                                                           .font(.system(size: 30))
                                                           .background(Color.purple)
                                                           .glow(color: ColorManager.purple1, radius: 1)
                                                           .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                                          .opacity(0.9)
+                                                          .opacity(0.7)
                                                           .cornerRadius(15)
                                                           .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                                   })
@@ -279,126 +279,101 @@ struct MyRoomView: View {
                     Spacer()
                         .frame(height: 60)
                     
-                    HStack {
-                        
-                        NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
-                                        label: {
-                            Text("SmileVault")
-                                .fontWeight(.light)
-                                .frame(width: 110, height: 40)
-                                .foregroundColor(ColorManager .grey1)
-                                .font(.system(size: 17))
-                                .background(ColorManager .grey4)
-                                .glow(color: ColorManager.purple3, radius: 1)
-                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                .opacity(0.9)
-                                .cornerRadius(15)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                        })
-                        VStack {
-                           
-                            
-                            NavigationLink( destination:  CH11(),
-                                            label: {
-                                Text("Friendships")
-                                    .fontWeight(.light)
-                                    .frame(width: 155, height: 40)
-                                    .foregroundColor(Color.white)
-                                    .font(.system(size: 22))
-                                    .background(Color.purple)
-                                    .glow(color: ColorManager.purple3, radius: 1)
-                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                    .opacity(0.9)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                            })
-                            
-                            
-                            NavigationLink( destination:  FH1(user: user, friends: friends, friendAtmospheres: friendAtmospheres),
-                                            label: {
-                                Text("Highlights")
-                                    .fontWeight(.light)
-                                    .frame(width: 100, height: 40)
-                                    .foregroundColor(ColorManager .grey4)
-                                    .font(.system(size: 17))
-                                    .background(ColorManager .grey2)
-                                    .glow(color: ColorManager.purple3, radius: 1)
-                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                    .opacity(0.9)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                            })
-                        }
-                        
-                        NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
-                                        label: {
-                            Text("Coupons")
-                                .fontWeight(.light)
-                                .frame(width: 110, height: 40)
-                                .foregroundColor(ColorManager .grey1)
-                                .font(.system(size: 17))
-                                .background(ColorManager .grey4)
-                                .glow(color: ColorManager.purple3, radius: 1)
-                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                .opacity(0.9)
-                                .cornerRadius(15)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                        })
-                        
-                    }
-                    Spacer()
-                        .frame(height: 60)
-//                    HStack {
-//
-//                        NavigationLink( destination:  HurtFeelings4(user: user, friends: friends, groups: groups),
-//                                        label: {
-//                            Text("Hurt Feelings")
-//                                .fontWeight(.light)
-//                                .frame(width: 110, height: 40)
-//                                .foregroundColor(ColorManager .grey1)
-//                                .font(.system(size: 17))
-//                                .background(ColorManager .grey4)
-//                                .glow(color: ColorManager.purple3, radius: 1)
-//                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-//                                .opacity(0.9)
-//                                .cornerRadius(15)
-//                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//                        })
-//
-//
-//                        Text("Friend Drama")
-//                            .fontWeight(.light)
-//                            .frame(width: 155, height: 40)
-//                            .foregroundColor(Color.white)
-//                            .font(.system(size: 22))
-//                            .background(Color.purple)
-//                            .opacity(0.99)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//
-//                        NavigationLink( destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
-//                                        label: {
-//                            Text("Huge Fight")
-//                                .fontWeight(.light)
-//                                .frame(width: 110, height: 40)
-//                                .foregroundColor(ColorManager .grey1)
-//                                .font(.system(size: 17))
-//                                .background(ColorManager .grey4)
-//                                .glow(color: ColorManager.purple3, radius: 1)
-//                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-//                                .opacity(0.9)
-//                                .cornerRadius(15)
-//                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//                        })
-//
-//                    }
                     
-                    Spacer()
-                        .frame(height: 20)
-//
+                    
+                    
+                    //                    ************************************
+                    
+                    VStack {
+                        
+                        NavigationLink(
+                            destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
+                            label: {
+                                
+                                Image("FriendshipsKelly")
+//                                    .resizable()
+//                                    .scaledToFit()
+                                  .frame(width: 350, height: 150)
+                                    .opacity(0.7)
+//                                    .foregroundColor(.white)
+                            })
+                        
+                        HStack {
+                            
+                            NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                                            label: {
+                                Text("SmileVault")
+                                    .fontWeight(.light)
+                                    .frame(width: 110, height: 40)
+                                    .foregroundColor(ColorManager .grey1)
+                                    .font(.system(size: 17))
+                                    .background(ColorManager .grey4)
+                                    .glow(color: ColorManager.purple3, radius: 1)
+                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                    .opacity(0.9)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                            })
+                            VStack {
+                                
+                                
+                                NavigationLink( destination:  CH11(),
+                                                label: {
+                                    Text("Friendships")
+                                        .fontWeight(.light)
+                                        .frame(width: 155, height: 40)
+                                        .foregroundColor(Color.white)
+                                        .font(.system(size: 22))
+                                        .background(Color.purple)
+                                        .glow(color: ColorManager.purple3, radius: 1)
+                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                        .opacity(0.9)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                })
+                                
+                                
+                                NavigationLink( destination:  FH1(user: user, friends: friends, friendAtmospheres: friendAtmospheres),
+                                                label: {
+                                    Text("Highlights")
+                                        .fontWeight(.light)
+                                        .frame(width: 100, height: 40)
+                                        .foregroundColor(ColorManager .grey4)
+                                        .font(.system(size: 17))
+                                        .background(ColorManager .grey2)
+                                        .glow(color: ColorManager.purple3, radius: 1)
+                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                        .opacity(0.9)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                })
+                            }
+                            
+                            NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
+                                            label: {
+                                Text("Coupons")
+                                    .fontWeight(.light)
+                                    .frame(width: 110, height: 40)
+                                    .foregroundColor(ColorManager .grey1)
+                                    .font(.system(size: 17))
+                                    .background(ColorManager .grey4)
+                                    .glow(color: ColorManager.purple3, radius: 1)
+                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                    .opacity(0.9)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                            })
+                            
+                        }
+                        Spacer()
+                            .frame(height: 60)
+                      
+                        
+                        Spacer()
+                            .frame(height: 20)
+                        //
+                    }
                 }
-               
                     
                     HStack {
                         
@@ -503,4 +478,49 @@ struct MyRoomView: View {
         }
     }
 
-
+//******************************* Hurt Feeling section - DO NOT DELETE ***
+//                    HStack {
+//
+//                        NavigationLink( destination:  HurtFeelings4(user: user, friends: friends, groups: groups),
+//                                        label: {
+//                            Text("Hurt Feelings")
+//                                .fontWeight(.light)
+//                                .frame(width: 110, height: 40)
+//                                .foregroundColor(ColorManager .grey1)
+//                                .font(.system(size: 17))
+//                                .background(ColorManager .grey4)
+//                                .glow(color: ColorManager.purple3, radius: 1)
+//                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                .opacity(0.9)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                        })
+//
+//
+//                        Text("Friend Drama")
+//                            .fontWeight(.light)
+//                            .frame(width: 155, height: 40)
+//                            .foregroundColor(Color.white)
+//                            .font(.system(size: 22))
+//                            .background(Color.purple)
+//                            .opacity(0.99)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//
+//                        NavigationLink( destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+//                                        label: {
+//                            Text("Huge Fight")
+//                                .fontWeight(.light)
+//                                .frame(width: 110, height: 40)
+//                                .foregroundColor(ColorManager .grey1)
+//                                .font(.system(size: 17))
+//                                .background(ColorManager .grey4)
+//                                .glow(color: ColorManager.purple3, radius: 1)
+//                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                .opacity(0.9)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                        })
+//
+//                    }
