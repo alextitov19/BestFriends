@@ -290,10 +290,10 @@ struct MyRoomView: View {
                             destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
                             label: {
                                 
-                                Image("FriendshipsKelly")
+                                Image("Group 53")
 //                                    .resizable()
 //                                    .scaledToFit()
-                                  .frame(width: 350, height: 150)
+                                 .frame(width: 350, height: 150)
                                     .opacity(0.7)
 //                                    .foregroundColor(.white)
                             })
