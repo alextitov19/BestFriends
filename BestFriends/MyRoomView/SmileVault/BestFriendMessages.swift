@@ -26,19 +26,29 @@ struct BestFriendMessages: View {
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-                .ignoresSafeArea()
+//            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
+//                .ignoresSafeArea()
+
+//
+//            Color.black
+//                .ignoresSafeArea()
+//
+//            AdPlayerView(name: "Galaxy2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .onAppear(perform: createPlanets)
+//                .opacity(0.9)
 
             
-            Color.black
-                .ignoresSafeArea()
-            
-            AdPlayerView(name: "Galaxy2")
-                .ignoresSafeArea()
+            Image("FHBackground")
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
                 .blendMode(.screen)
                 .onAppear(perform: createPlanets)
-                .opacity(0.9)
-
+            
+            
+            
             
             ZStack {
                 
@@ -86,7 +96,7 @@ struct BestFriendMessages: View {
                 
                 ZStack {
                    
-                    Image(systemName: "circle.fill")
+                    Image(systemName: "square.fill")
                         .resizable()
                         .foregroundColor(Color.purple)
                         .frame(width: 375, height: 375)
