@@ -104,7 +104,7 @@ struct MyRoomView: View {
                     
                 
                 Spacer()
-                                  .frame(height: 50)
+                    .frame(height: 50)
 
                               VStack {
                        
@@ -155,13 +155,7 @@ struct MyRoomView: View {
                                 .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                                                                   })
                                                       
-//                                                      Image(systemName: "info.circle")
-//                                                          .resizable()
-//                                                          .scaledToFit()
-//                                                          .frame(width: 37, height: 37)
-//                                                          .opacity(0.5)
-//                                                          .foregroundColor(.white)
-                                                  
+
                                               }
                                           }
                                       }
@@ -169,52 +163,84 @@ struct MyRoomView: View {
                                   
                               }
                     
-//
-//
-//
-//
-//
-//                Spacer()
-//                    .frame(height: 30)
-//
-//                VStack {
-//
-//                    HStack {
-//                        VStack {
-//                            NavigationLink( destination: INFOPreloadA(user: user, friends: friends),
-//                                            label: {
-//                                Text("?")
-//                                    .fontWeight(.light)
-//                                    .frame(width: 80, height: 40)
-//                                    .foregroundColor(ColorManager .grey1)
-//                                    .font(.system(size: 17))
-//                                    .background(ColorManager .grey4)
-//                                    .glow(color: ColorManager.purple3, radius: 1)
-//                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
-//                                    .opacity(0.9)
-//                                    .cornerRadius(15)
-//                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//                            })
-//
-//                            NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
-//                                            label: {
-//                                Text("PhotoPOP")
-//                                    .fontWeight(.light)
-//                                    .frame(width: 155, height: 40)
-//                                    .foregroundColor(Color.white)
-//                                    .font(.system(size: 22))
-//                                     .background(Color.purple)
-//                                    .glow(color: ColorManager.purple3, radius: 1)
-//                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
-//                                    .opacity(0.9)
-//                                    .cornerRadius(15)
-//                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//                            })
-//                        }
-//                    }
-//
-//
-//                }
+                
+                
+           
+//                ******************************************************
+                
+                
+                           HStack {
+                               
+                               
+                               VStack {
+                                   
+                                   Spacer ()
+                                   .frame(width: 30)
+                             
+                                       ZStack {
+                                           
+//                                           Image("CHMainKelly")
+//                                               .resizable()
+//                                               .scaledToFit()
+//                                               .frame(width: 340, height: 150)
+//                                               .opacity(0.5)
+//                                               .foregroundColor(.black)
+                               
+                                           
+                                           NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
+                                                           label: {
+                                               Image("CHMainKelly")
+//                                                   .fontWeight(.bold)
+                                                   .frame(width: 340, height: 50)
+//                                                   .foregroundColor(Color.black)
+//                                                   .font(.system(size: 30))
+//                                                   .background(Color.purple)
+                                                   .glow(color: ColorManager.purple1, radius: 1)
+                                                   .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                                   .opacity(0.9)
+                                                   .cornerRadius(15)
+                                                   .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                           })
+                                          
+                                           HStack {
+                                               Image(systemName: "camera")
+                                                   .resizable()
+                                                   .scaledToFit()
+                                                   .frame(width: 42, height: 42)
+                                                   .opacity(0.5)
+                                                   .foregroundColor(.black)
+                                               
+                                               Spacer ()
+                                                   .frame(width: 200)
+                                             
+                 NavigationLink( destination: INFOPreloadA(user: user, friends: friends),
+                     label: {
+                         Text("?")
+                         .fontWeight(.light)
+                         .frame(width: 40, height: 40)
+                         .foregroundColor(ColorManager .grey1)
+                         .font(.system(size: 17))
+                         .background(ColorManager .grey4)
+                         .glow(color: ColorManager.purple3, radius: 1)
+                         .shadow(color: .white, radius: 3, x: -4, y: 4)
+                         .opacity(0.9)
+                         .cornerRadius(15)
+                         .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                                                           })
+                                               
+
+                                       }
+                                   }
+                               }
+                           }
+                
+//                ****************************************************
+                
+                
+                
+                
+                
+                
                 Spacer()
                     .frame(height: 40)
                 
