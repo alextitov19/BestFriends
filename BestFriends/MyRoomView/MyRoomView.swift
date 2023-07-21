@@ -93,7 +93,7 @@ struct MyRoomView: View {
                     
                 }
                     Spacer ()
-                    .frame(width: 30)
+                        .frame(width: 30)
                     
                     
                         NavigationLink(
@@ -132,7 +132,7 @@ struct MyRoomView: View {
                 
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 20)
 
                               VStack {
                        
