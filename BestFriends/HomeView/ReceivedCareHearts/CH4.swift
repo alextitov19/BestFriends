@@ -243,30 +243,12 @@ struct CH4: View {
                     
                     
                     VStack {
-                     
-                      
-//                        Button(action: {
-//                            sendMessage()
-//                        }, label: {
-//                            Text("Send")
-//                                .fontWeight(.thin)
-//                                .frame(width: 150, height: 40)
-//        //                       .foregroundColor(.white)
-//                                .font(.system(size: 25))
-//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                .background(ColorManager.purple3)
-//                                .opacity(0.7)
-//                                .cornerRadius(10)
-//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        })
+  
                         
                             Spacer()
                                 .frame(height: 30)
                     }
-      
-
-                    
-                    
+          
                 VStack {
 
                     Text("(alert friend to look for the Song in Chat)")
@@ -392,30 +374,29 @@ struct CH4: View {
                             
                         })
                         
-                    
-                        Spacer()
+                        VStack {
+                            
+                            
+                            Button(action: {
+                                sessionManager.showLogin()
+                            },
+                                   label: {
+                                Image("home-alt2")
+                                    .frame(width: 50, height: 25)
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 20))
+                                    .background(ColorManager .grey3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                    .opacity(0.70)
+                                
+                            })
+                            
+               Spacer ()
      
                         }
-                        
-                        
-//                    VStack {
-                        Spacer()
-                            .frame(height: 10)
-//
-                        Button(action: {
-                            sessionManager.showLogin()
-                        },
-                               label: {
-                            Image("home-alt2")
-                                .frame(width: 50, height: 25)
-                                .foregroundColor(.white)
-                                .font(.system(size: 20))
-                                .background(ColorManager .grey3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                .opacity(0.70)
-
-                        })
+              
+                    }
                  
                 }
                 
