@@ -41,27 +41,30 @@ struct HugPushNotification: View {
             
             if shareTapped {
                 
-                
-                
-                            ColorManager.purple5
-                                .ignoresSafeArea()
-                                .onAppear()
 
                 
+                Image("FHBackground")
+                    .ignoresSafeArea()
+                    .scaledToFit()
+                    .opacity(0.5)
+
                 AdPlayerView(name: "dramaLights")
+                    .opacity(0.5)
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
             } else {
 
-                ColorManager.grey4
+                ColorManager.grey3
                     .opacity(0.99)
                     .ignoresSafeArea()
+         
 
                 Image("CareHeartBalloon 1")
                     .ignoresSafeArea()
                     .scaledToFit()
-                    .opacity(0.5)
+                    .opacity(0.6)
+       
                 
             }
             
@@ -78,34 +81,23 @@ struct HugPushNotification: View {
                             
                             ZStack {
                                 
-                                    Image("KissesHeart")
-                                        .resizable()
-                                        .frame(width: 400, height: 325)
-                                        .opacity(0.15)
-                                    
+                                 
                                     
                                 VStack {
-                                    Text("sending lightspeed")
+                                    Text("sending perfect")
                                         .font(.system(size: 30, weight: .light))
-                                        .foregroundColor(ColorManager .grey2)
+                                        .foregroundColor(ColorManager .grey1)
                                     
-                                    
-//                                    Text("at")
-//                                        .font(.system(size: 27, weight: .light))
-//                                        .foregroundColor(ColorManager .grey3)
-                                    
-                                    Text("Hugs")
+                                    Text("hugs")
                                         .font(.system(size: 55, weight: .light))
-                                        .foregroundColor(ColorManager .grey2)
+                                        .foregroundColor(ColorManager .grey1)
                                 }
                             }
                           
                             
                         }
                         
-    //                    Image("BalloonGuy")
-    //                        .resizable()
-    //                        .frame(width: 200, height: 200)
+ 
                     }
                 
                 
@@ -118,8 +110,10 @@ struct HugPushNotification: View {
 //                *********************************************************
          
                 VStack {
+                    Spacer()
+                        .frame(height: 7)
 
-                    Text("Send the joy of")
+                    Text("Getting your hug is like the joy of")
                         .font(.system(size: 23))
                         .fontWeight(.light)
                         .foregroundColor(ColorManager .grey1)
@@ -135,23 +129,39 @@ struct HugPushNotification: View {
                     Spacer()
                         .frame(height: 25)
                     
-                    Text("or the comfort of")
-                        .font(.system(size: 23))
-                        .fontWeight(.light)
-                        .foregroundColor(ColorManager .grey1)
-                        .multilineTextAlignment(.center)
-                    
-                    Text("hot chocolate on a blistery winter's day")
-                        .font(.system(size: 23))
-                        .fontWeight(.light)
-                        .foregroundColor(ColorManager .grey1)
-                        .multilineTextAlignment(.center)
+//                    Text("or the comfort of")
+//                        .font(.system(size: 23))
+//                        .fontWeight(.light)
+//                        .foregroundColor(ColorManager .grey1)
+//                        .multilineTextAlignment(.center)
+//
+//                    Text("hot chocolate on a blistery winter's day")
+//                        .font(.system(size: 23))
+//                        .fontWeight(.light)
+//                        .foregroundColor(ColorManager .grey1)
+//                        .multilineTextAlignment(.center)
                     
                     
                     VStack {
-
+                        
                         Spacer()
-                            .frame(height: 25)
+                            .frame(height: 10)
+                        
+                        Text("")
+                            .fontWeight(.light)
+                            .frame(width: 310, height: 310)
+                            .foregroundColor(ColorManager .grey4)
+                            .font(.system(size: 25))
+                            .background(ColorManager .orange3)
+//                            .opacity(0.7)
+                            .cornerRadius(10)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                        
+                        
+                        Spacer()
+                            .frame(height: 20)
+
+                     
                         
                         
                         HStack {
@@ -292,7 +302,7 @@ struct HugPushNotification: View {
                                          .frame(width: 50, height: 25)
                                          .foregroundColor(.white)
                                          .font(.system(size: 20))
-                                         .background(Color .black)
+                                         .background(ColorManager .grey3)
                                          .cornerRadius(15)
                                          .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                                          .opacity(0.70)
@@ -310,11 +320,7 @@ struct HugPushNotification: View {
                         
                         }
                     
-                    
-                    
-                
-                    Spacer()
-                        .frame(height: 100)
+              
                     
                 }
                 
@@ -353,7 +359,7 @@ struct HugPushNotification: View {
         var body: some View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
-                .frame(width: 90, height: 90)
+                .frame(width: 80, height: 80)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .font(.system(size: 8))
                 .background(color)

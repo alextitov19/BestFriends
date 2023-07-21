@@ -42,12 +42,7 @@ struct SendKisses: View {
             
             if shareTapped {
                 
-                
-//
-//                            ColorManager.purple5
-//                                .ignoresSafeArea()
-//                                .onAppear()
-                
+
                 
                 Image("FHBackground")
                     .ignoresSafeArea()
@@ -70,13 +65,7 @@ struct SendKisses: View {
                     .ignoresSafeArea()
                     .scaledToFit()
                     .opacity(0.6)
-                
-//                Image("FHBackground")
-//                    .ignoresSafeArea()
-//                    .scaledToFit()
-//                    .opacity(0.5)
-//
-                
+       
                 
             }
             
@@ -88,12 +77,7 @@ struct SendKisses: View {
                         
                         ZStack {
                             
-//                                Image("KissesHeart")
-//                                    .resizable()
-//                                    .frame(width: 400, height: 325)
-//                                    .opacity(0.15)
-                                
-                                
+
                             VStack {
                              
                                 
