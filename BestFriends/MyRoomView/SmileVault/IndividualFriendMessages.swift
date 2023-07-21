@@ -30,12 +30,12 @@ struct IndividualFriendMessages: View {
             AdPlayerView(name: "sky2")
                           .ignoresSafeArea()
                            .blendMode(.screen)
-            
-            Image("FHBackground")
-                .resizable()
-                .scaledToFill()
-//                .edgesIgnoringSafeArea(.all)
-                .blendMode(.screen)
+//            
+//            Image("FHBackground")
+//                .resizable()
+//                .scaledToFill()
+////                .edgesIgnoringSafeArea(.all)
+//                .blendMode(.screen)
 
             
             VStack {
