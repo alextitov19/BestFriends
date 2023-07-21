@@ -39,15 +39,14 @@ struct SaySomethingNice5: View {
         
         ZStack {
       
-
-            
             if shareTapped {
                 
+
                 
-                
-                            ColorManager.purple5
-                                .ignoresSafeArea()
-                                .onAppear()
+                Image("FHBackground")
+                    .ignoresSafeArea()
+                    .scaledToFit()
+                    .opacity(0.5)
 
                 AdPlayerView(name: "dramaLights")
                     .opacity(0.5)
@@ -56,14 +55,16 @@ struct SaySomethingNice5: View {
                 
             } else {
 
-                ColorManager.grey4
+                ColorManager.grey3
                     .opacity(0.99)
                     .ignoresSafeArea()
+         
 
                 Image("CareHeartBalloon 1")
                     .ignoresSafeArea()
                     .scaledToFit()
-                    .opacity(0.5)
+                    .opacity(0.6)
+       
                 
             }
             
@@ -78,33 +79,17 @@ struct SaySomethingNice5: View {
                             .frame(height: 10)
                         
                         ZStack {
-                            
-                                Image("KissesHeart")
-                                    .resizable()
-                                    .frame(width: 400, height: 325)
-                                    .opacity(0.15)
-                            
-//                                                Image(systemName: "heart.fill")
-//                                                                 .resizable()
-//                                                                 .foregroundColor(.red)
-//                                                                 .frame(width: 400, height: 325)
-//                                                                 .blur(radius: 2)
-//                            
-//                                                                 .shadow(color: .blue, radius: 65, x: 30, y: 50)
-//                                                                 .opacity(0.6)
-                                
-                                
+                          
                             VStack {
-                                
+                       
                                 Text("I am sending a ")
                                     .font(.system(size: 30, weight: .light))
-                                    .foregroundColor(ColorManager .grey2)
+                                    .foregroundColor(Color.white)
                                
-                                
-                                
+                               
                                 Text("Heart")
                                     .font(.system(size: 55, weight: .light))
-                                    .foregroundColor(ColorManager .grey2)
+                                    .foregroundColor(Color.white)
                             }
                         }
                       
@@ -117,18 +102,34 @@ struct SaySomethingNice5: View {
          
                 VStack {
 
+                 
+                    Spacer()
+                        .frame(height: 7)
+
                     Text("Because I am thinking of you")
-                                            .font(.system(size: 23))
-                
-                                            .foregroundColor(ColorManager .grey1)
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
+                        .font(.system(size: 23))
+                        .fontWeight(.light)
+                        .foregroundColor(Color.white)
+                        .multilineTextAlignment(.center)
+
 //        
                     VStack {
-
                         Spacer()
-                            .frame(height: 25)
+                            .frame(height: 10)
                         
+                        Text("")
+                            .fontWeight(.light)
+                            .frame(width: 310, height: 310)
+                            .foregroundColor(ColorManager .grey4)
+                            .font(.system(size: 25))
+                            .background(ColorManager .orange2)
+//                            .opacity(0.7)
+                            .cornerRadius(10)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                        
+                        
+                        Spacer()
+                            .frame(height: 20)
                         
                         HStack {
                       
@@ -260,7 +261,7 @@ struct SaySomethingNice5: View {
                                          .frame(width: 50, height: 25)
                                          .foregroundColor(.white)
                                          .font(.system(size: 20))
-                                         .background(Color .black)
+                                         .background(ColorManager .grey3)
                                          .cornerRadius(15)
                                          .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                                          .opacity(0.70)
@@ -268,25 +269,12 @@ struct SaySomethingNice5: View {
                                  })
                             
                             Spacer()
-                                .frame(height: 80)
+                                .frame(height: 40)
                             
-                            
-//                            Image("KissesHeart")
-//                                .resizable()
-//                                .frame(width: 200, height: 150)
-//                                .opacity(0.5)
-                   
-                        }
-                        
-                     
-                        
-                        }
-                    
-//
-//
-//
 
-                    
+                        }
+                        
+                    }        
                 }
                 
             }
@@ -324,7 +312,7 @@ struct SaySomethingNice5: View {
         var body: some View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
-                .frame(width: 90, height: 90)
+                .frame(width: 80, height: 80)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .font(.system(size: 8))
                 .background(color)

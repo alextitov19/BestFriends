@@ -86,11 +86,11 @@ struct HugPushNotification: View {
                                 VStack {
                                     Text("sending perfect")
                                         .font(.system(size: 30, weight: .light))
-                                        .foregroundColor(ColorManager .grey1)
+                                        .foregroundColor(Color.white)
                                     
                                     Text("hugs")
                                         .font(.system(size: 55, weight: .light))
-                                        .foregroundColor(ColorManager .grey1)
+                                        .foregroundColor(Color.white)
                                 }
                             }
                           
@@ -116,14 +116,14 @@ struct HugPushNotification: View {
                     Text("Getting your hug is like the joy of")
                         .font(.system(size: 23))
                         .fontWeight(.light)
-                        .foregroundColor(ColorManager .grey1)
+                        .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
                     
                     
                     Text("kicking through Autumn's leaves")
                         .font(.system(size: 23))
                         .fontWeight(.light)
-                        .foregroundColor(ColorManager .grey1)
+                        .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
 
                     Spacer()

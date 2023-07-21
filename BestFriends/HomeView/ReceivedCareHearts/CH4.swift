@@ -103,30 +103,33 @@ struct CH4: View {
         ZStack {
           
             
-            if shareTapped {
-                
-                
-                
-                            ColorManager.purple5
-                                .ignoresSafeArea()
-                                .onAppear()
+                  if shareTapped {
+                      
 
-                
-                AdPlayerView(name: "dramaLights")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                
-            } else {
-                
-                ColorManager.grey4
-                    .opacity(0.99)
-                    .ignoresSafeArea()
+                      
+                      Image("FHBackground")
+                          .ignoresSafeArea()
+                          .scaledToFit()
+                          .opacity(0.5)
 
-                Image("CareHeartBalloon 1")
-                    .ignoresSafeArea()
-                    .scaledToFit()
-                    .opacity(0.5)
-                
+                      AdPlayerView(name: "dramaLights")
+                          .opacity(0.5)
+                          .ignoresSafeArea()
+                          .blendMode(.screen)
+                      
+                  } else {
+
+                      ColorManager.grey4
+                          .opacity(0.99)
+                          .ignoresSafeArea()
+               
+
+                      Image("CareHeartBalloon 1")
+                          .ignoresSafeArea()
+                          .scaledToFit()
+                          .opacity(0.6)
+             
+                      
             }
             
         
@@ -148,13 +151,13 @@ struct CH4: View {
                                             Spacer()
                                                 .frame(height: 70)
                                             
-                                            Text("new ")
+                                            Text("sending")
                                                 .font(.system(size: 40, weight: .light))
-                                                .foregroundColor(ColorManager .grey2)
+                                                .foregroundColor(Color.white)
                                            
                                             Text("Music")
                                                 .font(.system(size: 55, weight: .light))
-                                                .foregroundColor(ColorManager .grey2)
+                                                .foregroundColor(Color.white)
                                          
                                             
                                         }
@@ -162,46 +165,38 @@ struct CH4: View {
                                         
 
                                 }
-                                 
-                                    Text("Did you just find a new song?")
-                                                            .font(.system(size: 23))
-                                
-                                                            .foregroundColor(ColorManager .grey1)
-                                                            .fontWeight(.light)
-                                                            .multilineTextAlignment(.center)
                                     
-                                    Text("Show it off to a friend")
-                                                            .font(.system(size: 23))
-
-                                                            .foregroundColor(ColorManager .grey1)
-                                                            .fontWeight(.light)
-                                                            .multilineTextAlignment(.center)
+                                       Spacer()
+                                           .frame(height: 7)
+//
+//
+//                                    Text("Did you just find a new song?")
+//                                        .font(.system(size: 23))
+//                                        .fontWeight(.light)
+//                                        .foregroundColor(Color.white)
+//                                        .multilineTextAlignment(.center)
+//
+//                                    Text("Show it off to a friend")
+//                                        .font(.system(size: 23))
+//                                        .fontWeight(.light)
+//                                        .foregroundColor(Color.white)
+//                                        .multilineTextAlignment(.center)
                                     
                                     Spacer()
                                         .frame(height: 15)
 
-                                    Text("Maybe a friend is having a difficult day,")
-                                                            .font(.system(size: 23))
-
-                                                            .foregroundColor(ColorManager .grey1)
-                                                            .fontWeight(.light)
-                                                            .multilineTextAlignment(.center)
-                                    Text("Send them that song that helps")
-                                                            .font(.system(size: 23))
-
-                                                            .foregroundColor(ColorManager .grey1)
-                                                            .fontWeight(.light)
-                                                            .multilineTextAlignment(.center)
+                                    Text("Is a friend having a tough day?")
+                                        .font(.system(size: 23))
+                                        .fontWeight(.light)
+                                        .foregroundColor(Color.white)
+                                        .multilineTextAlignment(.center)
                                     
-                                    Text("you on bad days")
-                                                            .font(.system(size: 23))
-
-                                                            .foregroundColor(ColorManager .grey1)
-                                                            .fontWeight(.light)
-                                                            .multilineTextAlignment(.center)
-                                    Spacer()
-                                        .frame(height: 7)
-                                    
+                                    Text("Send a song that helps you")
+                                        .font(.system(size: 23))
+                                        .fontWeight(.light)
+                                        .foregroundColor(Color.white)
+                                        .multilineTextAlignment(.center)
+                         
                                     
                                     ZStack(alignment: .bottom) {
                                             Image("")
@@ -278,7 +273,7 @@ struct CH4: View {
                         .font(.system(size: 17))
                         .italic()
                         .fontWeight(.light)
-                        .foregroundColor(ColorManager .grey1)
+                        .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
             
                     VStack {
@@ -415,7 +410,7 @@ struct CH4: View {
                                 .frame(width: 50, height: 25)
                                 .foregroundColor(.white)
                                 .font(.system(size: 20))
-                                .background(ColorManager .grey1)
+                                .background(ColorManager .grey3)
                                 .cornerRadius(15)
                                 .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                                 .opacity(0.70)
@@ -460,7 +455,7 @@ struct CH4: View {
         var body: some View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
-                .frame(width: 90, height: 90)
+                .frame(width: 80, height: 80)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .font(.system(size: 8))
                 .background(color)
