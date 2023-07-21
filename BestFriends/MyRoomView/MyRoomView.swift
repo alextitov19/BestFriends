@@ -35,6 +35,7 @@ struct MyRoomView: View {
                 HStack {
                     
                     
+                    
 //                    NavigationLink(
 //                        destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
 //                        label: {
@@ -102,6 +103,25 @@ struct MyRoomView: View {
                  
                     }
                     
+                
+                ZStack{
+                    Image("CHMainKelly")
+                        .resizable()
+                        .frame(width: 300, height: 200)
+                        .cornerRadius(20)
+                    
+                    HStack {
+                        Button(action: {}, label: {
+                            Text("Send")
+                        })
+                        
+                        Button(action: {}, label: {
+                            Text("Request")
+                        })
+                    }
+                }
+                
+                
                 
                 Spacer()
                     .frame(height: 50)
