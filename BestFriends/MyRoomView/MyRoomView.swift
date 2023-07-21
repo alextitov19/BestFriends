@@ -142,7 +142,7 @@ struct MyRoomView: View {
                             destination:  CH11(),
                             label: {
                                 
-                                Image("Group 50")
+                                Image("Group 55")
                                     .resizable()
                                     .frame(width: 330, height: 170)
                                     .cornerRadius(20)
@@ -274,7 +274,7 @@ struct MyRoomView: View {
                                                               .fontWeight(.bold)
                                                               .frame(width: 290, height: 50)
                                                               .foregroundColor(Color.black)
-                                                              .font(.system(size: 22))
+                                                              .font(.system(size: 17))
                                                               .background(Color.purple)
                                                               .glow(color: ColorManager.purple1, radius: 1)
                                                               .shadow(color: .white, radius: 3, x: -4, y: 4)
@@ -336,7 +336,7 @@ struct MyRoomView: View {
                                 destination:  CH11(),
                                 label: {
                                     
-                                    Image("Group 51")
+                                    Image("Group 56")
                                         .resizable()
                                         .frame(width: 330, height: 180)
                                         .cornerRadius(20)
@@ -449,7 +449,7 @@ struct MyRoomView: View {
                             destination:  CH11(),
                             label: {
                                 
-                                Image("Group 52")
+                                Image("Group 57")
                                     .resizable()
                                     .frame(width: 330, height: 170)
                                     .cornerRadius(20)
