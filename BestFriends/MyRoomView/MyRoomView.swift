@@ -27,16 +27,16 @@ struct MyRoomView: View {
 //                .scaledToFill()
 //                .edgesIgnoringSafeArea(.all)
             
-            Image("blueBackground")
-                .resizable()
-                .scaledToFill()
-                .edgesIgnoringSafeArea(.all)
-                .opacity(0.7)
+//            Image("blueBackground")
+//                .resizable()
+//                .scaledToFill()
+//                .edgesIgnoringSafeArea(.all)
+//                .opacity(0.5)
             
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                .opacity(0.99)
+                .opacity(0.5)
             
      
             VStack {
@@ -286,91 +286,103 @@ struct MyRoomView: View {
                     
                     VStack {
                         
-                        NavigationLink(
-                            destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
-                            label: {
-                                
-                                Image("Group 53")
-//                                    .resizable()
-//                                    .scaledToFit()
-                                 .frame(width: 350, height: 150)
-                                    .opacity(0.7)
-//                                    .foregroundColor(.white)
-                            })
-                        
-                        HStack {
-                            
-                            NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
-                                            label: {
-                                Text("SmileVault")
-                                    .fontWeight(.light)
-                                    .frame(width: 110, height: 40)
-                                    .foregroundColor(ColorManager .grey1)
-                                    .font(.system(size: 17))
-                                    .background(ColorManager .grey4)
-                                    .glow(color: ColorManager.purple3, radius: 1)
-                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                    .opacity(0.9)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                            })
+                        ZStack {
+                              
+                            NavigationLink(
+                                destination:  CH11(),
+                                label: {
+                                    
+                                    Image("Group 51")
+                                        .resizable()
+                                        .frame(width: 330, height: 170)
+                                        .cornerRadius(20)
+                                })
                             VStack {
                                 
-                                
-                                NavigationLink( destination:  CH11(),
-                                                label: {
-                                    Text("Friendships")
-                                        .fontWeight(.light)
-                                        .frame(width: 155, height: 40)
-                                        .foregroundColor(Color.white)
-                                        .font(.system(size: 22))
-                                        .background(Color.purple)
-                                        .glow(color: ColorManager.purple3, radius: 1)
-                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                        .opacity(0.9)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                })
-                                
-                                
-                                NavigationLink( destination:  FH1(user: user, friends: friends, friendAtmospheres: friendAtmospheres),
-                                                label: {
-                                    Text("Highlights")
-                                        .fontWeight(.light)
-                                        .frame(width: 100, height: 40)
-                                        .foregroundColor(ColorManager .grey4)
-                                        .font(.system(size: 17))
-                                        .background(ColorManager .grey2)
-                                        .glow(color: ColorManager.purple3, radius: 1)
-                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                        .opacity(0.9)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                })
+                                VStack {
+                                    Spacer()
+                                        .frame(height: 10)
+                                    
+                                    HStack {
+                                        
+                                        NavigationLink( destination: CH11(),
+                                                        label: {
+                                            Text("Check-In")
+                                                .fontWeight(.regular)
+                                                .frame(width: 110, height: 40)
+                                                .foregroundColor(ColorManager .purple5)
+                                                .font(.system(size: 17))
+                                                .background(ColorManager .purple1)
+                                                .glow(color: ColorManager.purple3, radius: 1)
+                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                                .opacity(0.9)
+                                                .cornerRadius(15)
+                                                .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                        })
+                                        
+                                        NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                                                        label: {
+                                            Text("SmileVault")
+                                                .fontWeight(.regular)
+                                                .frame(width: 110, height: 40)
+                                                .foregroundColor(ColorManager .purple5)
+                                                .font(.system(size: 17))
+                                                .background(ColorManager .purple1)
+                                                .glow(color: ColorManager.purple3, radius: 1)
+                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                                .opacity(0.9)
+                                                .cornerRadius(15)
+                                                .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                        })
+                                        
+                                    }
+                                        VStack {
+                                            
+                            HStack {
+                                            
+                                            NavigationLink( destination:  FH1(user: user, friends: friends, friendAtmospheres: friendAtmospheres),
+                                                            label: {
+                                                Text("Highlights")
+                                                    .fontWeight(.regular)
+                                                    .frame(width: 110, height: 40)
+                                                    .foregroundColor(ColorManager .purple5)
+                                                    .font(.system(size: 17))
+                                                    .background(ColorManager .purple1)
+                                                    .glow(color: ColorManager.purple3, radius: 1)
+                                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                                    .opacity(0.9)
+                                                    .cornerRadius(15)
+                                                    .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                            })
+                                        }
+                                        
+                                            VStack {
+                                                
+                                                NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
+                                                                label: {
+                                                    Text("Coupons")
+                                                        .fontWeight(.regular)
+                                                        .frame(width: 110, height: 40)
+                                                        .foregroundColor(ColorManager .purple5)
+                                                        .font(.system(size: 17))
+                                                        .background(ColorManager .purple1)
+                                                        .glow(color: ColorManager.purple3, radius: 1)
+                                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                                        .opacity(0.9)
+                                                        .cornerRadius(15)
+                                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                                })
+                                            }
+                                        }
+                                    }
+                                }
                             }
+                        
                             
-                            NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
-                                            label: {
-                                Text("Coupons")
-                                    .fontWeight(.light)
-                                    .frame(width: 110, height: 40)
-                                    .foregroundColor(ColorManager .grey1)
-                                    .font(.system(size: 17))
-                                    .background(ColorManager .grey4)
-                                    .glow(color: ColorManager.purple3, radius: 1)
-                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                    .opacity(0.9)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                            })
                             
-                        }
                         Spacer()
                             .frame(height: 60)
                       
-                        
-                        Spacer()
-                            .frame(height: 20)
                         //
                     }
                 }
