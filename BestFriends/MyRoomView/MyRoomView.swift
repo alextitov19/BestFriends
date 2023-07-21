@@ -27,11 +27,11 @@ struct MyRoomView: View {
 //                .scaledToFill()
 //                .edgesIgnoringSafeArea(.all)
             
-//            Image("blueBackground")
-//                .resizable()
-//                .scaledToFill()
-//                .edgesIgnoringSafeArea(.all)
-//                .opacity(0.5)
+            Image("blueBackground")
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
+                .opacity(0.5)
             
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
@@ -129,69 +129,8 @@ struct MyRoomView: View {
                         }
                     }
                     
-                
-                
-                Spacer()
-                    .frame(height: 20)
-
-                              VStack {
-                       
-                                  HStack {
-                                      VStack {
-                                    
-                                              ZStack {
-                                      
-                                                  
-                                                  NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
-                                                                  label: {
-                                                      Text("PhotoPOP")
-                                                          .fontWeight(.bold)
-                                                          .frame(width: 350, height: 50)
-                                                          .foregroundColor(Color.black)
-                                                          .font(.system(size: 30))
-                                                          .background(Color.purple)
-                                                          .glow(color: ColorManager.purple1, radius: 1)
-                                                          .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                                          .opacity(0.7)
-                                                          .cornerRadius(15)
-                                                          .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                                  })
-                                                 
-                                                  HStack {
-                                                      Image(systemName: "camera")
-                                                          .resizable()
-                                                          .scaledToFit()
-                                                          .frame(width: 42, height: 42)
-                                                          .opacity(0.5)
-                                                          .foregroundColor(.black)
-                                                      
-                                                      Spacer ()
-                                                          .frame(width: 200)
-                                                    
-                        NavigationLink( destination: INFOPreloadA(user: user, friends: friends),
-                            label: {
-                                Text("?")
-                                .fontWeight(.light)
-                                .frame(width: 40, height: 40)
-                                .foregroundColor(ColorManager .grey1)
-                                .font(.system(size: 17))
-                                .background(ColorManager .grey4)
-                                .glow(color: ColorManager.purple3, radius: 1)
-                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                .opacity(0.9)
-                                .cornerRadius(15)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                                                                  })
-                                                      
-
-                                              }
-                                          }
-                                      }
-                                  }
-                                  
-                              }
-                    
-         
+//           **********************************************
+           
 //                ****************************************************
                 
                 
@@ -276,8 +215,73 @@ struct MyRoomView: View {
                 }
 
                 VStack {
+                
+                    
+//                    ******************************************
+                    
+                    
+                    
                     Spacer()
-                        .frame(height: 60)
+                        .frame(height: 20)
+
+                                  VStack {
+                           
+                                      HStack {
+                                          VStack {
+                                        
+                                                  ZStack {
+                                          
+                                                      
+                                                      NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
+                                                                      label: {
+                                                          Text("PhotoPOP")
+                                                              .fontWeight(.bold)
+                                                              .frame(width: 290, height: 50)
+                                                              .foregroundColor(Color.black)
+                                                              .font(.system(size: 25))
+                                                              .background(Color.purple)
+                                                              .glow(color: ColorManager.purple1, radius: 1)
+                                                              .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                                              .opacity(0.9)
+                                                              .cornerRadius(15)
+                                                              .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                                      })
+                                                     
+                                                      HStack {
+                                                          Image(systemName: "camera")
+                                                              .resizable()
+                                                              .scaledToFit()
+                                                              .frame(width: 37, height: 37)
+                                                              .opacity(0.5)
+                                                              .foregroundColor(.black)
+                                                          
+                                                          Spacer ()
+                                                              .frame(width: 200)
+                                                        
+                            NavigationLink( destination: INFOPreloadA(user: user, friends: friends),
+                                label: {
+                                    Text("?")
+                                    .fontWeight(.light)
+                                    .frame(width: 37, height: 37)
+                                    .foregroundColor(ColorManager .grey1)
+                                    .font(.system(size: 17))
+                                    .background(ColorManager .grey4)
+                                    .glow(color: ColorManager.purple3, radius: 1)
+                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                    .opacity(0.9)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                                                                      })
+                                                          
+
+                                                  }
+                                              }
+                                          }
+                                      }
+                                      
+                                  }
+                        
+             
                     
                     
                     
@@ -304,41 +308,41 @@ struct MyRoomView: View {
                                         .frame(height: 10)
                                     
                                     HStack {
-                                        
-                                        NavigationLink( destination: CH11(),
-                                                        label: {
-                                            Text("Check-In")
-                                                .fontWeight(.regular)
-                                                .frame(width: 110, height: 40)
-                                                .foregroundColor(ColorManager .purple5)
-                                                .font(.system(size: 17))
-                                                .background(ColorManager .purple1)
-                                                .glow(color: ColorManager.purple3, radius: 1)
-                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                                .opacity(0.9)
-                                                .cornerRadius(15)
-                                                .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-                                        })
-                                        
-                                        NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
-                                                        label: {
-                                            Text("SmileVault")
-                                                .fontWeight(.regular)
-                                                .frame(width: 110, height: 40)
-                                                .foregroundColor(ColorManager .purple5)
-                                                .font(.system(size: 17))
-                                                .background(ColorManager .purple1)
-                                                .glow(color: ColorManager.purple3, radius: 1)
-                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                                .opacity(0.9)
-                                                .cornerRadius(15)
-                                                .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-                                        })
-                                        
-                                    }
+                                       
                                         VStack {
                                             
-                            HStack {
+                                            NavigationLink( destination: CH11(),
+                                                            label: {
+                                                Text("Check-In")
+                                                    .fontWeight(.regular)
+                                                    .frame(width: 110, height: 40)
+                                                    .foregroundColor(ColorManager .purple5)
+                                                    .font(.system(size: 17))
+                                                    .background(ColorManager .purple1)
+                                                    .glow(color: ColorManager.purple3, radius: 1)
+                                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                                    .opacity(0.9)
+                                                    .cornerRadius(15)
+                                                    .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                            })
+                                            NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
+                                                            label: {
+                                                Text("Coupons")
+                                                    .fontWeight(.regular)
+                                                    .frame(width: 110, height: 40)
+                                                    .foregroundColor(ColorManager .purple5)
+                                                    .font(.system(size: 17))
+                                                    .background(ColorManager .purple1)
+                                                    .glow(color: ColorManager.purple3, radius: 1)
+                                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                                    .opacity(0.9)
+                                                    .cornerRadius(15)
+                                                    .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                            })
+                                            
+                                        }
+                                       
+                                        VStack {
                                             
                                             NavigationLink( destination:  FH1(user: user, friends: friends, friendAtmospheres: friendAtmospheres),
                                                             label: {
@@ -354,29 +358,41 @@ struct MyRoomView: View {
                                                     .cornerRadius(15)
                                                     .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
                                             })
+                                            
+                                            NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                                                            label: {
+                                                Text("SmileVault")
+                                                    .fontWeight(.regular)
+                                                    .frame(width: 110, height: 40)
+                                                    .foregroundColor(ColorManager .purple5)
+                                                    .font(.system(size: 17))
+                                                    .background(ColorManager .purple1)
+                                                    .glow(color: ColorManager.purple3, radius: 1)
+                                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                                    .opacity(0.9)
+                                                    .cornerRadius(15)
+                                                    .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                            })
+                                            
+                                            
+                                        }
+                                            
+                                    }
+//                                        VStack {
+                                            
+                            HStack {
+                                            
+                                       
                                         }
                                         
                                             VStack {
                                                 
-                                                NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
-                                                                label: {
-                                                    Text("Coupons")
-                                                        .fontWeight(.regular)
-                                                        .frame(width: 110, height: 40)
-                                                        .foregroundColor(ColorManager .purple5)
-                                                        .font(.system(size: 17))
-                                                        .background(ColorManager .purple1)
-                                                        .glow(color: ColorManager.purple3, radius: 1)
-                                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                                        .opacity(0.9)
-                                                        .cornerRadius(15)
-                                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-                                                })
+                                            
                                             }
                                         }
                                     }
                                 }
-                            }
+                            
                         
                             
                             
