@@ -27,11 +27,16 @@ struct MyRoomView: View {
 //                .scaledToFill()
 //                .edgesIgnoringSafeArea(.all)
             
-            Image("blueBackground")
-                .resizable()
+//            Image("blueBackground")
+//                .resizable()
+//                .scaledToFill()
+//                .edgesIgnoringSafeArea(.all)
+//                .opacity(0.2)
+            
+            ColorManager .purple1
+                .ignoresSafeArea()
                 .scaledToFill()
-                .edgesIgnoringSafeArea(.all)
-                .opacity(0.5)
+                .opacity(0.65)
             
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
@@ -146,6 +151,7 @@ struct MyRoomView: View {
                                     .resizable()
                                     .frame(width: 330, height: 170)
                                     .cornerRadius(20)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                             })
                         VStack {
                             
@@ -187,9 +193,9 @@ struct MyRoomView: View {
                                             Text("?")
                                                 .fontWeight(.light)
                                                 .frame(width: 37, height: 37)
-                                                .foregroundColor(ColorManager .grey1)
+                                                .foregroundColor(ColorManager .grey4)
                                                 .font(.system(size: 17))
-                                                .background(ColorManager .grey4)
+                                                .background(ColorManager .grey2)
                                                 .glow(color: ColorManager.purple3, radius: 1)
                                                 .shadow(color: .white, radius: 3, x: -4, y: 4)
                                                 .opacity(0.9)
@@ -290,6 +296,7 @@ struct MyRoomView: View {
                                                               .frame(width: 37, height: 37)
                                                               .opacity(0.5)
                                                               .foregroundColor(.black)
+                                                              .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                                           
                                                           Spacer ()
                                                               .frame(width: 150)
@@ -299,9 +306,9 @@ struct MyRoomView: View {
                                 Text("?")
                                     .fontWeight(.light)
                                     .frame(width: 37, height: 37)
-                                    .foregroundColor(ColorManager .grey1)
+                                    .foregroundColor(ColorManager .grey4)
                                     .font(.system(size: 17))
-                                    .background(ColorManager .grey4)
+                                    .background(ColorManager .grey2)
                                     .glow(color: ColorManager.purple3, radius: 1)
                                     .shadow(color: .white, radius: 3, x: -4, y: 4)
                                     .opacity(0.9)
@@ -340,6 +347,7 @@ struct MyRoomView: View {
                                         .resizable()
                                         .frame(width: 335, height: 180)
                                         .cornerRadius(20)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                 })
                             VStack {
                                 
@@ -453,6 +461,7 @@ struct MyRoomView: View {
                                     .resizable()
                                     .frame(width: 320, height: 170)
                                     .cornerRadius(20)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                             })
                         VStack {
                             

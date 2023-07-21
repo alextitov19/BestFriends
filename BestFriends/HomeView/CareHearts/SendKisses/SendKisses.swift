@@ -43,10 +43,16 @@ struct SendKisses: View {
             if shareTapped {
                 
                 
+//
+//                            ColorManager.purple5
+//                                .ignoresSafeArea()
+//                                .onAppear()
                 
-                            ColorManager.purple5
-                                .ignoresSafeArea()
-                                .onAppear()
+                
+                Image("FHBackground")
+                    .ignoresSafeArea()
+                    .scaledToFit()
+                    .opacity(0.5)
 
                 AdPlayerView(name: "dramaLights")
                     .opacity(0.5)
@@ -55,43 +61,45 @@ struct SendKisses: View {
                 
             } else {
 
-                ColorManager.grey4
+                ColorManager.grey3
                     .opacity(0.99)
                     .ignoresSafeArea()
+         
 
                 Image("CareHeartBalloon 1")
                     .ignoresSafeArea()
                     .scaledToFit()
-                    .opacity(0.5)
+                    .opacity(0.6)
+                
+//                Image("FHBackground")
+//                    .ignoresSafeArea()
+//                    .scaledToFit()
+//                    .opacity(0.5)
+//
+                
+                
             }
             
             VStack{
                 
                 HStack {
                     VStack {
-                   
-                        
-                        
-                        Spacer()
-                            .frame(height: 10)
+               
                         
                         ZStack {
                             
-                                Image("KissesHeart")
-                                    .resizable()
-                                    .frame(width: 400, height: 325)
-                                    .opacity(0.15)
+//                                Image("KissesHeart")
+//                                    .resizable()
+//                                    .frame(width: 400, height: 325)
+//                                    .opacity(0.15)
                                 
                                 
                             VStack {
-                                Text("blowing")
-                                    .font(.system(size: 30, weight: .light))
-                                    .foregroundColor(ColorManager .grey2)
+                             
                                 
-                                
-                                Text("kisses")
+                                Text("blowing kisses")
                                     .font(.system(size: 55, weight: .light))
-                                    .foregroundColor(ColorManager .grey2)
+                                    .foregroundColor(ColorManager .grey1)
                             }
                         }
                       
@@ -103,31 +111,47 @@ struct SendKisses: View {
              
          
                 VStack {
+                    
+                    Spacer()
+                        .frame(height: 7)
 
                     Text("Jump up on a chair,")
                                             .font(.system(size: 23))
                 
-                                            .foregroundColor(ColorManager .grey1)
+                                            .foregroundColor(Color.white)
                                             .fontWeight(.light)
                                             .multilineTextAlignment(.center)
-                    Text("then blow your kiss high up into ")
+                    Text("and blow your kiss towards you friend")
                                             .font(.system(size: 23))
                 
-                                            .foregroundColor(ColorManager .grey1)
+                                            .foregroundColor(Color.white)
                                             .fontWeight(.light)
                                             .multilineTextAlignment(.center)
                     
-                    Text("the atmosphere towards your friend")
-                                            .font(.system(size: 23))
-                
-                                            .foregroundColor(ColorManager .grey1)
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
+//                    Text("towards your friend")
+//                                            .font(.system(size: 23))
+//
+//                                            .foregroundColor(ColorManager .grey1)
+//                                            .fontWeight(.light)
+//                                            .multilineTextAlignment(.center)
                     VStack {
 
                         Spacer()
                             .frame(height: 25)
                         
+                        Text("")
+                            .fontWeight(.light)
+                            .frame(width: 310, height: 310)
+                            .foregroundColor(ColorManager .grey4)
+                            .font(.system(size: 25))
+                            .background(ColorManager .pmbc_pink)
+//                            .opacity(0.7)
+                            .cornerRadius(10)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                        
+                        
+                        Spacer()
+                            .frame(height: 20)
                         
                         HStack {
                       
@@ -259,7 +283,7 @@ struct SendKisses: View {
                                          .frame(width: 50, height: 25)
                                          .foregroundColor(.white)
                                          .font(.system(size: 20))
-                                         .background(Color .black)
+                                         .background(ColorManager .grey3)
                                          .cornerRadius(15)
                                          .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                                          .opacity(0.70)
@@ -267,7 +291,7 @@ struct SendKisses: View {
                                  })
                             
                             Spacer()
-                                .frame(height: 80)
+                                .frame(height: 40)
                             
                             
 //                            Image("KissesHeart")
@@ -323,7 +347,7 @@ struct SendKisses: View {
         var body: some View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
-                .frame(width: 90, height: 90)
+                .frame(width: 80, height: 80)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .font(.system(size: 8))
                 .background(color)

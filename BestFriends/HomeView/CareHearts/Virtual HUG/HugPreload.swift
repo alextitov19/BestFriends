@@ -27,14 +27,15 @@ struct HugPreload: View {
         ZStack {
 
             
-            ColorManager.grey4
+            ColorManager.grey3
                 .opacity(0.99)
                 .ignoresSafeArea()
+     
 
             Image("CareHeartBalloon 1")
                 .ignoresSafeArea()
                 .scaledToFit()
-                .opacity(0.5)
+                .opacity(0.6)
 
 
 
