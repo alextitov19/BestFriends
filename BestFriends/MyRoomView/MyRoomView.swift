@@ -147,7 +147,7 @@ struct MyRoomView: View {
                             destination:  CH11(),
                             label: {
                                 
-                                Image("Group 55")
+                                Image("Group 58")
                                     .resizable()
                                     .frame(width: 330, height: 170)
                                     .cornerRadius(20)
@@ -206,7 +206,7 @@ struct MyRoomView: View {
                                         
                                         NavigationLink( destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                                         label: {
-                                            Text("Request")
+                                            Text("My 'Vibe'")
                                                 .fontWeight(.regular)
                                                 .frame(width: 90, height: 35)
                                                 .foregroundColor(ColorManager .purple5)
@@ -454,7 +454,7 @@ struct MyRoomView: View {
                     ZStack {
                           
                         NavigationLink(
-                            destination:  CH11(),
+                            destination:  JournalsView(friends: friends),
                             label: {
                                 
                                 Image("Group 57")
@@ -475,7 +475,7 @@ struct MyRoomView: View {
                                         
                                         NavigationLink( destination: JournalsView(friends: friends),
                                                         label: {
-                                            Text("Personal")
+                                            Text("My Crush")
                                                 .fontWeight(.regular)
                                                 .frame(width: 120, height: 35)
                                                 .foregroundColor(ColorManager .purple5)
@@ -497,10 +497,12 @@ struct MyRoomView: View {
                                         .frame(width: 37)
                                     
                                     VStack {
+//                                        JournalView(user: user)
                                         
-                                        NavigationLink( destination:  CH1(),
+//
+                                        NavigationLink( destination:   CH1(),
                                                         label: {
-                                            Text("My Crush")
+                                            Text("Share")
                                                 .fontWeight(.regular)
                                                 .frame(width: 120, height: 35)
                                                 .foregroundColor(ColorManager .grey4)

@@ -27,8 +27,8 @@ struct CreateNewJournalView: View {
             ColorManager.purple2
             
             VStack{
-                Text("New Journal Entry")
-                    .font(.system(size: 24, weight: .light))
+                Text("New Crush Entry")
+                    .font(.system(size: 35, weight: .regular))
                     .foregroundColor(ColorManager.purple5)
                 
                 TextEditor(text: $text)
@@ -43,7 +43,7 @@ struct CreateNewJournalView: View {
                         .renderingMode(.template)
                         .resizable()
                         .foregroundColor(.blue)
-                        .frame(width: 30, height: 30)
+                        .frame(width: 40, height: 40)
                     
                     Slider(value: $mood, in: -1...1)
                     
@@ -51,7 +51,7 @@ struct CreateNewJournalView: View {
                         .renderingMode(.template)
                         .resizable()
                         .foregroundColor(.yellow)
-                        .frame(width: 30, height: 30)
+                        .frame(width: 40, height: 40)
                 }
                 .padding()
                 
@@ -71,18 +71,20 @@ struct CreateNewJournalView: View {
                 }
                 
                 HStack {
-                    Image(systemName: "photo")
+                    Image(systemName: "person.crop.artframe")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 40, height: 40)
+                        .frame(width: 45, height: 45)
                         .foregroundColor(ColorManager.purple5)
                         .onTapGesture { showsAlert = true }
                         .confirmationDialog("Send an image", isPresented: $showsAlert, titleVisibility: .visible) {
-                            Button("Photo Library", action: {
+                            Button("camera", action: {
                                 pickerSourceType = .photoLibrary
                                 isShowPhotoLibrary = !isShowPhotoLibrary
                             })
-                            Button("Camera", action: {
+                            
+//                            camera
+                            Button("camera", action: {
                                 pickerSourceType = .camera
                                 isShowPhotoLibrary = !isShowPhotoLibrary
                             })
@@ -98,22 +100,22 @@ struct CreateNewJournalView: View {
                         createTapped()
                     }, label: {
                         ZStack {
-                            ColorManager.purple3
+                            ColorManager.pmbc_green
                             
-                            Text("Create")
-                                .font(.system(size: 18))
-                                .foregroundColor(ColorManager.purple5)
+                            Text("Post")
+                                .font(.system(size: 30))
+                                .foregroundColor(Color.white)
                         }
                         .frame(width: 100, height: 50)
                         .cornerRadius(15)
                     })
                     .padding()
-                    
-                    Image(systemName: weather)
+                  
+                    Image(systemName: "thermometer.sun")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 40, height: 40)
-                        .foregroundColor(ColorManager.purple5)
+                        .frame(width: 50, height: 50)
+                        .foregroundColor(Color.red)
                         .onTapGesture {
                             isWeatherPresented = true
                         }
@@ -177,53 +179,53 @@ struct CreateNewJournalView: View {
                 ColorManager.purple3
                 
                 VStack {
-                    Image(systemName: "sun.max")
+                    Image(systemName: "heart")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 30, height: 30)
-                        .foregroundColor(ColorManager.purple5)
+                        .foregroundColor(Color.red)
                         .onTapGesture {
-                            weather = "sun.max"
+                            weather = "heart"
                             isWeatherSelectorPresented = false
                         }
                     
-                    Image(systemName: "cloud")
+                    Image(systemName: "face.smiling.inverse")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 30, height: 30)
-                        .foregroundColor(ColorManager.purple5)
+                        .foregroundColor(Color.yellow)
                         .onTapGesture {
-                            weather = "cloud"
+                            weather = "face.smiling.inverse"
                             isWeatherSelectorPresented = false
                         }
                     
-                    Image(systemName: "cloud.sun")
+                    Image(systemName: "person.icloud.fill")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 30, height: 30)
-                        .foregroundColor(ColorManager.purple5)
+                        .foregroundColor(ColorManager .purple5)
                         .onTapGesture {
-                            weather = "cloud.sun"
+                            weather = "person.icloud.fill"
                             isWeatherSelectorPresented = false
                         }
                     
-                    Image(systemName: "cloud.drizzle")
+                    Image(systemName: "person.2.slash.fill")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 30, height: 30)
-                        .foregroundColor(ColorManager.purple5)
+                        .foregroundColor(ColorManager.grey4)
                         .onTapGesture {
-                            weather = "cloud.drizzle"
+                            weather = "person.2.slash.fill"
                             isWeatherSelectorPresented = false
                         }
                     
-                    Image(systemName: "cloud.snow")
+                    Image(systemName: "")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 30, height: 30)
                         .foregroundColor(ColorManager.purple5)
                         .onTapGesture {
-                            weather = "cloud.snow"
+                            weather = ""
                             isWeatherSelectorPresented = false
                         }
                 }

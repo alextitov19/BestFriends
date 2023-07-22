@@ -37,15 +37,28 @@ struct JournalsView: View {
 //                .blendMode(.screen)
 //                .opacity(0.9)
             
-            Color.purple
-                .opacity(0.4)
+            ColorManager .purple3
+                .opacity(0.6)
                 .ignoresSafeArea()
                 .onAppear { loadData() }
             
-            AdPlayerView(name: "sky2")
+            
+//            Image("Hollywood")
+//                .opacity(0.4)
+//                .ignoresSafeArea()
+//                .onAppear { loadData() }
+            
+            
+//                .resizable()
+//                .scaledToFill()
+//
+//                .blendMode(.screen)
+
+            
+            AdPlayerView(name: "dramaLights")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                .opacity(0.9)
+                .opacity(0.4)
             
             VStack {
                 Text(selectedCategory)
@@ -191,17 +204,11 @@ struct JournalsView: View {
         var body: some View {
             ZStack {
                 ColorManager.purple3
-                
-                
-                Text("Create new Journal post")
-                    .foregroundColor(ColorManager.purple5)
+            
+                Text("Update My Crush")
+                    .foregroundColor(Color.white)
                     .font(.headline)
-//                Image(systemName: "plus")
-//                    .resizable()
-//                    .scaledToFit()
-//                    .frame(width: 120, height: 30)
-//                    .foregroundColor(ColorManager.purple7)
-//                    .opacity(0.7)
+
             }
             .frame(width: 230, height: 50)
             .cornerRadius(15)
@@ -213,14 +220,24 @@ struct JournalsView: View {
         var body: some View {
             ZStack {
                 ColorManager.purple3
-                
-                Text("Monthlhy 'Vibe' Chronicle")
-                    .foregroundColor(ColorManager.purple5)
+            
+                Text("My Crush 'Vibe'")
+                    .foregroundColor(Color.white)
                     .font(.headline)
+
             }
             .frame(width: 230, height: 50)
             .cornerRadius(15)
             .opacity(0.7)
+                
+            }
+           
+            
+//            .fontWeight(.regular)
+//            .frame(width: 120, height: 35)
+           
+            
+           
         }
     }
         
@@ -259,4 +276,4 @@ struct JournalsView: View {
         }
     }
     
-}
+
