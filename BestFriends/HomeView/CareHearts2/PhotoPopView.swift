@@ -54,32 +54,34 @@ struct PhotoPopView: View {
             
             VStack {
                 
-//
-//
-//                Button(action: {
-//                    sessionManager.showLogin()
-//                },
-//                    label: {
-//                    Image("home-alt2")
-//                        .frame(width: 50, height: 25)
-//                        .foregroundColor(.white)
-//                        .font(.system(size: 20))
-//                        .background(ColorManager .grey4)
-//                        .cornerRadius(15)
-//                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                        .opacity(0.70)
-//                    
-//                })
+                Button(action: {
+                    sessionManager.showLogin()
+                },
+                    label: {
+                    Image("home-alt2")
+                        .frame(width: 50, height: 25)
+                        .foregroundColor(.white)
+                        .font(.system(size: 20))
+                        .background(ColorManager .grey3)
+                        .cornerRadius(15)
+                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                        .opacity(0.70)
+                    
+                })
+                
+                
                 
                 Text("PhotoPOP")
                     .foregroundColor(ColorManager .grey2)
-                    .font(.system(size: 25, weight: .light))
+                    .font(.system(size: 40, weight: .regular))
                     .opacity(0.7)
                     
-                Spacer ()
-                    .frame(height: 30)
+            
                 
-   
+           
+                
+                Spacer ()
+                    .frame(height: 7)
                 
                 NavigationLink( destination:  INFOPreloadA(user: user, friends: friends),
                                 label: {

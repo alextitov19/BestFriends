@@ -72,6 +72,8 @@ struct HomeView: View {
                        
                         HStack {
                             
+                            
+                            
                             Image(systemName: "heart")
                                 .resizable()
                                 .scaledToFit()
@@ -89,7 +91,7 @@ struct HomeView: View {
 
                             
                             Spacer()
-                                .frame(width: 50)
+                                .frame(width: 120)
 
                           
                                 
