@@ -109,7 +109,7 @@ struct PhotoPopView: View {
                             .frame(width: 175, height: 30)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 25))
-                            .background(ColorManager.purple4)
+                            .background(ColorManager.orange5)
                             .cornerRadius(10)
                             .shadow(color: ColorManager .grey2, radius: 2, x: 0, y: 2)
                     })
@@ -120,8 +120,8 @@ struct PhotoPopView: View {
                         Image(systemName: "camera")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 30, height: 30)
-                            .foregroundColor(ColorManager.purple5)
+                            .frame(width: 30, height: 40)
+                            .foregroundColor(Color.black)
                             .onTapGesture {
                                 pickerSourceType = .camera
                                 showingRecipients = true
@@ -131,8 +131,8 @@ struct PhotoPopView: View {
                         Image(systemName: "photo")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 30, height: 30)
-                            .foregroundColor(ColorManager.purple5)
+                            .frame(width: 30, height: 35)
+                            .foregroundColor(Color.black)
                             .onTapGesture {
                                 pickerSourceType = .photoLibrary
                                 showingRecipients = true

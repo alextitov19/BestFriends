@@ -40,7 +40,7 @@ struct PhotoPop3: View {
         
         ZStack {
             
-            ColorManager.grey4
+            ColorManager.orange4
                 .ignoresSafeArea()
             
             
@@ -76,17 +76,24 @@ struct PhotoPop3: View {
 //                        Spacer()
 //                            .frame(height: 60)
                         
-                        Text("an in-app notification was sent")
-                            .font(.system(size: 20, weight: .light))
-                            .foregroundColor(ColorManager .grey2)
+                       
                         
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("Alert frind with Push Notification")
+                        Image("CoolGuy")
+                            .frame(width: 100, height: 100)
+                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                            .opacity(0.70)
+
+                        
+                        Text("Alert frind with")
                             .font(.system(size: 25, weight: .light))
-                            .foregroundColor(ColorManager .grey2)
+                            .foregroundColor(ColorManager .grey4)
                     
+                        Text("Push Notification")
+                            .font(.system(size: 25, weight: .light))
+                            .foregroundColor(ColorManager .grey4)
                         
                         HStack {
                             //
@@ -192,7 +199,7 @@ struct PhotoPop3: View {
                                 .frame(width: 100, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 25))
-                                .background(shareColor)
+                                .background(ColorManager .grey3)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 .alert("Image sent. \n\nWhen your friend shakes their phone they will see it full screen.", isPresented: $showingAlert) {
@@ -219,9 +226,16 @@ struct PhotoPop3: View {
                     
                 })
                 
+                Spacer()
+                    .frame(height: 40)
                 
-                                        Spacer()
-                                            .frame(height: 40)
+                Text("(an in-app notification was sent)")
+                    .font(.system(size: 20, weight: .light))
+                    .italic()
+                    .foregroundColor(ColorManager .grey4)
+                
+//                                        Spacer()
+//                                            .frame(height: 40)
                 VStack {
                     
      
@@ -283,7 +297,7 @@ struct RectView: View {
             .frame(width: 90, height: 90)
             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
             .font(.system(size: 8))
-            .background(color)
+            .background(ColorManager .grey2)
             .cornerRadius(75)
             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
     }
