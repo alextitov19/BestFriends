@@ -173,20 +173,9 @@ struct INFOPreloadA: View {
                         
                         VStack {
                             Spacer()
-                                .frame(height: 30)
-                   
+                                .frame(height: 100)
+
                             
-//                            Text("(send requesting for a PhotoPOP)")
-//                                .font(.system(size: 13))
-//                                .italic()
-//                                .foregroundColor(Color.white)
-//                                .fontWeight(.thin)
-//                                .multilineTextAlignment(.center)
-                          
-                            
-                            
-                            Spacer()
-                                .frame(height: 30)
                             
                             Text("OMG, can you believe this!")
                                 .font(.system(size: 20))
@@ -397,7 +386,7 @@ struct INFOPreloadA: View {
                                     .frame(width: 310, height: 40)
                                     .foregroundColor(Color.white)
                                     .font(.system(size: 19))
-                                    .background(Color.orange)
+                                    .background(Color.green)
                                     .glow(color: ColorManager.purple3, radius: 1)
                                     .shadow(color: .white, radius: 3, x: -4, y: 4)
             //                        .opacity(0.9)

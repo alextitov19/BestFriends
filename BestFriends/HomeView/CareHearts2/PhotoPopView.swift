@@ -77,11 +77,11 @@ struct PhotoPopView: View {
                     .opacity(0.7)
                     
                 Spacer ()
-                    .frame(height: 10)
+                    .frame(height: 30)
                 
    
                 
-                NavigationLink( destination:  CH5(user: user, friends: friends),
+                NavigationLink( destination:  INFOPreloadA(user: user, friends: friends),
                                 label: {
                     Text("Start Here")
                         .fontWeight(.light)
@@ -97,16 +97,16 @@ struct PhotoPopView: View {
                 
                 
                 Spacer()
-                    .frame(height: 10)
+                    .frame(height: 17)
                 
                 NavigationLink(
                     destination: PhotoPop3(user: user, friends: friends),
                     label: {
-                        Text("Alert Friend: Send Push Notificaion")
+                        Text("Instant Alert")
                             .fontWeight(.light)
-                            .frame(width: 310, height: 40)
+                            .frame(width: 175, height: 30)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 18.5))
+                            .font(.system(size: 25))
                             .background(ColorManager.purple4)
                             .cornerRadius(10)
                             .shadow(color: ColorManager .grey2, radius: 2, x: 0, y: 2)
