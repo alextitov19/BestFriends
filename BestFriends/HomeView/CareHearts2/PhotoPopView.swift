@@ -79,24 +79,25 @@ struct PhotoPopView: View {
                 Spacer ()
                     .frame(height: 10)
                 
+   
+                
                 NavigationLink( destination:  CH5(user: user, friends: friends),
                                 label: {
-                    Text("First time? Please see Instructions")
+                    Text("Start Here")
                         .fontWeight(.light)
-                        .frame(width: 310, height: 40)
-                        .foregroundColor(Color.white)
-                        .font(.system(size: 19))
-                        .background(Color.orange)
-                        .glow(color: ColorManager.purple3, radius: 1)
-                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-//                        .opacity(0.9)
+                        .frame(width: 120, height: 30)
+                        .foregroundColor(ColorManager .grey1)
+                        .font(.system(size: 25))
+                        .background(Color.green)
+//                            .opacity(0.7)
                         .cornerRadius(10)
                         .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                    
                 })
                 
+                
+                
                 Spacer()
-                    .frame(height: 15)
+                    .frame(height: 10)
                 
                 NavigationLink(
                     destination: PhotoPop3(user: user, friends: friends),
