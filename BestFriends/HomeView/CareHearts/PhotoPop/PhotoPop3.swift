@@ -19,7 +19,7 @@ struct PhotoPop3: View {
     let friends: [User]
     
     @State private var selectedFriends: [String] = []
-    @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
+    @State private var colors: [Color] = [ColorManager.grey2, ColorManager.grey2, ColorManager.grey2, ColorManager.grey2, ColorManager.grey2]
     @State private var shareColor = ColorManager.purple5
     @State private var showingAlert = false
     
@@ -112,10 +112,10 @@ struct PhotoPop3: View {
                                     .onTapGesture(perform: {
                                         if selectedFriends.contains(friends[0].id) {
                                             selectedFriends = selectedFriends.filter { $0 != friends[0].id }
-                                            colors[0] = ColorManager.purple3
+                                            colors[0] = ColorManager.grey2
                                         } else {
                                             selectedFriends.append(friends[0].id)
-                                            colors[0] = ColorManager.purple5
+                                            colors[0] = ColorManager.grey3
                                         }
                                         print(selectedFriends)
                                     })
@@ -297,7 +297,7 @@ struct RectView: View {
             .frame(width: 80, height: 80)
             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
             .font(.system(size: 8))
-            .background(ColorManager .grey2)
+            .background(color)
             .cornerRadius(75)
             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
     }
