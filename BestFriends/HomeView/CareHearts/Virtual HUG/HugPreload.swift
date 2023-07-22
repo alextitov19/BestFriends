@@ -200,7 +200,7 @@ struct HugPreload: View {
                     
                     Text("from the heart of you")
                         .font(.system(size: 23))
-                        .foregroundColor(ColorManager .grey4)
+                        .foregroundColor(ColorManager .darkGrey)
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                     

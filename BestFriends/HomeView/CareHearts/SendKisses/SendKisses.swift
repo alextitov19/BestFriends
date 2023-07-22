@@ -56,9 +56,7 @@ struct SendKisses: View {
                 
             } else {
 
-                ColorManager.grey3
-                    .opacity(0.99)
-                    .ignoresSafeArea()
+               
          
 
                 Image("CareHeartBalloon 1")
@@ -69,7 +67,10 @@ struct SendKisses: View {
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-       
+           
+                ColorManager.grey4
+                   .opacity(0.5)
+                    .ignoresSafeArea()
                 
             }
             
@@ -158,10 +159,10 @@ struct SendKisses: View {
                                     .onTapGesture(perform: {
                                         if selectedFriends.contains(friends[0].id) {
                                             selectedFriends = selectedFriends.filter { $0 != friends[0].id }
-                                            colors[0] = ColorManager.purple3
+                                            colors[0] = ColorManager.grey4
                                         } else {
                                             selectedFriends.append(friends[0].id)
-                                            colors[0] = ColorManager.purple5
+                                            colors[0] = ColorManager.grey2
                                         }
                                         print(selectedFriends)
                                     })
@@ -250,7 +251,7 @@ struct SendKisses: View {
                                 .frame(width: 100, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 25))
-                                .background(shareColor)
+                                .background(ColorManager .grey3)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 .alert("It's on it's way. \n\nYour friend just got a push notification asking them to jump up a catch it.", isPresented: $showingAlert) {
@@ -338,7 +339,7 @@ struct SendKisses: View {
                 .frame(width: 80, height: 80)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .font(.system(size: 8))
-                .background(color)
+                .background(ColorManager .grey2)
                 .cornerRadius(75)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
         }

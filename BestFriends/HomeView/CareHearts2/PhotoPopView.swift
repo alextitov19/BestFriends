@@ -96,7 +96,7 @@ struct PhotoPopView: View {
                         .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                 })
                 
-                
+            
                 
                 Spacer()
                     .frame(height: 10)
