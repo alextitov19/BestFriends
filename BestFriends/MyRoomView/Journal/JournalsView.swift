@@ -27,15 +27,7 @@ struct JournalsView: View {
     
     var body: some View {
         ZStack {
-//            Color.black
-//                .opacity(0.3)
-//                .ignoresSafeArea()
-//                .onAppear { loadData() }
-//
-//            AdPlayerView(name: "Galaxy2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//                .opacity(0.9)
+
             
             ColorManager .purple3
                 .opacity(0.6)
@@ -47,14 +39,7 @@ struct JournalsView: View {
 //                .opacity(0.4)
 //                .ignoresSafeArea()
 //                .onAppear { loadData() }
-            
-            
-//                .resizable()
-//                .scaledToFill()
-//
-//                .blendMode(.screen)
-
-            
+          
             AdPlayerView(name: "dramaLights")
                 .ignoresSafeArea()
                 .blendMode(.screen)

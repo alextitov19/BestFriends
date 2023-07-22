@@ -78,7 +78,7 @@ struct CreateNewJournalView: View {
                         .foregroundColor(ColorManager.purple5)
                         .onTapGesture { showsAlert = true }
                         .confirmationDialog("Send an image", isPresented: $showsAlert, titleVisibility: .visible) {
-                            Button("camera", action: {
+                            Button("gallery", action: {
                                 pickerSourceType = .photoLibrary
                                 isShowPhotoLibrary = !isShowPhotoLibrary
                             })
