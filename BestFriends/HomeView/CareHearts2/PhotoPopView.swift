@@ -34,19 +34,18 @@ struct PhotoPopView: View {
             
 
             
-            ColorManager.orange2
-//               .opacity(0.8)
+            ColorManager.grey3
                 .ignoresSafeArea()
-            //            Color .purple
                 .ignoresSafeArea()
                 .onAppear()
                 .scaledToFill()
+                .opacity(0.50)
                 .onAppear(perform: loadData)
                 .sheet(isPresented: $isShowPhotoLibrary) {
                     ImagePicker(image: $attachmentImage, sourceType: pickerSourceType)
                         .onDisappear { createPhotoPop() }
                     
-                    
+
                     
                     
                     
@@ -107,9 +106,10 @@ struct PhotoPopView: View {
                         Text("Instant Alert")
                             .fontWeight(.light)
                             .frame(width: 175, height: 30)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .foregroundColor(ColorManager .grey4)
                             .font(.system(size: 25))
-                            .background(ColorManager.orange5)
+                            .background(ColorManager .orange4)
+                            .opacity(0.9)
                             .cornerRadius(10)
                             .shadow(color: ColorManager .grey2, radius: 2, x: 0, y: 2)
                     })

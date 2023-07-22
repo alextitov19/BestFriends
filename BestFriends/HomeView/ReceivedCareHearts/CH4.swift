@@ -38,7 +38,7 @@ struct CH4: View {
     let groups: [Group]
     
     @State private var selectedFriends: [String] = []
-    @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
+    @State private var colors: [Color] = [ColorManager.grey2, ColorManager.grey2, ColorManager.grey2, ColorManager.grey2, ColorManager.grey2]
     @State private var shareColor = ColorManager.purple5
     @State private var showingAlert = false
     
@@ -205,8 +205,11 @@ struct CH4: View {
                                     ZStack(alignment: .bottom) {
                                             Image("")
                                                 .resizable()
-                                                .frame(width: 350, height: 100)
-                                                .cornerRadius(15)
+                                                .frame(width: 350, height: 48)
+                                                .background(Color.green)
+                                                .cornerRadius(10)
+                                        
+                                
 
                                             VStack {
                                                 Spacer()
@@ -275,10 +278,10 @@ struct CH4: View {
                                     .onTapGesture(perform: {
                                         if selectedFriends.contains(friends[0].id) {
                                             selectedFriends = selectedFriends.filter { $0 != friends[0].id }
-                                            colors[0] = ColorManager.purple3
+                                            colors[0] = ColorManager.grey2
                                         } else {
                                             selectedFriends.append(friends[0].id)
-                                            colors[0] = ColorManager.purple5
+                                            colors[0] = ColorManager.grey3
                                         }
                                         print(selectedFriends)
                                     })
@@ -290,10 +293,10 @@ struct CH4: View {
                                     .onTapGesture(perform: {
                                         if selectedFriends.contains(friends[1].id) {
                                             selectedFriends = selectedFriends.filter { $0 != friends[1].id }
-                                            colors[1] = ColorManager.purple3
+                                            colors[1] = ColorManager.grey2
                                         } else {
                                             selectedFriends.append(friends[1].id)
-                                            colors[1] = ColorManager.purple5
+                                            colors[1] = ColorManager.grey3
                                         }
                                         print(selectedFriends)
                                     })
@@ -309,10 +312,10 @@ struct CH4: View {
                                     .onTapGesture(perform: {
                                         if selectedFriends.contains(friends[2].id) {
                                             selectedFriends = selectedFriends.filter { $0 != friends[2].id }
-                                            colors[2] = ColorManager.purple3
+                                            colors[2] = ColorManager.grey2
                                         } else {
                                             selectedFriends.append(friends[2].id)
-                                            colors[2] = ColorManager.purple5
+                                            colors[2] = ColorManager.grey3
                                         }
                                         print(selectedFriends)
                                     })
@@ -323,10 +326,10 @@ struct CH4: View {
                                     .onTapGesture(perform: {
                                         if selectedFriends.contains(friends[3].id) {
                                             selectedFriends = selectedFriends.filter { $0 != friends[3].id }
-                                            colors[3] = ColorManager.purple3
+                                            colors[3] = ColorManager.grey2
                                         } else {
                                             selectedFriends.append(friends[3].id)
-                                            colors[3] = ColorManager.purple5
+                                            colors[3] = ColorManager.grey3
                                         }
                                         print(selectedFriends)
                                     })
@@ -338,10 +341,10 @@ struct CH4: View {
                                     .onTapGesture(perform: {
                                         if selectedFriends.contains(friends[4].id) {
                                             selectedFriends = selectedFriends.filter { $0 != friends[4].id }
-                                            colors[4] = ColorManager.purple3
+                                            colors[4] = ColorManager.grey2
                                         } else {
                                             selectedFriends.append(friends[4].id)
-                                            colors[4] = ColorManager.purple5
+                                            colors[4] = ColorManager.grey3
                                         }
                                         print(selectedFriends)
                                     })
@@ -443,7 +446,7 @@ struct CH4: View {
                 .frame(width: 80, height: 80)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .font(.system(size: 8))
-                .background(ColorManager .grey2)
+                .background(color)
                 .cornerRadius(75)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
         }

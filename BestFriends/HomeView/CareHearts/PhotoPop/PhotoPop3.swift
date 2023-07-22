@@ -40,7 +40,7 @@ struct PhotoPop3: View {
         
         ZStack {
             
-            ColorManager.orange4
+            ColorManager.grey3
                 .ignoresSafeArea()
             
             
