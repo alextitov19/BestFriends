@@ -36,6 +36,10 @@ struct HugPreload: View {
                 .ignoresSafeArea()
                 .scaledToFit()
                 .opacity(0.6)
+            
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
 
 
 
@@ -196,7 +200,7 @@ struct HugPreload: View {
                     
                     Text("from the heart of you")
                         .font(.system(size: 23))
-                        .foregroundColor(ColorManager .grey1)
+                        .foregroundColor(ColorManager .grey4)
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                     

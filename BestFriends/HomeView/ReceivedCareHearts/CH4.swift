@@ -128,6 +128,10 @@ struct CH4: View {
                           .ignoresSafeArea()
                           .scaledToFit()
                           .opacity(0.6)
+                      
+                      AdPlayerView(name: "sky2")
+                          .ignoresSafeArea()
+                          .blendMode(.screen)
              
                       
             }

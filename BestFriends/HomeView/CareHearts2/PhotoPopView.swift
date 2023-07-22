@@ -34,8 +34,8 @@ struct PhotoPopView: View {
             
 
             
-            ColorManager.grey4
-//                .opacity(0.9)
+            ColorManager.orange2
+//               .opacity(0.8)
                 .ignoresSafeArea()
             //            Color .purple
                 .ignoresSafeArea()
@@ -99,7 +99,7 @@ struct PhotoPopView: View {
                 
                 
                 Spacer()
-                    .frame(height: 17)
+                    .frame(height: 10)
                 
                 NavigationLink(
                     destination: PhotoPop3(user: user, friends: friends),
