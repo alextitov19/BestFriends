@@ -83,7 +83,7 @@ struct HomeView: View {
                             Image(systemName: "heart")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 43, height: 43)
+                                .frame(width: 30, height: 30)
                                 .foregroundColor(Color.red)
                                .glow(color: ColorManager.purple4, radius: 3)
                                 .opacity(0.5)
@@ -97,7 +97,7 @@ struct HomeView: View {
 
                             
                             Spacer()
-                                .frame(width: 120)
+                                .frame(width: 80)
 
                           
                                 
@@ -111,7 +111,7 @@ struct HomeView: View {
                                               
                                                .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 43, height: 43)
+                                                .frame(width: 30, height: 30)
                                                 .glow(color: ColorManager.purple4, radius: 2)
                                                 .opacity(0.6)
 
@@ -155,17 +155,17 @@ struct HomeView: View {
                         NavigationLink(destination: MyRoomView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups), label: {
                             PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
                                 .scaledToFit()
-                                .frame(width: 110, height: 110)
+                                .frame(width: 75, height: 75)
                                 .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 11)
                                 .opacity(0.3)
                                 .padding()
                             
                         })
-                            Text("Tap")
+                            Text("me")
                                 .fontWeight(.bold)
-                                .frame(width: 40, height: 30)
+                                .frame(width: 35, height: 30)
 //                                .foregroundColor(Color.white)
-                                .font(.system(size: 15))
+                                .font(.system(size: 17))
                                 .background(Color.green)
                             //                               .opacity(0.7)
                                 .cornerRadius(10)
