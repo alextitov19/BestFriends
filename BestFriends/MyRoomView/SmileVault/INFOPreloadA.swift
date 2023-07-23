@@ -51,38 +51,19 @@ struct INFOPreloadA: View {
 
             } else {
                 
-                Image("FHBackground")
-                               .resizable()
-                               .scaledToFill()
-                               .edgesIgnoringSafeArea(.all)
-//                Color.black
-//                    .ignoresSafeArea()
-                
+                ColorManager.grey4
+                    .opacity(0.8)
+                    .ignoresSafeArea()
+              
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.9)
                 
-//                Color.black
-//                    .ignoresSafeArea()
-//
-//                AdPlayerView(name: "Galaxy2")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//                    .opacity(0.7)
-              
-//                Image("FHBackground")
-//                    .resizable()
-//                    .scaledToFill()
-//                    .edgesIgnoringSafeArea(.all)
-                
-//                ColorManager.grey4
-//                    .opacity(0.8)
-//                    .ignoresSafeArea()
-                    
-//                AdPlayerView(name: "sky2")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
+                //                Image("FHBackground")
+                //                               .resizable()
+                //                               .scaledToFill()
+                //                               .edgesIgnoringSafeArea(.all)
                 
              
 
@@ -132,10 +113,10 @@ struct INFOPreloadA: View {
                     
                     Image(systemName: "circle.fill")
                         .resizable()
-                        .foregroundColor(Color.purple)
+                        .foregroundColor(ColorManager .orange4)
                         .frame(width: 500, height: 500)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.95)
+                        .opacity(0.8)
                     VStack {
                         
                         Text("Friend having one of those days!")
@@ -377,7 +358,7 @@ struct INFOPreloadA: View {
                             
                             
                             Spacer()
-                                .frame(height: 40)
+                                .frame(height: 10)
                             
                             NavigationLink( destination:  CH5(user: user, friends: friends),
                                             label: {
@@ -424,7 +405,7 @@ struct INFOPreloadA: View {
 //                            })
                             
                             Spacer()
-                                .frame(height: 190)
+                                .frame(height: 100)
                            
                    
                         }

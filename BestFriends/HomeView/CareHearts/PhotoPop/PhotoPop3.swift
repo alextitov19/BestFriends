@@ -40,9 +40,19 @@ struct PhotoPop3: View {
         
         ZStack {
             
-            ColorManager.grey3
+            ColorManager.grey2
+                .opacity(0.8)
                 .ignoresSafeArea()
-            
+          
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.9)
+//
+//            ColorManager.grey3
+//                .ignoresSafeArea()
+//                .opacity(0.5)
+//
             
             VStack{
                 
