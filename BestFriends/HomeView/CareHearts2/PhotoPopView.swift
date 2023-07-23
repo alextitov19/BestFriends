@@ -121,7 +121,8 @@ struct PhotoPopView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 30, height: 40)
-                            .foregroundColor(Color.black)
+                            .foregroundColor(ColorManager .orange4)
+                        
                             .onTapGesture {
                                 pickerSourceType = .camera
                                 showingRecipients = true
@@ -132,7 +133,7 @@ struct PhotoPopView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 30, height: 35)
-                            .foregroundColor(Color.black)
+                            .foregroundColor(ColorManager .orange4)
                             .onTapGesture {
                                 pickerSourceType = .photoLibrary
                                 showingRecipients = true
