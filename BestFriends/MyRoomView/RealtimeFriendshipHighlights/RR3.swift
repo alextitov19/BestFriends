@@ -1,15 +1,30 @@
 //
-//  FH4.swift
+//  RR3.swift
 //  BestFriends
 //
-//  Created by Zhengxu Wang on 7/7/23.
+//  Created by Zhengxu Wang on 7/15/23.
+//
+
+//import SwiftUI
+//
+//struct RR3: View {
+//    var body: some View {
+//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+//    }
+//}
+//
+//struct RR3_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RR3()
+//    }
+//}
 //
 
 
 import Foundation
 import SwiftUI
 
-struct FH4: View {
+struct RR3: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     @State private var selectedFriends: [String] = []
@@ -29,7 +44,8 @@ struct FH4: View {
         //        ScrollView {
         
         ZStack {
-          
+            
+           
             Image("CareHeartBalloon 1")
                 .ignoresSafeArea()
                 .scaledToFit()
@@ -42,7 +58,6 @@ struct FH4: View {
 //                .ignoresSafeArea()
 //                .blendMode(.screen)
 //                .opacity(0.9)
-            
             
 //            if shareTapped {
 //
@@ -65,22 +80,29 @@ struct FH4: View {
                 
                 VStack {
 
-                    Text("Friendship")
+                    Text("Info Circle")
                         .font(.system(size: 35))
                         .foregroundColor(ColorManager .grey1)
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                     
-                    Text("Coupons")
-                        .font(.system(size: 45))
+                    Text("to left of [Start Here] button")
+                        .font(.system(size: 15))
+                        .italic()
                         .foregroundColor(ColorManager .grey1)
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                     
+//                    Text("PhotoPOP")
+//                        .font(.system(size: 45))
+//                        .foregroundColor(ColorManager .grey1)
+//                        .fontWeight(.thin)
+//                        .multilineTextAlignment(.center)
+                    
                     ZStack {
                         
                         Spacer()
-                            .frame(height: 70)
+                            .frame(height: 50)
                         
                         Image(systemName: "circle.fill")
                             .resizable()
@@ -94,27 +116,52 @@ struct FH4: View {
                             Spacer()
                                 .frame(height: 70)
                             
-                            Text("Redeem a \n'Frendship Coupon'.")
-                                .font(.system(size: 27))
+                            
+                            Text("How To:")
+                                .font(.system(size: 30))
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("Add Friends")
+                                .font(.system(size: 25))
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("Customize Chat Backgrounds")
+                                .font(.system(size: 25))
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("Customize Chat Backgrounds")
+                                .font(.system(size: 25))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
                             
-                            Text("for lipstick, fries, ice cream - \nwhat ever your friends wants to give you")
-                                .font(.system(size: 27))
-                                .italic()
+                            Text("Customize Chat Backgrounds")
+                                .font(.system(size: 25))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
+                            
+                            
+                            
                             
                             
                             Spacer()
-                                .frame(height: 30)
+                                .frame(height: 10)
+                    
                             
-//                            Image("book200")
+                            Spacer()
+                                .frame(height: 20)
+                            
+//                            Image("girlwalking250")
 //                                .resizable()
-//                                .frame(width: 100, height: 100)
+//                                .frame(width: 125, height: 125)
                             
                         }
                         
@@ -122,12 +169,12 @@ struct FH4: View {
                         VStack {
                             
                             Spacer()
-                                .frame(height: 20)
+                                .frame(height: 30)
                            
                                
                           
                             NavigationLink(
-                                destination: RR3(),
+                                destination: FH3(),
                                 label: {
                                     Text("->")
                                         .fontWeight(.thin)

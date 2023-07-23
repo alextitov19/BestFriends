@@ -116,12 +116,12 @@ struct INFOPreloadA: View {
                 ZStack {
                     
                     Spacer()
-                        .frame(height: 20)
+                        .frame(height: 30)
                     
                     Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(Color.purple)
-                        .frame(width: 450, height: 450)
+                        .frame(width: 475, height: 475)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                         .opacity(0.4)
                     VStack {
@@ -163,11 +163,27 @@ struct INFOPreloadA: View {
                             Spacer()
                                 .frame(height: 30)
                             
-                            Text("*   *   *")
-                                .font(.system(size: 20))
-                                .foregroundColor(Color.white)
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
+//                            Text("*   *   *")
+//                                .font(.system(size: 20))
+//                                .foregroundColor(Color.white)
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+                            
+                            NavigationLink( destination:  CH5(user: user, friends: friends),
+                                            label: {
+                                Text("Please see PhotoPOP instructions")
+                                    .fontWeight(.light)
+                                    .frame(width: 310, height: 40)
+                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 19))
+                                    .background(Color.green)
+                                    .glow(color: ColorManager.purple3, radius: 1)
+                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
+            //                        .opacity(0.9)
+                                    .cornerRadius(10)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                
+                            })
                             
 
                             Spacer()
@@ -369,40 +385,14 @@ struct INFOPreloadA: View {
                         
                         VStack {
                             
-                    
-                            
-                            NavigationLink( destination:  CH5(user: user, friends: friends),
-                                            label: {
-                                Text("Please see PhotoPOP instructions")
-                                    .fontWeight(.light)
-                                    .frame(width: 310, height: 40)
-                                    .foregroundColor(Color.white)
-                                    .font(.system(size: 19))
-                                    .background(Color.green)
-                                    .glow(color: ColorManager.purple3, radius: 1)
-                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
-            //                        .opacity(0.9)
-                                    .cornerRadius(10)
-                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                
-                            })
-
-                            
+             
                             Spacer()
                                 .frame(height: 160)
                            
                    
                         }
-                        
-                     
-                        
-                        }
-                    
-//
-//
-//
-
-                    
+                 
+                    }
                 }
                 
             }

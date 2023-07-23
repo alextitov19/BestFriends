@@ -706,7 +706,6 @@
 			children = (
 				2DBF3EE02A61ACD400CB1CAD /* RR1.swift */,
 				2DBF3EE22A61ACE100CB1CAD /* RR2.swift */,
-				2DBF3EE42A61ACEB00CB1CAD /* RR3.swift */,
 				2DBF3EE62A61ACF500CB1CAD /* RR4.swift */,
 				2DBF3EE82A61ACFF00CB1CAD /* RR5.swift */,
 				2DBF3EEA2A61AD0900CB1CAD /* RR6.swift */,
@@ -765,6 +764,7 @@
 				2DFB030D2A57223E00669948 /* FH5.swift */,
 				2DFB030B2A57223100669948 /* FH4.swift */,
 				2DFB03092A57222300669948 /* FH3.swift */,
+				2DBF3EE42A61ACEB00CB1CAD /* RR3.swift */,
 			);
 			path = RealtimeFriendshipHighlights;
 			sourceTree = "<group>";

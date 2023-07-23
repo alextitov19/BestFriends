@@ -100,6 +100,16 @@ struct FH5: View {
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
+                            Spacer()
+                                .frame(height: 10)
+                            
+                            Text("comming Q4 2023")
+                                .font(.system(size: 15))
+                                .italic()
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
                             
                             Spacer()
                                 .frame(height: 20)
