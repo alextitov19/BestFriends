@@ -116,12 +116,12 @@ struct INFOPreloadA: View {
                 ZStack {
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 20)
                     
                     Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(Color.purple)
-                        .frame(width: 500, height: 500)
+                        .frame(width: 450, height: 450)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                         .opacity(0.4)
                     VStack {
@@ -161,13 +161,20 @@ struct INFOPreloadA: View {
                         
                         VStack {
                             Spacer()
-                                .frame(height: 100)
-
+                                .frame(height: 30)
                             
+                            Text("*   *   *")
+                                .font(.system(size: 20))
+                                .foregroundColor(Color.white)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+
+                            Spacer()
+                                .frame(height: 30)
                             
                             Text("OMG, can you believe this!")
                                 .font(.system(size: 20))
-                            
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
@@ -238,8 +245,7 @@ struct INFOPreloadA: View {
                     
                     VStack {
 
-                        Spacer()
-                            .frame(height: 25)
+                     
 //
 //
 //                        HStack {
@@ -363,9 +369,7 @@ struct INFOPreloadA: View {
                         
                         VStack {
                             
-                            
-                            Spacer()
-                                .frame(height: 10)
+                    
                             
                             NavigationLink( destination:  CH5(user: user, friends: friends),
                                             label: {
@@ -382,37 +386,10 @@ struct INFOPreloadA: View {
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                 
                             })
-//
-//                                 Button(action: {
-//                                     sessionManager.showLogin()
-//                                 },
-//                                     label: {
-//                                     Image("home-alt2")
-//                                         .frame(width: 50, height: 25)
-//                                         .foregroundColor(.white)
-//                                         .font(.system(size: 20))
-//                                         .background(ColorManager .grey2)
-//                                         .cornerRadius(15)
-//                                         .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                                         .opacity(0.70)
-//
-//                                 })
 
-//                            
-//                            NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
-//                                            label: {
-//                                Text("Send them a PhotoPOP")
-//                                    .fontWeight(.thin)
-//                                    .frame(width: 310, height: 50)
-//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                    .font(.system(size: 30))
-//                                    .background(Color .orange)
-//                                    .cornerRadius(15)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                            })
                             
                             Spacer()
-                                .frame(height: 100)
+                                .frame(height: 160)
                            
                    
                         }
