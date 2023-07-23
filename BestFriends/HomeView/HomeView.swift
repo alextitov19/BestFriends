@@ -65,7 +65,7 @@ struct HomeView: View {
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.99)
+//                    .opacity(0.99)
                 
            
                 
@@ -97,7 +97,7 @@ struct HomeView: View {
 
                             
                             Spacer()
-                                .frame(width: 80)
+                                .frame(width: 77)
 
                           
                                 
@@ -169,7 +169,7 @@ struct HomeView: View {
                                 .background(Color.green)
                             //                               .opacity(0.7)
                                 .cornerRadius(10)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 1)
                             
 //                        })
                     }
