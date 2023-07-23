@@ -30,7 +30,7 @@ struct NotificationsView: View {
                 
                 VStack {
                     Text("Fresh CareHearts")
-                        .font(.system(size: 30, weight: .light))
+                        .font(.system(size: 30, weight: .regular))
                         .foregroundColor(.white)
                         .padding()
                     

@@ -51,28 +51,18 @@ struct INFOPreloadA: View {
 
             } else {
                 
-                Image("FHBackground")
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
-                    .blendMode(.screen)
-//                    .onAppear(perform: createPlanets)
-                
-//                ColorManager.grey4
-//                    .opacity(0.8)
-//                    .ignoresSafeArea()
-//
-//                AdPlayerView(name: "sky2")
-//                    .ignoresSafeArea()
+//                Image("FHBackground")
+//                    .resizable()
+//                    .scaledToFill()
+//                    .edgesIgnoringSafeArea(.all)
 //                    .blendMode(.screen)
-//                    .opacity(0.9)
+
                 
-                //                Image("FHBackground")
-                //                               .resizable()
-                //                               .scaledToFill()
-                //                               .edgesIgnoringSafeArea(.all)
                 
-             
+                AdPlayerView(name: "sky2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.99)
 
             }
             

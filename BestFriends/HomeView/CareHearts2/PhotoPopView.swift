@@ -33,13 +33,13 @@ struct PhotoPopView: View {
         ZStack {
             
 
-            
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                .opacity(0.9)
+                .opacity(0.99)
+        
             
-            ColorManager.grey3
+            ColorManager.grey4
                 .ignoresSafeArea()
                 .ignoresSafeArea()
                 .onAppear()
@@ -51,41 +51,21 @@ struct PhotoPopView: View {
                         .onDisappear { createPhotoPop() }
                     
 
-                 
+           
                     
                     
                 }
             
             VStack {
-                
-                Button(action: {
-                    sessionManager.showLogin()
-                },
-                    label: {
-                    Image("home-alt2")
-                        .frame(width: 50, height: 25)
-                        .foregroundColor(.white)
-                        .font(.system(size: 20))
-                        .background(ColorManager .grey3)
-                        .cornerRadius(15)
-                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                        .opacity(0.70)
-                    
-                })
-                
-                
+            
                 
                 Text("PhotoPOP")
                     .foregroundColor(Color.white)
                     .font(.system(size: 45, weight: .regular))
                     .opacity(0.7)
-                    
-            
-                
-           
-                
+              
                 Spacer ()
-                    .frame(height: 7)
+                    .frame(height: 17)
                 
                 NavigationLink( destination:  INFOPreloadA(user: user, friends: friends),
                                 label: {
@@ -103,7 +83,7 @@ struct PhotoPopView: View {
             
                 
                 Spacer()
-                    .frame(height: 10)
+                    .frame(height: 13)
                 
                 NavigationLink(
                     destination: PhotoPop3(user: user, friends: friends),

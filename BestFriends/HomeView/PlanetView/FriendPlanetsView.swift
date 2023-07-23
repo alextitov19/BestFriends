@@ -296,12 +296,12 @@ struct FriendPlanetsView: View {
                         .resizable()
                         .scaledToFit()
                         .opacity(0.7)
-                        .frame(width: 50, height: 50)
+                        .frame(width: 60, height: 60)
                     
                     Image(systemName: "plus")
                         .resizable()
                         .foregroundColor(.white)
-                        .frame(width: 22, height: 22)
+                        .frame(width: 25, height: 25)
                         .scaledToFit()
                 }
                 

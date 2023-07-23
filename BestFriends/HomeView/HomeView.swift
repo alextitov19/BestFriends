@@ -79,9 +79,9 @@ struct HomeView: View {
                             Image(systemName: "heart")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 42, height: 42)
+                                .frame(width: 43, height: 43)
                                 .foregroundColor(Color.red)
-                                .glow(color: ColorManager.purple4, radius: 5)
+                               .glow(color: ColorManager.purple4, radius: 3)
                                 .opacity(0.5)
                                 .onTapGesture {
                                     print("Clicked notification bell")
@@ -108,8 +108,8 @@ struct HomeView: View {
                                                .resizable()
                                                 .scaledToFit()
 //                                                .foregroundColor(ColorManager .purple1)
-                                                .frame(width: 45, height: 45)
-                                              
+                                                .frame(width: 43, height: 43)
+                                                .glow(color: ColorManager.purple4, radius: 2)
                                                 .opacity(0.6)
 //                                                .foregroundColor(.white)
                                             
