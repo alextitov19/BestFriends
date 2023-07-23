@@ -50,21 +50,27 @@ struct CH5: View {
         
         ZStack {
             
-            
-            ColorManager.grey2
-                .opacity(0.8)
-                .ignoresSafeArea()
-          
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
+            Image("FHBackground")
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
                 .blendMode(.screen)
-                .opacity(0.9)
+            
+            
+//            ColorManager.grey2
+//                .opacity(0.8)
+//                .ignoresSafeArea()
+//
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.9)
             
             VStack {
     
                 
                 Text("(When BestFriends app is OPEN)")
-                    .font(.system(size: 15))
+                    .font(.system(size: 13))
                     .italic()
                     .foregroundColor(ColorManager .grey1)
                     .fontWeight(.light)
@@ -74,15 +80,15 @@ struct CH5: View {
                     .frame(height: 10)
                 
                 
-                Text("View received images from your friends by,")
-                    .font(.system(size: 20))
-                    .foregroundColor(ColorManager .grey1)
+                Text("View received images by,")
+                    .font(.system(size: 25))
+                    .foregroundColor(Color.white)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
                 Text("'skaking' your iPhone")
-                    .font(.system(size: 30))
-                    .foregroundColor(ColorManager .grey1)
+                    .font(.system(size: 35))
+                    .foregroundColor(Color.white)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 

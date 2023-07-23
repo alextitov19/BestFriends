@@ -40,19 +40,21 @@ struct PhotoPop3: View {
         
         ZStack {
             
-            ColorManager.grey2
-                .opacity(0.8)
-                .ignoresSafeArea()
-          
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-                .opacity(0.9)
-//
-//            ColorManager.grey3
+//            ColorManager.grey2
+//                .opacity(0.8)
 //                .ignoresSafeArea()
-//                .opacity(0.5)
 //
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.9)
+
+            
+            Image("FHBackground")
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
+                .blendMode(.screen)
             
             VStack{
                 
@@ -97,13 +99,13 @@ struct PhotoPop3: View {
                             .opacity(0.70)
 
                         
-                        Text("Alert frind with")
-                            .font(.system(size: 25, weight: .light))
-                            .foregroundColor(ColorManager .grey4)
+                        Text("Alert friend with")
+                            .font(.system(size: 30, weight: .light))
+                            .foregroundColor(Color.white)
                     
                         Text("Push Notification")
-                            .font(.system(size: 25, weight: .light))
-                            .foregroundColor(ColorManager .grey4)
+                            .font(.system(size: 35, weight: .light))
+                            .foregroundColor(Color.white)
                         
                         HStack {
                             //
@@ -239,13 +241,19 @@ struct PhotoPop3: View {
                 Spacer()
                     .frame(height: 40)
                 
-                Text("(an in-app notification was sent)")
-                    .font(.system(size: 20, weight: .light))
+                Text("In-app notification")
+                    .font(.system(size: 15, weight: .light))
                     .italic()
-                    .foregroundColor(ColorManager .grey4)
+                    .foregroundColor(ColorManager .grey1)
                 
-//                                        Spacer()
-//                                            .frame(height: 40)
+                Text("was automatically sent")
+                    .font(.system(size: 15, weight: .light))
+                    .italic()
+                    .foregroundColor(ColorManager .grey1)
+                
+                
+                
+                
                 VStack {
                     
      
