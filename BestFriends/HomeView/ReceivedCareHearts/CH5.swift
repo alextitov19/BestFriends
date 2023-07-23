@@ -80,13 +80,13 @@ struct CH5: View {
                     .frame(height: 10)
                 
                 
-                Text("View received images by,")
+                Text("View friend's images by,")
                     .font(.system(size: 25))
                     .foregroundColor(Color.white)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
-                Text("'skaking' your iPhone")
+                Text("'Skaking' your iPhone")
                     .font(.system(size: 35))
                     .foregroundColor(Color.white)
                     .fontWeight(.light)
@@ -105,11 +105,11 @@ struct CH5: View {
                         //                        NavigationLink(
                         //                            destination: PhotoPop3(user: user, friends: friends),
                         //                            label: {
-                        Text("INSTRUCTIONS: \n\n1) tap 'camera' or 'gallery' icon \n2) select friend from dropdown menu  \n3) add gallery or camera image \n4) tap [Alert Friend: Send Push Notification], select friend - tap [Share] \n\nNOTE: \nYou can only send ONE real-time image \nto ONE friend at a time \n\n\nSENDING NEW IMAGE:  \n1) First, 'MUST DELETE' current image (just tap it) \n2) Then repeat above steps.")
+                        Text("INSTRUCTIONS: \n\n1) tap 'camera' or 'gallery' \n2) select friend \n3) add image \n4) tap [Alert Alert] \n\nNOTE: \nCan only send ONE real-time image \nto ONE friend at a time \n\n\nSENDING NEW IMAGE:  \n1) DELETE' current image (just tap it) \n2) Then repeat above steps.")
                             .fontWeight(.regular)
-                            .frame(width: 360, height: 340)
+                            .frame(width: 275, height: 300)
                             .foregroundColor(Color.black)
-                            .font(.system(size: 13))
+                            .font(.system(size: 15))
                             .background(ColorManager .grey2)
                             .cornerRadius(15)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
