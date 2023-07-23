@@ -35,15 +35,15 @@ struct FH10: View {
             }
            
             VStack {
-                Text("TAP CENTER PLANET -> takes you to Main page")
-                    .fontWeight(.light)
-                    .frame(width: 300, height: 60)
-                    .foregroundColor(Color.white)
-                    .font(.system(size: 17))
-                    .background(ColorManager.grey3)
-                    .cornerRadius(10)
-                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-            
+//                Text("TAP CENTER PLANET -> takes you to Main page")
+//                    .fontWeight(.light)
+//                    .frame(width: 300, height: 60)
+//                    .foregroundColor(Color.white)
+//                    .font(.system(size: 17))
+//                    .background(ColorManager.grey3)
+//                    .cornerRadius(10)
+//                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//            
                 Spacer ()
                     .frame(height: 15)
                 

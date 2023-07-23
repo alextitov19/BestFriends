@@ -71,10 +71,14 @@ struct HomeView: View {
                 
                 VStack {
                     if ((homeData) != nil) {
+                        
+                        Spacer()
+//                            .frame(width: 10)
                        
                         HStack {
                             
-                            
+//                            Spacer()
+//                                .frame(width: 15)
                             
                             Image(systemName: "heart")
                                 .resizable()
@@ -107,40 +111,18 @@ struct HomeView: View {
                                               
                                                .resizable()
                                                 .scaledToFit()
-//                                                .foregroundColor(ColorManager .purple1)
                                                 .frame(width: 43, height: 43)
                                                 .glow(color: ColorManager.purple4, radius: 2)
                                                 .opacity(0.6)
-//                                                .foregroundColor(.white)
-                                            
-                                            
-//                                            Text("PhotoPOP")
-//                                                .foregroundColor(Color.white)
-//                                                .font(.system(size: 13, weight: .thin))
-//                                                .opacity(0.7)
+
                                             
                                         })
                                 }
                             
-//                            Spacer()
-                            
-                            
-//                            NavigationLink(
-//                                destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
-//                                label: {
-//
-//                                    Image(systemName: "gear")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 35, height: 35)
-//                                        .opacity(0.5)
-//                                        .foregroundColor(.white)
-//                                })
-//
-                            
+                 
                          
                         }
-//                      .padding(20)
+
                     }
                     
                    Spacer()
@@ -168,14 +150,30 @@ struct HomeView: View {
                         })
                         .frame(width: 0, height: 0)
                     
-                    NavigationLink(destination: MyRoomView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups), label: {
-                        PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
-                            .scaledToFit()
-                            .frame(width: 120, height: 120)
-                            .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 11)
-                            .opacity(0.3)
-                            .padding()
-                    })
+                    ZStack {
+                        
+                        NavigationLink(destination: MyRoomView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups), label: {
+                            PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
+                                .scaledToFit()
+                                .frame(width: 110, height: 110)
+                                .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 11)
+                                .opacity(0.3)
+                                .padding()
+                            
+                        })
+                            Text("Tap")
+                                .fontWeight(.bold)
+                                .frame(width: 40, height: 30)
+//                                .foregroundColor(Color.white)
+                                .font(.system(size: 15))
+                                .background(Color.green)
+                            //                               .opacity(0.7)
+                                .cornerRadius(10)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                            
+//                        })
+                    }
+                        
                 }
                 
                 if newGroupMembers.count > 0 {
@@ -187,7 +185,7 @@ struct HomeView: View {
                         }, label: {
                             Text("create new chat room")
                                 .fontWeight(.light)
-                                .frame(width: 200, height: 30)
+                                .frame(width: 250, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager .purple3)
                                 .cornerRadius(10)

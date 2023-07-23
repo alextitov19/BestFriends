@@ -51,18 +51,18 @@ struct INFOPreloadA: View {
 
             } else {
                 
-//                Image("FHBackground")
-//                    .resizable()
-//                    .scaledToFill()
-//                    .edgesIgnoringSafeArea(.all)
-//                    .blendMode(.screen)
+                Image("FHBackground")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+                    .blendMode(.screen)
 
                 
                 
-                AdPlayerView(name: "sky2")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .opacity(0.99)
+//                AdPlayerView(name: "sky2")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.99)
 
             }
             
