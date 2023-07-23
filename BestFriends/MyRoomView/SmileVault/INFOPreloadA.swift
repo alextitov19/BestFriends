@@ -51,14 +51,21 @@ struct INFOPreloadA: View {
 
             } else {
                 
-                ColorManager.grey4
-                    .opacity(0.8)
-                    .ignoresSafeArea()
-              
-                AdPlayerView(name: "sky2")
-                    .ignoresSafeArea()
+                Image("FHBackground")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
                     .blendMode(.screen)
-                    .opacity(0.9)
+//                    .onAppear(perform: createPlanets)
+                
+//                ColorManager.grey4
+//                    .opacity(0.8)
+//                    .ignoresSafeArea()
+//
+//                AdPlayerView(name: "sky2")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.9)
                 
                 //                Image("FHBackground")
                 //                               .resizable()
@@ -113,10 +120,10 @@ struct INFOPreloadA: View {
                     
                     Image(systemName: "circle.fill")
                         .resizable()
-                        .foregroundColor(ColorManager .orange4)
+                        .foregroundColor(Color.purple)
                         .frame(width: 500, height: 500)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.8)
+                        .opacity(0.4)
                     VStack {
                         
                         Text("Friend having one of those days!")
