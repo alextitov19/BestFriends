@@ -92,7 +92,7 @@ struct FH4: View {
                             
                             
                             Spacer()
-                                .frame(height: 70)
+                                .frame(height: 50)
                             
                             Text("Redeem a \n'Frendship Coupon'.")
                                 .font(.system(size: 27))
@@ -101,10 +101,22 @@ struct FH4: View {
                                 .multilineTextAlignment(.center)
                             
                             
-                            Text("for lipstick, fries, ice cream - \nwhat ever your friends wants to give you")
-                                .font(.system(size: 27))
-                                .italic()
+                            Spacer()
+                                .frame(height: 20)
+                            
+                            Text("for lipstick, fries, ice cream ...")
+                                .font(.system(size: 23))
                                 .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
+                            Spacer()
+                                .frame(height: 10)
+                            
+                            Text("what ever your friends wants to give you")
+                                .font(.system(size: 15))
+                                .italic()
+                                .foregroundColor(Color.white)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
