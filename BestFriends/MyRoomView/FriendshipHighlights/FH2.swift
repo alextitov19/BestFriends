@@ -36,36 +36,9 @@ struct FH2: View {
             Image("CareHeartBalloon 1")
                 .ignoresSafeArea()
                 .scaledToFit()
-                .opacity(0.4)
-            
-//            Color.black
-//                .ignoresSafeArea()
-//
-//            AdPlayerView(name: "Galaxy2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//                .opacity(0.9)
-            
-            
-            //            if shareTapped {
-            //
-            //                ColorManager.grey4
-            //                    .opacity(0.8)
-            //                    .ignoresSafeArea()
-            //
-            //                AdPlayerView(name: "dramaLights")
-            //                    .ignoresSafeArea()
-            //                    .blendMode(.screen)
-            //
-            //            } else {
-            //
-            //                Image("FHBackground")
-            //                    .resizable()
-            //                    .scaledToFill()
-            //                    .edgesIgnoringSafeArea(.all)
-            
-            //                ScrollView {
-            
+                .opacity(0.8)
+ 
+
             VStack {
 
                 
@@ -79,7 +52,7 @@ struct FH2: View {
                         .foregroundColor(Color.purple)
                         .frame(width: 375, height: 375)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.4)
+                        .opacity(0.9)
                     VStack {
                         
                         
@@ -104,10 +77,7 @@ struct FH2: View {
                         Spacer()
                             .frame(height: 20)
                         
-//                        Image("holding iphone")
-//                            .resizable()
-//                            .frame(width: 150, height: 150)
-//
+
                     }
                     
                 }
@@ -149,18 +119,6 @@ struct FH2: View {
     
 }
         
-    
-
-//
-//
-//
-//"Yes, yes, yes!: \n\nYour friends are 'always' \nhere for you on \n\nBestFriends",
-//"Look Up: \n\nYour friend just blew a kiss \nin your direction \n\njump up high and catch it",
-//"Your friend sent a PhotoPOP: \n\nShake you iPhone and friend's \nimage pops up full-screen",
-//"Tough day? \n\nYour friend sent a HUG, \nhold phone to your heart \n\nyep, it vibrates",
-//"That's Right: \n\nWe even let you know when \na friend is ready to talk \nafter a fight",
-//"Your friends love you: \n\nRedeem a Friendship Coupon",
-
 
 
 

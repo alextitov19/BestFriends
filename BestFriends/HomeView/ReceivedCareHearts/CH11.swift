@@ -97,8 +97,9 @@ struct CH11: View {
                             
                             Text("A friend may well be reckoned the masterpiece of nature.")
                                 .font(.system(size: 25))
+                                .fontWeight(.light)
                                 .italic()
-                                .foregroundColor(ColorManager .grey1)
+                                .foregroundColor(Color.white)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
@@ -116,10 +117,10 @@ struct CH11: View {
                     NavigationLink(destination: EmptyView(),
                         label: {
              Text("Tell us in 15 words what your friends mean to you? Shoot us an email with your quote. Each month we'll post the top 3 winners. \n\nsend to QuoteContest@SocialTechLabs.com")
-                 .fontWeight(.thin)
+                 .fontWeight(.light)
                  .frame(width: 330, height: 140)
-                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                 .font(.system(size: 14))
+                 .foregroundColor(Color.white)
+                 .font(.system(size: 15))
                  .background(ColorManager.grey3)
                  .cornerRadius(10)
                  .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)

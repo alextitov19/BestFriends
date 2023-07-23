@@ -5,21 +5,6 @@
 //  Created by Zhengxu Wang on 7/7/23.
 //
 
-//import SwiftUI
-//
-//struct FH10: View {
-//    var body: some View {
-//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-//    }
-//}
-//
-//struct FH10_Previews: PreviewProvider {
-//    static var previews: some View {
-//        FH10()
-//    }
-//}
-
-
 
 
 import SwiftUI
@@ -37,23 +22,16 @@ struct FH10: View {
     
     var body: some View {
         ZStack {
-//            ColorManager.grey4
-//            //                .opacity(0.6)
-//                .ignoresSafeArea()
-//
-            Color.black
-                .ignoresSafeArea()
+
             
-            AdPlayerView(name: "Galaxy2")
+            Image("CareHeartBalloon 1")
                 .ignoresSafeArea()
-                .blendMode(.screen)
-                .opacity(0.9)
+                .scaledToFit()
+                .opacity(0.8)
+
        
             ZStack {
-                
-                
-                
-                
+              
             }
            
             VStack {
@@ -62,7 +40,7 @@ struct FH10: View {
                     .frame(width: 300, height: 60)
                     .foregroundColor(Color.white)
                     .font(.system(size: 17))
-                    .background(ColorManager.grey4)
+                    .background(ColorManager.grey3)
                     .cornerRadius(10)
                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
             
@@ -74,7 +52,7 @@ struct FH10: View {
                     .frame(width: 300, height: 60)
                     .foregroundColor(Color.white)
                     .font(.system(size: 17))
-                    .background(ColorManager.grey4)
+                    .background(ColorManager.grey3)
                     .cornerRadius(10)
                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                 
@@ -87,7 +65,7 @@ struct FH10: View {
                            .frame(width: 300, height: 60)
                            .foregroundColor(Color.white)
                            .font(.system(size: 17))
-                           .background(ColorManager.grey4)
+                           .background(ColorManager.grey3)
                            .cornerRadius(10)
                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                    
@@ -96,37 +74,39 @@ struct FH10: View {
                     .frame(height: 50)
                 
                 HStack {
-                    NavigationLink(
-                        
-                        destination: InfoInsideChat(user: user),
-                        label: {
-                            Text("Create & Customize \nChat Rooms")
-                                .fontWeight(.light)
-                                .frame(width: 130, height: 50)
-                                .foregroundColor(ColorManager .grey4)
-                                .font(.system(size: 13))
-                                .background(Color.green)
-                                .cornerRadius(15)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                            
-                        })
                     
-                    //                    InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups
                     
                     NavigationLink(
                         
                         destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
                         label: {
                             Text("Invite \n& Accept \nFriends")
-                                .fontWeight(.light)
+                                .fontWeight(.regular)
                                 .frame(width: 80, height: 50)
-                                .foregroundColor(ColorManager .grey4)
+                                .foregroundColor(Color.white)
                                 .font(.system(size: 13))
-                                .background(Color.green)
+                                .background(Color.orange)
                                 .cornerRadius(15)
                                 .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                             
                         })
+                    
+                    
+                    NavigationLink(
+                        
+                        destination: InfoInsideChat(user: user),
+                        label: {
+                            Text("Create & Customize \nChat Rooms")
+                                .fontWeight(.regular)
+                                .frame(width: 130, height: 50)
+                                .foregroundColor(Color.white)
+                                .font(.system(size: 13))
+                                .background(Color.orange)
+                                .cornerRadius(15)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                            
+                        })
+                 
                 }
                     
                 Spacer ()
@@ -140,11 +120,11 @@ struct FH10: View {
                         destination: INFOPreload3(user: user),
                         label: {
                             Text("Free \nStickers")
-                                .fontWeight(.light)
+                                .fontWeight(.regular)
                                 .frame(width: 80, height: 50)
-                                .foregroundColor(ColorManager .grey4)
+                                .foregroundColor(Color.white)
                                 .font(.system(size: 13))
-                                .background(Color.green)
+                                .background(Color.purple)
                                 .cornerRadius(15)
                                 .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                             
@@ -155,11 +135,11 @@ struct FH10: View {
                     Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
                         
                         Text("Supportive \nInfluencers")
-                            .fontWeight(.light)
+                            .fontWeight(.regular)
                             .frame(width: 80, height: 50)
-                            .foregroundColor(ColorManager .grey4)
+                            .foregroundColor(Color.white)
                             .font(.system(size: 13))
-                            .background(Color.green)
+                            .background(Color.purple)
                             .cornerRadius(15)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         
@@ -170,11 +150,11 @@ struct FH10: View {
                                 destination: BuiltByTeensView(user: user, friends: friends),
                                 label: {
                                     Text("Our Story")
-                                        .fontWeight(.light)
+                                        .fontWeight(.regular)
                                         .frame(width: 80, height: 50)
-                                        .foregroundColor(ColorManager .grey4)
+                                        .foregroundColor(Color.white)
                                         .font(.system(size: 13))
-                                        .background(Color.green)
+                                        .background(Color.purple)
                                         .cornerRadius(15)
                                         .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                     
@@ -185,11 +165,11 @@ struct FH10: View {
                                 destination: InfoPushNotifications(user: user),
                                 label: {
                                     Text("CareHeart \nStreaks")
-                                        .fontWeight(.light)
+                                        .fontWeight(.regular)
                                         .frame(width: 80, height: 50)
-                                        .foregroundColor(ColorManager .grey4)
+                                        .foregroundColor(Color.white)
                                         .font(.system(size: 13))
-                                        .background(Color.green)
+                                        .background(Color.purple)
                                         .cornerRadius(15)
                                         .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                     

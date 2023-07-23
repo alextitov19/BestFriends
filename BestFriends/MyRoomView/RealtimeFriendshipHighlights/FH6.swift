@@ -25,55 +25,23 @@ struct FH6: View {
     @State private var shareTapped: Bool = false
     
     var body: some View {
-        //        ScrollView {
+       
         
         ZStack {
             
             Image("CareHeartBalloon 1")
                 .ignoresSafeArea()
                 .scaledToFit()
-                .opacity(0.4)
-            
-//            Color.black
-//                .ignoresSafeArea()
-//
-//            AdPlayerView(name: "Galaxy2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//                .opacity(0.9)
-//            if shareTapped {
-//
-//                ColorManager.grey4
-//                    .opacity(0.8)
-//                    .ignoresSafeArea()
-//
-//                AdPlayerView(name: "dramaLights")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//
-//            } else {
-//
-//                Image("FHBackground")
-//                    .resizable()
-//                    .scaledToFill()
-//                    .edgesIgnoringSafeArea(.all)
-                
-                //                ScrollView {
+                .opacity(0.8)
                 
                 VStack {
 
                     Text("Your Friend's \nEmotional Support")
-                        .font(.system(size: 35))
-                        .foregroundColor(ColorManager .grey1)
-                        .fontWeight(.thin)
+                        .font(.system(size: 45))
+                        .foregroundColor(Color.white)
+                        .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                    
-//                    Text("Emotional Support")
-//                        .font(.system(size: 45))
-//                        .foregroundColor(ColorManager .grey1)
-//                        .fontWeight(.thin)
-//                        .multilineTextAlignment(.center)
-                    
+ 
                     
                     ZStack {
                         
@@ -85,7 +53,7 @@ struct FH6: View {
                             .foregroundColor(Color.purple)
                             .frame(width: 375, height: 375)
                             .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                            .opacity(0.4)
+                            .opacity(0.9)
                         VStack {
                             
                             
@@ -102,10 +70,7 @@ struct FH6: View {
                             Spacer()
                                 .frame(height: 30)
                             
-//                            Image("Guy275")
-//                                .resizable()
-//                                .frame(width: 150, height: 150)
-                            
+
                         }
                         
                     }

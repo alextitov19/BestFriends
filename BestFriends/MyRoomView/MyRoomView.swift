@@ -21,11 +21,7 @@ struct MyRoomView: View {
     var body: some View {
         ZStack {
 
-            
-//            Image("FHBackground")
-//                .resizable()
-//                .scaledToFill()
-//                .edgesIgnoringSafeArea(.all)
+
             
 //            Image("blueBackground")
 //                .resizable()
@@ -33,15 +29,15 @@ struct MyRoomView: View {
 //                .edgesIgnoringSafeArea(.all)
 //                .opacity(0.2)
             
-            ColorManager .purple1
+            ColorManager .grey3
                 .ignoresSafeArea()
                 .scaledToFill()
-                .opacity(0.65)
+                .opacity(0.8)
             
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                .opacity(0.5)
+                .opacity(0.7)
             
      
             VStack {
@@ -70,7 +66,7 @@ struct MyRoomView: View {
                                 .scaledToFit()
                                 .frame(width: 35, height: 35)
                                 .opacity(0.5)
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                         })
                     
                     Spacer ()
@@ -110,7 +106,7 @@ struct MyRoomView: View {
                                     .scaledToFit()
                                     .frame(width: 35, height: 35)
                                     .opacity(0.5)
-                                    .foregroundColor(.white)
+                                    .foregroundColor(.black)
                             })
                       
                  

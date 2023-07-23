@@ -5,21 +5,6 @@
 //  Created by Zhengxu Wang on 7/15/23.
 //
 
-//import SwiftUI
-//
-//struct RR3: View {
-//    var body: some View {
-//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-//    }
-//}
-//
-//struct RR3_Previews: PreviewProvider {
-//    static var previews: some View {
-//        RR3()
-//    }
-//}
-//
-
 
 import Foundation
 import SwiftUI
@@ -41,7 +26,7 @@ struct RR3: View {
     @State private var shareTapped: Bool = false
     
     var body: some View {
-        //        ScrollView {
+      
         
         ZStack {
             
@@ -49,16 +34,16 @@ struct RR3: View {
             Image("CareHeartBalloon 1")
                 .ignoresSafeArea()
                 .scaledToFit()
-                .opacity(0.4)
+                .opacity(0.8)
             
          
             
             VStack {
                 
                 Text("Info Circle")
-                    .font(.system(size: 35))
-                    .foregroundColor(ColorManager .grey1)
-                    .fontWeight(.thin)
+                    .font(.system(size: 45))
+                    .foregroundColor(Color.white)
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
                 Text("to left of [Start Here] button")
@@ -80,7 +65,7 @@ struct RR3: View {
                         .foregroundColor(Color.purple)
                         .frame(width: 375, height: 375)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.4)
+                        .opacity(0.9)
                     VStack {
                         
                         
@@ -106,7 +91,7 @@ struct RR3: View {
                         Spacer()
                             .frame(height: 7)
                         
-                        Text("Customize Chat Backgrounds")
+                        Text("Customize Chat & Planet Backgrounds")
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.thin)

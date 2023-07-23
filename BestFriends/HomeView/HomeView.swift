@@ -62,10 +62,12 @@ struct HomeView: View {
                 }
                 
                 // Stars animation...
-                AdPlayerView(name: "Galaxy2")
+                AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.9)
+                    .opacity(0.99)
+                
+           
                 
                 VStack {
                     if ((homeData) != nil) {
@@ -78,7 +80,7 @@ struct HomeView: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 42, height: 42)
-                                .foregroundColor(ColorManager .purple1)
+                                .foregroundColor(Color.red)
                                 .glow(color: ColorManager.purple4, radius: 5)
                                 .opacity(0.5)
                                 .onTapGesture {
@@ -102,11 +104,14 @@ struct HomeView: View {
                                         label: {
                                             
                                             Image(systemName: "camera")
-                                                .resizable()
+                                              
+                                               .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 42, height: 42)
-                                                .opacity(0.5)
-                                                .foregroundColor(.white)
+//                                                .foregroundColor(ColorManager .purple1)
+                                                .frame(width: 45, height: 45)
+                                              
+                                                .opacity(0.6)
+//                                                .foregroundColor(.white)
                                             
                                             
 //                                            Text("PhotoPOP")

@@ -34,19 +34,24 @@ struct PhotoPopView: View {
             
 
             
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.9)
+            
             ColorManager.grey3
                 .ignoresSafeArea()
                 .ignoresSafeArea()
                 .onAppear()
                 .scaledToFill()
-                .opacity(0.50)
+                .opacity(0.5)
                 .onAppear(perform: loadData)
                 .sheet(isPresented: $isShowPhotoLibrary) {
                     ImagePicker(image: $attachmentImage, sourceType: pickerSourceType)
                         .onDisappear { createPhotoPop() }
                     
 
-                    
+                 
                     
                     
                 }
@@ -71,8 +76,8 @@ struct PhotoPopView: View {
                 
                 
                 Text("PhotoPOP")
-                    .foregroundColor(ColorManager .grey2)
-                    .font(.system(size: 40, weight: .regular))
+                    .foregroundColor(Color.white)
+                    .font(.system(size: 45, weight: .regular))
                     .opacity(0.7)
                     
             
@@ -120,7 +125,7 @@ struct PhotoPopView: View {
                         Image(systemName: "camera")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 30, height: 40)
+                            .frame(width: 45, height: 45)
                             .foregroundColor(ColorManager .orange4)
                         
                             .onTapGesture {
@@ -132,7 +137,7 @@ struct PhotoPopView: View {
                         Image(systemName: "photo")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 30, height: 35)
+                            .frame(width: 45, height: 45)
                             .foregroundColor(ColorManager .orange4)
                             .onTapGesture {
                                 pickerSourceType = .photoLibrary
