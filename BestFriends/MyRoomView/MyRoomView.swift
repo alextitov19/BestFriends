@@ -37,7 +37,21 @@ struct MyRoomView: View {
             VStack {
                 HStack {
                     
-                    
+                    NavigationLink(
+                        
+                        destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
+                        label: {
+                            Text("+ Friends")
+                                .fontWeight(.regular)
+                                .frame(width: 100, height: 33)
+                                .foregroundColor(Color.white)
+                                .font(.system(size: 13))
+                                .background(Color.orange)
+                                .cornerRadius(15)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                            
+                        })
+             
                     
 //                    NavigationLink(
 //                        destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
@@ -82,7 +96,6 @@ struct MyRoomView: View {
                             .cornerRadius(10)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                     })
-                     
                      
                  
                     

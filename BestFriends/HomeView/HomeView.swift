@@ -75,7 +75,7 @@ struct HomeView: View {
                         Spacer()
 //                            .frame(width: 10)
                         Spacer()
-                            .frame(height: 700)
+                            .frame(height: 670)
                         HStack {
                             
 //                            Spacer()
@@ -166,9 +166,9 @@ struct HomeView: View {
                         })
                             Text("tap \nme")
                                 .fontWeight(.thin)
-                                .frame(width: 50, height: 50)
+                                .frame(width: 40, height: 40)
                               .foregroundColor(Color.white)
-                                .font(.system(size: 17))
+                                .font(.system(size: 15))
                                 .background(Color.gray)
                             //                               .opacity(0.7)
                                 .cornerRadius(15)
