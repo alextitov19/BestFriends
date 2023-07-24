@@ -106,7 +106,7 @@ struct FH8: View {
                             
                             
                                 Spacer()
-                                    .frame(height: 40)
+                                    .frame(height: 70)
 
                         }
                         

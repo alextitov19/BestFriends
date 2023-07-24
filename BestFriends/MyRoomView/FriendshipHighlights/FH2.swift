@@ -75,7 +75,7 @@ struct FH2: View {
                             .multilineTextAlignment(.center)
                         
                         
-                        Text("loved by your closest friends")
+                        Text("loved by your FIVE closest friends")
                             .font(.system(size: 27))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.thin)
@@ -85,18 +85,18 @@ struct FH2: View {
                         Spacer()
                             .frame(height: 20)
                         
-                        Text("BestFriends is a closed social app")
-                            .font(.system(size: 20))
-                            .foregroundColor(ColorManager .grey1)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                        
-                        
-                        Text("for just 6 of you at a time")
-                            .font(.system(size: 20))
-                            .foregroundColor(ColorManager .grey1)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
+//                        Text("BestFriends is reserved for your")
+//                            .font(.system(size: 20))
+//                            .foregroundColor(ColorManager .grey1)
+//                            .fontWeight(.thin)
+//                            .multilineTextAlignment(.center)
+//
+//
+//                        Text("5 BFFs")
+//                            .font(.system(size: 20))
+//                            .foregroundColor(ColorManager .grey1)
+//                            .fontWeight(.thin)
+//                            .multilineTextAlignment(.center)
                         
                         
                         NavigationLink(

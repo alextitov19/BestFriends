@@ -111,7 +111,7 @@ struct FH4: View {
                                
                           
                             NavigationLink(
-                                destination: RR3(),
+                                destination: FH3(),
                                 label: {
                                     Text("->")
                                         .fontWeight(.thin)
