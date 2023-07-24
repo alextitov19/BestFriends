@@ -56,20 +56,18 @@ struct INFOPreloadA: View {
                 ColorManager.grey4
                     .opacity(0.8)
                     .ignoresSafeArea()
-                
-                Image("FHBackground")
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
+             
+                AdPlayerView(name: "sky2")
+                    .ignoresSafeArea()
                     .blendMode(.screen)
+                    .opacity(0.99)
 
+                //                Image("FHBackground")
+                //                    .resizable()
+                //                    .scaledToFill()
+                //                    .edgesIgnoringSafeArea(.all)
+                //                    .blendMode(.screen)
                 
-                
-//                AdPlayerView(name: "sky2")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//                    .opacity(0.99)
-
             }
             
 
@@ -102,7 +100,7 @@ struct INFOPreloadA: View {
                 Text("(when your friend 'shakes' their iPhone)")
                     .font(.system(size: 20))
                     .italic()
-                    .foregroundColor(ColorManager .grey4)
+                    .foregroundColor(ColorManager .grey1)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
@@ -119,7 +117,7 @@ struct INFOPreloadA: View {
                         .foregroundColor(Color.purple)
                         .frame(width: 475, height: 475)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.4)
+                        .opacity(0.7)
                     VStack {
                         
                         Text("Friend having one of those days!")

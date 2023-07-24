@@ -31,27 +31,30 @@ struct PhotoPopView: View {
     
     var body: some View {
         ZStack {
-            
+//
+//            ColorManager.grey4
+//                .opacity(0.8)
+//                .ignoresSafeArea()
 
+            
+            
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.99)
-        
             
             ColorManager.grey4
                 .ignoresSafeArea()
-                .ignoresSafeArea()
                 .onAppear()
                 .scaledToFill()
-                .opacity(0.5)
+                .opacity(0.8)
                 .onAppear(perform: loadData)
                 .sheet(isPresented: $isShowPhotoLibrary) {
                     ImagePicker(image: $attachmentImage, sourceType: pickerSourceType)
                         .onDisappear { createPhotoPop() }
                     
 
-           
+                
                     
                     
                 }

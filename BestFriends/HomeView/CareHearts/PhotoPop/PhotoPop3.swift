@@ -40,22 +40,22 @@ struct PhotoPop3: View {
         
         ZStack {
             
-//            ColorManager.grey2
-//                .opacity(0.8)
-//                .ignoresSafeArea()
-//
-//            AdPlayerView(name: "sky2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//                .opacity(0.9)
-
-            
-            Image("FHBackground")
-                .resizable()
-                .scaledToFill()
-                .edgesIgnoringSafeArea(.all)
+            ColorManager.grey4
+                .opacity(0.8)
+                .ignoresSafeArea()
+         
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
                 .blendMode(.screen)
+                .opacity(0.99)
             
+            
+//            Image("FHBackground")
+//                .resizable()
+//                .scaledToFill()
+//                .edgesIgnoringSafeArea(.all)
+//                .blendMode(.screen)
+//            
             VStack{
                 
                
