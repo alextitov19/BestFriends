@@ -74,7 +74,8 @@ struct HomeView: View {
                         
                         Spacer()
 //                            .frame(width: 10)
-                       
+                        Spacer()
+                            .frame(height: 700)
                         HStack {
                             
 //                            Spacer()
@@ -83,7 +84,7 @@ struct HomeView: View {
                             Image(systemName: "heart")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 30, height: 30)
+                                .frame(width: 40, height: 40)
                                 .foregroundColor(Color.red)
                                .glow(color: ColorManager.purple4, radius: 3)
                                 .opacity(0.5)
@@ -96,8 +97,10 @@ struct HomeView: View {
                             ) { EmptyView() }
 
                             
+                            
+                            
                             Spacer()
-                                .frame(width: 77)
+                                .frame(width: 295)
 
                           
                                 
@@ -111,7 +114,7 @@ struct HomeView: View {
                                               
                                                .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 30, height: 30)
+                                                .frame(width: 40, height: 40)
                                                 .glow(color: ColorManager.purple4, radius: 2)
                                                 .opacity(0.6)
 
@@ -155,20 +158,20 @@ struct HomeView: View {
                         NavigationLink(destination: MyRoomView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups), label: {
                             PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
                                 .scaledToFit()
-                                .frame(width: 75, height: 75)
+                                .frame(width: 120, height: 120)
                                 .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 11)
                                 .opacity(0.3)
                                 .padding()
                             
                         })
-                            Text("me")
-                                .fontWeight(.bold)
-                                .frame(width: 35, height: 30)
-//                                .foregroundColor(Color.white)
+                            Text("tap \nme")
+                                .fontWeight(.thin)
+                                .frame(width: 50, height: 50)
+                              .foregroundColor(Color.white)
                                 .font(.system(size: 17))
-                                .background(Color.green)
+                                .background(Color.gray)
                             //                               .opacity(0.7)
-                                .cornerRadius(10)
+                                .cornerRadius(15)
                                 .shadow(color: Color.white, radius: 2, x: 0, y: 1)
                             
 //                        })

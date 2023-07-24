@@ -297,6 +297,10 @@ struct FriendPlanetsView: View {
                         .scaledToFit()
                         .opacity(0.7)
                         .frame(width: 50, height: 50)
+
+                  
+                    
+                    
                     
                     Image(systemName: "plus")
                         .resizable()

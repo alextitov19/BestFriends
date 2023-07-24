@@ -23,12 +23,6 @@ struct MyRoomView: View {
 
 
             
-//            Image("blueBackground")
-//                .resizable()
-//                .scaledToFill()
-//                .edgesIgnoringSafeArea(.all)
-//                .opacity(0.2)
-            
             ColorManager .grey3
                 .ignoresSafeArea()
                 .scaledToFill()
