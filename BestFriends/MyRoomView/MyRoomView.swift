@@ -62,8 +62,8 @@ struct MyRoomView: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 37, height: 37)
-                                .opacity(0.5)
-                                .foregroundColor(.green)
+                                .opacity(0.9)
+                                .foregroundColor(.white)
                         })
                     
                     Spacer ()
@@ -101,8 +101,8 @@ struct MyRoomView: View {
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 37, height: 37)
-                                    .opacity(0.5)
-                                    .foregroundColor(.black)
+                                    .opacity(0.9)
+                                    .foregroundColor(.white)
                             })
                       
                  
