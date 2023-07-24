@@ -51,6 +51,12 @@ struct INFOPreloadA: View {
 
             } else {
                 
+                
+                
+                ColorManager.grey4
+                    .opacity(0.8)
+                    .ignoresSafeArea()
+                
                 Image("FHBackground")
                     .resizable()
                     .scaledToFill()
