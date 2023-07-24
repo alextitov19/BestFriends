@@ -15,6 +15,14 @@ import SwiftUI
 struct FH2: View {
     @EnvironmentObject var sessionManager: SessionManager
     
+    let user: User
+    let atmosphere: Atmosphere
+    let friends: [User]
+    let friendAtmospheres: [Atmosphere]
+    let groups: [Group]
+    
+    
+    
     @State private var selectedFriends: [String] = []
     @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
     @State private var shareColor = ColorManager.purple5
@@ -67,7 +75,7 @@ struct FH2: View {
                             .multilineTextAlignment(.center)
                         
                         
-                        Text("loved by your friends")
+                        Text("loved by your closest friends")
                             .font(.system(size: 27))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.thin)
@@ -77,7 +85,34 @@ struct FH2: View {
                         Spacer()
                             .frame(height: 20)
                         
-
+                        Text("BestFriends is a closed social app")
+                            .font(.system(size: 20))
+                            .foregroundColor(ColorManager .grey1)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        Text("for just 6 of you at a time")
+                            .font(.system(size: 20))
+                            .foregroundColor(ColorManager .grey1)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        NavigationLink(
+                            
+                            destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
+                            label: {
+                                Text("+ Friends")
+                                    .fontWeight(.regular)
+                                    .frame(width: 100, height: 33)
+                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 13))
+                                    .background(Color.orange)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                
+                            })
                     }
                     
                 }

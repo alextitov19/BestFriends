@@ -85,15 +85,15 @@ struct FH4: View {
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
-                            Spacer()
-                                .frame(height: 10)
-                            
-                            Text("what ever your friends wants to give you")
-                                .font(.system(size: 15))
-                                .italic()
-                                .foregroundColor(Color.white)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
+//                            Spacer()
+//                                .frame(height: 10)
+//                            
+//                            Text("what ever your friends wants to give you")
+//                                .font(.system(size: 15))
+//                                .italic()
+//                                .foregroundColor(Color.white)
+//                                .fontWeight(.thin)
+//                                .multilineTextAlignment(.center)
                             
                             
                             Spacer()

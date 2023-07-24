@@ -36,34 +36,23 @@ struct MyRoomView: View {
      
             VStack {
                 HStack {
-                    
-                    NavigationLink(
-                        
-                        destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
-                        label: {
-                            Text("+ Friends")
-                                .fontWeight(.regular)
-                                .frame(width: 100, height: 33)
-                                .foregroundColor(Color.white)
-                                .font(.system(size: 13))
-                                .background(Color.orange)
-                                .cornerRadius(15)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                            
-                        })
-             
-                    
-//                    NavigationLink(
-//                        destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
-//                        label: {
 //
-//                            Image(systemName: "bell")
-//                                .resizable()
-//                                .scaledToFit()
-//                                .frame(width: 35, height: 35)
-//                                .opacity(0.5)
-//                                .foregroundColor(.white)
+//                    NavigationLink(
+//
+//                        destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
+//                        label: {
+//                            Text("+ Friends")
+//                                .fontWeight(.regular)
+//                                .frame(width: 100, height: 33)
+//                                .foregroundColor(Color.white)
+//                                .font(.system(size: 13))
+//                                .background(Color.orange)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//
 //                        })
+             
+
                     
                     NavigationLink(
                         destination:  FH10(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
@@ -74,7 +63,7 @@ struct MyRoomView: View {
                                 .scaledToFit()
                                 .frame(width: 37, height: 37)
                                 .opacity(0.5)
-                                .foregroundColor(.black)
+                                .foregroundColor(.green)
                         })
                     
                     Spacer ()
@@ -84,7 +73,7 @@ struct MyRoomView: View {
                     
                       
                         
-                    NavigationLink( destination:  FH2(),
+                        NavigationLink( destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                     label: {
                         Text("Start Here")
                             .fontWeight(.regular)

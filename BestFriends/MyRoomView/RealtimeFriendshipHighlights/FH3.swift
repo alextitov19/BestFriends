@@ -55,33 +55,48 @@ struct FH3: View {
                             Spacer()
                                 .frame(height: 70)
                             
-                            Text("All these features are \nreal-time using \nPush Notifications \nto your iPhone")
-                                .font(.system(size: 27))
+                            Text("Stay connected to your friends")
+                                .font(.system(size: 25))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                             
                             
+                            
                             Spacer()
-                                .frame(height: 30)
+                                .frame(height: 15)
                             
-//                            Image("FatGuy")
-//                                .resizable()
-//                                .frame(width: 170, height: 170)
+                            Text("real-time")
+                                .font(.system(size: 35))
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.bold)
+                                .multilineTextAlignment(.center)
+                            Spacer()
+                                .frame(height: 15)
                             
+                            
+                            Text("when notifications are turned on")
+                                .font(.system(size: 20))
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("for BestFriends app")
+                                .font(.system(size: 20))
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+                            Spacer()
+                                .frame(height: 90)
+                            
+  
                         }
                         
                     }
                     VStack {
                         
-                        Spacer()
-                            .frame(height: 20)
-                        
-                        Text("Please turn on Notifications \nfor BestFriends")
-                            .font(.system(size: 28))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.regular)
-                            .multilineTextAlignment(.center)
+                 
                         
                         Button(action: {
                             sessionManager.showLogin()
