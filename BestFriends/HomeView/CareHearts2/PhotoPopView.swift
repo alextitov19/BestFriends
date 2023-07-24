@@ -38,12 +38,13 @@ struct PhotoPopView: View {
 
             
             
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-                .opacity(0.99)
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.99)
             
-            ColorManager.grey4
+            
+            AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .onAppear()
                 .scaledToFill()
@@ -52,7 +53,21 @@ struct PhotoPopView: View {
                 .sheet(isPresented: $isShowPhotoLibrary) {
                     ImagePicker(image: $attachmentImage, sourceType: pickerSourceType)
                         .onDisappear { createPhotoPop() }
-                    
+            
+            
+//            
+//            
+//            
+//            ColorManager.grey4
+//                .ignoresSafeArea()
+//                .onAppear()
+//                .scaledToFill()
+//                .opacity(0.8)
+//                .onAppear(perform: loadData)
+//                .sheet(isPresented: $isShowPhotoLibrary) {
+//                    ImagePicker(image: $attachmentImage, sourceType: pickerSourceType)
+//                        .onDisappear { createPhotoPop() }
+//                    
 
                 
                     
