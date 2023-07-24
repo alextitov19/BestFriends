@@ -12,6 +12,13 @@ import SwiftUI
 struct RR3: View {
     @EnvironmentObject var sessionManager: SessionManager
     
+    
+    let user: User
+    let atmosphere: Atmosphere
+    let friends: [User]
+    let friendAtmospheres: [Atmosphere]
+    let groups: [Group]
+    
     @State private var selectedFriends: [String] = []
     @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
     @State private var shareColor = ColorManager.purple5
@@ -40,20 +47,32 @@ struct RR3: View {
             
             VStack {
                 
-                Text("Info Circle")
-                    .font(.system(size: 45))
-                    .foregroundColor(Color.white)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                
-                Text("to left of [Start Here] button")
-                    .font(.system(size: 15))
-                    .italic()
-                    .foregroundColor(ColorManager .grey1)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
                 
                 
+                HStack {
+                    
+                    Text("Info Circle")
+                        .font(.system(size: 45))
+                        .foregroundColor(Color.white)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                    
+                 Spacer ()
+                        .frame(width: 10)
+                    
+                    NavigationLink(
+                        destination:  FH10(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        label: {
+                            
+                            Image(systemName: "info.circle")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 45, height: 45)
+                                .opacity(0.9)
+                                .foregroundColor(.white)
+                        })
+                    
+                }
                 
                 ZStack {
                     
@@ -143,7 +162,7 @@ struct RR3: View {
                         .frame(height: 20)
                     
                     
-                    //                  
+                    //
                     //                    NavigationLink(
                     //                        destination: FH3(),
                     //                        label: {
@@ -157,7 +176,7 @@ struct RR3: View {
                     //                                .cornerRadius(5)
                     //                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     //                        }
-                    //                        
+                    //
                     //                    )}
                     
                     //                VStack {
@@ -190,5 +209,6 @@ struct RR3: View {
         }
         
     }
+    
+    
 }
-

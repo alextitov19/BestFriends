@@ -11,6 +11,13 @@ import SwiftUI
 struct FH6: View {
     @EnvironmentObject var sessionManager: SessionManager
     
+    
+    let user: User
+     let atmosphere: Atmosphere
+     let friends: [User]
+     let friendAtmospheres: [Atmosphere]
+     let groups: [Group]
+    
     @State private var selectedFriends: [String] = []
     @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
     @State private var shareColor = ColorManager.purple5
@@ -82,7 +89,7 @@ struct FH6: View {
                                
                           
                             NavigationLink(
-                                destination: FH5(),
+                                destination: FH5(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                                     Text("->")
                                         .fontWeight(.thin)
