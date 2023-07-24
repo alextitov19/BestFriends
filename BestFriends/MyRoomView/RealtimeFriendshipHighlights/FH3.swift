@@ -38,6 +38,12 @@ struct FH3: View {
 
                 VStack {
                     
+                    Text("Real-time")
+                        .font(.system(size: 45))
+                        .foregroundColor(Color.white)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                    
                     ZStack {
                         
                         Spacer()
@@ -71,6 +77,7 @@ struct FH3: View {
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.bold)
                                 .multilineTextAlignment(.center)
+                           
                             Spacer()
                                 .frame(height: 15)
                             
@@ -131,7 +138,7 @@ struct FH3: View {
                           )}
                     
                         Spacer()
-                            .frame(height: 40)
+                            .frame(height: 80)
                         
                     }
                     
