@@ -29,10 +29,7 @@ struct JournalsView: View {
         ZStack {
 
             
-            ColorManager .purple4
-                .opacity(0.6)
-                .ignoresSafeArea()
-                .onAppear { loadData() }
+        
             
             
 //            Image("Hollywood")
@@ -45,7 +42,10 @@ struct JournalsView: View {
 //                .blendMode(.screen)
 //                .opacity(0.4)
             
-           
+            ColorManager .purple4
+                .opacity(0.6)
+                .ignoresSafeArea()
+                .onAppear { loadData() }
             
             Image("FHBackground")
                      .resizable()

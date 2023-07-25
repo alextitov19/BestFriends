@@ -25,17 +25,44 @@ struct JournalView: View {
     var body: some View {
         ZStack {
             
-           
-            Color.white
+            ColorManager .purple4
+                .opacity(0.6)
                 .ignoresSafeArea()
-                .blendMode(.screen)
-                .opacity(0.7)
+             
             
-            Color.pink
-                .ignoresSafeArea()
-                .opacity(0.8)
-                .onAppear {
-                    loadImages()
+            Image("FHBackground")
+                     .resizable()
+                     .scaledToFill()
+            
+                     .edgesIgnoringSafeArea(.all)
+                            .onAppear {
+                               loadImages()
+            
+//            Color.pink
+//                .ignoresSafeArea()
+////                .blendMode(.screen)
+//                .opacity(0.9)
+//
+//            Color.white
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.5)
+//                .onAppear {
+//                    loadImages()
+            
+            
+            
+//
+//            Color.white
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.7)
+//
+//            Color.pink
+//                .ignoresSafeArea()
+//                .opacity(0.8)
+//                .onAppear {
+//                    loadImages()
                 }
             
             ScrollView(.vertical, showsIndicators: false) {
@@ -46,18 +73,18 @@ struct JournalView: View {
                     
                     Text(journal.text)
                         .font(.system(size: 16))
-                        .foregroundColor(ColorManager.pmbc_pink)
+                        .foregroundColor(Color.white)
                         .multilineTextAlignment(.leading)
                         .padding()
                     
                     HStack {
                         VStack {
                             
-                            Text("today I am feeling")
-                                .font(.system(size: 20))
-                                .foregroundColor(ColorManager.grey4)
-                                .multilineTextAlignment(.center)
-                                .padding()
+//                            Text("today I am feeling")
+//                                .font(.system(size: 20))
+//                                .foregroundColor(ColorManager.grey4)
+//                                .multilineTextAlignment(.center)
+//                                .padding()
                             
                             if journal.mood < 0 {
                                 Image("sadMood")
@@ -71,7 +98,7 @@ struct JournalView: View {
                                 Image("happyMood")
                                     .renderingMode(.template)
                                     .resizable()
-                                    .foregroundColor(.pink)
+                                    .foregroundColor(.yellow)
                                     .frame(width: 30, height: 30)
                             }
                             
