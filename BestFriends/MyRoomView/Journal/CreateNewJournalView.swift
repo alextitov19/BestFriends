@@ -24,12 +24,13 @@ struct CreateNewJournalView: View {
     
     var body: some View {
         ZStack {
-            ColorManager.purple2
+            Color.cyan
+                .opacity(0.95)
             
             VStack{
                 Text("new Crush post")
                     .font(.system(size: 35, weight: .regular))
-                    .foregroundColor(ColorManager.purple5)
+                    .foregroundColor(Color.cyan)
                 
                 TextEditor(text: $text)
                     .font(.system(size: 16, weight: .light))
@@ -39,8 +40,8 @@ struct CreateNewJournalView: View {
                     .cornerRadius(15)
                 
                 Text("today I'm ...")
-                    .font(.system(size: 20, weight: .regular))
-                    .foregroundColor(ColorManager.purple5)
+                    .font(.system(size: 25, weight: .light))
+                    .foregroundColor(ColorManager .grey4)
                 
                 HStack {
                     Image("sadMood")
@@ -79,7 +80,7 @@ struct CreateNewJournalView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 45, height: 45)
-                        .foregroundColor(ColorManager.purple5)
+                        .foregroundColor(Color.purple)
                         .onTapGesture { showsAlert = true }
                         .confirmationDialog("Send an image", isPresented: $showsAlert, titleVisibility: .visible) {
                             Button("gallery", action: {
@@ -104,8 +105,12 @@ struct CreateNewJournalView: View {
                         createTapped()
                     }, label: {
                         ZStack {
-                            ColorManager.pmbc_green
-                            
+                        
+                            Color.red
+                                .blendMode(.screen)
+                                .opacity(0.5)
+                            Color.white
+                                .blendMode(.screen)
                             Text("Post")
                                 .font(.system(size: 30))
                                 .foregroundColor(Color.white)
@@ -119,7 +124,7 @@ struct CreateNewJournalView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 50, height: 50)
-                        .foregroundColor(Color.red)
+                        .foregroundColor(Color.purple)
                         .onTapGesture {
                             isWeatherPresented = true
                         }
