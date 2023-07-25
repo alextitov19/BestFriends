@@ -106,11 +106,13 @@ struct CreateNewJournalView: View {
                     }, label: {
                         ZStack {
                         
-                            Color.red
-                                .blendMode(.screen)
-                                .opacity(0.5)
+                            Color.pink
+//                                .blendMode(.screen)
+                                .opacity(0.9)
                             Color.white
                                 .blendMode(.screen)
+                                .opacity(0.5)
+                            
                             Text("Post")
                                 .font(.system(size: 30))
                                 .foregroundColor(Color.white)
