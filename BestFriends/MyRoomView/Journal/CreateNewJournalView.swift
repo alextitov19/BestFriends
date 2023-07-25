@@ -39,9 +39,9 @@ struct CreateNewJournalView: View {
                     .padding(.vertical)
                     .cornerRadius(15)
                 
-                Text("today I'm ...")
-                    .font(.system(size: 25, weight: .light))
-                    .foregroundColor(ColorManager .grey4)
+//                Text("today I'm ...")
+//                    .font(.system(size: 25, weight: .light))
+//                    .foregroundColor(ColorManager .grey4)
                 
                 HStack {
                     Image("sadMood")
@@ -100,27 +100,69 @@ struct CreateNewJournalView: View {
                                 }
                         }
                         .padding()
+        
+//                    ******************************** Private
                     
-                    Button(action: {
-                        createTapped()
-                    }, label: {
-                        ZStack {
+                    VStack {
+                        Button(action: {
+                            createTapped()
+                        }, label: {
+                            ZStack {
+                                
+                                Color.pink
+                                //                                .blendMode(.screen)
+                                    .opacity(0.9)
+                                Color.white
+                                    .blendMode(.screen)
+                                    .opacity(0.5)
+                                
+                                VStack {
+                                    Text("Post")
+                                        .font(.system(size: 25))
+                                        .foregroundColor(Color.white)
+                                    
+                                    Text("Private")
+                                        .font(.system(size: 17))
+                                        .foregroundColor(ColorManager .grey4)
+                                }
+                            }
+                            .frame(width: 100, height: 50)
+                            .cornerRadius(15)
+                        })
+                        .padding()
                         
-                            Color.pink
-//                                .blendMode(.screen)
-                                .opacity(0.9)
-                            Color.white
-                                .blendMode(.screen)
-                                .opacity(0.5)
-                            
-                            Text("Post")
-                                .font(.system(size: 30))
-                                .foregroundColor(Color.white)
-                        }
-                        .frame(width: 100, height: 50)
-                        .cornerRadius(15)
-                    })
-                    .padding()
+                        //                    ******************************** Post to FriendGroup
+                        
+                        Button(action: {
+                            createTapped()
+                        }, label: {
+                            ZStack {
+                                
+                                Color.pink
+                                //                                .blendMode(.screen)
+                                    .opacity(0.9)
+                                Color.white
+                                    .blendMode(.screen)
+                                    .opacity(0.5)
+                               
+                                VStack {
+                                    Text("Post")
+                                        .font(.system(size: 25))
+                                        .foregroundColor(Color.white)
+                                    
+                                    Text("FriendGroup")
+                                        .font(.system(size: 17))
+                                        .foregroundColor(ColorManager .grey4)
+                                }
+                                
+                            }
+                            .frame(width: 150, height: 50)
+                            .cornerRadius(15)
+                        })
+                        .padding()
+                    }
+        
+//                    ********************************
                   
                     Image(systemName: "thermometer.sun")
                         .resizable()
