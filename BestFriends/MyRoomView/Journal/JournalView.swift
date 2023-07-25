@@ -24,8 +24,16 @@ struct JournalView: View {
     
     var body: some View {
         ZStack {
-            ColorManager.purple2
+            
+           
+            Color.white
                 .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.7)
+            
+            Color.pink
+                .ignoresSafeArea()
+                .opacity(0.8)
                 .onAppear {
                     loadImages()
                 }
@@ -34,18 +42,18 @@ struct JournalView: View {
                 VStack {
                     Text(dateString)
                         .font(.system(size: 24, weight: .light))
-                        .foregroundColor(ColorManager.purple5)
+                        .foregroundColor(Color.black)
                     
                     Text(journal.text)
                         .font(.system(size: 16))
-                        .foregroundColor(ColorManager.purple4)
+                        .foregroundColor(ColorManager.pmbc_pink)
                         .multilineTextAlignment(.leading)
                         .padding()
                     
                     HStack {
                         VStack {
                             
-                            Text("My attitude towards my Crush")
+                            Text("today I am feeling")
                                 .font(.system(size: 20))
                                 .foregroundColor(ColorManager.grey4)
                                 .multilineTextAlignment(.center)
@@ -63,7 +71,7 @@ struct JournalView: View {
                                 Image("happyMood")
                                     .renderingMode(.template)
                                     .resizable()
-                                    .foregroundColor(.yellow)
+                                    .foregroundColor(.pink)
                                     .frame(width: 30, height: 30)
                             }
                             

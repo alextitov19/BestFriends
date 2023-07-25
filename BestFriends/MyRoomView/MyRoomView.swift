@@ -449,7 +449,7 @@ struct MyRoomView: View {
                             destination:  JournalsView(friends: friends),
                             label: {
                                 
-                                Image("Group 57")
+                                Image("Group 59")
                                     .resizable()
                                     .frame(width: 320, height: 170)
                                     .cornerRadius(20)
@@ -467,7 +467,7 @@ struct MyRoomView: View {
                                         
                                         NavigationLink( destination: JournalsView(friends: friends),
                                                         label: {
-                                            Text("My Crush")
+                                            Text("Private")
                                                 .fontWeight(.regular)
                                                 .frame(width: 120, height: 35)
                                                 .foregroundColor(ColorManager .purple5)
@@ -494,7 +494,7 @@ struct MyRoomView: View {
 //
                                         NavigationLink( destination:   RR2(friends: friends),
                                                         label: {
-                                            Text("Share")
+                                            Text("FriendGroup")
                                                 .fontWeight(.regular)
                                                 .frame(width: 120, height: 35)
                                                 .foregroundColor(ColorManager .grey4)

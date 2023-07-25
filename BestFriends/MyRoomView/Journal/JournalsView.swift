@@ -29,7 +29,7 @@ struct JournalsView: View {
         ZStack {
 
             
-            ColorManager .purple3
+            ColorManager .purple4
                 .opacity(0.6)
                 .ignoresSafeArea()
                 .onAppear { loadData() }
@@ -39,11 +39,18 @@ struct JournalsView: View {
 //                .opacity(0.4)
 //                .ignoresSafeArea()
 //                .onAppear { loadData() }
-          
-            AdPlayerView(name: "dramaLights")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-                .opacity(0.4)
+//          
+//            AdPlayerView(name: "dramaLights")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.4)
+            
+           
+            
+            Image("FHBackground")
+                     .resizable()
+                     .scaledToFill()
+                     .edgesIgnoringSafeArea(.all)
             
             VStack {
                 Text(selectedCategory)
@@ -188,8 +195,7 @@ struct JournalsView: View {
     private struct addButtonBody: View {
         var body: some View {
             ZStack {
-                ColorManager.purple3
-            
+                Color.pink
                 Text("Update My Crush")
                     .foregroundColor(Color.white)
                     .font(.headline)
@@ -197,34 +203,27 @@ struct JournalsView: View {
             }
             .frame(width: 230, height: 50)
             .cornerRadius(15)
-            .opacity(0.7)
+            .opacity(0.6)
         }
     }
     
     private struct vibeTrackerButtonBody: View {
         var body: some View {
             ZStack {
-                ColorManager.purple3
-            
-                Text("My Crush 'Vibe'")
+                Color.pink
+                Text("Update My Crush")
                     .foregroundColor(Color.white)
                     .font(.headline)
 
             }
             .frame(width: 230, height: 50)
             .cornerRadius(15)
-            .opacity(0.7)
-                
-            }
-           
-            
-//            .fontWeight(.regular)
-//            .frame(width: 120, height: 35)
-           
-            
-           
+            .opacity(0.6)
         }
     }
+        
+        }
+    
         
     private struct JournalRowView: View {
         let journal: Journal
@@ -240,7 +239,7 @@ struct JournalsView: View {
         
         var body: some View {
             ZStack {
-                ColorManager.purple2
+                Color.cyan
                 
                 VStack {
                     HStack {
@@ -251,7 +250,7 @@ struct JournalsView: View {
                     
                     Text(journal.text)
                         .font(.system(size: 16, weight: .light))
-                        .foregroundColor(ColorManager.purple5)
+                        .foregroundColor(Color.white)
                 }
                 .padding()
             }
