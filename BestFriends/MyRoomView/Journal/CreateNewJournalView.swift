@@ -27,7 +27,7 @@ struct CreateNewJournalView: View {
             ColorManager.purple2
             
             VStack{
-                Text("New Crush Entry")
+                Text("new Crush post")
                     .font(.system(size: 35, weight: .regular))
                     .foregroundColor(ColorManager.purple5)
                 
@@ -37,6 +37,10 @@ struct CreateNewJournalView: View {
                     .foregroundColor(ColorManager.purple5)
                     .padding(.vertical)
                     .cornerRadius(15)
+                
+                Text("today I'm ...")
+                    .font(.system(size: 20, weight: .regular))
+                    .foregroundColor(ColorManager.purple5)
                 
                 HStack {
                     Image("sadMood")
