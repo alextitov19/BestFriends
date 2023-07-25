@@ -492,7 +492,7 @@ struct MyRoomView: View {
 //                                        JournalView(user: user)
                                         
 //
-                                        NavigationLink( destination:   CH1(),
+                                        NavigationLink( destination:   RR2(friends: friends),
                                                         label: {
                                             Text("Share")
                                                 .fontWeight(.regular)

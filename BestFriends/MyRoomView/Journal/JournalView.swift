@@ -44,6 +44,13 @@ struct JournalView: View {
                     
                     HStack {
                         VStack {
+                            
+                            Text("My attitude towards my Crush")
+                                .font(.system(size: 20))
+                                .foregroundColor(ColorManager.grey4)
+                                .multilineTextAlignment(.center)
+                                .padding()
+                            
                             if journal.mood < 0 {
                                 Image("sadMood")
                                     .renderingMode(.template)

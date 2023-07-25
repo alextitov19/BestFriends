@@ -75,7 +75,7 @@ struct HomeView: View {
                         Spacer()
 //                            .frame(width: 10)
                         Spacer()
-                            .frame(height: 670)
+                            .frame(height: 663)
                         HStack {
                             
 //                            Spacer()
