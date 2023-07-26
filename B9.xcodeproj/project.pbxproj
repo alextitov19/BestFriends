@@ -704,9 +704,7 @@
 		2DBF3EDF2A61ACC400CB1CAD /* RR */ = {
 			isa = PBXGroup;
 			children = (
-				2DBF3EE02A61ACD400CB1CAD /* RR1.swift */,
 				2DBF3EE22A61ACE100CB1CAD /* RR2.swift */,
-				2DBF3EE62A61ACF500CB1CAD /* RR4.swift */,
 				2DBF3EE82A61ACFF00CB1CAD /* RR5.swift */,
 				2DBF3EEA2A61AD0900CB1CAD /* RR6.swift */,
 				2DBF3EEC2A61AD1200CB1CAD /* RR7.swift */,
@@ -721,7 +719,7 @@
 			isa = PBXGroup;
 			children = (
 				2DFB03052A57220C00669948 /* FH1.swift */,
-				2DFB03072A57221600669948 /* FH2.swift */,
+				2DFB03172A57228D00669948 /* FH10.swift */,
 			);
 			path = FriendshipHighlights;
 			sourceTree = "<group>";
@@ -756,11 +754,13 @@
 		2DFB032E2A5D333F00669948 /* RealtimeFriendshipHighlights */ = {
 			isa = PBXGroup;
 			children = (
-				2DFB03172A57228D00669948 /* FH10.swift */,
+				2DFB03072A57221600669948 /* FH2.swift */,
+				2DBF3EE02A61ACD400CB1CAD /* RR1.swift */,
 				2DFB03152A57228400669948 /* FH9.swift */,
 				2DFB03132A57227900669948 /* FH8.swift */,
-				2DFB03112A57226E00669948 /* FH7.swift */,
 				2DFB030F2A57226200669948 /* FH6.swift */,
+				2DBF3EE62A61ACF500CB1CAD /* RR4.swift */,
+				2DFB03112A57226E00669948 /* FH7.swift */,
 				2DFB030D2A57223E00669948 /* FH5.swift */,
 				2DFB030B2A57223100669948 /* FH4.swift */,
 				2DFB03092A57222300669948 /* FH3.swift */,

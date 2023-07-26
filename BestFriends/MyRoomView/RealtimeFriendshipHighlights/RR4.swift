@@ -1,14 +1,16 @@
 //
-//  FH6.swift
+//  RR4.swift
 //  BestFriends
 //
-//  Created by Zhengxu Wang on 7/7/23.
+//  Created by Zhengxu Wang on 7/15/23.
 //
+
+
 
 import Foundation
 import SwiftUI
 
-struct FH6: View {
+struct RR4: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     
@@ -44,24 +46,24 @@ struct FH6: View {
                 VStack {
                     
                     
-                    Text("CareHeart")
+                    Text("Sharing my")
                         .font(.system(size: 45))
                         .foregroundColor(Color.white)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
-                    Text("Emotional Support")
+                    Text("Crushes")
                         .font(.system(size: 45))
                         .foregroundColor(Color.white)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
 
-                    Text("Hugs")
-                        .font(.system(size: 45))
-                        .foregroundColor(Color.white)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
- 
+//                    Text("Hugs")
+//                        .font(.system(size: 45))
+//                        .foregroundColor(Color.white)
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//
                     
                     ZStack {
                         
@@ -80,7 +82,7 @@ struct FH6: View {
                             Spacer()
                                 .frame(height: 30)
                             
-                            Text("Tough day? \n\nYour friend sent a HUG, \nhold phone to your heart. \n\nYep, it vibrates.")
+                            Text("Quick \n\nSimple \nFunm\n\n")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
@@ -102,7 +104,7 @@ struct FH6: View {
                                
                           
                             NavigationLink(
-                                destination: RR4(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                destination: FH7(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                                     Text("->")
                                         .fontWeight(.thin)
