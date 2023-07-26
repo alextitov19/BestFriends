@@ -84,19 +84,7 @@ struct FH2: View {
                         
                         Spacer()
                             .frame(height: 20)
-                        
-//                        Text("BestFriends is reserved for your")
-//                            .font(.system(size: 20))
-//                            .foregroundColor(ColorManager .grey1)
-//                            .fontWeight(.thin)
-//                            .multilineTextAlignment(.center)
-//
-//
-//                        Text("5 BFFs")
-//                            .font(.system(size: 20))
-//                            .foregroundColor(ColorManager .grey1)
-//                            .fontWeight(.thin)
-//                            .multilineTextAlignment(.center)
+              
                         
                         
                         NavigationLink(
@@ -113,6 +101,22 @@ struct FH2: View {
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                 
                             })
+                        Spacer()
+                            .frame(height: 20)
+                        
+                        Text("A friend may well be reckoned \nthe masterpiece of nature.")
+                            .font(.system(size: 17))
+                            .italic()
+                            .foregroundColor(Color.white)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        Text("- - Emerson")
+                            .font(.system(size: 13))
+                            .foregroundColor(ColorManager .grey1)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
                     }
                     
                 }

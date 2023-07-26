@@ -47,24 +47,24 @@ struct RR1: View {
                 
                 VStack {
 
-                    Text("Friendship")
+                    Text("Celebrating")
                         .font(.system(size: 45))
                         .foregroundColor(Color.white)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
-                    Text("Prompts")
+                    Text("Friendships")
                         .font(.system(size: 45))
                         .foregroundColor(Color.white)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
-                    Text("celebrating friendships")
-                        .font(.system(size: 17))
-                        .italic()
-                        .foregroundColor(Color.white)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
+//                    Text("celebrating friendships")
+//                        .font(.system(size: 17))
+//                        .italic()
+//                        .foregroundColor(Color.white)
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
                     
                     ZStack {
                         
@@ -87,11 +87,11 @@ struct RR1: View {
                             
                             HStack {
                                 
-                                Text("Mon _")
-                                    .font(.system(size: 25))
-                                    .foregroundColor(ColorManager .grey1)
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
+//                                Text("Mon _")
+//                                    .font(.system(size: 25))
+//                                    .foregroundColor(ColorManager .grey1)
+//                                    .fontWeight(.light)
+//                                    .multilineTextAlignment(.center)
                                 
                                 
                                 Text("emotional support")
@@ -116,11 +116,7 @@ struct RR1: View {
                             
                             HStack {
                                 
-                                Text("Wed _")
-                                    .font(.system(size: 25))
-                                    .foregroundColor(ColorManager .grey1)
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
+                                
                                 
                                 Text("sharing your")
                                     .font(.system(size: 25))
@@ -128,6 +124,7 @@ struct RR1: View {
                                     .foregroundColor(ColorManager .grey1)
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
+                            }
                                 
                                 Text("Crushes")
                                     .font(.system(size: 25))
@@ -135,18 +132,18 @@ struct RR1: View {
                                     .fontWeight(.bold)
                                     .multilineTextAlignment(.center)
                                 
-                            }
+                            
                             
                             Spacer()
                                 .frame(height: 25)
                             
                             HStack {
                                 
-                                Text("Fri _")
-                                    .font(.system(size: 25))
-                                    .foregroundColor(ColorManager .grey1)
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
+//                                Text("Fri _")
+//                                    .font(.system(size: 25))
+//                                    .foregroundColor(ColorManager .grey1)
+//                                    .fontWeight(.light)
+//                                    .multilineTextAlignment(.center)
                                 
                                 Text("'shake' your iPhone for")
                                     .font(.system(size: 25))
