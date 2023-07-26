@@ -47,7 +47,7 @@ struct RR1: View {
                 
                 VStack {
 
-                    Text("Notification")
+                    Text("Friendship")
                         .font(.system(size: 45))
                         .foregroundColor(Color.white)
                         .fontWeight(.light)

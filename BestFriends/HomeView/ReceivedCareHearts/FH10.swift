@@ -23,12 +23,20 @@ struct FH10: View {
     var body: some View {
         ZStack {
 
-            
-            Image("CareHeartBalloon 1")
+            ColorManager .purple4
+                .opacity(0.6)
                 .ignoresSafeArea()
-                .scaledToFit()
-                .opacity(0.8)
 
+            
+            Image("FHBackground")
+                     .resizable()
+                     .scaledToFill()
+                     .edgesIgnoringSafeArea(.all)
+            
+            Circle()
+                          .frame(width: 300, height: 300)
+                          .foregroundColor(ColorManager.purple3)
+                          .offset(x: -200, y: 400)
        
             ZStack {
               
@@ -43,7 +51,7 @@ struct FH10: View {
 //                    .background(ColorManager.grey3)
 //                    .cornerRadius(10)
 //                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//            
+//
                 Spacer ()
                     .frame(height: 15)
                 
@@ -52,7 +60,7 @@ struct FH10: View {
                     .frame(width: 300, height: 60)
                     .foregroundColor(Color.white)
                     .font(.system(size: 17))
-                    .background(ColorManager.grey3)
+                    .background(Color.cyan)
                     .cornerRadius(10)
                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                 
@@ -65,7 +73,7 @@ struct FH10: View {
                            .frame(width: 300, height: 60)
                            .foregroundColor(Color.white)
                            .font(.system(size: 17))
-                           .background(ColorManager.grey3)
+                           .background(Color.cyan)
                            .cornerRadius(10)
                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                    
@@ -101,7 +109,8 @@ struct FH10: View {
                                 .frame(width: 130, height: 50)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 13))
-                                .background(Color.orange)
+                                .background(Color.pink)
+                                .opacity(0.85)
                                 .cornerRadius(15)
                                 .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                             
@@ -119,12 +128,13 @@ struct FH10: View {
                         
                         destination: INFOPreload3(user: user),
                         label: {
-                            Text("Free \nStickers")
+                            Text("REWARD \nStickers")
                                 .fontWeight(.regular)
                                 .frame(width: 80, height: 50)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 13))
-                                .background(Color.purple)
+                                .background(Color.pink)
+                                .opacity(0.85)
                                 .cornerRadius(15)
                                 .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                             
@@ -139,7 +149,8 @@ struct FH10: View {
                             .frame(width: 80, height: 50)
                             .foregroundColor(Color.white)
                             .font(.system(size: 13))
-                            .background(Color.purple)
+                            .background(Color.pink)
+                            .opacity(0.85)
                             .cornerRadius(15)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         
@@ -154,7 +165,8 @@ struct FH10: View {
                                         .frame(width: 80, height: 50)
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 13))
-                                        .background(Color.purple)
+                                        .background(Color.pink)
+                                        .opacity(0.85)
                                         .cornerRadius(15)
                                         .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                     
@@ -169,7 +181,8 @@ struct FH10: View {
                                         .frame(width: 80, height: 50)
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 13))
-                                        .background(Color.purple)
+                                        .background(Color.pink)
+                                        .opacity(0.85)
                                         .cornerRadius(15)
                                         .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                     

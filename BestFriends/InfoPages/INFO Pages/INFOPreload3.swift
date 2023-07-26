@@ -24,21 +24,18 @@ struct INFOPreload3: View {
     var body: some View {
         ZStack {
 
-            ColorManager .grey4
+//            ColorManager .grey4
+//                .ignoresSafeArea()
+//                .onAppear()
+            ColorManager .purple4
+                .opacity(0.6)
                 .ignoresSafeArea()
-                .onAppear()
 
-            //
-            //            AdPlayerView(name: "dramaLights")
-            //                .ignoresSafeArea()
-            //                .blendMode(.screen)
-            //                .opacity(0.75)
-
-
-//            Circle()
-//                .frame(width: 300, height: 300)
-//                .foregroundColor(ColorManager.purple2)
-//                .offset(x: 200, y: -450)
+            
+            Image("FHBackground")
+                     .resizable()
+                     .scaledToFill()
+                     .edgesIgnoringSafeArea(.all)
 
             Circle()
                 .frame(width: 300, height: 300)
@@ -51,27 +48,27 @@ struct INFOPreload3: View {
 
             VStack {
 
-                Text("now you can let the outside of you")
-                                   .font(.system(size: 22))
-                                   .italic()
-                                   .foregroundColor(ColorManager.grey1)
-                                   .fontWeight(.thin)
-                                   .multilineTextAlignment(.center)
-                               
-                               Text("match the inside of you")
-                                   .font(.system(size: 22))
-                                   .italic()
-                                   .foregroundColor(ColorManager.grey1)
-                                   .fontWeight(.thin)
-                                   .multilineTextAlignment(.center)
-                               
-                               
-                               Text("on social media")
-                                   .font(.system(size: 22))
-                                   .italic()
-                                   .foregroundColor(ColorManager.grey1)
-                                   .fontWeight(.thin)
-                                   .multilineTextAlignment(.center)
+//                Text("now you can let the outside of you")
+//                                   .font(.system(size: 22))
+//                                   .italic()
+//                                   .foregroundColor(ColorManager.grey1)
+//                                   .fontWeight(.thin)
+//                                   .multilineTextAlignment(.center)
+//
+//                               Text("match the inside of you")
+//                                   .font(.system(size: 22))
+//                                   .italic()
+//                                   .foregroundColor(ColorManager.grey1)
+//                                   .fontWeight(.thin)
+//                                   .multilineTextAlignment(.center)
+//
+//
+//                               Text("on social media")
+//                                   .font(.system(size: 22))
+//                                   .italic()
+//                                   .foregroundColor(ColorManager.grey1)
+//                                   .fontWeight(.thin)
+//                                   .multilineTextAlignment(.center)
                 VStack {
                     
                     
@@ -83,7 +80,7 @@ struct INFOPreload3: View {
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     
                     
-                    Text("Free stickers for you & your friends")
+                    Text("REWARD stickers \nfor you & your friends")
                         .font(.system(size: 25))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
@@ -92,43 +89,52 @@ struct INFOPreload3: View {
                     Spacer()
                         .frame(height: 10)
                  
-
-                    Spacer()
-                        .frame(height: 50)
-                    
-                    Text("Just send us your name \n& mailing address to:")
-                        .font(.system(size: 17))
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.white)
-                        .multilineTextAlignment(.center)
-                    
-                    
-                    Spacer()
-                        .frame(height: 10)
-                    
-                    Text("stickers@SocialTechLabs.com")
-                        .font(.system(size: 20))
-                        .fontWeight(.thin)
-                        .foregroundColor(ColorManager .grey4)
-                        .multilineTextAlignment(.center)
-
-                    
-                    Spacer()
-                        .frame(height: 70)
-                    
-                    Text("(available while supplies last, \nwe pay shipping)")
-                        .font(.system(size: 12))
-                        .italic()
-                        .fontWeight(.thin)
-                        .foregroundColor(ColorManager .grey1)
-                        .multilineTextAlignment(.center)
-                    
-                       Spacer()
-                                    .frame(height: 50)
-
-
-
-
+                    VStack{
+                        Spacer()
+                            .frame(height: 50)
+                        Text("If you receive a REWARD prompt...")
+                            .font(.system(size: 17))
+                            .fontWeight(.thin)
+                            .foregroundColor(Color.white)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("Just send us your name \n& mailing address to:")
+                            .font(.system(size: 17))
+                            .fontWeight(.thin)
+                            .foregroundColor(Color.white)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        Text("stickers@SocialTechLabs.com")
+                            .fontWeight(.regular)
+                            .frame(width: 200, height: 40)
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 13))
+                            .background(Color.pink)
+                            .opacity(0.85)
+                            .cornerRadius(15)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                        
+                        
+                        Spacer()
+                            .frame(height: 70)
+                        
+                        Text("(available while supplies last, \nwe pay shipping)")
+                            .font(.system(size: 12))
+                            .italic()
+                            .fontWeight(.thin)
+                            .foregroundColor(ColorManager .grey1)
+                            .multilineTextAlignment(.center)
+                        
+                        Spacer()
+                            .frame(height: 50)
+                        
+                        
+                        
+                    }
 
                             }
 
