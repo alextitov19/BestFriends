@@ -17,9 +17,21 @@ struct InfoPushNotifications: View {
     var body: some View {
         
         ZStack {
-            ColorManager .grey4
+        
+            ColorManager .purple4
+                .opacity(0.6)
                 .ignoresSafeArea()
-                .onAppear()
+
+            
+            Image("FHBackground")
+                     .resizable()
+                     .scaledToFill()
+                     .edgesIgnoringSafeArea(.all)
+            
+            Circle()
+                          .frame(width: 300, height: 300)
+                          .foregroundColor(ColorManager.purple3)
+                          .offset(x: -200, y: 400)
             
             VStack {
                 
@@ -43,7 +55,7 @@ struct InfoPushNotifications: View {
                     
                     Image(systemName: "circle.fill")
                         .resizable()
-                        .foregroundColor(Color.blue)
+                        .foregroundColor(ColorManager .purple4)
                         .frame(width: 400, height: 400)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                         .opacity(0.95)

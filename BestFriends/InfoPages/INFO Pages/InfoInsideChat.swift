@@ -19,11 +19,20 @@ struct InfoInsideChat: View {
         
         ZStack {
             
-            
-            ColorManager.grey4
+            ColorManager .purple4
+                .opacity(0.6)
                 .ignoresSafeArea()
-                .onAppear()
+
             
+            Image("FHBackground")
+                     .resizable()
+                     .scaledToFill()
+                     .edgesIgnoringSafeArea(.all)
+            
+            Circle()
+                          .frame(width: 300, height: 300)
+                          .foregroundColor(ColorManager.purple3)
+                          .offset(x: -200, y: 400)
             
             VStack {
                 
@@ -33,14 +42,14 @@ struct InfoInsideChat: View {
                 
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey2)
+                    .foregroundColor(Color.white)
                 
                 Text("NEW Chat Rooms")
                     .font(.system(size: 38))
                 
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey2)
+                    .foregroundColor(Color.white)
                 ZStack {
                     
                     
@@ -141,30 +150,30 @@ struct InfoInsideChat: View {
                                     destination: ChangeChatBackgroundView(user: user),
                                     label: {
                                         Text("Customize \nChat Backgrounds")
-                                            .fontWeight(.thin)
+                                            .fontWeight(.light)
                                             .frame(width: 280, height: 80)
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                            .foregroundColor(Color.white)
                                             .font(.system(size: 25))
-                                            .background(ColorManager .purple3)
+                                            .background(Color.cyan)
                                             .cornerRadius(15)
                                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                             .opacity(0.5)
                                     })
                                 
-                                NavigationLink(
-                                    destination: ChangeChatBackgroundView(user: user),
-                                    label: {
-                                        Text("How Chat \nWorks")
-                                            .fontWeight(.thin)
-                                            .frame(width: 280, height: 80)
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .font(.system(size: 25))
-                                            .background(ColorManager .purple3)
-                                            .cornerRadius(15)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                            .opacity(0.5)
-                                    })
-                                
+//                                NavigationLink(
+//                                    destination: ChangeChatBackgroundView(user: user),
+//                                    label: {
+//                                        Text("How Chat \nWorks")
+//                                            .fontWeight(.light)
+//                                            .frame(width: 280, height: 80)
+//                                            .foregroundColor(Color.white)
+//                                            .font(.system(size: 25))
+//                                            .background(Color.cyan)
+//                                            .cornerRadius(15)
+//                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                            .opacity(0.5)
+//                                    })
+//
                                 
                                 
                                 
