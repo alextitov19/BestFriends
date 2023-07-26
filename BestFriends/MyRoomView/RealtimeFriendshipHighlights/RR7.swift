@@ -59,11 +59,7 @@ struct RR7: View {
                 
                 VStack {
 
-                    Text("Yep!")
-                        .font(.system(size: 45))
-                        .foregroundColor(Color.white)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
+          
                     
                     ZStack {
                         

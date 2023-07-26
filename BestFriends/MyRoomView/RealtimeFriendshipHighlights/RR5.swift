@@ -90,7 +90,7 @@ struct RR5: View {
                             Spacer()
                                 .frame(height: 30)
                             
-                            Text("You know those songs\n\nyou listen to 10 times in a row \n\nwhen you are having one of those days \n\nShare then with a friend")
+                            Text("You know that song \nyou listen to 10 times in a row \non a bad day! \n\nShare then with a friend")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
