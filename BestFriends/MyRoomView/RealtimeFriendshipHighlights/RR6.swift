@@ -59,7 +59,7 @@ struct RR6: View {
                 
                 VStack {
 
-                    Text("Yep!")
+                    Text("Exhaling Spa")
                         .font(.system(size: 45))
                         .foregroundColor(Color.white)
                         .fontWeight(.light)
@@ -84,24 +84,24 @@ struct RR6: View {
                             
                             Text("now you can let the outside of you")
                                                         .font(.system(size: 22))
-                                                        .italic()
+//                                                        .italic()
                                                         .foregroundColor(ColorManager.grey1)
-                                                        .fontWeight(.thin)
+                                                        .fontWeight(.light)
                                                         .multilineTextAlignment(.center)
                                                     
                                                     Text("match the inside of you")
                                                         .font(.system(size: 22))
-                                                        .italic()
+//                                                        .italic()
                                                         .foregroundColor(ColorManager.grey1)
-                                                        .fontWeight(.thin)
+                                                        .fontWeight(.light)
                                                         .multilineTextAlignment(.center)
                                                     
                                                     
                                                     Text("on social media")
                                                         .font(.system(size: 22))
-                                                        .italic()
+//                                                        .italic()
                                                         .foregroundColor(ColorManager.grey1)
-                                                        .fontWeight(.thin)
+                                                        .fontWeight(.light)
                                                         .multilineTextAlignment(.center)
                             
                             

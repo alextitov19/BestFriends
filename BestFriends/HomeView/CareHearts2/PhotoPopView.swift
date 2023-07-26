@@ -55,9 +55,9 @@ struct PhotoPopView: View {
                         .onDisappear { createPhotoPop() }
             
             
-//            
-//            
-//            
+//
+//
+//
 //            ColorManager.grey4
 //                .ignoresSafeArea()
 //                .onAppear()
@@ -67,7 +67,7 @@ struct PhotoPopView: View {
 //                .sheet(isPresented: $isShowPhotoLibrary) {
 //                    ImagePicker(image: $attachmentImage, sourceType: pickerSourceType)
 //                        .onDisappear { createPhotoPop() }
-//                    
+//
 
                 
                     
@@ -90,7 +90,7 @@ struct PhotoPopView: View {
                     Text("Start Here")
                         .fontWeight(.light)
                         .frame(width: 120, height: 30)
-                        .foregroundColor(ColorManager .grey1)
+                        .foregroundColor(Color.white)
                         .font(.system(size: 25))
                         .background(Color.green)
 //                            .opacity(0.7)
@@ -109,9 +109,9 @@ struct PhotoPopView: View {
                         Text("Instant Alert")
                             .fontWeight(.light)
                             .frame(width: 175, height: 30)
-                            .foregroundColor(ColorManager .grey4)
+                            .foregroundColor(Color.pink)
                             .font(.system(size: 25))
-                            .background(ColorManager .orange4)
+                            .background(Color.cyan)
                             .opacity(0.9)
                             .cornerRadius(10)
                             .shadow(color: ColorManager .grey2, radius: 2, x: 0, y: 2)
@@ -124,7 +124,7 @@ struct PhotoPopView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 45, height: 45)
-                            .foregroundColor(ColorManager .orange4)
+                            .foregroundColor(Color.cyan)
                         
                             .onTapGesture {
                                 pickerSourceType = .camera
@@ -136,7 +136,7 @@ struct PhotoPopView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 45, height: 45)
-                            .foregroundColor(ColorManager .orange4)
+                            .foregroundColor(ColorManager .purple4)
                             .onTapGesture {
                                 pickerSourceType = .photoLibrary
                                 showingRecipients = true

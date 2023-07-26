@@ -115,6 +115,7 @@ struct HomeView: View {
                                                .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 40, height: 40)
+                                                .foregroundColor(Color.cyan)
                                                 .glow(color: ColorManager.purple4, radius: 2)
                                                 .opacity(0.6)
 

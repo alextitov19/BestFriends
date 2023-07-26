@@ -62,7 +62,7 @@ struct RR1: View {
                     Text("celebrating friendships")
                         .font(.system(size: 17))
                         .italic()
-                        .foregroundColor(ColorManager .grey1)
+                        .foregroundColor(Color.white)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
@@ -105,7 +105,7 @@ struct RR1: View {
                                 
                                 Text("CareHearts")
                                     .font(.system(size: 25))
-                                    .foregroundColor(ColorManager .orange4)
+                                    .foregroundColor(Color.cyan)
                                     .fontWeight(.bold)
                                     .multilineTextAlignment(.center)
                                 
@@ -131,7 +131,7 @@ struct RR1: View {
                                 
                                 Text("Crushes")
                                     .font(.system(size: 25))
-                                    .foregroundColor(ColorManager .orange4)
+                                    .foregroundColor(Color.cyan)
                                     .fontWeight(.bold)
                                     .multilineTextAlignment(.center)
                                 
@@ -159,7 +159,7 @@ struct RR1: View {
                                 
                                 Text("Lightspeed Images")
                                     .font(.system(size: 25))
-                                    .foregroundColor(ColorManager .orange4)
+                                    .foregroundColor(Color.cyan)
                                     .fontWeight(.bold)
                                     .multilineTextAlignment(.center)
                                 

@@ -82,15 +82,16 @@ struct RR7: View {
                             Spacer()
                                 .frame(height: 30)
                             
-                            Text("your friends are 'always' here")
+                            Text("A friend may well be reckoned \nthe masterpiece of nature.")
                                 .font(.system(size: 27))
-                                .foregroundColor(ColorManager .grey1)
+                                .italic()
+                                .foregroundColor(Color.white)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
                             
-                            Text("when you need them.")
-                                .font(.system(size: 27))
+                            Text("- - Emerson")
+                                .font(.system(size: 13))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
