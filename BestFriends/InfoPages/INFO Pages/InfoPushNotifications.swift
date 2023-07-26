@@ -43,12 +43,12 @@ struct InfoPushNotifications: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey1)
                 
-                Text("show as 'star' next to you planet")
+                Text("shown as 'star' next to you planet")
                     .italic()
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey2)
+                    .foregroundColor(Color.white)
                 
                 ZStack {
                     

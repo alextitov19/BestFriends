@@ -56,7 +56,7 @@ struct InfoInsideChat: View {
                     
                     Image(systemName: "circle.fill")
                         .resizable()
-                        .foregroundColor(Color.purple)
+                        .foregroundColor(ColorManager .purple4)
                         .frame(width: 400, height: 400)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
