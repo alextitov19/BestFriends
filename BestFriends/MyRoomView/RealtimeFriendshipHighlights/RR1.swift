@@ -65,11 +65,11 @@ struct RR1: View {
                             
                             
                             Spacer()
-                                .frame(height: 30)
+                                .frame(height: 20)
                             
                             HStack {
                                 
-                                Text("Mon _ ")
+                                Text("Mon _ emotional")
                                     .font(.system(size: 25))
                                     .foregroundColor(ColorManager .grey1)
                                     .fontWeight(.light)
@@ -84,7 +84,7 @@ struct RR1: View {
                             }
                                 
                             Spacer()
-                                .frame(height: 10)
+                                .frame(height: 15)
                             
                             HStack {
                                 
@@ -109,7 +109,7 @@ struct RR1: View {
                             }
                             
                             Spacer()
-                                .frame(height: 10)
+                                .frame(height: 15)
                             
                             HStack {
                                 
@@ -119,13 +119,15 @@ struct RR1: View {
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                 
-                                Text("Friday _ iPhone 'shaking'")
+                                Text("'shake' your iPhone for")
                                     .font(.system(size: 25))
                                     .foregroundColor(ColorManager .grey1)
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                 
-                                Text("cool friend images")
+                            }
+                                
+                                Text("instand friend's images")
                                     .font(.system(size: 25))
                                     .foregroundColor(ColorManager .grey1)
                                     .fontWeight(.bold)
@@ -133,7 +135,7 @@ struct RR1: View {
                                 
                                 
                                 
-                            }
+                            
                         }
                         
                     }

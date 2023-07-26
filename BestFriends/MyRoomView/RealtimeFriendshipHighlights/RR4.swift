@@ -82,7 +82,7 @@ struct RR4: View {
                             Spacer()
                                 .frame(height: 30)
                             
-                            Text("Quick \n\nSimple \nFunm\n\n")
+                            Text("Quick \n\nSimple \n\nFun")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
