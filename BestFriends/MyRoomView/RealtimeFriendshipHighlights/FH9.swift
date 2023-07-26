@@ -44,7 +44,11 @@ struct FH9: View {
                 
                 VStack {
 
-
+                    Text("Yep!")
+                        .font(.system(size: 45))
+                        .foregroundColor(Color.white)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
                     
                     ZStack {
                         
@@ -63,7 +67,7 @@ struct FH9: View {
                             Spacer()
                                 .frame(height: 30)
                             
-                            Text("Your friends are 'always' here")
+                            Text("your friends are 'always' here")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)

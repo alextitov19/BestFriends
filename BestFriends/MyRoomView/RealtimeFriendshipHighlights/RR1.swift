@@ -47,12 +47,30 @@ struct RR1: View {
                 
                 VStack {
 
-
+                    Text("Notification")
+                        .font(.system(size: 45))
+                        .foregroundColor(Color.white)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                    
+                    Text("Prompts")
+                        .font(.system(size: 45))
+                        .foregroundColor(Color.white)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                    
+                    Text("celebrating friendships")
+                        .font(.system(size: 17))
+                        .italic()
+                        .foregroundColor(ColorManager .grey1)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
                     
                     ZStack {
                         
+                       
                         Spacer()
-                            .frame(height: 70)
+                            .frame(height: 40)
                         
                         Image(systemName: "circle.fill")
                             .resizable()
@@ -69,22 +87,32 @@ struct RR1: View {
                             
                             HStack {
                                 
-                                Text("Mon _ emotional")
+                                Text("Mon _")
                                     .font(.system(size: 25))
                                     .foregroundColor(ColorManager .grey1)
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
-                               
-                                Text("CareHearts")
+                                
+                                
+                                Text("emotional support")
                                     .font(.system(size: 25))
+                                    .italic()
                                     .foregroundColor(ColorManager .grey1)
-                                    .fontWeight(.bold)
+                                    .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                 
                             }
                                 
+                                Text("CareHearts")
+                                    .font(.system(size: 25))
+                                    .foregroundColor(ColorManager .orange4)
+                                    .fontWeight(.bold)
+                                    .multilineTextAlignment(.center)
+                                
+                            
+                                
                             Spacer()
-                                .frame(height: 15)
+                                .frame(height: 25)
                             
                             HStack {
                                 
@@ -96,20 +124,21 @@ struct RR1: View {
                                 
                                 Text("sharing your")
                                     .font(.system(size: 25))
+                                    .italic()
                                     .foregroundColor(ColorManager .grey1)
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                 
                                 Text("Crushes")
                                     .font(.system(size: 25))
-                                    .foregroundColor(ColorManager .grey1)
+                                    .foregroundColor(ColorManager .orange4)
                                     .fontWeight(.bold)
                                     .multilineTextAlignment(.center)
                                 
                             }
                             
                             Spacer()
-                                .frame(height: 15)
+                                .frame(height: 25)
                             
                             HStack {
                                 
@@ -121,15 +150,16 @@ struct RR1: View {
                                 
                                 Text("'shake' your iPhone for")
                                     .font(.system(size: 25))
+                                    .italic()
                                     .foregroundColor(ColorManager .grey1)
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                 
                             }
                                 
-                                Text("instand friend's images")
+                                Text("Lightspeed Images")
                                     .font(.system(size: 25))
-                                    .foregroundColor(ColorManager .grey1)
+                                    .foregroundColor(ColorManager .orange4)
                                     .fontWeight(.bold)
                                     .multilineTextAlignment(.center)
                                 

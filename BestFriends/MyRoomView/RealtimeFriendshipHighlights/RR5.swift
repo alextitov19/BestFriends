@@ -1,14 +1,29 @@
 //
-//  FH6.swift
+//  RR5.swift
 //  BestFriends
 //
-//  Created by Zhengxu Wang on 7/7/23.
+//  Created by Zhengxu Wang on 7/15/23.
 //
+//
+//import SwiftUI
+//
+//struct RR5: View {
+//    var body: some View {
+//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+//    }
+//}
+//
+//struct RR5_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RR5()
+//    }
+//}
+
 
 import Foundation
 import SwiftUI
 
-struct FH6: View {
+struct RR5: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     
@@ -51,7 +66,7 @@ struct FH6: View {
                         .multilineTextAlignment(.center)
             
 
-                    Text("Hugs")
+                    Text("Songs")
                         .font(.system(size: 45))
                         .foregroundColor(Color.white)
                         .fontWeight(.light)
@@ -75,7 +90,7 @@ struct FH6: View {
                             Spacer()
                                 .frame(height: 30)
                             
-                            Text("Tough day? \n\nYour friend sent a HUG, \nhold phone to your heart. \n\nYep, it vibrates.")
+                            Text("You know those songs\n\nyou listen to 10 times in a row \n\nwhen you are having one of those days \n\nShare then with a friend")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
@@ -97,7 +112,7 @@ struct FH6: View {
                                
                           
                             NavigationLink(
-                                destination: RR5(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                destination: RR4(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                                     Text("->")
                                         .fontWeight(.thin)
