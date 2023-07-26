@@ -37,14 +37,29 @@ struct RR3: View {
         
         ZStack {
             
+//
+//            Image("CareHeartBalloon 1")
+//                .ignoresSafeArea()
+//                .scaledToFit()
+//                .opacity(0.8)
+//
             
-            Image("CareHeartBalloon 1")
+            
+        
+            ColorManager .purple4
+                .opacity(0.6)
                 .ignoresSafeArea()
-                .scaledToFit()
-                .opacity(0.8)
+
             
+            Image("FHBackground")
+                     .resizable()
+                     .scaledToFill()
+                     .edgesIgnoringSafeArea(.all)
             
-            
+            Circle()
+                          .frame(width: 300, height: 300)
+                          .foregroundColor(ColorManager.purple3)
+                          .offset(x: -200, y: 400)
             VStack {
                 
                 

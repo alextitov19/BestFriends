@@ -763,8 +763,8 @@
 				2DFB03092A57222300669948 /* FH3.swift */,
 				2DFB030B2A57223100669948 /* FH4.swift */,
 				2DFB030D2A57223E00669948 /* FH5.swift */,
-				2DFB03152A57228400669948 /* FH9.swift */,
 				2DBF3EE42A61ACEB00CB1CAD /* RR3.swift */,
+				2DFB03152A57228400669948 /* FH9.swift */,
 			);
 			path = RealtimeFriendshipHighlights;
 			sourceTree = "<group>";
