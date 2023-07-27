@@ -78,6 +78,7 @@ struct NotificationsView: View {
         @State private var songActive = false
         @State private var thanksKissesActive = false
         @State private var thanksHugActive = false
+        @State private var thanksHeartActive = false
 
         init(ian: InAppNotification, user: User, friends: [User]) {
             self.ian = ian
@@ -123,22 +124,19 @@ struct NotificationsView: View {
                     EmptyView()
                 })
                 
-                NavigationLink(destination: CH9(user: user, friends: friends), isActive: $heartsActive, label: {
+                NavigationLink(destination: CH6(user: user, friends: friends), isActive: $heartsActive, label: {
                     EmptyView()
                 })
-//               ****************** getting an error with put in CH4 for groups ****
-//                CH4(user: user, friend: user, friends: friends, groups: groups)
-                
-                NavigationLink(destination: EmptyView(), isActive: $songActive, label: {
-                    EmptyView()
-                })
-//                ****************************
                 
                 NavigationLink(destination: CH9(user: user, friends: friends), isActive: $thanksKissesActive, label: {
                     EmptyView()
                 })
                 
                 NavigationLink(destination: VirtualHug(user: user, friends: friends), isActive: $thanksHugActive, label: {
+                    EmptyView()
+                })
+                
+                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksHeartActive, label: {
                     EmptyView()
                 })
                 
@@ -185,16 +183,17 @@ struct NotificationsView: View {
             case "Is thinking about you and sent you a Heart!":
                 heartsActive = true
                 
-            case "song ??????":
-                songActive = true
-                
             case "Ahhh! Thanks for the Kisses!":
                 thanksKissesActive = true
                 
             case "Ahhh! Thanks for the Hug - it was just what I needed!":
                 thanksHugActive = true
                 
+            case "said thank you for the Heart!":
+                thanksHeartActive = true
                 
+         
+                                    
                 
             default:
                 return
