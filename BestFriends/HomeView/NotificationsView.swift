@@ -74,6 +74,8 @@ struct NotificationsView: View {
         @State private var hugActive = false
         @State private var photoPopActive = false
         @State private var kissesActive = false
+        @State private var heartsActive = false
+        @State private var songActive = false
 
         init(ian: InAppNotification, user: User, friends: [User]) {
             self.ian = ian
@@ -119,6 +121,20 @@ struct NotificationsView: View {
                     EmptyView()
                 })
                 
+                NavigationLink(destination: CH9(user: user, friends: friends), isActive: $heartsActive, label: {
+                    EmptyView()
+                })
+//               ****************** getting an error with put in CH4 for groups ****
+                NavigationLink(destination: EmptyView(), isActive: $songActive, label: {
+                    EmptyView()
+                })
+                
+                
+                
+                
+                
+                
+                
                 Color.cyan
                 
                 
@@ -156,7 +172,12 @@ struct NotificationsView: View {
 
             case "Jump up and catch your fresh kisses!":
                 kissesActive = true
-         
+                
+            case "Is thinking about you and sent you a Heart!":
+                heartsActive = true
+                
+            case "song ??????":
+                songActive = true
             default:
                 return
             }
