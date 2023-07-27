@@ -189,7 +189,7 @@ struct NotificationsView: View {
             case "Ahhh! Thanks for the Hug - it was just what I needed!":
                 thanksHugActive = true
                 
-            case "said thank you for the Heart!":
+            case "Said thank you for the Heart!":
                 thanksHeartActive = true
                 
          
