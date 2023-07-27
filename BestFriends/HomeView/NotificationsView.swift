@@ -147,16 +147,16 @@ struct NotificationsView: View {
         
         private func tapped() {
             switch ian.text {
-            case "You got a new Hug!":
-                hugActive = true
+
             case "What are you doing? Send PhotoPoP!":
                 photoPopActive = true
-            case "just sent you a new Hug!":
+       
+            case "Just sent you a warming Hug!":
                 hugActive = true
-            case "You got new Kisses!":
+
+            case "Jump up and catch your fresh kisses!":
                 kissesActive = true
-            case "Thanks for the Kiss":
-                kissesActive = true
+         
             default:
                 return
             }

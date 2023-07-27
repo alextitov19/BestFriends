@@ -254,7 +254,7 @@ struct SendKisses: View {
                                 .background(ColorManager .grey3)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("It's on it's way. \n\nYour friend just got a push notification asking them to jump up a catch it.", isPresented: $showingAlert) {
+                                .alert("Your kiss is on it's way. \n\nYour friend just got a push notification asking them to jump up and catch your kisses!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -317,7 +317,7 @@ struct SendKisses: View {
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "You got new Kisses!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Jump up and catch your fresh kisses!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                         print("Create a kiss notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)
