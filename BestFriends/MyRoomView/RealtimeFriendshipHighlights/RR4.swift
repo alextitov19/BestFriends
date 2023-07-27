@@ -84,7 +84,7 @@ struct RR4: View {
                             
                             Text("Quick \n\nSimple \n\nFun")
                                 .font(.system(size: 27))
-                                .foregroundColor(ColorManager .grey1)
+                                .foregroundColor(Color.cyan)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             

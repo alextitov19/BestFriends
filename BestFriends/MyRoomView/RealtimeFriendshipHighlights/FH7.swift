@@ -45,6 +45,11 @@ struct FH7: View {
                 
                 VStack {
 
+                    Text("LightSpeed")
+                        .font(.system(size: 45))
+                        .foregroundColor(Color.white)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
                     
                     Text("PhotoPOP")
                         .font(.system(size: 45))

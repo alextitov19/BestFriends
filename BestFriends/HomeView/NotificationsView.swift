@@ -119,7 +119,7 @@ struct NotificationsView: View {
                     EmptyView()
                 })
                 
-                Color.teal
+                Color.cyan
                 
                 
                 VStack {
