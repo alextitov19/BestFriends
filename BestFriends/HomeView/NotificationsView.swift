@@ -76,6 +76,7 @@ struct NotificationsView: View {
         @State private var kissesActive = false
         @State private var heartsActive = false
         @State private var songActive = false
+        @State private var thanksKissesActive = false
 
         init(ian: InAppNotification, user: User, friends: [User]) {
             self.ian = ian
@@ -125,11 +126,15 @@ struct NotificationsView: View {
                     EmptyView()
                 })
 //               ****************** getting an error with put in CH4 for groups ****
+//                CH4(user: user, friend: user, friends: friends, groups: groups)
+                
                 NavigationLink(destination: EmptyView(), isActive: $songActive, label: {
                     EmptyView()
                 })
                 
-                
+                NavigationLink(destination: CH9(user: user, friends: friends), isActive: $thanksKissesActive, label: {
+                    EmptyView()
+                })
                 
                 
                 
@@ -178,6 +183,11 @@ struct NotificationsView: View {
                 
             case "song ??????":
                 songActive = true
+                
+            case "Ahhh! Thanks for the Kisses!":
+                thanksKissesActive = true
+                
+                
             default:
                 return
             }
