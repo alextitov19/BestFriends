@@ -77,6 +77,7 @@ struct NotificationsView: View {
         @State private var heartsActive = false
         @State private var songActive = false
         @State private var thanksKissesActive = false
+        @State private var thanksHugActive = false
 
         init(ian: InAppNotification, user: User, friends: [User]) {
             self.ian = ian
@@ -131,12 +132,15 @@ struct NotificationsView: View {
                 NavigationLink(destination: EmptyView(), isActive: $songActive, label: {
                     EmptyView()
                 })
+//                ****************************
                 
                 NavigationLink(destination: CH9(user: user, friends: friends), isActive: $thanksKissesActive, label: {
                     EmptyView()
                 })
                 
-                
+                NavigationLink(destination: VirtualHug(user: user, friends: friends), isActive: $thanksHugActive, label: {
+                    EmptyView()
+                })
                 
                 
                 
@@ -186,6 +190,10 @@ struct NotificationsView: View {
                 
             case "Ahhh! Thanks for the Kisses!":
                 thanksKissesActive = true
+                
+            case "Ahhh! Thanks for the Hug - it was just what I needed!":
+                thanksHugActive = true
+                
                 
                 
             default:
