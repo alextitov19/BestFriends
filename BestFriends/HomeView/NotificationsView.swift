@@ -15,7 +15,28 @@ struct NotificationsView: View {
     
     let user: User
     let friends: [User]
+    
+    
+//   *********************** color change tapped
+    
+//    @State private var selectedFriends: [String] = []
+   
+//    @State private var shareColor = ColorManager.purple5
+//    @State private var showingAlert = false
+    
+//    @State private var counter = 0
+    
+//    @State private var mood: Int = -1
+//    @State private var summary = ""
+//    @State private var sharedWith: [String] = []
+    
+    
+    @State private var colorChangeTap: String = ""
+    @State private var notificationsTapped: Bool = false
+    @State private var colors: [Color] = [Color.cyan]
 
+//    ********************************
+    
     
     var body: some View {
         NavigationView {
@@ -144,6 +165,17 @@ struct NotificationsView: View {
                 
                 Color.cyan
                 
+                
+//                if notificationsTapped {
+//
+//                    Color.cyan
+//                } else {
+//                    ColorManager .grey2
+//
+//                }
+             
+
+
                 
                 VStack {
                     Text(ian.text)
