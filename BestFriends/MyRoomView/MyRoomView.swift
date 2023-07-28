@@ -141,7 +141,7 @@ struct MyRoomView: View {
                             .frame(width: 230, height: 33)
                             .foregroundColor(Color.black)
                             .font(.system(size: 17))
-                            .background(ColorManager .orange4)
+                            .background(ColorManager .orange3)
                             .glow(color: ColorManager.purple1, radius: 1)
                             .shadow(color: .white, radius: 3, x: -4, y: 4)
                             .opacity(0.9)

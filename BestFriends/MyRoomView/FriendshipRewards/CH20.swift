@@ -50,28 +50,28 @@ struct CH20: View {
                     .frame(width: 320, height: 60)
                     .foregroundColor(Color.white)
                     .font(.system(size: 30))
-                    .background(Color.orange)
+                    .background(ColorManager .orange5)
                     .cornerRadius(10)
                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                 
                 
                 Spacer ()
-                    .frame(height: 30)
+                    .frame(height: 10)
                 
                 
                 
                 
-                HStack {
+            HStack {
                     
-                    
+                VStack {
                     NavigationLink(
                         
                         destination: INFOPreload3(user: user),
                         label: {
-                            Text("Special \nREWARD \nStickers")
-                                .fontWeight(.regular)
-                                .frame(width: 150, height: 100)
-                                .foregroundColor(Color.white)
+                            Text("Laptop \nStickers")
+                                .fontWeight(.light)
+                                .frame(width: 150, height: 70)
+                                .foregroundColor(ColorManager .grey4)
                                 .font(.system(size: 20))
                                 .background(Color.cyan)
                                 .opacity(0.85)
@@ -81,114 +81,97 @@ struct CH20: View {
                         })
                     
                     
-                    Spacer ()
-                        .frame(width: 30)
                     
-                    //                        HStack {
+                        NavigationLink(destination: EmptyView(),
+                            label: {
+                                Text("Friendship \nBadges")
+                                    .fontWeight(.light)
+                                    .frame(width: 150, height: 70)
+                                    .foregroundColor(ColorManager .grey4)
+                                    .font(.system(size: 20))
+                                    .background(Color.cyan)
+                                    .opacity(0.85)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                     
-                    
-                    
+                    })
+                       
+                }
+                   
+                Spacer ()
+                        .frame(width: 7)
+        
+                VStack {
                     NavigationLink(
                         
                         destination: InfoPushNotifications(user: user),
                         label: {
-                            Text("CareHeart \nStreaks")
-                                .fontWeight(.regular)
-                                .frame(width: 150, height: 100)
-                                .foregroundColor(Color.white)
-                                .font(.system(size: 20))
+                            Text("CareHeart \nShooting Stars")
+                                .fontWeight(.light)
+                                .frame(width: 150, height: 70)
+                                .foregroundColor(ColorManager .grey4)
+                                .font(.system(size: 17))
                                 .background(Color.cyan)
                                 .opacity(0.85)
                                 .cornerRadius(15)
                                 .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                             
                         })
+                    
+                                                    NavigationLink(
+                    
+                                                        destination: InfoPushNotifications(user: user),
+                                                        label: {
+                                                            Text("Access \nFriendship Highlights")
+                                                                .fontWeight(.regular)
+                                                                .frame(width: 150, height: 100)
+                                                                .foregroundColor(Color.white)
+                                                                .font(.system(size: 20))
+                                                                .background(Color.cyan)
+                                                                .opacity(0.85)
+                                                                .cornerRadius(15)
+                                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                    
+                                                        })
+                    
+                }
                 }
                 
                 Spacer ()
-                    .frame(height: 30)
-                //
-                //
-                //                            NavigationLink(
-                //
-                //                                destination: EmptyView(),
-                //                                label: {
-                //                                    Text("Badges")
-                //                                        .fontWeight(.regular)
-                //                                        .frame(width: 150, height: 100)
-                //                                        .foregroundColor(Color.white)
-                //                                        .font(.system(size: 20))
-                //                                        .background(Color.cyan)
-                //                                        .opacity(0.85)
-                //                                        .cornerRadius(15)
-                //                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                //
-                //                                })
-                //
-                //
-                //                            Spacer ()
-                //                                .frame(width: 30)
-                //
-                //                            HStack {
-                //
-                //
-                //
-                //                                NavigationLink(
-                //
-                //                                    destination: InfoPushNotifications(user: user),
-                //                                    label: {
-                //                                        Text("")
-                //                                            .fontWeight(.regular)
-                //                                            .frame(width: 150, height: 100)
-                //                                            .foregroundColor(Color.white)
-                //                                            .font(.system(size: 20))
-                //                                            .background(Color.cyan)
-                //                                            .opacity(0.85)
-                //                                            .cornerRadius(15)
-                //                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                //
-                //                                    })
-                //
-                //                            }
-                
+                    .frame(height: 15)
+              
                 VStack {
                     Spacer ()
                         .frame(height: 15)
                     
-                    Text("Super Friendship Days")
-                        .fontWeight(.light)
-                        .frame(width: 320, height: 60)
-                        .foregroundColor(Color.white)
-                        .font(.system(size: 30))
-                        .background(Color.orange)
-                        .cornerRadius(10)
-                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                    
-                    
-                    Spacer ()
-                        .frame(height: 20)
-           
                  
         ZStack {
                     
                     Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(Color.purple)
-                        .frame(width: 375, height: 375)
+                        .frame(width: 400, height: 400)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
                     
             VStack {
                 
-                
+                Text("Super Friendship Days")
+                    .fontWeight(.light)
+                    .frame(width: 320, height: 60)
+                    .foregroundColor(Color.white)
+                    .font(.system(size: 30))
+                    .background(ColorManager .orange5)
+                    .cornerRadius(10)
+                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                 Spacer()
                     .frame(height: 20)
                 
                 HStack {
                     
-                                                    Text("Mon _")
+                                                    Text("MON _")
                                                         .font(.system(size: 25))
-                                                        .foregroundColor(ColorManager .grey1)
+                                                        .foregroundColor(Color.white)
                                                         .fontWeight(.light)
                                                         .multilineTextAlignment(.center)
                     
@@ -215,7 +198,12 @@ struct CH20: View {
                 
                 HStack {
                     
-                    
+                    Text("WED _")
+                        .font(.system(size: 25))
+                        .foregroundColor(Color.white)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+
                     
                     Text("sharing your")
                         .font(.system(size: 25))
@@ -238,12 +226,12 @@ struct CH20: View {
                 
                 HStack {
                     
-                    //                                Text("Fri _")
-                    //                                    .font(.system(size: 25))
-                    //                                    .foregroundColor(ColorManager .grey1)
-                    //                                    .fontWeight(.light)
-                    //                                    .multilineTextAlignment(.center)
-                    
+                    Text("FRI _")
+                        .font(.system(size: 25))
+                        .foregroundColor(Color.white)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                   
                     Text("'shake' your iPhone for")
                         .font(.system(size: 25))
                         .italic()
@@ -259,19 +247,14 @@ struct CH20: View {
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
                 
+                }
             }
-                            
-                            
-                        
-                    }
+        }
                     
                 }
-                    
-                            }
-                        }
-                    }
-                    
-                }
+            }
+        }
+    }
 
 
     
