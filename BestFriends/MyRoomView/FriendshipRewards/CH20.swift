@@ -47,9 +47,9 @@ struct CH20: View {
                 
                 Text("Friendship Rewards")
                     .fontWeight(.light)
-                    .frame(width: 300, height: 60)
+                    .frame(width: 320, height: 60)
                     .foregroundColor(Color.white)
-                    .font(.system(size: 33))
+                    .font(.system(size: 30))
                     .background(Color.orange)
                     .cornerRadius(10)
                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
@@ -104,59 +104,175 @@ struct CH20: View {
                             
                         })
                 }
+                
+                Spacer ()
+                    .frame(height: 30)
+                //
+                //
+                //                            NavigationLink(
+                //
+                //                                destination: EmptyView(),
+                //                                label: {
+                //                                    Text("Badges")
+                //                                        .fontWeight(.regular)
+                //                                        .frame(width: 150, height: 100)
+                //                                        .foregroundColor(Color.white)
+                //                                        .font(.system(size: 20))
+                //                                        .background(Color.cyan)
+                //                                        .opacity(0.85)
+                //                                        .cornerRadius(15)
+                //                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                //
+                //                                })
+                //
+                //
+                //                            Spacer ()
+                //                                .frame(width: 30)
+                //
+                //                            HStack {
+                //
+                //
+                //
+                //                                NavigationLink(
+                //
+                //                                    destination: InfoPushNotifications(user: user),
+                //                                    label: {
+                //                                        Text("")
+                //                                            .fontWeight(.regular)
+                //                                            .frame(width: 150, height: 100)
+                //                                            .foregroundColor(Color.white)
+                //                                            .font(.system(size: 20))
+                //                                            .background(Color.cyan)
+                //                                            .opacity(0.85)
+                //                                            .cornerRadius(15)
+                //                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                //
+                //                                    })
+                //
+                //                            }
+                
+                VStack {
+                    Spacer ()
+                        .frame(height: 15)
+                    
+                    Text("Super Friendship Days")
+                        .fontWeight(.light)
+                        .frame(width: 320, height: 60)
+                        .foregroundColor(Color.white)
+                        .font(.system(size: 30))
+                        .background(Color.orange)
+                        .cornerRadius(10)
+                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                    
+                    
+                    Spacer ()
+                        .frame(height: 20)
+           
+                 
+        ZStack {
+                    
+                    Image(systemName: "circle.fill")
+                        .resizable()
+                        .foregroundColor(Color.purple)
+                        .frame(width: 375, height: 375)
+                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+                        .opacity(0.95)
+                    
+            VStack {
+                
+                
+                Spacer()
+                    .frame(height: 20)
+                
+                HStack {
+                    
+                                                    Text("Mon _")
+                                                        .font(.system(size: 25))
+                                                        .foregroundColor(ColorManager .grey1)
+                                                        .fontWeight(.light)
+                                                        .multilineTextAlignment(.center)
+                    
+                    
+                    Text("emotional support")
+                        .font(.system(size: 25))
+                        .italic()
+                        .foregroundColor(ColorManager .grey1)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                    
+                }
+                
+                Text("CareHearts")
+                    .font(.system(size: 25))
+                    .foregroundColor(Color.cyan)
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                
+                
+                
+                Spacer()
+                    .frame(height: 25)
+                
+                HStack {
+                    
+                    
+                    
+                    Text("sharing your")
+                        .font(.system(size: 25))
+                        .italic()
+                        .foregroundColor(ColorManager .grey1)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                }
+                
+                Text("Crushes")
+                    .font(.system(size: 25))
+                    .foregroundColor(Color.cyan)
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                
+                
+                
+                Spacer()
+                    .frame(height: 25)
+                
+                HStack {
+                    
+                    //                                Text("Fri _")
+                    //                                    .font(.system(size: 25))
+                    //                                    .foregroundColor(ColorManager .grey1)
+                    //                                    .fontWeight(.light)
+                    //                                    .multilineTextAlignment(.center)
+                    
+                    Text("'shake' your iPhone for")
+                        .font(.system(size: 25))
+                        .italic()
+                        .foregroundColor(ColorManager .grey1)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                    
+                }
+                
+                Text("Lightspeed Images")
+                    .font(.system(size: 25))
+                    .foregroundColor(Color.cyan)
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                
+            }
                             
-                            Spacer ()
-                                .frame(height: 30)
-//
-//
-//                            NavigationLink(
-//
-//                                destination: EmptyView(),
-//                                label: {
-//                                    Text("Badges")
-//                                        .fontWeight(.regular)
-//                                        .frame(width: 150, height: 100)
-//                                        .foregroundColor(Color.white)
-//                                        .font(.system(size: 20))
-//                                        .background(Color.cyan)
-//                                        .opacity(0.85)
-//                                        .cornerRadius(15)
-//                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//
-//                                })
-//
-//
-//                            Spacer ()
-//                                .frame(width: 30)
-//
-//                            HStack {
-//
-//
-//
-//                                NavigationLink(
-//
-//                                    destination: InfoPushNotifications(user: user),
-//                                    label: {
-//                                        Text("")
-//                                            .fontWeight(.regular)
-//                                            .frame(width: 150, height: 100)
-//                                            .foregroundColor(Color.white)
-//                                            .font(.system(size: 20))
-//                                            .background(Color.cyan)
-//                                            .opacity(0.85)
-//                                            .cornerRadius(15)
-//                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//
-//                                    })
-//
-//                            }
+                            
+                        
+                    }
+                    
+                }
+                    
+                            }
                         }
                     }
                     
                 }
-            }
-//        }
-//    }
+
 
     
     

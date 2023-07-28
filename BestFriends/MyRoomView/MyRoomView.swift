@@ -67,7 +67,7 @@ struct MyRoomView: View {
                         })
                     
                     Spacer ()
-                        .frame(width: 30)
+                        .frame(width: 25)
                     
                     VStack {
                     
@@ -91,7 +91,7 @@ struct MyRoomView: View {
                 }
                    
                     Spacer ()
-                        .frame(width: 30)
+                        .frame(width: 25)
                     
                         NavigationLink(
                             destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
@@ -131,17 +131,17 @@ struct MyRoomView: View {
                 
                 VStack {
                     Spacer ()
-                        .frame(width: 30)
+                        .frame(width: 14)
                     
                     
                     NavigationLink( destination:  CH20(user: user),
                                     label: {
                         Text("Friendship Rewards")
                             .fontWeight(.bold)
-                            .frame(width: 300, height: 40)
+                            .frame(width: 230, height: 33)
                             .foregroundColor(Color.black)
                             .font(.system(size: 17))
-                            .background(Color.orange)
+                            .background(ColorManager .orange4)
                             .glow(color: ColorManager.purple1, radius: 1)
                             .shadow(color: .white, radius: 3, x: -4, y: 4)
                             .opacity(0.9)
@@ -149,7 +149,17 @@ struct MyRoomView: View {
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                     })
                     
+                 
+            VStack {
+                
+                Spacer ()
+                    .frame(width: 50)
+                
+            
                     ZStack {
+                        
+//                        Spacer ()
+//                            .frame(width: 50)
                           
                         NavigationLink(
                             destination:  CH11(),
@@ -231,23 +241,23 @@ struct MyRoomView: View {
                                         Spacer()
                                             .frame(width: 10)
                                         
-                                        VStack {
-                                            
-                                            NavigationLink( destination:  CH10(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
-                                                            label: {
-                                                Text("Received")
-                                                    .fontWeight(.regular)
-                                                    .frame(width: 90, height: 35)
-                                                    .foregroundColor(ColorManager .purple5)
-                                                    .font(.system(size: 17))
-                                                    .background(ColorManager .purple1)
-                                                    .glow(color: ColorManager.purple3, radius: 1)
-                                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                                    .opacity(0.9)
-                                                    .cornerRadius(7)
-                                                    .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-                                            })
-                                      
+                                    VStack {
+                                        
+                                        NavigationLink( destination:  CH10(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
+                                                        label: {
+                                            Text("Received")
+                                                .fontWeight(.regular)
+                                                .frame(width: 90, height: 35)
+                                                .foregroundColor(ColorManager .purple5)
+                                                .font(.system(size: 17))
+                                                .background(ColorManager .purple1)
+                                                .glow(color: ColorManager.purple3, radius: 1)
+                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                                .opacity(0.9)
+                                                .cornerRadius(7)
+                                                .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                        })
+                                    }
                                     }
                                         
                                 }
@@ -258,7 +268,7 @@ struct MyRoomView: View {
                 }
             
                 Spacer()
-                    .frame(height: 20)
+                    .frame(height: 40)
                 
                 
            
@@ -322,7 +332,7 @@ struct MyRoomView: View {
                     VStack {
                         
                         Spacer()
-                            .frame(height: 35)
+                            .frame(height: 40)
                         
                         ZStack {
                               
@@ -432,7 +442,7 @@ struct MyRoomView: View {
                 }
                     
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 40)
                 
 //                ************************************************
                 
@@ -502,7 +512,8 @@ struct MyRoomView: View {
 //                                                .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
                                         })
                                         
-                                   
+                                        Spacer()
+                                            .frame(height: 70)
                                       
                                     }
                                         
