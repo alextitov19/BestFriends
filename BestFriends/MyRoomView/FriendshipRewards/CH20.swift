@@ -72,7 +72,7 @@ struct CH20: View {
                                 .fontWeight(.light)
                                 .frame(width: 150, height: 70)
                                 .foregroundColor(ColorManager .grey4)
-                                .font(.system(size: 20))
+                                .font(.system(size: 17))
                                 .background(Color.cyan)
                                 .opacity(0.85)
                                 .cornerRadius(15)
@@ -84,11 +84,11 @@ struct CH20: View {
                     
                         NavigationLink(destination: CH18(user: user),
                             label: {
-                                Text("Friendship \nHandbags")
+                                Text("Friendship \nHandbag \nBadges")
                                     .fontWeight(.light)
                                     .frame(width: 150, height: 70)
                                     .foregroundColor(ColorManager .grey4)
-                                    .font(.system(size: 20))
+                                    .font(.system(size: 17))
                                     .background(Color.cyan)
                                     .opacity(0.85)
                                     .cornerRadius(15)
@@ -104,7 +104,9 @@ struct CH20: View {
                 VStack {
                     NavigationLink(
                         
-                        destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
+//                        destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
+                        
+                        destination: CH17(user: user),
                         label: {
                             Text("CareHeart \nShooting Stars")
                                 .fontWeight(.light)

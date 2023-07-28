@@ -1,16 +1,17 @@
 //
-//  InfoPushNotifications.swift
+//  CH17.swift
 //  BestFriends
 //
-//  Created by Social Tech on 10/25/22.
+//  Created by Zhengxu Wang on 7/17/23.
 //
+
 
 
 import Foundation
 import SwiftUI
 import AVKit
 
-struct InfoPushNotifications: View {
+struct CH17: View {
     
     let user: User
     
@@ -98,7 +99,7 @@ struct InfoPushNotifications: View {
                         
                         VStack {
                             
-                            NavigationLink(destination: EmptyView(),
+                            NavigationLink(destination: InfoPushNotifications(user: user),
                                            label: {
                                 
                                 Text("sending Hugs _ blowing Kisses \nsending PhotoPOPs and Songs")
