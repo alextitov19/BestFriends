@@ -168,7 +168,7 @@ struct CH20: View {
                 
                 HStack {
                     
-                                                    Text("MON _")
+                                                    Text("Monday _")
                                                         .font(.system(size: 25))
                                                         .foregroundColor(ColorManager .grey4)
                                                         .fontWeight(.regular)
@@ -192,31 +192,31 @@ struct CH20: View {
                 
                 
                 
-                Spacer()
-                    .frame(height: 25)
+//                Spacer()
+//                    .frame(height: 25)
                 
                 HStack {
                     
-                    Text("WED _")
-                        .font(.system(size: 25))
-                        .foregroundColor(ColorManager .grey4)
-                        .fontWeight(.regular)
-                        .multilineTextAlignment(.center)
-
-                    
-                    Text("sharing your")
-                        .font(.system(size: 25))
-                        .italic()
-                        .foregroundColor(ColorManager .grey1)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
+//                    Text("WED _")
+//                        .font(.system(size: 25))
+//                        .foregroundColor(ColorManager .grey4)
+//                        .fontWeight(.regular)
+//                        .multilineTextAlignment(.center)
+//
+//
+//                    Text("sharing your")
+//                        .font(.system(size: 25))
+//                        .italic()
+//                        .foregroundColor(ColorManager .grey1)
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
                 }
                 
-                Text("Crushes")
-                    .font(.system(size: 25))
-                    .foregroundColor(Color.cyan)
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
+//                Text("Crushes")
+//                    .font(.system(size: 25))
+//                    .foregroundColor(Color.cyan)
+//                    .fontWeight(.bold)
+//                    .multilineTextAlignment(.center)
                 
                 
                 
@@ -225,7 +225,7 @@ struct CH20: View {
                 
                 HStack {
                     
-                    Text("FRI _")
+                    Text("Thursday _")
                         .font(.system(size: 25))
                         .foregroundColor(ColorManager .grey4)
                         .fontWeight(.regular)
