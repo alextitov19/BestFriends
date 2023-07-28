@@ -129,14 +129,41 @@ struct MyRoomView: View {
 //           **********************************************
                 
                 
-                VStack {
+        VStack {
                     Spacer ()
                         .frame(width: 14)
+            HStack {
+                
+                ZStack {
+                    
+                    Image(systemName: "heart.fill")
+                        .resizable()
+                        .foregroundColor(ColorManager .purple3)
+                        .frame(width: 90, height: 70)
+//                        .rotationEffect(Angle: )
+                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+                        .opacity(0.7)
+                    
+                    Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
+                        
+                        Text("Supportive \nInfluencers")
+                            .fontWeight(.regular)
+//                            .frame(width: 80, height: 50)
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 10))
+//                            .background(Color.pink)
+                            .opacity(0.85)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                        
+                    }
+                }
+                    
                     
                     
                     NavigationLink( destination:  CH20(user: user),
                                     label: {
-                        Text("Friendship Rewards")
+                        Text("Rewards")
                             .fontWeight(.bold)
                             .frame(width: 230, height: 33)
                             .foregroundColor(Color.black)
@@ -148,7 +175,9 @@ struct MyRoomView: View {
                             .cornerRadius(15)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                     })
-                    
+                }
+                
+            
                  
             VStack {
                 
@@ -561,6 +590,12 @@ struct MyRoomView: View {
             .padding()
         }
     }
+    
+    
+    
+    
+    
+    
 
 //******************************* Hurt Feeling section - DO NOT DELETE ***
 //                    HStack {

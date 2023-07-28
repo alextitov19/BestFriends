@@ -170,8 +170,8 @@ struct CH20: View {
                     
                                                     Text("MON _")
                                                         .font(.system(size: 25))
-                                                        .foregroundColor(Color.white)
-                                                        .fontWeight(.light)
+                                                        .foregroundColor(ColorManager .grey4)
+                                                        .fontWeight(.regular)
                                                         .multilineTextAlignment(.center)
                     
                     
@@ -199,8 +199,8 @@ struct CH20: View {
                     
                     Text("WED _")
                         .font(.system(size: 25))
-                        .foregroundColor(Color.white)
-                        .fontWeight(.light)
+                        .foregroundColor(ColorManager .grey4)
+                        .fontWeight(.regular)
                         .multilineTextAlignment(.center)
 
                     
@@ -227,8 +227,8 @@ struct CH20: View {
                     
                     Text("FRI _")
                         .font(.system(size: 25))
-                        .foregroundColor(Color.white)
-                        .fontWeight(.light)
+                        .foregroundColor(ColorManager .grey4)
+                        .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                    
                     Text("'shake' your iPhone for")

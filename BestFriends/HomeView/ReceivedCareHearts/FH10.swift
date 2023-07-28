@@ -109,7 +109,7 @@ struct FH10: View {
                                 .frame(width: 130, height: 50)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 13))
-                                .background(Color.pink)
+                                .background(Color.orange)
                                 .opacity(0.85)
                                 .cornerRadius(15)
                                 .shadow(color: Color.white, radius: 2, x: 0, y: 2)
@@ -122,72 +122,42 @@ struct FH10: View {
                     .frame(height: 20)
                 
                     HStack {
-                    
-                    //                    HStack {
-                    NavigationLink(
-                        
-                        destination: INFOPreload3(user: user),
-                        label: {
-                            Text("REWARD \nStickers")
-                                .fontWeight(.regular)
-                                .frame(width: 80, height: 50)
-                                .foregroundColor(Color.white)
-                                .font(.system(size: 13))
-                                .background(Color.pink)
-                                .opacity(0.85)
-                                .cornerRadius(15)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                            
-                        })
-                    
-                    
-                    
-                    Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
-                        
-                        Text("Supportive \nInfluencers")
-                            .fontWeight(.regular)
-                            .frame(width: 80, height: 50)
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 13))
-                            .background(Color.pink)
-                            .opacity(0.85)
-                            .cornerRadius(15)
-                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//
+//
+//                    Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
+//
+//                        Text("Supportive \nInfluencers")
+//                            .fontWeight(.regular)
+//                            .frame(width: 80, height: 50)
+//                            .foregroundColor(Color.white)
+//                            .font(.system(size: 13))
+//                            .background(Color.pink)
+//                            .opacity(0.85)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         
                         HStack {
                             
-                            NavigationLink(
+                            ZStack {
                                 
-                                destination: BuiltByTeensView(user: user, friends: friends),
-                                label: {
-                                    Text("Our Story")
-                                        .fontWeight(.regular)
-                                        .frame(width: 80, height: 50)
-                                        .foregroundColor(Color.white)
-                                        .font(.system(size: 13))
-                                        .background(Color.pink)
-                                        .opacity(0.85)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                    
-                                })
-                            
-                            NavigationLink(
+                                Image(systemName: "heart.fill")
+                                    .resizable()
+                                    .foregroundColor(ColorManager .purple3)
+                                    .frame(width: 150, height: 100)
+                                    .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+                                    .opacity(0.7)
                                 
-                                destination: InfoPushNotifications(user: user),
-                                label: {
-                                    Text("CareHeart \nStreaks")
-                                        .fontWeight(.regular)
-                                        .frame(width: 80, height: 50)
-                                        .foregroundColor(Color.white)
-                                        .font(.system(size: 13))
-                                        .background(Color.pink)
-                                        .opacity(0.85)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                NavigationLink(
                                     
-                                })
-                            
+                                    destination: BuiltByTeensView(user: user, friends: friends),
+                                    label: {
+                                        Text("Our Story")
+                                            .fontWeight(.regular)
+                                            .foregroundColor(Color.white)
+                                            .font(.system(size: 13))
+                                        
+                                    })
+                            }
                         }
                     }
                 }
