@@ -149,7 +149,7 @@ struct CH20: View {
                     Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(Color.purple)
-                        .frame(width: 400, height: 400)
+                        .frame(width: 420, height: 420)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
                     

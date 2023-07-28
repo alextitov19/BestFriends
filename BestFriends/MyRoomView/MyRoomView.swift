@@ -146,8 +146,8 @@ struct MyRoomView: View {
                                                 Image(systemName: "heart.fill")
                                                     .resizable()
                                                     .foregroundColor(ColorManager .purple4)
-                                                    .frame(width: 90, height: 70)
-                                                    .rotationEffect(.degrees(-10))
+                                                    .frame(width: 80, height: 60)
+                                                    .rotationEffect(.degrees(-7))
                                                     .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                                                     .opacity(0.99)
                                                 
@@ -157,14 +157,14 @@ struct MyRoomView: View {
                                                         .fontWeight(.light)
                                                         .foregroundColor(ColorManager .grey4)
                                                         .font(.system(size: 9))
-                                                        .rotationEffect(.degrees(-10))
+                                                        .rotationEffect(.degrees(-7))
                                                         .opacity(0.85)
                                                     
                                                 }
                                             }
                                             
                                             Spacer ()
-                                                .frame(width: 200)
+                                                .frame(width: 220)
                                             
                                             
                                             
