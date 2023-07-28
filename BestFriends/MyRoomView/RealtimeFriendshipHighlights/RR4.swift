@@ -82,8 +82,10 @@ struct RR4: View {
                             Spacer()
                                 .frame(height: 30)
                             
-                            Text("Quick \n\nSimple \n\nFun")
+                            Text("Celibrity \n\nBoyfriend \n\nGirlfriend")
                                 .font(.system(size: 27))
+                                .fontWeight(.regular)
+                                .font(.system(size: 30))
                                 .foregroundColor(Color.cyan)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)

@@ -124,7 +124,7 @@ struct MyRoomView: View {
                                     ZStack {
                                         
                                         
-                                        NavigationLink( destination:  CH20(user: user),
+                                        NavigationLink( destination:  CH20(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                                         label: {
                                             Text("Accessorizing")
                                         
@@ -153,9 +153,9 @@ struct MyRoomView: View {
                                                 
                                                 Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
                                                     
-                                                    Text("early \nSupportive \nInfluencers")
+                                                    Text("first \nsupportive \ninfluencers")
                                                         .fontWeight(.light)
-                                                        .foregroundColor(ColorManager .grey4)
+                                                        .foregroundColor(ColorManager .darkGrey)
                                                         .font(.system(size: 9))
                                                         .rotationEffect(.degrees(-7))
                                                         .opacity(0.85)

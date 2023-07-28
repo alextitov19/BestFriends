@@ -11,12 +11,12 @@ struct CH20: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
+ 
     let user: User
-    //    let atmosphere: Atmosphere
-    //    let friends: [User]
-    //    let friendAtmospheres: [Atmosphere]
-    //    let groups: [Group]
-    
+    let atmosphere: Atmosphere
+    let friends: [User]
+    let friendAtmospheres: [Atmosphere]
+    let groups: [Group]
     
     var body: some View {
         ZStack {
@@ -104,7 +104,7 @@ struct CH20: View {
                 VStack {
                     NavigationLink(
                         
-                        destination: InfoPushNotifications(user: user),
+                        destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                         label: {
                             Text("CareHeart \nShooting Stars")
                                 .fontWeight(.light)

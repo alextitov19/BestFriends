@@ -17,31 +17,33 @@ struct InfoPushNotifications: View {
     var body: some View {
         
         ZStack {
-        
+            
             ColorManager .purple4
                 .opacity(0.6)
                 .ignoresSafeArea()
-
+            
             
             Image("FHBackground")
-                     .resizable()
-                     .scaledToFill()
-                     .edgesIgnoringSafeArea(.all)
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
             
             Circle()
-                          .frame(width: 300, height: 300)
-                          .foregroundColor(ColorManager.purple3)
-                          .offset(x: -200, y: 400)
+                .frame(width: 300, height: 300)
+                .foregroundColor(ColorManager.purple3)
+                .offset(x: -200, y: 400)
             
             VStack {
                 
                 
-                Text("CareHeart Streaks")
-                    .font(.system(size: 37))
-            
+                Text("Shooting Stars")
                     .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey1)
+                    .frame(width: 320, height: 60)
+                    .foregroundColor(Color.white)
+                    .font(.system(size: 30))
+                    .background(ColorManager .orange5)
+                    .cornerRadius(10)
+                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                 
                 Text("shown as 'star' next to you planet")
                     .italic()
@@ -55,7 +57,7 @@ struct InfoPushNotifications: View {
                     
                     Image(systemName: "circle.fill")
                         .resizable()
-                        .foregroundColor(ColorManager .purple4)
+                        .foregroundColor(Color.purple)
                         .frame(width: 400, height: 400)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
@@ -68,58 +70,72 @@ struct InfoPushNotifications: View {
                         Spacer ()
                             .frame(height: 100)
                         
-                        Text("BestFriends rewards you for ")
-//                            .italic()
+                        Text("BestFriends rewards you for")
+                        //                            .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.grey1)
                         
-                        Text("helping friends on bad days")
-//                            .italic()
-                            .font(.system(size: 20))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.grey1)
-                        
-                        Spacer ()
-                            .frame(height: 40)
-                        
-                        Text("Streaks apply to sending CareHearts")
-//                            .italic()
-                            .font(.system(size: 23))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.grey1)
-                       
-                        Spacer ()
-                            .frame(height: 10)
-                        
-                        Text("(Hugs _ Blowing Kisses _ PhotoPOP)")
-                            .italic()
+                        Text("sending emotional support to friends")
+                        //                            .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.grey1)
                         
                         
+                        Text("in the form of CareHearts")
+                        //                            .italic()
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager.grey1)
+                        
                         Spacer ()
-                            .frame(height: 40)
-
+                            .frame(height: 30)
+                        
+                        
                         VStack {
-                       
+                            
+                            NavigationLink(destination: InfoPushNotifications(user: user),
+                                           label: {
+                                
+                                Text("sending Hugs _ blowing Kisses \nsending PhotoPOPs and Songs")
+                                    .fontWeight(.light)
+                                    .frame(width: 320, height: 60)
+                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 20))
+                                    .background(Color .cyan)
+                                    .cornerRadius(10)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                
+                            })
+                                Text("once you get 30 shooting \nstars you earn a Level 1 Badge")
+                                    .italic()
+                                    .font(.system(size: 15))
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(ColorManager.grey4)
+                                
                             
                             
-                            Spacer ()
-                                .frame(height: 100)
                             
+                            
+                            VStack {
+                                
+                                
+                                
+                                Spacer ()
+                                    .frame(height: 100)
+                                
+                            }
                         }
                     }
                 }
             }
+            
         }
-        
     }
 }
-
 
