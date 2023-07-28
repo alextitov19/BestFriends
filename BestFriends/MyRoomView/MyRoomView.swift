@@ -153,10 +153,10 @@ struct MyRoomView: View {
                                                 
                                                 Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
                                                     
-                                                    Text("Supportive \nInfluencers")
-                                                        .fontWeight(.regular)
-                                                        .foregroundColor(Color.white)
-                                                        .font(.system(size: 10))
+                                                    Text("early \nSupportive \nInfluencers")
+                                                        .fontWeight(.light)
+                                                        .foregroundColor(ColorManager .grey4)
+                                                        .font(.system(size: 9))
                                                         .rotationEffect(.degrees(-10))
                                                         .opacity(0.85)
                                                     
