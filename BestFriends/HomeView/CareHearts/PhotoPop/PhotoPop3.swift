@@ -198,7 +198,8 @@ struct PhotoPop3: View {
                             }
                         }
                         
-                   
+                        Spacer()
+                            .frame(height: 20)
                         
                         Button(action: {
                             counter += 1
@@ -223,6 +224,9 @@ struct PhotoPop3: View {
                         
                     }
                     
+                Spacer()
+                    .frame(height: 20)
+                
                 Button(action: {
                     sessionManager.showLogin()
                 },

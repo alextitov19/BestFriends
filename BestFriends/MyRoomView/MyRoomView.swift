@@ -133,6 +133,22 @@ struct MyRoomView: View {
                     Spacer ()
                         .frame(width: 30)
                     
+                    
+                    NavigationLink( destination:  CH20(user: user),
+                                    label: {
+                        Text("Friendship Rewards")
+                            .fontWeight(.bold)
+                            .frame(width: 300, height: 40)
+                            .foregroundColor(Color.black)
+                            .font(.system(size: 17))
+                            .background(Color.orange)
+                            .glow(color: ColorManager.purple1, radius: 1)
+                            .shadow(color: .white, radius: 3, x: -4, y: 4)
+                            .opacity(0.9)
+                            .cornerRadius(15)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                    })
+                    
                     ZStack {
                           
                         NavigationLink(
@@ -149,7 +165,7 @@ struct MyRoomView: View {
                             
                             VStack {
                                 Spacer()
-                                    .frame(height: 90)
+                                    .frame(height: 65)
                                 
                                 HStack {
                                    
@@ -231,24 +247,18 @@ struct MyRoomView: View {
                                                     .cornerRadius(7)
                                                     .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
                                             })
-//                                        }
-                                        
-                                        
-                                        Spacer()
-                                            .frame(height: 10)
                                       
                                     }
                                         
                                 }
 
-                                    }
-                                }
                             }
-                             
+                        }
+                    }
                 }
             
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 20)
                 
                 
            
@@ -270,7 +280,7 @@ struct MyRoomView: View {
                                                                       label: {
                                                           Text("PhotoPOP")
                                                               .fontWeight(.bold)
-                                                              .frame(width: 300, height: 50)
+                                                              .frame(width: 300, height: 40)
                                                               .foregroundColor(Color.black)
                                                               .font(.system(size: 17))
                                                               .background(Color.cyan)
@@ -292,22 +302,7 @@ struct MyRoomView: View {
                                                           
                                                           Spacer ()
                                                               .frame(width: 150)
-                                                        
-//                            NavigationLink( destination: INFOPreloadA(user: user, friends: friends),
-//                                            label: {
-//                                Text("?")
-//                                    .fontWeight(.light)
-//                                    .frame(width: 37, height: 37)
-//                                    .foregroundColor(ColorManager .grey4)
-//                                    .font(.system(size: 17))
-//                                    .background(ColorManager .grey2)
-//                                    .glow(color: ColorManager.purple3, radius: 1)
-//                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
-//                                    .opacity(0.9)
-//                                    .cornerRadius(15)
-//                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//
-//                            })
+
                                                           
 
                                                   }

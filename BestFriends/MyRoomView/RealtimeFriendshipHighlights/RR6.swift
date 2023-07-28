@@ -59,7 +59,7 @@ struct RR6: View {
                 
                 VStack {
 
-                    Text("Exhaling Spa")
+                    Text("Exhaling")
                         .font(.system(size: 45))
                         .foregroundColor(Color.white)
                         .fontWeight(.light)
@@ -82,7 +82,7 @@ struct RR6: View {
                             Spacer()
                                 .frame(height: 30)
                             
-                            Text("now you can let the outside of you")
+                            Text("Now, you can let the outside of you")
                                                         .font(.system(size: 22))
 //                                                        .italic()
                                                         .foregroundColor(ColorManager.grey1)
@@ -108,6 +108,18 @@ struct RR6: View {
                             Spacer()
                                 .frame(height: 20)
                             
+                            NavigationLink(
+                                destination: WhyFiveFriends(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
+                               label: {
+                                   Text("Why only 5 BFFs")
+                                       .fontWeight(.regular)
+                                       .frame(width: 150, height: 33)
+                                       .foregroundColor(Color.white)
+                                       .font(.system(size: 13))
+                                       .background(Color.orange)
+                                       .cornerRadius(15)
+                                       .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                               })
 
                         }
                         

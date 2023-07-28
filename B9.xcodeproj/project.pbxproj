@@ -743,7 +743,6 @@
 				2D7127C62A658BF400E14744 /* CH17.swift */,
 				2D7127C82A658C0100E14744 /* CH18.swift */,
 				2D7127CA2A658C0E00E14744 /* CH19.swift */,
-				2D7127CC2A658C1900E14744 /* CH20.swift */,
 			);
 			path = ReceivedCareHearts;
 			sourceTree = "<group>";
@@ -899,6 +898,7 @@
 		7A8F3D7C2A32BC5D00BC2CF4 /* MyRoomView */ = {
 			isa = PBXGroup;
 			children = (
+				CF0EB7D72A736808000B2A1F /* FriendshipRewards */,
 				2DBF3EDF2A61ACC400CB1CAD /* RR */,
 				2DFB032E2A5D333F00669948 /* RealtimeFriendshipHighlights */,
 				2DFB02FE2A57217100669948 /* FriendshipHighlights */,
@@ -1112,6 +1112,14 @@
 				CF41754B296FBB8D00898E2D /* InfoWhyLoveBF.swift */,
 			);
 			path = YouLookNice;
+			sourceTree = "<group>";
+		};
+		CF0EB7D72A736808000B2A1F /* FriendshipRewards */ = {
+			isa = PBXGroup;
+			children = (
+				2D7127CC2A658C1900E14744 /* CH20.swift */,
+			);
+			path = FriendshipRewards;
 			sourceTree = "<group>";
 		};
 		CF1CD75329E2908B00D1F801 /* New Summer Feature */ = {
@@ -2361,7 +2369,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 19;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -2391,7 +2399,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;

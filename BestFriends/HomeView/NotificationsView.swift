@@ -19,20 +19,12 @@ struct NotificationsView: View {
     
 //   *********************** color change tapped
     
-//    @State private var selectedFriends: [String] = []
+
    
-//    @State private var shareColor = ColorManager.purple5
-//    @State private var showingAlert = false
-    
-//    @State private var counter = 0
-    
-//    @State private var mood: Int = -1
-//    @State private var summary = ""
-//    @State private var sharedWith: [String] = []
-    
-    
+    @State private var shareColor = ColorManager.grey3
+
     @State private var colorChangeTap: String = ""
-    @State private var notificationsTapped: Bool = false
+    @State private var shareTapped: Bool = false
     @State private var colors: [Color] = [Color.cyan]
 
 //    ********************************
@@ -132,6 +124,7 @@ struct NotificationsView: View {
         }
         
         var body: some View {
+            
             ZStack {
                 NavigationLink(destination: PhotoPopView(user: user, friends: friends), isActive: $photoPopActive, label: {
                     EmptyView()
@@ -163,14 +156,18 @@ struct NotificationsView: View {
                 
                 
                 
-                Color.cyan
+               Color.cyan
                 
+//                NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
+//                    HugCircle (color: ColorManager .red, friendName: "blowing \nkisses")
+//                })
                 
-//                if notificationsTapped {
 //
-//                    Color.cyan
+//                if shareTapped {
+//
+//                    ColorManager .grey3
 //                } else {
-//                    ColorManager .grey2
+//                    Color.cyan
 //
 //                }
              
