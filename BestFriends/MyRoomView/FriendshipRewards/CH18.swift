@@ -74,12 +74,15 @@ struct CH18: View {
                                 .opacity(0.9)
                                 .foregroundColor(.white)
                             
-                                                            Text("Level 1 _")
-                                                                .font(.system(size: 25))
-                                                                .foregroundColor(ColorManager .grey4)
-                                                                .fontWeight(.regular)
-                                                                .multilineTextAlignment(.center)
-                                    }
+                            Text("Level 1 _ Hermès")
+                                .font(.system(size: 25))
+                                .foregroundColor(ColorManager .grey4)
+                                .fontWeight(.regular)
+                                .multilineTextAlignment(.center)
+                            
+                            
+                            
+                        }
                         
                         Text("after you acheive 30 Shooting Stars")
                             .font(.system(size: 25))
@@ -101,7 +104,7 @@ struct CH18: View {
                                 .opacity(0.9)
                                 .foregroundColor(.white)
                             
-                            Text("Level 2 _")
+                            Text("Level 2 _ Chanel")
                                 .font(.system(size: 25))
                                 .foregroundColor(ColorManager .grey4)
                                 .fontWeight(.regular)
@@ -130,7 +133,7 @@ struct CH18: View {
                                 .opacity(0.9)
                                 .foregroundColor(.white)
                             
-                            Text("Level 3 _")
+                            Text("Level 3 _ Fendi")
                                 .font(.system(size: 25))
                                 .foregroundColor(ColorManager .grey4)
                                 .fontWeight(.regular)

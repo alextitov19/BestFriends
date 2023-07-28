@@ -126,7 +126,7 @@ struct MyRoomView: View {
                                         
                                         NavigationLink( destination:  CH20(user: user),
                                                         label: {
-                                            Text("Rewards")
+                                            Text("Accessorizing")
                                         
                                                 .fontWeight(.bold)
                                                 .frame(width: 300, height: 40)
@@ -164,7 +164,7 @@ struct MyRoomView: View {
                                             }
                                             
                                             Spacer ()
-                                                .frame(width: 240)
+                                                .frame(width: 200)
                                             
                                             
                                             

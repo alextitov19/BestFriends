@@ -84,7 +84,7 @@ struct CH20: View {
                     
                         NavigationLink(destination: CH18(user: user),
                             label: {
-                                Text("Friendship \nBadges")
+                                Text("Friendship \nHandbags")
                                     .fontWeight(.light)
                                     .frame(width: 150, height: 70)
                                     .foregroundColor(ColorManager .grey4)
