@@ -52,7 +52,7 @@ struct CH17: View {
                     .cornerRadius(10)
                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                 
-                Text("shown as 'star' next to you planet")
+                Text("'star' next to you planet with # of days in a row")
                     .italic()
                     .font(.system(size: 15))
                     .fontWeight(.light)

@@ -13,7 +13,13 @@ import AVKit
 
 struct CH18: View {
     
+ 
+    
     let user: User
+     let atmosphere: Atmosphere
+     let friends: [User]
+     let friendAtmospheres: [Atmosphere]
+     let groups: [Group]
     
     var body: some View {
         
@@ -36,11 +42,11 @@ struct CH18: View {
             
             VStack {
                 
-                Text("Friendship Badges")
+                Text("Friendship Handbag Badges")
                     .fontWeight(.light)
-                    .frame(width: 320, height: 60)
+                    .frame(width: 325, height: 60)
                     .foregroundColor(Color.white)
-                    .font(.system(size: 30))
+                    .font(.system(size: 25))
                     .background(ColorManager .orange5)
                     .cornerRadius(10)
                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
@@ -74,20 +80,29 @@ struct CH18: View {
                                 .opacity(0.9)
                                 .foregroundColor(.white)
                             
-                            Text("Level 1 _ Hermès")
-                                .font(.system(size: 25))
-                                .foregroundColor(ColorManager .grey4)
-                                .fontWeight(.regular)
-                                .multilineTextAlignment(.center)
                             
-                            
-                            
-                        }
+                            NavigationLink(
+                                destination: CH17(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                label: {
+                                    Text("Level 1 \nHermès")
+                                        .fontWeight(.regular)
+                                        .frame(width: 100, height: 50)
+                                        .foregroundColor(ColorManager .grey4)
+                                        .font(.system(size: 20))
+                                        .background(Color.cyan)
+                                        .opacity(0.85)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                    
+                                })
+    
+                    }
                         
                         Text("after you acheive 30 Shooting Stars")
-                            .font(.system(size: 25))
-                            .foregroundColor(Color.cyan)
-                            .fontWeight(.bold)
+                            .font(.system(size: 18))
+                            .italic()
+                            .foregroundColor(Color.white)
+                            .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                         
                         
@@ -104,19 +119,29 @@ struct CH18: View {
                                 .opacity(0.9)
                                 .foregroundColor(.white)
                             
-                            Text("Level 2 _ Chanel")
-                                .font(.system(size: 25))
-                                .foregroundColor(ColorManager .grey4)
-                                .fontWeight(.regular)
-                                .multilineTextAlignment(.center)
+                            NavigationLink(
+                                destination: EmptyView(),
+                                label: {
+                                    Text("Level 2 \nChanel")
+                                        .fontWeight(.regular)
+                                        .frame(width: 100, height: 50)
+                                        .foregroundColor(ColorManager .grey4)
+                                        .font(.system(size: 20))
+                                        .background(Color.cyan)
+                                        .opacity(0.85)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                    
+                                })
         
         
                         }
                         
-                        Text("???")
-                            .font(.system(size: 25))
-                            .foregroundColor(Color.cyan)
-                            .fontWeight(.bold)
+                        Text("comming soon")
+                            .font(.system(size: 18))
+                            .italic()
+                            .foregroundColor(Color.white)
+                            .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                         
                         
@@ -133,19 +158,28 @@ struct CH18: View {
                                 .opacity(0.9)
                                 .foregroundColor(.white)
                             
-                            Text("Level 3 _ Fendi")
-                                .font(.system(size: 25))
-                                .foregroundColor(ColorManager .grey4)
-                                .fontWeight(.regular)
-                                .multilineTextAlignment(.center)
-                      
+                            NavigationLink(
+                                destination: EmptyView(),
+                                label: {
+                                    Text("Level 2 \nFendi")
+                                        .fontWeight(.regular)
+                                        .frame(width: 100, height: 50)
+                                        .foregroundColor(ColorManager .grey4)
+                                        .font(.system(size: 20))
+                                        .background(Color.cyan)
+                                        .opacity(0.85)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                    
+                                })
                             
                         }
                         
-                        Text("???")
-                            .font(.system(size: 25))
-                            .foregroundColor(Color.cyan)
-                            .fontWeight(.bold)
+                        Text("comming soon")
+                            .font(.system(size: 18))
+                            .italic()
+                            .foregroundColor(Color.white)
+                            .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                         
                         }

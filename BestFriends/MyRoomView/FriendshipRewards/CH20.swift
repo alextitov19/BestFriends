@@ -82,7 +82,7 @@ struct CH20: View {
                     
                     
                     
-                        NavigationLink(destination: CH18(user: user),
+                        NavigationLink(destination: CH18(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
                                 Text("Friendship \nHandbag \nBadges")
                                     .fontWeight(.light)
@@ -102,10 +102,8 @@ struct CH20: View {
                         .frame(width: 7)
         
                 VStack {
+                    
                     NavigationLink(
-                        
-
-                        
                         destination: CH17(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                         label: {
                             Text("CareHeart \nShooting Stars")
