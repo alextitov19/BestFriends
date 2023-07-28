@@ -130,35 +130,13 @@ struct MyRoomView: View {
                 
                 
                 VStack {
+                    
                     Spacer ()
                         .frame(width: 14)
+                    
                     HStack {
                         
-                        ZStack {
-                            
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .foregroundColor(ColorManager .purple3)
-                                .frame(width: 90, height: 70)
-                                .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                                .opacity(0.7)
-          
-                                NavigationLink(
-                                    
-                                    destination: BuiltByTeensView(user: user, friends: friends),
-                                    label: {
-                                        Text("Our Story")
-                                            .fontWeight(.regular)
-                                            .foregroundColor(Color.white)
-                                            .font(.system(size: 13))
-                                
-                                
-                                
-                            })
-                        }
-                        
-                        Spacer ()
-                            .frame(width: 15)
+                    
                         
                         
                         NavigationLink( destination:  CH20(user: user),
@@ -624,9 +602,27 @@ struct MyRoomView: View {
     }
     
     
-    
-    
-    
+//
+//Image(systemName: "heart.fill")
+//    .resizable()
+//    .foregroundColor(ColorManager .purple3)
+//    .frame(width: 90, height: 70)
+//    .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+//    .opacity(0.7)
+//
+//    NavigationLink(
+//
+//        destination: BuiltByTeensView(user: user, friends: friends),
+//        label: {
+//            Text("Our Story")
+//                .fontWeight(.regular)
+//                .foregroundColor(Color.white)
+//                .font(.system(size: 13))
+//
+//
+//
+//})
+//
     
 
 //******************************* Hurt Feeling section - DO NOT DELETE ***
