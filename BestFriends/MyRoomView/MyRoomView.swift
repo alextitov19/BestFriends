@@ -304,7 +304,7 @@ struct MyRoomView: View {
                 }
             
                 Spacer()
-                    .frame(height: 40)
+                    .frame(height: 35)
                 
                 
            
@@ -368,7 +368,7 @@ struct MyRoomView: View {
                     VStack {
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 15)
                         
                         ZStack {
                               
@@ -478,7 +478,7 @@ struct MyRoomView: View {
                 }
                     
                 Spacer()
-                    .frame(height: 40)
+                    .frame(height: 35)
                 
 //                ************************************************
                 
@@ -549,7 +549,7 @@ struct MyRoomView: View {
                                         })
                                         
                                         Spacer()
-                                            .frame(height: 30)
+                                            .frame(height: 0)
                                       
                                     }
                                         
