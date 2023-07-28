@@ -24,9 +24,6 @@ struct INFOPreload3: View {
     var body: some View {
         ZStack {
 
-//            ColorManager .grey4
-//                .ignoresSafeArea()
-//                .onAppear()
             ColorManager .purple4
                 .opacity(0.6)
                 .ignoresSafeArea()
@@ -48,27 +45,6 @@ struct INFOPreload3: View {
 
             VStack {
 
-//                Text("now you can let the outside of you")
-//                                   .font(.system(size: 22))
-//                                   .italic()
-//                                   .foregroundColor(ColorManager.grey1)
-//                                   .fontWeight(.thin)
-//                                   .multilineTextAlignment(.center)
-//
-//                               Text("match the inside of you")
-//                                   .font(.system(size: 22))
-//                                   .italic()
-//                                   .foregroundColor(ColorManager.grey1)
-//                                   .fontWeight(.thin)
-//                                   .multilineTextAlignment(.center)
-//
-//
-//                               Text("on social media")
-//                                   .font(.system(size: 22))
-//                                   .italic()
-//                                   .foregroundColor(ColorManager.grey1)
-//                                   .fontWeight(.thin)
-//                                   .multilineTextAlignment(.center)
                 VStack {
                     
                     
@@ -80,8 +56,15 @@ struct INFOPreload3: View {
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     
                     
-                    Text("REWARD stickers \nfor you & your friends")
+                    Text("BestFriends stickers \nfor you & your friends")
                         .font(.system(size: 25))
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.white)
+                        .multilineTextAlignment(.center)
+                    
+                    Text("(must reach Level 1)")
+                        .font(.system(size: 17))
+                        .italic()
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
@@ -92,13 +75,15 @@ struct INFOPreload3: View {
                     VStack{
                         Spacer()
                             .frame(height: 50)
-                        Text("If you receive a REWARD prompt...")
+                      
+                        
+                        Text("Just send us your name")
                             .font(.system(size: 17))
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
                             .multilineTextAlignment(.center)
                         
-                        Text("Just send us your name \n& mailing address to:")
+                        Text("and mailing address to:")
                             .font(.system(size: 17))
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
@@ -113,16 +98,23 @@ struct INFOPreload3: View {
                             .frame(width: 200, height: 40)
                             .foregroundColor(Color.white)
                             .font(.system(size: 13))
-                            .background(Color.pink)
+                            .background(Color.orange)
                             .opacity(0.85)
                             .cornerRadius(15)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         
                         
                         Spacer()
-                            .frame(height: 70)
+                            .frame(height: 15)
                         
-                        Text("(available while supplies last, \nwe pay shipping)")
+//                        Text("(for now - while supplies last)")
+//                            .font(.system(size: 12))
+//                            .italic()
+//                            .fontWeight(.thin)
+//                            .foregroundColor(ColorManager .grey1)
+//                            .multilineTextAlignment(.center)
+                        
+                        Text("(we pay shipping)")
                             .font(.system(size: 12))
                             .italic()
                             .fontWeight(.thin)
