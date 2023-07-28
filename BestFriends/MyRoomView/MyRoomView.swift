@@ -67,7 +67,7 @@ struct MyRoomView: View {
                         })
                     
                     Spacer ()
-                        .frame(width: 25)
+                        .frame(width: 38)
                     
                     VStack {
                     
@@ -91,7 +91,7 @@ struct MyRoomView: View {
                 }
                    
                     Spacer ()
-                        .frame(width: 25)
+                        .frame(width: 38)
                     
                         NavigationLink(
                             destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
@@ -108,79 +108,76 @@ struct MyRoomView: View {
                  
                     }
                     
-                
-//                    ZStack{
-//                        Image("CHMainKelly")
-//                            .resizable()
-//                            .frame(width: 300, height: 150)
-//                            .cornerRadius(20)
-//
-//                        HStack {
-//                            Button(action: {}, label: {
-//                                Text("Send")
-//                            })
-//
-//                            Button(action: {}, label: {
-//                                Text("Request")
-//                            })
-//                        }
-//                    }
-                    
-//           **********************************************
-                
-                
-                VStack {
-                    
-                    Spacer ()
-                        .frame(width: 14)
-                    
-                    HStack {
-                        
-                    
-                        
-                        
-                        NavigationLink( destination:  CH20(user: user),
-                                        label: {
-                            Text("Rewards")
-                                .fontWeight(.bold)
-                                .frame(width: 90, height: 33)
-                                .foregroundColor(Color.black)
-                                .font(.system(size: 17))
-                                .background(ColorManager .orange3)
-                                .glow(color: ColorManager.purple1, radius: 1)
-                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                .opacity(0.9)
-                                .cornerRadius(10)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                        })
-                        
-                        Spacer ()
-                            .frame(width: 15)
-                        
-                        ZStack {
-                            
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .foregroundColor(ColorManager .purple3)
-                                .frame(width: 90, height: 70)
-                                .rotationEffect(.degrees(-10))
-                                .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                                .opacity(0.7)
-                            
-                            Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
-                                
-                                Text("Supportive \nInfluencers")
-                                    .fontWeight(.regular)
-                                    .foregroundColor(Color.white)
-                                    .font(.system(size: 10))
-                                    .rotationEffect(.degrees(-10))
-                                    .opacity(0.85)
-                                
-                            }
-                        }
-                    }
+                Spacer()
+                    .frame(height: 20)
 
+//      ************************************************************
                     
+                    VStack {
+                        
+                        
+                        VStack {
+                            
+                            HStack {
+                                VStack {
+                                    
+                                    ZStack {
+                                        
+                                        
+                                        NavigationLink( destination:  CH20(user: user),
+                                                        label: {
+                                            Text("Rewards")
+                                        
+                                                .fontWeight(.bold)
+                                                .frame(width: 300, height: 40)
+                                                .foregroundColor(Color.black)
+                                                .font(.system(size: 17))
+                                                .background(ColorManager .purple2)
+                                                .glow(color: ColorManager.purple1, radius: 1)
+                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                                .opacity(0.9)
+                                                .cornerRadius(15)
+                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                        })
+                                        
+                                        HStack {
+                                            ZStack {
+                                                
+                                                Image(systemName: "heart.fill")
+                                                    .resizable()
+                                                    .foregroundColor(ColorManager .purple4)
+                                                    .frame(width: 90, height: 70)
+                                                    .rotationEffect(.degrees(-10))
+                                                    .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+                                                    .opacity(0.99)
+                                                
+                                                Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
+                                                    
+                                                    Text("Supportive \nInfluencers")
+                                                        .fontWeight(.regular)
+                                                        .foregroundColor(Color.white)
+                                                        .font(.system(size: 10))
+                                                        .rotationEffect(.degrees(-10))
+                                                        .opacity(0.85)
+                                                    
+                                                }
+                                            }
+                                            
+                                            Spacer ()
+                                                .frame(width: 240)
+                                            
+                                            
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                            
+                        }
+                    
+                    
+                    
+//                    ******************************************************
                     
                     
             
@@ -552,7 +549,7 @@ struct MyRoomView: View {
                                         })
                                         
                                         Spacer()
-                                            .frame(height: 70)
+                                            .frame(height: 30)
                                       
                                     }
                                         

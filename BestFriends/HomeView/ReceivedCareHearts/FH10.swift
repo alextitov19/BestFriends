@@ -88,9 +88,9 @@ struct FH10: View {
                         
                         destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
                         label: {
-                            Text("Invite \n& Accept \nFriends")
+                            Text("Invite & Accept \nFriends")
                                 .fontWeight(.regular)
-                                .frame(width: 80, height: 50)
+                                .frame(width: 130, height: 50)
                                 .foregroundColor(Color.white)
                                 .font(.system(size: 13))
                                 .background(Color.orange)
@@ -143,7 +143,7 @@ struct FH10: View {
                                 Image(systemName: "heart.fill")
                                     .resizable()
                                     .foregroundColor(ColorManager .purple3)
-                                    .frame(width: 150, height: 100)
+                                    .frame(width: 130, height: 90)
                                     .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                                     .opacity(0.7)
                                 
