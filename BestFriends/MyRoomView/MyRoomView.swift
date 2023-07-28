@@ -140,20 +140,9 @@ struct MyRoomView: View {
                                 .resizable()
                                 .foregroundColor(ColorManager .purple3)
                                 .frame(width: 90, height: 70)
-                            //                        .rotationEffect(Angle: )
                                 .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                                 .opacity(0.7)
-                            
-//                            Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
-//
-//                                Text("Supportive \nInfluencers")
-//                                    .fontWeight(.regular)
-//                                    .foregroundColor(Color.white)
-//                                    .font(.system(size: 10))
-//                                    .opacity(0.85)
-                                
-                           
-                                
+          
                                 NavigationLink(
                                     
                                     destination: BuiltByTeensView(user: user, friends: friends),
@@ -196,7 +185,7 @@ struct MyRoomView: View {
                                 .resizable()
                                 .foregroundColor(ColorManager .purple3)
                                 .frame(width: 90, height: 70)
-                            //                        .rotationEffect(Angle: )
+                                .rotationEffect(.degrees(-10))
                                 .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                                 .opacity(0.7)
                             
@@ -206,6 +195,7 @@ struct MyRoomView: View {
                                     .fontWeight(.regular)
                                     .foregroundColor(Color.white)
                                     .font(.system(size: 10))
+                                    .rotationEffect(.degrees(-10))
                                     .opacity(0.85)
                                 
                             }
