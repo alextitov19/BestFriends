@@ -13,7 +13,13 @@ import AVKit
 
 struct CH17: View {
     
+  
+    
     let user: User
+     let atmosphere: Atmosphere
+     let friends: [User]
+     let friendAtmospheres: [Atmosphere]
+     let groups: [Group]
     
     var body: some View {
         
@@ -78,15 +84,15 @@ struct CH17: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.grey1)
                         
-                        Text("sending emotional support to friends")
-                        //                            .italic()
-                            .font(.system(size: 20))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.grey1)
+//                        Text("sending emotional support to friends")
+//                        //                            .italic()
+//                            .font(.system(size: 20))
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(ColorManager.grey1)
                         
                         
-                        Text("in the form of CareHearts")
+                        Text("sending CareHearts")
                         //                            .italic()
                             .font(.system(size: 20))
                             .fontWeight(.light)
@@ -99,10 +105,10 @@ struct CH17: View {
                         
                         VStack {
                             
-                            NavigationLink(destination: InfoPushNotifications(user: user),
+                            NavigationLink(destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                                            label: {
                                 
-                                Text("sending Hugs _ blowing Kisses \nsending PhotoPOPs and Songs")
+                                Text("Blowing Kisses _ sending Hugs, PhotoPOPs & Songs")
                                     .fontWeight(.light)
                                     .frame(width: 320, height: 60)
                                     .foregroundColor(Color.white)

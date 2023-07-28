@@ -104,9 +104,9 @@ struct CH20: View {
                 VStack {
                     NavigationLink(
                         
-//                        destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
+
                         
-                        destination: CH17(user: user),
+                        destination: CH17(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                         label: {
                             Text("CareHeart \nShooting Stars")
                                 .fontWeight(.light)
