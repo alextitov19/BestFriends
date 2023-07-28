@@ -82,7 +82,7 @@ struct CH20: View {
                     
                     
                     
-                        NavigationLink(destination: EmptyView(),
+                        NavigationLink(destination: CH18(user: user),
                             label: {
                                 Text("Friendship \nBadges")
                                     .fontWeight(.light)
@@ -119,7 +119,7 @@ struct CH20: View {
                         })
                     
                         NavigationLink(
-                            destination: InfoPushNotifications(user: user),
+                            destination: CH19(user: user),
                                 label: {
                                     Text("Access \nFriendship Highlights")
                                         .fontWeight(.light)

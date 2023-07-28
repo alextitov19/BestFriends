@@ -741,8 +741,6 @@
 				2D7127C22A658BDD00E14744 /* CH15.swift */,
 				2D7127C42A658BE900E14744 /* CH16.swift */,
 				2D7127C62A658BF400E14744 /* CH17.swift */,
-				2D7127C82A658C0100E14744 /* CH18.swift */,
-				2D7127CA2A658C0E00E14744 /* CH19.swift */,
 			);
 			path = ReceivedCareHearts;
 			sourceTree = "<group>";
@@ -1118,6 +1116,8 @@
 			isa = PBXGroup;
 			children = (
 				2D7127CC2A658C1900E14744 /* CH20.swift */,
+				2D7127CA2A658C0E00E14744 /* CH19.swift */,
+				2D7127C82A658C0100E14744 /* CH18.swift */,
 			);
 			path = FriendshipRewards;
 			sourceTree = "<group>";
