@@ -332,7 +332,7 @@ struct MyRoomView: View {
                     VStack {
                         
                         Spacer()
-                            .frame(height: 40)
+                            .frame(height: 20)
                         
                         ZStack {
                               
