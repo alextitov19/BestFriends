@@ -118,23 +118,22 @@ struct CH20: View {
                             
                         })
                     
-                                                    NavigationLink(
-                    
-                                                        destination: InfoPushNotifications(user: user),
-                                                        label: {
-                                                            Text("Access \nFriendship Highlights")
-                                                                .fontWeight(.regular)
-                                                                .frame(width: 150, height: 100)
-                                                                .foregroundColor(Color.white)
-                                                                .font(.system(size: 20))
-                                                                .background(Color.cyan)
-                                                                .opacity(0.85)
-                                                                .cornerRadius(15)
-                                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                        NavigationLink(
+                            destination: InfoPushNotifications(user: user),
+                                label: {
+                                    Text("Access \nFriendship Highlights")
+                                        .fontWeight(.light)
+                                        .frame(width: 150, height: 70)
+                                        .foregroundColor(ColorManager .grey4)
+                                        .font(.system(size: 17))
+                                        .background(Color.cyan)
+                                        .opacity(0.85)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                     
                                                         })
                     
-                }
+                        }
                 }
                 
                 Spacer ()
