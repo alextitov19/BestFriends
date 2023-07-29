@@ -337,28 +337,28 @@ struct MyRoomView: View {
                                                               .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                                       })
                                                      
-                                                      HStack {
-                                                          Image(systemName: "")
-                                                              .resizable()
-                                                              .scaledToFit()
-                                                              .frame(width: 37, height: 37)
-                                                              .opacity(0.5)
-                                                              .foregroundColor(.black)
-                                                              .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                            HStack {
+                                Image(systemName: "")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 37, height: 37)
+                                    .opacity(0.5)
+                                    .foregroundColor(.black)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                                           
-                                                          Spacer ()
-                                                              .frame(width: 250)
+                                Spacer ()
+                                    .frame(width: 180)
                                                   
-                                                          HStack {
-                                                              ZStack {
+//
+                        ZStack {
                                                                   
-                                                                  Image(systemName: "heart.fill")
-                                                                      .resizable()
-                                                                      .foregroundColor(ColorManager .purple2)
-                                                                      .frame(width: 80, height: 60)
-                                                                      .rotationEffect(.degrees(7))
-                                                                      .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                                                                      .opacity(0.99)
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .foregroundColor(ColorManager .purple2)
+                                .frame(width: 80, height: 60)
+                                .rotationEffect(.degrees(7))
+                                .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+                                .opacity(0.99)
                                                                   
                                                                   
 
@@ -369,15 +369,12 @@ struct MyRoomView: View {
                             .fontWeight(.light)
                             .foregroundColor(ColorManager .darkGrey)
                             .font(.system(size: 9))
-                            .rotationEffect(.degrees(-7))
+                            .rotationEffect(.degrees(7))
                             .opacity(0.85)
 
                             })
    
                         }
-                    }
-//                    Spacer ()
-//                        .frame(width: 150)
 
                                                       }
                                                   }
