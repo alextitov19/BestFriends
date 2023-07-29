@@ -17,17 +17,17 @@ struct NotificationsView: View {
     let friends: [User]
     
     
-//   *********************** color change tapped
+    //   *********************** color change tapped
     
-
-   
+    
+    
     @State private var shareColor = ColorManager.grey3
-
+    
     @State private var colorChangeTap: String = ""
     @State private var shareTapped: Bool = false
     @State private var colors: [Color] = [Color.cyan]
-
-//    ********************************
+    
+    //    ********************************
     
     
     var body: some View {
@@ -83,7 +83,7 @@ struct NotificationsView: View {
         
         let ian: InAppNotification
         var t: String
-
+        
         @State private var hugActive = false
         @State private var photoPopActive = false
         @State private var kissesActive = false
@@ -93,7 +93,9 @@ struct NotificationsView: View {
         @State private var thanksHugActive = false
         @State private var thanksHeartActive = false
         @State private var fixFightActive = false
-
+        //        @State private var talkCouponActive = false
+        
+        
         init(ian: InAppNotification, user: User, friends: [User]) {
             self.ian = ian
             self.user = user
@@ -125,6 +127,8 @@ struct NotificationsView: View {
         }
         
         var body: some View {
+            
+            
             
             ZStack {
                 NavigationLink(destination: PhotoPopView(user: user, friends: friends), isActive: $photoPopActive, label: {
@@ -159,82 +163,83 @@ struct NotificationsView: View {
                     EmptyView()
                 })
                 
+                //                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $talkCouponActive, label: {
+                //                    EmptyView()
+                //                })
                 
-                
-               Color.cyan
-                
-//                NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
-//                    HugCircle (color: ColorManager .red, friendName: "blowing \nkisses")
-//                })
-                
-//
-//                if shareTapped {
-//
-//                    ColorManager .grey3
-//                } else {
-//                    Color.cyan
-//
-//                }
-             
-
-
-                
-                VStack {
-                    Text(ian.text)
-                        .font(.system(size: 16, weight: .regular))
-                        .padding(.horizontal, 5)
+              
                     
-                    HStack {
-                        Text(ian.sender)
-                            .font(.system(size: 12, weight: .light))
-
-                        Spacer()
+                    Color.cyan
+                    
+                    
+                    
+                    VStack {
                         
-                        Text(t)
-                            .font(.system(size: 12, weight: .light))
+                        Text(ian.text)
+                            .font(.system(size: 16, weight: .regular))
+                            .padding(.horizontal, 5)
+                        
+                        
+                        
+                        HStack {
+                            Text(ian.sender)
+                                .font(.system(size: 12, weight: .light))
+                            
+                            Spacer()
+                            
+                            Text(t)
+                                .font(.system(size: 12, weight: .light))
+                        }
+                        .padding(.horizontal, 5)
                     }
-                    .padding(.horizontal, 5)
                 }
+                .frame(height: 60)
+                .cornerRadius(15)
+                .onTapGesture(perform: tapped)
+                
             }
-            .frame(height: 60)
-            .cornerRadius(15)
-            .onTapGesture(perform: tapped)
             
-        }
-        
-        private func tapped() {
-            switch ian.text {
-
-            case "What are you doing? Send PhotoPoP!":
-                photoPopActive = true
-       
-            case "Just sent you a warming Hug!":
-                hugActive = true
-
-            case "Jump up and catch your fresh kisses!":
-                kissesActive = true
-                
-            case "Is thinking about you and sent you a Heart!":
-                heartsActive = true
-                
-            case "Ahhh! Thanks for the Kisses!":
-                thanksKissesActive = true
-                
-            case "Ahhh! Thanks for the Hug - it was just what I needed!":
-                thanksHugActive = true
-                
-            case "Said thank you for the Heart!":
-                thanksHeartActive = true
-                
-            case "Just sent you a message in Chat - please look at it":
-                fixFightActive = true
-                                    
-                
-            default:
-                return
+            
+            
+            private func tapped() {
+                switch ian.text {
+                    
+                case "What are you doing? Send PhotoPoP!":
+                    photoPopActive = true
+                    
+                case "Just sent you a warming Hug!":
+                    hugActive = true
+                    
+                case "Jump up and catch your fresh kisses!":
+                    kissesActive = true
+                    
+                case "Is thinking about you and sent you a Heart!":
+                    heartsActive = true
+                    
+                case "Ahhh! Thanks for the Kisses!":
+                    thanksKissesActive = true
+                    
+                case "Ahhh! Thanks for the Hug - it was just what I needed!":
+                    thanksHugActive = true
+                    
+                case "Said thank you for the Heart!":
+                    thanksHeartActive = true
+                    
+                case "Just sent you a message in Chat - please look at it":
+                    fixFightActive = true
+                    
+                    //                case "Is redeaming ONE 'TalkCoupon'":
+                    //                    talkCouponActive = true
+                    
+                    
+                    
+                    
+                default:
+                    return
+                    
+                    
+                }
             }
         }
     }
-}
-
 

@@ -51,7 +51,7 @@ struct CH14: View {
         //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
-        customMessage = "Friendship COUPON from; " + user.firstName + " : " + customMessage;
+        customMessage = "REACHING OUT AFTER FIGHT; " + user.firstName + " : " + customMessage;
         
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
