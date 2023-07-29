@@ -737,8 +737,6 @@
 				2DFB032C2A5D30C200669948 /* CH10.swift */,
 				2D7127BA2A658B9000E14744 /* CH11.swift */,
 				2D7127BC2A658BA800E14744 /* CH12.swift */,
-				2D7127BE2A658BBA00E14744 /* CH13.swift */,
-				2D7127C02A658BCF00E14744 /* CH14.swift */,
 			);
 			path = ReceivedCareHearts;
 			sourceTree = "<group>";
@@ -1125,6 +1123,8 @@
 			isa = PBXGroup;
 			children = (
 				2D7127C22A658BDD00E14744 /* CH15.swift */,
+				2D7127C02A658BCF00E14744 /* CH14.swift */,
+				2D7127BE2A658BBA00E14744 /* CH13.swift */,
 			);
 			path = "Drama Central 2";
 			sourceTree = "<group>";

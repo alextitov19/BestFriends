@@ -267,13 +267,7 @@ struct Step2_FightLandingView: View {
                             
                             Spacer()
                                 .frame(height: 50)
-                            
-                            //88888888888888888888888888888888888888888888888888
-                            
-                            
-                            
-                            
-                            //                            this the link to Friendship Highlights ***************
+                    
                             Text("Now the hellish")
                                 .font(.system(size: 20, weight: .light))
                                 .foregroundColor(ColorManager .grey1)

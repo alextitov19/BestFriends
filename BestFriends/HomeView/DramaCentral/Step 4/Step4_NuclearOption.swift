@@ -39,7 +39,7 @@ struct Step4_NuclearOption: View {
 
             ZStack{
 
-
+//                Step2_FightLandingView(user: user, friends: friends
 
                     NavigationLink(destination: Step2_FightLandingView(user: user, friends: friends), label: {
                         HugCircle (color: Color.purple, friendName: "OK, \nI'm ready to reach out 1st \nto try to fix this \n\nTAP")
@@ -123,6 +123,21 @@ struct Step4_NuclearOption: View {
                         VStack {
                             Spacer ()
                                 .frame(height: 290)
+                            
+                            
+                            NavigationLink(destination: CH13(user: user, friends: friends),
+                                           label: {
+                                Text("Talk Coupon")
+                                    .fontWeight(.light)
+                                    .frame(width: 170, height: 40)
+                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 20))
+                                    .background(Color .cyan)
+                                    .cornerRadius(10)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                
+                            })
+                            
                             
                             HStack {
                             
