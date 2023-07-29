@@ -110,6 +110,12 @@ struct PhotoPopFGPreload: View {
                     .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
                 
+                
+                ColorManager.purple2
+//                    .ignoresSafeArea()
+//                    .onAppear()
+                
+                
             }
             
             
@@ -129,25 +135,11 @@ struct PhotoPopFGPreload: View {
                                     }
                                  
                                 }
-                                
-                                
-//                                .fontWeight(.regular)
-                                        .frame(width: 120, height: 35)
-                                        .foregroundColor(ColorManager .purple5)
-                                        .font(.system(size: 17))
-                                        .background(ColorManager .purple1)
-                                        .glow(color: ColorManager.purple3, radius: 1)
-                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                        .opacity(0.9)
-                                        .cornerRadius(7)
-                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-                                
-                                
-                                
+
                                 ZStack(alignment: .bottom) {
                                     Image("Coupon Design - Wide 1")
                                         .resizable()
-                                        .frame(width: 350, height: 150)
+                                        .frame(width: 340, height: 150)
                                         .cornerRadius(15)
                                     
                                     VStack {
@@ -156,7 +148,7 @@ struct PhotoPopFGPreload: View {
                                         TextField("", text: $customMessage)
                                             .placeholder(when: customMessage.isEmpty) {
                                                 HStack {
-                                                    Text("Write your coupon in here")
+                                                    Text("Tap - type in your coupon here")
                                                         .foregroundColor(ColorManager.grey4)
                                                         .fontWeight(.thin)
                                                         .background(ColorManager .purple1)
@@ -165,7 +157,7 @@ struct PhotoPopFGPreload: View {
                                                 }
                                             }
                                             .foregroundColor(.black)
-                                            .font(.system(size: 18))
+                                            .font(.system(size: 19))
                                             .submitLabel(.done)
                                             .onReceive(Just(customMessage)) { _ in limitText(65) }
                                             .padding(.top, 20)
@@ -187,26 +179,13 @@ struct PhotoPopFGPreload: View {
                     }
                     
                 }
-                
-             
-//                ZStack {
-                    
-             
-                    
-//                    Image(systemName: "square.fill")
-//                        .resizable()
-//                        .foregroundColor(Color.purple)
-//                        .frame(width: 375, height: 150)
-//                        .cornerRadius(15)
-//                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-//                        .opacity(0.4)
-                    
+  
                     
                     VStack {
                         
                         Spacer()
                             .frame(height: 40)
-//                    }
+
                     
                     
                     Text("Send your friend a Friendship Coupon that next time you are together they can redeem for your gift, like an ice cream, a cheeseburger - what ever you want to give them.")
@@ -380,7 +359,8 @@ struct PhotoPopFGPreload: View {
                                     
                                 })
                                 
-                                
+    
+                        
                                 Spacer()
                                     .frame(height: 100)
                             }
