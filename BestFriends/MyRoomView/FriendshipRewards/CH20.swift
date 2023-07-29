@@ -144,53 +144,53 @@ struct CH20: View {
                         .frame(height: 15)
                     
                  
-        ZStack {
-                    
-                    Image(systemName: "circle.fill")
-                        .resizable()
-                        .foregroundColor(Color.purple)
-                        .frame(width: 420, height: 420)
-                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.95)
-                    
-            VStack {
-                
-                Text("Super Friendship Days")
-                    .fontWeight(.light)
-                    .frame(width: 320, height: 60)
-                    .foregroundColor(Color.white)
-                    .font(.system(size: 30))
-                    .background(ColorManager .orange5)
-                    .cornerRadius(10)
-                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                Spacer()
-                    .frame(height: 20)
-                
-                HStack {
-                    
-                                                    Text("Monday _")
-                                                        .font(.system(size: 25))
-                                                        .foregroundColor(ColorManager .grey4)
-                                                        .fontWeight(.regular)
-                                                        .multilineTextAlignment(.center)
-                    
-                    
-                    Text("emotional support")
-                        .font(.system(size: 25))
-                        .italic()
-                        .foregroundColor(ColorManager .grey1)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                    
-                }
-                
-                Text("CareHearts")
-                    .font(.system(size: 25))
-                    .foregroundColor(Color.cyan)
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-                
-                
+//        ZStack {
+//
+//                    Image(systemName: "circle.fill")
+//                        .resizable()
+//                        .foregroundColor(Color.purple)
+//                        .frame(width: 420, height: 420)
+//                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+//                        .opacity(0.95)
+//
+//            VStack {
+//
+//                Text("Super Friendship Days")
+//                    .fontWeight(.light)
+//                    .frame(width: 320, height: 60)
+//                    .foregroundColor(Color.white)
+//                    .font(.system(size: 30))
+//                    .background(ColorManager .orange5)
+//                    .cornerRadius(10)
+//                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                Spacer()
+//                    .frame(height: 20)
+//
+//                HStack {
+//
+//                                                    Text("Monday _")
+//                                                        .font(.system(size: 25))
+//                                                        .foregroundColor(ColorManager .grey4)
+//                                                        .fontWeight(.regular)
+//                                                        .multilineTextAlignment(.center)
+//
+//
+//                    Text("emotional support")
+//                        .font(.system(size: 25))
+//                        .italic()
+//                        .foregroundColor(ColorManager .grey1)
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//
+//                }
+//
+//                Text("CareHearts")
+//                    .font(.system(size: 25))
+//                    .foregroundColor(Color.cyan)
+//                    .fontWeight(.bold)
+//                    .multilineTextAlignment(.center)
+//
+//
                 
 //                Spacer()
 //                    .frame(height: 25)
@@ -219,41 +219,41 @@ struct CH20: View {
 //                    .multilineTextAlignment(.center)
                 
                 
+//
+//                Spacer()
+//                    .frame(height: 25)
+//
+//                HStack {
+//
+//                    Text("Thursday _")
+//                        .font(.system(size: 25))
+//                        .foregroundColor(ColorManager .grey4)
+//                        .fontWeight(.regular)
+//                        .multilineTextAlignment(.center)
+//
+//                    Text("'shake' your iPhone for")
+//                        .font(.system(size: 25))
+//                        .italic()
+//                        .foregroundColor(ColorManager .grey1)
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//
+//                }
+//
+//                Text("Lightspeed Images")
+//                    .font(.system(size: 25))
+//                    .foregroundColor(Color.cyan)
+//                    .fontWeight(.bold)
+//                    .multilineTextAlignment(.center)
                 
-                Spacer()
-                    .frame(height: 25)
-                
-                HStack {
-                    
-                    Text("Thursday _")
-                        .font(.system(size: 25))
-                        .foregroundColor(ColorManager .grey4)
-                        .fontWeight(.regular)
-                        .multilineTextAlignment(.center)
-                   
-                    Text("'shake' your iPhone for")
-                        .font(.system(size: 25))
-                        .italic()
-                        .foregroundColor(ColorManager .grey1)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                    
-                }
-                
-                Text("Lightspeed Images")
-                    .font(.system(size: 25))
-                    .foregroundColor(Color.cyan)
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-                
-                }
-            }
-        }
-                    
                 }
             }
         }
-    }
+                    
+                }
+            }
+//        }
+//    }
 
 
     

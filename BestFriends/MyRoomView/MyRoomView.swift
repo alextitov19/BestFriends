@@ -337,49 +337,56 @@ struct MyRoomView: View {
                                                               .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                                       })
                                                      
-//                                                      HStack {
-//                                                          Image(systemName: "camera")
-//                                                              .resizable()
-//                                                              .scaledToFit()
-//                                                              .frame(width: 37, height: 37)
-//                                                              .opacity(0.5)
-//                                                              .foregroundColor(.black)
-//                                                              .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                                      HStack {
+                                                          Image(systemName: "")
+                                                              .resizable()
+                                                              .scaledToFit()
+                                                              .frame(width: 37, height: 37)
+                                                              .opacity(0.5)
+                                                              .foregroundColor(.black)
+                                                              .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                                          
+                                                          Spacer ()
+                                                              .frame(width: 250)
                                                   
-                HStack {
-                    ZStack {
-                                                              
-                        Image(systemName: "heart.fill")
-                            .resizable()
-                            .foregroundColor(ColorManager .purple2)
-                            .frame(width: 80, height: 60)
-                            .rotationEffect(.degrees(7))
-                            .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                            .opacity(0.99)
-                                                              
-                        Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
-                            
-                            Text("super \nFriendship \ndays")
-                                .fontWeight(.light)
-                                .foregroundColor(ColorManager .darkGrey)
-                                .font(.system(size: 9))
-                                .rotationEffect(.degrees(7))
-                                .opacity(0.85)
-                            
+                                                          HStack {
+                                                              ZStack {
+                                                                  
+                                                                  Image(systemName: "heart.fill")
+                                                                      .resizable()
+                                                                      .foregroundColor(ColorManager .purple2)
+                                                                      .frame(width: 80, height: 60)
+                                                                      .rotationEffect(.degrees(7))
+                                                                      .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+                                                                      .opacity(0.99)
+                                                                  
+                                                                  
+
+                                              
+                    NavigationLink( destination:  CH16(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                            label: {
+                                Text("super \nFriendship \ndays")
+                            .fontWeight(.light)
+                            .foregroundColor(ColorManager .darkGrey)
+                            .font(.system(size: 9))
+                            .rotationEffect(.degrees(-7))
+                            .opacity(0.85)
+
+                            })
+   
                         }
                     }
-                
-                    Spacer ()
-                        .frame(width: 150)
+//                    Spacer ()
+//                        .frame(width: 150)
 
-                                                          
-
+                                                      }
                                                   }
                                               }
                                           }
+                                          
                                       }
-                                      
-                                  }
+
+                                    
                         
              
                     
