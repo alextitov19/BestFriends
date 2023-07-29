@@ -125,30 +125,29 @@ struct PhotoPopFGPreload: View {
                             VStack {
                                 HStack {
                                     VStack {
-                                        //                                            Text("Friendship")
-                                        //                                                .font(.system(size: 26, weight: .light))
-                                        //                                                .foregroundColor(ColorManager .grey1)
-                                        //
-                                        //                                            Text("Coupons")
-                                        //                                                .font(.system(size: 26, weight: .light))
-                                        //                                                .foregroundColor(ColorManager .grey1)
-                                        //
+                            
                                     }
-                                    
-                                    
-                                    //                                                Spacer()
-                                    //                                                    .frame(width: 45)
-                                    //
-                                    //                                    Image("girlwalking250")
-                                    //                                        .resizable()
-                                    //                                        .frame(width: 80, height: 80)
+                                 
                                 }
                                 
                                 
+//                                .fontWeight(.regular)
+                                        .frame(width: 120, height: 35)
+                                        .foregroundColor(ColorManager .purple5)
+                                        .font(.system(size: 17))
+                                        .background(ColorManager .purple1)
+                                        .glow(color: ColorManager.purple3, radius: 1)
+                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                        .opacity(0.9)
+                                        .cornerRadius(7)
+                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                
+                                
+                                
                                 ZStack(alignment: .bottom) {
-                                    Image("Coupon")
+                                    Image("Coupon Design - Wide 1")
                                         .resizable()
-                                        .frame(width: 350, height: 100)
+                                        .frame(width: 350, height: 150)
                                         .cornerRadius(15)
                                     
                                     VStack {
@@ -160,6 +159,8 @@ struct PhotoPopFGPreload: View {
                                                     Text("Write your coupon in here")
                                                         .foregroundColor(ColorManager.grey4)
                                                         .fontWeight(.thin)
+                                                        .background(ColorManager .purple1)
+                                                    
                                                     Spacer()
                                                 }
                                             }
@@ -188,43 +189,53 @@ struct PhotoPopFGPreload: View {
                 }
                 
              
-                ZStack {
+//                ZStack {
                     
-                    Spacer()
-                        .frame(height: 20)
+             
                     
-                    Image(systemName: "square.fill")
-                        .resizable()
-                        .foregroundColor(Color.purple)
-                        .frame(width: 375, height: 150)
-                        .cornerRadius(15)
-                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.4)
+//                    Image(systemName: "square.fill")
+//                        .resizable()
+//                        .foregroundColor(Color.purple)
+//                        .frame(width: 375, height: 150)
+//                        .cornerRadius(15)
+//                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+//                        .opacity(0.4)
                     
                     
                     VStack {
                         
                         Spacer()
-                            .frame(height: 10)
-                    }
+                            .frame(height: 40)
+//                    }
                     
                     
                     Text("Send your friend a Friendship Coupon that next time you are together they can redeem for your gift, like an ice cream, a cheeseburger - what ever you want to give them.")
-                        .font(.system(size: 18, weight: .light))
+                    
+                        .frame(width: 320, height: 115)
                         .foregroundColor(Color.white)
-                        .opacity(0.50)
-                        .multilineTextAlignment(.center)
+                        .font(.system(size: 18, weight: .light))
                         .padding(30)
+                        .background(ColorManager .grey2)
+                        .glow(color: ColorManager.purple3, radius: 1)
+                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+                        .opacity(0.9)
+                        .cornerRadius(15)
+                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                        .multilineTextAlignment(.center)
+//                       .padding(30)
                     
                 }
               
                     
                     VStack {
                         
+                        Spacer()
+                            .frame(height: 15)
+                        
                         Text("Alert friend to look for Coupon in Chat")
                             .font(.system(size: 17))
-                            .fontWeight(.ultraLight)
-                            .foregroundColor(ColorManager .grey1)
+                            .fontWeight(.light)
+                            .foregroundColor(Color.white)
                             .multilineTextAlignment(.center)
                     
                         
@@ -371,7 +382,7 @@ struct PhotoPopFGPreload: View {
                                 
                                 
                                 Spacer()
-                                    .frame(height: 120)
+                                    .frame(height: 100)
                             }
                             
                         }
@@ -416,7 +427,7 @@ struct PhotoPopFGPreload: View {
             var body: some View {
                 Text(friend.firstName + " " + String(friend.lastName.first!))
                     .fontWeight(.bold)
-                    .frame(width: 90, height: 90)
+                    .frame(width: 80, height: 80)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .font(.system(size: 8))
                     .background(color)
