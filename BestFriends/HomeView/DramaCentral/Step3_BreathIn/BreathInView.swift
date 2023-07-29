@@ -31,10 +31,10 @@ struct BreathInView: View {
               
  
             ColorManager.purple7
-                .opacity(0.3)
+                .opacity(0.9)
                 .ignoresSafeArea()
                 
-            AdPlayerView(name: "sky2")
+            AdPlayerView(name: "background_4")
                 .ignoresSafeArea()
                 .blendMode(.screen)
            
@@ -48,16 +48,16 @@ struct BreathInView: View {
                          .resizable()
                          .frame(width: 135, height: 110, alignment: .leading)
    
-                         .foregroundColor(Color(hue: 0.714, saturation: 0.411, brightness: 0.626))
+                         .foregroundColor(ColorManager .grey2)
                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
                    .glow(color: ColorManager.purple3, radius: 7)
-                  .opacity(0.6)
+                  .opacity(0.2)
 
                     
-                 Text("Breathe-In \n& \nHold")
+                 Text("Breathe in")
                          .font(.system(size: 20))
                          .foregroundColor(.white)
-                         .fontWeight(.medium)
+                         .fontWeight(.light)
                          .multilineTextAlignment(.center)
 
                    
