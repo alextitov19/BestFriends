@@ -94,14 +94,14 @@ struct CH15: View {
                        
                         VStack {
                             
-                            Text("A friend did or said")
+                            Text("Did a friend do or say")
                                 .font(.system(size: 25))
                             //                        .italic()
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                             
-                            Text("something thats been bugging")
+                            Text("something that's been bugging")
                                 .font(.system(size: 25))
                             //                        .italic()
                                 .foregroundColor(Color.white)
@@ -109,7 +109,7 @@ struct CH15: View {
                                 .multilineTextAlignment(.center)
                      
 
-                            Text("you all week")
+                            Text("you all week?")
                                 .font(.system(size: 25))
                             //                        .italic()
                                 .foregroundColor(Color.white)
