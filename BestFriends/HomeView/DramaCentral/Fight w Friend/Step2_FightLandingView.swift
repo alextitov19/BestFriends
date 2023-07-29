@@ -46,41 +46,21 @@ struct Step2_FightLandingView: View {
                 ColorManager.grey4
                     .ignoresSafeArea()
     
-//
-//            ColorManager.purple7
-//                .opacity(0.6)
-//                .ignoresSafeArea()
-        
-  
-                
-                ColorManager.grey3
-                    .ignoresSafeArea()
-                    .onAppear()
-                
-              
-                
-//                AdPlayerView(name: "dramaLights")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-            } else {
-//                AdPlayerView(name: "")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-                
-//                ColorManager.grey4
-//                    .ignoresSafeArea()
-//                AdPlayerView(name: "sky2")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-                
-                Image("FHBackground")
-                    .ignoresSafeArea()
-                    .scaledToFit()
-
-                    
-                AdPlayerView(name: "Galaxy2")
+                AdPlayerView(name: "dramaLights")
                     .ignoresSafeArea()
                     .blendMode(.screen)
+         
+            } else {
+
+                ColorManager .purple4
+                    .opacity(0.6)
+                    .ignoresSafeArea()
+                
+                
+                Image("FHBackground")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
                 
             }
             

@@ -40,37 +40,26 @@ struct BadDayQuietAlertView: View {
           
             
             if shareTapped {
-                
-                
-                
-                            ColorManager.purple5
-                                .ignoresSafeArea()
-                                .onAppear()
-
-                
+        
+                ColorManager.grey4
+                    .ignoresSafeArea()
+                    .onAppear()
+ 
                 AdPlayerView(name: "dramaLights")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
             } else {
 
-//                ColorManager.grey4
-//                    .opacity(0.8)
-//                    .ignoresSafeArea()
-//                    .onAppear()
-//
-//    AdPlayerView(name: "sky2")
-//        .ignoresSafeArea()
-//        .blendMode(.screen)
+                ColorManager .purple4
+                    .opacity(0.6)
+                    .ignoresSafeArea()
+                
                 
                 Image("FHBackground")
-                    .ignoresSafeArea()
-                    .scaledToFit()
-
-                    
-                AdPlayerView(name: "Galaxy2")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
             }
             
         
