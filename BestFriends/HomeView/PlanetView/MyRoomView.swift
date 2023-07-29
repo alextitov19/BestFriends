@@ -322,7 +322,7 @@ struct MyRoomView: View {
                                                               .fontWeight(.bold)
                                                               .frame(width: 300, height: 42)
                                                               .foregroundColor(Color.black)
-                                                              .font(.system(size: 17))
+                                                              .font(.system(size: 16))
                                                               .background(Color.cyan)
                                                               .glow(color: ColorManager.purple1, radius: 1)
                                                               .shadow(color: .white, radius: 3, x: -4, y: 4)
