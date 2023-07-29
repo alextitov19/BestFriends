@@ -69,7 +69,7 @@ struct Step4_NuclearOption: View {
                
                 
                 NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                            HugCircle (color: ColorManager .purple5, friendName: "ask \nfriends for \n CareHearts \n\nTAP Here...")
+                            HugCircle (color: ColorManager .grey2, friendName: "ask \nfriends for \n CareHearts \n\nTAP Here...")
                         })
                         .offset(x: showItems ? 130 : 0, y: showItems ? -300: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
@@ -77,106 +77,52 @@ struct Step4_NuclearOption: View {
                 
                 
                 NavigationLink(destination: EmptyView(), label: {
-                            HugCircle (color: ColorManager .purple5, friendName: "")
+                            HugCircle (color: ColorManager .purple2, friendName: "")
                         })
                         .offset(x: showItems ? 400 : 0, y: showItems ? -400: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
                         .opacity(0.99)
            
-                
-//                NavigationLink(destination: EmptyView(), label: {
-//                    HugCircle (color: ColorManager .grey3, friendName: "sharp words \nerase all the nice words \nyou've ever said")
-//                })
-//                .offset(x: showItems ? -100 : 0, y: showItems ? 100: 0)
-//                //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-//                .opacity(0.9)
-//                
-//                NavigationLink(destination: EmptyView(), label: {
-//                    HugCircle (color: ColorManager .grey3, friendName: "Never allow someone \nto be your prioity while \nyou are their option")
-//                })
-//                .offset(x: showItems ? 90 : 0, y: showItems ? 170: 0)
-//                //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-//                .opacity(0.75)
-                
-                
+
                 VStack {
-
-
-                 
-                    
-                        
-                 
-                        
-                   
-                    
 //
 //                    NavigationLink(destination: EmptyView(), label: {
-//                        HugCircle (color: ColorManager .grey3, friendName: "Sometimes your heart \nneeds more time to accept what \nyou mind already knows")
+//                        HugCircle (color: ColorManager .grey3, friendName: "sharp words \nerase all the nice words \nyou've ever said")
 //                    })
-//                    .offset(x: showItems ? -400 : 0, y: showItems ? 400: 0)
+//                    .offset(x: showItems ? -350 : 0, y: showItems ? 350: 0)
 //                    //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-//                    .opacity(0.9)
-//
-//
-//
-//                NavigationLink(destination: EmptyView(), label: {
-//                    HugCircle (color: ColorManager .grey3, friendName: "The hardest part of letting go \nis realizing the other \nperson already did")
-//                })
-//                .offset(x: showItems ? -400 : 0, y: showItems ? -600: 0)
-//                //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-//                .opacity(0.6)
-                
-                
-//                NavigationLink(destination: EmptyView(), label: {
-//                    HugCircle (color: ColorManager .grey3, friendName: "The way they leave \ntells you everything")
-//                })
-//                .offset(x: showItems ? -300 : 0, y: showItems ? 325: 0)
-//                //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-//                .opacity(0.9)
-                    
-                 
-//                    NavigationLink(destination: EmptyView(), label: {
-//                        HugCircle (color: ColorManager .grey3, friendName: "Tears dry on their own")
-//                    })
-//                    .offset(x: showItems ? -300 : 0, y: showItems ? 325: 0)
-//                    //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-//                    .opacity(0.9)
-//
-
-                    NavigationLink(destination: EmptyView(), label: {
-                        HugCircle (color: ColorManager .grey3, friendName: "sharp words \nerase all the nice words \nyou've ever said")
-                    })
-                    .offset(x: showItems ? -350 : 0, y: showItems ? 350: 0)
-                    //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-                    .opacity(0.6)
-                    
-//                    NavigationLink(destination: EmptyView(), label: {
-//                        HugCircle (color: ColorManager .grey3, friendName: "Never allow someone \nto be your prioity while \nyou are their option")
-//                    })
-//                    .offset(x: showItems ? -130 : 0, y: showItems ? 310: 0)
-//                    //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-//                    .opacity(0.7)
-                    
+//                    .opacity(0.6)
+//                    
 
                     Spacer ()
                         .frame(height: 15)
                     
                     ZStack {
                         
-                       
+                        NavigationLink(destination: EmptyView(), label: {
+                            HugCircle (color: ColorManager .grey3, friendName: "sharp words \nerase all the nice words \nyou've ever said")
+                        })
+                        .offset(x: showItems ? -350 : 0, y: showItems ? 350: 0)
+                        //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                        .opacity(0.6)
                         
                         Image(systemName: "circle.fill")
                             .resizable()
                             .foregroundColor(Color.cyan)
-                            .frame(width: 90, height: 90)
+                            .frame(width: 140, height: 100)
                         //                    .blur(radius: 2)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
                             .opacity(0.70)
                        
                         VStack {
-                            Text("Maybe we \ncan help")
+                            Text("Big Fight")
+                                .font(.system(size: 20, weight: .light))
+                                .fontWeight(.light)
+                                .foregroundColor(ColorManager .grey4)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("Maybe we can help")
                                 .font(.system(size: 13, weight: .light))
-                            //                            .italic()
                                 .fontWeight(.light)
                                 .foregroundColor(ColorManager .grey4)
                                 .multilineTextAlignment(.center)
@@ -184,7 +130,6 @@ struct Step4_NuclearOption: View {
                             
                             Text("TAP")
                                 .font(.system(size: 30, weight: .light))
-                            //                            .italic()
                                 .fontWeight(.light)
                                 .foregroundColor(ColorManager .grey4)
                                 .multilineTextAlignment(.center)
