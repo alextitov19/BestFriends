@@ -96,7 +96,35 @@ struct HomeView: View {
                             NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
                             ) { EmptyView() }
 
+                         
                             
+//    Blink Code *******************************************************
+
+
+//                           struct BlinkViewModifier: ViewModifier {
+//
+//                               let duration: Double
+//                               @State private var blinking: Bool = false
+//
+//                               func body(content: Content) -> some View {
+//                                   content
+//                                       .opacity(blinking ? 0 : 1)
+//                                       .animation(.easeOut(duration: duration).repeatForever())
+//                                       .onAppear {
+//                                           withAnimation {
+//                                               blinking = true
+//                                           }
+//                                       }
+//                               }
+//                           }
+//
+//                           extension View {
+//                               func blinking(duration: Double = 0.75) -> some View {
+//                                   modifier(BlinkViewModifier(duration: duration))
+//                               }
+//                           }
+
+//    Blink Code *******************************************************
                             
                             
                             Spacer()

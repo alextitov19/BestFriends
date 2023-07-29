@@ -602,7 +602,7 @@ struct MyRoomView: View {
         }
     }
     
-    
+//    Our Story ***********************************************************************
 //
 //Image(systemName: "heart.fill")
 //    .resizable()
@@ -624,4 +624,4 @@ struct MyRoomView: View {
 //
 //})
 //
-    
+ 
