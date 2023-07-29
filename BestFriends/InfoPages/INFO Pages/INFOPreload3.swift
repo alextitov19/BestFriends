@@ -16,10 +16,10 @@ struct INFOPreload3: View {
     @EnvironmentObject var sessionManager: SessionManager
 
     let user: User
-    //    let atmosphere: Atmosphere
-    //    let friends: [User]
-    //    let groups: [Group]
-    //    let friendAtmospheres: [Atmosphere]
+     let atmosphere: Atmosphere
+     let friends: [User]
+     let friendAtmospheres: [Atmosphere]
+     let groups: [Group]
     //
     var body: some View {
         ZStack {
@@ -56,18 +56,33 @@ struct INFOPreload3: View {
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     
                     
-                    Text("BestFriends stickers \nfor you & your friends")
+                    Text("BestFriends stickers")
                         .font(.system(size: 25))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
                     
-                    Text("(must reach Level 1)")
-                        .font(.system(size: 17))
-                        .italic()
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.white)
-                        .multilineTextAlignment(.center)
+                    
+                    NavigationLink(destination: CH18(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                   label: {
+                        Text("Must reach \nLevel 1")
+                            .fontWeight(.light)
+                            .frame(width: 100, height: 50)
+                            .foregroundColor(ColorManager .grey4)
+                            .font(.system(size: 17))
+                            .background(Color.cyan)
+                            .opacity(0.85)
+                            .cornerRadius(15)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                        
+                    })
+                    
+//                    Text("(must reach Level 1)")
+//                        .font(.system(size: 17))
+//                        .italic()
+//                        .fontWeight(.thin)
+//                        .foregroundColor(Color.white)
+//                        .multilineTextAlignment(.center)
                     
                     Spacer()
                         .frame(height: 10)

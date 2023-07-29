@@ -85,7 +85,7 @@ struct CH18: View {
                                 destination: CH17(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                                     Text("Level 1 \nHermès")
-                                        .fontWeight(.regular)
+                                        .fontWeight(.light)
                                         .frame(width: 100, height: 50)
                                         .foregroundColor(ColorManager .grey4)
                                         .font(.system(size: 20))
@@ -123,7 +123,7 @@ struct CH18: View {
                                 destination: EmptyView(),
                                 label: {
                                     Text("Level 2 \nChanel")
-                                        .fontWeight(.regular)
+                                        .fontWeight(.light)
                                         .frame(width: 100, height: 50)
                                         .foregroundColor(ColorManager .grey4)
                                         .font(.system(size: 20))
@@ -162,7 +162,7 @@ struct CH18: View {
                                 destination: EmptyView(),
                                 label: {
                                     Text("Level 2 \nFendi")
-                                        .fontWeight(.regular)
+                                        .fontWeight(.light)
                                         .frame(width: 100, height: 50)
                                         .foregroundColor(ColorManager .grey4)
                                         .font(.system(size: 20))

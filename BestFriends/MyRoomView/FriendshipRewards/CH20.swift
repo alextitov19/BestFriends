@@ -66,7 +66,7 @@ struct CH20: View {
                 VStack {
                     NavigationLink(
                         
-                        destination: INFOPreload3(user: user),
+                        destination: INFOPreload3(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                         label: {
                             Text("Laptop \nStickers")
                                 .fontWeight(.light)
