@@ -62,14 +62,14 @@ struct Step4_NuclearOption: View {
                         NavigationLink(destination: BreathInView(), label: {
                             HugCircle (color: ColorManager .purple3, friendName: "just Breathe \n\nTAP Here...")
                         })
-                        .offset(x: showItems ? -90 : 0, y: showItems ? -200: 0)
+                        .offset(x: showItems ? -90 : 0, y: showItems ? -250: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
                         .opacity(0.85)
                         
                
                 
                 NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                            HugCircle (color: ColorManager .grey2, friendName: "ask \nfriends for \n CareHearts \n\nTAP Here...")
+                            HugCircle (color: ColorManager .grey3, friendName: "ask \nfriends for \n CareHearts \n\nTAP Here...")
                         })
                         .offset(x: showItems ? 130 : 0, y: showItems ? -300: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
@@ -77,7 +77,7 @@ struct Step4_NuclearOption: View {
                 
                 
                 NavigationLink(destination: EmptyView(), label: {
-                            HugCircle (color: ColorManager .purple2, friendName: "")
+                            HugCircle (color: ColorManager .purple2, friendName: "sharp words \nerase all the nice words \nyou've ever said")
                         })
                         .offset(x: showItems ? 400 : 0, y: showItems ? -400: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
@@ -92,7 +92,7 @@ struct Step4_NuclearOption: View {
 //                    .offset(x: showItems ? -350 : 0, y: showItems ? 350: 0)
 //                    //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
 //                    .opacity(0.6)
-//                    
+//
 
                     Spacer ()
                         .frame(height: 15)
@@ -100,7 +100,7 @@ struct Step4_NuclearOption: View {
                     ZStack {
                         
                         NavigationLink(destination: EmptyView(), label: {
-                            HugCircle (color: ColorManager .grey3, friendName: "sharp words \nerase all the nice words \nyou've ever said")
+                            HugCircle (color: ColorManager .grey3, friendName: "")
                         })
                         .offset(x: showItems ? -350 : 0, y: showItems ? 350: 0)
                         //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
@@ -139,7 +139,7 @@ struct Step4_NuclearOption: View {
                         
                         VStack {
                             Spacer ()
-                                .frame(height: 235)
+                                .frame(height: 290)
                             
                             Link(destination: URL(string: "https://socialtechlabs.com/understanding-the-why/")!) {
                                 
@@ -153,12 +153,7 @@ struct Step4_NuclearOption: View {
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 
                             }
-                         
-                            
-                            Spacer ()
-                                .frame(height: 100)
-
-
+             
                         }
                     }
 
