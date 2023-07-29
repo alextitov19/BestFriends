@@ -41,10 +41,10 @@ struct Step4_NuclearOption: View {
 
 //                Step2_FightLandingView(user: user, friends: friends
 
-                    NavigationLink(destination: Step2_FightLandingView(user: user, friends: friends), label: {
+                NavigationLink(destination: CH14(user: user, friend: user, friends: friends, groups: groups), label: {
                         HugCircle (color: Color.purple, friendName: "OK, \nI'm ready to reach out 1st \nto try to fix this \n\nTAP")
                     })
-                    .offset(x: showItems ? 0 : 0, y: showItems ? 80: 0)
+                    .offset(x: showItems ? 0 : 0, y: showItems ? -20: 0)
                     .shadow(color: ColorManager .purple1, radius: 30, x: 10, y: 10)
 //                    .opacity(0.6)
                     .opacity(0.8)
@@ -92,7 +92,7 @@ struct Step4_NuclearOption: View {
                         Image(systemName: "circle.fill")
                             .resizable()
                             .foregroundColor(Color.cyan)
-                            .frame(width: 140, height: 100)
+                            .frame(width: 155, height: 115)
                         //                    .blur(radius: 2)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
                             .opacity(0.70)

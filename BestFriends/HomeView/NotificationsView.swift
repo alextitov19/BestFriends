@@ -92,6 +92,7 @@ struct NotificationsView: View {
         @State private var thanksKissesActive = false
         @State private var thanksHugActive = false
         @State private var thanksHeartActive = false
+        @State private var fixFightActive = false
 
         init(ian: InAppNotification, user: User, friends: [User]) {
             self.ian = ian
@@ -151,6 +152,10 @@ struct NotificationsView: View {
                 })
                 
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksHeartActive, label: {
+                    EmptyView()
+                })
+                
+                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $fixFightActive, label: {
                     EmptyView()
                 })
                 
@@ -221,7 +226,8 @@ struct NotificationsView: View {
             case "Said thank you for the Heart!":
                 thanksHeartActive = true
                 
-         
+            case "Just sent you a message in Chat - please look at it":
+                fixFightActive = true
                                     
                 
             default:

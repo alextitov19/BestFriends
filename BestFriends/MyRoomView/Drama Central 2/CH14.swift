@@ -109,45 +109,22 @@ struct CH14: View {
                     .resizable()
                     .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
-                
-                
-                ColorManager.purple2
-//                    .ignoresSafeArea()
-//                    .onAppear()
-                
-                
+        
             }
-            
-            
-            VStack{
-                
-                HStack {
-                    VStack {
-                        
-                        
-                        ZStack {
-                            
-                            
-                            VStack {
-                                HStack {
+
                                     VStack {
-                            
-                                    }
-                                 
-                                }
+                                        
+                                        
+                                      
+
 
                                 ZStack(alignment: .bottom) {
-//                                    Image("Coupon Design - Wide 1")
-//                                        .resizable()
-//                                        .frame(width: 340, height: 150)
-//                                        .cornerRadius(15)
-                                    
-                                    Text("Ready to reach out to try to fix this mess")
-                                        .font(.system(size: 20))
-                                        .fontWeight(.light)
-                                        .foregroundColor(Color.white)
-                                        .multilineTextAlignment(.center)
-                                    
+                                    Image("holding iphone")
+                                        .resizable()
+                                        .frame(width: 100, height: 150)
+                                        .cornerRadius(15)
+
+
                                     
                                     VStack {
                                         Spacer()
@@ -179,15 +156,9 @@ struct CH14: View {
                                     }
                                 }
                                 
-                            }
-                            
-                        }
-                        
-                    }
-                    
-                }
-  
-                    
+//                            }
+                                
+     
                     VStack {
                         
                         Spacer()
@@ -322,55 +293,64 @@ struct CH14: View {
                                     .background(shareColor)
                                     .cornerRadius(25)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    .alert("Your Friendship COUPON \n\nhas been sent.", isPresented: $showingAlert) {
+                                    .alert("Your message has been sent - breathe.", isPresented: $showingAlert) {
                                         Button("OK", role: .cancel) { }
                                     }
                             })
                             
                             Spacer()
-                            
+                            Spacer()
+                                .frame(height: 30)
                             
                             VStack {
-                                Text("Now the hellish")
+                                Text("Now the")
                                     .font(.system(size: 20, weight: .light))
                                     .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                                 
-                                Text("'waiting-to-hear-back' begins")
+                                Text("'waiting-to-hear-back'")
                                     .font(.system(size: 20, weight: .light))
                                     .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                                 
-                                Text("-Try sending a")
+                                Text("stress begins")
+                                    .font(.system(size: 20, weight: .light))
+                                    .foregroundColor(ColorManager .grey1)
+                                    .multilineTextAlignment(.center)
+                                
+                                Spacer()
+                                    .frame(height: 15)
+                                
+                                Text("Try sending a 'Talk Coupon'")
                                     .font(.system(size: 22, weight: .bold))
-                                    .italic()
+//                                    .italic()
                                     .fontWeight(.regular)
                                     .foregroundColor(Color.white)
                               
                             
                                 
                                 
-                                
-                                
-                                Button(action: {
-                                    sessionManager.showLogin()
-                                },
-                                       label: {
-                                    Image("home-alt2")
-                                        .frame(width: 50, height: 25)
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 20))
-                                        .background(ColorManager .grey1)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                        .opacity(0.70)
-                               
-                                })
-                                
+//
+//
+//                                Button(action: {
+//                                    sessionManager.showLogin()
+//                                },
+//                                       label: {
+//                                    Image("home-alt2")
+//                                        .frame(width: 50, height: 25)
+//                                        .foregroundColor(.white)
+//                                        .font(.system(size: 20))
+//                                        .background(ColorManager .grey1)
+//                                        .cornerRadius(15)
+//                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                                        .opacity(0.70)
+//
+//                                })
+//
     
                         
                                 Spacer()
-                                    .frame(height: 100)
+                                    .frame(height: 200)
                             }
                             
                         }
@@ -392,12 +372,12 @@ struct CH14: View {
             for id in selectedFriends {
                 for f in friends {
                     if f.id == id {
-                        RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) just sent you a 'Friendship Coupon' in Chat", APNToken: f.APNToken)
+                        RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) just sent you a message in Chat - please look at it.", APNToken: f.APNToken)
                         
                         //MARK: The code below creates an in-app notification for your friend (f.id)
                         //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                        RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Just got a 'Friendship Coupon' in Chat", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                            print("Create a Friendship Coupon notification response code: ", response)
+                        RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Just sent you a message in Chat - please look at it.", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                            print("Create a fix fight notification response code: ", response)
                         })
                         RestApi.instance.createStreakLog(friendID: f.id)
                     }
