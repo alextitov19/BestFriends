@@ -61,6 +61,15 @@ struct CH16: View {
                     .frame(height: 10)
                 
                 
+                Text("everyone gets a push notification at 8pm EDT")
+              
+                    .font(.system(size: 17))
+                    .italic()
+                    .foregroundColor(ColorManager .grey1)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                
+                
   
                 VStack {
                     Spacer ()
@@ -84,29 +93,23 @@ struct CH16: View {
                 
                 HStack {
                     
-                                                    Text("Monday _")
-                                                        .font(.system(size: 25))
-                                                        .foregroundColor(ColorManager .grey4)
-                                                        .fontWeight(.regular)
-                                                        .multilineTextAlignment(.center)
-                    
-                    
-                    Text("emotional support")
+                    Text("Monday _")
                         .font(.system(size: 25))
-                        .italic()
-                        .foregroundColor(ColorManager .grey1)
-                        .fontWeight(.light)
+                        .foregroundColor(ColorManager .grey4)
+                        .fontWeight(.regular)
+                        .multilineTextAlignment(.center)
+                    
+                    
+                    
+                    
+                    
+                    Text("CareHearts")
+                        .font(.system(size: 25))
+                        .foregroundColor(Color.cyan)
+                        .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                     
                 }
-                
-                Text("CareHearts")
-                    .font(.system(size: 25))
-                    .foregroundColor(Color.cyan)
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-                
-                
                 
 //                Spacer()
 //                    .frame(height: 25)
@@ -146,22 +149,22 @@ struct CH16: View {
                         .foregroundColor(ColorManager .grey4)
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
-                   
-                    Text("'shake' your iPhone for")
-                        .font(.system(size: 25))
-                        .italic()
-                        .foregroundColor(ColorManager .grey1)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
                     
+                    //                    Text("'shake' your iPhone for")
+                    //                        .font(.system(size: 25))
+                    //                        .italic()
+                    //                        .foregroundColor(ColorManager .grey1)
+                    //                        .fontWeight(.light)
+                    //                        .multilineTextAlignment(.center)
+                    
+                    
+                    
+                    Text("PhotoPoP - Lightspeed Images")
+                        .font(.system(size: 25))
+                        .foregroundColor(Color.cyan)
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.center)
                 }
-                
-                Text("Lightspeed Images")
-                    .font(.system(size: 25))
-                    .foregroundColor(Color.cyan)
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-                
                 }
             }
         }

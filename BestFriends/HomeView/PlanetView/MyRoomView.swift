@@ -77,7 +77,7 @@ struct MyRoomView: View {
                                     label: {
                         Text("Start Here")
                             .fontWeight(.regular)
-                            .frame(width: 130, height: 33)
+                            .frame(width: 130, height: 27)
                             .foregroundColor(ColorManager .grey1)
                             .font(.system(size: 27))
                             .background(Color.green)
@@ -113,59 +113,60 @@ struct MyRoomView: View {
 
 //      ************************************************************
                     
-                    VStack {
-                        
+            VStack {
+                         
+                VStack {
+                            
+                    HStack {
                         
                         VStack {
-                            
-                            HStack {
-                                VStack {
                                     
-                                    ZStack {
+                            ZStack {
                                         
                                         
-                                        NavigationLink( destination:  CH20(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                                        label: {
-                                            Text("Accessorizing")
+                                NavigationLink( destination:  CH20(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                                label: {
+                                    Text("Accessorizing")
+                                        .fontWeight(.bold)
+                                        .frame(width: 300, height: 40)
+                                        .foregroundColor(Color.black)
+                                        .font(.system(size: 17))
+                                        .background(ColorManager .purple2)
+                                        .glow(color: ColorManager.purple1, radius: 1)
+                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                        .opacity(0.9)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                })
+                                      
                                         
-                                                .fontWeight(.bold)
-                                                .frame(width: 300, height: 40)
-                                                .foregroundColor(Color.black)
-                                                .font(.system(size: 17))
-                                                .background(ColorManager .purple2)
-                                                .glow(color: ColorManager.purple1, radius: 1)
-                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                                .opacity(0.9)
-                                                .cornerRadius(15)
-                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                        })
-                                        
-                                        HStack {
-                                            ZStack {
+                            HStack {
+                                ZStack {
                                                 
-                                                Image(systemName: "heart.fill")
-                                                    .resizable()
-                                                    .foregroundColor(ColorManager .purple4)
-                                                    .frame(width: 80, height: 60)
-                                                    .rotationEffect(.degrees(-7))
-                                                    .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                                                    .opacity(0.99)
+                                    Image(systemName: "heart.fill")
+                                        .resizable()
+                                        .foregroundColor(ColorManager .purple3)
+                                        .frame(width: 80, height: 60)
+                                        .rotationEffect(.degrees(-7))
+                                        .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                        .opacity(0.99)
                                                 
-                                                Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
-                                                    
-                                                    Text("first \nsupportive \ninfluencers")
-                                                        .fontWeight(.light)
-                                                        .foregroundColor(ColorManager .darkGrey)
-                                                        .font(.system(size: 9))
-                                                        .rotationEffect(.degrees(-7))
-                                                        .opacity(0.85)
-                                                    
-                                                }
-                                            }
-                                            
-                                            Spacer ()
-                                                .frame(width: 220)
-                                            
+                                          
+                                    Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
+                                        
+                                        Text("first \nsupportive \ninfluencers")
+                                            .fontWeight(.light)
+                                            .foregroundColor(Color.black)
+                                            .font(.system(size: 9))
+                                            .rotationEffect(.degrees(-7))
+                                            .opacity(0.85)
+                                        
+                                    }
+                                }
+                                         
+                                Spacer ()
+                                    .frame(width: 220)
                                             
                                             
                                         }
@@ -185,7 +186,7 @@ struct MyRoomView: View {
             VStack {
                 
                 Spacer ()
-                    .frame(width: 50)
+                    .frame(width: 20)
                 
             
                     ZStack {
@@ -212,11 +213,7 @@ struct MyRoomView: View {
                                 HStack {
                                    
                                     VStack {
-                                        
-                                        
-                                        
-                                        
-                                        
+                             
                                         NavigationLink( destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                                                         label: {
                                             Text("Send")
@@ -304,14 +301,14 @@ struct MyRoomView: View {
                 }
             
                 Spacer()
-                    .frame(height: 35)
+                    .frame(height: 15)
                 
                 
            
 //                ****************************************************
                 
       
-                VStack {
+                        VStack {
               
 
                                   VStack {
@@ -357,7 +354,8 @@ struct MyRoomView: View {
                                 .foregroundColor(ColorManager .purple2)
                                 .frame(width: 80, height: 60)
                                 .rotationEffect(.degrees(7))
-                                .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+                                .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                 .opacity(0.99)
                                                                   
                                                                   
@@ -367,7 +365,7 @@ struct MyRoomView: View {
                             label: {
                                 Text("super \nFriendship \ndays")
                             .fontWeight(.light)
-                            .foregroundColor(ColorManager .darkGrey)
+                            .foregroundColor(Color.black)
                             .font(.system(size: 9))
                             .rotationEffect(.degrees(7))
                             .opacity(0.85)
@@ -383,19 +381,12 @@ struct MyRoomView: View {
                                           
                                       }
 
-                                    
-                        
-             
-                    
-                    
                     
                     
                     //                    ************************************
                     
                     VStack {
-                        
-                        Spacer()
-                            .frame(height: 15)
+                 
                         
                         ZStack {
                               
@@ -505,7 +496,7 @@ struct MyRoomView: View {
                 }
                     
                 Spacer()
-                    .frame(height: 35)
+                    .frame(height: 25)
                 
 //                ************************************************
                 
@@ -535,7 +526,7 @@ struct MyRoomView: View {
                                         
                                         NavigationLink( destination: JournalsView(friends: friends),
                                                         label: {
-                                            Text("Private")
+                                            Text("Personal")
                                                 .fontWeight(.regular)
                                                 .frame(width: 120, height: 35)
                                                 .foregroundColor(ColorManager .purple5)
@@ -562,7 +553,7 @@ struct MyRoomView: View {
 //
                                         NavigationLink( destination:   RR2(),
                                                         label: {
-                                            Text("FriendGroup")
+                                            Text("Celebrity")
                                                 .fontWeight(.regular)
                                                 .frame(width: 120, height: 35)
                                                 .foregroundColor(ColorManager .grey4)
@@ -575,8 +566,8 @@ struct MyRoomView: View {
 //                                                .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
                                         })
                                         
-                                        Spacer()
-                                            .frame(height: 0)
+//                                        Spacer()
+//                                            .frame(height: 0)
                                       
                                     }
                                         

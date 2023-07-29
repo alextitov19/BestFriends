@@ -900,7 +900,6 @@
 				2DFB032E2A5D333F00669948 /* RealtimeFriendshipHighlights */,
 				2DFB02FE2A57217100669948 /* FriendshipHighlights */,
 				CF2EE6F729516C8A00B1B16D /* InfoHowChatWorks.swift */,
-				7A8F3D7D2A32C63000BC2CF4 /* MyRoomView.swift */,
 				7AE4C5622A3A9A1900A90DBF /* Affirmations */,
 				7A8A72982A33F690005FA3B1 /* Journal */,
 				CFD12CC82819E83900AB2539 /* SmileVault */,
@@ -1690,9 +1689,10 @@
 		CFD8BD1229156D2A00F86EFB /* PlanetView */ = {
 			isa = PBXGroup;
 			children = (
-				7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */,
+				7A8F3D7D2A32C63000BC2CF4 /* MyRoomView.swift */,
 				7AFB534E2A383975008FF2B8 /* FriendPlanetsView.swift */,
 				CF387E292960D5B6003A85D8 /* PlanetBell.swift */,
+				7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */,
 			);
 			path = PlanetView;
 			sourceTree = "<group>";
@@ -2369,7 +2369,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 20;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -2399,7 +2399,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;
