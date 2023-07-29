@@ -36,22 +36,13 @@ struct Step4_NuclearOption: View {
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
             
-//            Image("FHBackground")
-//                .ignoresSafeArea()
-//                .scaledToFit()
-//
-//
-//            AdPlayerView(name: "Galaxy2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-
 
             ZStack{
 
 
 
                     NavigationLink(destination: Step2_FightLandingView(user: user, friends: friends), label: {
-                        HugCircle (color: Color.purple, friendName: "When \nyou're ready to \nreach out to try to fix this \n\nTAP Here...")
+                        HugCircle (color: Color.purple, friendName: "OK, \nI'm ready to reach out 1st \nto try to fix this \n\nTAP")
                     })
                     .offset(x: showItems ? 0 : 0, y: showItems ? 80: 0)
                     .shadow(color: ColorManager .purple1, radius: 30, x: 10, y: 10)
@@ -60,7 +51,7 @@ struct Step4_NuclearOption: View {
 
                 
                         NavigationLink(destination: BreathInView(), label: {
-                            HugCircle (color: ColorManager .purple3, friendName: "just Breathe \n\nTAP Here...")
+                            HugCircle (color: ColorManager .purple3, friendName: "just Breathe \n\nTAP")
                         })
                         .offset(x: showItems ? -90 : 0, y: showItems ? -250: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
@@ -69,7 +60,7 @@ struct Step4_NuclearOption: View {
                
                 
                 NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                            HugCircle (color: ColorManager .grey3, friendName: "ask \nfriends for \n CareHearts \n\nTAP Here...")
+                            HugCircle (color: ColorManager .grey3, friendName: "ask \nfriends for \n CareHearts \n\nTAP")
                         })
                         .offset(x: showItems ? 130 : 0, y: showItems ? -300: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
@@ -85,14 +76,6 @@ struct Step4_NuclearOption: View {
            
 
                 VStack {
-//
-//                    NavigationLink(destination: EmptyView(), label: {
-//                        HugCircle (color: ColorManager .grey3, friendName: "sharp words \nerase all the nice words \nyou've ever said")
-//                    })
-//                    .offset(x: showItems ? -350 : 0, y: showItems ? 350: 0)
-//                    //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-//                    .opacity(0.6)
-//
 
                     Spacer ()
                         .frame(height: 15)
@@ -141,16 +124,37 @@ struct Step4_NuclearOption: View {
                             Spacer ()
                                 .frame(height: 290)
                             
-                            Link(destination: URL(string: "https://socialtechlabs.com/understanding-the-why/")!) {
-                                
-                                Text("Taking a hard look \nat this relationship")
-                                    .fontWeight(.thin)
-                                    .frame(width: 300, height: 80)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 26))
-                                    .background(Color.orange)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            HStack {
+                            
+                                Link(destination: URL(string: "https://socialtechlabs.com/understanding-the-why/")!) {
+                                    
+                                    Text("Keep relationship?")
+                                        .fontWeight(.light)
+                                        .frame(width: 170, height: 40)
+                                        .foregroundColor(Color.white)
+                                        .font(.system(size: 20))
+                                        .background(Color .cyan)
+                                        .cornerRadius(10)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                    
+                                    
+                                    Spacer ()
+                                        .frame(width: 15)
+                                    
+                                    NavigationLink(destination: CH15(user: user, friends: friends, groups: groups),
+                                                   label: {
+                                        Text("Hurt Feelings")
+                                            .fontWeight(.light)
+                                            .frame(width: 170, height: 40)
+                                            .foregroundColor(Color.white)
+                                            .font(.system(size: 20))
+                                            .background(Color .cyan)
+                                            .cornerRadius(10)
+                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                        
+                                    })
+                                    
+                                }
                                 
                             }
              

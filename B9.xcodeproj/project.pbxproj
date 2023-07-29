@@ -739,7 +739,6 @@
 				2D7127BC2A658BA800E14744 /* CH12.swift */,
 				2D7127BE2A658BBA00E14744 /* CH13.swift */,
 				2D7127C02A658BCF00E14744 /* CH14.swift */,
-				2D7127C22A658BDD00E14744 /* CH15.swift */,
 			);
 			path = ReceivedCareHearts;
 			sourceTree = "<group>";
@@ -895,6 +894,8 @@
 		7A8F3D7C2A32BC5D00BC2CF4 /* MyRoomView */ = {
 			isa = PBXGroup;
 			children = (
+				2DFB03192A5D2FD200669948 /* ReceivedCareHearts */,
+				CF0EB7D82A74E750000B2A1F /* Drama Central 2 */,
 				CF0EB7D72A736808000B2A1F /* FriendshipRewards */,
 				2DBF3EDF2A61ACC400CB1CAD /* RR */,
 				2DFB032E2A5D333F00669948 /* RealtimeFriendshipHighlights */,
@@ -1028,7 +1029,6 @@
 				7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */,
 				7AD2642929EDCE020007ACD5 /* NotificationsView.swift */,
 				CF725E2628516E180096342F /* Tokens */,
-				2DFB03192A5D2FD200669948 /* ReceivedCareHearts */,
 				CFD8BD1229156D2A00F86EFB /* PlanetView */,
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
@@ -1119,6 +1119,14 @@
 				2D7127C62A658BF400E14744 /* CH17.swift */,
 			);
 			path = FriendshipRewards;
+			sourceTree = "<group>";
+		};
+		CF0EB7D82A74E750000B2A1F /* Drama Central 2 */ = {
+			isa = PBXGroup;
+			children = (
+				2D7127C22A658BDD00E14744 /* CH15.swift */,
+			);
+			path = "Drama Central 2";
 			sourceTree = "<group>";
 		};
 		CF1CD75329E2908B00D1F801 /* New Summer Feature */ = {

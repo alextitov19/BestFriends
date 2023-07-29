@@ -556,8 +556,7 @@ struct MyRoomView: View {
                                 .frame(width: 120, height: 35)
                                 .foregroundColor(ColorManager .grey4)
                                 .font(.system(size: 17))
-                                                                     
-                            
+                    
                             })
                                         
                         }
