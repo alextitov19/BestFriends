@@ -219,6 +219,9 @@ struct JournalsView: View {
             .frame(width: 230, height: 50)
             .cornerRadius(15)
             .opacity(0.6)
+            
+            
+            
         }
     }
         

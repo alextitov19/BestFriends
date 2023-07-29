@@ -526,7 +526,7 @@ struct MyRoomView: View {
                                         
                                         NavigationLink( destination: JournalsView(friends: friends),
                                                         label: {
-                                            Text("Personal")
+                                            Text("FB / GF")
                                                 .fontWeight(.regular)
                                                 .frame(width: 120, height: 35)
                                                 .foregroundColor(ColorManager .purple5)
@@ -547,31 +547,22 @@ struct MyRoomView: View {
                                     Spacer()
                                         .frame(width: 37)
                                     
-                                    VStack {
-//                                        JournalView(user: user)
+                    VStack {
+
+                        NavigationLink( destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+                            label: {
+                                Text("Drama Central")
+                                .fontWeight(.regular)
+                                .frame(width: 120, height: 35)
+                                .foregroundColor(ColorManager .grey4)
+                                .font(.system(size: 17))
+                                                                     
+                            
+                            })
                                         
-//
-                                        NavigationLink( destination:   RR2(),
-                                                        label: {
-                                            Text("Celebrity")
-                                                .fontWeight(.regular)
-                                                .frame(width: 120, height: 35)
-                                                .foregroundColor(ColorManager .grey4)
-                                                .font(.system(size: 17))
-//                                                .background(ColorManager .purple1)
-//                                                .glow(color: ColorManager.purple3, radius: 1)
-//                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-//                                                .opacity(0.9)
-//                                                .cornerRadius(7)
-//                                                .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-                                        })
+                        }
                                         
-//                                        Spacer()
-//                                            .frame(height: 0)
-                                      
-                                    }
-                                        
-                                }
+                    }
 
                                     }
                                 }
