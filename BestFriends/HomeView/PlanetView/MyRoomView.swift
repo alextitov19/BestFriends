@@ -126,11 +126,11 @@ struct MyRoomView: View {
                                         
                                 NavigationLink( destination:  CH20(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                                 label: {
-                                    Text("Accessorizing")
+                                    Text("Accessorizing \nyour experience")
                                         .fontWeight(.bold)
-                                        .frame(width: 300, height: 40)
+                                        .frame(width: 300, height: 42)
                                         .foregroundColor(Color.black)
-                                        .font(.system(size: 17))
+                                        .font(.system(size: 16))
                                         .background(ColorManager .purple2)
                                         .glow(color: ColorManager.purple1, radius: 1)
                                         .shadow(color: .white, radius: 3, x: -4, y: 4)
@@ -320,7 +320,7 @@ struct MyRoomView: View {
                                                                       label: {
                                                           Text("PhotoPOP")
                                                               .fontWeight(.bold)
-                                                              .frame(width: 300, height: 40)
+                                                              .frame(width: 300, height: 42)
                                                               .foregroundColor(Color.black)
                                                               .font(.system(size: 17))
                                                               .background(Color.cyan)
