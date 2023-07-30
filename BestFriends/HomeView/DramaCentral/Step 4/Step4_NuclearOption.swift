@@ -158,9 +158,9 @@ struct Step4_NuclearOption: View {
                                     Spacer ()
                                         .frame(width: 20)
                                     
-                                    NavigationLink(destination: CH15(user: user, friends: friends, groups: groups),
+                                    NavigationLink(destination: CH15(user: user, friends: friends),
                                                    label: {
-                                        Text("Hurt Feelings")
+                                        Text("Hurt Feelings?")
                                             .fontWeight(.light)
                                             .frame(width: 170, height: 40)
                                             .foregroundColor(Color.white)
