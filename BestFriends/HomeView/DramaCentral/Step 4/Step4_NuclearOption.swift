@@ -42,7 +42,7 @@ struct Step4_NuclearOption: View {
 //                Step2_FightLandingView(user: user, friends: friends
 
                 NavigationLink(destination: CH14(user: user, friend: user, friends: friends, groups: groups), label: {
-                        HugCircle (color: Color.purple, friendName: "OK, they're not talking. \nBut, I'm ready to reach out \nto try to fix this \n\nTAP")
+                        HugCircle (color: Color.purple, friendName: "OK, they're not talking. \nBut, you're ready to reach out \nto try to fix this \n\nTAP")
                     })
                     .offset(x: showItems ? 0 : 0, y: showItems ? -20: 0)
                     .shadow(color: ColorManager .purple1, radius: 30, x: 10, y: 10)
@@ -71,7 +71,7 @@ struct Step4_NuclearOption: View {
                             HugCircle (color: ColorManager .purple2, friendName: "sharp words \nerase all the nice words \nyou've ever said")
                         })
                         .offset(x: showItems ? 400 : 0, y: showItems ? -400: 0)
-                        .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
+//                        .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
                         .opacity(0.99)
            
 
@@ -82,17 +82,17 @@ struct Step4_NuclearOption: View {
                     
                     ZStack {
                         
-                        NavigationLink(destination: EmptyView(), label: {
-                            HugCircle (color: ColorManager .grey3, friendName: "")
-                        })
-                        .offset(x: showItems ? -350 : 0, y: showItems ? 350: 0)
-                        //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-                        .opacity(0.6)
+//                        NavigationLink(destination: EmptyView(), label: {
+//                            HugCircle (color: ColorManager .grey3, friendName: "")
+//                        })
+//                        .offset(x: showItems ? -350 : 0, y: showItems ? 350: 0)
+//                        .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
+//                        .opacity(0.6)
                         
                         Image(systemName: "circle.fill")
                             .resizable()
                             .foregroundColor(Color.cyan)
-                            .frame(width: 160, height: 115)
+                            .frame(width: 170, height: 125)
                         //                    .blur(radius: 2)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
                             .opacity(0.70)
