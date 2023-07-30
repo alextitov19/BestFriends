@@ -127,9 +127,9 @@ struct Step4_NuclearOption: View {
                             
                             NavigationLink(destination: CH13(user: user, friends: friends),
                                            label: {
-                                Text("Talk Coupon")
+                                Text("Haven't heard back yet?")
                                     .fontWeight(.light)
-                                    .frame(width: 170, height: 40)
+                                    .frame(width: 250, height: 40)
                                     .foregroundColor(Color.white)
                                     .font(.system(size: 20))
                                     .background(Color .cyan)
@@ -138,6 +138,8 @@ struct Step4_NuclearOption: View {
                                 
                             })
                             
+                                Spacer ()
+                                    .frame(height: 15)
                             
                             HStack {
                             
@@ -154,7 +156,7 @@ struct Step4_NuclearOption: View {
                                     
                                     
                                     Spacer ()
-                                        .frame(width: 15)
+                                        .frame(width: 20)
                                     
                                     NavigationLink(destination: CH15(user: user, friends: friends, groups: groups),
                                                    label: {

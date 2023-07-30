@@ -51,7 +51,7 @@ struct CH14: View {
         //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
-        customMessage = "REACHING OUT AFTER FIGHT; " + user.firstName + " : " + customMessage;
+        customMessage = "REACHING OUT - trying to fix this; " + user.firstName + " : " + customMessage;
         
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
@@ -121,7 +121,7 @@ struct CH14: View {
                                 ZStack(alignment: .bottom) {
                                     Image("holding iphone")
                                         .resizable()
-                                        .frame(width: 100, height: 150)
+                                        .frame(width: 100, height: 200)
                                         .cornerRadius(15)
 
 
@@ -174,13 +174,17 @@ struct CH14: View {
                         Spacer()
                             .frame(height: 15)
                         
-                        Text("Let's make sure they get your message")
+                        Text("Let's make sure they see")
                             .font(.system(size: 17))
                             .fontWeight(.light)
                             .foregroundColor(Color.white)
                             .multilineTextAlignment(.center)
                     
-                        
+                        Text("your message in Chat")
+                            .font(.system(size: 17))
+                            .fontWeight(.light)
+                            .foregroundColor(Color.white)
+                            .multilineTextAlignment(.center)
                         
                         
                         
@@ -303,54 +307,42 @@ struct CH14: View {
                                 .frame(height: 30)
                             
                             VStack {
-                                Text("Now the")
-                                    .font(.system(size: 20, weight: .light))
+                                Text("Unfortunately, now the")
+                                    .font(.system(size: 17, weight: .light))
+                                    .italic()
                                     .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                                 
                                 Text("'waiting-to-hear-back'")
-                                    .font(.system(size: 20, weight: .light))
+                                    .font(.system(size: 17, weight: .light))
+                                    .italic()
                                     .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                                 
-                                Text("stress begins")
-                                    .font(.system(size: 20, weight: .light))
+                                Text("anxiety begins")
+                                    .font(.system(size: 17, weight: .light))
+                                    .italic()
                                     .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                                 
                                 Spacer()
-                                    .frame(height: 15)
+                                    .frame(height: 20)
                                 
-                                Text("Try sending a 'Talk Coupon'")
+                                Text("Remember")
                                     .font(.system(size: 22, weight: .bold))
 //                                    .italic()
                                     .fontWeight(.regular)
                                     .foregroundColor(Color.white)
-                              
-                            
                                 
                                 
-//
-//
-//                                Button(action: {
-//                                    sessionManager.showLogin()
-//                                },
-//                                       label: {
-//                                    Image("home-alt2")
-//                                        .frame(width: 50, height: 25)
-//                                        .foregroundColor(.white)
-//                                        .font(.system(size: 20))
-//                                        .background(ColorManager .grey1)
-//                                        .cornerRadius(15)
-//                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                                        .opacity(0.70)
-//
-//                                })
-//
-    
-                        
+                                Text("your friends are here for you :)")
+                                    .font(.system(size: 20, weight: .bold))
+//                                    .italic()
+                                    .fontWeight(.regular)
+                                    .foregroundColor(Color.white)
+                         
                                 Spacer()
-                                    .frame(height: 200)
+                                    .frame(height: 140)
                             }
                             
                         }
