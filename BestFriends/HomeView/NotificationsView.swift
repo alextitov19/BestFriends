@@ -93,7 +93,7 @@ struct NotificationsView: View {
         @State private var thanksHugActive = false
         @State private var thanksHeartActive = false
         @State private var fixFightActive = false
-        //        @State private var talkCouponActive = false
+        @State private var talkCouponActive = false
         
         
         init(ian: InAppNotification, user: User, friends: [User]) {
@@ -131,17 +131,23 @@ struct NotificationsView: View {
             
             
             ZStack {
-                NavigationLink(destination: PhotoPopView(user: user, friends: friends), isActive: $photoPopActive, label: {
-                    EmptyView()
-                })
                 
-                NavigationLink(destination: VirtualHug(user: user, friends: friends), isActive: $hugActive, label: {
-                    EmptyView()
-                })
-                
-                NavigationLink(destination: CH9(user: user, friends: friends), isActive: $kissesActive, label: {
-                    EmptyView()
-                })
+                VStack {
+                    
+                    
+                    NavigationLink(destination: PhotoPopView(user: user, friends: friends), isActive: $photoPopActive, label: {
+                        EmptyView()
+                    })
+                    
+                    NavigationLink(destination: VirtualHug(user: user, friends: friends), isActive: $hugActive, label: {
+                        EmptyView()
+                    })
+                    
+                    NavigationLink(destination: CH9(user: user, friends: friends), isActive: $kissesActive, label: {
+                        EmptyView()
+                    })
+                    
+                }
                 
                 NavigationLink(destination: CH6(user: user, friends: friends), isActive: $heartsActive, label: {
                     EmptyView()
@@ -163,9 +169,9 @@ struct NotificationsView: View {
                     EmptyView()
                 })
                 
-                //                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $talkCouponActive, label: {
-                //                    EmptyView()
-                //                })
+                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $talkCouponActive, label: {
+                    EmptyView()
+                })
                 
               
                     
@@ -228,8 +234,8 @@ struct NotificationsView: View {
                 case "Just sent you a message in Chat - please look at it":
                     fixFightActive = true
                     
-                    //                case "Is redeaming ONE 'TalkCoupon'":
-                    //                    talkCouponActive = true
+                case "Is redeaming ONE 'TalkCoupon'":
+                    talkCouponActive = true
                     
                     
                     
