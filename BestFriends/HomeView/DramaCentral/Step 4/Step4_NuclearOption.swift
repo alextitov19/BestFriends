@@ -42,7 +42,7 @@ struct Step4_NuclearOption: View {
 //                Step2_FightLandingView(user: user, friends: friends
 
                 NavigationLink(destination: CH14(user: user, friend: user, friends: friends, groups: groups), label: {
-                        HugCircle (color: Color.purple, friendName: "OK, \nI'm ready to reach out 1st \nto try to fix this \n\nTAP")
+                        HugCircle (color: Color.purple, friendName: "OK, they're not talking. \nBut, I'm ready to reach out \nto try to fix this \n\nTAP")
                     })
                     .offset(x: showItems ? 0 : 0, y: showItems ? -20: 0)
                     .shadow(color: ColorManager .purple1, radius: 30, x: 10, y: 10)
@@ -92,7 +92,7 @@ struct Step4_NuclearOption: View {
                         Image(systemName: "circle.fill")
                             .resizable()
                             .foregroundColor(Color.cyan)
-                            .frame(width: 155, height: 115)
+                            .frame(width: 160, height: 115)
                         //                    .blur(radius: 2)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
                             .opacity(0.70)
@@ -104,7 +104,7 @@ struct Step4_NuclearOption: View {
                                 .foregroundColor(ColorManager .grey4)
                                 .multilineTextAlignment(.center)
                             
-                            Text("Maybe we can help")
+                            Text("Not talking to each other?")
                                 .font(.system(size: 13, weight: .light))
                                 .fontWeight(.light)
                                 .foregroundColor(ColorManager .grey4)
