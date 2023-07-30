@@ -111,9 +111,7 @@ struct PhotoPopFGPreload: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 
-                ColorManager.purple2
-//                    .ignoresSafeArea()
-//                    .onAppear()
+
                 
                 
             }
@@ -137,7 +135,7 @@ struct PhotoPopFGPreload: View {
                                 }
 
                                 ZStack(alignment: .bottom) {
-                                    Image("Coupon Design - Wide 1")
+                                    Image("newCoupon")
                                         .resizable()
                                         .frame(width: 340, height: 150)
                                         .cornerRadius(15)
