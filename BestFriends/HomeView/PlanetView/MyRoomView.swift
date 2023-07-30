@@ -508,7 +508,7 @@ struct MyRoomView: View {
                             destination:  JournalsView(friends: friends),
                             label: {
                                 
-                                Image("Group 59")
+                                Image("thinCrush")
                                     .resizable()
                                     .frame(width: 320, height: 170)
                                     .cornerRadius(20)
@@ -526,11 +526,11 @@ struct MyRoomView: View {
                                         
                                         NavigationLink( destination: JournalsView(friends: friends),
                                                         label: {
-                                            Text("FB / GF")
+                                            Text("Boyfirend \nGirfriend")
                                                 .fontWeight(.regular)
-                                                .frame(width: 120, height: 35)
+                                                .frame(width: 120, height: 50)
                                                 .foregroundColor(ColorManager .purple5)
-                                                .font(.system(size: 17))
+                                                .font(.system(size: 15))
 //                                                .background(ColorManager .purple1)
 //                                                .glow(color: ColorManager.purple3, radius: 1)
 //                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
@@ -555,7 +555,7 @@ struct MyRoomView: View {
                                 .fontWeight(.regular)
                                 .frame(width: 120, height: 35)
                                 .foregroundColor(ColorManager .grey4)
-                                .font(.system(size: 17))
+                                .font(.system(size: 15))
                     
                             })
                                         
