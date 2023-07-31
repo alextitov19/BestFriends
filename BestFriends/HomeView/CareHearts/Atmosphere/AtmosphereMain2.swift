@@ -138,11 +138,11 @@ struct AtmosphereMain2: View {
                             mood = 1
                         }) {
 
-                            Text("Dented Heart")
+                            Text("Ouch! Dented Heart")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
-                        .frame(width: 80, height: 30, alignment: .center)
+                        .frame(width: 140, height: 30, alignment: .center)
                         .background(mood == 1 ? Color(.cyan) : Color.blue)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -155,11 +155,11 @@ struct AtmosphereMain2: View {
                           mood = 2
                         }) {
 
-                           Text("Friend Drama")
+                           Text("Ugg. Friend Drama")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
-                        .frame(width: 80, height: 30, alignment: .center)
+                        .frame(width: 140, height: 30, alignment: .center)
                         .background(mood == 2 ? Color(.cyan) : Color.pink)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -172,11 +172,11 @@ struct AtmosphereMain2: View {
                             mood = 3
                         }) {
 
-                            Text("School Stress")
+                            Text("School's stressing me")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
-                        .frame(width: 80, height: 30, alignment: .center)
+                        .frame(width: 140, height: 30, alignment: .center)
                         .background(mood == 3 ? Color(.cyan) : ColorManager .grey2)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -358,7 +358,7 @@ struct AtmosphereMain2: View {
                             mood = 8
                         }) {
 
-                            Text("Super FriendGroup")
+                            Text("Super FriendGroup +++")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -375,7 +375,7 @@ struct AtmosphereMain2: View {
                             mood = 9
                         }) {
 
-                            Text("School under Control")
+                            Text("School/GPA under Control")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
