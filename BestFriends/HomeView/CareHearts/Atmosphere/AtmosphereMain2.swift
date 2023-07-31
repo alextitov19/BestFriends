@@ -98,26 +98,7 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 35)
                         
-                        NavigationLink(destination: EmptyView(),
-                                       label: {
-                            Text("Maybe you're just a little down today. Or, maybe something bad happened, but your just not ready to talk about it yet. Meanwhile you sit alone without your friends emotional support. \n\nWe'll send them a notification asking for CareHearts while letting them know you need a little more time.")
-                                .fontWeight(.thin)
-                                .frame(width: 330, height: 140)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 14))
-                                .background(ColorManager.grey3)
-                                .cornerRadius(10)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                        })
-//
-//                        Text("I could use some")
-//                            .font(.system(size: 25))
-////                            .italic()
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(ColorManager .grey2)
-//
+           
 
 
                         
@@ -125,29 +106,29 @@ struct AtmosphereMain2: View {
                             mood = 0
                         }) {
                             
-//                            ZStack {
-//                                Image(systemName: "heart.fill")
-//                                    .resizable()
-//                                    .foregroundColor(ColorManager .purple1)
-//                                    .frame(width: 100, height: 80)
-//                                    .cornerRadius(30)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//
-//                                Text("tap")
-//                                    .fontWeight(.thin)
-//                                    .frame(width: 70, height: 37)
-//                                    .foregroundColor(ColorManager .purple7)
-//                                    .font(.system(size: 20))
-//                                    .background(ColorManager .purple1)
-//                                    .cornerRadius(10)
-//                                    .opacity(0.95)
-//                            }
-//                            .frame(width: 120, height: 90, alignment: .center)
-//
-//                            .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
-//                            .cornerRadius(37)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            ZStack {
+                                Image(systemName: "heart.fill")
+                                    .resizable()
+                                    .foregroundColor(ColorManager .purple1)
+                                    .frame(width: 100, height: 80)
+                                    .cornerRadius(30)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
+
+                                Text("tap")
+                                    .fontWeight(.thin)
+                                    .frame(width: 70, height: 37)
+                                    .foregroundColor(ColorManager .purple7)
+                                    .font(.system(size: 20))
+                                    .background(ColorManager .purple1)
+                                    .cornerRadius(10)
+                                    .opacity(0.95)
+                            }
+                            .frame(width: 120, height: 90, alignment: .center)
+
+                            .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
+                            .cornerRadius(37)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         }
                         
 //                        Spacer()
