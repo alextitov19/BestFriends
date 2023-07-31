@@ -95,13 +95,13 @@ struct CH19: View {
                                 .opacity(0.9)
                                 .foregroundColor(.white)
                             
-                            Text("As a courtsy to our heavy users we have built a special feature that lets you quickly see your most recient PhotoPOPs and SmileVault messages.")
+                            Text("As a special feature for our top users - quickly see your most recent PhotoPOPs & SmileVault messages.")
                                 .font(.system(size: 20))
                                 .foregroundColor(Color.cyan)
                                 .fontWeight(.bold)
                                 .multilineTextAlignment(.center)
         
-                            Text("You must be a Level 1 user to access this feature")
+                            Text("You must be at Level 1 to access this feature")
                                 .font(.system(size: 20))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.regular)
