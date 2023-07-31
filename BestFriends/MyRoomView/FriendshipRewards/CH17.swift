@@ -107,7 +107,7 @@ struct CH17: View {
                             
                             NavigationLink(destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                                            label: {
-                                Text("Blowing Kisses _ sending Hugs, PhotoPOPs & Songs")
+                                Text("Blowing Kisses, Sending Hugs, PhotoPOPs & Songs")
                                     .fontWeight(.light)
                                     .frame(width: 320, height: 60)
                                     .foregroundColor(Color.white)
