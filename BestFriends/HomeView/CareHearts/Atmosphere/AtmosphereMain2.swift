@@ -62,20 +62,22 @@ struct AtmosphereMain2: View {
                     
                     VStack {
                         Text("My")
-                            .font(.system(size: 35))
+                            .font(.system(size: 15))
+                        
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
                         
                         
-                        Text("Emotional & Friendship")
-                            .font(.system(size: 35))
+                        Text("Friendship \n Relationship \nEmotional \n& School")
+                            .font(.system(size: 25))
+                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
                         
-                        Text("Vibe")
-                            .font(.system(size: 35))
+                        Text("Vibes")
+                            .font(.system(size: 45))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
@@ -398,19 +400,19 @@ struct AtmosphereMain2: View {
                 
                         VStack {
                             
-                            Text("If you're having one of those days")
+                            Text("Notify your friends of your 'Vibe' change")
                                .italic()
                                 .font(.system(size: 17))
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
-                            
-                            Text("who whould you like CareHearts from?")
-                               .italic()
-                                .font(.system(size: 17))
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
+//
+//                            Text("who whould you like CareHearts from?")
+//                               .italic()
+//                                .font(.system(size: 17))
+//                                .fontWeight(.thin)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(Color.white)
 
                             
                         }
