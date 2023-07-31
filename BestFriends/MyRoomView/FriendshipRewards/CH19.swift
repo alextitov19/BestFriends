@@ -36,7 +36,7 @@ struct CH19: View {
             
             VStack {
                 
-                Text("Friendship Badges")
+                Text("Friendship Highlights")
                     .fontWeight(.light)
                     .frame(width: 320, height: 60)
                     .foregroundColor(Color.white)
@@ -74,18 +74,35 @@ struct CH19: View {
                                 .opacity(0.9)
                                 .foregroundColor(.white)
                             
-                                                            Text("Level 1 _")
-                                                                .font(.system(size: 25))
-                                                                .foregroundColor(ColorManager .grey4)
-                                                                .fontWeight(.regular)
-                                                                .multilineTextAlignment(.center)
+                                                          
                                     }
+                       
+                        Spacer()
+                            .frame(height: 25)
                         
-                        Text("after you acheive 30 Shooting Stars")
-                            .font(.system(size: 25))
-                            .foregroundColor(Color.cyan)
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.center)
+                        HStack {
+                            
+                            Image(systemName: "star.circle")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
+                                .opacity(0.9)
+                                .foregroundColor(.white)
+                            
+                            Text("As a courtsy to our heavy users we have built a special feature that lets you quickly see your most recient PhotoPOPs and SmileVault messages.")
+                                .font(.system(size: 20))
+                                .foregroundColor(Color.cyan)
+                                .fontWeight(.bold)
+                                .multilineTextAlignment(.center)
+        
+                            Text("You must be a Level 1 user to access this feature")
+                                .font(.system(size: 20))
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.regular)
+                                .multilineTextAlignment(.center)
+                        }
+                        
+                  
                         
                         
                         
@@ -100,50 +117,25 @@ struct CH19: View {
                                 .frame(width: 37, height: 37)
                                 .opacity(0.9)
                                 .foregroundColor(.white)
-                            
-                            Text("Level 2 _")
-                                .font(.system(size: 25))
-                                .foregroundColor(ColorManager .grey4)
-                                .fontWeight(.regular)
-                                .multilineTextAlignment(.center)
-        
-        
-                        }
-                        
-                        Text("???")
-                            .font(.system(size: 25))
-                            .foregroundColor(Color.cyan)
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.center)
-                        
-                        
-                        
-                        Spacer()
-                            .frame(height: 25)
-                        
-                        HStack {
-                            
-                            Image(systemName: "star.circle")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 37, height: 37)
-                                .opacity(0.9)
-                                .foregroundColor(.white)
-                            
-                            Text("Level 3 _")
-                                .font(.system(size: 25))
-                                .foregroundColor(ColorManager .grey4)
-                                .fontWeight(.regular)
-                                .multilineTextAlignment(.center)
-                      
+                    
                             
                         }
                         
-                        Text("???")
-                            .font(.system(size: 25))
-                            .foregroundColor(Color.cyan)
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.center)
+                        
+                        NavigationLink(
+                            destination: CH19(user: user),
+                                label: {
+                                    Text("Access \nFriendship Highlights")
+                                        .fontWeight(.light)
+                                        .frame(width: 275, height: 60)
+                                        .foregroundColor(ColorManager .grey4)
+                                        .font(.system(size: 17))
+                                        .background(Color.cyan)
+                                        .opacity(0.85)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                    
+                                                        })
                         
                         }
                     }
