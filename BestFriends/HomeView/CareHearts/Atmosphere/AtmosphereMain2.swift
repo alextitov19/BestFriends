@@ -61,20 +61,25 @@ struct AtmosphereMain2: View {
                 VStack {
                     
                     VStack {
-                        Text("My")
-                            .font(.system(size: 15))
-                        
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
+                 
                         
                         
-                        Text("Friendship \n Relationship \nEmotional \n& School")
+                        Text("Friendship \n Relationship")
                             .font(.system(size: 25))
                             .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
+                        
+                        Text("Emotional \n& School")
+                            .font(.system(size: 25))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+                        Spacer()
+                            .frame(height: 20)
                         
                         Text("Vibes")
                             .font(.system(size: 45))
@@ -183,6 +188,13 @@ struct AtmosphereMain2: View {
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
+                        
+                        Text("shows as 'blue' atmosphers \naround your planet")
+                            .font(.system(size: 10))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
                         
                     }
                     Spacer ()
@@ -385,6 +397,13 @@ struct AtmosphereMain2: View {
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
+                        Text("shows as 'yellow' atmosphers \naround your planet")
+                            .font(.system(size: 10))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
                     }
                 }
                 
