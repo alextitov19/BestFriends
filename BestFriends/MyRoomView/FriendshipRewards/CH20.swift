@@ -118,8 +118,11 @@ struct CH20: View {
                             
                         })
                     
+                    
+//                    FH1(user: user, friends: friends, friendAtmospheres: friendAtmospheres
+                    
                         NavigationLink(
-                            destination: CH19(user: user),
+                            destination: CH19(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                                     Text("Access \nFriendship Highlights")
                                         .fontWeight(.light)

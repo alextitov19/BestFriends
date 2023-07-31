@@ -13,7 +13,13 @@ import AVKit
 
 struct CH19: View {
     
+//    let user: User
+    
     let user: User
+     let atmosphere: Atmosphere
+     let friends: [User]
+     let friendAtmospheres: [Atmosphere]
+    let groups: [Group]
     
     var body: some View {
         
@@ -123,7 +129,7 @@ struct CH19: View {
                         
                         
                         NavigationLink(
-                            destination: CH19(user: user),
+                            destination: FH1(user: user, friends: friends, friendAtmospheres: friendAtmospheres),
                                 label: {
                                     Text("Access \nFriendship Highlights")
                                         .fontWeight(.light)
