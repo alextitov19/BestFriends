@@ -42,7 +42,7 @@ struct CH18: View {
             
             VStack {
                 
-                Text("Friendship Handbag Badges")
+                Text("Friendship Badges")
                     .fontWeight(.light)
                     .frame(width: 325, height: 60)
                     .foregroundColor(Color.white)
@@ -84,7 +84,7 @@ struct CH18: View {
                             NavigationLink(
                                 destination: CH17(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
-                                    Text("Level 1 \nHermès")
+                                    Text("Level 1")
                                         .fontWeight(.light)
                                         .frame(width: 100, height: 50)
                                         .foregroundColor(ColorManager .grey4)
@@ -122,7 +122,7 @@ struct CH18: View {
                             NavigationLink(
                                 destination: EmptyView(),
                                 label: {
-                                    Text("Level 2 \nChanel")
+                                    Text("Leve l")
                                         .fontWeight(.light)
                                         .frame(width: 100, height: 50)
                                         .foregroundColor(ColorManager .grey4)
@@ -161,7 +161,7 @@ struct CH18: View {
                             NavigationLink(
                                 destination: EmptyView(),
                                 label: {
-                                    Text("Level 2 \nFendi")
+                                    Text("Level 2")
                                         .fontWeight(.light)
                                         .frame(width: 100, height: 50)
                                         .foregroundColor(ColorManager .grey4)

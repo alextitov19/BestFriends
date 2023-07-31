@@ -84,7 +84,7 @@ struct CH20: View {
                     
                         NavigationLink(destination: CH18(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
-                                Text("Friendship \nHandbag \nBadge Levels")
+                                Text("Friendship \nBadge Levels")
                                     .fontWeight(.light)
                                     .frame(width: 150, height: 70)
                                     .foregroundColor(ColorManager .grey4)
