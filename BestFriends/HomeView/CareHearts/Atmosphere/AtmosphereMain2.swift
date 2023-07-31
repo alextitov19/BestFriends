@@ -41,51 +41,53 @@ struct AtmosphereMain2: View {
     
     var body: some View {
         ZStack {
-//            ColorManager.purple7
-////                .opacity(0.6)
-//                .ignoresSafeArea()
-//
-//            AdPlayerView(name: "sky2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-
-            Image("CHRequest 2")
-                .ignoresSafeArea()
-                .scaledToFit()
-              
-
-                
-            AdPlayerView(name: "Galaxy2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
             
-
+            ColorManager .purple4
+                .opacity(0.6)
+                .ignoresSafeArea()
             
+            
+            Image("FHBackground")
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
             
             VStack {
                 Spacer()
                     .frame(height: 20)
                 
+                
+                
                 VStack {
+                    
+                    VStack {
+                        Text("My")
+                            .font(.system(size: 35))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+                        
+                        Text("Emotional & Friendship")
+                            .font(.system(size: 35))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+                        Text("Vibe")
+                            .font(.system(size: 35))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+                    }
 
                 }
            
                 HStack {
                     VStack {
                         HStack {
-                            VStack {
-                                Text("Emotional")
-                                    .font(.system(size: 35))
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(ColorManager .grey3)
-                                Text("Support")
-                                    .font(.system(size: 35))
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(ColorManager .grey3)
-                                
-                            }
+                          
                       
                         Spacer ()
                                 .frame(width: 50)
@@ -451,7 +453,14 @@ struct AtmosphereMain2: View {
                 
                         VStack {
                             
-                            Text("Who whould you like CareHearts from?")
+                            Text("If you're having one of those days")
+                               .italic()
+                                .font(.system(size: 17))
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                            
+                            Text("who whould you like CareHearts from?")
                                .italic()
                                 .font(.system(size: 17))
                                 .fontWeight(.thin)
