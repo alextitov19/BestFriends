@@ -85,6 +85,7 @@ struct AtmosphereMain2: View {
                 }
            
                 HStack {
+                    
                     VStack {
                         HStack {
                           
@@ -93,16 +94,7 @@ struct AtmosphereMain2: View {
                         }
                         Spacer()
                             .frame(height: 5)
-                     
-
-                        Text("I could use some")
-                            .font(.system(size: 25))
-//                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey2)
-
-
+   
 
                         
                         Button(action: {
@@ -110,28 +102,30 @@ struct AtmosphereMain2: View {
                         }) {
                             
                             ZStack {
-                                Image(systemName: "heart.fill")
-                                    .resizable()
-                                    .foregroundColor(ColorManager .purple1)
-                                    .frame(width: 100, height: 80)
-                                    .cornerRadius(30)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
-
-                                Text("tap")
-                                    .fontWeight(.thin)
-                                    .frame(width: 70, height: 37)
-                                    .foregroundColor(ColorManager .purple7)
-                                    .font(.system(size: 20))
-                                    .background(ColorManager .purple1)
-                                    .cornerRadius(10)
-                                    .opacity(0.95)
+//                                Image(systemName: "heart.fill")
+//                                    .resizable()
+//                                    .foregroundColor(ColorManager .purple1)
+//                                    .frame(width: 100, height: 80)
+//                                    .cornerRadius(30)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//
+//                                Text("tap")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 70, height: 37)
+//                                    .foregroundColor(ColorManager .purple7)
+//                                    .font(.system(size: 20))
+//                                    .background(ColorManager .purple1)
+//                                    .cornerRadius(10)
+//                                    .opacity(0.95)
+                                
                             }
-                            .frame(width: 120, height: 90, alignment: .center)
-
-                            .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
-                            .cornerRadius(37)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            
+//                            .frame(width: 120, height: 90, alignment: .center)
+//
+//                            .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
+//                            .cornerRadius(37)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                       
                         }
 
@@ -149,7 +143,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 1 ? Color(.cyan) : ColorManager .purple3)
+                        .background(mood == 1 ? Color(.cyan) : Color.blue)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
@@ -161,12 +155,12 @@ struct AtmosphereMain2: View {
                           mood = 2
                         }) {
 
-                           Text("Family \nIssues")
+                           Text("Friend Drama")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 2 ? Color(.cyan) : ColorManager .pmbc_blue)
+                        .background(mood == 2 ? Color(.cyan) : Color.pink)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
@@ -178,12 +172,12 @@ struct AtmosphereMain2: View {
                             mood = 3
                         }) {
 
-                            Text("Sad \nLonely")
+                            Text("School Stress")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 3 ? Color(.cyan) : ColorManager .purple3)
+                        .background(mood == 3 ? Color(.cyan) : ColorManager .grey2)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
@@ -195,48 +189,14 @@ struct AtmosphereMain2: View {
                    
                         ZStack {
                             
-                        Image(systemName: "heart.fill")
-                            .resizable()
-                            .foregroundColor(Color .white)
-                            .frame(width: 100, height: 80)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
-                            .opacity(0.95)
-                            
+                  
                             
                             VStack {
-//                                Text("Because I")
-//                                //                          .italic()
-//                                    .font(.system(size: 15))
-//                                    .fontWeight(.light)
-//                                    .multilineTextAlignment(.center)
-//                                    .foregroundColor(ColorManager .grey1)
-//
-//                                Text("need some")
-//                                    .font(.system(size: 15))
-//                                    .fontWeight(.light)
-//                                    .multilineTextAlignment(.center)
-//                                    .foregroundColor(ColorManager .grey1)
                                 
-//                                NavigationLink(destination: MyRoomView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-//                                               label: {
-//                                    Text("Emotional Support")
-//                                        .fontWeight(.thin)
-//                                        .frame(width: 80, height: 40)
-//                                        .foregroundColor(ColorManager .purple7)
-//                                        .font(.system(size: 15))
-//                                        .background(ColorManager .purple1)
-//                                        .cornerRadius(10)
-//                                        .opacity(0.95)
-//
-//                                        .frame(width: 120, height: 90, alignment: .center)
-//
-//                                        .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
-//                                        .cornerRadius(37)
-//                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                                })
+
                             }
-                    }
+                   
+                        }
                         
                     }
                     
@@ -245,7 +205,7 @@ struct AtmosphereMain2: View {
                     
                     
                     
-                    
+//
 //                        Button(action: {
 //                            mood = 4
 //                        }) {
@@ -258,10 +218,10 @@ struct AtmosphereMain2: View {
 //                        .background(mood == 4 ? Color(.systemGreen) : Color .yellow)
 //                        .cornerRadius(7)
 //                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//
-//                        Spacer()
-//                            .frame(height: 12)
+
+
+                        Spacer()
+                            .frame(height: 12)
 //
 //                        Button(action: {
 //                            mood = 5
@@ -376,54 +336,54 @@ struct AtmosphereMain2: View {
 //                            })
                            
                         }
-//
-//                        Button(action: {
-//                            mood = 7
-//                        }) {
-//
-//                            Text("Happy \nToday")
-//                                .font(.system(size: 10))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 7 ? Color(.systemYellow) : ColorManager .orange2)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//
-//                        Spacer()
-//                            .frame(height: 12)
+
+                        Button(action: {
+                            mood = 7
+                        }) {
+
+                            Text("Great Day - yes, yes, yes!")
+                                .font(.system(size: 10))
+                                .foregroundColor(Color.black)
+                        }
+                        .frame(width: 140, height: 30, alignment: .center)
+                        .background(mood == 7 ? Color.orange : Color.yellow)
+                        .cornerRadius(7)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
+
+                        Spacer()
+                            .frame(height: 12)
                         
-//                        Button(action: {
-//                            mood = 8
-//                        }) {
-//
-//                            Text("Found \nNEW Music")
-//                                .font(.system(size: 10))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 8 ? Color(.systemYellow) : ColorManager .pmbc_green)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//
-//                        Spacer()
-//                            .frame(height: 12)
-//
-//                        Button(action: {
-//                            mood = 9
-//                        }) {
-//
-//                            Text("Exciting News")
-//                                .font(.system(size: 10))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 9 ? Color(.systemYellow) : ColorManager .orange2)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
+                        Button(action: {
+                            mood = 8
+                        }) {
+
+                            Text("Super FriendGroup")
+                                .font(.system(size: 10))
+                                .foregroundColor(Color.black)
+                        }
+                        .frame(width: 140, height: 30, alignment: .center)
+                        .background(mood == 8 ? Color.orange : Color.yellow)
+                        .cornerRadius(7)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
+
+                        Spacer()
+                            .frame(height: 12)
+
+                        Button(action: {
+                            mood = 9
+                        }) {
+
+                            Text("School under Control")
+                                .font(.system(size: 10))
+                                .foregroundColor(Color.black)
+                        }
+                        .frame(width: 140, height: 30, alignment: .center)
+                        .background(mood == 9 ? Color.orange : Color.yellow)
+                        .cornerRadius(7)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
                     }
                 }
                 
