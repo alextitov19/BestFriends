@@ -37,32 +37,7 @@ struct JournalView: View {
                      .edgesIgnoringSafeArea(.all)
                             .onAppear {
                                loadImages()
-            
-//            Color.pink
-//                .ignoresSafeArea()
-////                .blendMode(.screen)
-//                .opacity(0.9)
-//
-//            Color.white
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//                .opacity(0.5)
-//                .onAppear {
-//                    loadImages()
-            
-            
-            
-//
-//            Color.white
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//                .opacity(0.7)
-//
-//            Color.pink
-//                .ignoresSafeArea()
-//                .opacity(0.8)
-//                .onAppear {
-//                    loadImages()
+
                 }
             
             ScrollView(.vertical, showsIndicators: false) {
@@ -78,34 +53,29 @@ struct JournalView: View {
                         .padding()
                     
                     HStack {
-                        VStack {
+//                        VStack {
+
+//
+//                            if journal.mood < 0 {
+//                                Image("sadMood")
+//                                    .renderingMode(.template)
+//                                    .resizable()
+//                                    .foregroundColor(.blue)
+//                                    .frame(width: 30, height: 30)
+//
+//                            } else {
+//
+//                                Image("happyMood")
+//                                    .renderingMode(.template)
+//                                    .resizable()
+//                                    .foregroundColor(.yellow)
+//                                    .frame(width: 30, height: 30)
+//                            }
                             
-//                            Text("today I am feeling")
-//                                .font(.system(size: 20))
-//                                .foregroundColor(ColorManager.grey4)
-//                                .multilineTextAlignment(.center)
-//                                .padding()
-                            
-                            if journal.mood < 0 {
-                                Image("sadMood")
-                                    .renderingMode(.template)
-                                    .resizable()
-                                    .foregroundColor(.blue)
-                                    .frame(width: 30, height: 30)
-                                
-                            } else {
-                                
-                                Image("happyMood")
-                                    .renderingMode(.template)
-                                    .resizable()
-                                    .foregroundColor(.yellow)
-                                    .frame(width: 30, height: 30)
-                            }
-                            
-                            Text(String(abs(journal.mood * 100).rounded(.up)) + "%")
-                                .font(.system(size: 12))
-                        }
-                        .padding()
+//                            Text(String(abs(journal.mood * 100).rounded(.up)) + "%")
+//                                .font(.system(size: 12))
+//                        }
+//                        .padding()
                         
                         Image(systemName: journal.weather)
                             .resizable()
