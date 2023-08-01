@@ -65,7 +65,7 @@ struct AtmosphereMain2: View {
                         
                         
                         Text("Friendship \n Relationship")
-                            .font(.system(size: 25))
+                            .font(.system(size: 22))
                             .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -79,7 +79,7 @@ struct AtmosphereMain2: View {
                             .foregroundColor(Color.white)
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 10)
                         
                         Text("Vibes")
                             .font(.system(size: 45))
@@ -100,7 +100,7 @@ struct AtmosphereMain2: View {
                             
                         }
                         Spacer()
-                            .frame(height: 5)
+                            .frame(height: 20)
    
 
                         
@@ -156,7 +156,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 1 ? Color(.cyan) : Color.blue)
+                        .background(mood == 1 ? Color(.cyan) : ColorManager .grey2)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
