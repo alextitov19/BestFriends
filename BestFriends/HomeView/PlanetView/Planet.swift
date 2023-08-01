@@ -22,7 +22,7 @@ struct Planet: View {
                 if online {
                     PlanetView(planet: atmosphere.planet, mood: atmosphere.mood)
                         .scaledToFit()
-                        .frame(width: 50, height: 50)
+                        .frame(width: 70, height: 70)
                         .glow(color: glowColor())
                         .onAppear(perform: {print("Mood: ", atmosphere.mood)})
                     
