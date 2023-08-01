@@ -62,7 +62,16 @@ struct AtmosphereMain2: View {
                     
                     VStack {
                  
+                     
                         
+                        Text("Vibes")
+                            .font(.system(size: 45))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+                        Spacer()
+                            .frame(height: 10)
                         
                         Text("Friendship \n Relationship")
                             .font(.system(size: 22))
@@ -78,14 +87,7 @@ struct AtmosphereMain2: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
                         
-                        Spacer()
-                            .frame(height: 10)
-                        
-                        Text("Vibes")
-                            .font(.system(size: 45))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
+                     
                         
                     }
 
@@ -193,7 +195,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 3 ? Color(.blue) : ColorManager .grey3)
+                        .background(mood == 3 ? Color(.purple) : ColorManager .purple3)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
