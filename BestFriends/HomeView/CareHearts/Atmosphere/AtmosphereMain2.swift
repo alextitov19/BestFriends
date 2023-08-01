@@ -73,19 +73,13 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("Friendship \n Relationship")
+                        Text("Friendship _ Relationship _ School")
                             .font(.system(size: 22))
                             .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
-                        
-                        Text("Emotional \n& School")
-                            .font(.system(size: 25))
-                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
+              
                         
                      
                         
@@ -102,7 +96,7 @@ struct AtmosphereMain2: View {
                             
                         }
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 50)
    
 
                         
