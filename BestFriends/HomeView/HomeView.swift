@@ -289,7 +289,7 @@ struct HomeView: View {
         case 2:
             return Color(.systemRed)
         case 3:
-            return Color(.systemBlue)
+            return Color(.systemPurple)
         case 4:
             return Color(.systemGreen)
         case 5:

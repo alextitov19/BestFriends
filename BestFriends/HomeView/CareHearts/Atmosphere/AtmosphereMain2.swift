@@ -42,15 +42,38 @@ struct AtmosphereMain2: View {
     var body: some View {
         ZStack {
             
-            ColorManager .purple4
-                .opacity(0.6)
-                .ignoresSafeArea()
             
+            if shareTapped {
+                
+                
+                
+                ColorManager.purple5
+                    .ignoresSafeArea()
+                    .onAppear()
+                
+                
+                AdPlayerView(name: "dramaLights")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                
+            } else {
+                
+                
+                Image("FHBackground")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+            }
             
-            Image("FHBackground")
-                .resizable()
-                .scaledToFill()
-                .edgesIgnoringSafeArea(.all)
+//            ColorManager .purple4
+//                .opacity(0.6)
+//                .ignoresSafeArea()
+//
+//
+//            Image("FHBackground")
+//                .resizable()
+//                .scaledToFill()
+//                .edgesIgnoringSafeArea(.all)
             
             VStack {
                 Spacer()
@@ -189,7 +212,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 3 ? Color(.purple) : ColorManager .purple3)
+                        .background(mood == 3 ? ColorManager .purple5 : ColorManager .purple3)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
@@ -565,7 +588,7 @@ struct AtmosphereMain2: View {
                                 }
                             
                         })
-                        .confettiCannon(counter: $counter)
+//                        .confettiCannon(counter: $counter)
                         
 
                         Spacer()
