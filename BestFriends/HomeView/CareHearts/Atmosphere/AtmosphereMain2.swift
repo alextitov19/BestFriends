@@ -140,6 +140,12 @@ struct AtmosphereMain2: View {
                         
                         Spacer()
                             .frame(height: 12)
+                        Text("show as Cyan, Red & Blue \natmospher around your planet")
+                            .font(.system(size: 10))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
 
                         Button(action: {
                             mood = 1
@@ -154,6 +160,7 @@ struct AtmosphereMain2: View {
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
+                 
 
                         Spacer()
                             .frame(height: 12)
@@ -167,10 +174,12 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 2 ? Color(.cyan) : Color.pink)
+                        .background(mood == 2 ? Color(.red) : Color.pink)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
+               
+                        
 
                       Spacer()
                             .frame(height: 12)
@@ -184,17 +193,12 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 3 ? Color(.cyan) : ColorManager .grey2)
+                        .background(mood == 3 ? Color(.blue) : ColorManager .grey3)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
                         
-                        Text("shows as 'blue' atmosphers \naround your planet")
-                            .font(.system(size: 10))
-                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
+                   
                         
                     }
                     Spacer ()
@@ -350,7 +354,7 @@ struct AtmosphereMain2: View {
                            
                         }
 
-                        Text("all show as 'yellow' atmosphers \naround your planet")
+                        Text("all show as 'green' atmosphers \naround your planet")
                             .font(.system(size: 10))
                             .italic()
                             .fontWeight(.light)
@@ -366,7 +370,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 7 ? Color.orange : Color.yellow)
+                        .background(mood == 7 ? Color.green : Color.orange)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
@@ -383,7 +387,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 8 ? Color.orange : Color.yellow)
+                        .background(mood == 8 ? Color.green : Color.orange)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
@@ -400,7 +404,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 9 ? Color.orange : Color.yellow)
+                        .background(mood == 9 ? Color.green : Color.orange)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
