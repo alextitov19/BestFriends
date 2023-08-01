@@ -42,23 +42,23 @@ struct CreateNewJournalView: View {
 //                Text("today I'm ...")
 //                    .font(.system(size: 25, weight: .light))
 //                    .foregroundColor(ColorManager .grey4)
-                
-                HStack {
-                    Image("sadMood")
-                        .renderingMode(.template)
-                        .resizable()
-                        .foregroundColor(.blue)
-                        .frame(width: 40, height: 40)
-                    
-                    Slider(value: $mood, in: -1...1)
-                    
-                    Image("happyMood")
-                        .renderingMode(.template)
-                        .resizable()
-                        .foregroundColor(.yellow)
-                        .frame(width: 40, height: 40)
-                }
-                .padding()
+//
+//                HStack {
+//                    Image("sadMood")
+//                        .renderingMode(.template)
+//                        .resizable()
+//                        .foregroundColor(.blue)
+//                        .frame(width: 40, height: 40)
+//
+//                    Slider(value: $mood, in: -1...1)
+//
+//                    Image("happyMood")
+//                        .renderingMode(.template)
+//                        .resizable()
+//                        .foregroundColor(.yellow)
+//                        .frame(width: 40, height: 40)
+//                }
+//                .padding()
                 
                 HStack {
                     ForEach(imagesData, id: \.self) { i in

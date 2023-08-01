@@ -81,7 +81,7 @@ struct JournalView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 42, height: 42)
-                            .foregroundColor(ColorManager.purple5)
+                            .foregroundColor(ColorManager.grey1)
                             .padding()
                     }
                     
