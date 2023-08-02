@@ -159,7 +159,7 @@ struct AtmosphereMain2: View {
                         
                         Spacer()
                             .frame(height: 12)
-                        Text("show as Cyan, Red & Blue \natmospher around your planet")
+                        Text("show as Cyan, Orange & Purple \natmospher around your planet")
                             .font(.system(size: 10))
                             .italic()
                             .fontWeight(.light)
@@ -193,7 +193,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 2 ? Color(.red) : Color.pink)
+                        .background(mood == 2 ? Color(.orange) : ColorManager .pmbc_pink)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
@@ -212,7 +212,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 3 ? ColorManager .purple5 : ColorManager .purple3)
+                        .background(mood == 3 ? Color.purple : ColorManager .purple4)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
@@ -241,23 +241,7 @@ struct AtmosphereMain2: View {
                     
                     
                     
-//
-//                        Button(action: {
-//                            mood = 4
-//                        }) {
-//
-//                            Text("My Exciting \nNEWS!")
-//                                .font(.system(size: 10))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 80, height: 30, alignment: .center)
-//                        .background(mood == 4 ? Color(.systemGreen) : Color .yellow)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
-//
-//                        Spacer()
-//                            .frame(height: 12)
 //
 //                        Button(action: {
 //                            mood = 5
@@ -370,38 +354,44 @@ struct AtmosphereMain2: View {
 ////                                    .opacity(0.70)
 //
 //                            })
+                            
+                            
+                            
+                            
+                            
+                            
                            
                         }
 
-                        Text("all show as 'green' atmosphers \naround your planet")
+                        Text("show as Green & Red atmosphers \naround your planet")
                             .font(.system(size: 10))
                             .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
                         
-                        Button(action: {
-                            mood = 7
-                        }) {
-
-                            Text("Great Day - yes, yes, yes!")
-                                .font(.system(size: 10))
-                                .foregroundColor(Color.black)
-                        }
-                        .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 7 ? Color.green : Color.orange)
-                        .cornerRadius(7)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
-
-                        Spacer()
-                            .frame(height: 12)
+//                        Button(action: {
+//                            mood = 7
+//                        }) {
+//
+//                            Text("Great Day - yes, yes, yes!")
+//                                .font(.system(size: 10))
+//                                .foregroundColor(Color.black)
+//                        }
+//                        .frame(width: 140, height: 30, alignment: .center)
+//                        .background(mood == 7 ? Color.green : Color.orange)
+//                        .cornerRadius(7)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//
+//                        Spacer()
+//                            .frame(height: 12)
                         
                         Button(action: {
                             mood = 8
                         }) {
 
-                            Text("Super FriendGroup Today")
+                            Text("Great Day - yes, yes, yes!")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -418,17 +408,17 @@ struct AtmosphereMain2: View {
                             mood = 9
                         }) {
 
-                            Text("School/GPA under Control")
+                            Text("Need to TALK!")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 9 ? Color.green : Color.orange)
+                        .background(mood == 9 ? Color.red : ColorManager .pmbc_pink)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
-                    
-                        
+
+
                     }
                 }
                 
@@ -583,7 +573,7 @@ struct AtmosphereMain2: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("We just sent your friend(s) a notificaion. \n\nLetting them know your 'Vibe' changed.", isPresented: $showingAlert) {
+                                .alert("We hope you just tapped the 'Great Day' button - that would put smiles on our faces. \nIf not, we and your friends are here for you. \n\nWe just sent your friend(s) a notificaion. \nLetting them know your 'Vibe' changed.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             

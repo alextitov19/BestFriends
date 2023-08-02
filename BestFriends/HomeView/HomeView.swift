@@ -283,11 +283,11 @@ struct HomeView: View {
     private func glowColor(mood: Int) -> Color {
         switch mood {
         case 0:
-            return Color(.systemBlue)
-        case 1:
             return Color(.systemCyan)
+        case 1:
+            return Color(.systemOrange)
         case 2:
-            return Color(.systemRed)
+            return Color(.systemPurple)
         case 3:
             return Color(.systemPurple)
         case 4:
@@ -301,7 +301,7 @@ struct HomeView: View {
         case 8:
             return Color(.systemGreen)
         case 9:
-            return Color(.systemGreen)
+            return Color(.systemRed)
         default:
             return ColorManager.pmbc_blue
             
