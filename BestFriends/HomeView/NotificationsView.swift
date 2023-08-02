@@ -94,6 +94,7 @@ struct NotificationsView: View {
         @State private var thanksHeartActive = false
         @State private var fixFightActive = false
         @State private var talkCouponActive = false
+        @State private var vibeActive = false
         
         
         init(ian: InAppNotification, user: User, friends: [User]) {
@@ -173,7 +174,9 @@ struct NotificationsView: View {
                     EmptyView()
                 })
                 
-              
+                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $vibeActive, label: {
+                    EmptyView()
+                })
                     
                     Color.cyan
                     
@@ -237,8 +240,9 @@ struct NotificationsView: View {
                 case "Is redeaming ONE 'TalkCoupon'":
                     talkCouponActive = true
                     
-                    
-                    
+                case "'Vibe' just changed! Shoot'em a CareHeart or PhotoPOP":
+                    vibeActive = true
+                  
                     
                 default:
                     return

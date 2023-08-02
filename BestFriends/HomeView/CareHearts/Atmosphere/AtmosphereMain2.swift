@@ -104,7 +104,9 @@ struct AtmosphereMain2: View {
                             .foregroundColor(Color.white)
               
                         
-                     
+                        Spacer()
+                            .frame(height: 50)
+   
                         
                     }
 
@@ -117,49 +119,19 @@ struct AtmosphereMain2: View {
                           
                   
                             
-                        }
-                        Spacer()
-                            .frame(height: 50)
-   
-
-                        
+                    }
+                   
                         Button(action: {
                             mood = 0
                         }) {
                             
-                            ZStack {
-//                                Image(systemName: "heart.fill")
-//                                    .resizable()
-//                                    .foregroundColor(ColorManager .purple1)
-//                                    .frame(width: 100, height: 80)
-//                                    .cornerRadius(30)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//
-//                                Text("tap")
-//                                    .fontWeight(.thin)
-//                                    .frame(width: 70, height: 37)
-//                                    .foregroundColor(ColorManager .purple7)
-//                                    .font(.system(size: 20))
-//                                    .background(ColorManager .purple1)
-//                                    .cornerRadius(10)
-//                                    .opacity(0.95)
-                                
-                            }
-                            
-//                            .frame(width: 120, height: 90, alignment: .center)
-//
-//                            .background(mood == 0 ? Color(.cyan) : ColorManager .purple3)
-//                            .cornerRadius(37)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                      
-                        }
+                    
+                    }
 
                         
                         
-                        Spacer()
-                            .frame(height: 12)
-                        Text("Your friends see a 'blue' atmosphere around your planet when you're having a difficult day")
+                     
+                        Text("Shows as 'blue' atmosphere on friends iPhone")
                             .font(.system(size: 10))
                             .italic()
                             .fontWeight(.light)
@@ -193,7 +165,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 2 ? Color(.orange) : ColorManager .pmbc_pink)
+                        .background(mood == 2 ? Color(.orange) : ColorManager .orange2)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
@@ -217,7 +189,26 @@ struct AtmosphereMain2: View {
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
                         
-                   
+                        Spacer()
+                              .frame(height: 12)
+                        
+                        Button(action: {
+                            mood = 9
+                        }) {
+
+                            Text("Need to TALK!")
+                                .font(.system(size: 10))
+                                .foregroundColor(Color.black)
+                        }
+                        .frame(width: 140, height: 30, alignment: .center)
+                        .background(mood == 9 ? Color.red : Color.pink)
+                        .cornerRadius(7)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
+
+                        
+                        
+                        
                         
                     }
                     Spacer ()
@@ -363,7 +354,7 @@ struct AtmosphereMain2: View {
                            
                         }
 
-                        Text("Your friends see a 'yellow' atmosphere around your planet when you're having a great day")
+                        Text("Shows as 'yellos' atmosphere on friends iPhone")
                             .font(.system(size: 10))
                             .italic()
                             .fontWeight(.light)
@@ -404,19 +395,19 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 12)
 
-                        Button(action: {
-                            mood = 9
-                        }) {
-
-                            Text("Need to TALK!")
-                                .font(.system(size: 10))
-                                .foregroundColor(Color.black)
-                        }
-                        .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 9 ? Color.red : ColorManager .pmbc_pink)
-                        .cornerRadius(7)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
+//                        Button(action: {
+//                            mood = 9
+//                        }) {
+//
+//                            Text("Need to TALK!")
+//                                .font(.system(size: 10))
+//                                .foregroundColor(Color.black)
+//                        }
+//                        .frame(width: 140, height: 30, alignment: .center)
+//                        .background(mood == 9 ? Color.red : ColorManager .pmbc_pink)
+//                        .cornerRadius(7)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
 
 
                     }
@@ -615,11 +606,11 @@ struct AtmosphereMain2: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: " \(user.firstName) 'Vibe' just changed!", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: " \(user.firstName) 'Vibe' just changed! Shoot'em a CareHeart or PhotoPOP", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "'Vibe' just changes!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Vibe' just changed! Shoot'em a CareHeart or PhotoPOP", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                         print("Create a Vibe notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)
