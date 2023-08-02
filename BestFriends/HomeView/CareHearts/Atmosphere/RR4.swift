@@ -265,7 +265,7 @@ struct RR4: View {
               
                     
                     Spacer()
-                        .frame(height: 5)
+                        .frame(height: 100)
                     
             
                     
