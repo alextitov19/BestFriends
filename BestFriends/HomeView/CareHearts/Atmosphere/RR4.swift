@@ -296,7 +296,7 @@ struct RR4: View {
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Needed to Talk! If you're just seeing it here - you're late.", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Needed to Talk!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                         print("Create a Need Talk notification response code: ", response)
                     })
                     
