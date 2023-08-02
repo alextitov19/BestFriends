@@ -129,7 +129,7 @@ struct AtmosphereMain2: View {
                             .foregroundColor(Color.white)
                         
                         Spacer()
-                            .frame(height: 50)
+                            .frame(height: 30)
    
                         
                     }
@@ -236,7 +236,7 @@ struct AtmosphereMain2: View {
                         
                     }
                     Spacer ()
-                        .frame(width: 45)
+                        .frame(width: 33)
              
                     VStack {
                    
