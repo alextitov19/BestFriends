@@ -87,7 +87,7 @@ struct AtmosphereMain2: View {
                  
                      
                         
-                        Text("Vibes")
+                        Text("My Vibes")
                             .font(.system(size: 45))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -96,13 +96,37 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("Friendship _ Relationship _ School")
+                        Text("Something just happened.")
+                            .font(.system(size: 20))
+//                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+                        
+                        Text("But you're not ready to talk about it yet.")
+                            .font(.system(size: 20))
+//                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        Spacer()
+                            .frame(height: 15)
+                        
+                        Text("Let your friends send you some")
                             .font(.system(size: 22))
-                            .italic()
+//                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
               
+                        
+                        Text("Emotional Support in the meantime.")
+                            .font(.system(size: 22))
+//                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
                         
                         Spacer()
                             .frame(height: 50)
