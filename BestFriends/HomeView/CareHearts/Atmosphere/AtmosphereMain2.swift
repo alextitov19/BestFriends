@@ -440,9 +440,7 @@ struct AtmosphereMain2: View {
                 VStack {
                     // MARK: End of feeling buttons
     
-                    
-                    Spacer()
-                        .frame(height: 5)
+                 
                     
                     ZStack {
                 
@@ -462,7 +460,7 @@ struct AtmosphereMain2: View {
                             })
                             
                             Spacer()
-                                .frame(height: 15)
+                                .frame(height: 30)
                             
                             
                             
