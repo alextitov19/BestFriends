@@ -95,6 +95,7 @@ struct NotificationsView: View {
         @State private var fixFightActive = false
         @State private var talkCouponActive = false
         @State private var vibeActive = false
+        @State private var needTalkActive = false
         
         
         init(ian: InAppNotification, user: User, friends: [User]) {
@@ -148,16 +149,17 @@ struct NotificationsView: View {
                         EmptyView()
                     })
                     
+                  
+                    NavigationLink(destination: CH6(user: user, friends: friends), isActive: $heartsActive, label: {
+                        EmptyView()
+                    })
+                    
+                    NavigationLink(destination: CH9(user: user, friends: friends), isActive: $thanksKissesActive, label: {
+                        EmptyView()
+                    })
+                    
                 }
-                
-                NavigationLink(destination: CH6(user: user, friends: friends), isActive: $heartsActive, label: {
-                    EmptyView()
-                })
-                
-                NavigationLink(destination: CH9(user: user, friends: friends), isActive: $thanksKissesActive, label: {
-                    EmptyView()
-                })
-                
+                    
                 NavigationLink(destination: VirtualHug(user: user, friends: friends), isActive: $thanksHugActive, label: {
                     EmptyView()
                 })
@@ -178,7 +180,17 @@ struct NotificationsView: View {
                     EmptyView()
                 })
                     
-                    Color.cyan
+                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $needTalkActive, label: {
+                    EmptyView()
+                })
+                
+                
+                
+            
+                
+                
+                
+                Color.cyan
                     
                     
                     
@@ -242,6 +254,10 @@ struct NotificationsView: View {
                     
                 case "'Vibe' just changed! Shoot'em a CareHeart or PhotoPOP":
                     vibeActive = true
+                    
+                case "Needed to Talk! If you're just seeing it here - you're late.":
+                    needTalkActive = true
+                   
                   
                     
                 default:
