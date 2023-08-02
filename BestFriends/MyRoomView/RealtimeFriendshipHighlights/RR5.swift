@@ -112,7 +112,7 @@ struct RR5: View {
                                
                           
                             NavigationLink(
-                                destination: RR4(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                destination: FH7(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                                     Text("->")
                                         .fontWeight(.thin)

@@ -118,20 +118,20 @@ struct RR1: View {
                                 
                                 
                                 
-                                Text("sharing your")
-                                    .font(.system(size: 25))
-                                    .italic()
-                                    .foregroundColor(ColorManager .grey1)
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
+//                                Text("sharing your")
+//                                    .font(.system(size: 25))
+//                                    .italic()
+//                                    .foregroundColor(ColorManager .grey1)
+//                                    .fontWeight(.light)
+//                                    .multilineTextAlignment(.center)
                             }
                                 
-                                Text("Crushes")
-                                    .font(.system(size: 25))
-                                    .foregroundColor(Color.cyan)
-                                    .fontWeight(.bold)
-                                    .multilineTextAlignment(.center)
-                                
+//                                Text("Crushes")
+//                                    .font(.system(size: 25))
+//                                    .foregroundColor(Color.cyan)
+//                                    .fontWeight(.bold)
+//                                    .multilineTextAlignment(.center)
+//
                             
                             
                             Spacer()

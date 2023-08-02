@@ -155,7 +155,7 @@ struct AtmosphereMain2: View {
                         
                         
                      
-                        Text("Shows as 'blue' atmosphere on friends iPhone")
+                        Text("Shows as 'blue' atmosphere \non friends iPhone")
                             .font(.system(size: 10))
                             .italic()
                             .fontWeight(.light)
@@ -216,23 +216,20 @@ struct AtmosphereMain2: View {
                         Spacer()
                               .frame(height: 12)
                         
-                        Button(action: {
-                            mood = 9
-                        }) {
+//                        Button(action: {
+//                            mood = 9
+//                        }) {
+//
+//                            Text("Need to TALK!")
+//                                .font(.system(size: 10))
+//                                .foregroundColor(Color.black)
+//                        }
+//                        .frame(width: 140, height: 30, alignment: .center)
+//                        .background(mood == 9 ? Color.red : Color.pink)
+//                        .cornerRadius(7)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
-                            Text("Need to TALK!")
-                                .font(.system(size: 10))
-                                .foregroundColor(Color.black)
-                        }
-                        .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 9 ? Color.red : Color.pink)
-                        .cornerRadius(7)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
-
-                        
-                        
-                        
+ 
                         
                     }
                     Spacer ()
@@ -378,7 +375,7 @@ struct AtmosphereMain2: View {
                            
                         }
 
-                        Text("Shows as 'yellos' atmosphere on friends iPhone")
+                        Text("Shows as 'yellos' atmosphere \non friends iPhone")
                             .font(.system(size: 10))
                             .italic()
                             .fontWeight(.light)
@@ -435,6 +432,8 @@ struct AtmosphereMain2: View {
 
 
                     }
+                    
+                 
                 }
                 
                 
@@ -448,6 +447,49 @@ struct AtmosphereMain2: View {
                     ZStack {
                 
                         VStack {
+//
+//                            Button(action: {
+//                                mood = 9
+//                            }) {
+//
+//                                Text("Need to TALK!")
+//                                    .font(.system(size: 10))
+//                                    .foregroundColor(Color.black)
+//                            }
+//                            .frame(width: 300, height: 30, alignment: .center)
+//                            .background(mood == 9 ? Color.red : Color.pink)
+//                            .cornerRadius(7)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
+
+                            NavigationLink( destination:  RR4(user: user, friends: friends),
+                                            label: {
+                                Text("Need to TALk")
+                                
+                                    .font(.system(size: 10))
+                                    .foregroundColor(Color.black)
+                                    .frame(width: 300, height: 30, alignment: .center)
+                                    .background(mood == 9 ? Color.red : Color.pink)
+                                    .cornerRadius(7)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
+                                
+//                                    .fontWeight(.regular)
+//                                    .frame(width: 100, height: 40)
+//                                    .foregroundColor(ColorManager .purple5)
+//                                    .font(.system(size: 15))
+//                                    .background(ColorManager .purple1)
+//                                    .glow(color: ColorManager.purple3, radius: 1)
+//                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                    .opacity(0.9)
+//                                    .cornerRadius(7)
+//                                    .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                            })
+                            
+                            
+                            
+                            
+//         ********************************************************
                             
                             Text("Notify your friends of your 'Vibe' change")
                                .italic()

@@ -254,11 +254,11 @@ struct MyRoomView: View {
                                         
                                         NavigationLink( destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                                         label: {
-                                            Text("My 'Vibe'")
+                                            Text("My 'Vibe' \nChanged")
                                                 .fontWeight(.regular)
-                                                .frame(width: 90, height: 35)
+                                                .frame(width: 100, height: 40)
                                                 .foregroundColor(ColorManager .purple5)
-                                                .font(.system(size: 17))
+                                                .font(.system(size: 15))
                                                 .background(ColorManager .purple1)
                                                 .glow(color: ColorManager.purple3, radius: 1)
                                                 .shadow(color: .white, radius: 3, x: -4, y: 4)
