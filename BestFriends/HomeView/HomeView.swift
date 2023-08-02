@@ -285,9 +285,9 @@ struct HomeView: View {
         case 0:
             return Color(.systemCyan)
         case 1:
-            return Color(.systemOrange)
+            return Color(.systemCyan)
         case 2:
-            return Color(.systemPurple)
+            return Color(.systemOrange)
         case 3:
             return Color(.systemPurple)
         case 4:
@@ -302,6 +302,7 @@ struct HomeView: View {
             return Color(.systemGreen)
         case 9:
             return Color(.systemRed)
+       
         default:
             return ColorManager.pmbc_blue
             
