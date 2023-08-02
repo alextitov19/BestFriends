@@ -205,7 +205,7 @@ struct MyRoomView: View {
                             
                             VStack {
                                 Spacer()
-                                    .frame(height: 65)
+                                    .frame(height: 57)
                                 
                                 HStack {
                                    
