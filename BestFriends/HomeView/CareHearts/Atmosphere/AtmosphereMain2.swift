@@ -159,7 +159,7 @@ struct AtmosphereMain2: View {
                         
                         Spacer()
                             .frame(height: 12)
-                        Text("show as Cyan, Orange & Purple \natmospher around your planet")
+                        Text("Your friends see a 'blue' atmosphere around your planet when you're having a difficult day")
                             .font(.system(size: 10))
                             .italic()
                             .fontWeight(.light)
@@ -363,7 +363,7 @@ struct AtmosphereMain2: View {
                            
                         }
 
-                        Text("show as Green & Red atmosphers \naround your planet")
+                        Text("Your friends see a 'yellow' atmosphere around your planet when you're having a great day")
                             .font(.system(size: 10))
                             .italic()
                             .fontWeight(.light)
