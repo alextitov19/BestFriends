@@ -248,8 +248,16 @@ struct ChatView: View {
                             .multilineTextAlignment(.center)
                     }
                     
+                 
                 }
-                
+                Text("________________________________________")
+                    .fontWeight(.light)
+                    .frame(width: 200, height: 5)
+                    .foregroundColor(ColorManager .grey4)
+                    .font(.system(size: 25))
+                    .background(Color.purple)
+                    .cornerRadius(5)
+                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                 
                 // MARK: Main scroll view
                 ScrollView(.vertical, showsIndicators: false) {
