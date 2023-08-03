@@ -200,7 +200,7 @@ struct ChatView: View {
                         
                         Text("")
                             .fontWeight(.light)
-                            .frame(width: 50, height: 27)
+                            .frame(width: 50, height: 24)
                             .foregroundColor(ColorManager .grey1)
                             .font(.system(size: 25))
                             .background(Color.purple)
@@ -220,11 +220,11 @@ struct ChatView: View {
                    
                     NavigationLink(destination: RR8(),
                         label: {
-                        Text("Customize Background \nin Settings")
+                        Text("Customize Backgrounds \nin 'Settings'")
                             .fontWeight(.regular)
-                            .frame(width: 120, height: 27)
+                            .frame(width: 130, height: 24)
                             .foregroundColor(Color.white)
-                            .font(.system(size: 9))
+                            .font(.system(size: 10))
                             .background(Color.purple)
                             .cornerRadius(5)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
@@ -235,7 +235,7 @@ struct ChatView: View {
                         
                         Text("")
                             .fontWeight(.light)
-                            .frame(width: 100, height: 27)
+                            .frame(width: 100, height: 24)
                             .foregroundColor(ColorManager .grey1)
                             .font(.system(size: 25))
                             .background(Color.purple)
@@ -250,7 +250,7 @@ struct ChatView: View {
                     
                  
                 }
-                Text("________________________________________")
+                Text("")
                     .fontWeight(.light)
                     .frame(width: 200, height: 5)
                     .foregroundColor(ColorManager .grey4)
