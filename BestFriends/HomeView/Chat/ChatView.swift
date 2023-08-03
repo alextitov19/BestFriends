@@ -182,41 +182,56 @@ struct ChatView: View {
                               }
                 
                 HStack {
+                    
                     ZStack {
+                        
                         Text("")
                             .fontWeight(.light)
-                            .frame(width: 100, height: 20)
+                            .frame(width: 75, height: 20)
                             .foregroundColor(ColorManager .grey1)
                             .font(.system(size: 25))
                             .background(Color.purple)
                             .cornerRadius(5)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         
-                        Text("Remove Me")
+                        Text("Delete Room")
                             .foregroundColor(Color.white)
-                            .font(.system(size: 12, weight: .light))
+                            .font(.system(size: 10, weight: .light))
                             .multilineTextAlignment(.center)
                             .onTapGesture(perform: leaveChatGroup)
-                        
                     }
                     
-                    Spacer ()
-                        .frame(width: 10)
+                    
+                    
+//                    NavigationLink(destination: ChangeChatBackgroundView(user: user),
+                   
+                    NavigationLink(destination: RR8(),
+                        label: {
+                        Text("Customize Background")
+                            .fontWeight(.regular)
+                            .frame(width: 120, height: 25)
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 10))
+                            .background(Color.orange)
+                            .cornerRadius(5)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                    })
+               
                     
                     ZStack {
                         
                         Text("")
                             .fontWeight(.light)
-                            .frame(width: 200, height: 20)
+                            .frame(width: 160, height: 20)
                             .foregroundColor(ColorManager .grey1)
                             .font(.system(size: 25))
                             .background(Color.purple)
                             .cornerRadius(5)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         
-                        Text("tap 'camera' icon to view image")
+                        Text("tap 'camera' icon (see image)")
                             .foregroundColor(Color.white)
-                            .font(.system(size: 12, weight: .light))
+                            .font(.system(size: 10, weight: .light))
                             .multilineTextAlignment(.center)
                     }
                     

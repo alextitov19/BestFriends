@@ -81,7 +81,6 @@ struct MyRoomView: View {
                             .foregroundColor(ColorManager .grey1)
                             .font(.system(size: 27))
                             .background(Color.green)
-//                            .opacity(0.7)
                             .cornerRadius(10)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                     })
