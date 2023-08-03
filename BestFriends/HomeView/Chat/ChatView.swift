@@ -80,7 +80,7 @@ struct ChatView: View {
                         .foregroundColor(.white)
                         .font(.system(size: 20))
                         .background(Color .black)
-                        .cornerRadius(15)
+                        .cornerRadius(10)
                         .scaledToFill()
                         .onTapGesture(perform: {
                             sessionManager.showHome()
@@ -93,10 +93,10 @@ struct ChatView: View {
                         Text("")
                             .fontWeight(.light)
                             .frame(width: 250, height: 40)
-                            .foregroundColor(ColorManager .grey1)
-                            .font(.system(size: 25))
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 20))
                             .background(ColorManager .grey3)
-                            .cornerRadius(15)
+                            .cornerRadius(10)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         
                         
@@ -120,7 +120,7 @@ struct ChatView: View {
                                           .foregroundColor(ColorManager .grey1)
                                           .font(.system(size: 25))
                                           .background(Color.orange)
-                                          .cornerRadius(15)
+                                          .cornerRadius(10)
                                           .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                       
                                       Image("lock-alt")
@@ -188,7 +188,7 @@ struct ChatView: View {
                             .foregroundColor(ColorManager .grey1)
                             .font(.system(size: 25))
                             .background(Color.purple)
-                            .cornerRadius(15)
+                            .cornerRadius(5)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         
                         Text("Remove Me")
@@ -206,14 +206,14 @@ struct ChatView: View {
                         
                         Text("")
                             .fontWeight(.light)
-                            .frame(width: 150, height: 20)
+                            .frame(width: 200, height: 20)
                             .foregroundColor(ColorManager .grey1)
                             .font(.system(size: 25))
                             .background(Color.purple)
-                            .cornerRadius(15)
+                            .cornerRadius(5)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         
-                        Text("tap 'camera' icon to view")
+                        Text("tap 'camera' icon to view image")
                             .foregroundColor(Color.white)
                             .font(.system(size: 12, weight: .light))
                             .multilineTextAlignment(.center)
