@@ -92,7 +92,7 @@ struct ChatView: View {
                         
                         Text("")
                             .fontWeight(.light)
-                            .frame(width: 200, height: 40)
+                            .frame(width: 250, height: 40)
                             .foregroundColor(ColorManager .grey1)
                             .font(.system(size: 25))
                             .background(ColorManager .grey3)
@@ -153,28 +153,73 @@ struct ChatView: View {
                                   
                                   Spacer ()
                                       .frame(width: 10)
+                    
+                
                                   
-                                  ZStack {
-                                      
-                                      Text("")
-                                          .fontWeight(.light)
-                                          .frame(width: 60, height: 40)
-                                          .foregroundColor(ColorManager .grey1)
-                                          .font(.system(size: 25))
-                                          .background(Color.purple)
-                                          .cornerRadius(15)
-                                          .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                      
-                                      Text("Remove \nMe")
-                                          .foregroundColor(Color.white)
-                                          .font(.system(size: 12, weight: .light))
-                                          .multilineTextAlignment(.center)
-                                          .onTapGesture(perform: leaveChatGroup)
-                                      
+                        ZStack {
+                            
+//                            Text("")
+//                                .fontWeight(.light)
+//                                .frame(width: 60, height: 40)
+//                                .foregroundColor(ColorManager .grey1)
+//                                .font(.system(size: 25))
+//                                .background(Color.purple)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//
+//                            Text("Remove \nMe")
+//                                .foregroundColor(Color.white)
+//                                .font(.system(size: 12, weight: .light))
+//                                .multilineTextAlignment(.center)
+//                                .onTapGesture(perform: leaveChatGroup)
+//
+//
+                        
                                   }
+              
+                    
                               }
-                              
-             
+                
+                HStack {
+                    ZStack {
+                        Text("")
+                            .fontWeight(.light)
+                            .frame(width: 100, height: 20)
+                            .foregroundColor(ColorManager .grey1)
+                            .font(.system(size: 25))
+                            .background(Color.purple)
+                            .cornerRadius(15)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                        
+                        Text("Remove Me")
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 12, weight: .light))
+                            .multilineTextAlignment(.center)
+                            .onTapGesture(perform: leaveChatGroup)
+                        
+                    }
+                    
+                    Spacer ()
+                        .frame(width: 10)
+                    
+                    ZStack {
+                        
+                        Text("")
+                            .fontWeight(.light)
+                            .frame(width: 150, height: 20)
+                            .foregroundColor(ColorManager .grey1)
+                            .font(.system(size: 25))
+                            .background(Color.purple)
+                            .cornerRadius(15)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                        
+                        Text("tap 'camera' icon to view")
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 12, weight: .light))
+                            .multilineTextAlignment(.center)
+                    }
+                    
+                }
                 
                 
                 // MARK: Main scroll view

@@ -526,9 +526,9 @@ struct MyRoomView: View {
                                         
                                         NavigationLink( destination: JournalsView(friends: friends),
                                                         label: {
-                                            Text("Boyfirend \nGirfriend")
+                                            Text("Catch \nmy Breathe")
                                                 .fontWeight(.regular)
-                                                .frame(width: 120, height: 50)
+                                                .frame(width: 120, height: 55)
                                                 .foregroundColor(ColorManager .purple5)
                                                 .font(.system(size: 15))
 //                                                .background(ColorManager .purple1)
@@ -551,9 +551,9 @@ struct MyRoomView: View {
 
                         NavigationLink( destination: EmptyView(),
                             label: {
-                                Text("Celebrity")
+                                Text("Boyfriend \nGirlfriend")
                                 .fontWeight(.regular)
-                                .frame(width: 120, height: 35)
+                                .frame(width: 120, height: 55)
                                 .foregroundColor(ColorManager .grey4)
                                 .font(.system(size: 15))
                     
