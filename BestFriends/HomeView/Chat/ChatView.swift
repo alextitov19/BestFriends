@@ -78,7 +78,7 @@ struct ChatView: View {
                     Image("home-alt2")
                         .frame(width: 40, height: 40)
                         .foregroundColor(.white)
-                        .font(.system(size: 20))
+                        .font(.system(size: 25))
                         .background(Color .black)
                         .cornerRadius(10)
                         .scaledToFill()
@@ -94,7 +94,7 @@ struct ChatView: View {
                             .fontWeight(.light)
                             .frame(width: 250, height: 40)
                             .foregroundColor(Color.white)
-                            .font(.system(size: 20))
+                            .font(.system(size: 5))
                             .background(ColorManager .grey3)
                             .cornerRadius(10)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
@@ -103,6 +103,7 @@ struct ChatView: View {
                         Text(group.name)
                             .task {
                                 await listenForMessages()
+                                
                             }
                     }
                     
@@ -118,7 +119,7 @@ struct ChatView: View {
                                           .fontWeight(.light)
                                           .frame(width: 40, height: 40)
                                           .foregroundColor(ColorManager .grey1)
-                                          .font(.system(size: 25))
+                                          .font(.system(size: 20))
                                           .background(Color.orange)
                                           .cornerRadius(10)
                                           .shadow(color: Color.white, radius: 2, x: 0, y: 2)
