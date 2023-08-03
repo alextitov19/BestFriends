@@ -158,6 +158,19 @@ struct ChatView: View {
                 
                                   
                         ZStack {
+//
+//
+//                            NavigationLink(
+//                                destination:  RR8(),
+//                                label: {
+//
+//                                    Image(systemName: "info.circle")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 37, height: 37)
+//                                        .opacity(0.9)
+//                                        .foregroundColor(.white)
+//                                })
                             
 //                            Text("")
 //                                .fontWeight(.light)
@@ -187,14 +200,14 @@ struct ChatView: View {
                         
                         Text("")
                             .fontWeight(.light)
-                            .frame(width: 75, height: 20)
+                            .frame(width: 50, height: 27)
                             .foregroundColor(ColorManager .grey1)
                             .font(.system(size: 25))
                             .background(Color.purple)
                             .cornerRadius(5)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         
-                        Text("Delete Room")
+                        Text("Delete \nRoom")
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .multilineTextAlignment(.center)
@@ -207,12 +220,12 @@ struct ChatView: View {
                    
                     NavigationLink(destination: RR8(),
                         label: {
-                        Text("Customize Background")
+                        Text("Customize Background \nin Settings")
                             .fontWeight(.regular)
-                            .frame(width: 120, height: 25)
+                            .frame(width: 120, height: 27)
                             .foregroundColor(Color.white)
-                            .font(.system(size: 10))
-                            .background(Color.orange)
+                            .font(.system(size: 9))
+                            .background(Color.purple)
                             .cornerRadius(5)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                     })
@@ -222,14 +235,14 @@ struct ChatView: View {
                         
                         Text("")
                             .fontWeight(.light)
-                            .frame(width: 160, height: 20)
+                            .frame(width: 100, height: 27)
                             .foregroundColor(ColorManager .grey1)
                             .font(.system(size: 25))
                             .background(Color.purple)
                             .cornerRadius(5)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         
-                        Text("tap 'camera' icon (see image)")
+                        Text("to view images \ntap 'camera' icon")
                             .foregroundColor(Color.white)
                             .font(.system(size: 10, weight: .light))
                             .multilineTextAlignment(.center)
