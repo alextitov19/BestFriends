@@ -93,7 +93,7 @@ struct FH2: View {
                             .multilineTextAlignment(.center)
                         
                         
-                        Text("helps with mental health!")
+                        Text("helps improve mental health!")
                             .font(.system(size: 30))
                             .foregroundColor(Color.white)
                             .fontWeight(.regular)
