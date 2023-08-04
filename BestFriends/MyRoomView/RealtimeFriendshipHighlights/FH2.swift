@@ -48,12 +48,22 @@ struct FH2: View {
  
 
             VStack {
-
-                Text("A game changing app, \na social media app \nthat helps with mental health!")
-                    .font(.system(size: 30))
+                
+                Text("A")
+                    .font(.system(size: 35))
                     .foregroundColor(Color.white)
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
+                
+
+                Text("game changing app")
+                    .font(.system(size: 35))
+                    .foregroundColor(Color.white)
+                    .fontWeight(.regular)
+                    .multilineTextAlignment(.center)
+                
+                
+             
                 
                 ZStack {
                     
@@ -72,16 +82,32 @@ struct FH2: View {
                         Spacer()
                             .frame(height: 30)
                         
+                        Text("a social media app that")
+                            .font(.system(size: 30))
+                            .foregroundColor(Color.white)
+                            .fontWeight(.regular)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        Text("helps with mental health!")
+                            .font(.system(size: 30))
+                            .foregroundColor(Color.white)
+                            .fontWeight(.regular)
+                            .multilineTextAlignment(.center)
+                        
+                        Spacer()
+                            .frame(height: 30)
+                        
                         Text("Now, you can let the outside of you")
                                                     .font(.system(size: 22))
-//                                                        .italic()
+                                                       .italic()
                                                     .foregroundColor(ColorManager.grey1)
                                                     .fontWeight(.light)
                                                     .multilineTextAlignment(.center)
                                                 
                                                 Text("match the inside of you")
                                                     .font(.system(size: 22))
-//                                                        .italic()
+                                                        .italic()
                                                     .foregroundColor(ColorManager.grey1)
                                                     .fontWeight(.light)
                                                     .multilineTextAlignment(.center)
@@ -89,7 +115,7 @@ struct FH2: View {
                                                 
                                                 Text("on social media")
                                                     .font(.system(size: 22))
-//                                                        .italic()
+                                                        .italic()
                                                     .foregroundColor(ColorManager.grey1)
                                                     .fontWeight(.light)
                                                     .multilineTextAlignment(.center)

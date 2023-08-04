@@ -59,11 +59,11 @@ struct RR6: View {
                 
                 VStack {
 
-                    Text("Exhaling")
-                        .font(.system(size: 45))
-                        .foregroundColor(Color.white)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
+//                    Text("Exhaling")
+//                        .font(.system(size: 45))
+//                        .foregroundColor(Color.white)
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
                     
                     ZStack {
                         
