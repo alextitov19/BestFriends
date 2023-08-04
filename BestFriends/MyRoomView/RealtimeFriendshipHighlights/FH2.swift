@@ -49,20 +49,24 @@ struct FH2: View {
 
             VStack {
                 
-                Text("A")
+                Text("a")
                     .font(.system(size: 35))
                     .foregroundColor(Color.white)
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                 
 
-                Text("game changing app")
+                Text("game changing")
                     .font(.system(size: 35))
                     .foregroundColor(Color.white)
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                 
-                
+                Text("app")
+                    .font(.system(size: 35))
+                    .foregroundColor(Color.white)
+                    .fontWeight(.regular)
+                    .multilineTextAlignment(.center)
              
                 
                 ZStack {
