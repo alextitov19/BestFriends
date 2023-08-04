@@ -22,7 +22,6 @@ struct NotificationsView: View {
     
     
     @State private var shareColor = ColorManager.grey3
-    
     @State private var colorChangeTap: String = ""
     @State private var shareTapped: Bool = false
     @State private var colors: [Color] = [Color.cyan]
@@ -149,7 +148,7 @@ struct NotificationsView: View {
                         EmptyView()
                     })
                     
-                  
+                    
                     NavigationLink(destination: CH6(user: user, friends: friends), isActive: $heartsActive, label: {
                         EmptyView()
                     })
@@ -159,7 +158,7 @@ struct NotificationsView: View {
                     })
                     
                 }
-                    
+                
                 NavigationLink(destination: VirtualHug(user: user, friends: friends), isActive: $thanksHugActive, label: {
                     EmptyView()
                 })
@@ -179,93 +178,96 @@ struct NotificationsView: View {
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $vibeActive, label: {
                     EmptyView()
                 })
-                    
+                
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $needTalkActive, label: {
                     EmptyView()
                 })
                 
                 
-                
-            
-                
-                
+              
                 
                 Color.cyan
+                
+//                    .background(Color(.cyan) : ColorManager .grey2)
+//                    .onTapGesture(perform: tapped)
+                
+                VStack {
                     
-                    
-                    
-                    VStack {
-                        
-                        Text(ian.text)
-                            .font(.system(size: 16, weight: .regular))
-                            .padding(.horizontal, 5)
-                        
-                        
-                        
-                        HStack {
-                            Text(ian.sender)
-                                .font(.system(size: 12, weight: .light))
-                            
-                            Spacer()
-                            
-                            Text(t)
-                                .font(.system(size: 12, weight: .light))
-                        }
+                    Text(ian.text)
+                        .font(.system(size: 16, weight: .regular))
                         .padding(.horizontal, 5)
+                    
+                    
+                    
+                    HStack {
+                        Text(ian.sender)
+                            .font(.system(size: 12, weight: .light))
+                        
+                        Spacer()
+                        
+                        Text(t)
+                            .font(.system(size: 12, weight: .light))
                     }
+                    .padding(.horizontal, 5)
                 }
-                .frame(height: 60)
-                .cornerRadius(15)
-                .onTapGesture(perform: tapped)
+            }
+            .frame(height: 60)
+            .cornerRadius(15)
+            .onTapGesture(perform: tapped)
+            
+        }
+        
+        
+        
+        private func tapped() {
+            switch ian.text {
+                
+            case "What are you doing? Send PhotoPoP!":
+                photoPopActive = true
+                
+            case "Just sent you a warming Hug!":
+                hugActive = true
+                
+            case "Jump up and catch your fresh kisses!":
+                kissesActive = true
+                
+            case "Is thinking about you and sent you a Heart!":
+                heartsActive = true
+                
+            case "Ahhh! Thanks for the Kisses!":
+                thanksKissesActive = true
+                
+            case "Ahhh! Thanks for the Hug - it was just what I needed!":
+                thanksHugActive = true
+                
+            case "Said thank you for the Heart!":
+                thanksHeartActive = true
+                
+            case "Just sent you a message in Chat - please look at it":
+                fixFightActive = true
+                
+            case "Is redeaming ONE 'TalkCoupon'":
+                talkCouponActive = true
+                
+            case "'Vibe' just changed! Shoot'em a CareHeart or PhotoPOP":
+                vibeActive = true
+                
+            case "Needed to Talk!":
+                needTalkActive = true
+                
+                
+                
+            default:
+                return
+                
                 
             }
+        }
+        
+//        private func defaultMessageButtonTapped(defaultMessage: String) {
+//            self.colorChangeTap = defaultMessage
             
-            
-            
-            private func tapped() {
-                switch ian.text {
-                    
-                case "What are you doing? Send PhotoPoP!":
-                    photoPopActive = true
-                    
-                case "Just sent you a warming Hug!":
-                    hugActive = true
-                    
-                case "Jump up and catch your fresh kisses!":
-                    kissesActive = true
-                    
-                case "Is thinking about you and sent you a Heart!":
-                    heartsActive = true
-                    
-                case "Ahhh! Thanks for the Kisses!":
-                    thanksKissesActive = true
-                    
-                case "Ahhh! Thanks for the Hug - it was just what I needed!":
-                    thanksHugActive = true
-                    
-                case "Said thank you for the Heart!":
-                    thanksHeartActive = true
-                    
-                case "Just sent you a message in Chat - please look at it":
-                    fixFightActive = true
-                    
-                case "Is redeaming ONE 'TalkCoupon'":
-                    talkCouponActive = true
-                    
-                case "'Vibe' just changed! Shoot'em a CareHeart or PhotoPOP":
-                    vibeActive = true
-                    
-                case "Needed to Talk!":
-                    needTalkActive = true
-                   
-                  
-                    
-                default:
-                    return
-                    
-                    
-                }
-            }
         }
     }
-
+    
+//}
