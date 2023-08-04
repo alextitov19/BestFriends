@@ -81,32 +81,56 @@ struct RR6: View {
                             
                             Spacer()
                                 .frame(height: 30)
+                            Text("BestFriends is about feeling")
+                                .font(.system(size: 25))
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
                             
-                            Text("Now, you can let the outside of you")
-                                                        .font(.system(size: 22))
-//                                                        .italic()
-                                                        .foregroundColor(ColorManager.grey1)
-                                                        .fontWeight(.light)
-                                                        .multilineTextAlignment(.center)
-                                                    
-                                                    Text("match the inside of you")
-                                                        .font(.system(size: 22))
-//                                                        .italic()
-                                                        .foregroundColor(ColorManager.grey1)
-                                                        .fontWeight(.light)
-                                                        .multilineTextAlignment(.center)
-                                                    
-                                                    
-                                                    Text("on social media")
-                                                        .font(.system(size: 22))
-//                                                        .italic()
-                                                        .foregroundColor(ColorManager.grey1)
-                                                        .fontWeight(.light)
-                                                        .multilineTextAlignment(.center)
                             
+                            Text("loved by your FIVE closest friends")
+                                .font(.system(size: 25))
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
                             
                             Spacer()
                                 .frame(height: 20)
+                            
+                            
+                            NavigationLink(
+                                
+                                destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
+                                label: {
+                                    Text("+ Friends")
+                                        .fontWeight(.regular)
+                                        .frame(width: 100, height: 33)
+                                        .foregroundColor(Color.white)
+                                        .font(.system(size: 13))
+                                        .background(Color.orange)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                    
+                                })
+                            
+                            Spacer()
+                                .frame(height: 20)
+                            
+                            Text("A friend may well be reckoned \nthe masterpiece of nature.")
+                                .font(.system(size: 17))
+                                .italic()
+                                .foregroundColor(Color.white)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
+                            
+                            Text("- - Emerson")
+                                .font(.system(size: 13))
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
+                            
                             
                             NavigationLink(
                                 destination: WhyFiveFriends(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
