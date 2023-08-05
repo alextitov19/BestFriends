@@ -122,7 +122,7 @@ struct CH18: View {
                             NavigationLink(
                                 destination: EmptyView(),
                                 label: {
-                                    Text("Leve l")
+                                    Text("Level 2")
                                         .fontWeight(.light)
                                         .frame(width: 100, height: 50)
                                         .foregroundColor(ColorManager .grey4)
@@ -137,7 +137,7 @@ struct CH18: View {
         
                         }
                         
-                        Text("comming soon")
+                        Text("details comming soon")
                             .font(.system(size: 18))
                             .italic()
                             .foregroundColor(Color.white)
@@ -161,7 +161,7 @@ struct CH18: View {
                             NavigationLink(
                                 destination: EmptyView(),
                                 label: {
-                                    Text("Level 2")
+                                    Text("Level 3")
                                         .fontWeight(.light)
                                         .frame(width: 100, height: 50)
                                         .foregroundColor(ColorManager .grey4)
@@ -175,7 +175,7 @@ struct CH18: View {
                             
                         }
                         
-                        Text("comming soon")
+                        Text("details comming soon")
                             .font(.system(size: 18))
                             .italic()
                             .foregroundColor(Color.white)
