@@ -550,7 +550,7 @@ struct MyRoomView: View {
 
                         NavigationLink( destination: EmptyView(),
                             label: {
-                                Text("Boyfriend \nGirlfriend")
+                                Text("Beta Test")
                                 .fontWeight(.regular)
                                 .frame(width: 120, height: 55)
                                 .foregroundColor(ColorManager .grey4)

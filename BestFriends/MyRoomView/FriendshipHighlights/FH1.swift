@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FH1: View {
     @EnvironmentObject var sessionManager: SessionManager
+    
     let user: User
     let friends: [User]
     let friendAtmospheres: [Atmosphere]

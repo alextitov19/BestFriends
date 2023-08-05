@@ -32,37 +32,19 @@ struct CH3: View {
         
         ZStack {
             
-            
+            ColorManager.grey4
+                .opacity(0.99)
+                .ignoresSafeArea()
+     
+
             Image("CareHeartBalloon 1")
                 .ignoresSafeArea()
                 .scaledToFit()
-                .opacity(0.4)
+                .opacity(0.6)
             
-            //            Color.black
-            //                .ignoresSafeArea()
-            //
-            //            AdPlayerView(name: "Galaxy2")
-            //                .ignoresSafeArea()
-            //                .blendMode(.screen)
-            //                .opacity(0.9)
-            
-            
-            //            if shareTapped {
-            //
-            //                ColorManager.grey4
-            //                    .opacity(0.8)
-            //                    .ignoresSafeArea()
-            //
-            //                AdPlayerView(name: "dramaLights")
-            //                    .ignoresSafeArea()
-            //                    .blendMode(.screen)
-            //
-            //            } else {
-            //
-            //                Image("FHBackground")
-            //                    .resizable()
-            //                    .scaledToFill()
-            //                    .edgesIgnoringSafeArea(.all)
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
             
             //                ScrollView {
             
@@ -76,7 +58,7 @@ struct CH3: View {
                 
                 Text("CareHearts")
                     .font(.system(size: 45))
-                    .foregroundColor(ColorManager .grey1)
+                    .foregroundColor(Color.white)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
@@ -85,7 +67,7 @@ struct CH3: View {
                 
                 Text("perfect for any occasion")
                     .font(.system(size: 27))
-                    .foregroundColor(ColorManager .grey1)
+                    .foregroundColor(Color.white)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
@@ -93,7 +75,7 @@ struct CH3: View {
                 
                 Text("showing you care!")
                     .font(.system(size: 27))
-                    .foregroundColor(ColorManager .grey1)
+                    .foregroundColor(Color.white)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
@@ -123,7 +105,7 @@ struct CH3: View {
                         
                         Text("Especially powerful when sending")
                             .font(.system(size: 25))
-                            .foregroundColor(ColorManager .grey1)
+                            .foregroundColor(Color.white)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                        
@@ -132,7 +114,7 @@ struct CH3: View {
                         
                         Text("Emotional Support")
                             .font(.system(size: 28))
-                            .foregroundColor(ColorManager .grey1)
+                            .foregroundColor(Color.white)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
@@ -142,13 +124,13 @@ struct CH3: View {
                         
                         Text("to friends struggling with a")
                             .font(.system(size: 25))
-                            .foregroundColor(ColorManager .grey1)
+                            .foregroundColor(Color.white)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
                         Text("difficult day")
                             .font(.system(size: 25))
-                            .foregroundColor(ColorManager .grey1)
+                            .foregroundColor(Color.white)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         

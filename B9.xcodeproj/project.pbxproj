@@ -707,7 +707,6 @@
 				2DBF3EEE2A61AD1C00CB1CAD /* RR8.swift */,
 				2DBF3EF02A61AD2800CB1CAD /* RR9.swift */,
 				2DBF3EF22A61AD3100CB1CAD /* RR10.swift */,
-				2D7127C42A658BE900E14744 /* CH16.swift */,
 			);
 			path = RR;
 			sourceTree = "<group>";
@@ -717,6 +716,7 @@
 			children = (
 				2DFB03052A57220C00669948 /* FH1.swift */,
 				2DBF3EE22A61ACE100CB1CAD /* RR2.swift */,
+				2D7127C42A658BE900E14744 /* CH16.swift */,
 			);
 			path = FriendshipHighlights;
 			sourceTree = "<group>";
@@ -891,10 +891,10 @@
 		7A8F3D7C2A32BC5D00BC2CF4 /* MyRoomView */ = {
 			isa = PBXGroup;
 			children = (
+				2DBF3EDF2A61ACC400CB1CAD /* RR */,
 				2DFB03192A5D2FD200669948 /* ReceivedCareHearts */,
 				CF0EB7D82A74E750000B2A1F /* Drama Central 2 */,
 				CF0EB7D72A736808000B2A1F /* FriendshipRewards */,
-				2DBF3EDF2A61ACC400CB1CAD /* RR */,
 				2DFB032E2A5D333F00669948 /* RealtimeFriendshipHighlights */,
 				2DFB02FE2A57217100669948 /* FriendshipHighlights */,
 				CF2EE6F729516C8A00B1B16D /* InfoHowChatWorks.swift */,
