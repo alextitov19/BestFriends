@@ -40,8 +40,8 @@ struct RR8: View {
             
             Image("Tswift2")
                 .ignoresSafeArea()
-                .scaledToFit()
-                .opacity(0.6)
+//                .scaledToFit()
+                .opacity(0.7)
             
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
@@ -51,11 +51,7 @@ struct RR8: View {
             
             VStack {
                 
-                //                    Text("Emotional Support")
-                //                        .font(.system(size: 35))
-                //                        .foregroundColor(ColorManager .grey1)
-                //                        .fontWeight(.thin)
-                //                        .multilineTextAlignment(.center)
+           
                 
                 Text("My Crushes")
                     .font(.system(size: 45))
@@ -66,44 +62,33 @@ struct RR8: View {
                 Spacer()
                     .frame(height: 10)
                 
-                Text("Help us build")
-                    .font(.system(size: 27))
+                Text("Help us build what you want!")
+                    .font(.system(size: 25))
                     .foregroundColor(Color.white)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
-                Text("a unique Crush platform")
-                    .font(.system(size: 27))
-                    .foregroundColor(Color.white)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
+       
                 
       
                 
                 ZStack {
                     
-                    Spacer()
-                        .frame(height: 70)
-                    
-                    Image(systemName: "circle.fill")
-                        .resizable()
-                        .foregroundColor(Color.purple)
-                        .frame(width: 375, height: 375)
-                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.7)
+               
+//
+//                    Image(systemName: "heart.fill")
+//                        .resizable()
+//                        .foregroundColor(Color.pink)
+//                        .frame(width: 250, height: 200)
+//                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+//                        .opacity(0.4)
                     VStack {
                         
                         
                         Spacer()
-                            .frame(height: 40)
+                            .frame(height: 150)
                         
-                        Text("Be part of the fun!")
-                            .font(.system(size: 25))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
-                     
+               
                         VStack {
 
                             
@@ -113,55 +98,32 @@ struct RR8: View {
             .frame(width: 200, height: 40)
             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
             .font(.system(size: 25))
-            .background(ColorManager.pmbc_green)
+            .background(Color.cyan)
             .cornerRadius(15)
             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                               
                             }
                         
-    
-                            
-                        }
-                            
-                      
-                            Spacer()
-                                .frame(height: 40)
-                            
-                            Text("We'll build")
-                                .font(.system(size: 30))
+                            Text("Be part of the fun!")
+                                .font(.system(size: 20))
                                 .italic()
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                             
+                         
                             
+                        }
                             
-                            Text("what you WANT!")
-                            .italic()
-                                .font(.system(size: 30))
-                                .foregroundColor(Color.white)
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                            
-                            
-                            
+                      
+                  
                             Spacer()
-                                .frame(height: 50)
-                            
-                            
-                            
+                                .frame(height: 400)
+                         
                         }
                         
                     }
-                    VStack {
-                        
-        
-                        
-                        
-                        Spacer()
-                            .frame(height: 40)
-                        
-                    }
+                
                     
                 }
                 
