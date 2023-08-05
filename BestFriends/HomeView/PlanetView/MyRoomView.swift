@@ -523,20 +523,15 @@ struct MyRoomView: View {
                                    
                                     VStack {
                                         
-                                        NavigationLink( destination: JournalsView(friends: friends),
-                                                        label: {
-                                            Text("Catch \nmy Breathe")
+                                        NavigationLink( destination: RR8(),
+                                            label: {
+                                                Text("What do \nyou want?")
                                                 .fontWeight(.regular)
                                                 .frame(width: 120, height: 55)
-                                                .foregroundColor(ColorManager .purple5)
+                                                .foregroundColor(ColorManager .grey4)
                                                 .font(.system(size: 15))
-//                                                .background(ColorManager .purple1)
-//                                                .glow(color: ColorManager.purple3, radius: 1)
-//                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-//                                                .opacity(0.9)
-//                                                .cornerRadius(7)
-//                                                .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-                                        })
+                                    
+                                            })
                                         
                                         Spacer()
                                             .frame(height: 10)
@@ -547,16 +542,23 @@ struct MyRoomView: View {
                                         .frame(width: 37)
                                     
                     VStack {
-
-                        NavigationLink( destination: EmptyView(),
-                            label: {
-                                Text("Beta Test")
+                        
+                        NavigationLink( destination: JournalsView(friends: friends),
+                                        label: {
+                            Text("Catch \nmy Breathe")
                                 .fontWeight(.regular)
                                 .frame(width: 120, height: 55)
-                                .foregroundColor(ColorManager .grey4)
+                                .foregroundColor(ColorManager .purple5)
                                 .font(.system(size: 15))
-                    
-                            })
+//                                                .background(ColorManager .purple1)
+//                                                .glow(color: ColorManager.purple3, radius: 1)
+//                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                                .opacity(0.9)
+//                                                .cornerRadius(7)
+//                                                .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                        })
+
+                  
                                         
                                         }
                                     }

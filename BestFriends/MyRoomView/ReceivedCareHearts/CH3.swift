@@ -59,7 +59,7 @@ struct CH3: View {
                 Text("CareHearts")
                     .font(.system(size: 45))
                     .foregroundColor(Color.white)
-                    .fontWeight(.thin)
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
@@ -68,7 +68,7 @@ struct CH3: View {
                 Text("perfect for any occasion")
                     .font(.system(size: 27))
                     .foregroundColor(Color.white)
-                    .fontWeight(.thin)
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
           
@@ -76,7 +76,7 @@ struct CH3: View {
                 Text("showing you care!")
                     .font(.system(size: 27))
                     .foregroundColor(Color.white)
-                    .fontWeight(.thin)
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
                 ZStack {
@@ -106,7 +106,7 @@ struct CH3: View {
                         Text("Especially powerful when sending")
                             .font(.system(size: 25))
                             .foregroundColor(Color.white)
-                            .fontWeight(.thin)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
                        
                         Spacer()
@@ -115,7 +115,7 @@ struct CH3: View {
                         Text("Emotional Support")
                             .font(.system(size: 28))
                             .foregroundColor(Color.white)
-                            .fontWeight(.thin)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
                         Spacer()
@@ -125,13 +125,13 @@ struct CH3: View {
                         Text("to friends struggling with a")
                             .font(.system(size: 25))
                             .foregroundColor(Color.white)
-                            .fontWeight(.thin)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
                         Text("difficult day")
                             .font(.system(size: 25))
                             .foregroundColor(Color.white)
-                            .fontWeight(.thin)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
                         Spacer()
