@@ -149,7 +149,7 @@ private struct MyChatMessage: View {
                     .frame(width: 50, alignment: .leading)
                     .foregroundColor(Color.white)
                     .font(.system(size: 11).weight(.light))
-                    .background(ColorManager.grey2)
+                    .background(ColorManager.grey4)
                     .cornerRadius(5)
                     .opacity(0.95)
                     .offset(x: 20, y: 5)
