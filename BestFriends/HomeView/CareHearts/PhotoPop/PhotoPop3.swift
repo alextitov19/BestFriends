@@ -99,7 +99,7 @@ struct PhotoPop3: View {
                             .opacity(0.70)
 
                         
-                        Text("Alert friend with")
+                        Text("Alert friend(s) with")
                             .font(.system(size: 30, weight: .light))
                             .foregroundColor(Color.white)
                     
