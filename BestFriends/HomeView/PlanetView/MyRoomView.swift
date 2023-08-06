@@ -516,8 +516,21 @@ struct MyRoomView: View {
                         VStack {
                             
                             VStack {
+                                
+                            
+                                
+                                Text("Preview NEW Features")
+                                    .fontWeight(.bold)
+                                    .frame(width: 280, height: 30)
+                                    .foregroundColor(Color.black)
+                                    .font(.system(size: 16))
+                                    .background(Color.white)
+                                    .cornerRadius(10)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                
+                                
                                 Spacer()
-                                    .frame(height: 60)
+                                    .frame(height: 10)
                                 
                                 HStack {
                                    
@@ -525,17 +538,14 @@ struct MyRoomView: View {
                                         
                                         NavigationLink( destination: RR8(),
                                             label: {
-                                                Text("What do \nyou want?")
+                                                Text("My Crush")
                                                 .fontWeight(.regular)
                                                 .frame(width: 120, height: 55)
                                                 .foregroundColor(ColorManager .grey4)
                                                 .font(.system(size: 15))
                                     
                                             })
-                                        
-                                        Spacer()
-                                            .frame(height: 10)
-
+                                    
                                     }
                                    
                                     Spacer()
@@ -545,7 +555,7 @@ struct MyRoomView: View {
                         
                         NavigationLink( destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                         label: {
-                            Text("My Precious \nDreams")
+                            Text("My Dreams")
                                 .fontWeight(.regular)
                                 .frame(width: 120, height: 55)
                                 .foregroundColor(ColorManager .purple5)
