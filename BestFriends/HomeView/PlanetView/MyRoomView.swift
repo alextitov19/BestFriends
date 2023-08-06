@@ -23,35 +23,35 @@ struct MyRoomView: View {
 
 
             
-            Color.black
+//            Color.black
+//                .ignoresSafeArea()
+//                .scaledToFill()
+//                .opacity(0.8)
+//
+//
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.7)
+           
+            
+            ColorManager .purple4
+                .opacity(0.6)
                 .ignoresSafeArea()
+            
+            
+            Image("FHBackground")
+                .resizable()
                 .scaledToFill()
-                .opacity(0.8)
+                .edgesIgnoringSafeArea(.all)
             
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-                .opacity(0.7)
-            
-     
+
             VStack {
+                
+                Spacer()
+                    .frame(height: 20)
+              
                 HStack {
-//
-//                    NavigationLink(
-//
-//                        destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
-//                        label: {
-//                            Text("+ Friends")
-//                                .fontWeight(.regular)
-//                                .frame(width: 100, height: 33)
-//                                .foregroundColor(Color.white)
-//                                .font(.system(size: 13))
-//                                .background(Color.orange)
-//                                .cornerRadius(15)
-//                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//
-//                        })
-             
 
                     
                     NavigationLink(
@@ -197,16 +197,9 @@ struct MyRoomView: View {
                     
             
             VStack {
-                
-                Spacer ()
-                    .frame(width: 20)
-                
-            
+       
                     ZStack {
-                        
-//                        Spacer ()
-//                            .frame(width: 50)
-                          
+
                         NavigationLink(
                             destination:  CH11(),
                             label: {
@@ -516,7 +509,7 @@ struct MyRoomView: View {
     }
                     
                 Spacer()
-                    .frame(height: 25)
+                    .frame(height: 15)
                 
                 
                 
