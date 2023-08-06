@@ -118,7 +118,7 @@ struct CH20: View {
                             
                         })
                     
-                    
+                
 //                    FH1(user: user, friends: friends, friendAtmospheres: friendAtmospheres
                     
                         NavigationLink(
