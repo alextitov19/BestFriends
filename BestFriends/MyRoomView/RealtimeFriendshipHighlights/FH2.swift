@@ -49,22 +49,36 @@ struct FH2: View {
 
             VStack {
                 
-                Text("it's about")
-                    .font(.system(size: 35))
+                Text("introducing")
+                    .font(.system(size: 15))
+                    .italic()
                     .foregroundColor(Color.white)
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                 
-
-                Text("your")
-                    .font(.system(size: 35))
+                Text("BestFriends")
+                    .font(.system(size: 15))
+                    .italic()
                     .foregroundColor(Color.white)
+                    .fontWeight(.regular)
+                    .multilineTextAlignment(.center)
+                
+                Text("it's about")
+                    .font(.system(size: 35))
+                    .foregroundColor(ColorManager .grey4)
+                    .fontWeight(.regular)
+                    .multilineTextAlignment(.center)
+                
+
+                Text("you & your")
+                    .font(.system(size: 35))
+                    .foregroundColor(ColorManager .grey4)
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                 
                 Text("friends")
                     .font(.system(size: 35))
-                    .foregroundColor(Color.white)
+                    .foregroundColor(ColorManager .grey4)
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
              
@@ -84,23 +98,8 @@ struct FH2: View {
                         
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 40)
                         
-//                        Text("a social media app that")
-//                            .font(.system(size: 30))
-//                            .foregroundColor(Color.white)
-//                            .fontWeight(.regular)
-//                            .multilineTextAlignment(.center)
-//
-//
-//                        Text("helps improve mental health!")
-//                            .font(.system(size: 30))
-//                            .foregroundColor(Color.white)
-//                            .fontWeight(.regular)
-//                            .multilineTextAlignment(.center)
-                        
-                        Spacer()
-                            .frame(height: 30)
                         
                         Text("Now, you can let the outside of you")
                                                     .font(.system(size: 22))
@@ -130,15 +129,15 @@ struct FH2: View {
                         
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 30)
               
                         Text("a social media app that")
-                            .font(.system(size: 30))
+                            .font(.system(size: 20))
                             .foregroundColor(Color.white)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                    
-                        Text("that feels right!")
+                        Text("feels like a sleep-over!")
                             .font(.system(size: 30))
                             .foregroundColor(Color.white)
                             .fontWeight(.regular)

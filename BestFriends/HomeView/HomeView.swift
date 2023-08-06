@@ -81,21 +81,30 @@ struct HomeView: View {
 //                            Spacer()
 //                                .frame(width: 15)
                             
-                            Image(systemName: "heart")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 40, height: 40)
-                                .foregroundColor(Color.red)
-                               .glow(color: ColorManager.purple4, radius: 3)
-                                .opacity(0.5)
-                                .onTapGesture {
-                                    print("Clicked notification bell")
-                                    presentingIANs.toggle()
-                                }
-
-                            NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
-                            ) { EmptyView() }
-
+                            ZStack {
+                                
+                                
+                                Image(systemName: "bell")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 17, height: 17)
+                                    .foregroundColor(Color.white)
+                                
+                                Image(systemName: "heart")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 40, height: 40)
+                                    .foregroundColor(Color.red)
+                                    .glow(color: ColorManager.purple4, radius: 3)
+                                    .opacity(0.5)
+                                    .onTapGesture {
+                                        print("Clicked notification bell")
+                                        presentingIANs.toggle()
+                                    }
+                                
+                                NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
+                                ) { EmptyView() }
+                            }
                          
                             
 //    Blink Code *******************************************************

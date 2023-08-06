@@ -22,7 +22,6 @@
 
 import Foundation
 import SwiftUI
-
 struct RR6: View {
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -81,14 +80,14 @@ struct RR6: View {
                             
                             Spacer()
                                 .frame(height: 30)
-                            Text("BestFriends is about feeling")
+                            Text("We welcome you")
                                 .font(.system(size: 25))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
                             
-                            Text("loved by your FIVE closest friends")
+                            Text(" and your BFFs")
                                 .font(.system(size: 25))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
@@ -156,7 +155,7 @@ struct RR6: View {
                                
                           
                             NavigationLink(
-                                destination: RR1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                destination: FH9(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                                     Text("->")
                                         .fontWeight(.thin)
