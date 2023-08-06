@@ -76,7 +76,7 @@ struct DreamVaultView: View {
                 
                 
                 NavigationLink(destination: DreamsWeDare2(user: user, friends: friends), label: {
-                    WhoFightingCircle (color: ColorManager.purple3, friendName: "chasing \ndown our \ndreams")
+                    WhoFightingCircle (color: ColorManager.purple3, friendName: "dreams we \ndare but \nwhisper")
                 })
                 .offset(x: showItems ? 50 : 0, y: showItems ? -190: 0)
                 
@@ -104,8 +104,8 @@ struct DreamVaultView: View {
                     .resizable()
                     .foregroundColor(ColorManager .grey4)
                     .frame(width: 90, height: 90)
-                    .opacity(0.90)
-                    .shadow(color: .white, radius: 65, x: 30, y: 50)
+                    .opacity(0.99)
+                    .shadow(color: .white, radius: 100, x: 50, y: 50)
 
                 
                 VStack {
@@ -121,7 +121,7 @@ struct DreamVaultView: View {
                     VStack {
                         
                         
-                        Text("Living your")
+                        Text("Living our")
                             .font(.system(size: 9))
                             .italic()
                             .foregroundColor(ColorManager .grey1)
@@ -171,12 +171,24 @@ struct DreamVaultView: View {
             
             ZStack {
                 
+//                
+//                Image(systemName: "star.fill")
+//                    .resizable()
+//                    .foregroundColor(color)
+//                //                            .foregroundColor(ColorManager .purple2)
+//                    .frame(width: 90, height: 90)
+//                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+//                
+                
+                
                 Rectangle()
                     .frame(width: 90, height: 90)
                     .clipShape(Circle())
                     .foregroundColor(color)
                     .opacity(0.7)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
+                
+                
                 
                 Text(friendName)
                     .fontWeight(.light)
