@@ -187,7 +187,7 @@ struct JournalsView: View {
         var body: some View {
             ZStack {
                 Color.pink
-                Text("Update My Crush")
+                Text("Update my Dream")
                     .foregroundColor(Color.white)
                     .font(.headline)
 
@@ -202,7 +202,7 @@ struct JournalsView: View {
         var body: some View {
             ZStack {
                 Color.pink
-                Text("Update My Crush")
+                Text("Track my Dream")
                     .foregroundColor(Color.white)
                     .font(.headline)
 

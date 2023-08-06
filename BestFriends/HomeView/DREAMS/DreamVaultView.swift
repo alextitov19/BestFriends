@@ -46,13 +46,13 @@ struct DreamVaultView: View {
             //                            })
             //                                .offset(x: showItems ? 150 : 0, y: showItems ? -140: 0)
             //
-            NavigationLink(destination: DreamSteps(), label: { WhoFightingCircle (color: ColorManager.pmbc_green, friendName: "dream \nsteps")
+            NavigationLink(destination: DreamSteps(), label: { WhoFightingCircle (color: ColorManager.pmbc_green, friendName: "Let's \nDo This")
             })
             .offset(x: showItems ? 80 : 0, y: showItems ? 290: 0)
             
             
             NavigationLink(destination: JournalsView(friends: friends), label: {
-                WhoFightingCircle (color: Color .green, friendName: "Let's \nDo This")
+                WhoFightingCircle (color: Color .green, friendName: "Journal \nmy \nDream")
             })
                 .offset(x: showItems ? 0 : 0, y: showItems ? 270: 0)
                                       
