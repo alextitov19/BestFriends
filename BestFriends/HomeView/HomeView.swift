@@ -93,7 +93,7 @@ struct HomeView: View {
                                 Image(systemName: "heart")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 40, height: 40)
+                                    .frame(width: 43, height: 43)
                                     .foregroundColor(Color.red)
                                     .glow(color: ColorManager.purple4, radius: 3)
                                     .opacity(0.5)
