@@ -446,8 +446,14 @@ struct MyRoomView: View {
                                             .frame(width: 25)
                                         
                             VStack {
+                                
+//************************************ When Andy finishes Friendship Highlights ***********
+                                
+//                NavigationLink( destination:  FH1(user: user, friends: friends, friendAtmospheres: friendAtmospheres),
+//                        label: {
+//                            Text("Highlights")
                                     
-                                    NavigationLink( destination:  FH1(user: user, friends: friends, friendAtmospheres: friendAtmospheres),
+                                    NavigationLink( destination:  CH11(),
                                                     label: {
                                         Text("Highlights")
                                             .fontWeight(.regular)
@@ -462,7 +468,7 @@ struct MyRoomView: View {
                                             .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
                                     })
                                            
-                                            
+//************************************ When Andy finishes Friendship Highlights ***********
                                            
                                 Spacer()
                                     .frame(height: 10)

@@ -46,9 +46,9 @@ struct DreamVaultView: View {
             //                            })
             //                                .offset(x: showItems ? 150 : 0, y: showItems ? -140: 0)
             //
-            NavigationLink(destination: DreamSteps(), label: { WhoFightingCircle (color: .orange, friendName: "dream \nsteps")
+            NavigationLink(destination: DreamSteps(), label: { WhoFightingCircle (color: ColorManager.pmbc_green, friendName: "dream \nsteps")
             })
-            .offset(x: showItems ? 0 : 0, y: showItems ? 290: 0)
+            .offset(x: showItems ? 80 : 0, y: showItems ? 290: 0)
             
             //
             //                            NavigationLink(destination: HorizonHomeView(user: user, friends: friends, atmosphere: atmosphere), label: {
@@ -66,7 +66,7 @@ struct DreamVaultView: View {
                 NavigationLink(destination: EverybodyOk(user: user), label: {
                     WhoFightingCircle (color: ColorManager.pmbc_green, friendName: "neuro- \nscience")
                 })
-                .offset(x: showItems ? 0 : 0, y: showItems ? 215: 0)
+                .offset(x: showItems ? -80 : 0, y: showItems ? 290: 0)
                 
                 
                 NavigationLink(destination: AudioCode(), label: {
@@ -171,14 +171,14 @@ struct DreamVaultView: View {
             
             ZStack {
                 
-//                
+//
 //                Image(systemName: "star.fill")
 //                    .resizable()
 //                    .foregroundColor(color)
 //                //                            .foregroundColor(ColorManager .purple2)
 //                    .frame(width: 90, height: 90)
 //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-//                
+//
                 
                 
                 Rectangle()
