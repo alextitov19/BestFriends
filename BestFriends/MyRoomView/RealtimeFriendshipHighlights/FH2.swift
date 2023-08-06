@@ -41,6 +41,10 @@ struct FH2: View {
         
         ZStack {
             
+            ColorManager .purple7
+                .opacity(0.8)
+                .ignoresSafeArea()
+            
             Image("CareHeartBalloon 1")
                 .ignoresSafeArea()
                 .scaledToFit()
@@ -68,20 +72,20 @@ struct FH2: View {
                 
                 Text("it's just for")
                     .font(.system(size: 35))
-                    .foregroundColor(ColorManager .grey4)
+                    .foregroundColor(Color.white)
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                 
 
                 Text("you & your")
                     .font(.system(size: 35))
-                    .foregroundColor(ColorManager .grey4)
+                    .foregroundColor(Color.white)
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                 
                 Text("friends")
                     .font(.system(size: 35))
-                    .foregroundColor(ColorManager .grey4)
+                    .foregroundColor(Color.white)
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
              
