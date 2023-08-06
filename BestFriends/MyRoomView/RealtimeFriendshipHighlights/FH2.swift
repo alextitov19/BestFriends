@@ -57,13 +57,16 @@ struct FH2: View {
                     .multilineTextAlignment(.center)
                 
                 Text("BestFriends")
-                    .font(.system(size: 15))
+                    .font(.system(size: 20))
                     .italic()
                     .foregroundColor(Color.white)
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                 
-                Text("it's about")
+                Spacer()
+                    .frame(height: 15)
+                
+                Text("it's just for")
                     .font(.system(size: 35))
                     .foregroundColor(ColorManager .grey4)
                     .fontWeight(.regular)

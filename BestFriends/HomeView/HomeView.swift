@@ -87,7 +87,7 @@ struct HomeView: View {
                                 Image(systemName: "bell")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 17, height: 17)
+                                    .frame(width: 19, height: 19)
                                     .foregroundColor(Color.white)
                                 
                                 Image(systemName: "heart")
