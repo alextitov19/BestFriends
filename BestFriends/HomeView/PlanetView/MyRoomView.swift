@@ -23,7 +23,7 @@ struct MyRoomView: View {
 
 
             
-            ColorManager .grey3
+            Color.black
                 .ignoresSafeArea()
                 .scaledToFill()
                 .opacity(0.8)
@@ -67,30 +67,47 @@ struct MyRoomView: View {
                         })
                     
                     Spacer ()
-                        .frame(width: 38)
+                        .frame(width: 22)
                     
                     VStack {
                     
-                      
-                        
-                        NavigationLink( destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                    label: {
-                        Text("Start Here")
-                            .fontWeight(.regular)
-                            .frame(width: 130, height: 27)
-                            .foregroundColor(ColorManager .grey1)
-                            .font(.system(size: 27))
-                            .background(Color.green)
-                            .cornerRadius(10)
-                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                    })
                      
-                 
-                    
+                        ZStack {
+                            
+                            HStack {
+                                
+                                ZStack {
+                                    
+                                    NavigationLink( destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                                    label: {
+                                        Text("Start       Here")
+                                            .fontWeight(.light)
+                                            .frame(width: 170, height: 33)
+                                            .foregroundColor(ColorManager .grey1)
+                                            .font(.system(size: 27))
+                                            .background(Color.green)
+                                            .cornerRadius(10)
+                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                    })
+                                    
+                                    Spacer ()
+                                    //                                        .frame(width: 40)
+                                    
+                                    Image(systemName: "person.2.fill")
+                                        .resizable()
+                                        .foregroundColor(Color.cyan)
+                                        .frame(width: 30, height: 30)
+//                                        .rotationEffect(.degrees())
+                                        .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                    //                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                        .opacity(0.99)
+                                }
+                            }
+                        }
                 }
                    
                     Spacer ()
-                        .frame(width: 38)
+                        .frame(width: 22)
                     
                         NavigationLink(
                             destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
@@ -347,7 +364,7 @@ struct MyRoomView: View {
                                                                   
                             Image(systemName: "heart.fill")
                                 .resizable()
-                                .foregroundColor(ColorManager .purple2)
+                                .foregroundColor(ColorManager .grey2)
                                 .frame(width: 80, height: 60)
                                 .rotationEffect(.degrees(7))
                                 .shadow(color: .white, radius: 2, x: -2, y: 2)
