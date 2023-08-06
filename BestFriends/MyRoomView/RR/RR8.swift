@@ -38,7 +38,7 @@ struct RR8: View {
                 .ignoresSafeArea()
             
             
-            Image("Tswift2")
+            Image("Tswift3")
                 .ignoresSafeArea()
 //                .scaledToFit()
                 .opacity(0.7)
@@ -86,7 +86,7 @@ struct RR8: View {
                         
                         
                         Spacer()
-                            .frame(height: 150)
+                            .frame(height: 200)
                         
                
                         VStack {

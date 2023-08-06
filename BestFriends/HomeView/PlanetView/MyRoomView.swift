@@ -543,9 +543,9 @@ struct MyRoomView: View {
                                     
                     VStack {
                         
-                        NavigationLink( destination: JournalsView(friends: friends),
-                                        label: {
-                            Text("Catch \nmy Breathe")
+                        NavigationLink( destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        label: {
+                            Text("My Precious \nDreams")
                                 .fontWeight(.regular)
                                 .frame(width: 120, height: 55)
                                 .foregroundColor(ColorManager .purple5)
