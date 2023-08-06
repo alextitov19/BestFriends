@@ -50,11 +50,12 @@ struct DreamVaultView: View {
             })
             .offset(x: showItems ? 80 : 0, y: showItems ? 290: 0)
             
-            //
-            //                            NavigationLink(destination: HorizonHomeView(user: user, friends: friends, atmosphere: atmosphere), label: {
-            //                                WhoFightingCircle (color: Color .green, friendName: "Let's \nDo This")
-            //                            })
-            //                                .offset(x: showItems ? 0 : 0, y: showItems ? 290: 0)
+            
+            NavigationLink(destination: HorizonHomeView(user: user, friends: friends, atmosphere: atmosphere), label: {
+                WhoFightingCircle (color: Color .green, friendName: "Let's \nDo This")
+            })
+                .offset(x: showItems ? 0 : 0, y: showItems ? 290: 0)
+                                      
             
             ZStack {
                 
