@@ -542,7 +542,9 @@ struct MyRoomView: View {
                                    
                                     VStack {
                                         
-                                        NavigationLink( destination: RR8(),
+                                    
+                                                        
+                                NavigationLink( destination: RR8(),
                                             label: {
                                                 Text("My Crush")
                                                 .fontWeight(.regular)

@@ -47,6 +47,10 @@ struct JournalsView: View {
                         categoryTapped()
                     }
                 
+                Spacer()
+                    .frame(height: 40)
+                
+                
                 if selectedCategory != "" && selectedCategory != "Tap Me" {
                     Button(action: {
                         createNewJournalIsPresented = true
