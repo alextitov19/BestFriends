@@ -29,10 +29,7 @@ struct MyRoomView: View {
 //                .opacity(0.8)
 //
 //
-//            AdPlayerView(name: "sky2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//                .opacity(0.7)
+        
            
             
             ColorManager .purple4
@@ -45,6 +42,10 @@ struct MyRoomView: View {
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
             
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.99)
 
             VStack {
                 
@@ -147,10 +148,10 @@ struct MyRoomView: View {
                                         .frame(width: 300, height: 42)
                                         .foregroundColor(Color.black)
                                         .font(.system(size: 16))
-                                        .background(ColorManager .purple2)
+                                        .background(Color.purple)
                                         .glow(color: ColorManager.purple1, radius: 1)
                                         .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                        .opacity(0.9)
+                                        .opacity(0.75)
                                         .cornerRadius(15)
                                         .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                 })
@@ -161,7 +162,7 @@ struct MyRoomView: View {
                                                 
                                     Image(systemName: "heart.fill")
                                         .resizable()
-                                        .foregroundColor(ColorManager .purple3)
+                                        .foregroundColor(Color.purple)
                                         .frame(width: 80, height: 60)
                                         .rotationEffect(.degrees(-7))
                                         .shadow(color: .white, radius: 2, x: -2, y: 2)
