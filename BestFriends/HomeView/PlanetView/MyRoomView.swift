@@ -519,7 +519,7 @@ struct MyRoomView: View {
                                 
                             
                                 
-                                Text("Preview NEW Features")
+                                Text("Sneak-peak NEW Features")
                                     .fontWeight(.bold)
                                     .frame(width: 280, height: 30)
                                     .foregroundColor(Color.black)

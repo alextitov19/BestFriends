@@ -90,108 +90,55 @@ struct DreamVaultView: View {
                 })
                 .offset(x: showItems ? 150 : 0, y: showItems ? -270: 0)
                 
+               
+                NavigationLink(destination: EmptyView(), label: {
+                    DreamCircle (color: ColorManager.grey4, friendName: "")
+                })
+                .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
                 
                 
-                //                    ZStack {
                 
-                Image(systemName: "rectangle.fill")
+//                                    ZStack {
+                
+                Image(systemName: "circle.fill")
                     .resizable()
                     .foregroundColor(ColorManager .grey4)
-                    .frame(width: 150, height: 275)
-                //                    .blur(radius: 2)
+                    .frame(width: 90, height: 90)
                     .opacity(0.90)
-                
                     .shadow(color: .white, radius: 65, x: 30, y: 50)
-                
+
                 
                 VStack {
                     
-                    
-                    Text("Dream Realization for")
-                        .font(.system(size: 12))
-                        .foregroundColor(ColorManager.grey2)
-                        .fontWeight(.medium)
-                        .multilineTextAlignment(.center)
-                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    
-                    
-                    Text("the less Disciplined")
-                        .font(.system(size: 12))
-                        .foregroundColor(ColorManager.grey2)
-                        .fontWeight(.medium)
-                        .multilineTextAlignment(.center)
-                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    
-//
-//                    Text("strength")
-//                        .font(.system(size: 12))
-//                        .foregroundColor(ColorManager.grey2)
-//                        .fontWeight(.medium)
-//                        .multilineTextAlignment(.center)
-//                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+        
                     
                     Spacer()
                         .frame(height:30)
                     
-                    Text("From")
-                        .font(.system(size: 12))
-                        .foregroundColor(ColorManager.grey2)
-                        .fontWeight(.medium)
-                        .multilineTextAlignment(.center)
-                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    
-                    
-                    Text("Neuroscience's secret")
-                        .font(.system(size: 12))
-                        .foregroundColor(ColorManager.grey2)
-                        .fontWeight(.medium)
-                        .multilineTextAlignment(.center)
-                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    
-                    Spacer()
-                        .frame(height:30)
+                
                     
                     
                     VStack {
                         
                         
                         Text("Living your")
-                            .font(.system(size: 12))
-                            .foregroundColor(ColorManager.grey2)
+                            .font(.system(size: 9))
+                            .italic()
+                            .foregroundColor(ColorManager .grey1)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+                     
+               
                         
-                        
-                        Text("DREAMS via")
-                            .font(.system(size: 12))
-                            .foregroundColor(ColorManager.grey2)
-                            .fontWeight(.medium)
-                            .multilineTextAlignment(.center)
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                        
-                        Text("Heart & Emotions")
+                        Text("Dreams")
                             .font(.system(size: 17))
-                            .foregroundColor(ColorManager.grey2)
+                            .foregroundColor(Color.white)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
-                        Spacer()
-                            .frame(height:30)
-                        
-                        Text("-vs.-")
-                            .font(.system(size: 17))
-                            .foregroundColor(ColorManager.grey2)
-                            .fontWeight(.medium)
-                            .multilineTextAlignment(.center)
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                        Text("Raw Talent \nof Discipline")
-                            .font(.system(size: 17))
-                            .foregroundColor(ColorManager.grey2)
-                            .fontWeight(.medium)
-                            .multilineTextAlignment(.center)
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+              
                         
                         Spacer()
                             .frame(height:30)
