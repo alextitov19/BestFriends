@@ -455,7 +455,7 @@ struct MyRoomView: View {
                                     
                                     NavigationLink( destination:  CH11(),
                                                     label: {
-                                        Text("Highlights")
+                                        Text("Contest")
                                             .fontWeight(.regular)
                                             .frame(width: 120, height: 35)
                                             .foregroundColor(ColorManager .purple5)
