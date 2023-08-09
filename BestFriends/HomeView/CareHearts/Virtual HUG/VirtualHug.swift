@@ -374,6 +374,11 @@ struct VirtualHug: View {
                     .shadow(color: ColorManager .purple4, radius: 5, x: 5, y: 5)
                     .opacity(0.7)
             }
+            
+            
+            
+            
+            
         }
     }
 }
