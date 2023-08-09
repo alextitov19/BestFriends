@@ -90,26 +90,7 @@ struct CH9: View {
                                 
                             }
                             
-                            Text("the air is fresh with kisses")
-                                                    .font(.system(size: 20))
-                                                    .foregroundColor(ColorManager .grey1)
-                                                    .fontWeight(.light)
-                                                    .multilineTextAlignment(.center)
-                            
-                            Spacer()
-                                .frame(height: 10)
-                            
-                            Text("Say thank you")
-                                                    .font(.system(size: 15))
-                                                    .foregroundColor(ColorManager .grey1)
-                                                    .fontWeight(.light)
-                                                    .multilineTextAlignment(.center)
-                            
-                            Text("and blow one back!")
-                                                    .font(.system(size: 15))
-                                                    .foregroundColor(ColorManager .grey1)
-                                                    .fontWeight(.light)
-                                                    .multilineTextAlignment(.center)
+                           
                         }
                       
                         
@@ -120,35 +101,26 @@ struct CH9: View {
          
                 VStack {
 
-//                    Text("the air is fresh with kisses")
-//                                            .font(.system(size: 23))
-//
-//                                            .foregroundColor(ColorManager .grey1)
-//                                            .fontWeight(.thin)
-//                                            .multilineTextAlignment(.center)
-//
-//                    Spacer()
-//                        .frame(height: 20)
-//
-//                    Text("Say thank you")
-//                                            .font(.system(size: 20))
-//
-//                                            .foregroundColor(ColorManager .grey1)
-//                                            .fontWeight(.thin)
-//                                            .multilineTextAlignment(.center)
-//
-//                    Text("and blow one back!")
-//                                            .font(.system(size: 20))
-//
-//                                            .foregroundColor(ColorManager .grey1)
-//                                            .fontWeight(.thin)
-//                                            .multilineTextAlignment(.center)
-                
+
+                    
+                    
                     VStack {
 
-//                        Spacer()
-//                            .frame(height: 25)
+                        Text("the air is fresh with kisses")
+                                                .font(.system(size: 20))
+                                                .foregroundColor(ColorManager .grey1)
+                                                .fontWeight(.light)
+                                                .multilineTextAlignment(.center)
                         
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        Text("(say thanks)")
+                                                .font(.system(size: 15))
+                                                .italic()
+                                                .foregroundColor(ColorManager .grey2)
+                                                .fontWeight(.light)
+                                                .multilineTextAlignment(.center)
                         
                         HStack {
                       
@@ -290,9 +262,7 @@ struct CH9: View {
                                      .opacity(0.70)
                                  
                              })
-                            
-                                                    Spacer()
-                                                        .frame(height: 20)
+                          
                             
                       
                             
@@ -300,7 +270,7 @@ struct CH9: View {
                           
                             
                             Spacer()
-                                .frame(height: 80)
+                                .frame(height: 40)
                             
    
                    

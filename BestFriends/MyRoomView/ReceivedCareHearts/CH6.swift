@@ -116,7 +116,7 @@ struct CH6: View {
                     Spacer()
                         .frame(height: 10)
                     
-                    Text("(say thanks and send one back)")
+                    Text("(say thanks)")
                                             .font(.system(size: 15))
                                             .italic()
                                             .foregroundColor(ColorManager .grey2)
