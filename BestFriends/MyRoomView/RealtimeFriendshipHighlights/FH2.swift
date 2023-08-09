@@ -41,14 +41,13 @@ struct FH2: View {
         
         ZStack {
             
-            ColorManager .purple7
-                .opacity(0.8)
+            Color.black
                 .ignoresSafeArea()
+                .onAppear()
             
-            Image("CareHeartBalloon 1")
+            AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
-                .scaledToFit()
-                .opacity(0.8)
+                .blendMode(.screen)
  
 
             VStack {
@@ -100,7 +99,7 @@ struct FH2: View {
                         .foregroundColor(Color.purple)
                         .frame(width: 375, height: 375)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.9)
+                        .opacity(0.5)
                     VStack {
                         
                         

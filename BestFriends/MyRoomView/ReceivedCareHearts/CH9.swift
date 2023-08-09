@@ -57,13 +57,15 @@ struct CH9: View {
                     .ignoresSafeArea()
                     .onAppear()
                 
+                AdPlayerView(name: "sky2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                
 //                Image("CHAirKisses 1")
 //                    .ignoresSafeArea()
 //                    .scaledToFit()
                 
-                AdPlayerView(name: "sky2")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
+             
 
             }
             
