@@ -91,14 +91,12 @@ struct VirtualHug: View {
                 
             } else {
                 
-                //                ColorManager.purple7
-                //                    .opacity(0.8)
-                //                    .ignoresSafeArea()
-                //                    .onAppear()
+                Color.black
+                                    .opacity(0.8)
+                                    .ignoresSafeArea()
+                                    .onAppear()
                 
-                Image("FHBackground")
-                    .ignoresSafeArea()
-                    .scaledToFit()
+              
                 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
@@ -135,18 +133,27 @@ struct VirtualHug: View {
                 //                    .frame(height: 50)
                 
          
+      
                 
-                Text("touch 'Tap' & hold your")
-                    .font(.system(size: 25))
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey1)
                 
-                Text("iPhone to your heart")
-                    .font(.system(size: 25))
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey1)
+                
+                Text("Tap the purple heart")
+                                        .font(.system(size: 20))
+                                        .foregroundColor(ColorManager .grey2)
+                                        .fontWeight(.light)
+                                        .multilineTextAlignment(.center)
+                
+       
+                
+                Spacer()
+                    .frame(height: 10)
+                
+                Text("(hold your phone to your heart)")
+                                        .font(.system(size: 15))
+                                        .italic()
+                                        .foregroundColor(ColorManager .grey2)
+                                        .fontWeight(.light)
+                                        .multilineTextAlignment(.center)
                 
 //
 //
@@ -195,12 +202,12 @@ struct VirtualHug: View {
                         
                         VStack {
                             
-                            Text("(say thanks for the Hug)")
-                                .font(.system(size: 20))
-                                .italic()
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager .grey1)                             .frame(height: 25)
+                            Text("(say thanks - send one back)")
+                                                    .font(.system(size: 15))
+                                                    .italic()
+                                                    .foregroundColor(ColorManager .grey2)
+                                                    .fontWeight(.light)
+                                                    .multilineTextAlignment(.center)
                             
                             
                             HStack {
@@ -361,9 +368,10 @@ struct VirtualHug: View {
     }
 }
                 
-                AdPlayerView(name: "HugVideo")
-                    .frame(width: 250, height: 250)
+                Image("surferboysimg")
+                    .frame(width: 375, height: 375)
                     .cornerRadius(15)
+                    .shadow(color: ColorManager .purple4, radius: 5, x: 5, y: 5)
                     .opacity(0.7)
             }
         }

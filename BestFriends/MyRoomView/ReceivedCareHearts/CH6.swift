@@ -56,17 +56,12 @@ struct CH6: View {
                 
             } else {
 
-//                ColorManager.purple7
-////                    .opacity(0.5)
-//                    .ignoresSafeArea()
-//                    .onAppear()
-//
-//    AdPlayerView(name: "sky2")
-//        .ignoresSafeArea()
-//        .blendMode(.screen)
-                Image("CHHearts 3")
+                Color.black
+//                    .opacity(0.5)
                     .ignoresSafeArea()
-                    .scaledToFit()
+                    .onAppear()
+
+
                 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
@@ -87,10 +82,10 @@ struct CH6: View {
                         ZStack {
                             
 
-                                
-                            AdPlayerView(name: "HugVideo")
-                                .frame(width: 250, height: 250)
+                            Image("surferboysimg")
+                                .frame(width: 375, height: 375)
                                 .cornerRadius(15)
+                                .shadow(color: ColorManager .purple4, radius: 5, x: 5, y: 5)
                                 .opacity(0.7)
                             
                             VStack {
@@ -105,16 +100,28 @@ struct CH6: View {
 
                 }
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 10)
          
                 VStack {
-
+                    
+                    
+                    Text("They're thinking about you and sent a Heart")
+                                            .font(.system(size: 20))
+                                            .foregroundColor(ColorManager .grey2)
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
+                    
+           
+                    
+                    Spacer()
+                        .frame(height: 10)
+                    
                     Text("(say thanks and send one back)")
-                        .fontWeight(.regular)
-                        .italic()
-                        .foregroundColor(ColorManager .darkGrey)
-                        .font(.system(size: 20))
-                        .italic()
+                                            .font(.system(size: 15))
+                                            .italic()
+                                            .foregroundColor(ColorManager .grey2)
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
 
                 
                     VStack {
@@ -314,7 +321,7 @@ struct CH6: View {
         var body: some View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
-                .frame(width: 90, height: 90)
+                .frame(width: 80, height: 80)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .font(.system(size: 8))
                 .background(color)

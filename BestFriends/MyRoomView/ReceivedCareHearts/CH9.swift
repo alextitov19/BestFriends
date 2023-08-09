@@ -53,13 +53,13 @@ struct CH9: View {
                 
             } else {
 
-                ColorManager.purple5
+                ColorManager.grey4
                     .ignoresSafeArea()
                     .onAppear()
                 
-                Image("CHAirKisses 1")
-                    .ignoresSafeArea()
-                    .scaledToFit()
+//                Image("CHAirKisses 1")
+//                    .ignoresSafeArea()
+//                    .scaledToFit()
                 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
@@ -73,18 +73,43 @@ struct CH9: View {
                     VStack {
                    
                         
-                        
+                        Image("surferboysimg")
+                            .frame(width: 375, height: 375)
+                            .cornerRadius(15)
+                            .shadow(color: ColorManager .purple4, radius: 5, x: 5, y: 5)
+                            .opacity(0.7)
                     
                         
                         ZStack {
-
-                           
+                            
+                            
                             VStack {
-                               
-//                                Spacer()
-//                                    .frame(height: 100)
-
+                                
+                                Spacer()
+                                    .frame(height: 10)
+                                
                             }
+                            
+                            Text("the air is fresh with kisses")
+                                                    .font(.system(size: 20))
+                                                    .foregroundColor(ColorManager .grey1)
+                                                    .fontWeight(.light)
+                                                    .multilineTextAlignment(.center)
+                            
+                            Spacer()
+                                .frame(height: 10)
+                            
+                            Text("Say thank you")
+                                                    .font(.system(size: 15))
+                                                    .foregroundColor(ColorManager .grey1)
+                                                    .fontWeight(.light)
+                                                    .multilineTextAlignment(.center)
+                            
+                            Text("and blow one back!")
+                                                    .font(.system(size: 15))
+                                                    .foregroundColor(ColorManager .grey1)
+                                                    .fontWeight(.light)
+                                                    .multilineTextAlignment(.center)
                         }
                       
                         
@@ -216,31 +241,12 @@ struct CH9: View {
                             }
                         }
                   
-                        
+                  
              
                         Spacer()
                             .frame(height: 20)
                         
-                        Text("the air is fresh with kisses")
-                                                .font(.system(size: 23))
-                                                .foregroundColor(ColorManager .grey1)
-                                                .fontWeight(.light)
-                                                .multilineTextAlignment(.center)
-                        
-                        Spacer()
-                            .frame(height: 20)
-                        
-                        Text("Say thank you")
-                                                .font(.system(size: 20))
-                                                .foregroundColor(ColorManager .grey1)
-                                                .fontWeight(.light)
-                                                .multilineTextAlignment(.center)
-                        
-                        Text("and blow one back!")
-                                                .font(.system(size: 20))
-                                                .foregroundColor(ColorManager .grey1)
-                                                .fontWeight(.light)
-                                                .multilineTextAlignment(.center)
+                 
                         
                         
                         Button(action: {
@@ -269,33 +275,32 @@ struct CH9: View {
                         
                         VStack {
                             
+                          
+                             Button(action: {
+                                 sessionManager.showLogin()
+                             },
+                                 label: {
+                                 Image("home-alt2")
+                                     .frame(width: 50, height: 25)
+                                     .foregroundColor(.white)
+                                     .font(.system(size: 20))
+                                     .background(ColorManager.grey2)
+                                     .cornerRadius(15)
+                                     .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                     .opacity(0.70)
+                                 
+                             })
+                            
                                                     Spacer()
                                                         .frame(height: 20)
                             
-                            AdPlayerView(name: "HugVideo")
-                                .frame(width: 250, height: 250)
-                                .cornerRadius(15)
-                                .opacity(0.7)
+                      
                             
                             Spacer()
-                                .frame(height: 20)
-                                 Button(action: {
-                                     sessionManager.showLogin()
-                                 },
-                                     label: {
-                                     Image("home-alt2")
-                                         .frame(width: 50, height: 25)
-                                         .foregroundColor(.white)
-                                         .font(.system(size: 20))
-                                         .background(ColorManager.grey2)
-                                         .cornerRadius(15)
-                                         .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                         .opacity(0.70)
-                                     
-                                 })
+                          
                             
                             Spacer()
-                                .frame(height: 150)
+                                .frame(height: 80)
                             
    
                    
@@ -347,7 +352,7 @@ struct CH9: View {
         var body: some View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
-                .frame(width: 90, height: 90)
+                .frame(width: 80, height: 80)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .font(.system(size: 8))
                 .background(color)

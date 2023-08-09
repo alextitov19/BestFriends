@@ -44,7 +44,7 @@ struct CH7: View {
                 
                 
                 
-                            ColorManager.grey4
+                Color.black
                                 .ignoresSafeArea()
                                 .onAppear()
 
@@ -54,20 +54,23 @@ struct CH7: View {
                     .blendMode(.screen)
                 
             } else {
-                Image("NewSong 1")
-                    .ignoresSafeArea()
-                    .scaledToFit()
+               
                 
 //                ColorManager.purple1
 //                    .ignoresSafeArea()
             }
             
-//            ColorManager .purple1
-//                .ignoresSafeArea()
-//
+            Color.black
+//                    .opacity(0.5)
+                .ignoresSafeArea()
+                .onAppear()
+
+
+            
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
+
 
             
             VStack{
@@ -79,24 +82,14 @@ struct CH7: View {
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .grey2)
                         
-                        
-                        //                        Text("bro")
-                        //                            .font(.system(size: 35, weight: .ultraLight))
-                        //                            .foregroundColor(ColorManager .purple7)
-                        //
+                  
                     }
                     
-//                    Image("CoolGuy")
-//                        .resizable()
-//                        .frame(width: 200, height: 200)
-                    
-                    
-//                    Image("KissesHeart")
-//                        .resizable()
-//                        .frame(width: 200, height: 150)
-                    AdPlayerView(name: "HugVideo")
-                        .frame(width: 250, height: 250)
+
+                    Image("surferboysimg")
+                        .frame(width: 375, height: 375)
                         .cornerRadius(15)
+                        .shadow(color: ColorManager .purple4, radius: 5, x: 5, y: 5)
                         .opacity(0.7)
                     
                     
@@ -118,23 +111,19 @@ struct CH7: View {
                 
                 VStack {
 
-                    Text("You were just sent a new song")
-                                            .font(.system(size: 25))
+                    Text("You were just sent a new song in Chat")
+                                            .font(.system(size: 20))
                                             .foregroundColor(ColorManager .grey2)
                                             .fontWeight(.light)
                                             .multilineTextAlignment(.center)
                     
-                    Text("Check it out in Chat")
-                                            .font(.system(size: 25))
-                                            .foregroundColor(ColorManager .grey2)
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
+           
                     
                     Spacer()
-                        .frame(height: 15)
+                        .frame(height: 10)
                     
                     Text("(send a thank you)")
-                                            .font(.system(size: 20))
+                                            .font(.system(size: 15))
                                             .italic()
                                             .foregroundColor(ColorManager .grey2)
                                             .fontWeight(.light)
@@ -143,7 +132,7 @@ struct CH7: View {
                     VStack {
 
                         Spacer()
-                            .frame(height: 25)
+                            .frame(height: 15)
                         
                         
                         HStack {
@@ -284,8 +273,7 @@ struct CH7: View {
                                  })
                             
                             
-                            Spacer()
-                                .frame(height: 30)
+                
                    
                         }
                         
@@ -297,7 +285,7 @@ struct CH7: View {
                     
                 
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 50)
                     
                 }
                 
@@ -343,7 +331,7 @@ struct CH7: View {
         var body: some View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
-                .frame(width: 90, height: 90)
+                .frame(width: 80, height: 80)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .font(.system(size: 8))
                 .background(color)
