@@ -71,6 +71,9 @@ struct VirtualHug: View {
         showingAlert = true
     }
     
+    
+    
+    
     var body: some View {
         
         ZStack {
@@ -108,75 +111,40 @@ struct VirtualHug: View {
             
             VStack{
                 
-                //                    .ignoresSafeArea()
-                //                    .blendMode(.screen)
-                
-                
-                
-                //                Spacer ()
-                //                    .frame(height: 10)
-                //
-                //                NavigationLink( destination:  CH2(user: user, friends: friends),
-                //                                label: {
-                //                    Text("Say Thank you and send one back")
-                //                        .fontWeight(.thin)
-                //                        .frame(width: 310, height: 40)
-                //                        .foregroundColor(ColorManager .grey1)
-                //                        .font(.system(size: 20))
-                //                        .background(ColorManager .purple3)
-                //                        .opacity(0.9)
-                //                        .cornerRadius(15)
-                //                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                //                })
-                //
-                //                Spacer ()
-                //                    .frame(height: 50)
+          
+                                Spacer ()
+                                    .frame(height: 10)
                 
          
-      
+                Image("surferboysimg")
+                    .frame(width: 375, height: 375)
+                    .cornerRadius(15)
+                    .shadow(color: ColorManager .purple4, radius: 5, x: 5, y: 5)
+                    .opacity(0.7)
                 
-                
-                
-                Text("Tap the purple heart")
-                                        .font(.system(size: 20))
-                                        .foregroundColor(ColorManager .grey2)
-                                        .fontWeight(.light)
-                                        .multilineTextAlignment(.center)
-                
-       
-                
-                Spacer()
-                    .frame(height: 10)
-                
-                Text("(hold your phone to your heart)")
-                                        .font(.system(size: 15))
-                                        .italic()
-                                        .foregroundColor(ColorManager .grey2)
-                                        .fontWeight(.light)
-                                        .multilineTextAlignment(.center)
-                
-//
-//
-//                Spacer()
-//                    .frame(height: 20)
-//
-                
+     
+             
+ 
                 if (showingHeart) {
                     
                     
                     VStack {
                         
+                        
+                        Spacer ()
+                            .frame(height: 10)
+                        
                         ZStack{
                             Image(systemName: "heart.fill")
                                 .resizable()
                                 .foregroundColor(.purple)
-                                .frame(width: 105, height: 85)
+                                .frame(width: 110, height: 90)
                                 .shadow(color: .blue, radius: 65, x: 30, y: 50)
                                 .opacity(0.7)
                             
                             
-                            Text("tap")
-                                .font(.system(size: 35))
+                            Text("TAP - hold \nphone to \nheart")
+                                .font(.system(size: 15))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
@@ -202,7 +170,7 @@ struct VirtualHug: View {
                         
                         VStack {
                             
-                            Text("(say thanks - send one back)")
+                            Text("(say thanks)")
                                                     .font(.system(size: 15))
                                                     .italic()
                                                     .foregroundColor(ColorManager .grey2)
@@ -341,6 +309,9 @@ struct VirtualHug: View {
                             })
                             .confettiCannon(counter: $counter)
                             
+                      
+                            
+                            
                             
                                                         VStack {
                             
@@ -368,11 +339,7 @@ struct VirtualHug: View {
     }
 }
                 
-                Image("surferboysimg")
-                    .frame(width: 375, height: 375)
-                    .cornerRadius(15)
-                    .shadow(color: ColorManager .purple4, radius: 5, x: 5, y: 5)
-                    .opacity(0.7)
+            
             }
             
             
@@ -382,3 +349,19 @@ struct VirtualHug: View {
         }
     }
 }
+
+//
+//struct RectView: View {
+//    let user: User
+//    let friend: User
+//    let color: Color
+//
+//    var body: some View {
+//        Text(friend.firstName + " " + String(friend.lastName.first!))
+//            .fontWeight(.bold)
+//            .frame(width: 80, height: 80)
+//            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//            .font(.system(size: 8))
+//            .background(color)
+//            .cornerRadius(75)
+//            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue:
