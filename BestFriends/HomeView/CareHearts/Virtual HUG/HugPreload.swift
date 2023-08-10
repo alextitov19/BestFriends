@@ -26,16 +26,15 @@ struct HugPreload: View {
 
         ZStack {
 
-            
-            ColorManager.grey3
-                .opacity(0.99)
-                .ignoresSafeArea()
-     
-
             Image("CareHeartBalloon 1")
                 .ignoresSafeArea()
                 .scaledToFit()
                 .opacity(0.6)
+            
+            Color.black
+               .opacity(0.9)
+                .ignoresSafeArea()
+            
             
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
@@ -196,11 +195,17 @@ struct HugPreload: View {
 
 
                     Spacer ()
-                        .frame(height: 15)
+                        .frame(height: 30)
+                    
+                    Text("Sending CareHearts")
+                        .font(.system(size: 23))
+                        .foregroundColor(Color.white)
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
                     
                     Text("from the heart of you")
                         .font(.system(size: 23))
-                        .foregroundColor(ColorManager .darkGrey)
+                        .foregroundColor(Color.white)
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                     
