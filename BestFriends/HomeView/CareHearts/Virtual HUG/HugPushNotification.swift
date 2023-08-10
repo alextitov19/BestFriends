@@ -61,13 +61,13 @@ struct HugPushNotification: View {
                     .scaledToFit()
                     .opacity(0.6)
                 
+                
+                
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
            
-                ColorManager.grey4
-                   .opacity(0.3)
-                    .ignoresSafeArea()
+              
        
                 
             }
@@ -151,16 +151,20 @@ struct HugPushNotification: View {
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("")
-                            .fontWeight(.light)
-                            .frame(width: 310, height: 310)
-                            .foregroundColor(ColorManager .grey4)
-                            .font(.system(size: 25))
-                            .background(ColorManager .orange3)
-//                            .opacity(0.7)
-                            .cornerRadius(10)
-                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                        
+                        NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
+                                        label: {
+                            Text("Send a PhotoPOP")
+                                .fontWeight(.bold)
+                                .frame(width: 300, height: 40)
+                                .foregroundColor(Color.black)
+                                .font(.system(size: 16))
+                                .background(Color.cyan)
+                                .glow(color: ColorManager.purple1, radius: 1)
+                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                .opacity(0.9)
+                                .cornerRadius(15)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                        })
                         
                         Spacer()
                             .frame(height: 20)

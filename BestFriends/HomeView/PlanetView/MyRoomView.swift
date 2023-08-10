@@ -41,6 +41,7 @@ struct MyRoomView: View {
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
+                .opacity(0.7)
             
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
@@ -242,7 +243,7 @@ struct MyRoomView: View {
                                     }
                                    
                                     Spacer()
-                                        .frame(width: 10)
+                                        .frame(width: 5)
                                     
                                     VStack {
                                         
@@ -279,7 +280,7 @@ struct MyRoomView: View {
                                     }
                                         
                                         Spacer()
-                                            .frame(width: 10)
+                                            .frame(width: 5)
                                         
                                     VStack {
                                         
