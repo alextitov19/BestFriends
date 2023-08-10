@@ -53,7 +53,7 @@ struct CH9: View {
                 
             } else {
 
-                ColorManager.grey4
+                Color.black
                     .ignoresSafeArea()
                     .onAppear()
                 
