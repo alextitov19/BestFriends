@@ -123,7 +123,7 @@ struct SaySomethingNice5: View {
                         
                         NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
                                         label: {
-                            Text("Send a PhotoPOP")
+                            Text("Include a PhotoPOP")
                                 .fontWeight(.bold)
                                 .frame(width: 300, height: 40)
                                 .foregroundColor(Color.black)
