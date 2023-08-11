@@ -104,10 +104,7 @@ struct VirtualHug: View {
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                
-                
             
-         
                 
             }
             
@@ -115,38 +112,42 @@ struct VirtualHug: View {
             VStack{
                 
           
-                                Spacer ()
-                                    .frame(height: 10)
-                
-         
-         
-                
-     
-             
  
                 if (showingHeart) {
                     
                     
                     VStack {
                         
-                        Image("BushGirl")
-                            .ignoresSafeArea()
-                            .scaledToFit()
-                            .opacity(0.8)
+                        Text("To get your virtual Hug,")
+                            .font(.system(size: 20))
+                            .italic()
+                            .foregroundColor(ColorManager .grey2)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
                         
                         Spacer ()
                             .frame(height: 10)
+                        
+                        Text("tap the heart and hold \nyour iPhone to your Heart")
+                            .font(.system(size: 20))
+                            .italic()
+                            .foregroundColor(ColorManager .grey2)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                        
+                        Spacer ()
+                            .frame(height: 30)
                         
                         ZStack{
                             Image(systemName: "heart.fill")
                                 .resizable()
                                 .foregroundColor(.purple)
-                                .frame(width: 110, height: 90)
+                                .frame(width: 150, height: 125)
                                 .shadow(color: .blue, radius: 65, x: 30, y: 50)
                                 .opacity(0.7)
                             
                             
-                            Text("TAP - hold \nphone to \nheart")
+                            Text("TAP")
                                 .font(.system(size: 15))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
@@ -174,11 +175,11 @@ struct VirtualHug: View {
                         VStack {
                             
                             Text("(say thanks)")
-                                                    .font(.system(size: 15))
-                                                    .italic()
-                                                    .foregroundColor(ColorManager .grey2)
-                                                    .fontWeight(.light)
-                                                    .multilineTextAlignment(.center)
+                                .font(.system(size: 15))
+                                .italic()
+                                .foregroundColor(ColorManager .grey2)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
                             
                             
                             HStack {

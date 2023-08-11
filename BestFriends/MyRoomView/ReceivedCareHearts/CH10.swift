@@ -63,7 +63,7 @@ struct CH10: View {
 
                     
                     NavigationLink(destination: CH6(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .orange2, friendName: "ahhh!... you \ngot a heart")
+                        HugCircle (color: ColorManager .orange2, friendName: "Look! you got \n hearts")
                     })
                     .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                     .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)

@@ -74,10 +74,7 @@ struct CH6: View {
                 HStack {
                     VStack {
                    
-                        
-                        
-                        Spacer()
-                            .frame(height: 10)
+                 
                         
                         ZStack {
                             
@@ -86,37 +83,51 @@ struct CH6: View {
                                 .ignoresSafeArea()
                                 .onAppear()
 //                                .frame(width: 375, height: 375)
-//                                .cornerRadius(15)
+                                .cornerRadius(50)
 //                                .shadow(color: ColorManager .purple4, radius: 5, x: 5, y: 5)
-                                .opacity(0.3)
+                                .opacity(0.18)
                             
                             VStack {
                                 
 //
                             }
                         }
-                      
-                        
                     }
-                    
-
                 }
-                Spacer()
-                    .frame(height: 10)
+            
          
                 VStack {
                     
                     
-                    Text("They're thinking about you and sent a Heart")
+                    Spacer()
+                        .frame(height: 40)
+                    
+                    Text("Ahh!")
+                        .font(.system(size: 30))
+                        .foregroundColor(ColorManager .grey2)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+
+                    Spacer()
+                        .frame(height: 10)
+                    
+                    Text("Your friend was just thinking about you")
                                             .font(.system(size: 20))
                                             .foregroundColor(ColorManager .grey2)
                                             .fontWeight(.light)
                                             .multilineTextAlignment(.center)
                     
-           
-                    
                     Spacer()
                         .frame(height: 10)
+                    
+                    Text("and sent you Hearts")
+                                            .font(.system(size: 20))
+                                            .foregroundColor(ColorManager .grey2)
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
+                    
+                    Spacer()
+                        .frame(height: 30)
                     
                     Text("(say thanks)")
                                             .font(.system(size: 15))
@@ -267,25 +278,11 @@ struct CH6: View {
                                  })
                             
                             Spacer()
-                                .frame(height: 80)
+                                .frame(height: 200)
                             
-                            
-//                            Image("KissesHeart")
-//                                .resizable()
-//                                .frame(width: 200, height: 150)
-//                                .opacity(0.5)
-                   
-                        }
-                        
-                     
-                        
-                        }
-                    
-//
-//
-//
 
-                    
+                        }   
+                    }
                 }
                 
             }

@@ -106,19 +106,31 @@ struct CH9: View {
          
                 VStack {
 
-
+                    Text("Your friend just blew you a kiss")
+                                            .font(.system(size: 20))
+                                            .foregroundColor(ColorManager .grey1)
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
                     
                     
                     VStack {
-
-                        Text("the air is fresh with kisses")
+                        
+                        
+                        
+                        Spacer()
+                            .frame(height: 15)
+                        
+                        
+                        Text("Jump up high and you will \nsee it floating towards you!")
                                                 .font(.system(size: 20))
                                                 .foregroundColor(ColorManager .grey1)
                                                 .fontWeight(.light)
                                                 .multilineTextAlignment(.center)
                         
+             
+                        
                         Spacer()
-                            .frame(height: 10)
+                            .frame(height: 30)
                         
                         Text("(say thanks)")
                                                 .font(.system(size: 15))
@@ -268,28 +280,14 @@ struct CH9: View {
                                  
                              })
                           
-                            
-                      
-                            
+                         
                             Spacer()
-                          
-                            
-                            Spacer()
-                                .frame(height: 40)
+                                .frame(height: 150)
                             
    
                    
                         }
-                        
-                     
-                        
-                        }
-                    
-//
-//
-//
-
-                    
+                    }
                 }
                 
             }
