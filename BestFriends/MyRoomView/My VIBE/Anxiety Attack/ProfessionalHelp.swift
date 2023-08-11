@@ -23,30 +23,19 @@ struct ProfessionalHelp: View {
 //
     var body: some View {
         ZStack {
-            ColorManager.grey3
+            ColorManager.grey4
+                .opacity(0.8)
                 .ignoresSafeArea()
-                .onAppear()
+         
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.99)
             
-//            Image("ShaylaBest")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
-
-            
-//            AdPlayerView(name: "sky2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-
             
             VStack {
          
-                Text("(coming soon)")
-                    .font(.system(size: 20, weight: .regular))
-                    .italic()
-                    .foregroundColor(ColorManager .grey1)
-                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    .opacity(0.50)
-                    .multilineTextAlignment(.center)
+        
                 Spacer()
                     .frame(height: 10)
                 
@@ -82,14 +71,14 @@ struct ProfessionalHelp: View {
                     
             
                 Spacer()
-                    .frame(height: 10)
+                    .frame(height: 30)
             
                     VStack {
 
                         
-                        Link(destination: URL(string: "https://will-to-live.org/")!) {
+                        Link(destination: URL(string: "https://cssnv.org/")!) {
                             
-                            Text("Will to Live")
+                            Text("Crisis Support Services")
                                 .fontWeight(.thin)
                                 .frame(width: 200, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

@@ -1454,6 +1454,7 @@
 			isa = PBXGroup;
 			children = (
 				CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */,
+				2DBF3EE62A61ACF500CB1CAD /* RR4.swift */,
 				CF6C5B0F2A860E8D00EC4915 /* Anxiety Attack */,
 			);
 			path = "My VIBE";
@@ -1467,6 +1468,7 @@
 				CFC0EE752907AB7D006B3FAA /* HugPushNotification.swift */,
 				CF3B42F329371A6D00EE1D84 /* SaySomethingNice5.swift */,
 				2DFB03202A5D307A00669948 /* CH4.swift */,
+				CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */,
 			);
 			path = "Send CareHearts";
 			sourceTree = "<group>";
@@ -1489,10 +1491,9 @@
 		CF6C5B0F2A860E8D00EC4915 /* Anxiety Attack */ = {
 			isa = PBXGroup;
 			children = (
-				CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */,
-				CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */,
-				CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */,
 				CF4D86B92978FDBA004B551D /* MyFears.swift */,
+				CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */,
+				CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */,
 			);
 			path = "Anxiety Attack";
 			sourceTree = "<group>";
@@ -1692,7 +1693,6 @@
 		CFD04689282D6FDD00BF0B02 /* Atmosphere */ = {
 			isa = PBXGroup;
 			children = (
-				2DBF3EE62A61ACF500CB1CAD /* RR4.swift */,
 				CF1ECABE286E876900D999F8 /* AtmosphereInfo.swift */,
 				CFD8BD072912B0EB00F86EFB /* AtmosphereInfo2.swift */,
 				CF6504152893192C0092EEB9 /* AtmosphereDVid.swift */,

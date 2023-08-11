@@ -28,12 +28,7 @@ struct RR4: View {
     @State private var counter = 0
     @State private var shareTapped: Bool = false
     
-    //    @State private var mood: Int = -1
-    //    @State private var summary = ""
-    //    @State private var sharedWith: [String] = []
-    //    @State private var colorChangeTap: String = ""
-    
-    
+ 
     
     
     
@@ -51,53 +46,18 @@ struct RR4: View {
                 .opacity(0.99)
             
             
-//            Image("FHBackground")
-//                .resizable()
-//                .scaledToFill()
-//                .edgesIgnoringSafeArea(.all)
-//                .blendMode(.screen)
-//
+
+
             VStack{
                 
-               
+                Spacer()
+                        .frame(height: 10)
                     
                     VStack {
+
+                  
                         
-//                        Text("Up-loading to PhotoPOP")
-//                            .font(.system(size: 25, weight: .light))
-//                            .foregroundColor(ColorManager .grey1)
-//
-//                        Spacer()
-//                            .frame(height: 7)
-//
-//                        Text("1) Delete OLD image before uploading NEW")
-//                            .font(.system(size: 17, weight: .light))
-//                            .foregroundColor(ColorManager .grey2)
-//
-//                        Text("2) Tap camera/gallery icon to upload NEW image")
-//                            .font(.system(size: 17, weight: .light))
-//                            .foregroundColor(ColorManager .grey2)
-//
-//
-//
-//
-////
-////                        Text("before uploading NEW image")
-////                            .font(.system(size: 20, weight: .light))
-////                            .foregroundColor(ColorManager .grey2)
-//
-//                        Spacer()
-//                            .frame(height: 60)
-                        
-                       
-                        
-                        Spacer()
-                            .frame(height: 10)
-                        
-                        Image("")
-                            .frame(width: 100, height: 100)
-                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                            .opacity(0.70)
+                
 
                         
                         Text("Alert friend with")
@@ -107,6 +67,20 @@ struct RR4: View {
                         Text("Push Notification")
                             .font(.system(size: 35, weight: .light))
                             .foregroundColor(Color.white)
+                        
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        Text("In-app notification")
+                            .font(.system(size: 15, weight: .light))
+                            .italic()
+                            .foregroundColor(ColorManager .grey1)
+                        
+                        Text("was automatically sent")
+                            .font(.system(size: 15, weight: .light))
+                            .italic()
+                            .foregroundColor(ColorManager .grey1)
+                        
                         
                         HStack {
                             //
@@ -221,7 +195,7 @@ struct RR4: View {
                                 }
                         })
                         
-                        .confettiCannon(counter: $counter)
+                
                         
                     }
                     
@@ -246,23 +220,24 @@ struct RR4: View {
                 Spacer()
                     .frame(height: 40)
                 
-                Text("In-app notification")
-                    .font(.system(size: 15, weight: .light))
-                    .italic()
-                    .foregroundColor(ColorManager .grey1)
-                
-                Text("was automatically sent")
-                    .font(.system(size: 15, weight: .light))
-                    .italic()
-                    .foregroundColor(ColorManager .grey1)
-                
-                
-                
+            
                 
                 VStack {
-                    
-     
-              
+             
+                    NavigationLink( destination:  MyFears(user: user, friends: friends),
+                                    label: {
+                        Text("Feel an anxiety attack coming on?")
+                            .fontWeight(.bold)
+                            .frame(width: 320, height: 40)
+                            .foregroundColor(Color.black)
+                            .font(.system(size: 16))
+                            .background(Color.cyan)
+                            .glow(color: ColorManager.purple1, radius: 1)
+                            .shadow(color: .white, radius: 3, x: -4, y: 4)
+                            .opacity(0.9)
+                            .cornerRadius(15)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                    })
                     
                     Spacer()
                         .frame(height: 100)

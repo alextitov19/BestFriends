@@ -60,16 +60,16 @@ struct MyFears: View {
 //
 //
 //
-            
-            ColorManager.purple5
-                               .ignoresSafeArea()
-                               .onAppear()
-           
+            ColorManager.grey4
+                .opacity(0.8)
+                .ignoresSafeArea()
+         
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-           
-
+                .opacity(0.99)
+            
+            
             
             VStack{
                 
@@ -86,12 +86,13 @@ struct MyFears: View {
 //                            .foregroundColor(ColorManager .grey1)
                     
                         Text("Some of us here at BF deal with")
-                            .font(.system(size: 19, weight: .ultraLight))
-                            .foregroundColor(ColorManager .grey4)
+                            .font(.system(size: 19, weight: .light))
+                            .foregroundColor(ColorManager .grey1)
                             .multilineTextAlignment(.center)
+                        
                         Text("anxiety panic attacks.")
-                            .font(.system(size: 19, weight: .ultraLight))
-                            .foregroundColor(ColorManager .grey4)
+                            .font(.system(size: 19, weight: .light))
+                            .foregroundColor(ColorManager .grey1)
                             .multilineTextAlignment(.center)
                   
                         
@@ -99,12 +100,12 @@ struct MyFears: View {
                             .frame(height: 10)
                         
                         Text("So fragile - just taking about can")
-                            .font(.system(size: 19, weight: .ultraLight))
-                            .foregroundColor(ColorManager .grey4)
+                            .font(.system(size: 19, weight: .light))
+                            .foregroundColor(ColorManager .grey1)
                             .multilineTextAlignment(.center)
                         Text("trigger an episode.")
-                            .font(.system(size: 19, weight: .ultraLight))
-                            .foregroundColor(ColorManager .grey4)
+                            .font(.system(size: 19, weight: .light))
+                            .foregroundColor(ColorManager .grey1)
                             .multilineTextAlignment(.center)
                         
                 
@@ -119,7 +120,7 @@ struct MyFears: View {
                 }
              
                 Spacer()
-                    .frame(height: 10)
+                    .frame(height: 40)
                 
                 VStack {
                     
@@ -127,8 +128,8 @@ struct MyFears: View {
                         
                         Image(systemName: "heart.fill")
                             .resizable()
-                            .foregroundColor(ColorManager .purple1)
-                            .frame(width: 120, height: 100)
+                            .foregroundColor(ColorManager .purple3)
+                            .frame(width: 150, height: 125)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
                             .opacity(0.95)
@@ -137,44 +138,29 @@ struct MyFears: View {
                         NavigationLink(
                             destination: ProfessionalHelp(user: user),
                             label: {
-                                Text("need \nprofessonal \nhelp?")
-                                    .fontWeight(.thin)
-                                    .frame(width: 80, height: 50)
-                                    .foregroundColor(ColorManager .purple4)
-                                    .font(.system(size: 13))
-                                    .background(ColorManager .purple1)
+                                Text("Let's find you some help?")
+                                    .fontWeight(.light)
+                                    .frame(width: 100, height: 70)
+                                    .foregroundColor(ColorManager .grey4)
+                                    .font(.system(size: 17))
+//                                    .background(ColorManager .purple1)
                                     .cornerRadius(10)
                                 
                             })
                     }
                     
                     
+                    Text("(800) 273-8255")
+                        .font(.system(size: 19, weight: .light))
+                        .foregroundColor(ColorManager .grey1)
+                        .multilineTextAlignment(.center)
                     
+//                    Crisis Support Services (https://cssnv.org/) offers a hotline (1-800-273-8255) 24 hours a day, 7 days a week to aid in the event of a crisis, such as an anxiety attack or panic attack.
+//
                     Spacer()
                         .frame(height: 15)
                     
-                    
-                    Text("Let's try")
-                                            .font(.system(size: 25))
-                
-                                            .foregroundColor(ColorManager .grey4)
-                                            .fontWeight(.thin)
-                                            .multilineTextAlignment(.center)
-
-                    
-                    Text("to find you some")
-                                            .font(.system(size: 25))
-                
-                                            .foregroundColor(ColorManager .grey4)
-                                            .fontWeight(.thin)
-                                            .multilineTextAlignment(.center)
-                    Text("help")
-                                            .font(.system(size: 25))
-                
-                                            .foregroundColor(ColorManager .grey4)
-                                            .fontWeight(.thin)
-                                            .multilineTextAlignment(.center)
-                    
+             
                     
                     VStack {
 
