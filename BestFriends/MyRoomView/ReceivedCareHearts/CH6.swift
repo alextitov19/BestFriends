@@ -85,7 +85,7 @@ struct CH6: View {
 //                                .frame(width: 375, height: 375)
                                 .cornerRadius(125)
 //                                .shadow(color: ColorManager .purple4, radius: 5, x: 5, y: 5)
-                                .opacity(0.2)
+                                .opacity(0.4)
                             
                             VStack {
                                 
