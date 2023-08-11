@@ -77,6 +77,20 @@
 		7A380F1628271E3E007151AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A380F1528271E3E007151AB /* AppDelegate.swift */; };
 		7A383FFD267AC306002F354A /* background_4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263D6266477C600243DD7 /* background_4.mp4 */; };
 		7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F0310265C9E5A00DBA207 /* UIImageExtension.swift */; };
+		7A45B82C2A86AAF200F5E75B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A45B82B2A86AAF200F5E75B /* WidgetKit.framework */; };
+		7A45B82E2A86AAF200F5E75B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A45B82D2A86AAF200F5E75B /* SwiftUI.framework */; };
+		7A45B8312A86AAF300F5E75B /* BestFriendsWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45B8302A86AAF300F5E75B /* BestFriendsWidgetBundle.swift */; };
+		7A45B8332A86AAF300F5E75B /* BestFriendsWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45B8322A86AAF300F5E75B /* BestFriendsWidgetLiveActivity.swift */; };
+		7A45B8352A86AAF300F5E75B /* BestFriendsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45B8342A86AAF300F5E75B /* BestFriendsWidget.swift */; };
+		7A45B8382A86AAF500F5E75B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A45B8372A86AAF500F5E75B /* Assets.xcassets */; };
+		7A45B83A2A86AAF500F5E75B /* BestFriendsWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 7A45B8362A86AAF300F5E75B /* BestFriendsWidget.intentdefinition */; };
+		7A45B83B2A86AAF500F5E75B /* BestFriendsWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 7A45B8362A86AAF300F5E75B /* BestFriendsWidget.intentdefinition */; };
+		7A45B83E2A86AAF500F5E75B /* BestFriendsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7A45B82A2A86AAF200F5E75B /* BestFriendsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7A45B8442A86AB8600F5E75B /* RR11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45B8432A86AB8600F5E75B /* RR11.swift */; };
+		7A45B8462A86AB9700F5E75B /* RR12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45B8452A86AB9700F5E75B /* RR12.swift */; };
+		7A45B8482A86AB9E00F5E75B /* RR13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45B8472A86AB9E00F5E75B /* RR13.swift */; };
+		7A45B84A2A86ABA300F5E75B /* RR14.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45B8492A86ABA300F5E75B /* RR14.swift */; };
+		7A45B84C2A86ABA900F5E75B /* RR15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45B84B2A86ABA900F5E75B /* RR15.swift */; };
 		7A469E54284D6AC0004AF547 /* TextAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A469E53284D6AC0004AF547 /* TextAlert.swift */; };
 		7A4D50072783B9D3006F7404 /* UIScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4D50062783B9D3006F7404 /* UIScreenExtension.swift */; };
 		7A4E336726A0D6FC00202BB7 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E336626A0D6FC00202BB7 /* CGFloatExtension.swift */; };
@@ -343,6 +357,30 @@
 		D0F5AB1B2840519700053F17 /* HorizonRocketColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7A45B83C2A86AAF500F5E75B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A71BCF32625292A00E6FA9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A45B8292A86AAF200F5E75B;
+			remoteInfo = BestFriendsWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7A45B83F2A86AAF500F5E75B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7A45B83E2A86AAF500F5E75B /* BestFriendsWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		16E04433DE68818589291B02 /* Pods-BestFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.debug.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.debug.xcconfig"; sourceTree = "<group>"; };
 		2D7127BA2A658B9000E14744 /* CH11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH11.swift; sourceTree = "<group>"; };
@@ -412,6 +450,20 @@
 		7A33409329582725005C4CE1 /* NiceMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceMessageModel.swift; sourceTree = "<group>"; };
 		7A380F1528271E3E007151AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A3F0310265C9E5A00DBA207 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		7A45B82A2A86AAF200F5E75B /* BestFriendsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BestFriendsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A45B82B2A86AAF200F5E75B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		7A45B82D2A86AAF200F5E75B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		7A45B8302A86AAF300F5E75B /* BestFriendsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestFriendsWidgetBundle.swift; sourceTree = "<group>"; };
+		7A45B8322A86AAF300F5E75B /* BestFriendsWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestFriendsWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		7A45B8342A86AAF300F5E75B /* BestFriendsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestFriendsWidget.swift; sourceTree = "<group>"; };
+		7A45B8362A86AAF300F5E75B /* BestFriendsWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = BestFriendsWidget.intentdefinition; sourceTree = "<group>"; };
+		7A45B8372A86AAF500F5E75B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A45B8392A86AAF500F5E75B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A45B8432A86AB8600F5E75B /* RR11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR11.swift; sourceTree = "<group>"; };
+		7A45B8452A86AB9700F5E75B /* RR12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR12.swift; sourceTree = "<group>"; };
+		7A45B8472A86AB9E00F5E75B /* RR13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR13.swift; sourceTree = "<group>"; };
+		7A45B8492A86ABA300F5E75B /* RR14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR14.swift; sourceTree = "<group>"; };
+		7A45B84B2A86ABA900F5E75B /* RR15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR15.swift; sourceTree = "<group>"; };
 		7A469E53284D6AC0004AF547 /* TextAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlert.swift; sourceTree = "<group>"; };
 		7A4D50062783B9D3006F7404 /* UIScreenExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreenExtension.swift; sourceTree = "<group>"; };
 		7A4E336626A0D6FC00202BB7 /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
@@ -686,6 +738,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7A45B8272A86AAF200F5E75B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A45B82E2A86AAF200F5E75B /* SwiftUI.framework in Frameworks */,
+				7A45B82C2A86AAF200F5E75B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A71BCF82625292A00E6FA9E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -705,6 +766,11 @@
 			isa = PBXGroup;
 			children = (
 				2DBF3EF22A61AD3100CB1CAD /* RR10.swift */,
+				7A45B8432A86AB8600F5E75B /* RR11.swift */,
+				7A45B8452A86AB9700F5E75B /* RR12.swift */,
+				7A45B8472A86AB9E00F5E75B /* RR13.swift */,
+				7A45B8492A86ABA300F5E75B /* RR14.swift */,
+				7A45B84B2A86ABA900F5E75B /* RR15.swift */,
 			);
 			path = RR;
 			sourceTree = "<group>";
@@ -781,6 +847,19 @@
 			path = "Ext+Custom";
 			sourceTree = "<group>";
 		};
+		7A45B82F2A86AAF300F5E75B /* BestFriendsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				7A45B8302A86AAF300F5E75B /* BestFriendsWidgetBundle.swift */,
+				7A45B8322A86AAF300F5E75B /* BestFriendsWidgetLiveActivity.swift */,
+				7A45B8342A86AAF300F5E75B /* BestFriendsWidget.swift */,
+				7A45B8362A86AAF300F5E75B /* BestFriendsWidget.intentdefinition */,
+				7A45B8372A86AAF500F5E75B /* Assets.xcassets */,
+				7A45B8392A86AAF500F5E75B /* Info.plist */,
+			);
+			path = BestFriendsWidget;
+			sourceTree = "<group>";
+		};
 		7A6A4D00262B865D00561D87 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -804,6 +883,7 @@
 			isa = PBXGroup;
 			children = (
 				7A71BCFD2625292A00E6FA9E /* BestFriends */,
+				7A45B82F2A86AAF300F5E75B /* BestFriendsWidget */,
 				7A71BCFC2625292A00E6FA9E /* Products */,
 				B0AC56E4DD28BEF3B77FB63A /* Pods */,
 				A3251877B3A7379C0839598D /* Frameworks */,
@@ -814,6 +894,7 @@
 			isa = PBXGroup;
 			children = (
 				7A71BCFB2625292A00E6FA9E /* BestFriends.app */,
+				7A45B82A2A86AAF200F5E75B /* BestFriendsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1055,6 +1136,8 @@
 			children = (
 				7AB5216E289D9BBB005A49FA /* StoreKit.framework */,
 				D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */,
+				7A45B82B2A86AAF200F5E75B /* WidgetKit.framework */,
+				7A45B82D2A86AAF200F5E75B /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1871,6 +1954,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7A45B8292A86AAF200F5E75B /* BestFriendsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A45B8422A86AAF500F5E75B /* Build configuration list for PBXNativeTarget "BestFriendsWidgetExtension" */;
+			buildPhases = (
+				7A45B8262A86AAF200F5E75B /* Sources */,
+				7A45B8272A86AAF200F5E75B /* Frameworks */,
+				7A45B8282A86AAF200F5E75B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BestFriendsWidgetExtension;
+			productName = BestFriendsWidgetExtension;
+			productReference = 7A45B82A2A86AAF200F5E75B /* BestFriendsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		7A71BCFA2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A71BD0A2625292B00E6FA9E /* Build configuration list for PBXNativeTarget "BestFriends" */;
@@ -1881,10 +1981,12 @@
 				7A71BCF92625292A00E6FA9E /* Resources */,
 				7ABD3FC726BAF39100018D8D /* ShellScript */,
 				B7176622254BA9E967A008DB /* [CP] Embed Pods Frameworks */,
+				7A45B83F2A86AAF500F5E75B /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7A45B83D2A86AAF500F5E75B /* PBXTargetDependency */,
 			);
 			name = BestFriends;
 			packageProductDependencies = (
@@ -1902,9 +2004,12 @@
 		7A71BCF32625292A00E6FA9E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					7A45B8292A86AAF200F5E75B = {
+						CreatedOnToolsVersion = 14.3;
+					};
 					7A71BCFA2625292A00E6FA9E = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -1929,11 +2034,20 @@
 			projectRoot = "";
 			targets = (
 				7A71BCFA2625292A00E6FA9E /* BestFriends */,
+				7A45B8292A86AAF200F5E75B /* BestFriendsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7A45B8282A86AAF200F5E75B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A45B8382A86AAF500F5E75B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A71BCF92625292A00E6FA9E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2024,6 +2138,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7A45B8262A86AAF200F5E75B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A45B83A2A86AAF500F5E75B /* BestFriendsWidget.intentdefinition in Sources */,
+				7A45B8332A86AAF300F5E75B /* BestFriendsWidgetLiveActivity.swift in Sources */,
+				7A45B8352A86AAF300F5E75B /* BestFriendsWidget.swift in Sources */,
+				7A45B8312A86AAF300F5E75B /* BestFriendsWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A71BCF72625292A00E6FA9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2031,6 +2156,7 @@
 				CF3B42F2293715A800EE1D84 /* SaySomethingNice4.swift in Sources */,
 				CFD12CC1281770B600AB2539 /* MyStreaks.swift in Sources */,
 				CF09118C28488A5700CB0AF0 /* BetaTestVideo.swift in Sources */,
+				7A45B8442A86AB8600F5E75B /* RR11.swift in Sources */,
 				2DFB030E2A57223E00669948 /* FH5.swift in Sources */,
 				CF3B42F8293723B500EE1D84 /* SaySomethingNice7.swift in Sources */,
 				CF24815728F5060100D47AE3 /* PhotoPop3.swift in Sources */,
@@ -2135,6 +2261,7 @@
 				2DFB03102A57226200669948 /* FH6.swift in Sources */,
 				CFC0ACC228EFE26400B49831 /* ChatInfo2.swift in Sources */,
 				CF6504162893192C0092EEB9 /* AtmosphereDVid.swift in Sources */,
+				7A45B83B2A86AAF500F5E75B /* BestFriendsWidget.intentdefinition in Sources */,
 				7A4D50072783B9D3006F7404 /* UIScreenExtension.swift in Sources */,
 				CF8F76C92939B5DF00B109D3 /* TeenBoysUsing.swift in Sources */,
 				CF3B65CA2801D2DE0003A714 /* ResetPasswordView.swift in Sources */,
@@ -2253,6 +2380,7 @@
 				7ACD20BC27FC99CA002F7800 /* InviteView.swift in Sources */,
 				7ADFDB33289B1FA60004FB1C /* ShakePhotoPopView.swift in Sources */,
 				CFC0ACC028EFD6DB00B49831 /* ChatInfo.swift in Sources */,
+				7A45B84C2A86ABA900F5E75B /* RR15.swift in Sources */,
 				7AD8DF0827F6948A00D9F0E1 /* AdViewFullScreen.swift in Sources */,
 				CF2FD942280BBA1B0036F4BB /* Step3_BreathInviteView.swift in Sources */,
 				CFD12CBE281499D700AB2539 /* IndividualFriendMessages.swift in Sources */,
@@ -2263,6 +2391,7 @@
 				7AD8DEF927F615F000D9F0E1 /* HomeView.swift in Sources */,
 				CF0911852848328F00CB0AF0 /* HideChat.swift in Sources */,
 				7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */,
+				7A45B84A2A86ABA300F5E75B /* RR14.swift in Sources */,
 				CF65041A28931C2C0092EEB9 /* FightsInfo.swift in Sources */,
 				2DFB03062A57220C00669948 /* FH1.swift in Sources */,
 				CF76FA08285EED3E000750A4 /* ReceivedPlaylist.swift in Sources */,
@@ -2286,6 +2415,7 @@
 				CF4D86B82976280A004B551D /* HugPushNotification3.swift in Sources */,
 				CFC0ACBE28EF4E7B00B49831 /* SaySomethingPreload.swift in Sources */,
 				2DBF3EE32A61ACE100CB1CAD /* RR2.swift in Sources */,
+				7A45B8462A86AB9700F5E75B /* RR12.swift in Sources */,
 				7AFCF27827FDFF2C00D2DB5C /* ChatGroupsView.swift in Sources */,
 				CFAB5402281A9A1D00BBF502 /* Step7_TimeToTalk.swift in Sources */,
 				2D7127CD2A658C1900E14744 /* CH20.swift in Sources */,
@@ -2338,12 +2468,81 @@
 				62372A192884E27F00CAB75C /* HorizonCustom.swift in Sources */,
 				7A0856A427F3D9C400E8282B /* Model.swift in Sources */,
 				CF65041E28964B410092EEB9 /* EverybodyOk.swift in Sources */,
+				7A45B8482A86AB9E00F5E75B /* RR13.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7A45B83D2A86AAF500F5E75B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A45B8292A86AAF200F5E75B /* BestFriendsWidgetExtension */;
+			targetProxy = 7A45B83C2A86AAF500F5E75B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		7A45B8402A86AAF500F5E75B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AS6KAWXZJT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BestFriendsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BestFriendsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.socialtechlabs.bestfriends.BestFriendsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A45B8412A86AAF500F5E75B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AS6KAWXZJT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BestFriendsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BestFriendsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.socialtechlabs.bestfriends.BestFriendsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		7A71BD082625292B00E6FA9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2466,6 +2665,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 16E04433DE68818589291B02 /* Pods-BestFriends.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
@@ -2495,6 +2695,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F54A61C5A22AA6A9255C7B05 /* Pods-BestFriends.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
@@ -2524,6 +2725,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7A45B8422A86AAF500F5E75B /* Build configuration list for PBXNativeTarget "BestFriendsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A45B8402A86AAF500F5E75B /* Debug */,
+				7A45B8412A86AAF500F5E75B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7A71BCF62625292A00E6FA9E /* Build configuration list for PBXProject "B9" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
