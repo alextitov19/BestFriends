@@ -115,21 +115,24 @@ struct RR9: View {
                         .opacity(0.9)
                         .ignoresSafeArea()
                       
-                      AdPlayerView(name: "sky2")
+//                      AdPlayerView(name: "sky2")
+//                          .ignoresSafeArea()
+//                          .blendMode(.screen)
+             
+                      AdPlayerView(name: "MainPgEarth")
                           .ignoresSafeArea()
                           .blendMode(.screen)
-             
-                      
+                          .opacity(0.99)
             }
             
 
             
             VStack {
-                
-                Image("BushGirl")
-                    .ignoresSafeArea()
-                    .scaledToFit()
-                    .opacity(0.3)
+//
+//                Image("BushGirl")
+//                    .ignoresSafeArea()
+//                    .scaledToFit()
+//                    .opacity(0.3)
                 
 //                                        ZStack(alignment: .bottom) {
                                             

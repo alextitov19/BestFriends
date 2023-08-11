@@ -67,7 +67,7 @@ struct CH7: View {
 
 
             
-            AdPlayerView(name: "sky2")
+            AdPlayerView(name: "MusicVideo")
                 .ignoresSafeArea()
                 .blendMode(.screen)
 
