@@ -77,13 +77,13 @@ struct HomeView: View {
                     if ((homeData) != nil) {
                         
                         Spacer()
-//                            .frame(width: 10)
+
                         Spacer()
                             .frame(height: 663)
+                      
                         HStack {
                             
-//                            Spacer()
-//                                .frame(width: 15)
+
                             
                             ZStack {
                                 

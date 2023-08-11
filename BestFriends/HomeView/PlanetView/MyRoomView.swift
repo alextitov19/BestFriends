@@ -43,7 +43,7 @@ struct MyRoomView: View {
 //                .edgesIgnoringSafeArea(.all)
 //                .opacity(0.7)
             
-            AdPlayerView(name: "MainPg2")
+            AdPlayerView(name: "MainPgEarth")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.99)
