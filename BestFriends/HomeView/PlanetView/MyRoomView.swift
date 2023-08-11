@@ -226,7 +226,7 @@ struct MyRoomView: View {
                                                         label: {
                                             Text("Send")
                                                 .fontWeight(.regular)
-                                                .frame(width: 90, height: 30)
+                                                .frame(width: 85, height: 30)
                                                 .foregroundColor(ColorManager .purple5)
                                                 .font(.system(size: 17))
                                                 .background(ColorManager .purple1)
@@ -244,7 +244,7 @@ struct MyRoomView: View {
                                                         label: {
                                             Text("Received")
                                                 .fontWeight(.regular)
-                                                .frame(width: 90, height: 30)
+                                                .frame(width: 85, height: 30)
                                                 .foregroundColor(ColorManager .purple5)
                                                 .font(.system(size: 15))
                                                 .background(ColorManager .purple1)
