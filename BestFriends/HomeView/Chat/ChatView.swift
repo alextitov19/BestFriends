@@ -260,8 +260,9 @@ struct ChatView: View {
                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                 
                 // MARK: Main scroll view
-                ScrollView(.vertical, showsIndicators: false) {
-                    ScrollViewReader { value in
+                ScrollViewReader { proxy in
+                    
+                    ScrollView(.vertical, showsIndicators: false) {
                         ForEach(messages, id: \.id) { message in
                             if message.senderId == user.id {
                                 ChatBubble(groupId: group.id, message: message, myOwnMessage: message.senderId == user.id)
@@ -277,10 +278,11 @@ struct ChatView: View {
                                     }
                             }
                         }
-                        .onChange(of: messages.count) { _ in
-                                            value.scrollTo(messages.count - 1)
-                                        }
                     }
+                    .onChange(of: messages.count) { _ in
+                        proxy.scrollTo(messages.last!.id)
+                    }
+                
                 }
                 
                 VStack {
