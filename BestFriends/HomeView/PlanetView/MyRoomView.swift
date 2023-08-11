@@ -286,7 +286,7 @@ struct MyRoomView: View {
                                         
                                         NavigationLink( destination:  CH10(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                                                         label: {
-                                            Text("Yep! \nGot one")
+                                            Text("Friend \nsent one!")
                                                 .fontWeight(.regular)
                                                 .frame(width: 90, height: 40)
                                                 .foregroundColor(ColorManager .purple5)

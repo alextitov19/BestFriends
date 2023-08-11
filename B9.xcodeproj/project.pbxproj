@@ -831,6 +831,7 @@
 				7A0856A927F3DCC300E8282B /* SessionManager.swift */,
 				7AD8DF0B27F6970A00D9F0E1 /* AuthView */,
 				7AD8DF0A27F696F000D9F0E1 /* HomeView */,
+				CF6C5B0E2A860DED00EC4915 /* MAIN PAGE VIEW */,
 				7A8F3D7C2A32BC5D00BC2CF4 /* MyRoomView */,
 				2DBF3EDF2A61ACC400CB1CAD /* RR */,
 				7A1C048627F4C3A90002B173 /* Models */,
@@ -1453,6 +1454,7 @@
 			isa = PBXGroup;
 			children = (
 				CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */,
+				CF6C5B0F2A860E8D00EC4915 /* Anxiety Attack */,
 			);
 			path = "My VIBE";
 			sourceTree = "<group>";
@@ -1475,6 +1477,24 @@
 				2DFB031E2A5D306400669948 /* CH3.swift */,
 			);
 			path = "CareHearts INFO";
+			sourceTree = "<group>";
+		};
+		CF6C5B0E2A860DED00EC4915 /* MAIN PAGE VIEW */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "MAIN PAGE VIEW";
+			sourceTree = "<group>";
+		};
+		CF6C5B0F2A860E8D00EC4915 /* Anxiety Attack */ = {
+			isa = PBXGroup;
+			children = (
+				CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */,
+				CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */,
+				CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */,
+				CF4D86B92978FDBA004B551D /* MyFears.swift */,
+			);
+			path = "Anxiety Attack";
 			sourceTree = "<group>";
 		};
 		CF71574F2975D27000094F22 /* SendKisses */ = {
@@ -1765,10 +1785,6 @@
 				CFD8BD0D2915565B00F86EFB /* MyRoomInfo.swift */,
 				CFD6C05C294169CC00D57E0B /* HideMyRoom.swift */,
 				CFD6C05E29416A3B00D57E0B /* HideMyRoomLink.swift */,
-				CF4D86B92978FDBA004B551D /* MyFears.swift */,
-				CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */,
-				CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */,
-				CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */,
 			);
 			path = "OLD My ROOM";
 			sourceTree = "<group>";
