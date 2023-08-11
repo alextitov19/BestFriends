@@ -115,18 +115,23 @@ struct CH9: View {
                     
                     VStack {
                         
+//                        
+//                        
+//                        Spacer()
+//                            .frame(height: 15)
                         
                         
-                        Spacer()
-                            .frame(height: 15)
-                        
-                        
-                        Text("Jump up high and you will \nsee it floating towards you!")
+                        Text("Jump up high and you will")
                                                 .font(.system(size: 20))
                                                 .foregroundColor(ColorManager .grey1)
                                                 .fontWeight(.light)
                                                 .multilineTextAlignment(.center)
-                        
+                     
+                        Text("see it floating towards you!")
+                                                .font(.system(size: 20))
+                                                .foregroundColor(ColorManager .grey1)
+                                                .fontWeight(.light)
+                                                .multilineTextAlignment(.center)
              
                         
                         Spacer()
