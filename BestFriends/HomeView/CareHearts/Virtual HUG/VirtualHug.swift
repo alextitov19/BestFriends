@@ -95,9 +95,9 @@ struct VirtualHug: View {
             } else {
                 
                 Color.black
-                                    .opacity(0.8)
-                                    .ignoresSafeArea()
-                                    .onAppear()
+                    .opacity(0.8)
+                    .ignoresSafeArea()
+                    .onAppear()
                 
               
                 
@@ -105,6 +105,9 @@ struct VirtualHug: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
+                
+            
+         
                 
             }
             
@@ -116,11 +119,7 @@ struct VirtualHug: View {
                                     .frame(height: 10)
                 
          
-                Image("BushGirl")
-                    .frame(width: 300, height: 200)
-                    .cornerRadius(15)
-                    .shadow(color: ColorManager .purple4, radius: 5, x: 5, y: 5)
-                    .opacity(0.7)
+         
                 
      
              
@@ -130,6 +129,10 @@ struct VirtualHug: View {
                     
                     VStack {
                         
+                        Image("BushGirl")
+                            .ignoresSafeArea()
+                            .scaledToFit()
+                            .opacity(0.8)
                         
                         Spacer ()
                             .frame(height: 10)

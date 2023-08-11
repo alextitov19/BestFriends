@@ -65,7 +65,10 @@ struct CH9: View {
 //                    .ignoresSafeArea()
 //                    .scaledToFit()
                 
-             
+//                Image("CareHeartBalloon 1")
+//                    .ignoresSafeArea()
+//                    .scaledToFit()
+//                    .opacity(0.8)
 
             }
             

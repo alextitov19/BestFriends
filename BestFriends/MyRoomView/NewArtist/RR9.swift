@@ -126,26 +126,22 @@ struct RR9: View {
             
             VStack {
                 
-                
+                Image("BushGirl")
+                    .ignoresSafeArea()
+                    .scaledToFit()
+                    .opacity(0.3)
                 
 //                                        ZStack(alignment: .bottom) {
                                             
                                             ZStack {
                                                 
-                                                
-//
-//                                            Image("")
-//                                                .resizable()
-//                                                .frame(width: 350, height: 48)
-//                                                .background(Color.green)
-//                                                .cornerRadius(10)
+                       
                                                 
                                                 Text("WOW! You just found a new artist \non YouTube and want to show them \noff to your friends.")
                                                     .font(.system(size: 19, weight: .light))
                                                     .foregroundColor(Color.white)
                                                     .multilineTextAlignment(.center)
                                        
-                                            
                                             
                                             VStack {
                                                 Spacer()
@@ -210,7 +206,7 @@ struct RR9: View {
                     }
           
                 VStack {
-
+                 
                     Text("(alert friend to look in Chat)")
                         .font(.system(size: 15))
                         .italic()
@@ -351,7 +347,7 @@ struct RR9: View {
                                     .opacity(0.70)
                                 
                             })
-                            
+                         
                             Spacer()
                                 .frame(height: 150)
      

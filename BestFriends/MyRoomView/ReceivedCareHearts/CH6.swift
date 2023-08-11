@@ -82,11 +82,13 @@ struct CH6: View {
                         ZStack {
                             
 
-                            Image("CHHearts")
-                                .frame(width: 375, height: 375)
-                                .cornerRadius(15)
-                                .shadow(color: ColorManager .purple4, radius: 5, x: 5, y: 5)
-                                .opacity(0.7)
+                            Image("CHHearts 1")
+                                .ignoresSafeArea()
+                                .onAppear()
+//                                .frame(width: 375, height: 375)
+//                                .cornerRadius(15)
+//                                .shadow(color: ColorManager .purple4, radius: 5, x: 5, y: 5)
+                                .opacity(0.3)
                             
                             VStack {
                                 
