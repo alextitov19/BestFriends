@@ -157,6 +157,8 @@ struct FH10: View {
                                             .font(.system(size: 13))
                                         
                                     })
+                                
+                             
                             }
                         }
                     }

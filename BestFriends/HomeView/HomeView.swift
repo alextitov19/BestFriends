@@ -32,6 +32,8 @@ struct HomeView: View {
     
     @State private var movingPlanets = false
     
+//    @StateObject var model = Model.loadData
+    
     let reloadingTimer = Timer.publish(every: 30, on: .main, in: .common).autoconnect()
     
     var body: some View {
@@ -92,6 +94,7 @@ struct HomeView: View {
                                     .frame(width: 19, height: 19)
                                     .foregroundColor(Color.white)
                                 
+                            
                                 Image(systemName: "heart")
                                     .resizable()
                                     .scaledToFit()
@@ -108,34 +111,40 @@ struct HomeView: View {
                                 ) { EmptyView() }
                             }
                          
+//   ****************************************** Trying to make Heart image BLINK ******
+                           
+//                            struct ContentView: View {
+//                              @StateObject var model = Model.loadData
+//
+//                              let timer = Timer.publish(every: 0.25, tolerance: 0.1, on: .main, in: .common).autoconnect()
+//
+//                              let color = Color(UIColor.label)
+//
+//                              public var body: some View {
+//                                VStack {
+//                                  Text(model.items[0].name)
+//
+//                                  if model.items[0].isLedBlinking {
+//                                    Image(systemName: model.items[0].isLEDon ? "circle.fill" : "circle")
+//                                      .onReceive(timer) { _ in
+//                                        model.items[0].isLEDon.toggle()
+//                                      }
+//                                      .foregroundColor(model.items[0].isLEDon ? .green : color)
+//                                  } else {
+//                                    Image(systemName: model.items[0].isLEDon ? "circle.fill" : "circle")
+//                                      .foregroundColor(model.items[0].isLEDon ? .green : color)
+//                                  }
+//
+//                                  Button("Toggle: \(model.items[0].isLedBlinking ? "Blinking" : "Still")") {
+//                                    model.items[0].isLedBlinking.toggle()
+//                                  }
+//                                }
+//                                .foregroundColor(color)
+//                              }
+//                            }
                             
-//    Blink Code *******************************************************
+//*******************************************
 
-
-//                           struct BlinkViewModifier: ViewModifier {
-//
-//                               let duration: Double
-//                               @State private var blinking: Bool = false
-//
-//                               func body(content: Content) -> some View {
-//                                   content
-//                                       .opacity(blinking ? 0 : 1)
-//                                       .animation(.easeOut(duration: duration).repeatForever())
-//                                       .onAppear {
-//                                           withAnimation {
-//                                               blinking = true
-//                                           }
-//                                       }
-//                               }
-//                           }
-//
-//                           extension View {
-//                               func blinking(duration: Double = 0.75) -> some View {
-//                                   modifier(BlinkViewModifier(duration: duration))
-//                               }
-//                           }
-
-//    Blink Code *******************************************************
                             
                             
                             Spacer()

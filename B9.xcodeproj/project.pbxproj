@@ -1011,6 +1011,7 @@
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
 				7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */,
 				7AD2642929EDCE020007ACD5 /* NotificationsView.swift */,
+				CF3B42F1293715A800EE1D84 /* SaySomethingNice4.swift */,
 				CF725E2628516E180096342F /* Tokens */,
 				CFD8BD1229156D2A00F86EFB /* PlanetView */,
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
@@ -1764,7 +1765,6 @@
 				CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */,
 				CF37535228BD5544003817E3 /* SaySomethingNice2.swift */,
 				CF4CFAC128E8DC3B00D6AEA9 /* SaySomethingNice3.swift */,
-				CF3B42F1293715A800EE1D84 /* SaySomethingNice4.swift */,
 			);
 			path = SaySomethingNice;
 			sourceTree = "<group>";
