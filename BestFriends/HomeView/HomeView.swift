@@ -253,6 +253,7 @@ struct HomeView: View {
                 if homeData?.groups != nil && homeData?.user != nil {
                     ChatGroupsView(user: homeData!.user, groups: groups)
                         .environmentObject(sessionManager)
+                        .offset(y: -10)
                 }
                 
             }
