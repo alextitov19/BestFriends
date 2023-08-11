@@ -36,7 +36,7 @@ struct RR4: View {
         
         ZStack {
             
-            ColorManager.grey4
+            Color.black
                 .opacity(0.8)
                 .ignoresSafeArea()
          
@@ -50,38 +50,40 @@ struct RR4: View {
 
             VStack{
                 
-                Spacer()
-                        .frame(height: 10)
+              
                     
                     VStack {
 
-                  
+                        Text("I need to talk!")
+                            .font(.system(size: 55, weight: .light))
+                            .foregroundColor(Color.white)
                         
-                
+//                        Text("NOW!")
+//                            .font(.system(size: 35, weight: .light))
+//                            .foregroundColor(Color.white)
+                        
+                        Spacer()
+                                .frame(height: 40)
 
                         
                         Text("Alert friend with")
-                            .font(.system(size: 30, weight: .light))
-                            .foregroundColor(Color.white)
+                            .font(.system(size: 15, weight: .light))
+                            .italic()
+                            .foregroundColor(ColorManager .grey1)
                     
                         Text("Push Notification")
-                            .font(.system(size: 35, weight: .light))
-                            .foregroundColor(Color.white)
-                        
-                        Spacer()
-                            .frame(height: 10)
-                        
-                        Text("In-app notification")
                             .font(.system(size: 15, weight: .light))
                             .italic()
                             .foregroundColor(ColorManager .grey1)
                         
-                        Text("was automatically sent")
-                            .font(.system(size: 15, weight: .light))
-                            .italic()
-                            .foregroundColor(ColorManager .grey1)
-                        
-                        
+//                        Spacer()
+//                            .frame(height: 10)
+//
+//                        Text("In-app notification was sent")
+//                            .font(.system(size: 15, weight: .light))
+//                            .italic()
+//                            .foregroundColor(ColorManager .grey1)
+                  
                         HStack {
                             //
                             //                            Text("select >")
@@ -226,7 +228,7 @@ struct RR4: View {
              
                     NavigationLink( destination:  MyFears(user: user, friends: friends),
                                     label: {
-                        Text("Feel an anxiety attack comeing on?")
+                        Text("Feel an anxiety attack comming on?")
                             .fontWeight(.bold)
                             .frame(width: 300, height: 40)
                             .foregroundColor(Color.black)
@@ -265,7 +267,7 @@ struct RR4: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName)  I need to Talk! (thx for leaving your 'notifications' ON", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName)  I need to Talk!", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.

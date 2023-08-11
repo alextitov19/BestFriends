@@ -303,7 +303,7 @@ struct MyRoomView: View {
                                         
                                         NavigationLink( destination:  RR4(user: user, friends: friends),
                                                         label: {
-                                            Text("Panic Attack!")
+                                            Text("Urgent!")
                                                 .fontWeight(.regular)
                                                 .frame(width: 95, height: 30)
                                                 .foregroundColor(ColorManager .purple5)
