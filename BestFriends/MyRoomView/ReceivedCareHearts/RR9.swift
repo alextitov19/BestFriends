@@ -1,9 +1,10 @@
 //
-//  CH4.swift
+//  RR9.swift
 //  BestFriends
 //
-//  Created by Zhengxu Wang on 7/11/23.
+//  Created by Zhengxu Wang on 7/15/23.
 //
+
 
 
 
@@ -14,7 +15,7 @@ import AVKit
 import Combine
 
 
-struct CH4: View {
+struct RR9: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -139,7 +140,7 @@ struct CH4: View {
 //                                                .background(Color.green)
 //                                                .cornerRadius(10)
                                                 
-                                                Text("You know 'that' song you listen to \nover-and-over while lying in bed \non one of those days? \n\nSend it to your friend - maybe it will help!")
+                                                Text("WOW! You just found a new artist \non YouTube and want to show them \noff to your friends.")
                                                     .font(.system(size: 19, weight: .light))
                                                     .foregroundColor(Color.white)
                                                     .multilineTextAlignment(.center)
@@ -152,7 +153,7 @@ struct CH4: View {
                                                 TextField("", text: $customMessage)
                                                     .placeholder(when: customMessage.isEmpty) {
                                                         HStack {
-                                                            Text("Type name of song here")
+                                                            Text("Type name of artist here")
                                                                 .foregroundColor(Color.white)
                                                                 .fontWeight(.thin)
                                                             Spacer()
@@ -210,7 +211,7 @@ struct CH4: View {
           
                 VStack {
 
-                    Text("(alert friend to look for the Song in Chat)")
+                    Text("(alert friend to look in Chat)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
@@ -373,12 +374,12 @@ struct CH4: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) just sent you a Song in Chat", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) found a New Artist and sent link in Chat", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Just sent you a Song in Chat", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                        print("Create a New Song notification response code: ", response)
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "found a New Artist and sent link in Chat", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        print("Create a New Artist notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)
                 }

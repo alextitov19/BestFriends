@@ -412,7 +412,7 @@ struct MyRoomView: View {
                     VStack {
                                     
                         Spacer()
-                            .frame(height: 60)
+                            .frame(height: 75)
                                     
                         HStack {
                                        
@@ -420,9 +420,9 @@ struct MyRoomView: View {
                                 
                                 NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
                                                 label: {
-                                    Text("Coupons")
+                                    Text("Meet-up \nCoupons")
                                         .fontWeight(.regular)
-                                        .frame(width: 120, height: 35)
+                                        .frame(width: 120, height: 45)
                                         .foregroundColor(ColorManager .purple5)
                                         .font(.system(size: 17))
                                         .background(ColorManager .purple1)
@@ -441,7 +441,7 @@ struct MyRoomView: View {
                                                 label: {
                                     Text("SmileVault")
                                         .fontWeight(.regular)
-                                        .frame(width: 120, height: 35)
+                                        .frame(width: 120, height: 45)
                                         .foregroundColor(ColorManager .purple5)
                                         .font(.system(size: 17))
                                         .background(ColorManager .purple1)
@@ -459,19 +459,23 @@ struct MyRoomView: View {
                                         
                             VStack {
                                 
-//************************************ When Andy finishes Friendship Highlights ***********
+//************************************ Conteswt or Friendship Highlights ***********
                                 
 //                NavigationLink( destination:  FH1(user: user, friends: friends, friendAtmospheres: friendAtmospheres),
 //                        label: {
 //                            Text("Highlights")
+                                
+//                                NavigationLink( destination:  CH11(),
+//                                                label: {
+//                                    Text("Contest")
                                     
-                                    NavigationLink( destination:  CH11(),
+                                NavigationLink( destination:  RR9(user: user, friend: user, friends: friends, groups: groups),
                                                     label: {
-                                        Text("Contest")
+                                        Text("Found NEW \nArtist")
                                             .fontWeight(.regular)
-                                            .frame(width: 120, height: 35)
+                                            .frame(width: 120, height: 45)
                                             .foregroundColor(ColorManager .purple5)
-                                            .font(.system(size: 17))
+                                            .font(.system(size: 15))
                                             .background(ColorManager .purple1)
                                             .glow(color: ColorManager.purple3, radius: 1)
                                             .shadow(color: .white, radius: 3, x: -4, y: 4)
@@ -489,7 +493,7 @@ struct MyRoomView: View {
                                         label: {
                                         Text("Friend Fight?")
                                         .fontWeight(.regular)
-                                        .frame(width: 120, height: 35)
+                                        .frame(width: 120, height: 45)
                                         .foregroundColor(ColorManager .purple5)
                                         .font(.system(size: 17))
                                         .background(ColorManager .purple1)
