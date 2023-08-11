@@ -256,7 +256,7 @@ struct NotificationsView: View {
             case "'Vibe' just changed! Shoot'em a CareHeart or PhotoPOP":
                 vibeActive = true
                 
-            case "Needs to Talk!":
+            case "I Need to Talk!":
                 needTalkActive = true
                 
             case "I found a New Artist & posted them in Chat":
