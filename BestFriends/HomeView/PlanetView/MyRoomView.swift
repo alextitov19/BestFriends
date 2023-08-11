@@ -32,18 +32,18 @@ struct MyRoomView: View {
         
            
             
-            ColorManager .purple4
-                .opacity(0.6)
+            Color.black
+                .opacity(0.4)
                 .ignoresSafeArea()
             
             
-            Image("FHBackground")
-                .resizable()
-                .scaledToFill()
-                .edgesIgnoringSafeArea(.all)
-                .opacity(0.7)
+//            Image("FHBackground")
+//                .resizable()
+//                .scaledToFill()
+//                .edgesIgnoringSafeArea(.all)
+//                .opacity(0.7)
             
-            AdPlayerView(name: "sky2")
+            AdPlayerView(name: "MainPgEarth")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.99)
