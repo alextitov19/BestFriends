@@ -218,7 +218,7 @@ struct RR4: View {
                 })
                 
                 Spacer()
-                    .frame(height: 40)
+                    .frame(height: 60)
                 
             
                 
@@ -226,9 +226,9 @@ struct RR4: View {
              
                     NavigationLink( destination:  MyFears(user: user, friends: friends),
                                     label: {
-                        Text("Feel an anxiety attack coming on?")
+                        Text("Feel an anxiety attack comeing on?")
                             .fontWeight(.bold)
-                            .frame(width: 320, height: 40)
+                            .frame(width: 300, height: 40)
                             .foregroundColor(Color.black)
                             .font(.system(size: 16))
                             .background(Color.cyan)
@@ -238,9 +238,7 @@ struct RR4: View {
                             .cornerRadius(15)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                     })
-                    
-                    Spacer()
-                        .frame(height: 100)
+               
                     
             
                     

@@ -121,7 +121,7 @@ struct AtmosphereMain2: View {
                             .foregroundColor(Color.white)
               
                         
-                        Text("Emotional Support in the meantime.")
+                        Text("CareHearts in the meantime.")
                             .font(.system(size: 22))
 //                            .italic()
                             .fontWeight(.light)
@@ -598,18 +598,7 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 17)
                         
-                        NavigationLink( destination:  RR4(user: user, friends: friends),
-                                        label: {
-                            Text("Something's Up - I really need to TALk")
-                            
-                                .font(.system(size: 15))
-                                .foregroundColor(Color.white)
-                                .frame(width: 315, height: 30, alignment: .center)
-                                .background(mood == 9 ? Color.red : Color.pink)
-                                .cornerRadius(7)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
-                        })
+                 
                         
                         Spacer()
                             .frame(height: 20)
