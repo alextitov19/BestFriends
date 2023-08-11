@@ -82,7 +82,7 @@ struct CH6: View {
                         ZStack {
                             
 
-                            Image("surferboysimg")
+                            Image("CHHearts")
                                 .frame(width: 375, height: 375)
                                 .cornerRadius(15)
                                 .shadow(color: ColorManager .purple4, radius: 5, x: 5, y: 5)
