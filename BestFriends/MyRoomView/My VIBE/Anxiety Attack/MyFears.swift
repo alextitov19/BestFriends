@@ -60,7 +60,7 @@ struct MyFears: View {
 //
 //
 //
-            ColorManager.grey4
+            Color.black
                 .opacity(0.8)
                 .ignoresSafeArea()
          
