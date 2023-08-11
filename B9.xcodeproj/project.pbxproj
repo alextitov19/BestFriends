@@ -723,8 +723,6 @@
 			isa = PBXGroup;
 			children = (
 				2DFB031C2A5D305A00669948 /* CH2.swift */,
-				2DFB031E2A5D306400669948 /* CH3.swift */,
-				2DFB03202A5D307A00669948 /* CH4.swift */,
 				2DFB03222A5D308600669948 /* CH5.swift */,
 				2DFB03242A5D309200669948 /* CH6.swift */,
 				2DFB03262A5D30A200669948 /* CH7.swift */,
@@ -834,6 +832,7 @@
 				7AD8DF0B27F6970A00D9F0E1 /* AuthView */,
 				7AD8DF0A27F696F000D9F0E1 /* HomeView */,
 				7A8F3D7C2A32BC5D00BC2CF4 /* MyRoomView */,
+				2DBF3EDF2A61ACC400CB1CAD /* RR */,
 				7A1C048627F4C3A90002B173 /* Models */,
 				7AC71DA627F3D7D4008D191B /* API */,
 				7A1DBD602659B1A400EB4B42 /* Ext+Custom */,
@@ -867,19 +866,26 @@
 		7A8F3D7C2A32BC5D00BC2CF4 /* MyRoomView */ = {
 			isa = PBXGroup;
 			children = (
-				2DBF3EDF2A61ACC400CB1CAD /* RR */,
+				CFE1946A2812A9E300ED5718 /* Streaks */,
 				CF6C5B022A86062500EC4915 /* INFO icon */,
-				CF6C5B002A8603F600EC4915 /* Start Here */,
+				CF6C5B092A86092200EC4915 /* START HERE */,
 				CF6C5AFF2A8602CA00EC4915 /* Accessorizing */,
+				CF6C5B082A8608E500EC4915 /* CAREHEARTS */,
+				CF6C5B0D2A860B3300EC4915 /* CareHearts INFO */,
+				CF6C5B0C2A860AD100EC4915 /* Send CareHearts */,
+				CF6C5B0B2A860A7300EC4915 /* My VIBE */,
 				2DFB03192A5D2FD200669948 /* ReceivedCareHearts */,
-				CF6C5AFD2A86025300EC4915 /* NewArtist */,
-				CF6C5AFE2A86029500EC4915 /* MyCrushes */,
-				CF0EB7D82A74E750000B2A1F /* Drama Central 2 */,
-				CF0EB7D72A736808000B2A1F /* FriendshipRewards */,
-				2DFB02FE2A57217100669948 /* FriendshipHighlights */,
-				7AE4C5622A3A9A1900A90DBF /* Affirmations */,
-				7A8A72982A33F690005FA3B1 /* Journal */,
+				CF6C5B062A86089F00EC4915 /* PHOTOPOP */,
+				CF6C5B052A86087F00EC4915 /* FRIENDSHIPS */,
+				CF6C5B0A2A860A2E00EC4915 /* Coupons */,
 				CFD12CC82819E83900AB2539 /* SmileVault */,
+				CF6C5AFD2A86025300EC4915 /* NewArtist */,
+				CF0EB7D82A74E750000B2A1F /* Drama Central 2 */,
+				7A8A72982A33F690005FA3B1 /* Journal */,
+				CF6C5AFE2A86029500EC4915 /* MyCrushes */,
+				CF37535B28C6953B003817E3 /* DREAMS */,
+				2DFB02FE2A57217100669948 /* FriendshipHighlights */,
+				CFB65BC72A37EA8F00E98A8B /* Affirmations */,
 			);
 			path = MyRoomView;
 			sourceTree = "<group>";
@@ -1011,13 +1017,11 @@
 				7AC4C01D27FF49F9000C4140 /* Chat */,
 				CF3B65A9280071580003A714 /* Settings */,
 				CFFA7F0529B0DCDC0086F88A /* Start */,
-				CF37535B28C6953B003817E3 /* DREAMS */,
 				CF412806292712FD003BCBFA /* STORIES _ STORIES _ STORIES */,
 				CFD12CC92819E98800AB2539 /* DramaCentral */,
 				CFAE7347283C745800015FD2 /* Help Beta Test */,
 				CFD0469D2838392200BF0B02 /* URGENT Chat Invite */,
 				CF47CF0A28E2CAC7008B6F11 /* CareHearts */,
-				CFB65BC72A37EA8F00E98A8B /* Affirmations */,
 				CFB65BC52A35656300E98A8B /* CareHearts2 */,
 				CFD8BD0C2915562D00F86EFB /* OLD My ROOM */,
 			);
@@ -1031,14 +1035,6 @@
 				7A1C048427F4BEB30002B173 /* SignUpView.swift */,
 			);
 			path = AuthView;
-			sourceTree = "<group>";
-		};
-		7AE4C5622A3A9A1900A90DBF /* Affirmations */ = {
-			isa = PBXGroup;
-			children = (
-				7AE4C5632A3A9A3500A90DBF /* AffirmationsView.swift */,
-			);
-			path = Affirmations;
 			sourceTree = "<group>";
 		};
 		7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */ = {
@@ -1100,6 +1096,7 @@
 		CF0EB7D82A74E750000B2A1F /* Drama Central 2 */ = {
 			isa = PBXGroup;
 			children = (
+				CFA1225F2859771600E22E84 /* HurtFeelings.swift */,
 				2D7127C22A658BDD00E14744 /* CH15.swift */,
 				2D7127C02A658BCF00E14744 /* CH14.swift */,
 				2D7127BE2A658BBA00E14744 /* CH13.swift */,
@@ -1136,7 +1133,6 @@
 			isa = PBXGroup;
 			children = (
 				CF381A582829205800B3719E /* OurMission.swift */,
-				CFE1946A2812A9E300ED5718 /* Streaks */,
 			);
 			path = "My Planet";
 			sourceTree = "<group>";
@@ -1304,7 +1300,6 @@
 				CF650426289F11980092EEB9 /* WorldPreload.swift */,
 				CFC0EE6E2906772A006B3FAA /* WorldPreload2.swift */,
 				CFD8BD052912A98A00F86EFB /* SaySomethingNice */,
-				CFD8BD032912A8F300F86EFB /* PhotoPop */,
 				CFD8BD042912A95900F86EFB /* SomethingBuggingYou */,
 				CFD8BD062912A9C500F86EFB /* SendSong */,
 				CF8F76C72939B5BA00B109D3 /* TEENBoysUsing? */,
@@ -1386,12 +1381,52 @@
 			path = Accessorizing;
 			sourceTree = "<group>";
 		};
-		CF6C5B002A8603F600EC4915 /* Start Here */ = {
+		CF6C5B022A86062500EC4915 /* INFO icon */ = {
 			isa = PBXGroup;
 			children = (
-				2DFB03072A57221600669948 /* FH2.swift */,
-				2DBF3EEA2A61AD0900CB1CAD /* RR6.swift */,
+				CF2EE6F729516C8A00B1B16D /* InfoHowChatWorks.swift */,
+				2DBF3EE42A61ACEB00CB1CAD /* RR3.swift */,
+			);
+			path = "INFO icon";
+			sourceTree = "<group>";
+		};
+		CF6C5B052A86087F00EC4915 /* FRIENDSHIPS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FRIENDSHIPS;
+			path = CareHearts/FRIENDSHIPS;
+			sourceTree = "<group>";
+		};
+		CF6C5B062A86089F00EC4915 /* PHOTOPOP */ = {
+			isa = PBXGroup;
+			children = (
+				7A04C13C28553818003AB24A /* PhotoPopView.swift */,
+				CF6499DE294D4148003BBF83 /* INFOPreloadA.swift */,
+				7A04C13E2855390B003AB24A /* PhotoPopImageView.swift */,
+				CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */,
+				CF24815628F5060100D47AE3 /* PhotoPop3.swift */,
+				CF24815428F5018B00D47AE3 /* PhotoPop1.swift */,
+				CF0EB7D72A736808000B2A1F /* FriendshipRewards */,
+			);
+			name = PHOTOPOP;
+			path = PhotoPop/PHOTOPOP;
+			sourceTree = "<group>";
+		};
+		CF6C5B082A8608E500EC4915 /* CAREHEARTS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CAREHEARTS;
+			path = Accessorizing/CAREHEARTS;
+			sourceTree = "<group>";
+		};
+		CF6C5B092A86092200EC4915 /* START HERE */ = {
+			isa = PBXGroup;
+			children = (
 				2DBF3EE02A61ACD400CB1CAD /* RR1.swift */,
+				2DBF3EEA2A61AD0900CB1CAD /* RR6.swift */,
+				2DFB03072A57221600669948 /* FH2.swift */,
 				2DFB03152A57228400669948 /* FH9.swift */,
 				2DFB03132A57227900669948 /* FH8.swift */,
 				2DFB030F2A57226200669948 /* FH6.swift */,
@@ -1402,22 +1437,49 @@
 				2DFB030D2A57223E00669948 /* FH5.swift */,
 				2DBF3EEC2A61AD1200CB1CAD /* RR7.swift */,
 			);
-			path = "Start Here";
+			name = "START HERE";
+			path = "INFO icon/START HERE";
 			sourceTree = "<group>";
 		};
-		CF6C5B022A86062500EC4915 /* INFO icon */ = {
+		CF6C5B0A2A860A2E00EC4915 /* Coupons */ = {
 			isa = PBXGroup;
 			children = (
-				CF2EE6F729516C8A00B1B16D /* InfoHowChatWorks.swift */,
-				2DBF3EE42A61ACEB00CB1CAD /* RR3.swift */,
+				CF4128032922A451003BCBFA /* PhotoPOPFGPreload.swift */,
 			);
-			path = "INFO icon";
+			path = Coupons;
+			sourceTree = "<group>";
+		};
+		CF6C5B0B2A860A7300EC4915 /* My VIBE */ = {
+			isa = PBXGroup;
+			children = (
+				CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */,
+			);
+			path = "My VIBE";
+			sourceTree = "<group>";
+		};
+		CF6C5B0C2A860AD100EC4915 /* Send CareHearts */ = {
+			isa = PBXGroup;
+			children = (
+				CFC0EE732907A823006B3FAA /* HugPreload.swift */,
+				CF7157502975D29900094F22 /* SendKisses.swift */,
+				CFC0EE752907AB7D006B3FAA /* HugPushNotification.swift */,
+				CF3B42F329371A6D00EE1D84 /* SaySomethingNice5.swift */,
+				2DFB03202A5D307A00669948 /* CH4.swift */,
+			);
+			path = "Send CareHearts";
+			sourceTree = "<group>";
+		};
+		CF6C5B0D2A860B3300EC4915 /* CareHearts INFO */ = {
+			isa = PBXGroup;
+			children = (
+				2DFB031E2A5D306400669948 /* CH3.swift */,
+			);
+			path = "CareHearts INFO";
 			sourceTree = "<group>";
 		};
 		CF71574F2975D27000094F22 /* SendKisses */ = {
 			isa = PBXGroup;
 			children = (
-				CF7157502975D29900094F22 /* SendKisses.swift */,
 			);
 			path = SendKisses;
 			sourceTree = "<group>";
@@ -1559,10 +1621,7 @@
 		CFB65BC52A35656300E98A8B /* CareHearts2 */ = {
 			isa = PBXGroup;
 			children = (
-				CFA1225F2859771600E22E84 /* HurtFeelings.swift */,
 				CFD12CC6281943CA00AB2539 /* Impetus.swift */,
-				CF4128032922A451003BCBFA /* PhotoPOPFGPreload.swift */,
-				7A04C13C28553818003AB24A /* PhotoPopView.swift */,
 			);
 			path = CareHearts2;
 			sourceTree = "<group>";
@@ -1570,10 +1629,12 @@
 		CFB65BC72A37EA8F00E98A8B /* Affirmations */ = {
 			isa = PBXGroup;
 			children = (
+				7AE4C5632A3A9A3500A90DBF /* AffirmationsView.swift */,
 				2DA887302A3A18C000759A1F /* AffirmationEdit.swift */,
 				2DA8872F2A3A18C000759A1F /* AffirmationMain.swift */,
 			);
-			path = Affirmations;
+			name = Affirmations;
+			path = ../HomeView/Affirmations;
 			sourceTree = "<group>";
 		};
 		CFC0EE702906F9D9006B3FAA /* New Group */ = {
@@ -1612,7 +1673,6 @@
 			isa = PBXGroup;
 			children = (
 				2DBF3EE62A61ACF500CB1CAD /* RR4.swift */,
-				CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */,
 				CF1ECABE286E876900D999F8 /* AtmosphereInfo.swift */,
 				CFD8BD072912B0EB00F86EFB /* AtmosphereInfo2.swift */,
 				CF6504152893192C0092EEB9 /* AtmosphereDVid.swift */,
@@ -1633,9 +1693,8 @@
 		CFD12CC82819E83900AB2539 /* SmileVault */ = {
 			isa = PBXGroup;
 			children = (
-				CF72D6FA2921AFE900EDDDA6 /* SmileVaultPreload.swift */,
-				CF6499DE294D4148003BBF83 /* INFOPreloadA.swift */,
 				CFE1946D28133CF700ED5718 /* BestFriendMessages.swift */,
+				CF72D6FA2921AFE900EDDDA6 /* SmileVaultPreload.swift */,
 				CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */,
 			);
 			path = SmileVault;
@@ -1663,17 +1722,6 @@
 				CFAB54242820FFCC00BBF502 /* Push Notifiction Fight Invite */,
 			);
 			path = DramaCentral;
-			sourceTree = "<group>";
-		};
-		CFD8BD032912A8F300F86EFB /* PhotoPop */ = {
-			isa = PBXGroup;
-			children = (
-				CF24815428F5018B00D47AE3 /* PhotoPop1.swift */,
-				CF24815628F5060100D47AE3 /* PhotoPop3.swift */,
-				CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */,
-				7A04C13E2855390B003AB24A /* PhotoPopImageView.swift */,
-			);
-			path = PhotoPop;
 			sourceTree = "<group>";
 		};
 		CFD8BD042912A95900F86EFB /* SomethingBuggingYou */ = {
@@ -1721,7 +1769,6 @@
 				CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */,
 				CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */,
 				CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */,
-				CF3B42F329371A6D00EE1D84 /* SaySomethingNice5.swift */,
 			);
 			path = "OLD My ROOM";
 			sourceTree = "<group>";
@@ -1757,9 +1804,7 @@
 		CFDB150A2858F4D200155CEE /* Virtual HUG */ = {
 			isa = PBXGroup;
 			children = (
-				CFC0EE732907A823006B3FAA /* HugPreload.swift */,
 				CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */,
-				CFC0EE752907AB7D006B3FAA /* HugPushNotification.swift */,
 				CFD6C054293EA9E600D57E0B /* HugPushNotification2.swift */,
 				CF4D86B72976280A004B551D /* HugPushNotification3.swift */,
 			);
