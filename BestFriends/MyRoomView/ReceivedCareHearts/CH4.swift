@@ -121,81 +121,31 @@ struct CH4: View {
                       
             }
             
-        
-//           *************************************
 
-                VStack{
-                    
-                    HStack {
-                        VStack {
-                       
-                            
-                            ZStack {
-                          
-                            
-                                VStack {
-                                    HStack {
-                                        VStack {
+            
+            VStack {
+                
+                
+                
+//                                        ZStack(alignment: .bottom) {
                                             
-                                            Spacer()
-                                                .frame(height: 70)
-                                            
-                                            Text("sending")
-                                                .font(.system(size: 40, weight: .light))
-                                                .foregroundColor(Color.white)
-                                           
-                                            Text("Music")
-                                                .font(.system(size: 55, weight: .light))
-                                                .foregroundColor(Color.white)
-                                         
-                                            
-                                        }
+                                            ZStack {
+                                                
+                                                
+//
+//                                            Image("")
+//                                                .resizable()
+//                                                .frame(width: 350, height: 48)
+//                                                .background(Color.green)
+//                                                .cornerRadius(10)
+                                                
+                                                Text("You know 'that' song you listen to \nover-and-over while lying in bed \non one of those days? \n\nSend it to your friend - maybe it will help!")
+                                                    .font(.system(size: 19, weight: .light))
+                                                    .foregroundColor(Color.white)
+                                                    .multilineTextAlignment(.center)
                                        
-                                        
-
-                                }
-                                    
-                                       Spacer()
-                                           .frame(height: 7)
-//
-//
-//                                    Text("Did you just find a new song?")
-//                                        .font(.system(size: 23))
-//                                        .fontWeight(.light)
-//                                        .foregroundColor(Color.white)
-//                                        .multilineTextAlignment(.center)
-//
-//                                    Text("Show it off to a friend")
-//                                        .font(.system(size: 23))
-//                                        .fontWeight(.light)
-//                                        .foregroundColor(Color.white)
-//                                        .multilineTextAlignment(.center)
-                                    
-                                    Spacer()
-                                        .frame(height: 15)
-
-                                    Text("Is a friend having a tough day?")
-                                        .font(.system(size: 23))
-                                        .fontWeight(.light)
-                                        .foregroundColor(Color.white)
-                                        .multilineTextAlignment(.center)
-                                    
-                                    Text("Send a song that helps you")
-                                        .font(.system(size: 23))
-                                        .fontWeight(.light)
-                                        .foregroundColor(Color.white)
-                                        .multilineTextAlignment(.center)
-                         
-                                    
-                                    ZStack(alignment: .bottom) {
-                                            Image("")
-                                                .resizable()
-                                                .frame(width: 350, height: 48)
-                                                .background(Color.green)
-                                                .cornerRadius(10)
-                                        
-                                
-
+                                            
+                                            
                                             VStack {
                                                 Spacer()
                                                 // TextField for userInput
@@ -217,26 +167,44 @@ struct CH4: View {
                                                     .overlay(
                                                         RoundedRectangle(cornerRadius: 10)
                                                             .stroke(Color.purple)
-//                                                            .background(ColorManager.purple3)
+                                                        //                                                            .background(ColorManager.purple3)
                                                             .frame(height: 50)
                                                             .padding(.horizontal, 125)
                                                     )
                                                     .padding(.bottom, 5)
                                             }
                                         }
-                                  
-                                }
-                               
-                            }
-                           
-                        }
-                      
-                    }
+                                    
+//                                }
+//
+//                            }
+//
+//                        }
+//
+//                    }
                     
                     
                     VStack {
-  
+                   
+                     
                         
+                        
+                        Spacer()
+                            .frame(height: 25)
+
+//                        Text("Maybe you just found new music on social media")
+//                            .font(.system(size: 20))
+//                            .fontWeight(.light)
+//                            .foregroundColor(Color.white)
+//                            .multilineTextAlignment(.center)
+//                        
+//                        Text("and want to show your friends")
+//                            .font(.system(size: 20))
+//                            .fontWeight(.light)
+//                            .foregroundColor(Color.white)
+//                            .multilineTextAlignment(.center)
+//             
+//                        
                             Spacer()
                                 .frame(height: 30)
                     }
@@ -384,7 +352,8 @@ struct CH4: View {
                                 
                             })
                             
-               Spacer ()
+                            Spacer()
+                                .frame(height: 150)
      
                         }
               
@@ -436,8 +405,21 @@ struct CH4: View {
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
         }
     }
-    
-    
-    
 }
 
+
+
+//
+//
+//                                    Text("Did you just find a new song?")
+//                                        .font(.system(size: 23))
+//                                        .fontWeight(.light)
+//                                        .foregroundColor(Color.white)
+//                                        .multilineTextAlignment(.center)
+//
+//                                    Text("Show it off to a friend")
+//                                        .font(.system(size: 23))
+//                                        .fontWeight(.light)
+//                                        .foregroundColor(Color.white)
+//                                        .multilineTextAlignment(.center)
+                

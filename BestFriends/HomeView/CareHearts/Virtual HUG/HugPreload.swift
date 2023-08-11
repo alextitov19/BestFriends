@@ -99,24 +99,24 @@ struct HugPreload: View {
 
 
                 VStack {
-
-              
-
-                        NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
-                            HugCircle (color: ColorManager .red, friendName: "blowing \nkisses")
-                        })
-                        .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-                        .shadow(color: Color .pink, radius: 10, x: 10, y: 10)
-                        .opacity(0.5)
-
+                    
+                    
+                    
+                    NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
+                        HugCircle (color: ColorManager .red, friendName: "blowing \nkisses")
+                    })
+                    .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+                    .shadow(color: Color .pink, radius: 10, x: 10, y: 10)
+                    .opacity(0.5)
+                    
                     NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
                         HugCircle (color: ColorManager.orange5, friendName: "sending \nhugs")
                     })
                     .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
                     .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
-    //                    .opacity(0.6)
+                    //                    .opacity(0.6)
                     .opacity(0.5)
-
+                    
                     
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), label: {
                         HugCircle (color: ColorManager .orange2, friendName: "sending \nhearts")
@@ -126,29 +126,29 @@ struct HugPreload: View {
                     
                     .opacity(0.5)
                     
-                  
-//                    SendSongPush(user: user, friends: friends
+                    
+                    //                    SendSongPush(user: user, friends: friends
                     
                     NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
-                        HugCircle (color: ColorManager .grey1, friendName: "send a \nsong")
+                        HugCircle (color: ColorManager .grey1, friendName: "send 'that' \nsong")
                     })
                     .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                     .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
                     .opacity(0.5)
                     
                     
-//                    NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
-//                        HugCircle (color: ColorManager .grey3, friendName: "send a \nfist pump")
-//                    })
-//                    .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
-//                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-////                    .opacity(0.65)
-//                    .opacity(0.3)
+                    //                    NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
+                    //                        HugCircle (color: ColorManager .grey3, friendName: "send a \nfist pump")
+                    //                    })
+                    //                    .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
+                    //                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                    ////                    .opacity(0.65)
+                    //                    .opacity(0.3)
                     
                     
                     
-              
-//  *************************************** 
+                    
+                    //  ***************************************
                     
                     //                    NavigationLink(destination: HurtFeelings(user: user, friends: friends, groups: groups, atmosphere: atmosphere), label: {
                     //                        HugCircle (color: ColorManager .grey1, friendName: "MORE \nCareHearts")
@@ -157,68 +157,75 @@ struct HugPreload: View {
                     //                    .shadow(color: ColorManager .grey1, radius: 10, x: 10, y: 10)
                     //                    .opacity(0.65)
                     
-//                    NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
-//                        HugCircle (color: ColorManager .purple4, friendName: "send a \nPhotoPOP")
-//                    })
-//                    .offset(x: showItems ? -60 : 0, y: showItems ? 350: 0)
-//                    .shadow(color: ColorManager .purple5, radius: 10, x: 10, y: 10)
-//    //                .opacity(0.85)
-//                    .opacity(0.65)
-
-
-
-                    
-
-
-//                    NavigationLink(destination: EmptyView(), label: {
-//                        HugCircle (color: ColorManager.grey3, friendName: "CareHeart \nCoupons")
-//                    })
-//                    .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
-//                    .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
-//    //                    .opacity(0.6)
-//                    .opacity(0.65)
-//
-
-//
-
-
-
-
-//
-//                        Image(systemName: "heart.fill")
-//                            .resizable()
-//                            .foregroundColor(ColorManager .purple1)
-//                            .frame(width: 250, height: 200)
-//                        //                    .blur(radius: 2)
-//                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
-//                            .opacity(0.70)
-
-
-                    Spacer ()
-                        .frame(height: 30)
-                    
-                    Text("Sending CareHearts")
-                        .font(.system(size: 23))
-                        .foregroundColor(Color.white)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
-                    
-                    Text("from the heart of you")
-                        .font(.system(size: 23))
-                        .foregroundColor(Color.white)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
+                    //                    NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
+                    //                        HugCircle (color: ColorManager .purple4, friendName: "send a \nPhotoPOP")
+                    //                    })
+                    //                    .offset(x: showItems ? -60 : 0, y: showItems ? 350: 0)
+                    //                    .shadow(color: ColorManager .purple5, radius: 10, x: 10, y: 10)
+                    //    //                .opacity(0.85)
+                    //                    .opacity(0.65)
                     
                     
+                    
+                    
+                    
+                    
+                    //                    NavigationLink(destination: EmptyView(), label: {
+                    //                        HugCircle (color: ColorManager.grey3, friendName: "CareHeart \nCoupons")
+                    //                    })
+                    //                    .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
+                    //                    .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
+                    //    //                    .opacity(0.6)
+                    //                    .opacity(0.65)
+                    //
+                    
+                    //
+                    
+                    
+                    
+                    
+                    //
+                    //                        Image(systemName: "heart.fill")
+                    //                            .resizable()
+                    //                            .foregroundColor(ColorManager .purple1)
+                    //                            .frame(width: 250, height: 200)
+                    //                        //                    .blur(radius: 2)
+                    //                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
+                    //                            .opacity(0.70)
+                    
+                    
+                    VStack {
+                        Spacer ()
+                            .frame(height: 30)
+                        
+                        Text("Sending CareHearts")
+                            .font(.system(size: 20))
+                            .foregroundColor(Color.white)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                        Spacer ()
+                            .frame(height: 7)
+                        
+                
+                        
+                        Text("from the heart of you")
+                            .font(.system(size: 30))
+                            .italic()
+                            .foregroundColor(ColorManager .grey1)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                        
                         VStack {
-
+                            
                             Spacer ()
-                                .frame(height: 155)
-
-
+                                .frame(height: 75)
+                            
+                            
                         }
                     }
-
+                }
 
 
                     .onTapGesture {
@@ -247,7 +254,7 @@ struct HugPreload: View {
                         .resizable()
                         .foregroundColor(color)
                     //                            .foregroundColor(ColorManager .purple2)
-                        .frame(width: 200, height: 150)
+                        .frame(width: 165, height: 140)
                         .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
 
                     Text(friendName)
