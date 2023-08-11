@@ -158,7 +158,6 @@
 		CF24815928F5075600D47AE3 /* PhotoPopInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */; };
 		CF2738AA2813C5740070E9D3 /* NewSmileNoteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */; };
 		CF2DBCEC2853DAF7008616A3 /* PickMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */; };
-		CF2DBCF128552527008616A3 /* storm2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2DBCF028552527008616A3 /* storm2.mp4 */; };
 		CF2DBCF928554E5B008616A3 /* BuildFriendPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */; };
 		CF2EE6F429515B8400B1B16D /* INFOChatCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6F329515B8400B1B16D /* INFOChatCircles.swift */; };
 		CF2EE6F629516C7000B1B16D /* InfoCreateGroupChatRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6F529516C7000B1B16D /* InfoCreateGroupChatRooms.swift */; };
@@ -248,8 +247,9 @@
 		CF650422289EF8820092EEB9 /* PurpleNoAdInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650421289EF8820092EEB9 /* PurpleNoAdInfoView.swift */; };
 		CF650427289F11980092EEB9 /* WorldPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650426289F11980092EEB9 /* WorldPreload.swift */; };
 		CF65043028A438970092EEB9 /* ChatReactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65042F28A438970092EEB9 /* ChatReactions.swift */; };
-		CF6C5B112A866B0E00EC4915 /* MainPageVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6C5B102A866B0D00EC4915 /* MainPageVideo.mp4 */; };
 		CF6C5B132A866C9000EC4915 /* MainPgEarth.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6C5B122A866C9000EC4915 /* MainPgEarth.mp4 */; };
+		CF6C5B152A86725E00EC4915 /* InAppVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6C5B142A86725E00EC4915 /* InAppVideo.mp4 */; };
+		CF6C5B192A86738000EC4915 /* MainPg2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6C5B182A86738000EC4915 /* MainPg2.mp4 */; };
 		CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */; };
 		CF7157512975D29900094F22 /* SendKisses.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7157502975D29900094F22 /* SendKisses.swift */; };
 		CF725E2828516E4F0096342F /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2728516E4F0096342F /* Tokens.swift */; };
@@ -496,7 +496,6 @@
 		CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopInfo.swift; sourceTree = "<group>"; };
 		CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSmileNoteCard.swift; sourceTree = "<group>"; };
 		CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMediator.swift; sourceTree = "<group>"; };
-		CF2DBCF028552527008616A3 /* storm2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = storm2.mp4; sourceTree = "<group>"; };
 		CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildFriendPlaylist.swift; sourceTree = "<group>"; };
 		CF2EE6F329515B8400B1B16D /* INFOChatCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOChatCircles.swift; sourceTree = "<group>"; };
 		CF2EE6F529516C7000B1B16D /* InfoCreateGroupChatRooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCreateGroupChatRooms.swift; sourceTree = "<group>"; };
@@ -587,8 +586,9 @@
 		CF650421289EF8820092EEB9 /* PurpleNoAdInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleNoAdInfoView.swift; sourceTree = "<group>"; };
 		CF650426289F11980092EEB9 /* WorldPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPreload.swift; sourceTree = "<group>"; };
 		CF65042F28A438970092EEB9 /* ChatReactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatReactions.swift; sourceTree = "<group>"; };
-		CF6C5B102A866B0D00EC4915 /* MainPageVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MainPageVideo.mp4; sourceTree = "<group>"; };
 		CF6C5B122A866C9000EC4915 /* MainPgEarth.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MainPgEarth.mp4; sourceTree = "<group>"; };
+		CF6C5B142A86725E00EC4915 /* InAppVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = InAppVideo.mp4; sourceTree = "<group>"; };
+		CF6C5B182A86738000EC4915 /* MainPg2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MainPg2.mp4; sourceTree = "<group>"; };
 		CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualHug.swift; sourceTree = "<group>"; };
 		CF7157502975D29900094F22 /* SendKisses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendKisses.swift; sourceTree = "<group>"; };
 		CF725E2728516E4F0096342F /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
@@ -1340,13 +1340,13 @@
 			isa = PBXGroup;
 			children = (
 				CFAF42222A526ADA007B7DF5 /* Galaxy2.mp4 */,
-				CF6C5B102A866B0D00EC4915 /* MainPageVideo.mp4 */,
+				CF6C5B142A86725E00EC4915 /* InAppVideo.mp4 */,
 				CF6C5B122A866C9000EC4915 /* MainPgEarth.mp4 */,
+				CF6C5B182A86738000EC4915 /* MainPg2.mp4 */,
 				CF5263D6266477C600243DD7 /* background_4.mp4 */,
 				7A78232926B2419600CA76FC /* background_5.mp4 */,
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
 				CFDB14FB2855A1E600155CEE /* dramaLights.mp4 */,
-				CF2DBCF028552527008616A3 /* storm2.mp4 */,
 				CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */,
 				CF417545296A60F700898E2D /* NisieJ9.mp4 */,
 				CF3DB38A28DADD3E00BF9CCD /* New Group */,
@@ -1938,13 +1938,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF6C5B112A866B0E00EC4915 /* MainPageVideo.mp4 in Resources */,
 				CF4A08EE2879577E00ADA9DD /* sky2.mp4 in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,
 				CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */,
 				7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */,
 				7A78232E26B2419600CA76FC /* background_5.mp4 in Resources */,
-				CF2DBCF128552527008616A3 /* storm2.mp4 in Resources */,
+				CF6C5B192A86738000EC4915 /* MainPg2.mp4 in Resources */,
 				CF47CF0328DB67A8008B6F11 /* PlanetSound.mp4 in Resources */,
 				CF6C5B132A866C9000EC4915 /* MainPgEarth.mp4 in Resources */,
 				CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */,
@@ -1954,6 +1953,7 @@
 				CF417546296A60F700898E2D /* NisieJ9.mp4 in Resources */,
 				7A383FFD267AC306002F354A /* background_4.mp4 in Resources */,
 				CF3DB37228DA6D7D00BF9CCD /* Nadiah2.m4a in Resources */,
+				CF6C5B152A86725E00EC4915 /* InAppVideo.mp4 in Resources */,
 				CF3DB37628DA85BA00BF9CCD /* Meena1.m4a in Resources */,
 				CFAF42232A526ADA007B7DF5 /* Galaxy2.mp4 in Resources */,
 				7ACDB183282825C1009E1CFD /* GoogleService-Info.plist in Resources */,

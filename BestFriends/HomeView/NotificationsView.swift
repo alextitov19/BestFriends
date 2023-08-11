@@ -38,7 +38,7 @@ struct NotificationsView: View {
                     .ignoresSafeArea()
                     .onAppear(perform: getNotifications)
                 
-                AdPlayerView(name: "MainPageVideo")
+                AdPlayerView(name: "InAppVideo")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
