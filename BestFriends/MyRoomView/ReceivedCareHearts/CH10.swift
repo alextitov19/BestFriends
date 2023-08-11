@@ -47,14 +47,14 @@ struct CH10: View {
               
 
                         NavigationLink(destination: CH9(user: user, friends: friends), label: {
-                            HugCircle (color: Color.pink, friendName: "jump up \nand catch \nyour kiss")
+                            HugCircle (color: Color.pink, friendName: "Jump up \nand catch your \n 'Kisses'")
                         })
                         .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
                         .shadow(color: Color .pink, radius: 10, x: 10, y: 10)
                         .opacity(0.4)
 
                     NavigationLink(destination: VirtualHug(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager.orange5, friendName: "grab your \nhug")
+                        HugCircle (color: ColorManager.orange5, friendName: "Grab your \n'HUG'")
                     })
                     .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
                     .shadow(color: Color.yellow, radius: 10, x: 10, y: 10)
@@ -63,7 +63,7 @@ struct CH10: View {
 
                     
                     NavigationLink(destination: CH6(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .orange2, friendName: "Look! you got \n hearts")
+                        HugCircle (color: ColorManager .orange2, friendName: "Look! You got \n 'Hearts'")
                     })
                     .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                     .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
@@ -72,7 +72,7 @@ struct CH10: View {
                     
                   
                     NavigationLink(destination: CH7(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .grey1, friendName: "you got \nnew music!")
+                        HugCircle (color: ColorManager .grey1, friendName: "A 'Song' to match \nyour Vibe!")
                     })
                     .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                     .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
