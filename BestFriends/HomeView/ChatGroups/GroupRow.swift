@@ -25,7 +25,7 @@ struct GroupRow: View {
             
             VStack(alignment: .leading) {
                 Spacer()
-                    .frame(height: 10)
+                    .frame(height: 70)
                 
                 HStack {
                     Spacer()
