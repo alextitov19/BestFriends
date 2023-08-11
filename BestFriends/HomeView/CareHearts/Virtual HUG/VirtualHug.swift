@@ -116,8 +116,8 @@ struct VirtualHug: View {
                                     .frame(height: 10)
                 
          
-                Image("surferboysimg")
-                    .frame(width: 375, height: 375)
+                Image("BushGirl")
+                    .frame(width: 300, height: 200)
                     .cornerRadius(15)
                     .shadow(color: ColorManager .purple4, radius: 5, x: 5, y: 5)
                     .opacity(0.7)

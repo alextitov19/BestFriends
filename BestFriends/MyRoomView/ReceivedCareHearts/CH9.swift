@@ -75,7 +75,7 @@ struct CH9: View {
                     VStack {
                    
                         
-                        Image("surferboysimg")
+                        Image("BalloonGuy2")
                             .frame(width: 375, height: 375)
                             .cornerRadius(15)
                             .shadow(color: ColorManager .purple4, radius: 5, x: 5, y: 5)
