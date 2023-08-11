@@ -67,7 +67,7 @@ struct CH7: View {
 
 
             
-            AdPlayerView(name: "MusicVideo")
+            AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
 
@@ -86,7 +86,7 @@ struct CH7: View {
                     }
                     
 
-                    Image("surferboysimg")
+                    Image("MusicImage")
                         .frame(width: 375, height: 375)
                         .cornerRadius(15)
                         .shadow(color: ColorManager .purple4, radius: 5, x: 5, y: 5)
