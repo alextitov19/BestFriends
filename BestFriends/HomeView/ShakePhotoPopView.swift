@@ -15,18 +15,20 @@ struct ShakePhotoPopView: View {
     
     var body: some View {
         ZStack {
+            Color.black.ignoresSafeArea()
+            
             ForEach(images, id: \.self) { image in
                 Image(uiImage: image)
                     .resizable()
-                    .ignoresSafeArea()
-                    .scaledToFill()
+//                    .ignoresSafeArea()
+                    .scaledToFit()
                     .onTapGesture {
                         images.removeLast()
                         if images.count == 0 {
                             presentationMode.wrappedValue.dismiss()
                         }
                     }
-                    .ignoresSafeArea()
+//                    .ignoresSafeArea()
             }
             
             if isLoading {
@@ -46,7 +48,7 @@ struct ShakePhotoPopView: View {
                 .padding(40)
             }
         }
-        .ignoresSafeArea()
+//        .ignoresSafeArea()
     }
     
     private func loadData() {
