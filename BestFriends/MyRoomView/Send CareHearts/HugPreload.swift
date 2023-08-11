@@ -202,7 +202,7 @@ struct HugPreload: View {
                 
                         
                         Text("CareHearts - from the heart of you")
-                            .font(.system(size: 30))
+                            .font(.system(size: 25))
                             .italic()
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.thin)
@@ -211,16 +211,16 @@ struct HugPreload: View {
                         Spacer ()
                             .frame(height: 7)
                         
-                        Text("Celebrating friendships")
-                            .font(.system(size: 20))
+                        Text("they're cute")
+                            .font(.system(size: 17))
                             .foregroundColor(Color.white)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         Spacer ()
                             .frame(height: 7)
                         
-                        Text("Sending emotional support")
-                            .font(.system(size: 20))
+                        Text("they can provide emotional support \nto friends on difficult days")
+                            .font(.system(size: 17))
                             .foregroundColor(Color.white)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
