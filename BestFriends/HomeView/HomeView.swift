@@ -57,9 +57,11 @@ struct HomeView: View {
                     }
                 
                 if (homeData != nil) {
-                    NavigationLink(destination: NotificationsView(user: homeData!.user, friends: homeData!.friends), isActive: $presentingIANs) { EmptyView() }
+                    NavigationLink(destination: NotificationsView(user: homeData!.user, friend: homeData!.user, friends: homeData!.friends, groups: homeData!.groups), isActive: $presentingIANs) { EmptyView() }
 
                 }
+                
+//            user: user, friend: user, friends: friends, groups: groups)
                 
                 // Stars animation...
                 AdPlayerView(name: "sky2")

@@ -52,7 +52,7 @@ struct RR9: View {
 //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
-        customMessage = "NEW SONG from; " + user.firstName + " : " + customMessage;
+        customMessage = "Found NEW Artist; " + user.firstName + " : " + customMessage;
         
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
@@ -374,11 +374,11 @@ struct RR9: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) found a New Artist and sent link in Chat", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) I found a New Artist & posted them in Chat", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "found a New Artist and sent link in Chat", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "I found a New Artist & posted them in Chat", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                         print("Create a New Artist notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)

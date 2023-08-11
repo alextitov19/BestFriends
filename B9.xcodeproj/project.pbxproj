@@ -722,10 +722,6 @@
 		2DFB03192A5D2FD200669948 /* ReceivedCareHearts */ = {
 			isa = PBXGroup;
 			children = (
-				2DBF3EF02A61AD2800CB1CAD /* RR9.swift */,
-				2DBF3EEE2A61AD1C00CB1CAD /* RR8.swift */,
-				2DFB03172A57228D00669948 /* FH10.swift */,
-				2DFB031A2A5D304B00669948 /* CH1.swift */,
 				2DFB031C2A5D305A00669948 /* CH2.swift */,
 				2DFB031E2A5D306400669948 /* CH3.swift */,
 				2DFB03202A5D307A00669948 /* CH4.swift */,
@@ -744,19 +740,6 @@
 		2DFB032E2A5D333F00669948 /* RealtimeFriendshipHighlights */ = {
 			isa = PBXGroup;
 			children = (
-				2DFB03072A57221600669948 /* FH2.swift */,
-				2DBF3EEA2A61AD0900CB1CAD /* RR6.swift */,
-				2DBF3EE02A61ACD400CB1CAD /* RR1.swift */,
-				2DFB03152A57228400669948 /* FH9.swift */,
-				2DFB03132A57227900669948 /* FH8.swift */,
-				2DFB030F2A57226200669948 /* FH6.swift */,
-				2DBF3EE82A61ACFF00CB1CAD /* RR5.swift */,
-				2DFB03112A57226E00669948 /* FH7.swift */,
-				2DFB03092A57222300669948 /* FH3.swift */,
-				2DFB030B2A57223100669948 /* FH4.swift */,
-				2DFB030D2A57223E00669948 /* FH5.swift */,
-				2DBF3EE42A61ACEB00CB1CAD /* RR3.swift */,
-				2DBF3EEC2A61AD1200CB1CAD /* RR7.swift */,
 			);
 			path = RealtimeFriendshipHighlights;
 			sourceTree = "<group>";
@@ -892,10 +875,15 @@
 			isa = PBXGroup;
 			children = (
 				2DBF3EDF2A61ACC400CB1CAD /* RR */,
+				CF6C5AFF2A8602CA00EC4915 /* Accessorizing */,
 				2DFB03192A5D2FD200669948 /* ReceivedCareHearts */,
+				CF6C5AFD2A86025300EC4915 /* NewArtist */,
+				CF6C5AFE2A86029500EC4915 /* MyCrushes */,
 				CF0EB7D82A74E750000B2A1F /* Drama Central 2 */,
 				CF0EB7D72A736808000B2A1F /* FriendshipRewards */,
 				2DFB032E2A5D333F00669948 /* RealtimeFriendshipHighlights */,
+				CF6C5B012A86047F00EC4915 /* IInfo Icon Circle */,
+				CF6C5B002A8603F600EC4915 /* Start Here */,
 				2DFB02FE2A57217100669948 /* FriendshipHighlights */,
 				CF2EE6F729516C8A00B1B16D /* InfoHowChatWorks.swift */,
 				7AE4C5622A3A9A1900A90DBF /* Affirmations */,
@@ -1380,6 +1368,58 @@
 				CF3DB37528DA85BA00BF9CCD /* Meena1.m4a */,
 			);
 			path = "Background Videos";
+			sourceTree = "<group>";
+		};
+		CF6C5AFD2A86025300EC4915 /* NewArtist */ = {
+			isa = PBXGroup;
+			children = (
+				2DBF3EF02A61AD2800CB1CAD /* RR9.swift */,
+			);
+			path = NewArtist;
+			sourceTree = "<group>";
+		};
+		CF6C5AFE2A86029500EC4915 /* MyCrushes */ = {
+			isa = PBXGroup;
+			children = (
+				2DBF3EEE2A61AD1C00CB1CAD /* RR8.swift */,
+				2DFB031A2A5D304B00669948 /* CH1.swift */,
+			);
+			path = MyCrushes;
+			sourceTree = "<group>";
+		};
+		CF6C5AFF2A8602CA00EC4915 /* Accessorizing */ = {
+			isa = PBXGroup;
+			children = (
+				2DFB03172A57228D00669948 /* FH10.swift */,
+			);
+			path = Accessorizing;
+			sourceTree = "<group>";
+		};
+		CF6C5B002A8603F600EC4915 /* Start Here */ = {
+			isa = PBXGroup;
+			children = (
+				2DFB03072A57221600669948 /* FH2.swift */,
+				2DBF3EEA2A61AD0900CB1CAD /* RR6.swift */,
+				2DBF3EE02A61ACD400CB1CAD /* RR1.swift */,
+				2DFB03152A57228400669948 /* FH9.swift */,
+				2DFB03132A57227900669948 /* FH8.swift */,
+				2DFB030F2A57226200669948 /* FH6.swift */,
+				2DBF3EE82A61ACFF00CB1CAD /* RR5.swift */,
+				2DFB03112A57226E00669948 /* FH7.swift */,
+				2DFB03092A57222300669948 /* FH3.swift */,
+				2DFB030B2A57223100669948 /* FH4.swift */,
+				2DFB030D2A57223E00669948 /* FH5.swift */,
+				2DBF3EEC2A61AD1200CB1CAD /* RR7.swift */,
+			);
+			path = "Start Here";
+			sourceTree = "<group>";
+		};
+		CF6C5B012A86047F00EC4915 /* IInfo Icon Circle */ = {
+			isa = PBXGroup;
+			children = (
+				2DBF3EE42A61ACEB00CB1CAD /* RR3.swift */,
+			);
+			path = "IInfo Icon Circle";
 			sourceTree = "<group>";
 		};
 		CF71574F2975D27000094F22 /* SendKisses */ = {

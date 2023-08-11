@@ -14,8 +14,9 @@ struct NotificationsView: View {
     @State private var ians: [InAppNotification] = []
     
     let user: User
+    let friend: User
     let friends: [User]
-//    let groups: [Group]
+    let groups: [Group]
     
     
     //   *********************** color change tapped
@@ -96,7 +97,7 @@ struct NotificationsView: View {
         @State private var talkCouponActive = false
         @State private var vibeActive = false
         @State private var needTalkActive = false
-//        @State private var newArtistActive = false
+        @State private var newArtistActive = false
         
         init(ian: InAppNotification, user: User, friends: [User]) {
             self.ian = ian
@@ -258,8 +259,8 @@ struct NotificationsView: View {
             case "Needed to Talk!":
                 needTalkActive = true
                 
-//            case "found a New Artist and sent link in Chat":
-//                newArtistActive = true
+            case "I found a New Artist & posted them in Chat":
+                newArtistActive = true
                 
                 
                 
