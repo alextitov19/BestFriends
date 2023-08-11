@@ -737,13 +737,6 @@
 			path = ReceivedCareHearts;
 			sourceTree = "<group>";
 		};
-		2DFB032E2A5D333F00669948 /* RealtimeFriendshipHighlights */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RealtimeFriendshipHighlights;
-			sourceTree = "<group>";
-		};
 		7A1C048627F4C3A90002B173 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -875,17 +868,15 @@
 			isa = PBXGroup;
 			children = (
 				2DBF3EDF2A61ACC400CB1CAD /* RR */,
+				CF6C5B022A86062500EC4915 /* INFO icon */,
+				CF6C5B002A8603F600EC4915 /* Start Here */,
 				CF6C5AFF2A8602CA00EC4915 /* Accessorizing */,
 				2DFB03192A5D2FD200669948 /* ReceivedCareHearts */,
 				CF6C5AFD2A86025300EC4915 /* NewArtist */,
 				CF6C5AFE2A86029500EC4915 /* MyCrushes */,
 				CF0EB7D82A74E750000B2A1F /* Drama Central 2 */,
 				CF0EB7D72A736808000B2A1F /* FriendshipRewards */,
-				2DFB032E2A5D333F00669948 /* RealtimeFriendshipHighlights */,
-				CF6C5B012A86047F00EC4915 /* IInfo Icon Circle */,
-				CF6C5B002A8603F600EC4915 /* Start Here */,
 				2DFB02FE2A57217100669948 /* FriendshipHighlights */,
-				CF2EE6F729516C8A00B1B16D /* InfoHowChatWorks.swift */,
 				7AE4C5622A3A9A1900A90DBF /* Affirmations */,
 				7A8A72982A33F690005FA3B1 /* Journal */,
 				CFD12CC82819E83900AB2539 /* SmileVault */,
@@ -1414,12 +1405,13 @@
 			path = "Start Here";
 			sourceTree = "<group>";
 		};
-		CF6C5B012A86047F00EC4915 /* IInfo Icon Circle */ = {
+		CF6C5B022A86062500EC4915 /* INFO icon */ = {
 			isa = PBXGroup;
 			children = (
+				CF2EE6F729516C8A00B1B16D /* InfoHowChatWorks.swift */,
 				2DBF3EE42A61ACEB00CB1CAD /* RR3.swift */,
 			);
-			path = "IInfo Icon Circle";
+			path = "INFO icon";
 			sourceTree = "<group>";
 		};
 		CF71574F2975D27000094F22 /* SendKisses */ = {
