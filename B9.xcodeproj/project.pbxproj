@@ -91,6 +91,7 @@
 		7A45B8482A86AB9E00F5E75B /* RR13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45B8472A86AB9E00F5E75B /* RR13.swift */; };
 		7A45B84A2A86ABA300F5E75B /* RR14.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45B8492A86ABA300F5E75B /* RR14.swift */; };
 		7A45B84C2A86ABA900F5E75B /* RR15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45B84B2A86ABA900F5E75B /* RR15.swift */; };
+		7A45B8832A86CECF00F5E75B /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A45B8822A86CECF00F5E75B /* ImageSaver.swift */; };
 		7A469E54284D6AC0004AF547 /* TextAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A469E53284D6AC0004AF547 /* TextAlert.swift */; };
 		7A4D50072783B9D3006F7404 /* UIScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4D50062783B9D3006F7404 /* UIScreenExtension.swift */; };
 		7A4E336726A0D6FC00202BB7 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E336626A0D6FC00202BB7 /* CGFloatExtension.swift */; };
@@ -464,6 +465,7 @@
 		7A45B8472A86AB9E00F5E75B /* RR13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR13.swift; sourceTree = "<group>"; };
 		7A45B8492A86ABA300F5E75B /* RR14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR14.swift; sourceTree = "<group>"; };
 		7A45B84B2A86ABA900F5E75B /* RR15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR15.swift; sourceTree = "<group>"; };
+		7A45B8822A86CECF00F5E75B /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 		7A469E53284D6AC0004AF547 /* TextAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlert.swift; sourceTree = "<group>"; };
 		7A4D50062783B9D3006F7404 /* UIScreenExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreenExtension.swift; sourceTree = "<group>"; };
 		7A4E336626A0D6FC00202BB7 /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
@@ -1091,6 +1093,7 @@
 			children = (
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
 				7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */,
+				7A45B8822A86CECF00F5E75B /* ImageSaver.swift */,
 				7AD2642929EDCE020007ACD5 /* NotificationsView.swift */,
 				CF3B42F1293715A800EE1D84 /* SaySomethingNice4.swift */,
 				CF725E2628516E180096342F /* Tokens */,
@@ -2455,6 +2458,7 @@
 				CF4A08FB2883A56200ADA9DD /* Sweetheart1.swift in Sources */,
 				CFC0EE762907AB7D006B3FAA /* HugPushNotification.swift in Sources */,
 				7AC71DA827F3D803008D191B /* Helper.swift in Sources */,
+				7A45B8832A86CECF00F5E75B /* ImageSaver.swift in Sources */,
 				CFC0EE7C290805E7006B3FAA /* InfoCreateChatRm.swift in Sources */,
 				2DFB03082A57221600669948 /* FH2.swift in Sources */,
 				7A33409429582725005C4CE1 /* NiceMessageModel.swift in Sources */,

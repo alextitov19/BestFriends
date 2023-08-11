@@ -18,17 +18,24 @@ struct ShakePhotoPopView: View {
             Color.black.ignoresSafeArea()
             
             ForEach(images, id: \.self) { image in
-                Image(uiImage: image)
-                    .resizable()
-//                    .ignoresSafeArea()
-                    .scaledToFit()
-                    .onTapGesture {
-                        images.removeLast()
-                        if images.count == 0 {
-                            presentationMode.wrappedValue.dismiss()
+                VStack {
+                    Image(uiImage: image)
+                        .resizable()
+                        .scaledToFit()
+                        .onTapGesture {
+                            images.removeLast()
+                            if images.count == 0 {
+                                presentationMode.wrappedValue.dismiss()
+                            }
                         }
+                    
+                    Button("Save Image") {
+                        let imageSaver = ImageSaver()
+                        imageSaver.writeToPhotoAlbum(image: image)
                     }
-//                    .ignoresSafeArea()
+                    .padding()
+                }
+                
             }
             
             if isLoading {
