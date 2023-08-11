@@ -164,6 +164,7 @@ struct AtmosphereMain2: View {
 
                         Button(action: {
                             mood = 1
+                            showingAlert = true
                         }) {
 
                             Text("Ouch! Dented Heart")
@@ -174,9 +175,12 @@ struct AtmosphereMain2: View {
                         .background(mood == 1 ? Color(.cyan) : ColorManager .grey2)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        .alert(isPresented: $showingAlert, TextAlert(title: "You will be okay", message: "We know how difficult this can be. Hopefully your friends can help you through this.", action: {_ in
+                            showingAlert = false
+                        }))
                         
 //                        .alert("We know how difficult this can be. Hopefully your friends can help you through this.", isPresented: $showingAlert) {
-//                            Button("OK", role: .cancel) { }
+//                            Button("OK", role: .cancel)
                  
 
                         Spacer()
