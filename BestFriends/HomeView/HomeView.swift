@@ -79,7 +79,7 @@ struct HomeView: View {
                         Spacer()
 
                         Spacer()
-                            .frame(height: 663)
+                            .frame(height: 620)
                       
                         HStack {
                             
@@ -253,7 +253,7 @@ struct HomeView: View {
                 if homeData?.groups != nil && homeData?.user != nil {
                     ChatGroupsView(user: homeData!.user, groups: groups)
                         .environmentObject(sessionManager)
-                        .offset(y: -10)
+                        .offset(y: -3)
                 }
                 
             }
