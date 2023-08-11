@@ -33,7 +33,7 @@ struct MyRoomView: View {
            
             
             Color.black
-                .opacity(0.4)
+                .opacity(0.9)
                 .ignoresSafeArea()
             
             

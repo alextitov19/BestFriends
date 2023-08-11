@@ -434,19 +434,23 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 12)
 
-//                        Button(action: {
-//                            mood = 9
-//                        }) {
-//
-//                            Text("Need to TALK!")
-//                                .font(.system(size: 10))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 140, height: 30, alignment: .center)
-//                        .background(mood == 9 ? Color.red : ColorManager .pmbc_pink)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
+                        Button(action: {
+                            mood = 9
+                        }) {
+
+                            Text("Need to TALK!")
+                                .font(.system(size: 10))
+                                .foregroundColor(Color.black)
+                        }
+                        .frame(width: 140, height: 30, alignment: .center)
+                        .background(mood == 9 ? Color.red : ColorManager .pmbc_pink)
+                        .cornerRadius(7)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        .alert("We know how difficult this can be. Hopefully your friends can help you through this.", isPresented: $showingAlert) {
+                            Button("OK", role: .cancel, action: {
+                                showingAlert = false
+                    })
+                }
 
 
                     }
