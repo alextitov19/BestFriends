@@ -104,7 +104,7 @@ struct AtmosphereMain2: View {
                             .foregroundColor(Color.white)
                         
                         
-                        Text("But you're not ready to talk about it yet.")
+                        Text("Maybe, you're not ready to talk about it yet.")
                             .font(.system(size: 20))
 //                            .italic()
                             .fontWeight(.light)

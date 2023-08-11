@@ -197,25 +197,33 @@ struct HugPreload: View {
                     VStack {
                         Spacer ()
                             .frame(height: 30)
-                        
-                        Text("Sending CareHearts")
-                            .font(.system(size: 20))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                        
-                        Spacer ()
-                            .frame(height: 7)
+                  
                         
                 
                         
-                        Text("from the heart of you")
+                        Text("CareHearts - from the heart of you")
                             .font(.system(size: 30))
                             .italic()
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
+                        Spacer ()
+                            .frame(height: 7)
+                        
+                        Text("Celebrating friendships")
+                            .font(.system(size: 20))
+                            .foregroundColor(Color.white)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        Spacer ()
+                            .frame(height: 7)
+                        
+                        Text("Sending emotional support")
+                            .font(.system(size: 20))
+                            .foregroundColor(Color.white)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
                         
                         VStack {
                             
