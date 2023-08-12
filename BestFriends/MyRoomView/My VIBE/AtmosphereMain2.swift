@@ -172,7 +172,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 1 ? Color(.cyan) : ColorManager .grey2)
+                        .background(mood == 1 ? Color(.systemCyan) : ColorManager .grey2)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                        
@@ -197,7 +197,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 2 ? Color(.cyan) : ColorManager .grey2)
+                        .background(mood == 2 ? Color(.systemCyan) : ColorManager .grey2)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         .alert("This is always difficult to deal with. Hopefully, the [Friend Drama] section can help you.", isPresented: $showingAlert) {
@@ -220,7 +220,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 3 ? Color(.cyan) : ColorManager .grey2)
+                        .background(mood == 3 ? Color(.systemCyan) : ColorManager .grey2)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         .alert("Try to stay calm. You can do this.", isPresented: $showingAlert) {
@@ -426,7 +426,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 8 ? Color.yellow : Color.green)
+                        .background(mood == 8 ? Color(.systemYellow) : Color.green)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         .alert("We are super happy you're having a great day - smile, it's catching.", isPresented: $showingAlert) {
@@ -447,7 +447,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.white)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 9 ? Color.red : ColorManager .grey4)
+                        .background(mood == 9 ? Color(.systemRed) : ColorManager .grey4)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         .alert("We are sending out Push Notifications to your freinds. \n\nWe will do our best to track down your friends for you.", isPresented: $showingAlert) {
@@ -481,7 +481,7 @@ struct AtmosphereMain2: View {
                             
 //         ********************************************************
                             
-                            Text("Notify your friends of your 'Vibe' change")
+                            Text("When you send a Push Notification \nyour atmosphere color updates")
                                .italic()
                                 .font(.system(size: 17))
                                 .fontWeight(.thin)
