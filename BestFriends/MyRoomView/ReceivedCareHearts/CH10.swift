@@ -22,114 +22,142 @@ struct CH10: View {
 
 
     var body: some View {
-
-        ZStack {
-
         
-
+        ZStack {
+            
+            
+            
             Image("CareHeart 2")
                 .ignoresSafeArea()
                 .scaledToFit()
-
-                
+            
+            
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-
-
+            
+            
             ZStack{
-
-
-
-
+                
+                
+                
+                
                 VStack {
-
-              
-
+                    
+                    VStack {
+                        
+                        Text("Friends Sending")
+                            .font(.system(size: 40))
+                            .foregroundColor(ColorManager .grey1)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("you CareHearts")
+                            .font(.system(size: 30))
+                            .foregroundColor(ColorManager .grey1)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                       
+                        
+                        Spacer ()
+                            .frame(height: 20)
+                        
+                        
+                        
+                        Text("Yep! Your friends are the best")
+                            .font(.system(size: 17))
+                            .foregroundColor(Color.white)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                    }
+                        
+                        
                         NavigationLink(destination: CH9(user: user, friends: friends), label: {
                             HugCircle (color: Color.pink, friendName: "Jump up \nand catch your \n 'Kisses'")
                         })
                         .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
                         .shadow(color: Color .pink, radius: 10, x: 10, y: 10)
                         .opacity(0.4)
-
-                    NavigationLink(destination: VirtualHug(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager.orange5, friendName: "Grab your \n'HUG'")
-                    })
-                    .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
-                    .shadow(color: Color.yellow, radius: 10, x: 10, y: 10)
-    //                    .opacity(0.6)
-                    .opacity(0.4)
-
-                    
-                    NavigationLink(destination: CH6(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .orange2, friendName: "Look! You got \n 'Hearts'")
-                    })
-                    .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
-                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-                    
-                    .opacity(0.3)
-                    
-                  
-                    NavigationLink(destination: CH7(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .grey1, friendName: "A 'Song' to match \nyour Vibe!")
-                    })
-                    .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                    .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
-                    .opacity(0.3)
-                    
- 
+                        
+                        NavigationLink(destination: VirtualHug(user: user, friends: friends), label: {
+                            HugCircle (color: ColorManager.orange5, friendName: "Grab your \n'HUG'")
+                        })
+                        .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
+                        .shadow(color: Color.yellow, radius: 10, x: 10, y: 10)
+                        //                    .opacity(0.6)
+                        .opacity(0.4)
+                        
+                        
+                        NavigationLink(destination: CH6(user: user, friends: friends), label: {
+                            HugCircle (color: ColorManager .orange2, friendName: "Look! You got \n 'Hearts'")
+                        })
+                        .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+                        .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                        
+                        .opacity(0.3)
+                        
+                        
+                        NavigationLink(destination: CH7(user: user, friends: friends), label: {
+                            HugCircle (color: ColorManager .grey1, friendName: "A 'Song' to match \nyour Vibe!")
+                        })
+                        .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+                        .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+                        .opacity(0.3)
+                        
+                        
                         VStack {
-
-                            Spacer ()
-                                .frame(height: 155)
-
-
+                            
+                            //                            Spacer ()
+                            //                                .frame(height: 155)
+                            
+                            
                         }
                     }
-
-
-
+                    
+                    
+                    
                     .onTapGesture {
                         withAnimation {
                             self.showItems.toggle()
                         }
                         print("tap function is working")
                     }
-
+                    
                     .animation(Animation.easeInOut(duration: 1.7), value: showItems)
-
+                    
                 }
             }
         }
-
-
+        
+        
         struct HugCircle: View {
             var color: Color
             var friendName: String
-
+            
             var body: some View {
-
+                
                 ZStack {
-
+                    
                     Image(systemName: "heart.fill")
                         .resizable()
                         .foregroundColor(color)
                     //                            .foregroundColor(ColorManager .purple2)
-                        .frame(width: 200, height: 150)
+                        .frame(width: 175, height: 125)
                         .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-
+                    
                     Text(friendName)
                         .fontWeight(.light)
                         .font(.system(size: 20))
                         .italic()
                         .foregroundColor(.black)
-
+                    
                 }
             }
         }
-
-
+        
+    
     }
 
 
