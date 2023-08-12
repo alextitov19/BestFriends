@@ -56,20 +56,22 @@ struct CH7: View {
             } else {
                
                 
-//                ColorManager.purple1
-//                    .ignoresSafeArea()
+                Image("FHBackground")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
             }
             
-            Color.black
-//                    .opacity(0.5)
-                .ignoresSafeArea()
-                .onAppear()
-
-
-            
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
+//            Color.black
+////                    .opacity(0.5)
+//                .ignoresSafeArea()
+//                .onAppear()
+//
+//
+//
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
 
 
             

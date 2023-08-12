@@ -52,14 +52,20 @@ struct CH9: View {
                     .blendMode(.screen)
                 
             } else {
-
-                Color.black
-                    .ignoresSafeArea()
-                    .onAppear()
                 
-                AdPlayerView(name: "sky2")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
+                Image("FHBackground")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+                
+//
+//                Color.black
+//                    .ignoresSafeArea()
+//                    .onAppear()
+//                
+//                AdPlayerView(name: "sky2")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
                 
 //                Image("CHAirKisses 1")
 //                    .ignoresSafeArea()
@@ -115,8 +121,8 @@ struct CH9: View {
                     
                     VStack {
                         
-//                        
-//                        
+//
+//
 //                        Spacer()
 //                            .frame(height: 15)
                         

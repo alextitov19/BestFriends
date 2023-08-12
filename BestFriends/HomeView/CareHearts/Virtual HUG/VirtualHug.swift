@@ -94,16 +94,21 @@ struct VirtualHug: View {
                 
             } else {
                 
-                Color.black
-                    .opacity(0.8)
-                    .ignoresSafeArea()
-                    .onAppear()
+                Image("FHBackground")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
                 
-              
-                
-                AdPlayerView(name: "sky2")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
+//                Color.black
+//                    .opacity(0.8)
+//                    .ignoresSafeArea()
+//                    .onAppear()
+//
+//
+//
+//                AdPlayerView(name: "sky2")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
             
                 
             }
@@ -121,7 +126,7 @@ struct VirtualHug: View {
                         Text("To get your virtual Hug,")
                             .font(.system(size: 20))
                             .italic()
-                            .foregroundColor(ColorManager .grey2)
+                            .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
@@ -131,7 +136,7 @@ struct VirtualHug: View {
                         Text("tap the heart and hold \nyour iPhone to your Heart")
                             .font(.system(size: 20))
                             .italic()
-                            .foregroundColor(ColorManager .grey2)
+                            .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         

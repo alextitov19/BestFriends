@@ -55,18 +55,23 @@ struct CH6: View {
                     .blendMode(.screen)
                 
             } else {
-
-                Color.black
-//                    .opacity(0.5)
-                    .ignoresSafeArea()
-                    .onAppear()
-
-
                 
-                AdPlayerView(name: "sky2")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                
+                Image("FHBackground")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+
+//                Color.black
+////                    .opacity(0.5)
+//                    .ignoresSafeArea()
+//                    .onAppear()
+//
+//
+//
+//                AdPlayerView(name: "sky2")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//
             }
             
             VStack{
@@ -99,12 +104,11 @@ struct CH6: View {
                 VStack {
                     
                     
-                    Spacer()
-                        .frame(height: 40)
+              
                     
                     Text("Ahh!")
                         .font(.system(size: 30))
-                        .foregroundColor(ColorManager .grey2)
+                        .foregroundColor(Color.white)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
 
@@ -113,7 +117,7 @@ struct CH6: View {
                     
                     Text("Your friend was just thinking about you")
                                             .font(.system(size: 20))
-                                            .foregroundColor(ColorManager .grey2)
+                                            .foregroundColor(Color.white)
                                             .fontWeight(.light)
                                             .multilineTextAlignment(.center)
                     
@@ -122,7 +126,7 @@ struct CH6: View {
                     
                     Text("and sent you Hearts")
                                             .font(.system(size: 20))
-                                            .foregroundColor(ColorManager .grey2)
+                                            .foregroundColor(Color.white)
                                             .fontWeight(.light)
                                             .multilineTextAlignment(.center)
                     
@@ -132,7 +136,7 @@ struct CH6: View {
                     Text("(say thanks)")
                                             .font(.system(size: 15))
                                             .italic()
-                                            .foregroundColor(ColorManager .grey2)
+                                            .foregroundColor(Color.white)
                                             .fontWeight(.light)
                                             .multilineTextAlignment(.center)
 
@@ -278,7 +282,7 @@ struct CH6: View {
                                  })
                             
                             Spacer()
-                                .frame(height: 200)
+                                .frame(height: 375)
                             
 
                         }   

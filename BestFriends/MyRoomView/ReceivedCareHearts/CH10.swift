@@ -25,13 +25,13 @@ struct CH10: View {
         
         ZStack {
             
-            
-            
+        
+
             Image("CareHeart 2")
                 .ignoresSafeArea()
                 .scaledToFit()
-            
-            
+
+
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
