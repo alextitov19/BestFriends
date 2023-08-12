@@ -31,7 +31,7 @@ struct PhotoPopView: View {
     
     var body: some View {
         ZStack {
-//
+
 //            ColorManager.grey4
 //                .opacity(0.8)
 //                .ignoresSafeArea()
@@ -44,7 +44,7 @@ struct PhotoPopView: View {
 //                .opacity(0.99)
             
             
-            AdPlayerView(name: "PhotoPOP")
+            AdPlayerView(name: "")
                 .ignoresSafeArea()
                 .onAppear()
                 .scaledToFill()

@@ -131,14 +131,32 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 30)
    
-                        
                     }
 
                 }
            
                 HStack {
                     
+                   
+                
+                    
                     VStack {
+                  
+                        
+                        Text("Shows as 'blue' atmosphere")
+                            .font(.system(size: 10))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+                        
+                        Text("atmosphere around your planet")
+                            .font(.system(size: 10))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
                         HStack {
                           
                   
@@ -152,15 +170,7 @@ struct AtmosphereMain2: View {
                     
                     }
 
-                        
-                        
-                     
-                        Text("Shows as 'blue' atmosphere \naround your planet \non your friend's iPhone")
-                            .font(.system(size: 10))
-                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
+                   
 
                         Button(action: {
                             mood = 1
@@ -232,7 +242,7 @@ struct AtmosphereMain2: View {
                         
                         Spacer()
                               .frame(height: 12)
-                        
+//
 //                        Button(action: {
 //                            mood = 9
 //                        }) {
@@ -242,11 +252,13 @@ struct AtmosphereMain2: View {
 //                                .foregroundColor(Color.black)
 //                        }
 //                        .frame(width: 140, height: 30, alignment: .center)
-//                        .background(mood == 9 ? Color.red : Color.pink)
+//                        .background(mood == 9 ? Color.red : ColorManager .grey4)
 //                        .cornerRadius(7)
 //                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
- 
+//                        .alert("We are sending out Push Notifications to your freinds. \n\nWe will do our best to track down your friends for you.", isPresented: $showingAlert) {
+//                            Button("OK", role: .cancel, action: {
+//                                showingAlert = false
+//
                         
                     }
                     Spacer ()
@@ -392,7 +404,16 @@ struct AtmosphereMain2: View {
                            
                         }
 
-                        Text("Shows as 'yellow' & 'red' \natmospheres around your planet")
+                        Text("Shows as 'yellow' & 'red'")
+                            .font(.system(size: 10))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+                        
+                        
+                        Text("atmosphere around your planet")
                             .font(.system(size: 10))
                             .italic()
                             .fontWeight(.light)
@@ -426,7 +447,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 8 ? Color(.systemYellow) : Color.green)
+                        .background(mood == 8 ? Color(.systemYellow) : ColorManager .orange3)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         .alert("We are super happy you're having a great day - smile, it's catching.", isPresented: $showingAlert) {
@@ -447,7 +468,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.white)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 9 ? Color(.systemRed) : ColorManager .grey3)
+                        .background(mood == 9 ? Color(.systemRed) : Color.green)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         .alert("We are sending out Push Notifications to your freinds. \n\nWe will do our best to track down your friends for you.", isPresented: $showingAlert) {
