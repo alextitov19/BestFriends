@@ -301,9 +301,12 @@ struct MyRoomView: View {
                                         
                                     VStack {
                                         
-                                        NavigationLink( destination:  RR4(user: user, friends: friends),
+                                        
+//                                        RR4(user: user, friends: friends
+                                        
+                                        NavigationLink( destination:  MyFears(user: user, friends: friends),
                                                         label: {
-                                            Text("Urgent!")
+                                            Text("Panic Attack!")
                                                 .fontWeight(.regular)
                                                 .frame(width: 95, height: 30)
                                                 .foregroundColor(ColorManager .purple5)
