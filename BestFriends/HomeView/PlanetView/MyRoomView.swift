@@ -234,31 +234,32 @@ struct MyRoomView: View {
                                                 .frame(width: 85, height: 30)
                                                 .foregroundColor(ColorManager .purple5)
                                                 .font(.system(size: 17))
-                                                .background(ColorManager .purple1)
+                                                .background(ColorManager .purple2)
                                                 .glow(color: ColorManager.purple3, radius: 1)
                                                 .shadow(color: .white, radius: 3, x: -4, y: 4)
                                                 .opacity(0.9)
                                                 .cornerRadius(7)
                                                 .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                            
                                         })
                                         
-                                        Spacer()
-                                            .frame(height: 10)
+//                                        Spacer()
+//                                            .frame(height: 10)
 
-                                        NavigationLink( destination:  CH10(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
-                                                        label: {
-                                            Text("Received")
-                                                .fontWeight(.regular)
-                                                .frame(width: 85, height: 30)
-                                                .foregroundColor(ColorManager .purple5)
-                                                .font(.system(size: 15))
-                                                .background(ColorManager .purple1)
-                                                .glow(color: ColorManager.purple3, radius: 1)
-                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                                .opacity(0.9)
-                                                .cornerRadius(7)
-                                                .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-                                        })
+//                                        NavigationLink( destination:  CH10(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
+//                                                        label: {
+//                                            Text("Received")
+//                                                .fontWeight(.regular)
+//                                                .frame(width: 85, height: 30)
+//                                                .foregroundColor(ColorManager .purple5)
+//                                                .font(.system(size: 15))
+//                                                .background(ColorManager .purple1)
+//                                                .glow(color: ColorManager.purple3, radius: 1)
+//                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                                .opacity(0.9)
+//                                                .cornerRadius(7)
+//                                                .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+//                                        })
                                         
                                         
                                         
@@ -443,14 +444,14 @@ struct MyRoomView: View {
                                        
                             VStack {
                                 
-                                NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
+                                NavigationLink( destination:  CH10(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                                                 label: {
-                                    Text("Meet-up \nCoupons")
+                                    Text("Received \nCareHearts")
                                         .fontWeight(.regular)
                                         .frame(width: 120, height: 45)
                                         .foregroundColor(ColorManager .purple5)
                                         .font(.system(size: 17))
-                                        .background(ColorManager .purple1)
+                                        .background(ColorManager .purple2)
                                         .glow(color: ColorManager.purple3, radius: 1)
                                         .shadow(color: .white, radius: 3, x: -4, y: 4)
                                         .opacity(0.9)
@@ -493,22 +494,28 @@ struct MyRoomView: View {
 //                                NavigationLink( destination:  CH11(),
 //                                                label: {
 //                                    Text("Contest")
+                                
+//                                NavigationLink( destination:  RR9(user: user, friend: user, friends: friends, groups: groups),
+//                                                    label: {
+//                                        Text("Found NEW \nArtist")
                                     
-                                NavigationLink( destination:  RR9(user: user, friend: user, friends: friends, groups: groups),
-                                                    label: {
-                                        Text("Found NEW \nArtist")
-                                            .fontWeight(.regular)
-                                            .frame(width: 120, height: 45)
-                                            .foregroundColor(ColorManager .purple5)
-                                            .font(.system(size: 15))
-                                            .background(ColorManager .purple1)
-                                            .glow(color: ColorManager.purple3, radius: 1)
-                                            .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                            .opacity(0.9)
-                                            .cornerRadius(7)
-                                            .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-                                    })
-                                           
+                                NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
+                                                label: {
+                                    Text("Meet-up \nCoupons")
+                                        .fontWeight(.regular)
+                                        .frame(width: 120, height: 45)
+                                        .foregroundColor(ColorManager .purple5)
+                                        .font(.system(size: 17))
+                                        .background(ColorManager .purple1)
+                                        .glow(color: ColorManager.purple3, radius: 1)
+                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                        .opacity(0.9)
+                                        .cornerRadius(7)
+                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                })
+                                      
+                                
+                                
 //************************************ When Andy finishes Friendship Highlights ***********
                                            
                                 Spacer()
