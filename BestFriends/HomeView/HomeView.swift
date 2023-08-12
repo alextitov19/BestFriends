@@ -304,7 +304,7 @@ struct HomeView: View {
     private func glowColor(mood: Int) -> Color {
         switch mood {
         case 0:
-            return Color(.systemCyan)
+            return Color(.systemRed)
         case 1:
             return Color(.systemCyan)
         case 2:

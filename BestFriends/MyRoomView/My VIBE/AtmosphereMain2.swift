@@ -47,33 +47,33 @@ struct AtmosphereMain2: View {
                 
                 
                 
-                ColorManager.purple5
+                ColorManager.grey4
                     .ignoresSafeArea()
                     .onAppear()
                 
                 
-                AdPlayerView(name: "dramaLights")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
+//                AdPlayerView(name: "dramaLights")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
                 
             } else {
                 
+                Color.black
+                   .opacity(0.9)
+                    .ignoresSafeArea()
                 
-                Image("FHBackground")
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
+                
+                AdPlayerView(name: "sky2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                
+//                Image("FHBackground")
+//                    .resizable()
+//                    .scaledToFill()
+//                    .edgesIgnoringSafeArea(.all)
             }
             
-//            ColorManager .purple4
-//                .opacity(0.6)
-//                .ignoresSafeArea()
-//
-//
-//            Image("FHBackground")
-//                .resizable()
-//                .scaledToFill()
-//                .edgesIgnoringSafeArea(.all)
+        
             
             VStack {
                 Spacer()
@@ -447,7 +447,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.white)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 9 ? Color(.systemRed) : ColorManager .grey4)
+                        .background(mood == 9 ? Color(.systemRed) : ColorManager .grey3)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         .alert("We are sending out Push Notifications to your freinds. \n\nWe will do our best to track down your friends for you.", isPresented: $showingAlert) {
@@ -481,13 +481,19 @@ struct AtmosphereMain2: View {
                             
 //         ********************************************************
                             
-                            Text("When you send a Push Notification \nyour atmosphere color updates")
+                            Text("When you send a Push Notification")
                                .italic()
                                 .font(.system(size: 17))
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
-
+                            
+                            Text("your atmosphere 'Vibe' color updates")
+                               .italic()
+                                .font(.system(size: 17))
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
                             
                         }
                     }

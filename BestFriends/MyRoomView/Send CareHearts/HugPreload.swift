@@ -201,7 +201,14 @@ struct HugPreload: View {
                         
                 
                         
-                        Text("CareHearts - from the heart of you")
+                        Text("Sending CareHearts")
+                            .font(.system(size: 30))
+//                            .italic()
+                            .foregroundColor(ColorManager .grey1)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("from the heart of you")
                             .font(.system(size: 25))
                             .italic()
                             .foregroundColor(ColorManager .grey1)
@@ -211,19 +218,26 @@ struct HugPreload: View {
                         Spacer ()
                             .frame(height: 7)
                         
-                        Text("they're cute")
-                            .font(.system(size: 17))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                        Spacer ()
-                            .frame(height: 7)
+                  
                         
-                        Text("they can provide emotional support \nto friends on difficult days")
+                        Text("they're fun and they can provide emotional")
                             .font(.system(size: 17))
                             .foregroundColor(Color.white)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
+                        
+                        
+                        
+                              Spacer ()
+                                  .frame(height: 7)
+                        
+                        Text("to friends having a difficult day")
+                            .font(.system(size: 17))
+                            .foregroundColor(Color.white)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                        
                         
                         VStack {
                             
@@ -262,7 +276,7 @@ struct HugPreload: View {
                         .resizable()
                         .foregroundColor(color)
                     //                            .foregroundColor(ColorManager .purple2)
-                        .frame(width: 165, height: 140)
+                        .frame(width: 150, height: 120)
                         .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
 
                     Text(friendName)
