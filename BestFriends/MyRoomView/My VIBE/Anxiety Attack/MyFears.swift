@@ -64,7 +64,7 @@ struct MyFears: View {
                 .opacity(0.8)
                 .ignoresSafeArea()
          
-            AdPlayerView(name: "sky2")
+            AdPlayerView(name: "TreeLake")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.99)
@@ -120,7 +120,7 @@ struct MyFears: View {
                 }
              
                 Spacer()
-                    .frame(height: 40)
+                    .frame(height: 140)
                 
                 VStack {
                     
@@ -170,7 +170,7 @@ struct MyFears: View {
 //                    Crisis Support Services (https://cssnv.org/) offers a hotline (1-800-273-8255) 24 hours a day, 7 days a week to aid in the event of a crisis, such as an anxiety attack or panic attack.
 //
                     Spacer()
-                        .frame(height: 15)
+                        .frame(height: 250)
                     
              
                     

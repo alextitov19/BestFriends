@@ -41,7 +41,8 @@ struct SaySomethingNice5: View {
       
             if shareTapped {
                 
-
+              
+                
                 AdPlayerView(name: "dramaLights")
                     .opacity(0.5)
                     .ignoresSafeArea()
@@ -50,14 +51,15 @@ struct SaySomethingNice5: View {
             } else {
 
                 
-                Color.black
-                  .opacity(0.9)
-                  .ignoresSafeArea()
+              
                 
-                AdPlayerView(name: "background_3")
+                AdPlayerView(name: "Planet1")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-       
+                
+                Color.black
+                  .opacity(0.4)
+                  .ignoresSafeArea()
                 
             }
             

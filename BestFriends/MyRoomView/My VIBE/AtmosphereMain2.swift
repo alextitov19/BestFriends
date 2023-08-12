@@ -63,7 +63,7 @@ struct AtmosphereMain2: View {
                     .ignoresSafeArea()
                 
                 
-                AdPlayerView(name: "sky2")
+                AdPlayerView(name: "Planet1")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 

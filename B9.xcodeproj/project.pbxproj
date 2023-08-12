@@ -301,8 +301,11 @@
 		CFAB542828211BAC00BBF502 /* ParentsFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB542728211BAC00BBF502 /* ParentsFighting.swift */; };
 		CFAB542A282123EA00BBF502 /* WhoFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5429282123EA00BBF502 /* WhoFighting.swift */; };
 		CFBFB9C72A87DE270020A4DF /* background_2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFBFB9C62A87DE260020A4DF /* background_2.mp4 */; };
-		CFBFB9CB2A87DEB30020A4DF /* background_3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFBFB9CA2A87DEB30020A4DF /* background_3.mp4 */; };
 		CFBFB9D12A87EB8F0020A4DF /* SunUp.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFBFB9D02A87EB8F0020A4DF /* SunUp.mp4 */; };
+		CFBFB9D52A87EF590020A4DF /* Planet2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFBFB9D42A87EF590020A4DF /* Planet2.mp4 */; };
+		CFBFB9D72A87EF5F0020A4DF /* Planet1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFBFB9D62A87EF5F0020A4DF /* Planet1.mp4 */; };
+		CFBFB9D92A87F2530020A4DF /* PhotoPOP.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFBFB9D82A87F2530020A4DF /* PhotoPOP.mp4 */; };
+		CFBFB9DD2A87F5B70020A4DF /* TreeLake.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFBFB9DC2A87F5B70020A4DF /* TreeLake.mp4 */; };
 		CFC0ACBE28EF4E7B00B49831 /* SaySomethingPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */; };
 		CFC0ACC028EFD6DB00B49831 /* ChatInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */; };
 		CFC0ACC228EFE26400B49831 /* ChatInfo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0ACC128EFE26400B49831 /* ChatInfo2.swift */; };
@@ -680,8 +683,11 @@
 		CFAB542728211BAC00BBF502 /* ParentsFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentsFighting.swift; sourceTree = "<group>"; };
 		CFAB5429282123EA00BBF502 /* WhoFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoFighting.swift; sourceTree = "<group>"; };
 		CFBFB9C62A87DE260020A4DF /* background_2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_2.mp4; sourceTree = "<group>"; };
-		CFBFB9CA2A87DEB30020A4DF /* background_3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = background_3.mp4; path = ../../../../../../../Desktop/background_3.mp4; sourceTree = "<group>"; };
 		CFBFB9D02A87EB8F0020A4DF /* SunUp.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SunUp.mp4; sourceTree = "<group>"; };
+		CFBFB9D42A87EF590020A4DF /* Planet2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Planet2.mp4; sourceTree = "<group>"; };
+		CFBFB9D62A87EF5F0020A4DF /* Planet1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Planet1.mp4; sourceTree = "<group>"; };
+		CFBFB9D82A87F2530020A4DF /* PhotoPOP.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PhotoPOP.mp4; sourceTree = "<group>"; };
+		CFBFB9DC2A87F5B70020A4DF /* TreeLake.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TreeLake.mp4; sourceTree = "<group>"; };
 		CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingPreload.swift; sourceTree = "<group>"; };
 		CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInfo.swift; sourceTree = "<group>"; };
 		CFC0ACC128EFE26400B49831 /* ChatInfo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInfo2.swift; sourceTree = "<group>"; };
@@ -1429,9 +1435,12 @@
 			children = (
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
 				CFBFB9D02A87EB8F0020A4DF /* SunUp.mp4 */,
+				CFBFB9D62A87EF5F0020A4DF /* Planet1.mp4 */,
+				CFBFB9D42A87EF590020A4DF /* Planet2.mp4 */,
+				CFBFB9D82A87F2530020A4DF /* PhotoPOP.mp4 */,
+				CFBFB9DC2A87F5B70020A4DF /* TreeLake.mp4 */,
 				CF6503FF28864AF00092EEB9 /* background_1.mp4 */,
 				CFBFB9C62A87DE260020A4DF /* background_2.mp4 */,
-				CFBFB9CA2A87DEB30020A4DF /* background_3.mp4 */,
 				CF5263D6266477C600243DD7 /* background_4.mp4 */,
 				7A78232926B2419600CA76FC /* background_5.mp4 */,
 				CF6C5B142A86725E00EC4915 /* InAppVideo.mp4 */,
@@ -2059,11 +2068,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF4A08EE2879577E00ADA9DD /* sky2.mp4 in Resources */,
+				CFBFB9D72A87EF5F0020A4DF /* Planet1.mp4 in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,
 				CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */,
 				7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */,
+				CFBFB9D52A87EF590020A4DF /* Planet2.mp4 in Resources */,
 				7A78232E26B2419600CA76FC /* background_5.mp4 in Resources */,
-				CFBFB9CB2A87DEB30020A4DF /* background_3.mp4 in Resources */,
 				CF47CF0328DB67A8008B6F11 /* PlanetSound.mp4 in Resources */,
 				CF6C5B132A866C9000EC4915 /* MainPgEarth.mp4 in Resources */,
 				CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */,
@@ -2073,7 +2083,9 @@
 				7A63AF8B26A339C70072E21E /* Launch Screen.storyboard in Resources */,
 				CF417546296A60F700898E2D /* NisieJ9.mp4 in Resources */,
 				CFBFB9C72A87DE270020A4DF /* background_2.mp4 in Resources */,
+				CFBFB9D92A87F2530020A4DF /* PhotoPOP.mp4 in Resources */,
 				7A383FFD267AC306002F354A /* background_4.mp4 in Resources */,
+				CFBFB9DD2A87F5B70020A4DF /* TreeLake.mp4 in Resources */,
 				CF3DB37228DA6D7D00BF9CCD /* Nadiah2.m4a in Resources */,
 				CF6C5B152A86725E00EC4915 /* InAppVideo.mp4 in Resources */,
 				CF3DB37628DA85BA00BF9CCD /* Meena1.m4a in Resources */,

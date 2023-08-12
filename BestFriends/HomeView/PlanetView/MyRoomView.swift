@@ -48,7 +48,7 @@ struct MyRoomView: View {
 //                .blendMode(.screen)
 //                .opacity(0.99)
             
-            AdPlayerView(name: "PlanetSound")
+            AdPlayerView(name: "Planet1")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.99)
