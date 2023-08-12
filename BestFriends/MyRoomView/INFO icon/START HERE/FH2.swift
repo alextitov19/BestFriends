@@ -45,7 +45,7 @@ struct FH2: View {
                 .ignoresSafeArea()
                 .onAppear()
             
-            AdPlayerView(name: "sky2")
+            AdPlayerView(name: "background_3")
                 .ignoresSafeArea()
                 .blendMode(.screen)
  

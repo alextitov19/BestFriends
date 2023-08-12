@@ -105,16 +105,16 @@ struct CH4: View {
                       
                   } else {
 
-                      Image("CareHeartBalloon 1")
-                          .ignoresSafeArea()
-                          .scaledToFit()
-                          .opacity(0.6)
+//                      Image("CareHeartBalloon 1")
+//                          .ignoresSafeArea()
+//                          .scaledToFit()
+//                          .opacity(0.6)
                       
                       Color.black
                         .opacity(0.9)
                         .ignoresSafeArea()
                       
-                      AdPlayerView(name: "sky2")
+                      AdPlayerView(name: "background_2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
              
