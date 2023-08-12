@@ -170,7 +170,7 @@ struct MyFears: View {
 //                    Crisis Support Services (https://cssnv.org/) offers a hotline (1-800-273-8255) 24 hours a day, 7 days a week to aid in the event of a crisis, such as an anxiety attack or panic attack.
 //
                     Spacer()
-                        .frame(height: 250)
+                        .frame(height: 230)
                     
              
                     
