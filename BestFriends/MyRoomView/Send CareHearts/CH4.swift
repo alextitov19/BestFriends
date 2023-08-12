@@ -96,7 +96,7 @@ struct CH4: View {
                       Image("FHBackground")
                           .ignoresSafeArea()
                           .scaledToFit()
-                          .opacity(0.5)
+                          .opacity(0.1)
 
                       AdPlayerView(name: "dramaLights")
                           .opacity(0.5)

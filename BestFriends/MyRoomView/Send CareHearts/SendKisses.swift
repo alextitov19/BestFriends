@@ -46,7 +46,7 @@ struct SendKisses: View {
                     .opacity(0.8)
                     .ignoresSafeArea()
         
-                AdPlayerView(name: "sky2")
+                AdPlayerView(name: "dramaLights")
                     .opacity(0.5)
                     .ignoresSafeArea()
                     .blendMode(.screen)
@@ -59,7 +59,7 @@ struct SendKisses: View {
                     .ignoresSafeArea()
                 
                 
-                AdPlayerView(name: "dramaLights")
+                AdPlayerView(name: "SunUp")
                     .ignoresSafeArea()
                     .blendMode(.screen)
            
