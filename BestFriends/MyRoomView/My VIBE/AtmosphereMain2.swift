@@ -47,14 +47,14 @@ struct AtmosphereMain2: View {
                 
                 
                 
-                ColorManager.grey4
+                Color.black
                     .ignoresSafeArea()
                     .onAppear()
                 
                 
-//                AdPlayerView(name: "dramaLights")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
+                AdPlayerView(name: "dramaLights")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
                 
             } else {
                 
