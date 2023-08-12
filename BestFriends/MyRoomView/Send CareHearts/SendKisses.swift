@@ -297,13 +297,20 @@ struct SendKisses: View {
                                  })
                             
                             Spacer()
-                                .frame(height: 40)
+                                .frame(height: 30)
                             
                             
-//                            Image("KissesHeart")
-//                                .resizable()
-//                                .frame(width: 200, height: 150)
-//                                .opacity(0.5)
+                            Text("By tapping [Share] your CareHeart is automatically \nsent to: in-app & push notifications + our Widget")
+                                .fontWeight(.bold)
+                                .frame(width: 300, height: 40)
+                                .foregroundColor(Color.black)
+                                .font(.system(size: 10))
+                                .background(Color.cyan)
+                                .glow(color: ColorManager.purple1, radius: 1)
+                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                .opacity(0.9)
+                                .cornerRadius(15)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                    
                         }
                         
