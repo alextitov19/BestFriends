@@ -47,7 +47,7 @@ struct SettingsView: View {
                     Spacer()
                         .frame(width: 30)
                     
-                    Text("Settings & Walk-through")
+                    Text("Settings")
                         .font(.system(size: 30))
                         .foregroundColor(.gray)
                     
@@ -363,7 +363,10 @@ struct SettingsView: View {
                             .foregroundColor(.white)
                         
                             .padding()
+                       
                         
+                        Spacer()
+                            .frame(height: 100)
                     }
                 }
             }

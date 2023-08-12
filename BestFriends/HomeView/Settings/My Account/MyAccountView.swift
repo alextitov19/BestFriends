@@ -188,7 +188,7 @@ struct MyAccountView: View {
                             .navigationBarHidden(true)
                         
                         Spacer ()
-                            .frame(height: 400)
+                            .frame(height: 480)
                         
                     }
                 }

@@ -22,21 +22,7 @@ struct ChangeChatBackgroundView: View {
             
             VStack {
                 
-//
-//                Button(action: {
-//                    sessionManager.showLogin()
-//                },
-//                    label: {
-//                        Text("Home / Chat")
-//                            .fontWeight(.thin)
-//                            .frame(width: 200, height: 40)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                            .font(.system(size: 30))
-//                            .background(ColorManager.purple3)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                    })
-//
+
                 
                 Text("Try a 'motion' background")
                     .font(.system(size: 30))
@@ -59,7 +45,7 @@ struct ChangeChatBackgroundView: View {
 //                    BackgroundCard(title: "Default - static", backgroundNumber: 0, user: user, selectedBackground: $selectedBackground)
 //                        .padding(5)
 //
-                 
+//                 
                     
                     BackgroundCard(title: "Default - static", backgroundNumber: 0, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
@@ -74,18 +60,18 @@ struct ChangeChatBackgroundView: View {
                 }
                 .padding(.horizontal, 10)
                 
-//                HStack {
-//                    BackgroundCard(title: "Clouds", backgroundNumber: 2, user: user, selectedBackground: $selectedBackground)
-//                        .padding(5)
-//                    
-//                    BackgroundCard(title: "Nostalgia", backgroundNumber: 3, user: user, selectedBackground: $selectedBackground)
-//                        .padding(5)
-//                }
-//                .padding(.horizontal, 10)
+                HStack {
+                    BackgroundCard(title: "Earth", backgroundNumber: 2, user: user, selectedBackground: $selectedBackground)
+                        .padding(5)
+                    
+                    BackgroundCard(title: "Universe", backgroundNumber: 3, user: user, selectedBackground: $selectedBackground)
+                        .padding(5)
+                }
+                .padding(.horizontal, 10)
                 
                 HStack {
                     
-                    BackgroundCard(title: "Embedded Nike Ad", backgroundNumber: 1, user: user, selectedBackground: $selectedBackground)
+                    BackgroundCard(title: "Beta Testing... \nEmbedded Ads", backgroundNumber: 1, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
                   
                     
@@ -117,12 +103,12 @@ struct ChangeChatBackgroundView: View {
                 
                 VStack {
                     Text(title)
-                        .font(.system(size: 20))
+                        .font(.system(size: 15))
                     
                     Image("background_\(backgroundNumber)")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 100, height: 100)
+                        .frame(width: 70, height: 70)
                     
                     if backgroundNumber == selectedBackground {
                         Text("Selected")
@@ -134,14 +120,14 @@ struct ChangeChatBackgroundView: View {
                             update()
                         }, label: {
                             ZStack {
-                                ColorManager.purple7
+                                ColorManager.grey4
                                 
                                 Text("Select")
                                     .font(.system(size: 20))
                                     .foregroundColor(.white)
                             }
-                            .frame(width: 100, height: 40)
-                            .cornerRadius(20)
+                            .frame(width: 90, height: 40)
+                            .cornerRadius(10)
                         })
                     }
                     
