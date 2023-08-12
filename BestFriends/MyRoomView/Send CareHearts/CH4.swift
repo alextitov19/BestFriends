@@ -91,13 +91,6 @@ struct CH4: View {
             
                   if shareTapped {
                       
-
-                      
-                      Image("FHBackground")
-                          .ignoresSafeArea()
-                          .scaledToFit()
-                          .opacity(0.5)
-
                       AdPlayerView(name: "dramaLights")
                           .opacity(0.5)
                           .ignoresSafeArea()
@@ -105,10 +98,6 @@ struct CH4: View {
                       
                   } else {
 
-//                      Image("CareHeartBalloon 1")
-//                          .ignoresSafeArea()
-//                          .scaledToFit()
-//                          .opacity(0.6)
                       
                       Color.black
                         .opacity(0.9)

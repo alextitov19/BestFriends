@@ -41,14 +41,7 @@ struct SendKisses: View {
 
             
             if shareTapped {
-                
-
-                
-                Image("FHBackground")
-                    .ignoresSafeArea()
-                    .scaledToFit()
-                    .opacity(0.5)
-
+        
                 AdPlayerView(name: "dramaLights")
                     .opacity(0.5)
                     .ignoresSafeArea()
@@ -56,14 +49,7 @@ struct SendKisses: View {
                 
             } else {
 
-               
-         
 
-//                Image("CareHeartBalloon 1")
-//                    .ignoresSafeArea()
-//                    .scaledToFit()
-//                    .opacity(0.6)
-                
                 Color.black
                    .opacity(0.9)
                     .ignoresSafeArea()
