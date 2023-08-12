@@ -53,7 +53,7 @@ struct SaySomethingNice5: View {
                 
               
                 
-                AdPlayerView(name: "Planet1")
+                AdPlayerView(name: "StarHang")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
