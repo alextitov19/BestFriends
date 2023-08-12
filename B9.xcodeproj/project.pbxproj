@@ -1418,7 +1418,6 @@
 		CF5263FB266F1FF600243DD7 /* Ad Videos */ = {
 			isa = PBXGroup;
 			children = (
-				CF6503FF28864AF00092EEB9 /* background_1.mp4 */,
 			);
 			path = "Ad Videos";
 			sourceTree = "<group>";
@@ -1426,13 +1425,14 @@
 		CF5263FC266F201000243DD7 /* Background Videos */ = {
 			isa = PBXGroup;
 			children = (
+				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
+				CF6C5B182A86738000EC4915 /* MainPg2.mp4 */,
+				CF6503FF28864AF00092EEB9 /* background_1.mp4 */,
+				CF5263D6266477C600243DD7 /* background_4.mp4 */,
+				7A78232926B2419600CA76FC /* background_5.mp4 */,
 				CFAF42222A526ADA007B7DF5 /* Galaxy2.mp4 */,
 				CF6C5B142A86725E00EC4915 /* InAppVideo.mp4 */,
 				CF6C5B122A866C9000EC4915 /* MainPgEarth.mp4 */,
-				CF6C5B182A86738000EC4915 /* MainPg2.mp4 */,
-				CF5263D6266477C600243DD7 /* background_4.mp4 */,
-				7A78232926B2419600CA76FC /* background_5.mp4 */,
-				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
 				CFDB14FB2855A1E600155CEE /* dramaLights.mp4 */,
 				CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */,
 				CF417545296A60F700898E2D /* NisieJ9.mp4 */,
