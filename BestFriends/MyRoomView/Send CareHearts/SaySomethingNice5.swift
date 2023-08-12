@@ -54,7 +54,7 @@ struct SaySomethingNice5: View {
                   .opacity(0.9)
                   .ignoresSafeArea()
                 
-                AdPlayerView(name: "sky2")
+                AdPlayerView(name: "background_3")
                     .ignoresSafeArea()
                     .blendMode(.screen)
        

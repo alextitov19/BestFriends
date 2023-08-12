@@ -53,7 +53,7 @@ struct HugPushNotification: View {
                   .opacity(0.9)
                   .ignoresSafeArea()
                 
-                AdPlayerView(name: "sky2")
+                AdPlayerView(name: "background_2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
