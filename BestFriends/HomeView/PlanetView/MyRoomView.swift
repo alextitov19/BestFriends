@@ -239,7 +239,7 @@ struct MyRoomView: View {
                                                 .shadow(color: .white, radius: 3, x: -4, y: 4)
                                                 .opacity(0.9)
                                                 .cornerRadius(7)
-                                                .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                             
                                         })
                                         
@@ -295,7 +295,7 @@ struct MyRoomView: View {
                                                 .font(.system(size: 15))
                                                 .background(ColorManager .purple1)
                                                 .glow(color: ColorManager.purple3, radius: 1)
-                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                                .shadow(color: .purple, radius: 3, x: -4, y: 4)
                                                 .opacity(0.9)
                                                 .cornerRadius(7)
                                                 .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
@@ -319,7 +319,7 @@ struct MyRoomView: View {
                                                 .font(.system(size: 15))
                                                 .background(ColorManager .purple1)
                                                 .glow(color: ColorManager.purple3, radius: 1)
-                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                                .shadow(color: .purple, radius: 3, x: -4, y: 4)
                                                 .opacity(0.9)
                                                 .cornerRadius(7)
                                                 .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
