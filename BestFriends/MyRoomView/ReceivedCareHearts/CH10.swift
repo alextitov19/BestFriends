@@ -109,8 +109,8 @@ struct CH10: View {
                         
                         VStack {
                             
-                            //                            Spacer ()
-                            //                                .frame(height: 155)
+                                                        Spacer ()
+                                                            .frame(height: 75)
                             
                             
                         }

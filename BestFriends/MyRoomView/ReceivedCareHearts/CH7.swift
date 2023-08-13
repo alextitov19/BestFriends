@@ -108,18 +108,20 @@ struct CH7: View {
                           .scaledToFit()
                           .opacity(0.1)
                       
-                      Color.black
-                        .opacity(0.9)
-                        .ignoresSafeArea()
+                      Image("FHBackground")
+                          .resizable()
+                          .scaledToFill()
+                          .edgesIgnoringSafeArea(.all)
                       
-                      AdPlayerView(name: "sky2")
-                          .ignoresSafeArea()
-                          .blendMode(.screen)
+//                      Color.black
+//                        .opacity(0.9)
+//                        .ignoresSafeArea()
                       
-//                      Image("FHBackground")
-//                          .resizable()
-//                          .scaledToFill()
-//                          .edgesIgnoringSafeArea(.all)
+//                      AdPlayerView(name: "sky2")
+//                          .ignoresSafeArea()
+//                          .blendMode(.screen)
+                      
+                     
                       
             }
             
@@ -351,7 +353,7 @@ struct CH7: View {
                             })
                             
                             Spacer()
-                                .frame(height: 150)
+                                .frame(height: 375)
      
                         }
               
