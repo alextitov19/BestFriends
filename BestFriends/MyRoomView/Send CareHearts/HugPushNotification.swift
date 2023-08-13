@@ -283,7 +283,7 @@ struct HugPushNotification: View {
                                 .background(ColorManager .grey2)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your hug has been sent. \n\nSometimes there's more power in a simple hug than a thousand words.", isPresented: $showingAlert) {
+                                .alert("Your hug has been sent. \n\nSometimes there's more power in a simple hug than a thousand words. \n\nBy tapping [Share] your CareHeart is automatically \nsent to: in-app & push notifications + our Widget", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -315,18 +315,18 @@ struct HugPushNotification: View {
                    
                         }
                         
-                        
-                        Text("By tapping [Share] your CareHeart is automatically \nsent to: in-app & push notifications + our Widget")
-                            .fontWeight(.bold)
-                            .frame(width: 300, height: 40)
-                            .foregroundColor(Color.black)
-                            .font(.system(size: 10))
-                            .background(Color.cyan)
-                            .glow(color: ColorManager.purple1, radius: 1)
-                            .shadow(color: .white, radius: 3, x: -4, y: 4)
-                            .opacity(0.9)
-                            .cornerRadius(15)
-                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                        
+//                        Text("By tapping [Share] your CareHeart is automatically \nsent to: in-app & push notifications + our Widget")
+//                            .fontWeight(.bold)
+//                            .frame(width: 300, height: 40)
+//                            .foregroundColor(Color.black)
+//                            .font(.system(size: 10))
+//                            .background(Color.cyan)
+//                            .glow(color: ColorManager.purple1, radius: 1)
+//                            .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                            .opacity(0.9)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         
                         }
                     

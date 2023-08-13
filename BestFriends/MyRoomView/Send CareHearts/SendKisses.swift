@@ -103,7 +103,7 @@ struct SendKisses: View {
                                             .foregroundColor(Color.white)
                                             .fontWeight(.light)
                                             .multilineTextAlignment(.center)
-                    Text("and blow your kiss towards you friend")
+                    Text("and blow your kiss towards your friend")
                                             .font(.system(size: 23))
                 
                                             .foregroundColor(Color.white)
