@@ -80,7 +80,7 @@ struct SendKisses: View {
                              
                                 
                                 Text("Blowing Kisses")
-                                    .font(.system(size: 55, weight: .light))
+                                    .font(.system(size: 35, weight: .light))
                                     .foregroundColor(ColorManager .grey1)
                             }
                         }
@@ -98,13 +98,13 @@ struct SendKisses: View {
                         .frame(height: 20)
 
                     Text("Jump up on a chair,")
-                                            .font(.system(size: 23))
+                                            .font(.system(size: 20))
                 
                                             .foregroundColor(Color.white)
                                             .fontWeight(.light)
                                             .multilineTextAlignment(.center)
                     Text("and blow your kiss towards your friend")
-                                            .font(.system(size: 23))
+                                            .font(.system(size: 20))
                 
                                             .foregroundColor(Color.white)
                                             .fontWeight(.light)
