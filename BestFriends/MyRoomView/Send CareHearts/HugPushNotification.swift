@@ -106,7 +106,7 @@ struct HugPushNotification: View {
          
                 VStack {
                     Spacer()
-                        .frame(height: 7)
+                        .frame(height: 20)
 
                     Text("Getting your hug is like the joy of")
                         .font(.system(size: 23))
@@ -315,7 +315,7 @@ struct HugPushNotification: View {
                    
                         }
                         
-//                        
+//
 //                        Text("By tapping [Share] your CareHeart is automatically \nsent to: in-app & push notifications + our Widget")
 //                            .fontWeight(.bold)
 //                            .frame(width: 300, height: 40)

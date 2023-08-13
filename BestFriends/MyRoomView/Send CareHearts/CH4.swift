@@ -139,6 +139,17 @@ struct CH4: View {
 //                                                .background(Color.green)
 //                                                .cornerRadius(10)
                                                 
+                                                Text("sending a")
+                                                    .font(.system(size: 55, weight: .light))
+                                                    .foregroundColor(ColorManager .grey1)
+                                                
+                                                Text("comforting song")
+                                                    .font(.system(size: 55, weight: .light))
+                                                    .foregroundColor(ColorManager .grey1)
+                                                
+                                                Spacer()
+                                                    .frame(height: 7)
+                                                
                                                 Text("You know 'that' song you listen to \nover-and-over while lying in bed \non one of those days? \n\nSend it to your friend - maybe it will help!")
                                                     .font(.system(size: 19, weight: .light))
                                                     .foregroundColor(Color.white)

@@ -95,7 +95,7 @@ struct SendKisses: View {
                 VStack {
                     
                     Spacer()
-                        .frame(height: 7)
+                        .frame(height: 20)
 
                     Text("Jump up on a chair,")
                                             .font(.system(size: 23))

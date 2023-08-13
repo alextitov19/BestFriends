@@ -114,9 +114,10 @@ struct RR11: View {
                         .opacity(0.9)
                         .ignoresSafeArea()
                       
-                      AdPlayerView(name: "sky2")
+                      AdPlayerView(name: "Planet3")
                           .ignoresSafeArea()
                           .blendMode(.screen)
+                          .opacity(0.6)
              
                       
             }
@@ -124,23 +125,20 @@ struct RR11: View {
 
             
             VStack {
-                
+          
                 
                 
 //                                        ZStack(alignment: .bottom) {
                                             
                                             ZStack {
                                                 
+
                                                 
-//
-//                                            Image("")
-//                                                .resizable()
-//                                                .frame(width: 350, height: 48)
-//                                                .background(Color.green)
-//                                                .cornerRadius(10)
+                                                Spacer()
+                                                    .frame(height: 7)
                                                 
                                                 Text("I was just thinking about you wanted \nto send you a Heart!")
-                                                    .font(.system(size: 19, weight: .light))
+                                                    .font(.system(size: 23, weight: .light))
                                                     .foregroundColor(Color.white)
                                                     .multilineTextAlignment(.center)
                                        
@@ -152,7 +150,7 @@ struct RR11: View {
                                                 TextField("", text: $customMessage)
                                                     .placeholder(when: customMessage.isEmpty) {
                                                         HStack {
-                                                            Text("Send short message with Heart")
+                                                            Text("Send short message with your Heart")
                                                                 .foregroundColor(Color.white)
                                                                 .fontWeight(.thin)
                                                             Spacer()
@@ -192,24 +190,19 @@ struct RR11: View {
                         Spacer()
                             .frame(height: 30)
 
-//                        Text("Maybe you just found new music on social media")
-//                            .font(.system(size: 20))
-//                            .fontWeight(.light)
-//                            .foregroundColor(Color.white)
-//                            .multilineTextAlignment(.center)
-//
-//                        Text("and want to show your friends")
-//                            .font(.system(size: 20))
-//                            .fontWeight(.light)
-//                            .foregroundColor(Color.white)
-//                            .multilineTextAlignment(.center)
-//
-//
-                        
+                        Text("sending")
+                            .font(.system(size: 55, weight: .light))
+                            .foregroundColor(ColorManager .grey1)
+                        Text("Hearts")
+                            .font(.system(size: 55, weight: .light))
+                            .foregroundColor(ColorManager .grey1)
                     }
           
                 VStack {
 
+                    Spacer()
+                        .frame(height: 50)
+                    
                     Text("(alert friend to Heart & message in Chat)")
                         .font(.system(size: 15))
                         .italic()
@@ -352,7 +345,7 @@ struct RR11: View {
                             })
                             
                             Spacer()
-                                .frame(height: 150)
+                                .frame(height: 100)
      
                         }
               
