@@ -97,6 +97,21 @@ struct AtmosphereMain2: View {
                             .frame(height: 10)
                         
                         Text("Something just happened.")
+                            .font(.system(size: 30))
+//                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+                        
+                        Text("But maybe you're just not ready")
+                            .font(.system(size: 20))
+//                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+                        Text("to talk about it yet.")
                             .font(.system(size: 20))
 //                            .italic()
                             .fontWeight(.light)
@@ -104,12 +119,6 @@ struct AtmosphereMain2: View {
                             .foregroundColor(Color.white)
                         
                         
-                        Text("Maybe, you're not ready to talk about it yet.")
-                            .font(.system(size: 20))
-//                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
                         Spacer()
                             .frame(height: 15)
                         
@@ -151,7 +160,7 @@ struct AtmosphereMain2: View {
                             .foregroundColor(Color.white)
                         
                         
-                        Text("atmosphere around your planet")
+                        Text("around your planet")
                             .font(.system(size: 10))
                             .italic()
                             .fontWeight(.light)
