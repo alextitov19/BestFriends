@@ -86,15 +86,7 @@ struct AtmosphereMain2: View {
                     VStack {
                  
                      
-                        
-                        Text("My Vibes")
-                            .font(.system(size: 45))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                        
-                        Spacer()
-                            .frame(height: 10)
+                
                         
                         Text("Something just happened.")
                             .font(.system(size: 30))
@@ -103,27 +95,30 @@ struct AtmosphereMain2: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
                         
+                        Spacer()
+                            .frame(height: 10)
+                        
                         
                         Text("But maybe you're just not ready")
-                            .font(.system(size: 20))
-//                            .italic()
+                            .font(.system(size: 17))
+                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
                         
                         Text("to talk about it yet.")
-                            .font(.system(size: 20))
-//                            .italic()
+                            .font(.system(size: 17))
+                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
                         
                         
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 25)
                         
-                        Text("Let your friends send you some")
-                            .font(.system(size: 22))
+                        Text("Let your friends know so they can send")
+                            .font(.system(size: 17))
 //                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -131,7 +126,7 @@ struct AtmosphereMain2: View {
               
                         
                         Text("CareHearts in the meantime.")
-                            .font(.system(size: 22))
+                            .font(.system(size: 17))
 //                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -511,14 +506,14 @@ struct AtmosphereMain2: View {
                             
 //         ********************************************************
                             
-                            Text("When you send a notificatins")
+                            Text("When sending a notification")
                                .italic()
                                 .font(.system(size: 17))
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
                             
-                            Text("your atmosphere 'Vibe' color updates")
+                            Text("your planet's atmosphere color changes")
                                .italic()
                                 .font(.system(size: 17))
                                 .fontWeight(.thin)
@@ -647,7 +642,7 @@ struct AtmosphereMain2: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("We hope you just tapped the 'Great Day' button - that would put smiles on our faces. \nIf not, we and your friends are here for you. \n\nWe just sent your friend(s) a notificaion. \nLetting them know your 'Vibe' changed.", isPresented: $showingAlert) {
+                                .alert("We just sent your friend(s) a notificaion. \nLetting them know your 'Vibe' changed.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
@@ -656,12 +651,9 @@ struct AtmosphereMain2: View {
                         
 
                         Spacer()
-                            .frame(height: 17)
-                        
-                 
-                        
-                        Spacer()
                             .frame(height: 20)
+                        
+            
                         
                         Button(action: {
                             sessionManager.showLogin()
@@ -671,7 +663,7 @@ struct AtmosphereMain2: View {
                                 .frame(width: 50, height: 25)
                                 .foregroundColor(.black)
                                 .font(.system(size: 20))
-                                .background(Color .white)
+                                .background(ColorManager .grey3)
                                 .cornerRadius(15)
                                 .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                                 .opacity(0.70)

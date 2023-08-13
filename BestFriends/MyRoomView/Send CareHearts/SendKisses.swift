@@ -79,7 +79,7 @@ struct SendKisses: View {
                             VStack {
                              
                                 
-                                Text("blowing kisses")
+                                Text("Blowing Kisses")
                                     .font(.system(size: 55, weight: .light))
                                     .foregroundColor(ColorManager .grey1)
                             }

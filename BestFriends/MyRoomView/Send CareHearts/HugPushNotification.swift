@@ -57,7 +57,7 @@ struct HugPushNotification: View {
                   .opacity(0.9)
                   .ignoresSafeArea()
                 
-                AdPlayerView(name: "background_2")
+                AdPlayerView(name: "HugSound")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
@@ -79,13 +79,24 @@ struct HugPushNotification: View {
                                  
                                     
                                 VStack {
-                                    Text("sending perfect")
+                                    Text("Sending a CareHearts")
                                         .font(.system(size: 30, weight: .light))
                                         .foregroundColor(Color.white)
                                     
-                                    Text("hugs")
+                                    Text("Hug")
                                         .font(.system(size: 55, weight: .light))
                                         .foregroundColor(Color.white)
+                                    
+                                    
+                                    Spacer()
+                                        .frame(height: 10)
+                                    
+                                    Text("it's the next best thing to being there")
+                                        .font(.system(size: 17, weight: .light))
+                                        .italic()
+                                        .foregroundColor(Color.white)
+                                    
+                                    
                                 }
                             }
                           
@@ -108,54 +119,15 @@ struct HugPushNotification: View {
                     Spacer()
                         .frame(height: 20)
 
-                    Text("Getting your hug is like the joy of")
-                        .font(.system(size: 23))
-                        .fontWeight(.light)
-                        .foregroundColor(Color.white)
-                        .multilineTextAlignment(.center)
-                    
-                    
-                    Text("kicking through Autumn's leaves")
-                        .font(.system(size: 23))
-                        .fontWeight(.light)
-                        .foregroundColor(Color.white)
-                        .multilineTextAlignment(.center)
 
                     Spacer()
                         .frame(height: 25)
-                    
-//                    Text("or the comfort of")
-//                        .font(.system(size: 23))
-//                        .fontWeight(.light)
-//                        .foregroundColor(ColorManager .grey1)
-//                        .multilineTextAlignment(.center)
-//
-//                    Text("hot chocolate on a blistery winter's day")
-//                        .font(.system(size: 23))
-//                        .fontWeight(.light)
-//                        .foregroundColor(ColorManager .grey1)
-//                        .multilineTextAlignment(.center)
-                    
-                    
+                
                     VStack {
                         
                         Spacer()
                             .frame(height: 10)
-                        
-                        NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
-                                        label: {
-                            Text("Include a PhotoPOP")
-                                .fontWeight(.bold)
-                                .frame(width: 300, height: 40)
-                                .foregroundColor(Color.black)
-                                .font(.system(size: 16))
-                                .background(Color.cyan)
-                                .glow(color: ColorManager.purple1, radius: 1)
-                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                .opacity(0.9)
-                                .cornerRadius(15)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                        })
+                   
                         
                         Spacer()
                             .frame(height: 20)

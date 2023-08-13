@@ -305,6 +305,7 @@
 		CFBFB9D92A87F2530020A4DF /* PhotoPOP.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFBFB9D82A87F2530020A4DF /* PhotoPOP.mp4 */; };
 		CFBFB9DD2A87F5B70020A4DF /* TreeLake.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFBFB9DC2A87F5B70020A4DF /* TreeLake.mp4 */; };
 		CFBFB9E12A8882BB0020A4DF /* Planet3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFBFB9E02A8882BB0020A4DF /* Planet3.mp4 */; };
+		CFBFB9E32A88E8C80020A4DF /* HugSound.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFBFB9E22A88E8C80020A4DF /* HugSound.mp4 */; };
 		CFC0ACBE28EF4E7B00B49831 /* SaySomethingPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */; };
 		CFC0ACC028EFD6DB00B49831 /* ChatInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */; };
 		CFC0ACC228EFE26400B49831 /* ChatInfo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0ACC128EFE26400B49831 /* ChatInfo2.swift */; };
@@ -686,6 +687,7 @@
 		CFBFB9D82A87F2530020A4DF /* PhotoPOP.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PhotoPOP.mp4; sourceTree = "<group>"; };
 		CFBFB9DC2A87F5B70020A4DF /* TreeLake.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TreeLake.mp4; sourceTree = "<group>"; };
 		CFBFB9E02A8882BB0020A4DF /* Planet3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Planet3.mp4; sourceTree = "<group>"; };
+		CFBFB9E22A88E8C80020A4DF /* HugSound.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HugSound.mp4; sourceTree = "<group>"; };
 		CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingPreload.swift; sourceTree = "<group>"; };
 		CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInfo.swift; sourceTree = "<group>"; };
 		CFC0ACC128EFE26400B49831 /* ChatInfo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInfo2.swift; sourceTree = "<group>"; };
@@ -1436,6 +1438,7 @@
 				CFBFB9E02A8882BB0020A4DF /* Planet3.mp4 */,
 				CFBFB9D82A87F2530020A4DF /* PhotoPOP.mp4 */,
 				CFBFB9DC2A87F5B70020A4DF /* TreeLake.mp4 */,
+				CFBFB9E22A88E8C80020A4DF /* HugSound.mp4 */,
 				CF6503FF28864AF00092EEB9 /* background_1.mp4 */,
 				CFBFB9C62A87DE260020A4DF /* background_2.mp4 */,
 				CF5263D6266477C600243DD7 /* background_4.mp4 */,
@@ -2066,6 +2069,7 @@
 			files = (
 				CF4A08EE2879577E00ADA9DD /* sky2.mp4 in Resources */,
 				CFBFB9D72A87EF5F0020A4DF /* Planet1.mp4 in Resources */,
+				CFBFB9E32A88E8C80020A4DF /* HugSound.mp4 in Resources */,
 				CFBFB9E12A8882BB0020A4DF /* Planet3.mp4 in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,
 				CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */,
