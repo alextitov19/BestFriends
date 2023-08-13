@@ -251,7 +251,7 @@ struct NotificationsView: View {
             case "Said thanks for thinking about them and sending the Heart!":
                 thanksHeartActive = true
                 
-            case "Perfect! Thanks for the song.":
+            case "Perfect, thanks for the song. Sent you a message in Chat":
                 thanksSongActive = true
                 
             case "Just sent you a message in Chat - please look at it":

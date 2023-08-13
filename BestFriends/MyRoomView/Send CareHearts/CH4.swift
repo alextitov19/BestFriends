@@ -406,19 +406,4 @@ struct CH4: View {
     }
 }
 
-
-
-//
-//
-//                                    Text("Did you just find a new song?")
-//                                        .font(.system(size: 23))
-//                                        .fontWeight(.light)
-//                                        .foregroundColor(Color.white)
-//                                        .multilineTextAlignment(.center)
-//
-//                                    Text("Show it off to a friend")
-//                                        .font(.system(size: 23))
-//                                        .fontWeight(.light)
-//                                        .foregroundColor(Color.white)
-//                                        .multilineTextAlignment(.center)
-                
+            
