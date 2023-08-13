@@ -502,7 +502,7 @@ struct AtmosphereMain2: View {
                             
 //         ********************************************************
                             
-                            Text("When you send a Push Notification")
+                            Text("When you send a notificatins")
                                .italic()
                                 .font(.system(size: 17))
                                 .fontWeight(.thin)

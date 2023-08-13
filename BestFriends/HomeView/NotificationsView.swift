@@ -93,11 +93,15 @@ struct NotificationsView: View {
         @State private var thanksKissesActive = false
         @State private var thanksHugActive = false
         @State private var thanksHeartActive = false
+        @State private var thanksSongActive = false
         @State private var fixFightActive = false
         @State private var talkCouponActive = false
         @State private var vibeActive = false
         @State private var needTalkActive = false
         @State private var newArtistActive = false
+        
+        
+        
         
         init(ian: InAppNotification, user: User, friends: [User]) {
             self.ian = ian
@@ -185,9 +189,9 @@ struct NotificationsView: View {
                     EmptyView()
                 })
                 
-//                NavigationLink(destination: RR9(user: user, friend: user, friends: friends, groups: groups), isActive: $newArtistActive, label: {
-//                    EmptyView()
-//                })
+                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksSongActive, label: {
+                    EmptyView()
+                })
               
                 
                 Color.cyan
@@ -244,8 +248,11 @@ struct NotificationsView: View {
             case "Ahhh! Thanks for the Hug - it was just what I needed!":
                 thanksHugActive = true
                 
-            case "Said thank you for the Heart!":
+            case "Said thanks for thinking about them and sending the Heart!":
                 thanksHeartActive = true
+                
+            case "Perfect! Thanks for the song.":
+                thanksSongActive = true
                 
             case "Just sent you a message in Chat - please look at it":
                 fixFightActive = true
@@ -262,7 +269,7 @@ struct NotificationsView: View {
             case "I found a New Artist & posted them in Chat":
                 newArtistActive = true
                 
-                
+           
                 
                 
                 
