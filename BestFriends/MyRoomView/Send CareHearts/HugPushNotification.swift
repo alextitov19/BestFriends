@@ -263,6 +263,8 @@ struct HugPushNotification: View {
                         
                         VStack {
                             
+                            Spacer()
+                                .frame(height: 20)
                             
                                  Button(action: {
                                      sessionManager.showLogin()

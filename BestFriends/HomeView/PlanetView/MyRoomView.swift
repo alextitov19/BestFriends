@@ -85,6 +85,8 @@ struct MyRoomView: View {
                                 
                                 ZStack {
                                     
+//                                    was: FH2
+                                    
                                     NavigationLink( destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                                     label: {
                                         Text("Start       Here")
@@ -229,9 +231,9 @@ struct MyRoomView: View {
                              
                                         NavigationLink( destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                                                         label: {
-                                            Text("Send")
+                                            Text("Sending \nCareHearts")
                                                 .fontWeight(.regular)
-                                                .frame(width: 85, height: 30)
+                                                .frame(width: 100, height: 45)
                                                 .foregroundColor(ColorManager .purple5)
                                                 .font(.system(size: 17))
                                                 .background(ColorManager .purple2)
@@ -295,10 +297,10 @@ struct MyRoomView: View {
                                                 .font(.system(size: 15))
                                                 .background(ColorManager .purple1)
                                                 .glow(color: ColorManager.purple3, radius: 1)
-                                                .shadow(color: .purple, radius: 3, x: -4, y: 4)
+                                                .shadow(color: .green, radius: 3, x: -4, y: 4)
                                                 .opacity(0.9)
                                                 .cornerRadius(7)
-                                                .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                                .shadow(color: Color.green, radius: 2, x: 0, y: 2)
                                         })
                                     }
                                         
@@ -446,7 +448,7 @@ struct MyRoomView: View {
                                 
                                 NavigationLink( destination:  CH10(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                                                 label: {
-                                    Text("Received \nCareHearts")
+                                    Text("Receiving \nCareHearts")
                                         .fontWeight(.regular)
                                         .frame(width: 120, height: 45)
                                         .foregroundColor(ColorManager .purple5)
