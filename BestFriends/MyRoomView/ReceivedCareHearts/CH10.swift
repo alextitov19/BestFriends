@@ -65,7 +65,7 @@ struct CH10: View {
                         
                         
                         
-                        Text("Yep! Your friends are the best")
+                        Text("Yep! Your friends care about you")
                             .font(.system(size: 17))
                             .foregroundColor(Color.white)
                             .fontWeight(.thin)
