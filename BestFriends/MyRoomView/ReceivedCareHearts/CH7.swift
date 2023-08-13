@@ -184,7 +184,7 @@ struct CH7: View {
 
                       
                         
-                        Text("Let your friend know know")
+                        Text("Let your friend know")
                             .font(.system(size: 20, weight: .light))
                             .foregroundColor(Color.white)
                             .multilineTextAlignment(.center)
