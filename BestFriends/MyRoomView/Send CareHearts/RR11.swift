@@ -182,26 +182,36 @@ struct RR11: View {
 //                    }
                     
                     
-                    VStack {
-                   
-                     
+                VStack {
+                    
+                    
+                    
+                    
+                    Spacer()
+                        .frame(height: 30)
+                    ZStack {
                         
-                        
-                        Spacer()
-                            .frame(height: 30)
-
-                        Text("sending")
-                            .font(.system(size: 55, weight: .light))
-                            .foregroundColor(ColorManager .grey1)
-                        Text("Hearts")
-                            .font(.system(size: 55, weight: .light))
-                            .foregroundColor(ColorManager .grey1)
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .foregroundColor(Color.purple)
+                            .frame(width: 225, height: 175)
+                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                            .opacity(0.5)
+                       
+                        VStack {
+                            Text("sending")
+                                .font(.system(size: 35, weight: .light))
+                                .foregroundColor(ColorManager .purple3)
+                            Text("Hearts")
+                                .font(.system(size: 47, weight: .light))
+                                .foregroundColor(ColorManager .purple3)
+                        }
                     }
-          
+                }
                 VStack {
 
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 30)
                     
                     Text("(alert friend to Heart & message in Chat)")
                         .font(.system(size: 15))
