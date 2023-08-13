@@ -221,21 +221,21 @@ struct CH4: View {
                         Image(systemName: "circle.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 235, height: 150)
+                            .frame(width: 245, height: 160)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .opacity(0.5)
                         
                         VStack {
                             
-                            Text("Sending a song")
+                            Text("Send a song")
                                 .font(.system(size: 20, weight: .light))
                                 .foregroundColor(ColorManager .purple3)
                             
-                            Text("to match")
+                            Text("to match your friend's")
                                 .font(.system(size: 20, weight: .light))
                                 .foregroundColor(ColorManager .purple3)
                             
-                            Text("friend's 'Vibe'")
+                            Text("'Vibe'")
                                 .font(.system(size: 20, weight: .light))
                                 .foregroundColor(ColorManager .purple3)
                             
@@ -374,7 +374,7 @@ struct CH4: View {
                                 .background(ColorManager .grey2)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your Song \nhas been sent to Chat.", isPresented: $showingAlert) {
+                                .alert("Your Song \nhas been sent to Chat. \n\nBy tapping [Share] your song is automatically \nsent to: in-app & push notifications + our Widget", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             

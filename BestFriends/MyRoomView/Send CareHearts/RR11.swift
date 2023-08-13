@@ -138,14 +138,14 @@ struct RR11: View {
                                                 TextField("", text: $customMessage)
                                                     .placeholder(when: customMessage.isEmpty) {
                                                         HStack {
-                                                            Text("Send message in Chat w/ your Heart")
+                                                            Text("Send message in Chat matching your Heart")
                                                                 .foregroundColor(Color.white)
                                                                 .fontWeight(.thin)
                                                             Spacer()
                                                         }
                                                     }
                                                     .foregroundColor(.white)
-                                                    .font(.system(size: 17))
+                                                    .font(.system(size: 15))
                                                     .submitLabel(.done)
                                                     .onReceive(Just(customMessage)) { _ in limitText(65) }
                                                     .padding(.top, 20)
@@ -188,10 +188,26 @@ struct RR11: View {
                        
                         VStack {
                             
-                            Text("I was just thinking about \nyou I wanted to send \nyou a Heart!")
-                                .font(.system(size: 23, weight: .light))
+                            Text("I was just thinking about you. \n\nI wanted to send \nyou a Heart!")
+                                .font(.system(size: 20, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                 .multilineTextAlignment(.center)
+                            
+                            NavigationLink(
+                                destination:  PhotoPopView(user: user, friends: friends),
+                                label: {
+                                    
+                                    Image(systemName: "camera")
+                                      
+                                       .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 40, height: 40)
+                                        .foregroundColor(Color.cyan)
+                                        .glow(color: ColorManager.purple4, radius: 2)
+                                        .opacity(0.6)
+  
+                                })
+                            
                         }
                     }
                 }
@@ -200,7 +216,7 @@ struct RR11: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("(alert friend to Heart & message in Chat)")
+                    Text("(alert friend to CareHeart & message in Chat)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
@@ -316,7 +332,7 @@ struct RR11: View {
                                 .background(ColorManager .grey2)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your Heart is on it's way.", isPresented: $showingAlert) {
+                                .alert("Your CareHeart is on it's way. \n\nIt was automatically \nsent to: in-app & push notifications + our Widget. \n\nShoot them a PhotoPOP", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
@@ -346,7 +362,7 @@ struct RR11: View {
                             })
                             
                             Spacer()
-                                .frame(height: 100)
+                                .frame(height: 150)
      
                         }
               

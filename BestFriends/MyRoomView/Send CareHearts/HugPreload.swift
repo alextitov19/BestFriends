@@ -209,29 +209,34 @@ struct HugPreload: View {
                             .multilineTextAlignment(.center)
                         
                         Text("from the heart of you")
-                            .font(.system(size: 25))
+                            .font(.system(size: 17))
                             .italic()
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
                         Spacer ()
-                            .frame(height: 30)
+                            .frame(height: 40)
                         
                   
                         
-                        Text("Fun to send & they can provide emotional support")
+                        Text("Fun to send anytime.")
+                            .font(.system(size: 25))
+                            .foregroundColor(Color.white)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                        Spacer ()
+                            .frame(height: 12)
+                        
+                        Text("Super helpful is your friends")
                             .font(.system(size: 17))
                             .foregroundColor(Color.white)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
                         
-                        
-                              Spacer ()
-                                  .frame(height: 7)
-                        
-                        Text("to friends having a difficult day")
+                        Text("is having a difficult day.")
                             .font(.system(size: 17))
                             .foregroundColor(Color.white)
                             .fontWeight(.thin)

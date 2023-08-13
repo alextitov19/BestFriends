@@ -120,31 +120,14 @@ struct SendKisses: View {
 
                         Spacer()
                             .frame(height: 25)
-//
-//                        Text("")
-//                            .fontWeight(.light)
-//                            .frame(width: 310, height: 310)
-//                            .foregroundColor(ColorManager .grey4)
-//                            .font(.system(size: 25))
-//                            .background(ColorManager .pmbc_pink)
-////                            .opacity(0.7)
-//                            .cornerRadius(10)
-//                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+
+                        Text("(who are you blowing kissers to)")
+                            .font(.system(size: 15))
+                            .italic()
+                            .fontWeight(.light)
+                            .foregroundColor(ColorManager .grey1)
+                            .multilineTextAlignment(.center)
                         
-                        NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
-                                        label: {
-                            Text("Include a PhotoPOP")
-                                .fontWeight(.bold)
-                                .frame(width: 300, height: 40)
-                                .foregroundColor(Color.black)
-                                .font(.system(size: 16))
-                                .background(Color.cyan)
-                                .glow(color: ColorManager.purple1, radius: 1)
-                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                .opacity(0.9)
-                                .cornerRadius(15)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                        })
                         
                         Spacer()
                             .frame(height: 20)
@@ -289,30 +272,12 @@ struct SendKisses: View {
                             Spacer()
                                 .frame(height: 30)
                             
-                            
-                            Text("By tapping [Share] your CareHeart is automatically \nsent to: in-app & push notifications + our Widget")
-                                .fontWeight(.bold)
-                                .frame(width: 300, height: 40)
-                                .foregroundColor(Color.black)
-                                .font(.system(size: 10))
-                                .background(Color.cyan)
-                                .glow(color: ColorManager.purple1, radius: 1)
-                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                .opacity(0.9)
-                                .cornerRadius(15)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                      
                    
                         }
                         
-                     
-                        
-                        }
-                    
-//                    
-//                    
-//                
-
-                    
+                    }
+              
                 }
                 
             }
