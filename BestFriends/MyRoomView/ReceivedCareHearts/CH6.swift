@@ -133,7 +133,7 @@ struct CH6: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("(say thanks)")
+                    Text("(say thanks for thinking about me)")
                                             .font(.system(size: 15))
                                             .italic()
                                             .foregroundColor(Color.white)

@@ -152,14 +152,14 @@ struct CH4: View {
                                                 TextField("", text: $customMessage)
                                                     .placeholder(when: customMessage.isEmpty) {
                                                         HStack {
-                                                            Text("Type name of song here")
+                                                            Text("Type name of song & message here")
                                                                 .foregroundColor(Color.white)
                                                                 .fontWeight(.thin)
                                                             Spacer()
                                                         }
                                                     }
                                                     .foregroundColor(.white)
-                                                    .font(.system(size: 20))
+                                                    .font(.system(size: 17))
                                                     .submitLabel(.done)
                                                     .onReceive(Just(customMessage)) { _ in limitText(65) }
                                                     .padding(.top, 20)
@@ -210,7 +210,7 @@ struct CH4: View {
           
                 VStack {
 
-                    Text("(alert friend to look for the Song in Chat)")
+                    Text("(alert friend to look for your song & message in Chat)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
