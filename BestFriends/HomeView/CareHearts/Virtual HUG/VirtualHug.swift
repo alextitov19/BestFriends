@@ -179,7 +179,7 @@ struct VirtualHug: View {
                         
                         VStack {
                             
-                            Text("(say thanks)")
+                            Text("(say thanks for the Hug)")
                                 .font(.system(size: 15))
                                 .italic()
                                 .foregroundColor(ColorManager .grey2)
@@ -322,27 +322,48 @@ struct VirtualHug: View {
                             
                             
                             
-                                                        VStack {
-                            
-                            
-                                                            Button(action: {
-                                                                sessionManager.showLogin()
-                                                            },
-                                                                   label: {
-                                                                Image("home-alt2")
-                                                                    .frame(width: 50, height: 25)
-                                                                    .foregroundColor(.white)
-                                                                    .font(.system(size: 20))
-                                                                    .background(ColorManager .grey2)
-                                                                    .cornerRadius(15)
-                                                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                                                    .opacity(0.70)
-                            
-                                                            })
+                                                        
+                VStack {
+                    
+                    Spacer()
+                        .frame(height: 20)
+                                                          
+                    NavigationLink( destination:  HugPushNotification(user: user, friends: friends),
+                                    label: {
+                        Text("Send a Hug back")
+                            .fontWeight(.bold)
+                            .frame(width: 200, height: 40)
+                            .foregroundColor(Color.black)
+                            .font(.system(size: 16))
+                            .background(Color.cyan)
+                            .glow(color: ColorManager.purple1, radius: 1)
+                            .shadow(color: .white, radius: 3, x: -4, y: 4)
+                            .opacity(0.9)
+                            .cornerRadius(15)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                    })
+                    
+                    Spacer()
+                        .frame(height: 15)
+                    
+                    Button(action: {
+                        sessionManager.showLogin()
+                    },
+                           label: {
+                        Image("home-alt2")
+                            .frame(width: 50, height: 25)
+                            .foregroundColor(.white)
+                            .font(.system(size: 20))
+                            .background(ColorManager .grey2)
+                            .cornerRadius(15)
+                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                            .opacity(0.70)
+
+                    })
+                                                           
                             
                                                             
-//                                                            Spacer()
-//                                                                .frame(height: 70)
+                                                   
             }
         }
     }

@@ -41,6 +41,10 @@ struct HugPushNotification: View {
             
             if shareTapped {
                 
+                Color.black
+                  .opacity(0.9)
+                  .ignoresSafeArea()
+                
                 AdPlayerView(name: "dramaLights")
                     .opacity(0.5)
                     .ignoresSafeArea()
