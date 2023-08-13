@@ -139,7 +139,7 @@ struct RR11: View {
 //                                                .background(Color.green)
 //                                                .cornerRadius(10)
                                                 
-                                                Text("You know 'that' song you listen to \nover-and-over while lying in bed \non one of those days? \n\nSend it to your friend - maybe it will help!")
+                                                Text("I was just thinking about you wanted \nto send you a Heart!")
                                                     .font(.system(size: 19, weight: .light))
                                                     .foregroundColor(Color.white)
                                                     .multilineTextAlignment(.center)
@@ -152,7 +152,7 @@ struct RR11: View {
                                                 TextField("", text: $customMessage)
                                                     .placeholder(when: customMessage.isEmpty) {
                                                         HStack {
-                                                            Text("Type name of song & message here")
+                                                            Text("Send short message with Heart")
                                                                 .foregroundColor(Color.white)
                                                                 .fontWeight(.thin)
                                                             Spacer()
@@ -210,7 +210,7 @@ struct RR11: View {
           
                 VStack {
 
-                    Text("(alert friend to look for your song & message in Chat)")
+                    Text("(alert friend to Heart & message in Chat)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
