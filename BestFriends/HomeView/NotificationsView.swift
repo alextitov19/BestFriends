@@ -239,7 +239,7 @@ struct NotificationsView: View {
             case "Jump up and catch your fresh kisses!":
                 kissesActive = true
                 
-            case "Is thinking about you and sent you a Heart!":
+            case "Just send you a Heart and a message in Chat":
                 heartsActive = true
                 
             case "Ahhh! Thanks for the Kisses!":
