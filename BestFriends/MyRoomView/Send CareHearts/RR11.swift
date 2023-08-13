@@ -130,27 +130,15 @@ struct RR11: View {
                 
 //                                        ZStack(alignment: .bottom) {
                                             
-                                            ZStack {
-                                                
-
-                                                
-                                                Spacer()
-                                                    .frame(height: 7)
-                                                
-                                                Text("I was just thinking about you wanted \nto send you a Heart!")
-                                                    .font(.system(size: 23, weight: .light))
-                                                    .foregroundColor(Color.white)
-                                                    .multilineTextAlignment(.center)
-                                       
-                                            
-                                            
-                                            VStack {
+                                ZStack {
+                                    
+                                    VStack {
                                                 Spacer()
                                                 // TextField for userInput
                                                 TextField("", text: $customMessage)
                                                     .placeholder(when: customMessage.isEmpty) {
                                                         HStack {
-                                                            Text("Send short message with your Heart")
+                                                            Text("Send message in Chat w/ your Heart")
                                                                 .foregroundColor(Color.white)
                                                                 .fontWeight(.thin)
                                                             Spacer()
@@ -194,17 +182,16 @@ struct RR11: View {
                         Image(systemName: "heart.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 225, height: 175)
+                            .frame(width: 280, height: 230)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .opacity(0.5)
                        
                         VStack {
-                            Text("sending")
-                                .font(.system(size: 35, weight: .light))
-                                .foregroundColor(ColorManager .purple3)
-                            Text("Hearts")
-                                .font(.system(size: 47, weight: .light))
-                                .foregroundColor(ColorManager .purple3)
+                            
+                            Text("I was just thinking about \nyou I wanted to send \nyou a Heart!")
+                                .font(.system(size: 23, weight: .light))
+                                .foregroundColor(ColorManager .grey1)
+                                .multilineTextAlignment(.center)
                         }
                     }
                 }
@@ -337,6 +324,10 @@ struct RR11: View {
                         })
                         
                         VStack {
+                    
+                            
+                            Spacer()
+                                .frame(height: 20)
                             
                             
                             Button(action: {

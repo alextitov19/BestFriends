@@ -144,7 +144,7 @@ struct CH4: View {
                                                 Spacer()
                                                     .frame(height: 7)
                                                 
-                                                Text("That song you listen to \nover-and-over while lying in bed \non one of those days? \n\nSend it to your friend - maybe it will help!")
+                                                Text("You know that song you listen to \nover-and-over while lying in bed \non one of those difficult days? \n\nSend it to your friend - maybe it will help!")
                                                     .font(.system(size: 19, weight: .light))
                                                     .foregroundColor(Color.white)
                                                     .multilineTextAlignment(.center)
@@ -221,17 +221,38 @@ struct CH4: View {
                         Image(systemName: "circle.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 225, height: 175)
+                            .frame(width: 235, height: 150)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .opacity(0.5)
                         
                         VStack {
-                            Text("Sending a ")
-                                .font(.system(size: 35, weight: .light))
+                            
+                            Text("Sending a song")
+                                .font(.system(size: 20, weight: .light))
                                 .foregroundColor(ColorManager .purple3)
-                            Text("Conforting Song")
-                                .font(.system(size: 47, weight: .light))
+                            
+                            Text("to match")
+                                .font(.system(size: 20, weight: .light))
                                 .foregroundColor(ColorManager .purple3)
+                            
+                            Text("friend's 'Vibe'")
+                                .font(.system(size: 20, weight: .light))
+                                .foregroundColor(ColorManager .purple3)
+                            
+                            NavigationLink(
+                                destination:  PhotoPopView(user: user, friends: friends),
+                                label: {
+                                    
+                                    Image(systemName: "camera")
+                                      
+                                       .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 40, height: 40)
+                                        .foregroundColor(Color.cyan)
+                                        .glow(color: ColorManager.purple4, radius: 2)
+                                        .opacity(0.6)
+  
+                                })
                         }
                     }
                 

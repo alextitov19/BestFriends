@@ -41,13 +41,10 @@ struct FH2: View {
         
         ZStack {
             
-            Color.black
+            Image("CareHeartBalloon 1")
                 .ignoresSafeArea()
-                .onAppear()
-            
-            AdPlayerView(name: "background_3")
-                .ignoresSafeArea()
-                .blendMode(.screen)
+                .scaledToFit()
+                .opacity(0.8)
  
 
             VStack {

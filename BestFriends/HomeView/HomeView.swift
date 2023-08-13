@@ -213,14 +213,14 @@ struct HomeView: View {
                                 .padding()
                             
                         })
-                            Text("Tap \nme")
+                            Text("tap \nme")
                                 .fontWeight(.thin)
-                                .frame(width: 42, height: 42)
+                                .frame(width: 45, height: 45)
                               .foregroundColor(Color.white)
-                                .font(.system(size: 16))
+                                .font(.system(size: 17))
                                 .background(Color.gray)
                             //                               .opacity(0.7)
-                                .cornerRadius(15)
+                                .cornerRadius(10)
                                 .shadow(color: Color.white, radius: 2, x: 0, y: 1)
                             
 //                        })
