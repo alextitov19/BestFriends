@@ -275,9 +275,7 @@ struct HugPreload: View {
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                     .opacity(0.9)
                                 
-                                
-                                //                            Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
-                                
+                            
                                 Text("Super helpful \nif friend is having \na difficult day.")
                                     .fontWeight(.light)
                                     .foregroundColor(Color.black)

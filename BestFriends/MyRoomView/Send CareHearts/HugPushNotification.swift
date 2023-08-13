@@ -128,24 +128,6 @@ struct HugPushNotification: View {
                         Spacer()
                             .frame(height: 10)
                    
-                        
-                        NavigationLink(
-                            destination:  PhotoPopView(user: user, friends: friends),
-                            label: {
-                                
-                                Image(systemName: "camera")
-                                  
-                                   .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 40, height: 40)
-                                    .foregroundColor(Color.cyan)
-                                    .glow(color: ColorManager.purple4, radius: 2)
-                                    .opacity(0.6)
-
-                            })
-                        
-                        
-                        
                         Spacer()
                             .frame(height: 20)
 
@@ -304,6 +286,40 @@ struct HugPushNotification: View {
                    
                         }
                         
+                HStack {
+                    Text("")
+                        .fontWeight(.light)
+                        .foregroundColor(Color.black)
+                        .font(.system(size: 13))
+                        .multilineTextAlignment(.center)
+                        .rotationEffect(.degrees(-7))
+                        .opacity(0.85)
+                    
+                    
+                    Spacer ()
+                        .frame(width: 250)
+                    
+                    NavigationLink(
+                        destination:  PhotoPopView(user: user, friends: friends),
+                        label: {
+                            
+                            Image(systemName: "camera")
+                            
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 40, height: 40)
+                                .rotationEffect(.degrees(-7))
+                                .foregroundColor(Color.cyan)
+                                .glow(color: ColorManager.purple4, radius: 2)
+                                .opacity(0.6)
+                            
+                        })
+                            
+                            Spacer ()
+                                .frame(width: 15)
+                            
+                    VStack {
+                        
                         ZStack {
                             
                             Image(systemName: "heart.fill")
@@ -314,8 +330,9 @@ struct HugPushNotification: View {
                                 .shadow(color: .white, radius: 2, x: -2, y: 2)
                                 .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                 .opacity(0.9)
-                          
-                            Text("Super helpful \nif friend is having \na difficult day.")
+                            
+                            
+                            Text("Send a PhotoPOP \nto bring your hug\n to life.")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .font(.system(size: 13))
@@ -324,10 +341,12 @@ struct HugPushNotification: View {
                                 .opacity(0.85)
                             
                         }
-                        
+                   
+                    }
+                            
                         }
-                    
-              
+                        
+                    }
                     
                 }
                 
