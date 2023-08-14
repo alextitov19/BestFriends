@@ -91,16 +91,17 @@ struct CH7: View {
                   if shareTapped {
                       
 
-                
-                      Color.black
-                                      .ignoresSafeArea()
-                                      .onAppear()
-
+                      
+                      Image("FHBackground")
+                          .ignoresSafeArea()
+                          .scaledToFit()
+                          .opacity(0.1)
 
                       AdPlayerView(name: "dramaLights")
+                          .opacity(0.5)
                           .ignoresSafeArea()
                           .blendMode(.screen)
-
+                      
                   } else {
 
                       Image("CareHeartBalloon 1")
@@ -108,20 +109,14 @@ struct CH7: View {
                           .scaledToFit()
                           .opacity(0.1)
                       
-                      Image("FHBackground")
-                          .resizable()
-                          .scaledToFill()
-                          .edgesIgnoringSafeArea(.all)
+                      Color.black
+                        .opacity(0.9)
+                        .ignoresSafeArea()
                       
-//                      Color.black
-//                        .opacity(0.9)
-//                        .ignoresSafeArea()
-                      
-//                      AdPlayerView(name: "sky2")
-//                          .ignoresSafeArea()
-//                          .blendMode(.screen)
-                      
-                     
+                      AdPlayerView(name: "sky2")
+                          .ignoresSafeArea()
+                          .blendMode(.screen)
+             
                       
             }
             
