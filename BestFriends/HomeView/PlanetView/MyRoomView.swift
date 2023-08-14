@@ -272,21 +272,21 @@ struct MyRoomView: View {
                                     
                                     VStack {
                                         
-                                        NavigationLink( destination: CH3(),
-                                                        label: {
-                                            Text("?")
-                                                .fontWeight(.light)
-                                                .frame(width: 37, height: 37)
-                                                .foregroundColor(ColorManager .grey4)
-                                                .font(.system(size: 17))
-                                                .background(ColorManager .grey2)
-                                                .glow(color: ColorManager.purple3, radius: 1)
-                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                                .opacity(0.9)
-                                                .cornerRadius(15)
-                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                            
-                                        })
+//                                        NavigationLink( destination: CH3(),
+//                                                        label: {
+//                                            Text("?")
+//                                                .fontWeight(.light)
+//                                                .frame(width: 37, height: 37)
+//                                                .foregroundColor(ColorManager .grey4)
+//                                                .font(.system(size: 17))
+//                                                .background(ColorManager .grey2)
+//                                                .glow(color: ColorManager.purple3, radius: 1)
+//                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                                .opacity(0.9)
+//                                                .cornerRadius(15)
+//                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                            
+//                                        })
                                         
                                         NavigationLink( destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                                         label: {
