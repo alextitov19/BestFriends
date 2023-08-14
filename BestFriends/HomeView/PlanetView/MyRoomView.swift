@@ -290,7 +290,7 @@ struct MyRoomView: View {
                                         
                                         NavigationLink( destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                                         label: {
-                                            Text("'Vibe' \nAlert")
+                                            Text("My 'Vibe' \nAlert")
                                                 .fontWeight(.regular)
                                                 .frame(width: 90, height: 40)
                                                 .foregroundColor(ColorManager .purple5)

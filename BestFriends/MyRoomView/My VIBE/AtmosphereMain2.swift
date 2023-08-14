@@ -414,7 +414,7 @@ struct AtmosphereMain2: View {
                            
                         }
 
-                        Text("Shows as 'yellow' & 'red'")
+                        Text("Shows as 'green' & 'yellow'")
                             .font(.system(size: 10))
                             .italic()
                             .fontWeight(.light)
