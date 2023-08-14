@@ -446,9 +446,9 @@ struct MyRoomView: View {
                                        
                             VStack {
                                 
-                                NavigationLink( destination:  MyFears(user: user, friends: friends),
+                                NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
                                                 label: {
-                                    Text("Panic Attack!")
+                                    Text("Meet-up \nCoupons")
                                         .fontWeight(.regular)
                                         .frame(width: 120, height: 45)
                                         .foregroundColor(ColorManager .purple5)
@@ -460,6 +460,7 @@ struct MyRoomView: View {
                                         .cornerRadius(7)
                                         .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
                                 })
+                            
                                       
                                             
                         Spacer()
@@ -501,9 +502,11 @@ struct MyRoomView: View {
 //                                                    label: {
 //                                        Text("Found NEW \nArtist")
                                     
-                                NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
+                        
+                                
+                                NavigationLink( destination:  MyFears(user: user, friends: friends),
                                                 label: {
-                                    Text("Meet-up \nCoupons")
+                                    Text("Panic Attack!")
                                         .fontWeight(.regular)
                                         .frame(width: 120, height: 45)
                                         .foregroundColor(ColorManager .purple5)
@@ -515,7 +518,6 @@ struct MyRoomView: View {
                                         .cornerRadius(7)
                                         .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
                                 })
-                                      
                                 
                                 
 //************************************ When Andy finishes Friendship Highlights ***********
