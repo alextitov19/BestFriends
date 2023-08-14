@@ -203,11 +203,10 @@ struct NotificationsView: View {
                     EmptyView()
                 })
                 
-                
+               
                 Color.cyan
                 
-//                    .background(Color(.cyan) : ColorManager .grey2)
-//                    .onTapGesture(perform: tapped)
+//                .background(Color(.systemPurple), : ColorManager .cyan)
                 
                 VStack {
                     
