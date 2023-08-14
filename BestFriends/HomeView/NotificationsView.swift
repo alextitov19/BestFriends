@@ -96,7 +96,7 @@ struct NotificationsView: View {
 //        @State private var thanksSongActive = false
         @State private var fixFightActive = false
         @State private var talkCouponActive = false
-        @State private var vibeActive = false
+        @State private var newVibeActive = false
         @State private var needTalkActive = false
         @State private var newArtistActive = false
         @State private var newCustomActive = false
@@ -185,7 +185,7 @@ struct NotificationsView: View {
                     EmptyView()
                 })
                 
-                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $vibeActive, label: {
+                NavigationLink(destination: PhotoPopView(user: user, friends: friends), isActive: $newVibeActive, label: {
                     EmptyView()
                 })
                 
@@ -266,7 +266,7 @@ struct NotificationsView: View {
                 talkCouponActive = true
                 
             case "'Vibe' just changed! Shoot'em a CareHeart or PhotoPOP":
-                vibeActive = true
+                newVibeActive = true
                 
             case "I Need to Talk!":
                 needTalkActive = true
