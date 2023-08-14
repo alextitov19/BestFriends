@@ -91,7 +91,7 @@ struct CH6: View {
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .opacity(0.5)
                         
-                        Text("Ahhhhhhh!")
+                        Text("Ahhhhh!")
                             .font(.system(size: 50))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)

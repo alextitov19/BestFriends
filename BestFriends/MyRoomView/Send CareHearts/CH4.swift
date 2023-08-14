@@ -370,7 +370,7 @@ struct CH4: View {
                                 .background(ColorManager .grey2)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your Song \nhas been sent to Chat. \n\nYour notification is automatically \nsent to: in-app & push notifications + our Widget", isPresented: $showingAlert) {
+                                .alert("Your Song \nhas been sent to Chat. \n\nWe hope this song helps your friend. \n\nThx for sending it!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
