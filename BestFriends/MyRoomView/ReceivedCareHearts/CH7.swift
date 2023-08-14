@@ -90,17 +90,16 @@ struct CH7: View {
             
                   if shareTapped {
                       
-
-                      
-                      Image("FHBackground")
+                      Color.black
+                          .opacity(0.8)
                           .ignoresSafeArea()
-                          .scaledToFit()
-                          .opacity(0.1)
-
+              
                       AdPlayerView(name: "dramaLights")
                           .opacity(0.5)
                           .ignoresSafeArea()
                           .blendMode(.screen)
+
+
                       
                   } else {
 

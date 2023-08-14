@@ -93,7 +93,7 @@ struct NotificationsView: View {
         @State private var thanksKissesActive = false
         @State private var thanksHugActive = false
         @State private var thanksHeartActive = false
-//        @State private var thanksSongActive = false
+        @State private var thanksSongActive = false
         @State private var fixFightActive = false
         @State private var talkCouponActive = false
         @State private var newVibeActive = false
@@ -173,6 +173,15 @@ struct NotificationsView: View {
                     EmptyView()
                 })
                 
+                NavigationLink(destination: PhotoPopView(user: user, friends: friends), isActive: $newVibeActive, label: {
+                    EmptyView()
+                })
+                
+                
+                
+                
+                
+                
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksHeartActive, label: {
                     EmptyView()
                 })
@@ -185,18 +194,13 @@ struct NotificationsView: View {
                     EmptyView()
                 })
                 
-                NavigationLink(destination: PhotoPopView(user: user, friends: friends), isActive: $newVibeActive, label: {
-                    EmptyView()
-                })
-                
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $needTalkActive, label: {
                     EmptyView()
                 })
 
-                
-//                NavigationLink(destination: CH7(user: user, friend: user, friends: friends, groups: groups), isActive: $thanksSongActive, label: {
-//                    EmptyView()
-//                })
+                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksSongActive, label: {
+                    EmptyView()
+                })
                 
                 
                 Color.cyan
@@ -256,8 +260,8 @@ struct NotificationsView: View {
             case "Said thanks for thinking about them and sending the Heart!":
                 thanksHeartActive = true
                 
-//            case "Perfect, thanks for the song. Sent you a message in Chat":
-//                thanksSongActive = true
+            case "Perfect, thanks for the song. Sent you a message in Chat":
+                thanksSongActive = true
                 
             case "Just sent you a message in Chat - please look at it":
                 fixFightActive = true
