@@ -178,7 +178,7 @@ struct RR12: View {
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     
-                    Text("in a CareHeart ...")
+                    Text("in your CareHearts ...")
                         .font(.system(size: 35, weight: .light))
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)

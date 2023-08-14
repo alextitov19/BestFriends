@@ -109,7 +109,7 @@ struct HugPreload: View {
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                     
-                    Text("from the heart of you")
+                    Text("lettng friends know you care")
                         .font(.system(size: 20))
                         .italic()
                         .foregroundColor(ColorManager .grey1)
