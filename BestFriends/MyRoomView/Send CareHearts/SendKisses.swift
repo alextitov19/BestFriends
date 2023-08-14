@@ -80,8 +80,13 @@ struct SendKisses: View {
                              
                                 
                                 Text("Blowing Kisses")
-                                    .font(.system(size: 35, weight: .light))
+                                    .font(.system(size: 45, weight: .light))
                                     .foregroundColor(ColorManager .grey1)
+                                
+                                Text("this is the 'being cute' CareHeart")
+                                    .font(.system(size: 20, weight: .light))
+                                    .italic()
+                                    .foregroundColor(Color.white)
                             }
                         }
                       
@@ -95,7 +100,7 @@ struct SendKisses: View {
                 VStack {
                     
                     Spacer()
-                        .frame(height: 20)
+                        .frame(height: 50)
 
                     Text("Jump up on a chair,")
                                             .font(.system(size: 20))

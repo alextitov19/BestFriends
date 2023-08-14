@@ -125,6 +125,9 @@ struct CH4: View {
             
             VStack {
                 
+                  
+                     
+                  
                 
                 
 //                                        ZStack(alignment: .bottom) {
@@ -140,78 +143,62 @@ struct CH4: View {
 //                                                .cornerRadius(10)
                                                 
                                            
-                                                
                                                 Spacer()
                                                     .frame(height: 7)
                                                 
-                                                Text("You know that song you listen to \nover-and-over while lying in bed \non one of those difficult days? \n\nSend it to your friend - maybe it will help!")
-                                                    .font(.system(size: 19, weight: .light))
-                                                    .foregroundColor(Color.white)
-                                                    .multilineTextAlignment(.center)
-                                       
                                             
                                             
-                                            VStack {
-                                                Spacer()
-                                                // TextField for userInput
-                                                TextField("", text: $customMessage)
-                                                    .placeholder(when: customMessage.isEmpty) {
-                                                        HStack {
-                                                            Text("Type name of song & message here")
-                                                                .foregroundColor(Color.white)
-                                                                .fontWeight(.thin)
-                                                            Spacer()
+                                            
+                                                VStack {
+                                                    Spacer()
+                                                    // TextField for userInput
+                                                    TextField("", text: $customMessage)
+                                                        .placeholder(when: customMessage.isEmpty) {
+                                                            HStack {
+                                                                Text("Type name of song & message here")
+                                                                    .foregroundColor(Color.white)
+                                                                    .fontWeight(.thin)
+                                                                Spacer()
+                                                            }
                                                         }
-                                                    }
-                                                    .foregroundColor(.white)
-                                                    .font(.system(size: 17))
-                                                    .submitLabel(.done)
-                                                    .onReceive(Just(customMessage)) { _ in limitText(65) }
-                                                    .padding(.top, 20)
-                                                    .padding(.horizontal, 150)
-                                                    .overlay(
-                                                        RoundedRectangle(cornerRadius: 10)
-                                                            .stroke(Color.purple)
-                                                        //                                                            .background(ColorManager.purple3)
-                                                            .frame(height: 50)
-                                                            .padding(.horizontal, 125)
-                                                    )
-                                                    .padding(.bottom, 5)
-                                            }
+                                                        .foregroundColor(.white)
+                                                        .font(.system(size: 17))
+                                                        .submitLabel(.done)
+                                                        .onReceive(Just(customMessage)) { _ in limitText(65) }
+                                                        .padding(.top, 20)
+                                                        .padding(.horizontal, 150)
+                                                        .overlay(
+                                                            RoundedRectangle(cornerRadius: 10)
+                                                                .stroke(Color.purple)
+                                                            //                                                            .background(ColorManager.purple3)
+                                                                .frame(height: 50)
+                                                                .padding(.horizontal, 125)
+                                                        )
+                                                        .padding(.bottom, 5)
+                                                    
+                                                    
+                                                    
+                                                }
                                         }
-                                    
-//                                }
-//
-//                            }
-//
-//                        }
-//
-//                    }
+
                     
                     
                     VStack {
                    
                      
+                        Text("Sending 'that' Song")
+                            .font(.system(size: 43, weight: .light))
+                            .foregroundColor(ColorManager .grey1)
                         
+                        Text("when friend is having a really bad day - CareHeart")
+                            .font(.system(size: 15, weight: .light))
+                            .italic()
+                            .foregroundColor(Color.white)
                         
                         Spacer()
                             .frame(height: 30)
 
-//                        Text("Maybe you just found new music on social media")
-//                            .font(.system(size: 20))
-//                            .fontWeight(.light)
-//                            .foregroundColor(Color.white)
-//                            .multilineTextAlignment(.center)
-//
-//                        Text("and want to show your friends")
-//                            .font(.system(size: 20))
-//                            .fontWeight(.light)
-//                            .foregroundColor(Color.white)
-//                            .multilineTextAlignment(.center)
-//
-//
-                        
-                    }
+                      
           
                 VStack {
                     
@@ -221,44 +208,53 @@ struct CH4: View {
                         Image(systemName: "circle.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 245, height: 160)
+                            .frame(width: 350, height: 175)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .opacity(0.5)
                         
                         VStack {
+                            Text("You know that song you listen to")
+                                .font(.system(size: 19, weight: .light))
+                                .foregroundColor(Color.white)
+                                .multilineTextAlignment(.center)
+                   
+                            Text("over-and-over while lying in bed")
+                                .font(.system(size: 19, weight: .light))
+                                .foregroundColor(Color.white)
+                                .multilineTextAlignment(.center)
                             
-                            Text("Send a song")
-                                .font(.system(size: 20, weight: .light))
-                                .foregroundColor(ColorManager .purple3)
+                            Text("on one of those very difficult days")
+                                .font(.system(size: 19, weight: .light))
+                                .foregroundColor(Color.white)
+                                .multilineTextAlignment(.center)
+                        }
+                         
                             
-                            Text("to match your friend's")
-                                .font(.system(size: 20, weight: .light))
-                                .foregroundColor(ColorManager .purple3)
-                            
-                            Text("'Vibe'")
-                                .font(.system(size: 20, weight: .light))
-                                .foregroundColor(ColorManager .purple3)
-                            
-                            NavigationLink(
-                                destination:  PhotoPopView(user: user, friends: friends),
-                                label: {
-                                    
-                                    Image(systemName: "camera")
-                                      
-                                       .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 40, height: 40)
-                                        .foregroundColor(Color.cyan)
-                                        .glow(color: ColorManager.purple4, radius: 2)
-                                        .opacity(0.6)
-  
-                                })
+//                            NavigationLink(
+//                                destination:  PhotoPopView(user: user, friends: friends),
+//                                label: {
+//                                    
+//                                    Image(systemName: "camera")
+//                                      
+//                                       .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 40, height: 40)
+//                                        .foregroundColor(Color.cyan)
+//                                        .glow(color: ColorManager.purple4, radius: 2)
+//                                        .opacity(0.6)
+//  
+//                                })
                         }
                     }
                 
-              
+                    Text("(let your friend know to look")
+                        .font(.system(size: 15))
+                        .italic()
+                        .fontWeight(.light)
+                        .foregroundColor(ColorManager .grey1)
+                        .multilineTextAlignment(.center)
 
-                    Text("(alert friend to look for your song & message in Chat)")
+                    Text("in Chat for your song)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)

@@ -138,7 +138,7 @@ struct RR11: View {
                                                 TextField("", text: $customMessage)
                                                     .placeholder(when: customMessage.isEmpty) {
                                                         HStack {
-                                                            Text("Send message in Chat matching your Heart")
+                                                            Text("Type romantic Chat message here")
                                                                 .foregroundColor(Color.white)
                                                                 .fontWeight(.thin)
                                                             Spacer()
@@ -172,26 +172,55 @@ struct RR11: View {
                     
                 VStack {
                     
+                    Text("I was just")
+                        .font(.system(size: 35, weight: .light))
+                        .foregroundColor(ColorManager .grey1)
+                        .multilineTextAlignment(.center)
                     
+                    Text("thinking about you ...")
+                        .font(.system(size: 35, weight: .light))
+                        .foregroundColor(ColorManager .grey1)
+                        .multilineTextAlignment(.center)
                     
                     
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 10)
+                    
                     ZStack {
+                  
                         
                         Image(systemName: "heart.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 280, height: 230)
+                            .frame(width: 250, height: 200)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .opacity(0.5)
                        
+                        
+                        
                         VStack {
                             
-                            Text("I was just thinking about you. \n\nI wanted to send \nyou a Heart!")
-                                .font(.system(size: 20, weight: .light))
+                            Text("This is the 'romantic' CareHeart!")
+                                .font(.system(size: 16, weight: .light))
+                                .foregroundColor(ColorManager .grey1)
+                                    .multilineTextAlignment(.center)
+                            
+                            Spacer()
+                                .frame(height: 7)
+                            
+                            Text("- send a special message to Chat")
+                                .font(.system(size: 12, weight: .light))
+                                .foregroundColor(ColorManager .grey1)
+                                    .multilineTextAlignment(.center)
+                            
+                            Text("- send an emotional PhotoPOP")
+                                .font(.system(size: 12, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                 .multilineTextAlignment(.center)
+                         
+                            
+                            Spacer()
+                                .frame(height: 10)
                             
                             NavigationLink(
                                 destination:  PhotoPopView(user: user, friends: friends),
@@ -216,7 +245,7 @@ struct RR11: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("(alert friend to CareHeart & message in Chat)")
+                    Text("(alert friend)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
@@ -226,7 +255,7 @@ struct RR11: View {
                     VStack {
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 10)
                         
                         
                         HStack {
@@ -332,7 +361,7 @@ struct RR11: View {
                                 .background(ColorManager .grey2)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your CareHeart is on it's way. \n\nIt was automatically \nsent to: in-app & push notifications + our Widget. \n\nShoot them a PhotoPOP", isPresented: $showingAlert) {
+                                .alert("Your CareHeart is on it's way. \n\nYour friend will be notified of your message in Chat and asked to 'shake' their iPhone to get your PhotoPOP", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
@@ -387,7 +416,7 @@ struct RR11: View {
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Just send you a Heart and a message in Chat", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Just send you a Heart, message in Chat & PhotoPOP", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                         print("Create a Heart notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)

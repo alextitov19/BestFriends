@@ -79,22 +79,20 @@ struct HugPushNotification: View {
                                  
                                     
                                 VStack {
-                                    Text("Sending a CareHearts")
-                                        .font(.system(size: 30, weight: .light))
+                                   
+                                    
+                                    Text("Sending Hugs")
+                                        .font(.system(size: 45, weight: .light))
                                         .foregroundColor(Color.white)
                                     
-                                    Text("Hug")
-                                        .font(.system(size: 55, weight: .light))
+                                    Text("this is the 'supportive' CareHeart")
+                                        .font(.system(size: 20, weight: .light))
+                                        .italic()
                                         .foregroundColor(Color.white)
-                                    
                                     
                                     Spacer()
                                         .frame(height: 10)
-                                    
-                                    Text("it's the next best thing to being there")
-                                        .font(.system(size: 17, weight: .light))
-                                        .italic()
-                                        .foregroundColor(Color.white)
+                                 
                                     
                                     
                                 }
@@ -125,13 +123,13 @@ struct HugPushNotification: View {
                 
                     VStack {
                         
-                        Spacer()
-                            .frame(height: 10)
-                   
-                        Spacer()
-                            .frame(height: 20)
-
                      
+
+                        
+                        Text("it's the next best thing to being there")
+                            .font(.system(size: 15, weight: .light))
+                            .italic()
+                            .foregroundColor(Color.white)
                         
                         
                         HStack {
@@ -334,7 +332,7 @@ struct HugPushNotification: View {
                                 .opacity(0.9)
                             
                             
-                            Text("Send a PhotoPOP \nto bring your hug\n to life.")
+                            Text("Send a PhotoPOP \nof a fun time \ntogether.")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .font(.system(size: 13))
