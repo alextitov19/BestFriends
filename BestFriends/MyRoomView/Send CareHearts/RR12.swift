@@ -115,7 +115,7 @@ struct RR12: View {
                         .opacity(0.9)
                         .ignoresSafeArea()
                       
-                      AdPlayerView(name: "Planet3")
+                      AdPlayerView(name: "HugSound")
                           .ignoresSafeArea()
                           .blendMode(.screen)
                           .opacity(0.6)
@@ -139,7 +139,7 @@ struct RR12: View {
                                                 TextField("", text: $customMessage)
                                                     .placeholder(when: customMessage.isEmpty) {
                                                         HStack {
-                                                            Text("Type romantic Chat message here")
+                                                            Text("Type personal Chat message here")
                                                                 .foregroundColor(Color.white)
                                                                 .fontWeight(.thin)
                                                             Spacer()
@@ -173,12 +173,12 @@ struct RR12: View {
                     
                 VStack {
                     
-                    Text("I was just")
+                    Text("Putting the soul of you")
                         .font(.system(size: 35, weight: .light))
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
                     
-                    Text("thinking about you ...")
+                    Text("in a CareHeart ...")
                         .font(.system(size: 35, weight: .light))
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
@@ -201,7 +201,7 @@ struct RR12: View {
                         
                         VStack {
                             
-                            Text("This is the 'romantic' CareHeart!")
+                            Text("A CareHeart to fit who you are!")
                                 .font(.system(size: 16, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
@@ -214,7 +214,7 @@ struct RR12: View {
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                             
-                            Text("- send an emotional PhotoPOP")
+                            Text("- send the perfect PhotoPOP")
                                 .font(.system(size: 12, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                 .multilineTextAlignment(.center)
