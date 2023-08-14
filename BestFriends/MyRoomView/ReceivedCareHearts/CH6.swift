@@ -65,7 +65,7 @@ struct CH6: View {
                         .opacity(0.9)
                         .ignoresSafeArea()
                       
-                      Image("CHHearts")
+                      Image("CHHearts 1")
                           .ignoresSafeArea()
                           .scaledToFit()
                           .opacity(0.15)
@@ -82,6 +82,24 @@ struct CH6: View {
             
             VStack{
                 
+                ZStack {
+//                    VStack {
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .foregroundColor(Color.purple)
+                            .frame(width: 250, height: 200)
+                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                            .opacity(0.5)
+                        
+                        Text("Ahhhhhhh!")
+                            .font(.system(size: 50))
+                            .foregroundColor(Color.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                    }
+//                }
+                
+                
                 HStack {
                     VStack {
                    
@@ -90,14 +108,6 @@ struct CH6: View {
                         ZStack {
                             
 
-//                            Image("CHHearts 1")
-//                                .ignoresSafeArea()
-//                                .onAppear()
-//                                .frame(width: 350, height: 900)
-//                                .cornerRadius(125)
-////                                .shadow(color: ColorManager .purple4, radius: 5, x: 5, y: 5)
-//                                .opacity(0.4)
-                            
                             VStack {
                                 
 //
@@ -110,15 +120,7 @@ struct CH6: View {
                 
                 VStack {
                     
-                    
-              
-                    
-                    Text("Ahh!")
-                        .font(.system(size: 30))
-                        .foregroundColor(Color.white)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-
+        
                     Spacer()
                         .frame(height: 10)
                     
