@@ -48,14 +48,14 @@ struct CH10: View {
                         
                         Text("Friends Sending")
                             .font(.system(size: 40))
-                            .foregroundColor(ColorManager .grey1)
-                            .fontWeight(.thin)
+                            .foregroundColor(Color.white)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
                         Text("you CareHearts")
                             .font(.system(size: 30))
-                            .foregroundColor(ColorManager .grey1)
-                            .fontWeight(.thin)
+                            .foregroundColor(Color.white)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
                        
@@ -68,7 +68,7 @@ struct CH10: View {
                         Text("Yep! Your friends care about you")
                             .font(.system(size: 17))
                             .foregroundColor(Color.white)
-                            .fontWeight(.thin)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
                     }
@@ -83,7 +83,7 @@ struct CH10: View {
                     })
                     .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
                     .shadow(color: Color .pink, radius: 10, x: 10, y: 10)
-                    .opacity(0.4)
+                    .opacity(0.7)
                     
                     NavigationLink(destination: VirtualHug(user: user, friends: friends), label: {
                         HugCircle (color: ColorManager.orange5, friendName: "Grab your \n'HUG'")
@@ -91,7 +91,7 @@ struct CH10: View {
                     .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
                     .shadow(color: Color.yellow, radius: 10, x: 10, y: 10)
                     //                    .opacity(0.6)
-                    .opacity(0.4)
+                    .opacity(0.7)
                     
                 }
                 
@@ -102,7 +102,7 @@ struct CH10: View {
                     .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                     .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
                     
-                    .opacity(0.3)
+                    .opacity(0.7)
                     
                     
                     NavigationLink(destination: CH7(user: user, friend: user, friends: friends, groups: groups), label: {
@@ -110,19 +110,19 @@ struct CH10: View {
                     })
                     .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                     .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
-                    .opacity(0.3)
+                    .opacity(0.7)
                 }
             }
                     
                   
                     
                     NavigationLink(destination: CH6(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .orange2, friendName: "Custom \nCareHeart")
+                        HugCircle (color: ColorManager .purple3, friendName: "Custom \nCareHeart")
                     })
                     .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                     .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
                     
-                    .opacity(0.3)
+                    .opacity(0.7)
                     
                     
                     
