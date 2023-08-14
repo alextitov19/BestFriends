@@ -1,11 +1,9 @@
 //
-//  CH6.swift
+//  RR13.swift
 //  BestFriends
 //
-//  Created by Zhengxu Wang on 7/11/23.
+//  Created by Alex Titov on 8/11/23.
 //
-
-
 
 
 import Foundation
@@ -13,7 +11,7 @@ import SwiftUI
 import ConfettiSwiftUI
 import AVKit
 
-struct CH6: View {
+struct RR13: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -305,7 +303,7 @@ struct CH6: View {
                                 .frame(height: 375)
                             
 
-                        }   
+                        }
                     }
                 }
                 
@@ -344,7 +342,7 @@ struct CH6: View {
         var body: some View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
-                .frame(width: 70, height: 70)
+                .frame(width: 80, height: 80)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .font(.system(size: 8))
                 .background(color)
@@ -356,5 +354,3 @@ struct CH6: View {
     
     
 }
-
-

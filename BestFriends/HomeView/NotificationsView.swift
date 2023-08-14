@@ -99,7 +99,7 @@ struct NotificationsView: View {
         @State private var vibeActive = false
         @State private var needTalkActive = false
         @State private var newArtistActive = false
-        
+        @State private var newCustomActive = false
         
         
         
@@ -156,6 +156,10 @@ struct NotificationsView: View {
                     
                     
                     NavigationLink(destination: CH6(user: user, friends: friends), isActive: $heartsActive, label: {
+                        EmptyView()
+                    })
+                    
+                    NavigationLink(destination: CH9(user: user, friends: friends), isActive: $newCustomActive, label: {
                         EmptyView()
                     })
                     
@@ -269,7 +273,8 @@ struct NotificationsView: View {
             case "I found a New Artist & posted them in Chat":
                 newArtistActive = true
                 
-           
+            case "Just send you a Custom CareHeart w/ Chat message & PhotoPOP":
+                newCustomActive = true
                 
                 
                 
