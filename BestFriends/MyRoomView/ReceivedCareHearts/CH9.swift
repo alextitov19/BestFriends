@@ -38,66 +38,62 @@ struct CH9: View {
         ZStack {
       
             
+            
             if shareTapped {
                 
-                
-                
-                            ColorManager.purple5
-                                .ignoresSafeArea()
-                                .onAppear()
-
-                
+                Color.black
+                    .opacity(0.8)
+                    .ignoresSafeArea()
+        
                 AdPlayerView(name: "dramaLights")
+                    .opacity(0.5)
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
             } else {
+
+
+                Color.black
+                   .opacity(0.9)
+                    .ignoresSafeArea()
                 
-                Image("FHBackground")
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
                 
-//
-//                Color.black
-//                    .ignoresSafeArea()
-//                    .onAppear()
-//                
-//                AdPlayerView(name: "sky2")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-                
-//                Image("CHAirKisses 1")
-//                    .ignoresSafeArea()
-//                    .scaledToFit()
-                
-//                Image("CareHeartBalloon 1")
-//                    .ignoresSafeArea()
-//                    .scaledToFit()
-//                    .opacity(0.8)
+                AdPlayerView(name: "Planet2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+           
+              
+
 
             }
             
             VStack{
                 
+                Text("Your friend just")
+                    .font(.system(size: 35))
+                    .foregroundColor(ColorManager .grey1)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                
+                Text("blew you a kiss")
+                    .font(.system(size: 40))
+                    .foregroundColor(ColorManager .grey1)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                
+                Spacer()
+                    .frame(height: 40)
+                
+                
                 HStack {
                     VStack {
-                   
-                        
-                        Image("BalloonGuy2")
-                            .frame(width: 375, height: 375)
-                            .cornerRadius(15)
-                            .shadow(color: ColorManager .purple4, radius: 5, x: 5, y: 5)
-                            .opacity(0.7)
-                    
+        
                         
                         ZStack {
                             
                             
                             VStack {
-                                
-                                Spacer()
-                                    .frame(height: 10)
+                          
                                 
                             }
                             
@@ -112,19 +108,12 @@ struct CH9: View {
          
                 VStack {
 
-                    Text("Your friend just blew you a kiss")
-                                            .font(.system(size: 20))
-                                            .foregroundColor(ColorManager .grey1)
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
-                    
+
+
                     
                     VStack {
                         
-//
-//
-//                        Spacer()
-//                            .frame(height: 15)
+
                         
                         
                         Text("Jump up high and you will")
@@ -149,6 +138,8 @@ struct CH9: View {
                                                 .foregroundColor(ColorManager .grey2)
                                                 .fontWeight(.light)
                                                 .multilineTextAlignment(.center)
+                        
+                        
                         
                         HStack {
                       
@@ -195,6 +186,7 @@ struct CH9: View {
                         
                         Spacer()
                             .frame(height: 15)
+                        
                         HStack {
                             if friends.count > 2 {
                                 RectView(user: user, friend: friends[2], color: colors[2])
@@ -310,7 +302,7 @@ struct CH9: View {
                                     .opacity(0.70)
 
                             })
-                         
+//
                             Spacer()
                                 .frame(height: 150)
                             

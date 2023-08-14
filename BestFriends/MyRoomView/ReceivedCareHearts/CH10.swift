@@ -96,7 +96,7 @@ struct CH10: View {
                 }
                 
                 HStack {
-                    NavigationLink(destination: CH6(user: user, friends: friends), label: {
+                    NavigationLink(destination: CH6(user: user, friends: friends, groups: groups), label: {
                         HugCircle (color: ColorManager .orange2, friendName: "Look! You got \n 'Hearts'")
                     })
                     .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
@@ -116,7 +116,7 @@ struct CH10: View {
                     
                   
                     
-                    NavigationLink(destination: CH6(user: user, friends: friends), label: {
+                    NavigationLink(destination: CH6(user: user, friends: friends, groups: groups), label: {
                         HugCircle (color: ColorManager .purple3, friendName: "Custom \nCareHeart")
                     })
                     .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)

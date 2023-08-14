@@ -81,36 +81,25 @@ struct VirtualHug: View {
             
             if shareTapped {
                 
-                
-                
-                ColorManager.purple5
-                    .ignoresSafeArea()
-                    .onAppear()
-                
+                Color.black
+                  .opacity(0.9)
+                  .ignoresSafeArea()
                 
                 AdPlayerView(name: "dramaLights")
+                    .opacity(0.5)
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
             } else {
+
                 
-                Image("FHBackground")
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
+                Color.black
+                  .opacity(0.9)
+                  .ignoresSafeArea()
                 
-//                Color.black
-//                    .opacity(0.8)
-//                    .ignoresSafeArea()
-//                    .onAppear()
-//
-//
-//
-//                AdPlayerView(name: "sky2")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-            
-                
+                AdPlayerView(name: "HugSound")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
             }
             
             

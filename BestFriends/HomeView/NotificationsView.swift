@@ -155,9 +155,9 @@ struct NotificationsView: View {
                     })
                     
                     
-                    NavigationLink(destination: CH6(user: user, friends: friends), isActive: $heartsActive, label: {
-                        EmptyView()
-                    })
+//                    NavigationLink(destination: CH6(user: user, friends: friends, groups: groups), isActive: $heartsActive, label: {
+//                        EmptyView()
+//                    })
                     
                     NavigationLink(destination: CH9(user: user, friends: friends), isActive: $newCustomActive, label: {
                         EmptyView()

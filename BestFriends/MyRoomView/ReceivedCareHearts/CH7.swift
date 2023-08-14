@@ -191,7 +191,7 @@ struct CH7: View {
                             .foregroundColor(Color.white)
                             .multilineTextAlignment(.center)
                         
-                        Text("how you liked the song in Chat")
+                        Text("if their song helped")
                             .font(.system(size: 20, weight: .light))
                             .foregroundColor(Color.white)
                             .multilineTextAlignment(.center)
@@ -201,7 +201,34 @@ struct CH7: View {
                 VStack {
                     
                     Spacer()
-                        .frame(height: 70)
+                        .frame(height: 30)
+                    
+                    ZStack {
+                        
+                        Image(systemName: "circle.fill")
+                            .resizable()
+                            .foregroundColor(Color.purple)
+                            .frame(width: 350, height: 175)
+                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                            .opacity(0.5)
+                        
+                        VStack {
+                            Text("Your friend just sent you")
+                                .font(.system(size: 19, weight: .light))
+                                .foregroundColor(Color.white)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("'that' song in Chat they listen to")
+                                .font(.system(size: 19, weight: .light))
+                                .foregroundColor(Color.white)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("on those very difficult days")
+                                .font(.system(size: 19, weight: .light))
+                                .foregroundColor(Color.white)
+                                .multilineTextAlignment(.center)
+                        }
+                    }
 
                     Text("(Shoot your friend a quick thank you notification)")
                         .font(.system(size: 15))

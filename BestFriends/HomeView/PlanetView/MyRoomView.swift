@@ -233,9 +233,9 @@ struct MyRoomView: View {
                                                         label: {
                                             Text("Sending \nCareHearts")
                                                 .fontWeight(.regular)
-                                                .frame(width: 100, height: 45)
+                                                .frame(width: 90, height: 45)
                                                 .foregroundColor(ColorManager .purple5)
-                                                .font(.system(size: 17))
+                                                .font(.system(size: 16))
                                                 .background(ColorManager .purple2)
                                                 .glow(color: ColorManager.purple3, radius: 1)
                                                 .shadow(color: .white, radius: 3, x: -4, y: 4)
@@ -292,9 +292,9 @@ struct MyRoomView: View {
                                                         label: {
                                             Text("My 'Vibe' \nJUST changed")
                                                 .fontWeight(.regular)
-                                                .frame(width: 110, height: 40)
+                                                .frame(width: 90, height: 40)
                                                 .foregroundColor(ColorManager .purple5)
-                                                .font(.system(size: 15))
+                                                .font(.system(size: 16))
                                                 .background(ColorManager .purple1)
                                                 .glow(color: ColorManager.purple3, radius: 1)
                                                 .shadow(color: .green, radius: 3, x: -4, y: 4)
@@ -311,21 +311,21 @@ struct MyRoomView: View {
                                         
                                         
 //                                        RR4(user: user, friends: friends
-                                        
-                                        NavigationLink( destination:  MyFears(user: user, friends: friends),
+                                        NavigationLink( destination:  CH10(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                                                         label: {
-                                            Text("Panic Attack!")
+                                            Text("Receiving \nCareHearts")
                                                 .fontWeight(.regular)
-                                                .frame(width: 95, height: 30)
+                                                .frame(width: 100, height: 45)
                                                 .foregroundColor(ColorManager .purple5)
-                                                .font(.system(size: 15))
-                                                .background(ColorManager .purple1)
+                                                .font(.system(size: 17))
+                                                .background(ColorManager .purple2)
                                                 .glow(color: ColorManager.purple3, radius: 1)
-                                                .shadow(color: .purple, radius: 3, x: -4, y: 4)
+                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
                                                 .opacity(0.9)
                                                 .cornerRadius(7)
                                                 .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
                                         })
+                                   
                                         
                                         
                             }
@@ -446,16 +446,16 @@ struct MyRoomView: View {
                                        
                             VStack {
                                 
-                                NavigationLink( destination:  CH10(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
+                                NavigationLink( destination:  MyFears(user: user, friends: friends),
                                                 label: {
-                                    Text("Receiving \nCareHearts")
+                                    Text("Panic Attack!")
                                         .fontWeight(.regular)
-                                        .frame(width: 120, height: 45)
+                                        .frame(width: 95, height: 30)
                                         .foregroundColor(ColorManager .purple5)
-                                        .font(.system(size: 17))
-                                        .background(ColorManager .purple2)
+                                        .font(.system(size: 15))
+                                        .background(ColorManager .purple1)
                                         .glow(color: ColorManager.purple3, radius: 1)
-                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                        .shadow(color: .purple, radius: 3, x: -4, y: 4)
                                         .opacity(0.9)
                                         .cornerRadius(7)
                                         .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
