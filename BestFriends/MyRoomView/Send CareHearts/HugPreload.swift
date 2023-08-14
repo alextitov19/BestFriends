@@ -100,7 +100,7 @@ struct HugPreload: View {
 
 
 
-                VStack {
+    VStack {
                     
                     Text("Sending CareHearts")
                         .font(.system(size: 40))
@@ -117,9 +117,9 @@ struct HugPreload: View {
                         .multilineTextAlignment(.center)
                     
                     Spacer ()
-                        .frame(height: 20)
+                        .frame(height: 40)
                     
-                HStack {
+        HStack {
                         
                     VStack {
                             
@@ -231,26 +231,19 @@ struct HugPreload: View {
                     
                     VStack {
                         Spacer ()
-                            .frame(height: 90)
+                            .frame(height: 20)
                         
                         
+                        NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
+                            HugCircle (color: ColorManager .purple4, friendName: "My Custom \nCareHeart")
+                        })
+                        .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+                        .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+                        .opacity(0.5)
                         
-                        
-                        Text("It's like sending the joy")
-                            .font(.system(size: 20))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("of kicking through Autumn's leaves")
-                            .font(.system(size: 20))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                        
-                        
-                        
-                        
+                        Spacer ()
+                            .frame(height: 50)
+                       
                         Spacer ()
                             .frame(height: 30)
                         
@@ -273,16 +266,21 @@ struct HugPreload: View {
                                     .rotationEffect(.degrees(-7))
                                     .shadow(color: .white, radius: 2, x: -2, y: 2)
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                    .opacity(0.9)
+                                    .opacity(0.3)
                                 
                             
-                                Text("Super helpful \nif friend is having \na difficult day.")
-                                    .fontWeight(.light)
+                                Text("CareHearts... \nlike sending the joy \nof kicking through \nAutumn's leaves")
+                                    .fontWeight(.thin)
                                     .foregroundColor(Color.black)
-                                    .font(.system(size: 13))
+                                    .font(.system(size: 12))
                                     .multilineTextAlignment(.center)
                                     .rotationEffect(.degrees(-7))
                                     .opacity(0.85)
+                                
+                          
+                                
+                                
+                                
                                 
                             }
                         }
