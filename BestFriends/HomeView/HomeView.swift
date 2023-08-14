@@ -325,7 +325,7 @@ struct HomeView: View {
             return Color(.systemRed)
        
         default:
-            return Color(.systemGreen)
+            return Color(.systemGray3)
             
 //            return ColorManager.pmbc_blue
             
