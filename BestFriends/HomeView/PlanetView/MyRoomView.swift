@@ -233,7 +233,7 @@ struct MyRoomView: View {
                                                         label: {
                                             Text("Sending \nCareHearts")
                                                 .fontWeight(.regular)
-                                                .frame(width: 90, height: 45)
+                                                .frame(width: 100, height: 45)
                                                 .foregroundColor(ColorManager .purple5)
                                                 .font(.system(size: 16))
                                                 .background(ColorManager .purple2)

@@ -193,7 +193,7 @@ struct RR12: View {
                         Image(systemName: "heart.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 250, height: 200)
+                            .frame(width: 260, height: 210)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .opacity(0.5)
                        
@@ -201,7 +201,7 @@ struct RR12: View {
                         
                         VStack {
                             
-                            Text("A CareHeart to fit who you are!")
+                            Text("A CareHeart to fit the real you!")
                                 .font(.system(size: 16, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
