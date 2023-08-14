@@ -375,7 +375,7 @@ struct CH7: View {
                             })
                             
                             Spacer()
-                                .frame(height: 375)
+                                .frame(height: 100)
      
                         }
               

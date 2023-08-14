@@ -25,16 +25,21 @@ struct CH10: View {
         
         ZStack {
             
-        
+            Color.black
+               .opacity(0.9)
+                .ignoresSafeArea()
+            
 
             Image("CareHeart 2")
                 .ignoresSafeArea()
                 .scaledToFit()
+                .opacity(0.2)
 
 
-            AdPlayerView(name: "sky2")
+            AdPlayerView(name: "MainPgEarth")
                 .ignoresSafeArea()
                 .blendMode(.screen)
+                .opacity(0.7)
             
             
             ZStack{
