@@ -213,7 +213,7 @@ struct CH4: View {
                             .opacity(0.5)
                         
                         VStack {
-                            Text("You know that song you listen to")
+                            Text("You know 'that' song you listen to")
                                 .font(.system(size: 19, weight: .light))
                                 .foregroundColor(Color.white)
                                 .multilineTextAlignment(.center)
@@ -233,16 +233,16 @@ struct CH4: View {
 //                            NavigationLink(
 //                                destination:  PhotoPopView(user: user, friends: friends),
 //                                label: {
-//                                    
+//
 //                                    Image(systemName: "camera")
-//                                      
+//
 //                                       .resizable()
 //                                        .scaledToFit()
 //                                        .frame(width: 40, height: 40)
 //                                        .foregroundColor(Color.cyan)
 //                                        .glow(color: ColorManager.purple4, radius: 2)
 //                                        .opacity(0.6)
-//  
+//
 //                                })
                         }
                     }

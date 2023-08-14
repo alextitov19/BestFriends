@@ -235,7 +235,7 @@ struct HugPreload: View {
                         
                         
                         NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
-                            HugCircle (color: ColorManager .purple4, friendName: "My Custom \nCareHeart")
+                            HugCircle (color: ColorManager .purple4, friendName: "My Custom \nCareHearts")
                         })
                         .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                         .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
@@ -255,7 +255,7 @@ struct HugPreload: View {
                                 .multilineTextAlignment(.center)
                             
                             Spacer ()
-                                .frame(width: 300)
+                                .frame(width: 280)
                             
                             ZStack {
                                 
@@ -269,7 +269,7 @@ struct HugPreload: View {
                                     .opacity(0.3)
                                 
                             
-                                Text("CareHearts... \nlike sending the joy \nof kicking through \nAutumn's leaves")
+                                Text("CareHearts... \nIt's like sending the joy \nof kicking through \nAutumn's leaves")
                                     .fontWeight(.thin)
                                     .foregroundColor(Color.black)
                                     .font(.system(size: 12))
@@ -324,7 +324,7 @@ struct HugPreload: View {
                         .resizable()
                         .foregroundColor(color)
                     //                            .foregroundColor(ColorManager .purple2)
-                        .frame(width: 140, height: 110)
+                        .frame(width: 150, height: 120)
                         .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
 
                     Text(friendName)
