@@ -167,20 +167,21 @@ struct NotificationsView: View {
                         EmptyView()
                     })
                     
-                }
+                    NavigationLink(destination: PhotoPopView(user: user, friends: friends), isActive: $newVibeActive, label: {
+                        EmptyView()
+                    })
+                    
+               }
+                
+             
+                
+            
+                
+                
                 
                 NavigationLink(destination: VirtualHug(user: user, friends: friends), isActive: $thanksHugActive, label: {
                     EmptyView()
                 })
-                
-                NavigationLink(destination: PhotoPopView(user: user, friends: friends), isActive: $newVibeActive, label: {
-                    EmptyView()
-                })
-                
-                
-                
-                
-                
                 
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksHeartActive, label: {
                     EmptyView()
@@ -269,7 +270,7 @@ struct NotificationsView: View {
             case "Is redeaming ONE 'TalkCoupon'":
                 talkCouponActive = true
                 
-            case "'Vibe' just changed! Shoot'em a CareHeart or PhotoPOP":
+            case "Vibe just changed! Shoot'em a CareHeart or PhotoPOP":
                 newVibeActive = true
                 
             case "I Need to Talk!":
