@@ -51,13 +51,13 @@ struct CH10: View {
                     
                     VStack {
                         
-                        Text("Friends Sending")
+                        Text("CareHearts")
                             .font(.system(size: 40))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Text("you CareHearts")
+                        Text("from Friends")
                             .font(.system(size: 30))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
