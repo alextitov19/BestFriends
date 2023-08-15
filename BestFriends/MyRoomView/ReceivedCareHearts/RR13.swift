@@ -54,22 +54,24 @@ struct RR13: View {
                 
             } else {
                 
-                Image("FHBackground")
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
+//                Image("FHBackground")
+//                    .resizable()
+//                    .scaledToFill()
+//                    .edgesIgnoringSafeArea(.all)
 
-//                Color.black
-////                    .opacity(0.5)
-//                    .ignoresSafeArea()
-//                    .onAppear()
-//
-//
-//
-//                AdPlayerView(name: "sky2")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//
+                Image("CareHeartBalloon 1")
+                    .ignoresSafeArea()
+                    .scaledToFit()
+                    .opacity(0.1)
+                
+                Color.black
+                  .opacity(0.9)
+                  .ignoresSafeArea()
+                
+                AdPlayerView(name: "Planet3A")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.6)
             }
             
             VStack{
