@@ -72,10 +72,10 @@ struct CH6: View {
 //                          .opacity(0.2)
 ////                          .foregroundColor(.white)
                    
-//                      AdPlayerView(name: "Planet3A")
-//                          .ignoresSafeArea()
-//                          .blendMode(.screen)
-//                          .opacity(0.6)
+                      AdPlayerView(name: "PlanetSave2")
+                          .ignoresSafeArea()
+                          .blendMode(.screen)
+                          .opacity(0.6)
             }
             
             VStack{
@@ -89,7 +89,7 @@ struct CH6: View {
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .opacity(0.5)
                         
-                        Text("Ahhhhh!")
+                        Text("-------")
                             .font(.system(size: 50))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
@@ -122,7 +122,7 @@ struct CH6: View {
                     Spacer()
                         .frame(height: 10)
                     
-                    Text("Your friend was just thinking about you")
+                    Text("-----------")
                                             .font(.system(size: 20))
                                             .foregroundColor(Color.white)
                                             .fontWeight(.light)
@@ -131,7 +131,7 @@ struct CH6: View {
                     Spacer()
                         .frame(height: 10)
                     
-                    Text("and sent you Hearts")
+                    Text("------------")
                                             .font(.system(size: 20))
                                             .foregroundColor(Color.white)
                                             .fontWeight(.light)

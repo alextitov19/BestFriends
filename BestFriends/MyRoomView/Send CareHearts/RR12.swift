@@ -115,7 +115,7 @@ struct RR12: View {
                         .opacity(0.9)
                         .ignoresSafeArea()
                       
-                      AdPlayerView(name: "PlanetSave2")
+                      AdPlayerView(name: "Fireworks2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
                           .opacity(0.6)
@@ -201,24 +201,25 @@ struct RR12: View {
                         
                         VStack {
                             
-                            Text("Build your own CareHeart!")
-                                .font(.system(size: 16, weight: .light))
+                            
+                            Text("tell'em")
+                                .font(.system(size: 20, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                             
-                            Spacer()
-                                .frame(height: 7)
-                            
-                            Text("- send a special message to Chat")
-                                .font(.system(size: 12, weight: .light))
+                            Text("CONGRATULATIONS")
+                                .font(.system(size: 28, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                             
-                            Text("- send the perfect PhotoPOP")
-                                .font(.system(size: 12, weight: .light))
+                            Text("You did it!")
+                                .font(.system(size: 25, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
-                                .multilineTextAlignment(.center)
-                         
+                                    .multilineTextAlignment(.center)
+//
+//                            Spacer()
+//                                .frame(height: 7)
+//
                             
                             Spacer()
                                 .frame(height: 10)

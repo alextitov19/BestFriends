@@ -367,7 +367,7 @@ struct AtmosphereMain2: View {
                             showingAlert = true
                         }) {
 
-                            Text("Wow, what a \nGREAT day!")
+                            Text("My Friends are \nthe BEST!")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -432,7 +432,7 @@ struct AtmosphereMain2: View {
                                 mood = 7
                             }) {
 
-                                Text("I really need to TALK! \n(show as 'green' atmosphere)")
+                                Text("I really need to TALK! \n(shows as 'green' atmosphere)")
                                     .font(.system(size: 10))
                                     .foregroundColor(Color.black)
                             }

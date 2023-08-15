@@ -161,8 +161,8 @@
 		CF09118C28488A5700CB0AF0 /* BetaTestVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09118B28488A5700CB0AF0 /* BetaTestVideo.swift */; };
 		CF09118E284894F400CB0AF0 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09118D284894F400CB0AF0 /* InfoView.swift */; };
 		CF091195284A6DC900CB0AF0 /* FG_VideoCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF091194284A6DC900CB0AF0 /* FG_VideoCall.swift */; };
-		CF1773F22A8BB43800DF5A15 /* PlanetSave.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF1773F12A8BB43800DF5A15 /* PlanetSave.mp4 */; };
 		CF1773F42A8BB5F800DF5A15 /* PlanetSave2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF1773F32A8BB5F800DF5A15 /* PlanetSave2.mp4 */; };
+		CF1773F82A8C0D6800DF5A15 /* Fireworks2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF1773F72A8C0D6800DF5A15 /* Fireworks2.mp4 */; };
 		CF1ECABB286AAD6F00D999F8 /* SendSongChat2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECABA286AAD6E00D999F8 /* SendSongChat2.swift */; };
 		CF1ECABF286E876900D999F8 /* AtmosphereInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECABE286E876900D999F8 /* AtmosphereInfo.swift */; };
 		CF1ECAC12870039500D999F8 /* HorizonPromoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECAC02870039500D999F8 /* HorizonPromoPage.swift */; };
@@ -544,8 +544,8 @@
 		CF09118B28488A5700CB0AF0 /* BetaTestVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaTestVideo.swift; sourceTree = "<group>"; };
 		CF09118D284894F400CB0AF0 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		CF091194284A6DC900CB0AF0 /* FG_VideoCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FG_VideoCall.swift; sourceTree = "<group>"; };
-		CF1773F12A8BB43800DF5A15 /* PlanetSave.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlanetSave.mp4; sourceTree = "<group>"; };
 		CF1773F32A8BB5F800DF5A15 /* PlanetSave2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlanetSave2.mp4; sourceTree = "<group>"; };
+		CF1773F72A8C0D6800DF5A15 /* Fireworks2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fireworks2.mp4; sourceTree = "<group>"; };
 		CF1CD75129E2905F00D1F801 /* TestPage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestPage3.swift; path = ../../../../../../Applications/TestPage3.swift; sourceTree = "<group>"; };
 		CF1CD75529E291BE00D1F801 /* TestPage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPage3.swift; sourceTree = "<group>"; };
 		CF1ECABA286AAD6E00D999F8 /* SendSongChat2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendSongChat2.swift; sourceTree = "<group>"; };
@@ -784,7 +784,6 @@
 			isa = PBXGroup;
 			children = (
 				2DBF3EF22A61AD3100CB1CAD /* RR10.swift */,
-				7A45B8492A86ABA300F5E75B /* RR14.swift */,
 				7A45B84B2A86ABA900F5E75B /* RR15.swift */,
 			);
 			path = RR;
@@ -813,6 +812,7 @@
 				2D7127BA2A658B9000E14744 /* CH11.swift */,
 				2D7127BC2A658BA800E14744 /* CH12.swift */,
 				7A45B8472A86AB9E00F5E75B /* RR13.swift */,
+				7A45B8492A86ABA300F5E75B /* RR14.swift */,
 			);
 			path = ReceivedCareHearts;
 			sourceTree = "<group>";
@@ -1440,12 +1440,12 @@
 			isa = PBXGroup;
 			children = (
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
+				CF1773F72A8C0D6800DF5A15 /* Fireworks2.mp4 */,
 				CFBFB9D62A87EF5F0020A4DF /* Planet1.mp4 */,
 				CF8941272A8B459300AFEC39 /* Planet2A.mp4 */,
 				CF89412F2A8B4AA400AFEC39 /* Planet3A.mp4 */,
 				CF8941212A8B3E2700AFEC39 /* Planet4.mp4 */,
 				CF8941332A8B50BD00AFEC39 /* Planet5.mp4 */,
-				CF1773F12A8BB43800DF5A15 /* PlanetSave.mp4 */,
 				CF1773F32A8BB5F800DF5A15 /* PlanetSave2.mp4 */,
 				CF8941232A8B43E000AFEC39 /* Notifications2.mp4 */,
 				CF8941292A8B483D00AFEC39 /* PhotoPOP2.mp4 */,
@@ -2089,7 +2089,7 @@
 				CF8941222A8B3E2700AFEC39 /* Planet4.mp4 in Resources */,
 				CF8941302A8B4AA400AFEC39 /* Planet3A.mp4 in Resources */,
 				CF8941342A8B50BD00AFEC39 /* Planet5.mp4 in Resources */,
-				CF1773F22A8BB43800DF5A15 /* PlanetSave.mp4 in Resources */,
+				CF1773F82A8C0D6800DF5A15 /* Fireworks2.mp4 in Resources */,
 				7A78232E26B2419600CA76FC /* background_5.mp4 in Resources */,
 				CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */,
 				CF8941282A8B459300AFEC39 /* Planet2A.mp4 in Resources */,
