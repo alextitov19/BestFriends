@@ -140,7 +140,7 @@ struct CH6: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("(say thanks for thinking about me)")
+                    Text("(alert friend)")
                                             .font(.system(size: 15))
                                             .italic()
                                             .foregroundColor(Color.white)
@@ -275,20 +275,20 @@ struct CH6: View {
                                 Spacer()
                                     .frame(height: 20)
                                                                       
-                                NavigationLink( destination:  RR11(user: user, friend: user, friends: friends, groups: groups),
-                                                label: {
-                                    Text("Send Hearts back")
-                                        .fontWeight(.bold)
-                                        .frame(width: 200, height: 40)
-                                        .foregroundColor(Color.black)
-                                        .font(.system(size: 16))
-                                        .background(Color.cyan)
-                                        .glow(color: ColorManager.purple1, radius: 1)
-                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                        .opacity(0.9)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                })
+//                                NavigationLink( destination:  RR11(user: user, friend: user, friends: friends, groups: groups),
+//                                                label: {
+//                                    Text("Send Hearts back")
+//                                        .fontWeight(.bold)
+//                                        .frame(width: 200, height: 40)
+//                                        .foregroundColor(Color.black)
+//                                        .font(.system(size: 16))
+//                                        .background(Color.cyan)
+//                                        .glow(color: ColorManager.purple1, radius: 1)
+//                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                        .opacity(0.9)
+//                                        .cornerRadius(15)
+//                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                })
                                 
                                 Spacer()
                                     .frame(height: 15)

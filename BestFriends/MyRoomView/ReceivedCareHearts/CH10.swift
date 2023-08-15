@@ -166,7 +166,7 @@ struct CH10: View {
                                         .opacity(0.5)
                                     
                                     
-                                    NavigationLink(destination: CH6(user: user, friends: friends, groups: groups), label: {
+                                    NavigationLink(destination: RR15(user: user, friends: friends, groups: groups), label: {
                                       
                                         Text("My Custon \nCareHearts... ")
                                             .fontWeight(.thin)
