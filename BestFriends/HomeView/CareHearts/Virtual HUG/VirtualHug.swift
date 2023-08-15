@@ -97,7 +97,7 @@ struct VirtualHug: View {
                   .opacity(0.9)
                   .ignoresSafeArea()
                 
-                AdPlayerView(name: "HugSound")
+                AdPlayerView(name: "HugSound2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
             }

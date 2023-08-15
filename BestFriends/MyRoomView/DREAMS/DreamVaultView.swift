@@ -35,7 +35,7 @@ struct DreamVaultView: View {
                 .ignoresSafeArea()
                 .onAppear()
             
-            AdPlayerView(name: "PhotoPOP")
+            AdPlayerView(name: "PhotoPOP2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
