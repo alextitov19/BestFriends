@@ -115,7 +115,7 @@ struct RR12: View {
                         .opacity(0.9)
                         .ignoresSafeArea()
                       
-                      AdPlayerView(name: "Planet4")
+                      AdPlayerView(name: "PlanetSave2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
                           .opacity(0.6)
