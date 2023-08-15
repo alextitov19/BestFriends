@@ -124,8 +124,8 @@ struct CH10: View {
                     
                   
                     
-                    NavigationLink(destination: CH6(user: user, friends: friends, groups: groups), label: {
-                        HugCircle (color: ColorManager .purple3, friendName: "Custom \nCareHeart")
+                    NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
+                        HugCircle (color: ColorManager .purple3, friendName: "Congrats \nNice Job!!!")
                     })
                     .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                     .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
@@ -135,9 +135,55 @@ struct CH10: View {
                     
                     
                         VStack {
+//                            
+//                                                        Spacer ()
+//                                                            .frame(height: 75)
                             
-                                                        Spacer ()
-                                                            .frame(height: 75)
+                            
+                            Spacer ()
+                                .frame(height: 50)
+                            
+                            
+                            
+                            HStack {
+                                Text("")
+                                    .font(.system(size: 15))
+                                    .foregroundColor(Color.white)
+                                    .fontWeight(.thin)
+                                    .multilineTextAlignment(.center)
+                                
+                                Spacer ()
+                                    .frame(width: 280)
+                                
+                                ZStack {
+                                    
+                                    Image(systemName: "heart.fill")
+                                        .resizable()
+                                        .foregroundColor(Color.purple)
+                                        .frame(width: 150, height: 110)
+                                        .rotationEffect(.degrees(-7))
+                                        .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+                                        .opacity(0.5)
+                                    
+                                    
+                                    NavigationLink(destination: CH6(user: user, friends: friends, groups: groups), label: {
+                                      
+                                        Text("My Custon \nCareHearts... ")
+                                            .fontWeight(.thin)
+                                            .foregroundColor(Color.black)
+                                            .font(.system(size: 20))
+                                            .multilineTextAlignment(.center)
+                                            .rotationEffect(.degrees(-7))
+                                            .opacity(0.85)
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                    }
+                                    )}
+                            }
                             
                             
                         }

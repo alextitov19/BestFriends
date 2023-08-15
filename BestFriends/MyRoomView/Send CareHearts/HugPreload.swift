@@ -278,7 +278,7 @@ struct HugPreload: View {
                                     .opacity(0.5)
                                 
                                 
-                                NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
+                                NavigationLink(destination: CH6(user: user, friends: friends, groups: groups), label: {
                                   
                                     Text("My Custon \nCareHearts... ")
                                         .fontWeight(.thin)
@@ -287,11 +287,7 @@ struct HugPreload: View {
                                         .multilineTextAlignment(.center)
                                         .rotationEffect(.degrees(-7))
                                         .opacity(0.85)
-                                    
-                                    
-                                    
-                                    
-                                    
+                                  
                                     
                                 }
                                 )}
