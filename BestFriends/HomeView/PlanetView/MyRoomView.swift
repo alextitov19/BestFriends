@@ -223,7 +223,7 @@ struct MyRoomView: View {
                             
                             VStack {
                                 Spacer()
-                                    .frame(height: 65)
+                                    .frame(height: 60)
                                 
                                 HStack {
                                    
@@ -290,7 +290,7 @@ struct MyRoomView: View {
                                         
                                         NavigationLink( destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                                         label: {
-                                            Text("Friend \nAlerts")
+                                            Text("Friend \nConnect")
                                                 .fontWeight(.regular)
                                                 .frame(width: 90, height: 40)
                                                 .foregroundColor(ColorManager .purple5)

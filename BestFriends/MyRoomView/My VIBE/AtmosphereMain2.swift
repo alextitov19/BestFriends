@@ -88,45 +88,45 @@ struct AtmosphereMain2: View {
                      
                 
                         
-                        Text("Something just happened.")
-                            .font(.system(size: 30))
+                        Text("Your friends care about you!")
+                            .font(.system(size: 28))
 //                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
-                        
-                        Spacer()
-                            .frame(height: 10)
-                        
-                        
-                        Text("But maybe you're just not ready")
-                            .font(.system(size: 17))
-                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                        
-                        Text("to talk about it yet.")
-                            .font(.system(size: 17))
-                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
+//
+//                        Spacer()
+//                            .frame(height: 10)
+//
+//
+//                        Text("But maybe you're just not ready")
+//                            .font(.system(size: 17))
+//                            .italic()
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(Color.white)
+//
+//                        Text("to talk about it yet.")
+//                            .font(.system(size: 17))
+//                            .italic()
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(Color.white)
                         
                         
                         Spacer()
                             .frame(height: 25)
                         
-                        Text("Let your friends know so they can send")
-                            .font(.system(size: 17))
+                        Text("Let them know - so they can send")
+                            .font(.system(size: 20))
 //                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
               
                         
-                        Text("CareHearts in the meantime.")
-                            .font(.system(size: 17))
+                        Text("CareHearts")
+                            .font(.system(size: 25))
 //                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
