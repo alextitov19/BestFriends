@@ -131,37 +131,37 @@ struct RR12: View {
                 
 //                                        ZStack(alignment: .bottom) {
                                             
-                                ZStack {
-                                    
-                                    VStack {
-                                                Spacer()
-                                                // TextField for userInput
-                                                TextField("", text: $customMessage)
-                                                    .placeholder(when: customMessage.isEmpty) {
-                                                        HStack {
-                                                            Text("Type personal Chat message here")
-                                                                .foregroundColor(Color.white)
-                                                                .fontWeight(.thin)
-                                                            Spacer()
-                                                        }
-                                                    }
-                                                    .foregroundColor(.white)
-                                                    .font(.system(size: 15))
-                                                    .submitLabel(.done)
-                                                    .onReceive(Just(customMessage)) { _ in limitText(65) }
-                                                    .padding(.top, 20)
-                                                    .padding(.horizontal, 150)
-                                                    .overlay(
-                                                        RoundedRectangle(cornerRadius: 10)
-                                                            .stroke(Color.purple)
-                                                        //                                                            .background(ColorManager.purple3)
-                                                            .frame(height: 50)
-                                                            .padding(.horizontal, 125)
-                                                    )
-                                                    .padding(.bottom, 5)
-                                            }
-                                        }
-                                    
+//                                ZStack {
+//
+//                                    VStack {
+//                                                Spacer()
+//                                                // TextField for userInput
+//                                                TextField("", text: $customMessage)
+//                                                    .placeholder(when: customMessage.isEmpty) {
+//                                                        HStack {
+//                                                            Text("Type personal Chat message here")
+//                                                                .foregroundColor(Color.white)
+//                                                                .fontWeight(.thin)
+//                                                            Spacer()
+//                                                        }
+//                                                    }
+//                                                    .foregroundColor(.white)
+//                                                    .font(.system(size: 15))
+//                                                    .submitLabel(.done)
+//                                                    .onReceive(Just(customMessage)) { _ in limitText(65) }
+//                                                    .padding(.top, 20)
+//                                                    .padding(.horizontal, 150)
+//                                                    .overlay(
+//                                                        RoundedRectangle(cornerRadius: 10)
+//                                                            .stroke(Color.purple)
+//                                                        //                                                            .background(ColorManager.purple3)
+//                                                            .frame(height: 50)
+//                                                            .padding(.horizontal, 125)
+//                                                    )
+//                                                    .padding(.bottom, 5)
+//                                            }
+//                                        }
+//
 //                                }
 //
 //                            }
@@ -173,19 +173,19 @@ struct RR12: View {
                     
                 VStack {
                     
-                    Text("Putting the soul of you")
-                        .font(.system(size: 35, weight: .light))
-                        .foregroundColor(ColorManager .grey1)
-                        .multilineTextAlignment(.center)
-                    
-                    Text("in your CareHearts ...")
-                        .font(.system(size: 35, weight: .light))
-                        .foregroundColor(ColorManager .grey1)
-                        .multilineTextAlignment(.center)
+//                    Text("Customize your own")
+//                        .font(.system(size: 35, weight: .light))
+//                        .foregroundColor(ColorManager .grey1)
+//                        .multilineTextAlignment(.center)
+//
+//                    Text("CareHearts ...")
+//                        .font(.system(size: 35, weight: .light))
+//                        .foregroundColor(ColorManager .grey1)
+//                        .multilineTextAlignment(.center)
                     
                     
                     Spacer()
-                        .frame(height: 10)
+                        .frame(height: 100)
                     
                     ZStack {
                   
@@ -195,13 +195,13 @@ struct RR12: View {
                             .foregroundColor(Color.purple)
                             .frame(width: 260, height: 210)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                            .opacity(0.5)
+                            .opacity(0.9)
                        
                         
                         
                         VStack {
                             
-                            Text("A CareHeart to fit the real you!")
+                            Text("Build your own CareHeart!")
                                 .font(.system(size: 16, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
@@ -242,6 +242,43 @@ struct RR12: View {
                     }
                 }
                 VStack {
+                    
+                    
+                    ZStack {
+                        
+                        VStack {
+                                    Spacer()
+                                    // TextField for userInput
+                                    TextField("", text: $customMessage)
+                                        .placeholder(when: customMessage.isEmpty) {
+                                            HStack {
+                                                Text("Type personal Chat message here")
+                                                    .foregroundColor(Color.white)
+                                                    .fontWeight(.thin)
+                                                Spacer()
+                                            }
+                                        }
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 15))
+                                        .submitLabel(.done)
+                                        .onReceive(Just(customMessage)) { _ in limitText(65) }
+                                        .padding(.top, 20)
+                                        .padding(.horizontal, 150)
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 10)
+                                                .stroke(Color.purple)
+                                            //                                                            .background(ColorManager.purple3)
+                                                .frame(height: 50)
+                                                .padding(.horizontal, 125)
+                                        )
+                                        .padding(.bottom, 5)
+                                }
+                            }
+                        
+                    
+                    
+                    
+                    
 
                     Spacer()
                         .frame(height: 30)
