@@ -2698,7 +2698,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 29;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -2729,7 +2729,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 29;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;
