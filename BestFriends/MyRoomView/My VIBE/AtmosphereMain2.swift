@@ -117,20 +117,20 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 25)
                         
-                        Text("Let them know - so they can send")
+                        Text("Let'em know what's up")
                             .font(.system(size: 20))
 //                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
               
-                        
-                        Text("CareHearts")
-                            .font(.system(size: 25))
-//                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
+//
+//                        Text("CareHearts")
+//                            .font(.system(size: 25))
+////                            .italic()
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(Color.white)
                         
                         Spacer()
                             .frame(height: 30)
@@ -299,7 +299,7 @@ struct AtmosphereMain2: View {
                     
                     VStack {
                         
-                        Text("Shows as 'green' & 'yellow'")
+                        Text("Shows as 'yellow'")
                             .font(.system(size: 10))
                             .italic()
                             .fontWeight(.light)
@@ -365,8 +365,9 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 12)
                         
+                    
                         
-                        
+                    
                         
                         Button(action: {
                             mood = 8
@@ -431,6 +432,14 @@ struct AtmosphereMain2: View {
                             Spacer()
                                 .frame(height: 12)
                             
+                            
+                            Text("Shows as 'green' atmosphere around your planet")
+                                .font(.system(size: 10))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                            
                             Button(action: {
                                 mood = 7
                             }) {
@@ -453,7 +462,7 @@ struct AtmosphereMain2: View {
                             
                             
                             Spacer()
-                                .frame(height: 15)
+                                .frame(height: 25)
                             
                             
                             

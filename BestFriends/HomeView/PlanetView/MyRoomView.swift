@@ -290,7 +290,7 @@ struct MyRoomView: View {
                                         
                                         NavigationLink( destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                                         label: {
-                                            Text("Friend \nConnect")
+                                            Text("Real-time \nFriendships")
                                                 .fontWeight(.regular)
                                                 .frame(width: 90, height: 40)
                                                 .foregroundColor(ColorManager .purple5)
