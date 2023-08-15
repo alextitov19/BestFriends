@@ -64,7 +64,13 @@ struct CH6: View {
                       Color.black
                         .opacity(0.9)
                         .ignoresSafeArea()
-                      
+//                      
+//                      Image("CHHearts")
+//                          .resizable()
+//                          .scaledToFit()
+////                          .frame(width: 37, height: 37)
+//                          .opacity(0.2)
+////                          .foregroundColor(.white)
                    
                       AdPlayerView(name: "Planet4")
                           .ignoresSafeArea()
