@@ -38,7 +38,7 @@ struct NotificationsView: View {
                     .ignoresSafeArea()
                     .onAppear(perform: getNotifications)
                 
-                AdPlayerView(name: "InAppVideo")
+                AdPlayerView(name: "Notifications2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
@@ -154,10 +154,9 @@ struct NotificationsView: View {
                         EmptyView()
                     })
                     
+
                     
-//                    NavigationLink(destination: CH6(user: user, friends: friends, groups: groups), isActive: $heartsActive, label: {
-//                        EmptyView()
-//                    })
+//                    CH6(user: user, friends: friends, groups: groups)  .. Need this link but get errors
                     
                     NavigationLink(destination: CH9(user: user, friends: friends), isActive: $newCustomActive, label: {
                         EmptyView()

@@ -58,7 +58,7 @@ struct CH9: View {
                     .ignoresSafeArea()
                 
                 
-                AdPlayerView(name: "Planet2")
+                AdPlayerView(name: "Planet2A")
                     .ignoresSafeArea()
                     .blendMode(.screen)
            

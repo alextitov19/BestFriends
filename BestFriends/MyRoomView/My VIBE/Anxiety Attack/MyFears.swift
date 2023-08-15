@@ -64,7 +64,7 @@ struct MyFears: View {
                 .opacity(0.8)
                 .ignoresSafeArea()
          
-            AdPlayerView(name: "TreeLake")
+            AdPlayerView(name: "TreeLake2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.99)
