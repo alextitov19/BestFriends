@@ -299,7 +299,7 @@ struct AtmosphereMain2: View {
                     
                     VStack {
                         
-                        Text("Shows as 'yellow'")
+                        Text("Shows as 'yellow' atmosphere")
                             .font(.system(size: 10))
                             .italic()
                             .fontWeight(.light)
@@ -307,13 +307,6 @@ struct AtmosphereMain2: View {
                             .foregroundColor(Color.white)
                         
                         
-                        
-                        Text("atmosphere around your planet")
-                            .font(.system(size: 10))
-                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
                         
                         
 
@@ -430,25 +423,20 @@ struct AtmosphereMain2: View {
 
                  
                             Spacer()
-                                .frame(height: 12)
+                                .frame(height: 5)
                             
                             
-                            Text("Shows as 'green' atmosphere around your planet")
-                                .font(.system(size: 10))
-                                .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
+                           
                             
                             Button(action: {
                                 mood = 7
                             }) {
 
-                                Text("I really need to TALK!")
+                                Text("I really need to TALK! \n(show as 'green' atmosphere)")
                                     .font(.system(size: 10))
                                     .foregroundColor(Color.black)
                             }
-                            .frame(width: 140, height: 30, alignment: .center)
+                            .frame(width: 150, height: 35, alignment: .center)
                             .background(mood == 7 ? Color.green : Color.red)
                             .cornerRadius(7)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -458,8 +446,7 @@ struct AtmosphereMain2: View {
 
                         })
                     }
-                            
-                            
+                         
                             
                             Spacer()
                                 .frame(height: 25)
