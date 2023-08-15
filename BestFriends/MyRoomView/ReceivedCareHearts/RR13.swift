@@ -17,6 +17,7 @@ struct RR13: View {
     
     let user: User
     let friends: [User]
+    let groups: [Group]
     
     @State private var selectedFriends: [String] = []
     @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
@@ -53,16 +54,7 @@ struct RR13: View {
                     .blendMode(.screen)
                 
             } else {
-                
-//                Image("FHBackground")
-//                    .resizable()
-//                    .scaledToFill()
-//                    .edgesIgnoringSafeArea(.all)
-
-                Image("CareHeartBalloon 1")
-                    .ignoresSafeArea()
-                    .scaledToFit()
-                    .opacity(0.1)
+            
                 
                 Color.black
                   .opacity(0.9)
@@ -72,6 +64,11 @@ struct RR13: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.6)
+                
+                Image("CHHearts 1")
+                    .ignoresSafeArea()
+                    .scaledToFit()
+                    .opacity(0.15)
             }
             
             VStack{
@@ -84,13 +81,7 @@ struct RR13: View {
                         ZStack {
                             
 
-                            Image("CHHearts 1")
-                                .ignoresSafeArea()
-                                .onAppear()
-//                                .frame(width: 375, height: 375)
-                                .cornerRadius(125)
-//                                .shadow(color: ColorManager .purple4, radius: 5, x: 5, y: 5)
-                                .opacity(0.4)
+                    
                             
                             VStack {
                                 
@@ -283,26 +274,47 @@ struct RR13: View {
 //                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
 //                            })
                             
-                            Spacer()
-                                .frame(height: 15)
+                            VStack {
+                                
+                                Spacer()
+                                    .frame(height: 20)
+                                
+                                NavigationLink( destination:  RR11(user: user, friend: user, friends: friends, groups: groups),
+                                                label: {
+                                    Text("Send Hearts back")
+                                        .fontWeight(.bold)
+                                        .frame(width: 200, height: 40)
+                                        .foregroundColor(Color.black)
+                                        .font(.system(size: 16))
+                                        .background(Color.cyan)
+                                        .glow(color: ColorManager.purple1, radius: 1)
+                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                        .opacity(0.9)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                })
+                                
+                                Spacer()
+                                    .frame(height: 15)
+                                
+                                Button(action: {
+                                    sessionManager.showLogin()
+                                },
+                                       label: {
+                                    Image("home-alt2")
+                                        .frame(width: 50, height: 25)
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 20))
+                                        .background(ColorManager .grey2)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                        .opacity(0.70)
+                                    
+                                })
+                            }
                             
-                            Button(action: {
-                                sessionManager.showLogin()
-                            },
-                                   label: {
-                                Image("home-alt2")
-                                    .frame(width: 50, height: 25)
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 20))
-                                    .background(ColorManager .grey2)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                    .opacity(0.70)
-
-                            })
-                            
                             Spacer()
-                                .frame(height: 375)
+                                .frame(height: 50)
                             
 
                         }

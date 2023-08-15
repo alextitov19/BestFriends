@@ -90,7 +90,7 @@ struct CH10: View {
                     .shadow(color: Color .pink, radius: 10, x: 10, y: 10)
                     .opacity(0.7)
                     
-                    NavigationLink(destination: RR13(user: user, friends: friends), label: {
+                    NavigationLink(destination: RR13(user: user, friends: friends, groups: groups), label: {
                         HugCircle (color: ColorManager .orange2, friendName: "Look! You got \n 'Hearts'")
                     })
                     .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
