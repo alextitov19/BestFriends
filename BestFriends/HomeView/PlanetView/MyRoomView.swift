@@ -502,11 +502,37 @@ struct MyRoomView: View {
 //                                                    label: {
 //                                        Text("Found NEW \nArtist")
                                     
-                        
+    
+//************************************ Panic Attack ***********
                                 
-                                NavigationLink( destination:  MyFears(user: user, friends: friends),
+//                                NavigationLink( destination:  MyFears(user: user, friends: friends),
+//                                                label: {
+//                                    Text("Panic Attack!")
+//************************************ Panic Attack ***********
+                                    
+                                NavigationLink( destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+                                    label: {
+                                    Text("Friend Drama")
+                                    .fontWeight(.regular)
+                                    .frame(width: 120, height: 45)
+                                    .foregroundColor(ColorManager .purple5)
+                                    .font(.system(size: 17))
+                                    .background(ColorManager .purple1)
+                                    .glow(color: ColorManager.purple3, radius: 1)
+                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                    .opacity(0.9)
+                                    .cornerRadius(7)
+                                    .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                    
+                                })
+                              
+                                           
+                                Spacer()
+                                    .frame(height: 10)
+                                            
+                                NavigationLink( destination:  EmptyView(),
                                                 label: {
-                                    Text("Panic Attack!")
+                                    Text("comming \nQ:4 2023")
                                         .fontWeight(.regular)
                                         .frame(width: 120, height: 45)
                                         .foregroundColor(ColorManager .purple5)
@@ -518,28 +544,6 @@ struct MyRoomView: View {
                                         .cornerRadius(7)
                                         .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
                                 })
-                                
-                                
-//************************************ When Andy finishes Friendship Highlights ***********
-                                           
-                                Spacer()
-                                    .frame(height: 10)
-                                            
-                                    NavigationLink( destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
-                                        label: {
-                                        Text("Friend Drama")
-                                        .fontWeight(.regular)
-                                        .frame(width: 120, height: 45)
-                                        .foregroundColor(ColorManager .purple5)
-                                        .font(.system(size: 17))
-                                        .background(ColorManager .purple1)
-                                        .glow(color: ColorManager.purple3, radius: 1)
-                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                        .opacity(0.9)
-                                        .cornerRadius(7)
-                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-                                        
-                                    })
                                          
                                             
                             }
