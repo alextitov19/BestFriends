@@ -275,6 +275,8 @@
 		CF8941282A8B459300AFEC39 /* Planet2A.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF8941272A8B459300AFEC39 /* Planet2A.mp4 */; };
 		CF89412A2A8B483D00AFEC39 /* PhotoPOP2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF8941292A8B483D00AFEC39 /* PhotoPOP2.mp4 */; };
 		CF89412C2A8B490B00AFEC39 /* HugSound2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF89412B2A8B490B00AFEC39 /* HugSound2.mp4 */; };
+		CF89412E2A8B4A0B00AFEC39 /* DramaLights2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF89412D2A8B4A0B00AFEC39 /* DramaLights2.mp4 */; };
+		CF8941302A8B4AA400AFEC39 /* Planet3A.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF89412F2A8B4AA400AFEC39 /* Planet3A.mp4 */; };
 		CF8F76C6293866BB00B109D3 /* AskQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F76C5293866BB00B109D3 /* AskQuestion.swift */; };
 		CF8F76C92939B5DF00B109D3 /* TeenBoysUsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F76C82939B5DF00B109D3 /* TeenBoysUsing.swift */; };
 		CF94CAFF298756BD00A75D01 /* InfoWhyLoveBF2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF94CAFE298756BD00A75D01 /* InfoWhyLoveBF2.swift */; };
@@ -658,6 +660,8 @@
 		CF8941272A8B459300AFEC39 /* Planet2A.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Planet2A.mp4; sourceTree = "<group>"; };
 		CF8941292A8B483D00AFEC39 /* PhotoPOP2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PhotoPOP2.mp4; sourceTree = "<group>"; };
 		CF89412B2A8B490B00AFEC39 /* HugSound2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HugSound2.mp4; sourceTree = "<group>"; };
+		CF89412D2A8B4A0B00AFEC39 /* DramaLights2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = DramaLights2.mp4; sourceTree = "<group>"; };
+		CF89412F2A8B4AA400AFEC39 /* Planet3A.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Planet3A.mp4; sourceTree = "<group>"; };
 		CF8F76C5293866BB00B109D3 /* AskQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskQuestion.swift; sourceTree = "<group>"; };
 		CF8F76C82939B5DF00B109D3 /* TeenBoysUsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeenBoysUsing.swift; sourceTree = "<group>"; };
 		CF94CAFE298756BD00A75D01 /* InfoWhyLoveBF2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoWhyLoveBF2.swift; sourceTree = "<group>"; };
@@ -1437,6 +1441,7 @@
 				CFBFB9D62A87EF5F0020A4DF /* Planet1.mp4 */,
 				CF8941272A8B459300AFEC39 /* Planet2A.mp4 */,
 				CFBFB9E02A8882BB0020A4DF /* Planet3.mp4 */,
+				CF89412F2A8B4AA400AFEC39 /* Planet3A.mp4 */,
 				CF8941212A8B3E2700AFEC39 /* Planet4.mp4 */,
 				CF8941232A8B43E000AFEC39 /* Notifications2.mp4 */,
 				CF8941292A8B483D00AFEC39 /* PhotoPOP2.mp4 */,
@@ -1448,6 +1453,7 @@
 				CF5263D6266477C600243DD7 /* background_4.mp4 */,
 				7A78232926B2419600CA76FC /* background_5.mp4 */,
 				CFDB14FB2855A1E600155CEE /* dramaLights.mp4 */,
+				CF89412D2A8B4A0B00AFEC39 /* DramaLights2.mp4 */,
 				CF417545296A60F700898E2D /* NisieJ9.mp4 */,
 				CF3DB38A28DADD3E00BF9CCD /* New Group */,
 				CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */,
@@ -2070,6 +2076,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF89412E2A8B4A0B00AFEC39 /* DramaLights2.mp4 in Resources */,
 				CF4A08EE2879577E00ADA9DD /* sky2.mp4 in Resources */,
 				CFBFB9D72A87EF5F0020A4DF /* Planet1.mp4 in Resources */,
 				CFBFB9E32A88E8C80020A4DF /* HugSound.mp4 in Resources */,
@@ -2078,6 +2085,7 @@
 				CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */,
 				7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */,
 				CF8941222A8B3E2700AFEC39 /* Planet4.mp4 in Resources */,
+				CF8941302A8B4AA400AFEC39 /* Planet3A.mp4 in Resources */,
 				7A78232E26B2419600CA76FC /* background_5.mp4 in Resources */,
 				CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */,
 				CF8941282A8B459300AFEC39 /* Planet2A.mp4 in Resources */,
