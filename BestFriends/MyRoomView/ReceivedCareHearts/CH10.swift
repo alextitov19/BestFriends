@@ -36,7 +36,7 @@ struct CH10: View {
                 .opacity(0.2)
 
 
-            AdPlayerView(name: "MainPgEarth")
+            AdPlayerView(name: "Planet4")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.7)
