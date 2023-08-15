@@ -65,16 +65,8 @@ struct CH6: View {
                         .opacity(0.9)
                         .ignoresSafeArea()
                       
-                      Image("CHHearts 1")
-                          .ignoresSafeArea()
-                          .scaledToFit()
-                          .opacity(0.15)
-//                          .onAppear()
-
-
-                         
-                      
-                      AdPlayerView(name: "Planet3")
+                   
+                      AdPlayerView(name: "Planet4")
                           .ignoresSafeArea()
                           .blendMode(.screen)
                           .opacity(0.6)
