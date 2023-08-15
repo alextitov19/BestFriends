@@ -61,7 +61,7 @@ struct CH6: View {
                           .scaledToFit()
                           .opacity(0.1)
                       
-                      Color.black
+                      ColorManager .grey3
                         .opacity(0.9)
                         .ignoresSafeArea()
 //
@@ -72,10 +72,10 @@ struct CH6: View {
 //                          .opacity(0.2)
 ////                          .foregroundColor(.white)
                    
-                      AdPlayerView(name: "Planet3A")
-                          .ignoresSafeArea()
-                          .blendMode(.screen)
-                          .opacity(0.6)
+//                      AdPlayerView(name: "Planet3A")
+//                          .ignoresSafeArea()
+//                          .blendMode(.screen)
+//                          .opacity(0.6)
             }
             
             VStack{

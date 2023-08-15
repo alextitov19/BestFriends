@@ -399,7 +399,7 @@ struct RR12: View {
                                 .background(ColorManager .grey2)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your Custome CareHeart has been sent. \n\nYour friend will be notified of your message in Chat and asked to 'shake' their iPhone to get your PhotoPOP", isPresented: $showingAlert) {
+                                .alert("Your Custome CareHeart has been sent. \n\nSoon you can draw your own CareHeart (Q:4 2023)", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
