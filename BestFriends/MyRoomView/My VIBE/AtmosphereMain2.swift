@@ -252,24 +252,7 @@ struct AtmosphereMain2: View {
                         
                         Spacer()
                               .frame(height: 12)
-//
-//                        Button(action: {
-//                            mood = 9
-//                        }) {
-//
-//                            Text("Need to TALK!")
-//                                .font(.system(size: 10))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 140, height: 30, alignment: .center)
-//                        .background(mood == 9 ? Color.red : ColorManager .grey4)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        .alert("We are sending out Push Notifications to your freinds. \n\nWe will do our best to track down your friends for you.", isPresented: $showingAlert) {
-//                            Button("OK", role: .cancel, action: {
-//                                showingAlert = false
-//
-                        
+                   
                     }
                     Spacer ()
                         .frame(width: 33)
@@ -359,76 +342,7 @@ struct AtmosphereMain2: View {
 //                            .frame(height: 25)
                         
                         HStack {
-                            
-//                            VStack {
-//
-//                                Button(action: {
-//                                    sessionManager.showLogin()
-//                                },
-//                                       label: {
-//                                    Image("home-alt2")
-//                                        .frame(width: 50, height: 25)
-//                                        .foregroundColor(.white)
-//                                        .font(.system(size: 20))
-//                                        .background(Color .black)
-//                                        .cornerRadius(15)
-//                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                                        .opacity(0.70)
-//
-//                                })
-//
-//                            }
-//                            Button(action: {
-//                                sessionManager.showLogin()
-//                            },
-//                                   label: {
-//                                Image("FaceTime")
-//                                    .frame(width: 5, height: 5)
-//                            })
-//                                Spacer()
-//                                    .frame(width: 15)
-//
-//                            //
-//                            Button(action: {
-//                                sessionManager.showLogin()
-//                            },
-//                                   label: {
-//                                Image("home-alt2")
-//                                    .frame(width: 50, height: 25)
-//                                    .foregroundColor(.white)
-//                                    .font(.system(size: 20))
-//                                    .background(Color .black)
-//                                    .cornerRadius(15)
-//                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                                    .opacity(0.70)
-//
-//                            })
-//
-//                            Spacer()
-//                                .frame(width: 15)
-//
-//
-//                            Button(action: {
-//                                sessionManager.showLogin()
-//                            },
-//                                   label: {
-//                                Image("download")
-//                                    .frame(width: 5, height: 5)
-////                                    .foregroundColor(.white)
-////                                    .font(.system(size: 20))
-////                                    .background(Color .black)
-////                                    .cornerRadius(15)
-////                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-////                                    .opacity(0.70)
-//
-//                            })
-                            
-                            
-                            
-                            
-                            
-                            
-                           
+                             
                         }
 
                         Spacer()
