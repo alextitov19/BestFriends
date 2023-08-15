@@ -90,6 +90,18 @@ struct CH10: View {
                     .shadow(color: Color .pink, radius: 10, x: 10, y: 10)
                     .opacity(0.7)
                     
+                    NavigationLink(destination: CH6(user: user, friends: friends, groups: groups), label: {
+                        HugCircle (color: ColorManager .orange2, friendName: "Look! You got \n 'Hearts'")
+                    })
+                    .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                    
+                    .opacity(0.7)
+                    
+                }
+                
+                HStack {
+                    
                     NavigationLink(destination: VirtualHug(user: user, friends: friends), label: {
                         HugCircle (color: ColorManager.orange5, friendName: "Grab your \n'HUG'")
                     })
@@ -98,16 +110,7 @@ struct CH10: View {
                     //                    .opacity(0.6)
                     .opacity(0.7)
                     
-                }
-                
-                HStack {
-                    NavigationLink(destination: CH6(user: user, friends: friends, groups: groups), label: {
-                        HugCircle (color: ColorManager .orange2, friendName: "Look! You got \n 'Hearts'")
-                    })
-                    .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
-                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-                    
-                    .opacity(0.7)
+                  
                     
                     
                     NavigationLink(destination: CH7(user: user, friend: user, friends: friends, groups: groups), label: {
