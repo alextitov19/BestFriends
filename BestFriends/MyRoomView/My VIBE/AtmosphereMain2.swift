@@ -208,7 +208,7 @@ struct AtmosphereMain2: View {
                           showingAlert = true
                         }) {
 
-                           Text("Ugg. Friend Drama")
+                           Text("Friend Drama")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -233,7 +233,7 @@ struct AtmosphereMain2: View {
                             showingAlert = true
                         }) {
 
-                            Text("School's stressing me")
+                            Text("Ugg. Feeling a little \ndown today")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -315,29 +315,41 @@ struct AtmosphereMain2: View {
 //                        .frame(width: 20)
                     
                     VStack {
+                        
+                        Text("Shows as 'green' & 'yellow'")
+                            .font(.system(size: 10))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+                        
+                        
+                        Text("atmosphere around your planet")
+                            .font(.system(size: 10))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+                        
+
+                        Button(action: {
+                            mood = 6
+                        }) {
+                            Spacer()
+                                .frame(width: 10)
+
+                            Text("Can't wait to tell \nyou my Good News")
+                                .font(.system(size: 10))
+                                .foregroundColor(Color.black)
+                        }
+                        .frame(width: 140, height: 30, alignment: .center)
+                        .background(mood == 6 ? Color(.systemYellow) : ColorManager .orange3)
+                        .cornerRadius(7)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
 //
-//                        Button(action: {
-//                            mood = 6
-//                        }) {
-//                            Spacer()
-//                                .frame(width: 10)
-//
-//                            Text("Ready to talk")
-//                                .font(.system(size: 10))
-//                                .foregroundColor(Color.black)
-//
-//
-//
-//
-//
-//
-//                        }
-//                        .frame(width: 100, height: 80, alignment: .center)
-//                        .background(mood == 6 ? Color(.systemYellow) : Color .yellow)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-////
 //                        Spacer()
 //                            .frame(height: 25)
                         
@@ -414,23 +426,8 @@ struct AtmosphereMain2: View {
                            
                         }
 
-                        Text("Shows as 'green' & 'yellow'")
-                            .font(.system(size: 10))
-                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                        
-                        
-                        
-                        Text("atmosphere around your planet")
-                            .font(.system(size: 10))
-                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                        
-                        
+                        Spacer()
+                            .frame(height: 12)
                         
                         Button(action: {
                             mood = 7
@@ -454,7 +451,7 @@ struct AtmosphereMain2: View {
                             showingAlert = true
                         }) {
 
-                            Text("Great Day - yes, yes, yes!")
+                            Text("Wow, what a \nGREAT day!")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -477,7 +474,7 @@ struct AtmosphereMain2: View {
                             showingAlert = true
                         }) {
 
-                            Text("I really need to TALK!")
+                            Text("Not good. \nI really need to TALK!")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.white)
                         }
@@ -518,7 +515,7 @@ struct AtmosphereMain2: View {
                             
 //         ********************************************************
                             
-                            Text("When sending a notification")
+                            Text("When you send a notification")
                                .italic()
                                 .font(.system(size: 17))
                                 .fontWeight(.thin)
