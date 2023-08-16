@@ -161,31 +161,27 @@ struct MyRoomView: View {
                 //                ******************************* In-app notifications ******************
                 
                 VStack {
-                    
-
+             
                             ZStack {
                                 
                                 Button(action: {
                                     sessionManager.showLogin()
                                 },
                                        label: {
-                                    
-                            
-                                   
+                                 
                                 ZStack{
-                                    
-                                    
+                                 
                                     Image(systemName: "bell")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 19, height: 19)
+                                        .frame(width: 20, height: 20)
                                         .foregroundColor(Color.white)
                                     
                                     
                                     Image(systemName: "heart")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 43, height: 43)
+                                        .frame(width: 50, height: 50)
                                         .foregroundColor(Color.red)
                                         .glow(color: ColorManager.purple4, radius: 3)
                                         .opacity(0.5)
@@ -193,7 +189,7 @@ struct MyRoomView: View {
                                     
                                     
                                     Text(". \nnew CareHearts")
-                                        .fontWeight(.thin)
+                                        .fontWeight(.light)
                                         .foregroundColor(Color.white)
                                 
                                     }
