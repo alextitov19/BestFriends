@@ -711,13 +711,25 @@ struct MyRoomView: View {
                                 }
                                 
                                 HStack {
+                                    
+                                    Image(systemName: "")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 37, height: 37)
+                                        .opacity(0.5)
+                                        .foregroundColor(.black)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                    
+                                    Spacer ()
+                                        .frame(width: 180)
+                                 
                                     ZStack {
 
                                         Image(systemName: "heart.fill")
                                             .resizable()
                                             .foregroundColor(ColorManager .grey3)
                                             .frame(width: 85, height: 65)
-                                            .rotationEffect(.degrees(-7))
+                                            .rotationEffect(.degrees(7))
                                             .shadow(color: .white, radius: 2, x: -2, y: 2)
                                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                             .opacity(0.99)
@@ -729,16 +741,11 @@ struct MyRoomView: View {
                                                 .fontWeight(.light)
                                                 .foregroundColor(Color.black)
                                                 .font(.system(size: 11))
-                                                .rotationEffect(.degrees(-7))
+                                                .rotationEffect(.degrees(7))
                                                 .opacity(0.85)
 
                                         }
-                                    }
-
-                                    Spacer ()
-                                        .frame(width: 220)
-
-
+                                    }   
                                 }
                             }
                         }
