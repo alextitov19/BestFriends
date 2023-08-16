@@ -145,7 +145,7 @@ struct Step4_NuclearOption: View {
                             
                                 Link(destination: URL(string: "https://socialtechlabs.com/understanding-the-why/")!) {
                                     
-                                    Text("Keep relationship?")
+                                    Text("Keep Relationship?")
                                         .fontWeight(.light)
                                         .frame(width: 170, height: 40)
                                         .foregroundColor(Color.white)

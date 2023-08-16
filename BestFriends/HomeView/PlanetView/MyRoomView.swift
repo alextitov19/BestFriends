@@ -532,7 +532,7 @@ struct MyRoomView: View {
                                             
                                 NavigationLink( destination:  EmptyView(),
                                                 label: {
-                                    Text("comming \nQ:4 2023")
+                                    Text("coming \nQ:4 2023")
                                         .fontWeight(.regular)
                                         .frame(width: 120, height: 45)
                                         .foregroundColor(ColorManager .purple5)

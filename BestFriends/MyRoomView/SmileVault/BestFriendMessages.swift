@@ -132,7 +132,7 @@ struct BestFriendMessages: View {
                         Spacer ()
                             .frame(height: 57)
                     
-                        Text("Easliy see your favorite messages \nin SmileVault")
+                        Text("Easily see your favorite messages \nin SmileVault")
                             .font(.system(size: 15))
                             .italic()
                             .foregroundColor(ColorManager.grey2)
