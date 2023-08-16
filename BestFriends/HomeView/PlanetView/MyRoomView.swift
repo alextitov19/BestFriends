@@ -745,12 +745,14 @@ struct MyRoomView: View {
                                                 .opacity(0.85)
 
                                         }
-                                    }   
+                                    }
                                 }
                             }
                         }
                     }
 
+                    Spacer()
+                        .frame(width: 150)
                     
                     
                     
@@ -786,11 +788,11 @@ struct MyRoomView: View {
 //                                        .background(Color.white)
 //                                        .cornerRadius(10)
 //                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+////
+////
+//                                    Spacer()
+//                                        .frame(height: 10)
 //
-//
-                                    Spacer()
-                                        .frame(height: 10)
-                                    
                                     HStack {
                                         
                                         VStack {
@@ -808,9 +810,9 @@ struct MyRoomView: View {
 //                                            })
 //
                                         }
-                                        
-                                        Spacer()
-                                            .frame(width: 37)
+//
+//                                        Spacer()
+//                                            .frame(width: 37)
 //
 //                                        VStack {
 //
@@ -824,8 +826,9 @@ struct MyRoomView: View {
 //
 //                                            })
 //
-                                            
-                                            
+                                  
+                                     
+                                      
                                         }
                                     }
                                 }
