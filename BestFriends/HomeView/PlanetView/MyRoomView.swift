@@ -166,30 +166,53 @@ struct MyRoomView: View {
                         
                         HStack {
                             
-                            VStack {
+//                            VStack {
                                 
                                 ZStack {
                                     
-                                    
-                                    NavigationLink(destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
-                                                    label: {
-                                        Text("Check Notifications \nfor CareHearts")
-                                            .fontWeight(.bold)
-                                            .frame(width: 300, height: 42)
-                                            .foregroundColor(Color.black)
-                                            .font(.system(size: 16))
-                                            .background(Color.pink)
-                                            .glow(color: ColorManager.purple1, radius: 1)
-                                            .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                            .opacity(0.75)
-                                            .cornerRadius(15)
-                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                    Button(action: {
+                                        sessionManager.showLogin()
+                                    },
+                                           label: {
+                                        
+                                        ZStack{
+                                            
+                                            
+                                            Image(systemName: "bell")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 19, height: 19)
+                                                .foregroundColor(Color.white)
+                                            
+                                            
+                                            Image(systemName: "heart")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 43, height: 43)
+                                                .foregroundColor(Color.red)
+                                                .glow(color: ColorManager.purple4, radius: 3)
+                                                .opacity(0.5)
+                                        }
                                     })
-                                    
-                                    Spacer ()
-                                        .frame(width: 100)
-                                    HStack {
-                                        ZStack {
+                                }
+//
+//                                        Text("Check Notifications \nfor CareHearts")
+//                                            .fontWeight(.bold)
+//                                            .frame(width: 300, height: 42)
+//                                            .foregroundColor(Color.black)
+//                                            .font(.system(size: 16))
+//                                            .background(Color.pink)
+//                                            .glow(color: ColorManager.purple1, radius: 1)
+//                                            .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                            .opacity(0.75)
+//                                            .cornerRadius(15)
+//                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                    })
+//
+//                                    Spacer ()
+//                                        .frame(width: 100)
+//                                    HStack {
+//                                        ZStack {
                                             
 //                                            Image(systemName: "heart.fill")
 //                                                .resizable()
@@ -212,38 +235,38 @@ struct MyRoomView: View {
                                                 
                                                 ZStack {
                                                     
-                                                    
-                                                    Image(systemName: "bell")
-                                                        .resizable()
-                                                        .scaledToFit()
-                                                        .frame(width: 19, height: 19)
-                                                        .foregroundColor(Color.white)
-                                                    
-                                                
-                                                    Image(systemName: "heart")
-                                                        .resizable()
-                                                        .scaledToFit()
-                                                        .frame(width: 43, height: 43)
-                                                        .foregroundColor(Color.red)
-                                                        .glow(color: ColorManager.purple4, radius: 3)
-                                                        .opacity(0.5)
-                                                        .onTapGesture {
-                                                            print("Clicked notification bell")
-                                                            presentingIANs.toggle()
-                                                        }
-                                                    
-                                                    NavigationLink(destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres), isActive: $inviteClicked
-                                                    ) { EmptyView() }
-                                                }
-                                                
-                                                
-                                            }
-                                        }
+//
+//                                                    Image(systemName: "bell")
+//                                                        .resizable()
+//                                                        .scaledToFit()
+//                                                        .frame(width: 19, height: 19)
+//                                                        .foregroundColor(Color.white)
+//
+//
+//                                                    Image(systemName: "heart")
+//                                                        .resizable()
+//                                                        .scaledToFit()
+//                                                        .frame(width: 43, height: 43)
+//                                                        .foregroundColor(Color.red)
+//                                                        .glow(color: ColorManager.purple4, radius: 3)
+//                                                        .opacity(0.5)
+//                                                        .onTapGesture {
+//                                                            print("Clicked notification bell")
+//                                                            presentingIANs.toggle()
+//                                                        }
+//
+//                                                    NavigationLink(destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres), isActive: $inviteClicked
+//                                                    ) { EmptyView() }
+//                                                }
+////
+//
+//                                            }
+//                                        }
                                         
                                    
                                         
                                         
-                                    }
+//                                    }
                                 }
                             }
                         }
@@ -660,9 +683,9 @@ struct MyRoomView: View {
                                                 Spacer()
                                                     .frame(height: 10)
                                                 
-                                                NavigationLink( destination:  EmptyView(),
+                                                NavigationLink( destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                                                 label: {
-                                                    Text("coming \nQ:4 2023")
+                                                    Text("My Dreams \n(Beta)")
                                                         .fontWeight(.regular)
                                                         .frame(width: 120, height: 45)
                                                         .foregroundColor(ColorManager .purple5)
@@ -673,6 +696,7 @@ struct MyRoomView: View {
                                                         .opacity(0.9)
                                                         .cornerRadius(7)
                                                         .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                                  
                                                 })
                                                 
                                                 
@@ -754,12 +778,7 @@ struct MyRoomView: View {
                                                     .frame(width: 120, height: 55)
                                                     .foregroundColor(ColorManager .purple5)
                                                     .font(.system(size: 15))
-                                                //                                                .background(ColorManager .purple1)
-                                                //                                                .glow(color: ColorManager.purple3, radius: 1)
-                                                //                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                                //                                                .opacity(0.9)
-                                                //                                                .cornerRadius(7)
-                                                //                                                .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                              
                                             })
                                             
                                             
