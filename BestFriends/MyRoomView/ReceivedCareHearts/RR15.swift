@@ -87,14 +87,22 @@ struct RR15: View {
                             .frame(width: 250, height: 200)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .opacity(0.5)
-                        
-                        Text("-------")
-                            .font(.system(size: 50))
+                     
+                    
+                    VStack {
+                        Text("Custom")
+                            .font(.system(size: 35))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
+                    
+                    Text("CareHeart")
+                        .font(.system(size: 35))
+                        .foregroundColor(Color.white)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
                     }
-//                }
+                }
                 
                 
                 HStack {
@@ -121,20 +129,20 @@ struct RR15: View {
                     Spacer()
                         .frame(height: 10)
                     
-                    Text("-----------")
-                                            .font(.system(size: 20))
-                                            .foregroundColor(Color.white)
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
-                    
-                    Spacer()
-                        .frame(height: 10)
-                    
-                    Text("------------")
-                                            .font(.system(size: 20))
-                                            .foregroundColor(Color.white)
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
+//                    Text("-----------")
+//                                            .font(.system(size: 20))
+//                                            .foregroundColor(Color.white)
+//                                            .fontWeight(.light)
+//                                            .multilineTextAlignment(.center)
+//                    
+//                    Spacer()
+//                        .frame(height: 10)
+//                    
+//                    Text("------------")
+//                                            .font(.system(size: 20))
+//                                            .foregroundColor(Color.white)
+//                                            .fontWeight(.light)
+//                                            .multilineTextAlignment(.center)
                     
                     Spacer()
                         .frame(height: 30)
