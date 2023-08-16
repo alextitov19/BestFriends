@@ -85,22 +85,26 @@ struct NotificationsView: View {
         let ian: InAppNotification
         var t: String
         
-        @State private var hugActive = false
+        
         @State private var photoPopActive = false
-        @State private var kissesActive = false
-        @State private var heartsActive = false
-        @State private var songActive = false
-        @State private var thanksKissesActive = false
+        @State private var hugActive = false
         @State private var thanksHugActive = false
+        @State private var kissesActive = false
+        @State private var thanksKissesActive = false
+        @State private var heartsActive = false
         @State private var thanksHeartActive = false
+        @State private var songActive = false
         @State private var thanksSongActive = false
         @State private var fixFightActive = false
         @State private var talkCouponActive = false
         @State private var newVibeActive = false
         @State private var needTalkActive = false
         @State private var newArtistActive = false
-        @State private var newCustomActive = false
         
+        @State private var newCustomActive = false
+        @State private var thanksCustomActive = false
+        @State private var newCongratulationsActive = false
+        @State private var thanksCongratulationsActive = false
         
         
         init(ian: InAppNotification, user: User, friends: [User]) {
@@ -154,34 +158,30 @@ struct NotificationsView: View {
                         EmptyView()
                     })
                     
-
-                    
-//                    CH6(user: user, friends: friends, groups: groups)  .. Need this link but get errors
                     
                     NavigationLink(destination: CH9(user: user, friends: friends), isActive: $newCustomActive, label: {
                         EmptyView()
                     })
                     
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $newCongratulationsActive, label: {
+                        EmptyView()
+                    })
+                    
+                    
+                    
+//               ********************** Thanks pages **************************
                     NavigationLink(destination: CH9(user: user, friends: friends), isActive: $thanksKissesActive, label: {
                         EmptyView()
                     })
                     
-                    NavigationLink(destination: PhotoPopView(user: user, friends: friends), isActive: $newVibeActive, label: {
+                    
+                    
+                    NavigationLink(destination: VirtualHug(user: user, friends: friends), isActive: $thanksHugActive, label: {
                         EmptyView()
                     })
                     
-               }
-                
-             
-                
-            
-                
-                
-                
-                NavigationLink(destination: VirtualHug(user: user, friends: friends), isActive: $thanksHugActive, label: {
-                    EmptyView()
-                })
-                
+        }
+                    
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksHeartActive, label: {
                     EmptyView()
                 })
@@ -201,6 +201,17 @@ struct NotificationsView: View {
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksSongActive, label: {
                     EmptyView()
                 })
+                
+                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksCongratulationsActive, label: {
+                    EmptyView()
+                })
+            
+                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksCustomActive, label: {
+                    EmptyView()
+                })
+                
+              
+                
                 
                
                 Color.cyan
@@ -279,6 +290,25 @@ struct NotificationsView: View {
                 
             case "Just send you a Custom CareHeart w/ Chat message & PhotoPOP":
                 newCustomActive = true
+                
+            case "Said thanks for the Custom CareHeart":
+                thanksCustomActive = true
+                
+            case "Just sent you a Congratulations CareHeart":
+                newCongratulationsActive = true
+                
+            case "Just said thank you for the Congratulations":
+                thanksCongratulationsActive = true
+                
+                
+                
+                
+                
+            case "":
+                thanksCongratulationsActive = true
+                
+                
+                
                 
                 
                 

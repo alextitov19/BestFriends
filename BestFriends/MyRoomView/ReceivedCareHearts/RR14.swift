@@ -282,7 +282,7 @@ struct RR14: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("(alert friend)")
+                    Text("(send a thank you)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
@@ -398,7 +398,7 @@ struct RR14: View {
                                 .background(ColorManager .grey2)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your Custome CareHeart has been sent. \n\nSoon you can draw your own CareHeart (Q:4 2023)", isPresented: $showingAlert) {
+                                .alert("Your thank you was sent.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
@@ -449,12 +449,12 @@ struct RR14: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) Just send you a Custom CareHeart w/ Chat message & PhotoPOP", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) Just said thank you for the Congratulations", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Just send you a Custom CareHeart w/ Chat message & PhotoPOP", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                        print("Create a Custom CareHeart notification response code: ", response)
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Just said thank you for the Congratulations", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        print("Create a Congratulations CareHeart notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)
                 }

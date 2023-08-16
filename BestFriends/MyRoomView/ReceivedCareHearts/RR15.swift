@@ -139,7 +139,7 @@ struct RR15: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("(say thanks for thinking about me)")
+                    Text("(say thanks for Custom CareHeart)")
                                             .font(.system(size: 15))
                                             .italic()
                                             .foregroundColor(Color.white)
@@ -329,12 +329,12 @@ struct RR15: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) said thanks for thinking about them and sending the Heart!", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) said thanks for the Custom CareHeart!", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Said thanks for thinking about them and sending the Heart!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                        print("Create a thank you Heart notification response code: ", response)
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Said thanks for the Custom CareHeart!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        print("Create a thanks Custom CareHeart notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)
                 }
