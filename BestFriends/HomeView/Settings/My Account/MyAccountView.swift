@@ -142,24 +142,24 @@ struct MyAccountView: View {
                     
                     Divider()
                     
-                    NavigationLink(
-                        destination: SettingsNotificationsView(user: user),
-                        label: {
-                            HStack {
-                                Text("Change Notifications Status")
-                                    .font(.system(size: 20))
-                                    .foregroundColor(.purple)
-                                    .offset(x: 25)
-                                
-                                Spacer()
-                                
-                                Image("arrowRight")
-                                    .resizable()              .frame(width: 25, height: 25)
-                                    .foregroundColor(.gray)
-                                    .scaledToFit()
-                                //                                 .colorInvert()
-                            }
-                        })
+//                    NavigationLink(
+//                        destination: SettingsNotificationsView(user: user),
+//                        label: {
+//                            HStack {
+//                                Text("Change Notifications Status")
+//                                    .font(.system(size: 20))
+//                                    .foregroundColor(.purple)
+//                                    .offset(x: 25)
+//                                
+//                                Spacer()
+//                                
+//                                Image("arrowRight")
+//                                    .resizable()              .frame(width: 25, height: 25)
+//                                    .foregroundColor(.gray)
+//                                    .scaledToFit()
+//                                //                                 .colorInvert()
+//                            }
+//                        })
                     
                     
                     
