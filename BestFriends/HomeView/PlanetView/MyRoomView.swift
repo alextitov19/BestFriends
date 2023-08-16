@@ -619,68 +619,6 @@ struct MyRoomView: View {
                     
                     
                     
-                    
-                    HStack {
-
-                        VStack {
-
-                            ZStack {
-
-
-
-                                Link(destination: URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSe53lOWm49a8bLvHabb2d7QKAqQf4teai4hTHJSEAT-FtspXw/viewform")!) {
-                                    
-                                    Text("Pre - \n'My Crush' feature")
-                                        .fontWeight(.bold)
-                                        .frame(width: 300, height: 42)
-                                        .foregroundColor(Color.black)
-                                        .font(.system(size: 16))
-                                        .background(Color.purple)
-                                        .glow(color: ColorManager.purple1, radius: 1)
-                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                        .opacity(0.75)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                }
-                                
-                                HStack {
-                                    ZStack {
-
-                                        Image(systemName: "heart.fill")
-                                            .resizable()
-                                            .foregroundColor(ColorManager .grey3)
-                                            .frame(width: 85, height: 65)
-                                            .rotationEffect(.degrees(-7))
-                                            .shadow(color: .white, radius: 2, x: -2, y: 2)
-                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                            .opacity(0.99)
-
-
-                                        Link(destination: URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSe53lOWm49a8bLvHabb2d7QKAqQf4teai4hTHJSEAT-FtspXw/viewform")!) {
-
-                                            Text("3 min \nsurvey")
-                                                .fontWeight(.light)
-                                                .foregroundColor(Color.black)
-                                                .font(.system(size: 11))
-                                                .rotationEffect(.degrees(-7))
-                                                .opacity(0.85)
-
-                                        }
-                                    }
-
-                                    Spacer ()
-                                        .frame(width: 220)
-
-
-                                }
-                            }
-                        }
-                    }
-
-    //      *********************** My Crushes ************************************************
-                    
-//      *********************** My Crushes ************************************************
-                    
                     HStack {
 
                         VStack {
@@ -738,6 +676,74 @@ struct MyRoomView: View {
                         }
                     }
                     
+                    
+                    
+                    
+                    
+                    
+    //      *********************** My Crushes ************************************************
+                    
+//      *********************** My Crushes ************************************************
+                    
+                    
+                    
+                    HStack {
+
+                        VStack {
+
+                            ZStack {
+
+
+
+                                Link(destination: URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSe53lOWm49a8bLvHabb2d7QKAqQf4teai4hTHJSEAT-FtspXw/viewform")!) {
+                                    
+                                    Text("Do you want a \n'My Crush' feature")
+                                        .fontWeight(.bold)
+                                        .frame(width: 300, height: 42)
+                                        .foregroundColor(Color.black)
+                                        .font(.system(size: 16))
+                                        .background(Color.purple)
+                                        .glow(color: ColorManager.purple1, radius: 1)
+                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                        .opacity(0.75)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                }
+                                
+                                HStack {
+                                    ZStack {
+
+                                        Image(systemName: "heart.fill")
+                                            .resizable()
+                                            .foregroundColor(ColorManager .grey3)
+                                            .frame(width: 85, height: 65)
+                                            .rotationEffect(.degrees(-7))
+                                            .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                            .opacity(0.99)
+
+
+                                        Link(destination: URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSe53lOWm49a8bLvHabb2d7QKAqQf4teai4hTHJSEAT-FtspXw/viewform")!) {
+
+                                            Text("3 min \nsurvey")
+                                                .fontWeight(.light)
+                                                .foregroundColor(Color.black)
+                                                .font(.system(size: 11))
+                                                .rotationEffect(.degrees(-7))
+                                                .opacity(0.85)
+
+                                        }
+                                    }
+
+                                    Spacer ()
+                                        .frame(width: 220)
+
+
+                                }
+                            }
+                        }
+                    }
+
                     
                     
                     
