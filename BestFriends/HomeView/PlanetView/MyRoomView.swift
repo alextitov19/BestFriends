@@ -201,9 +201,9 @@ struct MyRoomView: View {
                
                     //      Accessorizing ************************************************************
                     
-                    VStack {
+
                         
-                        VStack {
+
                             
                             HStack {
                                 
@@ -261,12 +261,13 @@ struct MyRoomView: View {
                                     }
                                 }
                             }
-                        }
+
                         
                         
                         
-                        //     CareHearts ******************************************************
-                        
+    //     CareHearts ******************************************************
+                           
+                           //     CareHearts ******************************************************
                         
                         VStack {
                             
@@ -308,26 +309,7 @@ struct MyRoomView: View {
                                                     
                                                 })
                                                 
-                                                //                                        Spacer()
-                                                //                                            .frame(height: 10)
-                                                
-                                                //                                        NavigationLink( destination:  CH10(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
-                                                //                                                        label: {
-                                                //                                            Text("Received")
-                                                //                                                .fontWeight(.regular)
-                                                //                                                .frame(width: 85, height: 30)
-                                                //                                                .foregroundColor(ColorManager .purple5)
-                                                //                                                .font(.system(size: 15))
-                                                //                                                .background(ColorManager .purple1)
-                                                //                                                .glow(color: ColorManager.purple3, radius: 1)
-                                                //                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                                //                                                .opacity(0.9)
-                                                //                                                .cornerRadius(7)
-                                                //                                                .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-                                                //                                        })
-                                                
-                                                
-                                                
+                                              
                                             }
                                             
                                             Spacer()
@@ -409,7 +391,7 @@ struct MyRoomView: View {
                                 }
                             }
                         }
-                    }
+
                     
                     Spacer()
                         .frame(height: 15)
