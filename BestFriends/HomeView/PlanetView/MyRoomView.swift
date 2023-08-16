@@ -162,121 +162,47 @@ struct MyRoomView: View {
                 
                 VStack {
                     
-                    VStack {
-                        
-                        HStack {
-                            
-//                            VStack {
+
+                            ZStack {
                                 
-                                ZStack {
+                                Button(action: {
+                                    sessionManager.showLogin()
+                                },
+                                       label: {
                                     
-                                    Button(action: {
-                                        sessionManager.showLogin()
-                                    },
-                                           label: {
-                                        
-                                        ZStack{
-                                            
-                                            
-                                            Image(systemName: "bell")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 19, height: 19)
-                                                .foregroundColor(Color.white)
-                                            
-                                            
-                                            Image(systemName: "heart")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 43, height: 43)
-                                                .foregroundColor(Color.red)
-                                                .glow(color: ColorManager.purple4, radius: 3)
-                                                .opacity(0.5)
-                                        }
-                                    })
-                                }
-//
-//                                        Text("Check Notifications \nfor CareHearts")
-//                                            .fontWeight(.bold)
-//                                            .frame(width: 300, height: 42)
-//                                            .foregroundColor(Color.black)
-//                                            .font(.system(size: 16))
-//                                            .background(Color.pink)
-//                                            .glow(color: ColorManager.purple1, radius: 1)
-//                                            .shadow(color: .white, radius: 3, x: -4, y: 4)
-//                                            .opacity(0.75)
-//                                            .cornerRadius(15)
-//                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//                                    })
-//
-//                                    Spacer ()
-//                                        .frame(width: 100)
-//                                    HStack {
-//                                        ZStack {
-                                            
-//                                            Image(systemName: "heart.fill")
-//                                                .resizable()
-//                                                .foregroundColor(Color.purple)
-//                                                .frame(width: 80, height: 60)
-//                                                .rotationEffect(.degrees(-7))
-//                                                .shadow(color: .white, radius: 2, x: -2, y: 2)
-//                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//                                                .opacity(0.99)
-//
-//
-//                                            Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
-//
-//                                                Text("first \nsupportive \ninfluencers")
-//                                                    .fontWeight(.light)
-//                                                    .foregroundColor(Color.black)
-//                                                    .font(.system(size: 9))
-//                                                    .rotationEffect(.degrees(-7))
-//                                                    .opacity(0.85)
-                                                
-                                                ZStack {
-                                                    
-//
-//                                                    Image(systemName: "bell")
-//                                                        .resizable()
-//                                                        .scaledToFit()
-//                                                        .frame(width: 19, height: 19)
-//                                                        .foregroundColor(Color.white)
-//
-//
-//                                                    Image(systemName: "heart")
-//                                                        .resizable()
-//                                                        .scaledToFit()
-//                                                        .frame(width: 43, height: 43)
-//                                                        .foregroundColor(Color.red)
-//                                                        .glow(color: ColorManager.purple4, radius: 3)
-//                                                        .opacity(0.5)
-//                                                        .onTapGesture {
-//                                                            print("Clicked notification bell")
-//                                                            presentingIANs.toggle()
-//                                                        }
-//
-//                                                    NavigationLink(destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres), isActive: $inviteClicked
-//                                                    ) { EmptyView() }
-//                                                }
-////
-//
-//                                            }
-//                                        }
-                                        
+                            
                                    
-                                        
-                                        
-//                                    }
-                                }
+                                ZStack{
+                                    
+                                    
+                                    Image(systemName: "bell")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 19, height: 19)
+                                        .foregroundColor(Color.white)
+                                    
+                                    
+                                    Image(systemName: "heart")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 43, height: 43)
+                                        .foregroundColor(Color.red)
+                                        .glow(color: ColorManager.purple4, radius: 3)
+                                        .opacity(0.5)
+                                    
+                                    
+                                    
+                                    Text(". \nnew CareHearts")
+                                        .fontWeight(.thin)
+                                        .foregroundColor(Color.white)
+                                
+                                    }
+                                })
+                               
                             }
-                        }
-//                    }
-                    
-                    
-                    
-                    
-                    
-                    
+
+
+               
                     //      Accessorizing ************************************************************
                     
                     VStack {
