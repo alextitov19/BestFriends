@@ -332,7 +332,7 @@ struct HugPushNotification: View {
                                 .opacity(0.9)
                             
                             
-                            Text("Send a PhotoPOP \nof a fun time \ntogether.")
+                            Text("Send a PhotoPOP \nof a fun time \ntogether")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .font(.system(size: 13))

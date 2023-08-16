@@ -40,7 +40,7 @@ struct CustomizeMyPlanetView: View {
 //                    })
 //                
                 
-                Text("Customize my planets")
+                Text("Customize my planet")
                 
                 HStack {
                     PlanetCard(planetName: "Earth", planetNumber: 0, atmosphere: atmosphere, selectedPlanet: $selectedPlanet)

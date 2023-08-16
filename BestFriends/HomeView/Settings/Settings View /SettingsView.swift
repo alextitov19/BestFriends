@@ -85,7 +85,7 @@ struct SettingsView: View {
                     destination: CustomizeMyPlanetView(user: user, atmosphere: atmosphere),
                     label: {
                         HStack {
-                            Text("Select Planet type")
+                            Text("Select Planet Type")
                                 .font(.system(size: 20))
                                 .foregroundColor(.purple)
                             
@@ -358,7 +358,7 @@ struct SettingsView: View {
                             .frame(width: 150, height: 70)
       
                       
-                        Text("Disclaimer: The BestFriends app does not claim to offer clinical or professional psychological advice to the users. BestFriends strives to make friends better friends and help users during difficult times connect with friends and celebrate good times. If users are experiencing depression we recommend you consult a professional.")
+                        Text("Disclaimer: The BestFriends app does not claim to offer clinical or professional psychological advice to the users. BestFriends strives to make friends better friends and help users during difficult times connect with friends and celebrate good times. If users are experiencing depression, we recommend you consult a professional.")
                             .font(.system(size: 10))
                             .foregroundColor(.white)
                         

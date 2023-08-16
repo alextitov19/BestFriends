@@ -233,7 +233,7 @@ struct AtmosphereMain2: View {
                             showingAlert = true
                         }) {
 
-                            Text("Ugg. Feeling a little \ndown today")
+                            Text("Ugh. Feeling a little \ndown today")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }

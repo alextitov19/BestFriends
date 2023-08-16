@@ -114,7 +114,7 @@ struct CH10: View {
                     
                     
                     NavigationLink(destination: CH7(user: user, friend: user, friends: friends, groups: groups), label: {
-                        HugCircle (color: ColorManager .grey1, friendName: "A 'Song' to match \nyour Vibe!")
+                        HugCircle (color: ColorManager .grey1, friendName: "A 'Song' to match \nyour 'Day'!")
                     })
                     .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                     .shadow(color: Color .blue, radius: 10, x: 10, y: 10)

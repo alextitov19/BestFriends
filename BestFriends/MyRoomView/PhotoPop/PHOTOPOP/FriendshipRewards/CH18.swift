@@ -137,7 +137,7 @@ struct CH18: View {
         
                         }
                         
-                        Text("details comming soon")
+                        Text("details coming soon")
                             .font(.system(size: 18))
                             .italic()
                             .foregroundColor(Color.white)
@@ -175,7 +175,7 @@ struct CH18: View {
                             
                         }
                         
-                        Text("details comming soon")
+                        Text("details coming soon")
                             .font(.system(size: 18))
                             .italic()
                             .foregroundColor(Color.white)

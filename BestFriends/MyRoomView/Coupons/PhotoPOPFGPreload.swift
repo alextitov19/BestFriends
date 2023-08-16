@@ -146,7 +146,7 @@ struct PhotoPopFGPreload: View {
                                         TextField("", text: $customMessage)
                                             .placeholder(when: customMessage.isEmpty) {
                                                 HStack {
-                                                    Text("Tap - type in your coupon here")
+                                                    Text("Tap - type in your 'Friendship Coupon' here")
                                                         .foregroundColor(ColorManager.grey4)
                                                         .fontWeight(.thin)
                                                         .background(ColorManager .purple1)
@@ -186,7 +186,7 @@ struct PhotoPopFGPreload: View {
 
                     
                     
-                    Text("Send your friend a Friendship Coupon that next time you are together they can redeem for your gift, like an ice cream, a cheeseburger - what ever you want to give them.")
+                    Text("Send your friend a Friendship Coupon so next time you are together they can redeem for your gift, like an ice cream, a cheeseburger - what ever you want to give them.")
                     
                         .frame(width: 320, height: 115)
                         .foregroundColor(Color.white)
@@ -209,7 +209,7 @@ struct PhotoPopFGPreload: View {
                         Spacer()
                             .frame(height: 15)
                         
-                        Text("Alert friend to look for Coupon in Chat")
+                        Text("Alert friend to look for 'Firendship Coupon' in Chat")
                             .font(.system(size: 17))
                             .fontWeight(.light)
                             .foregroundColor(Color.white)

@@ -399,7 +399,7 @@ struct MyRoomView: View {
                                               
                     NavigationLink( destination:  CH16(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
-                                Text("super \nFriendship \ndays")
+                                Text("super \nfriendship \ndays")
                             .fontWeight(.light)
                             .foregroundColor(Color.black)
                             .font(.system(size: 9))

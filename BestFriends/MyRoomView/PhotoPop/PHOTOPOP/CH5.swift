@@ -93,7 +93,7 @@ struct CH5: View {
                         //                        NavigationLink(
                         //                            destination: PhotoPop3(user: user, friends: friends),
                         //                            label: {
-                        Text("INSTRUCTIONS: \n\n1) tap 'camera' or 'gallery' \n2) select friend \n3) add image \n4) tap [Alert Alert] \n\nNOTE: \nCan only send ONE real-time image \nto ONE friend at a time \n\n\nSENDING NEW IMAGE:  \n1) DELETE' current image (just tap it) \n2) Then repeat above steps.")
+                        Text("INSTRUCTIONS: \n1) tap 'camera' or 'gallery' \n2) select friend \n3) add image \n4) tap [Alert Alert] \n\nNOTE: \nYou can only send ONE real-time image \nto ONE friend at a time \n\n\nSENDING NEW IMAGE:  \n1) DELETE current image (just tap it) \n2) Then repeat above steps.")
                             .fontWeight(.regular)
                             .frame(width: 275, height: 300)
                             .foregroundColor(Color.black)
@@ -105,7 +105,7 @@ struct CH5: View {
                           
                       
                         
-                        Text("(if get 'loading' icon - friend has deleted image)")
+                        Text("(if you get a 'loading' icon - friend has deleted image)")
                             .foregroundColor(Color.white)
                             .italic()
                             .font(.system(size: 14, weight: .light))

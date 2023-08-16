@@ -100,11 +100,7 @@ struct TermsConditionsView: View {
                 Spacer()
                       .frame(height: 80)
                 
-                Text("Safety TIP")
-                    .font(.system(size: 30))
-                    .offset(x: -25)
-                    .foregroundColor(.green)
-                    .frame(height: 50)
+             
                 
                 Text("The BestFriends app does not claim to offer clinical or professional psychological advice to its users. BestFriends strives to strengthen friendships. During difficult times users may connect with their 5 most trusted friends for support. If users are experiencing anxiety, depression, or other mental health issues, we recommend you consult a professional.")
                     .font(.system(size: 20))

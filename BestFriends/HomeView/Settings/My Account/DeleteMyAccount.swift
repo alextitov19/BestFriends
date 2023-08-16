@@ -36,7 +36,7 @@ struct DeleteMyAccount: View {
             }, label: {
   
              
-                Text("Delete My Account")
+                Text("Delete my Account")
                     .fontWeight(.regular)
                     .frame(width: 240, height: 40)
                     .font(.system(size: 20))
