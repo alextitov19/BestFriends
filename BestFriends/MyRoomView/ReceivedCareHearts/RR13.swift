@@ -84,7 +84,40 @@ struct RR13: View {
                     
                             
                             VStack {
-                                
+                                ZStack {
+                                    
+                                    
+                                    Image(systemName: "heart.fill")
+                                        .resizable()
+                                        .foregroundColor(Color.purple)
+                                        .frame(width: 300, height: 230)
+                                        .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                                        .opacity(0.5)
+                                    
+                                    
+                                    
+                                    VStack {
+                                        
+                                        
+                                        Text("Ahhhhh!")
+                                            .font(.system(size: 45))
+                                            .foregroundColor(Color.white)
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
+
+                                        Spacer()
+                                            .frame(height: 10)
+                                        
+                                        Text("You just got Hearts")
+                                            .font(.system(size: 20))
+                                            .foregroundColor(Color.white)
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
+                                        
+                                        
+                                    }
+                                }
+                                   
 //
                             }
                         }
@@ -94,32 +127,7 @@ struct RR13: View {
          
                 VStack {
                     
-                    
-              
-                    
-                    Text("Ahh!")
-                        .font(.system(size: 30))
-                        .foregroundColor(Color.white)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-
-                    Spacer()
-                        .frame(height: 10)
-                    
-                    Text("Your friend was just thinking about you")
-                                            .font(.system(size: 20))
-                                            .foregroundColor(Color.white)
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
-                    
-                    Spacer()
-                        .frame(height: 10)
-                    
-                    Text("and sent you Hearts")
-                                            .font(.system(size: 20))
-                                            .foregroundColor(Color.white)
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
+               
                     
                     Spacer()
                         .frame(height: 30)
