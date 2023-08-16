@@ -203,66 +203,66 @@ struct MyRoomView: View {
                     
 
                         
-
-                            
-                            HStack {
-                                
-                                VStack {
-                                    
-                                    ZStack {
-                                        
-                                        
-                                        NavigationLink( destination:  CH20(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                                        label: {
-                                            Text("Accessorizing \nyour experience")
-                                                .fontWeight(.bold)
-                                                .frame(width: 300, height: 42)
-                                                .foregroundColor(Color.black)
-                                                .font(.system(size: 16))
-                                                .background(Color.purple)
-                                                .glow(color: ColorManager.purple1, radius: 1)
-                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                                .opacity(0.75)
-                                                .cornerRadius(15)
-                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                        })
-                                        
-                                        
-                                        HStack {
-                                            ZStack {
-                                                
-                                                Image(systemName: "heart.fill")
-                                                    .resizable()
-                                                    .foregroundColor(Color.purple)
-                                                    .frame(width: 80, height: 60)
-                                                    .rotationEffect(.degrees(-7))
-                                                    .shadow(color: .white, radius: 2, x: -2, y: 2)
-                                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                                    .opacity(0.99)
-                                                
-                                                
-                                                Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
-                                                    
-                                                    Text("first \nsupportive \ninfluencers")
-                                                        .fontWeight(.light)
-                                                        .foregroundColor(Color.black)
-                                                        .font(.system(size: 9))
-                                                        .rotationEffect(.degrees(-7))
-                                                        .opacity(0.85)
-                                                    
-                                                }
-                                            }
-                                            
-                                            Spacer ()
-                                                .frame(width: 220)
-                                            
-                                            
-                                        }
-                                    }
-                                }
-                            }
-
-                        
+//
+//
+//                            HStack {
+//
+//                                VStack {
+//
+//                                    ZStack {
+//
+//
+//                                        NavigationLink( destination:  CH20(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                                                        label: {
+//                                            Text("Accessorizing \nyour experience")
+//                                                .fontWeight(.bold)
+//                                                .frame(width: 300, height: 42)
+//                                                .foregroundColor(Color.black)
+//                                                .font(.system(size: 16))
+//                                                .background(Color.purple)
+//                                                .glow(color: ColorManager.purple1, radius: 1)
+//                                                .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                                .opacity(0.75)
+//                                                .cornerRadius(15)
+//                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                        })
+//
+//
+//                                        HStack {
+//                                            ZStack {
+//
+//                                                Image(systemName: "heart.fill")
+//                                                    .resizable()
+//                                                    .foregroundColor(Color.purple)
+//                                                    .frame(width: 80, height: 60)
+//                                                    .rotationEffect(.degrees(-7))
+//                                                    .shadow(color: .white, radius: 2, x: -2, y: 2)
+//                                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                                    .opacity(0.99)
+//
+//
+//                                                Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
+//
+//                                                    Text("first \nsupportive \ninfluencers")
+//                                                        .fontWeight(.light)
+//                                                        .foregroundColor(Color.black)
+//                                                        .font(.system(size: 9))
+//                                                        .rotationEffect(.degrees(-7))
+//                                                        .opacity(0.85)
+//
+//                                                }
+//                                            }
+//
+//                                            Spacer ()
+//                                                .frame(width: 220)
+//
+//
+//                                        }
+//                                    }
+//                                }
+//                            }
+//
+//
                         
                         
     //     CareHearts ******************************************************
@@ -615,7 +615,66 @@ struct MyRoomView: View {
                     Spacer()
                         .frame(height: 15)
                     
+              
                     
+                    HStack {
+
+                        VStack {
+
+                            ZStack {
+
+
+                                NavigationLink( destination:  CH20(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                                label: {
+                                    Text("Accessorizing \nyour experience")
+                                        .fontWeight(.bold)
+                                        .frame(width: 300, height: 42)
+                                        .foregroundColor(Color.black)
+                                        .font(.system(size: 16))
+                                        .background(Color.purple)
+                                        .glow(color: ColorManager.purple1, radius: 1)
+                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                        .opacity(0.75)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                })
+
+
+                                HStack {
+                                    ZStack {
+
+                                        Image(systemName: "heart.fill")
+                                            .resizable()
+                                            .foregroundColor(Color.purple)
+                                            .frame(width: 80, height: 60)
+                                            .rotationEffect(.degrees(-7))
+                                            .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                            .opacity(0.99)
+
+
+                                        Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
+
+                                            Text("first \nsupportive \ninfluencers")
+                                                .fontWeight(.light)
+                                                .foregroundColor(Color.black)
+                                                .font(.system(size: 9))
+                                                .rotationEffect(.degrees(-7))
+                                                .opacity(0.85)
+
+                                        }
+                                    }
+
+                                    Spacer ()
+                                        .frame(width: 220)
+
+
+                                }
+                            }
+                        }
+                    }
+
+
                     
                     //      Crush ************************************************
                     
