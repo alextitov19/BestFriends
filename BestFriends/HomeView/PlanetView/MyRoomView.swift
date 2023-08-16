@@ -399,11 +399,7 @@ struct MyRoomView: View {
                     
                     
                     //      PhotoPOP ****************************************************
-                    
-                    
-                    VStack {
-                        
-                        
+
                         VStack {
                             
                             HStack {
@@ -459,7 +455,7 @@ struct MyRoomView: View {
                                                     Text("super \nfriendship \ndays")
                                                         .fontWeight(.light)
                                                         .foregroundColor(Color.black)
-                                                        .font(.system(size: 9))
+                                                        .font(.system(size: 11))
                                                         .rotationEffect(.degrees(7))
                                                         .opacity(0.85)
                                                     
@@ -469,8 +465,8 @@ struct MyRoomView: View {
                                         }
                                     }
                                 }
-                            }
-                        }
+                           }
+
                         
                         
                         
@@ -543,66 +539,68 @@ struct MyRoomView: View {
                                             Spacer()
                                                 .frame(width: 25)
                                             
-                                            VStack {
-                                                
-                                                //************************************ Conteswt or Friendship Highlights ***********
-                                                
-                                                //                NavigationLink( destination:  FH1(user: user, friends: friends, friendAtmospheres: friendAtmospheres),
-                                                //                        label: {
-                                                //                            Text("Highlights")
-                                                
-                                                //                                NavigationLink( destination:  CH11(),
-                                                //                                                label: {
-                                                //                                    Text("Contest")
-                                                
-                                                //                                NavigationLink( destination:  RR9(user: user, friend: user, friends: friends, groups: groups),
-                                                //                                                    label: {
-                                                //                                        Text("Found NEW \nArtist")
-                                                
-                                                
-                                                //************************************ Panic Attack ***********
-                                                
-                                                //                                NavigationLink( destination:  MyFears(user: user, friends: friends),
-                                                //                                                label: {
-                                                //                                    Text("Panic Attack!")
-                                                //************************************ Panic Attack ***********
-                                                
-                                                NavigationLink( destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
-                                                                label: {
-                                                    Text("Friend Drama")
-                                                        .fontWeight(.regular)
-                                                        .frame(width: 120, height: 45)
-                                                        .foregroundColor(ColorManager .purple5)
-                                                        .font(.system(size: 17))
-                                                        .background(ColorManager .purple1)
-                                                        .glow(color: ColorManager.purple3, radius: 1)
-                                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                                        .opacity(0.9)
-                                                        .cornerRadius(7)
-                                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-                                                    
-                                                })
-                                                
-                                                
-                                                Spacer()
-                                                    .frame(height: 10)
-                                                
-                                                NavigationLink( destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                                                label: {
-                                                    Text("My Dreams \n(Beta)")
-                                                        .fontWeight(.regular)
-                                                        .frame(width: 120, height: 45)
-                                                        .foregroundColor(ColorManager .purple5)
-                                                        .font(.system(size: 17))
-                                                        .background(ColorManager .purple1)
-                                                        .glow(color: ColorManager.purple3, radius: 1)
-                                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                                        .opacity(0.9)
-                                                        .cornerRadius(7)
-                                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-                                                  
-                                                })
-                                                
+                VStack {
+                    
+                    
+//************************************ Conteswt or Friendship Highlights ***********
+//
+//                    NavigationLink( destination:  FH1(user: user, friends: friends, friendAtmospheres: friendAtmospheres),
+//                            label: {
+//                                Text("Highlights")
+//
+//                                    NavigationLink( destination:  CH11(),
+//                                                    label: {
+//                                        Text("Contest")
+//
+//                                    NavigationLink( destination:  RR9(user: user, friend: user, friends: friends, groups: groups),
+//                                                        label: {
+//                                            Text("Found NEW \nArtist")
+//
+//
+//    ************************************ Panic Attack ***********
+//
+//                                    NavigationLink( destination:  MyFears(user: user, friends: friends),
+//                                                    label: {
+//                                        Text("Panic Attack!")
+//    ************************************ Panic Attack ***********
+
+
+    NavigationLink( destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+                    label: {
+        Text("Friend Drama")
+            .fontWeight(.regular)
+            .frame(width: 120, height: 45)
+            .foregroundColor(ColorManager .purple5)
+            .font(.system(size: 17))
+            .background(ColorManager .purple1)
+            .glow(color: ColorManager.purple3, radius: 1)
+            .shadow(color: .white, radius: 3, x: -4, y: 4)
+            .opacity(0.9)
+            .cornerRadius(7)
+            .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+        
+    })
+    
+    
+    Spacer()
+        .frame(height: 10)
+    
+    NavigationLink( destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                    label: {
+        Text("My Dreams \n(beta)")
+            .fontWeight(.regular)
+            .frame(width: 120, height: 45)
+            .foregroundColor(ColorManager .purple5)
+            .font(.system(size: 17))
+            .background(ColorManager .purple1)
+            .glow(color: ColorManager.purple3, radius: 1)
+            .shadow(color: .white, radius: 3, x: -4, y: 4)
+            .opacity(0.9)
+            .cornerRadius(7)
+            .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+      
+    })
+    
                                                 
                                             }
                                         }
@@ -615,7 +613,73 @@ struct MyRoomView: View {
                     Spacer()
                         .frame(height: 15)
                     
-              
+//************************************************ Accessorizing Section **************
+                    
+                    //************************************************ Accessorizing Section **************
+                    
+                    
+                    
+                    
+                    HStack {
+
+                        VStack {
+
+                            ZStack {
+
+
+
+                                Link(destination: URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSe53lOWm49a8bLvHabb2d7QKAqQf4teai4hTHJSEAT-FtspXw/viewform")!) {
+                                    
+                                    Text("Pre - \n'My Crush' feature")
+                                        .fontWeight(.bold)
+                                        .frame(width: 300, height: 42)
+                                        .foregroundColor(Color.black)
+                                        .font(.system(size: 16))
+                                        .background(Color.purple)
+                                        .glow(color: ColorManager.purple1, radius: 1)
+                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                        .opacity(0.75)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                }
+                                
+                                HStack {
+                                    ZStack {
+
+                                        Image(systemName: "heart.fill")
+                                            .resizable()
+                                            .foregroundColor(ColorManager .grey3)
+                                            .frame(width: 85, height: 65)
+                                            .rotationEffect(.degrees(-7))
+                                            .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                            .opacity(0.99)
+
+
+                                        Link(destination: URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSe53lOWm49a8bLvHabb2d7QKAqQf4teai4hTHJSEAT-FtspXw/viewform")!) {
+
+                                            Text("3 min \nsurvey")
+                                                .fontWeight(.light)
+                                                .foregroundColor(Color.black)
+                                                .font(.system(size: 11))
+                                                .rotationEffect(.degrees(-7))
+                                                .opacity(0.85)
+
+                                        }
+                                    }
+
+                                    Spacer ()
+                                        .frame(width: 220)
+
+
+                                }
+                            }
+                        }
+                    }
+
+    //      *********************** My Crushes ************************************************
+                    
+//      *********************** My Crushes ************************************************
                     
                     HStack {
 
@@ -655,10 +719,10 @@ struct MyRoomView: View {
 
                                         Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
 
-                                            Text("first \nsupportive \ninfluencers")
+                                            Text("supportive \ninfluencers")
                                                 .fontWeight(.light)
                                                 .foregroundColor(Color.black)
-                                                .font(.system(size: 9))
+                                                .font(.system(size: 11))
                                                 .rotationEffect(.degrees(-7))
                                                 .opacity(0.85)
 
@@ -673,41 +737,44 @@ struct MyRoomView: View {
                             }
                         }
                     }
-
-
                     
-                    //      Crush ************************************************
+                    
+                    
+                    
+                    //      old section ************************************************
+                    
+                    //      Old section ************************************************
                     
                     VStack {
                         
                         ZStack {
-                            
-                            NavigationLink(
-                                destination:  JournalsView(friends: friends),
-                                label: {
-                                    
-                                    Image("thinCrush")
-                                        .resizable()
-                                        .frame(width: 320, height: 170)
-                                        .cornerRadius(20)
-                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                })
+//
+//                            NavigationLink(
+//                                destination:  JournalsView(friends: friends),
+//                                label: {
+//
+//                                    Image("thinCrush")
+//                                        .resizable()
+//                                        .frame(width: 320, height: 170)
+//                                        .cornerRadius(20)
+//                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                })
                             VStack {
                                 
                                 VStack {
                                     
-                                    
-                                    
-                                    Text("Sneak-peak NEW Features")
-                                        .fontWeight(.bold)
-                                        .frame(width: 280, height: 30)
-                                        .foregroundColor(Color.black)
-                                        .font(.system(size: 16))
-                                        .background(Color.white)
-                                        .cornerRadius(10)
-                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                    
-                                    
+//
+//
+//                                    Text("Sneak-peak NEW Features")
+//                                        .fontWeight(.bold)
+//                                        .frame(width: 280, height: 30)
+//                                        .foregroundColor(Color.black)
+//                                        .font(.system(size: 16))
+//                                        .background(Color.white)
+//                                        .cornerRadius(10)
+//                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//
+//
                                     Spacer()
                                         .frame(height: 10)
                                     
@@ -715,35 +782,35 @@ struct MyRoomView: View {
                                         
                                         VStack {
                                             
-                                            
-                                            
-                                            NavigationLink( destination: RR8(),
-                                                            label: {
-                                                Text("My Crush")
-                                                    .fontWeight(.regular)
-                                                    .frame(width: 120, height: 55)
-                                                    .foregroundColor(ColorManager .grey4)
-                                                    .font(.system(size: 15))
-                                                
-                                            })
-                                            
+//
+//
+//                                            NavigationLink( destination: RR8(),
+//                                                            label: {
+//                                                Text("My Crush")
+//                                                    .fontWeight(.regular)
+//                                                    .frame(width: 120, height: 55)
+//                                                    .foregroundColor(ColorManager .grey4)
+//                                                    .font(.system(size: 15))
+//
+//                                            })
+//
                                         }
                                         
                                         Spacer()
                                             .frame(width: 37)
-                                        
-                                        VStack {
-                                            
-                                            NavigationLink( destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                                            label: {
-                                                Text("My Dreams")
-                                                    .fontWeight(.regular)
-                                                    .frame(width: 120, height: 55)
-                                                    .foregroundColor(ColorManager .purple5)
-                                                    .font(.system(size: 15))
-                                              
-                                            })
-                                            
+//
+//                                        VStack {
+//
+//                                            NavigationLink( destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                                                            label: {
+//                                                Text("My Dreams")
+//                                                    .fontWeight(.regular)
+//                                                    .frame(width: 120, height: 55)
+//                                                    .foregroundColor(ColorManager .purple5)
+//                                                    .font(.system(size: 15))
+//
+//                                            })
+//
                                             
                                             
                                         }
@@ -789,7 +856,7 @@ struct MyRoomView: View {
         }
     }
     
-}
+ 
     
     
     
