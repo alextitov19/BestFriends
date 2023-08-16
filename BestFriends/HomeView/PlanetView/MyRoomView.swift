@@ -67,7 +67,7 @@ struct MyRoomView: View {
             //                .blendMode(.screen)
             //                .opacity(0.99)
             
-            AdPlayerView(name: "Planet1A")
+            AdPlayerView(name: "Planet1")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.99)
@@ -90,6 +90,7 @@ struct MyRoomView: View {
                                 .frame(width: 37, height: 37)
                                 .opacity(0.9)
                                 .foregroundColor(.white)
+                                .opacity(0.6)
                         })
                     
                     Spacer ()
@@ -116,6 +117,7 @@ struct MyRoomView: View {
                                             .background(Color.green)
                                             .cornerRadius(10)
                                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                            .opacity(0.6)
                                     })
                                     
                                     Spacer ()
@@ -128,7 +130,7 @@ struct MyRoomView: View {
                                     //                                        .rotationEffect(.degrees())
                                         .shadow(color: .white, radius: 2, x: -2, y: 2)
                                     //                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                        .opacity(0.99)
+                                       
                                 }
                             }
                         }
@@ -147,6 +149,7 @@ struct MyRoomView: View {
                                 .frame(width: 37, height: 37)
                                 .opacity(0.9)
                                 .foregroundColor(.white)
+                                .opacity(0.6)
                         })
                     
                     
@@ -259,6 +262,9 @@ struct MyRoomView: View {
                                         .frame(width: 330, height: 170)
                                         .cornerRadius(20)
                                         .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                        .opacity(0.6)
+                                    
+                                    
                                 })
                             VStack {
                                 
@@ -401,6 +407,7 @@ struct MyRoomView: View {
                                                 .opacity(0.9)
                                                 .cornerRadius(15)
                                                 .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                                .opacity(0.6)
                                         })
                                         
                                         HStack {
@@ -466,6 +473,7 @@ struct MyRoomView: View {
                                                 .frame(width: 335, height: 180)
                                                 .cornerRadius(20)
                                                 .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                                .opacity(0.6)
                                         })
                                     
                                     VStack {
@@ -619,6 +627,7 @@ struct MyRoomView: View {
                                             .opacity(0.75)
                                             .cornerRadius(15)
                                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                            .opacity(0.6)
                                     })
                                     
                                   
@@ -632,7 +641,7 @@ struct MyRoomView: View {
                                                 .rotationEffect(.degrees(-7))
                                                 .shadow(color: .white, radius: 2, x: -2, y: 2)
                                                 .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                                .opacity(0.99)
+                                                .opacity(0.6)
                                             
                                             
                                             Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
