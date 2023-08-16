@@ -81,6 +81,12 @@ struct PhotoPopView: View {
                     .foregroundColor(Color.white)
                     .font(.system(size: 45, weight: .regular))
                     .opacity(0.7)
+                
+                Text("view images by 'shaking' iPhone")
+                    .foregroundColor(Color.white)
+                    .italic()
+                    .font(.system(size: 13, weight: .light))
+                    .opacity(0.7)
               
                 Spacer ()
                     .frame(height: 17)

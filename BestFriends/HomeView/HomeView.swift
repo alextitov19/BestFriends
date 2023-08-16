@@ -86,15 +86,7 @@ struct HomeView: View {
 
                             
                             ZStack {
-                                
-                                
-                                Image(systemName: "bell")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 25, height: 25)
-                                    .foregroundColor(Color.white)
-                                
-                            
+                             
                                 Image(systemName: "heart")
                                     .resizable()
                                     .scaledToFit()
@@ -109,6 +101,15 @@ struct HomeView: View {
                                 
                                 NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
                                 ) { EmptyView() }
+                                
+                                
+                                Image(systemName: "bell")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 35, height: 35)
+                                    .foregroundColor(Color.white)
+                          
+                                
                             }
                          
 //   ****************************************** Trying to make Heart image BLINK ******
