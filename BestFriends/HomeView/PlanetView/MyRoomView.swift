@@ -154,8 +154,7 @@ struct MyRoomView: View {
                 
                 Spacer()
                     .frame(height: 20)
-                
-                
+              
                 
                 
                 //                ******************************* In-app notifications ******************
@@ -686,8 +685,26 @@ struct MyRoomView: View {
                         }
                     }
 
+                    VStack {
+                  
+                        NavigationLink(
+                            
+                            destination: BuiltByTeensView(user: user, friends: friends),
+                            label: {
+                                Text("our story")
+                                    .fontWeight(.regular)
+                                    .frame(width: 80, height: 20)
+                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 13))
+                                    .background(Color.orange)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                
+                            })
+                        
+                    }
                     Spacer()
-                        .frame(width: 150)
+                        .frame(width: 170)
                     
                     
                     
