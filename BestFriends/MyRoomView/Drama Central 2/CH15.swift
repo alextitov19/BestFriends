@@ -86,7 +86,7 @@ struct CH15: View {
                             
                             VStack {
                                 
-                                Text("Did a friend do or say something that's been bugging you all week? \n\nMaybe you're just a little nervious to say something.")
+                                Text("Did a friend do or say something that's been bugging you all week? \n\nMaybe you're just a little nervous to say something.")
                                     .fontWeight(.light)
                                     .frame(width: 380, height: 150)
                                     .foregroundColor(Color.white)

@@ -104,7 +104,7 @@ struct InviteView: View {
                 Spacer()
                     .frame(height: 10)
               
-                Text("Enter friends email (case sensitive)")
+                Text("Enter your friend's email (case sensitive)")
                     .fontWeight(.thin)
                     .foregroundColor(.white)
                     .italic()

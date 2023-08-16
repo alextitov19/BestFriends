@@ -104,7 +104,7 @@ struct CH13: View {
                                     Spacer()
                                         .frame(height: 20)
                                     
-                                    Text("Let's try sending a 'Talk Request' \nto their iPhone screen")
+                                    Text("Let's try sending a 'Talk Request' \nto their iPhone")
                                         .font(.system(size: 20))
                                         .fontWeight(.light)
                                         .foregroundColor(Color.white)
