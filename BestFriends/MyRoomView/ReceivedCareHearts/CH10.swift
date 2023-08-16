@@ -168,7 +168,7 @@ struct CH10: View {
                                     
                                     NavigationLink(destination: RR15(user: user, friends: friends, groups: groups), label: {
                                       
-                                        Text("My Custon \nCareHearts... ")
+                                        Text("Customized \nCareHearts \n(in beta)")
                                             .fontWeight(.thin)
                                             .foregroundColor(Color.black)
                                             .font(.system(size: 20))

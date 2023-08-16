@@ -280,7 +280,7 @@ struct HugPreload: View {
                                 
                                 NavigationLink(destination: CH6(user: user, friends: friends, groups: groups), label: {
                                   
-                                    Text("My Custon \nCareHearts... ")
+                                    Text("Customizing \nCareHearts \n(in beta)")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.black)
                                         .font(.system(size: 20))
