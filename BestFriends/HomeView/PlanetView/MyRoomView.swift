@@ -73,9 +73,7 @@ struct MyRoomView: View {
                 .opacity(0.99)
             
             VStack {
-                
-                Spacer()
-                    .frame(height: 20)
+             
                 
                 HStack {
                     
@@ -155,8 +153,7 @@ struct MyRoomView: View {
                     
                 }
                 
-                Spacer()
-                    .frame(height: 120)
+             
                 
                 
                 
@@ -235,12 +232,6 @@ struct MyRoomView: View {
                         })
                    
                 }
-                
-                
-                
-                
-                
-                
             }
                     
                     
@@ -250,6 +241,9 @@ struct MyRoomView: View {
                     //     CareHearts ******************************************************
                     
                     VStack {
+                        
+                        Spacer()
+                            .frame(height: 60)
                         
                         ZStack {
                             
