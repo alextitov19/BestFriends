@@ -187,11 +187,11 @@ struct CH6: View {
                     VStack {
                    
                      
-                        Text("Sending 'that' Song")
+                        Text("Send your own Custom CareHeaert")
                             .font(.system(size: 43, weight: .light))
                             .foregroundColor(ColorManager .grey1)
                         
-                        Text("when friend is having a really bad day - CareHeart")
+                        Text("tap heart for draw \nsend a message in Chat \n& send a PhotoPOP")
                             .font(.system(size: 15, weight: .light))
                             .italic()
                             .foregroundColor(Color.white)
