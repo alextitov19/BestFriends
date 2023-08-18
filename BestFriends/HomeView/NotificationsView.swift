@@ -283,7 +283,7 @@ struct NotificationsView: View {
             case "Is redeaming ONE 'TalkCoupon'":
                 talkCouponActive = true
                 
-            case "'Day' just changed!":
+            case "'Day' just changed! Check their atmosphere color.":
                 newVibeActive = true
                 
             case "I Need to Talk!":
