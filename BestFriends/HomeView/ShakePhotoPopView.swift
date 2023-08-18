@@ -34,7 +34,7 @@ struct ShakePhotoPopView: View {
                         Button("Save Image") {
                             let imageSaver = ImageSaver()
                             imageSaver.writeToPhotoAlbum(image: image)
-                            clicked = false
+                            clicked = true
                         }
                         .padding()
                     }
