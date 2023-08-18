@@ -12,6 +12,7 @@ struct ShakePhotoPopView: View {
     
     @State private var images: [UIImage] = []
     @State private var isLoading = false
+    @State private var clicked = false
     
     var body: some View {
         ZStack {
@@ -29,11 +30,14 @@ struct ShakePhotoPopView: View {
                             }
                         }
                     
-                    Button("Save Image") {
-                        let imageSaver = ImageSaver()
-                        imageSaver.writeToPhotoAlbum(image: image)
+                    if (!clicked) {
+                        Button("Save Image") {
+                            let imageSaver = ImageSaver()
+                            imageSaver.writeToPhotoAlbum(image: image)
+                            clicked = false
+                        }
+                        .padding()
                     }
-                    .padding()
                 }
                 
             }
