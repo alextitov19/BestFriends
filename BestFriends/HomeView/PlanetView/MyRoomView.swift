@@ -160,7 +160,10 @@ struct MyRoomView: View {
                 //                ******************************* In-app notifications ******************
                 
         VStack {
-                    
+             
+            Spacer()
+                .frame(height: 10)
+            
             HStack {
                 
                 ZStack {
@@ -201,7 +204,7 @@ struct MyRoomView: View {
                     
                 }
                 Spacer()
-                    .frame(width: 120)
+                    .frame(width: 100)
                 
 //                Image(systemName: "")
 //                    .resizable()

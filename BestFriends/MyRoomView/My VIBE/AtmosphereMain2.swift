@@ -299,37 +299,37 @@ struct AtmosphereMain2: View {
                     
                     VStack {
                         
-                        Text("Shows as 'yellow' atmosphere")
-                            .font(.system(size: 10))
-                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
+//                        Text("Shows as 'yellow' atmosphere")
+//                            .font(.system(size: 10))
+//                            .italic()
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(Color.white)
+//
+//
                         
                         
-                        
-                        
-
-                        Button(action: {
-                            mood = 6
-                        }) {
-                            Spacer()
-                                .frame(width: 10)
-
-                            Text("Can't wait to tell \nyou my Good News")
-                                .font(.system(size: 10))
-                                .foregroundColor(Color.black)
-                        }
-                        .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 6 ? Color(.systemYellow) : ColorManager .orange3)
-                        .cornerRadius(7)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        .alert("We'll let your friends know.", isPresented: $showingAlert) {
-                            Button("OK", role: .cancel, action: {
-                                showingAlert = false
-                                
-                    })
-                }
+//
+//                        Button(action: {
+//                            mood = 6
+//                        }) {
+//                            Spacer()
+//                                .frame(width: 10)
+//
+//                            Text("Can't wait to tell \nyou my Good News")
+//                                .font(.system(size: 10))
+//                                .foregroundColor(Color.black)
+//                        }
+//                        .frame(width: 140, height: 30, alignment: .center)
+//                        .background(mood == 6 ? Color(.systemYellow) : ColorManager .orange3)
+//                        .cornerRadius(7)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        .alert("We'll let your friends know.", isPresented: $showingAlert) {
+//                            Button("OK", role: .cancel, action: {
+//                                showingAlert = false
+//
+//                    })
+//                }
 //
 //                        Spacer()
 //                            .frame(height: 25)
@@ -341,18 +341,26 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 12)
                         
-//                        Button(action: {
-//                            mood = 7
-//                        }) {
-//
-//                            Text("I really need to TALK!")
-//                                .font(.system(size: 10))
-//                                .foregroundColor(Color.black)
-//                        }
-//                        .frame(width: 140, height: 30, alignment: .center)
-//                        .background(mood == 7 ? Color.green : Color.red)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        
+                        Text("Shows as 'green' atmosphere")
+                            .font(.system(size: 10))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+                        Button(action: {
+                            mood = 7
+                        }) {
+
+                            Text("I really need to TALK!")
+                                .font(.system(size: 10))
+                                .foregroundColor(Color.black)
+                        }
+                        .frame(width: 140, height: 30, alignment: .center)
+                        .background(mood == 7 ? Color.green : Color.red)
+                        .cornerRadius(7)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
 
                         Spacer()
@@ -360,14 +368,19 @@ struct AtmosphereMain2: View {
                         
                     
                         
-                    
+                        Text("Shows as 'yellow' atmosphere")
+                            .font(.system(size: 10))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
                         
                         Button(action: {
                             mood = 8
                             showingAlert = true
                         }) {
 
-                            Text("My Friends are \nthe BEST!")
+                            Text("Great Day, Great News \nGreat Friends")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -378,34 +391,36 @@ struct AtmosphereMain2: View {
                         .alert("We'll let your friends know.", isPresented: $showingAlert) {
                             Button("OK", role: .cancel, action: {
                                 showingAlert = false
-//                                We are super happy you're having a great day - smile, it's catching.
+                                //                                We are super happy you're having a great day - smile, it's catching.
                                 
-                    })
-                }
-                        Spacer()
-                            .frame(height: 12)
-
-                        Button(action: {
-                            mood = 9
-                            showingAlert = true
-                        }) {
-
-                            Text("Not good. \nI really need to TALK!")
-                                .font(.system(size: 10))
-                                .foregroundColor(Color.white)
+                           
+                            })
+                            //                }
+                            Spacer()
+                                .frame(height: 12)
+                     
+                            
+                            Button(action: {
+                                mood = 9
+                                showingAlert = true
+                            }) {
+                                
+                                Text("Not good. \nI really need to TALK!")
+                                    .font(.system(size: 10))
+                                    .foregroundColor(Color.white)
+                            }
+                            .frame(width: 0, height: 0, alignment: .center)
+                            .background(mood == 9 ? Color(.systemRed) : Color.green)
+                            .cornerRadius(7)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            .alert("We'll let your friends know.", isPresented: $showingAlert) {
+                                Button("OK", role: .cancel, action: {
+                                    showingAlert = false
+                                    
+                                })
+                            }
+                            
                         }
-                        .frame(width: 0, height: 0, alignment: .center)
-                        .background(mood == 9 ? Color(.systemRed) : Color.green)
-                        .cornerRadius(7)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        .alert("We'll let your friends know.", isPresented: $showingAlert) {
-                            Button("OK", role: .cancel, action: {
-                                showingAlert = false
-
-                    })
-                }
-
-
                     }
                     
                  

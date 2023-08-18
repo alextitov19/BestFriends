@@ -100,7 +100,6 @@ struct NotificationsView: View {
         @State private var newVibeActive = false
         @State private var needTalkActive = false
         @State private var newArtistActive = false
-        
         @State private var newCustomActive = false
         @State private var thanksCustomActive = false
         @State private var newCongratulationsActive = false
@@ -166,6 +165,11 @@ struct NotificationsView: View {
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $newCongratulationsActive, label: {
                         EmptyView()
                     })
+                    
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $newVibeActive, label: {
+                        EmptyView()
+                    })
+                    
                     
                     
                     
