@@ -186,28 +186,28 @@ struct CH6: View {
                     
                     VStack {
                    
-                     
-                        Text("Custom CareHearts")
-                            .font(.system(size: 43, weight: .light))
-                            .foregroundColor(ColorManager .grey1)
-                        
-                     
-                        
-                        Text("- tap heart for draw")
-                            .font(.system(size: 15, weight: .light))
-                            .italic()
-                            .foregroundColor(Color.white)
-                        
-                        Text("- send a message in Chat")
-                            .font(.system(size: 15, weight: .light))
-                            .italic()
-                            .foregroundColor(Color.white)
-                        
-                        Text("- send a PhotoPOP")
-                            .font(.system(size: 15, weight: .light))
-                            .italic()
-                            .foregroundColor(Color.white)
-                        
+//
+//                        Text("Custom CareHearts")
+//                            .font(.system(size: 43, weight: .light))
+//                            .foregroundColor(ColorManager .grey1)
+//
+//
+//
+//                        Text("- tap heart for draw")
+//                            .font(.system(size: 15, weight: .light))
+//                            .italic()
+//                            .foregroundColor(Color.white)
+//
+//                        Text("- send a message in Chat")
+//                            .font(.system(size: 15, weight: .light))
+//                            .italic()
+//                            .foregroundColor(Color.white)
+//
+//                        Text("- send a PhotoPOP")
+//                            .font(.system(size: 15, weight: .light))
+//                            .italic()
+//                            .foregroundColor(Color.white)
+//
                         Spacer()
                             .frame(height: 30)
 
@@ -221,7 +221,7 @@ struct CH6: View {
                         Image(systemName: "heart.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 200, height: 150)
+                            .frame(width: 230, height: 170)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .opacity(0.5)
                         
@@ -245,12 +245,36 @@ struct CH6: View {
                                     
                                 })
                             
+                            
+                            Spacer()
+                                .frame(height: 15)
+                            
+                            NavigationLink(
+                                destination:  PhotoPopView(user: user, friends: friends),
+                                label: {
+                                    
+                                    Image(systemName: "camera")
+                                      
+                                       .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 40, height: 40)
+                                        .foregroundColor(Color.cyan)
+                                        .glow(color: ColorManager.purple4, radius: 2)
+                                        .opacity(0.6)
+  
+                                })
+                            
                         }
                          
                             
 
                         }
                     }
+                        
+                        
+                        
+                        Spacer()
+                            .frame(height: 20)
                 
                     Text("(alert friend")
                         .font(.system(size: 15))
@@ -264,7 +288,7 @@ struct CH6: View {
                     VStack {
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 10)
                         
                         
                         HStack {
@@ -370,7 +394,7 @@ struct CH6: View {
                                 .background(ColorManager .grey2)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your Song \nhas been sent to Chat. \n\nWe hope this song helps your friend. \n\nThx for sending it!", isPresented: $showingAlert) {
+                                .alert("Your Custom CareHeart is on it's way! \n\nSend them a message in Chat \nand a PhotoPOP", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
@@ -396,7 +420,7 @@ struct CH6: View {
                             })
                             
                             Spacer()
-                                .frame(height: 150)
+                                .frame(height: 160)
      
                         }
               
@@ -417,12 +441,12 @@ struct CH6: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) just sent you a Song in Chat", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) just sent you a Custome CareHeart", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Just sent you a Song in Chat", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                        print("Create a New Song notification response code: ", response)
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Just sent you a Custome CareHeart. Check for a message in Chat and a PhotoPOP.", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        print("Create a Custom CareHeart notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)
                 }

@@ -330,7 +330,7 @@ struct NotificationsView: View {
             case "I found a New Artist & posted them in Chat":
                 newArtistActive = true
                 
-            case "Just sent you a Custom CareHeart!":
+            case "Just sent you a Custome CareHeart. Check for a message in Chat and a PhotoPOP.":
                 newCustomActive = true
                 
             case "Said thanks for the Custom CareHeart":
