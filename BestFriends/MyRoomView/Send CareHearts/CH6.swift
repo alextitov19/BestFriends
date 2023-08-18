@@ -216,25 +216,25 @@ struct CH6: View {
                         VStack {
                            
                             
-                            
+                            //                            NavigationLink(
+                            //                                destination:  PhotoPopView(user: user, friends: friends),
+                            //                                label: {
+                            //
+                            //                                    Image(systemName: "draw")
+                            //
+                            //                                       .resizable()
+                            //                                        .scaledToFit()
+                            //                                        .frame(width: 40, height: 40)
+                            //                                        .foregroundColor(Color.cyan)
+                            //                                        .glow(color: ColorManager.purple4, radius: 2)
+                            //                                        .opacity(0.6)
+                            //
+                            //                                })
                             
                         }
                          
                             
-//                            NavigationLink(
-//                                destination:  PhotoPopView(user: user, friends: friends),
-//                                label: {
-//
-//                                    Image(systemName: "camera")
-//
-//                                       .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 40, height: 40)
-//                                        .foregroundColor(Color.cyan)
-//                                        .glow(color: ColorManager.purple4, radius: 2)
-//                                        .opacity(0.6)
-//
-//                                })
+
                         }
                     }
                 

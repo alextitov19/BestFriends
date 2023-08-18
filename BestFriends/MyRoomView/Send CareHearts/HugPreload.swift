@@ -278,7 +278,7 @@ struct HugPreload: View {
                                     .opacity(0.5)
                                 
                                 
-                                NavigationLink(destination: CH6(user: user, friends: friends, groups: groups), label: {
+                                NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
                                   
                                     Text("Customizing \nCareHearts \n(in beta)")
                                         .fontWeight(.thin)

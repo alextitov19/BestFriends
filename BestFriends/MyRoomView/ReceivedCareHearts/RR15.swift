@@ -282,7 +282,7 @@ struct RR15: View {
                                 Spacer()
                                     .frame(height: 20)
                                                                       
-                                NavigationLink( destination:  CH6(user: user, friends: friends, groups: groups),
+                                NavigationLink( destination:  CH6(user: user, friend: user, friends: friends, groups: groups),
                                                 label: {
                                     Text("Send Custom CareHeart back")
                                         .fontWeight(.bold)
