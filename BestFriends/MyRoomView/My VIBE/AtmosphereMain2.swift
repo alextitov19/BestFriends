@@ -94,25 +94,7 @@ struct AtmosphereMain2: View {
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
-//
-//                        Spacer()
-//                            .frame(height: 10)
-//
-//
-//                        Text("But maybe you're just not ready")
-//                            .font(.system(size: 17))
-//                            .italic()
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(Color.white)
-//
-//                        Text("to talk about it yet.")
-//                            .font(.system(size: 17))
-//                            .italic()
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(Color.white)
-                        
+
                         
                         Spacer()
                             .frame(height: 25)
@@ -124,14 +106,7 @@ struct AtmosphereMain2: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
               
-//
-//                        Text("CareHearts")
-//                            .font(.system(size: 25))
-////                            .italic()
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(Color.white)
-                        
+
                         Spacer()
                             .frame(height: 30)
    
@@ -170,12 +145,8 @@ struct AtmosphereMain2: View {
                         Button(action: {
                             mood = 0
                         }) {
-                            
-                    
+                     
                     }
-
-                   
-
                         Button(action: {
                             mood = 1
                             showingAlert = true
@@ -400,25 +371,25 @@ struct AtmosphereMain2: View {
                                 .frame(height: 12)
                      
                             
-                            Button(action: {
-                                mood = 9
-                                showingAlert = true
-                            }) {
-                                
-                                Text("Not good. \nI really need to TALK!")
-                                    .font(.system(size: 10))
-                                    .foregroundColor(Color.white)
-                            }
-                            .frame(width: 0, height: 0, alignment: .center)
-                            .background(mood == 9 ? Color(.systemRed) : Color.green)
-                            .cornerRadius(7)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            .alert("We'll let your friends know.", isPresented: $showingAlert) {
-                                Button("OK", role: .cancel, action: {
-                                    showingAlert = false
-                                    
-                                })
-                            }
+//                            Button(action: {
+//                                mood = 9
+//                                showingAlert = true
+//                            }) {
+//
+//                                Text("Need my Friends")
+//                                    .font(.system(size: 10))
+//                                    .foregroundColor(Color.white)
+//                            }
+//                            .frame(width: 0, height: 0, alignment: .center)
+//                            .background(mood == 9 ? Color(.systemRed) : Color.green)
+//                            .cornerRadius(7)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            .alert("We'll let your friends know.", isPresented: $showingAlert) {
+//                                Button("OK", role: .cancel, action: {
+//                                    showingAlert = false
+//
+//                                })
+//                            }
                             
                         }
                     }
@@ -443,24 +414,24 @@ struct AtmosphereMain2: View {
                             
                            
                             
-                            Button(action: {
-                                mood = 7
-                            }) {
-
-                                Text("I really need to TALK! \n(shows as 'green' atmosphere)")
-                                    .font(.system(size: 10))
-                                    .foregroundColor(Color.black)
-                            }
-                            .frame(width: 150, height: 35, alignment: .center)
-                            .background(mood == 7 ? Color.green : Color.red)
-                            .cornerRadius(7)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            .alert("We'll let your friends know.", isPresented: $showingAlert) {
-                                Button("OK", role: .cancel, action: {
-                                    showingAlert = false
-
-                        })
-                    }
+//                            Button(action: {
+//                                mood = 7
+//                            }) {
+//
+//                                Text("I really need to TALK! \n(shows as 'green' atmosphere)")
+//                                    .font(.system(size: 10))
+//                                    .foregroundColor(Color.black)
+//                            }
+//                            .frame(width: 150, height: 35, alignment: .center)
+//                            .background(mood == 7 ? Color.green : Color.red)
+//                            .cornerRadius(7)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            .alert("We'll let your friends know.", isPresented: $showingAlert) {
+//                                Button("OK", role: .cancel, action: {
+//                                    showingAlert = false
+//
+//                        })
+//                    }
                          
                             
                             Spacer()
@@ -472,14 +443,14 @@ struct AtmosphereMain2: View {
                             
                             Text("When you send a notification")
                                .italic()
-                                .font(.system(size: 17))
+                                .font(.system(size: 15))
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
                             
                             Text("your planet's atmosphere color changes")
                                .italic()
-                                .font(.system(size: 17))
+                                .font(.system(size: 15))
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
