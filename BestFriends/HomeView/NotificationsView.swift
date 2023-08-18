@@ -149,46 +149,88 @@ struct NotificationsView: View {
                         EmptyView()
                     })
                     
-                    NavigationLink(destination: VirtualHug(user: user, friends: friends), isActive: $hugActive, label: {
-                        EmptyView()
-                    })
                     
                     NavigationLink(destination: CH9(user: user, friends: friends), isActive: $kissesActive, label: {
                         EmptyView()
                     })
                     
-                    
-                    NavigationLink(destination: CH9(user: user, friends: friends), isActive: $newCustomActive, label: {
-                        EmptyView()
-                    })
-                    
-                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $newCongratulationsActive, label: {
-                        EmptyView()
-                    })
-                    
-                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $newVibeActive, label: {
-                        EmptyView()
-                    })
-                    
-                    
-                    
-                    
-//               ********************** Thanks pages **************************
                     NavigationLink(destination: CH9(user: user, friends: friends), isActive: $thanksKissesActive, label: {
                         EmptyView()
                     })
                     
                     
                     
+                    NavigationLink(destination: VirtualHug(user: user, friends: friends), isActive: $hugActive, label: {
+                        EmptyView()
+                    })
+                   
                     NavigationLink(destination: VirtualHug(user: user, friends: friends), isActive: $thanksHugActive, label: {
                         EmptyView()
                     })
                     
-        }
                     
+                    
+             
+                
+                    
+                    
+                   
+                    
+                    
+                    
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $newCongratulationsActive, label: {
+                        EmptyView()
+                    })
+                    
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksCongratulationsActive, label: {
+                        EmptyView()
+                    })
+                    
+                    
+                    
+                    
+                    NavigationLink(destination: CH9(user: user, friends: friends), isActive: $newCustomActive, label: {
+                        EmptyView()
+                    })
+                    
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksCustomActive, label: {
+                        EmptyView()
+                    })
+                    
+                  
+                    
+               
+                    
+                    
+                    
+                    
+//               ********************** Thanks pages **************************
+                 
+                    
+                    
+                
+                    
+        }
+                
+                NavigationLink(destination: VirtualHug(user: user, friends: friends), isActive: $heartsActive, label: {
+                    EmptyView()
+                })
+                
+//               ********************** Message goes to Chat **************************
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksHeartActive, label: {
                     EmptyView()
                 })
+       
+                
+//               ********************** Song goes to Chat - no need link **************************
+                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksSongActive, label: {
+                    EmptyView()
+                })
+                
+             
+                
+                
+                
                 
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $fixFightActive, label: {
                     EmptyView()
@@ -202,17 +244,13 @@ struct NotificationsView: View {
                     EmptyView()
                 })
 
-                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksSongActive, label: {
+                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $newVibeActive, label: {
                     EmptyView()
                 })
                 
-                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksCongratulationsActive, label: {
-                    EmptyView()
-                })
+              
             
-                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksCustomActive, label: {
-                    EmptyView()
-                })
+              
                 
               
                 
