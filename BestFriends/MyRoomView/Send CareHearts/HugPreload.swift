@@ -40,7 +40,7 @@ struct HugPreload: View {
             //                .ignoresSafeArea()
             //                .blendMode(.screen)
             
-            AdPlayerView(name: "Planet5")
+            AdPlayerView(name: "background_9")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             

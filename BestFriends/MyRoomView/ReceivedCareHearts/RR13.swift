@@ -60,7 +60,7 @@ struct RR13: View {
                   .opacity(0.9)
                   .ignoresSafeArea()
                 
-                AdPlayerView(name: "Planet3A")
+                AdPlayerView(name: "background_9")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.6)
