@@ -156,7 +156,7 @@ struct CH6: View {
                                                     TextField("", text: $customMessage)
                                                         .placeholder(when: customMessage.isEmpty) {
                                                             HStack {
-                                                                Text("Type name of song & message here")
+                                                                Text("Type your message here")
                                                                     .foregroundColor(Color.white)
                                                                     .fontWeight(.thin)
                                                                 Spacer()
@@ -187,11 +187,23 @@ struct CH6: View {
                     VStack {
                    
                      
-                        Text("Send your own Custom CareHeaert")
+                        Text("Custom CareHearts")
                             .font(.system(size: 43, weight: .light))
                             .foregroundColor(ColorManager .grey1)
                         
-                        Text("tap heart for draw \nsend a message in Chat \n& send a PhotoPOP")
+                     
+                        
+                        Text("- tap heart for draw")
+                            .font(.system(size: 15, weight: .light))
+                            .italic()
+                            .foregroundColor(Color.white)
+                        
+                        Text("- send a message in Chat")
+                            .font(.system(size: 15, weight: .light))
+                            .italic()
+                            .foregroundColor(Color.white)
+                        
+                        Text("- send a PhotoPOP")
                             .font(.system(size: 15, weight: .light))
                             .italic()
                             .foregroundColor(Color.white)
@@ -209,27 +221,29 @@ struct CH6: View {
                         Image(systemName: "heart.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 350, height: 175)
+                            .frame(width: 200, height: 150)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .opacity(0.5)
                         
                         VStack {
-                           
                             
-                            //                            NavigationLink(
-                            //                                destination:  PhotoPopView(user: user, friends: friends),
-                            //                                label: {
-                            //
-                            //                                    Image(systemName: "draw")
-                            //
-                            //                                       .resizable()
-                            //                                        .scaledToFit()
-                            //                                        .frame(width: 40, height: 40)
-                            //                                        .foregroundColor(Color.cyan)
-                            //                                        .glow(color: ColorManager.purple4, radius: 2)
-                            //                                        .opacity(0.6)
-                            //
-                            //                                })
+                       
+                                
+                                NavigationLink( destination: DrawingCareHearts(),
+                                                label: {
+                                    Text("Draw Custom \nCareheart")
+                                        .fontWeight(.regular)
+                                        .frame(width: 120, height: 45)
+                                        .foregroundColor(ColorManager .grey4)
+                                        .font(.system(size: 16))
+                                        .background(ColorManager .purple2)
+                                        .glow(color: ColorManager.purple3, radius: 1)
+                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                        .opacity(0.9)
+                                        .cornerRadius(7)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                    
+                                })
                             
                         }
                          
@@ -238,19 +252,14 @@ struct CH6: View {
                         }
                     }
                 
-                    Text("(let your friend know to look")
+                    Text("(alert friend")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
 
-                    Text("in Chat for your song)")
-                        .font(.system(size: 15))
-                        .italic()
-                        .fontWeight(.light)
-                        .foregroundColor(ColorManager .grey1)
-                        .multilineTextAlignment(.center)
+              
             
                     VStack {
                         
