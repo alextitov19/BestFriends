@@ -17,7 +17,7 @@ struct NotificationsView: View {
     let friend: User
     let friends: [User]
     let groups: [Group]
-    
+    let atmosphere: Atmosphere
     
     //   *********************** color change tapped
     
@@ -81,6 +81,7 @@ struct NotificationsView: View {
     private struct NotificationBubble: View {
         let user: User
         let friends: [User]
+        
         
         let ian: InAppNotification
         var t: String
@@ -197,24 +198,19 @@ struct NotificationsView: View {
                         EmptyView()
                     })
                     
-                  
-                    
-               
-                    
-                    
-                    
-                    
-//               ********************** Thanks pages **************************
-                 
-                    
-                    
+                
                 
                     
         }
                 
-                NavigationLink(destination: VirtualHug(user: user, friends: friends), isActive: $heartsActive, label: {
+//                ************* fix CH9 to Received Hearts page: CH13
+                NavigationLink(destination: CH9(user: user, friends: friends), isActive: $heartsActive, label: {
                     EmptyView()
                 })
+                
+//                NavigationLink(destination: CH10(user: user, friends: friends, groups: groups, atmosphere: atmosphere), isActive: $heartsActive, label: {
+//                    EmptyView()
+//                })
                 
 //               ********************** Message goes to Chat **************************
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksHeartActive, label: {

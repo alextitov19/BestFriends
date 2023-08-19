@@ -59,7 +59,7 @@ struct HomeView: View {
                     }
                 
                 if (homeData != nil) {
-                    NavigationLink(destination: NotificationsView(user: homeData!.user, friend: homeData!.user, friends: homeData!.friends, groups: homeData!.groups), isActive: $presentingIANs) { EmptyView() }
+                    NavigationLink(destination: NotificationsView(user: homeData!.user, friend: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere), isActive: $presentingIANs) { EmptyView() }
 
                 }
                 
