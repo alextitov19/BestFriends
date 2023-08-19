@@ -92,12 +92,15 @@ struct RR12: View {
             
                   if shareTapped {
                       
-
+                      Color.black
+                        .opacity(0.9)
+                        .ignoresSafeArea()
                       
-                      Image("FHBackground")
-                          .ignoresSafeArea()
-                          .scaledToFit()
-                          .opacity(0.1)
+                      
+//                      Image("FHBackground")
+//                          .ignoresSafeArea()
+//                          .scaledToFit()
+//                          .opacity(0.1)
 
                       AdPlayerView(name: "dramaLights")
                           .opacity(0.5)

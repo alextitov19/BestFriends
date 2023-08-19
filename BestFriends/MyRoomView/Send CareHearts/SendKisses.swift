@@ -43,7 +43,7 @@ struct SendKisses: View {
             if shareTapped {
                 
                 Color.black
-                    .opacity(0.8)
+                    .opacity(0.9)
                     .ignoresSafeArea()
         
                 AdPlayerView(name: "dramaLights")
