@@ -351,9 +351,11 @@ struct MyRoomView: View {
                                             
                                             Spacer()
                                                 .frame(width: 5)
+                                        
+                                        
                                             
                                             VStack {
-                                                
+                                              
                                                 
                                                 //                                        RR4(user: user, friends: friends
                                                 NavigationLink( destination:  CH10(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
