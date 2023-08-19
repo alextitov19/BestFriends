@@ -424,7 +424,7 @@ struct CH6: View {
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Just sent you a Custome CareHeart. Check for a message in Chat and a PhotoPOP.", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Just sent you a Custome CareHeart. Check for a message in Chat and a PhotoPOP ... TAP", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                         print("Create a Custom CareHeart notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)

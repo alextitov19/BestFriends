@@ -294,13 +294,13 @@ struct NotificationsView: View {
             case "What are you doing? Send PhotoPoP!":
                 photoPopActive = true
                 
-            case "Just sent you a warming Hug!":
+            case "Just sent you a warming Hug! ... TAP":
                 hugActive = true
                 
-            case "Jump up and catch your fresh kisses!":
+            case "Jump up and catch your fresh kisses! ... TAP":
                 kissesActive = true
                 
-            case "Just send you a Heart and a message in Chat":
+            case "Just send you a Heart and a message in Chat ... TAP":
                 heartsActive = true
                 
             case "Ahhh! Thanks for the Kisses!":
@@ -330,13 +330,13 @@ struct NotificationsView: View {
             case "I found a New Artist & posted them in Chat":
                 newArtistActive = true
                 
-            case "Just sent you a Custome CareHeart. Check for a message in Chat and a PhotoPOP.":
+            case "Just sent you a Custome CareHeart. Check for a message in Chat and a PhotoPOP ... TAP":
                 newCustomActive = true
                 
             case "Said thanks for the Custom CareHeart":
                 thanksCustomActive = true
                 
-            case "Just sent you a Congratulations CareHeart":
+            case "Just sent you a Congratulations CareHeart ... TAP":
                 newCongratulationsActive = true
                 
             case "Just said thank you for the Congratulations":
