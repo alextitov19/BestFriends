@@ -60,7 +60,7 @@ struct Step4_NuclearOption: View {
                
                 
                 NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                            HugCircle (color: ColorManager .grey3, friendName: "ask \nfriends for \n CareHearts \n\nTAP")
+                            HugCircle (color: ColorManager .grey3, friendName: "alert friends, \n ask for \nCareHearts \n\nTAP")
                         })
                         .offset(x: showItems ? 130 : 0, y: showItems ? -300: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
