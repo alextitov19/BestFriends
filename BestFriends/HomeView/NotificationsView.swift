@@ -188,9 +188,9 @@ struct NotificationsView: View {
                     })
                     
 //                    ********************** make this link to proper page *******
-//                    NavigationLink(destination: RR15(user: user, friends: friends, groups: groups), isActive: $newCustomActive, label: {
-//                        EmptyView()
-//                    })
+                    NavigationLink(destination: RR15(user: user, friends: friends, groups: groups), isActive: $newCustomActive, label: {
+                        EmptyView()
+                    })
                     
 //                    NavigationLink(destination: CH9(user: user, friends: friends), isActive: $newCustomActive, label: {
 //                        EmptyView()
