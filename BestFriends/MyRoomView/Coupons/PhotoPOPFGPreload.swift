@@ -51,7 +51,7 @@ struct PhotoPopFGPreload: View {
         //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
-        customMessage = "Friendship COUPON from; " + user.firstName + " : " + customMessage;
+        customMessage = "Friendship COUPON; " + user.firstName + " : " + customMessage;
         
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
@@ -146,7 +146,7 @@ struct PhotoPopFGPreload: View {
                                         TextField("", text: $customMessage)
                                             .placeholder(when: customMessage.isEmpty) {
                                                 HStack {
-                                                    Text("Type your 'Meet-up Coupon' here")
+                                                    Text("Type your Coupon here")
                                                         .foregroundColor(ColorManager.grey4)
                                                         .fontWeight(.thin)
                                                         .background(ColorManager .purple1)

@@ -409,7 +409,7 @@ struct AtmosphereMain2: View {
 
                  
                             Spacer()
-                                .frame(height: 5)
+                                .frame(height: 40)
                             
                             
                            
@@ -435,25 +435,32 @@ struct AtmosphereMain2: View {
                          
                             
                             Spacer()
-                                .frame(height: 25)
+                                .frame(height: 35)
                             
                             
                             
 //         ********************************************************
                             
-                            Text("When you send a notification")
+                            Text("Sharing with friends lets them see instantly")
                                .italic()
                                 .font(.system(size: 15))
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
                             
-                            Text("your planet's atmosphere color changes")
+                            Text("how your day is going by the 'color'")
                                .italic()
                                 .font(.system(size: 15))
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
+                            Text("of your planet's atmosphere.")
+                               .italic()
+                                .font(.system(size: 15))
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                      
                             
                         }
                     }
