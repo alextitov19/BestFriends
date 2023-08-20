@@ -146,7 +146,7 @@ struct INFOPreloadA: View {
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Text("(select 'Myself' - upload favorite pic)")
+                        Text("(select 'Myself' - upload a pic of them!")
                             .font(.system(size: 13))
                             .italic()
                             .foregroundColor(Color.white)

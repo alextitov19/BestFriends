@@ -49,7 +49,7 @@ struct RR16: View {
             
             VStack {
                 
-                Text("LightSpeed")
+                Text("'Shaking'")
                     .font(.system(size: 45))
                     .foregroundColor(Color.white)
                     .fontWeight(.light)
@@ -78,12 +78,17 @@ struct RR16: View {
                         Spacer()
                             .frame(height: 30)
                         
-                        Text("When your friend sent a pic. \n\nJust 'shake' you iPhone \nand it pops up full-screen.")
+                        Text("Shake your iPhone & see the")
                             .font(.system(size: 27))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
+                        Text("latest pic from a friend")
+                            .font(.system(size: 27))
+                            .foregroundColor(ColorManager .grey1)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
                         
                         Spacer()
                             .frame(height: 20)
