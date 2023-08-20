@@ -434,16 +434,23 @@ struct MyRoomView: View {
                                                     .opacity(0.99)
                                                 
                                                 
-                                                
-                                                
-                                                NavigationLink( destination:  CH16(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                                NavigationLink( destination:  RR16(user: user, friends: friends),
                                                                 label: {
-                                                    Text("super \nfriendship \ndays")
+                                                    Text("'Shake' \niPhone")
                                                         .fontWeight(.light)
                                                         .foregroundColor(Color.black)
                                                         .font(.system(size: 11))
                                                         .rotationEffect(.degrees(7))
                                                         .opacity(0.85)
+                                                
+//                                                NavigationLink( destination:  CH16(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                                                                label: {
+//                                                    Text("super \nfriendship \ndays")
+//                                                        .fontWeight(.light)
+//                                                        .foregroundColor(Color.black)
+//                                                        .font(.system(size: 11))
+//                                                        .rotationEffect(.degrees(7))
+//                                                        .opacity(0.85)
                                                     
                                                 })
                                                 

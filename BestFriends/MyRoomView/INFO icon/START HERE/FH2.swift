@@ -135,17 +135,17 @@ struct FH2: View {
                         Spacer()
                             .frame(height: 30)
               
-                        Text("a social media app that")
-                            .font(.system(size: 20))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.regular)
-                            .multilineTextAlignment(.center)
-                   
-                        Text("feels like a sleep-over!")
-                            .font(.system(size: 30))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.regular)
-                            .multilineTextAlignment(.center)
+//                        Text("a social media app that")
+//                            .font(.system(size: 20))
+//                            .foregroundColor(Color.white)
+//                            .fontWeight(.regular)
+//                            .multilineTextAlignment(.center)
+//                   
+//                        Text("feels like a sleep-over!")
+//                            .font(.system(size: 30))
+//                            .foregroundColor(Color.white)
+//                            .fontWeight(.regular)
+//                            .multilineTextAlignment(.center)
                     }
                     
                 }
