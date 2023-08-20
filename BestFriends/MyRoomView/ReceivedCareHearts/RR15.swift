@@ -121,7 +121,7 @@ struct RR15: View {
                                                     .opacity(0.9)
                                                     .cornerRadius(7)
                                                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                                
+
                                             })
                                         
                                         
