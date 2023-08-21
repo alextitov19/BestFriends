@@ -110,9 +110,9 @@ struct RR15: View {
                                             
                                             NavigationLink( destination: DrawingCareHearts(),
                                                             label: {
-                                                Text("View Custom \nCareheart")
+                                                Text("View Custom \nCareHeart")
                                                     .fontWeight(.regular)
-                                                    .frame(width: 120, height: 45)
+                                                    .frame(width: 150, height: 45)
                                                     .foregroundColor(ColorManager .grey4)
                                                     .font(.system(size: 16))
                                                     .background(ColorManager .purple2)

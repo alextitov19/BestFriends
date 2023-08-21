@@ -26,7 +26,7 @@ struct DrawingCareHearts: View {
         VStack {
             HStack {
                 Spacer()
-                Button("Finished") {
+                Button("TAP HERE") {
                                     isFinished.toggle()
                                 }
                                 .padding(.trailing)
