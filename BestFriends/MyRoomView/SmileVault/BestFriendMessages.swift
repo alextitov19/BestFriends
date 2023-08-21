@@ -40,6 +40,11 @@ struct BestFriendMessages: View {
 //                .opacity(0.9)
 
             
+            Color.black
+                .opacity(0.9)
+                .ignoresSafeArea()
+            
+            
             Image("FHBackground")
                 .resizable()
                 .scaledToFill()
@@ -113,12 +118,19 @@ struct BestFriendMessages: View {
                     
                     VStack {
                         
-                        Text("Long-tap 'messages' in Chat \nthat make you smile")
+                        Text("Long-tap 'messages' in Chat")
                             .font(.system(size: 23))
-                            .foregroundColor(ColorManager .grey2)
+                            .foregroundColor(ColorManager .grey1)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                   
+                        
+                        Text("that make you smile")
+                            .font(.system(size: 23))
+                            .foregroundColor(ColorManager .grey1)
+                            .fontWeight(.regular)
+                            .multilineTextAlignment(.center)
+                        
                         Spacer ()
                             .frame(height: 44)
                         
@@ -135,7 +147,7 @@ struct BestFriendMessages: View {
                         Text("Easily see your favorite messages \nin SmileVault")
                             .font(.system(size: 15))
                             .italic()
-                            .foregroundColor(ColorManager.grey2)
+                            .foregroundColor(ColorManager.grey1)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                         

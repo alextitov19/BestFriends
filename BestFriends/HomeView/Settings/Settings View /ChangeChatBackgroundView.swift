@@ -24,17 +24,29 @@ struct ChangeChatBackgroundView: View {
                 
 
                 
-                Text("Try a 'motion' background")
+                Text("Customize Your background")
                     .font(.system(size: 30))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey2)
-                
-                Spacer()
-                    .frame(height: 15)
-                
-                Text("(exit app and re-enter to activate)")
+                    .foregroundColor(Color.black)
+             
+                Text("")
                     .onAppear(perform: loadData)
+                
+                Button(action: {
+                    sessionManager.showLogin()
+                },
+                       label: {
+                    Image("home-alt2")
+                        .frame(width: 50, height: 25)
+                        .foregroundColor(.white)
+                        .font(.system(size: 20))
+                        .background(ColorManager .grey2)
+                        .cornerRadius(15)
+                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                        .opacity(0.70)
+                    
+                })
                 
                 HStack {
                   
@@ -47,7 +59,7 @@ struct ChangeChatBackgroundView: View {
 //
 //                 
                     
-                    BackgroundCard(title: "Default - static", backgroundNumber: 0, user: user, selectedBackground: $selectedBackground)
+                    BackgroundCard(title: "Default - Universe 2", backgroundNumber: 8, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
                     
                     BackgroundCard(title: "Poppies - motion", backgroundNumber: 4, user: user, selectedBackground: $selectedBackground)
@@ -64,7 +76,7 @@ struct ChangeChatBackgroundView: View {
                     BackgroundCard(title: "Universe 1", backgroundNumber: 7, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
                     
-                    BackgroundCard(title: "Universe 2", backgroundNumber: 8, user: user, selectedBackground: $selectedBackground)
+                    BackgroundCard(title: "Static", backgroundNumber: 0, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
                 }
                 .padding(.horizontal, 10)
@@ -134,7 +146,7 @@ struct ChangeChatBackgroundView: View {
                 
                 }
             }
-            .frame(height: 220)
+            .frame(height: 190)
             .cornerRadius(15)
         }
         

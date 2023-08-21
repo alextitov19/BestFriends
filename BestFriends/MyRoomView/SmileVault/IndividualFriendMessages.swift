@@ -20,58 +20,66 @@ struct IndividualFriendMessages: View {
     var body: some View {
         ZStack {
 
+            Color.black
+                .opacity(0.9)
+                .ignoresSafeArea()
             
-            ColorManager .purple7
-                 .ignoresSafeArea()
-                 .onAppear{ loadData() }
-                 .scaledToFill()
-
-                     
-            AdPlayerView(name: "sky2")
-                          .ignoresSafeArea()
-                           .blendMode(.screen)
-//            
-//            Image("FHBackground")
-//                .resizable()
-//                .scaledToFill()
-////                .edgesIgnoringSafeArea(.all)
-//                .blendMode(.screen)
+            
+            Image("FHBackground")
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
+                .blendMode(.screen)
 
             
-            VStack {
+    VStack {
                 
-                Button(action: {
-                    sessionManager.showLogin()
-                },
-                    label: {
-                    Image("home-alt2")
-                        .frame(width: 50, height: 25)
-                        .foregroundColor(.white)
-                        .font(.system(size: 20))
-                        .background(ColorManager .grey2)
-                        .cornerRadius(15)
-                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                        .opacity(0.70)
-                    
-                })
-                Text("saved Chat messages")
-                    .font(.system(size: 35))
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(ColorManager .grey2)
-                    .multilineTextAlignment(.center)
+              
+        VStack {
+            Spacer ()
+                .frame(height: 20)
+            
+            Text("Long-tapped")
+                .font(.system(size: 35))
+                .fontWeight(.light)
+                .foregroundColor(Color.black)
+                .multilineTextAlignment(.center)
+            
+            Text("Chat Messages")
+                .font(.system(size: 35))
+                .fontWeight(.light)
+                .foregroundColor(Color.black)
+                .multilineTextAlignment(.center)
+            
+            Text(friend.firstName + " " + friend.lastName)
+                .font(.system(size: 15))
+                .fontWeight(.light)
+                .foregroundColor(Color.black)
+            
+            Text("(tap 'star' to favorite)")
+                .font(.system(size: 17))
+                .italic()
+                .fontWeight(.light)
+                .foregroundColor(Color.black)
+                .multilineTextAlignment(.center)
+            
+            
+            Button(action: {
+                sessionManager.showLogin()
+            },
+                   label: {
+                Image("home-alt2")
+                    .frame(width: 50, height: 25)
+                    .foregroundColor(.white)
+                    .font(.system(size: 20))
+                    .background(ColorManager .grey2)
+                    .cornerRadius(15)
+                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                    .opacity(0.70)
                 
-                Text(friend.firstName + " " + friend.lastName)
-                    .font(.system(size: 5))
-                    .fontWeight(.light)
-                    .foregroundColor(ColorManager .grey4)
-                
-                Text("(tap 'star' to favorite)")
-                    .font(.system(size: 12))
-                    .italic()
-                    .fontWeight(.light)
-                    .foregroundColor(ColorManager .grey4)
-                    .multilineTextAlignment(.center)
-                
+            })
+            
+        }
                 ScrollView(.vertical) {
                     ForEach(smileNotes.indices, id: \.self) { i in
                         FriendMessageView(smileNote: smileNotes[i])
@@ -105,7 +113,7 @@ struct IndividualFriendMessages: View {
                 
                 
                 Spacer ()
-                    .frame(height: 100)
+                    .frame(height: 50)
             }
         }
     }
