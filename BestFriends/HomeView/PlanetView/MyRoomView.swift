@@ -424,7 +424,7 @@ struct MyRoomView: View {
                                                     .opacity(0.7)
                                                 
                                         
-                                                    NavigationLink( destination:  RR17(),
+                                                    NavigationLink( destination:  EmptyView(),
                                                                     label: {
                                                         Text("Me \n+")
                                                             .fontWeight(.light)
