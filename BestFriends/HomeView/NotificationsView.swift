@@ -328,11 +328,11 @@ struct NotificationsView: View {
             case "I found a New Artist & posted them in Chat":
                 newArtistActive = true
                 
-            case "Just sent you a Custome CareHeart. Check for a message in Chat and a PhotoPOP ... TAP":
-                newCustomActive = true
-                
-            case "Said thanks for the Custom CareHeart":
-                thanksCustomActive = true
+//            case "Just sent you a Custome CareHeart. Check for a message in Chat and a PhotoPOP ... TAP":
+//                newCustomActive = true
+//                
+//            case "Said thanks for the Custom CareHeart":
+//                thanksCustomActive = true
                 
             case "Just sent you a Congratulations CareHeart ... TAP":
                 newCongratulationsActive = true
