@@ -50,15 +50,24 @@ struct CH15: View {
                 
             } else {
                 
-                ColorManager .purple4
-                    .opacity(0.6)
+                Color.black
+                   .opacity(0.9)
                     .ignoresSafeArea()
                 
                 
-                Image("FHBackground")
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
+                AdPlayerView(name: "background_8")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                
+//                ColorManager .purple4
+//                    .opacity(0.6)
+//                    .ignoresSafeArea()
+//
+//
+//                Image("FHBackground")
+//                    .resizable()
+//                    .scaledToFill()
+//                    .edgesIgnoringSafeArea(.all)
             }
             
             
@@ -76,55 +85,56 @@ struct CH15: View {
                         
                         ZStack {
                             
-                            Image(systemName: "rectangle.fill")
-                                .resizable()
-                                .foregroundColor(ColorManager .grey1)
-                                .frame(width: 480, height: 800)
-                            //                    .blur(radius: 2)
-                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
-                                .opacity(0.50)
+//                            Image(systemName: "rectangle.fill")
+//                                .resizable()
+//                                .foregroundColor(ColorManager .grey1)
+//                                .frame(width: 480, height: 800)
+//                            //                    .blur(radius: 2)
+//                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
+//                                .opacity(0.50)
                             
                             VStack {
                                 
-                                Text("Did a friend do or say something that's been bugging you all week? \n\nMaybe you're just a little nervous to say something.")
+                                Text("Did a friend do or say something \nthat's been bugging you all week? \n\nMaybe you're just a little nervous to say something.")
                                     .fontWeight(.light)
-                                    .frame(width: 380, height: 150)
+                                    .frame(width: 200, height: 200)
                                     .foregroundColor(Color.white)
-                                    .font(.system(size: 20))
+                                    .font(.system(size: 15))
 //                                    .padding(50)
-                                    .background(Color .cyan)
+                                    .background(ColorManager .grey3)
                                     .multilineTextAlignment(.center)
-                                    .cornerRadius(10)
+                                    .cornerRadius(50)
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                    .opacity(0.5)
                                 //                                        .padding(30)
                                 
                              
                                 VStack {
-                                    Spacer()
-                                        .frame(height: 20)
-                                    
-                                    Text("Every Sunday at 8pm EDT join teens everywhere ")
-                                        .font(.system(size: 17))
-                                        .italic()
-                                        .foregroundColor(Color.white)
-                                        .fontWeight(.light)
-                                        .multilineTextAlignment(.center)
-
-
-                                    Text("asking their friends to talk about it, ")
-                                        .font(.system(size: 17))
-                                        .italic()
-                                        .foregroundColor(Color.white)
-                                        .fontWeight(.light)
-                                        .multilineTextAlignment(.center)
-
-
-                                    Text("now you're no longer alone!")
-                                        .font(.system(size: 17))
-                                        .italic()
-                                        .foregroundColor(Color.white)
-                                        .fontWeight(.light)
-                                        .multilineTextAlignment(.center)
+//                                    Spacer()
+//                                        .frame(height: 20)
+//
+//                                    Text("Every Sunday at 8pm EDT join teens everywhere ")
+//                                        .font(.system(size: 17))
+//                                        .italic()
+//                                        .foregroundColor(Color.white)
+//                                        .fontWeight(.light)
+//                                        .multilineTextAlignment(.center)
+//
+//
+//                                    Text("asking their friends to talk about it, ")
+//                                        .font(.system(size: 17))
+//                                        .italic()
+//                                        .foregroundColor(Color.white)
+//                                        .fontWeight(.light)
+//                                        .multilineTextAlignment(.center)
+//
+//
+//                                    Text("now you're no longer alone!")
+//                                        .font(.system(size: 17))
+//                                        .italic()
+//                                        .foregroundColor(Color.white)
+//                                        .fontWeight(.light)
+//                                        .multilineTextAlignment(.center)
                                     
                                     Spacer()
                                         .frame(height: 25)
@@ -269,6 +279,39 @@ struct CH15: View {
                                                         .opacity(0.70)
                                                     
                                                 })
+                                                
+                                                
+                                                VStack {
+                                                    Spacer()
+                                                        .frame(height: 20)
+                                                    
+                                                    Text("Every Sunday at 8pm EDT join teens everywhere ")
+                                                        .font(.system(size: 17))
+                                                        .italic()
+                                                        .foregroundColor(Color.white)
+                                                        .fontWeight(.light)
+                                                        .multilineTextAlignment(.center)
+                                                    
+                                                    
+                                                    Text("asking their friends to talk about it, ")
+                                                        .font(.system(size: 17))
+                                                        .italic()
+                                                        .foregroundColor(Color.white)
+                                                        .fontWeight(.light)
+                                                        .multilineTextAlignment(.center)
+                                                    
+                                                    
+                                                    Text("now you're no longer alone!")
+                                                        .font(.system(size: 17))
+                                                        .italic()
+                                                        .foregroundColor(Color.white)
+                                                        .fontWeight(.light)
+                                                        .multilineTextAlignment(.center)
+                                                    
+                                                    Spacer()
+                                                        .frame(height: 25)
+                                                    
+                                                }
                                                 
                                             }
                                             

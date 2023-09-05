@@ -103,12 +103,19 @@ struct CH14: View {
                     .blendMode(.screen)
                 
             } else {
+                Color.black
+                   .opacity(0.9)
+                    .ignoresSafeArea()
                 
                 
-                Image("FHBackground")
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
+                AdPlayerView(name: "background_8")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                
+//                Image("FHBackground")
+//                    .resizable()
+//                    .scaledToFill()
+//                    .edgesIgnoringSafeArea(.all)
         
             }
 
@@ -119,10 +126,10 @@ struct CH14: View {
 
 
                                 ZStack(alignment: .bottom) {
-                                    Image("holding iphone")
-                                        .resizable()
-                                        .frame(width: 100, height: 200)
-                                        .cornerRadius(15)
+//                                    Image("holding iphone")
+//                                        .resizable()
+//                                        .frame(width: 100, height: 200)
+//                                        .cornerRadius(15)
 
 
                                     
@@ -132,15 +139,15 @@ struct CH14: View {
                                         TextField("", text: $customMessage)
                                             .placeholder(when: customMessage.isEmpty) {
                                                 HStack {
-                                                    Text("Tap - type your message here")
-                                                        .foregroundColor(ColorManager.grey4)
+                                                    Text("Type your message here")
+                                                        .foregroundColor(ColorManager.grey1)
                                                         .fontWeight(.thin)
-                                                        .background(ColorManager .purple1)
+//                                                        .background(Color.black)
                                                     
                                                     Spacer()
                                                 }
                                             }
-                                            .foregroundColor(.black)
+                                            .foregroundColor(.white)
                                             .font(.system(size: 19))
                                             .submitLabel(.done)
                                             .onReceive(Just(customMessage)) { _ in limitText(65) }

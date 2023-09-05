@@ -51,15 +51,24 @@ struct CH13: View {
                 
             } else {
                 
-                ColorManager .purple4
-                    .opacity(0.6)
+                Color.black
+                   .opacity(0.9)
                     .ignoresSafeArea()
                 
                 
-                Image("FHBackground")
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
+                AdPlayerView(name: "background_8")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                
+//                ColorManager .purple4
+//                    .opacity(0.6)
+//                    .ignoresSafeArea()
+//
+//
+//                Image("FHBackground")
+//                    .resizable()
+//                    .scaledToFill()
+//                    .edgesIgnoringSafeArea(.all)
             }
             
             
@@ -77,13 +86,13 @@ struct CH13: View {
                         
                         ZStack {
                             
-                            Image(systemName: "rectangle.fill")
-                                .resizable()
-                                .foregroundColor(ColorManager .grey1)
-                                .frame(width: 480, height: 800)
-                            //                    .blur(radius: 2)
-                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
-                                .opacity(0.50)
+//                            Image(systemName: "rectangle.fill")
+//                                .resizable()
+//                                .foregroundColor(ColorManager .grey1)
+//                                .frame(width: 480, height: 800)
+//                            //                    .blur(radius: 2)
+//                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
+//                                .opacity(0.50)
                             
                             VStack {
                                 
@@ -93,10 +102,11 @@ struct CH13: View {
                                     .foregroundColor(Color.white)
                                     .font(.system(size: 20))
 //                                    .padding(50)
-                                    .background(Color .cyan)
+                                    .background(ColorManager .grey3)
                                     .multilineTextAlignment(.center)
                                     .cornerRadius(10)
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                    .opacity(0.5)
                                 //                                        .padding(30)
                                 
                              

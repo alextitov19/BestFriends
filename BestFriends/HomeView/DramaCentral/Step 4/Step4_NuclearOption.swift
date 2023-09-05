@@ -64,7 +64,7 @@ struct Step4_NuclearOption: View {
                         })
                         .offset(x: showItems ? -110 : 0, y: showItems ? -300: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
-                        .opacity(0.5)
+                        .opacity(0.7)
                         
                
                 
