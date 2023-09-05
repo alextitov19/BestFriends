@@ -107,7 +107,7 @@ struct MyRoomView: View {
                                     
                                     NavigationLink( destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                                     label: {
-                                        Text("Start       Here")
+                                        Text("Start       Here!!!")
                                             .fontWeight(.light)
                                             .frame(width: 170, height: 33)
                                             .foregroundColor(ColorManager .grey1)

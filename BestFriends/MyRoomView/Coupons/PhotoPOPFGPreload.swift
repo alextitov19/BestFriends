@@ -105,12 +105,19 @@ struct PhotoPopFGPreload: View {
             } else {
                 
                 
-                Image("FHBackground")
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
+//                Image("FHBackground")
+//                    .resizable()
+//                    .scaledToFill()
+//                    .edgesIgnoringSafeArea(.all)
+                
+                Color.black
+                   .opacity(0.9)
+                    .ignoresSafeArea()
                 
                 
+                AdPlayerView(name: "background_8")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
 
                 
                 
