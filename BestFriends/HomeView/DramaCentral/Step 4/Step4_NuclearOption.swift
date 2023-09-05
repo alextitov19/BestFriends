@@ -31,10 +31,19 @@ struct Step4_NuclearOption: View {
                 .ignoresSafeArea()
             
             
-            Image("FHBackground")
-                .resizable()
-                .scaledToFill()
-                .edgesIgnoringSafeArea(.all)
+//            Image("FHBackground")
+//                .resizable()
+//                .scaledToFill()
+//                .edgesIgnoringSafeArea(.all)
+            
+            Color.black
+               .opacity(0.9)
+                .ignoresSafeArea()
+            
+            
+            AdPlayerView(name: "background_8")
+                .ignoresSafeArea()
+                .blendMode(.screen)
             
 
             ZStack{
@@ -42,7 +51,7 @@ struct Step4_NuclearOption: View {
 //                Step2_FightLandingView(user: user, friends: friends
 
                 NavigationLink(destination: CH14(user: user, friend: user, friends: friends, groups: groups), label: {
-                        HugCircle (color: Color.purple, friendName: "OK, they're not talking. \nBut, you're ready to reach out \nto try to fix this \n\nTAP")
+                        HugCircle (color: Color.purple, friendName: "If you're ready to \nfix this... \n\nTAP here")
                     })
                     .offset(x: showItems ? 0 : 0, y: showItems ? -20: 0)
                     .shadow(color: ColorManager .purple1, radius: 30, x: 10, y: 10)
@@ -51,28 +60,28 @@ struct Step4_NuclearOption: View {
 
                 
                         NavigationLink(destination: BreathInView(), label: {
-                            HugCircle (color: ColorManager .purple3, friendName: "just Breathe \n\nTAP")
+                            HugCircle (color: ColorManager .purple3, friendName: "Let's take a \ncouple Breathes \n\nTAP")
                         })
-                        .offset(x: showItems ? -90 : 0, y: showItems ? -250: 0)
+                        .offset(x: showItems ? -110 : 0, y: showItems ? -300: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
-                        .opacity(0.85)
+                        .opacity(0.5)
                         
                
                 
                 NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                            HugCircle (color: ColorManager .grey3, friendName: "alert friends, \n ask for \nCareHearts \n\nTAP")
+                            HugCircle (color: ColorManager .grey2, friendName: "Ask friends for \nCareHearts \n\nTAP")
                         })
-                        .offset(x: showItems ? 130 : 0, y: showItems ? -300: 0)
+                        .offset(x: showItems ? 430 : 0, y: showItems ? -300: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
                         .opacity(0.9)
                 
                 
-                NavigationLink(destination: EmptyView(), label: {
-                            HugCircle (color: ColorManager .purple2, friendName: "sharp words \nerase all the nice words \nyou've ever said")
-                        })
-                        .offset(x: showItems ? 400 : 0, y: showItems ? -400: 0)
-//                        .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
-                        .opacity(0.99)
+//                NavigationLink(destination: EmptyView(), label: {
+//                            HugCircle (color: ColorManager .purple2, friendName: "sharp words \nerase all the nice words \nyou've ever said")
+//                        })
+//                        .offset(x: showItems ? 400 : 0, y: showItems ? -400: 0)
+////                        .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
+//                        .opacity(0.99)
            
 
                 VStack {
@@ -91,11 +100,12 @@ struct Step4_NuclearOption: View {
                         
                         Image(systemName: "circle.fill")
                             .resizable()
-                            .foregroundColor(Color.cyan)
-                            .frame(width: 170, height: 125)
+                            .foregroundColor(Color.orange)
+                            .frame(width: 180, height: 180)
                         //                    .blur(radius: 2)
-                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50) .opacity(0.99)
-                            .opacity(0.70)
+//                            .shadow(color: Color .white, radius: 65, x: 30, y: 50) .opacity(0.99)
+                            .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
+                            .opacity(0.90)
                        
                         VStack {
                             Text("Big Fight")
@@ -109,10 +119,11 @@ struct Step4_NuclearOption: View {
                                 .fontWeight(.light)
                                 .foregroundColor(ColorManager .grey4)
                                 .multilineTextAlignment(.center)
+                            Spacer ()
+                                .frame(height: 15)
                             
-                            
-                            Text("TAP")
-                                .font(.system(size: 30, weight: .light))
+                            Text("TAP here")
+                                .font(.system(size: 20, weight: .light))
                                 .fontWeight(.light)
                                 .foregroundColor(ColorManager .grey4)
                                 .multilineTextAlignment(.center)
@@ -132,7 +143,7 @@ struct Step4_NuclearOption: View {
                                     .frame(width: 250, height: 40)
                                     .foregroundColor(Color.white)
                                     .font(.system(size: 20))
-                                    .background(Color .cyan)
+                                    .background(ColorManager .grey3)
                                     .cornerRadius(10)
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                 
@@ -147,10 +158,10 @@ struct Step4_NuclearOption: View {
                                     
                                     Text("Keep Relationship?")
                                         .fontWeight(.light)
-                                        .frame(width: 170, height: 40)
+                                        .frame(width: 180, height: 40)
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 20))
-                                        .background(Color .cyan)
+                                        .background(ColorManager .grey3)
                                         .cornerRadius(10)
                                         .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                     
@@ -162,10 +173,10 @@ struct Step4_NuclearOption: View {
                                                    label: {
                                         Text("Hurt Feelings?")
                                             .fontWeight(.light)
-                                            .frame(width: 170, height: 40)
+                                            .frame(width: 180, height: 40)
                                             .foregroundColor(Color.white)
                                             .font(.system(size: 20))
-                                            .background(Color .cyan)
+                                            .background(ColorManager .grey3)
                                             .cornerRadius(10)
                                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                         
@@ -202,11 +213,11 @@ struct Step4_NuclearOption: View {
 
                 ZStack {
 
-                    Image(systemName: "heart.fill")
+                    Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(color)
                     //                            .foregroundColor(ColorManager .purple2)
-                        .frame(width: 220, height: 160)
+                        .frame(width: 160, height: 160)
 //                        .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
 
                     Text(friendName)
