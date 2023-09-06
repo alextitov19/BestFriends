@@ -96,32 +96,39 @@ struct CH13: View {
                             
                             VStack {
                                 
-                                Text("Ok, it has been a while and you're not hearing anything back. This is so hard - we feel you. \n\nMaybe they missed your message.")
-                                    .fontWeight(.light)
-                                    .frame(width: 380, height: 150)
-                                    .foregroundColor(Color.white)
+                                Text("Ok, it has been a while after the big fight.")
                                     .font(.system(size: 20))
+                                    .fontWeight(.light)
+                                    .foregroundColor(Color.white)
+                                    .multilineTextAlignment(.center)
+                                
+                                Text("Not a word from them.")
+                                    .font(.system(size: 20))
+                                    .fontWeight(.light)
+                                    .foregroundColor(Color.white)
+                                    .multilineTextAlignment(.center)
+                                
+                                Spacer()
+                                    .frame(height: 150)
+                                
+                                Text("Let's try sending a 'Talk Request' \nto their iPhone")
+                                    .fontWeight(.light)
+//                                    .frame(width: 380, height: 150)
+                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 15))
 //                                    .padding(50)
                                     .background(ColorManager .grey3)
                                     .multilineTextAlignment(.center)
                                     .cornerRadius(10)
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                    .opacity(0.5)
+                                    .opacity(0.8)
                                 //                                        .padding(30)
                                 
                              
                                 VStack {
                                     Spacer()
                                         .frame(height: 20)
-                                    
-                                    Text("Let's try sending a 'Talk Request' \nto their iPhone")
-                                        .font(.system(size: 20))
-                                        .fontWeight(.light)
-                                        .foregroundColor(Color.white)
-                                        .multilineTextAlignment(.center)
-                                    
-                                    Spacer()
-                                        .frame(height: 25)
+                                 
                                     
                                     
                                     HStack {
