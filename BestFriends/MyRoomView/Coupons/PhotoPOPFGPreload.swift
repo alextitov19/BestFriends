@@ -196,10 +196,10 @@ struct PhotoPopFGPreload: View {
 
                     
                     
-                    Text("Send a 'Meet-up Coupon'. Let's grab an ice cream, or cheeseburger like before.")
+                    Text("Make a 'Meet-up Coupon' to grab an ice cream, burger or something & talk.")
                     
                         .frame(width: 200, height: 70)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(Color.black)
                         .font(.system(size: 15, weight: .light))
                         .padding(30)
                         .background(ColorManager .grey2)
@@ -209,6 +209,7 @@ struct PhotoPopFGPreload: View {
                         .cornerRadius(15)
                         .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
                         .multilineTextAlignment(.center)
+//                        .opacity(0.2)
 //                       .padding(30)
                     
                 }
@@ -219,7 +220,7 @@ struct PhotoPopFGPreload: View {
                         Spacer()
                             .frame(height: 30)
                         
-                        Text("Alert friend to check Chat")
+                        Text("Ask friend to check Chat")
                             .font(.system(size: 17))
                             .fontWeight(.light)
                             .foregroundColor(Color.white)
