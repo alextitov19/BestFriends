@@ -88,7 +88,7 @@ struct HomeView: View {
                             
                             ZStack {
                              
-                                Image(systemName: "heart")
+                                Image(systemName: "")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 60, height: 60)
@@ -108,7 +108,9 @@ struct HomeView: View {
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 35, height: 35)
-                                    .foregroundColor(Color.white)
+                                    .foregroundColor(ColorManager .purple3)
+                                    .glow(color: ColorManager.purple4, radius: 3)
+                               
                           
                                 
                             }
@@ -159,8 +161,8 @@ struct HomeView: View {
                                     Image(systemName: "gear")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 37, height: 37)
-                                        .foregroundColor(Color.pink)
+                                        .frame(width: 35, height: 35)
+                                        .foregroundColor(ColorManager .purple2)
                                         .glow(color: ColorManager.purple4, radius: 3)
                                         .opacity(0.5)
                                 })
@@ -176,9 +178,9 @@ struct HomeView: View {
                                     Image(systemName: "info.circle")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 37, height: 37)
-                                        .foregroundColor(Color.pink)
-                                        .glow(color: ColorManager.purple4, radius: 3)
+                                        .frame(width: 35, height: 35)
+                                        .foregroundColor(ColorManager .purple2)
+                                       .glow(color: ColorManager.purple4, radius: 3)
                                         .opacity(0.5)
                                 })
                             
@@ -188,11 +190,11 @@ struct HomeView: View {
                             
                             ZStack {
                                 
-                                Image(systemName: "triangle")
+                                Image(systemName: "circle")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 60, height: 60)
-                                    .foregroundColor(Color.pink)
+                                    .frame(width: 40, height: 40)
+                                    .foregroundColor(ColorManager .purple3)
                                     .glow(color: ColorManager.purple4, radius: 3)
                                     .opacity(0.5)
                                 
@@ -204,10 +206,10 @@ struct HomeView: View {
                                         .fontWeight(.regular)
                                         .frame(width: 50, height: 40)
                                         .foregroundColor(Color.white)
-                                        .font(.system(size: 9))
+                                        .font(.system(size: 7))
 //                                        .background(Color.green)
                                         .cornerRadius(9)
-                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                         .opacity(0.9)
                                 })
                                 

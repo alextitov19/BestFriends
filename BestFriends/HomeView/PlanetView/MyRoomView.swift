@@ -591,7 +591,7 @@ struct MyRoomView: View {
                     }
                     
                     Spacer()
-                        .frame(height: 15)
+                        .frame(height: 25)
                     
                     //************************************************ Accessorizing Section **************
                     
@@ -687,7 +687,8 @@ struct MyRoomView: View {
                         
                         //************************************************ Accessorizing Section **************
                         
-                        
+                        Spacer()
+                            .frame(height: 25)
                         
                         HStack {
                             
