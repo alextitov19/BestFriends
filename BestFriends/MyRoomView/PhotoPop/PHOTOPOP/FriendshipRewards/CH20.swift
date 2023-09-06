@@ -21,15 +21,15 @@ struct CH20: View {
     var body: some View {
         ZStack {
             
-            ColorManager .purple4
-                .opacity(0.6)
+            Color.black
+                .opacity(0.9)
                 .ignoresSafeArea()
             
             
-            Image("FHBackground")
-                .resizable()
-                .scaledToFill()
-                .edgesIgnoringSafeArea(.all)
+            AdPlayerView(name: "Planet4")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.99)
             
             Circle()
                 .frame(width: 300, height: 300)

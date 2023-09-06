@@ -39,33 +39,11 @@ struct MyRoomView: View {
     
     var body: some View {
         ZStack {
-            
-            
-            
-            //            Color.black
-            //                .ignoresSafeArea()
-            //                .scaledToFill()
-            //                .opacity(0.8)
-            //
-            //
-            
-            
-            
+        
             Color.black
                 .opacity(0.9)
                 .ignoresSafeArea()
             
-            
-            //            Image("FHBackground")
-            //                .resizable()
-            //                .scaledToFill()
-            //                .edgesIgnoringSafeArea(.all)
-            //                .opacity(0.7)
-            
-            //            AdPlayerView(name: "MainPgEarth")
-            //                .ignoresSafeArea()
-            //                .blendMode(.screen)
-            //                .opacity(0.99)
             
             AdPlayerView(name: "background_9")
                 .ignoresSafeArea()
@@ -396,7 +374,7 @@ struct MyRoomView: View {
                                             .frame(width: 300, height: 42)
                                             .foregroundColor(Color.black)
                                             .font(.system(size: 16))
-                                            .background(Color.cyan)
+                                            .background(Color.green)
                                             .glow(color: ColorManager.purple1, radius: 1)
                                             .shadow(color: .white, radius: 3, x: -4, y: 4)
                                             .opacity(0.9)
@@ -410,33 +388,33 @@ struct MyRoomView: View {
                                         // ***************************** Pic of the Day ********** After Aug 22 subit to Apple ******
                     ZStack {
                                             
-//                      Image(systemName: "heart.fill")
-//                            .resizable()
-//                            .foregroundColor(Color.red)
-//                            .frame(width: 80, height: 60)
-//                            .rotationEffect(.degrees(-7))
-//                            .shadow(color: .white, radius: 2, x: -2, y: 2)
-//                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//                            .opacity(0.7)
-//
-//
-//                        NavigationLink( destination:  EmptyView(),
-//                                label: {
-//                                Text("Me \n+")
-//                                .fontWeight(.light)
-//                                .foregroundColor(Color.black)
-//                                .font(.system(size: 13))
-//                                .rotationEffect(.degrees(-7))
-//                                .opacity(1.0)
-//
-//
-//                                })
+                      Image(systemName: "heart.fill")
+                            .resizable()
+                            .foregroundColor(Color.purple)
+                            .frame(width: 80, height: 60)
+                            .rotationEffect(.degrees(-7))
+                            .shadow(color: .white, radius: 2, x: -2, y: 2)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                            .opacity(0.7)
+
+
+                        NavigationLink( destination:  RR5(user: user, friends: friends),
+                                label: {
+                                Text("What are \nU doing?")
+                                .fontWeight(.light)
+                                .foregroundColor(Color.black)
+                                .font(.system(size: 10))
+                                .rotationEffect(.degrees(-7))
+                                .opacity(1.0)
+
+
+                                })
                            }
                         
                                         
                                         
                                         Spacer ()
-                                            .frame(width: 190)
+                                            .frame(width: 130)
                                         
                                         //
                                         ZStack {
