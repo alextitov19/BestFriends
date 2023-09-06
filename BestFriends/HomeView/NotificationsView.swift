@@ -105,7 +105,7 @@ struct NotificationsView: View {
         @State private var thanksCustomActive = false
         @State private var newCongratulationsActive = false
         @State private var thanksCongratulationsActive = false
-        
+        @State private var meetupCouponActive = false
         
         init(ian: InAppNotification, user: User, friends: [User]) {
             self.ian = ian
@@ -145,6 +145,10 @@ struct NotificationsView: View {
                 
                 VStack {
                     
+                    
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $meetupCouponActive, label: {
+                        EmptyView()
+                    })
                     
                     NavigationLink(destination: PhotoPopView(user: user, friends: friends), isActive: $photoPopActive, label: {
                         EmptyView()
@@ -246,7 +250,7 @@ struct NotificationsView: View {
                     EmptyView()
                 })
                 
-              
+             
             
               
                 
@@ -342,7 +346,8 @@ struct NotificationsView: View {
                 
                 
                 
-                
+            case "I Need to Talk!":
+                meetupCouponActive = true
                 
             case "":
                 thanksCongratulationsActive = true

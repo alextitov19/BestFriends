@@ -153,15 +153,15 @@ struct PhotoPopFGPreload: View {
                                         TextField("", text: $customMessage)
                                             .placeholder(when: customMessage.isEmpty) {
                                                 HStack {
-                                                    Text("Type your Coupon here")
-                                                        .foregroundColor(ColorManager.grey4)
+                                                    Text("Type Meetup Coupon here")
+                                                        .foregroundColor(Color.white)
                                                         .fontWeight(.thin)
-                                                        .background(ColorManager .purple1)
-                                                    
+                                                        .background(Color.black)
+
                                                     Spacer()
                                                 }
                                             }
-                                            .foregroundColor(.black)
+                                            .foregroundColor(.white)
                                             .font(.system(size: 19))
                                             .submitLabel(.done)
                                             .onReceive(Just(customMessage)) { _ in limitText(65) }
@@ -174,6 +174,9 @@ struct PhotoPopFGPreload: View {
                                                     .padding(.horizontal, 60)
                                             )
                                             .padding(.bottom, 5)
+                                        
+                             
+                                        
                                     }
                                 }
                                 
@@ -193,7 +196,7 @@ struct PhotoPopFGPreload: View {
 
                     
                     
-                    Text("Send a 'Meet-up Coupon'. Let's get an ice cream, a cheeseburger like before.")
+                    Text("Send a 'Meet-up Coupon'. Let's grab an ice cream, or cheeseburger like before.")
                     
                         .frame(width: 200, height: 70)
                         .foregroundColor(Color.white)
@@ -335,7 +338,7 @@ struct PhotoPopFGPreload: View {
                                     .background(shareColor)
                                     .cornerRadius(25)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    .alert("Your Friendship COUPON \n\nhas been sent.", isPresented: $showingAlert) {
+                                    .alert("Your Meetup Coupon \n\nhas been sent.", isPresented: $showingAlert) {
                                         Button("OK", role: .cancel) { }
                                     }
                             })
@@ -389,12 +392,12 @@ struct PhotoPopFGPreload: View {
             for id in selectedFriends {
                 for f in friends {
                     if f.id == id {
-                        RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) just sent you a 'Friendship Coupon' in Chat", APNToken: f.APNToken)
+                        RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) just sent you a 'Meetup Coupon' in Chat", APNToken: f.APNToken)
                         
                         //MARK: The code below creates an in-app notification for your friend (f.id)
                         //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                        RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Just got a 'Friendship Coupon' in Chat", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                            print("Create a Friendship Coupon notification response code: ", response)
+                        RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Just got a 'Meetup Coupon' in Chat", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                            print("Create a meetup Coupon notification response code: ", response)
                         })
                         RestApi.instance.createStreakLog(friendID: f.id)
                     }
