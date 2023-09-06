@@ -106,18 +106,19 @@ struct Step4_NuclearOption: View {
 //                            .shadow(color: Color .white, radius: 65, x: 30, y: 50) .opacity(0.99)
                             .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
                             .opacity(0.90)
+                            .blinking(duration: 2.0)
                        
                         VStack {
                             Text("Big Fight")
                                 .font(.system(size: 20, weight: .light))
                                 .fontWeight(.light)
-                                .foregroundColor(ColorManager .grey4)
+                                .foregroundColor(ColorManager .grey1)
                                 .multilineTextAlignment(.center)
                             
                             Text("Not talking to each other?")
                                 .font(.system(size: 13, weight: .light))
                                 .fontWeight(.light)
-                                .foregroundColor(ColorManager .grey4)
+                                .foregroundColor(ColorManager .grey1)
                                 .multilineTextAlignment(.center)
                             Spacer ()
                                 .frame(height: 15)
@@ -125,9 +126,9 @@ struct Step4_NuclearOption: View {
                             Text("TAP here")
                                 .font(.system(size: 20, weight: .light))
                                 .fontWeight(.light)
-                                .foregroundColor(ColorManager .grey4)
+                                .foregroundColor(ColorManager .grey1)
                                 .multilineTextAlignment(.center)
-                            
+//                                .blinking(duration: 2.0)
                         }
                     }
                         

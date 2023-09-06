@@ -12,8 +12,13 @@ import FirebaseMessaging
 class RestApi {
     var helper: Helper
     var userId: String?
-    let API_URL = "http://af1da3679459b4f559b1dbb17a97f432-44066674.us-east-2.elb.amazonaws.com:80/api/v1/services"
-    let WS_URL = "ws://af1da3679459b4f559b1dbb17a97f432-44066674.us-east-2.elb.amazonaws.com:80/api/v1/services"
+    let API_URL = "http://a62582cbc2c9d4a689103dc16200ef4a-1698906125.us-east-2.elb.amazonaws.com:80/api/v1/services"
+    let WS_URL = "ws://a62582cbc2c9d4a689103dc16200ef4a-1698906125.us-east-2.elb.amazonaws.com:80/api/v1/services"
+    
+    
+    
+//    OLD SERVER (Alex built) let API_URL = "http://af1da3679459b4f559b1dbb17a97f432-44066674.us-east-2.elb.amazonaws.com:80/api/v1/services"
+//    let WS_URL = "ws://af1da3679459b4f559b1dbb17a97f432-44066674.us-east-2.elb.amazonaws.com:80/api/v1/services"
     
     //    let API_URL = "http://localhost:8080/api/v1/services"
     //    let WS_URL = "ws://localhost:8080/api/v1/services"

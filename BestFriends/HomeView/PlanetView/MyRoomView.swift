@@ -35,7 +35,7 @@ struct MyRoomView: View {
     
     //    @State private var movingPlanets = false
     
-    
+    @State private var scale = 1.0
     
     var body: some View {
         ZStack {
@@ -215,12 +215,15 @@ struct MyRoomView: View {
                     
                     //     CareHearts ******************************************************
                     
+                    
                     //     CareHearts ******************************************************
                     
                     VStack {
                         
                         Spacer()
                             .frame(height: 60)
+                        
+
                         
                         ZStack {
                             
@@ -237,6 +240,9 @@ struct MyRoomView: View {
                                     
                                     
                                 })
+                          
+                       
+                            
                             VStack {
                                 
                                 VStack {
@@ -367,7 +373,7 @@ struct MyRoomView: View {
                                 ZStack {
                                     
                                     
-                                    NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
+                                    NavigationLink( destination:  RR5(user: user, friends: friends),
                                                     label: {
                                         Text("PhotoPOP")
                                             .fontWeight(.bold)
@@ -396,6 +402,7 @@ struct MyRoomView: View {
                             .shadow(color: .white, radius: 2, x: -2, y: 2)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                             .opacity(0.7)
+                            .blinking(duration: 2.0)
 
 
                         NavigationLink( destination:  RR5(user: user, friends: friends),
@@ -406,6 +413,7 @@ struct MyRoomView: View {
                                 .font(.system(size: 10))
                                 .rotationEffect(.degrees(-7))
                                 .opacity(1.0)
+                                .blinking(duration: 2.0)
 
 
                                 })
@@ -431,7 +439,7 @@ struct MyRoomView: View {
                                             
                                             NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
                                                             label: {
-                                                Text("just \n'Shake' \niPhone")
+                                                Text("Load \nPhotoPOPs")
                                                     .fontWeight(.light)
                                                     .foregroundColor(Color.black)
                                                     .font(.system(size: 11))
@@ -595,6 +603,9 @@ struct MyRoomView: View {
                                             .cornerRadius(15)
                                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                             .opacity(0.6)
+//                                            .blinking()
+                                        
+                                        
                                     })
                                     
                                     HStack {

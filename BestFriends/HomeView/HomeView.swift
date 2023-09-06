@@ -110,9 +110,10 @@ struct HomeView: View {
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 35, height: 35)
-                                    .foregroundColor(ColorManager .purple3)
-                                    .glow(color: ColorManager.purple4, radius: 3)
-                                    .blinking(duration: 0.5)
+                                    .foregroundColor(Color.white)
+                                    .opacity(0.6)
+                                    .glow(color: Color.red, radius: 1)
+                                    .blinking(duration: 2.0)
                                
                           
                                 
@@ -166,7 +167,7 @@ struct HomeView: View {
                                         .scaledToFit()
                                         .frame(width: 35, height: 35)
                                         .foregroundColor(ColorManager .purple2)
-                                        .glow(color: ColorManager.purple4, radius: 3)
+//                                        .glow(color: ColorManager.purple4, radius: 3)
                                         .opacity(0.5)
                                 })
                             
@@ -183,7 +184,7 @@ struct HomeView: View {
                                         .scaledToFit()
                                         .frame(width: 35, height: 35)
                                         .foregroundColor(ColorManager .purple2)
-                                       .glow(color: ColorManager.purple4, radius: 3)
+//                                       .glow(color: ColorManager.purple4, radius: 3)
                                         .opacity(0.5)
                                 })
                             
@@ -197,10 +198,9 @@ struct HomeView: View {
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 47, height: 47)
-                                    .foregroundColor(ColorManager .purple3)
+                                    .foregroundColor(Color .green)
                                     .glow(color: ColorManager.purple4, radius: 3)
-                                    .opacity(0.5)
-                                    .blinking()
+                                    .blinking(duration: 2.0)
                                 
 //
 //                                    .scaleEffect(scale)
@@ -219,7 +219,7 @@ struct HomeView: View {
                                         .frame(width: 60, height: 60)
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 8))
-                                        .blinking(duration: 2.0)
+//                                        .blinking(duration: 2.0)
                                     
                                     
 //                                    //                                        .background(Color.green)

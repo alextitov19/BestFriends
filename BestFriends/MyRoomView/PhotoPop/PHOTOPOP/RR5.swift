@@ -137,7 +137,7 @@ struct RR5: View {
                     VStack {
                         
                         HStack {
-                            Text("Shoot me a quick PhotoPOP")
+                            Text("")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .font(.system(size: 13))
@@ -150,11 +150,12 @@ struct RR5: View {
                                 Image(systemName: "heart.fill")
                                     .resizable()
                                     .foregroundColor(Color.purple)
-                                    .frame(width: 150, height: 110)
+                                    .frame(width: 200, height: 150)
                                     .rotationEffect(.degrees(-7))
                                     .shadow(color: .white, radius: 2, x: -2, y: 2)
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                    .opacity(0.9)
+                                    .opacity(0.8)
+                                    .blinking(duration: 2.0)
                                 
                                 
                                 Text("Shoot me a \nquick PhotoPOP")
@@ -163,7 +164,7 @@ struct RR5: View {
                                     .font(.system(size: 16))
                                     .multilineTextAlignment(.center)
                                     .rotationEffect(.degrees(-7))
-                                    .opacity(0.85)
+                                    .opacity(0.9)
                             }
                         }
                         

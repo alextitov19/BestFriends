@@ -278,6 +278,7 @@ struct HugPreload: View {
                                     .rotationEffect(.degrees(-7))
                                     .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
                                     .opacity(0.5)
+                                    .blinking(duration: 2.0)
                                 
                                 
                                 NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
@@ -288,7 +289,8 @@ struct HugPreload: View {
                                         .font(.system(size: 20))
                                         .multilineTextAlignment(.center)
                                         .rotationEffect(.degrees(-7))
-                                        .opacity(0.85)
+                                        .opacity(1.0)
+                                        .blinking(duration: 2.0)
                                   
                                     
                                 }
