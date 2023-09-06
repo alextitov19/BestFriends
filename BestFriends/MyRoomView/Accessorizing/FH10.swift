@@ -23,20 +23,12 @@ struct FH10: View {
     var body: some View {
         ZStack {
 
-            ColorManager .purple4
-                .opacity(0.6)
+            ColorManager .grey4
+                .opacity(0.9)
                 .ignoresSafeArea()
 
             
-            Image("FHBackground")
-                     .resizable()
-                     .scaledToFill()
-                     .edgesIgnoringSafeArea(.all)
-            
-            Circle()
-                          .frame(width: 300, height: 300)
-                          .foregroundColor(ColorManager.purple3)
-                          .offset(x: -200, y: 400)
+    
        
             ZStack {
               
@@ -60,7 +52,7 @@ struct FH10: View {
                     .frame(width: 300, height: 60)
                     .foregroundColor(Color.white)
                     .font(.system(size: 17))
-                    .background(Color.cyan)
+                    .background(ColorManager .grey3)
                     .cornerRadius(10)
                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                 
@@ -73,7 +65,7 @@ struct FH10: View {
                            .frame(width: 300, height: 60)
                            .foregroundColor(Color.white)
                            .font(.system(size: 17))
-                           .background(Color.cyan)
+                           .background(ColorManager .grey3)
                            .cornerRadius(10)
                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                    
