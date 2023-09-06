@@ -51,7 +51,8 @@ struct Step4_NuclearOption: View {
 //                Step2_FightLandingView(user: user, friends: friends
 
                 NavigationLink(destination: CH14(user: user, friend: user, friends: friends, groups: groups), label: {
-                        HugCircle (color: Color.purple, friendName: "If you're ready to \nfix this... \n\nTAP here")
+                        HugCircle (color: Color.purple, friendName: "When you're ready to \nfix this... \n\nTAP here")
+                        .blinking(duration: 2.0)
                     })
                     .offset(x: showItems ? 0 : 0, y: showItems ? -20: 0)
                     .shadow(color: ColorManager .purple1, radius: 30, x: 10, y: 10)
