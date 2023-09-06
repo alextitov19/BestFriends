@@ -38,25 +38,26 @@ struct FH8: View {
         
         ZStack {
         
-            
-            Image("CareHeartBalloon 1")
+            Color.black
+                .opacity(0.9)
                 .ignoresSafeArea()
-                .scaledToFit()
-                .opacity(0.8)
             
-
+            AdPlayerView(name: "background_9")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                
                 
                 VStack {
 
 
                     
-                    Text("CareHeart")
+                    Text("Sending")
                         .font(.system(size: 45))
                         .foregroundColor(Color.white)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
-                    Text("Kisses")
+                    Text("CareHearts")
                         .font(.system(size: 45))
                         .foregroundColor(Color.white)
                         .fontWeight(.light)
@@ -72,23 +73,41 @@ struct FH8: View {
                             .foregroundColor(Color.purple)
                             .frame(width: 375, height: 375)
                             .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                            .opacity(0.9)
+                            .opacity(0.5)
+                      
                         VStack {
                             
                             
                             Spacer()
                                 .frame(height: 30)
                             
-                            Text("Your friend just blew you a kiss, \njump up high and catch it.")
+                            Text("Letting your friends know")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
-                            
+                            Text("you care.")
+                                .font(.system(size: 27))
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
                             Spacer()
                                 .frame(height: 20)
 
+                            NavigationLink(destination:HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
+                                label: {
+                                    Text("CareHearts")
+                                        .fontWeight(.regular)
+                                        .frame(width: 100, height: 33)
+                                        .foregroundColor(Color.white)
+                                        .font(.system(size: 13))
+                                        .background(Color.orange)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                    
+                                })
+                            
                         }
                         
                     }

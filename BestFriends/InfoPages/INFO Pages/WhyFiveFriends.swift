@@ -25,9 +25,13 @@ struct WhyFiveFriends: View {
         ZStack {
             
     
-            ColorManager.grey4
+            Color.black
+                .opacity(0.9)
                 .ignoresSafeArea()
-                .onAppear()
+            
+            AdPlayerView(name: "background_9")
+                .ignoresSafeArea()
+                .blendMode(.screen)
            
             VStack {
                 

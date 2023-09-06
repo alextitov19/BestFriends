@@ -35,11 +35,6 @@ struct HugPreload: View {
                 .opacity(0.9)
                 .ignoresSafeArea()
             
-            
-            //            AdPlayerView(name: "MainPgEarth")
-            //                .ignoresSafeArea()
-            //                .blendMode(.screen)
-            
             AdPlayerView(name: "background_9")
                 .ignoresSafeArea()
                 .blendMode(.screen)
@@ -109,12 +104,12 @@ struct HugPreload: View {
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
-                    Text("Letting friends know you care about them")
-                        .font(.system(size: 20))
-                        .italic()
-                        .foregroundColor(ColorManager .grey1)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
+//                    Text("Letting friends know you care about them")
+//                        .font(.system(size: 20))
+//                        .italic()
+//                        .foregroundColor(ColorManager .grey1)
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
                     
                     Text("Sharing the LOVE!")
                         .font(.system(size: 20))

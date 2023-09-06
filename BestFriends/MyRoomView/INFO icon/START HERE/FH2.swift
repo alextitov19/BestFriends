@@ -41,49 +41,52 @@ struct FH2: View {
         
         ZStack {
             
-            Image("CareHeartBalloon 1")
+            Color.black
+                .opacity(0.9)
                 .ignoresSafeArea()
-                .scaledToFit()
-                .opacity(0.8)
+            
+            AdPlayerView(name: "background_9")
+                .ignoresSafeArea()
+                .blendMode(.screen)
  
 
             VStack {
                 
-                Text("introducing")
-                    .font(.system(size: 15))
-                    .italic()
-                    .foregroundColor(Color.white)
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
-                
-                Text("BestFriends")
-                    .font(.system(size: 20))
-                    .italic()
-                    .foregroundColor(Color.white)
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
-                
-                Spacer()
-                    .frame(height: 15)
-                
-                Text("it's just for")
-                    .font(.system(size: 35))
-                    .foregroundColor(Color.white)
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
-                
-
-                Text("you & your")
-                    .font(.system(size: 35))
-                    .foregroundColor(Color.white)
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
-                
-                Text("friends")
-                    .font(.system(size: 35))
-                    .foregroundColor(Color.white)
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
+//                Text("introducing")
+//                    .font(.system(size: 15))
+//                    .italic()
+//                    .foregroundColor(Color.white)
+//                    .fontWeight(.regular)
+//                    .multilineTextAlignment(.center)
+//
+//                Text("BestFriends")
+//                    .font(.system(size: 20))
+//                    .italic()
+//                    .foregroundColor(Color.white)
+//                    .fontWeight(.regular)
+//                    .multilineTextAlignment(.center)
+//
+//                Spacer()
+//                    .frame(height: 15)
+//
+//                Text("it's just for")
+//                    .font(.system(size: 35))
+//                    .foregroundColor(Color.white)
+//                    .fontWeight(.regular)
+//                    .multilineTextAlignment(.center)
+//
+//
+//                Text("you & your")
+//                    .font(.system(size: 35))
+//                    .foregroundColor(Color.white)
+//                    .fontWeight(.regular)
+//                    .multilineTextAlignment(.center)
+//
+//                Text("friends")
+//                    .font(.system(size: 35))
+//                    .foregroundColor(Color.white)
+//                    .fontWeight(.regular)
+//                    .multilineTextAlignment(.center)
              
                 
                 ZStack {
@@ -135,17 +138,7 @@ struct FH2: View {
                         Spacer()
                             .frame(height: 30)
               
-//                        Text("a social media app that")
-//                            .font(.system(size: 20))
-//                            .foregroundColor(Color.white)
-//                            .fontWeight(.regular)
-//                            .multilineTextAlignment(.center)
-//                   
-//                        Text("feels like a sleep-over!")
-//                            .font(.system(size: 30))
-//                            .foregroundColor(Color.white)
-//                            .fontWeight(.regular)
-//                            .multilineTextAlignment(.center)
+
                     }
                     
                 }

@@ -48,13 +48,13 @@ struct RR6: View {
     
         
         ZStack {
-         
-            Image("CareHeartBalloon 1")
+            Color.black
+                .opacity(0.9)
                 .ignoresSafeArea()
-                .scaledToFit()
-                .opacity(0.8)
-        
-
+            
+            AdPlayerView(name: "background_9")
+                .ignoresSafeArea()
+                .blendMode(.screen)
                 
                 VStack {
 
@@ -74,7 +74,7 @@ struct RR6: View {
                             .foregroundColor(Color.purple)
                             .frame(width: 375, height: 375)
                             .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                            .opacity(0.9)
+                            .opacity(0.5)
                         VStack {
                             
                             
@@ -87,7 +87,7 @@ struct RR6: View {
                                 .multilineTextAlignment(.center)
                             
                             
-                            Text(" and your BFFs")
+                            Text("and your 5 BFFs")
                                 .font(.system(size: 25))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
@@ -97,9 +97,7 @@ struct RR6: View {
                                 .frame(height: 20)
                             
                             
-                            NavigationLink(
-                                
-                                destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
+                            NavigationLink(destination:InviteView(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                                     Text("+ Friends")
                                         .fontWeight(.regular)
@@ -115,34 +113,34 @@ struct RR6: View {
                             Spacer()
                                 .frame(height: 20)
                             
-                            Text("A friend may well be reckoned \nthe masterpiece of nature.")
-                                .font(.system(size: 17))
-                                .italic()
-                                .foregroundColor(Color.white)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
+//                            Text("A friend may well be reckoned \nthe masterpiece of nature.")
+//                                .font(.system(size: 17))
+//                                .italic()
+//                                .foregroundColor(Color.white)
+//                                .fontWeight(.thin)
+//                                .multilineTextAlignment(.center)
+//
+//
+//                            Text("- - Emerson")
+//                                .font(.system(size: 13))
+//                                .foregroundColor(ColorManager .grey1)
+//                                .fontWeight(.thin)
+//                                .multilineTextAlignment(.center)
+//
                             
                             
-                            Text("- - Emerson")
-                                .font(.system(size: 13))
-                                .foregroundColor(ColorManager .grey1)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                            
-                            
-                            
-                            NavigationLink(
-                                destination: WhyFiveFriends(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
-                               label: {
-                                   Text("Why only 5 BFFs")
-                                       .fontWeight(.regular)
-                                       .frame(width: 150, height: 33)
-                                       .foregroundColor(Color.white)
-                                       .font(.system(size: 13))
-                                       .background(Color.orange)
-                                       .cornerRadius(15)
-                                       .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                               })
+//                            NavigationLink(
+//                                destination: WhyFiveFriends(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
+//                               label: {
+//                                   Text("Why only 5 BFFs")
+//                                       .fontWeight(.regular)
+//                                       .frame(width: 150, height: 33)
+//                                       .foregroundColor(Color.white)
+//                                       .font(.system(size: 13))
+//                                       .background(Color.orange)
+//                                       .cornerRadius(15)
+//                                       .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                               })
 
                         }
                         

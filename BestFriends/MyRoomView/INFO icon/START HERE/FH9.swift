@@ -35,13 +35,14 @@ struct FH9: View {
         
         ZStack {
          
-            Image("CareHeartBalloon 1")
+            Color.black
+                .opacity(0.9)
                 .ignoresSafeArea()
-                .scaledToFit()
-                .opacity(0.8)
-        
-
-                
+            
+            AdPlayerView(name: "background_9")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+            
                 VStack {
 
               
@@ -63,14 +64,14 @@ struct FH9: View {
                             Spacer()
                                 .frame(height: 30)
                             
-                            Text("your friends are 'always' here")
+                            Text("Building Chat Rooms")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
                             
-                            Text("when you need them.")
+                            Text("???????.")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)

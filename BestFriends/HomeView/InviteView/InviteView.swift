@@ -83,18 +83,18 @@ struct InviteView: View {
                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                    })
                 
-                NavigationLink(
-                    destination: WhyFiveFriends(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
-                   label: {
-                       Text("Why only 5 BFFs to start?")
-                           .fontWeight(.thin)
-                           .frame(width: 300, height: 40)
-                           .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                           .font(.system(size: 25))
-                           .background(Color.orange)
-                           .cornerRadius(10)
-                           .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                   })
+//                NavigationLink(
+//                    destination: WhyFiveFriends(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
+//                   label: {
+//                       Text("Why only 5 BFFs to start?")
+//                           .fontWeight(.thin)
+//                           .frame(width: 300, height: 40)
+//                           .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                           .font(.system(size: 25))
+//                           .background(Color.orange)
+//                           .cornerRadius(10)
+//                           .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                   })
                 
 //                Text("(Friends show up as planets on homepage)")
 //                    .italic()
