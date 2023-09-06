@@ -95,13 +95,12 @@ struct RR5: View {
                                 VStack {
                                    
                                     
-                                    Text("Sending Hugs")
-                                        .font(.system(size: 45, weight: .light))
+                                    Text("Hey, what are")
+                                        .font(.system(size: 40, weight: .light))
                                         .foregroundColor(Color.white)
                                     
-                                    Text("this is the 'supportive' CareHeart")
-                                        .font(.system(size: 20, weight: .light))
-                                        .italic()
+                                    Text("you doing?")
+                                        .font(.system(size: 40, weight: .light))
                                         .foregroundColor(Color.white)
                                     
                                     Spacer()
@@ -137,13 +136,38 @@ struct RR5: View {
                 
                     VStack {
                         
-                     
-
+                        HStack {
+                            Text("Shoot me a quick PhotoPOP")
+                                .fontWeight(.light)
+                                .foregroundColor(Color.black)
+                                .font(.system(size: 13))
+                                .multilineTextAlignment(.center)
+                                .rotationEffect(.degrees(-7))
+                                .opacity(0.85)
                         
-                        Text("it's the next best thing to being there")
-                            .font(.system(size: 15, weight: .light))
-                            .italic()
-                            .foregroundColor(Color.white)
+                            ZStack {
+                                
+                                Image(systemName: "heart.fill")
+                                    .resizable()
+                                    .foregroundColor(Color.purple)
+                                    .frame(width: 150, height: 110)
+                                    .rotationEffect(.degrees(-7))
+                                    .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                    .opacity(0.9)
+                                
+                                
+                                Text("Shoot me a quick PhotoPOP")
+                                    .fontWeight(.light)
+                                    .foregroundColor(Color.black)
+                                    .font(.system(size: 13))
+                                    .multilineTextAlignment(.center)
+                                    .rotationEffect(.degrees(-7))
+                                    .opacity(0.85)
+                            }
+                        }
+                        
+                     
                         
                         
                         HStack {
@@ -266,7 +290,7 @@ struct RR5: View {
                                 .background(ColorManager .grey2)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your hug has been sent. \n\nSometimes there's more power in a simple hug than a thousand words. \n\nBy tapping [Share] your CareHeart is automatically \nsent to: in-app & push notifications + our Widget", isPresented: $showingAlert) {
+                                .alert("Your request has been sent", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -313,48 +337,28 @@ struct RR5: View {
                     Spacer ()
                         .frame(width: 250)
                     
-                    NavigationLink(
-                        destination:  PhotoPopView(user: user, friends: friends),
-                        label: {
-                            
-                            Image(systemName: "camera")
-                            
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 40, height: 40)
-                                .rotationEffect(.degrees(-7))
-                                .foregroundColor(Color.cyan)
-                                .glow(color: ColorManager.purple4, radius: 2)
-                                .opacity(0.6)
-                            
-                        })
+//                    NavigationLink(
+//                        destination:  PhotoPopView(user: user, friends: friends),
+//                        label: {
+//
+//                            Image(systemName: "camera")
+//
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 40, height: 40)
+//                                .rotationEffect(.degrees(-7))
+//                                .foregroundColor(Color.cyan)
+//                                .glow(color: ColorManager.purple4, radius: 2)
+//                                .opacity(0.6)
+//
+//                        })
                             
                             Spacer ()
                                 .frame(width: 15)
                             
                     VStack {
                         
-                        ZStack {
-                            
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .foregroundColor(Color.purple)
-                                .frame(width: 150, height: 110)
-                                .rotationEffect(.degrees(-7))
-                                .shadow(color: .white, radius: 2, x: -2, y: 2)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                .opacity(0.9)
-                            
-                            
-                            Text("Send a PhotoPOP \nof a fun time \ntogether")
-                                .fontWeight(.light)
-                                .foregroundColor(Color.black)
-                                .font(.system(size: 13))
-                                .multilineTextAlignment(.center)
-                                .rotationEffect(.degrees(-7))
-                                .opacity(0.85)
-                            
-                        }
+                      
                    
                     }
                             
@@ -376,14 +380,14 @@ struct RR5: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "aah! ...  \(user.firstName) sent you a hug.", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "Hey,  \(user.firstName) What are you doing? Shoot me a quick PhotoPOP.", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Just sent you a warming Hug! ... TAP", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                        print("Create a hug notification response code: ", response)
-                    })
-                    RestApi.instance.createStreakLog(friendID: f.id)
+//                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "What are you doing? Shoot me a quick PhotoPOP.", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+//                        print("Create a requested PhotoPOP notification response code: ", response)
+//                    })
+//                    RestApi.instance.createStreakLog(friendID: f.id)
                 }
             }
         }

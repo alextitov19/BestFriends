@@ -34,14 +34,16 @@ struct NotificationsView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color.black
+                
+                ColorManager .grey4
                     .ignoresSafeArea()
                     .onAppear(perform: getNotifications)
                 
-                AdPlayerView(name: "Notifications2")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
+//                AdPlayerView(name: "Notifications2")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
                 
+              
                 VStack {
                     Text("Fresh CareHearts")
                         .font(.system(size: 30, weight: .regular))
