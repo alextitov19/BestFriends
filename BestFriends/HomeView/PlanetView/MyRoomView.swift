@@ -103,26 +103,26 @@ struct MyRoomView: View {
                                 
                                 ZStack {
                                     ZStack {
-                                        
+
                                         Image(systemName: "heart.fill")
                                             .resizable()
                                             .foregroundColor(ColorManager .purple3)
                                             .frame(width: 60, height: 55)
                                             .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                                             .opacity(0.7)
-                                        
+
                                         NavigationLink(
-                                            
+
                                             destination: BuiltByTeensView(user: user, friends: friends),
                                             label: {
                                                 Text("Our \nStory")
                                                     .fontWeight(.regular)
                                                     .foregroundColor(Color.white)
                                                     .font(.system(size: 10))
-                                                
+
                                             })
-                                       
-                                    }
+
+                                   }
                                     
                                     Spacer ()
                                     //                                        .frame(width: 40)
@@ -173,14 +173,14 @@ struct MyRoomView: View {
             HStack {
                 
 //                ZStack {
-//                    
+//
 //                    Button(action: {
 //                        sessionManager.showLogin()
 //                    },
 //                           label: {
-//                        
+//
 //                        ZStack{
-//               
+//
 //                            Image(systemName: "heart")
 //                                .resizable()
 //                                .scaledToFit()
@@ -188,14 +188,14 @@ struct MyRoomView: View {
 //                                .foregroundColor(Color.red)
 //                                .glow(color: ColorManager.purple4, radius: 3)
 //                                .opacity(0.5)
-//                            
-//                            
-//                            
+//
+//
+//
 //                            Text("CareHeart \nAlert")
 //                                .fontWeight(.regular)
 //                                .foregroundColor(Color.white)
 //                                .font(.system(size: 10))
-//                            
+//
 //                        }
 //                    })
 //            }
