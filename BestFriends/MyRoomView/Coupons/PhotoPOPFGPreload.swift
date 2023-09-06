@@ -142,10 +142,10 @@ struct PhotoPopFGPreload: View {
                                 }
 
                                 ZStack(alignment: .bottom) {
-                                    Image("newCoupon")
-                                        .resizable()
-                                        .frame(width: 340, height: 150)
-                                        .cornerRadius(15)
+//                                    Image("newCoupon")
+//                                        .resizable()
+//                                        .frame(width: 340, height: 150)
+//                                        .cornerRadius(15)
                                     
                                     VStack {
                                         Spacer()
@@ -189,20 +189,20 @@ struct PhotoPopFGPreload: View {
                     VStack {
                         
                         Spacer()
-                            .frame(height: 40)
+                            .frame(height: 140)
 
                     
                     
-                    Text("Send your friend a 'Meet-up Coupon' so next time you are together they can redeem for your gift, like an ice cream, a cheeseburger - what ever you want to give them.")
+                    Text("Send a 'Meet-up Coupon'. Let's get an ice cream, a cheeseburger and talk - what ever you want.")
                     
-                        .frame(width: 320, height: 115)
+                        .frame(width: 200, height: 70)
                         .foregroundColor(Color.white)
-                        .font(.system(size: 18, weight: .light))
+                        .font(.system(size: 15, weight: .light))
                         .padding(30)
                         .background(ColorManager .grey2)
                         .glow(color: ColorManager.purple3, radius: 1)
                         .shadow(color: .white, radius: 3, x: -4, y: 4)
-                        .opacity(0.9)
+                        .opacity(0.5)
                         .cornerRadius(15)
                         .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
                         .multilineTextAlignment(.center)
@@ -214,9 +214,9 @@ struct PhotoPopFGPreload: View {
                     VStack {
                         
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 30)
                         
-                        Text("Alert friend to look for 'Meet-up Coupon' in Chat")
+                        Text("Alert friend to check Chat")
                             .font(.system(size: 17))
                             .fontWeight(.light)
                             .foregroundColor(Color.white)
@@ -229,7 +229,7 @@ struct PhotoPopFGPreload: View {
                         VStack {
                             
                             Spacer()
-                                .frame(height: 5)
+                                .frame(height:20)
                             
                             
                             HStack {

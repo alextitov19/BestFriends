@@ -408,43 +408,31 @@ struct MyRoomView: View {
                                     HStack {
                                         
                                         // ***************************** Pic of the Day ********** After Aug 22 subit to Apple ******
-                                        ZStack {
-                                            //
-                                            //                                                Image(systemName: "heart.fill")
-                                            //                                                    .resizable()
-                                            //                                                    .foregroundColor(Color.red)
-                                            //                                                    .frame(width: 80, height: 60)
-                                            //                                                    .rotationEffect(.degrees(-7))
-                                            //                                                    .shadow(color: .white, radius: 2, x: -2, y: 2)
-                                            //                                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                            //                                                    .opacity(0.7)
-                                            //
-                                            //
-                                            //                                                    NavigationLink( destination:  EmptyView(),
-                                            //                                                                    label: {
-                                            //                                                        Text("Me \n+")
-                                            //                                                            .fontWeight(.light)
-                                            //                                                            .foregroundColor(Color.black)
-                                            //                                                            .font(.system(size: 13))
-                                            //                                                            .rotationEffect(.degrees(-7))
-                                            //                                                            .opacity(1.0)
-                                            //
-                                            //
-                                            //                                                    })
-                                        }
-                                        
-                                        //  **********************************************************************************
-                                        
-                                        
-                                        //                                            Image(systemName: "")
-                                        //                                                .resizable()
-                                        //                                                .scaledToFit()
-                                        //                                                .frame(width: 37, height: 37)
-                                        //                                                .opacity(0.5)
-                                        //                                                .foregroundColor(.black)
-                                        //                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                        //
-                                        //
+                    ZStack {
+                                            
+//                      Image(systemName: "heart.fill")
+//                            .resizable()
+//                            .foregroundColor(Color.red)
+//                            .frame(width: 80, height: 60)
+//                            .rotationEffect(.degrees(-7))
+//                            .shadow(color: .white, radius: 2, x: -2, y: 2)
+//                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                            .opacity(0.7)
+//
+//
+//                        NavigationLink( destination:  EmptyView(),
+//                                label: {
+//                                Text("Me \n+")
+//                                .fontWeight(.light)
+//                                .foregroundColor(Color.black)
+//                                .font(.system(size: 13))
+//                                .rotationEffect(.degrees(-7))
+//                                .opacity(1.0)
+//
+//
+//                                })
+                           }
+                        
                                         
                                         
                                         Spacer ()
@@ -472,15 +460,7 @@ struct MyRoomView: View {
                                                     .rotationEffect(.degrees(7))
                                                     .opacity(0.85)
                                                 
-                                                //                                                NavigationLink( destination:  CH16(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                                //                                                                label: {
-                                                //                                                    Text("super \nfriendship \ndays")
-                                                //                                                        .fontWeight(.light)
-                                                //                                                        .foregroundColor(Color.black)
-                                                //                                                        .font(.system(size: 11))
-                                                //                                                        .rotationEffect(.degrees(7))
-                                                //                                                        .opacity(0.85)
-                                                
+                                           
                                             })
                                             
                                         }
@@ -522,20 +502,20 @@ struct MyRoomView: View {
                                             
                                             VStack {
                                                 
-                                                NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
-                                                                label: {
-                                                    Text("Meet-up \nCoupons")
-                                                        .fontWeight(.regular)
-                                                        .frame(width: 120, height: 45)
-                                                        .foregroundColor(ColorManager .purple5)
-                                                        .font(.system(size: 17))
-                                                        .background(ColorManager .purple1)
-                                                        .glow(color: ColorManager.purple3, radius: 1)
-                                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                                        .opacity(0.9)
-                                                        .cornerRadius(7)
-                                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-                                                })
+//                                                NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
+//                                                                label: {
+//                                                    Text("Meet-up \nCoupons")
+//                                                        .fontWeight(.regular)
+//                                                        .frame(width: 120, height: 45)
+//                                                        .foregroundColor(ColorManager .purple5)
+//                                                        .font(.system(size: 17))
+//                                                        .background(ColorManager .purple1)
+//                                                        .glow(color: ColorManager.purple3, radius: 1)
+//                                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                                        .opacity(0.9)
+//                                                        .cornerRadius(7)
+//                                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+//                                                })
                                                 
                                                 
                                                 
@@ -618,11 +598,11 @@ struct MyRoomView: View {
                     VStack {
                         
                         HStack {
+                        
                             VStack {
-                                
+                           
                                 ZStack {
-                                    
-                                    
+                             
                                     NavigationLink( destination:  Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
                                                     label: {
                                         Text("Friend Drama")
@@ -641,12 +621,36 @@ struct MyRoomView: View {
                                     
                                     HStack {
                                         
+                                       
+                               
                                         // ***************************** Pic of the Day ********** After Aug 22 subit to Apple ******
-                                        ZStack {
-                                        }
-                                        
+                    ZStack {
+                                            
+                      Image(systemName: "heart.fill")
+                            .resizable()
+                            .foregroundColor(Color.red)
+                            .frame(width: 80, height: 60)
+                            .rotationEffect(.degrees(-7))
+                            .shadow(color: .white, radius: 2, x: -2, y: 2)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                            .opacity(0.7)
+                                            
+                                            
+                        NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
+                                label: {
+                                Text("Send \nMeetup \nCoupon")
+                                .fontWeight(.light)
+                                .foregroundColor(Color.black)
+                                .font(.system(size: 10))
+                                .rotationEffect(.degrees(-7))
+                                .opacity(1.0)
+                    
+                                            
+                                })
+                            }
+                          
                                         Spacer ()
-                                            .frame(width: 190)
+                                            .frame(width: 130)
                                         
                                         //
                                         ZStack {
@@ -669,16 +673,7 @@ struct MyRoomView: View {
                                                     .font(.system(size: 10))
                                                     .rotationEffect(.degrees(7))
                                                     .opacity(0.85)
-                                                
-                                                //                                                NavigationLink( destination:  CH16(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                                //                                                                label: {
-                                                //                                                    Text("super \nfriendship \ndays")
-                                                //                                                        .fontWeight(.light)
-                                                //                                                        .foregroundColor(Color.black)
-                                                //                                                        .font(.system(size: 11))
-                                                //                                                        .rotationEffect(.degrees(7))
-                                                //                                                        .opacity(0.85)
-                                                
+                                          
                                             })
                                             
                                         }
