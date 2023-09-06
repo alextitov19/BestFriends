@@ -102,32 +102,38 @@ struct MyRoomView: View {
                             HStack {
                                 
                                 ZStack {
-                                    
-                                    //                                    was: FH2
-                                    
-                                    NavigationLink( destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                                    label: {
-                                        Text("Start       Here!!!")
-                                            .fontWeight(.light)
-                                            .frame(width: 170, height: 33)
-                                            .foregroundColor(ColorManager .grey1)
-                                            .font(.system(size: 27))
-                                            .background(Color.green)
-                                            .cornerRadius(10)
-                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                            .opacity(0.6)
-                                    })
+                                    ZStack {
+                                        
+                                        Image(systemName: "heart.fill")
+                                            .resizable()
+                                            .foregroundColor(ColorManager .purple3)
+                                            .frame(width: 60, height: 55)
+                                            .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+                                            .opacity(0.7)
+                                        
+                                        NavigationLink(
+                                            
+                                            destination: BuiltByTeensView(user: user, friends: friends),
+                                            label: {
+                                                Text("Our \nStory")
+                                                    .fontWeight(.regular)
+                                                    .foregroundColor(Color.white)
+                                                    .font(.system(size: 10))
+                                                
+                                            })
+                                       
+                                    }
                                     
                                     Spacer ()
                                     //                                        .frame(width: 40)
-                                    
-                                    Image(systemName: "person.2.fill")
-                                        .resizable()
-                                        .foregroundColor(Color.cyan)
-                                        .frame(width: 30, height: 30)
-                                    //                                        .rotationEffect(.degrees())
-                                        .shadow(color: .white, radius: 2, x: -2, y: 2)
-                                    //                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//
+//                                    Image(systemName: "person.2.fill")
+//                                        .resizable()
+//                                        .foregroundColor(Color.cyan)
+//                                        .frame(width: 30, height: 30)
+//                                    //                                        .rotationEffect(.degrees())
+//                                        .shadow(color: .white, radius: 2, x: -2, y: 2)
+//                                    //                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                        
                                 }
                             }
@@ -166,43 +172,33 @@ struct MyRoomView: View {
             
             HStack {
                 
-                ZStack {
-                    
-                    Button(action: {
-                        sessionManager.showLogin()
-                    },
-                           label: {
-                        
-                        ZStack{
-                            
-                            //                            Image(systemName: "bell")
-                            //                                .resizable()
-                            //                                .scaledToFit()
-                            //                                .frame(width: 20, height: 20)
-                            //                                .foregroundColor(Color.white)
-                            
-                            
-                            Image(systemName: "heart")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 55, height: 55)
-                                .foregroundColor(Color.red)
-                                .glow(color: ColorManager.purple4, radius: 3)
-                                .opacity(0.5)
-                            
-                            
-                            
-                            Text("CareHeart \nAlert")
-                                .fontWeight(.regular)
-                                .foregroundColor(Color.white)
-                                .font(.system(size: 10))
-                            
-                        }
-                    })
-                    
-                    
-                    
-                }
+//                ZStack {
+//                    
+//                    Button(action: {
+//                        sessionManager.showLogin()
+//                    },
+//                           label: {
+//                        
+//                        ZStack{
+//               
+//                            Image(systemName: "heart")
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 55, height: 55)
+//                                .foregroundColor(Color.red)
+//                                .glow(color: ColorManager.purple4, radius: 3)
+//                                .opacity(0.5)
+//                            
+//                            
+//                            
+//                            Text("CareHeart \nAlert")
+//                                .fontWeight(.regular)
+//                                .foregroundColor(Color.white)
+//                                .font(.system(size: 10))
+//                            
+//                        }
+//                    })
+//            }
                 Spacer()
                     .frame(width: 100)
                 
@@ -214,27 +210,27 @@ struct MyRoomView: View {
 //                    .glow(color: ColorManager.purple4, radius: 3)
 //                    .opacity(0.5)
                 
-                ZStack {
-                    
-                    Image(systemName: "heart.fill")
-                        .resizable()
-                        .foregroundColor(ColorManager .purple3)
-                        .frame(width: 60, height: 55)
-                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.7)
-                    
-                    NavigationLink(
-                        
-                        destination: BuiltByTeensView(user: user, friends: friends),
-                        label: {
-                            Text("Our \nStory")
-                                .fontWeight(.regular)
-                                .foregroundColor(Color.white)
-                                .font(.system(size: 10))
-                            
-                        })
-                   
-                }
+//                ZStack {
+//
+//                    Image(systemName: "heart.fill")
+//                        .resizable()
+//                        .foregroundColor(ColorManager .purple3)
+//                        .frame(width: 60, height: 55)
+//                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+//                        .opacity(0.7)
+//
+//                    NavigationLink(
+//
+//                        destination: BuiltByTeensView(user: user, friends: friends),
+//                        label: {
+//                            Text("Our \nStory")
+//                                .fontWeight(.regular)
+//                                .foregroundColor(Color.white)
+//                                .font(.system(size: 10))
+//
+//                        })
+//
+//                }
             }
                     
                     

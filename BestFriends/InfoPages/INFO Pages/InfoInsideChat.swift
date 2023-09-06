@@ -19,15 +19,14 @@ struct InfoInsideChat: View {
         
         ZStack {
             
-            ColorManager .purple4
-                .opacity(0.6)
+            Color.black
+                .opacity(0.9)
                 .ignoresSafeArea()
-
             
-            Image("FHBackground")
-                     .resizable()
-                     .scaledToFill()
-                     .edgesIgnoringSafeArea(.all)
+            AdPlayerView(name: "background_9")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+            
             
             Circle()
                           .frame(width: 300, height: 300)
@@ -56,10 +55,10 @@ struct InfoInsideChat: View {
                     
                     Image(systemName: "circle.fill")
                         .resizable()
-                        .foregroundColor(ColorManager .purple4)
+                        .foregroundColor(Color .purple)
                         .frame(width: 400, height: 400)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.95)
+                        .opacity(0.5)
                     
                     
                     VStack {

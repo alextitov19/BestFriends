@@ -83,10 +83,7 @@ struct SendKisses: View {
                                     .font(.system(size: 45, weight: .light))
                                     .foregroundColor(ColorManager .grey1)
                                 
-                                Text("this is the 'being cute' CareHeart")
-                                    .font(.system(size: 20, weight: .light))
-                                    .italic()
-                                    .foregroundColor(Color.white)
+                             
                             }
                         }
                       

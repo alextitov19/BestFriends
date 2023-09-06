@@ -57,25 +57,42 @@ struct FH9: View {
                             .foregroundColor(Color.purple)
                             .frame(width: 375, height: 375)
                             .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                            .opacity(0.9)
+                            .opacity(0.5)
                         VStack {
                             
                             
                             Spacer()
                                 .frame(height: 30)
                             
-                            Text("Building Chat Rooms")
+                            Text("Building & customize")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
-                            
-                            Text("???????.")
+                            Text("your Chat Rooms")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
+                            
+                         
+                            
+                            NavigationLink(destination:InfoInsideChat(user: user),
+                                label: {
+                                    Text("Create Chat Rooms")
+                                        .fontWeight(.regular)
+                                        .frame(width: 200, height: 33)
+                                        .foregroundColor(Color.white)
+                                        .font(.system(size: 13))
+                                        .background(Color.orange)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                    
+                                })
+                            
+                            
+                            
                             
                             
                             Spacer()
