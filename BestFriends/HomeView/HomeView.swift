@@ -112,6 +112,7 @@ struct HomeView: View {
                                     .frame(width: 35, height: 35)
                                     .foregroundColor(ColorManager .purple3)
                                     .glow(color: ColorManager.purple4, radius: 3)
+                                    .blinking(duration: 0.5)
                                
                           
                                 
@@ -195,13 +196,15 @@ struct HomeView: View {
                                 Image(systemName: "circle")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 40, height: 40)
+                                    .frame(width: 47, height: 47)
                                     .foregroundColor(ColorManager .purple3)
                                     .glow(color: ColorManager.purple4, radius: 3)
                                     .opacity(0.5)
-                                    .scaleEffect(scale)
-                                    .animation(.easeInOut, value: scale)
-                           
+                                    .blinking()
+                                
+//
+//                                    .scaleEffect(scale)
+//                                    .animation(.easeInOut, value: scale)
                                 
 //                                static func bouncy(
 //                                    duration: TimeInterval = 0.5,
@@ -211,21 +214,26 @@ struct HomeView: View {
                                 
                                 NavigationLink( destination:  FH2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                                 label: {
-//                                    Text("Walk\nthrough")
-//                                        .fontWeight(.regular)
-//                                        .frame(width: 50, height: 40)
-//                                        .foregroundColor(Color.white)
-//                                        .font(.system(size: 7))
+                                    Text("Walk\nthrough")
+                                        .fontWeight(.regular)
+                                        .frame(width: 60, height: 60)
+                                        .foregroundColor(Color.white)
+                                        .font(.system(size: 8))
+                                        .blinking(duration: 2.0)
+                                    
+                                    
 //                                    //                                        .background(Color.green)
 //                                        .cornerRadius(9)
 //                                    //                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
 //                                        .opacity(0.9)
-                                    
-                                    Text("Hello, World!")
-                                        .foregroundColor(.white)
-                                        .padding()
-                                        .background(Color.blue)
-                                        .blinking()
+//
+//                                    Text("Walk through")
+//                                        .fontWeight(.regular)
+//                                        .frame(width: 50, height: 40)
+//                                        .foregroundColor(.white)
+//                                        .padding()
+//                                        .background(ColorManager .purple3)
+//                                        .blinking()
                                     
                                     
                                     
