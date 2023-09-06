@@ -193,7 +193,7 @@ struct CH4: View {
                             .font(.system(size: 43, weight: .light))
                             .foregroundColor(ColorManager .grey1)
                         
-                        Text("when friend is having a really bad day - CareHeart")
+                        Text("when friend is having a really bad day")
                             .font(.system(size: 15, weight: .light))
                             .italic()
                             .foregroundColor(Color.white)
@@ -250,19 +250,14 @@ struct CH4: View {
                         }
                     }
                 
-                    Text("(let your friend know to look")
+                    Text("(alert friend to check Chat")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
 
-                    Text("in Chat for your song)")
-                        .font(.system(size: 15))
-                        .italic()
-                        .fontWeight(.light)
-                        .foregroundColor(ColorManager .grey1)
-                        .multilineTextAlignment(.center)
+            
             
                     VStack {
                         

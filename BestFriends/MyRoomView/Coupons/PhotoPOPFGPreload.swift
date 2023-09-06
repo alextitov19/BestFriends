@@ -189,11 +189,11 @@ struct PhotoPopFGPreload: View {
                     VStack {
                         
                         Spacer()
-                            .frame(height: 140)
+                            .frame(height: 110)
 
                     
                     
-                    Text("Send a 'Meet-up Coupon'. Let's get an ice cream, a cheeseburger and talk - what ever you want.")
+                    Text("Send a 'Meet-up Coupon'. Let's get an ice cream, a cheeseburger like before.")
                     
                         .frame(width: 200, height: 70)
                         .foregroundColor(Color.white)
