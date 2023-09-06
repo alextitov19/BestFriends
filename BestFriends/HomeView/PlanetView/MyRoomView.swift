@@ -400,7 +400,7 @@ struct MyRoomView: View {
 
                         NavigationLink( destination:  RR5(user: user, friends: friends),
                                 label: {
-                                Text("What are \nU doing?")
+                                Text("Hey, \nwhat's up?")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .font(.system(size: 10))

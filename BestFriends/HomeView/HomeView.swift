@@ -34,6 +34,8 @@ struct HomeView: View {
     
 //    @StateObject var model = Model.loadData
     
+    @State private var scale = 1.0
+    
     let reloadingTimer = Timer.publish(every: 30, on: .main, in: .common).autoconnect()
     
     var body: some View {
@@ -197,42 +199,55 @@ struct HomeView: View {
                                     .foregroundColor(ColorManager .purple3)
                                     .glow(color: ColorManager.purple4, radius: 3)
                                     .opacity(0.5)
+                                    .scaleEffect(scale)
+                                    .animation(.easeInOut, value: scale)
+                           
                                 
-                            
+//                                static func bouncy(
+//                                    duration: TimeInterval = 0.5,
+//                                    extraBounce: Double = 0.0
+//                                ) -> Animation
+//
                                 
                                 NavigationLink( destination:  FH2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                                 label: {
-                                    Text("Walk\nthrough")
-                                        .fontWeight(.regular)
-                                        .frame(width: 50, height: 40)
-                                        .foregroundColor(Color.white)
-                                        .font(.system(size: 7))
-//                                        .background(Color.green)
-                                        .cornerRadius(9)
-//                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                        .opacity(0.9)
+//                                    Text("Walk\nthrough")
+//                                        .fontWeight(.regular)
+//                                        .frame(width: 50, height: 40)
+//                                        .foregroundColor(Color.white)
+//                                        .font(.system(size: 7))
+//                                    //                                        .background(Color.green)
+//                                        .cornerRadius(9)
+//                                    //                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                        .opacity(0.9)
+                                    
+                                    Text("Hello, World!")
+                                        .foregroundColor(.white)
+                                        .padding()
+                                        .background(Color.blue)
+                                        .blinking()
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                 })
                                 
-//                             }
-                                    
-//                                    NavigationLink(
-//                                        destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
-//                                        label: {
-//
-//                                            Image(systemName: "camera")
-//
-//                                               .resizable()
-//                                                .scaledToFit()
-//                                                .frame(width: 40, height: 40)
-//                                                .foregroundColor(Color.cyan)
-//                                                .glow(color: ColorManager.purple4, radius: 2)
-//                                                .opacity(0.6)
-//
-//
-//                                        })
+
                                 }
                             
-                 
+//                            Image(systemName: "eyes")
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 20, height: 20)
+//                                .foregroundColor(Color.white)
+////                                .glow(color: ColorManager.purple4, radius: 3)
+////                                .opacity(0.5)
+//
+//                                .scaleEffect(scale)
+//                                .animation(.easeIn, value: scale)
                          
                         }
 

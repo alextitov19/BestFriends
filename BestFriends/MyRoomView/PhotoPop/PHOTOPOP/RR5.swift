@@ -157,10 +157,10 @@ struct RR5: View {
                                     .opacity(0.9)
                                 
                                 
-                                Text("Shoot me a quick PhotoPOP")
+                                Text("Shoot me a \nquick PhotoPOP")
                                     .fontWeight(.light)
                                     .foregroundColor(Color.black)
-                                    .font(.system(size: 13))
+                                    .font(.system(size: 16))
                                     .multilineTextAlignment(.center)
                                     .rotationEffect(.degrees(-7))
                                     .opacity(0.85)
