@@ -66,7 +66,7 @@ struct HomeView: View {
 //            user: user, friend: user, friends: friends, groups: groups)
                 
                 // Stars animation...
-                AdPlayerView(name: "sky2")
+                AdPlayerView(name: "background_9")
                     .ignoresSafeArea()
                     .blendMode(.screen)
 //                    .opacity(0.99)
