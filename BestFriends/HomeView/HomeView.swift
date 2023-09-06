@@ -183,9 +183,9 @@ struct HomeView: View {
 //                                    NavigationLink(
 //                                        destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
 //                                        label: {
-//                                            
+//
 //                                            Image(systemName: "camera")
-//                                              
+//
 //                                               .resizable()
 //                                                .scaledToFit()
 //                                                .frame(width: 40, height: 40)
@@ -193,7 +193,7 @@ struct HomeView: View {
 //                                                .glow(color: ColorManager.purple4, radius: 2)
 //                                                .opacity(0.6)
 //
-//                                            
+//
 //                                        })
                                 }
                             

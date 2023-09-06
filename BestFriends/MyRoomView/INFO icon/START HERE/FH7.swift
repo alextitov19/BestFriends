@@ -35,23 +35,24 @@ struct FH7: View {
       
         
         ZStack {
-            
-            Image("CareHeartBalloon 1")
-                .ignoresSafeArea()
-                .scaledToFit()
-                .opacity(0.8)
         
-
-                
+            Color.black
+                .opacity(0.9)
+                .ignoresSafeArea()
+            
+            AdPlayerView(name: "background_9")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+            
                 VStack {
 
-                    Text("LightSpeed")
+                    Text("Warp Speed")
                         .font(.system(size: 45))
                         .foregroundColor(Color.white)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
-                    Text("PhotoPOP")
+                    Text("PhotoPOPs")
                         .font(.system(size: 45))
                         .foregroundColor(Color.white)
                         .fontWeight(.light)
@@ -67,14 +68,14 @@ struct FH7: View {
                             .foregroundColor(Color.purple)
                             .frame(width: 375, height: 375)
                             .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                            .opacity(0.9)
+                            .opacity(0.5)
                         VStack {
                             
                             
                             Spacer()
                                 .frame(height: 30)
                             
-                            Text("Your friend sent a pic. \n\nJust 'shake' you iPhone \nand it pops up full-screen.")
+                            Text("Your friend sent a pic. \n\n'Shake' your iPhone \nand it pops up")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
@@ -83,6 +84,23 @@ struct FH7: View {
                             
                             Spacer()
                                 .frame(height: 20)
+                            
+                            NavigationLink(
+                                destination:  PhotoPopView(user: user, friends: friends),
+                                label: {
+
+                                    Image(systemName: "camera")
+
+                                       .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 40, height: 40)
+                                        .foregroundColor(Color.cyan)
+                                        .glow(color: ColorManager.purple4, radius: 2)
+                                        .opacity(0.6)
+
+
+                                })
+                            
 
                         }
                         
