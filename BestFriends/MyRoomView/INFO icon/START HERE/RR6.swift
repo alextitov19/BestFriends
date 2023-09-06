@@ -101,7 +101,7 @@ struct RR6: View {
                                 label: {
                                     Text("+ Friends")
                                         .fontWeight(.regular)
-                                        .frame(width: 100, height: 33)
+                                        .frame(width: 150, height: 33)
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 13))
                                         .background(Color.orange)

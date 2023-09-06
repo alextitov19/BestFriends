@@ -37,17 +37,22 @@ struct FH5: View {
         
         ZStack {
             
-           
-            Image("CareHeartBalloon 1")
+            Color.black
+                .opacity(0.9)
                 .ignoresSafeArea()
-                .scaledToFit()
-                .opacity(0.8)
             
-
-                
+            AdPlayerView(name: "background_9")
+                .ignoresSafeArea()
+                .blendMode(.screen)
                 VStack {
 
-                    Text("Drama Days")
+                    Text("Fight with")
+                        .font(.system(size: 45))
+                        .foregroundColor(Color.white)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                    
+                    Text("Friend")
                         .font(.system(size: 45))
                         .foregroundColor(Color.white)
                         .fontWeight(.light)
@@ -63,32 +68,36 @@ struct FH5: View {
                             .foregroundColor(Color.purple)
                             .frame(width: 375, height: 375)
                             .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                            .opacity(0.9)
+                            .opacity(0.5)
+                       
                         VStack {
                             
                             
                             Spacer()
                                 .frame(height: 70)
                             
-                            Text("That's Right: \n\nWe even let you know when \na friend is ready to talk \nafter a fight.")
+                            Text("We can help. \n\nWe can let you know when \nyour friend is ready to talk.")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
                             Spacer()
-                                .frame(height: 10)
-                            
-                            Text("comming Q4 2023")
-                                .font(.system(size: 15))
-                                .italic()
-                                .foregroundColor(ColorManager .grey1)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                            
-                            
-                            Spacer()
                                 .frame(height: 20)
+                            
+                    
+                            NavigationLink(destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+                                label: {
+                                    Text("Friend Drama")
+                                        .fontWeight(.regular)
+                                        .frame(width: 150, height: 33)
+                                        .foregroundColor(Color.white)
+                                        .font(.system(size: 13))
+                                        .background(Color.orange)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                    
+                                })
                             
 
                             
@@ -103,7 +112,7 @@ struct FH5: View {
                                
                           
                             NavigationLink(
-                                destination: RR3(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                destination: FH3(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                                     Text("->")
                                         .fontWeight(.thin)
