@@ -90,7 +90,7 @@ struct HomeView: View {
                                 Image(systemName: "heart")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 50, height: 50)
+                                    .frame(width: 60, height: 60)
                                     .foregroundColor(Color.red)
                                     .glow(color: ColorManager.purple4, radius: 3)
                                     .opacity(0.5)
@@ -149,26 +149,36 @@ struct HomeView: View {
                             
                             
                             Spacer()
-                                .frame(width: 295)
+                                .frame(width: 270)
 
-                          
+                            
+                            ZStack {
                                 
-                                VStack {
-                                 
-                                    NavigationLink( destination:  FH2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                                                    label: {
-                                        Text("Walk\nthrough")
-                                            .fontWeight(.regular)
-                                            .frame(width: 50, height: 40)
-                                            .foregroundColor(Color.white)
-                                            .font(.system(size: 10))
-                                            .background(Color.green)
-                                            .cornerRadius(10)
-                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                            .opacity(0.6)
-                                    })
-                                    
-                                    
+                                Image(systemName: "triangle")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 60, height: 60)
+                                    .foregroundColor(Color.pink)
+                                    .glow(color: ColorManager.purple4, radius: 3)
+                                    .opacity(0.5)
+                                
+                                Spacer()
+                                    .frame(height: 15)
+                                
+                                NavigationLink( destination:  FH2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                                                label: {
+                                    Text("Walk\nthrough")
+                                        .fontWeight(.regular)
+                                        .frame(width: 50, height: 40)
+                                        .foregroundColor(Color.white)
+                                        .font(.system(size: 10))
+//                                        .background(Color.green)
+                                        .cornerRadius(9)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                        .opacity(0.9)
+                                })
+                                
+//                             }
                                     
 //                                    NavigationLink(
 //                                        destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
