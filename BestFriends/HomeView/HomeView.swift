@@ -79,11 +79,12 @@ struct HomeView: View {
                         Spacer()
 
                         Spacer()
-                            .frame(height: 550)
+                            .frame(height: 530)
                       
                         HStack {
                             
-
+//                            Spacer()
+//                                .frame(width: 30)
                             
                             ZStack {
                              
@@ -149,8 +150,41 @@ struct HomeView: View {
                             
                             
                             Spacer()
-                                .frame(width: 270)
+                                .frame(width: 30)
 
+                            NavigationLink(
+                                destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
+                                label: {
+                                    
+                                    Image(systemName: "gear")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 37, height: 37)
+                                        .foregroundColor(Color.pink)
+                                        .glow(color: ColorManager.purple4, radius: 3)
+                                        .opacity(0.5)
+                                })
+                            
+                            
+                            Spacer()
+                                .frame(width: 30)
+                            
+                            NavigationLink(
+                                destination:  FH10(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                                label: {
+                                    
+                                    Image(systemName: "info.circle")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 37, height: 37)
+                                        .foregroundColor(Color.pink)
+                                        .glow(color: ColorManager.purple4, radius: 3)
+                                        .opacity(0.5)
+                                })
+                            
+                            
+                            Spacer()
+                                .frame(width: 20)
                             
                             ZStack {
                                 
@@ -162,8 +196,7 @@ struct HomeView: View {
                                     .glow(color: ColorManager.purple4, radius: 3)
                                     .opacity(0.5)
                                 
-                                Spacer()
-                                    .frame(height: 15)
+                            
                                 
                                 NavigationLink( destination:  FH2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                                 label: {
@@ -171,7 +204,7 @@ struct HomeView: View {
                                         .fontWeight(.regular)
                                         .frame(width: 50, height: 40)
                                         .foregroundColor(Color.white)
-                                        .font(.system(size: 10))
+                                        .font(.system(size: 9))
 //                                        .background(Color.green)
                                         .cornerRadius(9)
                                         .shadow(color: Color.white, radius: 2, x: 0, y: 2)

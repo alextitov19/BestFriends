@@ -77,19 +77,19 @@ struct MyRoomView: View {
                 
                 HStack {
                     
-                    
-                    NavigationLink(
-                        destination:  FH10(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                        label: {
-                            
-                            Image(systemName: "info.circle")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 37, height: 37)
-                                .opacity(0.9)
-                                .foregroundColor(.white)
-                                .opacity(0.6)
-                        })
+//
+//                    NavigationLink(
+//                        destination:  FH10(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                        label: {
+//
+//                            Image(systemName: "info.circle")
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 37, height: 37)
+//                                .opacity(0.9)
+//                                .foregroundColor(.white)
+//                                .opacity(0.6)
+//                        })
                     
                     Spacer ()
                         .frame(width: 22)
@@ -104,27 +104,27 @@ struct MyRoomView: View {
                                 ZStack {
                                     ZStack {
 
-                                        Image(systemName: "heart.fill")
-                                            .resizable()
-                                            .foregroundColor(ColorManager .purple3)
-                                            .frame(width: 60, height: 55)
-                                            .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                                            .opacity(0.7)
-
-                                        NavigationLink(
-
-                                            destination: BuiltByTeensView(user: user, friends: friends),
-                                            label: {
-                                                Text("Our \nStory")
-                                                    .fontWeight(.regular)
-                                                    .foregroundColor(Color.white)
-                                                    .font(.system(size: 10))
-
-                                            })
+//                                        Image(systemName: "heart.fill")
+//                                            .resizable()
+//                                            .foregroundColor(ColorManager .purple3)
+//                                            .frame(width: 60, height: 55)
+//                                            .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+//                                            .opacity(0.7)
+//
+//                                        NavigationLink(
+//
+//                                            destination: BuiltByTeensView(user: user, friends: friends),
+//                                            label: {
+//                                                Text("Our \nStory")
+//                                                    .fontWeight(.regular)
+//                                                    .foregroundColor(Color.white)
+//                                                    .font(.system(size: 10))
+//
+//                                            })
 
                                    }
                                     
-                                    Spacer ()
+//                                    Spacer ()
                                     //                                        .frame(width: 40)
 //
 //                                    Image(systemName: "person.2.fill")
@@ -140,21 +140,21 @@ struct MyRoomView: View {
                         }
                     }
                     
-                    Spacer ()
-                        .frame(width: 22)
+//                    Spacer ()
+//                        .frame(width: 22)
                     
-                    NavigationLink(
-                        destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
-                        label: {
-                            
-                            Image(systemName: "gear")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 37, height: 37)
-                                .opacity(0.9)
-                                .foregroundColor(.white)
-                                .opacity(0.6)
-                        })
+//                    NavigationLink(
+//                        destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
+//                        label: {
+//
+//                            Image(systemName: "gear")
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 37, height: 37)
+//                                .opacity(0.9)
+//                                .foregroundColor(.white)
+//                                .opacity(0.6)
+//                        })
                     
                     
                 }
@@ -167,8 +167,8 @@ struct MyRoomView: View {
                 
         VStack {
              
-            Spacer()
-                .frame(height: 10)
+//            Spacer()
+//                .frame(height: 10)
             
             HStack {
                 
@@ -199,8 +199,8 @@ struct MyRoomView: View {
 //                        }
 //                    })
 //            }
-                Spacer()
-                    .frame(width: 100)
+//                Spacer()
+//                    .frame(width: 100)
                 
 //                Image(systemName: "")
 //                    .resizable()

@@ -149,7 +149,7 @@ struct FH3: View {
                     
                     
                     Spacer()
-                        .frame(height: 80)
+                        .frame(height: 30)
                     
                 }
                 

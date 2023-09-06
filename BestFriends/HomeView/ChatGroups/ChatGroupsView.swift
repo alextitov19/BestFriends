@@ -51,7 +51,7 @@ struct ChatGroupsView: View {
                                     .fontWeight(.thin)
                                     .foregroundColor(ColorManager.purple2)
                                 
-                                Text("^   ")
+                                Text("^")
                                     .font(.system(size: 35))
                                     .fontWeight(.thin)
                                     .foregroundColor(.white)
