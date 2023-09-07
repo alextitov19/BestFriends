@@ -423,8 +423,8 @@
 		2DBF3EF02A61AD2800CB1CAD /* RR9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR9.swift; sourceTree = "<group>"; };
 		2DBF3EF22A61AD3100CB1CAD /* RR10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR10.swift; sourceTree = "<group>"; };
 		2DDCD97F2A8FEBAA00B1040F /* RR16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR16.swift; path = BestFriends/MyRoomView/PhotoPop/PHOTOPOP/RR16.swift; sourceTree = SOURCE_ROOT; };
-		2DDCD9812A8FEBC700B1040F /* RR17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR17.swift; path = BestFriends/MyRoomView/PhotoPop/PHOTOPOP/RR17.swift; sourceTree = SOURCE_ROOT; };
-		2DDCD9832A8FEBD900B1040F /* RR18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR18.swift; path = BestFriends/MyRoomView/PhotoPop/PHOTOPOP/RR18.swift; sourceTree = SOURCE_ROOT; };
+		2DDCD9812A8FEBC700B1040F /* RR17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR17.swift; path = BestFriends/RR/RR17.swift; sourceTree = SOURCE_ROOT; };
+		2DDCD9832A8FEBD900B1040F /* RR18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR18.swift; path = BestFriends/RR/RR18.swift; sourceTree = SOURCE_ROOT; };
 		2DDCD9852A8FEBEA00B1040F /* RR19.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR19.swift; path = BestFriends/HomeView/RR/RR19.swift; sourceTree = SOURCE_ROOT; };
 		2DDCD9872A8FEBFC00B1040F /* RR20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR20.swift; path = BestFriends/HomeView/RR/RR20.swift; sourceTree = SOURCE_ROOT; };
 		2DDCD9892A8FF0ED00B1040F /* DrawingCareHearts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCareHearts.swift; sourceTree = "<group>"; };
@@ -799,6 +799,8 @@
 		2DBF3EDF2A61ACC400CB1CAD /* RR */ = {
 			isa = PBXGroup;
 			children = (
+				2DDCD9812A8FEBC700B1040F /* RR17.swift */,
+				2DDCD9832A8FEBD900B1040F /* RR18.swift */,
 				2DDCD9852A8FEBEA00B1040F /* RR19.swift */,
 				2DDCD9872A8FEBFC00B1040F /* RR20.swift */,
 			);
@@ -1531,8 +1533,6 @@
 				7A04C13C28553818003AB24A /* PhotoPopView.swift */,
 				CF6499DE294D4148003BBF83 /* INFOPreloadA.swift */,
 				CF24815628F5060100D47AE3 /* PhotoPop3.swift */,
-				2DDCD9812A8FEBC700B1040F /* RR17.swift */,
-				2DDCD9832A8FEBD900B1040F /* RR18.swift */,
 				2DFB03222A5D308600669948 /* CH5.swift */,
 				7A04C13E2855390B003AB24A /* PhotoPopImageView.swift */,
 				CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */,

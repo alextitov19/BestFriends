@@ -303,10 +303,10 @@ struct HomeView: View {
                               .foregroundColor(Color.white)
                                 .font(.system(size: 17))
                                 .background(Color.gray)
-                            //                               .opacity(0.7)
+                                .multilineTextAlignment(.center)
                                 .cornerRadius(10)
                                 .shadow(color: Color.white, radius: 2, x: 0, y: 1)
-                            
+                                .blinking(duration: 2.0)
 //                        })
                     }
                         
