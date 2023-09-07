@@ -375,7 +375,7 @@ struct MyRoomView: View {
                                     
                                     NavigationLink( destination:  RR5(user: user, friends: friends),
                                                     label: {
-                                        Text("PhotoPOP")
+                                        Text("Friendship \nPhotoPOPs")
                                             .fontWeight(.bold)
                                             .frame(width: 300, height: 42)
                                             .foregroundColor(Color.black)
@@ -531,21 +531,21 @@ struct MyRoomView: View {
                                             VStack {
                                                 
                                             
-//                                                NavigationLink( destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
-//                                                                label: {
-//                                                    Text("Friend Drama")
-//                                                        .fontWeight(.regular)
-//                                                        .frame(width: 120, height: 45)
-//                                                        .foregroundColor(ColorManager .purple5)
-//                                                        .font(.system(size: 17))
-//                                                        .background(ColorManager .purple1)
-//                                                        .glow(color: ColorManager.purple3, radius: 1)
-//                                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-//                                                        .opacity(0.9)
-//                                                        .cornerRadius(7)
-//                                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-//
-//                                                })
+                                                NavigationLink( destination: CH20(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                                                label: {
+                                                    Text("Accesorizing \nmy space")
+                                                        .fontWeight(.regular)
+                                                        .frame(width: 120, height: 45)
+                                                        .foregroundColor(ColorManager .purple5)
+                                                        .font(.system(size: 17))
+                                                        .background(ColorManager .purple1)
+                                                        .glow(color: ColorManager.purple3, radius: 1)
+                                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                                        .opacity(0.9)
+                                                        .cornerRadius(7)
+                                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+
+                                                })
                                                 
                                                 
                                                 Spacer()
@@ -676,6 +676,16 @@ struct MyRoomView: View {
                         
                         //************************************************ Accessorizing Section **************
                         
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+//                        ****************************************************************
+                        
                         Spacer()
                             .frame(height: 25)
                         
@@ -686,9 +696,9 @@ struct MyRoomView: View {
                                 ZStack {
                                     
                                     
-                                    NavigationLink( destination:  CH20(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                    NavigationLink( destination:  RR17(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                                     label: {
-                                        Text("Accessorizing \nyour experience")
+                                        Text("Back to \nplanet Earth")
                                             .fontWeight(.bold)
                                             .frame(width: 300, height: 42)
                                             .foregroundColor(Color.black)
@@ -727,6 +737,12 @@ struct MyRoomView: View {
                                                 
                                             }
                                         }
+                                      
+                                        
+                                        
+                                    
+                                        
+                                        
                                         
                                         Spacer ()
                                             .frame(width: 200)
