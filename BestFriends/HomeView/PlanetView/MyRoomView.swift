@@ -35,7 +35,7 @@ struct MyRoomView: View {
     
     //    @State private var movingPlanets = false
     
-    @State private var scale = 1.0
+    @State private var scale = 3.0
     
     var body: some View {
         ZStack {

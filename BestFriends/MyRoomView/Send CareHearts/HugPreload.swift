@@ -111,7 +111,7 @@ struct HugPreload: View {
 //                        .fontWeight(.light)
 //                        .multilineTextAlignment(.center)
                     
-                    Text("Sharing the LOVE!")
+                    Text("Sending LOVE!")
                         .font(.system(size: 20))
                         .italic()
                         .foregroundColor(ColorManager .grey1)
