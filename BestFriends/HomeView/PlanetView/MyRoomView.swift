@@ -488,20 +488,20 @@ struct MyRoomView: View {
                                             
                                             VStack {
                                                 
-//                                                NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
-//                                                                label: {
-//                                                    Text("Meet-up \nCoupons")
-//                                                        .fontWeight(.regular)
-//                                                        .frame(width: 120, height: 45)
-//                                                        .foregroundColor(ColorManager .purple5)
-//                                                        .font(.system(size: 17))
-//                                                        .background(ColorManager .purple1)
-//                                                        .glow(color: ColorManager.purple3, radius: 1)
-//                                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-//                                                        .opacity(0.9)
-//                                                        .cornerRadius(7)
-//                                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-//                                                })
+                                                NavigationLink( destination: RR18(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                                                label: {
+                                                    Text("Love Tarts")
+                                                        .fontWeight(.regular)
+                                                        .frame(width: 120, height: 45)
+                                                        .foregroundColor(ColorManager .purple5)
+                                                        .font(.system(size: 17))
+                                                        .background(ColorManager .purple1)
+                                                        .glow(color: ColorManager.purple3, radius: 1)
+                                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                                        .opacity(0.9)
+                                                        .cornerRadius(7)
+                                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                                })
                                                 
                                                 
                                                 
