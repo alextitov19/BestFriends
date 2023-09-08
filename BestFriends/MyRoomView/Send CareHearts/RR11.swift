@@ -202,11 +202,11 @@ struct RR11: View {
                         
                         
                         VStack {
-                            
-                            Text("This is the 'romantic' CareHeart!")
-                                .font(.system(size: 16, weight: .light))
-                                .foregroundColor(ColorManager .grey1)
-                                    .multilineTextAlignment(.center)
+//                            
+//                            Text("This is the 'romantic' CareHeart!")
+//                                .font(.system(size: 16, weight: .light))
+//                                .foregroundColor(ColorManager .grey1)
+//                                    .multilineTextAlignment(.center)
                             
                             Spacer()
                                 .frame(height: 7)

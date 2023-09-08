@@ -187,21 +187,19 @@ struct CH4: View {
                     
                     
                     VStack {
-                   
-                     
-                        Text("Sending 'that' Song")
-                            .font(.system(size: 43, weight: .light))
-                            .foregroundColor(ColorManager .grey1)
-                        
-                        Text("when friend is having a really bad day")
-                            .font(.system(size: 15, weight: .light))
-                            .italic()
-                            .foregroundColor(Color.white)
-                        
                         Spacer()
                             .frame(height: 30)
-
-                      
+                     
+                        Text("WOW, your friend's having")
+                            .font(.system(size: 20, weight: .light))
+                            .italic()
+                            .foregroundColor(ColorManager .grey1)
+                        
+                        Text("a really bad day")
+                            .font(.system(size: 20, weight: .light))
+                            .italic()
+                            .foregroundColor(ColorManager .grey1)
+                    
           
                 VStack {
                     
@@ -211,45 +209,58 @@ struct CH4: View {
                         Image(systemName: "circle.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 350, height: 175)
+                            .frame(width: 420, height: 250)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .opacity(0.5)
                         
                         VStack {
+                            
+                            Text("Send 'that' song")
+                                .font(.system(size: 40, weight: .light))
+    //                            .italic()
+                                .foregroundColor(Color.white)
+                            
+                            Spacer()
+                                .frame(height: 10)
+                            
                             Text("You know 'that' song you listen to")
-                                .font(.system(size: 19, weight: .light))
+                                .font(.system(size: 16, weight: .light))
                                 .foregroundColor(Color.white)
                                 .multilineTextAlignment(.center)
                    
-                            Text("over-and-over while lying in bed")
-                                .font(.system(size: 19, weight: .light))
+                            Text("over-and-over while lying in bed,")
+                                .font(.system(size: 16, weight: .light))
                                 .foregroundColor(Color.white)
                                 .multilineTextAlignment(.center)
                             
-                            Text("on one of those very difficult days")
-                                .font(.system(size: 19, weight: .light))
+                            Text("covers over your head,")
+                                .font(.system(size: 16, weight: .light))
+                                .foregroundColor(Color.white)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("tear lines down your cheeks,")
+                                .font(.system(size: 16, weight: .light))
+                                .foregroundColor(Color.white)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("asking why,")
+                                .font(.system(size: 16, weight: .light))
+                                .foregroundColor(Color.white)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("when you're having a truely bad day.")
+                                .font(.system(size: 16, weight: .light))
                                 .foregroundColor(Color.white)
                                 .multilineTextAlignment(.center)
                         }
                          
-                            
-//                            NavigationLink(
-//                                destination:  PhotoPopView(user: user, friends: friends),
-//                                label: {
-//
-//                                    Image(systemName: "camera")
-//
-//                                       .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 40, height: 40)
-//                                        .foregroundColor(Color.cyan)
-//                                        .glow(color: ColorManager.purple4, radius: 2)
-//                                        .opacity(0.6)
-//
-//                                })
+
                         }
                     }
                 
+                        Spacer()
+                            .frame(height: 20)
+                        
                     Text("(alert friend to check Chat")
                         .font(.system(size: 15))
                         .italic()
@@ -368,7 +379,7 @@ struct CH4: View {
                                 .background(ColorManager .grey2)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your Song \nhas been sent to Chat. \n\nWe hope this song helps your friend. \n\nThx for sending it!", isPresented: $showingAlert) {
+                                .alert("Your song \nhas been sent to Chat. \n\nYour a great friend - something not often seen these days.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
@@ -415,12 +426,12 @@ struct CH4: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) just sent you a Song in Chat", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) just sent you 'That' song in Chat", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Just sent you a Song in Chat", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                        print("Create a New Song notification response code: ", response)
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Just sent you 'That' song in Chat", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        print("Create a That Song notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)
                 }

@@ -85,10 +85,10 @@ struct HugPushNotification: View {
                                         .font(.system(size: 45, weight: .light))
                                         .foregroundColor(Color.white)
                                     
-                                    Text("this is the 'supportive' CareHeart")
-                                        .font(.system(size: 20, weight: .light))
-                                        .italic()
-                                        .foregroundColor(Color.white)
+//                                    Text("supporting your friends")
+//                                        .font(.system(size: 20, weight: .light))
+//                                        .italic()
+//                                        .foregroundColor(Color.white)
                                     
                                     Spacer()
                                         .frame(height: 10)

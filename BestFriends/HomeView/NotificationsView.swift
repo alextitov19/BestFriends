@@ -189,9 +189,21 @@ struct NotificationsView: View {
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksCustomActive, label: {
                         EmptyView()
                     })
+                    
+                    
+                
+
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $songActive, label: {
+                        EmptyView()
+                    })
 
     }
 
+                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksSongActive, label: {
+                    EmptyView()
+                })
+                
+                
 //                ************* fix CH9 to Received Hearts page: CH13
                 NavigationLink(destination: CH9(user: user, friends: friends), isActive: $heartsActive, label: {
                     EmptyView()
@@ -206,11 +218,9 @@ struct NotificationsView: View {
 
 
 //               ********************** Song goes to Chat - no need link **************************
-                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksSongActive, label: {
-                    EmptyView()
-                })
-
-
+            
+                
+                
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $fixFightActive, label: {
                     EmptyView()
                 })
@@ -287,54 +297,71 @@ struct NotificationsView: View {
         private func tapped() {
             switch ian.text {
                 
-//            case "What are you doing? Send PhotoPoP!":
-//                photoPopActive = true
-//
-//            case "Just sent you a warming Hug! ... TAP":
-//                hugActive = true
-//
-//            case "Jump up and catch your fresh kisses! ... TAP":
-//                kissesActive = true
-//
-//            case "Just send you a Heart and a message in Chat ... TAP":
-//                heartsActive = true
-//
-//            case "Ahhh! Thanks for the Kisses!":
-//                thanksKissesActive = true
-//
-//            case "Ahhh! Thanks for the Hug - it was just what I needed!":
-//                thanksHugActive = true
-//
-//            case "Said thanks for thinking about them and sending the Heart!":
-//                thanksHeartActive = true
-//
-//            case "Perfect, thanks for the song. Sent you a message in Chat":
-//                thanksSongActive = true
-//
-//            case "Just sent you a message in Chat - please look at it":
-//                fixFightActive = true
-//
-//            case "Is redeaming ONE 'TalkCoupon'":
-//                talkCouponActive = true
-//
-//            case "'Day' just changed! Check their atmosphere color to see if they need a CareHeart.":
-//                newVibeActive = true
-//
-//            case "I Need to Talk!":
-//                needTalkActive = true
-//
-//            case "I found a New Artist & posted them in Chat":
-//                newArtistActive = true
-//
-//
-//            case "Just sent you a Congratulations CareHeart ... TAP":
-//                newCongratulationsActive = true
-//
-//            case "Just said thank you for the Congratulations":
-//                thanksCongratulationsActive = true
-//
+            case "What are you doing? Send PhotoPoP!":
+                photoPopActive = true
+                
+
+            case "Just sent you a warming Hug! ... TAP":
+                hugActive = true
+                
+            case "Ahhh! Thanks for the Hug - it was just what I needed!":
+                thanksHugActive = true
+                
+
+            case "Jump up and catch your fresh kisses! ... TAP":
+                kissesActive = true
+                
+            case "Ahhh! Thanks for the Kisses!":
+                thanksKissesActive = true
+                
+
+            case "Just send you a Heart and a message in Chat ... TAP":
+                heartsActive = true
+                
+            case "Said thanks for thinking about them and sending the Heart!":
+                thanksHeartActive = true
+
+                
+            case "Just sent you 'That' song in Chat":
+                songActive = true
+
+            case "Perfect, thanks for the song. Sent you a message in Chat":
+                thanksSongActive = true
+                
+                
+            case "Just sent you a Congratulations CareHeart ... TAP":
+                newCongratulationsActive = true
+
             case "Just said thank you for the Congratulations":
+                thanksCongratulationsActive = true
+                
+   
+
+            case "You just got a 'Meetup Coupon' in Chat":
                 meetupCouponActive = true
+            
+            case "Is redeaming ONE 'TalkCoupon'":
+                talkCouponActive = true
+                
+           
+            case "Just sent you a message in Chat - please look at it":
+                fixFightActive = true
+                
+                
+                
+            case "'Day' just changed! Check their atmosphere color to see if they need a CareHeart.":
+                newVibeActive = true
+
+            case "I Need to Talk!":
+                needTalkActive = true
+
+            case "I found a New Artist & posted them in Chat":
+                newArtistActive = true
+
+
+         
+
+          
 //
 //            case "I Need to Talk!":
 //                meetupCouponActive = true
