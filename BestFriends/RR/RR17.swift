@@ -68,22 +68,39 @@ struct RR17: View {
                 .opacity(0.5)
     
             ZStack {
-        
-            Image(systemName: "circle.fill")
-                .resizable()
-                .foregroundColor(Color.purple)
-                .frame(width: 375, height: 375)
-                .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                .opacity(0.85)
-
+                
+                Image(systemName: "circle.fill")
+                    .resizable()
+                    .foregroundColor(Color.purple)
+                    .frame(width: 375, height: 375)
+                    .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+                    .opacity(0.85)
+                
                 VStack {
+                    
+                    Spacer()
+                        .frame(height: 30)
+                    
+                    Text("Before jumping back into")
+                        .font(.system(size: 17))
+                    //                        .italic()
+                        .foregroundColor(ColorManager.grey1)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                    
+                    Text("the social media universe")
+                        .font(.system(size: 17))
+                        .italic()
+                        .foregroundColor(ColorManager.grey1)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
                     
                     Spacer()
                         .frame(height: 20)
                     
                     Text("From the heart of us")
                         .font(.system(size: 18))
-//                        .italic()
+                    //                        .italic()
                         .foregroundColor(ColorManager.grey1)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
@@ -91,47 +108,49 @@ struct RR17: View {
                     Text("We sincerly hope we helped")
                         .font(.system(size: 25))
                         .italic()
-                        .foregroundColor(ColorManager.grey1)
+                        .foregroundColor(Color.white)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
-            Text("put smiles on your faces")
-                .font(.system(size: 25))
-                .italic()
-                .foregroundColor(ColorManager.grey1)
-                .fontWeight(.light)
-                .multilineTextAlignment(.center)
-            
-                    Text("during your time with us.")
-                        .font(.system(size: 25))
-                        .italic()
-                        .foregroundColor(ColorManager.grey1)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                    
-                    Spacer()
-                        .frame(height: 10)
-            
-            Text("-- from your friends at BFs")
-                .font(.system(size: 12))
-                .italic()
-                .foregroundColor(ColorManager.grey1)
-                .fontWeight(.light)
-                .multilineTextAlignment(.center)
-                    
-               
-                    
-                    Image("Logo")
-//                        .resizable()
-//                        .foregroundColor(Color.purple)
-//                        .frame(width: 375, height: 375)
-//                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-//                        .opacity(0.5)
+                    VStack {
+                        
+                        Text("put smiles on your faces")
+                            .font(.system(size: 25))
+                            .italic()
+                            .foregroundColor(Color.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("during your time with us.")
+                            .font(.system(size: 25))
+                            .italic()
+                            .foregroundColor(Color.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                        
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        Text("-- from your friends at BFs")
+                            .font(.system(size: 12))
+                            .italic()
+                            .foregroundColor(Color.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        
+                        Image("Logo")
+                        //                        .resizable()
+                        //                        .foregroundColor(Color.purple)
+                        //                        .frame(width: 375, height: 375)
+                        //                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+                        //                        .opacity(0.5)
+                        
+                    }
                     
                 }
-                
             }
-           
         }
         
 //        VStack {

@@ -90,11 +90,12 @@ struct HomeView: View {
                             
                             ZStack {
                              
-                                Image(systemName: "heart")
+                                Image(systemName: "")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 60, height: 60)
                                     .foregroundColor(Color.red)
+                                    .blinking(duration: 2.0)
                                     .glow(color: ColorManager.purple4, radius: 3)
                                     .opacity(0.5)
                                     .onTapGesture {

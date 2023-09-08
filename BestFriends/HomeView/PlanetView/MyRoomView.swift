@@ -698,7 +698,7 @@ struct MyRoomView: View {
                                     
                                     NavigationLink( destination:  RR17(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                                     label: {
-                                        Text("Shelter from sometimes \ntoxic social media")
+                                        Text("Leaving \nSafe-zone")
                                             .fontWeight(.bold)
                                             .frame(width: 300, height: 42)
                                             .foregroundColor(Color.black)
@@ -745,7 +745,7 @@ struct MyRoomView: View {
                                         
                                         
                                         Spacer ()
-                                            .frame(width: 250)
+                                            .frame(width: 180)
                                         
                                     }
                                 }
