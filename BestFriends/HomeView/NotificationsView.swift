@@ -155,95 +155,70 @@ struct NotificationsView: View {
                     NavigationLink(destination: PhotoPopView(user: user, friends: friends), isActive: $photoPopActive, label: {
                         EmptyView()
                     })
-                    
-                    
+
+
                     NavigationLink(destination: CH9(user: user, friends: friends), isActive: $kissesActive, label: {
                         EmptyView()
                     })
-                    
+
                     NavigationLink(destination: CH9(user: user, friends: friends), isActive: $thanksKissesActive, label: {
                         EmptyView()
                     })
-                    
-                    
-                    
+
+
+
                     NavigationLink(destination: VirtualHug(user: user, friends: friends), isActive: $hugActive, label: {
                         EmptyView()
                     })
-                   
+
                     NavigationLink(destination: VirtualHug(user: user, friends: friends), isActive: $thanksHugActive, label: {
                         EmptyView()
                     })
-                    
-                    
-                    
-             
-                
-                    
-                    
-                   
-                    
-                    
-                    
+
+
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $newCongratulationsActive, label: {
                         EmptyView()
                     })
-                    
+
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksCongratulationsActive, label: {
                         EmptyView()
                     })
-                    
-//                    ********************** make this link to proper page *******
-//                    NavigationLink(destination: RR15(user: user, friends: friends, groups: groups), isActive: $newCustomActive, label: {
-//                        EmptyView()
-//                    })
-                    
-//                    NavigationLink(destination: CH9(user: user, friends: friends), isActive: $newCustomActive, label: {
-//                        EmptyView()
-//                    })
-                    
+
+
+
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksCustomActive, label: {
                         EmptyView()
                     })
-                    
-                
-                
-                    
-        }
-                
+
+    }
+
 //                ************* fix CH9 to Received Hearts page: CH13
                 NavigationLink(destination: CH9(user: user, friends: friends), isActive: $heartsActive, label: {
                     EmptyView()
                 })
-                
-//                NavigationLink(destination: CH10(user: user, friends: friends, groups: groups, atmosphere: atmosphere), isActive: $heartsActive, label: {
-//                    EmptyView()
-//                })
-                
+
+
+
 //               ********************** Message goes to Chat **************************
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksHeartActive, label: {
                     EmptyView()
                 })
-       
-                
+
+
 //               ********************** Song goes to Chat - no need link **************************
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksSongActive, label: {
                     EmptyView()
                 })
-                
-             
-                
-                
-                
-                
+
+
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $fixFightActive, label: {
                     EmptyView()
                 })
-                
+
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $talkCouponActive, label: {
                     EmptyView()
                 })
-                
+
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $needTalkActive, label: {
                     EmptyView()
                 })
@@ -251,9 +226,26 @@ struct NotificationsView: View {
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $newVibeActive, label: {
                     EmptyView()
                 })
-                
+
              
-            
+// ***************************************************************
+                    
+                    // ***************************************************************
+                    // ***************************************************************
+                    
+                    
+                //                    ********************** make this link to proper page *******
+                //                    NavigationLink(destination: RR15(user: user, friends: friends, groups: groups), isActive: $newCustomActive, label: {
+                //                        EmptyView()
+                //                    })
+                                    
+                //                    NavigationLink(destination: CH9(user: user, friends: friends), isActive: $newCustomActive, label: {
+                //                        EmptyView()
+                //                    })
+                
+                //                NavigationLink(destination: CH10(user: user, friends: friends, groups: groups, atmosphere: atmosphere), isActive: $heartsActive, label: {
+                //                    EmptyView()
+                //                })
               
                 
               
@@ -295,67 +287,68 @@ struct NotificationsView: View {
         private func tapped() {
             switch ian.text {
                 
-            case "What are you doing? Send PhotoPoP!":
-                photoPopActive = true
-                
-            case "Just sent you a warming Hug! ... TAP":
-                hugActive = true
-                
-            case "Jump up and catch your fresh kisses! ... TAP":
-                kissesActive = true
-                
-            case "Just send you a Heart and a message in Chat ... TAP":
-                heartsActive = true
-                
-            case "Ahhh! Thanks for the Kisses!":
-                thanksKissesActive = true
-                
-            case "Ahhh! Thanks for the Hug - it was just what I needed!":
-                thanksHugActive = true
-                
-            case "Said thanks for thinking about them and sending the Heart!":
-                thanksHeartActive = true
-                
-            case "Perfect, thanks for the song. Sent you a message in Chat":
-                thanksSongActive = true
-                
-            case "Just sent you a message in Chat - please look at it":
-                fixFightActive = true
-                
-            case "Is redeaming ONE 'TalkCoupon'":
-                talkCouponActive = true
-                
-            case "'Day' just changed! Check their atmosphere color to see if they need a CareHeart.":
-                newVibeActive = true
-                
-            case "I Need to Talk!":
-                needTalkActive = true
-                
-            case "I found a New Artist & posted them in Chat":
-                newArtistActive = true
-                
-//            case "Just sent you a Custome CareHeart. Check for a message in Chat and a PhotoPOP ... TAP":
-//                newCustomActive = true
-//                
-//            case "Said thanks for the Custom CareHeart":
-//                thanksCustomActive = true
-                
-            case "Just sent you a Congratulations CareHeart ... TAP":
-                newCongratulationsActive = true
-                
+//            case "What are you doing? Send PhotoPoP!":
+//                photoPopActive = true
+//
+//            case "Just sent you a warming Hug! ... TAP":
+//                hugActive = true
+//
+//            case "Jump up and catch your fresh kisses! ... TAP":
+//                kissesActive = true
+//
+//            case "Just send you a Heart and a message in Chat ... TAP":
+//                heartsActive = true
+//
+//            case "Ahhh! Thanks for the Kisses!":
+//                thanksKissesActive = true
+//
+//            case "Ahhh! Thanks for the Hug - it was just what I needed!":
+//                thanksHugActive = true
+//
+//            case "Said thanks for thinking about them and sending the Heart!":
+//                thanksHeartActive = true
+//
+//            case "Perfect, thanks for the song. Sent you a message in Chat":
+//                thanksSongActive = true
+//
+//            case "Just sent you a message in Chat - please look at it":
+//                fixFightActive = true
+//
+//            case "Is redeaming ONE 'TalkCoupon'":
+//                talkCouponActive = true
+//
+//            case "'Day' just changed! Check their atmosphere color to see if they need a CareHeart.":
+//                newVibeActive = true
+//
+//            case "I Need to Talk!":
+//                needTalkActive = true
+//
+//            case "I found a New Artist & posted them in Chat":
+//                newArtistActive = true
+//
+//
+//            case "Just sent you a Congratulations CareHeart ... TAP":
+//                newCongratulationsActive = true
+//
+//            case "Just said thank you for the Congratulations":
+//                thanksCongratulationsActive = true
+//
             case "Just said thank you for the Congratulations":
-                thanksCongratulationsActive = true
-                
-                
-                
-            case "I Need to Talk!":
                 meetupCouponActive = true
-                
-            case "":
-                thanksCongratulationsActive = true
-                
-                
-                
+//
+//            case "I Need to Talk!":
+//                meetupCouponActive = true
+//
+//            case "":
+//                thanksCongratulationsActive = true
+//
+//
+                //            case "Just sent you a Custome CareHeart. Check for a message in Chat and a PhotoPOP ... TAP":
+                //                newCustomActive = true
+                //
+                //            case "Said thanks for the Custom CareHeart":
+                //                thanksCustomActive = true
+                                
                 
                 
                 

@@ -90,7 +90,7 @@ struct HomeView: View {
                             
                             ZStack {
                              
-                                Image(systemName: "")
+                                Image(systemName: "heart")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 60, height: 60)
@@ -112,7 +112,7 @@ struct HomeView: View {
                                     .frame(width: 35, height: 35)
                                     .foregroundColor(Color.white)
                                     .opacity(0.6)
-                                    .glow(color: Color.red, radius: 1)
+                                    .glow(color: Color.white, radius: 1)
                                     .blinking(duration: 2.0)
                                
                           

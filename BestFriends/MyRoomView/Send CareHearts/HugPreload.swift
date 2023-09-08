@@ -97,7 +97,7 @@ struct HugPreload: View {
                 
                 VStack {
                     
-                    Text("Sending CareHearts")
+                    Text("Sharing CareHearts")
                         .font(.system(size: 40))
                     //                            .italic()
                         .foregroundColor(ColorManager .grey1)
