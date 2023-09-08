@@ -181,18 +181,21 @@ struct CH14: View {
                         Spacer()
                             .frame(height: 15)
                         
-                        Text("Let's make sure they see")
+                     
+                        
+                        Text("Notify your friend that you")
                             .font(.system(size: 17))
                             .fontWeight(.light)
                             .foregroundColor(Color.white)
                             .multilineTextAlignment(.center)
                     
-                        Text("your message in Chat")
+                        Text("want to talk try to fix this!")
                             .font(.system(size: 17))
                             .fontWeight(.light)
                             .foregroundColor(Color.white)
                             .multilineTextAlignment(.center)
                         
+                     
                         
                         
                         VStack {
@@ -314,39 +317,28 @@ struct CH14: View {
                                 .frame(height: 30)
                             
                             VStack {
-                                Text("Unfortunately, now the")
-                                    .font(.system(size: 17, weight: .light))
-                                    .italic()
-                                    .foregroundColor(ColorManager .grey1)
-                                    .multilineTextAlignment(.center)
-                                
-                                Text("'waiting-to-hear-back'")
-                                    .font(.system(size: 17, weight: .light))
-                                    .italic()
-                                    .foregroundColor(ColorManager .grey1)
-                                    .multilineTextAlignment(.center)
-                                
-                                Text("anxiety begins")
-                                    .font(.system(size: 17, weight: .light))
-                                    .italic()
-                                    .foregroundColor(ColorManager .grey1)
-                                    .multilineTextAlignment(.center)
+//                                Text("Unfortunately, now the")
+//                                    .font(.system(size: 17, weight: .light))
+//                                    .italic()
+//                                    .foregroundColor(ColorManager .grey1)
+//                                    .multilineTextAlignment(.center)
+//
+//                                Text("'waiting-to-hear-back'")
+//                                    .font(.system(size: 17, weight: .light))
+//                                    .italic()
+//                                    .foregroundColor(ColorManager .grey1)
+//                                    .multilineTextAlignment(.center)
+//
+//                                Text("anxiety begins")
+//                                    .font(.system(size: 17, weight: .light))
+//                                    .italic()
+//                                    .foregroundColor(ColorManager .grey1)
+//                                    .multilineTextAlignment(.center)
                                 
                                 Spacer()
                                     .frame(height: 20)
                                 
-                                Text("Remember")
-                                    .font(.system(size: 22, weight: .bold))
-//                                    .italic()
-                                    .fontWeight(.regular)
-                                    .foregroundColor(Color.white)
-                                
-                                
-                                Text("your friends are here for you :)")
-                                    .font(.system(size: 20, weight: .bold))
-//                                    .italic()
-                                    .fontWeight(.regular)
-                                    .foregroundColor(Color.white)
+      
                          
                                 Spacer()
                                     .frame(height: 140)

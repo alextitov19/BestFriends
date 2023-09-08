@@ -69,17 +69,17 @@ struct CH9: View {
             
             VStack{
                 
-                Text("Your friend just")
-                    .font(.system(size: 35))
-                    .foregroundColor(ColorManager .grey1)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                
-                Text("blew you a kiss")
-                    .font(.system(size: 40))
-                    .foregroundColor(ColorManager .grey1)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
+//                Text("Your friend just")
+//                    .font(.system(size: 35))
+//                    .foregroundColor(ColorManager .grey1)
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+//
+//                Text("blew you a kiss")
+//                    .font(.system(size: 40))
+//                    .foregroundColor(ColorManager .grey1)
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height: 40)

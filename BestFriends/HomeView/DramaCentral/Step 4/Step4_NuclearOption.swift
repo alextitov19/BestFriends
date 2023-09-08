@@ -70,7 +70,7 @@ struct Step4_NuclearOption: View {
                
                 
                 NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                            HugCircle (color: ColorManager .grey2, friendName: "Ask friends for \nCareHearts \n\nTAP")
+                            HugCircle (color: ColorManager .grey2, friendName: "Want to let \nyour other \nfriends know \n\nTAP")
                         })
                         .offset(x: showItems ? 430 : 0, y: showItems ? -300: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
@@ -136,53 +136,58 @@ struct Step4_NuclearOption: View {
                         VStack {
                             Spacer ()
                                 .frame(height: 290)
-                            
-                            
-                            NavigationLink(destination: CH13(user: user, friends: friends),
-                                           label: {
-                                Text("Haven't heard back yet?")
-                                    .fontWeight(.light)
-                                    .frame(width: 250, height: 40)
-                                    .foregroundColor(Color.white)
-                                    .font(.system(size: 20))
-                                    .background(ColorManager .grey3)
-                                    .cornerRadius(10)
-                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                
-                            })
+//
+//
+//                            NavigationLink(destination: CH13(user: user, friends: friends),
+//                                           label: {
+//                                Text("Still haven't heard back")
+//                                    .fontWeight(.light)
+//                                    .frame(width: 250, height: 40)
+//                                    .foregroundColor(Color.white)
+//                                    .font(.system(size: 20))
+//                                    .background(ColorManager .grey3)
+//                                    .cornerRadius(10)
+//                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//
+//                            })
                             
                                 Spacer ()
                                     .frame(height: 15)
                             
-                            HStack {
-                            
-                                Link(destination: URL(string: "https://socialtechlabs.com/understanding-the-why/")!) {
+                    HStack {
+                            ZStack {
+                                
                                     
-                                    Text("Keep Relationship?")
-                                        .fontWeight(.light)
-                                        .frame(width: 180, height: 40)
-                                        .foregroundColor(Color.white)
-                                        .font(.system(size: 20))
-                                        .background(ColorManager .grey3)
-                                        .cornerRadius(10)
-                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                    Link(destination: URL(string: "https://socialtechlabs.com/understanding-the-why/")!) {
+                                        
+                                        Text("Keep Relationship?")
+                                            .fontWeight(.light)
+                                            .frame(width: 220, height: 40)
+                                            .foregroundColor(Color.green)
+                                            .font(.system(size: 20))
+                                            .background(ColorManager .grey4)
+                                            .cornerRadius(10)
+                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                            .blinking(duration: 2.0)
+                                    }
+                                
                                     
                                     
                                     Spacer ()
                                         .frame(width: 20)
                                     
-                                    NavigationLink(destination: CH15(user: user, friends: friends),
-                                                   label: {
-                                        Text("Hurt Feelings?")
-                                            .fontWeight(.light)
-                                            .frame(width: 180, height: 40)
-                                            .foregroundColor(Color.white)
-                                            .font(.system(size: 20))
-                                            .background(ColorManager .grey3)
-                                            .cornerRadius(10)
-                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                        
-                                    })
+//                                    NavigationLink(destination: CH15(user: user, friends: friends),
+//                                                   label: {
+//                                        Text("Hurt Feelings?")
+//                                            .fontWeight(.light)
+//                                            .frame(width: 180, height: 40)
+//                                            .foregroundColor(Color.white)
+//                                            .font(.system(size: 20))
+//                                            .background(ColorManager .grey3)
+//                                            .cornerRadius(10)
+//                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//
+//                                    })
                                     
                                 }
                                 

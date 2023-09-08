@@ -627,7 +627,7 @@ struct MyRoomView: View {
                                             
                         NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
                                 label: {
-                                Text("Send \nMeetup \nCoupon")
+                                Text("Meetup \nCoupon")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .font(.system(size: 10))
@@ -654,9 +654,9 @@ struct MyRoomView: View {
                                                 .opacity(0.99)
                                             
                                             
-                                            NavigationLink( destination: CH13(user: user, friends: friends),
+                                            NavigationLink( destination: CH15(user: user, friends: friends),
                                                             label: {
-                                                Text("Send \nTalk \nRequest")
+                                                Text("Hurt \nFeelings")
                                                     .fontWeight(.light)
                                                     .foregroundColor(Color.black)
                                                     .font(.system(size: 10))

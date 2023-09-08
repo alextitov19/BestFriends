@@ -91,14 +91,14 @@ struct PhotoPopView: View {
                 Spacer ()
                     .frame(height: 17)
                 
-                NavigationLink( destination:  INFOPreloadA(user: user, friends: friends),
+                NavigationLink( destination:  CH5(user: user, friends: friends),
                                 label: {
-                    Text("Start Here")
+                    Text("how to upload")
                         .fontWeight(.light)
-                        .frame(width: 120, height: 30)
+                        .frame(width: 130, height: 30)
                         .foregroundColor(Color.white)
-                        .font(.system(size: 25))
-                        .background(Color.green)
+                        .font(.system(size: 15))
+                        .background(ColorManager .grey3)
 //                            .opacity(0.7)
                         .cornerRadius(10)
                         .shadow(color: Color.white, radius: 2, x: 0, y: 2)
@@ -112,15 +112,15 @@ struct PhotoPopView: View {
                 NavigationLink(
                     destination: PhotoPop3(user: user, friends: friends),
                     label: {
-                        Text("Instant Alert")
+                        Text("real-time delivery")
                             .fontWeight(.light)
-                            .frame(width: 175, height: 30)
-                            .foregroundColor(Color.pink)
-                            .font(.system(size: 25))
-                            .background(Color.cyan)
-                            .opacity(0.9)
+                            .frame(width: 130, height: 30)
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 15))
+                            .background(ColorManager .grey3)
+    //                            .opacity(0.7)
                             .cornerRadius(10)
-                            .shadow(color: ColorManager .grey2, radius: 2, x: 0, y: 2)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                     })
                 
 
@@ -185,7 +185,7 @@ struct PhotoPopView: View {
                                     isShowPhotoLibrary = !isShowPhotoLibrary
                                     showingRecipients = false
                                 }, label: {
-                                    Text("My most cherished picture!")
+                                    Text("My special pic!")
                                         .fontWeight(.regular)
                                         .frame(width: 230, height: 40)
                                         .foregroundColor(.white)

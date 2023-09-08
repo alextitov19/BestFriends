@@ -93,18 +93,18 @@ struct PhotoPop3: View {
                         Spacer()
                             .frame(height: 10)
                         
-                        Image("CoolGuy")
-                            .frame(width: 100, height: 100)
-                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                            .opacity(0.70)
+//                        Image("CoolGuy")
+//                            .frame(width: 100, height: 100)
+//                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                            .opacity(0.70)
 
                         
-                        Text("Alert friend(s) with")
-                            .font(.system(size: 30, weight: .light))
+                        Text("Shoot'em a push notification")
+                            .font(.system(size: 20, weight: .light))
                             .foregroundColor(Color.white)
                     
-                        Text("Push Notification")
-                            .font(.system(size: 35, weight: .light))
+                        Text("and they will see it instantly")
+                            .font(.system(size: 20, weight: .light))
                             .foregroundColor(Color.white)
                         
                         HStack {

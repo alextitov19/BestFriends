@@ -203,16 +203,7 @@ struct HomeView: View {
                                     .glow(color: ColorManager.purple4, radius: 3)
                                     .blinking(duration: 2.0)
                                 
-//
-//                                    .scaleEffect(scale)
-//                                    .animation(.easeInOut, value: scale)
-                                
-//                                static func bouncy(
-//                                    duration: TimeInterval = 0.5,
-//                                    extraBounce: Double = 0.0
-//                                ) -> Animation
-//
-                                
+                   
                                 NavigationLink( destination:  FH2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                                 label: {
                                     Text("Walk\nthrough")

@@ -96,13 +96,9 @@ struct CH13: View {
                             
                             VStack {
                                 
-                                Text("Ok, it has been a while after the big fight.")
-                                    .font(.system(size: 20))
-                                    .fontWeight(.light)
-                                    .foregroundColor(Color.white)
-                                    .multilineTextAlignment(.center)
+                        
                                 
-                                Text("Not a word from them.")
+                                Text("Maybe they just need some more time")
                                     .font(.system(size: 20))
                                     .fontWeight(.light)
                                     .foregroundColor(Color.white)
@@ -111,7 +107,7 @@ struct CH13: View {
                                 Spacer()
                                     .frame(height: 150)
                                 
-                                Text("Let's try sending a 'Talk Request' \nto their iPhone")
+                                Text("")
                                     .fontWeight(.light)
 //                                    .frame(width: 380, height: 150)
                                     .foregroundColor(Color.white)

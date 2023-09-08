@@ -97,15 +97,22 @@ struct SendKisses: View {
                 VStack {
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 10)
 
-                    Text("Jump up on a chair,")
+//                    Text("Jump up on a chair,")
+//                                            .font(.system(size: 20))
+//
+//                                            .foregroundColor(Color.white)
+//                                            .fontWeight(.light)
+//                                            .multilineTextAlignment(.center)
+                    Text("blow your kiss high in the air")
                                             .font(.system(size: 20))
                 
                                             .foregroundColor(Color.white)
                                             .fontWeight(.light)
                                             .multilineTextAlignment(.center)
-                    Text("and blow your kiss towards your friend")
+                    
+                    Text("towards your friend")
                                             .font(.system(size: 20))
                 
                                             .foregroundColor(Color.white)
@@ -123,7 +130,7 @@ struct SendKisses: View {
                         Spacer()
                             .frame(height: 25)
 
-                        Text("(who are you blowing kissers to)")
+                        Text("(who is the luck friend)")
                             .font(.system(size: 15))
                             .italic()
                             .fontWeight(.light)

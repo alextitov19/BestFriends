@@ -152,7 +152,7 @@ struct AtmosphereMain2: View {
                             showingAlert = true
                         }) {
 
-                            Text("Ouch! Dented Heart")
+                            Text("Broken Heart")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -179,7 +179,7 @@ struct AtmosphereMain2: View {
                           showingAlert = true
                         }) {
 
-                           Text("Fight with Friend")
+                           Text("Friend Drama")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -204,7 +204,7 @@ struct AtmosphereMain2: View {
                             showingAlert = true
                         }) {
 
-                            Text("Ugh. Feeling a little \ndown today")
+                            Text("Feeling a little \ndown today")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -351,11 +351,12 @@ struct AtmosphereMain2: View {
                             showingAlert = true
                         }) {
 
-                            Text("Great Day, Great News \nGreat Friends")
+                            Text("")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
+                            Image("smileIcon2")
                         }
-                        .frame(width: 140, height: 30, alignment: .center)
+                        .frame(width: 125, height: 30, alignment: .center)
                         .background(mood == 8 ? Color(.systemYellow) : ColorManager .orange3)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
