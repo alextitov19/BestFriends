@@ -110,7 +110,7 @@ struct RR18: View {
 
 
                 NavigationLink(destination: TwinkieDream(user: user, friends: friends), label: {
-                    DreamCircle (color: ColorManager.grey1, friendName: "user \npoems")
+                    DreamCircle (color: ColorManager.grey1, friendName: "love poem \ncontest")
                 })
                 .offset(x: showItems ? 150 : 0, y: showItems ? -270: 0)
 //
