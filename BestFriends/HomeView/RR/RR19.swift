@@ -165,7 +165,7 @@ struct RR19: View {
                                 .multilineTextAlignment(.center)
                             
                             Spacer()
-                                .frame(height: 0)
+                                .frame(height: 9)
                             
                             Text("You carry your shoes by the thin straps in one hand,")
                                 .font(.system(size: 12))
@@ -179,7 +179,7 @@ struct RR19: View {
                                 .multilineTextAlignment(.center)
                             
                             Spacer()
-                                .frame(height: 0)
+                                .frame(height: 9)
                             
                             Text("The air cool on your face after the day’s hot sun")
                                 .font(.system(size: 12))

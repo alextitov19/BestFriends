@@ -73,16 +73,16 @@ struct RR18: View {
             ZStack {
                 
                 NavigationLink(destination: RR19(),
-                               label: { WhoFightingCircle (color: ColorManager.purple1, friendName: "LoveTart 1")
+                               label: { WhoFightingCircle (color: ColorManager.purple1, friendName: "LoveTart \n'Linen Dress'")
                 })
                 .offset(x: showItems ? -25 : 0, y: showItems ? -300: 0)
                 
                 
                 
-                NavigationLink(destination: NewPoems(user: user, friends: friends, groups: groups), label: {
-                    WhoFightingCircle (color: ColorManager.orange2, friendName: "new \npoems")
-                })
-                .offset(x: showItems ? -120 : 0, y: showItems ? -190: 0)
+//                NavigationLink(destination: NewPoems(user: user, friends: friends, groups: groups), label: {
+//                    WhoFightingCircle (color: ColorManager.orange2, friendName: "newest \nLoveTarts")
+//                })
+//                .offset(x: showItems ? -120 : 0, y: showItems ? -190: 0)
                 
                 
 //
@@ -100,17 +100,17 @@ struct RR18: View {
                 
                 
             
-
-                NavigationLink(destination: DreamsWeDare2(user: user, friends: friends), label: {
-                    WhoFightingCircle (color: ColorManager.purple3, friendName: "a happy \ntear")
-                })
-                .offset(x: showItems ? 50 : 0, y: showItems ? -190: 0)
 //
+//                NavigationLink(destination: DreamsWeDare2(user: user, friends: friends), label: {
+//                    WhoFightingCircle (color: ColorManager.purple3, friendName: "LoveTart \n'Happy Tear'")
+//                })
+//                .offset(x: showItems ? 50 : 0, y: showItems ? -190: 0)
+////
 
+             
 
-
-                NavigationLink(destination: TwinkieDream(user: user, friends: friends), label: {
-                    DreamCircle (color: ColorManager.grey1, friendName: "love poem \ncontest")
+                NavigationLink(destination: RR19(), label: {
+                    DreamCircle (color: ColorManager.grey1, friendName: "TEST \nLoveTart \na linen dress")
                 })
                 .offset(x: showItems ? 150 : 0, y: showItems ? -270: 0)
 //
@@ -161,9 +161,21 @@ struct RR18: View {
                         Spacer()
                             .frame(height:100)
                         
-                        
+                                  
                         
                     }
+                
+                
+                Text("Issue: \n\nDid a friend do or say something \nthat's been bugging you all week? \n\nMaybe you're just a little nervous to say something.")
+                    .fontWeight(.regular)
+                    .frame(width: 300, height: 150)
+                    .foregroundColor(Color.green)
+                    .font(.system(size: 15))
+                    .background(ColorManager .grey4)
+                    .cornerRadius(10)
+                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                
+                
                 }
                 
                 
@@ -200,7 +212,7 @@ struct RR18: View {
                 
                 
                 Rectangle()
-                    .frame(width: 90, height: 90)
+                    .frame(width: 120, height: 120)
                     .clipShape(Circle())
                     .foregroundColor(color)
                     .opacity(0.7)
