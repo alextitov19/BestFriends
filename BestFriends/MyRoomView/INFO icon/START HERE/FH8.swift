@@ -81,17 +81,36 @@ struct FH8: View {
                             Spacer()
                                 .frame(height: 30)
                             
-                            Text("Letting your friends know")
+                            Text("Perfect")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
-                            Text("you care.")
+                            Text("for celebrating good days")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
+                            
+                            Text("or providing emotion support")
+                                .font(.system(size: 27))
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("to friends on those")
+                                .font(.system(size: 27))
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("difficult days.")
+                                .font(.system(size: 27))
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
                             Spacer()
                                 .frame(height: 20)
 
