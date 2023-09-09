@@ -196,7 +196,7 @@ struct PhotoPopFGPreload: View {
 
                     
                     
-                    Text("Send a 'Meet-up Coupon' to grab an ice cream, burger or something & talk.")
+                    Text("Send a 'Meet-up Coupon' to grab an ice cream, burger or something to talk after an argument.")
                     
                         .frame(width: 200, height: 70)
                         .foregroundColor(Color.black)
