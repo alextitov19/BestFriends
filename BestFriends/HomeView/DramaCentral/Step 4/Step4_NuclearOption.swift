@@ -53,7 +53,7 @@ struct Step4_NuclearOption: View {
 //                Step2_FightLandingView(user: user, friends: friends
 
                 NavigationLink(destination: CH14(user: user, friend: user, friends: friends, groups: groups), label: {
-                        HugCircle (color: Color.purple, friendName: "KEEPING it REAL... \n\nTAP here")
+                        HugCircle (color: Color.purple, friendName: "Keep'in it REAL... \n\nTAP here")
                         .blinking(duration: 2.0)
                     })
                     .offset(x: showItems ? 0 : 0, y: showItems ? -20: 0)
@@ -70,9 +70,9 @@ struct Step4_NuclearOption: View {
                         .opacity(0.7)
                         
                
-                
-                NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                            HugCircle (color: ColorManager .grey2, friendName: "Want to let \nyour other \nfriends know \n\nTAP")
+//                NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups)
+                NavigationLink(destination: EmptyView(), label: {
+                            HugCircle (color: ColorManager .grey2, friendName: "We can fix this")
                         })
                         .offset(x: showItems ? 430 : 0, y: showItems ? -300: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)

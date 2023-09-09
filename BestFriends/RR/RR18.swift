@@ -73,7 +73,7 @@ struct RR18: View {
             ZStack {
                 
                 NavigationLink(destination: RR19(),
-                               label: { WhoFightingCircle (color: ColorManager.purple1, friendName: "a linen \ndress")
+                               label: { WhoFightingCircle (color: ColorManager.purple1, friendName: "LoveTart 1")
                 })
                 .offset(x: showItems ? -25 : 0, y: showItems ? -300: 0)
                 
