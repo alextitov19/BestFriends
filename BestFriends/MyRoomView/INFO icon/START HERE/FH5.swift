@@ -46,13 +46,13 @@ struct FH5: View {
                 .blendMode(.screen)
                 VStack {
 
-                    Text("Fight with")
+                    Text("Fights with")
                         .font(.system(size: 45))
                         .foregroundColor(Color.white)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
-                    Text("Friend")
+                    Text("Friends")
                         .font(.system(size: 45))
                         .foregroundColor(Color.white)
                         .fontWeight(.light)
@@ -73,11 +73,26 @@ struct FH5: View {
                         VStack {
                             
                             
-                            Spacer()
-                                .frame(height: 70)
+//                            Spacer()
+//                                .frame(height: 70)
                             
-                            Text("We can help. \n\nWe can let you know when \nyour friend is ready to talk.")
-                                .font(.system(size: 27))
+                            Text("This is a tough one")
+                                .font(.system(size: 22))
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
+                            Spacer()
+                                .frame(height: 20)
+                            
+                            Text("Honestly, we're doing our best")
+                                .font(.system(size: 22))
+                                .foregroundColor(ColorManager .grey1)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("to help you fix this mess!")
+                                .font(.system(size: 22))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
@@ -88,7 +103,7 @@ struct FH5: View {
                     
                             NavigationLink(destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
                                 label: {
-                                    Text("Friend Drama")
+                                    Text("Friendship Drama")
                                         .fontWeight(.regular)
                                         .frame(width: 150, height: 33)
                                         .foregroundColor(Color.white)

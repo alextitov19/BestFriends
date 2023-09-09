@@ -83,21 +83,31 @@ struct FH3: View {
                         
                      
                         
-                        Text("Celebrate before the excitment is gone")
-                            .font(.system(size: 20))
+                        Text("Celebrate before the")
+                            .font(.system(size: 22))
                             .foregroundColor(ColorManager .grey1)
-                            .fontWeight(.light)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("excitment is gone")
+                            .font(.system(size: 22))
+                            .foregroundColor(ColorManager .grey1)
+                            .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
                         Spacer()
-                            .frame(height: 5)
+                            .frame(height: 15)
                         
-                        Text("Provide comfort when friends need it")
+                        Text("Provide comfort")
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager .grey1)
-                            .fontWeight(.light)
+                            .fontWeight(.thin)
                             .multilineTextAlignment(.center)
-                        
+                        Text("when friends need it")
+                            .font(.system(size: 20))
+                            .foregroundColor(ColorManager .grey1)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
                         
                     }
                     

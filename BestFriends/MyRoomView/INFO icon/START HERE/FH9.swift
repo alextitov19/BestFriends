@@ -65,13 +65,13 @@ struct FH9: View {
                                 .frame(height: 30)
                             
                             Text("Build & customize")
-                                .font(.system(size: 27))
+                                .font(.system(size: 22))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
-                            Text("your Chat rooms")
-                                .font(.system(size: 27))
+                            Text("your chat rooms")
+                                .font(.system(size: 22))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)

@@ -69,16 +69,16 @@ struct FH6: View {
                             .frame(height: 40)
                         
                         
-                        Text("Because you won't feel like")
+                        Text("because you won't feel like")
                             .font(.system(size: 22))
                             .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.light)
+                            .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
                         Text("you're not good enough")
                             .font(.system(size: 22))
                             .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.light)
+                            .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
                         Spacer()
@@ -87,7 +87,7 @@ struct FH6: View {
                         Text("&")
                             .font(.system(size: 30))
                             .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.light)
+                            .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
                         Spacer()
@@ -98,24 +98,31 @@ struct FH6: View {
                         
                         VStack {
                             
-                            Text("We don't allow 'likes' or")
+                            Text("we don't allow 'likes' or")
                                 .font(.system(size: 22))
                                 .foregroundColor(ColorManager.grey1)
-                                .fontWeight(.light)
+                                .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
                             Text("or 'comments' on images")
                                 .font(.system(size: 22))
                                 .foregroundColor(ColorManager.grey1)
-                                .fontWeight(.light)
+                                .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
                             Spacer()
                                 .frame(height: 30)
-                            Text("We're a safe, non-toxic environment")
+                            
+                            Text("We're a safe, closed")
                                 .font(.system(size: 17))
                                 .italic()                            .foregroundColor(ColorManager.grey1)
-                                .fontWeight(.light)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("non-toxic environment")
+                                .font(.system(size: 17))
+                                .italic()                            .foregroundColor(ColorManager.grey1)
+                                .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
                             Spacer()

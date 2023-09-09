@@ -81,14 +81,14 @@ struct RR6: View {
                             Spacer()
                                 .frame(height: 30)
                             Text("We welcome you")
-                                .font(.system(size: 25))
+                                .font(.system(size: 22))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
                             
                             Text("and your 5 BFFs")
-                                .font(.system(size: 25))
+                                .font(.system(size: 22))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)

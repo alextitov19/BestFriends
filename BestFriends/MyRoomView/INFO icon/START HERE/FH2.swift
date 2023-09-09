@@ -75,43 +75,27 @@ struct FH2: View {
                             .font(.system(size: 22))
                                .italic()
                             .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.light)
+                            .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
                         Spacer()
                             .frame(height: 20)
                         
-                        Text("Letting the outside of you")
+                        Text("letting the outside of you")
                             .font(.system(size: 22))
 //                                                       .italic()
                             .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.light)
+                            .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
                         Text("match the inside of you")
                             .font(.system(size: 22))
 //                                                        .italic()
                             .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.light)
+                            .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
-                        
-                        Text("on social media")
-                            .font(.system(size: 22))
-//                                                        .italic()
-                            .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
-//                        Spacer()
-//                            .frame(height: 20)
-//
-//                        Text("Why?")
-//                            .font(.system(size: 22))
-//                                .italic()
-//                            .foregroundColor(ColorManager.grey1)
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
+ 
                     
                         
                         

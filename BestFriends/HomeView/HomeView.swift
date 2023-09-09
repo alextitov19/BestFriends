@@ -90,7 +90,7 @@ struct HomeView: View {
                             
                             ZStack {
                              
-                                Image(systemName: "heart")
+                                Image(systemName: "")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 60, height: 60)
@@ -198,19 +198,19 @@ struct HomeView: View {
                                 Image(systemName: "circle")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 47, height: 47)
+                                    .frame(width: 60, height: 60)
                                     .foregroundColor(Color .green)
-                                    .glow(color: ColorManager.purple4, radius: 3)
+                                    .glow(color: ColorManager.purple4, radius: 20)
                                     .blinking(duration: 2.0)
                                 
                    
                                 NavigationLink( destination:  FH2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                                 label: {
-                                    Text("Walk\nthrough")
+                                    Text("Start\nhere")
                                         .fontWeight(.regular)
                                         .frame(width: 60, height: 60)
                                         .foregroundColor(Color.white)
-                                        .font(.system(size: 8))
+                                        .font(.system(size: 12))
 //                                        .blinking(duration: 2.0)
                                     
                                     

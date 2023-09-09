@@ -82,14 +82,14 @@ struct FH8: View {
                                 .frame(height: 30)
                             
                             Text("Perfect")
-                                .font(.system(size: 27))
+                                .font(.system(size: 22))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                         
                             
                             Text("for celebrating good days,")
-                                .font(.system(size: 27))
+                                .font(.system(size: 22))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
@@ -98,13 +98,13 @@ struct FH8: View {
                                 .frame(height: 10)
                             
                             Text("or providing emotion support")
-                                .font(.system(size: 27))
+                                .font(.system(size: 22))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
                             Text("on those difficult days.")
-                                .font(.system(size: 27))
+                                .font(.system(size: 22))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
