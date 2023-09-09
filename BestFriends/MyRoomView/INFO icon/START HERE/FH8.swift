@@ -86,12 +86,16 @@ struct FH8: View {
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
+                        
                             
-                            Text("for celebrating good days")
+                            Text("for celebrating good days,")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
+                            
+                            Spacer()
+                                .frame(height: 10)
                             
                             Text("or providing emotion support")
                                 .font(.system(size: 27))
