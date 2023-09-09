@@ -627,7 +627,7 @@ struct MyRoomView: View {
                                             
                         NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
                                 label: {
-                                Text("Argument \nMeetup \nCoupon")
+                                Text("Meetup \nCoupon")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .font(.system(size: 10))
@@ -675,16 +675,7 @@ struct MyRoomView: View {
                         
                         
                         //************************************************ Accessorizing Section **************
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-//                        ****************************************************************
+                
                         
                         Spacer()
                             .frame(height: 25)
@@ -738,14 +729,38 @@ struct MyRoomView: View {
                                             }
                                         }
                                       
-                                        
-                                        
-                                    
-                                        
-                                        
-                                        
                                         Spacer ()
                                             .frame(width: 180)
+                                        
+                //                        ****************************************************************
+                                        ZStack {
+                                            
+                                            Image(systemName: "heart.fill")
+                                                .resizable()
+                                                .foregroundColor(ColorManager .grey2)
+                                                .frame(width: 80, height: 60)
+                                                .rotationEffect(.degrees(-7))
+                                                .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                                .opacity(0.99)
+                                            
+                                            
+                                            NavigationLink( destination: CH15(user: user, friends: friends),
+                                                            label: {
+                                                Text("Accessorizing")
+                                                    .fontWeight(.light)
+                                                    .foregroundColor(Color.black)
+                                                    .font(.system(size: 9))
+                                                    .rotationEffect(.degrees(-7))
+                                                    .opacity(0.85)
+                                                
+                                            })
+                                            
+                                        }
+                                        
+                                        
+//                                        Spacer ()
+//                                            .frame(width: 180)
                                         
                                     }
                                 }
