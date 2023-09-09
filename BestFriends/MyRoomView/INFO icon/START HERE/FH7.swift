@@ -84,13 +84,13 @@ struct FH7: View {
                             Spacer()
                                 .frame(height: 10)
                             
-                            Text("Just shake you iPhone and the image")
+                            Text("Just shake you iPhone")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
-                            Text("Pops Up")
+                            Text("and image Pops Up")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)

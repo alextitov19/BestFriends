@@ -48,7 +48,7 @@ struct FH3: View {
             
             VStack {
                 
-                Text("Real-time")
+                Text("Real-time Friends")
                     .font(.system(size: 45))
                     .foregroundColor(Color.white)
                     .fontWeight(.light)
@@ -71,18 +71,9 @@ struct FH3: View {
                         Spacer()
                             .frame(height: 70)
                         
-                        Text("Stay connected to your friends")
-                            .font(.system(size: 27))
-                            .foregroundColor(ColorManager .grey1)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
+                   
                         
-                        
-                        
-                        Spacer()
-                            .frame(height: 15)
-                        
-                        Text("real-time")
+                        Text("Why turn Notification ON")
                             .font(.system(size: 35))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.bold)
@@ -91,18 +82,20 @@ struct FH3: View {
                         Spacer()
                             .frame(height: 15)
                         
+                     
                         
-                        Text("when notifications are turned on")
+                        Text("To celebrate before the excitment wares off")
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Text("for BestFriends app")
+                        Text("and provide comfort to friends when they need it")
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
+                        
                         
                     }
                     

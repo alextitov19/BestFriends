@@ -64,7 +64,7 @@ struct FH9: View {
                             Spacer()
                                 .frame(height: 30)
                             
-                            Text("Building & customize")
+                            Text("Build & customize")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)

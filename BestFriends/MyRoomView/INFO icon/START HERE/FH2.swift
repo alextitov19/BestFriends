@@ -71,7 +71,7 @@ struct FH2: View {
                         Spacer()
                             .frame(height: 40)
                         
-                        Text("On BestFriendsNetwork")
+                        Text("BestFriendsNetwork")
                             .font(.system(size: 22))
                                .italic()
                             .foregroundColor(ColorManager.grey1)
@@ -83,14 +83,14 @@ struct FH2: View {
                         
                         Text("you can let the outside of you")
                                                     .font(.system(size: 22))
-                                                       .italic()
+//                                                       .italic()
                                                     .foregroundColor(ColorManager.grey1)
                                                     .fontWeight(.light)
                                                     .multilineTextAlignment(.center)
                                                 
                                                 Text("match the inside of you")
                                                     .font(.system(size: 22))
-                                                        .italic()
+//                                                        .italic()
                                                     .foregroundColor(ColorManager.grey1)
                                                     .fontWeight(.light)
                                                     .multilineTextAlignment(.center)
@@ -98,7 +98,7 @@ struct FH2: View {
                                                 
                                                 Text("on social media")
                                                     .font(.system(size: 22))
-                                                        .italic()
+//                                                        .italic()
                                                     .foregroundColor(ColorManager.grey1)
                                                     .fontWeight(.light)
                                                     .multilineTextAlignment(.center)
