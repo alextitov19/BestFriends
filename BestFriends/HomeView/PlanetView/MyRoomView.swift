@@ -531,9 +531,9 @@ struct MyRoomView: View {
                                             VStack {
                                                 
                                             
-                                                NavigationLink( destination: CH20(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                                NavigationLink( destination: EmptyView(),
                                                                 label: {
-                                                    Text("Accesorizing \nmy space")
+                                                    Text("")
                                                         .fontWeight(.regular)
                                                         .frame(width: 120, height: 45)
                                                         .foregroundColor(ColorManager .purple5)
@@ -739,19 +739,19 @@ struct MyRoomView: View {
                                                 .resizable()
                                                 .foregroundColor(ColorManager .grey2)
                                                 .frame(width: 80, height: 60)
-                                                .rotationEffect(.degrees(-7))
+                                                .rotationEffect(.degrees(7))
                                                 .shadow(color: .white, radius: 2, x: -2, y: 2)
                                                 .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                                 .opacity(0.99)
                                             
                                             
-                                            NavigationLink( destination: CH15(user: user, friends: friends),
+                                            NavigationLink( destination: CH20(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                                             label: {
                                                 Text("Accessorizing")
                                                     .fontWeight(.light)
                                                     .foregroundColor(Color.black)
                                                     .font(.system(size: 9))
-                                                    .rotationEffect(.degrees(-7))
+                                                    .rotationEffect(.degrees(7))
                                                     .opacity(0.85)
                                                 
                                             })
