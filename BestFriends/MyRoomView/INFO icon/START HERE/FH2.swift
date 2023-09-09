@@ -71,7 +71,7 @@ struct FH2: View {
                         Spacer()
                             .frame(height: 40)
                         
-                        Text("On BestFriends")
+                        Text("On BestFriendsNetwork")
                             .font(.system(size: 22))
                                .italic()
                             .foregroundColor(ColorManager.grey1)
