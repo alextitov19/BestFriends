@@ -68,29 +68,31 @@ struct FH3: View {
                     VStack {
                         
                         
-                        Spacer()
-                            .frame(height: 70)
+                      
                         
                    
                         
-                        Text("Why turn Notification ON")
-                            .font(.system(size: 35))
+                        Text("Leaving Notification ON")
+                            .font(.system(size: 25))
                             .foregroundColor(ColorManager .grey1)
-                            .fontWeight(.bold)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 20)
                         
                      
                         
-                        Text("To celebrate before the excitment wares off")
+                        Text("Celebrate before the excitment is gone")
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Text("and provide comfort to friends when they need it")
+                        Spacer()
+                            .frame(height: 5)
+                        
+                        Text("Provide comfort when friends need it")
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.light)

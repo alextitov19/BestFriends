@@ -67,19 +67,43 @@ struct FH6: View {
                         
                         Spacer()
                             .frame(height: 40)
-                        
-                        
-                        Text("Because you will not experience the intense feeling of not being good enough or FOMO because these are your closest friends. \n\nIn addition, the BestFriends app does not allow 'likes' or 'comments' on images, thereby reducing the possibility of 'competitive' anxiety.")
-                            .fontWeight(.regular)
-                            .frame(width: 340, height: 130)
-                            .foregroundColor(ColorManager .grey4)
-                            .font(.system(size: 15))
-                            .background(ColorManager .grey1)
-                            .cornerRadius(10)
-                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                            .opacity(0.7)
+//                        
+//                        
+//                        Text("Because you won't feel like you are not good enough or FOMO. \n\nWe don't allow 'likes' or 'comments' on images")
+//                            .fontWeight(.regular)
+//                            .frame(width: 340, height: 100)
+//                            .foregroundColor(ColorManager .grey4)
+//                            .font(.system(size: 15))
+//                            .background(ColorManager .grey1)
+//                            .cornerRadius(10)
+//                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                            .opacity(0.7)
 
+                        Text("Because you won't feel like")
+                            .font(.system(size: 22))
+//                                                       .italic()
+                            .foregroundColor(ColorManager.grey1)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("you're not good enough or FOMO")
+                            .font(.system(size: 22))
+//                                                        .italic()
+                            .foregroundColor(ColorManager.grey1)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                        
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        Text("We don't allow 'likes' or 'comments' on images")
+                            .font(.system(size: 22))
+//                                                        .italic()
+                            .foregroundColor(ColorManager.grey1)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
                        
+                        
                         Spacer()
                             .frame(height: 20)
                

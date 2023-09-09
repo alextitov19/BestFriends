@@ -79,29 +79,29 @@ struct FH2: View {
                             .multilineTextAlignment(.center)
                         
                         Spacer()
-                            .frame(height: 10)
+                            .frame(height: 20)
                         
-                        Text("you can let the outside of you")
-                                                    .font(.system(size: 22))
+                        Text("where you can let the outside of you")
+                            .font(.system(size: 22))
 //                                                       .italic()
-                                                    .foregroundColor(ColorManager.grey1)
-                                                    .fontWeight(.light)
-                                                    .multilineTextAlignment(.center)
-                                                
-                                                Text("match the inside of you")
-                                                    .font(.system(size: 22))
+                            .foregroundColor(ColorManager.grey1)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("match the inside of you")
+                            .font(.system(size: 22))
 //                                                        .italic()
-                                                    .foregroundColor(ColorManager.grey1)
-                                                    .fontWeight(.light)
-                                                    .multilineTextAlignment(.center)
-                                                
-                                                
-                                                Text("on social media")
-                                                    .font(.system(size: 22))
+                            .foregroundColor(ColorManager.grey1)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        Text("on social media")
+                            .font(.system(size: 22))
 //                                                        .italic()
-                                                    .foregroundColor(ColorManager.grey1)
-                                                    .fontWeight(.light)
-                                                    .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager.grey1)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
                         
                         Spacer()
                             .frame(height: 20)

@@ -70,7 +70,7 @@ struct FH9: View {
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
-                            Text("your Chat Rooms")
+                            Text("your Chat rooms")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)

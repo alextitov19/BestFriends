@@ -103,17 +103,13 @@ struct FH8: View {
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
-                            Text("to friends on those")
+                            Text("on those difficult days.")
                                 .font(.system(size: 27))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
-                            Text("difficult days.")
-                                .font(.system(size: 27))
-                                .foregroundColor(ColorManager .grey1)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
+                          
                             
                             Spacer()
                                 .frame(height: 20)
