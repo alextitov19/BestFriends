@@ -119,10 +119,26 @@ struct CH14: View {
         
             }
 
-                                    VStack {
+        VStack {
                                         
-                                        
-                                      
+            VStack {
+                
+                Spacer()
+                    .frame(height: 20)
+                                                               
+                Text("Just a reminder: \n\nUnfriending and trash posts on IG will not fix this. You were friends before and will be again - so stay cool because... \n\nSharp words errase all the nice ones you ever said!")
+                    .fontWeight(.regular)
+                    .frame(width: 300, height: 150)
+                    .foregroundColor(Color.green)
+                    .font(.system(size: 15))
+                    .background(ColorManager .grey4)
+                    .cornerRadius(10)
+                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                    .padding(20)
+            }
+          
+            Spacer()
+                .frame(height: 20)
 
 
                                 ZStack(alignment: .bottom) {
@@ -317,23 +333,7 @@ struct CH14: View {
                                 .frame(height: 30)
                             
                             VStack {
-//                                Text("Unfortunately, now the")
-//                                    .font(.system(size: 17, weight: .light))
-//                                    .italic()
-//                                    .foregroundColor(ColorManager .grey1)
-//                                    .multilineTextAlignment(.center)
-//
-//                                Text("'waiting-to-hear-back'")
-//                                    .font(.system(size: 17, weight: .light))
-//                                    .italic()
-//                                    .foregroundColor(ColorManager .grey1)
-//                                    .multilineTextAlignment(.center)
-//
-//                                Text("anxiety begins")
-//                                    .font(.system(size: 17, weight: .light))
-//                                    .italic()
-//                                    .foregroundColor(ColorManager .grey1)
-//                                    .multilineTextAlignment(.center)
+
                                 
                                 Spacer()
                                     .frame(height: 20)

@@ -95,17 +95,15 @@ struct CH15: View {
                             
                             VStack {
                                 
-                                Text("Did a friend do or say something \nthat's been bugging you all week? \n\nMaybe you're just a little nervous to say something.")
-                                    .fontWeight(.light)
-                                    .frame(width: 200, height: 200)
-                                    .foregroundColor(Color.white)
+                                Text("Issue: \n\nDid a friend do or say something \nthat's been bugging you all week? \n\nMaybe you're just a little nervous to say something.")
+                                    .fontWeight(.regular)
+                                    .frame(width: 300, height: 150)
+                                    .foregroundColor(Color.green)
                                     .font(.system(size: 15))
-//                                    .padding(50)
-                                    .background(ColorManager .grey3)
-                                    .multilineTextAlignment(.center)
-                                    .cornerRadius(50)
+                                    .background(ColorManager .grey4)
+                                    .cornerRadius(10)
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                    .opacity(0.5)
+//                                            .blinking(duration: 2.0)
                                 //                                        .padding(30)
                                 
                              
@@ -285,28 +283,15 @@ struct CH15: View {
                                                     Spacer()
                                                         .frame(height: 20)
                                                     
-                                                    Text("Every Sunday at 8pm EDT join teens everywhere ")
-                                                        .font(.system(size: 17))
-                                                        .italic()
-                                                        .foregroundColor(Color.white)
-                                                        .fontWeight(.light)
-                                                        .multilineTextAlignment(.center)
-                                                    
-                                                    
-                                                    Text("asking their friends to talk about it, ")
-                                                        .font(.system(size: 17))
-                                                        .italic()
-                                                        .foregroundColor(Color.white)
-                                                        .fontWeight(.light)
-                                                        .multilineTextAlignment(.center)
-                                                    
-                                                    
-                                                    Text("now you're no longer alone!")
-                                                        .font(.system(size: 17))
-                                                        .italic()
-                                                        .foregroundColor(Color.white)
-                                                        .fontWeight(.light)
-                                                        .multilineTextAlignment(.center)
+                                                    Text("Maybe try this: \n\nEvery Sunday at 8pm EDT join teens everywhere asking their friends to talk about it. \n\nNow you're no longer alone!")
+                                                        .fontWeight(.regular)
+                                                        .frame(width: 300, height: 150)
+                                                        .foregroundColor(ColorManager .grey1)
+                                                        .font(.system(size: 15))
+                                                        .background(ColorManager .grey4)
+                                                        .cornerRadius(10)
+                                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                          
                                                     
                                                     Spacer()
                                                         .frame(height: 25)

@@ -44,14 +44,16 @@ struct Step4_NuclearOption: View {
             AdPlayerView(name: "background_8")
                 .ignoresSafeArea()
                 .blendMode(.screen)
+       
             
+         
 
             ZStack{
 
 //                Step2_FightLandingView(user: user, friends: friends
 
                 NavigationLink(destination: CH14(user: user, friend: user, friends: friends, groups: groups), label: {
-                        HugCircle (color: Color.purple, friendName: "When you're ready to \nfix this... \n\nTAP here")
+                        HugCircle (color: Color.purple, friendName: "KEEPING it REAL... \n\nTAP here")
                         .blinking(duration: 2.0)
                     })
                     .offset(x: showItems ? 0 : 0, y: showItems ? -20: 0)
@@ -107,7 +109,7 @@ struct Step4_NuclearOption: View {
 //                            .shadow(color: Color .white, radius: 65, x: 30, y: 50) .opacity(0.99)
                             .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)
                             .opacity(0.90)
-                            .blinking(duration: 2.0)
+//                            .blinking(duration: 2.0)
                        
                         VStack {
                             Text("Big Fight")
@@ -160,35 +162,23 @@ struct Step4_NuclearOption: View {
                                     
                                     Link(destination: URL(string: "https://socialtechlabs.com/understanding-the-why/")!) {
                                         
-                                        Text("Keep Relationship?")
-                                            .fontWeight(.light)
-                                            .frame(width: 220, height: 40)
+                                        Text("Should I keep \n this relationship?")
+                                            .fontWeight(.regular)
+                                            .frame(width: 180, height: 50)
                                             .foregroundColor(Color.green)
-                                            .font(.system(size: 20))
+                                            .font(.system(size: 15))
                                             .background(ColorManager .grey4)
                                             .cornerRadius(10)
                                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                            .blinking(duration: 2.0)
+//                                            .blinking(duration: 2.0)
                                     }
                                 
-                                    
+                            
                                     
                                     Spacer ()
                                         .frame(width: 20)
                                     
-//                                    NavigationLink(destination: CH15(user: user, friends: friends),
-//                                                   label: {
-//                                        Text("Hurt Feelings?")
-//                                            .fontWeight(.light)
-//                                            .frame(width: 180, height: 40)
-//                                            .foregroundColor(Color.white)
-//                                            .font(.system(size: 20))
-//                                            .background(ColorManager .grey3)
-//                                            .cornerRadius(10)
-//                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//
-//                                    })
-                                    
+
                                 }
                                 
                             }
