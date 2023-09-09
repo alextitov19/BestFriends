@@ -323,7 +323,7 @@ struct HomeView: View {
                         })
                         
                         Spacer()
-                            .frame(height: 100)
+                            .frame(height: 600)
                     }
                 }
                 
