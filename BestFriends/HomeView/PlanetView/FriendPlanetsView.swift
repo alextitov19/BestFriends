@@ -295,18 +295,27 @@ struct FriendPlanetsView: View {
                     Image("planet_0")
                         .resizable()
                         .scaledToFit()
-                        .opacity(0.7)
+                        .opacity(0.9)
                         .frame(width: 50, height: 50)
 
                   
-                    
+                    Image(systemName: "circle")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 45, height: 45)
+                        .foregroundColor(Color .green)
+                        .glow(color: ColorManager.purple4, radius: 2)
+                        .blinking(duration: 2.0)
                     
                     
                     Image(systemName: "plus")
                         .resizable()
+                    
                         .foregroundColor(.white)
                         .frame(width: 25, height: 25)
+                    
                         .scaledToFit()
+                        .blinking(duration: 2.0)
                 }
                 
                 Text("add friend")

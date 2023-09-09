@@ -290,7 +290,7 @@ struct HomeView: View {
                             
                         })
                             Text("tap \nme")
-                                .fontWeight(.thin)
+                                .fontWeight(.light)
                                 .frame(width: 45, height: 45)
                               .foregroundColor(Color.black)
                                 .font(.system(size: 17))
