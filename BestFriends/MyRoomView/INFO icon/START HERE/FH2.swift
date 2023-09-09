@@ -52,43 +52,7 @@ struct FH2: View {
 
             VStack {
                 
-//                Text("introducing")
-//                    .font(.system(size: 15))
-//                    .italic()
-//                    .foregroundColor(Color.white)
-//                    .fontWeight(.regular)
-//                    .multilineTextAlignment(.center)
-//
-//                Text("BestFriends")
-//                    .font(.system(size: 20))
-//                    .italic()
-//                    .foregroundColor(Color.white)
-//                    .fontWeight(.regular)
-//                    .multilineTextAlignment(.center)
-//
-//                Spacer()
-//                    .frame(height: 15)
-//
-//                Text("it's just for")
-//                    .font(.system(size: 35))
-//                    .foregroundColor(Color.white)
-//                    .fontWeight(.regular)
-//                    .multilineTextAlignment(.center)
-//
-//
-//                Text("you & your")
-//                    .font(.system(size: 35))
-//                    .foregroundColor(Color.white)
-//                    .fontWeight(.regular)
-//                    .multilineTextAlignment(.center)
-//
-//                Text("friends")
-//                    .font(.system(size: 35))
-//                    .foregroundColor(Color.white)
-//                    .fontWeight(.regular)
-//                    .multilineTextAlignment(.center)
-             
-                
+
                 ZStack {
                     
                     Spacer()
@@ -107,8 +71,17 @@ struct FH2: View {
                         Spacer()
                             .frame(height: 40)
                         
+                        Text("On BestFriends")
+                            .font(.system(size: 22))
+                               .italic()
+                            .foregroundColor(ColorManager.grey1)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
                         
-                        Text("Now, you can let the outside of you")
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        Text("you can let the outside of you")
                                                     .font(.system(size: 22))
                                                        .italic()
                                                     .foregroundColor(ColorManager.grey1)
@@ -130,8 +103,15 @@ struct FH2: View {
                                                     .fontWeight(.light)
                                                     .multilineTextAlignment(.center)
                         
+                        Spacer()
+                            .frame(height: 20)
                         
-                        
+                        Text("Why?")
+                            .font(.system(size: 22))
+                                .italic()
+                            .foregroundColor(ColorManager.grey1)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
                     
                         
                         
@@ -150,7 +130,7 @@ struct FH2: View {
                     
                     
                     NavigationLink(
-                        destination: RR6(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        destination: FH6(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                         label: {
                             Text("->")
                                 .fontWeight(.thin)
