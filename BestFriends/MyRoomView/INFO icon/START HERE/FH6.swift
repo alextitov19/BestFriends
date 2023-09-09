@@ -45,11 +45,11 @@ struct FH6: View {
             AdPlayerView(name: "background_9")
                 .ignoresSafeArea()
                 .blendMode(.screen)
- 
-
+            
+            
             VStack {
                 
-
+                
                 ZStack {
                     
                     Spacer()
@@ -67,28 +67,16 @@ struct FH6: View {
                         
                         Spacer()
                             .frame(height: 40)
-//                        
-//                        
-//                        Text("Because you won't feel like you are not good enough or FOMO. \n\nWe don't allow 'likes' or 'comments' on images")
-//                            .fontWeight(.regular)
-//                            .frame(width: 340, height: 100)
-//                            .foregroundColor(ColorManager .grey4)
-//                            .font(.system(size: 15))
-//                            .background(ColorManager .grey1)
-//                            .cornerRadius(10)
-//                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//                            .opacity(0.7)
-
+                        
+                        
                         Text("Because you won't feel like")
                             .font(.system(size: 22))
-//                                                       .italic()
                             .foregroundColor(ColorManager.grey1)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Text("you're not good enough or FOMO")
+                        Text("you're not good enough")
                             .font(.system(size: 22))
-//                                                        .italic()
                             .foregroundColor(ColorManager.grey1)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -96,60 +84,87 @@ struct FH6: View {
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("We don't allow 'likes' or 'comments' on images")
-                            .font(.system(size: 22))
-//                                                        .italic()
+                        Text("&")
+                            .font(.system(size: 30))
                             .foregroundColor(ColorManager.grey1)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                       
                         
                         Spacer()
-                            .frame(height: 20)
-               
-                     
-              
-
+                            .frame(height: 10)
+                        
+                        
+                        
+                        
+                        VStack {
+                            
+                            Text("We don't allow 'likes' or")
+                                .font(.system(size: 22))
+                                .foregroundColor(ColorManager.grey1)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("or 'comments' on images")
+                                .font(.system(size: 22))
+                                .foregroundColor(ColorManager.grey1)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+                            Spacer()
+                                .frame(height: 30)
+                            Text("We're a safe, non-toxic environment")
+                                .font(.system(size: 17))
+                                .italic()                            .foregroundColor(ColorManager.grey1)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+                            Spacer()
+                                .frame(height: 20)
+                            
+                            
+                            
+                            
+                        }
                     }
-                    
                 }
-                VStack {
+                
+                    VStack {
+                        
+                        Spacer()
+                            .frame(height: 30)
+                        
+                        
+                        
+                        NavigationLink(
+                            destination: RR6(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                            label: {
+                                Text("->")
+                                    .fontWeight(.thin)
+                                    .foregroundColor(Color.white)
+                                    .frame(width: 40, height: 40)
+                                    .font(.system(size: 30))
+                                    .background(ColorManager .grey2)
+                                    .opacity(0.95)
+                                    .cornerRadius(5)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            }
+                            
+                        )}
+                    
+                    
+                    
                     
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 40)
                     
-                    
-                    
-                    NavigationLink(
-                        destination: RR6(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                        label: {
-                            Text("->")
-                                .fontWeight(.thin)
-                                .foregroundColor(Color.white)
-                                .frame(width: 40, height: 40)
-                                .font(.system(size: 30))
-                                .background(ColorManager .grey2)
-                                .opacity(0.95)
-                                .cornerRadius(5)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        }
-                        
-                    )}
-                
-                
-                
-                
-                Spacer()
-                    .frame(height: 40)
+                }
                 
             }
             
         }
         
     }
-    
-    
-}
+
         
 
 

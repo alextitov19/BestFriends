@@ -81,7 +81,7 @@ struct FH2: View {
                         Spacer()
                             .frame(height: 20)
                         
-                        Text("where you can let the outside of you")
+                        Text("Letting the outside of you")
                             .font(.system(size: 22))
 //                                                       .italic()
                             .foregroundColor(ColorManager.grey1)
@@ -103,15 +103,15 @@ struct FH2: View {
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Spacer()
-                            .frame(height: 20)
-                        
-                        Text("Why?")
-                            .font(.system(size: 22))
-                                .italic()
-                            .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
+//                        Spacer()
+//                            .frame(height: 20)
+//
+//                        Text("Why?")
+//                            .font(.system(size: 22))
+//                                .italic()
+//                            .foregroundColor(ColorManager.grey1)
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
                     
                         
                         
