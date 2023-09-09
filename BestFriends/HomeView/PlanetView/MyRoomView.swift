@@ -608,7 +608,7 @@ struct MyRoomView: View {
                                         
                                     })
                                     
-                                    HStack {
+                HStack {
                                         
                                        
                                
