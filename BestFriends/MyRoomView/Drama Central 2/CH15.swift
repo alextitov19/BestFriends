@@ -95,10 +95,10 @@ struct CH15: View {
                             
                             VStack {
                                 
-                                Text("Issue: \n\nDid a friend do or say something \nthat's been bugging you all week? \n\nMaybe you're just a little uncomfortable saying anything - it's ok. You're not alone!")
+                                Text("Issue: \n\nDid a friend do or say something \nthat's been bugging you all week? \n\nMaybe you're just a little uncomfortable saying anything - it's ok. We can help!")
                                     .fontWeight(.regular)
                                     .frame(width: 300, height: 150)
-                                    .foregroundColor(Color.green)
+                                    .foregroundColor(ColorManager .grey1)
                                     .font(.system(size: 15))
                                     .background(ColorManager .grey4)
                                     .cornerRadius(10)
@@ -283,10 +283,10 @@ struct CH15: View {
                                                     Spacer()
                                                         .frame(height: 20)
                                                     
-                                                    Text("We have an idea that could help: \n\nEvery Sunday at 8pm EDT we send out a push notification inviting you to join teens everywhere asking their friends to talk about it. \n\nThere is strength in numbers!")
+                                                    Text("We have an idea that could help: \n\nEvery Sunday at 8pm EDT we send out a push notification inviting you to join teens everywhere asking their friends to talk about it. \n\nYou're not alone!")
                                                         .fontWeight(.regular)
                                                         .frame(width: 300, height: 150)
-                                                        .foregroundColor(ColorManager .grey1)
+                                                        .foregroundColor(Color.green)
                                                         .font(.system(size: 15))
                                                         .background(ColorManager .grey4)
                                                         .cornerRadius(10)
