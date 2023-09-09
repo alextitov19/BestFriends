@@ -63,7 +63,7 @@ struct Step4_NuclearOption: View {
 
                 
                         NavigationLink(destination: BreathInView(), label: {
-                            HugCircle (color: ColorManager .purple3, friendName: "Slow down \ntake a Breath \n\nTAP")
+                            HugCircle (color: ColorManager .purple3, friendName: "Slow down, \ntake a Breath \n\nTAP")
                         })
                         .offset(x: showItems ? 120 : 0, y: showItems ? 200: 0)
                         .shadow(color: ColorManager .grey1, radius: 20, x: 10, y: 10)

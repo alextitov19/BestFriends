@@ -205,7 +205,7 @@ struct CH14: View {
                             .foregroundColor(Color.white)
                             .multilineTextAlignment(.center)
                     
-                        Text("want to talk try to fix this!")
+                        Text("want to talk to try to fix this!")
                             .font(.system(size: 17))
                             .fontWeight(.light)
                             .foregroundColor(Color.white)
