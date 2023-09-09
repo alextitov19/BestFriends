@@ -196,7 +196,7 @@ struct PhotoPopFGPreload: View {
 
                     
                     
-                    Text("Make a 'Meet-up Coupon' to grab an ice cream, burger or something & talk.")
+                    Text("Send a 'Meet-up Coupon' to grab an ice cream, burger or something & talk.")
                     
                         .frame(width: 200, height: 70)
                         .foregroundColor(Color.black)
@@ -220,7 +220,7 @@ struct PhotoPopFGPreload: View {
                         Spacer()
                             .frame(height: 30)
                         
-                        Text("Ask friend to check Chat")
+                        Text("Notify friend")
                             .font(.system(size: 17))
                             .fontWeight(.light)
                             .foregroundColor(Color.white)
