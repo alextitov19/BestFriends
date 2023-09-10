@@ -425,9 +425,9 @@ struct MyRoomView: View {
                                             
                       Image(systemName: "triangle.fill")
                             .resizable()
-                            .foregroundColor(ColorManager .grey3)
-                            .frame(width: 80, height: 60)
-                            .rotationEffect(.degrees(-7))
+                            .foregroundColor(Color.purple)
+                            .frame(width: 80, height: 55)
+//                            .rotationEffect(.degrees(-7))
                             .shadow(color: .white, radius: 2, x: -2, y: 2)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                             .opacity(0.7)
@@ -439,7 +439,7 @@ struct MyRoomView: View {
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .font(.system(size: 10))
-                                .rotationEffect(.degrees(-7))
+//                                .rotationEffect(.degrees(-7))
                                 .opacity(1.0)
 //                                .blinking(duration: 2.0)
 
@@ -458,8 +458,8 @@ struct MyRoomView: View {
                                             Image(systemName: "triangle.fill")
                                                 .resizable()
                                                 .foregroundColor(Color.green)
-                                                .frame(width: 80, height: 60)
-                                                .rotationEffect(.degrees(7))
+                                                .frame(width: 80, height: 55)
+//                                                .rotationEffect(.degrees(7))
                                                 .shadow(color: .white, radius: 2, x: -2, y: 2)
                                                 .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                                 .opacity(0.8)
@@ -471,7 +471,7 @@ struct MyRoomView: View {
                                                     .fontWeight(.light)
                                                     .foregroundColor(Color.black)
                                                     .font(.system(size: 11))
-                                                    .rotationEffect(.degrees(7))
+//                                                    .rotationEffect(.degrees(7))
                                                     .opacity(0.85)
                                                 
                                            
@@ -536,20 +536,20 @@ struct MyRoomView: View {
                                                 Spacer()
                                                     .frame(height: 10)
                                                 
-                                                NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
-                                                                label: {
-                                                    Text("SmileVault")
-                                                        .fontWeight(.regular)
-                                                        .frame(width: 120, height: 45)
-                                                        .foregroundColor(ColorManager .purple5)
-                                                        .font(.system(size: 17))
-                                                        .background(ColorManager .purple1)
-                                                        .glow(color: ColorManager.purple3, radius: 1)
-                                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                                        .opacity(0.9)
-                                                        .cornerRadius(7)
-                                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-                                                })
+//                                                NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+//                                                                label: {
+//                                                    Text("SmileVault")
+//                                                        .fontWeight(.regular)
+//                                                        .frame(width: 120, height: 45)
+//                                                        .foregroundColor(ColorManager .purple5)
+//                                                        .font(.system(size: 17))
+//                                                        .background(ColorManager .purple1)
+//                                                        .glow(color: ColorManager.purple3, radius: 1)
+//                                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                                        .opacity(0.9)
+//                                                        .cornerRadius(7)
+//                                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+//                                                })
                                                 
                                             }
                                             
@@ -558,22 +558,22 @@ struct MyRoomView: View {
                                             
                                             VStack {
                                                 
-                                            
-                                                NavigationLink( destination: EmptyView(),
-                                                                label: {
-                                                    Text("")
-                                                        .fontWeight(.regular)
-                                                        .frame(width: 120, height: 45)
-                                                        .foregroundColor(ColorManager .purple5)
-                                                        .font(.system(size: 17))
-                                                        .background(ColorManager .purple1)
-                                                        .glow(color: ColorManager.purple3, radius: 1)
-                                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                                        .opacity(0.9)
-                                                        .cornerRadius(7)
-                                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-
-                                                })
+//
+//                                                NavigationLink( destination: EmptyView(),
+//                                                                label: {
+//                                                    Text("")
+//                                                        .fontWeight(.regular)
+//                                                        .frame(width: 120, height: 45)
+//                                                        .foregroundColor(ColorManager .purple5)
+//                                                        .font(.system(size: 17))
+//                                                        .background(ColorManager .purple1)
+//                                                        .glow(color: ColorManager.purple3, radius: 1)
+//                                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                                        .opacity(0.9)
+//                                                        .cornerRadius(7)
+//                                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+//
+//                                                })
                                                 
                                                 
                                                 Spacer()
