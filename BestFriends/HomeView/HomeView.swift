@@ -103,7 +103,7 @@ struct HomeView: View {
                                 NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
                                 ) { EmptyView() }
                                 
-                                
+
                                 Image(systemName: "bell")
                                     .resizable()
                                     .scaledToFit()
@@ -112,9 +112,7 @@ struct HomeView: View {
                                     .opacity(0.6)
                                     .glow(color: Color.white, radius: 1)
                                     .blinking(duration: 2.0)
-                               
-                          
-                                
+                            
                             }
                          
                         
@@ -139,44 +137,15 @@ struct HomeView: View {
                                 })
                             
 //          ********************************************** Carehearts *************
+                     
+                            
+                            
+                            
+                            
                             
     //          ********************************************** Carehearts *************
                       
-                            Spacer()
-                                .frame(width: 30)
-                            
-                            ZStack {
-                             
-                                Image(systemName: "heart")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 60, height: 60)
-                                    .foregroundColor(Color.red)
-//                                    .blinking(duration: 2.0)
-                                    .glow(color: ColorManager.purple4, radius: 3)
-                                    .opacity(0.5)
-                                    .onTapGesture {
-                                        print("Clicked notification bell")
-                                        presentingIANs.toggle()
-                                    }
-                                
-                                NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
-                                ) { EmptyView() }
-                                
-                                
-                                Image(systemName: "bell")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 35, height: 35)
-                                    .foregroundColor(Color.white)
-                                    .opacity(0.6)
-                                    .glow(color: Color.white, radius: 1)
-                                    .blinking(duration: 2.0)
-                               
-                          
-                                
-                            }
-                            
+                         
                             
                             
 //        ******************************************************************
@@ -221,9 +190,11 @@ struct HomeView: View {
                                         .frame(width: 60, height: 60)
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 12))
-//                                        .blinking(duration: 2.0)
+                                        .blinking(duration: 2.0)
                                     
-                               
+                            
+
+                                    
                                     
                                 })
                                 
