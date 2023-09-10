@@ -861,7 +861,7 @@ struct MyRoomView: View {
                                             
                                             Image(systemName: "square.fill")
                                                 .resizable()
-                                                .foregroundColor(ColorManager .grey3)
+                                                .foregroundColor(ColorManager .grey4)
                                                 .frame(width: 60, height: 40)
                                                 .rotationEffect(.degrees(-7))
                                                 .shadow(color: .white, radius: 2, x: -2, y: 2)
