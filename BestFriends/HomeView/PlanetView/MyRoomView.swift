@@ -421,32 +421,32 @@ struct MyRoomView: View {
                                     HStack {
                                         
                                         // ***************************** Pic of the Day ********** After Aug 22 subit to Apple ******
-                    ZStack {
+                                        ZStack {
                                             
-                      Image(systemName: "triangle.fill")
-                            .resizable()
-                            .foregroundColor(Color.purple)
-                            .frame(width: 80, height: 55)
-//                            .rotationEffect(.degrees(-7))
-                            .shadow(color: .white, radius: 2, x: -2, y: 2)
-                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                            .opacity(0.7)
-//                            .blinking(duration: 2.0)
-
-                        NavigationLink( destination:  RR5(user: user, friends: friends),
-                                label: {
-                                Text("Hey, \nwhat's up?")
-                                .fontWeight(.light)
-                                .foregroundColor(Color.black)
-                                .font(.system(size: 10))
-//                                .rotationEffect(.degrees(-7))
-                                .opacity(1.0)
-//                                .blinking(duration: 2.0)
-
-
-                                })
-                           }
-                        
+                                            Image(systemName: "triangle.fill")
+                                                .resizable()
+                                                .foregroundColor(Color.purple)
+                                                .frame(width: 80, height: 55)
+                                            //                            .rotationEffect(.degrees(-7))
+                                                .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                                .opacity(0.7)
+                                            //                            .blinking(duration: 2.0)
+                                            
+                                            NavigationLink( destination:  RR5(user: user, friends: friends),
+                                                            label: {
+                                                Text("Hey, \nwhat's up?")
+                                                    .fontWeight(.light)
+                                                    .foregroundColor(Color.black)
+                                                    .font(.system(size: 10))
+                                                //                                .rotationEffect(.degrees(-7))
+                                                    .opacity(1.0)
+                                                //                                .blinking(duration: 2.0)
+                                                
+                                                
+                                            })
+                                        }
+                                        
                                         
                                         
                                         Spacer ()
@@ -459,7 +459,7 @@ struct MyRoomView: View {
                                                 .resizable()
                                                 .foregroundColor(Color.green)
                                                 .frame(width: 80, height: 55)
-//                                                .rotationEffect(.degrees(7))
+                                            //                                                .rotationEffect(.degrees(7))
                                                 .shadow(color: .white, radius: 2, x: -2, y: 2)
                                                 .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                                 .opacity(0.8)
@@ -471,10 +471,10 @@ struct MyRoomView: View {
                                                     .fontWeight(.light)
                                                     .foregroundColor(Color.black)
                                                     .font(.system(size: 11))
-//                                                    .rotationEffect(.degrees(7))
+                                                //                                                    .rotationEffect(.degrees(7))
                                                     .opacity(0.85)
                                                 
-                                           
+                                                
                                             })
                                             
                                         }
@@ -482,253 +482,120 @@ struct MyRoomView: View {
                                 }
                             }
                         }
-                        
-                        
-                        
-                        
-                        //     Friendships ************************************
-                        
-                        //     Friendships ************************************
-                        
-                        //     Friendships ************************************  //     Friendships ************************************  //     Friendships ************************************  //     Friendships ************************************
-                        
-                        
-//
-//
-//                        VStack {
-//
-//
-//                            ZStack {
-//
-//                                NavigationLink(
-//                                    destination:  CH11(),
-//                                    label: {
-//
-//                                        Image("Group 56")
-//                                            .resizable()
-//                                            .frame(width: 335, height: 180)
-//                                            .cornerRadius(20)
-//                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//                                            .opacity(0.6)
-//                                    })
-//
-//                                VStack {
-//
-//                                    VStack {
-//
-//                                        Spacer()
-//                                            .frame(height: 75)
-//
-//                                        HStack {
-//
-//                                            VStack {
-//
-//                                                NavigationLink( destination: RR18(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-//                                                                label: {
-//                                                    Text("Love Tarts \n(in beta)")
-//                                                        .fontWeight(.regular)
-//                                                        .frame(width: 120, height: 45)
-//                                                        .foregroundColor(ColorManager .purple5)
-//                                                        .font(.system(size: 17))
-//                                                        .background(ColorManager .purple1)
-//                                                        .glow(color: ColorManager.purple3, radius: 1)
-//                                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-//                                                        .opacity(0.9)
-//                                                        .cornerRadius(7)
-//                                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-//                                                })
-//
-//
-//
-//                                                Spacer()
-//                                                    .frame(height: 10)
-//
-////                                                NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
-////                                                                label: {
-////                                                    Text("SmileVault")
-////                                                        .fontWeight(.regular)
-////                                                        .frame(width: 120, height: 45)
-////                                                        .foregroundColor(ColorManager .purple5)
-////                                                        .font(.system(size: 17))
-////                                                        .background(ColorManager .purple1)
-////                                                        .glow(color: ColorManager.purple3, radius: 1)
-////                                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-////                                                        .opacity(0.9)
-////                                                        .cornerRadius(7)
-////                                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-////                                                })
-//
-//                                            }
-//
-//                                            Spacer()
-//                                                .frame(width: 25)
-//
-//                                            VStack {
-//
-////
-////                                                NavigationLink( destination: EmptyView(),
-////                                                                label: {
-////                                                    Text("")
-////                                                        .fontWeight(.regular)
-////                                                        .frame(width: 120, height: 45)
-////                                                        .foregroundColor(ColorManager .purple5)
-////                                                        .font(.system(size: 17))
-////                                                        .background(ColorManager .purple1)
-////                                                        .glow(color: ColorManager.purple3, radius: 1)
-////                                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-////                                                        .opacity(0.9)
-////                                                        .cornerRadius(7)
-////                                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-////
-////                                                })
-//
-//
-//                                                Spacer()
-//                                                    .frame(height: 10)
-//
-//                                                NavigationLink( destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-//                                                                label: {
-//                                                    Text("My Dreams \n(in beta)")
-//                                                        .fontWeight(.regular)
-//                                                        .frame(width: 120, height: 45)
-//                                                        .foregroundColor(ColorManager .purple5)
-//                                                        .font(.system(size: 17))
-//                                                        .background(ColorManager .purple1)
-//                                                        .glow(color: ColorManager.purple3, radius: 1)
-//                                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-//                                                        .opacity(0.9)
-//                                                        .cornerRadius(7)
-//                                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-//
-//                                                })
-//
-//
-//                                            }
-//                                        }
-//                                    }
-//                                }
-//                            }
-//                        }
                     }
-//
-//
-                    
-                    //     Friendships ************************************  //     Friendships ************************************  //     Friendships ************************************  //     Friendships ************************************  //     Friendships ************************************  //     Friendships ************************************  //     Friendships ************************************  //     Friendships ************************************
-                    
-                    Spacer()
-                        .frame(height: 25)
-                    
-                    //************************************************ Accessorizing Section **************
-                    
+                        
+                        //************************************************ Accessorizing Section **************
+       //     Friendships ************************************
+             
                     VStack {
-                        
+                 
                         HStack {
-                        
+                            
                             VStack {
-                           
+                                
                                 ZStack {
-                                    
                                     
                                     ZStack {
                                         
-                                        NavigationLink(
-                                            destination:  CH11(),
-                                            label: {
-                                                
-                                                Image("Group 56")
-                                                    .resizable()
-                                                    .frame(width: 335, height: 180)
-                                                    .cornerRadius(20)
+                                            NavigationLink(
+                                                destination:  CH11(),
+                                                label: {
+                                                    
+                                                    Image("Group 56")
+                                                        .resizable()
+                                                        .frame(width: 335, height: 180)
+                                                        .cornerRadius(20)
+                                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                                        .opacity(0.6)
+                                                })
+                                            
+                                            
+                                            
+                                            Spacer()
+                                                .frame(height: 75)
+                                            
+                                            NavigationLink( destination:  Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+                                                            label: {
+                                                Text("Friendship \nDrama")
+                                                    .fontWeight(.bold)
+                                                    .frame(width: 300, height: 42)
+                                                    .foregroundColor(Color.black)
+                                                    .font(.system(size: 16))
+                                                    .background(Color.orange)
+                                                    .glow(color: ColorManager.purple1, radius: 1)
+                                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                                    .opacity(0.9)
+                                                    .cornerRadius(15)
                                                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                                     .opacity(0.6)
+                                                //                                            .blinking()
+                                                
+                                                
                                             })
-                                    }
-                             
-                                    
-                                    Spacer()
-                                        .frame(height: 25)
-                                    
-                                    NavigationLink( destination:  Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
-                                                    label: {
-                                        Text("Friendship \nDrama")
-                                            .fontWeight(.bold)
-                                            .frame(width: 300, height: 42)
-                                            .foregroundColor(Color.black)
-                                            .font(.system(size: 16))
-                                            .background(Color.orange)
-                                            .glow(color: ColorManager.purple1, radius: 1)
-                                            .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                            .opacity(0.9)
-                                            .cornerRadius(15)
-                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                            .opacity(0.6)
-//                                            .blinking()
+                                        }
                                         
-                                        
-                                    })
-                                    
-                HStack {
-                                        
-                                       
-                               
-                                        // ***************************** Pic of the Day ********** After Aug 22 subit to Apple ******
-                    ZStack {
-                                            
-                      Image(systemName: "heart.fill")
-                            .resizable()
-                            .foregroundColor(Color.orange)
-                            .frame(width: 80, height: 60)
-                            .rotationEffect(.degrees(-7))
-                            .shadow(color: .white, radius: 2, x: -2, y: 2)
-                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                            .opacity(0.7)
+                                        HStack {
                                             
                                             
-                        NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
-                                label: {
-                                Text("Meetup \nCoupon")
-                                .fontWeight(.light)
-                                .foregroundColor(Color.black)
-                                .font(.system(size: 10))
-                                .rotationEffect(.degrees(-7))
-                                .opacity(1.0)
-                    
                                             
-                                })
-                            }
-                          
-                                        Spacer ()
-                                            .frame(width: 130)
-                                        
-                                        //
-                                        ZStack {
+                                            // ***************************** Pic of the Day ********** After Aug 22 subit to Apple ******
+                                            ZStack {
+                                                
+                                                Image(systemName: "heart.fill")
+                                                    .resizable()
+                                                    .foregroundColor(Color.orange)
+                                                    .frame(width: 80, height: 60)
+                                                    .rotationEffect(.degrees(-7))
+                                                    .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                                    .opacity(0.7)
+                                                
+                                                
+                                                NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
+                                                                label: {
+                                                    Text("Meetup \nCoupon")
+                                                        .fontWeight(.light)
+                                                        .foregroundColor(Color.black)
+                                                        .font(.system(size: 10))
+                                                        .rotationEffect(.degrees(-7))
+                                                        .opacity(1.0)
+                                                    
+                                                    
+                                                })
+                                            }
                                             
-                                            Image(systemName: "heart.fill")
-                                                .resizable()
-                                                .foregroundColor(Color.blue)
-                                                .frame(width: 80, height: 60)
-                                                .rotationEffect(.degrees(7))
-                                                .shadow(color: .white, radius: 2, x: -2, y: 2)
-                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                                .opacity(0.6)
+                                            Spacer ()
+                                                .frame(width: 130)
                                             
-                                            
-                                            NavigationLink( destination: CH15(user: user, friends: friends),
-                                                            label: {
-                                                Text("Hurt \nFeelings")
-                                                    .fontWeight(.light)
-                                                    .foregroundColor(Color.black)
-                                                    .font(.system(size: 10))
+                                            //
+                                            ZStack {
+                                                
+                                                Image(systemName: "heart.fill")
+                                                    .resizable()
+                                                    .foregroundColor(Color.blue)
+                                                    .frame(width: 80, height: 60)
                                                     .rotationEffect(.degrees(7))
-                                                    .opacity(0.85)
-                                          
-                                            })
-                                            
+                                                    .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                                    .opacity(0.6)
+                                                
+                                                
+                                                NavigationLink( destination: CH15(user: user, friends: friends),
+                                                                label: {
+                                                    Text("Hurt \nFeelings")
+                                                        .fontWeight(.light)
+                                                        .foregroundColor(Color.black)
+                                                        .font(.system(size: 10))
+                                                        .rotationEffect(.degrees(7))
+                                                        .opacity(0.85)
+                                                    
+                                                })
+                                                
+                                            }
                                         }
                                     }
                                 }
                             }
-                        }
                         
                         
                         
