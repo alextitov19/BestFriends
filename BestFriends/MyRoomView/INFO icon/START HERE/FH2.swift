@@ -72,42 +72,53 @@ struct FH2: View {
                             .frame(height: 40)
                         
                         Text("BestFriendsNetwork")
-                            .font(.system(size: 22))
+                            .font(.system(size: 27))
+                            .foregroundColor(ColorManager.grey1)
+                            .fontWeight(.regular)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("where you can ...")
+                            .font(.system(size: 19))
                                .italic()
                             .foregroundColor(ColorManager.grey1)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
+                        
+                        
+                        
                         Spacer()
                             .frame(height: 20)
                         
-                        Text("letting the outside of you")
+                        Text("let the outside of you")
                             .font(.system(size: 22))
-//                                                       .italic()
-                            .foregroundColor(ColorManager.grey1)
+                            .foregroundColor(Color.white)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
                         Text("match the inside of you")
                             .font(.system(size: 22))
-//                                                        .italic()
-                            .foregroundColor(ColorManager.grey1)
+                            .foregroundColor(Color.white)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
                         Text("on social media")
                             .font(.system(size: 22))
-//                                                        .italic()
-                            .foregroundColor(ColorManager.grey1)
+                            .foregroundColor(Color.white)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                     
                         
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 20)
               
-
+                        Text("in a safe, non-toxic environment")
+                            .font(.system(size: 19))
+                               .italic()
+                            .foregroundColor(ColorManager.grey1)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
                     }
                     
                 }

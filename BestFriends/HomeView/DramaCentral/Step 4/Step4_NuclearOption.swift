@@ -123,6 +123,7 @@ struct Step4_NuclearOption: View {
                                 .fontWeight(.light)
                                 .foregroundColor(ColorManager .grey1)
                                 .multilineTextAlignment(.center)
+                            
                             Spacer ()
                                 .frame(height: 15)
                             

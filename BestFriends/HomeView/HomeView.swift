@@ -84,10 +84,7 @@ struct HomeView: View {
                             .frame(height: 530)
                       
                         HStack {
-                            
-//                            Spacer()
-//                                .frame(width: 30)
-                            
+                  
                             ZStack {
                              
                                 Image(systemName: "")
@@ -120,44 +117,13 @@ struct HomeView: View {
                                 
                             }
                          
-//   ****************************************** Trying to make Heart image BLINK ******
-                           
-//                            struct ContentView: View {
-//                              @StateObject var model = Model.loadData
-//
-//                              let timer = Timer.publish(every: 0.25, tolerance: 0.1, on: .main, in: .common).autoconnect()
-//
-//                              let color = Color(UIColor.label)
-//
-//                              public var body: some View {
-//                                VStack {
-//                                  Text(model.items[0].name)
-//
-//                                  if model.items[0].isLedBlinking {
-//                                    Image(systemName: model.items[0].isLEDon ? "circle.fill" : "circle")
-//                                      .onReceive(timer) { _ in
-//                                        model.items[0].isLEDon.toggle()
-//                                      }
-//                                      .foregroundColor(model.items[0].isLEDon ? .green : color)
-//                                  } else {
-//                                    Image(systemName: model.items[0].isLEDon ? "circle.fill" : "circle")
-//                                      .foregroundColor(model.items[0].isLEDon ? .green : color)
-//                                  }
-//
-//                                  Button("Toggle: \(model.items[0].isLedBlinking ? "Blinking" : "Still")") {
-//                                    model.items[0].isLedBlinking.toggle()
-//                                  }
-//                                }
-//                                .foregroundColor(color)
-//                              }
-//                            }
-                            
+                        
 //*******************************************
 
                             
                             
                             Spacer()
-                                .frame(width: 30)
+                                .frame(width: 20)
 
                             NavigationLink(
                                 destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
@@ -171,6 +137,50 @@ struct HomeView: View {
 //                                        .glow(color: ColorManager.purple4, radius: 3)
                                         .opacity(0.5)
                                 })
+                            
+//          ********************************************** Carehearts *************
+                            
+    //          ********************************************** Carehearts *************
+                      
+                            Spacer()
+                                .frame(width: 30)
+                            
+                            ZStack {
+                             
+                                Image(systemName: "heart")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 60, height: 60)
+                                    .foregroundColor(Color.red)
+//                                    .blinking(duration: 2.0)
+                                    .glow(color: ColorManager.purple4, radius: 3)
+                                    .opacity(0.5)
+                                    .onTapGesture {
+                                        print("Clicked notification bell")
+                                        presentingIANs.toggle()
+                                    }
+                                
+                                NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
+                                ) { EmptyView() }
+                                
+                                
+                                Image(systemName: "bell")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 35, height: 35)
+                                    .foregroundColor(Color.white)
+                                    .opacity(0.6)
+                                    .glow(color: Color.white, radius: 1)
+                                    .blinking(duration: 2.0)
+                               
+                          
+                                
+                            }
+                            
+                            
+                            
+//        ******************************************************************
+                            
                             
                             
                             Spacer()
@@ -213,42 +223,12 @@ struct HomeView: View {
                                         .font(.system(size: 12))
 //                                        .blinking(duration: 2.0)
                                     
-                                    
-//                                    //                                        .background(Color.green)
-//                                        .cornerRadius(9)
-//                                    //                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//                                        .opacity(0.9)
-//
-//                                    Text("Walk through")
-//                                        .fontWeight(.regular)
-//                                        .frame(width: 50, height: 40)
-//                                        .foregroundColor(.white)
-//                                        .padding()
-//                                        .background(ColorManager .purple3)
-//                                        .blinking()
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
+                               
                                     
                                 })
                                 
 
-                                }
-                            
-//                            Image(systemName: "eyes")
-//                                .resizable()
-//                                .scaledToFit()
-//                                .frame(width: 20, height: 20)
-//                                .foregroundColor(Color.white)
-////                                .glow(color: ColorManager.purple4, radius: 3)
-////                                .opacity(0.5)
-//
-//                                .scaleEffect(scale)
-//                                .animation(.easeIn, value: scale)
-                         
+                            }
                         }
 
                     }
