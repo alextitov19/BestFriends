@@ -19,6 +19,16 @@
 		2D7127CD2A658C1900E14744 /* CH20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7127CC2A658C1900E14744 /* CH20.swift */; };
 		2DA887312A3A18C000759A1F /* AffirmationMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA8872F2A3A18C000759A1F /* AffirmationMain.swift */; };
 		2DA887322A3A18C000759A1F /* AffirmationEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA887302A3A18C000759A1F /* AffirmationEdit.swift */; };
+		2DB42CEE2AAE874A00E137C0 /* RR21.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB42CED2AAE874A00E137C0 /* RR21.swift */; };
+		2DB42CF02AAE875900E137C0 /* RR22.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB42CEF2AAE875900E137C0 /* RR22.swift */; };
+		2DB42CF22AAE876A00E137C0 /* RR23.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB42CF12AAE876A00E137C0 /* RR23.swift */; };
+		2DB42CF42AAE877600E137C0 /* RR24.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB42CF32AAE877600E137C0 /* RR24.swift */; };
+		2DB42CF62AAE878100E137C0 /* RR25.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB42CF52AAE878100E137C0 /* RR25.swift */; };
+		2DB42CF82AAE878A00E137C0 /* RR26.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB42CF72AAE878A00E137C0 /* RR26.swift */; };
+		2DB42CFA2AAE879200E137C0 /* RR27.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB42CF92AAE879200E137C0 /* RR27.swift */; };
+		2DB42CFC2AAE879C00E137C0 /* RR28.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB42CFB2AAE879C00E137C0 /* RR28.swift */; };
+		2DB42CFE2AAE87A800E137C0 /* RR29.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB42CFD2AAE87A800E137C0 /* RR29.swift */; };
+		2DB42D002AAE87B000E137C0 /* RR30.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB42CFF2AAE87B000E137C0 /* RR30.swift */; };
 		2DBF3EE12A61ACD400CB1CAD /* RR1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF3EE02A61ACD400CB1CAD /* RR1.swift */; };
 		2DBF3EE32A61ACE100CB1CAD /* RR2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF3EE22A61ACE100CB1CAD /* RR2.swift */; };
 		2DBF3EE52A61ACEB00CB1CAD /* RR3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF3EE42A61ACEB00CB1CAD /* RR3.swift */; };
@@ -412,6 +422,16 @@
 		2D7127CC2A658C1900E14744 /* CH20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH20.swift; sourceTree = "<group>"; };
 		2DA8872F2A3A18C000759A1F /* AffirmationMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AffirmationMain.swift; sourceTree = "<group>"; };
 		2DA887302A3A18C000759A1F /* AffirmationEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AffirmationEdit.swift; sourceTree = "<group>"; };
+		2DB42CED2AAE874A00E137C0 /* RR21.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR21.swift; sourceTree = "<group>"; };
+		2DB42CEF2AAE875900E137C0 /* RR22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR22.swift; sourceTree = "<group>"; };
+		2DB42CF12AAE876A00E137C0 /* RR23.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR23.swift; sourceTree = "<group>"; };
+		2DB42CF32AAE877600E137C0 /* RR24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR24.swift; sourceTree = "<group>"; };
+		2DB42CF52AAE878100E137C0 /* RR25.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR25.swift; sourceTree = "<group>"; };
+		2DB42CF72AAE878A00E137C0 /* RR26.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR26.swift; sourceTree = "<group>"; };
+		2DB42CF92AAE879200E137C0 /* RR27.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR27.swift; sourceTree = "<group>"; };
+		2DB42CFB2AAE879C00E137C0 /* RR28.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR28.swift; sourceTree = "<group>"; };
+		2DB42CFD2AAE87A800E137C0 /* RR29.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR29.swift; sourceTree = "<group>"; };
+		2DB42CFF2AAE87B000E137C0 /* RR30.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR30.swift; sourceTree = "<group>"; };
 		2DBF3EE02A61ACD400CB1CAD /* RR1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR1.swift; sourceTree = "<group>"; };
 		2DBF3EE22A61ACE100CB1CAD /* RR2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR2.swift; sourceTree = "<group>"; };
 		2DBF3EE42A61ACEB00CB1CAD /* RR3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR3.swift; sourceTree = "<group>"; };
@@ -802,6 +822,16 @@
 				2DDCD9812A8FEBC700B1040F /* RR17.swift */,
 				2DDCD9832A8FEBD900B1040F /* RR18.swift */,
 				2DDCD9852A8FEBEA00B1040F /* RR19.swift */,
+				2DB42CED2AAE874A00E137C0 /* RR21.swift */,
+				2DB42CEF2AAE875900E137C0 /* RR22.swift */,
+				2DB42CF12AAE876A00E137C0 /* RR23.swift */,
+				2DB42CF32AAE877600E137C0 /* RR24.swift */,
+				2DB42CF52AAE878100E137C0 /* RR25.swift */,
+				2DB42CF72AAE878A00E137C0 /* RR26.swift */,
+				2DB42CF92AAE879200E137C0 /* RR27.swift */,
+				2DB42CFB2AAE879C00E137C0 /* RR28.swift */,
+				2DB42CFD2AAE87A800E137C0 /* RR29.swift */,
+				2DB42CFF2AAE87B000E137C0 /* RR30.swift */,
 			);
 			path = RR;
 			sourceTree = "<group>";
@@ -2218,6 +2248,8 @@
 				2DDCD9882A8FEBFC00B1040F /* RR20.swift in Sources */,
 				7A45B8442A86AB8600F5E75B /* RR11.swift in Sources */,
 				2DFB030E2A57223E00669948 /* FH5.swift in Sources */,
+				2DB42CF02AAE875900E137C0 /* RR22.swift in Sources */,
+				2DB42D002AAE87B000E137C0 /* RR30.swift in Sources */,
 				CF3B42F8293723B500EE1D84 /* SaySomethingNice7.swift in Sources */,
 				CF24815728F5060100D47AE3 /* PhotoPop3.swift in Sources */,
 				7A22A57C274416C200FB6B4F /* CustomButtonInterior.swift in Sources */,
@@ -2269,6 +2301,7 @@
 				CFD8BD142916BDD700F86EFB /* HurtFeelingsPreload.swift in Sources */,
 				7A720CC528A6CB6800992FD2 /* ChangeChatBackgroundView.swift in Sources */,
 				CFAB540B281BB6EE00BBF502 /* DramaCentralView.swift in Sources */,
+				2DB42CFA2AAE879200E137C0 /* RR27.swift in Sources */,
 				CF381A502827372100B3719E /* Step2_ParentsFighting.swift in Sources */,
 				CF37535528BD5BDD003817E3 /* SomethingBuggingYou2.swift in Sources */,
 				CFA1226228597AFC00E22E84 /* HurtFeelings2.swift in Sources */,
@@ -2293,6 +2326,7 @@
 				7A84EEAF2A352A9D001BE180 /* CreateNewJournalView.swift in Sources */,
 				2D7127C32A658BDD00E14744 /* CH15.swift in Sources */,
 				CF9E33C42843E0D800107433 /* Step2FG_TeenBehavior.swift in Sources */,
+				2DB42CF42AAE877600E137C0 /* RR24.swift in Sources */,
 				CFAB5404281A9A9000BBF502 /* Step4_NuclearOption.swift in Sources */,
 				2DBF3EE72A61ACF500CB1CAD /* RR4.swift in Sources */,
 				CF3B65DC2801F4D40003A714 /* CustomizationView.swift in Sources */,
@@ -2361,6 +2395,7 @@
 				CFD12CC7281943CA00AB2539 /* Impetus.swift in Sources */,
 				CF65043028A438970092EEB9 /* ChatReactions.swift in Sources */,
 				7A04C13D28553818003AB24A /* PhotoPopView.swift in Sources */,
+				2DB42CF22AAE876A00E137C0 /* RR23.swift in Sources */,
 				CF4A08E62879481200ADA9DD /* NostalgiaPreload2.swift in Sources */,
 				2DDCD98E2A92A21900B1040F /* Constants.swift in Sources */,
 				CF4A08E42879443E00ADA9DD /* Apologies4.swift in Sources */,
@@ -2371,6 +2406,7 @@
 				CFDA4BD828D1999900118D90 /* Heart.swift in Sources */,
 				2DFB031B2A5D304B00669948 /* CH1.swift in Sources */,
 				CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */,
+				2DB42CF62AAE878100E137C0 /* RR25.swift in Sources */,
 				7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */,
 				CF8F76C6293866BB00B109D3 /* AskQuestion.swift in Sources */,
 				7A04C13F2855390B003AB24A /* PhotoPopImageView.swift in Sources */,
@@ -2416,6 +2452,7 @@
 				CFAB54262821007B00BBF502 /* FightTextUserIdeas.swift in Sources */,
 				CFAB5413281D145100BBF502 /* Step2_FightLandingView.swift in Sources */,
 				7A0856AA27F3DCC300E8282B /* SessionManager.swift in Sources */,
+				2DB42CEE2AAE874A00E137C0 /* RR21.swift in Sources */,
 				7A8F3D7B2A32B75800BC2CF4 /* JournalModels.swift in Sources */,
 				CF2DBCEC2853DAF7008616A3 /* PickMediator.swift in Sources */,
 				CF72D6FB2921AFE900EDDDA6 /* SmileVaultPreload.swift in Sources */,
@@ -2479,6 +2516,7 @@
 				7AFCF27C27FDFFB000D2DB5C /* CustomCorner.swift in Sources */,
 				CF4D86B82976280A004B551D /* HugPushNotification3.swift in Sources */,
 				CFC0ACBE28EF4E7B00B49831 /* SaySomethingPreload.swift in Sources */,
+				2DB42CFC2AAE879C00E137C0 /* RR28.swift in Sources */,
 				2DBF3EE32A61ACE100CB1CAD /* RR2.swift in Sources */,
 				7A45B8462A86AB9700F5E75B /* RR12.swift in Sources */,
 				7AFCF27827FDFF2C00D2DB5C /* ChatGroupsView.swift in Sources */,
@@ -2497,6 +2535,7 @@
 				CFC0EE7E290805F8006B3FAA /* InfoInsideChat.swift in Sources */,
 				7AD8DEFB27F66C8900D9F0E1 /* HomeModels.swift in Sources */,
 				CFD6C05D294169CC00D57E0B /* HideMyRoom.swift in Sources */,
+				2DB42CFE2AAE87A800E137C0 /* RR29.swift in Sources */,
 				CFDA4BE228D66B2600118D90 /* AudioCode.swift in Sources */,
 				2DDCD9822A8FEBC700B1040F /* RR17.swift in Sources */,
 				7A22A57B274416C200FB6B4F /* ColorExt+Mgr.swift in Sources */,
@@ -2518,6 +2557,7 @@
 				2DBF3EE12A61ACD400CB1CAD /* RR1.swift in Sources */,
 				2DDCD98A2A8FF0ED00B1040F /* DrawingCareHearts.swift in Sources */,
 				7A4E336926A0D72600202BB7 /* UIColorExtension.swift in Sources */,
+				2DB42CF82AAE878A00E137C0 /* RR26.swift in Sources */,
 				7A0856A627F3D9E800E8282B /* KeychainPasswordItem.swift in Sources */,
 				CF4A08FB2883A56200ADA9DD /* Sweetheart1.swift in Sources */,
 				CFC0EE762907AB7D006B3FAA /* HugPushNotification.swift in Sources */,
