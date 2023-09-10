@@ -95,7 +95,12 @@ struct FH2: View {
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
- 
+                        Text("on social media")
+                            .font(.system(size: 22))
+//                                                        .italic()
+                            .foregroundColor(ColorManager.grey1)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
                     
                         
                         
