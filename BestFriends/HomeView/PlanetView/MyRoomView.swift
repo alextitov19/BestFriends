@@ -263,7 +263,7 @@ struct MyRoomView: View {
                                                             label: {
                                                 Text("Sending")
                                                     .fontWeight(.regular)
-                                                    .frame(width: 100, height: 35)
+                                                    .frame(width: 100, height: 30)
                                                     .foregroundColor(ColorManager .purple5)
                                                     .font(.system(size: 16))
                                                     .background(ColorManager .purple2)
@@ -274,75 +274,17 @@ struct MyRoomView: View {
                                                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                                 
                                             })
-                                            
-                                            
-                                        }
-                                        
-                                        Spacer()
-                                            .frame(width: 5)
-                                        
-                                        VStack {
+                                          
+                                            Spacer()
+                                                .frame(height: 10)
                                             
                                             
                                             
-                                            ZStack {
-                                                //                                                    NavigationLink( destination: CH3(),
-                                                //                                                                    label: {
-                                                //                                                        Text("")
-                                                //                                                            .fontWeight(.light)
-                                                //                                                            .frame(width: 42, height: 42)
-                                                //                                                            .foregroundColor(ColorManager .grey4)
-                                                //                                                            .font(.system(size: 17))
-                                                //                                                            .background(ColorManager .grey2)
-                                                //                                                            .glow(color: ColorManager.purple3, radius: 1)
-                                                //                                                            .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                                //                                                            .opacity(0.9)
-                                                //                                                            .cornerRadius(25)
-                                                //                                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                                //
-                                                //                                                    })
-                                                //
-                                                //
-                                                //                                                    Image(systemName: "info.circle")
-                                                //                                                        .resizable()
-                                                //                                                        .scaledToFit()
-                                                //                                                        .frame(width: 37, height: 37)
-                                                //                                                        .opacity(0.9)
-                                                //                                                        .foregroundColor(.white)
-                                                
-                                                
-                                            }
-                                            
-                                            NavigationLink( destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                                            label: {
-                                                Text("Real-time \nFriendships")
-                                                    .fontWeight(.regular)
-                                                    .frame(width: 90, height: 40)
-                                                    .foregroundColor(ColorManager .purple5)
-                                                    .font(.system(size: 16))
-                                                    .background(ColorManager .purple1)
-                                                    .glow(color: ColorManager.purple3, radius: 1)
-                                                    .shadow(color: .green, radius: 3, x: -4, y: 4)
-                                                    .opacity(0.9)
-                                                    .cornerRadius(7)
-                                                    .shadow(color: Color.green, radius: 2, x: 0, y: 2)
-                                            })
-                                        }
-                                        
-                                        Spacer()
-                                            .frame(width: 5)
-                                        
-                                        
-                                        
-                                        VStack {
-                                            
-                                            
-                                            //                                        RR4(user: user, friends: friends
                                             NavigationLink( destination:  CH10(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                                                             label: {
                                                 Text("Accepting")
                                                     .fontWeight(.regular)
-                                                    .frame(width: 100, height: 35)
+                                                    .frame(width: 100, height: 30)
                                                     .foregroundColor(ColorManager .purple5)
                                                     .font(.system(size: 17))
                                                     .background(ColorManager .purple2)
@@ -356,6 +298,90 @@ struct MyRoomView: View {
                                             
                                             
                                         }
+                                        
+                                        Spacer()
+                                            .frame(width: 10)
+                                        
+                                        VStack {
+                                            
+                                            
+                                            
+            ZStack {
+                                                                                                    
+//                NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+//                                label: {
+//                    Text("")
+//                        .fontWeight(.light)
+//                        .frame(width: 42, height: 42)
+//                        .foregroundColor(ColorManager .grey4)
+//                        .font(.system(size: 17))
+//                        .background(ColorManager .grey2)
+//                        .glow(color: ColorManager.purple3, radius: 1)
+//                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                        .opacity(0.9)
+//                        .cornerRadius(25)
+//                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//
+//                })
+//
+//
+//                Image(systemName: "info.circle")
+//                    .resizable()
+//                    .scaledToFit()
+//                    .frame(width: 37, height: 37)
+//                    .opacity(0.9)
+//                    .foregroundColor(.white)
+
+                                            }
+                                            
+                                            NavigationLink( destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                                            label: {
+                                                Text("My \nReal-time \nVibe")
+                                                    .fontWeight(.regular)
+                                                    .frame(width: 90, height: 60)
+                                                    .foregroundColor(ColorManager .purple5)
+                                                    .font(.system(size: 16))
+                                                    .background(ColorManager .purple1)
+                                                    .glow(color: ColorManager.purple3, radius: 1)
+                                                    .shadow(color: .green, radius: 3, x: -4, y: 4)
+                                                    .opacity(0.9)
+                                                    .cornerRadius(7)
+                                                    .shadow(color: Color.green, radius: 2, x: 0, y: 2)
+                                            })
+                                        }
+                                        
+                                        Spacer()
+                                            .frame(width: 20)
+                                        
+                                        
+                    VStack {
+                                            
+                        ZStack {
+                                               
+                            Image(systemName: "circle.fill")
+                                .resizable()
+                                .foregroundColor(Color.yellow)
+                                .frame(width: 60, height: 60)
+                                .rotationEffect(.degrees(7))
+                                .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                .opacity(0.8)
+                                     
+                                                
+                                                
+                                NavigationLink( destination:  BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                                        label: {
+                                    Text("Smile \nVault")
+                                        .fontWeight(.light)
+                                        .foregroundColor(Color.black)
+                                        .font(.system(size: 11))
+                                        .rotationEffect(.degrees(7))
+                                        .opacity(0.85)
+                                    
+                                                    
+                                                })
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -364,6 +390,9 @@ struct MyRoomView: View {
                     
                     
                     //      PhotoPOP ****************************************************
+                    
+                    Spacer()
+                       
                     
                     VStack {
                         
@@ -394,16 +423,15 @@ struct MyRoomView: View {
                                         // ***************************** Pic of the Day ********** After Aug 22 subit to Apple ******
                     ZStack {
                                             
-                      Image(systemName: "heart.fill")
+                      Image(systemName: "triangle.fill")
                             .resizable()
-                            .foregroundColor(Color.purple)
+                            .foregroundColor(ColorManager .grey3)
                             .frame(width: 80, height: 60)
                             .rotationEffect(.degrees(-7))
                             .shadow(color: .white, radius: 2, x: -2, y: 2)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                             .opacity(0.7)
-                            .blinking(duration: 2.0)
-
+//                            .blinking(duration: 2.0)
 
                         NavigationLink( destination:  RR5(user: user, friends: friends),
                                 label: {
@@ -413,7 +441,7 @@ struct MyRoomView: View {
                                 .font(.system(size: 10))
                                 .rotationEffect(.degrees(-7))
                                 .opacity(1.0)
-                                .blinking(duration: 2.0)
+//                                .blinking(duration: 2.0)
 
 
                                 })
@@ -427,14 +455,14 @@ struct MyRoomView: View {
                                         //
                                         ZStack {
                                             
-                                            Image(systemName: "heart.fill")
+                                            Image(systemName: "triangle.fill")
                                                 .resizable()
-                                                .foregroundColor(ColorManager .grey2)
+                                                .foregroundColor(Color.green)
                                                 .frame(width: 80, height: 60)
                                                 .rotationEffect(.degrees(7))
                                                 .shadow(color: .white, radius: 2, x: -2, y: 2)
                                                 .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                                .opacity(0.99)
+                                                .opacity(0.8)
                                             
                                             
                                             NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
@@ -617,7 +645,7 @@ struct MyRoomView: View {
                                             
                       Image(systemName: "heart.fill")
                             .resizable()
-                            .foregroundColor(Color.red)
+                            .foregroundColor(Color.orange)
                             .frame(width: 80, height: 60)
                             .rotationEffect(.degrees(-7))
                             .shadow(color: .white, radius: 2, x: -2, y: 2)
@@ -646,12 +674,12 @@ struct MyRoomView: View {
                                             
                                             Image(systemName: "heart.fill")
                                                 .resizable()
-                                                .foregroundColor(ColorManager .grey2)
+                                                .foregroundColor(Color.blue)
                                                 .frame(width: 80, height: 60)
                                                 .rotationEffect(.degrees(7))
                                                 .shadow(color: .white, radius: 2, x: -2, y: 2)
                                                 .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                                .opacity(0.99)
+                                                .opacity(0.6)
                                             
                                             
                                             NavigationLink( destination: CH15(user: user, friends: friends),
@@ -730,19 +758,19 @@ struct MyRoomView: View {
                                         }
                                       
                                         Spacer ()
-                                            .frame(width: 180)
+                                            .frame(width: 130)
                                         
                 //                        ****************************************************************
                                         ZStack {
                                             
                                             Image(systemName: "heart.fill")
                                                 .resizable()
-                                                .foregroundColor(ColorManager .grey2)
+                                                .foregroundColor(Color.red)
                                                 .frame(width: 80, height: 60)
                                                 .rotationEffect(.degrees(7))
                                                 .shadow(color: .white, radius: 2, x: -2, y: 2)
                                                 .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                                .opacity(0.99)
+                                                .opacity(0.6)
                                             
                                             
                                             NavigationLink( destination: CH20(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
