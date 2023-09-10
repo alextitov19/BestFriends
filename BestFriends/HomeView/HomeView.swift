@@ -140,7 +140,7 @@ struct HomeView: View {
                      
                             ZStack {
                              
-                                Image(systemName: "")
+                                Image(systemName: "heart")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 60, height: 60)
@@ -153,18 +153,26 @@ struct HomeView: View {
                                         presentingIANs.toggle()
                                     }
                                 
-                                NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
+                                NavigationLink(destination: NotificationsView(user: homeData!.user, friend: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere), isActive: $inviteClicked
                                 ) { EmptyView() }
                                 
-
-                                Image(systemName: "bell")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 35, height: 35)
+                                Text("Care\nHearts")
+                                    .fontWeight(.regular)
+                                    .frame(width: 60, height: 60)
                                     .foregroundColor(Color.white)
-                                    .opacity(0.6)
-                                    .glow(color: Color.white, radius: 1)
+                                    .font(.system(size: 12))
                                     .blinking(duration: 2.0)
+                                
+                                
+                                
+//                                Image(systemName: "bell")
+//                                    .resizable()
+//                                    .scaledToFit()
+//                                    .frame(width: 35, height: 35)
+//                                    .foregroundColor(Color.white)
+//                                    .opacity(0.6)
+//                                    .glow(color: Color.white, radius: 1)
+//                                    .blinking(duration: 2.0)
                             
                             }
                          
