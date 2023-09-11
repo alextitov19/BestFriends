@@ -138,6 +138,9 @@ struct HomeView: View {
                             
 //          ********************************************** Carehearts *************
                      
+                            Spacer()
+                                .frame(width: 20)
+                            
                             ZStack {
                              
                                 Image(systemName: "heart")
