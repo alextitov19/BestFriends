@@ -143,29 +143,28 @@ struct HomeView: View {
                             
                             
                             
-                            ZStack {
-                                
-                                Image(systemName: "triangle")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 60, height: 60)
-                                    .foregroundColor(Color.red)
-                                
-                                
-                                NavigationLink(
-                                    destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
-                                    label: {
-                                        
-                                        Text("my \nVibe")
-                                            .fontWeight(.regular)
-                                            .frame(width: 60, height: 60)
-                                            .foregroundColor(Color.white)
-                                            .font(.system(size: 12))
-                                            .blinking(duration: 2.0)
-                                    })
-                                
-                            }
-
+                    ZStack {
+                                    Image(systemName: "triangle")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 80, height: 60)
+                                        .foregroundColor(Color.red)
+                                    
+                                    
+                                    NavigationLink(
+                                        destination:  AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                                        label: {
+                                            
+                                            Text("Vibe \nChange")
+                                                .fontWeight(.regular)
+                                                .frame(width: 60, height: 60)
+                                                .foregroundColor(Color.white)
+                                                .font(.system(size: 12))
+                                                .blinking(duration: 2.0)
+                                        })
+                                    
+                                }
+                            
 //
 //
 //                            ZStack {
@@ -243,7 +242,7 @@ struct HomeView: View {
                                 NavigationLink( destination:  FH2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                                 label: {
                                     Text("Start\nhere")
-                                        .fontWeight(.regular)
+                                        .fontWeight(.medium)
                                         .frame(width: 60, height: 60)
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 12))
