@@ -87,7 +87,7 @@ struct HomeView: View {
                   
                             ZStack {
                              
-                                Image(systemName: "")
+                                Image(systemName: "heart")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 60, height: 60)
@@ -141,31 +141,53 @@ struct HomeView: View {
                             Spacer()
                                 .frame(width: 20)
                             
+                            
+                            
                             ZStack {
-                             
-                                Image(systemName: "heart")
+                                
+                                Image(systemName: "triangle")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 60, height: 60)
                                     .foregroundColor(Color.red)
-//                                    .blinking(duration: 2.0)
-                                    .glow(color: ColorManager.purple4, radius: 3)
-                                    .opacity(0.5)
-                                    .onTapGesture {
-                                        print("Clicked notification bell")
-                                        presentingIANs.toggle()
-                                    }
                                 
-                                NavigationLink(destination: NotificationsView(user: homeData!.user, friend: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere), isActive: $inviteClicked
-                                ) { EmptyView() }
                                 
-                                Text("Care\nHearts")
-                                    .fontWeight(.regular)
-                                    .frame(width: 60, height: 60)
-                                    .foregroundColor(Color.white)
-                                    .font(.system(size: 12))
-                                    .blinking(duration: 2.0)
+                                NavigationLink(
+                                    destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
+                                    label: {
+                                        
+                                        Text("my \nVibe")
+                                            .fontWeight(.regular)
+                                            .frame(width: 60, height: 60)
+                                            .foregroundColor(Color.white)
+                                            .font(.system(size: 12))
+                                            .blinking(duration: 2.0)
+                                    })
                                 
+                            }
+
+//
+//
+//                            ZStack {
+//
+//                                Image(systemName: "triangle")
+//                                    .resizable()
+//                                    .scaledToFit()
+//                                    .frame(width: 60, height: 60)
+//                                    .foregroundColor(Color.red)
+////                                    .blinking(duration: 2.0)
+//                                    .glow(color: ColorManager.purple4, radius: 3)
+//                                    .opacity(0.5)
+//                                    .onTapGesture {
+//                                        print("Clicked notification bell")
+//                                        presentingIANs.toggle()
+//                                    }
+//
+//                                NavigationLink(destination: AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups), isActive: $inviteClicked
+//                                ) { EmptyView() }
+//
+//
+//
                                 
                                 
 //                                Image(systemName: "bell")
@@ -177,7 +199,7 @@ struct HomeView: View {
 //                                    .glow(color: Color.white, radius: 1)
 //                                    .blinking(duration: 2.0)
                             
-                            }
+//                            }
                          
                             
                             

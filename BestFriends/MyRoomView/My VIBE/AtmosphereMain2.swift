@@ -88,18 +88,34 @@ struct AtmosphereMain2: View {
                      
                 
                         
-                        Text("Your friends care about you!")
-                            .font(.system(size: 28))
+                        Text("Sharing your 'Vibe'")
+                            .font(.system(size: 30))
 //                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
 
                         
+                        Text("with friends")
+                            .font(.system(size: 30))
+//                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+
+                        
+                        
+                        
+                        Text("(even if not ready to talk just yet)")
+                            .font(.system(size: 15))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
                         Spacer()
                             .frame(height: 25)
                         
-                        Text("Let'em know what's up")
+                        Text("NOW, they can send")
                             .font(.system(size: 20))
 //                            .italic()
                             .fontWeight(.light)
@@ -107,6 +123,13 @@ struct AtmosphereMain2: View {
                             .foregroundColor(Color.white)
               
 
+                        
+                        Text("CareHearts & Congratulations!!!")
+                            .font(.system(size: 20))
+//                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
                         Spacer()
                             .frame(height: 30)
    
@@ -152,7 +175,7 @@ struct AtmosphereMain2: View {
                             showingAlert = true
                         }) {
 
-                            Text("Broken Heart")
+                            Text("School / Time Management")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -179,7 +202,7 @@ struct AtmosphereMain2: View {
                           showingAlert = true
                         }) {
 
-                           Text("Friend Drama")
+                           Text("Friend / Relationship \nDrama")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -204,7 +227,7 @@ struct AtmosphereMain2: View {
                             showingAlert = true
                         }) {
 
-                            Text("Feeling a little \ndown today")
+                            Text("Family Struggles")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
