@@ -333,21 +333,21 @@ struct MyRoomView: View {
 //                    .foregroundColor(.white)
 
                                             }
-                                            
-                                            NavigationLink( destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                                            label: {
-                                                Text("My \nReal-time \nVibe")
-                                                    .fontWeight(.regular)
-                                                    .frame(width: 90, height: 60)
-                                                    .foregroundColor(ColorManager .purple5)
-                                                    .font(.system(size: 16))
-                                                    .background(ColorManager .purple1)
-                                                    .glow(color: ColorManager.purple3, radius: 1)
-                                                    .shadow(color: .green, radius: 3, x: -4, y: 4)
-                                                    .opacity(0.9)
-                                                    .cornerRadius(7)
-                                                    .shadow(color: Color.green, radius: 2, x: 0, y: 2)
-                                            })
+//                                            
+//                                            NavigationLink( destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                                                            label: {
+//                                                Text("My \nReal-time \nVibe")
+//                                                    .fontWeight(.regular)
+//                                                    .frame(width: 90, height: 60)
+//                                                    .foregroundColor(ColorManager .purple5)
+//                                                    .font(.system(size: 16))
+//                                                    .background(ColorManager .purple1)
+//                                                    .glow(color: ColorManager.purple3, radius: 1)
+//                                                    .shadow(color: .green, radius: 3, x: -4, y: 4)
+//                                                    .opacity(0.9)
+//                                                    .cornerRadius(7)
+//                                                    .shadow(color: Color.green, radius: 2, x: 0, y: 2)
+//                                            })
                                         }
                                         
                                         Spacer()

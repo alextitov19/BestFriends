@@ -144,23 +144,25 @@ struct HomeView: View {
                             
                             
                     ZStack {
-                                    Image(systemName: "triangle")
+                                    Image(systemName: "oval")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 80, height: 60)
+                                        .frame(width: 60, height: 60)
                                         .foregroundColor(Color.red)
+                                        .rotationEffect(.degrees(180))
                                     
                                     
                                     NavigationLink(
                                         destination:  AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                         label: {
                                             
-                                            Text("Vibe \nChange")
+                                            Text("Change \nmy Vibe")
                                                 .fontWeight(.regular)
                                                 .frame(width: 60, height: 60)
                                                 .foregroundColor(Color.white)
-                                                .font(.system(size: 12))
-                                                .blinking(duration: 2.0)
+                                                .font(.system(size: 11))
+                                              
+//                                                .blinking(duration: 2.0)
                                         })
                                     
                                 }
