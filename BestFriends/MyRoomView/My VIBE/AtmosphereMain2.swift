@@ -63,7 +63,7 @@ struct AtmosphereMain2: View {
                     .ignoresSafeArea()
                 
                 
-                AdPlayerView(name: "background_7")
+                AdPlayerView(name: "background_9")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
@@ -76,9 +76,7 @@ struct AtmosphereMain2: View {
         
             
             VStack {
-                Spacer()
-                    .frame(height: 20)
-                
+             
                 
                 
                 VStack {
@@ -88,7 +86,7 @@ struct AtmosphereMain2: View {
                      
                 
                         
-                        Text("Sharing your 'Vibe'")
+                        Text("Something bad")
                             .font(.system(size: 30))
 //                            .italic()
                             .fontWeight(.light)
@@ -96,46 +94,21 @@ struct AtmosphereMain2: View {
                             .foregroundColor(Color.white)
 
                         
-                        Text("with friends")
+                        Text("just happen?")
                             .font(.system(size: 30))
 //                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
 
-                        
-                        
-                        
-                        Text("(even if not ready to talk just yet)")
-                            .font(.system(size: 15))
-                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                        Spacer()
-                            .frame(height: 25)
-                        
-                        Text("NOW, they can send")
-                            .font(.system(size: 20))
-//                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
               
-
-                        
-                        Text("CareHearts & Congratulations!!!")
-                            .font(.system(size: 20))
-//                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                        Spacer()
-                            .frame(height: 30)
-   
                     }
 
                 }
+                
+                Spacer()
+                    .frame(height: 30)
+                
            
                 HStack {
                     
@@ -144,7 +117,6 @@ struct AtmosphereMain2: View {
                     
                     VStack {
                   
-                        
                         Text("Shows as 'blue' atmosphere")
                             .font(.system(size: 10))
                             .italic()
@@ -153,12 +125,7 @@ struct AtmosphereMain2: View {
                             .foregroundColor(Color.white)
                         
                         
-                        Text("around your planet")
-                            .font(.system(size: 10))
-                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
+        
                         HStack {
                           
                   
@@ -227,7 +194,7 @@ struct AtmosphereMain2: View {
                             showingAlert = true
                         }) {
 
-                            Text("Family Struggles")
+                            Text("Family Drama")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -391,9 +358,7 @@ struct AtmosphereMain2: View {
                            
                             })
                             //                }
-                            Spacer()
-                                .frame(height: 12)
-                     
+                        
                             
 //                            Button(action: {
 //                                mood = 9
@@ -432,9 +397,6 @@ struct AtmosphereMain2: View {
                         VStack {
 
                  
-                            Spacer()
-                                .frame(height: 40)
-                            
                             
                            
                             
@@ -457,35 +419,31 @@ struct AtmosphereMain2: View {
 //                        })
 //                    }
                          
-                            
-                            Spacer()
-                                .frame(height: 35)
-                            
-                            
+                         
                             
 //         ********************************************************
                             
-                            Text("Sharing with friends lets them see instantly")
-                               .italic()
-                                .font(.system(size: 15))
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                            
-                            Text("how your day is going by the 'color'")
-                               .italic()
-                                .font(.system(size: 15))
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                            Text("of your planet's atmosphere.")
-                               .italic()
-                                .font(.system(size: 15))
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                      
-                            
+//                            Text("Sharing with friends lets them see instantly")
+//                               .italic()
+//                                .font(.system(size: 15))
+//                                .fontWeight(.thin)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(Color.white)
+//
+//                            Text("how your day is going by the 'color'")
+//                               .italic()
+//                                .font(.system(size: 15))
+//                                .fontWeight(.thin)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(Color.white)
+//                            Text("of your planet's atmosphere.")
+//                               .italic()
+//                                .font(.system(size: 15))
+//                                .fontWeight(.thin)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(Color.white)
+//
+//
                         }
                     }
                     
@@ -494,9 +452,33 @@ struct AtmosphereMain2: View {
                     }
                     
                     
+             
                     VStack {
+                        
+                        
                         Spacer()
-                            .frame(height: 10)
+                            .frame(height: 20)
+                        
+                        Text("Even if your not ready to talk,")
+                            .font(.system(size: 17))
+                           .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+
+                        Text("tell a friend")
+                            .font(.system(size: 17))
+                           .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+                        
+                        
+                        
+                        
+                        
+                     
                   
                         HStack {
                             
@@ -619,7 +601,7 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 20)
                         
-            
+                        VStack {
                         
                         Button(action: {
                             sessionManager.showLogin()
@@ -636,6 +618,32 @@ struct AtmosphereMain2: View {
                             
                         })
                  
+                            Spacer()
+                                .frame(height: 30)
+                            
+                    
+                            
+                            Text("So they can send enotional support")
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                            
+                            Text("in the form of CareHearts")
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                            
+                            
+                            Text("until you're ready to talk about it")
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                            
+                        }
+                        
                         Spacer()
                             .frame(height: 100)
                         
