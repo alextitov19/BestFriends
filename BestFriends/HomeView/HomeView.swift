@@ -156,7 +156,7 @@ struct HomeView: View {
                                         destination:  AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                         label: {
                                             
-                                            Text("Change \nmy Vibe")
+                                            Text("my day \nChanged!")
                                                 .fontWeight(.regular)
                                                 .frame(width: 60, height: 60)
                                                 .foregroundColor(Color.white)

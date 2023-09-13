@@ -2599,7 +2599,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P39Y6X3G55;
+				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BestFriendsWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BestFriendsWidget;
@@ -2629,7 +2629,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P39Y6X3G55;
+				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BestFriendsWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BestFriendsWidget;
@@ -2777,11 +2777,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BestFriends/Info.plist;
@@ -2809,10 +2810,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BestFriends/Info.plist;
