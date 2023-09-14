@@ -128,7 +128,7 @@ struct FH6: View {
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
-                            Text("safe and sound environment")
+                            Text("safe and sound space)")
                                 .font(.system(size: 17))
                                 .italic()                            .foregroundColor(ColorManager.grey1)
                                 .fontWeight(.thin)
