@@ -30,7 +30,7 @@ struct CH11: View {
         
         ZStack {
           
-   Image("FHBackground")
+   Image("background_8")
             .resizable()
             .scaledToFill()
             .edgesIgnoringSafeArea(.all)
@@ -81,8 +81,17 @@ struct CH11: View {
                             Spacer()
                                 .frame(height: 70)
                             
-                            Text("A friend may well be reckoned the masterpiece of nature.")
-                                .font(.system(size: 25))
+                            Text("'A friend may well be reckoned")
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
+                                .italic()
+                                .foregroundColor(Color.white)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                            
+                            
+                            Text("the masterpiece of nature'")
+                                .font(.system(size: 20))
                                 .fontWeight(.light)
                                 .italic()
                                 .foregroundColor(Color.white)

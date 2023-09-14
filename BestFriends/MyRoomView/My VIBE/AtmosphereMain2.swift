@@ -117,7 +117,7 @@ struct AtmosphereMain2: View {
                     
                     VStack {
                   
-                        Text("Shows as 'blue' atmosphere")
+                        Text("Shows as blue (sad) atmosphere")
                             .font(.system(size: 10))
                             .italic()
                             .fontWeight(.light)
@@ -303,8 +303,8 @@ struct AtmosphereMain2: View {
                             .frame(height: 12)
                         
                         
-                        Text("Shows as 'green' atmosphere")
-                            .font(.system(size: 10))
+                        Text("Shows as green (all good) atmosphere")
+                            .font(.system(size: 8))
                             .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -314,12 +314,12 @@ struct AtmosphereMain2: View {
                             mood = 7
                         }) {
 
-                            Text("I really need to TALK!")
+                            Text("I'm in \nhappy zone")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 7 ? Color.green : Color.red)
+                        .background(mood == 7 ? Color.green : ColorManager .pmbc_green)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
@@ -341,13 +341,13 @@ struct AtmosphereMain2: View {
                             showingAlert = true
                         }) {
 
-                            Text("I'm in \nhappy zone")
+                            Text("I really need to TALK!")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
 //                            Image("smileIcon2")
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 8 ? Color(.systemYellow) : ColorManager .orange3)
+                        .background(mood == 8 ? Color(.systemYellow) : Color.orange)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         .alert("We'll let your friends know.", isPresented: $showingAlert) {

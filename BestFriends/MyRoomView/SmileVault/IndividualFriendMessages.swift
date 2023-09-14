@@ -25,7 +25,7 @@ struct IndividualFriendMessages: View {
                 .ignoresSafeArea()
             
             
-            Image("FHBackground")
+            Image("background_8")
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)

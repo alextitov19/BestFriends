@@ -147,9 +147,9 @@ struct HomeView: View {
                                     Image(systemName: "oval")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 60, height: 60)
+                                        .frame(width: 75, height: 75)
                                         .foregroundColor(Color.red)
-                                        .rotationEffect(.degrees(180))
+//                                        .rotationEffect(.degrees(180))
                                     
                                     
                                     NavigationLink(
@@ -162,7 +162,7 @@ struct HomeView: View {
                                                 .foregroundColor(Color.white)
                                                 .font(.system(size: 11))
                                               
-//                                                .blinking(duration: 2.0)
+                                                .blinking(duration: 2.0)
                                         })
                                     
                                 }
