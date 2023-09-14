@@ -70,7 +70,7 @@ struct MyRoomView: View {
                     //                        })
                     
                     Spacer ()
-                        .frame(width: 22)
+                        .frame(width: 130)
                     
                     VStack {
                         
@@ -333,7 +333,7 @@ struct MyRoomView: View {
 //                    .foregroundColor(.white)
 
                                             }
-//                                            
+//
 //                                            NavigationLink( destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
 //                                                            label: {
 //                                                Text("My \nReal-time \nVibe")
@@ -699,99 +699,99 @@ struct MyRoomView: View {
                         
                         //      *********************** My Crushes ************************************************
                         
-                        HStack {
-                            
-                            VStack {
-                                
-                                ZStack {
-                                    
-                                    
-                                    NavigationLink( destination:  RR17(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                                    label: {
-                                        Text("Features \nin Beta")
-                                            .fontWeight(.bold)
-                                            .frame(width: 300, height: 42)
-                                            .foregroundColor(Color.black)
-                                            .font(.system(size: 16))
-                                            .background(ColorManager .grey3)
-                                            .glow(color: ColorManager.purple1, radius: 1)
-                                            .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                            .opacity(0.75)
-                                            .cornerRadius(15)
-                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                            .opacity(0.6)
-                                    })
-                                    
-                                    
-                                    HStack {
-                                        ZStack {
-                                            
-                                            Image(systemName: "square.fill")
-                                                .resizable()
-                                                .foregroundColor(ColorManager .grey4)
-                                                .frame(width: 60, height: 40)
-                                                .rotationEffect(.degrees(-7))
-                                                .shadow(color: .white, radius: 2, x: -2, y: 2)
-                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                                .opacity(0.6)
-                                            
-                                            
-                                            NavigationLink( destination: RR18(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                                            label: {
-                                                Text("Love \nTarts")
-                                                    .fontWeight(.light)
-                                                    .foregroundColor(Color.white)
-                                                    .font(.system(size: 11))
-                                                    .rotationEffect(.degrees(-7))
-                                                    .opacity(0.85)
-                                                
-                                            })
-                                        }
-                                      
-                                        Spacer ()
-                                            .frame(width: 130)
-                                        
-                //                        ****************************************************************
-                                        ZStack {
-                                            
-                                            Image(systemName: "square.fill")
-                                                .resizable()
-                                                .foregroundColor(ColorManager .grey3)
-                                                .frame(width: 60, height: 40)
-                                                .rotationEffect(.degrees(7))
-                                                .shadow(color: .white, radius: 2, x: -2, y: 2)
-                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                                .opacity(0.6)
-                                            
-                                            
-                                            NavigationLink( destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                                            label: {
-                                                Text("My \nDreams")
-                                                    .fontWeight(.light)
-                                                    .foregroundColor(Color.white)
-                                                    .font(.system(size: 11))
-                                                    .rotationEffect(.degrees(7))
-                                                    .opacity(0.85)
-                                                
-                                            })
-                                            
-                                        }
-                                        
-                                        
+//                        HStack {
+//
+//                            VStack {
+//
+//                                ZStack {
+//
+//
+//                                    NavigationLink( destination:  RR17(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                                                    label: {
+//                                        Text("Features \nin Beta")
+//                                            .fontWeight(.bold)
+//                                            .frame(width: 300, height: 42)
+//                                            .foregroundColor(Color.black)
+//                                            .font(.system(size: 16))
+//                                            .background(ColorManager .grey3)
+//                                            .glow(color: ColorManager.purple1, radius: 1)
+//                                            .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                            .opacity(0.75)
+//                                            .cornerRadius(15)
+//                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                            .opacity(0.6)
+//                                    })
+//
+//
+//                                    HStack {
+//                                        ZStack {
+//
+//                                            Image(systemName: "square.fill")
+//                                                .resizable()
+//                                                .foregroundColor(ColorManager .grey4)
+//                                                .frame(width: 60, height: 40)
+//                                                .rotationEffect(.degrees(-7))
+//                                                .shadow(color: .white, radius: 2, x: -2, y: 2)
+//                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                                .opacity(0.6)
+//
+//
+//                                            NavigationLink( destination: RR18(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                                                            label: {
+//                                                Text("Love \nTarts")
+//                                                    .fontWeight(.light)
+//                                                    .foregroundColor(Color.white)
+//                                                    .font(.system(size: 11))
+//                                                    .rotationEffect(.degrees(-7))
+//                                                    .opacity(0.85)
+//
+//                                            })
+//                                        }
+//
 //                                        Spacer ()
-//                                            .frame(width: 180)
-                                        
-                                    }
-                                }
-                                
-                                Spacer ()
-                                    .frame(width: 400)
-                                
-                            }
-                        }
-                        
-                        
-                        
+//                                            .frame(width: 130)
+//
+//                //                        ****************************************************************
+//                                        ZStack {
+//
+//                                            Image(systemName: "square.fill")
+//                                                .resizable()
+//                                                .foregroundColor(ColorManager .grey3)
+//                                                .frame(width: 60, height: 40)
+//                                                .rotationEffect(.degrees(7))
+//                                                .shadow(color: .white, radius: 2, x: -2, y: 2)
+//                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                                .opacity(0.6)
+//
+//
+//                                            NavigationLink( destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                                                            label: {
+//                                                Text("My \nDreams")
+//                                                    .fontWeight(.light)
+//                                                    .foregroundColor(Color.white)
+//                                                    .font(.system(size: 11))
+//                                                    .rotationEffect(.degrees(7))
+//                                                    .opacity(0.85)
+//
+//                                            })
+//
+//                                        }
+//
+//
+////                                        Spacer ()
+////                                            .frame(width: 180)
+//
+//                                    }
+//                                }
+//
+//                                Spacer ()
+//                                    .frame(width: 400)
+//
+//                            }
+//                        }
+//
+//
+//
                         
                         
                         
