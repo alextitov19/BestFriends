@@ -45,7 +45,7 @@ struct MyRoomView: View {
                 .ignoresSafeArea()
             
             
-            AdPlayerView(name: "background_9")
+            AdPlayerView(name: "background_8")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.99)
