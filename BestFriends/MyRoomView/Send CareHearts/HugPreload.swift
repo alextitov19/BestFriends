@@ -97,27 +97,20 @@ struct HugPreload: View {
                 
                 VStack {
                     
-                    Text("Sharing CareHearts")
+                    Text("Sending")
                         .font(.system(size: 40))
                     //                            .italic()
                         .foregroundColor(ColorManager .grey1)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                    
-//                    Text("Letting friends know you care about them")
-//                        .font(.system(size: 20))
-//                        .italic()
-//                        .foregroundColor(ColorManager .grey1)
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-                    
-//                    Text("Sending LOVE!")
-//                        .font(.system(size: 20))
-//                        .italic()
-//                        .foregroundColor(ColorManager .grey1)
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-                    
+                   
+                    Text("CareHearts")
+                        .font(.system(size: 40))
+                    //                            .italic()
+                        .foregroundColor(ColorManager .grey1)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+
                     Spacer ()
                         .frame(height: 40)
                     
