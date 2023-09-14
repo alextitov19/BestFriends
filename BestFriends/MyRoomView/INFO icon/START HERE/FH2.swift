@@ -113,7 +113,14 @@ struct FH2: View {
                         Spacer()
                             .frame(height: 20)
               
-                        Text("in a safe, non-toxic environment")
+                        Text("in a safe,")
+                            .font(.system(size: 19))
+                               .italic()
+                            .foregroundColor(ColorManager.grey1)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("non-toxic environment")
                             .font(.system(size: 19))
                                .italic()
                             .foregroundColor(ColorManager.grey1)

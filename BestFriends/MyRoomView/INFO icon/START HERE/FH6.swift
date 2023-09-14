@@ -68,15 +68,23 @@ struct FH6: View {
                         Spacer()
                             .frame(height: 40)
                         
+                        Text("Why non-toxic?")
+                            .font(.system(size: 30))
+                            .foregroundColor(ColorManager.grey1)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                       
+                        Spacer()
+                            .frame(height: 10)
                         
-                        Text("because you won't feel like")
-                            .font(.system(size: 22))
+                        Text("1) You won't feel like")
+                            .font(.system(size: 20))
                             .foregroundColor(ColorManager.grey1)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
                         Text("you're not good enough")
-                            .font(.system(size: 22))
+                            .font(.system(size: 20))
                             .foregroundColor(ColorManager.grey1)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
@@ -84,8 +92,8 @@ struct FH6: View {
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("&")
-                            .font(.system(size: 30))
+                        Text("2) No FOMO issues")
+                            .font(.system(size: 20))
                             .foregroundColor(ColorManager.grey1)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
@@ -98,14 +106,15 @@ struct FH6: View {
                         
                         VStack {
                             
-                            Text("we don't allow 'likes' or")
-                                .font(.system(size: 22))
+                            Text("2) No comparison issues")
+                                .font(.system(size: 20))
                                 .foregroundColor(ColorManager.grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
-                            Text("or 'comments' on images")
-                                .font(.system(size: 22))
+                            Text("(no 'likes' or 'comment' on images")
+                                .font(.system(size: 15))
+                                .italic()
                                 .foregroundColor(ColorManager.grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
@@ -113,13 +122,13 @@ struct FH6: View {
                             Spacer()
                                 .frame(height: 30)
                             
-                            Text("We're a safe, closed")
+                            Text("BestFriendsNetwork is a")
                                 .font(.system(size: 17))
                                 .italic()                            .foregroundColor(ColorManager.grey1)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
-                            Text("non-toxic environment")
+                            Text("safe and sound environment")
                                 .font(.system(size: 17))
                                 .italic()                            .foregroundColor(ColorManager.grey1)
                                 .fontWeight(.thin)
