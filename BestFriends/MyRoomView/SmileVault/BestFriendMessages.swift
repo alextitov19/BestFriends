@@ -135,7 +135,7 @@ struct BestFriendMessages: View {
                             .frame(height: 44)
                         
                         Text("Tap \nhere")
-                            .font(.system(size: 27))
+                            .font(.system(size: 17))
                             .foregroundColor(ColorManager .grey4)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)

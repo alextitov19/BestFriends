@@ -98,7 +98,7 @@ struct CH11: View {
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                             
-                            Text("- Emerson")
+                            Text("- Ralph Waldo Emerson")
                                 .font(.system(size: 13))
                                 .foregroundColor(ColorManager .grey1)
                                 .fontWeight(.thin)
