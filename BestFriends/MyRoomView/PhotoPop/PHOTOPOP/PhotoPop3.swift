@@ -43,69 +43,55 @@ struct PhotoPop3: View {
             ColorManager.grey4
                 .opacity(0.8)
                 .ignoresSafeArea()
-         
+            
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.99)
             
             
-//            Image("FHBackground")
-//                .resizable()
-//                .scaledToFill()
-//                .edgesIgnoringSafeArea(.all)
-//                .blendMode(.screen)
-//            
+            //            Image("FHBackground")
+            //                .resizable()
+            //                .scaledToFill()
+            //                .edgesIgnoringSafeArea(.all)
+            //                .blendMode(.screen)
+            //
             VStack{
                 
-               
+                
+                
+                VStack {
                     
+                    
+                    
+                    Text("Send push notification")
+                        .font(.system(size: 20, weight: .light))
+                        .foregroundColor(Color.white)
+                    
+                    Text("(friend taps notification & shakes iPhone)")
+                        .font(.system(size: 15, weight: .light))
+                        .italic()
+                        .foregroundColor(Color.white)
+                    
+                    
+                    Spacer()
+                        .frame(height: 20)
+                    
+                    Text("They see the image")
+                        .font(.system(size: 27, weight: .light))
+                    //                            .italic()
+                        .foregroundColor(Color.white)
+                    
+                    Text("instantly")
+                        .font(.system(size: 27, weight: .light))
+                    //                            .italic()
+                        .foregroundColor(Color.white)
+                    
+                }
                     VStack {
-                        
-//                        Text("Up-loading to PhotoPOP")
-//                            .font(.system(size: 25, weight: .light))
-//                            .foregroundColor(ColorManager .grey1)
-//
-//                        Spacer()
-//                            .frame(height: 7)
-//
-//                        Text("1) Delete OLD image before uploading NEW")
-//                            .font(.system(size: 17, weight: .light))
-//                            .foregroundColor(ColorManager .grey2)
-//
-//                        Text("2) Tap camera/gallery icon to upload NEW image")
-//                            .font(.system(size: 17, weight: .light))
-//                            .foregroundColor(ColorManager .grey2)
-//
-//
-//
-//
-////
-////                        Text("before uploading NEW image")
-////                            .font(.system(size: 20, weight: .light))
-////                            .foregroundColor(ColorManager .grey2)
-//
-//                        Spacer()
-//                            .frame(height: 60)
-                        
-                       
-                        
                         Spacer()
-                            .frame(height: 10)
+                            .frame(height: 20)
                         
-//                        Image("CoolGuy")
-//                            .frame(width: 100, height: 100)
-//                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                            .opacity(0.70)
-
-                        
-                        Text("Shoot'em a push notification")
-                            .font(.system(size: 20, weight: .light))
-                            .foregroundColor(Color.white)
-                    
-                        Text("and they will see it instantly")
-                            .font(.system(size: 20, weight: .light))
-                            .foregroundColor(Color.white)
                         
                         HStack {
                             //
@@ -224,104 +210,105 @@ struct PhotoPop3: View {
                         
                     }
                     
-                Spacer()
-                    .frame(height: 20)
-                
-                Button(action: {
-                    sessionManager.showLogin()
-                },
-                    label: {
-                    Image("home-alt2")
-                        .frame(width: 50, height: 25)
-                        .foregroundColor(.white)
-                        .font(.system(size: 20))
-                        .background(ColorManager .grey2)
-                        .cornerRadius(15)
-                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                        .opacity(0.70)
+                    Spacer()
+                        .frame(height: 20)
                     
-                })
-                
-                Spacer()
-                    .frame(height: 40)
-                
-                Text("In-app notification")
-                    .font(.system(size: 15, weight: .light))
-                    .italic()
-                    .foregroundColor(ColorManager .grey1)
-                
-                Text("was automatically sent")
-                    .font(.system(size: 15, weight: .light))
-                    .italic()
-                    .foregroundColor(ColorManager .grey1)
-                
-                
-                
-                
-                VStack {
-                    
-     
-              
+                    Button(action: {
+                        sessionManager.showLogin()
+                    },
+                           label: {
+                        Image("home-alt2")
+                            .frame(width: 50, height: 25)
+                            .foregroundColor(.white)
+                            .font(.system(size: 20))
+                            .background(ColorManager .grey2)
+                            .cornerRadius(15)
+                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                            .opacity(0.70)
+                        
+                    })
                     
                     Spacer()
-                        .frame(height: 5)
+                        .frame(height: 40)
                     
-            
+                    Text("In-app notification")
+                        .font(.system(size: 15, weight: .light))
+                        .italic()
+                        .foregroundColor(ColorManager .grey1)
                     
-            VStack {
+                    Text("was automatically sent")
+                        .font(.system(size: 15, weight: .light))
+                        .italic()
+                        .foregroundColor(ColorManager .grey1)
                     
-             
-           
                     
                     
-                
-                
-                
+                    
+                    VStack {
+                        
+                        
+                        
+                        
+                        Spacer()
+                            .frame(height: 5)
+                        
+                        
+                        
+                        VStack {
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        }
+                        
+                    }
+                    
                 }
                 
             }
+        }
+        
+        func shareButtonTapped() {
+            if selectedFriends.count == 0 { return }
+            for id in selectedFriends {
+                for f in friends {
+                    if f.id == id {
+                        RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName)  Sent you a PhotoPOP - 'shake' your iPhone & send one back!", APNToken: f.APNToken)
+                        
+                        //MARK: The code below creates an in-app notification for your friend (f.id)
+                        //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
+                        RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Sent you a PhotoPOP - 'shake' your iPhone & send one back!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                            print("Create a photopop notification response code: ", response)
+                        })
+                        
+                        RestApi.instance.createStreakLog(friendID: f.id)
+                    }
+                }
+            }
+            shareColor = ColorManager.darkGrey
+            showingAlert = true
             
         }
         
-    }
-}
-    
-    func shareButtonTapped() {
-        if selectedFriends.count == 0 { return }
-        for id in selectedFriends {
-            for f in friends {
-                if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName)  Sent you a PhotoPOP - 'shake' your iPhone & send one back!", APNToken: f.APNToken)
-                    
-                    //MARK: The code below creates an in-app notification for your friend (f.id)
-                    //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Sent you a PhotoPOP - 'shake' your iPhone & send one back!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                        print("Create a photopop notification response code: ", response)
-                    })
-                    
-                    RestApi.instance.createStreakLog(friendID: f.id)
-                }
+        struct RectView: View {
+            let user: User
+            let friend: User
+            let color: Color
+            
+            var body: some View {
+                Text(friend.firstName + " " + String(friend.lastName.first!))
+                    .fontWeight(.bold)
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .font(.system(size: 8))
+                    .background(color)
+                    .cornerRadius(75)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
             }
         }
-        shareColor = ColorManager.darkGrey
-        showingAlert = true
-
-}
-
-struct RectView: View {
-    let user: User
-    let friend: User
-    let color: Color
-    
-    var body: some View {
-        Text(friend.firstName + " " + String(friend.lastName.first!))
-            .fontWeight(.bold)
-            .frame(width: 80, height: 80)
-            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-            .font(.system(size: 8))
-            .background(color)
-            .cornerRadius(75)
-            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
     }
-}
-}
+

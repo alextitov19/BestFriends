@@ -76,20 +76,23 @@ struct PhotoPopView: View {
             
             VStack {
             
-                
-                Text("PhotoPOP")
+                Text("Sending Friends")
+                    .foregroundColor(Color.white)
+                    .font(.system(size: 35, weight: .light))
+                    .opacity(0.7)
+                Text("PhotoPOPs")
                     .foregroundColor(Color.white)
                     .font(.system(size: 45, weight: .regular))
                     .opacity(0.7)
                 
-                Text("view images by 'shaking' iPhone")
+                Text("(view images by 'shaking' iPhone)")
                     .foregroundColor(Color.white)
-//                    .italic()
-                    .font(.system(size: 20, weight: .regular))
+                    .italic()
+                    .font(.system(size: 15, weight: .regular))
                     .opacity(0.7)
               
-                Spacer ()
-                    .frame(height: 17)
+//                Spacer ()
+//                    .frame(height: 17)
                 
                 NavigationLink( destination:  CH5(user: user, friends: friends),
                                 label: {
@@ -185,11 +188,11 @@ struct PhotoPopView: View {
                                     isShowPhotoLibrary = !isShowPhotoLibrary
                                     showingRecipients = false
                                 }, label: {
-                                    Text("My special pic!")
+                                    Text("load my favorite pic -> for me")
                                         .fontWeight(.regular)
-                                        .frame(width: 230, height: 40)
+                                        .frame(width: 310, height: 40)
                                         .foregroundColor(.white)
-                                        .background(ColorManager.purple3)
+                                        .background(Color.cyan)
                                         .cornerRadius(15)
                                 })
                             } else {

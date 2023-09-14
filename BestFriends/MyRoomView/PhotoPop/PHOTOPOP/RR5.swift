@@ -95,14 +95,14 @@ struct RR5: View {
                                 VStack {
                                    
                                     
-                                    Text("Hey, what are")
+                                    Text("Hey, what's up?")
                                         .font(.system(size: 40, weight: .light))
                                         .foregroundColor(Color.white)
-                                    
-                                    Text("you doing?")
-                                        .font(.system(size: 40, weight: .light))
-                                        .foregroundColor(Color.white)
-                                    
+//                                    
+//                                    Text("you doing?")
+//                                        .font(.system(size: 40, weight: .light))
+//                                        .foregroundColor(Color.white)
+//                                    
                                     Spacer()
                                         .frame(height: 10)
                                  

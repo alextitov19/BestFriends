@@ -402,9 +402,9 @@ struct MyRoomView: View {
                                 ZStack {
                                     
                                     
-                                    NavigationLink( destination:  RR5(user: user, friends: friends),
+                                    NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
                                                     label: {
-                                        Text("Friendship \nPhotoPOPs")
+                                        Text("Loading \nPhotoPOPs")
                                             .fontWeight(.bold)
                                             .frame(width: 300, height: 42)
                                             .foregroundColor(Color.black)
@@ -435,7 +435,7 @@ struct MyRoomView: View {
                                             
                                             NavigationLink( destination:  RR5(user: user, friends: friends),
                                                             label: {
-                                                Text("Hey, \nwhat's up?")
+                                                Text("What \nare my \nfriends doing?")
                                                     .fontWeight(.light)
                                                     .foregroundColor(Color.black)
                                                     .font(.system(size: 10))
@@ -467,7 +467,7 @@ struct MyRoomView: View {
                                             
                                             NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
                                                             label: {
-                                                Text("Load \nPhotoPOPs")
+                                                Text("my \nfavorite \nimage")
                                                     .fontWeight(.light)
                                                     .foregroundColor(Color.black)
                                                     .font(.system(size: 11))
