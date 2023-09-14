@@ -623,7 +623,7 @@ struct AtmosphereMain2: View {
                             
                     
                             
-                            Text("So they can send enotional support")
+                            Text("So they can send emotional support")
                                 .font(.system(size: 20))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
