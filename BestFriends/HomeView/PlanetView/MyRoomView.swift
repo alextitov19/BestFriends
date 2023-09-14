@@ -69,8 +69,8 @@ struct MyRoomView: View {
                     //                                .opacity(0.6)
                     //                        })
                     
-                    Spacer ()
-                        .frame(width: 130)
+//                    Spacer ()
+//                        .frame(width: 200)
                     
                     VStack {
                         
@@ -219,12 +219,12 @@ struct MyRoomView: View {
                     //     CareHearts ******************************************************
                     
                     VStack {
-                        
-                        Spacer()
-                            .frame(height: 60)
-                        
 
-                        
+                        Spacer()
+                            .frame(height: 100)
+
+
+
                         ZStack {
                             
                             NavigationLink(
@@ -497,20 +497,23 @@ struct MyRoomView: View {
                                     
                                     ZStack {
                                         
-                                            NavigationLink(
-                                                destination:  CH11(),
-                                                label: {
-                                                    
-                                                    Image("Group 56")
-                                                        .resizable()
-                                                        .frame(width: 335, height: 180)
-                                                        .cornerRadius(20)
-                                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                                        .opacity(0.6)
-                                                })
-                                            
-                                            
-                                            
+                                        NavigationLink(
+                                            destination:  CH11(),
+                                            label: {
+                                                
+                                                Image("Group 56")
+                                                    .resizable()
+                                                    .frame(width: 335, height: 180)
+                                                    .cornerRadius(20)
+                                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                                    .opacity(0.6)
+                                            })
+                                        
+                                     
+                                        
+                                        
+                                VStack {
+                                         
                                             Spacer()
                                                 .frame(height: 75)
                                             
@@ -532,11 +535,17 @@ struct MyRoomView: View {
                                                 
                                                 
                                             })
+                                    
+                                   
+                                    
                                         }
+                                        
+                                     
+                                        
                                         
                                         HStack {
                                             
-                                            
+                                       
                                             
                                             // ***************************** Pic of the Day ********** After Aug 22 subit to Apple ******
                                             ZStack {
@@ -596,7 +605,7 @@ struct MyRoomView: View {
                                     }
                                 }
                             }
-                        
+                        }
                         
                         
                         
