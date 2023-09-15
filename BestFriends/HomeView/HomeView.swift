@@ -240,17 +240,17 @@ struct HomeView: View {
                                     Image(systemName: "oval")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 75, height: 75)
+                                        .frame(width: 78, height: 78)
                                         .foregroundColor(Color.orange)
                                         .glow(color: ColorManager.purple4, radius: 20)
 
                                     
                                     
                                     NavigationLink(
-                                        destination:  RR17(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                                        destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
                                         label: {
                                             
-                                            Text("my safe \nzone")
+                                            Text("send \nPhotoPOPs")
                                                 .fontWeight(.regular)
                                                 .frame(width: 60, height: 60)
                                                 .foregroundColor(Color.white)
