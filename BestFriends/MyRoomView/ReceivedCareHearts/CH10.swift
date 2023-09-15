@@ -132,7 +132,15 @@ struct CH10: View {
                     
                     .opacity(0.7)
                     
+                  
                     
+                    NavigationLink(destination: RR22(user: user, friends: friends), label: {
+                        HugCircle (color: ColorManager .purple3, friendName: "Congrats \nNice Job!!!")
+                    })
+                    .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                    
+                    .opacity(0.7)
                     
                         VStack {
 //                            

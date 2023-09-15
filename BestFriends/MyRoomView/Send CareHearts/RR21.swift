@@ -93,15 +93,15 @@ struct RR21: View {
                             VStack {
                              
                                 
-                                Text("Protect Your ")
+                                Text("Help protect")
+                                    .font(.system(size: 45, weight: .light))
+                                    .foregroundColor(ColorManager .grey1)
+                                
+                                Text("your friends")
                                     .font(.system(size: 45, weight: .light))
                                     .foregroundColor(ColorManager .grey1)
                                 
                                 Text("mental health")
-                                    .font(.system(size: 45, weight: .light))
-                                    .foregroundColor(ColorManager .grey1)
-                                
-                                Text("CareHeart")
                                     .font(.system(size: 45, weight: .light))
                                     .foregroundColor(ColorManager .grey1)
                             }
@@ -125,14 +125,14 @@ struct RR21: View {
 //                                            .foregroundColor(Color.white)
 //                                            .fontWeight(.light)
 //                                            .multilineTextAlignment(.center)
-                    Text("blow your kiss high in the air")
+                    Text("Shoot'em a protection")
                                             .font(.system(size: 20))
                 
                                             .foregroundColor(Color.white)
                                             .fontWeight(.light)
                                             .multilineTextAlignment(.center)
                     
-                    Text("towards your friend")
+                    Text("CareHeart")
                                             .font(.system(size: 20))
                 
                                             .foregroundColor(Color.white)
@@ -273,7 +273,7 @@ struct RR21: View {
                                 .background(ColorManager .grey3)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your kiss is on it's way. \n\nYour friend just got a push notification asking them to jump up and catch your kisses!", isPresented: $showingAlert) {
+                                .alert("Good for you. This is very noble of you.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -321,12 +321,12 @@ struct RR21: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) is blowing you Kisses. Jump up high and catch them.", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) is looking after your mental health", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Jump up and catch your fresh kisses! ... TAP", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                        print("Create a kiss notification response code: ", response)
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Wow, your friends really care about protecting you!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        print("Create a mental health notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)
                 }
