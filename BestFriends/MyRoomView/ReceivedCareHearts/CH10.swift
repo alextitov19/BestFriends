@@ -135,7 +135,7 @@ struct CH10: View {
                   
                     
                     NavigationLink(destination: RR22(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .purple3, friendName: "Congrats \nNice Job!!!")
+                        HugCircle (color: ColorManager .purple3, friendName: "Your \nwell-being")
                     })
                     .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                     .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
