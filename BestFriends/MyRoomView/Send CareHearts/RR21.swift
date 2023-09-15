@@ -1,10 +1,24 @@
 //
-//  SendKisses.swift
+//  RR21.swift
 //  BestFriends
 //
-//  Created by Social Tech on 1/16/23.
+//  Created by Zhengxu Wang on 9/10/23.
 //
 
+//import SwiftUI
+//
+//struct RR21: View {
+//    var body: some View {
+//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+//    }
+//}
+//
+//struct RR21_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RR21()
+//    }
+//}
+//
 
 
 import Foundation
@@ -12,7 +26,7 @@ import SwiftUI
 import ConfettiSwiftUI
 import AVKit
 
-struct SendKisses: View {
+struct RR21: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -79,11 +93,17 @@ struct SendKisses: View {
                             VStack {
                              
                                 
-                                Text("Blowing Kisses")
+                                Text("Protect Your ")
                                     .font(.system(size: 45, weight: .light))
                                     .foregroundColor(ColorManager .grey1)
                                 
-                             
+                                Text("mental health")
+                                    .font(.system(size: 45, weight: .light))
+                                    .foregroundColor(ColorManager .grey1)
+                                
+                                Text("CareHeart")
+                                    .font(.system(size: 45, weight: .light))
+                                    .foregroundColor(ColorManager .grey1)
                             }
                         }
                       
@@ -281,9 +301,8 @@ struct SendKisses: View {
                             Spacer()
                                 .frame(height: 30)
                             
-                
-                            
-                          
+                      
+                   
                         }
                         
                     }
