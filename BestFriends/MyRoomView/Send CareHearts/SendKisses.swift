@@ -277,11 +277,73 @@ struct SendKisses: View {
                                          .opacity(0.70)
                                      
                                  })
+                   
                             
                             Spacer()
                                 .frame(height: 30)
+                   
+                        }
+                        
+                HStack {
+                    Text("")
+                        .fontWeight(.light)
+                        .foregroundColor(Color.black)
+                        .font(.system(size: 13))
+                        .multilineTextAlignment(.center)
+                        .rotationEffect(.degrees(-7))
+                        .opacity(0.85)
+                    
+                    
+                    Spacer ()
+                        .frame(width: 230)
+                    
+                    NavigationLink(
+                        destination:  PhotoPopView(user: user, friends: friends),
+                        label: {
                             
-                
+                            Image(systemName: "camera")
+                            
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 40, height: 40)
+                                .rotationEffect(.degrees(-7))
+                                .foregroundColor(Color.cyan)
+                                .glow(color: ColorManager.purple4, radius: 2)
+                                .opacity(0.6)
+                            
+                        })
+                            
+                            Spacer ()
+                                .frame(width: 15)
+                            
+                    VStack {
+                        
+                        ZStack {
+                            
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .foregroundColor(Color.purple)
+                                .frame(width: 150, height: 110)
+                                .rotationEffect(.degrees(-7))
+                                .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                .opacity(0.9)
+                            
+                            
+                            Text("Send a PhotoPOP \nto supercharge \nyour kiss")
+                                .fontWeight(.light)
+                                .foregroundColor(Color.black)
+                                .font(.system(size: 13))
+                                .multilineTextAlignment(.center)
+                                .rotationEffect(.degrees(-7))
+                                .opacity(0.85)
+                            
+                        }
+                   
+                    }
+                            
+                        }
+                        
                             
                           
                         }
@@ -294,7 +356,7 @@ struct SendKisses: View {
             
         }
         
-    }
+    
     
     
     func shareButtonTapped() {
