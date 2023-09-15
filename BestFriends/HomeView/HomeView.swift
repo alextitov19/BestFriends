@@ -75,19 +75,112 @@ struct HomeView: View {
                 
            
                 
+                
+                
+                
                 VStack {
                     if ((homeData) != nil) {
                         
                         Spacer()
+                            .frame(height: 10)
+                        
+                        HStack {
+                            
+                            ZStack {
+                                Image(systemName: "heart")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 60, height: 60)
+                                    .foregroundColor(Color.pink)
+                                    .glow(color: ColorManager.purple4, radius: 20)
+                                    .rotationEffect(.degrees(-7))
+                                
+                                
+                                NavigationLink(
+                                    destination:  HugPreload(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
+                                    label: {
+                                        
+                                        Text("send")
+                                            .fontWeight(.regular)
+                                            .frame(width: 60, height: 60)
+                                            .foregroundColor(Color.white)
+                                            .font(.system(size: 11))
+                                            .rotationEffect(.degrees(-7))
+                                            .blinking(duration: 2.0)
+                                })
+                                
+                            }
+                            
+                         
+                            ZStack {
+                                            Image(systemName: "oval")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 75, height: 75)
+                                                .foregroundColor(ColorManager .grey2)
+                                                .glow(color: ColorManager.purple4, radius: 20)
+                                              
+                                            
+                                            
+                                            NavigationLink(
+                                                destination:  AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                                                label: {
+                                                    
+                                                    Text("my day \nChanged!")
+                                                        .fontWeight(.regular)
+                                                        .frame(width: 60, height: 60)
+                                                        .foregroundColor(Color.white)
+                                                        .font(.system(size: 11))
+                                                      
+                                                        .blinking(duration: 2.0)
+                                            })
+                                        }
+                            
+                            
+                            
+                            ZStack {
+                                Image(systemName: "heart")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 60, height: 60)
+                                    .foregroundColor(Color.pink)
+                                    .foregroundColor(Color.pink)
+                                    .rotationEffect(.degrees(7))
+                                    .glow(color: ColorManager.purple4, radius: 20)
+                              
+                                
+                                
+                                NavigationLink(
+                                    destination:  CH10(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
+                                    label: {
+                                        
+                                        Text("received")
+                                            .fontWeight(.regular)
+                                            .frame(width: 60, height: 60)
+                                            .foregroundColor(Color.white)
+                                            .font(.system(size: 11))
+                                            .rotationEffect(.degrees(7))
+                                            .blinking(duration: 2.0)
+                                })
+                                
+                            }
+                            
+                            
+                            
+                            
+                            
+                            
+                        }
+                        Spacer()
 
                         Spacer()
-                            .frame(height: 530)
+                            .frame(height: 475)
                       
                         HStack {
                   
                             ZStack {
                              
-                                Image(systemName: "heart")
+                                Image(systemName: "")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 60, height: 60)
@@ -148,23 +241,23 @@ struct HomeView: View {
                                         .resizable()
                                         .scaledToFit()
                                         .frame(width: 75, height: 75)
-                                        .foregroundColor(Color.red)
-//                                        .rotationEffect(.degrees(180))
+                                        .foregroundColor(Color.orange)
+                                        .glow(color: ColorManager.purple4, radius: 20)
+
                                     
                                     
                                     NavigationLink(
-                                        destination:  AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                                        destination:  RR17(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                         label: {
                                             
-                                            Text("my day \nChanged!")
+                                            Text("my safe \nzone")
                                                 .fontWeight(.regular)
                                                 .frame(width: 60, height: 60)
                                                 .foregroundColor(Color.white)
                                                 .font(.system(size: 11))
                                               
                                                 .blinking(duration: 2.0)
-                                        })
-                                    
+                                    })
                                 }
                             
 //
@@ -404,7 +497,7 @@ struct HomeView: View {
         case 6:
             return Color(.systemYellow)
         case 7:
-            return Color(.systemRed)
+            return Color(.systemGreen)
         case 8:
             return Color(.systemYellow)
         case 9:

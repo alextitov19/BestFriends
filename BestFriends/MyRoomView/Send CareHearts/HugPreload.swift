@@ -128,7 +128,7 @@ struct HugPreload: View {
                             
                             
                             NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
-                                HugCircle (color: ColorManager.orange5, friendName: "Sending \nHUGS")
+                                HugCircle (color: ColorManager.orange5, friendName: "Digital \nHUGS")
                             })
                             .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
                             .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
@@ -155,7 +155,7 @@ struct HugPreload: View {
                             //                    SendSongPush(user: user, friends: friends
                             
                             NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: ColorManager .grey1, friendName: "Sending \nMusic")
+                                HugCircle (color: ColorManager .grey1, friendName: "'That' \nSong")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                             .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
@@ -185,7 +185,7 @@ struct HugPreload: View {
                         
                         
                         NavigationLink(destination: RR21(user: user, friends: friends), label: {
-                            HugCircle (color: ColorManager .purple4, friendName: "Protect \nmental health")
+                            HugCircle (color: ColorManager .purple4, friendName: "your \nwell-being")
                         })
                         .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                         .shadow(color: Color .blue, radius: 10, x: 10, y: 10)

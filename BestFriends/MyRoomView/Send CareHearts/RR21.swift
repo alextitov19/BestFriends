@@ -150,12 +150,12 @@ struct RR21: View {
                         Spacer()
                             .frame(height: 25)
 
-                        Text("(who is the luck friend)")
-                            .font(.system(size: 15))
-                            .italic()
-                            .fontWeight(.light)
-                            .foregroundColor(ColorManager .grey1)
-                            .multilineTextAlignment(.center)
+//                        Text("(who is the luck friend)")
+//                            .font(.system(size: 15))
+//                            .italic()
+//                            .fontWeight(.light)
+//                            .foregroundColor(ColorManager .grey1)
+//                            .multilineTextAlignment(.center)
                         
                         
                         Spacer()
