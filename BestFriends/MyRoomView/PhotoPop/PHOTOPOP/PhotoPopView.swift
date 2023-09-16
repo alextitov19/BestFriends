@@ -188,7 +188,7 @@ struct PhotoPopView: View {
                                     isShowPhotoLibrary = !isShowPhotoLibrary
                                     showingRecipients = false
                                 }, label: {
-                                    Text("load my favorite pic -> for me")
+                                    Text("load my favorite pic -> just for me")
                                         .fontWeight(.regular)
                                         .frame(width: 310, height: 40)
                                         .foregroundColor(.white)

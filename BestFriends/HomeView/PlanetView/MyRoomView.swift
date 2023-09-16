@@ -402,21 +402,21 @@ struct MyRoomView: View {
                                 ZStack {
                                     
                                     
-                                    NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
-                                                    label: {
-                                        Text("Loading \nPhotoPOPs")
-                                            .fontWeight(.bold)
-                                            .frame(width: 300, height: 42)
-                                            .foregroundColor(Color.black)
-                                            .font(.system(size: 16))
-                                            .background(Color.green)
-                                            .glow(color: ColorManager.purple1, radius: 1)
-                                            .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                            .opacity(0.9)
-                                            .cornerRadius(15)
-                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                            .opacity(0.6)
-                                    })
+//                                    NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
+//                                                    label: {
+//                                        Text("Loading \nPhotoPOPs")
+//                                            .fontWeight(.bold)
+//                                            .frame(width: 300, height: 42)
+//                                            .foregroundColor(Color.black)
+//                                            .font(.system(size: 16))
+//                                            .background(Color.green)
+//                                            .glow(color: ColorManager.purple1, radius: 1)
+//                                            .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                            .opacity(0.9)
+//                                            .cornerRadius(15)
+//                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                            .opacity(0.6)
+//                                    })
                                     
                                     HStack {
                                         
@@ -453,31 +453,31 @@ struct MyRoomView: View {
                                             .frame(width: 130)
                                         
                                         //
-                                        ZStack {
-                                            
-                                            Image(systemName: "triangle.fill")
-                                                .resizable()
-                                                .foregroundColor(Color.green)
-                                                .frame(width: 80, height: 55)
-                                            //                                                .rotationEffect(.degrees(7))
-                                                .shadow(color: .white, radius: 2, x: -2, y: 2)
-                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                                .opacity(0.8)
-                                            
-                                            
-                                            NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
-                                                            label: {
-                                                Text("my \nfavorite \nimage")
-                                                    .fontWeight(.light)
-                                                    .foregroundColor(Color.black)
-                                                    .font(.system(size: 11))
-                                                //                                                    .rotationEffect(.degrees(7))
-                                                    .opacity(0.85)
-                                                
-                                                
-                                            })
-                                            
-                                        }
+//                                        ZStack {
+//                                            
+//                                            Image(systemName: "triangle.fill")
+//                                                .resizable()
+//                                                .foregroundColor(Color.green)
+//                                                .frame(width: 80, height: 55)
+//                                            //                                                .rotationEffect(.degrees(7))
+//                                                .shadow(color: .white, radius: 2, x: -2, y: 2)
+//                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                                .opacity(0.8)
+//                                            
+//                                            
+//                                            NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
+//                                                            label: {
+//                                                Text("my \nfavorite \nimage")
+//                                                    .fontWeight(.light)
+//                                                    .foregroundColor(Color.black)
+//                                                    .font(.system(size: 11))
+//                                                //                                                    .rotationEffect(.degrees(7))
+//                                                    .opacity(0.85)
+//                                                
+//                                                
+//                                            })
+//                                            
+//                                        }
                                     }
                                 }
                             }
