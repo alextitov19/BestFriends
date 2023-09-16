@@ -519,7 +519,7 @@ struct MyRoomView: View {
                                             
                                             NavigationLink( destination:  Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
                                                             label: {
-                                                Text(". \nI'm not talking to you - fight")
+                                                Text(". \nFix; I'm not talking to you' -> FIGHT")
                                                     .fontWeight(.bold)
                                                     .frame(width: 300, height: 42)
                                                     .foregroundColor(Color.black)

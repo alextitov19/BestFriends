@@ -90,7 +90,7 @@ struct HomeView: View {
                                 Image(systemName: "heart")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 60, height: 60)
+                                    .frame(width: 80, height: 80)
                                     .foregroundColor(Color.pink)
                                     .glow(color: ColorManager.purple4, radius: 20)
                                     .rotationEffect(.degrees(-7))
@@ -100,13 +100,19 @@ struct HomeView: View {
                                     destination:  HugPreload(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
                                     label: {
                                         
-                                        Text("send")
-                                            .fontWeight(.regular)
-                                            .frame(width: 60, height: 60)
-                                            .foregroundColor(Color.white)
-                                            .font(.system(size: 11))
-                                            .rotationEffect(.degrees(-7))
-                                            .blinking(duration: 2.0)
+                                   
+                                            
+                                            Text("send \nCareHearts")
+                                                .fontWeight(.regular)
+                                                .frame(width: 60, height: 60)
+                                                .foregroundColor(Color.white)
+                                                .font(.system(size: 11))
+                                                .rotationEffect(.degrees(-7))
+                                                .blinking(duration: 2.0)
+                                            
+                                       
+                                            
+                                        
                                 })
                                 
                             }
@@ -142,7 +148,7 @@ struct HomeView: View {
                                 Image(systemName: "heart")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 60, height: 60)
+                                    .frame(width: 80, height: 80)
                                     .foregroundColor(Color.pink)
                                     .foregroundColor(Color.pink)
                                     .rotationEffect(.degrees(7))
@@ -154,7 +160,7 @@ struct HomeView: View {
                                     destination:  CH10(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
                                     label: {
                                         
-                                        Text("received")
+                                        Text("received \nCareHearts")
                                             .fontWeight(.regular)
                                             .frame(width: 60, height: 60)
                                             .foregroundColor(Color.white)
