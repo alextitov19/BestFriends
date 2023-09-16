@@ -421,32 +421,32 @@ struct MyRoomView: View {
                                     HStack {
                                         
                                         // ***************************** Pic of the Day ********** After Aug 22 subit to Apple ******
-                                        ZStack {
-                                            
-                                            Image(systemName: "triangle.fill")
-                                                .resizable()
-                                                .foregroundColor(Color.purple)
-                                                .frame(width: 80, height: 55)
-                                            //                            .rotationEffect(.degrees(-7))
-                                                .shadow(color: .white, radius: 2, x: -2, y: 2)
-                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                                .opacity(0.7)
-                                            //                            .blinking(duration: 2.0)
-                                            
-                                            NavigationLink( destination:  RR5(user: user, friends: friends),
-                                                            label: {
-                                                Text("What \nare my \nfriends doing?")
-                                                    .fontWeight(.light)
-                                                    .foregroundColor(Color.black)
-                                                    .font(.system(size: 10))
-                                                //                                .rotationEffect(.degrees(-7))
-                                                    .opacity(1.0)
-                                                //                                .blinking(duration: 2.0)
-                                                
-                                                
-                                            })
-                                        }
-                                        
+//                                        ZStack {
+//
+//                                            Image(systemName: "triangle.fill")
+//                                                .resizable()
+//                                                .foregroundColor(Color.purple)
+//                                                .frame(width: 80, height: 55)
+//                                            //                            .rotationEffect(.degrees(-7))
+//                                                .shadow(color: .white, radius: 2, x: -2, y: 2)
+//                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                                .opacity(0.7)
+//                                            //                            .blinking(duration: 2.0)
+//
+//                                            NavigationLink( destination:  RR5(user: user, friends: friends),
+//                                                            label: {
+//                                                Text("What \nare my \nfriends doing?")
+//                                                    .fontWeight(.light)
+//                                                    .foregroundColor(Color.black)
+//                                                    .font(.system(size: 10))
+//                                                //                                .rotationEffect(.degrees(-7))
+//                                                    .opacity(1.0)
+//                                                //                                .blinking(duration: 2.0)
+//
+//
+//                                            })
+//                                        }
+//
                                         
                                         
                                         Spacer ()
@@ -735,6 +735,10 @@ struct MyRoomView: View {
                                 
                             }
                         }
+                        
+                        
+                        Spacer ()
+                            .frame(height: 300)
                         
                         //      *********************** My Crushes ************************************************
                         

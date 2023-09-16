@@ -325,10 +325,10 @@ struct HomeView: View {
                                     
                                     
                                     NavigationLink(
-                                        destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
+                                        destination:  RR5(user: homeData!.user, friends: homeData!.friends),
                                         label: {
                                             
-                                            Text("send \nPhotoPOPs")
+                                            Text("what are \nyou doing?")
                                                 .fontWeight(.regular)
                                                 .frame(width: 60, height: 60)
                                                 .foregroundColor(Color.white)
@@ -348,19 +348,19 @@ struct HomeView: View {
                             
                             Spacer()
                                 .frame(width: 30)
-                            
-                            NavigationLink(
-                                destination:  FH10(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                                label: {
-                                    
-                                    Image(systemName: "info.circle")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 35, height: 35)
-                                        .foregroundColor(ColorManager .purple2)
-//                                       .glow(color: ColorManager.purple4, radius: 3)
-                                        .opacity(0.5)
-                                })
+//
+//                            NavigationLink(
+//                                destination:  FH10(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+//                                label: {
+//
+//                                    Image(systemName: "info.circle")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 35, height: 35)
+//                                        .foregroundColor(ColorManager .purple2)
+////                                       .glow(color: ColorManager.purple4, radius: 3)
+//                                        .opacity(0.5)
+//                                })
                             
                             
                             Spacer()
@@ -434,9 +434,9 @@ struct HomeView: View {
                                 .padding()
                             
                         })
-                            Text("tap \nme")
+                            Text("more...")
                                 .fontWeight(.light)
-                                .frame(width: 45, height: 45)
+                                .frame(width: 80, height: 25)
                               .foregroundColor(Color.black)
                                 .font(.system(size: 17))
                                 .background(Color.green)
