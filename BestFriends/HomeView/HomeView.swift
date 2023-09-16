@@ -84,7 +84,30 @@ struct HomeView: View {
                         Spacer()
                             .frame(height: 10)
                         
+                        
+//          ********************************************** Carehearts *************
+                        
                         HStack {
+                            
+                            
+                           
+
+                            NavigationLink(
+                                destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
+                                label: {
+
+                                    Image(systemName: "gear")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 35, height: 35)
+                                        .foregroundColor(Color.white)
+//                                        .glow(color: ColorManager.purple4, radius: 3)
+                                        .opacity(0.9)
+                                })
+                            
+                            
+                            Spacer()
+                                .frame(width: 25)
                             
                             ZStack {
                                 Image(systemName: "heart")
@@ -171,12 +194,32 @@ struct HomeView: View {
                                 
                             }
                             
+                            Spacer()
+                                .frame(width: 25)
+                            
+                            NavigationLink(
+                                destination:  FH10(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                                label: {
+                                    
+                                    Image(systemName: "info.circle")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 35, height: 35)
+                                        .foregroundColor(Color.white)
+//                                       .glow(color: ColorManager.purple4, radius: 3)
+                                        .opacity(0.9)
+                                })
                             
                             
                             
-                            
-                            
-                        }
+                       }
+                        
+                        
+                        
+                        
+                        
+//************************************ Bottom Icons **********************
+                        
                         Spacer()
 
                         Spacer()
@@ -218,24 +261,24 @@ struct HomeView: View {
 //*******************************************
 
                             
+//
+//                            Spacer()
+//                                .frame(width: 20)
+//
+//                            NavigationLink(
+//                                destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
+//                                label: {
+//
+//                                    Image(systemName: "gear")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 35, height: 35)
+//                                        .foregroundColor(ColorManager .purple2)
+////                                        .glow(color: ColorManager.purple4, radius: 3)
+//                                        .opacity(0.5)
+//                                })
                             
-                            Spacer()
-                                .frame(width: 20)
-
-                            NavigationLink(
-                                destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
-                                label: {
-                                    
-                                    Image(systemName: "gear")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 35, height: 35)
-                                        .foregroundColor(ColorManager .purple2)
-//                                        .glow(color: ColorManager.purple4, radius: 3)
-                                        .opacity(0.5)
-                                })
-                            
-//          ********************************************** Carehearts *************
+//          ********************************************* PhotoPOP links *************
                      
                             Spacer()
                                 .frame(width: 20)
@@ -266,42 +309,36 @@ struct HomeView: View {
                                     })
                                 }
                             
-//
-//
-//                            ZStack {
-//
-//                                Image(systemName: "triangle")
-//                                    .resizable()
-//                                    .scaledToFit()
-//                                    .frame(width: 60, height: 60)
-//                                    .foregroundColor(Color.red)
-////                                    .blinking(duration: 2.0)
-//                                    .glow(color: ColorManager.purple4, radius: 3)
-//                                    .opacity(0.5)
-//                                    .onTapGesture {
-//                                        print("Clicked notification bell")
-//                                        presentingIANs.toggle()
-//                                    }
-//
-//                                NavigationLink(destination: AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups), isActive: $inviteClicked
-//                                ) { EmptyView() }
-//
-//
-//
-                                
-                                
-//                                Image(systemName: "bell")
-//                                    .resizable()
-//                                    .scaledToFit()
-//                                    .frame(width: 35, height: 35)
-//                                    .foregroundColor(Color.white)
-//                                    .opacity(0.6)
-//                                    .glow(color: Color.white, radius: 1)
-//                                    .blinking(duration: 2.0)
+                            Spacer()
+                                .frame(width: 20)
                             
-//                            }
-                         
                             
+                            
+                    ZStack {
+                                    Image(systemName: "oval")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 78, height: 78)
+                                        .foregroundColor(Color.orange)
+                                        .glow(color: ColorManager.purple4, radius: 20)
+
+                                    
+                                    
+                                    NavigationLink(
+                                        destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
+                                        label: {
+                                            
+                                            Text("send \nPhotoPOPs")
+                                                .fontWeight(.regular)
+                                                .frame(width: 60, height: 60)
+                                                .foregroundColor(Color.white)
+                                                .font(.system(size: 11))
+                                              
+                                                .blinking(duration: 2.0)
+                                    })
+                                }
+                            
+
                             
                             
                             

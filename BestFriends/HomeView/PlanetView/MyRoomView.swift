@@ -55,22 +55,22 @@ struct MyRoomView: View {
                 
                 HStack {
                     
-                    //
-                    //                    NavigationLink(
-                    //                        destination:  FH10(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                    //                        label: {
-                    //
-                    //                            Image(systemName: "info.circle")
-                    //                                .resizable()
-                    //                                .scaledToFit()
-                    //                                .frame(width: 37, height: 37)
-                    //                                .opacity(0.9)
-                    //                                .foregroundColor(.white)
-                    //                                .opacity(0.6)
-                    //                        })
                     
-//                    Spacer ()
-//                        .frame(width: 200)
+                                        NavigationLink(
+                                            destination:  FH10(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                            label: {
+                    
+                                                Image(systemName: "info.circle")
+                                                    .resizable()
+                                                    .scaledToFit()
+                                                    .frame(width: 37, height: 37)
+                                                    .opacity(0.9)
+                                                    .foregroundColor(.white)
+                                                    .opacity(0.6)
+                                            })
+                    
+                    Spacer ()
+                        .frame(width: 200)
                     
                     VStack {
                         
@@ -118,21 +118,21 @@ struct MyRoomView: View {
                         }
                     }
                     
-                    //                    Spacer ()
-                    //                        .frame(width: 22)
+                                        Spacer ()
+                                            .frame(width: 22)
                     
-                    //                    NavigationLink(
-                    //                        destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
-                    //                        label: {
-                    //
-                    //                            Image(systemName: "gear")
-                    //                                .resizable()
-                    //                                .scaledToFit()
-                    //                                .frame(width: 37, height: 37)
-                    //                                .opacity(0.9)
-                    //                                .foregroundColor(.white)
-                    //                                .opacity(0.6)
-                    //                        })
+                                        NavigationLink(
+                                            destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
+                                            label: {
+                    
+                                                Image(systemName: "gear")
+                                                    .resizable()
+                                                    .scaledToFit()
+                                                    .frame(width: 37, height: 37)
+                                                    .opacity(0.9)
+                                                    .foregroundColor(.white)
+                                                    .opacity(0.6)
+                                            })
                     
                     
                 }
@@ -454,7 +454,7 @@ struct MyRoomView: View {
                                         
                                         //
 //                                        ZStack {
-//                                            
+//
 //                                            Image(systemName: "triangle.fill")
 //                                                .resizable()
 //                                                .foregroundColor(Color.green)
@@ -463,8 +463,8 @@ struct MyRoomView: View {
 //                                                .shadow(color: .white, radius: 2, x: -2, y: 2)
 //                                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
 //                                                .opacity(0.8)
-//                                            
-//                                            
+//
+//
 //                                            NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
 //                                                            label: {
 //                                                Text("my \nfavorite \nimage")
@@ -473,10 +473,10 @@ struct MyRoomView: View {
 //                                                    .font(.system(size: 11))
 //                                                //                                                    .rotationEffect(.degrees(7))
 //                                                    .opacity(0.85)
-//                                                
-//                                                
+//
+//
 //                                            })
-//                                            
+//
 //                                        }
                                     }
                                 }
