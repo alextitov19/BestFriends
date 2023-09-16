@@ -223,7 +223,7 @@ struct HomeView: View {
                         Spacer()
 
                         Spacer()
-                            .frame(height: 475)
+                            .frame(height: 440)
                       
                         HStack {
                   
@@ -347,7 +347,7 @@ struct HomeView: View {
   
                             
                             Spacer()
-                                .frame(width: 30)
+                                .frame(width: 20)
 //
 //                            NavigationLink(
 //                                destination:  FH10(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
