@@ -83,13 +83,13 @@ struct RR23: View {
                         Spacer()
                             .frame(height: 40)
                         
-                        Text("BestFriends")
+                        Text("Best Days")
                             .font(.system(size: 27))
                             .foregroundColor(ColorManager.grey1)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                         
-                        Text("Exciting News Reels")
+                        Text("")
                             .font(.system(size: 19))
                                .italic()
                             .foregroundColor(ColorManager.grey1)
@@ -102,46 +102,44 @@ struct RR23: View {
                         Spacer()
                             .frame(height: 20)
                         
-                        Text("coming this November")
+                        Text("coming soon")
                             .font(.system(size: 22))
                             .foregroundColor(Color.white)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
-                        
-                        Text("")
-                            .font(.system(size: 22))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("")
-                            .font(.system(size: 22))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                    
-                        
+              
                         
                         Spacer()
                             .frame(height: 20)
-              
-//                        Text("in a safe,")
-//                            .font(.system(size: 19))
-//                               .italic()
-//                            .foregroundColor(ColorManager.grey1)
-//                            .fontWeight(.thin)
-//                            .multilineTextAlignment(.center)
-//
-//                        Text("non-toxic environment")
-//                            .font(.system(size: 19))
-//                               .italic()
-//                            .foregroundColor(ColorManager.grey1)
-//                            .fontWeight(.thin)
-//                            .multilineTextAlignment(.center)
+                        
+                        
+                        Text("Our newest 'reels type' feature")
+                            .font(.system(size: 19))
+                               .italic()
+                            .foregroundColor(ColorManager.grey1)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+
+                        Text("where you and your friends celebrate")
+                            .font(.system(size: 19))
+                               .italic()
+                            .foregroundColor(ColorManager.grey1)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("your best days together!")
+                            .font(.system(size: 19))
+                               .italic()
+                            .foregroundColor(ColorManager.grey1)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                  
                     }
                     
                 }
                 VStack {
+                    
+              
                     
                     Spacer()
                         .frame(height: 30)
@@ -151,10 +149,10 @@ struct RR23: View {
                     NavigationLink(
                         destination: RR12(user: user, friend: user, friends: friends, groups: groups),
                         label: {
-                            Text("send congratulations")
+                            Text("send congratulations \nCareHeart")
                                 .fontWeight(.thin)
                                 .foregroundColor(Color.white)
-                                .frame(width: 150, height: 30)
+                                .frame(width: 250, height: 40)
                                 .font(.system(size: 15))
                                 .background(ColorManager .grey2)
                                 .opacity(0.95)

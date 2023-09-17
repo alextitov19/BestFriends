@@ -92,18 +92,18 @@ struct HomeView: View {
                             
                             
                             
-                            NavigationLink(
-                                destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
-                                label: {
-                                    
-                                    Image(systemName: "gear")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 35, height: 35)
-                                        .foregroundColor(Color.white)
-                                    //                                        .glow(color: ColorManager.purple4, radius: 3)
-                                        .opacity(0.9)
-                                })
+//                            NavigationLink(
+//                                destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
+//                                label: {
+//
+//                                    Image(systemName: "gear")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 35, height: 35)
+//                                        .foregroundColor(Color.white)
+//                                    //                                        .glow(color: ColorManager.purple4, radius: 3)
+//                                        .opacity(0.9)
+//                                })
                             
                             
                             Spacer()
@@ -199,19 +199,19 @@ struct HomeView: View {
                                 .frame(width: 25)
                             
                             
-                                
-                                NavigationLink(
-                                    destination:  FH10(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                                    label: {
-                                        
-                                        Image(systemName: "info.circle")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 35, height: 35)
-                                            .foregroundColor(Color.white)
-                                        //                                       .glow(color: ColorManager.purple4, radius: 3)
-                                            .opacity(0.9)
-                                    })
+//                                
+//                                NavigationLink(
+//                                    destination:  FH10(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+//                                    label: {
+//                                        
+//                                        Image(systemName: "info.circle")
+//                                            .resizable()
+//                                            .scaledToFit()
+//                                            .frame(width: 35, height: 35)
+//                                            .foregroundColor(Color.white)
+//                                        //                                       .glow(color: ColorManager.purple4, radius: 3)
+//                                            .opacity(0.9)
+//                                    })
                                 
                                 
                                 
@@ -275,7 +275,7 @@ struct HomeView: View {
                                                 destination:  RR23(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                                 label: {
                                                     
-                                                    Text("BEST \nNews!")
+                                                    Text("BEST \nDays!")
                                                         .fontWeight(.regular)
                                                         .frame(width: 60, height: 60)
                                                         .foregroundColor(Color.white)
