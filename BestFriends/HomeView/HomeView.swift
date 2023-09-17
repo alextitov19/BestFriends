@@ -253,7 +253,7 @@ struct HomeView: View {
                         Spacer()
 
                         Spacer()
-                            .frame(height: 380)
+                            .frame(height: 390)
                       
                         HStack {
                   
@@ -269,10 +269,10 @@ struct HomeView: View {
                                             
                                             
                                             NavigationLink(
-                                                destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
+                                                destination:  RR23(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                                 label: {
                                                     
-                                                    Text("Exciting \nNews!")
+                                                    Text("SUPER \nNews!")
                                                         .fontWeight(.regular)
                                                         .frame(width: 60, height: 60)
                                                         .foregroundColor(Color.white)
