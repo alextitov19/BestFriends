@@ -131,7 +131,7 @@ struct HomeView: View {
                                             .foregroundColor(Color.white)
                                             .font(.system(size: 11))
                                             .rotationEffect(.degrees(-7))
-                                            .blinking(duration: 2.0)
+//                                            .blinking(duration: 2.0)
                                         
                                         
                                         
@@ -147,6 +147,7 @@ struct HomeView: View {
                                     .scaledToFit()
                                     .frame(width: 75, height: 75)
                                     .foregroundColor(ColorManager .grey2)
+                                    .blinking(duration: 2.0)
                                     .glow(color: ColorManager.purple4, radius: 20)
                                 
                                 
@@ -189,7 +190,7 @@ struct HomeView: View {
                                             .foregroundColor(Color.white)
                                             .font(.system(size: 11))
                                             .rotationEffect(.degrees(7))
-                                            .blinking(duration: 2.0)
+//                                            .blinking(duration: 2.0)
                                     })
                                 
                             }
@@ -265,6 +266,7 @@ struct HomeView: View {
                                                 .foregroundColor(Color.green)
                                                 .rotationEffect(.degrees(180))
                                                 .opacity(0.6)
+                                                .blinking(duration: 2.0)
                                                 .glow(color: ColorManager.purple4, radius: 20)
 
                                             
@@ -331,7 +333,7 @@ struct HomeView: View {
                                                 .foregroundColor(Color.white)
                                                 .font(.system(size: 11))
                                               
-                                                .blinking(duration: 2.0)
+//                                                .blinking(duration: 2.0)
                                     })
                                 }
                             
@@ -360,7 +362,7 @@ struct HomeView: View {
                                                 .foregroundColor(Color.white)
                                                 .font(.system(size: 11))
                                               
-                                                .blinking(duration: 2.0)
+//                                                .blinking(duration: 2.0)
                                     })
                                 }
                             
