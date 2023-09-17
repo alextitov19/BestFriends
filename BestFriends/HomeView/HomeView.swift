@@ -253,7 +253,7 @@ struct HomeView: View {
                         Spacer()
 
                         Spacer()
-                            .frame(height: 440)
+                            .frame(height: 380)
                       
                         HStack {
                   
@@ -261,8 +261,9 @@ struct HomeView: View {
                                             Image(systemName: "triangle")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 78, height: 78)
+                                                .frame(width: 70, height: 70)
                                                 .foregroundColor(Color.green)
+                                                .rotationEffect(.degrees(180))
                                                 .glow(color: ColorManager.purple4, radius: 20)
 
                                             
