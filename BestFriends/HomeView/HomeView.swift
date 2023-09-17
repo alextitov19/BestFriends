@@ -258,12 +258,13 @@ struct HomeView: View {
                         HStack {
                   
                             ZStack {
-                                            Image(systemName: "triangle")
+                                            Image(systemName: "cube")
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 70, height: 70)
                                                 .foregroundColor(Color.green)
                                                 .rotationEffect(.degrees(180))
+                                                .opacity(0.6)
                                                 .glow(color: ColorManager.purple4, radius: 20)
 
                                             
@@ -272,11 +273,11 @@ struct HomeView: View {
                                                 destination:  RR23(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                                 label: {
                                                     
-                                                    Text("SUPER \nNews!")
+                                                    Text("BEST \nNews!")
                                                         .fontWeight(.regular)
                                                         .frame(width: 60, height: 60)
                                                         .foregroundColor(Color.white)
-                                                        .font(.system(size: 11))
+                                                        .font(.system(size: 15))
                                                       
                                                         .blinking(duration: 2.0)
                                             })
@@ -404,7 +405,7 @@ struct HomeView: View {
                    
                                 NavigationLink( destination:  FH2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                                 label: {
-                                    Text("Start\nhere")
+                                    Text("App \nDemo")
                                         .fontWeight(.medium)
                                         .frame(width: 60, height: 60)
                                         .foregroundColor(Color.white)
