@@ -314,7 +314,7 @@ struct AtmosphereMain2: View {
                             mood = 7
                         }) {
 
-                            Text("I'm in \nhappy zone")
+                            Text("Wow, excitging news!")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }

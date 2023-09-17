@@ -90,18 +90,18 @@ struct HomeView: View {
                         HStack {
                             
                             
-                           
-
+                            
+                            
                             NavigationLink(
                                 destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
                                 label: {
-
+                                    
                                     Image(systemName: "gear")
                                         .resizable()
                                         .scaledToFit()
                                         .frame(width: 35, height: 35)
                                         .foregroundColor(Color.white)
-//                                        .glow(color: ColorManager.purple4, radius: 3)
+                                    //                                        .glow(color: ColorManager.purple4, radius: 3)
                                         .opacity(0.9)
                                 })
                             
@@ -123,47 +123,47 @@ struct HomeView: View {
                                     destination:  HugPreload(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
                                     label: {
                                         
-                                   
-                                            
-                                            Text("send \nCareHearts")
-                                                .fontWeight(.regular)
-                                                .frame(width: 60, height: 60)
-                                                .foregroundColor(Color.white)
-                                                .font(.system(size: 11))
-                                                .rotationEffect(.degrees(-7))
-                                                .blinking(duration: 2.0)
-                                            
-                                       
-                                            
                                         
-                                })
+                                        
+                                        Text("send \nCareHearts")
+                                            .fontWeight(.regular)
+                                            .frame(width: 60, height: 60)
+                                            .foregroundColor(Color.white)
+                                            .font(.system(size: 11))
+                                            .rotationEffect(.degrees(-7))
+                                            .blinking(duration: 2.0)
+                                        
+                                        
+                                        
+                                        
+                                    })
                                 
                             }
                             
-                         
+                            
                             ZStack {
-                                            Image(systemName: "oval")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 75, height: 75)
-                                                .foregroundColor(ColorManager .grey2)
-                                                .glow(color: ColorManager.purple4, radius: 20)
-                                              
-                                            
-                                            
-                                            NavigationLink(
-                                                destination:  AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                                                label: {
-                                                    
-                                                    Text("my day \nChanged!")
-                                                        .fontWeight(.regular)
-                                                        .frame(width: 60, height: 60)
-                                                        .foregroundColor(Color.white)
-                                                        .font(.system(size: 11))
-                                                      
-                                                        .blinking(duration: 2.0)
-                                            })
-                                        }
+                                Image(systemName: "oval")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 75, height: 75)
+                                    .foregroundColor(ColorManager .grey2)
+                                    .glow(color: ColorManager.purple4, radius: 20)
+                                
+                                
+                                
+                                NavigationLink(
+                                    destination:  AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                                    label: {
+                                        
+                                        Text("my day \nChanged!")
+                                            .fontWeight(.regular)
+                                            .frame(width: 60, height: 60)
+                                            .foregroundColor(Color.white)
+                                            .font(.system(size: 11))
+                                        
+                                            .blinking(duration: 2.0)
+                                    })
+                            }
                             
                             
                             
@@ -176,7 +176,7 @@ struct HomeView: View {
                                     .foregroundColor(Color.pink)
                                     .rotationEffect(.degrees(7))
                                     .glow(color: ColorManager.purple4, radius: 20)
-                              
+                                
                                 
                                 
                                 NavigationLink(
@@ -190,32 +190,62 @@ struct HomeView: View {
                                             .font(.system(size: 11))
                                             .rotationEffect(.degrees(7))
                                             .blinking(duration: 2.0)
-                                })
+                                    })
                                 
                             }
                             
                             Spacer()
                                 .frame(width: 25)
                             
-                            NavigationLink(
-                                destination:  FH10(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                                label: {
-                                    
-                                    Image(systemName: "info.circle")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 35, height: 35)
-                                        .foregroundColor(Color.white)
-//                                       .glow(color: ColorManager.purple4, radius: 3)
-                                        .opacity(0.9)
-                                })
+                            
+                                
+                                NavigationLink(
+                                    destination:  FH10(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                                    label: {
+                                        
+                                        Image(systemName: "info.circle")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 35, height: 35)
+                                            .foregroundColor(Color.white)
+                                        //                                       .glow(color: ColorManager.purple4, radius: 3)
+                                            .opacity(0.9)
+                                    })
+                                
+                                
+                                
+                            }
                             
                             
-                            
-                       }
-                        
-                        
-                        
+                            ZStack {
+                                
+                                Image(systemName: "")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 60, height: 60)
+                                    .foregroundColor(Color.red)
+                                //                                    .blinking(duration: 2.0)
+                                    .glow(color: ColorManager.purple4, radius: 3)
+                                    .opacity(0.5)
+                                    .onTapGesture {
+                                        print("Clicked notification bell")
+                                        presentingIANs.toggle()
+                                    }
+                                
+                                NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
+                                ) { EmptyView() }
+                                
+                                
+                                Image(systemName: "bell")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 35, height: 35)
+                                    .foregroundColor(Color.white)
+                                    .opacity(0.6)
+                                    .glow(color: Color.white, radius: 1)
+                                    .blinking(duration: 2.0)
+                                
+                            }
                         
                         
 //************************************ Bottom Icons **********************
@@ -228,34 +258,28 @@ struct HomeView: View {
                         HStack {
                   
                             ZStack {
-                             
-                                Image(systemName: "")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 60, height: 60)
-                                    .foregroundColor(Color.red)
-//                                    .blinking(duration: 2.0)
-                                    .glow(color: ColorManager.purple4, radius: 3)
-                                    .opacity(0.5)
-                                    .onTapGesture {
-                                        print("Clicked notification bell")
-                                        presentingIANs.toggle()
-                                    }
-                                
-                                NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
-                                ) { EmptyView() }
-                                
+                                            Image(systemName: "triangle")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 78, height: 78)
+                                                .foregroundColor(Color.green)
+                                                .glow(color: ColorManager.purple4, radius: 20)
 
-                                Image(systemName: "bell")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 35, height: 35)
-                                    .foregroundColor(Color.white)
-                                    .opacity(0.6)
-                                    .glow(color: Color.white, radius: 1)
-                                    .blinking(duration: 2.0)
-                            
-                            }
+                                            
+                                            
+                                            NavigationLink(
+                                                destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
+                                                label: {
+                                                    
+                                                    Text("Exciting \nNews!")
+                                                        .fontWeight(.regular)
+                                                        .frame(width: 60, height: 60)
+                                                        .foregroundColor(Color.white)
+                                                        .font(.system(size: 11))
+                                                      
+                                                        .blinking(duration: 2.0)
+                                            })
+                                        }
                          
                         
 //*******************************************
