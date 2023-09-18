@@ -67,8 +67,7 @@ struct RR23: View {
  
                 ZStack {
                     
-                    Spacer()
-                        .frame(height: 70)
+              
                     
                     Image(systemName: "circle.fill")
                         .resizable()
@@ -79,31 +78,16 @@ struct RR23: View {
                     
                     VStack {
                         
-                        
-                        Spacer()
-                            .frame(height: 40)
-                        
+
                         Text("Best Days")
                             .font(.system(size: 27))
                             .foregroundColor(ColorManager.grey1)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                         
-                        Text("")
-                            .font(.system(size: 19))
-                               .italic()
-                            .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                        
-                        
-                        
-                        
-                        Spacer()
-                            .frame(height: 20)
-                        
-                        Text("coming soon")
-                            .font(.system(size: 22))
+                        Text("(coming soon)")
+                            .font(.system(size: 15))
+                            .italic()
                             .foregroundColor(Color.white)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
@@ -113,23 +97,20 @@ struct RR23: View {
                             .frame(height: 20)
                         
                         
-                        Text("Our newest 'reels type' feature")
+                        Text("Our newest feature where")
                             .font(.system(size: 19))
-                               .italic()
                             .foregroundColor(ColorManager.grey1)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
 
-                        Text("where you and your friends celebrate")
+                        Text("you and your friends celebrate")
                             .font(.system(size: 19))
-                               .italic()
                             .foregroundColor(ColorManager.grey1)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
-                        Text("your best days together!")
+                        Text("your best days in pictures!")
                             .font(.system(size: 19))
-                               .italic()
                             .foregroundColor(ColorManager.grey1)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
@@ -137,37 +118,25 @@ struct RR23: View {
                     }
                     
                 }
-                VStack {
-                    
-              
-                    
-                    Spacer()
-                        .frame(height: 30)
-                    
-                    
+                
 
-                    NavigationLink(
-                        destination: RR12(user: user, friend: user, friends: friends, groups: groups),
-                        label: {
-                            Text("send congratulations \nCareHeart")
-                                .fontWeight(.thin)
-                                .foregroundColor(Color.white)
-                                .frame(width: 250, height: 40)
-                                .font(.system(size: 15))
-                                .background(ColorManager .grey2)
-                                .opacity(0.95)
-                                .cornerRadius(5)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        }
 
-                    )}
-                
-                
-                
-                
-                Spacer()
-                    .frame(height: 40)
-                
+//                    NavigationLink(
+//                        destination: RR12(user: user, friend: user, friends: friends, groups: groups),
+//                        label: {
+//                            Text("send  a congratulations \nCareHeart")
+//
+//                                .fontWeight(.regular)
+//                                .frame(width: 170, height: 35)
+//                                .foregroundColor(Color.white)
+//                                .font(.system(size: 13))
+//                                .background(Color.orange)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                        }
+//
+//                    )}
+       
             }
             
         }
