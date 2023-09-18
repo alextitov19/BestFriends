@@ -162,13 +162,13 @@ struct RR22: View {
                         Spacer()
                             .frame(height: 15)
                         
-                        Text("You are not alone in your struggles,")
+                        Text("You're not alone, you're friends")
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Text("even if it feels that way.")
+                        Text("are here for you.")
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.light)
