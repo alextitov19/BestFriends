@@ -112,12 +112,12 @@ struct HugPreload: View {
                         }
                     }
                     
-                    
+                    Spacer ()
+                        .frame(height: 20)
                     
                     HStack {
                         
-                        Spacer ()
-                            .frame(height: 20)
+                       
                         
                         
                         NavigationLink(destination: SendHomie(user: user, friends: friends), label: {

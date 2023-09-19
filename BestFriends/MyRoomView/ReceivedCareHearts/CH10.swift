@@ -239,7 +239,7 @@ struct CH10: View {
                         .resizable()
                         .foregroundColor(color)
                     //                            .foregroundColor(ColorManager .purple2)
-                        .frame(width: 135, height: 110)
+                        .frame(width: 140, height: 115)
                         .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
                     
                     Text(friendName)

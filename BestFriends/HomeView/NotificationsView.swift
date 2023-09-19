@@ -102,12 +102,12 @@ struct NotificationsView: View {
         @State private var talkCouponActive = false
         @State private var newVibeActive = false
         @State private var needTalkActive = false
-//        @State private var newArtistActive = false
         @State private var newCustomActive = false
         @State private var thanksCustomActive = false
         @State private var newCongratulationsActive = false
         @State private var thanksCongratulationsActive = false
         @State private var meetupCouponActive = false
+        @State private var fistPumpActive = false
         
         
         
@@ -256,9 +256,7 @@ struct NotificationsView: View {
                 //                        EmptyView()
                 //                    })
                 
-                //                NavigationLink(destination: CH10(user: user, friends: friends, groups: groups, atmosphere: atmosphere), isActive: $heartsActive, label: {
-                //                    EmptyView()
-                //                })
+         
               
                 
               
@@ -359,16 +357,16 @@ struct NotificationsView: View {
                 needTalkActive = true
                 
                 
+            case "You got a fist-pump":
+                fistPumpActive = true
                 
                 
-                
-                
-//*********************** The found new artist page not active *********
-//            case "I found a New Artist & posted them in Chat":
-//                newArtistActive = true
+              
+                           
 
 
-         
+
+                
                 
                 
                 
