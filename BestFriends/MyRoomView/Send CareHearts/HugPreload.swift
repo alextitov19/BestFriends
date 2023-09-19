@@ -41,7 +41,7 @@ struct HugPreload: View {
             
             ZStack{
                 
-        
+                
                 
                 VStack {
                     
@@ -51,14 +51,14 @@ struct HugPreload: View {
                         .foregroundColor(ColorManager .grey1)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                   
+                    
                     Text("CareHearts")
                         .font(.system(size: 30))
                     //                            .italic()
                         .foregroundColor(ColorManager .grey1)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-
+                    
                     Spacer ()
                         .frame(height: 20)
                     
@@ -92,7 +92,7 @@ struct HugPreload: View {
                             
                             
                             NavigationLink(destination: RR11(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: ColorManager .orange2, friendName: "Sending \nHearts")
+                                HugCircle (color: ColorManager .orange2, friendName: "Sending \nLove")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
@@ -114,7 +114,7 @@ struct HugPreload: View {
                     
                     
                     
-                    VStack {
+                    HStack {
                         
                         Spacer ()
                             .frame(height: 20)
@@ -125,11 +125,11 @@ struct HugPreload: View {
                         })
                         .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
                         .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-    //                    .opacity(0.65)
+                        //                    .opacity(0.65)
                         .opacity(0.65)
-    
                         
-                                           
+                        
+                        
                         
                         NavigationLink(destination: RR21(user: user, friends: friends), label: {
                             HugCircle (color: ColorManager .purple4, friendName: "Protect your \nwell-being")
@@ -137,114 +137,117 @@ struct HugPreload: View {
                         .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                         .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
                         .opacity(0.5)
-                      
                         
-                     
+                    }
+                        
                         Spacer ()
                             .frame(height: 20)
-                        
-                        NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
-                            HugCircle (color: ColorManager .purple4, friendName: "Congrats \nNice job!!!")
-                        })
-                        .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                        .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
-                        .opacity(0.5)
-                        
-                        
-
-                        Spacer ()
-                            .frame(height: 50)
-                        
-                        
-                        
-                        HStack {
-                            Text("")
-                                .font(.system(size: 15))
-                                .foregroundColor(Color.white)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                            
-                            Spacer ()
-                                .frame(width: 280)
-                            
-                            ZStack {
-                                
-                                Image(systemName: "heart.fill")
-                                    .resizable()
-                                    .foregroundColor(Color.purple)
-                                    .frame(width: 150, height: 110)
-                                    .rotationEffect(.degrees(-7))
-                                    .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
-                                    .opacity(0.5)
-                                    .blinking(duration: 2.0)
-                                
-                                
-                                NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
-                                  
-                                    Text("Customizing \nCareHearts \n(in beta)")
-                                        .fontWeight(.thin)
-                                        .foregroundColor(Color.black)
-                                        .font(.system(size: 20))
-                                        .multilineTextAlignment(.center)
-                                        .rotationEffect(.degrees(-7))
-                                        .opacity(1.0)
-                                        .blinking(duration: 2.0)
-                                  
-                                    
-                                }
-                                )}
-                        }
                         
                         
                         VStack {
                             
-                            //                            Spacer ()
-                            //                                .frame(height: 100)
+                            NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
+                                HugCircle (color: ColorManager .purple4, friendName: "Congrats \nNice job!!!")
+                            })
+                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+                            .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+                            .opacity(0.5)
                             
                             
+                            
+                            Spacer ()
+                                .frame(height: 50)
+                            
+                            
+                            
+                            HStack {
+                                Text("")
+                                    .font(.system(size: 15))
+                                    .foregroundColor(Color.white)
+                                    .fontWeight(.thin)
+                                    .multilineTextAlignment(.center)
+                                
+                                Spacer ()
+                                    .frame(width: 280)
+                                
+                                ZStack {
+                                    
+                                    Image(systemName: "heart.fill")
+                                        .resizable()
+                                        .foregroundColor(Color.purple)
+                                        .frame(width: 150, height: 110)
+                                        .rotationEffect(.degrees(-7))
+                                        .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+                                        .opacity(0.5)
+                                        .blinking(duration: 2.0)
+                                    
+                                    
+                                    NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
+                                        
+                                        Text("Customizing \nCareHearts \n(in beta)")
+                                            .fontWeight(.thin)
+                                            .foregroundColor(Color.black)
+                                            .font(.system(size: 20))
+                                            .multilineTextAlignment(.center)
+                                            .rotationEffect(.degrees(-7))
+                                            .opacity(1.0)
+                                            .blinking(duration: 2.0)
+                                        
+                                        
+                                    }
+                                    )}
+                            }
+                            
+                            
+                            VStack {
+                                
+                                //                            Spacer ()
+                                //                                .frame(height: 100)
+                                
+                                
+                            }
                         }
                     }
-                }
-                
-                
-                .onTapGesture {
-                    withAnimation {
-                        self.showItems.toggle()
+                    
+                    
+                    .onTapGesture {
+                        withAnimation {
+                            self.showItems.toggle()
+                        }
+                        print("tap function is working")
                     }
-                    print("tap function is working")
+                    
+                    .animation(Animation.easeInOut(duration: 1.7), value: showItems)
+                    
                 }
-                
-                .animation(Animation.easeInOut(duration: 1.7), value: showItems)
-                
             }
         }
-    }
-    
-    
-    struct HugCircle: View {
-        var color: Color
-        var friendName: String
         
-        var body: some View {
+        
+        struct HugCircle: View {
+            var color: Color
+            var friendName: String
             
-            ZStack {
+            var body: some View {
                 
-                Image(systemName: "heart.fill")
-                    .resizable()
-                    .foregroundColor(color)
-                //                            .foregroundColor(ColorManager .purple2)
-                    .frame(width: 120, height: 100)
-                    .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-                
-                Text(friendName)
-                    .fontWeight(.light)
-                    .font(.system(size: 17))
-                    .italic()
-                    .foregroundColor(.black)
-                
+                ZStack {
+                    
+                    Image(systemName: "heart.fill")
+                        .resizable()
+                        .foregroundColor(color)
+                    //                            .foregroundColor(ColorManager .purple2)
+                        .frame(width: 120, height: 100)
+                        .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                    
+                    Text(friendName)
+                        .fontWeight(.light)
+                        .font(.system(size: 17))
+                        .italic()
+                        .foregroundColor(.black)
+                    
+                }
             }
         }
     }
-}
 
   
