@@ -102,12 +102,15 @@ struct NotificationsView: View {
         @State private var talkCouponActive = false
         @State private var newVibeActive = false
         @State private var needTalkActive = false
-        @State private var newArtistActive = false
+//        @State private var newArtistActive = false
         @State private var newCustomActive = false
         @State private var thanksCustomActive = false
         @State private var newCongratulationsActive = false
         @State private var thanksCongratulationsActive = false
         @State private var meetupCouponActive = false
+        
+        
+        
         
         init(ian: InAppNotification, user: User, friends: [User]) {
             self.ian = ian
@@ -354,12 +357,24 @@ struct NotificationsView: View {
 
             case "I Need to Talk!":
                 needTalkActive = true
-
-            case "I found a New Artist & posted them in Chat":
-                newArtistActive = true
+                
+                
+                
+                
+                
+                
+//*********************** The found new artist page not active *********
+//            case "I found a New Artist & posted them in Chat":
+//                newArtistActive = true
 
 
          
+                
+                
+                
+                
+                
+                
 
           
 //
