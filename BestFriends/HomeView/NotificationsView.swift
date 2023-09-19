@@ -177,7 +177,7 @@ struct NotificationsView: View {
                     NavigationLink(destination: VirtualHug(user: user, friends: friends), isActive: $thanksHugActive, label: {
                         EmptyView()
                     })
-         
+                    
                     
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $newCongratulationsActive, label: {
                         EmptyView()
@@ -200,49 +200,56 @@ struct NotificationsView: View {
                         EmptyView()
                     })
                     
-        }
-                
-            
+                }
                 
                 
-                    
-                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksSongActive, label: {
-                        EmptyView()
-                    })
-                    
-                    
-                    //                ************* fix CH9 to Received Hearts page: CH13
-                    NavigationLink(destination: CH9(user: user, friends: friends), isActive: $heartsActive, label: {
-                        EmptyView()
-                    })
-                    
-                    
-                    
-                    //               ********************** Message goes to Chat **************************
-                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksHeartActive, label: {
-                        EmptyView()
-                    })
-                    
-                    
-                    //               ********************** Song goes to Chat - no need link **************************
-                    
-                    
-                    
-                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $fixFightActive, label: {
-                        EmptyView()
-                    })
-                    
-                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $talkCouponActive, label: {
-                        EmptyView()
-                    })
-                    
-                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $needTalkActive, label: {
-                        EmptyView()
-                    })
-                    
-                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $newVibeActive, label: {
-                        EmptyView()
-                    })
+                
+                
+                
+                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksSongActive, label: {
+                    EmptyView()
+                })
+                
+                
+                //                ************* fix CH9 to Received Hearts page: CH13
+                NavigationLink(destination: CH9(user: user, friends: friends), isActive: $heartsActive, label: {
+                    EmptyView()
+                })
+                
+                
+                
+                //               ********************** Message goes to Chat **************************
+                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksHeartActive, label: {
+                    EmptyView()
+                })
+                
+                
+                //               ********************** Song goes to Chat - no need link **************************
+                
+        VStack {
+                
+                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $fixFightActive, label: {
+                    EmptyView()
+                })
+                
+                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $talkCouponActive, label: {
+                    EmptyView()
+                })
+                
+                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $needTalkActive, label: {
+                    EmptyView()
+                })
+                
+                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $newVibeActive, label: {
+                    EmptyView()
+                })
+                
+                
+            }
+                
+                
+                
+                
                     
                     
                     // ***************************************************************
