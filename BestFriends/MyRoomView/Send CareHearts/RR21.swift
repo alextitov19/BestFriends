@@ -93,11 +93,11 @@ struct RR21: View {
                             VStack {
                              
                                 
-                                Text("Help protect")
+                                Text("Help your friends")
                                     .font(.system(size: 45, weight: .light))
                                     .foregroundColor(ColorManager .grey1)
                                 
-                                Text("your friends")
+                                Text("protect their")
                                     .font(.system(size: 45, weight: .light))
                                     .foregroundColor(ColorManager .grey1)
                                 
@@ -273,7 +273,7 @@ struct RR21: View {
                                 .background(ColorManager .grey3)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Good for you. This is very noble of you.", isPresented: $showingAlert) {
+                                .alert("Good for you. You're a very thoughtful friend.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -321,7 +321,7 @@ struct RR21: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) is looking after your mental health", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) is looking after your well-being", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
