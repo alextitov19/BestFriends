@@ -72,12 +72,12 @@ struct SendHomie: View {
                 HStack {
                     VStack {
                         
-                        Text("hey")
+                        Text("fist")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple2)
                         
                         
-                        Text("bro")
+                        Text("pump!")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple2)
                         
@@ -216,7 +216,7 @@ struct SendHomie: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your fist pump has been sent", isPresented: $showingAlert) {
+                                .alert("Sweet", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
