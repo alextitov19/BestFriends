@@ -51,7 +51,7 @@ struct CH4: View {
 //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
-        customMessage = "NEW SONG from; " + user.firstName + " : " + customMessage;
+        customMessage = "SONG from; " + user.firstName + " : " + customMessage;
         
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
@@ -128,30 +128,27 @@ struct CH4: View {
             
             VStack {
                 
-                  
-                     
-                  
+   
+                VStack {
+                    Spacer()
+                        .frame(height: 30)
+                 
+                    Text("WOW, your friend's having")
+                        .font(.system(size: 20, weight: .light))
+                        .italic()
+                        .foregroundColor(ColorManager .grey1)
+                    
+                    Text("a really bad day")
+                        .font(.system(size: 20, weight: .light))
+                        .italic()
+                        .foregroundColor(ColorManager .grey1)
                 
-                
-//                                        ZStack(alignment: .bottom) {
-                                            
                                             ZStack {
                                                 
-                                                
-//
-//                                            Image("")
-//                                                .resizable()
-//                                                .frame(width: 350, height: 48)
-//                                                .background(Color.green)
-//                                                .cornerRadius(10)
-                                                
-                                           
+                                          
                                                 Spacer()
                                                     .frame(height: 7)
-                                                
-                                            
-                                            
-                                            
+                                             
                                                 VStack {
                                                     Spacer()
                                                     // TextField for userInput
@@ -186,19 +183,7 @@ struct CH4: View {
 
                     
                     
-                    VStack {
-                        Spacer()
-                            .frame(height: 30)
-                     
-                        Text("WOW, your friend's having")
-                            .font(.system(size: 20, weight: .light))
-                            .italic()
-                            .foregroundColor(ColorManager .grey1)
-                        
-                        Text("a really bad day")
-                            .font(.system(size: 20, weight: .light))
-                            .italic()
-                            .foregroundColor(ColorManager .grey1)
+                
                     
           
                 VStack {
@@ -257,7 +242,13 @@ struct CH4: View {
 
                         }
                     }
-                
+                        
+//****************************************************************
+                        
+          
+                        
+                        //****************************************************************
+                        
                         Spacer()
                             .frame(height: 20)
                         

@@ -50,7 +50,7 @@ struct RR14: View {
 //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
-        customMessage = "Got Custom CareHeart from; " + user.firstName + " : " + customMessage;
+        customMessage = "Thx for Congratulations from; " + user.firstName + " : " + customMessage;
         
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
@@ -251,7 +251,7 @@ struct RR14: View {
                                     TextField("", text: $customMessage)
                                         .placeholder(when: customMessage.isEmpty) {
                                             HStack {
-                                                Text("Type personal Chat message here")
+                                                Text("Let'em know how you feel...")
                                                     .foregroundColor(Color.white)
                                                     .fontWeight(.thin)
                                                 Spacer()
@@ -398,7 +398,7 @@ struct RR14: View {
                                 .background(ColorManager .grey2)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your thank you was sent.", isPresented: $showingAlert) {
+                                .alert("Your thank you has been sent.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
