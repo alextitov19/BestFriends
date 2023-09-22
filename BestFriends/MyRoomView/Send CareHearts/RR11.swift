@@ -141,7 +141,7 @@ struct RR11: View {
                                                 TextField("", text: $customMessage)
                                                     .placeholder(when: customMessage.isEmpty) {
                                                         HStack {
-                                                            Text("Type romantic Chat message here")
+                                                            Text("Send emotion filled messagt to Chat")
                                                                 .foregroundColor(Color.white)
                                                                 .fontWeight(.thin)
                                                             Spacer()
@@ -211,13 +211,13 @@ struct RR11: View {
                             Spacer()
                                 .frame(height: 7)
                             
-                            Text("- send a special message to Chat")
-                                .font(.system(size: 12, weight: .light))
+                            Text("Send a loving")
+                                .font(.system(size: 20, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                             
-                            Text("- send an emotional PhotoPOP")
-                                .font(.system(size: 12, weight: .light))
+                            Text("PhotoPOP")
+                                .font(.system(size: 20, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                 .multilineTextAlignment(.center)
                          
