@@ -131,7 +131,7 @@ struct HugPreload: View {
                         
                         
                         
-                        NavigationLink(destination: RR21(user: user, friends: friends), label: {
+                        NavigationLink(destination: RR24(user: user, friend: user, friends: friends, groups: groups), label: {
                             HugCircle (color: ColorManager .purple4, friendName: "Protect friend's \nwell-being")
                         })
                         .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
