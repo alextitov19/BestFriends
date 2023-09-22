@@ -109,7 +109,7 @@ struct RR23: View {
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
-                        Text("your best days in pictures!")
+                        Text("your best days together!")
                             .font(.system(size: 19))
                             .foregroundColor(ColorManager.grey1)
                             .fontWeight(.thin)
