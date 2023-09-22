@@ -133,6 +133,67 @@ struct CH4: View {
                     Spacer()
                         .frame(height: 30)
                  
+              
+           
+                    
+//***************************************************
+                    VStack {
+                        
+                        
+                        ZStack {
+                            
+                            Image(systemName: "circle.fill")
+                                .resizable()
+                                .foregroundColor(Color.purple)
+                                .frame(width: 420, height: 250)
+                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                                .opacity(0.5)
+                            
+                            VStack {
+                                
+                                Text("Send 'that' song")
+                                    .font(.system(size: 40, weight: .light))
+        //                            .italic()
+                                    .foregroundColor(Color.white)
+                                
+                                Spacer()
+                                    .frame(height: 10)
+                                
+                                Text("You know 'that' song you listen to")
+                                    .font(.system(size: 16, weight: .light))
+                                    .foregroundColor(Color.white)
+                                    .multilineTextAlignment(.center)
+                       
+                                Text("over-and-over while lying in bed,")
+                                    .font(.system(size: 16, weight: .light))
+                                    .foregroundColor(Color.white)
+                                    .multilineTextAlignment(.center)
+                                
+                                Text("covers over your head,")
+                                    .font(.system(size: 16, weight: .light))
+                                    .foregroundColor(Color.white)
+                                    .multilineTextAlignment(.center)
+                                
+                                Text("tear lines down your cheeks,")
+                                    .font(.system(size: 16, weight: .light))
+                                    .foregroundColor(Color.white)
+                                    .multilineTextAlignment(.center)
+                                
+                                Text("asking why,")
+                                    .font(.system(size: 16, weight: .light))
+                                    .foregroundColor(Color.white)
+                                    .multilineTextAlignment(.center)
+                                
+                                Text("when you're having a truely bad day.")
+                                    .font(.system(size: 16, weight: .light))
+                                    .foregroundColor(Color.white)
+                                    .multilineTextAlignment(.center)
+                            }
+                             
+
+                            }
+                        }
+                    
                     Text("WOW, your friend's having")
                         .font(.system(size: 20, weight: .light))
                         .italic()
@@ -142,12 +203,12 @@ struct CH4: View {
                         .font(.system(size: 20, weight: .light))
                         .italic()
                         .foregroundColor(ColorManager .grey1)
+                    
+                    //***************************************************
                 
                                             ZStack {
                                                 
-                                          
-                                                Spacer()
-                                                    .frame(height: 7)
+                                       
                                              
                                                 VStack {
                                                     Spacer()
@@ -184,64 +245,9 @@ struct CH4: View {
                     
                     
                 
-                    
+//      *************************************************
           
-                VStack {
-                    
-                    
-                    ZStack {
-                        
-                        Image(systemName: "circle.fill")
-                            .resizable()
-                            .foregroundColor(Color.purple)
-                            .frame(width: 420, height: 250)
-                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                            .opacity(0.5)
-                        
-                        VStack {
-                            
-                            Text("Send 'that' song")
-                                .font(.system(size: 40, weight: .light))
-    //                            .italic()
-                                .foregroundColor(Color.white)
-                            
-                            Spacer()
-                                .frame(height: 10)
-                            
-                            Text("You know 'that' song you listen to")
-                                .font(.system(size: 16, weight: .light))
-                                .foregroundColor(Color.white)
-                                .multilineTextAlignment(.center)
-                   
-                            Text("over-and-over while lying in bed,")
-                                .font(.system(size: 16, weight: .light))
-                                .foregroundColor(Color.white)
-                                .multilineTextAlignment(.center)
-                            
-                            Text("covers over your head,")
-                                .font(.system(size: 16, weight: .light))
-                                .foregroundColor(Color.white)
-                                .multilineTextAlignment(.center)
-                            
-                            Text("tear lines down your cheeks,")
-                                .font(.system(size: 16, weight: .light))
-                                .foregroundColor(Color.white)
-                                .multilineTextAlignment(.center)
-                            
-                            Text("asking why,")
-                                .font(.system(size: 16, weight: .light))
-                                .foregroundColor(Color.white)
-                                .multilineTextAlignment(.center)
-                            
-                            Text("when you're having a truely bad day.")
-                                .font(.system(size: 16, weight: .light))
-                                .foregroundColor(Color.white)
-                                .multilineTextAlignment(.center)
-                        }
-                         
-
-                        }
-                    }
+              
                         
 //****************************************************************
                         
