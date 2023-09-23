@@ -72,12 +72,12 @@ struct SendHomie: View {
                 HStack {
                     VStack {
                         
-                        Text("fist")
+                        Text("give a")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple2)
                         
                         
-                        Text("pump!")
+                        Text("fist-pump!")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple2)
                         
@@ -216,7 +216,7 @@ struct SendHomie: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Sweet", isPresented: $showingAlert) {
+                                .alert("Nice!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -275,7 +275,7 @@ struct SendHomie: View {
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "You got a fist-pump", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "sent you a fist-pump", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                         print("Create a fist-pump notification response code: ", response)
                     })
                     

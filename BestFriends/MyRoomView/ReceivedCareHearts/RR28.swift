@@ -74,12 +74,12 @@ struct RR28: View {
                 HStack {
                     VStack {
                         
-                        Text("fist")
+                        Text("got a")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple2)
                         
                         
-                        Text("pump!")
+                        Text("fist-pump!")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple2)
                         
