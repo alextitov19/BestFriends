@@ -1,13 +1,28 @@
 //
-//  ChatView.swift
+//  RR25.swift
 //  BestFriends
 //
-//  Created by Alex Titov on 4/7/22.
+//  Created by Zhengxu Wang on 9/10/23.
 //
+
+//import SwiftUI
+//
+//struct RR25: View {
+//    var body: some View {
+//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+//    }
+//}
+//
+//struct RR25_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RR25()
+//    }
+//}
+
 
 import SwiftUI
 
-struct ChatView: View {
+struct RR25: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -15,9 +30,7 @@ struct ChatView: View {
     let group: Group
     
     private var stream: WebSocketStream
-    
     @State private var messages: [Message] = []
-    
     @State private var isShowPhotoLibrary = false
     @State private var attachmentImage: UIImage?
     

@@ -270,19 +270,36 @@ struct HomeView: View {
                                                 .glow(color: ColorManager.purple4, radius: 20)
 
                                             
-                                            
+//         *****************************************************************
                                             NavigationLink(
                                                 destination:  RR23(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                                 label: {
-                                                    
+
                                                     Text("BEST \nDays!")
                                                         .fontWeight(.regular)
                                                         .frame(width: 60, height: 60)
                                                         .foregroundColor(Color.white)
                                                         .font(.system(size: 15))
-                                                      
                                                         .blinking(duration: 2.0)
-                                            })
+                                                    
+//        ****************************************************** Trying for a chat type
+                                                    
+                                                    
+//                                                    NavigationLink(
+//                                                        destination:  RR25(user: homeData!.user, group: homeData!.group),
+//                                                        label: {
+//                                                            
+//                                                            Text("BEST \nDays!")
+//                                                                .fontWeight(.regular)
+//                                                                .frame(width: 60, height: 60)
+//                                                                .foregroundColor(Color.white)
+//                                                                .font(.system(size: 15))
+//                                                                .blinking(duration: 2.0)
+                        
+//    *****************************************************
+                                                    
+                                                    
+                                                })
                                         }
                          
                         

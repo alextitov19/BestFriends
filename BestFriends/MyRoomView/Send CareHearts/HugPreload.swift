@@ -144,20 +144,31 @@ struct HugPreload: View {
                             .frame(height: 20)
                         
                         
-                        VStack {
+                    VStack {
+                        
+                        HStack {
                             
-                            NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: ColorManager .purple4, friendName: "Congrats \nNice job!!!")
+                            NavigationLink(destination: RR27(user: user, friend: user, friends: friends, groups: groups), label: {
+                                HugCircle (color: ColorManager .purple4, friendName: "You can \ndo it!")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                             .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
                             .opacity(0.5)
                             
+                        }
+                        
+                        NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
+                            HugCircle (color: ColorManager .purple4, friendName: "Congrats \nNice job!!!")
+                        })
+                        .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+                        .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+                        .opacity(0.5)
+                        
+                    }
                             
-                            
-                            Spacer ()
-                                .frame(height: 50)
-                            
+//                            Spacer ()
+//                                .frame(height: 50)
+//
                             
                             
                             HStack {
@@ -170,7 +181,7 @@ struct HugPreload: View {
                                 Spacer ()
                                     .frame(width: 280)
                                 
-                                ZStack {
+                    ZStack {
                                     
                                     Image(systemName: "heart.fill")
                                         .resizable()
@@ -199,11 +210,9 @@ struct HugPreload: View {
                             }
                             
                             
-                            VStack {
+                VStack {
                                 
-                                //                            Spacer ()
-                                //                                .frame(height: 100)
-                                
+                           
                                 
                             }
                         }
@@ -248,6 +257,6 @@ struct HugPreload: View {
                 }
             }
         }
-    }
+//    }
 
   
