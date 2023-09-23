@@ -247,7 +247,7 @@ struct RR27: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("(send push notification asking if they want to talk)")
+                    Text("(send push notification)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)

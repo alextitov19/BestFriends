@@ -124,22 +124,22 @@ struct CH10: View {
                     
                     HStack {
                         
-                        NavigationLink(destination: RR14(user: user, friend: user, friends: friends, groups: groups), label: {
-                            HugCircle (color: ColorManager .purple3, friendName: "Congrats \nNice Job!!!")
-                        })
-                        .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
-                        .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-                        
-                        .opacity(0.7)
-                        
-                        
-//                        NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
-//                            HugCircle (color: ColorManager .grey3, friendName: "send a \nfist pump")
+//                        NavigationLink(destination: RR14(user: user, friend: user, friends: friends, groups: groups), label: {
+//                            HugCircle (color: ColorManager .purple3, friendName: "Congrats \nNice Job!!!")
 //                        })
-//                        .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
+//                        .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
 //                        .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-//                        //                    .opacity(0.65)
-//                        .opacity(0.65)
+//
+//                        .opacity(0.7)
+                        
+                        
+                        NavigationLink(destination: RR28(user: user, friends: friends), label: {
+                            HugCircle (color: ColorManager .grey3, friendName: "send a \nfist pump")
+                        })
+                        .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
+                        .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                        //                    .opacity(0.65)
+                        .opacity(0.65)
                         
                         
                         NavigationLink(destination: RR22(user: user, friends: friends), label: {
