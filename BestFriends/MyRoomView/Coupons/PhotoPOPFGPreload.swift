@@ -104,254 +104,247 @@ struct PhotoPopFGPreload: View {
                 
             } else {
                 
-
+                
                 Color.black
-                   .opacity(0.9)
+                    .opacity(0.9)
                     .ignoresSafeArea()
                 
                 
                 AdPlayerView(name: "background_8")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-
+                
                 
                 
             }
             
             
             VStack{
-
-                    ZStack {
-                            
+                
+                Spacer()
+                    .frame(height: 150)
+          
+                Text("Send a 'Meet-up Coupon'")
+                    .font(.system(size: 17))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                    .multilineTextAlignment(.center)
+                
+                Text("to grab an ice cream, a burger or")
+                    .font(.system(size: 17))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                    .multilineTextAlignment(.center)
+                
+                Text("something to talk after an argument.")
+                    .font(.system(size: 17))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                    .multilineTextAlignment(.center)
+  
+                        
+                        ZStack(alignment: .bottom) {
                             VStack {
-                                
                                 Spacer()
-                                    .frame(height: 50)
-                                
-                                Text("Send a 'Meet-up Coupon' to grab an ice cream, a burger or something to talk after an argument.")
-                                
-                                    .frame(width: 200, height: 80)
-                                    .foregroundColor(Color.black)
-                                    .font(.system(size: 15, weight: .light))
-                                    .padding(30)
-                                    .background(ColorManager .grey2)
-                                    .glow(color: ColorManager.purple3, radius: 1)
-                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                    .opacity(0.5)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-                                    .multilineTextAlignment(.center)
-                                
-                                
-                                
-                                
-
-
-                ZStack(alignment: .bottom) {
-                    VStack {
-                        Spacer()
-                        // TextField for userInput
-                        TextField("", text: $customMessage)
-                            .placeholder(when: customMessage.isEmpty) {
-                                HStack {
-                                    Text("Type your Meetup Coupon here ...")
-                                        .foregroundColor(Color.white)
-                                        .fontWeight(.thin)
-                                        .background(Color.black)
-
-                                    Spacer()
-                                }
-                            }
-                            .foregroundColor(.white)
-                            .font(.system(size: 19))
-                            .submitLabel(.done)
-                            .onReceive(Just(customMessage)) { _ in limitText(65) }
-                            .padding(.top, 20)
-                            .padding(.horizontal, 65)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color.purple)
-                                    .frame(height: 40)
-                                    .padding(.horizontal, 60)
-                            )
-                            .padding(.bottom, 5)
-                        
-             
-                                   
-                                        
+                                // TextField for userInput
+                                TextField("", text: $customMessage)
+                                    .placeholder(when: customMessage.isEmpty) {
+                                        HStack {
+                                            Text("Type your Meetup Coupon here...")
+                                                .foregroundColor(Color.white)
+                                                .fontWeight(.thin)
+                                                .background(Color.black)
+                                            
+                                            Spacer()
+                                        }
                                     }
-                                }
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 19))
+                                    .submitLabel(.done)
+                                    .onReceive(Just(customMessage)) { _ in limitText(65) }
+                                    .padding(.top, 20)
+                                    .padding(.horizontal, 65)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .stroke(Color.purple)
+                                            .frame(height: 40)
+                                            .padding(.horizontal, 60)
+                                    )
+                                    .padding(.bottom, 5)
+                                
+                                
+                                
                                 
                             }
-                            
                         }
-
                         
-                VStack {
+
                     
-                    Spacer()
-                        .frame(height: 15)
-                    
-                    Text("Notify friend")
-                        .font(.system(size: 17))
-                        .fontWeight(.light)
-                        .foregroundColor(Color.white)
-                        .multilineTextAlignment(.center)
-                    
-                    
-                    Spacer()
-                        .frame(height:20)
+                    VStack {
+                        
+                        Spacer()
+                            .frame(height: 15)
+                        
+                        Text("Notify friend")
+                            .font(.system(size: 17))
+                            .fontWeight(.light)
+                            .foregroundColor(Color.white)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        Spacer()
+                            .frame(height:20)
+                        
+                        
+                        HStack {
                             
-                            
-                            HStack {
+                            if friends.count > 0 {
+                                RectView(user: user, friend: friends[0], color: colors[0])
+                                    .onTapGesture(perform: {
+                                        if selectedFriends.contains(friends[0].id) {
+                                            selectedFriends = selectedFriends.filter { $0 != friends[0].id }
+                                            colors[0] = ColorManager.purple3
+                                        } else {
+                                            selectedFriends.append(friends[0].id)
+                                            colors[0] = ColorManager.purple5
+                                        }
+                                        print(selectedFriends)
+                                    })
                                 
-                                if friends.count > 0 {
-                                    RectView(user: user, friend: friends[0], color: colors[0])
-                                        .onTapGesture(perform: {
-                                            if selectedFriends.contains(friends[0].id) {
-                                                selectedFriends = selectedFriends.filter { $0 != friends[0].id }
-                                                colors[0] = ColorManager.purple3
-                                            } else {
-                                                selectedFriends.append(friends[0].id)
-                                                colors[0] = ColorManager.purple5
-                                            }
-                                            print(selectedFriends)
-                                        })
-                                    
-                                }
-                                
-                                if friends.count > 1 {
-                                    RectView(user: user, friend: friends[1], color: colors[1])
-                                        .onTapGesture(perform: {
-                                            if selectedFriends.contains(friends[1].id) {
-                                                selectedFriends = selectedFriends.filter { $0 != friends[1].id }
-                                                colors[1] = ColorManager.purple3
-                                            } else {
-                                                selectedFriends.append(friends[1].id)
-                                                colors[1] = ColorManager.purple5
-                                            }
-                                            print(selectedFriends)
-                                        })
-                                    
-                                }
                             }
                             
-                            Spacer()
-                                .frame(height: 15)
-                            HStack {
-                                if friends.count > 2 {
-                                    RectView(user: user, friend: friends[2], color: colors[2])
-                                        .onTapGesture(perform: {
-                                            if selectedFriends.contains(friends[2].id) {
-                                                selectedFriends = selectedFriends.filter { $0 != friends[2].id }
-                                                colors[2] = ColorManager.purple3
-                                            } else {
-                                                selectedFriends.append(friends[2].id)
-                                                colors[2] = ColorManager.purple5
-                                            }
-                                            print(selectedFriends)
-                                        })
-                                }
+                            if friends.count > 1 {
+                                RectView(user: user, friend: friends[1], color: colors[1])
+                                    .onTapGesture(perform: {
+                                        if selectedFriends.contains(friends[1].id) {
+                                            selectedFriends = selectedFriends.filter { $0 != friends[1].id }
+                                            colors[1] = ColorManager.purple3
+                                        } else {
+                                            selectedFriends.append(friends[1].id)
+                                            colors[1] = ColorManager.purple5
+                                        }
+                                        print(selectedFriends)
+                                    })
                                 
-                                if friends.count > 3 {
-                                    RectView(user: user, friend: friends[3], color: colors[3])
-                                        .onTapGesture(perform: {
-                                            if selectedFriends.contains(friends[3].id) {
-                                                selectedFriends = selectedFriends.filter { $0 != friends[3].id }
-                                                colors[3] = ColorManager.purple3
-                                            } else {
-                                                selectedFriends.append(friends[3].id)
-                                                colors[3] = ColorManager.purple5
-                                            }
-                                            print(selectedFriends)
-                                        })
-                                    
-                                }
-                                
-                                if friends.count > 4 {
-                                    RectView(user: user, friend: friends[4], color: colors[4])
-                                        .onTapGesture(perform: {
-                                            if selectedFriends.contains(friends[4].id) {
-                                                selectedFriends = selectedFriends.filter { $0 != friends[4].id }
-                                                colors[4] = ColorManager.purple3
-                                            } else {
-                                                selectedFriends.append(friends[4].id)
-                                                colors[4] = ColorManager.purple5
-                                            }
-                                            print(selectedFriends)
-                                        })
-                                    
-                                }
+                            }
+                        }
+                        
+                        Spacer()
+                            .frame(height: 15)
+                        HStack {
+                            if friends.count > 2 {
+                                RectView(user: user, friend: friends[2], color: colors[2])
+                                    .onTapGesture(perform: {
+                                        if selectedFriends.contains(friends[2].id) {
+                                            selectedFriends = selectedFriends.filter { $0 != friends[2].id }
+                                            colors[2] = ColorManager.purple3
+                                        } else {
+                                            selectedFriends.append(friends[2].id)
+                                            colors[2] = ColorManager.purple5
+                                        }
+                                        print(selectedFriends)
+                                    })
                             }
                             
+                            if friends.count > 3 {
+                                RectView(user: user, friend: friends[3], color: colors[3])
+                                    .onTapGesture(perform: {
+                                        if selectedFriends.contains(friends[3].id) {
+                                            selectedFriends = selectedFriends.filter { $0 != friends[3].id }
+                                            colors[3] = ColorManager.purple3
+                                        } else {
+                                            selectedFriends.append(friends[3].id)
+                                            colors[3] = ColorManager.purple5
+                                        }
+                                        print(selectedFriends)
+                                    })
+                                
+                            }
                             
+                            if friends.count > 4 {
+                                RectView(user: user, friend: friends[4], color: colors[4])
+                                    .onTapGesture(perform: {
+                                        if selectedFriends.contains(friends[4].id) {
+                                            selectedFriends = selectedFriends.filter { $0 != friends[4].id }
+                                            colors[4] = ColorManager.purple3
+                                        } else {
+                                            selectedFriends.append(friends[4].id)
+                                            colors[4] = ColorManager.purple5
+                                        }
+                                        print(selectedFriends)
+                                    })
+                                
+                            }
+                        }
+                        
+                        
+                        
+                        Spacer()
+                            .frame(height: 20)
+                        
+                        
+                        Button(action: {
+                            counter += 1
+                            shareTapped = true
+                            shareButtonTapped()
+                            sendMessage()
+                        },
+                               label: {
+                            Text("SHARE")
                             
+                                .fontWeight(.thin)
+                                .frame(width: 100, height: 30)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 25))
+                                .background(shareColor)
+                                .cornerRadius(25)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                .alert("Your Meetup Coupon \n\nhas been sent.", isPresented: $showingAlert) {
+                                    Button("OK", role: .cancel) { }
+                                }
+                        })
+                        
+                        Spacer()
+                        
+                        
+                        VStack {
                             Spacer()
-                                .frame(height: 20)
-                            
-                            
+                                .frame(height: 10)
+                            //
                             Button(action: {
-                                counter += 1
-                                shareTapped = true
-                                shareButtonTapped()
-                                sendMessage()
+                                sessionManager.showLogin()
                             },
                                    label: {
-                                Text("SHARE")
+                                Image("home-alt2")
+                                    .frame(width: 50, height: 25)
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 20))
+                                    .background(ColorManager .grey1)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                    .opacity(0.70)
                                 
-                                    .fontWeight(.thin)
-                                    .frame(width: 100, height: 30)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(shareColor)
-                                    .cornerRadius(25)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    .alert("Your Meetup Coupon \n\nhas been sent.", isPresented: $showingAlert) {
-                                        Button("OK", role: .cancel) { }
-                                    }
+                                
+                                
                             })
                             
+                            
+                            
                             Spacer()
-                            
-                            
-                            VStack {
-                                Spacer()
-                                    .frame(height: 10)
-                                //
-                                Button(action: {
-                                    sessionManager.showLogin()
-                                },
-                                       label: {
-                                    Image("home-alt2")
-                                        .frame(width: 50, height: 25)
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 20))
-                                        .background(ColorManager .grey1)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                        .opacity(0.70)
-                                    
-                                    
-                                    
-                                })
-                                
-    
-                        
-                                Spacer()
-                                    .frame(height: 50)
-                            }
-                            
+                                .frame(height: 50)
                         }
                         
-                        
-                        
                     }
+                    
+                    
                     
                 }
                 
             }
             
-
+        }
+        
+        
         
         
         
@@ -395,5 +388,6 @@ struct PhotoPopFGPreload: View {
         
         
     }
+
     
 
