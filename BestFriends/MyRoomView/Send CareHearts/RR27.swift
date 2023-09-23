@@ -65,7 +65,7 @@ struct RR27: View {
 //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
-        customMessage = "Protect Well-being from; " + user.firstName + " : " + customMessage;
+        customMessage = "You can do this; " + user.firstName + " : " + customMessage;
         
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
