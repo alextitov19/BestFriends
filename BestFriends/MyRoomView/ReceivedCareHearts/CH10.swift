@@ -123,15 +123,7 @@ struct CH10: View {
             }
                     
                     HStack {
-                        
-//                        NavigationLink(destination: RR14(user: user, friend: user, friends: friends, groups: groups), label: {
-//                            HugCircle (color: ColorManager .purple3, friendName: "Congrats \nNice Job!!!")
-//                        })
-//                        .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
-//                        .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
-//
-//                        .opacity(0.7)
-                        
+
                         
                         NavigationLink(destination: RR28(user: user, friends: friends), label: {
                             HugCircle (color: ColorManager .grey3, friendName: "send a \nfist pump")
@@ -152,6 +144,31 @@ struct CH10: View {
                         
                     }
                     
+                    
+                    
+                    
+                    
+                VStack {
+                    
+                    HStack {
+                        
+                        NavigationLink(destination: RR29(user: user, friends: friends), label: {
+                            HugCircle (color: ColorManager .purple4, friendName: "You can \ndo it!")
+                        })
+                        .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+                        .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+                        .opacity(0.5)
+                        
+                    }
+                    
+                    NavigationLink(destination: RR14(user: user, friend: user, friends: friends, groups: groups), label: {
+                        HugCircle (color: ColorManager .purple4, friendName: "Congrats \nNice job!!!")
+                    })
+                    .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+                    .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+                    .opacity(0.5)
+                    
+                }
                     
                     
                     
@@ -239,7 +256,7 @@ struct CH10: View {
                         .resizable()
                         .foregroundColor(color)
                     //                            .foregroundColor(ColorManager .purple2)
-                        .frame(width: 140, height: 115)
+                        .frame(width: 120, height: 100)
                         .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
                     
                     Text(friendName)

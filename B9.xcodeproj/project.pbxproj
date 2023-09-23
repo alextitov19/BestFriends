@@ -822,7 +822,6 @@
 				2DDCD9812A8FEBC700B1040F /* RR17.swift */,
 				2DDCD9832A8FEBD900B1040F /* RR18.swift */,
 				2DDCD9852A8FEBEA00B1040F /* RR19.swift */,
-				2DB42CFD2AAE87A800E137C0 /* RR29.swift */,
 				2DB42CFF2AAE87B000E137C0 /* RR30.swift */,
 			);
 			path = RR;
@@ -853,6 +852,7 @@
 				2D7127BC2A658BA800E14744 /* CH12.swift */,
 				2DB42CEF2AAE875900E137C0 /* RR22.swift */,
 				2DB42CFB2AAE879C00E137C0 /* RR28.swift */,
+				2DB42CFD2AAE87A800E137C0 /* RR29.swift */,
 			);
 			path = ReceivedCareHearts;
 			sourceTree = "<group>";

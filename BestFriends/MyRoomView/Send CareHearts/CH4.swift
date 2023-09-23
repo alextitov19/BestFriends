@@ -376,7 +376,7 @@ struct CH4: View {
                                 .background(ColorManager .grey2)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your song \nhas been sent to Chat. \n\nYour a great friend - something not often seen these days.", isPresented: $showingAlert) {
+                                .alert("Your song \nhas been sent to Chat. \n\nYou are a great friend - something not often seen these days.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             

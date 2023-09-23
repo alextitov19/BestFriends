@@ -198,12 +198,18 @@ struct RR27: View {
                 }
                 
                 
-                Text("You do good out there, ok")
+                Text("You do good")
                     .font(.system(size: 35, weight: .light))
                     .foregroundColor(ColorManager .grey1)
                     .multilineTextAlignment(.center)
                 
-//
+                
+                Text("out there, ok")
+                    .font(.system(size: 35, weight: .light))
+                    .foregroundColor(ColorManager .grey1)
+                    .multilineTextAlignment(.center)
+                
+
 //                **************************************
                 
                 ZStack {
