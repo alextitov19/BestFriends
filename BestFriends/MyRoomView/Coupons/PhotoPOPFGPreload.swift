@@ -134,19 +134,31 @@ struct PhotoPopFGPreload: View {
                             
                             
                             VStack {
-                                HStack {
-                                    VStack {
-                            
-                                    }
-                                 
-                                }
+                                
+                                Spacer()
+                                    .frame(height: 50)
+                                
+                                Text("Send a 'Meet-up Coupon' to grab an ice cream, a burger or something to talk after an argument.")
+                                
+                                    .frame(width: 200, height: 80)
+                                    .foregroundColor(Color.black)
+                                    .font(.system(size: 15, weight: .light))
+                                    .padding(30)
+                                    .background(ColorManager .grey2)
+                                    .glow(color: ColorManager.purple3, radius: 1)
+                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                    .opacity(0.5)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+                                    .multilineTextAlignment(.center)
+                                
+                                
+                                
+                                
+
 
                                 ZStack(alignment: .bottom) {
-//                                    Image("newCoupon")
-//                                        .resizable()
-//                                        .frame(width: 340, height: 150)
-//                                        .cornerRadius(15)
-                                    
+
                                     VStack {
                                         Spacer()
                                         // TextField for userInput
@@ -191,24 +203,23 @@ struct PhotoPopFGPreload: View {
                     
                     VStack {
                         
-                        Spacer()
-                            .frame(height: 110)
+                      
 
                     
                     
-                    Text("Send a 'Meet-up Coupon' to grab an ice cream, a burger or something to talk after an argument.")
-                    
-                        .frame(width: 200, height: 80)
-                        .foregroundColor(Color.black)
-                        .font(.system(size: 15, weight: .light))
-                        .padding(30)
-                        .background(ColorManager .grey2)
-                        .glow(color: ColorManager.purple3, radius: 1)
-                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-                        .opacity(0.5)
-                        .cornerRadius(15)
-                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-                        .multilineTextAlignment(.center)
+//                    Text("Send a 'Meet-up Coupon' to grab an ice cream, a burger or something to talk after an argument.")
+//
+//                        .frame(width: 200, height: 80)
+//                        .foregroundColor(Color.black)
+//                        .font(.system(size: 15, weight: .light))
+//                        .padding(30)
+//                        .background(ColorManager .grey2)
+//                        .glow(color: ColorManager.purple3, radius: 1)
+//                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                        .opacity(0.5)
+//                        .cornerRadius(15)
+//                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
+//                        .multilineTextAlignment(.center)
 //                        .opacity(0.2)
 //                       .padding(30)
                     
@@ -218,7 +229,7 @@ struct PhotoPopFGPreload: View {
                     VStack {
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 15)
                         
                         Text("Notify friend")
                             .font(.system(size: 17))
@@ -371,7 +382,7 @@ struct PhotoPopFGPreload: View {
     
                         
                                 Spacer()
-                                    .frame(height: 100)
+                                    .frame(height: 50)
                             }
                             
                         }
