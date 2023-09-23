@@ -154,7 +154,7 @@ struct PhotoPopFGPreload: View {
                         TextField("", text: $customMessage)
                             .placeholder(when: customMessage.isEmpty) {
                                 HStack {
-                                    Text("Type Meetup Coupon here")
+                                    Text("Type your Meetup Coupon here ...")
                                         .foregroundColor(Color.white)
                                         .fontWeight(.thin)
                                         .background(Color.black)
