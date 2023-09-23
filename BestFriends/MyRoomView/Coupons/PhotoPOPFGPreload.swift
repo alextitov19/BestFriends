@@ -104,12 +104,7 @@ struct PhotoPopFGPreload: View {
                 
             } else {
                 
-                
-//                Image("FHBackground")
-//                    .resizable()
-//                    .scaledToFill()
-//                    .edgesIgnoringSafeArea(.all)
-                
+
                 Color.black
                    .opacity(0.9)
                     .ignoresSafeArea()
@@ -125,13 +120,8 @@ struct PhotoPopFGPreload: View {
             
             
             VStack{
-                
-                HStack {
-                    VStack {
-                        
-                        
-                        ZStack {
-                            
+
+                    ZStack {
                             
                             VStack {
                                 
@@ -157,37 +147,37 @@ struct PhotoPopFGPreload: View {
                                 
 
 
-                                ZStack(alignment: .bottom) {
+                ZStack(alignment: .bottom) {
+                    VStack {
+                        Spacer()
+                        // TextField for userInput
+                        TextField("", text: $customMessage)
+                            .placeholder(when: customMessage.isEmpty) {
+                                HStack {
+                                    Text("Type Meetup Coupon here")
+                                        .foregroundColor(Color.white)
+                                        .fontWeight(.thin)
+                                        .background(Color.black)
 
-                                    VStack {
-                                        Spacer()
-                                        // TextField for userInput
-                                        TextField("", text: $customMessage)
-                                            .placeholder(when: customMessage.isEmpty) {
-                                                HStack {
-                                                    Text("Type Meetup Coupon here")
-                                                        .foregroundColor(Color.white)
-                                                        .fontWeight(.thin)
-                                                        .background(Color.black)
-
-                                                    Spacer()
-                                                }
-                                            }
-                                            .foregroundColor(.white)
-                                            .font(.system(size: 19))
-                                            .submitLabel(.done)
-                                            .onReceive(Just(customMessage)) { _ in limitText(65) }
-                                            .padding(.top, 20)
-                                            .padding(.horizontal, 65)
-                                            .overlay(
-                                                RoundedRectangle(cornerRadius: 10)
-                                                    .stroke(Color.purple)
-                                                    .frame(height: 40)
-                                                    .padding(.horizontal, 60)
-                                            )
-                                            .padding(.bottom, 5)
-                                        
-                             
+                                    Spacer()
+                                }
+                            }
+                            .foregroundColor(.white)
+                            .font(.system(size: 19))
+                            .submitLabel(.done)
+                            .onReceive(Just(customMessage)) { _ in limitText(65) }
+                            .padding(.top, 20)
+                            .padding(.horizontal, 65)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.purple)
+                                    .frame(height: 40)
+                                    .padding(.horizontal, 60)
+                            )
+                            .padding(.bottom, 5)
+                        
+             
+                                   
                                         
                                     }
                                 }
@@ -195,56 +185,22 @@ struct PhotoPopFGPreload: View {
                             }
                             
                         }
-                        
-                    }
-                    
-                }
-  
-                    
-                    VStack {
-                        
-                      
 
+                        
+                VStack {
+                    
+                    Spacer()
+                        .frame(height: 15)
+                    
+                    Text("Notify friend")
+                        .font(.system(size: 17))
+                        .fontWeight(.light)
+                        .foregroundColor(Color.white)
+                        .multilineTextAlignment(.center)
                     
                     
-//                    Text("Send a 'Meet-up Coupon' to grab an ice cream, a burger or something to talk after an argument.")
-//
-//                        .frame(width: 200, height: 80)
-//                        .foregroundColor(Color.black)
-//                        .font(.system(size: 15, weight: .light))
-//                        .padding(30)
-//                        .background(ColorManager .grey2)
-//                        .glow(color: ColorManager.purple3, radius: 1)
-//                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-//                        .opacity(0.5)
-//                        .cornerRadius(15)
-//                        .shadow(color: Color.purple, radius: 2, x: 0, y: 2)
-//                        .multilineTextAlignment(.center)
-//                        .opacity(0.2)
-//                       .padding(30)
-                    
-                }
-              
-                    
-                    VStack {
-                        
-                        Spacer()
-                            .frame(height: 15)
-                        
-                        Text("Notify friend")
-                            .font(.system(size: 17))
-                            .fontWeight(.light)
-                            .foregroundColor(Color.white)
-                            .multilineTextAlignment(.center)
-                    
-                        
-                        
-                        
-                        
-                        VStack {
-                            
-                            Spacer()
-                                .frame(height:20)
+                    Spacer()
+                        .frame(height:20)
                             
                             
                             HStack {
@@ -395,7 +351,7 @@ struct PhotoPopFGPreload: View {
                 
             }
             
-        }
+
         
         
         
