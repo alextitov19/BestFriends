@@ -108,13 +108,17 @@ struct RR13: View {
                                         Spacer()
                                             .frame(height: 10)
                                         
-                                        Text("You just got Hearts")
+                                        Text("You just got a Hearts")
                                             .font(.system(size: 20))
                                             .foregroundColor(Color.white)
                                             .fontWeight(.light)
                                             .multilineTextAlignment(.center)
                                         
-                                        
+                                        Text("love heart")
+                                            .font(.system(size: 20))
+                                            .foregroundColor(Color.white)
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
                                     }
                                 }
                                    
