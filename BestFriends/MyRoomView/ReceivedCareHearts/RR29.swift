@@ -100,7 +100,7 @@ struct RR29: View {
                                         .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 40)
+                    .frame(height: 60)
                 
                 
                 HStack {
@@ -262,7 +262,7 @@ struct RR29: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("lkadsjflasdkfjasldkfjasl;dkfj", isPresented: $showingAlert) {
+                                .alert("Your thank you was sent", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -295,7 +295,7 @@ struct RR29: View {
                             })
 //
                             Spacer()
-                                .frame(height: 170)
+                                .frame(height: 185)
                             
    
                    

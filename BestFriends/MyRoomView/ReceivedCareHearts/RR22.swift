@@ -73,7 +73,7 @@ struct RR22: View {
                     .ignoresSafeArea()
                 
                 
-                AdPlayerView(name: "background_8")
+                AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
@@ -158,21 +158,21 @@ struct RR22: View {
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
+//
+//                        Spacer()
+//                            .frame(height: 15)
                         
-                        Spacer()
-                            .frame(height: 15)
-                        
-                        Text("You're not alone, you're friends")
-                            .font(.system(size: 20))
-                            .foregroundColor(ColorManager .grey1)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("are here for you.")
-                            .font(.system(size: 20))
-                            .foregroundColor(ColorManager .grey1)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
+//                        Text("You're not alone, you're friends")
+//                            .font(.system(size: 20))
+//                            .foregroundColor(ColorManager .grey1)
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//
+//                        Text("are here for you.")
+//                            .font(.system(size: 20))
+//                            .foregroundColor(ColorManager .grey1)
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
                         
                         
                         Spacer()
