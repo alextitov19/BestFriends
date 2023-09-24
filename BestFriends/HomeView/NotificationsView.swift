@@ -109,7 +109,7 @@ struct NotificationsView: View {
         @State private var meetupCouponActive = false
         @State private var fistPumpActive = false
         @State private var mentalHealthActive = false
-        
+        @State private var thanksMentalActive = false
         
         
         init(ian: InAppNotification, user: User, friends: [User]) {
@@ -243,7 +243,12 @@ struct NotificationsView: View {
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $newVibeActive, label: {
                     EmptyView()
                 })
-                
+              
+            
+            // ***************************************************************
+            NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksMentalActive, label: {
+                EmptyView()
+            })
                 
             }
                 
@@ -252,22 +257,10 @@ struct NotificationsView: View {
                 
                     
                     
-                    // ***************************************************************
+                  
                     
                     // ***************************************************************
-                    // ***************************************************************
-                    
-                    
-                    //                    ********************** make this link to proper page *******
-                    //                    NavigationLink(destination: RR15(user: user, friends: friends, groups: groups), isActive: $newCustomActive, label: {
-                    //                        EmptyView()
-                    //                    })
-                    
-                    //                    NavigationLink(destination: CH9(user: user, friends: friends), isActive: $newCustomActive, label: {
-                    //                        EmptyView()
-                    //                    })
-                    
-                    
+                
                     
                     
                     
@@ -389,8 +382,10 @@ struct NotificationsView: View {
 // *********** Well-being
                 case "Wow, your friends really care about protecting you!":
                     mentalHealthActive = true
-                    //       ************** NEED THANK YOU
                     
+//       ************** NEED THANK YOU
+                case "Wow, your friends really care about protecting you!":
+                    thanksMentalActive = true
                     
                     
 // *********** You can do it
@@ -412,13 +407,13 @@ struct NotificationsView: View {
                     
                     
                     
-                    
+//**************************************************
                 case "Is redeaming ONE 'TalkCoupon'":
                     talkCouponActive = true
              
           
-                    //            case "Said thanks for the Custom CareHeart":
-                    //                thanksCustomActive = true
+//            case "Said thanks for the Custom CareHeart":
+//                thanksCustomActive = true
                     
                     
                     
