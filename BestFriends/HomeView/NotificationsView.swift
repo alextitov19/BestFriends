@@ -309,31 +309,68 @@ struct NotificationsView: View {
             private func tapped() {
                 switch ian.text {
                     
+                    
+// *********** What are you doing?
                 case "What are you doing? Send PhotoPoP!":
                     photoPopActive = true
                     
                     
-                case "Just sent you a warming Hug! ... TAP":
-                    hugActive = true
-                    
-                case "Ahhh! Thanks for the Hug - it was just what I needed!":
-                    thanksHugActive = true
+           
                     
                     
+                    // *********** Fight
+// *********** Fight
+                case "Just sent you a message in Chat - please look at it":
+                    fixFightActive = true
+                    
+// *********** Fight (Meetup Coupon)
+                case "You just got a 'Meetup Coupon' in Chat":
+                    meetupCouponActive = true
+                    
+                    
+                    
+                    
+            
+                    
+                    // *********** VIBE
+// *********** Day Changed
+                case "'Day' just changed! Check their atmosphere color to see if they need a CareHeart.":
+                    newVibeActive = true
+                    
+// *********** Need to Talk
+                case "I Need to Talk!":
+                    needTalkActive = true
+                    
+                    
+                    
+                    
+                    // *********** CareHearts
+// *********** Blowing Kisses
                 case "Jump up and catch your fresh kisses! ... TAP":
                     kissesActive = true
                     
                 case "Ahhh! Thanks for the Kisses!":
                     thanksKissesActive = true
+                   
                     
-                    
+// *********** Love / Hearts
                 case "Just send you a Heart and a message in Chat ... TAP":
                     heartsActive = true
                     
                 case "Said thanks for thinking about them and sending the Heart!":
                     thanksHeartActive = true
+                
+                
                     
+// *********** Hugs
+                case "Just sent you a warming Hug! ... TAP":
+                    hugActive = true
                     
+                case "Ahhh! Thanks for the Hug - it was just what I needed!":
+                    thanksHugActive = true
+                
+                    
+// *********** Song
                 case "Just sent you 'That' song in Chat":
                     songActive = true
                     
@@ -341,6 +378,28 @@ struct NotificationsView: View {
                     thanksSongActive = true
                     
                     
+                    
+// *********** Fist-pump
+                case "You got a fist-pump":
+                    fistPumpActive = true
+// ************** No received page for fist-pump **************
+                    
+                    
+                    
+// *********** Well-being
+                case "Wow, your friends really care about protecting you!":
+                    mentalHealthActive = true
+                    //       ************** NEED THANK YOU
+                    
+                    
+                    
+// *********** You can do it
+                    
+                    //            ****************** (both sides - send and receive)
+                    //      Encouragement:  "said great - thanks for the encouragement"
+                    
+                    
+// *********** Congratulations
                 case "Just sent you a Congratulations CareHeart ... TAP":
                     newCongratulationsActive = true
                     
@@ -349,59 +408,15 @@ struct NotificationsView: View {
                     
                     
                     
-                case "You just got a 'Meetup Coupon' in Chat":
-                    meetupCouponActive = true
+             
+                    
+                    
+                    
                     
                 case "Is redeaming ONE 'TalkCoupon'":
                     talkCouponActive = true
-                    
-                    
-                case "Just sent you a message in Chat - please look at it":
-                    fixFightActive = true
-                    
-                    
-                    
-                case "'Day' just changed! Check their atmosphere color to see if they need a CareHeart.":
-                    newVibeActive = true
-                    
-                case "I Need to Talk!":
-                    needTalkActive = true
-                    
-                    
-                case "You got a fist-pump":
-                    fistPumpActive = true
-//                    ************** No received page for fist-pump **************
-                    
-                case "Wow, your friends really care about protecting you!":
-                    mentalHealthActive = true
-                    
-//************************* missing in-app for ...
-                    
-//                Fist-pump  (both sides - send and receive)
-                    
-//      Encouragement:  "said great - thanks for the encouragement"
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    //
-                    //            case "I Need to Talk!":
-                    //                meetupCouponActive = true
-                    //
-                    //            case "":
-                    //                thanksCongratulationsActive = true
-                    //
-                    //
-                    //            case "Just sent you a Custome CareHeart. Check for a message in Chat and a PhotoPOP ... TAP":
-                    //                newCustomActive = true
-                    //
+             
+          
                     //            case "Said thanks for the Custom CareHeart":
                     //                thanksCustomActive = true
                     
