@@ -379,7 +379,7 @@ struct NotificationsView: View {
                     
 //                Fist-pump  (both sides - send and receive)
                     
-//                    
+//      Encouragement:  "said great - thanks for the encouragement"
                     
                     
                     

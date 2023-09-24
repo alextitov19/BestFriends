@@ -83,17 +83,21 @@ struct RR29: View {
             
             VStack{
                 
-//                Text("Your friend just")
-//                    .font(.system(size: 35))
-//                    .foregroundColor(ColorManager .grey1)
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//
-//                Text("blew you a kiss")
-//                    .font(.system(size: 40))
-//                    .foregroundColor(ColorManager .grey1)
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
+                
+                Text("You do good out there, ok")
+                                        .font(.system(size: 30))
+                                        .foregroundColor(Color.white)
+                                        .fontWeight(.light)
+                                        .multilineTextAlignment(.center)
+                
+                        Spacer()
+                            .frame(height: 10)
+             
+                Text("You got this!!!")
+                                        .font(.system(size: 40))
+                                        .foregroundColor(Color.white)
+                                        .fontWeight(.light)
+                                        .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height: 40)
@@ -128,20 +132,6 @@ struct RR29: View {
                     VStack {
                         
 
-                        
-                        
-                        Text("You do good out there, ok")
-                                                .font(.system(size: 20))
-                                                .foregroundColor(ColorManager .grey1)
-                                                .fontWeight(.light)
-                                                .multilineTextAlignment(.center)
-                     
-                        Text("You got this!!!")
-                                                .font(.system(size: 20))
-                                                .foregroundColor(ColorManager .grey1)
-                                                .fontWeight(.light)
-                                                .multilineTextAlignment(.center)
-             
                         
                         Spacer()
                             .frame(height: 30)
@@ -305,7 +295,7 @@ struct RR29: View {
                             })
 //
                             Spacer()
-                                .frame(height: 150)
+                                .frame(height: 170)
                             
    
                    
@@ -325,11 +315,11 @@ struct RR29: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) said thanks for the encouragement", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) said great - thanks for the encouragement", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "said thanks for the encouragement", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "said great - thanks for the encouragement", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                         print("Create a thanks encouragement notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)
