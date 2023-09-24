@@ -66,7 +66,7 @@ struct MyRoomView: View {
                                                     .frame(width: 37, height: 37)
                                                     .opacity(0.9)
                                                     .foregroundColor(.white)
-                                                    .opacity(0.6)
+                                                    .opacity(0.9)
                                             })
                     
                     Spacer ()
@@ -131,7 +131,7 @@ struct MyRoomView: View {
                                                     .frame(width: 37, height: 37)
                                                     .opacity(0.9)
                                                     .foregroundColor(.white)
-                                                    .opacity(0.6)
+                                                    .opacity(0.9)
                                             })
                     
                     
