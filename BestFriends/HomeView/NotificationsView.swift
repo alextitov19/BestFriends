@@ -110,7 +110,7 @@ struct NotificationsView: View {
         @State private var fistPumpActive = false
         @State private var mentalHealthActive = false
         @State private var thanksMentalActive = false
-        
+        @State private var canDoActive = false
         
         init(ian: InAppNotification, user: User, friends: [User]) {
             self.ian = ian
@@ -245,21 +245,35 @@ struct NotificationsView: View {
                 })
               
             
+                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksMentalActive, label: {
+                    EmptyView()
+                })
+            
+            
+            
             // ***************************************************************
-            NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksMentalActive, label: {
-                EmptyView()
-            })
-                
+                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksMentalActive, label: {
+                    EmptyView()
+                })
+            
+            
+            
+            // ***************************************************************
+            
+            
+            
+            
+            
             }
                 
-                
+               
                 
                 
                     
                     
                   
                     
-                    // ***************************************************************
+                 
                 
                     
                     
@@ -383,12 +397,13 @@ struct NotificationsView: View {
                 case "Wow, your friends really care about protecting you!":
                     mentalHealthActive = true
                     
-//       ************** NEED THANK YOU
-                case "Wow, your friends really care about protecting you!":
+                case "Ahhh! Thanks for the support!":
                     thanksMentalActive = true
                     
                     
 // *********** You can do it
+                case "Is redeaming ONE 'TalkCoupon'":
+                    canDoActive = true
                     
                     //            ****************** (both sides - send and receive)
                     //      Encouragement:  "said great - thanks for the encouragement"
