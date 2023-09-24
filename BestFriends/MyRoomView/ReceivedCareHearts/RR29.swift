@@ -320,7 +320,7 @@ struct RR29: View {
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
                     RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "said great - thanks for the encouragement", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                        print("Create a thanks encouragement notification response code: ", response)
+                        print("Create a thanks Do notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)
                 }

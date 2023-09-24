@@ -111,6 +111,10 @@ struct NotificationsView: View {
         @State private var mentalHealthActive = false
         @State private var thanksMentalActive = false
         @State private var canDoActive = false
+        @State private var thanksDoActive = false
+        
+        
+        
         
         init(ian: InAppNotification, user: User, friends: [User]) {
             self.ian = ian
@@ -199,11 +203,9 @@ struct NotificationsView: View {
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $songActive, label: {
                         EmptyView()
                     })
+                  
                     
                 }
-                
-                
-                
                 
                 
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksSongActive, label: {
@@ -250,18 +252,16 @@ struct NotificationsView: View {
                 })
             
             
-            
-            // ***************************************************************
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksMentalActive, label: {
                     EmptyView()
                 })
             
-            
+       
+                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksDoActive, label: {
+                    EmptyView()
+                })
             
             // ***************************************************************
-            
-            
-            
             
             
             }
@@ -339,7 +339,7 @@ struct NotificationsView: View {
                     
             
                     
-                    // *********** VIBE
+                    // *********** VIBE **********************************
 // *********** Day Changed
                 case "'Day' just changed! Check their atmosphere color to see if they need a CareHeart.":
                     newVibeActive = true
@@ -351,7 +351,7 @@ struct NotificationsView: View {
                     
                     
                     
-                    // *********** CareHearts
+                    // *********** CareHearts  **********************************
 // *********** Blowing Kisses
                 case "Jump up and catch your fresh kisses! ... TAP":
                     kissesActive = true
@@ -402,11 +402,12 @@ struct NotificationsView: View {
                     
                     
 // *********** You can do it
-                case "Is redeaming ONE 'TalkCoupon'":
+                case "Just sent you encouragement.":
                     canDoActive = true
                     
-                    //            ****************** (both sides - send and receive)
-                    //      Encouragement:  "said great - thanks for the encouragement"
+                case "said great - thanks for the encouragement":
+                    thanksDoActive = true
+                 
                     
                     
 // *********** Congratulations
