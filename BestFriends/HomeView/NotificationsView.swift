@@ -337,7 +337,7 @@ struct NotificationsView: View {
                 case "Just sent you 'That' song in Chat":
                     songActive = true
                     
-                case "Perfect, thanks for the song. Sent you a message in Chat":
+                case "Thanks, your song really hit the spot!":
                     thanksSongActive = true
                     
                     
@@ -375,7 +375,11 @@ struct NotificationsView: View {
                 case "Wow, your friends really care about protecting you!":
                     mentalHealthActive = true
                     
-
+//************************* missing in-app for ...
+                    
+//                Fist-pump  (both sides - send and receive)
+                    
+//                    
                     
                     
                     

@@ -75,13 +75,16 @@ struct RR28: View {
                     VStack {
                         
                         Text("got a")
-                            .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .purple2)
-                        
+                            .font(.system(size: 35))
+                            .foregroundColor(Color.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
                         
                         Text("fist-pump!")
-                            .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .purple2)
+                            .font(.system(size: 35))
+                            .foregroundColor(Color.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
                         
                     }
                     
@@ -96,8 +99,8 @@ struct RR28: View {
                     Text("(Send one back)")
                                             .font(.system(size: 15))
                                             .italic()
-                                            .foregroundColor(ColorManager .grey2)
-                                            .fontWeight(.thin)
+                                            .foregroundColor(Color.white)
+                                            .fontWeight(.light)
                                             .multilineTextAlignment(.center)
 
                     VStack {
@@ -218,7 +221,7 @@ struct RR28: View {
                                 .background(shareColor)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Sent", isPresented: $showingAlert) {
+                                .alert("Done", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -273,11 +276,11 @@ struct RR28: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) Fist-pump back at you", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) fist-pumped you back", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Fist-pump back at you", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "fist-pumped you back", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                         print("Create a thanks fist-pump notification response code: ", response)
                     })
                     
