@@ -154,13 +154,13 @@ struct MyRoomView: View {
                             .scaledToFit()
                             .frame(width: 75, height: 75)
                             .foregroundColor(ColorManager .grey2)
-                            .blinking(duration: 4.0)
-                            .glow(color: ColorManager.purple4, radius: 20)
+//                            .blinking(duration: 4.0)
+                            .glow(color: ColorManager.orange5, radius: 10)
                         
                         
                         
                         NavigationLink(
-                            destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                            destination:  RR20(user: user, friend: user, friends: friends, groups: groups),
                             label: {
                                 
                                 Text("send friend \naffirmation")
