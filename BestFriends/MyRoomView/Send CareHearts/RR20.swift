@@ -64,7 +64,7 @@ struct RR20: View {
 //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
-        customMessage = "You can do this; " + user.firstName + " : " + customMessage;
+        customMessage = "You're great friend because; " + user.firstName + " : " + customMessage;
         
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
@@ -219,7 +219,7 @@ struct RR20: View {
                                 TextField("", text: $customMessage)
                                     .placeholder(when: customMessage.isEmpty) {
                                         HStack {
-                                            Text("Shoot'em a motivational message in Chat")
+                                            Text("Lett'em know what like best in Chat")
                                                 .foregroundColor(Color.white)
                                                 .fontWeight(.thin)
                                             Spacer()
@@ -368,7 +368,7 @@ struct RR20: View {
                                 .background(ColorManager .grey2)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Nice job on having your friend's back.", isPresented: $showingAlert) {
+                                .alert("Nice job - your affirmation is on it way. \n\nYour're a great friend!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
@@ -419,12 +419,12 @@ struct RR20: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) just sent you encouragement", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) just sent you an Affirmation CareHearet", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Just sent you encouragement.", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                        print("Create a encouragement notification response code: ", response)
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "just sent you an Affirmation CareHearet", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        print("Create a affirmation notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)
                 }
