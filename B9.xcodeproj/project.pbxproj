@@ -446,7 +446,7 @@
 		2DDCD9812A8FEBC700B1040F /* RR17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR17.swift; path = BestFriends/HomeView/RR17.swift; sourceTree = SOURCE_ROOT; };
 		2DDCD9832A8FEBD900B1040F /* RR18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR18.swift; path = BestFriends/RR/RR18.swift; sourceTree = SOURCE_ROOT; };
 		2DDCD9852A8FEBEA00B1040F /* RR19.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR19.swift; path = BestFriends/HomeView/RR/RR19.swift; sourceTree = SOURCE_ROOT; };
-		2DDCD9872A8FEBFC00B1040F /* RR20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR20.swift; path = BestFriends/RR/RR20.swift; sourceTree = SOURCE_ROOT; };
+		2DDCD9872A8FEBFC00B1040F /* RR20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR20.swift; path = "BestFriends/MyRoomView/Send CareHearts/RR20.swift"; sourceTree = SOURCE_ROOT; };
 		2DDCD9892A8FF0ED00B1040F /* DrawingCareHearts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCareHearts.swift; sourceTree = "<group>"; };
 		2DDCD98B2A92A1D900B1040F /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 		2DDCD98D2A92A21900B1040F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -821,7 +821,6 @@
 			children = (
 				2DDCD9832A8FEBD900B1040F /* RR18.swift */,
 				2DDCD9852A8FEBEA00B1040F /* RR19.swift */,
-				2DDCD9872A8FEBFC00B1040F /* RR20.swift */,
 				2DB42CFF2AAE87B000E137C0 /* RR30.swift */,
 			);
 			path = RR;
@@ -1630,6 +1629,7 @@
 				2DB42CED2AAE874A00E137C0 /* RR21.swift */,
 				2DB42CF32AAE877600E137C0 /* RR24.swift */,
 				2DB42CF92AAE879200E137C0 /* RR27.swift */,
+				2DDCD9872A8FEBFC00B1040F /* RR20.swift */,
 				2DDCD9892A8FF0ED00B1040F /* DrawingCareHearts.swift */,
 				CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */,
 				2DDCD98B2A92A1D900B1040F /* ColorPicker.swift */,

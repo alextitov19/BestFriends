@@ -139,11 +139,35 @@ struct HugPreload: View {
                         
                         Spacer ()
                             .frame(height: 20)
+                  
+                    
+                    HStack {
                         
+                        VStack {
+                            
+                            
+                            NavigationLink(destination: RR20(user: user, friend: user, friends: friends, groups: groups), label: {
+                                HugCircle (color: Color .green, friendName: "send \n affirmation")
+                            })
+                            .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+                            .shadow(color: Color .pink, radius: 10, x: 10, y: 10)
+                            .opacity(0.5)
+                            
+                            
+//                            NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
+//                                HugCircle (color: ColorManager.orange5, friendName: "Digital \nHUGS")
+//                            })
+//                            .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
+//                            .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
+//                            //                    .opacity(0.6)
+//                            .opacity(0.5)
+                            
+                        }
+                    
                         
                     VStack {
                         
-                        HStack {
+//                        HStack {
                             
                             NavigationLink(destination: RR27(user: user, friend: user, friends: friends, groups: groups), label: {
                                 HugCircle (color: ColorManager .purple4, friendName: "You can \ndo it!")
@@ -257,6 +281,6 @@ struct HugPreload: View {
                 }
             }
         }
-//    }
+    
 
   
