@@ -577,31 +577,31 @@ struct MyRoomView: View {
                                             Spacer ()
                                                 .frame(width: 50)
                                            
-                                            ZStack {
-                                                                   
-                                                Image(systemName: "circle.fill")
-                                                    .resizable()
-                                                    .foregroundColor(Color.yellow)
-                                                    .frame(width: 60, height: 60)
-                                                   
-                                                    .shadow(color: .white, radius: 2, x: -2, y: 2)
-                                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                                    .opacity(0.8)
-                                                         
-                                                                    
-                                                                    
-                                                    NavigationLink( destination:  BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
-                                                            label: {
-                                                        Text("Smile \nVault")
-                                                            .fontWeight(.light)
-                                                            .foregroundColor(Color.black)
-                                                            .font(.system(size: 11))
-                                                          
-                                                            .opacity(0.85)
-                                                        
-                                                                        
-                                                                    })
-                                                                }
+//                                            ZStack {
+//                                                                   
+//                                                Image(systemName: "circle.fill")
+//                                                    .resizable()
+//                                                    .foregroundColor(Color.yellow)
+//                                                    .frame(width: 60, height: 60)
+//                                                   
+//                                                    .shadow(color: .white, radius: 2, x: -2, y: 2)
+//                                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                                    .opacity(0.8)
+//                                                         
+//                                                                    
+//                                                                    
+//                                                    NavigationLink( destination:  BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+//                                                            label: {
+//                                                        Text("Smile \nVault")
+//                                                            .fontWeight(.light)
+//                                                            .foregroundColor(Color.black)
+//                                                            .font(.system(size: 11))
+//                                                          
+//                                                            .opacity(0.85)
+//                                                        
+//                                                                        
+//                                                                    })
+//                                                                }
                                             
                                             Spacer ()
                                                 .frame(width: 50)

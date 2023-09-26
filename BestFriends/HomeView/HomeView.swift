@@ -174,7 +174,6 @@ struct HomeView: View {
                                     .scaledToFit()
                                     .frame(width: 80, height: 80)
                                     .foregroundColor(Color.pink)
-                                    .foregroundColor(Color.pink)
                                     .rotationEffect(.degrees(7))
                                     .glow(color: ColorManager.purple4, radius: 20)
                                 
@@ -219,14 +218,14 @@ struct HomeView: View {
                             
                         ZStack {
                                                
-                            Image(systemName: "circle.fill")
+                            Image(systemName: "circle")
                                 .resizable()
                                 .foregroundColor(Color.yellow)
                                 .frame(width: 60, height: 60)
-                               
-                                .shadow(color: .white, radius: 2, x: -2, y: 2)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                .opacity(0.8)
+                                .glow(color: ColorManager.purple4, radius: 20)
+//                                .shadow(color: .white, radius: 2, x: -2, y: 2)
+//                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                .opacity(0.99)
                                      
                                                 
                                                 
@@ -234,8 +233,8 @@ struct HomeView: View {
                                         label: {
                                     Text("Smile \nVault")
                                         .fontWeight(.light)
-                                        .foregroundColor(Color.black)
-                                        .font(.system(size: 11))
+                                        .foregroundColor(Color.white)
+                                        .font(.system(size: 13))
                                       
                                         .opacity(0.85)
                                     
