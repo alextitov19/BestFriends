@@ -168,8 +168,11 @@ struct HugPreload: View {
 //
                             
                             
-                            HStack {
-                                Text("")
+            HStack {
+                              
+                
+                
+                Text("")
                                     .font(.system(size: 15))
                                     .foregroundColor(Color.white)
                                     .fontWeight(.thin)
