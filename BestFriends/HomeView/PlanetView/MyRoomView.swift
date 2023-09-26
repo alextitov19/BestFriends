@@ -152,7 +152,7 @@ struct MyRoomView: View {
                         Image(systemName: "oval")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 75, height: 75)
+                            .frame(width: 90, height: 90)
                             .foregroundColor(ColorManager .grey2)
 //                            .blinking(duration: 4.0)
                             .glow(color: ColorManager.orange5, radius: 10)
@@ -163,7 +163,7 @@ struct MyRoomView: View {
                             destination:  RR20(user: user, friend: user, friends: friends, groups: groups),
                             label: {
                                 
-                                Text("send friend \naffirmation")
+                                Text("send \nCareHeart \naffirmation")
                                     .fontWeight(.regular)
                                     .frame(width: 60, height: 60)
                                     .foregroundColor(Color.white)
