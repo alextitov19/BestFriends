@@ -112,7 +112,7 @@ struct NotificationsView: View {
         @State private var thanksMentalActive = false
         @State private var canDoActive = false
         @State private var thanksDoActive = false
-        
+        @State private var affirmationActive = false
         
         
         
@@ -263,7 +263,9 @@ struct NotificationsView: View {
             
             // ***************************************************************
             
-            
+            NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $affirmationActive, label: {
+                EmptyView()
+            })
             }
                 
                
@@ -418,7 +420,8 @@ struct NotificationsView: View {
                     thanksCongratulationsActive = true
                     
                     
-                    
+                case "just sent you an Affirmation in Chat":
+                    affirmationActive = true
              
                     
                     
