@@ -217,36 +217,33 @@ struct HomeView: View {
                                 
                             }
                             
-                            
-                            ZStack {
-                                
-                                Image(systemName: "")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 60, height: 60)
-                                    .foregroundColor(Color.red)
-                                //                                    .blinking(duration: 2.0)
-                                    .glow(color: ColorManager.purple4, radius: 3)
-                                    .opacity(0.5)
-                                    .onTapGesture {
-                                        print("Clicked notification bell")
-                                        presentingIANs.toggle()
-                                    }
-                                
-                                NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
-                                ) { EmptyView() }
-                                
-                                
-                                Image(systemName: "bell")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 35, height: 35)
-                                    .foregroundColor(Color.white)
-                                    .opacity(0.6)
-                                    .glow(color: Color.white, radius: 1)
-                                    .blinking(duration: 2.0)
-                                
-                            }
+                        ZStack {
+                                               
+                            Image(systemName: "circle.fill")
+                                .resizable()
+                                .foregroundColor(Color.yellow)
+                                .frame(width: 60, height: 60)
+                               
+                                .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                .opacity(0.8)
+                                     
+                                                
+                                                
+                            NavigationLink( destination:  BestFriendMessages(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres),
+                                        label: {
+                                    Text("Smile \nVault")
+                                        .fontWeight(.light)
+                                        .foregroundColor(Color.black)
+                                        .font(.system(size: 11))
+                                      
+                                        .opacity(0.85)
+                                    
+                                                    
+                                                })
+                                            }
+                        
+                        
                         
                         
 //************************************ Bottom Icons **********************
@@ -254,7 +251,37 @@ struct HomeView: View {
                         Spacer()
 
                         Spacer()
-                            .frame(height: 390)
+                            .frame(height: 330)
+                        
+                        ZStack {
+                            
+                            Image(systemName: "")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 60, height: 60)
+                                .foregroundColor(Color.red)
+                            //                                    .blinking(duration: 2.0)
+                                .glow(color: ColorManager.purple4, radius: 3)
+                                .opacity(0.5)
+                                .onTapGesture {
+                                    print("Clicked notification bell")
+                                    presentingIANs.toggle()
+                                }
+                            
+                            NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
+                            ) { EmptyView() }
+                            
+                            
+                            Image(systemName: "bell")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 35, height: 35)
+                                .foregroundColor(Color.white)
+                                .opacity(0.6)
+                                .glow(color: Color.white, radius: 1)
+                                .blinking(duration: 2.0)
+                            
+                        }
                       
                         HStack {
                   
