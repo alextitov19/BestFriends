@@ -114,7 +114,7 @@ struct NotificationsView: View {
         @State private var thanksDoActive = false
         @State private var affirmationActive = false
         
-        
+        @State private var thanksAffirmationActive = false
         
         init(ian: InAppNotification, user: User, friends: [User]) {
             self.ian = ian
@@ -228,45 +228,53 @@ struct NotificationsView: View {
                 
                 //               ********************** Song goes to Chat - no need link **************************
                 
-        VStack {
-                
-                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $fixFightActive, label: {
-                    EmptyView()
-                })
-                
-                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $talkCouponActive, label: {
-                    EmptyView()
-                })
-                
-                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $needTalkActive, label: {
-                    EmptyView()
-                })
-                
-                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $newVibeActive, label: {
-                    EmptyView()
-                })
-              
-            
-                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksMentalActive, label: {
-                    EmptyView()
-                })
-            
-            
-                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksMentalActive, label: {
-                    EmptyView()
-                })
-            
-       
-                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksDoActive, label: {
-                    EmptyView()
-                })
-            
-            // ***************************************************************
-            
-            NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $affirmationActive, label: {
-                EmptyView()
-            })
-            }
+                VStack {
+                    
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $fixFightActive, label: {
+                        EmptyView()
+                    })
+                    
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $talkCouponActive, label: {
+                        EmptyView()
+                    })
+                    
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $needTalkActive, label: {
+                        EmptyView()
+                    })
+                    
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $newVibeActive, label: {
+                        EmptyView()
+                    })
+                    
+                    
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksMentalActive, label: {
+                        EmptyView()
+                    })
+                    
+                    
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksMentalActive, label: {
+                        EmptyView()
+                    })
+                    
+                    
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksDoActive, label: {
+                        EmptyView()
+                    })
+                    
+                    
+                    
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $affirmationActive, label: {
+                        EmptyView()
+                    })
+                    
+                    // ***************************************************************
+                    
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksAffirmationActive, label: {
+                        EmptyView()
+                    })
+                    
+                    
+                }
                 
                
                 
@@ -423,6 +431,10 @@ struct NotificationsView: View {
                 case "just sent you an Affirmation in Chat":
                     affirmationActive = true
              
+                    
+                case "just sent thanks for Affirmation in Chat":
+                    thanksAffirmationActive = true
+                    
                     
                     
                     
