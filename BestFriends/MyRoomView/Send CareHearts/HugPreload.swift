@@ -117,10 +117,10 @@ struct HugPreload: View {
                         
                         
                         NavigationLink(destination: RR20(user: user, friend: user, friends: friends, groups: groups), label: {
-                            HugCircle (color: Color .green, friendName: "send \n affirmation")
+                            HugCircle (color: ColorManager .grey1, friendName: "send \n affirmation")
                         })
                         .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-                        .shadow(color: Color .pink, radius: 10, x: 10, y: 10)
+                        .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
                         .opacity(0.5)
                         
                         
@@ -148,10 +148,10 @@ struct HugPreload: View {
                         VStack {
                             
                             NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
-                                HugCircle (color: ColorManager .grey3, friendName: "send a \nfist pump")
+                                HugCircle (color: ColorManager .purple4, friendName: "send a \nfist pump")
                             })
                             .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
-                            .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                            .shadow(color: Color.blue, radius: 10, x: 10, y: 10)
                             //                    .opacity(0.65)
                             .opacity(0.65)
                    
@@ -172,7 +172,7 @@ struct HugPreload: View {
                             //                        HStack {
                             
                             NavigationLink(destination: RR27(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: ColorManager .purple4, friendName: "You can \ndo it!")
+                                HugCircle (color: ColorManager .purple5, friendName: "You can \ndo it!")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                             .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
