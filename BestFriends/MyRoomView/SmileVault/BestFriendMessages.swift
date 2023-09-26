@@ -26,20 +26,7 @@ struct BestFriendMessages: View {
     
     var body: some View {
         ZStack {
-//            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-//                .ignoresSafeArea()
 
-//
-//            Color.black
-//                .ignoresSafeArea()
-//
-//            AdPlayerView(name: "Galaxy2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//                .onAppear(perform: createPlanets)
-//                .opacity(0.9)
-
-            
             Color.black
                 .opacity(0.9)
                 .ignoresSafeArea()
@@ -56,12 +43,11 @@ struct BestFriendMessages: View {
             
             
             ZStack {
-                
+            
 
                 
                 VStack {
-                    
-
+          
                   
                 }
             }
@@ -108,48 +94,52 @@ struct BestFriendMessages: View {
                         .opacity(0.4)
                     
                     
-                    Image(systemName: "star.fill")
-                        .resizable()
-                        .foregroundColor(Color.white)
-                        .frame(width: 100, height: 100)
-                        .blur(radius: 2)
-                        .shadow(color: .purple, radius: 30, x: 20, y: 25)
+//                    Image(systemName: "star.fill")
+//                        .resizable()
+//                        .foregroundColor(Color.white)
+//                        .frame(width: 100, height: 100)
+//                        .blur(radius: 2)
+//                        .shadow(color: .purple, radius: 30, x: 20, y: 25)
 //                        .opacity(0.9)
                     
                     VStack {
                         
-                        Text("Saving nice things")
+                        Text("Save best messages")
                             .font(.system(size: 23))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                   
                         
-                        Text("your friends said in Chat")
+                        Text("from CareHearts & Affirmatins")
                             .font(.system(size: 23))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                         
                         Spacer ()
-                            .frame(height: 44)
+                            .frame(height: 10)
                         
-                        Text("Tap \nhere")
+                        Text("(just long-top messages in Chat")
                             .font(.system(size: 17))
-                            .foregroundColor(ColorManager .grey4)
+                            .italic()
+                            .foregroundColor(ColorManager .grey1)
+                            .fontWeight(.regular)
+                            .multilineTextAlignment(.center)
+                        
+                        Spacer ()
+                            .frame(height: 50)
+                        
+                        Text("Tap to see \nmessages")
+                            .font(.system(size: 20))
+                            .foregroundColor(Color.white)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                     
                         
                         Spacer ()
-                            .frame(height: 57)
-                    
-                        Text("(long-tap nice messages in Chat to save here")
-                            .font(.system(size: 15))
-                            .italic()
-                            .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.regular)
-                            .multilineTextAlignment(.center)
+                            .frame(height: 1)
+                 
                         
 
                     }

@@ -84,6 +84,7 @@ struct MyRoomView: View {
                                         
                                         //                                        Image(systemName: "heart.fill")
                                         //                                            .resizable()
+                                     
                                         //                                            .foregroundColor(ColorManager .purple3)
                                         //                                            .frame(width: 60, height: 55)
                                         //                                            .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
@@ -113,6 +114,13 @@ struct MyRoomView: View {
                                     //                                        .shadow(color: .white, radius: 2, x: -2, y: 2)
                                     //                                    //                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                     
+                                    
+//              **********************************************************
+                                    
+                     
+                                    
+                                    
+//  *********************************************
                                 }
                             }
                         }
@@ -137,9 +145,35 @@ struct MyRoomView: View {
                     
                 }
                 
-                
-                
-                
+               
+                VStack {
+                    
+                    ZStack {
+                        Image(systemName: "oval")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 75, height: 75)
+                            .foregroundColor(ColorManager .grey2)
+                            .blinking(duration: 4.0)
+                            .glow(color: ColorManager.purple4, radius: 20)
+                        
+                        
+                        
+                        NavigationLink(
+                            destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                            label: {
+                                
+                                Text("send friend \naffirmation")
+                                    .fontWeight(.regular)
+                                    .frame(width: 60, height: 60)
+                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 11))
+                                
+                                    .blinking(duration: 4.0)
+                            })
+                    }
+                    
+                }
                 
                 //                ******************************* In-app notifications ******************
                 
@@ -578,28 +612,28 @@ struct MyRoomView: View {
                                                 .frame(width: 50)
                                            
 //                                            ZStack {
-//                                                                   
+//
 //                                                Image(systemName: "circle.fill")
 //                                                    .resizable()
 //                                                    .foregroundColor(Color.yellow)
 //                                                    .frame(width: 60, height: 60)
-//                                                   
+//
 //                                                    .shadow(color: .white, radius: 2, x: -2, y: 2)
 //                                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
 //                                                    .opacity(0.8)
-//                                                         
-//                                                                    
-//                                                                    
+//
+//
+//
 //                                                    NavigationLink( destination:  BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
 //                                                            label: {
 //                                                        Text("Smile \nVault")
 //                                                            .fontWeight(.light)
 //                                                            .foregroundColor(Color.black)
 //                                                            .font(.system(size: 11))
-//                                                          
+//
 //                                                            .opacity(0.85)
-//                                                        
-//                                                                        
+//
+//
 //                                                                    })
 //                                                                }
                                             
