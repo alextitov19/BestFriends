@@ -274,7 +274,7 @@ struct HomeView: View {
                             Image(systemName: "bell")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 35, height: 35)
+                                .frame(width: 40, height: 40)
                                 .foregroundColor(Color.white)
                                 .opacity(0.6)
                                 .glow(color: Color.white, radius: 1)
