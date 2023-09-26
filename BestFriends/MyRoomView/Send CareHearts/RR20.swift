@@ -214,7 +214,7 @@ struct RR20: View {
                                 TextField("", text: $customMessage)
                                     .placeholder(when: customMessage.isEmpty) {
                                         HStack {
-                                            Text("Lett'em know what like best in Chat")
+                                            Text("You are...")
                                                 .foregroundColor(Color.white)
                                                 .fontWeight(.thin)
                                             Spacer()
