@@ -150,7 +150,7 @@ struct HomeView: View {
                                     .frame(width: 90, height: 90)
                                     .foregroundColor(Color.green)
 //                                    .blinking(duration: 2.0)
-                                    .glow(color: ColorManager.purple4, radius: 20)
+                                    .glow(color: ColorManager.grey2, radius: 20)
                                 
                                 
                                 
