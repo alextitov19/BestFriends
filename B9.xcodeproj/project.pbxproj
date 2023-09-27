@@ -852,6 +852,7 @@
 				2DB42CFB2AAE879C00E137C0 /* RR28.swift */,
 				2DB42CFD2AAE87A800E137C0 /* RR29.swift */,
 				2DB42CFF2AAE87B000E137C0 /* RR30.swift */,
+				2DB42CF72AAE878A00E137C0 /* RR26.swift */,
 			);
 			path = ReceivedCareHearts;
 			sourceTree = "<group>";
@@ -1077,7 +1078,6 @@
 				CF0911842848328F00CB0AF0 /* HideChat.swift */,
 				7A2C215C28050BCD009362CF /* ChatBubble.swift */,
 				CF65042F28A438970092EEB9 /* ChatReactions.swift */,
-				2DB42CF72AAE878A00E137C0 /* RR26.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";

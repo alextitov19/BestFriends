@@ -1,23 +1,24 @@
 //
-//  RR20.swift
+//  RR26.swift
 //  BestFriends
 //
-//  Created by Zhengxu Wang on 8/18/23.
+//  Created by Zhengxu Wang on 9/10/23.
 //
 
 //import SwiftUI
 //
-//struct RR20: View {
+//struct RR26: View {
 //    var body: some View {
 //        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
 //    }
 //}
 //
-//struct RR20_Previews: PreviewProvider {
+//struct RR26_Previews: PreviewProvider {
 //    static var previews: some View {
-//        RR20()
+//        RR26()
 //    }
 //}
+//
 
 
 import Foundation
@@ -27,7 +28,7 @@ import AVKit
 import Combine
 
 
-struct RR20: View {
+struct RR26: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -163,18 +164,34 @@ struct RR20: View {
                             Spacer()
                                 .frame(height: 7)
                             
-                            Text("Friendship")
-                                .font(.system(size: 25, weight: .light))
+                            Text("Friend sent message")
+                                .font(.system(size: 20, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
-                          
-                            Text("Strengths")
-                                .font(.system(size: 25, weight: .light))
+                            
+                         
+                            
+                           
+                           
+                            Text("with your strongest")
+                                .font(.system(size: 20, weight: .light))
+                                .foregroundColor(ColorManager .grey1)
+                                    .multilineTextAlignment(.center)
+                            
+                            
+                            Text("frindship quality")
+                                .font(.system(size: 20, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                             Spacer()
                                 .frame(height: 10)
 //
+                            Text("Check Chat")
+                                .font(.system(size: 15, weight: .light))
+                                .italic()
+                                .foregroundColor(ColorManager .grey1)
+                                    .multilineTextAlignment(.center)
+                            
 //                            NavigationLink(
 //                                destination:  PhotoPopView(user: user, friends: friends),
 //                                label: {
@@ -194,17 +211,20 @@ struct RR20: View {
                     }
                 }
                 
+            
+                Spacer()
+                    .frame(height: 20)
                 
-                Text("Tell friend what you like ")
-                    .font(.system(size: 25, weight: .light))
+                Text("Say something back?")
+                    .font(.system(size: 20, weight: .light))
                     .foregroundColor(ColorManager .grey1)
                     .multilineTextAlignment(.center)
                 
-                
-                Text("most about them")
-                    .font(.system(size: 25, weight: .light))
-                    .foregroundColor(ColorManager .grey1)
-                    .multilineTextAlignment(.center)
+//
+//                Text("most about them")
+//                    .font(.system(size: 25, weight: .light))
+//                    .foregroundColor(ColorManager .grey1)
+//                    .multilineTextAlignment(.center)
                 
 
 //                **************************************
@@ -250,7 +270,7 @@ struct RR20: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("(send push notification)")
+                    Text("(say thanks)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
@@ -417,12 +437,12 @@ struct RR20: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) just sent you an Affirmation in Chat", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) said thanks for the kind words", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "just sent you an Affirmation in Chat", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                        print("Create a affirmation notification response code: ", response)
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "said thanks for the kind words", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        print("Create a thanks affirmation notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)
                 }
