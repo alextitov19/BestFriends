@@ -160,10 +160,10 @@ struct MyRoomView: View {
                         
                         
                         NavigationLink(
-                            destination:  RR20(user: user, friend: user, friends: friends, groups: groups),
+                            destination:   FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
                                 
-                                Text("send \nCareHeart \naffirmation")
+                                Text("Walk \nThrough")
                                     .fontWeight(.regular)
                                     .frame(width: 60, height: 60)
                                     .foregroundColor(Color.white)
