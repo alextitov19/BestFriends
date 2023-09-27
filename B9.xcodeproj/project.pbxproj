@@ -1077,7 +1077,6 @@
 				CF0911842848328F00CB0AF0 /* HideChat.swift */,
 				7A2C215C28050BCD009362CF /* ChatBubble.swift */,
 				CF65042F28A438970092EEB9 /* ChatReactions.swift */,
-				2DB42CF52AAE878100E137C0 /* RR25.swift */,
 				2DB42CF72AAE878A00E137C0 /* RR26.swift */,
 			);
 			path = Chat;
@@ -1630,6 +1629,7 @@
 				2DB42CF32AAE877600E137C0 /* RR24.swift */,
 				2DB42CF92AAE879200E137C0 /* RR27.swift */,
 				2DDCD9872A8FEBFC00B1040F /* RR20.swift */,
+				2DB42CF52AAE878100E137C0 /* RR25.swift */,
 				2DDCD9892A8FF0ED00B1040F /* DrawingCareHearts.swift */,
 				CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */,
 				2DDCD98B2A92A1D900B1040F /* ColorPicker.swift */,

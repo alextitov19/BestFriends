@@ -130,17 +130,17 @@ struct PhotoPopFGPreload: View {
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
                 
-                Text("to grab an ice cream, a burger or")
+                Text("to grab an ice cream, a burger...")
                     .font(.system(size: 23))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
-                
-                Text("something to talk after an argument")
-                    .font(.system(size: 23))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-                    .multilineTextAlignment(.center)
+//
+//                Text("")
+//                    .font(.system(size: 23))
+//                    .fontWeight(.light)
+//                    .foregroundColor(Color.white)
+//                    .multilineTextAlignment(.center)
   
                         
                         ZStack(alignment: .bottom) {
@@ -150,7 +150,7 @@ struct PhotoPopFGPreload: View {
                                 TextField("", text: $customMessage)
                                     .placeholder(when: customMessage.isEmpty) {
                                         HStack {
-                                            Text("Type your Meetup Coupon here...")
+                                            Text("Type your Coupon here...")
                                                 .foregroundColor(Color.white)
                                                 .fontWeight(.thin)
                                                 .background(Color.black)
@@ -163,12 +163,12 @@ struct PhotoPopFGPreload: View {
                                     .submitLabel(.done)
                                     .onReceive(Just(customMessage)) { _ in limitText(65) }
                                     .padding(.top, 20)
-                                    .padding(.horizontal, 65)
+                                    .padding(.horizontal, 40)
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 10)
                                             .stroke(Color.purple)
                                             .frame(height: 40)
-                                            .padding(.horizontal, 60)
+                                            .padding(.horizontal, 30)
                                     )
                                     .padding(.bottom, 5)
                                 

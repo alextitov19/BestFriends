@@ -142,7 +142,7 @@ struct AtmosphereMain2: View {
                             showingAlert = true
                         }) {
 
-                            Text("School / Work Issues")
+                            Text("Bad Day!")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -159,64 +159,98 @@ struct AtmosphereMain2: View {
                             })
                         }
                         
-                 
-
-                        Spacer()
-                            .frame(height: 12)
-
-                      Button(action: {
-                          mood = 2
-                          showingAlert = true
-                        }) {
-
-                           Text("Friend / Relationship \nDrama")
-                                .font(.system(size: 10))
-                                .foregroundColor(Color.black)
-                        }
-                        .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 2 ? Color(.systemCyan) : ColorManager .grey2)
-                        .cornerRadius(7)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        .alert("We'll let your friends know your day just changed.", isPresented: $showingAlert) {
-                            Button("OK", role: .cancel, action: {
-                                showingAlert = false
+//    ************************************************
+                        
+                  
+                            
+                            
+                            //         **********************************************************
+                            
+                            Spacer()
+                                .frame(height: 12)
+                        
+                        HStack {
+                            
+                            Button(action: {
+                                mood = 2
+                                showingAlert = true
+                            }) {
                                 
-//                                This is always difficult to deal with. Hopefully, the [Friend Drama] section can help you.
-                            })
+                                Text("Relationship /Friend \nFamily Drama")
+                                    .font(.system(size: 10))
+                                    .foregroundColor(Color.black)
+                            }
+                            .frame(width: 140, height: 30, alignment: .center)
+                            .background(mood == 2 ? Color(.systemCyan) : ColorManager .grey2)
+                            .cornerRadius(7)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            .alert("We'll let your friends know your day just changed.", isPresented: $showingAlert) {
+                                Button("OK", role: .cancel, action: {
+                                    showingAlert = false
+                                    
+                                    //                                This is always difficult to deal with. Hopefully, the [Friend Drama] section can help you.
+                                })
+                            }
+                            
+                            VStack {
+                                
+                                
+                                
+                                NavigationLink( destination:  Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+                                                label: {
+                                    Text("Fix")
+                                        .fontWeight(.bold)
+                                        .frame(width: 30, height: 30)
+                                        .foregroundColor(Color.black)
+                                        .font(.system(size: 16))
+                                        .background(Color.orange)
+                                        .glow(color: ColorManager.purple1, radius: 1)
+                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                        .opacity(0.9)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                        .opacity(0.6)
+                                    //                                            .blinking()
+                                    
+                                    
+                                })
+                                
+                            }
+                            
+                            
+                            
+                            
+                            Spacer()
+                                .frame(height: 12)
+                            
+//                            Button(action: {
+//                                mood = 3
+//                                showingAlert = true
+//                            }) {
+//
+//                                Text("Family Drama")
+//                                    .font(.system(size: 10))
+//                                    .foregroundColor(Color.black)
+//                            }
+//                            .frame(width: 140, height: 30, alignment: .center)
+//                            .background(mood == 3 ? Color(.systemCyan) : ColorManager .grey2)
+//                            .cornerRadius(7)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            .alert("We'll let your friends know your day just changed.", isPresented: $showingAlert) {
+//                                Button("OK", role: .cancel, action: {
+//                                    showingAlert = false
+//
+//                                    //                                Try to stay calm. You can do this.
+//                                })
+//                            }
+                            
                         }
-                        
-
-                      Spacer()
-                            .frame(height: 12)
-
-                        Button(action: {
-                            mood = 3
-                            showingAlert = true
-                        }) {
-
-                            Text("Family Drama")
-                                .font(.system(size: 10))
-                                .foregroundColor(Color.black)
-                        }
-                        .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 3 ? Color(.systemCyan) : ColorManager .grey2)
-                        .cornerRadius(7)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        .alert("We'll let your friends know your day just changed.", isPresented: $showingAlert) {
-                            Button("OK", role: .cancel, action: {
-                                showingAlert = false
-
-//                                Try to stay calm. You can do this.
-                    })
-                }
-                        
-                        
                         Spacer()
                               .frame(height: 12)
                    
                     }
-                    Spacer ()
-                        .frame(width: 33)
+//                    Spacer ()
+//                        .frame(width: 10)
              
                     VStack {
                    

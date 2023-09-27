@@ -196,16 +196,37 @@ struct HugPreload: View {
                         
                         HStack {
                             
+                            ZStack {
+                                
+                                Image(systemName: "heart.fill")
+                                    .resizable()
+                                    .foregroundColor(Color.purple)
+                                    .frame(width: 150, height: 110)
+                                    .rotationEffect(.degrees(7))
+                                    .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+                                    .opacity(0.5)
+                                    .blinking(duration: 2.0)
+                                
+                                
+                                NavigationLink(destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups), label: {
+                                    
+                                    Text("send Meetup \nCoupon")
+                                        .fontWeight(.thin)
+                                        .foregroundColor(Color.black)
+                                        .font(.system(size: 20))
+                                        .multilineTextAlignment(.center)
+                                        .rotationEffect(.degrees(-7))
+                                        .opacity(1.0)
+                                        .blinking(duration: 2.0)
+                                    
+                                    
+                                }
+                                )}
                             
-                            
-                            Text("")
-                                .font(.system(size: 15))
-                                .foregroundColor(Color.white)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
+
                             
                             Spacer ()
-                                .frame(width: 200)
+                                .frame(width: 60)
                             
                             ZStack {
                                 
