@@ -144,13 +144,12 @@ struct HomeView: View {
                                 .frame(width: 20)
                             
                             ZStack {
-                                Image(systemName: "oval.fill")
+                                Image(systemName: "oval")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 90, height: 90)
-                                    .foregroundColor(Color.green)
-//                                    .blinking(duration: 2.0)
-                                    .glow(color: ColorManager.grey2, radius: 20)
+                                    .frame(width: 78, height: 78)
+                                    .foregroundColor(Color.orange)
+                                    .glow(color: ColorManager.purple4, radius: 20)
                                 
                                 
                                 
@@ -158,11 +157,11 @@ struct HomeView: View {
                                     destination:  AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                     label: {
                                         
-                                        Text("my day \nChanged")
+                                        Text("My day \njust \nChanged")
                                             .fontWeight(.bold)
                                             .frame(width: 60, height: 60)
                                             .foregroundColor(Color.white)
-                                            .font(.system(size: 13))
+                                            .font(.system(size: 11))
                                         
                                             .blinking(duration: 2.0)
                                     })
