@@ -91,7 +91,7 @@ struct CH10: View {
                     .opacity(0.7)
                     
                     NavigationLink(destination: RR13(user: user, friends: friends, groups: groups), label: {
-                        HugCircle (color: ColorManager .orange2, friendName: "Look! You got \n Love Hearts")
+                        HugCircle (color: Color.pink, friendName: "Look! You got \n Love Hearts")
                     })
                     .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                     .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
@@ -114,7 +114,7 @@ struct CH10: View {
                     
                     
                     NavigationLink(destination: CH7(user: user, friend: user, friends: friends, groups: groups), label: {
-                        HugCircle (color: ColorManager .grey1, friendName: "Song \nmatching \nyour Day!")
+                        HugCircle (color: ColorManager .orange5, friendName: "Song \nmatching \nyour Day!")
                     })
                     .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                     .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
