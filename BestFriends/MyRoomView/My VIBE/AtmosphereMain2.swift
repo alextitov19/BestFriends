@@ -176,7 +176,7 @@ struct AtmosphereMain2: View {
                                 showingAlert = true
                             }) {
                                 
-                                Text("Relationship /Friend \nFamily Drama")
+                                Text("Relationship, Friend \nor Family Drama")
                                     .font(.system(size: 10))
                                     .foregroundColor(Color.black)
                             }
@@ -201,9 +201,9 @@ struct AtmosphereMain2: View {
                                     Text("Fix")
                                         .fontWeight(.bold)
                                         .frame(width: 30, height: 30)
-                                        .foregroundColor(Color.black)
+                                        .foregroundColor(Color.white)
                                         .font(.system(size: 16))
-                                        .background(Color.orange)
+                                        .background(ColorManager .purple3)
                                         .glow(color: ColorManager.purple1, radius: 1)
                                         .shadow(color: .white, radius: 3, x: -4, y: 4)
                                         .opacity(0.9)
@@ -349,12 +349,12 @@ struct AtmosphereMain2: View {
                             mood = 7
                         }) {
 
-                            Text("Wow, excitging news!")
+                            Text("Wow, Excitging NEWS!")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 7 ? Color.green : ColorManager .pmbc_green)
+                        .background(mood == 7 ? Color.green : ColorManager .grey2)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
@@ -382,7 +382,7 @@ struct AtmosphereMain2: View {
 //                            Image("smileIcon2")
                         }
                         .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 8 ? Color(.systemYellow) : Color.orange)
+                        .background(mood == 8 ? Color(.systemYellow) : ColorManager .grey2)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         .alert("We'll let your friends know.", isPresented: $showingAlert) {
@@ -617,7 +617,7 @@ struct AtmosphereMain2: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("We just sent your friend(s) a notificaion. \nLetting them know your 'Day' changed.", isPresented: $showingAlert) {
+                                .alert("We just sent your friend(s) a notificaion. \n\nLetting them know your 'Day' changed.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
