@@ -147,7 +147,7 @@ struct HomeView: View {
                                 Image(systemName: "oval.fill")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 85, height: 85)
+                                    .frame(width: 90, height: 90)
                                     .foregroundColor(Color.green)
 //                                    .blinking(duration: 2.0)
                                     .glow(color: ColorManager.purple4, radius: 20)
@@ -502,7 +502,7 @@ struct HomeView: View {
                         NavigationLink(destination: MyRoomView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups), label: {
                             PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
                                 .scaledToFit()
-                                .frame(width: 140, height: 140)
+                                .frame(width: 120, height: 120)
                                 .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 11)
                                 .opacity(0.3)
                                 .padding()
