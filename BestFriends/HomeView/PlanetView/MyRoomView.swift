@@ -149,11 +149,11 @@ struct MyRoomView: View {
                 VStack {
                     
                     ZStack {
-                        Image(systemName: "oval")
+                        Image(systemName: "circle.fill")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 90, height: 90)
-                            .foregroundColor(ColorManager .grey2)
+                            .foregroundColor(Color.orange)
 //                            .blinking(duration: 4.0)
                             .glow(color: ColorManager.orange5, radius: 10)
                         
@@ -167,9 +167,9 @@ struct MyRoomView: View {
                                     .fontWeight(.regular)
                                     .frame(width: 60, height: 60)
                                     .foregroundColor(Color.white)
-                                    .font(.system(size: 11))
+                                    .font(.system(size: 15))
                                 
-                                    .blinking(duration: 4.0)
+//                                    .blinking(duration: 4.0)
                             })
                     }
                     
