@@ -142,11 +142,11 @@ struct AtmosphereMain2: View {
                             showingAlert = true
                         }) {
 
-                            Text("Bad Day - Need CareHearts!")
+                            Text("Bad Day - requesting CareHearts")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
-                        .frame(width: 220, height: 30, alignment: .center)
+                        .frame(width: 185, height: 30, alignment: .center)
                         .background(mood == 1 ? Color(.systemCyan) : ColorManager .grey2)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -169,7 +169,7 @@ struct AtmosphereMain2: View {
                             Spacer()
                                 .frame(height: 12)
                         
-                        HStack {
+//                        HStack {
                             
                             Button(action: {
                                 mood = 2
@@ -215,13 +215,14 @@ struct AtmosphereMain2: View {
                                     
                                 })
                                 
-                            }
+//                            }
                             
-                            
+                                Spacer()
+                                    .frame(width: 30)
                             
                             
                             Spacer()
-                                .frame(height: 12)
+                                .frame(height: 1)
                             
 //                            Button(action: {
 //                                mood = 3
