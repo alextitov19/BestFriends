@@ -154,38 +154,89 @@ struct Step4_NuclearOption: View {
 //
 //                            })
                             
-                                Spacer ()
-                                    .frame(height: 15)
-                            
-                    HStack {
-                            ZStack {
-                                
+
+                    VStack {
+                     
+                    
+                        
+                        VStack {
+                           
+                                ZStack {
                                     
+                                    Image(systemName: "circle.fill")
+                                        .resizable()
+                                        .foregroundColor(Color.orange)
+                                        .frame(width: 100, height: 100)
+                                        .rotationEffect(.degrees(7))
+                                        .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                        .opacity(0.9)
+                                
                                     Link(destination: URL(string: "https://socialtechlabs.com/understanding-the-why/")!) {
                                         
-                                        Text("Should I keep \n this relationship?")
-                                            .fontWeight(.regular)
-                                            .frame(width: 180, height: 50)
-                                            .foregroundColor(Color.green)
+                                        Text("Keep \nrelationship?")
+                                            .fontWeight(.light)
+                                            .foregroundColor(Color.white)
                                             .font(.system(size: 15))
-                                            .background(ColorManager .grey4)
-                                            .cornerRadius(10)
-                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//                                            .blinking(duration: 2.0)
+//                                            .rotationEffect(.degrees(-7))
+                                            .opacity(0.85)
+                                        
                                     }
-                                
+                                    
+                              
+                        VStack {
                             
+                            HStack {
+                           
+                            Image(systemName: "heart")
+                                .resizable()
+                                .foregroundColor(Color.blue)
+                                .frame(width: 10, height: 10)
+                                .rotationEffect(.degrees(7))
+                                .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                .opacity(0.5)
+                            
+                                Spacer ()
+                                    .frame(width: 300)
+
+                               
+                                ZStack {
                                     
-                                    Spacer ()
-                                        .frame(width: 20)
+                                    Image(systemName: "heart")
+                                        .resizable()
+                                        .foregroundColor(Color.orange)
+                                        .frame(width: 80, height: 80)
+                                        .rotationEffect(.degrees(7))
+                                        .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                        .opacity(0.9)
                                     
+                                    
+                                    NavigationLink( destination: CH15(user: user, friends: friends),
+                                                    label: {
+                                        Text("Hurt \nFeelings?")
+                                            .fontWeight(.light)
+                                            .foregroundColor(Color.white)
+                                            .font(.system(size: 15))
+                                            .rotationEffect(.degrees(7))
+                                            .blinking(duration: 2.0)
+                                            .opacity(0.85)
+                                        
+                                    })
+                                    
+                                }
+                                    }
+                                }
+                                
+                            }
 
                                 }
                                 
                             }
              
                         }
-                    }
+  }
 
 
 

@@ -142,11 +142,11 @@ struct AtmosphereMain2: View {
                             showingAlert = true
                         }) {
 
-                            Text("Bad Day!")
+                            Text("Bad Day - Need CareHearts!")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
-                        .frame(width: 140, height: 30, alignment: .center)
+                        .frame(width: 220, height: 30, alignment: .center)
                         .background(mood == 1 ? Color(.systemCyan) : ColorManager .grey2)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -493,21 +493,13 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 20)
                         
-                        Text("Even if your not ready to talk,")
-                            .font(.system(size: 17))
+                        Text("(alert friends)")
+                            .font(.system(size: 15))
                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
-
-                        Text("tell a friend")
-                            .font(.system(size: 17))
-                           .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                        
-                        
+               
                         
                         
                         
@@ -657,26 +649,34 @@ struct AtmosphereMain2: View {
                             
                     
                             
-                            Text("So they can send emotional support")
+                            Text("Bad day?")
+                                .font(.system(size: 25))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                            
+                            Text("Even if not ready to talk about it yet")
                                 .font(.system(size: 20))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
                             
-                            Text("in the form of CareHearts")
+                            
+                            Text("alert friends so they can send emotional")
                                 .font(.system(size: 20))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
                             
-                            
-                            Text("until you're ready to talk about it")
+                                      Text("support via CareHearts")
                                 .font(.system(size: 20))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
-                            
-                        }
+                                      
+                                      
+                                      
+                                      }
                         
                         Spacer()
                             .frame(height: 100)

@@ -113,7 +113,7 @@ struct HomeView: View {
                                 Image(systemName: "heart")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 80, height: 80)
+                                    .frame(width: 60, height: 60)
                                     .foregroundColor(Color.pink)
                                     .glow(color: ColorManager.purple4, radius: 20)
                                     .rotationEffect(.degrees(-7))
@@ -129,7 +129,7 @@ struct HomeView: View {
                                             .fontWeight(.regular)
                                             .frame(width: 60, height: 60)
                                             .foregroundColor(Color.white)
-                                            .font(.system(size: 11))
+                                            .font(.system(size: 8))
                                             .rotationEffect(.degrees(-7))
 //                                            .blinking(duration: 2.0)
                                         
@@ -140,14 +140,16 @@ struct HomeView: View {
                                 
                             }
                             
+                            Spacer()
+                                .frame(width: 20)
                             
                             ZStack {
-                                Image(systemName: "oval")
+                                Image(systemName: "oval.fill")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 75, height: 75)
-                                    .foregroundColor(ColorManager .grey2)
-                                    .blinking(duration: 2.0)
+                                    .frame(width: 85, height: 85)
+                                    .foregroundColor(Color.green)
+//                                    .blinking(duration: 2.0)
                                     .glow(color: ColorManager.purple4, radius: 20)
                                 
                                 
@@ -156,23 +158,24 @@ struct HomeView: View {
                                     destination:  AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                     label: {
                                         
-                                        Text("my day \nChanged!")
-                                            .fontWeight(.regular)
+                                        Text("my day \nChanged")
+                                            .fontWeight(.bold)
                                             .frame(width: 60, height: 60)
                                             .foregroundColor(Color.white)
-                                            .font(.system(size: 11))
+                                            .font(.system(size: 13))
                                         
                                             .blinking(duration: 2.0)
                                     })
                             }
                             
-                            
+                            Spacer()
+                                .frame(width: 20)
                             
                             ZStack {
                                 Image(systemName: "heart")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 80, height: 80)
+                                    .frame(width: 60, height: 60)
                                     .foregroundColor(Color.pink)
                                     .rotationEffect(.degrees(7))
                                     .glow(color: ColorManager.purple4, radius: 20)
@@ -187,7 +190,7 @@ struct HomeView: View {
                                             .fontWeight(.regular)
                                             .frame(width: 60, height: 60)
                                             .foregroundColor(Color.white)
-                                            .font(.system(size: 11))
+                                            .font(.system(size: 8))
                                             .rotationEffect(.degrees(7))
 //                                            .blinking(duration: 2.0)
                                     })
@@ -221,7 +224,7 @@ struct HomeView: View {
                             Image(systemName: "circle")
                                 .resizable()
                                 .foregroundColor(Color.yellow)
-                                .frame(width: 60, height: 60)
+                                .frame(width: 55, height: 55)
                                 .glow(color: ColorManager.purple4, radius: 20)
 //                                .shadow(color: .white, radius: 2, x: -2, y: 2)
 //                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
@@ -234,7 +237,7 @@ struct HomeView: View {
                                     Text("Smile \nVault")
                                         .fontWeight(.light)
                                         .foregroundColor(Color.white)
-                                        .font(.system(size: 13))
+                                        .font(.system(size: 10))
                                       
                                         .opacity(0.85)
                                     
@@ -448,13 +451,13 @@ struct HomeView: View {
                                     .blinking(duration: 2.0)
                                 
                    
-                                NavigationLink( destination:  FH2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                                NavigationLink( destination:  Step4_NuclearOption(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
                                                 label: {
-                                    Text("App \nDemo")
+                                    Text("Fix \nFight")
                                         .fontWeight(.medium)
                                         .frame(width: 60, height: 60)
                                         .foregroundColor(Color.white)
-                                        .font(.system(size: 12))
+                                        .font(.system(size: 10))
                                         .blinking(duration: 2.0)
                                     
                             
