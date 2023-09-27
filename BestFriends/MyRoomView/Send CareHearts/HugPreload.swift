@@ -212,10 +212,10 @@ struct HugPreload: View {
                                     
                                     Text("Send Meetup \ncoupon")
                                         .fontWeight(.thin)
-                                        .foregroundColor(Color.black)
+                                        .foregroundColor(Color.white)
                                         .font(.system(size: 20))
                                         .multilineTextAlignment(.center)
-                                        .rotationEffect(.degrees(-7))
+                                        .rotationEffect(.degrees(7))
                                         .opacity(1.0)
                                         .blinking(duration: 2.0)
                                     
@@ -244,7 +244,7 @@ struct HugPreload: View {
                                     
                                     Text("Customizing \nCareHearts \n(in beta)")
                                         .fontWeight(.thin)
-                                        .foregroundColor(Color.black)
+                                        .foregroundColor(Color.white)
                                         .font(.system(size: 20))
                                         .multilineTextAlignment(.center)
                                         .rotationEffect(.degrees(-7))
