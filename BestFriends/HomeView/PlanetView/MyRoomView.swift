@@ -531,17 +531,17 @@ struct MyRoomView: View {
                                     
                                     ZStack {
                                         
-                                        NavigationLink(
-                                            destination:  CH11(),
-                                            label: {
-                                                
-                                                Image("Group 56")
-                                                    .resizable()
-                                                    .frame(width: 335, height: 180)
-                                                    .cornerRadius(20)
-                                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                                    .opacity(0.6)
-                                            })
+//                                        NavigationLink(
+//                                            destination:  CH11(),
+//                                            label: {
+//
+//                                                Image("Group 56")
+//                                                    .resizable()
+//                                                    .frame(width: 335, height: 180)
+//                                                    .cornerRadius(20)
+//                                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                                    .opacity(0.6)
+//                                            })
                                         
                                      
                                         
@@ -551,24 +551,24 @@ struct MyRoomView: View {
                                             Spacer()
                                                 .frame(height: 85)
                                             
-                                            NavigationLink( destination:  Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
-                                                            label: {
-                                                Text("Fixing Fights")
-                                                    .fontWeight(.bold)
-                                                    .frame(width: 300, height: 42)
-                                                    .foregroundColor(Color.black)
-                                                    .font(.system(size: 16))
-                                                    .background(Color.orange)
-                                                    .glow(color: ColorManager.purple1, radius: 1)
-                                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                                    .opacity(0.9)
-                                                    .cornerRadius(15)
-                                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                                    .opacity(0.6)
+//                                            NavigationLink( destination:  Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+//                                                            label: {
+//                                                Text("Fixing Fights")
+//                                                    .fontWeight(.bold)
+//                                                    .frame(width: 300, height: 42)
+//                                                    .foregroundColor(Color.black)
+//                                                    .font(.system(size: 16))
+//                                                    .background(Color.orange)
+//                                                    .glow(color: ColorManager.purple1, radius: 1)
+//                                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                                    .opacity(0.9)
+//                                                    .cornerRadius(15)
+//                                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                                    .opacity(0.6)
                                                 //                                            .blinking()
                                                 
                                                 
-                                            })
+//                                            })
                                     
                                    
                                     
@@ -585,27 +585,27 @@ struct MyRoomView: View {
                                             // ***************************** Pic of the Day ********** After Aug 22 subit to Apple ******
                                             ZStack {
                                                 
-                                                Image(systemName: "heart.fill")
-                                                    .resizable()
-                                                    .foregroundColor(Color.orange)
-                                                    .frame(width: 80, height: 60)
-                                                    .rotationEffect(.degrees(-7))
-                                                    .shadow(color: .white, radius: 2, x: -2, y: 2)
-                                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                                    .opacity(0.7)
-                                                
-                                                
-                                                NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
-                                                                label: {
-                                                    Text("Meetup \nCoupon")
-                                                        .fontWeight(.light)
-                                                        .foregroundColor(Color.black)
-                                                        .font(.system(size: 10))
-                                                        .rotationEffect(.degrees(-7))
-                                                        .opacity(1.0)
-                                                    
-                                                    
-                                                })
+//                                                Image(systemName: "heart.fill")
+//                                                    .resizable()
+//                                                    .foregroundColor(Color.orange)
+//                                                    .frame(width: 80, height: 60)
+//                                                    .rotationEffect(.degrees(-7))
+//                                                    .shadow(color: .white, radius: 2, x: -2, y: 2)
+//                                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                                    .opacity(0.7)
+//
+//
+//                                                NavigationLink( destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
+//                                                                label: {
+//                                                    Text("Meetup \nCoupon")
+//                                                        .fontWeight(.light)
+//                                                        .foregroundColor(Color.black)
+//                                                        .font(.system(size: 10))
+//                                                        .rotationEffect(.degrees(-7))
+//                                                        .opacity(1.0)
+//
+//
+//                                                })
                                             }
                                             
                                             Spacer ()
@@ -617,27 +617,27 @@ struct MyRoomView: View {
                                             
                                             //
                                             ZStack {
-                                                
-                                                Image(systemName: "heart.fill")
-                                                    .resizable()
-                                                    .foregroundColor(Color.blue)
-                                                    .frame(width: 80, height: 60)
-                                                    .rotationEffect(.degrees(7))
-                                                    .shadow(color: .white, radius: 2, x: -2, y: 2)
-                                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                                    .opacity(0.6)
-                                                
-                                                
-                                                NavigationLink( destination: CH15(user: user, friends: friends),
-                                                                label: {
-                                                    Text("Hurt \nFeelings")
-                                                        .fontWeight(.light)
-                                                        .foregroundColor(Color.black)
-                                                        .font(.system(size: 10))
-                                                        .rotationEffect(.degrees(7))
-                                                        .opacity(0.85)
-                                                    
-                                                })
+//
+//                                                Image(systemName: "heart.fill")
+//                                                    .resizable()
+//                                                    .foregroundColor(Color.blue)
+//                                                    .frame(width: 80, height: 60)
+//                                                    .rotationEffect(.degrees(7))
+//                                                    .shadow(color: .white, radius: 2, x: -2, y: 2)
+//                                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                                    .opacity(0.6)
+//
+//
+//                                                NavigationLink( destination: CH15(user: user, friends: friends),
+//                                                                label: {
+//                                                    Text("Hurt \nFeelings")
+//                                                        .fontWeight(.light)
+//                                                        .foregroundColor(Color.black)
+//                                                        .font(.system(size: 10))
+//                                                        .rotationEffect(.degrees(7))
+//                                                        .opacity(0.85)
+//
+//                                                })
                                                 
                                             }
                                         }
@@ -666,15 +666,15 @@ struct MyRoomView: View {
                                         Text("Leaving \nSafe-zone")
                                             .fontWeight(.bold)
                                             .frame(width: 300, height: 42)
-                                            .foregroundColor(Color.black)
+                                            .foregroundColor(Color.white)
                                             .font(.system(size: 16))
-                                            .background(Color.purple)
+                                            .background(Color.orange)
                                             .glow(color: ColorManager.purple1, radius: 1)
                                             .shadow(color: .white, radius: 3, x: -4, y: 4)
                                             .opacity(0.75)
                                             .cornerRadius(15)
                                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                            .opacity(0.7)
+                                            .opacity(0.99)
                                     })
                                     
                                     
@@ -683,7 +683,7 @@ struct MyRoomView: View {
                                             
                                             Image(systemName: "heart.fill")
                                                 .resizable()
-                                                .foregroundColor(Color.purple)
+                                                .foregroundColor(ColorManager.orange3)
                                                 .frame(width: 80, height: 60)
                                                 .rotationEffect(.degrees(-7))
                                                 .shadow(color: .white, radius: 2, x: -2, y: 2)
@@ -711,7 +711,7 @@ struct MyRoomView: View {
                                             
                                             Image(systemName: "heart.fill")
                                                 .resizable()
-                                                .foregroundColor(Color.red)
+                                                .foregroundColor(ColorManager.orange3)
                                                 .frame(width: 80, height: 60)
                                                 .rotationEffect(.degrees(7))
                                                 .shadow(color: .white, radius: 2, x: -2, y: 2)
