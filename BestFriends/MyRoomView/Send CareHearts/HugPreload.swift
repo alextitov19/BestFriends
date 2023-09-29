@@ -42,19 +42,51 @@ struct HugPreload: View {
                 
                 VStack {
                     
-                    Text("Sharing")
-                        .font(.system(size: 30))
-                    //                            .italic()
-                        .foregroundColor(ColorManager .grey1)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
+//                    Text("Sharing yout")
+//                        .font(.system(size: 30))
+//                    //                            .italic()
+//                        .foregroundColor(ColorManager .grey1)
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//
+//                    Text("feelings & support")
+//                        .font(.system(size: 25))
+//                                                .italic()
+//                        .foregroundColor(ColorManager .grey1)
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
                     
-                    Text("Feelings")
-                        .font(.system(size: 30))
-                    //                            .italic()
-                        .foregroundColor(ColorManager .grey1)
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
+                    
+                    ZStack {
+                        
+                        Spacer ()
+                            .frame(height: 10)
+                        Text("sharing your")
+                            .font(.system(size: 30))
+                            .italic()
+                            .foregroundColor(Color.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                
+                        
+                        Text("support")
+                            .font(.system(size: 40))
+                            .foregroundColor(Color.white)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                            .blinking(duration: 2.0)
+                        
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 150, height: 150)
+                            .foregroundColor(Color.pink)
+                            .rotationEffect(.degrees(7))
+                            .glow(color: ColorManager.purple3, radius: 20)
+                            .blinking(duration: 3.0)
+                            .opacity(0.2)
+                        
+                    }
                     
                     Spacer ()
                         .frame(height: 20)
@@ -73,7 +105,7 @@ struct HugPreload: View {
                             
                             
                             NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
-                                HugCircle (color: ColorManager.orange5, friendName: "Digital \nHUGS")
+                                HugCircle (color: ColorManager.orange5, friendName: "Lightspeed \nHugs")
                             })
                             .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
                             .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
@@ -101,7 +133,7 @@ struct HugPreload: View {
                             
                             
                             NavigationLink(destination: RR24(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: ColorManager .orange5, friendName: "Protect friend's \nWell-being")
+                                HugCircle (color: ColorManager .orange5, friendName: "My friend's \nWell-being")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                             .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
@@ -129,7 +161,7 @@ struct HugPreload: View {
                         
                         
                         NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
-                            HugCircle (color: ColorManager .grey1, friendName: "Sad Day \nSong")
+                            HugCircle (color: ColorManager .grey1, friendName: "Cheer-up \nSong")
                         })
                         .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                         .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
@@ -172,7 +204,7 @@ struct HugPreload: View {
                             //                        HStack {
                             
                             NavigationLink(destination: RR27(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: ColorManager .purple5, friendName: "You can \ndo it!")
+                                HugCircle (color: ColorManager .purple5, friendName: "YOU CAN \nDO IT!")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                             .shadow(color: Color .blue, radius: 10, x: 10, y: 10)

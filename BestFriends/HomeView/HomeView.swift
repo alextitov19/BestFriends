@@ -251,8 +251,19 @@ struct HomeView: View {
                         
                         Spacer()
 
+                       
+                        
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 360, height: 360)
+                            .foregroundColor(ColorManager .purple3)
+                            .opacity(0.3)
+                            .glow(color: Color.white, radius: 75)
+                            .blinking(duration: 4.0)
+                        
                         Spacer()
-                            .frame(height: 330)
+                            .frame(height: 0)
                         
                         ZStack {
                             
@@ -280,7 +291,7 @@ struct HomeView: View {
                                 .foregroundColor(Color.white)
                                 .opacity(0.6)
                                 .glow(color: Color.white, radius: 1)
-                                .blinking(duration: 2.0)
+                                .blinking(duration: 0.5)
                             
                         }
                       
@@ -447,7 +458,7 @@ struct HomeView: View {
                                     .frame(width: 60, height: 60)
                                     .foregroundColor(Color .green)
                                     .glow(color: ColorManager.purple4, radius: 20)
-                                    .blinking(duration: 2.0)
+//                                    .blinking(duration: 2.0)
                                 
                    
                                 NavigationLink( destination:  Step4_NuclearOption(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
@@ -457,7 +468,7 @@ struct HomeView: View {
                                         .frame(width: 60, height: 60)
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 10))
-                                        .blinking(duration: 2.0)
+                                        .blinking(duration: 4.0)
                                     
                             
 

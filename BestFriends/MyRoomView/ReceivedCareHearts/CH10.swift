@@ -94,7 +94,7 @@ struct CH10: View {
                     
                     
                     NavigationLink(destination: CH9(user: user, friends: friends), label: {
-                        HugCircle (color: Color.pink, friendName: "Catching \n Kisses")
+                        HugCircle (color: Color.pink, friendName: "Catching \nKisses")
                     })
                     .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
                     .shadow(color: Color .pink, radius: 10, x: 10, y: 10)
