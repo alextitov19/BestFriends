@@ -107,7 +107,7 @@ struct HomeView: View {
                             
                             
                             Spacer()
-                                .frame(width: 25)
+                                .frame(width: 35)
                             
                             ZStack {
                                 Image(systemName: "heart")
@@ -256,9 +256,9 @@ struct HomeView: View {
                         Image(systemName: "heart.fill")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 360, height: 360)
+                            .frame(width: 350, height: 350)
                             .foregroundColor(ColorManager .purple3)
-                            .opacity(0.3)
+                            .opacity(0.15)
                             .glow(color: Color.white, radius: 75)
                             .blinking(duration: 4.0)
                         
@@ -289,7 +289,7 @@ struct HomeView: View {
                                 .scaledToFit()
                                 .frame(width: 40, height: 40)
                                 .foregroundColor(Color.white)
-                                .opacity(0.6)
+                                .opacity(0.4)
                                 .glow(color: Color.white, radius: 1)
                                 .blinking(duration: 0.5)
                             
@@ -314,7 +314,7 @@ struct HomeView: View {
                                                 destination:  RR23(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                                 label: {
 
-                                                    Text("BEST \nDays!")
+                                                    Text("Beta")
                                                         .fontWeight(.regular)
                                                         .frame(width: 60, height: 60)
                                                         .foregroundColor(Color.white)
