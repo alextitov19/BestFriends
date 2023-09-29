@@ -94,14 +94,14 @@ struct CH10: View {
                     
                     
                     NavigationLink(destination: CH9(user: user, friends: friends), label: {
-                        HugCircle (color: Color.pink, friendName: "Jump up, \ncatch your \n Kisses")
+                        HugCircle (color: Color.pink, friendName: "Catching \n Kisses")
                     })
                     .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
                     .shadow(color: Color .pink, radius: 10, x: 10, y: 10)
                     .opacity(0.7)
                     
                     NavigationLink(destination: RR13(user: user, friends: friends, groups: groups), label: {
-                        HugCircle (color: Color.pink, friendName: "You got \nLove hearts")
+                        HugCircle (color: Color.pink, friendName: "Love \nhearts")
                     })
                     .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                     .shadow(color: Color.pink, radius: 10, x: 10, y: 10)
@@ -113,7 +113,7 @@ struct CH10: View {
                 HStack {
                     
                     NavigationLink(destination: VirtualHug(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager.orange5, friendName: "Grab your \nDigital Hug")
+                        HugCircle (color: ColorManager.orange5, friendName: "My \nHugs")
                     })
                     .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
                     .shadow(color: Color.yellow, radius: 10, x: 10, y: 10)
@@ -123,7 +123,7 @@ struct CH10: View {
                   
                     
                     NavigationLink(destination: RR22(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .orange5, friendName: "Your \nWell-being")
+                        HugCircle (color: ColorManager .orange5, friendName: "My \nWell-being")
                     })
                     .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                     .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
@@ -167,7 +167,7 @@ struct CH10: View {
                             
                             
                             NavigationLink(destination: RR28(user: user, friends: friends), label: {
-                                HugCircle (color: ColorManager .purple4, friendName: "Send a \nFist-pump")
+                                HugCircle (color: ColorManager .purple4, friendName: "Fist-pump")
                             })
                             .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
                             .shadow(color: Color.blue, radius: 10, x: 10, y: 10)
@@ -176,7 +176,7 @@ struct CH10: View {
                             
                             
                             NavigationLink(destination: RR29(user: user, friends: friends), label: {
-                                HugCircle (color: ColorManager .purple5, friendName: "You can \ndo this!")
+                                HugCircle (color: ColorManager .purple5, friendName: "YOU CAN \nDO THIS!")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                             .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
@@ -185,7 +185,7 @@ struct CH10: View {
                             
                             
                             NavigationLink(destination: RR14(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: ColorManager .purple4, friendName: "Congrats \nNice Job!!!")
+                                HugCircle (color: ColorManager .purple4, friendName: "Congrats!!!")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                             .shadow(color: Color .blue, radius: 10, x: 10, y: 10)

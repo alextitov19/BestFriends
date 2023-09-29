@@ -185,7 +185,7 @@ struct HomeView: View {
                                     destination:  CH10(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
                                     label: {
                                         
-                                        Text("received \nCareHearts")
+                                        Text("my \nCareHearts")
                                             .fontWeight(.regular)
                                             .frame(width: 60, height: 60)
                                             .foregroundColor(Color.white)
