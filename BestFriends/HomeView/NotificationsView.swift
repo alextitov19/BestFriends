@@ -428,7 +428,7 @@ struct NotificationsView: View {
                     thanksCongratulationsActive = true
                     
                     
-                case "just sent you an Affirmation in Chat":
+                case "said what they like most about you in Chat":
                     affirmationActive = true
              
                     

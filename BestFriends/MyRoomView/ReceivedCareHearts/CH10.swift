@@ -50,32 +50,42 @@ struct CH10: View {
                 VStack {
                     
                     VStack {
+                     
+            ZStack {
                         
-                        Text("CareHearts")
-                            .font(.system(size: 40))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("from Friends")
+                Spacer ()
+                    .frame(height: 10)
+                        Text("Feeling the")
                             .font(.system(size: 30))
+                            .italic()
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                       
-                        
-                        Spacer ()
-                            .frame(height: 20)
-                        
-                        
-                        
-                        Text("Yep! Your friends care about you")
-                            .font(.system(size: 17))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
+
+                      
+                     
+                            
+                            Text("Love")
+                                .font(.system(size: 40))
+                                .foregroundColor(Color.white)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+                                .blinking(duration: 2.0)
+                            
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 150, height: 150)
+                                .foregroundColor(Color.pink)
+                                .rotationEffect(.degrees(7))
+                                .glow(color: ColorManager.purple3, radius: 20)
+                                .blinking(duration: 3.0)
+                                .opacity(0.2)
+                            
+                            
+                        }
+
                     }
                         
             VStack {
@@ -91,7 +101,7 @@ struct CH10: View {
                     .opacity(0.7)
                     
                     NavigationLink(destination: RR13(user: user, friends: friends, groups: groups), label: {
-                        HugCircle (color: Color.pink, friendName: "You got \nLove Hearts")
+                        HugCircle (color: Color.pink, friendName: "You got \nLove hearts")
                     })
                     .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                     .shadow(color: Color.pink, radius: 10, x: 10, y: 10)
