@@ -147,7 +147,7 @@ struct HomeView: View {
                                 Image(systemName: "oval")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 78, height: 78)
+                                    .frame(width: 80, height: 80)
                                     .foregroundColor(Color.orange)
                                     .glow(color: ColorManager.purple4, radius: 20)
                                 

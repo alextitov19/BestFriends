@@ -147,7 +147,7 @@ struct CH10: View {
                         .opacity(0.7)
                         
                         NavigationLink(destination: CH7(user: user, friend: user, friends: friends, groups: groups), label: {
-                            HugCircle (color: ColorManager . grey1, friendName: "Song \nmatching \nyour Day!")
+                            HugCircle (color: ColorManager . grey1, friendName: "Song \nmatching \nmy day")
                             
                         })
                         .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
@@ -230,7 +230,7 @@ struct CH10: View {
                                     
                                     NavigationLink(destination: RR15(user: user, friends: friends, groups: groups), label: {
                                       
-                                        Text("Customized \nCareHearts \n(in beta)")
+                                        Text("Customized \nCareHearts \n(beta)")
                                             .fontWeight(.thin)
                                             .foregroundColor(Color.black)
                                             .font(.system(size: 20))
