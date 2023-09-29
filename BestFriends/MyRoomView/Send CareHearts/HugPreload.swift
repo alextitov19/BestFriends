@@ -42,14 +42,14 @@ struct HugPreload: View {
                 
                 VStack {
                     
-                    Text("Sending")
+                    Text("Sharing")
                         .font(.system(size: 30))
                     //                            .italic()
                         .foregroundColor(ColorManager .grey1)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
-                    Text("CareHearts")
+                    Text("Feelings")
                         .font(.system(size: 30))
                     //                            .italic()
                         .foregroundColor(ColorManager .grey1)
