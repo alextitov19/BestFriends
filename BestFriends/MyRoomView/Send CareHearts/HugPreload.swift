@@ -267,7 +267,7 @@ struct HugPreload: View {
                                     
                                     Image(systemName: "heart.fill")
                                         .resizable()
-                                        .foregroundColor(Color.purple)
+                                        .foregroundColor(Color.cyan)
                                         .frame(width: 150, height: 110)
                                         .rotationEffect(.degrees(7))
                                         .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
@@ -275,7 +275,7 @@ struct HugPreload: View {
 //                                        .blinking(duration: 2.0)
                                     
                                     
-                                    NavigationLink(destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups), label: {
+                                    NavigationLink(destination: RR31(user: user, friends: friends), label: {
                                         
                                         Text("You're in \ncharge")
                                             .fontWeight(.thin)
@@ -299,7 +299,7 @@ struct HugPreload: View {
                                     
                                     Image(systemName: "heart.fill")
                                         .resizable()
-                                        .foregroundColor(Color.purple)
+                                        .foregroundColor(Color.cyan)
                                         .frame(width: 150, height: 110)
                                         .rotationEffect(.degrees(-7))
                                         .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
