@@ -134,7 +134,7 @@ struct HugPreload: View {
                                 .opacity(0.5)
                                 
                                 VStack {
-                                    Text("Ken n'")
+                                    Text("Barbie")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 20))
@@ -143,7 +143,7 @@ struct HugPreload: View {
                                         .opacity(1.0)
                                         .blinking(duration: 2.0)
                                     
-                                    Text("Barbie")
+                                    Text("n' Ken")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 20))
