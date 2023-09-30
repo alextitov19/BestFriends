@@ -72,12 +72,12 @@ struct SendHomie: View {
                 HStack {
                     VStack {
                         
-                        Text("give a")
-                            .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .purple2)
+//                        Text("give a")
+//                            .font(.system(size: 35, weight: .ultraLight))
+//                            .foregroundColor(ColorManager .purple2)
                         
                         
-                        Text("fist-pump!")
+                        Text("Fist-pump!")
                             .font(.system(size: 35, weight: .ultraLight))
                             .foregroundColor(ColorManager .purple2)
                         
