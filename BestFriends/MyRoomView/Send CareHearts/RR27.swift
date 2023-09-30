@@ -169,7 +169,7 @@ struct RR27: View {
                             Spacer()
                                 .frame(height: 7)
                             
-                            Text("You go this!")
+                            Text("You got this!")
                                 .font(.system(size: 25, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)

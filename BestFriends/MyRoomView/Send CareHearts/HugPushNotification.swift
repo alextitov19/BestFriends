@@ -81,14 +81,14 @@ struct HugPushNotification: View {
                                 VStack {
                                    
                                     
-                                    Text("Sending Hugs")
+                                    Text("Friend need")
                                         .font(.system(size: 45, weight: .light))
                                         .foregroundColor(Color.white)
                                     
-//                                    Text("supporting your friends")
-//                                        .font(.system(size: 20, weight: .light))
-//                                        .italic()
-//                                        .foregroundColor(Color.white)
+                                    Text("a hug?")
+                                        .font(.system(size: 45, weight: .light))
+                                        .italic()
+                                        .foregroundColor(Color.white)
                                     
                                     Spacer()
                                         .frame(height: 10)

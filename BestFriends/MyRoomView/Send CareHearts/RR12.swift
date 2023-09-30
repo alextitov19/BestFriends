@@ -109,10 +109,10 @@ struct RR12: View {
                       
                   } else {
 
-                      Image("CareHeartBalloon 1")
-                          .ignoresSafeArea()
-                          .scaledToFit()
-                          .opacity(0.1)
+//                      Image("CareHeartBalloon 1")
+//                          .ignoresSafeArea()
+//                          .scaledToFit()
+//                          .opacity(0.1)
                       
                       Color.black
                         .opacity(0.9)
