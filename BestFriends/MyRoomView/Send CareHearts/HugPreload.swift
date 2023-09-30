@@ -193,12 +193,12 @@ struct HugPreload: View {
                         }
                         
                         
-//                        NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
-//                            HugCircle (color: ColorManager .grey1, friendName: "???")
-//                        })
-//                        .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-//                        .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
-//                        .opacity(0.5)
+                        NavigationLink(destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups), label: {
+                            HugCircle (color: ColorManager .grey1, friendName: "Let's \nMeetup")
+                        })
+                        .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+                        .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+                        .opacity(0.5)
                         
                         //                     ****************
                         
@@ -277,7 +277,7 @@ struct HugPreload: View {
                                     
                                     NavigationLink(destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups), label: {
                                         
-                                        Text("Send Meetup \ncoupon")
+                                        Text("You're in \ncharge")
                                             .fontWeight(.thin)
                                             .foregroundColor(Color.white)
                                             .font(.system(size: 20))

@@ -382,6 +382,7 @@
 		CFF952332981BC700054D963 /* DreamsWeDare2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF952322981BC700054D963 /* DreamsWeDare2.swift */; };
 		D0CC1A04283EE33500E7461F /* HorizonHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */; };
 		D0F5AB1B2840519700053F17 /* HorizonRocketColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */; };
+		D1BD9FD22AC850EC00196448 /* RR31.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BD9FD12AC850EC00196448 /* RR31.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -787,6 +788,7 @@
 		CFF952322981BC700054D963 /* DreamsWeDare2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamsWeDare2.swift; sourceTree = "<group>"; };
 		D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonHomeView.swift; sourceTree = "<group>"; };
 		D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonRocketColorPicker.swift; sourceTree = "<group>"; };
+		D1BD9FD12AC850EC00196448 /* RR31.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR31.swift; sourceTree = "<group>"; };
 		D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54A61C5A22AA6A9255C7B05 /* Pods-BestFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.release.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1630,6 +1632,7 @@
 				2DB42CF92AAE879200E137C0 /* RR27.swift */,
 				2DDCD9872A8FEBFC00B1040F /* RR20.swift */,
 				2DB42CF52AAE878100E137C0 /* RR25.swift */,
+				D1BD9FD12AC850EC00196448 /* RR31.swift */,
 				2DDCD9892A8FF0ED00B1040F /* DrawingCareHearts.swift */,
 				CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */,
 				2DDCD98B2A92A1D900B1040F /* ColorPicker.swift */,
@@ -2479,6 +2482,7 @@
 				7A720CC328A583E900992FD2 /* CustomizeMyPlanetView.swift in Sources */,
 				7ACD20BC27FC99CA002F7800 /* InviteView.swift in Sources */,
 				7ADFDB33289B1FA60004FB1C /* ShakePhotoPopView.swift in Sources */,
+				D1BD9FD22AC850EC00196448 /* RR31.swift in Sources */,
 				CFC0ACC028EFD6DB00B49831 /* ChatInfo.swift in Sources */,
 				7A45B84C2A86ABA900F5E75B /* RR15.swift in Sources */,
 				7AD8DF0827F6948A00D9F0E1 /* AdViewFullScreen.swift in Sources */,
