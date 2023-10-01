@@ -144,24 +144,24 @@ struct Step4_NuclearOption: View {
                             
                             ZStack {
                                 
-                                Image(systemName: "heart")
+                                Image(systemName: "circle.fill")
                                     .resizable()
                                     .foregroundColor(Color.orange)
-                                    .frame(width: 80, height: 80)
-                                    .rotationEffect(.degrees(7))
+                                    .frame(width: 100, height: 100)
+//                                    .rotationEffect(.degrees(7))
                                     .shadow(color: .white, radius: 2, x: -2, y: 2)
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                                     .opacity(0.9)
                                 
                                 
-                                NavigationLink( destination: CH15(user: user, friends: friends),
+                                NavigationLink( destination:  PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
                                                 label: {
                                     Text("Let's \nMeetup")
                                         .fontWeight(.light)
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 15))
-                                        .rotationEffect(.degrees(7))
-                                        .blinking(duration: 2.0)
+//                                        .rotationEffect(.degrees(7))
+//                                        .blinking(duration: 2.0)
                                         .opacity(0.85)
                                     
                                 })

@@ -135,12 +135,16 @@ struct PhotoPopFGPreload: View {
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
-//
-//                Text("")
-//                    .font(.system(size: 23))
-//                    .fontWeight(.light)
-//                    .foregroundColor(Color.white)
-//                    .multilineTextAlignment(.center)
+
+                Spacer()
+                    .frame(height: 15)
+                
+                Text("and talk about it")
+                    .font(.system(size: 20))
+                    .italic()
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                    .multilineTextAlignment(.center)
   
                         
                         ZStack(alignment: .bottom) {
