@@ -349,7 +349,7 @@ struct AtmosphereMain2: View {
                             mood = 7
                         }) {
 
-                            Text("Wow, Excitging NEWS!")
+                            Text("Wow, exciting news!")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
