@@ -80,10 +80,7 @@ struct HomeView: View {
                 
                 VStack {
                     if ((homeData) != nil) {
-                        
-                        Spacer()
-                            .frame(height: 10)
-                        
+                    
                         
 //          ********************************************** Carehearts *************
                         
@@ -107,13 +104,14 @@ struct HomeView: View {
                             
                             
                             Spacer()
-                                .frame(width: 35)
+                                .frame(width: 30)
                             
                             ZStack {
-                                Image(systemName: "heart")
+//                                Image(systemName: "heart")
+                                Image("planet_5")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 60, height: 60)
+                                    .frame(width: 75, height: 75)
                                     .foregroundColor(Color.pink)
                                     .glow(color: ColorManager.purple4, radius: 20)
                                     .rotationEffect(.degrees(-7))
@@ -126,12 +124,17 @@ struct HomeView: View {
                                         
                                         
                                         Text("send \nCareHearts")
-                                            .fontWeight(.regular)
-                                            .frame(width: 60, height: 60)
-                                            .foregroundColor(Color.white)
-                                            .font(.system(size: 8))
-                                            .rotationEffect(.degrees(-7))
-//                                            .blinking(duration: 2.0)
+                                            .fontWeight(.medium)
+                                            .frame(width: 75, height: 75)
+                                          .foregroundColor(Color.white)
+                                            .font(.system(size: 12))
+                                            .background(ColorManager .grey4)
+                                            .multilineTextAlignment(.center)
+                                            .opacity(1.0)
+                                            .cornerRadius(50)
+                                            .shadow(color: Color.white, radius: 2, x: 0, y: 1)
+                                            .blinking(duration: 2.0)
+                                            .opacity(0.6)
                                         
                                         
                                         
@@ -144,10 +147,10 @@ struct HomeView: View {
                                 .frame(width: 20)
                             
                             ZStack {
-                                Image(systemName: "oval")
+                                Image("planet_2")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 80, height: 80)
+                                    .frame(width: 95, height: 95)
                                     .foregroundColor(Color.orange)
                                     .glow(color: ColorManager.purple4, radius: 20)
                                 
@@ -157,24 +160,29 @@ struct HomeView: View {
                                     destination:  AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                     label: {
                                         
-                                        Text("My day \njust \nChanged")
-                                            .fontWeight(.bold)
-                                            .frame(width: 60, height: 60)
-                                            .foregroundColor(Color.white)
-                                            .font(.system(size: 11))
-                                        
+                                        Text("my vibe \nchanged")
+                                            .fontWeight(.medium)
+                                            .frame(width: 90, height: 90)
+                                          .foregroundColor(Color.white)
+                                            .font(.system(size: 12))
+                                            .background(ColorManager .grey4)
+                                            .multilineTextAlignment(.center)
+                                            .opacity(1.0)
+                                            .cornerRadius(50)
+                                            .shadow(color: Color.orange, radius: 2, x: 0, y: 1)
                                             .blinking(duration: 2.0)
+                                            .opacity(0.6)
                                     })
                             }
                             
                             Spacer()
-                                .frame(width: 20)
+                                .frame(width: 10)
                             
                             ZStack {
-                                Image(systemName: "heart")
+                                Image("planet_6")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 60, height: 60)
+                                    .frame(width: 75, height: 75)
                                     .foregroundColor(Color.pink)
                                     .rotationEffect(.degrees(7))
                                     .glow(color: ColorManager.purple4, radius: 20)
@@ -185,13 +193,18 @@ struct HomeView: View {
                                     destination:  CH10(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
                                     label: {
                                         
-                                        Text("my \nCareHearts")
-                                            .fontWeight(.regular)
-                                            .frame(width: 60, height: 60)
-                                            .foregroundColor(Color.white)
-                                            .font(.system(size: 8))
-                                            .rotationEffect(.degrees(7))
-//                                            .blinking(duration: 2.0)
+                                        Text("received \nCareHearts")
+                                            .fontWeight(.medium)
+                                            .frame(width: 80, height: 80)
+                                          .foregroundColor(Color.white)
+                                            .font(.system(size: 12))
+                                            .background(ColorManager .grey4)
+                                            .multilineTextAlignment(.center)
+                                            .opacity(1.0)
+                                            .cornerRadius(50)
+                                            .shadow(color: Color.white, radius: 2, x: 0, y: 1)
+                                            .blinking(duration: 2.0)
+                                            .opacity(0.6)
                                     })
                                 
                             }
@@ -220,25 +233,30 @@ struct HomeView: View {
                             
                         ZStack {
                                                
-                            Image(systemName: "circle")
+                            Image("planet_3")
                                 .resizable()
-                                .foregroundColor(Color.yellow)
-                                .frame(width: 55, height: 55)
+                                .scaledToFit()
+                                .frame(width: 75, height: 75)
+                                .foregroundColor(Color.pink)
+                                .rotationEffect(.degrees(7))
                                 .glow(color: ColorManager.purple4, radius: 20)
-//                                .shadow(color: .white, radius: 2, x: -2, y: 2)
-//                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//                                .opacity(0.99)
                                      
                                                 
                                                 
                             NavigationLink( destination:  BestFriendMessages(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres),
                                         label: {
-                                    Text("Smile \nVault")
-                                        .fontWeight(.light)
-                                        .foregroundColor(Color.white)
-                                        .font(.system(size: 10))
-                                      
-                                        .opacity(0.85)
+                                    Text("nice \nmessages")
+                                    .fontWeight(.medium)
+                                    .frame(width: 80, height: 80)
+                                  .foregroundColor(Color.white)
+                                    .font(.system(size: 12))
+                                    .background(ColorManager .grey4)
+                                    .multilineTextAlignment(.center)
+                                    .opacity(1.0)
+                                    .cornerRadius(50)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 1)
+                                    .blinking(duration: 2.0)
+                                    .opacity(0.6)
                                     
                                                     
                                                 })
@@ -284,7 +302,7 @@ struct HomeView: View {
                             ) { EmptyView() }
                             
                             
-                            Image(systemName: "bell")
+                            Image(systemName: "star")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 40, height: 40)
@@ -519,16 +537,17 @@ struct HomeView: View {
                             
                         })
                             Text("more...")
-                                .fontWeight(.light)
-                                .frame(width: 80, height: 25)
-                              .foregroundColor(Color.black)
-                                .font(.system(size: 17))
-                                .background(Color.green)
-                                .multilineTextAlignment(.center)
-                                .opacity(1.0)
-                                .cornerRadius(10)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 1)
-                                .blinking(duration: 2.0)
+                            .fontWeight(.medium)
+//                            .frame(width: 100, height: 100)
+                          .foregroundColor(Color.white)
+                            .font(.system(size: 15))
+//                            .background(ColorManager .grey3)
+//                            .multilineTextAlignment(.center)
+//                            .opacity(1.0)
+//                            .cornerRadius(50)
+//                            .shadow(color: Color.white, radius: 2, x: 0, y: 1)
+                            .blinking(duration: 2.0)
+                            .opacity(0.6)
 //                        })
                     }
                         
