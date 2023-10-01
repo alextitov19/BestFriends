@@ -140,6 +140,33 @@ struct Step4_NuclearOption: View {
                             Spacer ()
                                 .frame(height: 290)
 //
+                            
+                            
+                            ZStack {
+                                
+                                Image(systemName: "heart")
+                                    .resizable()
+                                    .foregroundColor(Color.orange)
+                                    .frame(width: 80, height: 80)
+                                    .rotationEffect(.degrees(7))
+                                    .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                    .opacity(0.9)
+                                
+                                
+                                NavigationLink( destination: CH15(user: user, friends: friends),
+                                                label: {
+                                    Text("Let's \nMeetup")
+                                        .fontWeight(.light)
+                                        .foregroundColor(Color.white)
+                                        .font(.system(size: 15))
+                                        .rotationEffect(.degrees(7))
+                                        .blinking(duration: 2.0)
+                                        .opacity(0.85)
+                                    
+                                })
+                                
+                            }
 //
 //                            NavigationLink(destination: CH13(user: user, friends: friends),
 //                                           label: {
@@ -187,20 +214,20 @@ struct Step4_NuclearOption: View {
                         VStack {
                             
                             HStack {
-                           
-                            Image(systemName: "heart")
-                                .resizable()
-                                .foregroundColor(Color.blue)
-                                .frame(width: 10, height: 10)
-                                .rotationEffect(.degrees(7))
-                                .shadow(color: .white, radius: 2, x: -2, y: 2)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                .opacity(0.5)
-                            
+                                
+                                Image(systemName: "heart")
+                                    .resizable()
+                                    .foregroundColor(Color.blue)
+                                    .frame(width: 10, height: 10)
+                                    .rotationEffect(.degrees(7))
+                                    .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                    .opacity(0.5)
+                                
                                 Spacer ()
                                     .frame(width: 300)
-
-                               
+                                
+                                
                                 ZStack {
                                     
                                     Image(systemName: "heart")
@@ -226,16 +253,16 @@ struct Step4_NuclearOption: View {
                                     })
                                     
                                 }
-                                    }
-                                }
-                                
-                            }
-
-                                }
-                                
-                            }
-             
+                             }
                         }
+                                
+                    }
+
+                }
+                                
+            }
+             
+        }
   }
 
 
