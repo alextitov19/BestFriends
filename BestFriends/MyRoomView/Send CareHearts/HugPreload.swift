@@ -277,7 +277,7 @@ struct HugPreload: View {
                                     
                                     NavigationLink(destination: RR31(user: user, friends: friends), label: {
                                         
-                                        Text("Oh \nLook")
+                                        Text("We're here \nfor you")
                                             .fontWeight(.thin)
                                             .foregroundColor(Color.white)
                                             .font(.system(size: 20))
