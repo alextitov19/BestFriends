@@ -176,7 +176,7 @@ struct MyRoomView: View {
                                     //                                    .blinking(duration: 4.0)
                                 })
                             
-//                          
+//
                         }
                     }
                 }
