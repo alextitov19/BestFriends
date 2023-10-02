@@ -32,7 +32,8 @@ struct HugPreload: View {
                 .opacity(0.9)
                 .ignoresSafeArea()
             
-            AdPlayerView(name: "background_9")
+//            AdPlayerView(name: "background_9")
+            AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
@@ -65,7 +66,7 @@ struct HugPreload: View {
                         Spacer ()
                             .frame(height: 20)
                         
-                        Text("emotions & support")
+                        Text("emotional support")
                             .font(.system(size: 40))
                             .foregroundColor(Color.white)
                             .fontWeight(.thin)
@@ -81,7 +82,7 @@ struct HugPreload: View {
                             HStack {
                                 
                                 NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
-                                    HugCircle (color: ColorManager.orange5, friendName: "Lightspeed \nHugs")
+                                    HugCircle (color: ColorManager.orange5, friendName: "Hugs")
                                 })
                                 .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
                                 .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
@@ -99,7 +100,7 @@ struct HugPreload: View {
                             Spacer ()
                                 .frame(height: 20)
                             
-                                    Text("Supporting Friends")
+                                    Text("bad day \nsupport")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 20))
@@ -134,7 +135,7 @@ struct HugPreload: View {
                                 .opacity(0.5)
                                 
                                 VStack {
-                                    Text("Barbie")
+                                    Text("romance")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 20))
@@ -143,14 +144,14 @@ struct HugPreload: View {
                                         .opacity(1.0)
                                         .blinking(duration: 2.0)
                                     
-                                    Text("n' Ken")
-                                        .fontWeight(.thin)
-                                        .foregroundColor(Color.white)
-                                        .font(.system(size: 20))
-                                        .multilineTextAlignment(.center)
-                                        .rotationEffect(.degrees(0))
-                                        .opacity(1.0)
-                                        .blinking(duration: 2.0)
+//                                    Text("n' Ken")
+//                                        .fontWeight(.thin)
+//                                        .foregroundColor(Color.white)
+//                                        .font(.system(size: 20))
+//                                        .multilineTextAlignment(.center)
+//                                        .rotationEffect(.degrees(0))
+//                                        .opacity(1.0)
+//                                        .blinking(duration: 2.0)
                                 }
                                 
                                 NavigationLink(destination: RR11(user: user, friend: user, friends: friends, groups: groups), label: {
@@ -356,7 +357,7 @@ struct HugPreload: View {
                 
                 ZStack {
                     
-                    Image(systemName: "heart.fill")
+                    Image(systemName: "cube")
                         .resizable()
                         .foregroundColor(color)
                     //                            .foregroundColor(ColorManager .purple2)
@@ -364,10 +365,10 @@ struct HugPreload: View {
                         .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
                     
                     Text(friendName)
-                        .fontWeight(.light)
-                        .font(.system(size: 17))
+                        .fontWeight(.medium)
+                        .font(.system(size: 19))
                         .italic()
-                        .foregroundColor(.black)
+                        .foregroundColor(.white)
                     
                 }
             }
