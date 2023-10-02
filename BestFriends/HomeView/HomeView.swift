@@ -127,9 +127,9 @@ struct HomeView: View {
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 45, height: 45)
-                                                .foregroundColor(ColorManager .purple2)
+                                                .foregroundColor(Color.white)
                                                 .glow(color: ColorManager.purple4, radius: 3)
-                                                .opacity(0.5)
+                                                .opacity(0.7)
                                                 .blinking(duration: 3.0)
                                             
                                             Text("+")
@@ -171,10 +171,10 @@ struct HomeView: View {
                                             Image(systemName: "triangle.fill")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 45, height: 45)
-                                                .foregroundColor(ColorManager .grey2)
-                                                .glow(color: ColorManager.purple4, radius: 3)
-                                                .opacity(0.5)
+                                                .frame(width: 50, height: 50)
+                                                .foregroundColor(Color.white)
+//                                                .glow(color: ColorManager.purple4, radius: 3)
+                                                .opacity(0.8)
                                                 .blinking(duration: 3.0)
                                             
                                             Text("vibe")
@@ -214,9 +214,9 @@ struct HomeView: View {
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 45, height: 45)
-                                                .foregroundColor(ColorManager .purple2)
+                                                .foregroundColor(Color.white)
                                                 .glow(color: ColorManager.purple4, radius: 3)
-                                                .opacity(0.3)
+                                                .opacity(0.7)
                                                 .blinking(duration: 3.0)
                                             
                                             Text("-")
@@ -235,23 +235,7 @@ struct HomeView: View {
                             
                             Spacer()
                                 .frame(width: 25)
-                            
-                            
-//                                
-//                                NavigationLink(
-//                                    destination:  FH10(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-//                                    label: {
-//                                        
-//                                        Image(systemName: "info.circle")
-//                                            .resizable()
-//                                            .scaledToFit()
-//                                            .frame(width: 35, height: 35)
-//                                            .foregroundColor(Color.white)
-//                                        //                                       .glow(color: ColorManager.purple4, radius: 3)
-//                                            .opacity(0.9)
-//                                    })
-                                
-                                
+
                                 
                             }
                             
@@ -264,7 +248,7 @@ struct HomeView: View {
                                 .foregroundColor(Color.pink)
                                 .rotationEffect(.degrees(7))
                                 .glow(color: ColorManager.purple4, radius: 20)
-                                .blinking(duration: 5.0)
+                                .blinking(duration: 3.0)
                                      
                                                 
                                                 
@@ -280,7 +264,7 @@ struct HomeView: View {
                                     .opacity(1.0)
                                     .cornerRadius(50)
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 1)
-                                    .blinking(duration: 2.0)
+                                    .blinking(duration: 3.0)
                                     .opacity(0.6)
                                     
                                                     
