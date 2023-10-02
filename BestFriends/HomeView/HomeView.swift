@@ -254,7 +254,7 @@ struct HomeView: View {
                                                 
                             NavigationLink( destination:  BestFriendMessages(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres),
                                         label: {
-                                    Text("nice \nmessages")
+                                    Text("words")
                                     .fontWeight(.medium)
                                     .frame(width: 80, height: 80)
                                   .foregroundColor(Color.white)
@@ -324,36 +324,7 @@ struct HomeView: View {
                         }
                       
                         HStack {
-                  
-//                            ZStack {
-//                                            Image(systemName: "cube")
-//                                                .resizable()
-//                                                .scaledToFit()
-//                                                .frame(width: 70, height: 70)
-//                                                .foregroundColor(Color.green)
-//                                                .rotationEffect(.degrees(180))
-//                                                .opacity(0.6)
-//                                                .blinking(duration: 2.0)
-//                                                .glow(color: ColorManager.purple4, radius: 20)
-//
-//
-////         *****************************************************************
-//                                            NavigationLink(
-//                                                destination:  RR23(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-//                                                label: {
-//
-//                                                    Text("Beta")
-//                                                        .fontWeight(.regular)
-//                                                        .frame(width: 60, height: 60)
-//                                                        .foregroundColor(Color.white)
-//                                                        .font(.system(size: 15))
-//                                                        .blinking(duration: 2.0)
-//
-//
-//                                                })
-//                                        }
-//
-//
+
 //          ********************************************* PhotoPOP links *************
                      
                             Spacer()
@@ -384,11 +355,15 @@ struct HomeView: View {
                                                         .glow(color: ColorManager.purple4, radius: 2)
                                                         .opacity(0.6)
                                                     
-                                         
-                                              
-//                                                .blinking(duration: 2.0)
                                     })
                                 }
+//******************************************************
+                            
+                            
+                            
+                            
+//******************************************************
+                            
                             
                             Spacer()
                                 .frame(width: 50)
