@@ -28,14 +28,23 @@ struct HugPreload: View {
             
             
             
-            Color.black
-                .opacity(0.9)
-                .ignoresSafeArea()
+//            Color.black
+//                .opacity(0.9)
+//                .ignoresSafeArea()
+            
+//            Image("CHBk3")
+//                .ignoresSafeArea()
+//                .scaledToFit()
+//                .opacity(0.9)
+            
+            
             
 //            AdPlayerView(name: "background_9")
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
+                .opacity(0.3)
+            
             
             ZStack{
                 
@@ -51,7 +60,7 @@ struct HugPreload: View {
                         
                         
                         
-                        Image(systemName: "heart.fill")
+                        Image(systemName: "circle.fill")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 200, height: 200)
@@ -134,15 +143,19 @@ struct HugPreload: View {
                                 .shadow(color: Color .pink, radius: 10, x: 10, y: 10)
                                 .opacity(0.5)
                                 
+                                
+                                Spacer ()
+                                    .frame(width: 15)
+                                
                                 VStack {
-                                    Text("romance")
-                                        .fontWeight(.thin)
-                                        .foregroundColor(Color.white)
-                                        .font(.system(size: 20))
-                                        .multilineTextAlignment(.center)
-                                        .rotationEffect(.degrees(0))
-                                        .opacity(1.0)
-                                        .blinking(duration: 2.0)
+//                                    Text("romance")
+//                                        .fontWeight(.thin)
+//                                        .foregroundColor(Color.white)
+//                                        .font(.system(size: 20))
+//                                        .multilineTextAlignment(.center)
+//                                        .rotationEffect(.degrees(0))
+//                                        .opacity(1.0)
+//                                        .blinking(duration: 2.0)
                                     
 //                                    Text("n' Ken")
 //                                        .fontWeight(.thin)
@@ -155,7 +168,7 @@ struct HugPreload: View {
                                 }
                                 
                                 NavigationLink(destination: RR11(user: user, friend: user, friends: friends, groups: groups), label: {
-                                    HugCircle (color: Color .pink, friendName: "Sending \nLove")
+                                    HugCircle (color: Color .pink, friendName: "Hearts")
                                 })
                                 .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                                 .shadow(color: Color .pink, radius: 10, x: 10, y: 10)
