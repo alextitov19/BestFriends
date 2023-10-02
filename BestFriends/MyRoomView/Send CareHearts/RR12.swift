@@ -257,7 +257,7 @@ struct RR12: View {
                                         .placeholder(when: customMessage.isEmpty) {
                                             HStack {
                                                 Text("Type personal Chat message here")
-                                                    .foregroundColor(Color.white)
+                                                    .foregroundColor(Color.black)
                                                     .fontWeight(.thin)
                                                 Spacer()
                                             }
@@ -267,13 +267,13 @@ struct RR12: View {
                                         .submitLabel(.done)
                                         .onReceive(Just(customMessage)) { _ in limitText(65) }
                                         .padding(.top, 20)
-                                        .padding(.horizontal, 150)
+                                        .padding(.horizontal, 50)
                                         .overlay(
                                             RoundedRectangle(cornerRadius: 10)
-                                                .stroke(Color.purple)
+                                                .stroke(Color.black)
                                             //                                                            .background(ColorManager.purple3)
                                                 .frame(height: 50)
-                                                .padding(.horizontal, 125)
+                                                .padding(.horizontal, 40)
                                         )
                                         .padding(.bottom, 5)
                                 }

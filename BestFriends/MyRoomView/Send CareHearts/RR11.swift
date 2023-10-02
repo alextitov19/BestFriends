@@ -140,7 +140,7 @@ struct RR11: View {
                     ZStack {
                   
                         
-                        Image(systemName: "cube.fill")
+                        Image(systemName: "heart.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
                             .frame(width: 250, height: 200)
@@ -155,15 +155,15 @@ struct RR11: View {
                             Spacer()
                                 .frame(height: 7)
                             
-                            Text("Sending love")
-                                .font(.system(size: 20, weight: .light))
+                            Text("Send a")
+                                .font(.system(size: 30, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                             
-//                            Text("PhotoPOP")
-//                                .font(.system(size: 20, weight: .light))
-//                                .foregroundColor(ColorManager .grey1)
-//                                .multilineTextAlignment(.center)
+                            Text("CareHeart")
+                                .font(.system(size: 30, weight: .light))
+                                .foregroundColor(ColorManager .grey1)
+                                .multilineTextAlignment(.center)
                          
                             
                             Spacer()

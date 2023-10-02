@@ -125,7 +125,7 @@ struct RR20: View {
                         .opacity(0.9)
                         .ignoresSafeArea()
                       
-                      AdPlayerView(name: "background_8")
+                      AdPlayerView(name: "background_9")
                           .ignoresSafeArea()
                           .blendMode(.screen)
                           .opacity(0.6)
@@ -148,7 +148,7 @@ struct RR20: View {
                     ZStack {
                   
                         
-                        Image(systemName: "heart.fill")
+                        Image(systemName: "cube.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
                             .frame(width: 250, height: 200)

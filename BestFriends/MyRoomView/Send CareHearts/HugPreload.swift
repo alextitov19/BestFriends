@@ -148,23 +148,7 @@ struct HugPreload: View {
                                     .frame(width: 15)
                                 
                                 VStack {
-//                                    Text("romance")
-//                                        .fontWeight(.thin)
-//                                        .foregroundColor(Color.white)
-//                                        .font(.system(size: 20))
-//                                        .multilineTextAlignment(.center)
-//                                        .rotationEffect(.degrees(0))
-//                                        .opacity(1.0)
-//                                        .blinking(duration: 2.0)
-                                    
-//                                    Text("n' Ken")
-//                                        .fontWeight(.thin)
-//                                        .foregroundColor(Color.white)
-//                                        .font(.system(size: 20))
-//                                        .multilineTextAlignment(.center)
-//                                        .rotationEffect(.degrees(0))
-//                                        .opacity(1.0)
-//                                        .blinking(duration: 2.0)
+
                                 }
                                 
                                 NavigationLink(destination: RR11(user: user, friend: user, friends: friends, groups: groups), label: {

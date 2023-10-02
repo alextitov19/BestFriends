@@ -154,7 +154,7 @@ struct RR27: View {
                     ZStack {
                   
                         
-                        Image(systemName: "heart.fill")
+                        Image(systemName: "cube.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
                             .frame(width: 250, height: 200)
