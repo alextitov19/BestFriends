@@ -153,7 +153,7 @@ struct HomeView: View {
                                 .frame(width: 20)
                             
                             ZStack {
-                                Image("planet_2")
+                                Image("planet_4")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 95, height: 95)
@@ -362,7 +362,7 @@ struct HomeView: View {
                                     .opacity(0.4)
                                     .glow(color: Color.white, radius: 3)
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-                                    .blinking(duration: 0.5)
+                                    .blinking(duration: 0.75)
                                 
                             }
                             

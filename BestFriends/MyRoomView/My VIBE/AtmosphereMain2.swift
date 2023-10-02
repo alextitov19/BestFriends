@@ -629,58 +629,126 @@ struct AtmosphereMain2: View {
                             .frame(height: 20)
                         
                         VStack {
-                        
-                        Button(action: {
-                            sessionManager.showLogin()
-                        },
-                            label: {
-                            Image("home-alt2")
-                                .frame(width: 50, height: 25)
-                                .foregroundColor(.black)
-                                .font(.system(size: 20))
-                                .background(ColorManager .grey3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                .opacity(0.70)
                             
-                        })
-                 
+                            Button(action: {
+                                sessionManager.showLogin()
+                            },
+                                   label: {
+                                Image("home-alt2")
+                                    .frame(width: 50, height: 25)
+                                    .foregroundColor(.black)
+                                    .font(.system(size: 20))
+                                    .background(ColorManager .grey3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                    .opacity(0.70)
+                                
+                            })
+                            
                             Spacer()
                                 .frame(height: 30)
                             
-                    
                             
-                            Text("Bad day?")
-                                .font(.system(size: 25))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                            
-                            Text("Even if not ready to talk about it yet")
-                                .font(.system(size: 20))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                            
-                            
-                            Text("alert friends so they can send emotional")
-                                .font(.system(size: 20))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                            
-                                      Text("support via CareHearts")
-                                .font(.system(size: 20))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                      
-                                      
-                                      
-                                      }
+                            HStack {
+                                
+                                ZStack {
+                                    
+                                    Image(systemName: "")
+                                        .resizable()
+                                        .foregroundColor(Color.cyan)
+                                        .frame(width: 150, height: 110)
+                                        .rotationEffect(.degrees(7))
+                                        .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+                                        .opacity(0.5)
+                                    //                                        .blinking(duration: 2.0)
+                                    
+                                    
+                                    NavigationLink(destination: RR31(user: user, friends: friends), label: {
+                                        
+                                        Text("")
+                                            .fontWeight(.thin)
+                                            .foregroundColor(Color.white)
+                                            .font(.system(size: 20))
+                                            .multilineTextAlignment(.center)
+                                            .rotationEffect(.degrees(7))
+                                            .opacity(1.0)
+                                        //                                            .blinking(duration: 2.0)
+                                        
+                                        
+                                    }
+                                    )}
+                                
+                                
+                                
+                                Spacer ()
+                                    .frame(width: 70)
+                                
+                                ZStack {
+                                    
+                                    Image(systemName: "cube.fill")
+                                        .resizable()
+                                        .foregroundColor(Color.purple)
+                                        .frame(width: 225, height: 150)
+                                        .rotationEffect(.degrees(-20))
+                                        .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                                        .opacity(0.5)
+                                        .blinking(duration: 4.0)
+                                    
+                                    VStack {
+                                        
+                                        Text("Bad day?")
+                                            .font(.system(size: 25))
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
+                                            .foregroundColor(Color.white)
+                                            .multilineTextAlignment(.center)
+                                            .rotationEffect(.degrees(-20))
+                                            .blinking(duration: 4.0)
+                                        
+                                        Text("Even if not ready to")
+                                            .font(.system(size: 15))
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
+                                            .foregroundColor(Color.white)
+                                            .multilineTextAlignment(.center)
+                                            .rotationEffect(.degrees(-20))
+                                            .blinking(duration: 4.0)
+                                        
+                                        
+                                        Text("talk about it yet,")
+                                            .font(.system(size: 15))
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
+                                            .foregroundColor(Color.white)
+                                            .multilineTextAlignment(.center)
+                                            .rotationEffect(.degrees(-20))
+                                            .blinking(duration: 4.0)
+                                        
+                                        Text("alert friends so they can")
+                                            .font(.system(size: 15))
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
+                                            .foregroundColor(Color.white)
+                                            .multilineTextAlignment(.center)
+                                            .rotationEffect(.degrees(-20))
+                                            .blinking(duration: 4.0)
+                                        
+                                        Text("send emotional support")
+                                            .font(.system(size: 15))
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
+                                            .foregroundColor(Color.white)
+                                            .multilineTextAlignment(.center)
+                                            .rotationEffect(.degrees(-20))
+                                            .blinking(duration: 4.0)
+                                        
+                                    }
+                                }
+                            }
+                        }
                         
                         Spacer()
-                            .frame(height: 100)
+                            .frame(height: 15)
                         
                     }
                     
