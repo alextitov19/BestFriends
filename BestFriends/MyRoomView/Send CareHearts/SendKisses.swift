@@ -302,7 +302,6 @@ struct SendKisses: View {
                         label: {
                             
                             Image(systemName: "camera")
-                            
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 40, height: 40)

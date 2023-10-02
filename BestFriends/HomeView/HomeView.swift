@@ -374,12 +374,17 @@ struct HomeView: View {
                                     NavigationLink(
                                         destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
                                         label: {
-                                            
-                                            Text("send \nPhotoPOPs")
-                                                .fontWeight(.regular)
-                                                .frame(width: 60, height: 60)
-                                                .foregroundColor(Color.white)
-                                                .font(.system(size: 11))
+                                          
+                                                    Image(systemName: "camera")
+                                                        .resizable()
+                                                        .scaledToFit()
+                                                        .frame(width: 35, height: 35)
+//                                                        .rotationEffect(.degrees(-7))
+                                                        .foregroundColor(ColorManager .purple3)
+                                                        .glow(color: ColorManager.purple4, radius: 2)
+                                                        .opacity(0.6)
+                                                    
+                                         
                                               
 //                                                .blinking(duration: 2.0)
                                     })
@@ -404,11 +409,11 @@ struct HomeView: View {
                                         destination:  RR5(user: homeData!.user, friends: homeData!.friends),
                                         label: {
                                             
-                                            Text("what are \nyou doing?")
+                                            Text("?")
                                                 .fontWeight(.regular)
-                                                .frame(width: 60, height: 60)
-                                                .foregroundColor(Color.white)
-                                                .font(.system(size: 11))
+                                                .frame(width: 70, height: 70)
+                                                .foregroundColor(ColorManager .purple3)
+                                                .font(.system(size: 20))
                                               
 //                                                .blinking(duration: 2.0)
                                     })
