@@ -108,42 +108,40 @@ struct HomeView: View {
                             
                             ZStack {
 //                                Image(systemName: "heart")
-                                Image("planet_5")
+                                Image("planet_6")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 75, height: 75)
                                     .foregroundColor(Color.pink)
                                     .glow(color: ColorManager.purple4, radius: 20)
                                     .rotationEffect(.degrees(-7))
-                                    .blinking(duration: 5.0)
+                                    .blinking(duration: 3.0)
                                 
                                 
                                 NavigationLink(
                                     destination:  HugPreload(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
                                     label: {
                                         
-                                        Image(systemName: "heart")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 35, height: 35)
-                                            .foregroundColor(Color.white)
-                                        .glow(color: ColorManager.purple4, radius: 3)
-                                            .opacity(0.9)
-                                            .blinking(duration: 4.0)
-                                        
-//                                        Text("send \nCareHearts")
-//                                            .fontWeight(.medium)
-//                                            .frame(width: 75, height: 75)
-//                                          .foregroundColor(Color.white)
-//                                            .font(.system(size: 12))
-////                                            .background(ColorManager .grey4)
-//                                            .multilineTextAlignment(.center)
-//                                            .opacity(1.0)
-//                                            .cornerRadius(50)
-//                                            .shadow(color: Color.white, radius: 2, x: 0, y: 1)
-//                                            .blinking(duration: 2.0)
-//                                            .opacity(0.6)
-                                        
+                                        ZStack {
+                                            Image(systemName: "heart.fill")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 45, height: 45)
+                                                .foregroundColor(ColorManager .purple2)
+                                                .glow(color: ColorManager.purple4, radius: 3)
+                                                .opacity(0.5)
+                                                .blinking(duration: 3.0)
+                                            
+                                            Text("+")
+                                                .fontWeight(.medium)
+                                                .frame(width: 90, height: 90)
+                                                .foregroundColor(Color.black)
+                                                .font(.system(size: 30))
+                                                .multilineTextAlignment(.center)
+                                                .opacity(1.0)
+                                                .blinking(duration: 3.0)
+                                                .opacity(0.6)
+                                        }
                                         
                                         
                                         
@@ -161,7 +159,7 @@ struct HomeView: View {
                                     .frame(width: 95, height: 95)
                                     .foregroundColor(Color.orange)
                                     .glow(color: ColorManager.purple4, radius: 20)
-                                    .blinking(duration: 5.0)
+//                                    .blinking(duration: 5.0)
                                 
                                 
                                 
@@ -169,18 +167,26 @@ struct HomeView: View {
                                     destination:  AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                     label: {
                                         
-                                        Text("my vibe \nchanged")
-                                            .fontWeight(.medium)
-                                            .frame(width: 90, height: 90)
-                                          .foregroundColor(Color.white)
-                                            .font(.system(size: 12))
-//                                            .background(ColorManager .grey4)
-                                            .multilineTextAlignment(.center)
-                                            .opacity(1.0)
-                                            .cornerRadius(50)
-                                            .shadow(color: Color.orange, radius: 2, x: 0, y: 1)
-                                            .blinking(duration: 2.0)
-                                            .opacity(0.6)
+                                        ZStack {
+                                            Image(systemName: "triangle.fill")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 45, height: 45)
+                                                .foregroundColor(ColorManager .grey2)
+                                                .glow(color: ColorManager.purple4, radius: 3)
+                                                .opacity(0.5)
+                                                .blinking(duration: 3.0)
+                                            
+                                            Text("vibe")
+                                                .fontWeight(.medium)
+                                                .frame(width: 90, height: 90)
+                                                .foregroundColor(Color.black)
+                                                .font(.system(size: 15))
+                                                .multilineTextAlignment(.center)
+                                                .opacity(1.0)
+                                                .blinking(duration: 3.0)
+                                                .opacity(0.6)
+                                        }
                                     })
                             }
                             
@@ -195,7 +201,7 @@ struct HomeView: View {
                                     .foregroundColor(Color.pink)
                                     .rotationEffect(.degrees(7))
                                     .glow(color: ColorManager.purple4, radius: 20)
-                                    .blinking(duration: 5.0)
+                                    .blinking(duration: 3.0)
                                 
                                 
                                 
@@ -203,18 +209,26 @@ struct HomeView: View {
                                     destination:  CH10(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
                                     label: {
                                         
-                                        Text("received \nCareHearts")
-                                            .fontWeight(.medium)
-                                            .frame(width: 80, height: 80)
-                                          .foregroundColor(Color.white)
-                                            .font(.system(size: 12))
-//                                            .background(ColorManager .grey4)
-                                            .multilineTextAlignment(.center)
-                                            .opacity(1.0)
-                                            .cornerRadius(50)
-                                            .shadow(color: Color.white, radius: 2, x: 0, y: 1)
-                                            .blinking(duration: 2.0)
-                                            .opacity(0.6)
+                                        ZStack {
+                                            Image(systemName: "heart.fill")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 45, height: 45)
+                                                .foregroundColor(ColorManager .purple2)
+                                                .glow(color: ColorManager.purple4, radius: 3)
+                                                .opacity(0.3)
+                                                .blinking(duration: 3.0)
+                                            
+                                            Text("-")
+                                                .fontWeight(.medium)
+                                                .frame(width: 90, height: 90)
+                                                .foregroundColor(Color.black)
+                                                .font(.system(size: 30))
+                                                .multilineTextAlignment(.center)
+                                                .opacity(1.0)
+                                                .blinking(duration: 3.0)
+                                                .opacity(0.6)
+                                        }
                                     })
                                 
                             }
