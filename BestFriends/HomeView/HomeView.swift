@@ -115,7 +115,7 @@ struct HomeView: View {
                                     .foregroundColor(Color.pink)
                                     .glow(color: ColorManager.purple4, radius: 20)
                                     .rotationEffect(.degrees(-7))
-                                    .blinking(duration: 3.0)
+                                    .blinking(duration: 4.0)
                                 
                                 
                                 NavigationLink(
@@ -130,7 +130,7 @@ struct HomeView: View {
                                                 .foregroundColor(Color.white)
                                                 .glow(color: ColorManager.purple4, radius: 3)
                                                 .opacity(0.7)
-                                                .blinking(duration: 3.0)
+                                                .blinking(duration: 4.0)
                                             
                                             Text("+")
                                                 .fontWeight(.medium)
@@ -139,7 +139,7 @@ struct HomeView: View {
                                                 .font(.system(size: 30))
                                                 .multilineTextAlignment(.center)
                                                 .opacity(1.0)
-                                                .blinking(duration: 3.0)
+                                                .blinking(duration: 4.0)
                                                 .opacity(0.6)
                                         }
                                         
@@ -159,7 +159,7 @@ struct HomeView: View {
                                     .frame(width: 95, height: 95)
                                     .foregroundColor(Color.orange)
                                     .glow(color: ColorManager.purple4, radius: 20)
-                                    .blinking(duration: 3.0)
+                                    .blinking(duration: 4.0)
                                 
                                 
                                 
@@ -175,7 +175,7 @@ struct HomeView: View {
                                                 .foregroundColor(Color.white)
 //                                                .glow(color: ColorManager.purple4, radius: 3)
                                                 .opacity(0.8)
-                                                .blinking(duration: 3.0)
+                                                .blinking(duration: 4.0)
                                             
                                             Text("vibe")
                                                 .fontWeight(.medium)
@@ -184,7 +184,7 @@ struct HomeView: View {
                                                 .font(.system(size: 15))
                                                 .multilineTextAlignment(.center)
                                                 .opacity(1.0)
-                                                .blinking(duration: 3.0)
+                                                .blinking(duration: 4.0)
                                                 .opacity(0.6)
                                         }
                                     })
@@ -201,7 +201,7 @@ struct HomeView: View {
                                     .foregroundColor(Color.pink)
                                     .rotationEffect(.degrees(7))
                                     .glow(color: ColorManager.purple4, radius: 20)
-                                    .blinking(duration: 3.0)
+                                    .blinking(duration: 4.0)
                                 
                                 
                                 
@@ -217,7 +217,7 @@ struct HomeView: View {
                                                 .foregroundColor(Color.white)
                                                 .glow(color: ColorManager.purple4, radius: 3)
                                                 .opacity(0.7)
-                                                .blinking(duration: 3.0)
+                                                .blinking(duration: 4.0)
                                             
                                             Text("-")
                                                 .fontWeight(.medium)
@@ -226,7 +226,7 @@ struct HomeView: View {
                                                 .font(.system(size: 30))
                                                 .multilineTextAlignment(.center)
                                                 .opacity(1.0)
-                                                .blinking(duration: 3.0)
+                                                .blinking(duration: 4.0)
                                                 .opacity(0.6)
                                         }
                                     })
@@ -248,7 +248,7 @@ struct HomeView: View {
                                 .foregroundColor(Color.pink)
                                 .rotationEffect(.degrees(7))
                                 .glow(color: ColorManager.purple4, radius: 20)
-                                .blinking(duration: 3.0)
+                                .blinking(duration: 4.0)
                                      
                                                 
                                                 
@@ -264,7 +264,7 @@ struct HomeView: View {
                                     .opacity(1.0)
                                     .cornerRadius(50)
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 1)
-                                    .blinking(duration: 3.0)
+                                    .blinking(duration: 4.0)
                                     .opacity(0.6)
                                     
                                                     

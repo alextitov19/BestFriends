@@ -104,23 +104,19 @@ struct BestFriendMessages: View {
                     
                     VStack {
                         
-                        Text("Save best messages")
+                        Text("Save favorite messages")
                             .font(.system(size: 23))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                   
                         
-                        Text("from CareHearts & Affirmatins")
-                            .font(.system(size: 23))
-                            .foregroundColor(ColorManager .grey1)
-                            .fontWeight(.regular)
-                            .multilineTextAlignment(.center)
+                  
                         
                         Spacer ()
                             .frame(height: 10)
                         
-                        Text("(just long-top messages in Chat")
+                        Text("(Just long-top in Chat")
                             .font(.system(size: 17))
                             .italic()
                             .foregroundColor(ColorManager .grey1)
