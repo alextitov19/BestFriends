@@ -28,14 +28,14 @@ struct HugPreload: View {
             
             
             
-//            Color.black
-//                .opacity(0.9)
-//                .ignoresSafeArea()
+            Color.black
+                .opacity(0.9)
+                .ignoresSafeArea()
             
-//            Image("CHBk3")
-//                .ignoresSafeArea()
-//                .scaledToFit()
-//                .opacity(0.9)
+            Image("CHBk4")
+                .ignoresSafeArea()
+                .scaledToFit()
+                .opacity(0.9)
             
             
             
@@ -64,11 +64,11 @@ struct HugPreload: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 200, height: 200)
-                            .foregroundColor(Color.pink)
+                            .foregroundColor(Color.cyan)
                             .rotationEffect(.degrees(7))
                             .glow(color: ColorManager.purple3, radius: 30)
                             .blinking(duration: 2.0)
-                            .opacity(0.2)
+                            .opacity(0.1)
                         
                         
                         
@@ -91,11 +91,11 @@ struct HugPreload: View {
                             HStack {
                                 
                                 NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
-                                    HugCircle (color: ColorManager.orange5, friendName: "Hugs")
+                                    HugCircle (color: Color.cyan, friendName: "\nHugs")
                                 })
                                 .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
-                                .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
-                                .opacity(0.5)
+                                .shadow(color: Color.blue, radius: 2, x: 2, y: 2)
+                                .opacity(0.9)
                                 
                                 
                         ZStack {
@@ -106,7 +106,7 @@ struct HugPreload: View {
                                     .shadow(color: ColorManager .orange4, radius: 10, x: 10, y: 10)
                                     .opacity(0.5)
                                     
-                            Spacer ()
+//                            Spacer ()
                                 .frame(height: 20)
                             
                                     Text("bad day \nsupport")
