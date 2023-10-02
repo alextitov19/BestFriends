@@ -283,9 +283,9 @@ struct HomeView: View {
                         Image(systemName: "heart.fill")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 300, height: 300)
+                            .frame(width: 350, height: 350)
                             .foregroundColor(ColorManager .purple3)
-                            .opacity(0.15)
+                            .opacity(0.1)
                             .glow(color: Color.white, radius: 75)
                             .blinking(duration: 4.0)
 
@@ -307,21 +307,22 @@ struct HomeView: View {
                                         .frame(width: 65, height: 65)
                                         .foregroundColor(Color.orange)
                                         .glow(color: ColorManager.purple4, radius: 20)
-
+                                        .blinking(duration: 4.0)
                                     
                                     
-                                    NavigationLink(
-                                        destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
-                                        label: {
-                                          
-                                                    Image(systemName: "camera")
-                                                        .resizable()
-                                                        .scaledToFit()
-                                                        .frame(width: 30, height: 30)
+                        NavigationLink(
+                            destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
+                            label: {
+                              
+                                        Image(systemName: "camera")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 30, height: 30)
 //                                                        .rotationEffect(.degrees(-7))
-                                                        .foregroundColor(ColorManager .purple3)
-                                                        .glow(color: ColorManager.purple4, radius: 2)
-                                                        .opacity(0.6)
+                                            .foregroundColor(ColorManager .purple3)
+                                            .glow(color: ColorManager.purple4, radius: 2)
+                                            .opacity(0.6)
+                                            .blinking(duration: 4.0)
                                                     
                                     })
                                 }
@@ -378,7 +379,7 @@ struct HomeView: View {
                                         .frame(width: 65, height: 65)
                                         .foregroundColor(Color.orange)
                                         .glow(color: ColorManager.purple4, radius: 20)
-
+                                        .blinking(duration: 4.0)
                                     
                                     
                                     NavigationLink(
@@ -390,7 +391,7 @@ struct HomeView: View {
                                                 .frame(width: 70, height: 70)
                                                 .foregroundColor(ColorManager .purple3)
                                                 .font(.system(size: 20))
-                                              
+                                                .blinking(duration: 4.0)
 //                                                .blinking(duration: 2.0)
                                     })
                                 }
@@ -403,54 +404,9 @@ struct HomeView: View {
                       
   
                             
-                            Spacer()
-                                .frame(width: 20)
-//
-//                            NavigationLink(
-//                                destination:  FH10(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-//                                label: {
-//
-//                                    Image(systemName: "info.circle")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 35, height: 35)
-//                                        .foregroundColor(ColorManager .purple2)
-////                                       .glow(color: ColorManager.purple4, radius: 3)
-//                                        .opacity(0.5)
-//                                })
-                            
-                            
-                            Spacer()
-                                .frame(width: 20)
-                            
-//                            ZStack {
-//
-//                                Image(systemName: "circle")
-//                                    .resizable()
-//                                    .scaledToFit()
-//                                    .frame(width: 60, height: 60)
-//                                    .foregroundColor(Color .green)
-//                                    .glow(color: ColorManager.purple4, radius: 20)
-////                                    .blinking(duration: 2.0)
-//
-//
-//                                NavigationLink( destination:  Step4_NuclearOption(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
-//                                                label: {
-//                                    Text("Fix \nFight")
-//                                        .fontWeight(.medium)
-//                                        .frame(width: 60, height: 60)
-//                                        .foregroundColor(Color.white)
-//                                        .font(.system(size: 10))
-//                                        .blinking(duration: 4.0)
-//
-//
-//
-//
-//
-//                                })
-//
-//
-//                            }
+//                            Spacer()
+//                                .frame(width: 40)
+
                         }
 
                     }
