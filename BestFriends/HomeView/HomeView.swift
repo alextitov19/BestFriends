@@ -279,50 +279,18 @@ struct HomeView: View {
                         Spacer()
 
                        
-                        
+
                         Image(systemName: "heart.fill")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 250, height: 250)
+                            .frame(width: 300, height: 300)
                             .foregroundColor(ColorManager .purple3)
                             .opacity(0.15)
                             .glow(color: Color.white, radius: 75)
                             .blinking(duration: 4.0)
-                        
-                        Spacer()
-                            .frame(height: 0)
-                        
-                        ZStack {
-                            
-                            Image(systemName: "")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 60, height: 60)
-                                .foregroundColor(Color.red)
-                            //                                    .blinking(duration: 2.0)
-                                .glow(color: ColorManager.purple4, radius: 3)
-                                .opacity(0.5)
-                                .onTapGesture {
-                                    print("Clicked notification bell")
-                                    presentingIANs.toggle()
-                                }
-                            
-                            NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
-                            ) { EmptyView() }
-                            
-                            
-                            Image(systemName: "star")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 40, height: 40)
-                                .foregroundColor(Color.white)
-                                .opacity(0.4)
-                                .glow(color: Color.white, radius: 5)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 5)
-                                .blinking(duration: 0.5)
-                            
-                        }
-                      
+
+
+
                         HStack {
 
 //          ********************************************* PhotoPOP links *************
@@ -358,7 +326,40 @@ struct HomeView: View {
                                     })
                                 }
 //******************************************************
+                            Spacer()
+                                .frame(width: 50)
                             
+                            
+                            ZStack {
+                                
+                                Image(systemName: "")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 60, height: 60)
+                                    .foregroundColor(Color.red)
+                                //                                    .blinking(duration: 2.0)
+                                    .glow(color: ColorManager.purple4, radius: 3)
+                                    .opacity(0.5)
+                                    .onTapGesture {
+                                        print("Clicked notification bell")
+                                        presentingIANs.toggle()
+                                    }
+                                
+                                NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
+                                ) { EmptyView() }
+                                
+                                
+                                Image(systemName: "star")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 40, height: 40)
+                                    .foregroundColor(Color.white)
+                                    .opacity(0.4)
+                                    .glow(color: Color.white, radius: 5)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 5)
+                                    .blinking(duration: 0.5)
+                                
+                            }
                             
                             
                             
