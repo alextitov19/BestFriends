@@ -52,7 +52,7 @@ struct MyRoomView: View {
             
             VStack {
                 
-                
+            
                 HStack {
                     
                     
@@ -145,36 +145,41 @@ struct MyRoomView: View {
                     
                 }
                 
-               
-                VStack {
-                    
-                    ZStack {
-                        Image(systemName: "circle.fill")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 90, height: 90)
-                            .foregroundColor(Color.orange)
-//                            .blinking(duration: 4.0)
-                            .glow(color: ColorManager.orange5, radius: 10)
-                        
-                        
-                        
-                        NavigationLink(
-                            destination:   FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                            label: {
-                                
-                                Text("Walk \nThrough")
-                                    .fontWeight(.regular)
-                                    .frame(width: 60, height: 60)
-                                    .foregroundColor(Color.white)
-                                    .font(.system(size: 15))
-                                
-//                                    .blinking(duration: 4.0)
-                            })
-                    }
-                    
-                }
+                Spacer()
+                    .frame(height: 85)
                 
+                VStack {
+                    HStack {
+                        
+                        
+                        ZStack {
+                            Image(systemName: "circle.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 90, height: 90)
+                                .foregroundColor(Color.orange)
+                            //                            .blinking(duration: 4.0)
+                                .glow(color: ColorManager.orange5, radius: 10)
+                            
+                            
+                            
+                            NavigationLink(
+                                destination:   FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                label: {
+                                    
+                                    Text("Walk \nThrough")
+                                        .fontWeight(.regular)
+                                        .frame(width: 60, height: 60)
+                                        .foregroundColor(Color.white)
+                                        .font(.system(size: 15))
+                                    
+                                    //                                    .blinking(duration: 4.0)
+                                })
+                            
+//                          
+                        }
+                    }
+                }
                 //                ******************************* In-app notifications ******************
                 
                 VStack {
@@ -745,9 +750,64 @@ struct MyRoomView: View {
                             }
                         }
                         
+//    ************************************************
+                        ZStack {
+
+                            Image(systemName: "circle")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 60, height: 60)
+                                .foregroundColor(Color .green)
+                                .glow(color: ColorManager.purple4, radius: 20)
+//                                    .blinking(duration: 2.0)
+
+
+                            NavigationLink( destination:  Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+                                            label: {
+                                Text("Fix \nFight")
+                                    .fontWeight(.medium)
+                                    .frame(width: 60, height: 60)
+                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 10))
+                                    .blinking(duration: 4.0)
+
+                            })
+
+                        }
+//    //    ************************************************
+                        
+                        ZStack {
+                                        Image(systemName: "cube")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 70, height: 70)
+                                            .foregroundColor(Color.green)
+                                            .rotationEffect(.degrees(180))
+                                            .opacity(0.6)
+                                            .blinking(duration: 2.0)
+                                            .glow(color: ColorManager.purple4, radius: 20)
+
+                                        
+//         *****************************************************************
+                                        NavigationLink(
+                                            destination:  RR23(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                            label: {
+                                                
+                                                Text("Beta")
+                                                    .fontWeight(.regular)
+                                                    .frame(width: 60, height: 60)
+                                                    .foregroundColor(Color.white)
+                                                    .font(.system(size: 15))
+                                                    .blinking(duration: 2.0)
+                                            }
+                                                )}
+                                            
+                        
+                        
+                        
                         
                         Spacer ()
-                            .frame(height: 300)
+                            .frame(height: 100)
                         
                         //      *********************** My Crushes ************************************************
                         

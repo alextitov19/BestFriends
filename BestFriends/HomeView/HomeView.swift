@@ -104,7 +104,7 @@ struct HomeView: View {
                             
                             
                             Spacer()
-                                .frame(width: 30)
+                                .frame(width: 25)
                             
                             ZStack {
 //                                Image(systemName: "heart")
@@ -115,6 +115,7 @@ struct HomeView: View {
                                     .foregroundColor(Color.pink)
                                     .glow(color: ColorManager.purple4, radius: 20)
                                     .rotationEffect(.degrees(-7))
+                                    .blinking(duration: 5.0)
                                 
                                 
                                 NavigationLink(
@@ -128,7 +129,7 @@ struct HomeView: View {
                                             .frame(width: 75, height: 75)
                                           .foregroundColor(Color.white)
                                             .font(.system(size: 12))
-                                            .background(ColorManager .grey4)
+//                                            .background(ColorManager .grey4)
                                             .multilineTextAlignment(.center)
                                             .opacity(1.0)
                                             .cornerRadius(50)
@@ -153,6 +154,7 @@ struct HomeView: View {
                                     .frame(width: 95, height: 95)
                                     .foregroundColor(Color.orange)
                                     .glow(color: ColorManager.purple4, radius: 20)
+                                    .blinking(duration: 5.0)
                                 
                                 
                                 
@@ -165,7 +167,7 @@ struct HomeView: View {
                                             .frame(width: 90, height: 90)
                                           .foregroundColor(Color.white)
                                             .font(.system(size: 12))
-                                            .background(ColorManager .grey4)
+//                                            .background(ColorManager .grey4)
                                             .multilineTextAlignment(.center)
                                             .opacity(1.0)
                                             .cornerRadius(50)
@@ -186,6 +188,7 @@ struct HomeView: View {
                                     .foregroundColor(Color.pink)
                                     .rotationEffect(.degrees(7))
                                     .glow(color: ColorManager.purple4, radius: 20)
+                                    .blinking(duration: 5.0)
                                 
                                 
                                 
@@ -198,7 +201,7 @@ struct HomeView: View {
                                             .frame(width: 80, height: 80)
                                           .foregroundColor(Color.white)
                                             .font(.system(size: 12))
-                                            .background(ColorManager .grey4)
+//                                            .background(ColorManager .grey4)
                                             .multilineTextAlignment(.center)
                                             .opacity(1.0)
                                             .cornerRadius(50)
@@ -240,6 +243,7 @@ struct HomeView: View {
                                 .foregroundColor(Color.pink)
                                 .rotationEffect(.degrees(7))
                                 .glow(color: ColorManager.purple4, radius: 20)
+                                .blinking(duration: 5.0)
                                      
                                                 
                                                 
@@ -250,7 +254,7 @@ struct HomeView: View {
                                     .frame(width: 80, height: 80)
                                   .foregroundColor(Color.white)
                                     .font(.system(size: 12))
-                                    .background(ColorManager .grey4)
+//                                    .background(ColorManager .grey4)
                                     .multilineTextAlignment(.center)
                                     .opacity(1.0)
                                     .cornerRadius(50)
@@ -308,7 +312,8 @@ struct HomeView: View {
                                 .frame(width: 40, height: 40)
                                 .foregroundColor(Color.white)
                                 .opacity(0.4)
-                                .glow(color: Color.white, radius: 1)
+                                .glow(color: Color.white, radius: 5)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 5)
                                 .blinking(duration: 0.5)
                             
                         }
@@ -388,7 +393,7 @@ struct HomeView: View {
                             
                             
                     ZStack {
-                                    Image(systemName: "oval")
+                                    Image(systemName: "circle")
                                         .resizable()
                                         .scaledToFit()
                                         .frame(width: 78, height: 78)
@@ -417,7 +422,7 @@ struct HomeView: View {
                             
                             
                     ZStack {
-                                    Image(systemName: "oval")
+                                    Image(systemName: "circle")
                                         .resizable()
                                         .scaledToFit()
                                         .frame(width: 78, height: 78)
@@ -468,34 +473,34 @@ struct HomeView: View {
                             Spacer()
                                 .frame(width: 20)
                             
-                            ZStack {
-                                
-                                Image(systemName: "circle")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 60, height: 60)
-                                    .foregroundColor(Color .green)
-                                    .glow(color: ColorManager.purple4, radius: 20)
-//                                    .blinking(duration: 2.0)
-                                
-                   
-                                NavigationLink( destination:  Step4_NuclearOption(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
-                                                label: {
-                                    Text("Fix \nFight")
-                                        .fontWeight(.medium)
-                                        .frame(width: 60, height: 60)
-                                        .foregroundColor(Color.white)
-                                        .font(.system(size: 10))
-                                        .blinking(duration: 4.0)
-                                    
-                            
-
-                                    
-                                    
-                                })
-                                
-
-                            }
+//                            ZStack {
+//
+//                                Image(systemName: "circle")
+//                                    .resizable()
+//                                    .scaledToFit()
+//                                    .frame(width: 60, height: 60)
+//                                    .foregroundColor(Color .green)
+//                                    .glow(color: ColorManager.purple4, radius: 20)
+////                                    .blinking(duration: 2.0)
+//
+//
+//                                NavigationLink( destination:  Step4_NuclearOption(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
+//                                                label: {
+//                                    Text("Fix \nFight")
+//                                        .fontWeight(.medium)
+//                                        .frame(width: 60, height: 60)
+//                                        .foregroundColor(Color.white)
+//                                        .font(.system(size: 10))
+//                                        .blinking(duration: 4.0)
+//
+//
+//
+//
+//
+//                                })
+//
+//
+//                            }
                         }
 
                     }
