@@ -93,12 +93,12 @@ struct HomeView: View {
 //                                destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
 //                                label: {
 //
-//                                    Image(systemName: "gear")
+//                                    Image(systemName: "heart")
 //                                        .resizable()
 //                                        .scaledToFit()
 //                                        .frame(width: 35, height: 35)
 //                                        .foregroundColor(Color.white)
-//                                    //                                        .glow(color: ColorManager.purple4, radius: 3)
+//                                    .glow(color: ColorManager.purple4, radius: 3)
 //                                        .opacity(0.9)
 //                                })
                             
@@ -122,20 +122,27 @@ struct HomeView: View {
                                     destination:  HugPreload(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
                                     label: {
                                         
+                                        Image(systemName: "heart")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 35, height: 35)
+                                            .foregroundColor(Color.white)
+                                        .glow(color: ColorManager.purple4, radius: 3)
+                                            .opacity(0.9)
+                                            .blinking(duration: 4.0)
                                         
-                                        
-                                        Text("send \nCareHearts")
-                                            .fontWeight(.medium)
-                                            .frame(width: 75, height: 75)
-                                          .foregroundColor(Color.white)
-                                            .font(.system(size: 12))
-//                                            .background(ColorManager .grey4)
-                                            .multilineTextAlignment(.center)
-                                            .opacity(1.0)
-                                            .cornerRadius(50)
-                                            .shadow(color: Color.white, radius: 2, x: 0, y: 1)
-                                            .blinking(duration: 2.0)
-                                            .opacity(0.6)
+//                                        Text("send \nCareHearts")
+//                                            .fontWeight(.medium)
+//                                            .frame(width: 75, height: 75)
+//                                          .foregroundColor(Color.white)
+//                                            .font(.system(size: 12))
+////                                            .background(ColorManager .grey4)
+//                                            .multilineTextAlignment(.center)
+//                                            .opacity(1.0)
+//                                            .cornerRadius(50)
+//                                            .shadow(color: Color.white, radius: 2, x: 0, y: 1)
+//                                            .blinking(duration: 2.0)
+//                                            .opacity(0.6)
                                         
                                         
                                         
@@ -278,7 +285,7 @@ struct HomeView: View {
                         Image(systemName: "heart.fill")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 350, height: 350)
+                            .frame(width: 250, height: 250)
                             .foregroundColor(ColorManager .purple3)
                             .opacity(0.15)
                             .glow(color: Color.white, radius: 75)
@@ -320,71 +327,35 @@ struct HomeView: View {
                       
                         HStack {
                   
-                            ZStack {
-                                            Image(systemName: "cube")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 70, height: 70)
-                                                .foregroundColor(Color.green)
-                                                .rotationEffect(.degrees(180))
-                                                .opacity(0.6)
-                                                .blinking(duration: 2.0)
-                                                .glow(color: ColorManager.purple4, radius: 20)
-
-                                            
-//         *****************************************************************
-                                            NavigationLink(
-                                                destination:  RR23(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                                                label: {
-
-                                                    Text("Beta")
-                                                        .fontWeight(.regular)
-                                                        .frame(width: 60, height: 60)
-                                                        .foregroundColor(Color.white)
-                                                        .font(.system(size: 15))
-                                                        .blinking(duration: 2.0)
-                                                    
-//        ****************************************************** Trying for a chat type
-                                                    
-                                                    
-//                                                    NavigationLink(
-//                                                        destination:  RR25(user: homeData!.user, group: homeData!.group),
-//                                                        label: {
-//                                                            
-//                                                            Text("BEST \nDays!")
-//                                                                .fontWeight(.regular)
-//                                                                .frame(width: 60, height: 60)
-//                                                                .foregroundColor(Color.white)
-//                                                                .font(.system(size: 15))
-//                                                                .blinking(duration: 2.0)
-                        
-//    *****************************************************
-                                                    
-                                                    
-                                                })
-                                        }
-                         
-                        
-//*******************************************
-
-                            
+//                            ZStack {
+//                                            Image(systemName: "cube")
+//                                                .resizable()
+//                                                .scaledToFit()
+//                                                .frame(width: 70, height: 70)
+//                                                .foregroundColor(Color.green)
+//                                                .rotationEffect(.degrees(180))
+//                                                .opacity(0.6)
+//                                                .blinking(duration: 2.0)
+//                                                .glow(color: ColorManager.purple4, radius: 20)
 //
-//                            Spacer()
-//                                .frame(width: 20)
 //
-//                            NavigationLink(
-//                                destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
-//                                label: {
+////         *****************************************************************
+//                                            NavigationLink(
+//                                                destination:  RR23(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+//                                                label: {
 //
-//                                    Image(systemName: "gear")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 35, height: 35)
-//                                        .foregroundColor(ColorManager .purple2)
-////                                        .glow(color: ColorManager.purple4, radius: 3)
-//                                        .opacity(0.5)
-//                                })
-                            
+//                                                    Text("Beta")
+//                                                        .fontWeight(.regular)
+//                                                        .frame(width: 60, height: 60)
+//                                                        .foregroundColor(Color.white)
+//                                                        .font(.system(size: 15))
+//                                                        .blinking(duration: 2.0)
+//
+//
+//                                                })
+//                                        }
+//
+//
 //          ********************************************* PhotoPOP links *************
                      
                             Spacer()
