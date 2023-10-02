@@ -159,7 +159,7 @@ struct HomeView: View {
                                     .frame(width: 95, height: 95)
                                     .foregroundColor(Color.orange)
                                     .glow(color: ColorManager.purple4, radius: 20)
-//                                    .blinking(duration: 5.0)
+                                    .blinking(duration: 3.0)
                                 
                                 
                                 
@@ -365,7 +365,7 @@ struct HomeView: View {
                                     Image(systemName: "circle")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 78, height: 78)
+                                        .frame(width: 65, height: 65)
                                         .foregroundColor(Color.orange)
                                         .glow(color: ColorManager.purple4, radius: 20)
 
@@ -378,7 +378,7 @@ struct HomeView: View {
                                                     Image(systemName: "camera")
                                                         .resizable()
                                                         .scaledToFit()
-                                                        .frame(width: 35, height: 35)
+                                                        .frame(width: 30, height: 30)
 //                                                        .rotationEffect(.degrees(-7))
                                                         .foregroundColor(ColorManager .purple3)
                                                         .glow(color: ColorManager.purple4, radius: 2)
@@ -391,7 +391,7 @@ struct HomeView: View {
                                 }
                             
                             Spacer()
-                                .frame(width: 20)
+                                .frame(width: 50)
                             
                             
                             
@@ -399,7 +399,7 @@ struct HomeView: View {
                                     Image(systemName: "circle")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 78, height: 78)
+                                        .frame(width: 65, height: 65)
                                         .foregroundColor(Color.orange)
                                         .glow(color: ColorManager.purple4, radius: 20)
 
