@@ -102,7 +102,7 @@ struct FH2: View {
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
-                        Text("on a 'closed' social network")
+                        Text("on a 'closed' friend network")
                             .font(.system(size: 22))
                             .foregroundColor(Color.white)
                             .fontWeight(.thin)

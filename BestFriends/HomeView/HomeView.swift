@@ -283,7 +283,7 @@ struct HomeView: View {
                         Image(systemName: "heart.fill")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 350, height: 350)
+                            .frame(width: 375, height: 375)
                             .foregroundColor(ColorManager .purple3)
                             .opacity(0.1)
                             .glow(color: Color.white, radius: 75)
@@ -377,13 +377,13 @@ struct HomeView: View {
                             
                             
                     ZStack {
-                                    Image(systemName: "circle")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 65, height: 65)
-                                        .foregroundColor(Color.orange)
-                                        .glow(color: ColorManager.purple4, radius: 20)
-                                        .blinking(duration: 4.0)
+//                                    Image(systemName: "circle")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 65, height: 65)
+//                                        .foregroundColor(Color.orange)
+//                                        .glow(color: ColorManager.purple4, radius: 20)
+//                                        .blinking(duration: 4.0)
                                     
                                     
                                     NavigationLink(
