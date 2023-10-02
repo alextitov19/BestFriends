@@ -76,18 +76,22 @@ struct HugPushNotification: View {
                             
                             ZStack {
                                 
-                                 
+                                Image(systemName: "cube.fill")
+                                    .resizable()
+                                    .foregroundColor(Color.purple)
+                                    .frame(width: 250, height: 200)
+                                    .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                                    .opacity(0.5)
                                     
                                 VStack {
                                    
                                     
                                     Text("Friend need")
-                                        .font(.system(size: 45, weight: .light))
+                                        .font(.system(size: 30, weight: .light))
                                         .foregroundColor(Color.white)
                                     
                                     Text("a hug?")
-                                        .font(.system(size: 45, weight: .light))
-                                        .italic()
+                                        .font(.system(size: 30, weight: .light))
                                         .foregroundColor(Color.white)
                                     
                                     Spacer()

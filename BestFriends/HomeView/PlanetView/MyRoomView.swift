@@ -801,8 +801,33 @@ struct MyRoomView: View {
                                                     .blinking(duration: 2.0)
                                             }
                                                 )}
-                                            
-                        
+                                      
+                        ZStack {
+                            
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .foregroundColor(Color.cyan)
+                                .frame(width: 150, height: 110)
+                                .rotationEffect(.degrees(7))
+                                .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+                                .opacity(0.5)
+//                                        .blinking(duration: 2.0)
+                            
+                            
+                            NavigationLink(destination: RR31(user: user, friends: friends), label: {
+                                
+                                Text("We're here \nfor you")
+                                    .fontWeight(.thin)
+                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 20))
+                                    .multilineTextAlignment(.center)
+                                    .rotationEffect(.degrees(7))
+                                    .opacity(1.0)
+//                                            .blinking(duration: 2.0)
+                                
+                                
+                            }
+                            )}
                         
                         
                         

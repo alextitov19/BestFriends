@@ -142,7 +142,7 @@ struct CH4: View {
                         
                         ZStack {
                             
-                            Image(systemName: "circle.fill")
+                            Image(systemName: "cube.fill")
                                 .resizable()
                                 .foregroundColor(Color.purple)
                                 .frame(width: 420, height: 250)

@@ -59,7 +59,7 @@ struct SendKisses: View {
                     .ignoresSafeArea()
                 
                 
-                AdPlayerView(name: "background_8")
+                AdPlayerView(name: "background_9")
                     .ignoresSafeArea()
                     .blendMode(.screen)
            
@@ -75,12 +75,18 @@ struct SendKisses: View {
                         
                         ZStack {
                             
-
+                            Image(systemName: "cube.fill")
+                                .resizable()
+                                .foregroundColor(Color.purple)
+                                .frame(width: 250, height: 200)
+                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                                .opacity(0.5)
+                          
                             VStack {
                              
                                 
                                 Text("Blowing Kisses")
-                                    .font(.system(size: 45, weight: .light))
+                                    .font(.system(size: 30, weight: .light))
                                     .foregroundColor(ColorManager .grey1)
                                 
                              

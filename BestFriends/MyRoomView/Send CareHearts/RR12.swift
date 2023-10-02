@@ -109,12 +109,12 @@ struct RR12: View {
                       
                   } else {
 
-//                      Image("CareHeartBalloon 1")
-//                          .ignoresSafeArea()
-//                          .scaledToFit()
-//                          .opacity(0.1)
-                      
                       Color.black
+                        .opacity(0.9)
+                        .ignoresSafeArea()
+                        .blendMode(.screen)
+                      
+                      Color.purple
                         .opacity(0.9)
                         .ignoresSafeArea()
                       
@@ -193,7 +193,7 @@ struct RR12: View {
                     ZStack {
                   
                         
-                        Image(systemName: "heart.fill")
+                        Image(systemName: "cube.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
                             .frame(width: 260, height: 210)
