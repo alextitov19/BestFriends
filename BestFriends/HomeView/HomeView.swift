@@ -301,31 +301,35 @@ struct HomeView: View {
                             
                             
                     ZStack {
-                                    Image(systemName: "circle")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 65, height: 65)
-                                        .foregroundColor(Color.orange)
-                                        .glow(color: ColorManager.purple4, radius: 20)
-                                        .blinking(duration: 4.0)
+//                                    Image(systemName: "circle")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 65, height: 65)
+//                                        .foregroundColor(Color.orange)
+//                                        .glow(color: ColorManager.purple4, radius: 20)
+//                                        .blinking(duration: 4.0)
                                     
-                                    
+
+                                 
                         NavigationLink(
                             destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
                             label: {
-                              
-                                        Image(systemName: "camera")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 30, height: 30)
-//                                                        .rotationEffect(.degrees(-7))
-                                            .foregroundColor(ColorManager .purple3)
-                                            .glow(color: ColorManager.purple4, radius: 2)
-                                            .opacity(0.6)
-                                            .blinking(duration: 4.0)
-                                                    
+                                
+                                Image(systemName: "camera")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 37, height: 37)
+//                                    .rotationEffect(.degrees(-7))
+                                    .foregroundColor(Color.cyan)
+                                    .glow(color: ColorManager.purple4, radius: 2)
+                                    .opacity(0.6)
+//                                    .blinking(duration: 4.0)
+                        
                                     })
                                 }
+                            
+                            
+                            
 //******************************************************
                             Spacer()
                                 .frame(width: 50)
@@ -387,11 +391,11 @@ struct HomeView: View {
                                         label: {
                                             
                                             Text("?")
-                                                .fontWeight(.regular)
-                                                .frame(width: 70, height: 70)
+                                                .fontWeight(.medium)
+                                                .frame(width: 90, height: 90)
                                                 .foregroundColor(ColorManager .purple3)
                                                 .font(.system(size: 20))
-                                                .blinking(duration: 4.0)
+//                                                .blinking(duration: 4.0)
 //                                                .blinking(duration: 2.0)
                                     })
                                 }
