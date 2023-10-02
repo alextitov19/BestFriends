@@ -128,15 +128,15 @@ struct HomeView: View {
                                                 .scaledToFit()
                                                 .frame(width: 45, height: 45)
                                                 .foregroundColor(Color.white)
-                                                .glow(color: ColorManager.purple4, radius: 3)
-                                                .opacity(0.7)
+                                                .glow(color: Color.cyan, radius: 3)
+                                                .opacity(0.25)
                                                 .blinking(duration: 4.0)
                                             
-                                            Text("+")
+                                            Text("out")
                                                 .fontWeight(.medium)
                                                 .frame(width: 90, height: 90)
                                                 .foregroundColor(Color.black)
-                                                .font(.system(size: 30))
+                                                .font(.system(size: 17))
                                                 .multilineTextAlignment(.center)
                                                 .opacity(1.0)
                                                 .blinking(duration: 4.0)
@@ -215,15 +215,15 @@ struct HomeView: View {
                                                 .scaledToFit()
                                                 .frame(width: 45, height: 45)
                                                 .foregroundColor(Color.white)
-                                                .glow(color: ColorManager.purple4, radius: 3)
-                                                .opacity(0.7)
+                                                .glow(color: Color.cyan, radius: 3)
+                                                .opacity(0.25)
                                                 .blinking(duration: 4.0)
                                             
-                                            Text("-")
+                                            Text("in")
                                                 .fontWeight(.medium)
                                                 .frame(width: 90, height: 90)
                                                 .foregroundColor(Color.black)
-                                                .font(.system(size: 30))
+                                                .font(.system(size: 17))
                                                 .multilineTextAlignment(.center)
                                                 .opacity(1.0)
                                                 .blinking(duration: 4.0)
@@ -301,13 +301,13 @@ struct HomeView: View {
                             
                             
                     ZStack {
-//                                    Image(systemName: "circle")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 65, height: 65)
-//                                        .foregroundColor(Color.orange)
-//                                        .glow(color: ColorManager.purple4, radius: 20)
-//                                        .blinking(duration: 4.0)
+                                    Image(systemName: "circle")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 65, height: 65)
+                                        .foregroundColor(Color.orange)
+                                        .glow(color: ColorManager.purple4, radius: 20)
+                                        .blinking(duration: 4.0)
                                     
 
                                  
@@ -357,11 +357,11 @@ struct HomeView: View {
                                 Image(systemName: "star")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 40, height: 40)
+                                    .frame(width: 60, height: 60)
                                     .foregroundColor(Color.white)
                                     .opacity(0.4)
-                                    .glow(color: Color.white, radius: 5)
-                                    .shadow(color: Color.white, radius: 2, x: 0, y: 5)
+                                    .glow(color: Color.white, radius: 3)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 3)
                                     .blinking(duration: 0.5)
                                 
                             }
@@ -377,13 +377,13 @@ struct HomeView: View {
                             
                             
                     ZStack {
-//                                    Image(systemName: "circle")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 65, height: 65)
-//                                        .foregroundColor(Color.orange)
-//                                        .glow(color: ColorManager.purple4, radius: 20)
-//                                        .blinking(duration: 4.0)
+                                    Image(systemName: "circle")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 65, height: 65)
+                                        .foregroundColor(Color.orange)
+                                        .glow(color: ColorManager.purple4, radius: 20)
+                                        .blinking(duration: 4.0)
                                     
                                     
                                     NavigationLink(
@@ -392,9 +392,9 @@ struct HomeView: View {
                                             
                                             Text("?")
                                                 .fontWeight(.medium)
-                                                .frame(width: 90, height: 90)
-                                                .foregroundColor(ColorManager .purple3)
-                                                .font(.system(size: 20))
+                                                .frame(width: 100, height: 100)
+                                                .foregroundColor(Color.cyan)
+                                                .font(.system(size: 30))
 //                                                .blinking(duration: 4.0)
 //                                                .blinking(duration: 2.0)
                                     })
