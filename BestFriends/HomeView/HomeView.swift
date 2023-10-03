@@ -73,23 +73,37 @@ struct HomeView: View {
                     .blendMode(.screen)
 //                    .opacity(0.99)
                 
-           
-                
-                
-                
-                
+             
                 VStack {
-                    
-                    Spacer()
-                        .frame(height: 25)
-                    
-                    
+                 
                     if ((homeData) != nil) {
+
+                    
+                        VStack {
+                            ZStack {
+                            
+                                
+                                NavigationLink(
+                                    destination:  BestFriendMessages(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres),
+                                    label: {
+                                        
+                                        Image("IconRoomNew")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 37, height: 37)
+                                        //                                    .rotationEffect(.degrees(-7))
+                                            .foregroundColor(ColorManager .purple5)
+                                            .glow(color: Color.purple, radius: 2)
+                                            .opacity(0.9)
+                                    })
+                            }
+                        }
                
                         HStack {
    
                             Spacer()
-                                .frame(width: 25)
+                                .frame(width: 10)
+                            
                             
                             ZStack {
 
@@ -102,21 +116,13 @@ struct HomeView: View {
                                             Image(systemName: "cube")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 60, height: 60)
+                                                .frame(width: 50, height: 50)
                                                 .foregroundColor(Color.white)
                                                 .glow(color: Color.cyan, radius: 3)
                                                 .opacity(0.13)
                                                 .blinking(duration: 4.0)
                                             
-//                                            Text("send")
-//                                                .fontWeight(.bold)
-//                                                .frame(width: 90, height: 90)
-//                                                .foregroundColor(Color.white)
-//                                                .font(.system(size: 20))
-//                                                .multilineTextAlignment(.center)
-//                                                .opacity(1.0)
-//                                                .blinking(duration: 4.0)
-//                                                .opacity(0.6)
+
                                         }
                                         
                                         
@@ -139,21 +145,12 @@ struct HomeView: View {
                                             Image("iconVibes75")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 60, height: 60)
+                                                .frame(width: 50, height: 50)
                                                 .foregroundColor(Color.white)
                                                .glow(color: Color.white, radius: 2)
                                                 .opacity(0.8)
                                                 .blinking(duration: 4.0)
-//
-//                                            Text("my \nvibe")
-//                                                .fontWeight(.medium)
-//                                                .frame(width: 70, height: 70)
-//                                                .foregroundColor(Color.black)
-//                                                .font(.system(size: 15))
-//                                                .multilineTextAlignment(.center)
-//                                                .opacity(0.5)
-//                                                .blinking(duration: 4.0)
-//                                                .opacity(0.6)
+
                                         }
                                     })
                             }
@@ -173,21 +170,13 @@ struct HomeView: View {
                                             Image(systemName: "cube")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 60, height: 60)
+                                                .frame(width: 50, height: 50)
                                                 .foregroundColor(Color.white)
                                                 .glow(color: Color.cyan, radius: 3)
                                                 .opacity(0.13)
                                                 .blinking(duration: 4.0)
                                             
-//                                            Text("received")
-//                                                .fontWeight(.bold)
-//                                                .frame(width: 95, height: 95)
-//                                                .foregroundColor(Color.white)
-//                                                .font(.system(size: 17))
-//                                                .multilineTextAlignment(.center)
-//                                                .opacity(1.0)
-//                                                .blinking(duration: 4.0)
-//                                                .opacity(0.6)
+
                                         }
                                     })
                                 
@@ -198,37 +187,7 @@ struct HomeView: View {
 
                                 
                             }
-                            
-                        ZStack {
-                            ZStack {
-                                Image(systemName: "circle")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 65, height: 65)
-                                    .foregroundColor(ColorManager .purple4)
-                                    .glow(color: Color.blue, radius: 20)
-                                    .blinking(duration: 4.0)
-                                
-                                
-                                NavigationLink(
-                                    destination:  BestFriendMessages(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres),
-                                    label: {
-                                        
-                                        Image("IconRoomNew")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 45, height: 45)
-                                        //                                    .rotationEffect(.degrees(-7))
-                                            .foregroundColor(ColorManager .purple5)
-                                            .glow(color: Color.purple, radius: 2)
-                                            .opacity(0.9)
-                                    })
-                            }
-                        }
-                                
-                                
-                                
-                      
+      
                     
                         
                         
@@ -261,14 +220,14 @@ struct HomeView: View {
                             
                             
                     ZStack {
-                                    Image(systemName: "circle")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 65, height: 65)
-                                        .foregroundColor(Color.blue)
-                                        .glow(color: ColorManager .purple4, radius: 20)
-                                        .blinking(duration: 4.0)
-                                    
+//                                    Image(systemName: "circle")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 65, height: 65)
+//                                        .foregroundColor(Color.blue)
+//                                        .glow(color: ColorManager .purple4, radius: 20)
+//                                        .blinking(duration: 4.0)
+//
 
                                  
                         NavigationLink(
@@ -278,7 +237,7 @@ struct HomeView: View {
                                 Image("IconPhotoNew")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 45, height: 45)
+                                    .frame(width: 50, height: 50)
 //                                    .rotationEffect(.degrees(-7))
                                     .foregroundColor(ColorManager .purple5)
                                     .glow(color: Color.purple, radius: 2)
@@ -297,11 +256,11 @@ struct HomeView: View {
                             
                             ZStack {
                                 
-                                Image(systemName: "")
+                                Image("iconStar40")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 60, height: 60)
-                                    .foregroundColor(Color.red)
+                                    .foregroundColor(Color.white)
                                 //                                    .blinking(duration: 2.0)
                                     .glow(color: ColorManager.purple4, radius: 3)
                                     .opacity(0.5)
@@ -317,9 +276,10 @@ struct HomeView: View {
                                 Image(systemName: "star")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 60, height: 60)
+                                    .frame(width: 55, height: 55)
                                     .foregroundColor(Color.white)
                                     .opacity(0.4)
+                                    .rotationEffect(.degrees(-10))
                                     .glow(color: Color.white, radius: 3)
                                     .shadow(color: Color.blue, radius: 2, x: 0, y: 3)
                                     .blinking(duration: 0.75)
@@ -337,15 +297,15 @@ struct HomeView: View {
                             
                             
                     ZStack {
-                                    Image(systemName: "circle")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 65, height: 65)
-                                        .foregroundColor(ColorManager .purple4)
-                                        .glow(color: Color.blue, radius: 20)
-                                        .blinking(duration: 4.0)
-                                    
-                                    
+//                                    Image(systemName: "circle")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 65, height: 65)
+//                                        .foregroundColor(ColorManager .purple4)
+//                                        .glow(color: Color.blue, radius: 20)
+//                                        .blinking(duration: 4.0)
+//
+//
                                     NavigationLink(
                                         destination:  RR5(user: homeData!.user, friends: homeData!.friends),
                                         label: {
@@ -353,7 +313,7 @@ struct HomeView: View {
                                             Image("IconHugNew")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 45, height: 45)
+                                                .frame(width: 50, height: 50)
             //                                    .rotationEffect(.degrees(-7))
                                                 .foregroundColor(ColorManager .purple5)
                                                 .glow(color: Color.purple, radius: 2)
