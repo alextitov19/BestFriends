@@ -404,7 +404,7 @@ struct NotificationsView: View {
                     
                     
 // *********** Well-being
-                case "Wow, your friends really care about protecting you!":
+                case "is watching out for you.":
                     mentalHealthActive = true
                     
                 case "Ahhh! Thanks for the support!":

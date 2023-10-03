@@ -138,6 +138,7 @@ struct CH4: View {
                     
 //***************************************************
                     VStack {
+                   
                         
                         
                         ZStack {
@@ -145,64 +146,116 @@ struct CH4: View {
                             Image(systemName: "cube.fill")
                                 .resizable()
                                 .foregroundColor(Color.purple)
-                                .frame(width: 420, height: 250)
+                                .frame(width: 250, height: 150)
                                 .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                                 .opacity(0.5)
                             
                             VStack {
                                 
-                                Text("Send 'that' song")
-                                    .font(.system(size: 40, weight: .light))
-        //                            .italic()
+                                Text("Friend having a")
+                                    .font(.system(size: 20, weight: .light))
                                     .foregroundColor(Color.white)
                                 
+                                Text("really bad day?")
+                                    .font(.system(size: 20, weight: .light))
+                                    .foregroundColor(Color.white)
                                 Spacer()
                                     .frame(height: 10)
                                 
-                                Text("You know 'that' song you listen to")
-                                    .font(.system(size: 16, weight: .light))
+                                Text("Send a song")
+                                    .font(.system(size: 30, weight: .light))
                                     .foregroundColor(Color.white)
+                               
+                            }
+                        
+                        }
+                    }
+                    
+                    
+                    HStack {
+                        
+                        ZStack {
+                            Image("comicBubble")
+                                .resizable()
+                                .foregroundColor(Color.white)
+                                .frame(width: 250, height: 170)
+                                .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+                                .opacity(0.5)
+                                .blinking(duration: 3.0)
+                            
+                            VStack {
+                                
+                                
+                                Text("You know that song you listen to")
+                                    .font(.system(size: 9))
+                                    .italic()
+                                    .fontWeight(.light)
                                     .multilineTextAlignment(.center)
-                       
+                                    .foregroundColor(Color.white)
+                                    .rotationEffect(.degrees(-7))
+                                    .blinking(duration: 3.0)
+                                
                                 Text("over-and-over while lying in bed,")
-                                    .font(.system(size: 16, weight: .light))
-                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 9))
+                                    .italic()
+                                    .fontWeight(.light)
                                     .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.white)
+                                    .rotationEffect(.degrees(-7))
+                                    .blinking(duration: 3.0)
+                                
+                           
                                 
                                 Text("covers over your head,")
-                                    .font(.system(size: 16, weight: .light))
-                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 9))
+                                    .italic()
+                                    .fontWeight(.light)
                                     .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.white)
+                                    .rotationEffect(.degrees(-7))
+                                    .blinking(duration: 3.0)
                                 
-                                Text("tear lines down your cheeks,")
-                                    .font(.system(size: 16, weight: .light))
-                                    .foregroundColor(Color.white)
-                                    .multilineTextAlignment(.center)
-                                
-                                Text("asking why,")
-                                    .font(.system(size: 16, weight: .light))
-                                    .foregroundColor(Color.white)
-                                    .multilineTextAlignment(.center)
-                                
-                                Text("when you're having a truely bad day.")
-                                    .font(.system(size: 16, weight: .light))
-                                    .foregroundColor(Color.white)
-                                    .multilineTextAlignment(.center)
-                            }
-                             
-
                             }
                         }
+
+//
+                        ZStack {
+                            
+                            
+                            Image("comicBubble")
+                                .resizable()
+                                .foregroundColor(Color.white)
+                                .frame(width: 250, height: 170)
+                                .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+                                .opacity(0.5)
+                                .blinking(duration: 3.0)
+                            
+                            VStack {
+                                
+                                Text("with tear lines down your cheeks,")
+                                    .font(.system(size: 9))
+                                    .italic()
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.white)
+                                    .rotationEffect(.degrees(-7))
+                                    .blinking(duration: 3.0)
+                                
+                                
+
+                                Text("when you're having a truely bad day.")
+                                    .font(.system(size: 9))
+                                    .italic()
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.white)
+                                    .rotationEffect(.degrees(-7))
+                                    .blinking(duration: 3.0)
+                                
+                            }
+                        }
+                    }
                     
-                    Text("WOW, your friend's having")
-                        .font(.system(size: 20, weight: .light))
-                        .italic()
-                        .foregroundColor(ColorManager .grey1)
-                    
-                    Text("a really bad day")
-                        .font(.system(size: 20, weight: .light))
-                        .italic()
-                        .foregroundColor(ColorManager .grey1)
                     
                     //***************************************************
                 
@@ -211,7 +264,7 @@ struct CH4: View {
                                        
                                              
                                                 VStack {
-                                                    Spacer()
+//                                                     Spacer()
                                                     // TextField for userInput
                                                     TextField("", text: $customMessage)
                                                         .placeholder(when: customMessage.isEmpty) {
@@ -242,30 +295,7 @@ struct CH4: View {
                                                 }
                                         }
 
-                    
-                    
-                
-//      *************************************************
-          
-              
-                        
-//****************************************************************
-                        
-          
-                        
-                        //****************************************************************
-                        
-                        Spacer()
-                            .frame(height: 20)
-                        
-                    Text("(alert friend to check Chat")
-                        .font(.system(size: 15))
-                        .italic()
-                        .fontWeight(.light)
-                        .foregroundColor(ColorManager .grey1)
-                        .multilineTextAlignment(.center)
-
-            
+        
             
                     VStack {
                         

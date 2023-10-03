@@ -63,18 +63,18 @@ struct HugPreload: View {
                             .blinking(duration: 2.0)
                             .opacity(0.3)
                         
-                        
-                        
-                        Spacer ()
-                            .frame(height: 20)
-                        
+//                        
+//                        
+//                        Spacer ()
+//                            .frame(height: 20)
+//                        
                         Text("'Send \nFriendship \nSupport'")
-                            .font(.system(size: 40))
+                            .font(.system(size: 30))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .blinking(duration: 2.0)
-                        
+                    
               
                     }
                     

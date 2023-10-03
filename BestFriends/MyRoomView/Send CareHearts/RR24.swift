@@ -106,16 +106,12 @@ struct RR24: View {
                       
                   } else {
 
-                      Image("CareHeartBalloon 1")
-                          .ignoresSafeArea()
-                          .scaledToFit()
-                          .opacity(0.1)
                       
                       Color.black
                         .opacity(0.9)
                         .ignoresSafeArea()
                       
-                      AdPlayerView(name: "background_9")
+                      AdPlayerView(name: "sky2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
                           .opacity(0.6)
@@ -153,49 +149,25 @@ struct RR24: View {
                             Spacer()
                                 .frame(height: 7)
                             
-                            Text("Send friend a")
-                                .font(.system(size: 20, weight: .light))
-                                .foregroundColor(ColorManager .grey1)
-                                    .multilineTextAlignment(.center)
                             
-                            Text("Protection CareHeart")
-                                .font(.system(size: 20, weight: .light))
+                            Text("Helping friends protect")
+                                .font(.system(size: 23, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                 .multilineTextAlignment(.center)
-                         
+                            
+                            Text("their mental health")
+                                .font(.system(size: 23, weight: .light))
+                                .foregroundColor(ColorManager .grey1)
+                                .multilineTextAlignment(.center)
                             
                             Spacer()
                                 .frame(height: 10)
-//
-//                            NavigationLink(
-//                                destination:  PhotoPopView(user: user, friends: friends),
-//                                label: {
-//
-//                                    Image(systemName: "camera")
-//
-//                                       .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 40, height: 40)
-//                                        .foregroundColor(Color.cyan)
-//                                        .glow(color: ColorManager.purple4, radius: 2)
-//                                        .opacity(0.6)
-//
-//                                })
-                            
+
                         }
                     }
                 }
                 
-                
-                Text("Helping friends protect")
-                    .font(.system(size: 35, weight: .light))
-                    .foregroundColor(ColorManager .grey1)
-                    .multilineTextAlignment(.center)
-                
-                Text("their mental health...")
-                    .font(.system(size: 35, weight: .light))
-                    .foregroundColor(ColorManager .grey1)
-                    .multilineTextAlignment(.center)
+           
 //                **************************************
                 
                 ZStack {
@@ -217,13 +189,13 @@ struct RR24: View {
                                     .submitLabel(.done)
                                     .onReceive(Just(customMessage)) { _ in limitText(65) }
                                     .padding(.top, 20)
-                                    .padding(.horizontal, 150)
+                                    .padding(.horizontal, 50)
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 10)
                                             .stroke(Color.purple)
                                         //                                                            .background(ColorManager.purple3)
                                             .frame(height: 50)
-                                            .padding(.horizontal, 125)
+                                            .padding(.horizontal, 25)
                                     )
                                     .padding(.bottom, 5)
                             }
@@ -238,7 +210,7 @@ struct RR24: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("(send push notification asking if they want to talk)")
+                    Text("(alert friend to check Chat)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
@@ -354,7 +326,7 @@ struct RR24: View {
                                 .background(ColorManager .grey2)
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your CareHeart is on it's way. \n\nYou're a great friend.", isPresented: $showingAlert) {
+                                .alert("Sent. \n\nYou're a great friend.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
@@ -405,11 +377,11 @@ struct RR24: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) is asking if you want to talk", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) is watching out for you.", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Just sent you a Protection CareHeart and asking if you want to talk.", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "is watching out for you.", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                         print("Create a mental health notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)
