@@ -52,36 +52,30 @@ struct HugPreload: View {
                     
                     ZStack {
                         
-                        Text("send")
-                            .font(.system(size: 20))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
+                  
                         
-                        
-                        
-                        Image(systemName: "circle.fill")
+                        Image(systemName: "circle")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 200, height: 200)
+                            .frame(width: 225, height: 225)
                             .foregroundColor(Color.cyan)
-                            .rotationEffect(.degrees(7))
-                            .glow(color: ColorManager.purple3, radius: 30)
+//                            .glow(color: ColorManager.purple3, radius: 30)
                             .blinking(duration: 2.0)
-                            .opacity(0.1)
+                            .opacity(0.3)
                         
                         
                         
                         Spacer ()
                             .frame(height: 20)
                         
-                        Text("emotional support")
+                        Text("'Friendship \nSupport'")
                             .font(.system(size: 40))
                             .foregroundColor(Color.white)
-                            .fontWeight(.thin)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .blinking(duration: 2.0)
                         
+              
                     }
                     
                     HStack {
@@ -291,7 +285,7 @@ struct HugPreload: View {
                                 
                                 
                                 Spacer ()
-                                    .frame(width: 60)
+                                    .frame(width: 20)
                                 
                                 ZStack {
                                     
@@ -324,8 +318,8 @@ struct HugPreload: View {
                             
                             VStack {
                                 
-                                Spacer ()
-                                    .frame(height: 50)
+//                                Spacer ()
+//                                    .frame(height: 20)
                                 
                             }
                         }

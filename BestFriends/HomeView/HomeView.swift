@@ -177,7 +177,7 @@ struct HomeView: View {
                                                 .opacity(0.8)
                                                 .blinking(duration: 4.0)
                                             
-                                            Text("vibe")
+                                            Text("my \nvibe")
                                                 .fontWeight(.medium)
                                                 .frame(width: 90, height: 90)
                                                 .foregroundColor(Color.black)
