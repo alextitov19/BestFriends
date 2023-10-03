@@ -69,7 +69,7 @@ struct PhotoPopView: View {
                         .font(.system(size: 30))
                         .background(ColorManager .grey3)
 //                            .opacity(0.7)
-                        .cornerRadius(10)
+                        .cornerRadius(20)
                         .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                 })
                 

@@ -62,29 +62,11 @@ struct PhotoPop3: View {
                 
                 VStack {
               
-                    
-                    Text("Send push notification")
-                        .font(.system(size: 20, weight: .light))
-                        .foregroundColor(Color.white)
-                    
-                    Text("(friend taps notification & shakes iPhone)")
+                    Text("(alert friend)")
                         .font(.system(size: 15, weight: .light))
                         .italic()
                         .foregroundColor(Color.white)
-                    
-                    
-                    Spacer()
-                        .frame(height: 20)
-                    
-                    Text("They see the image")
-                        .font(.system(size: 27, weight: .light))
-                    //                            .italic()
-                        .foregroundColor(Color.white)
-                    
-                    Text("instantly")
-                        .font(.system(size: 27, weight: .light))
-                    //                            .italic()
-                        .foregroundColor(Color.white)
+                  
                     
                 }
                     VStack {
@@ -227,22 +209,7 @@ struct PhotoPop3: View {
                         
                     })
                     
-                    Spacer()
-                        .frame(height: 40)
-                    
-                    Text("In-app notification")
-                        .font(.system(size: 15, weight: .light))
-                        .italic()
-                        .foregroundColor(ColorManager .grey1)
-                    
-                    Text("was automatically sent")
-                        .font(.system(size: 15, weight: .light))
-                        .italic()
-                        .foregroundColor(ColorManager .grey1)
-                    
-                    
-                    
-                    
+               
                     VStack {
                         
                         
