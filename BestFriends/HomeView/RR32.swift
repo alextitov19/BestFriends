@@ -64,7 +64,7 @@ struct RR32: View {
                     .ignoresSafeArea()
                 
                 
-                AdPlayerView(name: "background_8")
+                AdPlayerView(name: "Planet4")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
@@ -109,10 +109,62 @@ VStack {
                                 .background(mood == 8 ? Color.yellow : ColorManager .grey2)
                                 .cornerRadius(40)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
+                             
+                    
+    //               ************************************************
+                    ZStack {
+                        
+                        //                    Image(systemName: "cube.fill")
+                        Image("comicBubble")
+                            .resizable()
+                            .foregroundColor(Color.purple)
+                            .frame(width: 155, height: 110)
+                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                            .opacity(0.5)
+                            .blinking(duration: 3.0)
+                        
+                        VStack {
+                            Text("Your vibe color")
+                                .font(.system(size: 10))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .blinking(duration: 3.0)
+                            
+                            Text("shows as planet's")
+                                .font(.system(size: 10))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .blinking(duration: 3.0)
+                         
+                            Text("atmosphere color")
+                                .font(.system(size: 10))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .blinking(duration: 3.0)
+                            
+                     
+                            
+                        }
+                    }
+    //               ************************************************
+                    
+                    
+                    
+                    
+                    
+                    
                             }
+            
+            
             Spacer()
                 .frame(height: 15)
+            
     //               ************************************************
                         
             HStack {
@@ -137,6 +189,15 @@ VStack {
             }
          
 //                ************************************************
+            //                ************************************************
+            
+            //                ************************************************
+            
+            
+            
+            
+            
+            
                         Spacer()
                             .frame(height: 15)
                 
@@ -167,7 +228,7 @@ VStack {
                 //                }
                 
                 
-                VStack {
+//                ********************************************
                     
                     
                     ZStack {
@@ -176,7 +237,7 @@ VStack {
                         Image("comicBubble")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 250, height: 200)
+                            .frame(width: 250, height: 150)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .opacity(0.5)
                             .blinking(duration: 3.0)
@@ -210,38 +271,21 @@ VStack {
                     }
                 }
                 
-            }
-                        Spacer()
-                            .frame(height: 10)
-           
-  
-            
+//            }
+                   
       
  
                         VStack {
                             
                             VStack {
-                                
-                                
-                                Spacer()
-                                    .frame(height: 30)
-                                
+                               
                                 Text("(alert friends)")
                                     .font(.system(size: 15))
                                     .italic()
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.white)
-                                
-                                Spacer()
-                                    .frame(height: 7)
-                                
-                                Text("Friend's planet atmospher color matches vibe")
-                                    .font(.system(size: 15))
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.white)
-                                
+                           
                                 HStack {
                                     
                                     //                            Text("select >")

@@ -45,7 +45,7 @@ struct NotificationsView: View {
                 
                 
                 VStack {
-                    Text("Fresh CareHearts \nCoupons \nTalk Requests")
+                    Text("Notifications")
                         .font(.system(size: 20, weight: .thin))
                         .foregroundColor(.white)
                         .padding()

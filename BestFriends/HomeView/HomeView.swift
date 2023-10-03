@@ -150,8 +150,8 @@ struct HomeView: View {
                                                 .scaledToFit()
                                                 .frame(width: 50, height: 50)
                                                 .foregroundColor(Color.white)
-                                               .glow(color: Color.white, radius: 2)
-                                                .opacity(0.8)
+                                               .glow(color: Color.cyan, radius: 1)
+                                                .opacity(0.2)
                                                 .blinking(duration: 4.0)
 
                                         }
@@ -263,7 +263,7 @@ struct HomeView: View {
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 60, height: 60)
-                                    .foregroundColor(Color.white)
+                                    .foregroundColor(ColorManager .grey3)
                                 //                                    .blinking(duration: 2.0)
                                     .glow(color: ColorManager.purple4, radius: 3)
                                     .opacity(0.5)
@@ -280,10 +280,10 @@ struct HomeView: View {
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 55, height: 55)
-                                    .foregroundColor(Color.white)
+                                    .foregroundColor(ColorManager .grey2)
                                     .opacity(0.4)
                                     .rotationEffect(.degrees(-10))
-                                    .glow(color: Color.white, radius: 3)
+                                    .glow(color: ColorManager .grey2, radius: 3)
                                     .shadow(color: Color.blue, radius: 2, x: 0, y: 3)
                                     .blinking(duration: 0.75)
                                 
