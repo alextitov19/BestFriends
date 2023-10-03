@@ -218,7 +218,7 @@ struct HomeView: View {
 //          ********************************************* PhotoPOP links *************
                      
                             Spacer()
-                                .frame(width: 35)
+                                .frame(width: 10)
                             
                             
                             
