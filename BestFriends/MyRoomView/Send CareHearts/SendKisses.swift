@@ -59,7 +59,7 @@ struct SendKisses: View {
                     .ignoresSafeArea()
                 
                 
-                AdPlayerView(name: "background_9")
+                AdPlayerView(name: "Planet4")
                     .ignoresSafeArea()
                     .blendMode(.screen)
            
@@ -290,67 +290,68 @@ struct SendKisses: View {
                    
                         }
                         
+            VStack {
+                            
                 HStack {
-                    Text("")
-                        .fontWeight(.light)
-                        .foregroundColor(Color.black)
-                        .font(.system(size: 13))
-                        .multilineTextAlignment(.center)
-                        .rotationEffect(.degrees(-7))
-                        .opacity(0.85)
                     
+                    
+                    Image("")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 50, height: 50)
+//                                    .rotationEffect(.degrees(-7))
+                        .foregroundColor(ColorManager .purple5)
+                        .glow(color: Color.purple, radius: 2)
+                        .opacity(0.6)
                     
                     Spacer ()
-                        .frame(width: 230)
+                        .frame(width: 30)
                     
-                    NavigationLink(
-                        destination:  PhotoPopView(user: user, friends: friends),
-                        label: {
-                            
-                            Image(systemName: "camera")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 40, height: 40)
-                                .rotationEffect(.degrees(-7))
-                                .foregroundColor(Color.cyan)
-                                .glow(color: ColorManager.purple4, radius: 2)
-                                .opacity(0.6)
-                            
-                        })
-                            
-                            Spacer ()
-                                .frame(width: 15)
-                            
-                    VStack {
+                        NavigationLink(
+                            destination:  PhotoPopView(user: user, friends: friends),
+                            label: {
+                                
+                                Image("IconPhotoNew")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 50, height: 50)
+    //                                    .rotationEffect(.degrees(-7))
+                                    .foregroundColor(ColorManager .purple5)
+                                    .glow(color: Color.purple, radius: 2)
+                                    .opacity(0.6)
+                                
+                            })
+                                
+                                Spacer ()
+                                    .frame(width: 15)
+                                
+                            VStack {
+                                
+                                ZStack {
+                                    
+                                    Image("comicBubble")
+                                        .resizable()
+                                        .foregroundColor(Color.white)
+                                        .frame(width: 170, height: 130)
+                                        .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+                                        .opacity(0.5)
+                                    //                                .blinking(duration: 3.0)
+                                    
+                                    
+                                    Text("Send a cool pic")
+                                        .fontWeight(.light)
+                                        .foregroundColor(Color.white)
+                                        .font(.system(size: 11))
+                                        .multilineTextAlignment(.center)
+                                        .rotationEffect(.degrees(-7))
+                                        .opacity(0.85)
+                                    
+                                        }
+                                    }
+                                }
+        
+                            }
                         
-                        ZStack {
-                            
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .foregroundColor(Color.purple)
-                                .frame(width: 150, height: 110)
-                                .rotationEffect(.degrees(-7))
-                                .shadow(color: .white, radius: 2, x: -2, y: 2)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                .opacity(0.9)
-                            
-                            
-                            Text("Send a PhotoPOP \nto supercharge \nyour kiss")
-                                .fontWeight(.light)
-                                .foregroundColor(Color.black)
-                                .font(.system(size: 13))
-                                .multilineTextAlignment(.center)
-                                .rotationEffect(.degrees(-7))
-                                .opacity(0.85)
-                            
-                        }
-                   
-                    }
-                            
-                        }
-                        
-                            
-                          
                         }
                         
                     }
