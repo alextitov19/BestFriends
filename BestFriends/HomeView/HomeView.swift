@@ -76,6 +76,9 @@ struct HomeView: View {
              
                 VStack {
                  
+                    Spacer()
+                        .frame(height: 25)
+                    
                     if ((homeData) != nil) {
 
                     
@@ -202,7 +205,7 @@ struct HomeView: View {
                         Image(systemName: "heart.fill")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 375, height: 375)
+                            .frame(width: 425, height: 425)
                             .foregroundColor(ColorManager .purple3)
                             .opacity(0.1)
                             .glow(color: Color.white, radius: 75)
