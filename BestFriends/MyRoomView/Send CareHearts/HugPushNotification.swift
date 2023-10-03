@@ -119,23 +119,10 @@ struct HugPushNotification: View {
          
                 VStack {
                     Spacer()
-                        .frame(height: 20)
+                        .frame(height: 40)
 
-
-                    Spacer()
-                        .frame(height: 25)
-                
                     VStack {
-                        
-                     
-
-                        
-                        Text("it's the next best thing to being there")
-                            .font(.system(size: 15, weight: .light))
-                            .italic()
-                            .foregroundColor(Color.white)
-                        
-                        
+                   
                         HStack {
                       
 //                            Text("select >")
