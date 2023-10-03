@@ -123,20 +123,20 @@ struct HomeView: View {
                                     label: {
                                         
                                         ZStack {
-                                            Image(systemName: "heart.fill")
+                                            Image(systemName: "circle.fill")
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 45, height: 45)
                                                 .foregroundColor(Color.white)
                                                 .glow(color: Color.cyan, radius: 3)
-                                                .opacity(0.25)
+                                                .opacity(0.13)
                                                 .blinking(duration: 4.0)
                                             
-                                            Text("out")
+                                            Text("send")
                                                 .fontWeight(.medium)
                                                 .frame(width: 90, height: 90)
                                                 .foregroundColor(Color.black)
-                                                .font(.system(size: 17))
+                                                .font(.system(size: 15))
                                                 .multilineTextAlignment(.center)
                                                 .opacity(1.0)
                                                 .blinking(duration: 4.0)
@@ -183,7 +183,7 @@ struct HomeView: View {
                                                 .foregroundColor(Color.black)
                                                 .font(.system(size: 15))
                                                 .multilineTextAlignment(.center)
-                                                .opacity(1.0)
+                                                .opacity(0.5)
                                                 .blinking(duration: 4.0)
                                                 .opacity(0.6)
                                         }
@@ -210,20 +210,20 @@ struct HomeView: View {
                                     label: {
                                         
                                         ZStack {
-                                            Image(systemName: "heart.fill")
+                                            Image(systemName: "circle.fill")
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 45, height: 45)
                                                 .foregroundColor(Color.white)
                                                 .glow(color: Color.cyan, radius: 3)
-                                                .opacity(0.25)
+                                                .opacity(0.13)
                                                 .blinking(duration: 4.0)
                                             
-                                            Text("in")
+                                            Text("mine")
                                                 .fontWeight(.medium)
                                                 .frame(width: 90, height: 90)
                                                 .foregroundColor(Color.black)
-                                                .font(.system(size: 17))
+                                                .font(.system(size: 15))
                                                 .multilineTextAlignment(.center)
                                                 .opacity(1.0)
                                                 .blinking(duration: 4.0)
@@ -253,23 +253,29 @@ struct HomeView: View {
                                                 
                                                 
                             NavigationLink( destination:  BestFriendMessages(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres),
-                                        label: {
-                                    Text("words")
+                                            label: {
+                            ZStack {
+                                Image(systemName: "circle.fill")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 45, height: 45)
+                                    .foregroundColor(Color.white)
+                                    .glow(color: Color.cyan, radius: 3)
+                                    .opacity(0.13)
+                                    .blinking(duration: 4.0)
+                                
+                                Text("save")
                                     .fontWeight(.medium)
-                                    .frame(width: 80, height: 80)
-                                  .foregroundColor(Color.white)
-                                    .font(.system(size: 12))
-//                                    .background(ColorManager .grey4)
+                                    .frame(width: 90, height: 90)
+                                    .foregroundColor(Color.black)
+                                    .font(.system(size: 15))
                                     .multilineTextAlignment(.center)
                                     .opacity(1.0)
-                                    .cornerRadius(50)
-                                    .shadow(color: Color.white, radius: 2, x: 0, y: 1)
                                     .blinking(duration: 4.0)
                                     .opacity(0.6)
-                                    
-                                                    
-                                                })
-                                            }
+                            }
+                        })
+                    }
                         
                         
                         

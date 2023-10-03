@@ -86,15 +86,15 @@ struct AtmosphereMain2: View {
                      
                 
                         
-                        Text("Something")
-                            .font(.system(size: 30))
+                        Text("Celebrating")
+                            .font(.system(size: 25))
 //                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
 
                         
-                        Text("just happen?")
+                        Text("Friendships")
                             .font(.system(size: 30))
 //                            .italic()
                             .fontWeight(.light)
@@ -110,14 +110,11 @@ struct AtmosphereMain2: View {
                     .frame(height: 30)
                 
            
-                HStack {
-                    
-                   
-                
-                    
-                    VStack {
+    HStack {
+               
+        VStack {
                   
-                        Text("Shows as blue (sad) atmosphere")
+                        Text("blue atmosphere on friend's planet")
                             .font(.system(size: 10))
                             .italic()
                             .fontWeight(.light)
@@ -126,7 +123,7 @@ struct AtmosphereMain2: View {
                         
                         
         
-                        HStack {
+            HStack {
                           
                   
                             
@@ -142,7 +139,7 @@ struct AtmosphereMain2: View {
                             showingAlert = true
                         }) {
 
-                            Text("Bad Day - requesting CareHearts")
+                            Text("Difficult day - requesting \nquiet support")
                                 .font(.system(size: 10))
                                 .foregroundColor(Color.black)
                         }
@@ -151,7 +148,7 @@ struct AtmosphereMain2: View {
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                        
-                        .alert("We'll let your friends know your day just changed.", isPresented: $showingAlert) {
+                        .alert("We'll ask your friends for quiet support leting them know you are not ready to talk just yet.", isPresented: $showingAlert) {
                             Button("OK", role: .cancel, action: {
                                 showingAlert = false
                                 
@@ -160,60 +157,163 @@ struct AtmosphereMain2: View {
                         }
                         
 //    ************************************************
+//                        ZStack {
+//                            
+//                            Image(systemName: "cube.fill")
+//                                .resizable()
+//                                .foregroundColor(Color.purple)
+//                                .frame(width: 225, height: 150)
+//                                .rotationEffect(.degrees(-20))
+//                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+//                                .opacity(0.5)
+//                                .blinking(duration: 4.0)
+//                            
+//                            VStack {
+//                                
+//                                Text("Bad day?")
+//                                    .font(.system(size: 25))
+//                                    .fontWeight(.light)
+//                                    .multilineTextAlignment(.center)
+//                                    .foregroundColor(Color.white)
+//                                    .multilineTextAlignment(.center)
+//                                    .rotationEffect(.degrees(-20))
+//                                    .blinking(duration: 4.0)
+//                                
+//                                Text("Even if not ready to")
+//                                    .font(.system(size: 15))
+//                                    .fontWeight(.light)
+//                                    .multilineTextAlignment(.center)
+//                                    .foregroundColor(Color.white)
+//                                    .multilineTextAlignment(.center)
+//                                    .rotationEffect(.degrees(-20))
+//                                    .blinking(duration: 4.0)
+//                                
+//                                
+//                                Text("talk about it yet,")
+//                                    .font(.system(size: 15))
+//                                    .fontWeight(.light)
+//                                    .multilineTextAlignment(.center)
+//                                    .foregroundColor(Color.white)
+//                                    .multilineTextAlignment(.center)
+//                                    .rotationEffect(.degrees(-20))
+//                                    .blinking(duration: 4.0)
+//                                
+//                                Text("alert friends so they can")
+//                                    .font(.system(size: 15))
+//                                    .fontWeight(.light)
+//                                    .multilineTextAlignment(.center)
+//                                    .foregroundColor(Color.white)
+//                                    .multilineTextAlignment(.center)
+//                                    .rotationEffect(.degrees(-20))
+//                                    .blinking(duration: 4.0)
+//                                
+//                                Text("send emotional support")
+//                                    .font(.system(size: 15))
+//                                    .fontWeight(.light)
+//                                    .multilineTextAlignment(.center)
+//                                    .foregroundColor(Color.white)
+//                                    .multilineTextAlignment(.center)
+//                                    .rotationEffect(.degrees(-20))
+//                                    .blinking(duration: 4.0)
+//                                
+//                            }
+//                        }
+//                    
+                
                         
-                  
+                        
+//    ************************************************
                             
+                        
+                        
+                        Spacer()
+                                .frame(height: 30)
+//    ************************************************
+                                                
+                        
                             
-                            //         **********************************************************
+                            Text("yellow atmosphere")
+                                .font(.system(size: 10))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
                             
-                            Spacer()
-                                .frame(height: 12)
+                            Button(action: {
+                                mood = 8
+                                showingAlert = true
+                            }) {
+
+                                Text("I really need to TALK!")
+                                    .font(.system(size: 10))
+                                    .foregroundColor(Color.black)
+    //                            Image("smileIcon2")
+                            }
+                            .frame(width: 140, height: 30, alignment: .center)
+                            .background(mood == 8 ? Color(.systemYellow) : ColorManager .grey2)
+                            .cornerRadius(7)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            .alert("Alert sent", isPresented: $showingAlert) {
+//                                Button("OK", role: .cancel, action: {
+//                                    showingAlert = false
+                                    //                                We are super happy you're having a great day - smile, it's catching.
+                                    
+                                    
+                                }
+//                            }
+                                                    
+                                                    
+//         **********************************************************
+                        
+                        
+                        
+                        
                         
 //                        HStack {
                             
-                            Button(action: {
-                                mood = 2
-                                showingAlert = true
-                            }) {
-                                
-                                Text("Relationship, Friend \nor Family Drama")
-                                    .font(.system(size: 10))
-                                    .foregroundColor(Color.black)
-                            }
-                            .frame(width: 140, height: 30, alignment: .center)
-                            .background(mood == 2 ? Color(.systemCyan) : ColorManager .grey2)
-                            .cornerRadius(7)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            .alert("We'll let your friends know your day just changed.", isPresented: $showingAlert) {
-                                Button("OK", role: .cancel, action: {
-                                    showingAlert = false
+//                            Button(action: {
+//                                mood = 2
+//                                showingAlert = true
+//                            }) {
+//
+//                                Text("Relationship, Friend \nor Family Drama")
+//                                    .font(.system(size: 10))
+//                                    .foregroundColor(Color.black)
+//                            }
+//                            .frame(width: 140, height: 30, alignment: .center)
+//                            .background(mood == 2 ? Color(.systemCyan) : ColorManager .grey2)
+//                            .cornerRadius(7)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            .alert("We'll let your friends know your day just changed.", isPresented: $showingAlert) {
+//                                Button("OK", role: .cancel, action: {
+//                                    showingAlert = false
                                     
                                     //                                This is always difficult to deal with. Hopefully, the [Friend Drama] section can help you.
-                                })
-                            }
+//                                })
+//                            }
                             
                             VStack {
                                 
                                 
-                                
-                                NavigationLink( destination:  Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
-                                                label: {
-                                    Text("Fix")
-                                        .fontWeight(.bold)
-                                        .frame(width: 30, height: 30)
-                                        .foregroundColor(Color.white)
-                                        .font(.system(size: 16))
-                                        .background(ColorManager .purple3)
-                                        .glow(color: ColorManager.purple1, radius: 1)
-                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                        .opacity(0.9)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                        .opacity(0.6)
+//
+//                                NavigationLink( destination:  Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+//                                                label: {
+//                                    Text("Fix")
+//                                        .fontWeight(.bold)
+//                                        .frame(width: 30, height: 30)
+//                                        .foregroundColor(Color.white)
+//                                        .font(.system(size: 16))
+//                                        .background(ColorManager .purple3)
+//                                        .glow(color: ColorManager.purple1, radius: 1)
+//                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+//                                        .opacity(0.9)
+//                                        .cornerRadius(15)
+//                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                        .opacity(0.6)
                                     //                                            .blinking()
                                     
                                     
-                                })
+//                                })
                                 
 //                            }
                             
@@ -338,7 +438,7 @@ struct AtmosphereMain2: View {
                             .frame(height: 12)
                         
                         
-                        Text("Shows as green (all good) atmosphere")
+                        Text("green atmosphere")
                             .font(.system(size: 8))
                             .italic()
                             .fontWeight(.light)
@@ -362,36 +462,36 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 12)
                         
-                    
-                        
-                        Text("Shows as 'yellow' atmosphere")
-                            .font(.system(size: 10))
-                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                        
-                        Button(action: {
-                            mood = 8
-                            showingAlert = true
-                        }) {
-
-                            Text("I really need to TALK!")
-                                .font(.system(size: 10))
-                                .foregroundColor(Color.black)
-//                            Image("smileIcon2")
-                        }
-                        .frame(width: 140, height: 30, alignment: .center)
-                        .background(mood == 8 ? Color(.systemYellow) : ColorManager .grey2)
-                        .cornerRadius(7)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        .alert("We'll let your friends know.", isPresented: $showingAlert) {
-                            Button("OK", role: .cancel, action: {
-                                showingAlert = false
-                                //                                We are super happy you're having a great day - smile, it's catching.
-                                
-                           
-                            })
+//
+//
+//                        Text("Shows as 'yellow' atmosphere")
+//                            .font(.system(size: 10))
+//                            .italic()
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(Color.white)
+//
+//                        Button(action: {
+//                            mood = 8
+//                            showingAlert = true
+//                        }) {
+//
+//                            Text("I really need to TALK!")
+//                                .font(.system(size: 10))
+//                                .foregroundColor(Color.black)
+////                            Image("smileIcon2")
+//                        }
+//                        .frame(width: 140, height: 30, alignment: .center)
+//                        .background(mood == 8 ? Color(.systemYellow) : ColorManager .grey2)
+//                        .cornerRadius(7)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        .alert("We'll let your friends know.", isPresented: $showingAlert) {
+//                            Button("OK", role: .cancel, action: {
+//                                showingAlert = false
+//                                //                                We are super happy you're having a great day - smile, it's catching.
+//
+//
+//                            })
                             //                }
                         
                             
@@ -415,7 +515,7 @@ struct AtmosphereMain2: View {
 //                                })
 //                            }
                             
-                        }
+                        
                     }
                     
                  
@@ -617,7 +717,7 @@ struct AtmosphereMain2: View {
                                 .background(shareColor)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("We just sent your friend(s) a notificaion. \n\nLetting them know your 'Day' changed.", isPresented: $showingAlert) {
+                                .alert("Alert sent", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
@@ -682,68 +782,70 @@ struct AtmosphereMain2: View {
                                 
                                 Spacer ()
                                     .frame(width: 70)
+//                   ******************************************************
                                 
-                                ZStack {
-                                    
-                                    Image(systemName: "cube.fill")
-                                        .resizable()
-                                        .foregroundColor(Color.purple)
-                                        .frame(width: 225, height: 150)
-                                        .rotationEffect(.degrees(-20))
-                                        .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                                        .opacity(0.5)
-                                        .blinking(duration: 4.0)
-                                    
-                                    VStack {
-                                        
-                                        Text("Bad day?")
-                                            .font(.system(size: 25))
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
-                                            .foregroundColor(Color.white)
-                                            .multilineTextAlignment(.center)
-                                            .rotationEffect(.degrees(-20))
-                                            .blinking(duration: 4.0)
-                                        
-                                        Text("Even if not ready to")
-                                            .font(.system(size: 15))
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
-                                            .foregroundColor(Color.white)
-                                            .multilineTextAlignment(.center)
-                                            .rotationEffect(.degrees(-20))
-                                            .blinking(duration: 4.0)
-                                        
-                                        
-                                        Text("talk about it yet,")
-                                            .font(.system(size: 15))
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
-                                            .foregroundColor(Color.white)
-                                            .multilineTextAlignment(.center)
-                                            .rotationEffect(.degrees(-20))
-                                            .blinking(duration: 4.0)
-                                        
-                                        Text("alert friends so they can")
-                                            .font(.system(size: 15))
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
-                                            .foregroundColor(Color.white)
-                                            .multilineTextAlignment(.center)
-                                            .rotationEffect(.degrees(-20))
-                                            .blinking(duration: 4.0)
-                                        
-                                        Text("send emotional support")
-                                            .font(.system(size: 15))
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
-                                            .foregroundColor(Color.white)
-                                            .multilineTextAlignment(.center)
-                                            .rotationEffect(.degrees(-20))
-                                            .blinking(duration: 4.0)
-                                        
-                                    }
-                                }
+//
+//                                ZStack {
+//
+//                                    Image(systemName: "cube.fill")
+//                                        .resizable()
+//                                        .foregroundColor(Color.purple)
+//                                        .frame(width: 225, height: 150)
+//                                        .rotationEffect(.degrees(-20))
+//                                        .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+//                                        .opacity(0.5)
+//                                        .blinking(duration: 4.0)
+//
+//                                    VStack {
+//
+//                                        Text("Bad day?")
+//                                            .font(.system(size: 25))
+//                                            .fontWeight(.light)
+//                                            .multilineTextAlignment(.center)
+//                                            .foregroundColor(Color.white)
+//                                            .multilineTextAlignment(.center)
+//                                            .rotationEffect(.degrees(-20))
+//                                            .blinking(duration: 4.0)
+//
+//                                        Text("Even if not ready to")
+//                                            .font(.system(size: 15))
+//                                            .fontWeight(.light)
+//                                            .multilineTextAlignment(.center)
+//                                            .foregroundColor(Color.white)
+//                                            .multilineTextAlignment(.center)
+//                                            .rotationEffect(.degrees(-20))
+//                                            .blinking(duration: 4.0)
+//
+//
+//                                        Text("talk about it yet,")
+//                                            .font(.system(size: 15))
+//                                            .fontWeight(.light)
+//                                            .multilineTextAlignment(.center)
+//                                            .foregroundColor(Color.white)
+//                                            .multilineTextAlignment(.center)
+//                                            .rotationEffect(.degrees(-20))
+//                                            .blinking(duration: 4.0)
+//
+//                                        Text("alert friends so they can")
+//                                            .font(.system(size: 15))
+//                                            .fontWeight(.light)
+//                                            .multilineTextAlignment(.center)
+//                                            .foregroundColor(Color.white)
+//                                            .multilineTextAlignment(.center)
+//                                            .rotationEffect(.degrees(-20))
+//                                            .blinking(duration: 4.0)
+//
+//                                        Text("send emotional support")
+//                                            .font(.system(size: 15))
+//                                            .fontWeight(.light)
+//                                            .multilineTextAlignment(.center)
+//                                            .foregroundColor(Color.white)
+//                                            .multilineTextAlignment(.center)
+//                                            .rotationEffect(.degrees(-20))
+//                                            .blinking(duration: 4.0)
+//
+//                                    }
+//                                }
                             }
                         }
                         
@@ -756,7 +858,7 @@ struct AtmosphereMain2: View {
            
             }
         }
-    }
+//    }
     
     func shareButtonTapped() {
         shareMood()
@@ -823,7 +925,7 @@ struct AtmosphereMain2: View {
         var body: some View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
-                .frame(width: 85, height: 85)
+                .frame(width: 80, height: 80)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .font(.system(size: 8))
                 .background(color)
