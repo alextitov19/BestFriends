@@ -75,27 +75,13 @@ struct RR32: View {
             
 VStack {
                 
-                Text("Letting")
+                Text("Alert Friends")
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
-                
-                
-                Text("friends know")
-                    .font(.system(size: 30))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-                
-                
-             
-                
-                Spacer()
-                    .frame(height: 30)
-                
-            
-            
+          
+        
                    
         VStack {
                         
@@ -155,52 +141,80 @@ VStack {
                             .frame(height: 15)
                 
             HStack {
-                Image("iconVibe7")
+                Image(systemName: "cube")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 60, height: 60)
-                    .opacity(0.9)
-
-                    Button(action: {
-                        mood = 1
-                       showingAlert = true
-                    }) {
-                        
-                        Text("Want \nFriend's \nSupport")
-                            .font(.system(size: 10))
-                            .foregroundColor(Color.black)
-                    }
-                    .frame(width: 60, height: 60, alignment: .center)
-                    .background(mood == 8 ? Color.cyan : ColorManager .grey2)
-                    .cornerRadius(40)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    .foregroundColor(Color.white)
+                    .glow(color: Color.purple, radius: 3)
+                    .opacity(0.13)
+                //                    .blinking(duration: 4.0)
+                
+                Button(action: {
+                    mood = 1
+                    showingAlert = true
+                }) {
                     
+                    Text("Want \nFriend's \nSupport")
+                        .font(.system(size: 10))
+                        .foregroundColor(Color.black)
                 }
-//
+                .frame(width: 60, height: 60, alignment: .center)
+                .background(mood == 8 ? Color.cyan : ColorManager .grey2)
+                .cornerRadius(40)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                
+                //                }
+                
+                
+                VStack {
+                    
+                    
+                    ZStack {
+                        
+                        //                    Image(systemName: "cube.fill")
+                        Image("comicBubble")
+                            .resizable()
+                            .foregroundColor(Color.purple)
+                            .frame(width: 250, height: 200)
+                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                            .opacity(0.5)
+                            .blinking(duration: 3.0)
+                        
+                        VStack {
+                            Text("Bad day? Let your friends know")
+                                .font(.system(size: 10))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .blinking(duration: 3.0)
+                         
+                            Text("They can send Friendship Support")
+                                .font(.system(size: 10))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .blinking(duration: 3.0)
+                            
+                            Text("unntil you're ready to talk")
+                                .font(.system(size: 10))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .blinking(duration: 3.0)
+                            
+                        }
+                    }
+                }
+                
+            }
                         Spacer()
                             .frame(height: 10)
            
-            
-        VStack {
- 
-     
-            Text("(Bad day? Let your friends know - they can send")
-                .font(.system(size: 15))
-                .italic()
-                .fontWeight(.light)
-                .multilineTextAlignment(.center)
-                .foregroundColor(Color.white)
-                .blinking(duration: 6.0)
-            
-            Text("Friendship Support until you're ready to talk)")
-                .font(.system(size: 15))
-                .italic()
-                .fontWeight(.light)
-                .multilineTextAlignment(.center)
-                .foregroundColor(Color.white)
-                .blinking(duration: 6.0)
-            
-                }
+  
             
       
  
