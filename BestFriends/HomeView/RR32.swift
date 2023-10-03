@@ -64,7 +64,7 @@ struct RR32: View {
                     .ignoresSafeArea()
                 
                 
-                AdPlayerView(name: "background_9")
+                AdPlayerView(name: "background_8")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
@@ -102,13 +102,7 @@ VStack {
                 HStack {
                     
                     ZStack {
-//                        Image(systemName: "circle.fill")
-//                            .resizable()
-//                            .scaledToFit()
-//                            .frame(width: 45, height: 45)
-//                            .foregroundColor(Color.yellow)
-//                            .blinking(duration: 2.0)
-//                            .opacity(0.5)
+
                         
                         Image("IconFightNew")
                             .resizable()
@@ -118,7 +112,7 @@ VStack {
                     }
                                 Button(action: {
                                     mood = 8
-                                    showingAlert = true
+//                                    showingAlert = true
                                 }) {
                                     
                                     Text("Need to \nTALK!")
@@ -161,23 +155,18 @@ VStack {
                             .frame(height: 15)
                 
             HStack {
-                Image("IconNiceNew40")
+                Image("iconVibe7")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 60, height: 60)
                     .opacity(0.9)
-                
-                    Button(action: {
-                        mood = 0
-                    }) {
-                        
-                    }
+
                     Button(action: {
                         mood = 1
-                        showingAlert = true
+                       showingAlert = true
                     }) {
                         
-                        Text("Friend's \nSupport")
+                        Text("Want \nFriend's \nSupport")
                             .font(.system(size: 10))
                             .foregroundColor(Color.black)
                     }
@@ -367,7 +356,7 @@ VStack {
                                     },
                                            label: {
                                         Image("home-alt2")
-                                            .frame(width: 50, height: 25)
+                                            .frame(width: 60, height: 30)
                                             .foregroundColor(.black)
                                             .font(.system(size: 20))
                                             .background(ColorManager .grey3)
@@ -401,11 +390,11 @@ VStack {
             for id in selectedFriends {
                 for f in friends {
                     if f.id == id {
-                        RestApi.instance.sendPushNotification(title: "BestFriends", body: " \(user.firstName) day just changed! Check their atmosphere color in BFs to see whats up.", APNToken: f.APNToken)
+                        RestApi.instance.sendPushNotification(title: "BestFriends", body: " \(user.firstName) day just changed! Check their atmosphere color in BFs to see what's up.", APNToken: f.APNToken)
                         
                         //MARK: The code below creates an in-app notification for your friend (f.id)
                         //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                        RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "day just changed! Check their atmosphere color in BFs to see whats up.", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "day just changed! Check their atmosphere color in BFs to see what's up.", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                             print("Create a Vibe notification response code: ", response)
                         })
                         RestApi.instance.createStreakLog(friendID: f.id)

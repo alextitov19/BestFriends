@@ -351,7 +351,7 @@ struct NotificationsView: View {
                     
                     // *********** VIBE **********************************
 // *********** Day Changed
-                case "day just changed! Check their atmosphere color in BFs to see whats up.":
+                case "day just changed! Check their atmosphere color in BFs to see what's up.":
                     newVibeActive = true
                     
 // *********** Need to Talk
