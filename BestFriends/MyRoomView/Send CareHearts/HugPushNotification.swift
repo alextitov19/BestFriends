@@ -307,14 +307,13 @@ struct HugPushNotification: View {
                         destination:  PhotoPopView(user: user, friends: friends),
                         label: {
                             
-                            Image(systemName: "camera")
-                            
+                            Image("IconPhotoNew")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 40, height: 40)
-                                .rotationEffect(.degrees(-7))
-                                .foregroundColor(Color.cyan)
-                                .glow(color: ColorManager.purple4, radius: 2)
+                                .frame(width: 50, height: 50)
+//                                    .rotationEffect(.degrees(-7))
+                                .foregroundColor(ColorManager .purple5)
+                                .glow(color: Color.purple, radius: 2)
                                 .opacity(0.6)
                             
                         })
@@ -326,20 +325,19 @@ struct HugPushNotification: View {
                         
                         ZStack {
                             
-                            Image(systemName: "heart.fill")
+                            Image("comicBubble")
                                 .resizable()
-                                .foregroundColor(Color.purple)
-                                .frame(width: 150, height: 110)
-                                .rotationEffect(.degrees(-7))
-                                .shadow(color: .white, radius: 2, x: -2, y: 2)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                .opacity(0.9)
+                                .foregroundColor(Color.white)
+                                .frame(width: 170, height: 130)
+                                .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+                                .opacity(0.5)
+//                                .blinking(duration: 3.0)
                             
                             
                             Text("Send a PhotoPOP \nof a fun time \ntogether")
                                 .fontWeight(.light)
-                                .foregroundColor(Color.black)
-                                .font(.system(size: 13))
+                                .foregroundColor(Color.white)
+                                .font(.system(size: 11))
                                 .multilineTextAlignment(.center)
                                 .rotationEffect(.degrees(-7))
                                 .opacity(0.85)
