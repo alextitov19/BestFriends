@@ -104,7 +104,7 @@ struct BestFriendMessages: View {
                     
                     VStack {
                         
-                        Text("Save favorite messages")
+                        Text("Protect your favorite messages")
                             .font(.system(size: 23))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.regular)

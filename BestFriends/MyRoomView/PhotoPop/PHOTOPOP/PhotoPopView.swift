@@ -76,7 +76,7 @@ struct PhotoPopView: View {
             
             VStack {
             
-                Text("Sending Friends")
+                Text("Sending")
                     .foregroundColor(Color.white)
                     .font(.system(size: 35, weight: .light))
                     .opacity(0.7)
