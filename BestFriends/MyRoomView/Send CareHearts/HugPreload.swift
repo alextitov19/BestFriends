@@ -208,7 +208,7 @@ struct HugPreload: View {
                                 HugCircle (color: ColorManager .purple5, friendName: "Fist-pump")
                             })
                             .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
-                            .shadow(color: Color.blue, radius:10, x: 10, y:10)
+                            .shadow(color: ColorManager .purple3, radius: 4, x: 4, y: 4)
                             //                    .opacity(0.65)
                             .opacity(0.65)
                             
@@ -222,7 +222,7 @@ struct HugPreload: View {
                                     HugCircle (color: ColorManager .purple5, friendName: "YOU CAN \nDO IT!")
                                 })
                                 .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                                .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+                                .shadow(color: ColorManager .purple3, radius: 4, x: 4, y: 4)
                                 .opacity(0.65)
                                 
                                 
@@ -242,7 +242,7 @@ struct HugPreload: View {
                             HugCircle (color: ColorManager .purple5, friendName: "Congrats \nNice job!!!")
                         })
                         .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                        .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+                        .shadow(color: ColorManager .purple3, radius: 4, x: 4, y: 4)
                         .opacity(0.65)
                         
                     }
