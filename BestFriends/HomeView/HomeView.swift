@@ -79,30 +79,15 @@ struct HomeView: View {
                 
                 
                 VStack {
-                    if ((homeData) != nil) {
                     
-                        
-//          ********************************************** Carehearts *************
-                        
+                    Spacer()
+                        .frame(height: 25)
+                    
+                    
+                    if ((homeData) != nil) {
+               
                         HStack {
-                            
-                            
-                            
-                            
-//                            NavigationLink(
-//                                destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
-//                                label: {
-//
-//                                    Image(systemName: "heart")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 35, height: 35)
-//                                        .foregroundColor(Color.white)
-//                                    .glow(color: ColorManager.purple4, radius: 3)
-//                                        .opacity(0.9)
-//                                })
-                            
-                            
+   
                             Spacer()
                                 .frame(width: 25)
                             
@@ -117,21 +102,21 @@ struct HomeView: View {
                                             Image(systemName: "cube")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 95, height: 95)
+                                                .frame(width: 60, height: 60)
                                                 .foregroundColor(Color.white)
                                                 .glow(color: Color.cyan, radius: 3)
                                                 .opacity(0.13)
                                                 .blinking(duration: 4.0)
                                             
-                                            Text("send")
-                                                .fontWeight(.bold)
-                                                .frame(width: 90, height: 90)
-                                                .foregroundColor(Color.white)
-                                                .font(.system(size: 20))
-                                                .multilineTextAlignment(.center)
-                                                .opacity(1.0)
-                                                .blinking(duration: 4.0)
-                                                .opacity(0.6)
+//                                            Text("send")
+//                                                .fontWeight(.bold)
+//                                                .frame(width: 90, height: 90)
+//                                                .foregroundColor(Color.white)
+//                                                .font(.system(size: 20))
+//                                                .multilineTextAlignment(.center)
+//                                                .opacity(1.0)
+//                                                .blinking(duration: 4.0)
+//                                                .opacity(0.6)
                                         }
                                         
                                         
@@ -154,21 +139,21 @@ struct HomeView: View {
                                             Image("iconVibes75")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 70, height: 70)
+                                                .frame(width: 60, height: 60)
                                                 .foregroundColor(Color.white)
-                                               .glow(color: Color.white, radius: 3)
+                                               .glow(color: Color.white, radius: 2)
                                                 .opacity(0.8)
                                                 .blinking(duration: 4.0)
-                                            
-                                            Text("my \nvibe")
-                                                .fontWeight(.medium)
-                                                .frame(width: 90, height: 90)
-                                                .foregroundColor(Color.black)
-                                                .font(.system(size: 15))
-                                                .multilineTextAlignment(.center)
-                                                .opacity(0.5)
-                                                .blinking(duration: 4.0)
-                                                .opacity(0.6)
+//
+//                                            Text("my \nvibe")
+//                                                .fontWeight(.medium)
+//                                                .frame(width: 70, height: 70)
+//                                                .foregroundColor(Color.black)
+//                                                .font(.system(size: 15))
+//                                                .multilineTextAlignment(.center)
+//                                                .opacity(0.5)
+//                                                .blinking(duration: 4.0)
+//                                                .opacity(0.6)
                                         }
                                     })
                             }
@@ -188,21 +173,21 @@ struct HomeView: View {
                                             Image(systemName: "cube")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 70, height: 70)
+                                                .frame(width: 60, height: 60)
                                                 .foregroundColor(Color.white)
                                                 .glow(color: Color.cyan, radius: 3)
                                                 .opacity(0.13)
                                                 .blinking(duration: 4.0)
                                             
-                                            Text("received")
-                                                .fontWeight(.bold)
-                                                .frame(width: 95, height: 95)
-                                                .foregroundColor(Color.white)
-                                                .font(.system(size: 17))
-                                                .multilineTextAlignment(.center)
-                                                .opacity(1.0)
-                                                .blinking(duration: 4.0)
-                                                .opacity(0.6)
+//                                            Text("received")
+//                                                .fontWeight(.bold)
+//                                                .frame(width: 95, height: 95)
+//                                                .foregroundColor(Color.white)
+//                                                .font(.system(size: 17))
+//                                                .multilineTextAlignment(.center)
+//                                                .opacity(1.0)
+//                                                .blinking(duration: 4.0)
+//                                                .opacity(0.6)
                                         }
                                     })
                                 
