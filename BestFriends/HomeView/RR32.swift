@@ -126,7 +126,7 @@ VStack {
                                         .foregroundColor(Color.black)
                                 }
                                 .frame(width: 60, height: 60, alignment: .center)
-                                .background(mood == 8 ? Color(.systemYellow) : ColorManager .grey2)
+                                .background(mood == 8 ? Color.yellow : ColorManager .grey2)
                                 .cornerRadius(40)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 
@@ -160,33 +160,33 @@ VStack {
                         Spacer()
                             .frame(height: 15)
                 
-                        HStack {
-                            Image("IconNiceNew40")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 60, height: 60)
-                                .opacity(0.9)
-                            
-                                Button(action: {
-                                    mood = 0
-                                }) {
-                                    
-                                }
-                                Button(action: {
-                                    mood = 1
-                                    showingAlert = true
-                                }) {
-                                    
-                                    Text("Friend's \nSupport")
-                                        .font(.system(size: 10))
-                                        .foregroundColor(Color.black)
-                                }
-                                .frame(width: 60, height: 60, alignment: .center)
-                                .background(mood == 8 ? Color(.systemCyan) : ColorManager .grey2)
-                                .cornerRadius(40)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            }
+            HStack {
+                Image("IconNiceNew40")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 60, height: 60)
+                    .opacity(0.9)
+                
+                    Button(action: {
+                        mood = 0
+                    }) {
+                        
+                    }
+                    Button(action: {
+                        mood = 1
+                        showingAlert = true
+                    }) {
+                        
+                        Text("Friend's \nSupport")
+                            .font(.system(size: 10))
+                            .foregroundColor(Color.black)
+                    }
+                    .frame(width: 60, height: 60, alignment: .center)
+                    .background(mood == 8 ? Color.cyan : ColorManager .grey2)
+                    .cornerRadius(40)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    
+                }
 //
                         Spacer()
                             .frame(height: 10)
@@ -233,7 +233,7 @@ VStack {
                                 Spacer()
                                     .frame(height: 7)
                                 
-                                Text("friend's planet atmospher color matches vibe")
+                                Text("Friend's planet atmospher color matches vibe")
                                     .font(.system(size: 15))
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
@@ -401,11 +401,11 @@ VStack {
             for id in selectedFriends {
                 for f in friends {
                     if f.id == id {
-                        RestApi.instance.sendPushNotification(title: "BestFriends", body: " \(user.firstName) letting you know their day changed. Check to see how you can help or celebrate!", APNToken: f.APNToken)
+                        RestApi.instance.sendPushNotification(title: "BestFriends", body: " \(user.firstName) day just changed! Check their atmosphere color in BFs to see whats up.", APNToken: f.APNToken)
                         
                         //MARK: The code below creates an in-app notification for your friend (f.id)
                         //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                        RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "'Day' just changed! Check their atmosphere color to see if they need a CareHeart.", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "day just changed! Check their atmosphere color in BFs to see whats up.", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                             print("Create a Vibe notification response code: ", response)
                         })
                         RestApi.instance.createStreakLog(friendID: f.id)
