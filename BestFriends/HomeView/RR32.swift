@@ -99,29 +99,47 @@ struct RR32: View {
                 //
                     VStack {
                         
-                        
-                        Button(action: {
-                            mood = 8
-                            showingAlert = true
+                        HStack {
+                            Image(systemName: "circle.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 30, height: 30)
+                                .foregroundColor(Color.red)
+                            //                            .glow(color: ColorManager.purple3, radius: 30)
+                                .blinking(duration: 2.0)
+                                .opacity(0.9)
+                            
+                            
+                            
+                            
+                            Button(action: {
+                                mood = 8
+                                showingAlert = true
                             }) {
-                        
-                            Text("I really need to TALK!")
-                                .font(.system(size: 10))
-                                .foregroundColor(Color.black)
-                            }
-                                .frame(width: 140, height: 30, alignment: .center)
-                                .background(mood == 8 ? Color(.systemYellow) : ColorManager .grey2)
-                                .cornerRadius(7)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 
-        //
-                                
-                                Text("(yellow atmosphere)")
+                                Text("I really need to TALK!")
                                     .font(.system(size: 10))
-                                    .italic()
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.white)
+                                    .foregroundColor(Color.black)
+                            }
+                            .frame(width: 140, height: 30, alignment: .center)
+                            .background(mood == 8 ? Color(.systemYellow) : ColorManager .grey2)
+                            .cornerRadius(7)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                           
+                Spacer()
+                    .frame(width: 30)
+                            
+                            
+                        }
+                            
+                            Text("(shows as yellow atmosphere)")
+                                .font(.system(size: 10))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                            
+                        
                         
                         Spacer()
                             .frame(height: 130)
@@ -184,33 +202,6 @@ struct RR32: View {
                 
                         
                         
-//            
-//                
-//                Button(action: {
-//                    mood = 8
-//                    showingAlert = true
-//                    }) {
-//                
-//                    Text("I really need to TALK!")
-//                        .font(.system(size: 10))
-//                        .foregroundColor(Color.black)
-//                    }
-//                        .frame(width: 140, height: 30, alignment: .center)
-//                        .background(mood == 8 ? Color(.systemYellow) : ColorManager .grey2)
-//                        .cornerRadius(7)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        
-////
-//                        
-//                        Text("(yellow atmosphere)")
-//                            .font(.system(size: 10))
-//                            .italic()
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(Color.white)
-//                        
-                
-                                
                 
                 //
                 //
