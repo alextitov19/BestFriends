@@ -56,25 +56,15 @@ struct CH5: View {
             
             VStack {
     
+           
                 
-                Text("(When BestFriends app is OPEN)")
-                    .font(.system(size: 13))
-                    .italic()
-                    .foregroundColor(ColorManager .grey1)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                
-                Spacer ()
-                    .frame(height: 10)
-                
-                
-                Text("View friend's images by,")
+                Text("To view images")
                     .font(.system(size: 25))
                     .foregroundColor(Color.white)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
-                Text("'Skaking' your iPhone")
+                Text("'Skake iPhone")
                     .font(.system(size: 35))
                     .foregroundColor(Color.white)
                     .fontWeight(.light)
@@ -96,9 +86,9 @@ struct CH5: View {
                         Text("INSTRUCTIONS: \n1) tap 'camera' or 'gallery' \n2) select friend \n3) add image \n4) tap [Instant Alert] \n\nNOTE: \nYou can only send ONE real-time image \nto ONE friend at a time \n\n\nSENDING NEW IMAGE:  \n1) DELETE current image (just tap it) \n2) Then repeat above steps.")
                             .fontWeight(.regular)
                             .frame(width: 275, height: 300)
-                            .foregroundColor(Color.black)
+                            .foregroundColor(Color.white)
                             .font(.system(size: 15))
-                            .background(ColorManager .grey2)
+                            .background(ColorManager .grey4)
                             .cornerRadius(15)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         
@@ -116,25 +106,7 @@ struct CH5: View {
                     
                 }
                 VStack {
-                    
-                    Spacer()
-                        .frame(height: 30)
-                    
-                    
-                    NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
-                                    label: {
-                        Text("Go to 'Send PhotoPOP'")
-                            .fontWeight(.light)
-                            .frame(width: 220, height: 40)
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 17))
-                            .background(Color.green)
-                            .glow(color: ColorManager.purple3, radius: 1)
-                            .shadow(color: .white, radius: 3, x: -4, y: 4)
-                            .opacity(0.9)
-                            .cornerRadius(10)
-                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                    })
+            
               
                     
                     Spacer()

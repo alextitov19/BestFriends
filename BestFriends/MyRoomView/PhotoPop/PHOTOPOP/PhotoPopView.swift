@@ -55,52 +55,18 @@ struct PhotoPopView: View {
                         .onDisappear { createPhotoPop() }
             
             
-//
-//
-//
-//            ColorManager.grey4
-//                .ignoresSafeArea()
-//                .onAppear()
-//                .scaledToFill()
-//                .opacity(0.8)
-//                .onAppear(perform: loadData)
-//                .sheet(isPresented: $isShowPhotoLibrary) {
-//                    ImagePicker(image: $attachmentImage, sourceType: pickerSourceType)
-//                        .onDisappear { createPhotoPop() }
-//
-
-                
-                    
-                    
+    
                 }
             
             VStack {
-            
-                Text("Sending")
-                    .foregroundColor(Color.white)
-                    .font(.system(size: 35, weight: .light))
-                    .opacity(0.7)
-                Text("PhotoPOPs")
-                    .foregroundColor(Color.white)
-                    .font(.system(size: 45, weight: .regular))
-                    .opacity(0.7)
-                
-                Text("(view images by 'shaking' iPhone)")
-                    .foregroundColor(Color.white)
-                    .italic()
-                    .font(.system(size: 15, weight: .regular))
-                    .opacity(0.7)
-              
-//                Spacer ()
-//                    .frame(height: 17)
-                
+        
                 NavigationLink( destination:  CH5(user: user, friends: friends),
                                 label: {
-                    Text("how to upload")
+                    Text("+")
                         .fontWeight(.light)
-                        .frame(width: 130, height: 30)
+                        .frame(width: 30, height: 30)
                         .foregroundColor(Color.white)
-                        .font(.system(size: 15))
+                        .font(.system(size: 30))
                         .background(ColorManager .grey3)
 //                            .opacity(0.7)
                         .cornerRadius(10)

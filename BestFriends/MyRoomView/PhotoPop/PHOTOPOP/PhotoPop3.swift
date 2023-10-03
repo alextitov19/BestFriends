@@ -61,8 +61,7 @@ struct PhotoPop3: View {
                 
                 
                 VStack {
-                    
-                    
+              
                     
                     Text("Send push notification")
                         .font(.system(size: 20, weight: .light))
