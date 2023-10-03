@@ -98,6 +98,33 @@ struct RR32: View {
                 //                //    HStack {
                 //
                     VStack {
+                        
+                        
+                        Button(action: {
+                            mood = 8
+                            showingAlert = true
+                            }) {
+                        
+                            Text("I really need to TALK!")
+                                .font(.system(size: 10))
+                                .foregroundColor(Color.black)
+                            }
+                                .frame(width: 140, height: 30, alignment: .center)
+                                .background(mood == 8 ? Color(.systemYellow) : ColorManager .grey2)
+                                .cornerRadius(7)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+        //
+                                
+                                Text("(yellow atmosphere)")
+                                    .font(.system(size: 10))
+                                    .italic()
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.white)
+                        
+                        Spacer()
+                            .frame(height: 130)
                 
                                     Button(action: {
                                         mood = 0
@@ -118,7 +145,7 @@ struct RR32: View {
                                     .cornerRadius(7)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 
-                                    .alert("We'll ask your friends for 'Friend Support' while letting them know you are not ready to talk just yet.", isPresented: $showingAlert) {
+                                    .alert("We'll ask your friends for 'Friendship Support' while letting them know you are not ready to talk just yet.", isPresented: $showingAlert) {
                                         Button("OK", role: .cancel, action: {
                                             showingAlert = false
                 
@@ -157,39 +184,34 @@ struct RR32: View {
                 
                         
                         
-                        //
-                //                    Spacer()
-                //                        .frame(height: 30)
-                //
-                //                    Text("yellow atmosphere")
-                //                        .font(.system(size: 10))
-                //                        .italic()
-                //                        .fontWeight(.light)
-                //                        .multilineTextAlignment(.center)
-                //                        .foregroundColor(Color.white)
-                //
-                //                    Button(action: {
-                //                        mood = 8
-                //                        showingAlert = true
-                //                    }) {
-                //
-                //                        Text("I really need to TALK!")
-                //                            .font(.system(size: 10))
-                //                            .foregroundColor(Color.black)
-                //                        //                            Image("smileIcon2")
-                //                    }
-                //                    .frame(width: 140, height: 30, alignment: .center)
-                //                    .background(mood == 8 ? Color(.systemYellow) : ColorManager .grey2)
-                //                    .cornerRadius(7)
-                //                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                //                    //                            .alert("Alert sent", isPresented: $showingAlert) {
-                //                    //                                Button("OK", role: .cancel, action: {
-                //                    //                                    showingAlert = false
-                //                    //                                We are super happy you're having a great day - smile, it's catching.
-                //
-                //
-                //                }
-                //
+//            
+//                
+//                Button(action: {
+//                    mood = 8
+//                    showingAlert = true
+//                    }) {
+//                
+//                    Text("I really need to TALK!")
+//                        .font(.system(size: 10))
+//                        .foregroundColor(Color.black)
+//                    }
+//                        .frame(width: 140, height: 30, alignment: .center)
+//                        .background(mood == 8 ? Color(.systemYellow) : ColorManager .grey2)
+//                        .cornerRadius(7)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        
+////
+//                        
+//                        Text("(yellow atmosphere)")
+//                            .font(.system(size: 10))
+//                            .italic()
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(Color.white)
+//                        
+                
+                                
+                
                 //
                 //
                 //
