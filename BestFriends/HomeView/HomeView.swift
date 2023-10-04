@@ -104,10 +104,7 @@ struct HomeView: View {
                         
                         
     HStack {
-                            
-                            Spacer()
-                                .frame(width: 10)
-
+     
             
             NavigationLink(
                 destination:  HugPreload(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
@@ -181,25 +178,15 @@ struct HomeView: View {
                                     })
                                 
                             }
-                            
-                            
-                            
-                            
-                            Spacer()
-                                .frame(width: 25)
-                            
-                            
-                            
-                            
-                            
+                   
                         }
                         
                         
                         
                         
-                        //***************************** Center Heart opeque **********************
+//***************************** Center Heart opeque **********************
                         
-                        //************************************ **********************
+//************************************ **********************
                         
                         Spacer()
                         
