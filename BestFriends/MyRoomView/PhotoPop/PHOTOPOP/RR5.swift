@@ -158,7 +158,7 @@ struct RR5: View {
                                     .blinking(duration: 2.0)
                                 
                                 
-                                Text("Shoot me a \nquick PhotoPOP")
+                                Text("Shoot me a \nquick pic")
                                     .fontWeight(.light)
                                     .foregroundColor(Color.black)
                                     .font(.system(size: 16))
@@ -381,7 +381,7 @@ struct RR5: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "Hey,  \(user.firstName) What are you doing? Shoot me a quick PhotoPOP.", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "Hey,  \(user.firstName) What are you doing? Shoot me a quick pic.", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
