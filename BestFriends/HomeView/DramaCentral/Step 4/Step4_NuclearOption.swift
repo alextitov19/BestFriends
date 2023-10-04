@@ -215,7 +215,7 @@ struct Step4_NuclearOption: View {
                             
                             HStack {
                                 
-                                Image(systemName: "heart")
+                                Image(systemName: "circle")
                                     .resizable()
                                     .foregroundColor(Color.blue)
                                     .frame(width: 10, height: 10)
@@ -230,7 +230,7 @@ struct Step4_NuclearOption: View {
                                 
                                 ZStack {
                                     
-                                    Image(systemName: "heart")
+                                    Image(systemName: "cirle.fill")
                                         .resizable()
                                         .foregroundColor(Color.orange)
                                         .frame(width: 80, height: 80)
