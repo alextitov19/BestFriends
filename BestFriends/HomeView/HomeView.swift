@@ -143,25 +143,7 @@ struct HomeView: View {
             ZStack {
                 
                 HStack {
-                    
-                    NavigationLink(
-                        destination:  HugPreload(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
-                        label: {
-                            
-                            ZStack {
-                                Image(systemName: "cube")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 50, height: 50)
-                                    .foregroundColor(Color.white)
-                                    .glow(color: Color.cyan, radius: 3)
-                                    .opacity(0.13)
-                                    .blinking(duration: 4.0)
-                                
-
-                            }
-                        })
-                    
+               
                     NavigationLink(
                         destination:  BestFriendMessages(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres),
                         label: {
@@ -274,7 +256,7 @@ struct HomeView: View {
                         Image(systemName: "heart.fill")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 425, height: 425)
+                            .frame(width: 300, height: 300)
                             .foregroundColor(ColorManager .purple3)
                             .opacity(0.1)
                             .glow(color: Color.white, radius: 75)
