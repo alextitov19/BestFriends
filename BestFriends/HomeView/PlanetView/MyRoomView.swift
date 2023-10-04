@@ -53,24 +53,24 @@ struct MyRoomView: View {
             VStack {
                 
             
-                HStack {
-                    
-                    
-                                        NavigationLink(
-                                            destination:  FH10(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                            label: {
-                    
-                                                Image(systemName: "info.circle")
-                                                    .resizable()
-                                                    .scaledToFit()
-                                                    .frame(width: 37, height: 37)
-                                                    .opacity(0.9)
-                                                    .foregroundColor(.white)
-                                                    .opacity(0.9)
-                                            })
-                    
-                    Spacer ()
-                        .frame(width: 100)
+//                HStack {
+//
+//
+//                                        NavigationLink(
+//                                            destination:  FH10(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                                            label: {
+//
+//                                                Image(systemName: "info.circle")
+//                                                    .resizable()
+//                                                    .scaledToFit()
+//                                                    .frame(width: 37, height: 37)
+//                                                    .opacity(0.9)
+//                                                    .foregroundColor(.white)
+//                                                    .opacity(0.9)
+//                                            })
+//
+//                    Spacer ()
+//                        .frame(width: 100)
                     
                     VStack {
                         
@@ -126,24 +126,24 @@ struct MyRoomView: View {
                         }
                     }
                     
-                                        Spacer ()
-                                            .frame(width: 22)
-                    
-                                        NavigationLink(
-                                            destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
-                                            label: {
-
-                                                Image(systemName: "gear")
-                                                    .resizable()
-                                                    .scaledToFit()
-                                                    .frame(width: 37, height: 37)
-                                                    .opacity(0.9)
-                                                    .foregroundColor(.white)
-                                                    .opacity(0.9)
-                                            })
-
-                                        }
-                
+//                                        Spacer ()
+//                                            .frame(width: 22)
+//
+//                                        NavigationLink(
+//                                            destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
+//                                            label: {
+//
+//                                                Image(systemName: "gear")
+//                                                    .resizable()
+//                                                    .scaledToFit()
+//                                                    .frame(width: 37, height: 37)
+//                                                    .opacity(0.9)
+//                                                    .foregroundColor(.white)
+//                                                    .opacity(0.9)
+//                                            })
+//
+//                                        }
+//
                 Spacer()
                     .frame(height: 85)
                 
@@ -155,7 +155,7 @@ struct MyRoomView: View {
                             Image(systemName: "circle.fill")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 90, height: 90)
+                                .frame(width: 150, height: 150)
                                 .foregroundColor(Color.orange)
                             //                            .blinking(duration: 4.0)
                                 .glow(color: ColorManager.orange5, radius: 10)
@@ -388,10 +388,10 @@ struct MyRoomView: View {
 //                                            })
                                         }
                                         
-                                        Spacer()
-                                            .frame(width: 20)
-                                        
-                                        
+//                                        Spacer()
+//                                            .frame(width: 20)
+//
+//
                     VStack {
                                             
 //                        ZStack {
@@ -486,10 +486,10 @@ struct MyRoomView: View {
 //                                        }
 //
                                         
-                                        
-                                        Spacer ()
-                                            .frame(width: 130)
-                                        
+//
+//                                        Spacer ()
+//                                            .frame(width: 30)
+//
                                         //
 //                                        ZStack {
 //
@@ -552,8 +552,8 @@ struct MyRoomView: View {
                                         
                                 VStack {
                                          
-                                            Spacer()
-                                                .frame(height: 85)
+//                                            Spacer()
+//                                                .frame(height: 85)
                                             
 //                                            NavigationLink( destination:  Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
 //                                                            label: {
@@ -750,84 +750,84 @@ struct MyRoomView: View {
                         }
                         
 //    ************************************************
-                        ZStack {
-
-                            Image(systemName: "circle")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 60, height: 60)
-                                .foregroundColor(Color .green)
-                                .glow(color: ColorManager.purple4, radius: 20)
-//                                    .blinking(duration: 2.0)
-
-
-                            NavigationLink( destination:  Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
-                                            label: {
-                                Text("Fix \nFight")
-                                    .fontWeight(.medium)
-                                    .frame(width: 60, height: 60)
-                                    .foregroundColor(Color.white)
-                                    .font(.system(size: 10))
-                                    .blinking(duration: 4.0)
-
-                            })
-
-                        }
+//                        ZStack {
+//
+//                            Image(systemName: "circle")
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 60, height: 60)
+//                                .foregroundColor(Color .green)
+//                                .glow(color: ColorManager.purple4, radius: 20)
+////                                    .blinking(duration: 2.0)
+//
+//
+//                            NavigationLink( destination:  Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+//                                            label: {
+//                                Text("Fix \nFight")
+//                                    .fontWeight(.medium)
+//                                    .frame(width: 60, height: 60)
+//                                    .foregroundColor(Color.white)
+//                                    .font(.system(size: 10))
+//                                    .blinking(duration: 4.0)
+//
+//                            })
+//
+//                        }
 //    //    ************************************************
                         
-                        ZStack {
-                                        Image(systemName: "cube")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 70, height: 70)
-                                            .foregroundColor(Color.green)
-                                            .rotationEffect(.degrees(180))
-                                            .opacity(0.6)
-                                            .blinking(duration: 2.0)
-                                            .glow(color: ColorManager.purple4, radius: 20)
-
-                                        
-//         *****************************************************************
-                                        NavigationLink(
-                                            destination:  RR23(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                            label: {
-                                                
-                                                Text("Beta")
-                                                    .fontWeight(.regular)
-                                                    .frame(width: 60, height: 60)
-                                                    .foregroundColor(Color.white)
-                                                    .font(.system(size: 15))
-                                                    .blinking(duration: 2.0)
-                                            }
-                                                )}
-                                      
-                        ZStack {
-                            
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .foregroundColor(Color.cyan)
-                                .frame(width: 150, height: 110)
-                                .rotationEffect(.degrees(7))
-                                .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
-                                .opacity(0.5)
-//                                        .blinking(duration: 2.0)
-                            
-                            
-                            NavigationLink(destination: RR31(user: user, friends: friends), label: {
-                                
-                                Text("We're here \nfor you")
-                                    .fontWeight(.thin)
-                                    .foregroundColor(Color.white)
-                                    .font(.system(size: 20))
-                                    .multilineTextAlignment(.center)
-                                    .rotationEffect(.degrees(7))
-                                    .opacity(1.0)
+//                        ZStack {
+//                                        Image(systemName: "cube")
+//                                            .resizable()
+//                                            .scaledToFit()
+//                                            .frame(width: 70, height: 70)
+//                                            .foregroundColor(Color.green)
+//                                            .rotationEffect(.degrees(180))
+//                                            .opacity(0.6)
 //                                            .blinking(duration: 2.0)
-                                
-                                
-                            }
-                            )}
-                        
+//                                            .glow(color: ColorManager.purple4, radius: 20)
+//
+//
+//         *****************************************************************
+//                                        NavigationLink(
+//                                            destination:  RR23(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                                            label: {
+//
+//                                                Text("Beta")
+//                                                    .fontWeight(.regular)
+//                                                    .frame(width: 60, height: 60)
+//                                                    .foregroundColor(Color.white)
+//                                                    .font(.system(size: 15))
+//                                                    .blinking(duration: 2.0)
+//                                            }
+//                                                )}
+//
+//                        ZStack {
+//
+//                            Image(systemName: "heart.fill")
+//                                .resizable()
+//                                .foregroundColor(Color.cyan)
+//                                .frame(width: 150, height: 110)
+//                                .rotationEffect(.degrees(7))
+//                                .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+//                                .opacity(0.5)
+////                                        .blinking(duration: 2.0)
+//
+//
+//                            NavigationLink(destination: RR31(user: user, friends: friends), label: {
+//
+//                                Text("We're here \nfor you")
+//                                    .fontWeight(.thin)
+//                                    .foregroundColor(Color.white)
+//                                    .font(.system(size: 20))
+//                                    .multilineTextAlignment(.center)
+//                                    .rotationEffect(.degrees(7))
+//                                    .opacity(1.0)
+////                                            .blinking(duration: 2.0)
+//
+//
+//                            }
+//                            )}
+//
                         
                         
                         Spacer ()

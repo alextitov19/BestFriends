@@ -117,7 +117,7 @@ struct HomeView: View {
                                                 .frame(width: 50, height: 50)
                                                 .foregroundColor(Color.white)
                                                 .glow(color: Color.cyan, radius: 3)
-                                                .opacity(0.13)
+                                                .opacity(0.1)
                                                 .blinking(duration: 4.0)
                                             
                                             
@@ -140,7 +140,7 @@ struct HomeView: View {
                                                 .frame(width: 50, height: 50)
                                                 .foregroundColor(Color.white)
                                                 .glow(color: Color.cyan, radius: 1)
-                                                .opacity(0.2)
+                                                .opacity(0.35)
                                                 .blinking(duration: 4.0)
                                             
                                         }
@@ -170,7 +170,7 @@ struct HomeView: View {
                                                     .frame(width: 50, height: 50)
                                                     .foregroundColor(Color.white)
                                                     .glow(color: Color.cyan, radius: 3)
-                                                    .opacity(0.13)
+                                                    .opacity(0.1)
                                                     .blinking(duration: 4.0)
                                                 
                                                 
@@ -192,7 +192,7 @@ struct HomeView: View {
                                             .frame(width: 50, height: 50)
                                             .foregroundColor(Color.white)
                                             .glow(color: Color.cyan, radius: 3)
-                                            .opacity(0.13)
+                                            .opacity(0.1)
                                             .blinking(duration: 4.0)
                                         
                                         
@@ -369,13 +369,25 @@ struct HomeView: View {
                     
                     ZStack {
                         
-                        NavigationLink(destination: MyRoomView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups), label: {
-                            PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
-                                .scaledToFit()
-                                .frame(width: 120, height: 120)
-                                .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 11)
-                                .opacity(0.3)
-                                .padding()
+//                        NavigationLink(destination: MyRoomView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups), label: {
+//                            PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
+//                                .scaledToFit()
+//                                .frame(width: 120, height: 120)
+//                                .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 11)
+//                                .opacity(0.3)
+//                                .padding()
+                            
+                            
+                            NavigationLink(destination: FH2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups), label: {
+                                PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
+                                    .scaledToFit()
+                                    .frame(width: 120, height: 120)
+                                    .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 11)
+                                    .opacity(0.3)
+                                    .padding()
+                            
+                            
+                            
                             
                         })
                             Text("walk-through")
