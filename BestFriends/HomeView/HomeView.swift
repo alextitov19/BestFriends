@@ -125,7 +125,7 @@ struct HomeView: View {
                 })
     
                             Spacer()
-                                .frame(width: 20)
+                                .frame(width: 10)
                             
     //    ****************************************
            
@@ -176,12 +176,28 @@ struct HomeView: View {
                                             
                                         }
                                     })
-                                
+                                 
                             }
                    
                         }
                         
-                        
+                        NavigationLink(
+                            destination:  Step4_NuclearOption(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere,  friendAtmospheres: homeData!.friendAtmospheres),
+                            label: {
+                                
+                                ZStack {
+                                    Image(systemName: "cube")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 50, height: 50)
+                                        .foregroundColor(Color.white)
+                                        .glow(color: Color.cyan, radius: 3)
+                                        .opacity(0.13)
+                                        .blinking(duration: 4.0)
+                                    
+                                    
+                                }
+                            })
                         
                         
 //***************************** Center Heart opeque **********************
