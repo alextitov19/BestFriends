@@ -264,26 +264,12 @@ struct HomeView: View {
 
 
 
-                        HStack {
+                        
+//          ********************** Bottom Icons *************
+HStack {
 
-//          ********************************************* PhotoPOP links *************
-                     
-                            Spacer()
-                                .frame(width: 10)
-                            
-                            
-                            
-                    ZStack {
-//                                    Image(systemName: "circle")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 65, height: 65)
-//                                        .foregroundColor(Color.blue)
-//                                        .glow(color: ColorManager .purple4, radius: 20)
-//                                        .blinking(duration: 4.0)
-//
-
-                                 
+            ZStack {
+            
                         NavigationLink(
                             destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
                             label: {
@@ -301,11 +287,26 @@ struct HomeView: View {
                                     })
                                 }
                             
-                            
+                 
+    ZStack {
+        NavigationLink(
+            destination:  RR5(user: homeData!.user, friends: homeData!.friends),
+            label: {
+                
+                Image("IconHugNew")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 50, height: 50)
+                    .foregroundColor(ColorManager .purple5)
+                    .glow(color: Color.purple, radius: 2)
+                    .opacity(0.9)
+                })
+            }
+    
                             
 //******************************************************
                             Spacer()
-                                .frame(width: 50)
+                                .frame(width: 40)
                             
                             
                             ZStack {
@@ -340,55 +341,49 @@ struct HomeView: View {
                                 
                             }
                             
-                            
-                            
-//******************************************************
-                            
-                            
+             
                             Spacer()
-                                .frame(width: 50)
+                                .frame(width: 40)
                             
+    //******************************************************
                             
-                            
-                    ZStack {
-//                                    Image(systemName: "circle")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 65, height: 65)
-//                                        .foregroundColor(ColorManager .purple4)
-//                                        .glow(color: Color.blue, radius: 20)
-//                                        .blinking(duration: 4.0)
-//
-//
-                                    NavigationLink(
-                                        destination:  RR5(user: homeData!.user, friends: homeData!.friends),
-                                        label: {
-                                            
-                                            Image("IconHugNew")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 50, height: 50)
-            //                                    .rotationEffect(.degrees(-7))
-                                                .foregroundColor(ColorManager .purple5)
-                                                .glow(color: Color.purple, radius: 2)
-                                                .opacity(0.9)
-                                    })
-                                }
-                            
+        ZStack {
+            NavigationLink(
+                destination:  RR5(user: homeData!.user, friends: homeData!.friends),
+                label: {
+                    
+                    Image("IconHugNew")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 50, height: 50)
+                        .foregroundColor(ColorManager .purple5)
+                        .glow(color: Color.purple, radius: 2)
+                        .opacity(0.9)
+                    })
+                }
 
-                            
-                            
-                            
-    //          ********************************************** Carehearts *************
-                      
-  
-                            
-//                            Spacer()
-//                                .frame(width: 40)
+    ZStack {
+        NavigationLink(
+            destination:  RR5(user: homeData!.user, friends: homeData!.friends),
+            label: {
+                
+                Image("IconHugNew")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 50, height: 50)
+                    .foregroundColor(ColorManager .purple5)
+                    .glow(color: Color.purple, radius: 2)
+                    .opacity(0.9)
+                })
+            }
+    
+    
+    
+    
+    
+            }
 
-                        }
-
-                    }
+        }
                     
                    Spacer()
 
