@@ -65,8 +65,7 @@ struct HomeView: View {
 
                 }
                 
-//            user: user, friend: user, friends: friends, groups: groups)
-                
+
                 // Stars animation...
                 AdPlayerView(name: "background_9")
                     .ignoresSafeArea()
@@ -132,30 +131,8 @@ struct HomeView: View {
                                 .frame(width: 20)
                             
     //    ****************************************
-                            
-//        VStack {
-            
-            
-//            ZStack {
-                
-//                HStack {
-//
-//                    NavigationLink(
-//                        destination:  BestFriendMessages(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres),
-//                        label: {
-//
-//                            Image("IconRoomNew")
-//                                .resizable()
-//                                .scaledToFit()
-//                                .frame(width: 37, height: 37)
-//                            //                                    .rotationEffect(.degrees(-7))
-//                                .foregroundColor(ColorManager .purple5)
-//                                .glow(color: Color.purple, radius: 2)
-//                                .opacity(0.9)
-//                        })
-//                }
-//            }
-                                NavigationLink(
+           
+               NavigationLink(
                                     destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                     label: {
                                         
@@ -172,28 +149,7 @@ struct HomeView: View {
                                         }
                                     })
                                 
-                                //    ***********************
-                                
-                                //            ZStack {
-                                
-                                
-//                                NavigationLink(
-//                                    destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-//                                    label: {
-//                                        
-//                                        ZStack {
-//                                            Image("cube")
-//                                                .resizable()
-//                                                .scaledToFit()
-//                                                .frame(width: 50, height: 50)
-//                                                .foregroundColor(Color.white)
-//                                                .glow(color: Color.cyan, radius: 1)
-//                                                .opacity(0.2)
-//                                                .blinking(duration: 4.0)
-//                                            
-//                                        }
-//                                    })
-//                            }
+                
                             
                             Spacer()
                                 .frame(width: 10)
