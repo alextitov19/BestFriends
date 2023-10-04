@@ -378,7 +378,7 @@ struct HomeView: View {
 //                                .opacity(0.3)
 //                                .padding()
                             
-                            
+
                             NavigationLink(destination: FH2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups), label: {
                                 PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
                                     .scaledToFit()
@@ -386,27 +386,39 @@ struct HomeView: View {
                                     .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 11)
                                     .opacity(0.3)
                                     .padding()
-                            
-                            
-                            
-                            
+
                         })
-                            Text("walk-through")
-                            .fontWeight(.medium)
-//                            .frame(width: 100, height: 100)
-                          .foregroundColor(Color.white)
-                            .font(.system(size: 15))
-//                            .background(ColorManager .grey3)
-//                            .multilineTextAlignment(.center)
-//                            .opacity(1.0)
-//                            .cornerRadius(50)
-//                            .shadow(color: Color.white, radius: 2, x: 0, y: 1)
-                            .blinking(duration: 2.0)
-                            .opacity(0.6)
-//                        })
+//                            Text("walk-through")
+//                            .fontWeight(.medium)
+////                            .frame(width: 100, height: 100)
+//                          .foregroundColor(Color.white)
+//                            .font(.system(size: 15))
+////                            .background(ColorManager .grey3)
+////                            .multilineTextAlignment(.center)
+////                            .opacity(1.0)
+////                            .cornerRadius(50)
+////                            .shadow(color: Color.white, radius: 2, x: 0, y: 1)
+//                            .blinking(duration: 2.0)
+//                            .opacity(0.6)
+//
+//
+
+                        NavigationLink(
+                            destination:   FH2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                            label: {
+
+                                Image(systemName: "info.circle")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 37, height: 37)
+                                    .opacity(0.9)
+                                    .foregroundColor(.white)
+                                    .opacity(0.9)
+                            })
+                       
                     }
-                        
                 }
+                
                 
                 if newGroupMembers.count > 0 {
                     VStack {

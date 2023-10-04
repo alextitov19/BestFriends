@@ -113,45 +113,45 @@ struct FH10: View {
                 Spacer ()
                     .frame(height: 20)
                 
-                    HStack {
-//
-//
-//                    Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
-//
-//                        Text("Supportive \nInfluencers")
-//                            .fontWeight(.regular)
-//                            .frame(width: 80, height: 50)
-//                            .foregroundColor(Color.white)
-//                            .font(.system(size: 13))
-//                            .background(Color.pink)
-//                            .opacity(0.85)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                HStack {
+                    //
+                    //
+                    //                    Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
+                    //
+                    //                        Text("Supportive \nInfluencers")
+                    //                            .fontWeight(.regular)
+                    //                            .frame(width: 80, height: 50)
+                    //                            .foregroundColor(Color.white)
+                    //                            .font(.system(size: 13))
+                    //                            .background(Color.pink)
+                    //                            .opacity(0.85)
+                    //                            .cornerRadius(15)
+                    //                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                    
+                    
+                    
+                    ZStack {
                         
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .foregroundColor(ColorManager .purple3)
+                            .frame(width: 130, height: 90)
+                            .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+                            .opacity(0.7)
                         
+                        NavigationLink(
                             
-                            ZStack {
+                            destination: BuiltByTeensView(user: user, friends: friends),
+                            label: {
+                                Text("Our Story")
+                                    .fontWeight(.regular)
+                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 13))
                                 
-                                Image(systemName: "heart.fill")
-                                    .resizable()
-                                    .foregroundColor(ColorManager .purple3)
-                                    .frame(width: 130, height: 90)
-                                    .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                                    .opacity(0.7)
-                                
-                                NavigationLink(
-                                    
-                                    destination: BuiltByTeensView(user: user, friends: friends),
-                                    label: {
-                                        Text("Our Story")
-                                            .fontWeight(.regular)
-                                            .foregroundColor(Color.white)
-                                            .font(.system(size: 13))
-                                        
-                                    })
-                               
-                            }
-                            
+                            })
+                        
+                    }
+                }
                             
                             VStack {
                                 
@@ -176,7 +176,7 @@ struct FH10: View {
                                     
                                 )}
                             
-                        }
+                        
                     }
                 }
                 
