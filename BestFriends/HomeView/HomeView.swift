@@ -75,8 +75,8 @@ struct HomeView: View {
              
                 VStack {
                     
-                    Spacer()
-                        .frame(height: 25)
+//                    Spacer()
+//                        .frame(height: 25)
                     
                     if ((homeData) != nil) {
                         
@@ -117,7 +117,7 @@ struct HomeView: View {
                                                 .frame(width: 50, height: 50)
                                                 .foregroundColor(Color.white)
                                                 .glow(color: Color.cyan, radius: 3)
-                                                .opacity(0.1)
+                                                .opacity(0.05)
                                                 .blinking(duration: 4.0)
                                             
                                             
@@ -137,11 +137,11 @@ struct HomeView: View {
                                             Image("iconVibes75")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 50, height: 50)
+                                                .frame(width: 60, height: 60)
                                                 .foregroundColor(Color.white)
-                                                .glow(color: Color.cyan, radius: 1)
-                                                .opacity(0.35)
-                                                .blinking(duration: 4.0)
+                                                .glow(color: Color.white, radius: 1.5)
+                                                .opacity(0.8)
+//                                                .blinking(duration: 4.0)
                                             
                                         }
                                     })
@@ -170,7 +170,7 @@ struct HomeView: View {
                                                     .frame(width: 50, height: 50)
                                                     .foregroundColor(Color.white)
                                                     .glow(color: Color.cyan, radius: 3)
-                                                    .opacity(0.1)
+                                                    .opacity(0.05)
                                                     .blinking(duration: 4.0)
                                                 
                                                 
@@ -192,7 +192,7 @@ struct HomeView: View {
                                             .frame(width: 50, height: 50)
                                             .foregroundColor(Color.white)
                                             .glow(color: Color.cyan, radius: 3)
-                                            .opacity(0.1)
+                                            .opacity(0.05)
                                             .blinking(duration: 4.0)
                                         
                                         
@@ -218,7 +218,8 @@ struct HomeView: View {
                             .blinking(duration: 4.0)
                         
                         
-                        
+                        Spacer()
+                            .frame(height: 50)
                         
                         //          ********************** Bottom Icons *************
                         HStack {

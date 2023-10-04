@@ -119,7 +119,7 @@ VStack {
                             .resizable()
                             .foregroundColor(Color.purple)
                             .frame(width: 155, height: 110)
-                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                            .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
                             .opacity(0.5)
                             .blinking(duration: 3.0)
                         
@@ -207,8 +207,8 @@ VStack {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 60, height: 60)
-                    .foregroundColor(Color.white)
-                    .glow(color: Color.purple, radius: 3)
+                    .foregroundColor(Color.cyan)
+                    .glow(color: Color.cyan, radius: 3)
                     .opacity(0.13)
                 //                    .blinking(duration: 4.0)
                 
@@ -237,9 +237,9 @@ VStack {
                         //                    Image(systemName: "cube.fill")
                         Image("comicBubble")
                             .resizable()
-                            .foregroundColor(Color.purple)
+                            .foregroundColor(Color.cyan)
                             .frame(width: 250, height: 150)
-                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                            .shadow(color: Color.cyan, radius: 3, x: 3, y: 3)
                             .opacity(0.5)
                             .blinking(duration: 3.0)
                         
