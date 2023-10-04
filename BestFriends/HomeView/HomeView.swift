@@ -82,113 +82,182 @@ struct HomeView: View {
                     if ((homeData) != nil) {
 
                     
-                        VStack {
-                            ZStack {
-                            
-                                
-                                NavigationLink(
-                                    destination:  BestFriendMessages(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres),
-                                    label: {
-                                        
-                                        Image("IconRoomNew")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 37, height: 37)
-                                        //                                    .rotationEffect(.degrees(-7))
-                                            .foregroundColor(ColorManager .purple5)
-                                            .glow(color: Color.purple, radius: 2)
-                                            .opacity(0.9)
-                                    })
-                            }
-                        }
-               
-                        HStack {
+//                        VStack {
+//                            ZStack {
+//
+//
+//                                NavigationLink(
+//                                    destination:  BestFriendMessages(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres),
+//                                    label: {
+//
+//                                        Image("IconRoomNew")
+//                                            .resizable()
+//                                            .scaledToFit()
+//                                            .frame(width: 37, height: 37)
+//                                        //                                    .rotationEffect(.degrees(-7))
+//                                            .foregroundColor(ColorManager .purple5)
+//                                            .glow(color: Color.purple, radius: 2)
+//                                            .opacity(0.9)
+//                                    })
+//                            }
+//                        }
+//
+                        
+                        
+  HStack {
    
                             Spacer()
                                 .frame(width: 10)
                             
                             
-                            ZStack {
+            ZStack {
 
-                                
-                                NavigationLink(
-                                    destination:  HugPreload(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
-                                    label: {
-                                        
-                                        ZStack {
-                                            Image(systemName: "cube")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 50, height: 50)
-                                                .foregroundColor(Color.white)
-                                                .glow(color: Color.cyan, radius: 3)
-                                                .opacity(0.13)
-                                                .blinking(duration: 4.0)
-                                            
+                NavigationLink(
+                    destination:  HugPreload(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
+                    label: {
+                        
+                        ZStack {
+                            Image(systemName: "cube")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
+                                .foregroundColor(Color.white)
+                                .glow(color: Color.cyan, radius: 3)
+                                .opacity(0.13)
+                                .blinking(duration: 4.0)
+                            
 
-                                        }
-                                        
-                                        
-                                        
-                                    })
-                                
-                            }
+                        }
+                    })
+                }
+                           
                             
                             Spacer()
                                 .frame(width: 20)
+      
+//    ****************************************
+                            
+        VStack {
+                                
+                        
+            ZStack {
+                
+                HStack {
+                    
+                    NavigationLink(
+                        destination:  HugPreload(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
+                        label: {
                             
                             ZStack {
-                            
+                                Image(systemName: "cube")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 50, height: 50)
+                                    .foregroundColor(Color.white)
+                                    .glow(color: Color.cyan, radius: 3)
+                                    .opacity(0.13)
+                                    .blinking(duration: 4.0)
                                 
-                                NavigationLink(
-                                    destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                                    label: {
-                                        
-                                        ZStack {
-                                            Image("iconVibes75")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 50, height: 50)
-                                                .foregroundColor(Color.white)
-                                               .glow(color: Color.cyan, radius: 1)
-                                                .opacity(0.2)
-                                                .blinking(duration: 4.0)
 
-                                        }
-                                    })
                             }
+                        })
+                    
+                    NavigationLink(
+                        destination:  BestFriendMessages(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres),
+                        label: {
                             
+                            Image("IconRoomNew")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 37, height: 37)
+                            //                                    .rotationEffect(.degrees(-7))
+                                .foregroundColor(ColorManager .purple5)
+                                .glow(color: Color.purple, radius: 2)
+                                .opacity(0.9)
+                        })
+                }
+            }
+                NavigationLink(
+                    destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                    label: {
+                        
+                        ZStack {
+                            Image("iconVibes75")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
+                                .foregroundColor(Color.white)
+                                .glow(color: Color.cyan, radius: 1)
+                                .opacity(0.2)
+                                .blinking(duration: 4.0)
+                            
+                        }
+                    })
+              
+//    ***********************
+                  
+//            ZStack {
+                                        
+                                        
+                        NavigationLink(
+                            destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                            label: {
+                                
+                                ZStack {
+                                    Image("cube")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 50, height: 50)
+                                        .foregroundColor(Color.white)
+                                        .glow(color: Color.cyan, radius: 1)
+                                        .opacity(0.2)
+                                        .blinking(duration: 4.0)
+                                    
+                                }
+                            })
+                        }
+              
                             Spacer()
                                 .frame(width: 10)
-                            
-                            ZStack {
-                           
-                                
-                                
-                                NavigationLink(
-                                    destination:  CH10(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
-                                    label: {
-                                        
-                                        ZStack {
-                                            Image(systemName: "cube")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 50, height: 50)
-                                                .foregroundColor(Color.white)
-                                                .glow(color: Color.cyan, radius: 3)
-                                                .opacity(0.13)
-                                                .blinking(duration: 4.0)
-                                            
+      
+      
+      
+      //           ***************************
 
-                                        }
-                                    })
+      
+      
+        ZStack {
+            
+            NavigationLink(
+                destination:  CH10(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
+                label: {
+                    
+                    ZStack {
+                        Image(systemName: "cube")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 50, height: 50)
+                            .foregroundColor(Color.white)
+                            .glow(color: Color.cyan, radius: 3)
+                            .opacity(0.13)
+                            .blinking(duration: 4.0)
+                        
+
+                    }
+                })
+          
+            }
                                 
-                            }
+                                
+                       
                             
                             Spacer()
                                 .frame(width: 25)
-
-                                
+      
+      
+      
+      
+    
                             }
       
                     

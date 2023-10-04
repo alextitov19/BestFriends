@@ -168,10 +168,11 @@ VStack {
     //               ************************************************
                         
             HStack {
-                Image("IconNiceNew40")
+//                Image("IconNiceNew40")
+                Image("iconSun")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 60, height: 60)
+                    .frame(width: 70, height: 70)
                     .opacity(0.9)
                 
                 Button(action: {
