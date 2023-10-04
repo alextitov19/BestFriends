@@ -81,27 +81,27 @@ struct HomeView: View {
                     
                     if ((homeData) != nil) {
                         
+//                        ZStack {
+//
+//
+//                            NavigationLink(
+//                                destination:  BestFriendMessages(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres),
+//                                label: {
+//
+//                                    Image("IconRoomNew")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 37, height: 37)
+//                                    //                                    .rotationEffect(.degrees(-7))
+//                                        .foregroundColor(ColorManager .purple5)
+//                                        .glow(color: Color.purple, radius: 2)
+//                                        .opacity(0.9)
+//                                })
+//                        }
+//
+                                                   
+                                                
                         
-                        //                        VStack {
-                        //                            ZStack {
-                        //
-                        //
-                        //                                NavigationLink(
-                        //                                    destination:  BestFriendMessages(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres),
-                        //                                    label: {
-                        //
-                        //                                        Image("IconRoomNew")
-                        //                                            .resizable()
-                        //                                            .scaledToFit()
-                        //                                            .frame(width: 37, height: 37)
-                        //                                        //                                    .rotationEffect(.degrees(-7))
-                        //                                            .foregroundColor(ColorManager .purple5)
-                        //                                            .glow(color: Color.purple, radius: 2)
-                        //                                            .opacity(0.9)
-                        //                                    })
-                        //                            }
-                        //                        }
-                        //
                         
                         
                         HStack {
@@ -277,7 +277,7 @@ struct HomeView: View {
                                         Image("IconPhotoNew")
                                             .resizable()
                                             .scaledToFit()
-                                            .frame(width: 50, height: 50)
+                                            .frame(width: 45, height: 45)
                                         //                                    .rotationEffect(.degrees(-7))
                                             .foregroundColor(ColorManager .purple5)
                                             .glow(color: Color.purple, radius: 2)
@@ -296,7 +296,7 @@ struct HomeView: View {
                                         Image("IconHugNew")
                                             .resizable()
                                             .scaledToFit()
-                                            .frame(width: 50, height: 50)
+                                            .frame(width: 45, height: 45)
                                             .foregroundColor(ColorManager .purple5)
                                             .glow(color: Color.purple, radius: 2)
                                             .opacity(0.9)
@@ -348,20 +348,24 @@ struct HomeView: View {
     //******************************************************
                             
                             ZStack {
+
+
                                 NavigationLink(
-                                    destination:  RR5(user: homeData!.user, friends: homeData!.friends),
+                                    destination:  BestFriendMessages(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres),
                                     label: {
-                                        
-                                        Image("IconHugNew")
+
+                                        Image("IconRoomNew")
                                             .resizable()
                                             .scaledToFit()
-                                            .frame(width: 50, height: 50)
+                                            .frame(width: 45, height: 45)
+                                        //                                    .rotationEffect(.degrees(-7))
                                             .foregroundColor(ColorManager .purple5)
                                             .glow(color: Color.purple, radius: 2)
                                             .opacity(0.9)
                                     })
                             }
                             
+
                             ZStack {
                                 NavigationLink(
                                     destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
@@ -370,7 +374,7 @@ struct HomeView: View {
                                         Image("iconSettings")
                                             .resizable()
                                             .scaledToFit()
-                                            .frame(width: 50, height: 50)
+                                            .frame(width: 45, height: 45)
                                             .foregroundColor(ColorManager .purple5)
                                             .glow(color: Color.purple, radius: 2)
                                             .opacity(0.9)
