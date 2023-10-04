@@ -70,7 +70,7 @@ struct MyRoomView: View {
                                             })
                     
                     Spacer ()
-                        .frame(width: 200)
+                        .frame(width: 100)
                     
                     VStack {
                         
@@ -132,7 +132,7 @@ struct MyRoomView: View {
                                         NavigationLink(
                                             destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
                                             label: {
-                    
+
                                                 Image(systemName: "gear")
                                                     .resizable()
                                                     .scaledToFit()
@@ -141,9 +141,8 @@ struct MyRoomView: View {
                                                     .foregroundColor(.white)
                                                     .opacity(0.9)
                                             })
-                    
-                    
-                }
+
+                                        }
                 
                 Spacer()
                     .frame(height: 85)

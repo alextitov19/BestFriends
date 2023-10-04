@@ -22,13 +22,13 @@ struct FH10: View {
     
     var body: some View {
         ZStack {
-
-            ColorManager .grey4
+            Color.black
                 .opacity(0.9)
                 .ignoresSafeArea()
-
             
-    
+            AdPlayerView(name: "background_9")
+                .ignoresSafeArea()
+                .blendMode(.screen)
        
             ZStack {
               
@@ -128,7 +128,7 @@ struct FH10: View {
 //                            .cornerRadius(15)
 //                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         
-                        HStack {
+                        
                             
                             ZStack {
                                 
@@ -151,13 +151,38 @@ struct FH10: View {
                                     })
                                
                             }
+                            
+                            
+                            VStack {
+                                
+                                Spacer()
+                                    .frame(height: 30)
+                                
+                                
+                                
+                                NavigationLink(
+                                    destination: FH6(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                    label: {
+                                        Text("->")
+                                            .fontWeight(.thin)
+                                            .foregroundColor(Color.white)
+                                            .frame(width: 40, height: 40)
+                                            .font(.system(size: 30))
+                                            .background(ColorManager .grey2)
+                                            .opacity(0.95)
+                                            .cornerRadius(5)
+                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                    }
+                                    
+                                )}
+                            
                         }
                     }
                 }
                 
             }
         }
-    }
+    
     
     
     

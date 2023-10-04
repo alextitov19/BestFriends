@@ -137,7 +137,7 @@ struct FH2: View {
                     
                     
                     NavigationLink(
-                        destination: FH6(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        destination:  FH10(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                         label: {
                             Text("->")
                                 .fontWeight(.thin)
