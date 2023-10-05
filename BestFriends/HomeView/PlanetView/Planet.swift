@@ -28,9 +28,9 @@ struct Planet: View {
                     
                     
                     Text(user.firstName + " " + String(user.lastName.first!))
-                        .font(.system(size: 14))
+                        .font(.system(size: 15))
                         .foregroundColor(.white)
-                        .fontWeight(.ultraLight)
+                        .fontWeight(.light)
                 } else {
                     PlanetView(planet: atmosphere.planet, mood: atmosphere.mood)
                         .scaledToFit()
@@ -39,9 +39,9 @@ struct Planet: View {
                     
                     
                     Text(user.firstName + " " + String(user.lastName.first!))
-                        .font(.system(size: 14))
+                        .font(.system(size: 15))
                         .foregroundColor(.white)
-                        .fontWeight(.ultraLight)
+                        .fontWeight(.light)
                 }
             }
             .onAppear(perform: loadData)

@@ -362,20 +362,7 @@ struct HomeView: View {
                                     .padding()
 
                         })
-//                            Text("walk-through")
-//                            .fontWeight(.medium)
-////                            .frame(width: 100, height: 100)
-//                          .foregroundColor(Color.white)
-//                            .font(.system(size: 15))
-////                            .background(ColorManager .grey3)
-////                            .multilineTextAlignment(.center)
-////                            .opacity(1.0)
-////                            .cornerRadius(50)
-////                            .shadow(color: Color.white, radius: 2, x: 0, y: 1)
-//                            .blinking(duration: 2.0)
-//                            .opacity(0.6)
-//
-//
+
 
                         NavigationLink(
                             destination:   FH2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
