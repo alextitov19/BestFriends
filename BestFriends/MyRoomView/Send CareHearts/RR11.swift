@@ -133,11 +133,11 @@ struct RR11: View {
                     Spacer()
                         .frame(height: 10)
                     
-//                    ZStack {
+
                   
                         ZStack {
                             
-                            Image(systemName: "cube.fill")
+                            Image(systemName: "heart.fill")
                                 .resizable()
                                 .foregroundColor(Color.purple)
                                 .frame(width: 250, height: 200)
@@ -155,7 +155,7 @@ struct RR11: View {
                                     .font(.system(size: 30, weight: .light))
                                     .foregroundColor(Color.white)
                                 
-                                Text("you, and...")
+                                Text("you...")
                                     .font(.system(size: 30, weight: .light))
                                     .foregroundColor(Color.white)
                                 
@@ -167,92 +167,8 @@ struct RR11: View {
                             }
                         }
 //***********************************************
-                
-                HStack {
-                    
-                    ZStack {
-                        Image("comicBubble")
-                            .resizable()
-                            .foregroundColor(Color.white)
-                            .frame(width: 250, height: 170)
-                            .shadow(color: Color.white, radius: 3, x: 3, y: 3)
-                            .opacity(0.5)
-                            .blinking(duration: 3.0)
-                        
-                        VStack {
-                            
-                            
-                            Text("You know that song you listen to")
-                                .font(.system(size: 9))
-                                .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .rotationEffect(.degrees(-7))
-                                .blinking(duration: 3.0)
-                            
-                            Text("over-and-over while lying in bed,")
-                                .font(.system(size: 9))
-                                .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .rotationEffect(.degrees(-7))
-                                .blinking(duration: 3.0)
-                            
-                            
-                            
-                            Text("covers over your head,")
-                                .font(.system(size: 9))
-                                .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .rotationEffect(.degrees(-7))
-                                .blinking(duration: 3.0)
-                            
-                        }
-                    }
-                    
-                    //
-                    ZStack {
-                        
-                        
-                        Image("comicBubble")
-                            .resizable()
-                            .foregroundColor(Color.white)
-                            .frame(width: 250, height: 170)
-                            .shadow(color: Color.white, radius: 3, x: 3, y: 3)
-                            .opacity(0.5)
-                            .blinking(duration: 3.0)
-                        
-                        VStack {
-                            
-                            Text("with tear lines down your cheeks,")
-                                .font(.system(size: 9))
-                                .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .rotationEffect(.degrees(-7))
-                                .blinking(duration: 3.0)
-                            
-                            
-                            
-                            Text("when you're having a truely bad day.")
-                                .font(.system(size: 9))
-                                .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .rotationEffect(.degrees(-7))
-                                .blinking(duration: 3.0)
-                            
-                        }
-                    }
-                }
-                
-                
+                Spacer()
+                    .frame(height: 35)
                 
 //    **********************************
                 
@@ -296,13 +212,16 @@ struct RR11: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("(alert friend)")
+                    Text("(alert friend to check Chat)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
             
+                    
+                    
+                    
                     VStack {
                         
                         Spacer()
