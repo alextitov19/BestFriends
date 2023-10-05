@@ -54,9 +54,9 @@ struct HugPreload: View {
                             .scaledToFit()
                             .frame(width: 225, height: 225)
                             .foregroundColor(Color.cyan)
-//                            .glow(color: ColorManager.purple3, radius: 30)
+                            .glow(color: Color.white, radius: 30)
                             .blinking(duration: 2.0)
-                            .opacity(0.3)
+                            .opacity(0.25)
                         
 //
 //
