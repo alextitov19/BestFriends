@@ -149,7 +149,7 @@ struct RR27: View {
                     
              
                     Spacer()
-                        .frame(height: 10)
+                        .frame(height: 45)
                     
                     ZStack {
                   
@@ -169,45 +169,30 @@ struct RR27: View {
                             Spacer()
                                 .frame(height: 7)
                             
-                            Text("You got this!")
-                                .font(.system(size: 25, weight: .light))
+                            Text("You do good")
+                                .font(.system(size: 30, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                           
+                            Text("out there, ok!")
+                                .font(.system(size: 30, weight: .light))
+                                .foregroundColor(ColorManager .grey1)
+                                    .multilineTextAlignment(.center)
                             
                             Spacer()
                                 .frame(height: 10)
-//
-//                            NavigationLink(
-//                                destination:  PhotoPopView(user: user, friends: friends),
-//                                label: {
-//
-//                                    Image(systemName: "camera")
-//
-//                                       .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 40, height: 40)
-//                                        .foregroundColor(Color.cyan)
-//                                        .glow(color: ColorManager.purple4, radius: 2)
-//                                        .opacity(0.6)
-//
-//                                })
-                            
+
                         }
                     }
                 }
                 
                 
-                Text("You do good")
-                    .font(.system(size: 35, weight: .light))
+                Text("You got this!!!")
+                    .font(.system(size: 30, weight: .light))
                     .foregroundColor(ColorManager .grey1)
                     .multilineTextAlignment(.center)
                 
-                
-                Text("out there, ok")
-                    .font(.system(size: 35, weight: .light))
-                    .foregroundColor(ColorManager .grey1)
-                    .multilineTextAlignment(.center)
+            
                 
 
 //                **************************************
@@ -253,7 +238,7 @@ struct RR27: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("(send push notification)")
+                    Text("(alert them to your message in Chat)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
@@ -360,16 +345,16 @@ struct RR27: View {
                             sendMessage()
                         },
                                label: {
-                            Text("SHARE")
-                            
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager .grey2)
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Nice job on having your friend's back.", isPresented: $showingAlert) {
+                            Image("iconShare")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 90, height: 90)
+                                .rotationEffect(.degrees(20))
+                                .foregroundColor(ColorManager .purple5)
+                                .glow(color: Color.purple, radius: 2)
+                                .opacity(0.6)
+                                .blinking(duration: 3.0)
+                                .alert("Nice, we are all a little scared sometimes.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             

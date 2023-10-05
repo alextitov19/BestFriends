@@ -69,34 +69,33 @@ struct SendHomie: View {
             
             VStack{
                 
-                HStack {
+                
                     VStack {
                         
-//                        Text("give a")
-//                            .font(.system(size: 35, weight: .ultraLight))
-//                            .foregroundColor(ColorManager .purple2)
+                        Image("FatGuy200")
+                            .resizable()
+                            .frame(width: 100, height: 100)
                         
                         
-                        Text("Fist-pump!")
-                            .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(ColorManager .purple2)
                         
-                    }
                     
-                    Image("CoolGuy")
-                        .resizable()
-                        .frame(width: 200, height: 200)
+                        HStack {
+                            
+                        Image("girlwalking250")
+                            .resizable()
+                            .frame(width: 100, height: 100)
+                        
+                            Spacer()
+                                .frame(width: 100)
+                            
+                        Image("CoolGuy")
+                            .resizable()
+                            .frame(width: 100, height: 100)
+                    }
                 }
-             
          
                 VStack {
 
-//                    Text("Jump up on a chair, then ...")
-//                                            .font(.system(size: 25))
-//                
-//                                            .foregroundColor(ColorManager .grey2)
-//                                            .fontWeight(.thin)
-//                                            .multilineTextAlignment(.center)
 
                     VStack {
 
@@ -207,16 +206,16 @@ struct SendHomie: View {
                             shareButtonTapped()
                         },
                                label: {
-                            Text("SHARE")
-                        
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(shareColor)
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Nice!", isPresented: $showingAlert) {
+                            Image("iconShare")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 90, height: 90)
+                                .rotationEffect(.degrees(20))
+                                .foregroundColor(ColorManager .purple5)
+                                .glow(color: Color.purple, radius: 2)
+                                .opacity(0.6)
+                                .blinking(duration: 3.0)
+                                .alert("Let us know if you would like to see more of these type of images", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -294,7 +293,7 @@ struct SendHomie: View {
         var body: some View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
-                .frame(width: 90, height: 90)
+                .frame(width: 80, height: 80)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .font(.system(size: 8))
                 .background(color)

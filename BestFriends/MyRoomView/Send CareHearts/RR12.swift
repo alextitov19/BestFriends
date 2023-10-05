@@ -52,7 +52,7 @@ struct RR12: View {
 //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
-        customMessage = "Got Custom CareHeart from; " + user.firstName + " : " + customMessage;
+        customMessage = "Congratulations from; " + user.firstName + " : " + customMessage;
         
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
@@ -175,18 +175,7 @@ struct RR12: View {
                     
                     
                 VStack {
-                    
-//                    Text("Customize your own")
-//                        .font(.system(size: 35, weight: .light))
-//                        .foregroundColor(ColorManager .grey1)
-//                        .multilineTextAlignment(.center)
-//
-//                    Text("CareHearts ...")
-//                        .font(.system(size: 35, weight: .light))
-//                        .foregroundColor(ColorManager .grey1)
-//                        .multilineTextAlignment(.center)
-                    
-                    
+
                     Spacer()
                         .frame(height: 100)
                     
@@ -219,35 +208,18 @@ struct RR12: View {
                                 .font(.system(size: 25, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
-//
-//                            Spacer()
-//                                .frame(height: 7)
-//
+
                             
                             Spacer()
                                 .frame(height: 10)
-                            
-                            NavigationLink(
-                                destination:  PhotoPopView(user: user, friends: friends),
-                                label: {
-                                    
-                                    Image(systemName: "camera")
-                                      
-                                       .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 40, height: 40)
-                                        .foregroundColor(Color.cyan)
-                                        .glow(color: ColorManager.purple4, radius: 2)
-                                        .opacity(0.6)
-  
-                                })
-                            
+
                         }
                     }
                 }
                 VStack {
                     
-                    
+                    Spacer()
+                        .frame(height: 30)
                     ZStack {
                         
                         VStack {
@@ -256,7 +228,7 @@ struct RR12: View {
                                     TextField("", text: $customMessage)
                                         .placeholder(when: customMessage.isEmpty) {
                                             HStack {
-                                                Text("Type personal Chat message here")
+                                                Text("Type message here")
                                                     .foregroundColor(Color.black)
                                                     .fontWeight(.thin)
                                                 Spacer()
@@ -287,7 +259,7 @@ struct RR12: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("(alert friend)")
+                    Text("(alert friend to your message in Chat)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
@@ -394,20 +366,19 @@ struct RR12: View {
                             sendMessage()
                         },
                                label: {
-                            Text("SHARE")
-                            
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager .grey2)
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Yes, yes, yes. You just told your friend they, \n\nCRUSHED IT", isPresented: $showingAlert) {
+                            Image("iconShare")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 90, height: 90)
+                                .rotationEffect(.degrees(20))
+                                .foregroundColor(ColorManager .purple5)
+                                .glow(color: Color.purple, radius: 2)
+                                .opacity(0.6)
+                                .blinking(duration: 3.0)
+                                .alert("Your CONGRATULATIONS is on it's way.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
-                                }
-                            
-                            
+                                    
+                            }
                         })
                         
                         VStack {
@@ -454,11 +425,11 @@ struct RR12: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "Yes, yes, yes  \(user.firstName) just sent you a Congratulations CareHeart!", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "Yes, yes, yes  \(user.firstName) just sent you a Congratulations. You CRUSHED IT!", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Just sent you a Congratulations CareHeart", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Yes, yes, yes! Congratulations you CREUSED IT!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                         print("Create a Congratulations CareHeart notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)

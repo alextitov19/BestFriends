@@ -425,7 +425,7 @@ struct NotificationsView: View {
                     
                     
 // *********** Congratulations
-                case "Just sent you a Congratulations CareHeart ... TAP":
+                case "Yes, yes, yes! Congratulations you CREUSED IT!":
                     newCongratulationsActive = true
                     
                 case "Just said thank you for the Congratulations!!!":
