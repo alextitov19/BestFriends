@@ -150,13 +150,13 @@ struct RR24: View {
                                 .frame(height: 7)
                             
                             
-                            Text("Helping friends protect")
-                                .font(.system(size: 23, weight: .light))
+                            Text("Friends well-being")
+                                .font(.system(size: 30, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                 .multilineTextAlignment(.center)
                             
-                            Text("their mental health")
-                                .font(.system(size: 23, weight: .light))
+                            Text("at risk?")
+                                .font(.system(size: 30, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                 .multilineTextAlignment(.center)
                             
@@ -317,17 +317,18 @@ struct RR24: View {
                             sendMessage()
                         },
                                label: {
-                            Text("SHARE")
-                            
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager .grey2)
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            Image("iconShare")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 90, height: 90)
+                                .rotationEffect(.degrees(20))
+                                .foregroundColor(ColorManager .purple5)
+                                .glow(color: Color.purple, radius: 2)
+                                .opacity(0.6)
+                                .blinking(duration: 3.0)
                                 .alert("Sent. \n\nYou're a great friend.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
+                                    
                                 }
                             
                             

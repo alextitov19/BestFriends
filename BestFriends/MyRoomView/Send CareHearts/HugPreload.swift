@@ -63,11 +63,11 @@ struct HugPreload: View {
                             .blinking(duration: 2.0)
                             .opacity(0.3)
                         
-//                        
-//                        
+//
+//
 //                        Spacer ()
 //                            .frame(height: 20)
-//                        
+//
                         Text("'Send \nFriendship \nSupport'")
                             .font(.system(size: 30))
                             .foregroundColor(Color.white)
@@ -82,6 +82,13 @@ struct HugPreload: View {
                         
                         VStack {
                             
+//  ********************************************Romance CHs ***********
+                            
+                            
+                            
+                            
+                            
+//  ********************************************Bad Day ***********
                             HStack {
                                 
                                 NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
@@ -102,17 +109,9 @@ struct HugPreload: View {
                                     
 //                            Spacer ()
                                 .frame(height: 20)
-//
-//                                    Text("bad day \nsupport")
-//                                        .fontWeight(.thin)
-//                                        .foregroundColor(Color.white)
-//                                        .font(.system(size: 20))
-//                                        .multilineTextAlignment(.center)
-//                                        .rotationEffect(.degrees(0))
-//                                        .opacity(1.0)
-//                                        .blinking(duration: 2.0)
+
                                 }
-//                            }
+
                                 
                                 
                                 
@@ -173,27 +172,10 @@ struct HugPreload: View {
                             .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
                             .shadow(color: Color.blue, radius: 10, x: 10, y: 10)
                             .opacity(0.9)
-//
-//                            Text("Affirmations")
-//                                .fontWeight(.thin)
-//                                .foregroundColor(Color.white)
-//                                .font(.system(size: 20))
-//                                .multilineTextAlignment(.center)
-//                                .rotationEffect(.degrees(0))
-//                                .opacity(1.0)
-//                                .blinking(duration: 2.0)
+
                         }
                         
-                        
-//                        NavigationLink(destination: PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups), label: {
-//                            HugCircle (color: ColorManager .grey1, friendName: "Let's \nMeetup")
-//                        })
-//                        .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-//                        .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
-//                        .opacity(0.5)
-                        
-                        //                     ****************
-                        
+
                     }
                     
                     Spacer ()
@@ -225,16 +207,7 @@ struct HugPreload: View {
                                 .shadow(color: ColorManager .purple3, radius: 4, x: 4, y: 4)
                                 .opacity(0.65)
                                 
-                                
-                                
-//                                Text("Motivation")
-//                                    .fontWeight(.thin)
-//                                    .foregroundColor(Color.white)
-//                                    .font(.system(size: 20))
-//                                    .multilineTextAlignment(.center)
-//                                    .rotationEffect(.degrees(0))
-//                                    .opacity(1.0)
-//                                    .blinking(duration: 2.0)
+ 
                             }
                         }
                         
@@ -352,12 +325,12 @@ struct HugPreload: View {
                         .resizable()
                         .foregroundColor(color)
                     //                            .foregroundColor(ColorManager .purple2)
-                        .frame(width: 120, height: 100)
+                        .frame(width: 100, height: 80)
                         .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
                     
                     Text(friendName)
                         .fontWeight(.medium)
-                        .font(.system(size: 19))
+                        .font(.system(size: 15))
                         .italic()
                         .foregroundColor(.white)
                     

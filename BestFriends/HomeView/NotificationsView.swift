@@ -113,7 +113,7 @@ struct NotificationsView: View {
         @State private var canDoActive = false
         @State private var thanksDoActive = false
         @State private var affirmationActive = false
-        
+        @State private var photoPOPActive = false
         @State private var thanksAffirmationActive = false
         
         init(ian: InAppNotification, user: User, friends: [User]) {
@@ -270,6 +270,10 @@ struct NotificationsView: View {
                     // ***************************************************************
                     
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksAffirmationActive, label: {
+                        EmptyView()
+                    })
+                    
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $photoPOPActive, label: {
                         EmptyView()
                     })
                     
@@ -443,8 +447,8 @@ struct NotificationsView: View {
                     talkCouponActive = true
              
           
-//            case "Said thanks for the Custom CareHeart":
-//                thanksCustomActive = true
+            case "Sent you a photoPOP - 'shake' your iPhone":
+                photoPOPActive = true
                     
                     
                     

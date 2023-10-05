@@ -234,11 +234,11 @@ struct HomeView: View {
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 45, height: 45)
-                                        //                                    .rotationEffect(.degrees(-7))
+                                            .rotationEffect(.degrees(-7))
                                             .foregroundColor(ColorManager .purple5)
                                             .glow(color: Color.purple, radius: 2)
                                             .opacity(0.6)
-                                        //                                    .blinking(duration: 4.0)
+//                                        .blinking(duration: 4.0)
                                         
                                     })
                             }

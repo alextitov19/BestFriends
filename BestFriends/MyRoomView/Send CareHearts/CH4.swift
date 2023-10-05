@@ -153,18 +153,18 @@ struct CH4: View {
                             VStack {
                                 
                                 Text("Friend having a")
-                                    .font(.system(size: 20, weight: .light))
+                                    .font(.system(size: 30, weight: .light))
                                     .foregroundColor(Color.white)
                                 
                                 Text("really bad day?")
-                                    .font(.system(size: 20, weight: .light))
+                                    .font(.system(size: 30, weight: .light))
                                     .foregroundColor(Color.white)
                                 Spacer()
                                     .frame(height: 10)
                                 
-                                Text("Send a song")
-                                    .font(.system(size: 30, weight: .light))
-                                    .foregroundColor(Color.white)
+//                                Text("Send a song")
+//                                    .font(.system(size: 30, weight: .light))
+//                                    .foregroundColor(Color.white)
                                
                             }
                         
@@ -256,44 +256,44 @@ struct CH4: View {
                         }
                     }
                     
-                    
+                    Text("Send a song")
+                        .font(.system(size: 30, weight: .light))
+                        .foregroundColor(Color.white)
                     //***************************************************
                 
-                                            ZStack {
-                                                
-                                       
-                                             
-                                                VStack {
-//                                                     Spacer()
-                                                    // TextField for userInput
-                                                    TextField("", text: $customMessage)
-                                                        .placeholder(when: customMessage.isEmpty) {
-                                                            HStack {
-                                                                Text("Type name of song & message here")
-                                                                    .foregroundColor(Color.white)
-                                                                    .fontWeight(.thin)
-                                                                Spacer()
-                                                            }
-                                                        }
-                                                        .foregroundColor(.white)
-                                                        .font(.system(size: 17))
-                                                        .submitLabel(.done)
-                                                        .onReceive(Just(customMessage)) { _ in limitText(65) }
-                                                        .padding(.top, 20)
-                                                        .padding(.horizontal, 150)
-                                                        .overlay(
-                                                            RoundedRectangle(cornerRadius: 10)
-                                                                .stroke(Color.purple)
-                                                            //                                                            .background(ColorManager.purple3)
-                                                                .frame(height: 50)
-                                                                .padding(.horizontal, 125)
-                                                        )
-                                                        .padding(.bottom, 5)
+        ZStack {
+                                           
+                VStack {
+//                         Spacer()
+                    // TextField for userInput
+                    TextField("", text: $customMessage)
+                        .placeholder(when: customMessage.isEmpty) {
+                            HStack {
+                                Text("Type name of song & message here")
+                                    .foregroundColor(Color.white)
+                                    .fontWeight(.thin)
+                                Spacer()
+                            }
+                        }
+                        .foregroundColor(.white)
+                        .font(.system(size: 17))
+                        .submitLabel(.done)
+                        .onReceive(Just(customMessage)) { _ in limitText(65) }
+                        .padding(.top, 20)
+                        .padding(.horizontal, 150)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.purple)
+                            //                                                            .background(ColorManager.purple3)
+                                .frame(height: 50)
+                                .padding(.horizontal, 125)
+                        )
+                        .padding(.bottom, 5)
+                    
+                    
                                                     
-                                                    
-                                                    
-                                                }
-                                        }
+                }
+            }
 
         
             
@@ -397,15 +397,15 @@ struct CH4: View {
                             sendMessage()
                         },
                                label: {
-                            Text("SHARE")
-                            
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager .grey2)
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            Image("iconShare")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 90, height: 90)
+                                .rotationEffect(.degrees(20))
+                                .foregroundColor(ColorManager .purple5)
+                                .glow(color: Color.purple, radius: 2)
+                                .opacity(0.6)
+                                .blinking(duration: 3.0)
                                 .alert("Your song \nhas been sent to Chat. \n\nYou are a great friend - something not often seen these days.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }

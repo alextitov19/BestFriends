@@ -174,16 +174,32 @@ struct PhotoPop3: View {
                             shareButtonTapped()
                         },
                                label: {
-                            Text("SHARE")
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager .grey3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            
+                            Image("iconShare")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 80, height: 80)
+                                .rotationEffect(.degrees(20))
+                                .foregroundColor(ColorManager .purple5)
+                                .glow(color: Color.purple, radius: 2)
+                                .opacity(0.6)
+                                .blinking(duration: 3.0)
                                 .alert("Image sent. \n\nFriend receives push notification asking them to 'tap' notification and 'shake' iPhone - image pops up!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
+                            
+                            
+                            
+                          
+//                            Text("SHARE")
+//                                .fontWeight(.thin)
+//                                .frame(width: 100, height: 30)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 25))
+//                                .background(ColorManager .grey3)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                .alert("Image sent. \n\nFriend receives push notification asking them to 'tap' notification and 'shake' iPhone - image pops up!", isPresented: $showingAlert) {
+//                                    Button("OK", role: .cancel) { }
                                 }
                         })
                         
@@ -243,11 +259,11 @@ struct PhotoPop3: View {
             for id in selectedFriends {
                 for f in friends {
                     if f.id == id {
-                        RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName)  Sent you a PhotoPOP - 'tap' notification & 'shake' your iPhone.", APNToken: f.APNToken)
+                        RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName)  Sent you a photoPOP - 'shake' your iPhone", APNToken: f.APNToken)
                         
                         //MARK: The code below creates an in-app notification for your friend (f.id)
                         //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                        RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Sent you a PhotoPOP - 'shake' your iPhone & send one back!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Sent you a photoPOP - 'shake' your iPhone", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                             print("Create a photopop notification response code: ", response)
                         })
                         
