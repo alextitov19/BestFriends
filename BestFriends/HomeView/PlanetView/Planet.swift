@@ -85,7 +85,7 @@ struct Planet: View {
         case 7:
             return Color .green
         case 8:
-            return Color.yellow
+            return Color.red
         case 9:
             return Color.yellow
         default:

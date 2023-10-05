@@ -106,7 +106,7 @@ VStack {
                                         .foregroundColor(Color.black)
                                 }
                                 .frame(width: 60, height: 60, alignment: .center)
-                                .background(mood == 8 ? Color.yellow : ColorManager .grey2)
+                    .background(mood == 8 ? Color.red : ColorManager .grey2)
                                 .cornerRadius(40)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                              
@@ -210,11 +210,11 @@ VStack {
                     .foregroundColor(Color.cyan)
                     .glow(color: Color.cyan, radius: 3)
                     .opacity(0.13)
-                //                    .blinking(duration: 4.0)
+        
                 
                 Button(action: {
                     mood = 1
-                    showingAlert = true
+//                    showingAlert = true
                 }) {
                     
                     Text("Want \nFriend's \nSupport")
