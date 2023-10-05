@@ -91,62 +91,93 @@ struct SendKisses: View {
                                 
                              
                             }
-                        }
-                      
-                        
+                        }    
                     }
-                    
-
                 }
              
-         
-                VStack {
-                    
-                    Spacer()
-                        .frame(height: 10)
-
-//                    Text("Jump up on a chair,")
-//                                            .font(.system(size: 20))
-//
-//                                            .foregroundColor(Color.white)
-//                                            .fontWeight(.light)
-//                                            .multilineTextAlignment(.center)
-                    Text("blow your kiss high in the air")
-                                            .font(.system(size: 20))
+//         ***************************************** bubble popups
                 
-                                            .foregroundColor(Color.white)
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
+                HStack {
                     
-                    Text("towards your friend")
-                                            .font(.system(size: 20))
+                    ZStack {
+                        Image("comicBubble")
+                            .resizable()
+                            .foregroundColor(Color.white)
+                            .frame(width: 250, height: 170)
+                            .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+                            .opacity(0.5)
+                            .blinking(duration: 3.0)
+                        
+                        VStack {
+                            
+                            
+                            Text("Yep! Jump up")
+                                .font(.system(size: 17))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .rotationEffect(.degrees(-7))
+                                .blinking(duration: 3.0)
+                            
+                            Text("on a chair...")
+                                .font(.system(size: 17))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .rotationEffect(.degrees(-7))
+                                .blinking(duration: 3.0)
+
+                        }
+                    }
+
+
+                    ZStack {
+                        
+                        
+                        Image("comicBubble")
+                            .resizable()
+                            .foregroundColor(Color.white)
+                            .frame(width: 250, height: 170)
+                            .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+                            .opacity(0.5)
+                            .blinking(duration: 3.0)
+                        
+                        VStack {
+                            
+                            Text("and blow your kiss")
+                                .font(.system(size: 15))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .rotationEffect(.degrees(-7))
+                                .blinking(duration: 3.0)
+                            
+                            
+
+                            Text("towards your friend")
+                                .font(.system(size: 15))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .rotationEffect(.degrees(-7))
+                                .blinking(duration: 3.0)
+                            
+                        }
+                    }
+                }
                 
-                                            .foregroundColor(Color.white)
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
+                
+                
+                
+    VStack {
                     
-//                    Text("towards your friend")
-//                                            .font(.system(size: 23))
-//
-//                                            .foregroundColor(ColorManager .grey1)
-//                                            .fontWeight(.light)
-//                                            .multilineTextAlignment(.center)
-                    VStack {
 
-                        Spacer()
-                            .frame(height: 25)
-
-//                        Text("(who is the luck friend)")
-//                            .font(.system(size: 15))
-//                            .italic()
-//                            .fontWeight(.light)
-//                            .foregroundColor(ColorManager .grey1)
-//                            .multilineTextAlignment(.center)
-                        
-                        
-                        Spacer()
-                            .frame(height: 20)
-                        
+            VStack {
+               
                         HStack {
                       
 //                            Text("select >")
@@ -250,16 +281,16 @@ struct SendKisses: View {
                             shareButtonTapped()
                         },
                                label: {
-                            Text("SHARE")
-                        
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager .grey3)
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your kiss is on it's way. \n\nYour friend just got a push notification asking them to jump up and catch your kisses!", isPresented: $showingAlert) {
+                            Image("iconShare")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 90, height: 90)
+                                .rotationEffect(.degrees(20))
+                                .foregroundColor(ColorManager .purple5)
+                                .glow(color: Color.purple, radius: 2)
+                                .opacity(0.6)
+                                .blinking(duration: 3.0)
+                                .alert("Your song \nhas been sent to Chat. \n\nYou are a great friend - something not often seen these days.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })

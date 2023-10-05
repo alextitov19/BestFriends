@@ -108,16 +108,12 @@ struct RR11: View {
                       
                   } else {
 
-                      Image("CareHeartBalloon 1")
-                          .ignoresSafeArea()
-                          .scaledToFit()
-                          .opacity(0.1)
                       
                       Color.black
                         .opacity(0.9)
                         .ignoresSafeArea()
                       
-                      AdPlayerView(name: "background_9")
+                      AdPlayerView(name: "sky2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
                           .opacity(0.6)
@@ -137,68 +133,128 @@ struct RR11: View {
                     Spacer()
                         .frame(height: 10)
                     
-                    ZStack {
+//                    ZStack {
                   
-                        
-                        Image(systemName: "heart.fill")
+                        ZStack {
+                            
+                            Image(systemName: "cube.fill")
+                                .resizable()
+                                .foregroundColor(Color.purple)
+                                .frame(width: 250, height: 200)
+                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                                .opacity(0.5)
+                                
+                            VStack {
+                                
+                                
+                                Text("I was just")
+                                    .font(.system(size: 30, weight: .light))
+                                    .foregroundColor(Color.white)
+                                
+                                Text("thinking about")
+                                    .font(.system(size: 30, weight: .light))
+                                    .foregroundColor(Color.white)
+                                
+                                Text("you, and...")
+                                    .font(.system(size: 30, weight: .light))
+                                    .foregroundColor(Color.white)
+                                
+                                Spacer()
+                                    .frame(height: 10)
+                                
+                                
+                                }
+                            }
+                        }
+//***********************************************
+                
+                HStack {
+                    
+                    ZStack {
+                        Image("comicBubble")
                             .resizable()
-                            .foregroundColor(Color.purple)
-                            .frame(width: 250, height: 200)
-                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                            .foregroundColor(Color.white)
+                            .frame(width: 250, height: 170)
+                            .shadow(color: Color.white, radius: 3, x: 3, y: 3)
                             .opacity(0.5)
-                       
-                        
+                            .blinking(duration: 3.0)
                         
                         VStack {
-
                             
-                            Spacer()
-                                .frame(height: 7)
                             
-                            Text("Send a")
-                                .font(.system(size: 30, weight: .light))
-                                .foregroundColor(ColorManager .grey1)
-                                    .multilineTextAlignment(.center)
-                            
-                            Text("CareHeart")
-                                .font(.system(size: 30, weight: .light))
-                                .foregroundColor(ColorManager .grey1)
+                            Text("You know that song you listen to")
+                                .font(.system(size: 9))
+                                .italic()
+                                .fontWeight(.light)
                                 .multilineTextAlignment(.center)
-                         
+                                .foregroundColor(Color.white)
+                                .rotationEffect(.degrees(-7))
+                                .blinking(duration: 3.0)
                             
-                            Spacer()
-                                .frame(height: 10)
+                            Text("over-and-over while lying in bed,")
+                                .font(.system(size: 9))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .rotationEffect(.degrees(-7))
+                                .blinking(duration: 3.0)
                             
-                            NavigationLink(
-                                destination:  PhotoPopView(user: user, friends: friends),
-                                label: {
-                                    
-                                    Image(systemName: "camera")
-                                      
-                                       .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 40, height: 40)
-                                        .foregroundColor(Color.cyan)
-                                        .glow(color: ColorManager.purple4, radius: 2)
-                                        .opacity(0.6)
-  
-                                })
+                            
+                            
+                            Text("covers over your head,")
+                                .font(.system(size: 9))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .rotationEffect(.degrees(-7))
+                                .blinking(duration: 3.0)
+                            
+                        }
+                    }
+                    
+                    //
+                    ZStack {
+                        
+                        
+                        Image("comicBubble")
+                            .resizable()
+                            .foregroundColor(Color.white)
+                            .frame(width: 250, height: 170)
+                            .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+                            .opacity(0.5)
+                            .blinking(duration: 3.0)
+                        
+                        VStack {
+                            
+                            Text("with tear lines down your cheeks,")
+                                .font(.system(size: 9))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .rotationEffect(.degrees(-7))
+                                .blinking(duration: 3.0)
+                            
+                            
+                            
+                            Text("when you're having a truely bad day.")
+                                .font(.system(size: 9))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .rotationEffect(.degrees(-7))
+                                .blinking(duration: 3.0)
                             
                         }
                     }
                 }
                 
                 
-                Text("I was just")
-                    .font(.system(size: 35, weight: .light))
-                    .foregroundColor(ColorManager .grey1)
-                    .multilineTextAlignment(.center)
                 
-                Text("thinking about you ...")
-                    .font(.system(size: 35, weight: .light))
-                    .foregroundColor(ColorManager .grey1)
-                    .multilineTextAlignment(.center)
-//                **************************************
+//    **********************************
                 
                 ZStack {
                     
@@ -208,7 +264,7 @@ struct RR11: View {
                                 TextField("", text: $customMessage)
                                     .placeholder(when: customMessage.isEmpty) {
                                         HStack {
-                                            Text("Send emotion filled message to Chat")
+                                            Text("type message here...")
                                                 .foregroundColor(Color.white)
                                                 .fontWeight(.thin)
                                             Spacer()
@@ -219,13 +275,13 @@ struct RR11: View {
                                     .submitLabel(.done)
                                     .onReceive(Just(customMessage)) { _ in limitText(65) }
                                     .padding(.top, 20)
-                                    .padding(.horizontal, 150)
+                                    .padding(.horizontal, 50)
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 10)
                                             .stroke(Color.purple)
                                         //                                                            .background(ColorManager.purple3)
                                             .frame(height: 50)
-                                            .padding(.horizontal, 125)
+                                            .padding(.horizontal, 25)
                                     )
                                     .padding(.bottom, 5)
                             }
@@ -346,20 +402,19 @@ struct RR11: View {
                             shareButtonTapped()
                             sendMessage()
                         },
-                               label: {
-                            Text("SHARE")
-                            
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager .grey2)
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your CareHeart is on it's way. \n\nLove is in the air.", isPresented: $showingAlert) {
+                            label: {
+                            Image("iconShare")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 90, height: 90)
+                                .rotationEffect(.degrees(20))
+                                .foregroundColor(ColorManager .purple5)
+                                .glow(color: Color.purple, radius: 2)
+                                .opacity(0.6)
+                                .blinking(duration: 3.0)
+                                .alert("It's on it's way", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
-                            
                             
                         })
                         
