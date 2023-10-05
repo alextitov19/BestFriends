@@ -25,22 +25,17 @@ struct HugPreload: View {
     var body: some View {
         
         ZStack {
-            
+            //            Image("CHBk4")
+            //                .ignoresSafeArea()
+            //                .scaledToFit()
+            //                .opacity(0.9)
             
             
             Color.black
-                .opacity(0.9)
+                .opacity(0.8)
                 .ignoresSafeArea()
-            
-            Image("CHBk4")
-                .ignoresSafeArea()
-                .scaledToFit()
-                .opacity(0.9)
-            
-            
-            
-//            AdPlayerView(name: "background_9")
-            AdPlayerView(name: "sky2")
+  
+            AdPlayerView(name: "background_7")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.5)
@@ -68,7 +63,7 @@ struct HugPreload: View {
 //                        Spacer ()
 //                            .frame(height: 20)
 //
-                        Text("'Send \nFriendship \nSupport'")
+                        Text("Send \nFriendship \nSupport")
                             .font(.system(size: 30))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)

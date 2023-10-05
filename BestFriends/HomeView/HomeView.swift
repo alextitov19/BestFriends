@@ -65,48 +65,20 @@ struct HomeView: View {
 
                 }
                 
-
-                // Stars animation...
+                Color.black
+                    .opacity(0.5)
+                    .ignoresSafeArea()
+      
                 AdPlayerView(name: "background_7")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-//                    .opacity(0.99)
-                
+                    .opacity(0.5)
              
-                VStack {
-                    
-//                    Spacer()
-//                        .frame(height: 25)
-                    
+    VStack {
                     if ((homeData) != nil) {
-                        
-//                        ZStack {
-//
-//
-//                            NavigationLink(
-//                                destination:  BestFriendMessages(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres),
-//                                label: {
-//
-//                                    Image("IconRoomNew")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 37, height: 37)
-//                                    //                                    .rotationEffect(.degrees(-7))
-//                                        .foregroundColor(ColorManager .purple5)
-//                                        .glow(color: Color.purple, radius: 2)
-//                                        .opacity(0.9)
-//                                })
-//                        }
-//
-                                                   
-                                                
-                        
- 
-                            
+                          
     HStack {
-                                
-                                
-                                NavigationLink(
+                               NavigationLink(
                                     destination:  HugPreload(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
                                     label: {
                                         
@@ -117,7 +89,7 @@ struct HomeView: View {
                                                 .frame(width: 50, height: 50)
                                                 .foregroundColor(Color.white)
                                                 .glow(color: Color.cyan, radius: 3)
-                                                .opacity(0.1)
+                                                .opacity(0.125)
                                                 .blinking(duration: 4.0)
                                             
                                             
@@ -170,7 +142,7 @@ struct HomeView: View {
                                                     .frame(width: 50, height: 50)
                                                     .foregroundColor(Color.white)
                                                     .glow(color: Color.cyan, radius: 3)
-                                                    .opacity(0.1)
+                                                    .opacity(0.125)
                                                     .blinking(duration: 4.0)
                                                 
                                                 
@@ -192,7 +164,7 @@ struct HomeView: View {
                                             .frame(width: 50, height: 50)
                                             .foregroundColor(Color.white)
                                             .glow(color: Color.cyan, radius: 3)
-                                            .opacity(0.1)
+                                            .opacity(0.125)
                                             .blinking(duration: 4.0)
                                         
                                         
@@ -212,9 +184,11 @@ struct HomeView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 380, height: 380)
-                            .foregroundColor(Color.cyan)
-                            .opacity(0.06)
+                            .foregroundColor(Color.white)
+                            .opacity(0.07)
+                            .rotationEffect(.degrees(-20))
                             .glow(color: Color.white, radius: 75)
+                            .shadow(color: Color.white, radius: 10, x: 0, y: 10)
                             .blinking(duration: 4.0)
                         
                         
