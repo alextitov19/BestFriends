@@ -41,7 +41,7 @@ struct Step4_NuclearOption: View {
                 .ignoresSafeArea()
             
             
-            AdPlayerView(name: "background_8")
+            AdPlayerView(name: "PhotoPOP2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
        

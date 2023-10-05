@@ -67,7 +67,7 @@ struct HomeView: View {
                 
 
                 // Stars animation...
-                AdPlayerView(name: "background_9")
+                AdPlayerView(name: "background_7")
                     .ignoresSafeArea()
                     .blendMode(.screen)
 //                    .opacity(0.99)

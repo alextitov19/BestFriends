@@ -1083,8 +1083,8 @@ struct MyRoomView: View {
                                             //
                                             //                                        VStack {
                                             //
-                                            //                                            NavigationLink( destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                            //                                                            label: {
+//                                                                                        NavigationLink( destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                                                                                                        label: {
                                             //                                                Text("My Dreams")
                                             //                                                    .fontWeight(.regular)
                                             //                                                    .frame(width: 120, height: 55)
