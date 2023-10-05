@@ -70,11 +70,24 @@ struct ChatGroupsView: View {
                                     })
                             }
                         } else {
-                            Text("^ Chat Rooms ^")
-                                .font(.system(size: 25))
-                                .fontWeight(.light)
-                                .foregroundColor(ColorManager.purple1)
-                                .opacity(0.6)
+                           
+                            ZStack {
+                                Image("iconChat5")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 80, height: 80)
+                                    .foregroundColor(ColorManager .purple5)
+                                    .glow(color: Color.purple, radius: 2)
+                                    .opacity(0.9)
+                                
+                                
+                                Text("^                  ^")
+                                    .font(.system(size: 35))
+                                    .fontWeight(.light)
+                                    .foregroundColor(ColorManager.purple1)
+                                    .opacity(0.6)
+                                
+                            }
                         }
                         
                         //MARK: ScrollView content...

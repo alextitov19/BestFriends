@@ -80,7 +80,7 @@ struct ChatView: View {
                         .frame(width: 40, height: 40)
                         .foregroundColor(.white)
                         .font(.system(size: 25))
-                        .background(Color .black)
+                        .background(ColorManager .grey3)
                         .cornerRadius(10)
                         .scaledToFill()
                         .onTapGesture(perform: {
