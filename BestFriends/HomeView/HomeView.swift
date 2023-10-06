@@ -179,24 +179,63 @@ struct HomeView: View {
                         
                         Spacer()
                         
+                        ZStack {
+                            
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 440, height: 410)
+                                .foregroundColor(Color.white)
+                                .opacity(0.02)
+                                .rotationEffect(.degrees(-20))
+                                .glow(color: Color.white, radius: 75)
+                                .shadow(color: Color.white, radius: 10, x: 0, y: 10)
+                                .blinking(duration: 4.0)
+                            
+                            VStack {
+                                
+                                Text("my")
+                                    .font(.system(size: 30))
+                                    .foregroundColor(Color.blue)
+                                    .fontWeight(.light)
+                                    .opacity(0.5)
+                                    .multilineTextAlignment(.center)
+                                    .rotationEffect(.degrees(-20))
+                                    .glow(color: Color.white, radius: 75)
+                                    .shadow(color: Color.white, radius: 10, x: 0, y: 10)
+                                    .blinking(duration: 4.0)
+                                
+                                Text("friendships")
+                                    .font(.system(size: 35))
+                                    .foregroundColor(Color.blue)
+                                    .fontWeight(.light)
+                                    .opacity(0.5)
+                                    .multilineTextAlignment(.center)
+                                    .rotationEffect(.degrees(-20))
+                                    .glow(color: Color.white, radius: 75)
+                                    .shadow(color: Color.white, radius: 10, x: 0, y: 10)
+                                    .blinking(duration: 4.0)
+                                
+                                
+                                Spacer()
+                                    .frame(height: 240)
+                                
+                                Text("")
+                                    .font(.system(size: 35))
+                                    .foregroundColor(Color.blue)
+                                    .fontWeight(.light)
+                                    .opacity(0.9)
+                                    .multilineTextAlignment(.center)
+                                
+                                
+                                
+                            }
+                        }
                         
+//                        Spacer()
+//                            .frame(height: 50)
                         
-                        Image(systemName: "heart.fill")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 380, height: 380)
-                            .foregroundColor(Color.white)
-                            .opacity(0.02)
-                            .rotationEffect(.degrees(-20))
-                            .glow(color: Color.white, radius: 75)
-                            .shadow(color: Color.white, radius: 10, x: 0, y: 10)
-                            .blinking(duration: 4.0)
-                        
-                        
-                        Spacer()
-                            .frame(height: 50)
-                        
-                        //          ********************** Bottom Icons *************
+//          ********************** Bottom Icons *************
                         HStack {
                             
                             ZStack {
