@@ -43,23 +43,21 @@ struct HugPreload: View {
                         
                   
                         
-                        Image(systemName: "heart.fill")
+                        Image(systemName: "cube.fill")
                             .resizable()
-                            .scaledToFit()
-                            .frame(width: 225, height: 225)
-                            .foregroundColor(ColorManager .grey2)
-                            .glow(color: ColorManager .grey3, radius: 30)
-                            .blinking(duration: 2.0)
-                            .opacity(0.05)
+                            .foregroundColor(Color.purple)
+                            .frame(width: 250, height: 200)
+                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                            .opacity(0.5)
                         
 
 
-                        Text("Friendship \nCornerstones")
+                        Text("Friendship \nCareHeart \nCornerstones")
                             .font(.system(size: 30))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .blinking(duration: 2.0)
+//                            .blinking(duration: 2.0)
                     
               
                     }

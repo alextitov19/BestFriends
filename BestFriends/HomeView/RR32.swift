@@ -74,15 +74,33 @@ struct RR32: View {
             
             
 VStack {
-                
-                Text("Alert Friends")
-                    .font(.system(size: 25))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-          
+             
+    HStack {
         
-                   
+        Image(systemName: "")
+            .resizable()
+            .scaledToFit()
+            .frame(width: 60, height: 60)
+            .foregroundColor(Color.cyan)
+            .glow(color: Color.cyan, radius: 3)
+            .opacity(0.13)
+        
+        Text("my friends _ are me")
+            .font(.system(size: 25))
+            .fontWeight(.regular)
+            .multilineTextAlignment(.center)
+            .foregroundColor(Color.white)
+        
+        Image(systemName: "cube")
+            .resizable()
+            .scaledToFit()
+            .frame(width: 60, height: 60)
+            .foregroundColor(Color.cyan)
+            .glow(color: Color.cyan, radius: 3)
+            .opacity(0.13)
+        
+        
+    }
         VStack {
                         
                 HStack {
@@ -90,18 +108,18 @@ VStack {
                     ZStack {
 
                         
-                        Image("IconFightNew")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 60, height: 60)
-                            .opacity(0.9)
+//                        Image("IconFightNew")
+//                            .resizable()
+//                            .scaledToFit()
+//                            .frame(width: 60, height: 60)
+//                            .opacity(0.9)
                     }
                                 Button(action: {
                                     mood = 8
 //                                    showingAlert = true
                                 }) {
                                     
-                                    Text("Need to \nTALK!")
+                                    Text("big event \nsoon")
                                         .font(.system(size: 10))
                                         .foregroundColor(Color.black)
                                 }
@@ -118,38 +136,29 @@ VStack {
                         Image("comicBubble")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 155, height: 110)
+                            .frame(width: 170, height: 140)
                             .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
                             .opacity(0.5)
-                            .blinking(duration: 3.0)
+//                            .blinking(duration: 3.0)
                         
                         VStack {
-                            Text("Your vibe color")
-                                .font(.system(size: 10))
+                            
+                            Text("love your wins!")
+                                .font(.system(size: 11))
                                 .italic()
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
-                                .blinking(duration: 3.0)
+                                .blinking(duration: 2.0)
                             
-                            Text("shows as planet's")
-                                .font(.system(size: 10))
-                                .italic()
+                            Text("Solid friends")
+                                .font(.system(size: 16))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
-                                .blinking(duration: 3.0)
-                         
-                            Text("atmosphere color")
-                                .font(.system(size: 10))
-                                .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .blinking(duration: 3.0)
-                            
-                     
-                            
+                              
+                       
+
                         }
                     }
     //               ************************************************
@@ -174,12 +183,13 @@ VStack {
                     .scaledToFit()
                     .frame(width: 70, height: 70)
                     .opacity(0.9)
+//                    .blinking(duration: 2.0)
                 
                 Button(action: {
                     mood = 7
                 }) {
                     
-                    Text("Exciting News!")
+                    Text("exciting news!")
                         .font(.system(size: 10))
                         .foregroundColor(Color.black)
                 }
@@ -203,15 +213,7 @@ VStack {
                             .frame(height: 15)
                 
             HStack {
-                Image(systemName: "cube")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 60, height: 60)
-                    .foregroundColor(Color.cyan)
-                    .glow(color: Color.cyan, radius: 3)
-                    .opacity(0.13)
-        
-                
+            
                 Button(action: {
                     mood = 1
 //                    showingAlert = true
@@ -235,35 +237,43 @@ VStack {
                         Image("comicBubble")
                             .resizable()
                             .foregroundColor(Color.cyan)
-                            .frame(width: 250, height: 150)
+                            .frame(width: 285, height: 180)
                             .shadow(color: Color.cyan, radius: 3, x: 3, y: 3)
                             .opacity(0.5)
-                            .blinking(duration: 3.0)
+//                            .blinking(duration: 5.0)
                         
                         VStack {
-                            Text("Bad day? Let your friends know")
-                                .font(.system(size: 10))
-                                .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .blinking(duration: 3.0)
-                         
-                            Text("They can send Friendship Support")
-                                .font(.system(size: 10))
-                                .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .blinking(duration: 3.0)
                             
-                            Text("unntil you're ready to talk")
-                                .font(.system(size: 10))
+                            Text("Bad day?")
+                                .font(.system(size: 16))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .blinking(duration: 2.0)
+                            
+                            Text("Let your friends know.")
+                                .font(.system(size: 13))
                                 .italic()
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
-                                .blinking(duration: 3.0)
+//                                .blinking(duration: 5.0)
+                         
+                            Text("They can send hugs & kisses")
+                                .font(.system(size: 13))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+//                                .blinking(duration: 5.0)
+
+                            Text("unntil you're ready to talk")
+                                .font(.system(size: 13))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+//                                .blinking(duration: 5.0)
                             
                         }
                     }
@@ -277,7 +287,7 @@ VStack {
                             
                             VStack {
                                
-                                Text("(alert friends)")
+                                Text("(ping friends)")
                                     .font(.system(size: 15))
                                     .italic()
                                     .fontWeight(.light)
@@ -385,21 +395,25 @@ VStack {
                                     shareTapped = true
                                     shareButtonTapped()
                                 },
-                                       label: {
-                                    Text("SHARE")
-                                        .fontWeight(.thin)
-                                        .frame(width: 100, height: 30)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 25))
-                                        .background(shareColor)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                        .alert("We just sent this message; *Your friend changed their vibe - go to BFs to check their atmospher color", isPresented: $showingAlert) {
+                                    label: {
+                                    Image("iconShare")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 90, height: 90)
+                                        .rotationEffect(.degrees(20))
+                                        .foregroundColor(ColorManager .purple5)
+                                        .glow(color: Color.purple, radius: 2)
+                                        .opacity(0.6)
+                                        .blinking(duration: 3.0)
+                                        .alert("We just sent this message; *Your friend changed their vibe - go to BFs to check their atmospher color.", isPresented: $showingAlert) {
                                             Button("OK", role: .cancel) { }
+                                            
+                                        
+                                            
                                         }
                                     
                                 })
-                                //                        .confettiCannon(counter: $counter)
+                                    .confettiCannon(counter: $counter)
                                 
                                 
                                 Spacer()
@@ -407,20 +421,20 @@ VStack {
                                 
                                 VStack {
                                     
-                                    Button(action: {
-                                        sessionManager.showLogin()
-                                    },
-                                           label: {
-                                        Image("home-alt2")
-                                            .frame(width: 60, height: 30)
-                                            .foregroundColor(.black)
-                                            .font(.system(size: 20))
-                                            .background(ColorManager .grey3)
-                                            .cornerRadius(15)
-                                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                            .opacity(0.70)
+//                                    Button(action: {
+//                                        sessionManager.showLogin()
+//                                    },
+//                                           label: {
+//                                        Image("home-alt2")
+//                                            .frame(width: 60, height: 30)
+//                                            .foregroundColor(.black)
+//                                            .font(.system(size: 20))
+//                                            .background(ColorManager .grey3)
+//                                            .cornerRadius(15)
+//                                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                                            .opacity(0.70)
                                         
-                                    })
+//                                    })
                                     
                                     Spacer()
                                         .frame(height: 30)
