@@ -81,7 +81,7 @@ struct ChatGroupsView: View {
                                     .opacity(0.9)
                                 
                                 
-                                Text("^                  ^")
+                                Text("^             ^")
                                     .font(.system(size: 35))
                                     .fontWeight(.light)
                                     .foregroundColor(ColorManager.purple1)
