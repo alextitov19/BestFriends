@@ -162,7 +162,7 @@ struct HomeView: View {
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 55, height: 55)
-                                            .rotationEffect(.degrees(20))
+                                            .rotationEffect(.degrees(180))
                                             .foregroundColor(ColorManager .purple5)
                                             .glow(color: Color.purple, radius: 2)
                                             .opacity(0.6)
