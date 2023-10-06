@@ -25,20 +25,14 @@ struct HugPreload: View {
     var body: some View {
         
         ZStack {
-            //            Image("CHBk4")
-            //                .ignoresSafeArea()
-            //                .scaledToFit()
-            //                .opacity(0.9)
-            
-            
             Color.black
-                .opacity(0.8)
+                .opacity(0.9)
                 .ignoresSafeArea()
   
             AdPlayerView(name: "background_7")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                .opacity(0.5)
+                .opacity(0.9)
             
             
             ZStack{
@@ -49,14 +43,14 @@ struct HugPreload: View {
                         
                   
                         
-                        Image(systemName: "circle")
+                        Image(systemName: "heart.fill")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 225, height: 225)
-                            .foregroundColor(Color.cyan)
-                            .glow(color: Color.white, radius: 30)
+                            .foregroundColor(ColorManager .grey2)
+                            .glow(color: ColorManager .grey3, radius: 30)
                             .blinking(duration: 2.0)
-                            .opacity(0.25)
+                            .opacity(0.03)
                         
 //
 //
@@ -86,44 +80,6 @@ struct HugPreload: View {
 //  ********************************************Bad Day ***********
                             HStack {
                                 
-                                NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
-                                    HugCircle (color: Color.cyan, friendName: "\nHugs")
-                                })
-                                .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
-                                .shadow(color: Color.blue, radius: 2, x: 2, y: 2)
-                                .opacity(0.9)
-                                
-                                
-                        ZStack {
-                                    NavigationLink(destination: RR24(user: user, friend: user, friends: friends, groups: groups), label: {
-                                        HugCircle (color: Color.cyan, friendName: "\nWell-being")
-                                    })
-                                    .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                                    .shadow(color: Color.blue, radius: 2, x: 2, y: 2)
-                                    .opacity(0.9)
-                                    
-//                            Spacer ()
-                                .frame(height: 20)
-
-                                }
-
-                                
-                                
-                                
-                                NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
-                                    HugCircle (color: Color.cyan, friendName: "Cheer-up \nSong")
-                                })
-                                .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                                .shadow(color: Color.blue, radius: 2, x: 2, y: 2)
-                                .opacity(0.9)
-                            }
-                            
-                            
-                            
-                            
-                            //                      **********************************
-                            
-                            HStack {
                                 NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
                                     HugCircle (color: ColorManager .pmbc_blue, friendName: "Blowing \nKisses")
                                 })
@@ -131,20 +87,55 @@ struct HugPreload: View {
                                 .shadow(color: Color .blue, radius: 2, x: 2, y: 2)
                                 .opacity(0.9)
                                 
+                            
                                 
-                                Spacer ()
-                                    .frame(width: 15)
                                 
-                                VStack {
+                        ZStack {
+                            NavigationLink(destination: RR20(user: user, friend: user, friends: friends, groups: groups), label: {
+                                HugCircle (color: Color.cyan, friendName: "Friendship \n Strengths")
+                            })
+                            .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+                            .shadow(color: Color.blue, radius: 10, x: 10, y: 10)
+                            .opacity(0.9)
+                                    
+                Spacer ()
+                    .frame(height: 10)
 
-                                }
-                                
+                    }
+
                                 NavigationLink(destination: RR11(user: user, friend: user, friends: friends, groups: groups), label: {
                                     HugCircle (color: ColorManager .pmbc_blue, friendName: "Hearts")
                                 })
                                 .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                                 .shadow(color: Color .blue, radius: 2, x: 2, y: 2)
                                 .opacity(0.9)
+                                
+                             
+                            }
+                       
+                            //                      **********************************
+                            
+            HStack {
+                
+                NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
+                    HugCircle (color: Color.cyan, friendName: "\nHugs")
+                })
+                .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
+                .shadow(color: Color.blue, radius: 2, x: 2, y: 2)
+                .opacity(0.9)
+                                
+                                
+                                Spacer ()
+                                    .frame(width: 15)
+
+                
+                NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
+                    HugCircle (color: Color.cyan, friendName: "Cheer-up \nSong")
+                })
+                .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+                .shadow(color: Color.blue, radius: 2, x: 2, y: 2)
+                .opacity(0.9)
+                              
                                 
                             }
                         }
@@ -335,4 +326,11 @@ struct HugPreload: View {
     }
     
     
+//********************************* on hold CareHearts ****
 
+//NavigationLink(destination: RR24(user: user, friend: user, friends: friends, groups: groups), label: {
+//    HugCircle (color: Color.cyan, friendName: "\nWell-being")
+//})
+//.offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+//.shadow(color: Color.blue, radius: 2, x: 2, y: 2)
+//.opacity(0.9)
