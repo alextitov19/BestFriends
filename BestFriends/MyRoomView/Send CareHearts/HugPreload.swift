@@ -51,15 +51,31 @@ struct HugPreload: View {
                             .opacity(0.5)
                         
 
-
-                        Text("Friendship \nCareHeart \nCornerstones")
-                            .font(.system(size: 30))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-//                            .blinking(duration: 2.0)
-                    
-              
+                        VStack {
+                            Text("Friendship")
+                                .font(.system(size: 25))
+                                .foregroundColor(Color.white)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+                            
+                            
+                            Text("CareHeart")
+                                .font(.system(size: 35))
+                                .foregroundColor(Color.white)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+                            Spacer ()
+                                .frame(height: 7)
+                            
+                            Text("Cornerstones")
+                                .font(.system(size: 18))
+                                .italic()
+                                .foregroundColor(Color.white)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                        }
                     }
                     
         HStack {
