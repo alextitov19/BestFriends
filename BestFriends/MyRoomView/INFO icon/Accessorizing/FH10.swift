@@ -59,8 +59,9 @@ struct FH10: View {
                             
                             
                             HStack {
+                           
                                 ZStack {
-                                    
+                                  
                                     Image(systemName: "heart.fill")
                                         .resizable()
                                         .foregroundColor(ColorManager.orange3)
@@ -84,7 +85,7 @@ struct FH10: View {
                                 }
                                 
                                 Spacer ()
-                                    .frame(width: 80)
+                                    .frame(width: 100)
                                 
                                 //                        ****************************************************************
                                 ZStack {
@@ -109,22 +110,100 @@ struct FH10: View {
                                             .opacity(0.85)
                                         
                                     })
-                                    
                                 }
-                                
-                                
-//                            }
-//                        }
-                        
-                        Spacer ()
-                            .frame(width: 200)
-                        
+                            }
+                        }
                     }
-                }
-            }
             
             
 //      ********************************** END Safe zone ***************
+            
+            //         ***************************************** bubble popups
+                            
+                            HStack {
+                                
+                                ZStack {
+                                    Image("comicBubble")
+                                        .resizable()
+                                        .foregroundColor(Color.white)
+                                        .frame(width: 250, height: 170)
+                                        .rotationEffect(.degrees(-7))
+                                        .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+                                        .opacity(0.5)
+                                        .blinking(duration: 3.0)
+                                    
+                                    VStack {
+                                        
+                                        
+                                        Text("Yep! Jump up")
+                                            .font(.system(size: 17))
+                                            .italic()
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
+                                            .foregroundColor(Color.white)
+                                            .rotationEffect(.degrees(-7))
+                                            .blinking(duration: 3.0)
+                                        
+                                        Text("on a chair...")
+                                            .font(.system(size: 17))
+                                            .italic()
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
+                                            .foregroundColor(Color.white)
+                                            .rotationEffect(.degrees(-7))
+                                            .blinking(duration: 3.0)
+
+                                    }
+                                }
+
+
+                                ZStack {
+                                    
+                                    
+                                    Image("comicBubble")
+                                        .resizable()
+                                        .foregroundColor(Color.white)
+                                        .frame(width: 250, height: 170)
+                                        .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+                                        .rotationEffect(.degrees(-7))
+                                        .opacity(0.5)
+                                        .blinking(duration: 3.0)
+                                    
+                                    VStack {
+                                        
+                                        Text("and blow your kiss")
+                                            .font(.system(size: 15))
+                                            .italic()
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
+                                            .foregroundColor(Color.white)
+                                            .rotationEffect(.degrees(-7))
+                                            .blinking(duration: 3.0)
+                                        
+                                        
+
+                                        Text("towards your friend")
+                                            .font(.system(size: 15))
+                                            .italic()
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
+                                            .foregroundColor(Color.white)
+                                            .rotationEffect(.degrees(-7))
+                                            .blinking(duration: 3.0)
+                                        
+                                    }
+                                }
+                            }
+                    
+            
+            Spacer ()
+                .frame(height: 200)
+            
+            
+            
+//            ***************************************************
+            
+            
             VStack {
 
                 Spacer ()
