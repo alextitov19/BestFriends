@@ -177,14 +177,15 @@ struct HomeView: View {
                             label: {
                                 
                                 ZStack {
-                                    Image("iconFightG")
+//                                    Image("iconFightG")
+                                    Image(systemName: "cube")
                                         .resizable()
                                         .scaledToFit()
                                         .frame(width: 50, height: 50)
-//                                            .rotationEffect(.degrees(180))
-                                        .foregroundColor(ColorManager .purple5)
-                                        .glow(color: Color.purple, radius: 2)
-                                        .opacity(0.6)
+                                        .foregroundColor(Color.white)
+                                        .glow(color: Color.cyan, radius: 3)
+                                        .opacity(0.125)
+                                       .blinking(duration: 4.0)
                                 
                                 }
                                     

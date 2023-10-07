@@ -82,7 +82,7 @@ VStack {
         
     VStack {
         
-        Text("Friend(s) Drama")
+        Text("Friend Drama")
             .font(.system(size: 25))
             .fontWeight(.regular)
             .multilineTextAlignment(.center)
@@ -95,7 +95,7 @@ HStack {
         
         //        ********************  cool guy  ***************************
         HStack {
-            Image("CoolGuy")
+            Image("")
                 .resizable()
                 .foregroundColor(Color.blue)
                 .frame(width: 150, height: 150)
@@ -106,10 +106,10 @@ HStack {
             Image("comicBubble")
                 .resizable()
                 .foregroundColor(Color.purple)
-                .frame(width: 200, height: 165)
+                .frame(width: 300, height: 200)
                 .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
-                .rotationEffect(.degrees(30))
-                .opacity(0.5)
+                .rotationEffect(.degrees(-20))
+                .opacity(0.8)
             //                            .blinking(duration: 3.0)
             
             VStack {
@@ -121,14 +121,15 @@ HStack {
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
-                    //                        .rotationEffect(.degrees(30))
-                        .blinking(duration: 2.0)
+                        .rotationEffect(.degrees(-20))
+//                        .blinking(duration: 2.0)
                     
                     Text("Sharp words errase all")
                         .font(.system(size: 13))
                         .italic()
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
+                        .rotationEffect(.degrees(-20))
                         .foregroundColor(Color.white)
                     //                                .blinking(duration: 5.0)
                     
@@ -137,6 +138,7 @@ HStack {
                         .italic()
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
+                        .rotationEffect(.degrees(-20))
                         .foregroundColor(Color.white)
                     //                                .blinking(duration: 5.0)
                     
@@ -145,6 +147,7 @@ HStack {
                         .italic()
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
+                        .rotationEffect(.degrees(-20))
                         .foregroundColor(Color.white)
                     //                                .blinking(duration: 5.0)
                     }
@@ -153,10 +156,19 @@ HStack {
         }
     }
 }
+        
+        VStack {
+            Image("CoolGuy")
+                .resizable()
+                .foregroundColor(Color.blue)
+                .frame(width: 200, height: 200)
+//                .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+                .opacity(0.9)
             
             
-            Spacer()
-                .frame(height: 15)
+        }
+//            Spacer()
+//                .frame(height: 15)
             
 //       ******************  Hurt Feelings ******************************
       
