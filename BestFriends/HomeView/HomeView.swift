@@ -90,7 +90,7 @@ struct HomeView: View {
                                                 .foregroundColor(Color.white)
                                                 .glow(color: Color.cyan, radius: 3)
                                                 .opacity(0.125)
-//                                                .blinking(duration: 4.0)
+                                               .blinking(duration: 4.0)
                                             
                                             
                                         }
@@ -113,7 +113,7 @@ struct HomeView: View {
                                                 .foregroundColor(Color.white)
                                                 .glow(color: Color.white, radius: 1.5)
                                                 .opacity(0.8)
-                                                .blinking(duration: 3.0)
+                                              
                                             
                                         }
                                     })
@@ -143,7 +143,7 @@ struct HomeView: View {
                                                     .foregroundColor(Color.white)
                                                     .glow(color: Color.cyan, radius: 3)
                                                     .opacity(0.125)
-//                                                    .blinking(duration: 4.0)
+                                                   .blinking(duration: 4.0)
                                                 
                                                 
                                             }
@@ -194,16 +194,16 @@ struct HomeView: View {
                             
                             VStack {
                                 
-                                Text("my")
-                                    .font(.system(size: 30))
-                                    .foregroundColor(Color.blue)
-                                    .fontWeight(.light)
-                                    .opacity(0.5)
-                                    .multilineTextAlignment(.center)
-                                    .rotationEffect(.degrees(-20))
-                                    .glow(color: Color.white, radius: 75)
-                                    .shadow(color: Color.white, radius: 10, x: 0, y: 10)
-                                    .blinking(duration: 4.0)
+//                                Text("my")
+//                                    .font(.system(size: 30))
+//                                    .foregroundColor(Color.blue)
+//                                    .fontWeight(.light)
+//                                    .opacity(0.5)
+//                                    .multilineTextAlignment(.center)
+//                                    .rotationEffect(.degrees(-20))
+//                                    .glow(color: Color.white, radius: 75)
+//                                    .shadow(color: Color.white, radius: 10, x: 0, y: 10)
+//                                    .blinking(duration: 4.0)
                                 
                                 Text("friendships")
                                     .font(.system(size: 35))

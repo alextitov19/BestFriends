@@ -125,16 +125,44 @@ struct CH14: View {
                 
                 Spacer()
                     .frame(height: 20)
+                
+                
+                ZStack {
+                    
+                    //                    Image(systemName: "cube.fill")
+                    Image("comicBubble")
+                        .resizable()
+                        .foregroundColor(Color.purple)
+                        .frame(width: 300, height: 140)
+                        .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
+                        .opacity(0.5)
+                    //                            .blinking(duration: 3.0)
+                    
+                    VStack {
+                        
+                        Text("Remember - sharp words errase")
+                            .font(.system(size: 14))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+//                            .blinking(duration: 2.0)
+                        
+                        Text("all the nice words you ever said.")
+                            .font(.system(size: 14))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+                        
+                        
+                    }
+                    
+                }
                                                                
-                Text("Just a reminder: \n\nUnfriending and trash posts on IG will not fix this. You were friends before and will be again - so stay cool because... \n\nSharp words errase all the nice ones you ever said!")
-                    .fontWeight(.regular)
-                    .frame(width: 300, height: 150)
-                    .foregroundColor(Color.green)
-                    .font(.system(size: 15))
-                    .background(ColorManager .grey4)
-                    .cornerRadius(10)
-                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                    .padding(20)
+//                Text("Just a reminder: \n\nUnfriending and trash posts on IG will not fix this. You were friends before and will be again - so stay cool because... \n\nSharp words errase all the nice ones you ever said!")
+                  
+                
             }
           
             Spacer()

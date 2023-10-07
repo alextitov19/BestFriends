@@ -384,6 +384,7 @@
 		D0F5AB1B2840519700053F17 /* HorizonRocketColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */; };
 		D1BD9FD22AC850EC00196448 /* RR31.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BD9FD12AC850EC00196448 /* RR31.swift */; };
 		D1BD9FD42ACBB4E100196448 /* RR32.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BD9FD32ACBB4E100196448 /* RR32.swift */; };
+		D1FB49032AD16AEC007C40AB /* RR33Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FB49022AD16AEC007C40AB /* RR33Fight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -791,6 +792,7 @@
 		D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonRocketColorPicker.swift; sourceTree = "<group>"; };
 		D1BD9FD12AC850EC00196448 /* RR31.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR31.swift; sourceTree = "<group>"; };
 		D1BD9FD32ACBB4E100196448 /* RR32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR32.swift; sourceTree = "<group>"; };
+		D1FB49022AD16AEC007C40AB /* RR33Fight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR33Fight.swift; sourceTree = "<group>"; };
 		D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54A61C5A22AA6A9255C7B05 /* Pods-BestFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.release.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1018,6 +1020,7 @@
 				CF6C5B0C2A860AD100EC4915 /* Send CareHearts */,
 				CF6C5B0B2A860A7300EC4915 /* My VIBE */,
 				2DFB03192A5D2FD200669948 /* ReceivedCareHearts */,
+				D1FB49042AD16B18007C40AB /* Fight */,
 				CF6C5B062A86089F00EC4915 /* PHOTOPOP */,
 				CF6C5B052A86087F00EC4915 /* FRIENDSHIPS */,
 				CF6C5B0A2A860A2E00EC4915 /* Coupons */,
@@ -2038,6 +2041,14 @@
 			path = Horizons;
 			sourceTree = "<group>";
 		};
+		D1FB49042AD16B18007C40AB /* Fight */ = {
+			isa = PBXGroup;
+			children = (
+				D1FB49022AD16AEC007C40AB /* RR33Fight.swift */,
+			);
+			path = Fight;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2310,6 +2321,7 @@
 				2DB42CFA2AAE879200E137C0 /* RR27.swift in Sources */,
 				CF381A502827372100B3719E /* Step2_ParentsFighting.swift in Sources */,
 				CF37535528BD5BDD003817E3 /* SomethingBuggingYou2.swift in Sources */,
+				D1FB49032AD16AEC007C40AB /* RR33Fight.swift in Sources */,
 				CFA1226228597AFC00E22E84 /* HurtFeelings2.swift in Sources */,
 				CF3B65AD280075620003A714 /* MyAccountView.swift in Sources */,
 				2DFB03122A57226E00669948 /* FH7.swift in Sources */,

@@ -85,12 +85,21 @@ VStack {
             .glow(color: Color.cyan, radius: 3)
             .opacity(0.13)
         
-        Text("my friends _ are me")
-            .font(.system(size: 25))
-            .fontWeight(.regular)
-            .multilineTextAlignment(.center)
-            .foregroundColor(Color.white)
-        
+        VStack {
+            Text("friends")
+                .font(.system(size: 25))
+                .fontWeight(.regular)
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color.white)
+            
+            Text("sharing emotions")
+                .font(.system(size: 25))
+                .fontWeight(.regular)
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color.white)
+            
+        }
+            
         Image(systemName: "cube")
             .resizable()
             .scaledToFit()
