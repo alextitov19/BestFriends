@@ -78,7 +78,7 @@ struct RR34Fight: View {
                             Image(systemName: "cube.fill")
                                 .resizable()
                                 .foregroundColor(Color.purple)
-                                .frame(width: 350, height: 200)
+                                .frame(width: 350, height: 140)
                                 .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                                 .opacity(0.8)
                           
@@ -86,15 +86,15 @@ struct RR34Fight: View {
                              
                                 
                                 Text("You're not alone")
-                                    .font(.system(size: 15, weight: .light))
+                                    .font(.system(size: 15, weight: .regular))
                                     .foregroundColor(ColorManager .grey1)
                                 
                                 Text("Sunday's 8pm EST join users around the world")
-                                    .font(.system(size: 15, weight: .light))
+                                    .font(.system(size: 15, weight: .regular))
                                     .foregroundColor(ColorManager .grey1)
                                 
                                 Text("telling friends you need to talk about it!")
-                                    .font(.system(size: 15, weight: .light))
+                                    .font(.system(size: 15, weight: .regular))
                                     .foregroundColor(ColorManager .grey1)
                                 
                                 
@@ -112,16 +112,16 @@ struct RR34Fight: View {
                             .resizable()
                             .foregroundColor(Color.white)
                             .frame(width: 250, height: 170)
-                            .rotationEffect(.degrees(-7))
                             .shadow(color: Color.white, radius: 3, x: 3, y: 3)
-                            .opacity(0.5)
+                            .rotationEffect(.degrees(-7))
+                            .opacity(0.8)
                             .blinking(duration: 3.0)
                         
                         VStack {
                             
                             
-                            Text("Did a friend do something thats")
-                                .font(.system(size: 13))
+                            Text("Did a friend do")
+                                .font(.system(size: 12))
                                 .italic()
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
@@ -129,8 +129,17 @@ struct RR34Fight: View {
                                 .rotationEffect(.degrees(-7))
                                 .blinking(duration: 3.0)
                             
-                            Text("been bugging you all week?")
-                                .font(.system(size: 13))
+                            Text("something that's been")
+                                .font(.system(size: 12))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .rotationEffect(.degrees(-7))
+                                .blinking(duration: 3.0)
+                            
+                            Text("bugging you all week?")
+                                .font(.system(size: 12))
                                 .italic()
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
@@ -151,13 +160,13 @@ struct RR34Fight: View {
                             .frame(width: 250, height: 170)
                             .shadow(color: Color.white, radius: 3, x: 3, y: 3)
                             .rotationEffect(.degrees(-7))
-                            .opacity(0.5)
+                            .opacity(0.8)
                             .blinking(duration: 3.0)
                         
                         VStack {
                             
                             Text("Maybe just a little scared")
-                                .font(.system(size: 15))
+                                .font(.system(size: 14))
                                 .italic()
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
@@ -168,7 +177,7 @@ struct RR34Fight: View {
                             
 
                             Text("to say something?")
-                                .font(.system(size: 15))
+                                .font(.system(size: 14))
                                 .italic()
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)

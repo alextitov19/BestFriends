@@ -284,6 +284,13 @@ HStack {
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
                     
+                    
+                    Text("(in beta)")
+                        .font(.system(size: 13))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+                    
                 }
             }
         }
