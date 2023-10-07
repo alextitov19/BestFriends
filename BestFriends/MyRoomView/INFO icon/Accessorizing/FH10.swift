@@ -29,173 +29,184 @@ struct FH10: View {
             AdPlayerView(name: "background_9")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-       
-//      ********************************** Safe zone ***************
             
-//            VStack {
-//
-//                HStack {
+            //      ********************************** Safe zone ***************
+            
+            //            VStack {
+            //
+            //                HStack {
+            
+            VStack {
+                
+                Spacer ()
+                    .frame(height: 550)
+//      ********************************** Safe zone ***************
+                HStack {
                     
-                    VStack {
+                    ZStack {
+                        Image("comicBubble")
+                            .resizable()
+                            .foregroundColor(Color.white)
+                            .frame(width: 250, height: 170)
+                            .rotationEffect(.degrees(-7))
+                            .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+                            .opacity(0.5)
+                            .blinking(duration: 3.0)
+                        
+                        VStack {
+                            
+                        
+                            Text("Friends show up as planets")
+                                .font(.system(size: 13))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .rotationEffect(.degrees(-7))
+                                .blinking(duration: 3.0)
+                            
+                            Text("circling the center planet")
+                                .font(.system(size: 13))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .rotationEffect(.degrees(-7))
+                                .blinking(duration: 3.0)
+                            
+                        }
+                    }
+                    
+                    
+                    ZStack {
+                        
+                        
+                        Image("comicBubble")
+                            .resizable()
+                            .foregroundColor(Color.white)
+                            .frame(width: 250, height: 170)
+                            .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+                            .rotationEffect(.degrees(-7))
+                            .opacity(0.5)
+                            .blinking(duration: 3.0)
+                        
+                        VStack {
+                            
+                            Text("Your 'vibe' color shows")
+                                .font(.system(size: 13))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .rotationEffect(.degrees(-7))
+                                .blinking(duration: 3.0)
+                            
+                            
+                            
+                            Text("as atmospher around")
+                                .font(.system(size: 13))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .rotationEffect(.degrees(-7))
+                                .blinking(duration: 3.0)
+                           
+                            
+                            Text("your planet")
+                                .font(.system(size: 13))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .rotationEffect(.degrees(-7))
+                                .blinking(duration: 3.0)
+                        }
+                    }
+                }
+                
+//    ***********************************
+                ZStack {
+                    
+                    
+                    NavigationLink( destination:  RR17(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                    label: {
+                        Text("Leaving \nSafe-zone")
+                            .fontWeight(.bold)
+                            .frame(width: 300, height: 42)
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 16))
+                            .background(Color.orange)
+                            .glow(color: ColorManager.purple1, radius: 1)
+                            .shadow(color: .white, radius: 3, x: -4, y: 4)
+                            .opacity(0.75)
+                            .cornerRadius(15)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                            .opacity(0.99)
+                    })
+                    
+                    
+                    HStack {
                         
                         ZStack {
                             
-                            
-                            NavigationLink( destination:  RR17(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                            label: {
-                                Text("Leaving \nSafe-zone")
-                                    .fontWeight(.bold)
-                                    .frame(width: 300, height: 42)
-                                    .foregroundColor(Color.white)
-                                    .font(.system(size: 16))
-                                    .background(Color.orange)
-                                    .glow(color: ColorManager.purple1, radius: 1)
-                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                    .opacity(0.75)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                    .opacity(0.99)
-                            })
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .foregroundColor(ColorManager.orange3)
+                                .frame(width: 80, height: 60)
+                                .rotationEffect(.degrees(-7))
+                                .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                .opacity(0.6)
                             
                             
-                            HStack {
-                           
-                                ZStack {
-                                  
-                                    Image(systemName: "heart.fill")
-                                        .resizable()
-                                        .foregroundColor(ColorManager.orange3)
-                                        .frame(width: 80, height: 60)
-                                        .rotationEffect(.degrees(-7))
-                                        .shadow(color: .white, radius: 2, x: -2, y: 2)
-                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                        .opacity(0.6)
-                                    
-                                    
-                                    Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
-                                        
-                                        Text("supportive \ninfluencers")
-                                            .fontWeight(.light)
-                                            .foregroundColor(Color.black)
-                                            .font(.system(size: 11))
-                                            .rotationEffect(.degrees(-7))
-                                            .opacity(0.85)
-                                        
-                                    }
-                                }
+                            Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
                                 
-                                Spacer ()
-                                    .frame(width: 100)
+                                Text("supportive \ninfluencers")
+                                    .fontWeight(.light)
+                                    .foregroundColor(Color.black)
+                                    .font(.system(size: 11))
+                                    .rotationEffect(.degrees(-7))
+                                    .opacity(0.85)
                                 
-                                //                        ****************************************************************
-                                ZStack {
-                                    
-                                    Image(systemName: "heart.fill")
-                                        .resizable()
-                                        .foregroundColor(ColorManager.orange3)
-                                        .frame(width: 80, height: 60)
-                                        .rotationEffect(.degrees(7))
-                                        .shadow(color: .white, radius: 2, x: -2, y: 2)
-                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                        .opacity(0.6)
-                                    
-                                    
-                                    NavigationLink( destination: CH20(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                                    label: {
-                                        Text("Accessorizing")
-                                            .fontWeight(.light)
-                                            .foregroundColor(Color.black)
-                                            .font(.system(size: 9))
-                                            .rotationEffect(.degrees(7))
-                                            .opacity(0.85)
-                                        
-                                    })
-                                }
                             }
                         }
+                        
+                        Spacer ()
+                            .frame(width: 100)
+                        
+                        //                        ****************************************************************
+                        ZStack {
+                            
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .foregroundColor(ColorManager.orange3)
+                                .frame(width: 80, height: 60)
+                                .rotationEffect(.degrees(7))
+                                .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                .opacity(0.6)
+                            
+                            
+                            NavigationLink( destination: CH20(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                            label: {
+                                Text("Accessorizing")
+                                    .fontWeight(.light)
+                                    .foregroundColor(Color.black)
+                                    .font(.system(size: 9))
+                                    .rotationEffect(.degrees(7))
+                                    .opacity(0.85)
+                                
+                            })
+                        }
                     }
-            
-            
+                }
+            }
+        
+         
 //      ********************************** END Safe zone ***************
             
-            //         ***************************************** bubble popups
-                            
-                            HStack {
-                                
-                                ZStack {
-                                    Image("comicBubble")
-                                        .resizable()
-                                        .foregroundColor(Color.white)
-                                        .frame(width: 250, height: 170)
-                                        .rotationEffect(.degrees(-7))
-                                        .shadow(color: Color.white, radius: 3, x: 3, y: 3)
-                                        .opacity(0.5)
-                                        .blinking(duration: 3.0)
-                                    
-                                    VStack {
-                                        
-                                        
-                                        Text("Yep! Jump up")
-                                            .font(.system(size: 17))
-                                            .italic()
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
-                                            .foregroundColor(Color.white)
-                                            .rotationEffect(.degrees(-7))
-                                            .blinking(duration: 3.0)
-                                        
-                                        Text("on a chair...")
-                                            .font(.system(size: 17))
-                                            .italic()
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
-                                            .foregroundColor(Color.white)
-                                            .rotationEffect(.degrees(-7))
-                                            .blinking(duration: 3.0)
-
-                                    }
-                                }
-
-
-                                ZStack {
-                                    
-                                    
-                                    Image("comicBubble")
-                                        .resizable()
-                                        .foregroundColor(Color.white)
-                                        .frame(width: 250, height: 170)
-                                        .shadow(color: Color.white, radius: 3, x: 3, y: 3)
-                                        .rotationEffect(.degrees(-7))
-                                        .opacity(0.5)
-                                        .blinking(duration: 3.0)
-                                    
-                                    VStack {
-                                        
-                                        Text("and blow your kiss")
-                                            .font(.system(size: 15))
-                                            .italic()
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
-                                            .foregroundColor(Color.white)
-                                            .rotationEffect(.degrees(-7))
-                                            .blinking(duration: 3.0)
-                                        
-                                        
-
-                                        Text("towards your friend")
-                                            .font(.system(size: 15))
-                                            .italic()
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
-                                            .foregroundColor(Color.white)
-                                            .rotationEffect(.degrees(-7))
-                                            .blinking(duration: 3.0)
-                                        
-                                    }
-                                }
-                            }
-                    
-            
+          
             Spacer ()
                 .frame(height: 200)
             
@@ -206,31 +217,6 @@ struct FH10: View {
             
             VStack {
 
-                Spacer ()
-                    .frame(height: 15)
-                
-                Text("Friends show up as smaller planets circling around your planet")
-                    .fontWeight(.light)
-                    .frame(width: 300, height: 60)
-                    .foregroundColor(Color.white)
-                    .font(.system(size: 17))
-                    .background(ColorManager .grey3)
-                    .cornerRadius(10)
-                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                
-          
-                Spacer ()
-                    .frame(height: 15)
-                
-                       Text("Friend's current 'vibe' shows as atmosphere around their planet")
-                           .fontWeight(.light)
-                           .frame(width: 300, height: 60)
-                           .foregroundColor(Color.white)
-                           .font(.system(size: 17))
-                           .background(ColorManager .grey3)
-                           .cornerRadius(10)
-                           .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                   
                 
                 Spacer ()
                     .frame(height: 200)
@@ -318,7 +304,7 @@ struct FH10: View {
                             VStack {
                                 
                                 Spacer()
-                                    .frame(height: 30)
+                                    .frame(height: 10)
                                 
                                 
                                 
@@ -337,7 +323,8 @@ struct FH10: View {
                                     }
                                     
                                 )}
-                            
+                Spacer ()
+                    .frame(height: 10)
                         
                     }
                 }
