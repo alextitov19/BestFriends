@@ -77,7 +77,7 @@ struct RR33: View {
             
 VStack {
              
-    HStack {
+ 
         
         Image(systemName: "")
             .resizable()
@@ -88,7 +88,7 @@ VStack {
             .opacity(0.13)
         
         VStack {
-            Text("friends drama")
+            Text("Friend(s) Drama")
                 .font(.system(size: 25))
                 .fontWeight(.regular)
                 .multilineTextAlignment(.center)
@@ -97,157 +97,205 @@ VStack {
          
             
         }
-            
-//        Image(systemName: "cube")
-//            .resizable()
-//            .scaledToFit()
-//            .frame(width: 60, height: 60)
-//            .foregroundColor(Color.cyan)
-//            .glow(color: Color.cyan, radius: 3)
-//            .opacity(0.13)
-//        
+     
         
-    }
-        VStack {
+    VStack {
                         
-                HStack {
+        HStack {
                     
-                    ZStack {
-//                        ZStack {
-//
-//                            Image(systemName: "heart.fill")
-//                                .resizable()
-//                                .foregroundColor(ColorManager.orange3)
-//                                .frame(width: 80, height: 60)
-//                                .rotationEffect(.degrees(7))
-//                                .shadow(color: .white, radius: 2, x: -2, y: 2)
-//                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//                                .opacity(0.6)
-                            
-                            
-                            NavigationLink( destination: CH20(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+            ZStack {
+                        
+                    
+//        ********************  take a breath  ***************************
+                            NavigationLink( destination: BreathInView(),
                                             label: {
-                                Text("Fix this mess")
-                                    .fontWeight(.light)
-                                    .foregroundColor(Color.black)
-                                    .frame(width: 80, height: 60)
-                                    .font(.system(size: 9))
-                                    .rotationEffect(.degrees(7))
-                                    .opacity(0.85)
-                                    .font(.system(size: 35))
-                                    .foregroundColor(Color.blue)
-                                    
+                                Text("1")
+                                    .foregroundColor(Color.white)
+                                    .frame(width: 40, height: 40)
                                     .multilineTextAlignment(.center)
-//                                    .rotationEffect(.degrees(-20))
-                                    .glow(color: Color.white, radius: 75)
-                                    .shadow(color: Color.white, radius: 10, x: 0, y: 10)
-//                                    .blinking(duration: 4.0)
-                                
+                                    .font(.system(size: 32))
+                                    .background(Color.gray)
+                                    .cornerRadius(50)
+                                    .glow(color: Color.white, radius: 20)
+                                    .shadow(color: Color.white, radius: 2, x: 2, y: 2)
+//                                   .blinking(duration: 4.0)
+ 
                             })
-                            
-                        
-                        
-//                        Image("IconFightNew")
-//                            .resizable()
-//                            .scaledToFit()
-//                            .frame(width: 60, height: 60)
-//                            .opacity(0.9)
                     }
-                                Button(action: {
-                                    mood = 8
-//                                    showingAlert = true
-                                }) {
-                                    
-                                    Text("big event \nsoon")
-                                        .font(.system(size: 10))
-                                        .foregroundColor(Color.black)
-                                }
-                                .frame(width: 60, height: 60, alignment: .center)
-                    .background(mood == 8 ? Color.orange : ColorManager .grey2)
-                                .cornerRadius(40)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                                .blinking(duration: 3.0)
                     
-    //               ************************************************
+
                     ZStack {
                         
-                        //                    Image(systemName: "cube.fill")
+                      
                         Image("comicBubble")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 170, height: 140)
+                            .frame(width: 200, height: 165)
                             .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
                             .opacity(0.5)
 //                            .blinking(duration: 3.0)
                         
                         VStack {
                             
-                            Text("love your wins!")
-                                .font(.system(size: 11))
+                            Text("take a Breath")
+                                .font(.system(size: 14))
                                 .italic()
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
                                 .blinking(duration: 2.0)
                             
-                            Text("Solid friends")
-                                .font(.system(size: 16))
+                            Text("Let's slow down")
+                                .font(.system(size: 17))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
-                              
-                       
-
+                            
                         }
                     }
-    //               ************************************************
-                    
-                    
-                    
-                    
-                    
-                    
-                            }
+
+                }
             
             
             Spacer()
                 .frame(height: 15)
             
-    //               ************************************************
-                        
-            HStack {
-//                Image("IconNiceNew40")
-                Image("iconSun")
+//       ******************  Hurt Feelings ******************************
+      
+          
+        HStack {
+
+                Image("")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 70, height: 70)
                     .opacity(0.9)
 //                    .blinking(duration: 2.0)
+            
+            Spacer()
+                .frame(width: 40)
+            
+            NavigationLink( destination: CH15(user: user, friends: friends),
+                label: {
+                Text("2")
+                    .foregroundColor(Color.white)
+                    .frame(width: 40, height: 40)
+                    .multilineTextAlignment(.center)
+                    .font(.system(size: 32))
+//                                   .padding(10)
+                    .background(Color.gray)
+                    .cornerRadius(50)
+                    .glow(color: Color.white, radius: 20)
+                    .shadow(color: Color.white, radius: 2, x: 2, y: 2)
+//                                   .blinking(duration: 4.0)
+
+            })
+    
+            
+            ZStack {
                 
-                Button(action: {
-                    mood = 7
-                }) {
+                
+                Image("comicBubble")
+                    .resizable()
+                    .foregroundColor(Color.purple)
+                    .frame(width: 150, height: 100)
+                    .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
+                    .opacity(0.5)
+                
+                VStack {
                     
-                    Text("exciting news!")
-                        .font(.system(size: 10))
-                        .foregroundColor(Color.black)
+                    Text("Hurt")
+                        .font(.system(size: 17))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+
+                    Text("Feelings")
+                        .font(.system(size: 17))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+                    
                 }
-                .frame(width: 60, height: 60, alignment: .center)
-                .background(mood == 7 ? Color.green : ColorManager .grey2)
-                .cornerRadius(40)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
             }
+        }
          
+//                **************  Keep Friendahip **************************
+
+            
+        HStack {
+
+//                Image("")
+//                    .resizable()
+//                    .scaledToFit()
+//                    .frame(width: 70, height: 70)
+//                    .opacity(0.9)
+//                    .blinking(duration: 2.0)
+            
+            Spacer()
+                .frame(width: 40)
+            
+            Link(destination: URL(string: "https://socialtechlabs.com/understanding-the-why/")!) {
+                
+                Text("3")
+                    .foregroundColor(Color.white)
+                    .frame(width: 40, height: 40)
+                    .multilineTextAlignment(.center)
+                    .font(.system(size: 32))
+                    .background(Color.gray)
+                    .cornerRadius(50)
+                    .glow(color: Color.white, radius: 20)
+                    .shadow(color: Color.white, radius: 2, x: 2, y: 2)
+                
+            }
+//            NavigationLink( destination: CH15(user: user, friends: friends),
+//                label: {
+//                Text("3")
+//                    .foregroundColor(Color.white)
+//                    .frame(width: 40, height: 40)
+//                    .multilineTextAlignment(.center)
+//                    .font(.system(size: 32))
+//                    .background(Color.gray)
+//                    .cornerRadius(50)
+//                    .glow(color: Color.white, radius: 20)
+//                    .shadow(color: Color.white, radius: 2, x: 2, y: 2)
+
+//            })
+    
+            
+            ZStack {
+                
+                
+                Image("comicBubble")
+                    .resizable()
+                    .foregroundColor(Color.purple)
+                    .frame(width: 150, height: 100)
+                    .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
+                    .opacity(0.5)
+                
+                VStack {
+                    
+                    Text("Keep")
+                        .font(.system(size: 17))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+
+                    Text("Friendship?")
+                        .font(.system(size: 17))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+                    
+                }
+            }
+        }
+            
+            
+            
+            
+            
 //                ************************************************
-            //                ************************************************
-            
-            //                ************************************************
-            
-            
-            
-            
-            
-            
                         Spacer()
                             .frame(height: 15)
                 
