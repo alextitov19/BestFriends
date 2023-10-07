@@ -385,6 +385,7 @@
 		D1BD9FD22AC850EC00196448 /* RR31.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BD9FD12AC850EC00196448 /* RR31.swift */; };
 		D1BD9FD42ACBB4E100196448 /* RR32.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BD9FD32ACBB4E100196448 /* RR32.swift */; };
 		D1FB49032AD16AEC007C40AB /* RR33Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FB49022AD16AEC007C40AB /* RR33Fight.swift */; };
+		D1FB49062AD1F03E007C40AB /* RR34Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FB49052AD1F03E007C40AB /* RR34Fight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -793,6 +794,7 @@
 		D1BD9FD12AC850EC00196448 /* RR31.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR31.swift; sourceTree = "<group>"; };
 		D1BD9FD32ACBB4E100196448 /* RR32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR32.swift; sourceTree = "<group>"; };
 		D1FB49022AD16AEC007C40AB /* RR33Fight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR33Fight.swift; sourceTree = "<group>"; };
+		D1FB49052AD1F03E007C40AB /* RR34Fight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR34Fight.swift; sourceTree = "<group>"; };
 		D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54A61C5A22AA6A9255C7B05 /* Pods-BestFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.release.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1154,6 +1156,7 @@
 			children = (
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
 				D1FB49022AD16AEC007C40AB /* RR33Fight.swift */,
+				D1FB49052AD1F03E007C40AB /* RR34Fight.swift */,
 				CFAB5403281A9A9000BBF502 /* Step4_NuclearOption.swift */,
 				7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */,
 				7A45B8822A86CECF00F5E75B /* ImageSaver.swift */,
@@ -2588,6 +2591,7 @@
 				7A33409429582725005C4CE1 /* NiceMessageModel.swift in Sources */,
 				7AD2642729EDCA740007ACD5 /* TestPage3.swift in Sources */,
 				7ACF912C2767C29A00088ACA /* CustomDivider.swift in Sources */,
+				D1FB49062AD1F03E007C40AB /* RR34Fight.swift in Sources */,
 				CF387E2A2960D5B6003A85D8 /* PlanetBell.swift in Sources */,
 				7AA2514D2874AB7B0018C97E /* PhotoPopModels.swift in Sources */,
 				CFAB542828211BAC00BBF502 /* ParentsFighting.swift in Sources */,

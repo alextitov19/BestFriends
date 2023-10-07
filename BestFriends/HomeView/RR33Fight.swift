@@ -185,7 +185,7 @@ HStack {
             Spacer()
                 .frame(width: 40)
             
-            NavigationLink( destination: CH15(user: user, friends: friends),
+            NavigationLink( destination: RR34Fight(user: user, friends: friends),
                 label: {
                 Text("?")
                     .foregroundColor(Color.white)
