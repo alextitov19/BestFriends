@@ -166,11 +166,30 @@ struct HomeView: View {
                                             .foregroundColor(ColorManager .purple5)
                                             .glow(color: Color.purple, radius: 2)
                                             .opacity(0.6)
-//                                            .blinking(duration: 4.0)
-                                        
-                                        
+                                    
                                     }
+                                        
                                 })
+                        
+                        
+                        NavigationLink(
+                            destination:  RR33(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                            label: {
+                                
+                                ZStack {
+                                    Image("iconFightG")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 50, height: 50)
+//                                            .rotationEffect(.degrees(180))
+                                        .foregroundColor(ColorManager .purple5)
+                                        .glow(color: Color.purple, radius: 2)
+                                        .opacity(0.6)
+                                
+                                }
+                                    
+                            })
+                    
                             
     
 //***************************** Center Heart opeque **********************

@@ -1116,7 +1116,6 @@
 		7ACB38542820A1D0009559AF /* Step 4 */ = {
 			isa = PBXGroup;
 			children = (
-				CFAB5403281A9A9000BBF502 /* Step4_NuclearOption.swift */,
 				CFAB541A281E5F8300BBF502 /* YouGotThis.swift */,
 			);
 			path = "Step 4";
@@ -1154,12 +1153,13 @@
 			isa = PBXGroup;
 			children = (
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
+				D1FB49022AD16AEC007C40AB /* RR33Fight.swift */,
+				CFAB5403281A9A9000BBF502 /* Step4_NuclearOption.swift */,
 				7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */,
 				7A45B8822A86CECF00F5E75B /* ImageSaver.swift */,
 				7AD2642929EDCE020007ACD5 /* NotificationsView.swift */,
 				2DB42CF12AAE876A00E137C0 /* RR23.swift */,
 				2DDCD9812A8FEBC700B1040F /* RR17.swift */,
-				D1BD9FD32ACBB4E100196448 /* RR32.swift */,
 				CF3B42F1293715A800EE1D84 /* SaySomethingNice4.swift */,
 				CF725E2628516E180096342F /* Tokens */,
 				CFD8BD1229156D2A00F86EFB /* PlanetView */,
@@ -1615,6 +1615,7 @@
 		CF6C5B0B2A860A7300EC4915 /* My VIBE */ = {
 			isa = PBXGroup;
 			children = (
+				D1BD9FD32ACBB4E100196448 /* RR32.swift */,
 				CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */,
 				2DBF3EE62A61ACF500CB1CAD /* RR4.swift */,
 				CF6C5B0F2A860E8D00EC4915 /* Anxiety Attack */,
@@ -2044,7 +2045,6 @@
 		D1FB49042AD16B18007C40AB /* Fight */ = {
 			isa = PBXGroup;
 			children = (
-				D1FB49022AD16AEC007C40AB /* RR33Fight.swift */,
 			);
 			path = Fight;
 			sourceTree = "<group>";
