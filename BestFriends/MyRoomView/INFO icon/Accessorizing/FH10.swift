@@ -38,8 +38,44 @@ struct FH10: View {
             
             VStack {
                 
+                HStack {
+                    
+                    
+                    NavigationLink(
+                        
+                        destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
+                        label: {
+                            Text("Invite & Accept \nFriends")
+                                .fontWeight(.regular)
+                                .frame(width: 130, height: 50)
+                                .foregroundColor(Color.white)
+                                .font(.system(size: 13))
+                                .background(Color.orange)
+                                .cornerRadius(15)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                            
+                        })
+                    
+                    
+                    NavigationLink(
+                        
+                        destination: InfoInsideChat(user: user),
+                        label: {
+                            Text("Create & Customize \nChat Rooms")
+                                .fontWeight(.regular)
+                                .frame(width: 130, height: 50)
+                                .foregroundColor(Color.white)
+                                .font(.system(size: 13))
+                                .background(Color.orange)
+                                .opacity(0.85)
+                                .cornerRadius(15)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                            
+                        })
+                 
+                }
                 Spacer ()
-                    .frame(height: 550)
+                    .frame(height: 50)
 //      ********************************** Safe zone ***************
                 HStack {
                     
@@ -221,42 +257,7 @@ struct FH10: View {
                 Spacer ()
                     .frame(height: 200)
                 
-                HStack {
-                    
-                    
-                    NavigationLink(
-                        
-                        destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
-                        label: {
-                            Text("Invite & Accept \nFriends")
-                                .fontWeight(.regular)
-                                .frame(width: 130, height: 50)
-                                .foregroundColor(Color.white)
-                                .font(.system(size: 13))
-                                .background(Color.orange)
-                                .cornerRadius(15)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                            
-                        })
-                    
-                    
-                    NavigationLink(
-                        
-                        destination: InfoInsideChat(user: user),
-                        label: {
-                            Text("Create & Customize \nChat Rooms")
-                                .fontWeight(.regular)
-                                .frame(width: 130, height: 50)
-                                .foregroundColor(Color.white)
-                                .font(.system(size: 13))
-                                .background(Color.orange)
-                                .opacity(0.85)
-                                .cornerRadius(15)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                            
-                        })
-                 
-                }
+              
                     
                 Spacer ()
                     .frame(height: 20)
