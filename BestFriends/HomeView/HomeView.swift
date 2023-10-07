@@ -152,24 +152,24 @@ struct HomeView: View {
                                 }
                                 
                             }
-                            
-                            NavigationLink(
-                                destination:  Step4_NuclearOption(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere,  friendAtmospheres: homeData!.friendAtmospheres),
-                                label: {
-                                    
-                                    ZStack {
-                                        Image("iconFightG")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 50, height: 50)
-//                                            .rotationEffect(.degrees(180))
-                                            .foregroundColor(ColorManager .purple5)
-                                            .glow(color: Color.purple, radius: 2)
-                                            .opacity(0.6)
-                                    
-                                    }
-                                        
-                                })
+//
+//                            NavigationLink(
+//                                destination:  Step4_NuclearOption(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere,  friendAtmospheres: homeData!.friendAtmospheres),
+//                                label: {
+//
+//                                    ZStack {
+//                                        Image("iconFightG")
+//                                            .resizable()
+//                                            .scaledToFit()
+//                                            .frame(width: 50, height: 50)
+////                                            .rotationEffect(.degrees(180))
+//                                            .foregroundColor(ColorManager .purple5)
+//                                            .glow(color: Color.purple, radius: 2)
+//                                            .opacity(0.6)
+//
+//                                    }
+//
+//                                })
                         
                         
                         NavigationLink(
