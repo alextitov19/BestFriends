@@ -214,18 +214,9 @@ struct HomeView: View {
                             
                             VStack {
                                 
-//                                Text("my")
-//                                    .font(.system(size: 30))
-//                                    .foregroundColor(Color.blue)
-//                                    .fontWeight(.light)
-//                                    .opacity(0.5)
-//                                    .multilineTextAlignment(.center)
-//                                    .rotationEffect(.degrees(-20))
-//                                    .glow(color: Color.white, radius: 75)
-//                                    .shadow(color: Color.white, radius: 10, x: 0, y: 10)
-//                                    .blinking(duration: 4.0)
+
                                 
-                                Text("friendships")
+                                Text("my friendships")
                                     .font(.system(size: 35))
                                     .foregroundColor(Color.white)
                                     .fontWeight(.light)

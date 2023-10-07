@@ -447,7 +447,7 @@
 		2DBF3EF02A61AD2800CB1CAD /* RR9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR9.swift; sourceTree = "<group>"; };
 		2DBF3EF22A61AD3100CB1CAD /* RR10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR10.swift; sourceTree = "<group>"; };
 		2DDCD97F2A8FEBAA00B1040F /* RR16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR16.swift; path = BestFriends/MyRoomView/PhotoPop/PHOTOPOP/RR16.swift; sourceTree = SOURCE_ROOT; };
-		2DDCD9812A8FEBC700B1040F /* RR17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR17.swift; path = BestFriends/HomeView/RR17.swift; sourceTree = SOURCE_ROOT; };
+		2DDCD9812A8FEBC700B1040F /* RR17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR17.swift; path = "BestFriends/MyRoomView/INFO icon/RR17.swift"; sourceTree = SOURCE_ROOT; };
 		2DDCD9832A8FEBD900B1040F /* RR18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR18.swift; path = BestFriends/RR/RR18.swift; sourceTree = SOURCE_ROOT; };
 		2DDCD9852A8FEBEA00B1040F /* RR19.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR19.swift; path = BestFriends/HomeView/RR/RR19.swift; sourceTree = SOURCE_ROOT; };
 		2DDCD9872A8FEBFC00B1040F /* RR20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR20.swift; path = "BestFriends/MyRoomView/Send CareHearts/RR20.swift"; sourceTree = SOURCE_ROOT; };
@@ -1016,7 +1016,6 @@
 				CFE1946A2812A9E300ED5718 /* Streaks */,
 				CF6C5B022A86062500EC4915 /* INFO icon */,
 				CF6C5B092A86092200EC4915 /* START HERE */,
-				CF6C5AFF2A8602CA00EC4915 /* Accessorizing */,
 				CF6C5B082A8608E500EC4915 /* CAREHEARTS */,
 				CF6C5B0D2A860B3300EC4915 /* CareHearts INFO */,
 				CF6C5B0C2A860AD100EC4915 /* Send CareHearts */,
@@ -1155,14 +1154,8 @@
 			isa = PBXGroup;
 			children = (
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
-				D1FB49022AD16AEC007C40AB /* RR33Fight.swift */,
-				D1FB49052AD1F03E007C40AB /* RR34Fight.swift */,
-				CFAB5403281A9A9000BBF502 /* Step4_NuclearOption.swift */,
-				7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */,
 				7A45B8822A86CECF00F5E75B /* ImageSaver.swift */,
 				7AD2642929EDCE020007ACD5 /* NotificationsView.swift */,
-				2DB42CF12AAE876A00E137C0 /* RR23.swift */,
-				2DDCD9812A8FEBC700B1040F /* RR17.swift */,
 				CF3B42F1293715A800EE1D84 /* SaySomethingNice4.swift */,
 				CF725E2628516E180096342F /* Tokens */,
 				CFD8BD1229156D2A00F86EFB /* PlanetView */,
@@ -1548,8 +1541,10 @@
 		CF6C5B022A86062500EC4915 /* INFO icon */ = {
 			isa = PBXGroup;
 			children = (
+				2DDCD9812A8FEBC700B1040F /* RR17.swift */,
 				CF2EE6F729516C8A00B1B16D /* InfoHowChatWorks.swift */,
 				2DBF3EE42A61ACEB00CB1CAD /* RR3.swift */,
+				CF6C5AFF2A8602CA00EC4915 /* Accessorizing */,
 			);
 			path = "INFO icon";
 			sourceTree = "<group>";
@@ -1568,6 +1563,7 @@
 				2DDCD97F2A8FEBAA00B1040F /* RR16.swift */,
 				7A04C13C28553818003AB24A /* PhotoPopView.swift */,
 				CF6499DE294D4148003BBF83 /* INFOPreloadA.swift */,
+				7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */,
 				CF24815628F5060100D47AE3 /* PhotoPop3.swift */,
 				2DFB03222A5D308600669948 /* CH5.swift */,
 				7A04C13E2855390B003AB24A /* PhotoPopImageView.swift */,
@@ -1647,6 +1643,7 @@
 				CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */,
 				2DDCD98B2A92A1D900B1040F /* ColorPicker.swift */,
 				2DDCD98D2A92A21900B1040F /* Constants.swift */,
+				2DB42CF12AAE876A00E137C0 /* RR23.swift */,
 			);
 			path = "Send CareHearts";
 			sourceTree = "<group>";
@@ -2048,6 +2045,9 @@
 		D1FB49042AD16B18007C40AB /* Fight */ = {
 			isa = PBXGroup;
 			children = (
+				D1FB49022AD16AEC007C40AB /* RR33Fight.swift */,
+				D1FB49052AD1F03E007C40AB /* RR34Fight.swift */,
+				CFAB5403281A9A9000BBF502 /* Step4_NuclearOption.swift */,
 			);
 			path = Fight;
 			sourceTree = "<group>";

@@ -30,20 +30,103 @@ struct FH10: View {
                 .ignoresSafeArea()
                 .blendMode(.screen)
        
-            ZStack {
-              
-            }
-           
-            VStack {
-//                Text("TAP CENTER PLANET -> takes you to Main page")
-//                    .fontWeight(.light)
-//                    .frame(width: 300, height: 60)
-//                    .foregroundColor(Color.white)
-//                    .font(.system(size: 17))
-//                    .background(ColorManager.grey3)
-//                    .cornerRadius(10)
-//                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//      ********************************** Safe zone ***************
+            
+//            VStack {
 //
+//                HStack {
+                    
+                    VStack {
+                        
+                        ZStack {
+                            
+                            
+                            NavigationLink( destination:  RR17(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                            label: {
+                                Text("Leaving \nSafe-zone")
+                                    .fontWeight(.bold)
+                                    .frame(width: 300, height: 42)
+                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 16))
+                                    .background(Color.orange)
+                                    .glow(color: ColorManager.purple1, radius: 1)
+                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                    .opacity(0.75)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                    .opacity(0.99)
+                            })
+                            
+                            
+                            HStack {
+                                ZStack {
+                                    
+                                    Image(systemName: "heart.fill")
+                                        .resizable()
+                                        .foregroundColor(ColorManager.orange3)
+                                        .frame(width: 80, height: 60)
+                                        .rotationEffect(.degrees(-7))
+                                        .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                        .opacity(0.6)
+                                    
+                                    
+                                    Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
+                                        
+                                        Text("supportive \ninfluencers")
+                                            .fontWeight(.light)
+                                            .foregroundColor(Color.black)
+                                            .font(.system(size: 11))
+                                            .rotationEffect(.degrees(-7))
+                                            .opacity(0.85)
+                                        
+                                    }
+                                }
+                                
+                                Spacer ()
+                                    .frame(width: 80)
+                                
+                                //                        ****************************************************************
+                                ZStack {
+                                    
+                                    Image(systemName: "heart.fill")
+                                        .resizable()
+                                        .foregroundColor(ColorManager.orange3)
+                                        .frame(width: 80, height: 60)
+                                        .rotationEffect(.degrees(7))
+                                        .shadow(color: .white, radius: 2, x: -2, y: 2)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                        .opacity(0.6)
+                                    
+                                    
+                                    NavigationLink( destination: CH20(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                                    label: {
+                                        Text("Accessorizing")
+                                            .fontWeight(.light)
+                                            .foregroundColor(Color.black)
+                                            .font(.system(size: 9))
+                                            .rotationEffect(.degrees(7))
+                                            .opacity(0.85)
+                                        
+                                    })
+                                    
+                                }
+                                
+                                
+//                            }
+//                        }
+                        
+                        Spacer ()
+                            .frame(width: 200)
+                        
+                    }
+                }
+            }
+            
+            
+//      ********************************** END Safe zone ***************
+            VStack {
+
                 Spacer ()
                     .frame(height: 15)
                 
@@ -71,7 +154,7 @@ struct FH10: View {
                    
                 
                 Spacer ()
-                    .frame(height: 50)
+                    .frame(height: 200)
                 
                 HStack {
                     
