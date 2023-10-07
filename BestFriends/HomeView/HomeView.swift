@@ -227,13 +227,13 @@ struct HomeView: View {
                                 
                                 Text("friendships")
                                     .font(.system(size: 35))
-                                    .foregroundColor(Color.blue)
+                                    .foregroundColor(Color.white)
                                     .fontWeight(.light)
-                                    .opacity(0.5)
+                                    .opacity(0.3)
                                     .multilineTextAlignment(.center)
                                     .rotationEffect(.degrees(-20))
                                     .glow(color: Color.white, radius: 75)
-                                    .shadow(color: Color.white, radius: 10, x: 0, y: 10)
+                                    .shadow(color: Color.white, radius: 5, x: 5, y: 5)
                                     .blinking(duration: 4.0)
                                 
                                 
