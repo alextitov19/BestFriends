@@ -109,7 +109,7 @@ HStack {
                 .frame(width: 300, height: 200)
                 .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
                 .rotationEffect(.degrees(-20))
-                .opacity(0.8)
+                .opacity(0.95)
             //                            .blinking(duration: 3.0)
             
             VStack {
