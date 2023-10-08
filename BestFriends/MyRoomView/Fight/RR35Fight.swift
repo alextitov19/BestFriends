@@ -336,7 +336,7 @@ struct RR35Fight: View {
                    
                             
                             Spacer()
-                                .frame(height: 30)
+                                .frame(height: 50)
                    
                             }
                           
