@@ -51,31 +51,7 @@ struct ChatView: View {
                     .frame(height: 15)
 
                 HStack {
-//                    Image(systemName: "info.circle")
-//                        .resizable()
-//                        .frame(width: 27, height: 27)
-//                        .scaledToFill()
-//                        .foregroundColor(.white)
-//                        .onTapGesture(perform: {
-////                            sessionManager.infoView(user: user, group: group)
-//                        })
-                    
-//                    Button(action: {
-//                        sessionManager.showLogin()
-//                    },
-//                        label: {
-//                        Image("home-alt2")
-//                            .frame(width: 50, height: 25)
-//                            .foregroundColor(.white)
-//                            .font(.system(size: 20))
-//                            .background(Color .black)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                            .opacity(0.70)
-//
-//                    })
-                    
-                    
+
                     Image("home-alt2")
                         .frame(width: 40, height: 40)
                         .foregroundColor(.white)
@@ -155,44 +131,7 @@ struct ChatView: View {
                                   
                                   Spacer ()
                                       .frame(width: 10)
-                    
-                
-                                  
-                        ZStack {
-//
-//
-//                            NavigationLink(
-//                                destination:  RR8(),
-//                                label: {
-//
-//                                    Image(systemName: "info.circle")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 37, height: 37)
-//                                        .opacity(0.9)
-//                                        .foregroundColor(.white)
-//                                })
-                            
-//                            Text("")
-//                                .fontWeight(.light)
-//                                .frame(width: 60, height: 40)
-//                                .foregroundColor(ColorManager .grey1)
-//                                .font(.system(size: 25))
-//                                .background(Color.purple)
-//                                .cornerRadius(15)
-//                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-//
-//                            Text("Remove \nMe")
-//                                .foregroundColor(Color.white)
-//                                .font(.system(size: 12, weight: .light))
-//                                .multilineTextAlignment(.center)
-//                                .onTapGesture(perform: leaveChatGroup)
-//
-//
-                        
-                                  }
-              
-                    
+ 
                               }
                 
                 HStack {
@@ -271,7 +210,7 @@ struct ChatView: View {
                                 ChatBubble(groupId: group.id, message: message, myOwnMessage: message.senderId == user.id)
                                     .onLongPressGesture(minimumDuration: 1, perform: { showingMessageOptions = true })
                                     .confirmationDialog("What would you like to do with this message?", isPresented: $showingMessageOptions, titleVisibility: .visible) {
-                                        Button("Save message to SmileVault") {
+                                        Button("Keepsake Message") {
                                             saveToSmileNotes(message: message)
                                         }
                                         Link("Report Abuse", destination: URL(string: "https://socialtechlabs.com/report-objectionable-content-behavior/")!)
