@@ -165,7 +165,7 @@ struct RR35Fight: View {
                         
                         VStack {
                             
-                            Text("")
+                            Text("We say your sorry")
                                 .font(.system(size: 14))
                                 .italic()
                                 .fontWeight(.light)
@@ -176,7 +176,7 @@ struct RR35Fight: View {
                             
                             
 
-                            Text("to say something?")
+                            Text("for you")
                                 .font(.system(size: 14))
                                 .italic()
                                 .fontWeight(.light)
@@ -309,7 +309,7 @@ struct RR35Fight: View {
                                 .glow(color: Color.purple, radius: 2)
                                 .opacity(0.6)
                                 .blinking(duration: 3.0)
-                                .alert("We just sent a push notification to your friend saying you are sorry.", isPresented: $showingAlert) {
+                                .alert("Nice job. We just sent a push notification to your friend saying you are sorry.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })

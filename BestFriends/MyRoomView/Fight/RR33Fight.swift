@@ -106,7 +106,7 @@ HStack {
             Image("comicBubble")
                 .resizable()
                 .foregroundColor(Color.purple)
-                .frame(width: 300, height: 200)
+                .frame(width: 250, height: 170)
                 .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
                 .rotationEffect(.degrees(-20))
                 .opacity(0.95)
@@ -157,16 +157,16 @@ HStack {
     }
 }
         
-        VStack {
-            Image("CoolGuy")
-                .resizable()
-                .foregroundColor(Color.blue)
-                .frame(width: 200, height: 200)
-//                .shadow(color: Color.white, radius: 3, x: 3, y: 3)
-                .opacity(0.9)
-            
-            
-        }
+//        VStack {
+//            Image("CoolGuy")
+//                .resizable()
+//                .foregroundColor(Color.blue)
+//                .frame(width: 100, height: 100)
+////                .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+//                .opacity(0.9)
+//
+//
+//        }
 //            Spacer()
 //                .frame(height: 15)
             
@@ -295,80 +295,68 @@ HStack {
             }
         }
             
-            
-            
-            
-            
+           
 //                ************************************************
-//                        Spacer()
-//                            .frame(height: 15)
+
+        HStack {
+
+                Image("")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 70, height: 70)
+                    .opacity(0.9)
+//                    .blinking(duration: 2.0)
+            
+            Spacer()
+                .frame(width: 40)
+            
+            NavigationLink( destination: RR35Fight(user: user, friends: friends),
+                label: {
+                Text("?")
+                    .foregroundColor(Color.white)
+                    .frame(width: 40, height: 40)
+                    .multilineTextAlignment(.center)
+                    .font(.system(size: 32))
+//                                   .padding(10)
+                    .background(Color.gray)
+                    .cornerRadius(50)
+                    .glow(color: Color.white, radius: 20)
+                    .shadow(color: Color.white, radius: 2, x: 2, y: 2)
+//                                   .blinking(duration: 4.0)
+
+            })
+    
+            
+            ZStack {
                 
-//            HStack {
-//
-//                Image("CoolGuy")
-//                    .resizable()
-//                    .foregroundColor(Color.blue)
-//                    .frame(width: 150, height: 150)
-//                    .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
-//                    .opacity(0.9)
-//
-//                ********************************************
+                
+                Image("comicBubble")
+                    .resizable()
+                    .foregroundColor(Color.purple)
+                    .frame(width: 160, height: 110)
+                    .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
+                    .opacity(0.5)
+                
+                VStack {
                     
-//
-//                    ZStack {
-//
-//                        //                    Image(systemName: "cube.fill")
-//                        Image("comicBubble")
-//                            .resizable()
-//                            .foregroundColor(Color.blue)
-//                            .frame(width: 250, height: 180)
-//                            .rotationEffect(.degrees(30))
-//                            .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
-//                            .opacity(0.5)
-////                            .blinking(duration: 5.0)
-//
-//                        VStack {
-//
-//                            Text("Remember...")
-//                                .font(.system(size: 16))
-//                                .fontWeight(.light)
-//                                .multilineTextAlignment(.center)
-//                                .foregroundColor(Color.white)
-//                                .rotationEffect(.degrees(30))
-//                                .blinking(duration: 2.0)
-//
-//                            Text("Sharp words errase all")
-//                                .font(.system(size: 13))
-//                                .italic()
-//                                .fontWeight(.light)
-//                                .multilineTextAlignment(.center)
-//                                .foregroundColor(Color.white)
-////                                .blinking(duration: 5.0)
-//
-//                            Text("the nice words that")
-//                                .font(.system(size: 13))
-//                                .italic()
-//                                .fontWeight(.light)
-//                                .multilineTextAlignment(.center)
-//                                .foregroundColor(Color.white)
-////                                .blinking(duration: 5.0)
-//
-//                            Text("have ever been said")
-//                                .font(.system(size: 13))
-//                                .italic()
-//                                .fontWeight(.light)
-//                                .multilineTextAlignment(.center)
-//                                .foregroundColor(Color.white)
-////                                .blinking(duration: 5.0)
-//
-//                        }
-//                    }
-//                }
-                
-//            }
-                   
+                    Text("Say")
+                        .font(.system(size: 17))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+
+                    Text("Sorry")
+                        .font(.system(size: 17))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+                    
+                }
+            }
+        }
+     
       
- 
+//                ************************************************
                         VStack {
                             
 //                            VStack {
