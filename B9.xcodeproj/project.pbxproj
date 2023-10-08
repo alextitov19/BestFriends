@@ -382,6 +382,7 @@
 		CFF952332981BC700054D963 /* DreamsWeDare2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF952322981BC700054D963 /* DreamsWeDare2.swift */; };
 		D0CC1A04283EE33500E7461F /* HorizonHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */; };
 		D0F5AB1B2840519700053F17 /* HorizonRocketColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */; };
+		D12CE2C12AD342D600AEB105 /* RR35Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12CE2C02AD342D600AEB105 /* RR35Fight.swift */; };
 		D1BD9FD22AC850EC00196448 /* RR31.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BD9FD12AC850EC00196448 /* RR31.swift */; };
 		D1BD9FD42ACBB4E100196448 /* RR32.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BD9FD32ACBB4E100196448 /* RR32.swift */; };
 		D1FB49032AD16AEC007C40AB /* RR33Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FB49022AD16AEC007C40AB /* RR33Fight.swift */; };
@@ -448,8 +449,8 @@
 		2DBF3EF22A61AD3100CB1CAD /* RR10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR10.swift; sourceTree = "<group>"; };
 		2DDCD97F2A8FEBAA00B1040F /* RR16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR16.swift; path = BestFriends/MyRoomView/PhotoPop/PHOTOPOP/RR16.swift; sourceTree = SOURCE_ROOT; };
 		2DDCD9812A8FEBC700B1040F /* RR17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR17.swift; path = "BestFriends/MyRoomView/INFO icon/RR17.swift"; sourceTree = SOURCE_ROOT; };
-		2DDCD9832A8FEBD900B1040F /* RR18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR18.swift; path = BestFriends/RR/RR18.swift; sourceTree = SOURCE_ROOT; };
-		2DDCD9852A8FEBEA00B1040F /* RR19.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR19.swift; path = BestFriends/HomeView/RR/RR19.swift; sourceTree = SOURCE_ROOT; };
+		2DDCD9832A8FEBD900B1040F /* RR18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR18.swift; path = "BestFriends/MyRoomView/Love Tarts/RR18.swift"; sourceTree = SOURCE_ROOT; };
+		2DDCD9852A8FEBEA00B1040F /* RR19.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR19.swift; path = "BestFriends/MyRoomView/Love Tarts/RR19.swift"; sourceTree = SOURCE_ROOT; };
 		2DDCD9872A8FEBFC00B1040F /* RR20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR20.swift; path = "BestFriends/MyRoomView/Send CareHearts/RR20.swift"; sourceTree = SOURCE_ROOT; };
 		2DDCD9892A8FF0ED00B1040F /* DrawingCareHearts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCareHearts.swift; sourceTree = "<group>"; };
 		2DDCD98B2A92A1D900B1040F /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
@@ -791,6 +792,7 @@
 		CFF952322981BC700054D963 /* DreamsWeDare2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamsWeDare2.swift; sourceTree = "<group>"; };
 		D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonHomeView.swift; sourceTree = "<group>"; };
 		D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonRocketColorPicker.swift; sourceTree = "<group>"; };
+		D12CE2C02AD342D600AEB105 /* RR35Fight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR35Fight.swift; sourceTree = "<group>"; };
 		D1BD9FD12AC850EC00196448 /* RR31.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR31.swift; sourceTree = "<group>"; };
 		D1BD9FD32ACBB4E100196448 /* RR32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR32.swift; sourceTree = "<group>"; };
 		D1FB49022AD16AEC007C40AB /* RR33Fight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR33Fight.swift; sourceTree = "<group>"; };
@@ -827,8 +829,6 @@
 		2DBF3EDF2A61ACC400CB1CAD /* RR */ = {
 			isa = PBXGroup;
 			children = (
-				2DDCD9832A8FEBD900B1040F /* RR18.swift */,
-				2DDCD9852A8FEBEA00B1040F /* RR19.swift */,
 			);
 			path = RR;
 			sourceTree = "<group>";
@@ -1021,6 +1021,7 @@
 				CF6C5B0C2A860AD100EC4915 /* Send CareHearts */,
 				CF6C5B0B2A860A7300EC4915 /* My VIBE */,
 				2DFB03192A5D2FD200669948 /* ReceivedCareHearts */,
+				D12CE2BD2AD3426700AEB105 /* Love Tarts */,
 				D1FB49042AD16B18007C40AB /* Fight */,
 				CF6C5B062A86089F00EC4915 /* PHOTOPOP */,
 				CF6C5B052A86087F00EC4915 /* FRIENDSHIPS */,
@@ -2042,11 +2043,21 @@
 			path = Horizons;
 			sourceTree = "<group>";
 		};
+		D12CE2BD2AD3426700AEB105 /* Love Tarts */ = {
+			isa = PBXGroup;
+			children = (
+				2DDCD9832A8FEBD900B1040F /* RR18.swift */,
+				2DDCD9852A8FEBEA00B1040F /* RR19.swift */,
+			);
+			path = "Love Tarts";
+			sourceTree = "<group>";
+		};
 		D1FB49042AD16B18007C40AB /* Fight */ = {
 			isa = PBXGroup;
 			children = (
 				D1FB49022AD16AEC007C40AB /* RR33Fight.swift */,
 				D1FB49052AD1F03E007C40AB /* RR34Fight.swift */,
+				D12CE2C02AD342D600AEB105 /* RR35Fight.swift */,
 				CFAB5403281A9A9000BBF502 /* Step4_NuclearOption.swift */,
 			);
 			path = Fight;
@@ -2462,6 +2473,7 @@
 				2D7127C72A658BF400E14744 /* CH17.swift in Sources */,
 				CF3DB36728D78BF300BF9CCD /* DreamsWeDare.swift in Sources */,
 				CFF952332981BC700054D963 /* DreamsWeDare2.swift in Sources */,
+				D12CE2C12AD342D600AEB105 /* RR35Fight.swift in Sources */,
 				CFCD3BC429DF849A00D19A0F /* BadDayQuietAlertView.swift in Sources */,
 				CF3B65AB2800718E0003A714 /* ReportAbuse.swift in Sources */,
 				CF09118E284894F400CB0AF0 /* InfoView.swift in Sources */,

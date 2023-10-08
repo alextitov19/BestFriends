@@ -115,6 +115,7 @@ struct NotificationsView: View {
         @State private var affirmationActive = false
         @State private var photoPOPActive = false
         @State private var thanksAffirmationActive = false
+        @State private var sorryActive = false
         
         init(ian: InAppNotification, user: User, friends: [User]) {
             self.ian = ian
@@ -267,6 +268,11 @@ struct NotificationsView: View {
                         EmptyView()
                     })
                     
+                    
+                    
+                }
+                
+                VStack {
                     // ***************************************************************
                     
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksAffirmationActive, label: {
@@ -276,6 +282,14 @@ struct NotificationsView: View {
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $photoPOPActive, label: {
                         EmptyView()
                     })
+                 
+                    
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $sorryActive, label: {
+                        EmptyView()
+                    })
+                    
+                    
+                    
                     
                     
                 }
@@ -451,7 +465,8 @@ struct NotificationsView: View {
                 photoPOPActive = true
                     
                     
-                    
+                case "said they are sorry":
+                    sorryActive = true
                     
                 default:
                     return
