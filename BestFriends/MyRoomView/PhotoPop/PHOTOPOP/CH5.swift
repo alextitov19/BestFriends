@@ -64,7 +64,7 @@ struct CH5: View {
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
-                Text("'Skake iPhone")
+                Text("'skake' iPhone")
                     .font(.system(size: 35))
                     .foregroundColor(Color.white)
                     .fontWeight(.light)

@@ -86,37 +86,30 @@ struct BestFriendMessages: View {
                 
                 ZStack {
                    
-                    Image(systemName: "square.fill")
+                    Image(systemName: "triangle")
                         .resizable()
                         .foregroundColor(Color.purple)
-                        .frame(width: 375, height: 375)
+                        .frame(width: 320, height: 320)
+                        .rotationEffect(.degrees(180))
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.4)
+                        .opacity(0.25)
                     
-                    
-//                    Image(systemName: "star.fill")
-//                        .resizable()
-//                        .foregroundColor(Color.white)
-//                        .frame(width: 100, height: 100)
-//                        .blur(radius: 2)
-//                        .shadow(color: .purple, radius: 30, x: 20, y: 25)
-//                        .opacity(0.9)
-                    
+
                     VStack {
                         
-                        Text("Protect your favorite messages")
+                        Text("Keepsake messages")
                             .font(.system(size: 23))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                   
-                        
+                     
                   
                         
                         Spacer ()
                             .frame(height: 10)
                         
-                        Text("(Just long-top in Chat")
+                        Text("(Just long-top in Chat)")
                             .font(.system(size: 17))
                             .italic()
                             .foregroundColor(ColorManager .grey1)
@@ -124,14 +117,21 @@ struct BestFriendMessages: View {
                             .multilineTextAlignment(.center)
                         
                         Spacer ()
-                            .frame(height: 50)
+                            .frame(height: 30)
                         
-                        Text("Tap to see \nmessages")
+                        Text("TAP")
                             .font(.system(size: 20))
                             .foregroundColor(Color.white)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                     
+                        Image("IconRoomNew")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(ColorManager .purple5)
+                            .glow(color: Color.purple, radius: 2)
+                            .opacity(0.9)
                         
                         Spacer ()
                             .frame(height: 1)
