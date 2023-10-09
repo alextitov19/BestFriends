@@ -101,7 +101,7 @@ struct FH5: View {
                                 .frame(height: 20)
                             
                     
-                            NavigationLink(destination: Step4_NuclearOption(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+                            NavigationLink(destination: RR33(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                                     Text("Friendship Drama")
                                         .fontWeight(.regular)
