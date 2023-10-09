@@ -89,7 +89,7 @@ struct HomeView: View {
                                                 .frame(width: 50, height: 50)
                                                 .foregroundColor(Color.white)
                                                 .glow(color: Color.cyan, radius: 3)
-                                                .opacity(0.125)
+                                                .opacity(0.15)
                                                .blinking(duration: 4.0)
                                             
                                             
@@ -142,7 +142,7 @@ struct HomeView: View {
                                                     .frame(width: 50, height: 50)
                                                     .foregroundColor(Color.white)
                                                     .glow(color: Color.cyan, radius: 3)
-                                                    .opacity(0.125)
+                                                    .opacity(0.15)
                                                    .blinking(duration: 4.0)
                                                 
                                                 
@@ -152,26 +152,8 @@ struct HomeView: View {
                                 }
                                 
                             }
-//
-//                            NavigationLink(
-//                                destination:  Step4_NuclearOption(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere,  friendAtmospheres: homeData!.friendAtmospheres),
-//                                label: {
-//
-//                                    ZStack {
-//                                        Image("iconFightG")
-//                                            .resizable()
-//                                            .scaledToFit()
-//                                            .frame(width: 50, height: 50)
-////                                            .rotationEffect(.degrees(180))
-//                                            .foregroundColor(ColorManager .purple5)
-//                                            .glow(color: Color.purple, radius: 2)
-//                                            .opacity(0.6)
-//
-//                                    }
-//
-//                                })
-                        
-                        
+
+
                         NavigationLink(
                             destination:  RR33(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                             label: {
@@ -184,7 +166,7 @@ struct HomeView: View {
                                         .frame(width: 50, height: 50)
                                         .foregroundColor(Color.white)
                                         .glow(color: Color.cyan, radius: 3)
-                                        .opacity(0.125)
+                                        .opacity(0.155)
                                        .blinking(duration: 4.0)
                                 
                                 }
