@@ -413,18 +413,19 @@ struct HomeView: View {
                         Button(action: {
                             chatButtonTapped()
                         }, label: {
-                            Text("Create New Chat Room \n\nNote: only tap friend's planet \n to create Chat rooms")
+                            Text("Creating Chat Rooms \n\n1) To create new single friend Chat rooms tap friend's planet, then this box and name room \n\n2) To create multi-friend rooms tap all friends planets, then this box and name room \n\n  .   .   . \n\nAccessing one-on-one Rooms \n\n1) To access existing one-on-one chat rooms tap friends planet then this box \n\n2)To access multi-friend chat rooms use 'Chat PullUp' below \n\n\nThere are detailed instructions in Chat section at bottom [SetUp]")
                                 .fontWeight(.light)
-                                .frame(width: 250, height: 100)
+                                .frame(width: 300, height: 600)
                                 .foregroundColor(.white)
-                                .background(ColorManager .purple3)
-                                .cornerRadius(10)
-                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                .opacity(0.5)
+                                .background(Color.purple)
+                                .cornerRadius(15)
+//                                .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 11)
+                                .shadow(color: Color(.white), radius: 3, x: 3, y: 3)
+                                .opacity(0.6)
                         })
                         
                         Spacer()
-                            .frame(height: 600)
+                            .frame(height: 200)
                     }
                 }
                 
