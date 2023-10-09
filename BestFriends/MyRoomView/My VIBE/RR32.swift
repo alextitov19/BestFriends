@@ -76,37 +76,38 @@ struct RR32: View {
 VStack {
              
     HStack {
-        
-        Image(systemName: "")
-            .resizable()
-            .scaledToFit()
-            .frame(width: 60, height: 60)
-            .foregroundColor(Color.cyan)
-            .glow(color: Color.cyan, radius: 3)
-            .opacity(0.13)
-        
+   
         VStack {
-            Text("Friends")
+           
+            
+            Text("Friendships")
                 .font(.system(size: 25))
                 .fontWeight(.regular)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.white)
             
-            Text("Sharing Emotions")
-                .font(.system(size: 25))
+            Text("(your circle 'Vibe' color matches")
+                .font(.system(size: 15))
+                .italic()
                 .fontWeight(.regular)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.white)
             
+            Text("your planets atmophere color)")
+                .font(.system(size: 15))
+                .italic()
+                .fontWeight(.regular)
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color.white)
         }
-            
-        Image(systemName: "cube")
-            .resizable()
-            .scaledToFit()
-            .frame(width: 60, height: 60)
-            .foregroundColor(Color.cyan)
-            .glow(color: Color.cyan, radius: 3)
-            .opacity(0.13)
+//
+//        Image(systemName: "cube")
+//            .resizable()
+//            .scaledToFit()
+//            .frame(width: 60, height: 60)
+//            .foregroundColor(Color.cyan)
+//            .glow(color: Color.cyan, radius: 3)
+//            .opacity(0.13)
         
         
     }
@@ -151,7 +152,7 @@ VStack {
                         Image("comicBubble")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 170, height: 140)
+                            .frame(width: 190, height: 100)
                             .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
                             .opacity(0.5)
 //                            .blinking(duration: 3.0)
@@ -270,7 +271,7 @@ VStack {
                         Image("comicBubble")
                             .resizable()
                             .foregroundColor(Color.cyan)
-                            .frame(width: 285, height: 180)
+                            .frame(width: 320, height: 140)
                             .shadow(color: Color.cyan, radius: 3, x: 3, y: 3)
                             .opacity(0.5)
 //                            .blinking(duration: 5.0)
@@ -282,9 +283,9 @@ VStack {
                                 .fontWeight(.regular)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
-                                .blinking(duration: 2.0)
+//                                .blinking(duration: 2.0)
                             
-                            Text("Let your friends know.")
+                            Text("Ask your friends to send CareHearts")
                                 .font(.system(size: 13))
                                 .italic()
                                 .fontWeight(.light)
@@ -292,13 +293,6 @@ VStack {
                                 .foregroundColor(Color.white)
 //                                .blinking(duration: 5.0)
                          
-                            Text("They can send CareHearts")
-                                .font(.system(size: 13))
-                                .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-//                                .blinking(duration: 5.0)
 
                             Text("until you're ready to talk")
                                 .font(.system(size: 13))
@@ -320,7 +314,7 @@ VStack {
                             
                             VStack {
                                
-                                Text("(ping friends)")
+                                Text("(tell friends)")
                                     .font(.system(size: 15))
                                     .italic()
                                     .fontWeight(.light)
@@ -432,7 +426,7 @@ VStack {
                                     Image("iconShare")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 90, height: 90)
+                                        .frame(width: 80, height: 80)
                                         .rotationEffect(.degrees(20))
                                         .foregroundColor(ColorManager .purple5)
                                         .glow(color: Color.purple, radius: 2)
