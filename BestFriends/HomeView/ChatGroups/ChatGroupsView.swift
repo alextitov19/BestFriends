@@ -41,21 +41,7 @@ struct ChatGroupsView: View {
                         
 //                        if (groups.count == 0) {
                             HStack {
-//                                Text("^")
-//                                    .font(.system(size: 35))
-//                                    .fontWeight(.thin)
-//                                    .foregroundColor(.white)
-//
-//                                Text("Chat Rooms")
-//                                    .font(.system(size: 25))
-//                                    .fontWeight(.thin)
-//                                    .foregroundColor(ColorManager.purple2)
-//
-//                                Text("^")
-//                                    .font(.system(size: 35))
-//                                    .fontWeight(.thin)
-//                                    .foregroundColor(.white)
-                                
+
                                 NavigationLink(
                                     destination: InfoCreateChatRooms(user: user),
                                     label: {
