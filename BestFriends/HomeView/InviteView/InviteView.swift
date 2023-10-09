@@ -70,7 +70,7 @@ struct InviteView: View {
 //                NavigationLink(
 //                    destination: EmptyView(),
 //                   label: {
-                       Text("1) First, ask friend to download BFs app \n\n2) Enter friends email (case sensitive) that they registered with \n\n3) Tap [Invite]")
+                       Text("1) First, ask friend to download BFs app & register \n\n2) Enter friends email (case sensitive) that they registered with \n\n3) Tap [Invite]")
                            .fontWeight(.thin)
                            .frame(width: 400, height: 150)
                            .foregroundColor(Color.green)
