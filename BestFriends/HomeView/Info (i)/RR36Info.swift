@@ -94,23 +94,24 @@ HStack {
         
         //        ********************  cool guy  ***************************
         HStack {
-            Image("")
-                .resizable()
-                .foregroundColor(Color.blue)
-                .frame(width: 150, height: 150)
-                .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
-                .opacity(0.9)
-         
+          
+//            Image("")
+//                .resizable()
+//                .foregroundColor(Color.blue)
+//                .frame(width: 150, height: 150)
+//                .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
+//                .opacity(0.9)
         ZStack {
             Image("comicBubble")
                 .resizable()
                 .foregroundColor(Color.purple)
-                .frame(width: 275, height: 190)
-                .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
+                .frame(width: 325, height: 190)
+                .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                 .rotationEffect(.degrees(-20))
                 .opacity(0.95)
             //                            .blinking(duration: 3.0)
             
+     
             VStack {
                 
                 VStack {
@@ -152,7 +153,19 @@ HStack {
                     }
                 }
             }
-        }
+            
+            Spacer()
+                .frame(width: 80)
+            
+            
+            Image("")
+                .resizable()
+                .foregroundColor(Color.blue)
+                .frame(width: 150, height: 150)
+                .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
+                .opacity(0.9)
+            
+        }    .opacity(0.9)
     }
 }
         
