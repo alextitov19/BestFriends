@@ -59,15 +59,37 @@ struct ChatGroupsView: View {
                            
                 ZStack {
                                   
-                        VStack {
-                                    Image("iconChat5")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 80, height: 80)
-                                        .foregroundColor(ColorManager .purple5)
-                                        .glow(color: Color.purple, radius: 2)
-                                        .opacity(0.9)
-                                    
+                    VStack {
+                        
+                        HStack  {
+                        
+                            Text("^")
+                                .font(.system(size: 35))
+                                .foregroundColor(Color.white)
+                                .fontWeight(.light)
+                                .opacity(0.9)
+                                .multilineTextAlignment(.center)
+                                .blinking(duration: 2.0)
+                            
+                            
+                        Image("iconChat5")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 80, height: 80)
+                            .foregroundColor(ColorManager .purple5)
+                            .glow(color: Color.purple, radius: 2)
+                            .opacity(0.9)
+                            
+                            Text("^")
+                                .font(.system(size: 35))
+                                .foregroundColor(Color.white)
+                                .fontWeight(.light)
+                                .opacity(0.9)
+                                .multilineTextAlignment(.center)
+                                .blinking(duration: 2.0)
+                        
+                    }
+                            
                             NavigationLink(
                                 destination: InfoCreateChatRooms(user: user),
                                 label: {
