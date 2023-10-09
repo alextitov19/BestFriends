@@ -1,11 +1,11 @@
 //
-//  RR33Fight.swift
+//  RR36Info.swift
 //  BestFriends
 //
-//  Created by Robert Roe on 10/7/23.
+//  Created by Robert Roe on 10/9/23.
 //
 
-
+import Foundation
 
 import Foundation
 
@@ -15,19 +15,14 @@ import ConfettiSwiftUI
 import AVKit
 
 
-struct RR33: View {
+struct RR36Info: View {
     
     @EnvironmentObject var sessionManager: SessionManager
-    
+ 
     let user: User
-    let atmosphere: Atmosphere
+   let atmosphere: Atmosphere
     let friends: [User]
-    
-    
-    //    let user: User
-    //    let atmosphere: Atmosphere
-    //    let friends: [User]
-    let friendAtmospheres: [Atmosphere]
+   let friendAtmospheres: [Atmosphere]
     let groups: [Group]
     
     @State private var mood: Int = -1
@@ -66,7 +61,7 @@ struct RR33: View {
                     .ignoresSafeArea()
                 
                 
-                AdPlayerView(name: "PhotoPOP2")
+                AdPlayerView(name: "Planet4")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
@@ -82,12 +77,16 @@ VStack {
         
     VStack {
         
-        Text("Friend Drama")
-            .font(.system(size: 25))
+        Text("SetUp &")
+            .font(.system(size: 30))
             .fontWeight(.regular)
             .multilineTextAlignment(.center)
             .foregroundColor(Color.white)
-        
+        Text("Walk-Through")
+            .font(.system(size: 30))
+            .fontWeight(.regular)
+            .multilineTextAlignment(.center)
+            .foregroundColor(Color.white)
                         
 HStack {
                     
@@ -106,7 +105,7 @@ HStack {
             Image("comicBubble")
                 .resizable()
                 .foregroundColor(Color.purple)
-                .frame(width: 250, height: 170)
+                .frame(width: 275, height: 190)
                 .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
                 .rotationEffect(.degrees(-20))
                 .opacity(0.95)
@@ -116,7 +115,7 @@ HStack {
                 
                 VStack {
                     
-                    Text("Remember...")
+                    Text("Friends show as planets")
                         .font(.system(size: 16))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
@@ -124,7 +123,7 @@ HStack {
                         .rotationEffect(.degrees(-20))
 //                        .blinking(duration: 2.0)
                     
-                    Text("Sharp words errase all")
+                    Text("When active friend's")
                         .font(.system(size: 13))
                         .italic()
                         .fontWeight(.light)
@@ -133,7 +132,7 @@ HStack {
                         .foregroundColor(Color.white)
                     //                                .blinking(duration: 5.0)
                     
-                    Text("the nice words that")
+                    Text("planet show atmospere")
                         .font(.system(size: 13))
                         .italic()
                         .fontWeight(.light)
@@ -142,7 +141,7 @@ HStack {
                         .foregroundColor(Color.white)
                     //                                .blinking(duration: 5.0)
                     
-                    Text("have ever been said")
+                    Text("matching their vibe")
                         .font(.system(size: 13))
                         .italic()
                         .fontWeight(.light)
@@ -157,20 +156,8 @@ HStack {
     }
 }
         
-//        VStack {
-//            Image("CoolGuy")
-//                .resizable()
-//                .foregroundColor(Color.blue)
-//                .frame(width: 100, height: 100)
-////                .shadow(color: Color.white, radius: 3, x: 3, y: 3)
-//                .opacity(0.9)
-//
-//
-//        }
-//            Spacer()
-//                .frame(height: 15)
-            
-//       ******************  Hurt Feelings ******************************
+ 
+//       ******************  Invite Friends ******************************
       
           
         HStack {
@@ -185,7 +172,7 @@ HStack {
             Spacer()
                 .frame(width: 40)
             
-            NavigationLink( destination: RR34Fight(user: user, friends: friends),
+            NavigationLink( destination: InviteView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                 label: {
                 Text("?")
                     .foregroundColor(Color.white)
@@ -214,13 +201,13 @@ HStack {
                 
                 VStack {
                     
-                    Text("Hurt")
+                    Text("Invite")
                         .font(.system(size: 17))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
 
-                    Text("Feelings")
+                    Text("Friends")
                         .font(.system(size: 17))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
@@ -230,7 +217,7 @@ HStack {
             }
         }
          
-//                **************  Keep Friendahip **************************
+//                **************  OPEN for something **************************
 
             
         HStack {
@@ -245,19 +232,20 @@ HStack {
             Spacer()
                 .frame(width: 40)
             
-            Link(destination: URL(string: "https://socialtechlabs.com/understanding-the-why/")!) {
-                
+            NavigationLink(destination: BuiltByTeensView(user: user, friends: friends),
+                label: {
                 Text("?")
                     .foregroundColor(Color.white)
                     .frame(width: 40, height: 40)
                     .multilineTextAlignment(.center)
                     .font(.system(size: 32))
+//                                   .padding(10)
                     .background(Color.gray)
                     .cornerRadius(50)
                     .glow(color: Color.white, radius: 20)
                     .shadow(color: Color.white, radius: 2, x: 2, y: 2)
-                
-            }
+//                                   .blinking(duration: 4.0)
+            })
 
             
             ZStack {
@@ -272,31 +260,26 @@ HStack {
                 
                 VStack {
                     
-                    Text("Keep")
+                    Text("Our")
                         .font(.system(size: 17))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
 
-                    Text("Friendship")
+                    Text("Story")
                         .font(.system(size: 17))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
                     
-                    
-                    Text("(in beta)")
-                        .font(.system(size: 13))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
+                
                     
                 }
             }
         }
             
            
-//                ************************************************
+//                ************ Chat Setup ***********************************
 
         HStack {
 
@@ -310,7 +293,7 @@ HStack {
             Spacer()
                 .frame(width: 40)
             
-            NavigationLink( destination: RR35Fight(user: user, friends: friends),
+            NavigationLink( destination: InfoCreateChatRooms(user: user),
                 label: {
                 Text("?")
                     .foregroundColor(Color.white)
@@ -339,13 +322,13 @@ HStack {
                 
                 VStack {
                     
-                    Text("Say")
+                    Text("SetUp")
                         .font(.system(size: 17))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
 
-                    Text("Sorry")
+                    Text("Chat")
                         .font(.system(size: 17))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
@@ -363,22 +346,37 @@ HStack {
                                 Spacer()
                                     .frame(height: 20)
                                 
-                                VStack {
+                            VStack {
+                                
+                                //                                    Button(action: {
+                                //                                        sessionManager.showLogin()
+                                //                                    },
+                                //                                           label: {
+                                //                                        Image("home-alt2")
+                                //                                            .frame(width: 60, height: 30)
+                                //                                            .foregroundColor(.black)
+                                //                                            .font(.system(size: 20))
+                                //                                            .background(ColorManager .grey3)
+                                //                                            .cornerRadius(15)
+                                //                                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                //                                            .opacity(0.70)
+                                //
+                                //                                    })
+                                
+                                NavigationLink(destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                               label: {
+                                    Text("->")
+                                        .fontWeight(.thin)
+                                        .foregroundColor(Color.white)
+                                        .frame(width: 40, height: 40)
+                                        .font(.system(size: 30))
+                                        .background(ColorManager .grey2)
+                                        .opacity(0.95)
+                                        .cornerRadius(5)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     
-                                    Button(action: {
-                                        sessionManager.showLogin()
-                                    },
-                                           label: {
-                                        Image("home-alt2")
-                                            .frame(width: 60, height: 30)
-                                            .foregroundColor(.black)
-                                            .font(.system(size: 20))
-                                            .background(ColorManager .grey3)
-                                            .cornerRadius(15)
-                                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                            .opacity(0.70)
-                                        
-                                    })
+                                })
+                            
                                     
                                     Spacer()
                                         .frame(height: 30)

@@ -416,7 +416,7 @@ struct HomeView: View {
 
 
                         NavigationLink(
-                            destination:   FH2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                            destination:   RR36Info(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                             label: {
 
                                 Image(systemName: "info.circle")

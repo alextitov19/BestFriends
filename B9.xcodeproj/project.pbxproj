@@ -383,6 +383,7 @@
 		D0CC1A04283EE33500E7461F /* HorizonHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */; };
 		D0F5AB1B2840519700053F17 /* HorizonRocketColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */; };
 		D12CE2C12AD342D600AEB105 /* RR35Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12CE2C02AD342D600AEB105 /* RR35Fight.swift */; };
+		D12CE2C52AD415C400AEB105 /* RR36Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12CE2C42AD415C400AEB105 /* RR36Info.swift */; };
 		D1BD9FD22AC850EC00196448 /* RR31.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BD9FD12AC850EC00196448 /* RR31.swift */; };
 		D1BD9FD42ACBB4E100196448 /* RR32.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BD9FD32ACBB4E100196448 /* RR32.swift */; };
 		D1FB49032AD16AEC007C40AB /* RR33Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FB49022AD16AEC007C40AB /* RR33Fight.swift */; };
@@ -793,6 +794,7 @@
 		D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonHomeView.swift; sourceTree = "<group>"; };
 		D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonRocketColorPicker.swift; sourceTree = "<group>"; };
 		D12CE2C02AD342D600AEB105 /* RR35Fight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR35Fight.swift; sourceTree = "<group>"; };
+		D12CE2C42AD415C400AEB105 /* RR36Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR36Info.swift; sourceTree = "<group>"; };
 		D1BD9FD12AC850EC00196448 /* RR31.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR31.swift; sourceTree = "<group>"; };
 		D1BD9FD32ACBB4E100196448 /* RR32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR32.swift; sourceTree = "<group>"; };
 		D1FB49022AD16AEC007C40AB /* RR33Fight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR33Fight.swift; sourceTree = "<group>"; };
@@ -1160,6 +1162,7 @@
 				CF3B42F1293715A800EE1D84 /* SaySomethingNice4.swift */,
 				CF725E2628516E180096342F /* Tokens */,
 				CFD8BD1229156D2A00F86EFB /* PlanetView */,
+				D12CE2C22AD4154900AEB105 /* Info (i) */,
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
 				7AC4C01D27FF49F9000C4140 /* Chat */,
@@ -2052,6 +2055,14 @@
 			path = "Love Tarts";
 			sourceTree = "<group>";
 		};
+		D12CE2C22AD4154900AEB105 /* Info (i) */ = {
+			isa = PBXGroup;
+			children = (
+				D12CE2C42AD415C400AEB105 /* RR36Info.swift */,
+			);
+			path = "Info (i)";
+			sourceTree = "<group>";
+		};
 		D1FB49042AD16B18007C40AB /* Fight */ = {
 			isa = PBXGroup;
 			children = (
@@ -2496,6 +2507,7 @@
 				2D7127BB2A658B9000E14744 /* CH11.swift in Sources */,
 				CFE6F024297B82A8004397A3 /* SendHomie.swift in Sources */,
 				2D7127C92A658C0100E14744 /* CH18.swift in Sources */,
+				D12CE2C52AD415C400AEB105 /* RR36Info.swift in Sources */,
 				CF2EE6FE295294E600B1B16D /* INFOMainHowWorks.swift in Sources */,
 				7AB52169289D959D005A49FA /* PurpleSubscriptionView.swift in Sources */,
 				62372A1B2884ECD500CAB75C /* HorizonInviteFriends.swift in Sources */,
