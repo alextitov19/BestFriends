@@ -105,7 +105,7 @@ HStack {
             Image("comicBubble")
                 .resizable()
                 .foregroundColor(Color.purple)
-                .frame(width: 325, height: 190)
+                .frame(width: 335, height: 190)
                 .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                 .rotationEffect(.degrees(-10))
                 .opacity(0.95)
@@ -155,7 +155,7 @@ HStack {
             }
             
             Spacer()
-                .frame(width: 80)
+                .frame(width: 60)
             
             
             Image("")
