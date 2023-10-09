@@ -55,33 +55,30 @@ struct InviteView: View {
                                          })
                 
                 
-                Text("Add 5 Friends")
+                Text("Add up to")
+                    .foregroundColor(ColorManager .grey2)
+                    .font(.system(size: 30, weight: .bold))
+                
+                Text("5 BestFriends")
                     .foregroundColor(ColorManager .grey2)
                     .font(.system(size: 30, weight: .bold))
                 
                 Spacer()
                     .frame(height: 10)
+ 
                 
-                
-//                Text("-> Add up to 5 friends <-")
-//                    .foregroundColor(.green)
-//                    .font(.system(size: 27, weight: .light))
-                
-           
-                
-                
-                NavigationLink(
-                    destination: EmptyView(),
-                   label: {
-                       Text("Friends show up as planets on homepage \n\nFriend's current 'mood' shows as atmosphere around their planet \n\nPlease send only ONE friend invite")
+//                NavigationLink(
+//                    destination: EmptyView(),
+//                   label: {
+                       Text("1) First, ask friend to download BFs app \n\n2) Enter friends email (case sensitive) that they registered with \n\n3) Tap [Invite]")
                            .fontWeight(.thin)
-                           .frame(width: 300, height: 100)
-                           .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                           .font(.system(size: 13))
-                           .background(ColorManager.grey3)
+                           .frame(width: 400, height: 150)
+                           .foregroundColor(Color.green)
+                           .font(.system(size: 17))
+                           .background(ColorManager.grey4)
                            .cornerRadius(10)
-                           .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                   })
+                          
+//                   })
                 
 //                NavigationLink(
 //                    destination: WhyFiveFriends(user: user, atmosphere: atmosphere, friends: friends,  friendAtmospheres: friendAtmospheres, groups: groups),
@@ -101,15 +98,14 @@ struct InviteView: View {
 //                    .foregroundColor(ColorManager .grey2)
 //                    .font(.system(size: 15, weight: .light))
                 
-                Spacer()
-                    .frame(height: 10)
               
-                Text("Enter your friend's email (case sensitive)")
+              
+                Text("Note: we do NOT send friend an email \nasking them to download app")
                     .fontWeight(.thin)
-                    .foregroundColor(.white)
                     .italic()
-                    .font(.system(size: 17))
-                    .padding()
+                    .foregroundColor(.white)
+                    .font(.system(size: 15))
+//                    .padding()
                 
              
                 if user.friends?.count ?? 0 < 5 {
@@ -137,34 +133,24 @@ struct InviteView: View {
                        
                         
                         VStack {
-//                            Text("*Email is CASE Sensitive")
-//                                .fontWeight(.thin)
-//                                .foregroundColor(.red)
-//                                .italic()
-//                                .font(.system(size: 17))
-                            Spacer()
-                                .frame(height: 20)
-                            
-                            Text("Accepting Friend Requests")
-                                .foregroundColor(ColorManager .purple3)
-                                .font(.system(size: 25, weight: .bold))
-                            
-                            
+
                             Spacer()
                                 .frame(height: 10)
                             
-                            Text("After friend sends Friend Request,")
-                                .fontWeight(.thin)
-                                .foregroundColor(.white)
-                                .italic()
-                                .font(.system(size: 17))
+                            Text("Accepting Friend Requests")
+                                .foregroundColor(ColorManager .grey2)
+                                .font(.system(size: 30, weight: .bold))
                             
                             
-                            Text("come to this page and tap [Accept]")
+                            Text("1) Friend navigates to this page  \n2) Friend taps [Accept]")
                                 .fontWeight(.thin)
-                                .foregroundColor(.white)
-                                .italic()
+//                                .frame(width: 400, height: 150)
+                                .foregroundColor(Color.green)
                                 .font(.system(size: 17))
+                                .background(ColorManager.grey4)
+                                .cornerRadius(10)
+                            
+                         
                             
                             
                         }
