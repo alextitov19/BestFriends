@@ -133,7 +133,7 @@ VStack {
                             //                                    showingAlert = true
                         }) {
                             
-                            Text("big event \nsoon")
+                            Text("wish me luck!")
                                 .font(.system(size: 15))
                                 .foregroundColor(Color.black)
                         }
@@ -160,13 +160,13 @@ VStack {
                         VStack {
                         
                             
-                            Text("Wish me")
+                            Text("Big even")
                                 .font(.system(size: 20))
                                 .fontWeight(.regular)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
                               
-                            Text("Luck!")
+                            Text("soon")
                                 .font(.system(size: 20))
                                 .fontWeight(.regular)
                                 .multilineTextAlignment(.center)

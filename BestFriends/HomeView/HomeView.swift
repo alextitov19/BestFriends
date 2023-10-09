@@ -109,7 +109,7 @@ struct HomeView: View {
                                             Image("iconVibes75")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 60, height: 60)
+                                                .frame(width: 80, height: 80)
                                                 .foregroundColor(Color.white)
                                                 .glow(color: Color.white, radius: 1.5)
                                                 .opacity(0.8)
