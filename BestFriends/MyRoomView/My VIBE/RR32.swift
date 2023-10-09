@@ -86,13 +86,13 @@ VStack {
             .opacity(0.13)
         
         VStack {
-            Text("friends")
+            Text("Friends")
                 .font(.system(size: 25))
                 .fontWeight(.regular)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.white)
             
-            Text("sharing emotions")
+            Text("Sharing Emotions")
                 .font(.system(size: 25))
                 .fontWeight(.regular)
                 .multilineTextAlignment(.center)
@@ -115,28 +115,34 @@ VStack {
                 HStack {
                     
                     ZStack {
-
-                        
-//                        Image("IconFightNew")
-//                            .resizable()
-//                            .scaledToFit()
-//                            .frame(width: 60, height: 60)
-//                            .opacity(0.9)
+                        ZStack {
+                            
+                            Image(systemName: "circle")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 90, height: 90)
+                                .foregroundColor(Color .orange)
+                                .glow(color: Color.orange, radius: 5)
+//                                .blinking(duration: 2.0)
+                            
+                            
+                        }
+                        Button(action: {
+                            mood = 8
+                            //                                    showingAlert = true
+                        }) {
+                            
+                            Text("big event \nsoon")
+                                .font(.system(size: 15))
+                                .foregroundColor(Color.black)
+                        }
+                        .frame(width: 85, height: 85, alignment: .center)
+                        .background(mood == 8 ? Color.orange : Color.white)
+                        .cornerRadius(50)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     }
-                                Button(action: {
-                                    mood = 8
-//                                    showingAlert = true
-                                }) {
-                                    
-                                    Text("big event \nsoon")
-                                        .font(.system(size: 10))
-                                        .foregroundColor(Color.black)
-                                }
-                                .frame(width: 60, height: 60, alignment: .center)
-                    .background(mood == 8 ? Color.orange : ColorManager .grey2)
-                                .cornerRadius(40)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                                .blinking(duration: 3.0)
+                    
+                    
                     
     //               ************************************************
                     ZStack {
@@ -151,22 +157,19 @@ VStack {
 //                            .blinking(duration: 3.0)
                         
                         VStack {
+                        
                             
-                            Text("love your wins!")
-                                .font(.system(size: 11))
-                                .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .blinking(duration: 2.0)
-                            
-                            Text("Solid friends")
-                                .font(.system(size: 16))
-                                .fontWeight(.light)
+                            Text("Wish me")
+                                .font(.system(size: 20))
+                                .fontWeight(.regular)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
                               
-                       
+                            Text("Luck!")
+                                .font(.system(size: 20))
+                                .fontWeight(.regular)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
 
                         }
                     }
@@ -186,28 +189,39 @@ VStack {
     //               ************************************************
                         
             HStack {
-//                Image("IconNiceNew40")
+                //                Image("IconNiceNew40")
                 Image("iconSun")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 70, height: 70)
                     .opacity(0.9)
-//                    .blinking(duration: 2.0)
+                //                    .blinking(duration: 2.0)
                 
-                Button(action: {
-                    mood = 7
-                }) {
+                ZStack {
                     
-                    Text("exciting news!")
-                        .font(.system(size: 10))
-                        .foregroundColor(Color.black)
+                    Image(systemName: "circle")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 90, height: 90)
+                        .foregroundColor(Color .green)
+                        .glow(color: Color.green, radius: 5)
+                    //                                .blinking(duration: 2.0)
+                    
+                    
+                    Button(action: {
+                        mood = 7
+                    }) {
+                        
+                        Text("my exciting news!")
+                            .font(.system(size: 15))
+                            .foregroundColor(Color.black)
+                    }
+                    .frame(width: 85, height: 85, alignment: .center)
+                    .background(mood == 7 ? Color.green : Color.white)
+                    .cornerRadius(40)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 }
-                .frame(width: 60, height: 60, alignment: .center)
-                .background(mood == 7 ? Color.green : ColorManager .grey2)
-                .cornerRadius(40)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
             }
-         
 //                ************************************************
             //                ************************************************
             
@@ -223,19 +237,29 @@ VStack {
                 
             HStack {
             
-                Button(action: {
-                    mood = 1
-//                    showingAlert = true
-                }) {
-                    Text("Want \nFriend's \nSupport")
-                        .font(.system(size: 10))
-                        .foregroundColor(Color.black)
+                ZStack {
+                    
+                    Image(systemName: "circle")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 90, height: 90)
+                        .foregroundColor(Color .cyan)
+                        .glow(color: Color.cyan, radius: 5)
+                    
+                    
+                    Button(action: {
+                        mood = 1
+                        //                    showingAlert = true
+                    }) {
+                        Text("requesting \nemotional \nsupport")
+                            .font(.system(size: 15))
+                            .foregroundColor(Color.black)
+                    }
+                    .frame(width: 85, height: 85, alignment: .center)
+                    .background(mood == 7 ? Color.cyan : ColorManager .grey1)
+                    .cornerRadius(40)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 }
-                .frame(width: 60, height: 60, alignment: .center)
-                .background(mood == 7 ? Color.cyan : ColorManager .grey2)
-                .cornerRadius(40)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-           
             
 //                ********************************************
                     
@@ -254,8 +278,8 @@ VStack {
                         VStack {
                             
                             Text("Bad day?")
-                                .font(.system(size: 16))
-                                .fontWeight(.light)
+                                .font(.system(size: 20))
+                                .fontWeight(.regular)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
                                 .blinking(duration: 2.0)

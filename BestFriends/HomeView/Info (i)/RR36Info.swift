@@ -185,22 +185,33 @@ HStack {
             Spacer()
                 .frame(width: 40)
             
-            NavigationLink( destination: InviteView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                label: {
-                Text("?")
-                    .foregroundColor(Color.white)
-                    .frame(width: 40, height: 40)
-                    .multilineTextAlignment(.center)
-                    .font(.system(size: 32))
-//                                   .padding(10)
-                    .background(Color.gray)
-                    .cornerRadius(50)
-                    .glow(color: Color.white, radius: 20)
-                    .shadow(color: Color.white, radius: 2, x: 2, y: 2)
-//                                   .blinking(duration: 4.0)
-
-            })
-    
+            ZStack {
+                
+                Image(systemName: "circle")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 65, height: 65)
+                    .foregroundColor(Color .green)
+                    .glow(color: ColorManager.purple4, radius: 3)
+                    .blinking(duration: 2.0)
+                
+                NavigationLink( destination: InviteView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                label: {
+                    Text("?")
+                        .foregroundColor(Color.white)
+                        .frame(width: 40, height: 40)
+                        .multilineTextAlignment(.center)
+                        .font(.system(size: 32))
+                    //                                   .padding(10)
+                        .background(Color.gray)
+                        .cornerRadius(50)
+                        .glow(color: Color.white, radius: 20)
+                        .shadow(color: Color.white, radius: 2, x: 2, y: 2)
+                        .blinking(duration: 2.0)
+                    //                                   .blinking(duration: 4.0)
+                    
+                })
+            }
             
             ZStack {
                 
@@ -235,31 +246,34 @@ HStack {
             
         HStack {
 
-//                Image("")
-//                    .resizable()
-//                    .scaledToFit()
-//                    .frame(width: 70, height: 70)
-//                    .opacity(0.9)
-//                    .blinking(duration: 2.0)
-            
             Spacer()
                 .frame(width: 40)
             
-            NavigationLink(destination: BuiltByTeensView(user: user, friends: friends),
-                label: {
-                Text("?")
-                    .foregroundColor(Color.white)
-                    .frame(width: 40, height: 40)
-                    .multilineTextAlignment(.center)
-                    .font(.system(size: 32))
-//                                   .padding(10)
-                    .background(Color.gray)
-                    .cornerRadius(50)
-                    .glow(color: Color.white, radius: 20)
-                    .shadow(color: Color.white, radius: 2, x: 2, y: 2)
-//                                   .blinking(duration: 4.0)
-            })
-
+            ZStack {
+                
+                Image(systemName: "circle")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 65, height: 65)
+                    .foregroundColor(Color .purple)
+                    .glow(color: ColorManager.purple4, radius: 3)
+                    .blinking(duration: 2.0)
+                
+                NavigationLink(destination: BuiltByTeensView(user: user, friends: friends),
+                               label: {
+                    Text("?")
+                        .foregroundColor(Color.white)
+                        .frame(width: 40, height: 40)
+                        .multilineTextAlignment(.center)
+                        .font(.system(size: 32))
+                    //                                   .padding(10)
+                        .background(Color.gray)
+                        .cornerRadius(50)
+                        .glow(color: Color.white, radius: 20)
+                        .shadow(color: Color.white, radius: 2, x: 2, y: 2)
+                        .blinking(duration: 2.0)
+                })
+            }
             
             ZStack {
                 
@@ -278,18 +292,17 @@ HStack {
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
-
+                    
                     Text("Story")
                         .font(.system(size: 17))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
                     
-                
-                    
+                    }
                 }
             }
-        }
+        
             
            
 //                ************ Chat Setup ***********************************
@@ -306,22 +319,31 @@ HStack {
             Spacer()
                 .frame(width: 40)
             
-            NavigationLink( destination: InfoCreateChatRooms(user: user),
-                label: {
-                Text("?")
-                    .foregroundColor(Color.white)
-                    .frame(width: 40, height: 40)
-                    .multilineTextAlignment(.center)
-                    .font(.system(size: 32))
-//                                   .padding(10)
-                    .background(Color.gray)
-                    .cornerRadius(50)
-                    .glow(color: Color.white, radius: 20)
-                    .shadow(color: Color.white, radius: 2, x: 2, y: 2)
-//                                   .blinking(duration: 4.0)
-
-            })
-    
+            ZStack {
+                
+                Image(systemName: "circle")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 65, height: 65)
+                    .foregroundColor(Color .green)
+                    .glow(color: ColorManager.purple4, radius: 3)
+                    .blinking(duration: 2.0)
+                
+                NavigationLink( destination: InfoCreateChatRooms(user: user),
+                                label: {
+                    Text("?")
+                        .foregroundColor(Color.white)
+                        .frame(width: 40, height: 40)
+                        .multilineTextAlignment(.center)
+                        .font(.system(size: 32))
+                        .background(Color.gray)
+                        .cornerRadius(50)
+                        .glow(color: Color.white, radius: 20)
+                        .shadow(color: Color.white, radius: 2, x: 2, y: 2)
+                        .blinking(duration: 2.0)
+                    
+                })
+            }
             
             ZStack {
                 
