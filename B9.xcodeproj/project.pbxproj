@@ -1046,7 +1046,6 @@
 				CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */,
 				CFCD4BAC2965C27F00BBE43A /* InfoSafeChat.swift */,
 				CF2EE6F929516C9E00B1B16D /* InfoCustomizeChatBackgrounds.swift */,
-				CF2EE6FB29517A4B00B1B16D /* InfoCreateChatRooms.swift */,
 				CFCD4BAE2965CE5C00BBE43A /* InfoComingChat.swift */,
 				CF2EE6F529516C7000B1B16D /* InfoCreateGroupChatRooms.swift */,
 				CF09118D284894F400CB0AF0 /* InfoView.swift */,
@@ -1087,6 +1086,7 @@
 				CF0911842848328F00CB0AF0 /* HideChat.swift */,
 				7A2C215C28050BCD009362CF /* ChatBubble.swift */,
 				CF65042F28A438970092EEB9 /* ChatReactions.swift */,
+				CF2EE6FB29517A4B00B1B16D /* InfoCreateChatRooms.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";

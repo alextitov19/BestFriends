@@ -137,20 +137,34 @@ struct InviteView: View {
                             Spacer()
                                 .frame(height: 10)
                             
-                            Text("Accepting Friend Requests")
+                            Text("Accepting")
+                                .foregroundColor(ColorManager .grey2)
+                                .font(.system(size: 30, weight: .bold))
+                            
+                            Text("Friend Requests")
                                 .foregroundColor(ColorManager .grey2)
                                 .font(.system(size: 30, weight: .bold))
                             
                             
-                            Text("1) Friend navigates to this page  \n2) Friend taps [Accept]")
+                            Text("1) Friend navigates to this page")
+                                .fontWeight(.thin)
+//                                .frame(width: 400, height: 150)
+                                .foregroundColor(Color.green)
+                                .font(.system(size: 17))
+                                .background(ColorManager.grey4)
+//                                .multilineTextAlignment(alignment: Leading)
+                                .cornerRadius(10)
+                            
+                            Spacer()
+                                .frame(height: 7)
+                            
+                            Text("2) Friend taps [Accept]")
                                 .fontWeight(.thin)
 //                                .frame(width: 400, height: 150)
                                 .foregroundColor(Color.green)
                                 .font(.system(size: 17))
                                 .background(ColorManager.grey4)
                                 .cornerRadius(10)
-                            
-                         
                             
                             
                         }

@@ -284,19 +284,13 @@ struct FriendPlanetsView: View {
         var body: some View {
             VStack {
                 ZStack {
+                                  
                     
-//                    Image(systemName: Circle)
+//                    Image("planet_0")
 //                        .resizable()
 //                        .scaledToFit()
-//                        .opacity(0.3)
+//                        .opacity(0.9)
 //                        .frame(width: 50, height: 50)
-                    
-                    
-                    Image("planet_0")
-                        .resizable()
-                        .scaledToFit()
-                        .opacity(0.9)
-                        .frame(width: 50, height: 50)
 
                   
                     Image(systemName: "circle")
@@ -318,9 +312,13 @@ struct FriendPlanetsView: View {
                         .blinking(duration: 2.0)
                 }
                 
-                Text("add friend")
-                    .font(.system(size: 11, weight: .light))
+                Text("invite")
+                    .font(.system(size: 15, weight: .regular))
                     .foregroundColor(.white)
+                Text("friends")
+                    .font(.system(size: 13, weight: .regular))
+                    .foregroundColor(.white)
+                
             }
             .onTapGesture {
                 inviteClicked = true
