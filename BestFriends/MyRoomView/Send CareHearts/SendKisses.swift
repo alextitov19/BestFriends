@@ -286,13 +286,13 @@ struct SendKisses: View {
                             Image("iconShare")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 90, height: 90)
+                                .frame(width: 80, height: 80)
                                 .rotationEffect(.degrees(20))
                                 .foregroundColor(ColorManager .purple5)
                                 .glow(color: Color.purple, radius: 2)
                                 .opacity(0.6)
                                 .blinking(duration: 3.0)
-                                .alert("Your song \nhas been sent to Chat. \n\nYou are a great friend - something not often seen these days.", isPresented: $showingAlert) {
+                                .alert("Your Kiss is on it's way!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })

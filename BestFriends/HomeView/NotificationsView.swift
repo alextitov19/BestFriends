@@ -389,7 +389,7 @@ struct NotificationsView: View {
                    
                     
 // *********** Love / Hearts
-                case "Just send you a Heart and a message in Chat ... TAP":
+                case "just sent you Hearts":
                     heartsActive = true
                     
                 case "Said thanks for thinking about them and sending the Heart!":
@@ -406,7 +406,7 @@ struct NotificationsView: View {
                 
                     
 // *********** Song
-                case "Just sent you 'That' song in Chat":
+                case "just sent you that perfect song in chat":
                     songActive = true
                     
                 case "Thanks, your song really hit the spot!":

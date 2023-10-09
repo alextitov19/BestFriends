@@ -237,7 +237,7 @@ struct HugPushNotification: View {
                             Image("iconShare")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 90, height: 90)
+                                .frame(width: 80, height: 80)
                                 .rotationEffect(.degrees(20))
                                 .foregroundColor(ColorManager .purple5)
                                 .glow(color: Color.purple, radius: 2)
@@ -289,7 +289,7 @@ struct HugPushNotification: View {
                     
                     
                     Spacer ()
-                        .frame(width: 250)
+                        .frame(width: 190)
                     
                     NavigationLink(
                         destination:  PhotoPopView(user: user, friends: friends),
@@ -306,9 +306,7 @@ struct HugPushNotification: View {
                             
                         })
                             
-                            Spacer ()
-                                .frame(width: 15)
-                            
+                      
                     VStack {
                         
                         ZStack {

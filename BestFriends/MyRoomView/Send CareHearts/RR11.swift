@@ -325,13 +325,13 @@ struct RR11: View {
                             Image("iconShare")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 90, height: 90)
+                                .frame(width: 80, height: 80)
                                 .rotationEffect(.degrees(20))
                                 .foregroundColor(ColorManager .purple5)
                                 .glow(color: Color.purple, radius: 2)
                                 .opacity(0.6)
                                 .blinking(duration: 3.0)
-                                .alert("It's on it's way", isPresented: $showingAlert) {
+                                .alert("Your Heart is on it's way", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
@@ -360,7 +360,7 @@ struct RR11: View {
                             })
                             
                             Spacer()
-                                .frame(height: 170)
+                                .frame(height: 70)
      
                         }
               
@@ -381,11 +381,11 @@ struct RR11: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) Just send you a Love CareHeart", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) just send you Hearts", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Just sent you a Love CareHeart & PhotoPOP ... TAP", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "just sent you Hearts", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                         print("Create a Heart notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)
