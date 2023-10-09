@@ -100,16 +100,6 @@ VStack {
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.white)
         }
-//
-//        Image(systemName: "cube")
-//            .resizable()
-//            .scaledToFit()
-//            .frame(width: 60, height: 60)
-//            .foregroundColor(Color.cyan)
-//            .glow(color: Color.cyan, radius: 3)
-//            .opacity(0.13)
-        
-        
     }
         VStack {
                         
@@ -237,9 +227,11 @@ VStack {
                             .frame(height: 15)
                 
             HStack {
+                Spacer ()
+                    .frame(width: 30)
             
                 ZStack {
-                    
+                   
                     Image(systemName: "circle")
                         .resizable()
                         .scaledToFit()
