@@ -337,7 +337,7 @@ struct RR20: View {
                                 .glow(color: Color.purple, radius: 2)
                                 .opacity(0.6)
                                 .blinking(duration: 3.0)
-                                .alert("Brilliant! This will pumpup this wonderful behavior towards you.", isPresented: $showingAlert) {
+                                .alert("Brilliant! \n\nNice job.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             

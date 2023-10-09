@@ -205,7 +205,7 @@ struct RR27: View {
                                 TextField("", text: $customMessage)
                                     .placeholder(when: customMessage.isEmpty) {
                                         HStack {
-                                            Text("Shoot'em a motivational message in Chat")
+                                            Text("Say something encouraging in Chat")
                                                 .foregroundColor(Color.white)
                                                 .fontWeight(.thin)
                                             Spacer()
@@ -354,7 +354,7 @@ struct RR27: View {
                                 .glow(color: Color.purple, radius: 2)
                                 .opacity(0.6)
                                 .blinking(duration: 3.0)
-                                .alert("Nice, we are all a little scared sometimes.", isPresented: $showingAlert) {
+                                .alert("This will help. \n\nSometimes we can all be a little scared.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
