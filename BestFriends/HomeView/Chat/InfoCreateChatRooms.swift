@@ -27,8 +27,13 @@ struct InfoCreateChatRooms: View {
             
             VStack {
                 
+                Text("Create")
+                    .font(.system(size: 35))
                 
-                Text("Create Chat Rooms")
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.grey2)
+                Text("Chat Rooms")
                     .font(.system(size: 35))
                 
                     .fontWeight(.light)
