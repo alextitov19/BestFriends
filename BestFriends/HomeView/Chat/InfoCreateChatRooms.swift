@@ -132,6 +132,19 @@ struct InfoCreateChatRooms: View {
                                 .foregroundColor(ColorManager.grey4)
                             
 
+                            NavigationLink(
+                                destination: ChangeChatBackgroundView(user: user),
+                                label: {
+                                    Text("Customize \nChat Backgrounds")
+                                        .fontWeight(.light)
+                                        .frame(width: 280, height: 80)
+                                        .foregroundColor(Color.white)
+                                        .font(.system(size: 25))
+                                        .background(Color.cyan)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                        .opacity(0.5)
+                                })
                             
                             Spacer ()
                                 .frame(height: 100)
