@@ -413,7 +413,7 @@ struct HomeView: View {
                         Button(action: {
                             chatButtonTapped()
                         }, label: {
-                            Text("About Planets \n\na) You are center planet (it's color matches your 'Vibe' \n\nb) Friend's planets orbit yours and atmosphers matches their 'Vibe' \n\n\nCreating Chat Rooms \n\n1)To create new single-friend Chat rooms tap friend's planet, then this box and name room \n\n2) Currently we are unable to create multi-friend rooms \n\n\nAccessing Chat Rooms \n\n1) Tap friend's planet - then this box")
+                            Text("About Planets & Chat... \n\na) You are center planet (it's color matches your 'Vibe' \n\nb) Friend's planets orbit yours and atmosphers matches their 'Vibe' \n\n\nCreating Chat Rooms \n\n1)To create new single-friend Chat rooms tap friend's planet, then this box and name room \n\nAccessing single-friend Chat Rooms tap friend's planet - then this box \n\n\n\nNote; Multi-friend rooms coming soon!")
                                 .fontWeight(.light)
                                 .frame(width: 300, height: 650)
                                 .foregroundColor(.white)
