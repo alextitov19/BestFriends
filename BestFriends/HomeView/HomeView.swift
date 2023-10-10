@@ -413,21 +413,24 @@ struct HomeView: View {
                         Button(action: {
                             chatButtonTapped()
                         }, label: {
-                            Text("About Planets & Chat... \n\na) You are center planet (it's color matches your 'Vibe' \n\nb) Friend's planets orbit yours and atmosphers matches their 'Vibe' \n\n\nCreating Chat Rooms \n\n1)To create new single-friend Chat rooms tap friend's planet, then this box and name room \n\nAccessing single-friend Chat Rooms tap friend's planet - then this box \n\n\n\nNote; Multi-friend rooms coming soon!")
+                            Text("About Planets... \nYou are the center planet. It's color matches your current 'Vibe' \n\nFriend's planets orbit yours and atmospher matches their 'Vibe' \n__________ \n\n Creating Chat Rooms... \nTo create new single-friend Chat rooms tap friend's planet, then this box & name room in popup \n\nTo create multi-friend rooms tap ALL friend's planets \none-at-a-time, then this box and name \n__________ \n\nAccessing Chat Rooms... \nTap friend's planet - then this box")
                                 .fontWeight(.light)
-                                .frame(width: 300, height: 650)
-                                .foregroundColor(.white)
+                                .font(.system(size: 11))
+                                .frame(width: 330, height: 245)
+                                .padding(15)
+                                .foregroundColor(.black)
                                 .background(Color.purple)
-                                .cornerRadius(15)
-//                                .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 11)
+                                .cornerRadius(20)
                                 .shadow(color: Color(.white), radius: 3, x: 3, y: 3)
-                                .opacity(0.6)
+                                .opacity(0.8)
                             Button("OK", role: .cancel) {
                             }
+                            
+                           
                         })
                         
                         Spacer()
-                            .frame(height: 150)
+                            .frame(height: 550)
                     }
                 }
                 
