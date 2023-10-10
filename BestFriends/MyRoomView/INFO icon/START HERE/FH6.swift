@@ -42,7 +42,7 @@ struct FH6: View {
                 .opacity(0.9)
                 .ignoresSafeArea()
             
-            AdPlayerView(name: "background_9")
+            AdPlayerView(name: "Planet4")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
@@ -68,79 +68,51 @@ struct FH6: View {
                         Spacer()
                             .frame(height: 40)
                         
-                        Text("Why non-toxic?")
-                            .font(.system(size: 30))
-                            .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
+                   
                        
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("1) You won't feel like")
+                        Text("No feeling like you're")
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.thin)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Text("you're not good enough")
+                        Text("not good enough")
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                        
-                        Spacer()
-                            .frame(height: 10)
-                        
-                        Text("2) No FOMO issues")
-                            .font(.system(size: 20))
-                            .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.thin)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
                         Spacer()
-                            .frame(height: 10)
+                            .frame(height: 30)
                         
+                        Text("No FOMO")
+                            .font(.system(size: 20))
+                            .foregroundColor(ColorManager.grey1)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
                         
+                        Spacer()
+                            .frame(height: 30)
                         
+                        Text("No comparisons")
+                            .font(.system(size: 20))
+                            .foregroundColor(ColorManager.grey1)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
                         
-                        VStack {
-                            
-                            Text("2) No comparison issues")
-                                .font(.system(size: 20))
-                                .foregroundColor(ColorManager.grey1)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                            
-                            Text("(no 'likes' or 'comment' on images")
-                                .font(.system(size: 15))
-                                .italic()
-                                .foregroundColor(ColorManager.grey1)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                            
-                            Spacer()
-                                .frame(height: 30)
-                            
-                            Text("BestFriendsNetwork is a")
-                                .font(.system(size: 17))
-                                .italic()                            .foregroundColor(ColorManager.grey1)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                            
-                            Text("safe and sound space)")
-                                .font(.system(size: 17))
-                                .italic()                            .foregroundColor(ColorManager.grey1)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                            
-                            Spacer()
-                                .frame(height: 20)
-                            
-                            
-                            
-                            
-                        }
+                        Spacer()
+                            .frame(height: 20)
+                        
+//
+//                        Text("(No 'likes' / 'comments'")
+//                            .font(.system(size: 20))
+//                            .foregroundColor(ColorManager.grey1)
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+                   
                     }
                 }
                 

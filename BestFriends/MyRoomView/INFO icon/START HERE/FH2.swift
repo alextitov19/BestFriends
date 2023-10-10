@@ -64,7 +64,7 @@ struct FH2: View {
                         .frame(width: 100)
                     
                     ZStack {
-                
+              
                             Image("comicBubble")
                                 .resizable()
                                 .foregroundColor(Color.cyan)
@@ -109,7 +109,7 @@ struct FH2: View {
                         Spacer()
                             .frame(height: 20)
                         
-                        Text("let the outside of you")
+                        Text("Let the outside of you")
                             .font(.system(size: 22))
                             .foregroundColor(Color.white)
                             .fontWeight(.thin)
