@@ -413,7 +413,7 @@ struct HomeView: View {
                         Button(action: {
                             chatButtonTapped()
                         }, label: {
-                            Text("About Planets \n\na) You are center planet (it's color matches your 'Vibe' \n\nb) Friend's planets orbit yours and atmosphers matches their 'Vibe' \n\n\nCreating Chat Rooms \n\n1)To create new single-friend Chat rooms tap friend's planet, then this box and name room \n\n2) To create multi-friend rooms tap all friends planets, then this box and name room \n\n\nAccessing Chat Rooms \n\n1) Tap friend's planet - then this box \n\n2)To access multi-friend chat rooms use 'Chat PullUp' below")
+                            Text("About Planets \n\na) You are center planet (it's color matches your 'Vibe' \n\nb) Friend's planets orbit yours and atmosphers matches their 'Vibe' \n\n\nCreating Chat Rooms \n\n1)To create new single-friend Chat rooms tap friend's planet, then this box and name room \n\n2) Currently we are unable to create multi-friend rooms \n\n\nAccessing Chat Rooms \n\n1) Tap friend's planet - then this box")
                                 .fontWeight(.light)
                                 .frame(width: 300, height: 650)
                                 .foregroundColor(.white)
@@ -422,6 +422,8 @@ struct HomeView: View {
 //                                .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 11)
                                 .shadow(color: Color(.white), radius: 3, x: 3, y: 3)
                                 .opacity(0.6)
+                            Button("OK", role: .cancel) {
+                            }
                         })
                         
                         Spacer()

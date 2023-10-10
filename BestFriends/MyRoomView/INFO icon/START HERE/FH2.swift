@@ -53,7 +53,7 @@ struct FH2: View {
             VStack {
 
                 HStack {
-                    Text("k")
+                    Text("")
                         .font(.system(size: 20))
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
