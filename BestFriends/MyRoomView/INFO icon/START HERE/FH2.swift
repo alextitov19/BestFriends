@@ -45,13 +45,53 @@ struct FH2: View {
                 .opacity(0.9)
                 .ignoresSafeArea()
             
-            AdPlayerView(name: "background_9")
+            AdPlayerView(name: "Planet4")
                 .ignoresSafeArea()
                 .blendMode(.screen)
  
 
             VStack {
 
+                HStack {
+                    Text("k")
+                        .font(.system(size: 20))
+                        .fontWeight(.regular)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+                        .blinking(duration: 2.0)
+                
+                    Spacer()
+                        .frame(width: 100)
+                    
+                    ZStack {
+                
+                            Image("comicBubble")
+                                .resizable()
+                                .foregroundColor(Color.cyan)
+                                .frame(width: 350, height: 140)
+                                .shadow(color: Color.cyan, radius: 3, x: 3, y: 3)
+                                .opacity(0.5)
+                                    .blinking(duration: 2.0)
+                            
+                        VStack {
+                            
+                            Text("in a safe,")
+                                .font(.system(size: 20))
+                                .fontWeight(.regular)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .blinking(duration: 2.0)
+                            
+                            Text("non-toxic environment")
+                                .font(.system(size: 20))
+                                .fontWeight(.regular)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .blinking(duration: 2.0)
+                        }
+                    }
+                }
+             
                 ZStack {
  
                     
@@ -63,25 +103,7 @@ struct FH2: View {
                         .opacity(0.5)
                     
                     VStack {
-                        
-                        
-                        Spacer()
-                            .frame(height: 40)
-                        
-                        Text("BestFriendsNetwork")
-                            .font(.system(size: 27))
-                            .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.regular)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("where you can ...")
-                            .font(.system(size: 19))
-                               .italic()
-                            .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                        
-                        
+                   
                         
                         
                         Spacer()
@@ -109,24 +131,12 @@ struct FH2: View {
                         
                         Spacer()
                             .frame(height: 20)
-              
-                        Text("in a safe,")
-                            .font(.system(size: 19))
-                               .italic()
-                            .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("non-toxic environment")
-                            .font(.system(size: 19))
-                               .italic()
-                            .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                    }
-                    
-                }
-                VStack {
+               
+            }
+        }
+    
+                //                ********************************************
+            VStack {
                     
                     Spacer()
                         .frame(height: 30)

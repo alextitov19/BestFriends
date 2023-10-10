@@ -113,8 +113,9 @@ VStack {
                                 .scaledToFit()
                                 .frame(width: 90, height: 90)
                                 .foregroundColor(Color .orange)
-                                .glow(color: Color.orange, radius: 5)
-//                                .blinking(duration: 2.0)
+                                .glow(color: Color.orange, radius: 10)
+                                .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
+
                             
                             
                         }
@@ -130,7 +131,7 @@ VStack {
                         .frame(width: 85, height: 85, alignment: .center)
                         .background(mood == 8 ? Color.orange : Color.white)
                         .cornerRadius(50)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                     
                     }
                     
                     
@@ -150,7 +151,7 @@ VStack {
                         VStack {
                         
                             
-                            Text("Big even")
+                            Text("Big event")
                                 .font(.system(size: 20))
                                 .fontWeight(.regular)
                                 .multilineTextAlignment(.center)
@@ -195,7 +196,8 @@ VStack {
                         .scaledToFit()
                         .frame(width: 90, height: 90)
                         .foregroundColor(Color .green)
-                        .glow(color: Color.green, radius: 5)
+                        .glow(color: Color.green, radius: 10)
+                        .shadow(color: Color.green, radius: 3, x: 3, y: 3)
                     //                                .blinking(duration: 2.0)
                     
                     
@@ -237,7 +239,8 @@ VStack {
                         .scaledToFit()
                         .frame(width: 90, height: 90)
                         .foregroundColor(Color .cyan)
-                        .glow(color: Color.cyan, radius: 5)
+                        .glow(color: Color.cyan, radius: 10)
+                        .shadow(color: Color.cyan, radius: 3, x: 3, y: 3)
                     
                     
                     Button(action: {
@@ -297,8 +300,7 @@ VStack {
                         }
                     }
                 }
-                
-//            }
+
                    
       
  
