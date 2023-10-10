@@ -413,9 +413,9 @@ struct HomeView: View {
                         Button(action: {
                             chatButtonTapped()
                         }, label: {
-                            Text("Creating Chat Rooms \n\n1) To create new single friend Chat rooms tap friend's planet, then this box and name room \n\n2) To create multi-friend rooms tap all friends planets, then this box and name room \n\n  .   .   . \n\nAccessing one-on-one Rooms \n\n1) To access existing one-on-one chat rooms tap friends planet then this box \n\n2)To access multi-friend chat rooms use 'Chat PullUp' below \n\n\nThere are detailed instructions below Chat icon below [SetUp]")
+                            Text("About Planets \n\na) You are center planet (it's color matches your 'Vibe' \n\nb) Friend's planets orbit yours and atmosphers matches their 'Vibe' \n\n\nCreating Chat Rooms \n\n1)To create new single friend Chat rooms tap friend's planet, then this box and name room \n\n2) To create multi-friend rooms tap all friends planets, then this box and name room \n\n\nAccessing Chat Rooms \n\n1) Tap friend's planet - then this box \n\n2)To access multi-friend chat rooms use 'Chat PullUp' below")
                                 .fontWeight(.light)
-                                .frame(width: 300, height: 600)
+                                .frame(width: 300, height: 650)
                                 .foregroundColor(.white)
                                 .background(Color.purple)
                                 .cornerRadius(15)
@@ -425,7 +425,7 @@ struct HomeView: View {
                         })
                         
                         Spacer()
-                            .frame(height: 200)
+                            .frame(height: 150)
                     }
                 }
                 

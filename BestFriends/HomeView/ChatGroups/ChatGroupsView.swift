@@ -67,7 +67,7 @@ struct ChatGroupsView: View {
                                 .font(.system(size: 35))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
-                                .opacity(0.9)
+                                .opacity(0.4)
                                 .multilineTextAlignment(.center)
                                 .blinking(duration: 2.0)
                             
@@ -84,7 +84,7 @@ struct ChatGroupsView: View {
                                 .font(.system(size: 35))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
-                                .opacity(0.9)
+                                .opacity(0.4)
                                 .multilineTextAlignment(.center)
                                 .blinking(duration: 2.0)
                         
