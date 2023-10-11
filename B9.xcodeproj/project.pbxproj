@@ -1564,8 +1564,9 @@
 		CF6C5B062A86089F00EC4915 /* PHOTOPOP */ = {
 			isa = PBXGroup;
 			children = (
-				2DDCD97F2A8FEBAA00B1040F /* RR16.swift */,
 				7A04C13C28553818003AB24A /* PhotoPopView.swift */,
+				2DBF3EE82A61ACFF00CB1CAD /* RR5.swift */,
+				2DDCD97F2A8FEBAA00B1040F /* RR16.swift */,
 				CF6499DE294D4148003BBF83 /* INFOPreloadA.swift */,
 				7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */,
 				CF24815628F5060100D47AE3 /* PhotoPop3.swift */,
@@ -1573,7 +1574,6 @@
 				7A04C13E2855390B003AB24A /* PhotoPopImageView.swift */,
 				CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */,
 				CF24815428F5018B00D47AE3 /* PhotoPop1.swift */,
-				2DBF3EE82A61ACFF00CB1CAD /* RR5.swift */,
 				CF0EB7D72A736808000B2A1F /* FriendshipRewards */,
 			);
 			name = PHOTOPOP;

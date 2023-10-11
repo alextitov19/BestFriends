@@ -73,13 +73,13 @@ struct FH6: View {
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("No feeling like you're")
+                        Text("No feelings of not")
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager.grey1)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Text("not good enough")
+                        Text("being good enough")
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager.grey1)
                             .fontWeight(.light)
