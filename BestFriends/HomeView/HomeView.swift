@@ -420,13 +420,13 @@ struct HomeView: View {
                                     .opacity(0.99)
                                 
                                 
-                                    Text("TAP TO BUILD & ACCESS")
+                                    Text("CHAT ROOMS")
                                         .fontWeight(.medium)
                                         .font(.system(size: 50))
                                         .foregroundColor(.white)
                                         .opacity(0.7)
                                     
-                                    Text("Creating Chat Rooms... \nTo create new single-friend Chat rooms tap friend's planet, then this box & name room in popup \n\nTo create multi-friend rooms tap ALL friend's planets \none-at-a-time, then this box and name \n__________ \n\nAccessing Chat Rooms... \nFor single-friend rooms tap friends planet - then this box \n\nMulti-friend rooms tap ALL friends, then this box")
+                                    Text("\nCREATING One-on-one Chat Rooms...Tap friend's planet, then this 'popup' to name room \n\nACCESSING one-on-one Chat Rooms...Tap friend's planet, then this 'popup' to enter \n\n\n\nCREATING Mulit-friend Chat Rooms...Tap ALL friend's planets one-at-a-time, then this 'popup' to name \n\nACCESSING Multi-friend Chat Rooms...Tap ALL friends, then this 'popup' to enter")
                                         .fontWeight(.medium)
                                         .font(.system(size: 14))
                                         .frame(width: 340, height: 265)
@@ -443,7 +443,7 @@ struct HomeView: View {
                         })
                         
                         Spacer()
-                            .frame(height: 550)
+                            .frame(height: 557)
                     }
                 }
                 

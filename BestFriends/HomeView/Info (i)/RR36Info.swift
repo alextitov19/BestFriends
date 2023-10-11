@@ -105,7 +105,7 @@ HStack {
             Image("comicBubble")
                 .resizable()
                 .foregroundColor(Color.purple)
-                .frame(width: 335, height: 190)
+                .frame(width: 430, height: 250)
                 .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                 .rotationEffect(.degrees(-10))
                 .opacity(0.95)
@@ -116,46 +116,54 @@ HStack {
                 
                 VStack {
                     
-                    Text("Friends show as planets")
-                        .font(.system(size: 16))
+                
+                    
+                    Text("Planets")
+                        .font(.system(size: 20))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
                         .rotationEffect(.degrees(-10))
-//                        .blinking(duration: 2.0)
+                        .blinking(duration: 2.0)
                     
-                    Text("When friend's are online")
-                        .font(.system(size: 13))
-                        .italic()
+                    Text("You're the center planet and friends")
+                        .font(.system(size: 15))
                         .fontWeight(.light)
-                        .multilineTextAlignment(.center)
+                        .multilineTextAlignment(.leading)
                         .rotationEffect(.degrees(-10))
                         .foregroundColor(Color.white)
                     //                                .blinking(duration: 5.0)
                     
-                    Text("their planet's atmospere")
-                        .font(.system(size: 13))
-                        .italic()
+                    Text("planet's orbit you.")
+                        .font(.system(size: 15))
                         .fontWeight(.light)
-                        .multilineTextAlignment(.center)
+                        .multilineTextAlignment(.leading)
                         .rotationEffect(.degrees(-10))
                         .foregroundColor(Color.white)
                     //                                .blinking(duration: 5.0)
+                    Spacer()
+                        .frame(height: 10)
                     
-                    Text("color matches their Vibe")
-                        .font(.system(size: 13))
-                        .italic()
+                    Text("Everyone's planet atmosphere color")
+                        .font(.system(size: 15))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .rotationEffect(.degrees(-10))
                         .foregroundColor(Color.white)
-                    //                                .blinking(duration: 5.0)
+                
+                    
+                    Text("matches their current 'Vibe'")
+                        .font(.system(size: 15))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .rotationEffect(.degrees(-10))
+                        .foregroundColor(Color.white)
                     }
                 }
             }
             
             Spacer()
-                .frame(width: 60)
+                .frame(width: 5)
             
             
             Image("")
@@ -243,70 +251,8 @@ HStack {
          
 //                **************  OPEN for something **************************
 
-            
-        HStack {
-
-            Spacer()
-                .frame(width: 40)
-            
-            ZStack {
-                
-                Image(systemName: "circle")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 65, height: 65)
-                    .foregroundColor(Color .purple)
-                    .glow(color: ColorManager.purple4, radius: 3)
-                    .blinking(duration: 2.0)
-                
-                NavigationLink(destination: BuiltByTeensView(user: user, friends: friends),
-                               label: {
-                    Text("?")
-                        .foregroundColor(Color.white)
-                        .frame(width: 40, height: 40)
-                        .multilineTextAlignment(.center)
-                        .font(.system(size: 32))
-                    //                                   .padding(10)
-                        .background(Color.gray)
-                        .cornerRadius(50)
-                        .glow(color: Color.white, radius: 20)
-                        .shadow(color: Color.white, radius: 2, x: 2, y: 2)
-                        .blinking(duration: 2.0)
-                })
-            }
-            
-            ZStack {
-                
-                
-                Image("comicBubble")
-                    .resizable()
-                    .foregroundColor(Color.purple)
-                    .frame(width: 170, height: 120)
-                    .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
-                    .opacity(0.5)
-                
-                VStack {
-                    
-                    Text("Our")
-                        .font(.system(size: 17))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
-                    
-                    Text("Story")
-                        .font(.system(size: 17))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
-                    
-                    }
-                }
-            }
+     
         
-            
-           
-//                ************ Chat Setup ***********************************
-
         HStack {
 
                 Image("")
@@ -373,6 +319,68 @@ HStack {
             }
         }
      
+           
+//                ************ Chat Setup ***********************************
+
+        
+    HStack {
+
+        Spacer()
+            .frame(width: 40)
+        
+        ZStack {
+            
+            Image(systemName: "circle")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 65, height: 65)
+                .foregroundColor(Color .purple)
+                .glow(color: ColorManager.purple4, radius: 3)
+                .blinking(duration: 2.0)
+            
+            NavigationLink(destination: BuiltByTeensView(user: user, friends: friends),
+                           label: {
+                Text("?")
+                    .foregroundColor(Color.white)
+                    .frame(width: 40, height: 40)
+                    .multilineTextAlignment(.center)
+                    .font(.system(size: 32))
+                //                                   .padding(10)
+                    .background(Color.gray)
+                    .cornerRadius(50)
+                    .glow(color: Color.white, radius: 20)
+                    .shadow(color: Color.white, radius: 2, x: 2, y: 2)
+                    .blinking(duration: 2.0)
+            })
+        }
+        
+        ZStack {
+            
+            
+            Image("comicBubble")
+                .resizable()
+                .foregroundColor(Color.purple)
+                .frame(width: 170, height: 120)
+                .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
+                .opacity(0.5)
+            
+            VStack {
+                
+                Text("Our")
+                    .font(.system(size: 17))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+                
+                Text("Story")
+                    .font(.system(size: 17))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+                
+                }
+            }
+        }
       
 //                ************************************************
                         VStack {
