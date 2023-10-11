@@ -76,17 +76,12 @@ VStack {
      
         
     VStack {
-        
-        Text("SetUp &")
-            .font(.system(size: 30))
-            .fontWeight(.regular)
-            .multilineTextAlignment(.center)
-            .foregroundColor(Color.white)
+     
         Text("Walk-Through")
-            .font(.system(size: 30))
-            .fontWeight(.regular)
-            .multilineTextAlignment(.center)
-            .foregroundColor(Color.white)
+            .fontWeight(.medium)
+            .font(.system(size: 35))
+            .foregroundColor(.white)
+            .opacity(0.7)
                         
 HStack {
                     
@@ -94,18 +89,12 @@ HStack {
         
         //        ********************  cool guy  ***************************
         HStack {
-          
-//            Image("")
-//                .resizable()
-//                .foregroundColor(Color.blue)
-//                .frame(width: 150, height: 150)
-//                .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
-//                .opacity(0.9)
+
         ZStack {
             Image("comicBubble")
                 .resizable()
                 .foregroundColor(Color.purple)
-                .frame(width: 430, height: 250)
+                .frame(width: 430, height: 240)
                 .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                 .rotationEffect(.degrees(-10))
                 .opacity(0.95)
@@ -119,14 +108,14 @@ HStack {
                 
                     
                     Text("Planets")
-                        .font(.system(size: 20))
-                        .fontWeight(.light)
+                        .font(.system(size: 23))
+                        .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
                         .rotationEffect(.degrees(-10))
                         .blinking(duration: 2.0)
                     
-                    Text("You're the center planet and friends")
+                    Text("You're the center planet and")
                         .font(.system(size: 15))
                         .fontWeight(.light)
                         .multilineTextAlignment(.leading)
@@ -134,7 +123,7 @@ HStack {
                         .foregroundColor(Color.white)
                     //                                .blinking(duration: 5.0)
                     
-                    Text("planet's orbit you.")
+                    Text("your friends planet's orbit you.")
                         .font(.system(size: 15))
                         .fontWeight(.light)
                         .multilineTextAlignment(.leading)
@@ -205,11 +194,11 @@ HStack {
                 
                 NavigationLink( destination: InviteView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
-                    Text("?")
+                    Text("tap")
                         .foregroundColor(Color.white)
                         .frame(width: 40, height: 40)
                         .multilineTextAlignment(.center)
-                        .font(.system(size: 32))
+                        .font(.system(size: 16))
                     //                                   .padding(10)
                         .background(Color.gray)
                         .cornerRadius(50)
@@ -249,7 +238,7 @@ HStack {
             }
         }
          
-//                **************  OPEN for something **************************
+//                **************  Chat Setup **************************
 
      
         
@@ -266,29 +255,29 @@ HStack {
                 .frame(width: 40)
             
             ZStack {
+//
+//                Image(systemName: "circle")
+//                    .resizable()
+//                    .scaledToFit()
+//                    .frame(width: 65, height: 65)
+//                    .foregroundColor(Color .green)
+//                    .glow(color: ColorManager.purple4, radius: 3)
+//                    .blinking(duration: 2.0)
                 
-                Image(systemName: "circle")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 65, height: 65)
-                    .foregroundColor(Color .green)
-                    .glow(color: ColorManager.purple4, radius: 3)
-                    .blinking(duration: 2.0)
-                
-                NavigationLink( destination: InfoCreateChatRooms(user: user),
-                                label: {
-                    Text("?")
-                        .foregroundColor(Color.white)
-                        .frame(width: 40, height: 40)
-                        .multilineTextAlignment(.center)
-                        .font(.system(size: 32))
-                        .background(Color.gray)
-                        .cornerRadius(50)
-                        .glow(color: Color.white, radius: 20)
-                        .shadow(color: Color.white, radius: 2, x: 2, y: 2)
-                        .blinking(duration: 2.0)
-                    
-                })
+//                NavigationLink( destination: InfoCreateChatRooms(user: user),
+//                                label: {
+//                    Text("SetUp Chat")
+//                        .foregroundColor(Color.white)
+//                        .frame(width: 40, height: 40)
+//                        .multilineTextAlignment(.center)
+//                        .font(.system(size: 15))
+//                        .background(Color.gray)
+//                        .cornerRadius(50)
+//                        .glow(color: Color.white, radius: 20)
+//                        .shadow(color: Color.white, radius: 2, x: 2, y: 2)
+//                        .blinking(duration: 2.0)
+//
+//                })
             }
             
             ZStack {
@@ -297,22 +286,33 @@ HStack {
                 Image("comicBubble")
                     .resizable()
                     .foregroundColor(Color.purple)
-                    .frame(width: 160, height: 110)
-                    .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
-                    .opacity(0.5)
+                    .frame(width: 430, height: 225)
+                    .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+                    .rotationEffect(.degrees(-10))
+                    .opacity(0.95)
                 
                 VStack {
                     
-                    Text("SetUp")
+                    Text("Build & Access Chat Rooms")
+                        .font(.system(size: 21))
+                        .fontWeight(.regular)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+                        .rotationEffect(.degrees(-10))
+                        .blinking(duration: 2.0)
+                    
+                    Text("Tap friends planet on homepg")
                         .font(.system(size: 17))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
+                        .rotationEffect(.degrees(-10))
 
-                    Text("Chat")
+                    Text("and follow instructions in 'popup'")
                         .font(.system(size: 17))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
+                        .rotationEffect(.degrees(-10))
                         .foregroundColor(Color.white)
                     
                 }
@@ -340,11 +340,11 @@ HStack {
             
             NavigationLink(destination: BuiltByTeensView(user: user, friends: friends),
                            label: {
-                Text("?")
+                Text("tap")
                     .foregroundColor(Color.white)
                     .frame(width: 40, height: 40)
                     .multilineTextAlignment(.center)
-                    .font(.system(size: 32))
+                    .font(.system(size: 16))
                 //                                   .padding(10)
                     .background(Color.gray)
                     .cornerRadius(50)
@@ -405,24 +405,24 @@ HStack {
                                 //                                            .opacity(0.70)
                                 //
                                 //                                    })
-                                
-                                NavigationLink(destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                               label: {
-                                    Text("->")
-                                        .fontWeight(.thin)
-                                        .foregroundColor(Color.white)
-                                        .frame(width: 40, height: 40)
-                                        .font(.system(size: 30))
-                                        .background(ColorManager .grey2)
-                                        .opacity(0.95)
-                                        .cornerRadius(5)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    
-                                })
+//
+//                                NavigationLink(destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                                               label: {
+//                                    Text("->")
+//                                        .fontWeight(.thin)
+//                                        .foregroundColor(Color.white)
+//                                        .frame(width: 40, height: 40)
+//                                        .font(.system(size: 30))
+//                                        .background(ColorManager .grey2)
+//                                        .opacity(0.95)
+//                                        .cornerRadius(5)
+//                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                                })
                             
                                     
-                                    Spacer()
-                                        .frame(height: 30)
+//                                    Spacer()
+//                                        .frame(height: 30)
                                  
                                 }
                             }
