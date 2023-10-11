@@ -325,9 +325,6 @@ HStack {
         
     HStack {
 
-        Spacer()
-            .frame(width: 40)
-        
         ZStack {
             
             Image(systemName: "circle")
@@ -377,59 +374,44 @@ HStack {
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
-                
-                }
             }
         }
+                   
+        
+        NavigationLink(destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                   label: {
+                        Text("->")
+                            .fontWeight(.thin)
+                            .foregroundColor(Color.white)
+                            .frame(width: 40, height: 40)
+                            .font(.system(size: 30))
+                            .background(ColorManager .grey2)
+                            .opacity(0.95)
+                            .cornerRadius(5)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        
+                    })
+            }
+       
+            
+            
+            
+        
+   
+        
       
 //                ************************************************
                         VStack {
                             
             
                                 Spacer()
-                                    .frame(height: 20)
+                                    .frame(height: 40)
                                 
-                            VStack {
-                                
-                                //                                    Button(action: {
-                                //                                        sessionManager.showLogin()
-                                //                                    },
-                                //                                           label: {
-                                //                                        Image("home-alt2")
-                                //                                            .frame(width: 60, height: 30)
-                                //                                            .foregroundColor(.black)
-                                //                                            .font(.system(size: 20))
-                                //                                            .background(ColorManager .grey3)
-                                //                                            .cornerRadius(15)
-                                //                                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                //                                            .opacity(0.70)
-                                //
-                                //                                    })
-//
-//                                NavigationLink(destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-//                                               label: {
-//                                    Text("->")
-//                                        .fontWeight(.thin)
-//                                        .foregroundColor(Color.white)
-//                                        .frame(width: 40, height: 40)
-//                                        .font(.system(size: 30))
-//                                        .background(ColorManager .grey2)
-//                                        .opacity(0.95)
-//                                        .cornerRadius(5)
-//                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//                                })
-                            
-                                    
-//                                    Spacer()
-//                                        .frame(height: 30)
-                                 
-                                }
+          
                             }
                         }
     
-                        Spacer()
-                            .frame(height: 15)
+                 
                         
                     }
                     
