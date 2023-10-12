@@ -193,7 +193,7 @@ struct HomeView: View {
                                     .font(.system(size: 70))
                                     .foregroundColor(Color.white)
                                     .fontWeight(.bold)
-                                    .opacity(0.15)
+                                    .opacity(0.05)
                                     .multilineTextAlignment(.center)
                                     .rotationEffect(.degrees(-20))
                                     .glow(color: Color.white, radius: 75)
