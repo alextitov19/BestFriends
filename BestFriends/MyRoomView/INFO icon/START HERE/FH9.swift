@@ -39,7 +39,7 @@ struct FH9: View {
                 .opacity(0.9)
                 .ignoresSafeArea()
             
-            AdPlayerView(name: "background_9")
+            AdPlayerView(name: "Planet4")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
@@ -52,10 +52,26 @@ struct FH9: View {
                         Spacer()
                             .frame(height: 70)
                         
+                        
+                        Text("\nCREATING One-on-one Chat Rooms...Tap friend's planet, then this 'popup' to name room \n\nACCESSING one-on-one Chat Rooms...Tap friend's planet, then this 'popup' to enter \n\n\n\nCREATING Mulit-friend Chat Rooms...Tap ALL friend's planets one-at-a-time, then this 'popup' to name \n\nACCESSING Multi-friend Chat Rooms...Tap ALL friends, then this 'popup' to enter")
+                                                       .fontWeight(.medium)
+                                                       .font(.system(size: 14))
+                                                       .frame(width: 340, height: 265)
+                                                       .padding(15)
+                                                       .foregroundColor(.black)
+                                                       .background(ColorManager .grey3)
+                                                       .cornerRadius(20)
+                                                       .shadow(color: Color(.white), radius: 3, x: 3, y: 3)
+                                                       .opacity(0.45)
+                        
+                        
+                        
+//   ***********************************************
+                        
                         Image(systemName: "circle.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 375, height: 375)
+                            .frame(width: 425, height: 425)
                             .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                             .opacity(0.5)
                         VStack {
@@ -65,35 +81,20 @@ struct FH9: View {
                                 .frame(height: 30)
                             
                             Text("Build & customize")
-                                .font(.system(size: 22))
+                                .font(.system(size: 30))
                                 .foregroundColor(ColorManager .grey1)
-                                .fontWeight(.thin)
+                                .fontWeight(.regular)
                                 .multilineTextAlignment(.center)
+                                .opacity(0.5)
                             
                             Text("your chat rooms")
-                                .font(.system(size: 22))
+                                .font(.system(size: 30))
                                 .foregroundColor(ColorManager .grey1)
-                                .fontWeight(.thin)
+                                .fontWeight(.regular)
                                 .multilineTextAlignment(.center)
+                                .opacity(0.5)
                             
                          
-                            
-                            NavigationLink(destination:InfoInsideChat(user: user),
-                                label: {
-                                    Text("Create Chat Rooms")
-                                        .fontWeight(.regular)
-                                        .frame(width: 150, height: 33)
-                                        .foregroundColor(Color.white)
-                                        .font(.system(size: 13))
-                                        .background(Color.orange)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                    
-                                })
-                            
-                            
-                            
-                            
                             
                             Spacer()
                                 .frame(height: 20)
@@ -108,22 +109,22 @@ struct FH9: View {
                                 .frame(height: 30)
                            
                                
-                          
-                            NavigationLink(
-                                destination: FH8(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                label: {
-                                    Text("->")
-                                        .fontWeight(.thin)
-                                        .foregroundColor(Color.white)
-                                        .frame(width: 40, height: 40)
-                                        .font(.system(size: 30))
-                                        .background(ColorManager .grey2)
-                                        .opacity(0.95)
-                                        .cornerRadius(5)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                }
-                                
-                            )}
+//                          
+//                            NavigationLink(
+//                                destination: FH8(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                                label: {
+//                                    Text("->")
+//                                        .fontWeight(.thin)
+//                                        .foregroundColor(Color.white)
+//                                        .frame(width: 40, height: 40)
+//                                        .font(.system(size: 30))
+//                                        .background(ColorManager .grey2)
+//                                        .opacity(0.95)
+//                                        .cornerRadius(5)
+//                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                }
+//                                
+//                            )}
                             
                             
                             

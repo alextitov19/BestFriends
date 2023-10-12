@@ -169,16 +169,16 @@ HStack {
 //       ******************  Invite Friends ******************************
         
         HStack {
-            Text("SetUp")
+            Text("How to...")
                 .fontWeight(.medium)
-                .font(.system(size: 80))
+                .font(.system(size: 70))
                 .foregroundColor(.white)
                 .glow(color: ColorManager.purple4, radius: 3)
                 .opacity(0.15)
             
             
             Spacer()
-                .frame(width: 90)
+                .frame(width: 50)
           
             NavigationLink(destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
@@ -237,24 +237,24 @@ HStack {
             
             ZStack {
                 
-                
                 Image("comicBubble")
                     .resizable()
                     .foregroundColor(Color.purple)
-                    .frame(width: 190, height: 150)
-                    .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
-                    .opacity(0.5)
+                    .frame(width: 250, height: 225)
+                    .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+                    .rotationEffect(.degrees(-10))
+                    .opacity(0.95)
                 
                 VStack {
                     
                     Text("Invite")
-                        .font(.system(size: 17))
+                        .font(.system(size: 21))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
 
                     Text("Friends")
-                        .font(.system(size: 17))
+                        .font(.system(size: 21))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
@@ -268,16 +268,33 @@ HStack {
      
         
         HStack {
-
-                Image("")
+            ZStack {
+                
+                Image(systemName: "circle")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 70, height: 70)
-                    .opacity(0.9)
-//                    .blinking(duration: 2.0)
-            
-            Spacer()
-                .frame(width: 40)
+                    .frame(width: 65, height: 65)
+                    .foregroundColor(Color .green)
+                    .glow(color: ColorManager.purple4, radius: 3)
+                    .blinking(duration: 2.0)
+                
+                NavigationLink( destination: FH9(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                label: {
+                    Text("tap")
+                        .foregroundColor(Color.white)
+                        .frame(width: 40, height: 40)
+                        .multilineTextAlignment(.center)
+                        .font(.system(size: 16))
+                    //                                   .padding(10)
+                        .background(Color.gray)
+                        .cornerRadius(50)
+                        .glow(color: Color.white, radius: 20)
+                        .shadow(color: Color.white, radius: 2, x: 2, y: 2)
+                        .blinking(duration: 2.0)
+                    //                                   .blinking(duration: 4.0)
+                    
+                })
+            }
 
             ZStack {
                 
@@ -285,34 +302,43 @@ HStack {
                 Image("comicBubble")
                     .resizable()
                     .foregroundColor(Color.purple)
-                    .frame(width: 430, height: 225)
+                    .frame(width: 250, height: 225)
                     .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                     .rotationEffect(.degrees(-10))
                     .opacity(0.95)
                 
                 VStack {
                     
-                    Text("Build & Access Chat Rooms")
+                    Text("Build & Access")
                         .font(.system(size: 21))
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
                         .rotationEffect(.degrees(-10))
-                        .blinking(duration: 2.0)
+//                        .blinking(duration: 2.0)
                     
-                    Text("Tap friends planet on homepg")
-                        .font(.system(size: 17))
-                        .fontWeight(.light)
+                    Text("Chat Rooms")
+                        .font(.system(size: 21))
+                        .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
                         .rotationEffect(.degrees(-10))
+//                        .blinking(duration: 2.0)
+                    
+                    
+//                    Text("Tap friends planet on homepg")
+//                        .font(.system(size: 14))
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(Color.white)
+//                        .rotationEffect(.degrees(-10))
 
-                    Text("and follow instructions in 'popup'")
-                        .font(.system(size: 17))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .rotationEffect(.degrees(-10))
-                        .foregroundColor(Color.white)
+//                    Text("and follow instructions in 'popup'")
+//                        .font(.system(size: 17))
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//                        .rotationEffect(.degrees(-10))
+//                        .foregroundColor(Color.white)
                     
                 }
             }
