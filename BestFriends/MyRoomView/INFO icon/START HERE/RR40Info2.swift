@@ -1,11 +1,9 @@
 //
-//  RR36Info.swift
+//  RR40Info2.swift
 //  BestFriends
 //
-//  Created by Robert Roe on 10/9/23.
+//  Created by Robert Roe on 10/12/23.
 //
-
-import Foundation
 
 import Foundation
 
@@ -15,7 +13,7 @@ import ConfettiSwiftUI
 import AVKit
 
 
-struct RR36Info: View {
+struct RR40Info2: View {
     
     @EnvironmentObject var sessionManager: SessionManager
  
@@ -77,7 +75,7 @@ VStack {
         
     VStack {
      
-        Text("Walk-Through")
+        Text("Cool Feature")
             .fontWeight(.medium)
             .font(.system(size: 35))
             .foregroundColor(.white)
@@ -107,7 +105,7 @@ HStack {
                     
                 
                     
-                    Text("Planets")
+                    Text("Keep Notifications 'ON'")
                         .font(.system(size: 23))
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
@@ -115,7 +113,7 @@ HStack {
                         .rotationEffect(.degrees(-10))
                         .blinking(duration: 2.0)
                     
-                    Text("You're the center planet and")
+                    Text("Celebrate with friends before")
                         .font(.system(size: 15))
                         .fontWeight(.light)
                         .multilineTextAlignment(.leading)
@@ -123,7 +121,7 @@ HStack {
                         .foregroundColor(Color.white)
                     //                                .blinking(duration: 5.0)
                     
-                    Text("your friends planet's orbit you.")
+                    Text("excitment is gone.")
                         .font(.system(size: 15))
                         .fontWeight(.light)
                         .multilineTextAlignment(.leading)
@@ -133,7 +131,7 @@ HStack {
                     Spacer()
                         .frame(height: 10)
                     
-                    Text("Everyone's planet atmosphere color")
+                    Text("Provide comfort when friends")
                         .font(.system(size: 15))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
@@ -141,7 +139,7 @@ HStack {
                         .foregroundColor(Color.white)
                 
                     
-                    Text("matches their current 'Vibe'")
+                    Text("need it.")
                         .font(.system(size: 15))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
@@ -167,7 +165,7 @@ HStack {
 }
         
  
-//       ******************  Invite Friends ******************************
+//       ******************  My Vibe ******************************
       
           
         HStack {
@@ -187,26 +185,20 @@ HStack {
                 Image(systemName: "circle")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 65, height: 65)
-                    .foregroundColor(Color .green)
-                    .glow(color: ColorManager.purple4, radius: 3)
+                    .frame(width: 90, height: 90)
+                    .foregroundColor(Color .purple)
+                    .glow(color: Color.green, radius: 3)
                     .blinking(duration: 2.0)
                 
-                NavigationLink( destination: InviteView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                NavigationLink( destination: RR32(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
-                    Text("tap")
+                    Image("iconVibes75")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 55, height: 55)
                         .foregroundColor(Color.white)
-                        .frame(width: 40, height: 40)
-                        .multilineTextAlignment(.center)
-                        .font(.system(size: 16))
-                    //                                   .padding(10)
-                        .background(Color.gray)
-                        .cornerRadius(50)
-                        .glow(color: Color.white, radius: 20)
-                        .shadow(color: Color.white, radius: 2, x: 2, y: 2)
-                        .blinking(duration: 2.0)
-                    //                                   .blinking(duration: 4.0)
-                    
+                        .glow(color: Color.white, radius: 1.5)
+                        .opacity(0.8)
                 })
             }
             
@@ -222,14 +214,14 @@ HStack {
                 
                 VStack {
                     
-                    Text("Invite")
+                    Text("My Vibe")
                         .font(.system(size: 17))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
 
-                    Text("Friends")
-                        .font(.system(size: 17))
+                    Text("Real-time")
+                        .font(.system(size: 14))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
@@ -238,89 +230,72 @@ HStack {
             }
         }
          
-//                **************  Chat Setup **************************
-
-     
+//                **************  CareHearts **************************
         
-        HStack {
+      HStack {
 
-                Image("")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 70, height: 70)
-                    .opacity(0.9)
+              Image("")
+                  .resizable()
+                  .scaledToFit()
+                  .frame(width: 70, height: 70)
+                  .opacity(0.9)
 //                    .blinking(duration: 2.0)
-            
-            Spacer()
-                .frame(width: 40)
-            
-            ZStack {
-//
-//                Image(systemName: "circle")
-//                    .resizable()
-//                    .scaledToFit()
-//                    .frame(width: 65, height: 65)
-//                    .foregroundColor(Color .green)
-//                    .glow(color: ColorManager.purple4, radius: 3)
-//                    .blinking(duration: 2.0)
-                
-//                NavigationLink( destination: InfoCreateChatRooms(user: user),
-//                                label: {
-//                    Text("SetUp Chat")
-//                        .foregroundColor(Color.white)
-//                        .frame(width: 40, height: 40)
-//                        .multilineTextAlignment(.center)
-//                        .font(.system(size: 15))
-//                        .background(Color.gray)
-//                        .cornerRadius(50)
-//                        .glow(color: Color.white, radius: 20)
-//                        .shadow(color: Color.white, radius: 2, x: 2, y: 2)
-//                        .blinking(duration: 2.0)
-//
-//                })
-            }
-            
-            ZStack {
-                
-                
-                Image("comicBubble")
-                    .resizable()
-                    .foregroundColor(Color.purple)
-                    .frame(width: 430, height: 225)
-                    .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
-                    .rotationEffect(.degrees(-10))
-                    .opacity(0.95)
-                
-                VStack {
-                    
-                    Text("Build & Access Chat Rooms")
-                        .font(.system(size: 21))
-                        .fontWeight(.regular)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
-                        .rotationEffect(.degrees(-10))
-                        .blinking(duration: 2.0)
-                    
-                    Text("Tap friends planet on homepg")
-                        .font(.system(size: 17))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
-                        .rotationEffect(.degrees(-10))
+          
+          Spacer()
+              .frame(width: 40)
+          
+          ZStack {
+              
+              Image(systemName: "circle")
+                  .resizable()
+                  .scaledToFit()
+                  .frame(width: 90, height: 90)
+                  .foregroundColor(Color .purple)
+                  .glow(color: Color.green, radius: 3)
+                  .blinking(duration: 2.0)
+              
+              NavigationLink( destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
+                              label: {
+                  Image(systemName: "cube")
+                      .resizable()
+                      .scaledToFit()
+                      .frame(width: 60, height: 60)
+                      .foregroundColor(Color.white)
+                      .glow(color: Color.cyan, radius: 3)
+                      .opacity(0.15)
+              })
+          }
+          
+          ZStack {
+              
+              
+              Image("comicBubble")
+                  .resizable()
+                  .foregroundColor(Color.purple)
+                  .frame(width: 190, height: 150)
+                  .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
+                  .opacity(0.5)
+              
+              VStack {
+                  
+                  Text("CareHearts")
+                      .font(.system(size: 17))
+                      .fontWeight(.light)
+                      .multilineTextAlignment(.center)
+                      .foregroundColor(Color.white)
 
-                    Text("and follow instructions in 'popup'")
-                        .font(.system(size: 17))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .rotationEffect(.degrees(-10))
-                        .foregroundColor(Color.white)
-                    
-                }
-            }
-        }
-     
+                  Text("sharing emotions")
+                      .font(.system(size: 14))
+                      .fontWeight(.light)
+                      .multilineTextAlignment(.center)
+                      .foregroundColor(Color.white)
+                  
+              }
+          }
+      }
+
            
-//                ************ Chat Setup ***********************************
+//                ************ PhotoPOP ***********************************
 
         
     HStack {
@@ -330,24 +305,21 @@ HStack {
             Image(systemName: "circle")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 65, height: 65)
+                .frame(width: 90, height: 90)
                 .foregroundColor(Color .purple)
-                .glow(color: ColorManager.purple4, radius: 3)
+                .glow(color: Color.green, radius: 3)
                 .blinking(duration: 2.0)
             
-            NavigationLink(destination: BuiltByTeensView(user: user, friends: friends),
+            NavigationLink(destination: PhotoPopView(user: user, friends: friends),
                            label: {
-                Text("tap")
-                    .foregroundColor(Color.white)
-                    .frame(width: 40, height: 40)
-                    .multilineTextAlignment(.center)
-                    .font(.system(size: 16))
-                //                                   .padding(10)
-                    .background(Color.gray)
-                    .cornerRadius(50)
-                    .glow(color: Color.white, radius: 20)
-                    .shadow(color: Color.white, radius: 2, x: 2, y: 2)
-                    .blinking(duration: 2.0)
+                Image("IconPhotoNew")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 60, height: 60)
+                    .rotationEffect(.degrees(-7))
+                    .foregroundColor(ColorManager .purple5)
+                    .glow(color: Color.purple, radius: 2)
+                    .opacity(0.9)
             })
         }
         
@@ -357,20 +329,20 @@ HStack {
             Image("comicBubble")
                 .resizable()
                 .foregroundColor(Color.purple)
-                .frame(width: 170, height: 120)
+                .frame(width: 190, height: 150)
                 .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
                 .opacity(0.5)
             
             VStack {
                 
-                Text("Our")
+                Text("PhotoPOP")
                     .font(.system(size: 17))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
                 
-                Text("Story")
-                    .font(.system(size: 17))
+                Text("'shake' iPhone")
+                    .font(.system(size: 14))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
@@ -391,34 +363,19 @@ HStack {
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
                     })
-            }
-       
-            
-            
-            
-        
-   
-        
-      
-//                ************************************************
-                        VStack {
-                            
-            
-                                Spacer()
-                                    .frame(height: 40)
+                }
+
+        VStack {
                                 
+            Spacer()
+                .frame(height: 40)
           
                             }
                         }
-    
-                 
-                        
                     }
-                    
                 }
-                
             }
-//        }
+
    
         
         func shareButtonTapped() {
@@ -504,3 +461,4 @@ HStack {
     }
     
     
+

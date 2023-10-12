@@ -51,6 +51,12 @@ struct FH2: View {
  
 
             VStack {
+                
+                Text("Non-toxic")
+                    .fontWeight(.medium)
+                    .font(.system(size: 35))
+                    .foregroundColor(.white)
+                    .opacity(0.7)
 
                 HStack {
                     Text("")

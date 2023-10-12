@@ -52,6 +52,12 @@ struct FH6: View {
                 
                 ZStack {
                     
+                    Text("Your Safe & Sound")
+                        .fontWeight(.medium)
+                        .font(.system(size: 35))
+                        .foregroundColor(.white)
+                        .opacity(0.7)
+                    
                     Spacer()
                         .frame(height: 70)
                     
@@ -124,7 +130,7 @@ struct FH6: View {
                         
                         
                         NavigationLink(
-                            destination: FH8(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                            destination: RR40Info2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
                                 Text("->")
                                     .fontWeight(.thin)

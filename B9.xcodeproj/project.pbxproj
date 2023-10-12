@@ -384,6 +384,8 @@
 		D0F5AB1B2840519700053F17 /* HorizonRocketColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */; };
 		D12CE2C12AD342D600AEB105 /* RR35Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12CE2C02AD342D600AEB105 /* RR35Fight.swift */; };
 		D12CE2C52AD415C400AEB105 /* RR36Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12CE2C42AD415C400AEB105 /* RR36Info.swift */; };
+		D12CE2C72AD845AE00AEB105 /* RR40WalkThrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12CE2C62AD845AE00AEB105 /* RR40WalkThrough.swift */; };
+		D12CE2C92AD8469400AEB105 /* RR40Info2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12CE2C82AD8469400AEB105 /* RR40Info2.swift */; };
 		D1BD9FD22AC850EC00196448 /* RR31.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BD9FD12AC850EC00196448 /* RR31.swift */; };
 		D1BD9FD42ACBB4E100196448 /* RR32.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BD9FD32ACBB4E100196448 /* RR32.swift */; };
 		D1FB49032AD16AEC007C40AB /* RR33Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FB49022AD16AEC007C40AB /* RR33Fight.swift */; };
@@ -795,6 +797,8 @@
 		D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonRocketColorPicker.swift; sourceTree = "<group>"; };
 		D12CE2C02AD342D600AEB105 /* RR35Fight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR35Fight.swift; sourceTree = "<group>"; };
 		D12CE2C42AD415C400AEB105 /* RR36Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR36Info.swift; sourceTree = "<group>"; };
+		D12CE2C62AD845AE00AEB105 /* RR40WalkThrough.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR40WalkThrough.swift; sourceTree = "<group>"; };
+		D12CE2C82AD8469400AEB105 /* RR40Info2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR40Info2.swift; sourceTree = "<group>"; };
 		D1BD9FD12AC850EC00196448 /* RR31.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR31.swift; sourceTree = "<group>"; };
 		D1BD9FD32ACBB4E100196448 /* RR32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR32.swift; sourceTree = "<group>"; };
 		D1FB49022AD16AEC007C40AB /* RR33Fight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR33Fight.swift; sourceTree = "<group>"; };
@@ -1162,7 +1166,6 @@
 				CF3B42F1293715A800EE1D84 /* SaySomethingNice4.swift */,
 				CF725E2628516E180096342F /* Tokens */,
 				CFD8BD1229156D2A00F86EFB /* PlanetView */,
-				D12CE2C22AD4154900AEB105 /* Info (i) */,
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
 				7AC4C01D27FF49F9000C4140 /* Chat */,
@@ -1591,17 +1594,21 @@
 		CF6C5B092A86092200EC4915 /* START HERE */ = {
 			isa = PBXGroup;
 			children = (
+				D12CE2C22AD4154900AEB105 /* Info (i) */,
+				D12CE2C42AD415C400AEB105 /* RR36Info.swift */,
 				2DFB03072A57221600669948 /* FH2.swift */,
 				2DFB030F2A57226200669948 /* FH6.swift */,
-				2DBF3EEA2A61AD0900CB1CAD /* RR6.swift */,
-				2DFB03152A57228400669948 /* FH9.swift */,
+				D12CE2C82AD8469400AEB105 /* RR40Info2.swift */,
+				2DFB03092A57222300669948 /* FH3.swift */,
 				2DFB03132A57227900669948 /* FH8.swift */,
 				2DFB03112A57226E00669948 /* FH7.swift */,
-				2DFB03092A57222300669948 /* FH3.swift */,
 				2DFB030D2A57223E00669948 /* FH5.swift */,
+				2DBF3EEA2A61AD0900CB1CAD /* RR6.swift */,
+				2DFB03152A57228400669948 /* FH9.swift */,
 				2DBF3EEC2A61AD1200CB1CAD /* RR7.swift */,
 				2DBF3EE02A61ACD400CB1CAD /* RR1.swift */,
 				2DFB030B2A57223100669948 /* FH4.swift */,
+				D12CE2C62AD845AE00AEB105 /* RR40WalkThrough.swift */,
 			);
 			name = "START HERE";
 			path = "INFO icon/START HERE";
@@ -2058,7 +2065,6 @@
 		D12CE2C22AD4154900AEB105 /* Info (i) */ = {
 			isa = PBXGroup;
 			children = (
-				D12CE2C42AD415C400AEB105 /* RR36Info.swift */,
 			);
 			path = "Info (i)";
 			sourceTree = "<group>";
@@ -2396,6 +2402,7 @@
 				CFAB5422281FC8B800BBF502 /* TextingNote.swift in Sources */,
 				2D7127BF2A658BBA00E14744 /* CH13.swift in Sources */,
 				CF9E33C8284530CF00107433 /* FG_GettingStarted.swift in Sources */,
+				D12CE2C92AD8469400AEB105 /* RR40Info2.swift in Sources */,
 				CF1ECAC3287143E900D999F8 /* FightInviteFriend.swift in Sources */,
 				2DFB03102A57226200669948 /* FH6.swift in Sources */,
 				CFC0ACC228EFE26400B49831 /* ChatInfo2.swift in Sources */,
@@ -2592,6 +2599,7 @@
 				CFD6C05F29416A3B00D57E0B /* HideMyRoomLink.swift in Sources */,
 				D0F5AB1B2840519700053F17 /* HorizonRocketColorPicker.swift in Sources */,
 				CF650422289EF8820092EEB9 /* PurpleNoAdInfoView.swift in Sources */,
+				D12CE2C72AD845AE00AEB105 /* RR40WalkThrough.swift in Sources */,
 				2DFB03272A5D30A200669948 /* CH7.swift in Sources */,
 				7A380F1628271E3E007151AB /* AppDelegate.swift in Sources */,
 				2DBF3EEF2A61AD1C00CB1CAD /* RR8.swift in Sources */,
