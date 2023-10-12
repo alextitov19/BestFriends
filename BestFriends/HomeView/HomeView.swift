@@ -179,7 +179,7 @@ struct HomeView: View {
                                 .scaledToFit()
                                 .frame(width: 440, height: 410)
                                 .foregroundColor(Color.white)
-                                .opacity(0.02)
+                                .opacity(0.010)
                                 .rotationEffect(.degrees(-20))
                                 .glow(color: Color.white, radius: 75)
                                 .shadow(color: Color.white, radius: 10, x: 0, y: 10)
@@ -189,15 +189,15 @@ struct HomeView: View {
                                 
 
                                 
-                                Text("my friendships")
-                                    .font(.system(size: 35))
+                                Text("friendships")
+                                    .font(.system(size: 70))
                                     .foregroundColor(Color.white)
-                                    .fontWeight(.light)
-                                    .opacity(0.3)
+                                    .fontWeight(.bold)
+                                    .opacity(0.15)
                                     .multilineTextAlignment(.center)
                                     .rotationEffect(.degrees(-20))
                                     .glow(color: Color.white, radius: 75)
-                                    .shadow(color: Color.white, radius: 5, x: 5, y: 5)
+                                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
                                     .blinking(duration: 4.0)
                                 
                                 
@@ -418,13 +418,16 @@ struct HomeView: View {
                                 
                                 Image("iconChat5")
                                     .opacity(0.8)
+                                    .frame(width: 120, height: 120)
+                                
+//
+//                                    Text("Create / Access")
+//                                        .fontWeight(.medium)
+//                                        .font(.system(size: 30))
+//                                        .foregroundColor(.white)
+//                                        .opacity(0.3)
                                 
                                 
-                                    Text("Create / Access")
-                                        .fontWeight(.medium)
-                                        .font(.system(size: 30))
-                                        .foregroundColor(.white)
-                                        .opacity(0.2)
                                     
 //                                    Text("\nCREATING One-on-one Chat Rooms...Tap friend's planet, then this 'popup' to name room \n\nACCESSING one-on-one Chat Rooms...Tap friend's planet, then this 'popup' to enter \n\n\n\nCREATING Mulit-friend Chat Rooms...Tap ALL friend's planets one-at-a-time, then this 'popup' to name \n\nACCESSING Multi-friend Chat Rooms...Tap ALL friends, then this 'popup' to enter")
 //                                        .fontWeight(.medium)
