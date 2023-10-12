@@ -48,15 +48,11 @@ struct FH6: View {
             
             
             VStack {
-                
+           
                 
                 ZStack {
                     
-                    Text("Your Safe & Sound")
-                        .fontWeight(.medium)
-                        .font(.system(size: 35))
-                        .foregroundColor(.white)
-                        .opacity(0.7)
+             
                     
                     Spacer()
                         .frame(height: 70)
@@ -93,6 +89,14 @@ struct FH6: View {
                         
                         Spacer()
                             .frame(height: 30)
+                        
+                        
+                        Text("You're Safe & Sound")
+                            .fontWeight(.medium)
+                            .font(.system(size: 50))
+                            .foregroundColor(.white)
+                            .glow(color: ColorManager.purple4, radius: 3)
+                            .opacity(0.15)
                         
                         Text("No FOMO")
                             .font(.system(size: 20))
