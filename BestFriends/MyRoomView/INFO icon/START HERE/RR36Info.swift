@@ -241,7 +241,7 @@ HStack {
                 Image("comicBubble")
                     .resizable()
                     .foregroundColor(Color.purple)
-                    .frame(width: 160, height: 110)
+                    .frame(width: 190, height: 150)
                     .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
                     .opacity(0.5)
                 
