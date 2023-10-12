@@ -51,53 +51,14 @@ struct FH2: View {
  
 
             VStack {
-                
-                Text("Non-toxic")
-                    .fontWeight(.medium)
-                    .font(.system(size: 35))
-                    .foregroundColor(.white)
-                    .opacity(0.7)
 
-                HStack {
-                    Text("")
-                        .font(.system(size: 20))
-                        .fontWeight(.regular)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
-                        .blinking(duration: 2.0)
+                Text("Now You Can")
+                    .fontWeight(.medium)
+                    .font(.system(size: 60))
+                    .foregroundColor(.white)
+                    .glow(color: ColorManager.purple4, radius: 3)
+                    .opacity(0.15)
                 
-                    Spacer()
-                        .frame(width: 100)
-                    
-                    ZStack {
-              
-                            Image("comicBubble")
-                                .resizable()
-                                .foregroundColor(Color.cyan)
-                                .frame(width: 350, height: 140)
-                                .shadow(color: Color.cyan, radius: 3, x: 3, y: 3)
-                                .opacity(0.5)
-                                    .blinking(duration: 2.0)
-                            
-                        VStack {
-                            
-                            Text("in a safe,")
-                                .font(.system(size: 20))
-                                .fontWeight(.regular)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .blinking(duration: 2.0)
-                            
-                            Text("non-toxic environment")
-                                .font(.system(size: 20))
-                                .fontWeight(.regular)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .blinking(duration: 2.0)
-                        }
-                    }
-                }
-             
                 ZStack {
  
                     
@@ -116,23 +77,22 @@ struct FH2: View {
                             .frame(height: 20)
                         
                         Text("Let the outside of you")
-                            .font(.system(size: 22))
+                            .font(.system(size: 27))
                             .foregroundColor(Color.white)
-                            .fontWeight(.thin)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
                         Text("match the inside of you")
-                            .font(.system(size: 22))
+                            .font(.system(size: 27))
                             .foregroundColor(Color.white)
-                            .fontWeight(.thin)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Text("on a private friend network")
-                            .font(.system(size: 22))
+                        Text("on a social network")
+                            .font(.system(size: 27))
                             .foregroundColor(Color.white)
-                            .fontWeight(.thin)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                    
                         
                         
                         Spacer()

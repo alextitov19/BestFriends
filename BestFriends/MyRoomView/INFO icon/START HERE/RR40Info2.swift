@@ -75,12 +75,7 @@ VStack {
         
     VStack {
      
-        Text("Cool Feature")
-            .fontWeight(.medium)
-            .font(.system(size: 35))
-            .foregroundColor(.white)
-            .opacity(0.7)
-                        
+   
 HStack {
                     
     ZStack {
@@ -167,7 +162,13 @@ HStack {
  
 //       ******************  My Vibe ******************************
       
-          
+        Text("Features")
+            .fontWeight(.medium)
+            .font(.system(size: 70))
+            .foregroundColor(.white)
+            .glow(color: ColorManager.purple4, radius: 3)
+            .opacity(0.15)
+        
         HStack {
 
                 Image("")
@@ -298,73 +299,88 @@ HStack {
 //                ************ PhotoPOP ***********************************
 
         
-    HStack {
-
-        ZStack {
+        HStack {
             
-            Image(systemName: "circle")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 90, height: 90)
-                .foregroundColor(Color .purple)
-                .glow(color: Color.green, radius: 3)
-                .blinking(duration: 2.0)
-            
-            NavigationLink(destination: PhotoPopView(user: user, friends: friends),
-                           label: {
-                Image("IconPhotoNew")
+            ZStack {
+                
+                Image(systemName: "circle")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 60, height: 60)
-                    .rotationEffect(.degrees(-7))
-                    .foregroundColor(ColorManager .purple5)
-                    .glow(color: Color.purple, radius: 2)
-                    .opacity(0.9)
-            })
-        }
-        
-        ZStack {
+                    .frame(width: 90, height: 90)
+                    .foregroundColor(Color .purple)
+                    .glow(color: Color.green, radius: 3)
+                    .blinking(duration: 2.0)
+                
+                NavigationLink(destination: PhotoPopView(user: user, friends: friends),
+                               label: {
+                    Image("IconPhotoNew")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60, height: 60)
+                        .rotationEffect(.degrees(-7))
+                        .foregroundColor(ColorManager .purple5)
+                        .glow(color: Color.purple, radius: 2)
+                        .opacity(0.9)
+                })
+            }
             
-            
-            Image("comicBubble")
-                .resizable()
-                .foregroundColor(Color.purple)
-                .frame(width: 190, height: 150)
-                .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
-                .opacity(0.5)
+            ZStack {
+                
+                
+                Image("comicBubble")
+                    .resizable()
+                    .foregroundColor(Color.purple)
+                    .frame(width: 190, height: 150)
+                    .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
+                    .opacity(0.5)
+                
+                VStack {
+                    
+                    Text("PhotoPOP")
+                        .font(.system(size: 17))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+                    
+                    Text("'shake' iPhone")
+                        .font(.system(size: 14))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+                }
+            }
             
             VStack {
                 
-                Text("PhotoPOP")
-                    .font(.system(size: 17))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-                
-                Text("'shake' iPhone")
-                    .font(.system(size: 14))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
+                Button(action: {
+                    sessionManager.showLogin()
+                },
+                       label: {
+                    Image("home-alt2")
+                        .frame(width: 60, height: 30)
+                        .foregroundColor(.black)
+                        .font(.system(size: 20))
+                        .background(ColorManager .grey3)
+                        .cornerRadius(15)
+                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                        .opacity(0.70)
+                    
+                })
+                //        NavigationLink(destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                //                                   label: {
+                //                        Text("->")
+                //                            .fontWeight(.thin)
+                //                            .foregroundColor(Color.white)
+                //                            .frame(width: 40, height: 40)
+                //                            .font(.system(size: 30))
+                //                            .background(ColorManager .grey2)
+                //                            .opacity(0.95)
+                //                            .cornerRadius(5)
+                //                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                //
+                //                    })
             }
         }
-                   
-        
-        NavigationLink(destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                   label: {
-                        Text("->")
-                            .fontWeight(.thin)
-                            .foregroundColor(Color.white)
-                            .frame(width: 40, height: 40)
-                            .font(.system(size: 30))
-                            .background(ColorManager .grey2)
-                            .opacity(0.95)
-                            .cornerRadius(5)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
-                    })
-                }
-
         VStack {
                                 
             Spacer()

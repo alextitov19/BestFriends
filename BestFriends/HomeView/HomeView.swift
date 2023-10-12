@@ -395,10 +395,10 @@ struct HomeView: View {
                                 Image(systemName: "info.circle")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 50, height: 50)
+                                    .frame(width: 120, height: 120)
                                     .opacity(0.9)
                                     .foregroundColor(.white)
-                                    .opacity(0.9)
+                                    .opacity(0.35)
                                     .blinking(duration: 2.0)
                             })
                        

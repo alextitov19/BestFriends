@@ -52,7 +52,7 @@ struct FH6: View {
                 
                 ZStack {
                     
-             
+                    
                     
                     Spacer()
                         .frame(height: 70)
@@ -70,8 +70,8 @@ struct FH6: View {
                         Spacer()
                             .frame(height: 40)
                         
-                   
-                       
+                        
+                        
                         Spacer()
                             .frame(height: 10)
                         
@@ -88,44 +88,56 @@ struct FH6: View {
                             .multilineTextAlignment(.center)
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 15)
                         
-                        
-                        Text("You're Safe & Sound")
-                            .fontWeight(.medium)
-                            .font(.system(size: 50))
-                            .foregroundColor(.white)
-                            .glow(color: ColorManager.purple4, radius: 3)
-                            .opacity(0.15)
-                        
-                        Text("No FOMO")
-                            .font(.system(size: 20))
-                            .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
-                        Spacer()
-                            .frame(height: 30)
-                        
-                        Text("No comparisons")
-                            .font(.system(size: 20))
-                            .foregroundColor(ColorManager.grey1)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
-                        Spacer()
-                            .frame(height: 20)
-                        
-//
-//                        Text("(No 'likes' / 'comments'")
-//                            .font(.system(size: 20))
-//                            .foregroundColor(ColorManager.grey1)
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-                   
+                        VStack {
+                            
+                            
+                            Text("You're")
+                                .fontWeight(.medium)
+                                .font(.system(size: 50))
+                                .foregroundColor(.white)
+                                .glow(color: ColorManager.purple4, radius: 3)
+                                .opacity(0.15)
+                            
+                            Text("Safe & Sound")
+                                .fontWeight(.medium)
+                                .font(.system(size: 50))
+                                .foregroundColor(.white)
+                                .glow(color: ColorManager.purple4, radius: 3)
+                                .opacity(0.15)
+                            
+                            Spacer()
+                                .frame(height: 15)
+                            
+                            Text("No FOMO")
+                                .font(.system(size: 20))
+                                .foregroundColor(ColorManager.grey1)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+                            Spacer()
+                                .frame(height: 20)
+                            
+                            Text("No comparisons")
+                                .font(.system(size: 20))
+                                .foregroundColor(ColorManager.grey1)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+                            Spacer()
+                                .frame(height: 20)
+                            
+                            //
+                            //                        Text("(No 'likes' / 'comments'")
+                            //                            .font(.system(size: 20))
+                            //                            .foregroundColor(ColorManager.grey1)
+                            //                            .fontWeight(.light)
+                            //                            .multilineTextAlignment(.center)
+                            
+                        }
                     }
                 }
-                
                     VStack {
                         
                         Spacer()
