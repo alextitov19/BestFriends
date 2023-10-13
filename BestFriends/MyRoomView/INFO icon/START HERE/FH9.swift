@@ -70,7 +70,7 @@ struct FH9: View {
                             .opacity(0.25)
                         
                         VStack {
-                            Text("\nCREATING One-on-one Chat Rooms...Tap friend's planet, then this 'popup' to name room \n\nACCESSING one-on-one Chat Rooms...Tap friend's planet, then this 'popup' to enter")
+                            Text("\nCREATING One-on-one Chat Rooms...Tap friend's planet, then ChatBubble 'popup' to name room \n\nACCESSING one-on-one Chat Rooms...Tap friend's planet, then this 'popup' to enter")
                                 .fontWeight(.medium)
                                 .font(.system(size: 14))
                                 .frame(width: 340, height: 265)
@@ -80,7 +80,7 @@ struct FH9: View {
                             
                         
                        
-                            Text("CREATING Mulit-friend Chat Rooms...Tap ALL friend's planets one-at-a-time, then this 'popup' to name room (exit homepg / return to activate) \n\nACCESSING Multi-friend Chat Rooms...Use pullup Chat bubble at bottom of page")
+                            Text("CREATING Mulit-friend Chat Rooms...Tap ALL friend's planets one-at-a-time, then ChatBubble 'popup' to name room (exit homepg / return to activate) \n\nACCESSING Multi-friend Chat Rooms...Use pullup Chat bubble at bottom of page")
                                 .fontWeight(.medium)
                                 .font(.system(size: 14))
                                 .frame(width: 340, height: 265)

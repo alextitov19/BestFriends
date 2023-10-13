@@ -212,8 +212,8 @@ HStack {
                 Image(systemName: "circle")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 65, height: 65)
-                    .foregroundColor(Color .green)
+                    .frame(width: 75, height: 75)
+                    .foregroundColor(Color .purple)
                     .glow(color: ColorManager.purple4, radius: 3)
 //                    .blinking(duration: 2.0)
                 
@@ -221,7 +221,7 @@ HStack {
                                 label: {
                     Text("tap")
                         .foregroundColor(Color.white)
-                        .frame(width: 40, height: 40)
+                        .frame(width: 60, height: 60)
                         .multilineTextAlignment(.center)
                         .font(.system(size: 16))
                     //                                   .padding(10)
@@ -273,8 +273,8 @@ HStack {
                 Image(systemName: "circle")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 65, height: 65)
-                    .foregroundColor(Color .green)
+                    .frame(width: 75, height: 75)
+                    .foregroundColor(Color .purple)
                     .glow(color: ColorManager.purple4, radius: 3)
 //                    .blinking(duration: 2.0)
                 
@@ -282,7 +282,7 @@ HStack {
                                 label: {
                     Text("tap")
                         .foregroundColor(Color.white)
-                        .frame(width: 40, height: 40)
+                        .frame(width: 60, height: 60)
                         .multilineTextAlignment(.center)
                         .font(.system(size: 16))
                     //                                   .padding(10)

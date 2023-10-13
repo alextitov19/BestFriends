@@ -183,12 +183,12 @@ HStack {
             
             ZStack {
                 
-                Image(systemName: "circle")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 90, height: 90)
-                    .foregroundColor(Color .purple)
-                    .glow(color: Color.green, radius: 3)
+//                Image(systemName: "circle")
+//                    .resizable()
+//                    .scaledToFit()
+//                    .frame(width: 90, height: 90)
+//                    .foregroundColor(Color .purple)
+//                    .glow(color: Color.green, radius: 3)
 //                    .blinking(duration: 2.0)
                 
                 NavigationLink( destination: RR32(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
@@ -196,7 +196,7 @@ HStack {
                     Image("iconVibes75")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 55, height: 55)
+                        .frame(width: 75, height: 75)
                         .foregroundColor(Color.white)
                         .glow(color: Color.white, radius: 1.5)
                         .opacity(0.8)
@@ -247,12 +247,12 @@ HStack {
           
           ZStack {
               
-              Image(systemName: "circle")
-                  .resizable()
-                  .scaledToFit()
-                  .frame(width: 90, height: 90)
-                  .foregroundColor(Color .purple)
-                  .glow(color: Color.green, radius: 3)
+//              Image(systemName: "circle")
+//                  .resizable()
+//                  .scaledToFit()
+//                  .frame(width: 90, height: 90)
+//                  .foregroundColor(Color .purple)
+//                  .glow(color: Color.green, radius: 3)
 //                  .blinking(duration: 2.0)
               
               NavigationLink( destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
@@ -260,7 +260,7 @@ HStack {
                   Image(systemName: "cube")
                       .resizable()
                       .scaledToFit()
-                      .frame(width: 60, height: 60)
+                      .frame(width: 75, height: 75)
                       .foregroundColor(Color.white)
                       .glow(color: Color.cyan, radius: 3)
                       .opacity(0.15)
@@ -303,12 +303,12 @@ HStack {
             
             ZStack {
                 
-                Image(systemName: "circle")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 90, height: 90)
-                    .foregroundColor(Color .purple)
-                    .glow(color: Color.green, radius: 3)
+//                Image(systemName: "circle")
+//                    .resizable()
+//                    .scaledToFit()
+//                    .frame(width: 90, height: 90)
+//                    .foregroundColor(Color .purple)
+//                    .glow(color: Color.green, radius: 3)
 //                    .blinking(duration: 2.0)
                 
                 NavigationLink(destination: PhotoPopView(user: user, friends: friends),
@@ -316,7 +316,7 @@ HStack {
                     Image("IconPhotoNew")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 60, height: 60)
+                        .frame(width: 75, height: 75)
                         .rotationEffect(.degrees(-7))
                         .foregroundColor(ColorManager .purple5)
                         .glow(color: Color.purple, radius: 2)
