@@ -299,7 +299,7 @@ struct FriendPlanetsView: View {
                         .frame(width: 45, height: 45)
                         .foregroundColor(Color .green)
                         .glow(color: ColorManager.purple4, radius: 2)
-                        .blinking(duration: 2.0)
+//                        .blinking(duration: 2.0)
                     
                     
                     Image(systemName: "plus")
@@ -307,9 +307,8 @@ struct FriendPlanetsView: View {
                     
                         .foregroundColor(.white)
                         .frame(width: 25, height: 25)
-                    
                         .scaledToFit()
-                        .blinking(duration: 2.0)
+//                        .blinking(duration: 2.0)
                 }
                 
 //                Text("add")

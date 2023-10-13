@@ -89,7 +89,15 @@ struct ChatGroupsView: View {
 //                                .blinking(duration: 2.0)
                         
                     }
-                            
+                           
+                        Text("Multi-friends chat room access")
+                            .font(.system(size: 25))
+                            .foregroundColor(Color.white)
+                            .fontWeight(.light)
+                            .opacity(0.4)
+                            .multilineTextAlignment(.center)
+                        
+                        
                             NavigationLink(
                                 destination: InfoCreateChatRooms(user: user),
                                 label: {

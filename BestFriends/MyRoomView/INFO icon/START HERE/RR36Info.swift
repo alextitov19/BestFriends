@@ -203,7 +203,7 @@ VStack {
                     .foregroundColor(Color.purple)
                     .frame(width: 250, height: 110)
                     .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
-                    .rotationEffect(.degrees(-10))
+//                    .rotationEffect(.degrees(-10))
                     .opacity(0.95)
                 
                 VStack {
@@ -214,21 +214,21 @@ VStack {
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
-                        .rotationEffect(.degrees(-10))
+//                        .rotationEffect(.degrees(-10))
                     
                     Text("Invite Friends")
                         .font(.system(size: 21))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
-                        .rotationEffect(.degrees(-10))
+//                        .rotationEffect(.degrees(-10))
 
                     Text("")
                         .font(.system(size: 21))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
-                        .rotationEffect(.degrees(-10))
+//                        .rotationEffect(.degrees(-10))
              
                     
                 }
@@ -276,7 +276,7 @@ VStack {
                     .foregroundColor(Color.purple)
                     .frame(width: 250, height: 170)
                     .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
-                    .rotationEffect(.degrees(-10))
+//                    .rotationEffect(.degrees(-10))
                     .opacity(0.95)
                 
                 VStack {
@@ -286,7 +286,7 @@ VStack {
                         .italic()
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                        .rotationEffect(.degrees(-10))
+//                        .rotationEffect(.degrees(-10))
                         .foregroundColor(Color.white)
                     
                     Text("Build & Access")
@@ -294,7 +294,7 @@ VStack {
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
-                        .rotationEffect(.degrees(-10))
+//                        .rotationEffect(.degrees(-10))
 //                        .blinking(duration: 2.0)
                     
                     Text("Chat Rooms")
@@ -302,7 +302,7 @@ VStack {
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
-                        .rotationEffect(.degrees(-10))
+//                        .rotationEffect(.degrees(-10))
 //                        .blinking(duration: 2.0)
                     
                     Text("")

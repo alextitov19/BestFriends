@@ -91,7 +91,7 @@ struct HomeView: View {
                          .foregroundColor(Color.white)
                          .glow(color: Color.cyan, radius: 3)
                          .opacity(0.15)
-                        .blinking(duration: 4.0)
+//                        .blinking(duration: 4.0)
                      
                      
                  }
@@ -113,6 +113,7 @@ struct HomeView: View {
                         .frame(width: 80, height: 80)
                         .foregroundColor(Color.white)
                         .glow(color: Color.white, radius: 1.5)
+                        .blinking(duration: 4.0)
                         .opacity(0.8)
                       
                     
@@ -136,7 +137,7 @@ struct HomeView: View {
                             .foregroundColor(Color.white)
                             .glow(color: Color.cyan, radius: 3)
                             .opacity(0.15)
-                           .blinking(duration: 4.0)
+//                           .blinking(duration: 4.0)
                       
                 }
             })
@@ -158,7 +159,7 @@ struct HomeView: View {
                                         .foregroundColor(Color.white)
                                         .glow(color: Color.cyan, radius: 3)
                                         .opacity(0.155)
-                                       .blinking(duration: 4.0)
+//                                      .blinking(duration: 4.0)
                                 
                                 }
                                     
