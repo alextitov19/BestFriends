@@ -111,26 +111,33 @@ VStack {
                 .rotationEffect(.degrees(-10))
                 .opacity(0.95)
             
-            VStack {
-                
+                VStack {
+                    
+                    Text("Demo Video")
+                        .font(.system(size: 35))
+                        .fontWeight(.regular)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+                        .rotationEffect(.degrees(-10))
+      
+
+                    Text("")
+                        .font(.system(size: 21))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+                        .rotationEffect(.degrees(-10))
              
-                Text("Demo Video")
-                    .font(.system(size: 30))
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-                    .rotationEffect(.degrees(-10))
-            
+                    
+                }
             }
         }
-    }
-    
-VStack {
-
     
     
 //       ******************  How to Video ******************************
-        
+
+VStack {
+    
     HStack {
         
         

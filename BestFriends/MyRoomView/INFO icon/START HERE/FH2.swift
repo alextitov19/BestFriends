@@ -77,7 +77,7 @@ struct FH2: View {
                                 .rotationEffect(.degrees(-10))
                                 .blinking(duration: 2.0)
                             
-                            Text("No FOMO or Comparisons")
+                            Text("No FOMO / comparisons")
                                 .font(.system(size: 15))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.leading)

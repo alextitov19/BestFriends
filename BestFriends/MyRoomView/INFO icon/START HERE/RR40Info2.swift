@@ -83,41 +83,39 @@ HStack {
         //        ********************  cool guy  ***************************
         HStack {
 
-        ZStack {
-            Image("comicBubble")
-                .resizable()
-                .foregroundColor(Color.cyan)
-                .frame(width: 400, height: 120)
-                .shadow(color: Color.white, radius: 3, x: 3, y: 3)
-                .rotationEffect(.degrees(-10))
-                .opacity(0.5)
-            //                            .blinking(duration: 3.0)
-            
-     
-            VStack {
+            ZStack {
+                Image("iconBubbleCyan")
+                    .resizable()
+                    .foregroundColor(Color.cyan)
+                    .frame(width: 400, height: 120)
+                    .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+                    .rotationEffect(.degrees(-10))
+                    .opacity(0.5)
+                //                            .blinking(duration: 3.0)
+                
                 
                 VStack {
                     
-                    
-                    
-                    Text("Keep Notifications 'ON'")
-                        .font(.system(size: 23))
-                        .fontWeight(.regular)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
-                        .rotationEffect(.degrees(-10))
-//                        .blinking(duration: 2.0)
-                    
-                    Text("for best app performance")
-                        .font(.system(size: 15))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.leading)
-                        .rotationEffect(.degrees(-10))
-                        .foregroundColor(Color.white)
+                    VStack {
+                        
+                        Text("Notifications 'ON'")
+                            .font(.system(size: 17))
+                            .fontWeight(.regular)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                            .rotationEffect(.degrees(-10))
+                        
+                        Text("for real-time connections")
+                            .font(.system(size: 17))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.leading)
+                            .rotationEffect(.degrees(-10))
+                            .foregroundColor(Color.white)
+                        
                     }
                 }
             }
-        
             
             Image("")
                 .resizable()
@@ -186,20 +184,20 @@ HStack {
                 
                 VStack {
                     
-                    Text("Everyone's Vibe")
-                        .font(.system(size: 17))
+                    Text("Vibe")
+                        .font(.system(size: 25))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
                     
-                    Text("Friends planet atmosphere")
-                        .font(.system(size: 17))
+                    Text("Friend's planet atmosphere")
+                        .font(.system(size: 14))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
                     
                     Text("color matches their Vibe")
-                        .font(.system(size: 17))
+                        .font(.system(size: 14))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
@@ -255,18 +253,18 @@ HStack {
               
               Image("comicBubble")
                   .resizable()
-                  .foregroundColor(Color.purple)
-                  .frame(width: 190, height: 150)
+                  .foregroundColor(Color.cyan)
+                  .frame(width: 210, height: 150)
                   .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
                   .opacity(0.95)
               
               VStack {
                   
                   Text("CareHearts")
-                      .font(.system(size: 17))
+                      .font(.system(size: 25))
                       .fontWeight(.light)
                       .multilineTextAlignment(.center)
-                      .foregroundColor(Color.white)
+                      .foregroundColor(Color.cyan)
 
                   Text("sharing emotions")
                       .font(.system(size: 14))
@@ -320,7 +318,7 @@ HStack {
                 VStack {
                     
                     Text("PhotoPOP")
-                        .font(.system(size: 17))
+                        .font(.system(size: 25))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
