@@ -346,7 +346,7 @@ HStack {
      
            
 //                ************ Our Story ***********************************
-
+//
 //
 //    HStack {
 //
@@ -401,7 +401,7 @@ HStack {
 //                    .foregroundColor(Color.white)
 //            }
 //        }
-                   
+//                   
         
 //        NavigationLink(destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
 //                                   label: {

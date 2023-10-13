@@ -135,9 +135,30 @@ struct FH6: View {
                             //                            .fontWeight(.light)
                             //                            .multilineTextAlignment(.center)
                             
+                            VStack {
+                                
+                                
+                                Link(destination: URL(string: "https://socialtechlabs.com/our-story/")!) {
+                                    
+                                    Text("Our Story")
+                                        .fontWeight(.thin)
+                                        .frame(width: 200, height: 40)
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .font(.system(size: 25))
+                                        .background(ColorManager.pmbc_green)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                }
+                            }
+                            
                         }
                     }
                 }
+                
+                
+                
+                
+                
                 VStack {
                     
                     Spacer()
@@ -177,17 +198,73 @@ struct FH6: View {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//
+//************ Our Story ***********************************
+//
+//
+//HStack {
+//
+//ZStack {
+//
+//Image(systemName: "circle")
+//.resizable()
+//.scaledToFit()
+//.frame(width: 65, height: 65)
+//.foregroundColor(Color .purple)
+//.glow(color: ColorManager.purple4, radius: 3)
+//.blinking(duration: 2.0)
+//
+//NavigationLink(destination: BuiltByTeensView(user: user, friends: friends),
+//           label: {
+//Text("tap")
+//    .foregroundColor(Color.white)
+//    .frame(width: 40, height: 40)
+//    .multilineTextAlignment(.center)
+//    .font(.system(size: 16))
+////                                   .padding(10)
+//    .background(Color.gray)
+//    .cornerRadius(50)
+//    .glow(color: Color.white, radius: 20)
+//    .shadow(color: Color.white, radius: 2, x: 2, y: 2)
+//    .blinking(duration: 2.0)
+//})
+//}
+//
+//ZStack {
+//
+//
+//Image("comicBubble")
+//.resizable()
+//.foregroundColor(Color.purple)
+//.frame(width: 170, height: 120)
+//.shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
+//.opacity(0.5)
+//
+//VStack {
+//
+//Text("Our")
+//    .font(.system(size: 17))
+//    .fontWeight(.light)
+//    .multilineTextAlignment(.center)
+//    .foregroundColor(Color.white)
+//
+//Text("Story")
+//    .font(.system(size: 17))
+//    .fontWeight(.light)
+//    .multilineTextAlignment(.center)
+//    .foregroundColor(Color.white)
+//}
+//}
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
