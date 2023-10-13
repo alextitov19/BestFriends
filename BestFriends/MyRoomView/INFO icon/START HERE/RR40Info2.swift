@@ -189,7 +189,7 @@ HStack {
                     .frame(width: 90, height: 90)
                     .foregroundColor(Color .purple)
                     .glow(color: Color.green, radius: 3)
-                    .blinking(duration: 2.0)
+//                    .blinking(duration: 2.0)
                 
                 NavigationLink( destination: RR32(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
@@ -253,7 +253,7 @@ HStack {
                   .frame(width: 90, height: 90)
                   .foregroundColor(Color .purple)
                   .glow(color: Color.green, radius: 3)
-                  .blinking(duration: 2.0)
+//                  .blinking(duration: 2.0)
               
               NavigationLink( destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                               label: {
@@ -309,7 +309,7 @@ HStack {
                     .frame(width: 90, height: 90)
                     .foregroundColor(Color .purple)
                     .glow(color: Color.green, radius: 3)
-                    .blinking(duration: 2.0)
+//                    .blinking(duration: 2.0)
                 
                 NavigationLink(destination: PhotoPopView(user: user, friends: friends),
                                label: {

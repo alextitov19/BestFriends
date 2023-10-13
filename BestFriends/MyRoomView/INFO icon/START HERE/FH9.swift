@@ -45,7 +45,20 @@ struct FH9: View {
             
                 VStack {
 
-              
+                    
+                       NavigationLink(
+                           destination: ChangeChatBackgroundView(user: user),
+                           label: {
+                               Text("Customize \nChat Backgrounds")
+                                   .fontWeight(.light)
+                                   .frame(width: 280, height: 80)
+                                   .foregroundColor(Color.white)
+                                   .font(.system(size: 25))
+                                   .background(Color.cyan)
+                                   .cornerRadius(15)
+                                   .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                   .opacity(0.5)
+                           })
                     
                     ZStack {
                         
@@ -96,41 +109,14 @@ struct FH9: View {
                                 .foregroundColor(.white)
                                 .glow(color: ColorManager.purple4, radius: 3)
                                 .opacity(0.15)
-           
+              
                         }
                     }
                 }
-                        VStack {
-                            
-                            Spacer()
-                                .frame(height: 50)
-                           
-                               
-//
-//                            NavigationLink(
-//                                destination: FH8(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-//                                label: {
-//                                    Text("->")
-//                                        .fontWeight(.thin)
-//                                        .foregroundColor(Color.white)
-//                                        .frame(width: 40, height: 40)
-//                                        .font(.system(size: 30))
-//                                        .background(ColorManager .grey2)
-//                                        .opacity(0.95)
-//                                        .cornerRadius(5)
-//                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                                }
-//
-//                            )}
-                            
-                            
-                            
-                            
-                                Spacer()
-                                    .frame(height: 40)
 
-                        }
-                        
+                            Spacer()
+                                .frame(height: 90)
+                  
                     }
                     
                 }
