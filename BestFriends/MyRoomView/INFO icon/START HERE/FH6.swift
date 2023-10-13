@@ -48,7 +48,75 @@ struct FH6: View {
             
             
             VStack {
+               
+                ZStack {
+                    
+                    Image("comicBubble")
+                        .resizable()
+                        .foregroundColor(Color.purple)
+                        .frame(width: 430, height: 240)
+                        .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+                        .rotationEffect(.degrees(-10))
+                        .opacity(0.95)
+                    //                            .blinking(duration: 3.0)
+                    
+                    
+                    VStack {
+                        
+                        VStack {
+                            
+                            
+                            
+                            Text("Planets")
+                                .font(.system(size: 23))
+                                .fontWeight(.regular)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .rotationEffect(.degrees(-10))
+                                .blinking(duration: 2.0)
+                            
+                            Text("You're the center planet,")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.leading)
+                                .rotationEffect(.degrees(-10))
+                                .foregroundColor(Color.white)
+                            //                                .blinking(duration: 5.0)
+                            
+                            Text("friends planet's orbit you.")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.leading)
+                                .rotationEffect(.degrees(-10))
+                                .foregroundColor(Color.white)
+                            //                                .blinking(duration: 5.0)
+                            Spacer()
+                                .frame(height: 10)
+                            
+                            Text("Planet atmosphere color")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .rotationEffect(.degrees(-10))
+                                .foregroundColor(Color.white)
+                            
+                            
+                            Text("matches their 'Vibe'")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .rotationEffect(.degrees(-10))
+                                .foregroundColor(Color.white)
+                        }
+                        
+                        
+                        
+                        Spacer()
+                            .frame(width: 100)
+                        
                 
+                    }
+                }
                 
                 ZStack {
                     

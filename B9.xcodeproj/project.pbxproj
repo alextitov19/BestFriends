@@ -386,6 +386,8 @@
 		D12CE2C52AD415C400AEB105 /* RR36Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12CE2C42AD415C400AEB105 /* RR36Info.swift */; };
 		D12CE2C72AD845AE00AEB105 /* RR40WalkThrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12CE2C62AD845AE00AEB105 /* RR40WalkThrough.swift */; };
 		D12CE2C92AD8469400AEB105 /* RR40Info2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12CE2C82AD8469400AEB105 /* RR40Info2.swift */; };
+		D12CE2CC2AD9906C00AEB105 /* RRdemoVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12CE2CB2AD9906C00AEB105 /* RRdemoVideo.swift */; };
+		D12CE2CE2AD990F800AEB105 /* DemoVideo1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D12CE2CD2AD990F800AEB105 /* DemoVideo1.mp4 */; };
 		D1BD9FD22AC850EC00196448 /* RR31.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BD9FD12AC850EC00196448 /* RR31.swift */; };
 		D1BD9FD42ACBB4E100196448 /* RR32.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BD9FD32ACBB4E100196448 /* RR32.swift */; };
 		D1FB49032AD16AEC007C40AB /* RR33Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FB49022AD16AEC007C40AB /* RR33Fight.swift */; };
@@ -799,6 +801,8 @@
 		D12CE2C42AD415C400AEB105 /* RR36Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR36Info.swift; sourceTree = "<group>"; };
 		D12CE2C62AD845AE00AEB105 /* RR40WalkThrough.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR40WalkThrough.swift; sourceTree = "<group>"; };
 		D12CE2C82AD8469400AEB105 /* RR40Info2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR40Info2.swift; sourceTree = "<group>"; };
+		D12CE2CB2AD9906C00AEB105 /* RRdemoVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRdemoVideo.swift; sourceTree = "<group>"; };
+		D12CE2CD2AD990F800AEB105 /* DemoVideo1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = DemoVideo1.mp4; path = ../../../../../../../Desktop/DemoVideo1.mp4; sourceTree = "<group>"; };
 		D1BD9FD12AC850EC00196448 /* RR31.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR31.swift; sourceTree = "<group>"; };
 		D1BD9FD32ACBB4E100196448 /* RR32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR32.swift; sourceTree = "<group>"; };
 		D1FB49022AD16AEC007C40AB /* RR33Fight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR33Fight.swift; sourceTree = "<group>"; };
@@ -1493,6 +1497,7 @@
 		CF5263FC266F201000243DD7 /* Background Videos */ = {
 			isa = PBXGroup;
 			children = (
+				D12CE2CD2AD990F800AEB105 /* DemoVideo1.mp4 */,
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
 				CF1773F72A8C0D6800DF5A15 /* Fireworks2.mp4 */,
 				CF1773FB2A8D30D300DF5A15 /* background_7.mp4 */,
@@ -1598,6 +1603,7 @@
 				D12CE2C42AD415C400AEB105 /* RR36Info.swift */,
 				D12CE2C82AD8469400AEB105 /* RR40Info2.swift */,
 				2DFB03152A57228400669948 /* FH9.swift */,
+				D12CE2CB2AD9906C00AEB105 /* RRdemoVideo.swift */,
 				2DFB03072A57221600669948 /* FH2.swift */,
 				2DFB030F2A57226200669948 /* FH6.swift */,
 				2DFB03092A57222300669948 /* FH3.swift */,
@@ -2203,6 +2209,7 @@
 				CF417546296A60F700898E2D /* NisieJ9.mp4 in Resources */,
 				CF89412A2A8B483D00AFEC39 /* PhotoPOP2.mp4 in Resources */,
 				CF8941262A8B448900AFEC39 /* TreeLake2.mp4 in Resources */,
+				D12CE2CE2AD990F800AEB105 /* DemoVideo1.mp4 in Resources */,
 				CF8941242A8B43E000AFEC39 /* Notifications2.mp4 in Resources */,
 				7A383FFD267AC306002F354A /* background_4.mp4 in Resources */,
 				CF3DB37228DA6D7D00BF9CCD /* Nadiah2.m4a in Resources */,
@@ -2622,6 +2629,7 @@
 				2DFB03082A57221600669948 /* FH2.swift in Sources */,
 				7A33409429582725005C4CE1 /* NiceMessageModel.swift in Sources */,
 				7AD2642729EDCA740007ACD5 /* TestPage3.swift in Sources */,
+				D12CE2CC2AD9906C00AEB105 /* RRdemoVideo.swift in Sources */,
 				7ACF912C2767C29A00088ACA /* CustomDivider.swift in Sources */,
 				D1FB49062AD1F03E007C40AB /* RR34Fight.swift in Sources */,
 				CF387E2A2960D5B6003A85D8 /* PlanetBell.swift in Sources */,

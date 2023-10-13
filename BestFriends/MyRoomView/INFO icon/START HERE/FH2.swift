@@ -48,19 +48,69 @@ struct FH2: View {
             AdPlayerView(name: "Planet4")
                 .ignoresSafeArea()
                 .blendMode(.screen)
- 
-
+            
+            
             VStack {
-
-                Text("Now You Can")
-                    .fontWeight(.medium)
-                    .font(.system(size: 60))
-                    .foregroundColor(.white)
-                    .glow(color: ColorManager.purple4, radius: 3)
-                    .opacity(0.15)
                 
                 ZStack {
- 
+                    Image("comicBubble")
+                        .resizable()
+                        .foregroundColor(Color.purple)
+                        .frame(width: 430, height: 240)
+                        .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+                        .rotationEffect(.degrees(-10))
+                        .opacity(0.95)
+                    //                            .blinking(duration: 3.0)
+                    
+                    
+                    VStack {
+                        
+                        VStack {
+                            
+                            
+                            
+                            Text("Non-toxic")
+                                .font(.system(size: 23))
+                                .fontWeight(.regular)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .rotationEffect(.degrees(-10))
+                                .blinking(duration: 2.0)
+                            
+                            Text("No FOMO or Comparisons")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.leading)
+                                .rotationEffect(.degrees(-10))
+                                .foregroundColor(Color.white)
+                            
+                            
+                            
+                            Spacer()
+                                .frame(height: 10)
+                            
+                            Text("No feelings of not")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.leading)
+                                .rotationEffect(.degrees(-10))
+                                .foregroundColor(Color.white)
+                            
+                            Text("being good enough")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.leading)
+                                .rotationEffect(.degrees(-10))
+                                .foregroundColor(Color.white)
+                            
+                            
+                            
+                        }
+                    }
+                }
+                
+                ZStack {
+                    
                     
                     Image(systemName: "circle.fill")
                         .resizable()
@@ -70,13 +120,25 @@ struct FH2: View {
                         .opacity(0.5)
                     
                     VStack {
-                   
                         
+                        Text("You're")
+                            .fontWeight(.medium)
+                            .font(.system(size: 45))
+                            .foregroundColor(.white)
+                            .glow(color: ColorManager.purple4, radius: 3)
+                            .opacity(0.15)
+                        
+                        Text("Safe & Sound")
+                            .fontWeight(.medium)
+                            .font(.system(size: 45))
+                            .foregroundColor(.white)
+                            .glow(color: ColorManager.purple4, radius: 3)
+                            .opacity(0.15)
                         
                         Spacer()
                             .frame(height: 20)
                         
-                        Text("Let the outside of you")
+                        Text("To let the outside of you")
                             .font(.system(size: 27))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
@@ -97,48 +159,63 @@ struct FH2: View {
                         
                         Spacer()
                             .frame(height: 20)
-               
-            }
-        }
-    
+                        
+                        VStack {
+                            
+                            
+                            Link(destination: URL(string: "https://socialtechlabs.com/our-story/")!) {
+                                
+                                Text("Our Story")
+                                    .fontWeight(.thin)
+                                    .frame(width: 200, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 25))
+                                    .background(Color.cyan)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            }
+                        }
+                    }
+                }
+                
                 //                ********************************************
-            VStack {
-                    
-                    Spacer()
-                        .frame(height: 30)
-                    
-                    
-                    
-                    NavigationLink(
-                        destination:  FH6(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                        label: {
-                            Text("->")
-                                .fontWeight(.thin)
-                                .foregroundColor(Color.white)
-                                .frame(width: 40, height: 40)
-                                .font(.system(size: 30))
-                                .background(ColorManager .grey2)
-                                .opacity(0.95)
-                                .cornerRadius(5)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                VStack {
+//
+//                    Spacer()
+//                        .frame(height: 30)
+//
+                        VStack {
+                            
+                            Button(action: {
+                                sessionManager.showLogin()
+                            },
+                                   label: {
+                                Image("home-alt2")
+                                    .frame(width: 60, height: 30)
+                                    .foregroundColor(.black)
+                                    .font(.system(size: 20))
+                                    .background(ColorManager .grey3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                    .opacity(0.70)
+                                
+                            })
                         }
                         
-                    )}
-                
-                
-                
-                
-                Spacer()
-                    .frame(height: 40)
+                        
+                        
+                        
+                        Spacer()
+                            .frame(height: 40)
+                        
+                    }
+                    
+                }
                 
             }
-            
         }
-        
-    }
-    
-    
-}
+//    }
+
         
 
 
