@@ -67,7 +67,7 @@ struct FH9: View {
                             
                         
                        
-                            Text("CREATING Mulit-friend Chat Rooms...Tap ALL friend's planets one-at-a-time, then this 'popup' to name \n\nACCESSING Multi-friend Chat Rooms...Tap ALL friends, then this 'popup' to enter")
+                            Text("CREATING Mulit-friend Chat Rooms...Tap ALL friend's planets one-at-a-time, then this 'popup' to name room (exit homepg / return to activate) \n\nACCESSING Multi-friend Chat Rooms...Use pullup Chat bubble at bottom of page")
                                 .fontWeight(.medium)
                                 .font(.system(size: 14))
                                 .frame(width: 340, height: 265)

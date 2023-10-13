@@ -69,7 +69,7 @@ struct HomeView: View {
                     .opacity(0.5)
                     .ignoresSafeArea()
       
-                AdPlayerView(name: "background_7")
+                AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.5)
@@ -173,36 +173,36 @@ struct HomeView: View {
                         Spacer()
                         
                         ZStack {
-                            
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 440, height: 410)
-                                .foregroundColor(Color.white)
-                                .opacity(0.010)
-                                .rotationEffect(.degrees(-20))
-                                .glow(color: Color.white, radius: 75)
-                                .shadow(color: Color.white, radius: 10, x: 0, y: 10)
-                                .blinking(duration: 4.0)
-                            
-                            VStack {
-                                
-
-                                
-                                Text("friendships")
-                                    .font(.system(size: 70))
-                                    .foregroundColor(Color.white)
-                                    .fontWeight(.bold)
-                                    .opacity(0.05)
-                                    .multilineTextAlignment(.center)
-                                    .rotationEffect(.degrees(-20))
-                                    .glow(color: Color.white, radius: 75)
-                                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
-                                    .blinking(duration: 4.0)
-                                
-                                
+//
+//                            Image(systemName: "heart.fill")
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 440, height: 410)
+//                                .foregroundColor(Color.white)
+//                                .opacity(0.010)
+//                                .rotationEffect(.degrees(-20))
+//                                .glow(color: Color.white, radius: 75)
+//                                .shadow(color: Color.white, radius: 10, x: 0, y: 10)
+//                                .blinking(duration: 4.0)
+//
+//                            VStack {
+//
+//
+//
+//                                Text("friendships")
+//                                    .font(.system(size: 70))
+//                                    .foregroundColor(Color.white)
+//                                    .fontWeight(.light)
+//                                    .opacity(0.1)
+//                                    .multilineTextAlignment(.center)
+//                                    .rotationEffect(.degrees(-20))
+//                                    .glow(color: Color.white, radius: 75)
+//                                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
+//                                    .blinking(duration: 4.0)
+//
+//
                                 Spacer()
-                                    .frame(height: 240)
+                                    .frame(height: 420)
                                 
                                 Text("")
                                     .font(.system(size: 35))
@@ -213,7 +213,7 @@ struct HomeView: View {
                                 
                                 
                                 
-                            }
+//                            }
                         }
                         
 //                        Spacer()
@@ -392,7 +392,7 @@ struct HomeView: View {
                             destination:   RR36Info(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                             label: {
 
-                                Image(systemName: "info.circle")
+                                Image(systemName: "")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 120, height: 120)

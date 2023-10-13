@@ -180,7 +180,7 @@ HStack {
             Spacer()
                 .frame(width: 50)
           
-            NavigationLink(destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+            NavigationLink(destination:  RR40Info2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
                             Text("->")
                                 .fontWeight(.thin)
@@ -215,7 +215,7 @@ HStack {
                     .frame(width: 65, height: 65)
                     .foregroundColor(Color .green)
                     .glow(color: ColorManager.purple4, radius: 3)
-                    .blinking(duration: 2.0)
+//                    .blinking(duration: 2.0)
                 
                 NavigationLink( destination: InviteView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
@@ -229,7 +229,7 @@ HStack {
                         .cornerRadius(50)
                         .glow(color: Color.white, radius: 20)
                         .shadow(color: Color.white, radius: 2, x: 2, y: 2)
-                        .blinking(duration: 2.0)
+//                        .blinking(duration: 2.0)
                     //                                   .blinking(duration: 4.0)
                     
                 })
@@ -276,7 +276,7 @@ HStack {
                     .frame(width: 65, height: 65)
                     .foregroundColor(Color .green)
                     .glow(color: ColorManager.purple4, radius: 3)
-                    .blinking(duration: 2.0)
+//                    .blinking(duration: 2.0)
                 
                 NavigationLink( destination: FH9(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
@@ -290,7 +290,7 @@ HStack {
                         .cornerRadius(50)
                         .glow(color: Color.white, radius: 20)
                         .shadow(color: Color.white, radius: 2, x: 2, y: 2)
-                        .blinking(duration: 2.0)
+//                        .blinking(duration: 2.0)
                     //                                   .blinking(duration: 4.0)
                     
                 })

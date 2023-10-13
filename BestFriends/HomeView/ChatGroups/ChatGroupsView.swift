@@ -69,7 +69,7 @@ struct ChatGroupsView: View {
                                 .fontWeight(.light)
                                 .opacity(0.4)
                                 .multilineTextAlignment(.center)
-                                .blinking(duration: 2.0)
+//                                .blinking(duration: 2.0)
                             
                             
                         Image("iconChat5")
@@ -86,7 +86,7 @@ struct ChatGroupsView: View {
                                 .fontWeight(.light)
                                 .opacity(0.4)
                                 .multilineTextAlignment(.center)
-                                .blinking(duration: 2.0)
+//                                .blinking(duration: 2.0)
                         
                     }
                             
