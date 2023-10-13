@@ -69,135 +69,86 @@ struct RR36Info: View {
       
  
 VStack {
+    
+    
+    HStack {
+        ZStack {
             
-VStack {
-
-
-HStack {
-                    
-    ZStack {
-      
-        HStack {
-
-            ZStack {
-                
-                Image("comicBubble")
-                    .resizable()
-                    .foregroundColor(Color.purple)
-                    .frame(width: 430, height: 240)
-                    .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
-                    .rotationEffect(.degrees(-10))
-                    .opacity(0.95)
-                //                            .blinking(duration: 3.0)
-                
-                
-                VStack {
-                    
-                    VStack {
-                        
-                        
-                        
-                        Text("Planets")
-                            .font(.system(size: 23))
-                            .fontWeight(.regular)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                            .rotationEffect(.degrees(-10))
-                            .blinking(duration: 2.0)
-                        
-                        Text("You're the center planet,")
-                            .font(.system(size: 15))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.leading)
-                            .rotationEffect(.degrees(-10))
-                            .foregroundColor(Color.white)
-                        //                                .blinking(duration: 5.0)
-                        
-                        Text("friends planet's orbit you.")
-                            .font(.system(size: 15))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.leading)
-                            .rotationEffect(.degrees(-10))
-                            .foregroundColor(Color.white)
-                        //                                .blinking(duration: 5.0)
-                        Spacer()
-                            .frame(height: 10)
-                        
-                        Text("Planet atmosphere color")
-                            .font(.system(size: 15))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .rotationEffect(.degrees(-10))
-                            .foregroundColor(Color.white)
-                        
-                        
-                        Text("matches their 'Vibe'")
-                            .font(.system(size: 15))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .rotationEffect(.degrees(-10))
-                            .foregroundColor(Color.white)
-                    }
-                    
-                    
-                    
-                    Spacer()
-                        .frame(width: 100)
-                    
-            
-                }
-            }
-        }
-    }
-}
-        
- 
-//       ******************  How to Video ******************************
-        
-        HStack {
-//            Text("How to...")
-//                .fontWeight(.medium)
-//                .font(.system(size: 70))
-//                .foregroundColor(.white)
-//                .glow(color: ColorManager.purple4, radius: 3)
-//                .opacity(0.15)
+            Image(systemName: "circle")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 75, height: 75)
+                .foregroundColor(Color .purple)
+                .glow(color: ColorManager.purple4, radius: 3)
+            //                    .blinking(duration: 2.0)
             
             NavigationLink( destination: RRdemoVideo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
-                Text("Demo Video")
-                    .fontWeight(.medium)
-                    .font(.system(size: 60))
-                    .foregroundColor(.white)
-                    .glow(color: ColorManager.purple4, radius: 3)
-                    .opacity(0.15)
-//                        .blinking(duration: 2.0)
+                Text("tap")
+                    .foregroundColor(Color.white)
+                    .frame(width: 60, height: 60)
+                    .multilineTextAlignment(.center)
+                    .font(.system(size: 16))
+                //                                   .padding(10)
+                    .background(Color.gray)
+                    .cornerRadius(50)
+                    .glow(color: Color.white, radius: 20)
+                    .shadow(color: Color.white, radius: 2, x: 2, y: 2)
+                //                        .blinking(duration: 2.0)
                 //                                   .blinking(duration: 4.0)
                 
             })
+        }
+        
+        ZStack {
             
+            
+            Image("comicBubble")
+                .resizable()
+                .foregroundColor(Color.purple)
+                .frame(width: 300, height: 200)
+                .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+                .rotationEffect(.degrees(-10))
+                .opacity(0.95)
+            
+            VStack {
+                
+             
+                Text("Demo Video")
+                    .font(.system(size: 30))
+                    .fontWeight(.regular)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+                    .rotationEffect(.degrees(-10))
+            
+            }
+        }
+    }
+    
+VStack {
+
+    
+    
+//       ******************  How to Video ******************************
+        
+    HStack {
+        
+        
+        NavigationLink( destination: RRdemoVideo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        label: {
+            Text("Walk-through")
+                .fontWeight(.medium)
+                .font(.system(size: 60))
+                .foregroundColor(.white)
+                .glow(color: ColorManager.purple4, radius: 3)
+                .opacity(0.15)
+            
+        })
+    }
             
             
 //******************************************************************
-            
-            
-            Spacer()
-                .frame(width: 50)
-          
-            NavigationLink(destination:  RR40Info2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                       label: {
-                            Text("->")
-                                .fontWeight(.thin)
-                                .foregroundColor(Color.white)
-                                .frame(width: 40, height: 40)
-                                .font(.system(size: 30))
-                                .background(ColorManager .grey2)
-                                .opacity(0.95)
-                                .cornerRadius(5)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                        })
-        }
-            
+        
         HStack {
 
                 Image("")

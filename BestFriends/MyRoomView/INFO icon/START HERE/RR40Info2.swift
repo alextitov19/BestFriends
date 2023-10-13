@@ -86,11 +86,11 @@ HStack {
         ZStack {
             Image("comicBubble")
                 .resizable()
-                .foregroundColor(Color.purple)
-                .frame(width: 430, height: 240)
-                .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+                .foregroundColor(Color.cyan)
+                .frame(width: 400, height: 120)
+                .shadow(color: Color.white, radius: 3, x: 3, y: 3)
                 .rotationEffect(.degrees(-10))
-                .opacity(0.95)
+                .opacity(0.5)
             //                            .blinking(duration: 3.0)
             
      
@@ -98,7 +98,7 @@ HStack {
                 
                 VStack {
                     
-                
+                    
                     
                     Text("Keep Notifications 'ON'")
                         .font(.system(size: 23))
@@ -106,47 +106,18 @@ HStack {
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
                         .rotationEffect(.degrees(-10))
-                        .blinking(duration: 2.0)
+//                        .blinking(duration: 2.0)
                     
-                    Text("Celebrate with friends before")
+                    Text("for best app performance")
                         .font(.system(size: 15))
                         .fontWeight(.light)
                         .multilineTextAlignment(.leading)
-                        .rotationEffect(.degrees(-10))
-                        .foregroundColor(Color.white)
-                    //                                .blinking(duration: 5.0)
-                    
-                    Text("excitment is gone.")
-                        .font(.system(size: 15))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.leading)
-                        .rotationEffect(.degrees(-10))
-                        .foregroundColor(Color.white)
-                    //                                .blinking(duration: 5.0)
-                    Spacer()
-                        .frame(height: 10)
-                    
-                    Text("Provide comfort when friends")
-                        .font(.system(size: 15))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .rotationEffect(.degrees(-10))
-                        .foregroundColor(Color.white)
-                
-                    
-                    Text("need it.")
-                        .font(.system(size: 15))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
                         .rotationEffect(.degrees(-10))
                         .foregroundColor(Color.white)
                     }
                 }
             }
-            
-            Spacer()
-                .frame(width: 5)
-            
+        
             
             Image("")
                 .resizable()
@@ -155,7 +126,7 @@ HStack {
                 .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
                 .opacity(0.9)
             
-        }    .opacity(0.9)
+        }
     }
 }
         
@@ -179,7 +150,7 @@ HStack {
 //                    .blinking(duration: 2.0)
             
             Spacer()
-                .frame(width: 40)
+                .frame(width: 10)
             
             ZStack {
                 
@@ -209,23 +180,35 @@ HStack {
                 Image("comicBubble")
                     .resizable()
                     .foregroundColor(Color.purple)
-                    .frame(width: 160, height: 110)
+                    .frame(width: 350, height: 200)
                     .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
-                    .opacity(0.5)
+                    .opacity(0.95)
                 
                 VStack {
                     
-                    Text("My Vibe")
+                    Text("Everyone's Vibe")
                         .font(.system(size: 17))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
-
-                    Text("Real-time")
-                        .font(.system(size: 14))
+                    
+                    Text("Friends planet atmosphere")
+                        .font(.system(size: 17))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
+                    
+                    Text("color matches their Vibe")
+                        .font(.system(size: 17))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+//
+//                    Text("Real-time")
+//                        .font(.system(size: 14))
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(Color.white)
                     
                 }
             }
@@ -275,7 +258,7 @@ HStack {
                   .foregroundColor(Color.purple)
                   .frame(width: 190, height: 150)
                   .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
-                  .opacity(0.5)
+                  .opacity(0.95)
               
               VStack {
                   
@@ -332,7 +315,7 @@ HStack {
                     .foregroundColor(Color.purple)
                     .frame(width: 190, height: 150)
                     .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
-                    .opacity(0.5)
+                    .opacity(0.95)
                 
                 VStack {
                     
