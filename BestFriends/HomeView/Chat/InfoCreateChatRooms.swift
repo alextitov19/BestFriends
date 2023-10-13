@@ -19,133 +19,70 @@ struct InfoCreateChatRooms: View {
         
         ZStack {
             
-            ColorManager .grey4
-                .ignoresSafeArea()
-                .onAppear()
-            
- 
+               Color.black
+                   .opacity(0.9)
+                   .ignoresSafeArea()
+               
+               AdPlayerView(name: "Planet4")
+                   .ignoresSafeArea()
+                   .blendMode(.screen)
             
             VStack {
-                
-                Text("Create")
-                    .font(.system(size: 35))
-                
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey2)
+                Text("Multi-friend")
+                    .fontWeight(.medium)
+                    .font(.system(size: 50))
+                    .foregroundColor(.white)
+                    .glow(color: ColorManager.purple4, radius: 3)
+                    .opacity(0.15)
+
+
                 Text("Chat Rooms")
-                    .font(.system(size: 35))
-                
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey2)
-             
-                
-                ZStack {
-                    
-                    
-                    Image(systemName: "circle.fill")
-                        .resizable()
-                        .foregroundColor(Color.orange)
-                        .frame(width: 335, height: 335)
-                        .shadow(color: ColorManager .grey1, radius: 65, x: 30, y: 50)
-                        .opacity(0.95)
-                    
-                    
-                    
-                    VStack {
-                        
-                        
-                        Spacer ()
-                            .frame(height: 60)
-                        
-                        Text("Individual Rooms")
-                            .font(.system(size: 25))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                      
-                    
-                        
-                        Text("1) On homepage; tap friend's planet")
-                            .font(.system(size: 15))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.grey4)
-                    
-                        
-                        Text("2) Tap [Create Chat Rooms] popup")
-                            .font(.system(size: 15))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.grey4)
-                        
-                        Text("3) Name chat room")
-                            .font(.system(size: 15))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.grey4)
-                        
+                    .fontWeight(.medium)
+                    .font(.system(size: 50))
+                    .foregroundColor(.white)
+                    .glow(color: ColorManager.purple4, radius: 3)
+                    .opacity(0.15)
                    
+                ZStack {
                         
-                        Text("Note: must exit app and return to activate")
-                            .font(.system(size: 13))
-                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.grey1)
+                        Image(systemName: "circle.fill")
+                            .resizable()
+                            .foregroundColor(Color.purple)
+                            .frame(width: 400, height: 400)
+                            .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+                            .opacity(0.25)
                         
                         VStack {
+//                            Text("\nCREATING One-on-one Chat Rooms...Tap friend's planet, then ChatBubble 'popup' to name room \n\nACCESSING one-on-one Chat Rooms...Tap friend's planet, then this 'popup' to enter")
+//                                .fontWeight(.medium)
+//                                .font(.system(size: 14))
+//                                .frame(width: 340, height: 265)
+//                                .padding(15)
+//                                .foregroundColor(.white)
+//                                .cornerRadius(20) .opacity(0.99)
+//
+//
+                       
+                            Text("CREATING Mulit-friend Chat Rooms...Tap ALL friend's planets one-at-a-time, then ChatBubble 'popup' to name room (exit homepg / return to activate) \n\nACCESSING Multi-friend Chat Rooms...Use pullup Chat bubble at bottom of page")
+                                .fontWeight(.medium)
+                                .font(.system(size: 14))
+                                .frame(width: 340, height: 265)
+                                .padding(15)
+                                .foregroundColor(.white)
+                                .cornerRadius(20) .opacity(0.99)
+                            
+                        }
                         
-                            Spacer ()
-                                .frame(height: 7)
-                            
-                            Text(".  .  .")
-                                .font(.system(size: 25, weight: .bold))
-                                .foregroundColor(ColorManager .purple4)
-                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                .opacity(0.50)
-                                .multilineTextAlignment(.center)
-                            
-                            Spacer ()
-                                .frame(height: 10)
-                            
-                            Text("Group Rooms")
-                                .font(.system(size: 25))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                      
-                            
-                            Text("1) Tap 'ALL' friends planets want in room")
-                                .font(.system(size: 15))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager.grey4)
-                        
-                            
-                            
-                            Text("2) Then follow above instructions")
-                                .font(.system(size: 15))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager.grey4)
-                            
+                 
+                
+                        VStack {
 
-                            NavigationLink(
-                                destination: ChangeChatBackgroundView(user: user),
-                                label: {
-                                    Text("Customize \nChat Backgrounds")
-                                        .fontWeight(.light)
-                                        .frame(width: 280, height: 80)
-                                        .foregroundColor(Color.white)
-                                        .font(.system(size: 25))
-                                        .background(Color.cyan)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                        .opacity(0.5)
-                                })
-                            
+
+                      
+              
+                        }
+                    }
+                }
                             Spacer ()
                                 .frame(height: 100)
                             
@@ -153,9 +90,5 @@ struct InfoCreateChatRooms: View {
                         
                     }
                 }
-            }
-        }
-    }
-    
-}
+        
            
