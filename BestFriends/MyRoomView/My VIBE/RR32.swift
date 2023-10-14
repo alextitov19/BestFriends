@@ -227,7 +227,7 @@ VStack {
                             .foregroundColor(Color.purple)
                             .frame(width: 190, height: 100)
                             .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
-                            .opacity(0.5)
+                            .opacity(0.95)
 //                            .blinking(duration: 3.0)
                         
                         VStack {
@@ -324,34 +324,28 @@ VStack {
                             .foregroundColor(Color.cyan)
                             .frame(width: 320, height: 140)
                             .shadow(color: Color.cyan, radius: 3, x: 3, y: 3)
-                            .opacity(0.5)
+                            .opacity(0.95)
 //                            .blinking(duration: 5.0)
                         
                         VStack {
                             
                             Text("Bad day?")
                                 .font(.system(size: 20))
-                                .fontWeight(.regular)
+                                .fontWeight(.light)
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-//                                .blinking(duration: 2.0)
+                                .foregroundColor(Color.cyan)
                             
-                            Text("Ask your friends to send CareHearts")
-                                .font(.system(size: 13))
-                                .italic()
+                            Text("Ask your friends to")
+                                .font(.system(size: 17))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
-//                                .blinking(duration: 5.0)
-                         
-
-                            Text("until you're ready to talk")
-                                .font(.system(size: 13))
-                                .italic()
+                            
+                            Text("send CareHearts")
+                                .font(.system(size: 17))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
-//                                .blinking(duration: 5.0)
                             
                         }
                     }
