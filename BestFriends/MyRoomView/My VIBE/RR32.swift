@@ -158,12 +158,12 @@ VStack {
                 .resizable()
                 .foregroundColor(Color.cyan)
                 .frame(width: 210, height: 150)
-                .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
+                .shadow(color: Color.green, radius: 3, x: 3, y: 3)
                 .opacity(0.95)
             
             VStack {
                 
-                Text("Yep. I've got")
+                Text("Yep. You've got")
                     .font(.system(size: 17))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
@@ -226,7 +226,7 @@ VStack {
                             .resizable()
                             .foregroundColor(Color.purple)
                             .frame(width: 190, height: 100)
-                            .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
+                            .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
                             .opacity(0.95)
 //                            .blinking(duration: 3.0)
                         
@@ -288,11 +288,10 @@ VStack {
             
 //***************************************
            
+                Spacer ()
+                    .frame(width: 15)
                 ZStack {
                    
-                    Spacer ()
-                        .frame(width: 15)
-                    
                     NavigationLink( destination: VirtualHug(user: user, friends: friends),
                                     label: {
                         Image(systemName: "circle.fill")
@@ -300,7 +299,7 @@ VStack {
                             .scaledToFit()
                             .frame(width: 75, height: 75)
                             .foregroundColor(ColorManager .grey1)
-                            .shadow(color: Color.green, radius: 3, x: 3, y: 3)
+                            .shadow(color: Color.cyan, radius: 3, x: 3, y: 3)
                             .opacity(0.95)
                     })
                     
@@ -312,7 +311,29 @@ VStack {
                     
                 }
                 
+//                ***************************
                 
+//                ZStack {
+//
+//                    NavigationLink( destination: VirtualHug(user: user, friends: friends),
+//                                    label: {
+//                        Image(systemName: "circle.fill")
+//                            .resizable()
+//                            .scaledToFit()
+//                            .frame(width: 75, height: 75)
+//                            .foregroundColor(ColorManager .grey1)
+//                            .shadow(color: Color.green, radius: 3, x: 3, y: 3)
+//                            .opacity(0.95)
+//
+//                    Text("Let us help")
+//                        .font(.system(size: 17))
+//                        .fontWeight(.regular)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(Color.black)
+//                    })
+//                }
+//
+//
 //                ********************************************
                     
                     
@@ -322,7 +343,7 @@ VStack {
                         Image("comicBubble")
                             .resizable()
                             .foregroundColor(Color.cyan)
-                            .frame(width: 320, height: 140)
+                            .frame(width: 240, height: 170)
                             .shadow(color: Color.cyan, radius: 3, x: 3, y: 3)
                             .opacity(0.95)
 //                            .blinking(duration: 5.0)
@@ -335,13 +356,13 @@ VStack {
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.cyan)
                             
-                            Text("Ask your friends to")
+                            Text("Ask friends")
                                 .font(.system(size: 17))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
                             
-                            Text("send CareHearts")
+                            Text("for CareHearts")
                                 .font(.system(size: 17))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
