@@ -80,27 +80,109 @@ VStack {
         VStack {
            
             
-            Text("Friendship Vibes")
+            Text("What's Up?")
                 .font(.system(size: 25))
                 .fontWeight(.regular)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.white)
             
-            Text("(Your 'Vibe-color' matches")
-                .font(.system(size: 15))
+            Text("(Planet atmosphere color matches everyone's vibe)")
+                .font(.system(size: 13))
                 .italic()
                 .fontWeight(.regular)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.white)
-            
-            Text("your planet's 'Atmophere-color')")
-                .font(.system(size: 15))
-                .italic()
-                .fontWeight(.regular)
-                .multilineTextAlignment(.center)
-                .foregroundColor(Color.white)
+ 
         }
     }
+    
+    
+//    ********************** My Exciting News *****************
+    
+    HStack {
+        ZStack {
+            
+            Image(systemName: "circle")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 80, height: 80)
+                .foregroundColor(Color .green)
+                .glow(color: Color.green, radius: 10)
+                .shadow(color: Color.green, radius: 3, x: 3, y: 3)
+            //                                .blinking(duration: 2.0)
+            
+            
+            Button(action: {
+                mood = 7
+            }) {
+                
+                Text("Tell my friends")
+                    .font(.system(size: 17))
+                    .foregroundColor(Color.black)
+            }
+            .frame(width: 75, height: 75, alignment: .center)
+            .background(mood == 7 ? Color.green : ColorManager .grey1)
+            .cornerRadius(40)
+            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+        }
+        Spacer()
+            .frame(width: 15)
+        
+//        ************************************
+        
+        ZStack {
+           
+            NavigationLink( destination: RR14(user: user, friend: user, friends: friends, groups: groups),
+                            label: {
+                Image(systemName: "circle.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 75, height: 75)
+                    .foregroundColor(ColorManager .grey1)
+                    .shadow(color: Color.green, radius: 3, x: 3, y: 3)
+                    .opacity(0.95)
+            })
+            
+            Text("Tell us")
+                .font(.system(size: 17))
+                .fontWeight(.regular)
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color.black)
+            
+        }
+        
+        ZStack {
+            
+            
+            Image("comicBubble")
+                .resizable()
+                .foregroundColor(Color.cyan)
+                .frame(width: 210, height: 150)
+                .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
+                .opacity(0.95)
+            
+            VStack {
+                
+                Text("Yep. I've got")
+                    .font(.system(size: 17))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+
+                Text("Exciting NEWS!")
+                    .font(.system(size: 20))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.cyan)
+                 
+                
+            }
+        }
+    }
+
+    
+    
+//    ******************************************************
         VStack {
                         
                 HStack {
@@ -165,68 +247,15 @@ VStack {
 
                         }
                     }
-    //               ************************************************
-                    
-                    
-                    
-                    
-                    
-                    
-                            }
-            
-            
+                }
+
             Spacer()
                 .frame(height: 15)
             
     //               ************************************************
-                        
-            HStack {
-                //                Image("IconNiceNew40")
-                Image("iconSun")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 70, height: 70)
-                    .opacity(0.9)
-                //                    .blinking(duration: 2.0)
-                
-                ZStack {
-                    
-                    Image(systemName: "circle")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 90, height: 90)
-                        .foregroundColor(Color .green)
-                        .glow(color: Color.green, radius: 10)
-                        .shadow(color: Color.green, radius: 3, x: 3, y: 3)
-                    //                                .blinking(duration: 2.0)
-                    
-                    
-                    Button(action: {
-                        mood = 7
-                    }) {
-                        
-                        Text("my exciting news!")
-                            .font(.system(size: 15))
-                            .foregroundColor(Color.black)
-                    }
-                    .frame(width: 85, height: 85, alignment: .center)
-                    .background(mood == 7 ? Color.green : Color.white)
-                    .cornerRadius(40)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                }
-            }
-//                ************************************************
+        
             //                ************************************************
-            
-            //                ************************************************
-            
-            
-            
-            
-            
-            
-                        Spacer()
-                            .frame(height: 15)
+ 
                 
             HStack {
                 Spacer ()
@@ -247,8 +276,8 @@ VStack {
                         mood = 1
                         //                    showingAlert = true
                     }) {
-                        Text("requesting \nemotional \nsupport")
-                            .font(.system(size: 15))
+                        Text("Ask my friends")
+                            .font(.system(size: 17))
                             .foregroundColor(Color.black)
                     }
                     .frame(width: 85, height: 85, alignment: .center)
@@ -257,6 +286,33 @@ VStack {
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 }
             
+//***************************************
+           
+                ZStack {
+                   
+                    Spacer ()
+                        .frame(width: 15)
+                    
+                    NavigationLink( destination: VirtualHug(user: user, friends: friends),
+                                    label: {
+                        Image(systemName: "circle.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 75, height: 75)
+                            .foregroundColor(ColorManager .grey1)
+                            .shadow(color: Color.green, radius: 3, x: 3, y: 3)
+                            .opacity(0.95)
+                    })
+                    
+                    Text("Let us help")
+                        .font(.system(size: 17))
+                        .fontWeight(.regular)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.black)
+                    
+                }
+                
+                
 //                ********************************************
                     
                     
@@ -308,7 +364,7 @@ VStack {
                             
                             VStack {
                                
-                                Text("(Friends see instantly how they can help)")
+                                Text("(alert my friends)")
                                     .font(.system(size: 15))
                                     .italic()
                                     .fontWeight(.light)
@@ -457,15 +513,13 @@ VStack {
                                         
 //                                    })
                                     
-                                    Spacer()
-                                        .frame(height: 30)
+//                                    Spacer()
+//                                        .frame(height: 30)
                                  
                                 }
                             }
                         }
-                        Spacer()
-                            .frame(height: 15)
-                        
+                       
                     }
                     
                 }
