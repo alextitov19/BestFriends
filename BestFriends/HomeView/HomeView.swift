@@ -87,12 +87,17 @@ struct HomeView: View {
                      Image(systemName: "cube")
                          .resizable()
                          .scaledToFit()
-                         .frame(width: 50, height: 50)
+                         .frame(width: 55, height: 55)
                          .foregroundColor(Color.white)
                          .glow(color: Color.cyan, radius: 3)
                          .opacity(0.15)
 //                        .blinking(duration: 4.0)
-                     
+//                     Text("CareHearts")
+//                         .font(.system(size: 9))
+//                         .foregroundColor(Color.white)
+//                         .fontWeight(.light)
+//                         .opacity(0.9)
+//                         .multilineTextAlignment(.center)
                      
                  }
              })
@@ -116,7 +121,12 @@ struct HomeView: View {
                         .blinking(duration: 4.0)
                         .opacity(0.8)
                       
-                    
+                    Text("Vibe")
+                        .font(.system(size: 10))
+                        .foregroundColor(Color.white)
+                        .fontWeight(.light)
+                        .opacity(0.9)
+                        .multilineTextAlignment(.center)
                 }
             })
                                 

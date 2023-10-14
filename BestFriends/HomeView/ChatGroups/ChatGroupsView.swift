@@ -90,12 +90,12 @@ struct ChatGroupsView: View {
                         
                     }
                            
-                        Text("Multi-friends chat room access")
-                            .font(.system(size: 25))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.light)
-                            .opacity(0.4)
-                            .multilineTextAlignment(.center)
+//                        Text("History")
+//                            .font(.system(size: 25))
+//                            .foregroundColor(Color.white)
+//                            .fontWeight(.light)
+//                            .opacity(0.4)
+//                            .multilineTextAlignment(.center)
                         
                         
                             NavigationLink(
