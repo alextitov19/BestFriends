@@ -143,7 +143,7 @@ VStack {
                     .opacity(0.95)
             })
             
-            Text("Yes, yes \nyes!")
+            Text("Congrats!")
                 .font(.system(size: 17))
                 .fontWeight(.regular)
                 .multilineTextAlignment(.center)
