@@ -39,7 +39,7 @@ struct FH9: View {
                 .opacity(0.9)
                 .ignoresSafeArea()
             
-            AdPlayerView(name: "Planet4")
+            AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
