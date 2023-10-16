@@ -82,22 +82,22 @@ VStack {
                 .glow(color: ColorManager.purple4, radius: 3)
             //                    .blinking(duration: 2.0)
             
-            NavigationLink( destination: RRdemoVideo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                            label: {
-                Text("tap")
-                    .foregroundColor(Color.white)
-                    .frame(width: 60, height: 60)
-                    .multilineTextAlignment(.center)
-                    .font(.system(size: 16))
-                //                                   .padding(10)
-                    .background(Color.gray)
-                    .cornerRadius(50)
-                    .glow(color: Color.white, radius: 20)
-                    .shadow(color: Color.white, radius: 2, x: 2, y: 2)
-                //                        .blinking(duration: 2.0)
-                //                                   .blinking(duration: 4.0)
-                
-            })
+//            NavigationLink( destination: RRdemoVideo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                            label: {
+//                Text("tap")
+//                    .foregroundColor(Color.white)
+//                    .frame(width: 60, height: 60)
+//                    .multilineTextAlignment(.center)
+//                    .font(.system(size: 16))
+//                //                                   .padding(10)
+//                    .background(Color.gray)
+//                    .cornerRadius(50)
+//                    .glow(color: Color.white, radius: 20)
+//                    .shadow(color: Color.white, radius: 2, x: 2, y: 2)
+//                //                        .blinking(duration: 2.0)
+//                //                                   .blinking(duration: 4.0)
+//
+//            })
         }
         
         ZStack {
@@ -141,16 +141,16 @@ VStack {
     HStack {
         
         
-        NavigationLink( destination: RRdemoVideo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                        label: {
-            Text("Walk-through")
-                .fontWeight(.medium)
-                .font(.system(size: 60))
-                .foregroundColor(.white)
-                .glow(color: ColorManager.purple4, radius: 3)
-                .opacity(0.15)
-            
-        })
+//        NavigationLink( destination: RRdemoVideo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                        label: {
+//            Text("Walk-through")
+//                .fontWeight(.medium)
+//                .font(.system(size: 60))
+//                .foregroundColor(.white)
+//                .glow(color: ColorManager.purple4, radius: 3)
+//                .opacity(0.15)
+//
+//        })
     }
             
             
