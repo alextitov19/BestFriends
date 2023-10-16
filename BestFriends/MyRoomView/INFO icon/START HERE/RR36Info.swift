@@ -59,7 +59,7 @@ struct RR36Info: View {
                     .ignoresSafeArea()
                 
                 
-                AdPlayerView(name: "Planet4")
+                AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
@@ -69,6 +69,20 @@ struct RR36Info: View {
       
  
 VStack {
+    Text("Celebrating")
+        .fontWeight(.medium)
+        .font(.system(size: 40))
+        .foregroundColor(.white)
+        .glow(color: ColorManager.purple4, radius: 3)
+        .opacity(0.15)
+    
+    Text("Friendships")
+        .fontWeight(.medium)
+        .font(.system(size: 40))
+        .foregroundColor(.white)
+        .glow(color: ColorManager.purple4, radius: 3)
+        .opacity(0.15)
+    
     
     
     HStack {
@@ -80,7 +94,12 @@ VStack {
                 .frame(width: 75, height: 75)
                 .foregroundColor(Color .purple)
                 .glow(color: ColorManager.purple4, radius: 3)
-            //                    .blinking(duration: 2.0)
+            
+            
+//************************** DEMO VIDEO SECTION *****************************
+            //******************************************************************
+            //******************************************************************
+            
             
 //            NavigationLink( destination: RRdemoVideo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
 //                            label: {
@@ -132,9 +151,7 @@ VStack {
                 }
             }
         }
-    
-    
-//       ******************  How to Video ******************************
+  
 
 VStack {
     
@@ -153,7 +170,9 @@ VStack {
 //        })
     }
             
-            
+    
+//******************************************************************
+//******************************************************************
 //******************************************************************
         
         HStack {
@@ -319,14 +338,14 @@ VStack {
      
     NavigationLink(destination:  RR40Info2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                label: {
-                    Text("->")
+                    Text("See Features ->")
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
-                        .frame(width: 40, height: 40)
+                        .frame(width: 220, height: 40)
                         .font(.system(size: 30))
                         .background(ColorManager .grey2)
                         .opacity(0.95)
-                        .cornerRadius(5)
+                        .cornerRadius(10)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     
                 })

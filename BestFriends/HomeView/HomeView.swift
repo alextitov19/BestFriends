@@ -213,7 +213,7 @@ struct HomeView: View {
 //
 //
                                 Spacer()
-                                    .frame(height: 420)
+                                    .frame(height: 400)
                                 
                                 Text("")
                                     .font(.system(size: 35))
@@ -430,28 +430,7 @@ struct HomeView: View {
                                 Image("iconChat5")
                                     .opacity(0.8)
                                     .frame(width: 120, height: 120)
-                                
-//
-//                                    Text("Create / Access")
-//                                        .fontWeight(.medium)
-//                                        .font(.system(size: 30))
-//                                        .foregroundColor(.white)
-//                                        .opacity(0.3)
-                                
-                                
-                                    
-//                                    Text("\nCREATING One-on-one Chat Rooms...Tap friend's planet, then this 'popup' to name room \n\nACCESSING one-on-one Chat Rooms...Tap friend's planet, then this 'popup' to enter \n\n\n\nCREATING Mulit-friend Chat Rooms...Tap ALL friend's planets one-at-a-time, then this 'popup' to name \n\nACCESSING Multi-friend Chat Rooms...Tap ALL friends, then this 'popup' to enter")
-//                                        .fontWeight(.medium)
-//                                        .font(.system(size: 14))
-//                                        .frame(width: 340, height: 265)
-//                                        .padding(15)
-//                                        .foregroundColor(.black)
-//                                        .background(ColorManager .grey3)
-//                                        .cornerRadius(20)
-//                                        .shadow(color: Color(.white), radius: 3, x: 3, y: 3)
-//                                        .opacity(0.45)
-                                    //                                Button("OK", role: .cancel) {
-                                    //                                }
+
                                 }
                             
                         })

@@ -59,7 +59,7 @@ struct RR40Info2: View {
                     .ignoresSafeArea()
                 
                 
-                AdPlayerView(name: "Planet4")
+                AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
@@ -131,12 +131,19 @@ HStack {
  
 //       ******************  My Vibe ******************************
       
-        Text("Features")
+        Text("Friendship Features")
             .fontWeight(.medium)
-            .font(.system(size: 70))
+            .font(.system(size: 40))
             .foregroundColor(.white)
             .glow(color: ColorManager.purple4, radius: 3)
             .opacity(0.15)
+//
+//        Text("Features")
+//            .fontWeight(.medium)
+//            .font(.system(size: 50))
+//            .foregroundColor(.white)
+//            .glow(color: ColorManager.purple4, radius: 3)
+//            .opacity(0.15)
         
         HStack {
 
@@ -178,13 +185,13 @@ HStack {
                 Image("comicBubble")
                     .resizable()
                     .foregroundColor(Color.purple)
-                    .frame(width: 350, height: 200)
+                    .frame(width: 350, height: 140)
                     .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
                     .opacity(0.95)
                 
                 VStack {
                     
-                    Text("Vibe")
+                    Text("What's Up?")
                         .font(.system(size: 25))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
@@ -254,7 +261,7 @@ HStack {
               Image("comicBubble")
                   .resizable()
                   .foregroundColor(Color.cyan)
-                  .frame(width: 210, height: 150)
+                  .frame(width: 210, height: 120)
                   .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
                   .opacity(0.95)
               
@@ -311,7 +318,7 @@ HStack {
                 Image("comicBubble")
                     .resizable()
                     .foregroundColor(Color.purple)
-                    .frame(width: 190, height: 150)
+                    .frame(width: 190, height: 120)
                     .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
                     .opacity(0.95)
                 
@@ -331,44 +338,31 @@ HStack {
                 }
             }
             
-            VStack {
-                
-             
-                NavigationLink(destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                           label: {
-                                Text("->")
-                                    .fontWeight(.thin)
-                                    .foregroundColor(Color.white)
-                                    .frame(width: 40, height: 40)
-                                    .font(.system(size: 30))
-                                    .background(ColorManager .grey2)
-                                    .opacity(0.95)
-                                    .cornerRadius(5)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            })
-                
-                
-                
-                
-                
-                //        NavigationLink(destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                //                                   label: {
-                //                        Text("->")
-                //                            .fontWeight(.thin)
-                //                            .foregroundColor(Color.white)
-                //                            .frame(width: 40, height: 40)
-                //                            .font(.system(size: 30))
-                //                            .background(ColorManager .grey2)
-                //                            .opacity(0.95)
-                //                            .cornerRadius(5)
-                //                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                //
-                //                    })
-            }
-        }
+         
+                    }
+        
         VStack {
-                                
+            
+         
+            NavigationLink(destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                       label: {
+                            Text("Safe n' Sound ->")
+                                .fontWeight(.thin)
+                                .foregroundColor(Color.white)
+                                .frame(width: 220, height: 40)
+                                .font(.system(size: 30))
+                                .background(ColorManager .grey2)
+                                .opacity(0.95)
+                                .cornerRadius(10)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            
+                        })
+                    }
+        
+        
+        
+        VStack {
+                                        
             Spacer()
                 .frame(height: 40)
           

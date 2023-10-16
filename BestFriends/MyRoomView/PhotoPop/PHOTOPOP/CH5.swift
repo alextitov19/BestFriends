@@ -58,13 +58,13 @@ struct CH5: View {
     
            
                 
-                Text("To view images")
+                Text("To view PhotoPOP images")
                     .font(.system(size: 25))
                     .foregroundColor(Color.white)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
-                Text("'skake' iPhone")
+                Text("'shake' iPhone")
                     .font(.system(size: 35))
                     .foregroundColor(Color.white)
                     .fontWeight(.light)

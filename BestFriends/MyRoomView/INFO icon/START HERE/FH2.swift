@@ -56,11 +56,11 @@ struct FH2: View {
                     Image("comicBubble")
                         .resizable()
                         .foregroundColor(Color.purple)
-                        .frame(width: 430, height: 240)
+                        .frame(width: 430, height: 200)
                         .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                         .rotationEffect(.degrees(-10))
                         .opacity(0.95)
-                    //                            .blinking(duration: 3.0)
+                        .blinking(duration: 2.0).blinking(duration: 3.0)
                     
                     
                     VStack {
@@ -83,7 +83,7 @@ struct FH2: View {
                                 .multilineTextAlignment(.leading)
                                 .rotationEffect(.degrees(-10))
                                 .foregroundColor(Color.white)
-                            
+                                .blinking(duration: 2.0)
                             
                             
                             Spacer()
@@ -95,6 +95,8 @@ struct FH2: View {
                                 .multilineTextAlignment(.leading)
                                 .rotationEffect(.degrees(-10))
                                 .foregroundColor(Color.white)
+                                .blinking(duration: 2.0)
+                            
                             
                             Text("being good enough")
                                 .font(.system(size: 15))
@@ -102,7 +104,7 @@ struct FH2: View {
                                 .multilineTextAlignment(.leading)
                                 .rotationEffect(.degrees(-10))
                                 .foregroundColor(Color.white)
-                            
+                                .blinking(duration: 2.0)
                             
                             
                         }
@@ -150,7 +152,7 @@ struct FH2: View {
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Text("on a social network")
+                        Text("on the friendship network")
                             .font(.system(size: 27))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
