@@ -85,73 +85,68 @@ VStack {
     
     
     
-    HStack {
-        ZStack {
-            
-            Image(systemName: "circle")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 75, height: 75)
-                .foregroundColor(Color .purple)
-                .glow(color: ColorManager.purple4, radius: 3)
-            
-            
-//************************** DEMO VIDEO SECTION *****************************
-            //******************************************************************
-            //******************************************************************
-            
-            
-//            NavigationLink( destination: RRdemoVideo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-//                            label: {
-//                Text("tap")
-//                    .foregroundColor(Color.white)
-//                    .frame(width: 60, height: 60)
-//                    .multilineTextAlignment(.center)
-//                    .font(.system(size: 16))
-//                //                                   .padding(10)
-//                    .background(Color.gray)
-//                    .cornerRadius(50)
-//                    .glow(color: Color.white, radius: 20)
-//                    .shadow(color: Color.white, radius: 2, x: 2, y: 2)
-//                //                        .blinking(duration: 2.0)
-//                //                                   .blinking(duration: 4.0)
+//    HStack {
+//        ZStack {
 //
-//            })
-        }
+//            Image(systemName: "circle")
+//                .resizable()
+//                .scaledToFit()
+//                .frame(width: 75, height: 75)
+//                .foregroundColor(Color .purple)
+//                .glow(color: ColorManager.purple4, radius: 3)
+//
+//
+//            //************************** DEMO VIDEO SECTION *****************************
+//            //******************************************************************
+//            //******************************************************************
+//
+//
+//
+//
+//
+//            Link(destination: URL(string: "https://socialtechlabs.com/bestfriendsnetwork_demo-video/")!) {
+//
+//                Text("Our Story")
+//                    .fontWeight(.thin)
+//                    .frame(width: 200, height: 40)
+//                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                    .font(.system(size: 25))
+//                    .background(Color.cyan)
+//                    .cornerRadius(15)
+//                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//
+//            }
+//        }
         
         ZStack {
-            
-            
-            Image("comicBubble")
-                .resizable()
-                .foregroundColor(Color.purple)
-                .frame(width: 300, height: 200)
-                .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+//        VStack {
+            Text("Demo Video")
+                .font(.system(size: 35))
+                .fontWeight(.regular)
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color.white)
                 .rotationEffect(.degrees(-10))
-                .opacity(0.95)
             
-                VStack {
+            Link(destination: URL(string: "https://socialtechlabs.com/bestfriendsnetwork_demo-video/")!) {
+    
+                Image("comicBubble")
+                    .resizable()
+                    .foregroundColor(Color.purple)
+                    .frame(width: 300, height: 200)
+                    .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+                    .rotationEffect(.degrees(-10))
+                    .opacity(0.5)
+           
+               
                     
-                    Text("Demo Video")
-                        .font(.system(size: 35))
-                        .fontWeight(.regular)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
-                        .rotationEffect(.degrees(-10))
-      
-
-                    Text("")
-                        .font(.system(size: 21))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
-                        .rotationEffect(.degrees(-10))
-             
+               
+                    
                     
                 }
             }
-        }
-  
+//        }
+//    }
 
 VStack {
     
@@ -446,3 +441,20 @@ VStack {
     }
     
     
+
+//            NavigationLink( destination: RRdemoVideo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                            label: {
+//                Text("tap")
+//                    .foregroundColor(Color.white)
+//                    .frame(width: 60, height: 60)
+//                    .multilineTextAlignment(.center)
+//                    .font(.system(size: 16))
+//                //                                   .padding(10)
+//                    .background(Color.gray)
+//                    .cornerRadius(50)
+//                    .glow(color: Color.white, radius: 20)
+//                    .shadow(color: Color.white, radius: 2, x: 2, y: 2)
+//                //                        .blinking(duration: 2.0)
+//                //                                   .blinking(duration: 4.0)
+//
+//            })
