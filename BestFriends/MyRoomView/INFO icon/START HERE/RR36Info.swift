@@ -91,7 +91,7 @@ ZStack {
                 .foregroundColor(Color.white)
                 .rotationEffect(.degrees(-10))
             
-    Link(destination: URL(string: "https://socialtechlabs.com/bestfriendsnetwork_demo-video/")!) {
+    Link(destination: URL(string: "https://youtu.be/QU-MfN7k00k?feature=shared")!) {
         Image("comicBubble")
             .resizable()
             .foregroundColor(Color.purple)

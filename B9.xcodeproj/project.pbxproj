@@ -1596,7 +1596,6 @@
 		CF6C5B092A86092200EC4915 /* START HERE */ = {
 			isa = PBXGroup;
 			children = (
-				D12CE2C22AD4154900AEB105 /* Info (i) */,
 				D12CE2C42AD415C400AEB105 /* RR36Info.swift */,
 				D12CE2C82AD8469400AEB105 /* RR40Info2.swift */,
 				2DFB03152A57228400669948 /* FH9.swift */,
@@ -2063,13 +2062,6 @@
 				2DDCD9852A8FEBEA00B1040F /* RR19.swift */,
 			);
 			path = "Love Tarts";
-			sourceTree = "<group>";
-		};
-		D12CE2C22AD4154900AEB105 /* Info (i) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Info (i)";
 			sourceTree = "<group>";
 		};
 		D1FB49042AD16B18007C40AB /* Fight */ = {
