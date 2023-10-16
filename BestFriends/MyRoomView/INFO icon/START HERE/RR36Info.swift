@@ -62,12 +62,9 @@ struct RR36Info: View {
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                
-                
+               
             }
-            
-      
- 
+   
 VStack {
     Text("Celebrating")
         .fontWeight(.medium)
@@ -84,43 +81,9 @@ VStack {
         .opacity(0.15)
     
     
-    
-//    HStack {
-//        ZStack {
-//
-//            Image(systemName: "circle")
-//                .resizable()
-//                .scaledToFit()
-//                .frame(width: 75, height: 75)
-//                .foregroundColor(Color .purple)
-//                .glow(color: ColorManager.purple4, radius: 3)
-//
-//
-//            //************************** DEMO VIDEO SECTION *****************************
-//            //******************************************************************
-//            //******************************************************************
-//
-//
-//
-//
-//
-//            Link(destination: URL(string: "https://socialtechlabs.com/bestfriendsnetwork_demo-video/")!) {
-//
-//                Text("Our Story")
-//                    .fontWeight(.thin)
-//                    .frame(width: 200, height: 40)
-//                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                    .font(.system(size: 25))
-//                    .background(Color.cyan)
-//                    .cornerRadius(15)
-//                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//
-//            }
-//        }
-        
-        ZStack {
-//        VStack {
+
+ZStack {
+
             Text("Demo Video")
                 .font(.system(size: 35))
                 .fontWeight(.regular)
@@ -128,48 +91,22 @@ VStack {
                 .foregroundColor(Color.white)
                 .rotationEffect(.degrees(-10))
             
-            Link(destination: URL(string: "https://socialtechlabs.com/bestfriendsnetwork_demo-video/")!) {
-    
-                Image("comicBubble")
-                    .resizable()
-                    .foregroundColor(Color.purple)
-                    .frame(width: 300, height: 200)
-                    .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
-                    .rotationEffect(.degrees(-10))
-                    .opacity(0.5)
-           
-               
-                    
-               
-                    
-                    
+    Link(destination: URL(string: "https://socialtechlabs.com/bestfriendsnetwork_demo-video/")!) {
+        Image("comicBubble")
+            .resizable()
+            .foregroundColor(Color.purple)
+            .frame(width: 300, height: 200)
+            .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+            .rotationEffect(.degrees(-10))
+            .opacity(0.5)
+             
                 }
             }
-//        }
-//    }
+
+//******************************************************************
 
 VStack {
     
-    HStack {
-        
-        
-//        NavigationLink( destination: RRdemoVideo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-//                        label: {
-//            Text("Walk-through")
-//                .fontWeight(.medium)
-//                .font(.system(size: 60))
-//                .foregroundColor(.white)
-//                .glow(color: ColorManager.purple4, radius: 3)
-//                .opacity(0.15)
-//
-//        })
-    }
-            
-    
-//******************************************************************
-//******************************************************************
-//******************************************************************
-        
         HStack {
 
                 Image("")
