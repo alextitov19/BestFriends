@@ -261,19 +261,19 @@ HStack {
               Image("comicBubble")
                   .resizable()
                   .foregroundColor(Color.cyan)
-                  .frame(width: 300, height: 120)
+                  .frame(width: 320, height: 120)
                   .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
                   .opacity(0.95)
               
               VStack {
                   
-                  Text("Friendship Attention")
+                  Text("Mindfullness")
                       .font(.system(size: 25))
                       .fontWeight(.light)
                       .multilineTextAlignment(.center)
                       .foregroundColor(Color.cyan)
 
-                  Text("sharing emotions")
+                  Text("sharing real-time emotions")
                       .font(.system(size: 14))
                       .fontWeight(.light)
                       .multilineTextAlignment(.center)
@@ -318,7 +318,7 @@ HStack {
                 Image("comicBubble")
                     .resizable()
                     .foregroundColor(Color.purple)
-                    .frame(width: 190, height: 120)
+                    .frame(width: 290, height: 120)
                     .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
                     .opacity(0.95)
                 
@@ -330,7 +330,7 @@ HStack {
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
                     
-                    Text("'shake' iPhone")
+                    Text("'shake' iPhone to view")
                         .font(.system(size: 14))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
