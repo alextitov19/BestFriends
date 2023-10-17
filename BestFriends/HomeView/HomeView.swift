@@ -118,15 +118,15 @@ struct HomeView: View {
                                             .frame(width: 90, height: 90)
                                             .foregroundColor(Color.white)
                                             .glow(color: Color.white, radius: 1.5)
-                                            .blinking(duration: 4.0)
+//                                            .blinking(duration: 4.0)
                                             .opacity(0.8)
                                         
-                                        Text("What's \nUp!")
-                                            .font(.system(size: 11))
-                                            .foregroundColor(ColorManager .grey2)
-                                            .fontWeight(.light)
-                                            .opacity(0.9)
-                                            .multilineTextAlignment(.center)
+//                                        Text("What's \nUp!")
+//                                            .font(.system(size: 11))
+//                                            .foregroundColor(ColorManager .grey2)
+//                                            .fontWeight(.light)
+//                                            .opacity(0.9)
+//                                            .multilineTextAlignment(.center)
                                     }
                                 })
                             
@@ -185,7 +185,7 @@ struct HomeView: View {
                                 .rotationEffect(.degrees(-10))
                                 .glow(color: ColorManager .grey2, radius: 3)
                                 .shadow(color: Color.blue, radius: 2, x: 0, y: 3)
-                                .blinking(duration: 0.75)
+                                .blinking(duration: 3.0)
                             
                         }
                         
@@ -255,7 +255,7 @@ struct HomeView: View {
                             
                             
                             Spacer()
-                                .frame(height: 330)
+                                .frame(height: 325)
                             
                             
                             
@@ -279,7 +279,7 @@ struct HomeView: View {
                                             .frame(width: 75, height: 75)
                                             .foregroundColor(ColorManager .purple5)
                                             .glow(color: Color.purple, radius: 2)
-                                            .blinking(duration: 4.0)
+                                            .blinking(duration: 3.0)
                                             .opacity(0.95)
                                     })
                             }
