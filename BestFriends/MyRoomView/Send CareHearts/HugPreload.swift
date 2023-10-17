@@ -67,7 +67,7 @@ struct HugPreload: View {
                             Spacer ()
                                 .frame(height: 15)
 //
-                            Text("quickly send")
+                            Text("easily send")
                                 .font(.system(size: 15))
                                 .italic()
                                 .foregroundColor(Color.white)
