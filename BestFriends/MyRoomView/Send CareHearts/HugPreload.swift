@@ -52,7 +52,7 @@ struct HugPreload: View {
                         
 
                         VStack {
-                            Text("my")
+                            Text("building my")
                                 .font(.system(size: 30))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
@@ -67,7 +67,7 @@ struct HugPreload: View {
                             Spacer ()
                                 .frame(height: 15)
 //
-                            Text("Quickly send")
+                            Text("quickly send")
                                 .font(.system(size: 15))
                                 .italic()
                                 .foregroundColor(Color.white)
@@ -86,12 +86,12 @@ struct HugPreload: View {
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                             
-                            Text("matching your friend's Vibe")
-                                .font(.system(size: 15))
-                                .italic()
-                                .foregroundColor(Color.white)
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
+//                            Text("matching your friend's Vibe")
+//                                .font(.system(size: 15))
+//                                .italic()
+//                                .foregroundColor(Color.white)
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
                             
                      
                         }
