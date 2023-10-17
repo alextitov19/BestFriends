@@ -156,24 +156,61 @@ struct HomeView: View {
                                
 //    ****************************************
 
-                        NavigationLink(
-                            destination:  RR33(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                            label: {
-                                
-                                ZStack {
-//                                    Image("iconFightG")
-                                    Image(systemName: "cube")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 50, height: 50)
-                                        .foregroundColor(Color.white)
-                                        .glow(color: Color.cyan, radius: 3)
-                                        .opacity(0.155)
-//                                      .blinking(duration: 4.0)
-                                
+                        
+                        ZStack {
+                            
+                            Image("iconStar40")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 60, height: 60)
+                                .foregroundColor(ColorManager .grey3)
+                            //                                    .blinking(duration: 2.0)
+                                .glow(color: ColorManager.purple4, radius: 3)
+                                .opacity(0.5)
+                                .onTapGesture {
+                                    print("Clicked notification bell")
+                                    presentingIANs.toggle()
                                 }
-                                    
-                            })
+                            
+                            NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
+                            ) { EmptyView() }
+                            
+                            
+                            Image(systemName: "star")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 55, height: 55)
+                                .foregroundColor(ColorManager .grey2)
+                                .opacity(0.4)
+                                .rotationEffect(.degrees(-10))
+                                .glow(color: ColorManager .grey2, radius: 3)
+                                .shadow(color: Color.blue, radius: 2, x: 0, y: 3)
+                                .blinking(duration: 0.75)
+                            
+                        }
+                        
+                        
+                        
+                        
+//     ************************************************
+//                        NavigationLink(
+//                            destination:  RR33(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+//                            label: {
+//
+//                                ZStack {
+////                                    Image("iconFightG")
+//                                    Image(systemName: "cube")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 50, height: 50)
+//                                        .foregroundColor(Color.white)
+//                                        .glow(color: Color.cyan, radius: 3)
+//                                        .opacity(0.155)
+////                                      .blinking(duration: 4.0)
+//
+//                                }
+//
+//                            })
                     
                             
     
@@ -274,36 +311,20 @@ struct HomeView: View {
                                 .frame(width: 40)
                             
                             
-                            ZStack {
+                ZStack {
                                 
-                                Image("iconStar40")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 60, height: 60)
-                                    .foregroundColor(ColorManager .grey3)
-                                //                                    .blinking(duration: 2.0)
-                                    .glow(color: ColorManager.purple4, radius: 3)
-                                    .opacity(0.5)
-                                    .onTapGesture {
-                                        print("Clicked notification bell")
-                                        presentingIANs.toggle()
-                                    }
-                                
-                                NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
-                                ) { EmptyView() }
-                                
-                                
-                                Image(systemName: "star")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 55, height: 55)
-                                    .foregroundColor(ColorManager .grey2)
-                                    .opacity(0.4)
-                                    .rotationEffect(.degrees(-10))
-                                    .glow(color: ColorManager .grey2, radius: 3)
-                                    .shadow(color: Color.blue, radius: 2, x: 0, y: 3)
-                                    .blinking(duration: 0.75)
-                                
+                                NavigationLink(
+                                    destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
+                                    label: {
+                                        
+                                        Image("iconSettings")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 45, height: 45)
+                                            .foregroundColor(ColorManager .purple5)
+                                            .glow(color: Color.purple, radius: 2)
+                                            .opacity(0.9)
+                                })
                             }
                             
                             
@@ -332,20 +353,27 @@ struct HomeView: View {
                             
 
                             ZStack {
+                                
+                                
                                 NavigationLink(
-                                    destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
+                                    destination:  RR33(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                     label: {
+
+                                        ZStack {
+        //                                    Image("iconFightG")
+                                            Image(systemName: "cube")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 50, height: 50)
+                                                .foregroundColor(Color.white)
+                                                .glow(color: Color.cyan, radius: 3)
+                                                .opacity(0.155)
+        //                                      .blinking(duration: 4.0)
                                         
-                                        Image("iconSettings")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 45, height: 45)
-                                            .foregroundColor(ColorManager .purple5)
-                                            .glow(color: Color.purple, radius: 2)
-                                            .opacity(0.9)
-                                    })
-                                }
-                           
+                                    }
+                                })
+                                
+                            }
                         }
                     }
                     
