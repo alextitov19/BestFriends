@@ -52,14 +52,14 @@ struct HugPreload: View {
                         
 
                         VStack {
-                            Text("Build")
-                                .font(.system(size: 25))
+                            Text("my")
+                                .font(.system(size: 30))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                             
                             Text("formidable friendships")
-                                .font(.system(size: 25))
+                                .font(.system(size: 30))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
@@ -75,19 +75,19 @@ struct HugPreload: View {
                                 .multilineTextAlignment(.center)
                      
                             Text("Friendship")
-                                .font(.system(size: 35))
+                                .font(.system(size: 25))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                             
                             Text("Cornerstones")
-                                .font(.system(size: 35))
+                                .font(.system(size: 25))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                             
                             Text("matching your friend's Vibe")
-                                .font(.system(size: 18))
+                                .font(.system(size: 15))
                                 .italic()
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
