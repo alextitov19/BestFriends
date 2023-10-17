@@ -52,7 +52,7 @@ struct HugPreload: View {
                         
 
                         VStack {
-                            Text("building my")
+                            Text("building 2-way")
                                 .font(.system(size: 30))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)

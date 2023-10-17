@@ -117,7 +117,7 @@ struct FH2: View {
                     Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(Color.purple)
-                        .frame(width: 375, height: 375)
+                        .frame(width: 450, height: 450)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                         .opacity(0.5)
                     
@@ -161,6 +161,19 @@ struct FH2: View {
                         
                         Spacer()
                             .frame(height: 20)
+                        Text("In a world of")
+                            .fontWeight(.medium)
+                            .font(.system(size: 45))
+                            .foregroundColor(.white)
+                            .glow(color: ColorManager.purple4, radius: 3)
+                            .opacity(0.15)
+                        
+                        Text("division & hate")
+                            .fontWeight(.medium)
+                            .font(.system(size: 45))
+                            .foregroundColor(.white)
+                            .glow(color: ColorManager.purple4, radius: 3)
+                            .opacity(0.15)
                         
                         VStack {
                             
