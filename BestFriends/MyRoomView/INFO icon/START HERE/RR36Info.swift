@@ -148,91 +148,57 @@ VStack {
         }
 //                **************  Chat Setup **************************
     
-    
-    
-    
-
-     
+    VStack {
         
         HStack {
+            
+            Image("")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 70, height: 70)
+                .opacity(0.9)
+            //                    .blinking(duration: 2.0)
+            
+            Spacer()
+                .frame(width: 0)
+            
+            
+            
             ZStack {
-                
-//                Image(systemName: "circle")
-//                    .resizable()
-//                    .scaledToFit()
-//                    .frame(width: 75, height: 75)
-//                    .foregroundColor(Color .purple)
-//                    .glow(color: ColorManager.purple4, radius: 3)
-//                    .blinking(duration: 2.0)
-                
-                NavigationLink( destination: FH9(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                label: {
-                    Text("tap")
-                        .foregroundColor(Color.white)
-                        .frame(width: 60, height: 60)
-                        .multilineTextAlignment(.center)
-                        .font(.system(size: 16))
-                    //                                   .padding(10)
-                        .background(Color.gray)
-                        .cornerRadius(50)
-                        .glow(color: Color.white, radius: 20)
-                        .shadow(color: Color.white, radius: 2, x: 2, y: 2)
-//                        .blinking(duration: 2.0)
-                    //                                   .blinking(duration: 4.0)
-                    
-                })
-            }
-
-            ZStack {
-                
                 
                 Image("comicBubble")
                     .resizable()
                     .foregroundColor(Color.purple)
-                    .frame(width: 250, height: 170)
+                    .frame(width: 250, height: 110)
                     .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
-//                    .rotationEffect(.degrees(-10))
+                //                    .rotationEffect(.degrees(-10))
                     .opacity(0.95)
                 
                 VStack {
                     
-                  
-                    
-                    Text("how to")
-                        .font(.system(size: 15))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-//                        .rotationEffect(.degrees(-10))
-                        .foregroundColor(Color.white)
-                    
-                    Text("Build & Access")
-                        .font(.system(size: 21))
-                        .fontWeight(.regular)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
-//                        .rotationEffect(.degrees(-10))
-//                        .blinking(duration: 2.0)
-                    
-                    Text("Chat Rooms")
-                        .font(.system(size: 21))
-                        .fontWeight(.regular)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
-//                        .rotationEffect(.degrees(-10))
-//                        .blinking(duration: 2.0)
-                    
-                    Text("")
-                        .font(.system(size: 21))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
-                        .rotationEffect(.degrees(-10))
-
-                    
-                }
+                    NavigationLink( destination: FH9(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                    label: {
+                        VStack {
+                            Text("Create")
+                                .font(.system(size: 15))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                            
+                            Text("Chat Rooms")
+                                .font(.system(size: 21))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                        }
+                    }
+                )}
             }
         }
+    }
+    
+
      
     NavigationLink(destination:  RR40Info2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                label: {
