@@ -361,14 +361,13 @@ struct HomeView: View {
 
                                         ZStack {
         //                                    Image("iconFightG")
-                                            Image(systemName: "cube")
+                                            Image("iconFightG")
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 50, height: 50)
-                                                .foregroundColor(Color.white)
-                                                .glow(color: Color.cyan, radius: 3)
-                                                .opacity(0.155)
-        //                                      .blinking(duration: 4.0)
+                                                .foregroundColor(ColorManager .purple5)
+                                                .glow(color: Color.purple, radius: 2)
+                                                .opacity(0.9)
                                         
                                     }
                                 })
