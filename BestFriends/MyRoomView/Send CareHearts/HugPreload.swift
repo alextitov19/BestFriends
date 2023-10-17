@@ -52,13 +52,13 @@ struct HugPreload: View {
                         
 
                         VStack {
-                            Text("Sending friendship")
+                            Text("Friendship")
                                 .font(.system(size: 18))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
 //
-                            Text("CareHearts")
+                            Text("Mindfullness")
                                 .font(.system(size: 35))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
@@ -86,7 +86,7 @@ HStack {
                
 
             NavigationLink(destination: RR11(user: user, friend: user, friends: friends, groups: groups), label: {
-                HugCircle (color: Color.cyan, friendName: "Hearts")
+                HugCircle (color: Color.cyan, friendName: "Care \nHearts")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
             .shadow(color: Color .blue, radius: 2, x: 2, y: 2)

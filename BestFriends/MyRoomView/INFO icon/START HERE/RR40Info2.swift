@@ -226,7 +226,7 @@ HStack {
               Image("")
                   .resizable()
                   .scaledToFit()
-                  .frame(width: 70, height: 70)
+                  .frame(width: 20, height: 20)
                   .opacity(0.9)
 //                    .blinking(duration: 2.0)
           
@@ -261,13 +261,13 @@ HStack {
               Image("comicBubble")
                   .resizable()
                   .foregroundColor(Color.cyan)
-                  .frame(width: 210, height: 120)
+                  .frame(width: 300, height: 120)
                   .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
                   .opacity(0.95)
               
               VStack {
                   
-                  Text("CareHearts")
+                  Text("Friendship Attention")
                       .font(.system(size: 25))
                       .fontWeight(.light)
                       .multilineTextAlignment(.center)
