@@ -185,13 +185,13 @@ HStack {
                 Image("comicBubble")
                     .resizable()
                     .foregroundColor(Color.purple)
-                    .frame(width: 350, height: 140)
+                    .frame(width: 350, height: 160)
                     .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
                     .opacity(0.95)
                 
                 VStack {
                     
-                    Text("What's Up?")
+                    Text("What's up?")
                         .font(.system(size: 25))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
@@ -261,7 +261,7 @@ HStack {
               Image("comicBubble")
                   .resizable()
                   .foregroundColor(Color.cyan)
-                  .frame(width: 320, height: 120)
+                  .frame(width: 320, height: 130)
                   .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
                   .opacity(0.95)
               
@@ -318,7 +318,7 @@ HStack {
                 Image("comicBubble")
                     .resizable()
                     .foregroundColor(Color.purple)
-                    .frame(width: 290, height: 120)
+                    .frame(width: 290, height: 130)
                     .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
                     .opacity(0.95)
                 
