@@ -85,7 +85,7 @@ struct HomeView: View {
                                     
                                     ZStack {
                                         Image(systemName: "heart")
-                                        Image(systemName: "cube")
+                                        Image(systemName: "cube.fill")
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 50, height: 50)
@@ -136,7 +136,7 @@ struct HomeView: View {
                                         
                                         ZStack {
                                             Image(systemName: "heart")
-                                            Image(systemName: "cube")
+                                            Image(systemName: "cube.fill")
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 50, height: 50)
@@ -272,20 +272,29 @@ struct HomeView: View {
                                             Image("iconRocket")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 75, height: 75)
+                                                .frame(width: 90, height: 90)
                                                 .foregroundColor(ColorManager .purple5)
-                                                .glow(color: Color.white, radius: 10)
-                                            //                                            .blinking(duration: 3.0)
-                                                .opacity(0.95)
-                                            
-                                            Image(systemName: "cube")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 75, height: 75)
-                                                .foregroundColor(ColorManager .purple5)
-                                                .glow(color: Color.white, radius: 10)
+//                                                .glow(color: Color.white, radius: 1)
                                                 .blinking(duration: 3.0)
-                                                .opacity(0.95)
+                                                .opacity(1.5)
+                                            
+                                            Text("Walk-through")
+                                                .font(.system(size: 10))
+                                                .fontWeight(.regular)
+                                                .multilineTextAlignment(.center)
+                                                .foregroundColor(Color.white)
+                                                .rotationEffect(.degrees(-50))
+//                                                .blinking(duration: 0.05)
+                                                .opacity(0.7)
+                                            
+//                                            Image(systemName: "cube")
+//                                                .resizable()
+//                                                .scaledToFit()
+//                                                .frame(width: 75, height: 75)
+//                                                .foregroundColor(ColorManager .purple5)
+//                                                .glow(color: Color.white, radius: 10)
+//                                                .blinking(duration: 3.0)
+//                                                .opacity(0.95)
                                             
                                         }
                                 })
