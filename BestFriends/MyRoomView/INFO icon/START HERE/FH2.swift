@@ -161,19 +161,13 @@ struct FH2: View {
                         
                         Spacer()
                             .frame(height: 20)
-                        Text("In a world of")
+                        Text("admist the drama")
                             .fontWeight(.medium)
                             .font(.system(size: 45))
                             .foregroundColor(.white)
                             .glow(color: ColorManager.purple4, radius: 3)
                             .opacity(0.15)
-                        
-                        Text("division & hate")
-                            .fontWeight(.medium)
-                            .font(.system(size: 45))
-                            .foregroundColor(.white)
-                            .glow(color: ColorManager.purple4, radius: 3)
-                            .opacity(0.15)
+                     
                         
                         VStack {
                             
