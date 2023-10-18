@@ -317,7 +317,7 @@ VStack {
             
             
             Spacer()
-                .frame(height: 100)
+                .frame(height: 20)
           
                             }
                         }
