@@ -88,7 +88,7 @@ struct HomeView: View {
                                         Image(systemName: "cube.fill")
                                             .resizable()
                                             .scaledToFit()
-                                            .frame(width: 50, height: 50)
+                                            .frame(width: 40, height: 40)
                                             .foregroundColor(ColorManager .purple5)
                                             .glow(color: ColorManager .grey2, radius: 10)
                                             .blinking(duration: 3.0)
@@ -98,7 +98,7 @@ struct HomeView: View {
                                 })
                             
                             Spacer()
-                                .frame(width: 10)
+                                .frame(width: 20)
                             
                             
                             
@@ -110,7 +110,7 @@ struct HomeView: View {
                                         Image("iconVibes75")
                                             .resizable()
                                             .scaledToFit()
-                                            .frame(width: 90, height: 90)
+                                            .frame(width: 60, height: 60)
                                             .foregroundColor(Color.white)
                                             .glow(color: Color.white, radius: 1.5)
 //                                            .blinking(duration: 4.0)
@@ -126,7 +126,7 @@ struct HomeView: View {
                                 })
                             
                             Spacer()
-                                .frame(width: 10)
+                                .frame(width: 20)
                             
                             ZStack {
                                 
@@ -139,7 +139,7 @@ struct HomeView: View {
                                             Image(systemName: "cube.fill")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 50, height: 50)
+                                                .frame(width: 40, height: 40)
                                                 .foregroundColor(Color.cyan)
                                                 .glow(color: ColorManager .grey3, radius: 10)
                                                 .blinking(duration: 3.0)
@@ -181,7 +181,7 @@ struct HomeView: View {
                                 .rotationEffect(.degrees(-10))
                                 .glow(color: ColorManager .purple5, radius: 3)
                                 .shadow(color: Color.blue, radius: 2, x: 0, y: 3)
-                                .blinking(duration: 3.0)
+                                .blinking(duration: 2.0)
                             
                         }
                         
