@@ -130,27 +130,7 @@ VStack {
         
 //        ************************************
         
-        ZStack {
-           
-            NavigationLink( destination: RR14(user: user, friend: user, friends: friends, groups: groups),
-                            label: {
-                Image(systemName: "circle.fill")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 75, height: 75)
-                    .foregroundColor(ColorManager .grey1)
-                    .shadow(color: Color.green, radius: 3, x: 3, y: 3)
-                    .opacity(0.95)
-            })
-            
-            Text("Congrats!")
-                .font(.system(size: 17))
-                .fontWeight(.regular)
-                .multilineTextAlignment(.center)
-                .foregroundColor(Color.black)
-            
-        }
-        
+
         ZStack {
             
             
@@ -218,27 +198,7 @@ VStack {
 //   ************************************************
                     Spacer ()
                         .frame(width: 15)
-                    ZStack {
-                        
-                        NavigationLink( destination: RR29(user: user, friends: friends),
-                                        label: {
-                            Image(systemName: "circle.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 75, height: 75)
-                                .foregroundColor(ColorManager .grey1)
-                                .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
-                                .opacity(0.95)
-                        })
-                        
-                        Text("We can \nhelp")
-                            .font(.system(size: 17))
-                            .fontWeight(.regular)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.black)
-                        
-                    }
-                    
+
     //               ************************************************
                     ZStack {
                         
@@ -311,28 +271,7 @@ VStack {
            
                 Spacer ()
                     .frame(width: 15)
-                ZStack {
-                   
-                    NavigationLink( destination: VirtualHug(user: user, friends: friends),
-                                    label: {
-                        Image(systemName: "circle.fill")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 75, height: 75)
-                            .foregroundColor(ColorManager .grey1)
-                            .shadow(color: Color.cyan, radius: 3, x: 3, y: 3)
-                            .opacity(0.95)
-                    })
-                    
-                    Text("Let us help")
-                        .font(.system(size: 17))
-                        .fontWeight(.regular)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.black)
-                    
-                }
 
-//
 //                ********************************************
                     
                     
