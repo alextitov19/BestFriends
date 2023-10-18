@@ -297,7 +297,7 @@ struct FriendPlanetsView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 45, height: 45)
-                        .foregroundColor(Color .green)
+                        .foregroundColor(Color .purple)
                         .glow(color: ColorManager.purple4, radius: 2)
 //                        .blinking(duration: 2.0)
                     
