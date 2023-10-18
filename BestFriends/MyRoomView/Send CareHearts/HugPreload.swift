@@ -73,14 +73,14 @@ struct HugPreload: View {
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
-                     
-                            Text("friendship")
-                                .font(.system(size: 25))
-                                .foregroundColor(Color.white)
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
+//
+//                            Text("friendship")
+//                                .font(.system(size: 25))
+//                                .foregroundColor(Color.white)
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
                             
-                            Text("attention")
+                            Text("desired attention")
                                 .font(.system(size: 25))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)

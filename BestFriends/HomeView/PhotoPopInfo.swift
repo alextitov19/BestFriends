@@ -182,10 +182,10 @@ VStack {
         
         HStack {
             
-            Image("")
+            Image("CoolGuy")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 70, height: 70)
+                .frame(width: 120, height: 120)
                 .opacity(0.9)
             //                    .blinking(duration: 2.0)
             
@@ -199,7 +199,7 @@ VStack {
                 Image("comicBubble")
                     .resizable()
                     .foregroundColor(Color.purple)
-                    .frame(width: 250, height: 110)
+                    .frame(width: 200, height: 100)
                     .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                 //                    .rotationEffect(.degrees(-10))
                     .opacity(0.95)
@@ -222,10 +222,59 @@ VStack {
                                 .foregroundColor(Color.white)
                         }
                     }
-                )}
+                    )}
+            }
+        }
+        
+        // ********************************** Smile Vault **********************
+        
+        VStack {
+            
+            HStack {
+                
+                
+                
+                ZStack {
+                    
+                    Image("comicBubble")
+                        .resizable()
+                        .foregroundColor(Color.purple)
+                        .frame(width: 200, height: 100)
+                        .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+                    //                    .rotationEffect(.degrees(-10))
+                        .opacity(0.95)
+                    
+                    VStack {
+                        
+                        NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                                        label: {
+                            VStack {
+                                Text("Keepsake")
+                                    .font(.system(size: 20))
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.white)
+                                
+                                Text("Messages")
+                                    .font(.system(size: 20))
+                                    .fontWeight(.regular)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.white)
+                            }
+                        }
+                        )}
+                }
+                Image("")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 70, height: 70)
+                    .opacity(0.9)
             }
         }
     }
+        
+//********************************************
+    
     
     Spacer()
         .frame(height: 50)
@@ -244,8 +293,29 @@ VStack {
                     
                 })
 
-        VStack {
-                                
+    Spacer()
+        .frame(height: 20)
+    
+            VStack {
+                               
+                               Button(action: {
+                                   sessionManager.showLogin()
+                               },
+                                      label: {
+                                   Image("home-alt2")
+                                       .frame(width: 60, height: 30)
+                                       .foregroundColor(.black)
+                                       .font(.system(size: 20))
+                                       .background(ColorManager .grey3)
+                                       .cornerRadius(15)
+                                       .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                       .opacity(0.70)
+                                   
+                               })
+                           }
+            
+            
+            
             Spacer()
                 .frame(height: 100)
           
@@ -253,7 +323,7 @@ VStack {
                         }
                     }
                 }
-            }
+            
 
    
         
