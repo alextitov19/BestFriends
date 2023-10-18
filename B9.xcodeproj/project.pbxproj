@@ -1024,7 +1024,7 @@
 				CFE1946A2812A9E300ED5718 /* Streaks */,
 				CF6C5B022A86062500EC4915 /* INFO icon */,
 				CF6C5B092A86092200EC4915 /* START HERE */,
-				CF6C5B082A8608E500EC4915 /* CAREHEARTS */,
+				CF2FCE7C2ADF7D6F0025DD50 /* AI & System */,
 				CF6C5B0D2A860B3300EC4915 /* CareHearts INFO */,
 				CF6C5B0C2A860AD100EC4915 /* Send CareHearts */,
 				CF6C5B0B2A860A7300EC4915 /* My VIBE */,
@@ -1293,6 +1293,14 @@
 				CF381A582829205800B3719E /* OurMission.swift */,
 			);
 			path = "My Planet";
+			sourceTree = "<group>";
+		};
+		CF2FCE7C2ADF7D6F0025DD50 /* AI & System */ = {
+			isa = PBXGroup;
+			children = (
+				CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */,
+			);
+			path = "AI & System";
 			sourceTree = "<group>";
 		};
 		CF37535628BECF34003817E3 /* Built By Teens */ = {
@@ -1577,20 +1585,11 @@
 				CF24815628F5060100D47AE3 /* PhotoPop3.swift */,
 				2DFB03222A5D308600669948 /* CH5.swift */,
 				7A04C13E2855390B003AB24A /* PhotoPopImageView.swift */,
-				CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */,
 				CF24815428F5018B00D47AE3 /* PhotoPop1.swift */,
 				CF0EB7D72A736808000B2A1F /* FriendshipRewards */,
 			);
 			name = PHOTOPOP;
 			path = PhotoPop/PHOTOPOP;
-			sourceTree = "<group>";
-		};
-		CF6C5B082A8608E500EC4915 /* CAREHEARTS */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = CAREHEARTS;
-			path = Accessorizing/CAREHEARTS;
 			sourceTree = "<group>";
 		};
 		CF6C5B092A86092200EC4915 /* START HERE */ = {
