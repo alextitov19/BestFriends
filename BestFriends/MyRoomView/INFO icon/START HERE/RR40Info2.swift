@@ -261,13 +261,19 @@ HStack {
               Image("comicBubble")
                   .resizable()
                   .foregroundColor(Color.cyan)
-                  .frame(width: 320, height: 130)
+                  .frame(width: 320, height: 175)
                   .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
                   .opacity(0.95)
               
               VStack {
                   
-                  Text("Mindfullness")
+                  Text("Formidable")
+                      .font(.system(size: 25))
+                      .fontWeight(.light)
+                      .multilineTextAlignment(.center)
+                      .foregroundColor(Color.cyan)
+                  
+                  Text("Friendships")
                       .font(.system(size: 25))
                       .fontWeight(.light)
                       .multilineTextAlignment(.center)
@@ -278,6 +284,9 @@ HStack {
                       .fontWeight(.light)
                       .multilineTextAlignment(.center)
                       .foregroundColor(Color.white)
+                 
+                  Spacer()
+                      .frame(height: 20)
                   
               }
           }

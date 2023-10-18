@@ -246,7 +246,7 @@ VStack {
                         Image("comicBubble")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 190, height: 100)
+                            .frame(width: 225, height: 100)
                             .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
                             .opacity(0.95)
 //                            .blinking(duration: 3.0)
@@ -254,13 +254,13 @@ VStack {
                         VStack {
                         
                             
-                            Text("Big event")
+                            Text("Something Big")
                                 .font(.system(size: 20))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.cyan)
                               
-                            Text("soon")
+                            Text("happening")
                                 .font(.system(size: 20))
                                 .fontWeight(.regular)
                                 .multilineTextAlignment(.center)

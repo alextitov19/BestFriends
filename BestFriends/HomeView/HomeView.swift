@@ -84,21 +84,16 @@ struct HomeView: View {
                                 label: {
                                     
                                     ZStack {
+                                        Image(systemName: "heart")
                                         Image(systemName: "cube")
                                             .resizable()
                                             .scaledToFit()
-                                            .frame(width: 55, height: 55)
-                                            .foregroundColor(Color.white)
-                                            .glow(color: Color.cyan, radius: 3)
-                                            .opacity(0.15)
-                                        //                        .blinking(duration: 4.0)
-                                        //                     Text("CareHearts")
-                                        //                         .font(.system(size: 9))
-                                        //                         .foregroundColor(Color.white)
-                                        //                         .fontWeight(.light)
-                                        //                         .opacity(0.9)
-                                        //                         .multilineTextAlignment(.center)
-                                        
+                                            .frame(width: 50, height: 50)
+                                            .foregroundColor(ColorManager .purple5)
+                                            .glow(color: Color.white, radius: 10)
+                                            .blinking(duration: 3.0)
+                                            .opacity(0.95)
+                                  
                                     }
                                 })
                             
@@ -140,14 +135,15 @@ struct HomeView: View {
                                     label: {
                                         
                                         ZStack {
+                                            Image(systemName: "heart")
                                             Image(systemName: "cube")
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 50, height: 50)
-                                                .foregroundColor(Color.white)
-                                                .glow(color: Color.cyan, radius: 3)
-                                                .opacity(0.15)
-                                            //                           .blinking(duration: 4.0)
+                                                .foregroundColor(Color.cyan)
+                                                .glow(color: Color.white, radius: 10)
+                                                .blinking(duration: 3.0)
+                                                .opacity(0.95)
                                             
                                         }
                                     })
@@ -176,14 +172,14 @@ struct HomeView: View {
                             ) { EmptyView() }
                             
                             
-                            Image(systemName: "star")
+                            Image(systemName: "star.fill")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 55, height: 55)
-                                .foregroundColor(ColorManager .grey2)
-                                .opacity(0.4)
+                                .foregroundColor(ColorManager .purple4)
+                                .opacity(0.125)
                                 .rotationEffect(.degrees(-10))
-                                .glow(color: ColorManager .grey2, radius: 3)
+                                .glow(color: ColorManager .purple5, radius: 3)
                                 .shadow(color: Color.blue, radius: 2, x: 0, y: 3)
                                 .blinking(duration: 3.0)
                             
@@ -272,17 +268,33 @@ struct HomeView: View {
                                 NavigationLink(
                                     destination:  RR36Info(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                     label: {
-                                        
-                                        Image("iconRocket")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 75, height: 75)
-                                            .foregroundColor(ColorManager .purple5)
-                                            .glow(color: Color.purple, radius: 2)
-                                            .blinking(duration: 3.0)
-                                            .opacity(0.95)
-                                    })
+                                        ZStack {
+                                            Image("iconRocket")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 75, height: 75)
+                                                .foregroundColor(ColorManager .purple5)
+                                                .glow(color: Color.white, radius: 10)
+                                            //                                            .blinking(duration: 3.0)
+                                                .opacity(0.95)
+                                            
+                                            Image(systemName: "cube")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 75, height: 75)
+                                                .foregroundColor(ColorManager .purple5)
+                                                .glow(color: Color.white, radius: 10)
+                                                .blinking(duration: 3.0)
+                                                .opacity(0.95)
+                                            
+                                        }
+                                })
                             }
+                            
+                            
+                            
+                            
+                            
                             
                             HStack {
                                 
@@ -431,7 +443,7 @@ struct HomeView: View {
 //                                .padding()
                             
 
-                            NavigationLink(destination: FH2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups), label: {
+                            NavigationLink(destination: EmptyView(), label: {
                                 PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
                                     .scaledToFit()
                                     .frame(width: 120, height: 120)
@@ -446,7 +458,7 @@ struct HomeView: View {
 //******************************* CENTER PLANET NAVIGATION *************************
                         
                         NavigationLink(
-                            destination:   RR36Info(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                            destination:   PhotoPopInfo(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                             label: {
 
                                 Image(systemName: "")

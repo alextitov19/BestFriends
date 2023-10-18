@@ -1163,6 +1163,7 @@
 			isa = PBXGroup;
 			children = (
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
+				CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */,
 				7A45B8822A86CECF00F5E75B /* ImageSaver.swift */,
 				7AD2642929EDCE020007ACD5 /* NotificationsView.swift */,
 				CF3B42F1293715A800EE1D84 /* SaySomethingNice4.swift */,
@@ -1298,7 +1299,6 @@
 		CF2FCE7C2ADF7D6F0025DD50 /* AI & System */ = {
 			isa = PBXGroup;
 			children = (
-				CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */,
 			);
 			path = "AI & System";
 			sourceTree = "<group>";
