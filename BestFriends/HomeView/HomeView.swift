@@ -89,7 +89,7 @@ struct HomeView: View {
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 40, height: 40)
-                                            .foregroundColor(ColorManager .purple5)
+                                            .foregroundColor(Color.cyan)
                                             .glow(color: ColorManager .grey2, radius: 10)
                                             .blinking(duration: 3.0)
                                             .opacity(0.95)
@@ -140,7 +140,7 @@ struct HomeView: View {
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 40, height: 40)
-                                                .foregroundColor(Color.cyan)
+                                                .foregroundColor(ColorManager .purple5)
                                                 .glow(color: ColorManager .grey3, radius: 10)
                                                 .blinking(duration: 3.0)
                                                 .opacity(0.95)
@@ -251,7 +251,7 @@ struct HomeView: View {
                             
                             
                             Spacer()
-                                .frame(height: 325)
+                                .frame(height: 320)
                             
                             
                             
@@ -294,12 +294,12 @@ struct HomeView: View {
                             
                             
                             Text("Walk-through")
-                                .font(.system(size: 11))
-                                .fontWeight(.regular)
+                                .font(.system(size: 13))
+                                .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
                                 .rotationEffect(.degrees(-25))
-                                .opacity(0.7)
+                                .opacity(0.8)
                        
                     }
                 })
