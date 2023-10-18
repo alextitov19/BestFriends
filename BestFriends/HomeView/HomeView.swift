@@ -251,7 +251,7 @@ struct HomeView: View {
                             
                             
                             Spacer()
-                                .frame(height: 325)
+                                .frame(height: 315)
                             
                             
                             
@@ -269,10 +269,10 @@ struct HomeView: View {
                                     destination:  RR36Info(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                     label: {
                                         ZStack {
-                                            Image("iconRocket")
+                                            Image("FatGuy200")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 90, height: 90)
+                                                .frame(width: 100, height: 100)
                                                 .foregroundColor(ColorManager .purple5)
 //                                                .glow(color: Color.white, radius: 1)
                                                 .blinking(duration: 3.0)
@@ -283,7 +283,7 @@ struct HomeView: View {
                                                 .fontWeight(.regular)
                                                 .multilineTextAlignment(.center)
                                                 .foregroundColor(Color.white)
-                                                .rotationEffect(.degrees(-50))
+                                                .rotationEffect(.degrees(-25))
 //                                                .blinking(duration: 0.05)
                                                 .opacity(0.7)
                                             

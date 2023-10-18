@@ -84,13 +84,13 @@ HStack {
         HStack {
 
             ZStack {
-                Image("iconBubbleCyan")
-                    .resizable()
-                    .foregroundColor(Color.cyan)
-                    .frame(width: 400, height: 120)
-                    .shadow(color: Color.white, radius: 3, x: 3, y: 3)
-                    .rotationEffect(.degrees(-10))
-                    .opacity(0.5)
+//                Image("iconBubbleCyan")
+//                    .resizable()
+//                    .foregroundColor(Color.cyan)
+//                    .frame(width: 400, height: 120)
+//                    .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+//                    .rotationEffect(.degrees(-10))
+//                    .opacity(0.5)
                 //                            .blinking(duration: 3.0)
                 
                 
