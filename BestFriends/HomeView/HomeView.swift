@@ -90,7 +90,7 @@ struct HomeView: View {
                                             .scaledToFit()
                                             .frame(width: 50, height: 50)
                                             .foregroundColor(ColorManager .purple5)
-                                            .glow(color: Color.white, radius: 10)
+                                            .glow(color: ColorManager .grey2, radius: 10)
                                             .blinking(duration: 3.0)
                                             .opacity(0.95)
                                   
@@ -141,7 +141,7 @@ struct HomeView: View {
                                                 .scaledToFit()
                                                 .frame(width: 50, height: 50)
                                                 .foregroundColor(Color.cyan)
-                                                .glow(color: Color.white, radius: 10)
+                                                .glow(color: ColorManager .grey3, radius: 10)
                                                 .blinking(duration: 3.0)
                                                 .opacity(0.95)
                                             
