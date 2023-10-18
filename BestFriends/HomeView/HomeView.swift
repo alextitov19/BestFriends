@@ -251,7 +251,7 @@ struct HomeView: View {
                             
                             
                             Spacer()
-                                .frame(height: 315)
+                                .frame(height: 325)
                             
                             
                             
@@ -260,46 +260,51 @@ struct HomeView: View {
                         
                         //          ********************** Bottom Icons *************
                         
-                        VStack {
+    VStack {
+                           
+        HStack {
+            
+            Image(systemName: "")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 5, height: 5)
+                .foregroundColor(ColorManager .purple5)
+                .glow(color: Color.white, radius: 10)
+                .blinking(duration: 3.0)
+                .opacity(0.95)
+            
+            
+            Spacer()
+                .frame(width: 260)
+            
+            ZStack {
+                
+                NavigationLink(
+                    destination:  RR36Info(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                    label: {
+                        ZStack {
+                            
+                            Image("FatGuy200")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 120, height: 120)
+                                .foregroundColor(ColorManager .purple5)
+                                .blinking(duration: 5.0)
+                                .opacity(1.5)
                             
                             
-                            ZStack {
-                                
-                                NavigationLink(
-                                    destination:  RR36Info(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                                    label: {
-                                        ZStack {
-                                            Image("FatGuy200")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 100, height: 100)
-                                                .foregroundColor(ColorManager .purple5)
-//                                                .glow(color: Color.white, radius: 1)
-                                                .blinking(duration: 5.0)
-                                                .opacity(1.5)
-                                            
-                                            Text("Walk-through")
-                                                .font(.system(size: 10))
-                                                .fontWeight(.regular)
-                                                .multilineTextAlignment(.center)
-                                                .foregroundColor(Color.white)
-                                                .rotationEffect(.degrees(-25))
-//                                                .blinking(duration: 0.05)
-                                                .opacity(0.7)
-                                            
-//                                            Image(systemName: "cube")
-//                                                .resizable()
-//                                                .scaledToFit()
-//                                                .frame(width: 75, height: 75)
-//                                                .foregroundColor(ColorManager .purple5)
-//                                                .glow(color: Color.white, radius: 10)
-//                                                .blinking(duration: 3.0)
-//                                                .opacity(0.95)
-                                            
-                                        }
-                                })
-                            }
-                            
+                            Text("Walk-through")
+                                .font(.system(size: 11))
+                                .fontWeight(.regular)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .rotationEffect(.degrees(-25))
+                                .opacity(0.7)
+                       
+                    }
+                })
+            }
+        }
                             
                             
                             
