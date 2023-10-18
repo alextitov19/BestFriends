@@ -137,18 +137,8 @@ VStack {
     
     HStack {
         
-        Image("")
-            .resizable()
-            .scaledToFit()
-            .frame(width: 70, height: 70)
-            .opacity(0.9)
-        //                    .blinking(duration: 2.0)
-        
-        Spacer()
-            .frame(width: 40)
-        
-
-        
+     
+      
         ZStack {
             
             Image("comicBubble")
@@ -176,10 +166,16 @@ VStack {
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
                     }
-                    }
-                )}
-            }
+                }
+            )}
         }
+            Image("")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 70, height: 70)
+                .opacity(0.9)
+    }
+        
 //                **************  Chat Setup **************************
     
     VStack {
