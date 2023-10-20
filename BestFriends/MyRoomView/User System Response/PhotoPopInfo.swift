@@ -206,7 +206,7 @@ VStack {
                 
                 VStack {
                     
-                    NavigationLink( destination: VirtualHug(user: user, friends: friends),
+                    NavigationLink( destination: InfoComingChat(user: user, friends: friends),
                                     label: {
                         VStack {
                             Text("My day")
