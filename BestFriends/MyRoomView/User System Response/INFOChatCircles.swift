@@ -184,9 +184,9 @@ struct INFOChatCircles: View {
                         Image("iconThumbUp")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 60, height: 60)
+                            .frame(width: 200, height: 200)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                            .opacity(0.9)
+                            .opacity(0.5)
                        
                         
                         
@@ -382,19 +382,34 @@ struct INFOChatCircles: View {
                             sendMessage()
                         },
                                label: {
-                            Text("SHARE")
-                            
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager .grey2)
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your thank you has been sent.", isPresented: $showingAlert) {
+                            Image("iconShare")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 80, height: 80)
+                                .rotationEffect(.degrees(20))
+                                .foregroundColor(ColorManager .purple5)
+                                .glow(color: Color.purple, radius: 2)
+                                .opacity(0.6)
+                                .blinking(duration: 3.0)
+                                .alert("We just let your friend know your news", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
+                            
+//                            ***********
+//                            Text("SHARE")
+//                            
+//                                .fontWeight(.thin)
+//                                .frame(width: 100, height: 30)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 25))
+//                                .background(ColorManager .grey2)
+//                                .cornerRadius(25)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                .alert("Your thank you has been sent.", isPresented: $showingAlert) {
+//                                    Button("OK", role: .cancel) { }
+//                                }
+//                          ************
                             
                         })
                         
