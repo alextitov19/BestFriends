@@ -151,7 +151,7 @@ VStack {
             
             VStack {
                 
-                NavigationLink( destination: RR29(user: user, friends: friends),
+                NavigationLink( destination: RR25(user: user, friends: friends),
                                 label: {
                     VStack {
                         Text("Working on")

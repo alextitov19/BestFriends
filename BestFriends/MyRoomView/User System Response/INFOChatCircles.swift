@@ -46,7 +46,7 @@ struct INFOChatCircles: View {
 //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
-        customMessage = "Thx for Congratulations from; " + user.firstName + " : " + customMessage;
+        customMessage = "My News; " + user.firstName + " : " + customMessage;
         
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
@@ -97,12 +97,8 @@ struct INFOChatCircles: View {
                       
                   } else {
 
-                      Image("CareHeartBalloon 1")
-                          .ignoresSafeArea()
-                          .scaledToFit()
-                          .opacity(0.1)
                       
-                      Color.black
+                      Color.purple
                         .opacity(0.9)
                         .ignoresSafeArea()
                       
@@ -244,7 +240,7 @@ struct INFOChatCircles: View {
                                     TextField("", text: $customMessage)
                                         .placeholder(when: customMessage.isEmpty) {
                                             HStack {
-                                                Text("What's the News? ...")
+                                                Text("Let friends know what's up...")
                                                     .foregroundColor(Color.white)
                                                     .fontWeight(.thin)
                                                 Spacer()
@@ -255,13 +251,13 @@ struct INFOChatCircles: View {
                                         .submitLabel(.done)
                                         .onReceive(Just(customMessage)) { _ in limitText(65) }
                                         .padding(.top, 20)
-                                        .padding(.horizontal, 150)
+                                        .padding(.horizontal, 50)
                                         .overlay(
                                             RoundedRectangle(cornerRadius: 10)
                                                 .stroke(Color.purple)
                                             //                                                            .background(ColorManager.purple3)
                                                 .frame(height: 50)
-                                                .padding(.horizontal, 125)
+                                                .padding(.horizontal, 25)
                                         )
                                         .padding(.bottom, 5)
                                 }
@@ -275,7 +271,7 @@ struct INFOChatCircles: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("(Let friends know what's up!)")
+                    Text("(alert friend)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
@@ -392,25 +388,8 @@ struct INFOChatCircles: View {
                                 .opacity(0.6)
                                 .blinking(duration: 3.0)
                                 .alert("We just let your friend know your news", isPresented: $showingAlert) {
-                                    Button("OK", role: .cancel) { }
-                                }
-                            
-                            
-//                            ***********
-//                            Text("SHARE")
-//                            
-//                                .fontWeight(.thin)
-//                                .frame(width: 100, height: 30)
-//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                .font(.system(size: 25))
-//                                .background(ColorManager .grey2)
-//                                .cornerRadius(25)
-//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                                .alert("Your thank you has been sent.", isPresented: $showingAlert) {
-//                                    Button("OK", role: .cancel) { }
-//                                }
-//                          ************
-                            
+                                Button("OK", role: .cancel) { }
+                            }
                         })
                         
                         VStack {
