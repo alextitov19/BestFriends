@@ -80,7 +80,7 @@ VStack {
         VStack {
            
             
-            Text("Ask for CareHearts")
+            Text("Engaging Friends")
                 .font(.system(size: 25))
                 .fontWeight(.regular)
                 .multilineTextAlignment(.center)
@@ -114,7 +114,7 @@ VStack {
                 mood = 7
             }) {
                 
-                Text("tell \nfriends")
+                Text("exciting \nnews")
                     .font(.system(size: 15))
                     .foregroundColor(Color.black)
             }
@@ -147,7 +147,7 @@ VStack {
 //                    .multilineTextAlignment(.center)
 //                    .foregroundColor(Color.white)
 
-                Text("Exciting NEWS!")
+                Text("Alert friends")
                     .font(.system(size: 17))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
@@ -184,7 +184,7 @@ VStack {
                             //                                    showingAlert = true
                         }) {
                             
-                            Text("wish me luck!")
+                            Text("something \nbig")
                                 .font(.system(size: 15))
                                 .foregroundColor(Color.black)
                         }
@@ -212,17 +212,17 @@ VStack {
                         VStack {
                         
                             
-                            Text("Working on")
+                            Text("Wish me Luck")
                                 .font(.system(size: 17))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
-                              
-                            Text("something big")
-                                .font(.system(size: 17))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
+//
+//                            Text("something big")
+//                                .font(.system(size: 17))
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(Color.white)
 
                         }
                     }
@@ -350,7 +350,7 @@ VStack {
                     Image("comicBubble")
                         .resizable()
                         .foregroundColor(Color.cyan)
-                        .frame(width: 220, height: 80)
+                        .frame(width: 240, height: 80)
                         .shadow(color: Color.cyan, radius: 3, x: 3, y: 3)
                         .opacity(0.95)
 //                            .blinking(duration: 5.0)
@@ -359,7 +359,7 @@ VStack {
                         
                     
                         
-                        Text("send PhotoPOP")
+                        Text("ask for PhotoPOP")
                             .font(.system(size: 17))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)

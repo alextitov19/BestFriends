@@ -334,20 +334,20 @@ struct HomeView: View {
                                 }
                                 
                                 
-                                ZStack {
-                                    NavigationLink(
-                                        destination:  RR5(user: homeData!.user, friends: homeData!.friends),
-                                        label: {
-                                            
-                                            Image("IconHugNew")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 45, height: 45)
-                                                .foregroundColor(ColorManager .purple5)
-                                                .glow(color: Color.purple, radius: 2)
-                                                .opacity(0.9)
-                                        })
-                                }
+//                                ZStack {
+//                                    NavigationLink(
+//                                        destination:  RR5(user: homeData!.user, friends: homeData!.friends),
+//                                        label: {
+//                                            
+//                                            Image("IconHugNew")
+//                                                .resizable()
+//                                                .scaledToFit()
+//                                                .frame(width: 45, height: 45)
+//                                                .foregroundColor(ColorManager .purple5)
+//                                                .glow(color: Color.purple, radius: 2)
+//                                                .opacity(0.9)
+//                                        })
+//                                }
                                 
                                 
                                 //******************************************************
