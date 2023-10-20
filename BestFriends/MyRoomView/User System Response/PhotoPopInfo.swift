@@ -86,15 +86,16 @@ VStack {
         
         HStack {
             
-            Image("")
+            Image("CoolGuy")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 70, height: 70)
+                .frame(width: 120, height: 120)
                 .opacity(0.9)
             //                    .blinking(duration: 2.0)
             
             Spacer()
-                .frame(width: 40)
+                .frame(width: 0)
+            
             
             
             
@@ -103,7 +104,7 @@ VStack {
                 Image("comicBubble")
                     .resizable()
                     .foregroundColor(Color.purple)
-                    .frame(width: 250, height: 70)
+                    .frame(width: 250, height: 100)
                     .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                 //                    .rotationEffect(.degrees(-10))
                     .opacity(0.95)
@@ -114,6 +115,11 @@ VStack {
                                     label: {
                         VStack {
                             
+                            Text("I've got")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
                             
                             Text("Exciting NEWS!")
                                 .font(.system(size: 20))
@@ -178,12 +184,38 @@ VStack {
         
         HStack {
             
-            Image("CoolGuy")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 120, height: 120)
-                .opacity(0.9)
-            //                    .blinking(duration: 2.0)
+            ZStack {
+                
+                Image("comicBubble")
+                    .resizable()
+                    .foregroundColor(Color.purple)
+                    .frame(width: 200, height: 100)
+                    .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+                //                    .rotationEffect(.degrees(-10))
+                    .opacity(0.95)
+                
+                VStack {
+                    
+                    NavigationLink( destination: RR33(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                    label: {
+                        VStack {
+                            Text("Hurt")
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                            
+                            Text("feelings")
+                                .font(.system(size: 21))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                        }
+                    }
+                )}
+            }
+            
+            
             
             Spacer()
                 .frame(width: 0)
@@ -245,13 +277,13 @@ VStack {
                         NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
                                         label: {
                             VStack {
-                                Text("Keepsake")
+                                Text("My keepsake")
                                     .font(.system(size: 20))
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.white)
                                 
-                                Text("Messages")
+                                Text("messages")
                                     .font(.system(size: 20))
                                     .fontWeight(.regular)
                                     .multilineTextAlignment(.center)

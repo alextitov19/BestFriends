@@ -396,27 +396,27 @@ struct HomeView: View {
                                 }
                                 
                                 
-                                ZStack {
-                                    
-                                    
-                                    NavigationLink(
-                                        destination:  RR33(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                                        label: {
-                                            
-                                            ZStack {
-                                                //                                    Image("iconFightG")
-                                                Image("iconFightG")
-                                                    .resizable()
-                                                    .scaledToFit()
-                                                    .frame(width: 50, height: 50)
-                                                    .foregroundColor(ColorManager .purple5)
-                                                    .glow(color: Color.purple, radius: 2)
-                                                    .opacity(0.9)
-                                                
-                                            }
-                                        })
-                                    
-                                }
+//                                ZStack {
+//                                    
+//                                    
+//                                    NavigationLink(
+//                                        destination:  RR33(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+//                                        label: {
+//                                            
+//                                            ZStack {
+//                                                //                                    Image("iconFightG")
+//                                                Image("iconFightG")
+//                                                    .resizable()
+//                                                    .scaledToFit()
+//                                                    .frame(width: 50, height: 50)
+//                                                    .foregroundColor(ColorManager .purple5)
+//                                                    .glow(color: Color.purple, radius: 2)
+//                                                    .opacity(0.9)
+//                                                
+//                                            }
+//                                        })
+//                                    
+//                                }
                             }
                         }
                         
