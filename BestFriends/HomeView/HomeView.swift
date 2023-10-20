@@ -296,12 +296,12 @@ struct HomeView: View {
                             
                             
                             Text("Walk-through")
-                                .font(.system(size: 13))
-                                .fontWeight(.thin)
+                                .font(.system(size: 14))
+                                .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
                                 .rotationEffect(.degrees(-25))
-                                .opacity(0.8)
+                                .opacity(0.9)
                        
                     }
                 })
@@ -338,7 +338,7 @@ struct HomeView: View {
 //                                    NavigationLink(
 //                                        destination:  RR5(user: homeData!.user, friends: homeData!.friends),
 //                                        label: {
-//                                            
+//
 //                                            Image("IconHugNew")
 //                                                .resizable()
 //                                                .scaledToFit()
