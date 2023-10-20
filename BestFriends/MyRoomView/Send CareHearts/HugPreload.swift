@@ -59,7 +59,7 @@ struct HugPreload: View {
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                             
-                            Text("Sending compassion for my friends,")
+                            Text("Sending compassion to my friends,")
                                 .font(.system(size: 15))
                                 .italic()
                                 .foregroundColor(Color.white)
