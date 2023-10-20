@@ -81,16 +81,12 @@ VStack {
            
             
             Text("My Day")
-                .font(.system(size: 25))
-                .fontWeight(.regular)
-                .multilineTextAlignment(.center)
-                .foregroundColor(Color.white)
-            
-//            Text("CareHearts")
-//                .font(.system(size: 25))
-//                .fontWeight(.regular)
-//                .multilineTextAlignment(.center)
-//                .foregroundColor(Color.white)
+                .fontWeight(.medium)
+                .font(.system(size: 35))
+                .foregroundColor(.white)
+                .glow(color: ColorManager.purple4, radius: 3)
+                .opacity(0.15)
+
   
         }
     }
