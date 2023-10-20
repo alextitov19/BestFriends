@@ -46,53 +46,24 @@ struct HugPreload: View {
                         Image(systemName: "cube.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 330, height: 280)
+                            .frame(width: 280, height: 260)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .opacity(0.5)
                         
 
                         VStack {
-                            Text("building 2-way")
+                            Text("Living best")
                                 .font(.system(size: 30))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                             
-                            Text("formidable friendships")
+                            Text("friendships")
                                 .font(.system(size: 30))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
-                            
-                            Spacer ()
-                                .frame(height: 15)
-//
-                            Text("easily send")
-                                .font(.system(size: 15))
-                                .italic()
-                                .foregroundColor(Color.white)
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-//
-//                            Text("friendship")
-//                                .font(.system(size: 25))
-//                                .foregroundColor(Color.white)
-//                                .fontWeight(.light)
-//                                .multilineTextAlignment(.center)
-                            
-                            Text("desired attention")
-                                .font(.system(size: 25))
-                                .foregroundColor(Color.white)
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                            
-//                            Text("matching your friend's Vibe")
-//                                .font(.system(size: 15))
-//                                .italic()
-//                                .foregroundColor(Color.white)
-//                                .fontWeight(.light)
-//                                .multilineTextAlignment(.center)
-                            
+
                      
                         }
                     }
