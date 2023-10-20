@@ -99,30 +99,14 @@ struct RR25: View {
                                         .fontWeight(.light)
                                         .multilineTextAlignment(.center)
                 
-                Spacer()
-                    .frame(height: 60)
-                
-                
-                HStack {
-                    VStack {
-        
-                        
-                        ZStack {
-                            
-                            
-                            VStack {
-                          
-                                
-                            }
-                            
-                           
-                        }
-                      
-                        
-                    }
-               
-                }
-             
+//                Image("BalloonGuy")
+//                    .resizable()
+//                    .foregroundColor(Color.purple)
+//                    .frame(width: 350, height: 350)
+//                    .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+//                    .opacity(0.8)
+//
+//       
          
                 VStack {
 
@@ -136,11 +120,37 @@ struct RR25: View {
                                 .frame(width: 350, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 25))
-                                .background(ColorManager.pmbc_green)
+                                .background(ColorManager .grey3)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                .alert("We just let your friend know your news", isPresented: $showingAlert) {
+                                    Button("OK", role: .cancel) { }
+                                }
+                        }
+                    }
+                    
+                    Spacer()
+                        .frame(height: 15)
+                   
+                    VStack {
+                        
+                        
+                        Link(destination: URL(string: "https://www.youtube.com/watch?v=_LgJT9kCVnM")!) {
+                            
+                            Text("Never Surrender")
+                                .fontWeight(.thin)
+                                .frame(width: 220, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 25))
+                                .background(Color.cyan)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         }
                     }
+                    
+                    
+                    
+                    
                     
 //                    VStack {
 //
@@ -258,25 +268,25 @@ struct RR25: View {
                  
                         
                         
-                        Button(action: {
-                            counter += 1
-                            shareTapped = true
-                            shareButtonTapped()
-                        },
-                               label: {
-                            Image("iconShare")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 80, height: 80)
-                                .rotationEffect(.degrees(20))
-                                .foregroundColor(ColorManager .purple5)
-                                .glow(color: Color.purple, radius: 2)
-                                .opacity(0.6)
-                                .blinking(duration: 3.0)
-                                .alert("We just let your friend know your news", isPresented: $showingAlert) {
-                                Button("OK", role: .cancel) { }
-                                }
-                        })
+//                        Button(action: {
+//                            counter += 1
+//                            shareTapped = true
+//                            shareButtonTapped()
+//                        },
+//                               label: {
+//                            Image("iconShare")
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 80, height: 80)
+//                                .rotationEffect(.degrees(20))
+//                                .foregroundColor(ColorManager .purple5)
+//                                .glow(color: Color.purple, radius: 2)
+//                                .opacity(0.6)
+//                                .blinking(duration: 3.0)
+//                                .alert("We just let your friend know your news", isPresented: $showingAlert) {
+//                                Button("OK", role: .cancel) { }
+//                                }
+//                        })
 //                        .confettiCannon(counter: $counter)
 
                         
@@ -306,10 +316,9 @@ struct RR25: View {
                             })
 //
                             Spacer()
-                                .frame(height: 185)
+                                .frame(height: 85)
                             
-   
-                   
+                  
                         }
                     }
                 }
