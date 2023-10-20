@@ -191,7 +191,7 @@ VStack {
                         .frame(width: 75, height: 75, alignment: .center)
                         .background(mood == 8 ? Color.orange : Color.white)
                         .cornerRadius(50)
-                     
+                       
                     }
 //   ************************************************
                     Spacer ()
@@ -514,7 +514,7 @@ VStack {
                                         }
                                     
                                 })
-                                    .confettiCannon(counter: $counter)
+//                                    .confettiCannon(counter: $counter)
                                 
                                 
                                 Spacer()
