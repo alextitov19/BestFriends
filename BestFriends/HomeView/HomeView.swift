@@ -12,7 +12,7 @@ struct HomeView: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     //        let user: User
-    //        let friends: [User]
+//            let friends: [User]
     //        let atmosphere: Atmosphere
     //
     @State private var homeData: HomeData?

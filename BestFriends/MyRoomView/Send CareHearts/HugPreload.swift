@@ -52,13 +52,13 @@ struct HugPreload: View {
                         
 
                         VStack {
-                            Text("Living best")
+                            Text("My friends are ")
                                 .font(.system(size: 30))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                             
-                            Text("friendships")
+                            Text("important to me!")
                                 .font(.system(size: 30))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)

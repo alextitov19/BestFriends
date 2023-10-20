@@ -192,7 +192,7 @@ struct ChatView: View {
                 }
                 Text("")
                     .fontWeight(.light)
-                    .frame(width: 200, height: 5)
+                    .frame(width: 200, height: 1)
                     .foregroundColor(ColorManager .grey4)
                     .font(.system(size: 25))
                     .background(Color.purple)
@@ -257,7 +257,7 @@ struct ChatView: View {
                         .placeholder(when: messageBody.isEmpty) {
                             HStack {
                                 Text("Send a message")
-                                    .foregroundColor(ColorManager.purple5)
+                                    .foregroundColor(Color.white)
                                 
                                 Spacer()
                             }

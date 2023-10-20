@@ -12,7 +12,8 @@ struct ChatGroupsView: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     let user: User
-    //    let atmosphere: Atmosphere
+//    let friends: [User]
+//    let atmosphere: Atmosphere
     
     
     // For swiping up/down and scrolling the BlurView
@@ -62,23 +63,6 @@ struct ChatGroupsView: View {
                     VStack {
                         
                         HStack  {
-                        
-                            Text("^")
-                                .font(.system(size: 35))
-                                .foregroundColor(Color.white)
-                                .fontWeight(.light)
-                                .opacity(0.4)
-                                .multilineTextAlignment(.center)
-//                                .blinking(duration: 2.0)
-                            
-                            
-                        Image("iconChat5")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 80, height: 80)
-                            .foregroundColor(ColorManager .purple5)
-                            .glow(color: Color.purple, radius: 2)
-                            .opacity(0.9)
                             
                             Text("^")
                                 .font(.system(size: 35))
@@ -86,17 +70,49 @@ struct ChatGroupsView: View {
                                 .fontWeight(.light)
                                 .opacity(0.4)
                                 .multilineTextAlignment(.center)
-//                                .blinking(duration: 2.0)
-                        
-                    }
+                            //                                .blinking(duration: 2.0)
+                            
+                            
+                            Image("iconChat5")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 80, height: 80)
+                                .foregroundColor(ColorManager .purple5)
+                                .glow(color: Color.purple, radius: 2)
+                                .opacity(0.9)
+                            
+                            Text("^")
+                                .font(.system(size: 35))
+                                .foregroundColor(Color.white)
+                                .fontWeight(.light)
+                                .opacity(0.4)
+                                .multilineTextAlignment(.center)
+                            //                                .blinking(duration: 2.0)
+                            
+                            
+//                            ZStack {
+//
+//                                NavigationLink(
+//                                    destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
+//                                    label: {
+//
+//                                        Image("iconSettings")
+//                                            .resizable()
+//                                            .scaledToFit()
+//                                            .frame(width: 45, height: 45)
+//                                            .foregroundColor(ColorManager .purple5)
+//                                            .glow(color: Color.purple, radius: 2)
+//                                            .opacity(0.9)
+//                                    })
+//                            }
+                            
+                            
+                            
+                            
+                            
+                        }
                            
-//                        Text("History")
-//                            .font(.system(size: 25))
-//                            .foregroundColor(Color.white)
-//                            .fontWeight(.light)
-//                            .opacity(0.4)
-//                            .multilineTextAlignment(.center)
-                        
+          
                         
                             NavigationLink(
                                 destination: InfoCreateChatRooms(user: user),

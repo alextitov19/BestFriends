@@ -66,16 +66,16 @@ struct PhotoPopInfo: View {
             }
    
 VStack {
-    Text("From your friends at")
+    Text("Congrats & help from your")
         .fontWeight(.medium)
-        .font(.system(size: 40))
+        .font(.system(size: 25))
         .foregroundColor(.white)
         .glow(color: ColorManager.purple4, radius: 3)
         .opacity(0.15)
     
-    Text("BestFriends")
+    Text("friends at BestFriends")
         .fontWeight(.medium)
-        .font(.system(size: 40))
+        .font(.system(size: 30))
         .foregroundColor(.white)
         .glow(color: ColorManager.purple4, radius: 3)
         .opacity(0.15)
