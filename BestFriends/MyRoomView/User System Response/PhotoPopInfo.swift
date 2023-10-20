@@ -103,7 +103,7 @@ VStack {
                 Image("comicBubble")
                     .resizable()
                     .foregroundColor(Color.purple)
-                    .frame(width: 250, height: 110)
+                    .frame(width: 250, height: 70)
                     .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                 //                    .rotationEffect(.degrees(-10))
                     .opacity(0.95)

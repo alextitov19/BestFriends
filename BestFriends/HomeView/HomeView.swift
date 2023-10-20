@@ -84,13 +84,14 @@ struct HomeView: View {
                                 label: {
                                     
                                     ZStack {
+//                                        Image(systemName: "cube.fill")
                                         Image(systemName: "heart")
-                                        Image(systemName: "cube.fill")
+                                       Image("iconSentCH")
                                             .resizable()
                                             .scaledToFit()
-                                            .frame(width: 40, height: 40)
-                                            .foregroundColor(Color.cyan)
-                                            .glow(color: ColorManager .grey2, radius: 10)
+                                            .frame(width: 70, height: 70)
+                                            .foregroundColor(Color.purple)
+                                            .glow(color: Color.purple, radius: 2)
                                             .blinking(duration: 3.0)
                                             .opacity(0.95)
                                   
@@ -135,13 +136,14 @@ struct HomeView: View {
                                     label: {
                                         
                                         ZStack {
+                                           
                                             Image(systemName: "heart")
-                                            Image(systemName: "cube.fill")
+                                           Image("iconGotCH")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 40, height: 40)
-                                                .foregroundColor(ColorManager .purple5)
-                                                .glow(color: ColorManager .grey3, radius: 10)
+                                                .frame(width: 70, height: 70)
+                                                .foregroundColor(Color.purple)
+                                                .glow(color: Color.purple, radius: 2)
                                                 .blinking(duration: 3.0)
                                                 .opacity(0.95)
                                             

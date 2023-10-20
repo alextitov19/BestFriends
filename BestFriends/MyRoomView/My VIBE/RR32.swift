@@ -80,19 +80,18 @@ VStack {
         VStack {
            
             
-            Text("What's Up?")
+            Text("Ask for CareHearts")
                 .font(.system(size: 25))
                 .fontWeight(.regular)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.white)
             
-            Text("(Planet atmosphere color matches everyone's vibe)")
-                .font(.system(size: 13))
-                .italic()
-                .fontWeight(.regular)
-                .multilineTextAlignment(.center)
-                .foregroundColor(Color.white)
- 
+//            Text("CareHearts")
+//                .font(.system(size: 25))
+//                .fontWeight(.regular)
+//                .multilineTextAlignment(.center)
+//                .foregroundColor(Color.white)
+  
         }
     }
     
@@ -105,19 +104,18 @@ VStack {
             Image(systemName: "circle")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 80, height: 80)
+                .frame(width: 75, height: 75)
                 .foregroundColor(Color .green)
                 .glow(color: Color.green, radius: 10)
                 .shadow(color: Color.green, radius: 3, x: 3, y: 3)
-            //                                .blinking(duration: 2.0)
             
             
             Button(action: {
                 mood = 7
             }) {
                 
-                Text("Tell my friends")
-                    .font(.system(size: 17))
+                Text("tell \nfriends")
+                    .font(.system(size: 15))
                     .foregroundColor(Color.black)
             }
             .frame(width: 75, height: 75, alignment: .center)
@@ -137,23 +135,23 @@ VStack {
             Image("comicBubble")
                 .resizable()
                 .foregroundColor(Color.cyan)
-                .frame(width: 210, height: 150)
+                .frame(width: 210, height: 90)
                 .shadow(color: Color.green, radius: 3, x: 3, y: 3)
                 .opacity(0.95)
             
             VStack {
-                
-                Text("Yep. You've got")
+//
+//                Text("Yep. You've got")
+//                    .font(.system(size: 17))
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(Color.white)
+
+                Text("Exciting NEWS!")
                     .font(.system(size: 17))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
-
-                Text("Exciting NEWS!")
-                    .font(.system(size: 20))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.cyan)
                  
                 
             }
@@ -173,7 +171,7 @@ VStack {
                             Image(systemName: "circle")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 90, height: 90)
+                                .frame(width: 75, height: 75)
                                 .foregroundColor(Color .orange)
                                 .glow(color: Color.orange, radius: 10)
                                 .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
@@ -190,7 +188,7 @@ VStack {
                                 .font(.system(size: 15))
                                 .foregroundColor(Color.black)
                         }
-                        .frame(width: 85, height: 85, alignment: .center)
+                        .frame(width: 75, height: 75, alignment: .center)
                         .background(mood == 8 ? Color.orange : Color.white)
                         .cornerRadius(50)
                      
@@ -214,15 +212,15 @@ VStack {
                         VStack {
                         
                             
-                            Text("Something Big")
-                                .font(.system(size: 20))
+                            Text("Working on")
+                                .font(.system(size: 17))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(Color.cyan)
+                                .foregroundColor(Color.white)
                               
-                            Text("happening")
-                                .font(.system(size: 20))
-                                .fontWeight(.regular)
+                            Text("something big")
+                                .font(.system(size: 17))
+                                .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
 
@@ -247,7 +245,7 @@ VStack {
                     Image(systemName: "circle")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 90, height: 90)
+                        .frame(width: 75, height: 75)
                         .foregroundColor(Color .cyan)
                         .glow(color: Color.cyan, radius: 10)
                         .shadow(color: Color.cyan, radius: 3, x: 3, y: 3)
@@ -257,11 +255,11 @@ VStack {
                         mood = 1
                         //                    showingAlert = true
                     }) {
-                        Text("Ask my friends")
-                            .font(.system(size: 17))
+                        Text("bad day")
+                            .font(.system(size: 15))
                             .foregroundColor(Color.black)
                     }
-                    .frame(width: 85, height: 85, alignment: .center)
+                    .frame(width: 70, height: 70, alignment: .center)
                     .background(mood == 7 ? Color.cyan : ColorManager .grey1)
                     .cornerRadius(40)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -281,18 +279,14 @@ VStack {
                         Image("comicBubble")
                             .resizable()
                             .foregroundColor(Color.cyan)
-                            .frame(width: 240, height: 170)
+                            .frame(width: 220, height: 100)
                             .shadow(color: Color.cyan, radius: 3, x: 3, y: 3)
                             .opacity(0.95)
 //                            .blinking(duration: 5.0)
                         
                         VStack {
                             
-                            Text("Bad day?")
-                                .font(.system(size: 20))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.cyan)
+                        
                             
                             Text("Ask friends")
                                 .font(.system(size: 17))
@@ -310,14 +304,91 @@ VStack {
                     }
                 }
 
-                   
+//               ************************************************
+            //                ************************************************
+            
+        HStack {
+            Spacer ()
+                .frame(width: 30)
+        
+            ZStack {
+               
+                Image(systemName: "circle")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 75, height: 75)
+                    .foregroundColor(Color .cyan)
+                    .glow(color: Color.purple, radius: 10)
+                    .shadow(color: Color.purple, radius: 3, x: 3, y: 3)
+                
+                
+                Button(action: {
+                    mood = 6
+                    //                    showingAlert = true
+                }) {
+                    Text("what's \nup?")
+                        .font(.system(size: 15))
+                        .foregroundColor(Color.black)
+                }
+                .frame(width: 70, height: 70, alignment: .center)
+                .background(mood == 7 ? Color.cyan : ColorManager .grey1)
+                .cornerRadius(40)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+            }
+        
+//***************************************
+       
+            Spacer ()
+                .frame(width: 15)
+
+//                ********************************************
+                
+                
+                ZStack {
+                    
+                    //                    Image(systemName: "cube.fill")
+                    Image("comicBubble")
+                        .resizable()
+                        .foregroundColor(Color.cyan)
+                        .frame(width: 220, height: 80)
+                        .shadow(color: Color.cyan, radius: 3, x: 3, y: 3)
+                        .opacity(0.95)
+//                            .blinking(duration: 5.0)
+                    
+                    VStack {
+                        
+                    
+                        
+                        Text("send PhotoPOP")
+                            .font(.system(size: 17))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+//                        Text("for CareHearts")
+//                            .font(.system(size: 17))
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(Color.white)
+                        
+                    }
+                }
+            }
+            
       
- 
+      
+            //                ************************************************
                         VStack {
                             
                             VStack {
-                               
-                                Text("(alert my friends)")
+                                Text("(Planet atmosphere color matches friend's vibe)")
+                                    .font(.system(size: 13))
+                                    .italic()
+                                    .fontWeight(.regular)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.white)
+                                
+                                Text("(alert friends)")
                                     .font(.system(size: 15))
                                     .italic()
                                     .fontWeight(.light)
@@ -435,7 +506,7 @@ VStack {
                                         .glow(color: Color.purple, radius: 2)
                                         .opacity(0.6)
                                         .blinking(duration: 3.0)
-                                        .alert("We just sent this message; *Your friend changed their vibe - go to BFs to check their atmospher color.", isPresented: $showingAlert) {
+                                        .alert("We just sent this message; Your friend's vibe just changed! Check their 'Atmosphere-color' to help", isPresented: $showingAlert) {
                                             Button("OK", role: .cancel) { }
                                             
                                         
@@ -488,11 +559,11 @@ VStack {
             for id in selectedFriends {
                 for f in friends {
                     if f.id == id {
-                        RestApi.instance.sendPushNotification(title: "BestFriends", body: " \(user.firstName) Vibe just changed! Check their 'Atmosphere-color' in BFs to see what's up.", APNToken: f.APNToken)
+                        RestApi.instance.sendPushNotification(title: "BestFriends", body: " \(user.firstName) Vibe just changed! Check their 'Atmosphere-color' to help.", APNToken: f.APNToken)
                         
                         //MARK: The code below creates an in-app notification for your friend (f.id)
                         //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                        RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Vibe just changed! Check their 'Atmosphere-color' in BFs to see what's up.", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Vibe just changed! Check their 'Atmosphere-color' to help.", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                             print("Create a Vibe notification response code: ", response)
                         })
                         RestApi.instance.createStreakLog(friendID: f.id)
