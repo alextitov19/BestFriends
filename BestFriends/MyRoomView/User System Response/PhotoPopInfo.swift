@@ -156,7 +156,7 @@ VStack {
                 NavigationLink( destination: RR25(user: user, friends: friends),
                                 label: {
                     VStack {
-                        Text("Working on")
+                        Text("I'm working on")
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -164,9 +164,9 @@ VStack {
                         
                         Text("Something Big!")
                             .font(.system(size: 20))
-                            .fontWeight(.regular)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(Color.cyan)
                     }
                 }
             )}
@@ -206,10 +206,10 @@ VStack {
                                 .foregroundColor(Color.white)
                             
                             Text("feelings")
-                                .font(.system(size: 21))
+                                .font(.system(size: 20))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
+                                .foregroundColor(Color.cyan)
                         }
                     }
                 )}
@@ -244,10 +244,10 @@ VStack {
                                 .foregroundColor(Color.white)
                             
                             Text("sucks!")
-                                .font(.system(size: 21))
+                                .font(.system(size: 20))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
+                                .foregroundColor(Color.cyan)
                         }
                     }
                     )}
@@ -285,9 +285,9 @@ VStack {
                                 
                                 Text("messages")
                                     .font(.system(size: 20))
-                                    .fontWeight(.regular)
+                                    .fontWeight(.light)
                                     .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.white)
+                                    .foregroundColor(Color.cyan)
                             }
                         }
                         )}

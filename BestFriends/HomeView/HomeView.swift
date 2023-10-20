@@ -352,7 +352,7 @@ struct HomeView: View {
                                 
                                 //******************************************************
                                 Spacer()
-                                    .frame(width: 40)
+                                    .frame(width: 270)
                                 
                                 
                                 ZStack {
@@ -372,8 +372,8 @@ struct HomeView: View {
                                 }
                                 
                                 
-                                Spacer()
-                                    .frame(width: 40)
+//                                Spacer()
+//                                    .frame(width: 40)
                                 
                                 //******************************************************
                                 
@@ -397,12 +397,12 @@ struct HomeView: View {
                                 
                                 
 //                                ZStack {
-//                                    
-//                                    
+//
+//
 //                                    NavigationLink(
 //                                        destination:  RR33(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
 //                                        label: {
-//                                            
+//
 //                                            ZStack {
 //                                                //                                    Image("iconFightG")
 //                                                Image("iconFightG")
@@ -412,10 +412,10 @@ struct HomeView: View {
 //                                                    .foregroundColor(ColorManager .purple5)
 //                                                    .glow(color: Color.purple, radius: 2)
 //                                                    .opacity(0.9)
-//                                                
+//
 //                                            }
 //                                        })
-//                                    
+//
 //                                }
                             }
                         }
