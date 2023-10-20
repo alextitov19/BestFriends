@@ -52,8 +52,16 @@ struct HugPreload: View {
                         
 
                         VStack {
-                            Text("My friends are ")
-                                .font(.system(size: 30))
+                            Text("My friends, family, romaces")
+                                .font(.system(size: 15))
+                                .italic()
+                                .foregroundColor(Color.white)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+                            Text("and dreams are")
+                                .font(.system(size: 15))
+                                .italic()
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
