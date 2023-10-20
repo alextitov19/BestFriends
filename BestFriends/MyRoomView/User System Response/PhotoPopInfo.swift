@@ -110,7 +110,7 @@ VStack {
                 
                 VStack {
                     
-                    NavigationLink( destination: RR14(user: user, friend: user, friends: friends, groups: groups),
+                    NavigationLink( destination: INFOChatCircles(user: user, friend: user, friends: friends, groups: groups),
                                     label: {
                         VStack {
                             Text("Nice. You've got")
