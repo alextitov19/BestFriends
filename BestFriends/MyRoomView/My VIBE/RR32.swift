@@ -80,7 +80,7 @@ VStack {
         VStack {
            
             
-            Text("Engaging Friends")
+            Text("My Day")
                 .font(.system(size: 25))
                 .fontWeight(.regular)
                 .multilineTextAlignment(.center)
@@ -381,7 +381,7 @@ VStack {
                         VStack {
                             
                             VStack {
-                                Text("(Planet atmosphere color matches friend's vibe)")
+                                Text("(Planet atmosphere color matches your vibe)")
                                     .font(.system(size: 13))
                                     .italic()
                                     .fontWeight(.regular)
