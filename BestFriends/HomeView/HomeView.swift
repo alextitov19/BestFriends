@@ -378,19 +378,19 @@ struct HomeView: View {
                                 ZStack {
                                     
                                     
-                                    NavigationLink(
-                                        destination:  BestFriendMessages(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres),
-                                        label: {
-                                            
-                                            Image("IconRoomNew")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 45, height: 45)
-                                            //                                    .rotationEffect(.degrees(-7))
-                                                .foregroundColor(ColorManager .purple5)
-                                                .glow(color: Color.purple, radius: 2)
-                                                .opacity(0.9)
-                                        })
+//                                    NavigationLink(
+//                                        destination:  BestFriendMessages(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres),
+//                                        label: {
+//
+//                                            Image("IconRoomNew")
+//                                                .resizable()
+//                                                .scaledToFit()
+//                                                .frame(width: 45, height: 45)
+//                                            //                                    .rotationEffect(.degrees(-7))
+//                                                .foregroundColor(ColorManager .purple5)
+//                                                .glow(color: Color.purple, radius: 2)
+//                                                .opacity(0.9)
+//                                        })
                                 }
                                 
                                 

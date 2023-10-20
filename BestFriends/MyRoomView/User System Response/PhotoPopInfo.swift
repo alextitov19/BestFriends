@@ -113,11 +113,7 @@ VStack {
                     NavigationLink( destination: INFOChatCircles(user: user, friend: user, friends: friends, groups: groups),
                                     label: {
                         VStack {
-                            Text("Nice. You've got")
-                                .font(.system(size: 17))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
+                            
                             
                             Text("Exciting NEWS!")
                                 .font(.system(size: 20))
