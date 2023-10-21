@@ -415,7 +415,7 @@ struct NotificationsView: View {
                     
                     
 // *********** Fist-pump
-                case "You got a fist-pump":
+                case "sent you a fist-pump":
                     fistPumpActive = true
 // ************** No received page for fist-pump **************
                     
@@ -430,7 +430,7 @@ struct NotificationsView: View {
                     
                     
 // *********** You can do it
-                case "Just sent you encouragement.":
+                case "just sent you encouragement":
                     canDoActive = true
                     
                 case "said great - thanks for the encouragement":
@@ -439,14 +439,14 @@ struct NotificationsView: View {
                     
                     
 // *********** Congratulations
-                case "Yes, yes, yes! Congratulations you CREUSED IT!":
+                case "just sent you Congratulations. You CRUSHED IT!":
                     newCongratulationsActive = true
                     
                 case "Just said thank you for the Congratulations!!!":
                     thanksCongratulationsActive = true
                     
                     
-                case "said what they like most about you in Chat":
+                case "said what they like most about you in Chat. Long-tap it and save it to Keepsake messages":
                     affirmationActive = true
              
                     
