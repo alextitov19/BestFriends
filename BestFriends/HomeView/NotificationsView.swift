@@ -398,7 +398,7 @@ struct NotificationsView: View {
                 
                     
 // *********** Hugs
-                case "Just sent you a warming Hug! ... TAP":
+                case "just sent you a hug":
                     hugActive = true
                     
                 case "Ahhh! Thanks for the Hug - it was just what I needed!":
@@ -406,7 +406,7 @@ struct NotificationsView: View {
                 
                     
 // *********** Song
-                case "just sent you that perfect song in chat":
+                case "just sent you a song in chat":
                     songActive = true
                     
                 case "Thanks, your song really hit the spot!":
