@@ -66,7 +66,7 @@ struct HugPreload: View {
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                             
-                            Text("family, romances & their dreams")
+                            Text("family, romances & dreams")
                                 .font(.system(size: 15))
                                 .italic()
                                 .foregroundColor(Color.white)
@@ -74,7 +74,12 @@ struct HugPreload: View {
                                 .multilineTextAlignment(.center)
                             
                        
-
+                            Text("back-and-forth")
+                                .font(.system(size: 15))
+                                .italic()
+                                .foregroundColor(Color.white)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
                      
                         }
                     }

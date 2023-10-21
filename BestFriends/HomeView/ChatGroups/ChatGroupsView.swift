@@ -117,7 +117,7 @@ struct ChatGroupsView: View {
                             NavigationLink(
                                 destination: InfoCreateChatRooms(user: user),
                                 label: {
-                                    Text("Multi-friend Room SetUp")
+                                    Text("Multi-friend ACCESS & SetUp")
                                         .fontWeight(.thin)
                                         .frame(width: 250, height: 25)
                                         .foregroundColor(ColorManager.purple1)

@@ -369,7 +369,7 @@ struct NotificationsView: View {
                     
                     // *********** VIBE **********************************
 // *********** Day Changed
-                case "Vibe just changed! Check their 'Atmosphere-color' to help.":
+                case "vibe just changed! Check their 'Atmosphere-color' to see what's up":
                     newVibeActive = true
                     
 // *********** Need to Talk
@@ -381,7 +381,7 @@ struct NotificationsView: View {
                     
                     // *********** CareHearts  **********************************
 // *********** Blowing Kisses
-                case "Jump up and catch your fresh kisses! ... TAP":
+                case "is blowing you Kisses. Jump up high and catch them.":
                     kissesActive = true
                     
                 case "Ahhh! Thanks for the Kisses!":
@@ -389,7 +389,7 @@ struct NotificationsView: View {
                    
                     
 // *********** Love / Hearts
-                case "just sent you Hearts":
+                case "just sent you a CareHeart":
                     heartsActive = true
                     
                 case "Said thanks for thinking about them and sending the Heart!":
