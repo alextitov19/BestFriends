@@ -80,12 +80,12 @@ VStack {
         VStack {
            
             
-            Text("My Day")
+            Text("My Day Changed!")
                 .fontWeight(.medium)
                 .font(.system(size: 35))
                 .foregroundColor(.white)
-                .glow(color: ColorManager.purple4, radius: 3)
-                .opacity(0.15)
+//                .glow(color: ColorManager.grey1, radius: 3)
+                .opacity(0.8)
 
   
         }
@@ -378,14 +378,14 @@ VStack {
                         VStack {
                             
                             VStack {
-                                Text("(Planet atmosphere color matches your vibe)")
+                                Text("(Planet atmosphere color matches your vibe")
                                     .font(.system(size: 13))
                                     .italic()
                                     .fontWeight(.regular)
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.white)
                                 
-                                Text("(alert friends)")
+                                Text("when you alert friends)")
                                     .font(.system(size: 15))
                                     .italic()
                                     .fontWeight(.light)
