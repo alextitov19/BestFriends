@@ -309,7 +309,7 @@ struct RR34Fight: View {
                                 .glow(color: Color.purple, radius: 2)
                                 .opacity(0.6)
                                 .blinking(duration: 3.0)
-                                .alert("Your song \nhas been sent to Chat. \n\nYou are a great friend - something not often seen these days.", isPresented: $showingAlert) {
+                                .alert("Your request to talk has been sent", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
@@ -420,12 +420,12 @@ struct RR34Fight: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) is blowing you Kisses. Jump up high and catch them.", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) said you hurt their feelings and would like to talk", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Jump up and catch your fresh kisses!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                        print("Create a kiss notification response code: ", response)
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "said you hurt their feelings and would like to talk", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        print("Create a hurt feelings notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)
                 }

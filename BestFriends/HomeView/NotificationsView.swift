@@ -454,6 +454,13 @@ struct NotificationsView: View {
                     thanksAffirmationActive = true
                     
                     
+//     ******************************** System System System  ******************
+                    
+                case "said you hurt their feelings and would like to talk":
+                    thanksAffirmationActive = true
+                    
+                    
+                    
                     
                     
 //**************************************************
