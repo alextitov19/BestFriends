@@ -53,25 +53,25 @@ struct HugPreload: View {
 
                         VStack {
                             
-                            Text("CareHearts")
+                            Text("Sending CareHearts")
                                 .font(.system(size: 30))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                             
-                            Text("Sending compassion to my friends,")
-                                .font(.system(size: 15))
-                                .italic()
-                                .foregroundColor(Color.white)
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                            
-                            Text("family, romances & dreams")
-                                .font(.system(size: 15))
-                                .italic()
-                                .foregroundColor(Color.white)
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
+//                            Text("Sending compassion to my friends,")
+//                                .font(.system(size: 15))
+//                                .italic()
+//                                .foregroundColor(Color.white)
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+//
+//                            Text("family, romances & dreams")
+//                                .font(.system(size: 15))
+//                                .italic()
+//                                .foregroundColor(Color.white)
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
                             
                        
                             Text("back-and-forth")
