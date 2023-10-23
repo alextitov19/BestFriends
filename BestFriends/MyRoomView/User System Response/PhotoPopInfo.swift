@@ -319,10 +319,10 @@ VStack {
      
     NavigationLink(destination:  EmptyView(),
                                label: {
-                    Text("Talk to BestFriends AI  ->")
+                    Text("Fight with a friend / lover, argument with parents or maybe just sad today - maybe we can help ->")
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
-                        .frame(width: 280, height: 40)
+                        .frame(width: 330, height: 90)
                         .font(.system(size: 20))
                         .background(Color.cyan)
                         .opacity(0.95)
@@ -331,6 +331,20 @@ VStack {
                     
                 })
 
+    Text("Note; your questions may be used for future responses,")
+        .font(.system(size: 12))
+        .italic()
+        .fontWeight(.light)
+        .multilineTextAlignment(.center)
+        .foregroundColor(Color.cyan)
+    
+    Text("however they are 'Anonymous' - your identity is invisable!")
+        .font(.system(size: 12))
+        .italic()
+        .fontWeight(.light)
+        .multilineTextAlignment(.center)
+        .foregroundColor(Color.cyan)
+    
     Spacer()
         .frame(height: 20)
     
