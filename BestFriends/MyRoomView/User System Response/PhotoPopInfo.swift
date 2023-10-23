@@ -338,7 +338,7 @@ VStack {
         .multilineTextAlignment(.center)
         .foregroundColor(Color.cyan)
     
-    Text("however your identity is blocked.")
+    Text("however your identity is masked under SocialTech Labs.")
         .font(.system(size: 12))
         .italic()
         .fontWeight(.light)
