@@ -338,7 +338,7 @@ VStack {
         .multilineTextAlignment(.center)
         .foregroundColor(Color.cyan)
     
-    Text("however they are 'Anonymous' - your identity is invisable!")
+    Text("however your identity is blocked.")
         .font(.system(size: 12))
         .italic()
         .fontWeight(.light)
