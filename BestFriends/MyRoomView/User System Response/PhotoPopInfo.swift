@@ -372,11 +372,11 @@ VStack {
             for id in selectedFriends {
                 for f in friends {
                     if f.id == id {
-                        RestApi.instance.sendPushNotification(title: "BestFriends", body: " \(user.firstName) day just changed! Check their atmosphere color in BFs to see what's up.", APNToken: f.APNToken)
+                        RestApi.instance.sendPushNotification(title: "BestFriends", body: " \(user.firstName) day just changed - if you can check-out what's up! Their planet's atmosphere color matches their vibe.", APNToken: f.APNToken)
                         
                         //MARK: The code below creates an in-app notification for your friend (f.id)
                         //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                        RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "day just changed! Check their atmosphere color in BFs to see what's up.", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "day just changed - if you can check-out what's up! Their planet's atmosphere color matches their vibe.", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                             print("Create a Vibe notification response code: ", response)
                         })
                         RestApi.instance.createStreakLog(friendID: f.id)
@@ -400,7 +400,7 @@ VStack {
                         for i in sharedWith {
                             for f in friends {
                                 if i == f.id {
-                                    RestApi.instance.sendPushNotification(title: "BestFriends - 'Vibe'", body: "\(user.firstName): Your friend's day just changed! Please take a moment to check on them.", APNToken: f.APNToken )
+                                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName): Your friend's day just changed! Please take a moment to check on them.", APNToken: f.APNToken )
                                 }
                             }
                             mood = -1
