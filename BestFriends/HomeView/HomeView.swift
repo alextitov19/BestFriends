@@ -291,17 +291,21 @@ struct HomeView: View {
                                 .scaledToFit()
                                 .frame(width: 120, height: 120)
                                 .foregroundColor(ColorManager .purple5)
-                                .blinking(duration: 5.0)
+//                                .blinking(duration: 5.0)
                                 .opacity(1.5)
                             
                             
                             Text("Walk-through")
-                                .font(.system(size: 14))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .rotationEffect(.degrees(-25))
-                                .opacity(0.9)
+                                .fontWeight(.thin)
+                                     .frame(width: 60, height: 40)
+                                     .foregroundColor(ColorManager .purple7)
+                                     .font(.system(size: 13))
+                                     .background(ColorManager.purple3)
+                                     .cornerRadius(10)
+                                     .rotationEffect(.degrees(-25))
+                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                     .blinking(duration: 3.0)
+                                  
                        
                     }
                 })
