@@ -63,25 +63,34 @@ struct ChatGroupsView: View {
                     VStack {
                         
                         HStack  {
-                            NavigationLink(
-                                destination: ProfessionalHelp(user: user),
-                                label: {
-                                    Text("1-on-1 \nSetUP")
-                                        .fontWeight(.thin)
-                                        .frame(width: 60, height: 40)
-                                        .foregroundColor(ColorManager.grey1)
-                                        .font(.system(size: 13))
-                                        .background(Color .purple)
-                                        .cornerRadius(10)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                })
                             
-//                            Text("^")
-//                                .font(.system(size: 35))
-//                                .foregroundColor(Color.white)
-//                                .fontWeight(.light)
-//                                .opacity(0.4)
-//                                .multilineTextAlignment(.center)
+                            
+//                            ZStack {
+                                
+//                                Image("iconChat5")
+//                                    .resizable()
+//                                    .scaledToFit()
+//                                    .frame(width: 90, height: 90)
+//                                    .foregroundColor(ColorManager .purple5)
+//                                    .glow(color: Color.purple, radius: 2)
+//                                    .opacity(0.9)
+                                
+                                NavigationLink(
+                                    destination: ProfessionalHelp(user: user),
+                                    label: {
+                                        Text("1-on-1 \nSetUP")
+                                            .fontWeight(.thin)
+                                            .frame(width: 60, height: 40)
+                                            .foregroundColor(ColorManager .purple7)
+                                            .font(.system(size: 13))
+                                            .background(ColorManager.purple3)
+                                            .cornerRadius(10)
+                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                    })
+                                
+//                            }
+                            
+  
                             
                             Image("iconChat5")
                                 .resizable()
@@ -109,7 +118,7 @@ struct ChatGroupsView: View {
                                     Text("Group \nSetUP")
                                         .fontWeight(.thin)
                                         .frame(width: 60, height: 40)
-                                        .foregroundColor(ColorManager.purple1)
+                                        .foregroundColor(ColorManager .purple7)
                                         .font(.system(size: 13))
                                         .background(ColorManager.purple3)
                                         .cornerRadius(10)
