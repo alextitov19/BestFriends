@@ -1085,6 +1085,7 @@
 				7A2C215C28050BCD009362CF /* ChatBubble.swift */,
 				CF65042F28A438970092EEB9 /* ChatReactions.swift */,
 				CF2EE6FB29517A4B00B1B16D /* InfoCreateChatRooms.swift */,
+				CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -1667,7 +1668,6 @@
 			isa = PBXGroup;
 			children = (
 				CF4D86B92978FDBA004B551D /* MyFears.swift */,
-				CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */,
 				CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */,
 			);
 			path = "Anxiety Attack";

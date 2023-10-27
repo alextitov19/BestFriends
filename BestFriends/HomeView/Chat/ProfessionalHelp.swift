@@ -1,8 +1,8 @@
 //
-//  CreateChatRooms.swift
+//  ProfessionalHelp.swift
 //  BestFriends
 //
-//  Created by Social Tech on 12/20/22.
+//  Created by Social Tech on 2/1/23.
 //
 
 
@@ -11,7 +11,7 @@ import Foundation
 import SwiftUI
 import AVKit
 
-struct InfoCreateChatRooms: View {
+struct ProfessionalHelp: View {
   
     let user: User
    
@@ -28,7 +28,7 @@ struct InfoCreateChatRooms: View {
                    .blendMode(.screen)
             
             VStack {
-                Text("Multi-friend")
+                Text("Single-friend")
                     .fontWeight(.medium)
                     .font(.system(size: 50))
                     .foregroundColor(.white)
@@ -46,7 +46,7 @@ struct InfoCreateChatRooms: View {
                 
                 
                 
-                Text("To access rooms pull up tab")
+                Text("To access rooms tap Friend's Planet")
                     .fontWeight(.light)
                     .font(.system(size: 20))
                     .foregroundColor(.white)
@@ -73,7 +73,7 @@ struct InfoCreateChatRooms: View {
                         //
                         //
                         
-                        Text("CREATING Mulit-friend Chat Rooms...Tap ALL friend's planets one-at-a-time, then tap the ChatBubble popup to name room \n\nACCESSING Multi-friend Chat Rooms...Either tap ALL friends planets in the room then the ChatBubble popup. Or select room from Chat Pullup")
+                        Text("\nCREATING One-on-one Chat Rooms...Tap friend's planet, then ChatBubble 'popup' to name room \n\nACCESSING one-on-one Chat Rooms...Tap friend's planet, then this 'popup' to enter")
                             .fontWeight(.medium)
                             .font(.system(size: 14))
                             .frame(width: 340, height: 265)

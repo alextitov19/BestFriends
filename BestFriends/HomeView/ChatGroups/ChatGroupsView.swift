@@ -63,21 +63,25 @@ struct ChatGroupsView: View {
                     VStack {
                         
                         HStack  {
+                            NavigationLink(
+                                destination: ProfessionalHelp(user: user),
+                                label: {
+                                    Text("Single-friend \nSetUP")
+                                        .fontWeight(.thin)
+                                        .frame(width: 90, height: 40)
+                                        .foregroundColor(ColorManager.grey1)
+                                        .font(.system(size: 13))
+                                        .background(Color .purple)
+                                        .cornerRadius(10)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                })
                             
-                            Text("Multi \nFriend")
-                                .font(.system(size: 15))
-                                .foregroundColor(Color.white)
-                                .fontWeight(.light)
-                                .opacity(0.4)
-                                .multilineTextAlignment(.center)
-                            //                                .blinking(duration: 2.0)
-                            
-                            Text("^")
-                                .font(.system(size: 35))
-                                .foregroundColor(Color.white)
-                                .fontWeight(.light)
-                                .opacity(0.4)
-                                .multilineTextAlignment(.center)
+//                            Text("^")
+//                                .font(.system(size: 35))
+//                                .foregroundColor(Color.white)
+//                                .fontWeight(.light)
+//                                .opacity(0.4)
+//                                .multilineTextAlignment(.center)
                             
                             Image("iconChat5")
                                 .resizable()
@@ -102,9 +106,9 @@ struct ChatGroupsView: View {
                             NavigationLink(
                                 destination: InfoCreateChatRooms(user: user),
                                 label: {
-                                    Text("SetUp \nAccess")
+                                    Text("Multi-friend \nSetUP")
                                         .fontWeight(.thin)
-                                        .frame(width: 70, height: 40)
+                                        .frame(width: 90, height: 40)
                                         .foregroundColor(ColorManager.purple1)
                                         .font(.system(size: 15))
                                         .background(ColorManager.purple3)
