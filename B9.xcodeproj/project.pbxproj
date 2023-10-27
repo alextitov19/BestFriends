@@ -846,6 +846,7 @@
 		2DFB03192A5D2FD200669948 /* ReceivedCareHearts */ = {
 			isa = PBXGroup;
 			children = (
+				2DB42CFF2AAE87B000E137C0 /* RR30.swift */,
 				2DFB032C2A5D30C200669948 /* CH10.swift */,
 				2D7127BA2A658B9000E14744 /* CH11.swift */,
 				2DFB031C2A5D305A00669948 /* CH2.swift */,
@@ -859,7 +860,6 @@
 				2DB42CEF2AAE875900E137C0 /* RR22.swift */,
 				2DB42CFB2AAE879C00E137C0 /* RR28.swift */,
 				2DB42CFD2AAE87A800E137C0 /* RR29.swift */,
-				2DB42CFF2AAE87B000E137C0 /* RR30.swift */,
 				2DB42CF72AAE878A00E137C0 /* RR26.swift */,
 			);
 			path = ReceivedCareHearts;
@@ -2814,7 +2814,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -2826,7 +2826,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.19;
+				MARKETING_VERSION = 2.0.20;
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialtechlabs.bestfriends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2846,7 +2846,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;
@@ -2857,7 +2857,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.19;
+				MARKETING_VERSION = 2.0.20;
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialtechlabs.bestfriends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

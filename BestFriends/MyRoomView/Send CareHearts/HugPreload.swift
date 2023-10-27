@@ -316,12 +316,3 @@ HStack {
         }
     }
     
-    
-//********************************* on hold CareHearts ****
-
-//NavigationLink(destination: RR24(user: user, friend: user, friends: friends, groups: groups), label: {
-//    HugCircle (color: Color.cyan, friendName: "\nWell-being")
-//})
-//.offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-//.shadow(color: Color.blue, radius: 2, x: 2, y: 2)
-//.opacity(0.9)

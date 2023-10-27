@@ -18,359 +18,632 @@
 //        RR30()
 //    }
 //}
+//
+
 
 
 
 import Foundation
 import SwiftUI
-import ConfettiSwiftUI
 import AVKit
 
 struct RR30: View {
     
-    @EnvironmentObject var sessionManager: SessionManager
-    
     let user: User
     let friends: [User]
+    let groups: [Group]
+    let atmosphere: Atmosphere
     
-    @State private var selectedFriends: [String] = []
-    @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
-    @State private var shareColor = ColorManager.purple5
-    @State private var showingAlert = false
+    @State private var showItems: Bool = false
+    @State private var offset: CGFloat = 200.0
     
-    @State private var counter = 0
-    
-    @State private var mood: Int = -1
-    @State private var summary = ""
-    @State private var sharedWith: [String] = []
-    @State private var colorChangeTap: String = ""
-    @State private var shareTapped: Bool = false
-
-
     
     var body: some View {
         
         ZStack {
+            Color.black
+                .opacity(0.9)
+                .ignoresSafeArea()
+  
+            AdPlayerView(name: "background_7")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.9)
+            
+            
+            ZStack{
+                
+                VStack {
+                    
+                    ZStack {
+                        
+                  
+                        
+                        Image(systemName: "cube.fill")
+                            .resizable()
+                            .foregroundColor(Color.purple)
+                            .frame(width: 280, height: 260)
+                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                            .opacity(0.5)
+                        
+
+                        VStack {
+                            
+                            Text("Sending CareHearts")
+                                .font(.system(size: 30))
+                                .foregroundColor(Color.white)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                            
+//                            Text("Sending compassion to my friends,")
+//                                .font(.system(size: 15))
+//                                .italic()
+//                                .foregroundColor(Color.white)
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+//
+//                            Text("family, romances & dreams")
+//                                .font(.system(size: 15))
+//                                .italic()
+//                                .foregroundColor(Color.white)
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+                            
+                       
+                            Text("back-and-forth")
+                                .font(.system(size: 15))
+                                .italic()
+                                .foregroundColor(Color.white)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                     
+                        }
+                    }
+                    
+HStack {
+                        
+    VStack {
       
+        HStack {
+                    
+            Spacer ()
+                .frame(width: 25)
+                        
+            NavigationLink(destination: CH9(user: user, friends: friends), label: {
+                HugCircle (color: Color.cyan, friendName: "Blowing \nKisses")
+            })
+            .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+            .shadow(color: Color .blue, radius: 2, x: 2, y: 2)
+            .opacity(0.9)
             
-            
-            if shareTapped {
-                
-                Color.black
-                    .opacity(0.8)
-                    .ignoresSafeArea()
-        
-                AdPlayerView(name: "dramaLights")
-                    .opacity(0.5)
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                
-            } else {
+               
 
-
-                Color.black
-                   .opacity(0.9)
-                    .ignoresSafeArea()
-                
-                
-                AdPlayerView(name: "background_8")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-           
-              
-
+            NavigationLink(destination: RR13(user: user, friends: friends, groups: groups), label: {
+                HugCircle (color: Color.cyan, friendName: "Care \nHearts")
+            })
+            .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+            .shadow(color: Color .blue, radius: 2, x: 2, y: 2)
+            .opacity(0.9)
+                          
+//            Spacer ()
+//                .frame(width: 15)
 
             }
-            
-            VStack{
+                       
+//                      **********************************
+                            
+        HStack {
+            Spacer ()
+                .frame(width: 25)
                 
-//                Text("Your friend just")
-//                    .font(.system(size: 35))
-//                    .foregroundColor(ColorManager .grey1)
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//
-//                Text("blew you a kiss")
-//                    .font(.system(size: 40))
-//                    .foregroundColor(ColorManager .grey1)
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-                
-                Spacer()
-                    .frame(height: 40)
-                
-                
-                HStack {
-                    VStack {
-        
+            NavigationLink(destination: VirtualHug(user: user, friends: friends), label: {
+                HugCircle (color: Color.cyan, friendName: "\nHugs")
+            })
+            .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
+            .shadow(color: Color.blue, radius: 2, x: 2, y: 2)
+            .opacity(0.9)
+
+            NavigationLink(destination: CH7(user: user, friend: user, friends: friends, groups: groups), label: {
+                HugCircle (color: Color.cyan, friendName: "Perfect \nSong")
+            })
+            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+            .shadow(color: Color.blue, radius: 2, x: 2, y: 2)
+            .opacity(0.9)
+                          
+                            
+            }
+        }
                         
-                        ZStack {
+                        Spacer ()
+                            .frame(width: 20)
+    }
+                    
+                    
+//                    Spacer ()
+//                        .frame(height: 20)
+                    
+                HStack {
+                        
+                    ZStack {
+                            NavigationLink(destination: RR26(user: user, friend: user, friends: friends, groups: groups), label: {
+                                HugCircle (color: ColorManager .purple3, friendName: "Friendship \n Strengths")
+                            })
+                            .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+                            .shadow(color: Color.blue, radius: 10, x: 10, y: 10)
+                            .opacity(0.9)
+
+                        }
+                        
+
+                    }
+                    
+                    Spacer ()
+                        .frame(height: 20)
+                    
+                    
+                    HStack {
+                 
+                        VStack {
+                            ZStack {
+                                NavigationLink(destination: RR29(user: user, friends: friends), label: {
+                                    HugCircle (color: ColorManager .purple5, friendName: "YOU CAN \nDO IT!")
+                                })
+                                .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+                                .shadow(color: ColorManager .purple3, radius: 4, x: 4, y: 4)
+                                .opacity(0.65)
+                                
+ 
+                            }
+                        }
+                        
+                        NavigationLink(destination: RR14(user: user, friend: user, friends: friends, groups: groups), label: {
+                            HugCircle (color: ColorManager .purple5, friendName: "Say \nCONGRATS")
+                        })
+                        .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+                        .shadow(color: ColorManager .purple2, radius: 4, x: 4, y: 4)
+                        .opacity(0.65)
+                        
+                    
+                    
+                    NavigationLink(destination: RR28(user: user, friends: friends), label: {
+                        HugCircle (color: ColorManager .purple5, friendName: "Fist-pump")
+                    })
+                        .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
+                        .shadow(color: ColorManager .purple2, radius: 2, x: 2, y: 2)
+                        .opacity(0.9)
+            }
+                    
+                    VStack {
+ 
+                            Spacer ()
+                                .frame(height: 30)
+                            
+                            
+                            HStack {
+                                
+                                ZStack {
+
+                                    Image(systemName: "")
+                                        .resizable()
+                                        .foregroundColor(Color.cyan)
+                                        .frame(width: 150, height: 110)
+                                        .rotationEffect(.degrees(7))
+                                        .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+                                        .opacity(0.5)
+//                                        .blinking(duration: 2.0)
+
+
+                                    NavigationLink(destination: RR31(user: user, friends: friends), label: {
+
+                                        Text("")
+                                            .fontWeight(.thin)
+                                            .foregroundColor(Color.white)
+                                            .font(.system(size: 20))
+                                            .multilineTextAlignment(.center)
+                                            .rotationEffect(.degrees(7))
+                                            .opacity(1.0)
+//                                            .blinking(duration: 2.0)
+
+
+                                    }
+                                    )}
+                                
+                                
+                                
+                                Spacer ()
+                                    .frame(width: 1)
+                                
+                                ZStack {
+                                    
+                                    Image(systemName: "cube.fill")
+                                        .resizable()
+                                        .foregroundColor(ColorManager .grey3)
+                                        .frame(width: 100, height: 80)
+                                        .rotationEffect(.degrees(-20))
+                                        .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+                                        .opacity(0.5)
+                                        .blinking(duration: 2.0)
+                                    
+                                    
+                                    NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
+                                        
+                                        Text("Custom \n(in beta)")
+                                            .fontWeight(.thin)
+                                            .foregroundColor(Color.white)
+                                            .font(.system(size: 20))
+                                            .multilineTextAlignment(.center)
+                                            .rotationEffect(.degrees(-7))
+                                            .opacity(1.0)
+                                            .blinking(duration: 2.0)
+                                        
+                                        
+                                    }
+                                    )}
+                            }
                             
                             
                             VStack {
-                          
+                                
+//                                Spacer ()
+//                                    .frame(height: 20)
                                 
                             }
-                            
-                           
                         }
-                      
-                        
                     }
-               
-                }
-             
-         
-                VStack {
-
-
-
                     
-                    VStack {
-                        
-
-                        
-                        
-                        Text("Jump up high and you will")
-                                                .font(.system(size: 20))
-                                                .foregroundColor(ColorManager .grey1)
-                                                .fontWeight(.light)
-                                                .multilineTextAlignment(.center)
-                     
-                        Text("see it floating towards you!")
-                                                .font(.system(size: 20))
-                                                .foregroundColor(ColorManager .grey1)
-                                                .fontWeight(.light)
-                                                .multilineTextAlignment(.center)
-             
-                        
-                        Spacer()
-                            .frame(height: 30)
-                        
-                        Text("(say thanks)")
-                                                .font(.system(size: 15))
-                                                .italic()
-                                                .foregroundColor(ColorManager .grey2)
-                                                .fontWeight(.light)
-                                                .multilineTextAlignment(.center)
-                        
-                        
-                        
-                        HStack {
-                      
-//                            Text("select >")
-//                                .fontWeight(.thin)
-//                                .frame(width: 100, height: 30)
-//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                .font(.system(size: 20))
-//                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-//                                .cornerRadius(25)
-//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            //                                })
-                            
-                            if friends.count > 0 {
-                                RectView(user: user, friend: friends[0], color: colors[0])
-                                    .onTapGesture(perform: {
-                                        if selectedFriends.contains(friends[0].id) {
-                                            selectedFriends = selectedFriends.filter { $0 != friends[0].id }
-                                            colors[0] = ColorManager.purple3
-                                        } else {
-                                            selectedFriends.append(friends[0].id)
-                                            colors[0] = ColorManager.purple5
-                                        }
-                                        print(selectedFriends)
-                                    })
-                                
-                            }
-                            
-                            if friends.count > 1 {
-                                RectView(user: user, friend: friends[1], color: colors[1])
-                                    .onTapGesture(perform: {
-                                        if selectedFriends.contains(friends[1].id) {
-                                            selectedFriends = selectedFriends.filter { $0 != friends[1].id }
-                                            colors[1] = ColorManager.purple3
-                                        } else {
-                                            selectedFriends.append(friends[1].id)
-                                            colors[1] = ColorManager.purple5
-                                        }
-                                        print(selectedFriends)
-                                    })
-                                
-                            }
+                    
+                    .onTapGesture {
+                        withAnimation {
+                            self.showItems.toggle()
                         }
-                        
-                        Spacer()
-                            .frame(height: 15)
-                        
-                        HStack {
-                            if friends.count > 2 {
-                                RectView(user: user, friend: friends[2], color: colors[2])
-                                    .onTapGesture(perform: {
-                                        if selectedFriends.contains(friends[2].id) {
-                                            selectedFriends = selectedFriends.filter { $0 != friends[2].id }
-                                            colors[2] = ColorManager.purple3
-                                        } else {
-                                            selectedFriends.append(friends[2].id)
-                                            colors[2] = ColorManager.purple5
-                                        }
-                                        print(selectedFriends)
-                                    })
-                            }
-                            
-                            if friends.count > 3 {
-                                RectView(user: user, friend: friends[3], color: colors[3])
-                                    .onTapGesture(perform: {
-                                        if selectedFriends.contains(friends[3].id) {
-                                            selectedFriends = selectedFriends.filter { $0 != friends[3].id }
-                                            colors[3] = ColorManager.purple3
-                                        } else {
-                                            selectedFriends.append(friends[3].id)
-                                            colors[3] = ColorManager.purple5
-                                        }
-                                        print(selectedFriends)
-                                    })
-                                
-                            }
-                            
-                            if friends.count > 4 {
-                                RectView(user: user, friend: friends[4], color: colors[4])
-                                    .onTapGesture(perform: {
-                                        if selectedFriends.contains(friends[4].id) {
-                                            selectedFriends = selectedFriends.filter { $0 != friends[4].id }
-                                            colors[4] = ColorManager.purple3
-                                        } else {
-                                            selectedFriends.append(friends[4].id)
-                                            colors[4] = ColorManager.purple5
-                                        }
-                                        print(selectedFriends)
-                                    })
-                                
-                            }
-                        }
-                  
-                  
-             
-                        Spacer()
-                            .frame(height: 20)
-                        
-                 
-                        
-                        
-                        Button(action: {
-                            counter += 1
-                            shareTapped = true
-                            shareButtonTapped()
-                        },
-                               label: {
-                            
-                            
-                            Text("SHARE")
-                        
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(shareColor)
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                .alert("Your thank you for the Kisses \nhas been sent", isPresented: $showingAlert) {
-                                    Button("OK", role: .cancel) { }
-                                }
-                        })
-//                        .confettiCannon(counter: $counter)
-
-                        
-                        VStack {
-                            
-                            Spacer()
-                                .frame(height: 20)
-                                                                  
-                            NavigationLink( destination:  SendKisses(user: user, friends: friends),
-                                            label: {
-                                Text("Blow a Kiss back")
-                                    .fontWeight(.bold)
-                                    .frame(width: 200, height: 40)
-                                    .foregroundColor(Color.black)
-                                    .font(.system(size: 16))
-                                    .background(Color.cyan)
-                                    .glow(color: ColorManager.purple1, radius: 1)
-                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                    .opacity(0.9)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                            })
-                            
-                            Spacer()
-                                .frame(height: 15)
-                            
-                            Button(action: {
-                                sessionManager.showLogin()
-                            },
-                                   label: {
-                                Image("home-alt2")
-                                    .frame(width: 50, height: 25)
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 20))
-                                    .background(ColorManager .grey2)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                    .opacity(0.70)
-
-                            })
-//
-                            Spacer()
-                                .frame(height: 150)
-                            
-   
-                   
-                        }
+                        print("tap function is working")
                     }
+                    
+                    .animation(Animation.easeInOut(duration: 1.7), value: showItems)
+                    
                 }
-                
             }
+        }
+        
+        
+        struct HugCircle: View {
+            var color: Color
+            var friendName: String
             
-        }
-        
-    }
-    
-    
-    func shareButtonTapped() {
-        if selectedFriends.count == 0 { return }
-        for id in selectedFriends {
-            for f in friends {
-                if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) Ahhh! Thanks for the Kisses!", APNToken: f.APNToken)
+            var body: some View {
+                
+                ZStack {
                     
-                    //MARK: The code below creates an in-app notification for your friend (f.id)
-                    //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "Ahhh! Thanks for the Kisses!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                        print("Create a got kiss notification response code: ", response)
-                    })
-                    RestApi.instance.createStreakLog(friendID: f.id)
+                    Image(systemName: "cube")
+                        .resizable()
+                        .foregroundColor(color)
+                    //                            .foregroundColor(ColorManager .purple2)
+                        .frame(width: 100, height: 80)
+                        .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+                    
+                    Text(friendName)
+                        .fontWeight(.medium)
+                        .font(.system(size: 15))
+                        .italic()
+                        .foregroundColor(.white)
+                    
                 }
             }
         }
-        shareColor = ColorManager.darkGrey
-        showingAlert = true
     }
     
-    struct RectView: View {
-        let user: User
-        let friend: User
-        let color: Color
-        
-        var body: some View {
-            Text(friend.firstName + " " + String(friend.lastName.first!))
-                .fontWeight(.bold)
-                .frame(width: 80, height: 80)
-                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                .font(.system(size: 8))
-                .background(color)
-                .cornerRadius(75)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-        }
-    }
-    
-    
-    
-}
+
+
+
+
+//
+//import Foundation
+//import SwiftUI
+//import AVKit
+//
+//struct HugPreload: View {
+//
+//    let user: User
+//    let friends: [User]
+//    let groups: [Group]
+//    let atmosphere: Atmosphere
+//
+//    @State private var showItems: Bool = false
+//    @State private var offset: CGFloat = 200.0
+//
+//
+//    var body: some View {
+//
+//        ZStack {
+//            Color.black
+//                .opacity(0.9)
+//                .ignoresSafeArea()
+//
+//            AdPlayerView(name: "background_7")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.9)
+//
+//
+//            ZStack{
+//
+//                VStack {
+//
+//                    ZStack {
+//
+//
+//
+//                        Image(systemName: "cube.fill")
+//                            .resizable()
+//                            .foregroundColor(Color.purple)
+//                            .frame(width: 280, height: 260)
+//                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+//                            .opacity(0.5)
+//
+//
+//                        VStack {
+//
+//                            Text("Sending CareHearts")
+//                                .font(.system(size: 30))
+//                                .foregroundColor(Color.white)
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+//
+////                            Text("Sending compassion to my friends,")
+////                                .font(.system(size: 15))
+////                                .italic()
+////                                .foregroundColor(Color.white)
+////                                .fontWeight(.light)
+////                                .multilineTextAlignment(.center)
+////
+////                            Text("family, romances & dreams")
+////                                .font(.system(size: 15))
+////                                .italic()
+////                                .foregroundColor(Color.white)
+////                                .fontWeight(.light)
+////                                .multilineTextAlignment(.center)
+//
+//
+//                            Text("back-and-forth")
+//                                .font(.system(size: 15))
+//                                .italic()
+//                                .foregroundColor(Color.white)
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+//
+//                        }
+//                    }
+//
+//HStack {
+//
+//    VStack {
+//
+//        HStack {
+//
+//            Spacer ()
+//                .frame(width: 25)
+//
+//            NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
+//                HugCircle (color: Color.cyan, friendName: "Blowing \nKisses")
+//            })
+//            .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+//            .shadow(color: Color .blue, radius: 2, x: 2, y: 2)
+//            .opacity(0.9)
+//
+//
+//
+//            NavigationLink(destination: RR11(user: user, friend: user, friends: friends, groups: groups), label: {
+//                HugCircle (color: Color.cyan, friendName: "Care \nHearts")
+//            })
+//            .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+//            .shadow(color: Color .blue, radius: 2, x: 2, y: 2)
+//            .opacity(0.9)
+//
+////            Spacer ()
+////                .frame(width: 15)
+//
+//            }
+//
+////                      **********************************
+//
+//        HStack {
+//            Spacer ()
+//                .frame(width: 25)
+//
+//            NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
+//                HugCircle (color: Color.cyan, friendName: "\nHugs")
+//            })
+//            .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
+//            .shadow(color: Color.blue, radius: 2, x: 2, y: 2)
+//            .opacity(0.9)
+//
+//            NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
+//                HugCircle (color: Color.cyan, friendName: "Perfect \nSong")
+//            })
+//            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+//            .shadow(color: Color.blue, radius: 2, x: 2, y: 2)
+//            .opacity(0.9)
+//
+//
+//            }
+//        }
+//
+//                        Spacer ()
+//                            .frame(width: 20)
+//    }
+//
+//
+////                    Spacer ()
+////                        .frame(height: 20)
+//
+//                HStack {
+//
+//                    ZStack {
+//                            NavigationLink(destination: RR20(user: user, friend: user, friends: friends, groups: groups), label: {
+//                                HugCircle (color: ColorManager .purple3, friendName: "Friendship \n Strengths")
+//                            })
+//                            .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+//                            .shadow(color: Color.blue, radius: 10, x: 10, y: 10)
+//                            .opacity(0.9)
+//
+//                        }
+//
+//
+//                    }
+//
+//                    Spacer ()
+//                        .frame(height: 20)
+//
+//
+//                    HStack {
+//
+//                        VStack {
+//                            ZStack {
+//                                NavigationLink(destination: RR27(user: user, friend: user, friends: friends, groups: groups), label: {
+//                                    HugCircle (color: ColorManager .purple5, friendName: "YOU CAN \nDO IT!")
+//                                })
+//                                .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+//                                .shadow(color: ColorManager .purple3, radius: 4, x: 4, y: 4)
+//                                .opacity(0.65)
+//
+//
+//                            }
+//                        }
+//
+//                        NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
+//                            HugCircle (color: ColorManager .purple5, friendName: "Say \nCONGRATS")
+//                        })
+//                        .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+//                        .shadow(color: ColorManager .purple2, radius: 4, x: 4, y: 4)
+//                        .opacity(0.65)
+//
+//
+//
+//                    NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
+//                        HugCircle (color: ColorManager .purple5, friendName: "Fist-pump")
+//                    })
+//                        .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
+//                        .shadow(color: ColorManager .purple2, radius: 2, x: 2, y: 2)
+//                        .opacity(0.9)
+//            }
+//
+//                    VStack {
+//
+//                            Spacer ()
+//                                .frame(height: 30)
+//
+//
+//                            HStack {
+//
+//                                ZStack {
+//
+//                                    Image(systemName: "")
+//                                        .resizable()
+//                                        .foregroundColor(Color.cyan)
+//                                        .frame(width: 150, height: 110)
+//                                        .rotationEffect(.degrees(7))
+//                                        .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+//                                        .opacity(0.5)
+////                                        .blinking(duration: 2.0)
+//
+//
+//                                    NavigationLink(destination: RR31(user: user, friends: friends), label: {
+//
+//                                        Text("")
+//                                            .fontWeight(.thin)
+//                                            .foregroundColor(Color.white)
+//                                            .font(.system(size: 20))
+//                                            .multilineTextAlignment(.center)
+//                                            .rotationEffect(.degrees(7))
+//                                            .opacity(1.0)
+////                                            .blinking(duration: 2.0)
+//
+//
+//                                    }
+//                                    )}
+//
+//
+//
+//                                Spacer ()
+//                                    .frame(width: 1)
+//
+//                                ZStack {
+//
+//                                    Image(systemName: "cube.fill")
+//                                        .resizable()
+//                                        .foregroundColor(ColorManager .grey3)
+//                                        .frame(width: 100, height: 80)
+//                                        .rotationEffect(.degrees(-20))
+//                                        .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
+//                                        .opacity(0.5)
+//                                        .blinking(duration: 2.0)
+//
+//
+//                                    NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
+//
+//                                        Text("Custom \n(in beta)")
+//                                            .fontWeight(.thin)
+//                                            .foregroundColor(Color.white)
+//                                            .font(.system(size: 20))
+//                                            .multilineTextAlignment(.center)
+//                                            .rotationEffect(.degrees(-7))
+//                                            .opacity(1.0)
+//                                            .blinking(duration: 2.0)
+//
+//
+//                                    }
+//                                    )}
+//                            }
+//
+//
+//                            VStack {
+//
+////                                Spacer ()
+////                                    .frame(height: 20)
+//
+//                            }
+//                        }
+//                    }
+//
+//
+//                    .onTapGesture {
+//                        withAnimation {
+//                            self.showItems.toggle()
+//                        }
+//                        print("tap function is working")
+//                    }
+//
+//                    .animation(Animation.easeInOut(duration: 1.7), value: showItems)
+//
+//                }
+//            }
+//        }
+//
+//
+//        struct HugCircle: View {
+//            var color: Color
+//            var friendName: String
+//
+//            var body: some View {
+//
+//                ZStack {
+//
+//                    Image(systemName: "cube")
+//                        .resizable()
+//                        .foregroundColor(color)
+//                    //                            .foregroundColor(ColorManager .purple2)
+//                        .frame(width: 100, height: 80)
+//                        .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
+//
+//                    Text(friendName)
+//                        .fontWeight(.medium)
+//                        .font(.system(size: 15))
+//                        .italic()
+//                        .foregroundColor(.white)
+//
+//                }
+//            }
+//        }
+//    }
+//
+

@@ -132,7 +132,7 @@ struct HomeView: View {
                             ZStack {
                                 
                                 NavigationLink(
-                                    destination:  CH10(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
+                                    destination:  RR30(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
                                     label: {
                                         
                                         ZStack {
