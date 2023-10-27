@@ -177,22 +177,9 @@ struct HomeView: View {
                                     })
                             }
                             
-                            NavigationLink(
-                                destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
-                                label: {
-                                    
-                                    Image("iconSettings")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 45, height: 45)
-                                        .foregroundColor(ColorManager .purple5)
-                                        .glow(color: Color.purple, radius: 2)
-                                        .opacity(0.9)
-                                })
-                            //        ***
+                            Spacer()
+                                .frame(width: 15)
                             
-                            //                        ******************************************
-                            //                        ******************************************
                             ZStack {
                                 
                                 Image("iconStar40")
@@ -222,73 +209,33 @@ struct HomeView: View {
                                     .glow(color: ColorManager .purple5, radius: 3)
                                     .shadow(color: Color.blue, radius: 2, x: 0, y: 3)
                                     .blinking(duration: 2.0)
-                                
+                                 
                             }
+                            
+                            Spacer()
+                                .frame(width: 15)
+                            
+                            NavigationLink(
+                                destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
+                                label: {
+                                    
+                                    Image("iconSettings")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 45, height: 45)
+                                        .foregroundColor(ColorManager .purple5)
+                                        .glow(color: Color.purple, radius: 2)
+                                        .opacity(0.9)
+                                })
+                            
                         }
                         
-                        
-                        
-                        //     ************************************************
-                        //                        NavigationLink(
-                        //                            destination:  RR33(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                        //                            label: {
-                        //
-                        //                                ZStack {
-                        ////                                    Image("iconFightG")
-                        //                                    Image(systemName: "cube")
-                        //                                        .resizable()
-                        //                                        .scaledToFit()
-                        //                                        .frame(width: 50, height: 50)
-                        //                                        .foregroundColor(Color.white)
-                        //                                        .glow(color: Color.cyan, radius: 3)
-                        //                                        .opacity(0.155)
-                        ////                                      .blinking(duration: 4.0)
-                        //
-                        //                                }
-                        //
-                        //                            })
-                        
-                        
-                        
-                        //***************************** Center Heart opeque **********************
-                        
-                        //************************************ **********************
+                 
                         
                         Spacer()
                         
                         ZStack {
-                            //
-                            //                            Image(systemName: "heart.fill")
-                            //                                .resizable()
-                            //                                .scaledToFit()
-                            //                                .frame(width: 440, height: 410)
-                            //                                .foregroundColor(Color.white)
-                            //                                .opacity(0.010)
-                            //                                .rotationEffect(.degrees(-20))
-                            //                                .glow(color: Color.white, radius: 75)
-                            //                                .shadow(color: Color.white, radius: 10, x: 0, y: 10)
-                            //                                .blinking(duration: 4.0)
-                            //
-                            //                            VStack {
-                            //
-                            //
-                            //
-                            //                                Text("friendships")
-                            //                                    .font(.system(size: 70))
-                            //                                    .foregroundColor(Color.white)
-                            //                                    .fontWeight(.light)
-                            //                                    .opacity(0.1)
-                            //                                    .multilineTextAlignment(.center)
-                            //                                    .rotationEffect(.degrees(-20))
-                            //                                    .glow(color: Color.white, radius: 75)
-                            //                                    .shadow(color: ColorManager .purple2, radius: 10, x: 10, y: 10)
-                            //                                    .blinking(duration: 4.0)
-                            //
-                            //
-                            
-                            
-                            //                ****************************************************************
-                            
+                     
                             
                             Spacer()
                                 .frame(height: 320)
