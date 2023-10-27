@@ -310,10 +310,7 @@ struct FriendPlanetsView: View {
                         .scaledToFit()
 //                        .blinking(duration: 2.0)
                 }
-                
-//                Text("add")
-//                    .font(.system(size: 15, weight: .regular))
-//                    .foregroundColor(.white)
+
                 Text("friends")
                     .font(.system(size: 15, weight: .regular))
                     .foregroundColor(.white)
