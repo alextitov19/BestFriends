@@ -66,9 +66,9 @@ struct ChatGroupsView: View {
                             NavigationLink(
                                 destination: ProfessionalHelp(user: user),
                                 label: {
-                                    Text("Single-friend \nSetUP")
+                                    Text("1-on-1 \nSetUP")
                                         .fontWeight(.thin)
-                                        .frame(width: 90, height: 40)
+                                        .frame(width: 60, height: 40)
                                         .foregroundColor(ColorManager.grey1)
                                         .font(.system(size: 13))
                                         .background(Color .purple)
@@ -106,11 +106,11 @@ struct ChatGroupsView: View {
                             NavigationLink(
                                 destination: InfoCreateChatRooms(user: user),
                                 label: {
-                                    Text("Multi-friend \nSetUP")
+                                    Text("Group \nSetUP")
                                         .fontWeight(.thin)
-                                        .frame(width: 90, height: 40)
+                                        .frame(width: 60, height: 40)
                                         .foregroundColor(ColorManager.purple1)
-                                        .font(.system(size: 15))
+                                        .font(.system(size: 13))
                                         .background(ColorManager.purple3)
                                         .cornerRadius(10)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
