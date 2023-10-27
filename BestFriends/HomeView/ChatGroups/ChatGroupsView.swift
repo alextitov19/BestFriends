@@ -64,79 +64,56 @@ struct ChatGroupsView: View {
                         
                         HStack  {
                             
-                            Text("^")
-                                .font(.system(size: 35))
+                            Text("Multi \nFriend")
+                                .font(.system(size: 15))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
                                 .opacity(0.4)
                                 .multilineTextAlignment(.center)
                             //                                .blinking(duration: 2.0)
                             
+                            Text("^")
+                                .font(.system(size: 35))
+                                .foregroundColor(Color.white)
+                                .fontWeight(.light)
+                                .opacity(0.4)
+                                .multilineTextAlignment(.center)
                             
                             Image("iconChat5")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 80, height: 80)
+                                .frame(width: 90, height: 90)
                                 .foregroundColor(ColorManager .purple5)
                                 .glow(color: Color.purple, radius: 2)
                                 .opacity(0.9)
-                            
-                            Text("^")
-                                .font(.system(size: 35))
-                                .foregroundColor(Color.white)
-                                .fontWeight(.light)
-                                .opacity(0.4)
-                                .multilineTextAlignment(.center)
-                            //                                .blinking(duration: 2.0)
-                            
-                            
-//                            ZStack {
 //
-//                                NavigationLink(
-//                                    destination:  SettingsView(user: user, friends: friends, atmosphere: atmosphere),
-//                                    label: {
+//                            Text("^")
+//                                .font(.system(size: 35))
+//                                .foregroundColor(Color.white)
+//                                .fontWeight(.light)
+//                                .opacity(0.4)
+//                                .multilineTextAlignment(.center)
+//                            //                                .blinking(duration: 2.0)
 //
-//                                        Image("iconSettings")
-//                                            .resizable()
-//                                            .scaledToFit()
-//                                            .frame(width: 45, height: 45)
-//                                            .foregroundColor(ColorManager .purple5)
-//                                            .glow(color: Color.purple, radius: 2)
-//                                            .opacity(0.9)
-//                                    })
-//                            }
+//
+//
                             
                             
-                            
-                            
-                            
-                        }
-                           
-          
-                        
                             NavigationLink(
                                 destination: InfoCreateChatRooms(user: user),
                                 label: {
-                                    Text("Multi-friend ACCESS & SetUp")
+                                    Text("SetUp \nAccess")
                                         .fontWeight(.thin)
-                                        .frame(width: 250, height: 25)
+                                        .frame(width: 70, height: 40)
                                         .foregroundColor(ColorManager.purple1)
-                                        .font(.system(size: 20))
+                                        .font(.system(size: 15))
                                         .background(ColorManager.purple3)
                                         .cornerRadius(10)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 })
-//                                    Text("SwipeUp")
-//                                        .fontWeight(.thin)
-//                                        .frame(width: 85, height: 25)
-//                                        .foregroundColor(ColorManager.purple1)
-//                                        .font(.system(size: 20))
-//                                        .background(ColorManager.purple3)
-//                                        .cornerRadius(15)
-//                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-                                }
-                                
+                            
+                        }
+                    }
                             }
                         }
                         

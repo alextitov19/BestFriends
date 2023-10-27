@@ -69,7 +69,7 @@ struct RR30: View {
 
                         VStack {
                             
-                            Text("Sending CareHearts")
+                            Text("Receiving CareHearts")
                                 .font(.system(size: 30))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
@@ -90,7 +90,7 @@ struct RR30: View {
 //                                .multilineTextAlignment(.center)
                             
                        
-                            Text("back-and-forth")
+                            Text("feeling the love")
                                 .font(.system(size: 15))
                                 .italic()
                                 .foregroundColor(Color.white)
