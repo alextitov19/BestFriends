@@ -155,38 +155,76 @@ struct HomeView: View {
                         //    ****************************************
                         
                         
-                        ZStack {
-                            
-                            Image("iconStar40")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 55, height: 55)
-                                .foregroundColor(ColorManager .grey3)
-                            //                                    .blinking(duration: 2.0)
-                                .glow(color: ColorManager.purple4, radius: 3)
-                                .opacity(0.5)
-                                .onTapGesture {
-                                    print("Clicked notification bell")
-                                    presentingIANs.toggle()
-                                }
-                            
-                            NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
-                            ) { EmptyView() }
-                            
-                            
-                            Image(systemName: "star.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 50, height: 50)
-                                .foregroundColor(ColorManager .purple4)
-                                .opacity(0.125)
-                                .rotationEffect(.degrees(-10))
-                                .glow(color: ColorManager .purple5, radius: 3)
-                                .shadow(color: Color.blue, radius: 2, x: 0, y: 3)
-                                .blinking(duration: 2.0)
-                            
-                        }
                         
+                        HStack {
+                            
+                            ZStack {
+                                
+                                NavigationLink(
+                                    destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
+                                    label: {
+                                        
+                                        Image("IconPhotoNew")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 45, height: 45)
+                                            .rotationEffect(.degrees(-7))
+                                            .foregroundColor(ColorManager .purple5)
+                                            .glow(color: Color.purple, radius: 2)
+                                            .opacity(0.9)
+                                        
+                                        
+                                    })
+                            }
+                            
+                            NavigationLink(
+                                destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
+                                label: {
+                                    
+                                    Image("iconSettings")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 45, height: 45)
+                                        .foregroundColor(ColorManager .purple5)
+                                        .glow(color: Color.purple, radius: 2)
+                                        .opacity(0.9)
+                                })
+                            //        ***
+                            
+                            //                        ******************************************
+                            //                        ******************************************
+                            ZStack {
+                                
+                                Image("iconStar40")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 55, height: 55)
+                                    .foregroundColor(ColorManager .grey3)
+                                //                                    .blinking(duration: 2.0)
+                                    .glow(color: ColorManager.purple4, radius: 3)
+                                    .opacity(0.5)
+                                    .onTapGesture {
+                                        print("Clicked notification bell")
+                                        presentingIANs.toggle()
+                                    }
+                                
+                                NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
+                                ) { EmptyView() }
+                                
+                                
+                                Image(systemName: "star.fill")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 50, height: 50)
+                                    .foregroundColor(ColorManager .purple4)
+                                    .opacity(0.125)
+                                    .rotationEffect(.degrees(-10))
+                                    .glow(color: ColorManager .purple5, radius: 3)
+                                    .shadow(color: Color.blue, radius: 2, x: 0, y: 3)
+                                    .blinking(duration: 2.0)
+                                
+                            }
+                        }
                         
                         
                         
@@ -289,7 +327,7 @@ struct HomeView: View {
                             Image("FatGuy200")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 120, height: 120)
+                                .frame(width: 130, height: 130)
                                 .foregroundColor(ColorManager .purple5)
 //                                .blinking(duration: 5.0)
                                 .opacity(1.5)
@@ -297,9 +335,9 @@ struct HomeView: View {
                             
                             Text("Walk-through")
                                 .fontWeight(.thin)
-                                     .frame(width: 60, height: 40)
+                                     .frame(width: 55, height: 35)
                                      .foregroundColor(ColorManager .purple7)
-                                     .font(.system(size: 13))
+                                     .font(.system(size: 10))
                                      .background(ColorManager.purple3)
                                      .cornerRadius(10)
                                      .rotationEffect(.degrees(-25))
@@ -314,67 +352,63 @@ struct HomeView: View {
                             
                             
                             
+//   *************************************************** Old photopop and settings ***
                             
-                            
-                            HStack {
-                                
-                                ZStack {
-                                    
-                                    NavigationLink(
-                                        destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
-                                        label: {
-                                            
-                                            Image("IconPhotoNew")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 45, height: 45)
-                                                .rotationEffect(.degrees(-7))
-                                                .foregroundColor(ColorManager .purple5)
-                                                .glow(color: Color.purple, radius: 2)
-                                                .opacity(0.9)
-                                                
-                                            
-                                        })
-                                }
-                                
-                                
+//                            HStack {
+//
 //                                ZStack {
+//
 //                                    NavigationLink(
-//                                        destination:  RR5(user: homeData!.user, friends: homeData!.friends),
+//                                        destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
 //                                        label: {
 //
-//                                            Image("IconHugNew")
+//                                            Image("IconPhotoNew")
 //                                                .resizable()
 //                                                .scaledToFit()
 //                                                .frame(width: 45, height: 45)
+//                                                .rotationEffect(.degrees(-7))
+//                                                .foregroundColor(ColorManager .purple5)
+//                                                .glow(color: Color.purple, radius: 2)
+//                                                .opacity(0.9)
+//
+//
+//                                        })
+//                                }
+//
+//                                NavigationLink(
+//                                    destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
+//                                    label: {
+//
+//                                        Image("iconSettings")
+//                                            .resizable()
+//                                            .scaledToFit()
+//                                            .frame(width: 45, height: 45)
+//                                            .foregroundColor(ColorManager .purple5)
+//                                            .glow(color: Color.purple, radius: 2)
+//                                            .opacity(0.9)
+//                                    })
+//
+//                                //******************************************************
+//                                Spacer()
+//                                    .frame(width: 270)
+//
+//
+//                                ZStack {
+//
+//                                    NavigationLink(
+//                                        destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
+//                                        label: {
+//
+//                                            Image("")
+//                                                .resizable()
+//                                                .scaledToFit()
+//                                                .frame(width: 0, height: 0)
 //                                                .foregroundColor(ColorManager .purple5)
 //                                                .glow(color: Color.purple, radius: 2)
 //                                                .opacity(0.9)
 //                                        })
 //                                }
-                                
-                                
-                                //******************************************************
-                                Spacer()
-                                    .frame(width: 270)
-                                
-                                
-                                ZStack {
-                                    
-                                    NavigationLink(
-                                        destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
-                                        label: {
-                                            
-                                            Image("iconSettings")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 45, height: 45)
-                                                .foregroundColor(ColorManager .purple5)
-                                                .glow(color: Color.purple, radius: 2)
-                                                .opacity(0.9)
-                                        })
-                                }
-                                
+//
                                 
 //                                Spacer()
 //                                    .frame(width: 40)
@@ -397,7 +431,7 @@ struct HomeView: View {
 //                                                .glow(color: Color.purple, radius: 2)
 //                                                .opacity(0.9)
 //                                        })
-                                }
+//                                }
                                 
                                 
 //                                ZStack {
