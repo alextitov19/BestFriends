@@ -47,7 +47,7 @@ struct ProfessionalHelp: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.cyan)
                         
-                        Text("Tap friend's planet, then large ChatBubble popup. \nName Room ")
+                        Text("Tap friend's planet, then large ChatBubble popup \nand name room")
                             .font(.system(size: 15))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -89,18 +89,31 @@ struct ProfessionalHelp: View {
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
+                 
                         
-//                        
-//                        Spacer ()
-//                            .frame(height: 50)
-                        
+                  
                     }
                     
                 }
                 
                 VStack {
                     
-                    
+                    VStack {
+                        Spacer ()
+                            .frame(height: 70)
+                        
+                        Text("Delete Rooms")
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.cyan)
+                        
+                        Text("Tap [Delete Room] button top of Chat")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                    }
                     
                     
                 }

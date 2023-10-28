@@ -305,107 +305,10 @@ struct HomeView: View {
                             
 //   *************************************************** Old photopop and settings ***
                             
-//                            HStack {
-//
-//                                ZStack {
-//
-//                                    NavigationLink(
-//                                        destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
-//                                        label: {
-//
-//                                            Image("IconPhotoNew")
-//                                                .resizable()
-//                                                .scaledToFit()
-//                                                .frame(width: 45, height: 45)
-//                                                .rotationEffect(.degrees(-7))
-//                                                .foregroundColor(ColorManager .purple5)
-//                                                .glow(color: Color.purple, radius: 2)
-//                                                .opacity(0.9)
-//
-//
-//                                        })
-//                                }
-//
-//                                NavigationLink(
-//                                    destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
-//                                    label: {
-//
-//                                        Image("iconSettings")
-//                                            .resizable()
-//                                            .scaledToFit()
-//                                            .frame(width: 45, height: 45)
-//                                            .foregroundColor(ColorManager .purple5)
-//                                            .glow(color: Color.purple, radius: 2)
-//                                            .opacity(0.9)
-//                                    })
-//
-//                                //******************************************************
-//                                Spacer()
-//                                    .frame(width: 270)
-//
-//
-//                                ZStack {
-//
-//                                    NavigationLink(
-//                                        destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
-//                                        label: {
-//
-//                                            Image("")
-//                                                .resizable()
-//                                                .scaledToFit()
-//                                                .frame(width: 0, height: 0)
-//                                                .foregroundColor(ColorManager .purple5)
-//                                                .glow(color: Color.purple, radius: 2)
-//                                                .opacity(0.9)
-//                                        })
-//                                }
-//
-                                
-//                                Spacer()
-//                                    .frame(width: 40)
-                                
-                                //******************************************************
+//******************************************************
                                 
                                 ZStack {
-                                    
-                                    
-//                                    NavigationLink(
-//                                        destination:  BestFriendMessages(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres),
-//                                        label: {
-//
-//                                            Image("IconRoomNew")
-//                                                .resizable()
-//                                                .scaledToFit()
-//                                                .frame(width: 45, height: 45)
-//                                            //                                    .rotationEffect(.degrees(-7))
-//                                                .foregroundColor(ColorManager .purple5)
-//                                                .glow(color: Color.purple, radius: 2)
-//                                                .opacity(0.9)
-//                                        })
-//                                }
-                                
-                                
-//                                ZStack {
-//
-//
-//                                    NavigationLink(
-//                                        destination:  RR33(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-//                                        label: {
-//
-//                                            ZStack {
-//                                                //                                    Image("iconFightG")
-//                                                Image("iconFightG")
-//                                                    .resizable()
-//                                                    .scaledToFit()
-//                                                    .frame(width: 50, height: 50)
-//                                                    .foregroundColor(ColorManager .purple5)
-//                                                    .glow(color: Color.purple, radius: 2)
-//                                                    .opacity(0.9)
-//
-//                                            }
-//                                        })
-//
-//                                }
+
                             }
                         }
                         

@@ -158,17 +158,17 @@ struct ChatView: View {
                     
 //                    NavigationLink(destination: ChangeChatBackgroundView(user: user),
                    
-                    NavigationLink(destination: RR8(),
-                        label: {
-                        Text("Customize Backgrounds \nin 'Settings'")
-                            .fontWeight(.regular)
-                            .frame(width: 130, height: 24)
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 10))
-                            .background(Color.purple)
-                            .cornerRadius(5)
-                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                    })
+//                    NavigationLink(destination: RR8(),
+//                        label: {
+//                        Text("Customize Backgrounds \nin 'Settings'")
+//                            .fontWeight(.regular)
+//                            .frame(width: 130, height: 24)
+//                            .foregroundColor(Color.white)
+//                            .font(.system(size: 10))
+//                            .background(Color.purple)
+//                            .cornerRadius(5)
+//                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                    })
                
                     
                     ZStack {
