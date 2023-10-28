@@ -27,6 +27,14 @@ struct ProfessionalHelp: View {
                    .ignoresSafeArea()
                    .blendMode(.screen)
             
+            
+// *******************************************************
+            
+      
+            
+            
+//            ***************************************************
+            
             VStack {
           
                    
@@ -137,7 +145,7 @@ struct ProfessionalHelp: View {
                         .opacity(0.5)
                 })
                             
-                        
+
                         
                     }
                 }
