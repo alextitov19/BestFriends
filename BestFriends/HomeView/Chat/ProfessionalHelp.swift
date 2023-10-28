@@ -28,30 +28,7 @@ struct ProfessionalHelp: View {
                    .blendMode(.screen)
             
             VStack {
-                Text("Single-friend")
-                    .fontWeight(.medium)
-                    .font(.system(size: 50))
-                    .foregroundColor(.white)
-                    .glow(color: ColorManager.purple4, radius: 3)
-                    .opacity(0.15)
-
-
-                Text("Chat Rooms")
-                    .fontWeight(.medium)
-                    .font(.system(size: 50))
-                    .foregroundColor(.white)
-                    .glow(color: ColorManager.purple4, radius: 3)
-                    .opacity(0.15)
-                
-                
-                
-                
-                Text("To access rooms tap Friend's Planet")
-                    .fontWeight(.light)
-                    .font(.system(size: 20))
-                    .foregroundColor(.white)
-                    .glow(color: ColorManager.purple4, radius: 3)
-                    .opacity(0.9)
+          
                    
                 ZStack {
                     
@@ -63,23 +40,59 @@ struct ProfessionalHelp: View {
                         .opacity(0.25)
                     
                     VStack {
-                        //                            Text("\nCREATING One-on-one Chat Rooms...Tap friend's planet, then ChatBubble 'popup' to name room \n\nACCESSING one-on-one Chat Rooms...Tap friend's planet, then this 'popup' to enter")
-                        //                                .fontWeight(.medium)
-                        //                                .font(.system(size: 14))
-                        //                                .frame(width: 340, height: 265)
-                        //                                .padding(15)
-                        //                                .foregroundColor(.white)
-                        //                                .cornerRadius(20) .opacity(0.99)
-                        //
-                        //
+                
+                        Text("CREATING Chat Rooms")
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.cyan)
                         
-                        Text("\nCREATING One-on-one Chat Rooms...Tap friend's planet, then ChatBubble 'popup' to name room \n\nACCESSING one-on-one Chat Rooms...Tap friend's planet, then this 'popup' to enter")
+                        Text("Tap friend's planet, then large ChatBubble popup. \nName Room ")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+                       
+                        
+                        
+                        Spacer ()
+                            .frame(height: 10)
+                        
+                        Text("One-on-One")
                             .fontWeight(.medium)
-                            .font(.system(size: 14))
-                            .frame(width: 340, height: 265)
-                            .padding(15)
+                            .font(.system(size: 50))
                             .foregroundColor(.white)
-                            .cornerRadius(20) .opacity(0.99)
+                            .glow(color: ColorManager.purple4, radius: 3)
+                            .opacity(0.15)
+
+
+                        Text("Chat Rooms")
+                            .fontWeight(.medium)
+                            .font(.system(size: 50))
+                            .foregroundColor(.white)
+                            .glow(color: ColorManager.purple4, radius: 3)
+                            .opacity(0.15)
+                        
+                
+                        Spacer ()
+                            .frame(height: 10)
+                        
+                        Text("ACCESSING")
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.cyan)
+                        
+                        Text("Tap friend's planet - then ChatBubble popup.")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+//                        
+//                        Spacer ()
+//                            .frame(height: 50)
                         
                     }
                     
