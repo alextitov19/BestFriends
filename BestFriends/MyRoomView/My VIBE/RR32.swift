@@ -118,6 +118,10 @@ VStack {
             .background(mood == 7 ? Color.green : ColorManager .grey1)
             .cornerRadius(40)
             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+            
+//            .alert("Just told your friend you have exciting news!", isPresented: $showingAlert) {
+//                Button("OK", role: .cancel) { }
+//            }
         }
         Spacer()
             .frame(width: 15)
@@ -257,7 +261,7 @@ VStack {
                             .foregroundColor(Color.black)
                     }
                     .frame(width: 70, height: 70, alignment: .center)
-                    .background(mood == 7 ? Color.cyan : ColorManager .grey1)
+                    .background(mood == 1 ? Color.cyan : ColorManager .grey1)
                     .cornerRadius(40)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 }
@@ -328,7 +332,7 @@ VStack {
                         .foregroundColor(Color.black)
                 }
                 .frame(width: 70, height: 70, alignment: .center)
-                .background(mood == 7 ? Color.purple : ColorManager .grey1)
+                .background(mood == 6 ? Color.purple : ColorManager .grey1)
                 .cornerRadius(40)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
             }
