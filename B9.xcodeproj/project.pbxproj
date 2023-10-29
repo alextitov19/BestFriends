@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D2A186F2AEEECAF00B0C1DF /* RR50.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2A186E2AEEECAF00B0C1DF /* RR50.swift */; };
+		2D2A18712AEEECCB00B0C1DF /* RR51.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2A18702AEEECCB00B0C1DF /* RR51.swift */; };
+		2D2A18732AEEECD800B0C1DF /* RR52.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2A18722AEEECD800B0C1DF /* RR52.swift */; };
+		2D2A18752AEEECF900B0C1DF /* RR53.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2A18742AEEECF900B0C1DF /* RR53.swift */; };
+		2D2A18772AEEED0500B0C1DF /* RR54.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2A18762AEEED0500B0C1DF /* RR54.swift */; };
+		2D2A18792AEEED1000B0C1DF /* RR55.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2A18782AEEED1000B0C1DF /* RR55.swift */; };
+		2D2A187B2AEEED1A00B0C1DF /* RR56.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2A187A2AEEED1A00B0C1DF /* RR56.swift */; };
+		2D2A187D2AEEED2A00B0C1DF /* RR57.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2A187C2AEEED2A00B0C1DF /* RR57.swift */; };
+		2D2A187F2AEEED6100B0C1DF /* RR58.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2A187E2AEEED6100B0C1DF /* RR58.swift */; };
+		2D2A18812AEEED6E00B0C1DF /* RR59.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2A18802AEEED6E00B0C1DF /* RR59.swift */; };
 		2D7127BB2A658B9000E14744 /* CH11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7127BA2A658B9000E14744 /* CH11.swift */; };
 		2D7127BD2A658BA900E14744 /* CH12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7127BC2A658BA800E14744 /* CH12.swift */; };
 		2D7127BF2A658BBA00E14744 /* CH13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7127BE2A658BBA00E14744 /* CH13.swift */; };
@@ -415,6 +425,16 @@
 
 /* Begin PBXFileReference section */
 		16E04433DE68818589291B02 /* Pods-BestFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.debug.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.debug.xcconfig"; sourceTree = "<group>"; };
+		2D2A186E2AEEECAF00B0C1DF /* RR50.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR50.swift; sourceTree = "<group>"; };
+		2D2A18702AEEECCB00B0C1DF /* RR51.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR51.swift; sourceTree = "<group>"; };
+		2D2A18722AEEECD800B0C1DF /* RR52.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR52.swift; sourceTree = "<group>"; };
+		2D2A18742AEEECF900B0C1DF /* RR53.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR53.swift; sourceTree = "<group>"; };
+		2D2A18762AEEED0500B0C1DF /* RR54.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR54.swift; sourceTree = "<group>"; };
+		2D2A18782AEEED1000B0C1DF /* RR55.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR55.swift; sourceTree = "<group>"; };
+		2D2A187A2AEEED1A00B0C1DF /* RR56.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR56.swift; sourceTree = "<group>"; };
+		2D2A187C2AEEED2A00B0C1DF /* RR57.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR57.swift; sourceTree = "<group>"; };
+		2D2A187E2AEEED6100B0C1DF /* RR58.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR58.swift; sourceTree = "<group>"; };
+		2D2A18802AEEED6E00B0C1DF /* RR59.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RR59.swift; sourceTree = "<group>"; };
 		2D7127BA2A658B9000E14744 /* CH11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH11.swift; sourceTree = "<group>"; };
 		2D7127BC2A658BA800E14744 /* CH12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH12.swift; sourceTree = "<group>"; };
 		2D7127BE2A658BBA00E14744 /* CH13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CH13.swift; sourceTree = "<group>"; };
@@ -826,9 +846,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2DBF3EDF2A61ACC400CB1CAD /* RR */ = {
+		2D2A186D2AEEEC9400B0C1DF /* RR */ = {
 			isa = PBXGroup;
 			children = (
+				2D2A186E2AEEECAF00B0C1DF /* RR50.swift */,
+				2D2A18702AEEECCB00B0C1DF /* RR51.swift */,
+				2D2A18722AEEECD800B0C1DF /* RR52.swift */,
+				2D2A18742AEEECF900B0C1DF /* RR53.swift */,
+				2D2A18762AEEED0500B0C1DF /* RR54.swift */,
+				2D2A18782AEEED1000B0C1DF /* RR55.swift */,
+				2D2A187A2AEEED1A00B0C1DF /* RR56.swift */,
+				2D2A187C2AEEED2A00B0C1DF /* RR57.swift */,
+				2D2A187E2AEEED6100B0C1DF /* RR58.swift */,
+				2D2A18802AEEED6E00B0C1DF /* RR59.swift */,
 			);
 			path = RR;
 			sourceTree = "<group>";
@@ -966,6 +996,7 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
+				2D2A186D2AEEEC9400B0C1DF /* RR */,
 				7AED44FA2647310700944708 /* BestFriends.entitlements */,
 				7ACEDEDC2685181700102E70 /* BestFriendsRelease.entitlements */,
 				7A63AF8A26A339C70072E21E /* Launch Screen.storyboard */,
@@ -976,9 +1007,7 @@
 				7A0856A927F3DCC300E8282B /* SessionManager.swift */,
 				7AD8DF0B27F6970A00D9F0E1 /* AuthView */,
 				7AD8DF0A27F696F000D9F0E1 /* HomeView */,
-				CF6C5B0E2A860DED00EC4915 /* MAIN PAGE VIEW */,
 				7A8F3D7C2A32BC5D00BC2CF4 /* MyRoomView */,
-				2DBF3EDF2A61ACC400CB1CAD /* RR */,
 				7A1C048627F4C3A90002B173 /* Models */,
 				7AC71DA627F3D7D4008D191B /* API */,
 				7A1DBD602659B1A400EB4B42 /* Ext+Custom */,
@@ -1657,13 +1686,6 @@
 			path = "CareHearts INFO";
 			sourceTree = "<group>";
 		};
-		CF6C5B0E2A860DED00EC4915 /* MAIN PAGE VIEW */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "MAIN PAGE VIEW";
-			sourceTree = "<group>";
-		};
 		CF6C5B0F2A860E8D00EC4915 /* Anxiety Attack */ = {
 			isa = PBXGroup;
 			children = (
@@ -2270,6 +2292,7 @@
 			files = (
 				CF3B42F2293715A800EE1D84 /* SaySomethingNice4.swift in Sources */,
 				CFD12CC1281770B600AB2539 /* MyStreaks.swift in Sources */,
+				2D2A18732AEEECD800B0C1DF /* RR52.swift in Sources */,
 				CF09118C28488A5700CB0AF0 /* BetaTestVideo.swift in Sources */,
 				2DDCD9882A8FEBFC00B1040F /* RR20.swift in Sources */,
 				7A45B8442A86AB8600F5E75B /* RR11.swift in Sources */,
@@ -2333,6 +2356,7 @@
 				D1FB49032AD16AEC007C40AB /* RR33Fight.swift in Sources */,
 				CFA1226228597AFC00E22E84 /* HurtFeelings2.swift in Sources */,
 				CF3B65AD280075620003A714 /* MyAccountView.swift in Sources */,
+				2D2A187B2AEEED1A00B0C1DF /* RR56.swift in Sources */,
 				2DFB03122A57226E00669948 /* FH7.swift in Sources */,
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
 				CF381A56282842EA00B3719E /* Step2FG_NewSolutions.swift in Sources */,
@@ -2364,13 +2388,16 @@
 				CF37535128BB3398003817E3 /* SendSongPush.swift in Sources */,
 				7ACA3EEA2A37CC8D0067B3D2 /* JournalView.swift in Sources */,
 				CF2EE70129529C0300B1B16D /* NEWSFeedPergion.swift in Sources */,
+				2D2A18792AEEED1000B0C1DF /* RR55.swift in Sources */,
 				CF39F17C292C5F8000927A3C /* StartHere1.swift in Sources */,
 				2DFB03142A57227900669948 /* FH8.swift in Sources */,
 				CFDB15102859415D00155CEE /* MasterFriendVault.swift in Sources */,
 				62319AAD284A788000CA0359 /* FG_Video.swift in Sources */,
 				7A0856A827F3DA4E00E8282B /* Defaults.swift in Sources */,
 				CF3B65C4280104290003A714 /* SettingsView.swift in Sources */,
+				2D2A186F2AEEECAF00B0C1DF /* RR50.swift in Sources */,
 				CF3AE3B528F9F5F8002584A6 /* TeenVideo.swift in Sources */,
+				2D2A18772AEEED0500B0C1DF /* RR54.swift in Sources */,
 				622F68F9289C6B76001D1997 /* HorizonThoughts.swift in Sources */,
 				7ACB385328208D38009559AF /* ImagePicker.swift in Sources */,
 				CF65041828931C0B0092EEB9 /* FightsDVid.swift in Sources */,
@@ -2380,6 +2407,7 @@
 				CFAB5422281FC8B800BBF502 /* TextingNote.swift in Sources */,
 				2D7127BF2A658BBA00E14744 /* CH13.swift in Sources */,
 				CF9E33C8284530CF00107433 /* FG_GettingStarted.swift in Sources */,
+				2D2A18812AEEED6E00B0C1DF /* RR59.swift in Sources */,
 				D12CE2C92AD8469400AEB105 /* RR40Info2.swift in Sources */,
 				CF1ECAC3287143E900D999F8 /* FightInviteFriend.swift in Sources */,
 				2DFB03102A57226200669948 /* FH6.swift in Sources */,
@@ -2392,6 +2420,7 @@
 				CFAB541B281E5F8300BBF502 /* YouGotThis.swift in Sources */,
 				CFE1946E28133CF700ED5718 /* BestFriendMessages.swift in Sources */,
 				CF381A4D2826790F00B3719E /* Step1_ParentsFighting.swift in Sources */,
+				2D2A187F2AEEED6100B0C1DF /* RR58.swift in Sources */,
 				7ACACDAA2853EACF00D8AB75 /* AlertWrapper.swift in Sources */,
 				CF3B65E4280219B70003A714 /* RemoveFriend.swift in Sources */,
 				CF94CAFF298756BD00A75D01 /* InfoWhyLoveBF2.swift in Sources */,
@@ -2412,6 +2441,7 @@
 				D0CC1A04283EE33500E7461F /* HorizonHomeView.swift in Sources */,
 				7A8F3D7E2A32C63000BC2CF4 /* MyRoomView.swift in Sources */,
 				2DBF3EE52A61ACEB00CB1CAD /* RR3.swift in Sources */,
+				2D2A18712AEEECCB00B0C1DF /* RR51.swift in Sources */,
 				CF47D5D32862531C004B47A1 /* RemoveFriend2.swift in Sources */,
 				CF1ECAC12870039500D999F8 /* HorizonPromoPage.swift in Sources */,
 				CFA1226828598DB800E22E84 /* Apologies3.swift in Sources */,
@@ -2466,6 +2496,7 @@
 				CF2EE6F829516C8A00B1B16D /* InfoHowChatWorks.swift in Sources */,
 				7A22A579274416C200FB6B4F /* ViewExt.swift in Sources */,
 				CFDB150328574D8B00155CEE /* FightWithParents.swift in Sources */,
+				2D2A18752AEEECF900B0C1DF /* RR53.swift in Sources */,
 				2D7127C72A658BF400E14744 /* CH17.swift in Sources */,
 				CF3DB36728D78BF300BF9CCD /* DreamsWeDare.swift in Sources */,
 				CFF952332981BC700054D963 /* DreamsWeDare2.swift in Sources */,
@@ -2602,6 +2633,7 @@
 				7AD2642729EDCA740007ACD5 /* TestPage3.swift in Sources */,
 				D12CE2CC2AD9906C00AEB105 /* RRdemoVideo.swift in Sources */,
 				7ACF912C2767C29A00088ACA /* CustomDivider.swift in Sources */,
+				2D2A187D2AEEED2A00B0C1DF /* RR57.swift in Sources */,
 				D1FB49062AD1F03E007C40AB /* RR34Fight.swift in Sources */,
 				CF387E2A2960D5B6003A85D8 /* PlanetBell.swift in Sources */,
 				7AA2514D2874AB7B0018C97E /* PhotoPopModels.swift in Sources */,
