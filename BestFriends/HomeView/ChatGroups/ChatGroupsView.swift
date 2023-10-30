@@ -87,7 +87,7 @@ struct ChatGroupsView: View {
 //                                            .cornerRadius(10)
 //                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 //                                    })
-//                                
+//
 ////                            }
 //                            Text("^")
 //                                .font(.system(size: 35))
@@ -95,7 +95,7 @@ struct ChatGroupsView: View {
 //                                .fontWeight(.light)
 //                                .opacity(0.4)
 //                                .multilineTextAlignment(.center)
-//  
+//
                             
                             Image("iconChat5")
                                 .resizable()
@@ -111,7 +111,7 @@ struct ChatGroupsView: View {
                                 .fontWeight(.light)
                                 .opacity(0.4)
                                 .multilineTextAlignment(.center)
-                            //                                .blinking(duration: 2.0)
+                                .blinking(duration: 2.0)
 
 
 //
