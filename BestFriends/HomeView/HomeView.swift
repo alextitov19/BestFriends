@@ -296,12 +296,11 @@ struct HomeView: View {
                                     
                                     ZStack {
                                         
-                                        
+//    ********************************************
                                         Image("FatGuy200")
                                             .aspectRatio(contentMode: .fit)
                                             .blinking(duration: 4.0)
-                                        
-                                        //                                   ***********
+                                      
                                         Text("demo")
                                             .fontWeight(.thin)
                                             .frame(width: 45, height: 20)
@@ -315,13 +314,16 @@ struct HomeView: View {
                                             .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
                                             .blinking(duration: 4.0)
                                         
-                                        //                             **********
+//**********************************************************
                                         
                                     }
                                     
                                     Image("")
                                         .aspectRatio(contentMode: .fit)
                                         .frame(width: geo.size.width, alignment: .leading)
+                                    
+                                    
+                                    
                                 }
                                 .frame(width: geo.size.width, height: geo.size.height,
                                        alignment: animate ? .trailing : .leading)
