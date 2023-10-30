@@ -106,9 +106,9 @@ struct ChatGroupsView: View {
                                 .opacity(0.9)
 
                             Text("^")
-                                .font(.system(size: 35))
+                                .font(.system(size: 25))
                                 .foregroundColor(Color.white)
-                                .fontWeight(.light)
+                                .fontWeight(.thin)
                                 .opacity(0.4)
                                 .multilineTextAlignment(.center)
                                 .blinking(duration: 2.0)
@@ -134,12 +134,12 @@ struct ChatGroupsView: View {
                             NavigationLink(
                                 destination: RR50(user: user),
                                 label: {
-                                    Image("in bushes")
+                                    Image(systemName: "info.circle")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 90, height: 80)
-                                        .foregroundColor(ColorManager .purple5)
-                                        .glow(color: Color.purple, radius: 2)
+                                        .frame(width: 32, height: 32)
+                                        .foregroundColor(ColorManager .purple3)
+//                                        .glow(color: Color.purple, radius: 2)
                                         .opacity(0.9)
                                 })
                             

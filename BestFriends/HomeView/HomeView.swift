@@ -260,13 +260,13 @@ struct HomeView: View {
                            
         HStack {
 
-            
-            Text("Walk-through tap rocket when it STOPS")
+
+            Text("")
                 .fontWeight(.light)
-                .frame(width: 210, height: 25)
-                .foregroundColor(Color.white)
+//                .frame(width: 210, height: 25)
+//                .foregroundColor(Color.white)
                 .font(.system(size: 10))
-                .background(ColorManager .grey4)
+//                .background(ColorManager .grey4)
                 .cornerRadius(7)
 //                .rotationEffect(.degrees(-25))
                 .opacity(0.6)
@@ -274,10 +274,10 @@ struct HomeView: View {
                 .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
                 .blinking(duration: 4.0)
             
-          
-            
-            
-            
+
+
+
+
             
             Spacer()
                 .frame(width: 50)
@@ -292,10 +292,32 @@ struct HomeView: View {
                        
                             //*********************************************** Motion
                             GeometryReader { geo in
-                                HStack(spacing: 350) {
-                                    Image("FatGuy200")
-                                        .aspectRatio(contentMode: .fit)
-                                        .blinking(duration: 4.0)
+                                HStack(spacing: 300) {
+                                    
+                                    ZStack {
+                                        
+                                        
+                                        Image("FatGuy200")
+                                            .aspectRatio(contentMode: .fit)
+                                            .blinking(duration: 4.0)
+                                        
+                                        //                                   ***********
+                                        Text("demo")
+                                            .fontWeight(.light)
+                                            .frame(width: 40, height: 20)
+                                            .foregroundColor(Color.white)
+                                            .font(.system(size: 10))
+                                            .background(ColorManager .grey4)
+                                            .cornerRadius(7)
+                                            .rotationEffect(.degrees(-25))
+                                            .opacity(0.6)
+                                            .glow(color: ColorManager .grey4, radius: 3)
+                                            .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
+                                            .blinking(duration: 4.0)
+                                        
+                                        //                             **********
+                                        
+                                    }
                                     
                                     Image("")
                                         .aspectRatio(contentMode: .fit)
