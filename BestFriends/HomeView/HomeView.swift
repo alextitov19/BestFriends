@@ -272,7 +272,8 @@ struct HomeView: View {
                 .cornerRadius(7)
 //                .rotationEffect(.degrees(-25))
                 .opacity(0.6)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                .glow(color: ColorManager .grey4, radius: 3)
+                .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
                 .blinking(duration: 4.0)
             
           
