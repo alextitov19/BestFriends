@@ -125,10 +125,25 @@ struct ChatGroupsView: View {
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 })
                             
+//   ******************** (i) **********************
+                            NavigationLink(
+                                destination: InfoCreateChatRooms(user: user),
+                                label: {
+                                    Image("in bushes")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 100, height: 80)
+                                        .foregroundColor(ColorManager .purple5)
+                                        .glow(color: Color.purple, radius: 2)
+                                        .opacity(0.9)
+                                })
+                            
+                            //   ******************** (i) **********************
+                            
                         }
                     }
-                            }
-                        }
+                }
+            }
                         
                         //MARK: ScrollView content...
                         ScrollView(.vertical, showsIndicators: false) {
