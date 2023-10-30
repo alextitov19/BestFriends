@@ -39,7 +39,7 @@ struct HomeView: View {
     
     //**************************
         @State var animate: Bool = false
-        let animation: Animation = Animation.linear(duration:7.0).repeatForever(autoreverses: false)
+        let animation: Animation = Animation.linear(duration:3.0).repeatForever(autoreverses: false)
     //**************************
     
     
@@ -262,46 +262,68 @@ struct HomeView: View {
                            
         HStack {
             
-            Image(systemName: "")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 5, height: 5)
-                .foregroundColor(ColorManager .purple5)
-                .glow(color: Color.white, radius: 10)
-                .blinking(duration: 3.0)
-                .opacity(0.95)
+//            Image(systemName: "")
+//                .resizable()
+//                .scaledToFit()
+//                .frame(width: 5, height: 5)
+//                .foregroundColor(ColorManager .purple5)
+//                .glow(color: Color.white, radius: 10)
+//                .blinking(duration: 3.0)
+//                .opacity(0.95)
+            Spacer()
+                .frame(width: 60)
+//
+//
+//            Text("")
+//                .fontWeight(.light)
+//                .frame(width: 80, height: 35)
+//                .foregroundColor(Color.black)
+//                .font(.system(size: 13))
+//                .background(Color.white)
+//                .cornerRadius(5)
+//                .rotationEffect(.degrees(-25))
+//                .opacity(0.6)
+//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                .blinking(duration: 4.0)
+//
+//            Spacer()
+//                .frame(width: 50)
+            
+            
+            Text("Walk \nthrough")
+                .fontWeight(.light)
+                .frame(width: 80, height: 35)
+                .foregroundColor(Color.black)
+                .font(.system(size: 13))
+                .background(Color.white)
+                .cornerRadius(5)
+                .rotationEffect(.degrees(-25))
+                .opacity(0.6)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                .blinking(duration: 4.0)
+            
+          
+            
+            
             
             
             Spacer()
-                .frame(width: 260)
+                .frame(width: 50)
             
             ZStack {
                 //            ******************** RR36Info(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups)
-                
-                
-                
-                
-                
-                
-                
+             
                 NavigationLink(
                     destination:  RR4(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                     label: {
                         ZStack {
-                            
-                            //                                Image("FatGuy200")
-                            //                                    .resizable()
-                            //                                    .scaledToFit()
-                            //                                    .frame(width: 130, height: 130)
-                            //                                    .foregroundColor(ColorManager .purple5)
-                            //                                    .opacity(1.5)
-                            
+                       
                             //*********************************************** Motion
                             GeometryReader { geo in
                                 HStack(spacing: 350) {
                                     Image("FatGuy200")
                                         .aspectRatio(contentMode: .fit)
-                                        .blinking(duration: 6.0)
+                                        .blinking(duration: 4.0)
                                     
                                     Image("")
                                         .aspectRatio(contentMode: .fit)
@@ -318,18 +340,18 @@ struct HomeView: View {
                                 
                                 //*********************************************** Motion
                                 
-                                
-                                Text("Walk \nthrough")
-                                    .fontWeight(.light)
-                                    .frame(width: 80, height: 35)
-                                    .foregroundColor(Color.black)
-                                    .font(.system(size: 13))
-                                    .background(Color.white)
-                                    .cornerRadius(5)
-                                    .rotationEffect(.degrees(-25))
-                                    .opacity(0.6)
+//
+//                                Text("Walk \nthrough")
+//                                    .fontWeight(.light)
+//                                    .frame(width: 80, height: 35)
+//                                    .foregroundColor(Color.black)
+//                                    .font(.system(size: 13))
+//                                    .background(Color.white)
+//                                    .cornerRadius(5)
+//                                    .rotationEffect(.degrees(-25))
+//                                    .opacity(0.6)
 //                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                                    .blinking(duration: 6.0)
+//                                   .blinking(duration: 6.0)
                                 
                                 
                             }
