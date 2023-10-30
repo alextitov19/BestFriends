@@ -251,13 +251,11 @@ struct HomeView: View {
                      
                             
                             Spacer()
-                                .frame(height: 320)
+                                .frame(height: 430)
                           
                         }
                         
-                        
-                        //          ********************** Bottom Icons *************
-                        
+                   
     VStack {
                            
         HStack {
