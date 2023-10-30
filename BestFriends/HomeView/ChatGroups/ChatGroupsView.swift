@@ -127,7 +127,7 @@ struct ChatGroupsView: View {
                             
 //   ******************** (i) **********************
                             NavigationLink(
-                                destination: InfoCreateChatRooms(user: user),
+                                destination: RR50(user: user),
                                 label: {
                                     Image("in bushes")
                                         .resizable()
