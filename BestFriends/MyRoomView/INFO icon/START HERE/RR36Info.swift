@@ -176,7 +176,7 @@ VStack {
                 
                 VStack {
                     
-                    NavigationLink( destination: FH9(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                    NavigationLink( destination: RR50(user: user),
                                     label: {
                         VStack {
                             Text("Create")
