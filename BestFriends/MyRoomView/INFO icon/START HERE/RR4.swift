@@ -64,6 +64,11 @@ struct RR4: View {
             withAnimation(animation) {
                 animate.toggle()
             }
+            
+            
+            
+            
+            
         }
     }
 }

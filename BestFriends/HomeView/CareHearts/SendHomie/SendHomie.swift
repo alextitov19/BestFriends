@@ -30,7 +30,10 @@ struct SendHomie: View {
     @State private var colorChangeTap: String = ""
     @State private var shareTapped: Bool = false
 
-
+//**************************
+    @State var animate: Bool = false
+    let animation: Animation = Animation.linear(duration: 10.0).repeatForever(autoreverses: false)
+//**************************
     
     var body: some View {
         
@@ -72,25 +75,38 @@ struct SendHomie: View {
                 
                     VStack {
                         
-//                        Image("iconFistPump1")
-//                            .resizable()
-//                            .frame(width: 100, height: 100)
+//*********************************************** Motion
+                        GeometryReader { geo in
+                            HStack(spacing: -1) {
+                                Image("CoolGuy")
+                                    .aspectRatio(contentMode: .fit)
+
+                                Image("CoolGuy")
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: geo.size.width, alignment: .leading)
+                            }
+                            .frame(width: geo.size.width, height: geo.size.height,
+                                   alignment: animate ? .trailing : .leading)
+                        }
+                        .ignoresSafeArea()
+                        .onAppear {
+                            withAnimation(animation) {
+                                animate.toggle()
+                            }
+                        
+        //*********************************************** Motion
                         
                         
                         
-                    
-                        HStack {
-                            
-//                        Image("girlwalking250")
-//                            .resizable()
-//                            .frame(width: 100, height: 100)
-//
-//                            Spacer()
-//                                .frame(width: 100)
-//
-//                        Image("CoolGuy")
-//                            .resizable()
-//                            .frame(width: 100, height: 100)
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                     }
                 }
          
