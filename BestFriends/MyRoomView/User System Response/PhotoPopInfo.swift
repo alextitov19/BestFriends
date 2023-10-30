@@ -315,14 +315,14 @@ VStack {
     
     
     Spacer()
-        .frame(height: 50)
+        .frame(height: 10)
      
     NavigationLink(destination:  EmptyView(),
                                label: {
-                    Text("Fight with a friend / lover, argument with parents or maybe just sad today - maybe we can help ->")
+                    Text("Friend / relationship concerns \nmaybe we can help ->")
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
-                        .frame(width: 330, height: 90)
+                        .frame(width: 330, height: 50)
                         .font(.system(size: 20))
                         .background(Color.cyan)
                         .opacity(0.95)
@@ -346,7 +346,7 @@ VStack {
         .foregroundColor(Color.cyan)
     
     Spacer()
-        .frame(height: 20)
+        .frame(height: 10)
     
             VStack {
                                

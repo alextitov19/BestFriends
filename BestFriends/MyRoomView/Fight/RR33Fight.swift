@@ -366,19 +366,19 @@ HStack {
                                 VStack {
                                     
                                     Button(action: {
-                                        sessionManager.showLogin()
-                                    },
-                                           label: {
-                                        Image("home-alt2")
-                                            .frame(width: 60, height: 30)
-                                            .foregroundColor(.black)
-                                            .font(.system(size: 20))
-                                            .background(ColorManager .grey3)
-                                            .cornerRadius(15)
-                                            .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                            .opacity(0.70)
-                                        
-                                    })
+                                                    sessionManager.showLogin()
+                                                },
+                                                       label: {
+                                                    Image("home-alt2")
+                                                        .frame(width: 50, height: 25)
+                                                        .foregroundColor(.white)
+                                                        .font(.system(size: 20))
+                                                        .background(ColorManager .grey2)
+                                                        .cornerRadius(15)
+                                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                                        .opacity(0.70)
+                                                    
+                                                })
                                     
                                     Spacer()
                                         .frame(height: 30)

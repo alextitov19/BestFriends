@@ -63,21 +63,20 @@ struct IndividualFriendMessages: View {
                 .foregroundColor(Color.black)
                 .multilineTextAlignment(.center)
             
-            
             Button(action: {
-                sessionManager.showLogin()
-            },
-                   label: {
-                Image("home-alt2")
-                    .frame(width: 50, height: 25)
-                    .foregroundColor(.white)
-                    .font(.system(size: 20))
-                    .background(ColorManager .grey2)
-                    .cornerRadius(15)
-                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                    .opacity(0.70)
-                
-            })
+                            sessionManager.showLogin()
+                        },
+                               label: {
+                            Image("home-alt2")
+                                .frame(width: 50, height: 25)
+                                .foregroundColor(.white)
+                                .font(.system(size: 20))
+                                .background(ColorManager .grey2)
+                                .cornerRadius(15)
+                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                .opacity(0.70)
+                            
+                        })
             
         }
                 ScrollView(.vertical) {
