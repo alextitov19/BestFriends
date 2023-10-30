@@ -296,17 +296,17 @@ struct FriendPlanetsView: View {
                     Image(systemName: "circle")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 45, height: 45)
-                        .foregroundColor(Color .purple)
-                        .glow(color: ColorManager.purple4, radius: 2)
+                        .frame(width: 32, height: 32)
+                        .foregroundColor(ColorManager .purple3)
+//                        .glow(color: ColorManager.purple4, radius: 1)
 //                        .blinking(duration: 2.0)
                     
                     
                     Image(systemName: "plus")
                         .resizable()
                     
-                        .foregroundColor(.white)
-                        .frame(width: 25, height: 25)
+                        .foregroundColor(ColorManager .purple3)
+                        .frame(width: 20, height: 20)
                         .scaledToFit()
 //                        .blinking(duration: 2.0)
                 }
