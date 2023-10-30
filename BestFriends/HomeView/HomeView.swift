@@ -303,15 +303,15 @@ struct HomeView: View {
                                         
                                         //                                   ***********
                                         Text("demo")
-                                            .fontWeight(.light)
-                                            .frame(width: 40, height: 20)
-                                            .foregroundColor(Color.white)
-                                            .font(.system(size: 10))
-                                            .background(ColorManager .grey4)
+                                            .fontWeight(.thin)
+                                            .frame(width: 45, height: 20)
+                                            .foregroundColor(Color.black)
+                                            .font(.system(size: 15))
+                                            .background(ColorManager .purple2)
                                             .cornerRadius(7)
                                             .rotationEffect(.degrees(-25))
-                                            .opacity(0.6)
-                                            .glow(color: ColorManager .grey4, radius: 3)
+                                            .opacity(0.8)
+//                                            .glow(color: ColorManager .grey4, radius: 3)
                                             .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
                                             .blinking(duration: 4.0)
                                         
