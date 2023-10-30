@@ -32,7 +32,7 @@ struct SendHomie: View {
 
 //**************************
     @State var animate: Bool = false
-    let animation: Animation = Animation.linear(duration: 10.0).repeatForever(autoreverses: false)
+    let animation: Animation = Animation.linear(duration:7.0).repeatForever(autoreverses: false)
 //**************************
     
     var body: some View {
@@ -77,11 +77,12 @@ struct SendHomie: View {
                         
 //*********************************************** Motion
                         GeometryReader { geo in
-                            HStack(spacing: -1) {
+                            HStack(spacing: 10) {
                                 Image("CoolGuy")
                                     .aspectRatio(contentMode: .fit)
+                                    .blinking(duration: 3.0)
 
-                                Image("CoolGuy")
+                                Image("")
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: geo.size.width, alignment: .leading)
                             }
@@ -115,10 +116,7 @@ struct SendHomie: View {
 
                     VStack {
 
-                        Spacer()
-                            .frame(height: 25)
-                        
-                        
+            
                         HStack {
                       
 //                            Text("select >")
@@ -241,6 +239,10 @@ struct SendHomie: View {
                         VStack {
                             
                             
+                                       Spacer()
+                                           .frame(height: 50)
+                                       
+                                       
                                  Button(action: {
                                      sessionManager.showLogin()
                                  },

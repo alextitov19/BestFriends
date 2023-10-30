@@ -36,6 +36,14 @@ struct HomeView: View {
     
     @State private var scale = 1.0
     
+    
+    //**************************
+        @State var animate: Bool = false
+        let animation: Animation = Animation.linear(duration:7.0).repeatForever(autoreverses: false)
+    //**************************
+    
+    
+    
     let reloadingTimer = Timer.publish(every: 30, on: .main, in: .common).autoconnect()
     
     var body: some View {
@@ -268,7 +276,12 @@ struct HomeView: View {
                 .frame(width: 260)
             
             ZStack {
-//            ******************** RR36Info(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups)
+                //            ******************** RR36Info(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups)
+                
+                
+                
+                
+                
                 
                 
                 NavigationLink(
@@ -276,15 +289,34 @@ struct HomeView: View {
                     label: {
                         ZStack {
                             
-                                Image("FatGuy200")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 130, height: 130)
-                                    .foregroundColor(ColorManager .purple5)
-                                //                                .blinking(duration: 5.0)
-                                    .opacity(1.5)
+                            //                                Image("FatGuy200")
+                            //                                    .resizable()
+                            //                                    .scaledToFit()
+                            //                                    .frame(width: 130, height: 130)
+                            //                                    .foregroundColor(ColorManager .purple5)
+                            //                                    .opacity(1.5)
+                            
+                            //*********************************************** Motion
+                            GeometryReader { geo in
+                                HStack(spacing: 350) {
+                                    Image("FatGuy200")
+                                        .aspectRatio(contentMode: .fit)
+                                        .blinking(duration: 6.0)
+                                    
+                                    Image("")
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: geo.size.width, alignment: .leading)
+                                }
+                                .frame(width: geo.size.width, height: geo.size.height,
+                                       alignment: animate ? .trailing : .leading)
+                            }
+                            .ignoresSafeArea()
+                            .onAppear {
+                                withAnimation(animation) {
+                                    animate.toggle()
+                                }
                                 
-                                
+                                //*********************************************** Motion
                                 
                                 
                                 Text("Walk \nthrough")
@@ -296,15 +328,15 @@ struct HomeView: View {
                                     .cornerRadius(5)
                                     .rotationEffect(.degrees(-25))
                                     .opacity(0.6)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    .blinking(duration: 3.0)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                    .blinking(duration: 6.0)
                                 
-                            
+                                
+                            }
+                        }
                     }
-                })
-            }
+                )}
         }
-                            
                             
                             
 //   *************************************************** Old photopop and settings ***
@@ -538,3 +570,4 @@ struct HomeView: View {
 }
 
 
+                
