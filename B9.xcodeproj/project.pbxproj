@@ -849,7 +849,6 @@
 		2D2A186D2AEEEC9400B0C1DF /* RR */ = {
 			isa = PBXGroup;
 			children = (
-				2D2A18702AEEECCB00B0C1DF /* RR51.swift */,
 				2D2A18722AEEECD800B0C1DF /* RR52.swift */,
 				2D2A18742AEEECF900B0C1DF /* RR53.swift */,
 				2D2A18762AEEED0500B0C1DF /* RR54.swift */,
@@ -1513,6 +1512,7 @@
 				2DB42CF52AAE878100E137C0 /* RR25.swift */,
 				CFCD4BAE2965CE5C00BBE43A /* InfoComingChat.swift */,
 				CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */,
+				2D2A18702AEEECCB00B0C1DF /* RR51.swift */,
 			);
 			path = "User System Response";
 			sourceTree = "<group>";

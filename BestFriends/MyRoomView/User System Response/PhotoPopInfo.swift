@@ -285,7 +285,7 @@ VStack {
                     
                     VStack {
                         
-                        NavigationLink( destination: EmptyView(),
+                        NavigationLink( destination: RR51(user: user),
                                         label: {
                             VStack {
                                 Text("Ask advice from")
