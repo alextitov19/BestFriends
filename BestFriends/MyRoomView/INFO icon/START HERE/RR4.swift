@@ -32,7 +32,7 @@ struct RR4: View {
             
             NavigationLink(destination:  RR36Info(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
-                            Text("Getting Started")
+                            Text("Let's Go")
                                 .fontWeight(.thin)
                                 .foregroundColor(Color.white)
                                 .frame(width: 220, height: 40)

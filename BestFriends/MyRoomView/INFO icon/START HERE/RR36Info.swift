@@ -92,7 +92,7 @@ struct RR36Info: View {
                         }
                         
                         Spacer ()
-                            .frame(width: 20)
+                            .frame(width: 200)
                         
                     Image("")
                         .resizable()

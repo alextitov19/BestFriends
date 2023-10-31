@@ -155,7 +155,7 @@ struct HomeView: View {
                                     Image("iconSettings")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 35, height: 35)
+                                        .frame(width: 32, height: 32)
                                         .foregroundColor(ColorManager .purple5)
                                         .glow(color: Color.purple, radius: 2)
                                         .opacity(0.9)
