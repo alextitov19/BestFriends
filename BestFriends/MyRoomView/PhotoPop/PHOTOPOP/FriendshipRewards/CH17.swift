@@ -105,7 +105,7 @@ struct CH17: View {
                         
                         VStack {
                             
-                            NavigationLink(destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
+                            NavigationLink(destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
                                            label: {
                                 Text("Blowing Kisses, Sending Hugs, PhotoPOPs & Songs")
                                     .fontWeight(.light)

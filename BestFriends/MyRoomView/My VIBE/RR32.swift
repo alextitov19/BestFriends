@@ -106,7 +106,7 @@ VStack {
                     .foregroundColor(ColorManager .grey1)
                 
                 Spacer ()
-                    .frame(height: 35)
+                    .frame(height: 15)
             }
         }
     

@@ -17,6 +17,9 @@ struct HugPreload: View {
     let friends: [User]
     let groups: [Group]
     let atmosphere: Atmosphere
+    let friendAtmospheres: [Atmosphere]
+    
+    
     
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
@@ -46,7 +49,7 @@ struct HugPreload: View {
                         Image(systemName: "cube.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 280, height: 260)
+                            .frame(width: 280, height: 170)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .opacity(0.5)
                         
@@ -74,7 +77,7 @@ struct HugPreload: View {
 //                                .multilineTextAlignment(.center)
                             
                        
-                            Text("back-and-forth")
+                            Text("(back n' forth)")
                                 .font(.system(size: 15))
                                 .italic()
                                 .foregroundColor(Color.white)
@@ -150,10 +153,10 @@ HStack {
                         
                     ZStack {
                             NavigationLink(destination: RR20(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: ColorManager .purple3, friendName: "Friendship \n Strengths")
+                                HugCircle (color: Color.gray, friendName: "Friendship \n Strengths")
                             })
                             .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-                            .shadow(color: Color.blue, radius: 10, x: 10, y: 10)
+                            .shadow(color: ColorManager .grey2, radius: 10, x: 10, y: 10)
                             .opacity(0.9)
 
                         }
@@ -200,21 +203,22 @@ HStack {
                     VStack {
  
                             Spacer ()
-                                .frame(height: 30)
+                                .frame(height: 7)
                             
                             
                             HStack {
                                 
                                 ZStack {
 
-                                    Image(systemName: "")
-                                        .resizable()
-                                        .foregroundColor(Color.cyan)
-                                        .frame(width: 150, height: 110)
-                                        .rotationEffect(.degrees(7))
-                                        .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
-                                        .opacity(0.5)
-//                                        .blinking(duration: 2.0)
+                                    ZStack {
+                                            NavigationLink(destination: RR33(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
+                                                HugCircle (color: ColorManager .orange3, friendName: "Hurt \nFeelings")
+                                            })
+                                            .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+                                            .shadow(color: Color.orange, radius: 10, x: 10, y: 10)
+                                            .opacity(0.9)
+
+                                        }
 
 
                                     NavigationLink(destination: RR31(user: user, friends: friends), label: {

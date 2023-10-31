@@ -208,7 +208,7 @@ HStack {
           ZStack {
 
               
-              NavigationLink( destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
+              NavigationLink( destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
                               label: {
                   Image(systemName: "heart")
                       .resizable()

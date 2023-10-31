@@ -141,7 +141,7 @@ struct FH8: View {
                             Spacer()
                                 .frame(height: 20)
                             
-                            NavigationLink(destination:HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
+                            NavigationLink(destination:HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
                                            label: {
                                 Text("CareHearts")
                                     .fontWeight(.regular)

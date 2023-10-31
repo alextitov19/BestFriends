@@ -169,7 +169,7 @@ struct HomeView: View {
                         HStack {
                             
                             NavigationLink(
-                                destination:  HugPreload(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere),
+                                destination:  HugPreload(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
                                 label: {
                                     
                                     ZStack {
