@@ -84,7 +84,7 @@ VStack {
             Image(systemName: "cube.fill")
                 .resizable()
                 .foregroundColor(Color.purple)
-                .frame(width: 250, height: 200)
+                .frame(width: 280, height: 150)
                 .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                 .opacity(0.5)
           
@@ -99,7 +99,7 @@ VStack {
                     .foregroundColor(Color.white)
                 
                 Spacer ()
-                    .frame(height: 35)
+                    .frame(height: 15)
                 
                 Text("Help from Friends")
                     .font(.system(size: 30, weight: .light))
@@ -277,7 +277,7 @@ VStack {
                         mood = 1
                         //                    showingAlert = true
                     }) {
-                        Text("Bad Day")
+                        Text("Bad \nDay")
                             .font(.system(size: 15))
                             .foregroundColor(Color.black)
                     }
@@ -329,75 +329,75 @@ VStack {
 //               ************************************************
             //                ************************************************
             
-//        HStack {
-//            Spacer ()
-//                .frame(width: 30)
-//
-//            ZStack {
-//
-//                Image(systemName: "circle")
-//                    .resizable()
-//                    .scaledToFit()
-//                    .frame(width: 75, height: 75)
-//                    .foregroundColor(Color .cyan)
-//                    .glow(color: Color.purple, radius: 10)
-//                    .shadow(color: Color.purple, radius: 3, x: 3, y: 3)
-//
-//
-//                Button(action: {
-//                    mood = 6
-//                    //                    showingAlert = true
-//                }) {
-//                    Text("what's \nup?")
-//                        .font(.system(size: 15))
-//                        .foregroundColor(Color.black)
-//                }
-//                .frame(width: 70, height: 70, alignment: .center)
-//                .background(mood == 6 ? Color.purple : ColorManager .grey1)
-//                .cornerRadius(40)
-//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//            }
+        HStack {
+            Spacer ()
+                .frame(width: 30)
+
+            ZStack {
+
+                Image(systemName: "circle")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 75, height: 75)
+                    .foregroundColor(Color .orange)
+                    .glow(color: Color.orange, radius: 10)
+                    .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
+
+
+                Button(action: {
+                    mood = 6
+                    //                    showingAlert = true
+                }) {
+                    Text("Let's \nTalk")
+                        .font(.system(size: 15))
+                        .foregroundColor(Color.black)
+                }
+                .frame(width: 70, height: 70, alignment: .center)
+                .background(mood == 6 ? Color.orange : ColorManager .grey1)
+                .cornerRadius(40)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+            }
         
 //***************************************
-//
-//            Spacer ()
-//                .frame(width: 15)
-//
-////                ********************************************
-//
-//
-//                ZStack {
-//
-//                    //                    Image(systemName: "cube.fill")
-//                    Image("comicBubble")
-//                        .resizable()
-//                        .foregroundColor(Color.cyan)
-//                        .frame(width: 240, height: 80)
-//                        .shadow(color: Color.cyan, radius: 3, x: 3, y: 3)
-//                        .opacity(0.95)
-////                            .blinking(duration: 5.0)
-//
-//                    VStack {
-//
-////
-////
-////                        Text("ask for PhotoPOP")
-////                            .font(.system(size: 17))
-////                            .fontWeight(.light)
-////                            .multilineTextAlignment(.center)
-////                            .foregroundColor(Color.white)
-//
-////                        Text("for CareHearts")
-////                            .font(.system(size: 17))
-////                            .fontWeight(.light)
-////                            .multilineTextAlignment(.center)
-////                            .foregroundColor(Color.white)
-//
-//                    }
-//                }
-//            }
+
+            Spacer ()
+                .frame(width: 15)
+
+//                ********************************************
+
+
+                ZStack {
+
+                    //                    Image(systemName: "cube.fill")
+                    Image("comicBubble")
+                        .resizable()
+                        .foregroundColor(Color.cyan)
+                        .frame(width: 240, height: 80)
+                        .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
+                        .opacity(0.95)
+//                            .blinking(duration: 5.0)
+
+                    VStack {
+
+
+
+                        Text("You hurt my")
+                            .font(.system(size: 17))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+
+                        Text("feelings...")
+                            .font(.system(size: 17))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+
+                    }
+                }
+            }
             
-//
+
       
             //                ************************************************
                         VStack {
@@ -405,7 +405,7 @@ VStack {
                             VStack {
                              
                                 
-                                Text("alert friends)")
+                                Text("(alert friends)")
                                     .font(.system(size: 15))
                                     .italic()
                                     .fontWeight(.light)
@@ -535,7 +535,7 @@ VStack {
                                 
                                 
                                 Spacer()
-                                    .frame(height: 20)
+                                    .frame(height: 30)
                                 
                                 VStack {
                                     
