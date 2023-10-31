@@ -138,7 +138,7 @@ struct HomeView: View {
                                     .frame(width: 30, height: 30)
                                     .foregroundColor(Color.white)
                                     .opacity(0.125)
-                                    .rotationEffect(.degrees(-10))
+//                                    .rotationEffect(.degrees(-10))
                                     .glow(color: Color.white, radius: 1)
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 3)
                                     .blinking(duration: 2.0)
@@ -530,7 +530,7 @@ struct HomeView: View {
         case 7:
             return Color(.systemGreen)
         case 8:
-            return Color(.systemOrange)
+            return Color(.systemPurple)
         case 9:
             return Color(.systemRed)
        
