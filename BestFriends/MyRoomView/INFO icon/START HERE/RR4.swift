@@ -52,7 +52,7 @@ struct RR4: View {
                 Image("rocketguy")
                     .aspectRatio(contentMode: .fit)
 
-                Image("rocketguy")
+                Image("")
                     .aspectRatio(contentMode: .fit)
                     .frame(width: geo.size.width, alignment: .leading)
             }
@@ -64,10 +64,6 @@ struct RR4: View {
             withAnimation(animation) {
                 animate.toggle()
             }
-            
-            
-            
-            
             
         }
     }

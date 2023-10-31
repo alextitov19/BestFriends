@@ -177,7 +177,7 @@ struct HomeView: View {
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 25, height: 20)
-                                            .foregroundColor(Color.blue)
+                                            .foregroundColor(Color.cyan)
                                             .opacity(0.95)
                                   
                                     }
@@ -208,7 +208,7 @@ struct HomeView: View {
                                             .scaledToFit()
                                             .frame(width: 50, height: 50)
                                             .foregroundColor(Color.white)
-                                            .glow(color: Color.white, radius: 1.5)
+                                            .glow(color: ColorManager .purple3, radius: 1.5)
 //                                            .blinking(duration: 4.0)
                                             .opacity(0.8)
                                         
@@ -235,7 +235,7 @@ struct HomeView: View {
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 25, height: 20)
-                                                .foregroundColor(Color.blue)
+                                                .foregroundColor(Color.cyan)
                                                 .opacity(0.95)
                                         }
                                     })

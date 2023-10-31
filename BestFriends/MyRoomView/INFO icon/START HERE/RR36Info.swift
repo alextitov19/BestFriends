@@ -62,48 +62,60 @@ struct RR36Info: View {
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-               
+                
             }
-   
-VStack {
-    Text("Celebrating")
-        .fontWeight(.medium)
-        .font(.system(size: 40))
-        .foregroundColor(.white)
-        .glow(color: ColorManager.purple4, radius: 3)
-        .opacity(0.15)
-    
-    Text("Friendships")
-        .fontWeight(.medium)
-        .font(.system(size: 40))
-        .foregroundColor(.white)
-        .glow(color: ColorManager.purple4, radius: 3)
-        .opacity(0.15)
-    
-    
-
-ZStack {
-
-    Image("comicBubble")
-        .resizable()
-        .foregroundColor(Color.purple)
-        .frame(width: 300, height: 200)
-        .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
-        .rotationEffect(.degrees(-10))
-        .opacity(0.95)
-         
             
-    Link(destination: URL(string: "https://youtu.be/QU-MfN7k00k?feature=shared")!) {
-        Text("Demo Video")
-            .font(.system(size: 35))
-            .fontWeight(.regular)
-            .multilineTextAlignment(.center)
-            .foregroundColor(Color.white)
-            .rotationEffect(.degrees(-10))
-
-        }
-    }
-
+        VStack {
+       
+            HStack {
+                   
+                ZStack {
+                        
+                        Image("comicBubble")
+                            .resizable()
+                            .foregroundColor(Color.purple)
+                            .frame(width: 300, height: 125)
+                            .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+                            .rotationEffect(.degrees(-10))
+                            .opacity(0.95)
+                        
+                        
+                        
+                        Link(destination: URL(string: "https://youtu.be/QU-MfN7k00k?feature=shared")!) {
+                            Text("Demo Video")
+                                .font(.system(size: 30))
+                                .fontWeight(.regular)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .rotationEffect(.degrees(-10))
+                            
+                        }
+                        
+                        Spacer ()
+                            .frame(width: 20)
+                        
+                    Image("")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 70, height: 70)
+                        .opacity(0.9)
+                    }
+                }
+            
+       
+            Text("Quick SetUp")
+                .fontWeight(.medium)
+                .font(.system(size: 50))
+                .foregroundColor(.white)
+                .glow(color: ColorManager.purple4, radius: 3)
+                .opacity(0.15)
+                
+                
+                
+                
+                
+                
+    
 //******************************************************************
 
 VStack {
@@ -137,7 +149,7 @@ VStack {
                 NavigationLink( destination: InviteView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                     Text("Invite Friends")
-                        .font(.system(size: 21))
+                        .font(.system(size: 25))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
@@ -157,7 +169,7 @@ VStack {
                 .scaledToFit()
                 .frame(width: 70, height: 70)
                 .opacity(0.9)
-            //                    .blinking(duration: 2.0)
+         
             
             Spacer()
                 .frame(width: 0)
@@ -187,7 +199,7 @@ VStack {
                                 .foregroundColor(Color.white)
                             
                             Text("Chat Rooms")
-                                .font(.system(size: 21))
+                                .font(.system(size: 25))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
@@ -202,7 +214,7 @@ VStack {
      
     NavigationLink(destination:  RR40Info2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                label: {
-                    Text("See Features ->")
+                    Text("BF's Features ->")
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
                         .frame(width: 220, height: 40)

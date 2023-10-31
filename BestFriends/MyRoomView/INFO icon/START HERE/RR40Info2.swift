@@ -80,70 +80,55 @@ HStack {
                     
     ZStack {
         
-        //        ********************  cool guy  ***************************
+  
         HStack {
-
-            ZStack {
-//                Image("iconBubbleCyan")
-//                    .resizable()
-//                    .foregroundColor(Color.cyan)
-//                    .frame(width: 400, height: 120)
-//                    .shadow(color: Color.white, radius: 3, x: 3, y: 3)
-//                    .rotationEffect(.degrees(-10))
-//                    .opacity(0.5)
-                //                            .blinking(duration: 3.0)
-                
-                
-                VStack {
-                    
+            
+            Spacer ()
+                .frame(width: 120)
+         
+            Image("iconThumbUp")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 35, height: 35)
+                .rotationEffect(.degrees(-30))
+                .foregroundColor(ColorManager .purple5)
+                .glow(color: Color.purple, radius: 2)
+                .opacity(0.9)
+            
                     VStack {
                         
-                        Text("Notifications 'ON'")
+                        Text("Leave Notifications 'ON'")
                             .font(.system(size: 17))
-                            .fontWeight(.regular)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(Color.cyan)
                             .rotationEffect(.degrees(-10))
                         
-                        Text("for real-time connections")
-                            .font(.system(size: 17))
-                            .italic()
+                        Text("for real-time friendships")
+                            .font(.system(size: 13))
                             .fontWeight(.light)
                             .multilineTextAlignment(.leading)
                             .rotationEffect(.degrees(-10))
                             .foregroundColor(Color.white)
                         
+                        
+                        Spacer()
+                            .frame(height: 20)
                     }
                 }
             }
-            
-            Image("")
-                .resizable()
-                .foregroundColor(Color.blue)
-                .frame(width: 150, height: 150)
-                .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
-                .opacity(0.9)
-            
         }
-    }
-}
-        
+    
  
 //       ******************  My Vibe ******************************
       
-        Text("Friendship Features")
+        Text("BF's Features")
             .fontWeight(.medium)
-            .font(.system(size: 40))
+            .font(.system(size: 50))
             .foregroundColor(.white)
             .glow(color: ColorManager.purple4, radius: 3)
             .opacity(0.15)
-//
-//        Text("Features")
-//            .fontWeight(.medium)
-//            .font(.system(size: 50))
-//            .foregroundColor(.white)
-//            .glow(color: ColorManager.purple4, radius: 3)
-//            .opacity(0.15)
+
         
         HStack {
 
@@ -152,20 +137,13 @@ HStack {
                     .scaledToFit()
                     .frame(width: 70, height: 70)
                     .opacity(0.9)
-//                    .blinking(duration: 2.0)
+
             
             Spacer()
                 .frame(width: 10)
             
             ZStack {
-                
-//                Image(systemName: "circle")
-//                    .resizable()
-//                    .scaledToFit()
-//                    .frame(width: 90, height: 90)
-//                    .foregroundColor(Color .purple)
-//                    .glow(color: Color.green, radius: 3)
-//                    .blinking(duration: 2.0)
+
                 
                 NavigationLink( destination: RR32(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
@@ -173,8 +151,8 @@ HStack {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 75, height: 75)
-                        .foregroundColor(Color.white)
-                        .glow(color: Color.white, radius: 1.5)
+                        .foregroundColor(Color.purple)
+                        .glow(color: ColorManager.purple3, radius: 1.5)
                         .opacity(0.8)
                 })
             }
@@ -195,7 +173,7 @@ HStack {
                         .font(.system(size: 25))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(Color.cyan)
                     
                     Text("Friend's planet atmosphere")
                         .font(.system(size: 14))
@@ -208,12 +186,7 @@ HStack {
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
-//
-//                    Text("Real-time")
-//                        .font(.system(size: 14))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(Color.white)
+
                     
                 }
             }
@@ -228,30 +201,21 @@ HStack {
                   .scaledToFit()
                   .frame(width: 20, height: 20)
                   .opacity(0.9)
-//                    .blinking(duration: 2.0)
           
           Spacer()
-              .frame(width: 40)
+              .frame(width: 25)
           
           ZStack {
-              
-//              Image(systemName: "circle")
-//                  .resizable()
-//                  .scaledToFit()
-//                  .frame(width: 90, height: 90)
-//                  .foregroundColor(Color .purple)
-//                  .glow(color: Color.green, radius: 3)
-//                  .blinking(duration: 2.0)
+
               
               NavigationLink( destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere),
                               label: {
-                  Image(systemName: "cube")
+                  Image(systemName: "heart")
                       .resizable()
                       .scaledToFit()
-                      .frame(width: 75, height: 75)
-                      .foregroundColor(Color.white)
-                      .glow(color: Color.cyan, radius: 3)
-                      .opacity(0.15)
+                      .frame(width: 55, height: 55)
+                      .foregroundColor(Color.blue)
+                      .opacity(0.95)
               })
           }
           
@@ -261,23 +225,19 @@ HStack {
               Image("comicBubble")
                   .resizable()
                   .foregroundColor(Color.cyan)
-                  .frame(width: 320, height: 175)
+                  .frame(width: 320, height: 160)
                   .shadow(color: ColorManager .purple3, radius: 3, x: 3, y: 3)
                   .opacity(0.95)
               
               VStack {
                   
-                  Text("Formidable")
+                  Text("CareHearts")
                       .font(.system(size: 25))
                       .fontWeight(.light)
                       .multilineTextAlignment(.center)
                       .foregroundColor(Color.cyan)
                   
-                  Text("Friendships")
-                      .font(.system(size: 25))
-                      .fontWeight(.light)
-                      .multilineTextAlignment(.center)
-                      .foregroundColor(Color.cyan)
+             
 
                   Text("sharing real-time emotions")
                       .font(.system(size: 14))
@@ -298,22 +258,18 @@ HStack {
         
         HStack {
             
+            Spacer ()
+                .frame(width: 20)
+            
+            
             ZStack {
-                
-//                Image(systemName: "circle")
-//                    .resizable()
-//                    .scaledToFit()
-//                    .frame(width: 90, height: 90)
-//                    .foregroundColor(Color .purple)
-//                    .glow(color: Color.green, radius: 3)
-//                    .blinking(duration: 2.0)
-                
+
                 NavigationLink(destination: PhotoPopView(user: user, friends: friends),
                                label: {
                     Image("IconPhotoNew")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 75, height: 75)
+                        .frame(width: 65, height: 65)
                         .rotationEffect(.degrees(-7))
                         .foregroundColor(ColorManager .purple5)
                         .glow(color: Color.purple, radius: 2)
@@ -337,7 +293,7 @@ HStack {
                         .font(.system(size: 25))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(Color.cyan)
                     
                     Text("'shake' iPhone to view")
                         .font(.system(size: 14))
