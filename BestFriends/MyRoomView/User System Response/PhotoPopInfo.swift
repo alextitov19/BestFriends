@@ -206,16 +206,17 @@ VStack {
                 
                 VStack {
                     
-                    NavigationLink( destination: RR33(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                    
+                    NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
                                     label: {
                         VStack {
-                            Text("Ask us")
+                            Text("My keepsake")
                                 .font(.system(size: 20))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
                             
-                            Text("Anything")
+                            Text("messages")
                                 .font(.system(size: 20))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
@@ -277,27 +278,45 @@ VStack {
                     Image("comicBubble")
                         .resizable()
                         .foregroundColor(Color.purple)
-                        .frame(width: 200, height: 100)
+                        .frame(width: 400, height: 200)
                         .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                     //                    .rotationEffect(.degrees(-10))
                         .opacity(0.95)
                     
                     VStack {
                         
-                        NavigationLink( destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                        NavigationLink( destination: EmptyView(),
                                         label: {
                             VStack {
-                                Text("My keepsake")
-                                    .font(.system(size: 20))
+                                Text("Ask advice from")
+                                    .font(.system(size: 25))
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.cyan)
+                                
+                                Text("people everywhere")
+                                    .font(.system(size: 25))
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.cyan)
+                                
+                          
+                                Text("Note; your questions on ChatGPT, while your")
+                                    .font(.system(size: 12))
+                                    .italic()
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.white)
                                 
-                                Text("messages")
-                                    .font(.system(size: 20))
+                                Text("identity is masked under SocialTech Labs.")
+                                    .font(.system(size: 12))
+                                    .italic()
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.cyan)
+                                    .foregroundColor(Color.white)
+                                
+                                Spacer ()
+                                    .frame(height: 20)
                             }
                         }
                         )}
@@ -312,38 +331,8 @@ VStack {
     }
         
 //********************************************
-    
-    
-    Spacer()
-        .frame(height: 10)
-     
-    NavigationLink(destination:  EmptyView(),
-                               label: {
-                    Text("Friend / relationship concerns \nmaybe we can help ->")
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.white)
-                        .frame(width: 330, height: 50)
-                        .font(.system(size: 20))
-                        .background(Color.cyan)
-                        .opacity(0.95)
-                        .cornerRadius(10)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    
-                })
+ 
 
-    Text("Note; your questions may be used for future responses,")
-        .font(.system(size: 12))
-        .italic()
-        .fontWeight(.light)
-        .multilineTextAlignment(.center)
-        .foregroundColor(Color.cyan)
-    
-    Text("however your identity is masked under SocialTech Labs.")
-        .font(.system(size: 12))
-        .italic()
-        .fontWeight(.light)
-        .multilineTextAlignment(.center)
-        .foregroundColor(Color.cyan)
     
     Spacer()
         .frame(height: 10)
