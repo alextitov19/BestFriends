@@ -61,22 +61,7 @@ struct HugPreload: View {
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
-                            
-//                            Text("Sending compassion to my friends,")
-//                                .font(.system(size: 15))
-//                                .italic()
-//                                .foregroundColor(Color.white)
-//                                .fontWeight(.light)
-//                                .multilineTextAlignment(.center)
-//
-//                            Text("family, romances & dreams")
-//                                .font(.system(size: 15))
-//                                .italic()
-//                                .foregroundColor(Color.white)
-//                                .fontWeight(.light)
-//                                .multilineTextAlignment(.center)
-                            
-                       
+                          
                             Text("(back n' forth)")
                                 .font(.system(size: 15))
                                 .italic()
@@ -84,6 +69,13 @@ struct HugPreload: View {
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                      
+                            
+                            
+                            Text("Creating Smiles")
+                                .font(.system(size: 23))
+                                .foregroundColor(Color.white)
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
                         }
                     }
                     

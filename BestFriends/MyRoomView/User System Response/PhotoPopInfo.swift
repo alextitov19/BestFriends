@@ -294,7 +294,7 @@ VStack {
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.cyan)
                                 
-                                Text("people everywhere")
+                                Text("people like you")
                                     .font(.system(size: 25))
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
