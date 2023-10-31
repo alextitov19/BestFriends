@@ -115,13 +115,13 @@ struct HomeView: View {
                             
                             ZStack {
                                 
-                                Image("iconStar40")
+                                Image(systemName: "bell")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 35, height: 35)
-                                    .foregroundColor(ColorManager .grey3)
+                                    .frame(width: 27, height: 27)
+                                    .foregroundColor(Color.cyan)
                                 //                                    .blinking(duration: 2.0)
-                                    .glow(color: ColorManager.purple4, radius: 3)
+//                                    .glow(color: ColorManager.purple4, radius: 3)
                                     .opacity(0.5)
                                     .onTapGesture {
                                         print("Clicked notification bell")
@@ -132,15 +132,15 @@ struct HomeView: View {
                                 ) { EmptyView() }
                                 
                                 
-                                Image(systemName: "star.fill")
+                                Image(systemName: "bell")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 35, height: 35)
-                                    .foregroundColor(ColorManager .purple4)
+                                    .frame(width: 30, height: 30)
+                                    .foregroundColor(Color.white)
                                     .opacity(0.125)
                                     .rotationEffect(.degrees(-10))
-                                    .glow(color: Color.blue, radius: 3)
-                                    .shadow(color: Color.blue, radius: 2, x: 0, y: 3)
+                                    .glow(color: Color.white, radius: 1)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 3)
                                     .blinking(duration: 2.0)
                                  
                             }
