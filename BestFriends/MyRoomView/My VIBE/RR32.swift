@@ -91,11 +91,11 @@ VStack {
             VStack {
        
                 
-                Text("Friends having")
+                Text("Requesting support")
                     .font(.system(size: 30, weight: .light))
                     .foregroundColor(ColorManager .grey1)
                 
-                Text("your back")
+                Text("from Friends")
                     .font(.system(size: 30, weight: .light))
                     .foregroundColor(ColorManager .grey1)
                 
