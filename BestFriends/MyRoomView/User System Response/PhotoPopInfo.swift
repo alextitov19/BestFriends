@@ -82,7 +82,7 @@ VStack {
         .glow(color: ColorManager.purple4, radius: 3)
         .opacity(0.15)
     
-    Text("when your friends aren't yet available to")
+    Text("when your friends aren't available to")
         .fontWeight(.medium)
         .font(.system(size: 17))
         .italic()
