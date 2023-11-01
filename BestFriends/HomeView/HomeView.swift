@@ -185,19 +185,7 @@ struct HomeView: View {
                             
                             Spacer()
                                 .frame(width: 20)
-                            
-                            
-                    
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-
-                            
+               
                             NavigationLink(
                                 destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                 label: {

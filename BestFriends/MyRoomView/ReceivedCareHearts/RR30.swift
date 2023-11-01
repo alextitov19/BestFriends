@@ -110,7 +110,7 @@ HStack {
                 .frame(width: 25)
                         
             NavigationLink(destination: CH9(user: user, friends: friends), label: {
-                HugCircle (color: Color.cyan, friendName: "Blowing \nKisses")
+                HugCircle (color: Color.cyan, friendName: "Got a \nKiss")
             })
             .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
             .shadow(color: Color .blue, radius: 2, x: 2, y: 2)
@@ -119,7 +119,7 @@ HStack {
                
 
             NavigationLink(destination: RR13(user: user, friends: friends, groups: groups), label: {
-                HugCircle (color: Color.cyan, friendName: "Care \nHearts")
+                HugCircle (color: Color.cyan, friendName: "Got Care \nHeart")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
             .shadow(color: Color .blue, radius: 2, x: 2, y: 2)
@@ -137,14 +137,14 @@ HStack {
                 .frame(width: 25)
                 
             NavigationLink(destination: VirtualHug(user: user, friends: friends), label: {
-                HugCircle (color: Color.cyan, friendName: "\nHugs")
+                HugCircle (color: Color.cyan, friendName: "Got a\nHug")
             })
             .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
             .shadow(color: Color.blue, radius: 2, x: 2, y: 2)
             .opacity(0.9)
 
             NavigationLink(destination: CH7(user: user, friend: user, friends: friends, groups: groups), label: {
-                HugCircle (color: Color.cyan, friendName: "Perfect \nSong")
+                HugCircle (color: Color.cyan, friendName: "Got a \nSong")
             })
             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
             .shadow(color: Color.blue, radius: 2, x: 2, y: 2)
@@ -186,7 +186,7 @@ HStack {
                         VStack {
                             ZStack {
                                 NavigationLink(destination: RR29(user: user, friends: friends), label: {
-                                    HugCircle (color: ColorManager .purple5, friendName: "YOU CAN \nDO IT!")
+                                    HugCircle (color: ColorManager .purple5, friendName: "Got \nEncouragement")
                                 })
                                 .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                                 .shadow(color: ColorManager .purple3, radius: 4, x: 4, y: 4)
@@ -197,7 +197,7 @@ HStack {
                         }
                         
                         NavigationLink(destination: RR14(user: user, friend: user, friends: friends, groups: groups), label: {
-                            HugCircle (color: ColorManager .purple5, friendName: "Say \nCONGRATS")
+                            HugCircle (color: ColorManager .purple5, friendName: "Got \nCONGRATS")
                         })
                         .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                         .shadow(color: ColorManager .purple2, radius: 4, x: 4, y: 4)
@@ -206,7 +206,7 @@ HStack {
                     
                     
                     NavigationLink(destination: RR28(user: user, friends: friends), label: {
-                        HugCircle (color: ColorManager .purple5, friendName: "Fist-pump")
+                        HugCircle (color: ColorManager .purple5, friendName: "Got a \nFist-pump")
                     })
                         .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
                         .shadow(color: ColorManager .purple2, radius: 2, x: 2, y: 2)
