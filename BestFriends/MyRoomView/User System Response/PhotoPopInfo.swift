@@ -82,16 +82,28 @@ VStack {
         .glow(color: ColorManager.purple4, radius: 3)
         .opacity(0.15)
     
-    Text("when your friends are busy")
+    Text("when your friends are available to")
         .fontWeight(.medium)
         .font(.system(size: 17))
         .italic()
         .italic()
         .foregroundColor(.white)
-        .glow(color: ColorManager.purple4, radius: 3)
-        .opacity(0.15)
+//        .glow(color: ColorManager.grey1, radius: 3)
+        .opacity(0.7)
     
 
+    
+    Text("help & celebrate")
+        .fontWeight(.medium)
+        .font(.system(size: 17))
+        .italic()
+        .italic()
+        .foregroundColor(.white)
+//        .glow(color: ColorManager.grey1, radius: 3)
+        .opacity(0.7)
+    
+    
+    
     VStack {
         
         HStack {
