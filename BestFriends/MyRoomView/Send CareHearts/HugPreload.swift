@@ -62,7 +62,7 @@ struct HugPreload: View {
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                           
-                            Text("(back n' forth)")
+                            Text("helping friends")
                                 .font(.system(size: 15))
                                 .italic()
                                 .foregroundColor(Color.white)
@@ -71,7 +71,7 @@ struct HugPreload: View {
                      
                             
                             
-                            Text("Creating Smiles")
+                            Text("Create Smiles")
                                 .font(.system(size: 23))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)

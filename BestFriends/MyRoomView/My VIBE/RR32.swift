@@ -89,24 +89,18 @@ VStack {
                 .opacity(0.5)
           
             VStack {
-             
-            
-                Text("(Planet atmosphere color \nmatches request)")
-                    .font(.system(size: 13))
-                    .italic()
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
+       
                 
-                Spacer ()
-                    .frame(height: 15)
+                Text("Friends having")
+                    .font(.system(size: 30, weight: .light))
+                    .foregroundColor(ColorManager .grey1)
                 
-                Text("Help from Friends")
+                Text("your back")
                     .font(.system(size: 30, weight: .light))
                     .foregroundColor(ColorManager .grey1)
                 
                 Spacer ()
-                    .frame(height: 15)
+                    .frame(height: 5)
             }
         }
     
@@ -205,7 +199,7 @@ VStack {
                             //                                    showingAlert = true
                         }) {
 
-                            Text("Big \nEvent")
+                            Text("Big \nEvent \n(TAP)")
                                 .font(.system(size: 15))
                                 .foregroundColor(Color.black)
                         }
@@ -523,7 +517,7 @@ VStack {
                                         .glow(color: Color.purple, radius: 2)
                                         .opacity(0.6)
                                         .blinking(duration: 3.0)
-                                        .alert("Sent push notification to friend asking for their attention", isPresented: $showingAlert) {
+                                        .alert("Friends instantly see your planet's atmosphere color matching your vibe", isPresented: $showingAlert) {
                                             Button("OK", role: .cancel) { }
                                             
                                         
