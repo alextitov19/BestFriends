@@ -59,7 +59,7 @@ struct PhotoPopInfo: View {
                     .ignoresSafeArea()
                 
                 
-                AdPlayerView(name: "sky2")
+                AdPlayerView(name: "background_7")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                
@@ -279,7 +279,7 @@ VStack {
                     Image("comicBubble")
                         .resizable()
                         .foregroundColor(Color.purple)
-                        .frame(width: 400, height: 200)
+                        .frame(width: 300, height: 150)
                         .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                     //                    .rotationEffect(.degrees(-10))
                         .opacity(0.95)
@@ -302,19 +302,19 @@ VStack {
 //                                    .foregroundColor(Color.cyan)
                                 
                           
-                                Text("Note; your questions on ChatGPT, while your")
+                                Text("Note; your questions \nmasked on ChatGPT")
                                     .font(.system(size: 12))
                                     .italic()
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.white)
                                 
-                                Text("identity is masked under SocialTech Labs.")
-                                    .font(.system(size: 12))
-                                    .italic()
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.white)
+//                                Text("identity is masked under SocialTech Labs.")
+//                                    .font(.system(size: 12))
+//                                    .italic()
+//                                    .fontWeight(.light)
+//                                    .multilineTextAlignment(.center)
+//                                    .foregroundColor(Color.white)
                                 
                                 Spacer ()
                                     .frame(height: 20)
