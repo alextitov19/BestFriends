@@ -177,17 +177,25 @@ HStack {
                         Spacer()
                             .frame(width: 20)
                         
-                        NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
-                            HugCircle (color: ColorManager .purple1, friendName: "Say \nCONGRATS")
-                        })
-                        .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                        .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
-                        .opacity(0.9)
+                      
                         
-                    Spacer()
-                            .frame(width: 5)
                         
-                     
+                        ZStack {
+                            
+//                            Spacer()
+//                                .frame(height:150)
+                            
+                            NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
+                                HugCircle (color: ColorManager .purple1, friendName: "Say \nCONGRATS")
+                            })
+                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+                            .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
+                            .opacity(0.9)
+                            
+                            Spacer()
+                                .frame(width: 5)
+                            
+                        }
                     
                     NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
                         HugCircle (color: ColorManager .purple1, friendName: "Fist-pump")
@@ -205,8 +213,8 @@ HStack {
                         
                         HStack {
                             
-                            NavigationLink(destination: EmptyView(), label: {
-                                HugCircle (color: ColorManager .purple5, friendName: "")
+                            NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
+                                HugCircle (color: ColorManager .purple5, friendName: "Custom \n(in beta")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                             .shadow(color: ColorManager .purple2, radius: 4, x: 0, y: 4)
@@ -214,14 +222,14 @@ HStack {
                             
                             
                             Spacer()
-                                .frame(width: 100)
+                                .frame(width: 180)
                             
                             ZStack {
                                 NavigationLink(destination: RR33(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
                                     HugCircle (color: ColorManager .orange3, friendName: "Hurt \nmy \nfeelings")
                                 })
                                 .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-                                .shadow(color: Color.orange, radius: 10, x: 10, y: 10)
+                                .shadow(color: Color.orange, radius: 4, x: 2, y: 3)
                                 .opacity(0.9)
                                 
                             }
@@ -235,35 +243,7 @@ HStack {
                                 Spacer ()
                                     .frame(width: 1)
                                 
-//                                ZStack {
-                                    
-//                                    Image(systemName: "cube.fill")
-//                                        .resizable()
-//                                        .foregroundColor(ColorManager .grey3)
-//                                        .frame(width: 100, height: 80)
-//                                        .rotationEffect(.degrees(-20))
-//                                        .shadow(color: Color .blue, radius: 10, x: 10, y: 10)
-//                                        .opacity(0.5)
-//                                        .blinking(duration: 2.0)
-                                    
-                                    
-//                                    NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
-//
-//                                        Text("Custom \n(in beta)")
-//                                            .fontWeight(.thin)
-//                                            .foregroundColor(Color.white)
-//                                            .font(.system(size: 20))
-//                                            .multilineTextAlignment(.center)
-//                                            .rotationEffect(.degrees(-7))
-//                                            .opacity(1.0)
-//                                            .blinking(duration: 2.0)
-//
-                                        
-//                                    }
-//                                    )}
-                            
-                            
-                            
+                     
                             VStack {
                                 
                                 Spacer ()
