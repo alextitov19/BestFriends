@@ -212,9 +212,9 @@ VStack {
     
 
      
-    NavigationLink(destination:  RR40Info2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+    NavigationLink(destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                label: {
-                    Text("BF's Features ->")
+                    Text("Safe n' Sound ->")
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
                         .frame(width: 220, height: 40)
