@@ -214,27 +214,35 @@ struct HugPreload: View {
                             
                             //*********************************************** Motion
                             GeometryReader { geo in
-                                HStack(spacing: 300) {
+                                HStack(spacing: 200) {
+                                    
+                                    Image("")
+                                        .aspectRatio(contentMode: .fit)
+//                                        .blinking(duration: 6.0)
+                                    
+                                    Spacer()
+                                        .frame(width: 50)
                                     
                                     ZStack {
                                         
                                         //    ********************************************
                                         Image("FatGuy200")
-                                            .aspectRatio(contentMode: .fit)
-                                            .blinking(duration: 4.0)
+//                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 120, height: 120)
+                                            .blinking(duration: 7.0)
                                         
-                                        Text("demo")
-                                            .fontWeight(.regular)
-                                            .frame(width: 55, height: 30)
+                                        Text("Send CareHearts")
+                                            .fontWeight(.medium)
+                                            .frame(width: 120, height: 20)
                                             .foregroundColor(Color.black)
-                                            .font(.system(size: 17))
+                                            .font(.system(size: 14))
                                             .background(ColorManager .purple1)
                                             .cornerRadius(7)
                                             .rotationEffect(.degrees(-25))
                                             .opacity(0.8)
                                         //                                            .glow(color: ColorManager .grey4, radius: 3)
                                             .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
-                                            .blinking(duration: 4.0)
+                                            .blinking(duration: 7.0)
                                         
                                         //**********************************************************
                                         
@@ -258,14 +266,11 @@ struct HugPreload: View {
                                 
                             }
                         }
-                                Spacer ()
-                                    .frame(width: 1)
+  
+            VStack {
                                 
-                     
-                            VStack {
-                                
-                                Spacer ()
-                                    .frame(height: 100)
+                Spacer ()
+                    .frame(height: 100)
                                 
                             }
                         }
