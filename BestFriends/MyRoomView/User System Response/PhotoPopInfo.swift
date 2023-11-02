@@ -100,7 +100,7 @@ VStack {
         
         HStack {
             
-            Image("CoolGuy")
+            Image("")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 120, height: 120)
@@ -274,9 +274,12 @@ VStack {
         VStack {
             
             HStack {
-                
-                
-                
+                Image("")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 70, height: 70)
+                    .opacity(0.9)
+       
                 ZStack {
                     
                     Image("comicBubble")
@@ -325,102 +328,107 @@ VStack {
                         }
                         )}
                 }
-                Image("")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 70, height: 70)
-                    .opacity(0.9)
+          
             }
         }
     }
         
 //********************************************
  
-    ZStack {
-     
-     
-        NavigationLink(
-            destination:  RR51(user: user),
-            label: {
-                ZStack {
-               
-                    //*********************************************** Motion
-                    GeometryReader { geo in
-                        HStack(spacing: 300) {
-                            
-                            ZStack {
-                                
-//    ********************************************
-                                Image("comicBubble")
-                                    .resizable()
-                                    .foregroundColor(Color.purple)
-                                    .frame(width: 300, height: 150)
-                                    .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
-                                //                    .rotationEffect(.degrees(-10))
-                                    .opacity(0.95)
-                              
-                                Text("Ask us Anything")
-                                    .font(.system(size: 25))
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.cyan)
-                                
-                                Text("Note; your questions \nmasked on ChatGPT")
-                                    .font(.system(size: 12))
-                                    .italic()
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.white)
-                                
-//**********************************************************
-                                
-                            }
-                            
-                            Image("")
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: geo.size.width, alignment: .leading)
-                            
-                            
-                            
-                        }
-                        .frame(width: geo.size.width, height: geo.size.height,
-                               alignment: animate ? .trailing : .leading)
-                    }
-                    .ignoresSafeArea()
-                    .onAppear {
-                        withAnimation(animation) {
-                            animate.toggle()
-                        }
-                        
-                    }
-                }
-                }
-            )}
-    
+//    ZStack {
+//
+//
+//        NavigationLink(
+//            destination:  RR51(user: user),
+//            label: {
+//                ZStack {
+//
+//                    //*********************************************** Motion
+//                    GeometryReader { geo in
+//                        HStack(spacing: 600) {
+//
+//                            ZStack {
+//
+////    ********************************************
+//                                Image("comicBubble")
+//                                    .resizable()
+//                                    .foregroundColor(Color.purple)
+//                                    .frame(width: 300, height: 150)
+//                                    .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+//                                //                    .rotationEffect(.degrees(-10))
+//                                    .opacity(0.95)
+//
+//                                Text("Ask us Anything")
+//                                    .font(.system(size: 25))
+//                                    .fontWeight(.light)
+//                                    .multilineTextAlignment(.center)
+//                                    .foregroundColor(Color.cyan)
+//
+//                                Text("Note; your questions \nmasked on ChatGPT")
+//                                    .font(.system(size: 12))
+//                                    .italic()
+//                                    .fontWeight(.light)
+//                                    .multilineTextAlignment(.center)
+//                                    .foregroundColor(Color.white)
+//
+////**********************************************************
+//
+//                            }
+//
+//                            Image("")
+//                                .aspectRatio(contentMode: .fit)
+//                                .frame(width: geo.size.width, alignment: .leading)
+//
+//
+//
+//                        }
+//                        .frame(width: geo.size.width, height: geo.size.height,
+//                               alignment: animate ? .trailing : .leading)
+//                    }
+//                    .ignoresSafeArea()
+//                    .onAppear {
+//                        withAnimation(animation) {
+//                            animate.toggle()
+//                        }
+//
+//                    }
+//                }
+//                }
+//            )}
+//
 //    *************************************************
 
     
     Spacer()
         .frame(height: 10)
     
-            VStack {
-                               
-                Button(action: {
-                                sessionManager.showLogin()
-                            },
-                                   label: {
-                                Image("home-alt2")
-                                    .frame(width: 50, height: 25)
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 20))
-                                    .background(ColorManager .grey2)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                    .opacity(0.70)
-                                
-                            })
-                           }
+    VStack {
+        
+        HStack {
             
+            Image("FatGuy200")
+                .aspectRatio(contentMode: .fit)
+            //                   .blinking(duration: 4.0)
+            
+            Spacer()
+                .frame(width: 150)
+            
+            Button(action: {
+                sessionManager.showLogin()
+            },
+                   label: {
+                Image("home-alt2")
+                    .frame(width: 50, height: 25)
+                    .foregroundColor(.white)
+                    .font(.system(size: 20))
+                    .background(ColorManager .grey2)
+                    .cornerRadius(15)
+                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                    .opacity(0.70)
+                
+            })
+        }
+    }
             
             
             Spacer()
