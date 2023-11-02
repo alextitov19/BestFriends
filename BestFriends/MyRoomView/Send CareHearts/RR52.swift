@@ -70,24 +70,24 @@ struct RR52: View {
                     VStack {
                            
                         HStack {
-                            NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
-                                HugCircle (color: Color.cyan, friendName: "Sending \nhugs")
-                            })
-                            .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
-                            .shadow(color: Color.blue, radius: 5, x: -2, y: -2)
-                            .opacity(0.99)
-                            
-                            Spacer ()
-                                .frame(width: 20)
-                            
-                            
-                            NavigationLink(destination: RR11(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.cyan, friendName: "Thinking \nof you")
-                            })
-                            .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
-                            .shadow(color: Color .cyan, radius: 5, x: 2, y: -2)
-                            .opacity(0.99)
-                            
+//                            NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
+//                                HugCircle (color: Color.cyan, friendName: "Sending \nhugs")
+//                            })
+//                            .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
+//                            .shadow(color: Color.blue, radius: 5, x: -2, y: -2)
+//                            .opacity(0.99)
+//
+//                            Spacer ()
+//                                .frame(width: 20)
+//
+//
+//                            NavigationLink(destination: RR11(user: user, friend: user, friends: friends, groups: groups), label: {
+//                                HugCircle (color: Color.cyan, friendName: "Thinking \nof you")
+//                            })
+//                            .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+//                            .shadow(color: Color .cyan, radius: 5, x: 2, y: -2)
+//                            .opacity(0.99)
+//
                       
                             
                         }
@@ -95,26 +95,26 @@ struct RR52: View {
                         VStack {
                             HStack {
                            
-                                NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
-                                    HugCircle (color: Color.cyan, friendName: "Blowing \nkisses")
-                                })
-                                .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-                                .shadow(color: Color .blue, radius: 5, x: -3, y: -2)
-                                .opacity(0.9)
-                                
-                                
-                                Spacer ()
-                                    .frame(width: 200)
-                                
-                                
-                                NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
-                                    HugCircle (color: Color.cyan, friendName: "Send \na song")
-                                })
-                                .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                                .shadow(color: Color.blue, radius: 5, x: 3, y: -2)
-                                .opacity(0.9)
-                                
-                                
+//                                NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
+//                                    HugCircle (color: Color.cyan, friendName: "Blowing \nkisses")
+//                                })
+//                                .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+//                                .shadow(color: Color .blue, radius: 5, x: -3, y: -2)
+//                                .opacity(0.9)
+//
+//
+//                                Spacer ()
+//                                    .frame(width: 200)
+//
+//
+//                                NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
+//                                    HugCircle (color: Color.cyan, friendName: "Send \na song")
+//                                })
+//                                .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+//                                .shadow(color: Color.blue, radius: 5, x: 3, y: -2)
+//                                .opacity(0.9)
+//
+//
                                         
                                 
                             }
@@ -141,12 +141,12 @@ struct RR52: View {
                     HStack {
                         
                         ZStack {
-                            NavigationLink(destination: RR27(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: ColorManager .purple1, friendName: "YOU CAN \nDO IT!")
-                            })
-                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                            .shadow(color: ColorManager .purple1, radius: 5, x: -4, y: 4)
-                            .opacity(0.9)
+//                            NavigationLink(destination: RR27(user: user, friend: user, friends: friends, groups: groups), label: {
+//                                HugCircle (color: ColorManager .purple1, friendName: "YOU CAN \nDO IT!")
+//                            })
+//                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+//                            .shadow(color: ColorManager .purple1, radius: 5, x: -4, y: 4)
+//                            .opacity(0.9)
                             
                         }
                         
@@ -159,12 +159,12 @@ struct RR52: View {
                         ZStack {
                             
                             
-                            NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: ColorManager .purple1, friendName: "Say \nCONGRATS")
-                            })
-                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                            .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
-                            .opacity(0.9)
+//                            NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
+//                                HugCircle (color: ColorManager .purple1, friendName: "Say \nCONGRATS")
+//                            })
+//                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+//                            .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
+//                            .opacity(0.9)
                             
                             Spacer()
                                 .frame(width: 20)
@@ -174,24 +174,24 @@ struct RR52: View {
                    
                     HStack {
                         VStack {
-                            NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
-                                HugCircle (color: ColorManager .purple1, friendName: "Fist-pump")
-                            })
-                            .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
-                            .shadow(color: ColorManager .purple1, radius: 2, x: 2, y: 2)
-                            .opacity(0.9)
+//                            NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
+//                                HugCircle (color: ColorManager .purple1, friendName: "Fist-pump")
+//                            })
+//                            .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
+//                            .shadow(color: ColorManager .purple1, radius: 2, x: 2, y: 2)
+//                            .opacity(0.9)
                         }
                         
                         
                         Spacer()
                             .frame(width: 20)
                         
-                        NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
-                            HugCircle (color: ColorManager .purple5, friendName: "Custom \n(in beta")
-                        })
-                        .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                        .shadow(color: ColorManager .purple2, radius: 4, x: 0, y: 4)
-                        .opacity(0.65)
+//                        NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
+//                            HugCircle (color: ColorManager .purple5, friendName: "Custom \n(in beta")
+//                        })
+//                        .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+//                        .shadow(color: ColorManager .purple2, radius: 4, x: 0, y: 4)
+//                        .opacity(0.65)
                     }
                     
                     
