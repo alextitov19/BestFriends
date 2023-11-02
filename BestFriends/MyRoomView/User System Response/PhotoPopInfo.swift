@@ -35,6 +35,9 @@ struct PhotoPopInfo: View {
     
     @State private var counter = 0
     
+    @State var animate: Bool = false
+    let animation: Animation = Animation.linear(duration:3.0).repeatForever(autoreverses: false)
+    
     var body: some View {
         ZStack {
             
@@ -333,6 +336,64 @@ VStack {
         
 //********************************************
  
+    ZStack {
+     
+     
+        NavigationLink(
+            destination:  RR51(user: user),
+            label: {
+                ZStack {
+               
+                    //*********************************************** Motion
+                    GeometryReader { geo in
+                        HStack(spacing: 300) {
+                            
+                            ZStack {
+                                
+//    ********************************************
+                                Image("FatGuy200")
+                                    .aspectRatio(contentMode: .fit)
+                                   .blinking(duration: 4.0)
+                              
+                                Text("demo")
+                                    .fontWeight(.regular)
+                                    .frame(width: 55, height: 30)
+                                    .foregroundColor(Color.black)
+                                    .font(.system(size: 17))
+                                    .background(ColorManager .purple1)
+                                    .cornerRadius(7)
+                                    .rotationEffect(.degrees(-25))
+                                    .opacity(0.8)
+//                                            .glow(color: ColorManager .grey4, radius: 3)
+                                    .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
+                                    .blinking(duration: 4.0)
+                                
+//**********************************************************
+                                
+                            }
+                            
+                            Image("")
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: geo.size.width, alignment: .leading)
+                            
+                            
+                            
+                        }
+                        .frame(width: geo.size.width, height: geo.size.height,
+                               alignment: animate ? .trailing : .leading)
+                    }
+                    .ignoresSafeArea()
+                    .onAppear {
+                        withAnimation(animation) {
+                            animate.toggle()
+                        }
+                        
+                    }
+                }
+                }
+            )}
+    
+//    *************************************************
 
     
     Spacer()
