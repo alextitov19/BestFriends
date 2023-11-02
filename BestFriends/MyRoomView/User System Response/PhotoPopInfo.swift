@@ -408,7 +408,7 @@ VStack {
             
             Image("FatGuy200")
                 .aspectRatio(contentMode: .fit)
-            //                   .blinking(duration: 4.0)
+                               .blinking(duration: 4.0)
             
             Spacer()
                 .frame(width: 150)
