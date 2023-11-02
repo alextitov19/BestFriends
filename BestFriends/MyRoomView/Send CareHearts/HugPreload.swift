@@ -200,12 +200,21 @@ HStack {
                     VStack {
                         
                         Spacer ()
-                            .frame(height: 7)
+                            .frame(height: 50)
                         
                         
                         HStack {
                             
+                            NavigationLink(destination: EmptyView(), label: {
+                                HugCircle (color: ColorManager .purple5, friendName: "")
+                            })
+                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+                            .shadow(color: ColorManager .purple2, radius: 4, x: 0, y: 4)
+                            .opacity(0.65)
                             
+                            
+                            Spacer()
+                                .frame(width: 100)
                             
                             ZStack {
                                 NavigationLink(destination: RR33(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
@@ -217,12 +226,7 @@ HStack {
                                 
                             }
                             
-//                            NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
-//                                HugCircle (color: ColorManager .purple5, friendName: "Say \nCONGRATS")
-//                            })
-//                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-//                            .shadow(color: ColorManager .purple2, radius: 4, x: 0, y: 4)
-//                            .opacity(0.65)
+
 //
                         }
                     

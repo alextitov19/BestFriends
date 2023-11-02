@@ -196,11 +196,11 @@ struct HomeView: View {
                                 label: {
                                     
                                     ZStack {
-                                        Image("iconSphere1")
+                                        Image(systemName: "star")
                                             .resizable()
                                             .scaledToFit()
-                                            .frame(width: 45, height: 40)
-                                            .foregroundColor(Color.cyan)
+                                            .frame(width: 35, height: 35)
+                                            .foregroundColor(Color.white)
                                             .opacity(0.95)
                                   
                                     }
@@ -242,11 +242,11 @@ struct HomeView: View {
                                     label: {
                                         
                                         ZStack {
-                                            Image("iconSphere1")
+                                            Image(systemName: "star")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 45, height: 40)
-                                                .foregroundColor(Color.cyan)
+                                                .frame(width: 35, height: 35)
+                                                .foregroundColor(Color.purple)
                                                 .opacity(0.95)
                                         }
                                     })
