@@ -69,14 +69,9 @@ struct PhotoPopInfo: View {
             }
    
 VStack {
-//    Text("From your friends")
-//        .fontWeight(.medium)
-//        .font(.system(size: 17))
-//        .italic()
-//        .italic()
-//        .foregroundColor(.white)
-//        .glow(color: ColorManager.purple4, radius: 3)
-//        .opacity(0.15)
+
+    Spacer()
+        .frame(height: 23)
     
     Text("Celebration & Support")
         .fontWeight(.medium)
