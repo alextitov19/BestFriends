@@ -214,7 +214,7 @@ struct HugPreload: View {
                             
                             //*********************************************** Motion
                             GeometryReader { geo in
-                                HStack(spacing: 200) {
+                                HStack(spacing: 280) {
                                     
                                     Image("")
                                         .aspectRatio(contentMode: .fit)
@@ -226,16 +226,16 @@ struct HugPreload: View {
                                     ZStack {
                                         
                                         //    ********************************************
-                                        Image("FatGuy200")
+                                        Image("FatGuy")
 //                                            .aspectRatio(contentMode: .fit)
                                             .frame(width: 120, height: 120)
                                             .blinking(duration: 7.0)
                                         
                                         Text("Send CareHearts")
                                             .fontWeight(.medium)
-                                            .frame(width: 120, height: 20)
+                                            .frame(width: 200, height: 40)
                                             .foregroundColor(Color.black)
-                                            .font(.system(size: 14))
+                                            .font(.system(size: 20))
                                             .background(ColorManager .purple1)
                                             .cornerRadius(7)
                                             .rotationEffect(.degrees(-25))
