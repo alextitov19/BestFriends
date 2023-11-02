@@ -169,19 +169,19 @@ HStack {
                 
                 VStack {
                     
-                    Text("What's up?")
+                    Text("My Vibe")
                         .font(.system(size: 25))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.cyan)
                     
-                    Text("Friend's planet atmosphere")
+                    Text("planet atmosphere")
                         .font(.system(size: 14))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
                     
-                    Text("color matches their Vibe")
+                    Text("matches vibe")
                         .font(.system(size: 14))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
@@ -239,7 +239,7 @@ HStack {
                   
              
 
-                  Text("sharing real-time emotions")
+                  Text("sharing emotional support")
                       .font(.system(size: 14))
                       .fontWeight(.light)
                       .multilineTextAlignment(.center)

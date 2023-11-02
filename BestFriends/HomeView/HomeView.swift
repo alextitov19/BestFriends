@@ -93,25 +93,11 @@ struct HomeView: View {
                             
                             ZStack {
                                 
-                                NavigationLink(
-                                    destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
-                                    label: {
-                                        
-                                        Image("IconPhotoNew")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 35, height: 35)
-                                            .rotationEffect(.degrees(-7))
-                                            .foregroundColor(ColorManager .purple5)
-                                            .glow(color: Color.purple, radius: 2)
-                                            .opacity(0.9)
-                                        
-                                        
-                                    })
+                           
                             }
                             
                             Spacer()
-                                .frame(width: 100)
+                                .frame(width: 137)
                             
                             ZStack {
                                 
@@ -159,6 +145,27 @@ struct HomeView: View {
 //                                        .glow(color: Color.purple, radius: 2)
                                         .opacity(0.9)
                                 })
+                            
+                            Spacer()
+                                .frame(width: 15)
+                            
+                            
+                            NavigationLink(
+                                destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
+                                label: {
+                                    
+                                    Image("IconPhotoNew")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 35, height: 35)
+                                        .rotationEffect(.degrees(-7))
+                                        .foregroundColor(ColorManager .purple5)
+                                        .glow(color: Color.purple, radius: 2)
+                                        .opacity(0.9)
+                                    
+                                    
+                                })
+                            
                             
                             
                             Spacer()
