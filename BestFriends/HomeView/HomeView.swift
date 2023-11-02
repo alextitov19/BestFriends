@@ -144,6 +144,22 @@ struct HomeView: View {
                                     .blinking(duration: 2.0)
                                  
                             }
+                           
+                            Spacer()
+                                .frame(width: 15)
+                            
+                            
+                            NavigationLink(destination: RR40Info2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                                label: {
+                                    Image(systemName: "info.circle")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 27, height: 27)
+                                        .foregroundColor(ColorManager .purple3)
+//                                        .glow(color: Color.purple, radius: 2)
+                                        .opacity(0.9)
+                                })
+                            
                             
                             Spacer()
                                 .frame(width: 100)

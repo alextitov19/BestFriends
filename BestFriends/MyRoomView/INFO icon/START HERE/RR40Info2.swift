@@ -122,12 +122,12 @@ HStack {
  
 //       ******************  My Vibe ******************************
       
-        Text("BF's Features")
-            .fontWeight(.medium)
-            .font(.system(size: 50))
-            .foregroundColor(.white)
-            .glow(color: ColorManager.purple4, radius: 3)
-            .opacity(0.15)
+//        Text("BF's Features")
+//            .fontWeight(.medium)
+//            .font(.system(size: 50))
+//            .foregroundColor(.white)
+//            .glow(color: ColorManager.purple4, radius: 3)
+//            .opacity(0.15)
 
         
         HStack {
