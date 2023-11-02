@@ -196,10 +196,10 @@ struct HomeView: View {
                                 label: {
                                     
                                     ZStack {
-                                        Image(systemName: "heart")
+                                        Image("iconSphere1")
                                             .resizable()
                                             .scaledToFit()
-                                            .frame(width: 25, height: 20)
+                                            .frame(width: 45, height: 40)
                                             .foregroundColor(Color.cyan)
                                             .opacity(0.95)
                                   
@@ -242,10 +242,10 @@ struct HomeView: View {
                                     label: {
                                         
                                         ZStack {
-                                            Image(systemName: "heart")
+                                            Image("iconSphere1")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 25, height: 20)
+                                                .frame(width: 45, height: 40)
                                                 .foregroundColor(Color.cyan)
                                                 .opacity(0.95)
                                         }
