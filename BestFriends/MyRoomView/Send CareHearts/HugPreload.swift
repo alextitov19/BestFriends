@@ -45,19 +45,19 @@ struct HugPreload: View {
                     ZStack {
                         
                         ZStack {
-                            NavigationLink(destination: RR20(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.green, friendName: "Our \nfriendship \n strengths")
-                            })
-                            .offset(x: showItems ? 0 : 0, y: showItems ? 500: 0)
-                            .shadow(color: Color.green, radius: 5, x: 0, y: -2)
-                            //                                .glow(color: Color.green, radius: 1)
-                            .opacity(0.9)
+//                            NavigationLink(destination: RR20(user: user, friend: user, friends: friends, groups: groups), label: {
+//                                HugCircle (color: Color.green, friendName: "Our \nfriendship \n strengths")
+//                            })
+//                            .offset(x: showItems ? 0 : 0, y: showItems ? 500: 0)
+//                            .shadow(color: Color.green, radius: 5, x: 0, y: -2)
+//                            //                                .glow(color: Color.green, radius: 1)
+//                            .opacity(0.9)
                             
                         }
                     }
                     
                     Spacer()
-                        .frame(height: 20)
+                        .frame(height: 50)
                     
                     
                     HStack {
@@ -76,7 +76,7 @@ struct HugPreload: View {
                             .opacity(0.99)
                             
                             Spacer ()
-                                .frame(width: 20)
+                                .frame(width: 35)
                             
                             
                             NavigationLink(destination: RR11(user: user, friend: user, friends: friends, groups: groups), label: {
@@ -133,7 +133,7 @@ struct HugPreload: View {
                     }
                 
                     Spacer ()
-                        .frame(height: 40)
+                        .frame(height: 35)
                     
                     
                     HStack {
@@ -149,7 +149,7 @@ struct HugPreload: View {
                         }
                         
                         Spacer()
-                            .frame(width: 200)
+                            .frame(width: 180)
                         
                         
                         
@@ -163,10 +163,7 @@ struct HugPreload: View {
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                             .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
                             .opacity(0.9)
-                            
-                            Spacer()
-                                .frame(width: 20)
-                            
+                      
                         }
                     }
                    
@@ -182,7 +179,7 @@ struct HugPreload: View {
                         
                         
                         Spacer()
-                            .frame(width: 20)
+                            .frame(width: 35)
                         
                         NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
                             HugCircle (color: ColorManager .purple5, friendName: "Custom \n(in beta")
@@ -206,12 +203,12 @@ struct HugPreload: View {
                                 .frame(width: 180)
                             
                             ZStack {
-                                NavigationLink(destination: RR33(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                                    HugCircle (color: ColorManager .orange3, friendName: "Hurt \nmy \nfeelings")
-                                })
-                                .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-                                .shadow(color: Color.orange, radius: 4, x: 2, y: 3)
-                                .opacity(0.9)
+//                                NavigationLink(destination: RR33(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
+//                                    HugCircle (color: ColorManager .orange3, friendName: "Hurt \nmy \nfeelings")
+//                                })
+//                                .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+//                                .shadow(color: Color.orange, radius: 4, x: 2, y: 3)
+//                                .opacity(0.9)
                                 
                             }
                             
