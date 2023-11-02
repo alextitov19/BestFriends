@@ -351,22 +351,26 @@ VStack {
                             ZStack {
                                 
 //    ********************************************
-                                Image("FatGuy200")
-                                    .aspectRatio(contentMode: .fit)
-                                   .blinking(duration: 4.0)
+                                Image("comicBubble")
+                                    .resizable()
+                                    .foregroundColor(Color.purple)
+                                    .frame(width: 300, height: 150)
+                                    .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+                                //                    .rotationEffect(.degrees(-10))
+                                    .opacity(0.95)
                               
-                                Text("demo")
-                                    .fontWeight(.regular)
-                                    .frame(width: 55, height: 30)
-                                    .foregroundColor(Color.black)
-                                    .font(.system(size: 17))
-                                    .background(ColorManager .purple1)
-                                    .cornerRadius(7)
-                                    .rotationEffect(.degrees(-25))
-                                    .opacity(0.8)
-//                                            .glow(color: ColorManager .grey4, radius: 3)
-                                    .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
-                                    .blinking(duration: 4.0)
+                                Text("Ask us Anything")
+                                    .font(.system(size: 25))
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.cyan)
+                                
+                                Text("Note; your questions \nmasked on ChatGPT")
+                                    .font(.system(size: 12))
+                                    .italic()
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.white)
                                 
 //**********************************************************
                                 
