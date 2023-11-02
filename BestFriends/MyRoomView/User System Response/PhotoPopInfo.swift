@@ -75,34 +75,16 @@ VStack {
 //        .glow(color: ColorManager.purple4, radius: 3)
 //        .opacity(0.15)
     
-    Text("When friends")
+    Text("Celebration & Support")
         .fontWeight(.medium)
         .font(.system(size: 35))
         .foregroundColor(.white)
         .glow(color: ColorManager.purple4, radius: 3)
         .opacity(0.15)
-    
-    Text("arn't around")
-        .fontWeight(.medium)
-        .font(.system(size: 35))
-        .foregroundColor(.white)
-        .glow(color: ColorManager.purple4, radius: 3)
-        .opacity(0.15)
-    
-//    Text("when your friends aren't available to")
-//        .fontWeight(.medium)
-//        .font(.system(size: 17))
-//        .italic()
-//        .italic()
-//        .foregroundColor(.white)
-////        .glow(color: ColorManager.grey1, radius: 3)
-//        .opacity(0.7)
-    
 
-    
-    Text("to help & celebrate")
+    Text("when friends aren't around")
         .fontWeight(.medium)
-        .font(.system(size: 17))
+        .font(.system(size: 20))
         .italic()
         .italic()
         .foregroundColor(.white)
@@ -307,17 +289,17 @@ VStack {
                         NavigationLink( destination: RR51(user: user),
                                         label: {
                             VStack {
-                                Text("Ask advice from")
+                                Text("Ask us Anything")
                                     .font(.system(size: 25))
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.cyan)
                                 
-                                Text("people like you")
-                                    .font(.system(size: 25))
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.cyan)
+//                                Text("people like you")
+//                                    .font(.system(size: 25))
+//                                    .fontWeight(.light)
+//                                    .multilineTextAlignment(.center)
+//                                    .foregroundColor(Color.cyan)
                                 
                           
                                 Text("Note; your questions on ChatGPT, while your")
