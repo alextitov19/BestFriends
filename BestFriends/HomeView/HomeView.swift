@@ -253,6 +253,29 @@ struct HomeView: View {
                             }
                         }
                         
+                        
+                        VStack {
+                            
+                            ZStack {
+                                
+                                NavigationLink(
+                                    destination:  RR52(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
+                                    label: {
+                                        
+                                        ZStack {
+                                            Image(systemName: "star")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 35, height: 35)
+                                                .foregroundColor(Color.orange)
+                                                .opacity(0.95)
+                                        }
+                                    })
+                            }
+                        }
+                        
+                        
+                        
                         //    ****************************************
                         
                     
