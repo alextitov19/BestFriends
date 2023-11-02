@@ -187,16 +187,28 @@ struct HugPreload: View {
                             
                         }
                     }
-                    
-                    VStack {
-                        NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
-                            HugCircle (color: ColorManager .purple1, friendName: "Fist-pump")
+                   
+                    HStack {
+                        VStack {
+                            NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
+                                HugCircle (color: ColorManager .purple1, friendName: "Fist-pump")
+                            })
+                            .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
+                            .shadow(color: ColorManager .purple1, radius: 2, x: 2, y: 2)
+                            .opacity(0.9)
+                        }
+                        
+                        
+                        Spacer()
+                            .frame(width: 20)
+                        
+                        NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
+                            HugCircle (color: ColorManager .purple5, friendName: "Custom \n(in beta")
                         })
-                        .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
-                        .shadow(color: ColorManager .purple1, radius: 2, x: 2, y: 2)
-                        .opacity(0.9)
+                        .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+                        .shadow(color: ColorManager .purple2, radius: 4, x: 0, y: 4)
+                        .opacity(0.65)
                     }
-                
                     
                     
                     VStack {
@@ -207,14 +219,7 @@ struct HugPreload: View {
                         
                         HStack {
                             
-                            NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: ColorManager .purple5, friendName: "Custom \n(in beta")
-                            })
-                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                            .shadow(color: ColorManager .purple2, radius: 4, x: 0, y: 4)
-                            .opacity(0.65)
-                            
-                            
+                     
                             Spacer()
                                 .frame(width: 180)
                             
