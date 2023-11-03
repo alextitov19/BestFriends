@@ -151,10 +151,10 @@ struct HugPreload: View {
                             
                             
                             NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: ColorManager .purple1, friendName: "Say \nCONGRATS")
+                                HugCircle (color: Color.purple, friendName: "Say \nCONGRATS")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                            .shadow(color: ColorManager .purple1, radius: 4, x: 4, y: 4)
+                            .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
                             .opacity(0.9)
                       
                         }
@@ -163,10 +163,10 @@ struct HugPreload: View {
                     HStack {
                         VStack {
                             NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
-                                HugCircle (color: ColorManager .purple1, friendName: "Fist-pump")
+                                HugCircle (color: Color.purple, friendName: "Fist-pump")
                             })
                             .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
-                            .shadow(color: ColorManager .purple1, radius: 2, x: 2, y: 2)
+                            .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
                             .opacity(0.9)
                         }
                         
