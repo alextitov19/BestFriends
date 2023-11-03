@@ -249,11 +249,19 @@ struct HomeView: View {
                                     label: {
                                         
                                         ZStack {
-                                            Image(systemName: "star")
+                                            Image(systemName: "circle")
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 35, height: 35)
-                                                .foregroundColor(Color.purple)
+                                                .foregroundColor(Color.white)
+                                                .opacity(0.95)
+                                      
+                                            
+                                            Image("iconHeart10")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 30, height: 30)
+                                                .foregroundColor(ColorManager .purple5)
                                                 .opacity(0.95)
                                         }
                                     })
@@ -270,11 +278,19 @@ struct HomeView: View {
                                     label: {
                                         
                                         ZStack {
-                                            Image(systemName: "star")
+                                            Image(systemName: "circle")
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 35, height: 35)
-                                                .foregroundColor(Color.orange)
+                                                .foregroundColor(Color.white)
+                                                .opacity(0.95)
+                                      
+                                            
+                                            Image("IconFightNew")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 30, height: 30)
+                                                .foregroundColor(Color.white)
                                                 .opacity(0.95)
                                         }
                                     })
