@@ -193,7 +193,7 @@ struct HugPreload: View {
                             
                      
                             Spacer()
-                                .frame(width: 180)
+                                .frame(width: 200)
                             
                             ZStack {
 //                                NavigationLink(destination: RR33(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
@@ -270,7 +270,7 @@ struct HugPreload: View {
             VStack {
                                 
                 Spacer ()
-                    .frame(height: 100)
+                    .frame(height: 170)
                                 
                             }
                         }
