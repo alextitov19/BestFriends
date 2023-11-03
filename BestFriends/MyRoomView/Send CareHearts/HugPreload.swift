@@ -133,11 +133,11 @@ struct HugPreload: View {
                         
                         ZStack {
                             NavigationLink(destination: RR27(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: ColorManager .purple1, friendName: "YOU CAN \nDO IT!")
+                                HugCircle (color: Color.purple, friendName: "YOU CAN \nDO IT!")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                            .shadow(color: ColorManager .purple1, radius: 5, x: -4, y: 4)
-                            .opacity(0.9)
+                            .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
+                            .opacity(0.99)
                             
                         }
                         
@@ -299,18 +299,18 @@ struct HugPreload: View {
                 
                 ZStack {
                     
-                    Image("iconSphere1")
+                    Image("planet_6")
                         .resizable()
                         .foregroundColor(color)
                     //                            .foregroundColor(ColorManager .purple2)
-                        .frame(width: 90, height: 90)
+                        .frame(width: 120, height: 120)
                         .shadow(color: Color.white, radius: 4, x: 0, y: 0)
                     
                     Text(friendName)
-                        .fontWeight(.medium)
-                        .font(.system(size: 12))
+                        .fontWeight(.bold)
+                        .font(.system(size: 19))
                         .italic()
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                     
                 }
             }
