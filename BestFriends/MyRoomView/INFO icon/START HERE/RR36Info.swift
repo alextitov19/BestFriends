@@ -226,10 +226,10 @@ VStack {
      
     NavigationLink(destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                label: {
-                    Text("Safe n' Sound ->")
+                    Text("your Safe n' Sound ->")
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
-                        .frame(width: 220, height: 40)
+                        .frame(width: 300, height: 40)
                         .font(.system(size: 30))
                         .background(ColorManager .grey2)
                         .opacity(0.95)

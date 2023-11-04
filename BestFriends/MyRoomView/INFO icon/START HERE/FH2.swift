@@ -70,27 +70,17 @@ struct FH2: View {
                             
                             
                             Text("Non-toxic")
-                                .font(.system(size: 23))
+                                .font(.system(size: 27))
                                 .fontWeight(.regular)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
                                 .rotationEffect(.degrees(-10))
                                 .blinking(duration: 2.0)
-                            
-                            Text("No FOMO / comparisons")
-                                .font(.system(size: 15))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.leading)
-                                .rotationEffect(.degrees(-10))
-                                .foregroundColor(Color.white)
-                                .blinking(duration: 2.0)
-                            
-                            
-                            Spacer()
-                                .frame(height: 10)
-                            
+                    
+                      
                             Text("No feelings of;")
                                 .font(.system(size: 15))
+                                .italic()
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.leading)
                                 .rotationEffect(.degrees(-10))
@@ -100,6 +90,7 @@ struct FH2: View {
                             
                             Text("I'm not good enough")
                                 .font(.system(size: 15))
+                                .italic()
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.leading)
                                 .rotationEffect(.degrees(-10))
@@ -122,25 +113,9 @@ struct FH2: View {
                         .opacity(0.5)
                     
                     VStack {
+                   
                         
-                        Text("You're")
-                            .fontWeight(.medium)
-                            .font(.system(size: 45))
-                            .foregroundColor(.white)
-                            .glow(color: ColorManager.purple4, radius: 3)
-                            .opacity(0.15)
-                        
-                        Text("Safe & Sound")
-                            .fontWeight(.medium)
-                            .font(.system(size: 45))
-                            .foregroundColor(.white)
-                            .glow(color: ColorManager.purple4, radius: 3)
-                            .opacity(0.15)
-                        
-                        Spacer()
-                            .frame(height: 20)
-                        
-                        Text("To let the outside of you")
+                        Text("Letting the outside of you")
                             .font(.system(size: 27))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
@@ -157,17 +132,7 @@ struct FH2: View {
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                        
-                        
-                        Spacer()
-                            .frame(height: 20)
-                        Text("admist the drama")
-                            .fontWeight(.medium)
-                            .font(.system(size: 45))
-                            .foregroundColor(.white)
-                            .glow(color: ColorManager.purple4, radius: 3)
-                            .opacity(0.15)
-                     
+             
                         
                         VStack {
 //                            ******************
