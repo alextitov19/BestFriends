@@ -74,7 +74,7 @@ struct RR36Info: View {
                         Image("comicBubble")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 500, height: 500)
+                            .frame(width: 500, height: 350)
                             .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                             .rotationEffect(.degrees(-10))
                             .opacity(0.95)
@@ -88,6 +88,8 @@ struct RR36Info: View {
                              
                                 
                             VStack {
+                                
+
                                 Image("in bushes")
                                     .resizable()
                                     .foregroundColor(Color.purple)
@@ -102,17 +104,13 @@ struct RR36Info: View {
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.white)
                                     .rotationEffect(.degrees(-10))
+                                
+                                Spacer ()
+                                    .frame(height: 50)
+                                
+                              
                             }
                         }
-                        
-                        Spacer ()
-                            .frame(width: 200)
-                        
-                    Image("")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 70, height: 70)
-                        .opacity(0.9)
                     }
                 }
             
