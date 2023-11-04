@@ -226,7 +226,7 @@ struct HomeView: View {
                                             .scaledToFit()
                                             .frame(width: 50, height: 50)
                                             .foregroundColor(Color.white)
-                                            .glow(color: ColorManager .purple3, radius: 1.5)
+                                            .glow(color: ColorManager .purple1, radius: 1.5)
 //                                            .blinking(duration: 4.0)
                                             .opacity(0.8)
                                         
