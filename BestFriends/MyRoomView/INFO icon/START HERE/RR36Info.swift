@@ -74,7 +74,7 @@ struct RR36Info: View {
                         Image("comicBubble")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 300, height: 125)
+                            .frame(width: 500, height: 500)
                             .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                             .rotationEffect(.degrees(-10))
                             .opacity(0.95)
@@ -82,13 +82,27 @@ struct RR36Info: View {
                         
                         
                         Link(destination: URL(string: "https://youtu.be/QU-MfN7k00k?feature=shared")!) {
-                            Text("Demo Video")
-                                .font(.system(size: 30))
-                                .fontWeight(.regular)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .rotationEffect(.degrees(-10))
+                           
+//                            ZStack {
+                                
+                             
+                                
+                            VStack {
+                                Image("in bushes")
+                                    .resizable()
+                                    .foregroundColor(Color.purple)
+                                    .frame(width: 325, height: 150)
+                                    .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+                                    .rotationEffect(.degrees(-10))
+                                    .opacity(0.95)
                             
+                                Text("Demo Video")
+                                    .font(.system(size: 25))
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.white)
+                                    .rotationEffect(.degrees(-10))
+                            }
                         }
                         
                         Spacer ()
