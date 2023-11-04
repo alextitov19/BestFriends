@@ -103,10 +103,7 @@ struct CH7: View {
                       
                   } else {
 
-                      Image("CareHeartBalloon 1")
-                          .ignoresSafeArea()
-                          .scaledToFit()
-                          .opacity(0.1)
+               
                       
                       Color.black
                         .opacity(0.9)
@@ -149,13 +146,13 @@ struct CH7: View {
                                                     .submitLabel(.done)
                                                     .onReceive(Just(customMessage)) { _ in limitText(65) }
                                                     .padding(.top, 20)
-                                                    .padding(.horizontal, 150)
+                                                    .padding(.horizontal, 50)
                                                     .overlay(
                                                         RoundedRectangle(cornerRadius: 10)
                                                             .stroke(Color.purple)
                                                         //                                                            .background(ColorManager.purple3)
                                                             .frame(height: 50)
-                                                            .padding(.horizontal, 125)
+                                                            .padding(.horizontal, 25)
                                                     )
                                                     .padding(.bottom, 5)
                                             }
@@ -207,24 +204,17 @@ struct CH7: View {
                             .opacity(0.5)
                         
                         VStack {
-                            Text("Your friend just sent you")
+                            Text("Check chat for song Friend sent you")
                                 .font(.system(size: 19, weight: .light))
                                 .foregroundColor(Color.white)
                                 .multilineTextAlignment(.center)
                             
-                            Text("'that' song in Chat they listen to")
-                                .font(.system(size: 19, weight: .light))
-                                .foregroundColor(Color.white)
-                                .multilineTextAlignment(.center)
-                            
-                            Text("on those very difficult days")
-                                .font(.system(size: 19, weight: .light))
-                                .foregroundColor(Color.white)
-                                .multilineTextAlignment(.center)
+                          
+                   
                         }
                     }
 
-                    Text("(Shoot your friend a quick thank you notification)")
+                    Text("(Shoot out a thank you)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
@@ -339,15 +329,15 @@ struct CH7: View {
                             sendMessage()
                         },
                                label: {
-                            Text("SHARE")
-                            
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager .grey2)
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            Image("iconShare")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 80, height: 80)
+                                .rotationEffect(.degrees(20))
+                                .foregroundColor(ColorManager .purple5)
+                                .glow(color: Color.purple, radius: 2)
+                                .opacity(0.6)
+                                .blinking(duration: 3.0)
                                 .alert("Your thanks for the song was sent.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }

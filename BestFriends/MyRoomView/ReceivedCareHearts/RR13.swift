@@ -60,7 +60,7 @@ struct RR13: View {
                   .opacity(0.9)
                   .ignoresSafeArea()
                 
-                AdPlayerView(name: "background_9")
+                AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.6)
@@ -68,7 +68,7 @@ struct RR13: View {
                 Image("CHHearts 1")
                     .ignoresSafeArea()
                     .scaledToFit()
-                    .opacity(0.15)
+                    .opacity(0.3)
             }
             
             VStack{
@@ -108,17 +108,13 @@ struct RR13: View {
                                         Spacer()
                                             .frame(height: 10)
                                         
-                                        Text("You just got a Hearts")
+                                        Text("You just got a Heart")
                                             .font(.system(size: 20))
                                             .foregroundColor(Color.white)
                                             .fontWeight(.light)
                                             .multilineTextAlignment(.center)
                                         
-                                        Text("love heart")
-                                            .font(.system(size: 20))
-                                            .foregroundColor(Color.white)
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
+                                     
                                     }
                                 }
                                    
@@ -250,15 +246,15 @@ struct RR13: View {
                             shareButtonTapped()
                         },
                                label: {
-                            Text("SHARE")
-                        
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(shareColor)
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            Image("iconShare")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 80, height: 80)
+                                .rotationEffect(.degrees(20))
+                                .foregroundColor(ColorManager .purple5)
+                                .glow(color: Color.purple, radius: 2)
+                                .opacity(0.6)
+                                .blinking(duration: 3.0)
                                 .alert("Your thank you has been sent", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
@@ -288,12 +284,35 @@ struct RR13: View {
                             
                             VStack {
                                 
+                                
+                                Spacer()
+                                    .frame(height: 20)
+                                
+                                
+                                Button(action: {
+                                    sessionManager.showLogin()
+                                },
+                                       label: {
+                                    Text("Check chat for message")
+                                        .fontWeight(.bold)
+                                        .frame(width: 200, height: 40)
+                                        .foregroundColor(Color.black)
+                                        .font(.system(size: 16))
+                                        .background(Color.cyan)
+                                        .glow(color: ColorManager.purple1, radius: 1)
+                                        .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                        .opacity(0.9)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                    
+                                })
+                                
                                 Spacer()
                                     .frame(height: 20)
                                 
                                 NavigationLink( destination:  RR11(user: user, friend: user, friends: friends, groups: groups),
                                                 label: {
-                                    Text("Send Hearts back")
+                                    Text("Send a Heart back")
                                         .fontWeight(.bold)
                                         .frame(width: 200, height: 40)
                                         .foregroundColor(Color.black)

@@ -51,7 +51,7 @@ struct RR11: View {
 //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
-        customMessage = "Love CareHeart from; " + user.firstName + " : " + customMessage;
+        customMessage = "Heart from; " + user.firstName + " : " + customMessage;
         
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
