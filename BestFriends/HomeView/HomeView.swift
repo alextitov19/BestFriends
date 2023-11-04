@@ -209,6 +209,8 @@ struct HomeView: View {
                                             .scaledToFit()
                                             .frame(width: 20, height: 20)
                                             .foregroundColor(Color.white)
+                                            .glow(color: Color.cyan, radius: 0.3)
+                                            .shadow(color: .cyan, radius: 1, x: 3, y: -0.5)
                                             .opacity(0.95)
                                     }
                                 })
@@ -256,13 +258,21 @@ struct HomeView: View {
                                                 .foregroundColor(Color.white)
                                                 .opacity(0.95)
                                       
-                                            
-                                            Image("iconHeart10")
+                                            Image(systemName: "heart.fill")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 30, height: 30)
-                                                .foregroundColor(ColorManager .purple5)
+                                                .frame(width: 20, height: 20)
+                                                .foregroundColor(Color.cyan)
+                                                .glow(color: ColorManager.purple1, radius: 0.3)
+                                                .shadow(color: .white, radius: 1, x: 3, y: -0.5)
                                                 .opacity(0.95)
+                                            
+//                                            Image("iconHeart10")
+//                                                .resizable()
+//                                                .scaledToFit()
+//                                                .frame(width: 30, height: 30)
+//                                                .foregroundColor(ColorManager .purple5)
+//                                                .opacity(0.95)
                                         }
                                     })
                             }
