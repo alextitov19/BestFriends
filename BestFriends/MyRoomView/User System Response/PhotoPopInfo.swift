@@ -73,14 +73,14 @@ VStack {
     Spacer()
         .frame(height: 23)
     
-    Text("Celebration & Support")
+    Text("From friends at BFs")
         .fontWeight(.medium)
-        .font(.system(size: 35))
+        .font(.system(size: 30))
         .foregroundColor(.white)
         .glow(color: ColorManager.purple4, radius: 3)
         .opacity(0.15)
 
-    Text("when friends aren't around")
+    Text("when your friends aren't around")
         .fontWeight(.medium)
         .font(.system(size: 20))
         .italic()
