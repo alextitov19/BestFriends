@@ -135,9 +135,9 @@ struct RR25: View {
                     VStack {
                         
                         
-                        Link(destination: URL(string: "https://www.youtube.com/watch?v=_LgJT9kCVnM")!) {
+                        Link(destination: URL(string: "https://www.youtube.com/watch?v=T_ivwsIWYOw")!) {
                             
-                            Text("Never Surrender")
+                            Text("the climb")
                                 .fontWeight(.thin)
                                 .frame(width: 220, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
