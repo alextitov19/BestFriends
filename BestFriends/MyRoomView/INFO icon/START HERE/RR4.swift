@@ -60,7 +60,7 @@ struct RR4: View {
                     
                     NavigationLink(destination:  RR36Info(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                    label: {
-                        Text("If your friends are important \nconsider this app a sign!")
+                        Text("If your friends are important; \nconsider this app a sign!")
                             .fontWeight(.thin)
                             .foregroundColor(Color.black)
                             .frame(width: 220, height: 40)

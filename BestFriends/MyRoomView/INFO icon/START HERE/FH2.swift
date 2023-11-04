@@ -89,7 +89,7 @@ struct FH2: View {
                             Spacer()
                                 .frame(height: 10)
                             
-                            Text("No feelings of not")
+                            Text("No feelings of;")
                                 .font(.system(size: 15))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.leading)
@@ -98,7 +98,7 @@ struct FH2: View {
                                 .blinking(duration: 2.0)
                             
                             
-                            Text("being good enough")
+                            Text("I'm not good enough")
                                 .font(.system(size: 15))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.leading)
