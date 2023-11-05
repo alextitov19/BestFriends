@@ -101,10 +101,10 @@ struct RR14: View {
                       
                   } else {
 
-                      Image("CareHeartBalloon 1")
-                          .ignoresSafeArea()
-                          .scaledToFit()
-                          .opacity(0.1)
+//                      Image("CareHeartBalloon 1")
+//                          .ignoresSafeArea()
+//                          .scaledToFit()
+//                          .opacity(0.1)
                       
                       Color.black
                         .opacity(0.9)
@@ -122,164 +122,96 @@ struct RR14: View {
             
             VStack {
           
-                
-                
-//                                        ZStack(alignment: .bottom) {
-                                            
-//                                ZStack {
-//
-//                                    VStack {
-//                                                Spacer()
-//                                                // TextField for userInput
-//                                                TextField("", text: $customMessage)
-//                                                    .placeholder(when: customMessage.isEmpty) {
-//                                                        HStack {
-//                                                            Text("Type personal Chat message here")
-//                                                                .foregroundColor(Color.white)
-//                                                                .fontWeight(.thin)
-//                                                            Spacer()
-//                                                        }
-//                                                    }
-//                                                    .foregroundColor(.white)
-//                                                    .font(.system(size: 15))
-//                                                    .submitLabel(.done)
-//                                                    .onReceive(Just(customMessage)) { _ in limitText(65) }
-//                                                    .padding(.top, 20)
-//                                                    .padding(.horizontal, 150)
-//                                                    .overlay(
-//                                                        RoundedRectangle(cornerRadius: 10)
-//                                                            .stroke(Color.purple)
-//                                                        //                                                            .background(ColorManager.purple3)
-//                                                            .frame(height: 50)
-//                                                            .padding(.horizontal, 125)
-//                                                    )
-//                                                    .padding(.bottom, 5)
-//                                            }
-//                                        }
-//
-//                                }
-//
-//                            }
-//
-//                        }
-//
-//                    }
-                    
-                    
                 VStack {
                     
-//                    Text("Customize your own")
-//                        .font(.system(size: 35, weight: .light))
-//                        .foregroundColor(ColorManager .grey1)
-//                        .multilineTextAlignment(.center)
-//
-//                    Text("CareHearts ...")
-//                        .font(.system(size: 35, weight: .light))
-//                        .foregroundColor(ColorManager .grey1)
-//                        .multilineTextAlignment(.center)
-                    
-                    
-                    Spacer()
-                        .frame(height: 100)
-                    
                     ZStack {
-                  
-                        
-                        Image(systemName: "heart.fill")
+                        Image("comicBubble")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 260, height: 210)
-                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                            .opacity(0.9)
-                       
+                            .frame(width: 430, height: 200)
+                            .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+                            .rotationEffect(.degrees(-10))
+                            .opacity(0.95)
+                            .blinking(duration: 2.0).blinking(duration: 3.0)
                         
                         
                         VStack {
-                            
-                            
-//                            Text("tell'em")
-//                                .font(.system(size: 20, weight: .light))
-//                                .foregroundColor(ColorManager .grey1)
-//                                    .multilineTextAlignment(.center)
-//
-//                            Text("CONGRATULATIONS")
-//                                .font(.system(size: 28, weight: .light))
-//                                .foregroundColor(ColorManager .grey1)
-//                                    .multilineTextAlignment(.center)
-                            
-                            Text("You did it!")
-                                .font(.system(size: 35, weight: .light))
-                                .foregroundColor(ColorManager .grey1)
+                        
+                                Text("YOU DID IT")
+                                    .font(.system(size: 50))
+                                    .fontWeight(.regular)
                                     .multilineTextAlignment(.center)
-//
-//                            Spacer()
-//                                .frame(height: 7)
-//
-                            
-                            Spacer()
-                                .frame(height: 10)
-                            
-                            NavigationLink(
-                                destination:  PhotoPopView(user: user, friends: friends),
-                                label: {
-                                    
-                                    Image(systemName: "camera")
-                                      
-                                       .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 40, height: 40)
-                                        .foregroundColor(Color.cyan)
-                                        .glow(color: ColorManager.purple4, radius: 2)
-                                        .opacity(0.6)
-  
-                                })
-                            
-                        }
-                    }
-                }
-                VStack {
-                    
-                    
-                    ZStack {
-                        
-                        VStack {
-                                    Spacer()
-                                    // TextField for userInput
-                                    TextField("", text: $customMessage)
-                                        .placeholder(when: customMessage.isEmpty) {
-                                            HStack {
-                                                Text("Let'em know how you feel...")
-                                                    .foregroundColor(Color.white)
-                                                    .fontWeight(.thin)
-                                                Spacer()
-                                            }
-                                        }
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 15))
-                                        .submitLabel(.done)
-                                        .onReceive(Just(customMessage)) { _ in limitText(65) }
-                                        .padding(.top, 20)
-                                        .padding(.horizontal, 150)
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 10)
-                                                .stroke(Color.purple)
-                                            //                                                            .background(ColorManager.purple3)
-                                                .frame(height: 50)
-                                                .padding(.horizontal, 125)
-                                        )
-                                        .padding(.bottom, 5)
+                                    .foregroundColor(Color.white)
+                                    .rotationEffect(.degrees(-10))
+                                    .blinking(duration: 2.0)
+                           
                                 }
                             }
-                        
+//                        }
                     
-                    
+//
+//
+//                VStack {
+//
+//
+//                    ZStack {
+//
+//                        VStack {
+//                                    Spacer()
+//                                    // TextField for userInput
+//                                    TextField("", text: $customMessage)
+//                                        .placeholder(when: customMessage.isEmpty) {
+//                                            HStack {
+//                                                Text("Send a pic - type a message")
+//                                                    .foregroundColor(Color.white)
+//                                                    .fontWeight(.thin)
+//                                                Spacer()
+//                                            }
+//                                        }
+//                                        .foregroundColor(.white)
+//                                        .font(.system(size: 15))
+//                                        .submitLabel(.done)
+//                                        .onReceive(Just(customMessage)) { _ in limitText(65) }
+//                                        .padding(.top, 20)
+//                                        .padding(.horizontal, 50)
+//                                        .overlay(
+//                                            RoundedRectangle(cornerRadius: 10)
+//                                                .stroke(Color.purple)
+//                                            //                                                            .background(ColorManager.purple3)
+//                                                .frame(height: 50)
+//                                                .padding(.horizontal, 25)
+//                                        )
+//                                        .padding(.bottom, 5)
+//                                }
+//                            }
+//
+//                    Spacer()
+//                        .frame(height: 10)
+//
+//                    NavigationLink(
+//                        destination:  PhotoPopView(user: user, friends: friends),
+//                        label: {
+//
+//                            Image(systemName: "camera")
+//
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 40, height: 40)
+//                                .foregroundColor(Color.cyan)
+//                                .glow(color: ColorManager.purple4, radius: 2)
+//                                .rotationEffect(.degrees(-10))
+//                                .opacity(0.6)
+//
+//                        })
+//
+//
                     
                     
 
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("(send a thank you)")
+                    Text("(check chat for message / say thanks)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
@@ -386,15 +318,15 @@ struct RR14: View {
                             sendMessage()
                         },
                                label: {
-                            Text("SHARE")
-                            
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager .grey2)
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            Image("iconShare")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 80, height: 80)
+                                .rotationEffect(.degrees(20))
+                                .foregroundColor(ColorManager .purple5)
+                                .glow(color: Color.purple, radius: 2)
+                                .opacity(0.6)
+                                .blinking(duration: 3.0)
                                 .alert("Your thank you has been sent.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }

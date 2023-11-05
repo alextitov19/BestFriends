@@ -133,7 +133,7 @@ struct RR53: View {
                     HStack {
                         
                         ZStack {
-                            NavigationLink(destination: RR27(user: user, friend: user, friends: friends, groups: groups), label: {
+                            NavigationLink(destination: RR29(user: user, friends: friends), label: {
                                 HugCircle (color: Color.purple, friendName: "YOU CAN \nDO IT!")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
@@ -151,8 +151,8 @@ struct RR53: View {
                         ZStack {
                             
                             
-                            NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.purple, friendName: "Say \nCONGRATS")
+                            NavigationLink(destination: RR14(user: user, friend: user, friends: friends, groups: groups), label: {
+                                HugCircle (color: Color.purple, friendName: "You got \nCONGRATS")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                             .shadow(color: Color.purple, radius: 10, x: -4, y: 4)

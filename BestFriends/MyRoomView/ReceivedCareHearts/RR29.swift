@@ -72,7 +72,7 @@ struct RR29: View {
                     .ignoresSafeArea()
                 
                 
-                AdPlayerView(name: "background_8")
+                AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
            
@@ -82,48 +82,44 @@ struct RR29: View {
             }
             
             VStack{
-                
-                
-                Text("You do good out there, ok")
-                                        .font(.system(size: 30))
-                                        .foregroundColor(Color.white)
-                                        .fontWeight(.light)
-                                        .multilineTextAlignment(.center)
-                
-                        Spacer()
-                            .frame(height: 10)
-             
-                Text("You got this!!!")
-                                        .font(.system(size: 40))
-                                        .foregroundColor(Color.white)
-                                        .fontWeight(.light)
-                                        .multilineTextAlignment(.center)
-                
-                Spacer()
-                    .frame(height: 60)
-                
-                
-                HStack {
+
+                ZStack {
+                    Image("comicBubble")
+                        .resizable()
+                        .foregroundColor(Color.purple)
+                        .frame(width: 550, height: 250)
+                        .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+                        .rotationEffect(.degrees(-10))
+                        .opacity(0.95)
+                        .blinking(duration: 2.0).blinking(duration: 3.0)
+                    
+                    
                     VStack {
-        
                         
-                        ZStack {
-                            
-                            
-                            VStack {
-                          
-                                
-                            }
-                            
-                           
-                        }
-                      
+                        Text("YOU GOT THIS")
+                            .font(.system(size: 50))
+                            .fontWeight(.regular)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                            .rotationEffect(.degrees(-10))
+                            .blinking(duration: 2.0)
                         
+                        
+                        Text("You do good out there, ok")
+                            .font(.system(size: 20))
+                            .foregroundColor(Color.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .rotationEffect(.degrees(-10))
+                            .blinking(duration: 2.0)
+                        
+                                Spacer()
+                                    .frame(height: 70)
                     }
-               
                 }
-             
-         
+                
+                
+                
                 VStack {
 
                     VStack {
@@ -264,17 +260,15 @@ struct RR29: View {
                             shareButtonTapped()
                         },
                                label: {
-                            
-                            
-                            Text("SHARE")
-                        
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(shareColor)
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            Image("iconShare")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 80, height: 80)
+                                .rotationEffect(.degrees(20))
+                                .foregroundColor(ColorManager .purple5)
+                                .glow(color: Color.purple, radius: 2)
+                                .opacity(0.6)
+                                .blinking(duration: 3.0)
                                 .alert("Your thank you was sent", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
@@ -308,7 +302,7 @@ struct RR29: View {
                             })
 //
                             Spacer()
-                                .frame(height: 185)
+                                .frame(height: 50)
                             
    
                    
