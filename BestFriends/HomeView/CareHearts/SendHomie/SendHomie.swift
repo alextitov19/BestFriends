@@ -76,24 +76,24 @@ struct SendHomie: View {
                     VStack {
                         
 //*********************************************** Motion
-                        GeometryReader { geo in
-                            HStack(spacing: 10) {
-                                Image("CoolGuy")
-                                    .aspectRatio(contentMode: .fit)
-                                    .blinking(duration: 3.0)
-
-                                Image("")
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: geo.size.width, alignment: .leading)
-                            }
-                            .frame(width: geo.size.width, height: geo.size.height,
-                                   alignment: animate ? .trailing : .leading)
-                        }
-                        .ignoresSafeArea()
-                        .onAppear {
-                            withAnimation(animation) {
-                                animate.toggle()
-                            }
+//                        GeometryReader { geo in
+//                            HStack(spacing: 10) {
+//                                Image("CoolGuy")
+//                                    .aspectRatio(contentMode: .fit)
+//                                    .blinking(duration: 3.0)
+//
+//                                Image("")
+//                                    .aspectRatio(contentMode: .fit)
+//                                    .frame(width: geo.size.width, alignment: .leading)
+//                            }
+//                            .frame(width: geo.size.width, height: geo.size.height,
+//                                   alignment: animate ? .trailing : .leading)
+//                        }
+//                        .ignoresSafeArea()
+//                        .onAppear {
+//                            withAnimation(animation) {
+//                                animate.toggle()
+//                            }
                         
         //*********************************************** Motion
                         
@@ -108,7 +108,7 @@ struct SendHomie: View {
                         
                         
                         
-                    }
+//                    }
                 }
          
                 VStack {
