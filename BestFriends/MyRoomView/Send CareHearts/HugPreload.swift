@@ -163,7 +163,7 @@ struct HugPreload: View {
                     HStack {
                         VStack {
                             NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
-                                HugCircle (color: Color.purple, friendName: "Fist-pump")
+                                HugCircle (color: Color.purple, friendName: "Send \nFist-pump")
                             })
                             .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
                             .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
