@@ -219,9 +219,9 @@ struct NotificationsView: View {
                     })
                     
 //********************* QUESTION: do we need to link the thank you to anything? ****
-                    NavigationLink(destination: RR14(user: user, friend: user, friends: friends, groups: groups), isActive: $thanksCongratulationsActive, label: {
-                        EmptyView()
-                    })
+//                    NavigationLink(destination: RR14(user: user, friend: user, friends: friends, groups: groups), isActive: $thanksCongratulationsActive, label: {
+//                        EmptyView()
+//                    })
                     
                     
                     
@@ -266,7 +266,7 @@ struct NotificationsView: View {
                 
 //               ********************** Message goes to Chat **************************
 //********************* QUESTION: do we need to link the thank you to anything? ****
-                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksHeartActive, label: {
+                NavigationLink(destination: RR13(user: user, friends: friends, groups: groups), isActive: $thanksHeartActive, label: {
                     EmptyView()
                 })
                 
