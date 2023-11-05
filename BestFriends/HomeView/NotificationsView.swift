@@ -155,82 +155,125 @@ struct NotificationsView: View {
                 
                 VStack {
                     
-                    
+//   **************** NOT USING THESE PAGES ***********************
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $meetupCouponActive, label: {
                         EmptyView()
                     })
+                   
+//        ********************************************
                     
+             
+                    
+                    
+                    
+                    
+//                  DONE _ DONE _ DONE
                     NavigationLink(destination: PhotoPopView(user: user, friends: friends), isActive: $photoPopActive, label: {
                         EmptyView()
                     })
                     
+
                     
+                    
+                    
+                    
+//                  DONE _ DONE _ DONE
                     NavigationLink(destination: CH9(user: user, friends: friends), isActive: $kissesActive, label: {
                         EmptyView()
                     })
-                    
+//********************* QUESTION: do we need to link the thank you to anything? ****
                     NavigationLink(destination: CH9(user: user, friends: friends), isActive: $thanksKissesActive, label: {
                         EmptyView()
                     })
                     
+                  
                     
                     
+                    
+                    
+//                  DONE _ DONE _ DONE
                     NavigationLink(destination: VirtualHug(user: user, friends: friends), isActive: $hugActive, label: {
                         EmptyView()
                     })
-                    
+    //********************* QUESTION: do we need to link the thank you to anything? ****
                     NavigationLink(destination: VirtualHug(user: user, friends: friends), isActive: $thanksHugActive, label: {
                         EmptyView()
                     })
                     
                     
+                    
+                    
+                    
+                    
+                    
+                    
+//      ******************************** push notifiction link to received Congrats
+//                    RR14(user: user, friend: user, friends: friends, groups: groups)
+                    //    ********************************************
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $newCongratulationsActive, label: {
                         EmptyView()
                     })
                     
+//********************* QUESTION: do we need to link the thank you to anything? ****
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksCongratulationsActive, label: {
                         EmptyView()
                     })
                     
                     
                     
-                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksCustomActive, label: {
-                        EmptyView()
-                    })
                     
                     
                     
                     
+                    
+                    
+               
+                    
+                    
+    //      ******************************** push notifiction link to received
+//                    CH7(user: user, friend: user, friends: friends, groups: groups)
+    //    ********************************************
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $songActive, label: {
                         EmptyView()
                     })
                   
-                    
-                }
+    }
                 
-                
+                //********************* QUESTION: do we need to link the thank you to anything? ****
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksSongActive, label: {
                     EmptyView()
                 })
                 
                 
-                //                ************* fix CH9 to Received Hearts page: CH13
+                
+                
+                
+                
+                
+                
+//      ******************************** push notifiction link to received
+//                RR13(user: user, friends: friends, groups: groups)
+    //    ********************************************
                 NavigationLink(destination: CH9(user: user, friends: friends), isActive: $heartsActive, label: {
                     EmptyView()
                 })
                 
                 
                 
-                //               ********************** Message goes to Chat **************************
+//               ********************** Message goes to Chat **************************
+//********************* QUESTION: do we need to link the thank you to anything? ****
                 NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksHeartActive, label: {
                     EmptyView()
                 })
                 
+             
+               
                 
-                //               ********************** Song goes to Chat - no need link **************************
+                
+                
                 
                 VStack {
-                    
+//   **************** NOT USING THESE PAGES ***********************
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $fixFightActive, label: {
                         EmptyView()
                     })
@@ -238,7 +281,13 @@ struct NotificationsView: View {
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $talkCouponActive, label: {
                         EmptyView()
                     })
+//****************************
                     
+                    
+                    
+                    
+                    
+//    ****** Link to homepage **
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $needTalkActive, label: {
                         EmptyView()
                     })
@@ -246,8 +295,12 @@ struct NotificationsView: View {
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $newVibeActive, label: {
                         EmptyView()
                     })
+//  ********************************
                     
                     
+                    
+                    
+//   **************** NOT USING THESE PAGES ***********************
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksMentalActive, label: {
                         EmptyView()
                     })
@@ -256,43 +309,51 @@ struct NotificationsView: View {
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksMentalActive, label: {
                         EmptyView()
                     })
+//   **********************************************
                     
                     
+//                  DONE _ DONE
+                    NavigationLink(destination: RR29(user: user, friends: friends), isActive: $canDoActive, label: {
+                        EmptyView()
+                    })
+//********************* QUESTION: do we need to link the thank you to anything? ****
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksDoActive, label: {
                         EmptyView()
                     })
                     
                     
                     
+                    
+                    
+                    
+                    
+//      ******************************** PAGE NOT BUILT YET **
+//                RR13(user: user, friends: friends, groups: groups)
+    //    ********************************************
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $affirmationActive, label: {
                         EmptyView()
                     })
                     
-                    
-                    
-                }
+        }
                 
-                VStack {
-                    // ***************************************************************
-                    
+VStack {
+                  
+    //********************* QUESTION: do we need to link the thank you to anything? ****
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksAffirmationActive, label: {
                         EmptyView()
                     })
                     
-                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $photoPOPActive, label: {
-                        EmptyView()
-                    })
-                 
-                    
+ 
+    
+    
+    
+    //      ******************************** PAGE NOT BUILT YET **
                     NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $sorryActive, label: {
                         EmptyView()
                     })
                     
-                    
-                    
-                    
-                    
-                }
+            
+    }
                 
                
                 

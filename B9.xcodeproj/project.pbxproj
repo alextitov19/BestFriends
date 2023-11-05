@@ -1292,6 +1292,14 @@
 			path = "New Summer Feature";
 			sourceTree = "<group>";
 		};
+		CF221EE92AF82AC6005D19B7 /* Hurt  */ = {
+			isa = PBXGroup;
+			children = (
+				2D2A18722AEEECD800B0C1DF /* RR52.swift */,
+			);
+			path = "Hurt ";
+			sourceTree = "<group>";
+		};
 		CF2DBCE62853D7E6008616A3 /* Being Accountable */ = {
 			isa = PBXGroup;
 			children = (
@@ -1662,7 +1670,7 @@
 		CF6C5B0C2A860AD100EC4915 /* Send CareHearts */ = {
 			isa = PBXGroup;
 			children = (
-				2D2A18722AEEECD800B0C1DF /* RR52.swift */,
+				CF221EE92AF82AC6005D19B7 /* Hurt  */,
 				CFC0EE732907A823006B3FAA /* HugPreload.swift */,
 				CF7157502975D29900094F22 /* SendKisses.swift */,
 				CFC0EE752907AB7D006B3FAA /* HugPushNotification.swift */,
