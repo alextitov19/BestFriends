@@ -74,23 +74,19 @@ struct RR28: View {
                 HStack {
                     VStack {
                         
-                        Text("got a")
+                        Text("TAP")
                             .font(.system(size: 35))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
-                        Text("fist-pump!")
-                            .font(.system(size: 35))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
+                               
                         
                     }
-                    
-                    Image("CoolGuy")
-                        .resizable()
-                        .frame(width: 200, height: 200)
+//
+//                    Image("CoolGuy")
+//                        .resizable()
+//                        .frame(width: 200, height: 200)
                 }
              
          

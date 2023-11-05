@@ -59,7 +59,7 @@ struct SendKisses: View {
                     .ignoresSafeArea()
                 
                 
-                AdPlayerView(name: "sky2")
+                AdPlayerView(name: "blowingkissesVid")
                     .ignoresSafeArea()
                     .blendMode(.screen)
            

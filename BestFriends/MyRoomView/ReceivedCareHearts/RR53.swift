@@ -163,7 +163,7 @@ struct RR53: View {
                    
                     HStack {
                         VStack {
-                            NavigationLink(destination: RR28(user: user, friends: friends), label: {
+                            NavigationLink(destination: RR54(user: user, friends: friends), label: {
                                 HugCircle (color: Color.purple, friendName: "You got a \nFist-pump")
                             })
                             .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
