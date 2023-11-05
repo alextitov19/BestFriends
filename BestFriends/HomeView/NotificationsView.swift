@@ -52,7 +52,7 @@ struct NotificationsView: View {
                     
                     ScrollView(.vertical, showsIndicators: false) {
                         ForEach(ians, id: \.createdOn) { ian in
-                            NotificationBubble(ian: ian, user: user, friends: friends)
+                            NotificationBubble(ian: ian, user: user, friends: friends, groups: groups)
                                 .opacity(0.7)
                                 .padding()
                         }
@@ -83,6 +83,7 @@ struct NotificationsView: View {
     private struct NotificationBubble: View {
         let user: User
         let friends: [User]
+        let groups: [Group]
         
         
         let ian: InAppNotification
@@ -117,10 +118,13 @@ struct NotificationsView: View {
         @State private var thanksAffirmationActive = false
         @State private var sorryActive = false
         
-        init(ian: InAppNotification, user: User, friends: [User]) {
+        init(ian: InAppNotification, user: User, friends: [User], groups: [Group]) {
             self.ian = ian
             self.user = user
             self.friends = friends
+            self.groups = groups
+            
+            
             let date = Date()
             let ti = date.timeIntervalSince1970
             var dif = Int64(ti)
@@ -210,12 +214,12 @@ struct NotificationsView: View {
 //      ******************************** push notifiction link to received Congrats
 //                    RR14(user: user, friend: user, friends: friends, groups: groups)
                     //    ********************************************
-                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $newCongratulationsActive, label: {
+                    NavigationLink(destination: RR14(user: user, friend: user, friends: friends, groups: groups), isActive: $newCongratulationsActive, label: {
                         EmptyView()
                     })
                     
 //********************* QUESTION: do we need to link the thank you to anything? ****
-                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksCongratulationsActive, label: {
+                    NavigationLink(destination: RR14(user: user, friend: user, friends: friends, groups: groups), isActive: $thanksCongratulationsActive, label: {
                         EmptyView()
                     })
                     
@@ -233,14 +237,14 @@ struct NotificationsView: View {
     //      ******************************** push notifiction link to received
 //                    CH7(user: user, friend: user, friends: friends, groups: groups)
     //    ********************************************
-                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $songActive, label: {
+                    NavigationLink(destination: CH7(user: user, friend: user, friends: friends, groups: groups), isActive: $songActive, label: {
                         EmptyView()
                     })
                   
     }
                 
                 //********************* QUESTION: do we need to link the thank you to anything? ****
-                NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksSongActive, label: {
+                NavigationLink(destination: CH7(user: user, friend: user, friends: friends, groups: groups), isActive: $thanksSongActive, label: {
                     EmptyView()
                 })
                 
@@ -254,7 +258,7 @@ struct NotificationsView: View {
 //      ******************************** push notifiction link to received
 //                RR13(user: user, friends: friends, groups: groups)
     //    ********************************************
-                NavigationLink(destination: CH9(user: user, friends: friends), isActive: $heartsActive, label: {
+                NavigationLink(destination: RR13(user: user, friends: friends, groups: groups), isActive: $heartsActive, label: {
                     EmptyView()
                 })
                 
