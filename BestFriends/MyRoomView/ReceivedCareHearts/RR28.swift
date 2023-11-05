@@ -62,7 +62,7 @@ struct RR28: View {
                   .opacity(0.9)
                   .ignoresSafeArea()
                 
-                AdPlayerView(name: "sky2")
+                AdPlayerView(name: "fistpumpVideo")
                     .ignoresSafeArea()
                     .blendMode(.screen)
             }
