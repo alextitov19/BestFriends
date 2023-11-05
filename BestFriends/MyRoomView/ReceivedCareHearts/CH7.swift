@@ -124,39 +124,39 @@ struct CH7: View {
                 
 //                                        ZStack(alignment: .bottom) {
                                             
-                                            ZStack {
+//                                            ZStack {
                                                 
           
-                                             
-                                            
-                                            VStack {
-                                                Spacer()
-                                                // TextField for userInput
-                                                TextField("", text: $customMessage)
-                                                    .placeholder(when: customMessage.isEmpty) {
-                                                        HStack {
-                                                            Text("Type your message here")
-                                                                .foregroundColor(Color.white)
-                                                                .fontWeight(.thin)
-                                                            Spacer()
-                                                        }
-                                                    }
-                                                    .foregroundColor(.white)
-                                                    .font(.system(size: 20))
-                                                    .submitLabel(.done)
-                                                    .onReceive(Just(customMessage)) { _ in limitText(65) }
-                                                    .padding(.top, 20)
-                                                    .padding(.horizontal, 50)
-                                                    .overlay(
-                                                        RoundedRectangle(cornerRadius: 10)
-                                                            .stroke(Color.purple)
-                                                        //                                                            .background(ColorManager.purple3)
-                                                            .frame(height: 50)
-                                                            .padding(.horizontal, 25)
-                                                    )
-                                                    .padding(.bottom, 5)
-                                            }
-                                        }
+//
+//
+//                                            VStack {
+//                                                Spacer()
+//                                                // TextField for userInput
+//                                                TextField("", text: $customMessage)
+//                                                    .placeholder(when: customMessage.isEmpty) {
+//                                                        HStack {
+//                                                            Text("Type your message here")
+//                                                                .foregroundColor(Color.white)
+//                                                                .fontWeight(.thin)
+//                                                            Spacer()
+//                                                        }
+//                                                    }
+//                                                    .foregroundColor(.white)
+//                                                    .font(.system(size: 20))
+//                                                    .submitLabel(.done)
+//                                                    .onReceive(Just(customMessage)) { _ in limitText(65) }
+//                                                    .padding(.top, 20)
+//                                                    .padding(.horizontal, 50)
+//                                                    .overlay(
+//                                                        RoundedRectangle(cornerRadius: 10)
+//                                                            .stroke(Color.purple)
+//                                                        //                                                            .background(ColorManager.purple3)
+//                                                            .frame(height: 50)
+//                                                            .padding(.horizontal, 25)
+//                                                    )
+//                                                    .padding(.bottom, 5)
+//                                            }
+//                                        }
                                     
 //                                }
 //
@@ -170,22 +170,22 @@ struct CH7: View {
                     VStack {
                    
                      
-                        
-                        
-                        Spacer()
-                            .frame(height: 20)
-
-                      
-                        
-                        Text("Let your friend know")
-                            .font(.system(size: 20, weight: .light))
-                            .foregroundColor(Color.white)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("if their song helped")
-                            .font(.system(size: 20, weight: .light))
-                            .foregroundColor(Color.white)
-                            .multilineTextAlignment(.center)
+//
+//
+//                        Spacer()
+//                            .frame(height: 20)
+//
+//
+//
+//                        Text("Let your friend know")
+//                            .font(.system(size: 20, weight: .light))
+//                            .foregroundColor(Color.white)
+//                            .multilineTextAlignment(.center)
+//
+//                        Text("if their song helped")
+//                            .font(.system(size: 20, weight: .light))
+//                            .foregroundColor(Color.white)
+//                            .multilineTextAlignment(.center)
                         
                     }
           
@@ -214,20 +214,13 @@ struct CH7: View {
                         }
                     }
 
-                    Text("(Shoot out a thank you)")
+                    Text("(Shoot them a thank you)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
-                    
-                    
-                    Text("and alert them to your message in Chat)")
-                        .font(.system(size: 15))
-                        .italic()
-                        .fontWeight(.light)
-                        .foregroundColor(ColorManager .grey1)
-                        .multilineTextAlignment(.center)
+               
             
                     VStack {
                         

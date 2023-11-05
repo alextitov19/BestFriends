@@ -126,12 +126,7 @@ struct FH2: View {
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                        
-                        Text("on the friendship network")
-                            .font(.system(size: 27))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
+                      
              
                         
                         VStack {
