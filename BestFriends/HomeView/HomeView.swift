@@ -200,7 +200,7 @@ struct HomeView: View {
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 35, height: 35)
-                                            .foregroundColor(Color.white)
+                                            .foregroundColor(ColorManager .purple4)
                                             .opacity(0.95)
                                   
                                         
@@ -208,9 +208,9 @@ struct HomeView: View {
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 20, height: 20)
-                                            .foregroundColor(Color.white)
-                                            .glow(color: Color.cyan, radius: 0.3)
-                                            .shadow(color: .cyan, radius: 1, x: 3, y: -0.5)
+                                            .foregroundColor(Color.orange)
+                                            .glow(color: Color.white, radius: 0.3)
+                                            .shadow(color: .white, radius: 1, x: 3, y: -0.5)
                                             .opacity(0.95)
                                     }
                                 })
@@ -255,15 +255,15 @@ struct HomeView: View {
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 35, height: 35)
-                                                .foregroundColor(Color.white)
+                                                .foregroundColor(ColorManager .purple4)
                                                 .opacity(0.95)
                                       
                                             Image(systemName: "heart.fill")
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 20, height: 20)
-                                                .foregroundColor(Color.cyan)
-                                                .glow(color: ColorManager.purple1, radius: 0.3)
+                                                .foregroundColor(Color.purple)
+                                                .glow(color: Color.white, radius: 0.3)
                                                 .shadow(color: .white, radius: 1, x: 3, y: -0.5)
                                                 .opacity(0.95)
                                             
@@ -292,7 +292,7 @@ struct HomeView: View {
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 35, height: 35)
-                                                .foregroundColor(Color.white)
+                                                .foregroundColor(ColorManager .purple4)
                                                 .opacity(0.95)
                                       
                                             
