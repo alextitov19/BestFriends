@@ -200,6 +200,7 @@
 		CF1ECAC92875500100D999F8 /* InfoViewPlanet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */; };
 		CF221EE62AF78FFB005D19B7 /* fistpumpVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF221EE52AF78FFB005D19B7 /* fistpumpVideo.mp4 */; };
 		CF221EE82AF79530005D19B7 /* blowingkissesVid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF221EE72AF79530005D19B7 /* blowingkissesVid.mp4 */; };
+		CF221EEB2AF8D3F7005D19B7 /* beChange.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF221EEA2AF8D3F7005D19B7 /* beChange.mp4 */; };
 		CF24815528F5018B00D47AE3 /* PhotoPop1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24815428F5018B00D47AE3 /* PhotoPop1.swift */; };
 		CF24815728F5060100D47AE3 /* PhotoPop3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24815628F5060100D47AE3 /* PhotoPop3.swift */; };
 		CF24815928F5075600D47AE3 /* PhotoPopInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */; };
@@ -620,6 +621,7 @@
 		CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewPlanet.swift; sourceTree = "<group>"; };
 		CF221EE52AF78FFB005D19B7 /* fistpumpVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = fistpumpVideo.mp4; sourceTree = "<group>"; };
 		CF221EE72AF79530005D19B7 /* blowingkissesVid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blowingkissesVid.mp4; sourceTree = "<group>"; };
+		CF221EEA2AF8D3F7005D19B7 /* beChange.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = beChange.mp4; sourceTree = "<group>"; };
 		CF24815428F5018B00D47AE3 /* PhotoPop1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPop1.swift; sourceTree = "<group>"; };
 		CF24815628F5060100D47AE3 /* PhotoPop3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPop3.swift; sourceTree = "<group>"; };
 		CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopInfo.swift; sourceTree = "<group>"; };
@@ -1541,6 +1543,7 @@
 			children = (
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
 				CF221EE52AF78FFB005D19B7 /* fistpumpVideo.mp4 */,
+				CF221EEA2AF8D3F7005D19B7 /* beChange.mp4 */,
 				CF221EE72AF79530005D19B7 /* blowingkissesVid.mp4 */,
 				CF1773F72A8C0D6800DF5A15 /* Fireworks2.mp4 */,
 				CF1773FB2A8D30D300DF5A15 /* background_7.mp4 */,
@@ -2199,6 +2202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF221EEB2AF8D3F7005D19B7 /* beChange.mp4 in Resources */,
 				CF89412E2A8B4A0B00AFEC39 /* DramaLights2.mp4 in Resources */,
 				CF4A08EE2879577E00ADA9DD /* sky2.mp4 in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,

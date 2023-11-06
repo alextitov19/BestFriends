@@ -108,12 +108,7 @@ struct RR27: View {
                       Color.black
                         .opacity(0.9)
                         .ignoresSafeArea()
-                      
-                      
-//                      Image("FHBackground")
-//                          .ignoresSafeArea()
-//                          .scaledToFit()
-//                          .opacity(0.1)
+
 
                       AdPlayerView(name: "dramaLights")
                           .opacity(0.5)
@@ -121,20 +116,29 @@ struct RR27: View {
                           .blendMode(.screen)
                       
                   } else {
-
-                      Image("CareHeartBalloon 1")
-                          .ignoresSafeArea()
-                          .scaledToFit()
-                          .opacity(0.1)
-                      
-                      Color.black
+                      ColorManager .purple5
                         .opacity(0.9)
                         .ignoresSafeArea()
                       
                       AdPlayerView(name: "sky2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
-                          .opacity(0.6)
+                          .opacity(0.99)
+                      
+                      
+                      AdPlayerView(name: "")
+                          .ignoresSafeArea()
+                          .blendMode(.screen)
+                          .opacity(0.2)
+                      
+//                      Color.black
+//                        .opacity(0.9)
+//                        .ignoresSafeArea()
+//                      
+//                      AdPlayerView(name: "sky2")
+//                          .ignoresSafeArea()
+//                          .blendMode(.screen)
+//                          .opacity(0.6)
              
                       
             }
@@ -217,13 +221,13 @@ struct RR27: View {
                                     .submitLabel(.done)
                                     .onReceive(Just(customMessage)) { _ in limitText(65) }
                                     .padding(.top, 20)
-                                    .padding(.horizontal, 150)
+                                    .padding(.horizontal, 50)
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 10)
                                             .stroke(Color.purple)
                                         //                                                            .background(ColorManager.purple3)
                                             .frame(height: 50)
-                                            .padding(.horizontal, 125)
+                                            .padding(.horizontal, 25)
                                     )
                                     .padding(.bottom, 5)
                             }

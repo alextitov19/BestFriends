@@ -59,13 +59,21 @@ struct SendHomie: View {
             } else {
           
                 
-                Color.black
+                ColorManager .purple5
                   .opacity(0.9)
                   .ignoresSafeArea()
                 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
+                    .opacity(0.99)
+                
+                
+                AdPlayerView(name: "beChange")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.2)
+                
             }
 
 
