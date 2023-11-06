@@ -116,7 +116,7 @@ struct RR27: View {
                           .blendMode(.screen)
                       
                   } else {
-                      ColorManager .purple5
+                      ColorManager .grey4
                         .opacity(0.9)
                         .ignoresSafeArea()
                       
@@ -173,15 +173,16 @@ struct RR27: View {
                             Spacer()
                                 .frame(height: 7)
                             
-                            Text("You do good")
+                            
+                            Text("Tell friend...")
                                 .font(.system(size: 30, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
-                                    .multilineTextAlignment(.center)
-                          
-                            Text("out there, ok!")
+                                .multilineTextAlignment(.center)
+                            
+                            Text("You Got This!!!")
                                 .font(.system(size: 30, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
-                                    .multilineTextAlignment(.center)
+                                .multilineTextAlignment(.center)
                             
                             Spacer()
                                 .frame(height: 10)
@@ -191,10 +192,7 @@ struct RR27: View {
                 }
                 
                 
-                Text("You got this!!!")
-                    .font(.system(size: 30, weight: .light))
-                    .foregroundColor(ColorManager .grey1)
-                    .multilineTextAlignment(.center)
+          
                 
             
                 
