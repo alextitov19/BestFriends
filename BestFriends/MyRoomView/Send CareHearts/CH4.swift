@@ -95,11 +95,7 @@ struct CH4: View {
                         .opacity(0.9)
                         .ignoresSafeArea()
                       
-                      
-//                      Image("FHBackground")
-//                          .ignoresSafeArea()
-//                          .scaledToFit()
-//                          .opacity(0.1)
+
 
                       AdPlayerView(name: "dramaLights")
                           .opacity(0.5)
@@ -108,12 +104,8 @@ struct CH4: View {
                       
                   } else {
 
-                      Image("CareHeartBalloon 1")
-                          .ignoresSafeArea()
-                          .scaledToFit()
-                          .opacity(0.1)
                       
-                      Color.black
+                      ColorManager .darkGrey
                         .opacity(0.9)
                         .ignoresSafeArea()
                       
@@ -171,90 +163,90 @@ struct CH4: View {
                         }
                     }
                     
-                    
-                    HStack {
-                        
-                        ZStack {
-                            Image("comicBubble")
-                                .resizable()
-                                .foregroundColor(Color.white)
-                                .frame(width: 250, height: 170)
-                                .shadow(color: Color.white, radius: 3, x: 3, y: 3)
-                                .opacity(0.5)
-                                .blinking(duration: 3.0)
-                            
-                            VStack {
-                                
-                                
-                                Text("You know that song you listen to")
-                                    .font(.system(size: 9))
-                                    .italic()
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.white)
-                                    .rotationEffect(.degrees(-7))
-                                    .blinking(duration: 3.0)
-                                
-                                Text("over-and-over while lying in bed,")
-                                    .font(.system(size: 9))
-                                    .italic()
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.white)
-                                    .rotationEffect(.degrees(-7))
-                                    .blinking(duration: 3.0)
-                                
-                           
-                                
-                                Text("covers over your head,")
-                                    .font(.system(size: 9))
-                                    .italic()
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.white)
-                                    .rotationEffect(.degrees(-7))
-                                    .blinking(duration: 3.0)
-                                
-                            }
-                        }
-
 //
-                        ZStack {
-                            
-                            
-                            Image("comicBubble")
-                                .resizable()
-                                .foregroundColor(Color.white)
-                                .frame(width: 250, height: 170)
-                                .shadow(color: Color.white, radius: 3, x: 3, y: 3)
-                                .opacity(0.5)
-                                .blinking(duration: 3.0)
-                            
-                            VStack {
-                                
-                                Text("with tear lines down your cheeks,")
-                                    .font(.system(size: 9))
-                                    .italic()
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.white)
-                                    .rotationEffect(.degrees(-7))
-                                    .blinking(duration: 3.0)
-                                
-                                
-
-                                Text("when you're having a truely bad day.")
-                                    .font(.system(size: 9))
-                                    .italic()
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.white)
-                                    .rotationEffect(.degrees(-7))
-                                    .blinking(duration: 3.0)
-                                
-                            }
-                        }
-                    }
+//                    HStack {
+//
+//                        ZStack {
+//                            Image("comicBubble")
+//                                .resizable()
+//                                .foregroundColor(Color.white)
+//                                .frame(width: 250, height: 170)
+//                                .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+//                                .opacity(0.5)
+//                                .blinking(duration: 3.0)
+//
+//                            VStack {
+//
+//
+//                                Text("You know that song you listen to")
+//                                    .font(.system(size: 9))
+//                                    .italic()
+//                                    .fontWeight(.light)
+//                                    .multilineTextAlignment(.center)
+//                                    .foregroundColor(Color.white)
+//                                    .rotationEffect(.degrees(-7))
+//                                    .blinking(duration: 3.0)
+//
+//                                Text("over-and-over while lying in bed,")
+//                                    .font(.system(size: 9))
+//                                    .italic()
+//                                    .fontWeight(.light)
+//                                    .multilineTextAlignment(.center)
+//                                    .foregroundColor(Color.white)
+//                                    .rotationEffect(.degrees(-7))
+//                                    .blinking(duration: 3.0)
+//
+//
+//
+//                                Text("covers over your head,")
+//                                    .font(.system(size: 9))
+//                                    .italic()
+//                                    .fontWeight(.light)
+//                                    .multilineTextAlignment(.center)
+//                                    .foregroundColor(Color.white)
+//                                    .rotationEffect(.degrees(-7))
+//                                    .blinking(duration: 3.0)
+//
+//                            }
+//                        }
+//
+////
+//                        ZStack {
+//
+//
+//                            Image("comicBubble")
+//                                .resizable()
+//                                .foregroundColor(Color.white)
+//                                .frame(width: 250, height: 170)
+//                                .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+//                                .opacity(0.5)
+//                                .blinking(duration: 3.0)
+//
+//                            VStack {
+//
+//                                Text("with tear lines down your cheeks,")
+//                                    .font(.system(size: 9))
+//                                    .italic()
+//                                    .fontWeight(.light)
+//                                    .multilineTextAlignment(.center)
+//                                    .foregroundColor(Color.white)
+//                                    .rotationEffect(.degrees(-7))
+//                                    .blinking(duration: 3.0)
+//
+//
+//
+//                                Text("when you're having a truely bad day.")
+//                                    .font(.system(size: 9))
+//                                    .italic()
+//                                    .fontWeight(.light)
+//                                    .multilineTextAlignment(.center)
+//                                    .foregroundColor(Color.white)
+//                                    .rotationEffect(.degrees(-7))
+//                                    .blinking(duration: 3.0)
+//
+//                            }
+//                        }
+//                    }
                     
                     Text("Send a song")
                         .font(.system(size: 30, weight: .light))
@@ -269,14 +261,14 @@ struct CH4: View {
                     TextField("", text: $customMessage)
                         .placeholder(when: customMessage.isEmpty) {
                             HStack {
-                                Text("Type name of song & message here")
+                                Text("Type name of song you listen to \n'over n' over' on those difficult days")
                                     .foregroundColor(Color.white)
                                     .fontWeight(.thin)
                                 Spacer()
                             }
                         }
                         .foregroundColor(.white)
-                        .font(.system(size: 17))
+                        .font(.system(size: 15))
                         .submitLabel(.done)
                         .onReceive(Just(customMessage)) { _ in limitText(65) }
                         .padding(.top, 20)
@@ -302,6 +294,11 @@ struct CH4: View {
                         Spacer()
                             .frame(height: 20)
                         
+                        
+                        Text("(alert friend to check in Chat)")
+                            .font(.system(size: 15, weight: .light))
+                            .italic()
+                            .foregroundColor(Color.white)
                         
                         HStack {
                             

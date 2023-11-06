@@ -82,20 +82,20 @@ struct HugPushNotification: View {
                                 Image(systemName: "cube.fill")
                                     .resizable()
                                     .foregroundColor(Color.purple)
-                                    .frame(width: 250, height: 200)
+                                    .frame(width: 200, height: 100)
                                     .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                                     .opacity(0.5)
                                     
                                 VStack {
                                    
+                                    Spacer()
+                                        .frame(height: 25)
                                     
-                                    Text("Friend need")
+                                    Text("Send a Hug")
                                         .font(.system(size: 30, weight: .light))
                                         .foregroundColor(Color.white)
                                     
-                                    Text("a hug?")
-                                        .font(.system(size: 30, weight: .light))
-                                        .foregroundColor(Color.white)
+                           
                                     
                                     Spacer()
                                         .frame(height: 10)
@@ -306,40 +306,24 @@ struct HugPushNotification: View {
                                  })
                             
                             
-                            
-                            Spacer()
-                                .frame(height: 30)
-                   
+//
+//                            Spacer()
+//                                .frame(height: 30)
+//
                         }
                         
                 HStack {
-                    Text("")
-                        .fontWeight(.light)
-                        .foregroundColor(Color.black)
-                        .font(.system(size: 13))
-                        .multilineTextAlignment(.center)
-                        .rotationEffect(.degrees(-7))
-                        .opacity(0.85)
+                    Image(systemName: "star.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 2, height: 2)
+                        .foregroundColor(Color.white)
+                        .opacity(0.95)
                     
                     
                     Spacer ()
-                        .frame(width: 190)
+                        .frame(width: 200)
                     
-                    NavigationLink(
-                        destination:  PhotoPopView(user: user, friends: friends),
-                        label: {
-                            
-                            Image("IconPhotoNew")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 50, height: 50)
-//                                    .rotationEffect(.degrees(-7))
-                                .foregroundColor(ColorManager .purple5)
-                                .glow(color: Color.purple, radius: 2)
-                                .opacity(0.6)
-                            
-                        })
-                            
                       
                     VStack {
                         
@@ -348,22 +332,68 @@ struct HugPushNotification: View {
                             Image("comicBubble")
                                 .resizable()
                                 .foregroundColor(Color.white)
-                                .frame(width: 170, height: 130)
+                                .frame(width: 250, height: 150)
                                 .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+                                .rotationEffect(.degrees(-12))
                                 .opacity(0.5)
-//                                .blinking(duration: 3.0)
+                            //                                .blinking(duration: 3.0)
                             
-                            
-                            Text("Send a PhotoPOP \nof a fun time \ntogether")
-                                .fontWeight(.light)
-                                .foregroundColor(Color.white)
-                                .font(.system(size: 11))
-                                .multilineTextAlignment(.center)
-                                .rotationEffect(.degrees(-7))
-                                .opacity(0.85)
-                            
+                            VStack {
+                                NavigationLink(
+                                    destination:  PhotoPopView(user: user, friends: friends),
+                                    label: {
+                                        
+                                        Image("IconPhotoNew")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 50, height: 50)
+                                            .rotationEffect(.degrees(-13))
+                                            .foregroundColor(ColorManager .purple5)
+                                            .glow(color: Color.purple, radius: 2)
+                                            .opacity(0.9)
+                                        
+                                    })
+                                
+                                Text("Send a PhotoPOP of \nfun time together")
+                                    .fontWeight(.light)
+                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 11))
+                                    .multilineTextAlignment(.center)
+                                    .rotationEffect(.degrees(-13))
+                                    .opacity(0.85)
+                                
+                                Spacer()
+                                    .frame(height: 18)
+                                
+                            }
                         }
-                   
+                            
+            VStack {
+                HStack {
+                    
+                    Image("girlwalking250")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 150, height: 150)
+                        .foregroundColor(Color.white)
+                        .opacity(0.95)
+                    
+                    
+                    Spacer()
+                        .frame(width: 190)
+                    
+                    Image(systemName: "star.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 5, height: 5)
+                        .foregroundColor(Color.white)
+                        .opacity(0.95)
+                    
+                    
+                }
+                                
+//                            }
+                        }
                     }
                             
                         }
