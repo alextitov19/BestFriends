@@ -58,8 +58,7 @@ struct SendHomie: View {
                     .blendMode(.screen)
             } else {
           
-                
-                ColorManager .purple5
+                ColorManager .grey4
                   .opacity(0.9)
                   .ignoresSafeArea()
                 
@@ -83,31 +82,33 @@ struct SendHomie: View {
                 
                     VStack {
                         
-//*********************************************** Motion
-//                        GeometryReader { geo in
-//                            HStack(spacing: 10) {
-//                                Image("CoolGuy")
-//                                    .aspectRatio(contentMode: .fit)
-//                                    .blinking(duration: 3.0)
-//
-//                                Image("")
-//                                    .aspectRatio(contentMode: .fit)
-//                                    .frame(width: geo.size.width, alignment: .leading)
-//                            }
-//                            .frame(width: geo.size.width, height: geo.size.height,
-//                                   alignment: animate ? .trailing : .leading)
-//                        }
-//                        .ignoresSafeArea()
-//                        .onAppear {
-//                            withAnimation(animation) {
-//                                animate.toggle()
-//                            }
+
+                        VStack {
+                            
+                            
+                            ZStack {
+                                
+                                Image(systemName: "cube.fill")
+                                    .resizable()
+                                    .foregroundColor(Color.purple)
+                                    .frame(width: 250, height: 200)
+                                    .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                                    .opacity(0.5)
+                                
+                                VStack {
+                                    
+                                    
+                                    Text("Send Fist-pump")
+                                        .font(.system(size: 30, weight: .light))
+                                        .foregroundColor(ColorManager .grey1)
+                                    
+                                    
+                                }
+                            }
+                        }
                         
-        //*********************************************** Motion
-                        
-                        
-                        
-                        
+               Spacer()
+                            .frame(height: 100)
                         
                         
                         
@@ -219,7 +220,7 @@ struct SendHomie: View {
                         
              
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 90)
                         
                         
                         Button(action: {
@@ -248,7 +249,7 @@ struct SendHomie: View {
                             
                             
                                        Spacer()
-                                           .frame(height: 50)
+                                           .frame(height: 20)
                                        
                                        
                                  Button(action: {
@@ -324,6 +325,7 @@ struct SendHomie: View {
                 .font(.system(size: 8))
                 .background(color)
                 .cornerRadius(75)
+                .opacity(0.45)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
         }
     }

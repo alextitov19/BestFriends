@@ -126,32 +126,17 @@ struct RR27: View {
                           .opacity(0.99)
                       
                       
-                      AdPlayerView(name: "")
+                      AdPlayerView(name: "beChange")
                           .ignoresSafeArea()
                           .blendMode(.screen)
                           .opacity(0.2)
-                      
-//                      Color.black
-//                        .opacity(0.9)
-//                        .ignoresSafeArea()
-//                      
-//                      AdPlayerView(name: "sky2")
-//                          .ignoresSafeArea()
-//                          .blendMode(.screen)
-//                          .opacity(0.6)
-             
-                      
+                   
             }
-            
-
-            
-            VStack {
           
-
-                    
-                VStack {
-                    
-             
+    VStack {
+              
+            VStack {
+                  
                     Spacer()
                         .frame(height: 45)
                     
@@ -435,6 +420,7 @@ struct RR27: View {
                 .font(.system(size: 8))
                 .background(color)
                 .cornerRadius(75)
+//                .opacity(0.4)
                 .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
         }
