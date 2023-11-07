@@ -341,7 +341,7 @@ struct RR27: View {
                                 .glow(color: Color.purple, radius: 2)
                                 .opacity(0.6)
                                 .blinking(duration: 3.0)
-                                .alert("This will help. \n\nSometimes we can all be a little scared.", isPresented: $showingAlert) {
+                                .alert("Thanks for sending best wishes to your friend.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
@@ -396,7 +396,7 @@ struct RR27: View {
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "just sent you encouragement", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "You just got some encouragement (check Chat) - TAP", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                         print("Create a encouragement notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)

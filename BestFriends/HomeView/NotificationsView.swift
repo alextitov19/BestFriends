@@ -471,7 +471,7 @@ VStack {
                 
                     
 // *********** Song
-                case "just sent you a song in chat":
+                case "You just got a song (check Chat) - TAP":
                     songActive = true
                     
                 case "Thanks, your song really hit the spot!":
@@ -480,7 +480,7 @@ VStack {
                     
                     
 // *********** Fist-pump
-                case "sent you a fist-pump":
+                case "You just got a fist-pump (TAP)":
                     fistPumpActive = true
 // ************** No received page for fist-pump **************
                     
@@ -495,7 +495,7 @@ VStack {
                     
                     
 // *********** You can do it
-                case "just sent you encouragement":
+                case "You just got some encouragement (check Chat) - TAP":
                     canDoActive = true
                     
                 case "said great - thanks for the encouragement":
@@ -504,7 +504,7 @@ VStack {
                     
                     
 // *********** Congratulations
-                case "just sent you Congratulations. You CRUSHED IT!":
+                case "You just received Congratulations. You CRUSHED IT! (check Chat) - TAP":
                     newCongratulationsActive = true
                     
                 case "Just said thank you for the Congratulations!!!":
