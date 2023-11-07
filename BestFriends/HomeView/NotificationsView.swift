@@ -454,10 +454,10 @@ VStack {
                    
                     
 // *********** Love / Hearts
-                case "just sent you a CareHeart":
+                case "You got a Heart (check Chat) - TAP":
                     heartsActive = true
                     
-                case "Said thanks for thinking about them and sending the Heart!":
+                case "Said thanks for thinking about them and sending Hearts!":
                     thanksHeartActive = true
                 
                 
