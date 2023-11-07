@@ -446,7 +446,7 @@ VStack {
                     
                     // *********** CareHearts  **********************************
 // *********** Blowing Kisses
-                case "is blowing you Kisses. Jump up high and catch them.":
+                case "You got kisses. Jump up high and catch them - TAP":
                     kissesActive = true
                     
                 case "Ahhh! Thanks for the Kisses!":
@@ -463,7 +463,7 @@ VStack {
                 
                     
 // *********** Hugs
-                case "aah! ... you just got a hug - TAP":
+                case "Aah! ... you just got a hug - TAP":
                     hugActive = true
                     
                 case "Ahhh! Thanks for the Hug - it was just what I needed!":
