@@ -463,7 +463,7 @@ VStack {
                 
                     
 // *********** Hugs
-                case "just sent you a hug":
+                case "aah! ... you just got a hug - TAP":
                     hugActive = true
                     
                 case "Ahhh! Thanks for the Hug - it was just what I needed!":
