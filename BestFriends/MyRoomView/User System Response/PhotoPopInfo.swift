@@ -280,7 +280,7 @@ VStack {
                     Image("comicBubble")
                         .resizable()
                         .foregroundColor(Color.purple)
-                        .frame(width: 300, height: 150)
+                        .frame(width: 400, height: 150)
                         .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                     //                    .rotationEffect(.degrees(-10))
                         .opacity(0.95)
@@ -290,7 +290,7 @@ VStack {
                         NavigationLink( destination: RR51(user: user),
                                         label: {
                             VStack {
-                                Text("Ask us Anything")
+                                Text("What's on your mind?")
                                     .font(.system(size: 25))
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
