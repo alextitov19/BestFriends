@@ -71,20 +71,19 @@ struct PhotoPopInfo: View {
 VStack {
 
     Spacer()
-        .frame(height: 23)
+        .frame(height: 50)
     
-    Text("From friends at BFs")
+    Text("From your friends at BFs")
         .fontWeight(.medium)
         .font(.system(size: 30))
         .foregroundColor(.white)
         .glow(color: ColorManager.purple4, radius: 3)
         .opacity(0.15)
 
-    Text("when your friends aren't around")
-        .fontWeight(.medium)
-        .font(.system(size: 20))
+    Text("(when your friends aren't around)")
+        .font(.system(size: 17))
         .italic()
-        .italic()
+        .fontWeight(.light)
         .foregroundColor(.white)
 //        .glow(color: ColorManager.grey1, radius: 3)
         .opacity(0.7)
@@ -406,7 +405,7 @@ VStack {
 //                               .blinking(duration: 4.0)
             
             Spacer()
-                .frame(width: 150)
+                .frame(width: 75)
             
             Button(action: {
                 sessionManager.showLogin()
