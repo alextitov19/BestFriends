@@ -64,7 +64,7 @@ struct RR20: View {
 //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
-        customMessage = "You're great friend because; " + user.firstName + " : " + customMessage;
+        customMessage = "You're my friend because; " + user.firstName + " : " + customMessage;
         
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
@@ -163,20 +163,20 @@ struct RR20: View {
                             Spacer()
                                 .frame(height: 7)
                             
-                            Text("Tell friend")
+                            Text("Let a friend what you like")
                                 .font(.system(size: 25, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                           
-                            Text("what you like most")
+                            Text("best about their friendship")
                                 .font(.system(size: 25, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
-                            
-                            Text("about them...")
-                                .font(.system(size: 25, weight: .light))
-                                .foregroundColor(ColorManager .grey1)
-                                    .multilineTextAlignment(.center)
+//
+//                            Text("about them...")
+//                                .font(.system(size: 25, weight: .light))
+//                                .foregroundColor(ColorManager .grey1)
+//                                    .multilineTextAlignment(.center)
                             
                             Spacer()
                                 .frame(height: 10)
@@ -232,6 +232,14 @@ struct RR20: View {
                         
                         Spacer()
                             .frame(height: 30)
+                   
+                        
+                        Text("(alert friends to message in Chat)")
+                            .font(.system(size: 15, weight: .light))
+                            .italic()
+                            .foregroundColor(ColorManager .grey1)
+                                .multilineTextAlignment(.center)
+                        
                         
                         
                         HStack {
@@ -337,7 +345,7 @@ struct RR20: View {
                                 .glow(color: Color.purple, radius: 2)
                                 .opacity(0.6)
                                 .blinking(duration: 3.0)
-                                .alert("Brilliant! \n\nNice job.", isPresented: $showingAlert) {
+                                .alert("Good for you. \n\nNice job!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
@@ -392,7 +400,7 @@ struct RR20: View {
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "said what they like most about you in Chat. Long-tap it and save it to Keepsake messages", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "said something nice about you in Chat. Long-tap it - save to Keepsake messages. Say something back in Chat", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                         print("Create a affirmation notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)

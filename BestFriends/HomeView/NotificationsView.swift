@@ -511,7 +511,7 @@ VStack {
                     thanksCongratulationsActive = true
                     
                     
-                case "said what they like most about you in Chat. Long-tap it and save it to Keepsake messages":
+                case "said something nice about you in Chat. Long-tap it - save to Keepsake messages. Say something back in Chat":
                     affirmationActive = true
              
                     
