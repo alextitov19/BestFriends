@@ -151,7 +151,7 @@ struct RR20: View {
                         Image(systemName: "cube.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 250, height: 200)
+                            .frame(width: 300, height: 200)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .opacity(0.5)
                        
@@ -168,7 +168,7 @@ struct RR20: View {
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                           
-                            Text("best about their friendship")
+                            Text("most about their friendship")
                                 .font(.system(size: 25, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
@@ -234,7 +234,7 @@ struct RR20: View {
                             .frame(height: 30)
                    
                         
-                        Text("(alert friends to message in Chat)")
+                        Text("(alert friends to your message in Chat)")
                             .font(.system(size: 15, weight: .light))
                             .italic()
                             .foregroundColor(ColorManager .grey1)
