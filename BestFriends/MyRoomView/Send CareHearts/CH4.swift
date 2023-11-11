@@ -138,21 +138,21 @@ struct CH4: View {
                             Image(systemName: "cube.fill")
                                 .resizable()
                                 .foregroundColor(Color.purple)
-                                .frame(width: 250, height: 150)
+                                .frame(width: 330, height: 150)
                                 .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                                .opacity(0.5)
+                                .opacity(0.4)
                             
                             VStack {
                                 
-                                Text("Friend having a")
-                                    .font(.system(size: 30, weight: .light))
+                                Text("Friend having a bad day?")
+                                    .font(.system(size: 27, weight: .light))
                                     .foregroundColor(Color.white)
-                                
-                                Text("really bad day?")
-                                    .font(.system(size: 30, weight: .light))
+//
+                                Text("Send comforting music")
+                                    .font(.system(size: 27, weight: .light))
                                     .foregroundColor(Color.white)
-                                Spacer()
-                                    .frame(height: 10)
+//                                Spacer()
+//                                    .frame(height: 10)
                                 
 //                                Text("Send a song")
 //                                    .font(.system(size: 30, weight: .light))
@@ -247,10 +247,81 @@ struct CH4: View {
 //                            }
 //                        }
 //                    }
+//           ***************************************************
+                    HStack {
+                        
+                        ZStack {
+                            Image("")
+                                .resizable()
+                                .foregroundColor(Color.white)
+                                .frame(width: 0, height: 0)
+                                .rotationEffect(.degrees(-7))
+                                .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+                                .opacity(0.5)
+                                .blinking(duration: 3.0)
+                            
+                            VStack {
+                                
+                                
+    //                            Text("Yep! Jump up")
+    //                                .font(.system(size: 17))
+    //                                .italic()
+    //                                .fontWeight(.light)
+    //                                .multilineTextAlignment(.center)
+    //                                .foregroundColor(Color.white)
+    //                                .rotationEffect(.degrees(-7))
+    //                                .blinking(duration: 3.0)
+
+
+                            }
+                        }
+
+                        
+                        Spacer()
+                            .frame(width: 200)
+
+                        ZStack {
+                            
+                            
+                            Image("comicBubble")
+                                .resizable()
+                                .foregroundColor(Color.white)
+                                .frame(width: 250, height: 100)
+                                .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+                                .rotationEffect(.degrees(-7))
+                                .opacity(0.5)
+                                .blinking(duration: 3.0)
+                            
+                            VStack {
+                                
+                                Text("Found new music?")
+                                    .font(.system(size: 15))
+                                    .italic()
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.white)
+                                    .rotationEffect(.degrees(-7))
+                                    .blinking(duration: 3.0)
+                                
+                                
+
+                                Text("Send to your friend")
+                                    .font(.system(size: 15))
+                                    .italic()
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.white)
+                                    .rotationEffect(.degrees(-7))
+                                    .blinking(duration: 3.0)
+    
+                            }
+                        }
+                    }
                     
-                    Text("Send a song")
-                        .font(.system(size: 30, weight: .light))
-                        .foregroundColor(Color.white)
+//
+//                    Text("Send a song")
+//                        .font(.system(size: 30, weight: .light))
+//                        .foregroundColor(Color.white)
                     //***************************************************
                 
         ZStack {
@@ -266,7 +337,7 @@ struct CH4: View {
                                         .foregroundColor(Color.white)
                                         .fontWeight(.thin)
                                     
-                                    Text("over & over to on one of those days")
+                                    Text("over & over to on a bad day")
                                         .foregroundColor(Color.white)
                                         .fontWeight(.thin)
                                     
@@ -284,13 +355,13 @@ struct CH4: View {
                         .submitLabel(.done)
                         .onReceive(Just(customMessage)) { _ in limitText(65) }
                         .padding(.top, 20)
-                        .padding(.horizontal, 50)
+                        .padding(.horizontal, 70)
                         .overlay(
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.purple)
                             //                                                            .background(ColorManager.purple3)
                                 .frame(height: 50)
-                                .padding(.horizontal, 25)
+                                .padding(.horizontal, 50)
                         )
                         .padding(.bottom, 5)
                     
