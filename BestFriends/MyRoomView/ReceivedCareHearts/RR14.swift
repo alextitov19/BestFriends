@@ -106,7 +106,7 @@ struct RR14: View {
 //                          .scaledToFit()
 //                          .opacity(0.1)
                       
-                      Color.black
+                      Color.purple
                         .opacity(0.9)
                         .ignoresSafeArea()
                       

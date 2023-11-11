@@ -68,7 +68,7 @@ struct SendHomie: View {
                     .opacity(0.99)
                 
                 
-                AdPlayerView(name: "beChange")
+                AdPlayerView(name: "hooray1")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.2)

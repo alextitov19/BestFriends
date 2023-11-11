@@ -113,7 +113,9 @@ struct CH7: View {
                           .ignoresSafeArea()
                           .blendMode(.screen)
              
-                      
+                      AdPlayerView(name: "sadDay1")
+                          .ignoresSafeArea()
+                          .blendMode(.screen)
             }
             
 

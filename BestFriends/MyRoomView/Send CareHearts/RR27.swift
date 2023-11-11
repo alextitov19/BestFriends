@@ -5,21 +5,6 @@
 //  Created by Zhengxu Wang on 9/10/23.
 //
 
-//import SwiftUI
-//
-//struct RR27: View {
-//    var body: some View {
-//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-//    }
-//}
-//
-//struct RR27_Previews: PreviewProvider {
-//    static var previews: some View {
-//        RR27()
-//    }
-//}
-//
-
 
 import Foundation
 import SwiftUI
@@ -126,10 +111,10 @@ struct RR27: View {
                           .opacity(0.99)
                       
                       
-                      AdPlayerView(name: "beChange")
-                          .ignoresSafeArea()
-                          .blendMode(.screen)
-                          .opacity(0.2)
+//                      AdPlayerView(name: "")
+//                          .ignoresSafeArea()
+//                          .blendMode(.screen)
+//                          .opacity(0.2)
                    
             }
           
