@@ -106,10 +106,10 @@ struct SendKisses: View {
                 HStack {
                     
                     ZStack {
-                        Image("comicBubble")
+                        Image("")
                             .resizable()
                             .foregroundColor(Color.white)
-                            .frame(width: 250, height: 170)
+                            .frame(width: 0, height: 0)
                             .rotationEffect(.degrees(-7))
                             .shadow(color: Color.white, radius: 3, x: 3, y: 3)
                             .opacity(0.5)
@@ -118,27 +118,22 @@ struct SendKisses: View {
                         VStack {
                             
                             
-                            Text("Yep! Jump up")
-                                .font(.system(size: 17))
-                                .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .rotationEffect(.degrees(-7))
-                                .blinking(duration: 3.0)
-                            
-                            Text("on a chair...")
-                                .font(.system(size: 17))
-                                .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .rotationEffect(.degrees(-7))
-                                .blinking(duration: 3.0)
+//                            Text("Yep! Jump up")
+//                                .font(.system(size: 17))
+//                                .italic()
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(Color.white)
+//                                .rotationEffect(.degrees(-7))
+//                                .blinking(duration: 3.0)
+
 
                         }
                     }
 
+                    
+                    Spacer()
+                        .frame(width: 200)
 
                     ZStack {
                         
@@ -146,7 +141,7 @@ struct SendKisses: View {
                         Image("comicBubble")
                             .resizable()
                             .foregroundColor(Color.white)
-                            .frame(width: 250, height: 170)
+                            .frame(width: 250, height: 100)
                             .shadow(color: Color.white, radius: 3, x: 3, y: 3)
                             .rotationEffect(.degrees(-7))
                             .opacity(0.5)
@@ -154,7 +149,7 @@ struct SendKisses: View {
                         
                         VStack {
                             
-                            Text("and blow your kiss")
+                            Text("soft as butterfly wings")
                                 .font(.system(size: 15))
                                 .italic()
                                 .fontWeight(.light)
@@ -165,15 +160,15 @@ struct SendKisses: View {
                             
                             
 
-                            Text("towards your friend")
-                                .font(.system(size: 15))
-                                .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .rotationEffect(.degrees(-7))
-                                .blinking(duration: 3.0)
-                            
+//                            Text("towards your friend")
+//                                .font(.system(size: 15))
+//                                .italic()
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(Color.white)
+//                                .rotationEffect(.degrees(-7))
+//                                .blinking(duration: 3.0)
+//
                         }
                     }
                 }
@@ -298,7 +293,7 @@ struct SendKisses: View {
                                 .glow(color: Color.purple, radius: 2)
                                 .opacity(0.6)
                                 .blinking(duration: 3.0)
-                                .alert("Your Kiss is on it's way!", isPresented: $showingAlert) {
+                                .alert("This is the best feeling in the world!", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
