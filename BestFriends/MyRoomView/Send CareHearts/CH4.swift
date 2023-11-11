@@ -193,7 +193,7 @@ struct CH4: View {
                                 .frame(width: 350, height: 200)
                                 .shadow(color: Color.white, radius: 3, x: 3, y: 3)
                                 .rotationEffect(.degrees(-7))
-                                .opacity(0.8)
+                                .opacity(0.9)
                                 .blinking(duration: 5.0)
 
                             VStack {
