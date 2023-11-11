@@ -109,8 +109,8 @@ struct NotificationsView: View {
         @State private var thanksCongratulationsActive = false
         @State private var meetupCouponActive = false
         @State private var fistPumpActive = false
-        @State private var mentalHealthActive = false
-        @State private var thanksMentalActive = false
+        @State private var newMusicActive = false
+//        @State private var thanksNewMusicActive = false
         @State private var canDoActive = false
         @State private var thanksDoActive = false
         @State private var affirmationActive = false
@@ -305,14 +305,14 @@ struct NotificationsView: View {
                     
                     
 //   **************** NOT USING THESE PAGES ***********************
-                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksMentalActive, label: {
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $newMusicActive, label: {
                         EmptyView()
                     })
                     
                     
-                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksMentalActive, label: {
-                        EmptyView()
-                    })
+//                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $thanksNewMusicActive, label: {
+//                        EmptyView()
+//                    })
 //   **********************************************
                     
                     
@@ -530,11 +530,11 @@ VStack {
          
 // ************************ NOT BEING USED YET *****************
 // *********** Well-being
-                case "is watching out for you.":
-                    mentalHealthActive = true
+                case "Just sent you new music (check Chat) - TAP":
+                    newMusicActive = true
                     
-                case "Ahhh! Thanks for the support!":
-                    thanksMentalActive = true
+//                case "Thanks for the song":
+//                    thanksNewMusicActive = true
                     
   
                     
