@@ -261,9 +261,21 @@ struct CH4: View {
                     TextField("", text: $customMessage)
                         .placeholder(when: customMessage.isEmpty) {
                             HStack {
-                                Text("Type name of song you listen to \n'over n' over' on those difficult days")
-                                    .foregroundColor(Color.white)
-                                    .fontWeight(.thin)
+                                VStack {
+                                    Text("Send name of song you listen to")
+                                        .foregroundColor(Color.white)
+                                        .fontWeight(.thin)
+                                    
+                                    Text("over & over to on one of those days")
+                                        .foregroundColor(Color.white)
+                                        .fontWeight(.thin)
+                                    
+                                    Spacer()
+                                        .frame(height: 20)
+                                    
+                                }
+                                
+                                
                                 Spacer()
                             }
                         }
