@@ -108,7 +108,7 @@ struct RR13: View {
                                         Spacer()
                                             .frame(height: 10)
                                         
-                                        Text("You just got a Heart")
+                                        Text("You just got Hearts")
                                             .font(.system(size: 20))
                                             .foregroundColor(Color.white)
                                             .fontWeight(.light)

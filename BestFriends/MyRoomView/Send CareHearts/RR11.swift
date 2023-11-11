@@ -101,7 +101,8 @@ struct RR11: View {
 //                          .scaledToFit()
 //                          .opacity(0.1)
 
-                      AdPlayerView(name: "dramaLights")
+                    AdPlayerView(name: "dramaLights")
+//                      AdPlayerView(name: "sendHearts1")
                           .opacity(0.5)
                           .ignoresSafeArea()
                           .blendMode(.screen)
@@ -117,8 +118,11 @@ struct RR11: View {
                           .ignoresSafeArea()
                           .blendMode(.screen)
                           .opacity(0.6)
-             
-                      
+
+                      AdPlayerView(name: "sendHearts1")
+                          .ignoresSafeArea()
+                          .blendMode(.screen)
+                          .opacity(0.4)
             }
             
 
@@ -130,11 +134,6 @@ struct RR11: View {
                 VStack {
                     
              
-                    Spacer()
-                        .frame(height: 10)
-                    
-
-                  
                         ZStack {
                             
                             Image(systemName: "heart.fill")
@@ -167,8 +166,7 @@ struct RR11: View {
                             }
                         }
 //***********************************************
-                Spacer()
-                    .frame(height: 35)
+             
                 
 //    **********************************
                 
