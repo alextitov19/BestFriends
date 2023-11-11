@@ -70,16 +70,15 @@ struct RR52: View {
                     VStack {
                            
                         HStack {
-//                            NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
-//                                HugCircle (color: Color.cyan, friendName: "Sending \nhugs")
+
+                            
+//                            NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
+//                                HugCircle (color: ColorManager .purple5, friendName: "Custom \n(in beta")
 //                            })
-//                            .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
-//                            .shadow(color: Color.blue, radius: 5, x: -2, y: -2)
-//                            .opacity(0.99)
-//
-//                            Spacer ()
-//                                .frame(width: 20)
-//
+//                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+//                            .shadow(color: ColorManager .purple2, radius: 4, x: 0, y: 4)
+//                            .opacity(0.65)
+//                        }
 //
                             NavigationLink(destination: RR55(user: user, friend: user, friends: friends, groups: groups), label: {
                                 HugCircle (color: Color.cyan, friendName: "Look what \nI found")
@@ -106,15 +105,15 @@ struct RR52: View {
 //                                Spacer ()
 //                                    .frame(width: 200)
 //
-//
+
 //                                NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
-//                                    HugCircle (color: Color.cyan, friendName: "Send \na song")
+//                                    HugCircle (color: Color.cyan, friendName: "")
 //                                })
 //                                .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
 //                                .shadow(color: Color.blue, radius: 5, x: 3, y: -2)
 //                                .opacity(0.9)
-//
-//
+
+
                                         
                                 
                             }
