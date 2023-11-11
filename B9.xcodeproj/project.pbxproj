@@ -859,7 +859,6 @@
 		2D2A186D2AEEEC9400B0C1DF /* RR */ = {
 			isa = PBXGroup;
 			children = (
-				2D2A18782AEEED1000B0C1DF /* RR55.swift */,
 				2D2A187A2AEEED1A00B0C1DF /* RR56.swift */,
 				2D2A187C2AEEED2A00B0C1DF /* RR57.swift */,
 				2D2A187E2AEEED6100B0C1DF /* RR58.swift */,
@@ -1190,6 +1189,7 @@
 			isa = PBXGroup;
 			children = (
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
+				2D2A18782AEEED1000B0C1DF /* RR55.swift */,
 				7A45B8822A86CECF00F5E75B /* ImageSaver.swift */,
 				7AD2642929EDCE020007ACD5 /* NotificationsView.swift */,
 				CF3B42F1293715A800EE1D84 /* SaySomethingNice4.swift */,

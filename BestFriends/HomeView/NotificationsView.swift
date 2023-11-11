@@ -410,27 +410,14 @@ VStack {
                 switch ian.text {
                     
                     
-// *********** What are you doing?
+// *********** What are you doing / PhotoPOP?
                 case "What are you doing? Send PhotoPoP!":
                     photoPopActive = true
                     
-                    
-           
-                    
-                    
-                    // *********** Fight
-// *********** Fight
-                case "Just sent you a message in Chat - please look at it":
-                    fixFightActive = true
-                    
-// *********** Fight (Meetup Coupon)
-                case "You just got a 'Meetup Coupon' in Chat":
-                    meetupCouponActive = true
+                case "Sent you a photoPOP - 'shake' your iPhone":
+                    photoPOPActive = true
                     
                     
-                    
-                    
-            
                     
                     // *********** VIBE **********************************
 // *********** Day Changed
@@ -485,13 +472,7 @@ VStack {
 // ************** No received page for fist-pump **************
                     
                     
-                    
-// *********** Well-being
-                case "is watching out for you.":
-                    mentalHealthActive = true
-                    
-                case "Ahhh! Thanks for the support!":
-                    thanksMentalActive = true
+
                     
                     
 // *********** You can do it
@@ -510,7 +491,9 @@ VStack {
                 case "Just said thank you for the Congratulations!!!":
                     thanksCongratulationsActive = true
                     
+ 
                     
+    // *********** Affirmations
                 case "said something nice about you in Chat. Long-tap it - save to Keepsake messages. Say something back in Chat":
                     affirmationActive = true
              
@@ -521,24 +504,39 @@ VStack {
                     
 //     ******************************** System System System  ******************
                     
-                case "said you hurt their feelings and would like to talk":
-                    thanksAffirmationActive = true
+//                case "said you hurt their feelings and would like to talk":
+//                    thanksAffirmationActive = true
                     
                     
+               
+                    // *********** Fight
+// *********** Fight
+                case "Just sent you a message in Chat - please look at it":
+                    fixFightActive = true
                     
-                    
-                    
-//**************************************************
+// *********** Fight (Meetup Coupon)
+                case "You just got a 'Meetup Coupon' in Chat":
+                    meetupCouponActive = true
                 case "Is redeaming ONE 'TalkCoupon'":
                     talkCouponActive = true
              
           
-            case "Sent you a photoPOP - 'shake' your iPhone":
-                photoPOPActive = true
+                    
+// *********** Say Sorry _____ Not used yet
+                                case "said they are sorry":
+                                    sorryActive = true
                     
                     
-                case "said they are sorry":
-                    sorryActive = true
+         
+// ************************ NOT BEING USED YET *****************
+// *********** Well-being
+                case "is watching out for you.":
+                    mentalHealthActive = true
+                    
+                case "Ahhh! Thanks for the support!":
+                    thanksMentalActive = true
+                    
+  
                     
                 default:
                     return

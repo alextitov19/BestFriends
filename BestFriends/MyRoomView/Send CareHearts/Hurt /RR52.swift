@@ -81,12 +81,12 @@ struct RR52: View {
 //                                .frame(width: 20)
 //
 //
-//                            NavigationLink(destination: RR11(user: user, friend: user, friends: friends, groups: groups), label: {
-//                                HugCircle (color: Color.cyan, friendName: "Thinking \nof you")
-//                            })
-//                            .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
-//                            .shadow(color: Color .cyan, radius: 5, x: 2, y: -2)
-//                            .opacity(0.99)
+                            NavigationLink(destination: RR55(user: user, friend: user, friends: friends, groups: groups), label: {
+                                HugCircle (color: Color.cyan, friendName: "Look what \nI found")
+                            })
+                            .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+                            .shadow(color: Color .cyan, radius: 5, x: 2, y: -2)
+                            .opacity(0.99)
 //
                       
                             
