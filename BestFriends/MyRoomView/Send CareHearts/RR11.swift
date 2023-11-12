@@ -146,20 +146,20 @@ struct RR11: View {
                             VStack {
                                 
                                 
-                                Text("I was just")
+                                Text("Send")
                                     .font(.system(size: 30, weight: .light))
                                     .foregroundColor(Color.white)
                                     .opacity(0.5)
                                 
-                                Text("thinking about")
+                                Text("Hearts")
                                     .font(.system(size: 30, weight: .light))
                                     .foregroundColor(Color.white)
                                     .opacity(0.5)
                                 
-                                Text("you...")
-                                    .font(.system(size: 30, weight: .light))
-                                    .foregroundColor(Color.white)
-                                    .opacity(0.5)
+//                                Text("you...")
+//                                    .font(.system(size: 30, weight: .light))
+//                                    .foregroundColor(Color.white)
+//                                    .opacity(0.5)
                                 
                                 Spacer()
                                     .frame(height: 10)

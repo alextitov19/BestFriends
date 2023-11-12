@@ -201,12 +201,12 @@ struct CH7: View {
                         Image(systemName: "circle.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 350, height: 175)
+                            .frame(width: 350, height: 350)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .opacity(0.5)
                         
                         VStack {
-                            Text("Check chat for song Friend sent you")
+                            Text("Friend sent you a \ncheer-up Song")
                                 .font(.system(size: 19, weight: .light))
                                 .foregroundColor(Color.white)
                                 .multilineTextAlignment(.center)

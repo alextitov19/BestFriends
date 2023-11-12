@@ -133,7 +133,7 @@ struct HugPreload: View {
                         
                         ZStack {
                             NavigationLink(destination: RR27(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.purple, friendName: "YOU CAN \nDO IT!")
+                                HugCircle (color: Color.purple, friendName: "Thumbs \nUp!")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                             .shadow(color: Color.purple, radius: 10, x: -4, y: 4)

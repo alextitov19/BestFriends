@@ -476,10 +476,10 @@ VStack {
                     
                     
 // *********** You can do it
-                case "You just got some encouragement (check Chat) - TAP":
+                case "You just got a big Thumbs-up (check Chat) - TAP":
                     canDoActive = true
                     
-                case "said great - thanks for the encouragement":
+                case "said WOW - thanks for the encouragement!":
                     thanksDoActive = true
                  
                     
