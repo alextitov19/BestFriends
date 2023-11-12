@@ -211,7 +211,7 @@ struct RR14: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("(check chat for message / say thanks)")
+                    Text("(check chat for message - say thanks)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)

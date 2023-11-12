@@ -251,10 +251,7 @@ struct CH4: View {
                                     Text("Send name of song to Chat")
                                         .foregroundColor(Color.white)
                                         .fontWeight(.thin)
-                                    
-//                                    Text("over & over to on a bad day")
-//                                        .foregroundColor(Color.white)
-//                                        .fontWeight(.thin)
+
                                     
                                     Spacer()
                                         .frame(height: 20)
