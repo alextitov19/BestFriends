@@ -111,60 +111,60 @@ struct VirtualHug: View {
                     
                     
                     VStack {
-                        
-                        Text("To get your Hug,")
-                            .font(.system(size: 30))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
-                    
-                        
-                        Text("tap 'heart' \nhold iPhone to your Heart")
-                            .font(.system(size: 15))
-                            .italic()
-                            .foregroundColor(Color.white)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
-                        Spacer ()
-                            .frame(height: 30)
-                        
+
+                   
                         ZStack{
                             Image(systemName: "heart.fill")
                                 .resizable()
                                 .foregroundColor(.purple)
-                                .frame(width: 150, height: 125)
+                                .frame(width: 200, height: 150)
                                 .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                                .opacity(0.7)
+                                .opacity(0.3)
                             
-                            
-                            Text("TAP")
-                                .font(.system(size: 15))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .padding()
-                                .onTapGesture {
-                                    showingHeart = false
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                            VStack {
+                                
+                                
+                                Text("TAP here")
+                                    .font(.system(size: 25))
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.white)
+                                    .opacity(0.5)
+                                    .padding()
+                                    .onTapGesture {
+                                        showingHeart = false
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                                             AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
                                                 AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
                                                     AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
                                                         AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                            showingHeart = true
+                                                            AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                                showingHeart = true
+                                                            }
                                                         }
                                                     }
                                                 }
                                             }
+                                            
                                         }
-                                        
                                     }
-                                }
+                                
+                                
+                                Text("hold iPhone to \nyour Heart")
+                                    .font(.system(size: 15))
+                                    .italic()
+                                    .foregroundColor(Color.white)
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .opacity(0.5)
+                            }
                         }
                         
                         VStack {
+                            
+                            Spacer()
+                                .frame(height: 20)
+                            
                             
                             Text("(say thanks for the Hug)")
                                 .font(.system(size: 15))
