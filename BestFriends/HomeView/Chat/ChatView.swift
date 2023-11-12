@@ -251,6 +251,7 @@ struct ChatView: View {
                             ImagePicker(image: $attachmentImage, sourceType: pickerSourceType)
                                 .onDisappear { sendMessageWithImage() }
                         }
+                      
                     
                     
                     TextField("", text: $messageBody)
@@ -258,6 +259,7 @@ struct ChatView: View {
                             HStack {
                                 Text("Send a message")
                                     .foregroundColor(Color.white)
+                
                                 
                                 Spacer()
                             }
@@ -265,12 +267,16 @@ struct ChatView: View {
                         .font(.system(size: 25))
                         .submitLabel(.send)
                         .onSubmit { sendMessage() }
-                        .padding()
-                        .overlay(RoundedRectangle(cornerRadius: 20)
+                        .padding(.horizontal, 5)
+                        .background(ColorManager.grey4)
+                        .cornerRadius(20)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
                             .stroke(Color.gray)
-                            .frame(height: 40)
+                            .frame(height: 30)
                             .padding(.horizontal, 5)
                         )
+                        
                     
                   
                     
