@@ -312,7 +312,7 @@ struct RR13: View {
                                 
                                 NavigationLink( destination:  RR11(user: user, friend: user, friends: friends, groups: groups),
                                                 label: {
-                                    Text("Send a Heart back")
+                                    Text("Send a Hearts back")
                                         .fontWeight(.bold)
                                         .frame(width: 200, height: 40)
                                         .foregroundColor(Color.black)

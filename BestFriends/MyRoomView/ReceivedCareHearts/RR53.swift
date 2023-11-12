@@ -102,7 +102,7 @@ struct RR53: View {
                             HStack {
                            
                                 NavigationLink(destination: CH9(user: user, friends: friends), label: {
-                                    HugCircle (color: Color.cyan, friendName: "You got \na Kiss :)")
+                                    HugCircle (color: Color.cyan, friendName: "You got \nKisses")
                                 })
                                 .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
                                 .shadow(color: Color .blue, radius: 5, x: -3, y: -2)
