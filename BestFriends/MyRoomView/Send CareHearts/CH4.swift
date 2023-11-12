@@ -138,28 +138,22 @@ struct CH4: View {
                             Image(systemName: "cube.fill")
                                 .resizable()
                                 .foregroundColor(Color.purple)
-                                .frame(width: 330, height: 150)
+                                .frame(width: 240, height: 170)
                                 .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                                 .opacity(0.4)
                             
                             VStack {
                                 
-                                Text("Friend having a bad day?")
+                                Text("Friend having")
                                     .font(.system(size: 27, weight: .light))
                                     .foregroundColor(Color.white)
                                     .opacity(0.5)
 //
-                                Text("Send comforting music")
+                                Text("a bad day?")
                                     .font(.system(size: 27, weight: .light))
                                     .foregroundColor(Color.white)
                                     .opacity(0.5)
                                 
-//                                Spacer()
-//                                    .frame(height: 10)
-                                
-//                                Text("Send a song")
-//                                    .font(.system(size: 30, weight: .light))
-//                                    .foregroundColor(Color.white)
                                
                             }
                         
