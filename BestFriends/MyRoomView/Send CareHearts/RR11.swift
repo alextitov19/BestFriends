@@ -149,14 +149,17 @@ struct RR11: View {
                                 Text("I was just")
                                     .font(.system(size: 30, weight: .light))
                                     .foregroundColor(Color.white)
+                                    .opacity(0.5)
                                 
                                 Text("thinking about")
                                     .font(.system(size: 30, weight: .light))
                                     .foregroundColor(Color.white)
+                                    .opacity(0.5)
                                 
                                 Text("you...")
                                     .font(.system(size: 30, weight: .light))
                                     .foregroundColor(Color.white)
+                                    .opacity(0.5)
                                 
                                 Spacer()
                                     .frame(height: 10)

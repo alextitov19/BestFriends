@@ -101,6 +101,7 @@ struct SendHomie: View {
                                     Text("Send Fist-pump")
                                         .font(.system(size: 30, weight: .light))
                                         .foregroundColor(ColorManager .grey1)
+                                        .opacity(0.5)
                                     
                                     
                                 }

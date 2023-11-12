@@ -147,10 +147,13 @@ struct CH4: View {
                                 Text("Friend having a bad day?")
                                     .font(.system(size: 27, weight: .light))
                                     .foregroundColor(Color.white)
+                                    .opacity(0.5)
 //
                                 Text("Send comforting music")
                                     .font(.system(size: 27, weight: .light))
                                     .foregroundColor(Color.white)
+                                    .opacity(0.5)
+                                
 //                                Spacer()
 //                                    .frame(height: 10)
                                 

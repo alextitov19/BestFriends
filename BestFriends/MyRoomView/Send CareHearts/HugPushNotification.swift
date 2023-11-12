@@ -94,7 +94,7 @@ struct HugPushNotification: View {
                                     Text("Send a Hug")
                                         .font(.system(size: 30, weight: .light))
                                         .foregroundColor(Color.white)
-                                    
+                                        .opacity(0.5)
                            
                                     
                                     Spacer()

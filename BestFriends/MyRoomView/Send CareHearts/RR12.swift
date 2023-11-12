@@ -198,16 +198,19 @@ struct RR12: View {
                                 .font(.system(size: 20, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
+                                    .opacity(0.7)
                             
                             Text("CONGRATULATIONS")
                                 .font(.system(size: 28, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
+                                    .opacity(0.7)
                             
                             Text("You did it!")
                                 .font(.system(size: 25, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
+                                    .opacity(0.7)
 
                             
                             Spacer()

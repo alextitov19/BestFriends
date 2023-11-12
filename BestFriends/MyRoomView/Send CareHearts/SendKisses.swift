@@ -94,6 +94,7 @@ struct SendKisses: View {
                                 Text("Blowing Kisses")
                                     .font(.system(size: 30, weight: .light))
                                     .foregroundColor(ColorManager .grey1)
+                                    .opacity(0.5)
                                 
                              
                             }

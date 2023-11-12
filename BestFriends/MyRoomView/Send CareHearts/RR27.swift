@@ -148,11 +148,13 @@ struct RR27: View {
                                 .font(.system(size: 30, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                 .multilineTextAlignment(.center)
+                                .opacity(0.5)
                             
                             Text("You Got This!!!")
                                 .font(.system(size: 30, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                 .multilineTextAlignment(.center)
+                                .opacity(0.5)
                             
                             Spacer()
                                 .frame(height: 10)
