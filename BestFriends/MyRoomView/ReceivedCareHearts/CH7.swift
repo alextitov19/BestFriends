@@ -216,7 +216,7 @@ struct CH7: View {
                         }
                     }
 
-                    Text("(Shoot them a thank you)")
+                    Text("(Check Chat - shoot'm a thank you)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
