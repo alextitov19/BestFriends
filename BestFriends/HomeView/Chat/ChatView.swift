@@ -268,7 +268,7 @@ struct ChatView: View {
                         .submitLabel(.send)
                         .onSubmit { sendMessage() }
                         .padding(.horizontal, 5)
-                        .background(ColorManager.grey4)
+                        .background(ColorManager.grey2)
                         .cornerRadius(20)
                         .overlay(
                             RoundedRectangle(cornerRadius: 20)
