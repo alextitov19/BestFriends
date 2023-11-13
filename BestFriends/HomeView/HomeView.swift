@@ -95,10 +95,7 @@ struct HomeView: View {
                                 
                            
                             }
-                            
-                            Spacer()
-                                .frame(width: 20)
-                            
+                        
                             ZStack {
                                 
                                 Image(systemName: "bell")
@@ -131,35 +128,17 @@ struct HomeView: View {
                                  
                             }
                            
-                            Spacer()
-                                .frame(width: 15)
-                            NavigationLink(
-                                destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
-                                label: {
-                                    
-                                    Image("IconPhotoNew")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 35, height: 35)
-                                        .rotationEffect(.degrees(-7))
-                                        .foregroundColor(ColorManager .purple5)
-                                        .glow(color: Color.purple, radius: 2)
-                                        .opacity(0.9)
-                                    
-                                    
-                                })
-                            
                         
-                            
+                        
                             Spacer()
-                                .frame(width: 15)
+                                .frame(width: 120)
                             
                             NavigationLink(destination: RR40Info2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                 label: {
                                     Image(systemName: "info.circle")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 27, height: 27)
+                                        .frame(width: 30, height: 30)
                                         .foregroundColor(ColorManager .purple3)
 //                                        .glow(color: Color.purple, radius: 2)
                                         .opacity(0.9)
@@ -169,7 +148,7 @@ struct HomeView: View {
                             
                             
                             Spacer()
-                                .frame(width: 100)
+                                .frame(width: 120)
                             
                             NavigationLink(
                                 destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
@@ -196,7 +175,7 @@ struct HomeView: View {
                                 label: {
                                     
                                     ZStack {
-                                        Image(systemName: "circle")
+                                        Image(systemName: "circle.fill")
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 35, height: 35)
@@ -281,33 +260,42 @@ struct HomeView: View {
                         
                         VStack {
                             
-                            ZStack {
+                            HStack {
                                 
-
                                 
-                                NavigationLink(
-                                    destination:  RR33(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                                    label: {
-                                        
-                                        ZStack {
-//                                            Image(systemName: "circle")
-//                                                .resizable()
-//                                                .scaledToFit()
-//                                                .frame(width: 35, height: 35)
-//                                                .foregroundColor(Color.orange)
-//                                                .opacity(0.95)
-                                      
+                                    
+                                    NavigationLink(
+                                        destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
+                                        label: {
                                             
-                                            Image("IconFightNew")
+                                            Image("IconPhotoNew")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 40, height: 40)
-                                                .foregroundColor(Color.white)
-                                                .opacity(0.95)
-                                        }
-                                    })
+                                                .frame(width: 35, height: 35)
+                                                .rotationEffect(.degrees(-7))
+                                                .foregroundColor(ColorManager .purple5)
+                                                .glow(color: Color.purple, radius: 2)
+                                                .opacity(0.9)
+                                            
+                                            
+                                        })
+                                    
+                                    NavigationLink(
+                                        destination:  RR33(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                                        label: {
+                                            
+                                            ZStack {
+                                           
+                                                Image("IconFightNew")
+                                                    .resizable()
+                                                    .scaledToFit()
+                                                    .frame(width: 40, height: 40)
+                                                    .foregroundColor(Color.white)
+                                                    .opacity(0.95)
+                                            }
+                                        })
+                                }
                             }
-                        }
                         
                         
                         
