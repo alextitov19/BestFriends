@@ -97,7 +97,7 @@ struct HomeView: View {
                             }
                             
                             Spacer()
-                                .frame(width: 137)
+                                .frame(width: 20)
                             
                             ZStack {
                                 
@@ -133,23 +133,6 @@ struct HomeView: View {
                            
                             Spacer()
                                 .frame(width: 15)
-                            
-                            
-                            NavigationLink(destination: RR40Info2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                                label: {
-                                    Image(systemName: "info.circle")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 27, height: 27)
-                                        .foregroundColor(ColorManager .purple3)
-//                                        .glow(color: Color.purple, radius: 2)
-                                        .opacity(0.9)
-                                })
-                            
-                            Spacer()
-                                .frame(width: 15)
-                            
-                            
                             NavigationLink(
                                 destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
                                 label: {
@@ -165,6 +148,23 @@ struct HomeView: View {
                                     
                                     
                                 })
+                            
+                        
+                            
+                            Spacer()
+                                .frame(width: 15)
+                            
+                            NavigationLink(destination: RR40Info2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                                label: {
+                                    Image(systemName: "info.circle")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 27, height: 27)
+                                        .foregroundColor(ColorManager .purple3)
+//                                        .glow(color: Color.purple, radius: 2)
+                                        .opacity(0.9)
+                                })
+                        
                             
                             
                             
@@ -251,7 +251,7 @@ struct HomeView: View {
                                     label: {
                                         
                                         ZStack {
-                                            Image(systemName: "circle")
+                                            Image(systemName: "circle.fill")
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 35, height: 35)
@@ -283,23 +283,25 @@ struct HomeView: View {
                             
                             ZStack {
                                 
+
+                                
                                 NavigationLink(
-                                    destination:  RR52(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
+                                    destination:  RR33(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                     label: {
                                         
                                         ZStack {
-                                            Image(systemName: "circle")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 35, height: 35)
-                                                .foregroundColor(Color.orange)
-                                                .opacity(0.95)
+//                                            Image(systemName: "circle")
+//                                                .resizable()
+//                                                .scaledToFit()
+//                                                .frame(width: 35, height: 35)
+//                                                .foregroundColor(Color.orange)
+//                                                .opacity(0.95)
                                       
                                             
                                             Image("IconFightNew")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 30, height: 30)
+                                                .frame(width: 40, height: 40)
                                                 .foregroundColor(Color.white)
                                                 .opacity(0.95)
                                         }

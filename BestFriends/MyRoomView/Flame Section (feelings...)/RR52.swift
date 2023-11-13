@@ -44,19 +44,19 @@ struct RR52: View {
                 
                 VStack {
                     
-                    ZStack {
-                        
-                        ZStack {
-                            NavigationLink(destination: RR20(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.green, friendName: "Friends")
-                            })
-                            .offset(x: showItems ? 0 : 0, y: showItems ? 500: 0)
-                            .shadow(color: Color.green, radius: 5, x: 0, y: -2)
-                            //                                .glow(color: Color.green, radius: 1)
-                            .opacity(0.9)
-                            
-                        }
-                    }
+//                    ZStack {
+//                        
+//                        ZStack {
+//                            NavigationLink(destination: RR20(user: user, friend: user, friends: friends, groups: groups), label: {
+//                                HugCircle (color: Color.green, friendName: "Friends")
+//                            })
+//                            .offset(x: showItems ? 0 : 0, y: showItems ? 500: 0)
+//                            .shadow(color: Color.green, radius: 5, x: 0, y: -2)
+//                            //                                .glow(color: Color.green, radius: 1)
+//                            .opacity(0.9)
+//                            
+//                        }
+//                    }
                     
                     Spacer()
                         .frame(height: 20)
