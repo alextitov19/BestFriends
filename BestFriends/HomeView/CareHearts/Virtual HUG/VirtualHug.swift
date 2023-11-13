@@ -117,7 +117,7 @@ struct VirtualHug: View {
                             Image(systemName: "heart.fill")
                                 .resizable()
                                 .foregroundColor(.purple)
-                                .frame(width: 200, height: 150)
+                                .frame(width: 300, height: 200)
                                 .shadow(color: .blue, radius: 65, x: 30, y: 50)
                                 .opacity(0.3)
                             
