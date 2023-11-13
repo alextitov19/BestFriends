@@ -163,12 +163,12 @@ struct RR20: View {
                             Spacer()
                                 .frame(height: 7)
                             
-                            Text("Let a friend what you like")
+                            Text("Let friends know what you like")
                                 .font(.system(size: 25, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                           
-                            Text("most about their friendship")
+                            Text("most about your friendship")
                                 .font(.system(size: 25, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
