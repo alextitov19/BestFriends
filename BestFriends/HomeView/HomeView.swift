@@ -226,12 +226,7 @@ struct HomeView: View {
 //                                            .blinking(duration: 4.0)
                                             .opacity(0.8)
                                         
-//                                        Text("What's \nUp!")
-//                                            .font(.system(size: 11))
-//                                            .foregroundColor(ColorManager .grey2)
-//                                            .fontWeight(.light)
-//                                            .opacity(0.9)
-//                                            .multilineTextAlignment(.center)
+
                                     }
                                 })
                             
@@ -251,7 +246,7 @@ struct HomeView: View {
                                                 .frame(width: 35, height: 35)
                                                 .foregroundColor(ColorManager .purple3)
                                                 .opacity(0.95)
-                                      
+
                                             Image(systemName: "heart.fill")
                                                 .resizable()
                                                 .scaledToFit()
@@ -261,12 +256,7 @@ struct HomeView: View {
                                                 .shadow(color: .white, radius: 1, x: 3, y: -0.5)
                                                 .opacity(0.95)
                                             
-//                                            Image("iconHeart10")
-//                                                .resizable()
-//                                                .scaledToFit()
-//                                                .frame(width: 30, height: 30)
-//                                                .foregroundColor(ColorManager .purple5)
-//                                                .opacity(0.95)
+
                                         }
                                     })
                             }
