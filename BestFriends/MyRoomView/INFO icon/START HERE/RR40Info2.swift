@@ -73,63 +73,37 @@ VStack {
      
      
         
-    VStack {
-     
-   
-HStack {
-                    
+VStack {
+
+        Spacer ()
+            .frame(width: 120)
+        
     ZStack {
         
-  
-        HStack {
-            
-            Spacer ()
-                .frame(width: 120)
-         
-            Image("iconThumbUp")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 35, height: 35)
-                .rotationEffect(.degrees(-30))
-                .foregroundColor(ColorManager .purple5)
-                .glow(color: Color.purple, radius: 2)
-                .opacity(0.9)
-            
-                    VStack {
-                        
-                        Text("Leave Notifications 'ON'")
-                            .font(.system(size: 17))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.cyan)
-                            .rotationEffect(.degrees(-10))
-                        
-                        Text("for real-time friendships")
-                            .font(.system(size: 13))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.leading)
-                            .rotationEffect(.degrees(-10))
-                            .foregroundColor(Color.white)
-                        
-                        
-                        Spacer()
-                            .frame(height: 20)
-                    }
-                }
-            }
-        }
-    
- 
-//       ******************  My Vibe ******************************
+        Image(systemName: "cube.fill")
+            .resizable()
+            .foregroundColor(Color.purple)
+            .frame(width: 350, height: 120)
+            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+            .opacity(0.5)
       
-//        Text("BF's Features")
-//            .fontWeight(.medium)
-//            .font(.system(size: 50))
-//            .foregroundColor(.white)
-//            .glow(color: ColorManager.purple4, radius: 3)
-//            .opacity(0.15)
+        VStack {
+            
+            
+            Text("Building reselient friendships")
+                .font(.system(size: 25, weight: .light))
+                .foregroundColor(ColorManager .grey1)
+                .opacity(0.5)
+          
+            Text("sharing smiles")
+                .font(.system(size: 40, weight: .light))
+                .foregroundColor(ColorManager .grey1)
+                .opacity(0.7)
+            
+        }
+    }
 
-        
+//  ************************************************************
         HStack {
 
                 Image("")
@@ -169,23 +143,21 @@ HStack {
                 
                 VStack {
                     
-                    Text("My Vibe")
+                    Text("Sharing 'my Vibe'")
                         .font(.system(size: 25))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.cyan)
                     
-                    Text("planet atmosphere")
-                        .font(.system(size: 14))
+                    Text("with BFFs")
+                        .font(.system(size: 25))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(Color.cyan)
                     
-                    Text("matches vibe")
-                        .font(.system(size: 14))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
+             
+                    
+              
 
                     
                 }
@@ -210,12 +182,24 @@ HStack {
               
               NavigationLink( destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
                               label: {
-                  Image(systemName: "heart")
-                      .resizable()
-                      .scaledToFit()
-                      .frame(width: 55, height: 55)
-                      .foregroundColor(Color.blue)
-                      .opacity(0.95)
+                  ZStack {
+                      Image(systemName: "circle.fill")
+                          .resizable()
+                          .scaledToFit()
+                          .frame(width: 65, height: 65)
+                          .foregroundColor(Color.cyan)
+                          .opacity(0.95)
+                
+                      
+                      Image(systemName: "heart.fill")
+                          .resizable()
+                          .scaledToFit()
+                          .frame(width: 40, height: 40)
+                          .foregroundColor(Color.purple)
+                          .glow(color: Color.white, radius: 0.3)
+                          .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                          .opacity(0.95)
+                  }
               })
           }
           
@@ -232,14 +216,14 @@ HStack {
               VStack {
                   
                   Text("CareHearts")
-                      .font(.system(size: 25))
+                      .font(.system(size: 27))
                       .fontWeight(.light)
                       .multilineTextAlignment(.center)
                       .foregroundColor(Color.cyan)
                   
              
 
-                  Text("sharing emotional support")
+                  Text("sharing life's moments")
                       .font(.system(size: 14))
                       .fontWeight(.light)
                       .multilineTextAlignment(.center)
@@ -289,7 +273,7 @@ HStack {
                 
                 VStack {
                     
-                    Text("PhotoPOP")
+                    Text("Sharing Images")
                         .font(.system(size: 25))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
@@ -306,24 +290,41 @@ HStack {
          
                     }
         
-        VStack {
+        HStack {
             
+            Spacer ()
+                .frame(width: 120)
          
-            NavigationLink(destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                       label: {
-                            Text("Safe n' Sound ->")
-                                .fontWeight(.thin)
-                                .foregroundColor(Color.white)
-                                .frame(width: 220, height: 40)
-                                .font(.system(size: 30))
-                                .background(ColorManager .grey2)
-                                .opacity(0.95)
-                                .cornerRadius(10)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                        })
+            Image("iconThumbUp")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 35, height: 35)
+                .rotationEffect(.degrees(-30))
+                .foregroundColor(ColorManager .purple5)
+                .glow(color: Color.purple, radius: 2)
+                .opacity(0.9)
+            
+                    VStack {
+                        
+                        Text("Leave Notifications 'ON'")
+                            .font(.system(size: 17))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.cyan)
+                            .rotationEffect(.degrees(-10))
+                        
+                        Text("for real-time friendships")
+                            .font(.system(size: 13))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.leading)
+                            .rotationEffect(.degrees(-10))
+                            .foregroundColor(Color.white)
+                        
+                        
+                        Spacer()
+                            .frame(height: 20)
                     }
-        
+                }
         
         
         VStack {

@@ -865,7 +865,6 @@
 		2D2A186D2AEEEC9400B0C1DF /* RR */ = {
 			isa = PBXGroup;
 			children = (
-				2D2A187C2AEEED2A00B0C1DF /* RR57.swift */,
 				2D2A187E2AEEED6100B0C1DF /* RR58.swift */,
 				2D2A18802AEEED6E00B0C1DF /* RR59.swift */,
 			);
@@ -1665,6 +1664,7 @@
 		CF6C5B0B2A860A7300EC4915 /* My VIBE */ = {
 			isa = PBXGroup;
 			children = (
+				2D2A187C2AEEED2A00B0C1DF /* RR57.swift */,
 				D1BD9FD32ACBB4E100196448 /* RR32.swift */,
 				CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */,
 				CF6C5B0F2A860E8D00EC4915 /* Anxiety Attack */,

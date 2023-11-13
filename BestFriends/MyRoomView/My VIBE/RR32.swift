@@ -11,8 +11,6 @@ import Combine
 import SwiftUI
 import ConfettiSwiftUI
 import AVKit
-
-
 struct RR32: View {
     
     @EnvironmentObject var sessionManager: SessionManager
@@ -20,11 +18,6 @@ struct RR32: View {
     let user: User
     let atmosphere: Atmosphere
     let friends: [User]
-    
-    
-    //    let user: User
-    //    let atmosphere: Atmosphere
-    //    let friends: [User]
     let friendAtmospheres: [Atmosphere]
     let groups: [Group]
     
@@ -84,20 +77,22 @@ VStack {
             Image(systemName: "cube.fill")
                 .resizable()
                 .foregroundColor(Color.purple)
-                .frame(width: 280, height: 150)
+                .frame(width: 260, height: 90)
                 .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                .opacity(0.5)
+                .opacity(0.3)
           
             VStack {
        
                 
-                Text("Requesting support")
-                    .font(.system(size: 30, weight: .light))
+                Text("Setting my")
+                    .font(.system(size: 27, weight: .light))
                     .foregroundColor(ColorManager .grey1)
+                    .opacity(0.5)
                 
-                Text("from Friends")
-                    .font(.system(size: 30, weight: .light))
+                Text("atmosphere Vibe")
+                    .font(.system(size: 27, weight: .light))
                     .foregroundColor(ColorManager .grey1)
+                    .opacity(0.5)
                 
                 Spacer ()
                     .frame(height: 5)
@@ -199,8 +194,8 @@ VStack {
                             //                                    showingAlert = true
                         }) {
 
-                            Text("Big \nEvent \n(TAP)")
-                                .font(.system(size: 15))
+                            Text("Purple \natmosphere \n(TAP)")
+                                .font(.system(size: 12))
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 75, height: 75, alignment: .center)
@@ -220,7 +215,7 @@ VStack {
                         Image("comicBubble")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 225, height: 100)
+                            .frame(width: 275, height: 110)
                             .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
                             .opacity(0.95)
 //                            .blinking(duration: 3.0)
@@ -228,17 +223,17 @@ VStack {
                         VStack {
                         
                             
-                            Text("Wish me Luck")
+                            Text("Can I get a Good-Luck")
                                 .font(.system(size: 17))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
-//
-//                            Text("something big")
-//                                .font(.system(size: 17))
-//                                .fontWeight(.light)
-//                                .multilineTextAlignment(.center)
-//                                .foregroundColor(Color.white)
+
+                            Text("or Congratulations!")
+                                .font(.system(size: 17))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
 
                         }
                     }
@@ -271,8 +266,8 @@ VStack {
                         mood = 1
                         //                    showingAlert = true
                     }) {
-                        Text("Bad \nDay")
-                            .font(.system(size: 15))
+                        Text("Cyan \natmosphere \n(TAP)")
+                            .font(.system(size: 12))
                             .foregroundColor(Color.black)
                     }
                     .frame(width: 70, height: 70, alignment: .center)
@@ -295,7 +290,7 @@ VStack {
                         Image("comicBubble")
                             .resizable()
                             .foregroundColor(Color.cyan)
-                            .frame(width: 220, height: 100)
+                            .frame(width: 250, height: 120)
                             .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
                             .opacity(0.95)
 //                            .blinking(duration: 5.0)
@@ -304,13 +299,13 @@ VStack {
                             
                         
                             
-                            Text("Please send")
+                            Text("I'm having a bad day")
                                 .font(.system(size: 17))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
                             
-                            Text("CareHearts")
+                            Text("send CareHearts")
                                 .font(.system(size: 17))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
@@ -342,8 +337,8 @@ VStack {
                     mood = 6
                     //                    showingAlert = true
                 }) {
-                    Text("Let's \nTalk")
-                        .font(.system(size: 15))
+                    Text("Orange \natmosphere \n(TAP)")
+                        .font(.system(size: 12))
                         .foregroundColor(Color.black)
                 }
                 .frame(width: 70, height: 70, alignment: .center)
@@ -366,7 +361,7 @@ VStack {
                     Image("comicBubble")
                         .resizable()
                         .foregroundColor(Color.cyan)
-                        .frame(width: 240, height: 80)
+                        .frame(width: 240, height: 100)
                         .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
                         .opacity(0.95)
 //                            .blinking(duration: 5.0)
