@@ -1,17 +1,16 @@
 //
-//  HugPreload.swift
+//  RR56.swift
 //  BestFriends
 //
-//  Created by Social Tech on 10/25/22.
+//  Created by Zhengxu Wang on 10/29/23.
 //
-
 
 
 import Foundation
 import SwiftUI
 import AVKit
 
-struct HugPreload: View {
+struct RR56: View {
     
     let user: User
     let friends: [User]
@@ -52,8 +51,8 @@ struct HugPreload: View {
                     
                         HStack {
                             VStack {
-                                NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
-                                    HugCircle (color: Color.cyan, friendName: "Blowing \nKisses")
+                                NavigationLink(destination: CH9(user: user, friends: friends), label: {
+                                    HugCircle (color: Color.cyan, friendName: "Catching \nKisses")
                                 })
                                 .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
                                 .shadow(color: Color.blue, radius: 5, x: -2, y: -2)
@@ -64,8 +63,8 @@ struct HugPreload: View {
                             Spacer()
                                 .frame(width: 35)
                             
-                            NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.cyan, friendName: "Songs")
+                            NavigationLink(destination: CH7(user: user, friend: user, friends: friends, groups: groups), label: {
+                                HugCircle (color: Color.cyan, friendName: "Song \nfor you")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
@@ -78,8 +77,8 @@ struct HugPreload: View {
                     VStack {
                            
                         HStack {
-                            NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
-                                HugCircle (color: Color.cyan, friendName: "Sending \nhugs")
+                            NavigationLink(destination: VirtualHug(user: user, friends: friends), label: {
+                                HugCircle (color: Color.cyan, friendName: "Grabbing \nHugs")
                             })
                             .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
                             .shadow(color: Color.blue, radius: 5, x: -2, y: -2)
@@ -89,8 +88,8 @@ struct HugPreload: View {
                                 .frame(width: 200)
                             
                             
-                            NavigationLink(destination: RR11(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.pink, friendName: "Thinking \nof you")
+                            NavigationLink(destination: RR13(user: user, friends: friends, groups: groups), label: {
+                                HugCircle (color: Color.pink, friendName: "You got \nHearts")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .pink, radius: 5, x: 2, y: -2)
@@ -107,7 +106,7 @@ struct HugPreload: View {
                     HStack {
                         
                         ZStack {
-                            NavigationLink(destination: RR27(user: user, friend: user, friends: friends, groups: groups), label: {
+                            NavigationLink(destination: RR29(user: user, friends: friends), label: {
                                 HugCircle (color: Color.purple, friendName: "Thumbs \nUp!")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
@@ -125,7 +124,7 @@ struct HugPreload: View {
                         ZStack {
                             
                             
-                            NavigationLink(destination: RR20(user: user, friend: user, friends: friends, groups: groups), label: {
+                            NavigationLink(destination: EmptyView(), label: {
                                 HugCircle (color: Color.green, friendName: "Friends")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
@@ -137,8 +136,8 @@ struct HugPreload: View {
                    
                     HStack {
                         VStack {
-                            NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
-                                HugCircle (color: Color.purple, friendName: "Send \nFist-pump")
+                            NavigationLink(destination: RR54(user: user, friends: friends), label: {
+                                HugCircle (color: Color.purple, friendName: "You got a \nFist-pump")
                             })
                             .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
                             .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
@@ -149,8 +148,8 @@ struct HugPreload: View {
                         Spacer()
                             .frame(width: 35)
                         
-                        NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
-                            HugCircle (color: ColorManager .purple5, friendName: "Send \nCongrats!")
+                        NavigationLink(destination: RR14(user: user, friend: user, friends: friends, groups: groups), label: {
+                            HugCircle (color: ColorManager .purple5, friendName: "You got \nCongrats!")
                         })
                         .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                         .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
@@ -171,8 +170,8 @@ struct HugPreload: View {
                                 .frame(width: 300)
                             
                             ZStack {
-                                NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
-                                    HugCircle (color: ColorManager .grey1, friendName: "Build \nyour own \n'in-beta'")
+                                NavigationLink(destination: EmptyView(), label: {
+                                    HugCircle (color: ColorManager .grey1, friendName: "Special \nCareHeart")
                                 })
                                 .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
                                 .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
@@ -185,63 +184,65 @@ struct HugPreload: View {
                         }
                     
                                 
-                        ZStack {
+                        
+                ZStack {
+                    
+                    //*********************************************** Motion
+                    GeometryReader { geo in
+                        HStack(spacing: 280) {
                             
-                            //*********************************************** Motion
-                            GeometryReader { geo in
-                                HStack(spacing: 280) {
-                                    
-                                    Image("")
-                                        .aspectRatio(contentMode: .fit)
+                            Image("")
+                                .aspectRatio(contentMode: .fit)
 //                                        .blinking(duration: 6.0)
-                                    
-                                    Spacer()
-                                        .frame(width: 50)
-                                    
-                                    ZStack {
-                                        
-                                        //    ********************************************
-                                        Image("FatGuy")
-//                                            .aspectRatio(contentMode: .fit)
-                                            .frame(width: 120, height: 120)
-                                            .blinking(duration: 7.0)
-                                        
-                                        Text("Send CareHearts")
-                                            .fontWeight(.medium)
-                                            .frame(width: 200, height: 40)
-                                            .foregroundColor(Color.black)
-                                            .font(.system(size: 20))
-                                            .background(ColorManager .purple1)
-                                            .cornerRadius(7)
-                                            .rotationEffect(.degrees(-25))
-                                            .opacity(0.8)
-                                        //                                            .glow(color: ColorManager .grey4, radius: 3)
-                                            .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
-                                            .blinking(duration: 7.0)
-                                        
-                                        //**********************************************************
-                                        
-                                    }
-                                    
-                                    Image("")
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: geo.size.width, alignment: .leading)
-                                    
-                                    
-                                    
-                                }
-                                .frame(width: geo.size.width, height: geo.size.height,
-                                       alignment: animate ? .trailing : .leading)
-                            }
-                            .ignoresSafeArea()
-                            .onAppear {
-                                withAnimation(animation) {
-                                    animate.toggle()
-                                }
+                            
+                            Spacer()
+                                .frame(width: 50)
+                            
+                            ZStack {
                                 
+                                //    ********************************************
+                                Image("CoolGuy")
+//                                            .aspectRatio(contentMode: .fit)
+                                    .frame(width: 120, height: 120)
+                                    .blinking(duration: 7.0)
+                                
+                                Text("Yep, got a CareHeart")
+                                    .fontWeight(.medium)
+                                    .frame(width: 200, height: 40)
+                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 20))
+                                    .background(Color.cyan)
+                                    .cornerRadius(7)
+                                    .rotationEffect(.degrees(-38))
+                                    .opacity(0.8)
+                                //                                            .glow(color: ColorManager .grey4, radius: 3)
+                                    .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
+                                    .blinking(duration: 7.0)
+                                
+                                //**********************************************************
+                                Spacer()
+                                    .frame(height: 5)
                             }
+                            
+                            Image("")
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: geo.size.width, alignment: .leading)
+                            
+                            
+                            
                         }
-  
+                        .frame(width: geo.size.width, height: geo.size.height,
+                               alignment: animate ? .trailing : .leading)
+                    }
+                    .ignoresSafeArea()
+                    .onAppear {
+                        withAnimation(animation) {
+                            animate.toggle()
+                        }
+                        
+                    }
+                }
+
             VStack {
                                 
                 Spacer ()
