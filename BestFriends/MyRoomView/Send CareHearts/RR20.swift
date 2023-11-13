@@ -151,7 +151,7 @@ struct RR20: View {
                         Image(systemName: "cube.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 300, height: 200)
+                            .frame(width: 330, height: 200)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .opacity(0.5)
                        

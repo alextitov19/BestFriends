@@ -52,28 +52,28 @@ struct HugPreload: View {
                     
                         HStack {
                             VStack {
-                                NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
-                                    HugCircle (color: Color.purple, friendName: "Send \nFist-pump")
+                                NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
+                                    HugCircle (color: Color.cyan, friendName: "Blowing \nKisses")
                                 })
-                                .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
-                                .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
-                                .opacity(0.9)
+                                .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
+                                .shadow(color: Color.blue, radius: 5, x: -2, y: -2)
+                                .opacity(0.99)
                             }
                             
                             
                             Spacer()
                                 .frame(width: 35)
                             
-                            NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: ColorManager .purple5, friendName: "Custom \n(in beta")
+                            NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
+                                HugCircle (color: Color.cyan, friendName: "Songs")
                             })
-                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                            .shadow(color: ColorManager .purple2, radius: 4, x: 0, y: 4)
-                            .opacity(0.65)
+                            .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+                            .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
+                            .opacity(0.99)
                         }
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 20)
                         
                     VStack {
                            
@@ -90,47 +90,13 @@ struct HugPreload: View {
                             
                             
                             NavigationLink(destination: RR11(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.cyan, friendName: "Thinking \nof you")
+                                HugCircle (color: Color.pink, friendName: "Thinking \nof you")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
-                            .shadow(color: Color .cyan, radius: 5, x: 2, y: -2)
+                            .shadow(color: Color .pink, radius: 5, x: 2, y: -2)
                             .opacity(0.99)
                             
-                      
-                            
-//                        }
-                        
-//                        VStack {
-//
-//                            Spacer()
-//                                .frame(height: 20)
-//
-//                            HStack {
-//
-//                                NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
-//                                    HugCircle (color: Color.cyan, friendName: "Blowing \nkisses")
-//                                })
-//                                .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-//                                .shadow(color: Color .blue, radius: 5, x: -3, y: -2)
-//                                .opacity(0.9)
-//
-//
-//                                Spacer ()
-//                                    .frame(width: 200)
-//
-//
-//                                NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
-//                                    HugCircle (color: Color.cyan, friendName: "Send \nconfort \nsong")
-//                                })
-//                                .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-//                                .shadow(color: Color.blue, radius: 5, x: 3, y: -2)
-//                                .opacity(0.9)
-//
-//
-//
-//
-//                            }
-//                        }
+
                     }
                 }
 
@@ -159,12 +125,12 @@ struct HugPreload: View {
                         ZStack {
                             
                             
-                            NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.purple, friendName: "Say \nCongrats")
+                            NavigationLink(destination: RR20(user: user, friend: user, friends: friends, groups: groups), label: {
+                                HugCircle (color: Color.green, friendName: "Friends")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                            .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
-                            .opacity(0.9)
+                            .shadow(color: Color.green, radius: 10, x: -4, y: 4)
+                            .opacity(0.99)
                       
                         }
                     }
@@ -176,19 +142,19 @@ struct HugPreload: View {
                             })
                             .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
                             .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
-                            .opacity(0.9)
+                            .opacity(0.99)
                         }
                         
                         
                         Spacer()
                             .frame(width: 35)
                         
-                        NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
-                            HugCircle (color: ColorManager .purple5, friendName: "Custom \n(in beta")
+                        NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
+                            HugCircle (color: ColorManager .purple5, friendName: "Send \nCongrats!")
                         })
                         .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                        .shadow(color: ColorManager .purple2, radius: 4, x: 0, y: 4)
-                        .opacity(0.65)
+                        .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
+                        .opacity(0.99)
                     }
                     
                     
@@ -205,12 +171,12 @@ struct HugPreload: View {
                                 .frame(width: 300)
                             
                             ZStack {
-                                NavigationLink(destination: RR33(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                                    HugCircle (color: ColorManager .orange3, friendName: "Hurt \nmy \nfeelings")
+                                NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
+                                    HugCircle (color: ColorManager .grey1, friendName: "Build \nyour own \n'beta'")
                                 })
                                 .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-                                .shadow(color: Color.orange, radius: 4, x: 2, y: 3)
-                                .opacity(0.9)
+                                .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
+                                .opacity(0.99)
                                 
                             }
                             
