@@ -341,7 +341,6 @@
 		CFADFD962AFFE86F0090071A /* hooray1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFADFD952AFFE86E0090071A /* hooray1.mp4 */; };
 		CFADFD982AFFF00C0090071A /* thumbsUp.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFADFD972AFFF00C0090071A /* thumbsUp.mp4 */; };
 		CFADFD9C2AFFF58D0090071A /* sadDay1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFADFD9B2AFFF58D0090071A /* sadDay1.mp4 */; };
-		CFADFDA12B024C840090071A /* heartsBowl.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFADFDA02B024C840090071A /* heartsBowl.mp4 */; };
 		CFADFDA52B024D6F0090071A /* heartsDropping1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFADFDA42B024D6F0090071A /* heartsDropping1.mp4 */; };
 		CFC0ACBE28EF4E7B00B49831 /* SaySomethingPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */; };
 		CFC0ACC028EFD6DB00B49831 /* ChatInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */; };
@@ -769,7 +768,6 @@
 		CFADFD952AFFE86E0090071A /* hooray1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hooray1.mp4; sourceTree = "<group>"; };
 		CFADFD972AFFF00C0090071A /* thumbsUp.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = thumbsUp.mp4; sourceTree = "<group>"; };
 		CFADFD9B2AFFF58D0090071A /* sadDay1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sadDay1.mp4; sourceTree = "<group>"; };
-		CFADFDA02B024C840090071A /* heartsBowl.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = heartsBowl.mp4; sourceTree = "<group>"; };
 		CFADFDA42B024D6F0090071A /* heartsDropping1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = heartsDropping1.mp4; sourceTree = "<group>"; };
 		CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingPreload.swift; sourceTree = "<group>"; };
 		CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInfo.swift; sourceTree = "<group>"; };
@@ -1541,7 +1539,6 @@
 			isa = PBXGroup;
 			children = (
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
-				CFADFDA02B024C840090071A /* heartsBowl.mp4 */,
 				CFADFDA42B024D6F0090071A /* heartsDropping1.mp4 */,
 				CF221EE52AF78FFB005D19B7 /* fistpumpVideo.mp4 */,
 				CFADFD952AFFE86E0090071A /* hooray1.mp4 */,
@@ -2272,7 +2269,6 @@
 				CFADFDA52B024D6F0090071A /* heartsDropping1.mp4 in Resources */,
 				CF3DB37228DA6D7D00BF9CCD /* Nadiah2.m4a in Resources */,
 				CFADFD962AFFE86F0090071A /* hooray1.mp4 in Resources */,
-				CFADFDA12B024C840090071A /* heartsBowl.mp4 in Resources */,
 				CF3DB37628DA85BA00BF9CCD /* Meena1.m4a in Resources */,
 				7ACDB183282825C1009E1CFD /* GoogleService-Info.plist in Resources */,
 				CF221EE62AF78FFB005D19B7 /* fistpumpVideo.mp4 in Resources */,
