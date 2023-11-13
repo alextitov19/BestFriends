@@ -124,7 +124,7 @@ struct RR56: View {
                         ZStack {
                             
                             
-                            NavigationLink(destination: EmptyView(), label: {
+                            NavigationLink(destination: RR26(user: user, friend: user, friends: friends, groups: groups), label: {
                                 HugCircle (color: Color.green, friendName: "Friends")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
