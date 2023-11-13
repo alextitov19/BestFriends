@@ -56,7 +56,7 @@ struct RR13: View {
             } else {
             
                 
-                Color.black
+                Color.gray
                   .opacity(0.9)
                   .ignoresSafeArea()
                 
@@ -65,10 +65,10 @@ struct RR13: View {
                     .blendMode(.screen)
                     .opacity(0.6)
                 
-                Image("CHHearts 1")
+                AdPlayerView(name: "heartsDropping1")
                     .ignoresSafeArea()
-                    .scaledToFit()
-                    .opacity(0.3)
+                    .blendMode(.screen)
+                    .opacity(0.8)
             }
             
             VStack{

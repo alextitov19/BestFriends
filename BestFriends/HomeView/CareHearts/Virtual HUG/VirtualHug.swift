@@ -93,7 +93,7 @@ struct VirtualHug: View {
             } else {
 
                 
-                Color.black
+                Color.gray
                   .opacity(0.9)
                   .ignoresSafeArea()
                 
