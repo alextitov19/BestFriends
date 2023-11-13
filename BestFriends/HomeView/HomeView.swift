@@ -200,7 +200,7 @@ struct HomeView: View {
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 35, height: 35)
-                                            .foregroundColor(ColorManager .purple4)
+                                            .foregroundColor(Color.cyan)
                                             .opacity(0.95)
                                   
                                         
@@ -208,7 +208,7 @@ struct HomeView: View {
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 20, height: 20)
-                                            .foregroundColor(Color.orange)
+                                            .foregroundColor(Color.purple)
                                             .glow(color: Color.white, radius: 0.3)
                                             .shadow(color: .white, radius: 1, x: 3, y: -0.5)
                                             .opacity(0.95)
@@ -255,7 +255,7 @@ struct HomeView: View {
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 35, height: 35)
-                                                .foregroundColor(ColorManager .purple4)
+                                                .foregroundColor(ColorManager .purple3)
                                                 .opacity(0.95)
                                       
                                             Image(systemName: "heart.fill")
@@ -292,7 +292,7 @@ struct HomeView: View {
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 35, height: 35)
-                                                .foregroundColor(ColorManager .purple4)
+                                                .foregroundColor(Color.orange)
                                                 .opacity(0.95)
                                       
                                             
