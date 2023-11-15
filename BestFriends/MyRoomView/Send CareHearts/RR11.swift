@@ -181,7 +181,7 @@ struct RR11: View {
                                 TextField("", text: $customMessage)
                                     .placeholder(when: customMessage.isEmpty) {
                                         HStack {
-                                            Text("let your heart type here...")
+                                            Text("type a message from the heart...")
                                                 .foregroundColor(Color.white)
                                                 .fontWeight(.thin)
                                             Spacer()
