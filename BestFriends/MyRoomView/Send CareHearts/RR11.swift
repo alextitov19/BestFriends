@@ -146,12 +146,12 @@ struct RR11: View {
                             VStack {
                                 
                                 
-                                Text("Send")
+                                Text("Sending")
                                     .font(.system(size: 30, weight: .light))
                                     .foregroundColor(Color.white)
                                     .opacity(0.5)
                                 
-                                Text("Hearts")
+                                Text("Love Tarts")
                                     .font(.system(size: 30, weight: .light))
                                     .foregroundColor(Color.white)
                                     .opacity(0.5)
@@ -220,7 +220,12 @@ struct RR11: View {
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
             
-                    
+                    Text("(hearts are beating faster)")
+                        .font(.system(size: 15))
+                        .italic()
+                        .fontWeight(.light)
+                        .foregroundColor(ColorManager .grey1)
+                        .multilineTextAlignment(.center)
                     
                     
                     VStack {

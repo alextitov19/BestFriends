@@ -186,15 +186,15 @@ struct HugPreload: View {
                                     .frame(width: 170, height: 120)
                                     .foregroundColor(Color.white)
                                     .shadow(color: Color.white, radius: 10, x: 10, y: 3)
-                                    .opacity(0.5)
+                                    .opacity(0.3)
                                 
                                 
                                 
-                                NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
-                                    HugCircle (color: Color.red, friendName: "Romantic \nfeelings")
+                                NavigationLink(destination: RR11(user: user, friend: user, friends: friends, groups: groups), label: {
+                                    HugCircle (color: Color.white, friendName: "Romantic \nfeelings")
                                 })
                                 .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-                                .shadow(color: Color.red, radius: 4, x: 2, y: 3)
+                                .shadow(color: Color.white, radius: 4, x: 2, y: 3)
                                 .opacity(0.99)
                                 
                             }
