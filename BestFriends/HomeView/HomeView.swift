@@ -289,7 +289,7 @@ struct HomeView: View {
                                         destination:  RR33(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                         label: {
                                             
-                                            ZStack {
+                                            
                                            
                                                 Image("IconFightNew")
                                                     .resizable()
@@ -297,8 +297,24 @@ struct HomeView: View {
                                                     .frame(width: 40, height: 40)
                                                     .foregroundColor(Color.white)
                                                     .opacity(0.95)
-                                            }
+                                            
                                         })
+                                
+                                
+                                NavigationLink(
+                                    destination:  EmptyView(),
+                                    label: {
+                                        
+                                        
+                                       
+                                            Image("iconCH 1")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 40, height: 40)
+                                                .foregroundColor(Color.white)
+                                                .opacity(0.95)
+                                        
+                                    })
                                 }
                             }
                         

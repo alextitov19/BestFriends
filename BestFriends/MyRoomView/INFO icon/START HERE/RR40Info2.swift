@@ -95,7 +95,7 @@ VStack {
                 .foregroundColor(ColorManager .grey1)
                 .opacity(0.5)
           
-            Text("sharing smiles")
+            Text("Sharing Emotions")
                 .font(.system(size: 40, weight: .light))
                 .foregroundColor(ColorManager .grey1)
                 .opacity(0.7)
