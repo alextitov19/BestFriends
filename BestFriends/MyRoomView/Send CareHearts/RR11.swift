@@ -216,7 +216,7 @@ struct RR11: View {
                         
                         Link(destination: URL(string: "https://socialtechlabs.com/white-linen-dress/")!) {
                             
-                            Text("Dreams we dare but whisper")
+                            Text("white linen dress")
                                 .fontWeight(.thin)
                                 .frame(width: 340, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
