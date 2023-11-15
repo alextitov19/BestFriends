@@ -218,12 +218,25 @@ struct RR11: View {
                             
                             Text("white linen dress")
                                 .fontWeight(.thin)
-                                .frame(width: 340, height: 40)
+                                .frame(width: 170, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
+                                .font(.system(size: 20))
                                 .background(ColorManager.pmbc_green)
                                 .cornerRadius(10)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            
+                            Link(destination: URL(string: "https://socialtechlabs.com/a-kisses-journey/")!) {
+                                
+                                Text("kisses' journey")
+                                    .fontWeight(.thin)
+                                    .frame(width: 170, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 20))
+                                    .background(ColorManager.pmbc_green)
+                                    .cornerRadius(10)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                            }
                         }
                     }
                 }
