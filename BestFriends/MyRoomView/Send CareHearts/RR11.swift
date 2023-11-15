@@ -181,7 +181,7 @@ struct RR11: View {
                                 TextField("", text: $customMessage)
                                     .placeholder(when: customMessage.isEmpty) {
                                         HStack {
-                                            Text("type message here...")
+                                            Text("let your heart type here...")
                                                 .foregroundColor(Color.white)
                                                 .fontWeight(.thin)
                                             Spacer()
@@ -220,12 +220,7 @@ struct RR11: View {
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
             
-                    Text("(hearts are beating faster)")
-                        .font(.system(size: 15))
-                        .italic()
-                        .fontWeight(.light)
-                        .foregroundColor(ColorManager .grey1)
-                        .multilineTextAlignment(.center)
+                 
                     
                     
                     VStack {
@@ -337,7 +332,7 @@ struct RR11: View {
                                 .glow(color: Color.purple, radius: 2)
                                 .opacity(0.6)
                                 .blinking(duration: 3.0)
-                                .alert("Your Hearts are on their way", isPresented: $showingAlert) {
+                                .alert("Hearts are beating faster", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
@@ -387,11 +382,11 @@ struct RR11: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) just send you Hearts (check Chat)", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) just send you Love Tarts (check Chat)", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "You got Hearts (check Chat) - TAP", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "You got Love Tarts (check Chat) - TAP", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                         print("Create a Heart notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)
