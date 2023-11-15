@@ -179,12 +179,12 @@ struct RR56: View {
                             
                             ZStack {
                                 
-                                Image(systemName: "heart")
+                                Image(systemName: "heart.fill")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 180, height: 130)
                                    .foregroundColor(ColorManager .grey3)
-                                    .shadow(color: Color.white, radius: 10, x: 3, y: 3)
+                                    .shadow(color: Color.white, radius: 10, x: 5, y: 5)
                                     .opacity(0.3)
                                 
                                 

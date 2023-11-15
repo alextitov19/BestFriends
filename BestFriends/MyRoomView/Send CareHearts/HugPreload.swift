@@ -180,12 +180,12 @@ struct HugPreload: View {
                             
                             ZStack {
                                 
-                                Image(systemName: "heart")
+                                Image(systemName: "heart.fill")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 170, height: 120)
-                                    .foregroundColor(Color.white)
-                                    .shadow(color: Color.white, radius: 10, x: 10, y: 3)
+                                    .frame(width: 180, height: 130)
+                                   .foregroundColor(ColorManager .grey3)
+                                    .shadow(color: Color.white, radius: 10, x: 5, y: 5)
                                     .opacity(0.3)
                                 
                                 
