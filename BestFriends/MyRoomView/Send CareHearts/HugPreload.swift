@@ -166,16 +166,35 @@ struct HugPreload: View {
                         
                         HStack {
                             
-                     
-                            Spacer()
-                                .frame(width: 300)
-                            
                             ZStack {
                                 NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
                                     HugCircle (color: ColorManager .grey1, friendName: "Build \nyour own \n'in-beta'")
                                 })
                                 .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
                                 .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
+                                .opacity(0.99)
+                                
+                            }
+                            Spacer()
+                                .frame(width: 150)
+                            
+                            ZStack {
+                                
+                                Image(systemName: "heart")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 170, height: 120)
+                                    .foregroundColor(Color.white)
+                                    .shadow(color: Color.white, radius: 10, x: 10, y: 3)
+                                    .opacity(0.5)
+                                
+                                
+                                
+                                NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
+                                    HugCircle (color: Color.red, friendName: "Romantic \nfeelings")
+                                })
+                                .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+                                .shadow(color: Color.red, radius: 4, x: 2, y: 3)
                                 .opacity(0.99)
                                 
                             }
