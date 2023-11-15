@@ -301,20 +301,20 @@ struct HomeView: View {
                                         })
                                 
                                 
-                                NavigationLink(
-                                    destination:  EmptyView(),
-                                    label: {
-                                        
-                                        
-                                       
-                                            Image("iconCH 1")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 40, height: 40)
-                                                .foregroundColor(Color.white)
-                                                .opacity(0.95)
-                                        
-                                    })
+//                                NavigationLink(
+//                                    destination:  EmptyView(),
+//                                    label: {
+//                                        
+//                                        
+//                                       
+//                                            Image("iconCH 1")
+//                                                .resizable()
+//                                                .scaledToFit()
+//                                                .frame(width: 40, height: 40)
+//                                                .foregroundColor(Color.white)
+//                                                .opacity(0.95)
+//                                        
+//                                    })
                                 }
                             }
                         
