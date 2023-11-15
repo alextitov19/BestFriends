@@ -51,7 +51,7 @@ struct RR11: View {
 //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
-        customMessage = "Heart from; " + user.firstName + " : " + customMessage;
+        customMessage = "Love Tarts from; " + user.firstName + " : " + customMessage;
         
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
@@ -203,8 +203,30 @@ struct RR11: View {
                                     .padding(.bottom, 5)
                             }
                         }
+            
                 
-                
+//    ********************************** Link to Love Tarts on Website ******
+                VStack {
+                    
+                    Spacer()
+                        .frame(height: 15)
+                    
+                    VStack {
+                        
+                        
+                        Link(destination: URL(string: "https://socialtechlabs.com/white-linen-dress/")!) {
+                            
+                            Text("Dreams we dare but whisper")
+                                .fontWeight(.thin)
+                                .frame(width: 340, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 25))
+                                .background(ColorManager.pmbc_green)
+                                .cornerRadius(10)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        }
+                    }
+                }
                 
                 //                **************************************
                 
