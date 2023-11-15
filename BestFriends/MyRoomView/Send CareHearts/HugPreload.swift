@@ -48,7 +48,7 @@ struct HugPreload: View {
                 VStack {
      
                     Spacer()
-                        .frame(height: 115)
+                        .frame(height: 180)
                     
                         HStack {
                             VStack {
