@@ -48,7 +48,56 @@ struct HugPreload: View {
                 VStack {
      
                     Spacer()
-                        .frame(height: 180)
+                        .frame(height: 120)
+//  *************************************************
+       
+                    HStack {
+                        
+                        ZStack {
+                            Image(systemName: "")
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 0, height: 0)
+//                               .foregroundColor(ColorManager .grey3)
+//                                .shadow(color: Color.white, radius: 10, x: 5, y: 5)
+//                                .opacity(0.3)
+                            
+                        }
+                        Spacer()
+                            .frame(width: 260)
+                        
+                        ZStack {
+                            
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 180, height: 130)
+                               .foregroundColor(ColorManager .grey3)
+                                .shadow(color: Color.white, radius: 10, x: 5, y: 5)
+                                .opacity(0.3)
+                            
+                            
+                            
+                            NavigationLink(destination: RR11(user: user, friend: user, friends: friends, groups: groups), label: {
+                                HugCircle (color: Color.white, friendName: "Planet \nromance")
+                            })
+                            .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+                            .shadow(color: Color.white, radius: 4, x: 2, y: 3)
+                            .opacity(0.99)
+                            
+                        }
+                        
+
+//
+                    }
+                
+                    
+                    
+                    
+//    *******************************************
+                    
+                    
+                    
                     
                         HStack {
                             VStack {
@@ -159,51 +208,11 @@ struct HugPreload: View {
                     
                     
                     VStack {
+     
+                        Spacer()
+                            .frame(width: 140)
                         
-                        Spacer ()
-                            .frame(height: 50)
                         
-                        
-                        HStack {
-                            
-                            ZStack {
-                                NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
-                                    HugCircle (color: ColorManager .grey1, friendName: "Build \nyour own \n'in-beta'")
-                                })
-                                .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-                                .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
-                                .opacity(0.99)
-                                
-                            }
-                            Spacer()
-                                .frame(width: 150)
-                            
-                            ZStack {
-                                
-                                Image(systemName: "heart.fill")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 180, height: 130)
-                                   .foregroundColor(ColorManager .grey3)
-                                    .shadow(color: Color.white, radius: 10, x: 5, y: 5)
-                                    .opacity(0.3)
-                                
-                                
-                                
-                                NavigationLink(destination: RR11(user: user, friend: user, friends: friends, groups: groups), label: {
-                                    HugCircle (color: Color.white, friendName: "Planet \nromance")
-                                })
-                                .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-                                .shadow(color: Color.white, radius: 4, x: 2, y: 3)
-                                .opacity(0.99)
-                                
-                            }
-                            
-
-//
-                        }
-                    
-                                
                         ZStack {
                             
                             //*********************************************** Motion
@@ -261,6 +270,37 @@ struct HugPreload: View {
                             }
                         }
   
+                        
+                        VStack {
+                            
+                            Spacer ()
+                                .frame(height: 150)
+                            
+                            
+                            HStack {
+                                
+                                ZStack {
+                                    Image("")
+                                    
+                                }
+                                Spacer()
+                                    .frame(width: 300)
+                                
+                                ZStack {
+                                    
+                                    NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
+                                        HugCircle (color: ColorManager .grey1, friendName: "Build \nyour own \n'in-beta'")
+                                    })
+                                    .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+                                    .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
+                                    .opacity(0.99)
+                                    
+                                }
+                                
+                            }
+    //
+                            }
+                        
             VStack {
                                 
                 Spacer ()
