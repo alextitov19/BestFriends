@@ -22,6 +22,7 @@ struct JournalsView: View {
     @State private var newJournalWeather = "cloud.sun"
     @State private var newJournalImagesData: [Data] = []
     @State private var createClicked = false
+  
     let friends: [User]
 
     
@@ -48,7 +49,7 @@ struct JournalsView: View {
                     }
                 
                 Spacer()
-                    .frame(height: 40)
+                    .frame(height: 90)
                 
                 
                 if selectedCategory != "" && selectedCategory != "Tap Me" {
@@ -187,7 +188,7 @@ struct JournalsView: View {
         var body: some View {
             ZStack {
                 Color.pink
-                Text("Update my Dream")
+                Text("Update my Crush")
                     .foregroundColor(Color.white)
                     .font(.headline)
 
@@ -202,7 +203,7 @@ struct JournalsView: View {
         var body: some View {
             ZStack {
                 Color.pink
-                Text("Track my Dream")
+                Text("Track my Crush")
                     .foregroundColor(Color.white)
                     .font(.headline)
 

@@ -214,7 +214,7 @@ struct RR11: View {
                     VStack {
                         HStack {
                             
-                            NavigationLink( destination:  SendKisses(user: user, friends: friends),
+                            NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
                                             label: {
                                 Text("Load PhotoPOP image")
                                     .fontWeight(.bold)
@@ -230,7 +230,7 @@ struct RR11: View {
                             })
                             
                             
-                            NavigationLink( destination:  SendKisses(user: user, friends: friends),
+                            NavigationLink( destination:  JournalsView(friends: friends),
                                             label: {
                                 Text("Crush Journal")
                                     .fontWeight(.bold)

@@ -28,7 +28,7 @@ struct CreateNewJournalView: View {
                 .opacity(0.95)
             
             VStack{
-                Text("new Dream post")
+                Text("new Crush post")
                     .font(.system(size: 35, weight: .regular))
                     .foregroundColor(Color.cyan)
                 
