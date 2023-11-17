@@ -305,7 +305,7 @@ struct HomeView: View {
                                     destination:  BestFriendMessages(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres),
                                     label: {
 
-                                            Image("iconCH 1")
+                                            Image("IconRoomNew")
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 40, height: 40)

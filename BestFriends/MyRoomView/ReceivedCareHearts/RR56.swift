@@ -166,36 +166,22 @@ struct RR56: View {
                         HStack {
                             
                             ZStack {
+                             
+                                Image("")
+                                    .aspectRatio(contentMode: .fit)
+                            }
+                            Spacer()
+                                .frame(width: 250)
+                            
+                            ZStack {
                                 NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
                                     HugCircle (color: ColorManager .grey1, friendName: "Build \nyour own \n'in-beta'")
                                 })
                                 .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
                                 .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
                                 .opacity(0.99)
-                                
-                            }
-                            Spacer()
-                                .frame(width: 150)
                             
-                            ZStack {
-                                
-                                Image(systemName: "heart.fill")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 180, height: 130)
-                                   .foregroundColor(ColorManager .grey3)
-                                    .shadow(color: Color.white, radius: 10, x: 5, y: 5)
-                                    .opacity(0.3)
-                                
-                                
-                                
-                                NavigationLink(destination: RR13(user: user, friends: friends, groups: groups), label: {
-                                    HugCircle (color: Color.white, friendName: "Romantic \nfeelings")
-                                })
-                                .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-                                .shadow(color: Color.white, radius: 4, x: 2, y: 3)
-                                .opacity(0.99)
-                                
+                              
                             }
                         }
                     
