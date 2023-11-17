@@ -302,18 +302,16 @@ struct HomeView: View {
                                 
                                 
 //                                NavigationLink(
-//                                    destination:  EmptyView(),
+//                                    destination:  RR9(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
 //                                    label: {
-//                                        
-//                                        
-//                                       
+//
 //                                            Image("iconCH 1")
 //                                                .resizable()
 //                                                .scaledToFit()
 //                                                .frame(width: 40, height: 40)
 //                                                .foregroundColor(Color.white)
 //                                                .opacity(0.95)
-//                                        
+//
 //                                    })
                                 }
                             }

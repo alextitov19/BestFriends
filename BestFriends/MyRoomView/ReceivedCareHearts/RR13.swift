@@ -65,7 +65,7 @@ struct RR13: View {
                     .blendMode(.screen)
                     .opacity(0.6)
                 
-                AdPlayerView(name: "heartsDropping1")
+                AdPlayerView(name: "droppingHearts2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.8)

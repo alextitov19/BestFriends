@@ -330,7 +330,67 @@ struct SendHomie: View {
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
         }
     }
-    
-    
-    
+   
 }
+
+
+
+
+//
+//import SwiftUI
+//
+//struct ContentView: View {
+//    @State private var hearts: [Heart] = []
+//
+//    var body: some View {
+//        VStack {
+//            Button(action: {
+//                withAnimation {
+//                    hearts.append(Heart())
+//                }
+//            }) {
+//                Text("Tap me")
+//            }
+//            .padding()
+//
+//            ZStack {
+//                ForEach(hearts) { heart in
+//                    HeartView(heart: heart)
+//                        .onAppear {
+//                            withAnimation {
+//                                heart.move()
+//                            }
+//                        }
+//                }
+//            }
+//        }
+//    }
+//}
+//
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}
+//
+//struct Heart: Identifiable {
+//    let id = UUID()
+//    var position: CGPoint = .zero
+//    var opacity: Double = 1.0
+//
+//    mutating func move() {
+//        position.y -= 100
+//        opacity = 0
+//    }
+//}
+//
+//struct HeartView: View {
+//    var heart: Heart
+//
+//    var body: some View {
+//        Image(systemName: "heart.fill")
+//            .foregroundColor(.red)
+//            .opacity(heart.opacity)
+//            .position(heart.position)
+//    }
+//}
