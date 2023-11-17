@@ -146,12 +146,12 @@ struct RR11: View {
                             VStack {
                                 
                                 
-                                Text("Sending")
+                                Text("my")
                                     .font(.system(size: 30, weight: .light))
                                     .foregroundColor(Color.white)
                                     .opacity(0.5)
                                 
-                                Text("Love Tarts")
+                                Text("Crush")
                                     .font(.system(size: 30, weight: .light))
                                     .foregroundColor(Color.white)
                                     .opacity(0.5)
@@ -181,7 +181,7 @@ struct RR11: View {
                                 TextField("", text: $customMessage)
                                     .placeholder(when: customMessage.isEmpty) {
                                         HStack {
-                                            Text("type a message from the heart...")
+                                            Text("Chat entry...")
                                                 .foregroundColor(Color.white)
                                                 .fontWeight(.thin)
                                             Spacer()
@@ -212,31 +212,38 @@ struct RR11: View {
                         .frame(height: 15)
                     
                     VStack {
-                        
-                        
-                        Link(destination: URL(string: "https://socialtechlabs.com/white-linen-dress/")!) {
+                        HStack {
                             
-                            Text("white linen dress")
-                                .fontWeight(.thin)
-                                .frame(width: 170, height: 40)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 20))
-                                .background(ColorManager.pmbc_green)
-                                .cornerRadius(10)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            NavigationLink( destination:  SendKisses(user: user, friends: friends),
+                                            label: {
+                                Text("Load PhotoPOP image")
+                                    .fontWeight(.bold)
+                                    .frame(width: 150, height: 40)
+                                    .foregroundColor(Color.black)
+                                    .font(.system(size: 16))
+                                    .background(Color.cyan)
+                                    .glow(color: ColorManager.purple1, radius: 1)
+                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                    .opacity(0.9)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                            })
                             
-                            Link(destination: URL(string: "https://socialtechlabs.com/a-kisses-journey/")!) {
-                                
-                                Text("kisses' journey")
-                                    .fontWeight(.thin)
-                                    .frame(width: 170, height: 40)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 20))
-                                    .background(ColorManager.pmbc_green)
-                                    .cornerRadius(10)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            }
+                            
+                            NavigationLink( destination:  SendKisses(user: user, friends: friends),
+                                            label: {
+                                Text("Crush Journal")
+                                    .fontWeight(.bold)
+                                    .frame(width: 150, height: 40)
+                                    .foregroundColor(Color.black)
+                                    .font(.system(size: 16))
+                                    .background(Color.cyan)
+                                    .glow(color: ColorManager.purple1, radius: 1)
+                                    .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                    .opacity(0.9)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                            })
                         }
                     }
                 }
@@ -263,9 +270,9 @@ struct RR11: View {
                         Spacer()
                             .frame(height: 10)
                         
-                        
+
                         HStack {
-                            
+
                             if friends.count > 0 {
                                 RectView(user: user, friend: friends[0], color: colors[0])
                                     .onTapGesture(perform: {
@@ -278,9 +285,9 @@ struct RR11: View {
                                         }
                                         print(selectedFriends)
                                     })
-                                
+
                             }
-                            
+
                             if friends.count > 1 {
                                 RectView(user: user, friend: friends[1], color: colors[1])
                                     .onTapGesture(perform: {
@@ -293,10 +300,10 @@ struct RR11: View {
                                         }
                                         print(selectedFriends)
                                     })
-                                
+
                             }
                         }
-                        
+
                         Spacer()
                             .frame(height: 15)
                         HStack {
@@ -313,7 +320,7 @@ struct RR11: View {
                                         print(selectedFriends)
                                     })
                             }
-                            
+
                             if friends.count > 3 {
                                 RectView(user: user, friend: friends[3], color: colors[3])
                                     .onTapGesture(perform: {
@@ -326,9 +333,9 @@ struct RR11: View {
                                         }
                                         print(selectedFriends)
                                     })
-                                
+
                             }
-                            
+
                             if friends.count > 4 {
                                 RectView(user: user, friend: friends[4], color: colors[4])
                                     .onTapGesture(perform: {
@@ -341,16 +348,16 @@ struct RR11: View {
                                         }
                                         print(selectedFriends)
                                     })
-                                
+
                             }
                         }
-                        
-                        
-                        
+
+
+
                         Spacer()
                             .frame(height: 20)
-                        
-                        
+
+
                         Button(action: {
                             counter += 1
                             shareTapped = true
@@ -370,7 +377,7 @@ struct RR11: View {
                                 .alert("Hearts are beating faster", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
-                            
+
                         })
                         
                         VStack {
