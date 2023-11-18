@@ -101,7 +101,7 @@ struct HomeView: View {
                                 Image(systemName: "bell")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 27, height: 27)
+                                    .frame(width: 25, height: 25)
                                     .foregroundColor(Color.cyan)
                                 //                                    .blinking(duration: 2.0)
 //                                    .glow(color: ColorManager.purple4, radius: 3)
@@ -118,7 +118,7 @@ struct HomeView: View {
                                 Image(systemName: "bell")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 30, height: 30)
+                                    .frame(width: 27, height: 27)
                                     .foregroundColor(Color.white)
                                     .opacity(0.125)
 //                                    .rotationEffect(.degrees(-10))
@@ -176,7 +176,7 @@ struct HomeView: View {
                                     Image("iconSettings")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 32, height: 32)
+                                        .frame(width: 27, height: 27)
                                         .foregroundColor(ColorManager .purple5)
                                         .glow(color: Color.purple, radius: 2)
                                         .opacity(0.9)
@@ -363,67 +363,67 @@ struct HomeView: View {
             
             Spacer()
                 .frame(width: 50)
-            
-            ZStack {
-                //            ******************** RR36Info(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups)
-                
-                NavigationLink(
-                    destination:  RR4(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                    label: {
-                        ZStack {
-                            
-                            //*********************************************** Motion
-                            GeometryReader { geo in
-                                HStack(spacing: 300) {
-                                    
-                                    ZStack {
-                                        
-                                        //    ********************************************
-                                        Image("FatGuy200")
-                                            .aspectRatio(contentMode: .fit)
-                                            .blinking(duration: 4.0)
-                                        
-                                        Text("demo")
-                                            .fontWeight(.regular)
-                                            .frame(width: 55, height: 30)
-                                            .foregroundColor(Color.black)
-                                            .font(.system(size: 17))
-                                            .background(ColorManager .purple1)
-                                            .cornerRadius(7)
-                                            .rotationEffect(.degrees(-25))
-                                            .opacity(0.8)
-                                        //                                            .glow(color: ColorManager .grey4, radius: 3)
-                                            .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
-                                            .blinking(duration: 4.0)
-                                        
-                                        //**********************************************************
-                                        
-                                    }
-                                    
-                                    Image("")
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: geo.size.width, alignment: .leading)
-                                    
-                                    
-                                    
-                                }
-                                .frame(width: geo.size.width, height: geo.size.height,
-                                       alignment: animate ? .trailing : .leading)
-                            }
-                            .ignoresSafeArea()
-                            .onAppear {
-                                withAnimation(animation) {
-                                    animate.toggle()
-                                }
-                                
-                                //*********************************************** Motion
-                                
-                                
-                                
-                            }
-                        }
-                    }
-                )}
+//
+//            ZStack {
+//                //            ******************** RR36Info(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups)
+//
+//                NavigationLink(
+//                    destination:  RR4(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+//                    label: {
+//                        ZStack {
+//
+//                            //*********************************************** Motion
+//                            GeometryReader { geo in
+//                                HStack(spacing: 300) {
+//
+//                                    ZStack {
+//
+//                                        //    ********************************************
+//                                        Image("FatGuy200")
+//                                            .aspectRatio(contentMode: .fit)
+//                                            .blinking(duration: 4.0)
+//
+//                                        Text("demo")
+//                                            .fontWeight(.regular)
+//                                            .frame(width: 55, height: 30)
+//                                            .foregroundColor(Color.black)
+//                                            .font(.system(size: 17))
+//                                            .background(ColorManager .purple1)
+//                                            .cornerRadius(7)
+//                                            .rotationEffect(.degrees(-25))
+//                                            .opacity(0.8)
+//                                        //                                            .glow(color: ColorManager .grey4, radius: 3)
+//                                            .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
+//                                            .blinking(duration: 4.0)
+//
+//                                        //**********************************************************
+//
+//                                    }
+//
+//                                    Image("")
+//                                        .aspectRatio(contentMode: .fit)
+//                                        .frame(width: geo.size.width, alignment: .leading)
+//
+//
+//
+//                                }
+//                                .frame(width: geo.size.width, height: geo.size.height,
+//                                       alignment: animate ? .trailing : .leading)
+//                            }
+//                            .ignoresSafeArea()
+//                            .onAppear {
+//                                withAnimation(animation) {
+//                                    animate.toggle()
+//                                }
+//
+//                                //*********************************************** Motion
+//
+//
+//
+//                            }
+//                        }
+//                    }
+//                )}
             
             VStack {
 //                NavigationLink(
@@ -446,16 +446,16 @@ struct HomeView: View {
 //                NavigationLink(
 //                    destination:  RR33(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
 //                    label: {
-//                        
-//                        
-//                        
+//
+//
+//
 //                        Image("IconFightNew")
 //                            .resizable()
 //                            .scaledToFit()
 //                            .frame(width: 40, height: 40)
 //                            .foregroundColor(Color.white)
 //                            .opacity(0.95)
-//                        
+//
 //                    })
                 
             }
@@ -530,7 +530,7 @@ struct HomeView: View {
 //******************************* CENTER PLANET NAVIGATION *************************
                         
                         NavigationLink(
-                            destination:   PhotoPopInfo(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                            destination:   RR58(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                             label: {
 
                                 Image(systemName: "")
