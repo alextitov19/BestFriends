@@ -48,7 +48,7 @@ struct HugPreload: View {
                 VStack {
      
                     Spacer()
-                        .frame(height: 120)
+                        .frame(height: 100)
 //  *************************************************
        
                     HStack {
@@ -135,7 +135,7 @@ struct HugPreload: View {
                             .opacity(0.99)
                             
                             Spacer ()
-                                .frame(width: 200)
+                                .frame(width: 220)
                             
                             
                             NavigationLink(destination: RR11(user: user, friend: user, friends: friends, groups: groups), label: {
@@ -148,9 +148,32 @@ struct HugPreload: View {
 
                     }
                 }
+                    
+                    HStack {
+                        
+                        Spacer()
+                            .frame(width: 10)
+                        
+                        NavigationLink(
+                            destination:  PhotoPopView(user: user, friends: friends),
+                            label: {
+                                
+                                Image("IconPhotoNew")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 55, height: 55)
+                                    .rotationEffect(.degrees(-7))
+                                    .foregroundColor(ColorManager .purple5)
+                                    .glow(color: Color.purple, radius: 2)
+                                    .opacity(0.9)
+                                
+                            })
+                        
+                        
+                    }
 
                     Spacer ()
-                        .frame(height: 30)
+                        .frame(height: 1)
                     
                     
                     HStack {
@@ -166,7 +189,7 @@ struct HugPreload: View {
                         }
                         
                         Spacer()
-                            .frame(width: 200)
+                            .frame(width: 220)
                         
                         
                         
@@ -280,11 +303,22 @@ struct HugPreload: View {
                             HStack {
                                 
                                 ZStack {
-                                    Image("")
+//                                    Image("")
+//
+//
+                                    
+                                    NavigationLink(destination: RR33(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
+                                        HugCircle (color: ColorManager .grey1, friendName: "Hurt \nFeelings")
+                                    })
+                                    .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+                                    .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
+                                    .opacity(0.99)
+                                  
+                                 
                                     
                                 }
                                 Spacer()
-                                    .frame(width: 300)
+                                    .frame(width: 200)
                                 
                                 ZStack {
                                     

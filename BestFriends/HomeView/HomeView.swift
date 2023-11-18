@@ -135,7 +135,7 @@ struct HomeView: View {
                                                             
                         
                             Spacer()
-                                .frame(width: 100)
+                                .frame(width: 270)
 //                            
 //                            Text(">")
 //                                .font(.system(size: 20))
@@ -263,6 +263,7 @@ struct HomeView: View {
 
                                         }
                                     })
+                          
                             }
                         }
                         
@@ -425,37 +426,37 @@ struct HomeView: View {
                 )}
             
             VStack {
-                NavigationLink(
-                    destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
-                    label: {
-                        
-                        Image("IconPhotoNew")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 35, height: 35)
-                            .rotationEffect(.degrees(-7))
-                            .foregroundColor(ColorManager .purple5)
-                            .glow(color: Color.purple, radius: 2)
-                            .opacity(0.9)
-                        
-                        
-                    })
+//                NavigationLink(
+//                    destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
+//                    label: {
+//
+//                        Image("IconPhotoNew")
+//                            .resizable()
+//                            .scaledToFit()
+//                            .frame(width: 35, height: 35)
+//                            .rotationEffect(.degrees(-7))
+//                            .foregroundColor(ColorManager .purple5)
+//                            .glow(color: Color.purple, radius: 2)
+//                            .opacity(0.9)
+//
+//
+//                    })
                 
                 
-                NavigationLink(
-                    destination:  RR33(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                    label: {
-                        
-                        
-                        
-                        Image("IconFightNew")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 40, height: 40)
-                            .foregroundColor(Color.white)
-                            .opacity(0.95)
-                        
-                    })
+//                NavigationLink(
+//                    destination:  RR33(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+//                    label: {
+//                        
+//                        
+//                        
+//                        Image("IconFightNew")
+//                            .resizable()
+//                            .scaledToFit()
+//                            .frame(width: 40, height: 40)
+//                            .foregroundColor(Color.white)
+//                            .opacity(0.95)
+//                        
+//                    })
                 
             }
         }
