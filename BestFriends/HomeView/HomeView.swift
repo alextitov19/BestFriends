@@ -128,7 +128,11 @@ struct HomeView: View {
                                  
                             }
                            
-                        
+//                        *********************
+                            
+                            
+//      ********************************************************
+                                                            
                         
                             Spacer()
                                 .frame(width: 100)
@@ -163,7 +167,7 @@ struct HomeView: View {
                             
                             
                             Spacer()
-                                .frame(width: 100)
+                                .frame(width: 30)
                             
                             NavigationLink(
                                 destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
@@ -265,15 +269,15 @@ struct HomeView: View {
     
 //    ***************************************** Now at bottom of page right *****
 //                        VStack {
-//                            
+//
 //                            HStack {
-//                                
-//                                
-//                                    
+//
+//
+//
 //                                    NavigationLink(
 //                                        destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
 //                                        label: {
-//                                            
+//
 //                                            Image("IconPhotoNew")
 //                                                .resizable()
 //                                                .scaledToFit()
@@ -282,26 +286,26 @@ struct HomeView: View {
 //                                                .foregroundColor(ColorManager .purple5)
 //                                                .glow(color: Color.purple, radius: 2)
 //                                                .opacity(0.9)
-//                                            
-//                                            
+//
+//
 //                                        })
-//                                    
+//
 //                                    NavigationLink(
 //                                        destination:  RR33(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
 //                                        label: {
-//                                            
-//                                            
-//                                           
+//
+//
+//
 //                                                Image("IconFightNew")
 //                                                    .resizable()
 //                                                    .scaledToFit()
 //                                                    .frame(width: 40, height: 40)
 //                                                    .foregroundColor(Color.white)
 //                                                    .opacity(0.95)
-//                                            
+//
 //                                        })
-//                                
-//                                
+//
+//
 //                                NavigationLink(
 //                                    destination:  BestFriendMessages(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres),
 //                                    label: {

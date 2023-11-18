@@ -74,7 +74,7 @@ struct RR36Info: View {
                         Image("comicBubble")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 500, height: 350)
+                            .frame(width: 500, height: 200)
                             .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                             .rotationEffect(.degrees(-10))
                             .opacity(0.95)
@@ -117,7 +117,7 @@ struct RR36Info: View {
        
             Text("Quick SetUp")
                 .fontWeight(.medium)
-                .font(.system(size: 50))
+                .font(.system(size: 40))
                 .foregroundColor(.white)
                 .glow(color: ColorManager.purple4, radius: 3)
                 .opacity(0.15)
@@ -220,6 +220,42 @@ VStack {
                 )}
             }
         }
+        
+        
+        
+        ZStack {
+            
+            Image("comicBubble")
+                .resizable()
+                .foregroundColor(Color.purple)
+                .frame(width: 250, height: 110)
+                .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+            //                    .rotationEffect(.degrees(-10))
+                .opacity(0.95)
+            
+            VStack {
+                
+                NavigationLink( destination: EmptyView(),
+                                label: {
+                    VStack {
+                        Text("main")
+                            .font(.system(size: 15))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+                        Text("Features")
+                            .font(.system(size: 25))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                    }
+                }
+            )}
+        }
+        
+        
     }
     
 
