@@ -74,7 +74,7 @@ struct RR36Info: View {
                         Image("comicBubble")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 500, height: 200)
+                            .frame(width: 500, height: 220)
                             .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                             .rotationEffect(.degrees(-10))
                             .opacity(0.95)
@@ -89,24 +89,26 @@ struct RR36Info: View {
                                 
                             VStack {
                                 
-
-                                Image("in bushes")
-                                    .resizable()
-                                    .foregroundColor(Color.purple)
-                                    .frame(width: 325, height: 150)
-                                    .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
-                                    .rotationEffect(.degrees(-10))
-                                    .opacity(0.95)
-                            
-                                Text("Demo Video")
-                                    .font(.system(size: 25))
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.white)
-                                    .rotationEffect(.degrees(-10))
+                                
+                                    Image("in bushes")
+                                        .resizable()
+                                        .foregroundColor(Color.purple)
+                                        .frame(width: 325, height: 150)
+                                        .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+                                        .rotationEffect(.degrees(-10))
+                                        .opacity(0.95)
+                                    
+                                    Text("Demo Video")
+                                        .font(.system(size: 25))
+                                        .fontWeight(.light)
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(Color.white)
+                                        .rotationEffect(.degrees(-10))
+                                    
+                                
                                 
                                 Spacer ()
-                                    .frame(height: 50)
+                                    .frame(height: 80)
                                 
                               
                             }
@@ -235,7 +237,7 @@ VStack {
             
             VStack {
                 
-                NavigationLink( destination: EmptyView(),
+                NavigationLink( destination: RR40Info2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                     VStack {
                         Text("main")
