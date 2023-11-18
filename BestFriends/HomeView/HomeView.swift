@@ -136,34 +136,34 @@ struct HomeView: View {
                         
                             Spacer()
                                 .frame(width: 100)
-                            
-                            Text(">")
-                                .font(.system(size: 20))
-                                .foregroundColor(Color.white)
-                                .fontWeight(.thin)
-                                .opacity(0.8)
-                                .multilineTextAlignment(.center)
-                                .blinking(duration: 2.0)
-                            
-                            
-                            NavigationLink(destination: RR40Info2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                                label: {
-                                    Image(systemName: "info.circle")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 30, height: 30)
-                                        .foregroundColor(ColorManager .purple3)
-//                                        .glow(color: Color.purple, radius: 2)
-                                        .opacity(0.9)
-                                })
-                        
-                            Text("<")
-                                .font(.system(size: 20))
-                                .foregroundColor(Color.white)
-                                .fontWeight(.thin)
-                                .opacity(0.8)
-                                .multilineTextAlignment(.center)
-                                .blinking(duration: 2.0)
+//                            
+//                            Text(">")
+//                                .font(.system(size: 20))
+//                                .foregroundColor(Color.white)
+//                                .fontWeight(.thin)
+//                                .opacity(0.8)
+//                                .multilineTextAlignment(.center)
+//                                .blinking(duration: 2.0)
+//                            
+//                            
+//                            NavigationLink(destination: RR40Info2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+//                                label: {
+//                                    Image(systemName: "info.circle")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 30, height: 30)
+//                                        .foregroundColor(ColorManager .purple3)
+////                                        .glow(color: Color.purple, radius: 2)
+//                                        .opacity(0.9)
+//                                })
+//                        
+//                            Text("<")
+//                                .font(.system(size: 20))
+//                                .foregroundColor(Color.white)
+//                                .fontWeight(.thin)
+//                                .opacity(0.8)
+//                                .multilineTextAlignment(.center)
+//                                .blinking(duration: 2.0)
                             
                             
                             Spacer()
