@@ -506,14 +506,6 @@ struct HomeView: View {
                     
                     ZStack {
                         
-//                        NavigationLink(destination: MyRoomView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups), label: {
-//                            PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
-//                                .scaledToFit()
-//                                .frame(width: 120, height: 120)
-//                                .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 11)
-//                                .opacity(0.3)
-//                                .padding()
-                            
 
                             NavigationLink(destination: EmptyView(), label: {
                                 PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
@@ -525,27 +517,33 @@ struct HomeView: View {
 
                         })
                         
-                        
+                        Text("tap")
+                            .font(.system(size: 20))
+                            .foregroundColor(Color.white)
+                            .fontWeight(.light)
+                            .opacity(0.99)
+                            .multilineTextAlignment(.center)
+                            .blinking(duration: 2.0)
 
 //******************************* CENTER PLANET NAVIGATION *************************
                         
                         NavigationLink(
                             destination:   RR58(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                             label: {
-
-                                Image(systemName: "")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 120, height: 120)
-                                    .opacity(0.9)
-                                    .foregroundColor(.white)
-                                    .opacity(0.35)
-                                    .blinking(duration: 2.0)
-                            })
-                       
-                    }
-                }
-                
+                                
+                                
+                                    Image(systemName: "")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 120, height: 120)
+                                        .opacity(0.9)
+                                        .foregroundColor(.white)
+                                        .opacity(0.35)
+                                        .blinking(duration: 2.0)
+                              
+                                })
+                            }
+                        }
                 
                 if newGroupMembers.count > 0 {
                     VStack {
