@@ -181,7 +181,7 @@ struct RR11: View {
                                 TextField("", text: $customMessage)
                                     .placeholder(when: customMessage.isEmpty) {
                                         HStack {
-                                            Text("What is the news?")
+                                            Text("What's the latest?")
                                                 .foregroundColor(Color.white)
                                                 .fontWeight(.thin)
                                             Spacer()
@@ -255,14 +255,19 @@ struct RR11: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("(alert friend that you want \nto talk about your Crush)")
+                    Text("(alert friend that you wanna")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
             
-                 
+                    Text("to talk about your Crush)")
+                        .font(.system(size: 15))
+                        .italic()
+                        .fontWeight(.light)
+                        .foregroundColor(ColorManager .grey1)
+                        .multilineTextAlignment(.center)
                     
                     
                     VStack {
