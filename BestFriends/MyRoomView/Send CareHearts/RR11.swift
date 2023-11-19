@@ -262,7 +262,7 @@ struct RR11: View {
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
             
-                    Text("to talk about your Crush)")
+                    Text("talk about your Crush)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)

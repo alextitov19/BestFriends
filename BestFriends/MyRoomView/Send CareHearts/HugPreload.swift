@@ -71,10 +71,10 @@ struct HugPreload: View {
                             Image(systemName: "heart.fill")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 180, height: 130)
+                                .frame(width: 280, height: 95)
                                .foregroundColor(ColorManager .grey3)
                                 .shadow(color: Color.white, radius: 10, x: 5, y: 5)
-                                .opacity(0.3)
+                                .opacity(0.6)
                             
                             
                             
@@ -86,19 +86,11 @@ struct HugPreload: View {
                             .opacity(0.99)
                             
                         }
-                        
-
-//
                     }
                 
-                    
-                    
-                    
+                
 //    *******************************************
-                    
-                    
-                    
-                    
+           
                         HStack {
                             VStack {
                                 NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
@@ -297,7 +289,7 @@ struct HugPreload: View {
                         VStack {
                             
                             Spacer ()
-                                .frame(height: 150)
+                                .frame(height: 100)
                             
                             
                             HStack {
@@ -318,7 +310,7 @@ struct HugPreload: View {
                                     
                                 }
                                 Spacer()
-                                    .frame(width: 200)
+                                    .frame(width: 160)
                                 
                                 ZStack {
                                     
