@@ -51,7 +51,7 @@ struct RR11: View {
 //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
-        customMessage = "Love Tarts from; " + user.firstName + " : " + customMessage;
+        customMessage = "My Crush news; " + user.firstName + " : " + customMessage;
         
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
@@ -181,7 +181,7 @@ struct RR11: View {
                                 TextField("", text: $customMessage)
                                     .placeholder(when: customMessage.isEmpty) {
                                         HStack {
-                                            Text("Say something nice...")
+                                            Text("What is the news?")
                                                 .foregroundColor(Color.white)
                                                 .fontWeight(.thin)
                                             Spacer()
@@ -216,7 +216,7 @@ struct RR11: View {
                             
                             NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
                                             label: {
-                                Text("Load PhotoPOP image")
+                                Text("Load Crush \nPhotoPOP image")
                                     .fontWeight(.bold)
                                     .frame(width: 150, height: 40)
                                     .foregroundColor(Color.black)
@@ -255,7 +255,7 @@ struct RR11: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("(alert friend to check Chat)")
+                    Text("(alert friend that you want \nto talk about your Crush)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
@@ -374,7 +374,7 @@ struct RR11: View {
                                 .glow(color: Color.purple, radius: 2)
                                 .opacity(0.6)
                                 .blinking(duration: 3.0)
-                                .alert("Hearts are beating faster", isPresented: $showingAlert) {
+                                .alert("Sent notification to friend that you want to talk about your crush when they get a chance.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
 
@@ -424,12 +424,12 @@ struct RR11: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) just send you Love Tarts (check Chat)", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) really wants to talk about their crush (check Chat)", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "You got Love Tarts (check Chat) - TAP", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                        print("Create a Heart notification response code: ", response)
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "wants to talk about their Cruch (check Chat)", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        print("Create a Crush notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)
                 }
