@@ -48,7 +48,7 @@ struct HugPreload: View {
                 VStack {
      
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 181)
 //  *************************************************
        
                     HStack {
@@ -66,26 +66,26 @@ struct HugPreload: View {
                         Spacer()
                             .frame(width: 260)
                         
-                        ZStack {
-                            
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 280, height: 95)
-                               .foregroundColor(ColorManager .grey3)
-                                .shadow(color: Color.white, radius: 10, x: 5, y: 5)
-                                .opacity(0.6)
-                            
-                            
-                            
-                            NavigationLink(destination: RR11(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.white, friendName: "My \nCrush")
-                            })
-                            .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-                            .shadow(color: Color.white, radius: 4, x: 2, y: 3)
-                            .opacity(0.99)
-                            
-                        }
+//                        ZStack {
+//
+//                            Image(systemName: "heart.fill")
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 280, height: 95)
+//                               .foregroundColor(ColorManager .grey3)
+//                                .shadow(color: Color.white, radius: 10, x: 5, y: 5)
+//                                .opacity(0.6)
+//
+//
+//
+//                            NavigationLink(destination: RR11(user: user, friend: user, friends: friends, groups: groups), label: {
+//                                HugCircle (color: Color.white, friendName: "My \nCrush")
+//                            })
+//                            .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+//                            .shadow(color: Color.white, radius: 4, x: 2, y: 3)
+//                            .opacity(0.99)
+//
+//                        }
                     }
                 
                 
