@@ -12,6 +12,8 @@ import SwiftUI
 import AVKit
 
 struct ProfessionalHelp: View {
+    
+    @EnvironmentObject var sessionManager: SessionManager
   
     let user: User
    
@@ -48,21 +50,31 @@ struct ProfessionalHelp: View {
                         .opacity(0.25)
                     
                     VStack {
-                
-                        Text("CREATING Chat Rooms")
+                        
+                        Text("CREATING")
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.cyan)
                         
-                        Text("Tap friend's planet, then large ChatBubble popup \nand name room")
+                        Text("1) Tap friend's planet")
                             .font(.system(size: 15))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
                         
-                       
+                        Text("2) Tap large ChatBubble popup")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
                         
+                        
+                        Text("3) Name room")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
                         
                         Spacer ()
                             .frame(height: 10)
@@ -73,8 +85,8 @@ struct ProfessionalHelp: View {
                             .foregroundColor(.white)
                             .glow(color: ColorManager.purple4, radius: 3)
                             .opacity(0.15)
-
-
+                        
+                        
                         Text("Chat Rooms")
                             .fontWeight(.medium)
                             .font(.system(size: 50))
@@ -82,33 +94,57 @@ struct ProfessionalHelp: View {
                             .glow(color: ColorManager.purple4, radius: 3)
                             .opacity(0.15)
                         
-                
-                        Spacer ()
-                            .frame(height: 10)
+                        VStack {
+                            Spacer ()
+                                .frame(height: 10)
+                            
+                            Text("ACCESSING")
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.cyan)
+                            
+                            Text("1) Tap friend's planet")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                            
+                            Text("2) Tap large ChatBubble popup")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                            
+                        }
+                    }
+                }
+                    
+                    VStack {
                         
-                        Text("ACCESSING")
-                            .font(.system(size: 20))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.cyan)
-                        
-                        Text("Tap friend's planet - then ChatBubble popup.")
-                            .font(.system(size: 15))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                 
-                        
-                  
+                        Button(action: {
+                            sessionManager.showLogin()
+                        },
+                               label: {
+                            Image("home-alt2")
+                                .frame(width: 60, height: 30)
+                                .foregroundColor(.black)
+                                .font(.system(size: 20))
+                                .background(ColorManager .grey3)
+                                .cornerRadius(15)
+                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                .opacity(0.70)
+                            
+                        })
                     }
                     
-                }
+                
                 
                 VStack {
                     
                     VStack {
                         Spacer ()
-                            .frame(height: 70)
+                            .frame(height: 30)
                         
                         Text("Delete Rooms")
                             .font(.system(size: 20))
@@ -127,9 +163,7 @@ struct ProfessionalHelp: View {
                 }
                     }
                 }
-                            Spacer ()
-                                .frame(height: 5)
-            
+                     
             
             NavigationLink(
                 destination: ChangeChatBackgroundView(user: user),

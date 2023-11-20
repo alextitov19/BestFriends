@@ -260,7 +260,7 @@ struct CH9: View {
                                 .glow(color: Color.purple, radius: 2)
                                 .opacity(0.6)
                                 .blinking(duration: 3.0)
-                                .alert("Your thank you for the Kisses \nhas been sent", isPresented: $showingAlert) {
+                                .alert("Your 'thank you' for the Kisses \nhas been sent", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })

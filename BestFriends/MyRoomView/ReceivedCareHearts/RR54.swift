@@ -334,7 +334,7 @@ struct RR54: View {
                             
                     NavigationLink( destination:  SendHomie(user: user, friends: friends),
                     label: {
-                        Text("Send a Fistpump back")
+                        Text("Send a Fist-pump back")
                             .fontWeight(.bold)
                             .frame(width: 200, height: 40)
                             .foregroundColor(Color.black)

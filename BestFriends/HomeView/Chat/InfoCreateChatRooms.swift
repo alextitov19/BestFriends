@@ -11,6 +11,8 @@
     import AVKit
 
     struct InfoCreateChatRooms: View {
+        
+        @EnvironmentObject var sessionManager: SessionManager
       
         let user: User
        
@@ -40,18 +42,23 @@
                         
                         VStack {
                     
-                            Text("CREATING Chat Rooms")
+                            Text("CREATING")
                                 .font(.system(size: 20))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.cyan)
                             
-                            Text("Tap ALL friend's planets one-at-a-time, \nbefore tapping ChatBubble popup. \n Then tap ChatBubble popup and name room")
+                            Text("1) Tap ALL friend's planets one-at-a-time, \n(before tapping ChatBubble popup)")
                                 .font(.system(size: 15))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
                             
+                            Text("2) Tap ChatBubble popup and name room")
+                                .font(.system(size: 15))
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
                            
                             
                             
@@ -83,7 +90,7 @@
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.cyan)
                             
-                            Text("Just pull up on Chat tab at bottom of page.")
+                            Text("1) Swipe-up on Chat tab at bottom of page")
                                 .font(.system(size: 15))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
@@ -99,15 +106,29 @@
                     
                     VStack {
                         
-                        
+                        VStack {
+                                                  
+                                                  Button(action: {
+                                                      sessionManager.showLogin()
+                                                  },
+                                                         label: {
+                                                      Image("home-alt2")
+                                                          .frame(width: 60, height: 30)
+                                                          .foregroundColor(.black)
+                                                          .font(.system(size: 20))
+                                                          .background(ColorManager .grey3)
+                                                          .cornerRadius(15)
+                                                          .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                                          .opacity(0.70)
+                                                      
+                                                  })
+                                              }
                         
                         
                     }
                         }
                     }
-                                Spacer ()
-                                    .frame(height: 5)
-                
+                            
                 
                 NavigationLink(
                     destination: ChangeChatBackgroundView(user: user),

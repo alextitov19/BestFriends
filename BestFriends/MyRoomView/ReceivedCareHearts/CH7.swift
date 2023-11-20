@@ -206,7 +206,7 @@ struct CH7: View {
                             .opacity(0.5)
                         
                         VStack {
-                            Text("Friend sent you a \ncheer-up Song")
+                            Text("Friend sent you a \ncheer-up Song \nin Chat")
                                 .font(.system(size: 19, weight: .light))
                                 .foregroundColor(Color.white)
                                 .multilineTextAlignment(.center)
@@ -216,7 +216,7 @@ struct CH7: View {
                         }
                     }
 
-                    Text("(Check Chat - shoot'm a thank you)")
+                    Text("(Shoot'm a thank you)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
@@ -333,7 +333,7 @@ struct CH7: View {
                                 .glow(color: Color.purple, radius: 2)
                                 .opacity(0.6)
                                 .blinking(duration: 3.0)
-                                .alert("Your thanks for the song was sent.", isPresented: $showingAlert) {
+                                .alert("Your 'thanks' for the song was sent.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             

@@ -299,7 +299,7 @@ struct VirtualHug: View {
                                     .glow(color: Color.purple, radius: 2)
                                     .opacity(0.6)
                                     .blinking(duration: 3.0)
-                                    .alert("Your thank you is on it's way.", isPresented: $showingAlert) {
+                                    .alert("Your 'thank you' is on it's way.", isPresented: $showingAlert) {
                                         Button("OK", role: .cancel) { }
                                     }
                             })

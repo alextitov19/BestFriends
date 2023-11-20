@@ -110,7 +110,7 @@ struct FH2: View {
                         .foregroundColor(Color.purple)
                         .frame(width: 450, height: 450)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.5)
+                        .opacity(0.3)
                     
                     VStack {
                    
