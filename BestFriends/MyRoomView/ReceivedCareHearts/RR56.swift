@@ -39,7 +39,13 @@ struct RR56: View {
             AdPlayerView(name: "background_7")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                .opacity(0.9)
+                .opacity(0.5)
+            
+            
+            AdPlayerView(name: "sendHearts1")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.5)
             
             
             ZStack{
@@ -47,7 +53,7 @@ struct RR56: View {
                 VStack {
      
                     Spacer()
-                        .frame(height: 115)
+                        .frame(height: 215)
                     
                         HStack {
                             VStack {
@@ -175,7 +181,7 @@ struct RR56: View {
                             
                             ZStack {
                                 NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
-                                    HugCircle (color: ColorManager .grey1, friendName: "Build \nyour own \n'in-beta'")
+                                    HugCircle (color: ColorManager .grey1, friendName: "Build \nyour own \n(in-beta)")
                                 })
                                 .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
                                 .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
@@ -185,65 +191,67 @@ struct RR56: View {
                             }
                         }
                     
-                                
-                        
-                ZStack {
-                    
-                    //*********************************************** Motion
-                    GeometryReader { geo in
-                        HStack(spacing: 280) {
-                            
-                            Image("")
-                                .aspectRatio(contentMode: .fit)
-//                                        .blinking(duration: 6.0)
-                            
-                            Spacer()
-                                .frame(width: 50)
+                        VStack {
                             
                             ZStack {
                                 
-                                //    ********************************************
-                                Image("CoolGuy")
-//                                            .aspectRatio(contentMode: .fit)
-                                    .frame(width: 120, height: 120)
-                                    .blinking(duration: 7.0)
-                                
-                                Text("Yep, got a CareHeart")
-                                    .fontWeight(.medium)
-                                    .frame(width: 200, height: 40)
-                                    .foregroundColor(Color.white)
-                                    .font(.system(size: 20))
-                                    .background(Color.cyan)
-                                    .cornerRadius(7)
-                                    .rotationEffect(.degrees(-38))
-                                    .opacity(0.8)
-                                //                                            .glow(color: ColorManager .grey4, radius: 3)
-                                    .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
-                                    .blinking(duration: 7.0)
-                                
-                                //**********************************************************
-                                Spacer()
-                                    .frame(height: 5)
+                                //*********************************************** Motion
+                                GeometryReader { geo in
+                                    HStack(spacing: 280) {
+                                        
+                                        Image("")
+                                            .aspectRatio(contentMode: .fit)
+                                        //                                        .blinking(duration: 6.0)
+                                        
+                                        Spacer()
+                                            .frame(width: 50)
+                                        
+                                        ZStack {
+                                            
+                                            //    ********************************************
+                                            Image("CoolGuy")
+                                            //                                            .aspectRatio(contentMode: .fit)
+                                                .frame(width: 120, height: 120)
+                                                .blinking(duration: 7.0)
+                                            
+                                            Text("You got CareHeart")
+                                                .fontWeight(.medium)
+                                                .frame(width: 200, height: 40)
+                                                .foregroundColor(Color.white)
+                                                .font(.system(size: 20))
+                                                .background(Color.cyan)
+                                                .cornerRadius(7)
+                                                .rotationEffect(.degrees(-38))
+                                                .opacity(0.8)
+                                            //                                            .glow(color: ColorManager .grey4, radius: 3)
+                                                .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
+                                                .blinking(duration: 7.0)
+                                            
+                                            //**********************************************************
+                                            Spacer()
+                                                .frame(height: 5)
+                                        }
+                                        
+                                        Image("")
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: geo.size.width, alignment: .leading)
+                                        
+                                        
+                                        
+                                    }
+                                    .frame(width: geo.size.width, height: geo.size.height,
+                                           alignment: animate ? .trailing : .leading)
+                                }
+                                .ignoresSafeArea()
+                                .onAppear {
+                                    withAnimation(animation) {
+                                        animate.toggle()
+                                    }
+                                    
+                                }
                             }
                             
-                            Image("")
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: geo.size.width, alignment: .leading)
-                            
-                            
-                            
                         }
-                        .frame(width: geo.size.width, height: geo.size.height,
-                               alignment: animate ? .trailing : .leading)
-                    }
-                    .ignoresSafeArea()
-                    .onAppear {
-                        withAnimation(animation) {
-                            animate.toggle()
-                        }
-                        
-                    }
-                }
 
             VStack {
                                 

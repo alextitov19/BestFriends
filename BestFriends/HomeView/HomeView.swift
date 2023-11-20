@@ -521,7 +521,11 @@ struct HomeView: View {
                             .multilineTextAlignment(.center)
                             .blinking(duration: 2.0)
 
+                        
+                        
+                        //******************************* CENTER PLANET*****************
 //******************************* CENTER PLANET*****************
+                        
                         NavigationLink(
                             destination:   RR58(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                             label: {

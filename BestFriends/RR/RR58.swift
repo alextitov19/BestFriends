@@ -91,7 +91,7 @@ struct RR58: View {
                             label: {
                                 Text("Walk-through")
                                     .fontWeight(.thin)
-                                    .frame(width: 200, height: 40)
+                                    .frame(width: 180, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 25))
                                     .background(Color.cyan)
@@ -100,9 +100,9 @@ struct RR58: View {
 
                             })
                         
+                      
                         Spacer()
                             .frame(height: 15)
-                        
                         
                         NavigationLink(
                             destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
@@ -137,6 +137,24 @@ struct RR58: View {
 
                         })
                         
+                       
+                        
+                        Spacer()
+                            .frame(height: 15)
+                        
+                        NavigationLink(
+                            destination:  RR32(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                            label: {
+                                Text("My Vibe")
+                                    .fontWeight(.thin)
+                                    .frame(width: 220, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 25))
+                                    .background(Color.cyan)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
+                            })
                         
                         
                         Spacer()
