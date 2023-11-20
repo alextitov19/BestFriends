@@ -345,12 +345,8 @@ struct HomeView: View {
             
             Text("")
                 .fontWeight(.light)
-            //                .frame(width: 210, height: 25)
-            //                .foregroundColor(Color.white)
                 .font(.system(size: 10))
-            //                .background(ColorManager .grey4)
                 .cornerRadius(7)
-            //                .rotationEffect(.degrees(-25))
                 .opacity(0.6)
                 .glow(color: ColorManager .grey4, radius: 3)
                 .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
@@ -518,15 +514,14 @@ struct HomeView: View {
                         })
                         
                         Text("tap")
-                            .font(.system(size: 20))
+                            .font(.system(size: 40))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .opacity(0.99)
                             .multilineTextAlignment(.center)
                             .blinking(duration: 2.0)
 
-//******************************* CENTER PLANET NAVIGATION *************************
-                        
+//******************************* CENTER PLANET*****************
                         NavigationLink(
                             destination:   RR58(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                             label: {
