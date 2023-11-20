@@ -141,7 +141,7 @@ struct HugPreload: View {
                                 Image("IconPhotoNew")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 55, height: 55)
+                                    .frame(width: 60, height: 60)
                                     .rotationEffect(.degrees(-7))
                                     .foregroundColor(ColorManager .purple5)
                                     .glow(color: Color.purple, radius: 2)
@@ -152,10 +152,6 @@ struct HugPreload: View {
                         
                     }
 
-                    Spacer ()
-                        .frame(height: 1)
-                    
-                    
                     HStack {
                         
                         ZStack {
