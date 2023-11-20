@@ -48,46 +48,34 @@ struct HugPreload: View {
                 VStack {
      
                     Spacer()
-                        .frame(height: 181)
+                        .frame(height: 160)
 //  *************************************************
        
                     HStack {
                         
                         ZStack {
                             Image(systemName: "")
-//                                .resizable()
-//                                .scaledToFit()
-//                                .frame(width: 0, height: 0)
-//                               .foregroundColor(ColorManager .grey3)
-//                                .shadow(color: Color.white, radius: 10, x: 5, y: 5)
-//                                .opacity(0.3)
-                            
+    
                         }
-                        Spacer()
-                            .frame(width: 260)
                         
-//                        ZStack {
-//
-//                            Image(systemName: "heart.fill")
-//                                .resizable()
-//                                .scaledToFit()
-//                                .frame(width: 280, height: 95)
-//                               .foregroundColor(ColorManager .grey3)
-//                                .shadow(color: Color.white, radius: 10, x: 5, y: 5)
-//                                .opacity(0.6)
-//
-//
-//
-//                            NavigationLink(destination: RR11(user: user, friend: user, friends: friends, groups: groups), label: {
-//                                HugCircle (color: Color.white, friendName: "My \nCrush")
-//                            })
-//                            .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-//                            .shadow(color: Color.white, radius: 4, x: 2, y: 3)
-//                            .opacity(0.99)
-//
-//                        }
-                    }
-                
+                        Spacer()
+                            .frame(width: 300)
+                        
+
+                            
+                            NavigationLink(
+                                destination: RR40Info2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                label: {
+                                    Image(systemName: "info.circle")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 32, height: 32)
+                                        .foregroundColor(ColorManager .purple3)
+    //                                        .glow(color: Color.purple, radius: 2)
+                                        .opacity(0.9)
+                                })
+                        }
+           
                 
 //    *******************************************
            
@@ -114,7 +102,7 @@ struct HugPreload: View {
                         }
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 10)
                         
                     VStack {
                            
