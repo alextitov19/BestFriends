@@ -89,7 +89,7 @@ VStack {
                     .foregroundColor(ColorManager .grey1)
                     .opacity(0.6)
                 
-                Text("(shows as atmosphere around planet)")
+                Text("(So friends can help!)")
                     .font(.system(size: 17, weight: .light))
                     .italic()
                     .foregroundColor(ColorManager .grey1)
