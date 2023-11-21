@@ -32,6 +32,8 @@ struct HomeView: View {
     
     @State private var movingPlanets = false
     
+    @State private var cancelledChatRoom = false
+    
 //    @StateObject var model = Model.loadData
     
     @State private var scale = 1.0
@@ -458,6 +460,7 @@ struct HomeView: View {
                                 createGroup(name: text)
                             } else {
                                 // The dialog was cancelled
+                                cancelledChatRoom = true
                             }
                         })
                         .frame(width: 0, height: 0)
@@ -511,14 +514,17 @@ struct HomeView: View {
                         Spacer()
                         
                         Button(action: {
+                            cancelledChatRoom = false
                             chatButtonTapped()
                         }, label: {
                             
                             ZStack {
                                 
-                                Image("iconChat5")
-                                    .opacity(0.8)
-                                    .frame(width: 120, height: 120)
+                                if !cancelledChatRoom {
+                                    Image("iconChat5")
+                                        .opacity(0.8)
+                                        .frame(width: 120, height: 120)
+                                }
 
                                 }
                             
