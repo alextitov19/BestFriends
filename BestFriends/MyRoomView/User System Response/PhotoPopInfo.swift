@@ -69,25 +69,36 @@ struct PhotoPopInfo: View {
             }
    
 VStack {
+    
+    ZStack {
+        
+        Image(systemName: "cube.fill")
+            .resizable()
+            .foregroundColor(Color.purple)
+            .frame(width: 250, height: 200)
+            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+            .opacity(0.5)
+        
+        VStack {
+            Text("When your friends")
+                .fontWeight(.medium)
+                .font(.system(size: 30))
+                .foregroundColor(.white)
+                .glow(color: ColorManager.purple4, radius: 3)
+                .opacity(0.15)
+            
+            Text("aren't around")
+                .fontWeight(.medium)
+                .font(.system(size: 30))
+                .foregroundColor(.white)
+                .glow(color: ColorManager.purple4, radius: 3)
+                .opacity(0.15)
+        }
+    }
 
     Spacer()
-        .frame(height: 50)
-    
-    Text("When your friends")
-        .fontWeight(.medium)
-        .font(.system(size: 30))
-        .foregroundColor(.white)
-        .glow(color: ColorManager.purple4, radius: 3)
-        .opacity(0.15)
-
-    Text("aren't around")
-        .fontWeight(.medium)
-        .font(.system(size: 30))
-        .foregroundColor(.white)
-        .glow(color: ColorManager.purple4, radius: 3)
-        .opacity(0.15)
-    
-    
+        .frame(height: 10)
+ 
     VStack {
         
         HStack {
@@ -336,22 +347,12 @@ VStack {
     VStack {
         
         HStack {
-            
-            
-//            ZStack {
-//
-//                Image("FatGuy200")
-//                    .aspectRatio(contentMode: .fit)
-//                //                               .blinking(duration: 4.0)
-//
-////            user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups
-//            }
-                
+
             ZStack {
-                //            ******************** RR36Info(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups)
+             
                 
                 NavigationLink(
-                    destination:  RR4(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                    destination:  EmptyView(),
                     label: {
                         ZStack {
                             
@@ -366,7 +367,7 @@ VStack {
                                             .aspectRatio(contentMode: .fit)
                                             .blinking(duration: 4.0)
                                         
-                                        Text("demo")
+                                        Text("Beta")
                                             .fontWeight(.regular)
                                             .frame(width: 55, height: 30)
                                             .foregroundColor(Color.black)

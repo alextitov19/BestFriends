@@ -488,8 +488,9 @@ struct HomeView: View {
 
                         
                         
-                        //******************************* CENTER PLANET*****************
-//******************************* CENTER PLANET*****************
+//****** CENTER PLANET****************** CENTER PLANET*****************
+                        
+//******************************* CENTER PLANET****************** CENTER PLANET**********
                         
                         NavigationLink(
                             destination:   RR58(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
