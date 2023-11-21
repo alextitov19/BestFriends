@@ -113,20 +113,34 @@ struct FH2: View {
                     
                     VStack {
                    
-                        
-                        Text("Letting the outside of you")
-                            .font(.system(size: 27))
+                        Text("Now you can...")
+                            .font(.system(size: 35))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .opacity(0.4)
+                        
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        Text("Let the outside of you")
+                            .font(.system(size: 27))
+                            .italic()
                             .multilineTextAlignment(.center)
                         
                         Text("match the inside of you")
                             .font(.system(size: 27))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.light)
+                            .italic()
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        Text("on social media")
+                            .font(.system(size: 27))
+                            .italic()
                             .multilineTextAlignment(.center)
                       
-             
+                        Spacer()
+                            .frame(height: 20)
                         
     VStack {
 //                            ******************
@@ -154,7 +168,7 @@ struct FH2: View {
                                     
                                     Text("Supporting Influencers")
                                         .fontWeight(.thin)
-                                        .frame(width: 250, height: 40)
+                                        .frame(width: 270, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 25))
                                         .background(Color.cyan)
@@ -165,10 +179,10 @@ struct FH2: View {
                                 
                             }
                         }
-                    }
-                }
-                
- 
+                        
+                Spacer()
+                    .frame(height: 20)
+                        
                         VStack {
                             
                             Button(action: {
@@ -189,6 +203,10 @@ struct FH2: View {
                         
                         
                         
+                    }
+                }
+                
+ 
                         
                         Spacer()
                             .frame(height: 40)
