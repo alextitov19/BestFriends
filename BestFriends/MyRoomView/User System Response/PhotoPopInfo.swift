@@ -73,14 +73,19 @@ VStack {
     Spacer()
         .frame(height: 50)
     
-    Text("when your friends \naren't around")
+    Text("When your friends")
         .fontWeight(.medium)
         .font(.system(size: 30))
         .foregroundColor(.white)
         .glow(color: ColorManager.purple4, radius: 3)
         .opacity(0.15)
 
-    
+    Text("aren't around")
+        .fontWeight(.medium)
+        .font(.system(size: 30))
+        .foregroundColor(.white)
+        .glow(color: ColorManager.purple4, radius: 3)
+        .opacity(0.15)
     
     
     VStack {

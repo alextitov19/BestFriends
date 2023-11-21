@@ -70,15 +70,15 @@ struct FH2: View {
                             
                             
                             Text("Non-toxic")
-                                .font(.system(size: 27))
+                                .font(.system(size: 35))
                                 .fontWeight(.regular)
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
+                                .foregroundColor(Color.cyan)
                                 .rotationEffect(.degrees(-10))
                                 .blinking(duration: 2.0)
                     
                       
-                            Text("No feelings of;")
+                            Text("No feelings of...")
                                 .font(.system(size: 15))
                                 .italic()
                                 .fontWeight(.light)
@@ -89,8 +89,7 @@ struct FH2: View {
                             
                             
                             Text("I'm not good enough")
-                                .font(.system(size: 15))
-                                .italic()
+                                .font(.system(size: 20))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.leading)
                                 .rotationEffect(.degrees(-10))
