@@ -81,7 +81,7 @@ struct RR36Info: View {
                         
                         
                         
-                        Link(destination: URL(string: "https://youtu.be/QU-MfN7k00k?feature=shared")!) {
+                        Link(destination: URL(string: "https://youtu.be/PizcnExQjsc")!) {
                            
 //                            ZStack {
                                 
