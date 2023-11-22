@@ -176,7 +176,7 @@ struct RR59: View {
                    HStack {
                         
                         ZStack {
-                            NavigationLink(destination: RR27(user: user, friend: user, friends: friends, groups: groups), label: {
+                            NavigationLink(destination: RR13(user: user, friends: friends, groups: groups), label: {
                                 HugCircle (color: Color.purple, friendName: "Feeling \nAlone")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
