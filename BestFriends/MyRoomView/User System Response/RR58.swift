@@ -158,11 +158,11 @@ struct RR58: View {
                         })
                         
                    
-//                        
+//
 //
 //                        Spacer()
 //                            .frame(height: 30)
-//             
+//
 //                        Button(action: {
 //                            sessionManager.showLogin()
 //                        },
@@ -175,7 +175,7 @@ struct RR58: View {
 //                                .cornerRadius(15)
 //                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
 //                                .opacity(0.70)
-//                            
+//
 //                        })
 
                     }
