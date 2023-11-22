@@ -74,25 +74,21 @@ VStack {
         
         Image(systemName: "cube.fill")
             .resizable()
-            .foregroundColor(Color.purple)
+            .foregroundColor(Color.cyan)
             .frame(width: 250, height: 200)
             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
             .opacity(0.5)
         
         VStack {
             Text("When your friends")
-                .fontWeight(.medium)
-                .font(.system(size: 30))
-                .foregroundColor(.white)
-                .glow(color: ColorManager.purple4, radius: 3)
-                .opacity(0.15)
+                .font(.system(size: 30, weight: .light))
+                .foregroundColor(ColorManager .grey1)
+                .opacity(0.5)
             
             Text("aren't around")
-                .fontWeight(.medium)
-                .font(.system(size: 30))
-                .foregroundColor(.white)
-                .glow(color: ColorManager.purple4, radius: 3)
-                .opacity(0.15)
+                .font(.system(size: 30, weight: .light))
+                .foregroundColor(ColorManager .grey1)
+                .opacity(0.5)
         }
     }
 
