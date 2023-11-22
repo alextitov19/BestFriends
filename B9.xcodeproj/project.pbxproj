@@ -865,8 +865,6 @@
 		2D2A186D2AEEEC9400B0C1DF /* RR */ = {
 			isa = PBXGroup;
 			children = (
-				2D2A187E2AEEED6100B0C1DF /* RR58.swift */,
-				2D2A18802AEEED6E00B0C1DF /* RR59.swift */,
 			);
 			path = RR;
 			sourceTree = "<group>";
@@ -1516,6 +1514,8 @@
 		CF51BF812AE0C15C007A3DBF /* User System Response */ = {
 			isa = PBXGroup;
 			children = (
+				2D2A187E2AEEED6100B0C1DF /* RR58.swift */,
+				2D2A18802AEEED6E00B0C1DF /* RR59.swift */,
 				CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */,
 				CF2EE6F329515B8400B1B16D /* INFOChatCircles.swift */,
 				2DB42CF52AAE878100E137C0 /* RR25.swift */,
