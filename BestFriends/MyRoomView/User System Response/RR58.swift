@@ -142,9 +142,12 @@ struct RR58: View {
                         Spacer()
                             .frame(height: 15)
                         
+//    PhotoPopInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups)
+                        
+//                        HugPreload(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres)
                         
                     NavigationLink(
-                        destination:  PhotoPopInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        destination:  RR59(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
                         label: {
                             Text("Virtual Friends")
                                 .fontWeight(.thin)
