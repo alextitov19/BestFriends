@@ -122,7 +122,7 @@ struct InfoSafeChat: View {
             VStack{
                 
           Spacer()
-                    .frame(height: 150)
+                .frame(height: 150)
  
                 if (showingHeart) {
                     
@@ -329,10 +329,10 @@ struct InfoSafeChat: View {
                             
                             VStack {
                                 
-                                Spacer()
-                                    .frame(width: 140)
-                                
-                                
+//                                Spacer()
+//                                    .frame(width: 60)
+//
+//
                                 ZStack {
                                     
                                     //*********************************************** Motion
