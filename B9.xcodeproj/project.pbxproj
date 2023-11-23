@@ -1076,12 +1076,7 @@
 			isa = PBXGroup;
 			children = (
 				CFC0EE7829080585006B3FAA /* INFO Pages */,
-				CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */,
-				CFCD4BAC2965C27F00BBE43A /* InfoSafeChat.swift */,
 				CF2EE6F929516C9E00B1B16D /* InfoCustomizeChatBackgrounds.swift */,
-				CF2EE6F529516C7000B1B16D /* InfoCreateGroupChatRooms.swift */,
-				CF09118D284894F400CB0AF0 /* InfoView.swift */,
-				CFC0ACC128EFE26400B49831 /* ChatInfo2.swift */,
 			);
 			path = InfoPages;
 			sourceTree = "<group>";
@@ -1286,6 +1281,18 @@
 				2D7127BE2A658BBA00E14744 /* CH13.swift */,
 			);
 			path = "Drama Central 2";
+			sourceTree = "<group>";
+		};
+		CF1A33842B0ECEB000D24B66 /* System CHs */ = {
+			isa = PBXGroup;
+			children = (
+				CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */,
+				CFCD4BAC2965C27F00BBE43A /* InfoSafeChat.swift */,
+				CF09118D284894F400CB0AF0 /* InfoView.swift */,
+				CFC0ACC128EFE26400B49831 /* ChatInfo2.swift */,
+				CF2EE6F529516C7000B1B16D /* InfoCreateGroupChatRooms.swift */,
+			);
+			path = "System CHs";
 			sourceTree = "<group>";
 		};
 		CF1CD75329E2908B00D1F801 /* New Summer Feature */ = {
@@ -1516,6 +1523,7 @@
 			children = (
 				2D2A187E2AEEED6100B0C1DF /* RR58.swift */,
 				2D2A18802AEEED6E00B0C1DF /* RR59.swift */,
+				CF1A33842B0ECEB000D24B66 /* System CHs */,
 				CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */,
 				CF2EE6F329515B8400B1B16D /* INFOChatCircles.swift */,
 				2DB42CF52AAE878100E137C0 /* RR25.swift */,
