@@ -97,7 +97,7 @@ struct BestFriendMessages: View {
 
                     VStack {
                         
-                        Text("Keepsake messages")
+                        Text("SmileVault")
                             .font(.system(size: 23))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.regular)
@@ -109,12 +109,21 @@ struct BestFriendMessages: View {
                         Spacer ()
                             .frame(height: 10)
                         
-                        Text("(I long-tapped in Chat)")
+                        Text("(Nice messages & Friend Strengths")
                             .font(.system(size: 17))
                             .italic()
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
+                        
+                        Text("I long-tapped in Chat)")
+                            .font(.system(size: 17))
+                            .italic()
+                            .foregroundColor(ColorManager .grey1)
+                            .fontWeight(.regular)
+                            .multilineTextAlignment(.center)
+                        
+                     
                         
                         Spacer ()
                             .frame(height: 30)

@@ -162,7 +162,7 @@ struct RR59: View {
                             
                             
                             NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                                HugCircle (color: Color.pink, friendName: "My \nKeepsake \nMessages")
+                                HugCircle (color: Color.pink, friendName: "Smile \nVault")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .pink, radius: 5, x: 2, y: -2)
@@ -177,7 +177,7 @@ struct RR59: View {
                         
                         ZStack {
                             NavigationLink(destination: RR13(user: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.purple, friendName: "???????????")
+                                HugCircle (color: Color.purple, friendName: "Empty")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                             .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
@@ -191,8 +191,8 @@ struct RR59: View {
                         ZStack {
                             
                             
-                            NavigationLink(destination: RR26(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.green, friendName: "My \nFriend \nStrengths")
+                            NavigationLink(destination: EmptyView(), label: {
+                                HugCircle (color: Color.green, friendName: "Empty")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                             .shadow(color: Color.green, radius: 10, x: -4, y: 4)
