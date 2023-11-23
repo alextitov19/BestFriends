@@ -121,8 +121,8 @@ struct RR59: View {
                     VStack {
                            
                         HStack {
-                            NavigationLink(destination: VirtualHug(user: user, friends: friends), label: {
-                                HugCircle (color: Color.cyan, friendName: "Little \nSad \nToday")
+                            NavigationLink(destination: InfoSafeChat(user: user, friends: friends), label: {
+                                HugCircle (color: Color.cyan, friendName: "Sad \nn' \nLonely")
                             })
                             .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
                             .shadow(color: Color.blue, radius: 5, x: -2, y: -2)
@@ -177,7 +177,7 @@ struct RR59: View {
                         
                         ZStack {
                             NavigationLink(destination: RR13(user: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.purple, friendName: "Feeling \nAlone")
+                                HugCircle (color: Color.purple, friendName: "???????????")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                             .shadow(color: Color.purple, radius: 10, x: -4, y: 4)

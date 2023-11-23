@@ -86,14 +86,14 @@ struct BestFriendMessages: View {
                 
                 ZStack {
                    
-                    Image(systemName: "triangle")
-                        .resizable()
-                        .foregroundColor(Color.purple)
-                        .frame(width: 320, height: 320)
-                        .rotationEffect(.degrees(180))
-                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.25)
-                    
+//                    Image(systemName: "triangle")
+//                        .resizable()
+//                        .foregroundColor(Color.purple)
+//                        .frame(width: 320, height: 320)
+//                        .rotationEffect(.degrees(180))
+//                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+//                        .opacity(0.25)
+//
 
                     VStack {
                         
@@ -109,7 +109,7 @@ struct BestFriendMessages: View {
                         Spacer ()
                             .frame(height: 10)
                         
-                        Text("(Just long-top in Chat)")
+                        Text("(I long-tapped in Chat)")
                             .font(.system(size: 17))
                             .italic()
                             .foregroundColor(ColorManager .grey1)

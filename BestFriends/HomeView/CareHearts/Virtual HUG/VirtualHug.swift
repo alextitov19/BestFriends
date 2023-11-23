@@ -367,18 +367,3 @@ struct VirtualHug: View {
     }
 }
 
-//
-//struct RectView: View {
-//    let user: User
-//    let friend: User
-//    let color: Color
-//
-//    var body: some View {
-//        Text(friend.firstName + " " + String(friend.lastName.first!))
-//            .fontWeight(.bold)
-//            .frame(width: 80, height: 80)
-//            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//            .font(.system(size: 8))
-//            .background(color)
-//            .cornerRadius(75)
-//            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue:
