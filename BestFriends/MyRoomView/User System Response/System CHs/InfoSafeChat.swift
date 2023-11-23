@@ -19,6 +19,11 @@ struct InfoSafeChat: View {
     let user: User
     let friends: [User]
     
+    //**************************
+        @State var animate: Bool = false
+        let animation: Animation = Animation.linear(duration:3.0).repeatForever(autoreverses: false)
+    //**************************
+    
     @State private var selectedFriends: [String] = []
     @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
     @State private var shareColor = ColorManager.purple5
@@ -319,8 +324,74 @@ struct InfoSafeChat: View {
                             
                       
                             
+//     ************************ Balloon Guy **************
+               
                             
-                            
+                            VStack {
+                                
+                                Spacer()
+                                    .frame(width: 140)
+                                
+                                
+                                ZStack {
+                                    
+                                    //*********************************************** Motion
+                                    GeometryReader { geo in
+                                        HStack(spacing: 280) {
+                                            
+                                            Image("")
+                                                .aspectRatio(contentMode: .fit)
+                                            //                                        .blinking(duration: 6.0)
+                                            
+                                            Spacer()
+                                                .frame(width: 50)
+                                            
+                                            ZStack {
+                                                
+                                                //    ********************************************
+                                                Image("BalloonGuy300")
+                                                //                                            .aspectRatio(contentMode: .fit)
+                                                    .frame(width: 120, height: 120)
+                                                    .blinking(duration: 7.0)
+                                                    .opacity(0.5)
+                                                
+                                                Text("You're no alone here")
+                                                    .fontWeight(.medium)
+                                                    .frame(width: 200, height: 40)
+                                                    .foregroundColor(Color.black)
+                                                    .font(.system(size: 15))
+                                                    .background(ColorManager .purple1)
+                                                    .cornerRadius(7)
+                                                    .rotationEffect(.degrees(-25))
+                                                    .opacity(0.8)
+                                                //                                            .glow(color: ColorManager .grey4, radius: 3)
+                                                    .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
+                                                    .blinking(duration: 7.0)
+                                                
+                                                //**********************************************************
+                                                
+                                            }
+                                            
+                                            Image("")
+                                                .aspectRatio(contentMode: .fit)
+                                                .frame(width: geo.size.width, alignment: .leading)
+                                            
+                                            
+                                            
+                                        }
+                                        .frame(width: geo.size.width, height: geo.size.height,
+                                               alignment: animate ? .trailing : .leading)
+                                    }
+                                    .ignoresSafeArea()
+                                    .onAppear {
+                                        withAnimation(animation) {
+                                            animate.toggle()
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        
                                                         
                 VStack {
             
