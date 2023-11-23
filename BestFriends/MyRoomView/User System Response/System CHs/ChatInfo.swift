@@ -22,7 +22,7 @@ struct ChatInfo: View {
                 .opacity(0.9)
                 .ignoresSafeArea()
             
-            AdPlayerView(name: "Fireworks2")
+            AdPlayerView(name: "Fireworks1")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.9)
