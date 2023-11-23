@@ -122,7 +122,7 @@ struct InfoSafeChat: View {
             VStack{
                 
           Spacer()
-                .frame(height: 150)
+                .frame(height: 200)
  
                 if (showingHeart) {
                     
@@ -327,17 +327,15 @@ struct InfoSafeChat: View {
 //     ************************ Balloon Guy **************
                
                             
-                            VStack {
+                VStack {
+                              
+                  
                                 
-//                                Spacer()
-//                                    .frame(width: 60)
-//
-//
                                 ZStack {
                                     
                                     //*********************************************** Motion
                                     GeometryReader { geo in
-                                        HStack(spacing: 280) {
+                                        HStack(spacing: 200) {
                                             
                                             Image("")
                                                 .aspectRatio(contentMode: .fit)
@@ -352,10 +350,10 @@ struct InfoSafeChat: View {
                                                 Image("BalloonGuy300")
                                                 //                                            .aspectRatio(contentMode: .fit)
                                                     .frame(width: 120, height: 120)
-                                                    .blinking(duration: 7.0)
-                                                    .opacity(0.5)
+                                                   .blinking(duration: 7.0)
+                                                    .opacity(0.60)
                                                 
-                                                Text("You're no alone here")
+                                                Text("You're not alone here")
                                                     .fontWeight(.medium)
                                                     .frame(width: 200, height: 40)
                                                     .foregroundColor(Color.black)
@@ -363,7 +361,8 @@ struct InfoSafeChat: View {
                                                     .background(ColorManager .purple1)
                                                     .cornerRadius(7)
                                                     .rotationEffect(.degrees(-25))
-                                                    .opacity(0.8)
+//                                                    .blinking(duration: 7.0)
+                                                    .opacity(0.99)
                                                 //                                            .glow(color: ColorManager .grey4, radius: 3)
                                                     .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
                                                     .blinking(duration: 7.0)
@@ -397,7 +396,7 @@ struct InfoSafeChat: View {
             
                     
                     Spacer()
-                        .frame(height: 15)
+                        .frame(height: 30)
                     
                     Button(action: {
                         sessionManager.showLogin()
@@ -414,8 +413,9 @@ struct InfoSafeChat: View {
 
                     })
                                                            
-                            
-                                                            
+//                    Spacer()
+//                        .frame(height: 150)
+//
                                                    
             }
         }
