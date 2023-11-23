@@ -128,7 +128,7 @@ struct InfoSafeChat: View {
                         ZStack{
                             Image(systemName: "heart.fill")
                                 .resizable()
-                                .foregroundColor(.cyan)
+                                .foregroundColor(.purple)
                                 .frame(width: 300, height: 250)
                                 .shadow(color: .blue, radius: 65, x: 30, y: 50)
                                 .opacity(0.3)
