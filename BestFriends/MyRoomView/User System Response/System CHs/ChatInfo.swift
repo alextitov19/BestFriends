@@ -40,7 +40,7 @@ struct ChatInfo: View {
                             Image("comicBubble")
                                 .resizable()
                                 .foregroundColor(Color.purple)
-                                .frame(width: 600, height: 300)
+                                .frame(width: 500, height: 200)
                                 .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                                 .rotationEffect(.degrees(-10))
                                 .opacity(0.5)
@@ -52,8 +52,8 @@ struct ChatInfo: View {
                               
                                 
                                 Text("We're not sure what you did")
-                                    .font(.system(size: 30))
-                                    .fontWeight(.regular)
+                                    .font(.system(size: 25))
+                                    .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.white)
                                     .rotationEffect(.degrees(-10))
@@ -73,7 +73,7 @@ struct ChatInfo: View {
                         
                         
                         Spacer()
-                            .frame(height: 200)
+                            .frame(height: 150)
                         
                         Text("CONGRATULATIONS!!!")
                             .font(.system(size: 35))
@@ -83,7 +83,7 @@ struct ChatInfo: View {
 //                            .rotationEffect(.degrees(-10))
                             .blinking(duration: 1.0)
                         
-                        Text("YEP, YOU DID IT!!!")
+                        Text("Yep, YOU DID IT")
                             .font(.system(size: 35))
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
@@ -91,7 +91,7 @@ struct ChatInfo: View {
 //                            .rotationEffect(.degrees(-10))
                             .blinking(duration: 2.0)
                         
-                        Text("NICE JOB!!!")
+                        Text("NICE JOB")
                             .font(.system(size: 35))
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
@@ -99,13 +99,22 @@ struct ChatInfo: View {
 //                            .rotationEffect(.degrees(-10))
                             .blinking(duration: 3.0)
                         
-                        Text("YES, YES, YES")
+                        Text("Yes, Yes, Yes")
                             .font(.system(size: 35))
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
 //                            .rotationEffect(.degrees(-10))
                             .blinking(duration: 4.0)
+                        
+                        
+                        Text("Look at me, Now!")
+                            .font(.system(size: 35))
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+//                            .rotationEffect(.degrees(-10))
+                            .blinking(duration: 6.0)
                     }
                     
                     VStack {
