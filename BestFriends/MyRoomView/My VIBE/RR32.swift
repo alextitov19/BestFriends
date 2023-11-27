@@ -104,75 +104,7 @@ VStack {
         }
     
     
-    
-    
-//    ********************** My Exciting News *****************
-    
-//    HStack {
-//        ZStack {
-//
-//            Image(systemName: "circle")
-//                .resizable()
-//                .scaledToFit()
-//                .frame(width: 75, height: 75)
-//                .foregroundColor(Color .purple)
-//                .glow(color: Color.purple, radius: 10)
-//                .shadow(color: Color.purple, radius: 3, x: 3, y: 3)
-//
-//
-//            Button(action: {
-//                mood = 7
-//            }) {
-//
-//                Text("Exciting \nNews")
-//                    .font(.system(size: 15))
-//                    .foregroundColor(Color.black)
-//            }
-//            .frame(width: 75, height: 75, alignment: .center)
-//            .background(mood == 7 ? Color.green : ColorManager .grey1)
-//            .cornerRadius(40)
-//            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-////            .alert("Just told your friend you have exciting news!", isPresented: $showingAlert) {
-////                Button("OK", role: .cancel) { }
-////            }
-//        }
-//        Spacer()
-//            .frame(width: 15)
-//
-////        ************************************
-//
-//
-//        ZStack {
-//
-//
-//            Image("comicBubble")
-//                .resizable()
-//                .foregroundColor(Color.cyan)
-//                .frame(width: 210, height: 90)
-//                .shadow(color: Color.green, radius: 3, x: 3, y: 3)
-//                .opacity(0.95)
-//
-//            VStack {
-////
-////                Text("Yep. You've got")
-////                    .font(.system(size: 17))
-////                    .fontWeight(.light)
-////                    .multilineTextAlignment(.center)
-////                    .foregroundColor(Color.white)
-//
-//                Text("Tell friends")
-//                    .font(.system(size: 17))
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.white)
-//
-//
-//            }
-//        }
-//    }
-
-    
+ 
     
 //    ******************************************************
         VStack {
