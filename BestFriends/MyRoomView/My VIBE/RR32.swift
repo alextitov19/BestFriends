@@ -77,19 +77,19 @@ VStack {
             Image(systemName: "cube.fill")
                 .resizable()
                 .foregroundColor(Color.purple)
-                .frame(width: 310, height: 90)
+                .frame(width: 350, height: 90)
                 .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                 .opacity(0.3)
           
             VStack {
        
                 
-                Text("Setting my Vibe")
+                Text("Alowing friends to provide")
                     .font(.system(size: 27, weight: .light))
                     .foregroundColor(ColorManager .grey1)
                     .opacity(0.6)
                 
-                Text("(So friends can help!)")
+                Text("emotional support if somewhere else")
                     .font(.system(size: 17, weight: .light))
                     .italic()
                     .foregroundColor(ColorManager .grey1)
