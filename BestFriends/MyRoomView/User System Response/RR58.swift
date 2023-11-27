@@ -211,10 +211,16 @@ struct RR58: View {
                 
                 
                 VStack {
-                    Text("(your planet's atmosphere matches your Vibe)")
+                    Text("your planet's atmosphere on homepage")
                         .fontWeight(.thin)
                         .italic()
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    Text("matches your Vibe")
+                        .fontWeight(.thin)
+                        .italic()
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    
+                    
                 }
                 
                 
@@ -235,7 +241,7 @@ struct RR58: View {
                                 .background(Color.cyan)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            Text("(when my friends arn't around)")
+                            Text("when your friends arn't around")
                                 .fontWeight(.thin)
                                 .italic()
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
