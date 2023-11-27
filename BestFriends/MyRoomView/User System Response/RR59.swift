@@ -89,7 +89,7 @@ struct RR59: View {
                                 })
                         }
                     Spacer()
-                        .frame(height: 70)
+                        .frame(height: 85)
                 
 //    *******************************************
            

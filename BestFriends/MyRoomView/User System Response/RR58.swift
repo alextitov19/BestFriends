@@ -96,28 +96,36 @@ struct RR58: View {
                             .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
                             .blinking(duration: 7.0)
                         
-//                        Spacer()
-//                            .frame(height: 5)
+
                     }
                 })
             }
     
         VStack {
-                   
+                  
+            Spacer()
+                .frame(height: 50)
+            
                         ZStack {
 
                             NavigationLink(
                                 destination:  RR59(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
                                 label: {
-                                    Text("AI \nVirtual \nFriends")
-                                                .fontWeight(.light)
-                                                .frame(width: 100, height: 100)
-                                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                .font(.system(size: 25))
-                                                .background(Color.cyan)
-                                                .cornerRadius(15)
-                                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-            
+                                    VStack {
+                                        Text("My Virtual Friends")
+                                            .fontWeight(.thin)
+                                            .frame(width: 220, height: 40)
+                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                            .font(.system(size: 25))
+                                            .background(Color.cyan)
+                                            .cornerRadius(15)
+                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                        Text("(when my friends arn't around)")
+                                            .fontWeight(.thin)
+                                            .italic()
+                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        
+                                    }
                         }
                     )}
                 }
@@ -125,33 +133,7 @@ struct RR58: View {
                         Spacer()
                             .frame(height: 25)
                 
-        HStack {
-            NavigationLink(
-                destination:  RR32(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                label: {
-                    
-                    Image("iconVibes75")
-                    Image("iconVibes75")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 55, height: 55)
-                        .foregroundColor(ColorManager .purple4)
-                        .glow(color: ColorManager .grey1, radius: 3)
-//                                            .blinking(duration: 4.0)
-                        .opacity(0.8)
-                    
-                    Text("My Vibe")
-                        .fontWeight(.thin)
-                        .frame(width: 220, height: 40)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .font(.system(size: 25))
-                        .background(Color.cyan)
-                        .cornerRadius(15)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    
-            })
-        }
-                         
+         
                          Spacer()
                              .frame(height: 15)
                         
@@ -252,7 +234,33 @@ struct RR58: View {
         
 
 
-
+//        HStack {
+//            NavigationLink(
+//                destination:  RR32(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                label: {
+//
+//                    Image("iconVibes75")
+//                    Image("iconVibes75")
+//                        .resizable()
+//                        .scaledToFit()
+//                        .frame(width: 55, height: 55)
+//                        .foregroundColor(ColorManager .purple4)
+//                        .glow(color: ColorManager .grey1, radius: 3)
+////                                            .blinking(duration: 4.0)
+//                        .opacity(0.8)
+//
+//                    Text("My Vibe")
+//                        .fontWeight(.thin)
+//                        .frame(width: 220, height: 40)
+//                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                        .font(.system(size: 25))
+//                        .background(Color.cyan)
+//                        .cornerRadius(15)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//            })
+//        }
+                
 
 
 
