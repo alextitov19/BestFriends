@@ -62,217 +62,184 @@ struct RR58: View {
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
-    VStack {
-        
-        
-        ZStack {
-            
-            //    ********************************************
-            
-            //        *********************** Rocket Guy ****************
-            
-            
-            NavigationLink(
-                destination:  RR4(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                label: {
+            VStack {
+                
+                
+                ZStack {
                     
-                    ZStack {
-                        
-                        //    ********************************************
-                        Image("CoolGuy")
-                        //                                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 120, height: 120)
-                            .blinking(duration: 7.0)
-                        
-                        Text("Demo / Walk-through")
-                            .fontWeight(.medium)
-                            .frame(width: 210, height: 40)
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 20))
-                            .background(Color.cyan)
-                            .cornerRadius(7)
-                            .rotationEffect(.degrees(-38))
-                            .opacity(0.8)
-                            .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
-                            .blinking(duration: 7.0)
-                        
-
-                    }
-                })
-            }
-    
-        VStack {
+                    //    ********************************************
+                    
+                    //        *********************** Rocket Guy ****************
+                    
+                    
+                    NavigationLink(
+                        destination:  RR4(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        label: {
+                            
+                            ZStack {
+                                
+                                //    ********************************************
+                                Image("CoolGuy")
+                                //                                            .aspectRatio(contentMode: .fit)
+                                    .frame(width: 120, height: 120)
+                                    .blinking(duration: 7.0)
+                                
+                                Text("Demo / Walk-through")
+                                    .fontWeight(.medium)
+                                    .frame(width: 210, height: 40)
+                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 20))
+                                    .background(Color.cyan)
+                                    .cornerRadius(7)
+                                    .rotationEffect(.degrees(-38))
+                                    .opacity(0.8)
+                                    .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
+                                    .blinking(duration: 7.0)
+                                
+                                
+                            }
+                        })
+                }
+                
+                VStack {
+                    
+                    Spacer()
+                        .frame(height: 250)
                   
-            Spacer()
-                .frame(height: 50)
-            
-                        ZStack {
-
-                            NavigationLink(
-                                destination:  RR59(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
-                                label: {
-                                    VStack {
-                                        Text("My Virtual Friends")
-                                            .fontWeight(.thin)
-                                            .frame(width: 220, height: 40)
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .font(.system(size: 25))
-                                            .background(Color.cyan)
-                                            .cornerRadius(15)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                        Text("(when my friends arn't around)")
-                                            .fontWeight(.thin)
-                                            .italic()
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    HStack {
+                        NavigationLink(
+                            destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+                            label: {
+                                
+                                HStack {
+                                    
+                                    ZStack {
+                                        Image(systemName: "circle.fill")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 45, height: 45)
+                                            .foregroundColor(Color.cyan)
+                                            .opacity(0.95)
+                                        
+                                        
+                                        Image(systemName: "heart.fill")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 30, height: 30)
+                                            .foregroundColor(Color.purple)
+                                            .glow(color: Color.white, radius: 0.3)
+                                            .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                            .opacity(0.95)
                                         
                                     }
+                                    
+                                    Text("CareHearts")
+                                        .fontWeight(.light)
+                                        .frame(width: 180, height: 40)
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .font(.system(size: 25))
+                                        .background(Color.cyan)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                    
+                                    
+                                    
+                                }
+                            })
+                        
+                        ZStack {
+                            
+                            Image(systemName: "circle.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 45, height: 45)
+                                .foregroundColor(ColorManager .purple3)
+                                .opacity(0.95)
+                            
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 30, height: 30)
+                                .foregroundColor(Color.purple)
+                                .glow(color: Color.white, radius: 0.3)
+                                .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                .opacity(0.95)
+                            
+                        }
+                        
+                    }
+                    
+                    
+                    
+                }
+                
+                HStack {
+                    NavigationLink(
+                        destination:  RR32(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        label: {
+                            
+                            ZStack {
+                                
+//                                HStack {
+//                                    Image("iconVibes75")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 55, height: 55)
+//                                        .foregroundColor(ColorManager .purple4)
+//                                        .glow(color: ColorManager .grey1, radius: 3)
+//                                        .opacity(0.8)
+                                    
+                                    Text("  Set                Vibe")
+                                        .fontWeight(.light)
+                                        .frame(width: 220, height: 40)
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .font(.system(size: 25))
+                                        .background(Color.cyan)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                               
+                                Image("iconVibes75")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 55, height: 55)
+                                    .foregroundColor(ColorManager .purple4)
+                                    .glow(color: ColorManager .grey1, radius: 3)
+                                    .opacity(0.8)
+//                                }
+                            }
                         }
                     )}
-                }
-
-                        Spacer()
-                            .frame(height: 25)
                 
-         
-                         Spacer()
-                             .frame(height: 15)
-                        
-        HStack {
-            NavigationLink(
-                destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
-                label: {
-                    Text("My Friends")
-                        .fontWeight(.thin)
-                        .frame(width: 220, height: 40)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .font(.system(size: 25))
-                        .background(Color.cyan)
-                        .cornerRadius(15)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    
-                })
-
-            ZStack {
-                Image(systemName: "circle.fill")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 45, height: 45)
-                    .foregroundColor(Color.cyan)
-                    .opacity(0.95)
-          
-                
-                Image(systemName: "heart.fill")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 30, height: 30)
-                    .foregroundColor(Color.purple)
-                    .glow(color: Color.white, radius: 0.3)
-                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                    .opacity(0.95)
             }
-        
             
+            
+            ZStack {
+                
+                NavigationLink(
+                    destination:  RR59(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+                    label: {
+                        VStack {
+                            Text("My Virtual Friends")
+                                .fontWeight(.light)
+                                .frame(width: 220, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 25))
+                                .background(Color.cyan)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            Text("(when my friends arn't around)")
+                                .fontWeight(.thin)
+                                .italic()
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            
+                        }
+                    }
+                )}
+        
+            Spacer()
+                .frame(height: 65)
             
         }
-            
-            
-                        Spacer()
-                            .frame(height: 15)
-                        
-//    PhotoPopInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups)
-                        
-//                        HugPreload(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres)
-//
-//                    NavigationLink(
-//                        destination:  RR59(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
-//                        label: {
-//                            Text("Virtual Friends")
-//                                .fontWeight(.thin)
-//                                .frame(width: 220, height: 40)
-//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                .font(.system(size: 25))
-//                                .background(Color.cyan)
-//                                .cornerRadius(15)
-//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//                        })
-                        
-                   
-//
-//
-//                        Spacer()
-//                            .frame(height: 30)
-//
-//                        Button(action: {
-//                            sessionManager.showLogin()
-//                        },
-//                               label: {
-//                            Image("home-alt2")
-//                                .frame(width: 60, height: 30)
-//                                .foregroundColor(.black)
-//                                .font(.system(size: 20))
-//                                .background(ColorManager .grey3)
-//                                .cornerRadius(15)
-//                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                                .opacity(0.70)
-//
-//                        })
-
-                    }
-                }
-                
-                        
-                        
-                        
-                        Spacer()
-                            .frame(height: 40)
-                        
-                    }
-                }
- 
-
-        
-
-
-//        HStack {
-//            NavigationLink(
-//                destination:  RR32(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-//                label: {
-//
-//                    Image("iconVibes75")
-//                    Image("iconVibes75")
-//                        .resizable()
-//                        .scaledToFit()
-//                        .frame(width: 55, height: 55)
-//                        .foregroundColor(ColorManager .purple4)
-//                        .glow(color: ColorManager .grey1, radius: 3)
-////                                            .blinking(duration: 4.0)
-//                        .opacity(0.8)
-//
-//                    Text("My Vibe")
-//                        .fontWeight(.thin)
-//                        .frame(width: 220, height: 40)
-//                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                        .font(.system(size: 25))
-//                        .background(Color.cyan)
-//                        .cornerRadius(15)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//            })
-//        }
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
+   
+}
