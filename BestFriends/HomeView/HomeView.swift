@@ -188,9 +188,9 @@ struct HomeView: View {
                                         Image("iconVibes75")
                                             .resizable()
                                             .scaledToFit()
-                                            .frame(width: 50, height: 50)
-                                            .foregroundColor(Color.white)
-                                            .glow(color: ColorManager .purple1, radius: 1.5)
+                                            .frame(width: 55, height: 55)
+                                            .foregroundColor(ColorManager .purple4)
+                                            .glow(color: ColorManager .grey1, radius: 3)
 //                                            .blinking(duration: 4.0)
                                             .opacity(0.8)
                                         
