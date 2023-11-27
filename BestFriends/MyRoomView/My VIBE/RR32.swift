@@ -89,7 +89,7 @@ VStack {
                     .foregroundColor(ColorManager .grey1)
                     .opacity(0.6)
                 
-                Text("emotional support if somewhere else")
+                Text("emotional support when not around")
                     .font(.system(size: 17, weight: .light))
                     .italic()
                     .foregroundColor(ColorManager .grey1)
