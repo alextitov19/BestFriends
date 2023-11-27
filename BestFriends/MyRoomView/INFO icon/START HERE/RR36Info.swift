@@ -224,38 +224,38 @@ VStack {
         }
         
         
-        
-        ZStack {
-            
-            Image("comicBubble")
-                .resizable()
-                .foregroundColor(Color.purple)
-                .frame(width: 250, height: 110)
-                .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
-            //                    .rotationEffect(.degrees(-10))
-                .opacity(0.95)
-            
-            VStack {
-                
-                NavigationLink( destination: RR40Info2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                label: {
-                    VStack {
-                        Text("main")
-                            .font(.system(size: 15))
-                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                        
-                        Text("Features")
-                            .font(.system(size: 25))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                    }
-                }
-            )}
-        }
+//
+//        ZStack {
+//
+//            Image("comicBubble")
+//                .resizable()
+//                .foregroundColor(Color.purple)
+//                .frame(width: 250, height: 110)
+//                .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+//            //                    .rotationEffect(.degrees(-10))
+//                .opacity(0.95)
+//
+//            VStack {
+//
+//                NavigationLink( destination: RR40Info2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                                label: {
+//                    VStack {
+//                        Text("main")
+//                            .font(.system(size: 15))
+//                            .italic()
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(Color.white)
+//
+//                        Text("Features")
+//                            .font(.system(size: 25))
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(Color.white)
+//                    }
+//                }
+//            )}
+//        }
         
         
     }

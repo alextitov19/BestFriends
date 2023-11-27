@@ -84,7 +84,7 @@ struct RR58: View {
                             .frame(width: 120, height: 120)
                             .blinking(duration: 7.0)
                         
-                        Text("Dem0 / Walk-through")
+                        Text("Demo / Walk-through")
                             .fontWeight(.medium)
                             .frame(width: 210, height: 40)
                             .foregroundColor(Color.white)
