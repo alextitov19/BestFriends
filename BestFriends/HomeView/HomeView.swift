@@ -219,7 +219,7 @@ struct HomeView: View {
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 20, height: 20)
-                                                .foregroundColor(Color.purple)
+                                                .foregroundColor(Color.orange)
                                                 .glow(color: Color.white, radius: 0.3)
                                                 .shadow(color: .white, radius: 1, x: 3, y: -0.5)
                                                 .opacity(0.95)
