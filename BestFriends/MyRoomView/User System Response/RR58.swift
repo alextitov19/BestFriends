@@ -174,6 +174,33 @@ struct RR58: View {
                     
                 }
                 
+                
+                HStack {
+                    Text("  send")
+                        .fontWeight(.thin)
+                        .italic()
+                        .foregroundColor(Color.white)
+                    
+                    
+                    Spacer ()
+                        .frame(width: 200)
+                    
+                    Text("accept")
+                        .fontWeight(.thin)
+                        .italic()
+                        .foregroundColor(Color.white)
+                    
+                    
+                }
+               
+                
+                
+                
+                
+                
+                Spacer ()
+                    .frame(height: 40)
+                
                 HStack {
                     NavigationLink(
                         destination:  RR32(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
@@ -215,11 +242,12 @@ struct RR58: View {
                     Text("your planet's atmosphere on homepage")
                         .fontWeight(.thin)
                         .italic()
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .foregroundColor(Color.white)
+                    
                     Text("matches your Vibe")
                         .fontWeight(.thin)
                         .italic()
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .foregroundColor(Color.white)
                     
                     
                 }
