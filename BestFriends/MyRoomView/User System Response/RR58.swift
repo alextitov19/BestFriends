@@ -262,7 +262,7 @@ struct RR58: View {
                     destination:  RR59(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
                     label: {
                         VStack {
-                            Text("My Virtual Friends")
+                            Text("Off Planet")
                                 .fontWeight(.light)
                                 .frame(width: 220, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
