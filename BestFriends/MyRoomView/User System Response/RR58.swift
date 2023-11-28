@@ -106,7 +106,7 @@ struct RR58: View {
                     Spacer()
                         .frame(height: 250)
                   
-                    HStack {
+    HStack {
                         NavigationLink(
                             destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
                             label: {
@@ -132,7 +132,8 @@ struct RR58: View {
                                             .opacity(0.95)
                                         
                                     }
-                                    
+                                   
+    
                                     Text("CareHearts")
                                         .fontWeight(.light)
                                         .frame(width: 180, height: 40)
