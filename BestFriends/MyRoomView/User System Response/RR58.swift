@@ -239,12 +239,12 @@ struct RR58: View {
                 
                 
                 VStack {
-                    Text("your planet's atmosphere on homepage")
+                    Text("your planet's atmosphere color")
                         .fontWeight(.thin)
                         .italic()
                         .foregroundColor(Color.white)
                     
-                    Text("matches your Vibe")
+                    Text("on homepage matches your Vibe")
                         .fontWeight(.thin)
                         .italic()
                         .foregroundColor(Color.white)
@@ -278,11 +278,49 @@ struct RR58: View {
                         }
                     }
                 )}
+            }
         
-            Spacer()
-                .frame(height: 65)
+        
+        HStack {
             
+            Spacer ()
+                .frame(width: 150)
+         
+            Image("iconNotifications")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 35, height: 35)
+               .rotationEffect(.degrees(-15))
+                .foregroundColor(ColorManager .purple5)
+                .glow(color: Color.purple, radius: 2)
+                .opacity(0.9)
+            
+                    VStack {
+                        
+                        Text("Leave Notifications 'ON'")
+                            .font(.system(size: 17))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.cyan)
+                            .rotationEffect(.degrees(-10))
+                        
+                        Text("for real-time friendships")
+                            .font(.system(size: 13))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.leading)
+                            .rotationEffect(.degrees(-10))
+                            .foregroundColor(Color.white)
+                        
+                        
+                        Spacer()
+                            .frame(height: 20)
+                    }
+                }
+        
+        
+        
+        Spacer()
+            .frame(height: 10)
+        
+            }
         }
-    }
-   
-}
