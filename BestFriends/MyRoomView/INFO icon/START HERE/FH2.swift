@@ -76,16 +76,16 @@ struct FH2: View {
                                 .foregroundColor(Color.cyan)
                                 .rotationEffect(.degrees(-10))
                                 .blinking(duration: 2.0)
-                    
-                      
-//                            Text("No feelings of...")
-//                                .font(.system(size: 15))
-//                                .italic()
-//                                .fontWeight(.light)
-//                                .multilineTextAlignment(.leading)
-//                                .rotationEffect(.degrees(-10))
-//                                .foregroundColor(Color.white)
-//                                .blinking(duration: 2.0)
+                            
+                            
+                            //                            Text("No feelings of...")
+                            //                                .font(.system(size: 15))
+                            //                                .italic()
+                            //                                .fontWeight(.light)
+                            //                                .multilineTextAlignment(.leading)
+                            //                                .rotationEffect(.degrees(-10))
+                            //                                .foregroundColor(Color.white)
+                            //                                .blinking(duration: 2.0)
                             
                             
                             Text("We got you convered")
@@ -112,7 +112,7 @@ struct FH2: View {
                         .opacity(0.3)
                     
                     VStack {
-                   
+                        
                         Text("Masked Chat GPT...")
                             .font(.system(size: 35))
                             .foregroundColor(Color.white)
@@ -127,97 +127,61 @@ struct FH2: View {
                             .font(.system(size: 27))
                             .italic()
                             .multilineTextAlignment(.center)
-                        
-                        Text("")
-                            .font(.system(size: 27))
-                            .italic()
-                            .multilineTextAlignment(.center)
+                            .opacity(0.4)
                         
                         
-                        Text("")
-                            .font(.system(size: 27))
-                            .italic()
-                            .multilineTextAlignment(.center)
-                      
+                        
                         Spacer()
                             .frame(height: 20)
                         
-//    VStack {
-//                            ******************
-
-                            
-//        Link(destination: URL(string: "https://socialtechlabs.com/our-story/")!) {
-//            
-//            Text("Our Story")
-//                .fontWeight(.thin)
-//                .frame(width: 200, height: 40)
-//                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                .font(.system(size: 25))
-//                .background(Color.cyan)
-//                .cornerRadius(15)
-//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//            
-//        }
-        
-        
-        
-                    Spacer()
-                        .frame(height: 10)
-                                
-//                                Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
-//
-//                                    Text("Supporting Influencers")
-//                                        .fontWeight(.thin)
-//                                        .frame(width: 270, height: 40)
-//                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                        .font(.system(size: 25))
-//                                        .background(Color.cyan)
-//                                        .cornerRadius(15)
-//                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//
-//
-//                            }
-//                        }
-                        
-                Spacer()
-                    .frame(height: 20)
-                        
                         VStack {
                             
-                            Button(action: {
-                                sessionManager.showLogin()
-                            },
-                                   label: {
-                                Image("home-alt2")
-                                    .frame(width: 60, height: 30)
-                                    .foregroundColor(.black)
-                                    .font(.system(size: 20))
-                                    .background(ColorManager .grey3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                    .opacity(0.70)
+                            Link(destination: URL(string: "https://socialtechlabs.com/our-story-2/")!) {
                                 
-                            })
+                                Text("We're here to help")
+                                    .fontWeight(.thin)
+                                    .frame(width: 200, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 25))
+                                    .background(Color.cyan)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                            }
+                            
+                            
+                            Spacer()
+                                .frame(height: 30)
+                            
+                            VStack {
+                                
+                                Button(action: {
+                                    sessionManager.showLogin()
+                                },
+                                       label: {
+                                    Image("home-alt2")
+                                        .frame(width: 60, height: 30)
+                                        .foregroundColor(.black)
+                                        .font(.system(size: 20))
+                                        .background(ColorManager .grey3)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                        .opacity(0.70)
+                                    
+                                })
+                            }
                         }
-                        
-                        
-                        
-                    }
-                }
-                
- 
-                        
-                        Spacer()
-                            .frame(height: 40)
-                        
                     }
                     
+                  
+                    Spacer()
+                        .frame(height: 40)
+                    
                 }
-                
             }
         }
-//    }
+    }
+}
 
         
 
