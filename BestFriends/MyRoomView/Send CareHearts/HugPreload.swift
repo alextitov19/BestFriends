@@ -48,33 +48,33 @@ struct HugPreload: View {
                 VStack {
      
                     Spacer()
-                        .frame(height: 167)
+                        .frame(height: 207)
 //  *************************************************
        
-                    HStack {
-                        
-                        ZStack {
-                            Image(systemName: "")
-    
-                        }
-                        
-                        Spacer()
-                            .frame(width: 300)
-                        
-
-                            
-                            NavigationLink(
-                                destination: RR40Info2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                label: {
-                                    Image(systemName: "info.circle")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 32, height: 32)
-                                        .foregroundColor(ColorManager .purple3)
-    //                                        .glow(color: Color.purple, radius: 2)
-                                        .opacity(0.9)
-                                })
-                        }
+//                    HStack {
+//
+//                        ZStack {
+//                            Image(systemName: "")
+//
+//                        }
+//
+//                        Spacer()
+//                            .frame(width: 300)
+//
+//
+//
+//                            NavigationLink(
+//                                destination: RR40Info2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                                label: {
+//                                    Image(systemName: "info.circle")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 32, height: 32)
+//                                        .foregroundColor(ColorManager .purple3)
+//    //                                        .glow(color: Color.purple, radius: 2)
+//                                        .opacity(0.9)
+//                                })
+//                        }
            
                 
 //    *******************************************

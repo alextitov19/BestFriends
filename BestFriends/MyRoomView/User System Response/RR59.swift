@@ -77,7 +77,7 @@ struct RR59: View {
 
                             
                             NavigationLink(
-                                destination: RR40Info2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                destination: FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                                     Image(systemName: "info.circle")
                                         .resizable()
@@ -89,7 +89,7 @@ struct RR59: View {
                                 })
                         }
                     Spacer()
-                        .frame(height: 85)
+                        .frame(height: 75)
                 
 //    *******************************************
            
@@ -176,7 +176,7 @@ struct RR59: View {
                    HStack {
                         
                         ZStack {
-                            NavigationLink(destination: RR13(user: user, friends: friends, groups: groups), label: {
+                            NavigationLink(destination: EmptyView(), label: {
                                 HugCircle (color: Color.purple, friendName: "Empty")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)

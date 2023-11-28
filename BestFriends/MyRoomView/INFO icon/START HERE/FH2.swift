@@ -69,8 +69,8 @@ struct FH2: View {
                             
                             
                             
-                            Text("Non-toxic")
-                                .font(.system(size: 35))
+                            Text("Friends nowhere to be found")
+                                .font(.system(size: 25))
                                 .fontWeight(.regular)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.cyan)
@@ -78,17 +78,17 @@ struct FH2: View {
                                 .blinking(duration: 2.0)
                     
                       
-                            Text("No feelings of...")
-                                .font(.system(size: 15))
-                                .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.leading)
-                                .rotationEffect(.degrees(-10))
-                                .foregroundColor(Color.white)
-                                .blinking(duration: 2.0)
+//                            Text("No feelings of...")
+//                                .font(.system(size: 15))
+//                                .italic()
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.leading)
+//                                .rotationEffect(.degrees(-10))
+//                                .foregroundColor(Color.white)
+//                                .blinking(duration: 2.0)
                             
                             
-                            Text("I'm not good enough")
+                            Text("We got you convered")
                                 .font(.system(size: 20))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.leading)
@@ -113,7 +113,7 @@ struct FH2: View {
                     
                     VStack {
                    
-                        Text("Now you can...")
+                        Text("Masked Chat GPT...")
                             .font(.system(size: 35))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
@@ -123,18 +123,18 @@ struct FH2: View {
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("Let the outside of you")
+                        Text("ask anything under the cover")
                             .font(.system(size: 27))
                             .italic()
                             .multilineTextAlignment(.center)
                         
-                        Text("match the inside of you")
+                        Text("")
                             .font(.system(size: 27))
                             .italic()
                             .multilineTextAlignment(.center)
                         
                         
-                        Text("on social media")
+                        Text("")
                             .font(.system(size: 27))
                             .italic()
                             .multilineTextAlignment(.center)
