@@ -320,7 +320,6 @@
 		CF9E33C42843E0D800107433 /* Step2FG_TeenBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C32843E0D800107433 /* Step2FG_TeenBehavior.swift */; };
 		CF9E33C6284522AE00107433 /* Step_OurAdvantage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C5284522AE00107433 /* Step_OurAdvantage.swift */; };
 		CF9E33C8284530CF00107433 /* FG_GettingStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C7284530CF00107433 /* FG_GettingStarted.swift */; };
-		CF9ECC592B186A1B009E4C7C /* autumnLeaves.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF9ECC582B186A1B009E4C7C /* autumnLeaves.mp4 */; };
 		CF9ECC5B2B186A23009E4C7C /* snowAngles.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF9ECC5A2B186A23009E4C7C /* snowAngles.mp4 */; };
 		CF9ECC5D2B186AB5009E4C7C /* snowAngles2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF9ECC5C2B186AB5009E4C7C /* snowAngles2.mp4 */; };
 		CF9ECC612B186EBD009E4C7C /* autumnLeaves2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF9ECC602B186EBD009E4C7C /* autumnLeaves2.mp4 */; };
@@ -753,7 +752,6 @@
 		CF9E33C32843E0D800107433 /* Step2FG_TeenBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2FG_TeenBehavior.swift; sourceTree = "<group>"; };
 		CF9E33C5284522AE00107433 /* Step_OurAdvantage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step_OurAdvantage.swift; sourceTree = "<group>"; };
 		CF9E33C7284530CF00107433 /* FG_GettingStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FG_GettingStarted.swift; sourceTree = "<group>"; };
-		CF9ECC582B186A1B009E4C7C /* autumnLeaves.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = autumnLeaves.mp4; sourceTree = "<group>"; };
 		CF9ECC5A2B186A23009E4C7C /* snowAngles.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = snowAngles.mp4; sourceTree = "<group>"; };
 		CF9ECC5C2B186AB5009E4C7C /* snowAngles2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = snowAngles2.mp4; sourceTree = "<group>"; };
 		CF9ECC602B186EBD009E4C7C /* autumnLeaves2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = autumnLeaves2.mp4; sourceTree = "<group>"; };
@@ -1558,7 +1556,6 @@
 			isa = PBXGroup;
 			children = (
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
-				CF9ECC582B186A1B009E4C7C /* autumnLeaves.mp4 */,
 				CF9ECC602B186EBD009E4C7C /* autumnLeaves2.mp4 */,
 				CF9ECC5A2B186A23009E4C7C /* snowAngles.mp4 */,
 				CF9ECC5C2B186AB5009E4C7C /* snowAngles2.mp4 */,
@@ -2309,7 +2306,6 @@
 				CF3DB37228DA6D7D00BF9CCD /* Nadiah2.m4a in Resources */,
 				CFADFD962AFFE86F0090071A /* hooray1.mp4 in Resources */,
 				CF3DB37628DA85BA00BF9CCD /* Meena1.m4a in Resources */,
-				CF9ECC592B186A1B009E4C7C /* autumnLeaves.mp4 in Resources */,
 				7ACDB183282825C1009E1CFD /* GoogleService-Info.plist in Resources */,
 				CF221EE62AF78FFB005D19B7 /* fistpumpVideo.mp4 in Resources */,
 			);
