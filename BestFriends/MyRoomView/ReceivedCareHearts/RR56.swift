@@ -42,10 +42,10 @@ struct RR56: View {
                 .opacity(0.5)
             
             
-            AdPlayerView(name: "sendHearts1")
+            AdPlayerView(name: "easyHearts2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                .opacity(0.5)
+                .opacity(0.15)
             
             
             ZStack{
