@@ -320,9 +320,9 @@
 		CF9E33C42843E0D800107433 /* Step2FG_TeenBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C32843E0D800107433 /* Step2FG_TeenBehavior.swift */; };
 		CF9E33C6284522AE00107433 /* Step_OurAdvantage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C5284522AE00107433 /* Step_OurAdvantage.swift */; };
 		CF9E33C8284530CF00107433 /* FG_GettingStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C7284530CF00107433 /* FG_GettingStarted.swift */; };
-		CF9ECC5B2B186A23009E4C7C /* snowAngles.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF9ECC5A2B186A23009E4C7C /* snowAngles.mp4 */; };
 		CF9ECC5D2B186AB5009E4C7C /* snowAngles2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF9ECC5C2B186AB5009E4C7C /* snowAngles2.mp4 */; };
 		CF9ECC612B186EBD009E4C7C /* autumnLeaves2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF9ECC602B186EBD009E4C7C /* autumnLeaves2.mp4 */; };
+		CF9ECC632B187634009E4C7C /* easyHearts2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF9ECC622B187634009E4C7C /* easyHearts2.mp4 */; };
 		CFA1225D285975FF00E22E84 /* BuiltByTeensView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1225C285975FF00E22E84 /* BuiltByTeensView.swift */; };
 		CFA122602859771600E22E84 /* HurtFeelings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1225F2859771600E22E84 /* HurtFeelings.swift */; };
 		CFA1226228597AFC00E22E84 /* HurtFeelings2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1226128597AFC00E22E84 /* HurtFeelings2.swift */; };
@@ -752,9 +752,9 @@
 		CF9E33C32843E0D800107433 /* Step2FG_TeenBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2FG_TeenBehavior.swift; sourceTree = "<group>"; };
 		CF9E33C5284522AE00107433 /* Step_OurAdvantage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step_OurAdvantage.swift; sourceTree = "<group>"; };
 		CF9E33C7284530CF00107433 /* FG_GettingStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FG_GettingStarted.swift; sourceTree = "<group>"; };
-		CF9ECC5A2B186A23009E4C7C /* snowAngles.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = snowAngles.mp4; sourceTree = "<group>"; };
 		CF9ECC5C2B186AB5009E4C7C /* snowAngles2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = snowAngles2.mp4; sourceTree = "<group>"; };
 		CF9ECC602B186EBD009E4C7C /* autumnLeaves2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = autumnLeaves2.mp4; sourceTree = "<group>"; };
+		CF9ECC622B187634009E4C7C /* easyHearts2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = easyHearts2.mp4; sourceTree = "<group>"; };
 		CFA1225C285975FF00E22E84 /* BuiltByTeensView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltByTeensView.swift; sourceTree = "<group>"; };
 		CFA1225F2859771600E22E84 /* HurtFeelings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurtFeelings.swift; sourceTree = "<group>"; };
 		CFA1226128597AFC00E22E84 /* HurtFeelings2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurtFeelings2.swift; sourceTree = "<group>"; };
@@ -1556,8 +1556,8 @@
 			isa = PBXGroup;
 			children = (
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
+				CF9ECC622B187634009E4C7C /* easyHearts2.mp4 */,
 				CF9ECC602B186EBD009E4C7C /* autumnLeaves2.mp4 */,
-				CF9ECC5A2B186A23009E4C7C /* snowAngles.mp4 */,
 				CF9ECC5C2B186AB5009E4C7C /* snowAngles2.mp4 */,
 				CF9AA2B62B067E580053303C /* droppingHearts2.mp4 */,
 				CF221EE52AF78FFB005D19B7 /* fistpumpVideo.mp4 */,
@@ -2281,7 +2281,7 @@
 				CF1A338C2B0EE1BA00D24B66 /* Fireworks1.mp4 in Resources */,
 				CF51BF832AE2F693007A3DBF /* background_5.mp4 in Resources */,
 				CF8941222A8B3E2700AFEC39 /* Planet4.mp4 in Resources */,
-				CF9ECC5B2B186A23009E4C7C /* snowAngles.mp4 in Resources */,
+				CF9ECC632B187634009E4C7C /* easyHearts2.mp4 in Resources */,
 				CFADFD9C2AFFF58D0090071A /* sadDay1.mp4 in Resources */,
 				CFADFD982AFFF00C0090071A /* thumbsUp.mp4 in Resources */,
 				CF8941302A8B4AA400AFEC39 /* background_9.mp4 in Resources */,

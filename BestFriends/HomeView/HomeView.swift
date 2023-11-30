@@ -89,6 +89,8 @@ struct HomeView: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.5)
+                
+                
              
                 VStack {
                     if ((homeData) != nil) {

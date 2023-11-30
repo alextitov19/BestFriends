@@ -32,16 +32,16 @@ struct PhotoPopView: View {
     var body: some View {
         ZStack {
 
-//            ColorManager.grey4
-//                .opacity(0.8)
-//                .ignoresSafeArea()
+            ColorManager.grey4
+                .opacity(0.8)
+                .ignoresSafeArea()
 
             
             
-//            AdPlayerView(name: "sky2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//                .opacity(0.99)
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.99)
             
             
             AdPlayerView(name: "")

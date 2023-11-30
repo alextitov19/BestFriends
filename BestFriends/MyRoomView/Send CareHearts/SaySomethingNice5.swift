@@ -52,10 +52,11 @@ struct SaySomethingNice5: View {
 
                 
               
-                
-                AdPlayerView(name: "StarHang")
+
+                AdPlayerView(name: "easyHearts2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
+                    .opacity(0.8)
                 
                 Color.black
                   .opacity(0.4)

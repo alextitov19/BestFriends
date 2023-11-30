@@ -310,7 +310,7 @@ struct RR13: View {
                                 Spacer()
                                     .frame(height: 20)
                                 
-                                NavigationLink( destination:  RR11(user: user, friend: user, friends: friends, groups: groups),
+                                NavigationLink( destination:  SaySomethingNice5(user: user, friends: friends),
                                                 label: {
                                     Text("Send Hearts back")
                                         .fontWeight(.bold)
