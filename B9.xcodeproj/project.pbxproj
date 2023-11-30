@@ -323,6 +323,7 @@
 		CF9ECC592B186A1B009E4C7C /* autumnLeaves.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF9ECC582B186A1B009E4C7C /* autumnLeaves.mp4 */; };
 		CF9ECC5B2B186A23009E4C7C /* snowAngles.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF9ECC5A2B186A23009E4C7C /* snowAngles.mp4 */; };
 		CF9ECC5D2B186AB5009E4C7C /* snowAngles2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF9ECC5C2B186AB5009E4C7C /* snowAngles2.mp4 */; };
+		CF9ECC612B186EBD009E4C7C /* autumnLeaves2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF9ECC602B186EBD009E4C7C /* autumnLeaves2.mp4 */; };
 		CFA1225D285975FF00E22E84 /* BuiltByTeensView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1225C285975FF00E22E84 /* BuiltByTeensView.swift */; };
 		CFA122602859771600E22E84 /* HurtFeelings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1225F2859771600E22E84 /* HurtFeelings.swift */; };
 		CFA1226228597AFC00E22E84 /* HurtFeelings2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1226128597AFC00E22E84 /* HurtFeelings2.swift */; };
@@ -755,6 +756,7 @@
 		CF9ECC582B186A1B009E4C7C /* autumnLeaves.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = autumnLeaves.mp4; sourceTree = "<group>"; };
 		CF9ECC5A2B186A23009E4C7C /* snowAngles.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = snowAngles.mp4; sourceTree = "<group>"; };
 		CF9ECC5C2B186AB5009E4C7C /* snowAngles2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = snowAngles2.mp4; sourceTree = "<group>"; };
+		CF9ECC602B186EBD009E4C7C /* autumnLeaves2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = autumnLeaves2.mp4; sourceTree = "<group>"; };
 		CFA1225C285975FF00E22E84 /* BuiltByTeensView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltByTeensView.swift; sourceTree = "<group>"; };
 		CFA1225F2859771600E22E84 /* HurtFeelings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurtFeelings.swift; sourceTree = "<group>"; };
 		CFA1226128597AFC00E22E84 /* HurtFeelings2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurtFeelings2.swift; sourceTree = "<group>"; };
@@ -1557,6 +1559,7 @@
 			children = (
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
 				CF9ECC582B186A1B009E4C7C /* autumnLeaves.mp4 */,
+				CF9ECC602B186EBD009E4C7C /* autumnLeaves2.mp4 */,
 				CF9ECC5A2B186A23009E4C7C /* snowAngles.mp4 */,
 				CF9ECC5C2B186AB5009E4C7C /* snowAngles2.mp4 */,
 				CF9AA2B62B067E580053303C /* droppingHearts2.mp4 */,
@@ -2286,6 +2289,7 @@
 				CFADFD982AFFF00C0090071A /* thumbsUp.mp4 in Resources */,
 				CF8941302A8B4AA400AFEC39 /* background_9.mp4 in Resources */,
 				CF1773F82A8C0D6800DF5A15 /* Fireworks2.mp4 in Resources */,
+				CF9ECC612B186EBD009E4C7C /* autumnLeaves2.mp4 in Resources */,
 				CFADFD8C2AFF99FC0090071A /* moonRose1.mp4 in Resources */,
 				CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */,
 				CF9AA2B72B067E580053303C /* droppingHearts2.mp4 in Resources */,
