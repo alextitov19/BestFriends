@@ -40,13 +40,13 @@ struct HugPushNotification: View {
     var body: some View {
         
         ZStack {
-          
+            
             
             if shareTapped {
                 
                 Color.black
-                  .opacity(0.9)
-                  .ignoresSafeArea()
+                    .opacity(0.9)
+                    .ignoresSafeArea()
                 
                 AdPlayerView(name: "dramaLights")
                     .opacity(0.5)
@@ -54,62 +54,71 @@ struct HugPushNotification: View {
                     .blendMode(.screen)
                 
             } else {
-
+                
                 
                 ColorManager .grey4
-                  .opacity(0.9)
-                  .ignoresSafeArea()
+                    .opacity(0.9)
+                    .ignoresSafeArea()
                 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
+                    .opacity(0.5)
+                
+                AdPlayerView(name: "snowAngles2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.5)
                 
             }
             
-
-                VStack{
-                    
-                    HStack {
-                        VStack {
-                       
+            
+            VStack{
+                
+                HStack {
+                    VStack {
+                        
+                        
+                        
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        ZStack {
                             
+                            Image(systemName: "cube.fill")
+                                .resizable()
+                                .foregroundColor(Color.purple)
+                                .frame(width: 300, height: 200)
+                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                                .opacity(0.5)
                             
-                            Spacer()
-                                .frame(height: 10)
-                            
-                            ZStack {
+                            VStack {
                                 
-                                Image(systemName: "cube.fill")
-                                    .resizable()
-                                    .foregroundColor(Color.purple)
-                                    .frame(width: 200, height: 100)
-                                    .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                                Spacer()
+                                    .frame(height: 25)
+                                
+                                Text("Sending Hugs")
+                                    .font(.system(size: 30, weight: .light))
+                                    .foregroundColor(Color.white)
                                     .opacity(0.5)
-                                    
-                                VStack {
-                                   
-                                    Spacer()
-                                        .frame(height: 25)
-                                    
-                                    Text("Send a Hug")
-                                        .font(.system(size: 30, weight: .light))
-                                        .foregroundColor(Color.white)
-                                        .opacity(0.5)
-                           
-                                    
-                                    Spacer()
-                                        .frame(height: 10)
-                                 
-                                    
-                                    
-                                }
+                                
+                                Text("touching the heart of you")
+                                    .font(.system(size: 20, weight: .light))
+                                    .foregroundColor(Color.white)
+                                    .opacity(0.5)
+                                Spacer()
+                                    .frame(height: 10)
+                                
+                                
+                                
                             }
-                          
-                            
                         }
                         
- 
+                        
                     }
+                    
+                    
+                }
                 
                 
                 
@@ -118,24 +127,24 @@ struct HugPushNotification: View {
                 
                 
                 
-//                *********************************************************
-         
+                //                *********************************************************
+                
                 VStack {
                     Spacer()
                         .frame(height: 40)
-
+                    
                     VStack {
-                   
+                        
                         HStack {
-                      
-//                            Text("select >")
-//                                .fontWeight(.thin)
-//                                .frame(width: 100, height: 30)
-//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                .font(.system(size: 20))
-//                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-//                                .cornerRadius(25)
-//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            
+                            //                            Text("select >")
+                            //                                .fontWeight(.thin)
+                            //                                .frame(width: 100, height: 30)
+                            //                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            //                                .font(.system(size: 20))
+                            //                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+                            //                                .cornerRadius(25)
+                            //                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             //                                })
                             
                             if friends.count > 0 {
@@ -216,15 +225,15 @@ struct HugPushNotification: View {
                                 
                             }
                         }
-                  
                         
                         
-//                        Button(action: {
-//                            counter += 1
-//                            shareButtonTapped()
-//                        },
-//                               label: {
-//                            Text("SHARE")
+                        
+                        //                        Button(action: {
+                        //                            counter += 1
+                        //                            shareButtonTapped()
+                        //                        },
+                        //                               label: {
+                        //                            Text("SHARE")
                         
                         
                         Spacer()
@@ -251,135 +260,108 @@ struct HugPushNotification: View {
                                     
                                 }
                         })
-//                        .confettiCannon(counter: $counter)
+                        //                        .confettiCannon(counter: $counter)
                         
                         
-                    
+                        
                         
                         //    *************************** Floating Hearts
                         //    *************************** Floating Hearts
-
-                          
+                        
+                        
                         //*************************************************
-                          
-                        //************************************************* 
+                        
+                        //*************************************************
                         
                         
                         
                         
-
+                        
                         
                         VStack {
                             
                             Spacer()
                                 .frame(height: 20)
                             
-                                 Button(action: {
-                                     sessionManager.showLogin()
-                                 },
-                                     label: {
-                                     Image("home-alt2")
-                                         .frame(width: 50, height: 25)
-                                         .foregroundColor(.white)
-                                         .font(.system(size: 20))
-                                         .background(ColorManager .grey3)
-                                         .cornerRadius(15)
-                                         .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                         .opacity(0.70)
-                                     
-                                 })
+                            Button(action: {
+                                sessionManager.showLogin()
+                            },
+                                   label: {
+                                Image("home-alt2")
+                                    .frame(width: 50, height: 25)
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 20))
+                                    .background(ColorManager .grey3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                    .opacity(0.70)
+                                
+                            })
                             
                             
-//
-//                            Spacer()
-//                                .frame(height: 30)
-//
+                            //
+                            //                            Spacer()
+                            //                                .frame(height: 30)
+                            //
                         }
                         
-                HStack {
-                    Image(systemName: "star.fill")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 2, height: 2)
-                        .foregroundColor(Color.white)
-                        .opacity(0.95)
-                    
-                    
-                    Spacer ()
-                        .frame(width: 200)
-                    
-                      
-                    VStack {
-                        
-                        ZStack {
-                            
-                            Image("comicBubble")
+                        HStack {
+                            Image(systemName: "star.fill")
                                 .resizable()
+                                .scaledToFit()
+                                .frame(width: 2, height: 2)
                                 .foregroundColor(Color.white)
-                                .frame(width: 250, height: 150)
-                                .shadow(color: Color.white, radius: 3, x: 3, y: 3)
-                                .rotationEffect(.degrees(-12))
-                                .opacity(0.5)
-                            //                                .blinking(duration: 3.0)
+                                .opacity(0.95)
+                            
+                            
+                            Spacer ()
+                                .frame(width: 200)
+                            
                             
                             VStack {
-                                NavigationLink(
-                                    destination:  PhotoPopView(user: user, friends: friends),
-                                    label: {
+                                
+                                ZStack {
+                                    
+                                    Image("comicBubble")
+                                        .resizable()
+                                        .foregroundColor(Color.white)
+                                        .frame(width: 250, height: 150)
+                                        .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+                                        .rotationEffect(.degrees(-12))
+                                        .opacity(0.5)
+                                    //                                .blinking(duration: 3.0)
+                                    
+                                    VStack {
+                                        NavigationLink(
+                                            destination:  PhotoPopView(user: user, friends: friends),
+                                            label: {
+                                                
+                                                Image("IconPhotoNew")
+                                                    .resizable()
+                                                    .scaledToFit()
+                                                    .frame(width: 50, height: 50)
+                                                    .rotationEffect(.degrees(-13))
+                                                    .foregroundColor(ColorManager .purple5)
+                                                    .glow(color: Color.purple, radius: 2)
+                                                    .opacity(0.9)
+                                                
+                                            })
                                         
-                                        Image("IconPhotoNew")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 50, height: 50)
+                                        Text("Send a PhotoPOP of \nfun time together")
+                                            .fontWeight(.light)
+                                            .foregroundColor(Color.white)
+                                            .font(.system(size: 11))
+                                            .multilineTextAlignment(.center)
                                             .rotationEffect(.degrees(-13))
-                                            .foregroundColor(ColorManager .purple5)
-                                            .glow(color: Color.purple, radius: 2)
-                                            .opacity(0.9)
+                                            .opacity(0.85)
                                         
-                                    })
-                                
-                                Text("Send a PhotoPOP of \nfun time together")
-                                    .fontWeight(.light)
-                                    .foregroundColor(Color.white)
-                                    .font(.system(size: 11))
-                                    .multilineTextAlignment(.center)
-                                    .rotationEffect(.degrees(-13))
-                                    .opacity(0.85)
-                                
-                                Spacer()
-                                    .frame(height: 18)
-                                
+                                        Spacer()
+                                            .frame(height: 18)
+                                        
+                                    }
+                                }
+                              
                             }
-                        }
-                            
-            VStack {
-                HStack {
-                    
-                    Image("girlwalking250")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 150, height: 150)
-                        .foregroundColor(Color.white)
-                        .opacity(0.95)
-                    
-                    
-                    Spacer()
-                        .frame(width: 190)
-                    
-                    Image(systemName: "star.fill")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 5, height: 5)
-                        .foregroundColor(Color.white)
-                        .opacity(0.95)
-                    
-                    
-                }
-                                
-//                            }
-                        }
-                    }
-                            
                         }
                         
                     }
