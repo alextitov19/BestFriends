@@ -1534,7 +1534,6 @@
 				2DB42CF52AAE878100E137C0 /* RR25.swift */,
 				CFCD4BAE2965CE5C00BBE43A /* InfoComingChat.swift */,
 				CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */,
-				2D2A18702AEEECCB00B0C1DF /* RR51.swift */,
 			);
 			path = "User System Response";
 			sourceTree = "<group>";
@@ -1653,6 +1652,7 @@
 				2DFB03152A57228400669948 /* FH9.swift */,
 				D12CE2CB2AD9906C00AEB105 /* RRdemoVideo.swift */,
 				2DFB03072A57221600669948 /* FH2.swift */,
+				2D2A18702AEEECCB00B0C1DF /* RR51.swift */,
 				2DFB030F2A57226200669948 /* FH6.swift */,
 				2DFB03092A57222300669948 /* FH3.swift */,
 				2DFB03132A57227900669948 /* FH8.swift */,
@@ -2934,7 +2934,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -2966,7 +2966,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;

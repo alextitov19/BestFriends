@@ -83,6 +83,12 @@ struct HomeView: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.5)
+                
+                
+                AdPlayerView(name: "sendHearts1")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.5)
              
                 VStack {
                     if ((homeData) != nil) {
@@ -471,7 +477,7 @@ struct HomeView: View {
                             NavigationLink(destination: EmptyView(), label: {
                                 PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
                                     .scaledToFit()
-                                    .frame(width: 120, height: 120)
+                                    .frame(width: 160, height: 160)
                                     .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 11)
                                     .opacity(0.3)
                                     .padding()

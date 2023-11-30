@@ -262,7 +262,7 @@ VStack {
     
 
      
-    NavigationLink(destination:  FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+    NavigationLink(destination:  RR51(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                label: {
                     Text("your Safe n' Sound ->")
                         .fontWeight(.thin)

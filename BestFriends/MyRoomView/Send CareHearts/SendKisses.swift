@@ -96,7 +96,10 @@ struct SendKisses: View {
                                     .foregroundColor(ColorManager .grey1)
                                     .opacity(0.5)
                                 
-                             
+                                Text("light as butterfly wings")
+                                    .font(.system(size: 20, weight: .light))
+                                    .foregroundColor(ColorManager .grey1)
+                                    .opacity(0.5)
                             }
                         }    
                     }
