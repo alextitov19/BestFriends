@@ -175,15 +175,24 @@ struct RR59: View {
 
                    HStack {
                         
-                        ZStack {
-                            NavigationLink(destination: EmptyView(), label: {
-                                HugCircle (color: Color.purple, friendName: "Empty")
-                            })
-                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                            .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
-                            .opacity(0.99)
+                       
+                       
+                       NavigationLink(destination: RR33(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
+                           HugCircle (color: ColorManager .grey1, friendName: "Hurt \nFeelings")
+                       })
+                       .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+                       .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
+                       .opacity(0.99)
+                       
+//                        ZStack {
+//                            NavigationLink(destination: EmptyView(), label: {
+//                                HugCircle (color: Color.purple, friendName: "Empty")
+//                            })
+//                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+//                            .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
+//                            .opacity(0.99)
                             
-                       }
+//                       }
                         
                        Spacer()
                            .frame(width: 50)
