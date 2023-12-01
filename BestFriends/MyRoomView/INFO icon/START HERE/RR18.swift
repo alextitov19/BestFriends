@@ -75,7 +75,7 @@ struct RR18: View {
                                 .blinking(duration: 2.0)
                             
                             
-                            Text("it's about sharing love and emotional support")
+                            Text("celebrating")
                                 .font(.system(size: 15))
                                 .italic()
                                 .fontWeight(.light)
@@ -84,16 +84,14 @@ struct RR18: View {
                                 .foregroundColor(Color.white)
                                 .blinking(duration: 2.0)
                             
-                            
-//                            Text("We got you convered")
-//                                .font(.system(size: 20))
-//                                .fontWeight(.light)
-//                                .multilineTextAlignment(.leading)
-//                                .rotationEffect(.degrees(-10))
-//                                .foregroundColor(Color.white)
-//                                .blinking(duration: 2.0)
-//
-//
+                            Text("love & emotional support")
+                                .font(.system(size: 15))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.leading)
+                                .rotationEffect(.degrees(-10))
+                                .foregroundColor(Color.white)
+                                .blinking(duration: 2.0)
                         }
                     }
                 }
@@ -110,45 +108,61 @@ struct RR18: View {
                     
                     VStack {
                         
-                        Text("A private, closed network w/ your best friends sharing CareHearts n' PhotoPOPs - it's cute & fun, it's about sharing love and emotional support")
+                        Text("a private, closed network")
                             .font(.system(size: 20))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .opacity(0.7)
                         
-//                        Spacer()
-//                            .frame(height: 10)
-//
-//                        Text("comming Q1:2024")
-//                            .font(.system(size: 27))
-//                            .italic()
-//                            .multilineTextAlignment(.center)
-//                            .opacity(0.4)
-//
-//
-//
-//                        Spacer()
-//                            .frame(height: 20)
-//
-//                        VStack {
-//
-//                            Link(destination: URL(string: "https://socialtechlabs.com/our-story-2/")!) {
-//
-//                                Text("We're here to help")
-//                                    .fontWeight(.thin)
-//                                    .frame(width: 240, height: 40)
-//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                    .font(.system(size: 25))
-//                                    .background(Color.cyan)
-//                                    .cornerRadius(10)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//                            }
-//
+                        Spacer()
+                            .frame(height: 7)
+                        
+                        Text("with your 5 closest friends")
+                            .font(.system(size: 24))
+                            .foregroundColor(Color.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .opacity(0.7)
+                        
+                        
+                        Spacer()
+                            .frame(height: 7)
+                        
+                        Text("featuring: CareHearts n' PhotoPOPs")
+                            .font(.system(size: 27))
+                            .foregroundColor(Color.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .opacity(0.7)
+                        
+                   
                             
                             Spacer()
                                 .frame(height: 30)
+                        
+                        ZStack {
+                            
+                            NavigationLink(
+                                destination:  RR58(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                label: {
+                                    VStack {
+                                        Text("It's cute - it's fun >>>")
+                                            .fontWeight(.light)
+                                            .frame(width: 300, height: 40)
+                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                            .font(.system(size: 25))
+                                            .background(Color.cyan)
+                                            .cornerRadius(15)
+                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                        Text("when your friends arn't around")
+                                            .fontWeight(.thin)
+                                            .italic()
+                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        
+                                    }
+                                }
+                            )}
                             
                             VStack {
                                 
@@ -172,28 +186,7 @@ struct RR18: View {
               
                 
                 
-                ZStack {
-                    
-                    NavigationLink(
-                        destination:  RR58(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                        label: {
-                            VStack {
-                                Text("Off Planet")
-                                    .fontWeight(.light)
-                                    .frame(width: 220, height: 40)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(Color.cyan)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                Text("when your friends arn't around")
-                                    .fontWeight(.thin)
-                                    .italic()
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                
-                            }
-                        }
-                    )}
+           
                 
                   
                     Spacer()
