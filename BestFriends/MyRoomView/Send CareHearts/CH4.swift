@@ -112,8 +112,12 @@ struct CH4: View {
                       AdPlayerView(name: "sky2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
+                          .opacity(0.5)
              
-                      
+                      AdPlayerView(name: "sadGirl2")
+                          .ignoresSafeArea()
+                          .blendMode(.screen)
+                          .opacity(0.7)
             }
             
 

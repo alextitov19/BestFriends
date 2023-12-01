@@ -42,6 +42,7 @@ struct HugPreload: View {
                 .blendMode(.screen)
                 .opacity(0.9)
             
+         
             
             ZStack{
                 
