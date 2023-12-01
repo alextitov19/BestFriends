@@ -74,31 +74,32 @@ struct HomeView: View {
                     NavigationLink(destination: NotificationsView(user: homeData!.user, friend: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere), isActive: $presentingIANs) { EmptyView() }
 
                 }
-                
-                Color.black
-                    .opacity(0.5)
-                    .ignoresSafeArea()
-      
-                AdPlayerView(name: "sky2")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .opacity(0.5)
-                
-                
-                AdPlayerView(name: "sendHearts1")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .opacity(0.5)
-                
+        
+                    
+                    Color.black
+                        .opacity(0.2)
+                        .ignoresSafeArea()
+                    
+                    AdPlayerView(name: "sky2")
+                        .ignoresSafeArea()
+                        .blendMode(.screen)
+                        .opacity(0.9)
+                    
+                    
+                    AdPlayerView(name: "sendHearts1")
+                        .ignoresSafeArea()
+                        .blendMode(.screen)
+                        .opacity(0.35)
+                    
                 
              
                 VStack {
                     if ((homeData) != nil) {
-                
-//  ************************************************
-            //  ************************************************
                         
+                        //  ************************************************
+                        //  ************************************************
                         
+                    
                         HStack {
                             
                             ZStack {

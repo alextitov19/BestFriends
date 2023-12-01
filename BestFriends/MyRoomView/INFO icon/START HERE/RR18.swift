@@ -53,7 +53,7 @@ struct RR18: View {
                     Image("comicBubble")
                         .resizable()
                         .foregroundColor(Color.purple)
-                        .frame(width: 430, height: 200)
+                        .frame(width: 500, height: 300)
                         .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                         .rotationEffect(.degrees(-10))
                         .opacity(0.95)
@@ -66,7 +66,7 @@ struct RR18: View {
                             
                             
                             
-                            Text("It's uniquely different!")
+                            Text("uniquely different!")
                                 .font(.system(size: 25))
                                 .fontWeight(.regular)
                                 .multilineTextAlignment(.center)
@@ -85,12 +85,11 @@ struct RR18: View {
                                 .blinking(duration: 2.0)
                             
                             Text("love & emotional support")
-                                .font(.system(size: 15))
-                                .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.leading)
+                                .font(.system(size: 25))
+                                .fontWeight(.regular)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.cyan)
                                 .rotationEffect(.degrees(-10))
-                                .foregroundColor(Color.white)
                                 .blinking(duration: 2.0)
                         }
                     }
@@ -108,17 +107,15 @@ struct RR18: View {
                     
                     VStack {
                         
-                        Text("a private, closed network")
+                        Text("closed network")
                             .font(.system(size: 20))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .opacity(0.7)
+             
                         
-                        Spacer()
-                            .frame(height: 7)
-                        
-                        Text("with your 5 closest friends")
+                        Text("w/ 5 closest friends")
                             .font(.system(size: 24))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
@@ -127,10 +124,18 @@ struct RR18: View {
                         
                         
                         Spacer()
-                            .frame(height: 7)
+                            .frame(height: 25)
                         
-                        Text("featuring: CareHearts n' PhotoPOPs")
-                            .font(.system(size: 27))
+                        Text("featuring ...")
+                            .font(.system(size: 17))
+                            .italic()
+                            .foregroundColor(Color.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .opacity(0.7)
+                        
+                        Text("CareHearts n' PhotoPOPs")
+                            .font(.system(size: 35))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -139,7 +144,7 @@ struct RR18: View {
                    
                             
                             Spacer()
-                                .frame(height: 30)
+                                .frame(height: 60)
                         
                         ZStack {
                             
@@ -155,7 +160,7 @@ struct RR18: View {
                                             .background(Color.cyan)
                                             .cornerRadius(15)
                                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                        Text("when your friends arn't around")
+                                        Text("it's sort of like teachers giving out \ncupcakes instead of grades")
                                             .fontWeight(.thin)
                                             .italic()
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -164,23 +169,23 @@ struct RR18: View {
                                 }
                             )}
                             
-                            VStack {
-                                
-                                Button(action: {
-                                    sessionManager.showLogin()
-                                },
-                                       label: {
-                                    Image("home-alt2")
-                                        .frame(width: 60, height: 30)
-                                        .foregroundColor(.black)
-                                        .font(.system(size: 20))
-                                        .background(ColorManager .grey3)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                        .opacity(0.70)
-                                    
-                                })
-                            }
+//                            VStack {
+//
+//                                Button(action: {
+//                                    sessionManager.showLogin()
+//                                },
+//                                       label: {
+//                                    Image("home-alt2")
+//                                        .frame(width: 60, height: 30)
+//                                        .foregroundColor(.black)
+//                                        .font(.system(size: 20))
+//                                        .background(ColorManager .grey3)
+//                                        .cornerRadius(15)
+//                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                                        .opacity(0.70)
+//
+//                                })
+//                            }
                         }
                     }
               
