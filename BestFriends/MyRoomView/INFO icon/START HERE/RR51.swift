@@ -50,29 +50,29 @@ struct RR51: View {
             VStack {
                 
                 ZStack {
-                    Image("comicBubble")
-                        .resizable()
-                        .foregroundColor(Color.purple)
-                        .frame(width: 430, height: 200)
-                        .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
-                        .rotationEffect(.degrees(-10))
-                        .opacity(0.95)
-                        .blinking(duration: 2.0).blinking(duration: 3.0)
-                    
-                    
-                    VStack {
-                        
-                        VStack {
-                            
-                            
-                            
-                            Text("It's about showing \nyour friends you care")
-                                .font(.system(size: 25))
-                                .fontWeight(.regular)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.cyan)
-                                .rotationEffect(.degrees(-10))
-                                .blinking(duration: 2.0)
+//                    Image("comicBubble")
+//                        .resizable()
+//                        .foregroundColor(Color.purple)
+//                        .frame(width: 430, height: 200)
+//                        .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+//                        .rotationEffect(.degrees(-10))
+//                        .opacity(0.95)
+//                        .blinking(duration: 2.0).blinking(duration: 3.0)
+//
+//
+//                    VStack {
+//
+//                        VStack {
+//
+//
+//
+//                            Text("It's about showing \nyour friends you care")
+//                                .font(.system(size: 25))
+//                                .fontWeight(.regular)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(Color.cyan)
+//                                .rotationEffect(.degrees(-10))
+//                                .blinking(duration: 2.0)
                             
                             
                             //                            Text("No feelings of...")
@@ -94,8 +94,8 @@ struct RR51: View {
 //                                .blinking(duration: 2.0)
 //
 //
-                        }
-                    }
+//                        }
+//                    }
                 }
                 
                 ZStack {
@@ -110,27 +110,42 @@ struct RR51: View {
                     
                     VStack {
                         
-                        Text("It's about letting the outside \nof you match the inside of you \nin a safe place")
-                            .font(.system(size: 30))
+                        Text("to let the outside of you")
+                            .font(.system(size: 35))
+                            .foregroundColor(Color.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .opacity(0.5)
+                        
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        Text("match")
+                            .font(.system(size: 20))
+                            .italic()
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .opacity(0.7)
                         
-//                        Spacer()
-//                            .frame(height: 10)
-//
-//                        Text("comming Q1:2024")
-//                            .font(.system(size: 27))
-//                            .italic()
-//                            .multilineTextAlignment(.center)
-//                            .opacity(0.4)
-//
-//
-//
-//                        Spacer()
-//                            .frame(height: 20)
-//
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        Text("the inside of you")
+                            .font(.system(size: 37))
+                            .foregroundColor(Color.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .opacity(0.5)
+                        
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        
+                        
+                        
+                        
+                        
 //                        VStack {
 //
 //                            Link(destination: URL(string: "https://socialtechlabs.com/our-story-2/")!) {
