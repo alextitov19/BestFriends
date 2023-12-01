@@ -66,7 +66,7 @@ struct RR18: View {
                             
                             
                             
-                            Text("It's about showing \nyour friends you care")
+                            Text("It's uniquely different!")
                                 .font(.system(size: 25))
                                 .fontWeight(.regular)
                                 .multilineTextAlignment(.center)
@@ -75,14 +75,14 @@ struct RR18: View {
                                 .blinking(duration: 2.0)
                             
                             
-                            //                            Text("No feelings of...")
-                            //                                .font(.system(size: 15))
-                            //                                .italic()
-                            //                                .fontWeight(.light)
-                            //                                .multilineTextAlignment(.leading)
-                            //                                .rotationEffect(.degrees(-10))
-                            //                                .foregroundColor(Color.white)
-                            //                                .blinking(duration: 2.0)
+                            Text("it's about sharing love and emotional support")
+                                .font(.system(size: 15))
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.leading)
+                                .rotationEffect(.degrees(-10))
+                                .foregroundColor(Color.white)
+                                .blinking(duration: 2.0)
                             
                             
 //                            Text("We got you convered")
@@ -110,8 +110,8 @@ struct RR18: View {
                     
                     VStack {
                         
-                        Text("It's about letting the outside \nof you match the inside of you \nin a safe place")
-                            .font(.system(size: 30))
+                        Text("A private, closed network w/ your best friends sharing CareHearts n' PhotoPOPs - it's cute & fun, it's about sharing love and emotional support")
+                            .font(.system(size: 20))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
