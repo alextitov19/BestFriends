@@ -75,7 +75,7 @@ struct RR18: View {
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(ColorManager .grey2)
                                 .rotationEffect(.degrees(-20))
-                                .blinking(duration: 3.0)
+//                                .blinking(duration: 3.0)
                                 .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                                 .opacity(0.25)
                             
