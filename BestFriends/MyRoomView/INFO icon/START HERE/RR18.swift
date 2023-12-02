@@ -50,62 +50,49 @@ struct RR18: View {
             VStack {
                 
                 ZStack {
-                    Image("comicBubble")
-                        .resizable()
-                        .foregroundColor(Color.purple)
-                        .frame(width: 500, height: 300)
-                        .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
-                        .rotationEffect(.degrees(-10))
-                        .opacity(0.95)
-                        .blinking(duration: 2.0).blinking(duration: 3.0)
-                    
-                    
+//                    Image("comicBubble")
+//                        .resizable()
+//                        .foregroundColor(Color.purple)
+//                        .frame(width: 500, height: 300)
+//                        .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+//                        .rotationEffect(.degrees(-10))
+//                        .opacity(0.95)
+//                        .blinking(duration: 2.0).blinking(duration: 3.0)
+//
+//
                     VStack {
                         
                         VStack {
                             
-                            
-                            
-                            Text("uniquely different!")
-                                .font(.system(size: 25))
-                                .fontWeight(.regular)
+                            Text("sharing love & \nemotional support")
+                                .font(.system(size: 47))
+                                .fontWeight(.bold)
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(Color.cyan)
-                                .rotationEffect(.degrees(-10))
-                                .blinking(duration: 2.0)
+                                .foregroundColor(ColorManager .grey2)
+                                .rotationEffect(.degrees(-20))
+                                .blinking(duration: 3.0)
+                                .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                                .opacity(0.25)
                             
-                            
-                            Text("celebrating")
-                                .font(.system(size: 15))
-                                .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.leading)
-                                .rotationEffect(.degrees(-10))
-                                .foregroundColor(Color.white)
-                                .blinking(duration: 2.0)
-                            
-                            Text("love & emotional support")
-                                .font(.system(size: 25))
-                                .fontWeight(.regular)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.cyan)
-                                .rotationEffect(.degrees(-10))
-                                .blinking(duration: 2.0)
+
                         }
                     }
                 }
                 
                 ZStack {
+               
                     
-                    
-                    Image(systemName: "circle.fill")
+                    Image(systemName: "heart")
                         .resizable()
                         .foregroundColor(Color.purple)
-                        .frame(width: 450, height: 450)
-                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.3)
+                        .frame(width: 450, height: 375)
+                        .shadow(color: Color.white, radius: 5, x: 3, y: 5)
+                        .opacity(0.2)
                     
                     VStack {
+                        
+                        Spacer()
+                            .frame(height: 60)
                         
                         Text("closed network")
                             .font(.system(size: 17))
@@ -124,9 +111,9 @@ struct RR18: View {
                         
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 50)
                         
-                        Text("featuring ...")
+                        Text("featuring")
                             .font(.system(size: 17))
                             .italic()
                             .foregroundColor(Color.white)
@@ -134,17 +121,23 @@ struct RR18: View {
                             .multilineTextAlignment(.center)
                             .opacity(0.7)
                         
-                        Text("CareHearts n' PhotoPOPs")
-                            .font(.system(size: 35))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.light)
+                        Spacer()
+                            .frame(height: 15)
+                        
+                        Text("CareHearts")
+                            .font(.system(size: 60))
+                            .fontWeight(.bold)
                             .multilineTextAlignment(.center)
-                            .opacity(0.7)
+                            .foregroundColor(Color.white)
+//                            .rotationEffect(.degrees(-20))
+                            .blinking(duration: 3.0)
+//                            .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+                            .opacity(0.5)
                         
                    
                             
                             Spacer()
-                                .frame(height: 60)
+                                .frame(height: 130)
                         
                         ZStack {
                             
@@ -154,17 +147,22 @@ struct RR18: View {
                                     VStack {
                                         Text("It's cute - it's fun >>>")
                                             .fontWeight(.light)
-                                            .frame(width: 300, height: 40)
+                                            .frame(width: 290, height: 40)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                             .font(.system(size: 25))
                                             .background(Color.cyan)
                                             .cornerRadius(15)
                                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                        Text("it's sort of like teachers giving out \ncupcakes instead of grades")
+                                        Text("it's sort of like teachers giving out")
                                             .fontWeight(.thin)
                                             .italic()
+                                            .font(.system(size: 15))
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        
+                                        Text("cupcakes instead of grades")
+                                            .fontWeight(.thin)
+                                            .italic()
+                                            .font(.system(size: 15))
+                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     }
                                 }
                             )}
