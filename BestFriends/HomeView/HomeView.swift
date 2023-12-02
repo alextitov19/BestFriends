@@ -91,7 +91,7 @@ struct HomeView: View {
                         .blendMode(.screen)
                         .opacity(0.35)
                     
-                
+           
              
                 VStack {
                     if ((homeData) != nil) {

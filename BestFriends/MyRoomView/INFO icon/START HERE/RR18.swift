@@ -46,6 +46,11 @@ struct RR18: View {
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
+            AdPlayerView(name: "girlSpace")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.35)
+            
             
             VStack {
                 
@@ -102,7 +107,7 @@ struct RR18: View {
                             .opacity(0.7)
              
                         
-                        Text("w/ 5 closest friends")
+                        Text("w/ your 5 closest humans")
                             .font(.system(size: 24))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
@@ -145,7 +150,7 @@ struct RR18: View {
                                 destination:  RR58(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                                     VStack {
-                                        Text("It's cute - it's fun >>>")
+                                        Text("It's cute - it's real >>>")
                                             .fontWeight(.light)
                                             .frame(width: 290, height: 40)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
