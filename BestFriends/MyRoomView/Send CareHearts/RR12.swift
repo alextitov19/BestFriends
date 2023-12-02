@@ -110,18 +110,18 @@ struct RR12: View {
                   } else {
 
                       Color.black
-                        .opacity(0.9)
+                        .opacity(0.5)
                         .ignoresSafeArea()
                         .blendMode(.screen)
                       
                       Color.purple
-                        .opacity(0.9)
+                        .opacity(0.1)
                         .ignoresSafeArea()
                       
                       AdPlayerView(name: "Fireworks2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
-                          .opacity(0.6)
+                          .opacity(0.8)
              
                       
             }
