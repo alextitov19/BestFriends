@@ -209,6 +209,7 @@
 		CF2D30932B19C3F8008D9C38 /* sadGirl.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2D30922B19C3F8008D9C38 /* sadGirl.mp4 */; };
 		CF2D30972B19C627008D9C38 /* sadGirl2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2D30962B19C627008D9C38 /* sadGirl2.mp4 */; };
 		CF2D30992B1ACED4008D9C38 /* girlSpace.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2D30982B1ACED4008D9C38 /* girlSpace.mp4 */; };
+		CF2D309B2B1AD058008D9C38 /* girlSpace1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2D309A2B1AD058008D9C38 /* girlSpace1.mp4 */; };
 		CF2DBCEC2853DAF7008616A3 /* PickMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */; };
 		CF2DBCF928554E5B008616A3 /* BuildFriendPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */; };
 		CF2EE6F429515B8400B1B16D /* INFOChatCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6F329515B8400B1B16D /* INFOChatCircles.swift */; };
@@ -642,6 +643,7 @@
 		CF2D30922B19C3F8008D9C38 /* sadGirl.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sadGirl.mp4; sourceTree = "<group>"; };
 		CF2D30962B19C627008D9C38 /* sadGirl2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sadGirl2.mp4; sourceTree = "<group>"; };
 		CF2D30982B1ACED4008D9C38 /* girlSpace.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = girlSpace.mp4; sourceTree = "<group>"; };
+		CF2D309A2B1AD058008D9C38 /* girlSpace1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = girlSpace1.mp4; sourceTree = "<group>"; };
 		CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMediator.swift; sourceTree = "<group>"; };
 		CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildFriendPlaylist.swift; sourceTree = "<group>"; };
 		CF2EE6F329515B8400B1B16D /* INFOChatCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOChatCircles.swift; sourceTree = "<group>"; };
@@ -1561,6 +1563,7 @@
 			children = (
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
 				CF2D30982B1ACED4008D9C38 /* girlSpace.mp4 */,
+				CF2D309A2B1AD058008D9C38 /* girlSpace1.mp4 */,
 				CF2D30922B19C3F8008D9C38 /* sadGirl.mp4 */,
 				CF2D30962B19C627008D9C38 /* sadGirl2.mp4 */,
 				CF9ECC622B187634009E4C7C /* easyHearts2.mp4 */,
@@ -2314,6 +2317,7 @@
 				CF3DB37228DA6D7D00BF9CCD /* Nadiah2.m4a in Resources */,
 				CF3DB37628DA85BA00BF9CCD /* Meena1.m4a in Resources */,
 				7ACDB183282825C1009E1CFD /* GoogleService-Info.plist in Resources */,
+				CF2D309B2B1AD058008D9C38 /* girlSpace1.mp4 in Resources */,
 				CF2D30992B1ACED4008D9C38 /* girlSpace.mp4 in Resources */,
 				CF221EE62AF78FFB005D19B7 /* fistpumpVideo.mp4 in Resources */,
 			);

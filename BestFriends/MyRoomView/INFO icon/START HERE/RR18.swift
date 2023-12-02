@@ -46,7 +46,7 @@ struct RR18: View {
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
-            AdPlayerView(name: "girlSpace")
+            AdPlayerView(name: "girlSpace1")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.35)
