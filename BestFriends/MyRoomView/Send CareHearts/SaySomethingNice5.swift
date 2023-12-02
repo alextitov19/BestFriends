@@ -51,16 +51,21 @@ struct SaySomethingNice5: View {
             } else {
                 
                 
+                ColorManager .purple3
+                    .opacity(0.4)
+                    .ignoresSafeArea()
                 
+                AdPlayerView(name: "sky2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.5)
                 
                 AdPlayerView(name: "easyHearts2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.8)
+                    .opacity(0.3)
                 
-                Color.black
-                    .opacity(0.4)
-                    .ignoresSafeArea()
+               
                 
             }
             
