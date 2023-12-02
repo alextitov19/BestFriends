@@ -102,10 +102,7 @@ struct VirtualHug: View {
                     .blendMode(.screen)
                     .opacity(0.5)
                 
-                AdPlayerView(name: "autumnLeaves2")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .opacity(0.5)
+           
                 
             }
             
