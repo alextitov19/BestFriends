@@ -38,8 +38,8 @@ struct RR18: View {
         
         ZStack {
             
-            Color.black
-                .opacity(0.9)
+            Color.gray
+                .opacity(0.2)
                 .ignoresSafeArea()
             
             AdPlayerView(name: "sky2")
@@ -49,7 +49,7 @@ struct RR18: View {
             AdPlayerView(name: "girlSpace1")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                .opacity(0.35)
+                .opacity(0.5)
             
             
             VStack {
