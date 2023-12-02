@@ -53,9 +53,12 @@ struct RR59: View {
             AdPlayerView(name: "background_7")
                 .ignoresSafeArea()
                 .blendMode(.screen)
+                .opacity(0.5)
+            
+            AdPlayerView(name: "offPlanet1")
+                .ignoresSafeArea()
+                .blendMode(.screen)
                 .opacity(0.9)
-            
-            
             ZStack{
                 
                 VStack {
@@ -89,7 +92,7 @@ struct RR59: View {
                                 })
                         }
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 70)
                 
 //    *******************************************
            
@@ -147,10 +150,10 @@ struct RR59: View {
                 label: {
 //                    Image(systemName: "info.circle")
                     Text("AI")
-                        .font(.system(size: 40))
+                        .font(.system(size: 70))
                         .foregroundColor(ColorManager .grey4)
-                        .fontWeight(.medium)
-                        .opacity(0.5)
+                        .fontWeight(.bold)
+                        .opacity(0.7)
                         .multilineTextAlignment(.center)
 //                        .blinking(duration: 2.0)
                 })
@@ -217,63 +220,63 @@ struct RR59: View {
                             .frame(width: 140)
                         
                         
-                        ZStack {
-                            
-                            //*********************************************** Motion
-                            GeometryReader { geo in
-                                HStack(spacing: 280) {
-                                    
-                                    Image("")
-                                        .aspectRatio(contentMode: .fit)
-//                                        .blinking(duration: 6.0)
-                                    
-                                    Spacer()
-                                        .frame(width: 50)
-                                    
-                                    ZStack {
-                                        
-                                        //    ********************************************
-                                        Image("FatGuy")
-//                                            .aspectRatio(contentMode: .fit)
-                                            .frame(width: 120, height: 120)
-                                            .blinking(duration: 7.0)
-                                        
-                                        Text("When friends not around")
-                                            .fontWeight(.medium)
-                                            .frame(width: 200, height: 40)
-                                            .foregroundColor(Color.black)
-                                            .font(.system(size: 15))
-                                            .background(ColorManager .purple1)
-                                            .cornerRadius(7)
-                                            .rotationEffect(.degrees(-25))
-                                            .opacity(0.8)
-                                        //                                            .glow(color: ColorManager .grey4, radius: 3)
-                                            .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
-                                            .blinking(duration: 7.0)
-                                        
-                                        //**********************************************************
-                                        
-                                    }
-                                    
-                                    Image("")
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: geo.size.width, alignment: .leading)
-                                    
-                                    
-                                    
-                                }
-                                .frame(width: geo.size.width, height: geo.size.height,
-                                       alignment: animate ? .trailing : .leading)
-                            }
-                            .ignoresSafeArea()
-                            .onAppear {
-                                withAnimation(animation) {
-                                    animate.toggle()
-                                }
-                                
-                            }
-                        }
-  
+//                        ZStack {
+//
+//                            //*********************************************** Motion
+//                            GeometryReader { geo in
+//                                HStack(spacing: 280) {
+//
+//                                    Image("")
+//                                        .aspectRatio(contentMode: .fit)
+////                                        .blinking(duration: 6.0)
+//
+//                                    Spacer()
+//                                        .frame(width: 50)
+//
+//                                    ZStack {
+//
+//                                        //    ********************************************
+//                                        Image("FatGuy")
+////                                            .aspectRatio(contentMode: .fit)
+//                                            .frame(width: 120, height: 120)
+//                                            .blinking(duration: 7.0)
+//
+//                                        Text("When friends not around")
+//                                            .fontWeight(.medium)
+//                                            .frame(width: 200, height: 40)
+//                                            .foregroundColor(Color.black)
+//                                            .font(.system(size: 15))
+//                                            .background(ColorManager .purple1)
+//                                            .cornerRadius(7)
+//                                            .rotationEffect(.degrees(-25))
+//                                            .opacity(0.8)
+//                                        //                                            .glow(color: ColorManager .grey4, radius: 3)
+//                                            .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
+//                                            .blinking(duration: 7.0)
+//
+//                                        //**********************************************************
+//
+//                                    }
+//
+//                                    Image("")
+//                                        .aspectRatio(contentMode: .fit)
+//                                        .frame(width: geo.size.width, alignment: .leading)
+//
+//
+//
+//                                }
+//                                .frame(width: geo.size.width, height: geo.size.height,
+//                                       alignment: animate ? .trailing : .leading)
+//                            }
+//                            .ignoresSafeArea()
+//                            .onAppear {
+//                                withAnimation(animation) {
+//                                    animate.toggle()
+//                                }
+//
+//                            }
+//                        }
+//
                         
                         VStack {
                             
