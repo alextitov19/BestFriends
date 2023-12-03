@@ -203,7 +203,7 @@ struct VirtualHug: View {
                                     .frame(height: 20)
                                 
                                 
-                                Text("(say thanks for the Hug)")
+                                Text("(say thanks)")
                                     .font(.system(size: 15))
                                     .italic()
                                     .foregroundColor(ColorManager .grey2)
@@ -318,7 +318,7 @@ struct VirtualHug: View {
                                 
                                 
                                 Spacer()
-                                    .frame(height: 20)
+                                    .frame(height: 7)
                                 
                                 
                                 Button(action: {
