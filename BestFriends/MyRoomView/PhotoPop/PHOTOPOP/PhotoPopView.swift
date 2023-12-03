@@ -59,6 +59,18 @@ struct PhotoPopView: View {
                 }
             
             VStack {
+                
+                
+                
+                Text("Shake iPhone to \n   View Images")
+                    .fontWeight(.light)
+//                    .frame(width: 30, height: 30)
+                    .foregroundColor(Color.white)
+                    .font(.system(size: 30))
+                    .background(ColorManager .grey3)
+//                            .opacity(0.7)
+//                    .cornerRadius(20)
+//                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
         
                 NavigationLink( destination:  CH5(user: user, friends: friends),
                                 label: {
