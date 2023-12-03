@@ -209,8 +209,8 @@
 		CF2D30972B19C627008D9C38 /* sadGirl2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2D30962B19C627008D9C38 /* sadGirl2.mp4 */; };
 		CF2D309B2B1AD058008D9C38 /* girlSpace1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2D309A2B1AD058008D9C38 /* girlSpace1.mp4 */; };
 		CF2D309F2B1B0C73008D9C38 /* offPlanet1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2D309E2B1B0C73008D9C38 /* offPlanet1.mp4 */; };
-		CF2D30A52B1C0E06008D9C38 /* girlFriends.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2D30A42B1C0E06008D9C38 /* girlFriends.mp4 */; };
 		CF2D30A72B1C0F2B008D9C38 /* girlFriends2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2D30A62B1C0F2B008D9C38 /* girlFriends2.mp4 */; };
+		CF2D30AB2B1C11ED008D9C38 /* girlFriends1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2D30AA2B1C11ED008D9C38 /* girlFriends1.mp4 */; };
 		CF2DBCEC2853DAF7008616A3 /* PickMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */; };
 		CF2DBCF928554E5B008616A3 /* BuildFriendPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */; };
 		CF2EE6F429515B8400B1B16D /* INFOChatCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6F329515B8400B1B16D /* INFOChatCircles.swift */; };
@@ -643,8 +643,8 @@
 		CF2D30962B19C627008D9C38 /* sadGirl2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sadGirl2.mp4; sourceTree = "<group>"; };
 		CF2D309A2B1AD058008D9C38 /* girlSpace1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = girlSpace1.mp4; sourceTree = "<group>"; };
 		CF2D309E2B1B0C73008D9C38 /* offPlanet1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = offPlanet1.mp4; sourceTree = "<group>"; };
-		CF2D30A42B1C0E06008D9C38 /* girlFriends.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = girlFriends.mp4; sourceTree = "<group>"; };
 		CF2D30A62B1C0F2B008D9C38 /* girlFriends2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = girlFriends2.mp4; sourceTree = "<group>"; };
+		CF2D30AA2B1C11ED008D9C38 /* girlFriends1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = girlFriends1.mp4; sourceTree = "<group>"; };
 		CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMediator.swift; sourceTree = "<group>"; };
 		CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildFriendPlaylist.swift; sourceTree = "<group>"; };
 		CF2EE6F329515B8400B1B16D /* INFOChatCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOChatCircles.swift; sourceTree = "<group>"; };
@@ -1562,7 +1562,7 @@
 			isa = PBXGroup;
 			children = (
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
-				CF2D30A42B1C0E06008D9C38 /* girlFriends.mp4 */,
+				CF2D30AA2B1C11ED008D9C38 /* girlFriends1.mp4 */,
 				CF2D30A62B1C0F2B008D9C38 /* girlFriends2.mp4 */,
 				CF2D309E2B1B0C73008D9C38 /* offPlanet1.mp4 */,
 				CF2D309A2B1AD058008D9C38 /* girlSpace1.mp4 */,
@@ -2303,7 +2303,6 @@
 				CF9AA2B72B067E580053303C /* droppingHearts2.mp4 in Resources */,
 				CF9ECC5D2B186AB5009E4C7C /* snowAngles2.mp4 in Resources */,
 				CF8941282A8B459300AFEC39 /* background_8.mp4 in Resources */,
-				CF2D30A52B1C0E06008D9C38 /* girlFriends.mp4 in Resources */,
 				CF1773F42A8BB5F800DF5A15 /* PlanetSave2.mp4 in Resources */,
 				CF1773FC2A8D30D300DF5A15 /* background_7.mp4 in Resources */,
 				7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */,
@@ -2313,6 +2312,7 @@
 				CF89412A2A8B483D00AFEC39 /* PhotoPOP2.mp4 in Resources */,
 				CF1A33862B0EDF2E00D24B66 /* sadLonely.mp4 in Resources */,
 				CF8941262A8B448900AFEC39 /* TreeLake2.mp4 in Resources */,
+				CF2D30AB2B1C11ED008D9C38 /* girlFriends1.mp4 in Resources */,
 				CF221EE82AF79530005D19B7 /* blowingkissesVid.mp4 in Resources */,
 				7A383FFD267AC306002F354A /* background_4.mp4 in Resources */,
 				CF3DB37228DA6D7D00BF9CCD /* Nadiah2.m4a in Resources */,
@@ -2958,7 +2958,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -2990,7 +2990,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;

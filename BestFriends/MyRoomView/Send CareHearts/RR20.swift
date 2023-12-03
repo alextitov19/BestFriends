@@ -128,12 +128,12 @@ struct RR20: View {
                       AdPlayerView(name: "sky2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
-                          .opacity(0.6)
+                          .opacity(0.9)
                       
-//                      AdPlayerView(name: "soundEarth2")
-//                          .ignoresSafeArea()
-//                          .blendMode(.screen)
-//                          .opacity(0.6)
+                      AdPlayerView(name: "girlFriends1")
+                          .ignoresSafeArea()
+                          .blendMode(.screen)
+                          .opacity(0.6)
 //                      
             }
             
