@@ -126,11 +126,15 @@ struct RR26: View {
                         .opacity(0.9)
                         .ignoresSafeArea()
                       
-                      AdPlayerView(name: "sky2")
+//                      AdPlayerView(name: "sky2")
+//                          .ignoresSafeArea()
+//                          .blendMode(.screen)
+//                          .opacity(0.6)
+                      
+                      AdPlayerView(name: "girlFriends2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
                           .opacity(0.6)
-             
                       
             }
             
