@@ -480,7 +480,7 @@ struct HomeView: View {
                             NavigationLink(destination: EmptyView(), label: {
                                 PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
                                     .scaledToFit()
-                                    .frame(width: 160, height: 160)
+                                    .frame(width: 140, height: 140)
                                     .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 11)
                                     .opacity(0.3)
                                     .padding()
