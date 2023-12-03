@@ -128,26 +128,28 @@ struct VirtualHug: View {
                                     
                                     VStack {
                                         
-                                        Text("hold iPhone")
+                                        Text("hold iPhone to")
                                             .font(.system(size: 47))
                                             .fontWeight(.bold)
                                             .multilineTextAlignment(.center)
                                             .foregroundColor(ColorManager .grey2)
                                             .rotationEffect(.degrees(-20))
-                                        //                                .blinking(duration: 3.0)
+                                            .blinking(duration: 3.0)
                                             .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                                            .opacity(0.25)
+                                            .opacity(0.3)
+                                     
+                                        Spacer ()
+                                            .frame(height: 40)
                                         
-                                        
-                                        Text("to your HEART")
+                                        Text("        your HEART")
                                             .font(.system(size: 47))
                                             .fontWeight(.bold)
                                             .multilineTextAlignment(.center)
                                             .foregroundColor(ColorManager .grey2)
                                             .rotationEffect(.degrees(-20))
-                                        //                                .blinking(duration: 3.0)
+                                            .blinking(duration: 3.0)
                                             .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                                            .opacity(0.25)
+                                            .opacity(0.3)
                                         
                                     }
                                 }
@@ -158,14 +160,14 @@ struct VirtualHug: View {
                                 Image(systemName: "heart.fill")
                                     .resizable()
                                     .foregroundColor(.purple)
-                                    .frame(width: 250, height: 200)
+                                    .frame(width: 400, height: 300)
                                     .shadow(color: .blue, radius: 65, x: 30, y: 50)
                                     .opacity(0.3)
                                 
                                 VStack {
                                     
                                     
-                                    Text("TAP here")
+                                    Text("TAP")
                                         .font(.system(size: 25))
                                         .fontWeight(.light)
                                         .multilineTextAlignment(.center)
