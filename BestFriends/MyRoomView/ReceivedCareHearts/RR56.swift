@@ -32,8 +32,8 @@ struct RR56: View {
     var body: some View {
         
         ZStack {
-            Color.black
-                .opacity(0.9)
+            Color.orange
+                .opacity(0.1)
                 .ignoresSafeArea()
   
             AdPlayerView(name: "background_7")

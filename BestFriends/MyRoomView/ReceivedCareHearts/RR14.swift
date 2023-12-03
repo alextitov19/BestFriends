@@ -106,14 +106,14 @@ struct RR14: View {
 //                          .scaledToFit()
 //                          .opacity(0.1)
                       
-                      Color.purple
-                        .opacity(0.9)
+                      Color.black
+                        .opacity(0.3)
                         .ignoresSafeArea()
                       
                       AdPlayerView(name: "Fireworks2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
-                          .opacity(0.6)
+                          .opacity(0.9)
              
                       
             }
