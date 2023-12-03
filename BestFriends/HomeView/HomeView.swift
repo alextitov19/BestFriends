@@ -86,10 +86,10 @@ struct HomeView: View {
                         .opacity(0.9)
                     
                     
-                    AdPlayerView(name: "sendHearts1")
-                        .ignoresSafeArea()
-                        .blendMode(.screen)
-                        .opacity(0.35)
+//                    AdPlayerView(name: "sendHearts1")
+//                        .ignoresSafeArea()
+//                        .blendMode(.screen)
+//                        .opacity(0.35)
                     
            
              
