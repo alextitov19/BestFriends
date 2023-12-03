@@ -172,6 +172,7 @@ struct VirtualHug: View {
                                         .fontWeight(.light)
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(Color.white)
+//                                        .blinking(duration: 3.0)
                                         .opacity(0.5)
                                         .padding()
                                         .onTapGesture {
