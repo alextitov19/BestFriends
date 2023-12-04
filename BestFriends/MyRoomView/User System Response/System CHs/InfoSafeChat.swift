@@ -102,7 +102,7 @@ struct InfoSafeChat: View {
                   .opacity(0.4)
                   .ignoresSafeArea()
                 
-                AdPlayerView(name: "sadLonely")
+                AdPlayerView(name: "rainDrops1")
                               .ignoresSafeArea()
                               .blendMode(.screen)
                               .opacity(0.5)
