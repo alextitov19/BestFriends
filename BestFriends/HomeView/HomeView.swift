@@ -490,8 +490,8 @@ struct HomeView: View {
                         Text("tap")
                             .font(.system(size: 40))
                             .foregroundColor(Color.white)
-                            .fontWeight(.light)
-                            .opacity(0.99)
+                            .fontWeight(.thin)
+                            .opacity(0.7)
                             .multilineTextAlignment(.center)
                             .blinking(duration: 2.0)
 
@@ -534,6 +534,17 @@ struct HomeView: View {
                                     Image("iconChat5")
                                         .opacity(0.8)
                                         .frame(width: 120, height: 120)
+                                    
+                                    
+                                    Text("tap")
+                                        .font(.system(size: 40))
+                                        .foregroundColor(ColorManager .grey2)
+                                        .fontWeight(.thin)
+                                        .opacity(0.7)
+                                        .multilineTextAlignment(.center)
+//                                        .blinking(duration: 2.0)
+                                    
+                                    
                                 }
 
                                 }
