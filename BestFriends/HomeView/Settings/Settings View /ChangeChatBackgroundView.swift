@@ -83,9 +83,13 @@ struct ChangeChatBackgroundView: View {
                 
                 HStack {
                     
-                    BackgroundCard(title: "Univeerse 3", backgroundNumber: 9, user: user, selectedBackground: $selectedBackground)
+                    BackgroundCard(title: "Same background \nvideo as Homepage", backgroundNumber: 10, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
                   
+                    
+//                    BackgroundCard(title: "Universe 3", backgroundNumber: 9, user: user, selectedBackground: $selectedBackground)
+//                        .padding(5)
+                    
                     
                     BackgroundCard(title: "Bull - motion", backgroundNumber: 5, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
