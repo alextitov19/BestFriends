@@ -95,7 +95,7 @@ struct HugPreload: View {
                                 .frame(width: 35)
                             
                             NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.cyan, friendName: "Songs")
+                                HugCircle (color: Color.cyan, friendName: "Missing \nYou")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
@@ -120,10 +120,10 @@ struct HugPreload: View {
                             
                             
                             NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), label: {
-                                HugCircle (color: Color.pink, friendName: "Thinking \nof you")
+                                HugCircle (color: Color.cyan, friendName: "Hearts")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
-                            .shadow(color: Color .pink, radius: 5, x: 2, y: -2)
+                            .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
                             .opacity(0.99)
                             
 
@@ -174,11 +174,11 @@ struct HugPreload: View {
                         ZStack {
                             
                             
-                            NavigationLink(destination: RR20(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.green, friendName: "Friends")
+                            NavigationLink(destination: EmptyView(), label: {
+                                HugCircle (color: Color.cyan, friendName: "You look \nnice \ntoday")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                            .shadow(color: Color.green, radius: 10, x: -4, y: 4)
+                            .shadow(color: Color.blue, radius: 10, x: -4, y: 4)
                             .opacity(0.99)
                       
                         }
@@ -283,17 +283,29 @@ struct HugPreload: View {
                                     Image("")
 //
 //
-                                    
-//                                    NavigationLink(destination: RR33(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-//                                        HugCircle (color: ColorManager .grey1, friendName: "Hurt \nFeelings")
-//                                    })
-//                                    .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-//                                    .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
-//                                    .opacity(0.99)
-                                   
+                                    NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
+                                        HugCircle (color: Color.cyan, friendName: "Sad n' \nLonly")
+                                    })
+                                    .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+                                    .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
+                                    .opacity(0.99)
+                                
                                 }
+                                
                                 Spacer()
-                                    .frame(width: 200)
+                                    .frame(width: 50)
+                                
+                                NavigationLink(destination: RR20(user: user, friend: user, friends: friends, groups: groups), label: {
+                                    HugCircle (color: Color.cyan, friendName: "Friends")
+                                })
+                                .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+                                .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
+                                .opacity(0.99)
+                                
+                                
+                                
+                                Spacer()
+                                    .frame(width: 50)
                                 
                                 ZStack {
                                     
