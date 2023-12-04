@@ -284,7 +284,7 @@ struct HugPreload: View {
 //
 //
                                     NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
-                                        HugCircle (color: Color.cyan, friendName: "Sad n' \nLonly")
+                                        HugCircle (color: Color.cyan, friendName: "Sad \nDay \nSong")
                                     })
                                     .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                                     .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
@@ -293,20 +293,8 @@ struct HugPreload: View {
                                 }
                                 
                                 Spacer()
-                                    .frame(width: 170)
-                                
-//                                NavigationLink(destination: RR20(user: user, friend: user, friends: friends, groups: groups), label: {
-//                                    HugCircle (color: Color.cyan, friendName: "Friends")
-//                                })
-//                                .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
-//                                .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
-//                                .opacity(0.99)
-//
-//
-                                
-//                                Spacer()
-//                                    .frame(width: 50)
-                                
+                                    .frame(width: 190)
+
                                 ZStack {
                                     
                                     NavigationLink(destination: RR20(user: user, friend: user, friends: friends, groups: groups), label: {
@@ -329,17 +317,13 @@ struct HugPreload: View {
                                 .opacity(0.99)
                                 
                             }
-                            
-                            
-                            
-                            
-                            
-                            }
+                   
+                        }
                         
             VStack {
                                 
                 Spacer ()
-                    .frame(height: 170)
+                    .frame(height: 80)
                                 
                             }
                         }
