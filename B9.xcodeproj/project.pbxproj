@@ -1268,7 +1268,6 @@
 		CF01267C2A0E307000516B8E /* FriendShips */ = {
 			isa = PBXGroup;
 			children = (
-				CF2EE70029529C0300B1B16D /* NEWSFeedPergion.swift */,
 			);
 			path = FriendShips;
 			sourceTree = "<group>";
@@ -1276,7 +1275,6 @@
 		CF01267F2A0F7F4C00516B8E /* YouLookNice */ = {
 			isa = PBXGroup;
 			children = (
-				CF41754B296FBB8D00898E2D /* InfoWhyLoveBF.swift */,
 			);
 			path = YouLookNice;
 			sourceTree = "<group>";
@@ -1731,6 +1729,8 @@
 				2DDCD98B2A92A1D900B1040F /* ColorPicker.swift */,
 				2DDCD98D2A92A21900B1040F /* Constants.swift */,
 				2DB42CF12AAE876A00E137C0 /* RR23.swift */,
+				CF41754B296FBB8D00898E2D /* InfoWhyLoveBF.swift */,
+				CF2EE70029529C0300B1B16D /* NEWSFeedPergion.swift */,
 			);
 			path = "Send CareHearts";
 			sourceTree = "<group>";

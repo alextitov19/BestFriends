@@ -94,7 +94,7 @@ struct HugPreload: View {
                             Spacer()
                                 .frame(width: 35)
                             
-                            NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
+                            NavigationLink(destination: NEWSFeedPergion(user: user, friends: friends), label: {
                                 HugCircle (color: Color.cyan, friendName: "Missing \nYou")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
@@ -174,7 +174,7 @@ struct HugPreload: View {
                         ZStack {
                             
                             
-                            NavigationLink(destination: EmptyView(), label: {
+                            NavigationLink(destination: InfoWhyLoveBF(user: user, friends: friends), label: {
                                 HugCircle (color: Color.cyan, friendName: "You look \nnice \ntoday")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
