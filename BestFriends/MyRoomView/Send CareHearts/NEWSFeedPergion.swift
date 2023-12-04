@@ -57,10 +57,10 @@ struct NEWSFeedPergion: View {
                     .blendMode(.screen)
                     .opacity(0.5)
                 
-                AdPlayerView(name: "easyHearts2")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .opacity(0.3)
+//                AdPlayerView(name: "easyHearts2")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.3)
                 
                
                 
@@ -88,9 +88,14 @@ struct NEWSFeedPergion: View {
                                 
                                 VStack {
                                     
+                                    Text("just wanted to say,")
+                                        .font(.system(size: 23, weight: .light))
+                                        .italic()
+                                        .foregroundColor(ColorManager .grey1)
+                                        .opacity(0.5)
                                     
-                                    Text("Missing You")
-                                        .font(.system(size: 30, weight: .light))
+                                    Text("I'm missing you")
+                                        .font(.system(size: 33, weight: .light))
                                         .foregroundColor(ColorManager .grey1)
                                         .opacity(0.5)
                                     
@@ -107,7 +112,7 @@ struct NEWSFeedPergion: View {
                 
                     VStack {
                         Spacer()
-                            .frame(height: 150)
+                            .frame(height: 50)
                         
                         NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
                                         label: {

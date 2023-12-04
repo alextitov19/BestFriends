@@ -92,15 +92,16 @@ struct SaySomethingNice5: View {
                                 VStack {
                                     
                                     
-                                    Text("Thinking of you")
-                                        .font(.system(size: 30, weight: .light))
+                                    Text("thinking of you")
+                                        .font(.system(size: 25, weight: .light))
+                                        .italic()
                                         .foregroundColor(ColorManager .grey1)
                                         .opacity(0.5)
                                     
-//                                    Text("light as butterfly wings")
-//                                        .font(.system(size: 20, weight: .light))
-//                                        .foregroundColor(ColorManager .grey1)
-//                                        .opacity(0.5)
+                                    Text("Sending Hearts")
+                                        .font(.system(size: 33, weight: .light))
+                                        .foregroundColor(ColorManager .grey1)
+                                        .opacity(0.5)
                                 }
                             }
                         }
@@ -110,7 +111,7 @@ struct SaySomethingNice5: View {
                 
                     VStack {
                         Spacer()
-                            .frame(height: 150)
+                            .frame(height: 70)
                         
                         NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
                                         label: {
