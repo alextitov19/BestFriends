@@ -57,12 +57,18 @@ struct ChangeChatBackgroundView: View {
 //                    BackgroundCard(title: "Default - static", backgroundNumber: 0, user: user, selectedBackground: $selectedBackground)
 //                        .padding(5)
 //
-//                 
+//
                     
-                    BackgroundCard(title: "Default - Universe 2", backgroundNumber: 8, user: user, selectedBackground: $selectedBackground)
+                    BackgroundCard(title: "Same as Homepage", backgroundNumber: 10, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
                     
-                    BackgroundCard(title: "Poppies - motion", backgroundNumber: 4, user: user, selectedBackground: $selectedBackground)
+                    BackgroundCard(title: "Orange Planet", backgroundNumber: 8, user: user, selectedBackground: $selectedBackground)
+                        .padding(5)
+                    
+                 
+                    
+                    
+                    BackgroundCard(title: "Circling Planets", backgroundNumber: 7, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
                  
                    
@@ -73,25 +79,32 @@ struct ChangeChatBackgroundView: View {
                 .padding(.horizontal, 10)
                 
                 HStack {
-                    BackgroundCard(title: "Universe 1", backgroundNumber: 7, user: user, selectedBackground: $selectedBackground)
+                    BackgroundCard(title: "Poppies in breeze", backgroundNumber: 4, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
                     
-                    BackgroundCard(title: "Static", backgroundNumber: 0, user: user, selectedBackground: $selectedBackground)
+                    BackgroundCard(title: "Static Gray", backgroundNumber: 0, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
                 }
                 .padding(.horizontal, 10)
                 
                 HStack {
                     
+                    
+                    
+                    
                     BackgroundCard(title: "Same background \nvideo as Homepage", backgroundNumber: 10, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
                   
+                    BackgroundCard(title: "Default - Universe 2", backgroundNumber: 8, user: user, selectedBackground: $selectedBackground)
+                        .padding(5)
                     
 //                    BackgroundCard(title: "Universe 3", backgroundNumber: 9, user: user, selectedBackground: $selectedBackground)
 //                        .padding(5)
                     
                     
-                    BackgroundCard(title: "Bull - motion", backgroundNumber: 5, user: user, selectedBackground: $selectedBackground)
+                    
+                    
+                    BackgroundCard(title: "Bull in snow", backgroundNumber: 5, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
                 }
                 .padding(.horizontal, 10)
