@@ -142,7 +142,7 @@ struct HugPreload: View {
                                 Image("IconPhotoNew")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 60, height: 60)
+                                    .frame(width: 80, height: 80)
                                     .rotationEffect(.degrees(-7))
                                     .foregroundColor(ColorManager .purple5)
                                     .glow(color: Color.purple, radius: 2)

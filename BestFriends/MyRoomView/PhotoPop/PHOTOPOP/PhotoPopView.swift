@@ -59,58 +59,58 @@ struct PhotoPopView: View {
                 }
             
             VStack {
-                
-                
-                
-                Text("Shake iPhone to \n   View Images")
-                    .fontWeight(.light)
-//                    .frame(width: 30, height: 30)
-                    .foregroundColor(Color.white)
-                    .font(.system(size: 30))
-                    .background(ColorManager .grey3)
-//                            .opacity(0.7)
-//                    .cornerRadius(20)
-//                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-        
-                NavigationLink( destination:  CH5(user: user, friends: friends),
-                                label: {
-                    Text("+")
-                        .fontWeight(.light)
-                        .frame(width: 30, height: 30)
-                        .foregroundColor(Color.white)
-                        .font(.system(size: 30))
-                        .background(ColorManager .grey3)
-//                            .opacity(0.7)
-                        .cornerRadius(20)
-                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                })
-                
-            
-                
-                Spacer()
-                    .frame(height: 13)
-                
-                NavigationLink(
-                    destination: PhotoPop3(user: user, friends: friends),
-                    label: {
-                        Text("real-time delivery")
-                            .fontWeight(.light)
-                            .frame(width: 130, height: 30)
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 15))
-                            .background(ColorManager .grey3)
-    //                            .opacity(0.7)
-                            .cornerRadius(10)
-                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                    })
+           
+                Text("friend shakes iPhone \nto view pic")
+                    .font(.system(size: 35))
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager .grey2)
+                    .rotationEffect(.degrees(-20))
+                                .blinking(duration: 3.0)
+                    .shadow(color: Color.white, radius: 2, x: 1, y: 1)
+                    .opacity(0.7)
                 
 
                     
-                    HStack {
-                        Image(systemName: "camera")
+                    Spacer()
+                        .frame(height: 13)
+                
+                HStack {
+                    NavigationLink(
+                        destination: PhotoPop3(user: user, friends: friends),
+                        label: {
+                            Text("real-time delivery")
+                                .fontWeight(.light)
+                                .frame(width: 130, height: 30)
+                                .foregroundColor(Color.white)
+                                .font(.system(size: 15))
+                                .background(ColorManager .grey3)
+                            //                            .opacity(0.7)
+                                .cornerRadius(10)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                        })
+                    
+                    NavigationLink( destination:  CH5(user: user, friends: friends),
+                                    label: {
+                        Image(systemName: "info.circle")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 45, height: 45)
+                            .frame(width: 35, height: 35)
+                            .foregroundColor(Color.white)
+                        //                        .blinking(duration: 2.0)
+                            .opacity(0.99)
+                        
+                    })
+                }
+                    
+                    
+                    
+                    
+                    HStack {
+                        Image("IconPhotoNew")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 100, height: 100)
                             .foregroundColor(Color.cyan)
                         
                             .onTapGesture {
@@ -119,24 +119,23 @@ struct PhotoPopView: View {
                             }
                             .padding()
                         
-                        Image(systemName: "photo")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 45, height: 45)
-                            .foregroundColor(ColorManager .purple4)
-                            .onTapGesture {
-                                pickerSourceType = .photoLibrary
-                                showingRecipients = true
-                            }
-                            .padding()
+                        
+// ************ Removed Gallary for now - keeps this more real-time ***************
+                        
+//                        Image(systemName: "photo")
+//                            .resizable()
+//                            .scaledToFit()
+//                            .frame(width: 45, height: 45)
+//                            .foregroundColor(ColorManager .purple4)
+//                            .onTapGesture {
+//                                pickerSourceType = .photoLibrary
+//                                showingRecipients = true
+//                            }
+//                            .padding()
+                        
+                        
                     }
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                
                     
                     if isLoading {
                         ProgressView()
