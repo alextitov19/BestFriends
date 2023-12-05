@@ -55,59 +55,7 @@ struct CH5: View {
                 .opacity(0.99)
             
     VStack {
-               
-        HStack {
-               
-            
-            Image("")
-                .resizable()
-                .foregroundColor(Color.purple)
-//                .frame(width: 400, height: 180)
-                .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
-            //                    .rotationEffect(.degrees(-10))
-                .opacity(0.95)
-            
-            
-            Spacer()
-                .frame(width: 100)
-            
-            
-            ZStack {
-                
-                Image("comicBubble")
-                    .resizable()
-                    .foregroundColor(Color.purple)
-                    .frame(width: 400, height: 180)
-                    .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
-                //                    .rotationEffect(.degrees(-10))
-                    .opacity(0.95)
-                
-                VStack {
-                    
-                    //                        NavigationLink( destination: InviteView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                    //                                        label: {
-                    Text("PhotoPOP")
-                        .font(.system(size: 28))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.cyan)
-                    
-                    Spacer()
-                        .frame(height: 4)
-                    
-                    Text("To view images 'shake' iPhone")
-                        .font(.system(size: 20))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
-                    
-                    Spacer()
-                        .frame(height: 17)
-                    
-                }
-            }
-        }
-                
+  
                
                 
         ZStack {
@@ -131,7 +79,7 @@ struct CH5: View {
                                 .frame(height: 10)
                             
                             
-                            Text("SENDING IMAGES: \n1) Tap 'camera' or 'gallery' \n2) Select friend \n3) add image \n4) Tap [real-time delivery] \n\nNote: \nYou can only send ONE image at a time \n\n\nSENDING NEW IMAGE:  \n1) DELETE current image (just tap it) \n2) Repeat above steps.")
+                            Text("SENDING IMAGES: \n1) Tap 'camera' \n2) Select friend \n\nNote: \nYou can only send ONE image at a time \n\n\nSENDING NEW IMAGE:  \n1) DELETE current image (just tap it) \n2) Repeat above steps.")
                                 .fontWeight(.regular)
                                 .frame(width: 275, height: 300)
                                 .foregroundColor(Color.white)
@@ -143,12 +91,17 @@ struct CH5: View {
                             
                             
                             
-                            Text("(if you get a 'loading' icon,")
+                            Text("If you get a 'loading' icon,")
                                 .foregroundColor(Color.white)
                                 .italic()
                                 .font(.system(size: 14, weight: .light))
                             
-                            Text("friend has deleted image)")
+                            Text("friend has deleted image,")
+                                .foregroundColor(Color.white)
+                                .italic()
+                                .font(.system(size: 14, weight: .light))
+                            
+                            Text("just exit page and return")
                                 .foregroundColor(Color.white)
                                 .italic()
                                 .font(.system(size: 14, weight: .light))

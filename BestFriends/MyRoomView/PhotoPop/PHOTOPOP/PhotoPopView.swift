@@ -77,9 +77,9 @@ struct PhotoPopView: View {
                         NavigationLink(
                             destination: PhotoPop3(user: user, friends: friends),
                             label: {
-                                Text("real-time delivery")
+                                Text("tell friend")
                                     .fontWeight(.light)
-                                    .frame(width: 130, height: 30)
+                                    .frame(width: 80, height: 30)
                                     .foregroundColor(Color.white)
                                     .font(.system(size: 15))
                                     .background(ColorManager .grey3)

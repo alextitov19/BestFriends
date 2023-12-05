@@ -62,12 +62,15 @@ struct PhotoPop3: View {
                 
                 VStack {
               
-                    Text("(alert friend)")
+                    Text("image has been sent")
                         .font(.system(size: 15, weight: .light))
                         .italic()
                         .foregroundColor(Color.white)
                   
-                    
+                    Text("alert friend to 'shake' iPhone")
+                        .font(.system(size: 15, weight: .light))
+                        .italic()
+                        .foregroundColor(Color.white)
                 }
                     VStack {
                         Spacer()
