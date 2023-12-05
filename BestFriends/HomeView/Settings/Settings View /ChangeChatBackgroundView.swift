@@ -59,7 +59,7 @@ struct ChangeChatBackgroundView: View {
 //
 //
                     
-                    BackgroundCard(title: "Same as Homepage", backgroundNumber: 10, user: user, selectedBackground: $selectedBackground)
+                    BackgroundCard(title: "Recommended: \n   (same as \n    Homepage)", backgroundNumber: 10, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
                     
                     BackgroundCard(title: "Orange Planet", backgroundNumber: 8, user: user, selectedBackground: $selectedBackground)
@@ -82,8 +82,16 @@ struct ChangeChatBackgroundView: View {
                     BackgroundCard(title: "Poppies in breeze", backgroundNumber: 4, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
                     
-                    BackgroundCard(title: "Static Gray", backgroundNumber: 0, user: user, selectedBackground: $selectedBackground)
+                    BackgroundCard(title: "Default - Static Gray", backgroundNumber: 0, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
+                    
+//                    BackgroundCard(title: "Static Gray", backgroundNumber: 0, user: user, selectedBackground: $selectedBackground)
+//                        .padding(5)
+                    
+                    
+                    
+                    
+                    
                 }
                 .padding(.horizontal, 10)
                 

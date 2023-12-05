@@ -215,6 +215,7 @@
 		CF2D30B52B1D7FFE008D9C38 /* background_11.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2D30B42B1D7FFE008D9C38 /* background_11.mp4 */; };
 		CF2D30B72B1DEF47008D9C38 /* missingYou.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2D30B62B1DEF47008D9C38 /* missingYou.mp4 */; };
 		CF2D30B92B1DEF7A008D9C38 /* missingYou2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2D30B82B1DEF7A008D9C38 /* missingYou2.mp4 */; };
+		CF2D30BB2B1FECFC008D9C38 /* background_0.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2D30BA2B1FECFC008D9C38 /* background_0.mp4 */; };
 		CF2DBCEC2853DAF7008616A3 /* PickMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */; };
 		CF2DBCF928554E5B008616A3 /* BuildFriendPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */; };
 		CF2EE6F429515B8400B1B16D /* INFOChatCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EE6F329515B8400B1B16D /* INFOChatCircles.swift */; };
@@ -653,6 +654,7 @@
 		CF2D30B42B1D7FFE008D9C38 /* background_11.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_11.mp4; sourceTree = "<group>"; };
 		CF2D30B62B1DEF47008D9C38 /* missingYou.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = missingYou.mp4; sourceTree = "<group>"; };
 		CF2D30B82B1DEF7A008D9C38 /* missingYou2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = missingYou2.mp4; sourceTree = "<group>"; };
+		CF2D30BA2B1FECFC008D9C38 /* background_0.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_0.mp4; sourceTree = "<group>"; };
 		CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMediator.swift; sourceTree = "<group>"; };
 		CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildFriendPlaylist.swift; sourceTree = "<group>"; };
 		CF2EE6F329515B8400B1B16D /* INFOChatCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOChatCircles.swift; sourceTree = "<group>"; };
@@ -1587,6 +1589,7 @@
 				CFADFD8F2AFFA53B0090071A /* sendHearts1.mp4 */,
 				CF1773F72A8C0D6800DF5A15 /* Fireworks2.mp4 */,
 				CF1A338B2B0EE1BA00D24B66 /* Fireworks1.mp4 */,
+				CF2D30BA2B1FECFC008D9C38 /* background_0.mp4 */,
 				CF5263D6266477C600243DD7 /* background_4.mp4 */,
 				CF51BF822AE2F693007A3DBF /* background_5.mp4 */,
 				CF1773FB2A8D30D300DF5A15 /* background_7.mp4 */,
@@ -2307,6 +2310,7 @@
 				CF9ECC632B187634009E4C7C /* easyHearts2.mp4 in Resources */,
 				CFADFD9C2AFFF58D0090071A /* sadDay1.mp4 in Resources */,
 				CFADFD982AFFF00C0090071A /* thumbsUp.mp4 in Resources */,
+				CF2D30BB2B1FECFC008D9C38 /* background_0.mp4 in Resources */,
 				CF8941302A8B4AA400AFEC39 /* background_9.mp4 in Resources */,
 				CF1773F82A8C0D6800DF5A15 /* Fireworks2.mp4 in Resources */,
 				CF2D309F2B1B0C73008D9C38 /* offPlanet1.mp4 in Resources */,
@@ -2974,7 +2978,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -3006,7 +3010,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;

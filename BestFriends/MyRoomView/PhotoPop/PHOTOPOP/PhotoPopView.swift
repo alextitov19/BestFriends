@@ -63,7 +63,7 @@ struct PhotoPopView: View {
                 ZStack {
                   
                         
-                        Text("friend shakes iPhone \nto view your pic")
+                        Text("friend shake iPhone \nto view your pic")
                             .font(.system(size: 27))
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
