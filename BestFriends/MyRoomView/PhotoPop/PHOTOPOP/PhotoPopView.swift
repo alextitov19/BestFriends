@@ -59,23 +59,50 @@ struct PhotoPopView: View {
                 }
             
             VStack {
-           
-                Text("friend shakes iPhone \nto view pic")
-                    .font(.system(size: 35))
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey2)
-                    .rotationEffect(.degrees(-20))
-                                .blinking(duration: 3.0)
-                    .shadow(color: Color.white, radius: 2, x: 1, y: 1)
-                    .opacity(0.7)
                 
-
+                ZStack {
+                    HStack {
+                        
+                        Text("friend shakes iPhone \nto view your pic")
+                            .font(.system(size: 27))
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                            .rotationEffect(.degrees(-20))
+                            .blinking(duration: 3.0)
+                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
+                            .opacity(0.5)
+                        
+                        
+                        Image("IconPhotoNew")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 70, height: 70)
+                            .foregroundColor(Color.cyan)
+                        
+                            .onTapGesture {
+                                pickerSourceType = .camera
+                                showingRecipients = true
+                            }
+                        
+                        
+                        NavigationLink( destination:  CH5(user: user, friends: friends),
+                                        label: {
+                            Image(systemName: "info.circle")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 35, height: 35)
+                                .foregroundColor(Color.white)
+                            //                        .blinking(duration: 2.0)
+                                .opacity(0.99)
+                            
+                        })
+                    }
                     
-                    Spacer()
-                        .frame(height: 13)
-                
-                HStack {
+                }
+        
+        
+        HStack {
                     NavigationLink(
                         destination: PhotoPop3(user: user, friends: friends),
                         label: {
@@ -89,36 +116,38 @@ struct PhotoPopView: View {
                                 .cornerRadius(10)
                                 .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                         })
+            Spacer ()
+                           .frame(width: 10)
+            
+            HStack {
+                Image("IconPhotoNew")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 70, height: 70)
+                    .foregroundColor(Color.cyan)
+                
+                    .onTapGesture {
+                        pickerSourceType = .camera
+                        showingRecipients = true
+                    }
+
+     Spacer ()
+                    .frame(width: 100)
+                
                     
-                    NavigationLink( destination:  CH5(user: user, friends: friends),
-                                    label: {
-                        Image(systemName: "info.circle")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 35, height: 35)
-                            .foregroundColor(Color.white)
-                        //                        .blinking(duration: 2.0)
-                            .opacity(0.99)
-                        
-                    })
-                }
-                    
-                    
-                    
-                    
-                    HStack {
-                        Image("IconPhotoNew")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 100, height: 100)
-                            .foregroundColor(Color.cyan)
-                        
-                            .onTapGesture {
-                                pickerSourceType = .camera
-                                showingRecipients = true
-                            }
-                            .padding()
-                        
+//                    NavigationLink( destination:  CH5(user: user, friends: friends),
+//                                    label: {
+//                        Image(systemName: "info.circle")
+//                            .resizable()
+//                            .scaledToFit()
+//                            .frame(width: 35, height: 35)
+//                            .foregroundColor(Color.white)
+//                        //                        .blinking(duration: 2.0)
+//                            .opacity(0.99)
+//
+//                    })
+               
+            }
                         
 // ************ Removed Gallary for now - keeps this more real-time ***************
                         
