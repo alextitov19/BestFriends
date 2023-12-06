@@ -72,6 +72,8 @@ struct PhotoPopView: View {
                             .blinking(duration: 3.0)
                             .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
                             .opacity(0.5)
+                  
+                    
                     HStack {
                         
                         NavigationLink(
