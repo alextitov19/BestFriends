@@ -421,7 +421,7 @@ VStack {
                     
                     // *********** VIBE **********************************
 // *********** Day Changed
-                case "day just changed - if you can check-out what's up! Their planet's atmosphere color matches their vibe.":
+                case "is asking you to check their 'Atmosphere-color' to see what's up":
                     newVibeActive = true
                     
 // *********** Need to Talk
