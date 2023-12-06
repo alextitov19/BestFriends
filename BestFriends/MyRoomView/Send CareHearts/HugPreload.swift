@@ -49,7 +49,7 @@ struct HugPreload: View {
                 VStack {
      
                     Spacer()
-                        .frame(height: 207)
+                        .frame(height: 180)
 //  *************************************************
        
 //                    HStack {
@@ -142,7 +142,7 @@ struct HugPreload: View {
                                 Image("IconPhotoNew")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 80, height: 80)
+                                    .frame(width: 70, height: 70)
                                     .rotationEffect(.degrees(-7))
                                     .foregroundColor(ColorManager .purple5)
                                     .glow(color: Color.purple, radius: 2)
@@ -187,7 +187,7 @@ struct HugPreload: View {
                     HStack {
                         VStack {
                             NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
-                                HugCircle (color: Color.purple, friendName: "Send \nFist-pump")
+                                HugCircle (color: Color.purple, friendName: "Send a \nFist- \nPump")
                             })
                             .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
                             .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
@@ -199,7 +199,7 @@ struct HugPreload: View {
                             .frame(width: 35)
                         
                         NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
-                            HugCircle (color: ColorManager .purple5, friendName: "Send \nCongrats!")
+                            HugCircle (color: ColorManager .purple5, friendName: "Send \nCongrats")
                         })
                         .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                         .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
@@ -274,7 +274,7 @@ struct HugPreload: View {
                         VStack {
                             
                             Spacer ()
-                                .frame(height: 100)
+                                .frame(height: 50)
                             
                             
                             HStack {
@@ -352,16 +352,16 @@ struct HugPreload: View {
                 
                 ZStack {
                     
-                    Image("planet_6")
+                    Image("iconSphere2")
                         .resizable()
                         .foregroundColor(color)
                     //                            .foregroundColor(ColorManager .purple2)
-                        .frame(width: 80, height: 80)
-                        .shadow(color: Color.white, radius: 4, x: 0, y: 0)
+                        .frame(width: 95, height: 95)
+                        .shadow(color: Color.white, radius: 6, x: 0, y: 0)
                     
                     Text(friendName)
                         .fontWeight(.bold)
-                        .font(.system(size: 14))
+                        .font(.system(size: 15))
                         .italic()
                         .foregroundColor(.black)
                     

@@ -159,13 +159,13 @@ VStack {
                         VStack {
                         
                             
-                            Text("Can I get a Good-Luck")
+                            Text("yes, yes, yes")
                                 .font(.system(size: 17))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
 
-                            Text("or Congratulations!")
+                            Text("Good DAY!")
                                 .font(.system(size: 17))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
@@ -235,7 +235,7 @@ VStack {
                             
                         
                             
-                            Text("I'm having a bad day")
+                            Text("bad day")
                                 .font(.system(size: 17))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
@@ -306,13 +306,13 @@ VStack {
 
 
 
-                        Text("You hurt my")
+                        Text("what's up!")
                             .font(.system(size: 17))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
 
-                        Text("feelings...")
+                        Text("send PhotoPOP")
                             .font(.system(size: 17))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -448,7 +448,7 @@ VStack {
                                         .glow(color: Color.purple, radius: 2)
                                         .opacity(0.6)
                                         .blinking(duration: 3.0)
-                                        .alert("Friends instantly see your planet's atmosphere color matching your vibe", isPresented: $showingAlert) {
+                                        .alert("Friends instantly see your planet's atmosphere color matching what's up with you", isPresented: $showingAlert) {
                                             Button("OK", role: .cancel) { }
                                             
                                         

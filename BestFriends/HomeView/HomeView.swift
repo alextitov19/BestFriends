@@ -478,18 +478,18 @@ struct HomeView: View {
                             NavigationLink(destination: EmptyView(), label: {
                                 PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
                                     .scaledToFit()
-                                    .frame(width: 140, height: 140)
-                                    .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 11)
-                                    .opacity(0.3)
+                                    .frame(width: 130, height: 130)
+                                    .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 20)
+                                    .opacity(0.9)
                                     .padding()
 
                         })
                         
                         Text("tap")
-                            .font(.system(size: 40))
+                            .font(.system(size: 60))
                             .foregroundColor(Color.white)
-                            .fontWeight(.thin)
-                            .opacity(0.7)
+                            .fontWeight(.regular)
+                            .opacity(0.99)
                             .multilineTextAlignment(.center)
                             .blinking(duration: 2.0)
 

@@ -53,7 +53,7 @@ struct RR56: View {
                 VStack {
      
                     Spacer()
-                        .frame(height: 130)
+                        .frame(height: 180)
                     
                         HStack {
                             VStack {
@@ -69,8 +69,8 @@ struct RR56: View {
                             Spacer()
                                 .frame(width: 35)
                             
-                            NavigationLink(destination: CH7(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.cyan, friendName: "Song \nfor you")
+                            NavigationLink(destination: EmptyView(), label: {
+                                HugCircle (color: Color.cyan, friendName: "Missing \nyou")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
@@ -95,7 +95,7 @@ struct RR56: View {
                             
                             
                             NavigationLink(destination: RR13(user: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.pink, friendName: "You got \nHearts")
+                                HugCircle (color: Color.pink, friendName: "Nice! \nyou got \nHearts")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .pink, radius: 5, x: 2, y: -2)
@@ -130,8 +130,8 @@ struct RR56: View {
                         ZStack {
                             
                             
-                            NavigationLink(destination: RR26(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.green, friendName: "Friends")
+                            NavigationLink(destination: EmptyView(), label: {
+                                HugCircle (color: Color.green, friendName: "You look \nnice \ntoday")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                             .shadow(color: Color.green, radius: 10, x: -4, y: 4)
@@ -143,7 +143,7 @@ struct RR56: View {
                     HStack {
                         VStack {
                             NavigationLink(destination: RR54(user: user, friends: friends), label: {
-                                HugCircle (color: Color.purple, friendName: "You got a \nFist-pump")
+                                HugCircle (color: Color.purple, friendName: "Got a \nFist- \nPump")
                             })
                             .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
                             .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
@@ -155,7 +155,7 @@ struct RR56: View {
                             .frame(width: 35)
                         
                         NavigationLink(destination: RR14(user: user, friend: user, friends: friends, groups: groups), label: {
-                            HugCircle (color: ColorManager .purple5, friendName: "You got \nCongrats!")
+                            HugCircle (color: ColorManager .purple5, friendName: "Nice Job \nCongrats!")
                         })
                         .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                         .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
@@ -172,16 +172,23 @@ struct RR56: View {
                         HStack {
                             
                             ZStack {
+                                
+                                NavigationLink(destination: CH7(user: user, friend: user, friends: friends, groups: groups), label: {
+                                    HugCircle (color: Color.cyan, friendName: "Song \nfor you")
+                                })
+                                .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+                                .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
+                                .opacity(0.99)
                              
-                                Image("")
-                                    .aspectRatio(contentMode: .fit)
+//                                Image("")
+//                                    .aspectRatio(contentMode: .fit)
                             }
                             Spacer()
-                                .frame(width: 250)
+                                .frame(width: 180)
                             
                             ZStack {
-                                NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
-                                    HugCircle (color: ColorManager .grey1, friendName: "Build \nyour own \n(in-beta)")
+                                NavigationLink(destination: RR26(user: user, friend: user, friends: friends, groups: groups), label: {
+                                    HugCircle (color: ColorManager .grey1, friendName: "Friends")
                                 })
                                 .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
                                 .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
@@ -285,16 +292,16 @@ struct RR56: View {
                 
                 ZStack {
                     
-                    Image("planet_6")
+                    Image("iconSphere1")
                         .resizable()
                         .foregroundColor(color)
                     //                            .foregroundColor(ColorManager .purple2)
-                        .frame(width: 80, height: 80)
-                        .shadow(color: Color.white, radius: 4, x: 0, y: 0)
+                        .frame(width: 100, height: 100)
+                        .shadow(color: Color.white, radius: 6, x: 0, y: 0)
                     
                     Text(friendName)
                         .fontWeight(.bold)
-                        .font(.system(size: 14))
+                        .font(.system(size: 15))
                         .italic()
                         .foregroundColor(.black)
                     
