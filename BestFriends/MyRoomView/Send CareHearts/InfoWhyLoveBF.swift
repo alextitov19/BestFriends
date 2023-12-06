@@ -263,11 +263,11 @@ struct InfoWhyLoveBF: View {
                                 .glow(color: Color.purple, radius: 2)
                                 .opacity(0.6)
                                 .blinking(duration: 3.0)
-                                .alert("Your fist-pump was sent", isPresented: $showingAlert) {
+                                .alert("Your complement was sent. You're a nice person.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
-                        .confettiCannon(counter: $counter)
+//                        .confettiCannon(counter: $counter)
 
                         
                         VStack {
@@ -290,23 +290,12 @@ struct InfoWhyLoveBF: View {
                                          .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                                          .opacity(0.70)
                                      
-                                 })
-                            
-                            
-                            Spacer()
-                                .frame(height: 30)
-                   
+                            })
                         }
-                        
-                     
-                        
-                        }
-                    
-                    
-                    
-                
+                    }
+               
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 120)
                     
                 }
                 
@@ -322,12 +311,12 @@ struct InfoWhyLoveBF: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent you a fist-pump", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) I think you look nice today!", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "You just got a fist-pump (TAP)", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                        print("Create a fist-pump notification response code: ", response)
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "I think you look nice today!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        print("Create a look nice notification response code: ", response)
                     })
                     
                 }
