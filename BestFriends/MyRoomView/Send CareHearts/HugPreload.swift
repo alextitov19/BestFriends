@@ -135,21 +135,41 @@ struct HugPreload: View {
                         Spacer()
                             .frame(width: 10)
                         
+                        
+                        ZStack {
+                            
+                            Image(systemName: "circle.fill")
+                            
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 90, height: 90)
+                                .foregroundColor(Color.orange)
+                                .opacity(0.95)
+                    
+                        
                         NavigationLink(
                             destination:  PhotoPopView(user: user, friends: friends),
                             label: {
                                 
                                 Image("IconPhotoNew")
+//                                    .resizable()
+//                                    .scaledToFit()
+//                                    .frame(width: 70, height: 70)
+//                                    .rotationEffect(.degrees(-7))
+//                                    .foregroundColor(ColorManager .purple5)
+//                                    .glow(color: Color.purple, radius: 2)
+//                                    .opacity(0.9)
+                                
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 70, height: 70)
-                                    .rotationEffect(.degrees(-7))
-                                    .foregroundColor(ColorManager .purple5)
-                                    .glow(color: Color.purple, radius: 2)
-                                    .opacity(0.9)
+                                    .foregroundColor(Color.purple)
+                                    .glow(color: Color.white, radius: 0.3)
+                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                    .opacity(0.95)
                                 
                             })
-                        
+                    }
                         
                     }
 

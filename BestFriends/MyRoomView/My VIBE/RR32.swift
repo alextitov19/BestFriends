@@ -391,7 +391,7 @@ VStack {
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 30, height: 30)
-                                            .foregroundColor(Color.white)
+                                            .foregroundColor(Color.orange)
                                             .opacity(0.95)
                                         
 
