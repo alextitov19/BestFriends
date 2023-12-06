@@ -49,35 +49,10 @@ struct HugPreload: View {
                 VStack {
      
                     Spacer()
-                        .frame(height: 180)
+                        .frame(height: 170)
 //  *************************************************
        
-//                    HStack {
-//
-//                        ZStack {
-//                            Image(systemName: "")
-//
-//                        }
-//
-//                        Spacer()
-//                            .frame(width: 300)
-//
-//
-//
-//                            NavigationLink(
-//                                destination: RR40Info2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-//                                label: {
-//                                    Image(systemName: "info.circle")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 32, height: 32)
-//                                        .foregroundColor(ColorManager .purple3)
-//    //                                        .glow(color: Color.purple, radius: 2)
-//                                        .opacity(0.9)
-//                                })
-//                        }
-           
-                
+
 //    *******************************************
            
                         HStack {
@@ -92,7 +67,7 @@ struct HugPreload: View {
                             
                             
                             Spacer()
-                                .frame(width: 35)
+                                .frame(width: 20)
                             
                             NavigationLink(destination: NEWSFeedPergion(user: user, friends: friends), label: {
                                 HugCircle (color: Color.cyan, friendName: "Missing \nYou")
@@ -102,8 +77,8 @@ struct HugPreload: View {
                             .opacity(0.99)
                         }
                         
-                        Spacer()
-                            .frame(height: 10)
+//                        Spacer()
+//                            .frame(height: 10)
                         
                     VStack {
                            
@@ -116,7 +91,7 @@ struct HugPreload: View {
                             .opacity(0.99)
                             
                             Spacer ()
-                                .frame(width: 220)
+                                .frame(width: 200)
                             
                             
                             NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), label: {
@@ -129,12 +104,23 @@ struct HugPreload: View {
 
                     }
                 }
+                  
                     
+//        *************************** Center
                     HStack {
+                        Spacer ()
+                            .frame(width: 8)
                         
+                        NavigationLink(destination: EmptyView(), label: {
+                            HugCircle (color: Color.cyan, friendName: "Have a \nGREAT \nDAY!")
+                        })
+                        .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+                        .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
+                        .opacity(0.99)
+                        
+                    
                         Spacer()
-                            .frame(width: 10)
-                        
+                            .frame(width: 85)
                         
                         ZStack {
                             
@@ -152,14 +138,6 @@ struct HugPreload: View {
                             label: {
                                 
                                 Image("IconPhotoNew")
-//                                    .resizable()
-//                                    .scaledToFit()
-//                                    .frame(width: 70, height: 70)
-//                                    .rotationEffect(.degrees(-7))
-//                                    .foregroundColor(ColorManager .purple5)
-//                                    .glow(color: Color.purple, radius: 2)
-//                                    .opacity(0.9)
-                                
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 70, height: 70)
@@ -169,10 +147,25 @@ struct HugPreload: View {
                                     .opacity(0.95)
                                 
                             })
-                    }
+                        }
                         
+                        
+                        Spacer()
+                            .frame(width: 85)
+                        
+                        
+                        NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
+                            HugCircle (color: Color.cyan, friendName: "Sad \nDay \nSong")
+                        })
+                        .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+                        .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
+                        .opacity(0.99)
                     }
 
+//      *************************
+                    
+                    
+                    
                     HStack {
                         
                         ZStack {
@@ -186,7 +179,7 @@ struct HugPreload: View {
                         }
                         
                         Spacer()
-                            .frame(width: 220)
+                            .frame(width: 200)
                         
                         
                         
@@ -376,12 +369,12 @@ struct HugPreload: View {
                         .resizable()
                         .foregroundColor(color)
                     //                            .foregroundColor(ColorManager .purple2)
-                        .frame(width: 95, height: 95)
+                        .frame(width: 85, height: 85)
                         .shadow(color: Color.white, radius: 6, x: 0, y: 0)
                     
                     Text(friendName)
                         .fontWeight(.bold)
-                        .font(.system(size: 15))
+                        .font(.system(size: 13))
                         .italic()
                         .foregroundColor(.black)
                     

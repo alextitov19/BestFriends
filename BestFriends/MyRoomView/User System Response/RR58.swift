@@ -224,6 +224,7 @@ struct RR58: View {
                                         .frame(width: 55, height: 55)
                                         .foregroundColor(ColorManager .purple4)
                                         .glow(color: ColorManager .grey1, radius: 3)
+                                        .blinking(duration: 2.0)
                                         .opacity(0.8)
                                     
                                

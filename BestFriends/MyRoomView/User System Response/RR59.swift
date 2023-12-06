@@ -203,8 +203,8 @@ struct RR59: View {
                         ZStack {
                             
                             
-                            NavigationLink(destination: EmptyView(), label: {
-                                HugCircle (color: Color.green, friendName: "Empty")
+                            NavigationLink(destination: RR20(user: user, friend: user, friends: friends, groups: groups), label: {
+                                HugCircle (color: Color.green, friendName: "Why \nGreat \nFriend")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                             .shadow(color: Color.green, radius: 10, x: -4, y: 4)

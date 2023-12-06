@@ -186,7 +186,7 @@ VStack {
     //               ************************************************
         
             
-            Text("______ asking for friend's help ______")
+            Text("_________ request from friends _________")
                 .font(.system(size: 15))
                 .fontWeight(.light)
                 .multilineTextAlignment(.center)
