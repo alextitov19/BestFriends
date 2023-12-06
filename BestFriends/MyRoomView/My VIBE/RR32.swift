@@ -72,109 +72,110 @@ VStack {
    
         
 //        ***********************
-        ZStack {
+    ZStack {
+        
+        
+        VStack {
             
-            Image(systemName: "cube.fill")
-                .resizable()
-                .foregroundColor(Color.purple)
-                .frame(width: 350, height: 90)
-                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                .opacity(0.3)
-          
-            VStack {
-       
-                
-                Text("Alowing friends to provide")
-                    .font(.system(size: 27, weight: .light))
-                    .foregroundColor(ColorManager .grey1)
-                    .opacity(0.6)
-                
-                Text("emotional support when not around")
-                    .font(.system(size: 17, weight: .light))
-                    .italic()
-                    .foregroundColor(ColorManager .grey1)
-                    .opacity(0.6)
-                
-                
-                
-                
-                Spacer ()
-                    .frame(height: 5)
-            }
+            
+            Text("real-time")
+                .font(.system(size: 30))
+                .fontWeight(.bold)
+                .multilineTextAlignment(.center)
+                .foregroundColor(ColorManager .grey2)
+                .rotationEffect(.degrees(-20))
+            //                                .blinking(duration: 3.0)
+                .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                .opacity(0.25)
+            
+            Text("  Friendships")
+                .font(.system(size: 40))
+                .fontWeight(.bold)
+                .multilineTextAlignment(.center)
+                .foregroundColor(ColorManager .grey2)
+                .rotationEffect(.degrees(-20))
+            //                                .blinking(duration: 3.0)
+                .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                .opacity(0.25)
+            
         }
+   }
     
     
  
     
 //    ******************************************************
         VStack {
-                        
-                HStack {
-                    
-                    ZStack {
-                        ZStack {
-                            
-                            Image(systemName: "circle")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 75, height: 75)
-                                .foregroundColor(Color .purple)
-                                .glow(color: Color.purple, radius: 10)
-                                .shadow(color: Color.purple, radius: 3, x: 3, y: 3)
-
-                            
-                            
-                        }
-                        Button(action: {
-                            mood = 8
-                            //                                    showingAlert = true
-                        }) {
-
-                            Text("Purple \natmosphere \n(TAP)")
-                                .font(.system(size: 12))
-                                .foregroundColor(Color.black)
-                        }
-                        .frame(width: 75, height: 75, alignment: .center)
-                        .background(mood == 8 ? Color.purple : ColorManager .grey1)
-                        .cornerRadius(40)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                       
-                    }
-//   ************************************************
-                    Spacer ()
-                        .frame(width: 15)
-
-    //               ************************************************
+            
+            HStack {
+                
+                ZStack {
                     ZStack {
                         
-                        //                    Image(systemName: "cube.fill")
-                        Image("comicBubble")
+                        Image(systemName: "circle")
                             .resizable()
-                            .foregroundColor(Color.purple)
-                            .frame(width: 275, height: 110)
-                            .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
-                            .opacity(0.95)
-//                            .blinking(duration: 3.0)
+                            .scaledToFit()
+                            .frame(width: 75, height: 75)
+                            .foregroundColor(Color .purple)
+                            .glow(color: Color.purple, radius: 10)
+                            .shadow(color: Color.purple, radius: 3, x: 3, y: 3)
                         
-                        VStack {
                         
-                            
-                            Text("yes, yes, yes")
-                                .font(.system(size: 17))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-
-                            Text("Good DAY!")
-                                .font(.system(size: 17))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-
-                        }
+                        
+                    }
+                    Button(action: {
+                        mood = 8
+                        //                                    showingAlert = true
+                    }) {
+                        
+                        Text("Purple \natmosphere \n(TAP)")
+                            .font(.system(size: 12))
+                            .foregroundColor(Color.black)
+                    }
+                    .frame(width: 75, height: 75, alignment: .center)
+                    .background(mood == 8 ? Color.purple : ColorManager .grey1)
+                    .cornerRadius(40)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    
+                }
+                //   ************************************************
+                Spacer ()
+                    .frame(width: 15)
+                
+                //               ************************************************
+                ZStack {
+                    
+                    //                    Image(systemName: "cube.fill")
+                    Image("comicBubble")
+                        .resizable()
+                        .foregroundColor(Color.purple)
+                        .frame(width: 275, height: 120)
+                        .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+                        .opacity(0.95)
+                    //                            .blinking(duration: 3.0)
+                    
+                    VStack {
+                        
+                        
+                        Text("yes, yes, yes")
+                            .font(.system(size: 17))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+                        Text("Good DAY!")
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+                        Spacer ()
+                            .frame(height: 12)
                     }
                 }
-
+            }
+        
             Spacer()
                 .frame(height: 15)
             
@@ -226,26 +227,59 @@ VStack {
                         Image("comicBubble")
                             .resizable()
                             .foregroundColor(Color.cyan)
-                            .frame(width: 250, height: 120)
-                            .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
+                            .frame(width: 250, height: 140)
+                            .shadow(color: Color.cyan, radius: 3, x: 3, y: 3)
                             .opacity(0.95)
 //                            .blinking(duration: 5.0)
                         
                         VStack {
                             
-                        
+                            HStack {
+                                
+                                Text("Bad DAY!")
+                                    .font(.system(size: 17))
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.white)
+                                
+                                Text("can I get some")
+                                    .font(.system(size: 14))
+                                    .italic()
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.white)
+                                
+                                Text("CareHearts")
+                                    .font(.system(size: 20))
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.cyan)
+                                
+                                Spacer ()
+                                    .frame(height: 12)
+                                
+                                
+                                ZStack {
+                                    Image(systemName: "circle.fill")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 35, height: 35)
+                                        .foregroundColor(Color.cyan)
+                                        .opacity(0.95)
+                                    
+                                    
+                                    Image(systemName: "heart.fill")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 20, height: 20)
+                                        .foregroundColor(Color.purple)
+                                        .glow(color: Color.white, radius: 0.3)
+                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                        .opacity(0.95)
+                                }
+                            }
                             
-                            Text("bad day")
-                                .font(.system(size: 17))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
                             
-                            Text("send CareHearts")
-                                .font(.system(size: 17))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
                             
                         }
                     }
@@ -297,7 +331,7 @@ VStack {
                     Image("comicBubble")
                         .resizable()
                         .foregroundColor(Color.cyan)
-                        .frame(width: 240, height: 100)
+                        .frame(width: 240, height: 140)
                         .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
                         .opacity(0.95)
 //                            .blinking(duration: 5.0)
@@ -306,18 +340,30 @@ VStack {
 
 
 
-                        Text("what's up!")
+                        Text("What's Up?")
                             .font(.system(size: 17))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
 
-                        Text("send PhotoPOP")
-                            .font(.system(size: 17))
+                        Text("send")
+                            .font(.system(size: 15))
+                            .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
 
+                        
+                        Text("PhotoPOPs")
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.orange)
+                        
+                        
+                        Spacer ()
+                            .frame(height: 12)
+                        
                     }
                 }
             }
@@ -442,7 +488,7 @@ VStack {
                                     Image("iconShare")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 80, height: 80)
+                                        .frame(width: 60, height: 60)
                                         .rotationEffect(.degrees(20))
                                         .foregroundColor(ColorManager .purple5)
                                         .glow(color: Color.purple, radius: 2)
@@ -559,7 +605,7 @@ VStack {
             var body: some View {
                 Text(friend.firstName + " " + String(friend.lastName.first!))
                     .fontWeight(.bold)
-                    .frame(width: 80, height: 80)
+                    .frame(width: 60, height: 60)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .font(.system(size: 8))
                     .background(color)
