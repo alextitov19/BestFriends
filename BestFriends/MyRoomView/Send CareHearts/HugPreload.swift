@@ -49,7 +49,7 @@ struct HugPreload: View {
                 VStack {
      
                     Spacer()
-                        .frame(height: 170)
+                        .frame(height: 108)
 //  *************************************************
        
 
@@ -109,7 +109,7 @@ struct HugPreload: View {
 //        *************************** Center
                     HStack {
                         Spacer ()
-                            .frame(width: 8)
+                            .frame(width: 6)
                         
                         NavigationLink(destination: EmptyView(), label: {
                             HugCircle (color: Color.cyan, friendName: "Have a \nGREAT \nDAY!")
@@ -287,7 +287,7 @@ struct HugPreload: View {
                         VStack {
                             
                             Spacer ()
-                                .frame(height: 50)
+                                .frame(height: 100)
                             
                             
                             HStack {
@@ -296,12 +296,12 @@ struct HugPreload: View {
                                     Image("")
 //
 //
-                                    NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
-                                        HugCircle (color: Color.cyan, friendName: "Sad \nDay \nSong")
-                                    })
-                                    .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
-                                    .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
-                                    .opacity(0.99)
+//                                    NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
+//                                        HugCircle (color: Color.cyan, friendName: "Sad \nDay \nSong")
+//                                    })
+//                                    .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+//                                    .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
+//                                    .opacity(0.99)
                                 
                                 }
                                 
@@ -309,12 +309,12 @@ struct HugPreload: View {
                                     .frame(width: 190)
 
                                 ZStack {
-                                    
-                                    NavigationLink(destination: RR20(user: user, friend: user, friends: friends, groups: groups), label: {
-                                        HugCircle (color: Color.cyan, friendName: "Friends")
+
+                                    NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
+                                        HugCircle (color: ColorManager .grey1, friendName: "Build \nyour own \n'in-beta'")
                                     })
-                                    .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
-                                    .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
+                                    .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+                                    .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
                                     .opacity(0.99)
                                 }
                                 
@@ -322,12 +322,7 @@ struct HugPreload: View {
     
                             ZStack {
                                 
-                                NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
-                                    HugCircle (color: ColorManager .grey1, friendName: "Build \nyour own \n'in-beta'")
-                                })
-                                .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-                                .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
-                                .opacity(0.99)
+                             
                                 
                             }
                    
