@@ -486,7 +486,7 @@ struct HomeView: View {
                         })
                         
                         Text("tap")
-                            .font(.system(size: 60))
+                            .font(.system(size: 50))
                             .foregroundColor(Color.white)
                             .fontWeight(.regular)
                             .opacity(0.99)

@@ -152,7 +152,7 @@ VStack {
                     Image("comicBubble")
                         .resizable()
                         .foregroundColor(Color.purple)
-                        .frame(width: 275, height: 120)
+                        .frame(width: 240, height: 120)
                         .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                         .opacity(0.95)
                     //                            .blinking(duration: 3.0)
@@ -342,7 +342,7 @@ VStack {
                     Image("comicBubble")
                         .resizable()
                         .foregroundColor(Color.cyan)
-                        .frame(width: 320, height: 140)
+                        .frame(width: 340, height: 140)
                         .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
                         .opacity(0.95)
 //                            .blinking(duration: 5.0)
@@ -351,7 +351,7 @@ VStack {
 
 
 
-                        Text("What's Up?")
+                        Text("What are you doing?")
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
