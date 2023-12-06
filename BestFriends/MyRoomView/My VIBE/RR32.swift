@@ -184,6 +184,13 @@ VStack {
             
     //               ************************************************
         
+            
+            Text("_____ asking for friend's help ______")
+                .font(.system(size: 15))
+                .fontWeight(.light)
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color.white)
+            
             //                ************************************************
  
                 
@@ -227,7 +234,7 @@ VStack {
                         Image("comicBubble")
                             .resizable()
                             .foregroundColor(Color.cyan)
-                            .frame(width: 320, height: 140)
+                            .frame(width: 340, height: 140)
                             .shadow(color: Color.cyan, radius: 3, x: 3, y: 3)
                             .opacity(0.95)
 //                            .blinking(duration: 5.0)
@@ -254,7 +261,7 @@ VStack {
                     
                     HStack {
                     
-                        Text("send")
+                        Text("send me")
                             .font(.system(size: 15))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -360,13 +367,13 @@ VStack {
                         
                         HStack {
                         
-                            Text("send")
+                            Text("send me")
                                 .font(.system(size: 15))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
                             
-                                    Text("PhotoPOP")
+                                    Text("PhotoPOPs")
                                         .font(.system(size: 20))
                                         .fontWeight(.light)
                                         .multilineTextAlignment(.center)
