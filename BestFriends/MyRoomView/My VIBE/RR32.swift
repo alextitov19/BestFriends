@@ -113,7 +113,8 @@ VStack {
         VStack {
             
             HStack {
-                
+                Spacer ()
+                    .frame(width: 100)
                 ZStack {
                     ZStack {
                         
@@ -185,7 +186,7 @@ VStack {
     //               ************************************************
         
             
-            Text("_____ asking for friend's help ______")
+            Text("______ asking for friend's help ______")
                 .font(.system(size: 15))
                 .fontWeight(.light)
                 .multilineTextAlignment(.center)
