@@ -105,7 +105,7 @@ struct ChatGroupsView: View {
                                         .scaledToFit()
                                         .frame(width: 32, height: 32)
                                         .foregroundColor(ColorManager .purple3)
-                                        .blinking(duration: 2.0)
+//                                        .blinking(duration: 2.0)
                                         .opacity(0.9)
                                 })
                               

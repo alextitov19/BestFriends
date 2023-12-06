@@ -198,7 +198,7 @@ struct HomeView: View {
                                             .frame(width: 55, height: 55)
                                             .foregroundColor(ColorManager .purple4)
                                             .glow(color: ColorManager .grey1, radius: 3)
-                                            .blinking(duration: 4.0)
+                                            .blinking(duration: 2.0)
                                             .opacity(0.8)
                                         
 
@@ -478,7 +478,7 @@ struct HomeView: View {
                             NavigationLink(destination: EmptyView(), label: {
                                 PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
                                     .scaledToFit()
-                                    .frame(width: 130, height: 130)
+                                    .frame(width: 120, height: 120)
                                     .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 20)
                                     .opacity(0.9)
                                     .padding()

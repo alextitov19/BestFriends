@@ -104,7 +104,7 @@ struct RR58: View {
                 VStack {
                     
                     Spacer()
-                        .frame(height: 250)
+                        .frame(height: 220)
                   
     HStack {
                         NavigationLink(
@@ -199,7 +199,7 @@ struct RR58: View {
                 
                 
                 Spacer ()
-                    .frame(height: 40)
+                    .frame(height: 20)
                 
                 HStack {
                     NavigationLink(
@@ -314,6 +314,27 @@ struct RR58: View {
                         
                         Spacer()
                             .frame(height: 45)
+                        
+                        
+                                                    VStack {
+                        
+                                                        Button(action: {
+                                                            sessionManager.showLogin()
+                                                        },
+                                                               label: {
+                                                            Image("home-alt2")
+                                                                .frame(width: 60, height: 30)
+                                                                .foregroundColor(.black)
+                                                                .font(.system(size: 20))
+                                                                .background(ColorManager .grey3)
+                                                                .cornerRadius(15)
+                                                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                                                .opacity(0.70)
+                        
+                                                        })
+                                                    }
+                        
+                        
                     }
                 }
         
