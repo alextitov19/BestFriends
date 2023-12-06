@@ -69,8 +69,8 @@ struct HugPreload: View {
                             Spacer()
                                 .frame(width: 20)
                             
-                            NavigationLink(destination: NEWSFeedPergion(user: user, friends: friends), label: {
-                                HugCircle (color: Color.cyan, friendName: "Missing \nYou")
+                            NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
+                                HugCircle (color: Color.cyan, friendName: "Hugs")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
@@ -83,8 +83,8 @@ struct HugPreload: View {
                     VStack {
                            
                         HStack {
-                            NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
-                                HugCircle (color: Color.cyan, friendName: "Sending \nhugs")
+                            NavigationLink(destination: NEWSFeedPergion(user: user, friends: friends), label: {
+                                HugCircle (color: Color.cyan, friendName: "Missing \nYou")
                             })
                             .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
                             .shadow(color: Color.blue, radius: 5, x: -2, y: -2)
@@ -112,7 +112,7 @@ struct HugPreload: View {
                             .frame(width: 6)
                         
                         NavigationLink(destination: EmptyView(), label: {
-                            HugCircle (color: Color.cyan, friendName: "Have a \nGREAT \nDAY!")
+                            HugCircle (color: Color.cyan, friendName: "Guys \nlet's \nHangout")
                         })
                         .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                         .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
