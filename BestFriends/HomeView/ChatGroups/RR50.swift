@@ -76,6 +76,18 @@ struct RR50: View {
                                    .opacity(0.5)
                            })
                     
+                    Text("We recommend first option: \n(same as homepage background)")
+                        .fontWeight(.medium)
+//                        .italic()
+                        .font(.system(size: 15))
+                        .italic()
+                        .foregroundColor(.white)
+//                        .glow(color: ColorManager.purple4, radius: 3)
+                        .opacity(0.7)
+                    
+                    Spacer()
+                        .frame(height: 10)
+                    
                     ZStack {
                         
                         Image(systemName: "circle.fill")
