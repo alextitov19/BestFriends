@@ -53,7 +53,7 @@ struct RR56: View {
                 VStack {
      
                     Spacer()
-                        .frame(height: 180)
+                        .frame(height: 40)
                     
                         HStack {
                             VStack {
@@ -130,7 +130,7 @@ struct RR56: View {
                         ZStack {
                             
                             
-                            NavigationLink(destination: EmptyView(), label: {
+                            NavigationLink(destination: CH7(user: user, friend: user, friends: friends, groups: groups), label: {
                                 HugCircle (color: Color.green, friendName: "You look \nnice \ntoday")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
@@ -168,35 +168,35 @@ struct RR56: View {
                         Spacer ()
                             .frame(height: 50)
                         
-                        
-                        HStack {
-                            
-                            ZStack {
-                                
-                                NavigationLink(destination: CH7(user: user, friend: user, friends: friends, groups: groups), label: {
-                                    HugCircle (color: Color.cyan, friendName: "Song \nfor you")
-                                })
-                                .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
-                                .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
-                                .opacity(0.99)
+//
+//                        HStack {
+//
+//                            ZStack {
+//
+//                                NavigationLink(destination: CH7(user: user, friend: user, friends: friends, groups: groups), label: {
+//                                    HugCircle (color: Color.cyan, friendName: "Song \nfor you")
+//                                })
+//                                .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+//                                .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
+//                                .opacity(0.99)
                              
 //                                Image("")
 //                                    .aspectRatio(contentMode: .fit)
-                            }
-                            Spacer()
-                                .frame(width: 180)
-                            
-                            ZStack {
-                                NavigationLink(destination: RR26(user: user, friend: user, friends: friends, groups: groups), label: {
-                                    HugCircle (color: ColorManager .grey1, friendName: "Friends")
-                                })
-                                .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-                                .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
-                                .opacity(0.99)
-                            
-                              
-                            }
-                        }
+//                            }
+//                            Spacer()
+//                                .frame(width: 180)
+//
+//                            ZStack {
+//                                NavigationLink(destination: RR26(user: user, friend: user, friends: friends, groups: groups), label: {
+//                                    HugCircle (color: ColorManager .grey1, friendName: "Friends")
+//                                })
+//                                .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+//                                .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
+//                                .opacity(0.99)
+//
+//
+//                            }
+//                        }
                     
                         VStack {
                             
