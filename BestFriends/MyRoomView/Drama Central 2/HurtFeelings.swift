@@ -49,7 +49,7 @@ struct HurtFeelings: View {
 
               
 
-                    NavigationLink(destination: InfoWhyLoveBF(user: user, friends: friends), label: {
+                    NavigationLink(destination: InfoWhyLoveBF(user: user, friend: user, friends: friends, groups: groups), label: {
                         HugCircle (color: ColorManager.purple1, friendName: "you looked \nnice \ntoday")
                     })
                     .offset(x: showItems ? 120 : 0, y: showItems ? -270: 0)

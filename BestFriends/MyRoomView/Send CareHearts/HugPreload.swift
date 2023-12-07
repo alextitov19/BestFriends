@@ -187,7 +187,7 @@ struct HugPreload: View {
                         ZStack {
                             
                             
-                            NavigationLink(destination: InfoWhyLoveBF(user: user, friends: friends), label: {
+                            NavigationLink(destination: InfoWhyLoveBF(user: user, friend: user, friends: friends, groups: groups), label: {
                                 HugCircle (color: Color.cyan, friendName: "You look \nnice \ntoday")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
