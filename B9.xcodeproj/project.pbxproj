@@ -1740,6 +1740,7 @@
 				2DB42CF12AAE876A00E137C0 /* RR23.swift */,
 				CF41754B296FBB8D00898E2D /* InfoWhyLoveBF.swift */,
 				CF2EE70029529C0300B1B16D /* NEWSFeedPergion.swift */,
+				CF3B42F7293723B500EE1D84 /* SaySomethingNice7.swift */,
 			);
 			path = "Send CareHearts";
 			sourceTree = "<group>";
@@ -2068,7 +2069,6 @@
 			children = (
 				CFD6C050293E802500D57E0B /* SomethingNice1.swift */,
 				CF3B42F5293721A500EE1D84 /* SaySomethingNice6.swift */,
-				CF3B42F7293723B500EE1D84 /* SaySomethingNice7.swift */,
 				CFD6C0562940532F00D57E0B /* SaySomethingNice8.swift */,
 				CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */,
 				CF37535228BD5544003817E3 /* SaySomethingNice2.swift */,
@@ -2978,7 +2978,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -3010,7 +3010,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;
