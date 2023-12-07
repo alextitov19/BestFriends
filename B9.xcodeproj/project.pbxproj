@@ -406,6 +406,7 @@
 		CFDB15102859415D00155CEE /* MasterFriendVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB150F2859415D00155CEE /* MasterFriendVault.swift */; };
 		CFE1946E28133CF700ED5718 /* BestFriendMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1946D28133CF700ED5718 /* BestFriendMessages.swift */; };
 		CFE6F024297B82A8004397A3 /* SendHomie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6F023297B82A8004397A3 /* SendHomie.swift */; };
+		CFED5E2E2B21980500EFE53C /* doTogether.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFED5E2D2B21980500EFE53C /* doTogether.mp4 */; };
 		CFF952332981BC700054D963 /* DreamsWeDare2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF952322981BC700054D963 /* DreamsWeDare2.swift */; };
 		D0CC1A04283EE33500E7461F /* HorizonHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */; };
 		D0F5AB1B2840519700053F17 /* HorizonRocketColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */; };
@@ -847,6 +848,7 @@
 		CFDB150F2859415D00155CEE /* MasterFriendVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterFriendVault.swift; sourceTree = "<group>"; };
 		CFE1946D28133CF700ED5718 /* BestFriendMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestFriendMessages.swift; sourceTree = "<group>"; };
 		CFE6F023297B82A8004397A3 /* SendHomie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendHomie.swift; sourceTree = "<group>"; };
+		CFED5E2D2B21980500EFE53C /* doTogether.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = doTogether.mp4; sourceTree = "<group>"; };
 		CFF952322981BC700054D963 /* DreamsWeDare2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamsWeDare2.swift; sourceTree = "<group>"; };
 		D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonHomeView.swift; sourceTree = "<group>"; };
 		D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonRocketColorPicker.swift; sourceTree = "<group>"; };
@@ -1570,6 +1572,7 @@
 			isa = PBXGroup;
 			children = (
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
+				CFED5E2D2B21980500EFE53C /* doTogether.mp4 */,
 				CF2D30B62B1DEF47008D9C38 /* missingYou.mp4 */,
 				CF2D30B82B1DEF7A008D9C38 /* missingYou2.mp4 */,
 				CF2D30AA2B1C11ED008D9C38 /* girlFriends1.mp4 */,
@@ -2326,6 +2329,7 @@
 				CF2D30AF2B1D6DA5008D9C38 /* background_10.mp4 in Resources */,
 				7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */,
 				CF65040028864AF00092EEB9 /* background_1.mp4 in Resources */,
+				CFED5E2E2B21980500EFE53C /* doTogether.mp4 in Resources */,
 				7A63AF8B26A339C70072E21E /* Launch Screen.storyboard in Resources */,
 				CF417546296A60F700898E2D /* NisieJ9.mp4 in Resources */,
 				CF89412A2A8B483D00AFEC39 /* PhotoPOP2.mp4 in Resources */,

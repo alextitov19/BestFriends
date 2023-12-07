@@ -53,7 +53,7 @@ struct SaySomethingNice7: View {
 //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
-        customMessage = "You can do this; " + user.firstName + " : " + customMessage;
+        customMessage = "Let's hang-out; " + user.firstName + " : " + customMessage;
         
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
@@ -111,13 +111,13 @@ struct SaySomethingNice7: View {
                       AdPlayerView(name: "sky2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
-                          .opacity(0.99)
+                          .opacity(0.5)
                       
                       
-//                      AdPlayerView(name: "")
-//                          .ignoresSafeArea()
-//                          .blendMode(.screen)
-//                          .opacity(0.2)
+                      AdPlayerView(name: "doTogether")
+                          .ignoresSafeArea()
+                          .blendMode(.screen)
+                          .opacity(0.5)
                    
             }
           
