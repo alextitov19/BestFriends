@@ -156,15 +156,16 @@ struct InfoWhyLoveBF: View {
                                 .foregroundColor(ColorManager .grey1)
                                 .multilineTextAlignment(.center)
                                 .opacity(0.5)
-                            
-                            Spacer()
-                            
+                           
                             Text("really nice today")
                                 .font(.system(size: 35, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                 .multilineTextAlignment(.center)
                                 .opacity(0.5)
                                 .frame(height: 10)
+                            
+                            Spacer ()
+                                .frame(height: 25)
 
                         }
                     }
