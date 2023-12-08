@@ -168,7 +168,7 @@ VStack {
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
                         
-                        Text("Good DAY!")
+                        Text("I'm EXCITED!")
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)

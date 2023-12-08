@@ -137,7 +137,7 @@ struct RR14: View {
                         
                         VStack {
                         
-                                Text("YOU DID IT")
+                                Text("NICE!!!")
                                     .font(.system(size: 50))
                                     .fontWeight(.regular)
                                     .multilineTextAlignment(.center)
@@ -145,6 +145,24 @@ struct RR14: View {
                                     .rotationEffect(.degrees(-10))
                                     .blinking(duration: 2.0)
                            
+                            
+                            Text("I'm super happy for you")
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
+                                .foregroundColor(ColorManager .grey1)
+                                .rotationEffect(.degrees(-10))
+                                .multilineTextAlignment(.center)
+                                .blinking(duration: 2.0)
+                            
+                            
+                            Text("For real!")
+                                .font(.system(size: 20))
+                                .fontWeight(.light)
+                                .foregroundColor(ColorManager .grey1)
+                                .rotationEffect(.degrees(-10))
+                                .multilineTextAlignment(.center)
+                                .blinking(duration: 2.0)
+                            
                                 }
                             }
 //                        }

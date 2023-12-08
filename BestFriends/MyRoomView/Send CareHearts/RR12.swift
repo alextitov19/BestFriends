@@ -52,7 +52,7 @@ struct RR12: View {
 //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
-        customMessage = "Congratulations from; " + user.firstName + " : " + customMessage;
+        customMessage = "What's UP?; " + user.firstName + " : " + customMessage;
         
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
@@ -118,7 +118,7 @@ struct RR12: View {
                         .opacity(0.1)
                         .ignoresSafeArea()
                       
-                      AdPlayerView(name: "Fireworks2")
+                      AdPlayerView(name: "sky2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
                           .opacity(0.8)
@@ -194,23 +194,25 @@ struct RR12: View {
                         VStack {
                             
                             
-                            Text("tell'em")
+                            Text("Friend's atmosphere")
                                 .font(.system(size: 20, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                                     .opacity(0.7)
                             
-                            Text("CONGRATULATIONS")
+                            Text("is 'purple'")
+                                .font(.system(size: 20, weight: .light))
+                                .foregroundColor(ColorManager .grey1)
+                                    .multilineTextAlignment(.center)
+                                    .opacity(0.7)
+                            
+                            Text("They are EXCITED about something")
                                 .font(.system(size: 28, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                                     .opacity(0.7)
                             
-                            Text("You did it!")
-                                .font(.system(size: 25, weight: .light))
-                                .foregroundColor(ColorManager .grey1)
-                                    .multilineTextAlignment(.center)
-                                    .opacity(0.7)
+                     
 
                             
                             Spacer()
@@ -231,8 +233,8 @@ struct RR12: View {
                                     TextField("", text: $customMessage)
                                         .placeholder(when: customMessage.isEmpty) {
                                             HStack {
-                                                Text("Type message here")
-                                                    .foregroundColor(Color.black)
+                                                Text("Tell me What's UP in Chat...")
+                                                    .foregroundColor(Color.white)
                                                     .fontWeight(.thin)
                                                 Spacer()
                                             }
