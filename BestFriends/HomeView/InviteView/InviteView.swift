@@ -158,7 +158,7 @@ struct InviteView: View {
                             Spacer()
                                 .frame(height: 7)
                             
-                            Text("2) Friend taps [Accept]")
+                            Text("2) Friend taps [Accept] when it pops up")
                                 .fontWeight(.thin)
 //                                .frame(width: 400, height: 150)
                                 .foregroundColor(Color.green)
