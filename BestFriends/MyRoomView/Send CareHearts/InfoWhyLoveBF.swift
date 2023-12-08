@@ -146,18 +146,24 @@ struct InfoWhyLoveBF: View {
                             
                             
                             Text("Tell friend...")
-                                .font(.system(size: 30, weight: .light))
+                                .font(.system(size: 40, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                 .multilineTextAlignment(.center)
                                 .opacity(0.5)
                             
-                            Text("You look really nice today")
-                                .font(.system(size: 29, weight: .light))
+                            Text("You look")
+                                .font(.system(size: 25, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                 .multilineTextAlignment(.center)
                                 .opacity(0.5)
                             
                             Spacer()
+                            
+                            Text("really nice today")
+                                .font(.system(size: 35, weight: .light))
+                                .foregroundColor(ColorManager .grey1)
+                                .multilineTextAlignment(.center)
+                                .opacity(0.5)
                                 .frame(height: 10)
 
                         }

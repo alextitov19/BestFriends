@@ -113,7 +113,7 @@ struct RR56: View {
                         
                         ZStack {
                             NavigationLink(destination: RR29(user: user, friends: friends), label: {
-                                HugCircle (color: Color.purple, friendName: "Thumbs \nUp!")
+                                HugCircle (color: Color.purple, friendName: "Wishing \nme \nLUCK!")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                             .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
