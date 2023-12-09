@@ -79,11 +79,12 @@ struct InfoSilence: View {
                         .frame(width: 150)
                     
                     ZStack {
-                        
+                        Image(systemName: "heart.fill")
+                            .rotationEffect(.degrees(10))
                         Image(systemName: "heart.fill")
                             .resizable()
                             .foregroundColor(ColorManager .grey2)
-                            .frame(width: 150, height: 100)
+                            .frame(width: 150, height: 125)
                             .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
                             .rotationEffect(.degrees(10))
                             .opacity(0.3)
@@ -91,7 +92,7 @@ struct InfoSilence: View {
                         Link(destination: URL(string: "https://socialtechlabs.com/a-kisses-journey/")!) {
                             VStack {
                                 Text("a happy tear")
-                                    .font(.system(size: 23))
+                                    .font(.system(size: 25))
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(ColorManager .grey2)
@@ -99,8 +100,8 @@ struct InfoSilence: View {
                                     .rotationEffect(.degrees(10))
                                     .opacity(0.45)
                                 
-                                Text("(coming soon)")
-                                    .font(.system(size: 15))
+                                Text("(soon)")
+                                    .font(.system(size: 23))
                                     .italic()
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
@@ -118,11 +119,12 @@ struct InfoSilence: View {
                 
                 HStack {
                     ZStack {
-                        
+                        Image(systemName: "heart.fill")
+                            .rotationEffect(.degrees(10))
                         Image(systemName: "heart.fill")
                             .resizable()
                             .foregroundColor(ColorManager .grey2)
-                            .frame(width: 150, height: 100)
+                            .frame(width: 150, height: 125)
                             .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
                             .rotationEffect(.degrees(10))
                             .opacity(0.3)
@@ -133,7 +135,7 @@ struct InfoSilence: View {
                             
                             VStack {
                                 Text("a kisses \njourney")
-                                    .font(.system(size: 23))
+                                    .font(.system(size: 25))
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(ColorManager .grey2)
@@ -169,10 +171,13 @@ struct InfoSilence: View {
                     ZStack {
                         
                         Image(systemName: "heart.fill")
+                            .rotationEffect(.degrees(-10))
+                        
+                        Image(systemName: "heart.fill")
                             .resizable()
-                            .foregroundColor(Color.purple)
-                            .frame(width: 150, height: 100)
-                            .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
+                            .foregroundColor(ColorManager .grey2)
+                            .frame(width: 150, height: 125)
+                            .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
                             .rotationEffect(.degrees(-10))
                             .opacity(0.3)
                         
@@ -182,7 +187,7 @@ struct InfoSilence: View {
                             
                             VStack {
                                 Text("a white \nlinen dress")
-                                    .font(.system(size: 23))
+                                    .font(.system(size: 25))
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(ColorManager .grey2)
