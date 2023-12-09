@@ -207,8 +207,6 @@ struct RR58: View {
                         label: {
                             
                             ZStack {
-
-                                
                                     Text("  Set                Vibe")
                                         .fontWeight(.light)
                                         .frame(width: 220, height: 40)
@@ -224,16 +222,11 @@ struct RR58: View {
                                         .frame(width: 55, height: 55)
                                         .foregroundColor(ColorManager .purple4)
                                         .glow(color: ColorManager .grey1, radius: 3)
-                                        .blinking(duration: 2.0)
+//                                        .blinking(duration: 2.0)
                                         .opacity(0.8)
-                                    
                                
-                                    
-                                
                             }
-                            
-                            
-                         
+                       
                         }
                     )}
                 
@@ -263,19 +256,33 @@ struct RR58: View {
                     destination:  RR59(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
                     label: {
                         VStack {
-                            Text("Off Planet")
-                                .fontWeight(.light)
-                                .frame(width: 220, height: 40)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(Color.cyan)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            Text("when your friends arn't around")
-                                .fontWeight(.thin)
-                                .italic()
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                          
                             
+                            ZStack {
+                                    Text("      Off          Planet")
+                                        .fontWeight(.light)
+                                        .frame(width: 220, height: 40)
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .font(.system(size: 25))
+                                        .background(Color.cyan)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                    
+                                    Image("iconRocket 1")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 50, height: 50)
+                                        .foregroundColor(ColorManager .purple4)
+                                        .glow(color: ColorManager .grey1, radius: 3)
+//                                        .blinking(duration: 2.0)
+                                        .opacity(0.8)
+                               
+                            }
+                                Text("when your friends arn't around")
+                                    .fontWeight(.thin)
+                                    .italic()
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                         
                         }
                     }
                 )}
