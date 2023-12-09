@@ -213,8 +213,6 @@
 		CF2D30AF2B1D6DA5008D9C38 /* background_10.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2D30AE2B1D6DA5008D9C38 /* background_10.mp4 */; };
 		CF2D30B12B1D7C2E008D9C38 /* rainDrops1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2D30B02B1D7C2E008D9C38 /* rainDrops1.mp4 */; };
 		CF2D30B52B1D7FFE008D9C38 /* background_11.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2D30B42B1D7FFE008D9C38 /* background_11.mp4 */; };
-		CF2D30B72B1DEF47008D9C38 /* missingYou.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2D30B62B1DEF47008D9C38 /* missingYou.mp4 */; };
-		CF2D30B92B1DEF7A008D9C38 /* missingYou2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2D30B82B1DEF7A008D9C38 /* missingYou2.mp4 */; };
 		CF2D30BB2B1FECFC008D9C38 /* background_0.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2D30BA2B1FECFC008D9C38 /* background_0.mp4 */; };
 		CF2DBCEC2853DAF7008616A3 /* PickMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */; };
 		CF2DBCF928554E5B008616A3 /* BuildFriendPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */; };
@@ -654,8 +652,6 @@
 		CF2D30AE2B1D6DA5008D9C38 /* background_10.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_10.mp4; sourceTree = "<group>"; };
 		CF2D30B02B1D7C2E008D9C38 /* rainDrops1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rainDrops1.mp4; sourceTree = "<group>"; };
 		CF2D30B42B1D7FFE008D9C38 /* background_11.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_11.mp4; sourceTree = "<group>"; };
-		CF2D30B62B1DEF47008D9C38 /* missingYou.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = missingYou.mp4; sourceTree = "<group>"; };
-		CF2D30B82B1DEF7A008D9C38 /* missingYou2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = missingYou2.mp4; sourceTree = "<group>"; };
 		CF2D30BA2B1FECFC008D9C38 /* background_0.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_0.mp4; sourceTree = "<group>"; };
 		CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMediator.swift; sourceTree = "<group>"; };
 		CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildFriendPlaylist.swift; sourceTree = "<group>"; };
@@ -1576,8 +1572,6 @@
 			children = (
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
 				CFED5E2D2B21980500EFE53C /* doTogether.mp4 */,
-				CF2D30B62B1DEF47008D9C38 /* missingYou.mp4 */,
-				CF2D30B82B1DEF7A008D9C38 /* missingYou2.mp4 */,
 				CF50D6B42B242A6200DEF423 /* missingYou3.mp4 */,
 				CF2D30AA2B1C11ED008D9C38 /* girlFriends1.mp4 */,
 				CF2D30A62B1C0F2B008D9C38 /* girlFriends2.mp4 */,
@@ -2306,7 +2300,6 @@
 				CF4A08EE2879577E00ADA9DD /* sky2.mp4 in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,
 				CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */,
-				CF2D30B72B1DEF47008D9C38 /* missingYou.mp4 in Resources */,
 				CFADFD902AFFA53B0090071A /* sendHearts1.mp4 in Resources */,
 				7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */,
 				CF1A338C2B0EE1BA00D24B66 /* Fireworks1.mp4 in Resources */,
@@ -2340,7 +2333,6 @@
 				CF2D30B12B1D7C2E008D9C38 /* rainDrops1.mp4 in Resources */,
 				CF8941262A8B448900AFEC39 /* TreeLake2.mp4 in Resources */,
 				CF2D30AB2B1C11ED008D9C38 /* girlFriends1.mp4 in Resources */,
-				CF2D30B92B1DEF7A008D9C38 /* missingYou2.mp4 in Resources */,
 				CF221EE82AF79530005D19B7 /* blowingkissesVid.mp4 in Resources */,
 				7A383FFD267AC306002F354A /* background_4.mp4 in Resources */,
 				CF3DB37228DA6D7D00BF9CCD /* Nadiah2.m4a in Resources */,
