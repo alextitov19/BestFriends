@@ -1312,6 +1312,7 @@
 		CF1A33842B0ECEB000D24B66 /* System CHs */ = {
 			isa = PBXGroup;
 			children = (
+				CF41753D2968847900898E2D /* InfoSilence.swift */,
 				CFD12CC82819E83900AB2539 /* SmileVault */,
 				CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */,
 				CFCD4BAC2965C27F00BBE43A /* InfoSafeChat.swift */,
@@ -1996,7 +1997,6 @@
 				CFC0EE7B290805E7006B3FAA /* InfoCreateChatRm.swift */,
 				CFC0EE7D290805F8006B3FAA /* InfoInsideChat.swift */,
 				CFC0EE7F2908060C006B3FAA /* InfoPushNotifications.swift */,
-				CF41753D2968847900898E2D /* InfoSilence.swift */,
 				CF94CAFE298756BD00A75D01 /* InfoWhyLoveBF2.swift */,
 				CF1CD75129E2905F00D1F801 /* TestPage3.swift */,
 			);

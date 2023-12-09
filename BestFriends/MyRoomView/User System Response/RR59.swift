@@ -86,24 +86,24 @@ struct RR59: View {
                                         .resizable()
                                         .scaledToFit()
                                         .frame(width: 32, height: 32)
-                                        .foregroundColor(ColorManager .purple3)
+                                        .foregroundColor(ColorManager .grey1)
     //                                        .glow(color: Color.purple, radius: 2)
                                         .opacity(0.9)
                                 })
                         }
                     Spacer()
-                        .frame(height: 70)
+                        .frame(height: 110)
                 
 //    *******************************************
            
                         HStack {
                             VStack {
                                 NavigationLink(destination: InfoView(user: user, friends: friends), label: {
-                                    HugCircle (color: Color.cyan, friendName: "My \nDreams")
+                                    HugCircle (color: ColorManager .grey1, friendName: "My \nDreams")
                                 })
                                 .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
-                                .shadow(color: Color.blue, radius: 5, x: -2, y: -2)
-                                .opacity(0.99)
+                                .shadow(color: Color.white, radius: 5, x: -2, y: -2)
+                                .opacity(0.8)
                             }
                             
                             
@@ -111,11 +111,11 @@ struct RR59: View {
                                 .frame(width: 50)
                             
                             NavigationLink(destination: ChatInfo(user: user), label: {
-                                HugCircle (color: Color.cyan, friendName: "I Did \nIt")
+                                HugCircle (color: ColorManager .grey1, friendName: "Yep, \nI did it")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
-                            .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
-                            .opacity(0.99)
+                            .shadow(color: Color .white, radius: 5, x: 2, y: -2)
+                            .opacity(0.75)
                         }
                         
                         Spacer()
@@ -125,51 +125,43 @@ struct RR59: View {
                            
                         HStack {
                             NavigationLink(destination: InfoSafeChat(user: user, friends: friends), label: {
-                                HugCircle (color: Color.cyan, friendName: "Sad \nn' \nLonely")
+                                HugCircle (color: ColorManager .grey1, friendName: "I'm sad")
                             })
                             .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
-                            .shadow(color: Color.blue, radius: 5, x: -2, y: -2)
-                            .opacity(0.99)
+                            .shadow(color: Color.white, radius: 5, x: -2, y: -2)
+                            .opacity(0.75)
                             
                            
                             
                             Spacer ()
-                                .frame(width: 70)
+                                .frame(width: 75)
 
         ZStack {
-//            NavigationLink(destination: EmptyView(), label: {
-//                HugCircle (color: Color.purple, friendName: "AI")
-//            })
-//            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-//            .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
-//            .opacity(0.99)
-            
-            
+
             NavigationLink(
-                destination: EmptyView(),
+                destination: InfoSilence(user: user, friends: friends),
                 label: {
-//                    Image(systemName: "info.circle")
-                    Text("AI")
-                        .font(.system(size: 70))
+                    Text("Love \nTarts")
+                        .font(.system(size: 27))
                         .foregroundColor(ColorManager .grey4)
                         .fontWeight(.bold)
                         .opacity(0.7)
                         .multilineTextAlignment(.center)
 //                        .blinking(duration: 2.0)
-                })
-
+            })
         }
 
+                            
                             Spacer ()
                                 .frame(width: 70)
                             
                             
                             NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                                HugCircle (color: Color.pink, friendName: "Smile \nVault")
+                                HugCircle (color: ColorManager .grey1, friendName: "Smile \nVault")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
-                            .shadow(color: Color .pink, radius: 5, x: 2, y: -2)
-                            .opacity(0.99)
+                            .shadow(color: Color .white, radius: 5, x: 2, y: -2)
+                            .opacity(0.75)
                             
 
                     }
@@ -184,18 +176,10 @@ struct RR59: View {
                            HugCircle (color: ColorManager .grey1, friendName: "Hurt \nFeelings")
                        })
                        .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-                       .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
-                       .opacity(0.99)
+                       .shadow(color: Color.white, radius: 4, x: 2, y: 3)
+                       .opacity(0.75)
                        
-//                        ZStack {
-//                            NavigationLink(destination: EmptyView(), label: {
-//                                HugCircle (color: Color.purple, friendName: "Empty")
-//                            })
-//                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-//                            .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
-//                            .opacity(0.99)
-                            
-//                       }
+
                         
                        Spacer()
                            .frame(width: 50)
@@ -204,11 +188,11 @@ struct RR59: View {
                             
                             
                             NavigationLink(destination: RR20(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.green, friendName: "Why \nGreat \nFriend")
+                                HugCircle (color: ColorManager .grey1, friendName: "Friend \naffirmation")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                            .shadow(color: Color.green, radius: 10, x: -4, y: 4)
-                            .opacity(0.99)
+                            .shadow(color: Color.white, radius: 10, x: -4, y: 4)
+                            .opacity(0.75)
                       
                         }
                     }
@@ -218,66 +202,7 @@ struct RR59: View {
      
                         Spacer()
                             .frame(width: 140)
-                        
-                        
-//                        ZStack {
-//
-//                            //*********************************************** Motion
-//                            GeometryReader { geo in
-//                                HStack(spacing: 280) {
-//
-//                                    Image("")
-//                                        .aspectRatio(contentMode: .fit)
-////                                        .blinking(duration: 6.0)
-//
-//                                    Spacer()
-//                                        .frame(width: 50)
-//
-//                                    ZStack {
-//
-//                                        //    ********************************************
-//                                        Image("FatGuy")
-////                                            .aspectRatio(contentMode: .fit)
-//                                            .frame(width: 120, height: 120)
-//                                            .blinking(duration: 7.0)
-//
-//                                        Text("When friends not around")
-//                                            .fontWeight(.medium)
-//                                            .frame(width: 200, height: 40)
-//                                            .foregroundColor(Color.black)
-//                                            .font(.system(size: 15))
-//                                            .background(ColorManager .purple1)
-//                                            .cornerRadius(7)
-//                                            .rotationEffect(.degrees(-25))
-//                                            .opacity(0.8)
-//                                        //                                            .glow(color: ColorManager .grey4, radius: 3)
-//                                            .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
-//                                            .blinking(duration: 7.0)
-//
-//                                        //**********************************************************
-//
-//                                    }
-//
-//                                    Image("")
-//                                        .aspectRatio(contentMode: .fit)
-//                                        .frame(width: geo.size.width, alignment: .leading)
-//
-//
-//
-//                                }
-//                                .frame(width: geo.size.width, height: geo.size.height,
-//                                       alignment: animate ? .trailing : .leading)
-//                            }
-//                            .ignoresSafeArea()
-//                            .onAppear {
-//                                withAnimation(animation) {
-//                                    animate.toggle()
-//                                }
-//
-//                            }
-//                        }
-//
-                        
+               
                         VStack {
                             
                             Spacer ()
@@ -285,39 +210,24 @@ struct RR59: View {
                             
                             
                             HStack {
-                                
-                                ZStack {
-//                                    Image("")
-//
-//
-//
-//                                    NavigationLink(destination: RR33(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-//                                        HugCircle (color: ColorManager .grey1, friendName: "Hurt \nFeelings")
-//                                    })
-//                                    .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-//                                    .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
-//                                    .opacity(0.99)
-//
-//
-                                    
-                                }
+                            
                                 Spacer()
                                     .frame(width: 160)
                                 
-//                                ZStack {
-//
-//                                    NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
-//                                        HugCircle (color: ColorManager .grey1, friendName: "Build \nyour own \n'in-beta'")
-//                                    })
-//                                    .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-//                                    .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
-//                                    .opacity(0.99)
-//
-//                                }
-                                
+                                ZStack {
+                                  
+                                            
+                                            NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
+                                                HugCircle (color: ColorManager .grey1, friendName: "AI \ncoming \n2024")
+                                            })
+                                            .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+                                            .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
+                                            .opacity(0.99)
+                                            
+                                    }
+                                }
                             }
-    //
-                            }
+                        
                         
             VStack {
                                 
@@ -351,18 +261,30 @@ struct RR59: View {
                 
                 ZStack {
                     
-                    Image("planet_6")
+//                    Image("planet_6")
+//                        .resizable()
+//                        .foregroundColor(color)
+////                        .foregroundColor(ColorManager .purple2)
+//                        .frame(width: 80, height: 80)
+//                        .shadow(color: Color.white, radius: 4, x: 0, y: 0)
+                    
+                    Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(color)
-                    //                            .foregroundColor(ColorManager .purple2)
+                        .foregroundColor(ColorManager .grey2)
                         .frame(width: 80, height: 80)
-                        .shadow(color: Color.white, radius: 4, x: 0, y: 0)
+                        .opacity(0.3)
+                        .shadow(color: Color.white, radius: 10, x: 5, y: 5)
+                    
+                    
+                    
+                    
                     
                     Text(friendName)
                         .fontWeight(.bold)
                         .font(.system(size: 14))
                         .italic()
-                        .foregroundColor(.black)
+                        .foregroundColor(ColorManager .grey4)
                     
                 }
             }
