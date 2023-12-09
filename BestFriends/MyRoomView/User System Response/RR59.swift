@@ -125,7 +125,7 @@ struct RR59: View {
                            
                         HStack {
                             NavigationLink(destination: InfoSafeChat(user: user, friends: friends), label: {
-                                HugCircle (color: ColorManager .grey1, friendName: "I'm sad")
+                                HugCircle (color: ColorManager .grey1, friendName: "I need \na Hug")
                             })
                             .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
                             .shadow(color: Color.white, radius: 5, x: -2, y: -2)

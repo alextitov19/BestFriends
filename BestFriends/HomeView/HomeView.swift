@@ -85,12 +85,7 @@ struct HomeView: View {
                         .blendMode(.screen)
                         .opacity(0.9)
                     
-                    
-//                    AdPlayerView(name: "sendHearts1")
-//                        .ignoresSafeArea()
-//                        .blendMode(.screen)
-//                        .opacity(0.35)
-                    
+
            
              
                 VStack {
@@ -238,63 +233,7 @@ struct HomeView: View {
                             }
                         }
                         
-    
-//    ***************************************** Now at bottom of page right *****
-//                        VStack {
-//
-//                            HStack {
-//
-//
-//
-//                                    NavigationLink(
-//                                        destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
-//                                        label: {
-//
-//                                            Image("IconPhotoNew")
-//                                                .resizable()
-//                                                .scaledToFit()
-//                                                .frame(width: 35, height: 35)
-//                                                .rotationEffect(.degrees(-7))
-//                                                .foregroundColor(ColorManager .purple5)
-//                                                .glow(color: Color.purple, radius: 2)
-//                                                .opacity(0.9)
-//
-//
-//                                        })
-//
-//                                    NavigationLink(
-//                                        destination:  RR33(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-//                                        label: {
-//
-//
-//
-//                                                Image("IconFightNew")
-//                                                    .resizable()
-//                                                    .scaledToFit()
-//                                                    .frame(width: 40, height: 40)
-//                                                    .foregroundColor(Color.white)
-//                                                    .opacity(0.95)
-//
-//                                        })
-//
-//
-//                                NavigationLink(
-//                                    destination:  BestFriendMessages(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres),
-//                                    label: {
-//
-//                                            Image("IconRoomNew")
-//                                                .resizable()
-//                                                .scaledToFit()
-//                                                .frame(width: 40, height: 40)
-//                                                .foregroundColor(Color.white)
-//                                                .opacity(0.95)
-//
-//                                    })
-//                                }
-//                            }
-                        
-                        
-                        
+                 
 //    ****************************************
                         
                     
@@ -330,101 +269,9 @@ struct HomeView: View {
             
             Spacer()
                 .frame(width: 50)
-//
-//            ZStack {
-//                //            ******************** RR36Info(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups)
-//
-//                NavigationLink(
-//                    destination:  RR4(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-//                    label: {
-//                        ZStack {
-//
-//                            //*********************************************** Motion
-//                            GeometryReader { geo in
-//                                HStack(spacing: 300) {
-//
-//                                    ZStack {
-//
-//                                        //    ********************************************
-//                                        Image("FatGuy200")
-//                                            .aspectRatio(contentMode: .fit)
-//                                            .blinking(duration: 4.0)
-//
-//                                        Text("demo")
-//                                            .fontWeight(.regular)
-//                                            .frame(width: 55, height: 30)
-//                                            .foregroundColor(Color.black)
-//                                            .font(.system(size: 17))
-//                                            .background(ColorManager .purple1)
-//                                            .cornerRadius(7)
-//                                            .rotationEffect(.degrees(-25))
-//                                            .opacity(0.8)
-//                                        //                                            .glow(color: ColorManager .grey4, radius: 3)
-//                                            .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
-//                                            .blinking(duration: 4.0)
-//
-//                                        //**********************************************************
-//
-//                                    }
-//
-//                                    Image("")
-//                                        .aspectRatio(contentMode: .fit)
-//                                        .frame(width: geo.size.width, alignment: .leading)
-//
-//
-//
-//                                }
-//                                .frame(width: geo.size.width, height: geo.size.height,
-//                                       alignment: animate ? .trailing : .leading)
-//                            }
-//                            .ignoresSafeArea()
-//                            .onAppear {
-//                                withAnimation(animation) {
-//                                    animate.toggle()
-//                                }
-//
-//                                //*********************************************** Motion
-//
-//
-//
-//                            }
-//                        }
-//                    }
-//                )}
-            
+ 
             VStack {
-//                NavigationLink(
-//                    destination:  PhotoPopView(user: homeData!.user, friends: homeData!.friends),
-//                    label: {
-//
-//                        Image("IconPhotoNew")
-//                            .resizable()
-//                            .scaledToFit()
-//                            .frame(width: 35, height: 35)
-//                            .rotationEffect(.degrees(-7))
-//                            .foregroundColor(ColorManager .purple5)
-//                            .glow(color: Color.purple, radius: 2)
-//                            .opacity(0.9)
-//
-//
-//                    })
-                
-                
-//                NavigationLink(
-//                    destination:  RR33(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-//                    label: {
-//
-//
-//
-//                        Image("IconFightNew")
-//                            .resizable()
-//                            .scaledToFit()
-//                            .frame(width: 40, height: 40)
-//                            .foregroundColor(Color.white)
-//                            .opacity(0.95)
-//
-//                    })
-                
+
             }
         }
                             
