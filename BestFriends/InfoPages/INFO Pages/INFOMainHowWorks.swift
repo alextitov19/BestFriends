@@ -103,7 +103,7 @@ struct INFOMainHowWorks: View {
                         .frame(height: 30)
                     
                     NavigationLink(
-                        destination: InfoInsideChat(user: user),
+                        destination: EmptyView(),
                         label: {
                             Text("Create New Chat rooms")
                                 .fontWeight(.thin)
