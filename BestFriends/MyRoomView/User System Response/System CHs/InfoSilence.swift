@@ -51,7 +51,7 @@ struct InfoSilence: View {
                     .blendMode(.screen)
                     .opacity(0.5)
                 
-                AdPlayerView(name: "missingYou2")
+                AdPlayerView(name: "missingYou3")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.3)
@@ -63,51 +63,60 @@ struct InfoSilence: View {
 
 
             VStack {
-                
-//
-//                VStack{
-//
-//                    HStack {
-//                        VStack {
-//
-//
-//                            ZStack {
-//
-//                                Image(systemName: "cube.fill")
-//                                    .resizable()
-//                                    .foregroundColor(Color.purple)
-//                                    .frame(width: 250, height: 200)
-//                                    .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-//                                    .opacity(0.5)
-//
-//                                VStack {
-//
-//                                    Text("love poems")
-//                                        .font(.system(size: 23, weight: .light))
-//                                        .italic()
-//                                        .foregroundColor(ColorManager .grey1)
-//                                        .opacity(0.5)
-//
-//                                    Text("just for you")
-//                                        .font(.system(size: 33, weight: .light))
-//                                        .foregroundColor(ColorManager .grey1)
-//                                        .opacity(0.5)
-//
-////                                    Text("light as butterfly wings")
-////                                        .font(.system(size: 20, weight: .light))
-////                                        .foregroundColor(ColorManager .grey1)
-////                                        .opacity(0.5)
-//                                }
-//                            }
-//                        }
-//                    }
-//                }
+
+                HStack {
+                    
+                    Text("")
+                        .font(.system(size: 20))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+                        .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+                        .rotationEffect(.degrees(-10))
+                        .opacity(0.5)
+                    
+                   Spacer ()
+                        .frame(width: 150)
+                    
+                    ZStack {
+                        
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .foregroundColor(ColorManager .grey2)
+                            .frame(width: 150, height: 100)
+                            .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
+                            .rotationEffect(.degrees(10))
+                            .opacity(0.3)
+                        
+                        Link(destination: URL(string: "https://socialtechlabs.com/a-kisses-journey/")!) {
+                            VStack {
+                                Text("a happy tear")
+                                    .font(.system(size: 23))
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(ColorManager .grey2)
+//                                    .shadow(color: ColorManager .purple2, radius: 1, x: 1, y: 1)
+                                    .rotationEffect(.degrees(10))
+                                    .opacity(0.45)
+                                
+                                Text("(coming soon)")
+                                    .font(.system(size: 15))
+                                    .italic()
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(ColorManager .grey2)
+//                                    .shadow(color: ColorManager .purple2, radius: 1, x: 1, y: 1)
+                                    .rotationEffect(.degrees(10))
+                                    .opacity(0.45)
+                                
+                            }
+                        }
+                    }
+                }
                 
 //    ************  Links to website for poems  *******
                 
                 HStack {
-                    
-              
                     ZStack {
                         
                         Image(systemName: "heart.fill")
@@ -124,13 +133,13 @@ struct InfoSilence: View {
                             
                             VStack {
                                 Text("a kisses \njourney")
-                                    .font(.system(size: 17))
+                                    .font(.system(size: 23))
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(ColorManager .grey2)
-                                    .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+//                                    .shadow(color: ColorManager .purple2, radius: 1, x: 1, y: 1)
                                     .rotationEffect(.degrees(10))
-                                    .opacity(0.6)
+                                    .opacity(0.45)
                                 
                                 }
                             }
@@ -156,13 +165,14 @@ struct InfoSilence: View {
                     
                    Spacer ()
                         .frame(width: 200)
+                  
                     ZStack {
                         
                         Image(systemName: "heart.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
                             .frame(width: 150, height: 100)
-                            .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+                            .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
                             .rotationEffect(.degrees(-10))
                             .opacity(0.3)
                         
@@ -172,13 +182,13 @@ struct InfoSilence: View {
                             
                             VStack {
                                 Text("a white \nlinen dress")
-                                    .font(.system(size: 17))
+                                    .font(.system(size: 23))
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(ColorManager .grey2)
-                                    .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+//                                   .shadow(color: ColorManager .purple2, radius: 1, x: 1, y: 1)
                                     .rotationEffect(.degrees(-10))
-                                    .opacity(0.6)
+                                    .opacity(0.45)
                                 
                                 
                                 

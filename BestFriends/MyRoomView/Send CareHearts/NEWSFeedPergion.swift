@@ -57,7 +57,7 @@ struct NEWSFeedPergion: View {
                     .blendMode(.screen)
                     .opacity(0.5)
                 
-                AdPlayerView(name: "missingYou2")
+                AdPlayerView(name: "missingYou3")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.3)
