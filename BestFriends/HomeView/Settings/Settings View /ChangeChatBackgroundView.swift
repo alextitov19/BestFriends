@@ -81,8 +81,8 @@ struct ChangeChatBackgroundView: View {
                     BackgroundCard(title: "Poppies in breeze", backgroundNumber: 4, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
                     
-//                    BackgroundCard(title: "Default - Static Gray", backgroundNumber: 0, user: user, selectedBackground: $selectedBackground)
-//                        .padding(5)
+                    BackgroundCard(title: "Default - Static Gray", backgroundNumber: 0, user: user, selectedBackground: $selectedBackground)
+                        .padding(5)
                   
                     BackgroundCard(title: "Bull in snow", backgroundNumber: 5, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
