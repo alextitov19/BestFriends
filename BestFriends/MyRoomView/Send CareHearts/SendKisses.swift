@@ -297,7 +297,7 @@ struct SendKisses: View {
                                 .glow(color: Color.purple, radius: 2)
                                 .opacity(0.6)
                                 .blinking(duration: 3.0)
-                                .alert("This is the best feeling in the world!", isPresented: $showingAlert) {
+                                .alert("This is the best feeling in the world! \n\nIt's like that special look on a girls face she only gets while holding a bunch of flowers.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })

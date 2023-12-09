@@ -52,7 +52,7 @@ struct ChangeChatBackgroundView: View {
                   
          
                     BackgroundCard(title: "Recommended: \n(same background as Homepage)", backgroundNumber: 10, user: user, selectedBackground: $selectedBackground)
-                        .blinking(duration: 2.0)
+//                        .blinking(duration: 2.0)
                         .padding(5)
                     
                   
