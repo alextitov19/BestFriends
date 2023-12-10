@@ -539,7 +539,7 @@ VStack {
                                         .glow(color: Color.purple, radius: 2)
                                         .opacity(0.6)
                                         .blinking(duration: 3.0)
-                                        .alert("Your planet atmosphere is updated to matche your vibe. \n\nWe notified your friend(s). \n\nYou should hear from them soon!", isPresented: $showingAlert) {
+                                        .alert("Your truest friends are here to help. \n\nYour planet atmosphere is updated matching your vibe. \n\nWe notified your friend(s). \n\nYou should hear from them soon!", isPresented: $showingAlert) {
                                             Button("OK", role: .cancel) { }
                                             
                                         
@@ -592,11 +592,11 @@ VStack {
             for id in selectedFriends {
                 for f in friends {
                     if f.id == id {
-                        RestApi.instance.sendPushNotification(title: "BestFriends", body: " \(user.firstName) changed their vibe. If you get a chance could you check on them. True friends are hard to find.", APNToken: f.APNToken)
+                        RestApi.instance.sendPushNotification(title: "BestFriends", body: " \(user.firstName) changed their vibe. Could you check on them. True friends are priceless.", APNToken: f.APNToken)
                         
                         //MARK: The code below creates an in-app notification for your friend (f.id)
                         //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                        RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "changed their vibe. If you get a chance could you check on them. True friends are hard to find.", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "changed their vibe. When get a chance - check on them. True friends are priceless.", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                             print("Create a Vibe notification response code: ", response)
                         })
                         RestApi.instance.createStreakLog(friendID: f.id)
