@@ -89,7 +89,7 @@ struct InfoSilence: View {
                             .rotationEffect(.degrees(10))
                             .opacity(0.3)
                         
-                        Link(destination: URL(string: "https://socialtechlabs.com/a-kisses-journey/")!) {
+                        Link(destination: URL(string: "https://socialtechlabs.com/a-happy-tear/")!) {
                             VStack {
                                 Text("a happy tear")
                                     .font(.system(size: 25))
