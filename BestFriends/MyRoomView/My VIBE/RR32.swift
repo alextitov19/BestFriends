@@ -539,7 +539,7 @@ VStack {
                                         .glow(color: Color.purple, radius: 2)
                                         .opacity(0.6)
                                         .blinking(duration: 3.0)
-                                        .alert("Your truest friends are here to help. \n\nYour planet atmosphere is updated matching your vibe. \n\nWe notified your friend(s). \n\nYou should hear from them soon!", isPresented: $showingAlert) {
+                                        .alert("Your real-time friends are here. \n\nYour planet atmosphere is updated matching your vibe. \n\nWe notified your friend(s). \n\nYou should hear from them soon!", isPresented: $showingAlert) {
                                             Button("OK", role: .cancel) { }
                                             
                                         
