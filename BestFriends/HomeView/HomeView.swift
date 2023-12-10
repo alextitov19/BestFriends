@@ -349,14 +349,23 @@ struct HomeView: View {
 
                         })
                         
-                        Text("tap")
-                            .font(.system(size: 50))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.regular)
-                            .opacity(0.99)
-                            .multilineTextAlignment(.center)
-                            .blinking(duration: 2.0)
-
+                        VStack {
+                            Text("menu")
+                                .font(.system(size: 30))
+                                .foregroundColor(Color.white)
+                                .fontWeight(.regular)
+                                .opacity(0.99)
+                                .multilineTextAlignment(.center)
+                            //                            .blinking(duration: 2.0)
+                            
+                            Text("tap")
+                                .font(.system(size: 25))
+                                .foregroundColor(Color.white)
+                                .fontWeight(.regular)
+                                .opacity(0.99)
+                                .multilineTextAlignment(.center)
+                                .blinking(duration: 2.0)
+                        }
                         
                         
 //****** CENTER PLANET****************** CENTER PLANET*****************

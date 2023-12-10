@@ -421,7 +421,7 @@ VStack {
                     
                     // *********** VIBE **********************************
 // *********** Day Changed
-                case "changed their vibe. If you get a chance could you check on them. True friends are hard to find.":
+                case "changed their vibe. Could you check on them. Your true friendship is priceless.":
                     newVibeActive = true
                     
 // *********** Need to Talk
