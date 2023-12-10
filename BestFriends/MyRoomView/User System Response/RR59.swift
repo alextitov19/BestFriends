@@ -69,30 +69,48 @@ struct RR59: View {
        
                     HStack {
                         
-                        ZStack {
-                            Image(systemName: "")
-    
-                        }
-                        
                         Spacer()
-                            .frame(width: 300)
+                            .frame(width: 170)
                         
-
+                        VStack {
                             
-                            NavigationLink(
-                                destination: FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                label: {
-                                    Image(systemName: "info.circle")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 32, height: 32)
-                                        .foregroundColor(ColorManager .grey1)
-    //                                        .glow(color: Color.purple, radius: 2)
-                                        .opacity(0.9)
-                                })
+                            Text("Off Planet")
+                                .font(.system(size: 35))
+                                .fontWeight(.bold)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(ColorManager .grey1)
+                                .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                                .opacity(0.25)
+    
+                            Text("when friends aren't around")
+                                .font(.system(size: 17))
+                                .fontWeight(.regular)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .shadow(color: Color.white, radius: 3, x: 3, y: 5)
+                                .opacity(0.25)
+                          
                         }
+                        
+//                        Spacer()
+//                            .frame(width: 50)
+                        
+//                            NavigationLink(
+//                                destination: FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                                label: {
+//                                    Image(systemName: "info.circle")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 32, height: 32)
+//                                        .foregroundColor(ColorManager .grey1)
+//    //                                        .glow(color: Color.purple, radius: 2)
+//                                        .opacity(0.9)
+//                                })
+                       }
+                    
+                    
                     Spacer()
-                        .frame(height: 110)
+                        .frame(height: 90)
                 
 //    *******************************************
            
@@ -142,7 +160,7 @@ struct RR59: View {
                 destination: InfoSilence(user: user, friends: friends),
                 label: {
                     Text("Love \nTarts")
-                        .font(.system(size: 27))
+                        .font(.system(size: 20))
                         .foregroundColor(ColorManager .grey4)
                         .fontWeight(.bold)
                         .opacity(0.7)
@@ -217,7 +235,7 @@ struct RR59: View {
                                 ZStack {
                                   
                                             
-                                            NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
+                                            NavigationLink(destination: FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
                                                 HugCircle (color: ColorManager .grey1, friendName: "AI \ncoming \n2024")
                                             })
                                             .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
