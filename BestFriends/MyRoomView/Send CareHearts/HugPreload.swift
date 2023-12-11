@@ -120,15 +120,15 @@ struct HugPreload: View {
                         
                     
                         Spacer()
-                            .frame(width: 85)
+                            .frame(width: 75)
                         
                         ZStack {
                             
-                            Image(systemName: "circle.fill")
+                            Image("planet_6")
                             
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 90, height: 90)
+                                .frame(width: 120, height: 120)
                                 .foregroundColor(Color.orange)
                                 .opacity(0.95)
                     
@@ -151,7 +151,7 @@ struct HugPreload: View {
                         
                         
                         Spacer()
-                            .frame(width: 85)
+                            .frame(width: 75)
                         
                         
                         NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
