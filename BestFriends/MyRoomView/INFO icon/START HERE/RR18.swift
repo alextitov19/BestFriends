@@ -69,7 +69,7 @@ struct RR18: View {
                         
                         VStack {
                             
-                            Text("sharing love & \nemotional support")
+                            Text("sharing excitment, \nlove & comfort")
                                 .font(.system(size: 47))
                                 .fontWeight(.bold)
                                 .multilineTextAlignment(.center)
@@ -107,7 +107,7 @@ struct RR18: View {
                             .opacity(0.7)
                         
                         
-                        Text("w/ your 5 closest humans")
+                        Text("w/ your 5 nobelest friends")
                             .font(.system(size: 24))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)

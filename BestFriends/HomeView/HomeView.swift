@@ -210,7 +210,7 @@ struct HomeView: View {
                                             .frame(width: 55, height: 55)
                                             .foregroundColor(ColorManager .purple4)
                                             .glow(color: ColorManager .grey1, radius: 3)
-                                            .blinking(duration: 2.0)
+//                                            .blinking(duration: 2.0)
                                             .opacity(0.8)
                                         
 
@@ -361,7 +361,7 @@ struct HomeView: View {
                             Text("tap")
                                 .font(.system(size: 25))
                                 .foregroundColor(Color.white)
-                                .fontWeight(.regular)
+                                .fontWeight(.light)
                                 .opacity(0.99)
                                 .multilineTextAlignment(.center)
                                 .blinking(duration: 2.0)
