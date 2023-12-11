@@ -308,7 +308,7 @@ struct FriendPlanetsView: View {
                         .foregroundColor(ColorManager .purple3)
                         .frame(width: 20, height: 20)
                         .scaledToFit()
-//                        .blinking(duration: 2.0)
+                        .blinking(duration: 2.0)
                 }
 
                 Text("friends")

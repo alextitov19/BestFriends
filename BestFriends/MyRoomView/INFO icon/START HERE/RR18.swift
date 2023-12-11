@@ -107,7 +107,7 @@ struct RR18: View {
                             .opacity(0.7)
                         
                         
-                        Text("w/ your 5 nobelest friends")
+                        Text("w/ your 5 most lasting friends")
                             .font(.system(size: 24))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
@@ -165,9 +165,9 @@ struct RR18: View {
                                     destination:  RR58(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                     label: {
                                         VStack {
-                                            Text("uniquenly different  >>>")
+                                            Text("Why uniquenly different?  ->>>")
                                                 .fontWeight(.light)
-                                                .frame(width: 300, height: 40)
+                                                .frame(width: 350, height: 40)
                                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                 .font(.system(size: 25))
                                                 .background(Color.cyan)

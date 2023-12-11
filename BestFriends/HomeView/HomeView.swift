@@ -142,7 +142,7 @@ struct HomeView: View {
                             Image("iconRocket 1")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 45, height: 45)
+                                .frame(width: 50, height: 50)
                                 .foregroundColor(ColorManager .purple5)
                                 .glow(color: Color.purple, radius: 2)
                                 .opacity(0.9)
