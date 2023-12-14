@@ -101,18 +101,18 @@ struct FH5: View {
                                 .frame(height: 20)
                             
                     
-                            NavigationLink(destination: RR33(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                label: {
-                                    Text("Friendship Drama")
-                                        .fontWeight(.regular)
-                                        .frame(width: 150, height: 33)
-                                        .foregroundColor(Color.white)
-                                        .font(.system(size: 13))
-                                        .background(Color.orange)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                    
-                                })
+//                            NavigationLink(destination: RR33(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                                label: {
+//                                    Text("Friendship Drama")
+//                                        .fontWeight(.regular)
+//                                        .frame(width: 150, height: 33)
+//                                        .foregroundColor(Color.white)
+//                                        .font(.system(size: 13))
+//                                        .background(Color.orange)
+//                                        .cornerRadius(15)
+//                                        .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                                    
+//                                })
                             
 
                             

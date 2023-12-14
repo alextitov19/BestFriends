@@ -282,6 +282,11 @@
 		CF4D86B82976280A004B551D /* HugPushNotification3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4D86B72976280A004B551D /* HugPushNotification3.swift */; };
 		CF4D86BA2978FDBA004B551D /* MyFears.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4D86B92978FDBA004B551D /* MyFears.swift */; };
 		CF50D6B52B242A6200DEF423 /* missingYou3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF50D6B42B242A6200DEF423 /* missingYou3.mp4 */; };
+		CF50D6B82B2B221700DEF423 /* RR15.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50D6B72B2B221700DEF423 /* RR15.swift */; };
+		CF50D6BA2B2B22BD00DEF423 /* RR33.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50D6B92B2B22BD00DEF423 /* RR33.swift */; };
+		CF50D6C02B2B23BB00DEF423 /* RR26.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50D6BF2B2B23BB00DEF423 /* RR26.swift */; };
+		CF50D6C22B2B240B00DEF423 /* RR34Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50D6C12B2B240B00DEF423 /* RR34Fight.swift */; };
+		CF50D6C42B2B248800DEF423 /* RR35Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50D6C32B2B248800DEF423 /* RR35Fight.swift */; };
 		CF51BF832AE2F693007A3DBF /* background_5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF51BF822AE2F693007A3DBF /* background_5.mp4 */; };
 		CF565EEA292FED1E00B66A18 /* WhyFiveFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF565EE9292FED1E00B66A18 /* WhyFiveFriends.swift */; };
 		CF565EEC2935A61200B66A18 /* MoodSongPushNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF565EEB2935A61200B66A18 /* MoodSongPushNote.swift */; };
@@ -710,6 +715,11 @@
 		CF4D86B72976280A004B551D /* HugPushNotification3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugPushNotification3.swift; sourceTree = "<group>"; };
 		CF4D86B92978FDBA004B551D /* MyFears.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFears.swift; sourceTree = "<group>"; };
 		CF50D6B42B242A6200DEF423 /* missingYou3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = missingYou3.mp4; sourceTree = "<group>"; };
+		CF50D6B72B2B221700DEF423 /* RR15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR15.swift; path = "../../../../../SocialTech Dropbox/RR15.swift"; sourceTree = "<group>"; };
+		CF50D6B92B2B22BD00DEF423 /* RR33.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR33.swift; path = "../../../../../SocialTech Dropbox/RR33.swift"; sourceTree = "<group>"; };
+		CF50D6BF2B2B23BB00DEF423 /* RR26.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR26.swift; path = "../../../../../SocialTech Dropbox/RR26.swift"; sourceTree = "<group>"; };
+		CF50D6C12B2B240B00DEF423 /* RR34Fight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR34Fight.swift; path = "../../../../../SocialTech Dropbox/RR34Fight.swift"; sourceTree = "<group>"; };
+		CF50D6C32B2B248800DEF423 /* RR35Fight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR35Fight.swift; path = "../../../../../SocialTech Dropbox/RR35Fight.swift"; sourceTree = "<group>"; };
 		CF51BF822AE2F693007A3DBF /* background_5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_5.mp4; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* background_4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_4.mp4; sourceTree = "<group>"; };
 		CF565EE9292FED1E00B66A18 /* WhyFiveFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyFiveFriends.swift; sourceTree = "<group>"; };
@@ -869,6 +879,11 @@
 		2D2A186D2AEEEC9400B0C1DF /* RR */ = {
 			isa = PBXGroup;
 			children = (
+				CF50D6B72B2B221700DEF423 /* RR15.swift */,
+				CF50D6B92B2B22BD00DEF423 /* RR33.swift */,
+				CF50D6BF2B2B23BB00DEF423 /* RR26.swift */,
+				CF50D6C12B2B240B00DEF423 /* RR34Fight.swift */,
+				CF50D6C32B2B248800DEF423 /* RR35Fight.swift */,
 			);
 			path = RR;
 			sourceTree = "<group>";
@@ -1015,6 +1030,7 @@
 				7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */,
 				7A0856A927F3DCC300E8282B /* SessionManager.swift */,
 				7AD8DF0B27F6970A00D9F0E1 /* AuthView */,
+				CF50D6B62B2B169B00DEF423 /* New Group */,
 				7AD8DF0A27F696F000D9F0E1 /* HomeView */,
 				CF9ECC572B15A5C9009E4C7C /* NEW CAREHEARTS */,
 				7A8F3D7C2A32BC5D00BC2CF4 /* MyRoomView */,
@@ -1066,7 +1082,6 @@
 				CF6C5B052A86087F00EC4915 /* FRIENDSHIPS */,
 				CF6C5B0A2A860A2E00EC4915 /* Coupons */,
 				CF6C5AFD2A86025300EC4915 /* NewArtist */,
-				CF0EB7D82A74E750000B2A1F /* Drama Central 2 */,
 				7A8A72982A33F690005FA3B1 /* Journal */,
 				CF6C5AFE2A86029500EC4915 /* MyCrushes */,
 				CF37535B28C6953B003817E3 /* DREAMS */,
@@ -1288,6 +1303,7 @@
 		CF1A33842B0ECEB000D24B66 /* System CHs */ = {
 			isa = PBXGroup;
 			children = (
+				CF0EB7D82A74E750000B2A1F /* Drama Central 2 */,
 				CF41753D2968847900898E2D /* InfoSilence.swift */,
 				CFD12CC82819E83900AB2539 /* SmileVault */,
 				CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */,
@@ -1522,6 +1538,13 @@
 			path = Sweethearts;
 			sourceTree = "<group>";
 		};
+		CF50D6B62B2B169B00DEF423 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		CF51BF812AE0C15C007A3DBF /* User System Response */ = {
 			isa = PBXGroup;
 			children = (
@@ -1533,6 +1556,7 @@
 				2DB42CF52AAE878100E137C0 /* RR25.swift */,
 				CFCD4BAE2965CE5C00BBE43A /* InfoComingChat.swift */,
 				CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */,
+				CF565EE9292FED1E00B66A18 /* WhyFiveFriends.swift */,
 			);
 			path = "User System Response";
 			sourceTree = "<group>";
@@ -1918,7 +1942,6 @@
 			isa = PBXGroup;
 			children = (
 				CFCD3BC129DF845000D19A0F /* TestPage.swift */,
-				CF565EE9292FED1E00B66A18 /* WhyFiveFriends.swift */,
 				CF3295F6290BAA7C0014F658 /* INFOPreload.swift */,
 				CFD8BD15291B3D6600F86EFB /* INFOPreload2.swift */,
 				CF6499E0294E1F6C003BBF83 /* INFOPreload3.swift */,
@@ -2375,6 +2398,7 @@
 				7A0856A227F3D9A900E8282B /* RestAPI.swift in Sources */,
 				CF3B42F6293721A500EE1D84 /* SaySomethingNice6.swift in Sources */,
 				CFCD4BAF2965CE5C00BBE43A /* InfoComingChat.swift in Sources */,
+				CF50D6C22B2B240B00DEF423 /* RR34Fight.swift in Sources */,
 				CFDB1509285816AF00155CEE /* FaceTimeCall.swift in Sources */,
 				CF6499E1294E1F6C003BBF83 /* INFOPreload3.swift in Sources */,
 				2DA887322A3A18C000759A1F /* AffirmationEdit.swift in Sources */,
@@ -2454,6 +2478,7 @@
 				CF3AE3B528F9F5F8002584A6 /* TeenVideo.swift in Sources */,
 				2D2A18772AEEED0500B0C1DF /* RR54.swift in Sources */,
 				622F68F9289C6B76001D1997 /* HorizonThoughts.swift in Sources */,
+				CF50D6C02B2B23BB00DEF423 /* RR26.swift in Sources */,
 				7ACB385328208D38009559AF /* ImagePicker.swift in Sources */,
 				CF65041828931C0B0092EEB9 /* FightsDVid.swift in Sources */,
 				CFAB540F281CA79200BBF502 /* Step5_Why.swift in Sources */,
@@ -2496,6 +2521,7 @@
 				7A8F3D7E2A32C63000BC2CF4 /* MyRoomView.swift in Sources */,
 				2DBF3EE52A61ACEB00CB1CAD /* RR3.swift in Sources */,
 				2D2A18712AEEECCB00B0C1DF /* RR51.swift in Sources */,
+				CF50D6BA2B2B22BD00DEF423 /* RR33.swift in Sources */,
 				CF47D5D32862531C004B47A1 /* RemoveFriend2.swift in Sources */,
 				CF1ECAC12870039500D999F8 /* HorizonPromoPage.swift in Sources */,
 				CFA1226828598DB800E22E84 /* Apologies3.swift in Sources */,
@@ -2508,6 +2534,7 @@
 				CF65043028A438970092EEB9 /* ChatReactions.swift in Sources */,
 				7A04C13D28553818003AB24A /* PhotoPopView.swift in Sources */,
 				2DB42CF22AAE876A00E137C0 /* RR23.swift in Sources */,
+				CF50D6B82B2B221700DEF423 /* RR15.swift in Sources */,
 				CF4A08E62879481200ADA9DD /* NostalgiaPreload2.swift in Sources */,
 				2DDCD98E2A92A21900B1040F /* Constants.swift in Sources */,
 				CF4A08E42879443E00ADA9DD /* Apologies4.swift in Sources */,
@@ -2545,6 +2572,7 @@
 				2DFB03292A5D30AC00669948 /* CH8.swift in Sources */,
 				D1BD9FD42ACBB4E100196448 /* RR32.swift in Sources */,
 				CF2738AA2813C5740070E9D3 /* NewSmileNoteCard.swift in Sources */,
+				CF50D6C42B2B248800DEF423 /* RR35Fight.swift in Sources */,
 				CF565EEC2935A61200B66A18 /* MoodSongPushNote.swift in Sources */,
 				2DFB03182A57228D00669948 /* FH10.swift in Sources */,
 				CF2EE6F829516C8A00B1B16D /* InfoHowChatWorks.swift in Sources */,
