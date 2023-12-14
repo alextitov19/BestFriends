@@ -329,14 +329,14 @@ struct RR32: View {
                                     
                              
                                     
-                                    Text("just letting ")
-                                        .font(.system(size: 9))
+                                    Text("Yep, having")
+                                        .font(.system(size: 13))
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(Color.purple)
                                     
-                                    Text("friends know")
-                                        .font(.system(size: 9))
+                                    Text("a great day!")
+                                        .font(.system(size: 13))
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(Color.purple)
@@ -549,7 +549,7 @@ struct RR32: View {
                                         .glow(color: Color.purple, radius: 2)
                                         .opacity(0.6)
                                         .blinking(duration: 3.0)
-                                        .alert("We sent notification to your friend(s) either asking for CareHearts \n\nor letting them know you're having a good day today.", isPresented: $showingAlert) {
+                                        .alert("We sent notification to your friend(s) either asking for CareHearts \n\nor letting them know you're having a great day.", isPresented: $showingAlert) {
                                             Button("OK", role: .cancel) { }
                                             
                                         }
