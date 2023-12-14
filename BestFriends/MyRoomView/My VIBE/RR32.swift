@@ -71,11 +71,11 @@ struct RR32: View {
                     VStack {
                         
                       Text("Difficult Day")
-                            .font(.system(size: 40))
-                            .fontWeight(.bold)
+                            .font(.system(size: 30))
+                            .fontWeight(.regular)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey2)
-                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                            .foregroundColor(ColorManager .grey1)
+//                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                             .opacity(0.4)
                      
                     }
@@ -158,7 +158,13 @@ struct RR32: View {
                         .frame(height: 15)
                     
                     VStack {
-                        Text("But, maybe not ready to talk about it yet")
+                        Text("But, maybe you're not ready to talk")
+                            .font(.system(size: 17))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+                        Text("about it yet with anyone.")
                             .font(.system(size: 17))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -230,7 +236,7 @@ struct RR32: View {
                         
                         
                         
-                        HStack {
+        HStack {
                         
                             ZStack {
                                 
@@ -286,21 +292,46 @@ struct RR32: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                    
                             }
+            
+            Text("my Vibe")
+                .font(.system(size: 60))
+                .fontWeight(.bold)
+                .multilineTextAlignment(.center)
+                .foregroundColor(ColorManager .grey2)
+                .rotationEffect(.degrees(-20))
+                .blinking(duration: 3.0)
+                .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                .opacity(0.25)
+            
+            
+            
+            
+            
                         }
                         
     //               ************************************************
                     //               ************************************************
+                  
+                    
+                    
+              
+                    
+                    VStack {
                         
-                        
-                        Text("My Good Day")
-                            .font(.system(size: 40))
-                            .fontWeight(.bold)
+                        Text("GREAT Day!")
+                            .font(.system(size: 30))
+                            .fontWeight(.regular)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey2)
-                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                            .foregroundColor(ColorManager .grey1)
+//                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                             .opacity(0.4)
                         
+                       
                         
+                        
+                        
+                        
+                    }
                         //                ************************************************
                         
                     HStack {
@@ -549,7 +580,7 @@ struct RR32: View {
                                         .glow(color: Color.purple, radius: 2)
                                         .opacity(0.6)
                                         .blinking(duration: 3.0)
-                                        .alert("We sent notification to your friend(s) either asking for CareHearts \n\nor letting them know you're having a great day.", isPresented: $showingAlert) {
+                                        .alert("We just let your friends know your Vibe changed", isPresented: $showingAlert) {
                                             Button("OK", role: .cancel) { }
                                             
                                         }
@@ -600,7 +631,7 @@ struct RR32: View {
             for id in selectedFriends {
                 for f in friends {
                     if f.id == id {
-                        RestApi.instance.sendPushNotification(title: "BestFriends", body: " \(user.firstName) is either requesting CareHearts or smiling today", APNToken: f.APNToken)
+                        RestApi.instance.sendPushNotification(title: "BestFriends", body: " \(user.firstName) just changed their Vibe. Tap to see what's up.", APNToken: f.APNToken)
                         
                         //MARK: The code below creates an in-app notification for your friend (f.id)
                         //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
