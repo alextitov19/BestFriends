@@ -67,51 +67,19 @@ struct RR32: View {
             
             
             VStack {
-                
-                
-                
-                
-                //        ***********************
-                ZStack {
-                    
-                    
+             
                     VStack {
                         
-                        //            ZStack {
-                        
-                        //                HStack {
-                        Text("real-time if turn \nNotifications ON")
-                            .font(.system(size: 25))
-                            .fontWeight(.medium)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey1)
-                            .rotationEffect(.degrees(-20))
-                            .blinking(duration: 3.0)
-                        
-                        
-                        
-                            .opacity(0.8)
-                        
-                        
-                        
-                        Text("Difficult Day")
+                      Text("Difficult Day")
                             .font(.system(size: 40))
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager .grey2)
-                        //                .rotationEffect(.degrees(-20))
-                        //                                .blinking(duration: 3.0)
                             .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                             .opacity(0.4)
-                        
-                        
-                        
-                        //                }
-                        
-                        
-                        //            }
+                     
                     }
-                }
+               
                 
                 
                 
@@ -581,7 +549,7 @@ struct RR32: View {
                                         .glow(color: Color.purple, radius: 2)
                                         .opacity(0.6)
                                         .blinking(duration: 3.0)
-                                        .alert("We sent notification to your friend(s) either asking for CareHearts \n\nwondering what they are doing", isPresented: $showingAlert) {
+                                        .alert("We sent notification to your friend(s) either asking for CareHearts \n\nor letting them know you're having a good day today.", isPresented: $showingAlert) {
                                             Button("OK", role: .cancel) { }
                                             
                                         }
@@ -632,7 +600,7 @@ struct RR32: View {
             for id in selectedFriends {
                 for f in friends {
                     if f.id == id {
-                        RestApi.instance.sendPushNotification(title: "BestFriends", body: " \(user.firstName) is either requesting CareHearts or wondering what your doing", APNToken: f.APNToken)
+                        RestApi.instance.sendPushNotification(title: "BestFriends", body: " \(user.firstName) is either requesting CareHearts or smiling today", APNToken: f.APNToken)
                         
                         //MARK: The code below creates an in-app notification for your friend (f.id)
                         //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
