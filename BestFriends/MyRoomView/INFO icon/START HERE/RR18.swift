@@ -107,7 +107,7 @@ struct RR18: View {
                             .opacity(0.7)
                         
                         
-                        Text("w/ your 5 most lasting friends")
+                        Text("w/ your 5 most endearing friends")
                             .font(.system(size: 24))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)

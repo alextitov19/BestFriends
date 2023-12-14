@@ -153,7 +153,7 @@ VStack {
                     Image("comicBubble")
                         .resizable()
                         .foregroundColor(Color.purple)
-                        .frame(width: 240, height: 120)
+                        .frame(width: 285, height: 120)
                         .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                         .opacity(0.95)
                     //                            .blinking(duration: 3.0)
@@ -161,18 +161,17 @@ VStack {
                     VStack {
                         
                         
-                        Text("yes, yes, yes")
-                            .font(.system(size: 17))
-                            .italic()
+                        Text("Yep")
+                            .font(.system(size: 22))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
                         
-                        Text("I'm EXCITED!")
+                        Text("Good day today!")
                             .font(.system(size: 20))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(ColorManager .purple3)
                         
                         Spacer ()
                             .frame(height: 12)
@@ -186,7 +185,7 @@ VStack {
     //               ************************************************
         
             
-            Text("_________ request from friends _________")
+            Text("_________ a little help from friends _________")
                 .font(.system(size: 15))
                 .fontWeight(.light)
                 .multilineTextAlignment(.center)
@@ -231,11 +230,16 @@ VStack {
                     
                     ZStack {
                         
+                        
+                        
+                    
+                        
+                        
                         //                    Image(systemName: "cube.fill")
                         Image("comicBubble")
                             .resizable()
                             .foregroundColor(Color.cyan)
-                            .frame(width: 340, height: 140)
+                            .frame(width: 340, height: 170)
                             .shadow(color: Color.cyan, radius: 3, x: 3, y: 3)
                             .opacity(0.95)
 //                            .blinking(duration: 5.0)
@@ -251,22 +255,18 @@ VStack {
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.white)
-//
-//                                Text("can I get some")
-//                                    .font(.system(size: 14))
-//                                    .italic()
-//                                    .fontWeight(.light)
-//                                    .multilineTextAlignment(.center)
-//                                    .foregroundColor(Color.white)
+
+                    
+                        Text("please send me")
+                            .font(.system(size: 15))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
                              
                     
                     HStack {
                     
-                        Text("send me")
-                            .font(.system(size: 15))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
                         
                                 Text("CareHearts")
                                     .font(.system(size: 20))
@@ -308,110 +308,101 @@ VStack {
 //               ************************************************
             //                ************************************************
             
-        HStack {
-            Spacer ()
-                .frame(width: 30)
-
-            ZStack {
-
-                Image(systemName: "circle")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 75, height: 75)
-                    .foregroundColor(Color .orange)
-                    .glow(color: Color.orange, radius: 10)
-                    .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
-
-
-                Button(action: {
-                    mood = 6
-                    //                    showingAlert = true
-                }) {
-                    Text("Orange \natmosphere \n(TAP)")
-                        .font(.system(size: 12))
-                        .foregroundColor(Color.black)
-                }
-                .frame(width: 70, height: 70, alignment: .center)
-                .background(mood == 6 ? Color.orange : ColorManager .grey1)
-                .cornerRadius(40)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-            }
-        
-//***************************************
-
-       
-
-//                ********************************************
-
-
-                ZStack {
-
-                    //                    Image(systemName: "cube.fill")
-                    Image("comicBubble")
-                        .resizable()
-                        .foregroundColor(Color.cyan)
-                        .frame(width: 340, height: 140)
-                        .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
-                        .opacity(0.95)
-//                            .blinking(duration: 5.0)
-
-                    VStack {
-
-
-
-                        Text("What are you doing?")
-                            .font(.system(size: 20))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                        
-                        
-                        HStack {
-                        
-                            Text("send me")
-                                .font(.system(size: 15))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                            
-                                    Text("PhotoPOPs")
-                                        .font(.system(size: 20))
-                                        .fontWeight(.light)
-                                        .multilineTextAlignment(.center)
-                                        .foregroundColor(Color.orange)
-                                    
-    //                                Spacer ()
-    //                                    .frame(width: 12)
-    //
-    //
-                            ZStack {
-                                      
-                                Image(systemName: "circle.fill")
-                               
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 30, height: 30)
-                                            .foregroundColor(Color.orange)
-                                            .opacity(0.95)
-                                        
-
-                                Image("IconPhotoNew")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 25, height: 25)
-                                            .foregroundColor(Color.purple)
-                                            .glow(color: Color.white, radius: 0.3)
-                                            .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                            .opacity(0.95)
-                                    }
-                                }
-               
-                        Spacer ()
-                            .frame(height: 12)
-                        
-                    }
-                }
-            }
+//        HStack {
+//            Spacer ()
+//                .frame(width: 30)
+//
+//            ZStack {
+//
+//                Image(systemName: "circle")
+//                    .resizable()
+//                    .scaledToFit()
+//                    .frame(width: 75, height: 75)
+//                    .foregroundColor(Color .orange)
+//                    .glow(color: Color.orange, radius: 10)
+//                    .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
+//
+//
+//                Button(action: {
+//                    mood = 6
+//                    //                    showingAlert = true
+//                }) {
+//                    Text("Orange \natmosphere \n(TAP)")
+//                        .font(.system(size: 12))
+//                        .foregroundColor(Color.black)
+//                }
+//                .frame(width: 70, height: 70, alignment: .center)
+//                .background(mood == 6 ? Color.orange : ColorManager .grey1)
+//                .cornerRadius(40)
+//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//            }
+//
+////***************************************
+//
+//
+//
+////                ********************************************
+//
+//
+//                ZStack {
+//
+//                    //                    Image(systemName: "cube.fill")
+//                    Image("comicBubble")
+//                        .resizable()
+//                        .foregroundColor(Color.cyan)
+//                        .frame(width: 340, height: 140)
+//                        .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
+//                        .opacity(0.95)
+////                            .blinking(duration: 5.0)
+//
+//                    VStack {
+//
+//                        Text("I'm working on my")
+//                            .font(.system(size: 17))
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(Color.white)
+//
+//                        HStack {
+//
+//                                    Text("Hopes n' Dreams")
+//                                        .font(.system(size: 20))
+//                                        .fontWeight(.light)
+//                                        .multilineTextAlignment(.center)
+//                                        .foregroundColor(Color.orange)
+//
+//    //                                Spacer ()
+//    //                                    .frame(width: 12)
+//    //
+//    //
+//                            ZStack {
+//
+//                                Image(systemName: "circle.fill")
+//
+//                                            .resizable()
+//                                            .scaledToFit()
+//                                            .frame(width: 30, height: 30)
+//                                            .foregroundColor(Color.orange)
+//                                            .opacity(0.95)
+//
+//
+//                                Image("IconPhotoNew")
+//                                            .resizable()
+//                                            .scaledToFit()
+//                                            .frame(width: 25, height: 25)
+//                                            .foregroundColor(Color.purple)
+//                                            .glow(color: Color.white, radius: 0.3)
+//                                            .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+//                                            .opacity(0.95)
+//                                    }
+//                                }
+//
+//                        Spacer ()
+//                            .frame(height: 12)
+//
+//                    }
+//                }
+//            }
             
 
       
@@ -539,11 +530,9 @@ VStack {
                                         .glow(color: Color.purple, radius: 2)
                                         .opacity(0.6)
                                         .blinking(duration: 3.0)
-                                        .alert("Your real-time friends are here. \n\nYour planet atmosphere is updated matching your vibe. \n\nWe notified your friend(s). \n\nYou should hear from them soon!", isPresented: $showingAlert) {
+                                        .alert("We notified your friend(s) that you're NOT having a great day, but just not ready to talk about it. \n\nMost importantly, you would love some emotional support from them\n\n \n\nYou should hear from them soon", isPresented: $showingAlert) {
                                             Button("OK", role: .cancel) { }
-                                            
-                                        
-                                            
+                                           
                                         }
                                     
                                 })
@@ -592,7 +581,7 @@ VStack {
             for id in selectedFriends {
                 for f in friends {
                     if f.id == id {
-                        RestApi.instance.sendPushNotification(title: "BestFriends", body: " \(user.firstName) changed their vibe. Could you check on them. Your true friendship is priceless.", APNToken: f.APNToken)
+                        RestApi.instance.sendPushNotification(title: "BestFriends", body: " \(user.firstName) is having a difficult day. Could you be a great friend and send them a CareHeart", APNToken: f.APNToken)
                         
                         //MARK: The code below creates an in-app notification for your friend (f.id)
                         //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
