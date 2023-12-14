@@ -70,7 +70,7 @@ struct RR32: View {
              
                     VStack {
                         
-                      Text("Difficult Day")
+                      Text("Difficult Day?")
                             .font(.system(size: 30))
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
@@ -173,7 +173,7 @@ struct RR32: View {
                         Spacer()
                             .frame(height: 7)
                         
-                        Text("However, would love some emotional support")
+                        Text("However, you would love some emotional support")
                             .font(.system(size: 15))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
