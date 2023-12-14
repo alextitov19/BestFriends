@@ -90,17 +90,9 @@ VStack {
                     //                        .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                         .opacity(0.8)
                     
-                    Text("Difficult Day")
-                        .font(.system(size: 40))
-                        .fontWeight(.bold)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .grey2)
-                    //                .rotationEffect(.degrees(-20))
-                    //                                .blinking(duration: 3.0)
-                        .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                        .opacity(0.4)
+                   
                     
-                    Text("Friend's Support")
+                    Text("Difficult Day")
                         .font(.system(size: 40))
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
@@ -198,13 +190,13 @@ VStack {
     //               ************************************************
         
             
-            Text("Having a difficult day?")
-                .font(.system(size: 15))
-                .fontWeight(.light)
-                .multilineTextAlignment(.center)
-                .foregroundColor(Color.white)
+//            Text("Having a difficult day?")
+//                .font(.system(size: 15))
+//                .fontWeight(.light)
+//                .multilineTextAlignment(.center)
+//                .foregroundColor(Color.white)
             
-            Text("But, maybe just not ready to talk about it yet")
+            Text("*** But, maybe just not ready to talk about it yet")
                 .font(.system(size: 15))
                 .fontWeight(.light)
                 .multilineTextAlignment(.center)
@@ -220,7 +212,7 @@ VStack {
                 .foregroundColor(Color.white)
             
             
-            Text("giving you emotional support")
+            Text("providing emotional support")
                 .font(.system(size: 15))
                 .fontWeight(.light)
                 .multilineTextAlignment(.center)
@@ -247,15 +239,17 @@ VStack {
                     
                     Button(action: {
                         mood = 1
-                                            showingAlert = true
+//                                            showingAlert = true
                     }) {
                         
                         VStack {
-                            Text("Cyan \natmosphere")
-                                .font(.system(size: 12))
-                                .foregroundColor(Color.black)
+                            Text("BAD DAY")
+                                .font(.system(size: 17))
+                                .fontWeight(.bold)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.cyan)
                             
-                            Text("TAP here")
+                            Text("Tap here")
                                 .font(.system(size: 15.5))
                                 .foregroundColor(Color.black)
                         }
@@ -267,7 +261,7 @@ VStack {
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 //                    .alert("We notified your friend(s) that you're NOT having a great day, but just not ready to talk about it. \n\nMost importantly, you would love some emotional support from them\n\n \n\nYou should hear from them soon", isPresented: $showingAlert) {
 //                        Button("OK", role: .cancel) { }
-                        
+//
 //                    }
                 }
             
@@ -298,14 +292,14 @@ VStack {
                          
                                 
                 VStack {
-                                Text("Bad DAY!")
-                                    .font(.system(size: 20))
+                                Text("Your planet's ")
+                                    .font(.system(size: 15))
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.white)
 
                     
-                        Text("please send me")
+                        Text("atmosphere changes to cyan")
                             .font(.system(size: 15))
                             .italic()
                             .fontWeight(.light)
@@ -354,6 +348,20 @@ VStack {
                 }
 
 //               ************************************************
+            
+            
+            
+            Text("What'up with you")
+                .font(.system(size: 40))
+                .fontWeight(.bold)
+                .multilineTextAlignment(.center)
+                .foregroundColor(ColorManager .grey2)
+            //                .rotationEffect(.degrees(-20))
+            //                                .blinking(duration: 3.0)
+                .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                .opacity(0.4)
+            
+            
             //                ************************************************
             
         HStack {
@@ -405,7 +413,14 @@ VStack {
 
                     VStack {
 
-                        Text("I'm working on my")
+                        Text("Wondering what friends are up too,")
+                            .font(.system(size: 17))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                        
+                        
+                        Text("and don't want to text")
                             .font(.system(size: 17))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -413,7 +428,7 @@ VStack {
 
                         HStack {
 
-                                    Text("Hopes n' Dreams")
+                                    Text("request a PhotoPOP")
                                         .font(.system(size: 20))
                                         .fontWeight(.light)
                                         .multilineTextAlignment(.center)
@@ -578,10 +593,10 @@ VStack {
                                         .glow(color: Color.purple, radius: 2)
                                         .opacity(0.6)
                                         .blinking(duration: 3.0)
-//                                        .alert("your friends have been notified", isPresented: $showingAlert) {
-//                                            Button("OK", role: .cancel) { }
-                                           
-//                                        }
+                                        .alert("We sent notification to your friend(s) either asking for CareHearts \n\nwondering what they are doing", isPresented: $showingAlert) {
+                                            Button("OK", role: .cancel) { }
+                                    
+                                                        }
                                     
                                 })
 //                                    .confettiCannon(counter: $counter)
@@ -629,7 +644,7 @@ VStack {
             for id in selectedFriends {
                 for f in friends {
                     if f.id == id {
-                        RestApi.instance.sendPushNotification(title: "BestFriends", body: " \(user.firstName) is having a difficult day. Could you be a great friend and send them a CareHeart", APNToken: f.APNToken)
+                        RestApi.instance.sendPushNotification(title: "BestFriends", body: " \(user.firstName) is either requesting CareHearts or wondering what your doing", APNToken: f.APNToken)
                         
                         //MARK: The code below creates an in-app notification for your friend (f.id)
                         //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
