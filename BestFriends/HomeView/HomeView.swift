@@ -496,7 +496,7 @@ struct HomeView: View {
         case 5:
             return Color(.orange)
         case 6:
-            return Color(.systemOrange)
+            return Color(.systemPurple)
         case 7:
             return Color(.systemGreen)
         case 8:

@@ -13,7 +13,7 @@ struct ChangeChatBackgroundView: View {
     
     let user: User
     
-    @State private var selectedBackground = 0
+    @State private var selectedBackground = 10
     
     var body: some View {
         ZStack {
@@ -94,9 +94,9 @@ struct ChangeChatBackgroundView: View {
     
     private func loadData() {
         if user.chatBackground == "" {
-            selectedBackground = 0
+            selectedBackground = 10
         } else {
-            selectedBackground = Int(user.chatBackground) ?? 0
+            selectedBackground = Int(user.chatBackground) ?? 10
         }
     }
     

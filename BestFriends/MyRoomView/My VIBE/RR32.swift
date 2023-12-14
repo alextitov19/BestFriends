@@ -263,9 +263,7 @@ struct RR32: View {
                         
                         
                         HStack {
-                            Spacer ()
-                                .frame(width: 30)
-                            
+                        
                             ZStack {
                                 
                                 Image(systemName: "circle")
@@ -283,9 +281,6 @@ struct RR32: View {
                                 }) {
                                     
                                     VStack {
-                                        
-                                        
-                                        
                                         Text("TAP")
                                             .font(.system(size: 30))
                                             .fontWeight(.light)
@@ -321,130 +316,70 @@ struct RR32: View {
                                 .background(mood == 1 ? Color.cyan : ColorManager .grey4)
                                 .cornerRadius(100)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                //                    .alert("We notified your friend(s) that you're NOT having a great day, but just not ready to talk about it. \n\nMost importantly, you would love some emotional support from them\n\n \n\nYou should hear from them soon", isPresented: $showingAlert) {
-                                //                        Button("OK", role: .cancel) { }
-                                //
-                                //                    }
+                   
                             }
-                            
-                            //***************************************
-                            
-                            //                ********************************************
-                            
-//
-//                            ZStack {
-//
-//                                Image("comicBubble")
-//                                    .resizable()
-//                                    .foregroundColor(Color.cyan)
-//                                    .frame(width: 340, height: 170)
-//                                    .shadow(color: Color.cyan, radius: 3, x: 3, y: 3)
-//                                    .opacity(0.95)
-//
-//                                Button(action: {
-//                                    mood = 1
-//                                    //                                            showingAlert = true
-//                                }) {
-//
-//                                    VStack {
-//                                        Text("Your planet's ")
-//                                            .font(.system(size: 15))
-//                                            .fontWeight(.light)
-//                                            .multilineTextAlignment(.center)
-//                                            .foregroundColor(Color.white)
-//
-//
-//                                        Text("atmosphere changes to cyan")
-//                                            .font(.system(size: 15))
-//                                            .italic()
-//                                            .fontWeight(.light)
-//                                            .multilineTextAlignment(.center)
-//                                            .foregroundColor(Color.white)
-//
-//
-//                                        HStack {
-//
-//
-//                                            Text("CareHearts")
-//                                                .font(.system(size: 20))
-//                                                .fontWeight(.light)
-//                                                .multilineTextAlignment(.center)
-//                                                .foregroundColor(Color.cyan)
-//
-//
-//                                            ZStack {
-//                                                Image(systemName: "circle.fill")
-//                                                    .resizable()
-//                                                    .scaledToFit()
-//                                                    .frame(width: 30, height: 30)
-//                                                    .foregroundColor(Color.cyan)
-//                                                    .opacity(0.95)
-//
-//
-//                                                Image(systemName: "heart.fill")
-//                                                    .resizable()
-//                                                    .scaledToFit()
-//                                                    .frame(width: 17, height: 17)
-//                                                    .foregroundColor(Color.purple)
-//                                                    .glow(color: Color.white, radius: 0.3)
-//                                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-//                                                    .opacity(0.95)
-//                                            }
-//                                        }
-//                                    }
-//
-//                                    Spacer ()
-//                                        .frame(height: 10)
-//
-//                                }
-//                            }
-                       }
+                        }
                         
-                        //               ************************************************
+    //               ************************************************
+                    //               ************************************************
                         
                         
-                        
-                        Text("What'up with you")
+                        Text("My Good Day")
                             .font(.system(size: 40))
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager .grey2)
-                        //                .rotationEffect(.degrees(-20))
-                        //                                .blinking(duration: 3.0)
                             .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                             .opacity(0.4)
                         
                         
                         //                ************************************************
                         
-                        HStack {
-                            Spacer ()
-                                .frame(width: 30)
+                    HStack {
+
+                        ZStack {
+                            Image(systemName: "circle")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 150, height: 150)
+                                .foregroundColor(Color .purple)
+                                .glow(color: Color.purple, radius: 10)
+                                .shadow(color: Color.purple, radius: 3, x: 3, y: 3)
                             
-                            ZStack {
-                                
-                                Image(systemName: "circle")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 75, height: 75)
-                                    .foregroundColor(Color .orange)
-                                    .glow(color: Color.orange, radius: 10)
-                                    .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
-                                
-                                
-                                Button(action: {
-                                    mood = 6
-                                    //                    showingAlert = true
-                                }) {
-                                    Text("Orange \natmosphere \n(TAP)")
-                                        .font(.system(size: 12))
-                                        .foregroundColor(Color.black)
+                            
+                            Button(action: {
+                                mood = 6
+                                //                    showingAlert = true
+                            }) {
+
+                                VStack {
+                                    Text("TAP")
+                                        .font(.system(size: 30))
+                                        .fontWeight(.light)
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(Color.purple)
+                                    
+                             
+                                    
+                                    Text("just letting ")
+                                        .font(.system(size: 9))
+                                        .fontWeight(.bold)
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(Color.purple)
+                                    
+                                    Text("friends know")
+                                        .font(.system(size: 9))
+                                        .fontWeight(.bold)
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(Color.purple)
                                 }
-                                .frame(width: 70, height: 70, alignment: .center)
-                                .background(mood == 6 ? Color.orange : ColorManager .grey1)
-                                .cornerRadius(40)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             }
+                            .frame(width: 100, height: 100, alignment: .center)
+                            .background(mood == 6 ? Color.purple : ColorManager .grey4)
+                            .cornerRadius(100)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        }
+                    }
                             
                             //***************************************
                             
@@ -453,72 +388,72 @@ struct RR32: View {
                             //                ********************************************
                             
                             
-                            ZStack {
-                                
-                                //                    Image(systemName: "cube.fill")
-                                Image("comicBubble")
-                                    .resizable()
-                                    .foregroundColor(Color.cyan)
-                                    .frame(width: 340, height: 140)
-                                    .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
-                                    .opacity(0.95)
-                                //                            .blinking(duration: 5.0)
-                                
-                                VStack {
-                                    
-                                    Text("Wondering what friends are up too,")
-                                        .font(.system(size: 17))
-                                        .fontWeight(.light)
-                                        .multilineTextAlignment(.center)
-                                        .foregroundColor(Color.white)
-                                    
-                                    
-                                    Text("and don't want to text")
-                                        .font(.system(size: 17))
-                                        .fontWeight(.light)
-                                        .multilineTextAlignment(.center)
-                                        .foregroundColor(Color.white)
-                                    
-                                    HStack {
-                                        
-                                        Text("request a PhotoPOP")
-                                            .font(.system(size: 20))
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
-                                            .foregroundColor(Color.orange)
-                                        
-                                        //                                Spacer ()
-                                        //                                    .frame(width: 12)
-                                        //
-                                        //
-                                        ZStack {
-                                            
-                                            Image(systemName: "circle.fill")
-                                            
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 30, height: 30)
-                                                .foregroundColor(Color.orange)
-                                                .opacity(0.95)
-                                            
-                                            
-                                            Image("IconPhotoNew")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 25, height: 25)
-                                                .foregroundColor(Color.purple)
-                                                .glow(color: Color.white, radius: 0.3)
-                                                .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                                .opacity(0.95)
-                                        }
-                                    }
-                                    
-                                    Spacer ()
-                                        .frame(height: 12)
-                                    
-                                }
-                            }
-                        }
+//                            ZStack {
+//
+//                                //                    Image(systemName: "cube.fill")
+//                                Image("comicBubble")
+//                                    .resizable()
+//                                    .foregroundColor(Color.cyan)
+//                                    .frame(width: 340, height: 140)
+//                                    .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
+//                                    .opacity(0.95)
+//                                //                            .blinking(duration: 5.0)
+//
+//                                VStack {
+//
+//                                    Text("Wondering what friends are up too,")
+//                                        .font(.system(size: 17))
+//                                        .fontWeight(.light)
+//                                        .multilineTextAlignment(.center)
+//                                        .foregroundColor(Color.white)
+//
+//
+//                                    Text("and don't want to text")
+//                                        .font(.system(size: 17))
+//                                        .fontWeight(.light)
+//                                        .multilineTextAlignment(.center)
+//                                        .foregroundColor(Color.white)
+//
+//                                    HStack {
+//
+//                                        Text("request a PhotoPOP")
+//                                            .font(.system(size: 20))
+//                                            .fontWeight(.light)
+//                                            .multilineTextAlignment(.center)
+//                                            .foregroundColor(Color.orange)
+//
+//                                        //                                Spacer ()
+//                                        //                                    .frame(width: 12)
+//                                        //
+//                                        //
+//                                        ZStack {
+//
+//                                            Image(systemName: "circle.fill")
+//
+//                                                .resizable()
+//                                                .scaledToFit()
+//                                                .frame(width: 30, height: 30)
+//                                                .foregroundColor(Color.orange)
+//                                                .opacity(0.95)
+//
+//
+//                                            Image("IconPhotoNew")
+//                                                .resizable()
+//                                                .scaledToFit()
+//                                                .frame(width: 25, height: 25)
+//                                                .foregroundColor(Color.purple)
+//                                                .glow(color: Color.white, radius: 0.3)
+//                                                .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+//                                                .opacity(0.95)
+//                                        }
+//                                    }
+//
+//                                    Spacer ()
+//                                        .frame(height: 12)
+//
+//                                }
+//                            }
+//                        }
                         
                         
                         
