@@ -183,7 +183,7 @@ struct HomeView: View {
                                             .frame(width: 35, height: 35)
                                             .foregroundColor(Color.cyan)
                                             .opacity(0.95)
-                                  
+                                        
                                         
                                         Image(systemName: "heart.fill")
                                             .resizable()
@@ -198,10 +198,10 @@ struct HomeView: View {
                             
                             Spacer()
                                 .frame(width: 20)
-               
                             
-            
-            
+                            
+                            
+                            
                             NavigationLink(
                                 destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                 label: {
@@ -213,10 +213,10 @@ struct HomeView: View {
                                             .frame(width: 55, height: 55)
                                             .foregroundColor(ColorManager .purple4)
                                             .glow(color: ColorManager .grey1, radius: 3)
-//                                            .blinking(duration: 2.0)
+                                        //                                            .blinking(duration: 2.0)
                                             .opacity(0.8)
                                         
-
+                                        
                                     }
                                 })
                             
@@ -236,7 +236,7 @@ struct HomeView: View {
                                                 .frame(width: 35, height: 35)
                                                 .foregroundColor(ColorManager .purple3)
                                                 .opacity(0.95)
-
+                                            
                                             Image(systemName: "heart.fill")
                                                 .resizable()
                                                 .scaledToFit()
@@ -246,12 +246,33 @@ struct HomeView: View {
                                                 .shadow(color: .white, radius: 1, x: 3, y: -0.5)
                                                 .opacity(0.95)
                                             
-
+                                            
                                         }
                                     })
-                          
                             }
                         }
+                                
+                                VStack {
+                                    NavigationLink(
+                                        destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                                        label: {
+                                            
+                                            ZStack {
+                                                Image("iconDreams")
+                                                    .resizable()
+                                                    .scaledToFit()
+                                                    .frame(width: 55, height: 55)
+                                                    .foregroundColor(ColorManager .purple4)
+                                                    .glow(color: ColorManager .grey1, radius: 3)
+                                                //                                            .blinking(duration: 2.0)
+                                                    .opacity(0.8)
+                                                
+                                                
+                                            }
+                                        })
+                                }
+//                            }
+//                        }
                         
                  
 //    ****************************************
