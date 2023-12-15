@@ -5,21 +5,6 @@
 //  Created by Zhengxu Wang on 10/29/23.
 //
 
-//import SwiftUI
-//
-//struct RR50: View {
-//    var body: some View {
-//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-//    }
-//}
-//
-//struct RR50_Previews: PreviewProvider {
-//    static var previews: some View {
-//        RR50()
-//    }
-//}
-//
-
 
 import Foundation
 import SwiftUI
@@ -128,6 +113,25 @@ struct RR50: View {
                                 .foregroundColor(.white)
                                 .glow(color: ColorManager.purple4, radius: 3)
                                 .opacity(0.15)
+                            
+                            
+                            Text("Upon entering Chat a Push Notification")
+                                .fontWeight(.light)
+                                .font(.system(size: 20))
+                                .italic()
+                                .foregroundColor(.white)
+                                .glow(color: ColorManager.purple4, radius: 3)
+                                .opacity(0.15)
+                            
+                            Text("is sent to your friends")
+                                .fontWeight(.light)
+                                .font(.system(size: 20))
+                                .italic()
+                                .foregroundColor(.white)
+                                .glow(color: ColorManager.purple4, radius: 3)
+                                .opacity(0.15)
+                            
+                            
                        
                             Spacer()
                                 .frame(height: 50)
