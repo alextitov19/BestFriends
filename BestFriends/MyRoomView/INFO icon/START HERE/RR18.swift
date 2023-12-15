@@ -165,7 +165,7 @@ struct RR18: View {
                                     destination:  RR58(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                     label: {
                                         VStack {
-                                            Text("What's Inside? ->>>")
+                                            Text("See Inside ->>>")
                                                 .fontWeight(.light)
                                                 .frame(width: 275, height: 40)
                                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
