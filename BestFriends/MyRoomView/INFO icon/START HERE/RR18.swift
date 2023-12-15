@@ -165,9 +165,9 @@ struct RR18: View {
                                     destination:  RR58(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                     label: {
                                         VStack {
-                                            Text("Why uniquenly different?  ->>>")
+                                            Text("What's Inside? ->>>")
                                                 .fontWeight(.light)
-                                                .frame(width: 350, height: 40)
+                                                .frame(width: 275, height: 40)
                                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                 .font(.system(size: 25))
                                                 .background(Color.cyan)

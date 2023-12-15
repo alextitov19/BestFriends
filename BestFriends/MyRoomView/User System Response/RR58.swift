@@ -4,20 +4,6 @@
 //
 //  Created by Zhengxu Wang on 10/29/23.
 //
-//
-//import SwiftUI
-//
-//struct RR58: View {
-//    var body: some View {
-//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-//    }
-//}
-//
-//struct RR58_Previews: PreviewProvider {
-//    static var previews: some View {
-//        RR58()
-//    }
-//}
 
 
 
@@ -133,7 +119,9 @@ struct RR58: View {
                                         
                                     }
                                    
-    
+                            Spacer ()
+                                        .frame(width: 20)
+                                    
                                     Text("CareHearts")
                                         .fontWeight(.light)
                                         .frame(width: 180, height: 40)
@@ -148,6 +136,9 @@ struct RR58: View {
                                 }
                             })
                         
+        Spacer ()
+            .frame(width: 20)
+        
                         ZStack {
                             
                             Image(systemName: "circle.fill")
@@ -183,7 +174,16 @@ struct RR58: View {
                     
                     
                     Spacer ()
-                        .frame(width: 200)
+                        .frame(width: 40)
+                    
+                    Text("sharing emotions")
+                        .fontWeight(.thin)
+                        .italic()
+                        .foregroundColor(Color.white)
+                    
+                    
+                    Spacer ()
+                        .frame(width: 50)
                     
                     Text("accept")
                         .fontWeight(.thin)

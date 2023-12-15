@@ -251,26 +251,26 @@ struct HomeView: View {
                                     })
                             }
                         }
-                                
-                                VStack {
-                                    NavigationLink(
-                                        destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                                        label: {
-                                            
-                                            ZStack {
-                                                Image("iconDreams")
-                                                    .resizable()
-                                                    .scaledToFit()
-                                                    .frame(width: 55, height: 55)
-                                                    .foregroundColor(ColorManager .purple4)
-                                                    .glow(color: ColorManager .grey1, radius: 3)
-                                                //                                            .blinking(duration: 2.0)
-                                                    .opacity(0.8)
-                                                
-                                                
-                                            }
-                                        })
-                                }
+//
+//                                VStack {
+//                                    NavigationLink(
+//                                        destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+//                                        label: {
+//
+//                                            ZStack {
+//                                                Image("iconDreams")
+//                                                    .resizable()
+//                                                    .scaledToFit()
+//                                                    .frame(width: 55, height: 55)
+//                                                    .foregroundColor(ColorManager .purple4)
+//                                                    .glow(color: ColorManager .grey1, radius: 3)
+//                                                //                                            .blinking(duration: 2.0)
+//                                                    .opacity(0.8)
+//
+//
+//                                            }
+//                                        })
+//                                }
 //                            }
 //                        }
                         
