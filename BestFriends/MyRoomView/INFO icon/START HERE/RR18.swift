@@ -153,7 +153,7 @@ struct RR18: View {
                             ZStack {
                                 
                                 NavigationLink(
-                                    destination:  RR4(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                    destination:  RR36Info(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                     label: {
                                         VStack {
                                             Text("See Inside ->>>")

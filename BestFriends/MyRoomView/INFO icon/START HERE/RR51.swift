@@ -38,65 +38,22 @@ struct RR51: View {
         
         ZStack {
             
-            Color.black
-                .opacity(0.9)
-                .ignoresSafeArea()
+            //            Color.black
+            //                .opacity(0.9)
+            //                .ignoresSafeArea()
+            //
+            //            AdPlayerView(name: "sky2")
+            //                .ignoresSafeArea()
+            //                .blendMode(.screen)
             
-            AdPlayerView(name: "sky2")
+            Image("BuiltByTeens 1")
+                .resizable()
                 .ignoresSafeArea()
-                .blendMode(.screen)
+                .onAppear()
+            
             
             
             VStack {
-                
-                ZStack {
-//                    Image("comicBubble")
-//                        .resizable()
-//                        .foregroundColor(Color.purple)
-//                        .frame(width: 430, height: 200)
-//                        .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
-//                        .rotationEffect(.degrees(-10))
-//                        .opacity(0.95)
-//                        .blinking(duration: 2.0).blinking(duration: 3.0)
-//
-//
-//                    VStack {
-//
-//                        VStack {
-//
-//
-//
-//                            Text("It's about showing \nyour friends you care")
-//                                .font(.system(size: 25))
-//                                .fontWeight(.regular)
-//                                .multilineTextAlignment(.center)
-//                                .foregroundColor(Color.cyan)
-//                                .rotationEffect(.degrees(-10))
-//                                .blinking(duration: 2.0)
-                            
-                            
-                            //                            Text("No feelings of...")
-                            //                                .font(.system(size: 15))
-                            //                                .italic()
-                            //                                .fontWeight(.light)
-                            //                                .multilineTextAlignment(.leading)
-                            //                                .rotationEffect(.degrees(-10))
-                            //                                .foregroundColor(Color.white)
-                            //                                .blinking(duration: 2.0)
-                            
-                            
-//                            Text("We got you convered")
-//                                .font(.system(size: 20))
-//                                .fontWeight(.light)
-//                                .multilineTextAlignment(.leading)
-//                                .rotationEffect(.degrees(-10))
-//                                .foregroundColor(Color.white)
-//                                .blinking(duration: 2.0)
-//
-//
-//                        }
-//                    }
-                }
                 
                 ZStack {
                     
@@ -106,21 +63,11 @@ struct RR51: View {
                         .foregroundColor(Color.purple)
                         .frame(width: 450, height: 450)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.3)
+                        .opacity(0.85)
                     
                     VStack {
                         
-                        Text("to let the outside of you")
-                            .font(.system(size: 35))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .opacity(0.5)
-                        
-                        Spacer()
-                            .frame(height: 10)
-                        
-                        Text("match")
+                        Text("Designed by over 150 \nteens worldwide \nso you can let")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(Color.white)
@@ -129,14 +76,35 @@ struct RR51: View {
                             .opacity(0.7)
                         
                         Spacer()
-                            .frame(height: 10)
+                            .frame(height: 20)
+                        
+                        Text("the outside of you")
+                            .font(.system(size: 35))
+                            .foregroundColor(Color.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .opacity(0.9)
+                        
+                        Spacer()
+                            .frame(height: 7)
+                        
+                        Text("match")
+                            .font(.system(size: 30))
+                        
+                            .foregroundColor(Color.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .opacity(0.9)
+                        
+                        Spacer()
+                            .frame(height: 7)
                         
                         Text("the inside of you")
                             .font(.system(size: 37))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .opacity(0.5)
+                            .opacity(0.9)
                         
                         Spacer()
                             .frame(height: 10)
@@ -146,53 +114,53 @@ struct RR51: View {
                         
                         
                         
-//                        VStack {
-//
-//                            Link(destination: URL(string: "https://socialtechlabs.com/our-story-2/")!) {
-//
-//                                Text("We're here to help")
-//                                    .fontWeight(.thin)
-//                                    .frame(width: 240, height: 40)
-//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                    .font(.system(size: 25))
-//                                    .background(Color.cyan)
-//                                    .cornerRadius(10)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//                            }
-//
+                        //                        VStack {
+                        //
+                        //                            Link(destination: URL(string: "https://socialtechlabs.com/our-story-2/")!) {
+                        //
+                        //                                Text("We're here to help")
+                        //                                    .fontWeight(.thin)
+                        //                                    .frame(width: 240, height: 40)
+                        //                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        //                                    .font(.system(size: 25))
+                        //                                    .background(Color.cyan)
+                        //                                    .cornerRadius(10)
+                        //                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        //
+                        //                            }
+                        //
+                        
+                        Spacer()
+                            .frame(height: 30)
+                        
+                        VStack {
                             
-                            Spacer()
-                                .frame(height: 30)
-                            
-                            VStack {
+                            Button(action: {
+                                sessionManager.showLogin()
+                            },
+                                   label: {
+                                Image("home-alt2")
+                                    .frame(width: 60, height: 30)
+                                    .foregroundColor(.black)
+                                    .font(.system(size: 20))
+                                    .background(ColorManager .grey4)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                    .opacity(0.70)
                                 
-                                Button(action: {
-                                    sessionManager.showLogin()
-                                },
-                                       label: {
-                                    Image("home-alt2")
-                                        .frame(width: 60, height: 30)
-                                        .foregroundColor(.black)
-                                        .font(.system(size: 20))
-                                        .background(ColorManager .grey3)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                        .opacity(0.70)
-                                    
-                                })
-                            }
+                            })
                         }
                     }
-                    
-                  
-                    Spacer()
-                        .frame(height: 40)
-                    
                 }
+                
+                
+                Spacer()
+                    .frame(height: 40)
+                
             }
         }
     }
+}
 
 
         
