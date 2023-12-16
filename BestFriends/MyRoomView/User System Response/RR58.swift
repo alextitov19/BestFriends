@@ -53,8 +53,6 @@ struct RR58: View {
                 
                 ZStack {
                     
-                    //    ********************************************
-                    
                     //        *********************** Rocket Guy ****************
                     
                     
@@ -68,7 +66,7 @@ struct RR58: View {
                                 Image("CoolGuy")
                                 //                                            .aspectRatio(contentMode: .fit)
                                     .frame(width: 120, height: 120)
-//                                    .blinking(duration: 7.0)
+                                //                                    .blinking(duration: 7.0)
                                 
                                 Text("First Time User (TAP)")
                                     .fontWeight(.medium)
@@ -80,19 +78,73 @@ struct RR58: View {
                                     .rotationEffect(.degrees(-38))
                                     .opacity(0.8)
                                     .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
-//                                    .blinking(duration: 7.0)
+                                //                                    .blinking(duration: 7.0)
                                 
                                 
                             }
                         })
                 }
                 
+                // *********************************** My Vibe *************
+                
+                Spacer ()
+                    .frame(height: 100)
+                
+                HStack {
+                    NavigationLink(
+                        destination:  RR32(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        label: {
+                            
+                            ZStack {
+                                Text("Daily            Vibe")
+                                    .fontWeight(.light)
+                                    .frame(width: 220, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 25))
+                                    .background(Color.cyan)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                                Image("iconVibes75")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 55, height: 55)
+                                    .foregroundColor(ColorManager .purple4)
+                                    .glow(color: ColorManager .grey1, radius: 3)
+                                //                                        .blinking(duration: 2.0)
+                                    .opacity(0.8)
+                                
+                            }
+                        }
+                    )}
+                
+                VStack {
+                    Text("your planet's atmosphere color")
+                        .fontWeight(.thin)
+                        .italic()
+                        .foregroundColor(Color.white)
+                    
+                    Text("on homepage matches your Vibe")
+                        .fontWeight(.thin)
+                        .italic()
+                        .foregroundColor(Color.white)
+                    
+                }
+                
+                
+                
+                
+                
+                
+                //  ************************************************** Carehearts **********
+                
+                
                 VStack {
                     
-                    Spacer()
-                        .frame(height: 220)
-                  
-    HStack {
+                    Spacer ()
+                        .frame(height: 30)
+                    
+                    HStack {
                         NavigationLink(
                             destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
                             label: {
@@ -118,8 +170,8 @@ struct RR58: View {
                                             .opacity(0.95)
                                         
                                     }
-                                   
-                            Spacer ()
+                                    
+                                    Spacer ()
                                         .frame(width: 20)
                                     
                                     Text("CareHearts")
@@ -136,160 +188,113 @@ struct RR58: View {
                                 }
                             })
                         
-        Spacer ()
-            .frame(width: 20)
-        
-                        ZStack {
-                            
-                            Image(systemName: "circle.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 45, height: 45)
-                                .foregroundColor(ColorManager .purple3)
-                                .opacity(0.95)
-                            
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 30, height: 30)
-                                .foregroundColor(Color.orange)
-                                .glow(color: Color.white, radius: 0.3)
-                                .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                .opacity(0.95)
-                            
-                        }
+                        Spacer ()
+                            .frame(width: 20)
+                        
+                        
+                        NavigationLink(
+                            destination:  RR59(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+                            label: {
+                           
+                                ZStack {
+                                    
+                                    Image(systemName: "circle.fill")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 45, height: 45)
+                                        .foregroundColor(ColorManager .purple3)
+                                        .opacity(0.95)
+                                    
+                                    Image(systemName: "heart.fill")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 30, height: 30)
+                                        .foregroundColor(Color.orange)
+                                        .glow(color: Color.white, radius: 0.3)
+                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                        .opacity(0.95)
+                                    
+                                }
+                            })
+                    }
+                    
+                    
+                    
+                    HStack {
+                        
+                        Text("  send")
+                            .fontWeight(.thin)
+                            .italic()
+                            .foregroundColor(Color.white)
+                        
+                        
+                        Spacer ()
+                            .frame(width: 40)
+                        
+                        Text("sharing emotions")
+                            .fontWeight(.thin)
+                            .italic()
+                            .foregroundColor(Color.white)
+                        
+                        
+                        Spacer ()
+                            .frame(width: 50)
+                        
                         
                     }
-                    
-                    
-                    
-                }
-                
-                
-                HStack {
-                    Text("  send")
-                        .fontWeight(.thin)
-                        .italic()
-                        .foregroundColor(Color.white)
-                    
-                    
-                    Spacer ()
-                        .frame(width: 40)
-                    
-                    Text("sharing emotions")
-                        .fontWeight(.thin)
-                        .italic()
-                        .foregroundColor(Color.white)
-                    
-                    
-                    Spacer ()
-                        .frame(width: 50)
-                    
-                    Text("accept")
-                        .fontWeight(.thin)
-                        .italic()
-                        .foregroundColor(Color.white)
-                    
-                    
-                }
-               
-                
-                
-//   *********************************** Vibe *********
-                
-                
-                Spacer ()
-                    .frame(height: 20)
-                
-                HStack {
-                    NavigationLink(
-                        destination:  RR32(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                        label: {
-                            
-                            ZStack {
-                                    Text("Daily            Vibe")
-                                        .fontWeight(.light)
-                                        .frame(width: 220, height: 40)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 25))
-                                        .background(Color.cyan)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    
-                                    Image("iconVibes75")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 55, height: 55)
-                                        .foregroundColor(ColorManager .purple4)
-                                        .glow(color: ColorManager .grey1, radius: 3)
-//                                        .blinking(duration: 2.0)
-                                        .opacity(0.8)
-                               
-                            }
-                        }
-                    )}
-                
-                VStack {
-                    Text("your planet's atmosphere color")
-                        .fontWeight(.thin)
-                        .italic()
-                        .foregroundColor(Color.white)
-                    
-                    Text("on homepage matches your Vibe")
-                        .fontWeight(.thin)
-                        .italic()
-                        .foregroundColor(Color.white)
-                  
                 }
             }
             
             
+//    ****************************** OFF Planet *************
+            
+//
+//            ZStack {
+//
+//                NavigationLink(
+//                    destination:  RR59(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+//                    label: {
+//                        VStack {
+//
+//
+//                            ZStack {
+//                                    Text("      Off          Planet")
+//                                        .fontWeight(.light)
+//                                        .frame(width: 220, height: 40)
+//                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                        .font(.system(size: 25))
+//                                        .background(Color.cyan)
+//                                        .cornerRadius(15)
+//                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                                    Image("iconRocket 1")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 50, height: 50)
+//                                        .foregroundColor(ColorManager .purple4)
+//                                        .glow(color: ColorManager .grey1, radius: 3)
+////                                        .blinking(duration: 2.0)
+//                                        .opacity(0.8)
+//
+//                            }
+//                                Text("when your friends arn't around")
+//                                    .fontWeight(.thin)
+//                                    .italic()
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//
+//                        }
+//                    }
+//                )}
+           }
+//
+       
             
             
-//    ****************************** Vibe ^^^^ *************
             
             
+//  ************************************** Notifications ******
             
             
-            ZStack {
-                
-                NavigationLink(
-                    destination:  RR59(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
-                    label: {
-                        VStack {
-                          
-                            
-                            ZStack {
-                                    Text("      Off          Planet")
-                                        .fontWeight(.light)
-                                        .frame(width: 220, height: 40)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 25))
-                                        .background(Color.cyan)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    
-                                    Image("iconRocket 1")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 50, height: 50)
-                                        .foregroundColor(ColorManager .purple4)
-                                        .glow(color: ColorManager .grey1, radius: 3)
-//                                        .blinking(duration: 2.0)
-                                        .opacity(0.8)
-                               
-                            }
-                                Text("when your friends arn't around")
-                                    .fontWeight(.thin)
-                                    .italic()
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                         
-                        }
-                    }
-                )}
-            }
-        
-        
         HStack {
             
             Spacer ()
