@@ -119,12 +119,12 @@ struct RR58: View {
                     )}
                 
                 VStack {
-                    Text("sharing emotions with friends of")
+                    Text("living real-time friendships")
                         .fontWeight(.thin)
                         .italic()
                         .foregroundColor(Color.white)
                     
-                    Text("support, motivation & congratulations")
+                    Text("")
                         .fontWeight(.thin)
                         .italic()
                         .foregroundColor(Color.white)
@@ -237,12 +237,12 @@ struct RR58: View {
                         
                         VStack {
                             
-                            Text("sharing emotions")
+                            Text("sharing support")
                                 .fontWeight(.thin)
                                 .italic()
                                 .foregroundColor(Color.white)
                             
-                            Text("and support")
+                            Text("motivation & congratulations")
                                 .fontWeight(.thin)
                                 .italic()
                                 .foregroundColor(Color.white)
@@ -266,7 +266,7 @@ struct RR58: View {
             VStack {
                 
                 Spacer ()
-                    .frame(height: 685)
+                    .frame(height: 750)
                 
                 ZStack {
                     
