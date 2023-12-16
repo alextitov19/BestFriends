@@ -373,17 +373,11 @@ struct HomeView: View {
                         })
                         
                         VStack {
-                            Text("my")
-                                .font(.system(size: 25))
-                                .foregroundColor(Color.white)
-                                .fontWeight(.light)
-                                .opacity(0.99)
-                                .multilineTextAlignment(.center)
-                     
+                          Spacer ()
+                                .frame(height: 15)
                             
-                            
-                            Text("Day")
-                                .font(.system(size: 40))
+                            Text("Today")
+                                .font(.system(size: 37))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
                                 .opacity(0.99)
@@ -391,7 +385,7 @@ struct HomeView: View {
                                
                          
                             Text("tap")
-                                .font(.system(size: 17))
+                                .font(.system(size: 25))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.regular)
                                 .opacity(0.99)
