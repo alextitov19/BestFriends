@@ -167,112 +167,112 @@ struct HomeView: View {
                             
                         }
                         
-                        //  ************************************************
-                        //  ************************************************
-                        
-                        HStack {
-                            
-                            NavigationLink(
-                                destination:  HugPreload(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
-                                label: {
-                                    
-                                    ZStack {
-                                        Image(systemName: "circle.fill")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 35, height: 35)
-                                            .foregroundColor(Color.cyan)
-                                            .opacity(0.95)
-                                        
-                                        
-                                        Image(systemName: "heart.fill")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 20, height: 20)
-                                            .foregroundColor(Color.purple)
-                                            .glow(color: Color.white, radius: 0.3)
-                                            .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                            .opacity(0.95)
-                                    }
-                                })
-                            
-                            Spacer()
-                                .frame(width: 20)
-                            
-                            
-                            
-                            
-                            NavigationLink(
-                                destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                                label: {
-                                    
-                                    ZStack {
-                                        Image("iconVibes75")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 55, height: 55)
-                                            .foregroundColor(ColorManager .purple4)
-                                            .glow(color: ColorManager .grey1, radius: 3)
-                                        //                                            .blinking(duration: 2.0)
-                                            .opacity(0.8)
-                                        
-                                        
-                                    }
-                                })
-                            
-                            Spacer()
-                                .frame(width: 20)
-                            
-                            ZStack {
-                                
-                                NavigationLink(
-                                    destination:  RR56(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
-                                    label: {
-                                        
-                                        ZStack {
-                                            Image(systemName: "circle.fill")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 35, height: 35)
-                                                .foregroundColor(ColorManager .purple3)
-                                                .opacity(0.95)
-                                            
-                                            Image(systemName: "heart.fill")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 20, height: 20)
-                                                .foregroundColor(Color.orange)
-                                                .glow(color: Color.white, radius: 0.3)
-                                                .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                                .opacity(0.95)
-                                            
-                                            
-                                        }
-                                    })
-                            }
-                        }
-                        
-                        VStack {
-                            NavigationLink(
-                                destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                                label: {
-                                    
-                                    ZStack {
-                                        Image("heart")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 1, height: 1)
-                                            .foregroundColor(ColorManager .purple4)
-                                            .glow(color: ColorManager .grey1, radius: 3)
-                                        //                                            .blinking(duration: 2.0)
-                                            .opacity(0.8)
-                                        
-                                        
-                                    }
-                                })
-                        }
-                        
-                        
+        //  ************************************************
+    //  *************************   CareHearts  ***********************
+//                        
+//                        HStack {
+//                            
+//                            NavigationLink(
+//                                destination:  HugPreload(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
+//                                label: {
+//                                    
+//                                    ZStack {
+//                                        Image(systemName: "circle.fill")
+//                                            .resizable()
+//                                            .scaledToFit()
+//                                            .frame(width: 35, height: 35)
+//                                            .foregroundColor(Color.cyan)
+//                                            .opacity(0.95)
+//                                        
+//                                        
+//                                        Image(systemName: "heart.fill")
+//                                            .resizable()
+//                                            .scaledToFit()
+//                                            .frame(width: 20, height: 20)
+//                                            .foregroundColor(Color.purple)
+//                                            .glow(color: Color.white, radius: 0.3)
+//                                            .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+//                                            .opacity(0.95)
+//                                    }
+//                                })
+//                            
+//                            Spacer()
+//                                .frame(width: 20)
+//                            
+//                            
+//                            
+//                            
+//                            NavigationLink(
+//                                destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+//                                label: {
+//                                    
+//                                    ZStack {
+//                                        Image("iconVibes75")
+//                                            .resizable()
+//                                            .scaledToFit()
+//                                            .frame(width: 55, height: 55)
+//                                            .foregroundColor(ColorManager .purple4)
+//                                            .glow(color: ColorManager .grey1, radius: 3)
+//                                        //                                            .blinking(duration: 2.0)
+//                                            .opacity(0.8)
+//                                        
+//                                        
+//                                    }
+//                                })
+//                            
+//                            Spacer()
+//                                .frame(width: 20)
+//                            
+//                            ZStack {
+//                                
+//                                NavigationLink(
+//                                    destination:  RR56(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
+//                                    label: {
+//                                        
+//                                        ZStack {
+//                                            Image(systemName: "circle.fill")
+//                                                .resizable()
+//                                                .scaledToFit()
+//                                                .frame(width: 35, height: 35)
+//                                                .foregroundColor(ColorManager .purple3)
+//                                                .opacity(0.95)
+//                                            
+//                                            Image(systemName: "heart.fill")
+//                                                .resizable()
+//                                                .scaledToFit()
+//                                                .frame(width: 20, height: 20)
+//                                                .foregroundColor(Color.orange)
+//                                                .glow(color: Color.white, radius: 0.3)
+//                                                .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+//                                                .opacity(0.95)
+//                                            
+//                                            
+//                                        }
+//                                    })
+//                            }
+//                        }
+//                        
+//                        VStack {
+//                            NavigationLink(
+//                                destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+//                                label: {
+//                                    
+//                                    ZStack {
+//                                        Image("heart")
+//                                            .resizable()
+//                                            .scaledToFit()
+//                                            .frame(width: 1, height: 1)
+//                                            .foregroundColor(ColorManager .purple4)
+//                                            .glow(color: ColorManager .grey1, radius: 3)
+//                                        //                                            .blinking(duration: 2.0)
+//                                            .opacity(0.8)
+//                                        
+//                                        
+//                                    }
+//                                })
+//                        }
+//                        
+//                        
                         
                         //    ****************************************
                         
