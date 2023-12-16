@@ -234,11 +234,19 @@ struct RR58: View {
                         Spacer ()
                             .frame(width: 40)
                         
-                        Text("sharing emotions")
-                            .fontWeight(.thin)
-                            .italic()
-                            .foregroundColor(Color.white)
                         
+                        VStack {
+                            
+                            Text("sharing emotions")
+                                .fontWeight(.thin)
+                                .italic()
+                                .foregroundColor(Color.white)
+                            
+                            Text("and support")
+                                .fontWeight(.thin)
+                                .italic()
+                                .foregroundColor(Color.white)
+                        }
                         
                         Spacer ()
                             .frame(width: 30)
