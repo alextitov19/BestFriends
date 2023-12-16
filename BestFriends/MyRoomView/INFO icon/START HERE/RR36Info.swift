@@ -139,7 +139,7 @@ VStack {
         Image("")
             .resizable()
             .scaledToFit()
-            .frame(width: 70, height: 70)
+            .frame(width: 1, height: 1)
             .opacity(0.9)
         //                    .blinking(duration: 2.0)
         
@@ -224,52 +224,51 @@ VStack {
         }
         
         
-//
-//        ZStack {
-//
-//            Image("comicBubble")
-//                .resizable()
-//                .foregroundColor(Color.purple)
-//                .frame(width: 250, height: 110)
-//                .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
-//            //                    .rotationEffect(.degrees(-10))
-//                .opacity(0.95)
-//
-//            VStack {
-//
-//                NavigationLink( destination: RR40Info2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-//                                label: {
-//                    VStack {
-//                        Text("main")
-//                            .font(.system(size: 15))
-//                            .italic()
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(Color.white)
-//
-//                        Text("Features")
-//                            .font(.system(size: 25))
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(Color.white)
-//                    }
-//                }
-//            )}
-//        }
-        
-        
+        //  ************************************** Notifications ******
+                    
+                    
+        HStack {
+            
+            Image("iconNotifications")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 40, height: 40)
+                .rotationEffect(.degrees(-15))
+                .foregroundColor(ColorManager .purple5)
+                .glow(color: Color.purple, radius: 2)
+                .opacity(0.9)
+            
+            VStack {
+                
+                Text("for real-time friendships")
+                    .font(.system(size: 17))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.cyan)
+                //                            .rotationEffect(.degrees(-10))
+                
+                Text("Leave Notifications 'ON'")
+                    .font(.system(size: 13))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.leading)
+                //                            .rotationEffect(.degrees(-10))
+                    .foregroundColor(Color.white)
+                
+            }
+        }
     }
     
-
+    Spacer()
+        .frame(height: 40)
      
     NavigationLink(destination:  RR51(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                label: {
-                    Text("your Safe n' Sound ->")
+                    Text("you are Safe n' Sound ->")
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
-                        .frame(width: 300, height: 40)
+                        .frame(width: 350, height: 40)
                         .font(.system(size: 30))
-                        .background(ColorManager .grey2)
+                        .background(Color .cyan)
                         .opacity(0.95)
                         .cornerRadius(10)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -279,7 +278,7 @@ VStack {
         VStack {
                                 
             Spacer()
-                .frame(height: 100)
+                .frame(height: 170)
           
                             }
                         }

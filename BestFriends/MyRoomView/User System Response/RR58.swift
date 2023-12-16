@@ -296,44 +296,8 @@ struct RR58: View {
                             }
                         }
                     )}
-            }
-        }
-       
-            
-            
-            
-            
-//  ************************************** Notifications ******
-            
-            
-        HStack {
-       
-            Image("iconNotifications")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 40, height: 40)
-               .rotationEffect(.degrees(-15))
-                .foregroundColor(ColorManager .purple5)
-                .glow(color: Color.purple, radius: 2)
-                .opacity(0.9)
-            
-                    VStack {
-                        
-                        Text("for real-time friendships")
-                            .font(.system(size: 17))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.cyan)
-//                            .rotationEffect(.degrees(-10))
-                        
-                        Text("Leave Notifications 'ON'")
-                            .font(.system(size: 13))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.leading)
-//                            .rotationEffect(.degrees(-10))
-                            .foregroundColor(Color.white)
-                        
-                        
+
+      
                         Spacer()
                             .frame(height: 45)
                         
