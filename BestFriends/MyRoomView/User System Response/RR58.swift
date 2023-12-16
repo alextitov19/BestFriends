@@ -119,12 +119,12 @@ struct RR58: View {
                     )}
                 
                 VStack {
-                    Text("living real-time friendships")
+                    Text("living superior,")
                         .fontWeight(.thin)
                         .italic()
                         .foregroundColor(Color.white)
                     
-                    Text("")
+                    Text("real-time friendships")
                         .fontWeight(.thin)
                         .italic()
                         .foregroundColor(Color.white)
