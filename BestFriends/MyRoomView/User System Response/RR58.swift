@@ -207,7 +207,7 @@ struct RR58: View {
                         label: {
                             
                             ZStack {
-                                    Text("  Set                Vibe")
+                                    Text("Daily            Vibe")
                                         .fontWeight(.light)
                                         .frame(width: 220, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
