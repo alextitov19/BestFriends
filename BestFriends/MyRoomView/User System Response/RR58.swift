@@ -142,7 +142,7 @@ struct RR58: View {
                 VStack {
                     
                     Spacer ()
-                        .frame(height: 30)
+                        .frame(height: 45)
                     
                     HStack {
                         NavigationLink(
@@ -195,7 +195,7 @@ struct RR58: View {
                         NavigationLink(
                             destination:  RR56(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
                             label: {
-                           
+                                
                                 ZStack {
                                     
                                     Image(systemName: "circle.fill")
@@ -222,9 +222,9 @@ struct RR58: View {
                     
                     HStack {
                         
-//                        Spacer()
-//                            .frame(width: 5)
-//                        
+                        //                        Spacer()
+                        //                            .frame(width: 5)
+                        //
                         Text("sending")
                             .fontWeight(.thin)
                             .italic()
@@ -242,7 +242,7 @@ struct RR58: View {
                         
                         Spacer ()
                             .frame(width: 30)
-                     
+                        
                         
                         Text("received")
                             .fontWeight(.thin)
@@ -254,47 +254,50 @@ struct RR58: View {
             }
             
             
-//    ****************************** OFF Planet *************
-            
-//
-//            ZStack {
-//
-//                NavigationLink(
-//                    destination:  RR59(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
-//                    label: {
-//                        VStack {
-//
-//
-//                            ZStack {
-//                                    Text("      Off          Planet")
-//                                        .fontWeight(.light)
-//                                        .frame(width: 220, height: 40)
-//                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                        .font(.system(size: 25))
-//                                        .background(Color.cyan)
-//                                        .cornerRadius(15)
-//                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//                                    Image("iconRocket 1")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 50, height: 50)
-//                                        .foregroundColor(ColorManager .purple4)
-//                                        .glow(color: ColorManager .grey1, radius: 3)
-////                                        .blinking(duration: 2.0)
-//                                        .opacity(0.8)
-//
-//                            }
-//                                Text("when your friends arn't around")
-//                                    .fontWeight(.thin)
-//                                    .italic()
-//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//
-//                        }
-//                    }
-//                )}
-           }
-//
+            //    ****************************** OFF Planet *************
+            VStack {
+                
+                Spacer ()
+                    .frame(height: 600)
+                
+                ZStack {
+                    
+                    NavigationLink(
+                        destination:  RR59(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+                        label: {
+                            VStack {
+                                
+                                
+                                ZStack {
+                                    Text("      Off          Planet")
+                                        .fontWeight(.light)
+                                        .frame(width: 220, height: 40)
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .font(.system(size: 25))
+                                        .background(Color.cyan)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                    
+                                    Image("iconRocket 1")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 50, height: 50)
+                                        .foregroundColor(ColorManager .purple4)
+                                        .glow(color: ColorManager .grey1, radius: 3)
+                                    //                                        .blinking(duration: 2.0)
+                                        .opacity(0.8)
+                                    
+                                }
+                                Text("when your friends arn't around")
+                                    .fontWeight(.thin)
+                                    .italic()
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                
+                            }
+                        }
+                    )}
+            }
+        }
        
             
             
@@ -304,10 +307,7 @@ struct RR58: View {
             
             
         HStack {
-            
-            Spacer ()
-                .frame(width: 150)
-         
+       
             Image("iconNotifications")
                 .resizable()
                 .scaledToFit()
@@ -324,38 +324,38 @@ struct RR58: View {
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.cyan)
-                            .rotationEffect(.degrees(-10))
+//                            .rotationEffect(.degrees(-10))
                         
                         Text("Leave Notifications 'ON'")
                             .font(.system(size: 13))
                             .fontWeight(.light)
                             .multilineTextAlignment(.leading)
-                            .rotationEffect(.degrees(-10))
+//                            .rotationEffect(.degrees(-10))
                             .foregroundColor(Color.white)
                         
                         
                         Spacer()
                             .frame(height: 45)
                         
-                        
-                                                    VStack {
-                        
-                                                        Button(action: {
-                                                            sessionManager.showLogin()
-                                                        },
-                                                               label: {
-                                                            Image("home-alt2")
-                                                                .frame(width: 60, height: 30)
-                                                                .foregroundColor(.black)
-                                                                .font(.system(size: 20))
-                                                                .background(ColorManager .grey3)
-                                                                .cornerRadius(15)
-                                                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                                                .opacity(0.70)
-                        
-                                                        })
-                                                    }
-                        
+//
+//                                                    VStack {
+//
+//                                                        Button(action: {
+//                                                            sessionManager.showLogin()
+//                                                        },
+//                                                               label: {
+//                                                            Image("home-alt2")
+//                                                                .frame(width: 60, height: 30)
+//                                                                .foregroundColor(.black)
+//                                                                .font(.system(size: 20))
+//                                                                .background(ColorManager .grey3)
+//                                                                .cornerRadius(15)
+//                                                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                                                                .opacity(0.70)
+//
+//                                                        })
+//                                                    }
+//
                         
                     }
                 }
@@ -363,7 +363,7 @@ struct RR58: View {
         
         
         Spacer()
-            .frame(height: 10)
+            .frame(height: 170)
         
             }
         }
