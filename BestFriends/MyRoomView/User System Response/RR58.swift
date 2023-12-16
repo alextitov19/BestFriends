@@ -70,7 +70,7 @@ struct RR58: View {
                                     .frame(width: 120, height: 120)
 //                                    .blinking(duration: 7.0)
                                 
-                                Text("Setup Chat - Demo Video")
+                                Text("First Time User (TAP)")
                                     .fontWeight(.medium)
                                     .frame(width: 250, height: 40)
                                     .foregroundColor(Color.white)
@@ -195,7 +195,7 @@ struct RR58: View {
                
                 
                 
-                
+//   *********************************** Vibe *********
                 
                 
                 Spacer ()
@@ -226,11 +226,8 @@ struct RR58: View {
                                         .opacity(0.8)
                                
                             }
-                       
                         }
                     )}
-                
-                
                 
                 VStack {
                     Text("your planet's atmosphere color")
@@ -242,12 +239,16 @@ struct RR58: View {
                         .fontWeight(.thin)
                         .italic()
                         .foregroundColor(Color.white)
-                    
-                    
+                  
                 }
-                
-                
             }
+            
+            
+            
+            
+//    ****************************** Vibe ^^^^ *************
+            
+            
             
             
             ZStack {

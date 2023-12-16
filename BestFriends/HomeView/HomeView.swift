@@ -12,7 +12,7 @@ struct HomeView: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     //        let user: User
-//            let friends: [User]
+    //            let friends: [User]
     //        let atmosphere: Atmosphere
     //
     @State private var homeData: HomeData?
@@ -34,14 +34,14 @@ struct HomeView: View {
     
     @State private var cancelledChatRoom = false
     
-//    @StateObject var model = Model.loadData
+    //    @StateObject var model = Model.loadData
     
     @State private var scale = 1.0
     
     
     //**************************
-        @State var animate: Bool = false
-        let animation: Animation = Animation.linear(duration:3.0).repeatForever(autoreverses: false)
+    @State var animate: Bool = false
+    let animation: Animation = Animation.linear(duration:3.0).repeatForever(autoreverses: false)
     //**************************
     
     
@@ -72,22 +72,22 @@ struct HomeView: View {
                 
                 if (homeData != nil) {
                     NavigationLink(destination: NotificationsView(user: homeData!.user, friend: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere), isActive: $presentingIANs) { EmptyView() }
-
+                    
                 }
-        
-                    
-                    Color.black
-                        .opacity(0.2)
-                        .ignoresSafeArea()
-                    
-                    AdPlayerView(name: "sky2")
-                        .ignoresSafeArea()
-                        .blendMode(.screen)
-                        .opacity(0.9)
-                    
-
-           
-             
+                
+                
+                Color.black
+                    .opacity(0.2)
+                    .ignoresSafeArea()
+                
+                AdPlayerView(name: "sky2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.9)
+                
+                
+                
+                
                 VStack {
                     if ((homeData) != nil) {
                         
@@ -97,9 +97,9 @@ struct HomeView: View {
                         Spacer()
                             .frame(height: 20)
                         
-                    
-                HStack {
                         
+                        HStack {
+                            
                             ZStack {
                                 
                                 Image(systemName: "bell")
@@ -108,7 +108,7 @@ struct HomeView: View {
                                     .frame(width: 25, height: 25)
                                     .foregroundColor(Color.cyan)
                                 //                                    .blinking(duration: 2.0)
-//                                    .glow(color: ColorManager.purple4, radius: 3)
+                                //                                    .glow(color: ColorManager.purple4, radius: 3)
                                     .opacity(0.5)
                                     .onTapGesture {
                                         print("Clicked notification bell")
@@ -125,33 +125,33 @@ struct HomeView: View {
                                     .frame(width: 27, height: 27)
                                     .foregroundColor(Color.white)
                                     .opacity(0.125)
-//                                    .rotationEffect(.degrees(-10))
+                                //                                    .rotationEffect(.degrees(-10))
                                     .glow(color: Color.white, radius: 1)
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 3)
                                     .blinking(duration: 2.0)
-                                 
+                                
                             }
-         
+                            
                             Spacer()
                                 .frame(width: 100)
-                    
-                    NavigationLink(
-                        destination:  RR59(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
-                        label: {
                             
-                            Image("iconRocket 1")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 50, height: 50)
-                                .foregroundColor(ColorManager .purple5)
-                                .glow(color: Color.purple, radius: 2)
-                                .opacity(0.9)
-                        })
-
-                    
-                    Spacer()
-                        .frame(width: 100)
-                    
+                            NavigationLink(
+                                destination:  RR59(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
+                                label: {
+                                    
+                                    Image("iconRocket 1")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 50, height: 50)
+                                        .foregroundColor(ColorManager .purple5)
+                                        .glow(color: Color.purple, radius: 2)
+                                        .opacity(0.9)
+                                })
+                            
+                            
+                            Spacer()
+                                .frame(width: 100)
+                            
                             NavigationLink(
                                 destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
                                 label: {
@@ -167,8 +167,8 @@ struct HomeView: View {
                             
                         }
                         
-    //  ************************************************
-                //  ************************************************
+                        //  ************************************************
+                        //  ************************************************
                         
                         HStack {
                             
@@ -251,93 +251,93 @@ struct HomeView: View {
                                     })
                             }
                         }
-                                
-//                                VStack {
-//                                    NavigationLink(
-//                                        destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-//                                        label: {
-//                                            
-//                                            ZStack {
-//                                                Image("heart")
-//                                                    .resizable()
-//                                                    .scaledToFit()
-//                                                    .frame(width: 55, height: 55)
-//                                                    .foregroundColor(ColorManager .purple4)
-//                                                    .glow(color: ColorManager .grey1, radius: 3)
-//                                                //                                            .blinking(duration: 2.0)
-//                                                    .opacity(0.8)
-//                                                
-//                                                
-//                                            }
-//                                        })
-//                                }
-
                         
-                 
-//    ****************************************
+                        VStack {
+                            NavigationLink(
+                                destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                                label: {
+                                    
+                                    ZStack {
+                                        Image("heart")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 1, height: 1)
+                                            .foregroundColor(ColorManager .purple4)
+                                            .glow(color: ColorManager .grey1, radius: 3)
+                                        //                                            .blinking(duration: 2.0)
+                                            .opacity(0.8)
+                                        
+                                        
+                                    }
+                                })
+                        }
                         
-                    
+                        
+                        
+                        //    ****************************************
+                        
+                        
                         Spacer()
                         
                         ZStack {
-                     
+                            
                             
                             Spacer()
                                 .frame(height: 400)
-                          
+                            
                         }
                         
-                   
-    VStack {
-                           
-        HStack {
-            
-            
-            Text("")
-                .fontWeight(.light)
-                .font(.system(size: 10))
-                .cornerRadius(7)
-                .opacity(0.6)
-                .glow(color: ColorManager .grey4, radius: 3)
-                .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
-                .blinking(duration: 4.0)
-            
-            
-            
-            
-            
-            
-            Spacer()
-                .frame(width: 50)
- 
-            VStack {
-
-            }
-        }
+                        
+                        VStack {
                             
-//   *************************************************** Old photopop and settings ***
-               
-        
-    
-        
-        
-        
-        
-//******************************************************
+                            HStack {
                                 
-                                ZStack {
-
+                                
+                                Text("")
+                                    .fontWeight(.light)
+                                    .font(.system(size: 10))
+                                    .cornerRadius(7)
+                                    .opacity(0.6)
+                                    .glow(color: ColorManager .grey4, radius: 3)
+                                    .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
+                                    .blinking(duration: 4.0)
+                                
+                                
+                                
+                                
+                                
+                                
+                                Spacer()
+                                    .frame(width: 50)
+                                
+                                VStack {
+                                    
+                                }
+                            }
+                            
+                            //   *************************************************** Old photopop and settings ***
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            //******************************************************
+                            
+                            ZStack {
+                                
                             }
                         }
                         
                         Spacer()
                     }
                 }
-                    
-//******************************************************  //******************************************************
+                
+                //******************************************************  //******************************************************
                 
                 
-
+                
                 
                 if homeData != nil {
                     FriendPlanetsView(planets: $planets, selectedPlanets: $newGroupMembers, inviteClicked: $inviteClicked)
@@ -361,57 +361,68 @@ struct HomeView: View {
                     
                     ZStack {
                         
-
-                            NavigationLink(destination: EmptyView(), label: {
-                                PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
-                                    .scaledToFit()
-                                    .frame(width: 120, height: 120)
-                                    .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 20)
-                                    .opacity(0.9)
-                                    .padding()
-
+                        
+                        NavigationLink(destination: EmptyView(), label: {
+                            PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
+                                .scaledToFit()
+                                .frame(width: 120, height: 120)
+                                .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 20)
+                                .opacity(0.9)
+                                .padding()
+                            
                         })
                         
                         VStack {
-                            Text("menu")
+                            Text("my")
                                 .font(.system(size: 30))
-                                .foregroundColor(Color.white)
-                                .fontWeight(.regular)
-                                .opacity(0.99)
-                                .multilineTextAlignment(.center)
-                            //                            .blinking(duration: 2.0)
-                            
-                            Text("tap")
-                                .font(.system(size: 25))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
                                 .opacity(0.99)
                                 .multilineTextAlignment(.center)
+                     
+                            
+                            
+                            Text("Day")
+                                .font(.system(size: 40))
+                                .foregroundColor(Color.white)
+                                .fontWeight(.medium)
+                                .opacity(0.99)
+                                .multilineTextAlignment(.center)
+                               
+                         
+                            Text("tap")
+                                .font(.system(size: 17))
+                                .foregroundColor(Color.white)
+                                .fontWeight(.regular)
+                                .opacity(0.99)
+                                .multilineTextAlignment(.center)
                                 .blinking(duration: 2.0)
+                            
+                            
                         }
                         
                         
-//****** CENTER PLANET****************** CENTER PLANET*****************
+                        //****** CENTER PLANET****************** CENTER PLANET*****************
                         
-//******************************* CENTER PLANET****************** CENTER PLANET**********
+                        //******************************* CENTER PLANET****************** CENTER PLANET**********
                         
                         NavigationLink(
                             destination:   RR18(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                             label: {
                                 
                                 
-                                    Image(systemName: "")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 120, height: 120)
-                                        .opacity(0.9)
-                                        .foregroundColor(.white)
-                                        .opacity(0.35)
-                                        .blinking(duration: 2.0)
-                              
-                                })
-                            }
-                        }
+                                Image(systemName: "")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 120, height: 120)
+                                    .opacity(0.9)
+                                    .foregroundColor(.white)
+                                    .opacity(0.35)
+                                    .blinking(duration: 2.0)
+                                
+                            })
+                    }
+                }
                 
                 if newGroupMembers.count > 0 {
                     VStack {
@@ -436,12 +447,12 @@ struct HomeView: View {
                                         .fontWeight(.thin)
                                         .opacity(0.7)
                                         .multilineTextAlignment(.center)
-//                                        .blinking(duration: 2.0)
+                                    //                                        .blinking(duration: 2.0)
                                     
                                     
                                 }
-
-                                }
+                                
+                            }
                             
                         })
                         
@@ -523,11 +534,11 @@ struct HomeView: View {
             return Color(.systemPurple)
         case 9:
             return Color(.systemRed)
-       
+            
         default:
             return Color(.systemGray3)
             
-//            return ColorManager.pmbc_blue
+            //            return ColorManager.pmbc_blue
             
         }
     }
@@ -574,8 +585,8 @@ struct HomeView: View {
             
         }
     }
-    
 }
+
 
 
                 

@@ -55,16 +55,7 @@ struct RR18: View {
             VStack {
                 
                 ZStack {
-                    //                    Image("comicBubble")
-                    //                        .resizable()
-                    //                        .foregroundColor(Color.purple)
-                    //                        .frame(width: 500, height: 300)
-                    //                        .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
-                    //                        .rotationEffect(.degrees(-10))
-                    //                        .opacity(0.95)
-                    //                        .blinking(duration: 2.0).blinking(duration: 3.0)
-                    //
-                    //
+                
                     VStack {
                         
                         VStack {
@@ -173,12 +164,7 @@ struct RR18: View {
                                                 .background(Color.cyan)
                                                 .cornerRadius(15)
                                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                            
-                                            //                                        Text("It's Cute")
-                                            //                                            .fontWeight(.thin)
-                                            //                                            .italic()
-                                            //                                            .font(.system(size: 25))
-                                            //                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                   
                                             Text("It's sort of like teachers giving out")
                                                 .fontWeight(.light)
                                                 .italic()
@@ -192,24 +178,7 @@ struct RR18: View {
                                         }
                                     }
                                 )}
-//
-//                                                        VStack {
-//
-//                                                            Button(action: {
-//                                                                sessionManager.showLogin()
-//                                                            },
-//                                                                   label: {
-//                                                                Image("home-alt2")
-//                                                                    .frame(width: 60, height: 30)
-//                                                                    .foregroundColor(.black)
-//                                                                    .font(.system(size: 20))
-//                                                                    .background(ColorManager .grey3)
-//                                                                    .cornerRadius(15)
-//                                                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-//                                                                    .opacity(0.70)
-//
-//                                                            })
-//                                                        }
+
                         }
                     }
                     
