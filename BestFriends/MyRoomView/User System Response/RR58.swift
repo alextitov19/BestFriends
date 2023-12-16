@@ -119,12 +119,12 @@ struct RR58: View {
                     )}
                 
                 VStack {
-                    Text("your planet's atmosphere color")
+                    Text("sharing emotions with friends of")
                         .fontWeight(.thin)
                         .italic()
                         .foregroundColor(Color.white)
                     
-                    Text("on homepage matches your Vibe")
+                    Text("support, motivation & congratulations")
                         .fontWeight(.thin)
                         .italic()
                         .foregroundColor(Color.white)
