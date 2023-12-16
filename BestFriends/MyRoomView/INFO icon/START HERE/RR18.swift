@@ -156,9 +156,9 @@ struct RR18: View {
                                     destination:  RR36Info(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                     label: {
                                         VStack {
-                                            Text("See Inside ->>>")
+                                            Text("Quick Setup")
                                                 .fontWeight(.light)
-                                                .frame(width: 275, height: 40)
+                                                .frame(width: 200, height: 40)
                                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                 .font(.system(size: 25))
                                                 .background(Color.cyan)
