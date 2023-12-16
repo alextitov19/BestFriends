@@ -222,7 +222,10 @@ struct RR58: View {
                     
                     HStack {
                         
-                        Text("  send")
+//                        Spacer()
+//                            .frame(width: 5)
+//                        
+                        Text("sending")
                             .fontWeight(.thin)
                             .italic()
                             .foregroundColor(Color.white)
@@ -238,8 +241,13 @@ struct RR58: View {
                         
                         
                         Spacer ()
-                            .frame(width: 50)
+                            .frame(width: 30)
+                     
                         
+                        Text("received")
+                            .fontWeight(.thin)
+                            .italic()
+                            .foregroundColor(Color.white)
                         
                     }
                 }
