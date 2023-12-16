@@ -407,7 +407,7 @@ struct HomeView: View {
                         //******************************* CENTER PLANET****************** CENTER PLANET**********
                         
                         NavigationLink(
-                            destination:   RR18(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                            destination:   RR58(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                             label: {
                                 
                                 

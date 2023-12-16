@@ -59,7 +59,7 @@ struct RR58: View {
                     
                     
                     NavigationLink(
-                        destination:  RR4(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        destination:  RR18(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                         label: {
                             
                             ZStack {
