@@ -135,22 +135,22 @@ struct HomeView: View {
                             Spacer()
                                 .frame(width: 270)
                             
-//                            NavigationLink(
-//                                destination:  RR59(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
-//                                label: {
-//
-//                                    Image("iconRocket 1")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 50, height: 50)
-//                                        .foregroundColor(ColorManager .purple5)
-//                                        .glow(color: Color.purple, radius: 2)
-//                                        .opacity(0.9)
-//                                })
-//
-//
-//                            Spacer()
-//                                .frame(width: 100)
+                            //                            NavigationLink(
+                            //                                destination:  RR59(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
+                            //                                label: {
+                            //
+                            //                                    Image("iconRocket 1")
+                            //                                        .resizable()
+                            //                                        .scaledToFit()
+                            //                                        .frame(width: 50, height: 50)
+                            //                                        .foregroundColor(ColorManager .purple5)
+                            //                                        .glow(color: Color.purple, radius: 2)
+                            //                                        .opacity(0.9)
+                            //                                })
+                            //
+                            //
+                            //                            Spacer()
+                            //                                .frame(width: 100)
                             
                             NavigationLink(
                                 destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
@@ -167,112 +167,112 @@ struct HomeView: View {
                             
                         }
                         
-        //  ************************************************
-    //  *************************   CareHearts  ***********************
-//
-//                        HStack {
-//
-//                            NavigationLink(
-//                                destination:  HugPreload(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
-//                                label: {
-//
-//                                    ZStack {
-//                                        Image(systemName: "circle.fill")
-//                                            .resizable()
-//                                            .scaledToFit()
-//                                            .frame(width: 35, height: 35)
-//                                            .foregroundColor(Color.cyan)
-//                                            .opacity(0.95)
-//
-//
-//                                        Image(systemName: "heart.fill")
-//                                            .resizable()
-//                                            .scaledToFit()
-//                                            .frame(width: 20, height: 20)
-//                                            .foregroundColor(Color.purple)
-//                                            .glow(color: Color.white, radius: 0.3)
-//                                            .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-//                                            .opacity(0.95)
-//                                    }
-//                                })
-//
-//                            Spacer()
-//                                .frame(width: 20)
-//
-//
-//
-//
-//                            NavigationLink(
-//                                destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-//                                label: {
-//
-//                                    ZStack {
-//                                        Image("iconVibes75")
-//                                            .resizable()
-//                                            .scaledToFit()
-//                                            .frame(width: 55, height: 55)
-//                                            .foregroundColor(ColorManager .purple4)
-//                                            .glow(color: ColorManager .grey1, radius: 3)
-//                                        //                                            .blinking(duration: 2.0)
-//                                            .opacity(0.8)
-//
-//
-//                                    }
-//                                })
-//
-//                            Spacer()
-//                                .frame(width: 20)
-//
-//                            ZStack {
-//
-//                                NavigationLink(
-//                                    destination:  RR56(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
-//                                    label: {
-//
-//                                        ZStack {
-//                                            Image(systemName: "circle.fill")
-//                                                .resizable()
-//                                                .scaledToFit()
-//                                                .frame(width: 35, height: 35)
-//                                                .foregroundColor(ColorManager .purple3)
-//                                                .opacity(0.95)
-//
-//                                            Image(systemName: "heart.fill")
-//                                                .resizable()
-//                                                .scaledToFit()
-//                                                .frame(width: 20, height: 20)
-//                                                .foregroundColor(Color.orange)
-//                                                .glow(color: Color.white, radius: 0.3)
-//                                                .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-//                                                .opacity(0.95)
-//
-//
-//                                        }
-//                                    })
-//                            }
-//                        }
-//
-//                        VStack {
-//                            NavigationLink(
-//                                destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-//                                label: {
-//
-//                                    ZStack {
-//                                        Image("heart")
-//                                            .resizable()
-//                                            .scaledToFit()
-//                                            .frame(width: 1, height: 1)
-//                                            .foregroundColor(ColorManager .purple4)
-//                                            .glow(color: ColorManager .grey1, radius: 3)
-//                                        //                                            .blinking(duration: 2.0)
-//                                            .opacity(0.8)
-//
-//
-//                                    }
-//                                })
-//                        }
-//
-//
+                        //  ************************************************
+                        //  *************************   CareHearts  ***********************
+                        //
+                        //                        HStack {
+                        //
+                        //                            NavigationLink(
+                        //                                destination:  HugPreload(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
+                        //                                label: {
+                        //
+                        //                                    ZStack {
+                        //                                        Image(systemName: "circle.fill")
+                        //                                            .resizable()
+                        //                                            .scaledToFit()
+                        //                                            .frame(width: 35, height: 35)
+                        //                                            .foregroundColor(Color.cyan)
+                        //                                            .opacity(0.95)
+                        //
+                        //
+                        //                                        Image(systemName: "heart.fill")
+                        //                                            .resizable()
+                        //                                            .scaledToFit()
+                        //                                            .frame(width: 20, height: 20)
+                        //                                            .foregroundColor(Color.purple)
+                        //                                            .glow(color: Color.white, radius: 0.3)
+                        //                                            .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                        //                                            .opacity(0.95)
+                        //                                    }
+                        //                                })
+                        //
+                        //                            Spacer()
+                        //                                .frame(width: 20)
+                        //
+                        //
+                        //
+                        //
+                        //                            NavigationLink(
+                        //                                destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                        //                                label: {
+                        //
+                        //                                    ZStack {
+                        //                                        Image("iconVibes75")
+                        //                                            .resizable()
+                        //                                            .scaledToFit()
+                        //                                            .frame(width: 55, height: 55)
+                        //                                            .foregroundColor(ColorManager .purple4)
+                        //                                            .glow(color: ColorManager .grey1, radius: 3)
+                        //                                        //                                            .blinking(duration: 2.0)
+                        //                                            .opacity(0.8)
+                        //
+                        //
+                        //                                    }
+                        //                                })
+                        //
+                        //                            Spacer()
+                        //                                .frame(width: 20)
+                        //
+                        //                            ZStack {
+                        //
+                        //                                NavigationLink(
+                        //                                    destination:  RR56(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
+                        //                                    label: {
+                        //
+                        //                                        ZStack {
+                        //                                            Image(systemName: "circle.fill")
+                        //                                                .resizable()
+                        //                                                .scaledToFit()
+                        //                                                .frame(width: 35, height: 35)
+                        //                                                .foregroundColor(ColorManager .purple3)
+                        //                                                .opacity(0.95)
+                        //
+                        //                                            Image(systemName: "heart.fill")
+                        //                                                .resizable()
+                        //                                                .scaledToFit()
+                        //                                                .frame(width: 20, height: 20)
+                        //                                                .foregroundColor(Color.orange)
+                        //                                                .glow(color: Color.white, radius: 0.3)
+                        //                                                .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                        //                                                .opacity(0.95)
+                        //
+                        //
+                        //                                        }
+                        //                                    })
+                        //                            }
+                        //                        }
+                        //
+                        //                        VStack {
+                        //                            NavigationLink(
+                        //                                destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                        //                                label: {
+                        //
+                        //                                    ZStack {
+                        //                                        Image("heart")
+                        //                                            .resizable()
+                        //                                            .scaledToFit()
+                        //                                            .frame(width: 1, height: 1)
+                        //                                            .foregroundColor(ColorManager .purple4)
+                        //                                            .glow(color: ColorManager .grey1, radius: 3)
+                        //                                        //                                            .blinking(duration: 2.0)
+                        //                                            .opacity(0.8)
+                        //
+                        //
+                        //                                    }
+                        //                                })
+                        //                        }
+                        //
+                        //
                         
                         //    ****************************************
                         
@@ -373,7 +373,7 @@ struct HomeView: View {
                         })
                         
                         VStack {
-                          Spacer ()
+                            Spacer ()
                                 .frame(height: 15)
                             
                             Text("Today")
@@ -382,8 +382,8 @@ struct HomeView: View {
                                 .fontWeight(.light)
                                 .opacity(0.99)
                                 .multilineTextAlignment(.center)
-                               
-                         
+                            
+                            
                             Text("tap")
                                 .font(.system(size: 25))
                                 .foregroundColor(Color.white)
@@ -453,134 +453,136 @@ struct HomeView: View {
                         Spacer()
                             .frame(height: 557)
                     }
-                }
-                
-                if homeData?.groups != nil && homeData?.user != nil {
-                    ChatGroupsView(user: homeData!.user, groups: groups)
-                        .environmentObject(sessionManager)
-                        .offset(y: -3)
-                }
-                
-            }
-        }
-        .navigationViewStyle(StackNavigationViewStyle())
-        .accentColor(ColorManager.purple5)
-        
-    }
-    
-    private func getHomeData() {
-        RestApi.instance.getHomeData().then{ data in
-            print("Got HomeData: ", data)
-            homeData = data
-            RestApi.instance.setStatusToOnline(id: data.user.id)
-            RestApi.instance.registerAPNToken()
-            groups = homeData!.groups.sorted(by: { $0.createdOn > $1.createdOn })
-            
-            
-            createPlanets()
-            //            print("Got groups: ", data.groups.count)
-            //            chatGroupsView = ChatGroupsView(groups: data.groups)
-        }.catch { err in
-            print("Got error")
-            print(err)
-        }
-        
-    }
-    
-    // Create plantes and populate the planets array
-    private func createPlanets() {
-        planets = []
-        let friends: [User] = homeData?.friends ?? []
-        let atmosperes: [Atmosphere] = homeData?.friendAtmospheres ?? []
-        
-        for friend in friends {
-            for atmosphere in atmosperes {
-                if friend.atmosphere == atmosphere.id {
-                    // Found the friend - atmosphere pair
-                    let planet = Planet(user: friend, atmosphere: atmosphere)
-                    planets.append(planet)
+                    //                }
+                    
+                    if homeData?.groups != nil && homeData?.user != nil {
+                        ChatGroupsView(user: homeData!.user, groups: groups)
+                            .environmentObject(sessionManager)
+                            .offset(y: -3)
+                    }
                     
                 }
             }
-        }
-    }
-    
-    // Get glow color for main planet
-    private func glowColor(mood: Int) -> Color {
-        switch mood {
-        case 0:
-            return Color(.systemRed)
-        case 1:
-            return Color(.systemCyan)
-        case 2:
-            return Color(.systemCyan)
-        case 3:
-            return Color(.systemCyan)
-        case 4:
-            return Color(.systemGreen)
-        case 5:
-            return Color(.orange)
-        case 6:
-            return Color(.systemPurple)
-        case 7:
-            return Color(.systemGreen)
-        case 8:
-            return Color(.systemPurple)
-        case 9:
-            return Color(.systemRed)
-            
-        default:
-            return Color(.systemGray3)
-            
-            //            return ColorManager.pmbc_blue
+            .navigationViewStyle(StackNavigationViewStyle())
+            .accentColor(ColorManager.purple5)
             
         }
     }
-    
-    
-    
-    private func chatButtonTapped() {
-        if newGroupMembers.count > 0 {
-            for newId in newGroupMembers {
-                for f in homeData!.friends {
-                    if f.id == newId {
-                        //MARK: Sending push notification to friend "f"
-                        RestApi.instance.sendPushNotification(title: "BestFriends", body: homeData!.user.firstName + " " +  String(homeData!.user.lastName.first!) + "  Hey, I sent a message in Chat. Do you have time to talk for a minute.", APNToken: f.APNToken )
+        
+        private func getHomeData() {
+            RestApi.instance.getHomeData().then{ data in
+                print("Got HomeData: ", data)
+                homeData = data
+                RestApi.instance.setStatusToOnline(id: data.user.id)
+                RestApi.instance.registerAPNToken()
+                groups = homeData!.groups.sorted(by: { $0.createdOn > $1.createdOn })
+                
+                
+                createPlanets()
+                //            print("Got groups: ", data.groups.count)
+                //            chatGroupsView = ChatGroupsView(groups: data.groups)
+            }.catch { err in
+                print("Got error")
+                print(err)
+            }
+            
+        }
+        
+        // Create plantes and populate the planets array
+        private func createPlanets() {
+            planets = []
+            let friends: [User] = homeData?.friends ?? []
+            let atmosperes: [Atmosphere] = homeData?.friendAtmospheres ?? []
+            
+            for friend in friends {
+                for atmosphere in atmosperes {
+                    if friend.atmosphere == atmosphere.id {
+                        // Found the friend - atmosphere pair
+                        let planet = Planet(user: friend, atmosphere: atmosphere)
+                        planets.append(planet)
+                        
                     }
                 }
             }
-            
-            newGroupMembers.append(homeData!.user.id)
-            for group in homeData!.groups {
-                if group.members.containsSameElements(as: newGroupMembers) {
-                    sessionManager.showChat(user: homeData!.user, group: group)
-                    return
-                }
-            }
-            showNewRoomNameDialog = true
         }
-    }
-    
-    private func createGroup(name: String) {
-        RestApi.instance.createGroup(name: name, members: newGroupMembers).then { response in
-            print("Create Group response: ", response)
-            sessionManager.showChat(user: homeData!.user, group: response)
-        }
-    }
-    
-    private func friendSentPlaylist(friend: User) {
-        let arr = [friend.id, homeData!.user.id]
-        for group in homeData!.groups {
-            if group.members.containsSameElements(as: arr) {
-                sessionManager.showChat(user: homeData!.user, group: group)
-            }
-            
-            
-            
-        }
-    }
-}
-
-
-
+        
+        // Get glow color for main planet
+        private func glowColor(mood: Int) -> Color {
+            switch mood {
+            case 0:
+                return Color(.systemRed)
+            case 1:
+                return Color(.systemCyan)
+            case 2:
+                return Color(.systemCyan)
+            case 3:
+                return Color(.systemCyan)
+            case 4:
+                return Color(.systemGreen)
+            case 5:
+                return Color(.orange)
+            case 6:
+                return Color(.systemPurple)
+            case 7:
+                return Color(.systemGreen)
+            case 8:
+                return Color(.systemPurple)
+            case 9:
+                return Color(.systemRed)
                 
+            default:
+                return Color(.systemGray3)
+                
+                //            return ColorManager.pmbc_blue
+                
+            }
+        }
+    
+        
+        
+        private func chatButtonTapped() {
+            if newGroupMembers.count > 0 {
+                for newId in newGroupMembers {
+                    for f in homeData!.friends {
+                        if f.id == newId {
+                            //MARK: Sending push notification to friend "f"
+                            RestApi.instance.sendPushNotification(title: "BestFriends", body: homeData!.user.firstName + " " +  String(homeData!.user.lastName.first!) + "  Hey, I sent a message in Chat. Do you have time to talk for a minute.", APNToken: f.APNToken )
+                        }
+                    }
+                }
+                
+                newGroupMembers.append(homeData!.user.id)
+                for group in homeData!.groups {
+                    if group.members.containsSameElements(as: newGroupMembers) {
+                        sessionManager.showChat(user: homeData!.user, group: group)
+                        return
+                    }
+                }
+                showNewRoomNameDialog = true
+            }
+        }
+        
+        private func createGroup(name: String) {
+            RestApi.instance.createGroup(name: name, members: newGroupMembers).then { response in
+                print("Create Group response: ", response)
+                sessionManager.showChat(user: homeData!.user, group: response)
+            }
+        }
+        
+        private func friendSentPlaylist(friend: User) {
+            let arr = [friend.id, homeData!.user.id]
+            for group in homeData!.groups {
+                if group.members.containsSameElements(as: arr) {
+                    sessionManager.showChat(user: homeData!.user, group: group)
+                }
+                
+                
+                
+            }
+        }
+    }
+    
+    
+    
+    
+
