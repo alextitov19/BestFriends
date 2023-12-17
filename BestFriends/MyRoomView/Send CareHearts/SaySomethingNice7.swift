@@ -111,13 +111,13 @@ struct SaySomethingNice7: View {
                       AdPlayerView(name: "sky2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
-                          .opacity(0.5)
+                          .opacity(0.9)
                       
                       
                       AdPlayerView(name: "doTogether")
                           .ignoresSafeArea()
                           .blendMode(.screen)
-                          .opacity(0.5)
+                          .opacity(0.08)
                    
             }
           
@@ -167,7 +167,8 @@ struct SaySomethingNice7: View {
                 }
                 
                 
-          
+        Spacer()
+            .frame(height: 60)
                 
             
                 

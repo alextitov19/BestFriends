@@ -112,7 +112,7 @@ struct HugPreload: View {
                             .frame(width: 6)
                         
                         NavigationLink(destination: SaySomethingNice7(user: user, friend: user, friends: friends, groups: groups), label: {
-                            HugCircle (color: Color.cyan, friendName: "Plan \nEvent")
+                            HugCircle (color: Color.cyan, friendName: "Hang \nout")
                         })
                         .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                         .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
