@@ -103,9 +103,9 @@ struct ChatGroupsView: View {
                                     Image(systemName: "info.circle")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 32, height: 32)
+                                        .frame(width: 28, height: 28)
                                         .foregroundColor(ColorManager .purple3)
-                                        .blinking(duration: 2.0)
+//                                        .blinking(duration: 2.0)
                                         .opacity(0.9)
                                 })
                               
