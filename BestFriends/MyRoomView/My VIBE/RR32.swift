@@ -182,17 +182,17 @@ struct RR32: View {
                                             .multilineTextAlignment(.center)
                                             .foregroundColor(Color.cyan)
                                       
-                                        Text("requesting")
-                                            .font(.system(size: 9))
-                                            .fontWeight(.bold)
-                                            .multilineTextAlignment(.center)
-                                            .foregroundColor(Color.cyan)
-                                        
-                                        Text("CareHearts")
-                                            .font(.system(size: 9))
-                                            .fontWeight(.bold)
-                                            .multilineTextAlignment(.center)
-                                            .foregroundColor(Color.cyan)
+//                                        Text("requesting")
+//                                            .font(.system(size: 9))
+//                                            .fontWeight(.bold)
+//                                            .multilineTextAlignment(.center)
+//                                            .foregroundColor(Color.cyan)
+//                                        
+//                                        Text("CareHearts")
+//                                            .font(.system(size: 9))
+//                                            .fontWeight(.bold)
+//                                            .multilineTextAlignment(.center)
+//                                            .foregroundColor(Color.cyan)
                                         
                                         Spacer ()
                                             .frame(height: 7)
