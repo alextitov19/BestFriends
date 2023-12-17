@@ -98,8 +98,8 @@ struct SaySomethingNice5: View {
                                         .foregroundColor(ColorManager .grey1)
                                         .opacity(0.5)
                                     
-                                    Text("Send Hearts")
-                                        .font(.system(size: 33, weight: .light))
+                                    Text("Sending you Hearts")
+                                        .font(.system(size: 29, weight: .light))
                                         .foregroundColor(ColorManager .grey1)
                                         .opacity(0.5)
                                 }

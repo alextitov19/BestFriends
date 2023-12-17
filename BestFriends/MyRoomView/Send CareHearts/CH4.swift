@@ -195,7 +195,7 @@ struct CH4: View {
                                 .shadow(color: Color.white, radius: 3, x: 3, y: 3)
                                 .rotationEffect(.degrees(-7))
                                 .opacity(0.9)
-                                .blinking(duration: 5.0)
+//                                .blinking(duration: 5.0)
 
                             VStack {
 
@@ -206,7 +206,7 @@ struct CH4: View {
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.white)
                                     .rotationEffect(.degrees(-7))
-                                    .blinking(duration: 5.0)
+//                                    .blinking(duration: 5.0)
 
                                 Text("over-and-over while lying in bed,")
                                     .font(.system(size: 13))
@@ -215,7 +215,7 @@ struct CH4: View {
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.white)
                                     .rotationEffect(.degrees(-7))
-                                    .blinking(duration: 5.0)
+//                                    .blinking(duration: 5.0)
 
 
 
@@ -226,7 +226,7 @@ struct CH4: View {
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.white)
                                     .rotationEffect(.degrees(-7))
-                                    .blinking(duration: 5.0)
+//                                    .blinking(duration: 5.0)
                                 
                                 
                                 Text("when you're having a truely bad day.")
@@ -236,7 +236,7 @@ struct CH4: View {
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.white)
                                     .rotationEffect(.degrees(-7))
-                                    .blinking(duration: 5.0)
+//                                    .blinking(duration: 5.0)
 
                             }
                         }
@@ -420,7 +420,7 @@ struct CH4: View {
                                     .frame(width: 50, height: 25)
                                     .foregroundColor(.white)
                                     .font(.system(size: 20))
-                                    .background(ColorManager .grey3)
+                                    .background(ColorManager .grey1)
                                     .cornerRadius(15)
                                     .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                                     .opacity(0.70)

@@ -173,7 +173,8 @@ struct InfoWhyLoveBF: View {
                 
                 
           
-                
+        Spacer()
+            .frame(height: 100)
             
                 
 

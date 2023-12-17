@@ -131,7 +131,7 @@ struct HugPushNotification: View {
                 
                 VStack {
                     Spacer()
-                        .frame(height: 40)
+                        .frame(height: 170)
                     
                     VStack {
                         
@@ -339,7 +339,7 @@ struct HugPushNotification: View {
                                                 Image("IconPhotoNew")
                                                     .resizable()
                                                     .scaledToFit()
-                                                    .frame(width: 50, height: 50)
+                                                    .frame(width: 45, height: 45)
                                                     .rotationEffect(.degrees(-13))
                                                     .foregroundColor(ColorManager .purple5)
                                                     .glow(color: Color.purple, radius: 2)
@@ -347,7 +347,7 @@ struct HugPushNotification: View {
                                                 
                                             })
                                         
-                                        Text("Send a PhotoPOP of \nfun time together")
+                                        Text("Send PhotoPOP of previous \nfun time together")
                                             .fontWeight(.light)
                                             .foregroundColor(Color.white)
                                             .font(.system(size: 11))
@@ -423,7 +423,7 @@ struct HugPushNotification: View {
         var body: some View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
-                .frame(width: 80, height: 80)
+                .frame(width: 70, height: 70)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .font(.system(size: 8))
                 .background(color)
