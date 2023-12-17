@@ -105,66 +105,59 @@ struct SendKisses: View {
                     }
                 }
              
+                
+                
+                           Spacer()
+                               .frame(height: 270)
 //         ***************************************** bubble popups
                 
-                HStack {
-                    
-                    ZStack {
-                        Image("")
-                            .resizable()
-                            .foregroundColor(Color.white)
-                            .frame(width: 0, height: 0)
-                            .rotationEffect(.degrees(-7))
-                            .shadow(color: Color.white, radius: 3, x: 3, y: 3)
-                            .opacity(0.5)
-                            .blinking(duration: 3.0)
-                        
-                        VStack {
-                            
-                            
-//                            Text("Yep! Jump up")
-//                                .font(.system(size: 17))
-//                                .italic()
-//                                .fontWeight(.light)
-//                                .multilineTextAlignment(.center)
-//                                .foregroundColor(Color.white)
-//                                .rotationEffect(.degrees(-7))
-//                                .blinking(duration: 3.0)
-
-
-                        }
-                    }
-
-                    
-                    Spacer()
-                        .frame(width: 200)
-
-                    ZStack {
-                        
-                        
-                        Image("comicBubble")
-                            .resizable()
-                            .foregroundColor(Color.white)
-                            .frame(width: 250, height: 100)
-                            .shadow(color: Color.white, radius: 3, x: 3, y: 3)
-                            .rotationEffect(.degrees(-7))
-                            .opacity(0.5)
-                            .blinking(duration: 3.0)
-                        
-                        VStack {
-                            
-                            Text("soft as butterfly wings")
-                                .font(.system(size: 15))
-                                .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .rotationEffect(.degrees(-7))
-                                .blinking(duration: 3.0)
-                            
-                            
-
-//                            Text("towards your friend")
+//                HStack {
+//
+//                    ZStack {
+//                        Image("")
+//                            .resizable()
+//                            .foregroundColor(Color.white)
+//                            .frame(width: 0, height: 0)
+//                            .rotationEffect(.degrees(-7))
+//                            .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+//                            .opacity(0.5)
+//                            .blinking(duration: 3.0)
+//
+//                        VStack {
+//
+//
+////                            Text("Yep! Jump up")
+////                                .font(.system(size: 17))
+////                                .italic()
+////                                .fontWeight(.light)
+////                                .multilineTextAlignment(.center)
+////                                .foregroundColor(Color.white)
+////                                .rotationEffect(.degrees(-7))
+////                                .blinking(duration: 3.0)
+//
+//
+//                        }
+//                    }
+//
+//
+//                    Spacer()
+//                        .frame(width: 200)
+//
+//                    ZStack {
+//
+//
+//                        Image("comicBubble")
+//                            .resizable()
+//                            .foregroundColor(Color.white)
+//                            .frame(width: 250, height: 100)
+//                            .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+//                            .rotationEffect(.degrees(-7))
+//                            .opacity(0.5)
+//                            .blinking(duration: 3.0)
+//
+//                        VStack {
+//
+//                            Text("soft as butterfly wings")
 //                                .font(.system(size: 15))
 //                                .italic()
 //                                .fontWeight(.light)
@@ -173,9 +166,20 @@ struct SendKisses: View {
 //                                .rotationEffect(.degrees(-7))
 //                                .blinking(duration: 3.0)
 //
-                        }
-                    }
-                }
+//
+//
+////                            Text("towards your friend")
+////                                .font(.system(size: 15))
+////                                .italic()
+////                                .fontWeight(.light)
+////                                .multilineTextAlignment(.center)
+////                                .foregroundColor(Color.white)
+////                                .rotationEffect(.degrees(-7))
+////                                .blinking(duration: 3.0)
+////
+//                        }
+//                    }
+//                }
                 
                 
                 

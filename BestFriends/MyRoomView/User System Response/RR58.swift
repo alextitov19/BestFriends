@@ -242,10 +242,18 @@ struct RR58: View {
                                 .italic()
                                 .foregroundColor(Color.white)
                             
-                            Text("motivation & congratulations")
+                            Text("motivation &")
                                 .fontWeight(.thin)
                                 .italic()
                                 .foregroundColor(Color.white)
+                            
+                            
+                            Text("celebrations!")
+                                .fontWeight(.thin)
+                                .italic()
+                                .foregroundColor(Color.white)
+                            
+                            
                         }
                         
                         Spacer ()
