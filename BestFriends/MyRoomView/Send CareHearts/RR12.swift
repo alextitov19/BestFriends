@@ -52,7 +52,7 @@ struct RR12: View {
 //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
-        customMessage = "What's UP?; " + user.firstName + " : " + customMessage;
+        customMessage = "What's the good news?; " + user.firstName + " : " + customMessage;
         
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
@@ -200,19 +200,27 @@ struct RR12: View {
                                     .multilineTextAlignment(.center)
                                     .opacity(0.7)
                             
-                            Text("is 'purple'")
+                            Text("changed to 'purple'")
                                 .font(.system(size: 20, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                                     .opacity(0.7)
                             
-                            Text("They are EXCITED about something")
+                            Spacer()
+                                .frame(height: 15)
+                            
+                            
+                            Text("Send")
                                 .font(.system(size: 28, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                                     .opacity(0.7)
                             
-                     
+                            Text("Congratulations!!!")
+                                .font(.system(size: 28, weight: .light))
+                                .foregroundColor(ColorManager .grey1)
+                                    .multilineTextAlignment(.center)
+                                    .opacity(0.7)
 
                             
                             Spacer()
@@ -224,7 +232,7 @@ struct RR12: View {
                 VStack {
                     
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 100)
                     ZStack {
                         
                         VStack {
@@ -233,7 +241,7 @@ struct RR12: View {
                                     TextField("", text: $customMessage)
                                         .placeholder(when: customMessage.isEmpty) {
                                             HStack {
-                                                Text("Tell me What's UP in Chat...")
+                                                Text("Tell me the good news in Chat...")
                                                     .foregroundColor(Color.white)
                                                     .fontWeight(.thin)
                                                 Spacer()
@@ -247,7 +255,7 @@ struct RR12: View {
                                         .padding(.horizontal, 50)
                                         .overlay(
                                             RoundedRectangle(cornerRadius: 10)
-                                                .stroke(Color.black)
+                                                .stroke(Color.white)
                                             //                                                            .background(ColorManager.purple3)
                                                 .frame(height: 50)
                                                 .padding(.horizontal, 40)
