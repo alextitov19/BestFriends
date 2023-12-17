@@ -70,7 +70,7 @@ struct RR32: View {
              
                     VStack {
                         
-                      Text("Difficult Day?")
+                      Text("Having Difficult Day")
                             .font(.system(size: 30))
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
@@ -158,13 +158,13 @@ struct RR32: View {
                         .frame(height: 15)
                     
                     VStack {
-                        Text("But, maybe you're not ready to talk")
+                        Text("But, but not comfortable")
                             .font(.system(size: 17))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
                         
-                        Text("about it yet with anyone.")
+                        Text("talking to anyone yet.")
                             .font(.system(size: 17))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -173,17 +173,17 @@ struct RR32: View {
                         Spacer()
                             .frame(height: 7)
                         
-                        Text("However, you would love some emotional support")
-                            .font(.system(size: 15))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                        
-                        Text("from friends in the meantime...")
-                            .font(.system(size: 15))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
+//                        Text("Get emotional support")
+//                            .font(.system(size: 15))
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(Color.white)
+//
+//                        Text("from friends in the meantime...")
+//                            .font(.system(size: 15))
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(Color.white)
                         
                         Spacer()
                             .frame(height: 15)
@@ -194,7 +194,7 @@ struct RR32: View {
                             
                             HStack {
                                 
-                                Text("Request")
+                                Text("Let friends help via")
                                     .font(.system(size: 15))
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
@@ -274,7 +274,7 @@ struct RR32: View {
                                             .multilineTextAlignment(.center)
                                             .foregroundColor(Color.cyan)
                                         
-                                        Text("changes to cyan")
+                                        Text("matches vibe")
                                             .font(.system(size: 9))
                                             .fontWeight(.bold)
                                             .multilineTextAlignment(.center)
@@ -293,17 +293,25 @@ struct RR32: View {
                    
                             }
             
-            Text("my Vibe")
-                .font(.system(size: 60))
-                .fontWeight(.bold)
-                .multilineTextAlignment(.center)
-                .foregroundColor(ColorManager .grey2)
-                .rotationEffect(.degrees(-20))
-                .blinking(duration: 3.0)
-                .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                .opacity(0.25)
-            
-            
+//            Text("please \nsend CareHearts")
+//                .font(.system(size: 30))
+//                .fontWeight(.bold)
+//                .multilineTextAlignment(.center)
+//                .foregroundColor(ColorManager .grey2)
+//                .rotationEffect(.degrees(-20))
+////                .blinking(duration: 3.0)
+//                .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+//                .opacity(0.25)
+//
+//            Text("CareHearts")
+//                .font(.system(size: 30))
+//                .fontWeight(.bold)
+//                .multilineTextAlignment(.center)
+//                .foregroundColor(ColorManager .grey2)
+//                .rotationEffect(.degrees(-20))
+////                .blinking(duration: 3.0)
+//                .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+//                .opacity(0.25)
             
             
             
@@ -314,22 +322,28 @@ struct RR32: View {
                   
                     
                     
-              
+          
                     
                     VStack {
                         
-                        Text("GREAT Day!")
-                            .font(.system(size: 30))
-                            .fontWeight(.regular)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey1)
-//                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                            .opacity(0.4)
-                        
-                       
-                        
-                        
-                        
+//                        Text("All Good")
+//                            .font(.system(size: 30))
+//                            .fontWeight(.regular)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(ColorManager .grey1)
+////                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+//                            .opacity(0.4)
+//                        
+//                        Text("Love you guys")
+//                            .font(.system(size: 30))
+//                            .fontWeight(.regular)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(ColorManager .grey1)
+////                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+//                            .opacity(0.4)
+//                        
+//                        
+//                        
                         
                     }
                         //                ************************************************
@@ -360,13 +374,13 @@ struct RR32: View {
                                     
                              
                                     
-                                    Text("Yep, having")
+                                    Text("Yep, it's")
                                         .font(.system(size: 13))
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(Color.purple)
                                     
-                                    Text("a great day!")
+                                    Text("a good day!")
                                         .font(.system(size: 13))
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
@@ -378,84 +392,29 @@ struct RR32: View {
                             .cornerRadius(100)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         }
+         
+                                    Text("All good \nlove you guys!")
+                                        .font(.system(size: 30))
+                                        .fontWeight(.bold)
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(ColorManager .grey2)
+                                        .rotationEffect(.degrees(-20))
+                        //                .blinking(duration: 3.0)
+                                        .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                                        .opacity(0.25)
+                  
                     }
-                            
+           
+                    
+                    
+                    
                             //***************************************
                             
                             
                             
                             //                ********************************************
                             
-                            
-//                            ZStack {
-//
-//                                //                    Image(systemName: "cube.fill")
-//                                Image("comicBubble")
-//                                    .resizable()
-//                                    .foregroundColor(Color.cyan)
-//                                    .frame(width: 340, height: 140)
-//                                    .shadow(color: Color.orange, radius: 3, x: 3, y: 3)
-//                                    .opacity(0.95)
-//                                //                            .blinking(duration: 5.0)
-//
-//                                VStack {
-//
-//                                    Text("Wondering what friends are up too,")
-//                                        .font(.system(size: 17))
-//                                        .fontWeight(.light)
-//                                        .multilineTextAlignment(.center)
-//                                        .foregroundColor(Color.white)
-//
-//
-//                                    Text("and don't want to text")
-//                                        .font(.system(size: 17))
-//                                        .fontWeight(.light)
-//                                        .multilineTextAlignment(.center)
-//                                        .foregroundColor(Color.white)
-//
-//                                    HStack {
-//
-//                                        Text("request a PhotoPOP")
-//                                            .font(.system(size: 20))
-//                                            .fontWeight(.light)
-//                                            .multilineTextAlignment(.center)
-//                                            .foregroundColor(Color.orange)
-//
-//                                        //                                Spacer ()
-//                                        //                                    .frame(width: 12)
-//                                        //
-//                                        //
-//                                        ZStack {
-//
-//                                            Image(systemName: "circle.fill")
-//
-//                                                .resizable()
-//                                                .scaledToFit()
-//                                                .frame(width: 30, height: 30)
-//                                                .foregroundColor(Color.orange)
-//                                                .opacity(0.95)
-//
-//
-//                                            Image("IconPhotoNew")
-//                                                .resizable()
-//                                                .scaledToFit()
-//                                                .frame(width: 25, height: 25)
-//                                                .foregroundColor(Color.purple)
-//                                                .glow(color: Color.white, radius: 0.3)
-//                                                .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-//                                                .opacity(0.95)
-//                                        }
-//                                    }
-//
-//                                    Spacer ()
-//                                        .frame(height: 12)
-//
-//                                }
-//                            }
-//                        }
-                        
-                        
-                        
+                   
                         //                ************************************************
                         VStack {
                             
@@ -580,7 +539,7 @@ struct RR32: View {
                                         .glow(color: Color.purple, radius: 2)
                                         .opacity(0.6)
                                         .blinking(duration: 3.0)
-                                        .alert("We just let your friends know your Vibe changed", isPresented: $showingAlert) {
+                                        .alert("Ok, we'er asking your friends to send emotional support via CareHearts. We and your friends are here for you.", isPresented: $showingAlert) {
                                             Button("OK", role: .cancel) { }
                                             
                                         }

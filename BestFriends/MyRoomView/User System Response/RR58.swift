@@ -96,7 +96,7 @@ struct RR58: View {
                         label: {
                             
                             ZStack {
-                                Text("Daily            Vibe")
+                                Text("Bad               Day")
                                     .fontWeight(.light)
                                     .frame(width: 220, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -119,12 +119,12 @@ struct RR58: View {
                     )}
                 
                 VStack {
-                    Text("letting your friends know")
+                    Text("receiving non-verbal")
                         .fontWeight(.thin)
                         .italic()
                         .foregroundColor(Color.white)
                     
-                    Text("what's up with you")
+                    Text("help from friends")
                         .fontWeight(.thin)
                         .italic()
                         .foregroundColor(Color.white)
@@ -232,7 +232,7 @@ struct RR58: View {
                         
                         
                         Spacer ()
-                            .frame(width: 40)
+                            .frame(width: 50)
                         
                         
                         VStack {
@@ -257,7 +257,7 @@ struct RR58: View {
                         }
                         
                         Spacer ()
-                            .frame(width: 30)
+                            .frame(width: 40)
                         
                         
                         Text("received")
