@@ -35,17 +35,21 @@ struct RR56: View {
             Color.orange
                 .opacity(0.1)
                 .ignoresSafeArea()
-  
-            AdPlayerView(name: "background_7")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-                .opacity(0.5)
-            
-            
-//            AdPlayerView(name: "easyHearts2")
+//
+//            AdPlayerView(name: "background_7")
 //                .ignoresSafeArea()
 //                .blendMode(.screen)
-//                .opacity(0.15)
+//                .opacity(0.5)
+            
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.9)
+            
+            AdPlayerView(name: "girlFriends1")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.6)
             
             
             ZStack{
@@ -198,67 +202,67 @@ struct RR56: View {
 //                            }
 //                        }
                     
-                        VStack {
+//                        VStack {
                             
-                            ZStack {
-                                
-                                //*********************************************** Motion
-                                GeometryReader { geo in
-                                    HStack(spacing: 280) {
-                                        
-                                        Image("")
-                                            .aspectRatio(contentMode: .fit)
-                                        //                                        .blinking(duration: 6.0)
-                                        
-                                        Spacer()
-                                            .frame(width: 50)
-                                        
-                                        ZStack {
-                                            
-                                            //    ********************************************
-                                            Image("CoolGuy")
-                                            //                                            .aspectRatio(contentMode: .fit)
-                                                .frame(width: 120, height: 120)
-                                                .blinking(duration: 7.0)
-                                            
-                                            Text("You got CareHeart")
-                                                .fontWeight(.medium)
-                                                .frame(width: 200, height: 40)
-                                                .foregroundColor(Color.white)
-                                                .font(.system(size: 20))
-                                                .background(Color.cyan)
-                                                .cornerRadius(7)
-                                                .rotationEffect(.degrees(-38))
-                                                .opacity(0.8)
-                                            //                                            .glow(color: ColorManager .grey4, radius: 3)
-                                                .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
-                                                .blinking(duration: 7.0)
-                                            
-                                            //**********************************************************
-                                            Spacer()
-                                                .frame(height: 5)
-                                        }
-                                        
-                                        Image("")
-                                            .aspectRatio(contentMode: .fit)
-                                            .frame(width: geo.size.width, alignment: .leading)
-                                        
-                                        
-                                        
-                                    }
-                                    .frame(width: geo.size.width, height: geo.size.height,
-                                           alignment: animate ? .trailing : .leading)
-                                }
-                                .ignoresSafeArea()
-                                .onAppear {
-                                    withAnimation(animation) {
-                                        animate.toggle()
-                                    }
-                                    
-                                }
-                            }
-                            
-                        }
+//                            ZStack {
+//
+//                                //*********************************************** Motion
+//                                GeometryReader { geo in
+//                                    HStack(spacing: 280) {
+//
+//                                        Image("")
+//                                            .aspectRatio(contentMode: .fit)
+//                                        //                                        .blinking(duration: 6.0)
+//
+//                                        Spacer()
+//                                            .frame(width: 50)
+//
+//                                        ZStack {
+//
+//                                            //    ********************************************
+//                                            Image("CoolGuy")
+//                                            //                                            .aspectRatio(contentMode: .fit)
+//                                                .frame(width: 120, height: 120)
+//                                                .blinking(duration: 7.0)
+//
+//                                            Text("You got CareHeart")
+//                                                .fontWeight(.medium)
+//                                                .frame(width: 200, height: 40)
+//                                                .foregroundColor(Color.white)
+//                                                .font(.system(size: 20))
+//                                                .background(Color.cyan)
+//                                                .cornerRadius(7)
+//                                                .rotationEffect(.degrees(-38))
+//                                                .opacity(0.8)
+//                                            //                                            .glow(color: ColorManager .grey4, radius: 3)
+//                                                .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
+//                                                .blinking(duration: 7.0)
+//
+//                                            //**********************************************************
+//                                            Spacer()
+//                                                .frame(height: 5)
+//                                        }
+//
+//                                        Image("")
+//                                            .aspectRatio(contentMode: .fit)
+//                                            .frame(width: geo.size.width, alignment: .leading)
+//
+//
+//
+//                                    }
+//                                    .frame(width: geo.size.width, height: geo.size.height,
+//                                           alignment: animate ? .trailing : .leading)
+//                                }
+//                                .ignoresSafeArea()
+//                                .onAppear {
+//                                    withAnimation(animation) {
+//                                        animate.toggle()
+//                                    }
+//
+//                                }
+//                            }
+//
+//                       }
 
             VStack {
                                 
