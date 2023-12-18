@@ -103,25 +103,30 @@ struct CH9: View {
                 VStack {
 
 
-
+                    Text("Jump up high,")
+                                            .font(.system(size: 20))
+                                            .foregroundColor(ColorManager .grey1)
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
+                 
+                    Text("you'll see them")
+                                            .font(.system(size: 20))
+                                            .foregroundColor(ColorManager .grey1)
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
+                    
+                    Text("floating towards you!")
+                                            .font(.system(size: 20))
+                                            .foregroundColor(ColorManager .grey1)
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
                     
                     VStack {
                         
 
                         
                         
-                        Text("Jump up high and you will")
-                                                .font(.system(size: 20))
-                                                .foregroundColor(ColorManager .grey1)
-                                                .fontWeight(.light)
-                                                .multilineTextAlignment(.center)
-                     
-                        Text("see it floating towards you!")
-                                                .font(.system(size: 20))
-                                                .foregroundColor(ColorManager .grey1)
-                                                .fontWeight(.light)
-                                                .multilineTextAlignment(.center)
-             
+               
                         
                         Spacer()
                             .frame(height: 30)

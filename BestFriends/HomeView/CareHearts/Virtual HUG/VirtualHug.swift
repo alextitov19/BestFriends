@@ -125,7 +125,7 @@ struct VirtualHug: View {
                             .foregroundColor(ColorManager .grey2)
 //                                        .rotationEffect(.degrees(-20))
 //                                        .blinking(duration: 3.0)
-                           .shadow(color: Color.white, radius: 2, x: 1, y: 1)
+//                           .shadow(color: Color.white, radius: 2, x: 1, y: 1)
                             .opacity(0.5)
                         
                         
@@ -136,7 +136,7 @@ struct VirtualHug: View {
                             .foregroundColor(ColorManager .grey2)
 //                                        .rotationEffect(.degrees(-20))
 //                                        .blinking(duration: 3.0)
-                           .shadow(color: Color.white, radius: 2, x: 1, y: 1)
+//                           .shadow(color: Color.white, radius: 2, x: 1, y: 1)
                             .opacity(0.5)
                         
                         
