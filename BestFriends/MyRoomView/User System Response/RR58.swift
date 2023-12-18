@@ -172,7 +172,7 @@ struct RR58: View {
                                     }
                                     
                                     Spacer ()
-                                        .frame(width: 20)
+                                        .frame(width: 30)
                                     
                                     Text("CareHearts")
                                         .fontWeight(.light)
@@ -189,7 +189,7 @@ struct RR58: View {
                             })
                         
                         Spacer ()
-                            .frame(width: 20)
+                            .frame(width: 30)
                         
                         
                         NavigationLink(
@@ -232,7 +232,7 @@ struct RR58: View {
                         
                         
                         Spacer ()
-                            .frame(width: 50)
+                            .frame(width: 65)
                         
                         
                         VStack {
@@ -257,7 +257,7 @@ struct RR58: View {
                         }
                         
                         Spacer ()
-                            .frame(width: 40)
+                            .frame(width: 55)
                         
                         
                         Text("received")

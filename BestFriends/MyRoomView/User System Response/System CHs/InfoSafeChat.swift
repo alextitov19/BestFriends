@@ -413,9 +413,9 @@ struct InfoSafeChat: View {
 
                     })
                                                            
-//                    Spacer()
-//                        .frame(height: 150)
-//
+                    Spacer()
+                        .frame(height: 150)
+
                                                    
             }
         }
@@ -423,24 +423,8 @@ struct InfoSafeChat: View {
 }
                 
             
-            }
-            
-            
-            
-            
-            
+            }   
         }
     }
 }
 
-//
-//struct RectView: View {
-//    let user: User
-//    let friend: User
-//    let color: Color
-//
-//    var body: some View {
-//        Text(friend.firstName + " " + String(friend.lastName.first!))
-//            .fontWeight(.bold)
-//            .frame(width: 80, height: 80)
-//            .for

@@ -42,7 +42,10 @@ struct HugPreload: View {
                 .blendMode(.screen)
                 .opacity(0.9)
             
-         
+            AdPlayerView(name: "girlSpace1")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.4)
             
             ZStack{
                 
@@ -170,7 +173,7 @@ struct HugPreload: View {
                         
                         ZStack {
                             NavigationLink(destination: RR27(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.purple, friendName: "Sending \nMotivation")
+                                HugCircle (color: Color.purple, friendName: "Wishing \nLuck")
                             })
                             .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                             .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
@@ -212,7 +215,7 @@ struct HugPreload: View {
                             .frame(width: 35)
                         
                         NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
-                            HugCircle (color: ColorManager .purple5, friendName: "Friend \ndid \ngood")
+                            HugCircle (color: ColorManager .purple5, friendName: "Say \nCongrats!")
                         })
                         .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
                         .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
@@ -240,30 +243,32 @@ struct HugPreload: View {
                                         .frame(width: 50)
                                     
                                     ZStack {
-                                        
-                                        //    ********************************************
-                                        Image("FatGuy")
-//                                            .aspectRatio(contentMode: .fit)
-                                            .frame(width: 120, height: 120)
-                                            .blinking(duration: 7.0)
-                                        
-                                        Text("Send CareHearts")
-                                            .fontWeight(.medium)
-                                            .frame(width: 200, height: 40)
-                                            .foregroundColor(Color.black)
-                                            .font(.system(size: 20))
-                                            .background(ColorManager .purple1)
-                                            .cornerRadius(7)
-                                            .rotationEffect(.degrees(-25))
-                                            .opacity(0.8)
-                                        //                                            .glow(color: ColorManager .grey4, radius: 3)
-                                            .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
-                                            .blinking(duration: 7.0)
-                                        
-                                        //**********************************************************
-                                        
-                                    }
-                                    
+                                  
+                                     
+//                                        NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
+                                            Image("FatGuy")
+                                            //                                            .aspectRatio(contentMode: .fit)
+                                                .frame(width: 120, height: 120)
+                                                .blinking(duration: 7.0)
+                                            
+                                            Text("Send CareHearts")
+                                                .fontWeight(.medium)
+                                                .frame(width: 200, height: 40)
+                                                .foregroundColor(Color.black)
+                                                .font(.system(size: 20))
+                                                .background(ColorManager .purple1)
+                                                .cornerRadius(7)
+                                                .rotationEffect(.degrees(-25))
+                                                .opacity(0.8)
+                                            //                                            .glow(color: ColorManager .grey4, radius: 3)
+                                                .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
+                                                .blinking(duration: 7.0)
+                                            
+                                         
+                                        }
+//                                    )}
+                                                      
+    //**********************************************************
                                     Image("")
                                         .aspectRatio(contentMode: .fit)
                                         .frame(width: geo.size.width, alignment: .leading)
@@ -283,6 +288,11 @@ struct HugPreload: View {
                             }
                         }
   
+                        
+    //    ********************************************
+                        
+                        //    ********************************************
+                        
                         
                         VStack {
                             
