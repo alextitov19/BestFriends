@@ -117,7 +117,34 @@ struct VirtualHug: View {
                     
                     
                     VStack {
-                  
+                        
+                        Text("your friends")
+                            .font(.system(size: 35))
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager .grey2)
+//                                        .rotationEffect(.degrees(-20))
+//                                        .blinking(duration: 3.0)
+                           .shadow(color: Color.white, radius: 2, x: 1, y: 1)
+                            .opacity(0.5)
+                        
+                        
+                        Text("are all here for you")
+                            .font(.system(size: 35))
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager .grey2)
+//                                        .rotationEffect(.degrees(-20))
+//                                        .blinking(duration: 3.0)
+                           .shadow(color: Color.white, radius: 2, x: 1, y: 1)
+                            .opacity(0.5)
+                        
+                        
+                        
+                        
+                      
+                       Spacer ()
+                            .frame(height: 20)
                         
                         ZStack{
                             
@@ -126,29 +153,35 @@ struct VirtualHug: View {
                             VStack {
                                 VStack {
                                     
+                                    
+                                    
+                             
+                                    
+                                    
                                     VStack {
                                         
                                         Text("hold iPhone to")
-                                            .font(.system(size: 47))
-                                            .fontWeight(.bold)
+                                            .font(.system(size: 25))
+//                                            .italic()
+                                            .fontWeight(.light)
                                             .multilineTextAlignment(.center)
-                                            .foregroundColor(ColorManager .grey2)
-                                            .rotationEffect(.degrees(-20))
-                                            .blinking(duration: 3.0)
-                                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                                            .foregroundColor(Color.white)
+//                                            .rotationEffect(.degrees(-20))
+                                           .blinking(duration: 3.0)
+//                                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                                             .opacity(0.3)
                                      
-                                        Spacer ()
-                                            .frame(height: 40)
+                                       
                                         
-                                        Text("        your HEART")
-                                            .font(.system(size: 47))
-                                            .fontWeight(.bold)
+                                        Text("your HEART")
+                                            .font(.system(size: 25))
+//                                            .italic()
+                                            .fontWeight(.light)
                                             .multilineTextAlignment(.center)
-                                            .foregroundColor(ColorManager .grey2)
-                                            .rotationEffect(.degrees(-20))
-                                            .blinking(duration: 3.0)
-                                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                                            .foregroundColor(Color.white)
+//                                            .rotationEffect(.degrees(-20))
+                                           .blinking(duration: 3.0)
+//                                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                                             .opacity(0.3)
                                         
                                     }
@@ -160,19 +193,21 @@ struct VirtualHug: View {
                                 Image(systemName: "heart.fill")
                                     .resizable()
                                     .foregroundColor(.purple)
-                                    .frame(width: 400, height: 300)
+                                    .frame(width: 300, height: 200)
                                     .shadow(color: .blue, radius: 65, x: 30, y: 50)
                                     .opacity(0.3)
                                 
                                 VStack {
+                                   
+                                    Spacer()
+                                        .frame(height: 80)
                                     
-                                    
-                                    Text("TAP")
+                                    Text("TAP here, then...")
                                         .font(.system(size: 25))
                                         .fontWeight(.light)
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(Color.white)
-//                                        .blinking(duration: 3.0)
+//                                       .blinking(duration: 3.0)
                                         .opacity(0.5)
                                         .padding()
                                         .onTapGesture {

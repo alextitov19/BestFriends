@@ -88,7 +88,7 @@ struct RR56: View {
                            
                         HStack {
                             NavigationLink(destination: VirtualHug(user: user, friends: friends), label: {
-                                HugCircle (color: Color.cyan, friendName: "Grabbing \nHugs")
+                                HugCircle (color: Color.cyan, friendName: "Welcome \n your \nHugs")
                             })
                             .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
                             .shadow(color: Color.blue, radius: 5, x: -2, y: -2)
