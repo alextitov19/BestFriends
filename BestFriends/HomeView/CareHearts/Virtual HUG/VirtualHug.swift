@@ -118,7 +118,7 @@ struct VirtualHug: View {
                     
                     VStack {
                         
-                        Text("your friends")
+                        Text("We're all here")
                             .font(.system(size: 35))
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
@@ -129,7 +129,7 @@ struct VirtualHug: View {
                             .opacity(0.5)
                         
                         
-                        Text("are all here for you")
+                        Text("for you")
                             .font(.system(size: 35))
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
