@@ -46,7 +46,7 @@ struct HomeView: View {
     
     
     
-    let reloadingTimer = Timer.publish(every: 30, on: .main, in: .common).autoconnect()
+    let reloadingTimer = Timer.publish(every: 45, on: .main, in: .common).autoconnect()
     
     var body: some View {
         NavigationView {

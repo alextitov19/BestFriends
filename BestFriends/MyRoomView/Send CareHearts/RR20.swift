@@ -130,10 +130,10 @@ struct RR20: View {
                           .blendMode(.screen)
                           .opacity(0.9)
                       
-                      AdPlayerView(name: "girlFriends1")
-                          .ignoresSafeArea()
-                          .blendMode(.screen)
-                          .opacity(0.6)
+//                      AdPlayerView(name: "girlFriends1")
+//                          .ignoresSafeArea()
+//                          .blendMode(.screen)
+//                          .opacity(0.6)
 //                      
             }
             
