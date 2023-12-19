@@ -546,7 +546,7 @@ struct HomeView: View {
                     for f in homeData!.friends {
                         if f.id == newId {
                             //MARK: Sending push notification to friend "f"
-                            RestApi.instance.sendPushNotification(title: "BestFriends", body: homeData!.user.firstName + " " +  String(homeData!.user.lastName.first!) + "  Hey, I sent a message in Chat. Do you have time to talk for a minute.", APNToken: f.APNToken )
+                            RestApi.instance.sendPushNotification(title: "BestFriends", body: homeData!.user.firstName + " " +  String(homeData!.user.lastName.first!) + "  Hi, I just sent a message in Chat. Please check it when you get a chance.", APNToken: f.APNToken )
                         }
                     }
                 }
