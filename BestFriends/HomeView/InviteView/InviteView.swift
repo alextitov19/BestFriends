@@ -67,8 +67,8 @@ struct InviteView: View {
 //                NavigationLink(
 //                    destination: EmptyView(),
 //                   label: {
-                       Text("1) First, ask friend to download BFs app & register \n\n2) Then, enter friends email (case sensitive) that they registered with below \n\n3) Tap [Invite]")
-                           .fontWeight(.thin)
+                       Text("1) Ask friend to download app & register \n\n2) Enter friends email (case sensitive) that they registered with below \n\n3) Tap [Invite]")
+                           .fontWeight(.light)
                            .frame(width: 400, height: 150)
                            .foregroundColor(Color.green)
                            .font(.system(size: 17))
@@ -98,12 +98,7 @@ struct InviteView: View {
                 
               
               
-                Text("Note: we DO NOT send friend an email \nasking them to download app")
-                    .fontWeight(.regular)
-                    .italic()
-                    .foregroundColor(.red)
-                    .font(.system(size: 17))
-//                    .padding()
+             
                 
              
                 if user.friends?.count ?? 0 < 5 {
@@ -135,7 +130,7 @@ struct InviteView: View {
                             Spacer()
                                 .frame(height: 10)
                             
-                            Text("Accepting Invite Requests")
+                            Text("How Friends Add You")
                                 .foregroundColor(ColorManager .grey2)
                                 .font(.system(size: 30, weight: .bold))
                             
@@ -143,21 +138,54 @@ struct InviteView: View {
 //                                .foregroundColor(ColorManager .grey2)
 //                                .font(.system(size: 30, weight: .bold))
 //
+                           
+                            Spacer()
+                                .frame(height: 20)
                             
-                            Text("1) Friend navigates to this page")
+                            
+                            Text("Note: we DO NOT send an email asking ")
                                 .fontWeight(.regular)
                                 .italic()
                                 .foregroundColor(.red)
                                 .font(.system(size: 17))
+          
+                            
+                            Text("them to accept friend invitation")
+                                .fontWeight(.regular)
+                                .italic()
+                                .foregroundColor(.red)
+                                .font(.system(size: 17))
+                            
+                            
+                            Spacer()
+                                .frame(height: 7)
+//
+//
+//                            Text("1) Ask friend to navigate to their [Add Friends] page \n\n2) Friend taps [Accept] ... now showing below")
+//                                .fontWeight(.light)
+//                                .frame(width: 400, height: 150)
+//                                .foregroundColor(Color.green)
+//                                .font(.system(size: 17))
+//                                .background(ColorManager.grey4)
+//                                .cornerRadius(10)
+//                                .padding()
+//
+//
+                            
+                            Text("1) Ask friend to navigate to their [Add Friends] page")
+                                .fontWeight(.light)
+                                .italic()
+                                .foregroundColor(.green)
+                                .font(.system(size: 15))
                             
                             Spacer()
                                 .frame(height: 7)
                             
-                            Text("2) Friend taps [Accept]")
-                                .fontWeight(.regular)
+                            Text("2) Friend taps [Accept] ... now showing below")
+                                .fontWeight(.light)
                                 .italic()
-                                .foregroundColor(.red)
-                                .font(.system(size: 17))
+                                .foregroundColor(.green)
+                                .font(.system(size: 15))
                             
                             
                         }
