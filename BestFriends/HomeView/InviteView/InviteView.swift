@@ -55,13 +55,10 @@ struct InviteView: View {
                                          })
                 
                 
-                Text("Add up to")
+                Text("Add up to 5 people")
                     .foregroundColor(ColorManager .grey2)
                     .font(.system(size: 30, weight: .bold))
-                
-                Text("5 BestFriends")
-                    .foregroundColor(ColorManager .grey2)
-                    .font(.system(size: 30, weight: .bold))
+             
                 
                 Spacer()
                     .frame(height: 10)
@@ -77,6 +74,7 @@ struct InviteView: View {
                            .font(.system(size: 17))
                            .background(ColorManager.grey4)
                            .cornerRadius(10)
+                           .padding()
                           
 //                   })
                 
@@ -101,10 +99,10 @@ struct InviteView: View {
               
               
                 Text("Note: we DO NOT send friend an email \nasking them to download app")
-                    .fontWeight(.thin)
+                    .fontWeight(.regular)
                     .italic()
-                    .foregroundColor(.white)
-                    .font(.system(size: 15))
+                    .foregroundColor(.red)
+                    .font(.system(size: 17))
 //                    .padding()
                 
              
@@ -137,34 +135,29 @@ struct InviteView: View {
                             Spacer()
                                 .frame(height: 10)
                             
-                            Text("Accepting")
+                            Text("Accepting Invite Requests")
                                 .foregroundColor(ColorManager .grey2)
                                 .font(.system(size: 30, weight: .bold))
                             
-                            Text("Friend Requests")
-                                .foregroundColor(ColorManager .grey2)
-                                .font(.system(size: 30, weight: .bold))
-                            
+//                            Text("Invite Requests")
+//                                .foregroundColor(ColorManager .grey2)
+//                                .font(.system(size: 30, weight: .bold))
+//
                             
                             Text("1) Friend navigates to this page")
-                                .fontWeight(.thin)
-//                                .frame(width: 400, height: 150)
-                                .foregroundColor(Color.green)
+                                .fontWeight(.regular)
+                                .italic()
+                                .foregroundColor(.red)
                                 .font(.system(size: 17))
-                                .background(ColorManager.grey4)
-//                                .multilineTextAlignment(alignment: Leading)
-                                .cornerRadius(10)
                             
                             Spacer()
                                 .frame(height: 7)
                             
-                            Text("2) Friend taps [Accept] when it pops up")
-                                .fontWeight(.thin)
-//                                .frame(width: 400, height: 150)
-                                .foregroundColor(Color.green)
+                            Text("2) Friend taps [Accept]")
+                                .fontWeight(.regular)
+                                .italic()
+                                .foregroundColor(.red)
                                 .font(.system(size: 17))
-                                .background(ColorManager.grey4)
-                                .cornerRadius(10)
                             
                             
                         }
