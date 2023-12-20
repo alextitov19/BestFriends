@@ -140,7 +140,7 @@ struct RR58: View {
                                 .italic()
                                 .foregroundColor(Color.white)
                             
-                            Text("help from friends")
+                            Text("input from friends")
                                 .fontWeight(.thin)
                                 .italic()
                                 .foregroundColor(Color.white)
