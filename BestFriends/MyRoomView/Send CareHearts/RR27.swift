@@ -50,7 +50,7 @@ struct RR27: View {
 //        let arr = [user.id, friend.id]
         if selectedFriends.count == 0 {return}
         
-        customMessage = "You can do this; " + user.firstName + " : " + customMessage;
+        customMessage = "You got this; " + user.firstName + " : " + customMessage;
         
         for friendID in selectedFriends {
             let arr = [user.id, friendID]
@@ -120,10 +120,31 @@ struct RR27: View {
           
     VStack {
               
+     
+        Text("Friend's atmosphere")
+            .font(.system(size: 30))
+            .fontWeight(.bold)
+            .multilineTextAlignment(.center)
+            .foregroundColor(Color .white)
+            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+            .opacity(0.35)
+        
+        Text("changed to Purple")
+            .font(.system(size: 30))
+            .fontWeight(.bold)
+            .multilineTextAlignment(.center)
+            .foregroundColor(Color .white)
+            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+            .opacity(0.35)
+        
+        
+        
+        
+        
             VStack {
                   
                     Spacer()
-                        .frame(height: 45)
+                        .frame(height: 25)
                     
                     ZStack {
                   
@@ -131,7 +152,7 @@ struct RR27: View {
                         Image(systemName: "cube.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 250, height: 200)
+                            .frame(width: 250, height: 150)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .opacity(0.5)
                        
@@ -164,7 +185,7 @@ struct RR27: View {
                 }
        
         Spacer()
-            .frame(height: 70)
+            .frame(height: 30)
                 
           
                 
@@ -330,7 +351,7 @@ struct RR27: View {
                                 .glow(color: Color.purple, radius: 2)
                                 .opacity(0.6)
                                 .blinking(duration: 3.0)
-                                .alert("Thanks for sending best wishes to your friend.", isPresented: $showingAlert) {
+                                .alert("You just got a big Thumps-up message in Chat.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
@@ -360,7 +381,7 @@ struct RR27: View {
                             })
                             
                             Spacer()
-                                .frame(height: 170)
+                                .frame(height: 70)
      
                         }
               
@@ -381,11 +402,11 @@ struct RR27: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) You just got a big Thumbs-up (check Chat) - TAP", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) You just got a big Thumps-up message in Chat", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "You just got a big Thumbs-up (check Chat) - TAP (check Chat) - TAP", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "You just got a big Thumps-up message in Chat", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                         print("Create a encouragement notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)
@@ -404,7 +425,7 @@ struct RR27: View {
         var body: some View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
-                .frame(width: 80, height: 80)
+                .frame(width: 70, height: 70)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .font(.system(size: 8))
                 .background(color)

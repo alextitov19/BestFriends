@@ -476,7 +476,7 @@ VStack {
                     
                     
 // *********** You can do it
-                case "You just got a big Thumbs-up (check Chat) - TAP":
+                case "You just got a big Thumps-up message in Chat":
                     canDoActive = true
                     
                 case "said WOW - thanks for the encouragement!":
