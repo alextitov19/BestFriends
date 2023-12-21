@@ -60,6 +60,9 @@ struct PhotoPopView: View {
             
             VStack {
                 
+                Spacer ()
+                    .frame(height: 40)
+                
                 ZStack {
                   
                         
@@ -79,9 +82,9 @@ struct PhotoPopView: View {
                         NavigationLink(
                             destination: PhotoPop3(user: user, friends: friends),
                             label: {
-                                Text("tell friend")
+                                Text("Alert friend")
                                     .fontWeight(.light)
-                                    .frame(width: 80, height: 30)
+                                    .frame(width: 100, height: 30)
                                     .foregroundColor(Color.white)
                                     .font(.system(size: 15))
                                     .background(ColorManager .grey3)
@@ -89,7 +92,12 @@ struct PhotoPopView: View {
                                     .cornerRadius(10)
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 2)
                             })
-                       
+                        
+                        
+                        Spacer ()
+                            .frame(width: 50)
+                        
+                        
                         Image("IconPhotoNew")
                             .resizable()
                             .scaledToFit()
@@ -100,6 +108,10 @@ struct PhotoPopView: View {
                                 pickerSourceType = .camera
                                 showingRecipients = true
                             }
+                        
+                        Spacer ()
+                            .frame(width: 50)
+                        
                         
                         
                         NavigationLink( destination:  CH5(user: user, friends: friends),
@@ -112,11 +124,9 @@ struct PhotoPopView: View {
                             //                        .blinking(duration: 2.0)
                                 .opacity(0.99)
                             
-                })
-            }
-                    
-                    
-                    
+                        })
+                    }
+               
                     
                     
                         
