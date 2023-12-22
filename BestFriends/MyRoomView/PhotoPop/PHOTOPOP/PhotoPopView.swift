@@ -175,13 +175,27 @@ struct PhotoPopView: View {
                                     isShowPhotoLibrary = !isShowPhotoLibrary
                                     showingRecipients = false
                                 }, label: {
-                                    Text("My Crush")
-                                        .fontWeight(.regular)
-                                        .frame(width: 150, height: 40)
-                                        .foregroundColor(.white)
-                                        .background(Color.cyan)
-                                        .cornerRadius(15)
-                                })
+                                    
+                                    ZStack {
+                                        Image(systemName: "heart")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 100, height: 100)
+                                            .foregroundColor(Color.white)
+                                            .opacity(0.5)
+                                            .glow(color: Color.white, radius: 1)
+                                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                                            .blinking(duration: 2.0)
+                                        
+                                        Text("My Crush")
+                                            .fontWeight(.regular)
+//                                            .frame(width: 150, height: 40)
+                                            .foregroundColor(.white)
+                                            .background(Color.cyan)
+                                            .cornerRadius(15)
+                                    }
+                                    })
+                                
                             } else {
                                 Button(action: {
                                     currentReceiver = recipient

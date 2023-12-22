@@ -125,7 +125,6 @@ struct HomeView: View {
                                     .frame(width: 27, height: 27)
                                     .foregroundColor(Color.white)
                                     .opacity(0.125)
-                                //                                    .rotationEffect(.degrees(-10))
                                     .glow(color: Color.white, radius: 1)
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 3)
                                     .blinking(duration: 2.0)

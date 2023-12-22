@@ -130,8 +130,8 @@ struct RR59: View {
                             
 //                            NavigationLink(destination: ChatInfo(user: user), label: {
                             
-                            NavigationLink(destination: RRDidGood(user: user, friends: friends), label: {
-                                HugCircle (color: ColorManager .grey1, friendName: "Yep, \nI did it")
+                            NavigationLink(destination: InfoSilence(user: user, friends: friends), label: {
+                                HugCircle (color: ColorManager .grey1, friendName: "Love \nTarts")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .white, radius: 5, x: 2, y: -2)
@@ -167,13 +167,13 @@ struct RR59: View {
         ZStack {
 
             NavigationLink(
-                destination: InfoSilence(user: user, friends: friends),
+                destination: RRDidGood(user: user, friends: friends),
                 label: {
-                    Text("Love \nTarts")
-                        .font(.system(size: 20))
-                        .foregroundColor(ColorManager .grey4)
+                    Text("YES")
+                        .font(.system(size: 30))
+                        .foregroundColor(ColorManager .grey3)
                         .fontWeight(.bold)
-                        .opacity(0.7)
+                        .opacity(0.8)
                         .multilineTextAlignment(.center)
 //                        .blinking(duration: 2.0)
             })
