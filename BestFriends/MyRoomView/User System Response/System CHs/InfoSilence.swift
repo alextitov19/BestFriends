@@ -56,7 +56,10 @@ struct InfoSilence: View {
                     .blendMode(.screen)
                     .opacity(0.3)
                 
-               
+                AdPlayerView(name: "easyHearts2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.2)
                 
             }
             
