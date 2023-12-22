@@ -128,12 +128,22 @@ struct RR59: View {
                             Spacer()
                                 .frame(width: 50)
                             
-                            NavigationLink(destination: ChatInfo(user: user), label: {
+//                            NavigationLink(destination: ChatInfo(user: user), label: {
+                            
+                            NavigationLink(destination: RRDidGood(user: user, friends: friends), label: {
                                 HugCircle (color: ColorManager .grey1, friendName: "Yep, \nI did it")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .white, radius: 5, x: 2, y: -2)
                             .opacity(0.75)
+                            
+//           ***************
+                            
+                            
+                            
+                            
+//                   ****************
+                            
                         }
                         
                         Spacer()
