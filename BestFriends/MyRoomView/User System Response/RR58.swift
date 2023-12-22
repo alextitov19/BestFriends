@@ -104,7 +104,7 @@ struct RR58: View {
                         // *********************************** My Vibe *************
                         
                         Spacer ()
-                            .frame(height: 100)
+                            .frame(height: 50)
                         
                         HStack {
                             NavigationLink(
@@ -290,7 +290,7 @@ struct RR58: View {
                     VStack {
                         
                         Spacer ()
-                            .frame(height: 750)
+                            .frame(height: 690)
                         
                         ZStack {
                             
@@ -331,7 +331,7 @@ struct RR58: View {
                         
                         
                         Spacer()
-                            .frame(height: 45)
+                            .frame(height: 40)
                         
                         //
                         //                                                    VStack {
@@ -356,10 +356,10 @@ struct RR58: View {
                     }
                 }
             
-            
-            
+//
+
             Spacer()
-                .frame(height: 170)
+                .frame(height: 80)
             
         }
     }
