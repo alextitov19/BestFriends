@@ -200,7 +200,7 @@ struct RR59: View {
                             
                             
                             NavigationLink(destination: EmptyView(), label: {
-                                HugCircle (color: ColorManager .grey1, friendName: "Gender \nLove")
+                                HugCircle (color: ColorManager .grey1, friendName: "empty")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .white, radius: 5, x: 2, y: -2)
