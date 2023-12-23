@@ -58,8 +58,14 @@ struct ShakePhotoPopView: View {
                 .onAppear(perform: loadData)
                 .padding(40)
             }
+            //        }
+            
+            Text("(tap image to move to next image)")
+                .font(.system(size: 15, weight: .light))
+                .italic()
+                .foregroundColor(Color.white)
         }
-//        .ignoresSafeArea()
+        
     }
     
     private func loadData() {

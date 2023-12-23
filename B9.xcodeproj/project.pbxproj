@@ -1668,10 +1668,10 @@
 				7A04C13C28553818003AB24A /* PhotoPopView.swift */,
 				7A04C13E2855390B003AB24A /* PhotoPopImageView.swift */,
 				7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */,
+				CF24815628F5060100D47AE3 /* PhotoPop3.swift */,
 				2DBF3EE82A61ACFF00CB1CAD /* RR5.swift */,
 				2DDCD97F2A8FEBAA00B1040F /* RR16.swift */,
 				CF6499DE294D4148003BBF83 /* INFOPreloadA.swift */,
-				CF24815628F5060100D47AE3 /* PhotoPop3.swift */,
 				2DFB03222A5D308600669948 /* CH5.swift */,
 				CF24815428F5018B00D47AE3 /* PhotoPop1.swift */,
 			);
@@ -2926,7 +2926,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -2958,7 +2958,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;
