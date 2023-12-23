@@ -101,7 +101,7 @@ struct PhotoPopView: View {
                         Image("IconPhotoNew")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 70, height: 70)
+                            .frame(width: 60, height: 60)
                             .foregroundColor(Color.cyan)
                         
                             .onTapGesture {
@@ -132,16 +132,16 @@ struct PhotoPopView: View {
                         
 // ************ Removed Gallary for now - keeps this more real-time ***************
                         
-//                        Image(systemName: "photo")
-//                            .resizable()
-//                            .scaledToFit()
-//                            .frame(width: 45, height: 45)
-//                            .foregroundColor(ColorManager .purple4)
-//                            .onTapGesture {
-//                                pickerSourceType = .photoLibrary
-//                                showingRecipients = true
-//                            }
-//                            .padding()
+                        Image(systemName: "photo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 60, height: 60)
+                            .foregroundColor(ColorManager .grey4)
+                            .onTapGesture {
+                                pickerSourceType = .photoLibrary
+                                showingRecipients = true
+                            }
+
                         
                         
                     }

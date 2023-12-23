@@ -35,16 +35,20 @@ struct NotificationsView: View {
         NavigationView {
             ZStack {
                 
-                ColorManager .grey4
-                    .ignoresSafeArea()
+                Color.black
+                    .opacity(0.2)
                     .onAppear(perform: getNotifications)
+            
                 
-                //                AdPlayerView(name: "Notifications2")
-                //                    .ignoresSafeArea()
-                //                    .blendMode(.screen)
+                AdPlayerView(name: "sky2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.9)
                 
                 
-                VStack {
+             
+                
+            VStack {
                     Text("Notifications")
                         .font(.system(size: 20, weight: .thin))
                         .foregroundColor(.white)

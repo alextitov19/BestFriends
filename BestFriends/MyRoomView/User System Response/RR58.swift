@@ -101,7 +101,7 @@ struct RR58: View {
                                         .rotationEffect(.degrees(-38))
                                         .opacity(0.8)
                                         .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
-                                    //                                    .blinking(duration: 7.0)
+//                                        .blinking(duration: 7.0)
                                     
                                     
                                 }
