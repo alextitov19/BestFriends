@@ -187,12 +187,12 @@ struct PhotoPopView: View {
                                             .shadow(color: Color.white, radius: 2, x: 0, y: 3)
                                             .blinking(duration: 2.0)
                                         
-                                        Text("My Crush")
+                                        Text("Today's")
                                             .fontWeight(.regular)
-//                                            .frame(width: 150, height: 40)
+                                            .frame(width: 80, height: 30)
                                             .foregroundColor(.white)
                                             .background(Color.cyan)
-                                            .cornerRadius(15)
+                                            .cornerRadius(10)
 //                                            .alert("Image sent. \n\nFriend receives push notification asking them to 'tap' notification and 'shake' iPhone - image pops up!", isPresented: $showingAlert) {
 //                                                Button("OK", role: .cancel) { }
                                         
@@ -218,7 +218,7 @@ struct PhotoPopView: View {
                         }
                         
                         
-                        Text("load My Crush pic for yourself")
+                        Text("Load your Today's favorite pic for yourself")
                             .font(.system(size: 15))
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
@@ -229,7 +229,7 @@ struct PhotoPopView: View {
                             .opacity(0.5)
                         
                        
-                        Text("just shake your iPhone to quickly view it")
+                        Text("Just shake your iPhone to quickly view it")
                             .font(.system(size: 15))
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
