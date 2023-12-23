@@ -97,7 +97,7 @@ struct BestFriendMessages: View {
 
                     VStack {
                         
-                        Text("SmileVault")
+                        Text("Vault of Hearts")
                             .font(.system(size: 23))
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.regular)
@@ -109,7 +109,7 @@ struct BestFriendMessages: View {
                         Spacer ()
                             .frame(height: 10)
                         
-                        Text("(Nice messages & Friend Strengths")
+                        Text("(Best messages")
                             .font(.system(size: 17))
                             .italic()
                             .foregroundColor(ColorManager .grey1)

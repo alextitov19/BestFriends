@@ -25,7 +25,7 @@ struct PhotoPopView: View {
     
     @State private var isLoading = false
     
-    
+//    @State private var showingAlert = false
     
     
     
@@ -193,6 +193,11 @@ struct PhotoPopView: View {
                                             .foregroundColor(.white)
                                             .background(Color.cyan)
                                             .cornerRadius(15)
+//                                            .alert("Image sent. \n\nFriend receives push notification asking them to 'tap' notification and 'shake' iPhone - image pops up!", isPresented: $showingAlert) {
+//                                                Button("OK", role: .cancel) { }
+                                        
+                                        
+                                        
                                     }
                                     })
                                 
@@ -369,3 +374,4 @@ struct PhotoPopView: View {
         }
     }
 
+//                                }
