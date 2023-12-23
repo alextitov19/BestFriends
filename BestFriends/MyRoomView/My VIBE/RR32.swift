@@ -187,7 +187,7 @@ struct RR32: View {
 //                                            .fontWeight(.bold)
 //                                            .multilineTextAlignment(.center)
 //                                            .foregroundColor(Color.cyan)
-//                                        
+//
 //                                        Text("CareHearts")
 //                                            .font(.system(size: 9))
 //                                            .fontWeight(.bold)
@@ -200,11 +200,13 @@ struct RR32: View {
                                     }
                                     
                                 }
-                                .frame(width: 100, height: 100, alignment: .center)
-                                .background(mood == 1 ? Color.cyan : ColorManager .grey4)
-                                .cornerRadius(100)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                   
+                             
+                                    
+                                    .frame(width: 100, height: 100, alignment: .center)
+                                    .background(mood == 1 ? Color.cyan : ColorManager .grey4)
+                                    .cornerRadius(100)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                             
                             }
             
                         }

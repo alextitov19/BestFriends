@@ -8,8 +8,13 @@ struct InfoSilence: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
+//    let user: User
+//    let friends: [User]
+//
     let user: User
+    let atmosphere: Atmosphere
     let friends: [User]
+    let friendAtmospheres: [Atmosphere]
     
     @State private var selectedFriends: [String] = []
     @State private var colors: [Color] = [ColorManager.grey2, ColorManager.grey2, ColorManager.grey2, ColorManager.grey2, ColorManager.grey2]
@@ -66,7 +71,7 @@ struct InfoSilence: View {
 
 
             VStack {
-
+            
                 HStack {
                     
                     Text("")
@@ -210,11 +215,24 @@ struct InfoSilence: View {
                 }
                 
                 
+                NavigationLink(
+                    destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                    label: {
+                        Text("HeartVault")
+                            .fontWeight(.thin)
+                            .frame(width: 200, height: 30)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 25))
+                            .background(Color.cyan)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        
+                    })
                     
 //  *********************************** old button ************
                     VStack {
                         Spacer()
-                            .frame(height: 70)
+                            .frame(height: 10)
 
                         HStack {
                             

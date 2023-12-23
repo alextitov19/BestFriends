@@ -143,7 +143,7 @@ struct RR59: View {
                                 .shadow(color: Color.white, radius: 2, x: 0, y: 3)
 //                                .blinking(duration: 2.0)
                             
-                            NavigationLink(destination: InfoSilence(user: user, friends: friends), label: {
+                            NavigationLink(destination: InfoSilence(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
                                 HugCircle (color: ColorManager .grey1, friendName: "Love \nTarts")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
@@ -199,8 +199,8 @@ struct RR59: View {
                                 .frame(width: 70)
                             
                             
-                            NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                                HugCircle (color: ColorManager .grey1, friendName: "Smile \nVault")
+                            NavigationLink(destination: EmptyView(), label: {
+                                HugCircle (color: ColorManager .grey1, friendName: "??????")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .white, radius: 5, x: 2, y: -2)

@@ -44,6 +44,20 @@ struct FriendPlanetsView: View {
                 
             } else if planets.count == 2 {
                 ZStack {
+                    
+                    
+//     ******************************************************
+                    
+//                        Image(systemName: "heart")
+//                            .resizable()
+//                            .scaledToFit()
+//                            .frame(width: 110, height: 110)
+//                            .foregroundColor(Color.white)
+//                            .opacity(0.7)
+//                            .glow(color: Color.white, radius: 1)
+//                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+//   ***********************************************
+                    
                     planets[0]
                         .rotationEffect(.degrees(movingPlanets ? 0 : 360))
                         .animation(Animation.linear(duration: 15).repeatForever(autoreverses: false), value: movingPlanets)
@@ -55,6 +69,8 @@ struct FriendPlanetsView: View {
                 .rotationEffect(.degrees(movingPlanets ? 0 : -360))
                 .animation(Animation.linear(duration: 15).repeatForever(autoreverses: false), value: movingPlanets)
                 .onAppear { movingPlanets = true}
+                
+                
                 
                 ZStack {
                     planets[1]
