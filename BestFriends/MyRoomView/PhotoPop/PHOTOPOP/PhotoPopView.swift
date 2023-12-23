@@ -54,81 +54,155 @@ struct PhotoPopView: View {
                     ImagePicker(image: $attachmentImage, sourceType: pickerSourceType)
                         .onDisappear { createPhotoPop() }
             
-            
-    
                 }
             
+//            VStack {
+//
+//                Spacer ()
+//                    .frame(height: 40)
+//
+//                ZStack {
+//
+//
+//                        Text("friend shake iPhone \nto view your pic")
+//                            .font(.system(size: 27))
+//                            .fontWeight(.bold)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(Color.white)
+//                            .rotationEffect(.degrees(-20))
+//                            .blinking(duration: 3.0)
+//                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
+//                            .opacity(0.5)
+//
+//
+//                    HStack {
+//
+//                        NavigationLink(
+//                            destination: PhotoPop3(user: user, friends: friends),
+//                            label: {
+//                                Text("Alert friend")
+//                                    .fontWeight(.light)
+//                                    .frame(width: 100, height: 30)
+//                                    .foregroundColor(Color.white)
+//                                    .font(.system(size: 15))
+//                                    .background(ColorManager .grey3)
+//                                //                            .opacity(0.7)
+//                                    .cornerRadius(10)
+//                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+//                            })
+//
+//
+//                        Spacer ()
+//                            .frame(width: 50)
+//
+//
+//                        Image("IconPhotoNew")
+//                            .resizable()
+//                            .scaledToFit()
+//                            .frame(width: 60, height: 60)
+//                            .foregroundColor(Color.cyan)
+//
+//                            .onTapGesture {
+//                                pickerSourceType = .camera
+//                                showingRecipients = true
+//                            }
+//
+//                        Spacer ()
+//                            .frame(width: 50)
+//
+//
+//
+//                        NavigationLink( destination:  CH5(user: user, friends: friends),
+//                                        label: {
+//                            Image(systemName: "info.circle")
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 35, height: 35)
+//                                .foregroundColor(Color.white)
+//                            //                        .blinking(duration: 2.0)
+//                                .opacity(0.99)
+//
+//                        })
+//                    }
+//
+                    
             VStack {
-                
-                Spacer ()
-                    .frame(height: 40)
-                
-                ZStack {
-                  
+
+                           HStack {
+                               
+                               Text("")
+                                   .fontWeight(.light)
+                         
+                               
+                               Spacer ()
+                                   .frame(width: 300)
+                           
+                               NavigationLink( destination:  CH5(user: user, friends: friends),
+                                               label: {
+                                   Image(systemName: "info.circle")
+                                       .resizable()
+                                       .scaledToFit()
+                                       .frame(width: 35, height: 35)
+                                       .foregroundColor(Color.white)
+                                       .opacity(0.5)
+                               
+                       }
+                   )}
+                           
+                           ZStack {
+                               
+                               HStack {
+                                   
+                               
+                               Text("friend shake iPhone \nto view your pic")
+                                   .font(.system(size: 27))
+                                   .fontWeight(.bold)
+                                   .multilineTextAlignment(.center)
+                                   .foregroundColor(Color.white)
+                                   .rotationEffect(.degrees(-20))
+                                   .blinking(duration: 3.0)
+                                   .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
+                                   .opacity(0.5)
+                               
+                      
+                           }
+                               HStack {
+                                   
+                                   NavigationLink(
+                                       destination: PhotoPop3(user: user, friends: friends),
+                                       label: {
+                                           Text("Alert friend")
+                                               .fontWeight(.light)
+                                               .frame(width: 100, height: 30)
+                                               .foregroundColor(Color.white)
+                                               .font(.system(size: 15))
+                                               .background(ColorManager .grey3).opacity(0.7)
+                                               .cornerRadius(10)
+                                               .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                       })
+                                   
+                                   
+                                   Spacer ()
+                                       .frame(width: 50)
+                                   
+                               
+                                           
+                                   Image("IconPhotoNew")
+                                       .resizable()
+                                       .scaledToFit()
+                                       .frame(width: 60, height: 60)
+                                       .foregroundColor(Color.cyan)
+                                   
+                                       .onTapGesture {
+                                           pickerSourceType = .camera
+                                           showingRecipients = true
+                                       }
+                                   
+                                   Spacer ()
+                                       .frame(width: 50)
                         
-                        Text("friend shake iPhone \nto view your pic")
-                            .font(.system(size: 27))
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                            .rotationEffect(.degrees(-20))
-                            .blinking(duration: 3.0)
-                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
-                            .opacity(0.5)
-                  
-                    
-                    HStack {
-                        
-                        NavigationLink(
-                            destination: PhotoPop3(user: user, friends: friends),
-                            label: {
-                                Text("Alert friend")
-                                    .fontWeight(.light)
-                                    .frame(width: 100, height: 30)
-                                    .foregroundColor(Color.white)
-                                    .font(.system(size: 15))
-                                    .background(ColorManager .grey3)
-                                //                            .opacity(0.7)
-                                    .cornerRadius(10)
-                                    .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                            })
-                        
-                        
-                        Spacer ()
-                            .frame(width: 50)
-                        
-                        
-                        Image("IconPhotoNew")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 60, height: 60)
-                            .foregroundColor(Color.cyan)
-                        
-                            .onTapGesture {
-                                pickerSourceType = .camera
-                                showingRecipients = true
-                            }
-                        
-                        Spacer ()
-                            .frame(width: 50)
-                        
-                        
-                        
-                        NavigationLink( destination:  CH5(user: user, friends: friends),
-                                        label: {
-                            Image(systemName: "info.circle")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 35, height: 35)
-                                .foregroundColor(Color.white)
-                            //                        .blinking(duration: 2.0)
-                                .opacity(0.99)
-                            
-                        })
-                    }
-               
-                    
-                    
+                               }
+                           
                         
 // ************ Removed Gallary for now - keeps this more real-time ***************
                         
@@ -141,9 +215,6 @@ struct PhotoPopView: View {
                                 pickerSourceType = .photoLibrary
                                 showingRecipients = true
                             }
-
-                        
-                        
                     }
                 
                     
