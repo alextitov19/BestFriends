@@ -133,23 +133,7 @@ struct HomeView: View {
                             
                             Spacer()
                                 .frame(width: 270)
-                            
-                            //                            NavigationLink(
-                            //                                destination:  RR59(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
-                            //                                label: {
-                            //
-                            //                                    Image("iconRocket 1")
-                            //                                        .resizable()
-                            //                                        .scaledToFit()
-                            //                                        .frame(width: 50, height: 50)
-                            //                                        .foregroundColor(ColorManager .purple5)
-                            //                                        .glow(color: Color.purple, radius: 2)
-                            //                                        .opacity(0.9)
-                            //                                })
-                            //
-                            //
-                            //                            Spacer()
-                            //                                .frame(width: 100)
+                      
                             
                             NavigationLink(
                                 destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
