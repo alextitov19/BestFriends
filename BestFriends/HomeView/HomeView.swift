@@ -95,7 +95,7 @@ struct HomeView: View {
                         //  ************************************************
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 30)
                         
                         
                         HStack {
@@ -105,7 +105,7 @@ struct HomeView: View {
                                 Image(systemName: "bell")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 25, height: 25)
+                                    .frame(width: 30, height: 30)
                                     .foregroundColor(Color.cyan)
                                 //                                    .blinking(duration: 2.0)
                                 //                                    .glow(color: ColorManager.purple4, radius: 3)
@@ -132,7 +132,7 @@ struct HomeView: View {
                             }
                             
                             Spacer()
-                                .frame(width: 270)
+                                .frame(width: 250)
                       
                             
                             NavigationLink(
@@ -142,7 +142,7 @@ struct HomeView: View {
                                     Image("iconSettings")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 27, height: 27)
+                                        .frame(width: 30, height: 30)
                                         .foregroundColor(ColorManager .purple5)
                                         .glow(color: Color.purple, radius: 2)
                                         .opacity(0.9)
