@@ -76,6 +76,7 @@ struct RR58: View {
                                         .foregroundColor(ColorManager .grey3)
                                         .fontWeight(.bold)
                                         .opacity(0.8)
+                                        .rotationEffect(.degrees(10))
                                         .multilineTextAlignment(.center)
                                     
                                     Image(systemName: "heart")
@@ -84,6 +85,7 @@ struct RR58: View {
                                         .frame(width: 140, height: 140)
                                         .foregroundColor(ColorManager .purple3)
                                         .opacity(0.025)
+                                        .rotationEffect(.degrees(10))
                                         .glow(color: Color.purple, radius: 1)
                                         .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
                                     
@@ -93,6 +95,7 @@ struct RR58: View {
                                         .frame(width: 130, height: 130)
                                         .foregroundColor(ColorManager .purple3)
                                         .opacity(0.025)
+//                                        .rotationEffect(.degrees(10))
                                         .glow(color: Color.white, radius: 1)
                                         .shadow(color: Color.white, radius: 2, x: 0, y: 3)
                                     
