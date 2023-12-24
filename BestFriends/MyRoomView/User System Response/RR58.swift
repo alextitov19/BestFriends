@@ -67,17 +67,33 @@ struct RR58: View {
                     HStack {
                         
                         
-                        Image("")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 55, height: 55)
-                            .foregroundColor(ColorManager .purple4)
-                            .glow(color: ColorManager .grey1, radius: 3)
-                            .opacity(0.8)
+                      
+                            
+                            NavigationLink(destination: RRLoveTarts(user: user, friend: user, friends: friends, groups: groups), label: {
+                                ZStack {
+                                    Text("Love \nTarts")
+                                        .font(.system(size: 27))
+                                        .foregroundColor(ColorManager .grey3)
+                                        .fontWeight(.bold)
+                                        .opacity(0.8)
+                                        .multilineTextAlignment(.center)
+                                    
+                                    Image(systemName: "heart.fill")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 130, height: 130)
+                                        .foregroundColor(ColorManager .purple3)
+                                        .opacity(0.025)
+                                        .glow(color: Color.white, radius: 1)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                                    //                                .blinking(duration: 2.0)
+                                }
+                                })
+                            
                         
                         
                         Spacer ()
-                            .frame(width: 200)
+                            .frame(width: 50)
                         
                         NavigationLink(
                             destination:  RR18(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
@@ -114,7 +130,7 @@ struct RR58: View {
                 
                 VStack {
                     Spacer ()
-                        .frame(height: 100)
+                        .frame(height: 60)
                     
                     HStack {
                         NavigationLink(

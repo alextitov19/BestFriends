@@ -288,6 +288,7 @@
 		CF50D6C22B2B240B00DEF423 /* RR34Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50D6C12B2B240B00DEF423 /* RR34Fight.swift */; };
 		CF50D6C42B2B248800DEF423 /* RR35Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50D6C32B2B248800DEF423 /* RR35Fight.swift */; };
 		CF50D6CA2B359D0700DEF423 /* RRDidGood.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50D6C92B359D0700DEF423 /* RRDidGood.swift */; };
+		CF50D6CC2B37C7E600DEF423 /* RRLoveTarts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50D6CB2B37C7E600DEF423 /* RRLoveTarts.swift */; };
 		CF51BF832AE2F693007A3DBF /* background_5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF51BF822AE2F693007A3DBF /* background_5.mp4 */; };
 		CF565EEA292FED1E00B66A18 /* WhyFiveFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF565EE9292FED1E00B66A18 /* WhyFiveFriends.swift */; };
 		CF565EEC2935A61200B66A18 /* MoodSongPushNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF565EEB2935A61200B66A18 /* MoodSongPushNote.swift */; };
@@ -722,6 +723,7 @@
 		CF50D6C12B2B240B00DEF423 /* RR34Fight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR34Fight.swift; path = "../../../../../SocialTech Dropbox/RR34Fight.swift"; sourceTree = "<group>"; };
 		CF50D6C32B2B248800DEF423 /* RR35Fight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR35Fight.swift; path = "../../../../../SocialTech Dropbox/RR35Fight.swift"; sourceTree = "<group>"; };
 		CF50D6C92B359D0700DEF423 /* RRDidGood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RRDidGood.swift; path = "../../../../../SocialTech Dropbox/RRDidGood.swift"; sourceTree = "<group>"; };
+		CF50D6CB2B37C7E600DEF423 /* RRLoveTarts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RRLoveTarts.swift; path = "../../../../../SocialTech Dropbox/RRLoveTarts.swift"; sourceTree = "<group>"; };
 		CF51BF822AE2F693007A3DBF /* background_5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_5.mp4; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* background_4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_4.mp4; sourceTree = "<group>"; };
 		CF565EE9292FED1E00B66A18 /* WhyFiveFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyFiveFriends.swift; sourceTree = "<group>"; };
@@ -887,6 +889,7 @@
 				CF50D6C12B2B240B00DEF423 /* RR34Fight.swift */,
 				CF50D6C32B2B248800DEF423 /* RR35Fight.swift */,
 				CF50D6C92B359D0700DEF423 /* RRDidGood.swift */,
+				CF50D6CB2B37C7E600DEF423 /* RRLoveTarts.swift */,
 			);
 			path = RR;
 			sourceTree = "<group>";
@@ -2681,6 +2684,7 @@
 				7AD8DEFB27F66C8900D9F0E1 /* HomeModels.swift in Sources */,
 				CFD6C05D294169CC00D57E0B /* HideMyRoom.swift in Sources */,
 				2DB42CFE2AAE87A800E137C0 /* RR29.swift in Sources */,
+				CF50D6CC2B37C7E600DEF423 /* RRLoveTarts.swift in Sources */,
 				CFDA4BE228D66B2600118D90 /* AudioCode.swift in Sources */,
 				2DDCD9822A8FEBC700B1040F /* RR17.swift in Sources */,
 				7A22A57B274416C200FB6B4F /* ColorExt+Mgr.swift in Sources */,
