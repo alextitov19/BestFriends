@@ -165,74 +165,16 @@ struct RR14: View {
                             
                                 }
                             }
-//                        }
-                    
-//
-//
-//                VStack {
-//
-//
-//                    ZStack {
-//
-//                        VStack {
-//                                    Spacer()
-//                                    // TextField for userInput
-//                                    TextField("", text: $customMessage)
-//                                        .placeholder(when: customMessage.isEmpty) {
-//                                            HStack {
-//                                                Text("Send a pic - type a message")
-//                                                    .foregroundColor(Color.white)
-//                                                    .fontWeight(.thin)
-//                                                Spacer()
-//                                            }
-//                                        }
-//                                        .foregroundColor(.white)
-//                                        .font(.system(size: 15))
-//                                        .submitLabel(.done)
-//                                        .onReceive(Just(customMessage)) { _ in limitText(65) }
-//                                        .padding(.top, 20)
-//                                        .padding(.horizontal, 50)
-//                                        .overlay(
-//                                            RoundedRectangle(cornerRadius: 10)
-//                                                .stroke(Color.purple)
-//                                            //                                                            .background(ColorManager.purple3)
-//                                                .frame(height: 50)
-//                                                .padding(.horizontal, 25)
-//                                        )
-//                                        .padding(.bottom, 5)
-//                                }
-//                            }
-//
-//                    Spacer()
-//                        .frame(height: 10)
-//
-//                    NavigationLink(
-//                        destination:  PhotoPopView(user: user, friends: friends),
-//                        label: {
-//
-//                            Image(systemName: "camera")
-//
-//                                .resizable()
-//                                .scaledToFit()
-//                                .frame(width: 40, height: 40)
-//                                .foregroundColor(Color.cyan)
-//                                .glow(color: ColorManager.purple4, radius: 2)
-//                                .rotationEffect(.degrees(-10))
-//                                .opacity(0.6)
-//
-//                        })
-//
-//
-                    
+
                     
 
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("(check chat for message - say thanks)")
-                        .font(.system(size: 15))
+                    Text("(check chat for a message - say thanks)")
+                        .font(.system(size: 17))
                         .italic()
-                        .fontWeight(.light)
+                        .fontWeight(.regular)
                         .foregroundColor(ColorManager .grey1)
                         .multilineTextAlignment(.center)
             
