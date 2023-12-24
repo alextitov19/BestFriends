@@ -295,7 +295,7 @@ struct SendHomie: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent you a fist-pump", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent you a fist-pump. Go to 'received' CareHearts to get it.", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
@@ -330,64 +330,3 @@ struct SendHomie: View {
    
 }
 
-
-
-
-//
-//import SwiftUI
-//
-//struct ContentView: View {
-//    @State private var hearts: [Heart] = []
-//
-//    var body: some View {
-//        VStack {
-//            Button(action: {
-//                withAnimation {
-//                    hearts.append(Heart())
-//                }
-//            }) {
-//                Text("Tap me")
-//            }
-//            .padding()
-//
-//            ZStack {
-//                ForEach(hearts) { heart in
-//                    HeartView(heart: heart)
-//                        .onAppear {
-//                            withAnimation {
-//                                heart.move()
-//                            }
-//                        }
-//                }
-//            }
-//        }
-//    }
-//}
-//
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}
-//
-//struct Heart: Identifiable {
-//    let id = UUID()
-//    var position: CGPoint = .zero
-//    var opacity: Double = 1.0
-//
-//    mutating func move() {
-//        position.y -= 100
-//        opacity = 0
-//    }
-//}
-//
-//struct HeartView: View {
-//    var heart: Heart
-//
-//    var body: some View {
-//        Image(systemName: "heart.fill")
-//            .foregroundColor(.red)
-//            .opacity(heart.opacity)
-//            .position(heart.position)
-//    }
-//}

@@ -134,6 +134,13 @@ struct RR29: View {
                         Spacer()
                             .frame(height: 30)
                         
+                        Text("(check Chat for a message)")
+                                                .font(.system(size: 17))
+                                                .italic()
+                                                .foregroundColor(ColorManager .grey2)
+                                                .fontWeight(.regular)
+                                                .multilineTextAlignment(.center)
+                        
                         Text("(say thanks)")
                                                 .font(.system(size: 15))
                                                 .italic()
