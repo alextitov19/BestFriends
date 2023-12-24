@@ -132,23 +132,32 @@ struct RR59: View {
                         
                         ZStack {
                             
-                            
-                            Image(systemName: "heart")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 110, height: 110)
-                                .foregroundColor(Color.white)
-                                .opacity(0.025)
-                                .glow(color: Color.white, radius: 1)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+//                            
+//                            Image(systemName: "heart")
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 110, height: 110)
+//                                .foregroundColor(Color.white)
+//                                .opacity(0.025)
+//                                .glow(color: Color.white, radius: 1)
+//                                .shadow(color: Color.white, radius: 2, x: 0, y: 3)
 //                                .blinking(duration: 2.0)
                             
-                            NavigationLink(destination: InfoSilence(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                                HugCircle (color: ColorManager .grey1, friendName: "Love \nTarts")
+                            
+                            NavigationLink(destination:  BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
+                                HugCircle (color: ColorManager .grey1, friendName: "Message \nVault")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .white, radius: 5, x: 2, y: -2)
                             .opacity(0.75)
+                            
+                            
+//                            NavigationLink(destination: InfoSilence(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
+//                                HugCircle (color: ColorManager .grey1, friendName: "Love \nTarts")
+//                            })
+//                            .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+//                            .shadow(color: Color .white, radius: 5, x: 2, y: -2)
+//                            .opacity(0.75)
                             
                         }
                             
@@ -182,9 +191,9 @@ struct RR59: View {
         ZStack {
 
             NavigationLink(
-                destination: RRDidGood(user: user, friends: friends),
+                destination: EmptyView(),
                 label: {
-                    Text("YES")
+                    Text("???")
                         .font(.system(size: 30))
                         .foregroundColor(ColorManager .grey3)
                         .fontWeight(.bold)
@@ -199,8 +208,8 @@ struct RR59: View {
                                 .frame(width: 70)
                             
                             
-                            NavigationLink(destination: EmptyView(), label: {
-                                HugCircle (color: ColorManager .grey1, friendName: "empty")
+                            NavigationLink(destination: RRDidGood(user: user, friends: friends), label: {
+                                HugCircle (color: ColorManager .grey1, friendName: "YES")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .white, radius: 5, x: 2, y: -2)

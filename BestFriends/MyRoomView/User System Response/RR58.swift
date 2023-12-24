@@ -78,6 +78,15 @@ struct RR58: View {
                                         .opacity(0.8)
                                         .multilineTextAlignment(.center)
                                     
+                                    Image(systemName: "heart")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 140, height: 140)
+                                        .foregroundColor(ColorManager .purple3)
+                                        .opacity(0.025)
+                                        .glow(color: Color.purple, radius: 1)
+                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
+                                    
                                     Image(systemName: "heart.fill")
                                         .resizable()
                                         .scaledToFit()
@@ -86,9 +95,9 @@ struct RR58: View {
                                         .opacity(0.025)
                                         .glow(color: Color.white, radius: 1)
                                         .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-                                    //                                .blinking(duration: 2.0)
+                                    
                                 }
-                                })
+                            })
                             
                         
                         
