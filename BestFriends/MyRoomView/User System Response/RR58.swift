@@ -83,7 +83,7 @@ struct RR58: View {
                                         .resizable()
                                         .scaledToFit()
                                         .frame(width: 140, height: 140)
-                                        .foregroundColor(ColorManager .purple3)
+                                        .foregroundColor(Color.cyan)
                                         .opacity(0.025)
                                         .rotationEffect(.degrees(10))
                                         .glow(color: Color.purple, radius: 1)
