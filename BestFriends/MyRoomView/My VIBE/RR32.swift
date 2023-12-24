@@ -94,13 +94,13 @@ struct RR32: View {
                         .frame(height: 15)
                     
                     VStack {
-                        Text("But, but not comfortable")
+                        Text("But,maybe not comfortable")
                             .font(.system(size: 17))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
                         
-                        Text("talking to anyone yet.")
+                        Text("talking to anyone just yet.")
                             .font(.system(size: 17))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
