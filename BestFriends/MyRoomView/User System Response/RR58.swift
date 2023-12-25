@@ -54,7 +54,7 @@ struct RR58: View {
             AdPlayerView(name: "sadGirl2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                .opacity(0.35)
+                .opacity(0.5)
             
             
             
