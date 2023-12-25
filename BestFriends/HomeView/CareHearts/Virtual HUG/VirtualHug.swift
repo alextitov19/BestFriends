@@ -147,17 +147,10 @@ struct VirtualHug: View {
                             .frame(height: 20)
                         
                         ZStack{
-                            
-                            
-                            
+                       
                             VStack {
                                 VStack {
-                                    
-                                    
-                                    
-                             
-                                    
-                                    
+                               
                                     VStack {
                                         
                                         Text("hold iPhone to")
@@ -231,7 +224,12 @@ struct VirtualHug: View {
                                     
                                 }
                             }
-                            
+                         
+                        
+                        
+                        
+//          **************
+                        
                             VStack {
                                 
                                 Spacer()
