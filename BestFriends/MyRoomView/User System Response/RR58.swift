@@ -116,7 +116,7 @@ struct RR58: View {
                                     //    ********************************************
                                     Image("CoolGuy")
                                     //                                            .aspectRatio(contentMode: .fit)
-                                        .frame(width: 50, height: 50)
+                                        .frame(width: 35, height: 35)
                                     //                                    .blinking(duration: 7.0)
                                     
                                     Text("First Time User (TAP)")
