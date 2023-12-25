@@ -66,10 +66,10 @@ struct RR58: View {
                     
                     HStack {
                         
-                        
+//                        NavigationLink(destination: RRLoveTarts3(user: user, friend: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres), label: {
                       
                             
-                        NavigationLink(destination: RRLoveTarts(user: user, friend: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres), label: {
+                        NavigationLink(destination: RRLoveTarts3(user: user, friend: user, friends: friends, groups: groups), label: {
                                 ZStack {
                                     Text("Love \nTarts")
                                         .font(.system(size: 27))
