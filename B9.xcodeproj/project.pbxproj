@@ -288,8 +288,6 @@
 		CF50D6C22B2B240B00DEF423 /* RR34Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50D6C12B2B240B00DEF423 /* RR34Fight.swift */; };
 		CF50D6C42B2B248800DEF423 /* RR35Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50D6C32B2B248800DEF423 /* RR35Fight.swift */; };
 		CF50D6CA2B359D0700DEF423 /* RRDidGood.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50D6C92B359D0700DEF423 /* RRDidGood.swift */; };
-		CF50D6CC2B37C7E600DEF423 /* RRLoveTarts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50D6CB2B37C7E600DEF423 /* RRLoveTarts.swift */; };
-		CF50D6CE2B38D49400DEF423 /* RRLoveTarts2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50D6CD2B38D49400DEF423 /* RRLoveTarts2.swift */; };
 		CF50D6D02B39B28A00DEF423 /* RRLoveTarts3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF50D6CF2B39B28A00DEF423 /* RRLoveTarts3.swift */; };
 		CF51BF832AE2F693007A3DBF /* background_5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF51BF822AE2F693007A3DBF /* background_5.mp4 */; };
 		CF565EEA292FED1E00B66A18 /* WhyFiveFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF565EE9292FED1E00B66A18 /* WhyFiveFriends.swift */; };
@@ -725,8 +723,6 @@
 		CF50D6C12B2B240B00DEF423 /* RR34Fight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR34Fight.swift; path = "../../../../../SocialTech Dropbox/RR34Fight.swift"; sourceTree = "<group>"; };
 		CF50D6C32B2B248800DEF423 /* RR35Fight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RR35Fight.swift; path = "../../../../../SocialTech Dropbox/RR35Fight.swift"; sourceTree = "<group>"; };
 		CF50D6C92B359D0700DEF423 /* RRDidGood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RRDidGood.swift; path = "../../../../../SocialTech Dropbox/RRDidGood.swift"; sourceTree = "<group>"; };
-		CF50D6CB2B37C7E600DEF423 /* RRLoveTarts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RRLoveTarts.swift; path = "../../../../../SocialTech Dropbox/RRLoveTarts.swift"; sourceTree = "<group>"; };
-		CF50D6CD2B38D49400DEF423 /* RRLoveTarts2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RRLoveTarts2.swift; path = "../../../../../SocialTech Dropbox/RRLoveTarts2.swift"; sourceTree = "<group>"; };
 		CF50D6CF2B39B28A00DEF423 /* RRLoveTarts3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RRLoveTarts3.swift; path = "../../../../../SocialTech Dropbox/RRLoveTarts3.swift"; sourceTree = "<group>"; };
 		CF51BF822AE2F693007A3DBF /* background_5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_5.mp4; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* background_4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_4.mp4; sourceTree = "<group>"; };
@@ -893,8 +889,6 @@
 				CF50D6C12B2B240B00DEF423 /* RR34Fight.swift */,
 				CF50D6C32B2B248800DEF423 /* RR35Fight.swift */,
 				CF50D6C92B359D0700DEF423 /* RRDidGood.swift */,
-				CF50D6CD2B38D49400DEF423 /* RRLoveTarts2.swift */,
-				CF50D6CB2B37C7E600DEF423 /* RRLoveTarts.swift */,
 				CF50D6CF2B39B28A00DEF423 /* RRLoveTarts3.swift */,
 			);
 			path = RR;
@@ -2597,7 +2591,6 @@
 				CF3DB36728D78BF300BF9CCD /* DreamsWeDare.swift in Sources */,
 				CFF952332981BC700054D963 /* DreamsWeDare2.swift in Sources */,
 				CFCD3BC429DF849A00D19A0F /* BadDayQuietAlertView.swift in Sources */,
-				CF50D6CE2B38D49400DEF423 /* RRLoveTarts2.swift in Sources */,
 				CF3B65AB2800718E0003A714 /* ReportAbuse.swift in Sources */,
 				CF09118E284894F400CB0AF0 /* InfoView.swift in Sources */,
 				CF381A4B2826584F00B3719E /* IntroBluemodeFriend.swift in Sources */,
@@ -2692,7 +2685,6 @@
 				7AD8DEFB27F66C8900D9F0E1 /* HomeModels.swift in Sources */,
 				CFD6C05D294169CC00D57E0B /* HideMyRoom.swift in Sources */,
 				2DB42CFE2AAE87A800E137C0 /* RR29.swift in Sources */,
-				CF50D6CC2B37C7E600DEF423 /* RRLoveTarts.swift in Sources */,
 				CFDA4BE228D66B2600118D90 /* AudioCode.swift in Sources */,
 				2DDCD9822A8FEBC700B1040F /* RR17.swift in Sources */,
 				7A22A57B274416C200FB6B4F /* ColorExt+Mgr.swift in Sources */,
@@ -2938,7 +2930,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -2970,7 +2962,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;
