@@ -30,7 +30,7 @@ struct RR4: View {
             Spacer()
                 .frame(height: 100)
             
-            NavigationLink(destination:  RR36Info(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+            NavigationLink(destination:  RR18(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
                             Text("Let's GO...")
                                 .fontWeight(.thin)

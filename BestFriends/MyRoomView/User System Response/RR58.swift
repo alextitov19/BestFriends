@@ -66,6 +66,9 @@ struct RR58: View {
                     
                     HStack {
                   
+                        Spacer ()
+                            .frame(width: 40)
+                        
                         NavigationLink(destination: RRLoveTarts3(user: user, friend: user, friends: friends, groups: groups), label: {
                                 ZStack {
                                     Text("Love \nTarts")
@@ -105,7 +108,7 @@ struct RR58: View {
                             .frame(width: 40)
                         
                         NavigationLink(
-                            destination:  RR18(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                            destination:  RR4(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
                                 
                                 ZStack {
@@ -124,9 +127,8 @@ struct RR58: View {
                                         .rotationEffect(.degrees(-38))
                                         .opacity(0.8)
                                         .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
-//                                        .blinking(duration: 7.0)
-                                    
-                                    
+
+                         
                                 }
                             })
                     }
@@ -137,7 +139,7 @@ struct RR58: View {
                 
                 VStack {
                     Spacer ()
-                        .frame(height: 60)
+                        .frame(height: 70)
                     
                     HStack {
                         NavigationLink(
