@@ -353,6 +353,7 @@
 		CFADFD902AFFA53B0090071A /* sendHearts1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFADFD8F2AFFA53B0090071A /* sendHearts1.mp4 */; };
 		CFADFD982AFFF00C0090071A /* thumbsUp.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFADFD972AFFF00C0090071A /* thumbsUp.mp4 */; };
 		CFADFD9C2AFFF58D0090071A /* sadDay1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFADFD9B2AFFF58D0090071A /* sadDay1.mp4 */; };
+		CFB668F72B3B1E1400E9C237 /* RRPoemContest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB668F62B3B1E1400E9C237 /* RRPoemContest.swift */; };
 		CFC0ACBE28EF4E7B00B49831 /* SaySomethingPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */; };
 		CFC0ACC028EFD6DB00B49831 /* ChatInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */; };
 		CFC0ACC228EFE26400B49831 /* ChatInfo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0ACC128EFE26400B49831 /* ChatInfo2.swift */; };
@@ -789,6 +790,7 @@
 		CFADFD8F2AFFA53B0090071A /* sendHearts1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sendHearts1.mp4; sourceTree = "<group>"; };
 		CFADFD972AFFF00C0090071A /* thumbsUp.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = thumbsUp.mp4; sourceTree = "<group>"; };
 		CFADFD9B2AFFF58D0090071A /* sadDay1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sadDay1.mp4; sourceTree = "<group>"; };
+		CFB668F62B3B1E1400E9C237 /* RRPoemContest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RRPoemContest.swift; path = "../../../../../SocialTech Dropbox/RRPoemContest.swift"; sourceTree = "<group>"; };
 		CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingPreload.swift; sourceTree = "<group>"; };
 		CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInfo.swift; sourceTree = "<group>"; };
 		CFC0ACC128EFE26400B49831 /* ChatInfo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInfo2.swift; sourceTree = "<group>"; };
@@ -890,6 +892,7 @@
 				CF50D6C32B2B248800DEF423 /* RR35Fight.swift */,
 				CF50D6C92B359D0700DEF423 /* RRDidGood.swift */,
 				CF50D6CF2B39B28A00DEF423 /* RRLoveTarts3.swift */,
+				CFB668F62B3B1E1400E9C237 /* RRPoemContest.swift */,
 			);
 			path = RR;
 			sourceTree = "<group>";
@@ -2382,6 +2385,7 @@
 				CFD12CC1281770B600AB2539 /* MyStreaks.swift in Sources */,
 				CF09118C28488A5700CB0AF0 /* BetaTestVideo.swift in Sources */,
 				2DDCD9882A8FEBFC00B1040F /* RR20.swift in Sources */,
+				CFB668F72B3B1E1400E9C237 /* RRPoemContest.swift in Sources */,
 				7A45B8442A86AB8600F5E75B /* RR11.swift in Sources */,
 				2DFB030E2A57223E00669948 /* FH5.swift in Sources */,
 				2DB42D002AAE87B000E137C0 /* RR30.swift in Sources */,
@@ -2930,7 +2934,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -2962,7 +2966,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;
