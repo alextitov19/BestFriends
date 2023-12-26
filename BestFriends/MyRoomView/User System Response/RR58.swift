@@ -65,26 +65,23 @@ struct RR58: View {
                     //        *********************** Rocket Guy ****************
                     
                     HStack {
-                        
-//                        NavigationLink(destination: RRLoveTarts3(user: user, friend: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres), label: {
-                      
-                            
+                  
                         NavigationLink(destination: RRLoveTarts3(user: user, friend: user, friends: friends, groups: groups), label: {
                                 ZStack {
                                     Text("Love \nTarts")
                                         .font(.system(size: 27))
                                         .foregroundColor(ColorManager .grey3)
                                         .fontWeight(.bold)
-                                        .opacity(0.8)
+                                        .opacity(0.99)
                                         .rotationEffect(.degrees(10))
                                         .multilineTextAlignment(.center)
                                     
                                     Image(systemName: "heart")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 140, height: 140)
+                                        .frame(width: 160, height: 160)
                                         .foregroundColor(Color.cyan)
-                                        .opacity(0.025)
+                                        .opacity(0.05)
                                         .rotationEffect(.degrees(10))
                                         .glow(color: Color.purple, radius: 1)
                                         .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
@@ -92,9 +89,9 @@ struct RR58: View {
                                     Image(systemName: "heart.fill")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 130, height: 130)
+                                        .frame(width: 150, height: 150)
                                         .foregroundColor(ColorManager .purple3)
-                                        .opacity(0.025)
+                                        .opacity(0.075)
 //                                        .rotationEffect(.degrees(10))
                                         .glow(color: Color.white, radius: 1)
                                         .shadow(color: Color.white, radius: 2, x: 0, y: 3)
@@ -105,7 +102,7 @@ struct RR58: View {
                         
                         
                         Spacer ()
-                            .frame(width: 50)
+                            .frame(width: 40)
                         
                         NavigationLink(
                             destination:  RR18(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
