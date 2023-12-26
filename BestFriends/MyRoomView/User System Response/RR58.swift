@@ -110,11 +110,9 @@ struct RR58: View {
                                 
                                 ZStack {
                                     
-                                    //    ********************************************
                                     Image("CoolGuy")
-                                    //                                            .aspectRatio(contentMode: .fit)
+                                        .aspectRatio(contentMode: .fit)
                                         .frame(width: 35, height: 35)
-                                    //                                    .blinking(duration: 7.0)
                                     
                                     Text("First Time User (TAP)")
                                         .fontWeight(.medium)
