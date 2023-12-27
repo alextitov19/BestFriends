@@ -309,8 +309,6 @@ struct SendKisses: View {
 
                         
                         VStack {
-                            
-                            
                                  Button(action: {
                                      sessionManager.showLogin()
                                  },
@@ -322,8 +320,7 @@ struct SendKisses: View {
                                          .background(ColorManager .grey3)
                                          .cornerRadius(15)
                                          .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                         .opacity(0.70)
-                                     
+                                         .opacity(0.70)  
                                  })
                    
                             
