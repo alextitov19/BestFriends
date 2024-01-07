@@ -69,7 +69,7 @@ struct RR32: View {
                 VStack {
                     
                     Text("Secretly share your 'Vibe'")
-                        .font(.system(size: 27))
+                        .font(.system(size: 23))
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color .white)

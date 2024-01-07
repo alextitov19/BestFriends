@@ -126,49 +126,59 @@ struct HugPushNotification: View {
                 
                 
 //     ************************************ photopop
-                
-        HStack {
-                   
-            Spacer()
-                .frame(height: 70)
-            
-                    ZStack {
-                        Image(systemName: "heart.fill")
-                            .resizable()
-                            .foregroundColor(Color.purple)
-                            .frame(width: 130, height: 85)
-                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                            .opacity(0.5)
+
+                VStack {
+                    Spacer()
+                        .frame(height: 80)
+                    
+                    HStack {
+                        ZStack {
+                            
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .foregroundColor(Color.purple)
+                                .frame(width: 150, height: 110)
+                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                                .opacity(0.95)
+                            
+                            NavigationLink(
+                                destination:  PhotoPopView(user: user, friends: friends),
+                                label: {
+                                    
+                                    Image("IconPhotoNew")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 70, height: 70)
+                                        .foregroundColor(Color.purple)
+                                        .glow(color: Color.white, radius: 0.3)
+                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                        .opacity(0.95)
+                                    
+                                })
+                            
+                        }
                         
-                        NavigationLink(
-                            destination:  PhotoPopView(user: user, friends: friends),
-                            label: {
-                                
-                                Image("IconPhotoNew")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 70, height: 70)
-                                    .foregroundColor(Color.purple)
-                                    .glow(color: Color.white, radius: 0.3)
-                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                    .opacity(0.95)
-                                
-                            })
                         
                         Spacer ()
-                            .frame(width: 100)
+                            .frame(width: 270)
+                        
                         
                         Image(systemName: "heart.fill")
                             .resizable()
                             .foregroundColor(Color.purple)
-                            .frame(width: 10, height: 10)
+                            .frame(width: 20, height: 20)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .opacity(0.0)
                         
+                        Spacer ()
+                            .frame(width: 35)
                         
                         
                     }
                 }
+                
+                
+                
                 
                 
 //                *********************************************************
@@ -176,7 +186,7 @@ struct HugPushNotification: View {
                 VStack {
                     
                     Spacer()
-                        .frame(height: 70)
+                        .frame(height: 20)
                     
                     VStack {
                         
@@ -268,59 +278,36 @@ struct HugPushNotification: View {
                                         print(selectedFriends)
                                     })
                                 
-                            }
-                        }
-                        
-                        
-                        
-                        //                        Button(action: {
-                        //                            counter += 1
-                        //                            shareButtonTapped()
-                        //                        },
-                        //                               label: {
-                        //                            Text("SHARE")
-                        
-                        
-                        Spacer()
-                            .frame(height: 20)
-                        
-                        
-                        Button(action: {
-                            counter += 1
-                            shareTapped = true
-                            shareButtonTapped()
-                        },
-                               label: {
-                            Image("iconShare")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 80, height: 80)
-                                .rotationEffect(.degrees(20))
-                                .foregroundColor(ColorManager .purple5)
-                                .glow(color: Color.purple, radius: 2)
-                                .opacity(0.6)
-                                .blinking(duration: 3.0)
-                                .alert("Your hug has been sent. \n\nSometimes there's more power in a simple hug than a thousand words.", isPresented: $showingAlert) {
-                                    Button("OK", role: .cancel) { }
-                                    
                                 }
-                        })
-                        //                        .confettiCannon(counter: $counter)
-                        
-                        
-                        
-                        
-                        //    *************************** Floating Hearts
-                        //    *************************** Floating Hearts
-                        
-                        
-                        //*************************************************
-                        
-                        //*************************************************
-                        
-                        
-                        
-                        
+                            }
+                                
+                                
+                                
+                                Spacer()
+                                    .frame(height: 20)
+                                
+                                
+                                Button(action: {
+                                    counter += 1
+                                    shareTapped = true
+                                    shareButtonTapped()
+                                },
+                                       label: {
+                                    Image("iconShare")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 80, height: 80)
+                                        .rotationEffect(.degrees(20))
+                                        .foregroundColor(ColorManager .purple5)
+                                        .glow(color: Color.purple, radius: 2)
+                                        .opacity(0.6)
+                                        .blinking(duration: 3.0)
+                                        .alert("Your hug has been sent. \n\nSometimes there's more power in a simple hug than a thousand words.", isPresented: $showingAlert) {
+                                            Button("OK", role: .cancel) { }
+                                            
+                                        }
+                                })
+                            
                         
                         
                         VStack {
