@@ -225,7 +225,7 @@ struct RR32: View {
                         Spacer ()
                             .frame(width: 17)
                         
-                                    Text("Important day, \nwish me luck")
+                                    Text("Wish me luck")
                                         .font(.system(size: 30))
                                         .fontWeight(.bold)
                                         .multilineTextAlignment(.center)
