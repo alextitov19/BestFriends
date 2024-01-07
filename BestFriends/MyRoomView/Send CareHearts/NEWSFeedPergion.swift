@@ -52,7 +52,7 @@ struct NEWSFeedPergion: View {
                 AdPlayerView(name: "InnerStellar")
                               .ignoresSafeArea()
                               .blendMode(.screen)
-                              .opacity(0.0)
+                              .opacity(0.0) 
                 
             } else {
                 
