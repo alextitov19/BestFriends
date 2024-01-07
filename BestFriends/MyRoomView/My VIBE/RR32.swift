@@ -60,14 +60,11 @@ struct RR32: View {
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                
-               
-                
+              
             }
             
-            
-            
-            VStack {
+   
+        VStack {
              
                 VStack {
                     
@@ -92,63 +89,12 @@ struct RR32: View {
                         .opacity(0.35)
                     
                 }
-               
+             
                 
+    //    ******************************************************
                 
-                
-                
-                //    ******************************************************
-                VStack {
-           
-
-                    VStack {
-                        HStack {
-                            
-                            Text("Let friends help via")
-                                .font(.system(size: 15))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                            
-                            Text("CareHearts")
-                                .font(.system(size: 20))
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.cyan)
-                            
-                    
-                                
-//                                ZStack {
-//                                    Image(systemName: "circle.fill")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 30, height: 30)
-//                                        .foregroundColor(Color.cyan)
-//                                        .opacity(0.95)
-//                                    
-//                                    
-//                                    Image(systemName: "heart.fill")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 17, height: 17)
-//                                        .foregroundColor(Color.purple)
-//                                        .glow(color: Color.white, radius: 0.3)
-//                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-//                                        .opacity(0.95)
-//                                }
-                            }
-                        }
-                    
-                        //
-                        
-                        //                ************************************************
-                        //                ************************************************
-                        
-                        
-                        
-                        
+    VStack {
         HStack {
-                     
             HStack {
                 
                 Text("I'm having a bad day")
@@ -160,11 +106,7 @@ struct RR32: View {
                 //                .blinking(duration: 3.0)
                     .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                     .opacity(0.35)
-                
-                
-                
-                
-                
+          
                 ZStack {
                     
                     Image(systemName: "circle")
@@ -193,10 +135,8 @@ struct RR32: View {
                                 .frame(height: 7)
                             
                         }
-                        
                     }
-                    
-                    
+                 
                     .frame(width: 100, height: 100, alignment: .center)
                     .background(mood == 1 ? Color.cyan : ColorManager .grey4)
                     .cornerRadius(100)
@@ -207,17 +147,28 @@ struct RR32: View {
         }
                         
     //               ************************************************
-                    //               ************************************************
-                  
+           
+
+        VStack {
+            Spacer()
+                .frame(height: 20)
+         
+                    Text("Letting friends help via")
+                        .font(.system(size: 15))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
                     
-                    
+                    Text("CareHearts")
+                        .font(.system(size: 20))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.cyan)
           
+            Spacer()
+                .frame(height: 20)
             
-                    VStack {
-                        Spacer()
-                            .frame(height: 40)
-              
-                    }
+        }
                         
                     HStack {
 
