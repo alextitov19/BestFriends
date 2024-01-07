@@ -111,11 +111,7 @@ struct InfoWhyLoveBF: View {
                           .blendMode(.screen)
                           .opacity(0.99)
                       
-                      
-//                      AdPlayerView(name: "")
-//                          .ignoresSafeArea()
-//                          .blendMode(.screen)
-//                          .opacity(0.2)
+                   
                    
             }
           
@@ -145,13 +141,13 @@ struct InfoWhyLoveBF: View {
                                 .frame(height: 7)
                             
                             
-                            Text("Tell friend...")
+                            Text("Tell someone")
                                 .font(.system(size: 40, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                 .multilineTextAlignment(.center)
                                 .opacity(0.5)
                             
-                            Text("You look")
+                            Text("they look")
                                 .font(.system(size: 25, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                 .multilineTextAlignment(.center)
@@ -337,7 +333,7 @@ struct InfoWhyLoveBF: View {
                                 .glow(color: Color.purple, radius: 2)
                                 .opacity(0.6)
                                 .blinking(duration: 3.0)
-                                .alert("Thanks for taking time to say something nice.", isPresented: $showingAlert) {
+                                .alert("We told them they look nice today and to check for a message in Chat.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             
@@ -388,11 +384,11 @@ struct InfoWhyLoveBF: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) just gave you a complement in Chat", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "  \(user.firstName) said you look nice today. Check Chat for a message.", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "just gave you a complement in Chat.", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "said you look nice today. Check Chat for a message.", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
                         print("Create a look nice notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)

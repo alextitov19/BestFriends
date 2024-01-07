@@ -139,7 +139,7 @@ struct RR18: View {
                                 .blinking(duration: 3.0)
                                 .opacity(0.5)
                             
-                            Text("Off Planet")
+                            Text("Love Tarts")
                                 .font(.system(size: 65))
                                 .fontWeight(.bold)
                                 .multilineTextAlignment(.center)
@@ -148,7 +148,7 @@ struct RR18: View {
                                 .opacity(0.5)
                             
                             Spacer()
-                                .frame(height: 60)
+                                .frame(height: 25)
                             
                             ZStack {
                                 

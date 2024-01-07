@@ -114,13 +114,16 @@ struct NotificationsView: View {
         @State private var meetupCouponActive = false
         @State private var fistPumpActive = false
         @State private var newMusicActive = false
-//        @State private var thanksNewMusicActive = false
+        @State private var lookNiceActive = false
         @State private var canDoActive = false
         @State private var thanksDoActive = false
         @State private var affirmationActive = false
         @State private var photoPOPActive = false
         @State private var thanksAffirmationActive = false
         @State private var sorryActive = false
+        @State private var missingYouActive = false
+        
+        
         
         init(ian: InAppNotification, user: User, friends: [User], groups: [Group]) {
             self.ian = ian
@@ -164,7 +167,7 @@ struct NotificationsView: View {
                 VStack {
                     
 //   **************** NOT USING THESE PAGES ***********************
-                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $meetupCouponActive, label: {
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $missingYouActive, label: {
                         EmptyView()
                     })
                    
@@ -308,8 +311,8 @@ struct NotificationsView: View {
                     
                     
                     
-//   **************** NOT USING THESE PAGES ***********************
-                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $newMusicActive, label: {
+//   **************** Look Nice ***********************
+                    NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), isActive: $lookNiceActive, label: {
                         EmptyView()
                     })
                     
@@ -518,9 +521,12 @@ VStack {
                 case "Just sent you a message in Chat - please look at it":
                     fixFightActive = true
                     
-// *********** Fight (Meetup Coupon)
+// *********** Fight (Missing You Coupon)
                 case "You just got a 'Meetup Coupon' in Chat":
-                    meetupCouponActive = true
+                    missingYouActive = true
+               
+                
+                
                 case "Is redeaming ONE 'TalkCoupon'":
                     talkCouponActive = true
              
@@ -532,10 +538,10 @@ VStack {
                     
                     
          
-// ************************ NOT BEING USED YET *****************
+// ************************ Look Nice *****************
 // *********** Well-being
-                case "Just sent you new music (check Chat) - TAP":
-                    newMusicActive = true
+                case "said you look nice today. Check Chat for a message.":
+                    lookNiceActive = true
                     
 //                case "Thanks for the song":
 //                    thanksNewMusicActive = true

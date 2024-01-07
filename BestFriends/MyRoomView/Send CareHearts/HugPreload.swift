@@ -37,22 +37,38 @@ struct HugPreload: View {
                 .opacity(0.9)
                 .ignoresSafeArea()
   
-            AdPlayerView(name: "background_7")
+//            AdPlayerView(name: "background_7")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.99)
+            
+            AdPlayerView(name: "moonShots2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                .opacity(0.9)
+                .opacity(0.8)
             
-            AdPlayerView(name: "girlSpace1")
+            AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                .opacity(0.4)
+                .opacity(0.7)
             
+            
+//            AdPlayerView(name: "CHsSend2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.15)
+            
+//            AdPlayerView(name: "dramaLights")
+//                .opacity(0.1)
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//
             ZStack{
                 
                 VStack {
      
                     Spacer()
-                        .frame(height: 108)
+                        .frame(height: 250)
 //  *************************************************
        
 
@@ -60,8 +76,8 @@ struct HugPreload: View {
            
                         HStack {
                             VStack {
-                                NavigationLink(destination: SendKisses(user: user, friends: friends), label: {
-                                    HugCircle (color: Color.cyan, friendName: "Blowing \nKisses")
+                                NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
+                                    HugCircle (color: Color.cyan, friendName: "Send \nComfort \nSong")
                                 })
                                 .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
                                 .shadow(color: Color.blue, radius: 5, x: -2, y: -2)
@@ -70,159 +86,212 @@ struct HugPreload: View {
                             
                             
                             Spacer()
-                                .frame(width: 20)
+                                .frame(width: 150)
                             
                             NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
-                                HugCircle (color: Color.cyan, friendName: "Hugs")
+                                HugCircle (color: Color.cyan, friendName: "Sending \nHugs")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
                             .opacity(0.99)
                         }
                         
-//                        Spacer()
-//                            .frame(height: 10)
+                        Spacer()
+                            .frame(height: 150)
                         
                     VStack {
                            
                         HStack {
-                            NavigationLink(destination: NEWSFeedPergion(user: user, friends: friends), label: {
-                                HugCircle (color: Color.cyan, friendName: "Missing \nYou")
-                            })
-                            .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
-                            .shadow(color: Color.blue, radius: 5, x: -2, y: -2)
-                            .opacity(0.99)
+//                            NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
+//                                HugCircle (color: Color.cyan, friendName: "Send \nComfort \nSong")
+//                            })
+//                            .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
+//                            .shadow(color: Color.blue, radius: 5, x: -2, y: -2)
+//                            .opacity(0.99)
                             
                             Spacer ()
-                                .frame(width: 200)
+                                .frame(width: 100)
                             
+                            ZStack {
+
+                                NavigationLink(
+                                    destination: RRBrokenHeart(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                    label: {
+                                        
+                                        ZStack {
+                                            Text("Dented \nHeart")
+                                                .font(.system(size: 14))
+                                                .foregroundColor(ColorManager .grey4)
+                                                .fontWeight(.bold)
+                                                .opacity(0.99)
+                                                .multilineTextAlignment(.center)
+                                            //                        .blinking(duration: 2.0)
+                                            
+                                            Image(systemName: "heart")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 120, height: 120)
+                                                .foregroundColor(Color.cyan)
+                                                .opacity(0.1)
+                                                .rotationEffect(.degrees(10))
+                                                .glow(color: Color.purple, radius: 1)
+                                                .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
+                                            
+                                            Image(systemName: "heart.fill")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 110, height: 110)
+                                                .foregroundColor(ColorManager .purple3)
+                                                .opacity(0.1)
+                                            //                                        .rotationEffect(.degrees(10))
+                                                .glow(color: Color.white, radius: 1)
+                                                .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                                        }
+                                             
+                                    })
+                                }
+
+                               
                             
-                            NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), label: {
-                                HugCircle (color: Color.cyan, friendName: "Sending \nHearts")
-                            })
-                            .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
-                            .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
-                            .opacity(0.99)
-                            
+                            Spacer ()
+                                .frame(width: 60)
+//
+//                            NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), label: {
+//                                HugCircle (color: Color.cyan, friendName: "Sending \nHearts")
+//                            })
+//                            .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+//                            .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
+//                            .opacity(0.99)
+//
 
                     }
                 }
-                  
+                   
+                    Spacer()
+                        .frame(height: 100)
                     
 //        *************************** Center
                     HStack {
+                       
                         Spacer ()
                             .frame(width: 6)
                         
-                        NavigationLink(destination: SaySomethingNice7(user: user, friend: user, friends: friends, groups: groups), label: {
-                            HugCircle (color: Color.cyan, friendName: "Hang \nout")
+                        NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
+                            HugCircle (color: Color.cyan, friendName: "Build \nyour own \n'in-beta'")
                         })
                         .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                         .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
                         .opacity(0.99)
                         
-                    
+                        
                         Spacer()
-                            .frame(width: 75)
+                            .frame(width: 150)
                         
                         ZStack {
                             
-                            Image("planet_6")
+                            //                            Image("planet_6")
+                            //
+                            //                                .resizable()
+                            //                                .scaledToFit()
+                            //                                .frame(width: 120, height: 120)
+                            //                                .foregroundColor(Color.orange)
+                            //                                .opacity(0.95)
                             
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 120, height: 120)
-                                .foregroundColor(Color.orange)
-                                .opacity(0.95)
-                    
-                        
-                        NavigationLink(
-                            destination:  PhotoPopView(user: user, friends: friends),
-                            label: {
+                            ZStack {
+                                NavigationLink(destination: EmptyView(), label: {
+                                    HugCircle (color: Color.cyan, friendName: "")
+                                })
+                                .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+                                .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
+                                .opacity(0.99)
                                 
-                                Image("IconPhotoNew")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 70, height: 70)
-                                    .foregroundColor(Color.purple)
-                                    .glow(color: Color.white, radius: 0.3)
-                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                    .opacity(0.95)
                                 
-                            })
+                                NavigationLink(
+                                    destination:  PhotoPopView(user: user, friends: friends),
+                                    label: {
+                                        
+                                        Image("IconPhotoNew")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 70, height: 70)
+                                            .foregroundColor(Color.purple)
+                                            .glow(color: Color.white, radius: 0.3)
+                                            .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                            .opacity(0.95)
+                                        
+                                    })
+                            }
                         }
-                        
-                        
-                        Spacer()
-                            .frame(width: 75)
-                        
-                        
-                        NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
-                            HugCircle (color: Color.cyan, friendName: "Sad \nDay \nSong")
-                        })
-                        .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
-                        .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
-                        .opacity(0.99)
                     }
-
+                        
 //      *************************
+//                        Spacer()
+//                            .frame(width: 75)
+//
+////
+//                        NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {
+//                            HugCircle (color: Color.cyan, friendName: "Sad \nDay \nSong")
+//                        })
+//                        .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+//                        .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
+//                        .opacity(0.99)
+//                    }
+//
+//
+//                    HStack {
+//
+//                        ZStack {
+//                            NavigationLink(destination: RR27(user: user, friend: user, friends: friends, groups: groups), label: {
+//                                HugCircle (color: Color.purple, friendName: "Wishing \nLuck")
+//                            })
+//                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+//                            .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
+//                            .opacity(0.99)
+//
+//                       }
+//
+//                        Spacer()
+//                            .frame(width: 200)
+                        
+                        
+                        
+//  ********************************************
+//                        ZStack {
+//
+//
+//                            NavigationLink(destination: InfoWhyLoveBF(user: user, friend: user, friends: friends, groups: groups), label: {
+//                                HugCircle (color: Color.cyan, friendName: "You look \nnice \ntoday")
+//                            })
+//                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+//                            .shadow(color: Color.blue, radius: 10, x: -4, y: 4)
+//                            .opacity(0.99)
+//
+//                        }
+//                    }
+//
+//                    HStack {
+//                        VStack {
+//                            NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
+//                                HugCircle (color: Color.purple, friendName: "Send a \nFist- \nPump")
+//                            })
+//                            .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
+//                            .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
+//                            .opacity(0.99)
+//                        }
+//
+//
+//                        Spacer()
+//                            .frame(width: 35)
+//
+//                        NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
+//                            HugCircle (color: ColorManager .purple5, friendName: "Say \nCongrats!")
+//                        })
+//                        .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+//                        .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
+//                        .opacity(0.99)
+//                    }
                     
-                    
-                    
-                    HStack {
-                        
-                        ZStack {
-                            NavigationLink(destination: RR27(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.purple, friendName: "Wishing \nLuck")
-                            })
-                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                            .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
-                            .opacity(0.99)
-                            
-                        }
-                        
-                        Spacer()
-                            .frame(width: 200)
-                        
-                        
-                        
-                        
-                        ZStack {
-                            
-                            
-                            NavigationLink(destination: InfoWhyLoveBF(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.cyan, friendName: "You look \nnice \ntoday")
-                            })
-                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                            .shadow(color: Color.blue, radius: 10, x: -4, y: 4)
-                            .opacity(0.99)
-                      
-                        }
-                    }
-                   
-                    HStack {
-                        VStack {
-                            NavigationLink(destination: SendHomie(user: user, friends: friends), label: {
-                                HugCircle (color: Color.purple, friendName: "Send a \nFist- \nPump")
-                            })
-                            .offset(x: showItems ? 30 : 0, y: showItems ? -170: 0)
-                            .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
-                            .opacity(0.99)
-                        }
-                        
-                        
-                        Spacer()
-                            .frame(width: 35)
-                        
-                        NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
-                            HugCircle (color: ColorManager .purple5, friendName: "Say \nCongrats!")
-                        })
-                        .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                        .shadow(color: Color.purple, radius: 10, x: -4, y: 4)
-                        .opacity(0.99)
-                    }
-                    
-                    
+//      ********************************
                     VStack {
      
                         Spacer()
@@ -242,52 +311,52 @@ struct HugPreload: View {
                                     Spacer()
                                         .frame(width: 50)
                                     
-                                    ZStack {
-                                  
-                                     
-//                                        NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
-                                            Image("FatGuy")
-                                            //                                            .aspectRatio(contentMode: .fit)
-                                                .frame(width: 120, height: 120)
-                                                .blinking(duration: 7.0)
-                                            
-                                            Text("Send CareHearts")
-                                                .fontWeight(.medium)
-                                                .frame(width: 200, height: 40)
-                                                .foregroundColor(Color.black)
-                                                .font(.system(size: 20))
-                                                .background(ColorManager .purple1)
-                                                .cornerRadius(7)
-                                                .rotationEffect(.degrees(-25))
-                                                .opacity(0.8)
-                                            //                                            .glow(color: ColorManager .grey4, radius: 3)
-                                                .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
-                                                .blinking(duration: 7.0)
-                                            
-                                         
-                                        }
-//                                    )}
-                                                      
-    //**********************************************************
-                                    Image("")
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: geo.size.width, alignment: .leading)
-                                    
-                                    
-                                    
+//                                    ZStack {
+//
+//
+////                                        NavigationLink(destination: RR12(user: user, friend: user, friends: friends, groups: groups), label: {
+//                                            Image("FatGuy")
+//                                            //                                            .aspectRatio(contentMode: .fit)
+//                                                .frame(width: 120, height: 120)
+//                                                .blinking(duration: 7.0)
+//
+//                                            Text("Helping friends on bad days")
+//                                                .fontWeight(.medium)
+//                                                .frame(width: 250, height: 40)
+//                                                .foregroundColor(Color.black)
+//                                                .font(.system(size: 17))
+//                                                .background(ColorManager .purple1)
+//                                                .cornerRadius(7)
+//                                                .rotationEffect(.degrees(-25))
+//                                                .opacity(0.8)
+//                                            //                                            .glow(color: ColorManager .grey4, radius: 3)
+//                                                .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
+//                                                .blinking(duration: 7.0)
+//
+//
+//                                        }
+////                                    )}
+//
+//    //**********************************************************
+//                                    Image("")
+//                                        .aspectRatio(contentMode: .fit)
+//                                        .frame(width: geo.size.width, alignment: .leading)
+//
+//
+//
+//                                }
+//                                .frame(width: geo.size.width, height: geo.size.height,
+//                                       alignment: animate ? .trailing : .leading)
+//                            }
+//                            .ignoresSafeArea()
+//                            .onAppear {
+//                                withAnimation(animation) {
+//                                    animate.toggle()
                                 }
-                                .frame(width: geo.size.width, height: geo.size.height,
-                                       alignment: animate ? .trailing : .leading)
-                            }
-                            .ignoresSafeArea()
-                            .onAppear {
-                                withAnimation(animation) {
-                                    animate.toggle()
-                                }
-                                
+
                             }
                         }
-  
+
                         
     //    ********************************************
                         
@@ -318,15 +387,15 @@ struct HugPreload: View {
                                 Spacer()
                                     .frame(width: 190)
 
-                                ZStack {
-
-                                    NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
-                                        HugCircle (color: ColorManager .grey1, friendName: "Build \nyour own \n'in-beta'")
-                                    })
-                                    .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-                                    .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
-                                    .opacity(0.99)
-                                }
+//                                ZStack {
+//
+//                                    NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
+//                                        HugCircle (color: ColorManager .grey1, friendName: "Build \nyour own \n'in-beta'")
+//                                    })
+//                                    .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+//                                    .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
+//                                    .opacity(0.99)
+//                                }
                                 
                             }
     
@@ -374,7 +443,7 @@ struct HugPreload: View {
                         .resizable()
                         .foregroundColor(color)
                     //                            .foregroundColor(ColorManager .purple2)
-                        .frame(width: 85, height: 85)
+                        .frame(width: 95, height: 95)
                         .shadow(color: Color.white, radius: 6, x: 0, y: 0)
                     
                     Text(friendName)

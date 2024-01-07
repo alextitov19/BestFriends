@@ -41,6 +41,15 @@ struct SaySomethingNice5: View {
             
             if shareTapped {
                 
+//                AdPlayerView(name: "surfer2")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.3)
+                
+                AdPlayerView(name: "dandaline")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.0)
                 
                 
                 AdPlayerView(name: "dramaLights")
@@ -65,7 +74,10 @@ struct SaySomethingNice5: View {
                     .blendMode(.screen)
                     .opacity(0.3)
                 
-               
+                AdPlayerView(name: "sendHearts6")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.6)
                 
             }
             
@@ -82,26 +94,39 @@ struct SaySomethingNice5: View {
                             
                             ZStack {
                                 
-                                Image(systemName: "cube.fill")
+                                Image(systemName: "heart.fill")
                                     .resizable()
                                     .foregroundColor(Color.purple)
                                     .frame(width: 250, height: 200)
                                     .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                                     .opacity(0.5)
                                 
+//                                Image(systemName: "heart.fill")
+//                                    .resizable()
+//                                    .foregroundColor(Color.purple)
+//                                    .frame(width: 250, height: 200)
+//                                    .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+//                                    .opacity(0.5)
+                                
                                 VStack {
                                     
                                     
                                     Text("thinking of you")
-                                        .font(.system(size: 25, weight: .light))
+                                        .font(.system(size: 35, weight: .light))
                                         .italic()
                                         .foregroundColor(ColorManager .grey1)
                                         .opacity(0.5)
                                     
-                                    Text("Sending you Hearts")
-                                        .font(.system(size: 29, weight: .light))
+                                    Text("I'm sending \nyou Hearts")
+                                        .font(.system(size: 25, weight: .light))
                                         .foregroundColor(ColorManager .grey1)
                                         .opacity(0.5)
+                                    
+                                  Spacer ()
+                                        .frame(height: 35)
+                                    
+                                    
+                                    
                                 }
                             }
                         }
@@ -111,25 +136,55 @@ struct SaySomethingNice5: View {
                 
                     VStack {
                         Spacer()
-                            .frame(height: 70)
+                            .frame(height: 50)
                         
-                        NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
-                                        label: {
-                            Text("Include a PhotoPOP")
-                                .fontWeight(.bold)
-                                .frame(width: 200, height: 40)
-                                .foregroundColor(Color.black)
-                                .font(.system(size: 16))
-                                .background(Color.cyan)
-                                .glow(color: ColorManager.purple1, radius: 1)
-                                .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                .opacity(0.9)
-                                .cornerRadius(15)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                        })
-                        
-                        Spacer()
-                            .frame(height: 20)
+                        HStack {
+                            ZStack {
+                                
+                                Image(systemName: "heart.fill")
+                                    .resizable()
+                                    .foregroundColor(Color.purple)
+                                    .frame(width: 150, height: 110)
+                                    .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                                    .opacity(0.99)
+                                
+                                NavigationLink(
+                                    destination:  PhotoPopView(user: user, friends: friends),
+                                    label: {
+                                        
+                                        Image("IconPhotoNew")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 70, height: 70)
+                                            .foregroundColor(Color.purple)
+                                            .glow(color: Color.white, radius: 0.3)
+                                            .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                            .opacity(0.95)
+                                        
+                                    })
+                             
+                            }
+                                
+                                
+                                Spacer ()
+                                    .frame(width: 270)
+                                
+                                
+                                Image(systemName: "heart.fill")
+                                    .resizable()
+                                    .foregroundColor(Color.purple)
+                                    .frame(width: 20, height: 20)
+                                    .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                                    .opacity(0.0)
+                                
+                                Spacer ()
+                                    .frame(width: 35)
+                            
+                            
+                        }
+                            
+//                            Spacer()
+//                            .frame(height: 20)
                         
                         HStack {
                             
@@ -272,21 +327,21 @@ struct SaySomethingNice5: View {
                         
                         VStack {
                             
-                            
-                            Button(action: {
-                                sessionManager.showLogin()
-                            },
-                                   label: {
-                                Image("home-alt2")
-                                    .frame(width: 50, height: 25)
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 20))
-                                    .background(ColorManager .grey3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                    .opacity(0.70)
-                                
-                            })
+//
+//                            Button(action: {
+//                                sessionManager.showLogin()
+//                            },
+//                                   label: {
+//                                Image("home-alt2")
+//                                    .frame(width: 50, height: 25)
+//                                    .foregroundColor(.white)
+//                                    .font(.system(size: 20))
+//                                    .background(ColorManager .grey3)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                                    .opacity(0.70)
+//
+//                            })
                             
                             Spacer()
                                 .frame(height: 30)
@@ -343,11 +398,12 @@ struct SaySomethingNice5: View {
             var body: some View {
                 Text(friend.firstName + " " + String(friend.lastName.first!))
                     .fontWeight(.bold)
-                    .frame(width: 80, height: 80)
+                    .frame(width: 107, height: 107)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .font(.system(size: 8))
                     .background(color)
                     .cornerRadius(75)
+                    .opacity(0.85)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
             }
         }

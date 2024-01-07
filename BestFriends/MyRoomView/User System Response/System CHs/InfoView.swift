@@ -67,8 +67,11 @@ struct InfoView: View {
                 AdPlayerView(name: "background_8")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-           
-              
+                
+                AdPlayerView(name: "dreams")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.0)
 
 
             }

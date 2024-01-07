@@ -125,6 +125,12 @@ struct RR20: View {
                         .opacity(0.9)
                         .ignoresSafeArea()
                       
+                      
+                      Image("Fish")
+                          .resizable()
+                          .ignoresSafeArea()
+                          .onAppear()
+                      
                       AdPlayerView(name: "sky2")
                           .ignoresSafeArea()
                           .blendMode(.screen)

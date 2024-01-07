@@ -192,19 +192,19 @@ struct RR12: View {
                         
                         
                         VStack {
-                            
-                            
-                            Text("Friend's atmosphere")
-                                .font(.system(size: 20, weight: .light))
-                                .foregroundColor(ColorManager .grey1)
-                                    .multilineTextAlignment(.center)
-                                    .opacity(0.7)
-                            
-                            Text("changed to 'purple'")
-                                .font(.system(size: 20, weight: .light))
-                                .foregroundColor(ColorManager .grey1)
-                                    .multilineTextAlignment(.center)
-                                    .opacity(0.7)
+
+
+//                            Text("Friend's atmosphere")
+//                                .font(.system(size: 20, weight: .light))
+//                                .foregroundColor(ColorManager .grey1)
+//                                    .multilineTextAlignment(.center)
+//                                    .opacity(0.7)
+//
+//                            Text("changed to 'purple'")
+//                                .font(.system(size: 20, weight: .light))
+//                                .foregroundColor(ColorManager .grey1)
+//                                    .multilineTextAlignment(.center)
+//                                    .opacity(0.7)
                             
                             Spacer()
                                 .frame(height: 15)

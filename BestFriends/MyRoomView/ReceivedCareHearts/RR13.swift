@@ -53,6 +53,11 @@ struct RR13: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
+                AdPlayerView(name: "dandaline")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.0)
+                
             } else {
             
                 
@@ -69,6 +74,11 @@ struct RR13: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.8)
+                
+                AdPlayerView(name: "dandaline")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.0)
             }
             
             VStack{
@@ -132,7 +142,7 @@ struct RR13: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("(check Chat for message - say thanks)")
+                    Text("(say thanks)")
                                             .font(.system(size: 15))
                                             .italic()
                                             .foregroundColor(Color.white)

@@ -51,7 +51,7 @@ struct RR51: View {
                 .ignoresSafeArea()
                 .onAppear()
             
-            
+     
             
             VStack {
                 

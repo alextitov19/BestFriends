@@ -114,7 +114,11 @@ struct RR14: View {
                           .ignoresSafeArea()
                           .blendMode(.screen)
                           .opacity(0.9)
-             
+                      
+                      AdPlayerView(name: "FriendshipMix")
+                          .ignoresSafeArea()
+                          .blendMode(.screen)
+                          .opacity(0.0)
                       
             }
             

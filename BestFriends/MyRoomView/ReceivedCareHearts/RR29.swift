@@ -44,11 +44,18 @@ struct RR29: View {
                 Color.black
                     .opacity(0.8)
                     .ignoresSafeArea()
-        
-                AdPlayerView(name: "dramaLights")
-                    .opacity(0.5)
+                
+                
+                AdPlayerView(name: "UnstoppableZ")
                     .ignoresSafeArea()
                     .blendMode(.screen)
+                    .opacity(0.9)
+        
+//                AdPlayerView(name: "Unstoppable2")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.3)
+                
                 
             } else {
 
@@ -61,6 +68,13 @@ struct RR29: View {
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
+                
+                
+                
+//                AdPlayerView(name: "MiModaUnstopable")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.0)
            
                 AdPlayerView(name: "thumbsUp")
                     .ignoresSafeArea()
@@ -79,7 +93,7 @@ struct RR29: View {
                         .frame(width: 550, height: 250)
                         .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                         .rotationEffect(.degrees(-10))
-                        .opacity(0.95)
+                        .opacity(0.5)
                         .blinking(duration: 2.0).blinking(duration: 3.0)
                     
                     

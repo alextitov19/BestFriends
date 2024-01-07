@@ -93,6 +93,9 @@ struct RR27: View {
                       Color.black
                         .opacity(0.9)
                         .ignoresSafeArea()
+                      
+                      
+                
 
 
                       AdPlayerView(name: "dramaLights")
@@ -111,11 +114,10 @@ struct RR27: View {
                           .opacity(0.99)
                       
                       
-//                      AdPlayerView(name: "")
-//                          .ignoresSafeArea()
-//                          .blendMode(.screen)
-//                          .opacity(0.2)
-                   
+                      AdPlayerView(name: "surfer4")
+                          .ignoresSafeArea()
+                          .blendMode(.screen)
+                          .opacity(0.3)
             }
           
     VStack {
@@ -351,7 +353,7 @@ struct RR27: View {
                                 .glow(color: Color.purple, radius: 2)
                                 .opacity(0.6)
                                 .blinking(duration: 3.0)
-                                .alert("You just got a big Thumps-up message in Chat.", isPresented: $showingAlert) {
+                                .alert("Thanks for being a best friend when friends need you", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                             

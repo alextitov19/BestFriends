@@ -75,17 +75,21 @@ struct HomeView: View {
                     
                 }
                 
-                
+//
                 Color.black
                     .opacity(0.2)
                     .ignoresSafeArea()
+                
+//                Color.gray
+//                    .opacity(0.2)
+//                    .ignoresSafeArea()
                 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.9)
                 
-                
+             
                 
                 
                 VStack {
@@ -356,25 +360,26 @@ struct HomeView: View {
                         })
                         
                         VStack {
-                            Spacer ()
-                                .frame(height: 15)
+
                             
-                            Text("Today")
-                                .font(.system(size: 37))
+//                            Text("yes yes")
+//                                .font(.system(size: 27))
+//                                .foregroundColor(Color.white)
+//                                .fontWeight(.regular)
+//                                .opacity(0.99)
+//                                .multilineTextAlignment(.center)
+                            
+                            
+                            Text("yes")
+                                .font(.system(size: 40))
                                 .foregroundColor(Color.white)
-                                .fontWeight(.light)
-                                .opacity(0.99)
-                                .multilineTextAlignment(.center)
-                            
-                            
-                            Text("tap")
-                                .font(.system(size: 25))
-                                .foregroundColor(Color.white)
-                                .fontWeight(.regular)
+                                .fontWeight(.medium)
                                 .opacity(0.99)
                                 .multilineTextAlignment(.center)
                                 .blinking(duration: 2.0)
-                            
+                           
+                            Spacer ()
+                                .frame(height: 7)
                             
                         }
                         

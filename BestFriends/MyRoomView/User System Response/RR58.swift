@@ -10,6 +10,7 @@
 
 import Foundation
 import SwiftUI
+//import AVKit
 
 struct RR58: View {
     @EnvironmentObject var sessionManager: SessionManager
@@ -35,29 +36,58 @@ struct RR58: View {
     @State private var colorChangeTap: String = ""
     @State private var shareTapped: Bool = false
     //    *************************
-    
+//    @State var audioPlayer: AVAudioPlayer!
     
     
     var body: some View {
         //        ScrollView {
         
-        ZStack {
+//        ZStack {
+//
+//            Color.gray
+//                .opacity(0.2)
+//                .ignoresSafeArea()
+//
+//            AdPlayerView(name: "sky2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
             
-            Color.black
-                .opacity(0.7)
-                .ignoresSafeArea()
+// ********************************* if tapped ********
             
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-            
-            AdPlayerView(name: "sadGirl2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-                .opacity(0.5)
-            
-            
-            
+            ZStack {
+                
+                
+                if shareTapped {
+                    
+                    
+                    
+                    Color.black
+                        .ignoresSafeArea()
+                        .onAppear()
+                    
+                    
+                    AdPlayerView(name: "dramaLights")
+                        .ignoresSafeArea()
+                        .blendMode(.screen)
+                    
+             
+                    
+               
+                    
+                } else {
+                    
+                    Color.black
+                        .opacity(0.9)
+                        .ignoresSafeArea()
+                    
+                    AdPlayerView(name: "sky2")
+                        .ignoresSafeArea()
+                        .blendMode(.screen)
+             
+                
+                }
+           
+//*****************************************************
             VStack {
                 
                 ZStack {
@@ -71,14 +101,31 @@ struct RR58: View {
                         
                         NavigationLink(destination: RRLoveTarts3(user: user, friend: user, friends: friends, groups: groups), label: {
                                 ZStack {
-                                    Text("Love \nTarts")
-                                        .font(.system(size: 27))
-                                        .foregroundColor(ColorManager .grey3)
-                                        .fontWeight(.bold)
-                                        .opacity(0.99)
-                                        .rotationEffect(.degrees(10))
-                                        .multilineTextAlignment(.center)
-                                    
+                                    VStack {
+                                        Text("Friendships")
+                                            .font(.system(size: 20))
+                                            .foregroundColor(ColorManager .grey1)
+                                            .fontWeight(.medium)
+                                            .opacity(0.15)
+                                            .rotationEffect(.degrees(10))
+                                            .multilineTextAlignment(.center)
+                                            .glow(color: ColorManager .purple3, radius: 1)
+                                        
+                                        
+                                        Text("& LoveTarts")
+                                            .font(.system(size: 20))
+                                            .foregroundColor(ColorManager .grey1)
+                                            .fontWeight(.medium)
+                                            .opacity(0.15)
+                                            .rotationEffect(.degrees(10))
+                                            .multilineTextAlignment(.center)
+                                            .glow(color: ColorManager .purple3, radius: 1)
+                                       
+                                        Spacer ()
+                                            .frame(height: 10)
+                                        
+                                    }
+                                 
                                     Image(systemName: "heart")
                                         .resizable()
                                         .scaledToFit()
@@ -93,7 +140,7 @@ struct RR58: View {
                                         .resizable()
                                         .scaledToFit()
                                         .frame(width: 150, height: 150)
-                                        .foregroundColor(ColorManager .purple3)
+                                        .foregroundColor(ColorManager .purple4)
                                         .opacity(0.075)
 //                                        .rotationEffect(.degrees(10))
                                         .glow(color: Color.white, radius: 1)
@@ -139,7 +186,7 @@ struct RR58: View {
                 
                 VStack {
                     Spacer ()
-                        .frame(height: 70)
+                        .frame(height: 50)
                     
                     HStack {
                         NavigationLink(
@@ -147,9 +194,9 @@ struct RR58: View {
                             label: {
                                 
                                 ZStack {
-                                    Text("Alerting              Friends")
+                                    Text("")
                                         .fontWeight(.light)
-                                        .frame(width: 300, height: 40)
+                                        .frame(width: 100, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 25))
                                         .background(Color.cyan)
@@ -160,9 +207,9 @@ struct RR58: View {
                                         .resizable()
                                         .scaledToFit()
                                         .frame(width: 55, height: 55)
-                                        .foregroundColor(ColorManager .purple1)
-                                        .glow(color: ColorManager .purple2, radius: 3)
-                                        .blinking(duration: 2.0)
+                                        .foregroundColor(ColorManager .purple4)
+                                        .glow(color: ColorManager .purple5, radius: 1)
+//                                        .blinking(duration: 2.0)
                                         .opacity(0.8)
                                     
                                 }
@@ -170,12 +217,11 @@ struct RR58: View {
                         )}
                     
                     VStack {
-                        Text("receiving real-time")
+                        Text("Seceretly share your 'Vibe'")
                             .fontWeight(.thin)
                             .italic()
                             .foregroundColor(Color.white)
-                        
-                        Text("input from friends")
+                        Text("with trusted friends")
                             .fontWeight(.thin)
                             .italic()
                             .foregroundColor(Color.white)
@@ -193,140 +239,224 @@ struct RR58: View {
                 VStack {
                     
                     Spacer ()
-                        .frame(height: 60)
+                        .frame(height: 50)
                     
                     HStack {
                         NavigationLink(
                             destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
                             label: {
                                 
-                                HStack {
-                                    
-                                    ZStack {
-                                        Image(systemName: "circle.fill")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 45, height: 45)
-                                            .foregroundColor(Color.cyan)
-                                            .opacity(0.95)
-                                        
-                                        
-                                        Image(systemName: "heart.fill")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 30, height: 30)
-                                            .foregroundColor(Color.purple)
-                                            .glow(color: Color.white, radius: 0.3)
-                                            .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                            .opacity(0.95)
-                                        
-                                    }
-                                    
-                                    Spacer ()
-                                        .frame(width: 30)
-                                    
-                                    Text("CareHearts")
-                                        .fontWeight(.light)
-                                        .frame(width: 180, height: 40)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 25))
-                                        .background(Color.cyan)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    
-                                    
-                                    
-                                }
-                            })
-                        
-                        Spacer ()
-                            .frame(width: 30)
-                        
-                        
-                        NavigationLink(
-                            destination:  RR56(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
-                            label: {
+                        HStack {
+                            ZStack {
                                 
-                                ZStack {
-                                    
-                                    Image(systemName: "circle.fill")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 45, height: 45)
-                                        .foregroundColor(ColorManager .purple3)
-                                        .opacity(0.95)
-                                    
-                                    Image(systemName: "heart.fill")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 30, height: 30)
-                                        .foregroundColor(Color.orange)
-                                        .glow(color: Color.white, radius: 0.3)
-                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                        .opacity(0.95)
-                                    
-                                }
-                            })
-                    }
+                                Text("       bad day                CareHearts")
+                                    .fontWeight(.light)
+                                    .frame(width: 350, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 25))
+                                    .background(Color.cyan)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                      
+                               
+                                Text("Tap")
+                                    .font(.system(size: 23))
+                                    .foregroundColor(Color.white)
+                                    .fontWeight(.medium)
+                                    .opacity(0.99)
+    //                                .rotationEffect(.degrees(10))
+                                    .multilineTextAlignment(.center)
+                                
+                                Image(systemName: "heart")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 75, height: 75)
+                                    .foregroundColor(Color.cyan)
+                                    .opacity(0.05)
+                                    .rotationEffect(.degrees(10))
+                                    .glow(color: Color.purple, radius: 1)
+                                    .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
+                                
+                                Image(systemName: "heart.fill")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 65, height: 100)
+                                    .foregroundColor(ColorManager .purple4)
+                                    .opacity(0.2)
+                                    .rotationEffect(.degrees(10))
+                                    .glow(color: Color.white, radius: 1)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                             
+                                
+                                Text("send")
+                                    .font(.system(size: 23))
+                                    .foregroundColor(ColorManager .grey2)
+                                    .fontWeight(.medium)
+                                    .opacity(0.99)
+                                    .rotationEffect(.degrees(10))
+                                    .multilineTextAlignment(.center)
+                                
+                            }
+                        }
+                    })
+                }
                     
                     
                     
                     HStack {
-                        
-                        //                        Spacer()
-                        //                            .frame(width: 5)
-                        //
-                        Text("sending")
-                            .fontWeight(.thin)
-                            .italic()
-                            .foregroundColor(Color.white)
-                        
-                        
+                  
                         Spacer ()
-                            .frame(width: 65)
+                            .frame(width: 25)
                         
                         
                         VStack {
                             
-                            Text("sharing love")
+                            Text("Sharing love & support with friends")
                                 .fontWeight(.thin)
                                 .italic()
                                 .foregroundColor(Color.white)
                             
-                            Text("motivation &")
-                                .fontWeight(.thin)
-                                .italic()
-                                .foregroundColor(Color.white)
-                            
-                            
-                            Text("celebrations!")
-                                .fontWeight(.thin)
-                                .italic()
-                                .foregroundColor(Color.white)
+//                            Text("on difficult days")
+//                                .fontWeight(.thin)
+//                                .italic()
+//                                .foregroundColor(Color.white)
                             
                             
                         }
                         
-                        Spacer ()
-                            .frame(width: 55)
-                        
-                        
-                        Text("received")
-                            .fontWeight(.thin)
-                            .italic()
-                            .foregroundColor(Color.white)
+//                        Spacer ()
+//                            .frame(width: 25)
+//
+//
+//                        Text("received")
+//                            .fontWeight(.thin)
+//                            .italic()
+//                            .foregroundColor(Color.white)
                         
                     }
                 }
-            
                 
+                
+//  ********************************************** Motivation **********
+                
+                VStack {
+                    
+                    Spacer ()
+                        .frame(height: 15)
+                    
+                    ZStack {
+                        
+                        NavigationLink(
+                            destination:  RRMotivationCH(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+                            label: {
+                                VStack {
+                                    
+                                    
+                                    ZStack {
+                                        Text("good day, congrats & motivation")
+                                            .fontWeight(.light)
+                                            .frame(width: 380, height: 40)
+                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                            .font(.system(size: 25))
+                                            .background(Color.cyan)
+                                            .cornerRadius(15)
+                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                                        Image("iconRocket 1")
+//                                            .resizable()
+//                                            .scaledToFit()
+//                                            .frame(width: 50, height: 50)
+//                                            .foregroundColor(ColorManager .purple4)
+//                                            .glow(color: ColorManager .grey1, radius: 3)
+//                                        //                                        .blinking(duration: 2.0)
+//                                            .opacity(0.8)
+//
+                                    }
+//                                    Text("Give motivation & celebrate together")
+//                                        .fontWeight(.thin)
+//                                        .italic()
+//                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//
+                                }
+                            }
+                        )}
+                }
+                
+                
+    //  ********************************************** Received **********
+                Spacer ()
+                    .frame(height: 20)
+                
+                HStack {
+                  
+                    
+                    Text("Receiving >>>")
+                        .fontWeight(.thin)
+                        .italic()
+                        .foregroundColor(Color.white)
+                    
+                    
+                    
+                    Spacer ()
+                        .frame(width: 7)
+                    
+                    
+                NavigationLink(
+                    destination:  RR56(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+                    label: {
+                        
+                        ZStack {
+                            
+                            Text("tap")
+                                .font(.system(size: 23))
+                                .foregroundColor(Color.white)
+                                .fontWeight(.medium)
+                                .opacity(0.99)
+                                .rotationEffect(.degrees(10))
+                                .multilineTextAlignment(.center)
+                            
+                            Image(systemName: "heart")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 75, height: 75)
+                                .foregroundColor(Color.cyan)
+                                .opacity(0.05)
+                                .rotationEffect(.degrees(10))
+                                .glow(color: Color.purple, radius: 1)
+                                .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
+                            
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 65, height: 65)
+                                .foregroundColor(ColorManager .purple4)
+                                .opacity(0.075)
+                                .rotationEffect(.degrees(10))
+                                .glow(color: Color.white, radius: 1)
+                                .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+
+                        }
+                    })
+                    
+                    
+                    Spacer ()
+                        .frame(width: 10)
+                    
+                    Text("Carehearts, \nLove Tarts \nand more...")
+                        .fontWeight(.thin)
+                        .italic()
+                        .foregroundColor(Color.white)
+                
+                 
+                }
+
                 
                 //    ****************************** OFF Planet *************
                 
                 VStack {
 
                         Spacer ()
-                            .frame(height: 60)
+                            .frame(height: 50)
                     
                     ZStack {
                         
@@ -342,7 +472,7 @@ struct RR58: View {
                                             .frame(width: 220, height: 40)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                             .font(.system(size: 25))
-                                            .background(Color.cyan)
+                                            .background(ColorManager .purple2)
                                             .cornerRadius(15)
                                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                         
@@ -356,7 +486,7 @@ struct RR58: View {
                                             .opacity(0.8)
                                         
                                     }
-                                    Text("when your friends arn't around")
+                                    Text("When your friends arn't around")
                                         .fontWeight(.thin)
                                         .italic()
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -367,7 +497,7 @@ struct RR58: View {
                     
                     
                                             Spacer()
-                                                .frame(height: 80)
+                                                .frame(height: 50)
                     
                 }
             }

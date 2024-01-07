@@ -51,6 +51,12 @@ struct SendKisses: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
+                
+                AdPlayerView(name: "BlowingKisses2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.25)
+                
             } else {
 
 
@@ -84,7 +90,7 @@ struct SendKisses: View {
                             Image(systemName: "cube.fill")
                                 .resizable()
                                 .foregroundColor(Color.purple)
-                                .frame(width: 250, height: 200)
+                                .frame(width: 250, height: 150)
                                 .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                                 .opacity(0.5)
                           
@@ -108,81 +114,50 @@ struct SendKisses: View {
                 
                 
                            Spacer()
-                               .frame(height: 270)
-//         ***************************************** bubble popups
+                               .frame(height: 130)
                 
-//                HStack {
-//
-//                    ZStack {
-//                        Image("")
-//                            .resizable()
-//                            .foregroundColor(Color.white)
-//                            .frame(width: 0, height: 0)
-//                            .rotationEffect(.degrees(-7))
-//                            .shadow(color: Color.white, radius: 3, x: 3, y: 3)
-//                            .opacity(0.5)
-//                            .blinking(duration: 3.0)
-//
-//                        VStack {
-//
-//
-////                            Text("Yep! Jump up")
-////                                .font(.system(size: 17))
-////                                .italic()
-////                                .fontWeight(.light)
-////                                .multilineTextAlignment(.center)
-////                                .foregroundColor(Color.white)
-////                                .rotationEffect(.degrees(-7))
-////                                .blinking(duration: 3.0)
-//
-//
-//                        }
-//                    }
-//
-//
-//                    Spacer()
-//                        .frame(width: 200)
-//
-//                    ZStack {
-//
-//
-//                        Image("comicBubble")
-//                            .resizable()
-//                            .foregroundColor(Color.white)
-//                            .frame(width: 250, height: 100)
-//                            .shadow(color: Color.white, radius: 3, x: 3, y: 3)
-//                            .rotationEffect(.degrees(-7))
-//                            .opacity(0.5)
-//                            .blinking(duration: 3.0)
-//
-//                        VStack {
-//
-//                            Text("soft as butterfly wings")
-//                                .font(.system(size: 15))
-//                                .italic()
-//                                .fontWeight(.light)
-//                                .multilineTextAlignment(.center)
-//                                .foregroundColor(Color.white)
-//                                .rotationEffect(.degrees(-7))
-//                                .blinking(duration: 3.0)
-//
-//
-//
-////                            Text("towards your friend")
-////                                .font(.system(size: 15))
-////                                .italic()
-////                                .fontWeight(.light)
-////                                .multilineTextAlignment(.center)
-////                                .foregroundColor(Color.white)
-////                                .rotationEffect(.degrees(-7))
-////                                .blinking(duration: 3.0)
-////
-//                        }
-//                    }
-//                }
+                HStack {
+                    
+                    ZStack {
+                        
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .foregroundColor(Color.purple)
+                            .frame(width: 130, height: 95)
+                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                            .opacity(0.6)
+                        
+                        NavigationLink(
+                            destination:  PhotoPopView(user: user, friends: friends),
+                            label: {
+                                
+                                Image("IconPhotoNew")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 70, height: 70)
+                                    .foregroundColor(Color.purple)
+                                    .glow(color: Color.white, radius: 0.3)
+                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                    .opacity(0.95)
+                                
+                            })
+                        
+                    }
+                    
+                    Spacer ()
+                        .frame(width: 280)
+                    
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .foregroundColor(Color.purple)
+                            .frame(width: 10, height: 10)
+                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                            .opacity(0.99)
+                        
+                        
+                    }
                 
-                
-                
+         
                 
     VStack {
                     

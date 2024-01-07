@@ -11,7 +11,6 @@ import Foundation
 import SwiftUI
 import ConfettiSwiftUI
 import AVKit
-
 struct HugPushNotification: View {
     
     @EnvironmentObject var sessionManager: SessionManager
@@ -53,6 +52,11 @@ struct HugPushNotification: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
+//                AdPlayerView(name: "FriendshipMix")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.0)
+                
             } else {
                 
                 
@@ -69,6 +73,12 @@ struct HugPushNotification: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.5)
+                
+                
+//                AdPlayerView(name: "FriendshipMix")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.0)
                 
             }
             
@@ -102,36 +112,71 @@ struct HugPushNotification: View {
                                     .foregroundColor(Color.white)
                                     .opacity(0.5)
                                 
-                                Text("touching the heart of you")
+                                Text("touching their heart")
                                     .font(.system(size: 20, weight: .light))
                                     .foregroundColor(Color.white)
                                     .opacity(0.5)
                                 Spacer()
                                     .frame(height: 10)
-                                
-                                
-                                
+                               
                             }
                         }
-                        
-                        
                     }
-                    
-                    
                 }
                 
                 
+//     ************************************ photopop
+                
+        HStack {
+                   
+            Spacer()
+                .frame(height: 70)
+            
+                    ZStack {
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .foregroundColor(Color.purple)
+                            .frame(width: 130, height: 85)
+                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                            .opacity(0.5)
+                        
+                        NavigationLink(
+                            destination:  PhotoPopView(user: user, friends: friends),
+                            label: {
+                                
+                                Image("IconPhotoNew")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 70, height: 70)
+                                    .foregroundColor(Color.purple)
+                                    .glow(color: Color.white, radius: 0.3)
+                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                    .opacity(0.95)
+                                
+                            })
+                        
+                        Spacer ()
+                            .frame(width: 100)
+                        
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .foregroundColor(Color.purple)
+                            .frame(width: 10, height: 10)
+                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                            .opacity(0.0)
+                        
+                        
+                        
+                    }
+                }
                 
                 
-                
-                
-                
-                
-                //                *********************************************************
+//                *********************************************************
                 
                 VStack {
+                    
                     Spacer()
-                        .frame(height: 170)
+                        .frame(height: 70)
                     
                     VStack {
                         
@@ -305,63 +350,7 @@ struct HugPushNotification: View {
                             //
                         }
                         
-                        HStack {
-                            Image(systemName: "star.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 2, height: 2)
-                                .foregroundColor(Color.white)
-                                .opacity(0.95)
-                            
-                            
-                            Spacer ()
-                                .frame(width: 200)
-                            
-                            
-                            VStack {
-                                
-                                ZStack {
-                                    
-                                    Image("comicBubble")
-                                        .resizable()
-                                        .foregroundColor(Color.white)
-                                        .frame(width: 250, height: 150)
-                                        .shadow(color: Color.white, radius: 3, x: 3, y: 3)
-                                        .rotationEffect(.degrees(-12))
-                                        .opacity(0.5)
-                                    //                                .blinking(duration: 3.0)
-                                    
-                                    VStack {
-                                        NavigationLink(
-                                            destination:  PhotoPopView(user: user, friends: friends),
-                                            label: {
-                                                
-                                                Image("IconPhotoNew")
-                                                    .resizable()
-                                                    .scaledToFit()
-                                                    .frame(width: 45, height: 45)
-                                                    .rotationEffect(.degrees(-13))
-                                                    .foregroundColor(ColorManager .purple5)
-                                                    .glow(color: Color.purple, radius: 2)
-                                                    .opacity(0.9)
-                                                
-                                            })
-                                        
-                                        Text("Send PhotoPOP of previous \nfun time together")
-                                            .fontWeight(.light)
-                                            .foregroundColor(Color.white)
-                                            .font(.system(size: 11))
-                                            .multilineTextAlignment(.center)
-                                            .rotationEffect(.degrees(-13))
-                                            .opacity(0.85)
-                                        
-                                        Spacer()
-                                            .frame(height: 18)
-                                        
-                                    }
-                                }
-                              
-                            }
+
                         }
                         
                     }
@@ -371,8 +360,7 @@ struct HugPushNotification: View {
             }
             
         }
-        
-    }
+ 
     
 //  ************************** floating hearts *************
                                 struct LikesGeometryEffect : GeometryEffect {

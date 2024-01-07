@@ -54,17 +54,23 @@ struct RR59: View {
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.5)
-            
-            AdPlayerView(name: "offPlanet1")
+         
+            AdPlayerView(name: "moonShots")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.9)
+            
+//            AdPlayerView(name: "dreams")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.0)
+            
             ZStack{
                 
                 VStack {
      
                     Spacer()
-                        .frame(height: 7)
+                        .frame(height: 70)
 //  *************************************************
        
                     HStack {
@@ -110,7 +116,7 @@ struct RR59: View {
                     
                     
                     Spacer()
-                        .frame(height: 90)
+                        .frame(height: 50)
                 
 //    *******************************************
            
@@ -186,30 +192,54 @@ struct RR59: View {
                            
                             
                             Spacer ()
-                                .frame(width: 75)
+                                .frame(width: 45)
 
         ZStack {
 
             NavigationLink(
-                destination: EmptyView(),
+                destination: RRBrokenHeart(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                 label: {
-                    Text("???")
-                        .font(.system(size: 30))
-                        .foregroundColor(ColorManager .grey3)
-                        .fontWeight(.bold)
-                        .opacity(0.8)
-                        .multilineTextAlignment(.center)
-//                        .blinking(duration: 2.0)
-            })
-        }
+                    
+                    ZStack {
+                        Text("Dented \nHeart")
+                            .font(.system(size: 14))
+                            .foregroundColor(ColorManager .grey4)
+                            .fontWeight(.bold)
+                            .opacity(0.99)
+                            .multilineTextAlignment(.center)
+                        //                        .blinking(duration: 2.0)
+                        
+                        Image(systemName: "heart")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 120, height: 120)
+                            .foregroundColor(Color.cyan)
+                            .opacity(0.1)
+                            .rotationEffect(.degrees(10))
+                            .glow(color: Color.purple, radius: 1)
+                            .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
+                        
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 110, height: 110)
+                            .foregroundColor(ColorManager .purple3)
+                            .opacity(0.1)
+                        //                                        .rotationEffect(.degrees(10))
+                            .glow(color: Color.white, radius: 1)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                    }
+                         
+                })
+            }
 
                             
                             Spacer ()
-                                .frame(width: 70)
+                                .frame(width: 45)
                             
                             
                             NavigationLink(destination: RRDidGood(user: user, friends: friends), label: {
-                                HugCircle (color: ColorManager .grey1, friendName: "YES")
+                                HugCircle (color: ColorManager .grey1, friendName: "I did\n it!!!")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .white, radius: 5, x: 2, y: -2)

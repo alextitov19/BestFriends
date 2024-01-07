@@ -61,6 +61,7 @@ struct RR32: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
+               
                 
             }
             
@@ -70,8 +71,8 @@ struct RR32: View {
              
                     VStack {
                         
-                        Text("I'm having a tough day?")
-                            .font(.system(size: 30))
+                        Text("Yep, I'm having a tough day")
+                            .font(.system(size: 27))
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color .white)
@@ -94,13 +95,13 @@ struct RR32: View {
                         .frame(height: 15)
                     
                     VStack {
-                        Text("But,maybe not comfortable")
+                        Text("But, not ready to")
                             .font(.system(size: 17))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
                         
-                        Text("talking to anyone just yet.")
+                        Text("talk to anyone just yet")
                             .font(.system(size: 17))
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)

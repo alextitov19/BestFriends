@@ -259,7 +259,7 @@ VStack {
     }
     
     Spacer()
-        .frame(height: 40)
+        .frame(height: 25)
      
     NavigationLink(destination:  RR51(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                label: {
@@ -276,7 +276,8 @@ VStack {
                 })
 
         VStack {
-            
+            Spacer()
+                .frame(height: 25)
      
                      Button(action: {
                          sessionManager.showLogin()

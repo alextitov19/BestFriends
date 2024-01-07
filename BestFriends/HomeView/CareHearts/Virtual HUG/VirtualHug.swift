@@ -102,7 +102,10 @@ struct VirtualHug: View {
                     .blendMode(.screen)
                     .opacity(0.7)
                 
-                
+                AdPlayerView(name: "runAway")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.0)
                 
             }
             
@@ -118,7 +121,7 @@ struct VirtualHug: View {
                     
                     VStack {
                         
-                        Text("We're all here")
+                        Text("To feel")
                             .font(.system(size: 35))
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
@@ -129,7 +132,7 @@ struct VirtualHug: View {
                             .opacity(0.5)
                         
                         
-                        Text("for you")
+                        Text("your HUG!")
                             .font(.system(size: 35))
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
@@ -147,42 +150,7 @@ struct VirtualHug: View {
                             .frame(height: 20)
                         
                         ZStack{
-                       
-                            VStack {
-                                VStack {
-                               
-                                    VStack {
-                                        
-                                        Text("hold iPhone to")
-                                            .font(.system(size: 25))
-//                                            .italic()
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
-                                            .foregroundColor(Color.white)
-//                                            .rotationEffect(.degrees(-20))
-                                           .blinking(duration: 3.0)
-//                                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                                            .opacity(0.3)
-                                     
-                                       
-                                        
-                                        Text("your HEART")
-                                            .font(.system(size: 25))
-//                                            .italic()
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
-                                            .foregroundColor(Color.white)
-//                                            .rotationEffect(.degrees(-20))
-                                           .blinking(duration: 3.0)
-//                                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                                            .opacity(0.3)
-                                        
-                                    }
-                                }
-                            }
-                                
-                                
-                                
+                          
                                 Image(systemName: "heart.fill")
                                     .resizable()
                                     .foregroundColor(.purple)
@@ -192,8 +160,8 @@ struct VirtualHug: View {
                                 
                                 VStack {
                                    
-                                    Spacer()
-                                        .frame(height: 80)
+//                                    Spacer()
+//                                        .frame(height: 10)
                                     
                                     Text("TAP here, then...")
                                         .font(.system(size: 25))
@@ -220,7 +188,36 @@ struct VirtualHug: View {
                                                 
                                             }
                                         }
-                                    
+                                    VStack {
+                                        
+                                        Spacer()
+                                            .frame(height: 10)
+                                        
+                                        Text("hold iPhone to")
+                                            .font(.system(size: 25))
+//                                            .italic()
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
+                                            .foregroundColor(Color.white)
+//                                            .rotationEffect(.degrees(-20))
+                                           .blinking(duration: 3.0)
+//                                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                                            .opacity(0.7)
+                                     
+                                       
+                                        
+                                        Text("your HEART")
+                                            .font(.system(size: 25))
+//                                            .italic()
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
+                                            .foregroundColor(Color.white)
+//                                            .rotationEffect(.degrees(-20))
+                                           .blinking(duration: 3.0)
+//                                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                                            .opacity(0.7)
+                                        
+                                    }
                                     
                                 }
                             }
