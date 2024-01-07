@@ -37,17 +37,11 @@ struct NEWSFeedPergion: View {
         ZStack {
             
             if shareTapped {
-                
-//                AdPlayerView(name: "LongboardGirl2")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//                    .opacity(0.4)
-                
-                
-                AdPlayerView(name: "missingYou3")
+         
+                AdPlayerView(name: "dramaLights")
+                    .opacity(0.5)
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.3)
                 
                 AdPlayerView(name: "InnerStellar")
                               .ignoresSafeArea()
@@ -66,6 +60,11 @@ struct NEWSFeedPergion: View {
                     .blendMode(.screen)
                     .opacity(0.5)
               
+                
+                AdPlayerView(name: "missingYou3")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.3)
                 
                 AdPlayerView(name: "InnerStellar")
                               .ignoresSafeArea()
