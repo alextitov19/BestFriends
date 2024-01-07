@@ -117,10 +117,7 @@ struct InfoSafeChat: View {
                     .blendMode(.screen)
                     .opacity(0.2)
                 
-                AdPlayerView(name: "InnerStellar")
-                              .ignoresSafeArea()
-                              .blendMode(.screen)
-                              .opacity(0.0)
+             
                 
                 
                 

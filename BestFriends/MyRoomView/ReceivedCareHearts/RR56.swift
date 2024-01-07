@@ -69,7 +69,7 @@ struct RR56: View {
                                 .frame(width: 35)
                             
                             NavigationLink(destination: EmptyView(), label: {
-                                HugCircle (color: Color.cyan, friendName: "coming \nsoon")
+                                HugCircle (color: Color.cyan, friendName: "Missing \nyou")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .blue, radius: 5, x: 2, y: -2)

@@ -38,15 +38,21 @@ struct NEWSFeedPergion: View {
             
             if shareTapped {
                 
-                AdPlayerView(name: "LongboardGirl2")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .opacity(0.4)
+//                AdPlayerView(name: "LongboardGirl2")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.4)
                 
-                AdPlayerView(name: "dramaLights")
-                    .opacity(0.5)
+                
+                AdPlayerView(name: "missingYou3")
                     .ignoresSafeArea()
                     .blendMode(.screen)
+                    .opacity(0.3)
+                
+                AdPlayerView(name: "InnerStellar")
+                              .ignoresSafeArea()
+                              .blendMode(.screen)
+                              .opacity(0.0)
                 
             } else {
                 
@@ -59,13 +65,12 @@ struct NEWSFeedPergion: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.5)
+              
                 
-                AdPlayerView(name: "missingYou3")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .opacity(0.3)
-                
-                
+                AdPlayerView(name: "InnerStellar")
+                              .ignoresSafeArea()
+                              .blendMode(.screen)
+                              .opacity(0.0)
                 
             }
             

@@ -310,6 +310,8 @@
 		CF72D6FB2921AFE900EDDDA6 /* SmileVaultPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72D6FA2921AFE900EDDDA6 /* SmileVaultPreload.swift */; };
 		CF763F7C285AFBAB0010D1A9 /* HorizonsPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F7B285AFBAB0010D1A9 /* HorizonsPrototype.swift */; };
 		CF76FA08285EED3E000750A4 /* ReceivedPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76FA07285EED3E000750A4 /* ReceivedPlaylist.swift */; };
+		CF7A552E2B4A59EF0068F249 /* HugTikTok.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF7A552D2B4A59EF0068F249 /* HugTikTok.mp4 */; };
+		CF7A55302B4A5EC20068F249 /* HugGetMusic.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF7A552F2B4A5EC20068F249 /* HugGetMusic.mp4 */; };
 		CF84A3E22988A84700387A43 /* MyRoomNeedTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */; };
 		CF85CDE4298B0B1C0040EAE4 /* ProfessionalHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */; };
 		CF8941222A8B3E2700AFEC39 /* Planet4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF8941212A8B3E2700AFEC39 /* Planet4.mp4 */; };
@@ -371,7 +373,6 @@
 		CFB669342B47E9D200E9C237 /* Coldplay2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFB669332B47E9D200E9C237 /* Coldplay2.mp4 */; };
 		CFB669382B47EF2C00E9C237 /* UnstoppableZ.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFB669372B47EF2C00E9C237 /* UnstoppableZ.mp4 */; };
 		CFB6693A2B48F62A00E9C237 /* dandaline.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFB669392B48F62A00E9C237 /* dandaline.mp4 */; };
-		CFB6693C2B48FAD800E9C237 /* runAway.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFB6693B2B48FAD800E9C237 /* runAway.mp4 */; };
 		CFB6693E2B48FCB900E9C237 /* dreams.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFB6693D2B48FCB900E9C237 /* dreams.mp4 */; };
 		CFB669402B49051100E9C237 /* InnerStellar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFB6693F2B49051100E9C237 /* InnerStellar.mp4 */; };
 		CFB669422B49434B00E9C237 /* RRgreatDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB669412B49434B00E9C237 /* RRgreatDay.swift */; };
@@ -768,6 +769,8 @@
 		CF72D6FA2921AFE900EDDDA6 /* SmileVaultPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileVaultPreload.swift; sourceTree = "<group>"; };
 		CF763F7B285AFBAB0010D1A9 /* HorizonsPrototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonsPrototype.swift; sourceTree = "<group>"; };
 		CF76FA07285EED3E000750A4 /* ReceivedPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedPlaylist.swift; sourceTree = "<group>"; };
+		CF7A552D2B4A59EF0068F249 /* HugTikTok.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HugTikTok.mp4; sourceTree = "<group>"; };
+		CF7A552F2B4A5EC20068F249 /* HugGetMusic.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HugGetMusic.mp4; sourceTree = "<group>"; };
 		CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomNeedTalk.swift; sourceTree = "<group>"; };
 		CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalHelp.swift; sourceTree = "<group>"; };
 		CF8941212A8B3E2700AFEC39 /* Planet4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Planet4.mp4; sourceTree = "<group>"; };
@@ -829,7 +832,6 @@
 		CFB669332B47E9D200E9C237 /* Coldplay2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Coldplay2.mp4; sourceTree = "<group>"; };
 		CFB669372B47EF2C00E9C237 /* UnstoppableZ.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = UnstoppableZ.mp4; sourceTree = "<group>"; };
 		CFB669392B48F62A00E9C237 /* dandaline.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dandaline.mp4; sourceTree = "<group>"; };
-		CFB6693B2B48FAD800E9C237 /* runAway.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = runAway.mp4; sourceTree = "<group>"; };
 		CFB6693D2B48FCB900E9C237 /* dreams.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dreams.mp4; sourceTree = "<group>"; };
 		CFB6693F2B49051100E9C237 /* InnerStellar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = InnerStellar.mp4; sourceTree = "<group>"; };
 		CFB669412B49434B00E9C237 /* RRgreatDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RRgreatDay.swift; path = "../../../../../SocialTech Dropbox/RRgreatDay.swift"; sourceTree = "<group>"; };
@@ -1628,9 +1630,10 @@
 			children = (
 				CFB6690A2B4283FB00E9C237 /* offPlanet1.mp4 */,
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
+				CF7A552F2B4A5EC20068F249 /* HugGetMusic.mp4 */,
+				CF7A552D2B4A59EF0068F249 /* HugTikTok.mp4 */,
 				CFB6693D2B48FCB900E9C237 /* dreams.mp4 */,
 				CFB6693F2B49051100E9C237 /* InnerStellar.mp4 */,
-				CFB6693B2B48FAD800E9C237 /* runAway.mp4 */,
 				CFB669392B48F62A00E9C237 /* dandaline.mp4 */,
 				CFB669372B47EF2C00E9C237 /* UnstoppableZ.mp4 */,
 				CFB669332B47E9D200E9C237 /* Coldplay2.mp4 */,
@@ -2337,10 +2340,10 @@
 				CFB6693E2B48FCB900E9C237 /* dreams.mp4 in Resources */,
 				CFADFD982AFFF00C0090071A /* thumbsUp.mp4 in Resources */,
 				CF2D30BB2B1FECFC008D9C38 /* background_0.mp4 in Resources */,
+				CF7A55302B4A5EC20068F249 /* HugGetMusic.mp4 in Resources */,
 				CF8941302A8B4AA400AFEC39 /* background_9.mp4 in Resources */,
 				CF1773F82A8C0D6800DF5A15 /* Fireworks2.mp4 in Resources */,
 				CFB669382B47EF2C00E9C237 /* UnstoppableZ.mp4 in Resources */,
-				CFB6693C2B48FAD800E9C237 /* runAway.mp4 in Resources */,
 				CF2D30972B19C627008D9C38 /* sadGirl2.mp4 in Resources */,
 				CFB669302B47E21D00E9C237 /* surfer4.mp4 in Resources */,
 				CFADFD8C2AFF99FC0090071A /* moonRose1.mp4 in Resources */,
@@ -2377,6 +2380,7 @@
 				CFB669052B42795200E9C237 /* moonShots.mp4 in Resources */,
 				CFB6690D2B4531F600E9C237 /* FriendshipMix.mp4 in Resources */,
 				7ACDB183282825C1009E1CFD /* GoogleService-Info.plist in Resources */,
+				CF7A552E2B4A59EF0068F249 /* HugTikTok.mp4 in Resources */,
 				CFB6690B2B4283FB00E9C237 /* offPlanet1.mp4 in Resources */,
 				CF2D309B2B1AD058008D9C38 /* girlSpace1.mp4 in Resources */,
 				CF221EE62AF78FFB005D19B7 /* fistpumpVideo.mp4 in Resources */,
