@@ -90,6 +90,11 @@ struct VirtualHug: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
+                AdPlayerView(name: "HugTikTok")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.5)
+                
             } else {
                 
                 
@@ -102,10 +107,15 @@ struct VirtualHug: View {
                     .blendMode(.screen)
                     .opacity(0.7)
                 
-                AdPlayerView(name: "HugGetMusic")
+//                AdPlayerView(name: "HugGetMusic")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.0)
+                
+                AdPlayerView(name: "HugTikTok")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.0)
+                    .opacity(0.5)
                 
             }
             
@@ -121,7 +131,7 @@ struct VirtualHug: View {
                     
                     VStack {
                         
-                        Text("To feel")
+                        Text("To feel your HUG!")
                             .font(.system(size: 35))
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
@@ -131,16 +141,7 @@ struct VirtualHug: View {
 //                           .shadow(color: Color.white, radius: 2, x: 1, y: 1)
                             .opacity(0.5)
                         
-                        
-                        Text("your HUG!")
-                            .font(.system(size: 35))
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey2)
-//                                        .rotationEffect(.degrees(-20))
-//                                        .blinking(duration: 3.0)
-//                           .shadow(color: Color.white, radius: 2, x: 1, y: 1)
-                            .opacity(0.5)
+   
                         
                         
                         

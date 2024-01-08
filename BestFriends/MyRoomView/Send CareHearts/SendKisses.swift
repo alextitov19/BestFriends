@@ -51,11 +51,19 @@ struct SendKisses: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
+//             ************** PUT OUR HOMEMADE VIDEO HERE ************
+//                ********* NO audio on second page
                 
-                AdPlayerView(name: "BlowingKisses2")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .opacity(0.25)
+                
+//                AdPlayerView(name: "BlowingKisses2")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.25)
+                
+//                AdPlayerView(name: "alwaysForever2")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.0)
                 
             } else {
 
@@ -276,7 +284,7 @@ struct SendKisses: View {
                                 .glow(color: Color.purple, radius: 2)
                                 .opacity(0.6)
                                 .blinking(duration: 3.0)
-                                .alert("This is the best feeling in the world! \n\nIt's like that special look on a girls face she only gets while holding a bunch of flowers.", isPresented: $showingAlert) {
+                                .alert("Blowing kisses is the best! \n\nIt's like that special look on a girls face she only gets while holding a bunch of flowers.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
                                 }
                         })

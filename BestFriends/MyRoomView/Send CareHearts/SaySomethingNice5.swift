@@ -46,11 +46,15 @@ struct SaySomethingNice5: View {
 //                    .blendMode(.screen)
 //                    .opacity(0.3)
                 
-                AdPlayerView(name: "dandaline")
+//                AdPlayerView(name: "dandaline")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.0)
+                
+                AdPlayerView(name: "sendHearts6")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.0)
-                
+                    .opacity(0.6)
                 
                 AdPlayerView(name: "dramaLights")
                     .opacity(0.5)
@@ -72,12 +76,14 @@ struct SaySomethingNice5: View {
                 AdPlayerView(name: "easyHearts2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.3)
+                    .opacity(0.5)
                 
-                AdPlayerView(name: "sendHearts6")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .opacity(0.6)
+
+                
+//                AdPlayerView(name: "dandaline")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.0)
                 
             }
             

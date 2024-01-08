@@ -43,10 +43,10 @@ struct NEWSFeedPergion: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
-                AdPlayerView(name: "InnerStellar")
-                              .ignoresSafeArea()
-                              .blendMode(.screen)
-                              .opacity(0.0) 
+//                AdPlayerView(name: "InnerStellar")
+//                              .ignoresSafeArea()
+//                              .blendMode(.screen)
+//                              .opacity(0.0) 
                 
             } else {
                 
@@ -64,12 +64,12 @@ struct NEWSFeedPergion: View {
                 AdPlayerView(name: "missingYou3")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.3)
-                
-                AdPlayerView(name: "InnerStellar")
-                              .ignoresSafeArea()
-                              .blendMode(.screen)
-                              .opacity(0.0)
+//                    .opacity(0.3)
+//
+//                AdPlayerView(name: "InnerStellar3")
+//                              .ignoresSafeArea()
+//                              .blendMode(.screen)
+//                              .opacity(0.0)
                 
             }
             

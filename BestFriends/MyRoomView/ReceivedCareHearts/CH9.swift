@@ -66,8 +66,12 @@ struct CH9: View {
                 AdPlayerView(name: "moonRose1")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.9)
-
+                    .opacity(0.5)
+                
+                AdPlayerView(name: "alwaysForever2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.0)
 
             }
             

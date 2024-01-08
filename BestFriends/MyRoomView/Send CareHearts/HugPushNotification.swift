@@ -52,10 +52,10 @@ struct HugPushNotification: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
-                AdPlayerView(name: "HugTikTok")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .opacity(0.0)
+//                AdPlayerView(name: "HugTikTok")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.0)
                 
             } else {
                 
@@ -68,17 +68,12 @@ struct HugPushNotification: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.5)
+      
                 
-//                AdPlayerView(name: "snowAngles2")
+//                AdPlayerView(name: "HugTikTok")
 //                    .ignoresSafeArea()
 //                    .blendMode(.screen)
 //                    .opacity(0.5)
-                
-                
-                AdPlayerView(name: "HugTikTok")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .opacity(0.5)
                 
             }
             

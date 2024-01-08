@@ -239,7 +239,7 @@ struct RR58: View {
                 VStack {
                     
                     Spacer ()
-                        .frame(height: 70)
+                        .frame(height: 50)
                     
                     HStack {
                         NavigationLink(

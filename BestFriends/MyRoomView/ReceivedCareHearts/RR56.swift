@@ -68,8 +68,8 @@ struct RR56: View {
                             Spacer()
                                 .frame(width: 35)
                             
-                            NavigationLink(destination: EmptyView(), label: {
-                                HugCircle (color: Color.cyan, friendName: "Missing \nyou")
+                            NavigationLink(destination: RR13(user: user, friends: friends, groups: groups), label: {
+                                HugCircle (color: Color.cyan, friendName: "Nice! \nyou got \nHearts")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
@@ -93,8 +93,8 @@ struct RR56: View {
                                 .frame(width: 200)
                             
                             
-                            NavigationLink(destination: RR13(user: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: Color.pink, friendName: "Nice! \nyou got \nHearts")
+                            NavigationLink(destination: RRMissYou(user: user, friends: friends), label: {
+                                HugCircle (color: Color.pink, friendName: "Missing \nyou")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .pink, radius: 5, x: 2, y: -2)
