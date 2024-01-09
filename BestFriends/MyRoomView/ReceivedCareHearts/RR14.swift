@@ -93,6 +93,11 @@ struct RR14: View {
                       Color.black
                           .opacity(0.8)
                           .ignoresSafeArea()
+                      
+                      AdPlayerView(name: "FriendshipMix")
+                          .ignoresSafeArea()
+                          .blendMode(.screen)
+                          .opacity(0.0)
               
                       AdPlayerView(name: "dramaLights")
                           .opacity(0.5)
@@ -101,11 +106,6 @@ struct RR14: View {
                       
                   } else {
 
-//                      Image("CareHeartBalloon 1")
-//                          .ignoresSafeArea()
-//                          .scaledToFit()
-//                          .opacity(0.1)
-                      
                       Color.black
                         .opacity(0.3)
                         .ignoresSafeArea()

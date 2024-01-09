@@ -71,10 +71,10 @@ struct RR29: View {
                 
                 
                 
-//                AdPlayerView(name: "MiModaUnstopable")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//                    .opacity(0.0)
+                AdPlayerView(name: "neverSurrender")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.0)
            
                 AdPlayerView(name: "thumbsUp")
                     .ignoresSafeArea()

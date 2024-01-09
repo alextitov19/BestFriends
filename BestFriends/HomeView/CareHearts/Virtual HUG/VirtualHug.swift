@@ -131,6 +131,9 @@ struct VirtualHug: View {
                     
                     VStack {
                         
+                        Spacer ()
+                             .frame(height: 20)
+                        
                         Text("To feel your HUG!")
                             .font(.system(size: 35))
                             .fontWeight(.bold)
@@ -140,15 +143,9 @@ struct VirtualHug: View {
 //                                        .blinking(duration: 3.0)
 //                           .shadow(color: Color.white, radius: 2, x: 1, y: 1)
                             .opacity(0.5)
-                        
-   
-                        
-                        
-                        
-                        
+        
                       
-                       Spacer ()
-                            .frame(height: 20)
+                    
                         
                         ZStack{
                           
@@ -217,23 +214,76 @@ struct VirtualHug: View {
                                            .blinking(duration: 3.0)
 //                                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                                             .opacity(0.7)
+                                     
+                                        
+                                        NavigationLink( destination:  HugPushNotification(user: user, friends: friends),
+                                                               label: {
+                                                   Text("Send a Hug back")
+                                                       .fontWeight(.bold)
+                                                       .frame(width: 200, height: 40)
+                                                       .foregroundColor(Color.black)
+                                                       .font(.system(size: 16))
+                                                       .background(Color.cyan)
+                                                       .glow(color: ColorManager.purple1, radius: 1)
+                                                       .shadow(color: .white, radius: 3, x: -4, y: 4)
+                                                       .opacity(0.9)
+                                                       .cornerRadius(15)
+                                                       .shadow(color: Color.white, radius: 2, x: 0, y: 2)
+                                               })
+                                        
                                         
                                     }
                                     
                                 }
                             }
                          
+//**********************************************************************
+                        
+                        HStack {
+                            ZStack {
+                                
+                                Image(systemName: "heart.fill")
+                                    .resizable()
+                                    .foregroundColor(Color.purple)
+                                    .frame(width: 150, height: 110)
+                                    .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                                    .opacity(0.95)
+                                
+                                NavigationLink(
+                                    destination:  PhotoPopView(user: user, friends: friends),
+                                    label: {
+                                        
+                                        Image("IconPhotoNew")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 70, height: 70)
+                                            .foregroundColor(Color.purple)
+                                            .glow(color: Color.white, radius: 0.3)
+                                            .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                            .opacity(0.95)
+                                        
+                                    })
+                     
+                                }
+                            
+                            Spacer ()
+                                 .frame(width: 250)
+                             
+                             Image(systemName: "heart.fill")
+                                 .resizable()
+                                 .foregroundColor(Color.purple)
+                                 .frame(width: 15, height: 15)
+                                 .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                                 .opacity(0.85)
+                         
+                            }
                         
                         
                         
-//          **************
+//          **************************************************************
                         
                             VStack {
-                                
-                                Spacer()
-                                    .frame(height: 20)
-                                
-                                
+                             
                                 Text("(say thanks)")
                                     .font(.system(size: 15))
                                     .italic()
@@ -332,21 +382,7 @@ struct VirtualHug: View {
                                     
                                 }
                                 
-                                
-                                //                            Spacer()
-                                //                                .frame(height: 15)
-                                
-                                
-                                
-                                
-                                
-                                //                        Button(action: {
-                                //                            counter += 1
-                                //                            shareButtonTapped()
-                                //                        },
-                                //                               label: {
-                                //                            Text("SHARE")
-                                
+                     
                                 
                                 Spacer()
                                     .frame(height: 7)
@@ -371,35 +407,12 @@ struct VirtualHug: View {
                                             Button("OK", role: .cancel) { }
                                         }
                                 })
-                                //                            .confettiCannon(counter: $counter)
-                                
-                                
-                                
-                                
-                                
-                                
+                
                                 VStack {
+                             
                                     
                                     Spacer()
                                         .frame(height: 20)
-                                    
-                                    NavigationLink( destination:  HugPushNotification(user: user, friends: friends),
-                                                    label: {
-                                        Text("Send a Hug back")
-                                            .fontWeight(.bold)
-                                            .frame(width: 200, height: 40)
-                                            .foregroundColor(Color.black)
-                                            .font(.system(size: 16))
-                                            .background(Color.cyan)
-                                            .glow(color: ColorManager.purple1, radius: 1)
-                                            .shadow(color: .white, radius: 3, x: -4, y: 4)
-                                            .opacity(0.9)
-                                            .cornerRadius(15)
-                                            .shadow(color: Color.white, radius: 2, x: 0, y: 2)
-                                    })
-                                    
-                                    Spacer()
-                                        .frame(height: 15)
                                     
                                     Button(action: {
                                         sessionManager.showLogin()
