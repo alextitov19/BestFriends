@@ -275,7 +275,7 @@ struct CH9: View {
                                             label: {
                                 Text("Blow a Kiss back")
                                     .fontWeight(.bold)
-                                    .frame(width: 200, height: 40)
+                                    .frame(width: 200, height: 30)
                                     .foregroundColor(Color.black)
                                     .font(.system(size: 16))
                                     .background(Color.cyan)

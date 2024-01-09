@@ -212,15 +212,14 @@ struct VirtualHug: View {
                                             .foregroundColor(Color.white)
 //                                            .rotationEffect(.degrees(-20))
                                            .blinking(duration: 3.0)
-//                                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                                            .opacity(0.7)
+                                           .opacity(0.7)
                                      
                                         
                                         NavigationLink( destination:  HugPushNotification(user: user, friends: friends),
                                                                label: {
                                                    Text("Send a Hug back")
                                                        .fontWeight(.bold)
-                                                       .frame(width: 200, height: 40)
+                                                       .frame(width: 200, height: 30)
                                                        .foregroundColor(Color.black)
                                                        .font(.system(size: 16))
                                                        .background(Color.cyan)

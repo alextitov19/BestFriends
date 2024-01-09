@@ -118,7 +118,7 @@ struct RR13: View {
                                         Spacer()
                                             .frame(height: 10)
                                         
-                                        Text("You just got Hearts")
+                                        Text("This is just perfect")
                                             .font(.system(size: 20))
                                             .foregroundColor(Color.white)
                                             .fontWeight(.light)
@@ -286,7 +286,7 @@ struct RR13: View {
                                                 label: {
                                     Text("Send Hearts back")
                                         .fontWeight(.bold)
-                                        .frame(width: 200, height: 40)
+                                        .frame(width: 200, height: 30)
                                         .foregroundColor(Color.black)
                                         .font(.system(size: 16))
                                         .background(Color.cyan)
