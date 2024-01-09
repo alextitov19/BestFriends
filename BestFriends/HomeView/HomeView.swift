@@ -371,7 +371,7 @@ struct HomeView: View {
                             
                             
                             Text("yes...")
-                                .font(.system(size: 40))
+                                .font(.system(size: 35))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.medium)
                                 .opacity(0.99)
