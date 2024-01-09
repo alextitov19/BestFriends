@@ -77,7 +77,7 @@ struct HugPreload: View {
                         HStack {
                             
                             Spacer ()
-                                .frame(width: 25)
+                                .frame(width: 30)
                             
                             VStack {
                                 NavigationLink(destination: CH4(user: user, friend: user, friends: friends, groups: groups), label: {

@@ -83,6 +83,11 @@ struct RR58: View {
                     AdPlayerView(name: "sky2")
                         .ignoresSafeArea()
                         .blendMode(.screen)
+                    
+                    AdPlayerView(name: "moonShots3")
+                        .ignoresSafeArea()
+                        .blendMode(.screen)
+                        .opacity(0.9)
              
                 
                 }
