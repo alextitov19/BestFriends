@@ -163,16 +163,19 @@ struct RR58: View {
                                     Image("CoolGuy")
                                         .aspectRatio(contentMode: .fit)
                                         .frame(width: 35, height: 35)
+                                        .opacity(0.3)
+                                        .blinking(duration: 2.0)
                                     
                                     Text("First Time User (TAP)")
                                         .fontWeight(.medium)
                                         .frame(width: 170, height: 22)
                                         .foregroundColor(Color.white)
                                         .font(.system(size: 15))
-                                        .background(Color.cyan)
+                                        .background(ColorManager .grey3)
                                         .cornerRadius(7)
                                         .rotationEffect(.degrees(-38))
-                                        .opacity(0.8)
+                                        .opacity(0.5)
+                                        .blinking(duration: 2.0)
                                         .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
 
                          
@@ -399,7 +402,7 @@ struct RR58: View {
                                         .frame(width: 50, height: 50)
                                         .foregroundColor(ColorManager .purple4)
                                         .glow(color: ColorManager .grey1, radius: 3)
-                                    //                                        .blinking(duration: 2.0)
+//                                        .blinking(duration: 2.0)
                                         .opacity(0.8)
                                     
                                 }
