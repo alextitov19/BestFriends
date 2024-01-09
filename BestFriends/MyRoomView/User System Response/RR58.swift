@@ -392,7 +392,7 @@ struct RR58: View {
                                         .frame(width: 220, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 25))
-                                        .background(Color.green)
+                                        .background(ColorManager .pmbc_green)
                                         .cornerRadius(15)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     
