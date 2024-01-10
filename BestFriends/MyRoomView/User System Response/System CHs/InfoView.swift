@@ -59,19 +59,29 @@ struct InfoView: View {
             } else {
 
 
-                Color.black
+                ColorManager .purple3
                    .opacity(0.9)
                     .ignoresSafeArea()
                 
                 
-                AdPlayerView(name: "background_8")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
+//                AdPlayerView(name: "background_8")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
                 
                 AdPlayerView(name: "dreams")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.0)
+                
+                AdPlayerView(name: "background_9")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.4)
+                
+                AdPlayerView(name: "background_11")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.3)
 
 
             }
