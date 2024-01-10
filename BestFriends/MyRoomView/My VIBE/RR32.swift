@@ -60,6 +60,11 @@ struct RR32: View {
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
+                
+                AdPlayerView(name: "Somebody6")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.5)
               
             }
             
@@ -153,7 +158,7 @@ struct RR32: View {
             Spacer()
                 .frame(height: 20)
          
-                    Text("Letting friends help via")
+                    Text("Friends helping via")
                         .font(.system(size: 15))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
@@ -355,29 +360,42 @@ struct RR32: View {
                                 Spacer()
                                     .frame(height: 20)
                                 
-                                
-                                Button(action: {
-                                    //                                    counter += 1
-                                    //                                    shareTapped = true
-                                    shareButtonTapped()
-                                },
-                                       label: {
-                                    Image("iconShare")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 70, height: 70)
-                                        .rotationEffect(.degrees(20))
-                                        .foregroundColor(ColorManager .purple5)
-                                        .glow(color: Color.purple, radius: 2)
-                                        .opacity(0.6)
-                                        .blinking(duration: 3.0)
-                                        .alert("Ok, we'er asking your friends to send bad day emotional support or good luck reassurances via CareHearts. \n\nWe and your friends are here for you.", isPresented: $showingAlert) {
-                                            Button("OK", role: .cancel) { }
-                                            
-                                        }
+                                ZStack {
                                     
-                                })
-                               
+                                    Text("")
+                                        .fontWeight(.light)
+                                        .frame(width: 320, height: 120)
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .font(.system(size: 25))
+                                        .background(Color.black)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                    
+                                    
+                                    
+
+                                    Button(action: {
+                                        //                                    counter += 1
+                                        //                                    shareTapped = true
+                                        shareButtonTapped()
+                                    },
+                                           label: {
+                                        Image("iconShare")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 70, height: 70)
+                                            .rotationEffect(.degrees(20))
+                                            .foregroundColor(ColorManager .purple5)
+                                            .glow(color: Color.purple, radius: 2)
+                                            .opacity(0.6)
+                                            .blinking(duration: 3.0)
+                                            .alert("Ok, we'er asking your friends to send bad day emotional support or good luck reassurances via CareHearts. \n\nWe and your friends are here for you.", isPresented: $showingAlert) {
+                                                Button("OK", role: .cancel) { }
+                                                
+                                            }
+                                        
+                                    })
+                                }
                                 
                                 
                                 Spacer()
