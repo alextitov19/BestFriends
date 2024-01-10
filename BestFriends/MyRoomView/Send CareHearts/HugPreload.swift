@@ -45,7 +45,7 @@ struct HugPreload: View {
             AdPlayerView(name: "moonShots2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                .opacity(0.8)
+                .opacity(0.6)
             
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
@@ -68,7 +68,7 @@ struct HugPreload: View {
                 VStack {
      
                     Spacer()
-                        .frame(height: 270)
+                        .frame(height: 100)
 //  *************************************************
        
 
@@ -86,6 +86,7 @@ struct HugPreload: View {
                                 .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
                                 .shadow(color: Color.blue, radius: 5, x: -2, y: -2)
                                 .opacity(0.3)
+//                                .blinking(duration: 4.0)
                             }
                             
                             
@@ -98,6 +99,7 @@ struct HugPreload: View {
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
                             .opacity(0.2)
+//                            .blinking(duration: 4.0)
                         }
                         
                         Spacer()
