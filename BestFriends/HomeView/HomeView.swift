@@ -138,6 +138,23 @@ struct HomeView: View {
                             Spacer()
                                 .frame(width: 50)
                       
+                            NavigationLink(destination:  RR51(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                                                       label: {
+                                            Text("yestech")
+                                                .fontWeight(.thin)
+                                                .foregroundColor(Color.white)
+                                                .frame(width: 80, height: 30)
+                                                .font(.system(size: 15))
+                                                .background(Color.black)
+                                                .opacity(0.95)
+                                                .cornerRadius(10)
+                                                .shadow(color: Color.purple, radius: 5, x: -2, y: -2)
+
+                                        })
+                                    
+                            
+                        Spacer()
+                            .frame(width: 50)
                             
                             NavigationLink(
                                 destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
