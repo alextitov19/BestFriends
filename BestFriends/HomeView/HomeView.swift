@@ -110,7 +110,7 @@ struct HomeView: View {
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 30, height: 30)
-                                    .foregroundColor(Color.cyan)
+                                    .foregroundColor(Color.purple)
                                 //                                    .blinking(duration: 2.0)
                                 //                                    .glow(color: ColorManager.purple4, radius: 3)
                                     .opacity(0.5)
@@ -139,17 +139,17 @@ struct HomeView: View {
                                 .frame(width: 50)
                       
                             NavigationLink(destination:  RR51(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                                                       label: {
-                                            Text("yestech")
-                                                .fontWeight(.thin)
-                                                .foregroundColor(Color.white)
-                                                .frame(width: 80, height: 30)
-                                                .font(.system(size: 15))
-                                                .background(Color.black)
-                                                .opacity(0.95)
-                                                .cornerRadius(10)
-                                                .shadow(color: Color.purple, radius: 5, x: -2, y: -2)
-
+                                label: {
+                                Text("yestech")
+                                    .fontWeight(.thin)
+                                    .foregroundColor(Color.white)
+                                    .frame(width: 80, height: 30)
+                                    .font(.system(size: 15))
+                                    .background(Color.black)
+                                    .opacity(0.95)
+                                    .cornerRadius(10)
+                                    .shadow(color: Color.purple, radius: 3, x: -2, y: -2)
+                                    .shadow(color: Color.purple, radius: 7, x: -2, y: -2)
                                         })
                                     
                             
