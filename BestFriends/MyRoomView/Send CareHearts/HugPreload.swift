@@ -125,7 +125,7 @@ struct HugPreload: View {
                                     label: {
                                         
                                         ZStack {
-                                            Text("Dented \nHeart")
+                                            Text("Why \nCareHearts?")
                                                 .font(.system(size: 14))
                                                 .foregroundColor(ColorManager .grey4)
                                                 .fontWeight(.bold)
@@ -136,7 +136,7 @@ struct HugPreload: View {
                                             Image(systemName: "heart")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 90, height: 90)
+                                                .frame(width: 120, height: 120)
                                                 .foregroundColor(Color.cyan)
                                                 .opacity(0.1)
 //                                                .rotationEffect(.degrees(10))
@@ -146,7 +146,7 @@ struct HugPreload: View {
                                             Image(systemName: "heart.fill")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 80, height: 80)
+                                                .frame(width: 105, height: 105)
                                                 .foregroundColor(ColorManager .purple3)
                                                 .opacity(0.1)
                                             //                                        .rotationEffect(.degrees(10))

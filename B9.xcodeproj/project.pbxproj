@@ -318,6 +318,7 @@
 		CF7A553C2B4CEAF80068F249 /* neverSurrender3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF7A553B2B4CEAF80068F249 /* neverSurrender3.mp4 */; };
 		CF7A55482B4E87320068F249 /* Somebody7.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF7A55472B4E87320068F249 /* Somebody7.mp4 */; };
 		CF7A554A2B525D8F0068F249 /* RRWantToTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A55492B525D8F0068F249 /* RRWantToTalk.swift */; };
+		CF7A554C2B52812D0068F249 /* RRWhyCHs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A554B2B52812D0068F249 /* RRWhyCHs.swift */; };
 		CF84A3E22988A84700387A43 /* MyRoomNeedTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */; };
 		CF85CDE4298B0B1C0040EAE4 /* ProfessionalHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */; };
 		CF8941222A8B3E2700AFEC39 /* Planet4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF8941212A8B3E2700AFEC39 /* Planet4.mp4 */; };
@@ -783,6 +784,7 @@
 		CF7A553B2B4CEAF80068F249 /* neverSurrender3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = neverSurrender3.mp4; sourceTree = "<group>"; };
 		CF7A55472B4E87320068F249 /* Somebody7.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Somebody7.mp4; sourceTree = "<group>"; };
 		CF7A55492B525D8F0068F249 /* RRWantToTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RRWantToTalk.swift; path = "../../../../../SocialTech Dropbox/RRWantToTalk.swift"; sourceTree = "<group>"; };
+		CF7A554B2B52812D0068F249 /* RRWhyCHs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RRWhyCHs.swift; path = "../../../../../SocialTech Dropbox/RRWhyCHs.swift"; sourceTree = "<group>"; };
 		CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomNeedTalk.swift; sourceTree = "<group>"; };
 		CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalHelp.swift; sourceTree = "<group>"; };
 		CF8941212A8B3E2700AFEC39 /* Planet4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Planet4.mp4; sourceTree = "<group>"; };
@@ -954,6 +956,7 @@
 				CFB669412B49434B00E9C237 /* RRgreatDay.swift */,
 				CF7A55352B4BC3740068F249 /* RRMissYou.swift */,
 				CF7A55492B525D8F0068F249 /* RRWantToTalk.swift */,
+				CF7A554B2B52812D0068F249 /* RRWhyCHs.swift */,
 			);
 			path = RR;
 			sourceTree = "<group>";
@@ -2542,6 +2545,7 @@
 				7A77FC7027FBD3C7007CC5E6 /* InviteModels.swift in Sources */,
 				7AFCF27F27FE005F00D2DB5C /* GroupRow.swift in Sources */,
 				7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */,
+				CF7A554C2B52812D0068F249 /* RRWhyCHs.swift in Sources */,
 				CFC0EE742907A823006B3FAA /* HugPreload.swift in Sources */,
 				CFDA4BCE28D1037100118D90 /* DreamVaultView.swift in Sources */,
 				CF091195284A6DC900CB0AF0 /* FG_VideoCall.swift in Sources */,

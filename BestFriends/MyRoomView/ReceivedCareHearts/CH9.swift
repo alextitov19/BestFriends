@@ -287,7 +287,7 @@ struct CH9: View {
                             })
                             
                             Spacer()
-                                .frame(height: 15)
+                                .frame(height: 30)
                             
                             Button(action: {
                                 sessionManager.showLogin()
