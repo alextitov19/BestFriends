@@ -123,7 +123,7 @@ struct HomeView: View {
                                 ) { EmptyView() }
                                 
                                 
-                                Image(systemName: "bell")
+                                Image(systemName: "bell.fill")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 27, height: 27)
@@ -140,7 +140,7 @@ struct HomeView: View {
                       
                             NavigationLink(destination:  RR51(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                 label: {
-                                Text("yestech")
+                                Text("YesTech")
                                     .fontWeight(.thin)
                                     .foregroundColor(Color.white)
                                     .frame(width: 80, height: 30)
