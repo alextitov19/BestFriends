@@ -68,7 +68,7 @@ struct HugPreload: View {
                 VStack {
      
                     Spacer()
-                        .frame(height: 230)
+                        .frame(height: 100)
 //  *************************************************
        
 
@@ -91,7 +91,7 @@ struct HugPreload: View {
                             
                             
                             Spacer()
-                                .frame(width: 30)
+                                .frame(width: 150)
                             
                             NavigationLink(destination: HugPushNotification(user: user, friends: friends), label: {
                                 HugCircle (color: Color.cyan, friendName: "Sending \nhugs")
@@ -103,7 +103,7 @@ struct HugPreload: View {
                         }
                         
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 180)
                         
                     VStack {
                            
@@ -165,7 +165,8 @@ struct HugPreload: View {
                     }
                 }
                    
-
+                    Spacer ()
+                        .frame(height: 150)
 //        *************************** Center
                     HStack {
                        
@@ -180,7 +181,7 @@ struct HugPreload: View {
                         .opacity(0.3)
                         
                         Spacer()
-                            .frame(width: 100)
+                            .frame(width: 180)
 
                         NavigationLink(destination: RRWantToTalk(user: user, friend: user, friends: friends, groups: groups), label: {
                             HugCircle (color: Color.cyan, friendName: "Say \nsomething \nnice")
@@ -334,7 +335,7 @@ struct HugPreload: View {
                         VStack {
                             
                             Spacer ()
-                                .frame(height: 100)
+                                .frame(height: 30)
                             
                             
                             HStack {
