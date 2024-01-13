@@ -68,7 +68,7 @@ struct HugPreload: View {
                 VStack {
      
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 230)
 //  *************************************************
        
 
@@ -161,14 +161,12 @@ struct HugPreload: View {
                             
                             Spacer ()
                                 .frame(width: 60)
-//
-//                            NavigationLink(destination: SaySomethingNice5(user: user, friends: friends), label: {
-//                                HugCircle (color: Color.cyan, friendName: "Sending \nHearts")
+//                            NavigationLink(destination: RRWantToTalk(user: user, friend: user, friends: friends, groups: groups), label: {
+//                                HugCircle (color: Color.cyan, friendName: "Want to \ntalk \nor text?")
 //                            })
-//                            .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
-//                            .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
-//                            .opacity(0.99)
-//
+//                            .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
+//                            .shadow(color: Color.blue, radius: 5, x: -2, y: -2)
+//                            .opacity(0.3)
 
                     }
                 }
@@ -182,14 +180,13 @@ struct HugPreload: View {
                         Spacer ()
                             .frame(width: 6)
                         
-//                        NavigationLink(destination: CH6(user: user, friend: user, friends: friends, groups: groups), label: {
-//                            HugCircle (color: Color.cyan, friendName: "Build \nyour own \n'in-beta'")
-//                        })
-//                        .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
-//                        .shadow(color: Color .blue, radius: 5, x: 2, y: -2)
-//                        .opacity(0.99)
-//
-//
+                        NavigationLink(destination: RRWantToTalk(user: user, friend: user, friends: friends, groups: groups), label: {
+                            HugCircle (color: Color.cyan, friendName: "Want to \ntalk \nor text?")
+                        })
+                        .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
+                        .shadow(color: Color.blue, radius: 5, x: -2, y: -2)
+                        .opacity(0.3)
+                        
                         Spacer()
                             .frame(width: 40)
                         

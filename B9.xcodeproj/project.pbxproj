@@ -317,6 +317,7 @@
 		CF7A55382B4BC4F30068F249 /* InnerStellar3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF7A55372B4BC4F20068F249 /* InnerStellar3.mp4 */; };
 		CF7A553C2B4CEAF80068F249 /* neverSurrender3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF7A553B2B4CEAF80068F249 /* neverSurrender3.mp4 */; };
 		CF7A55482B4E87320068F249 /* Somebody7.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF7A55472B4E87320068F249 /* Somebody7.mp4 */; };
+		CF7A554A2B525D8F0068F249 /* RRWantToTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A55492B525D8F0068F249 /* RRWantToTalk.swift */; };
 		CF84A3E22988A84700387A43 /* MyRoomNeedTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */; };
 		CF85CDE4298B0B1C0040EAE4 /* ProfessionalHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */; };
 		CF8941222A8B3E2700AFEC39 /* Planet4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF8941212A8B3E2700AFEC39 /* Planet4.mp4 */; };
@@ -781,6 +782,7 @@
 		CF7A55372B4BC4F20068F249 /* InnerStellar3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = InnerStellar3.mp4; sourceTree = "<group>"; };
 		CF7A553B2B4CEAF80068F249 /* neverSurrender3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = neverSurrender3.mp4; sourceTree = "<group>"; };
 		CF7A55472B4E87320068F249 /* Somebody7.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Somebody7.mp4; sourceTree = "<group>"; };
+		CF7A55492B525D8F0068F249 /* RRWantToTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RRWantToTalk.swift; path = "../../../../../SocialTech Dropbox/RRWantToTalk.swift"; sourceTree = "<group>"; };
 		CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomNeedTalk.swift; sourceTree = "<group>"; };
 		CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalHelp.swift; sourceTree = "<group>"; };
 		CF8941212A8B3E2700AFEC39 /* Planet4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Planet4.mp4; sourceTree = "<group>"; };
@@ -951,6 +953,7 @@
 				CFB668FC2B3CD8FA00E9C237 /* RRBrokenHeart.swift */,
 				CFB669412B49434B00E9C237 /* RRgreatDay.swift */,
 				CF7A55352B4BC3740068F249 /* RRMissYou.swift */,
+				CF7A55492B525D8F0068F249 /* RRWantToTalk.swift */,
 			);
 			path = RR;
 			sourceTree = "<group>";
@@ -2531,6 +2534,7 @@
 				CF3802D728456C83005181E4 /* FG_Team.swift in Sources */,
 				CF2EE6FC29517A4B00B1B16D /* InfoCreateChatRooms.swift in Sources */,
 				CFD12CD3281A821C00AB2539 /* FightWithFriend.swift in Sources */,
+				CF7A554A2B525D8F0068F249 /* RRWantToTalk.swift in Sources */,
 				62372A172884D7F500CAB75C /* HorizonSetGoal.swift in Sources */,
 				CF3DB36928D7DD8B00BF9CCD /* DreamRisk.swift in Sources */,
 				CFC0EE6F2906772B006B3FAA /* WorldPreload2.swift in Sources */,
