@@ -46,7 +46,7 @@ struct HomeView: View {
     
     
     
-    let reloadingTimer = Timer.publish(every: 45, on: .main, in: .common).autoconnect()
+    let reloadingTimer = Timer.publish(every: 90, on: .main, in: .common).autoconnect()
     
     var body: some View {
         NavigationView {
@@ -137,6 +137,10 @@ struct HomeView: View {
                             
                             Spacer()
                                 .frame(width: 50)
+                            
+                            
+                            
+                            
                       
                             NavigationLink(destination:  RR51(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                 label: {
@@ -393,7 +397,7 @@ struct HomeView: View {
                                 .fontWeight(.medium)
                                 .opacity(0.99)
                                 .multilineTextAlignment(.center)
-                                .blinking(duration: 2.0)
+//                                .blinking(duration: 2.0)
                            
                             Spacer ()
                                 .frame(height: 7)
@@ -515,7 +519,7 @@ struct HomeView: View {
         private func glowColor(mood: Int) -> Color {
             switch mood {
             case 0:
-                return Color(.systemRed)
+                return Color(.systemGreen)
             case 1:
                 return Color(.systemCyan)
             case 2:

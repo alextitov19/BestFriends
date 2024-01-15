@@ -10,7 +10,7 @@
 
 import Foundation
 import SwiftUI
-//import AVKit
+import AVKit
 
 struct RR58: View {
     @EnvironmentObject var sessionManager: SessionManager
@@ -23,18 +23,18 @@ struct RR58: View {
     
     
     
-    @State private var selectedFriends: [String] = []
-    @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
-    @State private var shareColor = ColorManager.purple5
-    @State private var showingAlert = false
-    
-    @State private var counter = 0
-    
-    @State private var mood: Int = -1
-    @State private var summary = ""
-    @State private var sharedWith: [String] = []
-    @State private var colorChangeTap: String = ""
-    @State private var shareTapped: Bool = false
+//    @State private var selectedFriends: [String] = []
+//    @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
+//    @State private var shareColor = ColorManager.purple5
+//    @State private var showingAlert = false
+//
+//    @State private var counter = 0
+//
+//    @State private var mood: Int = -1
+//    @State private var summary = ""
+//    @State private var sharedWith: [String] = []
+//    @State private var colorChangeTap: String = ""
+//   @State private var shareTapped: Bool = false
     //    *************************
 //    @State var audioPlayer: AVAudioPlayer!
     
@@ -57,24 +57,24 @@ struct RR58: View {
             ZStack {
                 
                 
-                if shareTapped {
-                    
-                    
-                    
-                    Color.black
-                        .ignoresSafeArea()
-                        .onAppear()
-                    
-                    
-                    AdPlayerView(name: "dramaLights")
-                        .ignoresSafeArea()
-                        .blendMode(.screen)
-                    
-             
-                    
-               
-                    
-                } else {
+//                if shareTapped {
+//
+//
+//
+//                    Color.black
+//                        .ignoresSafeArea()
+//                        .onAppear()
+//
+//
+//                    AdPlayerView(name: "dramaLights")
+//                        .ignoresSafeArea()
+//                        .blendMode(.screen)
+//
+//
+//
+//
+//
+//                } else {
                     
                     Color.black
                         .opacity(0.9)
@@ -90,7 +90,7 @@ struct RR58: View {
                         .opacity(0.9)
              
                 
-                }
+//                }
            
 //*****************************************************
             VStack {
@@ -473,30 +473,8 @@ struct RR58: View {
                                                     .shadow(color: .white, radius: 1, x: 3, y: -0.5)
                                                     .opacity(0.95)
 
-                                            })
-//                                        Text("")
-//                                            .fontWeight(.light)
-//                                            .frame(width: 50, height: 50)
-//                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                            .font(.system(size: 25))
-//                                            .background(Color.cyan)
-//                                            .cornerRadius(15)
-//                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//                                        Image(systemName: "heart.fill")
-//                                            .resizable()
-//                                            .scaledToFit()
-//                                            .frame(width: 25, height: 25)
-//                                            .foregroundColor(Color.purple)
-//                                            .opacity(0.2)
-////                                            .rotationEffect(.degrees(10))
-//                                            .glow(color: Color.purple, radius: 1)
-////                                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-
+                                        })
                                     }
-                                    
-                                    
-                                    
                                 }
                             }
                         )}
@@ -507,7 +485,6 @@ struct RR58: View {
                     
                 }
             }
-       
         }
     }
 }

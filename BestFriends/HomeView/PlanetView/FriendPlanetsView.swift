@@ -302,13 +302,7 @@ struct FriendPlanetsView: View {
                 ZStack {
                                   
                     
-//                    Image("planet_0")
-//                        .resizable()
-//                        .scaledToFit()
-//                        .opacity(0.9)
-//                        .frame(width: 50, height: 50)
-
-                  
+           
                     Image(systemName: "circle")
                         .resizable()
                         .scaledToFit()
