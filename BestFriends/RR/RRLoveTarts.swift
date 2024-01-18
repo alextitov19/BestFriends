@@ -141,92 +141,92 @@ struct RRLoveTarts: View {
                 
                 Spacer ()
                     .frame(height: 30)
-                
-                HStack {
-                    VStack {
-                        Text("Two souls whose stories")
-                            .font(.system(size: 10))
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                            .rotationEffect(.degrees(-20))
-                        //                            .blinking(duration: 3.0)
-                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
-                            .opacity(0.5)
-                        
-                        Text("forever etched in the laugh lines and")
-                            .font(.system(size: 10))
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                            .rotationEffect(.degrees(-20))
-                        //                            .blinking(duration: 3.0)
-                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
-                            .opacity(0.5)
-                        
-                        Text("dreams swiriling behind their eyes.")
-                            .font(.system(size: 10))
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                            .rotationEffect(.degrees(-20))
-                        //                            .blinking(duration: 3.0)
-                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
-                            .opacity(0.5)
-                        
-                        
-                        Text("-- Thays from Brazil")
-                            .font(.system(size: 10))
-                            .fontWeight(.bold)
-                            .italic()
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                            .rotationEffect(.degrees(-20))
-//                            .blinking(duration: 3.0)
-                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
-                            .opacity(0.5)
-                        
-                        
-                    }
-                    
-                    
-                    Spacer ()
-                        .frame(width: 70)
-                    
-                    
-                    
-                    ZStack {
-                        Image(systemName: "heart.fill")
-                            .rotationEffect(.degrees(10))
-                        
-                        Image(systemName: "heart.fill")
-                            .resizable()
-                            .foregroundColor(ColorManager .grey2)
-                            .frame(width: 140, height: 110)
-                            .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
-                            .rotationEffect(.degrees(10))
-                            .opacity(0.4)
-
-
-
-                        Link(destination: URL(string: "https://socialtechlabs.com/a-kisses-journey/")!) {
-
-                            VStack {
-                                Text("a kisses \n\njourney")
-                                    .font(.system(size: 20))
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(ColorManager .grey1)
-                                    .rotationEffect(.degrees(10))
-                                    .opacity(0.99)
-
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        
+//
+//                HStack {
+//                    VStack {
+//                        Text("Two souls whose stories")
+//                            .font(.system(size: 10))
+//                            .fontWeight(.bold)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(Color.white)
+//                            .rotationEffect(.degrees(-20))
+//                        //                            .blinking(duration: 3.0)
+//                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
+//                            .opacity(0.5)
+//
+//                        Text("forever etched in the laugh lines and")
+//                            .font(.system(size: 10))
+//                            .fontWeight(.bold)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(Color.white)
+//                            .rotationEffect(.degrees(-20))
+//                        //                            .blinking(duration: 3.0)
+//                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
+//                            .opacity(0.5)
+//
+//                        Text("dreams swiriling behind their eyes.")
+//                            .font(.system(size: 10))
+//                            .fontWeight(.bold)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(Color.white)
+//                            .rotationEffect(.degrees(-20))
+//                        //                            .blinking(duration: 3.0)
+//                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
+//                            .opacity(0.5)
+//
+//
+//                        Text("-- Thays from Brazil")
+//                            .font(.system(size: 10))
+//                            .fontWeight(.bold)
+//                            .italic()
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(Color.white)
+//                            .rotationEffect(.degrees(-20))
+////                            .blinking(duration: 3.0)
+//                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
+//                            .opacity(0.5)
+//
+//
+//                    }
+//
+//
+//                    Spacer ()
+//                        .frame(width: 70)
+//
+//
+//
+//                    ZStack {
+//                        Image(systemName: "heart.fill")
+//                            .rotationEffect(.degrees(10))
+//
+//                        Image(systemName: "heart.fill")
+//                            .resizable()
+//                            .foregroundColor(ColorManager .grey2)
+//                            .frame(width: 140, height: 110)
+//                            .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
+//                            .rotationEffect(.degrees(10))
+//                            .opacity(0.4)
+//
+//
+//
+//                        Link(destination: URL(string: "https://socialtechlabs.com/a-kisses-journey/")!) {
+//
+//                            VStack {
+//                                Text("a kisses \n\njourney")
+//                                    .font(.system(size: 20))
+//                                    .fontWeight(.light)
+//                                    .multilineTextAlignment(.center)
+//                                    .foregroundColor(ColorManager .grey1)
+//                                    .rotationEffect(.degrees(10))
+//                                    .opacity(0.99)
+//
+//                            }
+//                        }
+//                    }
+//                }
+      }
+       }
+//
                 
                 
                 
@@ -237,201 +237,201 @@ struct RRLoveTarts: View {
         
         //                **************************************
         
-        HStack {
-            ZStack{
-                
-                VStack {
-                    
-                    Text("feel their...")
-                        .font(.system(size: 17))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
-                        .rotationEffect(.degrees(20))
-                        .blinking(duration: 3.0)
-                        .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                        .opacity(0.5)
-                    
-                    Text("Hearbeat")
-                        .font(.system(size: 25))
-                    //                                            .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
-                        .rotationEffect(.degrees(20))
-                        .blinking(duration: 3.0)
-                        .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                        .opacity(0.6)
-                }
-                
-                //
-                Image(systemName: "heart.fill")
-                    .resizable()
-                    .foregroundColor(ColorManager .purple3)
-                    .frame(width: 140, height: 110)
-                    .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
-                    .rotationEffect(.degrees(10))
-                    .opacity(0.4)
-                
-                // ***********************************************
-                // *********** Audio to the TAP on the Heartbeat *****************
-                
-                Button(action: {
-                    counter += 1
-                    shareTapped = true
-                    shareButtonTapped()
-                    sendMessage()
-                },
-                       label: {
-                    //                        Image("iconShare")
-                    //
-                    Image(systemName: "heart.fill")
-                        .resizable()
-                        .foregroundColor(.purple)
-                        .frame(width: 150, height: 110)
-                        .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                        .opacity(0.25)
-                    //                            .resizable()
-                    //                            .scaledToFit()
-                    //                            .frame(width: 90, height: 90)
-                    //                            .rotationEffect(.degrees(20))
-                    //                            .foregroundColor(ColorManager .purple5)
-                    //                            .glow(color: Color.purple, radius: 2)
-                    //                            .opacity(0.6)
-                    //                            .blinking(duration: 3.0)
-                        .alert("", isPresented: $showingAlert) {
-                            Button("", role: .cancel) { }
-                        }
-                    
-                    
-                })
-                
-                
-                
-                
-                // *********************************
-                
-                VStack {
-                    
-                    Spacer()
-                        .frame(height: 50)
-                    
-                    Text("TAP")
-                    
-                        .font(.system(size: 35))
-                        .fontWeight(.light)
-                        .foregroundColor(.cyan)
-                        .frame(width: 100, height: 30)
-                        .background(Color.cyan)
-                        .multilineTextAlignment(.center)
-                        .cornerRadius(15)
-                        .foregroundColor(Color.white)
-                    //                                       .blinking(duration: 3.0)
-                        .opacity(0.6)
-                        .padding()
-                        .onTapGesture {
-                            showingHeart = false
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                                                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                                                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                                                                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                                            AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                                                    
-                                                                                                    AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                                                        showingHeart = true
-                                                                                                        
-                                                                                                    }
-                                                                                                }
-                                                                                            }
-                                                                                        }
-                                                                                    }
-                                                                                }
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    
-                    
-                    Spacer()
-                        .frame(height: 30)
-                }
-            }
-        Spacer ()
-                .frame(width: 40)
-            
-            ZStack {
+//        HStack {
+//            ZStack{
+//                
+//                VStack {
+//                    
+//                    Text("feel their...")
+//                        .font(.system(size: 17))
+//                        .italic()
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(Color.white)
+//                        .rotationEffect(.degrees(20))
+//                        .blinking(duration: 3.0)
+//                        .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+//                        .opacity(0.5)
+//                    
+//                    Text("Hearbeat")
+//                        .font(.system(size: 25))
+//                    //                                            .italic()
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(Color.white)
+//                        .rotationEffect(.degrees(20))
+//                        .blinking(duration: 3.0)
+//                        .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+//                        .opacity(0.6)
+//                }
+//                
+//                //
 //                Image(systemName: "heart.fill")
+//                    .resizable()
+//                    .foregroundColor(ColorManager .purple3)
+//                    .frame(width: 140, height: 110)
+//                    .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
 //                    .rotationEffect(.degrees(10))
-                
-                Image(systemName: "heart.fill")
-                    .resizable()
-                    .foregroundColor(.purple)
-                    .frame(width: 150, height: 110)
-                    .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                    .opacity(0.25)
-                
-                Image(systemName: "heart.fill")
-                    .resizable()
-                    .foregroundColor(ColorManager .purple3)
-                    .frame(width: 140, height: 110)
-                    .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
-                    .rotationEffect(.degrees(-10))
-                    .opacity(0.4)
-                
-                
-                
-                NavigationLink(destination:  EmptyView(),
-                                           label: {
-                    
-                    VStack {
-                        Text("LoveTarts")
-                            .font(.system(size: 28))
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey1)
-                            .blinking(duration: 3.0)
-                            .rotationEffect(.degrees(-10))
-                            .opacity(0.5)
-                        
-
-                        
-                        
-                   
-                        
-                    }
-                }
-            )}
-            
-            
-            
-            
-        }
-                
-                
+//                    .opacity(0.4)
+//                
+//                // ***********************************************
+//                // *********** Audio to the TAP on the Heartbeat *****************
+//                
+//                Button(action: {
+//                    counter += 1
+//                    shareTapped = true
+//                    shareButtonTapped()
+//                    sendMessage()
+//                },
+//                       label: {
+//                    //                        Image("iconShare")
+//                    //
+//                    Image(systemName: "heart.fill")
+//                        .resizable()
+//                        .foregroundColor(.purple)
+//                        .frame(width: 150, height: 110)
+//                        .shadow(color: .blue, radius: 65, x: 30, y: 50)
+//                        .opacity(0.25)
+//                    //                            .resizable()
+//                    //                            .scaledToFit()
+//                    //                            .frame(width: 90, height: 90)
+//                    //                            .rotationEffect(.degrees(20))
+//                    //                            .foregroundColor(ColorManager .purple5)
+//                    //                            .glow(color: Color.purple, radius: 2)
+//                    //                            .opacity(0.6)
+//                    //                            .blinking(duration: 3.0)
+//                        .alert("", isPresented: $showingAlert) {
+//                            Button("", role: .cancel) { }
+//                        }
+//                    
+//                    
+//                })
+//                
+//                
+//                
+//                
+//                // *********************************
+//                
+//                VStack {
+//                    
+//                    Spacer()
+//                        .frame(height: 50)
+//                    
+//                    Text("TAP")
+//                    
+//                        .font(.system(size: 35))
+//                        .fontWeight(.light)
+//                        .foregroundColor(.cyan)
+//                        .frame(width: 100, height: 30)
+//                        .background(Color.cyan)
+//                        .multilineTextAlignment(.center)
+//                        .cornerRadius(15)
+//                        .foregroundColor(Color.white)
+//                    //                                       .blinking(duration: 3.0)
+//                        .opacity(0.6)
+//                        .padding()
+//                        .onTapGesture {
+//                            showingHeart = false
+//                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+//                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//                                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+//                                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//                                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+//                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//                                                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+//                                                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//                                                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+//                                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//                                                                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+//                                                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+//                                                                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+//                                                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+//                                                                                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+//                                                                                            AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+//                                                                                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+//                                                                                                    
+//                                                                                                    AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+//                                                                                                        showingHeart = true
+//                                                                                                        
+//                                                                                                    }
+//                                                                                                }
+//                                                                                            }
+//                                                                                        }
+//                                                                                    }
+//                                                                                }
+//                                                                            }
+//                                                                        }
+//                                                                    }
+//                                                                }
+//                                                            }
+//                                                        }
+//                                                    }
+//                                                }
+//                                            }
+//                                        }
+//                                    }
+//                                }
+//                            }
+//                        }
+//                    
+//                    
+//                    Spacer()
+//                        .frame(height: 30)
+//                }
+//            }
+//        Spacer ()
+//                .frame(width: 40)
+//            
+//            ZStack {
+////                Image(systemName: "heart.fill")
+////                    .rotationEffect(.degrees(10))
+//                
+//                Image(systemName: "heart.fill")
+//                    .resizable()
+//                    .foregroundColor(.purple)
+//                    .frame(width: 150, height: 110)
+//                    .shadow(color: .blue, radius: 65, x: 30, y: 50)
+//                    .opacity(0.25)
+//                
+//                Image(systemName: "heart.fill")
+//                    .resizable()
+//                    .foregroundColor(ColorManager .purple3)
+//                    .frame(width: 140, height: 110)
+//                    .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
+//                    .rotationEffect(.degrees(-10))
+//                    .opacity(0.4)
+//                
+//                
+//                
+//                NavigationLink(destination:  EmptyView(),
+//                                           label: {
+//                    
+//                    VStack {
+//                        Text("LoveTarts")
+//                            .font(.system(size: 28))
+//                            .fontWeight(.bold)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(ColorManager .grey1)
+//                            .blinking(duration: 3.0)
+//                            .rotationEffect(.degrees(-10))
+//                            .opacity(0.5)
+//                        
+//
+//                        
+//                        
+//                   
+//                        
+//                    }
+//                }
+//            )}
+//            
+//            
+//            
+//            
+//        }
+//                
+//                
                 
                 
         Text("FRIENDSHIPS")

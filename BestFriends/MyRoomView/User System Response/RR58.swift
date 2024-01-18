@@ -102,10 +102,10 @@ struct RR58: View {
                     HStack {
                         
 
-                        NavigationLink(destination: RRLoveTarts3(user: user, friend: user, friends: friends, groups: groups), label: {
+                        NavigationLink(destination: RRLoveTarts3(user: user, friend: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres), label: {
                             ZStack {
                                 VStack {
-                                    Text("Friendships")
+                                    Text("LoveTarts")
                                         .font(.system(size: 23))
                                         .foregroundColor(ColorManager .grey1)
                                         .fontWeight(.bold)
@@ -150,10 +150,10 @@ struct RR58: View {
                         Spacer ()
                             .frame(width: 40)
                         
-                        NavigationLink(destination: RRLoveTarts3(user: user, friend: user, friends: friends, groups: groups), label: {
+                        NavigationLink(destination: RRLoveTarts(user: user, friend: user, friends: friends, groups: groups), label: {
                             ZStack {
                                 VStack {
-                                    Text("LoveTart \npoems")
+                                    Text("Friendships")
                                         .font(.system(size: 23))
                                         .foregroundColor(ColorManager .grey1)
                                         .fontWeight(.bold)

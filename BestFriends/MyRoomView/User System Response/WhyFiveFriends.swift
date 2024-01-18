@@ -21,11 +21,6 @@ struct WhyFiveFriends: View {
     let user: User
     let atmosphere: Atmosphere
     let friends: [User]
-    
-    
-    //    let user: User
-    //    let atmosphere: Atmosphere
-    //    let friends: [User]
     let friendAtmospheres: [Atmosphere]
     let groups: [Group]
     
