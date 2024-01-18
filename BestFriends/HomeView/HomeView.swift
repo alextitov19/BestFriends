@@ -175,113 +175,43 @@ struct HomeView: View {
                             
                         }
                         
-                        //  ************************************************
-                        //  *************************   CareHearts  ***********************
-                        //
-                        //                        HStack {
-                        //
-                        //                            NavigationLink(
-                        //                                destination:  HugPreload(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
-                        //                                label: {
-                        //
-                        //                                    ZStack {
-                        //                                        Image(systemName: "circle.fill")
-                        //                                            .resizable()
-                        //                                            .scaledToFit()
-                        //                                            .frame(width: 35, height: 35)
-                        //                                            .foregroundColor(Color.cyan)
-                        //                                            .opacity(0.95)
-                        //
-                        //
-                        //                                        Image(systemName: "heart.fill")
-                        //                                            .resizable()
-                        //                                            .scaledToFit()
-                        //                                            .frame(width: 20, height: 20)
-                        //                                            .foregroundColor(Color.purple)
-                        //                                            .glow(color: Color.white, radius: 0.3)
-                        //                                            .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                        //                                            .opacity(0.95)
-                        //                                    }
-                        //                                })
-                        //
-                        //                            Spacer()
-                        //                                .frame(width: 20)
-                        //
-                        //
-                        //
-                        //
-                        //                            NavigationLink(
-                        //                                destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                        //                                label: {
-                        //
-                        //                                    ZStack {
-                        //                                        Image("iconVibes75")
-                        //                                            .resizable()
-                        //                                            .scaledToFit()
-                        //                                            .frame(width: 55, height: 55)
-                        //                                            .foregroundColor(ColorManager .purple4)
-                        //                                            .glow(color: ColorManager .grey1, radius: 3)
-                        //                                        //                                            .blinking(duration: 2.0)
-                        //                                            .opacity(0.8)
-                        //
-                        //
-                        //                                    }
-                        //                                })
-                        //
-                        //                            Spacer()
-                        //                                .frame(width: 20)
-                        //
-                        //                            ZStack {
-                        //
-                        //                                NavigationLink(
-                        //                                    destination:  RR56(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere, friendAtmospheres: homeData!.friendAtmospheres),
-                        //                                    label: {
-                        //
-                        //                                        ZStack {
-                        //                                            Image(systemName: "circle.fill")
-                        //                                                .resizable()
-                        //                                                .scaledToFit()
-                        //                                                .frame(width: 35, height: 35)
-                        //                                                .foregroundColor(ColorManager .purple3)
-                        //                                                .opacity(0.95)
-                        //
-                        //                                            Image(systemName: "heart.fill")
-                        //                                                .resizable()
-                        //                                                .scaledToFit()
-                        //                                                .frame(width: 20, height: 20)
-                        //                                                .foregroundColor(Color.orange)
-                        //                                                .glow(color: Color.white, radius: 0.3)
-                        //                                                .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                        //                                                .opacity(0.95)
-                        //
-                        //
-                        //                                        }
-                        //                                    })
-                        //                            }
-                        //                        }
-                        //
-                        //                        VStack {
-                        //                            NavigationLink(
-                        //                                destination:  RR32(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                        //                                label: {
-                        //
-                        //                                    ZStack {
-                        //                                        Image("heart")
-                        //                                            .resizable()
-                        //                                            .scaledToFit()
-                        //                                            .frame(width: 1, height: 1)
-                        //                                            .foregroundColor(ColorManager .purple4)
-                        //                                            .glow(color: ColorManager .grey1, radius: 3)
-                        //                                        //                                            .blinking(duration: 2.0)
-                        //                                            .opacity(0.8)
-                        //
-                        //
-                        //                                    }
-                        //                                })
-                        //                        }
-                        //
-                        //
+                Spacer ()
+                            .frame(height: 10)
                         
+                        //                        ******************************
+                                                
+                                                NavigationLink(
+                                                    destination:  RR4(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
+                                                    label: {
+                                                        
+                                                        ZStack {
+                                                            
+//                                                            Image("CoolGuy")
+//                                                                .aspectRatio(contentMode: .fit)
+//                                                                .frame(width: 35, height: 35)
+//                                                                .opacity(0.3)
+//                                                                .blinking(duration: 2.0)
+                                                            
+                                                            Text("First Time User (TAP)")
+                                                                .fontWeight(.medium)
+                                                                .frame(width: 170, height: 22)
+                                                                .foregroundColor(Color.white)
+                                                                .font(.system(size: 15))
+                                                                .background(ColorManager .grey3)
+                                                                .cornerRadius(7)
+//                                                                .rotationEffect(.degrees(-38))
+                                                                .opacity(0.5)
+                                                                .blinking(duration: 3.0)
+                                                                .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
+
+                                                 
+                                                        }
+                                                    })
+                                            
+                                        
+                                                
+                                                
+                        //       **********************************************
                         //    ****************************************
                         
                         
@@ -459,6 +389,7 @@ struct HomeView: View {
                             
                         })
                         
+
                         Spacer()
                             .frame(height: 557)
                     }

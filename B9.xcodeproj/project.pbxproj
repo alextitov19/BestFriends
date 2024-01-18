@@ -323,6 +323,8 @@
 		CF7A55682B55CEAD0068F249 /* RRWantToTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A555A2B55CEAD0068F249 /* RRWantToTalk.swift */; };
 		CF7A55692B55CEAD0068F249 /* RRDidGood.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A555B2B55CEAD0068F249 /* RRDidGood.swift */; };
 		CF7A556A2B55CEAD0068F249 /* RR34Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A555C2B55CEAD0068F249 /* RR34Fight.swift */; };
+		CF7A55702B5739C20068F249 /* RRNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A556F2B5739C20068F249 /* RRNew.swift */; };
+		CF7A55722B588AD50068F249 /* RRBeCloser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A55712B588AD50068F249 /* RRBeCloser.swift */; };
 		CF84A3E22988A84700387A43 /* MyRoomNeedTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */; };
 		CF85CDE4298B0B1C0040EAE4 /* ProfessionalHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */; };
 		CF8941222A8B3E2700AFEC39 /* Planet4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF8941212A8B3E2700AFEC39 /* Planet4.mp4 */; };
@@ -789,6 +791,8 @@
 		CF7A555A2B55CEAD0068F249 /* RRWantToTalk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RRWantToTalk.swift; sourceTree = "<group>"; };
 		CF7A555B2B55CEAD0068F249 /* RRDidGood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RRDidGood.swift; sourceTree = "<group>"; };
 		CF7A555C2B55CEAD0068F249 /* RR34Fight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RR34Fight.swift; sourceTree = "<group>"; };
+		CF7A556F2B5739C20068F249 /* RRNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRNew.swift; sourceTree = "<group>"; };
+		CF7A55712B588AD50068F249 /* RRBeCloser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRBeCloser.swift; sourceTree = "<group>"; };
 		CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomNeedTalk.swift; sourceTree = "<group>"; };
 		CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalHelp.swift; sourceTree = "<group>"; };
 		CF8941212A8B3E2700AFEC39 /* Planet4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Planet4.mp4; sourceTree = "<group>"; };
@@ -957,6 +961,8 @@
 				CF7A55582B55CEAD0068F249 /* RRPoemContest.swift */,
 				CF7A555A2B55CEAD0068F249 /* RRWantToTalk.swift */,
 				CF7A55572B55CEAD0068F249 /* RRWhyCHs.swift */,
+				CF7A556F2B5739C20068F249 /* RRNew.swift */,
+				CF7A55712B588AD50068F249 /* RRBeCloser.swift */,
 			);
 			path = RR;
 			sourceTree = "<group>";
@@ -2533,6 +2539,7 @@
 				CF2EE6F429515B8400B1B16D /* INFOChatCircles.swift in Sources */,
 				CF3802D728456C83005181E4 /* FG_Team.swift in Sources */,
 				CF2EE6FC29517A4B00B1B16D /* InfoCreateChatRooms.swift in Sources */,
+				CF7A55722B588AD50068F249 /* RRBeCloser.swift in Sources */,
 				CFD12CD3281A821C00AB2539 /* FightWithFriend.swift in Sources */,
 				62372A172884D7F500CAB75C /* HorizonSetGoal.swift in Sources */,
 				CF3DB36928D7DD8B00BF9CCD /* DreamRisk.swift in Sources */,
@@ -2751,6 +2758,7 @@
 				CFC0EE7A290805C8006B3FAA /* InfoAddFriends.swift in Sources */,
 				7A8F3D802A32D2B400BC2CF4 /* NavigationBarCustom.swift in Sources */,
 				2DBF3EF32A61AD3100CB1CAD /* RR10.swift in Sources */,
+				CF7A55702B5739C20068F249 /* RRNew.swift in Sources */,
 				CF650406288E76B50092EEB9 /* GotPushNotification.swift in Sources */,
 				7AD8DEF927F615F000D9F0E1 /* HomeView.swift in Sources */,
 				CF7A555F2B55CEAD0068F249 /* RR35Fight.swift in Sources */,

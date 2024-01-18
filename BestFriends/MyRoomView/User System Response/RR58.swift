@@ -108,26 +108,26 @@ struct RR58: View {
                                 ZStack {
                                     VStack {
                                         Text("Friendships")
-                                            .font(.system(size: 20))
+                                            .font(.system(size: 23))
                                             .foregroundColor(ColorManager .grey1)
-                                            .fontWeight(.medium)
+                                            .fontWeight(.bold)
                                             .opacity(0.15)
                                             .rotationEffect(.degrees(10))
                                             .multilineTextAlignment(.center)
                                             .glow(color: ColorManager .purple3, radius: 1)
+                                            .opacity(0.5)
                                         
-                                        
-                                        Text("& LoveTarts")
-                                            .font(.system(size: 20))
-                                            .foregroundColor(ColorManager .grey1)
-                                            .fontWeight(.medium)
-                                            .opacity(0.15)
-                                            .rotationEffect(.degrees(10))
-                                            .multilineTextAlignment(.center)
-                                            .glow(color: ColorManager .purple3, radius: 1)
+//                                        Text("& LoveTarts")
+//                                            .font(.system(size: 20))
+//                                            .foregroundColor(ColorManager .grey1)
+//                                            .fontWeight(.medium)
+//                                            .opacity(0.15)
+//                                            .rotationEffect(.degrees(10))
+//                                            .multilineTextAlignment(.center)
+//                                            .glow(color: ColorManager .purple3, radius: 1)
                                        
                                         Spacer ()
-                                            .frame(height: 10)
+                                            .frame(height: 20)
                                         
                                     }
                                  
@@ -209,7 +209,9 @@ struct RR58: View {
                                         .font(.system(size: 25))
                                         .background(ColorManager .orange4)
                                         .cornerRadius(15)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                        .glow(color: Color.white, radius: 1)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                                        .opacity(0.8)
                                     
                                     Image("iconVibes75")
                                         .resizable()
@@ -264,8 +266,9 @@ struct RR58: View {
                                             .font(.system(size: 25))
                                             .background(Color.cyan)
                                             .cornerRadius(15)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                        
+                                            .glow(color: Color.white, radius: 1)
+                                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                                            .opacity(0.8)
                                         
                                         
                                         Image(systemName: "heart")
@@ -334,8 +337,10 @@ struct RR58: View {
                                             .font(.system(size: 25))
                                             .background(Color.cyan)
                                             .cornerRadius(15)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
+                                            .glow(color: Color.white, radius: 1)
+                                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                                            .opacity(0.8)
+                                           
                                         
                                         Image(systemName: "heart")
                                             .resizable()
@@ -399,7 +404,9 @@ struct RR58: View {
                                         .font(.system(size: 25))
                                         .background(ColorManager .pmbc_green)
                                         .cornerRadius(15)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                        .glow(color: Color.white, radius: 1)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                                        .opacity(0.8)
                                     
                                     Image("")
                                         .resizable()
@@ -446,10 +453,11 @@ struct RR58: View {
                                             .frame(width: 300, height: 35)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                             .font(.system(size: 25))
-                                            .background(ColorManager .purple2)
+                                            .background(ColorManager .purple3)
                                             .cornerRadius(15)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
+                                            .glow(color: Color.white, radius: 1)
+                                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                                            .opacity(0.8)
                                     }
                                     
                                     

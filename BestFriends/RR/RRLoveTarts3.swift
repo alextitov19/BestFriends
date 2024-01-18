@@ -202,7 +202,7 @@ struct RRLoveTarts3: View {
                         Image(systemName: "heart.fill")
                             .resizable()
                             .foregroundColor(ColorManager .grey2)
-                            .frame(width: 130, height: 100)
+                            .frame(width: 140, height: 110)
                             .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
                             .rotationEffect(.degrees(10))
                             .opacity(0.4)
@@ -236,100 +236,104 @@ struct RRLoveTarts3: View {
 //            .frame(height: 100)
         
         //                **************************************
+        
+        HStack {
+            ZStack{
                 
-                ZStack{
- 
-                            VStack {
-                                
-                                Text("feel their...")
-                                    .font(.system(size: 15))
-                                            .italic()
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.white)
-                                            .rotationEffect(.degrees(-20))
-                                   .blinking(duration: 3.0)
-                                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                                    .opacity(0.5)
-                     
-                                Text("Hearbeat")
-                                    .font(.system(size: 20))
-//                                            .italic()
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.white)
-                                           .rotationEffect(.degrees(-20))
-                                   .blinking(duration: 3.0)
-                                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                                    .opacity(0.6)
-                            }
-
-//
-                        Image(systemName: "heart.fill")
-                            .resizable()
-                            .foregroundColor(.purple)
-                            .frame(width: 150, height: 110)
-                            .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                            .opacity(0.25)
-                        
-// ***********************************************
-// *********** Audio to the TAP on the Heartbeat *****************
+                VStack {
                     
-                    Button(action: {
-                        counter += 1
-                        shareTapped = true
-                        shareButtonTapped()
-                        sendMessage()
-                    },
-                           label: {
-//                        Image("iconShare")
-//
-                        Image(systemName: "heart.fill")
-                            .resizable()
-                            .foregroundColor(.purple)
-                            .frame(width: 150, height: 110)
-                            .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                            .opacity(0.25)
-//                            .resizable()
-//                            .scaledToFit()
-//                            .frame(width: 90, height: 90)
-//                            .rotationEffect(.degrees(20))
-//                            .foregroundColor(ColorManager .purple5)
-//                            .glow(color: Color.purple, radius: 2)
-//                            .opacity(0.6)
-//                            .blinking(duration: 3.0)
-                            .alert("", isPresented: $showingAlert) {
-                                Button("", role: .cancel) { }
-                            }
-                        
-                        
-                    })
+                    Text("feel their...")
+                        .font(.system(size: 17))
+                        .italic()
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+                        .rotationEffect(.degrees(20))
+                        .blinking(duration: 3.0)
+                        .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                        .opacity(0.5)
+                    
+                    Text("Hearbeat")
+                        .font(.system(size: 25))
+                    //                                            .italic()
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+                        .rotationEffect(.degrees(20))
+                        .blinking(duration: 3.0)
+                        .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                        .opacity(0.6)
+                }
+                
+                //
+                Image(systemName: "heart.fill")
+                    .resizable()
+                    .foregroundColor(ColorManager .purple3)
+                    .frame(width: 140, height: 110)
+                    .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
+                    .rotationEffect(.degrees(10))
+                    .opacity(0.4)
+                
+                // ***********************************************
+                // *********** Audio to the TAP on the Heartbeat *****************
+                
+                Button(action: {
+                    counter += 1
+                    shareTapped = true
+                    shareButtonTapped()
+                    sendMessage()
+                },
+                       label: {
+                    //                        Image("iconShare")
+                    //
+                    Image(systemName: "heart.fill")
+                        .resizable()
+                        .foregroundColor(.purple)
+                        .frame(width: 150, height: 110)
+                        .shadow(color: .blue, radius: 65, x: 30, y: 50)
+                        .opacity(0.25)
+                    //                            .resizable()
+                    //                            .scaledToFit()
+                    //                            .frame(width: 90, height: 90)
+                    //                            .rotationEffect(.degrees(20))
+                    //                            .foregroundColor(ColorManager .purple5)
+                    //                            .glow(color: Color.purple, radius: 2)
+                    //                            .opacity(0.6)
+                    //                            .blinking(duration: 3.0)
+                        .alert("", isPresented: $showingAlert) {
+                            Button("", role: .cancel) { }
+                        }
                     
                     
+                })
+                
+                
+                
+                
+                // *********************************
+                
+                VStack {
                     
+                    Spacer()
+                        .frame(height: 50)
                     
-// *********************************
+                    Text("TAP")
                     
-                        VStack {
-                           
-                            Spacer()
-                                .frame(height: 50)
-                            
-                            Text("TAP")
-
-                                .font(.system(size: 35))
-                                .fontWeight(.light)
-                                .foregroundColor(.cyan)
-                                .frame(width: 100, height: 30)
-                                .background(Color.cyan)
-                                .multilineTextAlignment(.center)
-                                .cornerRadius(15)
-                                .foregroundColor(Color.white)
-//                                       .blinking(duration: 3.0)
-                                .opacity(0.6)
-                                .padding()
-                                .onTapGesture {
-                                    showingHeart = false
+                        .font(.system(size: 35))
+                        .fontWeight(.light)
+                        .foregroundColor(.cyan)
+                        .frame(width: 100, height: 30)
+                        .background(Color.cyan)
+                        .multilineTextAlignment(.center)
+                        .cornerRadius(15)
+                        .foregroundColor(Color.white)
+                    //                                       .blinking(duration: 3.0)
+                        .opacity(0.6)
+                        .padding()
+                        .onTapGesture {
+                            showingHeart = false
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
                                     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                                         AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
                                             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
@@ -340,20 +344,16 @@ struct RRLoveTarts3: View {
                                                                 AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
                                                                     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                                                                         AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                                                                                 AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
                                                                                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                                                                                         AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                                                                            AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
                                                                                                 AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                                                                    
                                                                                                     AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                                                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                                                            
-                                                                                                            AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                                                                showingHeart = true
-                                                                                                                
-                                                                                                            }
-                                                                                                        }
+                                                                                                        showingHeart = true
+                                                                                                        
                                                                                                     }
                                                                                                 }
                                                                                             }
@@ -372,19 +372,77 @@ struct RRLoveTarts3: View {
                                         }
                                     }
                                 }
-                            
-                            
-                            Spacer()
-                                .frame(height: 30)
+                            }
                         }
+                    
+                    
+                    Spacer()
+                        .frame(height: 30)
+                }
+            }
+        Spacer ()
+                .frame(width: 40)
+            
+            ZStack {
+//                Image(systemName: "heart.fill")
+//                    .rotationEffect(.degrees(10))
+                
+                Image(systemName: "heart.fill")
+                    .resizable()
+                    .foregroundColor(.purple)
+                    .frame(width: 150, height: 110)
+                    .shadow(color: .blue, radius: 65, x: 30, y: 50)
+                    .opacity(0.25)
+                
+                Image(systemName: "heart.fill")
+                    .resizable()
+                    .foregroundColor(ColorManager .purple3)
+                    .frame(width: 140, height: 110)
+                    .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
+                    .rotationEffect(.degrees(-10))
+                    .opacity(0.4)
+                
+                
+                
+                NavigationLink(destination:  EmptyView(),
+                                           label: {
+                    
+                    VStack {
+                        Text("LoveTarts")
+                            .font(.system(size: 28))
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager .grey1)
+                            .blinking(duration: 3.0)
+                            .rotationEffect(.degrees(-10))
+                            .opacity(0.5)
+                        
+
+                        
+                        
+                   
+                        
                     }
-                 
+                }
+            )}
+            
+            
+            
+            
+        }
                 
                 
                 
                 
-                
-                
+        Text("FRIENDSHIPS")
+            .font(.system(size: 35))
+            .italic()
+            .fontWeight(.bold)
+            .multilineTextAlignment(.center)
+            .foregroundColor(ColorManager .grey1)
+            .glow(color: Color.white, radius: 1)
+            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+            .opacity(0.03)
                 
                 
                 
