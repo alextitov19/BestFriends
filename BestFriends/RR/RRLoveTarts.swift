@@ -239,9 +239,9 @@ struct RRLoveTarts: View {
         
 //        HStack {
 //            ZStack{
-//                
+//
 //                VStack {
-//                    
+//
 //                    Text("feel their...")
 //                        .font(.system(size: 17))
 //                        .italic()
@@ -252,7 +252,7 @@ struct RRLoveTarts: View {
 //                        .blinking(duration: 3.0)
 //                        .shadow(color: Color.white, radius: 6, x: 3, y: 5)
 //                        .opacity(0.5)
-//                    
+//
 //                    Text("Hearbeat")
 //                        .font(.system(size: 25))
 //                    //                                            .italic()
@@ -264,7 +264,7 @@ struct RRLoveTarts: View {
 //                        .shadow(color: Color.white, radius: 6, x: 3, y: 5)
 //                        .opacity(0.6)
 //                }
-//                
+//
 //                //
 //                Image(systemName: "heart.fill")
 //                    .resizable()
@@ -273,10 +273,10 @@ struct RRLoveTarts: View {
 //                    .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
 //                    .rotationEffect(.degrees(10))
 //                    .opacity(0.4)
-//                
+//
 //                // ***********************************************
 //                // *********** Audio to the TAP on the Heartbeat *****************
-//                
+//
 //                Button(action: {
 //                    counter += 1
 //                    shareTapped = true
@@ -303,22 +303,22 @@ struct RRLoveTarts: View {
 //                        .alert("", isPresented: $showingAlert) {
 //                            Button("", role: .cancel) { }
 //                        }
-//                    
-//                    
+//
+//
 //                })
-//                
-//                
-//                
-//                
+//
+//
+//
+//
 //                // *********************************
-//                
+//
 //                VStack {
-//                    
+//
 //                    Spacer()
 //                        .frame(height: 50)
-//                    
+//
 //                    Text("TAP")
-//                    
+//
 //                        .font(.system(size: 35))
 //                        .fontWeight(.light)
 //                        .foregroundColor(.cyan)
@@ -350,10 +350,10 @@ struct RRLoveTarts: View {
 //                                                                                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
 //                                                                                            AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
 //                                                                                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-//                                                                                                    
+//
 //                                                                                                    AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
 //                                                                                                        showingHeart = true
-//                                                                                                        
+//
 //                                                                                                    }
 //                                                                                                }
 //                                                                                            }
@@ -374,26 +374,26 @@ struct RRLoveTarts: View {
 //                                }
 //                            }
 //                        }
-//                    
-//                    
+//
+//
 //                    Spacer()
 //                        .frame(height: 30)
 //                }
 //            }
 //        Spacer ()
 //                .frame(width: 40)
-//            
+//
 //            ZStack {
 ////                Image(systemName: "heart.fill")
 ////                    .rotationEffect(.degrees(10))
-//                
+//
 //                Image(systemName: "heart.fill")
 //                    .resizable()
 //                    .foregroundColor(.purple)
 //                    .frame(width: 150, height: 110)
 //                    .shadow(color: .blue, radius: 65, x: 30, y: 50)
 //                    .opacity(0.25)
-//                
+//
 //                Image(systemName: "heart.fill")
 //                    .resizable()
 //                    .foregroundColor(ColorManager .purple3)
@@ -401,12 +401,12 @@ struct RRLoveTarts: View {
 //                    .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
 //                    .rotationEffect(.degrees(-10))
 //                    .opacity(0.4)
-//                
-//                
-//                
+//
+//
+//
 //                NavigationLink(destination:  EmptyView(),
 //                                           label: {
-//                    
+//
 //                    VStack {
 //                        Text("LoveTarts")
 //                            .font(.system(size: 28))
@@ -416,26 +416,26 @@ struct RRLoveTarts: View {
 //                            .blinking(duration: 3.0)
 //                            .rotationEffect(.degrees(-10))
 //                            .opacity(0.5)
-//                        
 //
-//                        
-//                        
-//                   
-//                        
+//
+//
+//
+//
+//
 //                    }
 //                }
 //            )}
-//            
-//            
-//            
-//            
+//
+//
+//
+//
 //        }
-//                
-//                
+//
+//
                 
                 
-        Text("FRIENDSHIPS")
-            .font(.system(size: 35))
+        Text("my")
+            .font(.system(size: 25))
             .italic()
             .fontWeight(.bold)
             .multilineTextAlignment(.center)
@@ -444,7 +444,14 @@ struct RRLoveTarts: View {
             .shadow(color: Color.white, radius: 2, x: 0, y: 3)
             .opacity(0.03)
                 
-                
+        Text("Friendships")
+            .font(.system(size: 35))
+            .fontWeight(.bold)
+            .multilineTextAlignment(.center)
+            .foregroundColor(ColorManager .grey1)
+            .glow(color: Color.white, radius: 1)
+            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+            .opacity(0.03)
                 
                 
         //                **************************************

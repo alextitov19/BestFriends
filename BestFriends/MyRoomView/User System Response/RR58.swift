@@ -291,7 +291,7 @@ struct RR58: View {
                                             .opacity(0.8)
                                         
                                         
-                                        Image(systemName: "heart")
+                                        Image(systemName: "star")
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 75, height: 75)
@@ -301,7 +301,7 @@ struct RR58: View {
                                             .glow(color: Color.purple, radius: 1)
                                             .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
                                         
-                                        Image(systemName: "heart.fill")
+                                        Image(systemName: "star.fill")
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 65, height: 65)
