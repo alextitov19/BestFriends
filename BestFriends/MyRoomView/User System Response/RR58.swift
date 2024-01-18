@@ -154,19 +154,19 @@ struct RR58: View {
                             ZStack {
                                 VStack {
                                     Text("Friendships")
-                                        .font(.system(size: 23))
-                                        .foregroundColor(ColorManager .grey1)
+                                        .font(.system(size: 20))
+                                        .foregroundColor(Color.white)
                                         .fontWeight(.bold)
                                         .opacity(0.15)
-                                        .rotationEffect(.degrees(10))
+//                                        .rotationEffect(.degrees(10))
                                         .multilineTextAlignment(.center)
-                                        .glow(color: ColorManager .purple3, radius: 1)
-                                        .opacity(0.5)
+                                       .glow(color: ColorManager .purple3, radius: 1)
+                                        .opacity(0.99)
                                     
                                     
-                                    
-                                    Spacer ()
-                                        .frame(height: 20)
+//
+//                                    Spacer ()
+//                                        .frame(height: 20)
                                     
                                 }
                                 
@@ -176,19 +176,16 @@ struct RR58: View {
                                     .frame(width: 160, height: 160)
                                     .foregroundColor(Color.cyan)
                                     .opacity(0.05)
-                                    .rotationEffect(.degrees(-10))
+//                                    .rotationEffect(.degrees(-10))
                                     .glow(color: Color.purple, radius: 1)
                                     .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
                                 
-                                Image(systemName: "circle.fill")
+                                Image("planet_6")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 150, height: 150)
-                                    .foregroundColor(ColorManager .purple4)
-                                    .opacity(0.075)
-                                //                                        .rotationEffect(.degrees(10))
-                                    .glow(color: Color.white, radius: 1)
-                                    .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                                    .opacity(0.35)
+                          
                                 
                             }
                         })
