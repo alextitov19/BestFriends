@@ -100,8 +100,8 @@ struct RRLoveTarts: View {
               
                     if shareTapped {
                         
-                        Color.black
-                            .opacity(0.9)
+                        ColorManager .purple1
+                            .opacity(0.5)
                             .ignoresSafeArea()
                 
                         AdPlayerView(name: "dramaLights")
@@ -113,15 +113,18 @@ struct RRLoveTarts: View {
                         AdPlayerView(name: "BlowingKisses2")
                             .ignoresSafeArea()
                             .blendMode(.screen)
-                            .opacity(0.25)
+                            .opacity(0.99)
                         
                     } else {
 
 
-                        Color.black
-                           .opacity(0.9)
-                            .ignoresSafeArea()
+//                        Color.black
+//                           .opacity(0.9)
+//                            .ignoresSafeArea()
                         
+                        ColorManager .purple1
+                            .opacity(0.2)
+                            .ignoresSafeArea()
                         
                         AdPlayerView(name: "sky2")
                             .ignoresSafeArea()
@@ -131,7 +134,7 @@ struct RRLoveTarts: View {
                         AdPlayerView(name: "blowingkissesVid")
                             .ignoresSafeArea()
                             .blendMode(.screen)
-                            .opacity(0.3)
+                            .opacity(0.99)
                    
                       
                         
@@ -673,7 +676,7 @@ struct RRLoveTarts: View {
                     TextField("", text: $customMessage)
                         .placeholder(when: customMessage.isEmpty) {
                             HStack {
-                                Text("write something romatic - it's ok, just type...")
+                                Text("send a message if you want ...")
                                     .foregroundColor(Color.white)
                                     .fontWeight(.thin)
                                 Spacer()

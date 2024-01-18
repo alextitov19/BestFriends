@@ -651,7 +651,7 @@ struct RRLoveTarts3: View {
                     TextField("", text: $customMessage)
                         .placeholder(when: customMessage.isEmpty) {
                             HStack {
-                                Text("send a message ...")
+                                Text("say something romatic - take a chance, just type ...")
                                     .foregroundColor(Color.white)
                                     .fontWeight(.thin)
                                 Spacer()
