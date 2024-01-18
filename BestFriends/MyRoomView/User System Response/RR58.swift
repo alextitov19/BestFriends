@@ -100,94 +100,105 @@ struct RR58: View {
                     //        *********************** Rocket Guy ****************
                     
                     HStack {
-                  
+                        
+//                        Spacer ()
+//                            .frame(width: 40)
+                        
+                        NavigationLink(destination: RRLoveTarts3(user: user, friend: user, friends: friends, groups: groups), label: {
+                            ZStack {
+                                VStack {
+                                    Text("Friendships")
+                                        .font(.system(size: 23))
+                                        .foregroundColor(ColorManager .grey1)
+                                        .fontWeight(.bold)
+                                        .opacity(0.15)
+                                        .rotationEffect(.degrees(-10))
+                                        .multilineTextAlignment(.center)
+                                        .glow(color: ColorManager .purple3, radius: 1)
+                                        .opacity(0.5)
+                                    
+                                    
+                                    
+                                    Spacer ()
+                                        .frame(height: 20)
+                                    
+                                }
+                                
+                                Image(systemName: "heart")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 160, height: 160)
+                                    .foregroundColor(Color.cyan)
+                                    .opacity(0.05)
+                                    .rotationEffect(.degrees(-10))
+                                    .glow(color: Color.purple, radius: 1)
+                                    .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
+                                
+                                Image(systemName: "heart.fill")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 150, height: 150)
+                                    .foregroundColor(ColorManager .purple4)
+                                    .opacity(0.075)
+                                //                                        .rotationEffect(.degrees(10))
+                                    .glow(color: Color.white, radius: 1)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                                
+                            }
+                        })
+                        
+                        
+                        
                         Spacer ()
                             .frame(width: 40)
                         
                         NavigationLink(destination: RRLoveTarts3(user: user, friend: user, friends: friends, groups: groups), label: {
-                                ZStack {
-                                    VStack {
-                                        Text("Friendships")
-                                            .font(.system(size: 23))
-                                            .foregroundColor(ColorManager .grey1)
-                                            .fontWeight(.bold)
-                                            .opacity(0.15)
-                                            .rotationEffect(.degrees(10))
-                                            .multilineTextAlignment(.center)
-                                            .glow(color: ColorManager .purple3, radius: 1)
-                                            .opacity(0.5)
-                                        
-//                                        Text("& LoveTarts")
-//                                            .font(.system(size: 20))
-//                                            .foregroundColor(ColorManager .grey1)
-//                                            .fontWeight(.medium)
-//                                            .opacity(0.15)
-//                                            .rotationEffect(.degrees(10))
-//                                            .multilineTextAlignment(.center)
-//                                            .glow(color: ColorManager .purple3, radius: 1)
-                                       
-                                        Spacer ()
-                                            .frame(height: 20)
-                                        
-                                    }
-                                 
-                                    Image(systemName: "heart")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 160, height: 160)
-                                        .foregroundColor(Color.cyan)
-                                        .opacity(0.05)
+                            ZStack {
+                                VStack {
+                                    Text("LoveTart \npoems")
+                                        .font(.system(size: 23))
+                                        .foregroundColor(ColorManager .grey1)
+                                        .fontWeight(.bold)
+                                        .opacity(0.15)
                                         .rotationEffect(.degrees(10))
-                                        .glow(color: Color.purple, radius: 1)
-                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
-                                    
-                                    Image(systemName: "heart.fill")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 150, height: 150)
-                                        .foregroundColor(ColorManager .purple4)
-                                        .opacity(0.075)
-//                                        .rotationEffect(.degrees(10))
-                                        .glow(color: Color.white, radius: 1)
-                                        .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-                                    
-                                }
-                            })
-                            
-                        
-                        
-                        Spacer ()
-                            .frame(width: 40)
-                        
-                        NavigationLink(
-                            destination:  RR4(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                            label: {
-                                
-                                ZStack {
-                                    
-                                    Image("CoolGuy")
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 35, height: 35)
-                                        .opacity(0.3)
-                                        .blinking(duration: 2.0)
-                                    
-                                    Text("First Time User (TAP)")
-                                        .fontWeight(.medium)
-                                        .frame(width: 170, height: 22)
-                                        .foregroundColor(Color.white)
-                                        .font(.system(size: 15))
-                                        .background(ColorManager .grey3)
-                                        .cornerRadius(7)
-                                        .rotationEffect(.degrees(-38))
+                                        .multilineTextAlignment(.center)
+                                        .glow(color: ColorManager .purple3, radius: 1)
                                         .opacity(0.5)
-                                        .blinking(duration: 2.0)
-                                        .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
-
-                         
+                                    
+                                    
+                                    
+                                    Spacer ()
+                                        .frame(height: 20)
+                                    
                                 }
-                            })
+                                
+                                Image(systemName: "heart")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 160, height: 160)
+                                    .foregroundColor(Color.cyan)
+                                    .opacity(0.05)
+                                    .rotationEffect(.degrees(10))
+                                    .glow(color: Color.purple, radius: 1)
+                                    .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
+                                
+                                Image(systemName: "heart.fill")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 150, height: 150)
+                                    .foregroundColor(ColorManager .purple4)
+                                    .opacity(0.075)
+                                //                                        .rotationEffect(.degrees(10))
+                                    .glow(color: Color.white, radius: 1)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                                
+                            }
+                        })
                     }
                 }
+                     
+                        
+                       
                     
                     
                 // *********************************** My Vibe *************
@@ -496,3 +507,35 @@ struct RR58: View {
         }
     }
 }
+
+
+//
+//        NavigationLink(
+//            destination:  RR4(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//            label: {
+//
+//                ZStack {
+//
+//                    Image("CoolGuy")
+//                        .aspectRatio(contentMode: .fit)
+//                        .frame(width: 35, height: 35)
+//                        .opacity(0.3)
+//                        .blinking(duration: 2.0)
+//
+//                    Text("First Time User (TAP)")
+//                        .fontWeight(.medium)
+//                        .frame(width: 170, height: 22)
+//                        .foregroundColor(Color.white)
+//                        .font(.system(size: 15))
+//                        .background(ColorManager .grey3)
+//                        .cornerRadius(7)
+//                        .rotationEffect(.degrees(-38))
+//                        .opacity(0.5)
+//                        .blinking(duration: 2.0)
+//                        .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
+//
+//
+//                }
+//            })
+//    }
+//}

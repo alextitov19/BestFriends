@@ -325,6 +325,7 @@
 		CF7A556A2B55CEAD0068F249 /* RR34Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A555C2B55CEAD0068F249 /* RR34Fight.swift */; };
 		CF7A55702B5739C20068F249 /* RRNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A556F2B5739C20068F249 /* RRNew.swift */; };
 		CF7A55722B588AD50068F249 /* RRBeCloser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A55712B588AD50068F249 /* RRBeCloser.swift */; };
+		CF7A55742B5921E50068F249 /* RRLoveTarts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A55732B5921E50068F249 /* RRLoveTarts.swift */; };
 		CF84A3E22988A84700387A43 /* MyRoomNeedTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */; };
 		CF85CDE4298B0B1C0040EAE4 /* ProfessionalHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */; };
 		CF8941222A8B3E2700AFEC39 /* Planet4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF8941212A8B3E2700AFEC39 /* Planet4.mp4 */; };
@@ -793,6 +794,7 @@
 		CF7A555C2B55CEAD0068F249 /* RR34Fight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RR34Fight.swift; sourceTree = "<group>"; };
 		CF7A556F2B5739C20068F249 /* RRNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRNew.swift; sourceTree = "<group>"; };
 		CF7A55712B588AD50068F249 /* RRBeCloser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRBeCloser.swift; sourceTree = "<group>"; };
+		CF7A55732B5921E50068F249 /* RRLoveTarts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRLoveTarts.swift; sourceTree = "<group>"; };
 		CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomNeedTalk.swift; sourceTree = "<group>"; };
 		CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalHelp.swift; sourceTree = "<group>"; };
 		CF8941212A8B3E2700AFEC39 /* Planet4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Planet4.mp4; sourceTree = "<group>"; };
@@ -963,6 +965,7 @@
 				CF7A55572B55CEAD0068F249 /* RRWhyCHs.swift */,
 				CF7A556F2B5739C20068F249 /* RRNew.swift */,
 				CF7A55712B588AD50068F249 /* RRBeCloser.swift */,
+				CF7A55732B5921E50068F249 /* RRLoveTarts.swift */,
 			);
 			path = RR;
 			sourceTree = "<group>";
@@ -2693,6 +2696,7 @@
 				7ACACDA82853EAB700D8AB75 /* UIAlertControllerExtension.swift in Sources */,
 				CF9E33C6284522AE00107433 /* Step_OurAdvantage.swift in Sources */,
 				7AD10450265AB93F007627FD /* UIWindowExtension.swift in Sources */,
+				CF7A55742B5921E50068F249 /* RRLoveTarts.swift in Sources */,
 				7AE4C5642A3A9A3500A90DBF /* AffirmationsView.swift in Sources */,
 				CFD046952835925F00BF0B02 /* FriendValutTrackMoods.swift in Sources */,
 				7AD8DF0927F6948A00D9F0E1 /* AdPlayerView.swift in Sources */,

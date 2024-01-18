@@ -144,10 +144,10 @@ struct HomeView: View {
                       
                             NavigationLink(destination:  RR51(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                 label: {
-                                Text("YesTech")
+                                Text("SolarFriends")
                                     .fontWeight(.thin)
                                     .foregroundColor(Color.white)
-                                    .frame(width: 80, height: 30)
+                                    .frame(width: 110, height: 30)
                                     .font(.system(size: 15))
                                     .background(Color.black)
                                     .opacity(0.95)
@@ -200,7 +200,7 @@ struct HomeView: View {
                                                                 .background(ColorManager .grey3)
                                                                 .cornerRadius(7)
 //                                                                .rotationEffect(.degrees(-38))
-                                                                .opacity(0.5)
+                                                                .opacity(0.35)
                                                                 .blinking(duration: 3.0)
                                                                 .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
 
