@@ -101,9 +101,7 @@ struct RR58: View {
                     
                     HStack {
                         
-//                        Spacer ()
-//                            .frame(width: 40)
-                        
+
                         NavigationLink(destination: RRLoveTarts3(user: user, friend: user, friends: friends, groups: groups), label: {
                             ZStack {
                                 VStack {
@@ -262,6 +260,17 @@ struct RR58: View {
                     Spacer ()
                         .frame(height: 50)
                     
+                    Text("Friend having ...")
+                        .fontWeight(.bold)
+//                        .frame(width: 50, height: 35)
+                        .foregroundColor(ColorManager .grey2)
+                        .font(.system(size: 30))
+//                        .background(Color.cyan)
+//                        .cornerRadius(15)
+                        .glow(color: Color.white, radius: 1)
+                        .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                        .opacity(0.05)
+                    
                     HStack {
                         NavigationLink(
                             destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
@@ -269,7 +278,7 @@ struct RR58: View {
                                 
                                 HStack {
                                     ZStack {
-                                        
+                                     
                                         Text("       Bad day                CareHearts")
                                             .fontWeight(.light)
                                             .frame(width: 350, height: 35)
@@ -341,9 +350,9 @@ struct RR58: View {
                                 HStack {
                                
                                     ZStack {
-                                        Text("Best Wishes                 Congrats!!!    ")
+                                        Text("   Great day                Congrats!!!    ")
                                             .fontWeight(.light)
-                                            .frame(width: 375, height: 35)
+                                            .frame(width: 350, height: 35)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                             .font(.system(size: 25))
                                             .background(Color.cyan)
@@ -408,9 +417,9 @@ struct RR58: View {
                                 
                                 
                                 ZStack {
-                                    Text("Received")
+                                    Text("Catching Emotions")
                                         .fontWeight(.light)
-                                        .frame(width: 220, height: 40)
+                                        .frame(width: 230, height: 35)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 25))
                                         .background(ColorManager .pmbc_green)
@@ -459,12 +468,12 @@ struct RR58: View {
                                     
                                     
                                     ZStack {
-                                        Text("When friends arn't around")
+                                        Text("Off Planet")
                                             .fontWeight(.light)
-                                            .frame(width: 300, height: 35)
+                                            .frame(width: 200, height: 35)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                             .font(.system(size: 25))
-                                            .background(ColorManager .purple3)
+                                            .background(ColorManager .purple4)
                                             .cornerRadius(15)
                                             .glow(color: Color.white, radius: 1)
                                             .shadow(color: Color.white, radius: 2, x: 0, y: 3)
