@@ -106,14 +106,13 @@ struct RR58: View {
                             ZStack {
                                 VStack {
                                     Text("LoveTarts")
-                                        .font(.system(size: 23))
-                                        .foregroundColor(ColorManager .grey1)
+                                        .font(.system(size: 21))
+                                        .foregroundColor(Color.white)
                                         .fontWeight(.bold)
-                                        .opacity(0.15)
                                         .rotationEffect(.degrees(-10))
                                         .multilineTextAlignment(.center)
-                                        .glow(color: ColorManager .purple3, radius: 1)
-                                        .opacity(0.5)
+                                        .glow(color: ColorManager .purple3, radius: 2)
+                                        .opacity(0.3)
                                     
                                     
                                     
@@ -154,14 +153,13 @@ struct RR58: View {
                             ZStack {
                                 VStack {
                                     Text("Friendships")
-                                        .font(.system(size: 20))
+                                        .font(.system(size: 21))
                                         .foregroundColor(Color.white)
                                         .fontWeight(.bold)
-                                        .opacity(0.15)
 //                                        .rotationEffect(.degrees(10))
                                         .multilineTextAlignment(.center)
-                                       .glow(color: ColorManager .purple3, radius: 1)
-                                        .opacity(0.99)
+                                        .glow(color: ColorManager .purple3, radius: 1.5)
+                                        .opacity(0.7)
                                     
                                     
 //
@@ -173,20 +171,30 @@ struct RR58: View {
                                 Image(systemName: "circle")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 160, height: 160)
-                                    .foregroundColor(Color.cyan)
-                                    .opacity(0.05)
+                                    .frame(width: 157, height: 157)
+                                    .foregroundColor(Color.purple)
+                                    .opacity(0.08)
 //                                    .rotationEffect(.degrees(-10))
                                     .glow(color: Color.purple, radius: 1)
                                     .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
+                                
+                                Image(systemName: "circle.fill")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 140, height: 140)
+                                    .foregroundColor(Color.white)
+                                    .opacity(0.05)
+//                                    .rotationEffect(.degrees(-10))
+                                    .glow(color: Color.white, radius: 1)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 3)
                                 
                                 Image("planet_6")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 150, height: 150)
-                                    .opacity(0.35)
-                          
+                                    .opacity(0.5)
                                 
+                             
                             }
                         })
                         
