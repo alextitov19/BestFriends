@@ -267,7 +267,7 @@ struct RR58: View {
                     Spacer ()
                         .frame(height: 50)
                     
-                    Text("Friend having ...")
+                    Text("Friend having a ...")
                         .fontWeight(.bold)
 //                        .frame(width: 50, height: 35)
                         .foregroundColor(ColorManager .grey2)
@@ -287,7 +287,7 @@ struct RR58: View {
                                     ZStack {
                                      
                                         Text("       Bad day                CareHearts")
-                                            .fontWeight(.light)
+                                            .fontWeight(.regular)
                                             .frame(width: 350, height: 35)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                             .font(.system(size: 25))
@@ -298,7 +298,7 @@ struct RR58: View {
                                             .opacity(0.8)
                                         
                                         
-                                        Image(systemName: "star")
+                                        Image(systemName: "heart")
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 75, height: 75)
@@ -308,7 +308,7 @@ struct RR58: View {
                                             .glow(color: Color.purple, radius: 1)
                                             .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
                                         
-                                        Image(systemName: "star.fill")
+                                        Image(systemName: "heart.fill")
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 65, height: 65)
@@ -358,48 +358,47 @@ struct RR58: View {
                                
                                     ZStack {
                                         Text("   Great day                Congrats!!!    ")
-                                            .fontWeight(.light)
+                                            .fontWeight(.regular)
                                             .frame(width: 350, height: 35)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                             .font(.system(size: 25))
-                                            .background(Color.cyan)
+                                            .background(Color.purple)
                                             .cornerRadius(15)
                                             .glow(color: Color.white, radius: 1)
                                             .shadow(color: Color.white, radius: 2, x: 0, y: 3)
                                             .opacity(0.8)
                                            
+//
+//                                        Image(systemName: "star")
+//                                            .resizable()
+//                                            .scaledToFit()
+//                                            .frame(width: 80, height: 80)
+//                                            .rotationEffect(.degrees(10))
+//                                            .glow(color: Color.purple, radius: 1)
+//                                            .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
                                         
-                                        Image(systemName: "heart")
+                                        Image(systemName: "star.fill")
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 75, height: 75)
-                                            .foregroundColor(Color.cyan)
-                                            .opacity(0.05)
-                                            .rotationEffect(.degrees(10))
-                                            .glow(color: Color.purple, radius: 1)
-                                            .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
-                                        
-                                        Image(systemName: "heart.fill")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 65, height: 65)
                                             .foregroundColor(ColorManager .purple4)
                                             .opacity(0.2)
                                             .rotationEffect(.degrees(10))
                                             .glow(color: Color.white, radius: 1)
-                                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                                            .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
                                      
-                                        
-                                        Text("send")
-                                            .font(.system(size: 23))
-                                            .foregroundColor(ColorManager .grey2)
-                                            .fontWeight(.medium)
-                                            .opacity(0.99)
-                                            .rotationEffect(.degrees(10))
-                                            .multilineTextAlignment(.center)
-                                        
-                                        
-                                        
+                                        VStack {
+                                            Text("send")
+                                                .font(.system(size: 23))
+                                                .foregroundColor(ColorManager .grey2)
+                                                .fontWeight(.regular)
+                                                .opacity(0.99)
+                                                .rotationEffect(.degrees(10))
+                                                .multilineTextAlignment(.center)
+                                            
+                                            Spacer ()
+                                                .frame(height: 7)
+                                        }
                                         
                                     }
 
@@ -410,8 +409,8 @@ struct RR58: View {
                 
                 
     //  ********************************************** Received **********
-//                Spacer ()
-//                    .frame(height: 20)
+                Spacer ()
+                    .frame(height: 15)
 
 //********************************** Received ************
                 
@@ -424,12 +423,12 @@ struct RR58: View {
                                 
                                 
                                 ZStack {
-                                    Text("Catching Emotions")
-                                        .fontWeight(.light)
-                                        .frame(width: 230, height: 35)
+                                    Text("Catching Lightbeams")
+                                        .fontWeight(.regular)
+                                        .frame(width: 250, height: 35)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 25))
-                                        .background(ColorManager .pmbc_green)
+                                        .background(ColorManager .pmbc_blue)
                                         .cornerRadius(15)
                                         .glow(color: Color.white, radius: 1)
                                         .shadow(color: Color.white, radius: 2, x: 0, y: 3)
@@ -476,7 +475,7 @@ struct RR58: View {
                                     
                                     ZStack {
                                         Text("Off Planet")
-                                            .fontWeight(.light)
+                                            .fontWeight(.regular)
                                             .frame(width: 200, height: 35)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                             .font(.system(size: 25))
@@ -504,8 +503,8 @@ struct RR58: View {
                                                     .scaledToFit()
                                                     .frame(width: 70, height: 70)
                                                     .foregroundColor(Color.purple)
-                                                    .glow(color: Color.white, radius: 0.3)
-                                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+//                                                    .glow(color: Color.white, radius: 0.3)
+//                                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
                                                     .opacity(0.95)
 
                                         })
