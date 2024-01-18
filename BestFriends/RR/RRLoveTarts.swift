@@ -825,101 +825,17 @@ struct RRLoveTarts: View {
                             .alert("Yep, we'll send a push notification right now", isPresented: $showingAlert) {
                                 Button("OK", role: .cancel) { }
                             }
-                        
-                        
+                       
                     })
                     
-                    
-                    
-                    
-                    VStack {
-                   
-                        HStack {
-                            
-                            ZStack {
-                                
-//                                Image(systemName: "heart.fill")
-//                                    .rotationEffect(.degrees(-10))
-                                
-                                Image(systemName: "heart.fill")
-                                    .resizable()
-                                    .foregroundColor(ColorManager .grey2)
-                                    .frame(width: 130, height: 100)
-                                    .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
-                                    .rotationEffect(.degrees(10))
-                                    .opacity(0.3)
-                                
-                                
-                                NavigationLink(
-                                    destination: RRPoemContest(user: user, friends: friends, groups: groups),
-                                    label: {
-                                    
-                                    VStack {
-                                        Text("Poem \nContest")
-                                            .font(.system(size: 22))
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
-                                            .foregroundColor(ColorManager .grey1)
-                                            .rotationEffect(.degrees(10))
-                                            .opacity(0.99)
-                                        
-                                    }
-                                })
-                            }
-                            
-                            
-                          
-                            Spacer()
-                                .frame(width: 70)
-                            
-                            
-                            ZStack {
-                                
-                                Image(systemName: "heart.fill")
-                                    .rotationEffect(.degrees(-10))
-                                
-                                Image(systemName: "heart.fill")
-                                    .resizable()
-                                    .foregroundColor(ColorManager .grey2)
-                                    .frame(width: 130, height: 100)
-                                    .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
-                                    .rotationEffect(.degrees(-10))
-                                    .opacity(0.3)
-                                
-                                
-                                
-                                Link(destination: URL(string: "https://socialtechlabs.com/white-linen-dress/")!) {
-                                    
-                                    VStack {
-                                        Text("white linen \n\ndress")
-                                            .font(.system(size: 20))
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
-                                            .foregroundColor(ColorManager .grey1)
-                                            .rotationEffect(.degrees(-10))
-                                            .opacity(0.99)
-                                        
-                                    }
-                                }
-                            }
-                        }
-                      
                         Spacer()
                             .frame(height: 70)
                         
                     }
-                    
                 }
-                
             }
             
-        }
-        
-        
-        
-        
-        
-        
+     
         
         func shareButtonTapped() {
             if selectedFriends.count == 0 { return }

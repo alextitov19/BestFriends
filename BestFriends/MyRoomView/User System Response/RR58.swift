@@ -101,7 +101,7 @@ struct RR58: View {
                     
                     HStack {
                         
-
+                        
                         NavigationLink(destination: RRLoveTarts3(user: user, friend: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres), label: {
                             ZStack {
                                 VStack {
@@ -152,40 +152,40 @@ struct RR58: View {
                         
                         NavigationLink(destination: RRLoveTarts(user: user, friend: user, friends: friends, groups: groups), label: {
                             ZStack {
-                                VStack {
-                                    Text("Friendships")
+//                                VStack {
+                                    Text("my friends")
                                         .font(.system(size: 23))
-                                        .foregroundColor(ColorManager .grey1)
+                                        .foregroundColor(ColorManager .grey4)
                                         .fontWeight(.bold)
                                         .opacity(0.15)
-                                        .rotationEffect(.degrees(10))
+                                        .rotationEffect(.degrees(-10))
                                         .multilineTextAlignment(.center)
                                         .glow(color: ColorManager .purple3, radius: 1)
                                         .opacity(0.5)
                                     
                                     
+//
+//                                    Spacer ()
+//                                        .frame(height: 20)
                                     
-                                    Spacer ()
-                                        .frame(height: 20)
-                                    
-                                }
+//                                }
                                 
-                                Image(systemName: "heart")
+                                Image(systemName: "circle")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 160, height: 160)
-                                    .foregroundColor(Color.cyan)
-                                    .opacity(0.05)
-                                    .rotationEffect(.degrees(10))
+                                    .foregroundColor(ColorManager .purple3)
+                                    .opacity(0.5)
+//                                    .rotationEffect(.degrees(-10))
                                     .glow(color: Color.purple, radius: 1)
                                     .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
                                 
-                                Image(systemName: "heart.fill")
+                                Image("planet_6")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 150, height: 150)
                                     .foregroundColor(ColorManager .purple4)
-                                    .opacity(0.075)
+                                    .opacity(0.7)
                                 //                                        .rotationEffect(.degrees(10))
                                     .glow(color: Color.white, radius: 1)
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 3)
@@ -194,7 +194,8 @@ struct RR58: View {
                         })
                     }
                 }
-                     
+        
+            
                         
                        
                     
