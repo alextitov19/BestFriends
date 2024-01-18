@@ -144,7 +144,7 @@ struct HomeView: View {
                       
                             NavigationLink(destination:  RR51(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                 label: {
-                                Text("SolarFriends")
+                                Text("SolarMoments")
                                     .fontWeight(.thin)
                                     .foregroundColor(Color.white)
                                     .frame(width: 110, height: 30)

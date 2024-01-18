@@ -60,7 +60,7 @@ struct RR18: View {
                         
                         VStack {
                             
-                            Text("sharing excitment, \nlove & comfort")
+                            Text("sharing special \nmoments \nwith friends")
                                 .font(.system(size: 47))
                                 .fontWeight(.bold)
                                 .multilineTextAlignment(.center)

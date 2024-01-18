@@ -423,7 +423,7 @@ struct RR58: View {
                                 
                                 
                                 ZStack {
-                                    Text("Catching Lightbeams")
+                                    Text("Holding Lightbeams")
                                         .fontWeight(.regular)
                                         .frame(width: 250, height: 35)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

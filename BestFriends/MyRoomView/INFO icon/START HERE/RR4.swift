@@ -32,10 +32,10 @@ struct RR4: View {
             
             NavigationLink(destination:  RR18(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
-                            Text("Let's GO...")
+                            Text("Let's create some magic...")
                                 .fontWeight(.thin)
                                 .foregroundColor(Color.white)
-                                .frame(width: 220, height: 40)
+                                .frame(width: 340, height: 40)
                                 .font(.system(size: 30))
                                 .background(ColorManager .grey2)
                                 .opacity(0.95)
@@ -60,16 +60,16 @@ struct RR4: View {
                     
                     NavigationLink(destination:  RR36Info(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                    label: {
-                        Text("If your friends are important; \nconsider this app a sign!")
-                            .fontWeight(.thin)
-                            .foregroundColor(Color.black)
-                            .frame(width: 220, height: 40)
-                            .font(.system(size: 15))
-                            .background(ColorManager .purple1)
-                            .opacity(0.95)
-                            .cornerRadius(10)
-                            .rotationEffect(.degrees(-25))
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        Text("If your friends are important; \nconsider this app a sign!")
+//                            .fontWeight(.thin)
+//                            .foregroundColor(Color.black)
+//                            .frame(width: 220, height: 40)
+//                            .font(.system(size: 15))
+//                            .background(ColorManager .purple1)
+//                            .opacity(0.95)
+//                            .cornerRadius(10)
+//                            .rotationEffect(.degrees(-25))
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
                     
                 }
