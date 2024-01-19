@@ -61,63 +61,74 @@ struct RR32: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
-                AdPlayerView(name: "Somebody7")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .opacity(0.5)
-              
+//                AdPlayerView(name: "Somebody7")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.5)
+//
             }
             
    
         VStack {
              
+           
+//
+    //    ******************************************************
+                
+    VStack {
+        
+      Spacer ()
+            .frame(height: 30)
+        
+      
+        HStack {
+            HStack {
                 VStack {
-                    
-                    Text("Secretly share your 'Vibe'")
-                        .font(.system(size: 23))
+                    Text("I'm having a")
+                        .font(.system(size: 27))
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
-                        .foregroundColor(Color .white)
-                    //                            .rotationEffect(.degrees(-20))
+                        .foregroundColor(Color.white)
+                        .rotationEffect(.degrees(-20))
                     //                .blinking(duration: 3.0)
                         .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                         .opacity(0.35)
                     
-                    Text("with trusted friends")
-                        .font(.system(size: 23))
+                    Text("   bad day")
+                        .font(.system(size: 30))
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
-                        .foregroundColor(Color .white)
-                    //                            .rotationEffect(.degrees(-20))
+                        .foregroundColor(Color.white)
+                        .rotationEffect(.degrees(-20))
                     //                .blinking(duration: 3.0)
                         .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                         .opacity(0.35)
                     
                 }
-             
                 
-    //    ******************************************************
-                
-    VStack {
-        HStack {
-            HStack {
-                
-                Text("I'm having a bad day")
-                    .font(.system(size: 30))
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-                    .rotationEffect(.degrees(-20))
-                //                .blinking(duration: 3.0)
-                    .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                    .opacity(0.35)
+                VStack {
+                    
+                    Text("Friends helping via")
+                        .font(.system(size: 15))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+                        .rotationEffect(.degrees(-20))
+                    
+                    Text("  CareHearts")
+                        .font(.system(size: 20))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.cyan)
+                        .rotationEffect(.degrees(-20))
+                }
           
                 ZStack {
                     
                     Image(systemName: "circle")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 150, height: 150)
+                        .frame(width: 90, height: 90)
                         .foregroundColor(Color .cyan)
                         .glow(color: Color.cyan, radius: 10)
                         .shadow(color: Color.cyan, radius: 3, x: 3, y: 3)
@@ -142,7 +153,7 @@ struct RR32: View {
                         }
                     }
                  
-                    .frame(width: 100, height: 100, alignment: .center)
+                    .frame(width: 70, height: 70, alignment: .center)
                     .background(mood == 1 ? Color.cyan : ColorManager .grey4)
                     .cornerRadius(100)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -153,27 +164,19 @@ struct RR32: View {
                         
     //               ************************************************
            
-
-        VStack {
+        Spacer()
+            .frame(height: 25)
+     
+        Text("_______________________________")
+            .font(.system(size: 10))
+            .fontWeight(.light)
+            .multilineTextAlignment(.center)
+            .foregroundColor(Color.purple)
+        
             Spacer()
-                .frame(height: 20)
-         
-                    Text("Friends helping via")
-                        .font(.system(size: 15))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
-                    
-                    Text("CareHearts")
-                        .font(.system(size: 20))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.cyan)
-          
-            Spacer()
-                .frame(height: 20)
+                .frame(height: 25)
             
-        }
+        
                         
                     HStack {
 
@@ -181,7 +184,7 @@ struct RR32: View {
                             Image(systemName: "circle")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 150, height: 150)
+                                .frame(width: 90, height: 90)
                                 .foregroundColor(Color .purple)
                                 .glow(color: Color.purple, radius: 10)
                                 .shadow(color: Color.purple, radius: 3, x: 3, y: 3)
@@ -201,26 +204,10 @@ struct RR32: View {
                                     
                              
                                     
-                                    Text("Your planet's")
-                                        .font(.system(size: 9))
-                                        .fontWeight(.bold)
-                                        .multilineTextAlignment(.center)
-                                        .foregroundColor(Color.purple)
-                                    
-                                    Text("atmosphere")
-                                        .font(.system(size: 9))
-                                        .fontWeight(.bold)
-                                        .multilineTextAlignment(.center)
-                                        .foregroundColor(Color.purple)
-                                    
-                                    Text("matches vibe")
-                                        .font(.system(size: 9))
-                                        .fontWeight(.bold)
-                                        .multilineTextAlignment(.center)
-                                        .foregroundColor(Color.purple)
+                              
                                 }
                             }
-                            .frame(width: 100, height: 100, alignment: .center)
+                            .frame(width: 70, height: 70, alignment: .center)
                             .background(mood == 6 ? Color.purple : ColorManager .grey4)
                             .cornerRadius(100)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -228,17 +215,30 @@ struct RR32: View {
          
                         
                         Spacer ()
-                            .frame(width: 17)
+                            .frame(width: 30)
                         
-                                    Text("Wish me luck")
-                                        .font(.system(size: 30))
-                                        .fontWeight(.bold)
-                                        .multilineTextAlignment(.center)
-                                        .foregroundColor(Color.white)
-                                        .rotationEffect(.degrees(-20))
-                        //                .blinking(duration: 3.0)
-                                        .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                                        .opacity(0.35)
+                        VStack {
+                            
+                            Text("Important day")
+                                .font(.system(size: 30))
+                                .fontWeight(.bold)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .rotationEffect(.degrees(-20))
+                                .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                                .opacity(0.35)
+                            
+                            Text("    wish me luck")
+                                .font(.system(size: 27))
+                                .fontWeight(.bold)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .rotationEffect(.degrees(-20))
+                                .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                                .opacity(0.35)
+                            
+                      
+                        }
                   
                     }
            
@@ -246,13 +246,100 @@ struct RR32: View {
                     
                     
                             //***************************************
+        VStack {
+            
+            
+            Spacer()
+                .frame(height: 25)
+            
+            Text("_______________________________")
+                .font(.system(size: 10))
+                .fontWeight(.light)
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color.purple)
+            
+            Spacer()
+                .frame(height: 25)
+        }
                             
-                            
+        HStack {
+            VStack {
+                Text("I'm having a")
+                    .font(.system(size: 27))
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+                    .rotationEffect(.degrees(-20))
+                //                .blinking(duration: 3.0)
+                    .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                    .opacity(0.35)
+                
+                Text("  good day")
+                    .font(.system(size: 30))
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+                    .rotationEffect(.degrees(-20))
+                //                .blinking(duration: 3.0)
+                    .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                    .opacity(0.35)
+                
+            }
+            
+        Spacer ()
+                .frame(width: 30)
+      
+            ZStack {
+                
+                Image(systemName: "circle")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 90, height: 90)
+                    .foregroundColor(Color .green)
+                    .glow(color: Color.green, radius: 10)
+                    .shadow(color: Color.green, radius: 3, x: 3, y: 3)
+                
+                
+                Button(action: {
+                    mood = 4
+//                      showingAlert = true
+                }) {
+                    
+                    VStack {
+                        Text("TAP")
+                            .font(.system(size: 30))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.cyan)
+             
+                        
+                        Spacer ()
+                            .frame(height: 7)
+                        
+                    }
+                }
+             
+                .frame(width: 70, height: 70, alignment: .center)
+                .background(mood == 4 ? Color.green : ColorManager .grey4)
+                .cornerRadius(100)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                
+            }
+        }
+    
+       
+        
+        
+        
+        
+        
+        
                             
                             //                ********************************************
-                            
-                   
                         //                ************************************************
+        
+        
+        
                         VStack {
                             
                             VStack {
@@ -260,12 +347,24 @@ struct RR32: View {
                                 Spacer ()
                                     .frame(height: 30)
                                 
-                                Text("(let friends know)")
-                                    .font(.system(size: 15))
-                                    .italic()
-                                    .fontWeight(.light)
+                                Text("Today's atmosphere")
+                                    .font(.system(size: 20))
+                                    .fontWeight(.bold)
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.white)
+                    //                .rotationEffect(.degrees(-20))
+                                //                .blinking(duration: 3.0)
+                                    .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                                    .opacity(0.35)
+                                
+                                Text("Your planet's atmosphere matches your 'VIBE'")
+                                    .font(.system(size: 12))
+                                    .fontWeight(.bold)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.purple)
+                    //                .rotationEffect(.degrees(-20))
+                                
+                     
                                 
                                 HStack {
                                     
@@ -358,7 +457,7 @@ struct RR32: View {
                                 }
                                 
                                 Spacer()
-                                    .frame(height: 20)
+                                    .frame(height: 15)
                                 
                                 ZStack {
                                     
@@ -395,21 +494,41 @@ struct RR32: View {
                                         
                                     })
                                 }
+                              
+    VStack {
+        NavigationLink(
+            destination:  FH1(user: user, friends: friends, friendAtmospheres: friendAtmospheres),
+            label: {
+                VStack {
+                    
+                    
+                    ZStack {
+                        Text("Check on your friends")
+                            .fontWeight(.regular)
+                            .frame(width: 300, height: 35)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 25))
+                            .background(Color.cyan)
+                            .cornerRadius(15)
+                            .glow(color: Color.white, radius: 1)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                            .opacity(0.8)
+                        
+                    }
+                }
+            }
+        )}
+                                
                                 
                                 
                                 Spacer()
-                                    .frame(height: 10)
+                                    .frame(height: 50)
                                 
-                                VStack {
-                          
-                                }
+                                
                             }
                         }
-                        
                     }
-                    
                 }
-                
             }
         }
         
@@ -479,7 +598,7 @@ struct RR32: View {
             var body: some View {
                 Text(friend.firstName + " " + String(friend.lastName.first!))
                     .fontWeight(.bold)
-                    .frame(width: 60, height: 60)
+                    .frame(width: 75, height: 75)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .font(.system(size: 8))
                     .background(color)
