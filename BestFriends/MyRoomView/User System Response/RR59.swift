@@ -254,8 +254,8 @@ struct RR59: View {
                         
                        
 
-                       NavigationLink(destination: WhyFiveFriends(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                           HugCircle (color: ColorManager .grey1, friendName: "Hurt \nFeelings")
+                       NavigationLink(destination: EmptyView(), label: {
+                           HugCircle (color: ColorManager .grey1, friendName: "empty")
                        })
                        .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
                        .shadow(color: Color.white, radius: 4, x: 2, y: 3)

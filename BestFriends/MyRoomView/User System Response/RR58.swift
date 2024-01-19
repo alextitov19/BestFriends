@@ -218,12 +218,12 @@ struct RR58: View {
                             label: {
                                 
                                 ZStack {
-                                    Text("TODAY")
+                                    Text("NOW!")
                                         .fontWeight(.regular)
                                         .frame(width: 100, height: 35)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 25))
-                                        .background(ColorManager .orange4)
+                                        .background(Color.green)
                                         .cornerRadius(15)
                                         .glow(color: Color.white, radius: 1)
                                         .shadow(color: Color.white, radius: 2, x: 0, y: 3)
