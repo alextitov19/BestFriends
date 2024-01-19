@@ -111,12 +111,12 @@ struct RRLoveTarts3: View {
                             .opacity(0.5)
                             .ignoresSafeArea()
                             .blendMode(.screen)
-                        
-                        
-                        AdPlayerView(name: "BlowingKisses2")
-                            .ignoresSafeArea()
-                            .blendMode(.screen)
-                            .opacity(0.25)
+//                        
+//                        
+//                        AdPlayerView(name: "BlowingKisses2")
+//                            .ignoresSafeArea()
+//                            .blendMode(.screen)
+//                            .opacity(0.25)
                         
                     } else {
 
@@ -136,7 +136,7 @@ struct RRLoveTarts3: View {
                             .blendMode(.screen)
                             .opacity(0.3)
                         
-                        AdPlayerView(name: "InnerStellar3")
+                        AdPlayerView(name: "TaylorSwift2")
                                       .ignoresSafeArea()
                                       .blendMode(.screen)
                                       .opacity(0.0)
@@ -401,56 +401,45 @@ struct RRLoveTarts3: View {
         Spacer ()
                 .frame(width: 40)
             
-            ZStack {
-//                Image(systemName: "heart.fill")
-//                    .rotationEffect(.degrees(10))
-                
-                Image(systemName: "heart.fill")
-                    .resizable()
-                    .foregroundColor(.purple)
-                    .frame(width: 150, height: 110)
-                    .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                    .opacity(0.25)
-                
-                Image(systemName: "heart.fill")
-                    .resizable()
-                    .foregroundColor(ColorManager .purple3)
-                    .frame(width: 140, height: 110)
-                    .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
-                    .rotationEffect(.degrees(-10))
-                    .opacity(0.4)
-                
-                
-                
-                NavigationLink(destination:  WhyFiveFriends(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                    label: {
+            
+            NavigationLink(
+                destination: RRBrokenHeart(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                label: {
                     
-                    VStack {
-                        Text("Hurt \nFeelings")
-                            .font(.system(size: 20))
+                    ZStack {
+                        Text("Dented \nHeart")
+                            .font(.system(size: 14))
+                            .foregroundColor(ColorManager .grey4)
                             .fontWeight(.bold)
+                            .opacity(0.99)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey1)
-//                            .blinking(duration: 3.0)
-                            .rotationEffect(.degrees(-10))
-                            .opacity(0.5)
+                        //                        .blinking(duration: 2.0)
                         
-                        Spacer ()
-                            .frame(height: 10)
+                        Image(systemName: "heart")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 120, height: 120)
+                            .foregroundColor(Color.cyan)
+                            .opacity(0.1)
+                            .rotationEffect(.degrees(10))
+                            .glow(color: Color.purple, radius: 1)
+                            .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
                         
-                        
-                   
-                        
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 110, height: 110)
+                            .foregroundColor(ColorManager .purple3)
+                            .opacity(0.1)
+                        //                                        .rotationEffect(.degrees(10))
+                            .glow(color: Color.white, radius: 1)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
                     }
-                }
-            )}
-            
-            
-            
-            
-        }
-                
-                
+                         
+                })
+            }
+
+           
                 
                 
         Text("LoveTarts")
@@ -657,14 +646,14 @@ struct RRLoveTarts3: View {
                     TextField("", text: $customMessage)
                         .placeholder(when: customMessage.isEmpty) {
                             HStack {
-                                Text("say something romatic - take a chance, just type ...")
+                                Text("say something romatic - take a chance, just type...")
                                     .foregroundColor(Color.white)
                                     .fontWeight(.thin)
                                 Spacer()
                             }
                         }
                         .foregroundColor(.white)
-                        .font(.system(size: 15))
+                        .font(.system(size: 13))
                         .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                         .submitLabel(.done)
                         .onReceive(Just(customMessage)) { _ in limitText(65) }
@@ -806,7 +795,7 @@ struct RRLoveTarts3: View {
                             .glow(color: Color.purple, radius: 2)
                             .opacity(0.6)
                             .blinking(duration: 3.0)
-                            .alert("Yep, we'll send a push notification right now", isPresented: $showingAlert) {
+                            .alert("Yep, the soft breeze carries your LoveTart", isPresented: $showingAlert) {
                                 Button("OK", role: .cancel) { }
                             }
                         

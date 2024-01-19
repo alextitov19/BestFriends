@@ -326,6 +326,7 @@
 		CF7A55702B5739C20068F249 /* RRNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A556F2B5739C20068F249 /* RRNew.swift */; };
 		CF7A55722B588AD50068F249 /* RRBeCloser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A55712B588AD50068F249 /* RRBeCloser.swift */; };
 		CF7A55742B5921E50068F249 /* RRLoveTarts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A55732B5921E50068F249 /* RRLoveTarts.swift */; };
+		CF7A55782B5A8CA60068F249 /* TaylorSwift2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF7A55772B5A8CA60068F249 /* TaylorSwift2.mp4 */; };
 		CF84A3E22988A84700387A43 /* MyRoomNeedTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */; };
 		CF85CDE4298B0B1C0040EAE4 /* ProfessionalHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */; };
 		CF8941222A8B3E2700AFEC39 /* Planet4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF8941212A8B3E2700AFEC39 /* Planet4.mp4 */; };
@@ -795,6 +796,7 @@
 		CF7A556F2B5739C20068F249 /* RRNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRNew.swift; sourceTree = "<group>"; };
 		CF7A55712B588AD50068F249 /* RRBeCloser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRBeCloser.swift; sourceTree = "<group>"; };
 		CF7A55732B5921E50068F249 /* RRLoveTarts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRLoveTarts.swift; sourceTree = "<group>"; };
+		CF7A55772B5A8CA60068F249 /* TaylorSwift2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TaylorSwift2.mp4; sourceTree = "<group>"; };
 		CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomNeedTalk.swift; sourceTree = "<group>"; };
 		CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalHelp.swift; sourceTree = "<group>"; };
 		CF8941212A8B3E2700AFEC39 /* Planet4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Planet4.mp4; sourceTree = "<group>"; };
@@ -1656,6 +1658,7 @@
 			children = (
 				CFB6690A2B4283FB00E9C237 /* offPlanet1.mp4 */,
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
+				CF7A55772B5A8CA60068F249 /* TaylorSwift2.mp4 */,
 				CF7A55472B4E87320068F249 /* Somebody7.mp4 */,
 				CF7A553B2B4CEAF80068F249 /* neverSurrender3.mp4 */,
 				CF7A55332B4BB6B80068F249 /* alwaysForever2.mp4 */,
@@ -2369,6 +2372,7 @@
 				CFADFD9C2AFFF58D0090071A /* sadDay1.mp4 in Resources */,
 				CFB6693E2B48FCB900E9C237 /* dreams.mp4 in Resources */,
 				CFADFD982AFFF00C0090071A /* thumbsUp.mp4 in Resources */,
+				CF7A55782B5A8CA60068F249 /* TaylorSwift2.mp4 in Resources */,
 				CF2D30BB2B1FECFC008D9C38 /* background_0.mp4 in Resources */,
 				CF7A55302B4A5EC20068F249 /* HugGetMusic.mp4 in Resources */,
 				CF8941302A8B4AA400AFEC39 /* background_9.mp4 in Resources */,
