@@ -192,7 +192,7 @@ struct RR59: View {
                            
                             
                             Spacer ()
-                                .frame(width: 45)
+                                .frame(width: 80)
 
         ZStack {
 //
@@ -235,7 +235,7 @@ struct RR59: View {
 
                             
                             Spacer ()
-                                .frame(width: 45)
+                                .frame(width: 80)
                             
                             
                             NavigationLink(destination: RRDidGood(user: user, friends: friends), label: {
