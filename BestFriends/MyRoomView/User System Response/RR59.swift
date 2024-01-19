@@ -195,42 +195,42 @@ struct RR59: View {
                                 .frame(width: 45)
 
         ZStack {
-
-            NavigationLink(
-                destination: RRBrokenHeart(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                label: {
-                    
-                    ZStack {
-                        Text("Dented \nHeart")
-                            .font(.system(size: 14))
-                            .foregroundColor(ColorManager .grey4)
-                            .fontWeight(.bold)
-                            .opacity(0.99)
-                            .multilineTextAlignment(.center)
-                        //                        .blinking(duration: 2.0)
-                        
-                        Image(systemName: "heart")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 120, height: 120)
-                            .foregroundColor(Color.cyan)
-                            .opacity(0.1)
-                            .rotationEffect(.degrees(10))
-                            .glow(color: Color.purple, radius: 1)
-                            .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
-                        
-                        Image(systemName: "heart.fill")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 110, height: 110)
-                            .foregroundColor(ColorManager .purple3)
-                            .opacity(0.1)
-                        //                                        .rotationEffect(.degrees(10))
-                            .glow(color: Color.white, radius: 1)
-                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-                    }
+//
+//            NavigationLink(
+//                destination: RRBrokenHeart(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                label: {
+//
+//                    ZStack {
+//                        Text("Dented \nHeart")
+//                            .font(.system(size: 14))
+//                            .foregroundColor(ColorManager .grey4)
+//                            .fontWeight(.bold)
+//                            .opacity(0.99)
+//                            .multilineTextAlignment(.center)
+//                        //                        .blinking(duration: 2.0)
+//
+//                        Image(systemName: "heart")
+//                            .resizable()
+//                            .scaledToFit()
+//                            .frame(width: 120, height: 120)
+//                            .foregroundColor(Color.cyan)
+//                            .opacity(0.1)
+//                            .rotationEffect(.degrees(10))
+//                            .glow(color: Color.purple, radius: 1)
+//                            .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
+//
+//                        Image(systemName: "heart.fill")
+//                            .resizable()
+//                            .scaledToFit()
+//                            .frame(width: 110, height: 110)
+//                            .foregroundColor(ColorManager .purple3)
+//                            .opacity(0.1)
+//                        //                                        .rotationEffect(.degrees(10))
+//                            .glow(color: Color.white, radius: 1)
+//                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+//                    }
                          
-                })
+//                })
             }
 
                             
@@ -252,10 +252,10 @@ struct RR59: View {
 
                    HStack {
                         
-                       
+                  
 
-                       NavigationLink(destination: EmptyView(), label: {
-                           HugCircle (color: ColorManager .grey1, friendName: "empty")
+                       NavigationLink(destination: FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
+                           HugCircle (color: ColorManager .grey1, friendName: "AI \ncoming \n2024")
                        })
                        .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
                        .shadow(color: Color.white, radius: 4, x: 2, y: 3)
@@ -299,13 +299,13 @@ struct RR59: View {
                                 ZStack {
                                   
                                             
-                                            NavigationLink(destination: FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                                                HugCircle (color: ColorManager .grey1, friendName: "AI \ncoming \n2024")
-                                            })
-                                            .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-                                            .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
-                                            .opacity(0.99)
-                                            
+//                                            NavigationLink(destination: FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
+//                                                HugCircle (color: ColorManager .grey1, friendName: "AI \ncoming \n2024")
+//                                            })
+//                                            .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+//                                            .shadow(color: Color.cyan, radius: 4, x: 2, y: 3)
+//                                            .opacity(0.99)
+//
                                     }
                                 }
                             }
@@ -314,7 +314,7 @@ struct RR59: View {
             VStack {
                                 
                 Spacer ()
-                    .frame(height: 170)
+                    .frame(height: 250)
                                 
                             }
                         }
