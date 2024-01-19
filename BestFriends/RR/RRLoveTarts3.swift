@@ -425,7 +425,7 @@ struct RRLoveTarts3: View {
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager .grey1)
-                            .blinking(duration: 3.0)
+//                            .blinking(duration: 3.0)
                             .rotationEffect(.degrees(-10))
                             .opacity(0.5)
                         

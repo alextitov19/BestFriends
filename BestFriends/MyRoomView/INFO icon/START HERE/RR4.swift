@@ -35,7 +35,7 @@ struct RR4: View {
                             Text("Let's create some magic...")
                                 .fontWeight(.thin)
                                 .foregroundColor(Color.white)
-                                .frame(width: 340, height: 40)
+                                .frame(width: 360, height: 40)
                                 .font(.system(size: 30))
                                 .background(ColorManager .grey2)
                                 .opacity(0.95)
