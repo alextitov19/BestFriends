@@ -149,7 +149,7 @@ struct RR58: View {
                         Spacer ()
                             .frame(width: 40)
                         
-                        NavigationLink(destination: RRLoveTarts(user: user, friend: user, friends: friends, groups: groups), label: {
+                        NavigationLink(destination: RRLoveTarts(user: user, friend: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres), label: {
                             ZStack {
                                 VStack {
                                     Text("Friendships")

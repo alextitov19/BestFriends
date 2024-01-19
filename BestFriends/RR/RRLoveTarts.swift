@@ -23,8 +23,8 @@ struct RRLoveTarts: View {
     let friends: [User]
     let groups: [Group]
     
-//   let atmosphere: Atmosphere
-//   let friendAtmospheres: [Atmosphere]
+   let atmosphere: Atmosphere
+   let friendAtmospheres: [Atmosphere]
  
     
     @State private var selectedFriends: [String] = []
@@ -139,7 +139,63 @@ struct RRLoveTarts: View {
                       
                         
                     }
-            
+         
+                HStack {
+                    
+                    Image(systemName: "")
+                        .resizable()
+//                        .foregroundColor(.purple)
+//                        .frame(width: 150, height: 110)
+//                        .shadow(color: .blue, radius: 65, x: 30, y: 50)
+//                        .opacity(0.4)
+                    
+                    ZStack {
+                        //                Image(systemName: "heart.fill")
+                        //                    .rotationEffect(.degrees(10))
+                        
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .foregroundColor(.purple)
+                            .frame(width: 150, height: 110)
+                            .shadow(color: .blue, radius: 65, x: 30, y: 50)
+                            .opacity(0.4)
+                        
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .foregroundColor(ColorManager .purple3)
+                            .frame(width: 140, height: 110)
+                            .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
+                            .rotationEffect(.degrees(10))
+                            .opacity(0.4)
+                        
+                        
+                        
+                        NavigationLink(destination:  WhyFiveFriends(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                       label: {
+                            
+                            VStack {
+                                Text("Hurt \nFeelings")
+                                    .font(.system(size: 20))
+                                    .fontWeight(.bold)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(ColorManager .grey1)
+                                //                            .blinking(duration: 3.0)
+                                    .rotationEffect(.degrees(10))
+                                    .opacity(0.5)
+                                
+                                Spacer ()
+                                    .frame(height: 10)
+                                
+                                
+                                
+                                
+                            }
+                        }
+                        )}
+                }
+      
+        
+        
         VStack {
                 
                 Spacer ()
