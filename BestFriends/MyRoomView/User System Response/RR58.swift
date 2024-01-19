@@ -218,9 +218,9 @@ struct RR58: View {
                             label: {
                                 
                                 ZStack {
-                                    Text("NOW!")
+                                    Text("me!")
                                         .fontWeight(.regular)
-                                        .frame(width: 100, height: 35)
+                                        .frame(width: 100, height: 30)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 25))
                                         .background(Color.green)
@@ -229,33 +229,30 @@ struct RR58: View {
                                         .shadow(color: Color.white, radius: 2, x: 0, y: 3)
                                         .opacity(0.8)
                                     
-//                                    Image("iconVibes75")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 55, height: 55)
-//                                        .foregroundColor(ColorManager .purple4)
-//                                        .glow(color: ColorManager .purple5, radius: 1)
-////                                        .blinking(duration: 2.0)
-//                                        .opacity(0.8)
-                                    
                                 }
                             }
                         )}
                     
-//                    VStack {
-//                        Text("Seceretly share your 'Vibe'")
-//                            .fontWeight(.thin)
-//                            .italic()
-//                            .foregroundColor(Color.white)
-//                        Text("with trusted friends")
-//                            .fontWeight(.thin)
-//                            .italic()
-//                            .foregroundColor(Color.white)
-//
-//                    }
                     
-                }
-                
+                    NavigationLink(
+                        destination:  FH1(user: user, friends: friends, friendAtmospheres: friendAtmospheres),
+                        label: {
+                            
+                            ZStack {
+                                Text("friends")
+                                    .fontWeight(.regular)
+                                    .frame(width: 100, height: 30)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 25))
+                                    .background(Color.green)
+                                    .cornerRadius(15)
+                                    .glow(color: Color.white, radius: 1)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                                    .opacity(0.8)
+                                
+                            }
+                        }
+                    )}
                 
                 
                 
@@ -463,7 +460,7 @@ struct RR58: View {
                 VStack {
 
                         Spacer ()
-                            .frame(height: 80)
+                            .frame(height: 50)
                     
                     ZStack {
                         
@@ -514,8 +511,8 @@ struct RR58: View {
                         )}
                     
                     
-                                            Spacer()
-                                                .frame(height: 30)
+//                                            Spacer()
+//                                                .frame(height: 30)
                     
                 }
             }

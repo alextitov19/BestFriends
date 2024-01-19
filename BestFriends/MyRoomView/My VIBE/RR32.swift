@@ -487,7 +487,7 @@ struct RR32: View {
                                             .glow(color: Color.purple, radius: 2)
                                             .opacity(0.6)
                                             .blinking(duration: 3.0)
-                                            .alert("Ok, we'er asking your friends to send bad day emotional support or good luck reassurances via CareHearts. \n\nWe and your friends are here for you.", isPresented: $showingAlert) {
+                                            .alert("We shot out lighbeams to friends letting them know what's up", isPresented: $showingAlert) {
                                                 Button("OK", role: .cancel) { }
                                                 
                                             }
@@ -495,30 +495,7 @@ struct RR32: View {
                                     })
                                 }
                               
-    VStack {
-        NavigationLink(
-            destination:  FH1(user: user, friends: friends, friendAtmospheres: friendAtmospheres),
-            label: {
-                VStack {
-                    
-                    
-                    ZStack {
-                        Text("Check on your friends")
-                            .fontWeight(.regular)
-                            .frame(width: 300, height: 35)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 25))
-                            .background(Color.cyan)
-                            .cornerRadius(15)
-                            .glow(color: Color.white, radius: 1)
-                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-                            .opacity(0.8)
-                        
-                    }
-                }
-            }
-        )}
-                                
+               
                                 
                                 
                                 Spacer()
