@@ -70,7 +70,7 @@ struct RRBrokenHeart: View {
                     VStack {
                         
                       
-                        Text("Giving emotional support to others")
+                        Text("Ugg")
                             .font(.system(size: 25))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
@@ -79,7 +79,7 @@ struct RRBrokenHeart: View {
                         
                  
                         
-                        Text("having a difficult day")
+                        Text("")
                             .font(.system(size: 25))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
@@ -87,15 +87,19 @@ struct RRBrokenHeart: View {
                             .opacity(0.99)
                         
                         
-                        Text("when they are unable or not ready")
+                        Text("we're trying to figure this out")
                             .font(.system(size: 25))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .opacity(0.99)
                         
-                        Text("to talk to you")
+                        Spacer()
+                            .frame(height: 20)
+                        
+                        Text("(comming sort of soon)")
                             .font(.system(size: 25))
+                            .italic()
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -111,22 +115,22 @@ struct RRBrokenHeart: View {
                     }
                 }
                 
-                Text("maybe it is as simple as")
-                    .font(.system(size: 17))
-                    .italic()
-                    .foregroundColor(Color.white)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .opacity(0.99)
-                
-                Text("letting them know you care")
-                    .font(.system(size: 17))
-                    .italic()
-                    .foregroundColor(Color.white)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .opacity(0.99)
-                
+//                Text("maybe it is as simple as")
+//                    .font(.system(size: 17))
+//                    .italic()
+//                    .foregroundColor(Color.white)
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+//                    .opacity(0.99)
+//                
+//                Text("letting them know you care")
+//                    .font(.system(size: 17))
+//                    .italic()
+//                    .foregroundColor(Color.white)
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+//                    .opacity(0.99)
+//                
                 
                 
                 Spacer()
