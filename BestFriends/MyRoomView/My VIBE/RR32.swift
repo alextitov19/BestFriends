@@ -61,11 +61,11 @@ struct RR32: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
-//                AdPlayerView(name: "Somebody7")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//                    .opacity(0.5)
-//
+                AdPlayerView(name: "Somebody7")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.0)
+
             }
             
    
