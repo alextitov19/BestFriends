@@ -218,8 +218,8 @@ struct RR58: View {
                             label: {
                                 
                                 ZStack {
-                                    Text("")
-                                        .fontWeight(.light)
+                                    Text("TODAY")
+                                        .fontWeight(.regular)
                                         .frame(width: 100, height: 35)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 25))
@@ -229,14 +229,14 @@ struct RR58: View {
                                         .shadow(color: Color.white, radius: 2, x: 0, y: 3)
                                         .opacity(0.8)
                                     
-                                    Image("iconVibes75")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 55, height: 55)
-                                        .foregroundColor(ColorManager .purple4)
-                                        .glow(color: ColorManager .purple5, radius: 1)
-//                                        .blinking(duration: 2.0)
-                                        .opacity(0.8)
+//                                    Image("iconVibes75")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 55, height: 55)
+//                                        .foregroundColor(ColorManager .purple4)
+//                                        .glow(color: ColorManager .purple5, radius: 1)
+////                                        .blinking(duration: 2.0)
+//                                        .opacity(0.8)
                                     
                                 }
                             }

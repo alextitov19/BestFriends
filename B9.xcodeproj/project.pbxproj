@@ -1151,6 +1151,8 @@
 			isa = PBXGroup;
 			children = (
 				CFE1946A2812A9E300ED5718 /* Streaks */,
+				CFB65BC72A37EA8F00E98A8B /* Affirmations */,
+				2DFB02FE2A57217100669948 /* FriendshipHighlights */,
 				CF6C5B022A86062500EC4915 /* INFO icon */,
 				CF6C5B092A86092200EC4915 /* START HERE */,
 				CF51BF812AE0C15C007A3DBF /* User System Response */,
@@ -1167,8 +1169,6 @@
 				7A8A72982A33F690005FA3B1 /* Journal */,
 				CF6C5AFE2A86029500EC4915 /* MyCrushes */,
 				CF37535B28C6953B003817E3 /* DREAMS */,
-				2DFB02FE2A57217100669948 /* FriendshipHighlights */,
-				CFB65BC72A37EA8F00E98A8B /* Affirmations */,
 			);
 			path = MyRoomView;
 			sourceTree = "<group>";
