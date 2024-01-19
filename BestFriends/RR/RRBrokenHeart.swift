@@ -70,8 +70,8 @@ struct RRBrokenHeart: View {
                     VStack {
                         
                       
-                        Text("Ugg")
-                            .font(.system(size: 25))
+                        Text("Ugggg!")
+                            .font(.system(size: 35))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -122,7 +122,7 @@ struct RRBrokenHeart: View {
 //                    .fontWeight(.light)
 //                    .multilineTextAlignment(.center)
 //                    .opacity(0.99)
-//                
+//
 //                Text("letting them know you care")
 //                    .font(.system(size: 17))
 //                    .italic()
@@ -130,7 +130,7 @@ struct RRBrokenHeart: View {
 //                    .fontWeight(.light)
 //                    .multilineTextAlignment(.center)
 //                    .opacity(0.99)
-//                
+//
                 
                 
                 Spacer()
