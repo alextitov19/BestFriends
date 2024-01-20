@@ -215,8 +215,8 @@ struct RRLoveTarts3: View {
                     
                     
                     ZStack {
-                        Image(systemName: "heart.fill")
-                            .rotationEffect(.degrees(10))
+//                        Image(systemName: "heart.fill")
+//                            .rotationEffect(.degrees(10))
                         
                         Image(systemName: "heart.fill")
                             .resizable()
@@ -226,14 +226,10 @@ struct RRLoveTarts3: View {
                             .rotationEffect(.degrees(10))
                             .opacity(0.4)
 
+                        Link(destination: URL(string: "https://socialtechlabs.com/tips/")!) {
 
-
-                        NavigationLink(
-                            destination: RRPoemContest(user: user, friends: friends, groups: groups),
-                            label: {
-                            
                             VStack {
-                                Text("Texting \nTips")
+                                Text("Guys \nOnly")
                                     .font(.system(size: 22))
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
@@ -243,7 +239,7 @@ struct RRLoveTarts3: View {
 
                             }
                         }
-                    )}
+                    }
                 }
             }
         }

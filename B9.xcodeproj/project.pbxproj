@@ -327,6 +327,7 @@
 		CF7A55722B588AD50068F249 /* RRBeCloser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A55712B588AD50068F249 /* RRBeCloser.swift */; };
 		CF7A55742B5921E50068F249 /* RRLoveTarts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A55732B5921E50068F249 /* RRLoveTarts.swift */; };
 		CF7A55782B5A8CA60068F249 /* TaylorSwift2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF7A55772B5A8CA60068F249 /* TaylorSwift2.mp4 */; };
+		CF7A557A2B5B96770068F249 /* RRGuysTexting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A55792B5B96770068F249 /* RRGuysTexting.swift */; };
 		CF84A3E22988A84700387A43 /* MyRoomNeedTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */; };
 		CF85CDE4298B0B1C0040EAE4 /* ProfessionalHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */; };
 		CF8941222A8B3E2700AFEC39 /* Planet4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF8941212A8B3E2700AFEC39 /* Planet4.mp4 */; };
@@ -797,6 +798,7 @@
 		CF7A55712B588AD50068F249 /* RRBeCloser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRBeCloser.swift; sourceTree = "<group>"; };
 		CF7A55732B5921E50068F249 /* RRLoveTarts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRLoveTarts.swift; sourceTree = "<group>"; };
 		CF7A55772B5A8CA60068F249 /* TaylorSwift2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TaylorSwift2.mp4; sourceTree = "<group>"; };
+		CF7A55792B5B96770068F249 /* RRGuysTexting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRGuysTexting.swift; sourceTree = "<group>"; };
 		CF84A3E12988A84700387A43 /* MyRoomNeedTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomNeedTalk.swift; sourceTree = "<group>"; };
 		CF85CDE3298B0B1C0040EAE4 /* ProfessionalHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalHelp.swift; sourceTree = "<group>"; };
 		CF8941212A8B3E2700AFEC39 /* Planet4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Planet4.mp4; sourceTree = "<group>"; };
@@ -968,6 +970,7 @@
 				CF7A556F2B5739C20068F249 /* RRNew.swift */,
 				CF7A55712B588AD50068F249 /* RRBeCloser.swift */,
 				CF7A55732B5921E50068F249 /* RRLoveTarts.swift */,
+				CF7A55792B5B96770068F249 /* RRGuysTexting.swift */,
 			);
 			path = RR;
 			sourceTree = "<group>";
@@ -2749,6 +2752,7 @@
 				2DFB032B2A5D30B600669948 /* CH9.swift in Sources */,
 				CF3B65E028020D9A0003A714 /* ChangePin.swift in Sources */,
 				2DBF3EE92A61ACFF00CB1CAD /* RR5.swift in Sources */,
+				CF7A557A2B5B96770068F249 /* RRGuysTexting.swift in Sources */,
 				2DBF3EED2A61AD1200CB1CAD /* RR7.swift in Sources */,
 				CF4CFAC228E8DC3B00D6AEA9 /* SaySomethingNice3.swift in Sources */,
 				2DFB030C2A57223100669948 /* FH4.swift in Sources */,
