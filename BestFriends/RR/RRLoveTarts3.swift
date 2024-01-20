@@ -131,10 +131,15 @@ struct RRLoveTarts3: View {
                             .blendMode(.screen)
                             .opacity(0.9)
                         
-                        AdPlayerView(name: "missingYou3")
+//                        AdPlayerView(name: "missingYou3")
+//                            .ignoresSafeArea()
+//                            .blendMode(.screen)
+//                            .opacity(0.1)
+                        
+                        AdPlayerView(name: "easyHearts2")
                             .ignoresSafeArea()
                             .blendMode(.screen)
-                            .opacity(0.3)
+                            .opacity(0.7)
                         
                         AdPlayerView(name: "TaylorSwift2")
                                       .ignoresSafeArea()
@@ -228,7 +233,7 @@ struct RRLoveTarts3: View {
                             label: {
                             
                             VStack {
-                                Text("Poem \n\nContest")
+                                Text("Texting \nTips")
                                     .font(.system(size: 22))
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)

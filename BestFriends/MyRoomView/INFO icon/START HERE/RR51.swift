@@ -56,6 +56,40 @@ struct RR51: View {
             VStack {
                 
                 ZStack {
+//        *************************************
+                    
+                    NavigationLink(
+                        destination:  RR4(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        label: {
+                            
+                            ZStack {
+                                
+                                Image("CoolGuy")
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 35, height: 35)
+                                    .opacity(0.3)
+                                    .blinking(duration: 2.0)
+                                
+                                Text("First Time User (TAP)")
+                                    .fontWeight(.medium)
+                                    .frame(width: 170, height: 22)
+                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 15))
+                                    .background(ColorManager .grey3)
+                                    .cornerRadius(7)
+//                                                                .rotationEffect(.degrees(-38))
+                                    .opacity(0.35)
+                                    .blinking(duration: 3.0)
+                                    .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
+
+                     
+                            }
+                        })
+                
+            
+                    
+                    
+//         ********************************************
                     
                     
                     Image(systemName: "circle.fill")
@@ -63,7 +97,7 @@ struct RR51: View {
                         .foregroundColor(Color.purple)
                         .frame(width: 450, height: 450)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.85)
+                        .opacity(0.95)
                     
                     VStack {
                         
@@ -86,51 +120,40 @@ struct RR51: View {
                             .opacity(0.99)
                         
                         Spacer()
-                            .frame(height: 7)
+                            .frame(height: 55)
                         
                         
                         VStack {
-                            ZStack {
-                                
-//                                Image("IconPhotoNew")
-//                                    .resizable()
-//                                    .scaledToFit()
-//                                    .frame(width: 70, height: 70)
-//                                    .foregroundColor(Color.purple)
-//                                    .glow(color: Color.white, radius: 0.3)
-//                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-//                                    .opacity(0.95)
-//
-                                
-                                Text("")
-                                    .fontWeight(.light)
-                                    .frame(width: 50, height: 50)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(Color.cyan)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                                Image(systemName: "heart.fill")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 25, height: 25)
-                                    .foregroundColor(Color.purple)
-                                    .opacity(0.2)
-                                    .glow(color: Color.purple, radius: 1)
-                                    .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-                            }
+                            NavigationLink(
+                                destination:  RR4(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                label: {
+                                    
+                                    ZStack {
+                                        
+                                        Image("CoolGuy")
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 35, height: 35)
+                                            .opacity(0.9)
+            //                                .blinking(duration: 2.0)
+                                        
+                                        Text("First Time User (TAP)")
+                                            .fontWeight(.medium)
+                                            .frame(width: 170, height: 22)
+                                            .foregroundColor(Color.white)
+                                            .font(.system(size: 15))
+                                            .background(ColorManager .grey3)
+                                            .cornerRadius(7)
+                                            .rotationEffect(.degrees(-38))
+                                            .opacity(0.7)
+            //                                .blinking(duration: 3.0)
+                                            .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
+
+                             
+                                    }
+                                })
                             
-//                            Text("match")
-//                                .font(.system(size: 30))
-//
-//                                .foregroundColor(Color.white)
-//                                .fontWeight(.light)
-//                                .multilineTextAlignment(.center)
-//                                .opacity(0.99)
-//
-//                            Spacer()
-//                                .frame(height: 7)
+                            Spacer()
+                                .frame(height: 55)
                             
                             Text("match the inside of you")
                                 .font(.system(size: 37))
@@ -140,7 +163,7 @@ struct RR51: View {
                                 .opacity(0.90)
                             
                             Spacer()
-                                .frame(height: 20)
+                                .frame(height: 10)
                             
                             
                             Text("in a safe, non-toxic space")
@@ -153,24 +176,10 @@ struct RR51: View {
                             
                             
                             
-                            VStack {
-                                
-                                Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
-                                    
-                                    Text("Supportive social Influencers")
-                                        .fontWeight(.thin)
-                                        .frame(width: 320, height: 40)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 25))
-                                        .background(Color.cyan)
-                                        .cornerRadius(10)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    
-                                }
-                            }
+                          
                             
                             Spacer()
-                                .frame(height: 30)
+                                .frame(height: 10)
                             
                             VStack {
                                 
@@ -193,6 +202,24 @@ struct RR51: View {
                     }
                 }
                 
+              
+                VStack {
+                    
+                    Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
+                        
+                        Text("Supportive social Influencers")
+                            .fontWeight(.thin)
+                            .frame(width: 320, height: 40)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 25))
+                            .background(Color.cyan)
+                            .cornerRadius(10)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        
+                    }
+                }
+                
+                
                 Spacer()
                     .frame(height: 40)
                 
@@ -202,22 +229,4 @@ struct RR51: View {
 }
 
 
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 

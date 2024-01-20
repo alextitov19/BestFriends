@@ -144,10 +144,10 @@ struct HomeView: View {
                       
                             NavigationLink(destination:  RR51(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                 label: {
-                                Text("SolarMoments")
+                                Text("hello")
                                     .fontWeight(.thin)
                                     .foregroundColor(Color.white)
-                                    .frame(width: 110, height: 30)
+                                    .frame(width: 80, height: 30)
                                     .font(.system(size: 15))
                                     .background(Color.black)
                                     .opacity(0.95)
@@ -175,41 +175,6 @@ struct HomeView: View {
                             
                         }
                         
-                Spacer ()
-                            .frame(height: 10)
-                        
-                        //                        ******************************
-                                                
-                                                NavigationLink(
-                                                    destination:  RR4(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
-                                                    label: {
-                                                        
-                                                        ZStack {
-                                                            
-//                                                            Image("CoolGuy")
-//                                                                .aspectRatio(contentMode: .fit)
-//                                                                .frame(width: 35, height: 35)
-//                                                                .opacity(0.3)
-//                                                                .blinking(duration: 2.0)
-                                                            
-                                                            Text("First Time User (TAP)")
-                                                                .fontWeight(.medium)
-                                                                .frame(width: 170, height: 22)
-                                                                .foregroundColor(Color.white)
-                                                                .font(.system(size: 15))
-                                                                .background(ColorManager .grey3)
-                                                                .cornerRadius(7)
-//                                                                .rotationEffect(.degrees(-38))
-                                                                .opacity(0.35)
-                                                                .blinking(duration: 3.0)
-                                                                .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
-
-                                                 
-                                                        }
-                                                    })
-                                            
-                                        
-                                                
                                                 
                         //       **********************************************
                         //    ****************************************
