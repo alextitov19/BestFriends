@@ -66,9 +66,9 @@ struct HomeView: View {
                         presentingPhotoPop = true
                     }
                     .fullScreenCover(isPresented: $presentingPhotoPop, content: ShakePhotoPopView.init)
-                    .onReceive(reloadingTimer) { time in
-                        getHomeData()
-                    }
+//                    .onReceive(reloadingTimer) { time in
+//                        getHomeData()
+//                    }
                 
                 if (homeData != nil) {
                     NavigationLink(destination: NotificationsView(user: homeData!.user, friend: homeData!.user, friends: homeData!.friends, groups: homeData!.groups, atmosphere: homeData!.atmosphere), isActive: $presentingIANs) { EmptyView() }
