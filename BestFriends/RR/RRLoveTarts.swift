@@ -204,11 +204,146 @@ struct RRLoveTarts: View {
                 
                 
                 Spacer ()
-                    .frame(height: 200)
+                    .frame(height: 150)
                 
                 
-                
-                
+                VStack {
+                    HStack {
+                        
+                        
+                        NavigationLink(
+                            destination:  CH4(user: user, friend: user, friends: friends, groups: groups),
+                            label: {
+                                ZStack {
+                                    
+                                    Image(systemName: "circle.fill")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 60, height: 60)
+                                        .foregroundColor(Color.cyan)
+                                        .opacity(0.95)
+                                    
+                                    Image(systemName: "heart.fill")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 50, height: 50)
+                                        .foregroundColor(Color.purple)
+                                        .glow(color: Color.white, radius: 0.3)
+                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                        .opacity(0.95)
+                                    
+                                    Text("send \nsong")
+                                        .font(.system(size: 10))
+                                        .fontWeight(.medium)
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(Color.white)
+                                        .opacity(0.99)
+                                    
+                                }
+                            })
+                        
+                        
+//                        NavigationLink(
+//                            destination:  RRWantToTalk(user: user, friend: user, friends: friends, groups: groups),
+//                            label: {
+//                                ZStack {
+//                                    
+//                                    Image(systemName: "circle.fill")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 60, height: 60)
+//                                        .foregroundColor(Color.cyan)
+//                                        .opacity(0.95)
+//                                    
+//                                    Image(systemName: "heart.fill")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 50, height: 50)
+//                                        .foregroundColor(Color.purple)
+//                                        .glow(color: Color.white, radius: 0.3)
+//                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+//                                        .opacity(0.95)
+//                                    
+//                                    Text("kind \nwords")
+//                                        .font(.system(size: 10))
+//                                        .fontWeight(.medium)
+//                                        .multilineTextAlignment(.center)
+//                                        .foregroundColor(Color.white)
+//                                        .opacity(0.99)
+//                                    
+//                                }
+//                            })
+//                        
+                        
+                        NavigationLink(
+                            destination:  RRWantToTalk(user: user, friend: user, friends: friends, groups: groups),
+                            label: {
+                                ZStack {
+                                    
+                                    Image(systemName: "circle.fill")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 60, height: 60)
+                                        .foregroundColor(Color.cyan)
+                                        .opacity(0.95)
+                                    
+                                    Image(systemName: "heart.fill")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 50, height: 50)
+                                        .foregroundColor(Color.purple)
+                                        .glow(color: Color.white, radius: 0.3)
+                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                        .opacity(0.95)
+                                    
+                                    Text("wanna \ntalk?")
+                                        .font(.system(size: 10))
+                                        .fontWeight(.medium)
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(Color.white)
+                                        .opacity(0.99)
+                                    
+                                }
+                            })
+                        
+                        
+                        
+//                        NavigationLink(
+//                            destination:  EmptyView(),
+//                            label: {
+//                                ZStack {
+//
+//                                    Image(systemName: "circle.fill")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 60, height: 60)
+//                                        .foregroundColor(Color.cyan)
+//                                        .opacity(0.95)
+//
+//                                    Image(systemName: "heart.fill")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 50, height: 50)
+//                                        .foregroundColor(Color.purple)
+//                                        .glow(color: Color.white, radius: 0.3)
+//                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+//                                        .opacity(0.95)
+//
+//                                    Text("empty")
+//                                        .font(.system(size: 10))
+//                                        .fontWeight(.medium)
+//                                        .multilineTextAlignment(.center)
+//                                        .foregroundColor(Color.white)
+//                                        .opacity(0.99)
+//
+//                                }
+//                            })
+                        
+                        
+                        
+                        
+                    }
+                }
                 //                **************************************
                 
                 
@@ -387,7 +522,7 @@ struct RRLoveTarts: View {
                     }
                 
                 Spacer ()
-                    .frame(height: 30)
+                    .frame(height: 10)
                 
                 }
             }

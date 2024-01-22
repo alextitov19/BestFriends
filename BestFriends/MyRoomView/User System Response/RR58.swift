@@ -225,7 +225,7 @@ struct RR58: View {
                                         .fontWeight(.regular)
                                         .multilineTextAlignment(.center)
                                         .glow(color: ColorManager .purple3, radius: 2)
-                                        .opacity(0.5)
+                                        .opacity(0.6)
 
                                         ZStack {
                                             Image(systemName: "circle")
@@ -250,7 +250,7 @@ struct RR58: View {
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 150, height: 150)
-                                                .opacity(0.5)
+                                                .opacity(0.3)
                                         
                                         
                                         
