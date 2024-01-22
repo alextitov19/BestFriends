@@ -104,7 +104,7 @@ struct RR58: View {
                                     Text("LoveTarts")
                                         .font(.system(size: 21))
                                         .foregroundColor(Color.white)
-                                        .fontWeight(.bold)
+                                        .fontWeight(.regular)
                                         .rotationEffect(.degrees(-10))
                                         .multilineTextAlignment(.center)
                                         .glow(color: ColorManager .purple3, radius: 2)
@@ -148,48 +148,79 @@ struct RR58: View {
                         NavigationLink(destination: RRLoveTarts(user: user, friend: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres), label: {
                             ZStack {
                                 VStack {
-                                    Text("Friendships")
+                                    
+                                    Text("send")
                                         .font(.system(size: 21))
                                         .foregroundColor(Color.white)
-                                        .fontWeight(.bold)
-//                                        .rotationEffect(.degrees(10))
+                                        .fontWeight(.regular)
+                                        .rotationEffect(.degrees(10))
                                         .multilineTextAlignment(.center)
-                                        .glow(color: ColorManager .purple3, radius: 1.5)
-                                        .opacity(0.7)
+                                        .glow(color: ColorManager .purple3, radius: 2)
+                                        .opacity(0.3)
                                     
                                     
-//
-//                                    Spacer ()
-//                                        .frame(height: 20)
+                                    Text("CareHearts")
+                                        .font(.system(size: 21))
+                                        .foregroundColor(Color.white)
+                                        .fontWeight(.regular)
+                                        .rotationEffect(.degrees(10))
+                                        .multilineTextAlignment(.center)
+                                        .glow(color: ColorManager .purple3, radius: 2)
+                                        .opacity(0.3)
+                                    
+                                    
+                                    
+                                    Spacer ()
+                                        .frame(height: 30)
                                     
                                 }
                                 
-                                Image(systemName: "circle")
+                                Image(systemName: "heart")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 157, height: 157)
-                                    .foregroundColor(Color.purple)
-                                    .opacity(0.08)
-//                                    .rotationEffect(.degrees(-10))
+                                    .frame(width: 160, height: 160)
+                                    .foregroundColor(Color.cyan)
+                                    .opacity(0.05)
+                                    .rotationEffect(.degrees(10))
                                     .glow(color: Color.purple, radius: 1)
                                     .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
                                 
-                                Image(systemName: "circle.fill")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 140, height: 140)
-                                    .foregroundColor(Color.white)
-                                    .opacity(0.05)
-//                                    .rotationEffect(.degrees(-10))
-                                    .glow(color: Color.white, radius: 1)
-                                    .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-                                
-                                Image("planet_6")
+                                Image(systemName: "heart.fill")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 150, height: 150)
-                                    .opacity(0.5)
+                                    .foregroundColor(ColorManager .purple4)
+                                    .opacity(0.075)
+                                //                                        .rotationEffect(.degrees(10))
+                                    .glow(color: Color.white, radius: 1)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 3)
                                 
+//                                Image(systemName: "circle")
+//                                    .resizable()
+//                                    .scaledToFit()
+//                                    .frame(width: 157, height: 157)
+//                                    .foregroundColor(Color.purple)
+//                                    .opacity(0.08)
+////                                    .rotationEffect(.degrees(-10))
+//                                    .glow(color: Color.purple, radius: 1)
+//                                    .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
+//
+//                                Image(systemName: "circle.fill")
+//                                    .resizable()
+//                                    .scaledToFit()
+//                                    .frame(width: 140, height: 140)
+//                                    .foregroundColor(Color.white)
+//                                    .opacity(0.05)
+////                                    .rotationEffect(.degrees(-10))
+//                                    .glow(color: Color.white, radius: 1)
+//                                    .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+//
+//                                Image("planet_6")
+//                                    .resizable()
+//                                    .scaledToFit()
+//                                    .frame(width: 150, height: 150)
+//                                    .opacity(0.5)
+//
                              
                             }
                         })
@@ -229,102 +260,124 @@ struct RR58: View {
                             }
                         )}
                     
-                    
-                    NavigationLink(
-                        destination:  FH1(user: user, friends: friends, friendAtmospheres: friendAtmospheres),
-                        label: {
-                            
-                            ZStack {
-                                Text("friends")
-                                    .fontWeight(.regular)
-                                    .frame(width: 100, height: 30)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(Color.green)
-                                    .cornerRadius(15)
-                                    .glow(color: Color.white, radius: 1)
-                                    .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-                                    .opacity(0.8)
-                                
-                            }
-                        }
-                    )}
-                
-                
-                
-                //  ************************************************** Carehearts **********
-                
-                
-                VStack {
-                    
-                    Spacer ()
-                        .frame(height: 50)
-                    
-                    Text("Friend having a ...")
-                        .fontWeight(.bold)
-//                        .frame(width: 50, height: 35)
-                        .foregroundColor(ColorManager .grey2)
-                        .font(.system(size: 30))
-//                        .background(Color.cyan)
-//                        .cornerRadius(15)
-                        .glow(color: Color.white, radius: 1)
-                        .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-                        .opacity(0.05)
-                    
-                    HStack {
-                        NavigationLink(
-                            destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
-                            label: {
-                                
-                                HStack {
-                                    ZStack {
-                                     
-                                        Text("       Bad day                CareHearts")
-                                            .fontWeight(.regular)
-                                            .frame(width: 350, height: 35)
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .font(.system(size: 25))
-                                            .background(Color.cyan)
-                                            .cornerRadius(15)
-                                            .glow(color: Color.white, radius: 1)
-                                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-                                            .opacity(0.8)
-                                        
-                                        
-                                        Image(systemName: "heart")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 75, height: 75)
-                                            .foregroundColor(Color.cyan)
-                                            .opacity(0.05)
-                                            .rotationEffect(.degrees(10))
-                                            .glow(color: Color.purple, radius: 1)
-                                            .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
-                                        
-                                        Image(systemName: "heart.fill")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 65, height: 65)
-                                            .foregroundColor(ColorManager .purple4)
-                                            .opacity(0.2)
-                                            .rotationEffect(.degrees(10))
-                                            .glow(color: Color.white, radius: 1)
-                                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-                                        
-                                        
-                                        Text("send")
-                                            .font(.system(size: 23))
-                                            .foregroundColor(ColorManager .grey2)
-                                            .fontWeight(.medium)
-                                            .opacity(0.99)
-                                            .rotationEffect(.degrees(10))
-                                            .multilineTextAlignment(.center)
-                                        
-                                    }
-                                }
-                            })
-                        }
-                    
+//
+//                    NavigationLink(
+//                        destination:  FH1(user: user, friends: friends, friendAtmospheres: friendAtmospheres),
+//                        label: {
+//
+//                            ZStack {
+//                                Text("friends")
+//                                    .fontWeight(.regular)
+//                                    .frame(width: 100, height: 30)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 25))
+//                                    .background(Color.green)
+//                                    .cornerRadius(15)
+//                                    .glow(color: Color.white, radius: 1)
+//                                    .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+//                                    .opacity(0.8)
+//
+//                            }
+//                        }
+//                    )}
+//
+//
+//
+//                //  ************************************************** Carehearts **********
+//
+//
+//                VStack {
+//
+//                    Spacer ()
+//                        .frame(height: 50)
+//
+////                    Text("Friend having a ...")
+////                        .fontWeight(.bold)
+//////                        .frame(width: 50, height: 35)
+////                        .foregroundColor(ColorManager .grey2)
+////                        .font(.system(size: 30))
+//////                        .background(Color.cyan)
+//////                        .cornerRadius(15)
+////                        .glow(color: Color.white, radius: 1)
+////                        .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+////                        .opacity(0.05)
+//
+//                    HStack {
+//                        NavigationLink(
+//                            destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+//                            label: {
+//
+//                                HStack {
+////                                    ZStack {
+//
+//                                        Text("Friend having \na bad day")
+//                                            .fontWeight(.regular)
+//                                            .frame(width: 140, height: 50)
+//                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                            .font(.system(size: 20))
+//                                            .background(Color.cyan)
+//                                            .cornerRadius(15)
+//                                            .glow(color: Color.white, radius: 1)
+//                                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+//                                            .opacity(0.8)
+//
+//                                      Spacer ()
+//                                        .frame(width: 15)
+//
+//                                    ZStack {
+//                                        Image(systemName: "heart")
+//                                            .resizable()
+//                                            .scaledToFit()
+//                                            .frame(width: 75, height: 75)
+//                                            .foregroundColor(Color.cyan)
+//                                            .opacity(0.05)
+//                                            .rotationEffect(.degrees(10))
+//                                            .glow(color: Color.purple, radius: 1)
+//                                            .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
+//
+//                                        Image(systemName: "heart.fill")
+//                                            .resizable()
+//                                            .scaledToFit()
+//                                            .frame(width: 65, height: 65)
+//                                            .foregroundColor(ColorManager .purple4)
+//                                            .opacity(0.2)
+//                                            .rotationEffect(.degrees(10))
+//                                            .glow(color: Color.white, radius: 1)
+//                                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+//
+//
+//                                        Text("send")
+//                                            .font(.system(size: 23))
+//                                            .foregroundColor(ColorManager .grey2)
+//                                            .fontWeight(.medium)
+//                                            .opacity(0.99)
+//                                            .rotationEffect(.degrees(10))
+//                                            .multilineTextAlignment(.center)
+//
+//                                    }
+//
+//                                        Spacer ()
+//                                          .frame(width: 15)
+//
+//
+//                                        Text("CareHearts")
+//                                            .fontWeight(.regular)
+//                                            .frame(width: 120, height: 30)
+//                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                            .font(.system(size: 20))
+//                                            .background(Color.cyan)
+//                                            .cornerRadius(15)
+//                                            .glow(color: Color.white, radius: 1)
+//                                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+//                                            .opacity(0.8)
+//
+//
+//
+//                                    }
+//                                })
+//
+//                        }
+//
 //                    Text("Sharing love & support with friends")
 //                        .fontWeight(.thin)
 //                        .italic()
@@ -337,10 +390,10 @@ struct RR58: View {
 //  ********************************************** Motivation **********
                 
                 VStack {
-//
-//                    Spacer ()
-//                        .frame(height: 15)
-//
+
+                    Spacer ()
+                        .frame(height: 150)
+
                     ZStack {
                         
                         NavigationLink(
@@ -350,11 +403,11 @@ struct RR58: View {
                                 HStack {
                                
                                     ZStack {
-                                        Text("   Great day                Congrats!!!    ")
+                                        Text("Wish friend luck                Congrats!!!    ")
                                             .fontWeight(.regular)
                                             .frame(width: 350, height: 35)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .font(.system(size: 25))
+                                            .font(.system(size: 20))
                                             .background(Color.purple)
                                             .cornerRadius(15)
                                             .glow(color: Color.white, radius: 1)
@@ -416,7 +469,7 @@ struct RR58: View {
                                 
                                 
                                 ZStack {
-                                    Text("Holding Lightbeams")
+                                    Text("Holding Emotions")
                                         .fontWeight(.regular)
                                         .frame(width: 250, height: 35)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

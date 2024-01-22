@@ -85,7 +85,7 @@ struct RR32: View {
             HStack {
                 VStack {
                     Text("I'm having a")
-                        .font(.system(size: 27))
+                        .font(.system(size: 19))
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
@@ -94,8 +94,8 @@ struct RR32: View {
                         .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                         .opacity(0.35)
                     
-                    Text("   bad day")
-                        .font(.system(size: 30))
+                    Text("difficult day")
+                        .font(.system(size: 19))
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
@@ -108,14 +108,14 @@ struct RR32: View {
                 
                 VStack {
                     
-                    Text("Friends helping via")
+                    Text("Ask friends for")
                         .font(.system(size: 15))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
                         .rotationEffect(.degrees(-20))
                     
-                    Text("  CareHearts")
+                    Text("   CareHearts")
                         .font(.system(size: 20))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
@@ -347,23 +347,30 @@ struct RR32: View {
                                 Spacer ()
                                     .frame(height: 30)
                                 
-                                Text("Today's atmosphere")
+                                Text("Set your planet's atmosphere COLOR")
                                     .font(.system(size: 20))
                                     .fontWeight(.bold)
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.white)
-                    //                .rotationEffect(.degrees(-20))
-                                //                .blinking(duration: 3.0)
                                     .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                                     .opacity(0.35)
                                 
-                                Text("Your planet's atmosphere matches your 'VIBE'")
-                                    .font(.system(size: 12))
+                                
+                                
+                                Text("to matche your 'VIBE' today")
+                                    .font(.system(size: 20))
                                     .fontWeight(.bold)
                                     .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.white)
+                                    .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                                    .opacity(0.35)
+           
+                                Text("(Alert friends)")
+                                    .font(.system(size: 15))
+                                    .italic()
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
                                     .foregroundColor(Color.purple)
-                    //                .rotationEffect(.degrees(-20))
-                                
                      
                                 
                                 HStack {
