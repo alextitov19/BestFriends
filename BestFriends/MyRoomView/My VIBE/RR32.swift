@@ -264,7 +264,7 @@ struct RR32: View {
                             
         HStack {
             VStack {
-                Text("I'm having a")
+                Text("Let friends know")
                     .font(.system(size: 27))
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
@@ -274,7 +274,7 @@ struct RR32: View {
                     .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                     .opacity(0.35)
                 
-                Text("  good day")
+                Text("you're good!")
                     .font(.system(size: 30))
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
