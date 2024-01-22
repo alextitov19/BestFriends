@@ -191,37 +191,9 @@ struct RR58: View {
                                     .frame(width: 150, height: 150)
                                     .foregroundColor(ColorManager .purple4)
                                     .opacity(0.075)
-                                //                                        .rotationEffect(.degrees(10))
                                     .glow(color: Color.white, radius: 1)
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-                                
-//                                Image(systemName: "circle")
-//                                    .resizable()
-//                                    .scaledToFit()
-//                                    .frame(width: 157, height: 157)
-//                                    .foregroundColor(Color.purple)
-//                                    .opacity(0.08)
-////                                    .rotationEffect(.degrees(-10))
-//                                    .glow(color: Color.purple, radius: 1)
-//                                    .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
-//
-//                                Image(systemName: "circle.fill")
-//                                    .resizable()
-//                                    .scaledToFit()
-//                                    .frame(width: 140, height: 140)
-//                                    .foregroundColor(Color.white)
-//                                    .opacity(0.05)
-////                                    .rotationEffect(.degrees(-10))
-//                                    .glow(color: Color.white, radius: 1)
-//                                    .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-//
-//                                Image("planet_6")
-//                                    .resizable()
-//                                    .scaledToFit()
-//                                    .frame(width: 150, height: 150)
-//                                    .opacity(0.5)
-//
-                             
+       
                             }
                         })
                         
@@ -245,17 +217,45 @@ struct RR58: View {
                             label: {
                                 
                                 ZStack {
-                                    Text("me!")
-                                        .fontWeight(.regular)
-                                        .frame(width: 100, height: 30)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 25))
-                                        .background(Color.green)
-                                        .cornerRadius(15)
-                                        .glow(color: Color.white, radius: 1)
-                                        .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-                                        .opacity(0.8)
                                     
+                                    
+                                        Text("set my \natmosphere \ncolor")
+                                        .font(.system(size: 21))
+                                        .foregroundColor(Color.white)
+                                        .fontWeight(.regular)
+                                        .multilineTextAlignment(.center)
+                                        .glow(color: ColorManager .purple3, radius: 2)
+                                        .opacity(0.5)
+
+                                        ZStack {
+                                            Image(systemName: "circle")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 157, height: 157)
+                                                .foregroundColor(Color.purple)
+                                                .opacity(0.08)
+//                                                .glow(color: Color.white, radius: 15)
+//                                                .shadow(color: Color.white, radius: 10, x: -10, y: 0)
+                                            
+                                            Image(systemName: "circle.fill")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 140, height: 140)
+                                                .foregroundColor(Color.white)
+                                                .opacity(0.05)
+                                                .glow(color: Color.white, radius: 1)
+                                                .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                                            
+                                            Image("planet_6")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 150, height: 150)
+                                                .opacity(0.5)
+                                        
+                                        
+                                        
+                                        
+                                    }
                                 }
                             }
                         )}
@@ -392,7 +392,7 @@ struct RR58: View {
                 VStack {
 
                     Spacer ()
-                        .frame(height: 150)
+                        .frame(height: 70)
 
                     ZStack {
                         
@@ -403,9 +403,9 @@ struct RR58: View {
                                 HStack {
                                
                                     ZStack {
-                                        Text("Wish friend luck                Congrats!!!    ")
+                                        Text("  say good luck                  say Congrats!!!    ")
                                             .fontWeight(.regular)
-                                            .frame(width: 350, height: 35)
+                                            .frame(width: 370, height: 35)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                             .font(.system(size: 20))
                                             .background(Color.purple)
@@ -469,9 +469,9 @@ struct RR58: View {
                                 
                                 
                                 ZStack {
-                                    Text("Holding Emotions")
+                                    Text("Receiving CareHearts")
                                         .fontWeight(.regular)
-                                        .frame(width: 250, height: 35)
+                                        .frame(width: 300, height: 35)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 25))
                                         .background(ColorManager .pmbc_blue)
