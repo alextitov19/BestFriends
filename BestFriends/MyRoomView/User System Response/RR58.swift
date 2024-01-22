@@ -101,6 +101,19 @@ struct RR58: View {
                         NavigationLink(destination: RRLoveTarts3(user: user, friend: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres), label: {
                             ZStack {
                                 VStack {
+                                    Text("my")
+                                        .font(.system(size: 17))
+                                        .italic()
+                                        .foregroundColor(Color.white)
+                                        .fontWeight(.regular)
+                                        .rotationEffect(.degrees(-10))
+                                        .multilineTextAlignment(.center)
+                                        .glow(color: ColorManager .purple3, radius: 2)
+                                        .opacity(0.3)
+                                    
+                                    Spacer ()
+                                        .frame(height: 5)
+                                    
                                     Text("LoveTarts")
                                         .font(.system(size: 21))
                                         .foregroundColor(Color.white)
@@ -149,8 +162,9 @@ struct RR58: View {
                             ZStack {
                                 VStack {
                                     
-                                    Text("send")
-                                        .font(.system(size: 21))
+                                    Text("  sending")
+                                        .font(.system(size: 17))
+                                        .italic()
                                         .foregroundColor(Color.white)
                                         .fontWeight(.regular)
                                         .rotationEffect(.degrees(10))
@@ -158,9 +172,11 @@ struct RR58: View {
                                         .glow(color: ColorManager .purple3, radius: 2)
                                         .opacity(0.3)
                                     
+                                    Spacer ()
+                                        .frame(height: 4)
                                     
                                     Text("CareHearts")
-                                        .font(.system(size: 21))
+                                        .font(.system(size: 20))
                                         .foregroundColor(Color.white)
                                         .fontWeight(.regular)
                                         .rotationEffect(.degrees(10))
@@ -171,7 +187,7 @@ struct RR58: View {
                                     
                                     
                                     Spacer ()
-                                        .frame(height: 30)
+                                        .frame(height: 20)
                                     
                                 }
                                 
@@ -217,15 +233,24 @@ struct RR58: View {
                             label: {
                                 
                                 ZStack {
+                                    VStack {
                                     
-                                    
-                                        Text("set my \natmosphere \ncolor")
+                                    Text("set my \natmosphere \n'color'")
                                         .font(.system(size: 21))
                                         .foregroundColor(Color.white)
                                         .fontWeight(.regular)
                                         .multilineTextAlignment(.center)
                                         .glow(color: ColorManager .purple3, radius: 2)
                                         .opacity(0.6)
+                                    
+                                    Text("(so my friends \ncan see)")
+                                        .font(.system(size: 12))
+                                        .italic()
+                                        .foregroundColor(Color.white)
+                                        .fontWeight(.light)
+                                        .opacity(0.99)
+                                    
+                                }
 
                                         ZStack {
                                             Image(systemName: "circle")

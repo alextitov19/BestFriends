@@ -79,8 +79,8 @@ struct RRPoemContest: View {
                         Spacer()
                             .frame(height: 20)
                         
-                        Text("Submit you finest")
-                            .font(.system(size: 35))
+                        Text("Submit you heartfelt")
+                            .font(.system(size: 30))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -114,7 +114,7 @@ struct RRPoemContest: View {
                                 .frame(height: 20)
                             
                             
-                            Text("(no comments allowed on your poems)")
+                            Text("(no comments allowed on your poems - just good vibes)")
                                 .font(.system(size: 20))
                                 .italic()
                                 .foregroundColor(Color.white)
@@ -126,8 +126,9 @@ struct RRPoemContest: View {
                             
                             VStack {
                                 
-                                Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
-                                    
+                                NavigationLink(
+                                    destination: EmptyView(),
+                                    label: {
                                     Text("Contest details to come")
                                         .fontWeight(.thin)
                                         .frame(width: 270, height: 40)
@@ -138,7 +139,7 @@ struct RRPoemContest: View {
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     
                                 }
-                            }
+                            )}
                             
                             Spacer()
                                 .frame(height: 30)

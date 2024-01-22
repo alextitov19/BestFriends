@@ -964,13 +964,13 @@
 				CF7A55502B55CEAC0068F249 /* RRLoveTarts3.swift */,
 				CF7A55532B55CEAD0068F249 /* RRMissYou.swift */,
 				CF7A55552B55CEAD0068F249 /* RRMotivationCH.swift */,
-				CF7A55582B55CEAD0068F249 /* RRPoemContest.swift */,
 				CF7A555A2B55CEAD0068F249 /* RRWantToTalk.swift */,
 				CF7A55572B55CEAD0068F249 /* RRWhyCHs.swift */,
 				CF7A556F2B5739C20068F249 /* RRNew.swift */,
 				CF7A55712B588AD50068F249 /* RRBeCloser.swift */,
 				CF7A55732B5921E50068F249 /* RRLoveTarts.swift */,
 				CF7A55792B5B96770068F249 /* RRGuysTexting.swift */,
+				CF7A55582B55CEAD0068F249 /* RRPoemContest.swift */,
 			);
 			path = RR;
 			sourceTree = "<group>";
@@ -3070,7 +3070,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 16;
+				CURRENT_PROJECT_VERSION = 17;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -3102,7 +3102,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 16;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;
