@@ -51,10 +51,10 @@ struct SaySomethingNice5: View {
 //                    .blendMode(.screen)
 //                    .opacity(0.0)
                 
-                AdPlayerView(name: "sendHearts6")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .opacity(0.6)
+//                AdPlayerView(name: "sendHearts6")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.6)
                 
                 AdPlayerView(name: "dramaLights")
                     .opacity(0.5)
