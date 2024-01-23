@@ -644,7 +644,9 @@ struct RRLoveTarts3: View {
 //                    })
                 }
             }
-         
+        
+        Spacer()
+            .frame(height: 10)
             
             ZStack {
                 
