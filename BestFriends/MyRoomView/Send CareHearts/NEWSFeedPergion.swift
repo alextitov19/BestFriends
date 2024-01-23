@@ -37,16 +37,19 @@ struct NEWSFeedPergion: View {
         ZStack {
             
             if shareTapped {
+                
+                ColorManager.purple4
+                    .ignoresSafeArea()
+                    .onAppear()
          
                 AdPlayerView(name: "dramaLights")
                     .opacity(0.5)
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
-//                AdPlayerView(name: "InnerStellar")
-//                              .ignoresSafeArea()
-//                              .blendMode(.screen)
-//                              .opacity(0.0) 
+                AdPlayerView(name: "missingYou3")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
                 
             } else {
                 
