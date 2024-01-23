@@ -88,7 +88,7 @@ struct RR59: View {
                                 .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                                 .opacity(0.25)
     
-                            Text("when friends aren't around,")
+                            Text("When friends aren't around,")
                                 .font(.system(size: 17))
                                 .fontWeight(.regular)
                                 .multilineTextAlignment(.center)
