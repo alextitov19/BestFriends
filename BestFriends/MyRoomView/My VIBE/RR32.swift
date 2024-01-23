@@ -347,8 +347,8 @@ struct RR32: View {
                                 Spacer ()
                                     .frame(height: 30)
                                 
-                                Text("Set your planet's atmosphere COLOR")
-                                    .font(.system(size: 20))
+                                Text("Your planet's atmosphere 'Color'")
+                                    .font(.system(size: 17))
                                     .fontWeight(.bold)
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.white)
@@ -357,15 +357,15 @@ struct RR32: View {
                                 
                                 
                                 
-                                Text("to matche your 'VIBE' today")
-                                    .font(.system(size: 20))
+                                Text("will match today's 'Vibe'")
+                                    .font(.system(size: 17))
                                     .fontWeight(.bold)
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.white)
                                     .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                                     .opacity(0.35)
            
-                                Text("(Alert friends)")
+                                Text("(tap friends to set 'color')")
                                     .font(.system(size: 15))
                                     .italic()
                                     .fontWeight(.light)
