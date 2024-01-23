@@ -549,35 +549,35 @@ struct RRLoveTarts3: View {
 
 
                 //                        ********************** Missing You ********************
-                NavigationLink(
-                    destination:  HugPushNotification(user: user, friends: friends),
-                    label: {
-                        ZStack {
-                            Image(systemName: "circle.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 60, height: 60)
-                                .foregroundColor(Color.cyan)
-                                .opacity(0.95)
-
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 50, height: 50)
-                                .foregroundColor(Color.purple)
-                                .glow(color: Color.white, radius: 0.3)
-                                .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                .opacity(0.95)
-
-                            Text("send \nhugs")
-                                .font(.system(size: 10))
-                                .fontWeight(.medium)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .opacity(0.99)
-
-                        }
-                    })
+//                NavigationLink(
+//                    destination:  HugPushNotification(user: user, friends: friends),
+//                    label: {
+//                        ZStack {
+//                            Image(systemName: "circle.fill")
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 60, height: 60)
+//                                .foregroundColor(Color.cyan)
+//                                .opacity(0.95)
+//
+//                            Image(systemName: "heart.fill")
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 50, height: 50)
+//                                .foregroundColor(Color.purple)
+//                                .glow(color: Color.white, radius: 0.3)
+//                                .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+//                                .opacity(0.95)
+//
+//                            Text("send \nhugs")
+//                                .font(.system(size: 10))
+//                                .fontWeight(.medium)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(Color.white)
+//                                .opacity(0.99)
+//
+//                        }
+//                    })
 
                 //                ************************* Hugs ****************************
 
@@ -654,14 +654,14 @@ struct RRLoveTarts3: View {
                     TextField("", text: $customMessage)
                         .placeholder(when: customMessage.isEmpty) {
                             HStack {
-                                Text("say something romatic - take a chance, just type...")
+                                Text("say something romatic - take a chance, trust your heart...")
                                     .foregroundColor(Color.white)
                                     .fontWeight(.thin)
                                 Spacer()
                             }
                         }
                         .foregroundColor(.white)
-                        .font(.system(size: 13))
+                        .font(.system(size: 11))
                         .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                         .submitLabel(.done)
                         .onReceive(Just(customMessage)) { _ in limitText(65) }
