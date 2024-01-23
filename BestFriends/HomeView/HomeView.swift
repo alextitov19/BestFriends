@@ -111,8 +111,9 @@ struct HomeView: View {
                                     .scaledToFit()
                                     .frame(width: 30, height: 30)
                                     .foregroundColor(Color.purple)
-                                //                                    .blinking(duration: 2.0)
-                                //                                    .glow(color: ColorManager.purple4, radius: 3)
+                                    .shadow(color: Color.purple, radius: 3, x: -2, y: -2)
+                                    .shadow(color: Color.purple, radius: 7, x: -2, y: -2)
+            
                                     .opacity(0.5)
                                     .onTapGesture {
                                         print("Clicked notification bell")
@@ -171,6 +172,9 @@ struct HomeView: View {
                                         .foregroundColor(ColorManager .purple5)
                                         .glow(color: Color.purple, radius: 2)
                                         .opacity(0.9)
+//                                        .shadow(color: Color.purple, radius: 2, x: -2, y: -2)
+//                                        .shadow(color: Color.purple, radius: 7, x: -2, y: -2)
+                                        
                                 })
                             
                         }
