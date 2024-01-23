@@ -51,9 +51,9 @@ struct NEWSFeedPergion: View {
             } else {
                 
                 
-                ColorManager .purple3
-                    .opacity(0.4)
+                ColorManager.purple4
                     .ignoresSafeArea()
+                    .onAppear()
                 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()

@@ -56,6 +56,10 @@ struct SaySomethingNice5: View {
 //                    .blendMode(.screen)
 //                    .opacity(0.6)
                 
+                ColorManager.purple4
+                    .ignoresSafeArea()
+                    .onAppear()
+                
                 AdPlayerView(name: "dramaLights")
                     .opacity(0.5)
                     .ignoresSafeArea()

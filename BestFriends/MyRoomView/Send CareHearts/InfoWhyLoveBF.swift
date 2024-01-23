@@ -91,10 +91,13 @@ struct InfoWhyLoveBF: View {
             
                   if shareTapped {
                       
-                      Color.black
-                        .opacity(0.9)
-                        .ignoresSafeArea()
+//                      Color.black
+//                        .opacity(0.9)
+//                        .ignoresSafeArea()
 
+                      ColorManager.purple4
+                          .ignoresSafeArea()
+                          .onAppear()
 
                       AdPlayerView(name: "dramaLights")
                           .opacity(0.5)
