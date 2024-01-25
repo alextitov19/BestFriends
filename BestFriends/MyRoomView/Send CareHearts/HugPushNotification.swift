@@ -64,7 +64,7 @@ struct HugPushNotification: View {
             } else {
                 
                 
-                ColorManager .grey4
+                ColorManager .grey3
                     .opacity(0.9)
                     .ignoresSafeArea()
                 
@@ -74,10 +74,10 @@ struct HugPushNotification: View {
                     .opacity(0.5)
       
                 
-//                AdPlayerView(name: "HugTikTok")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//                    .opacity(0.5)
+                AdPlayerView(name: "grayGrass2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.5)
                 
             }
             
@@ -130,32 +130,37 @@ struct HugPushNotification: View {
                     Spacer()
                         .frame(height: 80)
                     
-                    HStack {
-                        ZStack {
-                            
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .foregroundColor(Color.purple)
-                                .frame(width: 150, height: 110)
-                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                                .opacity(0.95)
-                            
-                            NavigationLink(
-                                destination:  PhotoPopView(user: user, friends: friends),
-                                label: {
-                                    
-                                    Image("IconPhotoNew")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 70, height: 70)
-                                        .foregroundColor(Color.purple)
-                                        .glow(color: Color.white, radius: 0.3)
-                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                        .opacity(0.95)
-                                    
-                                })
-                            
-                        }
+                 
+                        
+                        
+                    ZStack {
+                        
+                        
+                        
+                        
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .foregroundColor(Color.purple)
+                            .frame(width: 150, height: 110)
+                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                            .opacity(0.5)
+                        
+                        NavigationLink(
+                            destination:  PhotoPopView(user: user, friends: friends),
+                            label: {
+                                
+                                Image("IconPhotoNew")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 70, height: 70)
+                                    .foregroundColor(Color.purple)
+                                //                                        .glow(color: Color.white, radius: 0.3)
+//                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                    .opacity(0.7)
+                                
+                            })
+                        
+                    }
                         
                         
                         Spacer ()
@@ -174,7 +179,7 @@ struct HugPushNotification: View {
                         
                         
                     }
-                }
+                
                 
                 
                 
