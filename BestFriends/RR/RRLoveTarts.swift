@@ -212,7 +212,7 @@ struct RRLoveTarts: View {
                         
                         
                         NavigationLink(
-                            destination:  CH4(user: user, friend: user, friends: friends, groups: groups),
+                            destination:  HugPushNotification(user: user, friends: friends),
                             label: {
                                 ZStack {
                                     
@@ -232,7 +232,7 @@ struct RRLoveTarts: View {
                                         .shadow(color: .white, radius: 1, x: 3, y: -0.5)
                                         .opacity(0.95)
                                     
-                                    Text("send \nsong")
+                                    Text("send \nhugs")
                                         .font(.system(size: 10))
                                         .fontWeight(.medium)
                                         .multilineTextAlignment(.center)
@@ -276,7 +276,7 @@ struct RRLoveTarts: View {
 //                        
                         
                         NavigationLink(
-                            destination:  RRWantToTalk(user: user, friend: user, friends: friends, groups: groups),
+                            destination:  SendKisses(user: user, friends: friends),
                             label: {
                                 ZStack {
                                     
@@ -296,7 +296,7 @@ struct RRLoveTarts: View {
                                         .shadow(color: .white, radius: 1, x: 3, y: -0.5)
                                         .opacity(0.95)
                                     
-                                    Text("wanna \ntalk?")
+                                    Text("blowing \nkisses")
                                         .font(.system(size: 10))
                                         .fontWeight(.medium)
                                         .multilineTextAlignment(.center)
@@ -351,36 +351,36 @@ struct RRLoveTarts: View {
                 HStack {
             
                         
-                        NavigationLink(
-                            destination:  SendKisses(user: user, friends: friends),
-                            label: {
-                                ZStack {
-                                    
-                                    Image(systemName: "circle.fill")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 60, height: 60)
-                                        .foregroundColor(Color.cyan)
-                                        .opacity(0.95)
-                                    
-                                    Image(systemName: "heart.fill")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 50, height: 50)
-                                        .foregroundColor(Color.purple)
-                                        .glow(color: Color.white, radius: 0.3)
-                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                        .opacity(0.95)
-                                    
-                                    Text("blowing \nkisses")
-                                        .font(.system(size: 10))
-                                        .fontWeight(.medium)
-                                        .multilineTextAlignment(.center)
-                                        .foregroundColor(Color.white)
-                                        .opacity(0.99)
-                                    
-                                }
-                            })
+//                        NavigationLink(
+//                            destination:  SendKisses(user: user, friends: friends),
+//                            label: {
+//                                ZStack {
+//                                    
+//                                    Image(systemName: "circle.fill")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 60, height: 60)
+//                                        .foregroundColor(Color.cyan)
+//                                        .opacity(0.95)
+//                                    
+//                                    Image(systemName: "heart.fill")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 50, height: 50)
+//                                        .foregroundColor(Color.purple)
+//                                        .glow(color: Color.white, radius: 0.3)
+//                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+//                                        .opacity(0.95)
+//                                    
+//                                    Text("blowing \nkisses")
+//                                        .font(.system(size: 10))
+//                                        .fontWeight(.medium)
+//                                        .multilineTextAlignment(.center)
+//                                        .foregroundColor(Color.white)
+//                                        .opacity(0.99)
+//                                    
+//                                }
+//                            })
                         
                         
                         
@@ -423,11 +423,11 @@ struct RRLoveTarts: View {
                         
                         
                         
-                        
+                    
                         
                         //                        ********************** Missing You ********************
                         NavigationLink(
-                            destination:  HugPushNotification(user: user, friends: friends),
+                            destination:  CH4(user: user, friend: user, friends: friends, groups: groups),
                             label: {
                                 ZStack {
                                     Image(systemName: "circle.fill")
@@ -446,7 +446,7 @@ struct RRLoveTarts: View {
                                         .shadow(color: .white, radius: 1, x: 3, y: -0.5)
                                         .opacity(0.95)
                                     
-                                    Text("send \nhugs")
+                                    Text("send a \nsong")
                                         .font(.system(size: 10))
                                         .fontWeight(.medium)
                                         .multilineTextAlignment(.center)
@@ -459,7 +459,7 @@ struct RRLoveTarts: View {
                         //                ************************* Hugs ****************************
                         
                         NavigationLink(
-                            destination: NEWSFeedPergion(user: user, friends: friends),
+                            destination: RRWantToTalk(user: user, friend: user, friends: friends, groups: groups),
                             label: {
                                 ZStack {
                                     Image(systemName: "circle.fill")
@@ -478,7 +478,7 @@ struct RRLoveTarts: View {
                                         .shadow(color: .white, radius: 1, x: 3, y: -0.5)
                                         .opacity(0.95)
                                     
-                                    Text("missing \nyou")
+                                    Text("wanna \ntalk")
                                         .font(.system(size: 10))
                                         .fontWeight(.medium)
                                         .multilineTextAlignment(.center)

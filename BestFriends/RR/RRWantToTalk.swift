@@ -109,7 +109,7 @@ struct RRWantToTalk: View {
 
                       
                       ColorManager .darkGrey
-                        .opacity(0.9)
+                        .opacity(0.7)
                         .ignoresSafeArea()
                       
                       AdPlayerView(name: "sky2")
@@ -117,10 +117,10 @@ struct RRWantToTalk: View {
                           .blendMode(.screen)
                           .opacity(0.5)
              
-                      AdPlayerView(name: "Sunflowers2")
+                      AdPlayerView(name: "CHsBackground")
                           .ignoresSafeArea()
                           .blendMode(.screen)
-                          .opacity(0.7)
+                          .opacity(0.99)
             }
             
 
@@ -147,7 +147,7 @@ struct RRWantToTalk: View {
                                 .foregroundColor(Color.purple)
                                 .frame(width: 240, height: 170)
                                 .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                                .opacity(0.4)
+                                .opacity(0.6)
                             
                             VStack {
                                 
@@ -197,7 +197,7 @@ struct RRWantToTalk: View {
                                 .frame(width: 350, height: 200)
                                 .shadow(color: Color.white, radius: 3, x: 3, y: 3)
                                 .rotationEffect(.degrees(-7))
-                                .opacity(0.9)
+                                .opacity(0.7)
 //                                .blinking(duration: 5.0)
 
                             VStack {
