@@ -117,7 +117,7 @@ struct RRWantToTalk: View {
                           .blendMode(.screen)
                           .opacity(0.5)
              
-                      AdPlayerView(name: "sadGirl2")
+                      AdPlayerView(name: "Sunflowers2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
                           .opacity(0.7)

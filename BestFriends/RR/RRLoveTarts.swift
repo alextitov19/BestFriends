@@ -131,7 +131,7 @@ struct RRLoveTarts: View {
                     .blendMode(.screen)
                     .opacity(0.9)
                 
-                AdPlayerView(name: "blowingkissesVid")
+                AdPlayerView(name: "CHsBackground3")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.99)
