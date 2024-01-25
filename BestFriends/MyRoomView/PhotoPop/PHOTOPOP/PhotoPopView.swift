@@ -44,7 +44,7 @@ struct PhotoPopView: View {
                 .opacity(0.99)
             
             
-            AdPlayerView(name: "thumbsUp")
+            AdPlayerView(name: "photopopWhite2")
                 .ignoresSafeArea()
                 .onAppear()
                 .scaledToFill()
