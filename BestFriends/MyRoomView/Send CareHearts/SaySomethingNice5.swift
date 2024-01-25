@@ -68,7 +68,7 @@ struct SaySomethingNice5: View {
             } else {
                 
                 
-                ColorManager .purple3
+                ColorManager .purple2
                     .opacity(0.4)
                     .ignoresSafeArea()
                 
@@ -156,7 +156,7 @@ struct SaySomethingNice5: View {
                                     .foregroundColor(Color.purple)
                                     .frame(width: 150, height: 110)
                                     .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                                    .opacity(0.99)
+                                    .opacity(0.7)
                                 
                                 NavigationLink(
                                     destination:  PhotoPopView(user: user, friends: friends),
@@ -167,9 +167,9 @@ struct SaySomethingNice5: View {
                                             .scaledToFit()
                                             .frame(width: 70, height: 70)
                                             .foregroundColor(Color.purple)
-                                            .glow(color: Color.white, radius: 0.3)
-                                            .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                            .opacity(0.95)
+//                                            .glow(color: Color.white, radius: 0.3)
+//                                            .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                            .opacity(0.7)
                                         
                                     })
                              
