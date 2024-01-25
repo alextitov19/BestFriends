@@ -220,9 +220,9 @@
 		CF3163C92B620C6200A4D4B0 /* CHsBackground3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF3163C82B620C6200A4D4B0 /* CHsBackground3.mp4 */; };
 		CF3163CD2B620EBF00A4D4B0 /* Sunflowers2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF3163CC2B620EBF00A4D4B0 /* Sunflowers2.mp4 */; };
 		CF3163CF2B623DFE00A4D4B0 /* CHsBackground.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF3163CE2B623DFE00A4D4B0 /* CHsBackground.mp4 */; };
-		CF3163D32B6240AD00A4D4B0 /* pinkkiss2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF3163D22B6240AD00A4D4B0 /* pinkkiss2.mp4 */; };
 		CF3163D72B62427000A4D4B0 /* kissesYellow2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF3163D62B62427000A4D4B0 /* kissesYellow2.mp4 */; };
 		CF3163DB2B62453200A4D4B0 /* sendSong2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF3163DA2B62453200A4D4B0 /* sendSong2.mp4 */; };
+		CF3163DF2B624BE400A4D4B0 /* grayDots2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF3163DE2B624BE400A4D4B0 /* grayDots2.mp4 */; };
 		CF3295F7290BAA7C0014F658 /* INFOPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3295F6290BAA7C0014F658 /* INFOPreload.swift */; };
 		CF3295FD290BBD210014F658 /* InfoCoolVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3295FC290BBD210014F658 /* InfoCoolVideo.swift */; };
 		CF37534B28B5D84B003817E3 /* HorizonsPreload1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37534A28B5D84B003817E3 /* HorizonsPreload1.swift */; };
@@ -696,9 +696,9 @@
 		CF3163C82B620C6200A4D4B0 /* CHsBackground3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CHsBackground3.mp4; sourceTree = "<group>"; };
 		CF3163CC2B620EBF00A4D4B0 /* Sunflowers2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sunflowers2.mp4; sourceTree = "<group>"; };
 		CF3163CE2B623DFE00A4D4B0 /* CHsBackground.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CHsBackground.mp4; sourceTree = "<group>"; };
-		CF3163D22B6240AD00A4D4B0 /* pinkkiss2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pinkkiss2.mp4; sourceTree = "<group>"; };
 		CF3163D62B62427000A4D4B0 /* kissesYellow2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = kissesYellow2.mp4; sourceTree = "<group>"; };
 		CF3163DA2B62453200A4D4B0 /* sendSong2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sendSong2.mp4; sourceTree = "<group>"; };
+		CF3163DE2B624BE400A4D4B0 /* grayDots2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = grayDots2.mp4; sourceTree = "<group>"; };
 		CF3295F6290BAA7C0014F658 /* INFOPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOPreload.swift; sourceTree = "<group>"; };
 		CF3295FC290BBD210014F658 /* InfoCoolVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCoolVideo.swift; sourceTree = "<group>"; };
 		CF37534A28B5D84B003817E3 /* HorizonsPreload1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonsPreload1.swift; sourceTree = "<group>"; };
@@ -1673,8 +1673,8 @@
 			children = (
 				CFB6690A2B4283FB00E9C237 /* offPlanet1.mp4 */,
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
+				CF3163DE2B624BE400A4D4B0 /* grayDots2.mp4 */,
 				CF3163DA2B62453200A4D4B0 /* sendSong2.mp4 */,
-				CF3163D22B6240AD00A4D4B0 /* pinkkiss2.mp4 */,
 				CF3163D62B62427000A4D4B0 /* kissesYellow2.mp4 */,
 				CF3163CC2B620EBF00A4D4B0 /* Sunflowers2.mp4 */,
 				CF3163CE2B623DFE00A4D4B0 /* CHsBackground.mp4 */,
@@ -2385,7 +2385,6 @@
 				CF3163CD2B620EBF00A4D4B0 /* Sunflowers2.mp4 in Resources */,
 				CF1A338C2B0EE1BA00D24B66 /* Fireworks1.mp4 in Resources */,
 				CF2D30A72B1C0F2B008D9C38 /* girlFriends2.mp4 in Resources */,
-				CF3163D32B6240AD00A4D4B0 /* pinkkiss2.mp4 in Resources */,
 				CF51BF832AE2F693007A3DBF /* background_5.mp4 in Resources */,
 				CFB6691F2B473D1500E9C237 /* gotSong3.mp4 in Resources */,
 				CF50D6B52B242A6200DEF423 /* missingYou3.mp4 in Resources */,
@@ -2442,6 +2441,7 @@
 				CF3DB37628DA85BA00BF9CCD /* Meena1.m4a in Resources */,
 				CFB6690F2B4537EF00E9C237 /* BlowingKisses2.mp4 in Resources */,
 				CFB669052B42795200E9C237 /* moonShots.mp4 in Resources */,
+				CF3163DF2B624BE400A4D4B0 /* grayDots2.mp4 in Resources */,
 				CFB6690D2B4531F600E9C237 /* FriendshipMix.mp4 in Resources */,
 				CF7A55382B4BC4F30068F249 /* InnerStellar3.mp4 in Resources */,
 				7ACDB183282825C1009E1CFD /* GoogleService-Info.plist in Resources */,

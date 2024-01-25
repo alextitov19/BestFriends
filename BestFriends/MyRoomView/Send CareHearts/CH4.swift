@@ -116,7 +116,7 @@ struct CH4: View {
                           .blendMode(.screen)
                           .opacity(0.5)
              
-                      AdPlayerView(name: "sadGirl2")
+                      AdPlayerView(name: "grayDots2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
                           .opacity(0.7)
@@ -196,7 +196,7 @@ struct CH4: View {
                                 .frame(width: 350, height: 200)
                                 .shadow(color: Color.white, radius: 3, x: 3, y: 3)
                                 .rotationEffect(.degrees(-7))
-                                .opacity(0.9)
+                                .opacity(0.55)
 //                                .blinking(duration: 5.0)
 
                             VStack {
@@ -239,6 +239,10 @@ struct CH4: View {
                                     .foregroundColor(Color.white)
                                     .rotationEffect(.degrees(-7))
 //                                    .blinking(duration: 5.0)
+                                
+                                
+                                Spacer ()
+                                    .frame(height: 20)
 
                             }
                         }

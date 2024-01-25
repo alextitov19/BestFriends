@@ -114,15 +114,15 @@ struct CH7: View {
 
                
                       
-                      Color.black
-                        .opacity(0.9)
+                      ColorManager .grey2
+                        .opacity(0.6)
                         .ignoresSafeArea()
                       
                       AdPlayerView(name: "sky2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
              
-                      AdPlayerView(name: "sendSong2")
+                      AdPlayerView(name: "grayDots2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
                           .opacity(0.5)
