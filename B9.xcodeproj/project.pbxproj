@@ -218,7 +218,6 @@
 		CF2FD942280BBA1B0036F4BB /* Step3_BreathInviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD941280BBA1B0036F4BB /* Step3_BreathInviteView.swift */; };
 		CF2FD944280CA20F0036F4BB /* ChatBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD943280CA20F0036F4BB /* ChatBackgroundView.swift */; };
 		CF3163C92B620C6200A4D4B0 /* CHsBackground3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF3163C82B620C6200A4D4B0 /* CHsBackground3.mp4 */; };
-		CF3163CD2B620EBF00A4D4B0 /* Sunflowers2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF3163CC2B620EBF00A4D4B0 /* Sunflowers2.mp4 */; };
 		CF3163CF2B623DFE00A4D4B0 /* CHsBackground.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF3163CE2B623DFE00A4D4B0 /* CHsBackground.mp4 */; };
 		CF3163D72B62427000A4D4B0 /* kissesYellow2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF3163D62B62427000A4D4B0 /* kissesYellow2.mp4 */; };
 		CF3163DF2B624BE400A4D4B0 /* grayDots2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF3163DE2B624BE400A4D4B0 /* grayDots2.mp4 */; };
@@ -695,7 +694,6 @@
 		CF2FD941280BBA1B0036F4BB /* Step3_BreathInviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3_BreathInviteView.swift; sourceTree = "<group>"; };
 		CF2FD943280CA20F0036F4BB /* ChatBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBackgroundView.swift; sourceTree = "<group>"; };
 		CF3163C82B620C6200A4D4B0 /* CHsBackground3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CHsBackground3.mp4; sourceTree = "<group>"; };
-		CF3163CC2B620EBF00A4D4B0 /* Sunflowers2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sunflowers2.mp4; sourceTree = "<group>"; };
 		CF3163CE2B623DFE00A4D4B0 /* CHsBackground.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CHsBackground.mp4; sourceTree = "<group>"; };
 		CF3163D62B62427000A4D4B0 /* kissesYellow2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = kissesYellow2.mp4; sourceTree = "<group>"; };
 		CF3163DE2B624BE400A4D4B0 /* grayDots2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = grayDots2.mp4; sourceTree = "<group>"; };
@@ -1679,7 +1677,6 @@
 				CF3163E42B624F8900A4D4B0 /* photopopWhite2.mp4 */,
 				CF3163DE2B624BE400A4D4B0 /* grayDots2.mp4 */,
 				CF3163D62B62427000A4D4B0 /* kissesYellow2.mp4 */,
-				CF3163CC2B620EBF00A4D4B0 /* Sunflowers2.mp4 */,
 				CF3163CE2B623DFE00A4D4B0 /* CHsBackground.mp4 */,
 				CF3163C82B620C6200A4D4B0 /* CHsBackground3.mp4 */,
 				CF7A55772B5A8CA60068F249 /* TaylorSwift2.mp4 */,
@@ -2385,7 +2382,6 @@
 				CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */,
 				CFADFD902AFFA53B0090071A /* sendHearts1.mp4 in Resources */,
 				7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */,
-				CF3163CD2B620EBF00A4D4B0 /* Sunflowers2.mp4 in Resources */,
 				CF1A338C2B0EE1BA00D24B66 /* Fireworks1.mp4 in Resources */,
 				CF2D30A72B1C0F2B008D9C38 /* girlFriends2.mp4 in Resources */,
 				CF51BF832AE2F693007A3DBF /* background_5.mp4 in Resources */,

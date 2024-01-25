@@ -68,8 +68,8 @@ struct SaySomethingNice5: View {
             } else {
                 
                 
-                ColorManager .purple2
-                    .opacity(0.4)
+                ColorManager .purple1
+                    .opacity(0.7)
                     .ignoresSafeArea()
                 
                 AdPlayerView(name: "sky2")
@@ -156,7 +156,7 @@ struct SaySomethingNice5: View {
                                     .foregroundColor(Color.purple)
                                     .frame(width: 150, height: 110)
                                     .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                                    .opacity(0.7)
+                                    .opacity(0.5)
                                 
                                 NavigationLink(
                                     destination:  PhotoPopView(user: user, friends: friends),
@@ -169,7 +169,7 @@ struct SaySomethingNice5: View {
                                             .foregroundColor(Color.purple)
 //                                            .glow(color: Color.white, radius: 0.3)
 //                                            .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                            .opacity(0.7)
+                                            .opacity(0.6)
                                         
                                     })
                              

@@ -53,7 +53,7 @@ struct CH9: View {
             } else {
 
 
-                Color.black
+                ColorManager .grey2
                    .opacity(0.9)
                     .ignoresSafeArea()
                 
@@ -71,7 +71,7 @@ struct CH9: View {
                 AdPlayerView(name: "kissesYellow2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.3)
+                    .opacity(0.4)
                 
                 
                 AdPlayerView(name: "alwaysForever2")
