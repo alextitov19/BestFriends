@@ -269,7 +269,7 @@ struct RRWantToTalk: View {
                                 Spacer()
                             }
                         }
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .font(.system(size: 15))
                         .submitLabel(.done)
                         .onReceive(Just(customMessage)) { _ in limitText(65) }
