@@ -42,7 +42,7 @@ struct VirtualHug: View {
         var body: some View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
-                .frame(width: 90, height: 90)
+                .frame(width: 80, height: 80)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .font(.system(size: 8))
                 .background(color)
@@ -246,7 +246,7 @@ struct VirtualHug: View {
                                     .foregroundColor(Color.purple)
                                     .frame(width: 150, height: 110)
                                     .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                                    .opacity(0.95)
+                                    .opacity(0.9)
                                 
                                 NavigationLink(
                                     destination:  PhotoPopView(user: user, friends: friends),
@@ -257,8 +257,8 @@ struct VirtualHug: View {
                                             .scaledToFit()
                                             .frame(width: 70, height: 70)
                                             .foregroundColor(Color.purple)
-                                            .glow(color: Color.white, radius: 0.3)
-                                            .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+//                                            .glow(color: Color.white, radius: 0.3)
+//                                            .shadow(color: .white, radius: 1, x: 3, y: -0.5)
                                             .opacity(0.95)
                                         
                                     })
