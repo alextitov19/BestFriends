@@ -147,18 +147,18 @@ struct RRWantToTalk: View {
                                 .foregroundColor(Color.purple)
                                 .frame(width: 240, height: 170)
                                 .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                                .opacity(0.6)
+                                .opacity(0.8)
                             
                             VStack {
                                 
                                 Text("Do you want to")
                                     .font(.system(size: 27, weight: .light))
-                                    .foregroundColor(Color.white)
+                                    .foregroundColor(Color .white)
                                     .opacity(0.5)
 //
                                 Text("talk?")
                                     .font(.system(size: 27, weight: .light))
-                                    .foregroundColor(Color.white)
+                                    .foregroundColor(Color .white)
                                     .opacity(0.5)
                                 
                                
@@ -256,7 +256,7 @@ struct RRWantToTalk: View {
                             HStack {
                                 VStack {
                                     Text("Send a comforting message ...")
-                                        .foregroundColor(Color.white)
+                                        .foregroundColor(ColorManager .grey4)
                                         .fontWeight(.thin)
 
                                     
@@ -300,7 +300,7 @@ struct RRWantToTalk: View {
                         Text("(alert friend to check in Chat)")
                             .font(.system(size: 15, weight: .light))
                             .italic()
-                            .foregroundColor(Color.white)
+                            .foregroundColor(ColorManager .grey4)
                         
                         HStack {
                             
