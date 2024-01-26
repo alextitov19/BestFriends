@@ -702,6 +702,7 @@ struct RRLoveTarts3: View {
                     Spacer()
                         .frame(height: 10)
                     
+
                     
                     HStack {
                         
@@ -787,7 +788,7 @@ struct RRLoveTarts3: View {
                     
                     
                     Spacer()
-                        .frame(width: 50)
+                        .frame(height: 20)
                     
                     
                     Button(action: {
@@ -800,23 +801,20 @@ struct RRLoveTarts3: View {
                         Image("iconShare")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 70, height: 70)
+                            .frame(width: 90, height: 90)
                             .rotationEffect(.degrees(20))
                             .foregroundColor(ColorManager .purple5)
                             .glow(color: Color.purple, radius: 2)
                             .opacity(0.6)
                             .blinking(duration: 3.0)
-                            .alert("Yep, the soft breeze carries your LoveTart", isPresented: $showingAlert) {
+                            .alert("You LoveTart is shooting past the stars", isPresented: $showingAlert) {
                                 Button("OK", role: .cancel) { }
                             }
                         
                         
                     })
                     
-                    
-                    
-                    
-                    VStack {
+        VStack {
                    
                         HStack {
                             
