@@ -140,9 +140,9 @@ struct RRMissYou: View {
                                         .resizable()
                                         .scaledToFit()
                                         .frame(width: 70, height: 70)
-                                        .foregroundColor(Color.purple)
-                                        .glow(color: Color.white, radius: 0.3)
-                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+//                                        .foregroundColor(Color.purple)
+//                                        .glow(color: Color.white, radius: 0.3)
+//                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
                                         .opacity(0.95)
                                     
                                 })
@@ -353,7 +353,7 @@ struct RRMissYou: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) is missing you!", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) is missing you, too!", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.

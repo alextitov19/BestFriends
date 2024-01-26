@@ -240,7 +240,7 @@ struct SendHomie: View {
                                     Button("OK", role: .cancel) { }
                                 }
                         })
-                        .confettiCannon(counter: $counter)
+//                        .confettiCannon(counter: $counter)
 
                         
                         VStack {

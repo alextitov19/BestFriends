@@ -114,19 +114,19 @@ struct CH9: View {
 
 
                     Text("Jump up high,")
-                                            .font(.system(size: 20))
+                                            .font(.system(size: 30))
                                             .foregroundColor(ColorManager .grey1)
                                             .fontWeight(.light)
                                             .multilineTextAlignment(.center)
                  
                     Text("you'll see them")
-                                            .font(.system(size: 20))
+                                            .font(.system(size: 30))
                                             .foregroundColor(ColorManager .grey1)
                                             .fontWeight(.light)
                                             .multilineTextAlignment(.center)
                     
                     Text("floating towards you!")
-                                            .font(.system(size: 20))
+                                            .font(.system(size: 30))
                                             .foregroundColor(ColorManager .grey1)
                                             .fontWeight(.light)
                                             .multilineTextAlignment(.center)
@@ -144,7 +144,7 @@ struct CH9: View {
                         Text("(say thanks)")
                                                 .font(.system(size: 15))
                                                 .italic()
-                                                .foregroundColor(ColorManager .grey2)
+                                                .foregroundColor(Color.white)
                                                 .fontWeight(.light)
                                                 .multilineTextAlignment(.center)
                         

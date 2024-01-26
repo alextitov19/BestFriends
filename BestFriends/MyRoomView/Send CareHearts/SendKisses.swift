@@ -148,8 +148,8 @@ struct SendKisses: View {
                                     .scaledToFit()
                                     .frame(width: 70, height: 70)
                                     .foregroundColor(Color.purple)
-                                    .glow(color: Color.white, radius: 0.3)
-                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+//                                    .glow(color: Color.white, radius: 0.3)
+//                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
                                     .opacity(0.95)
                                 
                             })
