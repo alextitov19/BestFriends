@@ -717,114 +717,45 @@ struct RRLoveTarts5: View {
                     }
                 }
                 
-                
-                
-                Text("______________________")
-                    .font(.system(size: 15))
-                    .italic()
-                    .fontWeight(.light)
-                    .foregroundColor(ColorManager .grey1)
-                    .multilineTextAlignment(.center)
-                
-             
-                
-                
-                
-                
-                
-                
-                
-            }
-        }
-            
-            
-        
-        
-        
-            //        Spacer()
-            //            .frame(height: 100)
-            
-            //                **************************************
-            
-            HStack {
-                ZStack{
+  
+                VStack {
                     
-                    VStack {
-                        
-                        Text("  feel your lover's")
-                            .font(.system(size: 17))
-                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                            .rotationEffect(.degrees(10))
-                        //                        .blinking(duration: 3.0)
-                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                            .opacity(0.5)
-                        
-                        Spacer ()
-                            .frame(height: 30)
-                        
-                        Text("Hearbeat")
-                            .font(.system(size: 15))
-                            .italic()
-                            .fontWeight(.regular)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                            .rotationEffect(.degrees(10))
-                        //                        .blinking(duration: 3.0)
-                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                            .opacity(0.6)
-                    }
                     
-                    Spacer ()
-                        .frame(height: 10)
-                    
-                    //
-                    Image(systemName: "heart.fill")
-                        .resizable()
-                        .foregroundColor(ColorManager .purple3)
-                        .frame(width: 140, height: 110)
-                        .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
-                        .rotationEffect(.degrees(10))
-                        .opacity(0.4)
-                    
-                    // ***********************************************
-                    // *********** Audio to the TAP on the Heartbeat *****************
-                    
-                    Button(action: {
-                        counter += 1
-                        shareTapped = true
-                        shareButtonTapped()
-                        sendMessage()
-                    },
-                           label: {
-                        //                        Image("iconShare")
-                        //
-                        Image(systemName: "heart.fill")
-                            .resizable()
-                            .foregroundColor(.purple)
-                            .frame(width: 150, height: 110)
-                            .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                            .opacity(0.25)
-                            .alert("", isPresented: $showingAlert) {
-                                Button("", role: .cancel) { }
+                    HStack {
+                        ZStack{
+                            
+                            VStack {
+                                
+                                Text("  feel your lover's")
+                                    .font(.system(size: 17))
+                                    .italic()
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.white)
+                                    .rotationEffect(.degrees(10))
+                                //                        .blinking(duration: 3.0)
+                                    .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                                    .opacity(0.5)
+                                
+                                Spacer ()
+                                    .frame(height: 30)
+                                
+                                Text("Hearbeat")
+                                    .font(.system(size: 15))
+                                    .italic()
+                                    .fontWeight(.regular)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.white)
+                                    .rotationEffect(.degrees(10))
+                                //                        .blinking(duration: 3.0)
+                                    .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                                    .opacity(0.6)
                             }
-                        
-                        
-                    })
-                    
-                    
-                    
-                    
-                    // *********************************
-                    
-                    VStack {
-                        
-                        Spacer()
-                            .frame(height: 30)
-                        
-                        ZStack {
+                            
+                            Spacer ()
+                                .frame(height: 10)
+                            
+                            //
                             Image(systemName: "heart.fill")
                                 .resizable()
                                 .foregroundColor(ColorManager .purple3)
@@ -833,24 +764,66 @@ struct RRLoveTarts5: View {
                                 .rotationEffect(.degrees(10))
                                 .opacity(0.4)
                             
-                            Text("TAP")
+                            // ***********************************************
+                            // *********** Audio to the TAP on the Heartbeat *****************
                             
-                                .font(.system(size: 25))
-                                .fontWeight(.light)
-                                .foregroundColor(.cyan)
-                                .frame(width: 70, height: 30)
-                                .background(Color.cyan)
-                                .multilineTextAlignment(.center)
-                                .rotationEffect(.degrees(10))
-                                .cornerRadius(5)
-                                .foregroundColor(Color.white)
-                            //                                       .blinking(duration: 3.0)
-                                .opacity(0.6)
-                                .padding()
-                                .onTapGesture {
-                                    showingHeart = false
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                            Button(action: {
+                                counter += 1
+                                shareTapped = true
+                                shareButtonTapped()
+                                sendMessage()
+                            },
+                                   label: {
+                                //                        Image("iconShare")
+                                //
+                                Image(systemName: "heart.fill")
+                                    .resizable()
+                                    .foregroundColor(.purple)
+                                    .frame(width: 150, height: 110)
+                                    .shadow(color: .blue, radius: 65, x: 30, y: 50)
+                                    .opacity(0.25)
+                                    .alert("", isPresented: $showingAlert) {
+                                        Button("", role: .cancel) { }
+                                    }
+                                
+                                
+                            })
+                            
+                            
+                            
+                            
+                            // *********************************
+                            
+                            VStack {
+                                
+                                Spacer()
+                                    .frame(height: 30)
+                                
+                                ZStack {
+                                    Image(systemName: "heart.fill")
+                                        .resizable()
+                                        .foregroundColor(ColorManager .purple3)
+                                        .frame(width: 140, height: 110)
+                                        .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
+                                        .rotationEffect(.degrees(10))
+                                        .opacity(0.4)
+                                    
+                                    Text("TAP")
+                                    
+                                        .font(.system(size: 25))
+                                        .fontWeight(.light)
+                                        .foregroundColor(.cyan)
+                                        .frame(width: 70, height: 30)
+                                        .background(Color.cyan)
+                                        .multilineTextAlignment(.center)
+                                        .rotationEffect(.degrees(10))
+                                        .cornerRadius(5)
+                                        .foregroundColor(Color.white)
+                                    //                                       .blinking(duration: 3.0)
+                                        .opacity(0.6)
+                                        .padding()
+                                        .onTapGesture {
+                                            showingHeart = false
                                             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                                                 AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
                                                     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
@@ -861,16 +834,20 @@ struct RRLoveTarts5: View {
                                                                         AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
                                                                             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                                                                                 AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                                                                                         AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
                                                                                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                                                                                                 AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                                                    AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                                                                                                         AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                                                            
                                                                                                             AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                                                                showingHeart = true
-                                                                                                                
+                                                                                                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                                                                                    
+                                                                                                                    AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                                                                                        showingHeart = true
+                                                                                                                        
+                                                                                                                    }
+                                                                                                                }
                                                                                                             }
                                                                                                         }
                                                                                                     }
@@ -889,59 +866,65 @@ struct RRLoveTarts5: View {
                                                 }
                                             }
                                         }
-                                    }
                                 }
+                                
+                                Spacer()
+                                    .frame(height: 30)
+                            }
                         }
+                        Spacer ()
+                            .frame(width: 40)
+                        
+                        
+                        NavigationLink(
+                            destination: RRBrokenHeart(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                            label: {
+                                
+                                ZStack {
+                                    Text("Dented \nHeart")
+                                        .font(.system(size: 14))
+                                        .foregroundColor(ColorManager .grey4)
+                                        .fontWeight(.bold)
+                                        .rotationEffect(.degrees(-10))
+                                        .opacity(0.99)
+                                        .multilineTextAlignment(.center)
+                                    //                        .blinking(duration: 2.0)
+                                    
+                                    Image(systemName: "heart")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 120, height: 120)
+                                        .foregroundColor(Color.cyan)
+                                        .opacity(0.1)
+                                        .rotationEffect(.degrees(-10))
+                                        .glow(color: Color.purple, radius: 1)
+                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
+                                    
+                                    Image(systemName: "heart.fill")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 110, height: 110)
+                                        .foregroundColor(ColorManager .purple3)
+                                        .opacity(0.1)
+                                    //                                        .rotationEffect(.degrees(10))
+                                        .glow(color: Color.white, radius: 1)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                                }
+                                
+                            })
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(width: 30)
+                        
                     }
+                    
+                    
                 }
-                Spacer ()
-                    .frame(width: 40)
-                
-                
-                NavigationLink(
-                    destination: RRBrokenHeart(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                    label: {
-                        
-                        ZStack {
-                            Text("Dented \nHeart")
-                                .font(.system(size: 14))
-                                .foregroundColor(ColorManager .grey4)
-                                .fontWeight(.bold)
-                                .rotationEffect(.degrees(-10))
-                                .opacity(0.99)
-                                .multilineTextAlignment(.center)
-                            //                        .blinking(duration: 2.0)
-                            
-                            Image(systemName: "heart")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 120, height: 120)
-                                .foregroundColor(Color.cyan)
-                                .opacity(0.1)
-                                .rotationEffect(.degrees(-10))
-                                .glow(color: Color.purple, radius: 1)
-                                .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
-                            
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 110, height: 110)
-                                .foregroundColor(ColorManager .purple3)
-                                .opacity(0.1)
-                            //                                        .rotationEffect(.degrees(10))
-                                .glow(color: Color.white, radius: 1)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-                        }
-                        
-                    })
-                
-                Spacer()
-                    .frame(width: 30)
                 
             }
+        }
+            
+  
    
             Spacer()
                 .frame(height: 70)
