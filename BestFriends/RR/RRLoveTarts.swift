@@ -160,7 +160,7 @@ struct RRLoveTarts: View {
                         
                         Image(systemName: "heart.fill")
                             .resizable()
-                            .foregroundColor(.purple)
+                            .foregroundColor(ColorManager .grey3)
                             .frame(width: 150, height: 110)
                             .shadow(color: .blue, radius: 65, x: 30, y: 50)
                             .opacity(0.5)
@@ -183,7 +183,7 @@ struct RRLoveTarts: View {
                                     .font(.system(size: 20))
                                     .fontWeight(.bold)
                                     .multilineTextAlignment(.center)
-                                    .foregroundColor(ColorManager .grey1)
+                                    .foregroundColor(Color.white)
                                 //                            .blinking(duration: 3.0)
                                     .rotationEffect(.degrees(10))
                                     .opacity(0.5)
@@ -455,56 +455,59 @@ struct RRLoveTarts: View {
                 Spacer ()
                     .frame(height: 10)
                 
-                }
-            }
-        
-        //                **************************************
-        //                **************************************
-            
-            
-            
-            
-            //                **************************************
-            
-            //                **************************************
-      
-        
-        Spacer ()
-            .frame(height: 15)
-        
-            ZStack {
                 
-                VStack {
-                    Spacer()
-                    // TextField for userInput
-                    TextField("", text: $customMessage)
-                        .placeholder(when: customMessage.isEmpty) {
-                            HStack {
-                                Text("send a message if you want ...")
-                                    .foregroundColor(Color.white)
-                                    .fontWeight(.thin)
-                                Spacer()
+                //                **************************************
+                //                **************************************
+                
+                Text("(select friends)")
+                    .font(.system(size: 15))
+                    .italic()
+                    .fontWeight(.light)
+                    .foregroundColor(ColorManager .grey4)
+                    .multilineTextAlignment(.center)
+                
+                ZStack {
+                    
+                    VStack {
+                        Spacer()
+                        // TextField for userInput
+                        TextField("", text: $customMessage)
+                            .placeholder(when: customMessage.isEmpty) {
+                                HStack {
+                                    Text("send a message if you want ...")
+                                        .foregroundColor(ColorManager .grey3)
+                                        .fontWeight(.thin)
+                                    Spacer()
+                                }
                             }
-                        }
-                        .foregroundColor(.white)
-                        .font(.system(size: 15))
-                        .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                        .submitLabel(.done)
-                        .onReceive(Just(customMessage)) { _ in limitText(65) }
-                        .padding(.top, 20)
-                        .padding(.horizontal, 42)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.purple)
-                            //                                                            .background(ColorManager.purple3)
-                                .frame(height: 50)
-                                .padding(.horizontal, 25)
-                        )
-                        .padding(.bottom, 5)
+                            .foregroundColor(.white)
+                            .font(.system(size: 15))
+                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                            .submitLabel(.done)
+                            .onReceive(Just(customMessage)) { _ in limitText(65) }
+                            .padding(.top, 20)
+                            .padding(.horizontal, 42)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.purple)
+                                //                                                            .background(ColorManager.purple3)
+                                    .frame(height: 50)
+                                    .padding(.horizontal, 25)
+                            )
+                            .padding(.bottom, 5)
+                    }
+                }
+                
+                //                **************************************
+                
+                
+                
+                
+                //                **************************************
                 }
             }
-            
-            
+        
+ 
             
             //                **************************************
             
