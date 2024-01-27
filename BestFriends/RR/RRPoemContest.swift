@@ -39,22 +39,89 @@ struct RRPoemContest: View {
         
         ZStack {
             
-            //            Color.black
-            //                .opacity(0.9)
-            //                .ignoresSafeArea()
-            //
-            //            AdPlayerView(name: "sky2")
-            //                .ignoresSafeArea()
-            //                .blendMode(.screen)
+                        Color.black
+                            .opacity(0.9)
+                            .ignoresSafeArea()
             
-            Image("BuiltByTeens 1")
-                .resizable()
-                .ignoresSafeArea()
-                .onAppear()
+                        AdPlayerView(name: "sky2")
+                            .ignoresSafeArea()
+                            .blendMode(.screen)
             
-            
-            
+         
             VStack {
+                VStack {
+                    
+                    HStack {
+                        
+                        ZStack {
+                            
+                            Image(systemName: "heart.fill")
+                                .rotationEffect(.degrees(-10))
+                            
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .foregroundColor(ColorManager .grey2)
+                                .frame(width: 130, height: 100)
+                                .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
+                                .rotationEffect(.degrees(-10))
+                                .opacity(0.3)
+                            
+                            Link(destination: URL(string: "https://socialtechlabs.com/a-kisses-journey/")!) {
+                                
+                                VStack {
+                                    Text("a kisses \n\njourney")
+                                        .font(.system(size: 20))
+                                        .fontWeight(.light)
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(ColorManager .grey1)
+                                        .rotationEffect(.degrees(-10))
+                                        .opacity(0.99)
+                                    
+                                    
+                                    
+                                }
+                            }
+                        }
+                        
+                        
+                        
+                        Spacer()
+                            .frame(width: 50)
+                        
+                        
+                        ZStack {
+                            
+                            Image(systemName: "heart.fill")
+                                .rotationEffect(.degrees(10))
+                            
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .foregroundColor(ColorManager .grey2)
+                                .frame(width: 130, height: 100)
+                                .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
+                                .rotationEffect(.degrees(10))
+                                .opacity(0.3)
+                            
+                            
+                            
+                            Link(destination: URL(string: "https://socialtechlabs.com/white-linen-dress/")!) {
+                                
+                                VStack {
+                                    Text("white linen \n\ndress")
+                                        .font(.system(size: 20))
+                                        .fontWeight(.light)
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(ColorManager .grey1)
+                                        .rotationEffect(.degrees(10))
+                                        .opacity(0.99)
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
                 
                 ZStack {
                     
@@ -99,28 +166,7 @@ struct RRPoemContest: View {
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .opacity(0.99)
-                            
-                            Spacer()
-                                .frame(height: 7)
-                            
-                            Text("for everyone to enjoy")
-                                .font(.system(size: 37))
-                                .foregroundColor(Color.white)
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .opacity(0.90)
-                            
-                            Spacer()
-                                .frame(height: 20)
-                            
-                            
-                            Text("(no comments allowed on your poems - just good vibes)")
-                                .font(.system(size: 20))
-                                .italic()
-                                .foregroundColor(Color.white)
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .opacity(0.7)
+                        
                             
                             
                             
@@ -164,6 +210,8 @@ struct RRPoemContest: View {
                         }
                     }
                 }
+            
+          
                 
                 Spacer()
                     .frame(height: 40)
@@ -171,7 +219,7 @@ struct RRPoemContest: View {
             }
         }
     }
-}
+
 
 
         

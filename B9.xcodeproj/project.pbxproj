@@ -225,6 +225,7 @@
 		CF3163E92B62510000A4D4B0 /* grayGrass2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF3163E82B62510000A4D4B0 /* grayGrass2.mp4 */; };
 		CF3163ED2B64A3A200A4D4B0 /* RRLoveTarts5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3163EC2B64A3A200A4D4B0 /* RRLoveTarts5.swift */; };
 		CF3163EF2B64BC5B00A4D4B0 /* RRLoveTarts7.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3163EE2B64BC5B00A4D4B0 /* RRLoveTarts7.swift */; };
+		CF3163F12B652F8300A4D4B0 /* RRDentedHeart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3163F02B652F8300A4D4B0 /* RRDentedHeart.swift */; };
 		CF3295F7290BAA7C0014F658 /* INFOPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3295F6290BAA7C0014F658 /* INFOPreload.swift */; };
 		CF3295FD290BBD210014F658 /* InfoCoolVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3295FC290BBD210014F658 /* InfoCoolVideo.swift */; };
 		CF37534B28B5D84B003817E3 /* HorizonsPreload1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37534A28B5D84B003817E3 /* HorizonsPreload1.swift */; };
@@ -703,6 +704,7 @@
 		CF3163E82B62510000A4D4B0 /* grayGrass2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = grayGrass2.mp4; sourceTree = "<group>"; };
 		CF3163EC2B64A3A200A4D4B0 /* RRLoveTarts5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRLoveTarts5.swift; sourceTree = "<group>"; };
 		CF3163EE2B64BC5B00A4D4B0 /* RRLoveTarts7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRLoveTarts7.swift; sourceTree = "<group>"; };
+		CF3163F02B652F8300A4D4B0 /* RRDentedHeart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRDentedHeart.swift; sourceTree = "<group>"; };
 		CF3295F6290BAA7C0014F658 /* INFOPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOPreload.swift; sourceTree = "<group>"; };
 		CF3295FC290BBD210014F658 /* InfoCoolVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCoolVideo.swift; sourceTree = "<group>"; };
 		CF37534A28B5D84B003817E3 /* HorizonsPreload1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonsPreload1.swift; sourceTree = "<group>"; };
@@ -989,6 +991,7 @@
 				CF7A55502B55CEAC0068F249 /* RRLoveTarts3.swift */,
 				CF3163EC2B64A3A200A4D4B0 /* RRLoveTarts5.swift */,
 				CF3163EE2B64BC5B00A4D4B0 /* RRLoveTarts7.swift */,
+				CF3163F02B652F8300A4D4B0 /* RRDentedHeart.swift */,
 			);
 			path = RR;
 			sourceTree = "<group>";
@@ -2739,6 +2742,7 @@
 				CFD046952835925F00BF0B02 /* FriendValutTrackMoods.swift in Sources */,
 				7AD8DF0927F6948A00D9F0E1 /* AdPlayerView.swift in Sources */,
 				CF7A55692B55CEAD0068F249 /* RRDidGood.swift in Sources */,
+				CF3163F12B652F8300A4D4B0 /* RRDentedHeart.swift in Sources */,
 				CF381A5228283D5C00B3719E /* IntroFriendGpFight.swift in Sources */,
 				2DFB03292A5D30AC00669948 /* CH8.swift in Sources */,
 				D1BD9FD42ACBB4E100196448 /* RR32.swift in Sources */,
