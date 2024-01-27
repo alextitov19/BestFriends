@@ -429,8 +429,8 @@ struct RRLoveTarts5: View {
                             .foregroundColor(ColorManager .purple5)
                             .glow(color: Color.purple, radius: 2)
                             .opacity(0.6)
-                            .blinking(duration: 3.0)
-                            .alert("Your message has been sent", isPresented: $showingAlert) {
+//                            .blinking(duration: 3.0)
+                            .alert("nice", isPresented: $showingAlert) {
                                 Button("OK", role: .cancel) { }
                             }
                         
@@ -679,14 +679,14 @@ struct RRLoveTarts5: View {
                             
                             VStack {
                                 
-                                Spacer()
-                                    .frame(height: 50)
+//                                Spacer()
+//                                    .frame(height: 20)
                                 
                                 ZStack {
                                     Image(systemName: "heart.fill")
                                         .resizable()
                                         .foregroundColor(ColorManager .purple3)
-                                        .frame(width: 50, height: 50)
+                                        .frame(width: 100, height: 80)
                                         .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
                                         .rotationEffect(.degrees(10))
                                         .opacity(0.4)
@@ -694,11 +694,11 @@ struct RRLoveTarts5: View {
                                  
                                     
                                     Text("TAP")
-                                        .font(.system(size: 25))
+                                        .font(.system(size: 30))
                                         .fontWeight(.light)
                                         .multilineTextAlignment(.center)
                                         .rotationEffect(.degrees(10))
-                                        .blinking(duration: 2.0)
+//                                        .blinking(duration: 2.0)
                                         .foregroundColor(Color.white)
                                     //                                       .blinking(duration: 3.0)
                                         .opacity(0.6)
@@ -749,8 +749,8 @@ struct RRLoveTarts5: View {
                                         }
                                 }
                                 
-                                Spacer()
-                                    .frame(height: 30)
+//                                Spacer()
+//                                    .frame(height: 30)
                             }
                         }
                         Spacer ()
@@ -829,7 +829,7 @@ struct RRLoveTarts5: View {
             
             
             Spacer()
-                .frame(height: 70)
+                .frame(height: 120)
            
         }
     }
