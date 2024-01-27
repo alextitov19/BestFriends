@@ -975,7 +975,6 @@
 				CF7A55592B55CEAD0068F249 /* RRBrokenHeart.swift */,
 				CF7A555B2B55CEAD0068F249 /* RRDidGood.swift */,
 				CF7A55542B55CEAD0068F249 /* RRgreatDay.swift */,
-				CF7A55502B55CEAC0068F249 /* RRLoveTarts3.swift */,
 				CF7A55532B55CEAD0068F249 /* RRMissYou.swift */,
 				CF7A55552B55CEAD0068F249 /* RRMotivationCH.swift */,
 				CF7A555A2B55CEAD0068F249 /* RRWantToTalk.swift */,
@@ -985,6 +984,7 @@
 				CF7A55732B5921E50068F249 /* RRLoveTarts.swift */,
 				CF7A55792B5B96770068F249 /* RRGuysTexting.swift */,
 				CF7A55582B55CEAD0068F249 /* RRPoemContest.swift */,
+				CF7A55502B55CEAC0068F249 /* RRLoveTarts3.swift */,
 				CF3163EC2B64A3A200A4D4B0 /* RRLoveTarts5.swift */,
 			);
 			path = RR;
