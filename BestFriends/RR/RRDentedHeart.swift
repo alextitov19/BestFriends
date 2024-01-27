@@ -109,8 +109,8 @@ struct RRDentedHeart: View {
                                     Spacer ()
                                         .frame(height: 20)
                                     
-                                    Text("I need serious")
-                                        .font(.system(size: 33, weight: .light))
+                                    Text("I seriously need some")
+                                        .font(.system(size: 25, weight: .light))
                                         .italic()
                                         .foregroundColor(ColorManager .grey1)
                                         .opacity(0.8)
