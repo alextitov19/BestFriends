@@ -115,7 +115,7 @@ struct InfoSafeChat: View {
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.2)
+                    .opacity(0.8)
                 
              
                 
@@ -141,7 +141,7 @@ struct InfoSafeChat: View {
                                 .foregroundColor(.purple)
                                 .frame(width: 300, height: 250)
                                 .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                                .opacity(0.3)
+                                .opacity(0.6)
                             
                             VStack {
                                 
@@ -356,7 +356,7 @@ struct InfoSafeChat: View {
                                                 //                                            .aspectRatio(contentMode: .fit)
                                                     .frame(width: 120, height: 120)
                                                    .blinking(duration: 7.0)
-                                                    .opacity(0.60)
+                                                    .opacity(0.8)
                                                 
                                                 Text("You're not alone here")
                                                     .fontWeight(.medium)

@@ -337,8 +337,8 @@ struct RR58: View {
                                      
                                         VStack {
                                             Text("send")
-                                                .font(.system(size: 23))
-                                                .foregroundColor(ColorManager .grey2)
+                                                .font(.system(size: 20))
+                                                .foregroundColor(ColorManager .grey3)
                                                 .fontWeight(.regular)
                                                 .opacity(0.99)
                                                 .rotationEffect(.degrees(10))

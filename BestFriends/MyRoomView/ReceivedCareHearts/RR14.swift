@@ -107,13 +107,13 @@ struct RR14: View {
                   } else {
 
                       Color.black
-                        .opacity(0.3)
+                        .opacity(0.99)
                         .ignoresSafeArea()
                       
                       AdPlayerView(name: "Fireworks2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
-                          .opacity(0.9)
+                          .opacity(0.99)
                       
                       AdPlayerView(name: "FriendshipMix")
                           .ignoresSafeArea()

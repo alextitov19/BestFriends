@@ -115,7 +115,7 @@ struct CH7: View {
                
                       
                       ColorManager .grey2
-                        .opacity(0.6)
+                        .opacity(0.4)
                         .ignoresSafeArea()
                       
                       AdPlayerView(name: "sky2")
@@ -125,7 +125,7 @@ struct CH7: View {
                       AdPlayerView(name: "grayDots2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
-                          .opacity(0.5)
+                          .opacity(0.9)
                       
                       
                     
@@ -163,7 +163,7 @@ struct CH7: View {
                     Text("(check Chat for the name of the song)")
                                             .font(.system(size: 17))
                                             .italic()
-                                            .foregroundColor(Color.white)
+                                            .foregroundColor(ColorManager .grey3)
                                             .fontWeight(.regular)
                                             .multilineTextAlignment(.center)
                     
@@ -172,7 +172,7 @@ struct CH7: View {
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(ColorManager .grey3)
                         .multilineTextAlignment(.center)
                
             

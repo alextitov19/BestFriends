@@ -58,10 +58,12 @@ struct RR29: View {
                 
                 
             } else {
+                ColorManager .grey3
+                   .opacity(0.7)
+                    .ignoresSafeArea()
 
-
-                Color.black
-                   .opacity(0.9)
+                Color.purple
+                   .opacity(0.4)
                     .ignoresSafeArea()
                 
                 
@@ -79,7 +81,7 @@ struct RR29: View {
                 AdPlayerView(name: "thumbsUp")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.3)
+                    .opacity(0.8)
 
 
             }
@@ -151,14 +153,14 @@ struct RR29: View {
                         Text("(check Chat for a message)")
                                                 .font(.system(size: 17))
                                                 .italic()
-                                                .foregroundColor(ColorManager .grey2)
+                                                .foregroundColor(ColorManager .grey3)
                                                 .fontWeight(.regular)
                                                 .multilineTextAlignment(.center)
                         
                         Text("(say thanks)")
                                                 .font(.system(size: 15))
                                                 .italic()
-                                                .foregroundColor(ColorManager .grey2)
+                                                .foregroundColor(ColorManager .grey3)
                                                 .fontWeight(.light)
                                                 .multilineTextAlignment(.center)
                         

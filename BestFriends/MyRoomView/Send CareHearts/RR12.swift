@@ -92,15 +92,9 @@ struct RR12: View {
             
                   if shareTapped {
                       
-                      Color.black
+                      ColorManager .grey4
                         .opacity(0.9)
                         .ignoresSafeArea()
-                      
-                      
-//                      Image("FHBackground")
-//                          .ignoresSafeArea()
-//                          .scaledToFit()
-//                          .opacity(0.1)
 
                       AdPlayerView(name: "dramaLights")
                           .opacity(0.5)
@@ -109,21 +103,25 @@ struct RR12: View {
                       
                   } else {
 
-                      Color.black
-                        .opacity(0.5)
+                    
+                      
+                      ColorManager .grey4
+                        .opacity(0.9)
                         .ignoresSafeArea()
-                        .blendMode(.screen)
                       
                       Color.purple
-                        .opacity(0.1)
+                        .opacity(0.3)
                         .ignoresSafeArea()
                       
                       AdPlayerView(name: "sky2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
-                          .opacity(0.8)
+                          .opacity(0.99)
              
-                      
+//                      Color.black
+//                        .opacity(0.99)
+//                        .ignoresSafeArea()
+//                        .blendMode(.screen)
             }
             
 

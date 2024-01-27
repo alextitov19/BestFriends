@@ -179,7 +179,12 @@ struct RRgreatDay: View {
                         .frame(height: 70)
                     
                     VStack {
-                        
+                        Text("(alert friends")
+                                                .font(.system(size: 15))
+                                                .italic()
+                                                .foregroundColor(Color .white)
+                                                .fontWeight(.light)
+                                                .multilineTextAlignment(.center)
                         HStack {
                             
                             //                            Text("select >")
