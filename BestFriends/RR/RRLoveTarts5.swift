@@ -758,7 +758,7 @@ struct RRLoveTarts5: View {
                         
                         
                         NavigationLink(
-                            destination: RRDentedHeart(user: user, friends: friends),
+                            destination: RRDentedHeart(user: user, friend: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
                             label: {
                                 
                                 ZStack {
@@ -770,7 +770,7 @@ struct RRLoveTarts5: View {
                                             .font(.system(size: 25))
                                             .foregroundColor(Color .white)
                                             .fontWeight(.bold)
-                                            .rotationEffect(.degrees(-10))
+                                            .rotationEffect(.degrees(-13))
                                             .opacity(0.99)
                                             .multilineTextAlignment(.center)
                                         

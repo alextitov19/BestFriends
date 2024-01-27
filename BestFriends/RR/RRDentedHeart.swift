@@ -15,8 +15,16 @@ struct RRDentedHeart: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
+//    let user: User
+//    let friends: [User]
+    
     let user: User
+    let friend: User
     let friends: [User]
+    let groups: [Group]
+    
+   let atmosphere: Atmosphere
+   let friendAtmospheres: [Atmosphere]
     
     @State private var selectedFriends: [String] = []
     @State private var colors: [Color] = [ColorManager.grey2, ColorManager.grey2, ColorManager.grey2, ColorManager.grey2, ColorManager.grey2]
@@ -86,7 +94,65 @@ struct RRDentedHeart: View {
                     HStack {
                         VStack {
                             
-                            
+                            VStack {
+                                
+                               
+                                HStack {
+                                    
+                                    Image(systemName: "")
+                                        .resizable()
+                                    //                        .foregroundColor(.purple)
+                                    //                        .frame(width: 150, height: 110)
+                                    //                        .shadow(color: .blue, radius: 65, x: 30, y: 50)
+                                    //                        .opacity(0.4)
+                                    
+                                    ZStack {
+                                        //                Image(systemName: "heart.fill")
+                                        //                    .rotationEffect(.degrees(10))
+                                        
+                                        Image(systemName: "heart.fill")
+                                            .resizable()
+                                            .foregroundColor(ColorManager .grey3)
+                                            .frame(width: 150, height: 110)
+                                            .shadow(color: .blue, radius: 65, x: 30, y: 50)
+                                            .opacity(0.5)
+                                        
+                                        Image(systemName: "heart.fill")
+                                            .resizable()
+                                            .foregroundColor(ColorManager .purple3)
+                                            .frame(width: 140, height: 110)
+                                            .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
+                                            .rotationEffect(.degrees(10))
+                                            .opacity(0.5)
+                                        
+                                        
+                                        
+                                        NavigationLink(destination:  WhyFiveFriends(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                                       label: {
+                                            
+                                            VStack {
+                                                Text("Hurt \nFeelings")
+                                                    .font(.system(size: 20))
+                                                    .fontWeight(.bold)
+                                                    .multilineTextAlignment(.center)
+                                                    .foregroundColor(Color.white)
+                                                //                            .blinking(duration: 3.0)
+                                                    .rotationEffect(.degrees(10))
+                                                    .opacity(0.5)
+                                                
+                                                Spacer ()
+                                                    .frame(height: 10)
+                                                
+                                            }
+                                        }
+                                    )}
+                                }
+                            }
+                                
+                                
+                                
+                                
+                                
                             ZStack {
                                 
                                 Image(systemName: "circle.fill")
@@ -309,7 +375,7 @@ struct RRDentedHeart: View {
                         })
                         
                         Spacer()
-                            .frame(height: 50)
+                            .frame(height: 80)
                         
                         
                         //                            Text("By tapping [Share] your CareHeart is automatically \nsent to: in-app & push notifications + our Widget")
@@ -363,7 +429,7 @@ struct RRDentedHeart: View {
         var body: some View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
                 .fontWeight(.bold)
-                .frame(width: 80, height: 80)
+                .frame(width: 70, height: 70)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .font(.system(size: 8))
                 .background(color)
