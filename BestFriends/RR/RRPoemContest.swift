@@ -150,7 +150,7 @@ struct RRPoemContest: View {
                         
                         Text("Submit you heartfelt")
                             .font(.system(size: 30))
-                            .foregroundColor(ColorManager .grey4)
+                            .foregroundColor(ColorManager .grey3)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .opacity(0.99)
