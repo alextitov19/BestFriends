@@ -242,37 +242,37 @@ struct RRLoveTarts: View {
                                 }
                             })
                         
-                        
-                        NavigationLink(
-                            destination:  RRLoveTarts5(user: user, friend: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
-                            label: {
-                                ZStack {
-                                    
-                                    Image(systemName: "circle.fill")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 100, height: 100)
-                                        .foregroundColor(Color.cyan)
-                                        .opacity(0.95)
-                                    
-                                    Image(systemName: "heart.fill")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 50, height: 50)
-                                        .foregroundColor(Color.purple)
-                                        .glow(color: Color.white, radius: 0.3)
-                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                        .opacity(0.95)
-                                    
-                                    Text("LoveTarts")
-                                        .font(.system(size: 10))
-                                        .fontWeight(.medium)
-                                        .multilineTextAlignment(.center)
-                                        .foregroundColor(Color.white)
-                                        .opacity(0.99)
-                                    
-                                }
-                            })
+//
+//                        NavigationLink(
+//                            destination:  RRLoveTarts5(user: user, friend: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+//                            label: {
+//                                ZStack {
+//
+//                                    Image(systemName: "circle.fill")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 100, height: 100)
+//                                        .foregroundColor(Color.cyan)
+//                                        .opacity(0.95)
+//
+//                                    Image(systemName: "heart.fill")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 50, height: 50)
+//                                        .foregroundColor(Color.purple)
+//                                        .glow(color: Color.white, radius: 0.3)
+//                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+//                                        .opacity(0.95)
+//
+//                                    Text("LoveTarts")
+//                                        .font(.system(size: 10))
+//                                        .fontWeight(.medium)
+//                                        .multilineTextAlignment(.center)
+//                                        .foregroundColor(Color.white)
+//                                        .opacity(0.99)
+//
+//                                }
+//                            })
                         
                         
                         NavigationLink(
@@ -305,84 +305,15 @@ struct RRLoveTarts: View {
                                     
                                 }
                             })
-                        
-                        
-                        
-//                        NavigationLink(
-//                            destination:  EmptyView(),
-//                            label: {
-//                                ZStack {
-//
-//                                    Image(systemName: "circle.fill")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 60, height: 60)
-//                                        .foregroundColor(Color.cyan)
-//                                        .opacity(0.95)
-//
-//                                    Image(systemName: "heart.fill")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 50, height: 50)
-//                                        .foregroundColor(Color.purple)
-//                                        .glow(color: Color.white, radius: 0.3)
-//                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-//                                        .opacity(0.95)
-//
-//                                    Text("empty")
-//                                        .font(.system(size: 10))
-//                                        .fontWeight(.medium)
-//                                        .multilineTextAlignment(.center)
-//                                        .foregroundColor(Color.white)
-//                                        .opacity(0.99)
-//
-//                                }
-//                            })
-                        
-                        
-                        
-                        
+                        }
                     }
-                }
                 //                **************************************
                 
                 
                 
                 HStack {
             
-                        
-//                        NavigationLink(
-//                            destination:  SendKisses(user: user, friends: friends),
-//                            label: {
-//                                ZStack {
-//
-//                                    Image(systemName: "circle.fill")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 60, height: 60)
-//                                        .foregroundColor(Color.cyan)
-//                                        .opacity(0.95)
-//
-//                                    Image(systemName: "heart.fill")
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(width: 50, height: 50)
-//                                        .foregroundColor(Color.purple)
-//                                        .glow(color: Color.white, radius: 0.3)
-//                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-//                                        .opacity(0.95)
-//
-//                                    Text("blowing \nkisses")
-//                                        .font(.system(size: 10))
-//                                        .fontWeight(.medium)
-//                                        .multilineTextAlignment(.center)
-//                                        .foregroundColor(Color.white)
-//                                        .opacity(0.99)
-//
-//                                }
-//                            })
-                        
-                        
+                  
                         
                         
                         //                        ********************** Hugs ********************

@@ -98,7 +98,7 @@ struct RR58: View {
                     HStack {
                         
                         
-                        NavigationLink(destination: RRLoveTarts3(user: user, friend: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres), label: {
+                        NavigationLink(destination: RRLoveTarts5(user: user, friend: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres), label: {
                             ZStack {
                                 VStack {
                                     Text("my")
@@ -284,131 +284,7 @@ struct RR58: View {
                                 }
                             }
                         )}
-                    
-//
-//                    NavigationLink(
-//                        destination:  FH1(user: user, friends: friends, friendAtmospheres: friendAtmospheres),
-//                        label: {
-//
-//                            ZStack {
-//                                Text("friends")
-//                                    .fontWeight(.regular)
-//                                    .frame(width: 100, height: 30)
-//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                    .font(.system(size: 25))
-//                                    .background(Color.green)
-//                                    .cornerRadius(15)
-//                                    .glow(color: Color.white, radius: 1)
-//                                    .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-//                                    .opacity(0.8)
-//
-//                            }
-//                        }
-//                    )}
-//
-//
-//
-//                //  ************************************************** Carehearts **********
-//
-//
-//                VStack {
-//
-//                    Spacer ()
-//                        .frame(height: 50)
-//
-////                    Text("Friend having a ...")
-////                        .fontWeight(.bold)
-//////                        .frame(width: 50, height: 35)
-////                        .foregroundColor(ColorManager .grey2)
-////                        .font(.system(size: 30))
-//////                        .background(Color.cyan)
-//////                        .cornerRadius(15)
-////                        .glow(color: Color.white, radius: 1)
-////                        .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-////                        .opacity(0.05)
-//
-//                    HStack {
-//                        NavigationLink(
-//                            destination:  HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
-//                            label: {
-//
-//                                HStack {
-////                                    ZStack {
-//
-//                                        Text("Friend having \na bad day")
-//                                            .fontWeight(.regular)
-//                                            .frame(width: 140, height: 50)
-//                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                            .font(.system(size: 20))
-//                                            .background(Color.cyan)
-//                                            .cornerRadius(15)
-//                                            .glow(color: Color.white, radius: 1)
-//                                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-//                                            .opacity(0.8)
-//
-//                                      Spacer ()
-//                                        .frame(width: 15)
-//
-//                                    ZStack {
-//                                        Image(systemName: "heart")
-//                                            .resizable()
-//                                            .scaledToFit()
-//                                            .frame(width: 75, height: 75)
-//                                            .foregroundColor(Color.cyan)
-//                                            .opacity(0.05)
-//                                            .rotationEffect(.degrees(10))
-//                                            .glow(color: Color.purple, radius: 1)
-//                                            .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
-//
-//                                        Image(systemName: "heart.fill")
-//                                            .resizable()
-//                                            .scaledToFit()
-//                                            .frame(width: 65, height: 65)
-//                                            .foregroundColor(ColorManager .purple4)
-//                                            .opacity(0.2)
-//                                            .rotationEffect(.degrees(10))
-//                                            .glow(color: Color.white, radius: 1)
-//                                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-//
-//
-//                                        Text("send")
-//                                            .font(.system(size: 23))
-//                                            .foregroundColor(ColorManager .grey2)
-//                                            .fontWeight(.medium)
-//                                            .opacity(0.99)
-//                                            .rotationEffect(.degrees(10))
-//                                            .multilineTextAlignment(.center)
-//
-//                                    }
-//
-//                                        Spacer ()
-//                                          .frame(width: 15)
-//
-//
-//                                        Text("CareHearts")
-//                                            .fontWeight(.regular)
-//                                            .frame(width: 120, height: 30)
-//                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                            .font(.system(size: 20))
-//                                            .background(Color.cyan)
-//                                            .cornerRadius(15)
-//                                            .glow(color: Color.white, radius: 1)
-//                                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-//                                            .opacity(0.8)
-//
-//
-//
-//                                    }
-//                                })
-//
-//                        }
-//
-//                    Text("Sharing love & support with friends")
-//                        .fontWeight(.thin)
-//                        .italic()
-//                        .foregroundColor(Color.white)
-//
-            }
+                    }
                 
                 
                 
