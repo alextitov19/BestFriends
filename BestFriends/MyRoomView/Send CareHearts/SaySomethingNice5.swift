@@ -80,7 +80,7 @@ struct SaySomethingNice5: View {
                 AdPlayerView(name: "easyHearts2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.5)
+                    .opacity(0.9)
                 
 
                 
