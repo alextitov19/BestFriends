@@ -16,8 +16,15 @@ struct RRBrokenHeart: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
+//    let user: User
+//    let friends: [User]
+    
     let user: User
+    let friend: User
     let friends: [User]
+    let groups: [Group]
+    let atmosphere: Atmosphere
+    let friendAtmospheres: [Atmosphere]
     
     @State private var selectedFriends: [String] = []
     @State private var colors: [Color] = [ColorManager.grey2, ColorManager.grey2, ColorManager.grey2, ColorManager.grey2, ColorManager.grey2]

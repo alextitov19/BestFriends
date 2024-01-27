@@ -758,7 +758,7 @@ struct RRLoveTarts5: View {
                         
                         
                         NavigationLink(
-                            destination: RRBrokenHeart(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                            destination: EmptyView(),
                             label: {
                                 
                                 ZStack {
