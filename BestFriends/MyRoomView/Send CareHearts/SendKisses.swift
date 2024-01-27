@@ -72,7 +72,7 @@ struct SendKisses: View {
             } else {
 
 
-                ColorManager .grey2
+                ColorManager .purple7
                    .opacity(0.7)
                     .ignoresSafeArea()
                 
@@ -85,7 +85,7 @@ struct SendKisses: View {
                 AdPlayerView(name: "blowingkissesVid")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.45)
+                    .opacity(0.8)
            
               
                 

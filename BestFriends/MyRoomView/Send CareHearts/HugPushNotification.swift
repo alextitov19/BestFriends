@@ -64,14 +64,14 @@ struct HugPushNotification: View {
             } else {
                 
                 
-                ColorManager .grey3
+                ColorManager .purple7
                     .opacity(0.9)
                     .ignoresSafeArea()
                 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.5)
+                    .opacity(0.8)
       
                 
                 AdPlayerView(name: "grayGrass2")

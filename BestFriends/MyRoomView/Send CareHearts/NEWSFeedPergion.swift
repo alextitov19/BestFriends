@@ -54,20 +54,20 @@ struct NEWSFeedPergion: View {
             } else {
                 
                 
-                ColorManager.purple4
+                ColorManager .purple7
+                    .opacity(0.9)
                     .ignoresSafeArea()
-                    .onAppear()
                 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.5)
+                    .opacity(0.4)
               
                 
                 AdPlayerView(name: "missingYou3")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-//                    .opacity(0.3)
+                   .opacity(0.5)
 //
 //                AdPlayerView(name: "InnerStellar3")
 //                              .ignoresSafeArea()
@@ -98,11 +98,7 @@ struct NEWSFeedPergion: View {
                                 
                                 VStack {
                                     
-                                    Text("just wanted to say,")
-                                        .font(.system(size: 23, weight: .light))
-                                        .italic()
-                                        .foregroundColor(ColorManager .grey1)
-                                        .opacity(0.5)
+                                
                                     
                                     Text("I'm missing you")
                                         .font(.system(size: 33, weight: .light))

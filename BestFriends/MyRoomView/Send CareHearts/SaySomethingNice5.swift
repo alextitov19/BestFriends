@@ -68,19 +68,19 @@ struct SaySomethingNice5: View {
             } else {
                 
                 
-                ColorManager .purple1
+                ColorManager .purple5
                     .opacity(0.7)
                     .ignoresSafeArea()
                 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.5)
+                    .opacity(0.8)
                 
                 AdPlayerView(name: "easyHearts2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.9)
+                    .opacity(0.7)
                 
 
                 
@@ -408,7 +408,7 @@ struct SaySomethingNice5: View {
             var body: some View {
                 Text(friend.firstName + " " + String(friend.lastName.first!))
                     .fontWeight(.bold)
-                    .frame(width: 107, height: 107)
+                    .frame(width: 80, height: 80)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .font(.system(size: 8))
                     .background(color)
