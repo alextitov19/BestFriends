@@ -89,10 +89,10 @@ struct RRDentedHeart: View {
                             
                             ZStack {
                                 
-                                Image(systemName: "cube.fill")
+                                Image(systemName: "circle.fill")
                                     .resizable()
                                     .foregroundColor(Color.purple)
-                                    .frame(width: 250, height: 200)
+                                    .frame(width: 300, height: 300)
                                     .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                                     .opacity(0.5)
                                 
@@ -100,65 +100,36 @@ struct RRDentedHeart: View {
                                     
                                 
                                     
-                                    Text("I'm missing you")
-                                        .font(.system(size: 33, weight: .light))
+                                    Text("This Hurts!!!")
+                                        .font(.system(size: 45, weight: .medium))
                                         .foregroundColor(ColorManager .grey1)
+                                        .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                                         .opacity(0.5)
                                     
-                                    //                                    Text("light as butterfly wings")
-                                    //                                        .font(.system(size: 20, weight: .light))
-                                    //                                        .foregroundColor(ColorManager .grey1)
-                                    //                                        .opacity(0.5)
+                                    Spacer ()
+                                        .frame(height: 20)
+                                    
+                                    Text("I need serious")
+                                        .font(.system(size: 33, weight: .light))
+                                        .italic()
+                                        .foregroundColor(ColorManager .grey1)
+                                        .opacity(0.8)
+                                    
+                                    Text("CareHearts")
+                                        .font(.system(size: 33, weight: .light))
+                                        .italic()
+                                        .foregroundColor(ColorManager .grey1)
+                                        .opacity(0.8)
+                                                              
                                 }
                             }
                         }
                     }
                 }
                 
-                
-                VStack {
+
                     
-                    HStack {
-                        
-                        
-                        ZStack {
-                            
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .foregroundColor(Color.purple)
-                                .frame(width: 130, height: 85)
-                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                                .opacity(0.5)
-                            
-                            NavigationLink(
-                                destination:  PhotoPopView(user: user, friends: friends),
-                                label: {
-                                    
-                                    Image("IconPhotoNew")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 70, height: 70)
-                                        .foregroundColor(Color.purple)
-//                                        .glow(color: Color.white, radius: 0.3)
-//                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                        .opacity(0.7)
-                                    
-                                })
-                            
-                            Spacer ()
-                                .frame(width: 100)
-                            
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .foregroundColor(Color.purple)
-                                .frame(width: 0, height: 0)
-                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                                .opacity(0.0)
-                            
-                            
-                            
-                        }
-                    }
+                    
                     
                     //                        NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
                     //                                        label: {
@@ -289,7 +260,7 @@ struct RRDentedHeart: View {
                             .glow(color: Color.purple, radius: 2)
                             .opacity(0.6)
                             .blinking(duration: 3.0)
-                            .alert("We let them know you're missing them.", isPresented: $showingAlert) {
+                            .alert("We let your friends know you're hurting", isPresented: $showingAlert) {
                                 Button("OK", role: .cancel) { }
                                 
                             }
@@ -359,7 +330,7 @@ struct RRDentedHeart: View {
             
         }
         
-    }
+    
     
     
     
@@ -369,12 +340,12 @@ struct RRDentedHeart: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) is missing you!", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) needs serious CareHearts for a broken heart", APNToken: f.APNToken)
                     
                     //MARK: The code below creates an in-app notification for your friend (f.id)
                     //MARK: DO NOT CHANGE THE TEXT OF THE NOTIFICATION, otherwise the code to take the user to a diffrent page will not work. Once you set it, do not change it.
-                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "is missing you!", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
-                        print("Create a missing you notification response code: ", response)
+                    RestApi.instance.createInAppNotification(ian: InAppNotification(user: f.id, sender: user.id, text: "needs serious CareHearts for a broken heart", createdOn: Int64(Date().timeIntervalSince1970))).then({ response in
+                        print("Create a broken heart notification response code: ", response)
                     })
                     RestApi.instance.createStreakLog(friendID: f.id)
                 }

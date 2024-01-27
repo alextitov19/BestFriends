@@ -39,15 +39,15 @@ struct RRPoemContest: View {
         
         ZStack {
             
-                        Color.black
-                            .opacity(0.9)
-                            .ignoresSafeArea()
+            Color.black
+                .opacity(0.9)
+                .ignoresSafeArea()
             
-                        AdPlayerView(name: "sky2")
-                            .ignoresSafeArea()
-                            .blendMode(.screen)
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
             
-         
+            
             VStack {
                 VStack {
                     
@@ -56,12 +56,13 @@ struct RRPoemContest: View {
                         ZStack {
                             
                             Image(systemName: "heart.fill")
+                                .foregroundColor(ColorManager .grey2)
                                 .rotationEffect(.degrees(-10))
                             
                             Image(systemName: "heart.fill")
                                 .resizable()
                                 .foregroundColor(ColorManager .grey2)
-                                .frame(width: 130, height: 100)
+                                .frame(width: 150, height: 120)
                                 .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
                                 .rotationEffect(.degrees(-10))
                                 .opacity(0.3)
@@ -92,12 +93,13 @@ struct RRPoemContest: View {
                         ZStack {
                             
                             Image(systemName: "heart.fill")
+                                .foregroundColor(ColorManager .grey2)
                                 .rotationEffect(.degrees(10))
                             
                             Image(systemName: "heart.fill")
                                 .resizable()
                                 .foregroundColor(ColorManager .grey2)
-                                .frame(width: 130, height: 100)
+                                .frame(width: 150, height: 120)
                                 .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
                                 .rotationEffect(.degrees(10))
                                 .opacity(0.3)
@@ -121,17 +123,17 @@ struct RRPoemContest: View {
                     }
                 }
             }
-
+        }
                 
-                ZStack {
-                    
-                    
-                    Image(systemName: "circle.fill")
-                        .resizable()
-                        .foregroundColor(Color.purple)
-                        .frame(width: 450, height: 450)
-                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.85)
+//                ZStack {
+//
+//
+//                    Image(systemName: "circle.fill")
+//                        .resizable()
+//                        .foregroundColor(Color.purple)
+//                        .frame(width: 450, height: 450)
+//                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
+//                        .opacity(0.85)
                     
                     VStack {
                         
@@ -148,7 +150,7 @@ struct RRPoemContest: View {
                         
                         Text("Submit you heartfelt")
                             .font(.system(size: 30))
-                            .foregroundColor(Color.white)
+                            .foregroundColor(ColorManager .grey4)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .opacity(0.99)
@@ -162,7 +164,7 @@ struct RRPoemContest: View {
                             Text("romantic poems")
                                 .font(.system(size: 30))
                             
-                                .foregroundColor(Color.white)
+                                .foregroundColor(ColorManager .grey3)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .opacity(0.99)
@@ -209,7 +211,7 @@ struct RRPoemContest: View {
                             }
                         }
                     }
-                }
+//                }
             
           
                 
@@ -218,7 +220,7 @@ struct RRPoemContest: View {
                 
             }
         }
-    }
+//    }
 
 
 

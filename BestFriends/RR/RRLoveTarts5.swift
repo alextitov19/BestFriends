@@ -758,7 +758,7 @@ struct RRLoveTarts5: View {
                         
                         
                         NavigationLink(
-                            destination: EmptyView(),
+                            destination: RRDentedHeart(user: user, friends: friends),
                             label: {
                                 
                                 ZStack {
@@ -767,7 +767,7 @@ struct RRLoveTarts5: View {
                                         
                                         
                                         Text("Uggg")
-                                            .font(.system(size: 17))
+                                            .font(.system(size: 25))
                                             .foregroundColor(Color .white)
                                             .fontWeight(.bold)
                                             .rotationEffect(.degrees(-10))
@@ -777,7 +777,16 @@ struct RRLoveTarts5: View {
                                         Spacer ()
                                             .frame(height: 7)
                                         
-                                        Text("dented \nheart")
+                                        Text("dented")
+                                            .font(.system(size: 14))
+                                            .italic()
+                                            .foregroundColor(Color .white)
+                                            .fontWeight(.medium)
+                                            .rotationEffect(.degrees(-10))
+                                            .opacity(0.99)
+                                            .multilineTextAlignment(.center)
+                                        
+                                        Text("    heart")
                                             .font(.system(size: 14))
                                             .italic()
                                             .foregroundColor(Color .white)
