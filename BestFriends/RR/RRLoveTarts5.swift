@@ -301,11 +301,11 @@ struct RRLoveTarts5: View {
                             .padding(.bottom, 5)
                     }
                 }
-         
+                
                 Spacer ()
                     .frame(height: 15)
                 
-        
+                
                 Text("(if you said something romantic,")
                     .font(.system(size: 15))
                     .italic()
@@ -429,7 +429,7 @@ struct RRLoveTarts5: View {
                             .foregroundColor(ColorManager .purple5)
                             .glow(color: Color.purple, radius: 2)
                             .opacity(0.6)
-//                            .blinking(duration: 3.0)
+                        //                            .blinking(duration: 3.0)
                             .alert("nice", isPresented: $showingAlert) {
                                 Button("OK", role: .cancel) { }
                             }
@@ -437,15 +437,15 @@ struct RRLoveTarts5: View {
                         
                     })
                 }
-               
                 
                 
-//                Text("(if you said something romantic,")
-//                    .font(.system(size: 15))
-//                    .italic()
-//                    .fontWeight(.light)
-//                    .foregroundColor(ColorManager .grey1)
-//                    .multilineTextAlignment(.center)
+                
+                //                Text("(if you said something romantic,")
+                //                    .font(.system(size: 15))
+                //                    .italic()
+                //                    .fontWeight(.light)
+                //                    .foregroundColor(ColorManager .grey1)
+                //                    .multilineTextAlignment(.center)
                 
                 VStack {
                     
@@ -588,7 +588,7 @@ struct RRLoveTarts5: View {
                     }
                 }
                 
-  
+                
                 VStack {
                     
                     
@@ -612,7 +612,7 @@ struct RRLoveTarts5: View {
                                 
                                 Text("  Heartbeat")
                                     .font(.system(size: 15))
-                                  
+                                
                                     .fontWeight(.bold)
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.white)
@@ -622,7 +622,7 @@ struct RRLoveTarts5: View {
                                 
                                 Spacer ()
                                     .frame(height: 100)
-
+                                
                                 Text("")
                                     .font(.system(size: 15))
                                     .italic()
@@ -679,8 +679,8 @@ struct RRLoveTarts5: View {
                             
                             VStack {
                                 
-//                                Spacer()
-//                                    .frame(height: 20)
+                                //                                Spacer()
+                                //                                    .frame(height: 20)
                                 
                                 ZStack {
                                     Image(systemName: "heart.fill")
@@ -691,14 +691,14 @@ struct RRLoveTarts5: View {
                                         .rotationEffect(.degrees(10))
                                         .opacity(0.4)
                                     
-                                 
+                                    
                                     
                                     Text("TAP")
                                         .font(.system(size: 30))
                                         .fontWeight(.light)
                                         .multilineTextAlignment(.center)
                                         .rotationEffect(.degrees(10))
-//                                        .blinking(duration: 2.0)
+                                    //                                        .blinking(duration: 2.0)
                                         .foregroundColor(Color.white)
                                     //                                       .blinking(duration: 3.0)
                                         .opacity(0.6)
@@ -749,8 +749,8 @@ struct RRLoveTarts5: View {
                                         }
                                 }
                                 
-//                                Spacer()
-//                                    .frame(height: 30)
+                                //                                Spacer()
+                                //                                    .frame(height: 30)
                             }
                         }
                         Spacer ()
@@ -822,18 +822,17 @@ struct RRLoveTarts5: View {
                         
                         Spacer()
                             .frame(width: 30)
-                        
+    VStack {
+                        }
                     }
+                    
+                    Spacer()
+                        .frame(height: 100)
                 }
             }
-            
-            
-            Spacer()
-                .frame(height: 120)
-           
         }
     }
-
+  
       
         func shareButtonTapped() {
             if selectedFriends.count == 0 { return }
